@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 4d3f2f84daf1415e7a5f48d66f1fb9d86c612d67
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 40747d2ee66d4a873f83247278f04377ccfa8eaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105987"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163855"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -77,7 +77,7 @@ Die folgende Dokumentation hilft Ihnen bei der Bereitstellung Ihrer Vertraulichk
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Funktionen für die Zusammenarbeit in SharePoint (und OneDrive) für Dokumente, die mit Bezeichnungen für Verschlüsselung versehen sind, aktivieren | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Vertraulichkeitsbezeichnungen für Office-Apps verwalten, sodass der Inhalt so bei der Erstellung mit Bezeichnungen versehen wird |[Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
-|Vertraulichkeitsbezeichnungen oder empfohlene Bezeichnungen für Benutzer beim Erstellen von Inhalten automatisch anwenden | [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)|
+|Automatisches Anwenden von Vertraulichkeitsbezeichnungen auf Dokumente und E-Mails | [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)|
 |Vertraulichkeitsbezeichnungen zum Schützen von Inhalten in Teams und SharePoint verwenden |[Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)|
 |Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Dateien, die in Datenspeichern in der Cloud gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen|[Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und sensibler Daten, die in der Cloud gespeichert werde](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|

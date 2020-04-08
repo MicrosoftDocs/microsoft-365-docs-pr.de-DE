@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: HT
+ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895429"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163898"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -66,6 +66,7 @@ Mit Lese- und Schreibzugriff können Sie Änderungen vornehmen und mit Secure Sc
 * Sicherheitsadministrator
 * Exchange-Administrator
 * SharePoint-Administrator
+* Konto Administrator
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 
