@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602412"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313760"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Finanzmarktaufsichtsbehörde (FINMA) Schweiz
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602412"
 
 Die [Finanzmarktaufsichtsbehörde](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) ist die Aufsichtsbehörde der unabhängigen Finanzmärkte in der Schweiz und trägt dafür Sorge, dass die schweizerischen Finanzmärkte effektiv funktionieren. Sie ist für die Beaufsichtigung von Banken, Versicherungsgesellschaften, Börsen, Aktienhändlern und anderen Finanzinstituten verantwortlich.
 
-Die FINMA hat das [Rundschreiben 2018/3 „Outsourcing – Banken und Versicherer“](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) veröffentlicht, in dem die Anforderungen festgelegt sind, die von Banken, Effektenhändlern und Versicherungen erfüllt werden müssen, wenn sie für die Geschäftsaktivitäten des Unternehmens wichtige Funktionen an einen Dienstanbieter auslagern. Jedes Unternehmen, das seine geschäftlichen Aktivitäten auslagert, ist der FINMA gegenüber in gleichem Maße rechenschaftspflichtig, als würde es die ausgelagerten Tätigkeiten selbst durchführen.
+Die FINMA hat das [Rundschreiben 2018/3 „Outsourcing – Banken und Versicherer“](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) veröffentlicht, in dem die Anforderungen festgelegt sind, die von Banken, Effektenhändlern und Versicherungen erfüllt werden müssen, wenn sie für die Geschäftsaktivitäten des Unternehmens wichtige Funktionen an einen Dienstanbieter auslagern. Jedes Unternehmen, das seine geschäftlichen Aktivitäten auslagert, ist der FINMA gegenüber in gleichem Maße rechenschaftspflichtig, als würde es die ausgelagerten Tätigkeiten selbst durchführen.
 
 ## <a name="microsoft-and-finma"></a>Microsoft und die FINMA
 
