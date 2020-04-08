@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165923"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189009"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Office 365-Add-Ins im Microsoft 365 Admin Center
 
@@ -75,7 +75,7 @@ Lesen Sie zunächst [Ermitteln, ob die zentrale Bereitstellung von Add-Ins in Ih
 7. Wenn das Add-in bereitgestellt wurde, wird ein grünes Häkchen angezeigt. Sie können den Anweisungen auf der Seite folgen, um zu testen, ob das Add-in erfolgreich bereitgestellt wurde.
 
 > [!NOTE]
-> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 12 Stunden dauern, bis Sie auf den Benutzermenü Bändern angezeigt werden.
+> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 24 Stunden in Anspruch nehmen, um auf den Benutzer-menübändern angezeigt zu werden.
     
 8. Wenn Sie fertig sind, wählen Sie **weiter**aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzer bereitzustellen.
 

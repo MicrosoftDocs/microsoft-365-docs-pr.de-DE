@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralisierten Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166489"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188967"
 ---
 # <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
 
@@ -33,7 +33,7 @@ Die zentralisierte Bereitstellung ist die empfohlene Vorgehensweise für einen O
 
 Die zentrale Bereitstellung von Add-ins erfordert, dass Benutzer Office 365 ProPlus verwenden (und mit Ihren Anmeldeinformationen für die organisatorische Anmeldung bei Office angemeldet sind) und über Exchange Online Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit, Azure Active Directory befinden.  
  
-Die zentralisierte Bereitstellung wird nur für Outlook Online-Postfächer unterstützt. Die Bereitstellung für lokale Exchange-Postfächer wird nicht unterstützt.
+Die zentralisierte Bereitstellung wird nur für Online Postfächer unterstützt. Die Bereitstellung für lokale Exchange-Postfächer wird nicht unterstützt.
  
 Sie können die [Office 365 zentrale Bereitstellungs Kompatibilitätsprüfung](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) verwenden, um zu ermitteln, ob Ihr Abonnement berechtigt ist. 
   
@@ -47,7 +47,7 @@ Weitere Informationen finden Sie unter [Benutzer-und Gruppenzuweisungen](https:/
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Wie lange dauert es, bis Add-Ins für alle Benutzer angezeigt werden?  
 
-Es kann bis zu 12 Stunden dauern, bis ein Add-in für alle Benutzer angezeigt wird. Es kann die gleiche Zeit für Add-in-Updates, Änderungen von ein-oder ausschalten oder Add-in-Entfernungen dauern. 
+Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer angezeigt wird. Es kann die gleiche Zeit für Add-in-Updates, Änderungen von ein-oder ausschalten oder Add-in-Entfernungen dauern. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>Wie kann ich als Administrator den Benutzer Zugriff auf Add-Ins für meine Organisation verwalten?
 

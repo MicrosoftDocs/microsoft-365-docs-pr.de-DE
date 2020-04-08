@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Office 365 benötigen. '
 ms.custom: okr_smb
-ms.openlocfilehash: 7b995aedc21305367e4a6621781e138d0d60efd1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6093dd8a7e8d901be7b172a31dcd0e56c549ab3
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252918"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188998"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Sammeln der zum Erstellen von Office 365-DNS-Einträgen erforderlichen Informationen
 
@@ -36,10 +36,18 @@ ms.locfileid: "42252918"
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Schritt 1: Suchen des txt-Eintrags Werts und überprüfen
 
 1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> .
-    
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
     
 2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **Setup starten**aus. Sie gelangen wieder zum Assistenten für die Domäneneinrichtung und sehen dort den spezifischen Wert, den Sie hinzufügen müssen.
     
@@ -57,9 +65,17 @@ ms.locfileid: "42252918"
 
 1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> .
     
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
     
 2. Wählen Sie auf der Seite **Domänen** Ihre Domäne aus. 
     

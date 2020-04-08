@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihre Office 365 Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362130"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189025"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
 [] Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Methode für die meisten Kunden, um Office-Add-Ins für Benutzer und Gruppen in der Office 365-Organisation bereitzustellen. Wenn Sie Administrator sind, können Sie anhand dieser Anleitung ermitteln, ob Ihre Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentralisierte Bereitstellung verwenden können.
 Die zentralisierte Bereitstellung unterstützt Windows-, Mac-, Ios-, Android-und Online-Office-Apps.
-Es kann bis zu 12 Stunden dauern, bis ein Add-in für alle Benutzer für den Client angezeigt wird.
+Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Client angezeigt wird.
   
 ## <a name="requirements"></a>Anforderungen
 
@@ -56,7 +56,7 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 - Für Word-, Excel-und PowerPoint-Add-Ins müssen die Benutzer eine der folgenden Optionen verwenden:
   - Auf einem Windows-Gerät Version 1704 oder höher von Office 365 ProPlus.
   - Auf einem Mac, Version 15,34 oder höher.
-      - Auf IOS (nur iPad), Version 2.9.18010804 oder höher.
+
 - Für Outlook müssen die Benutzer eine der folgenden Optionen verwenden: 
   - Version 1701 oder höher von Office 365 ProPlus.
   - Version 1808 oder höher von Office Professional Plus 2019 oder Office Standard 2019.
