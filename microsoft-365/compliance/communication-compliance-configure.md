@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170929"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193513"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Konfigurieren der Kommunikations Kompatibilität in Microsoft 365
 
@@ -119,7 +119,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 4. Wählen Sie **Richtlinie erstellen** aus, um eine neue Richtlinie aus einer Vorlage zu erstellen und zu konfigurieren oder um eine benutzerdefinierte Richtlinie zu erstellen und zu konfigurieren.
 
-    Wenn Sie eine Richtlinienvorlage zum Erstellen einer Richtlinie auswählen, können Sie Folgendes tun:
+    Wenn Sie eine integrierte Richtlinienvorlage zum Erstellen einer Richtlinie auswählen, können Sie Folgendes tun:
 
     - Bestätigen oder aktualisieren Sie den Richtliniennamen. Richtliniennamen können nach der Erstellung der Richtlinie nicht mehr geändert werden.
     - Wählen Sie die zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten.
@@ -135,7 +135,11 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
     - Wählen Sie die zu überwachende Kommunikationsrichtung, einschließlich eingehende, ausgehende oder interne Kommunikation.
     - Definieren Sie die [Bedingungen](communication-compliance-feature-reference.md#ConditionalSettings)für die Kommunikation-Konformitätsrichtlinie. Sie können zwischen Nachrichtenadresse, Stichwort, Dateitypen und Größen Übereinstimmungsbedingungen wählen.
     - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. In diesem Schritt können Sie Standard-und benutzerdefinierte vertrauliche Informationstypen auswählen. Wählen Sie unter vorhandene benutzerdefinierte vertrauliche Informationstypen oder benutzerdefinierte Schlüsselwörter Wörterbücher im Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten ausführen, falls erforderlich. Sie können auch neue vertrauliche Informationstypen aus dem Assistenten für Kommunikations Konformitätsrichtlinien erstellen.
-    - Wählen Sie aus, ob Sie die Klassifizierung für anstößige Sprachen aktivieren möchten. Diese Klassifizierung erkennt unangemessene Sprachen, die im Textkörper von e-Mail-Nachrichten gesendet oder empfangen wurden.
+    - Wählen Sie aus, ob Sie Klassifizierungen aktivieren möchten. Klassifizierer können eine ungeeignete Sprache erkennen, die im Textkörper von e-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen wurde.
+
+    >[!CAUTION]
+    >Wir veraltern die integrierte Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
     - Überprüfen Sie Ihre Richtlinienauswahl und erstellen Sie die Richtlinie.
 

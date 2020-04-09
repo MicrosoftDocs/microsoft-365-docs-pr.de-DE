@@ -151,6 +151,8 @@
           href: what-the-dlp-functions-look-for.md
     - name: Verschlüsselung in M365
       href: encryption.md
+    - name: Office 365-Dienstverschlüsselung
+      href: office-365-service-encryption.md
     - name: Kundenschlüssel
       items:
         - name: Dienst Verschlüsselung mit Kundenschlüssel in Office 365

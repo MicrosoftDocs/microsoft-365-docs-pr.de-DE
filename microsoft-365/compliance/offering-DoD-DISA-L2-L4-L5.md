@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
-ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
+ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068573"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189085"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>US Department of Defense (DoD) provisorische Autorisierung auf Impact Levels 2, 4 und 5
 
@@ -36,7 +36,7 @@ Unterstützung für den DoD-clouddienst definiert die Richtlinien, Sicherheitsko
 Die Government Cloud Services von Microsoft erfüllen die anspruchsvollen Anforderungen des US-Verteidigungsministeriums von den Auswirkungen 2 bis 5, sodass die US-Verteidigungs Agenturen von den Kosteneinsparungen und der strengen Sicherheit der Microsoft-Cloud profitieren. Durch die Bereitstellung von geschützten Diensten einschließlich Azure Government, Office 365 US Government und Dynamics 365 Government können Verteidigungs Agenturen eine umfassende Palette von kompatiblen Diensten verwenden.
 
 - Erfahren Sie mehr über die Vorteile von DoD DISA L2, L4 in der Microsoft-Cloud: [herunterladen des Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- Erfahren Sie, wie Sie Ihre DoD DISA L2-, L4-Bereitstellung mit unserem [Azure DoD-Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/) beschleunigen.
+- Erfahren Sie, wie Sie Ihre DoD DISA L2-, L4-Bereitstellung mit unseren [Azure DoD-Blueprints](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy) beschleunigen.
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>Provisorische Autorisierung für DoD-Auswirkung Ebene 5
 
@@ -83,7 +83,7 @@ Sobald ein DoD-PA erteilt wurde, werden die Microsoft-Cloud-Dienste jährlich ü
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Schnelles Überwachen der Bereitstellung von DoD-Lösungen auf Azure
 
-Holen Sie sich einen Vorsprung, indem Sie die Vorteile der Cloud in Government mit dem Blueprint für Azure Security and Compliance Department of Defense nutzen. Dieser Entwurf enthält Tools und Anleitungen für die ersten Schritte beim Erstellen von DoD-kompatiblen Lösungen. [Beginnen Sie mit der Verwendung des Azure DoD-Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
+Holen Sie sich einen Vorsprung auf die Vorteile der Cloud in der Regierung mit dem Blueprint-Beispiel für Department of Defense L4. Dieser Entwurf enthält Tools und Anleitungen für die ersten Schritte beim Erstellen von DoD-kompatiblen Lösungen. [Beginnen Sie mit der Verwendung des Azure-Blueprints für DoD L4](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

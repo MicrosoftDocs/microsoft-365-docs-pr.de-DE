@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982048"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193471"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -121,10 +121,10 @@ In diesem Workflow Schritt ermitteln Sie die Compliance-Anforderungen und konfig
 
 Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorlagen auswählen:
 
-- **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die integrierte Klassifizierung verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
+- **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die eingebauten Bedrohungen, Profanität und Belästigungs Klassifizierungen verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
 - **Vertrauliche Informationen**: mit dieser Vorlage können Sie eine Richtlinie zum Überprüfen der Kommunikation mit definierten Typen von vertraulichen Informationen oder Stichwörtern erstellen, um sicherzustellen, dass wichtige Daten nicht für Personen freigegeben werden, die keinen Zugriff haben sollten.
 - **Einhaltung von Vorschriften**: Verwenden Sie diese Vorlage, um eine Richtlinie zum Überprüfen der Kommunikation für Verweise auf standardmäßige Finanzbegriffe zu erstellen, die regulatorischen Standards zugeordnet sind.
-- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, individuelle Erkennungs Bedingungen und den Umfang der zu überprüfenden Inhalte für die Beaufsichtigung in Ihrer Organisation zu konfigurieren.
+- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, Klassifizierungen, individuelle Erkennungs Bedingungen und den Umfang der zu überprüfenden Inhalte für die Beaufsichtigung in Ihrer Organisation zu konfigurieren.
 
 ### <a name="investigate"></a>Prüfen
 

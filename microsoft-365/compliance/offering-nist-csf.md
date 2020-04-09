@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170907"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188988"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -35,10 +35,7 @@ Das FICIC verweist auf global anerkannte Standards einschließlich NIST SP 800-5
 
 NIST Cyber Framework (CSF) ist ein freiwilliges Framework, das aus Standards, Richtlinien und bewährten Methoden zum Verwalten von Cyber-bezogenen Risiken besteht. Microsoft-Cloud-Dienste wurden unabhängigen, FedRAMP mäßigen und hohen Baseline-Audits von Drittanbietern unterzogen und gemäß den FedRAMP-Standards zertifiziert. Durch eine validierte Bewertung, die von HITRUST, einer führenden Organisation für Sicherheit und Datenschutz bei der Entwicklung und Akkreditierung, durchgeführt wurde, ist Office 365 für die im NIST-GfK angegebenen Ziele zertifiziert.
 
-Erfahren Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance Score und unserem Azure Security and Compliance Blueprint beschleunigen:
-
-- [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
-- [Weitere Informationen zur Bewertung des NIST-GFK für Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+[Erfahren](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554) Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance-Score beschleunigen:
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
@@ -54,9 +51,10 @@ Das NIST-GfK-Zertifikat für Office 365 gilt für zwei Jahre.
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>Schnelles Erstellen von NIST-CSF-Lösungen auf Azure
 
-Der NIST Cyber Framework (CSF)-Standard kann eine Herausforderung in der Cloud darstellen. Glücklicherweise mit Azure haben Sie einen Head Start der Azure Security and Compliance NIST CSF Blueprint. Dieser Blueprint enthält Tools und Anleitungen für den Einstieg in das Erstellen von NIST-GfK-konformen Lösungen heute.
+Der NIST Cyber Framework (CSF)-Standard kann eine Herausforderung in der Cloud darstellen. Derzeit können Sie die neuen Blueprint-Beispiele für FedRAMP moderate oder FedRAMP High verwenden, um Ihnen den Einstieg zu erleichtern. Die neuen NIST-GfK-Steuerelemente werden aus den Steuerelementen in diesen FedRAMP-Basislinien entwickelt.
 
-- [Beginnen Sie mit dem Azure NIST CSF Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [FedRAMP moderate Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
+- [FedRAMP High Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>Durchführen einer Risikobewertung für Office 365 mithilfe von NIST CSF in Compliance Score
 
@@ -99,7 +97,7 @@ Microsoft bietet die umfassendsten Angebote im Vergleich zu anderen Anbietern vo
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

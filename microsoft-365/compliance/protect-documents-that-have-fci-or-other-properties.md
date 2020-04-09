@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies auf Ihre Organisation zutrifft, können Sie eine DLP-Richtlinie in Office 365 erstellen, welche die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, damit die DLP-Richtlinie bei Office-Dokumenten mit bestimmten FCI- oder anderen Eigenschaftswerten erzwungen werden kann.
-ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070617"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193493"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
@@ -34,7 +34,7 @@ Ihre Organisation verwendet z. B. möglicherweise Windows Server FCI zum Identif
   
 Eine DLP-Richtlinie sucht einfach nach einem bestimmten Eigenschafts-Name-Wert-Paar. Eine beliebige Dokumenteigenschaft kann verwendet werden, solange die Eigenschaft über eine entsprechende verwaltete Eigenschaft für die SharePoint-Suche verfügt. Eine SharePoint-Websitesammlung verwendet z. B. möglicherweise einen Inhaltstyp namens **Reisebericht** mit einem erforderlichen Feld namens **Kunde**. Wenn eine Person einen Reisebericht erstellt, muss sie den Namen des Kunden eingeben. Dieses Eigenschafts-Name-Wert-Paar kann auch in einer DLP-Richtlinie verwendet werden – z. B. wenn Sie eine Regel möchten, die den Zugriff auf das Dokument für externe Benutzer sperrt, wenn das Feld **Kunde****Contoso** enthält.
   
-Beachten Sie, dass Sie die hier beschriebenen Schritte nicht ausführen sollten, wenn Sie die DLP-Richtlinie auf Inhalte mit bestimmten Office 365 Bezeichnungen anwenden möchten. Stattdessen erfahren Sie, wie Sie [eine Bezeichnung als Bedingung in einer DLP-Richtlinie verwenden](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+Beachten Sie, dass Sie die hier beschriebenen Schritte nicht ausführen sollten, wenn Sie die DLP-Richtlinie auf Inhalte mit bestimmten Office 365 Bezeichnungen anwenden möchten. Erfahren Sie stattdessen, wie Sie [eine Aufbewahrungs Bezeichnung als Bedingung in einer DLP-Richtlinie verwenden](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="before-you-create-the-dlp-policy"></a>Bevor Sie die DLP-Richtlinie erstellen
 
@@ -56,7 +56,7 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in de
     
 2. Wählen Sie im linken Navigationsbereich **Admin Centers** \> **SharePoint**aus. Sie befinden sich jetzt im SharePoint Admin Center.
     
-3. Klicken Sie im linken Navigationsbereich **** \> auf der \> Seite **Suchverwaltung** auf Suche verwalten, um das **Such Schema zu verwalten**.
+3. Klicken Sie im linken Navigationsbereich **search** \> auf der \> Seite **Suchverwaltung** auf Suche verwalten, um das **Such Schema zu verwalten**.
     
     ![Seite "Suchverwaltung" im SharePoint Admin Center](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
@@ -124,7 +124,7 @@ Eine Regel sperrt den Zugriff auf Inhalte, bei denen die Eigenschaft **Personenb
   
 ## <a name="after-you-create-the-dlp-policy"></a>Nachdem Sie die DLP-Richtlinie erstellt haben
 
-Durch Ausführen der Schritte in den vorherigen Abschnitten wird eine DLP-Richtlinie erstellt, mit der Inhalte schnell mit dieser Eigenschaft erkannt werden, jedoch nur, wenn dieser Inhalt neu hochgeladen wird (damit der Inhalt indiziert ist) oder wenn dieser Inhalt alt, aber nur bearbeitet ist (sodass der Inhalt erneut indiziert wird). .
+Durch Ausführen der Schritte in den vorherigen Abschnitten wird eine DLP-Richtlinie erstellt, mit der Inhalte schnell mit dieser Eigenschaft erkannt werden, jedoch nur, wenn dieser Inhalt neu hochgeladen wird (damit der Inhalt indiziert ist) oder wenn dieser Inhalt alt, aber nur bearbeitet ist (damit der Inhalt erneut indiziert wird).
   
 Um überall Inhalte mit dieser Eigenschaft zu ermitteln, sollten Sie manuell anfordern, dass die Bibliothek, Website oder Websitesammlung neu indiziert werden, damit die DLP-Richtlinie alle Inhalte mit dieser Eigenschaft kennt. In SharePoint Online werden Inhalte basierend auf einem definierten Durchforstungszeitplan automatisch durchforstet. Der Crawler ruft Inhalte ab, die seit der letzten Durchforstung geändert wurden, und aktualisiert den Index. Wenn Ihre DLP-Richtlinie Inhalte vor der nächsten geplanten Durchforstung schützen soll, können Sie diese Schritte ausführen.
   

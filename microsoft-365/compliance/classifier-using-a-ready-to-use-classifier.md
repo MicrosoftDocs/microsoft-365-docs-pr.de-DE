@@ -14,24 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
-ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826246"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193503"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>Verwenden einer integrierten Klassifizierung (Vorschau)
 
-Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispieldatensätzen geschult und getestet, mit denen bestimmte Inhaltskategorien identifiziert werden können. Weitere Informationen finden Sie unter [Erste Schritte mit Schulungs Klassifizierern (Vorschau)](classifier-getting-started-with.md). Diese Klassifizierungen werden standardmäßig in `Ready to use` der Gruppe angezeigt.
+Microsoft hat fünf Klassifizierungen mit sehr großen Beispieldatensätzen ausgebildet und getestet, um bestimmte Inhaltskategorien identifizieren zu können. Weitere Informationen finden Sie unter [Erste Schritte mit Schulungs Klassifizierern (Vorschau)](classifier-getting-started-with.md). Diese Klassifizierungen werden standardmäßig in `Ready to use` der Gruppe angezeigt.
 
-- **Anstößige Sprache**: erkennt Textelemente, die Profanität, Beleidigungen, verspottungen und verschleierte Ausdrücke enthalten (bei denen es sich um Ausdrücke handelt, die die gleiche Bedeutung wie ein beleidigender Ausdruck haben).
+Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
+
+> [!CAUTION]
+> Wir veraltern die integrierte Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
 - **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
 
 |Name der Sprache|||||
 |---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
+|ActionScript|C        |C #       |C++     |Clojure  |
 |CoffeeScript|CSS     |OK       |Haskell |HTML     |
 |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
 |Perl     |PHP      |Python   |R        |Ruby     |
@@ -45,7 +49,7 @@ Microsoft hat eine Reihe von Klassifizierungen mit sehr umfangreichen Beispielda
 > Bevor Sie integrierte Klassifizierungen in Ihrem Klassifikations-und Bezeichnungs Workflow verwenden, sollten Sie Sie anhand eines Beispiels für die Inhalte Ihrer Organisation testen, das Ihrer Meinung nach der Kategorie entspricht, um sicherzustellen, dass Ihre Klassifizierungs Vorhersagen Ihren Erwartungen entsprechen.
 
 > [!IMPORTANT]
-> Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Folgen dieser Sprache und dienen nicht dazu, die alleinigen Möglichkeiten Ihrer Organisation zur Überwachung oder Reaktion auf die Verwendung von zu bieten. solche Sprache. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
+> Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Konsequenzen dieser Sprache und dienen nicht dazu, die Verwendung dieser Sprache allein zu überwachen oder zu beantworten. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
 
 ## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Vorgehensweise vorbereiten und Verwenden einer integrierten Klassifizierung
 

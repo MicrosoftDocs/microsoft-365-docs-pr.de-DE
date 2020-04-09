@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 2db16773b305e2e5f929e96fb3ca0e7bfe541990
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081268"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198383"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -173,7 +173,7 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
 
 1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus. (Dies wurde früher als **Benutzer gemeldet**bezeichnet.)
 
    ![Menü "Ansicht" für Explorer](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -234,3 +234,7 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 
 - Der Bericht über **Echt Zeit Erkennungen** steht in Office 365 ATP-Plan 1 zur Verfügung, während **Threat Explorer** in Office 365 ATP-Plan 2 zur Verfügung steht.
 - Der Bericht über **Echt Zeit Erkennungen** ermöglicht das Anzeigen von Erkennungen in Echtzeit. Dieser Vorgang wird auch von **Threat Explorer** durchgesetzt, aber Sie können auch zusätzliche Details für einen bestimmten Angriff anzeigen.
+- Eine **alle e-Mail-** Ansicht ist in **Threat Explorer** verfügbar (und befindet sich nicht im Bericht über **Echt Zeit Erkennungen** ).
+- In **Threat Explorer**sind weitere Filterfunktionen und verfügbare Aktionen enthalten.
+
+Weitere Informationen finden Sie unter [Office 365 ATP-Dienstbeschreibung: Verfügbarkeit von Features in Advanced Threat Protection (ATP)-Plänen](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)

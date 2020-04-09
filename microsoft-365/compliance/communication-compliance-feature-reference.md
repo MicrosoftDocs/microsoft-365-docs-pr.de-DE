@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029849"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193451"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -43,7 +43,7 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 |**Bereich**|**Richtlinienvorlage**|**Details**|
 |:-----|:-----|:-----|
-| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
+| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: Bedrohung, Profanität und sprach Klassifizierung für Belästigung |
 | **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und-Typen, benutzerdefinierte wörterbuchoption, Anlagen größer als 1 MB |
 | **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
@@ -133,7 +133,7 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 Integrierte Klassifizierungen überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation für unterschiedliche Arten von Kompatibilitätsproblemen. Für Klassifizierungen wird eine Kombination aus künstlicher Intelligenz und Stichwörtern verwendet, um die Sprache in Nachrichten zu identifizieren, die gegen Belästigungs Richtlinien verstoßen könnten. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
 
-Kommunikation Compliance integrierte Klassifizierungen überprüfen die Kommunikation nach Ausdrücken und Gefühlen für die folgenden Sprachtypen:
+Bei der Kommunikations Konformität werden integrierte Klassifizierungen verwendet, um die Kommunikation nach Ausdrücken und Gefühlen für die folgenden Sprachtypen zu überprüfen:
 
 - **Bedrohung**: scannt nach Bedrohungen, um Gewalt oder körperlichen Schaden für eine Person oder Eigenschaft zu begehen.
 - **Belästigung**: Scans für anstößige Verhaltensweisen, die sich an Personen in Bezug auf Rasse, Farbe, Religion und nationale Herkunft ausrichten.
@@ -169,7 +169,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*

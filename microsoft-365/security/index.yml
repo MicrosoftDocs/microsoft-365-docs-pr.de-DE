@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 8a93fc27b8d59484ae603d7bf76e954420e64966
-  ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+  ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
+  ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/07/2019
-  ms.locfileid: "38029299"
+  ms.lasthandoff: 04/09/2020
+  ms.locfileid: "43198349"
 landingContent:
 - title: Microsoft Threat Protection
   linkLists:
@@ -68,11 +68,11 @@ landingContent:
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Erste Schritte mit der Microsoft Cloud-App-Sicherheit
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-- title: Azure Sentinel (Vorschau)
+- title: Azure Sentinel
   linkLists:
   - linkListType: overview
     links:
-    - text: Was ist Azure Sentinel? Vorschau
+    - text: Was ist Azure Sentinel?
       url: https://docs.microsoft.com/azure/sentinel/overview
 - title: Sicherheitsverwaltung
   linkLists:

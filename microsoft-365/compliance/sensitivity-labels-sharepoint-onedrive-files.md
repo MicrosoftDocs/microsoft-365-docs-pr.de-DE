@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+ms.openlocfilehash: 8f57a680bf5cbd53153cedc339b35bc2712c3f73
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126022"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188974"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Vor dieser Vorschau konnten Sie Ihre [Vertraulichkeits Bezeichnungen](sensitivity-labels.md) in Office im Internet nicht anwenden. Die Option " **Empfindlichkeit** " im Menüband oder der zugewiesene Beschriftungsname in der Statusleiste wurde nicht angezeigt. Wenn Sie außerdem Desktop-Apps zum Beschriften Ihrer Dateien verwendet und diese dann in SharePoint oder Onedrive gespeichert haben, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten, wenn die Bezeichnung die Verschlüsselung angewendet hat. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche, vertiefen und anderen kollaborativen Features funktionierte unter diesen Umständen nicht. 
 
@@ -163,3 +163,7 @@ Verwenden Sie das Cmdlet "SPOTenant", um die Vorschau zu deaktivieren:
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $false
     ```
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem Sie die Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, sollten Sie diese Dateien automatisch mithilfe von Richtlinien mit automatischer Benennung bezeichnen. Weitere Informationen finden Sie unter [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md).

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Verstehen Sie, warum geschätzte und tatsächliche Suchergebnisse bei Suchvorgängen mit eDiscovery-Tools in Office 365 variieren können. '
-ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075461"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198372"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen in Office 365
 
@@ -55,7 +55,7 @@ Hier sind einige Gründe für diese Unterschiede:
   
 - **Die Art und Weise Ergebnisse werden geschätzt** -eine Schätzung der Suchergebnisse sind nur die, eine Schätzung (und keine tatsächliche Anzahl) der Elemente, die die Suchabfrage Kriterien erfüllen. Um die Schätzung von Exchange-Elementen zu kompilieren, wird eine Liste der Nachrichten-IDs, die die Suchkriterien erfüllen, von der Exchange-Datenbank nach dem von Ihnen verwendeten eDiscovery-Tool angefordert. Wenn Sie die Suchergebnisse exportieren, wird die Suche jedoch erneut ausgeführt, und die tatsächlichen Nachrichten werden aus der Exchange-Datenbank abgerufen. Diese Unterschiede können daher dadurch entstehen, dass die geschätzte Anzahl von Elementen und die tatsächliche Anzahl von Elementen bestimmt werden. 
     
-- **Änderungen, die zwischen dem Zeitpunkt des abschätzens und Exportierens von Suchergebnissen auftreten** – Wenn Sie Suchergebnisse exportieren, wird die Suche erneut gestartet, um die letzten Elemente im Suchindex zu erfassen, die den Suchkriterien entsprechen. Es ist möglich, dass zusätzliche Elemente erstellt, gesendet oder empfangen wurden, die die Suchkriterien in dem Zeitraum erfüllen, in dem die geschätzten Suchergebnisse gesammelt wurden und die Suchergebnisse exportiert wurden. Es ist auch möglich, dass Elemente, die sich im Suchindex befanden, als die Suchergebnisse geschätzt wurden, nicht mehr vorhanden sind, da Sie vom Inhaltsspeicherort gelöscht wurden, bevor die Suchergebnisse exportiert wurden. Eine Möglichkeit zur Minderung dieses Problems besteht darin, einen Datumsbereich für eine eDiscovery-Suche anzugeben. Eine andere Möglichkeit besteht darin, inhaltsspeicherorte so einzuhalten, dass Elemente beibehalten werden und nicht gelöscht werden können. 
+- **Änderungen, die zwischen dem Zeitpunkt des abschätzens und Exportierens von Suchergebnissen auftreten** – Wenn Sie Suchergebnisse exportieren, wird die Suche erneut gestartet, um die letzten Elemente im Suchindex zu erfassen, die den Suchkriterien entsprechen. Es ist möglich, dass zusätzliche Elemente erstellt, gesendet oder empfangen wurden, die die Suchkriterien in dem Zeitraum erfüllen, in dem die geschätzten Suchergebnisse gesammelt wurden und die Suchergebnisse exportiert wurden. Es ist auch möglich, dass Elemente, die sich im Suchindex befanden, als die Suchergebnisse geschätzt wurden, nicht mehr vorhanden sind, da Sie vom Inhaltsspeicherort gelöscht wurden, bevor die Suchergebnisse exportiert wurden. Eine Möglichkeit zur Minderung dieses Problems besteht darin, einen Datumsbereich für eine eDiscovery-Suche anzugeben. Eine andere Möglichkeit besteht darin, inhaltsspeicherorte so einzuhalten, dass Elemente beibehalten werden und nicht gelöscht werden können. Obwohl sehr selten, auch im Fall, wenn ein Haltebereich angewendet wird, kann die Wartung von integrierten Kalenderelementen (die nicht vom Benutzer bearbeitet werden, aber in vielen Suchergebnissen enthalten sind) von Zeit zu Zeit entfernt werden. Durch diese regelmäßige Entfernung von Kalenderelementen werden weniger Elemente exportiert.
     
 - Nicht **indizierte Elemente** – Elemente, die für die Suche nicht indiziert sind, können Unterschiede zwischen geschätzten und tatsächlichen Suchergebnissen verursachen. Beispielsweise enthalten Compliance-eDiscovery in Exchange und das eDiscovery Center in SharePoint keine nicht indizierten Elemente (die die Suchkriterien nicht erfüllen), wenn Sie eine Suche ausführen, um die Suchergebnisse abzuschätzen. Sie können aber auch nicht indizierte Elemente einschließen, wenn Sie die Suchergebnisse exportieren. Wenn Sie nicht indizierte Elemente beim Exportieren von Suchergebnissen einbeziehen, werden möglicherweise weitere Elemente exportiert. Dies führt zu einem Unterschied zwischen den geschätzten und den exportierten Suchergebnissen. 
     
