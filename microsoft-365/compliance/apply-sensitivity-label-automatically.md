@@ -16,28 +16,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 7bbfb85746c114fa277f28a87c04194bd290c1fd
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163875"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189094"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Wenn Sie ein Vertraulichkeitsbezeichnung erstellen, können Sie dieses Etikett automatisch zu Inhalt zuweisen, wenn er den von Ihnen angegebenen Bedingungen entspricht.
+Wenn Sie ein Empfindlichkeitsetikett erstellen, können Sie dieses Etikett automatisch dem Inhalt zuweisen, wenn es den von Ihnen angegebenen Bedingungen entspricht.
 
 Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwenden, ist aus den folgenden Gründen wichtig:
 
-- Sie müssen die Benutzer nicht schulen, wann sie Ihre Klassifizierungen verwenden sollen.
+- Sie müssen die Benutzer nicht schulen, damit sie alle Ihre Klassifizierungen kennen.
 
 - Sie müssen sich nicht darauf verlassen, dass die Benutzer alle Inhalte richtig klassifizieren.
 
 - Benutzer müssen nicht mehr über Ihre Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
 
-Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeitsbezeichnung:
+Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeits Kennzeichnung:
 
 - **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Office-Anwendungen (Word, Excel, PowerPoint und Outlook) konfiguriert ist. 
     
@@ -57,9 +57,10 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
-    - maximale Anzahl von 25.000 Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
-    - maximale Anzahl von 10 Websitesammlungen in allen Richtlinien
-    - maximale Anzahl von 10 Richtlinien für den gesamten Mandanten
+    - Höchstens 25 000 Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
+        - Höchstens 5 Dateien pro lizenziertem Benutzer pro Tag
+    - Höchstens 10 Websitesammlungen in allen Richtlinien
+    - Höchstens 10 Richtlinien für den gesamten Mandanten
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
     - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
@@ -96,7 +97,7 @@ Die Bezeichnungen werden je nach Position, die Sie in der Richtlinie festlegen, 
 
 Denken Sie daran, dass Sie eine übergeordnete Bezeichnung (eine Bezeichnung mit Unterbezeichnungen) nicht auf Inhalt anwenden können. Stellen Sie sicher, dass Sie eine übergeordnete Bezeichnung nicht so konfigurieren, dass sie automatisch angewendet oder empfohlen wird, da die übergeordnete Bezeichnung nicht auf Inhalt in Office-Apps angewendet wird, die den Azure Information Protection-Client mit einheitlichen Bezeichnungen verwenden. Weitere Informationen zu übergeordneten Bezeichnungen und Unterbezeichnungen finden Sie unter [Unterbezeichnungen (Gruppierungsbezeichnungen)](sensitivity-labels.md#sublabels-grouping-labels).
 
-## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Konfigurieren der automatischen Bezeichnung für Office-Apps
+## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Konfigurieren der automatischen Zuweisung von Bezeichnungen für Office-Apps
 
 Die automatische Zuweisung von Bezeichnungen in Office-Apps für Windows wird durch den Client mit einheitlichen Bezeichnungen von Azure Information Protection unterstützt. Für integrierte Bezeichnungen in Office-Apps befindet sich diese Funktion [für einigen Apps in der Vorschau](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
