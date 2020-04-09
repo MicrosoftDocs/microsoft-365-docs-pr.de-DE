@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082229"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193482"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -30,6 +30,8 @@ ms.locfileid: "42082229"
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP-sichere Links](atp-safe-links.md), ein Feature von [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), können Ihnen helfen, Ihre Organisation vor bösartigen Links zu schützen, die in Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Richtlinien für ATP-sichere Links einrichten, um sicherzustellen, dass Ihre Organisation geschützt ist, wenn Personen auf Webadressen (URLs) klicken. Ihre Richtlinien für ATP-sichere Links können so konfiguriert werden, dass Sie URLs in e-Mails und URLs in Office-Dokumenten überprüfen.
+
+Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e-Mail klickt und die URL durch die Liste der benutzerdefinierten blockierten URLs in Ihrer Organisation blockiert wurde oder wenn die URL als bösartig eingestuft wird, wird eine Warnseite geöffnet.
   
 [Neue Features werden kontinuierlich zu ATP hinzugefügt](office-365-atp.md#new-features-in-office-365-atp). Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren bestehenden Richtlinien für ATP-sichere Links vornehmen.
 
@@ -93,21 +95,23 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
   
 5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an.<br/>**Beispiel:** Um eine Richtlinie mit dem Namen "kein direkter Mausklick" einzurichten, mit der Personen in einer bestimmten Gruppe in Ihrer Organisation nicht durch Klicken auf eine bestimmte Website ohne den Schutz vor ATP-Links geschützt werden können, geben Sie möglicherweise die folgenden empfohlenen Einstellungen an: 
     
-  - Geben Sie im Feld **Name** keinen direkten Mausklick ein.
-    
-  - Geben Sie im Feld **Beschreibung** eine Beschreibung ein, die verhindert, dass Personen in bestimmten Gruppen durch Klicken auf eine Website ohne Überprüfung der ATP-sichere Links durch klicken.
-    
-  - Wählen Sie im Abschnitt **Aktion auswählen die** Option **ein**aus.
-    
-  - Wählen Sie **Echt Zeit-URL-Überprüfung für verdächtige Links und Links anwenden, die auf Dateien verweisen,** Wenn Sie die URL-Detonation für verdächtige und Datei verweisende URLs aktivieren möchten (empfohlen). Und wählen Sie **warten, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht** übermitteln, wenn Sie möchten, dass nur Benutzer Nachrichten empfangen, nachdem die URLs vollständig überprüft wurden.
-    
-  - Wählen Sie **sichere Links auf Nachrichten anwenden, die innerhalb der Organisation gesendet** werden, wenn Sie sichere Links für Nachrichten aktivieren möchten, die zwischen Benutzern innerhalb Ihrer Organisation gesendet werden (empfohlen).
-    
-  - Wählen Sie nicht zulassen, dass Benutzer auf die **ursprüngliche URL klicken** , wenn Sie nicht möchten, dass die einzelnen Benutzer eine über *Prüfung in Progress* oder Benachrichtigungen über *Blockierte URLs* außer Kraft setzen.
-    
-  - (Dies ist optional) Geben Sie im Abschnitt **folgende URLs nicht umschreiben** eine oder mehrere URLs an, die als sicher für Ihre Organisation betrachtet werden. (Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten URL-Liste "nicht umschreiben" unter Verwendung von ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
-    
-  - Wählen Sie im Abschnitt **angewendet für** **den Empfänger ist Mitglied von aus**, und wählen Sie dann die Gruppe (n) aus, die Sie in Ihre Richtlinie einschließen möchten. Klicken Sie auf **Hinzufügen**, und wählen Sie dann **OK**aus.
+    - Geben Sie im Feld **Name** keinen direkten Mausklick ein.
+
+    - Geben Sie im Feld **Beschreibung** eine Beschreibung ein, die verhindert, dass Personen in bestimmten Gruppen durch Klicken auf eine Website ohne Überprüfung der ATP-sichere Links durch klicken.
+
+    - Wählen Sie unter **Wählen Sie die Aktion für unbekannte potenziell bösartige URLs in Nachrichten aus die**Option **ein**aus.
+
+    - Wenn Sie **die Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams auswählen**sehen, wählen Sie **ein**aus. <br/>
+
+    - Wählen Sie **Echt Zeit-URL-Überprüfung für verdächtige Links und Links anwenden, die auf Dateien verweisen,** Wenn Sie die URL-Detonation für verdächtige und Datei verweisende URLs aktivieren möchten (empfohlen). Und wählen Sie **warten, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht** übermitteln, wenn Sie möchten, dass nur Benutzer Nachrichten empfangen, nachdem die URLs vollständig überprüft wurden.
+
+    - Wählen Sie **sichere Links auf Nachrichten anwenden, die innerhalb der Organisation gesendet** werden, wenn Sie sichere Links für Nachrichten aktivieren möchten, die zwischen Benutzern innerhalb Ihrer Organisation gesendet werden (empfohlen).
+
+    - Wählen Sie nicht zulassen, dass Benutzer auf die **ursprüngliche URL klicken** , wenn Sie nicht möchten, dass die einzelnen Benutzer eine über *Prüfung in Progress* oder Benachrichtigungen über *Blockierte URLs* außer Kraft setzen.
+
+    - (Dies ist optional) Geben Sie im Abschnitt **folgende URLs nicht umschreiben** eine oder mehrere URLs an, die als sicher für Ihre Organisation betrachtet werden. (Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten URL-Liste "nicht umschreiben" unter Verwendung von ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
+
+    - Wählen Sie im Abschnitt **angewendet für** **den Empfänger ist Mitglied von aus**, und wählen Sie dann die Gruppe (n) aus, die Sie in Ihre Richtlinie einschließen möchten. Klicken Sie auf **Hinzufügen**, und wählen Sie dann **OK**aus.
     
 6. Wählen Sie **Speichern** aus.
 
@@ -127,7 +131,7 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 |Diese Option  |Funktion  |
 |---------|---------|
 | **Blockieren der folgenden URLs** <br/>    | Ermöglicht Ihrer Organisation, eine benutzerdefinierte Liste von URLs zu haben, die automatisch blockiert werden. Wenn Benutzer auf eine URL in dieser Liste klicken, werden Sie zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, in der erklärt wird, warum die URL blockiert ist. Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mit Office 365 ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office für IOS und Android** <br/>    | Wenn diese Option ausgewählt ist, wird der Schutz für ATP-sichere Links auf URLs in Word-, Excel-und PowerPoint-Dateien unter Windows oder Mac OS, in Outlook-e-Mail-Nachrichten, in Office-Dokumenten auf IOS-oder Android-Geräten, auf Visio 2016-Dateien unter Windows und in den Webversionen von geöffneten Dateien angewendet. Office-Apps (Word, PowerPoint, Excel, Outlook und OneNote), vorausgesetzt, der Benutzer hat sich bei Office 365 angemeldet. |
+| **Office 365 ProPlus, Office für IOS und Android** <br/>    | Wenn diese Option ausgewählt ist, der Schutz für ATP-sichere Office 365 Links wird auf URLs in Word-, Excel-und PowerPoint-Dateien unter Windows oder Mac OS, e-Mail-Nachrichten in Outlook, Office-Dokumenten auf IOS-oder Android-Geräten, Visio 2016-Dateien unter Windows und in den Webversionen von Office-Apps geöffneten Dateien (Word, PowerPoint, Excel, Outlook und OneNote) angewendet, voraus |
 | **Nicht nachverfolgen, wenn Benutzer auf ATP-sichere Links klicken** <br/>  | Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word-, Excel-, PowerPoint-, Visio-Dokumenten und Outlook-e-Mail-Nachrichten werden nicht gespeichert.  <br/> |
 |**Lassen Sie nicht zu, dass Benutzer durch ATP-sichere Links zur ursprünglichen URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |
 
@@ -137,16 +141,17 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 |---------|---------|
 |**Off** <br/> |Überprüft URLs in e-Mail-Nachrichten nicht.  <br/> Ermöglicht das Definieren einer Ausnahmeregel, beispielsweise eine Regel, die URLs in e-Mail-Nachrichten für eine bestimmte Empfängergruppe nicht überprüft.  <br/> |
 |**On** <br/> |Umschreibt URLs, um Benutzer über ATP-Safe-Links-Schutz zu leiten, wenn die Benutzer auf URLs in e-Mail-Nachrichten klicken und ATP-sichere Links in Outlook (C2R) unter Windows aktiviert.  <br/> Überprüft eine URL, wenn auf eine Liste blockierter oder böswilliger URLs geklickt wird, und löst asynchron eine Detonation der URL im Hintergrund aus, wenn die URL nicht über eine gültige Reputation verfügt.  <br/> |
+|**Unbekannte oder potenziell bösartige URLs in Microsoft Teams** |Wenn diese Option verfügbar und ausgewählt ist, werden ATP-sichere Links in Microsoft Teams-Chats und-Kanälen aktiviert. Wenn ein Benutzer auf eine URL in einem Microsoft Teams-Chat oder-Kanal klickt, wird der Link aktiviert. Die URL wird anhand einer Liste blockierter oder böswilliger URLs überprüft und eine Detonation der URL im Hintergrund asynchron ausgelöst, wenn die URL keine gültige Reputation besitzt. |
 |**Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <br/> |Wenn diese Option ausgewählt ist, werden verdächtige URLs und Links, die auf herunterladbaren Inhalt verweisen, überprüft.  <br/> |
 |**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht liefern** <br/> |Wenn diese Option ausgewählt ist, werden Nachrichten, die zu scannende URLs enthalten, bis zum Abschluss der Überprüfung der URLs aufbewahrt und bestätigt, dass Sie sicher sind, bevor die Nachrichten zugestellt werden.  <br/> |
-|**Anwenden von sicheren Links auf Nachrichten, die innerhalb der Organisation gesendet werden** <br/> | Wenn diese Option verfügbar und ausgewählt ist, wird der Schutz für ATP-sichere Links auf e-Mail-Nachrichten angewendet, die zwischen Personen in Ihrer Organisation gesendet werden, vorausgesetzt, die e-Mail-Konten werden in Office 365 gehostet.  <br/> |
+|**Anwenden von sicheren Links auf Nachrichten, die innerhalb der Organisation gesendet werden** <br/> | Wenn diese Option ausgewählt ist, wird der Schutz für ATP-sichere Links auf e-Mail-Nachrichten angewendet, die zwischen Personen in Ihrer Organisation gesendet werden, sofern die e-Mail-Konten in Office 365 gehostet werden.  <br/> |
 |**Benutzerklicks nicht nachverfolgen** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail von externen Absendern wird nicht gespeichert. Die URL-klickverfolgung für Links in e-Mail-Nachrichten, die innerhalb der Organisation gesendet werden, wird derzeit nicht unterstützt.  <br/> |
 |**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |
 |**Folgende URLs dürfen nicht umgeschrieben werden** <br/> |Lässt URLs so wie Sie sind. Speichert eine benutzerdefinierte Liste sicherer URLs, die nicht für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation überprüft werden müssen.  Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste "nicht umschreiben"-URLs mit ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich der letzten Änderungen bei der Unterstützung\*von Platzhalter Sternchen ().  <br/> |
    
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald Ihre ATP-Richtlinien für sichere Links vorhanden sind, können Sie sehen, wie ATP für Ihre orgnization arbeitet, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
+Sobald Ihre ATP-Richtlinien für sichere Links vorhanden sind, können Sie sehen, wie ATP für Ihre Organisation funktioniert, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
