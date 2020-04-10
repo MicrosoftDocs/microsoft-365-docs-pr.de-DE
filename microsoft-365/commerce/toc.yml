@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
       href: billing-and-payments/psd2.md
+    - name: Steuerinformationen
+      href: billing-and-payments/tax-information.md
 - name: Abrechnungskonten
   items:
     - name: Abrechnungskonten verwalten

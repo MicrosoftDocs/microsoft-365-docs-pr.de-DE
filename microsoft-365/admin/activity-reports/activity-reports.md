@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Office 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151429"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204056"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitätsberichte im Microsoft 365 Admin Center
 
@@ -87,6 +87,7 @@ Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](..
 Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
   
 - [E-Mail-Aktivitäten](email-activity.md)
+- [Forms-Aktivitäten](forms-activity.md)
     
 - [Postfachnutzung](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 - [OneDrive for Business-Benutzeraktivität](onedrive-for-business-activity.md)
   
 - [Nutzung von OneDrive for Business](onedrive-for-business-usage.md)
+- [ProPlus-Nutzung](microsoft365-apps-usage.md)
   
 - [Nutzung der SharePoint-Website](sharepoint-site-usage.md)
   

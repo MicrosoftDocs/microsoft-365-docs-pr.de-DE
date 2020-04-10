@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894206"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204100"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurieren von Antispamrichtlinien in Office 365
 
@@ -75,7 +75,7 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Um Antispamrichtlinien hinzuzufügen, zu ändern oder zu löschen, müssen Sie Mitglied der Rollengruppen **Organisationsverwaltung** oder **Sicherheitsadministrator** sein. Für den schreibgeschützten Zugriff auf Antispamrichtlinien müssen Sie Mitglied der Rollengruppe **Sicherheitsleseberechtigter** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Die empfohlenen Einstellungen für Richtlinien für Antischadsoftware finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Die empfohlenen Einstellungen für Richtlinien für Antispam finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien
 
