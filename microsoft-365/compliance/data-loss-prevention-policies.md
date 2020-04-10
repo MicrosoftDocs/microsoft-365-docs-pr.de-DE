@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894886"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189076"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
   
 - Der Inhalt eine Art vertraulicher Information enthält.
     
-- Der Inhalt eine Bezeichnung enthält. Weitere Informationen finden Sie weiter unten im Abschnitt [Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie](#using-a-label-as-a-condition-in-a-dlp-policy).
+- Der Inhalt eine Bezeichnung enthält. Weitere Informationen finden Sie weiter unten im Abschnitt [Verwenden einer Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
     
 - Inhalte werden an Personen außerhalb oder innerhalb der Organisation weitergeleitet.
 
@@ -327,35 +327,23 @@ Aus diesen Gründen lautet die Anleitung zum Erstellen von Regeln mit unterschie
     
 - Alle dazwischen liegenden Vertrauensstufen rangieren normalerweise von direkt über der niedrigeren Vertrauensstufe bis direkt unterhalb der höheren Vertrauensstufe.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-Sie können eine Bezeichnung erstellen und dann wie folgt damit vorgehen:
-<!-- what kind of label? -->
-  
-- **Veröffentlichen**, damit Endbenutzer sie sehen und die Bezeichnung manuell auf Inhalte anwenden können. 
-    
-- **Automatisch auf Inhalte anwenden**, die den von Ihnen gewählten Bedingungen entsprechen. 
-    
-Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungsbezeichnungen](labels.md).
-  
-Nachdem Sie eine Bezeichnung erstellt haben, können Sie diese Bezeichnung als Bedingung in Ihren DLP-Richtlinien verwenden. 
+Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](labels.md) als Bedingung in einer DLP-Richtlinie verwenden, müssen Sie Folgendes beachten:
+
+- Sie müssen die Aufbewahrungsbezeichnung erstellt, veröffentlicht und angewendet haben, bevor Sie sie als Bedingung in einer DLP-Richtlinie verwenden können.
+- Nach ihrer Erstellung und Veröffentlichung kann es bis zu einem Tag dauern, bis Aufbewahrungsbezeichnungen synchronisiert wurden, und bis zu sieben Tage, bis sie automatisch angewendet werden. Weiter Informationen hierzu finden Sie unter [Wie lange es dauert, bis Aufbewahrungsbezeichnungen wirksam werden](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie ***wird nur für Elemente in SharePoint Online und OneDrive for Business*** unterstützt.
+
 
 ![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-Dies kann beispielsweise in den folgenden Fällen wünschenswert sein:
-  
-- Sie haben eine Bezeichnung namens **Vertraulich** veröffentlicht, damit Mitarbeiter in Ihrer Organisation diese Bezeichnung vertraulichen E-Mails und Dokumenten manuell zuweisen können. Durch die Verwendung dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie verhindern, dass als **Vertraulich** gekennzeichnete Inhalte für Personen außerhalb Ihrer Organisation freigegeben werden. 
-    
-- Sie haben die Bezeichnung **Alpenhaus** für ein gleichnamiges Projekt erstellt und dann diese Bezeichnung automatisch auf Inhalte angewendet, die das Schlüsselwort "Alpenhaus" enthalten. Durch die Verwendung dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie Endbenutzern einen Richtlinientipp anzeigen lassen, wenn diese dabei sind, diesen Inhalt für jemanden außerhalb Ihrer Organisation freizugeben. 
-    
-- Sie haben die Bezeichnung **Steuererklärung** veröffentlicht, damit der Zuständige die Bezeichnung manuell Inhalten zuweisen kann, die entsprechend klassifiziert werden müssen. Durch Verwenden dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie nach Inhalten mit dieser Bezeichnung zusammen mit anderen Typen vertraulicher Informationen wie US-Steuernummern für Privatpersonen (ITIN) und US-Sozialversicherungsnummern (SSN) suchen. Wenden Sie Schutzaktionen auf Inhalte mit der Bezeichnung **Steuererklärung** an, und rufen Sie detaillierte Aktivitätsberichte zur DLP-Richtlinie aus den DLP-Berichten und Überwachungsprotokolldaten ab. 
-    
-- Sie haben die Bezeichnung **Geschäftsleitungsteam – Vertraulich** in den Exchange-Postfächern und OneDrive-Konten einer Gruppe von Führungskräften veröffentlicht. Durch Verwenden dieser Bezeichnung als Bedingung in Ihrer DLP-Richtlinie können Sie für dieselbe Teilmenge von Inhalten und Benutzern sowohl Aufbewahrungs- als auch Schutzaktionen erzwingen. 
-    
-Durch Verwenden von Bezeichnungen als Bedingung in Ihren DLP-Regeln können Sie Schutzaktionen selektiv auf eine bestimmte Gruppe von Inhalten, Standorten oder Benutzern anwenden. 
+Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Disposition stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
 
-> [!NOTE]
-> Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: "Der Schutz von beschriftetem Inhalt in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten oder deaktivieren Sie Exchange und Teams als Speicherort." Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
+- Sie haben eine Aufbewahrungsbezeichnung namens **Steuerjahr 2018** veröffentlicht, durch deren Anwendung auf Steuerdokumente von 2018, die in SharePoint gespeichert sind, diese für 10 Jahre aufbewahrt und dann freigegeben werden. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
+
+> [!IMPORTANT]
+> Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Microsoft Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: **"Der Schutz von mit Bezeichnungen versehenen Inhalten in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten, oder deaktivieren Sie Exchange und Microsoft Teams als Speicherort."** Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Die Unterstützung von Vertraulichkeitsbezeichnungen wird in Kürze verfügbar sein
 
