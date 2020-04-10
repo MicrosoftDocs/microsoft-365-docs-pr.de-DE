@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Amazon Webdienste (AWS) für Office 365 einrichten.
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351476"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211847"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Erstellen von DNS-Einträgen bei Amazon Web Services (AWS) für Office 365
 
@@ -116,7 +116,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 7. Wenn es weitere MX-Einträge gibt, entfernen Sie sie.
     
     > [!IMPORTANT]
-    > AWS speichert MX-Einträge als Satz, der mehrere Datensätze enthalten kann. **** Wählen Sie nicht **Daten Satz Satz löschen**aus, da dadurch alle MX-Einträge gelöscht werden, einschließlich des soeben hinzugefügten MX-Eintrags. Verwenden Sie stattdessen die folgenden Anweisungen. 
+    > AWS speichert MX-Einträge als Satz, der mehrere Datensätze enthalten kann. **DO NOT** Wählen Sie nicht **Daten Satz Satz löschen**aus, da dadurch alle MX-Einträge gelöscht werden, einschließlich des soeben hinzugefügten MX-Eintrags. Verwenden Sie stattdessen die folgenden Anweisungen. 
   
     Wählen Sie zuerst den MX-Eintragssatz aus.
     

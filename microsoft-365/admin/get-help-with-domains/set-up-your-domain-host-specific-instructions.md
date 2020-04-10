@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Hier erfahren Sie, wie Sie Ihre eigenen DNS-Einträge verwalten oder Ihre DNS-Einträge Office 365 verwalten können.
 ms.custom: okr_smb
-ms.openlocfilehash: dbd9dda6f84803732777ac75163f031b50419732
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362140"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210356"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Einrichten Ihrer Domäne (hostspezifische Anweisungen)
 

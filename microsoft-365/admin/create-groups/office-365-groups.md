@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Weitere Informationen zu Office 365-Gruppen.
-ms.openlocfilehash: 2257af16106e47b490beebd6d48e566bb3c07ca6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5a0b72737a360a4bfe4cdd8fee4a08b7a7ff236
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894491"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212533"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>Übersicht über Office 365 Gruppen für Administratoren
 

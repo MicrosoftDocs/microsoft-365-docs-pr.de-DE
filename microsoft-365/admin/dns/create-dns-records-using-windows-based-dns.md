@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste auf dem Windows-basierten DNS für Office 365 einrichten.
-ms.openlocfilehash: ddea5cb95a7f2abef8b68b37de473f936ee08eb5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245026"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210564"
 ---
 # <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Office 365 mit Windows-basiertem DNS
 
@@ -38,17 +38,17 @@ Um zu beginnen, müssen Sie [Ihre DNS-Einträge in Windows-basiertem DNS Suchen]
 Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen von DNS-Einträgen finden Sie unter [Problembehandlung bei Problemen nach dem Ändern des Domänennamens oder der DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Suche nach Ihren DNS-Einträgen in einem Windows-basierten DNS
-<a name="BKMK_find_your_dns_1"></a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start** > **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc**ein, und wählen Sie dann **OK**aus. Erweitern Sie im DNS-Manager den Eintrag ** \<DNS-Servername\> \> Forward-Nachschlage Zonen  **. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
+<a name="BKMK_find_your_dns_1"> </a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start** > **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc**ein, und wählen Sie dann **OK**aus. Erweitern Sie im DNS-Manager den Eintrag ** \<DNS-Servername\> \> Forward-Nachschlage Zonen  **. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
    
 ## <a name="add-mx-record"></a>Hinzufügen eines MX-Eintrags
 <a name="BKMK_add_MX"> </a>
 
 Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Office 365 geleitet werden.
-- Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.     
+- Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
 - Kopieren Sie in der Zeile MX im Abschnitt Exchange Online der Seite DNS-Einträge hinzufügen in Office 365 den unter Verweist auf die Adresse aufgeführten Wert. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** > **Mail Exchanger (MX)**. Informationen zur Suche dieser Seite für die Domäne finden Sie unter [Suchen nach DNS-Einträgen in Windows-basiertem DNS](#find-your-dns-records-in-windows-based-dns).  
 - Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind: 
-    - Hostname: 
+    - Hostname:  
     - @Address: Fügen Sie den Wert für die Punkt-zu-Adresse ein, den Sie soeben aus Office 365 hier kopiert haben.  
     - Präferenz 
 - Wählen Sie **Save Changes**aus.
@@ -110,7 +110,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhindern.
   

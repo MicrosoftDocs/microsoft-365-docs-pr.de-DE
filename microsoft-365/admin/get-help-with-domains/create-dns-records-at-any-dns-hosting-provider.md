@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 erstellen.
 ms.custom: okr_smb
-ms.openlocfilehash: 2d3c726f70ffb4588f7ae2fc8b53bf8f0c60e258
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252972"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210480"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365
 

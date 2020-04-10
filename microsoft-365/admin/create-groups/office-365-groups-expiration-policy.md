@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Office 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894515"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212057"
 ---
 # <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365 Gruppe
 
@@ -38,7 +38,7 @@ Administratoren können einen Ablaufzeitraum angeben, und alle inaktiven Gruppen
 Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Durch eine der folgenden Aktionen wird automatisch eine Gruppe erneuert:
 - SharePoint – anzeigen, bearbeiten, herunterladen, weiterleiten, freigeben oder Hochladen von Dateien.
 - Outlook – beitreten einer Gruppe, lesen oder Schreiben von Gruppen Nachrichten der Gruppe und wie eine Nachricht (Outlook im Web).
-- Teams – besuchen eines Teams-Kanals.
+- Teams – besuchen eines Teams Channe '.
 
 > [!IMPORTANT]
 > Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.
@@ -85,4 +85,4 @@ Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe er
 
 [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Konfigurieren des Ablaufs von Office 365 Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Konfigurieren des Ablaufs von Office 365 Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

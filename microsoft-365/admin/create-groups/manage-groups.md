@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Hier erfahren Sie, wie Sie Office 365 Gruppen verwalten, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: 189a41c5049110100b548ca6f906b1324aeb1431
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894527"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212069"
 ---
 # <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Office 365 Gruppe im Microsoft 365 Admin Center
 
@@ -192,7 +192,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erstellen einer Office 365 Gruppe](create-groups.md)
+[Erstellen einer Office 365-Gruppe](create-groups.md)
 
 [Verwalten des Gastzugriffs auf Office 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 

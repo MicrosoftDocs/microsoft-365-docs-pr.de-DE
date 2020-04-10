@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Teams haben jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Sie Chats mit 1-zu-1-Chats, zwischen Gruppen oder in Kanälen und Registerkarten verwenden, wenn Sie ein Abonnement für Office 365 ATP haben, haben Sie die Möglichkeit, dieses Sicherheitsfeature zu aktivieren und zu verwenden.
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030140"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212545"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ So funktioniert es:
 1. Wenn Sie die Teams-Anwendung starten, überprüfen Office 365, ob der Benutzer einer Organisation angehört, die über Office 365 ATP verfügt, und dass der Benutzer Teil einer aktiven Richtlinie für sichere Links ist, deren Schutz für Microsoft Teams aktiviert ist.
 
 2. Wenn dies der Fall ist, werden URLs zum Zeitpunkt der Klickfunktion in Chats, Gruppenchats, Kanälen und Registerkarten für diesen Benutzer überprüft.
+
+> [!NOTE]
+> Sichere linksschützen Benutzer vor Links, die von Gastbenutzern, Verbundbenutzern und Mandanten Benutzern gesendet werden. Wenn der angemeldete Benutzer über sichere Links für aktivierte Teams verfügt, werden Schutz für sichere Links angewendet.
  
 ## <a name="what-will-users-experience"></a>Was werden Benutzer erfahren? 
 

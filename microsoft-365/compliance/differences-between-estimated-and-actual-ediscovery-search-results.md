@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Verstehen Sie, warum geschätzte und tatsächliche Suchergebnisse bei Suchvorgängen mit eDiscovery-Tools in Office 365 variieren können. '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198372"
+ms.locfileid: "43204067"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen in Office 365
 
 Dieses Thema bezieht sich auf Suchvorgänge, die Sie mit einem der folgenden Microsoft eDiscovery-Tools ausführen können: 
 
 - Inhaltssuche im Security & Compliance Center  <br/>  
+- Suchvorgänge im Zusammenhang mit zentralen eDiscovery-Fällen
 - In-Place-eDiscovery im Exchange Admin Center (EAC)  <br/>  
 - Das eDiscovery Center in SharePoint Online  <br/> 
    
@@ -83,5 +84,3 @@ Im eDiscovery Center in SharePoint Online haben Sie die Möglichkeit, nicht indi
   
 > [!NOTE]
 > Wenn Sie beim Exportieren von Suchergebnissen oder einfach nur zum Herunterladen der Berichte die Option **Elemente einschließen, die verschlüsselt sind oder nicht erkannt** sind, nicht auswählen, werden die Indexfehler Berichte heruntergeladen, aber keine Einträge. Dies bedeutet nicht, dass keine Indizierungsfehler vorliegen. Dies bedeutet nur, dass nicht indizierte Elemente nicht in den Export eingeschlossen wurden. 
-  
-

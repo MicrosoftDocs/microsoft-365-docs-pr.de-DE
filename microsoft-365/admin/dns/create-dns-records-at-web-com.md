@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Web.com für Office 365 einrichten.
-ms.openlocfilehash: eb231f85e568e81a5e229f0533d8176feb590f48
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d5546b55392849aac9049613bd860f937ffb7618
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42249455"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211074"
 ---
 # <a name="create-dns-records-at-webcom-for-office-365"></a>Erstellen von DNS-Einträgen bei Web.com für Office 365
 
@@ -129,7 +129,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 
 4. Klicken Sie unter **e-Mail-Server (MX Records)** auf **MX-Einträge bearbeiten**, und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
     
-    |**Priority**|**TTL**|**Mail server**|
+    |**Priorität**|**TTL**|**Mail server**|
     |:-----|:-----|:-----|
     |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> |*\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * aus Ihrem Office 365-Konto ab.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |
    
@@ -144,7 +144,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Fügen Sie die sechs CNAME-Einträge hinzu, die für Office 365 erforderlich sind.
 <a name="BKMK_add_CNAME"> </a>
 
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. You'll be prompted to log in first.
+1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Sie werden aufgefordert, sich zuerst anzumelden.
      
 2. Wählen Sie auf der Seite **Konto-Manager** die Option **meine Domänennamen**aus. 
   
@@ -174,7 +174,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://checkout.web.com/manage-it/index.jsp)zu ihrer Domänen Seite bei Web.com. Melden Sie sich zuerst an.
     
@@ -193,7 +193,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
  
 5. Wählen Sie **weiter**aus.
 
-6. Wählen Sie **Save Changes**aus.
+6. Wählen Sie **Änderungen speichern** aus.
     
 
   
@@ -223,7 +223,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
   
 6. Wählen Sie **weiter**aus.
 
-7. Wählen Sie **Save Changes**aus.
+7. Wählen Sie **Änderungen speichern** aus.
 
     
 > [!NOTE]

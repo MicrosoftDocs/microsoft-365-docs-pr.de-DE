@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'Informationen zum Erstellen von DNS-Einträgen für Office 365, die von 21Vianet ausgeführt werden, wenn Ihre DNS-Einträge verwaltet werden. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1f7b8330b45d6704d2d56b2c68cfcd37de84207a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b81ab3442e7087c4b7ee9bb3b5e5c2160d724986
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254144"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211997"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen
 

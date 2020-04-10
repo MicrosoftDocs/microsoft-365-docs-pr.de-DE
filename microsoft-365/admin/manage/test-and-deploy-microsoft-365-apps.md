@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Suchen, testen und Bereitstellen von Microsoft-und Microsoft-Partner-Apps für Benutzer und Gruppen in Ihrer Organisation über das integrierte apps-Portal im Microsoft 365 Admin Center.
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363065"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212269"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testen und Bereitstellen von Microsoft 365-apps im Microsoft 365 Admin Center
 
-Das Microsoft 365 Admin Center bietet Ihnen die Flexibilität, Microsoft-und Microsoft-Partner-apps von einem einzigen Standort aus bereitzustellen. Die Möglichkeit, erworbene und lizenzierte apps von Microsoft und Microsoft-Partnern aus dem integrierten App-Portal zu finden, zu testen und vollständig bereitzustellen, bietet den Komfort und die Vorteile, die Ihre Organisation benötigt, um Geschäftsdienste regelmäßig zu aktualisieren und zu führen. effizient.  
+Das Microsoft 365 Admin Center bietet Ihnen die Flexibilität, Microsoft-und Microsoft-Partner-apps von einem einzigen Standort aus bereitzustellen. Die Möglichkeit, erworbene und lizenzierte apps von Microsoft und Microsoft-Partnern aus dem integrierten App-Portal zu finden, zu testen und vollständig bereitzustellen, bietet den Komfort und die Vorteile, die Ihre Organisation benötigt, um Geschäftsdienste regelmäßig zu aktualisieren und effizient zu betreiben.  
 
 Weitere Informationen zum Kauf und zur Lizenzierung von Microsoft 365-Apps für Ihre Organisation finden Sie im Blogbeitrag namens [Verwalten und Bereitstellen von Microsoft 365-apps im Microsoft 365 Admin Center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   

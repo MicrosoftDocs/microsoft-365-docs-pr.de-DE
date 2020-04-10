@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen oder die Mitglieder.
-ms.openlocfilehash: edea829a8578387459afe3ce4889dfa620f95956
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253080"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212021"
 ---
 # <a name="configure-a-shared-mailbox"></a>Konfigurieren eines freigegebenen Postfachs
 
@@ -35,19 +35,19 @@ Nachdem Sie [ein freigegebenes Postfach erstellt](create-a-shared-mailbox.md)hab
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -126,19 +126,19 @@ Wenn Sie zulassen möchten, dass alle Benutzer die gesendeten e-Mails anzeigen k
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -155,19 +155,19 @@ Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a L
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -184,19 +184,19 @@ Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a L
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -212,19 +212,19 @@ Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a L
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
@@ -244,19 +244,19 @@ Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen m�
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">freigegebene Postfächer</a> **Gruppen** \> .
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **freigegebene Postfächer** **Gruppen** > . 
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**. 
 
 ::: moniker-end
 

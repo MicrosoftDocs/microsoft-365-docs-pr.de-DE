@@ -6,7 +6,7 @@ ms.author: v-sharos
 author: shars
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie mehr über den Unterschied zwischen dem Office 365-Setup-Assistenten und der Seite Setup.
-ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360456"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209700"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Office 365-Setup-Assistenten und der Setup-Seite
 
@@ -49,7 +49,7 @@ Der Setup-Assistent führt Sie durch die folgenden Schritte aus:
 
 3. Fügen Sie neue Benutzer hinzu, und weisen Sie Ihnen Lizenzen zu, damit Sie Office 365-apps herunterladen und installieren können.
 
-4. Verbinden Sie Ihre Domäne.
+4. Connect'your-Domäne.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Verwenden der Setup Seite zum Abschließen und Verwalten Ihrer Konfiguration
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Hier erfahren Sie, wie Sie Ihre Domäne in Office 365 hinzufügen und einrichten, sodass Ihre Dienste wie e-Mail und Skype for Business Online ihren eigenen Domänennamen verwenden.
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252969"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210492"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>Ändern von Namenservern zum Einrichten von Office 365 bei einer beliebigen Domänenregistrierungsstelle
 
@@ -57,9 +57,9 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
 
 1. Melden Sie sich bei der Website Ihres DNS-Hostinganbieters an.
     
-2. Wählen Sie Ihre Domäne aus.
+2.  Wählen Sie Ihre Domäne aus.
     
-3. Suchen Sie die Seite, auf der Sie die DNS-Einträge für Ihre Domäne bearbeiten können
+3. Suchen Sie die Seite, auf der Sie DNS-Datensätze für Ihre Domäne bearbeiten können.
     
 ### <a name="create-the-record"></a>Erstellen des Datensatzes
 
@@ -69,16 +69,16 @@ Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, f
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Alias** oder **Hostname** <br/> |**Wert** <br/> |**TTL** <br/> |
+|**Record Type ** <br/> |**Alias** oder **Hostname** <br/> |**Wert** <br/> |**TTL** <br/> |
 |TXT  <br/> |Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> > [!NOTE]> Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.      <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  <br/> |
    
 **Wenn Sie einen MX-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Verwenden Sie für die **Priorität**, um Konflikte mit dem für den Nachrichtenfluss verwendeten MX-Eintrag zu vermeiden, eine niedrigere Priorität als die Priorität für alle vorhandenen MX-Einträge. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.md#what-is-mx-priority) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+|**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
+|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.md#what-is-mx-priority) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 ### <a name="save-the-record"></a>Speichern des Datensatzes
 

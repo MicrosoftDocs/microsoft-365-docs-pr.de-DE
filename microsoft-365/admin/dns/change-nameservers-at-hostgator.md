@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Erfahren Sie, wie Sie Office 365 einrichten können, um die DNS-Einträge Ihrer benutzerdefinierten Domäne bei Hostgator zu verwalten.
-ms.openlocfilehash: 95131e258482fdb0ff9aa7f00b3339e1c6f9509d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d592fc77513107679206a4ac187116c7d6fb794f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351846"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212329"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Ändern von Namenservern zum Einrichten von Office 365 bei Hostgator
 
