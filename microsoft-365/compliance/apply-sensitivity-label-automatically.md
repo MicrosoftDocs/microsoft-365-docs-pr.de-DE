@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189094"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216886"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -57,8 +57,8 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
-    - Höchstens 25 000 Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
-        - Höchstens 5 Dateien pro lizenziertem Benutzer pro Tag
+    - Höchstens 25 000 automatisch bezeichnete Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
+        - Höchstens 5 automatisch bezeichnete Dateien pro lizenziertem Benutzer pro Tag
     - Höchstens 10 Websitesammlungen in allen Richtlinien
     - Höchstens 10 Richtlinien für den gesamten Mandanten
 

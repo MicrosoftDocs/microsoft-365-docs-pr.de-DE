@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Office 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212057"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225919"
 ---
 # <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365 Gruppe
 
@@ -38,7 +38,7 @@ Administratoren können einen Ablaufzeitraum angeben, und alle inaktiven Gruppen
 Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Durch eine der folgenden Aktionen wird automatisch eine Gruppe erneuert:
 - SharePoint – anzeigen, bearbeiten, herunterladen, weiterleiten, freigeben oder Hochladen von Dateien.
 - Outlook – beitreten einer Gruppe, lesen oder Schreiben von Gruppen Nachrichten der Gruppe und wie eine Nachricht (Outlook im Web).
-- Teams – besuchen eines Teams Channe '.
+- Teams – besuchen eines Teams-Kanals.
 
 > [!IMPORTANT]
 > Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.
