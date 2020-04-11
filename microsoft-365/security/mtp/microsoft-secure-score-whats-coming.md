@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
 ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/21/2020
 ms.locfileid: "42895441"
@@ -36,25 +36,25 @@ Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerun
 
 Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen.
 
-- Löschen/Blockieren von Konten, die in den letzten 30 Tagen nicht verwendet werden
-- Festlegen weniger als 5 globaler Administratoren
-- Anwenden von IRM-Schutz auf Dokumente
-- Anwenden von Richtlinien zur Verhinderung von Datenverlust
+- Konten, die in den letzten 30 Tagen nicht benutzt wurden, löschen/sperren
+- Weniger als 5 globale Administratoren festlegen
+- IRM-Schutz auf Dokumente anwenden
+- Richtlinien zur Verhinderung von Datenverlust anwenden
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Hinzufügen zusätzlicher Steuerelementunterstützung in der Vorschauversion
-- Zulassen, dass Benutzer keine Zustimmung zu nicht verwalteten Anwendungen erteilen (derzeit in der veröffentlichten Version verfügbar)
+### <a name="adding-additional-control-support-in-the-preview-version"></a>Hinzufügen zusätzlicher Steuerelemente in der Vorschauversion
+- Nicht zulassen, dass Benutzer nicht verwalteten Anwendungen zustimmen (zurzeit in der veröffentlichten Version verfügbar)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Unterstützung für zusätzliche Microsoft Cloud App-Sicherheits Verbesserungs Aktionen
-- Deaktivieren des Druck Warteschlangendiensts auf Domänencontrollern
-- Ändern unsicherer Kerberos-Delegierungen zum Verhindern eines Identitätswechsels
-- Schützen und Verwalten von lokalen Administratorkennwörtern mit Microsoft Laps
-- Verringern des Risikos von lateralen Bewegungspfaden auf vertrauliche Entitäten
-- Entfernen ruhender Konten aus vertraulichen Gruppen
-- Entfernen von ungesicherten sid-Verlaufsattributen aus Entitäten
-- Auflösen von ungesicherten Kontoattributen
-- Stop Clear Text Credentials Exposure
-- Kommunikation mit Legacy Protokollen beenden
-- Schwache Verschlüsselungs Verwendung beenden
+#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Unterstützung zusätzlicher Microsoft Cloud App Security-Verbesserungsmaßnahmen
+- Druckerspoolerdienst auf Domänencontrollern deaktivieren
+- Unsichere Kerberos-Delegierungen ändern, um einen Identitätswechsel zu verhindern
+- Lokale Administratorkennwörter mit Microsoft LAPS schützen und verwalten
+- Risiko des lateralen Bewegungspfads auf sensible Entitäten reduzieren
+- Ruhende Konten aus sensiblen Gruppen entfernen
+- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
+- Unsichere Kontoattribute auflösen
+- Offenlegung von Anmeldeinformationen in Klartext verhindern
+- Kommunikation über Legacy-Protokolle verhindern
+- Verwendung schwacher Verschlüsselung verhindern
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Unterstützung für Sicherheitsempfehlungen für Microsoft Defender ATP Threat & Vulnerability Management (TVM)
-- Alle veröffentlichten Sicherheitsempfehlungen, die von TVM bereitgestellt werden, werden nun auch in Microsoft Secure Score verfügbar sein.
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Unterstützung der Sicherheitsempfehlungen von Microsoft Defender ATP Threat & Vulnerability Management (TVM)
+- Alle von TVM bereitgestellten Sicherheitsempfehlungen sind nun auch in Microsoft-Sicherheitsbewertung verfügbar.

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204100"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216923"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurieren von Antispamrichtlinien in Office 365
 
@@ -280,7 +280,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
 3. Klicken Sie auf **Richtlinie bearbeiten**.
 
-Bei benutzerdefinierten Antispamrichtlinien sind die verfügbaren Einstellungen im eingeblendeten Flyout mit denen identisch, die im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) beschrieben sind.
+Die Einstellungen im eingeblendeten Flyout sind mit den Einstellungen identisch, die im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) verfügbar sind.
 
 Bei der standardmäßigen Antispamrichtlinie namens **Standard-Spamfilterrichtlinie** ist der Abschnitt **Angewendet auf** nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
 
@@ -460,7 +460,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 Verwenden Sie zum Anzeigen vorhandener Spamfilterregeln die folgende Syntax:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 Führen Sie den folgenden Befehl aus, um eine Übersichtsliste aller Spamfilterregeln anzuzeigen:

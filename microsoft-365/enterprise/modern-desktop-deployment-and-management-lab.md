@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081280"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225931"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -113,7 +113,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 18. April 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 5. Juli 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 
