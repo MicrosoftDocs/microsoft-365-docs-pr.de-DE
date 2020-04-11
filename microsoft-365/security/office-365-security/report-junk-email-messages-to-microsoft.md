@@ -2,10 +2,10 @@
 title: Melden von Spam-, nicht-Spam-und Phishing-Nachrichten an Microsoft
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,25 +15,26 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: 'Das Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook" bietet mehrere Möglichkeiten zum Melden von Junk-E-Mails:'
-ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Administratoren können sich über die verschiedenen Möglichkeiten zum Melden von guten und schlechten Nachrichten an Microsoft informieren.
+ms.openlocfilehash: 4578e3d29a89e94d23c04e4d80e45c79c18cfb85
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033662"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216875"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Melden von Nachrichten und Dateien an Microsoft
 
-Benutzer und Administratoren in Office 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer zum Übermitteln von e-Mail-Nachrichten haben verschiedene Methoden zum Melden von Nachrichten und Dateien an Microsoft.
+Benutzer und Administratoren in Office 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer haben verschiedene Methoden zum Melden von Nachrichten und Dateien an Microsoft.
 
 |||
 |---|---|
 |**Methode**|**Beschreibung**|
-|[Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md)|Dies ist die empfohlene Berichtsmethode für Administratoren in Organisationen mit Exchange Online Postfächern (nicht verfügbar in eigenständigen EoP).|
-|[Aktivieren des Add-Ins "Berichtsnachricht" in Office 365](enable-the-report-message-add-in.md)|Funktioniert mit Outlook, Outlook für Mac und Outlook im Internet. Dies ist das empfohlene Add-in. <br/><br/> Je nach Lizenz sind die gemeldeten Nachrichten in den [Ergebnissen der automatischen Untersuchung und Antwort (Air)](air-view-investigation-results.md), des vom [Benutzer gemeldeten Nachrichten Berichts](view-email-security-reports.md#user-reported-messages-report) und des [Threat-Explorers](threat-explorer-views.md#email--submissions)verfügbar.|
+|[Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln](admin-submission.md)|Die empfohlene Berichtsmethode für Administratoren in Organisationen mit Exchange Online Postfächern (nicht verfügbar in eigenständigen EoP).|
+|[Aktivieren des Add-Ins "Berichtsnachricht" in Office 365](enable-the-report-message-add-in.md)|Funktioniert mit Outlook, Outlook für Mac und Outlook im Internet (früher bekannt als Outlook Web App) und ist das empfohlene Add-in. <br/><br/> Je nach Ihrem Abonnement sind Nachrichten, die Benutzer mit dem Add-in gemeldet haben, in den [Ergebnissen der automatischen Untersuchung und Antwort (Air)](air-view-investigation-results.md), des vom [Benutzer gemeldeten Nachrichten Berichts](view-email-security-reports.md#user-reported-messages-report)und des [Bedrohungs-Explorers](threat-explorer-views.md#email--submissions)verfügbar.|
 |[Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook in Office 365](junk-email-reporting-add-in-for-microsoft-outlook.md)|Funktioniert nur in Outlook.|
 |[Melden von Junk-und Phishing-e-Mails in Outlook im Internet in Office 365](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Verwenden Sie die integrierten Funktionen in Outlook im Internet für Organisationen mit Exchange Online Postfächern (nicht verfügbar in eigenständigen EoP).|
+|[Manuelles übermitteln von Nachrichten an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Manuelles Senden angefügter Nachrichten an bestimmte Microsoft-e-Mail-Adressen für Spam, nicht Spam und Phishing. <br/><br/> Erfahren Sie auch, wie Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, in der Sie benachrichtigt werden, wenn Benutzer Nachrichten an diese e-Mail-Berichts Adressen senden.|
 |[Übermitteln von Schadsoftware und nicht-Schadsoftware an Microsoft zur Analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Verwenden Sie die Microsoft Security Intelligence-Website, um Anlagen und andere Dateien zu übermitteln.|
 |
 

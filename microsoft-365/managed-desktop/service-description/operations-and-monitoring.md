@@ -9,19 +9,19 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1cd620206f559e6870c6706fc0e40f4b7e45bc84
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602802"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225897"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-Vorgänge und-Überwachung
 
 <!-- Operations and monitoring: -->
 
 
-## <a name="change-management"></a>Änderungsverwaltung
+## <a name="change-management"></a>Change Management
 
 In einem Dienstangebot liegt die Verantwortlichkeit für Bereiche wie Wartung der Hardware und Sicherheitsupdates bei dem Dienstanbieter (Microsoft), und nicht bei dem Kunden (Ihnen). Sie müssen jedoch dennoch sicherstellen, dass Drittanbieter-und benutzerdefinierte Software weiterhin wie erwartet funktionieren, wenn Updates ausgeführt werden.
 
@@ -67,7 +67,7 @@ Nicht alle Änderungen wirken sich gleichermaßen auf die Benutzer aus und erfor
 **Art der Änderung** | -Feature-Updates<br>-Neue Features oder Anwendungen<br>-Veraltete Features | Client-Hotfixes für Probleme | Sicherheitspatches
 **Vorankündigung** | 5 Tage Benachrichtigung für Änderungen, die eine Aktion erfordern |    Nein, diese sind in der monatlichen Version enthalten.   | Nein, diese sind in der monatlichen Version enthalten. 
 **Kommunikationskanal** | -Nachrichten Center<br>-E-Mail-Benachrichtigung | -Nachrichten Center<br>-E-Mail-Benachrichtigung | -Nachrichten Center<br>-E-Mail-Benachrichtigung
-**Erfordert Mandanten-admin-Aktion** | Manchmal |  Nur selten |    Nur selten 
+**Globale Administratoraktion erforderlich** | Manchmal |  Nur selten |    Nur selten 
 **Typ der Aktion** | Ändern der Einstellungen | Kommunizieren der Änderungen an Benutzer | Ändern der Administratoreinstellungen     
 **Erfordert Tests** | Überprüfen von Geschäftsanwendungen, einschließlich RAS-Diensten |  Manchmal – Testen des Fix im Hinblick auf die Prozesse und Anpassungen |   Nur selten 
 **Beispiele für Änderungen** | -Feature-Updates: vereinfachte Unterstützung von IT-Verwaltungs Portalen und Überprüfung<br>-Neue Features oder Anwendungen: halbjährliche Veröffentlichung eines Windows 10-Funktionsupdates | Hotfixes basierend auf den von Kunden gemeldeten Fehlern |  
@@ -79,7 +79,7 @@ Der Microsoft Managed Desktop-Dienst wird von Microsoft in Ihrer Microsoft Cloud
 
 Für lokale Produkte übernimmt Ihre Organisation die gesamte Verantwortung für die Verwaltung von Setup sowie für Konfigurations-und Betriebsaktivitäten.
 
-Kategorien |    Microsoft wird | Kunde wird
+Categories |    Microsoft wird | Kunde wird
 --- | --- | ---
 Netzwerk (Proxy, Paketüberprüfung, VPN)  | Beraten und planen Sie Kunden, um Risiken für Geschäftsbenutzer zu minimieren. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.
 Dienstkonten |-Implementieren, sicher speichern und Verwalten der Anmeldeinformationen.<br> – Kommunizieren Sie nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen für Ihr Sicherheits Betriebsteam. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Zuweisen von Richtlinien, mehrstufiger Authentifizierung, bedingtem Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop-Dienstkonten.<br>-Setzen Sie das Kennwort nicht zurück, oder verwenden Sie die Anmeldeinformationen.<br>-Öffnen Sie eine SEV C-Supportanfrage für Microsoft Managed Desktop Operations, wenn in InTune-oder Azure-Überwachungsprotokollen, die sich auf diese Dienstkonten beziehen, verdächtige Aktivitäten beobachtet werden.
@@ -98,22 +98,22 @@ Das Microsoft Managed Desktop Operations-Team kann bei Bedarf ein werksseitiges 
 
 Es gibt einige Voraussetzungen:
 
-- Der mandantenadministrator des Kunden muss eine Serviceanfrage übermitteln.
-- Wir benötigen den Computernamen für das Gerät.
-- Das Benutzerkonto muss sich in Azure AD befinden, bevor wir das Zurücksetzen durchführen.
+- Ihr globaler Administrator muss eine Serviceanfrage übermitteln.
+- Schließen Sie den Computernamen des Geräts in die Anforderung ein.
+- Das Benutzerkonto muss sich in Azure AD befinden, bevor das Gerät zurückgesetzt wird.
 
-Das Team für verwaltete Desktop Vorgänge wird:
+Das Team für verwaltete Desktop Vorgänge führt die folgenden Aktionen aus:
 
 - Nachschlagen des Gerätenamens in InTune
 - Senden des Befehls "Factory Reset" an das Gerät
 
 >[!NOTE]
->Entfernen Sie das Benutzerkonto nicht aus Azure AD vor dem Zurücksetzen der Factory. Wenn sich der Benutzer nicht in Azure AD befindet, kann InTune den Factory Reset-Befehl nicht an das Gerät senden. 
+>Entfernen Sie das Benutzerkonto nicht aus Azure AD, bevor das Gerät zurückgesetzt wird. Wenn sich der Benutzer nicht in Azure AD befindet, kann InTune den Factory Reset-Befehl nicht an das Gerät senden. 
 
-Das Gerät wird in OOBE gestartet, und alle vorinstallierten Anwendungen und Einstellungen werden erneut angewendet. Der Benutzer des Geräts muss erneut erste Setupinformationen bereitstellen. 
+Das Gerät startet in der "Out-of-Box"-Umgebung, und alle vorinstallierten Anwendungen und Einstellungen werden erneut angewendet. Der Benutzer des Geräts muss erneut erste Setupinformationen bereitstellen. 
 
 Wenn das Gerät zurückgesetzt wurde, können Sie es an eine andere Person in Ihrer Organisation übergeben. Keine der Daten oder Unternehmensdaten des vorherigen Benutzers befinden sich auf dem Gerät. Der nächste Benutzer durchläuft denselben Vorgang, den die vorherige Person mit einem neuen von Microsoft verwalteten Desktop-Gerät ausgeführt hat.
 
-BitLocker ist eine wichtige Komponente der Datensicherheit in diesem Prozess. Bei der BitLocker-Verschlüsselung auf Microsoft Managed Desktop-Geräten bleiben Daten auf dem Laufwerk auch dann sicher, wenn auf das Gerät ein Factory-Reset angewendet wurde. Alle Daten, die sich auf dem Laufwerk befanden, sind für den nächsten Benutzer des Geräts nicht verfügbar. Weitere Informationen finden Sie unter [Übersicht über BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker ist eine wichtige Komponente der Datensicherheit in diesem Prozess. Bei der BitLocker-Verschlüsselung auf Microsoft Managed Desktop-Geräten bleiben Daten auf dem Laufwerk auch dann sicher, wenn das Gerät als Factory zurückgesetzt wurde. Alle Daten, die sich auf dem Laufwerk befanden, sind für den nächsten Benutzer des Geräts nicht verfügbar. Weitere Informationen finden Sie unter [Übersicht über BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 Weitere Informationen finden Sie unter [Factory Reset a Device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
