@@ -830,6 +830,8 @@
       items:
         - name: Sicherheit und Compliance von Finanzdienstleistungen
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: Energie Dienstleistungssicherheit und-Compliance
+          href: ../solutions/energy-secure-collaboration.md
 - name: Aktionspläne für die Einhaltung gesetzlicher Vorschriften
   items:
     - name: ISO – Empfohlener Aktionsplan
