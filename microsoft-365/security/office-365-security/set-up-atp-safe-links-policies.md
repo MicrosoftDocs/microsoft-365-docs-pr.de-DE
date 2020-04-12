@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193482"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230980"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -116,7 +116,7 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
 6. Wählen Sie **Speichern** aus.
 
 > [!NOTE]
-> Richtlinien für ATP-sichere Links mit höherer Priorität werden Vorrang haben. Wenn ein Benutzer zwei oder mehr Policen unterliegt, wird nur die Richtlinie mit höherer Priorität wirksam.
+> Richtlinien für ATP-sichere Links mit höherer Priorität werden Vorrang haben. Wenn ein Benutzer zwei oder mehr Richtlinien unterliegt, wird nur die Richtlinie mit höherer Priorität wirksam.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Schritt 4: Informationen zu Richtlinienoptionen für ATP-sichere Links
 

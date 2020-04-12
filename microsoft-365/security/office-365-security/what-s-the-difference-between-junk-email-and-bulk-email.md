@@ -16,14 +16,14 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird der Unterschied zwischen Junk-e-Mails (Spam) und Massen-e-Mails sowie die zugehörigen Steuerelemente in Office 365 erläutert.
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033626"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230956"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk- und Massen-E-Mails?
 
 Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer manchmal Fragen: "Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EoP zur Verfügung stehen.
 
@@ -41,7 +41,7 @@ Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Excha
 
 Aufgrund der gemischten Reaktion auf Massen-e-Mails gibt es keine universellen Anleitungen für jede Organisation.
 
-Anti-Spam-Richtlinien haben einen standardmäßigen BCL-Schwellenwert, der verwendet wird, um Massen-e-Mails als Spam zu identifizieren. Administratoren können den Schwellenwert erweitern oder verringern. Weitere Informationen hierzu finden Sie in den folgenden Themen:
+Anti-Spam-Richtlinien weisen einen standardmäßigen BCL-Schwellenwert auf, mit dem Massen-e-Mails als Spam identifiziert werden. Administratoren können den Schwellenwert erweitern oder verringern. Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 - [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
