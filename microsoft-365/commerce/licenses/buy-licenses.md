@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Hier erfahren Sie, wie Sie Lizenzen für Ihr Office 365 für Unternehmen Abonnement hinzufügen und entfernen.
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142175"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240285"
 ---
 # <a name="manage-subscription-licenses"></a>Verwalten von Abonnementlizenzen
 
@@ -38,9 +38,9 @@ Mit den folgenden Schritten können Sie Lizenzen aus ihren Abonnements hinzufüg
 
 [] Sie können eine Lizenz nicht aus einem Abonnement entfernen, wenn sie einem Benutzer zugewiesen ist. Wenn Sie eine Lizenz entfernen möchten, die derzeit einer Person zugewiesen ist, müssen Sie [Lizenzen von Benutzern entfernen](../../admin/manage/remove-licenses-from-users.md) , bevor Sie die Lizenz aus dem Abonnement entfernen können.
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>Hinzufügen oder Entfernen von Lizenzen für Ihr Geschäfts Abonnement
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Was Sie über den Erwerb von Lizenzen für Ihr Geschäfts Abonnement wissen müssen
+::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 

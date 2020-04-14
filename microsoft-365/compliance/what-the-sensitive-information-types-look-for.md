@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Die Verhinderung von Datenverlust (Data Loss &amp; Prevention, DLP) im Office 365 Security Compliance Center umfasst 80 Typen für vertrauliche Informationen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894301"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240282"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -1087,7 +1087,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carte d ' identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2104,7 +2104,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- Datum d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2838,12 +2838,32 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
    
 ## <a name="finland-passport-number"></a>Finnland – Ausweisnummer
 
-Format Kombination von neun Buchstaben und Ziffern Muster Kombination aus neun Buchstaben und Ziffern: zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) siebenstellige Prüfsumme keine Definition eine DLP-Richtlinie ist 75% zuversichtlich, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb eines Proximity of 300 Characters: der reguläre Ausdruck Regex_finland_passport_number findet Inhalte, die mit dem Muster übereinstimmen.
-Ein Schlüsselwort aus Keyword_finland_passport_number wurde gefunden.
+### <a name="format"></a>Format
+Kombination aus neun Buchstaben und Ziffern
+
+### <a name="pattern"></a>Muster
+Kombination von neun Buchstaben und Ziffern: zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) sieben Ziffern
+
+### <a name="checksum"></a>Prüfsumme
+Nein
+
+### <a name="definition"></a>Definition
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck Regex_finland_passport_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus Keyword_finland_passport_number wurde gefunden.
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Schlüsselwörter Keyword_finland_passport_number Passport Passi
+```
+### <a name="keywords"></a>Schlüsselwörter
+- Keyword_finland_passport_number
+- Pass
+- Passi
    
 ## <a name="france-drivers-license-number"></a>Französische Führerscheinnummer
 
@@ -3618,7 +3638,7 @@ Das Muster muss Folgendes enthalten:
 
 Das Format für jedes Land unterscheidet sich geringfügig. Der Typ der IBAN-vertraulichen Informationen deckt diese 60 Länder ab:
 
-AD, AE, Al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, Do, EE, es, fi, FO, Fr, GB, ge, GI, GL, GR, HR, HU, IE, IL, is, IT, kW, KZ, LB, Li, lt, LU, LV, MC, MD, me, MK, Mr, MT, mu , NL, No, PL, PT, RO, RS, Sa, SE, Si, SK, SM, TN, TR, VG
+AD, AE, Al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, Do, EE, es, fi, FO, Fr, GB, ge, GI, GL, GR, HR, HU, IE, IL, is, IT, kW, KZ, LB, Li, lt, LU, LV, MC, MD, me, MK, Mr, MT, mu, NL, No, PL, PT, RO, RS, Sa, SE, Si, SK, SM, TN, TR, VG
 
 ### <a name="checksum"></a>Prüfsumme
 

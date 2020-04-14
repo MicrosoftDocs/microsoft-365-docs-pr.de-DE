@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: 275fedf7bf4e52320b769689516ad39a31c63ea1
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105735"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240235"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
@@ -38,14 +38,19 @@ ms.locfileid: "43105735"
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Festlegen der Kennwortablaufrichtlinie für einzelne Benutzer
 
-Ein globaler Administrator für einen Microsoft-clouddienst kann das Microsoft Azure AD-Modul für Windows PowerShell verwenden, um Kennwörter festzulegen, die für bestimmte Benutzer nicht ablaufen. Sie können auch Windows PowerShell-Cmdlets verwenden, um die nie ablaufende Konfiguration zu entfernen oder um festzustellen, welche Benutzerkennwörter nie ablaufen.
+Ein globaler Administrator für einen Microsoft-clouddienst kann das Azure Active Directory PowerShell für Graph verwenden, um Kennwörter festzulegen, die für bestimmte Benutzer nicht ablaufen. Sie können auch AzureAD-Cmdlets verwenden, um die nie ablaufende Konfiguration zu entfernen oder zu sehen, welche Benutzerkennwörter nie ablaufen.
 
 Dieses Handbuch gilt für andere Anbieter wie InTune und Office 365, die sich auch auf Azure AD für Identitäts-und Verzeichnisdienste stützen. Das Kennwortablaufdatum ist der einzige Teil der Richtlinie, der geändert werden kann.
+
+Weitere Informationen zum Azure AD PowerShell für Graph finden Sie unter [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 > [!NOTE]
 > Nur Kennwörter für Benutzerkonten, die nicht über die Verzeichnissynchronisierung synchronisiert werden, können so konfiguriert werden, dass Sie nicht ablaufen. Weitere Informationen zur Verzeichnissynchronisierung finden Sie unter [Connect AD with Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
 ### <a name="how-to-check-the-expiration-policy-for-a-password"></a>Überprüfen der Ablaufrichtlinie auf ein Kennwort
+
+Weitere Informationen zum Befehl Get-AzureADUser im AzureAD-Modul finden Sie im Referenzartikel [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+
 Führen Sie einen der folgenden Befehle aus:
 
 - Um festzustellen, ob das Kennwort eines einzelnen Benutzers auf nie abläuft, führen Sie das folgende Cmdlet mithilfe des UPN (beispielsweise *user@contoso.onmicrosoft.com*) oder der Benutzer-ID des Benutzers aus, den Sie überprüfen möchten:
