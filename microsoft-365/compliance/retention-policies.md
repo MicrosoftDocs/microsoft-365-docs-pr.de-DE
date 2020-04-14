@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189050"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237642"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -301,7 +301,7 @@ Sie können eine Aufbewahrungsrichtlinie nutzen, um Chats und Kanalnachrichten i
 Aufbewahrungsrichtlinien, die auf Benutzer- oder Gruppenpostfächer in den Speicherorten von Exchange oder Office 365-Gruppen angewendet wurden, wirken sich nicht auf Microsoft Teams-Chats und -Kanalnachrichten aus. Auch wenn Microsoft Teams-Chats und -Kanalnachrichten in Exchange gespeichert werden, sind sie nur von Aufbewahrungsrichtlinien betroffen, die auf den Teams-Speicherort angewendet werden.
 
 > [!NOTE]
-> Wenn ein Benutzer in eine aktive Aufbewahrungsrichtlinie zur Aufbewahrung von Teams-Daten einbezogen ist, dann ist das Löschen des Postfachs dieses Benutzers nicht erlaubt, da die Speicherung der Daten beibehalten werden muss. Wenn Sie ein Postfach eines solchen Benutzers löschen möchten, muss der Administrator den Benutzer zuerst von der Aufbewahrungsrichtlinie ausschließen.
+> Wenn eine aktive Aufbewahrungsrichtlinie, durch die Teams-Daten aufbewahrt werden, Benutzer einbezieht, und Sie ein Postfach eines in diese Richtlinie einbezogenen Benutzers löschen, wird das Postfach in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, damit die Daten aufbewahrt werden. Wenn die Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie den Benutzer aus der Aufbewahrungsrichtlinie aus, bevor Sie sein Postfach löschen.
   
 Nachdem einem Team eine Aufbewahrungsrichtlinie zugewiesen wurde, können Chat- und Kanalnachrichten einem von zwei Pfaden folgen:
 
