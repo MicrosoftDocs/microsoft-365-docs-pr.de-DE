@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504091"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -84,15 +84,14 @@ Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/micro
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Vermeiden des Endes der Unterstützung für Windows 7-und Office 2010-Clients und-Server
 
-Die folgenden Produkte erreichten das Ende der Unterstützung am **14. Januar 2020**:
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) am Ende der Unterstützung am **14. Januar 2020**erreicht.
 
 Die folgenden Produkte werden am Ende der Unterstützung am **13. Oktober 2020**erreichen:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) wird am **13. April 2021**am Ende der Unterstützung erreichen.
 
 Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wechsel in die Cloud für diese Produkte finden Sie auf dem [Poster zum Ende des Supports](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
@@ -150,6 +149,6 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Bereitstellungs Reise von Microsoft 365 für Enterprise](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365 für Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)

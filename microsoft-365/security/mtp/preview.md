@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113459"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503983"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -54,8 +54,9 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 
 Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschau-Features aktivieren** aktiviert ist. 
 
-
-
 ## <a name="preview-features"></a>Vorschaufeatures
-Dieser Abschnitt enthält Updates mit einer Liste von Features, die in der Vorschau angezeigt werden, sobald Sie zum Testen verfügbar sind. 
+Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
+- **[Benutzerdefinierte Erkennungen](custom-detections-overview.md)** – verwenden Sie erweiterte Suchabfragen, um Regeln zu erstellen, die in regelmäßigen Intervallen automatisch nach Verstößen und anderen interessanten Elementen suchen. Übereinstimmungen mit den Abfragen lösen Warnungen und die angegebenen Antwort Aktionen aus.
+
+- **[Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)** – erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.

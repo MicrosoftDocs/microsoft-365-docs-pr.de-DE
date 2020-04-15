@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informationen zur Verwendung der Sicherheitsstandardeinstellungen zum Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 7e48f72f2fd8cfc5042bd15f994cc98bfa5fca8c
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204022"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503971"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -37,6 +37,7 @@ ms.locfileid: "43204022"
 Bei jedem neuen Office 365 Business- oder Microsoft 365 Business-Abonnement sind die Sicherheitseinstellungen automatisch aktiviert. Dies bedeutet, dass jeder Benutzer MFA einrichten und die Microsoft Authenticator-App auf seinem mobilen Gerät installieren muss. Weitere Informationen finden Sie unter [Einrichten der Prüfung in zwei Schritten für Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Für die folgenden neun Administratorrollen ist bei jeder Anmeldung eine zusätzliche Authentifizierung erforderlich:
+
 - Globaler Administrator
 - SharePoint-Administrator
 - Exchange-Administrator
@@ -47,7 +48,7 @@ Für die folgenden neun Administratorrollen ist bei jeder Anmeldung eine zusätz
 - Benutzeradministrator
 - Authentifizierungsadministrator
 
-Alle anderen Benutzer werden bei Bedarf zu einer weiteren Authentifizierung aufgefordert. Weitere Informationen hierzu finden Sie unter [Was sind Standardsicherheitseinstellungen?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Alle anderen Benutzer werden bei Bedarf zu einer weiteren Authentifizierung aufgefordert. Weitere Informationen finden Sie unter [Was sind Sicherheitsstandards?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 > [!NOTE]
 > Sie müssen ein Office 365 globaler Administrator sein, um MFA einzurichten oder zu ändern. <br><br>
@@ -60,9 +61,8 @@ Wenn Sie zuvor die mehrstufige Authentifizierung mit Basisrichtlinien eingericht
 
 ## <a name="manage-security-defaults"></a>Verwalten von Sicherheitsstandards
 
-1. Melden Sie sich beim [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) mit Ihren globalen Administratoranmeldeinformationen an.
+1. Melden Sie sich mit Ihren globalen Administratoranmeldeinformationen beim [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) an.
 2. Wechseln Sie zu [Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-
 3. Wählen Sie am unteren Rand der Seite **Sicherheitsstandards verwalten** aus.
 4. Wählen Sie **Ja** aus, um Sicherheitsstandards zu aktivieren, oder **Nein** , um Sicherheitseinstellungen zu deaktivieren, und wählen Sie dann **Speichern**aus.
 
@@ -74,22 +74,23 @@ Wenn Sie zuvor die mehrstufige Authentifizierung mit Basisrichtlinien eingericht
 
 3. Im Thema **Sicherheit | **Klicken Sie auf der Seite Erste Schritte **auf bedingter Zugriff**. 
 
-4. Wählen Sie auf der Seite **Bedingter Zugriff auf das Azure-Portal – Richtlinien** jede Basisrichtlinie aus, die **aktiviert** ist, und **deaktivieren** Sie sie.
+4. Wählen Sie auf der Seite **bedingte Zugriffs-Richtlinien** jede Basisrichtlinie aus, die **auf**ist, und legen Sie Sie auf **Off**fest.
 5. Wechseln Sie zur Seite [Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-6. Wählen Sie am unteren Rand der Seite **Sicherheitsstandards verwalten** aus, und legen Sie im Bereich **Sicherheitsstandards aktivieren** für die Option **Sicherheitsstandards aktivieren** **Ja** fest. 
+6. Klicken Sie unten auf der Seite auf **Sicherheitsstandards verwalten**, und wählen Sie im Bereich **Sicherheitsstandard Einstellungen aktivieren** die Option **Sicherheits Standardwerte aktivieren** auf **Ja**, und klicken Sie dann auf **Speichern**. 
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren von moderner Authentifizierung für Ihre Organisation
+## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren der modernen Authentifizierung für Ihre Organisation
 
 Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Active Directory-Authentifizierungsbibliothek (Active Directory Authentication Library, ADAL). Dies bedeutet, dass App-Kennwörter für Office 2016-Clients nicht erforderlich sind. Sie müssen jedoch sicherstellen, dass Ihr Office 365-Abonnement für ADAL oder die moderne Authentifizierung aktiviert ist.
 
 1. Wenn Sie die moderne Authentifizierung aktivieren möchten, wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) die Option **Einstellungen** \> **Einstellungen**, und dann auf der Registerkarte **Dienste** die Option **Moderne Authentifizierung** aus der Liste aus.
 
-2. Aktivieren Sie das Kontrollkästchen **Moderne Authentifizierung aktivieren** im Bereich **Moderne Authentifizierung**. 
+2. Aktivieren Sie das Kontrollkästchen **moderne Authentifizierung aktivieren (empfohlen)** im Bereich **moderne Authentifizierung** , und wählen Sie dann **Save Changes**aus. 
 
     ![Bereich "Moderne Authentifizierung" mit aktiviertem Kontrollkästchen "Moderne Authentifizierung aktivieren".](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
 > Seit August 2017 ist die moderne Authentifizierung (MA) auf allen neuen Office 365-Mandanten, die Skype for Business Online und Exchange Online umfassen, standardmäßig aktiviert. Um Ihren MA-Status für Skype for Business Online zu überprüfen, können Sie Skype for Business Online-PowerShell mit Anmeldeinformationen eines globalen Administrators verwenden. Führen Sie "Get-CsOAuthConfiguration" aus, um die Ausgabe von "-ClientADALAuthOverride" zu überprüfen. Wenn "-ClientADALAuthOverride" den Wert "Allowed" aufweist, ist die moderne Authentifizierung aktiviert.
+
 Informationen zum Überprüfen Ihres MA-Status für Exchange Online finden Sie unter [Aktivieren der modernen Authentifizierung in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 ## <a name="related-articles"></a>Verwandte Artikel
