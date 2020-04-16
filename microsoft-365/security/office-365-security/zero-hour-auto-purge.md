@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion in Office 365, die Spam, Schadsoftware oder Phishing-Nachrichten erkennt, die bereits an Exchange Online übermittelt wurden. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895011"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516773"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Zero-Hour Auto Purge (zap) – Schutz vor Spam und Schadsoftware in Office 365
 
@@ -54,7 +54,7 @@ Für **Lese-oder ungelesene Nachrichten** , die nach der Zustellung als Phishing
 
 - **X-Header hinzufügen**, **Betreffzeile mit Text**voranstellen: Zap nimmt keine Aktion für die Nachricht vor.
 
-- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Nachricht an e-Mail-Adresse umleiten**, **Nachricht löschen**, **Nachricht isolieren**: Zap isoliert die Nachricht. Nur Administratoren können Phishing-unter Quarantäne gestellte Nachrichten anzeigen und verwalten.
 
@@ -68,7 +68,7 @@ Für **Ungelesene Nachrichten** , die nach der Zustellung als Spam identifiziert
 
 - **X-Header hinzufügen**, **Betreffzeile mit Text**voranstellen: Zap nimmt keine Aktion für die Nachricht vor.
 
-- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Nachricht in Junk-e-Mail verschieben**: Zap verschiebt die Nachricht in den Junk-e-Mail-Ordner, solange die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Nachricht an e-Mail-Adresse umleiten**, **Nachricht löschen**, **Nachricht isolieren**: Zap isoliert die Nachricht. Endbenutzer können Ihre eigenen Spam isolierten Nachrichten anzeigen und verwalten.
 
@@ -100,7 +100,7 @@ A: Nachrichtenfluss Regeln oder blockieren und Organisationseinstellungen zulass
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>F.: Was geschieht, wenn eine Nachricht in einen anderen Ordner verschoben wird (z.b. Posteingangsregeln)?
 
-A: Zap funktioniert weiterhin, solange die Nachricht nicht gelöscht oder in den Junk-e-Mail-Ordner verschoben wurde.
+A: Zap funktioniert weiterhin, solange die Nachricht nicht gelöscht wurde oder solange die gleiche oder stärkere Aktion noch nicht angewendet wurde. Wenn beispielsweise die Phishing-Richtlinie auf "Quarantine" festgelegt ist und der Benutzer oder Administrator die e-Mail bereits junked hat, wird in der Quarantäne die Aktion zum Isolieren der Datei durchführen.
 
 ### <a name="q-does-zap-change-the-message-header"></a>F.: ändert zap die Nachrichtenkopfzeile?
 

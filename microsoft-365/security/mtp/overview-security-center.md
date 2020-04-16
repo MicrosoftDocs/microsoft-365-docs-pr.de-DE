@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058905"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516911"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -60,6 +60,7 @@ In diesem Artikel erfahren Sie, wie Sie Ihre Sicherheitsanforderungen überwache
 - Verbinden der Punkte auf Warnungen durch [Vorfälle](incident-queue.md)
 - Automatisches Beheben von Bedrohungen mithilfe [automatischer Untersuchungen und Korrekturen](mtp-autoir.md)
 - Ganzheitliche Überprüfung und Verbesserung ihrer Sicherheitsposition mit [Microsoft Secure Score](microsoft-secure-score.md)
+- Anzeigen von [Geräten](device-profile.md) in Ihrem Netzwerk
 - [Melden](monitoring-and-reporting.md) des Status Ihrer Identitäten, Daten, Geräte, Apps und Infrastruktur
 - [Proaktive Suche nach Bedrohungen](advanced-hunting-overview.md) für Intrusionsversuche und Verletzungs Aktivitäten, die sich auf Ihre e-Mails, Daten, Geräte und Konten auswirken
 - Grund [Legendes zu den neuesten Angriffs Kampagnen](latest-attack-campaigns.md) und-Techniken mit Threat Analytics

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 49b75e77f9884bb7cb40721a2aa986e203623c07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582754"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521466"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Manage Holds in Advanced eDiscovery
 
@@ -31,15 +31,15 @@ Sie können einen erweiterten eDiscovery-Fall zum Erstellen von Haltebereichen v
 
 ## <a name="manage-custodian-based-holds"></a>Verwalten von Depot basierten Haltestatus
 
-In einigen Fällen verfügen Sie möglicherweise über eine Reihe von Depot Betreuern, die Sie identifiziert haben und die sich entschieden haben, Ihre Daten im Fall beizubehalten. Wenn diese Depotbanken in der erweiterten eDiscovery-Datenbank gespeichert werden, werden der Benutzer und die ausgewählten Datenquellen automatisch einer Depotbank-Aufbewahrungsrichtlinie hinzugefügt. 
+In einigen Fällen verfügen Sie möglicherweise über eine Reihe von Depot Betreuern, die Sie identifiziert haben und die sich entschieden haben, Ihre Daten im Fall beizubehalten. Wenn diese Depotbanken in der erweiterten eDiscovery-Datenbank gespeichert werden, werden der Benutzer und die ausgewählten Datenquellen automatisch einer Depotbank-Aufbewahrungsrichtlinie hinzugefügt.
 
 So zeigen Sie die Richtlinie für Depot Aufbewahrung an:
 
-1. Klicken Sie im **Security #a0 Compliance Center**auf **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery > erweitert** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
    
 2. Wechseln Sie zur Registerkarte **depotverwalter** , um Verwalter in Ihrem Fall hinzuzufügen. Weitere Informationen zum Hinzufügen und Platzieren von Depot Haltern in einem erweiterten eDiscovery-Fall finden Sie unter Hinzufügen von Depot Betreuern [zu einem erweiterten eDiscovery-Fall](add-custodians-to-case.md). Wenn Sie bereits Verwalter hinzugefügt und in die Warteschleife gesetzt haben, fahren Sie mit Schritt 3 fort.
    
-3. Wechseln Sie zur Registerkarte halte **Status** , und wählen Sie die "Depotbank-Richtlinie" aus.
+3. Wechseln Sie zur Registerkarte halte **Status** , und klicken Sie auf **CustodianHold\<>**.
    
 4. Auf der Flyout-Seite finden Sie Statistiken für die Richtlinie speichern. Sie können auch Aktionen wie das Anwenden einer Abfrage auf Ihren Depot-basierten Haltebereich ausführen. Weitere Informationen zum Erstellen einer halte Abfrage und zum Verwenden von Bedingungen finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
  
@@ -47,12 +47,13 @@ So zeigen Sie die Richtlinie für Depot Aufbewahrung an:
 
 Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den Inhalt zu belegen, der an den angegebenen Inhaltsspeicherorten gehalten wird:
 
-  - Sie erstellen einen unbegrenzten Haltebereich, in dem der gesamte Inhalt aufbewahrt wird. Alternativ können Sie einen abfragebasierten Speicher erstellen, in dem nur Inhalte, die einer Suchabfrage entsprechen, in die Warteschleife gestellt werden.
-  - Sie können einen Datumsbereich angeben, in dem nur der Inhalt gespeichert werden soll, der innerhalb dieses Datumsbereichs gesendet, empfangen oder erstellt wurde. Alternativ können Sie alle Inhalte speichern, unabhängig davon, wann Sie gesendet, empfangen oder erstellt wurden.
+- Sie erstellen einen unbegrenzten Haltebereich, in dem der gesamte Inhalt aufbewahrt wird. Alternativ können Sie einen abfragebasierten Speicher erstellen, in dem nur Inhalte, die einer Suchabfrage entsprechen, in die Warteschleife gestellt werden.
+  
+- Sie können einen Datumsbereich angeben, in dem nur der Inhalt gespeichert werden soll, der innerhalb dieses Datumsbereichs gesendet, empfangen oder erstellt wurde. Alternativ können Sie alle Inhalte speichern, unabhängig davon, wann Sie gesendet, empfangen oder erstellt wurden.
 
-So erstellen Sie einen Aufbewahrungsplatz für einen erweiterten eDiscovery-Fall:
+So erstellen Sie einen Aufbewahrungs freien Speicher für einen erweiterten eDiscovery-Fall:
 
-1. Klicken Sie im **Security #a0 Compliance Center**auf **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery > erweitert** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
   
 2. Klicken Sie neben dem Fall, in dem Sie die Aufbewahrungspflicht erstellen möchten, auf **Öffnen** .
   
@@ -73,12 +74,12 @@ So erstellen Sie einen Aufbewahrungsplatz für einen erweiterten eDiscovery-Fall
     > [!NOTE]
     > Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um festzulegende Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen.
 
-    b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+    b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Microsoft-Team-oder Office 365 Gruppe hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
-     Im Abschnitt **häufig gestellte Fragen** finden Sie Tipps zum Platzieren von Office 365 Gruppen und Microsoft Teams in der Warteschleife.
+     Tipps zum Platzieren von Microsoft Teams und Office 365 Gruppen und zum Archivieren finden Sie im Abschnitt [Positionieren von Microsoft Teams und Office 365 Gruppen unterhalten](#place-a-hold-on-microsoft-teams-and-office-365-groups) .
 
     > [!NOTE]
-    > In dem seltenen Fall, dass sich der Benutzerprinzipalname (UPN) einer Person geändert hat, wird die URL für Ihr OneDrive-Konto ebenfalls geändert, um den neuen UPN zu integrieren. In diesem Fall müssen Sie den Haltebereich ändern, indem Sie die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen.
+    > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`UPN) (beispielsweise). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines Speichers ohne Freiheitsentzug ist und sein UPN geändert wird, müssen Sie den Haltestatus aktualisieren und auf die neue OneDrive-URL deuten. Weitere Informationen finden Sie unter [wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Öffentliche Exchange-Ordner** – verschieben Sie die Umschaltfläche in die Position alle, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Beachten Sie, dass Sie keine bestimmten öffentlichen Ordner für die Aufbewahrung auswählen können. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
 
@@ -92,10 +93,9 @@ So erstellen Sie einen Aufbewahrungsplatz für einen erweiterten eDiscovery-Fall
 
      Weitere Informationen zum Erstellen einer Suchabfrage und zum Verwenden von Bedingungen finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
-12. Klicken Sie nach dem Konfigurieren eines abfragebasierten Haltestatus auf **weiter**.
- 
-13. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **diesen Haltebereich erstellen**.
+11. Klicken Sie nach dem Konfigurieren eines abfragebasierten Haltestatus auf **weiter**.
 
+12. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **diesen Haltebereich erstellen**.
 
 ## <a name="view-hold-statistics"></a>Statistiken zum Anzeigen von Haltestatus
 
@@ -115,12 +115,15 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
 
 - Wenn ein SharePoint-Website-oder OneDrive-Konto in eine andere Region in einer Multi-Geo-Umgebung verschoben wird, werden die Statistiken für diese Website nicht in die halte Statistik aufgenommen. Der Inhalt der Website bleibt jedoch weiterhin gespeichert. Wenn eine Website in einen anderen Bereich verschoben wird, wird auch die im Haltestatus angezeigte URL nicht aktualisiert. Sie müssen den Haltebereich bearbeiten und die URL aktualisieren.
 
-## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Aufbewahren von Microsoft Teams und Office 365 Gruppen
 
-- **Wie kann ich einer Depotbank eine zusätzliche Office 365 Gruppe oder Microsoft Teams-Website zuordnen? Und was ist mit dem Platzieren eines nicht-Freiheits Behalters für Office 365 Gruppen und Microsoft Teams?** Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es sehr ähnlich, dass Sie in einem eDiscovery-Fall aufbewahrt werden. Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte.
-  - Zum Platzieren von Inhalten in Office 365 Gruppen und in Microsoft Teams müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.
+Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es sehr ähnlich, dass Sie in Advanced eDiscovery in die Warteschleife versetzt werden. 
+
+Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte.
+
+- Zum Platzieren von Inhalten in Office 365 Gruppen und in Microsoft Teams müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.
   
-  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Office 365 Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
+- Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Office 365 Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
 
 
     ```text
@@ -134,9 +137,9 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
     > [!NOTE]
     > Zum Ausführen des Get-UnifiedGroup-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde.
 
- - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit als Verwalter hinzufügen oder Ihre Datenquellen halten. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team für eine bestimmte Depotbank in die Warteschleife stellen müssen, sollten Sie die Gruppen Website und das Gruppenpostfach der Depotbank zuordnen (siehe Managing custodys in Advanced eDiscovery). Wenn die Office 365 Gruppe oder das Microsoft-Team nicht auf eine einzelne Depotbank zurückzuführen ist, sollten Sie die Quelle einem nicht-Freiheitsentzug-Aufbewahrungsplatz hinzufügen. 
- 
- - Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite Start #a0 Gruppen im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen:
+- Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit als Verwalter hinzufügen oder Ihre Datenquellen halten. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team für eine bestimmte Depotbank in die Warteschleife stellen müssen, sollten Sie die Gruppen Website und das Gruppenpostfach der Depotbank zuordnen (siehe Managing custodys in Advanced eDiscovery). Wenn die Office 365 Gruppe oder das Microsoft-Team nicht auf eine einzelne Depotbank zurückzuführen ist, sollten Sie die Quelle einem nicht-Freiheitsentzug-Aufbewahrungsplatz hinzufügen. 
+
+- Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite **Start > Gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

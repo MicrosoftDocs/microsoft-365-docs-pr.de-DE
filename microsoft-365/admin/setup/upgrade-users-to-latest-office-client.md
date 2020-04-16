@@ -2,11 +2,10 @@
 title: Aktualisieren der Office 365 für Unternehmen Benutzer auf den neuesten Office-Client
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Erfahren Sie, wie Sie Ihre Benutzer auf den neuesten Office-Client aktualisieren.
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360406"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521459"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>Aktualisieren der Office 365 für Unternehmen Benutzer auf den neuesten Office-Client
 
@@ -47,7 +46,7 @@ Weitere Informationen finden Sie unter [Office 2010 Ende der Support-Roadmap](ht
 
  Wenn Sie kein Administrator sind und über ein [Office for Home](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) -Produkt verfügen, finden Sie weitere Informationen zum Upgrade Ihrer älteren Heim Nutzungs Version von Office unter [How do I Upgrade Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) .
 
-## <a name="getting-ready-to-upgrade"></a>Vorbereiten des Upgrades
+## <a name="get-ready-to-upgrade"></a>Vorbereiten des Upgrades
 
 Als Administrator können Sie steuern, welche Version von Office-Mitarbeitern in Ihrer Organisation installiert werden kann. Es wird dringend empfohlen, dass Sie Benutzern in Ihrer Organisation beim Ausführen älterer Versionen von Office wie Office 2010, Office 2013 oder Office 2016 ein Upgrade auf die neueste Version zur Verfügung stehen, um die Sicherheits-und Produktivitätsverbesserungen zu nutzen.
 

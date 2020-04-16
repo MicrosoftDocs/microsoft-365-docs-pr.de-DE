@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142683"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516809"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -65,7 +65,7 @@ Außerdem überwachen wir die Geräte Integrität und geben Ihnen Einblicke in d
 
 
 ## <a name="need-more-details"></a>Benötigen Sie weitere Informationen?
-Weitere Informationen zum Wert von Microsoft Managed Desktop, einschließlich Kunden Geschichten, finden Sie unter [Microsoft Managed Desktop](https://aka.ms/mmd). Zu den ersten Schritten mit weiteren Informationen zählen die [Roadmap](https://aka.ms/AA6jiam) und eine herunterladbare [Zusammenfassung mit einer Seite](https://aka.ms/AA6ob3h). Die neuesten Nachrichten finden Sie im Microsoft Managed Desktop- [Blog](https://aka.ms/AA6l2dd).
+Weitere Informationen zum Wert von Microsoft Managed Desktop, einschließlich Kunden Geschichten, finden Sie unter [Microsoft Managed Desktop](https://aka.ms/mmd). Zu den ersten Schritten mit weiteren Informationen zählen die [Roadmap](https://aka.ms/AA6jiam), eine [Fallstudie zur gesamtwirtschaftlichen Auswirkung von Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)und eine herunterladbare [Zusammenfassung mit einer Seite](https://aka.ms/AA6ob3h). Die neuesten Nachrichten finden Sie im Microsoft Managed Desktop- [Blog](https://aka.ms/AA6l2dd).
 
 Wenn Microsoft Managed Desktop für Ihre Organisation geeignet ist, können Sie sich in die zusätzliche Dokumentation einarbeiten, in der weitere Informationen zum Dienst erläutert werden, wie Sie Ihre Organisation für die Registrierung vorbereiten, wie Sie mit dem Dienst beginnen und wie Sie mit Ihren Endbenutzern bei Bedarf ganz einfach Hilfe erhalten können. Wenn Sie bereits an Bord sind, beginnen Sie mit dem Kontakt mit Ihrem [lokalen Konto Team](https://pages.email.office.com/contactmmd/).
 

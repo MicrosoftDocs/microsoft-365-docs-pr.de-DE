@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857475"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521480"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -43,7 +43,7 @@ Eine Microsoft 365 E5, E5 Security, A5 oder A5-Sicherheitslizenz oder eine gült
 | Microsoft Defender ATP | Endpoint Protection-Suite um leistungsstarke Verhaltens Sensoren, Cloud Analytics und Threat Intelligence |
 | Office 365 ATP | Erweiterter Schutz für Ihre apps und Daten in Office 365, einschließlich e-Mail und anderer Tools für die Zusammenarbeit |
 | Azure ATP | Schutz vor fortgeschrittenen Bedrohungen, gefährdeten Identitäten und böswilligen Insidern mithilfe korrelierter Active Directory Signale |
-| Microsoft Cloud App Security | Identifiziert und bekämpft Bedrohungen in den Cloud-Diensten von Microsoft und Drittanbietern. |
+| Microsoft Cloud App Security | Identifizieren und bekämpfen von Bedrohungen in den Cloud-Diensten von Microsoft und Drittanbietern |
 
 ## <a name="deployed-services-and-functionality"></a>Bereitgestellte Dienste und Funktionen
 Bei der Bereitstellung von mehr unterstützten Diensten bietet Microsoft Threat Protection eine bessere Sichtbarkeit, Korrelation und Korrektur.
@@ -64,7 +64,7 @@ In der folgenden Tabelle ist aufgeführt, wie jeder unterstützte Dienst zusätz
 | Microsoft Defender ATP | -Endpunkt Zustände und Rohdaten Ereignisse<br />-Endpunkt Erkennungen und Warnungen, einschließlich Antivirus, EDR, Verringerung der Angriffsfläche<br />-Informationen zu Dateien und anderen Entitäten, die an Endpunkten beobachtet werden | Endpunkte |
 | Office 365 ATP | -Mail-und Postfachstatus und RAW-Ereignisse<br />-E-Mail-, Anlagen-und Link Erkennungen | -Postfächer<br />-Office 365 Konten |
 | Azure ATP | -Active Directory Signale, einschließlich Authentifizierungsereignissen<br />-Identitätsbezogene Verhaltens Erkennungen | Identitäten |
-| Microsoft Cloud App Security | -Erkennung von nicht sanktionierten Cloud-apps & Diensten (Shadow IT)<br />-Belichtung von Daten an Cloud-apps<br />-Bedrohungsaktivität, die Cloud-apps zugeordnet ist | Cloud-Apps |
+| Microsoft Cloud App Security | -Erkennung unsanktionierter Cloud-apps und-Dienste (Shadow IT)<br />-Belichtung von Daten an Cloud-apps<br />-Bedrohungsaktivität im Zusammenhang mit Cloud-apps | Cloud-Apps |
 
 ## <a name="deploy-the-services"></a>Bereitstellen der Dienste
 Für die Bereitstellung der einzelnen Dienste ist in der Regel ein Bereitstellungsaufwand für den Mandanten und eine anfängliche Konfiguration erforderlich. In der folgenden Tabelle erfahren Sie, wie diese Dienste bereitgestellt werden.
