@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurieren Sie Infrastruktur und Sicherheit, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504123"
 ---
 # <a name="empower-remote-workers"></a>Fördern von Remotemitarbeitern
 
@@ -99,10 +99,10 @@ Hier sehen Sie die resultierende Konfiguration, wobei die Identitätselemente he
 
 ![Identitätselemente für Remotemitarbeiter](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-Für [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md) stellen Sie Folgendes bereit:
+Für [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- Die Infrastruktur zur Bereitstellung neuer Geräte mit Windows 10 Enterprise und zum Upgrade von Windows 7 oder Windows 8.1-Geräten auf Windows 10 Enterprise
-- Bereitstellung umfassender Sicherheitsfeatures für Identitäts-, Bedrohungs- und Informationsschutz
+- Die Infrastruktur zur Bereitstellung neuer Geräte mit Windows 10 Enterprise und zum Upgrade Ihrer Windows 7- oder Windows 8.1-Geräte auf Windows 10 Enterprise bereitstellen.
+- Aktivieren umfassender Sicherheitsfeatures für Identitäts-, Bedrohungs- und Informationsschutz
 
 Hier sehen Sie die resultierende Konfiguration mit Windows 10 Enterprise-Geräten.
 
@@ -206,6 +206,12 @@ Ihre Benutzer bei Bedarf erneut schulen.
 ### <a name="user-adoption-results"></a>Ergebnisse der Benutzerakzeptanz
 
 Remotemitarbeiter können ihre Windows 10 Enterprise- oder andere Geräte sowie Office 365 ProPlus verwenden, um in einer sicheren Umgebung auf freigegebene Microsoft 365 Enterprise-Clouddienste und -Ressourcen zuzugreifen und daran zu arbeiten, und sie nutzen Besprechungen, Erstellungen und Zusammenarbeit in Echtzeit.
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>Weitere Microsoft-Features zur Unterstützung von Remote-Mitarbeitern
+
+Sie können [Azure-Point-to-Site-VPN-Verbindungen](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) verwenden, um Remote-Mitarbeiter mit Servern zu verbinden, die in einem virtuellen Azure-Netzwerk ausgeführt werden.
+
+Sie können [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) für die von Azure gehostete Desktop-und App-Virtualisierung verwenden.
 
 ## <a name="see-also"></a>Siehe auch
 

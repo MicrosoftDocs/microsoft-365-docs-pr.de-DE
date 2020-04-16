@@ -9,98 +9,98 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
-description: Erfahren Sie mehr über den Microsoft 365-Lösungskatalog, einschließlich dessen, was er enthält, wie Sie ihn erhalten und wie Sie die nächsten Schritte durchführen.
+description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
 ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/21/2020
 ms.locfileid: "42179146"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
-Suchen Sie nach einer Möglichkeit, mit Compliance-Aufgaben in Microsoft 365 schnell zu beginnen? Lesen Sie den [Microsoft 365-Lösungskatalog](https://compliance.microsoft.com/solutioncatalog) , um die Compliance-und Risikomanagementlösungen zu entdecken, zu erfahren und schnell zu starten.
+Möchten Sie möglichst schnell mit der Ausführung von Compliance-Aufgaben in Microsoft 365 beginnen? Sehen Sie sich den [Microsoft 365-Lösungskatalog](https://compliance.microsoft.com/solutioncatalog) mit Compliance- und Risikomanagement-Lösungen an, und erfahren Sie, wie Sie schnell loslegen können.
 
-Compliance-Lösungen in Microsoft 365 sind Sammlungen integrierter Funktionen, die Sie bei der Verwaltung von End-to-End-Konformitätsszenarien verwenden können. Die Funktionen und Tools einer Lösung umfassen möglicherweise eine Kombination aus Richtlinien, Warnungen, Berichten und vielem mehr.
+Bei den Compliance-Lösungen in Microsoft 365 handelt es sich um Sammlungen von integrierten Funktionen, die Sie verwenden können, um End-to-End-Compliance-Szenarien zu verwalten. Die Funktionen und Tools einer Lösung können eine Kombination von Richtlinien, Warnungen, Berichten und mehr umfassen.
 
-Lesen Sie diesen Artikel, um sich mit dem neuen Lösungskatalog im Microsoft 365 Compliance Center vertraut zu machen, [wie Sie es erhalten](#how-do-i-get-this), [häufig gestellte Fragen](#frequently-asked-questions)und Ihre [nächsten Schritte](#next-steps).
+Lesen Sie diesen Artikel, um sich mit dem neuen Lösungskatalog im Microsoft 365 Compliance Center vertraut zu machen und um zu erfahren,[wie Sie ihn erhalten](#how-do-i-get-this), um Antworten auf [häufig gestellte Fragen](#frequently-asked-questions) zu erhalten und sich über die [nächsten Schritte](#next-steps) zu informieren.
 
-## <a name="catalog-organization"></a>Katalog Organisation
+## <a name="catalog-organization"></a>Strukturierung des Katalogs
 
-Der Lösungskatalog ist in Abschnitten organisiert, die Informationskarten für jede kompatibilitätslösung enthalten, die in Ihrem Microsoft 365-Abonnement verfügbar ist. Jeder Abschnitt enthält Karten für Lösungen, die nach Kompatibilitätsbereich gruppiert sind.
+Der Lösungskatalog ist in Abschnitte unterteilt, die Informationskarten für jede in Ihrem Microsoft 365-Abonnement zur Verfügung stehende Compliancelösung enthalten. Jeder Abschnitt enthält Karten für Lösungen, die nach Compliancebereich gruppiert sind.
 
 ![Startseite des Microsoft 365-Lösungskatalogs](../media/m365-solution-catalog-home.png)
 
-Wenn Sie für eine Lösung Karte **anzeigen** auswählen, werden ausführliche Informationen zur Compliance-Lösung und zu den ersten Schritten angezeigt. Diese Informationen umfassen eine Übersicht, vorkonfigurierte Anforderungen, Lernressourcen, Steuerelemente, mit denen Sie die Karte an den Navigationsbereich anheften können, sowie eine Option zum Freigeben der Lösung als Link, e-Mail oder Microsoft Teams-Nachricht.
+Wenn Sie **Anzeigen** für eine Lösungskarte auswählen, werden ausführliche Informationen zur Compliancelösung und zu den ersten Schritten angezeigt. Diese Informationen umfassen eine Übersicht, Voraussetzungen für die Konfiguration, Schulungsressourcen, Steuerelemente, mit denen Sie die Karte an den Navigationsbereich anheften können, sowie eine Option zum Freigeben der Lösung als Link, E-Mail- oder Microsoft Teams-Nachricht.
 
-![Microsoft 365 Communication Compliance-Lösung](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365-Lösung für die Kommunikationscompliance](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Abschnitt "Information Protection & Governance"
 
-Der Abschnitt **Information Protection & Governance** zeigt Ihnen auf einen Blick, wie Sie mithilfe von Microsoft 365-Kompatibilitätslösungen Daten in Ihrer Organisation schützen und steuern können.
+Im Abschnitt **Information Protection & Governance** sehen Sie auf einen Blick, wie Sie Microsoft 365-Compliancelösungen zum Schutz und zur Kontrolle von Daten in Ihrer Organisation verwenden können.
 
-![Microsoft 365 Solution Catalog Information Protection und Governance Section](../media/m365-solution-catalog-information-protection-governance.png)
+![Abschnitt "Microsoft 365-Lösungskatalog, Information Protection und Governance"](../media/m365-solution-catalog-information-protection-governance.png)
 
-Von hier aus sehen Sie Karten für die folgenden Lösungen:
+Hier sehen Sie Karten für die folgenden Lösungen:
 
-- [Verhinderung von Datenverlust](data-loss-prevention-policies.md): erkennt vertrauliche Inhalte, da diese in Ihrer Organisation, in der Cloud und auf Geräten verwendet und gemeinsam genutzt werden, und verhindert versehentlichen Datenverlust.
-- [Information Governance](manage-information-governance.md): verwaltet ihren Inhaltslebenszyklus mithilfe von Lösungen zum Importieren, speichern und Klassifizieren von geschäftskritischen Daten, sodass Sie die benötigten Informationen behalten und löschen können.
-- [Informationsschutz](protect-information.md): erkennt, klassifiziert und schützt vertrauliche und geschäftsrelevante Inhalte über den gesamten Lebenszyklus hinweg in Ihrer Organisation.
-- [Datensatzverwaltung](records-management.md): intelligente Klassifizierung verwendet, um den aufbewahrungszeitplan für regulatorische, rechtliche und unternehmenswichtige Datensätze in Ihrer Organisation zu automatisieren und zu vereinfachen.
+- [Verhinderung von Datenverlust](data-loss-prevention-policies.md): Ermittelt vertrauliche Inhalte, die in der gesamten Organisation, in der Cloud und auf Geräten verwendet und freigegeben werden, und hilft bei der Vorbeugung von versehentlichem Datenverlust.
+- [Informationsgovernance](manage-information-governance.md): Dient der Verwaltung des Lebenszyklus Ihrer Inhalte mithilfe von Lösungen zum Importieren, Speichern und Klassifizieren geschäftsrelevanter Daten, damit Erforderliches beibehalten und alles andere gelöscht wird.
+- [Schutz von Daten](protect-information.md): Ermittelt, klassifiziert und schützt vertrauliche und unternehmensrelevante Inhalte organisationsweit über ihren gesamten Lebenszyklus hinweg.
+- [Datensatzverwaltung](records-management.md): Nutzt eine intelligente Klassifizierung zum Automatisieren und Vereinfachen des Aufbewahrungszeitplans für gesetzlich vorgeschriebene, rechts- und unternehmensrelevante Datensätze in Ihrer Organisation.
 
-## <a name="insider-risk-management-section"></a>Abschnitt "Insider Risikomanagement"
+## <a name="insider-risk-management-section"></a>Abschnitt "Insider-Risikomanagement"
 
-Im Abschnitt **Insider Risk Management** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation interne Risiken erkennen, analysieren und einleiten kann, bevor Sie Schaden anrichten.
+Im Abschnitt "**Insider-Risikomanagement"** auf der Startseite sehen Sie auf einen Blick, wie Ihre Organisation interne Risiken erkennen, analysieren und darauf reagieren kann, bevor durch sie Schaden entsteht.
 
-![Abschnitt "Insider Risk Management" des Microsoft 365-Lösungskatalogs](../media/m365-solution-catalog-insider-risk-management.png)
+![Abschnitt "Microsoft 365-Lösungskatalog, Insider-Risikomanagement"](../media/m365-solution-catalog-insider-risk-management.png)
 
-Von hier aus sehen Sie Karten für die folgenden Lösungen:
+Hier sehen Sie Karten für die folgenden Lösungen:
 
-- [Kommunikation Compliance](communication-compliance.md): minimiert Kommunikationsrisiken durch die automatische Erfassung unangemessener Nachrichten, Untersuchung möglicher Richtlinienverstöße und Maßnahmen zur Minimierung von Schäden.
-- [Insider Risikomanagement](insider-risk-management.md): erkennen Sie riskante Aktivitäten in Ihrer Organisation, damit Sie Insider Risiken und-Bedrohungen schnell erkennen, untersuchen und Maßnahmen ergreifen können.
+- [Kommunikationscompliance](communication-compliance.md): Minimiert kommunikationsbezogene Risiken, da unangemessene Nachrichten automatisch erfasst, mögliche Verstöße gegen Richtlinien untersucht und Maßnahmen zur Minimierung von Schäden ergriffen werden.
+- [Insider-Risikomanagement](insider-risk-management.md): Ermittelt riskante Aktivitäten in Ihrer Organisation, um Ihnen dabei zu helfen, Insider-Risiken und -Bedrohungen schnell zu erkennen, zu untersuchen und entsprechende Maßnahmen zu ergreifen.
 
-## <a name="discovery--response-section"></a>Abschnitt "Discovery & Response"
+## <a name="discovery--response-section"></a>Abschnitt "Ermittlung und Reaktion"
 
-Im Abschnitt **Discovery & Response** auf der Startseite erfahren Sie auf einen Blick, wie Ihre Organisation auf Compliance-Probleme mit relevanten Daten schnell suchen, diese untersuchen und auf diese reagieren kann.
+Im Abschnitt **Ermittlung und Reaktion** auf der Startseite sehen Sie auf einen Blick, wie Ihre Organisation Compliance-Probleme im Hinblick auf relevante Daten schnell finden, untersuchen und beheben kann.
 
-![Abschnitt "Discovery and Response" im Microsoft 365-Lösungskatalog](../media/m365-solution-catalog-discovery-response.png)
+![Abschnitt "Microsoft 365-Lösungskatalog, Ermittlung und Reaktion"](../media/m365-solution-catalog-discovery-response.png)
 
-Von hier aus sehen Sie Karten für die folgenden Lösungen:
+Hier sehen Sie Karten für die folgenden Lösungen:
 
-- [Überwachung](search-the-audit-log-in-security-and-compliance.md): zeichnet Benutzer-und Administratoraktivitäten in Ihrer Organisation auf, sodass Sie das Überwachungsprotokoll durchsuchen und eine umfassende Liste der Aktivitäten für alle Standorte und Dienste untersuchen können.
-- [Daten Ermittlungen](overview-data-investigations.md): Durchsuchen von Inhaltsspeicherorten zum Identifizieren von vertraulichen, böswilligen oder verfallenen Daten in Microsoft 365-Standorten, sodass Sie Vorfälle wie Datenüberlauf untersuchen und beheben können.
-- [Datensubjekt Anforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): sucht und exportiert die personenbezogenen Daten eines Benutzers, um Sie bei der Reaktion auf Anfragen von Datensubjekten für dsgvo zu unterstützen.
+- [Überwachung](search-the-audit-log-in-security-and-compliance.md): Erfasst Benutzer- und Administratoraktivitäten in Ihrer Organisation, sodass Sie das Überwachungsprotokoll durchsuchen und eine umfassende Liste der Aktivitäten an allen Orten und in allen Diensten überprüfen können.
+- [Datenuntersuchungen](overview-data-investigations.md): Sucht in allen Inhaltsspeicherorten nach vertraulichen, bösartigen oder falsch abgelegten Daten in allen Microsoft 365-Speicherorten, um Ihnen dabei zu helfen, Vorfälle wie z. B. Datenlecks zu untersuchen und zu beheben.
+- [Anträge von Datensubjekten](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Sucht und exportiert personenbezogene Daten eines Benutzers, um Ihnen dabei zu helfen, auf Anfragen einer betroffenen Person im Sinne der DSGVO (EU-Datenschutz-Grundverordnung) zu reagieren.
 - [eDiscovery](manage-legal-investigations.md)
-    - [Zentrale eDiscovery](ediscovery-cases.md): Durchsuchen von Inhalts Standorten zum identifizieren, beibehalten und Exportieren von Daten als Reaktion auf gesetzliche Ermittlungsanfragen und eDiscovery-Fälle.
-    - [Advanced eDiscovery](overview-ediscovery-20.md): baut auf eDiscovery-Funktionen auf, indem intelligente Analysen und Maschinelles Lernen bereitgestellt werden, damit Sie die für Discovery-Anforderungen relevanten Daten weiter analysieren können.
+    - [Core eDiscovery](ediscovery-cases.md): Durchsucht Inhaltsspeicherorte, um Daten für Reaktionen im Rahmen der Offenlegungspflicht und für eDiscovery-Fälle zu identifizieren, beizubehalten und zu exportieren.
+    - [Advanced eDiscovery](overview-ediscovery-20.md): Stützt sich auf eDiscovery-Funktionen und stellt intelligente Analysen und Maschinelles Lernen bereit, die Ihnen dabei helfen, die im Hinblick auf eine Offenlegungspflicht relevanten Daten noch genauer zu analysieren.
 
-## <a name="how-do-i-get-this"></a>Wie erhalte ich diese?
+## <a name="how-do-i-get-this"></a>Wie erhalte ich den Katalog?
 
-Wenn Sie den Microsoft 365-Lösungskatalog besuchen möchten [https://compliance.microsoft.com](https://compliance.microsoft.com) , wechseln Sie zu und melden Sie sich als globaler Administrator, Kompatibilitäts Administrator oder Compliance-Datenadministrator an. Wählen Sie im Navigationsbereich auf der linken Seite des Bildschirms **Katalog** aus, um die Katalog Homepage zu öffnen.
+Wenn Sie den Microsoft 365-Lösungskatalog besuchen möchten, wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), und melden Sie sich als globaler Administrator, Compliance-Administrator oder Compliance-Datenadministrator an. Wählen Sie im Navigationsbereich auf der linken Seite des Bildschirms **Katalog** aus, um die Katalog-Startseite zu öffnen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 **Warum wird der Microsoft 365-Lösungskatalog nicht angezeigt?**
 
-Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Berechtigungen verfügen. Melden Sie sich dann als [https://compliance.microsoft.com](https://compliance.microsoft.com) globaler Administrator, Kompatibilitäts Administrator oder Datenadministrator für die Richtlinientreue an.
+Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Berechtigungen verfügen. Melden Sie sich dann bei [https://compliance.microsoft.com](https://compliance.microsoft.com) als globaler Administrator, Compliance-Administrator oder Compliance-Datenadministrator an.
 
-**Einige der Kompatibilitätsfeatures, die auf der Seite Lösungskatalog aufgeführt sind, sind im Microsoft 365 Compliance Center nicht verfügbar. Was soll ich tun?**
+**Einige der auf der Lösungskatalogseite aufgeführten Compliancefunktionen stehen im Microsoft 365 Compliance Center nicht zur Verfügung. Was kann ich tun?**
 
-Wir arbeiten immer daran, dem Microsoft 365 Compliance Center und dem Lösungskatalog neue Funktionen hinzuzufügen. Wenn Sie eine bestimmte Lösung im Navigationsbereich nicht finden können, ist sie zugänglich, wenn die Lösung in Ihrem Abonnement verfügbar ist.
+Wir arbeiten ständig daran, dem Microsoft 365 Compliance Center und dem Lösungskatalog neue Funktionen hinzuzufügen. Wenn Sie eine bestimmte Lösung im Navigationsbereich nicht finden können, ist sie in Ihrem Abonnement (noch) nicht verfügbar.
 
-Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie immer auf Lösungen im vorhandenen Office 365 Security and Compliance Center zugreifen, indem Sie zu [https://protection.office.com](https://protection.office.com)wechseln. Alternativ können Sie auf die Registerkarte **Weitere Ressourcen** im linken Navigationsbereich des Microsoft 365 Compliance Centers klicken und die Karte Office 365 Security and Compliance Center auswählen.  
+Wenn Sie nach einer vorhandenen Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie jederzeit auf Lösungen im vorhandenen Office 365 Security & Compliance Center zugreifen. Wechseln Sie hierzu zu [https://protection.office.com](https://protection.office.com). Alternativ können Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf die Registerkarte **Weitere Ressourcen** klicken und die Office 365 Security & Compliance Center-Karte auswählen.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- **Überprüfen Sie Ihre Microsoft-Kompatibilitäts**Bewertung, eine personalisierte, risikobasierte Bewertung, die Ihnen hilft, den Zustand Ihrer Organisation bezüglich der Einhaltung wichtiger Standards und Vorschriften zu verstehen. Es enthält empfohlene Maßnahmen, die Sie ergreifen können, um Ihre allgemeine Compliance-Haltung zu stärken, und bietet Workflowfunktionen, die Sie bei der effizienten Ausführung dieser Aktionen unterstützen. Weitere Informationen finden Sie unter [Compliance Score (Preview)](compliance-score.md).
+- **Überprüfen Sie Ihre Microsoft-Compliancebewertung**. Dabei handelt es sich um einen personalisierten, risikobasierten Score, der Ihnen dabei hilft, den Compliance-Status Ihrer Organisation im Hinblick auf die wichtigsten Standards und Bestimmungen zu bestimmen. Sie enthält empfohlene Maßnahmen, die Sie ergreifen können, um den allgemeinen Compliance-Status zu verbessern, und bietet Workflowfunktionen, die Ihnen helfen, diese Maßnahmen effizient umzusetzen. Weitere Informationen hierzu finden Sie unter [Compliancebewertung (Vorschau)](compliance-score.md).
 
-- **Konfigurieren Sie Richtlinien für das Insider Risikomanagement** , um interne Risiken zu minimieren und Ihnen die Möglichkeit zu geben, riskante Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und Maßnahmen zu ergreifen. Siehe [Insider Risk Management](insider-risk-management.md).
+- **Konfigurieren Sie Richtlinien für Insider-Risiken** zur Minimierung interner Risiken und zum Erkennen, Untersuchen und Reagieren auf riskante Aktivitäten in Ihrer Organisation. Weitere Informationen finden Sie unter [Insider-Risikomanagement](insider-risk-management.md).
 
-- **Erfahren Sie mehr über und erstellen Sie Richtlinien** für die Kommunikationsrichtlinien zur schnellen Erkennung und Korrektur von Richtlinienverstößen in Bezug auf Corporate Code of Conduct. Weitere Informationen finden Sie unter [Communication Compliance](communication-compliance.md).
+- **Erfahren Sie mehr über und erstellen Sie Richtlinien für die Kommunikationscompliance**, um Verstöße gegen Unternehmensregeln schnell zu erkennen und Maßnahmen dagegen zu ergreifen. Näheres erfahren Sie unter [Kommunikationscompliance](communication-compliance.md).
 
-- **Microsoft Information Protection**: erfahren Sie, wie Sie mithilfe von Microsoft 365-Lösungen vertrauliche Informationen überall dort, wo Sie leben oder Reisen, erkennen, klassifizieren und schützen.
-    - **Machen Sie sich mit Microsoft Cloud App Security vertraut und richten Sie Sie**ein. Weitere Informationen finden Sie unter [Quick Start: Erste Schritte mit Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - **Erste Schritte mit den Klassifizierungen**. Das Klassifizieren von Inhalten und deren anschließende Kennzeichnung, damit diese geschützt und ordnungsgemäß behandelt werden kann, ist der Ausgangspunkt für die Informationsschutz Disziplin. Weitere Informationen finden Sie unter [Erste Schritte mit Schulungs Klassifizierern](classifier-getting-started-with.md).
+- **Microsoft Information Protection**: Erfahren Sie, wie Sie mithilfe von Microsoft 365-Lösungen vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, entdecken, klassifizieren und schützen können.
+    - **Lernen Sie Microsoft Cloud App Security kennen und richten Sie es ein**. Näheres dazu finden Sie unter [Schnellstart: Erste Schritte mit Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
+    - **Erste Schritte mit Klassifizierern**. Das Klassifizieren von Inhalten und deren anschließende Bezeichnung, damit sie geschützt sind und ordnungsgemäß gehandhabt werden, ist der Ausgangspunkt für einen optimalen Schutz von Daten. Näheres erfahren Sie unter [Erste Schritte mit trainierbaren Klassifizierern](classifier-getting-started-with.md).
 
-- **Besuchen Sie häufig ihren Microsoft 365-Lösungskatalog**, und stellen Sie sicher, dass Sie neue Lösungen überprüfen, die Ihnen bei ihren Compliance-Anforderungen helfen. Melden Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) bei an, und wählen Sie dann im linken Navigationsbereich **Katalog** aus.
+- **Besuchen Sie den Microsoft 365-Lösungskatalog möglichst oft**, und sehen Sie sich etwaige neue Lösungen an, die Ihnen bei der Compliance-Einhaltung helfen können. Melden Sie sich bei [https://compliance.microsoft.com](https://compliance.microsoft.com) an, und wählen Sie dann im linken Navigationsbereich **Katalog** aus.
