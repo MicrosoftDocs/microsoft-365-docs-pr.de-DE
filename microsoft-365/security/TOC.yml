@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: Festlegen der Zeitzone
                   href: mtp/mtp-time-zone.md
+            - name: Anzeigen von Geräteprofilen
+              href: 'mtp:/device-profile.md'
             - name: Feedback geben
               href: mtp/feedback.md
             - name: Verwalten von Tickets über ServiceNow
@@ -281,26 +283,29 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 'Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen'
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-            - name: Antiphishingschutz in Office 365
+            - name: Antiphishingschutz
               href: ./office-365-security/anti-phishing-protection.md
               items:
-                - name: Optimieren des Schutzes gegen Phishing
-                  href: ./office-365-security/tuning-anti-phishing.md
-                - name: ATP-Antiphishingfunktionen in Office 365
-                  href: ./office-365-security/atp-anti-phishing.md
-                - name: Einrichten von Antiphishing und ATP-Antiphishingrichtlinien
+                - name: Antiphishing-Richtlinien
                   href: ./office-365-security/set-up-anti-phishing-policies.md
+                  items:
+                    - name: Konfigurieren der standardmäßigen Antiphishing-Richtlinie in EOP
+                      href: ./office-365-security/configure-anti-phishing-policies-eop.md
+                    - name: Konfigurieren der ATP Antiphishing-Richtlinien
+                      href: ./office-365-security/configure-atp-anti-phishing-policies.md
                 - name: 'Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern'
                   href: ./office-365-security/how-office-365-validates-the-from-address.md
-            - name: Antispoofingschutz in Office 365
+                - name: Optimieren des Schutzes gegen Phishing
+                  href: ./office-365-security/tuning-anti-phishing.md
+            - name: Antispoofingschutz
               href: ./office-365-security/anti-spoofing-protection.md
               items:
-                - name: Wissenswertes zur Spoofintelligenz
+                - name: Antispoofingschutz Häufig gestellte Fragen
+                  href: ./office-365-security/anti-spoofing-protection-faq.md
+                - name: Konfigurieren der Spoofintelligenz
                   href: ./office-365-security/learn-about-spoof-intelligence.md
-                - name: Exemplarische Vorgehensweise für Erkenntnisse der Spoofintelligenz
+                - name: 'Exemplarische Vorgehensweise: ATP Erkenntnisse der Spoofintelligenz'
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
-                - name: Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web
-                  href: ./office-365-security/unverified-sender-feature.md
             - name: Quarantäne
               href: ./office-365-security/quarantine-email-messages.md
               items:
@@ -312,7 +317,8 @@
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
                 - name: Spambenachrichtigungen für Endbenutzer
                   href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
-            - name: E-Mail-Überprüfung und Authentifizierung
+            - name: E-Mail-Authentifizierung
+              href: ./office-365-security/email-validation-and-authentication.md
               items:
                 - name: Verwenden des SPF durch Office 365 zum Verhindern von Spoofing
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md

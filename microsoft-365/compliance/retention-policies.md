@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237642"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521511"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -261,13 +261,17 @@ Wie auch bei organisationsweiten Richtlinien gilt, dass wenn eine Richtlinie fü
 
 Sie können eine Aufbewahrungsrichtlinie auch auf bestimmte Benutzer, Office 365-Gruppen, oder Websites anwenden. Schalten Sie zu diesem Zweck den **Status** des entsprechenden Speicherorts an und verwenden Sie dann die Links, um bestimmte Benutzer, Office 365-Gruppen oder Websites ein- oder auszuschließen. 
   
-Beachten Sie jedoch, dass die folgenden Grenzwerte für Aufbewahrungsrichtlinien gelten, die mehr als 1.000 bestimmte Speicherorte ein- oder ausschließt:
+Beachten Sie jedoch, dass die folgenden Grenzwerte für die Konfiguration von Aufbewahrungsrichtlinien gelten, die mehr als 1.000 bestimmte Speicherorte ein- oder ausschließen:
   
-- Eine Aufbewahrungsrichtlinie kann nicht mehr als 1.000 Postfächer und 100 Websitesammlungen umfassen.
+- Maximale Anzahl für die Aufbewahrungsrichtlinie:
+    - 1.000 Postfächer
+    - 1.000 Office 365-Gruppen
+    - 1.000 Benutzer für private Teams-Chats
+    - 100 Websites (OneDrive oder SharePoint)
+
+- Ein Mandant darf nicht mehr als 10.000 Aufbewahrungsrichtlinien umfassen.
     
-- Ein Mandant kann nicht mehr als 10.000 Aufbewahrungsrichtlinien umfassen.
-    
-Beachten Sie, dass Sie diese Grenzwerte überschreiten können, indem Sie entweder eine organisationsübergreifende Richtlinie oder eine Richtlinie, die für ganze Speicherorte gilt, anwenden.
+Obwohl diese Grenzwerte gelten, können Sie diese umgehen, indem Sie entweder eine organisationsübergreifende Richtlinie oder eine Richtlinie, die für ganze Speicherorte gilt, anwenden.
   
 ### <a name="skype-locations"></a>Skype-Speicherorte
 
