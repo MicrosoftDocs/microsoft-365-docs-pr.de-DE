@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365-Konformitäts Dokumentation
-summary: Wenn Ihre Organisation rechtliche oder behördliche Vorgaben erfüllen muss, beginnen Sie hier, um mehr über die Kompatibilität in Microsoft 365 zu erfahren.
+title: Microsoft 365-Compliance-Dokumentation
+summary: Wenn Ihr Unternehmen gesetzliche oder behördliche Standards einhalten muss, beginnen Sie hier, um mehr über die Compliance von Microsoft 365 zu erfahren.
 metadata:
-  title: Microsoft 365-Konformitäts Dokumentation
-  description: Dokumentation zu den Microsoft 365-Kompatibilitätsfeatures
+  title: Microsoft 365-Compliance-Dokumentation
+  description: Dokumentation zu Microsoft 365 Compliance-Funktionen
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,12 +15,12 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322531"
 landingContent:
-- title: Verwalten des Informationsschutzes
+- title: Informationsschutz verwalten
   linkLists:
   - linkListType: overview
     links:
@@ -34,7 +34,7 @@ landingContent:
       url: email-encryption.md
     - text: Kundenschlüssel
       url: customer-key-overview.md
-- title: Verwalten der Informationsgovernance
+- title: Verwalten der Informations-Governance
   linkLists:
   - linkListType: overview
     links:
@@ -50,49 +50,49 @@ landingContent:
       url: event-driven-retention.md
     - text: PST-Import
       url: importing-pst-files-to-office-365.md
-    - text: Drittanbieter-Daten-Konnektoren
+    - text: Daten-Connectoren von Drittanbietern
       url: archiving-third-party-data.md
-    - text: Data Governance-Berichte
+    - text: Berichte zur Daten-Governance
       url: view-the-data-governance-reports.md
-- title: Verwalten von Insider Risiken
+- title: Insider-Risiken verwalten
   linkLists:
   - linkListType: overview
     links:
-    - text: Insider Risikomanagement
+    - text: Insider-Risikomanagement
       url: insider-risk-management.md
-    - text: Kommunikationscompliance
+    - text: Kommunikationsbezogene Compliance
       url: communication-compliance.md
     - text: Informationsbarrieren
       url: information-barriers.md
-    - text: Privileged Access Management
+    - text: Verwaltung privilegierter Zugriffe
       url: privileged-access-management-overview.md
     - text: Kunden-Lockbox
       url: customer-lockbox-requests.md
-- title: Entdecken und Antworten
+- title: Entdecken und Reagieren
   linkLists:
   - linkListType: overview
     links:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
-    - text: Zentrale eDiscovery
+    - text: Core eDiscovery
       url: ediscovery-cases.md
     - text: Inhaltssuche
       url: search-for-content.md
-    - text: Daten Untersuchungen (Vorschau)
+    - text: Datenuntersuchungen (Vorschau)
       url: overview-data-investigations.md
     - text: Überwachung
       url: search-the-audit-log-in-security-and-compliance.md
-- title: Erste Schritte mit behördlicher Compliance
+- title: Erste Schritte zur Einhaltung gesetzlicher Vorschriften
   linkLists:
   - linkListType: get-started
     links:
-    - text: Compliancebewertung
+    - text: Compliance-Bewertung
       url: compliance-score.md
-    - text: Dsgvo-Compliance-Aktionsplan
+    - text: Aktionsplan zur Einhaltung der DSGVO
       url: gdpr-action-plan.md
-    - text: Informationsschutz für dsgvo
+    - text: Informationsschutz laut DSGVO
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: Aktionsplan für die ISO-Konformität
+    - text: Aktionsplan zur ISO-Compliance
       url: iso-action-plan.md
-    - text: Aktionsplan für den NIST-Compliance
+    - text: Aktionsplan zur NIST-Compliance
       url: nist-action-plan.md
