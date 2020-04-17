@@ -3,9 +3,9 @@
   items:
     - name: Übersicht
       items:
-        - name: Übersicht für Administratoren
+        - name: Administratorübersicht
           href: admin-overview/admin-overview.md
-        - name: Registrieren bei Office 365
+        - name: Registrieren für Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: Videoschulung
           href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
@@ -25,13 +25,13 @@
           href: setup/setup.md
         - name: Unterschied zwischen Setup-Assistent und Setup-Seite
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Hinzufügen von Domänen
+        - name: Hinzufügen einer Domäne
           href: setup/add-domain.md
         - name: Häufig gestellte Fragen (FAQ) zu Domänen
           href: setup/domains-faq.md
         - name: Installieren von Anwendungen
           href: setup/install-applications.md
-        - name: Migrieren Sie E-Mails und Kontakte
+        - name: Migrieren von E-Mails und Kontakten
           href: setup/migrate-email-and-contacts-admin.md
         - name: Bereitstellen von Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
@@ -49,21 +49,21 @@
           href: setup/customize-your-organization-theme.md
     - name: Benutzer und Rollen
       items:
-        - name: Benutzer hinzufügen
+        - name: Hinzufügen von Benutzern
           href: add-users/add-users.md
         - name: 'Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen'
           href: add-users/create-and-use-a-template-to-add-users.md
         - name: Löschen eines Benutzers
           href: add-users/delete-a-user.md
-        - name: Benutzer wiederherstellen
+        - name: Wiederherstellen eines Benutzers
           href: add-users/restore-user.md
-        - name: Zurücksetzen von Passwörtern
+        - name: Zurücksetzen von Kennwörtern
           href: add-users/reset-passwords.md
         - name: 'Festlegen des Kennworts derart, dass es nie abläuft'
           href: add-users/set-password-to-never-expire.md
         - name: 'Zulassen, dass Benutzer Kennwörter zurücksetzen'
           href: add-users/let-users-reset-passwords.md
-        - name: Benutzerkennwort erneut senden
+        - name: Erneutes Senden des Benutzerkennworts
           href: add-users/resend-user-password.md
         - name: Erteilen von Postfachberechtigungen für einen anderen Benutzer
           href: add-users/give-mailbox-permissions-to-another-user.md
@@ -75,13 +75,13 @@
           href: add-users/add-new-employee.md
         - name: Entfernen eines ehemaligen Mitarbeiters
           href: add-users/remove-former-employee.md
-        - name: Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters
+        - name: Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
           href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
-        - name: Informationen zu Administratorrollen
+        - name: Info zu Administratorrollen
           href: add-users/about-admin-roles.md
         - name: Zuweisen von Administratorrollen
           href: add-users/assign-admin-roles.md
-        - name: Informationen zur Exchange Online-Administratorrolle
+        - name: Info zur Exchange Online-Administratorrolle
           href: add-users/about-exchange-online-admin-role.md
     - name: E-Mail
       items:
@@ -93,7 +93,7 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: Freigegebene Postfächer
           items:
-            - name: Informationen zu freigegebenen Postfächern
+            - name: Info zu freigegebenen Postfächern
               href: email/about-shared-mailboxes.md
             - name: Erstellen eines freigegebenen Postfachs
               href: email/create-a-shared-mailbox.md
@@ -101,7 +101,7 @@
               href: email/configure-a-shared-mailbox.md
             - name: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
               href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: Entfernen der Lizenz aus einem freigegebenen Postfach
+            - name: Entfernen einer Lizenz aus einem freigegebenen Postfach
               href: email/remove-license-from-shared-mailbox.md
             - name: Beheben von Problemen mit freigegebenen Postfächern
               href: email/resolve-issues-with-shared-mailboxes.md
@@ -135,21 +135,21 @@
       href: activity-reports/activity-reports.md
     - name: Power BI-Nutzungsanalysen
       items:
-        - name: Verwendungsanalysen
+        - name: Nutzungsanalysen
           href: usage-analytics/usage-analytics.md
-        - name: Nutzungsanalysen aktivieren
+        - name: Aktivieren von Nutzungsanalysen
           href: usage-analytics/enable-usage-analytics.md
         - name: Abrufen der neuesten Version der Nutzungsanalyse
           href: usage-analytics/get-the-latest-version-of-usage-analytics.md
         - name: Navigieren in und Verwenden von Berichten
           href: usage-analytics/navigate-and-utilize-reports.md
-        - name: Aktiver Benutzer in Verwendungsberichten
+        - name: Aktive Benutzer in Verwendungsberichten
           href: usage-analytics/active-user-in-usage-reports.md
         - name: Anpassen von Berichten
           href: usage-analytics/customize-reports.md
         - name: Datenmodell von Nutzungsanalysen
           href: usage-analytics/usage-analytics-data-model.md
-        - name: Nutzungsanalysenfehler
+        - name: Nutzungsanalysefehler
           href: usage-analytics/usage-analytics-errors.md
     - name: Verwalten
       items:
@@ -157,7 +157,7 @@
           href: manage/manage.md
         - name: Ändern von Kontakteinstellungen
           href: manage/change-contact-preferences.md
-        - name: 'Ändern der Adresse, des Kontakt und vieles mehr'
+        - name: 'Ändern der Adresse, des Kontakts und vieles mehr'
           href: manage/change-address-contact-and-more.md
         - name: Aktualisieren der Telefonnummer und der E-Mail-Adresse
           href: manage/update-phone-number-and-email-address.md
@@ -165,11 +165,11 @@
           href: manage/set-password-expiration-policy.md
         - name: Anpassen des App-Startfelds
           href: manage/customize-the-app-launcher.md
-        - name: Voraussetzungen für die Zentrale Bereitstellung
+        - name: Voraussetzungen für Zentrale Bereitstellung
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Veröffentlichen von Add-Ins durch Zentrale Bereitstellung
+        - name: Verwenden von Zentrale Bereitstellung zum Bereitstellen von Add-Ins
           href: manage/manage-deployment-of-add-ins.md
-        - name: FAQ zur zentralen Bereitstellung
+        - name: FAQ zu Zentrale Bereitstellung
           href: manage/centralized-deployment-FAQ.md
         - name: Suchen nach Ihrem Partner oder Händler
           href: manage/find-your-partner-or-reseller.md
@@ -177,27 +177,27 @@
           href: manage/room-and-equipment-mailboxes.md
         - name: Senden einer E-Mail als Verteilerliste
           href: manage/send-email-as-distribution-list.md
-        - name: Aktualisieren von Verteilerlisten
+        - name: Upgraden von Verteilerlisten
           href: manage/upgrade-distribution-lists.md
         - name: Externe Freigabe von Websites und Dateien
           href: manage/share-sites-with-external-users.md
         - name: Freigeben von Kalendern für externe Benutzer
           href: manage/share-calendars-with-external-users.md
-        - name: Benutzern Lizenzen zuweisen
+        - name: Zuweisen von Lizenzen an Benutzer
           href: manage/assign-licenses-to-users.md
-        - name: Aufheben der Zuweisung von Lizenzen von Benutzern
+        - name: Aufheben der Zuweisung von Benutzerlizenzen
           href: manage/remove-licenses-from-users.md
         - name: Lösen von Lizenzkonflikten
           href: manage/resolve-license-conflicts.md
-        - name: Ein-oder ausblenden neuer Features mit neuer Verwaltung
+        - name: Ein- und Ausblenden neuer Funktionen mit What's New Management
           href: manage/show-hide-new-features.md
     - name: Abonnements und Abrechnung
       items:
         - name: Verwalten Ihrer Abonnements
           href: ../commerce/index.yml
-        - name: Rechnung anzeigen
+        - name: Anzeigen Ihrer Rechnung
           href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-        - name: Zahlungsmethoden verwalten
+        - name: Verwalten von Zahlungsmethoden
           href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
         - name: Kündigen Ihres Abonnements
           href: ../commerce/subscriptions/cancel-your-subscription.md
@@ -207,7 +207,7 @@
           href: get-help-with-domains/get-help-with-domains.md
         - name: Was ist eine Domäne?
           href: get-help-with-domains/what-is-a-domain.md
-        - name: Erwerben eines Domänennamens
+        - name: Kaufen eines Domänennamens
           href: get-help-with-domains/buy-a-domain-name.md
         - name: Suchen der Domänenregistrierungsstelle
           href: get-help-with-domains/find-your-domain-registrar.md
@@ -217,11 +217,11 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: Suchen und Beheben von Problemen
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: Domänenverbindung
+        - name: Domain Connect
           href: get-help-with-domains/domain-connect.md
         - name: Einrichten Ihrer Domäne (hostspezifische Anweisungen)
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
-        - name: Ändern von Namenservern bei einer beliebigen Registrierungsstelle
+        - name: Ändern von Namenservern bei einer beliebigen Domänenegistrierungsstelle
           href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
         - name: Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
           href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
@@ -253,23 +253,23 @@
           href: create-groups/add-or-remove-members-from-groups.md
         - name: Ablaufrichtlinie für Office 365-Gruppen
           href: create-groups/office-365-groups-expiration-policy.md
-        - name: Wiederherstellen von gelöschten Gruppe
+        - name: Wiederherstellen einer gelöschten Gruppe
           href: create-groups/restore-deleted-group.md
         - name: Verwalten des Gastzugriffs in Gruppen
           href: create-groups/manage-guest-access-in-groups.md
-        - name: Verwenden von Vertraulichkeitsbezeichnungen mit Gruppen
+        - name: Verwenden von Vertraulichkeitsbezeichnungen bei Gruppen
           href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
     - name: 'Office 365, betrieben von 21Vianet'
       items:
-        - name: 'Informationen zu Office 365, betrieben von 21Vianet'
+        - name: 'Info zu Office 365, betrieben von 21Vianet'
           href: services-in-china/services-in-china.md
-        - name: Erwerben oder Testen von Abonnements
+        - name: Kaufen oder Testen von Abonnements
           href: services-in-china/buy-or-try-subscriptions.md
         - name: 'Herunterladen der Office-App für Android für Office 365, betrieben von 21Vianet'
           href: services-in-china/download-office-app-for-Android.md
         - name: 'Herunterladen der Office-App für iOS für Office 365, betrieben von 21Vianet'
           href: services-in-china/download-office-app-for-iOS.md
-        - name: Anzeigen Ihrer Rechnung oder Abrufen einer Fapiao-Rechnung
+        - name: Anzeigen Ihrer Rechnung oder Abrufen eines Fapiaos
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Beantragen einer Fapiao-Rechnung
           href: services-in-china/apply-for-a-fapiao.md
@@ -277,17 +277,17 @@
           href: services-in-china/parity-between-azure-information-protection.md
     - name: Neue Features erhalten
       items:
-        - name: "Informationen zum neuen Admin\_Center"
+        - name: "Info zum neuen Admin\_Center"
           href: microsoft-365-admin-center-preview.md
         - name: Neuerungen im neuen Admin Center
           href: whats-new-in-preview.md
         - name: Bleiben Sie auf dem Laufenden über Änderungen
           href: manage/stay-on-top-of-updates.md
-        - name: Veröffentlichungsoptionen in Office 365
+        - name: Release-Optionen in Office 365
           href: manage/release-options-in-office-365.md
         - name: Nachrichtencenter
           href: manage/message-center.md
         - name: Testen oder Kaufen von Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
-    - name: Kontakt mit dem Support für Geschäftsprodukte aufnehmen
+    - name: Support für Business-Produkte kontaktieren
       href: contact-support-for-business-products.md
