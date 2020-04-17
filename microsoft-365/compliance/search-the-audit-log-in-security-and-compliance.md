@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Office 365-Organisation gegeben hat.
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151440"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521491"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -694,7 +694,7 @@ In der folgenden Tabelle sind Aktivitäten aufgeführt, die sich ergeben, wenn I
 |Prüfdateisatzsuche gelöscht|DeleteWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz gelöscht.|
 |Tag gelöscht|DeleteTag|Ein Benutzer hat ein Tag oder eine Tag-Gruppe in einem Prüfdateisatz gelöscht.|
 |Heruntergeladenes Dokument|DownloadDocument|Ein Benutzer hat ein Dokument aus einem Prüfdateisatz heruntergeladen.|
-|Tag bearbeitet|DownloadDocument|Ein Benutzer hat ein Tag in einem Prüfdateisatz geändert.|
+|Tag bearbeitet|UpdateTag|Ein Benutzer hat ein Tag in einem Prüfdateisatz geändert.|
 |Dokumente aus einem Prüfdateisatz exportiert|ExportJob|Der Benutzer hat Dokumente aus einem Prüfdateisatz exportiert.|
 |Falleinstellungen geändert|UpdateCaseSettings|Der Benutzer hat die Einstellungen für einen Fall geändert. Die Falleinstellungen umfassen Fallinformationen, Zugriffsberechtigungen und Einstellungen, mit denen das Such- und Analyseverhalten gesteuert werden.|
 |Prüfdateisatzsuche geändert|UpdateWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz geändert.|
@@ -891,9 +891,9 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 |:-----|:-----|:-----|
 |Vertraulichkeitsbezeichnung wurde auf Website angewendet|SensitivityLabelApplied|Auf eine SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung angewendet.|
 |Vertraulichkeitsbezeichnung wurde von Website entfernt|SensitivityLabelRemoved|Von einer SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung entfernt.|
-|Vertraulichkeitsbezeichnung wurde auf Datei angewendet|FileSensitivityLabelApplied|Unter Verwendung von Office im Web wurde eine Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
-|Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Unter Verwendung von Office im Web wurde eine andere Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
-|Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Unter Verwendung von Office im Web wurde eine Vertraulichkeitsbezeichnung von einem Dokument entfernt.|
+|Vertraulichkeitsbezeichnung wurde auf Datei angewendet|FileSensitivityLabelApplied|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine abweichende Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
+|Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine Vertraulichkeitsbezeichnung eines Dokuments entfernt.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll

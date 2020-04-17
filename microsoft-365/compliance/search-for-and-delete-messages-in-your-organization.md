@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center in Office 365 die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710514"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516830"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
-**Dieser Artikel richtet sich an Administratoren. Versuchen Sie, in Ihrem Postfach Elemente zu finden, die Sie löschen möchten? Dann lesen Sie [Suchen einer Nachricht oder eines Elements mit der Sofortsuche](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|.
+**Dieser Artikel richtet sich an Administratoren. Versuchen Sie, in Ihrem Postfach Elemente zu finden, die Sie löschen möchten? Dann lesen Sie [Suchen einer Nachricht oder eines Elements mit der Sofortsuche](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
 Mit der Inhaltssuche in Office 365 können Sie alle Postfächer Ihrer Organisation nach E-Mails durchsuchen und diese löschen. Die Funktion ist hilfreich beim Suchen und Entfernen potenziell schädlicher oder riskanter E-Mails, beispielsweise:
   
@@ -94,11 +94,20 @@ Nachfolgend finden Sie zwei Beispiele für Abfragen, um verdächtige E-Mail-Nach
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
+Nachfolgend finden Sie ein Beispiel für die Verwendung einer Abfrage zum Erstellen und Starten einer Suche, indem Sie die Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** ausführen, um alle Postfächer in der Organisation zu durchsuchen:
+
+```powershell
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
+Start-ComplianceSearch -Identity $Search.Identity
+```
+
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center-PowerShell
 
 Der nächste Schritt besteht darin, eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 Wenn Ihr Office 365-Konto die mehrstufige Authentifizierung (MFA) oder Verbundauthentifizierung verwendet, können Sie die Anweisungen im vorherigen Thema zum Herstellen einer Verbindung mit Security & Compliance Center PowerShell nicht anwenden. Lesen Sie stattdessen die Anweisungen im Thema [Herstellen einer Verbindung mit Security & Compliance Center PowerShell bei mehrstufiger Authentifizierung](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+
+Nachdem Sie die Verbindung mit der Security & Compliance Center-PowerShell hergestellt haben, führen Sie die Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** aus, die Sie im vorherigen Schritt vorbereitet haben.
   
 ## <a name="step-3-delete-the-message"></a>Schritt 3: Löschen der Nachricht
 
@@ -110,7 +119,7 @@ Im folgenden Beispiel löscht der Befehl die Suchergebnisse, die von einer Inhal
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-Um die Elemente, die von der Inhaltssuche "Phishingnachricht entfernen" zurückgegeben werden, endgültig zu löschen, führen Sie folgenden Befehl aus:
+Um die Elemente, die von der Inhaltssuche „Phishing-Nachricht entfernen“ zurückgegeben werden, endgültig zu löschen, führen Sie folgenden Befehl aus:
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
