@@ -24,12 +24,12 @@ description: Erfahren Sie, welche Zahlungsoptionen für Ihr Office 365 Business-
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633713"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540903"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Bezahlen Ihres Office 365 Business-Abonnements
 
@@ -275,9 +275,23 @@ Sie können auf Wunsch eine Kopie Ihrer Rechnung als E-Mail-Anlage erhalten. In 
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>So erhalten Sie die Rechnung per E-Mail
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Abrechnungsbenachrichtigungen</a>.
+
+::: moniker-end
 
 2. Setzen Sie unter **Möchten Sie die Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.
 

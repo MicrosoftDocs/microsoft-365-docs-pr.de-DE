@@ -17,12 +17,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einem Dashboard zu einer Einblicke mit empfohlenen Aktionen im &amp; Security Compliance Center wechseln können.
-ms.openlocfilehash: 8f6a75e02f00cbc62e4907ea3a0ff54c72110a21
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083159"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537497"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
 
@@ -42,7 +42,7 @@ Lassen Sie uns den Fluss vom Dashboard zu einem Bericht zu einem Einblick und ei
     
 4. Wenn Sie ein Element in der Liste auswählen, wird ein Detailbereich geöffnet, in dem zusätzliche Informationen angezeigt werden können, einschließlich ähnlicher e-Mail-Nachrichten, die erkannt wurden. (Klicken Sie auf ein Element in der Liste, und überprüfen Sie die Informationen und Empfehlungen.)<br>![Durch Auswählen eines Elements wird ein Detailbereich geöffnet.](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Beachten Sie, dass oben im Bereich die Option zum Hinzufügen des Absenders zur Liste der zulässigen Absender der Organisation vorhanden ist. (Wählen Sie **Add to ' AllowedtoSpoof ' Sender Allow List** erst aus, wenn Sie sicher sind, dass Sie dies tun möchten. [Erfahren Sie mehr über Spoof Intelligence](learn-about-spoof-intelligence.md).)<br>![Sie können einen Absender autorisieren.](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Beachten Sie, dass oben im Bereich die Option zum Hinzufügen des Absenders zur Liste der zulässigen Absender der Organisation vorhanden ist. (Wählen Sie **Add to ' AllowedtoSpoof ' Sender Allow List** erst aus, wenn Sie sicher sind, dass Sie dies tun möchten. [Konfigurieren von Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).)<br>![Sie können einen Absender autorisieren.](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 Auf diese Weise können wir von einem Dashboard zu Insights und empfohlenen Aktionen übergehen.
   

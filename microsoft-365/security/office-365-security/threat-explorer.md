@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284253"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537509"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -186,7 +186,7 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
 
    ![Vom Benutzer gemeldetes Phishing](../../media/EmailUserReportedReportType.png)
 
-Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [ATP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md)anzupassen.
+Der Bericht wird aktualisiert, um Daten über e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [ATP-Anti-Phishing-Richtlinien](configure-atp-anti-phishing-policies.md)anzupassen.
 
 ## <a name="start-automated-investigation-and-response"></a>Starten der automatischen Untersuchung und Antwort
 
@@ -230,7 +230,7 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 
-- [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Berechtigungen im Office 365 Security &amp; Compliance-Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs-Explorer und Echt Zeit Erkennungen

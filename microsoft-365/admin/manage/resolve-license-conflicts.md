@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Hier erfahren Sie, wie Sie Lizenz Konflikte mit Ihrem Office 365 für Unternehmen-Abonnement lösen.
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212293"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540915"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>Lösen von Lizenzkonflikten in Office 365 Business
 
@@ -33,11 +33,24 @@ Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement b
   
 ## <a name="how-do-i-view-license-conflicts"></a>Wie kann ich Lizenzkonflikte anzeigen?
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
+::: moniker range="o365-worldwide"
 
-    Wenn Sie Office 365 Deutschland verwenden, gehen Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
 
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, gehen Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a> .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> .
+
+::: moniker-end
+
 
 2. Prüfen Sie die Spalte **Status** auf Informationen zum Konflikt. Wenn ein Konflikt vorliegt, wird eine Warnmeldung angezeigt, die besagt, dass ein oder mehrere Benutzer eine gültige Lizenz benötigen.
 

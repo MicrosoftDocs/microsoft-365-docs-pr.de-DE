@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288593"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528369"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -31,7 +31,7 @@ ms.locfileid: "42288593"
 
 
 
-Microsoft Threat Protection ist eine einheitliche Prä-und Post-Sicherheitsverletzung der Enterprise Defense-Suite, die sich nativ in Endpunkt, Identität, e-Mail und Anwendungen integriert, um anspruchsvolle Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch zu reagieren.  
+Microsoft Threat Protection ist eine einheitliche, vor-und nach Verletzung der Enterprise Defense-Suite, die die Erkennung, Verhinderung, Untersuchung und Antwort über alle Endpunkte, Identitäten, e-Mails und Anwendungen hinweg einheitlich koordiniert und einen integrierten Schutz vor anspruchsvollen Angriffen bietet.
 
 Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexperten die Bedrohungs Signale, die jedes dieser Produkte empfängt, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. wie Sie in die Umgebung eingingen, welche Auswirkungen Sie hat und wie Sie sich derzeit auf die Organisation auswirkt. Microsoft Threat Protection führt automatische Aktionen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu heilen.  
 

@@ -16,22 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086694"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528857"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 Warn Seiten für ATP-sichere Links
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt. 
-  
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt.
+
 Lesen Sie diesen Artikel, um Beispiele für Warn Seiten anzuzeigen, die möglicherweise zusammen mit den neuesten Updates für Warn Seiten angezeigt werden.
-  
+
 ## <a name="examples-of-warning-pages"></a>Beispiele für Warn Seiten
 
 ### <a name="atp-is-scanning-the-link"></a>ATP scannt den Link
@@ -113,4 +113,3 @@ Ursprüngliche Warnungsseite:
 Aktualisierte Warn Seite:
 
 ![An error has occurred](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-   

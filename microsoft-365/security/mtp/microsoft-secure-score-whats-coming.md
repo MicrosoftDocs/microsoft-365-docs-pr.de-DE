@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: HT
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895441"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541107"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Was Microsoft-Sicherheitsbewertung in Kürze verfügbar ist
 
@@ -36,15 +36,15 @@ Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerun
 
 Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen.
 
-- Konten, die in den letzten 30 Tagen nicht benutzt wurden, löschen/sperren
-- Weniger als 5 globale Administratoren festlegen
 - IRM-Schutz auf Dokumente anwenden
 - Richtlinien zur Verhinderung von Datenverlust anwenden
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Hinzufügen zusätzlicher Steuerelemente in der Vorschauversion
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Hinzufügen von Azure AD Verbesserungs Aktion in der Vorschauversion
+
 - Nicht zulassen, dass Benutzer nicht verwalteten Anwendungen zustimmen (zurzeit in der veröffentlichten Version verfügbar)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Unterstützung zusätzlicher Microsoft Cloud App Security-Verbesserungsmaßnahmen
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Hinzufügen von Azure ATP-Verbesserungs Aktionen in der Vorschauversion
+
 - Druckerspoolerdienst auf Domänencontrollern deaktivieren
 - Unsichere Kerberos-Delegierungen ändern, um einen Identitätswechsel zu verhindern
 - Lokale Administratorkennwörter mit Microsoft LAPS schützen und verwalten
@@ -56,5 +56,6 @@ Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und 
 - Kommunikation über Legacy-Protokolle verhindern
 - Verwendung schwacher Verschlüsselung verhindern
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Unterstützung der Sicherheitsempfehlungen von Microsoft Defender ATP Threat & Vulnerability Management (TVM)
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Unterstützung für Sicherheitsempfehlungen für Microsoft Defender ATP Threat & Vulnerability Management (TVM) in der Vorschauversion
+
 - Alle von TVM bereitgestellten Sicherheitsempfehlungen sind nun auch in Microsoft-Sicherheitsbewertung verfügbar.

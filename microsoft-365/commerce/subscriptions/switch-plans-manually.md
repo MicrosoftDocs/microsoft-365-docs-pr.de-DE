@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Wechseln Sie Office 365 für Unternehmen Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142103"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540843"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Manueller Wechsel von Office 365 Business-Plänen
 
@@ -64,11 +64,23 @@ Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Schritt 3: Überprüfen Ihres neuen Abonnements und der Lizenzen
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+::: moniker-end
 
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+
+::: moniker-end
 
 2. **Sicherstellen, dass beide Abonnements aufgelistet und aktiv sind**
 
@@ -102,11 +114,23 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
 
 ### <a name="reassign-a-license-for-one-user"></a>Neuzuweisen einer Lizenz für einen Benutzer
 
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+::: moniker-end
 
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
 
 2. Aktivieren Sie auf der Seite **Aktive Benutzer** das Kontrollkästchen neben dem Namen des Benutzers, dem Sie eine Lizenz zuweisen möchten.
 
@@ -125,11 +149,23 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Gleichzeitiges Neuzuweisen von Lizenzen für mehrere Benutzer
 
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a> , oder wählen Sie **Benutzer** \> **aktive**Benutzer aus.
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+::: moniker-end
 
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zur Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">aktive Benutzer</a> .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
 
 2. Aktivieren Sie die Kontrollkästchen neben den Namen der Benutzer, für die Sie vorhandene Lizenzen ersetzen möchten.
 

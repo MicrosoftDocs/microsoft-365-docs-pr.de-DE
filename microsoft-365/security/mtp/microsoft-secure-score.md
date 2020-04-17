@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163898"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541095"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -168,6 +168,8 @@ Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und 
 - Entdeckung riskanter und nicht konformer Shadow IT-Anwendungen
 - Überprüfen von Berechtigungen und Blockieren riskanter OAuth-Anwendungen
 - Einrichten der Versionsverwaltung in SharePoint Online-Dokumentbibliotheken
+- Konten, die in den letzten 30 Tagen nicht benutzt wurden, löschen/sperren
+- Weniger als 5 globale Administratoren festlegen
 
 #### <a name="removed-not-scored-improvement-actions"></a>"Nicht bewertet"-Verbesserungsmaßnahmen entfernt
 

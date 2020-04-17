@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079952"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528358"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Erweiterte eDiscovery-Berichte (Vorschau)
 

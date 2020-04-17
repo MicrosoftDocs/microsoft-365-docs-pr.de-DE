@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032852"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537437"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -57,7 +57,7 @@ Informationen zum Erstellen und Konfigurieren von Anti-Spam-Richtlinien finden S
 |Aufbewahrungszeitraum für Quarantäne <br/><br/> _QuarantineRetentionPeriod_|30 Tage|30 Tage||
 |**Sicherheitstipps** <br/><br/> _InlineSafetyTipsEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |Zugelassene Absender <br/><br/> _AllowedSenders_|Keine|Keine||
-|Zulässige Absenderdomänen <br/><br/> _AllowedSenderDomains_|Keine|Keine|Das Hinzufügen von Domänen, die Sie besitzen (auch als _akzeptierte Domänen_bezeichnet), ist in der Liste der zulässigen Absender nicht erforderlich. Tatsächlich wird es als hohes Risiko betrachtet, da es Möglichkeiten für ungültige Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden. Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die entweder Spoofing von Domänen sind, die Teil Ihrer Organisation sind, oder Spoofing externer Domänen.|
+|Zulässige Absenderdomänen <br/><br/> _AllowedSenderDomains_|Keine|Keine|Das Hinzufügen von Domänen, die Sie besitzen (auch als _akzeptierte Domänen_bezeichnet), ist in der Liste der zulässigen Absender nicht erforderlich. Tatsächlich wird es als hohes Risiko betrachtet, da es Möglichkeiten für ungültige Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden. Verwenden Sie [Spoof Intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite **Anti-Spam-Einstellungen** , um alle Absender zu überprüfen, die e-Mail-Adressen von Absendern in den e-Mail-Domänen Ihrer Organisation Spoofing oder Absender-e-Mail-Adressen in externen Domänen Spoofing durchführen.|
 |Blockierte Absender <br/><br/> _BlockedSenders_|Keine|Keine||
 |Blockierte Absenderdomänen <br/><br/> _BlockedSenderDomains_|Keine|Keine||
 |**Spambenachrichtigungen für Endbenutzer aktivieren** <br/><br/> _EnableEndUserSpamNotifications_|Aktiviert <br/><br/> `$true`|Aktiviert <br/><br/> `$true`||
@@ -111,20 +111,24 @@ Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finde
 |||||
 |---|---|---|---|
 |**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
-|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Aktion_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
+|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Action_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
 |**Filter "allgemeine Anlagentypen"** <br/><br/> _EnableFileFilter_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
 |**Malware Zero-Hour Auto Purge** <br/><br/> _ZapEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <br/><br/> _EnableInternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
 |**Benachrichtigen externer Absender** der nicht zugestellten Nachricht <br/><br/> _EnableExternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
 |
 
-### <a name="eop-anti-phishing-policy-settings"></a>EoP-Einstellungen für Anti-Phishing-Richtlinien
+### <a name="eop-default-anti-phishing-policy-settings"></a>EoP Standardeinstellungen für Anti-Phishing-Richtlinien
 
-|Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Aktivieren des Schutzes gegen Spoofing|Ein|Ein||
-|Aktivieren eines nicht authentifizierten Absenders (Tagging)|Ein|Ein||
-|Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen|Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern|Nachricht isolieren||
+Sie können diese Einstellungen nur in Office 365 Organisationen mit Exchange Online Postfächern konfigurieren. Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [configure the default Anti-Phishing Policy in EoP](configure-anti-phishing-policies-eop.md).
+
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Aktivieren des Schutzes gegen Spoofing** <br/><br/> _EnableAntispoofEnforcement_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Nicht authentifizierten Absender aktivieren** <br/><br/> _EnableUnauthenticatedSender_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <br/><br/> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`|Dies gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Office 365 Advanced Threat Protection-Sicherheit
 
@@ -139,35 +143,47 @@ Wenn Sie Ihrem EoP ein Office 365 ATP-Abonnement hinzugefügt haben, legen Sie d
 
 ### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP-Einstellungen für Anti-Phishing-Richtlinien
 
-EoP-Kunden erhalten grundlegende Anti-Phishing-Funktionen, wie zuvor beschrieben, aber Office 365 ATP umfasst weitere Features und Steuerelemente, um das verhindern, erkennen und Beheben von Angriffen zu unterstützen.
+EoP-Kunden erhalten grundlegende Anti-Phishing-Funktionen, wie zuvor beschrieben, aber Office 365 ATP umfasst weitere Features und Steuerelemente, um das verhindern, erkennen und Beheben von Angriffen zu unterstützen. Informationen zum Erstellen und Konfigurieren dieser Richtlinien finden Sie unter [configure ATP Anti-Phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).
 
-|Name des Sicherheitsfeatures für Identitätswechsel|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|(Richtlinie zum Bearbeiten von Identitätswechsel) Hinzufügen von Benutzern zum Schutz|Ein|Ein|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Benutzer in Schlüsselrollen hinzuzufügen. Intern sind dies möglicherweise Ihr CEO, CFO und andere Führungskräfte. Diese können extern auch Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
-|(Richtlinie zum Bearbeiten von Identitätswechsel) Automatisches einschließen der Domänen, die ich besitze|Ein|Ein||
-|(Richtlinie zum Bearbeiten von Identitätswechsel) Benutzerdefinierte Domänen einschließen|Ein|Ein|Hängt von Ihrer Organisation ab, wir empfehlen jedoch das Hinzufügen von Domänen, mit denen Sie interagieren, die Sie nicht besitzen.|
-|Wenn e-Mail von einem imitierten Benutzer gesendet wird, den Sie angegeben haben|Nachricht isolieren|Nachricht isolieren||
-|Wenn e-Mail von einer von Ihnen angegebenen imitierten Domäne gesendet wird|Nachricht isolieren|Nachricht isolieren||
-|Tipp für imitierte Benutzer anzeigen|Ein|Ein||
-|Tipp für imitierte Domänen anzeigen|Ein|Ein||
-|Tipp für ungewöhnliche Zeichen anzeigen|Ein|Ein||
-|Aktivieren der Post Fach Intelligenz|Ein|Ein||
-|Aktivieren des Post Fach informationsbasierten Identitätswechsel Schutzes|Ein|Ein||
-|Wenn e-Mails von einem imitierten Benutzer gesendet werden, der durch Post Fach Intelligenz geschützt ist|Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern|Nachricht isolieren||
-|(Richtlinie zum Bearbeiten von Identitätswechsel) Hinzufügen von vertrauenswürdigen Absendern und Domänen|Keine|Keine|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Benutzer oder Domänen hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing gekennzeichnet werden.|
+#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Identitätswechseleinstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
-|Spoof Security Feature Name|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Aktivieren des Schutzes gegen Spoofing|Ein|Ein||
-|Aktivieren eines nicht authentifizierten Absenders (Tagging)|Ein|Ein||
-|Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen|Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern|Nachricht isolieren||
-|EnableSuspiciousSafetyTip|False|Wahr|Diese Einstellung ist nur in PowerShell verfügbar.|
-|TreatSoftPassAsAuthenticated|Wahr|False|Diese Einstellung ist nur in PowerShell verfügbar.|
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Ein <br/><br/> `$true` <br/><br/> \<Liste der Benutzer\>|Ein <br/><br/> `$true` <br/><br/> \<Liste der Benutzer\>|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Benutzer in Schlüsselrollen hinzuzufügen. Intern sind dies möglicherweise Ihr CEO, CFO und andere Führungskräfte. Diese können extern auch Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
+|Geschützte Domänen: **Automatisches einschließen der Domänen, die ich besitze** <br/><br/> _EnableOrganizationDomainsProtection_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|Geschützte Domänen: **benutzerdefinierte Domänen einschließen** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Ein <br/><br/> `$true` <br/><br/> \<Liste der Domänen\>|Ein <br/><br/> `$true` <br/><br/> \<Liste der Domänen\>|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Domänen hinzuzufügen, mit denen Sie häufig interagieren, die Sie nicht besitzen.|
+|Geschützte Benutzer: **Wenn e-Mail von einem imitierten Benutzer gesendet wird** <br/><br/> _TargetedUserProtectionAction_|**Nachricht isolieren** <br/><br/> `Quarantine`|**Nachricht isolieren** <br/><br/> `Quarantine`||
+|Geschützte Domänen: **Wenn e-Mails von einer imitierten Domäne gesendet werden** <br/><br/> _TargetedUserProtectionAction_|**Nachricht isolieren** <br/><br/> `Quarantine`|**Nachricht isolieren** <br/><br/> `Quarantine`||
+|**Tipp für imitierte Benutzer anzeigen** <br/><br/> _EnableSimilarUsersSafetyTips_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Tipp für imitierte Domänen anzeigen** <br/><br/> _EnableSimilarDomainsSafetyTips_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Tipp für ungewöhnliche Zeichen anzeigen** <br/><br/> _EnableUnusualCharactersSafetyTips_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Mailbox Intelligence aktivieren?** <br/><br/> _EnableMailboxIntelligence_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Aktivieren des Post Fach informationsbasierten Identitätswechsel Schutzes?** <br/><br/> _EnableMailboxIntelligenceProtection_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Wenn e-Mails von einem imitierten Benutzer gesendet werden, der durch Post Fach Intelligenz geschützt ist** <br/><br/> _MailboxIntelligenceProtectionAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`||
+|**Trusted senders** <br/><br/> _ExcludedSenders_|Keine|Keine|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Benutzer hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing gekennzeichnet werden.|
+|**Vertrauenswürdige Domänen** <br/><br/> _ExcludedDomains_|Keine|Keine|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Domänen hinzuzufügen, die aufgrund eines Identitätswechsels und nicht anderer Filter fälschlicherweise als Phishing gekennzeichnet werden.|
+|
 
+#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>Spoofeinstellungen in ATP-Anti-Phishing-Richtlinien
 
-|Name der erweiterten Einstellungen-Sicherheitsfeature|Standard|Strict|Kommentar|
-|---------|---------|---------|---------|
-|Erweiterte Phishing-Schwellenwerte|2-aggressiv|3-aggressiver||
+Beachten Sie, dass es sich dabei um dieselben Einstellungen handelt, die in den [Antispameinstellungen in EoP](#eop-anti-spam-policy-settings)zur Verfügung stehen.
+
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Aktivieren des Schutzes gegen Spoofing** <br/><br/> _EnableAntispoofEnforcement_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
+|**Nicht authentifizierten Absender aktivieren** <br/><br/> _EnableUnauthenticatedSender_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Wenn e-Mails von Benutzern gesendet werden, die Ihre Domäne nicht spoofen dürfen** <br/><br/> _AuthenticationFailAction_|**Nachricht in die Junk-e-Mail-Ordner der Empfänger verlagern** <br/><br/> `MoveToJmf`|**Nachricht isolieren** <br/><br/> `Quarantine`|Dies gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|
+
+#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Erweiterte Einstellungen in ATP-Richtlinien für Anti-Phishing
+
+|||||
+|---|---|---|---|
+|**Name des Sicherheitsfeatures**|**Standard**|**Strict**|**Kommentar**|
+|**Erweiterte Phishing-Schwellenwerte** <br/><br/> _PhishThresholdLevel_|**2-aggressiv** <br/><br/> `2`|**3-aggressiver** <br/><br/> `3`||
+|
 
 ### <a name="safe-links-settings"></a>Einstellungen für sichere Links
 

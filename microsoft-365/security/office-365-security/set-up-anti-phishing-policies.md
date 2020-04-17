@@ -1,156 +1,198 @@
 ---
-title: Einrichten von Office 365 ATP-Richtlinien für die Anti-Phishing
+title: Antiphishing-Richtlinien
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 08/29/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: Anti-Phishing-Schutz mit umfassendem Schutz als Bestandteil von Office 365 Advanced Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Schutz helfen, Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen zu schützen. und andere Phishing-Angriffe.
-ms.openlocfilehash: cc9c8ec0aa819696f3c53cff690be40ae82009fb
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+description: Erfahren Sie mehr über die grundlegende Anti-Phishing-Richtlinie in Exchange Online Protection (EoP) und die Advanced ATP Anti-Phishing Policies in Office 365 Advanced Threat Protection.
+ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604072"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537473"
 ---
-# <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing
+# <a name="anti-phishing-policies-in-office-365"></a>Anti-Phishing-Richtlinien in Office 365
 
-Der [ATP-Schutz gegen Phishing](atp-anti-phishing.md), ein Teil [Office 365 Advanced Threat Protection](office-365-atp.md), kann zum Schutz Ihrer Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen und anderen Phishing-Angriffen beitragen. Wenn Sie ein Office 365 Enterprise globaler oder Sicherheitsadministrator sind, können Sie Richtlinien für die ATP-Anti-Phishing einrichten.
+Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing sind in Office 365 Organisationen mit Exchange Online Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (ATP)-Organisationen verfügbar.
 
-Phishing-Angriffe werden in einer Vielzahl von Formen von Rohstoff basierten Angriffen bis hin zu gezieltem Speer-Phishing oder Walfang eingesetzt. Mit der wachsenden Komplexität ist es für selbst geschulte Augen schwierig, einige dieser ausgeklügelten Angriffe zu identifizieren. Glücklicherweise kann Office 365 Advanced Threat Protection hilfreich sein. Sie können eine ATP-Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
+
+- Office 365 Enterprise E5, Office 365 Education A5, etc.
+- [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
+- [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
+- [Office 365 ATP als Add-on](https://products.office.com/exchange/advance-threat-protection)
+
+Zu den ATP-Richtlinien für Anti-Phishing gehören eine integrierte standardmäßige Anti-Phishing-Richtlinie, und Sie können zusätzliche benutzerdefinierte ATP-Richtlinien für die Anti-Phishing erstellen.
+
+Andere Office 365 Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügen über eine integrierte Standard-Anti-Phishing-Richtlinie, aber Sie können keine weiteren Richtlinien erstellen. Nur Organisationen mit Exchange Online Postfächern können Ihre standardmäßige Anti-Phishing-Richtlinie ändern.
+
+In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien beschrieben:
+
+||||
+|---|:---:|:---:|
+|**Feature**|**Antiphishing-Richtlinien**|**Richtlinien für ATP-Anti-Phishing**|
+|Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Erstellen benutzerdefinierter Richtlinien||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Richtlinieneinstellungen<sup>\*</sup>||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Einstellungen für Identitätswechsel||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Spoof-Einstellungen|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Erweiterte Phishing-Schwellenwerte||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|
+
+<sup>\*</sup>In der Standardrichtlinie sind der Richtlinienname und die Beschreibung schreibgeschützt (die Beschreibung ist leer), und Sie können nicht angeben, für wen die Richtlinie gilt (die Standardrichtlinie gilt für alle Empfänger).
+
+Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den folgenden Themen:
+
+- [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md)
+
+- [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Office 365](configure-atp-anti-phishing-policies.md)
+
+Im weiteren Verlauf dieses Themas werden die Einstellungen beschrieben, die in EoP und ATP-Richtlinien für die Anti-Phishing verfügbar sind.
+
+## <a name="spoof-settings"></a>Spoof-Einstellungen
+
+Spoofing ist, wenn die von-Adresse in einer e-Mail-Nachricht (die Absenderadresse, die in e-Mail-Clients angezeigt wird) nicht mit der Domäne der e-Mail-Quelle übereinstimmt. Weitere Informationen zur Spoofing finden Sie unter [Anti-Spoofing Protection in Office 365](anti-spoofing-protection.md).
+
+Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien zur Verfügung:
+
+- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+  > [!NOTE]
+  > Spoofeinstellungen sind standardmäßig in der standardmäßigen Anti-Phishing-Richtlinie in EoP, der standardmäßigen ATP-AntiPhishing-Richtlinie und in neuen benutzerdefinierten ATP-AntiPhishing-Richtlinien aktiviert, die Sie erstellen. <br/><br/> Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Office 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+  Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
+
+  - **Nachricht in den Junk-e-Mail-Ordner umlegen**: Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+  - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
+
+    - [Quarantäne in Office 365](quarantine-email-messages.md)
+    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md)
+    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+
+- Nicht **authentifizierter Absender**: aktiviert oder deaktiviert die Unbekannte Absender Identifikation in Outlook. Insbesondere gilt:
+
+  - Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die Nachricht keine SPF-oder DKIM-Prüfungen übergibt **und** die Nachricht nicht DMARC oder die [kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)übergibt.
+
+  - Das Via-Tag (Chris@contoso.com <u>über</u> Michelle@fabrikam.com) wird hinzugefügt, wenn die Domäne in der von-Adresse (der Absender der Nachricht, der in e-Mail-Clients angezeigt wird) sich von der Domäne in der DKIM-Signatur oder der **e-Mail-** Adresse unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Übersicht über Standards für e-Mail-Nachrichten](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+  Um zu verhindern, dass diese Bezeichner Nachrichten von bestimmten Absendern hinzugefügt werden, stehen Ihnen die folgenden Optionen zur Verfügung:
+
+  - Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+  - [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
+  
+    - Für das Fragezeichen im Foto des Absenders sind SPF oder DKIM die wichtigsten.
+    - Bestätigen Sie für das via-Tag die Domäne in der DKIM-Signatur oder die **e-Mail-** Adresse Übereinstimmungen (oder ist eine Unterdomäne von) der Domäne in der von-Adresse.
+
+  Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachrichten in Outlook.com und Outlook im Internet](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+
+## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusive Einstellungen in ATP-Richtlinien zum Schutz vor Phishing
+
+In diesem Abschnitt werden die Richtlinieneinstellungen beschrieben, die nur in Richtlinien für ATP-AntiPhishing verfügbar sind.
 
 > [!NOTE]
-> ATP-Anti-Phishing ist nur in Advanced Threat Protection (ATP) verfügbar. ATP ist in Abonnements enthalten, wie [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. Wenn Ihre Organisation über ein Office 365es Abonnement verfügt, das nicht Office 365 ATP umfasst, können Sie ATP als Add-on möglicherweise erwerben. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und-Preise](https://products.office.com/exchange/advance-threat-protection) und der [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Stellen Sie sicher, dass Ihre Organisation die neueste Version von Office 365 ProPlus unter Windows verwendet, um den Vorteil des ATP-Anti-Phishing-Schutzes vollständig zu nutzen.
+> Standardmäßig sind die exklusiven ATP-Einstellungen nicht selbst in der Standardrichtlinie konfiguriert oder aktiviert. Um diese Funktionen nutzen zu können, müssen Sie Sie in der standardmäßigen ATP-AntiPhishing-Richtlinie aktivieren und konfigurieren oder benutzerdefinierte ATP-Richtlinien für die Phishing-Abwehr erstellen und konfigurieren.
 
-Eine Anti-Phishing-Richtlinie steht auch für Office 365 Exchange Online Schutz zur Verfügung, mit einem begrenzten Schutz vor Spoofing, der vor Authentifizierungs basierten und Täuschungs basierten Angriffen geschützt werden soll.
+### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Richtlinieneinstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
-Was ist zu tun:
+Die folgenden Richtlinieneinstellungen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar:
 
-1. Überprüfen Sie die Voraussetzungen.
+- **Name**: Sie können die standardmäßige Anti-Phishing-Richtlinie nicht umbenennen, aber Sie können benutzerdefinierte Richtlinien benennen und umbenennen, die Sie erstellen.
 
-2. Erfahren Sie mehr über Ihre Anti-Phishing-und ATP-AntiPhishing-Richtlinienoptionen.
+- **Beschreibung** Sie können keine Beschreibung zur Standard-Anti-Phishing-Richtlinie hinzufügen, aber Sie können die Beschreibung für benutzerdefinierte Richtlinien, die Sie erstellen, hinzufügen und ändern.
 
-3. Richten Sie eine Anti-Phishing-Richtlinie oder eine ATP-Anti-Phishing-Richtlinie ein.
+- **Angewendet auf**: identifiziert interne Empfänger, für die die ATP-AntiPhishing-Richtlinie gilt. Dieser Wert ist in benutzerdefinierten Richtlinien erforderlich und in der Standardrichtlinie nicht verfügbar (die Standardrichtlinie gilt für alle Empfänger).
 
-> [!IMPORTANT]
-> Informationen dazu, wie mehrere Technologien angewendet werden, finden Sie unter [welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungs Scans in Ihren e-Mails ausgeführt](how-policies-and-protections-are-combined.md)werden.
+    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
-## <a name="review-the-prerequisites"></a>Überprüfen der Voraussetzungen
+  - **Empfänger ist**: ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
+  - **Der Empfänger ist Mitglied von**: eine oder mehrere Gruppen in Ihrer Organisation.
+  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Office 365.
 
-- Um ATP-Richtlinien zu definieren oder zu bearbeiten, muss Ihnen eine entsprechende Rolle zugewiesen sein. In der folgenden Tabelle werden einige Beispiele beschrieben:
+  - **Ausnahme**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
 
-  |Rolle|Wo/wie zugewiesen|
-  |---------|---------|
-  |Globaler Office 365-Administrator|Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-  |Sicherheitsadministrator|Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online-Organisationsverwaltung|Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+    - **Empfänger lautet**
+    - **Der Empfänger ist Mitglied von**
+    - **Die Empfängerdomäne ist**
 
-  Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Identitätswechseleinstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
-- Sie werden wahrscheinlich mehrere Anti-Phishing-Richtlinien für Ihre Organisation einrichten. Office 365 erzwingt diese Richtlinien in der Reihenfolge, in der Sie auf der **Seite "AntiPhishing"** und " **ATP Anti-Phishing** " im &amp; Security Compliance Center aufgeführt sind. Nachdem Sie Ihre [Richtlinienoptionen](#learn-about-atp-anti-phishing-policy-options)überprüft haben, müssen Sie sich einige Zeit nehmen, um festzustellen, wie viele Richtlinien Sie benötigen und welche Priorität Sie haben.
+Identitätswechsel: der Absender oder die e-Mail-Domäne des Absenders in einer Nachricht ähnelt einem tatsächlichen Absender oder einer echten Domäne:
 
-- Planen Sie etwa 5-15 Minuten für die Einrichtung ihrer ersten Anti-Phishing-Richtlinie.
+- Ein Beispiel für einen Identitätswechsel der Domäne contoso.com ist ćóntoso.com.
 
-- Erlauben Sie bis zu 30 Minuten, bis Ihre neue oder aktualisierte Richtlinie auf alle Office 365-Rechenzentren verteilt ist.
+- Ein Beispiel für den Identitätswechsel des Benutzers Michelle@contoso.com ist Michele@contoso.com.
 
-## <a name="set-up-an-anti-phishing-or-atp-anti-phishing-policy"></a>Einrichten einer Anti-Phishing-oder ATP-Anti-Phishing-Richtlinie
+Eine imitierte Domäne wird andernfalls möglicherweise als rechtmäßig (registrierte Domäne, konfigurierte e-Mail-Authentifizierungs Einträge usw.) betrachtet, mit dem Unterschied, dass die Empfänger betrogen werden sollen.
 
-Jede Organisation in Office 365 verfügt über eine standardmäßige Anti-Phishing-Richtlinie, die für alle Benutzer gilt. Sie können mehrere benutzerdefinierte Anti-Phishing-Richtlinien erstellen, die Sie bestimmten Benutzern, Gruppen oder Domänen innerhalb Ihrer Organisation zur Verfügung stellen können. Die von Ihnen erstellten benutzerdefinierten Richtlinien übernehmen Vorrang vor der Standardrichtlinie. Sie können Anti-Phishing-Richtlinien im Office 365 Security &amp; Compliance Center hinzufügen, bearbeiten und löschen.
+Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar:
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+- **Zu schützende Benutzer**: verhindert, dass die Identität der angegebenen internen oder externen Benutzer imitiert wird. Beispiel: Führungskräfte (intern) und Verwaltungsratsmitglieder (extern). Sie können bis zu 60 interne und externe Adressen hinzufügen. Diese Liste geschützter Benutzer unterscheidet sich von der Liste der Empfänger, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
 
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+  Sie geben beispielsweise Felipe Apodaca (felipea@contoso.com) als geschützten Benutzer in einer Richtlinie an, die für die Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der die Identität, in der Felipe Apodaca imitiert wird, von der Richtlinie verarbeitet wird (die Aktion, die Sie für imitierte Benutzer konfigurieren).
 
-3. Wählen Sie auf der Seite **Richtlinie** die Option **Anti-Phishing** oder **ATP Anti-Phishing**aus.
+- **Zu schützende Domänen**: verhindern, dass die Identität der angegebenen Domänen imitiert wird. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste geschützter Domänen unterscheidet sich von der Liste der Domänen, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
 
-4. Führen Sie auf der Seite **Anti-Phishing** oder **ATP Anti-Phishing** einen der folgenden Schritte aus:
+  Beispielsweise geben Sie tailspintoys.com als geschützte Domäne in einer Richtlinie an, die für Mitglieder der Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der die Identität des Where tailspintoys.com von der Richtlinie verarbeitet wird (die Aktion, die Sie für imitierte Domänen konfigurieren).
 
-   - Zum Hinzufügen einer neuen Richtlinie wählen Sie **+ Erstellen**aus.
+- **Aktionen für geschützte Benutzer oder Domänen**: Wählen Sie die Aktion aus, die für eingehende Nachrichten ausgeführt werden soll, die Identitätswechsel Versuche für geschützte Benutzer und geschützte Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel von geschützten Benutzern im Vergleich zum Identitätswechsel geschützter Domänen angeben:
 
-   - Zum Bearbeiten einer vorhandenen Richtlinie wählen Sie den Richtliniennamen aus der Liste aus, die auf der Seite **Anti-Phishing** angezeigt wird. (Alternativ können Sie auch die **Standardrichtlinie** oberhalb der Liste auswählen.) Klicken Sie auf der angezeigten Seite auf **Richtlinie bearbeiten**.
+  - **Keine Aktion anwenden**
 
-5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](#learn-about-atp-anti-phishing-policy-options) .
+  - **Nachricht an andere e-Mail-Adressen umleiten**: sendet die Nachricht an die angegebenen Empfänger anstelle der vorgesehenen Empfänger.
 
-6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** (oder **Speichern**) aus.
+  - **Nachricht in Junk-e-Mail-Ordner verschieben**: die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-## <a name="learn-about-atp-anti-phishing-policy-options"></a>Informationen zu den Optionen für die ATP-Anti-Phishing-Richtlinie
+    - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
 
-Wenn Sie Ihre ATP-Anti-Phishing-Richtlinien einrichten oder bearbeiten, können Sie aus mehreren Optionen auswählen, die den anspruchsvollsten und umfassendsten Schutz bieten, wie in der folgenden Tabelle beschrieben:
+    - [Quarantäne in Office 365](quarantine-email-messages.md)
+    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md)
+    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md)
 
-|**Diese Einstellung**|**Funktion**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
-|:-----|:-----|:-----|
-|**Zu schützende Benutzer hinzufügen**|Definiert, welche e-Mail-Adressen durch die Richtlinie geschützt werden. Sie können bis zu 60 interne und externe Adressen hinzufügen, die Sie vor dem Identitätswechsel schützen möchten.|Wenn Sie sicherstellen möchten, dass e-Mails von außerhalb Ihrer Organisation kein Identitätswechsel eines Benutzers in der Liste der Benutzer sind, die Sie schützen. Beispiele für Benutzer, die Sie möglicherweise schützen möchten, sind hochrangige Führungskräfte, Geschäftsbesitzer, externe Verwaltungsratsmitglieder usw.  <br/> Diese Liste geschützter Benutzer unterscheidet sich von der Liste der Personen, für die die Richtlinie gilt, oder besser gesagt, für die die Richtlinie erzwungen wird. Sie definieren die Liste "gilt für" im Abschnitt " **angewendet** am" der Richtlinienoptionen.  <br/> Wenn Sie beispielsweise als zu `Mary Smith <marys@contoso.com>` schützender Benutzer hinzufügen, wenden Sie die Richtlinie auf die Gruppe "alle Benutzer" an. Dadurch wird sichergestellt, dass eine e-Mail-Nachricht, die dem Identitätswechsel von "Mary Smith" erschien, an einen Benutzer in der Gruppe "alle Benutzer" gesendet wurde, von der Richtlinie verarbeitet würde.|
-|**Zu schützende Domänen hinzufügen**|Ermöglicht Ihnen die Auswahl der Domänen, die vor dem Identitätswechsel geschützt werden sollen. Sie können angeben, dass die Richtlinie alle benutzerdefinierten Domänen enthält, eine durch trennzeichengetrennte Liste von Domänen oder eine Kombination aus beiden. Wenn Sie **automatisch Domänen einschließen, die ich besitze**, und Sie später eine Domäne zu Ihrer Office 365 Organisation hinzufügen, wird diese Anti-Phishing-Richtlinie für die neue Domäne eingerichtet.|Wenn Sie sicherstellen möchten, dass e-Mails von außerhalb Ihrer Organisation nicht als Identitätswechsel einer der Domänen definiert sind, die in der Liste der überprüften Domänen oder einer Partnerdomäne definiert sind.|
-|**Aktionen auswählen**|Wählen Sie die auszuführende Aktion aus, wenn Office 365 einen Identitätswechsel Versuch für die Benutzer und Domänen erkennt, die Sie der Richtlinie hinzugefügt haben. Sie können unterschiedliche Aktionen für Benutzer und Domänen in derselben Anti-Phishing-Richtlinie auswählen. Diese Aktionen gelten für alle eingehenden e-Mails, die von Office 365 als Identität eines Benutzerkontos oder einer Domäne identifiziert wurden, die unter dem Schutz dieser Anti-Phishing-Richtlinie steht.  <br/> **Quarantäne Nachricht** E-Mail wird an Office 365 Quarantäne gesendet. Wenn Sie diese Option auswählen, wird die e-Mail nicht an den ursprünglichen Empfänger gesendet.  <br/> **Weiterleiten von Nachrichten an eine andere e-Mail-Adresse** E-Mail wird an die von Ihnen angegebene e-Mail-Adresse gesendet. Sie können mehrere e-Mail-Adressen angeben. Wenn Sie diese Option auswählen, wird die e-Mail nicht an den ursprünglichen Empfänger gesendet.  <br/> **Nachricht in den Junk-e-Mail-Ordner des Empfängers verlagern** E-Mail wird an den Junk-e-Mail-Ordner des Empfängers gesendet. Wenn Sie diese Option auswählen, wird die e-Mail-Nachricht weiterhin an den ursprünglichen Empfänger gesendet, aber nicht im Posteingang des Empfängers gespeichert.  <br/> **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile** E-Mail wird an den ursprünglichen Empfänger zugestellt. Darüber hinaus werden die von Ihnen identifizierten Benutzer der Bcc-Zeile der Nachricht hinzugefügt, bevor Sie zugestellt wird. Wenn Sie diese Option auswählen, wird die e-Mail-Nachricht weiterhin an den Posteingang des ursprünglichen Empfängers gesendet.  <br/> Keine **Aktion anwenden** E-Mail wird an den Posteingang des ursprünglichen Empfängers zugestellt. Für die e-Mail-Nachricht werden keine weiteren Aktionen ausgeführt.  <br/> **Aktivieren von Tipps zum Schutz vor Phishing** Aktiviert Anti-Phishing-Sicherheitstipps in e-Mails.|Wenn Sie eine Aktion für Nachrichten durchführen möchten, die von Office 365 als Identitätswechsel eines Benutzers oder einer Domäne gemäß der Definition in der Richtlinie festgelegt wurde.|
-|**Aktivieren der Post Fach Intelligenz**|Aktiviert oder deaktiviert die Post Fach Intelligenz für diese Richtlinie. Sie können die Post Fach Intelligenz nur für cloudbasierten Konten aktivieren, also für Konten, deren Postfach vollständig in Office 365 gehostet wird.| Dieses Feature verwendet Maschinelles Lernen, um die e-Mail-Muster eines Benutzers mit seinen Kontakten zu ermitteln. Mit diesen Informationen kann die AI besser zwischen echten und Phishing-e-Mails unterscheiden.|
-|**Aktivieren des Post Fach informationsbasierten Identitätswechsel Schutzes**|Aktiviert oder deaktiviert die Post Fach Intelligenz für den Identitätswechsel Schutz für diese Richtlinie. Der wichtigste Aspekt hierbei ist die Steuerung des Identitätswechsels für ein bestimmtes Postfach.|Wenn Sie die Ergebnisse des Identitätswechsels für Benutzer basierend auf der individuellen Absender Zuordnung jedes Benutzers verbessern möchten. Diese Intelligenz ermöglicht Office 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn der Benutzeridentitätswechsel basierend auf der Post Fach Intelligenz erkannt wird, können Sie definieren, welche Aktion für die Nachricht ausgeführt werden soll.|
-|**Vertrauenswürdige Absender und Domänen hinzufügen**|Definiert e-Mail-Adressen und Domänen, die durch diese Richtlinie nicht als Identitätswechsel betrachtet werden. Nachrichten von den Absender-E-Mail-Adressen und Domänen, die Sie als vertrauenswürdige Absender und Domänen hinzufügen, werden nicht als auf einem Identitätswechsel basierte Angriffe eingestuft. Daher werden die Aktionen und Einstellungen in dieser Richtlinie nicht auf Nachrichten von diesen Absendern und Domänen angewendet.  <br/><br/>Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.|Wenn Benutzer mit Domänen oder Benutzern interagieren, die einen Identitätswechsel auslösen, jedoch als sicher eingestuft werden. Wenn ein Partner beispielsweise den gleichen/ähnlichen Anzeigenamen oder Domänennamen hat wie ein in der Liste definierter Benutzer.|
-|**Angewendet auf**|Definiert die Empfänger, deren eingehende e-Mail-Nachrichten den Regeln der Richtlinie unterworfen werden. Sie können Bedingungen und Ausnahmen für die Empfänger erstellen, die der Richtlinie zugeordnet sind.  <br/> Sie können beispielsweise eine globale Richtlinie für Ihre Organisation erstellen, indem Sie die Regel auf alle Empfänger in Ihrer Domäne anwenden.  <br/> Sie können auch Ausnahmeregeln erstellen, beispielsweise eine Regel, die keine e-Mail-Nachrichten für eine bestimmte Empfängergruppe scannt.|Jede Richtlinie muss einer Reihe von Benutzern zugeordnet sein, beispielsweise Benutzern in einer bestimmten Gruppe oder Domäne.|
-|**Erweiterte Phishing-Schwellenwerte**|Definiert die Ebene der Einstellungen für die Behandlung von Phishing-Nachrichten.  <br/> **Standard**: e-Mail, die als Phishing vermutet wird, wird standardmäßig behandelt.  <br/> **Aggressiv**: das System verarbeitet e-Mails, die als Phishing vermutet werden, mit einem hohen Maß an Zuverlässigkeit, genauso wie die, die mit einem sehr hohen Maß an Vertrauen verdächtigt werden.  <br/> **Aggressiver**: das System verarbeitet e-Mails, die als Phishing vermutet werden, mit mittlerem oder hohem Vertrauensgrad, genauso wie die, die mit einem sehr hohen Maß an Vertrauen verdächtigt werden.  <br/> **Am aggressivsten**: das System verarbeitet e-Mails, die als Phishing vermutet werden, mit niedrigem, mittlerem oder hohem Vertrauensgrad, genauso wie die, die mit einem sehr hohen Maß an Vertrauen verdächtigt werden.|Wenn Sie bei der Behandlung von potenziell Phishing-Nachrichten in Office 365 aggressiver vorgehen möchten. Beispielsweise werden Nachrichten mit einer sehr hohen Wahrscheinlichkeit, dass es sich um Phishing handelt, die aggressivsten Aktionen durchgeführt, während Nachrichten mit niedriger Wahrscheinlichkeit weniger aggressive Aktionen für Sie durchgeführt haben. Diese Einstellung wirkt sich auch auf andere Teile des Filtersystems aus, die Signale kombinieren. Dies bedeutet nicht zwangsläufig, dass unterschiedliche Aktionen implementiert werden.  Im wesentlichen legen Sie die Wahrscheinlichkeit für die Phishing-e-Mail fest, um die (gleiche) festgelegte Aktion zu bestimmen. Die Wahrscheinlichkeit, dass gute Nachrichten verschoben werden, steigt, wenn die Einstellungsstufe zunimmt.|
+  - **Übermitteln Sie die Nachricht, und fügen Sie der Zeile Bcc weitere Adressen hinzu**: senden Sie die Nachricht an die beabsichtigten Empfänger, und übermitteln Sie die Nachricht automatisch an die angegebenen Empfänger.
 
-## <a name="learn-about-anti-phishing-policy-options"></a>Informationen zu Optionen für Anti-Phishing-Richtlinien
+  - **Löschen Sie die Nachricht, bevor Sie zugestellt**wird: Löscht die gesamte Nachricht, einschließlich aller Anlagen, automatisch.
 
-Wenn Sie Ihr Anti-Phishing-Feature einrichten oder bearbeiten, können Sie aus mehreren Optionen auswählen, wie in der folgenden Tabelle beschrieben:
+- **Sicherheitstipps**: aktiviert oder deaktiviert die folgenden Sicherheitstipps für Identitätswechsel, die Nachrichten angezeigt werden, bei denen die Identitätswechsel Prüfung fehlschlägt:
 
-|**Diese Einstellung**|**Funktion**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
-|:-----|:-----|:-----|
-|**Angewendet auf**|Definiert die Empfänger, deren eingehende e-Mail-Nachrichten den Regeln der Richtlinie unterworfen werden. Sie können Bedingungen und Ausnahmen für die Empfänger erstellen, die der Richtlinie zugeordnet sind.  <br/> Sie können beispielsweise eine globale Richtlinie für Ihre Organisation erstellen, indem Sie die Regel auf alle Empfänger in Ihrer Domäne anwenden.  <br/> Sie können auch Ausnahmeregeln erstellen, beispielsweise eine Regel, die keine e-Mail-Nachrichten für eine bestimmte Empfängergruppe scannt.|Jede Richtlinie muss einer Reihe von Benutzern zugeordnet sein, beispielsweise Benutzern in einer bestimmten Gruppe oder Domäne.|
-|**Aktionen auswählen**|Wählen Sie die Aktion aus, die ausgeführt werden soll, wenn Office 365 einen organisationsinternen oder einen externen org-Spoofing-Versuch für Ihre Benutzer erkennt. Diese Aktionen gelten für alle eingehenden e-Mails, die von Office 365 als Spoofing-Versuch für Benutzer identifiziert wurden, die unter dem Schutz dieser Anti-Phishing-Richtlinie stehen.  <br/> **Quarantäne Nachricht** E-Mail wird an Office 365 Quarantäne gesendet. Wenn Sie diese Option auswählen, wird die e-Mail nicht an den ursprünglichen Empfänger gesendet.  <br/> **Nachricht in den Junk-e-Mail-Ordner des Empfängers verlagern** E-Mail wird an den Junk-e-Mail-Ordner des Empfängers gesendet. Wenn Sie diese Option auswählen, wird die e-Mail-Nachricht weiterhin an den ursprünglichen Empfänger gesendet, aber nicht im Posteingang des Empfängers gespeichert.  <br/> Keine **Aktion anwenden** E-Mail wird an den Posteingang des ursprünglichen Empfängers zugestellt. Für die e-Mail-Nachricht werden keine weiteren Aktionen ausgeführt.|Wenn Sie eine Aktion für Nachrichten durchführen möchten, die von Office 365 als Spoofing-Versuch für interne oder externe Domänen gemäß der Definition in der Richtlinie festgelegt wurde.|
+  - **Imitierte Benutzer**: die Absenderadresse enthält einen geschützten Benutzer.
+  - **Imitierte Domänen**: die Absenderadresse enthält eine geschützte Domäne.
+  - **Ungewöhnliche Zeichen**: die from-Adresse enthält ungewöhnliche Zeichensätze (beispielsweise mathematische Symbole und Text oder eine Mischung aus Groß-und Kleinbuchstaben) in einem geschützten Absender oder in einer Domäne.
 
-Nachdem Ihre Organisation Anti-Phishing-Richtlinien oder ATP-AntiPhishing-Richtlinien eingerichtet hat, können Sie sehen, wie der Dienst funktioniert, indem Sie [Berichte für Advanced Threat Protection anzeigen](view-reports-for-atp.md).
+- **Post Fach Intelligenz**: aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
 
-## <a name="example-anti-phishing-policy-to-protect-a-user-and-a-domain"></a>Beispiel: Anti-Phishing-Richtlinie zum Schutz von Benutzern und Domänen
+- **Post Fachnachrichten basierter Identitätswechsel Schutz**: aktiviert oder deaktiviert erweiterte Identitätswechsel Ergebnisse basierend auf den einzelnen Absender Karten der einzelnen Benutzer. Diese Intelligenz ermöglicht Office 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn ein Benutzeridentitätswechsel erkannt wird, können Sie eine bestimmte Aktion definieren, die für die Nachricht ausgeführt werden soll:
 
-In diesem Beispiel wird eine Richtlinie mit dem Namen "Domäne und CEO" eingerichtet, die sowohl Benutzer-als auch Domänen Schutz vor Identitätswechsel bereitstellt und dann die Richtlinie auf alle `contoso.com`e-Mails anwendet, die von Benutzern innerhalb der Domäne empfangen werden. Der Sicherheitsadministrator hat festgelegt, dass die Richtlinie diesen Geschäftsanforderungen entsprechen muss:
+  - **Keine Aktion anwenden**
+  - **Weiterleiten von Nachrichten an andere e-Mail-Adressen**
+  - **Nachricht in Junk-E-Mail-Ordner verschieben**
+  - **Nachricht isolieren**
+  - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
+  - **Löschen der Nachricht vor der Zustellung**
 
-- Die Richtlinie muss den Schutz des E-Mail-Kontos und der gesamten Domain des CEO gewährleisten.
+- **Vertrauenswürdige Absender und Domänen**: Ausnahmen für die Schutzeinstellungen für den Identitätswechsel. Nachrichten von den angegebenen Absendern und Absenderdomänen werden nie als Identitätswechsel basierte Angriffe durch die Richtlinie klassifiziert. Mit anderen Worten: die Aktion für geschützte Absender, geschützte Domänen oder den Post Fachnachrichten Schutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
 
-- Nachrichten, die als Imitationsversuche gegen das Benutzerkonto des CEO bestimmt sind, müssen an die E-Mail-Adresse des Sicherheitsadministrators weitergeleitet werden.
+### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Erweiterte Phishing-Schwellenwerte in ATP-Richtlinien zum Schutz vor Phishing
 
-- Nachrichten, die als Imitationsversuche gegen die Domäne bestimmt sind, sind weniger dringend und sollten für eine spätere Überprüfung unter Quarantäne gestellt werden.
+Die folgenden erweiterten Phishing-Schwellenwerte sind nur in Richtlinien für ATP-AntiPhishing verfügbar, um anzugeben, wie erkannte Phishing-Nachrichten behandelt werden sollen:
 
-Der Sicherheitsadministrator von Contoso kann Werte wie die folgenden verwenden, um eine Anti-Phishing-Richtlinie zu erstellen, die diesen Anforderungen entspricht.
+- **1-Standard**: Dies ist der Standardwert. Der Schweregrad der Aktion, die für die Nachricht ausgeführt wird, hängt vom Grad der Vertrauenswürdigkeit der Nachricht ab (niedrig, Mittel, hoch oder sehr hohes Vertrauen). Nachrichten, die als Phishing mit einem sehr hohen Vertrauensgrad identifiziert werden, weisen beispielsweise die schwersten Aktionen auf, während Nachrichten, die als Phishing mit einem niedrigen Vertrauensgrad identifiziert werden, weniger schwerwiegende Aktionen angewendet haben.
 
-|||
-|:-----|:-----|
-|**Einstellung oder Option**|**Beispiel**|
-|Name|Domäne und CEO|
-|Beschreibung|Stellen Sie sicher, dass der CEO und unsere Domäne nicht imitiert werden.|
-|Zu schützende Benutzer hinzufügen|Mindestens die E-Mail-Adresse des CEO.|
-|Zu schützende Domänen hinzufügen|Die organisatorische Domäne, die das Büro des CEO umfasst.|
-|Aktionen auswählen|Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten** aus, und geben Sie dann die e `securityadmin@contoso.com`-Mail-Adresse des Sicherheitsadministrators ein, beispielsweise.  <br/> Wenn eine E-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Nachricht in Quarantäne verschieben**aus.|
-|Mailbox Intelligence|Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.|
-|Vertrauenswürdige Absender und Domänen hinzufügen|Definieren Sie in diesem Beispiel keine Außerkraftsetzungen.|
-|Angewendet auf|Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise `contoso.com`in der Liste, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.|
+- **2-aggressiv**: Nachrichten, die als Phishing mit einem hohen Maß an Vertrauen identifiziert werden, werden so behandelt, als ob Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert wurden.
 
-## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>Löschen einer Anti-Phishing-oder ATP-Anti-Phishing-Richtlinie
+- **3-aggressiver**: Nachrichten, die als Phishing mit mittlerem oder hohem Vertrauensgrad identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Vertrauen gekennzeichnet.
 
-Sie können benutzerdefinierte Richtlinien löschen, die Sie mithilfe des &amp; Security Compliance Center erstellt haben. Die Standardrichtlinie für Ihre Organisation kann nicht gelöscht werden. Es wird empfohlen, eine &amp; ihrer ATP-Richtlinien über das Security Compliance Center zu überprüfen oder zu bearbeiten.
+- **4-am aggressivsten**: Nachrichten, die als Phishing mit niedrigem, mittlerem oder hohem Maß an Zuverlässigkeit identifiziert werden, werden so behandelt, als wären Sie mit einem sehr hohen Maß an Zuverlässigkeit identifiziert worden.
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
-
-2. Wählen Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
-
-3. Wählen Sie auf der Seite **Richtlinie** die Option **Anti-Phishing** oder **ATP Anti-Phishing**aus.
-
-4. Wählen Sie auf der Seite **Anti-Phishing** oder **ATP Anti-Phishing** den Richtliniennamen aus der Liste aus.
-
-5. Wählen Sie auf der angezeigten Seite die Option **Richtlinie löschen**aus. Lassen Sie bis zu 30 Minuten zu, bis Ihre Änderungen auf alle Office 365-Rechenzentren verteilt sind.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Sobald Ihre Anti-Phishing-Richtlinien vorhanden sind, können Sie sehen, wie ihre Funktionen zum Schutz vor Bedrohungen für Ihre Organisation funktionieren, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
-
-- [Anzeigen von Berichten für Office 365 ATP](view-reports-for-atp.md) oder [Anzeigen von e-Mail-Sicherheitsberichten](view-email-security-reports.md)
-
-- [Verwenden von Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md)
-
-Bleiben Sie auf dem neuesten Stand neuer Features, die zu ATP kommen. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und erfahren Sie mehr über die [neuen Features, die ATP hinzugefügt werden](office-365-atp.md#new-features-in-office-365-atp).
+Die Wahrscheinlichkeit, dass falsch positive Ergebnisse (gute Nachrichten, die als ungültig markiert werden) erhöht wird, wenn Sie diese Einstellung erhöhen. Informationen zu den empfohlenen Einstellungen finden Sie unter [Einstellungen für Anti-Phishing-Richtlinien für Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).

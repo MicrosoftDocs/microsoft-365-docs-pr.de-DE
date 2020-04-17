@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen in Office 365, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212197"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540867"
 ---
 # <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
 
@@ -106,12 +106,24 @@ Ja, aber Sie können eine Office 365 Domäne erst nach 60 Tagen, nachdem Sie Sie
 Beachten Sie, dass eine *Whois* -Abfrage eine Office 365 erworbene Domänenregistrierungsstelle als "Wild West Domains LLC" anzeigen kann. In Bezug auf Ihre Office 365 erworbene Domäne sollten jedoch nur Office 365 kontaktiert werden.
   
 Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalten. Wechseln Sie dann zur Website der anderen Domänenregistrierungsstelle, um die Übertragung Ihres Domänennamens an diese Registrierungsstelle einzurichten.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
-    
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zur Seite mit den **Einstellungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> .
+
+::: moniker-end
     
 2. Wählen Sie auf der Seite **Domänen** die Office 365 Domäne aus, die Sie an eine andere Domänenregistrierungsstelle übertragen möchten **, und wählen Sie dann Domaintransfer** > **enable Domaintransfer**aus.
        
@@ -136,12 +148,24 @@ Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalt
 2. Suchen Sie den Bereich auf der Website der Registrierungsstelle, auf der Sie die Namenservereinträge aktualisieren, und aktualisieren Sie die Namenserver so, dass sie auf den DNS-Host Ihrer Domäne verweisen. (Der DNS-Host ist oft die Domänenregistrierungsstelle.)
     
 3. Klicken Sie auf einen Link, um zum Setup-Assistenten für Domänen zu wechseln:
-    
+
+::: moniker range="o365-worldwide"
+
 4. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
-    
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a>.
+
+::: moniker-end
     
 5. Wählen Sie auf der Seite **Domänen** die Domäne aus, die Sie wechseln möchten, und wählen Sie **DNS-Verwaltung**aus.
     
@@ -153,12 +177,24 @@ Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalt
     
 
 ### <a name="change-dns-management-to-office-365"></a>Wechseln der DNS-Verwaltung zu Office 365
-  
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
-    
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker range="o365-worldwide"
+
+1. Wechseln Sie im Admin Center zur Seite mit den **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> ..
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a>.
+
+::: moniker-end
     
 2. Wählen Sie auf der Seite **Domänen** die Domäne aus, die Sie wechseln möchten, und wählen Sie **DNS-Verwaltung**aus.
     
@@ -221,12 +257,24 @@ Anbieter, die alle erforderlichen DNS-Einträge unterstützen:
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Wie kann ich die Standarddomäne in Office 365 festlegen oder ändern?
 
 Sie müssen über mindestens eine benutzerdefinierte Domäne verfügen, die Sie Office 365 hinzugefügt haben, bevor Sie eine Standarddomäne auswählen können.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
-    
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a> Seite. 
-    
-    Wenn Sie Office 365 betrieben von 21Vianet verwenden, navigieren Sie zu dieser <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a> Seite.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domänen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domänen</a>.
+
+::: moniker-end
     
 2. Wählen Sie auf der Seite **Domänen** die Domäne aus, die Sie als Standard für neue e-Mail-Adressen festlegen möchten. 
     

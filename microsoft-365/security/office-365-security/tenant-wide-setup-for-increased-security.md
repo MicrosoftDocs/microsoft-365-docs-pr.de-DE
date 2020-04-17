@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365 Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081256"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529013"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -39,7 +39,7 @@ Das Microsoft 365 Security Center umfasst Funktionen, die Ihre Umgebung schütze
 ||||
 |---|---|---|
 |**Bereich**|**Enthält eine Standardrichtlinie**|**Empfehlung**|
-|**Anti-Phishing**|Ja| Wenn Sie über eine benutzerdefinierte Domäne verfügen, erstellen Sie eine Anti-Phishing-Richtlinie zum Schutz der e-Mail-Konten Ihrer wertvollsten Benutzer wie Ihres CEO und zum Schutz Ihrer Domäne. Überprüfen [Sie Einrichten einer Anti-Phishing-Richtlinie](set-up-anti-phishing-policies.md) und Erstellen einer Richtlinie mithilfe des Beispiels als Leitfaden: "Beispiel: Anti-Phishing-Richtlinie zum Schutz eines Benutzers und einer Domäne".|
+|**Anti-Phishing**|Ja|Wenn Sie über eine benutzerdefinierte Domäne verfügen, konfigurieren Sie die standardmäßige Anti-Phishing-Richtlinie, um die e-Mail-Konten Ihrer wertvollsten Benutzer wie Ihr CEO zu schützen und Ihre Domäne zu schützen. Überprüfen Sie die [Anti-Phishing-Richtlinien in Office 365](set-up-anti-phishing-policies.md) und lesen Sie [Konfigurieren der Standardrichtlinie für AntiPhishing in EoP](configure-anti-phishing-policies-eop.md) oder [Konfigurieren von ATP-AntiPhishing-Richtlinien in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware-Modul**|Ja| Bearbeiten der Standardrichtlinie: <br/> &ensp;&ensp;* Filter für allgemeine Anlagentypen – auswählen auf <br/><br/> Sie können auch benutzerdefinierte Filterrichtlinien für Schadsoftware erstellen und diese auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anwenden. <br/><br/> Weitere Informationen: <br/> &ensp;&ensp;* [Anti-Malware-Schutz](anti-malware-protection.md) <br/> &ensp;&ensp;* [Konfigurieren von Anti-Malware-Richtlinien](configure-anti-malware-policies.md)|
 |**Sichere Anlagen in ATP**|Nein| Schützen Sie auf der Hauptseite für sichere Anlagen die Dateien in SharePoint, OneDrive und Microsoft Teams, indem Sie dieses Kontrollkästchen aktivieren: <br/> &ensp;&ensp;* Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams <br/><br/> Fügen Sie mit den folgenden Einstellungen eine neue Richtlinie für sichere Anlagen hinzu: <br/> &ensp;&ensp;* Block – blockiert die aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware (Wählen Sie diese Option) <br/> &ensp;&ensp;* Redirect aktivieren – (aktivieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse wie ein Administrator-oder Quarantäne Konto ein) <br/> &ensp;&ensp;* Apply die obige Auswahl, wenn Malware-Scans für Anlagen Timeout oder Fehler auftritt (aktivieren Sie dieses Kontrollkästchen) <br/> &ensp;&ensp;* Angewendet auf – die Empfängerdomäne lautet (Wählen Sie Ihre Domäne aus) <br/><br/>Weitere Informationen: [Einrichten Office 365 Richtlinien für ATP-sichere Anlagen](set-up-atp-safe-attachments-policies.md)|
 |**ATP-sichere Links**|Ja| Fügen Sie diese Einstellung der Standardrichtlinie für die gesamte Organisation hinzu: <br/> &ensp;&ensp;* Verwenden Sie sichere Links in: Office 365 ProPlus, Office für IOS und Android (Wählen Sie diese Option). <br/><br/>Empfohlene Richtlinie für bestimmte Empfänger: <br/> &ensp;&ensp;* URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt (Wählen Sie diese Option aus). <br/> &ensp;&ensp;* Verwenden Sie sichere Anlagen zum Überprüfen herunterladbarer Inhalte (aktivieren Sie dieses Kontrollkästchen). <br/> &ensp;&ensp;* Angewendet auf – die Empfängerdomäne lautet (Wählen Sie Ihre Domäne aus). <br/><br/> Weitere Informationen: [Office 365 ATP-sichere Links](atp-safe-links.md).|
