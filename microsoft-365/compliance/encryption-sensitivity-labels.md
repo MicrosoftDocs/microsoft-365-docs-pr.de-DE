@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 29e9c0ea6e7c63ff8b90057b2c88aafd834ec4dc
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105672"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540832"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -155,12 +155,15 @@ Zuweisen von Berechtigungen:
 Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
 
 - Jeder in Ihrem Unternehmen (alle Mandantenmitglieder). Diese Einstellung schließt Gastkonten aus.
-- Alle authentifizierten Benutzer. Stellen Sie sicher, dass Sie die [Voraussetzungen und Einschränkungen](#requirements-and-limitations-for-add-any-authenticated-users) dieser Einstellung verstehen, bevor Sie sie auswählen.
-- Bestimmte Benutzer oder E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder dynamische Verteilergruppen. 
-- Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
 
-> [!NOTE]
-> Wenn Sie eine Domäne aus einer Organisation angeben, die Azure AD verwendet, können Sie den Zugriff auf diese bestimmte Domäne nicht einschränken. Stattdessen werden alle überprüften Domänen in Azure AD für den Mandanten mit dem von Ihnen angegebenen Domänennamen automatisch einbezogen.
+- Alle authentifizierten Benutzer. Stellen Sie sicher, dass Sie die [Voraussetzungen und Einschränkungen](#requirements-and-limitations-for-add-any-authenticated-users) dieser Einstellung verstehen, bevor Sie sie auswählen.
+
+- Bestimmte Benutzer oder E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder [dynamische Verteilergruppen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD. Sie können keine [dynamische Verteilergruppe aus Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) verwenden, da dieser Gruppentyp nicht mit Azure AD synchronisiert wird und Sie keine Sicherheitsgruppe verwenden können, die nicht E-Mail-aktiviert ist.
+
+- Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
+    
+    > [!NOTE]
+    > Wenn Sie eine Domäne aus einer Organisation angeben, die Azure AD verwendet, können Sie den Zugriff auf diese bestimmte Domäne nicht einschränken. Stattdessen werden alle überprüften Domänen in Azure AD für den Mandanten mit dem von Ihnen angegebenen Domänennamen automatisch einbezogen.
 
 Wenn Sie alle Mandantenmitglieder auswählen oder das Verzeichnis durchsuchen, müssen die Benutzer oder Gruppe eine E-Mail-Adresse aufweisen.
 

@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Integritätsstatus des Microsoft 365-Diensts
-ms.openlocfilehash: 16621bc266684397da5fa92e953067e1e8342b4e
-ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
+ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43207163"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540809"
 ---
 # <a name="microsoft-365-network-health-status"></a>Integritätsstatus des Microsoft 365-Netzwerks
 
@@ -37,7 +37,7 @@ Wenn wir wichtige Probleme innerhalb des globalen Microsoft-Netzwerks oder mit d
 
 | Standort | Problemtyp | Detail |
 | --- | --- | --- |
-| **Keine aktuellen Probleme**  |  |  |
+| Mexiko | ISP-Infrastruktur (extern) | Verfügbarkeitsprobleme, die in der Internet-Dienstanbieter-Infrastruktur in Mexiko erkannt werden, können zu einer eingeschränkten Microsoft 365-Benutzererfahrung führen. Weitere Details finden Sie im Dienststatus-Dashboard. |
 
 ## <a name="recommendations-to-improve-network-experience"></a>Empfehlungen zur Verbesserung der Netzwerkumgebung
 

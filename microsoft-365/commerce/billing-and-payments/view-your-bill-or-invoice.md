@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253524"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540855"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -50,10 +50,23 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
   
 ## <a name="view-a-bill-or-invoice"></a>Anzeigen einer Rechnung
 
+::: moniker range="o365-worldwide"
 
 1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Rechnungen & Zahlungen</a>.
 
-    Wenn Sie Office 365 Deutschland verwenden, rufen Sie diese Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen und Zahlungen</a> auf.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen & Zahlungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Rechnungen & Zahlungen</a>.
+
+::: moniker-end
 
 2. Wählen Sie einen Datumsbereich aus der Dropdown-Liste aus und wählen Sie dann die Reihenfolge aus, die Sie anzeigen möchten.
 
