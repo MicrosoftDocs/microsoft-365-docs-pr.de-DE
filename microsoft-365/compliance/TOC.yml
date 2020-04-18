@@ -345,6 +345,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Verwalten von eDiscovery
   items:
+    - name: eDiscovery in Microsoft 365
+      href: ediscovery.md
     - name: Inhaltssuche
       items:
         - name: Übersicht über die Inhaltssuche
@@ -414,8 +416,16 @@
               href: clone-a-content-search.md
     - name: Core eDiscovery
       items:
-        - name: Verwalten von eDiscovery-Fällen
-          href: ediscovery-cases.md
+        - name: Erste Schritte mit Core eDiscovery
+          href: get-started-core-ediscovery.md
+        - name: Erstellen von eDiscovery-Archiven
+          href: create-ediscovery-holds.md
+        - name: Suche nach Inhalten in einem Fall
+          href: search-for-content-in-core-ediscovery.md
+        - name: Exportieren von Inhalten aus einem Fall
+          href: export-content-in-core-ediscovery.md
+        - name: 'Schließen, erneutes Öffnen und Löschen eines Falls'
+          href: close-reopen-delete-core-ediscovery-cases.md
         - name: Referenz zu Core eDiscovery
           items:
             - name: Zuweisen von eDiscovery-Berechtigungen
@@ -430,6 +440,12 @@
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: Erstellen eines Berichts zu eDiscovery-Archiven
               href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: Exportieren eines Suchberichts
+              href: export-a-content-search-report.md
+            - name: Anzeigen von Schlüsselwortstatistiken für Suchergebnisse
+              href: view-keyword-statistics-for-content-search.md
+            - name: Vorbereiten der Suchergebnisse für Advanced eDiscovery (classic)
+              href: prepare-search-results-for-advanced-ediscovery.md
             - name: Suchen und Löschen von von Lecks betroffenen Daten
               href: data-spillage-scenariosearch-and-purge.md
             - name: Beibehalten von Bcc-Empfängern für die Suche
