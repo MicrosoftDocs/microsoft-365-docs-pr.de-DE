@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Weitere Informationen zu Office 365-Gruppen.
-ms.openlocfilehash: f5a0b72737a360a4bfe4cdd8fee4a08b7a7ff236
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212533"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547544"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>Übersicht über Office 365 Gruppen für Administratoren
 
@@ -33,6 +33,7 @@ Office 365 Gruppen ist der grundlegende Mitgliedschaftsdienst, der die gesamte T
 - Einen freigegebenen Kalender
 - Eine SharePoint-Dokumentbibliothek
 - Einen Planner
+- Ein OneNote-Notizbuch
 - Power BI
 - Yammer (wenn die Gruppe in Yammer erstellt wurde)
 - Ein Team (wenn die Gruppe in Teams erstellt wurde)

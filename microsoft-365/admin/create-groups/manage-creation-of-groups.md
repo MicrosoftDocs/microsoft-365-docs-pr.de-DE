@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Office 365-Gruppen erstellen können.
-ms.openlocfilehash: 9016b96821dd9d40a0fb65574ce96d7badd0c2bd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212081"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547586"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Verwalten von Personen, die Office 365-Gruppen erstellen können
 
@@ -79,6 +79,9 @@ Um verwalten zu können, wer Gruppen erstellt, benötigen die folgenden Personen
 
 - Der Administrator, der die Einstellungen für die Gruppenerstellung konfiguriert
 - Die Mitglieder der Sicherheitsgruppe, die Gruppen erstellen dürfen
+
+> [!NOTE]
+> Weitere Informationen zum Zuweisen von Azure-Lizenzen finden Sie unter [zuweisen oder Entfernen von Lizenzen im Azure Active Directory-Portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) .
 
 Die folgenden Personen benötigen keine ihnen zugewiesene Azure AD Premium-Lizenzen oder Azure AD Basic EDU-Lizenzen:
 

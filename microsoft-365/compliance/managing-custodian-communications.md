@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Mit Advanced eDiscovery können Sie den Workflow für rechtliche Aufbewahrungs Benachrichtigungen einfach verwalten, um Benachrichtigungsverwalter in rechtlichen Ermittlungen zu benachrichtigen.
-ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280123"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551240"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Arbeiten mit Kommunikationen in Advanced eDiscovery
 
@@ -49,22 +49,12 @@ Mit Advanced eDiscovery können Legal Teams ihren rechtlichen Aufbewahrungs Bena
 
    - **Eskalationen:** In einigen Fällen kann das juristische Team einen Eskalations Workflow einrichten, um nicht reagierende Verwalter und deren Vorgesetzten zu benachrichtigen, wenn eine Depotbank auch nach einer Reihe von Erinnerungen über einen bestimmten Zeitraum nicht mehr reagiert.
 
-## <a name="role-groups-and-permissions"></a>Rollengruppen und Berechtigungen
+Weitere Informationen zum Verwalten des Depotbank-Kommunikationsprozesses finden Sie in den folgenden Themen: 
 
-Zugelassene Teams können Ihre Fall Aktivitäten mithilfe von eDiscovery-bezogenen Rollengruppen und Berechtigungen im Security & Compliance Center Steuern und trennen. 
+- [Erstellen eines rechtlichen Aufbewahrungs Vermerks](create-hold-notification.md)
 
-Zum Erstellen und Verwalten von Benachrichtigungen über rechtliche Aufbewahrungsfristen muss ein Benutzer Mitglied der Rollengruppe "eDiscovery-Manager" sein. Mitglieder dieser Rollengruppe können erweiterte eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungen und inhaltsspeicherorte in der Warteschleife platzieren, Benachrichtigungen für legale Aufbewahrungen verwalten, Suchvorgänge in einem Fall erstellen und bearbeiten, Suchergebnisse zu einem Überprüfungs hinzufügen, Daten in einem Überprüfungs Satzes analysieren und aus einem erweiterten Export und Download eDiscovery-Fall. 
+- [Verwenden des Kommunikations-Editors](using-communications-editor.md)
 
-Es gibt zwei Untergruppen: die Rollengruppe "eDiscovery-Manager". Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
+- [Verwalten von Aufbewahrungsbenachrichtigungen](manage-hold-notification.md)
 
-- **eDiscovery-Manager:** Kann die erweiterten eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder deren Mitglied Sie sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falles hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite "Advanced eDiscovery" im Security & Compliance Center anzeigen oder öffnen.
-
-- **eDiscovery-Administrator:** Kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
-
-  - Anzeigen aller Fälle, die auf der Seite Erweiterte eDiscovery aufgeführt sind.
-  
-  - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
-
-  - Access-und Export Fall Daten in Advanced eDiscovery für jeden Fall in der Organisation.
-
-Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).
+- [Bestätigen einer Aufbewahrungsbenachrichtigung](acknowledge-hold-notification.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Mit dem Verwalter Verwaltungstool in Advanced eDiscovery können Sie den Workflow verwalten, um Daten zu identifizieren, zu erhalten und zu sammeln, die den Interessen Personen in einem Rechtsfall zugeordnet sind.
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400912"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551241"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Arbeiten mit Verwaltern in Advanced eDiscovery
 
@@ -38,7 +38,3 @@ Weitere Informationen zum Arbeiten mit Depotbanken finden Sie in den folgenden T
 - [Verwalten von Depotbanken in einem Fall](manage-new-custodians.md)
 
 - [Anzeigen der Aktivitäten von Verwaltungsberechtigten](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>Erweiterte eDiscovery-Berechtigungen
-
-In Advanced eDiscovery können Sie die integrierte eDiscovery-Manager-Rollengruppe verwenden, um juristischen Ermittlern die erforderlichen Berechtigungen zu erteilen, damit Sie den End-to-End-Workflow in Advanced eDiscovery verwalten können. Alternativ können Sie benutzerdefinierte Rollengruppen mit einer Teilmenge der Rollen erstellen, die zum Ausführen bestimmter Aktionen in einem Fall in Advanced eDiscovery erforderlich sind. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).

@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security #a0 Compliance Center ausgeführt wird. '
-ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security & Compliance Center ausgeführt wird. '
+ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597782"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551226"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Teilweise indizierte Elemente in der Inhaltssuche in Office 365
 
-Eine Inhaltssuche, die Sie im Security #a0 Compliance Center in Office 365 ausführen, enthält bei der Ausführung einer Suche automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
+Eine Inhaltssuche, die Sie im Security & Compliance Center in Office 365 ausführen, enthält bei der Ausführung einer Suche automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
   
 - Der Dateityp wird nicht erkannt oder wird nicht für die Indizierung unterstützt.
     
@@ -57,7 +57,7 @@ Bestimmte Dateitypen wie Bitmap- oder MP3-Dateien enthalten keinen zu indizieren
   
 Eine Liste von unterstützten und deaktivierten Dateiformaten finden Sie in den folgenden Themen:
   
-- **** - [Von der Exchange-Suche indizierte Exchange-Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [Von der Exchange-Suche indizierte Exchange-Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
 - **Exchange** - [-Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
@@ -71,7 +71,7 @@ Nicht jede e-Mail-Nachricht mit einer teilweise indizierten Dateianlage oder jed
   
 Ebenso werden Nachrichten mit teilweise indizierten Dateianlagen und Dokumenten eines teilweise indizierten Dateityps in Suchergebnisse eingeschlossen, wenn andere Nachrichten-oder Dokumenteigenschaften, die indiziert und durchsuchbar sind, die Suchkriterien erfüllen. Zu den Nachrichteneigenschaften, die für die Suche indiziert werden, gehören Sende- und Empfangsdatum, Absender und Empfänger, Dateiname von Anhängen sowie der Nachrichtentext. Zu den für die Suche indizierten Dokumenteigenschaften gehören erstellte und geänderte Daten. Obwohl eine Nachrichtenanlage möglicherweise ein teilweise indiziertes Element ist, wird die Nachricht in die regulären Suchergebnisse eingeschlossen, wenn der Wert anderer Nachrichten-oder Dokumenteigenschaften mit den Suchkriterien übereinstimmt.
   
-Eine Liste der e-Mail-und Dokumenteigenschaften, nach denen Sie mithilfe der Suchfunktion im Security #a0 Compliance Center suchen können, finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+Eine Liste der e-Mail-und Dokumenteigenschaften, nach denen Sie mithilfe der Suchfunktion im Security & Compliance Center suchen können, finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
   
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Teilweise indizierte Elemente, die in den Suchergebnissen enthalten sind
 
@@ -106,7 +106,7 @@ Wenn ein Element teilweise indiziert ist, aber nicht den Suchabfrage Kriterien e
   
 Wenn Sie sich entschließen, teilweise indizierte Elemente beim Exportieren der Ergebnisse einer Suche einzubeziehen, werden teilweise indizierte Elemente, die aus den Suchergebnissen ausgeschlossen wurden, auch nicht exportiert.
   
-Eine Ausnahme zu dieser Regel besteht darin, dass Sie einen abfragebasierten Haltebereich erstellen, der einem eDiscovery-Fall zugeordnet ist. Wenn Sie einen abfragebasierten Haltebereich erstellen, werden alle teilweise indizierten Elemente in den Haltebereich gesetzt. Dies umfasst teilweise indizierte Elemente, die nicht mit den Suchabfrage Kriterien und teilweise indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Weitere Informationen zum Erstellen von abfragebasierten Haltestatus finden Sie unter Schritt 4 in [eDiscovery-Fällen](ediscovery-cases.md#step-4-place-content-locations-on-hold).
+Eine Ausnahme zu dieser Regel besteht darin, dass Sie einen abfragebasierten Haltebereich erstellen, der einem eDiscovery-Fall zugeordnet ist. Wenn Sie einen abfragebasierten eDiscovery-Speicher erstellen, werden alle teilweise indizierten Elemente in der Warteschleife gespeichert. Dies umfasst teilweise indizierte Elemente, die nicht mit den Suchabfrage Kriterien und teilweise indizierten Elementen übereinstimmen, die möglicherweise außerhalb einer Datumsbereichs Bedingung liegen. Weitere Informationen zum Erstellen von abfragebasierten eDiscovery-Archiven finden Sie unter [Erstellen eines eDiscovery-Haltestatus](create-ediscovery-holds.md).
   
 ## <a name="indexing-limits-for-messages-in-content-search"></a>Indizierungs Grenzwerte für Nachrichten in der Inhaltssuche
 
@@ -126,24 +126,22 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 |Maximale Anmerkungs Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert wird, wird jedes Wort mit unterschiedlichen Verarbeitungsanweisungen versehen, die angeben, wie dieses Wort indiziert werden soll. Jeder Sätze von Verarbeitungsanweisungen wird als Anmerkungs Token bezeichnet. Um die Dienstqualität in Office 365 beizubehalten, gibt es einen Grenzwert von 2 Millionen-Anmerkungs Token für eine e-Mail-Nachricht.  <br/> |
 |Maximale Körpergröße im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen im Textkörper einer e-Mail-Nachricht und aller Anlagen. Wenn eine e-Mail-Nachricht indiziert wird, wird der gesamte Text im Nachrichtentext und in allen Anlagen in einer einzigen Zeichenfolge verkettet. Die maximale Größe dieser Zeichenfolge, die indiziert wird, ist 67 Millionen Zeichen.  <br/> |
 |Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck `"cat, mouse, bird, dog, dog"` enthält beispielsweise 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
-   
 
-  
 ## <a name="more-information-about-partially-indexed-items"></a>Weitere Informationen zu teilweise indizierten Elementen
 
 - Wie bereits erwähnt, gibt eine Stichwortsuche möglicherweise Ergebnisse zurück, wenn das Schlüsselwort in den indizierten Metadaten angezeigt wird, da die Eigenschaften von Nachrichten und Dokumenten und deren Metadaten indiziert sind. Bei der gleichen Stichwortsuche wird jedoch möglicherweise nicht dasselbe Element zurückgegeben, wenn das Schlüsselwort nur im Inhalt eines Elements mit einem nicht unterstützten Dateityp angezeigt wird. In diesem Fall würde das Element als teilweise indiziertes Element zurückgegeben werden.
-    
+
 - Wenn ein teilweise indiziertes Element in den Suchergebnissen enthalten ist, da es die Suchabfrage Kriterien erfüllt (und nicht ausgeschlossen wurde), wird es nicht als teilweise indiziertes Element in die geschätzte Suchstatistik eingeschlossen. Außerdem wird es nicht in teilweise indizierten Elementen enthalten sein, wenn Sie Suchergebnisse exportieren.
-    
+
 - Obwohl ein Dateityp für die Indizierung unterstützt wird und indiziert wird, kann es Indizierungs-oder Suchfehler geben, die dazu führen, dass eine Datei als teilweise indiziertes Element zurückgegeben wird. Beispielsweise kann das Durchsuchen einer sehr großen Excel-Datei teilweise erfolgreich sein (da die ersten 4 MB indiziert sind), tritt dann jedoch ein Fehler auf, da die Dateigrößenbeschränkung überschritten wird. In diesem Fall ist es möglich, dass die gleiche Datei mit den Suchergebnissen und als teilweise indiziertes Element zurückgegeben wird.
-    
+
 - Mit Microsoft-Technologien verschlüsselte Dateianlagen werden indiziert und können durchsucht werden. Dateien, die mit nicht-Microsoft-Technologien verschlüsselt sind, sind teilweise indiziert.
-    
+
 - Mit S/MIME verschlüsselte e-Mail-Nachrichten sind teilweise indiziert. Dazu gehören verschlüsselte Nachrichten mit oder ohne Dateianlagen.
-    
+
 - Durch die Verwaltung von Informationsrechten (Information Rights Management, IRM) geschützte Nachrichten werden indiziert und daher in die Suchergebnisse eingeschlossen, wenn sie der Suchabfrage entsprechen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
+[Untersuchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

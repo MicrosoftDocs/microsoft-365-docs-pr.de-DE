@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,66 +14,76 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Office 365 bietet eine Reihe von eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an verschiedenen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Office 365 Gruppen und Skype for Business-Unterhaltungen gefunden wurden.
-ms.openlocfilehash: d0f687e490b2a0b9452de820ddfe76a9d36b1805
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Office 365 Gruppen und Skype for Business Unterhaltungen gefunden wurden.
+ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074792"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551216"
 ---
-# <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
+# <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 
-Als eDiscovery (electronic discovery) wird das Identifizieren und Übermitteln elektronischer Informationen bezeichnet, die als Indizien in einem Rechtsstreit verwendet werden können. Sie können eDiscovery in Office 365 verwenden, um nach Inhalten in Exchange Online Postfächern, Office 365 Gruppen, Microsoft Teams, SharePoint Online und OneDrive für Unternehmen Websites sowie Skype for Business Unterhaltungen zu suchen. Sie können Postfächer und Websites in derselben eDiscovery-Suche mithilfe des Tools für die Inhaltssuche im Security & Compliance Center durchsuchen. Sie können eDiscovery-Fälle im Security & Compliance Center verwenden, um in Postfächern und Websites gefundene Inhalte zu identifizieren, zu speichern und zu exportieren. Wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt, können Sie den Inhalt mithilfe der erweiterten eDiscovery-Lösung in Microsoft 365 weiter analysieren.
+Als eDiscovery (electronic discovery) wird das Identifizieren und Übermitteln elektronischer Informationen bezeichnet, die als Indizien in einem Rechtsstreit verwendet werden können. Mithilfe von eDiscovery-Tools in Microsoft 365 können Sie nach Inhalten in Exchange Online Postfächern, Office 365 Gruppen, Microsoft Teams, SharePoint Online und OneDrive für Unternehmen Websites sowie Skype for Business Unterhaltungen und Jammer Teams suchen. Sie können Postfächer und Websites in derselben eDiscovery-Suche mithilfe des Inhalts Such Tools durchsuchen. Sie können Haupt-eDiscovery-Fälle verwenden, um in Postfächern und Websites gefundene Inhalte zu identifizieren, zu speichern und zu exportieren. Wenn Ihre Organisation über ein Office 365 E5-oder Microsoft 365 E5-Abonnement (oder Verwandte E5-Add-on-Abonnements) verfügt, können Sie Verwalter weiter verwalten und Inhalte mithilfe der erweiterten eDiscovery-Lösung in Microsoft 365 analysieren.
   
-Office 365 bietet die folgenden eDiscovery-Tools:
+Microsoft 365 bietet die folgenden eDiscovery-Tools:
   
-- [Inhaltssuche im Security & Compliance Center](#content-search-in-the-security--compliance-center)
-    
-- [eDiscovery-Fälle im Security & Compliance Center](#ediscovery-cases-in-the-security--compliance-center)
-    
-- [Advanced eDiscovery-Lösung in Microsoft 365](#advanced-ediscovery-solution-in-microsoft-365)
-    
-## <a name="content-search-in-the-security--compliance-center"></a>Inhaltssuche im Security & Compliance Center
+- [Inhaltssuche](#content-search)
 
-Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung des Inhaltssuche-Tools im Security & Compliance Center unterstützen sollen.
+- [Core eDiscovery](#core-ediscovery)
+
+- [Erweiterte eDiscovery](#advanced-ediscovery)
+
+> [!NOTE]
+> Advanced eDiscovery (klassisch) (auch *Advanced eDiscovery v 1.0*genannt), bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln**, wird zurückgezogen. Die Funktionalität wurde durch die erweiterte eDiscovery-Lösung in Microsoft 365 ersetzt. Weitere Informationen zum Ruhestand von Advanced eDiscovery v 1.0 finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
+
+## <a name="content-search"></a>Inhaltssuche
+
+Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung des Inhalts Such Tools unterstützen sollen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
 |[Ausführen einer Inhaltssuche](content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe des Inhalts Such Tools Postfächer, öffentliche Ordner, Office 365 Gruppen, Microsoft Teams, SharePoint Online Websites, ein Laufwerk für Geschäftsstandorte und Skype for Business Unterhaltungen in Ihrer Office 365 Organisation in einer einzigen Suche durchsuchen.  <br/> |
 |[Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md) <br/> |Erfahren Sie mehr über die e-Mail-und Dateieigenschaften und Suchbedingungen, die Sie verwenden können, um nach Inhalten in Postfächern und Websites in Ihrer Office 365 Organisation zu suchen.  <br/> |
 |[Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe von Suchstatistiken die Statistiken für eine oder mehrere Inhalts suchen anzeigen und vergleichen sowie neue und vorhandene Suchvorgänge konfigurieren können, um Statistiken für jedes Keyword in der Suchabfrage zurückzugeben.  <br/> |
-|[Massenbearbeitung von Inhalts suchen im Security & Compliance Center](bulk-edit-content-searches.md) <br/> |Hier erfahren Sie, wie Sie die Suchabfragen und inhaltsspeicherorte einer oder mehrerer Inhalts suchen Massen bearbeiten.  <br/> |
-|[Exportieren von Suchergebnissen aus dem Security & Compliance Center](export-search-results.md) <br/> |Hier erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche exportieren.  <br/> |
-|[Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md) <br/> |Hier erfahren Sie, wie Sie die Windows-Registrierung auf Ihrem Computer konfigurieren, um die Downloadgeschwindigkeit beim Exportieren von Inhalts Suchergebnissen zu verbessern.  <br/> |
+|[Exportieren der Suchergebnisse](export-search-results.md) <br/> |Hier erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche exportieren.  <br/> |
+|[Konfigurieren der Berechtigungsfilterung für die Inhaltssuche](permissions-filtering-for-content-search.md) <br/> |Erfahren Sie, wie Sie mithilfe der Berechtigungs Filterung einen eDiscovery-Manager nur eine Teilmenge von Postfächern und Websites in Ihrer Organisation durchsuchen können.  <br/> |
 |[Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md) <br/> |Hier erfahren Sie, wie Sie den Exportbericht herunterladen, ohne die tatsächlichen Suchergebnisse exportieren zu müssen.  <br/> |
-|[Grenzwerte für die Inhaltssuche im Security & Compliance Center](limits-for-content-search.md) <br/> |Erfahren Sie mehr über die Grenzen des Inhalts Suchtools, beispielsweise die maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |
+|[Grenzwerte für die Inhaltssuche](limits-for-content-search.md) <br/> |Erfahren Sie mehr über die Grenzen des Inhalts Suchtools, beispielsweise die maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |
 |[Nicht indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md) <br/> |Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in die geschätzte Suchergebnis Statistik einbeziehen können, wenn Sie eine Suche ausführen. Sie können auch nicht indizierte Elemente einschließen, wenn Sie Suchergebnisse exportieren.  <br/> |
-|[Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen in Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md) <br/> |Erfahren Sie mehr über die Gründe, warum es Unterschiede zwischen der Anzahl der geschätzten Suchergebnisse und der Anzahl der tatsächlich exportierten Elemente geben kann.  <br/> |
-|[Deduplizierung in eDiscovery-Suchergebnissen](de-duplication-in-ediscovery-search-results.md) <br/> |Erfahren Sie mehr über das optionale Feature zur Deduplizierung, das Sie beim Exportieren von Exchange-e-Mails, die die Ergebnisse einer Inhaltssuche sind, aktivieren können.  <br/> |
-|[Suchen nach und Löschen von E-Mail-Nachrichten in der Office 365-Organisation](search-for-and-delete-messages-in-your-organization.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe der Inhaltssuche nach e-Mail-Nachrichten aus *allen* Postfächern in Ihrer Organisation suchen und löschen. Dies kann Ihnen helfen, potenziell schädliche oder risikoreiche e-Mails zu finden und zu entfernen.  <br/> |
-|[Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Hier erfahren Sie, wie Sie ein Skript zum Durchsuchen des Postfachs und einer Drive for Business-Website für eine Gruppe von Benutzern verwenden. Verwenden Sie [Schritt 2: Generieren einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) in diesem Thema, um schnell eine Liste von e-Mail-Adressen zu generieren, die Sie für die Quellinhalts Speicherorte verwenden können, wenn Sie die Suche in Schritt 3 erstellen und ausführen.  <br/> |
-|[Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen](create-report-on-and-delete-multiple-content-searches.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe von Skripts mehrere Inhalts suchen erstellen, Berichte ausführen, um die geschätzten Ergebnisse für jede Suche abzurufen, und dann die Suchvorgänge löschen. Dies kann Ihnen helfen, Such Daten schnell und effizient zu identifizieren und zu pflücken.  <br/> |
-|[Klonen einer Inhaltssuche im Security & Compliance Center](clone-a-content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mit dem Windows PowerShell-Skript schnell eine vorhandene Inhaltssuche Klonen. Dies kann Ihnen helfen, die Ergebnisse verschiedener Keyword-Suchabfragen zu vergleichen, die an denselben Inhaltsspeicherorten ausgeführt werden, oder Zeit zu sparen, da Sie beim Erstellen einer neuen Suche keine große Anzahl von Inhaltsspeicherorten erneut eingeben müssen.  <br/> |
-|[Konfigurieren der Berechtigungsfilterung für die Inhaltssuche](permissions-filtering-for-content-search.md) <br/> |Hier erfahren Sie, wie Sie mithilfe von Berechtigungs Filtern einen eDiscovery-Manager nur eine Teilmenge von Postfächern und Websites in Ihrer Office 365 Organisation durchsuchen können.  <br/> |
-|[Vorbereiten einer CSV-Datei für eine gezielte Inhaltssuche](csv-file-for-an-id-list-content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie eine CSV-Datei mit Ergebnissen oder eine nicht indexierte CSV-Datei (beides, die Informationen zu den Ergebnissen einer Inhaltssuche enthält) verwenden, um eine gezielte Suche nach bestimmten Postfachelementen zu erstellen.  <br/> |
-|[Verwenden der Inhaltssuche in Office 365 für gezielte Auflistungen](use-content-search-for-targeted-collections.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel gezielte Sammlungen mithilfe der Inhaltssuche durchführen. Eine gezielte Sammlung bedeutet, dass Sie einen bestimmten Ordner durchsuchen möchten, da Sie sicher sind, dass Elemente, die auf einen Fall reagieren (oder privilegierte Elemente) sich in diesem Ordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für das jeweilige Postfach oder die Websiteordner zu erhalten, die Sie durchsuchen möchten.  <br/> |
-|[Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden](use-content-search-to-search-third-party-data-that-was-imported.md) <br/> |In diesem Artikel erfahren Sie `kind` , `itemclass` wie Sie mit den Eigenschaften und Nachrichten drittanbieterdaten durchsuchen, die Sie in Office 365 importiert haben.  <br/> |
+|[Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messages-in-your-organization.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe der Inhaltssuche nach e-Mail-Nachrichten aus *allen* Postfächern in Ihrer Organisation suchen und löschen. Dies kann Ihnen helfen, potenziell schädliche oder risikoreiche e-Mails zu finden und zu entfernen.  <br/> |
+|[Verwenden der Inhaltssuche zum Durchsuchen von Postfach-und OneDrive-Konten nach einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Hier erfahren Sie, wie Sie ein Skript zum Durchsuchen des Postfachs und einer Drive for Business-Website für eine Gruppe von Benutzern verwenden. Eine Liste aller OneDrive-Standorte finden Sie unter [Erstellen einer](https://docs.microsoft.com/onedrive/list-onedrive-urls) Liste mit e-Mail-Adressen, die Sie beim Erstellen und Ausführen von Inhalts suchen für die Quellinhalts Speicherorte verwenden können.  <br/> |
+|[Verwenden der Inhaltssuche für gezielte Sammlungen](use-content-search-for-targeted-collections.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel gezielte Sammlungen mithilfe der Inhaltssuche durchführen. Eine gezielte Sammlung bedeutet, dass Sie einen bestimmten Ordner durchsuchen möchten, da Sie sicher sind, dass Elemente, die auf einen Fall reagieren (oder privilegierte Elemente) sich in diesem Ordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für das jeweilige Postfach oder die Websiteordner zu erhalten, die Sie durchsuchen möchten.  <br/> |
+|||
   
-## <a name="ediscovery-cases-in-the-security--compliance-center"></a>eDiscovery-Fälle im Security & Compliance Center
+## <a name="core-ediscovery"></a>Core eDiscovery
 
-Die folgende Tabelle enthält Links zu Themen, in denen Sie eDiscovery-Fälle im Security & Compliance Center verwenden können. Verwenden von Cases zum Hinzufügen von Mitgliedern, die auf die Anfrage zugreifen können, Aufbewahrung der für den Fall relevanten inhaltsspeicherorte, Zuordnen mehrerer Inhalts suchen mit dem Fall und Exportieren der Suchergebnisse aus dem Fall.
+Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung von zentralen eDiscovery-Fällen unterstützen sollen. Sie können die zentralen eDiscovery-Fälle zum Hinzufügen von eDiscovery-Managern verwenden, die auf den Fall zugreifen können, eine eDiscovery-Aufbewahrung auf für den Fall relevanten Inhalts Standorten platzieren, nach Inhalten suchen und die Suchergebnisse aus dem Fall exportieren.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Verwalten von eDiscovery-Fällen im Security & Compliance Center](ediscovery-cases.md) <br/> |Informationen zum Erstellen und Verwalten von eDiscovery-Fällen im Security & Compliance Center.  <br/> |
-|[Zuweisen von eDiscovery-Berechtigungen im Office 365 Security & Compliance Center](assign-ediscovery-permissions.md) <br/> |Erfahren Sie, wie Sie eDiscovery-Berechtigungen im Security & Compliance Center zuweisen. Sie können Berechtigungen zuweisen, um Benutzern das Erstellen von eDiscovery-Fällen, das Erstellen von Haltebereichen, die einem eDiscovery-Fall zugeordnet sind, das Ausführen von Inhalts suchen, die Vorschau von Suchergebnissen und das Exportieren von Suchergebnissen.  <br/> |
-|[Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel einen Bericht generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Security & Compliance Center zugeordnet sind.  <br/> |
-|[Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem eDiscovery-Fall im Security & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Erfahren Sie, wie Sie mithilfe des Windows PowerShell Skripts in diesem Artikel schnell die Postfächer und OneDrive für Unternehmen Websites für eine Liste von Benutzern zu einem neuen Haltebereich hinzufügen, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist.  <br/> |
-|[Suchen nach eDiscovery-Aktivitäten im Office 365 Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |Hier erfahren Sie, wie Sie das Office 365 Überwachungsprotokoll nach Aktivitäten im Zusammenhang mit dem Erstellen und Verwalten von eDiscovery-Fällen und Inhalts suchen durchsuchen.  <br/> |
+|[Erste Schritte mit der Haupt-eDiscovery](get-started-core-ediscovery.md) |Erfahren Sie, wie Sie eDiscovery-Berechtigungen zuweisen und zentrale eDiscovery-Fälle erstellen. Dieses Thema bietet außerdem eine Übersicht über den zentralen eDiscovery-Workflow.<br/> |
+|[Erstellen eines eDiscovery-Speichers](create-ediscovery-holds.md)|In diesem Artikel erfahren Sie, wie Sie eDiscovery-Speicher erstellen, die einem zentralen eDiscovery-Fall zugeordnet sind, um für den Fall relevante Inhalte beizubehalten.|
+|[Suchen nach Inhalten in einem zentralen eDiscovery-Fall](search-for-content-in-core-ediscovery.md)|Hier erfahren Sie, wie Sie nach Inhalten suchen, die für einen Fall relevant sind. Sie können Schnellsuch Vorgänge erstellen, die die Aufbewahrungsorte für Inhalte durchsuchen.|
+|[Exportieren von Inhalten aus einem zentralen eDiscovery-Fall](export-content-in-core-ediscovery.md)|Hier erfahren Sie, wie Sie Inhalte aus einem zentralen eDiscovery-Fall exportieren und herunterladen.|
+|[Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls](close-reopen-delete-core-ediscovery-cases.md)|Hier erfahren Sie, wie Sie den Lebenszyklus eines zentralen eDiscovery-Falls verwalten.|
+|[Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md)|Hier erfahren Sie, wie Sie Benutzern Berechtigungen zuweisen können, um Inhalte zu suchen, inhaltsspeicherorte in der Warteschleife zu platzieren und andere eDiscovery-bezogene Aufgaben auszuführen.|
+|[Einrichten von Compliance-Grenzen für die zentrale eDiscovery](set-up-compliance-boundaries.md)|Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen in einer Organisation erstellen, die die inhaltsspeicherorte steuern, die ein eDiscovery-Manager durchsuchen kann.|
+|||
   
-## <a name="advanced-ediscovery-solution-in-microsoft-365"></a>Advanced eDiscovery-Lösung in Microsoft 365
+## <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365 auf. Diese neue Lösung, die als *Erweiterte eDiscovery*bezeichnet wird, bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können Legal Teams den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren. 
+Die erweiterte eDiscovery-Lösung in Microsoft 365 (auch *Advanced eDiscovery v 2.0*genannt) basiert auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365. Diese eDiscovery-Lösung bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können legale Teams Verwalter und den gesamten Workflow für rechtliche Aufbewahrungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren.
 
-Weitere Informationen finden Sie unter [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
+|**Thema**|**Beschreibung**|
+|:-----|:-----|
+|[Übersicht über Advanced eDiscovery](overview-ediscovery-20.md)|In diesem Artikel wird Advanced eDiscovery v 2.0 vorgestellt und eine allgemeine Übersicht über den integrierten Workflow von Advanced eDiscovery und die Ausrichtung an dem eDiscovery-Prozess bereitgestellt, der durch das elektronische Discovery-Referenzmodell beschrieben wird.|.
+|[Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md)|Erfahren Sie, wie Sie mit der Verwendung von Advanced eDiscovery beginnen, einschließlich der erforderlichen Lizenzierung und der erforderlichen eDiscovery-Berechtigung. In diesem Artikel erfahren Sie, wie Sie einen erweiterten eDiscovery-Fall erstellen und den erweiterten eDiscovery-Workflow durchlaufen können.|
+|[Arbeiten mit Verwaltungsberechtigten](managing-custodians.md)|Erfahren Sie mehr über das Arbeiten mit Bewahrern in einer erweiterten eDiscovery. Dieses Thema enthält Links zu schrittweisen Anweisungen zum Hinzufügen von Bewahrern zu einem Fall, Verwalten von Depotbanken in einem Fall und Anzeigen der Depotbank-Aktivität in Microsoft 365 durch Durchsuchen des Überwachungsprotokolls.|
+|[Arbeiten mit Kommunikation](managing-custodian-communications.md)|Erfahren Sie mehr über das Verwalten des rechtlichen Aufbewahrungs Benachrichtigungsprozesses in Advanced eDiscovery. Dies umfasst das Erstellen und Automatisieren des Benachrichtigungs Workflows sowie das bestätigen einer Aufbewahrungs Benachrichtigung durch einen Benutzer.
+|[Arbeiten mit Verarbeitungsfehlern](processing-data-for-case.md)|Erfahren Sie mehr über die erweiterte Indizierung und wie Sie die Indizierungsfehler in Inhalten von Freiheits befindenden und nicht-Freiheits geschützten Inhaltsspeicherorten wie Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten beheben können. Sie können Fehler Massen beheben und anschließend korrigierte Dateien in einen Überprüfungs Satz hochladen oder einzelne Verarbeitungsfehler innerhalb eines Überprüfungs Satzes korrigieren.|
+|[Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md)|In diesem Artikel erfahren Sie, wie Sie Inhalte in Freiheits befindenden Inhaltsverzeichnissen suchen und dann relevante Falldaten zu einem Überprüfungs Satzes hinzufügen. Wenn Sie Inhalte in einen Überprüfungs Sätze kopieren, werden die Daten von den ursprünglichen Inhaltsspeicherorten an einen von Microsoft bereitgestellten Azure-Speicherort kopiert. Dadurch wird eine statische Gruppe von Dokumenten für den Überprüfungsprozess bereitgestellt.|
+|[Verwalten von Prüfdateisätzen](managing-review-sets.md)|Informationen zum Überprüfen von Falldaten in einem Überprüfungs Satzes. Dies umfasst das anzeigen, Abfragen, Filtern und Markieren von Dokumenten in einem Überprüfungs Satzes.
+|[Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md)|Hier erfahren Sie, wie Sie die Analyse für die Dokumente in einem Überprüfungs Satzes durchführen. Die Ergebnisse der ausgeführten Analyse umfassen die Erkennung von nahezu Duplizierung, das e-Mail-Threading und die Identifizierung von Designs.|
+|[Exportieren von Falldaten](exporting-data-ediscover20.md)|Erfahren Sie mehr über das Exportieren von Daten aus einem Fall für externe Überprüfung.|
+|||

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Office 365 Postfach gespeichert werden können. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, eDiscovery-Haltestatus und Office 365-Aufbewahrungsrichtlinien. Sie können auch ermitteln, ob ein Benutzer von einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978225"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551136"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -30,7 +30,7 @@ Office 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation verhi
 
 - ** [Beweissicherungsverfahren](create-a-litigation-hold.md):** Haltestatus, die auf Benutzerpostfächer in Exchange Online angewendet werden.
 
-- ** [eDiscovery-Aufbewahrung](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Hält, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Haltestatus können auf Benutzerpostfächer und auf das entsprechende Postfach für Office 365 Gruppen und Microsoft Teams angewendet werden.
+- ** [eDiscovery-Aufbewahrung](create-ediscovery-holds.md):** Hält, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Haltestatus können auf Benutzerpostfächer und auf das entsprechende Postfach für Office 365 Gruppen und Microsoft Teams angewendet werden.
 
 - ** [In-situ-](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)Speicher:** Gilt für Benutzerpostfächer, die mithilfe des in-situ-eDiscovery-&-halte Tools im Exchange Admin Center in Exchange Online angewendet werden.
 

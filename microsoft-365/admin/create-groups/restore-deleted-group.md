@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Hier erfahren Sie, wie Sie eine gelöschte Office 365 Gruppe wiederherstellen.
-ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583162"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547532"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Wiederherstellen einer gelöschten Office 365-Gruppe
 
@@ -61,7 +61,7 @@ Wenn die gelöschte Gruppe hier nicht angezeigt wird, wenden Sie sich an einen A
 
 Wenn Sie globaler Administrator oder Gruppenadministrator sind, können Sie eine gelöschte Gruppe im Microsoft 365 Admin Center wiederherstellen:
 
-1. Wechseln Sie zum Admin Center auf [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com).
+1. Wechseln Sie zum [Admin Center](https://admin.microsoft.com).
 2. Erweitern Sie **Gruppen**, und klicken Sie dann auf **Gelöschte Gruppen**.
 3. Wählen Sie die Gruppe aus, die Sie wiederherstellen möchten, und klicken Sie dann auf **Gruppe wiederherstellen**.
   
