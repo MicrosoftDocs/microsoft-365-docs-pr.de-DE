@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Office 365-Gruppen.
-ms.openlocfilehash: 4daf35af28e0339c66271c69487d3da9c1e4c91e
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 69ab8dcecf95f02965254928110802bfd0308b8b
+ms.sourcegitcommit: b8aa905b7c9c59def56490670b928b0b7daa7d0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547597"
+ms.lasthandoff: 04/19/2020
+ms.locfileid: "43558764"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -256,15 +256,15 @@ In folgenden anderen Apps und Diensten können Sie die Vertraulichkeitsbezeichnu
 
 ## <a name="classic-azure-ad-group-classification"></a>Klassische Azure AD-Gruppenklassifizierung
 
-Wenn Sie diese Vorschau aktivieren, unterstützt Office 365 die alten Klassifizierungen nicht mehr für neue Gruppen und SharePoint-Websites. Bei vorhandenen Gruppen und Websites werden die alten Klassifizierungen jedoch weiterhin angezeigt, es sei denn, Sie konvertieren sie, um Vertraulichkeitsbezeichnungen zu verwenden. Alte Klassifizierungen schließen die Klassifizierung von "modernen" Websites ein, die Sie möglicherweise über Azure AD PowerShell oder die PnP Core-Bibliothek eingerichtet haben, in der Werte für die `ClassificationList`-Einstellung definiert werden.
+Office 365 unterstützt die alten Klassifikationen für neue Office 365-Gruppen und Microsoft Office SharePoint Online-Websites nicht mehr, wenn Sie diese Vorschau aktivieren. Bestehende Gruppen und Sites zeigen jedoch weiterhin die alten Klassifizierungswerte an, es sei denn, Sie konvertieren sie zur Verwendung von Vertraulichkeitsbezeichnungen.
 
-Beispielsweise in PowerShell:
+Ein Beispiel dafür, wie Sie die alte Gruppenklassifizierung für Microsoft Office SharePoint Online verwendet haben könnten, finden Sie unter [Klassifizierung "moderner" Microsoft Office SharePoint Online-Websites](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+
+Diese Klassifizierungen wurden konfiguriert, indem Azure AD PowerShell oder die PnP-Kernbibliothek verwendet und Werte für die Einstellung `ClassificationList` festgelegt wurden. Wenn in Ihrem Mandanten Klassifizierungswerte definiert sind, werden sie angezeigt, wenn Sie den folgenden Befehl aus dem [AzureADPreview PowerShell-Modul](https://www.powershellgallery.com/packages/AzureADPreview) ausführen:
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-Ein Beispiel dafür, wie Sie die alte Gruppenklassifizierung für SharePoint verwendet haben könnten, finden Sie unter [Klassifizierung von "modernen" SharePoint-Websites](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 Um Ihre alten Klassifizierungen in Vertraulichkeitsbezeichnungen umzuwandeln, führen Sie einen der folgenden Schritte aus:
 
