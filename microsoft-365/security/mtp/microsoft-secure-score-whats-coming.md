@@ -17,16 +17,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 234ae17ab31d56d1bbd65f1aa8ed29475e9cd155
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583715"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Was Microsoft-Sicherheitsbewertung in Kürze verfügbar ist
 
-Um Microsoft-Sicherheitsbewertung zu einem besseren Anlaufpunkt für Ihren Sicherheitsstatus zu machen und die Benutzerfreundlichkeit zu verbessern, nehmen wir in naher Zukunft einige Änderungen vor. Ihre Bewertung und die maximale Punktzahl werden geändert. Dies bedeutet jedoch nicht, dass sich Ihr Sicherheitsstatus ändert.
+Um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter ihrer Sicherheitsposition zu machen und die Benutzerfreundlichkeit zu verbessern, werden wir in naher Zukunft einige Änderungen vornehmen. Ihre Bewertung und die maximale Punktzahl werden geändert. Dies bedeutet jedoch nicht, dass sich Ihr Sicherheitsstatus ändert.
 
 Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score.md#whats-new).
 
@@ -39,11 +39,15 @@ Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und 
 - IRM-Schutz auf Dokumente anwenden
 - Richtlinien zur Verhinderung von Datenverlust anwenden
 
-### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Hinzufügen von Azure AD Verbesserungs Aktion in der Vorschauversion
+### <a name="adding-azure-ad-improvement-action-to-preview"></a>Hinzufügen von Azure AD Verbesserungs Aktion zur Vorschau
+
+Hinzufügen der folgenden Azure Active Directory-Verbesserungs Aktion zur [Vorschauversion von Microsoft Secure Score](microsoft-secure-score-preview.md):
 
 - Nicht zulassen, dass Benutzer nicht verwalteten Anwendungen zustimmen (zurzeit in der veröffentlichten Version verfügbar)
 
-### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Hinzufügen von Azure ATP-Verbesserungs Aktionen in der Vorschauversion
+### <a name="adding-azure-atp-improvement-actions-to-preview"></a>Hinzufügen von Azure ATP-Verbesserungs Aktionen zur Vorschau
+
+Hinzufügen der folgenden Azure Advanced Threat Protection-Verbesserungs Aktionen zur [Vorschauversion von Microsoft Secure Score](microsoft-secure-score-preview.md):
 
 - Druckerspoolerdienst auf Domänencontrollern deaktivieren
 - Unsichere Kerberos-Delegierungen ändern, um einen Identitätswechsel zu verhindern
@@ -56,6 +60,6 @@ Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und 
 - Kommunikation über Legacy-Protokolle verhindern
 - Verwendung schwacher Verschlüsselung verhindern
 
-### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Unterstützung für Sicherheitsempfehlungen für Microsoft Defender ATP Threat & Vulnerability Management (TVM) in der Vorschauversion
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-preview"></a>Unterstützung für Microsoft Defender ATP Threat & Vulnerability Management (TVM) Sicherheitsempfehlungen in der Vorschau
 
-- Alle von TVM bereitgestellten Sicherheitsempfehlungen sind nun auch in Microsoft-Sicherheitsbewertung verfügbar.
+Alle veröffentlichten Sicherheitsempfehlungen von TVM werden nun auch [in der Preview-Version von Microsoft Secure Score](microsoft-secure-score-preview.md)zur Verfügung gestellt.
