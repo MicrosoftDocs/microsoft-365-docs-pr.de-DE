@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Konfigurieren von Webbrowsern und Edge-Geräten für Datenverkehrumgehungen zu vertrauenswürdigen Office 365-Speicherorten.
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504079"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583393"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Schritt 4: Konfigurieren von Datenverkehrumgehungen
 
@@ -61,6 +61,8 @@ Verbindungen über ein virtuelles privates Netzwerk (VPN) werden in der Regel vo
 Split-Tunneling ist die Fähigkeit einer VPN-Verbindung, bestimmten Datenverkehr über das Internet zu leitet statt diesen die VPN-Verbindung zu Ihrem Intranet zu senden. Um die optimale Leistung von für Remote-Mitarbeitern wesentlichen Microsoft 365-Diensten wie beispielsweise Teams, SharePoint Online und Exchange Online zu erzielen, konfigurieren Sie Ihre Split-Tunneling-VPN-Verbindungen so, dass Datenverkehr zur Optimierung von Endpunkten der Kategorie Office 365 direkt über das Internet gesendet wird. 
 
 Ausführliche Informationen finden Sie unter[Optimieren der Office 365-Konnektivität für Remote-Benutzer mithilfe von VPN-Split-Tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+
+Um zu testen, wie nahe Sie sich an einem Einstiegspunkt zum globalen Microsoft-Netzwerk befinden, und wie nahe Sie sich an dem Punkt befinden, an dem das Netzwerk Ihrer Organisation mit Ihrem ISP verbunden ist, verwenden Sie das [Office 365 Network Onboarding-Tool](https://connectivity.office.com/).
 
 Als Zwischenprüfung können Sie die [Beendigungskriterien](networking-exit-criteria.md#crit-networking-step4) für diesen Schritt betrachten.
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Office 365 für Unternehmen Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955673"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584009"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?
 
@@ -44,7 +44,7 @@ In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezah
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte<br/>Daten Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
 | Benutzer haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen  | Benutzer haben normalen Zugriff auf Office 365, Dateien und Anwendungen              | Benutzer können nicht auf Office 365, Dateien oder Anwendungen zugreifen                        | Benutzer können nicht auf Office 365, Dateien oder Anwendungen zugreifen                                     |
-| Administratoren haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen   | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
+| Administratoren haben normalen Zugriff auf Office 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen   | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
 |                                                                        | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. |                                                                                           |
 
 * Für die meisten Angebote in den meisten Ländern und Regionen.
@@ -143,7 +143,7 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
 
 In diesem Zustand haben Benutzer normalen Zugriff auf das Office 365 Portal, Office-Anwendungen und Dienste wie e-Mail und SharePoint Online.
   
-Als Administrator haben Sie weiterhin Zugriff auf das Admin Center, können Benutzern jedoch keine Lizenzen zuweisen. Globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Office 365 weiterhin verwenden. Wenn Sie es nicht reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
+Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Office 365 weiterhin verwenden. Wenn Sie es nicht reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Status: deaktiviert
   
