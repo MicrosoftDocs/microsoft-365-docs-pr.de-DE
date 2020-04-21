@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Hier erfahren Sie, wie Sie Ihre Teamwebsite anpassen, organisieren und verwalten.
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627618"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
-Wenn Sie ein kleines Unternehmen mit einigen Mitarbeitern haben, besteht eine der besten Möglichkeiten zum Einrichten und vereinfachen der Dateifreigabe und der Online Zusammenarbeit darin, OneDrive und eine SharePoint-Teamwebsite gemeinsam zu verwenden. Es wird empfohlen, eine Teamwebsite zu erstellen, die mit einer Office 365 Gruppe verbunden ist. Wenn Sie Chat verwenden möchten, können Sie diese Website erstellen, indem Sie ein Team in Microsoft Teams erstellen. Weitere Informationen zu Teams finden Sie unter [Video: Was ist Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Wenn Sie keine Teams verwenden möchten, können Sie eine Teamwebsite von der SharePoint-Startseite aus erstellen. 
+Wenn Sie ein kleines Unternehmen mit einigen Mitarbeitern haben, besteht eine der besten Möglichkeiten zum Einrichten und vereinfachen der Dateifreigabe und der Online Zusammenarbeit darin, OneDrive und eine SharePoint-Teamwebsite gemeinsam zu verwenden. Es wird empfohlen, eine Teamwebsite zu erstellen, die mit einer Microsoft 365-Gruppe verbunden ist. Wenn Sie Chat verwenden möchten, können Sie diese Website erstellen, indem Sie ein Team in Microsoft Teams erstellen. Weitere Informationen zu Teams finden Sie unter [Video: Was ist Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Wenn Sie keine Teams verwenden möchten, können Sie eine Teamwebsite von der SharePoint-Startseite aus erstellen. 
   
 [Was ist eine SharePoint-Teamwebsite?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ Informationen zum Erweitern der Listen mit weiteren Spalten finden Sie unter [Er
   
 Wenn Sie viele Daten in einer Liste speichern, finden Sie weitere Informationen unter [Verwalten umfangreicher Listen und Bibliotheken in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Sehen Sie sich ein Video zum Hinzufügen von Kalendern zu Ihrer Website an, siehe [Erstellen eines freigegebenen Kalenders in Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Sehen Sie sich ein Video zum Hinzufügen von Kalendern zu Ihrer Website an, siehe [Erstellen eines freigegebenen Kalenders](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
 ## <a name="organize-sites-into-hubs"></a>Organisieren von Websites in Hubs
 
@@ -92,7 +92,7 @@ Informationen zum Hinzufügen von Websites zu einem Hub-Standort finden Sie unte
 
 Während das Speichern und organisieren ein Anfang ist, ist auch die Freigabe mit Ihrem Team und externen Clients wichtig. Im folgenden finden Sie Links zu Themen, die Sie bei der Verwaltung von Benutzern und der Freigabe Ihrer Daten unterstützen. 
   
-Informationen zur Dateifreigabe mit Ihrem Team finden Sie unter [share SharePoint files or folders in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+Informationen zur Dateifreigabe mit Ihrem Team finden Sie unter [share SharePoint files or folders in Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
   
 Informationen zum Verständnis der Freigabe außerhalb Ihres Teams finden Sie unter [External Sharing Overview](/sharepoint/external-sharing-overview).
   
@@ -102,7 +102,7 @@ Wenn Sie Ihre Teamwebsite verwalten, müssen Sie möglicherweise Benutzer hinzuf
   
 Zeigen Sie ein Video zu Gruppen mit [verstehen und Verwalten von Gruppen](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx)an. 
   
-Informationen zum Hinzufügen von Benutzern zu einer Office 365 Gruppe finden Sie unter [Hinzufügen von Benutzern einzeln oder in loser Schüttung zur Office 365-Admin-Hilfe](../add-users/add-users.md).
+Informationen zum Hinzufügen von Benutzern zu einer Microsoft 365-Gruppe finden Sie unter [Hinzufügen von Benutzern einzeln oder in loser Schüttung zur Microsoft 365-Administratorhilfe](../add-users/add-users.md).
   
 Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten von Zugriffsanforderungen](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx)behandeln.
   
@@ -110,11 +110,11 @@ Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten v
 
 - **Einrichten von Office-Apps auf Tablets und Smartphones**. Dieser Schritt ist erforderlich, damit Sie die auf Ihrer Teamwebsite gespeicherten Dateien über ein Tablet oder Smartphone bearbeiten können. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
     
-  - [Installieren und Einrichten von Office auf einem Android-Gerät mit Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installieren und Einrichten von Office auf einem Android-Gerät mit Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Einrichten von Office auf einem Windows Phone mit Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [Weitere Informationen zum Verwenden von OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

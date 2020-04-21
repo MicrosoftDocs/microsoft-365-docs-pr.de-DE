@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Erfahren Sie, wie Sie einen Office-Aktivierungsbericht erhalten, um zu erfahren, welche Benutzer Ihr Office-Abonnement aktiviert haben, und um Benutzer zu identifizieren, die möglicherweise zusätzliche Hilfe benötigen.
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621222"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-Berichte im Admin Center – Microsoft Office Aktivierungen
 
 Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an.
   
-Im Bericht zu den Office-Aktivierungen wird angezeigt, welche Benutzer ihr Office-Abonnement auf mindestens einem Gerät aktiviert haben. Er enthält eine Aufschlüsselung der aktivierten Office 365 ProPlus-, Project- und Visio Pro für Office 365-Abonnements sowie eine Aufschlüsselung der Aktivierungen auf Desktops und mobilen Geräten. Dieser Bericht kann hilfreich sein, wenn Sie Benutzer identifizieren möchten, die möglicherweise zusätzliche Hilfe und Unterstützung beim Aktivieren ihres Office-Abonnements benötigen.
+Im Bericht zu den Office-Aktivierungen wird angezeigt, welche Benutzer ihr Office-Abonnement auf mindestens einem Gerät aktiviert haben. Es enthält eine Aufschlüsselung der Microsoft 365-Apps für Enterprise, Project und Visio pro für Office 365 Abonnement Aktivierungen sowie die Aufteilung von Aktivierungen auf Desktops und Geräte. Dieser Bericht kann hilfreich sein, wenn Sie Benutzer identifizieren möchten, die möglicherweise zusätzliche Hilfe und Unterstützung beim Aktivieren ihres Office-Abonnements benötigen.
   
 > [!NOTE]
 > Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  

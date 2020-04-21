@@ -1,5 +1,5 @@
 ---
-title: Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Office 365
+title: Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Filtern benutzerdefinierte Benutzeransichten in Office 365 erstellen, bearbeiten oder löschen können.
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Hier erfahren Sie, wie Sie Filter zum Erstellen, bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Microsoft 365 verwenden können.
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047059"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617260"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Office 365
 
@@ -63,7 +63,7 @@ Wenn Sie eine benutzerdefinierte Benutzeransicht erstellen, bearbeiten oder lös
 Zu Standardansichten müssen noch einige weitere Punkte angemerkt werden: 
 
 - In einigen Standardansichten wird eine nicht sortierte Liste angezeigt, wenn die Liste mehr als 2.000 Benutzer enthält. Wenn Sie in dieser Liste nach bestimmten Benutzern suchen möchten, müssen Sie das Suchfeld verwenden. 
-- If you didn't purchase Office 365 from Microsoft, **Billing admins** don't appear in the standard views list. For more information, see [Assigning admin roles](assign-admin-roles.md). 
+- Wenn Sie Microsoft 365 nicht von Microsoft erworben haben, werden die **Abrechnungs Administratoren** nicht in der Liste Standardansichten angezeigt. Weitere Informationen finden Sie unter [Zuweisen von Adminrollen](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Wählen der Filter für die benutzerdefinierte Benutzeransicht
 
@@ -88,12 +88,12 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
     
 - **Benutzer ohne Lizenzen:** Wählen Sie dieses Feld aus, um nach allen Benutzern zu suchen, denen keine Lizenz zugewiesen ist. Die Ergebnisse für diese Ansicht können auch Benutzer umfassen, die ein Exchange-Postfach, aber keine Lizenz besitzen. Um speziell diese Benutzer nachzuverfolgen, verwenden Sie den Filter **Benutzer mit Exchange-Postfächern oder -Archiven und keinen Lizenzen**. Die Ergebnisse dieser Ansicht können auch Benutzer umfassen, die über ein Exchange-Archiv, jedoch nicht über eine Lizenz verfügen.
     
-- **Benutzer ohne Lizenzen mit Exchange-Postfächern oder -Archiven und:** Wählen Sie dieses Feld aus, um Benutzerkonten anzuzeigen, die in Exchange Online erstellt wurden und denen ein Exchange-Postfach zugewiesen wurde, die jedoch nicht über eine Office 365-Lizenz verfügen. Die Ergebnisse dieses Filters enthalten Benutzer, die über ein Exchange-Archiv verfügen oder einem solchen zugewiesen wurden. 
+- Nicht **lizenzierte Benutzer mit Exchange-Postfächern oder-Archiven** Aktivieren Sie dieses Kontrollkästchen, um Benutzerkonten anzuzeigen, die in Exchange Online erstellt wurden und über ein Exchange-Postfach verfügen, dem aber keine Microsoft 365-Lizenz zugewiesen wurde. Die Ergebnisse dieses Filters enthalten Benutzer, die über ein Exchange-Archiv verfügen oder einem solchen zugewiesen wurden. 
 
 > [!NOTE]
 > Die nicht **lizenzierten Benutzer mit Exchange-Post** Fach Filter funktionieren in folgenden Fällen:
 1. Das Postfach wurde kürzlich von **freigegebener** **Benutzer** konvertiert und verfügt über keine Lizenz.
-2. Das Postfach wurde kürzlich zu Office 365 migriert, aber es wurde keine Lizenz zugewiesen.
+2. Das Postfach wurde kürzlich zu Microsoft 365 migriert, aber es wurde keine Lizenz zugewiesen.
 3. Das Postfach wurde mithilfe von PowerShell erstellt, und es wurde keine Lizenz zugewiesen.
 4. Ein neues Postfach, das lokal mit einem New-Remote Mailbox-Cmdlet erstellt wurde, wird für den Benutzer bereitgestellt.
     

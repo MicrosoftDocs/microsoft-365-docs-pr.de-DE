@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren Ihrer Administratortelefonnummer und -E-Mail-Adresse in Office 365
+title: Aktualisieren Ihrer Administrator-Telefonnummer und e-Mail-Adresse
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aktualisieren Sie Ihre Administrator-Telefonnummer und e-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361670"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628004"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>Aktualisieren Ihrer Administratortelefonnummer und -E-Mail-Adresse in Office 365
+# <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administrator-Telefonnummer und e-Mail-Adresse
 
-[] In diesem Artikel wird erläutert, wie Sie als Administrator Ihre geschäftliche Telefonnummer und E-Mail-Adresse in Office 365 ändern können.
+In diesem Artikel erfahren Sie, wie Sie als Administrator Ihre geschäftliche Telefon-und e-Mail-Adresse in Microsoft 365 ändern können.
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).
   
@@ -40,7 +40,7 @@ Auf der Seite **persönliche Informationen** können Sie Ihren Namen, Ihre Mobil
 
 2. Wählen Sie in der Kopfzeile Ihr Profilsymbol \> **meine persönlichen Konto** \> **Informationen**aus.
 
-3. Wählen Sie im Abschnitt **Kontaktdetails** die Option Bearbeiten aus. Aktualisieren Sie Ihr Handy, Telefon und Alternative e-Mail-Adresse. Stellen Sie sicher, dass Sie als alternative E-Mail-Adresse eine andere Adresse als Ihre Office 365-E-Mail-Adresse verwenden.
+3. Wählen Sie im Abschnitt **Kontaktdetails** die Option Bearbeiten aus. Aktualisieren Sie Ihr Handy, Telefon und Alternative e-Mail-Adresse. Stellen Sie sicher, dass Sie etwas anderes als Ihre Microsoft-e-Mail-Adresse für Ihre alternative e-Mail-Adresse verwenden.
 
     > [!IMPORTANT]
     > Die Alternative e-Mail-Adresse und die Mobiltelefonnummer sind erforderlich, um Ihr Administratorkennwort zurücksetzen zu können (nicht Ihr Administratorkennwort für Ihr Computer).
@@ -49,6 +49,6 @@ Auf der Seite **persönliche Informationen** können Sie Ihren Namen, Ihre Mobil
   
 Bei Fragen zur Abrechnung werden Sie hier fündig:
   
-- [Ändern der Rechnungsadressen für Office 365 Business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Ändern ihrer Abrechnungs Adressen für Microsoft 365 for Business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Office 365 Business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Hinzufügen, aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Microsoft 365 for Business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

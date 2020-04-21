@@ -18,35 +18,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Erfahren Sie mehr über integrierte apps und wie Sie Sie aktivieren können, um Drittanbieter-apps den Zugriff auf die Office 365 Informationen von Benutzern zu ermöglichen.
-ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Erfahren Sie mehr über integrierte apps und wie Sie Sie aktivieren können, um Drittanbieter-Apps für den Zugriff auf Microsoft 365-Informationen von Benutzern zu ermöglichen.
+ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361386"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627848"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
 
-[] Wenn integrierte Apps aktiviert sind, können Benutzer in Ihrer Organisation Apps von Drittanbietern den Zugriff auf ihre Office 365-Informationen gestatten. Wenn beispielsweise jemand eine App eines Drittanbieters verwendet, könnte diese App Berechtigungen für den Zugriff auf den Kalender des Benutzers anfordern sowie zum Bearbeiten von Dateien, die sich in einem OneDrive-Ordner befinden.
+Wenn integrierte apps aktiviert sind, können Benutzer in Ihrer Organisation Drittanbieter-apps den Zugriff auf Ihre Microsoft 365-Informationen erlauben. Wenn beispielsweise jemand eine App eines Drittanbieters verwendet, könnte diese App Berechtigungen für den Zugriff auf den Kalender des Benutzers anfordern sowie zum Bearbeiten von Dateien, die sich in einem OneDrive-Ordner befinden.
 
 ## <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
 <a name="__toc379982114"> </a>
 
 Wie folgt aktivieren oder deaktivieren Sie integrierte Apps.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> [-Dienst &amp; -Add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) , und wählen Sie dann **integrierte apps**aus.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungen** \> [-Dienst &amp; -Add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) , und wählen Sie dann **integrierte apps**aus.
 
 2. Wählen Sie auf der Seite **integrierte apps** die Option zum Aktivieren oder deaktivieren integrierter Apps aus.
 
 ## <a name="more-info-on-integrated-apps"></a>Weitere Informationen zu integrierten Apps
 <a name="__toc379982114"> </a>
 
-Eine integrierte App kann innerhalb Ihrer eigenen Organisation erstellt werden oder aus einer anderen Office 365-Organisation oder von einem Drittanbieter stammen.
+Eine integrierte App kann in ihrer eigenen Organisation erstellt werden oder aus einer anderen Organisation oder einem Drittanbieter stammen.
 
-Wenn integrierte Apps aktiviert sind und eine App verwendet wird, fordert die App die Berechtigung an, die Zugriffsebene so festlegen zu dürfen, wie sie beim Zugriff auf die Informationen des Benutzers erforderlich sind. Ein Benutzer kann nur Apps, deren Besitzer er ist, Zugriff auf seine Office 365-Informationen gewähren. Sie können einer App keinen Zugriff auf die Informationen anderer Benutzer gewähren.
+Wenn integrierte Apps aktiviert sind und eine App verwendet wird, fordert die App die Berechtigung an, die Zugriffsebene so festlegen zu dürfen, wie sie beim Zugriff auf die Informationen des Benutzers erforderlich sind. Ein Benutzer kann nur Zugriff auf apps gewähren, denen er angehört, die auf seine Microsoft 365-Informationen zugreifen. Sie können einer App keinen Zugriff auf die Informationen anderer Benutzer gewähren.
 
-Es gibt zwei Arten von Berechtigungen, die bei der Verwendung integrierter Apps in Office 365 verwendet werden: Benutzerberechtigungen und Administratorberechtigungen. Wenn Ihre Organisation beispielsweise für integrierte Apps aktiviert ist und ein Benutzer eine App eines Drittanbieters verwendet, könnte die App vom Benutzer die Berechtigung zum Lesen seiner Benutzerprofildetails, zum Bearbeiten oder Löschen seiner Dateien, zum Lesen von in Websitesammlungen enthaltenen Elementen und zum Senden von E-Mail im Namen dieses Benutzers fordern.
+Es gibt zwei Arten von Berechtigungen, die bei der Verwendung integrierter apps in Microsoft 365 verwendet werden: Benutzerberechtigungen und Administratorberechtigungen. Wenn Ihre Organisation beispielsweise für integrierte Apps aktiviert ist und ein Benutzer eine App eines Drittanbieters verwendet, könnte die App vom Benutzer die Berechtigung zum Lesen seiner Benutzerprofildetails, zum Bearbeiten oder Löschen seiner Dateien, zum Lesen von in Websitesammlungen enthaltenen Elementen und zum Senden von E-Mail im Namen dieses Benutzers fordern.
 
 ![Benutzerberechtigungen für integrierte Apps](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 

@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird der Unterschied zwischen Junk-e-Mails (Spam) und Massen-e-Mails sowie die zugehörigen Steuerelemente in Office 365 erläutert.
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230956"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630833"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk- und Massen-E-Mails?
 
-Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer manchmal Fragen: "Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EoP zur Verfügung stehen.
+Microsoft 365 Kunden mit Postfächern in Exchange Online oder eigenständigen Exchange Online Schutz Kunden ohne Exchange Online Postfächer Fragen manchmal: "Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail-EoP?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EoP zur Verfügung stehen.
 
 - **Junk-e-** Mails sind Spam, bei denen es sich um unerwünschte und universell unerwünschte Nachrichten handelt (wenn Sie richtig identifiziert werden). Standardmäßig lehnt der EoP Spam basierend auf der Reputation des Quell-e-Mail-Servers ab. Wenn eine Nachricht die Quell-IP-Prüfung übergibt, wird Sie an die Spamfilterung gesendet. Wenn die Nachricht durch Spamfilterung als Spam klassifiziert wird, wird die Nachricht (standardmäßig) an die beabsichtigten Empfänger übermittelt und in Ihren Junk-e-Mail-Ordner verschoben.
 
@@ -41,7 +41,7 @@ Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Excha
 
 Aufgrund der gemischten Reaktion auf Massen-e-Mails gibt es keine universellen Anleitungen für jede Organisation.
 
-Anti-Spam-Richtlinien weisen einen standardmäßigen BCL-Schwellenwert auf, mit dem Massen-e-Mails als Spam identifiziert werden. Administratoren können den Schwellenwert erweitern oder verringern. Weitere Informationen hierzu finden Sie in den folgenden Themen:
+Anti-Spam-Richtlinien haben einen standardmäßigen BCL-Schwellenwert, der verwendet wird, um Massen-e-Mails als Spam zu identifizieren. Administratoren können den Schwellenwert erweitern oder verringern. Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 - [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 

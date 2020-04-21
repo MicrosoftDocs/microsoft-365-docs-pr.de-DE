@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c3406ebf5962d6f0ac08c1ee280bab725cf1c3bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857463"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626958"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -59,7 +59,7 @@ Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Info-Center
 
 5. Wählen Sie ein Element in der Liste aus, um weitere Details zu einer Untersuchung anzuzeigen. Die Untersuchungsdetailansicht wird geöffnet.<br/>![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
-    - Wenn es sich bei der Untersuchung um E-Mail-Inhalte (z. B. die Entität ist ein Postfach) handelt, werden die Untersuchungsdetails im Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) geöffnet. 
+    - Wenn sich die Untersuchung auf e-Mail-Inhalte bezieht (beispielsweise die Entität ist ein Postfach), werden Ermittlungs Details im Security[https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)& Compliance Center () geöffnet. 
 
     - Wenn es bei der Untersuchung um ein Gerät geht, werden die Untersuchungsdetails im Security Center ([https://security.microsoft.com](https://security.microsoft.com)) geöffnet. 
 
@@ -73,7 +73,7 @@ Um ausstehende Aktionen im Info-Center zu genehmigen oder abzulehnen, müssen Si
 |Wartungsaktion |Erforderliche Rollen und Berechtigungen |
 |--|----|
 |Microsoft Defender ATP-Wartung (Geräte) |Sicherheitsadministratorrolle in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- oder ---<br/>Rolle Aktive Wartungsaktionen in Microsoft Defender ATP <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Office 365 ATP-Wartung (Office-Inhalte und E-Mail)  |Sicherheitsadministratorrolle in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>Rolle Suchen und Löschen im Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**WICHTIG**: Wenn Ihnen die Rolle „Sicherheitsadministrator“ nur im Office 365 Security & Compliance Center zugewiesen ist, können Sie nicht auf die Funktionen des Info-Centers oder von Microsoft Threat Protection zugreifen. Ihnen muss die Sicherheitsadministratorrolle in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Office 365 ATP-Wartung (Office-Inhalte und E-Mail)  |Sicherheitsadministratorrolle in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>Dem Security & Compliance Center zugewiesene Rolle "Search and Purge[https://protection.office.com](https://protection.office.com)" () <br/><br/>**Wichtig**: Wenn Sie die Sicherheits Administrator Rolle nur im Sicherheits & Compliance Center zugewiesen haben, können Sie nicht auf das Action Center oder die Microsoft Threat Protection-Funktionen zugreifen. Ihnen muss die Sicherheitsadministratorrolle in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > Benutzer, denen in Azure Active Directory die Rolle Globaler Administrator zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen einschränken, denen die Rolle des globalen Administrators zugewiesen ist. Es wird empfohlen, die oben aufgeführten Rollen Sicherheitsadministrator, Aktive Wartungsaktionen und Suchen und Löschen für Info-Center-Berechtigungen zu verwenden.

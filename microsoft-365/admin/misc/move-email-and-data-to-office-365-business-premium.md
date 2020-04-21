@@ -1,5 +1,5 @@
 ---
-title: Verschieben von E-Mails und Daten nach Office 365 Business Premium
+title: Migrieren von e-Mails und Daten nach Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,30 +21,30 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: In diesem Artikel erfahren Sie, wie Sie Daten in Ihre neue Geschäftsidentität umlegen.
-ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209676"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627836"
 ---
-# <a name="move-email-and-data-to-office-365-business-premium"></a>Verschieben von E-Mails und Daten nach Office 365 Business Premium
+# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Migrieren von e-Mails und Daten nach Microsoft 365 Business Standard
 
-Wenn Sie ein Upgrade auf Office 365 Business Premium durchführen, erhalten Sie eine ganz neue *Geschäftsidentität*. Sie erhalten ein neues E-Mail-Konto und ein separates OneDrive-Konto für Ihre Geschäftsdaten. 
+Wenn Sie ein Upgrade auf Microsoft 365 Business Standard durchführen, erhalten Sie eine ganz neue *Geschäftsidentität*. Sie erhalten ein neues E-Mail-Konto und ein separates OneDrive-Konto für Ihre Geschäftsdaten. 
   
 Wenn Sie einige Ihrer persönlichen Daten auf die neue Business-Identität verschieben möchten, folgen Sie den nachstehenden Anweisungen.
   
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **Kopieren Ihrer OneDrive-Daten**
-1. Erstellen Sie einen temporären Ordner auf Ihrer Festplatte, um die Dateien vorübergehend zu speichern, die Sie nach Office 365 Business migrieren möchten.
+1. Erstellen Sie einen temporären Ordner auf Ihrer Festplatte, um die Dateien, die Sie zu Microsoft 365 for Business migrieren möchten, vorübergehend zu speichern.
     
-2. Wechseln Sie [https://onedrive.live.com/](https://onedrive.live.com/) zu, und melden Sie sich mit dem Microsoft-Konto an, das Sie für den Zugriff auf Ihr Office 365 für Privat Abonnement verwenden. 
+2. Wechseln Sie [https://onedrive.live.com/](https://onedrive.live.com/) zu und melden Sie sich mit dem Microsoft-Konto an, das Sie für den Zugriff auf Ihr Microsoft 365-Familien Abonnement verwenden. 
     
-3. Kopieren Sie die Dateien, die Sie in Office 365 Business verwenden möchten, in den in Schritt 1 erstellten lokalen Ordner.
+3. Kopieren Sie die Dateien, die Sie mit Microsoft 365 for Business verwenden möchten, in den lokalen Ordner, den Sie in Schritt 1 erstellt haben.
     
- **IImportieren von OneDrive-Dateien nach Office 365 Business**
-1. Wechseln Sie zu [Admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) , und melden Sie sich mit Ihrem Office 365 Geschäftsbenutzer Namen und Kennwort an. 
+ **Importieren von OneDrive-Dateien in Microsoft 365 for Business**
+1. Wechseln Sie zu [Admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) , und melden Sie sich mit Ihrem Benutzernamen und Kennwort für Microsoft 365 apps for Business an. 
     
 2. Select the **app launcher** icon in the upper-left and then choose **OneDrive**.
   
@@ -66,14 +66,14 @@ Wenn Sie einige Ihrer persönlichen Daten auf die neue Business-Identität versc
 2. Jeden Benutzer muss die Schritte unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalender in einer Outlook-PST-Datei](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) ausführen.
     
  **Einrichten Ihres neuen E-Mail-Kontos in Outlook**
-1. Jeder Benutzer muss im Office 365 Business-Abonnement ein neues E-Mail-Konto einrichten. Hierfür benötigt er die Adresse des neuen E-Mail-Kontos. Der Name des E-Mail-Kontos des Benutzers ist derselbe wie der Benutzername, mit dem er sich bei Office 365 anmeldet. Also beispielsweise: laura@onmicrosoft.com oder karl@contoso.com.
+1. Jeder Benutzer muss sein neues e-Mail-Konto einrichten, das im Lieferumfang des Microsoft 365 for Business-Abonnements aufgeführt ist. Hierfür benötigt er die Adresse des neuen E-Mail-Kontos. Das e-Mail-Konto jedes Benutzers ist identisch mit dem Benutzernamen, mit dem er sich bei Microsoft 365 for Business anmeldet. Also beispielsweise: laura@onmicrosoft.com oder karl@contoso.com.
     
 2. Bitten Sie jeden Benutzer, sein E-Mail-Konto in Outlook hinzuzufügen. Wenn Sie wissen möchten, wie das geht, lesen Sie [Einrichten von E-Mail in Outlook (für Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
     
  **Importieren von -Daten aus einer Outlook-Datendatei**
-1. Damit werden die E-Mails, Kalender, Aufgaben und Kontakte, die sich in der PST-Datei befinden, im Office 365 Business-E-Mail-Konto zusammengeführt.
+1. Dadurch werden die e-Mails, Kalender, Aufgaben und Kontakte, die in der PST-Datei gespeichert sind, in Ihr Microsoft 365 for Business-e-Mail-Konto zusammengeführt.
     
-2. Zum Importieren der Daten aus der PST-Datei in sein Office 365 Business-E-Mail-Konto muss jeder Benutzer die Schritte in [Importieren von E-Mails, Kontakten und Kalendern aus einer Outlook-PST-Datei](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx) ausführen.
+2. Wenn Sie die in der PST-Datei gespeicherten Informationen in Ihr Microsoft 365 for Business-e-Mail-Konto importieren möchten, führen Sie die Schritte unter [Importieren von e-Mails, Kontakten und Kalender aus einer Outlook. PST-Datei durch](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx).
     
 ---
 

@@ -16,17 +16,17 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f6dbd808fac54ae273c21773bf8caeabce09b7fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529049"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631241"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Office 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Office 365 Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
+> Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online Postfächern sind, wird empfohlen, dass Sie das Portal für Übermittlungen im Security & Compliance Center verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
 
 Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-Nachrichten (Spam) oder Phishing-Nachrichten in Ihrem Posteingang empfangen oder wenn Sie keine legitime e-Mail-Nachricht erhalten, weil Sie als Junk gekennzeichnet ist. Wir optimieren unsere Spamfilter ständig, um genauere Angaben zu machen.
 
@@ -81,7 +81,7 @@ Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie
 
 Sie können eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, die nach e-Mail-Nachrichten sucht, die an Microsoft mithilfe der in diesem Thema beschriebenen Methoden gemeldet werden, und Sie können Bcc-Empfänger so konfigurieren, dass Kopien dieser gemeldeten Nachrichten empfangen werden.
 
-Sie können die Nachrichtenfluss Regel in der Exchange-Verwaltungskonsole (EAC) und in PowerShell (Exchange Online PowerShell für Office 365 Kunden erstellen; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
+Sie können die Nachrichtenfluss Regel in der Exchange-Verwaltungskonsole (EAC) und PowerShell (Exchange Online PowerShell für Microsoft 365-Kunden erstellen; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 

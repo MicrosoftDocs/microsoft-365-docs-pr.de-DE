@@ -1,5 +1,5 @@
 ---
-title: Entfernen einer Domäne aus Office 365
+title: Entfernen einer Domäne
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Hier erfahren Sie, wie Sie eine alte Domäne aus Office 365 entfernen und Benutzer und Gruppen in eine andere Domäne verlagern.
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Hier erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verlagern.
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210368"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628434"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Entfernen einer Domäne aus Office 365
+# <a name="remove-a-domain"></a>Entfernen einer Domäne
 
 [] Mitwirkende: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-Entfernen Sie Ihre Domäne, weil Sie sie einem anderen Office 365-Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
+Entfernen Sie Ihre Domäne, da Sie Sie einem anderen Microsoft 365-Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Schritt 1: verlagern von Benutzern in eine andere Domäne
 
@@ -210,7 +210,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Wie lange dauert es, bis eine Domäne entfernt wurde?
 
-Es kann weniger als 5 Minuten dauern, bis Office 365 eine Domäne entfernen, wenn Sie nicht an vielen Stellen wie Sicherheitsgruppen, Verteilerlisten, Benutzern und Office 365 Gruppen referenziert wird. Wenn es viele Verweise gibt, die die Domäne verwenden, kann es mehrere Stunden (einen Tag) dauern, bis die Domäne entfernt wird.
+Es kann weniger als 5 Minuten dauern, bis Microsoft 365 eine Domäne entfernt, wenn Sie nicht an vielen Stellen wie Sicherheitsgruppen, Verteilerlisten, Benutzern und Microsoft 365-Gruppen referenziert wird. Wenn es viele Verweise gibt, die die Domäne verwenden, kann es mehrere Stunden (einen Tag) dauern, bis die Domäne entfernt wird.
   
 Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, verwenden Sie PowerShell, um alle Benutzer abzufragen und in eine andere Domäne zu verschieben. Andernfalls könnte es passieren, dass einige Benutzer der Benutzeroberfläche vergessen werden. Wenn dann das Entfernen der Domäne nicht möglich ist, wissen Sie nicht, warum. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -231,6 +231,6 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
 
 [Hilfe zu Office 365-Domänen erhalten](get-help-with-domains.md)
 
-[Wechseln zu einem anderen Office 365 Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Wechseln zu einem anderen Microsoft 365 for Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md)

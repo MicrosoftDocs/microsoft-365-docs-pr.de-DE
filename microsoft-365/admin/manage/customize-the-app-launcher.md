@@ -2,8 +2,8 @@
 title: Hinzufügen von benutzerdefinierten Kacheln zum App-Startfeld
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,20 +20,20 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Erstellen Sie schnell Links zu Ihren e-Mails, Dokumenten, apps, SharePoint-Websites, externen Websites und anderen Ressourcen durch Hinzufügen von benutzerdefinierten Kacheln zum App-Startfeld. '
-ms.openlocfilehash: fff65c7263e40bf376f53e5f150daea7a24ff55d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 705d45a2c26d3bd5e2d45d6d8f5a7c998c449f8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131531"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628196"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Hinzufügen von benutzerdefinierten Kacheln zum App-Startfeld
 
-[] In Office 365 können Sie mithilfe des Office 365-App-Startfelds schnell und einfach zu Ihren E-Mails, Kalendern, Dokumenten und Apps gelangen ([weitere Informationen](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)). Dabei handelt es sich um Apps, die in Office 365 enthalten sind, sowie benutzerdefinierte Apps, die Sie aus dem [SharePoint Store](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx) oder [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher) hinzufügen.
+In Microsoft 365 können Sie schnell und einfach mit dem App-Startfeld zu Ihren e-Mails, Kalendern, Dokumenten und apps gelangen ([Weitere Informationen](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)). Dies sind apps, die Sie mit Microsoft 365 sowie benutzerdefinierte apps erhalten, die Sie aus dem [SharePoint Store](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx) oder [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)hinzufügen.
   
 Sie können dem App-Startfeld auch eigene benutzerdefinierte Kacheln hinzufügen, die auf SharePoint-Websites, externe Websites, Legacy-Apps usw. verweisen. Die benutzerdefinierte Kachel wird unter den Apps **Alle** des App-Startfelds angezeigt. Sie können sie aber an die **Start**-Apps anheften und Ihre Benutzer anweisen, ebenso zu verfahren. Auf diese Weise sind die relevanten Websites, Apps und Ressourcen für Ihre Arbeit leicht zu finden. Im folgenden Beispiel wird eine benutzerdefinierte Kachel mit dem Namen "Contoso-Portal" verwendet, um auf die SharePoint-Intranetwebsite einer Organisation zuzugreifen. 
   
-![App-Startfeld für Office 365](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![App-Startprogramm](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Hinzufügen einer benutzerdefinierten Kachel zum App-Startfeld
 
@@ -62,7 +62,7 @@ Ihre benutzerdefinierte Kachel wird jetzt im App-Startfeld auf der Registerkarte
 2. Suchen Sie die neue Kachel für Ihre APP, wählen Sie die Auslassungspunkte aus, und wählen Sie **Pin to Launcher**aus.
   
     > [!NOTE]
-    > Wenn die in den vorstehenden Schritten erstellte benutzerdefinierte Kachel nicht angezeigt wird, vergewissern Sie sich, dass Ihnen ein Exchange Online-Postfach zugewiesen wurde und Sie sich bei Ihrem Postfach mindestens einmal angemeldet haben. Diese Schritte sind für benutzerdefinierte Kacheln in Office 365 erforderlich. 
+    > Wenn die in den vorstehenden Schritten erstellte benutzerdefinierte Kachel nicht angezeigt wird, vergewissern Sie sich, dass Ihnen ein Exchange Online-Postfach zugewiesen wurde und Sie sich bei Ihrem Postfach mindestens einmal angemeldet haben. Diese Schritte sind für benutzerdefinierte Kacheln in Microsoft 365 erforderlich. 
   
 > [!IMPORTANT]
 > Sowohl Sie als auch Ihre Benutzer müssen diese Schritte ausführen, um benutzerdefinierte Kacheln von der Seite "Meine Apps" in das App-Startfeld heraufzustufen. 
@@ -81,6 +81,6 @@ Wenn Sie eine benutzerdefinierte Kachel aus dem Fenster **benutzerdefinierte** K
   
 ## <a name="whats-next"></a>Nächste Schritte
 
-Sie können nicht nur Kacheln zum App-Startfeld hinzufügen, sondern auch Kacheln im App-Startfeld zur Office 365-Navigationsleiste hinzufügen ([weitere Informationen](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)). Informationen zum Anpassen des Aussehens und Verhaltens von Office 365 entsprechend dem Branding Ihrer Organisation finden Sie unter [Anpassen des Office 365-Designs](../setup/customize-your-organization-theme.md).
+Zusätzlich zum Hinzufügen von Kacheln zum App-Startfeld können Sie der Navigationsleiste App-Start Kacheln hinzufügen ([Weitere Informationen](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)). Informationen zum Anpassen des Erscheinungsbild von Microsoft 365 an die Marke Ihrer Organisation finden Sie unter [Anpassen des Microsoft 365-Designs](../setup/customize-your-organization-theme.md).
   
 

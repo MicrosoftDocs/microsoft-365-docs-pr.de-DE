@@ -17,18 +17,18 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die Spoof Intelligence-Einblicke in Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: 92e922bf3045e98de16b07a47113effd9dc6ccdd
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630929"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-office-365"></a>Exemplarische Vorgehensweise – ATP-Spoof Intelligence Insight in Office 365
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Exemplarische Vorgehensweise – ATP-Spoof Intelligence Insight in Microsoft 365
 
-In Office 365 Organisationen mit Advanced Threat Protection (ATP) können Sie die Spoof Intelligence-Einblicke verwenden, um schnell festzustellen, welche Absender legitimerweise nicht authentifizierte e-Mails senden. Durch die Möglichkeit, gefälschte Nachrichten zu senden, können Sie das Risiko verringern, dass falsch positive Ergebnisse an Ihre Benutzer gesendet werden. Sie können auch die Spoof Intelligence-Einblicke verwenden, um zugelassene Domänen Paare zu überwachen und zu verwalten, um eine zusätzliche Sicherheitsebene bereitzustellen und zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eingehen.
+In Microsoft 365-Organisationen mit Advanced Threat Protection (ATP) können Sie die Spoof Intelligence-Einblicke verwenden, um schnell festzustellen, welche Absender legitimerweise nicht authentifizierte e-Mails senden. Durch die Möglichkeit, gefälschte Nachrichten zu senden, können Sie das Risiko verringern, dass falsch positive Ergebnisse an Ihre Benutzer gesendet werden. Sie können auch die Spoof Intelligence-Einblicke verwenden, um zugelassene Domänen Paare zu überwachen und zu verwalten, um eine zusätzliche Sicherheitsebene bereitzustellen und zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eingehen.
 
-Wenn Sie noch nicht mit [Berichten und Einblicken in das Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)arbeiten, können Sie sehen, wie Sie einfach von einem Dashboard zu einer Einblicke und empfohlenen Aktionen navigieren können.
+Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken in das Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, kann es hilfreich sein, zu sehen, wie Sie einfach von einem Dashboard zu einer Einblicke und empfohlenen Aktionen navigieren können.
 
 Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Compliance Center. Informationen zum Navigieren in Berichten und Einblicken finden Sie unter Exemplarische Vorgehensweisen im Abschnitt "Verwandte Themen".
 
@@ -38,11 +38,11 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
   Sie können die Einblicke in Spoof Intelligence aus mehreren Dashboards im Security & Compliance Center anzeigen. Unabhängig davon, für welches Dashboard Sie sich interessieren, bietet die Insight dieselben Details und ermöglicht Ihnen, schnell dieselben Aufgaben auszuführen.
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Um die Spoof Intelligence-Einblicke verwenden zu können, müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung**", " **Sicherheits Administrator**" oder " **Sicherheits Leser** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Um die Spoof Intelligence-Einblicke verwenden zu können, müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung**", " **Sicherheits Administrator**" oder " **Sicherheits Leser** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Sie aktivieren und deaktivieren Spoof Intelligence in ATP Anti-Phishing Policies. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).
+- Sie aktivieren und deaktivieren Spoof Intelligence in ATP Anti-Phishing Policies. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- In Office 365 Organisationen mit Exchange Online Postfächern und in eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie Spoof Intelligence zum Überwachen und Verwalten von Absendern verwenden, von denen Sie nicht authentifizierte Nachrichten senden. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- In Microsoft 365-Organisationen mit Exchange Online Postfächern und in eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie Spoof Intelligence zum Überwachen und Verwalten von Absendern verwenden, von denen Sie nicht authentifizierte Nachrichten senden. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öffnen Sie die Spoof Intelligence-Einblicke im Security & Compliance Center.
 
@@ -74,11 +74,11 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
    Zu den **verdächtigen Domänen Paaren** gehören:
 
-   - **Spoofing mit hoher Vertrauens**Würdigkeit: Office 365 erhalten starke Signale, dass diese Domänen verdächtig sind, basierend auf den Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen. Office 365 ist sehr zuversichtlich, dass die Domänen Spoofing sind und dass von diesen Domänen gesendete Nachrichten mit geringerer Wahrscheinlichkeit Legitimität aufweisen.
+   - **Spoofing mit hoher Zuverlässigkeit**: Microsoft 365 hat starke Signale erhalten, dass diese Domänen verdächtig sind, basierend auf den Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen. Microsoft 365 ist sehr zuversichtlich, dass die Domänen Spoofing sind und dass Nachrichten, die von diesen Domänen gesendet werden, eher legitim sind.
 
-   - **Moderate Confidence Spoof**: Office 365 empfangen moderaten Signale, dass diese Domänen verdächtig sind, basierend auf historischen Sende Mustern und der Reputationsbewertung der Domänen. Office 365 ist gemäßigt zuversichtlich, dass die Domänen Spoofing sind und dass von diesen Domänen gesendete Nachrichten legitim sind. Dieser Bucket hat eine größere Chance, falsch positive Ergebnisse (fps) zu enthalten als den Spoofing-Bucket mit hoher Vertrauenswürdigkeit.
+   - **Gemäßigte Zuverlässigkeits Spoof**: Microsoft 365 erhielt moderate Signale, dass diese Domänen verdächtig sind, basierend auf Verlaufs Sende Mustern und dem Reputations Ergebnis der Domänen. Office 365 ist gemäßigt zuversichtlich, dass die Domänen Spoofing sind und dass von diesen Domänen gesendete Nachrichten legitim sind. Dieser Bucket hat eine größere Chance, falsch positive Ergebnisse (fps) zu enthalten als den Spoofing-Bucket mit hoher Vertrauenswürdigkeit.
 
-   - **Nicht-verdächtige Domänen Paare** (einschließlich **geretteter Spoofing**): "gerettete Spoof" sind Domänen, bei denen die explizite Authentifizierungsüberprüfung [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)fehlgeschlagen ist, aber unsere impliziten e-Mail-Authentifizierungsprüfungen ([kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)) bestanden haben. Folglich haben Office 365 die e-Mails in Ihrem Auftrag gerettet und keine Antispoofing-Aktion in der Nachricht ausgeführt.
+   - **Nicht-verdächtige Domänen Paare** (einschließlich **geretteter Spoofing**): "gerettete Spoof" sind Domänen, bei denen die explizite Authentifizierungsüberprüfung [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)fehlgeschlagen ist, aber unsere impliziten e-Mail-Authentifizierungsprüfungen ([kombinierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)) bestanden haben. Daher hat Microsoft 365 die e-Mails in Ihrem Namen gerettet, und es wurde keine Antispoofing-Aktion für die Nachricht ausgeführt.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Anzeigen detaillierter Informationen zu verdächtigen Domänen Paaren aus dem Spoof Intelligence-Insight
 
@@ -100,7 +100,7 @@ Wenn Sie beispielsweise das folgende Domänenpaar zur Absender Zulassungsliste "
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Antispoofingschutz in Office 365](anti-spoofing-protection.md)
+[Schutz gegen Spoofing in Microsoft 365](anti-spoofing-protection.md)
 
 [Exemplarische Vorgehensweise – Vom Dashboard zum Einblick](from-a-dashboard-to-an-insight.md)
 

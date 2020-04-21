@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633603"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625206"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -93,11 +93,11 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 
 <sup>*</sup>Erfahren Sie mehr über die Verwendung von bedingtem Zugriff mit dem [OneDrive-synchronisierungsclient](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
-### <a name="office-365-client-support"></a>Office 365-Clientunterstützung
-Weitere Informationen zur Office 365-Clientunterstützung finden Sie in den folgenden Artikeln:
-- [Office 365 Client-App-Unterstützung – bedingter Zugriff](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 Client-App-Unterstützung – Mobile Anwendungsverwaltung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 Client-App-Unterstützung – moderne Authentifizierung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### <a name="microsoft-365-client-support"></a>Microsoft 365-Clientunterstützung
+Weitere Informationen zur Clientunterstützung finden Sie in den folgenden Artikeln:
+- [Microsoft 365-Client-App-Unterstützung – bedingter Zugriff](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365-Client-App-Support-Mobile Anwendungsverwaltung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365-Client-App-Support-moderne Authentifizierung](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>Schützen von Administratorkonten
 Azure Ad bietet Ihnen eine einfache Möglichkeit, den Administratorzugriff mit einer vorkonfigurierten Richtlinie für bedingten Zugriff zu schützen. Wechseln Sie in Azure AD zu **bedingter Zugriff** , und suchen Sie nach dieser Richtlinie – **Baseline-Richtlinie: MFA für Administratoren erfordern (Vorschau)**. Wählen Sie diese Richtlinie aus, und wählen Sie dann **Richtlinie sofort verwenden**aus. 
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter [Baseline Security Policy for Azure AD Ad
 Weitere Empfehlungen umfassen Folgendes:
 - Verwenden Sie Azure AD Privileged Identity Management zum Reduzieren der Anzahl der persistenten Administratorkonten. Weitere Informationen finden Sie unter [Beginn der Verwendung von PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Verwenden Sie die privilegierte Zugriffsverwaltung in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. 
-- Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre nicht-administrative Verwendung verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist. [Office 365 Administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) Rollen haben wesentlich mehr Berechtigungen als Office 365 Dienste.
+- Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre nicht-administrative Verwendung verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist. [Microsoft 365-Administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) Rollen haben wesentlich mehr Berechtigungen als Microsoft 365-Dienste.
 - Führen Sie bewährte Methoden zum Sichern von privilegierten Konten in Azure AD wie in diesem [Artikel](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)beschrieben aus.
 
 ## <a name="next-steps"></a>Nächste Schritte

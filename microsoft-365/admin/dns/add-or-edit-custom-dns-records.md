@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen in Office 365
+title: Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen in Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: 'Hier erfahren Sie, wie Sie einen benutzerdefinierten DNS-Eintrag in Office 365 bearbeiten oder hinzufügen. '
-ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Hier erfahren Sie, wie Sie einen benutzerdefinierten DNS-Eintrag in Microsoft bearbeiten oder hinzufügen. '
+ms.openlocfilehash: d7084913e2439b126232735fe2e6abe853c03ddf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212521"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630019"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a>Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen in Office 365
+# <a name="add-or-edit-custom-dns-records-in-microsoft"></a>Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen in Microsoft
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
 
-1. Melden Sie sich beim Admin Center an <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
+1. Melden Sie sich beim Microsoft Admin Center an <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
 
-2. Wechseln Sie zur Seite " **Einstellungs** \> **Domänen** ".
+2. Wechseln Sie zur Seite **Einstellungen**  > **Domänen**.
 
 3. Wählen Sie auf der Seite **Domänen** eine Domäne aus. 
     
@@ -46,10 +46,10 @@ ms.locfileid: "43212521"
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Sammeln der zum Erstellen von Office 365-DNS-Einträgen erforderlichen Informationen](../get-help-with-domains/information-for-dns-records.md)
+[Sammeln der Informationen, die Sie zum Erstellen von Microsoft-DNS-Einträgen benötigen](../get-help-with-domains/information-for-dns-records.md)
 
 [DNS-Grundlagen](../get-help-with-domains/dns-basics.md)
 
-[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.md)
+[Abrufen von Hilfe zu Domänen](../get-help-with-domains/get-help-with-domains.md)
 
 

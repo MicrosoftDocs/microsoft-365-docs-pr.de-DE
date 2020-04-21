@@ -17,21 +17,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: Erfahren Sie, wie Sie mit Microsoft 365 Business mit dem allgemeinen Data Protection Regulation (dsgvo)-Prozess helfen können.
-ms.openlocfilehash: 1a2df3fb52536cd2caca247332bc1c54fbdbe668
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Erfahren Sie, wie Microsoft 365 for Business Sie beim dsgvo-Prozess (General Data Protection Regulation) unterstützenkann.
+ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556963"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627716"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Dsgvo Simplified: Leitfaden für kleine Unternehmen
 
- *Verwenden von Microsoft 365 Business zur Minderung und Verwaltung der dsgvo-Compliance* 
+ *Verwenden von Microsoft 365 for Business zur Minderung und Verwaltung der dsgvo-Compliance* 
   
 Die allgemeine Datenschutzverordnung (dsgvo) ist eine Europäische Union (EU)-Verordnung, die die Verwaltung von personenbezogenen Daten durch eine Organisation vorschreibt. Das dsgvo soll am 25. Mai 2018 in Kraft treten. Wenn Ihr Unternehmen an verkauft, Dienstleistungen anbietet oder Bürger der Europäischen Union beschäftigt, wirkt sich das [dsgvo](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) auf Sie aus. 
   
-Dieser Artikel hilft Ihnen, zu verstehen, was die dsgvo ist, warum Sie entstanden ist und wie Microsoft 365 Business Ihrer Organisation bei der Einhaltung der dsgvo helfen kann.
+Dieser Artikel hilft Ihnen, zu verstehen, was die dsgvo ist, warum Sie entstanden ist und wie Microsoft 365 for Business Ihrer Organisation bei der Einhaltung der dsgvo helfen kann.
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>Eine kurze Übersicht über die dsgvo
 
@@ -87,7 +87,7 @@ Außerdem sollten Sie sicherstellen, dass personenbezogene Daten, die Sie erfass
 
 Die erste Frage, die Sie sich stellen müssen, lautet: sammeln Sie personenbezogene Daten überall auf Ihrer Website? Möglicherweise verfügen Sie über ein Kontaktformular, das nach einem Namen und einer e-Mail-Adresse fragt. Wenn Sie Marketing-e-Mails senden möchten, stellen Sie sicher, dass Sie ein "Opt-in"-Kontrollkästchen hinzufügen, in dem genau erläutert wird, wofür Sie die Daten verwenden. Nur wenn der Empfänger dieses Feld überprüft, können Sie Ihre personenbezogenen Daten zu Marketingzwecken verwenden.
   
-Stellen Sie außerdem sicher, dass die Datenbank, in der die Daten gespeichert sind, geschützt ist. Ihr Webhosting-Unternehmen oder Cloud-Speicheranbieter kann dies in diesem Fall beraten. Wenn Sie Microsoft 365 Business verwenden, ist die Speicherung von Daten dsgvo-konform. 
+Stellen Sie außerdem sicher, dass die Datenbank, in der die Daten gespeichert sind, geschützt ist. Ihr Webhosting-Unternehmen oder Cloud-Speicheranbieter kann dies in diesem Fall beraten. Wenn Sie Microsoft 365 for Business verwenden, ist die Speicherung von Daten dsgvo-konform. 
   
 ### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mein Unternehmen befindet sich außerhalb von Europa. Wirkt sich die dsgvo wirklich auf uns aus?
 
@@ -101,7 +101,7 @@ Betrachten Sie die folgenden Beispiele:
     
 - Eine internationale Wohltätigkeitsorganisation sammelt Daten zu Spendern und verwendet Sie, um Updates und Spendenanfragen zu senden. Die dsgvo besagt: "... die Verarbeitung personenbezogener Daten zu Direktmarketingzwecken kann als für ein berechtigtes Interesse ausgeführt angesehen werden. " Die Verantwortung liegt jedoch bei der Organisation, um zu beweisen, dass Ihre Interessen die der betroffenen Person außer Kraft setzen. Das Unternehmen (oder in diesem Fall die gemeinnützige Organisation) sollte immer informiert, explizit, Opt-in Zustimmung erhalten.
     
-Die dsgvo gilt auch, wenn Kundendaten grenzübergreifend verschoben werden. Wenn Sie Cloud Computing für die Datenspeicherung verwenden, müssen Sie sicherstellen, dass der Dienst vollständig dsgvo-kompatibel ist. Es kann kompliziert werden, wenn sich der Datenspeicher an Orten befindet, in denen der Datenschutz schlecht erfasst ist. Wenn Sie Microsoft 365 Business verwenden, verfügen wir über die richtige rechtliche Dokumentation, um die dsgvo-Anforderungen zu decken.
+Die dsgvo gilt auch, wenn Kundendaten grenzübergreifend verschoben werden. Wenn Sie Cloud Computing für die Datenspeicherung verwenden, müssen Sie sicherstellen, dass der Dienst vollständig dsgvo-kompatibel ist. Es kann kompliziert werden, wenn sich der Datenspeicher an Orten befindet, in denen der Datenschutz schlecht erfasst ist. Wenn Sie Microsoft 365 for Business verwenden, verfügen wir über die richtigen rechtlichen Dokumentationen, um die dsgvo-Anforderungen zu decken.
   
 ### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Sicher, ich sammle Daten, aber einige andere Unternehmen speichern Sie. Bringt mich das aus dem Schneider?
 
@@ -109,9 +109,9 @@ Wenn Sie unter dem dsgvo Daten erfassen, sind Sie in gewissem Maße betroffen. D
   
 - **Daten Controller:** Eine Person oder Organisation (Sie können gemeinsame Controller haben), die festlegt, wie, was und warum Daten erfasst werden. Sie können Sie unter Verwendung der Cloud-Server eines anderen Unternehmens speichern. Beispielsweise ist eine Website, die Kundendaten erfasst, ein Controller. 
     
-- **Datenprozessor:** Eine Einzelperson oder Organisation, die Daten im Auftrag des Controllers speichert und diese Daten auf Anforderung verarbeitet. Beispielsweise fungiert Office 365 Geschäftsdatenspeicher als Prozessor und ist vollständig dsgvo konform. 
+- **Datenprozessor:** Eine Einzelperson oder Organisation, die Daten im Auftrag des Controllers speichert und diese Daten auf Anforderung verarbeitet. Beispielsweise fungiert Microsoft 365 apps for Business-Datenspeicherung als Prozessor und ist vollständig dsgvo konform. 
     
-    Eine Organisation oder ein System kann sowohl als Controller als auch als Prozessor fungieren. Microsoft 365 Business kann sowohl als auch als dsgvo fungieren und den Anforderungen des Unternehmens entsprechen.
+    Eine Organisation oder ein System kann sowohl als Controller als auch als Prozessor fungieren. Microsoft 365 for Business kann als beides fungieren und dem dsgvo entsprechen.
     
 ### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>Kann ich weiterhin Marketing-e-Mails an meine alten Kunden senden?
 
@@ -123,25 +123,25 @@ Die dsgvo wirkt sich nicht nur auf Kundendaten aus; Sie erstreckt sich auch auf 
   
 Wie bei vorhandenen Mitarbeitern und neuen Mitarbeiter Verträgen nimmt eine Signatur am Ende eines Vertrags nicht unbedingt eine Zustimmung ein, insbesondere dann nicht, wenn eine nicht Affirmative Klausel in einem Vertrag verwendet wird. In diesem Fall müssen Sie die Zustimmung in einer expliziten Weise erfassen, die mit der-Klausel verknüpft ist. Was dies bedeutet, hängt von Ihrem Mitarbeiter Vertrag ab, Sie können jedoch in einigen Fällen "berechtigtes Interesse" verwenden und eine Mitarbeiter Datenverarbeitungs Notiz hinzufügen, um sicherzustellen, dass Ihre Mitarbeiter wissen, was Sie mit Ihren Daten tun werden.
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-business"></a>Vertraulichkeits Belange mit Microsoft 365 Business erfüllen
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Vertraulichkeits Belange mit Microsoft 365 for Business erfüllen
 
 Wenn Sie mit dem dsgvo konform werden, müssen Sie sicherstellen, dass personenbezogene Daten geschützt werden. Das dsgvo hat ein Konzept, das als Datenschutz nach Design und Standard bezeichnet wird. Dies bedeutet, dass der Datenschutz an ein System und ein Produkt "eingebrannt" werden muss, damit die Vertraulichkeits Belange von zweiter Natur sind. 
   
-Wie bei ihren größeren Gegenstücken braucht ein kleines Unternehmen Bequemlichkeit, ohne dabei die Sicherheit zu beeinträchtigen. Microsoft 365 Business wurde für Unternehmen mit weniger als 300 Mitarbeitern entwickelt. Kleine Unternehmen können Microsoft Cloud-basierte Tools verwenden, um die geschäftliche Produktivität zu verbessern. Mit Microsoft 365 Business kann ein kleines Unternehmen e-Mails, Dokumentationen und sogar Besprechungen und Ereignisse verwalten. Außerdem verfügt es über integrierte Sicherheitsmaßnahmen und Geräteverwaltung, die für die dsgvo-Compliance unerlässlich sind.
+Wie bei ihren größeren Gegenstücken braucht ein kleines Unternehmen Bequemlichkeit, ohne dabei die Sicherheit zu beeinträchtigen. Microsoft 365 for Business wurde für Unternehmen mit weniger als 300 Mitarbeitern entwickelt. Kleine Unternehmen können Microsoft Cloud-basierte Tools verwenden, um die geschäftliche Produktivität zu verbessern. Mit Microsoft 365 for Business kann ein kleines Unternehmen e-Mails, Dokumentationen und sogar Besprechungen und Ereignisse verwalten. Außerdem verfügt es über integrierte Sicherheitsmaßnahmen und Geräteverwaltung, die für die dsgvo-Compliance unerlässlich sind.
   
-Microsoft 365 Business kann Sie mit dem dsgvo-Prozess auf folgende Weise unterstützen:
+Microsoft 365 for Business kann Ihnen auf folgende Weise beim dsgvo-Prozess helfen:
   
 - **Ermitteln Sie Folgendes:** Ein wichtiger Schritt zur dsgvo Compliance ist es zu wissen, welche Daten Sie haben. 
     
-- **Verwalten:** Die Steuerung des Zugriffs auf Daten und die Verwaltung ihrer Verwendung ist ein integraler Bestandteil von dsgvo. Microsoft 365 Business schützt Geschäftsdaten basierend auf Richtlinien, die auf Geräte angewendet werden sollen. Die Geräteverwaltung ist in einem Alter von entscheidender Bedeutung, in dem Mitarbeiter Remote arbeiten. Microsoft 365 Business umfasst Geräteverwaltungsfeatures, die sicherstellen, dass die Daten auf allen Geräten geschützt sind. Sie können beispielsweise festlegen, dass alle Windows 10-Geräte in Ihrem Unternehmen über Windows Defender geschützt sind. 
+- **Verwalten:** Die Steuerung des Zugriffs auf Daten und die Verwaltung ihrer Verwendung ist ein integraler Bestandteil von dsgvo. Microsoft 365 for Business schützt Geschäftsdaten basierend auf Richtlinien, die auf Geräte angewendet werden sollen. Die Geräteverwaltung ist in einem Alter von entscheidender Bedeutung, in dem Mitarbeiter Remote arbeiten. Microsoft 365 for Business umfasst Geräteverwaltungsfeatures, die sicherstellen, dass die Daten auf allen Geräten geschützt sind. Sie können beispielsweise festlegen, dass alle Windows 10-Geräte in Ihrem Unternehmen über Windows Defender geschützt sind. 
     
-- **Schützen:** Microsoft 365 Business wurde für Sicherheit entwickelt. Die Steuerelemente für Geräteverwaltung und Datenschutz funktionieren über das Unternehmensnetzwerk hinweg, einschließlich Remotegeräten, um die Datensicherheit zu gewährleisten. Microsoft 365 Business bietet Steuerelemente wie Datenschutzeinstellungen in Office-Anwendungen und die Verschlüsselung von Dokumenten. Mit Microsoft 365 Business können Sie die dsgvo-Konformitätsüberwachung durchführen, um sicherzustellen, dass Sie die richtige Schutzebene festgelegt haben. 
+- **Schützen:** Microsoft 365 for Business wurde für Sicherheit entwickelt. Die Steuerelemente für Geräteverwaltung und Datenschutz funktionieren über das Unternehmensnetzwerk hinweg, einschließlich Remotegeräten, um die Datensicherheit zu gewährleisten. Microsoft 365 for Business bietet Steuerelemente wie Datenschutzeinstellungen in Office-Anwendungen und die Verschlüsselung von Dokumenten. Mit Microsoft 365 for Business können Sie die dsgvo-Konformitätsüberwachung durchführen, um sicherzustellen, dass Sie die richtige Schutzebene festgelegt haben. 
     
-- **Bericht:** Das dsgvo legt großen Wert auf die Berichterstellung. Selbst ein Unternehmen mit einem einzelnen Mitarbeiter, wenn dieses Unternehmen große Datenmengen verarbeitet, muss seine Verfahren dokumentieren und darüber berichten. Microsoft 365 Business nimmt den Kopfschmerz bei den Berichtsanforderungen für kleinere Organisationen ein. 
+- **Bericht:** Das dsgvo legt großen Wert auf die Berichterstellung. Selbst ein Unternehmen mit einem einzelnen Mitarbeiter, wenn dieses Unternehmen große Datenmengen verarbeitet, muss seine Verfahren dokumentieren und darüber berichten. Microsoft 365 for Business nimmt die Anforderungen an die Berichterstellung für kleinere Organisationen in den Kopf. 
     
     Mit Tools wie Überwachungsprotokollen können Sie Datenverschiebungen nachverfolgen und Berichten. Zu den Berichten gehören das Klassifizieren der erfassten und gespeicherten Daten, die Art und Weise, wie Sie mit den Daten und Datenübertragungen Vorgehen. 
     
-Kunden, Mitarbeiter und Kunden wissen um die Wichtigkeit des Datenschutzes und erwarten von einem Unternehmen oder einer Organisation, diesen Datenschutz zu respektieren. Microsoft 365 Business bietet Ihnen die Tools, mit denen Sie die dsgvo-Compliance ohne massiven Umbruch für Ihr Unternehmen erreichen und aufrecht erhalten können.
+Kunden, Mitarbeiter und Kunden wissen um die Wichtigkeit des Datenschutzes und erwarten von einem Unternehmen oder einer Organisation, diesen Datenschutz zu respektieren. Microsoft 365 for Business bietet Ihnen die Tools zum erreichen und aufrecht erhalten der dsgvo-Compliance ohne massiven Umbruch für Ihr Unternehmen.
   
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -149,13 +149,13 @@ Wenn Sie sich für die dsgvo vorbereiten möchten, finden Sie hier einige Vorsch
   
 - Bewerten Sie Ihr dsgvo-Programm mit [Prüflisten zur Verantwortlichkeits Bereitschaft](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
     
-- Untersuchen Sie [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) als Lösung für das erreichen und aufrecht erhalten der Einhaltung von dsgvo. 
+- Untersuchen Sie [Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/business) als Lösung für das erreichen und aufrecht erhalten der Einhaltung von dsgvo. 
    
 
 > [!IMPORTANT]
 > Erhalten Sie einen Rechtsbeistand, der für Ihr Unternehmen oder Ihre Organisation geeignet ist.
   
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 [Microsoft Trust Center – Übersicht über die dsgvo](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )

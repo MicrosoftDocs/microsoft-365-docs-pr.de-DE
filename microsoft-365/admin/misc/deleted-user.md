@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Hier erfahren Sie, wie Sie das Office 365 Konto eines Benutzers löschen oder wiederherstellen.
-ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Hier erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
+ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254303"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627884"
 ---
 # <a name="quick-help-deleted-user"></a>Schnelle Hilfe: Gelöschter Benutzer
 
@@ -75,9 +75,9 @@ Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach **gelö
 
 Ein gelöschter [Benutzer](../add-users/add-users.md) ist ein Geschäfts- oder Schulkonto, das Sie aus Ihrer Organisation löschen. 
   
-## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>Wird beim Löschen eines Benutzers dessen Office 365-Lizenz freigegeben?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Gibt das Löschen eines Benutzers Ihre Microsoft 365-Lizenzfrei?
 
-Ja, beim Löschen des Benutzers wird die diesem Benutzer zugewiesene Office 365-Lizenz freigegeben. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/remove-licenses-from-subscription.md)
+Ja, das Löschen des Benutzers gibt die Microsoft 365-lizenzfrei, die diesem Benutzer zugewiesen ist. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/remove-licenses-from-subscription.md)
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>In meiner Liste der gelöschten Benutzer wurde ein gelöschter Benutzer aufgeführt, der nun nicht mehr angezeigt wird. Was ist geschehen?
 

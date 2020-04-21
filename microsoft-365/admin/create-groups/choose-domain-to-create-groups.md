@@ -1,5 +1,5 @@
 ---
-title: Auswählen der beim Erstellen von Office 365-Gruppen zu verwendenden Domäne
+title: Wählen Sie die Domäne aus, die beim Erstellen von Microsoft 365-Gruppen verwendet werden soll.
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 'Hier erfahren Sie, wie Sie beim Erstellen von Office 365 Gruppen die Domäne auswählen können, indem Sie e-Mail-Adress Richtlinien mithilfe von PowerShell konfigurieren. '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 'Hier erfahren Sie, wie Sie die zu verwendende Domäne beim Erstellen von Microsoft 365-Gruppen auswählen, indem Sie e-Mail-Adress Richtlinien mithilfe von PowerShell konfigurieren '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894645"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630623"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Auswählen der beim Erstellen von Office 365-Gruppen zu verwendenden Domäne
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Wählen Sie die Domäne aus, die beim Erstellen von Microsoft 365-Gruppen verwendet werden soll.
 
- Einige Organisationen verwenden separate E-Mail-Domänen, um unterschiedliche Unternehmensbereiche zu segmentieren. Sie können angeben, welche Domäne verwendet werden soll, wenn Ihre Benutzer Office 365-Gruppen erstellen.
+ Einige Organisationen verwenden separate E-Mail-Domänen, um unterschiedliche Unternehmensbereiche zu segmentieren. Sie können angeben, welche Domäne verwendet werden soll, wenn Ihre Benutzer Microsoft 365-Gruppen erstellen.
   
 Wenn Benutzer in Ihrer Organisation ihre Gruppen in anderen Domänen als der akzeptierten Standarddomäne Ihres Unternehmens erstellen müssen, können Sie dies erlauben, indem Sie E-Mail-Adressrichtlinien (Email Address Policies, EAPs) mithilfe von PowerShell konfigurieren.
   
-Bevor Sie die PowerShell-Cmdlets ausführen können, müssen Sie ein Modul herunterladen und installieren, das Ihnen die Kommunikation mit Ihrer Office 365-Organisation ermöglicht. Lesen Sie [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Bevor Sie die PowerShell-Cmdlets ausführen können, müssen Sie ein Modul herunterladen und installieren, mit dem Sie mit Ihrer Organisation in Gespräch treten können. Lesen Sie [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## <a name="example-scenarios"></a>Beispielszenarien
 
@@ -51,7 +51,7 @@ Anhand der beiden folgenden Szenarien wird erläutert, wie Sie dies erreichen k�
   
 ### <a name="scenario-1"></a>Szenario 1
 
-Im folgenden Beispiel wird gezeigt, wie Sie alle Office 365-Gruppen in Ihrer Organisation in der Domäne "groups.contoso.com" bereitstellen.
+Das folgende Beispiel zeigt, wie Sie alle Microsoft 365-Gruppen in Ihrer Organisation in der Groups.contoso.com-Domäne anbieten.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Szenario 2
 
-Angenommen, Sie möchten steuern, in welchen Unterdomänen Office 365 Gruppen erstellt werden. Du willst:
+Angenommen, Sie möchten steuern, in welchen Unterdomänen Microsoft 365-Gruppen erstellt werden. Du willst:
   
 - Gruppen, die von Teilnehmern (Benutzer mit **Abteilungs** Einstellungen für **Schüler**) in der students.Groups.contoso.com-Domäne erstellt wurden. Verwenden Sie dazu diesen Befehl:
     
@@ -102,7 +102,7 @@ Die Änderung einer EAP hat keine Auswirkungen auf die bereits bereitgestellten 
   
 ## <a name="hybrid-requirements"></a>Anforderungen für Hybridbereitstellungen
 
-Wenn Ihre Organisation in einem Hybridszenario konfiguriert ist, lesen Sie [Konfigurieren von Office 365-Gruppen für lokale Exchange-Hybridbereitstellungen](https://go.microsoft.com/fwlink/p/?LinkId=785430), um sicherzustellen, dass Ihre Organisation die Anforderungen für das Erstellen von Office 365-Gruppen erfüllt. 
+Wenn Ihre Organisation in einem Hybrid Szenario konfiguriert ist, lesen Sie [configure Microsoft 365 groups with on-premises Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) , um sicherzustellen, dass Ihre Organisation die Anforderungen zum Erstellen von Microsoft 365-Gruppen erfüllt. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Weitere Informationen zur Verwendung von Gruppen mit e-Mail-Adress Richtlinien:
 
@@ -122,4 +122,4 @@ Es gibt ein paar weitere Punkte, die Sie wissen müssen:
     
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erstellen einer Office 365-Gruppe im Admin Center](create-groups.md)
+[Erstellen einer Microsoft 365-Gruppe im Admin Center](create-groups.md)

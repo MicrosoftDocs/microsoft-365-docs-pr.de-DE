@@ -1,5 +1,5 @@
 ---
-title: Office 365-Berichte im Admin Center – Yammer-Aktivitätsbericht
+title: Microsoft 365-Berichte im Admin Center – jammern-Aktivitätsbericht
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Rufen Sie den Yammer-Aktivitätsbericht ab. Dieser stellt Ihnen Informationen über die Anzahl der Benutzer bereit, die Yammer verwenden, um eine Nachricht zu posten, mit "Gefällt mir" zu kennzeichnen oder zu lesen.
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047023"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618956"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-Berichte im Admin Center – Yammer-Aktivitätsbericht
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365-Berichte im Admin Center – jammern-Aktivitätsbericht
 
 Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Daten im Hinblick auf die Nutzung der Produkte innerhalb Ihrer Organisation an. Schauen Sie sich [Aktivitätsberichte im Admin Center](activity-reports.md) an. Mit dem **Yammer-Aktivitätsbericht** können Sie den Grad des Engagements Ihrer Organisation mit Yammer erkennen. Dazu schauen Sie sich die Anzahl eindeutiger Benutzer, die über Yammer eine Nachricht posten, lesen oder mit "Gefällt mir" bewerten, und den Umfang der Aktivitäten an, die organisationsweit generiert wurden. 
   
@@ -82,7 +82,7 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
   - **Benutzername** ist die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. 
     
-    Diese Tabelle zeigt die Benutzer, die sich mit ihrem Office 365-Konto bei Yammer oder aber mit einmaligem Anmelden am Netzwerk angemeldet haben.
+    Dieses Raster zeigt Benutzer an, die sich bei jammern mit dem Microsoft 365-Konto angemeldet haben oder sich mit einmaligem Anmelden am Netzwerk angemeldet haben.
     
   - **Anzeigename** ist der vollständige Name des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. 
     
@@ -112,6 +112,6 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
 - **Keine externen Netzwerkdaten** – Externe Netzwerkdaten sind in diesen Berichten nicht enthalten. 
     
-- **Aktivierte Netzwerke** – Diese Berichte zeigen Daten für das Yammer-Netzwerk, das in Ihrem Office 365-Abonnement enthalten ist. Das Diagramm aggregiert die Verwendung durch alle Benutzer, die sich am Yammer-Netzwerk angemeldet haben – unabhängig davon, ob dies über Office 365 oder Yammer geschehen ist. 
+- **Aktivierte Netzwerke** Diese Berichte zeigen Daten für das Jammern-Netzwerk an, das Teil Ihres Microsoft 365-Abonnements ist. Das Diagramm aggregiert die Verwendung aller Benutzer, die sich am Jammer Netzwerk angemeldet haben, unabhängig davon, ob Sie Microsoft 365 oder jammern für die Anmeldung verwendet haben. 
     
 

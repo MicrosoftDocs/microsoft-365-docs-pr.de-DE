@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie über Ihr mobiles Gerät auf e-Mails zugreifen.
-ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362390"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629095"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Optionen für den Zugriff auf e-Mails von Ihrem mobilen Gerät
 
@@ -41,6 +41,6 @@ Weitere Outlook-Funktionen finden Sie [unter Optimieren der Outlook-Mobile App f
   
  **Jede e-Mail-App**
   
-Ihre Organisation empfiehlt, dass Sie die Outlook für Android-oder IOS-Mobile App verwenden, um auf Ihr Office 365 Geschäfts-oder Schulkonto für e-Mail, Kalender und Kontakte zuzugreifen. Wenn Sie innerhalb der nächsten Stunden keine Aktion ausführen, beginnt Ihre e-Mail automatisch mit der Synchronisierung. Wenn Sie sich für die Verwendung von Outlook für Android oder IOS Mobile App entscheiden, werden Ihre Daten nur mit dem Outlook für Android oder Outlook für IOS Mobile App synchronisiert. Wenn Sie sich dafür entscheiden, die Drittanbieter-App weiterhin zu verwenden, werden Ihre Daten sofort mit der Synchronisierung beginnen.
+Ihre Organisation empfiehlt, dass Sie die Outlook für Android-oder IOS-Mobile App verwenden, um auf Ihr Geschäfts-oder Schulkonto für e-Mail, Kalender und Kontakte zuzugreifen. Wenn Sie innerhalb der nächsten Stunden keine Aktion ausführen, beginnt Ihre e-Mail automatisch mit der Synchronisierung. Wenn Sie sich für die Verwendung von Outlook für Android oder IOS Mobile App entscheiden, werden Ihre Daten nur mit dem Outlook für Android oder Outlook für IOS Mobile App synchronisiert. Wenn Sie sich dafür entscheiden, die Drittanbieter-App weiterhin zu verwenden, werden Ihre Daten sofort mit der Synchronisierung beginnen.
   
 

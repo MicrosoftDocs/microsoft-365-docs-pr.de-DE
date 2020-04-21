@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Hier erfahren Sie, wie Sie Datenverkehr an eine vorhandene öffentliche Website weiterleiten, die außerhalb von Office 365 gehostet wird, wenn Sie Office 365 für die Verwaltung von DNS-Einträgen für Ihre benutzerdefinierte Domäne festgelegt haben.
-ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Hier erfahren Sie, wie Sie Datenverkehr zu einer vorhandenen öffentlichen Website weiterleiten, die außerhalb von Microsoft gehostet wird, wenn Sie Microsoft zum Verwalten von DNS-Einträgen für Ihre benutzerdefinierte Domäne festgelegt haben.
+ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142539"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629119"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Aktualisieren von DNS-Einträgen, um die Website beim aktuellen Hostinganbieter zu belassen
 
- [] **Wenn Sie alle Office 365-Einträge Ihrer Domäne bei Ihrem DNS-Hostinganbieter verwalten**, sind die Schritte in diesem Artikel für Sie irrelevant. Ihre Website bleibt, wo sie ist, und Benutzer können die Site weiterhin aufrufen. 
+ **Wenn Sie die Microsoft-Einträge Ihrer Domäne bei Ihrem DNS-Hostinganbieter verwalten**, müssen Sie sich keine Gedanken über die Schritte in diesem Thema machen. Ihre Website bleibt, wo sie ist, und Benutzer können die Site weiterhin aufrufen. 
   
- **Wenn Ihre DNS-Einträge von Office 365 verwaltet werden**, gehen Sie, nachdem Sie Ihre Domäne zu Office 365 hinzugefügt haben, wie folgt vor, um den Datenverkehr auf eine vorhandene öffentliche Website zu leiten, die außerhalb von Office 365 gehostet wird. 
+ **Wenn Microsoft Ihre DNS-Einträge verwaltet**, führen Sie die folgenden Schritte aus, um Datenverkehr an eine vorhandene öffentliche Website zu leiten, die außerhalb von Microsoft gehostet wird, nachdem Sie Ihre Domäne zu Microsoft hinzugefügt haben: 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aktualisieren von DNS-Einträgen im Microsoft 365 Admin Center
-1. Wechseln Sie im Admin Center zur Seite **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
 
 2. Wählen Sie auf der Seite **Domänen** in der Liste der Domänen die Domäne aus, die Sie für Ihre Website verwenden, und wählen Sie dann im Verwaltungsbereich **DNS-Einstellungen** aus. 
     
@@ -64,7 +64,7 @@ Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Web
     
 Führen Sie schließlich die folgenden Schritte aus:
   
-[Aktualisieren Ihrer Domänennamenservereinträge](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx), sodass sie auf Office 365 verweisen. 
+[Aktualisieren Sie die NS-Einträge Ihrer Domäne](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) so, dass Sie auf Microsoft verweist. 
   
-Wenn die Namenservereinträge so aktualisiert wurden, dass sie auf Office 365 verweisen, ist Ihre Domäne wie folgt eingerichtet: E-Mail-Nachrichten werden an Office 365 weitergeleitet, und der an Ihre Websiteadresse gerichtete Datenverkehr geht weiterhin bei Ihrem aktuellen Websitehost ein.
+Wenn die NS-Einträge so aktualisiert wurden, dass Sie auf Microsoft verweist, ist Ihre Domäne eingerichtet. E-Mail-Nachrichten werden an Microsoft weitergeleitet, und der Datenverkehr zu Ihrer Website-Adresse wird weiterhin an Ihren aktuellen Website-Host weitergeleitet.
  

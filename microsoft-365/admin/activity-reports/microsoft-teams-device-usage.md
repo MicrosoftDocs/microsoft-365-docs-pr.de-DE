@@ -1,5 +1,5 @@
 ---
-title: Office 365 von Berichten im Admin Center – Microsoft Teams-Geräteverwendung
+title: Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Office 365 Berichten erhalten.
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Microsoft 365-Berichten erhalten.
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046963"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621210"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Office 365 von Berichten im Admin Center – Microsoft Teams-Geräteverwendung
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 
-Im Office 365 **Berichte**-Dashboard finden Sie eine Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-App-Verwendung" bietet Ihnen Einblicke in die Microsoft Teams-Apps, die in Ihrer Organisation verwendet werden.
+Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-App-Verwendung" bietet Ihnen Einblicke in die Microsoft Teams-Apps, die in Ihrer Organisation verwendet werden.
   
 > [!NOTE]
 > Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
@@ -45,7 +45,7 @@ Im Office 365 **Berichte**-Dashboard finden Sie eine Übersicht über die Aktivi
 
 Die Microsoft Teams-App-Verwendung wird in den Diagrammen **Benutzer** und **Verteilung** grafisch dargestellt. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Microsoft 365 Reports-Nutzung der Microsoft Teams-App](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

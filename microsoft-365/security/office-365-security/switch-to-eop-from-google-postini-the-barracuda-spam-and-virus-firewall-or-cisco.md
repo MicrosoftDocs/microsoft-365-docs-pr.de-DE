@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Dieser Artikel soll Ihnen helfen, den Prozess für die Umstellung auf Exchange Online Schutz (EoP) von einer lokalen e-Mail-Hygiene-Appliance oder einem Cloud-basierten Schutzdienst zu verstehen und Ihnen dann Hilferessourcen für den Einstieg bereitzustellen.
-ms.openlocfilehash: e3877f8093f56a0f978ad915769334678afe26e3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598212"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631193"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort
 
@@ -39,9 +39,9 @@ Wenn Sie Postfächer derzeit lokal hosten und eine lokale Schutzvorrichtung oder
 
 ## <a name="switch-to-exchange-online"></a>Wechseln zu Exchange Online
 
-Vielleicht haben Sie lokale Postfächer, die von einer lokalen Vorrichtung geschützt werden, und möchten auf cloudgehostete Exchange Online-Postfächer und EOP-Schutz umsteigen, um die Vorteile der cloudbasierten Messaging- und Schutzfunktionen von Office 365 zu nutzen. Als Erstes können Sie sich bei Office 365 anmelden und Ihre Domäne hinzufügen. In diesem Szenario müssen Sie keine Connectors einrichten, da kein Routing an lokale Postfächer erfolgt. Beginnen [Sie mit dem Abrufen der neuesten erweiterten Features mit Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) , um sich anzumelden und sich mit den Funktionen vertraut zu machen.
+Möglicherweise haben Sie lokale Postfächer, die durch eine lokale Appliance geschützt sind, und Sie möchten zu Exchange Online in der Cloud gehosteten Postfächern und zum Schutz vor EoP wechseln, um die Microsoft 365 Cloud Messaging and Protection-Funktionen nutzen zu können. Um zu beginnen, können Sie sich für Microsoft 365 registrieren und Ihre Domäne hinzufügen. In diesem Szenario müssen Sie keine Connectors einrichten, da kein Routing an lokale Postfächer erfolgt. Beginnen [Sie mit dem Abrufen der neuesten erweiterten Funktionen mit Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) , um sich anzumelden und sich mit den Funktionen vertraut zu machen.
 
-Während der Einrichtung von Office 365 erstellen Sie cloudbasierte Postfachbenutzer.
+Während des Setupvorgangs von Microsoft 365 erstellen Sie die cloudbasierten Postfachbenutzer.
 
 ## <a name="switch-to-a-hybrid-solution"></a>Wechseln zu einer Hybridlösung
 

@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Ermitteln Sie, ob Ihre Office 365 Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
+ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209748"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628232"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
-[] Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Methode für die meisten Kunden, um Office-Add-Ins für Benutzer und Gruppen in der Office 365-Organisation bereitzustellen. Wenn Sie Administrator sind, können Sie anhand dieser Anleitung ermitteln, ob Ihre Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentralisierte Bereitstellung verwenden können.
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie Administrator sind, können Sie anhand dieser Anleitung ermitteln, ob Ihre Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentralisierte Bereitstellung verwenden können.
 Die zentralisierte Bereitstellung unterstützt Windows-, Mac-, Ios-, Android-und Online-Office-Apps.
-Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Client angezeigt wird.
+Es kann bis zu 12 Stunden dauern, bis ein Add-in für alle Benutzer für den Client angezeigt wird.
   
 ## <a name="requirements"></a>Anforderungen
 
-Die zentrale Bereitstellung von Add-ins erfordert, dass die Benutzer Office 365 ProPlus verwenden (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online Postfächer verfügen. Ihr Abonnement 'd-Verzeichnis muss entweder in oder Verbund mit Azure Active Directory sein.
-Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [Office 365 zentrale Bereitstellungs Kompatibilitätsprüfung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)verwenden.
+Die zentrale Bereitstellung von Add-ins erfordert, dass die Benutzer Microsoft 365-Apps für Unternehmen verwenden (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online-Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit Azure Active Directory befinden.
+Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [Kompatibilitätsprüfung für die zentrale Bereitstellung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)verwenden.
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
   
@@ -49,16 +49,16 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
    
 - Bereitstellung der Add-Ins Component Object Model (COM) oder Visual Studio Tools für Office (VSTO)
     
-- Bereitstellungen von Office 365 ohne Exchange, z. B. Office 365 Business
+- Bereitstellungen von Microsoft 365, die Exchange wie Microsoft 365 apps for Business nicht enthalten
 
 ### <a name="office-requirements"></a>Office-Anforderungen
 
 - Für Word-, Excel-und PowerPoint-Add-Ins müssen die Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows-Gerät Version 1704 oder höher von Office 365 ProPlus.
+  - Auf einem Windows-Gerät Version 1704 oder höher von Microsoft 365 apps for Enterprise.
   - Auf einem Mac, Version 15,34 oder höher.
 
 - Für Outlook müssen die Benutzer eine der folgenden Optionen verwenden: 
-  - Version 1701 oder höher von Office 365 ProPlus.
+  - Version 1701 oder höher von Microsoft 365 Apps für Unternehmen.
   - Version 1808 oder höher von Office Professional Plus 2019 oder Office Standard 2019.
   - Version 16.0.4494.1000 oder höher von Office Professional Plus 2016 (MSI) oder Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 oder höher von Office Professional Plus 2013 (MSI) oder Office Standard 2013 (MSI)\*
@@ -69,17 +69,17 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
     * MSI-Versionen von Outlook zeigen Administrator installierte Add-Ins im entsprechenden Outlook-Menüband, nicht im Abschnitt "meine Add-Ins".
     
 
-#### <a name="find-out-if-office-365-proplus-is-installed"></a>Herausfinden, ob Office 365 ProPlus installiert ist
+#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Finden Sie heraus, ob Microsoft 365 apps for Enterprise installiert ist.
 
-Um Office 365 ProPlus verwenden zu können, muss ein Benutzer über ein Office 365 Konto verfügen, dem eine Lizenz zugewiesen sein muss. Weitere Informationen finden Sie unter [Übersicht über Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846328).
+Um Microsoft 365-Apps für Enterprise verwenden zu können, muss ein Benutzer über ein Microsoft 365-Konto verfügen, dem eine Lizenz zugewiesen sein muss. Weitere Informationen finden Sie unter [Overview of Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-Die einfachste Möglichkeit zu erkennen, ob ein Benutzer Office 365 ProPlus installiert hat und ihn zuletzt verwendet hat, ist die Verwendung des Berichts über Microsoft Office Aktivierungen, der im Microsoft 365 Admin Center verfügbar ist. Im Bericht finden Sie eine Liste aller Benutzer, die Office 365 ProPlus innerhalb der letzten 7 Tage, der letzten 30 Tage, 90 Tage oder 180 Tage aktiviert haben. Im Zusammenhang mit der zentralen Bereitstellung sind die Desktopaktivierungen für Windows oder Mac die wichtigen Spalten im Bericht. Sie können den Bericht nach Excel exportieren. Weitere Informationen zu dem Bericht finden Sie unter [Office 365-Berichte im Admin Center - Microsoft Office-Aktivierungen](../activity-reports/microsoft-office-activations.md).
+Die einfachste Möglichkeit zu erkennen, ob ein Benutzer Microsoft 365 ProPlus installiert hat und ihn zuletzt verwendet hat, ist die Verwendung des Berichts über Microsoft Office Aktivierungen, der im Microsoft 365 Admin Center zur Verfügung steht. Der Bericht enthält eine Liste aller Benutzer, die Microsoft 365-Apps für Enterprise in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen aktiviert haben. Im Zusammenhang mit der zentralen Bereitstellung sind die Desktopaktivierungen für Windows oder Mac die wichtigen Spalten im Bericht. Sie können den Bericht nach Excel exportieren. Weitere Informationen zum Bericht finden Sie unter [Microsoft 365 Reports im Admin Center – Microsoft Office Aktivierungen](../activity-reports/microsoft-office-activations.md).
   
-Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Benutzer bitten, eine Office-Anwendung wie Word auf seinem Computer zu öffnen, und dann **Datei** \> **Konto**auswählen. Unter **Produktinformation** sollte **Abonnementprodukt** und **Microsoft Office 365 ProPlus** angezeigt, wie in der folgenden Abbildung gezeigt.
+Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Benutzer bitten, eine Office-Anwendung wie Word auf seinem Computer zu öffnen, und dann **Datei** \> **Konto**auswählen. Unter **Produktinformationen**sollten das **Abonnement Produkt** und **Microsoft Microsoft 365 apps for Enterprise**angezeigt werden, wie in der folgenden Abbildung dargestellt.
 
 ![Produktinformationen in einer Office-Anwendung](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
-Hilfe zu Office 365 ProPlus finden Sie unter [Tipps zum Behandeln von Problemen mit Office 365](https://go.microsoft.com/fwlink/p/?linkid=846339).
+Hilfe zu Microsoft 365-Apps für Unternehmen finden Sie unter [Troubleshooting Tips for Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
 ### <a name="exchange-online-requirements"></a>Exchange Online Anforderungen
@@ -89,9 +89,9 @@ Microsoft Exchange speichert die Add-in-Manifeste im Mandanten Ihrer Organisatio
 Informieren Sie sich beim Exchange-Administrator Ihrer Organisation, um herauszufinden, welche Konfiguration verwendet wird. Die OAuth-Verbindung pro Benutzer kann überprüft werden, indem Sie das PowerShell-Cmdlet [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) verwenden. 
 
 
-### <a name="office-365-centralized-deployment-compatibility-checker"></a>Kompatibilitätsprüfung für zentrale Bereitstellung in Office 365
+### <a name="centralized-deployment-compatibility-checker"></a>Zentrale Bereitstellungs Kompatibilitätsprüfung
 
-Mithilfe der Kompatibilitätsprüfung für die zentrale Bereitstellung in Office 365 können Sie überprüfen, ob die Benutzer Ihres Mandanten für die Verwendung der zentralen Bereitstellung für Word, Excel und PowerPoint eingerichtet sind. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die Kompatibilitätsprüfung [hier](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) herunter.
+Mithilfe der zentralen Bereitstellungs Kompatibilitätsprüfung können Sie überprüfen, ob die Benutzer Ihres Mandanten für die Verwendung der zentralisierten Bereitstellung für Word, Excel und PowerPoint eingerichtet sind. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die Kompatibilitätsprüfung [hier](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) herunter.
   
 #### <a name="run-the-compatibility-checker"></a>Ausführen der Kompatibilitätsprüfung
   
@@ -131,7 +131,7 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
   
 ## <a name="user-and-group-assignments"></a>Benutzer- und Gruppenzuordnungen
 
-Das Feature für die zentrale Bereitstellung unterstützt derzeit die Mehrzahl der Gruppen, die von Azure Active Directory unterstützt werden, einschließlich Office 365-Gruppen, Verteilerlisten und Sicherheitsgruppen.
+Das zentralisierte Bereitstellungsfeature unterstützt derzeit die Mehrzahl der von Azure Active Directory unterstützten Gruppen, einschließlich Microsoft 365-Gruppen, Verteilerlisten und Sicherheitsgruppen.
   
 > [!NOTE]
 > Nicht für E-Mail aktivierte Sicherheitsgruppen werden derzeit nicht unterstützt. 
@@ -157,7 +157,7 @@ Alternativ können Sie die Azure Active Directory Graph-API verwenden, um Abfrag
   
 ### <a name="contacting-microsoft-for-support"></a>Kontaktaufnahme mit dem Microsoft-Support
 
-Wenn Sie oder Ihre Benutzer Probleme beim Laden des Add-ins bei der Verwendung von Office-Apps für das Internet (Word, Excel, etc.) haben, die zentral bereitgestellt wurden, müssen Sie sich möglicherweise an den Microsoft-Support wenden ([Weitere Informationen](../contact-support-for-business-products.md)). Stellen Sie im Supportticket die folgenden Informationen zu Ihrer Office 365-Umgebung bereit.
+Wenn Sie oder Ihre Benutzer Probleme beim Laden des Add-ins bei der Verwendung von Office-Apps für das Internet (Word, Excel, etc.) haben, die zentral bereitgestellt wurden, müssen Sie sich möglicherweise an den Microsoft-Support wenden ([Weitere Informationen](../contact-support-for-business-products.md)). Geben Sie die folgenden Informationen zu Ihrer Microsoft 365-Umgebung im Support Ticket an.
   
 |**Plattform**|**Debuginformationen**|
 |:-----|:-----|

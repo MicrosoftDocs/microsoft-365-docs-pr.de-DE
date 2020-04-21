@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516865"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627752"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Produktivitätsbewertung (Vorschau)
 
@@ -64,7 +64,7 @@ Ihre Bewertung wird täglich aktualisiert und spiegelt Benutzeraktionen wider, d
 
 ## <a name="access-and-required-permissions"></a>Zugriff und erforderliche Berechtigungen 
 
-Für die Mitarbeitererfahrung benötigen Sie ein Abonnement für einen Office 365 Business-Plan oder einen Microsoft 365 Business-Plan mit mehreren Benutzern. 
+Für die Mitarbeiter Erfahrung benötigen Sie ein Abonnement für einen Microsoft 365 for Business-Plan mit mehreren Benutzern. 
 
 Um die Berechtigung für den Zugriff auf die Microsoft Produktivitätsbewertung zu erhalten, müssen Sie über die folgenden Rollen verfügen: 
 
@@ -107,8 +107,8 @@ Alle Detailseiten für die Bereiche folgen der folgenden Struktur:
 Darüber hinaus enthalten alle Einblicke die folgenden Elemente: 
 
 - Kopfzeile: Schlussfolgerung oder Ergebnis, das für jeden Einblick erfasst wurde
-- Zusammenfassung: Weitere Erläuterungen dazu, warum die Messwerte in den Einblicken für die Produktivität Ihrer Organisation eine wichtige Rolle spielen. 
-- Datenvisualisierung: zeigt grafisch die Position Ihrer Organisation in Bezug auf die Messwerte in den Einblicken im Vergleich zu den verfügbaren Benchmarks
+- Zusammenfassung: Weitere Erläuterungen dazu, warum die Measures in the Insight für die Produktivität Ihrer Organisation wichtig sind. 
+- Datenvisualisierung: quantifiziert visuell die Position Ihrer Organisation in Bezug auf die Maßnahmen in der Einsicht mit Benchmarks, wenn zutreffend.
 - Aktionen: kontextbezogene Aktionen, die Ihnen helfen können, das gewünschte Ergebnis je Einblick zu verbessern und so Ihre Bewertung zu steigern.
 
 ### <a name="area-detail-page--collaborating-on-content"></a>Detailseite für den Bereich „Zusammenarbeit an Inhalten“ 
@@ -136,7 +136,7 @@ Die für die Zusammenarbeit in Betracht gezogenen Dateitypen sind Word/Excel/Pow
 
 ![Seite „Mobiles Arbeiten“](../../media/psflexibility.png)
 
-Die Seite „mobiles Arbeiten“ quantifiziert die Benutzer (als Prozentsatz und absoluten Wert), die mindestens eine Produktivitäts-App auf mindestens zwei Plattformen (Desktop, Mobil oder Web) verwendet haben. Benutzer erhalten eine höhere Bewertung, wenn sie mehr Apps und Plattformen nutzen. Die dabei in Betracht gezogenen Apps sind: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer und Skype. Die Basis des Einblicks sind Benutzer, die für Office 365 ProPlus, Exchange, Yammer, Skype oder Teams aktiviert sind.
+Die Seite „mobiles Arbeiten“ quantifiziert die Benutzer (als Prozentsatz und absoluten Wert), die mindestens eine Produktivitäts-App auf mindestens zwei Plattformen (Desktop, Mobil oder Web) verwendet haben. Benutzer erhalten eine höhere Bewertung, wenn sie mehr Apps und Plattformen nutzen. Die dabei in Betracht gezogenen Apps sind: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer und Skype. Die Basis der Einblicke sind Benutzer, die für Microsoft 365-Apps für Unternehmen, Exchange, jammern, Skype oder Teams aktiviert sind.
 
 1. **Warum dies wichtig ist** bietet eine Zusammenfassung zu Forschungsergebnissen, die sich mit dem Zusammenhang zwischen der Nutzung mehrerer Plattformen und einer höheren Produktivität beschäftigen. **Lesen Sie die Forschungsergebnisse von Forrester** führt Sie zu einem Forschungsartikel, in dem Sie weiteres Hintergrundwissen erwerben können, wie das Arbeiten auf mehreren Plattformen zu einer Produktivitätssteigerung führen kann.
 1. Tiefergehende Einblicke zu **E-Mail überall verfügbar** quantifiziert die Anzahl der Benutzer in Ihrer Organisation, die mit Outlook plattformübergreifend innerhalb der Basis von in Outlook aktiven Benutzern arbeiten.

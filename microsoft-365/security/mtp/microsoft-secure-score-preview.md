@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 23242f5f2d7e1a0774c83359159588f9fef34f64
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608162"
+ms.locfileid: "43615918"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
@@ -55,7 +55,7 @@ Jede Verbesserungs Aktion ist auf 10 Punkte oder niedriger Wert. Die meisten wer
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Secure Score
 
-Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD, Microsoft Defender ATP und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte finden Sie in Kürze. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
+Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD, Microsoft Defender ATP und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte finden Sie in Kürze. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 

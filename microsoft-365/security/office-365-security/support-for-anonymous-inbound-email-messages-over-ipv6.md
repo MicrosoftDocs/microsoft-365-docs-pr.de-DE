@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Der Administrator kann erfahren, wie die Unterstützung für anonyme eingehende e-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Schutz konfiguriert wird.
-ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131519"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631217"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>Hinzufügen von Unterstützung für anonyme eingehende e-Mails über IPv6 in Office 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Hinzufügen von Unterstützung für anonyme eingehende e-Mails über IPv6 in Microsoft 365
 
-Office 365 Organisationen mit Exchange Online Postfächern und eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer unterstützen anonyme eingehende e-Mails über IPv6. Der Quell-IPv6-e-Mail-Server muss die folgenden Anforderungen erfüllen:
+Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer unterstützen anonyme eingehende e-Mails über IPv6. Der Quell-IPv6-e-Mail-Server muss die folgenden Anforderungen erfüllen:
 
 - Die IPv6-Quelladresse muss einen gültigen PTR-Eintrag (Reverse DNS Lookup) besitzen, mit dem das Ziel den Domänennamen aus der IPv6-Adresse ermitteln kann.
 

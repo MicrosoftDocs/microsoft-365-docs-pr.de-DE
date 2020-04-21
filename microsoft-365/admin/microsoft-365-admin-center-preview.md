@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Erfahren Sie mehr über das neue Microsoft 365 Admin Center.
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627980"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informationen zum neuen Microsoft 365 Admin Center
 
-Das neue Microsoft 365 Admin Center wurde für IT-Teams als vereinfachte Möglichkeit zur Verwaltung Ihrer Microsoft 365-und Office 365-Dienste entwickelt. Das Admin Center bietet eine maßgeschneiderte Erfahrung basierend auf den spezifischen Anforderungen ihrer Rolle oder Organisation, verbessert die Effizienz für alltägliche Aufgaben und bietet umsetzbare Einblicke, mit denen Sie datengesteuerte Entscheidungen treffen können, um Ihren Benutzern eine bessere Benutzerfreundlichkeit zu bieten.
+Das neue Microsoft 365 Admin Center wurde für IT-Teams als vereinfachte Möglichkeit zur Verwaltung Ihrer Microsoft 365-Dienste entwickelt. Das Admin Center bietet eine maßgeschneiderte Erfahrung basierend auf den spezifischen Anforderungen ihrer Rolle oder Organisation, verbessert die Effizienz für alltägliche Aufgaben und bietet umsetzbare Einblicke, mit denen Sie datengesteuerte Entscheidungen treffen können, um Ihren Benutzern eine bessere Benutzerfreundlichkeit zu bieten.
   
 Das Microsoft 365 Admin Center ist der allgemeine Einstiegspunkt für alle Microsoft 365-Administratoren und kann unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)verwendet werden. Spezielle Arbeitsbereiche wie Sicherheit oder Geräteverwaltung ermöglichen eine präzisere Steuerung. Weitere Informationen zur Zusammenarbeit der Verwaltungszentren finden Sie unter Was ist [mit den spezifischen Typen von IT-Rollen und anderen Arbeitsbereichen wie Sicherheit, Geräteverwaltung oder Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) weiter unten in diesem Artikel. 
   
@@ -75,7 +75,7 @@ Ja. Das neue Admin Center ist voll funktionsfähig und verfügt über alle Funkt
 
 Microsoft 365 ist eine vollständige, intelligente Lösung, die Office 365, Windows 10 und Enterprise Mobility + Security umfasst, die es allen ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten. Die folgenden Microsoft 365-Abonnements sind im Admin Center verfügbar, damit Sie jetzt versuchen oder kaufen können:
   
-- Microsoft 365 Business
+- Microsoft 365 for Business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

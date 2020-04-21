@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei Netregistry für Office 365
+title: Erstellen von DNS-Einträgen bei Netregistry für Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Netregistry für Office 365 einrichten.
-ms.openlocfilehash: e1f2414817357b8435bc002860a35c6e76d4314e
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Netregistry für Microsoft einrichten.
+ms.openlocfilehash: 6aed84a4eaf95674358aa54986cfbb76edec2ef3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211134"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629311"
 ---
-# <a name="create-dns-records-at-netregistry-for-office-365"></a>Erstellen von DNS-Einträgen bei Netregistry für Office 365
+# <a name="create-dns-records-at-netregistry-for-microsoft"></a>Erstellen von DNS-Einträgen bei Netregistry für Microsoft
 
 [] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -38,17 +38,17 @@ Das sind die wichtigsten hinzuzufügenden Einträge.
   
 - [Hinzufügen eines TXT-Eintrags zur Überprüfung](#add-a-txt-record-for-verification)
     
-- [Hinzufügen eines MX-Eintrags, damit E-Mails für Ihre Domäne an Office 365 geleitet werden](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Hinzufügen eines MX-Eintrags, damit e-Mails für Ihre Domäne an Microsoft gelangen](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
 
-- [Hinzufügen der für Office 365 erforderlichen CNAME-Einträge](#add-the-cname-records-that-are-required-for-office-365)
+- [Hinzufügen der für Microsoft erforderlichen CNAME-Einträge](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Hinzufügen der zwei für Office 365 erforderlichen SRV-Einträge](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Nachdem Sie diese Einträge bei Netregistry hinzugefügt haben, ist Ihre Domäne für die Verwendung von Office 365 Diensten eingerichtet.
+Nachdem Sie diese Einträge bei Netregistry hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
   
-Informationen zu Webhosting und DNS für Websites mit Office 365 finden Sie unter [Verwenden einer öffentlichen Website mit Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+Informationen über Webhosting und DNS für Websites mit Microsoft finden Sie unter [Verwenden einer öffentlichen Website mit Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -56,7 +56,7 @@ Informationen zu Webhosting und DNS für Websites mit Office 365 finden Sie unte
 ## <a name="add-a-txt-record-for-verification"></a>Hinzufügen eines TXT-Eintrags zur Überprüfung
 <a name="bkmk_txt"> </a>
 
-Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewissern, dass Sie deren Besitzer sind. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, ist für Office 365 der Nachweis, dass Sie der Besitzer der Domäne sind.
+Bevor Sie Ihre Domäne mit Microsoft verwenden, müssen wir sicherstellen, dass Sie Sie besitzen. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, beweist Microsoft, dass Sie die Domäne besitzen.
   
 > [!NOTE]
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
@@ -84,15 +84,15 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
     
     |**Name**|**TTL (SEC)**|**TXT (Verweist auf die Adresse oder den Wert)**|
     |:-----|:-----|:-----|
-    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |"MS = msXXXXXXXX"  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie jeweils Ihren Wert für **die Zieladresse bzw. die Adresse, auf die verwiesen wird** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |"MS = msXXXXXXXX"  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
 6. Wählen Sie **Add Record**aus.
     
-Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Office 365 zurück und fordern Office 365 auf, nach dem Eintrag zu suchen.
+Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern den Eintrag an.
   
-Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
+Wenn Microsoft den richtigen TXT-Eintrag findet, wird Ihre Domäne überprüft.
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -111,7 +111,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Hinzufügen eines MX-Eintrags, damit E-Mails für Ihre Domäne zu Office 365 geleitet werden
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Hinzufügen eines MX-Eintrags, damit e-Mails für Ihre Domäne an Microsoft gelangen
 <a name="bkmk_mx"> </a>
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://theconsole.netregistry.com.au/) zu Ihrer Domänenseite bei Netregistry. Sie werden aufgefordert, sich anzumelden.
@@ -138,7 +138,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     |**Name**|**TTL (SEC)**|**Exchange (verweist auf Adresse oder Wert)**|**Ist der Host vollständig qualifiziert?**|**Präferenz (Priorität)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * aus Ihrem Office 365-Konto ab.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)      |(aktivieren Sie das Kontrollkästchen)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter Was ist MX-Priorität?  <br/> |
+    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)      |(aktivieren Sie das Kontrollkästchen)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter Was ist MX-Priorität?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -146,7 +146,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen CNAME-Einträge
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen CNAME-Einträge
 <a name="bkmk_cname"> </a>
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://theconsole.netregistry.com.au/) zu Ihrer Domänenseite bei Netregistry. Sie werden aufgefordert, sich anzumelden.
@@ -167,7 +167,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
   
 5. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    |**Name**|**Typ**|**TTL**|**Host (Punkt-zu-oder Adresswert)**|
+    |**Name**|**Type**|**TTL**|**Host (Punkt-zu-oder Adresswert)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (Sekunden)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com  <br/> |
@@ -189,7 +189,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind.
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn Sie bereits einen SPF-Eintrag für Ihre Domäne haben, erstellen Sie keinen neuen für Microsoft. Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen *einzelnen* SPF-Eintrag haben, der beide Wertegruppen enthält.
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://theconsole.netregistry.com.au/) zu Ihrer Domänenseite bei Netregistry. Sie werden aufgefordert, sich anzumelden.
     
@@ -212,7 +212,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     > [!NOTE]
     > Sie müssen vor und nach dem Eintrag im Feld txt Anführungszeichen setzen. 
   
-    |**Name**|**Typ**|**TTL**|**TXT-Daten (Ziel)**|
+    |**Name**|**Type**|**TTL**|**TXT-Daten (Ziel)**|
     |:-----|:-----|:-----|:-----|
     |(leer lassen)  <br/> |TXT  <br/> |3600 (Sekunden)  <br/> |"v = spf1 include:SPF. Protection. Outlook. com-all"  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
@@ -222,7 +222,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     ![Netregistry_SPF-TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
 <a name="bkmk_srv"> </a>
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://theconsole.netregistry.com.au/) zu Ihrer Domänenseite bei Netregistry. Sie werden aufgefordert, sich anzumelden.

@@ -1,5 +1,5 @@
 ---
-title: Sammeln der zum Erstellen von Office 365-DNS-Einträgen erforderlichen Informationen
+title: Sammeln der erforderlichen Informationen zum Erstellen von DNS-Einträgen
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Office 365 benötigen. '
+description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Microsoft 365 benötigen. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540879"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628446"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Sammeln der zum Erstellen von Office 365-DNS-Einträgen erforderlichen Informationen
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Sammeln der erforderlichen Informationen zum Erstellen von DNS-Einträgen
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540879"
     
 5. Wechseln Sie zu [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter](create-dns-records-at-any-dns-hosting-provider.md), und wählen Sie Ihren DNS-Host aus der Liste der Registrierungsstellen aus, um die Schritt-für-Schritt-Anleitungen anzuzeigen.
     
-6. Führen Sie die Schritte zum Erstellen des TXT-Eintrags (oder des MX-Eintrags) bei Ihrem DNS-Hostinganbieter aus, und überprüfen Sie die Domäne, wenn Sie sich wieder in Office 365 befinden.
+6. Befolgen Sie die Schritte zum Erstellen des txt-Eintrags (oder MX-Eintrags) auf Ihrem DNS-Host, und überprüfen Sie dann die Domäne wieder in Microsoft 365.
 
-7. Entfernen Sie den TXT-Eintrag (oder den MX-Eintrag) von Ihrem DNS-Host, nachdem die Domäne in Office 365 überprüft wurde.
+7. Entfernen Sie den TXT-Eintrag (oder den MX-Eintrag) von Ihrem DNS-Host, nachdem die Domäne in Microsoft 365 überprüft wurde.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Schritt 2: Suchen des MX-Eintrags Werts für e-Mail und mehr
 

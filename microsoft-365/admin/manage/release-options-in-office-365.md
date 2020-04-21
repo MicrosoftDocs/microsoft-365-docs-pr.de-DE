@@ -1,5 +1,5 @@
 ---
-title: Einrichten der Standard oder Targeted Release-Optionen in Office 365
+title: Einrichten der Standard-oder Targeted Release-Optionen
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,30 +21,30 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Erfahren Sie, wie Sie die Option "Release" für neue Produkt-und Funktionsupdates im Microsoft 365 Admin Center einrichten.
-ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361800"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628112"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Einrichten der Standard oder Targeted Release-Optionen in Office 365
+# <a name="set-up-the-standard-or-targeted-release-options"></a>Einrichten der Standard-oder Targeted Release-Optionen
 
-[] Mit Office 365 erhalten Sie neue Produktupdates und -features, sobald diese verfügbar werden, und müssen nicht alle paar Jahre teure Updates erwerben. Sie können die Bereitstellung dieser Updates für Ihre Organisation verwalten. Beispielsweise können Sie sich für eine frühe Veröffentlichung (Early Release) registrieren, damit Ihre Organisation die Updates zuerst erhält. Sie können festlegen, dass nur bestimmte Personen die Updates erhalten. Alternativ können Sie beim standardmäßigen Veröffentlichungszeitplan (Standard Release) bleiben und die Updates später erhalten. In diesem Artikel werden die verschiedenen Optionen vorgestellt und es wird deren Verwendung für Ihre Organisation erläutert.
+Mit Microsoft 365 erhalten Sie neue Produktupdates und-Features, sobald diese verfügbar sind, statt kostspielige Updates alle paar Jahre durchführen zu müssen. Sie können die Bereitstellung dieser Updates für Ihre Organisation verwalten. Beispielsweise können Sie sich für eine frühe Veröffentlichung (Early Release) registrieren, damit Ihre Organisation die Updates zuerst erhält. Sie können festlegen, dass nur bestimmte Personen die Updates erhalten. Alternativ können Sie beim standardmäßigen Veröffentlichungszeitplan (Standard Release) bleiben und die Updates später erhalten. In diesem Artikel werden die verschiedenen Optionen vorgestellt und es wird deren Verwendung für Ihre Organisation erläutert.
   
 > [!IMPORTANT]
-> Die in diesem Artikel beschriebenen Office 365-Updates gelten für Office 365, SharePoint Online und Exchange Online. Sie gelten nicht für Skype for Business und zugehörige Dienste. Diese Release-Optionen sind zielgerichtete, nach bestem Bemühen entwickelte Möglichkeiten, Änderungen in Office 365 zu veröffentlichen, sie können aber nicht immer und nicht für alle Updates garantiert werden. 
+> Die in diesem Artikel beschriebenen Microsoft 365-Updates gelten für Microsoft 365, SharePoint Online und Exchange Online. Sie gelten nicht für Skype for Business und zugehörige Dienste. Diese Veröffentlichungsoptionen sind gezielte, bestmögliche Methoden zum Freigeben von Änderungen an Microsoft 365, die jedoch nicht zu jedem Zeitpunkt oder für alle Updates garantiert werden können. 
   
 ## <a name="how-it-works---release-validation"></a>Funktionsweise - Releaseüberprüfung
 
-Jede neue Version wird zuerst vom Feature-Team getestet und validiert, dann durch das gesamte Office 365-Feature-Team, gefolgt von Microsoft. Nach den internen Tests und Überprüfungen besteht der nächste Schritt in der Bereitstellung eines **Targeted Release** ("Gezielte Freigabe", vormals First Release) für Kunden, die die entsprechende Option aktivieren. Bei jedem Release Ring sammelt Microsoft Feedback und führt durch die Überwachung der wichtigsten Nutzungsmetriken weitere Qualitätsprüfungen durch. Diese Reihe von fortschreitenden Überprüfungen wurde eingeführt, um sicherzustellen, dass das weltweite Release so robust wie möglich ist. Die Releases sind in der folgenden Abbildung dargestellt. 
+Jede neue Version wird zuerst vom Feature-Team getestet und validiert, dann durch das gesamte Microsoft 365-Feature-Team, gefolgt von Microsoft. Nach den internen Tests und Überprüfungen besteht der nächste Schritt in der Bereitstellung eines **Targeted Release** ("Gezielte Freigabe", vormals First Release) für Kunden, die die entsprechende Option aktivieren. Bei jedem Release Ring sammelt Microsoft Feedback und führt durch die Überwachung der wichtigsten Nutzungsmetriken weitere Qualitätsprüfungen durch. Diese Reihe von fortschreitenden Überprüfungen wurde eingeführt, um sicherzustellen, dass das weltweite Release so robust wie möglich ist. Die Releases sind in der folgenden Abbildung dargestellt. 
   
-![Freigeben von Gültigkeits Prüfungs Ringen für Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Release-Überprüfungs Ringe für Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Für wichtige Updates werden Office-Kunden zunächst durch die [Microsoft 365-Roadmap](https://products.office.com/business/office-365-roadmap)benachrichtigt. Wenn ein Update dem Rollout näher kommt, wird es über das [Office 365 Nachrichtencenter](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)kommuniziert.
+Für wichtige Updates werden Office-Kunden zunächst durch die [Microsoft 365-Roadmap](https://products.office.com/business/office-365-roadmap)benachrichtigt. Wenn ein Update dem Rollout näher kommt, wird es über Ihr [Microsoft 365-Nachrichtencenter](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)kommuniziert.
 
 > [!NOTE]
-> Sie benötigen ein Office 365-oder Azure AD Konto, um über das [Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)auf Ihr Nachrichtencenter zuzugreifen. Office 365 Home Plan Benutzer verfügen nicht über ein Admin Center.
+> Sie benötigen ein Microsoft 365-oder Azure AD-Konto, um über das [Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)auf Ihr Nachrichtencenter zuzugreifen. Microsoft 365 Home Plan Benutzer verfügen nicht über ein Admin Center.
 
 
 ## <a name="standard-release"></a>Standard Release
@@ -73,7 +73,7 @@ Wenn Sie [die Option Release im Admin Center](#set-up-the-release-option-in-the-
   
 ## <a name="benefits-of-targeted-release"></a>Vorteile der gezielten Freigabe
 
-In der gezielten Freigabe können Administratoren die Manager bzw. anderen Benutzer ändern, die für Office 365-Updates zur Vorbereitung auf die anstehenden Änderungen verantwortlich sind und folgende Aufgaben ausführen:
+Targeted Release ermöglicht Administratoren, Änderungs Managern oder anderen Verantwortlichen für Microsoft 365-Updates die Vorbereitung auf die bevorstehenden Änderungen, indem Sie Ihnen Folgendes zulässt:
   
 - Neue Updates testen und überprüfen, bevor diese für alle Benutzer in der Organisation freigegeben werden.
     
@@ -87,10 +87,10 @@ In der gezielten Freigabe können Administratoren die Manager bzw. anderen Benut
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Einrichten der Option "Version" im Admin Center
 
-Sie können wie folgt ändern, wie Ihre Organisation Office 365-Updates erhält. Sie müssen ein globaler Administrator in Office 365 sein, um sich anzumelden.
+Sie können die Art und Weise ändern, wie Ihre Organisation Microsoft 365-Updates erhält, indem Sie die folgenden Schritte ausführen. Sie müssen ein globaler Administrator in Microsoft 365 sein, um sich anzumelden.
   
 > [!IMPORTANT]
-> Es kann bis zu 24 Stunden dauern, bis die Änderungen in Office 365 wirksam werden. Wenn Sie sich bei "Targeted Release" abmelden, nachdem Sie es zuvor aktiviert hatten, verlieren Ihre Benutzer möglicherweise Zugriff auf Features, deren geplanter Freigabetermin noch nicht erreicht ist. 
+> Es kann bis zu 24 Stunden dauern, bis die folgenden Änderungen in Microsoft 365 wirksam werden. Wenn Sie sich bei "Targeted Release" abmelden, nachdem Sie es zuvor aktiviert hatten, verlieren Ihre Benutzer möglicherweise Zugriff auf Features, deren geplanter Freigabetermin noch nicht erreicht ist. 
   
 1. Wechseln Sie im Admin Center zur**Einstellung** **Einstellungen** > , und wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Freigabeeinstellungen**aus.
 
@@ -112,4 +112,4 @@ Zum Installieren einer Targeted Release-Version von Office[ gehen Sie wie hier b
   
 ## <a name="learn-more"></a>Weitere Informationen
 
-Erfahren Sie, wie Sie [Nachrichten](https://docs.microsoft.com/office365/admin/manage/message-center) in Ihrem [Office 365 Nachrichtencenter](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) verwalten, um Benachrichtigungen über bevorstehende Office 365 Updates und-Versionen zu erhalten.
+Erfahren Sie, wie Sie [Nachrichten](https://docs.microsoft.com/office365/admin/manage/message-center) in Ihrem [Microsoft 365-Nachrichtencenter](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) verwalten, um Benachrichtigungen zu bevorstehenden Updates und Versionen von Microsoft 365 zu erhalten.

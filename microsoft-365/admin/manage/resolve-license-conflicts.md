@@ -1,5 +1,5 @@
 ---
-title: Lösen von Lizenzkonflikten in Office 365 Business
+title: Lösen von Lizenzkonflikten
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Hier erfahren Sie, wie Sie Lizenz Konflikte mit Ihrem Office 365 für Unternehmen-Abonnement lösen.
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Hier erfahren Sie, wie Sie Lizenz Konflikte mit Ihrem Microsoft 365 for Business-Abonnement beheben.
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628088"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>Lösen von Lizenzkonflikten in Office 365 Business
+# <a name="resolve-license-conflicts"></a>Lösen von Lizenzkonflikten
 
 Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement benötigen, bevor Sie neue Benutzer erstellen. Auf diese Weise kann neuen Benutzern beim Erstellen der Benutzerkonten eine Lizenz zugewiesen werden. Wenn Sie Benutzern bereits alle Lizenzen zugewiesen haben, einige der Lizenzen jedoch abgelaufen sind, oder wenn Sie versuchen, eine Lizenz zu entfernen, die bereits einem Benutzer zugewiesen ist, treten Lizenzkonflikte auf. Weitere Informationen finden Sie unter [Entfernen von Lizenzen aus Ihrem Abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
   

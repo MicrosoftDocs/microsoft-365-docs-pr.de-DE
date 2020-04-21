@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Holen Sie sich die Microsoft 365 admin-APP, und erfahren Sie, wie Sie Ihre Online-Organisation von Ihrem Telefon oder Tablet aus verwalten.
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353036"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623988"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zum Microsoft 365-Administrator Mobile App
 
@@ -57,7 +57,7 @@ Sehen Sie sich ein kurzes Video über die Installation des Administrator Mobile 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
  
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -66,11 +66,11 @@ Nachstehend erhalten Sie Antworten auf einige häufig gestellte Fragen zu der Ap
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Was muss ich tun, um die App verwenden zu können?
 
-Sie benötigen ein gültiges Office 365 für Unternehmen-oder Microsoft 365 Business-Abonnement mit Administratorrechten, um sich anzumelden und die APP zu verwenden. Der Administrator Mobile App kein e-Mail-Client. Es handelt sich um eine umfangreiche administrative App mit über 80 Funktionen, die Ihnen bei der Unterstützung Ihrer Organisation helfen, während Sie unterwegs sind.
+Sie benötigen ein gültiges Microsoft 365 apps for Business-oder Microsoft 365 Business Premium-Abonnement mit Administratorrechten, um sich anzumelden und die APP zu verwenden. Der Administrator Mobile App kein e-Mail-Client. Es handelt sich um eine umfangreiche administrative App mit über 80 Funktionen, die Ihnen bei der Unterstützung Ihrer Organisation helfen, während Sie unterwegs sind.
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>Kann ich die APP mit meinem Office 365 for Home-Abonnement verwenden?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kann ich die APP mit meinem Microsoft 365-Familien Abonnement verwenden?
 
-Nein, die APP funktioniert nur mit Office 365 für Unternehmen-und Microsoft 365-Geschäfts Abonnements. 
+Nein, die APP funktioniert nur mit Microsoft 365 apps for Business und Microsoft 365 Business Premium-Abonnements. 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>Funktioniert die App auch dann, wenn in meiner Organisation die Verzeichnissynchronisierung aktiviert ist?
 
@@ -104,4 +104,4 @@ E-Mail [feedback365@Microsoft.com](mailto:feedback365@microsoft.com) , um ein Pr
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

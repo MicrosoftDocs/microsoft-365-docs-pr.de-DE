@@ -1,5 +1,5 @@
 ---
-title: Zulassen, dass Benutzer ihre eigenen Kennwörter in Office 365 zurücksetzen
+title: Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211895"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617146"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
@@ -36,7 +36,7 @@ Werden Sie öfter von Personen bedrängt, die Sie bitten, ihre Kennwörter zurü
   
 Hier sind ein paar Dinge, die Sie wissen müssen:
   
-- In jedem kostenpflichtigen Office 365 Business-, Education- oder Non-Profit-Plan ist die Self-Service-Kennwortzurücksetzung für Cloudbenutzer **kostenlos**. In der Office 365-Testversion funktioniert sie jedoch nicht. 
+- Sie erhalten Self-Service Password Reset für Cloud- **Benutzer mit** einem beliebigen Microsoft 365 Business-, Education-oder gemeinnützigen kostenpflichtigen Plan. Sie funktioniert nicht mit der Microsoft 365-Testversion. 
     
 - Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden. 
     

@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365 für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894953"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630725"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -23,7 +23,7 @@ Die Funktionen zur externen Freigabe in Microsoft 365 bieten Personen in Ihrer O
 
 Die Zusammenarbeit mit Personen außerhalb Ihrer Organisation besteht aus zwei Hauptkomponenten:
 
-- **Freigabe aktivieren** – konfigurieren Sie die Freigabe Steuerelemente in Azure Active Directory, Teams, Office 365 Gruppen und SharePoint, um die für Ihre Organisation gewünschte Freigabeebene zuzulassen.
+- **Freigabe aktivieren** : Konfigurieren Sie die Freigabe Steuerelemente in Azure Active Directory, Microsoft Teams, Microsoft 365-Gruppen und SharePoint, um die für Ihre Organisation gewünschte Freigabeebene zu ermöglichen.
 - **Aktivieren zusätzlicher Sicherheit** : während die grundlegenden Freigabefunktionen so konfiguriert werden können, dass Personen außerhalb Ihrer Organisation authentifiziert werden müssen, bietet Microsoft 365 zahlreiche zusätzliche Sicherheits-und Compliance-Funktionen, die Ihnen dabei helfen, Ihre Daten zu schützen und ihre Steuerungsrichtlinien beizubehalten, während Sie extern freigeben.
 
 ## <a name="enable-sharing"></a>Freigabe aktivieren
@@ -46,7 +46,7 @@ Nachdem Sie das Szenario, das Sie für die Freigabe für Personen außerhalb Ihr
 
 ## <a name="collaborate-with-partner-companies"></a>Zusammenarbeit mit Partnerunternehmen
 
-Wenn Sie an einem großen Projekt arbeiten, das viele Gäste aus einer anderen Organisation umfasst, oder wenn Sie eine ständige Lieferantenbeziehung haben, in der sich Gäste häufig ändern, können Sie die Verwaltung von Berechtigungen in Azure Active Directory verwenden, um die Gast Verwaltung zu vereinfachen. und lassen Sie das Partnerunternehmen an dieser Verantwortung teilhaben. Weitere Informationen finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) .
+Wenn Sie an einem großen Projekt arbeiten, das viele Gäste aus einer anderen Organisation umfasst, oder wenn Sie eine ständige Lieferantenbeziehung haben, in der sich Gäste häufig ändern, können Sie die Verwaltung von Berechtigungen in Azure Active Directory verwenden, um die Verwaltung von Gast zu vereinfachen und das Partnerunternehmen in dieser Verantwortung zu teilen. Weitere Informationen finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) .
 
 ## <a name="limit-sharing"></a>Grenzwert Freigabe
 

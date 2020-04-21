@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Versuchen Sie diese Lösungen, wenn Probleme mit freigegebenen Postfächern auftreten.
-ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210516"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628747"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Beheben von Problemen mit freigegebenen Postfächern
 
@@ -36,7 +36,7 @@ Wenn beim Erstellen oder Verwenden eines freigegebenen Postfachs Fehlermeldungen
 
 Wenn die Fehlermeldung angezeigt wird, **wird die Proxyadresse "SMTP: <freigegebener Postfachname\>" bereits von den Proxyadressen oder legacyExchangeDN\<von "Name>" verwendet. Wählen Sie eine andere Proxyadresse aus**, d. h., Sie versuchen, dem freigegebenen Postfach einen bereits verwendeten Namen zu geben. Beispiel: Sie möchten freigegebenen Postfächern die Namen "info@domaene1" und "info@domaene2" geben. Sie können auf zwei Arten vorgehen:
 
-  - Verwenden Sie Windows PowerShell. Anweisungen dazu finden Sie im folgenden Blogbeitrag (nur in Englisch verfügbar): [Create Shared Mailboxes with Same Alias at Different Domains in Office 365](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365) ("Erstellen freigegebener Postfächer mit demselben Alias bei verschiedenen Domänen in Office 365").
+  - Verwenden Sie Windows PowerShell. In diesem Blogbeitrag finden Sie Anweisungen: [Erstellen freigegebener Postfächer mit gleichem Alias in verschiedenen Domänen](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
   - Nennen Sie das zweite freigegebene Postfach etwas anderes als den Anfang, um den Fehler zu umgehen. Benennen Sie dann im Admin Center das freigegebene Postfach So um, wie es sein soll.
 
@@ -46,7 +46,7 @@ Wenn Sie ein freigegebenes Postfach erstellt und anschließend versuchen, eine N
 
 **Diese Nachricht konnte nicht gesendet werden. Sie verfügen nicht über die Berechtigung, die Nachricht im Namen des angegebenen Benutzers zu senden.**
 
-Diese Meldung wird angezeigt, wenn Office 365 ein Problem mit der Replikationswartezeit auftritt. Es sollte in einer Stunde oder so verschwinden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügter Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
+Diese Meldung wird angezeigt, wenn bei Microsoft 365 ein Problem mit der Replikationswartezeit auftritt. Es sollte in einer Stunde oder so verschwinden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügter Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

@@ -19,27 +19,27 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Hier erfahren Sie, wie Sie eine Sicherheitsgruppe erstellen, bearbeiten oder löschen.
-ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362280"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628879"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Erstellen, bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center
 
-[] Auf der Office 365-Seite **Gruppen** können Sie Gruppen mit Benutzerkonten erstellen, denen Sie dann in SharePoint Online und CRM Online die gleichen Berechtigungen zuweisen. So kann ein Administrator beispielsweise eine Sicherheitsgruppe erstellen, um einer bestimmten Personengruppe den Zugriff auf eine SharePoint-Website zu gewähren. Nur globale und Benutzerverwaltungsadministratoren verfügen über die Berechtigungen zum Erstellen, Bearbeiten oder Löschen von Sicherheitsgruppen. Weitere Informationen zu Administratorrollen finden Sie unter [Zuweisen von Administratorrollen](../add-users/assign-admin-roles.md). 
+Auf der Seite Microsoft 365 **Gruppen** können Sie Gruppen von Benutzerkonten erstellen, die Sie verwenden können, um in SharePoint Online und CRM Online dieselben Berechtigungen zuzuweisen. Beispielsweise kann ein Administrator eine Sicherheitsgruppe erstellen, um einer bestimmten Gruppe von Personen Zugriff auf eine SharePoint-Website zu gewähren. Nur globale Administratoren und Benutzer Verwaltungsdienste verfügen über Berechtigungen zum Erstellen, bearbeiten oder Löschen von Sicherheitsgruppen. Weitere Informationen zu Administratorrollen finden Sie unter [zuweisen](../add-users/assign-admin-roles.md)von Administratorrollen. 
   
 Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#groups-in-exchange-online-and-sharepoint-online), mit denen Sie an eine Benutzergruppe E-Mails senden oder der Gruppe Berechtigungen zuweisen können, und [Gruppen in Exchange Online und SharePoint Online](#groups-in-exchange-online-and-sharepoint-online), mit denen Benutzern Rechte zugewiesen sowie der Zugriff auf Websites und Websitesammlungen gewährt werden kann. 
   
 > [!IMPORTANT]
->  Planen der Verwendung von Website Postfächern Alle Benutzer, die über eine Sicherheitsgruppe zu einer SharePoint-Website hinzugefügt werden, anstatt einzeln hinzugefügt zu werden, können nur das websitepostfach von SharePoint verwenden. Diese Benutzer können nicht über Outlook auf das websitepostfach zugreifen. Weitere Informationen finden Sie unter [Use Office 365 Groups anstelle von Website Postfächern](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+>  Planen der Verwendung von Website Postfächern Alle Benutzer, die über eine Sicherheitsgruppe zu einer SharePoint-Website hinzugefügt werden, anstatt einzeln hinzugefügt zu werden, können nur das websitepostfach von SharePoint verwenden. Diese Benutzer können nicht über Outlook auf das websitepostfach zugreifen. Weitere Informationen finden Sie unter [Verwenden von Microsoft 365-Gruppen anstelle von Website Postfächern](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Verwalten von Sicherheitsgruppen im Admin Center
 
 ### <a name="add-a-security-group"></a>Hinzufügen einer Sicherheitsgruppe
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Gruppen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen.</a>
   
 2. Wählen Sie auf der Seite **Gruppen** die Option **Gruppe hinzufügen**aus.
     
@@ -118,14 +118,14 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
     
 3. Wählen Sie im Bereich Sicherheitsgruppe neben **Name** oder **Mitglieder** Registerkarte **Bearbeiten** aus, um Gruppendetails oder Mitglieder zu bearbeiten.
     
-4. Nachdem Sie Änderungen vorgenommen haben, wählen Sie **Save** \> **Close**aus.
+4. Nachdem Sie Änderungen vorgenommen haben, wählen Sie **Save** > **Close**aus.
 
 ::: moniker-end
 
 
 ### <a name="delete-a-security-group"></a>Löschen einer Sicherheitsgruppe
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
     
 2. Wählen Sie auf der Seite **Gruppen** den Namen der Gruppe aus. 
     
@@ -137,13 +137,13 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
 
 Wenn Sie Benutzergruppen erstellen möchten, damit Sie e-Mails an alle gleichzeitig senden können, können Sie dies im Exchange Admin Center tun, indem Sie zu **Administrator** \> **-Exchange** \> - **Empfänger** \> **Gruppen**wechseln. Wählen Sie dann **neu**![hinzu](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)fügen aus, und wählen Sie die Art der Gruppe aus, die Sie erstellen möchten: 
   
-- **Verteilergruppe**: Wird verwendet, um Nachrichten an eine Benutzergruppe zu senden. Sie wird auch als *e-Mail-aktivierte Verteilergruppe*oder in Office 365 eine *Verteilerliste*bezeichnet. Weitere Informationen finden Sie unter [Verwalten von Verteilergruppen](https://technet.microsoft.com/library/bb124513.aspx).
+- **Verteilergruppe**: Wird verwendet, um Nachrichten an eine Benutzergruppe zu senden. Sie wird auch als *e-Mail-aktivierte Verteilergruppe*oder eine *Verteilerliste*bezeichnet. Weitere Informationen finden Sie unter [Verwalten von Verteilergruppen](https://technet.microsoft.com/library/bb124513.aspx).
     
 - **Sicherheitsgruppe**: Kann verwendet werden, um Nachrichten an eine Benutzergruppe zu senden oder um Berechtigungen zum Zugriff auf Ressourcen zu gewähren. Diese Gruppe wird auch als *e-Mail-aktivierte Sicherheitsgruppe*bezeichnet. Weitere Informationen finden Sie unter [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://technet.microsoft.com/library/bb123521.aspx).
     
 - **Dynamische Verteilergruppe**: Eine Art von Verteilergruppe, bei der die Empfängerliste jedes Mal, wenn Sie eine Nachricht senden, basierend auf von Ihnen definierten Filtern und Bedingungen neu berechnet wird. Weitere Informationen finden Sie unter [Verwalten dynamischer Verteilergruppen](https://technet.microsoft.com/library/bb123722.aspx).
     
-Nachdem Sie im Exchange Admin Center Verteilergruppen und E-Mail-aktivierte Sicherheitsgruppen erstellt haben, werden die Namen und Benutzerlisten auf der Office 365-Seite **Sicherheitsgruppen** angezeigt. Sie können diese Gruppen an beiden Positionen löschen, können sie jedoch nur im Exchange Admin Center bearbeiten. Dynamische Verteilergruppen werden auf der Seite **Sicherheitsgruppen** von Office 365 nicht angezeigt. 
+Nachdem Sie Verteilergruppen und e-Mail-aktivierte Sicherheitsgruppen im Exchange Admin Center erstellt haben, werden Ihre Namen und Benutzerlisten auf der Seite **Sicherheitsgruppen** angezeigt. Sie können diese Gruppen an beiden Positionen löschen, können sie jedoch nur im Exchange Admin Center bearbeiten. Dynamische Verteilergruppen werden auf der Seite **Sicherheitsgruppen** nicht angezeigt. 
   
  SharePoint-Gruppen werden automatisch beim Erstellen einer Websitesammlung erstellt. Den Standardgruppen werden mithilfe der SharePoint-Standardberechtigungsstufen (auch als SharePoint-Rollen bezeichnet) Rechte erteilt und wird Zugriff gewährt. Weitere Informationen finden Sie unter [SharePoint-Standardgruppen in SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
   
@@ -157,5 +157,5 @@ Nein. Dies ist nur eine weitere Möglichkeit zum Verwalten der Sicherheit für I
   
 ## <a name="can-i-send-email-to-a-security-group"></a>Kann ich eine e-Mail an eine Sicherheitsgruppe senden?
 
-Ja. Wenn Sie jedoch Gruppen für e-Mail und Zusammenarbeit verwenden möchten, empfiehlt es sich, stattdessen [eine Office 365 Gruppe zu erstellen](../create-groups/create-groups.md) . 
+Ja. Wenn Sie jedoch Gruppen für e-Mail und Zusammenarbeit verwenden möchten, empfiehlt es sich, stattdessen [eine Microsoft 365-Gruppe zu erstellen](../create-groups/create-groups.md) . 
   

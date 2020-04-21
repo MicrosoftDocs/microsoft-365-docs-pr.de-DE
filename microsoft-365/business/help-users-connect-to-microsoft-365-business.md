@@ -1,5 +1,5 @@
 ---
-title: Hilfe für Benutzer bei der Herstellung der Verbindung zu Microsoft 365 Business
+title: Unterstützen der Benutzer beim Herstellen einer Verbindung mit Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,21 +27,21 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Erfahren Sie, was Sie erwarten müssen, nachdem Business Cloud Suite-Setup abgeschlossen ist und Ihre standardmäßigen Geräterichtlinien installiert und einsatzfähig sind.
-ms.openlocfilehash: 450d91686420c11bf696e70a993354c57f0602a3
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 375a46fd946b42dc391ff6e4dabe98a435074377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560418"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627212"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a>Hilfe für Benutzer bei der Herstellung der Verbindung zu Microsoft 365 Business
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Unterstützen der Benutzer beim Herstellen einer Verbindung mit Microsoft 365 Business Premium
 
 Nachdem Sie das Setup abgeschlossen haben, sind Ihre Standardgeräte Richtlinien vorhanden und können angewendet werden. Auf mobilen Geräten laden Benutzer Office-Apps herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits-oder Schulkonto anmeldet. Es gibt ein bisschen mehr Arbeit, bevor Richtlinien auf Windows-PCs angewendet werden, beispielsweise auf ein direktes Upgrade. Weitere Informationen finden Sie unter und Freigeben der folgenden Themen, um Benutzer bei der Einrichtung und Verbindung zu unterstützen:
   
-[Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md)
+[Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)
   
 [Verwenden Sie die Schritt-für-Schritt-Anleitung zum Hinzufügen von Autopilot-Geräten und-Profil](add-autopilot-devices-and-profile.md)
   
-[Einrichten mobiler Geräte für Benutzer von Microsoft 365 Business](set-up-mobile-devices.md)
+[Einrichten von mobilen Geräten für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md)
   
 

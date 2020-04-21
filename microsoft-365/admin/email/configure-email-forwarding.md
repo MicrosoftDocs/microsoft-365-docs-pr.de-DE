@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der E-Mail-Weiterleitung in Office 365
+title: Konfigurieren der E-Mail-Weiterleitung
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Einrichten der e-Mail-Weiterleitung an ein oder mehrere e-Mail-Konten mit Office365.
-ms.openlocfilehash: 963256aedb52ae0adf31790a74fbdb77ad2bb27e
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 5807649fa43d094fd8f05cf63e2905d7cdb6dd7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142527"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628915"
 ---
-# <a name="configure-email-forwarding-in-office-365"></a>Konfigurieren der E-Mail-Weiterleitung in Office 365
+# <a name="configure-email-forwarding"></a>Konfigurieren der E-Mail-Weiterleitung
   
-[] Wenn Sie Administrator einer Office 365-Organisation sind, gibt es möglicherweise Bedingungen seitens des Unternehmens, was die Einrichtung von E-Mail-Weiterleitungen an das Postfach eines Benutzers betrifft. Mit einer E-Mail-Weiterleitung können Sie E-Mails, die an das Postfach eines Benutzers gesendet wurden, an das Postfach eines anderen Benutzers innerhalb oder außerhalb Ihrer Organisation weiterleiten.
+Als Administrator einer Organisation haben Sie möglicherweise Unternehmens Anforderungen, um die e-Mail-Weiterleitung für das Postfach eines Benutzers einzurichten. Mit einer E-Mail-Weiterleitung können Sie E-Mails, die an das Postfach eines Benutzers gesendet wurden, an das Postfach eines anderen Benutzers innerhalb oder außerhalb Ihrer Organisation weiterleiten.
 
   
 ## <a name="configure-email-forwarding"></a>Konfigurieren der E-Mail-Weiterleitung
 
  Beachten Sie vor dem Einrichten der e-Mail-Weiterleitung Folgendes: 
 
-- Nachdem Sie die e-Mail-Weiterleitung eingerichtet haben, werden nur **neue** e-Mails, die *an das Postfach* gesendet werden, weitergeleitet. 
+- Nachdem Sie die e-Mail-Weiterleitung eingerichtet haben, sind nur **neue** e-Mails, die an das Postfach " *von* " gesendet werden, in. 
     
 - Für die e-Mail-Weiterleitung muss das *von* -Konto über eine Lizenz verfügen. Wenn Sie die e-Mail-Weiterleitung einrichten, da der Benutzer Ihre Organisation verlassen hat, besteht eine andere Option darin, [Ihr Postfach in ein freigegebenes Postfach zu konvertieren](convert-user-mailbox-to-shared-mailbox.md). Auf diese Weise können mehrere Personen darauf zugreifen. Ein freigegebenes Postfach darf jedoch nicht mehr als 50 GB betragen. 
     
-Sie müssen ein Exchange-Administrator oder globaler Administrator in Office 365 sein, um diese Schritte ausführen zu können. Weitere Informationen finden Sie im Thema [zu Administratorrollen](../add-users/about-admin-roles.md).
+Sie müssen ein Exchange-Administrator oder globaler Administrator in Microsoft 365 sein, um diese Schritte ausführen zu können. Weitere Informationen finden Sie im Thema [zu Administratorrollen](../add-users/about-admin-roles.md).
 
 ::: moniker range="o365-worldwide"
 
@@ -56,7 +56,7 @@ Sie müssen ein Exchange-Administrator oder globaler Administrator in Office 365
   
 4. Wählen Sie auf der Seite e-Mail-Weiterleitung **alle an dieses Postfach gesendeten e-Mails weiterleiten**aus, geben Sie die Weiterleitungsadresse ein, und wählen Sie aus, ob eine Kopie der weitergeleiteten e-Mails aufbewahrt werden soll. Wenn diese Option nicht angezeigt wird, stellen Sie sicher, dass dem Benutzerkonto eine Lizenz zugewiesen ist. Wählen Sie **Änderungen speichern** aus.
     
-    Um *an mehrere e-Mail-Adressen weiterzuleiten*, können Sie den Benutzer bitten, eine Regel in Outlook für die Weiterleitung an die Adressen einzurichten. Weitere Informationen finden Sie unter [Verwenden von Regeln zum automatischen Weiterleiten von Nachrichten](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
+    Um **an mehrere e-Mail-Adressen weiterzuleiten**, können Sie den Benutzer bitten, eine Regel in Outlook für die Weiterleitung an die Adressen einzurichten. Weitere Informationen finden Sie unter [Verwenden von Regeln zum automatischen Weiterleiten von Nachrichten](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
     
      Oder erstellen Sie im Admin Center [eine Verteilergruppe](../setup/create-distribution-lists.md), [fügen Sie die Adressen hinzu](add-user-or-contact-to-distribution-list.md), und legen Sie dann die Weiterleitung so fest, dass Sie mithilfe der Anweisungen in diesem Artikel auf die Verteilerliste verweist.
     

@@ -1,5 +1,5 @@
 ---
-title: Informationen zu freigegebenen Postfächern
+title: Info zu freigegebenen Postfächern
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen auf dasselbe Postfach zugreifen müssen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: 8e9e4b1ae0235886a9dbb5b39ad4c0f78c27b53f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629107"
 ---
-# <a name="about-shared-mailboxes"></a>Informationen zu freigegebenen Postfächern
+# <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
 Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support, den Empfangstresen oder andere Funktionen, die von mehreren Personen geteilt werden.
 
@@ -39,7 +39,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), so
 
 - **Benutzerberechtigungen:** Sie müssen Benutzern Berechtigungen (Mitgliedschaft) erteilen, um das freigegebene Postfach zu verwenden. Nur Personen innerhalb Ihrer Organisation können ein freigegebenes Postfach nutzen.
 
-- **Externe Benutzer:** Sie können nicht Personen außerhalb Ihres Unternehmens (wie Personen mit einem Gmail-Konto) Zugriff auf Ihr freigegebenes Postfach gewähren. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Office 365 Gruppe im Admin Center](../create-groups/create-groups.md).
+- **Externe Benutzer:** Sie können nicht Personen außerhalb Ihres Unternehmens (wie Personen mit einem Gmail-Konto) Zugriff auf Ihr freigegebenes Postfach gewähren. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Microsoft 365-Gruppe im Admin Center](../create-groups/create-groups.md).
 
 -  **Verwendung mit Outlook:** Zusätzlich zur Verwendung von Outlook im Internet aus Ihrem Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für IOS-APP oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile</a>. Eine weitere Möglichkeit besteht darin, eine Gruppe für Ihr freigegebenes Postfach zu erstellen. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).  
 
@@ -49,13 +49,13 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), so
 
 - **Administratorrollen:** Benutzer mit globalen Administrator-oder Exchange-Administratorrollen können freigegebene Postfächer erstellen.
 
-- **Abonnementanforderungen:** Um ein freigegebenes Postfach zu erstellen, müssen Sie einen Office 365 für Unternehmen Plan abonnieren, der e-Mails (den Exchange Online Dienst) enthält. Das Office 365 Geschäfts Abonnement enthält keine e-Mails; Office 365 Business Premium.
+- **Abonnementanforderungen:** Um ein freigegebenes Postfach zu erstellen, müssen Sie einen Microsoft 365 for Business-Plan abonnieren, der e-Mails enthält (Exchange Online Dienst). Das Microsoft 365 apps for Business-Abonnement enthält keine e-Mails; Microsoft 365 Business Standard funktioniert nicht.
 
 - **Anmelden:** Ein freigegebenes Postfach ist nicht für die direkte Anmeldung durch das zugehörige Benutzerkonto vorgesehen. Sie sollten die Anmeldung für das freigegebene Postfachkonto immer blockieren und blockiert lassen.
 
-- **Zu viele Benutzer:** Wenn zu viele designierte Benutzer gleichzeitig auf ein freigegebenes Postfach zugreifen, kann es vorkommen, dass eine Verbindung mit diesem Postfach nicht hergestellt wird. In diesem Fall können Sie die Anzahl der Benutzer verringern oder eine andere Arbeitsauslastung wie Office 365 Gruppe oder öffentlichen Ordner verwenden.
+- **Zu viele Benutzer:** Wenn zu viele designierte Benutzer gleichzeitig auf ein freigegebenes Postfach zugreifen, kann es vorkommen, dass eine Verbindung mit diesem Postfach nicht hergestellt wird. In diesem Fall können Sie die Anzahl der Benutzer verringern oder eine andere Arbeitsauslastung wie eine Microsoft 365-Gruppe oder einen öffentlichen Ordner verwenden.
 
-- **Löschen von Nachrichten:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit, dies zu verhindern, ist das Erstellen einer Office 365-Gruppe statt eines freigegebenen Postfachs. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Informationen finden Sie unter [Compare Groups](../create-groups/compare-groups.md). Weitere Informationen zu Gruppen finden Sie unter Weitere Informationen [zu Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Löschen von Nachrichten:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit besteht darin, eine Microsoft 365-Gruppe anstelle eines freigegebenen Postfachs zu erstellen. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Informationen finden Sie unter [Compare Groups](../create-groups/compare-groups.md). Weitere Informationen zu Gruppen finden Sie unter Weitere Informationen [zu Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

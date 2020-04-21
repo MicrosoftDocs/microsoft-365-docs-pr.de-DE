@@ -25,19 +25,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Unterstützen Sie Ihre Benutzer bei der Installation von Office-Apps auf Windows 10-Geräten, und installieren Sie Office auf Windows 10-PCs ganz einfach über das Microsoft 365 Business Admin Center.
-ms.openlocfilehash: a33121f5c5b3532ea376a2bf7a6d7f51d4291a47
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Helfen Sie Ihren Benutzern, Office-Apps auf Windows 10-Geräten zu installieren und Office auf Windows 10-PCs problemlos aus dem Microsoft 365 Admin Center zu installieren.
+ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561625"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627198"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 
 [![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Sie können Office auf Windows 10-PCs schnell und einfach über das Microsoft 365 Business Admin Center installieren.
+Sie können Office auf Windows 10-PCs schnell und einfach über das Microsoft 365 Admin Center installieren.
   
 Um zu verstehen, wie dies bei zuvor installierten Office-Apps funktioniert, lesen Sie [Vorbereiten der Office-Clientinstallation](prepare-for-office-client-deployment.md), bevor Sie mit diesem Vorgang beginnen.
 
@@ -62,6 +62,6 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Wählen Sie Benutzer zum Senden von e-Mails mit Office-Download Link aus.":::
 
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'In diesem Artikel erfahren Sie, wie Sie mithilfe von Exchange PowerShell das Feature "clutter" für alle oder bestimmte Benutzer in Ihrer Organisation aktivieren oder deaktivieren. '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253068"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628927"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Konfigurieren von 'Clutter' für Ihre Organisation
 
 > [!TIP]
 > [Posteingang mit Relevanz](../setup/configure-focused-inbox.md) ersetzt "Clutter". Weitere Informationen: [Update im Posteingang mit Fokus und Pläne für clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Als Administrator müssen Sie möglicherweise das Feature "clutter" in Office 365 verwalten. Um das Feature "Clutter" für Benutzer in Ihrer Organisation ein- oder auszuschalten, müssen Sie Exchange PowerShell verwenden. (Einzelpersonen können das Feature anhand der folgenden Schritte aktivieren/deaktivieren: [Deaktivieren/Aktivieren von Clutter in Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
+Als Administrator müssen Sie möglicherweise das Feature "clutter" in Microsoft 365 verwalten. Um das Feature "Clutter" für Benutzer in Ihrer Organisation ein- oder auszuschalten, müssen Sie Exchange PowerShell verwenden. (Einzelpersonen können das Feature anhand der folgenden Schritte aktivieren/deaktivieren: [Deaktivieren/Aktivieren von Clutter in Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
   
 Informationen zur Verwendung von Exchange PowerShell finden Sie unter [Verwenden von PowerShell mit Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) und [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415). Sie müssen über ein Konto mit mindestens der Exchange-Dienstadministrator Rolle verfügen und über die Möglichkeit zum Herstellen einer Verbindung mit Exchange Online mit PowerShell verfügen. 
   
@@ -59,7 +59,7 @@ Wenn Sie PowerShell zum Massenerstellen von Benutzern verwenden, müssen Sie [Se
 
 Als Administrator können Sie die Übersichtlichkeit mithilfe von Exchange PowerShell wieder aktivieren. Wenn Sie dies tun, wird der Posteingang mit Relevanz deaktiviert und "Clutter" wieder aktiviert. 
   
- **Wenn Sie Outlook im Web mit einem Office 365 Business-Abonnement verwenden:**
+ **Wenn Sie Outlook im Internet mit einem Microsoft 365 Business Premium-Abonnement verwenden:**
   
 - Wenn für den Benutzer aktuell "Clutter" aktiviert ist: 
     

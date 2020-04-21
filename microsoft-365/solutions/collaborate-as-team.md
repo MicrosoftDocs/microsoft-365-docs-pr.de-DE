@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie mit Gästen in Microsoft Teams zusammenarbeiten.
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604738"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630749"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -68,17 +68,17 @@ So legen Sie die Einstellungen für den Gastzugriff für Teams fest
 > [!NOTE]
 > Es kann bis zu vierundzwanzig Stunden dauern, bis die Einstellung für die Teams-Gast Aktivität aktiviert wird, nachdem Sie sie aktiviert haben.
 
-## <a name="office-365-groups-guest-settings"></a>Gast Einstellungen für Office 365 Gruppen
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 Gruppen-Gast Einstellungen
 
-Teams verwendet Office 365 Gruppen für die Teammitgliedschaft. Die Gast Einstellungen für die Office 365 Gruppen müssen aktiviert sein, damit der Gastzugriff in Microsoft Teams funktioniert.
+Microsoft Teams verwendet Microsoft 365-Gruppen für die Teammitgliedschaft. Die Gast Einstellungen für Microsoft 365-Gruppen müssen aktiviert sein, damit Gastzugriff in Teams funktioniert.
 
-![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
+![Screenshot von Microsoft 365-Gruppen-Gast Einstellungen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
+So legen Sie die Gast Einstellungen für Microsoft 365-Gruppen fest
 
 1. Erweitern Sie im Microsoft 365 Admin Center in der linken Navigationsleiste **Einstellungen**.
 2. Klicken Sie auf **Dienste &-Add-ins**.
-3. Klicken Sie in der Liste auf **Office 365 Gruppen**.
+3. Klicken Sie in der Liste auf **Microsoft 365-Gruppen**.
 4. Stellen Sie sicher, dass die Gruppen **Mitglieder außerhalb Ihrer Organisation Zugriff auf Gruppeninhalte** haben und Gruppen **Besitzer Personen außerhalb Ihrer Organisation hinzufügen zulassen** Kontrollkästchen aktiviert sind.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Änderungen speichern**.
 

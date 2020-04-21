@@ -18,23 +18,23 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Informationen zum Virenschutz in SharePoint Online.
-ms.openlocfilehash: f22c2a3280148eb23f4ba53ff467a533186ed791
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: f04cd18bb4880ab631816c90b4976beada436225
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887272"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630941"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Virenerkennung in SharePoint Online
 
-Office 365 können zum Schutz Ihrer Umgebung vor Schadsoftware beitragen, indem Sie Viren in Dateien erkennen, die von Benutzern in SharePoint Online hochgeladen werden. Dateien werden nach dem Hochladen möglicherweise auf Viren überprüft. Wenn eine Datei als infiziert erkannt wird, wird eine Eigenschaft festgelegt, damit Benutzer die Datei nicht herunterladen oder synchronisieren können.
+Microsoft 365 kann zum Schutz Ihrer Umgebung vor Schadsoftware beitragen, indem Viren in Dateien erkannt werden, die Benutzer in SharePoint Online hochladen. Dateien werden nach dem Hochladen möglicherweise auf Viren überprüft. Wenn eine Datei als infiziert erkannt wird, wird eine Eigenschaft festgelegt, damit Benutzer die Datei nicht herunterladen oder synchronisieren können.
 
 > [!IMPORTANT]
 > Diese Antivirus-Funktionen in SharePoint Online sind eine Möglichkeit, Viren einzudämmen. Sie sind nicht als einzelne Verteidigungspunkte gegen Schadsoftware für Ihre Umgebung gedacht. Wir ermutigen alle Kunden, den Schutz vor Schadsoftware auf verschiedenen Ebenen zu bewerten und zu implementieren und bewährte Methoden für die Sicherung Ihrer Unternehmensinfrastruktur anzuwenden. Weitere Informationen zu Strategien und bewährten Methoden finden Sie unter [Security Roadmap](security-roadmap.md).
 
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>Was geschieht, wenn eine infizierte Datei in SharePoint Online hochgeladen wird?
 
-Office 365 verwendet ein allgemeines Viruserkennungsmodul. Das Modul wird in SharePoint Online asynchron ausgeführt, und einige Dateien werden nach dem Hochladen überprüft. Heuristiken werden verwendet, um zu bestimmen, welche Dateien gescannt werden. Wenn eine Datei gefunden wird, die einen Virus enthält, wird Sie gekennzeichnet, damit Sie nicht erneut heruntergeladen werden kann. Im April 2018 haben wir den Grenzwert von 25 MB für gescannte Dateien entfernt.
+Microsoft 365 verwendet ein allgemeines Viruserkennungsmodul. Das Modul wird in SharePoint Online asynchron ausgeführt, und einige Dateien werden nach dem Hochladen überprüft. Heuristiken werden verwendet, um zu bestimmen, welche Dateien gescannt werden. Wenn eine Datei gefunden wird, die einen Virus enthält, wird Sie gekennzeichnet, damit Sie nicht erneut heruntergeladen werden kann. Im April 2018 haben wir den Grenzwert von 25 MB für gescannte Dateien entfernt.
 
 Folgendes geschieht:
 

@@ -1,5 +1,5 @@
 ---
-title: Zurücksetzen von Office 365 Business-Kennwörtern
+title: Zurücksetzen von Kennwörtern
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,15 +25,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in einem Office 365 Business-Abonnement zurücksetzen. '
-ms.openlocfilehash: a19999ceffa140343c079c6758cc831175c09ab1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 for Business-Abonnement zurücksetzen. '
+ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241575"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626946"
 ---
-# <a name="reset-office-365-business-passwords"></a>Zurücksetzen von Office 365 Business-Kennwörtern
+# <a name="reset-passwords"></a>Zurücksetzen von Kennwörtern
 
 Sehen Sie sich ein kurzes Video zum Zurücksetzen von Benutzerkennwörtern an.<br><br>
 
@@ -45,9 +45,9 @@ Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Sc
 
 Es wird dringend empfohlen, dass Sie die Self-Service-Kennwortzurücksetzung einrichten. Auf diese Weise müssen Sie die Kennwörter für die Benutzer nicht manuell zurücksetzen. Informationen zur Vorgehensweise finden Sie unter [Zulassen, dass Benutzer ihre eigenen Kennwörter in Office 365 zurücksetzen](let-users-reset-passwords.md).
   
-## <a name="reset-an-office-365-business-password-for-someone-else"></a>Zurücksetzen eines Office 365 Business-Kennworts für eine andere Person
+## <a name="reset-a-business-password-for-someone-else"></a>Zurücksetzen eines Geschäfts Kennworts für eine andere Person
 
-Diese Schritte sind nur für Personen mit einem Office 365 Business-Plan bestimmt.  Dazu, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../admin-overview/admin-overview.md)
+Diese Schritte gelten nur für Personen, die einen Microsoft 365 for Business-Plan verwenden. Dazu, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../admin-overview/admin-overview.md)
 
  
 ::: moniker range="o365-worldwide"
@@ -75,11 +75,11 @@ Diese Schritte sind nur für Personen mit einem Office 365 Business-Plan bestimm
 4. Geben Sie eine E-Mail-Adresse ein, auf die der Benutzer zugreifen kann, damit er das neue Kennwort erhält, und fragen Sie anschließend bei ihm nach, ob er es erhalten hat.
  
   
-## <a name="reset-my-office-365-tenant-admin-password"></a>Zurücksetzen meines Administratorkennworts für Office 365-Mandanten
+## <a name="reset-my-admin-password"></a>Mein Administratorkennwort zurücksetzen
 
-Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, sich jedoch bei Office 365 anmelden können, weil beispielsweise Ihr Kennwort in Ihrem Browser gespeichert ist: 
+Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, sich jedoch bei Microsoft 365 anmelden können, da Ihr Kennwort beispielsweise in Ihrem Browser gespeichert wird: 
     
-1. Wählen Sie in Office 365 **Einstellungen** \> **Office 365** \> **Persönliche Informationen**aus. 
+1. Wählen Sie in Microsoft 365 **Einstellungen** \> **Office 365** \> **persönliche Informationen**aus. 
           
 2. Überprüfen Sie, ob Ihre **Kontaktdetails** und **Alternative E-Mail-Adresse** korrekt sind. Wenn nicht, ändern Sie die Informationen jetzt. 
         
@@ -95,7 +95,7 @@ Wenn Sie Ihr Kennwort vergessen haben und sich nicht anmelden können:
     
 - Oder [rufen Sie den Microsoft-Support an](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
     
-## <a name="reset-all-office-365-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Gleichzeitiges Zurücksetzen aller Office 365 Business-Kennwörter sämtlicher Benutzer in Ihrer Organisation
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Gleichzeitiges Zurücksetzen aller geschäftlichen Kennwörter für alle Benutzer in Ihrer Organisation
 <a name="bkmk_forgot"> </a>
 
 Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausführen. Wenn Ihr Unternehmen Hunderte oder Tausende von Benutzern umfasst, lesen Sie den nächsten Abschnitt, in dem die Massenzurücksetzung von Kennwörtern beschrieben ist.
@@ -112,14 +112,14 @@ Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausf
     
 
   
-## <a name="reset-office-365-business-passwords-in-bulk"></a>Massenzurücksetzen von Office 365 Business-Kennwörtern
+## <a name="reset-business-passwords-in-bulk"></a>Zurücksetzen von Geschäfts Kennwörtern in Massen
 <a name="bkmk_forgot"> </a>
 
 Verwenden Sie PowerShell! Lesen Sie diesen Beitrag von Eyal Doron: [Verwalten von Kennwörtern mit PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Und hier ist ein verwandter Artikel: [Festlegen der Kennwörter für mehrere Benutzerkonten](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
   
-Informationen im Überblick finden Sie unter [PowerShell für Office 365-Administratoren](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Eine Übersicht über die Informationen finden Sie unter [PowerShell for Microsoft 365 Administrators](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Erzwingen einer Kennwortänderung für alle Benutzer in Ihrem Unternehmen
 <a name="bkmk_forgot"> </a>
@@ -134,14 +134,14 @@ Lesen Sie den Artikel [Ich habe den Benutzernamen oder das Kennwort für das Kon
 ## <a name="related-articles"></a>Verwandte Artikel
 <a name="bkmk_forgot"> </a>
   
-[Zulassen, dass Benutzer ihre eigenen Kennwörter in Office 365 zurücksetzen](let-users-reset-passwords.md)
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](let-users-reset-passwords.md)
 
 [Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](set-password-to-never-expire.md)
 
 [Festlegen der Kennwortablaufrichtlinie für Ihre Organisation](../manage/set-password-expiration-policy.md)
 
-[Wiederherstellen eines Benutzers in Office 365](restore-user.md)
+[Wiederherstellen eines Benutzers](restore-user.md)
 
-[Entfernen eines ehemaligen Mitarbeiters aus Office 365](remove-former-employee.md)
+[Entfernen eines ehemaligen Mitarbeiters](remove-former-employee.md)
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

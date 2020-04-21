@@ -1,5 +1,5 @@
 ---
-title: Anpassen des Office 365-Designs für Ihre Organisation
+title: Anpassen des Designs für Ihre Organisation
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Hier erfahren Sie, wie Sie das Standarddesign von Office 365 ändern und an Ihr Firmen Logo oder Ihre Farbe anpassen können. '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'In diesem Artikel erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und entsprechend Ihrem Firmen Logo oder ihrer eigenen Farbe anpassen. '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627606"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassen des Office 365-Designs für Ihre Organisation
+# <a name="customize-the-theme-for-your-organization"></a>Anpassen des Designs für Ihre Organisation
 
-Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Administrator Ihres Office 365 Business-Abonnements können Sie das Standarddesign, das in der oberen Navigationsleiste angezeigt wird, für alle Mitglieder Ihrer Organisation ändern. Sie können Ihr Firmen Logo hinzufügen und die Farben so ändern, dass Sie mit dem Rest Ihrer Marke übereinstimmen. Sie können sogar einen Ziel Link hinzufügen, zu dem Benutzer navigieren, wenn Sie Ihr Logo auswählen. Sie können hier das Standarddesign und das benutzerdefinierte Design Ergebnis in Office 365 sehen.
+Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Administrator Ihres Microsoft 365 for Business-Abonnements können Sie das Standarddesign ändern, das in der oberen Navigationsleiste für alle Benutzer in der Organisation angezeigt wird. Sie können Ihr Firmen Logo hinzufügen und die Farben so ändern, dass Sie mit dem Rest Ihrer Marke übereinstimmen. Sie können sogar einen Ziel Link hinzufügen, zu dem Benutzer navigieren, wenn Sie Ihr Logo auswählen. Sie können hier das Standarddesign und das benutzerdefinierte Design Ergebnis in Microsoft 365 sehen.
   
-![Standard Office 365 Design und benutzerdefiniertes Office 365 Design](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Microsoft 365-Standarddesign und benutzerdefiniertes Microsoft 365-Design](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Anpassen des Designs im Admin Center
 
@@ -64,7 +64,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Office 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). In der folgenden Grafik finden Sie ein Beispiel für die Anpassung von Designänderungen im Admin Center.
+Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Microsoft 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). In der folgenden Grafik finden Sie ein Beispiel für die Anpassung von Designänderungen im Admin Center.
 
 ![m365-admin-Mandanten-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -80,7 +80,7 @@ Wenn Sie benutzerdefinierte Farben auswählen, wählen Sie eine **Akzentfarbe** 
   
 Das empfohlene Kontrastverhältnis zwischen Text, Symbol oder Schaltflächenfarbe und Hintergrundfarbe ist 4,5:1.
 
-Hier ist ein einfaches Flussdiagramm, mit dem Sie sich schnell mit einem visuell ansprechenden benutzerdefinierten Office 365 Design für Ihre Organisation einrichten können:
+Hier ist ein einfaches Flussdiagramm, mit dem Sie sich schnell mit einem visuell ansprechenden benutzerdefinierten Microsoft 365-Design für Ihre Organisation einrichten können:
   - Ich möchte eine bunte Version unseres Logos verwenden.
     - Wir empfehlen die folgenden Einstellungen:
       - **Logobild**: das bunte Logo Ihrer Organisation.

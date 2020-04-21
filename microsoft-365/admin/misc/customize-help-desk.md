@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von benutzerdefinierten Helpdesk-Informationen zum Hilfebereich von Office 365
+title: Hinzufügen angepasster Helpdesk-Informationen zum Hilfebereich
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,21 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Erstellen benutzerdefinierter Helpdesk-Karten im Admin Center und Hinzufügen von benutzerdefinierten Supportkontaktinformationen zum Hilfebereich.
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627896"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>Hinzufügen von benutzerdefinierten Helpdesk-Informationen zum Hilfebereich von Office 365
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Hinzufügen angepasster Helpdesk-Informationen zum Hilfebereich
 
 Als Administrator können Sie die Benutzerunterstützung optimieren, indem Sie dem Hilfebereich angepasste Kontaktinformationen hinzufügen. Benutzer, die Hilfe benötigen, können über das Hilfesymbol auf die benutzerdefinierten Support-Kontaktinformationen Ihrer Organisation zugreifen.
   
-Zum Erstellen einer benutzerdefinierten Helpdesk-Karte müssen Sie ein globaler Administrator für Office 365 sein und über eine Lizenz für Exchange Online verfügen. Erfahren Sie, wie Sie [Lizenzen in Office 365 Business zuweisen](../manage/assign-licenses-to-users.md).
+Zum Erstellen einer benutzerdefinierten Helpdesk-Karte müssen Sie ein globaler Administrator für Microsoft 365 sein und über eine Lizenz zum Exchange Online verfügen. Erfahren Sie, wie Sie [Lizenzen in Microsoft 365 for Business zuweisen](../manage/assign-licenses-to-users.md).
 
 > [!NOTE]
-> Wenn Sie ein Administrator sind, der technische oder Abrechnungs Unterstützung von Microsoft sucht, finden Sie weitere Informationen unter [Contact Office 365 für Unternehmen Support](../contact-support-for-business-products.md). 
+> Wenn Sie ein Administrator sind, der technische oder Abrechnungs Unterstützung von Microsoft sucht, finden Sie weitere Informationen unter [Microsoft 365 Business Support](../contact-support-for-business-products.md). 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Erstellen der benutzerdefinierten Helpdesk-Karte im Admin Center
@@ -56,7 +56,7 @@ Zum Erstellen einer benutzerdefinierten Helpdesk-Karte müssen Sie ein globaler 
     
   - **URL**: Wenn Ihre Supportabteilung über eine interne oder öffentliche Website mit nützlichen Tools und Ressourcen verfügt, geben Sie den Namen und die zugehörige URL ein.
     
-5. Wählen Sie **Save Changes**aus.
+5. Wählen Sie **Änderungen speichern** aus.
     
     Wenn Sie die neue benutzerdefinierte Helpdesk-Karte anzeigen möchten, melden Sie sich ab und wieder an. Wir empfehlen, die Links auf der Karte zu testen, sobald Sie wieder angemeldet sind. Für die Benutzer wird die Karte nach der nächsten Anmeldung angezeigt.
     

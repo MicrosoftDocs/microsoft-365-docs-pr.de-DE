@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540891"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624034"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
@@ -40,7 +40,7 @@ ms.locfileid: "43540891"
 
 Ein globaler Administrator für einen Microsoft-clouddienst kann das [Azure Active Directory PowerShell für Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) verwenden, um Kennwörter festzulegen, die für bestimmte Benutzer nicht ablaufen. Sie können auch [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) -Cmdlets verwenden, um die nie ablaufende Konfiguration zu entfernen oder zu sehen, welche Benutzerkennwörter nie ablaufen.
 
-Dieses Handbuch gilt für andere Anbieter wie InTune und Office 365, die sich auch auf Azure AD für Identitäts-und Verzeichnisdienste stützen. Das Kennwortablaufdatum ist der einzige Teil der Richtlinie, der geändert werden kann.
+Dieses Handbuch gilt für andere Anbieter wie InTune und Microsoft 365, die sich auch auf Azure AD für Identitäts-und Verzeichnisdienste stützen. Das Kennwortablaufdatum ist der einzige Teil der Richtlinie, der geändert werden kann.
 
 Weitere Informationen zum Azure AD PowerShell für Graph finden Sie unter [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 

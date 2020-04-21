@@ -15,20 +15,20 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln in Exchange Online Schutz für Massen-e-Mail-Filterung verwenden.
-ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 229a66658e041be737efbc4cbb7c36ba667d3aed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033638"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631073"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails in Office 365
 
-Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) zum Überprüfen eingehende Nachrichten für Spam und Massen-e-Mails (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien), um eingehende Nachrichten für Spam und Massen-e-Mails zu scannen (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 Wenn Sie weitere Optionen zum Filtern von Massen-e-Mails wünschen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden, und diese Nachrichten als Spam markieren. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail? und der](what-s-the-difference-between-junk-email-and-bulk-email.md) [Massen Reklamations Stufe (BCL) in Office 365](bulk-complaint-level-values.md).
 
-In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole (EAC) und PowerShell (Exchange Online PowerShell für Office 365 Kunden erstellt werden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
+In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole (EAC) und PowerShell (Exchange Online PowerShell für Microsoft 365-Kunden erstellt werden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 

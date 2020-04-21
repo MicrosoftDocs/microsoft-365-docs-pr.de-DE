@@ -1,5 +1,5 @@
 ---
-title: Senden einer E-Mail als Verteilerliste in Office 365
+title: E-Mail als Verteilerliste senden
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Erfahren Sie, wie Sie E-Mails als Verteilerliste in Office 365 senden können.
-ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Hier erfahren Sie, wie Sie e-Mails als Verteilerliste in Microsoft 365 senden.
+ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361740"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628064"
 ---
-# <a name="send-email-as-a-distribution-list-in-office-365"></a>Senden einer E-Mail als Verteilerliste in Office 365
+# <a name="send-email-as-a-distribution-list"></a>E-Mail als Verteilerliste senden
 
-[] In Office 365 können Sie eine E-Mail als Verteilerliste senden. Wenn eine Person, die Mitglied der Verteilerliste ist, auf eine an die Verteilerliste gesendete Nachricht antwortet, sieht es so aus, als ob die E-Mail von der Verteilerliste und nicht vom einzelnen Benutzer stammt. In diesem Thema wird gezeigt, wie das geht.
+In Microsoft 365 können Sie e-Mail als Verteilerliste senden. Wenn eine Person, die Mitglied der Verteilerliste ist, auf eine an die Verteilerliste gesendete Nachricht antwortet, sieht es so aus, als ob die E-Mail von der Verteilerliste und nicht vom einzelnen Benutzer stammt. In diesem Thema wird gezeigt, wie das geht.
   
 ## <a name="send-email-as-a-distribution-list"></a>E-Mail als Verteilerliste senden
 
-Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie einer Office 365 Verteilerliste hinzugefügt wurden und Ihnen die Berechtigung "Senden als" erteilt wurde.
+Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie einer Microsoft 365-Verteilerliste hinzugefügt wurden und Ihnen die Berechtigung "Senden als" erteilt wurde.
   
- **Administratoren**: Stellen Sie sicher, dass Sie die Schritte im Thema [Hinzufügen eines Office 365 Benutzers oder Kontakts zu einer Liste](../email/add-user-or-contact-to-distribution-list.md) und zulassen, dass [Mitglieder e-Mails als Office 365 Gruppen senden können](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) , befolgt haben, und fügen Sie die richtigen Personen zur Verteilerliste hinzu.
+ **Administratoren**: Stellen Sie sicher, dass Sie die Schritte im Thema [Hinzufügen eines Microsoft 365-Benutzers oder-Kontakts zu einer Liste](../email/add-user-or-contact-to-distribution-list.md) und [zulassen, dass Mitglieder e-Mails als Microsoft 365-Gruppen Themen senden](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) befolgt haben, und die richtigen Personen zur Verteilerliste hinzugefügt haben.
   
 1. Öffnen Sie Outlook im Web, und wechseln Sie zu Ihrem Posteingang. 
     

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei Yahoo! Small Business für Office 365
+title: Erstellen von DNS-Einträgen bei Yahoo! Small Business für Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Yahoo! einrichten. Small Business für Office 365.
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Yahoo! einrichten. Small Business für Microsoft.
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211038"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629155"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Erstellen von DNS-Einträgen bei Yahoo! Small Business für Office 365
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Erstellen von DNS-Einträgen bei Yahoo! Small Business für Microsoft
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -89,5 +89,5 @@ Sie müssen Ihr Aabaco-Konto erstellen, bevor Sie [DNS-Einträge erstellen](../g
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Nachdem Sie Ihr Aabaco-Konto erstellt haben, können Sie [DNS-Einträge bei Aabaco Small Business für Office 365 erstellen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Nachdem Sie Ihr Aabaco-Konto erstellt haben, können Sie [bei Aabaco Small Business für Microsoft DNS-Einträge erstellen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   

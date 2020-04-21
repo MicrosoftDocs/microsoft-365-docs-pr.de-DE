@@ -1,5 +1,5 @@
 ---
-title: Entfernen eines ehemaligen Mitarbeiters aus Office 365
+title: Entfernen eines ehemaligen Mitarbeiters
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,15 +23,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Office 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
+ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353116"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617122"
 ---
-# <a name="remove-a-former-employee-from-office-365"></a>Entfernen eines ehemaligen Mitarbeiters aus Office 365
+# <a name="remove-a-former-employee"></a>Entfernen eines ehemaligen Mitarbeiters
   
 ## <a name="sign-out-now"></a>Sofortiges Abmelden
 
@@ -44,7 +44,7 @@ Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 So entfernen Sie einen Mitarbeiter:
 
@@ -83,7 +83,7 @@ So entfernen Sie einen Mitarbeiter:
 ::: moniker-end
 
     
-Innerhalb einer Stunde – oder nachdem Sie die aktuelle Office 365 Seite verlassen haben – werden Sie aufgefordert, sich erneut anzumelden. (Ein Zugriffstoken ist gut für eine Stunde, sodass die Zeitachse davon abhängt, wie viel Zeit auf dem Token bleibt und ob Sie aus Ihrer aktuellen Webseite navigieren.)
+Innerhalb einer Stunde-oder nachdem Sie die aktuelle Seite von Microsoft 365 verlassen haben-werden Sie aufgefordert, sich erneut anzumelden. (Ein Zugriffstoken ist gut für eine Stunde, sodass die Zeitachse davon abhängt, wie viel Zeit auf dem Token bleibt und ob Sie aus Ihrer aktuellen Webseite navigieren.)
   
  **Einschränkung**: Wenn sich der Benutzer in Outlook im Internet befindet und nur in seinem Postfach klickt, wird er möglicherweise nicht sofort gestartet. Sobald Sie eine andere Kachel wie OneDrive auswählen oder Ihren Browser aktualisieren, wird die Abmeldung initiiert. 
   
@@ -94,7 +94,7 @@ Weitere Informationen dazu, wie lange es dauert, für jemand die E-Mail-Nutzung 
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>Übersicht über alle Schritte zum Entfernen eines Mitarbeiters und Sichern der Daten
 <a name="bkmk_now"> </a>
 
-Eine Frage, die uns häufig gestellt wird, ist "Wie soll ich vorgehen, um Daten zu schützen, wenn ein Mitarbeiter das Unternehmen verlässt?" Dieser Artikel erläutert das Blockieren des Zugriffs auf Office 365 und die Schritte, die Sie zum Sichern Ihrer Daten ausführen sollten.
+Eine Frage, die wir häufig erhalten, lautet: "Was muss ich tun, um Daten zu schützen, wenn ein Mitarbeiter die Organisation verlässt?" In diesem Artikel wird erläutert, wie Sie den Zugriff auf Microsoft 365 und die erforderlichen Schritte zum Sichern Ihrer Daten blockieren können.
   
 > [!NOTE]
 > Wenn Sie ein globaler Administrator sind, können Sie den Mitarbeiter löschen, seine e-Mail weiterleiten und auswählen, was mit dem OneDrive-Inhalt zu tun ist, indem Sie die neue geführte Benutzeroberfläche verwenden. Weitere Informationen finden Sie unter [globaler Administrator: Löschen eines Benutzers](remove-former-employee.md). Es wird jedoch empfohlen, alle hier aufgelisteten zusätzlichen Schritte abzuschließen, um sicherzustellen, dass der Mitarbeiter keinen Zugriff auf die Daten Ihres Unternehmens hat. 
@@ -107,10 +107,10 @@ Hier folgt eine kurze Übersicht. Die einzelnen Schritte werden in diesem Artike
 |1. [Speichern der Inhalte des Postfachs eines ehemaligen Mitarbeiters](#save-the-contents-of-a-former-employees-mailbox) <br/> |Dies ist für die Person, die die Arbeit des Mitarbeiters übernimmt, oder im Falle von Rechtsstreitigkeiten nützlich.  <br/> |
 |2. [Weiterleiten der E-Mails eines ehemaligen Mitarbeiters an einen anderen Mitarbeiter oder Konvertieren des Benutzerpostfachs in ein freigegebenes Postfach](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Damit sorgen Sie dafür, dass die E-Mail-Adresse des ehemaligen Mitarbeiters aktiv bleibt. Wenn Kunden oder Partner E-Mails weiterhin an diese Adresse senden, werden sie hierdurch an die Person geleitet, die dessen Arbeit übernimmt.  <br/> |
 |3. [Zurücksetzen und Blockieren des mobilen Geräts eines ehemaligen Mitarbeiters](#wipe-and-block-a-former-employees-mobile-device) <br/> |Entfernt die Geschäftsdaten vom Smartphone oder Tablet.  <br/> |
-|4. [Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Office 365-Daten](#block-a-former-employees-access-to-office-365-data)<br/> |Hierdurch wird verhindert, dass die Person auf ihr altes Office 365-Postfach und die Daten zugreifen kann.  <br/><br/> **Tipp**: Wenn Sie den Zugriff eines Benutzers blockieren, bezahlen Sie weiterhin für Ihre Lizenz. Sie müssen die Lizenz in Ihrem Abonnement löschen, um die Bezahlung dafür zu beenden (Schritt 5).           |
+|4. [Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Microsoft 365-Daten](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Dadurch wird verhindert, dass die Person auf Ihr altes Microsoft 365-Postfach und Ihre Daten zugreift.  <br/><br/> **Tipp**: Wenn Sie den Zugriff eines Benutzers blockieren, bezahlen Sie weiterhin für Ihre Lizenz. Sie müssen die Lizenz in Ihrem Abonnement löschen, um die Bezahlung dafür zu beenden (Schritt 5).           |
 |5. [Verschieben des OneDrive-Inhalts eines Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Wenn Sie nur die Lizenz eines Benutzers entfernen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/><br/> Bevor Sie das Konto löschen, sollten Sie den seinen OneDrive-Inhalt an einen anderen Speicherort verschieben, auf den Sie einfach zugreifen können. Nachdem Sie das Konto eines Mitarbeiters gelöscht haben, wird der Inhalt auf seinem OneDrive **30** Tage lang beibehalten. Während dieser Zeit können Sie das Konto des Benutzers jedoch wiederherstellen und auf den OneDrive-Inhalte zugreifen. Wenn Sie das Konto des Benutzers wiederherstellen, können Sie auch nach diesen 30 Tagen auf den OneDrive-Inhalt zugreifen.  <br/> |
 |5a. Was passiert, wenn ein Benutzer mit seinem privaten PC auf OneDrive oder SharePoint zugegriffen hat?  <br/> |Wenn er anstelle eines vom Unternehmen bereitgestellten Computers seinen privaten PC zum Herunterladen von Dateien aus OneDrive und SharePoint verwendet hat, haben Sie keine Möglichkeit, die dort gespeicherten Dateien zu bereinigen.  <br/><br/> Er hat weiterhin Zugriff auf alle Dateien, die mit seinem Computer synchronisiert wurden.  <br/> |
-|6. [Entfernen und Löschen der Office 365-Lizenz eines ehemaligen Mitarbeiters](#remove-and-delete-the-office-365-license-from-a-former-employee)<br/> |Wenn Sie eine Lizenz entfernen, können Sie sie einem anderen Benutzer zuweisen. Sie können die Lizenz auch löschen, damit Sie erst dann wieder dafür bezahlen, wenn Sie eine andere Person einstellen.  <br/><br/> Wenn Sie eine Lizenz entfernen oder löschen, werden die alten E-Mails, Kontakte und Kalender des Benutzers für **30 Tage** gespeichert und anschließend dauerhaft gelöscht. Wenn Sie eine Lizenz entfernen oder löschen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/> |
+|6. [Entfernen und löschen Sie die Microsoft 365-Lizenz von einem ehemaligen Mitarbeiter](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Wenn Sie eine Lizenz entfernen, können Sie sie einem anderen Benutzer zuweisen. Sie können die Lizenz auch löschen, damit Sie erst dann wieder dafür bezahlen, wenn Sie eine andere Person einstellen.  <br/><br/> Wenn Sie eine Lizenz entfernen oder löschen, werden die alten E-Mails, Kontakte und Kalender des Benutzers für **30 Tage** gespeichert und anschließend dauerhaft gelöscht. Wenn Sie eine Lizenz entfernen oder löschen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/> |
 |7. [Löschen des Benutzerkontos eines ehemaligen Mitarbeiters](#delete-a-former-employees-user-account)<br/> |Dadurch wird das Konto aus Ihrem Admin Center entfernt. So behalten Sie die Übersicht.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Speichern der Inhalte des Postfachs eines ehemaligen Mitarbeiters
@@ -217,11 +217,11 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
     **Tipp**: Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen Blackberry Enterprise-Dienst entfernen bzw. darin deaktivieren. Sie sollten auch alle Blackberry-Geräte für den Benutzer deaktivieren. Die einzelnen Schritte zum Deaktivieren eines Benutzers finden Sie im Administratorhandbuch für die BlackBerry Business Cloud Services. 
     
-## <a name="block-a-former-employees-access-to-office-365-data"></a>Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Office 365-Daten
+## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Microsoft 365-Daten
 <a name="bkmk_block"> </a>
 
  > [!IMPORTANT] 
- > Das Blockieren eines Kontos kann bis zu 24 Stunden dauern, bis es wirksam wird. Wenn Sie den Anmeldungszugriff eines Benutzers sofort verhindern müssen, [setzen Sie das Kennwort des Benutzers zurück](reset-passwords.md), und initiieren Sie dann ein einmaliges Ereignis, durch das der Benutzer auf allen Geräten von Office 365-Sitzungen abgemeldet wird. Weitere Informationen finden Sie unter [Sofortiges Abmelden](#sign-out-now).
+ > Das Blockieren eines Kontos kann bis zu 24 Stunden dauern, bis es wirksam wird. Wenn Sie den Anmeldezugriff eines Benutzers sofort verhindern müssen, sollten Sie [Ihr Kennwort zurücksetzen](reset-passwords.md) und dann ein einmaliges Ereignis initiieren, das Sie von Microsoft 365-Sitzungen auf allen Geräten signieren wird. Weitere Informationen finden Sie unter [Sofortiges Abmelden](#sign-out-now).
  
 
 ::: moniker range="o365-worldwide"
@@ -260,7 +260,7 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf E-Mail (Exchange Online)
 <a name="bkmk_block_email"> </a>
 
-Wenn Office 365-E-Mail Bestandteil Ihres Office 365-Abonnements ist, müssen Sie sich beim Exchange Admin Center anmelden und die folgenden Schritte ausführen, um den Zugriff des ehemaligen Mitarbeiters auf seine E-Mails zu blockieren.
+Wenn Sie über e-Mail als Teil Ihres Microsoft 365-Abonnements verfügen, müssen Sie sich beim Exchange Admin Center anmelden, um die folgenden Schritte durchführen, um zu verhindern, dass Ihr ehemaliger Mitarbeiter auf seine e-Mail zugreift.
   
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
@@ -271,12 +271,12 @@ Wenn Office 365-E-Mail Bestandteil Ihres Office 365-Abonnements ist, müssen Sie
     
 4. Wählen Sie unter **e-Mail-Konnektivität**die Option **Deaktivieren** und **Ja** beantworten, wenn Sie dazu aufgefordert werden. 
     
-## <a name="remove-and-delete-the-office-365-license-from-a-former-employee"></a>Entfernen und Löschen der Office 365-Lizenz eines ehemaligen Mitarbeiters
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Entfernen und Löschen der Microsoft 365-Lizenz von einem ehemaligen Mitarbeiter
 <a name="bkmk_remove"> </a>
 
-Damit Sie nicht weiterhin für eine Lizenz bezahlen, nachdem eine Person Ihre Organisation verlassen hat, müssen Sie die entsprechende Office 365-Lizenz entfernen und dann aus Ihrem Abonnement löschen. Wenn Sie die Lizenz nicht aus Ihrem Abonnement löschen möchten, können Sie sie einem anderen Benutzer zuweisen.
+Damit Sie nicht weiterhin für eine Lizenz bezahlen, nachdem jemand Ihre Organisation verlassen hat, müssen Sie Ihre Microsoft 365-Lizenz entfernen und dann aus Ihrem Abonnement löschen. Wenn Sie die Lizenz nicht aus Ihrem Abonnement löschen möchten, können Sie sie einem anderen Benutzer zuweisen.
   
-Wenn Sie die Lizenz entfernen, werden alle Daten des Benutzers noch 30 Tage gespeichert. Sie können auf die Daten [zugreifen](get-access-to-and-back-up-a-former-user-s-data.md) oder das Konto [wiederherstellen](restore-user.md), wenn der Benutzer zurückkehrt. Nach 30 Tagen werden alle Daten des Benutzers (mit Ausnahme der auf SharePoint Online gespeicherten Dokumente) endgültig aus Office 365 gelöscht und können nicht wiederhergestellt werden. 
+Wenn Sie die Lizenz entfernen, werden alle Daten des Benutzers noch 30 Tage gespeichert. Sie können auf die Daten [zugreifen](get-access-to-and-back-up-a-former-user-s-data.md) oder das Konto [wiederherstellen](restore-user.md), wenn der Benutzer zurückkehrt. Nach 30 Tagen werden alle Daten des Benutzers (mit Ausnahme der auf SharePoint Online gespeicherten Dokumente) dauerhaft aus Microsoft 365 gelöscht und können nicht wiederhergestellt werden. 
 
 ::: moniker range="o365-worldwide"
 
@@ -339,7 +339,7 @@ Wenn Sie die Lizenz entfernen, werden alle Daten des Benutzers noch 30 Tage gesp
 
 Wenn Sie eine weitere Person zu Ihrem Unternehmen [Hinzufügen](add-users.md) , werden Sie aufgefordert, gleichzeitig eine Lizenz mit nur einem Schritt zu kaufen.
     
-Weitere Informationen zum Verwalten von Benutzerlizenzen für Office 365 Business finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Office 365 Business](../manage/assign-licenses-to-users.md) und [Entfernen von Lizenzen von Benutzern in Office 365 Business](../manage/remove-licenses-from-users.md).
+Weitere Informationen zum Verwalten von Benutzerlizenzen für Microsoft 365 for Business finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Microsoft 365 for](../manage/assign-licenses-to-users.md)Business und [Entfernen von Lizenzen von Benutzern in Microsoft 365 for Business](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Auswirkungen des gelöschten Mitarbeiterkontos auf Skype for Business
 <a name="bkmk_remove"> </a>
@@ -392,7 +392,7 @@ Wenn Sie einen Benutzer löschen, wird das Konto ungefähr 30 Tage lang deaktivi
   
 ### <a name="does-your-organization-use-active-directory"></a>Verwendet Ihre Organisation Active Directory?
 
-Wenn Ihre Organisation Benutzerkonten aus einer lokalen Active Directory-Umgebung mit Office 365 synchronisiert, müssen Sie diese Benutzerkonten in Ihrem lokalen Active Directory-Dienst löschen und wiederherstellen. Sie können sie nicht in Office 365 löschen und wiederherstellen.
+Wenn Ihre Organisation Benutzerkonten mit Microsoft 365 aus einer lokalen Active Directory Umgebung synchronisiert, müssen Sie diese Benutzerkonten in Ihrem lokalen Active Directory Dienst löschen und wiederherstellen. Sie können sie nicht in Office 365 löschen und wiederherstellen.
   
 Anweisungen hierzu finden Sie in diesem Artikel: [Löschen eines Benutzerkontos](https://go.microsoft.com/fwlink/?linkid=841808).
   

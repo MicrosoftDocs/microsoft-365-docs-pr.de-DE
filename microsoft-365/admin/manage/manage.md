@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: QuickLinks für die häufigsten Administratoraufgaben in Office 365.
-ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Schnell Links für die am häufigsten verwendeten Verwaltungsaufgaben in Microsoft 365.
+ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125999"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628136"
 ---
 # <a name="manage"></a>Verwalten
 
-QuickLinks für die häufigsten Administratoraufgaben in Office 365.
+Schnell Links für die am häufigsten verwendeten Verwaltungsaufgaben in Microsoft 365.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -152,7 +152,7 @@ QuickLinks für die häufigsten Administratoraufgaben in Office 365.
                         <h3>E-Mail</h3>
                             <p><a href="../add-users/add-users.md">Hinzufügen eines neues Mitarbeiters</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Hilfe erhalten, wenn E-Mail-Nachrichten nicht gesendet werden</a></p>
-                            <p><b>Weitere Aufgaben:</b> <a href="../email/email.md">E-Mail in Office 365 Business</a></p>
+                            <p><b>Weitere Aufgaben:</b> <a href="../email/email.md">e-Mail in Microsoft 365 for Business</a></p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ QuickLinks für die häufigsten Administratoraufgaben in Office 365.
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Verwalten der Freigabe in OneDrive und SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Festlegen des Standardspeicherplatzes für OneDrive-Benutzer</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Beheben von OneDrive-Synchronisierungsproblemen</a></p>
-                            <p><b>Weitere Aufgaben:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Office 365</a></p>
+                            <p><b>Weitere Aufgaben:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Microsoft 365</a></p>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@ QuickLinks für die häufigsten Administratoraufgaben in Office 365.
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Office 365-Anmeldung bei Yammer</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Verwalten von Yammer-Benutzern in Office 365</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Erzwingen der Office 365-Identität für Yammer-Benutzer</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Microsoft 365-Anmeldung für jammern</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Verwalten von Benutzern mit jammern von Microsoft 365</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Erzwingen von Microsoft 365 Identity für Benutzer mit jammern</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">Einbetten eines Yammer-Feeds in eine SharePoint-Website</a></p>
                             <p><b>Weitere Aufgaben:</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">Hilfe für Yammer-Administratoren</a></p>
                     </div>

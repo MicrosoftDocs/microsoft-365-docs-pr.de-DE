@@ -1,5 +1,5 @@
 ---
-title: Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen
+title: Planen der mehrstufigen Authentifizierung für Microsoft 365-Bereitstellungen
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Office 365 und die Schritte, die Sie für die Einrichtung durchführen müssen.
-ms.openlocfilehash: 715baeb0355ab203e890f2c87cf0751eff69e7f8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365 und die Schritte, die Sie für die Einrichtung durchführen müssen.
+ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503995"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627704"
 ---
-# <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen
+# <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Planen der mehrstufigen Authentifizierung für Microsoft 365-Bereitstellungen
 
 [] Bei der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) handelt es sich um eine Authentifizierungsmethode, bei der mehr als eine Überprüfungsmethode verwendet werden muss und Benutzeranmeldungen und Transaktionen eine zweite Sicherheitsebene hinzugefügt wird. Sie erfordert einen zusätzlichen Überprüfungsschritt mit Informationen, die über das Kennwort des Benutzerkontos hinausgehen, beispielsweise:
   
@@ -39,9 +39,9 @@ ms.locfileid: "43503995"
     
 - Ein biometrisches Gerät 
     
-## <a name="mfa-in-office-365"></a>MFA in Office 365
+## <a name="multi-factor-authentication-in-microsoft-365"></a>Mehrstufige Authentifizierung in Microsoft 365
 
-Office 365 verwendet MFA für zusätzliche Anmeldesicherheit und kann für jedes einzelne Benutzerkonto im Microsoft 365 Admin Center verwaltet werden. Office 365 bietet die folgende Teilmenge der Azure mehrstufigen Authentifizierungsfunktionen als Bestandteilihres Abonnements: 
+Microsoft 365 verwendet die mehrstufige Authentifizierung zur Bereitstellung der zusätzlichen Sicherheit und wird über das Microsoft 365 Admin Center verwaltet. Microsoft 365 bietet die folgende Teilmenge der Azure mehrstufigen Authentifizierungsfunktionen als Teil des Abonnements an: 
   
 - Möglichkeit zum Aktivieren und Erzwingen von MFA für Endbenutzer
     
@@ -57,26 +57,23 @@ Office 365 verwendet MFA für zusätzliche Anmeldesicherheit und kann für jedes
     
 Die vollständige Liste der hinzugefügten Features finden Sie unter [Funktionsweise von Azure Multi-Factor Authentication, Funktionsvergleich der Versionen](https://go.microsoft.com/fwlink/?LinkId=506927). Wenn Sie den Azure Multi-Factor Authentication-Dienst erwerben, können Sie den vollen Funktionsumfang nutzen. 
   
-Je nachdem, ob Sie über eine Cloud-oder Hybrid Identität für Office 365 oder Verbundauthentifizierung mit Active Directory Verbunddiensten (AD FS) verfügen, erhalten Sie eine andere Teilmenge der Funktionen. 
+Je nachdem, ob Sie über eine Cloud-Bereitstellung für Microsoft 365 oder eine Hybrid Einrichtung mit einmaligem Anmelden und Active Directory Verbunddiensten (AD FS) verfügen, erhalten Sie eine andere Teilmenge der Funktionen. 
   
-|**Wo verwalten Sie Ihren Office 365 Mandanten?** | **MFA-zweit Faktor Optionen**|
-
-|:-----|:-----| | Nur Cloud  <br/> | Azure-mehrstufige Authentifizierung (Text oder Telefonanruf)  <br/> | | Hybrides Setup, lokal verwaltet  <br/> | Wenn Sie die Benutzeridentität lokal verwalten, haben Sie die folgenden Möglichkeiten:  <br/>  Physische oder virtuelle Smartcard (bei Verwendung von AD FS)  <br/> [Azure-mehr](https://go.microsoft.com/fwlink/p/?LinkId=526677) stufige Authentifizierung (Modul für AD FS)  <br/>  Azure Active Directory (Azure AD) mehrstufige Authentifizierung  <br/> |
+|**Wo wird Microsoft 365 verwaltet?**|**MFA-Optionen für den zweiten Authentifizierungsfaktor**|
+|:-----|:-----|
+|Nur für die Cloud  <br/> |Azure Active Directory MFA (Textnachricht oder Telefonanruf)  <br/> |
+|Hybride Einrichtung, lokal verwaltet  <br/> | Wenn Sie Benutzeridentitäten lokal verwalten, sind die folgenden Optionen verfügbar:  <br/>  Physische oder virtuelle Smartcard (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (Modul für AD FS)  <br/>  Azure AD MFA  <br/> |
    
   
-In der folgenden Abbildung wird veranschaulicht, wie die aktualisierten Office 2013-Geräte-Apps (unter Windows) Benutzern das Anmelden mit der MFA ermöglichen. 
-
-![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-
-Die Office 2013 Geräte-apps unterstützen die mehrstufige Authentifizierung durch die Verwendung der [Active Directory-Authentifizierungsbibliothek (Adal)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hostet eine Webseite, auf der sich Benutzer anmelden können. Der Identitätsanbieter kann Azure AD oder ein Verbundidentitätsanbieter wie AD FS sein. Bei der Authentifizierung für Verbundbenutzer werden die folgenden Schritte ausgeführt:
+In der folgenden Abbildung wird veranschaulicht, wie die aktualisierten Office 2013-Geräte-Apps (unter Windows) Benutzern das Anmelden mit der MFA ermöglichen. Die Office 2013-Geräte-Apps unterstützen die mehrstufige Authentifizierung durch die Verwendung der [Active Directory-Authentifizierungsbibliothek (Active Directory Authentication Library, ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hostet eine Webseite, auf der sich Benutzer anmelden können. Der Identitätsanbieter kann Azure AD oder ein Verbundidentitätsanbieter wie AD FS sein. Bei der Authentifizierung für Verbundbenutzer werden die folgenden Schritte ausgeführt:
   
-1. Azure AD leitet den Benutzer zu der Anmeldewebseite weiter, die vom im Eintrag vermerkten Identitätsanbieter für den Office 365-Mandanten gehostet wird. Der Identitätsanbieter wird durch die im Anmeldenamen des Benutzers angegebene Domäne bestimmt.
+1. Azure AD leitet den Benutzer auf die Anmeldewebseite um, die vom Identitätsanbieter des Datensatzes für die Organisation gehostet wird. Der Identitätsanbieter wird durch die im Anmeldenamen des Benutzers angegebene Domäne bestimmt.
     
 2. Der Benutzer meldet sich über sein Gerät auf der Anmeldeseite an. 
     
 3. Wenn der Benutzer erfolgreich angemeldet wurde, gibt der Identitätsanbieter ein Token an Azure AD zurück.
     
-4. Azure AD gibt ein JSON-Webtoken (JWT) an die Office-Geräte-App zurück, und die Geräte-App wird mithilfe eines JWT mit Office 365 authentifiziert. 
+4. Azure AD gibt ein JSON-webtoken (JWT) an die Office-Geräte-app zurück, und die Geräte-APP wird mithilfe eines JWT mit Microsoft 365 authentifiziert. 
     
   
 ## <a name="requirements-for-office-2013-client-apps"></a>Anforderungen für Office 2013 Client-apps
@@ -123,28 +120,32 @@ Für MSI-basierte Installationen muss die folgende Software mit der unten aufgef
    
 ## <a name="enable-mfa"></a>Aktivieren von MFA
 
-Führen Sie die folgenden Schritte aus, um MFA für Ihr Office 365-Abonnement zu aktivieren:
+Führen Sie die folgenden Schritte aus, um MFA für Ihr Abonnement zu aktivieren:
   
 1. Aktivieren Sie bei Bedarf die [moderne Authentifizierung für Office 2013 auf Windows-Geräten](enable-modern-authentication.md).
     
-2. Für die Verbundauthentifizierung richten Sie die Azure Multi-Factor Authentication mit Ihrem Drittanbieter-Verzeichnisdienst ein.
+  - Richten Sie Azure MFA mit Verzeichnisdiensten von Drittanbietern ein.
     
     Informationen zu bestimmten Identitätsanbietern, die für dieses Programm akzeptiert werden, finden Sie unter [Erweiterte Szenarien mit mehrstufiger Azure-Authentifizierung und VPN-Lösungen von Drittanbietern](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) . 
     
-3. [Einrichten der mehrstufigen Authentifizierung für Office 365](set-up-multi-factor-authentication.md).
+2. [Einrichten der mehrstufigen Authentifizierung für Microsoft 365](set-up-multi-factor-authentication.md)
     
-4. Informieren Sie die Benutzer darüber, wie Sie [MFA für Ihr Office 365-Benutzerkonto einrichten](https://support.office.com/article/set-up-2-step-verification-for-office-365-ace1d096-61e5-449b-a875-58eb3d74de14). Nachdem Sie Ihre sekundäre Authentifizierungsmethode eingerichtet haben, benötigen Ihre zukünftigen Anmeldungen einen MFA.
-    
+3. Einzelnen Benutzern mitteilen, wie Sie sich über MFA anmelden: [melden Sie sich bei Microsoft 365 mit zweistufiger Überprüfung](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)an.
+
 > [!IMPORTANT]
-> Wenn Sie Ihre Benutzer für die Azure-mehrstufige Authentifizierung aktiviert haben und alle Geräte Office 2013 werden, die nicht für die moderne Authentifizierung aktiviert sind, müssen Sie App-Kennwörter verwenden. Weitere Informationen zu app-Kennwörtern und wann/wo/wie Sie verwendet werden sollten, finden Sie hier: [App-Kennwörter mit Azure Multi_Factor-Authentifizierung](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> Wenn Sie Ihre Benutzer für Azure AD MFA aktiviert haben und die Benutzer Geräte mit Office 2013 nutzen, die nicht für die moderne Authentifizierung aktiviert sind, müssen die Benutzer auf diesen Geräten App-Kennwörter verwenden. Weitere Informationen zu App-Kennwörtern und deren Verwendung finden Sie hier: [App-Kennwörter bei Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178).
+  
+## <a name="faq"></a>Häufig gestellte Fragen
+
+[Häufig gestellte Fragen zur modernen Authentifizierung (Wiki-Artikel)](https://go.microsoft.com/fwlink/p/?LinkId=530064)
   
 ## <a name="known-issues"></a>Bekannte Probleme
-  
-[Office 2013 und Office 365 ProPlus moderne Authentifizierung: Wissenswerte vor dem Onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+
+[Office 2013-und Microsoft 365-Apps für moderne Authentifizierung in Unternehmen: wichtige Informationen vor dem Onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Beheben von Problemen bei der Azure Multi-Factor Authentication:**
   
-Weitere Informationen finden Sie unter [Problembehandlung bei Azure Multi-Factor Authentication](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
+Lesen Sie [Problembehandlung bei der Azure Multi-Factor Authentication](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
   
 [Behandlung von Anmeldeproblemen bei der modernen Authentifizierung in Office 2013 bei Verwendung von AD FS](https://support.microsoft.com/kb/3052203/)
   
@@ -156,7 +157,7 @@ Weitere Informationen finden Sie unter [Problembehandlung bei Azure Multi-Factor
   
  **Clientzugriffsfilterung:**
   
-[Richtlinien für die moderne Authentifizierung und für die Clientzugriffsfilterung in Office 2013 und Office 365 ProPlus: Wichtige Informationen vor dem Onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 und Microsoft 365 apps for Enterprise modern Authentication and Client Access Filtering Policies: Wissenswerte Informationen vor dem Onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Welche Apps unterstützen MFA?**
   

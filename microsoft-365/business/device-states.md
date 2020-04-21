@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Erfahren Sie mehr über die verschiedenen Gerätezustände in der Liste Geräteaktionen in admin Home in Microsoft 365 Business.
-ms.openlocfilehash: bed1610814ca0d60adb4b4b3d0018e3e7e6d763f
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Erfahren Sie mehr über die verschiedenen Gerätezustände in der Liste Geräteaktionen in admin Home in Microsoft 365 for Business.
+ms.openlocfilehash: 1a66e76dd3a74428923292427b01551db2449e48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560818"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627244"
 ---
 # <a name="device-states"></a>Gerätezustände
 
@@ -40,9 +40,9 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
   
 |**Status**|**Beschreibung**|
 |:-----|:-----|
-|Von Intune verwaltet  <br/> |Verwaltet von Microsoft 365 Business.  <br/> |
-|Abkoppeln ausstehend  <br/> |Microsoft 365 Business bereitet sich darauf vor, Unternehmensdaten vom Gerät zu entfernen.  <br/> |
-|Abkoppeln wird ausgeführt  <br/> |Microsoft 365 Business entfernt momentan Unternehmensdaten vom Gerät.  <br/> |
+|Von Intune verwaltet  <br/> |Verwaltet von Microsoft 365 Business Premium.  <br/> |
+|Abkoppeln ausstehend  <br/> |Microsoft 365 Business Premium ist immer für die Entfernung von Unternehmensdaten aus dem Gerät gerüstet.  <br/> |
+|Abkoppeln wird ausgeführt  <br/> |Microsoft 365 Business Premium entfernt derzeit Unternehmensdaten aus dem Gerät.  <br/> |
 |Fehler beim Abkoppeln  <br/> | Beim Entfernen von Unternehmensdaten ist ein Fehler aufgetreten.  <br/> |
 |Zurückziehen abgebrochen  <br/> |Die zurückzieh-Aktion wurde abgebrochen.  <br/> |
 |Zurücksetzen steht aus  <br/> |Es wird auf den Start des Zurücksetzens auf die Werkseinstellung gewartet.  <br/> |
@@ -51,5 +51,5 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
 |Löschvorgang abgebrochen  <br/> |Factory Wipe wurde abgebrochen.  <br/> |
 |Fehlerhaft  <br/> |Eine Aktion ist ausstehend (oder wird ausgeführt), aber das Gerät wurde für 30 Tage nicht eingecheckt.  <br/> |
 |Löschen steht aus  <br/> |Die Löschaktion steht aus.  <br/> |
-|Ermittelt  <br/> |Microsoft 365 Business hat das Gerät erkannt.  <br/> |
+|Ermittelt  <br/> |Microsoft 365 Business Premium hat das Gerät erkannt.  <br/> |
    

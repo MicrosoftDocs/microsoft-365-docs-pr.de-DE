@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106184"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630821"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -44,9 +44,9 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
     - Advanced not Filters (Dies sind Erweiterte Filteroptionen, die Include enthält, nicht enthalten, usw.)
     - Granulare Zeitfilter (Tag, Stunde, halbe Stunde) 
 
-- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Office 365 Security & Compliance Center zu **Threat Management** > **Review**.)
+- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zu **Threat Management** > **Review**.)
 
-- [Sichere Dokumente in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(Vorschau)**
+- [Sichere Dokumente in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(Vorschau)**
 
 ## <a name="december-2019"></a>Dezember 2019
 
@@ -60,7 +60,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 ## <a name="september-2019"></a>September 2019
 
-- [Einsatz von automatisierten Ermittlungs-und Antwortfunktionen in Office 365](automated-investigation-response-office.md) (Office 365 ATP-Plan 2)
+- [Einsatz automatischer Ermittlungs-und Antwortfunktionen](automated-investigation-response-office.md) (Office 365 ATP-Plan 2)
 
 - [Integration in Office 365 automatische ATP-Untersuchung und Antwortereignisse mithilfe der Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP-Plan 2)
 
@@ -82,7 +82,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 
 Wussten Sie schon, dass Office 365 ATP in zwei Plänen verfügbar ist? [Hier finden Sie weitere Informationen zu den einzelnen Plänen](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 

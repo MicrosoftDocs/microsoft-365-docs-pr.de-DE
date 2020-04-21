@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Hier erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das mehrere Benutzer zugreifen können. '
-ms.openlocfilehash: 481707b9d60d37b1d80d822467d17f66750f4f13
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253053"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628891"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
@@ -48,7 +48,7 @@ Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren
 
 3. Wählen Sie das Benutzerpostfach aus. Wählen Sie unter **in freigegebenes Postfach konvertieren die**Option **konvertieren**aus.
 
-4. Wenn das Postfach kleiner als 50 GB ist, können Sie die [Lizenz vom Benutzer](../manage/remove-licenses-from-users.md) entfernen, damit keine Kosten mehr anfallen. Löschen Sie das alte Postfach des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker. Wenn Sie das Postfach eines Mitarbeiters, der Ihre Organisation verlässt, konvertieren möchten, sollten Sie zusätzliche Schritte Unternehmen, um sicherzustellen, dass Sie sich nicht mehr anmelden können. Weitere Informationen finden Sie unter [Entfernen eines ehemaligen Mitarbeiters aus Office 365](../add-users/remove-former-employee.md).
+4. Wenn das Postfach kleiner als 50 GB ist, können Sie die [Lizenz vom Benutzer](../manage/remove-licenses-from-users.md) entfernen, damit keine Kosten mehr anfallen. Löschen Sie das alte Postfach des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker. Wenn Sie das Postfach eines Mitarbeiters, der Ihre Organisation verlässt, konvertieren möchten, sollten Sie zusätzliche Schritte Unternehmen, um sicherzustellen, dass Sie sich nicht mehr anmelden können. Weitere Informationen finden Sie unter [Entfernen eines ehemaligen Mitarbeiters von Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Alles, was Sie über freigegebene Postfächer wissen müssen, finden Sie unter [Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) und [Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md).
 
@@ -90,7 +90,7 @@ Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren
 ::: moniker-end
 
 
-Wenn das Postfach kleiner als 50 GB ist, können Sie [die Lizenz vom Benutzer entfernen](../manage/remove-licenses-from-users.md)und nicht mehr bezahlen. Löschen Sie das alte Postfach des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker. Wenn Sie das Postfach eines Mitarbeiters, der Ihre Organisation verlässt, konvertieren möchten, sollten Sie zusätzliche Schritte Unternehmen, um sicherzustellen, dass Sie sich nicht mehr anmelden können. Weitere Informationen finden Sie unter [Entfernen eines ehemaligen Mitarbeiters aus Office 365](../add-users/remove-former-employee.md).
+Wenn das Postfach kleiner als 50 GB ist, können Sie [die Lizenz vom Benutzer entfernen](../manage/remove-licenses-from-users.md)und nicht mehr bezahlen. Löschen Sie das alte Postfach des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker. Wenn Sie das Postfach eines Mitarbeiters, der Ihre Organisation verlässt, konvertieren möchten, sollten Sie zusätzliche Schritte Unternehmen, um sicherzustellen, dass Sie sich nicht mehr anmelden können. Siehe [Entfernen eines ehemaligen Mitarbeiters von Microsoft 365](../add-users/remove-former-employee.md).
     
 Alles, was Sie über freigegebene Postfächer wissen müssen, finden Sie unter [Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) und [Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md).
 
@@ -101,7 +101,7 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 1. [Stellen Sie das Konto des Benutzers wieder her](../add-users/restore-user.md).
 
-2. Stellen Sie sicher, dass ihm eine Office 365-Lizenz zugewiesen wurde.
+2. Stellen Sie sicher, dass eine Microsoft 365-Lizenz zugewiesen ist.
 
 3. Setzen Sie das Kennwort des Benutzers zurück.
     

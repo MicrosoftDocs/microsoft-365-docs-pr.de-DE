@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Administratorrollen
+title: Info zu Administratorrollen
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353266"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618872"
 ---
 # <a name="get-started-with-the-roles-page"></a>Erste Schritte mit der Seite "Rollen"
 
@@ -55,7 +55,7 @@ Dies ist keine erschöpfende Liste aller Berechtigungen, die diese Rollen aufwei
 
 ### <a name="exchange-admin"></a>Exchange-Administrator
 
-Weisen Sie den Benutzern, die die e-Mail-Postfächer Ihrer Benutzer anzeigen und verwalten müssen, Office 365 Gruppen und Exchange Online die Exchange-Administratorrolle zu. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die e-Mail-Postfächer Ihrer Benutzer anzeigen und verwalten müssen, Microsoft 365-Gruppen und Exchange Online. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Globaler Administrator
 
@@ -75,15 +75,15 @@ Weisen Sie den Benutzern, die Dienstanforderungen für Azure, Microsoft 365 und 
 
 ### <a name="sharepoint-admin"></a>SharePoint-Administrator
 
-Wenn Sie ein Microsoft 365-oder Office 365-Abonnement erwerben, wird automatisch eine Teamwebsite erstellt, und der globale Administrator ist als primärer Websitesammlungsadministrator festgelegt. Weisen Sie den Benutzern, die auf das SharePoint Admin Center zugreifen möchten, die SharePoint-Administratorrolle zu. Benutzer mit der SharePoint-Administratorrolle können Websitesammlungen erstellen und verwalten, Websitesammlungsadministratoren festlegen und Benutzerprofile verwalten. Benutzer mit der SharePoint-Administratorrolle können auch Office 365 Gruppen und offene Dienstanforderungen über den Microsoft-Support verwalten. [Weitere Informationen](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+Wenn Sie ein Microsoft 365-Abonnement erwerben, wird automatisch eine Teamwebsite erstellt, und der globale Administrator ist als primärer Websitesammlungsadministrator festgelegt. Weisen Sie den Benutzern, die auf das SharePoint Admin Center zugreifen möchten, die SharePoint-Administratorrolle zu. Benutzer mit der SharePoint-Administratorrolle können Websitesammlungen erstellen und verwalten, Websitesammlungsadministratoren festlegen und Benutzerprofile verwalten. Benutzer mit der SharePoint-Administratorrolle können auch Microsoft 365-Gruppen und offene Dienstanforderungen über den Microsoft-Support verwalten. [Weitere Informationen](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams-Dienstadministrator
 
-Weisen Sie die Microsoft Teams-Administratorrolle Benutzern zu, die auf die Teams & Skype Admin Center zugreifen und diese verwalten möchten. Benutzer mit der Administratorrolle "Teams" können auch Office 365 Gruppen und offene Dienstanforderungen über den Microsoft-Support verwalten. [Weitere Informationen](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Weisen Sie die Microsoft Teams-Administratorrolle Benutzern zu, die auf die Teams & Skype Admin Center zugreifen und diese verwalten möchten. Benutzer mit der Administratorrolle "Teams" können auch Microsoft 365-Gruppen und offene Dienstanforderungen über den Microsoft-Support verwalten. [Weitere Informationen](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Benutzeradministrator
 
-Weisen Sie die Benutzeradministratorrolle Benutzern zu, die auf Benutzerkennwörter zugreifen und diese verwalten möchten, und verwalten Sie Office 365 Benutzer und Gruppen. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Weisen Sie die Benutzeradministratorrolle Benutzern zu, die auf Benutzerkennwörter zugreifen und diese verwalten und Benutzer und Gruppen verwalten möchten. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 

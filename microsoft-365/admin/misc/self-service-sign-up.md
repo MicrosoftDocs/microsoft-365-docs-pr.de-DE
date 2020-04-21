@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Erfahren Sie mehr über die Office 365 Self-Service-Registrierung und verfügbaren Self-Service-Programmen wie Microsoft Power apps, Microsoft Flow und Dynamics 365 für Financials.
+description: Erfahren Sie mehr über die Microsoft 365 Self-Service-Registrierung und verfügbare Self-Service-Programme wie Microsoft Power apps, Microsoft Flow und Dynamics 365 für Financials.
 ms.custom: okr_SMB
-ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106112"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627800"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Verwenden der Self-Service-Registrierung in Ihrer Organisation
 
@@ -38,9 +38,9 @@ Im folgenden Beispiel wird beschrieben, wie die Self-Service-Registrierung für 
   
 1. Schüler und Studenten sowie Lehrkräfte verfügen über Schul- oder Uni-E-Mail-Adressen, die angeben, dass sie Ihrer Bildungseinrichtung zugeordnet sind. Die E-Mail-Adresse "jakob@uw.edu" gibt beispielsweise einen Studenten der University of Washington an.
 
-2. Studenten und Dozenten gehen auf [unsere](https://go.microsoft.com/fwlink/p/?LinkId=536628)Website und verwenden Ihre e-Mail-Adresse, um sich für die von Ihrer Organisation angebotenen Dienste zu registrieren, beispielsweise Office 365 ProPlus. Sie können sich auch für andere ﻿kostenlose Dienste registrieren, die wir anbieten.
+2. Studenten und Dozenten gehen auf [unsere](https://go.microsoft.com/fwlink/p/?LinkId=536628)Website und verwenden Ihre e-Mail-Adresse, um sich für die von Ihrer Organisation bereitgestellten Dienste zu registrieren, beispielsweise Microsoft 365-Apps für Unternehmen. Sie können sich auch für andere ﻿kostenlose Dienste registrieren, die wir anbieten.
 
-3. Wir validieren Ihre e-Mail-Adresse und können dann sofort mit der Verwendung von Office 365, Power BI oder anderen Diensten beginnen.
+3. Wir validieren Ihre e-Mail-Adresse, und dann können Sie sofort mit Microsoft 365, Power BI oder anderen Diensten beginnen.
 
 4. Als Geschäfts Administrator sehen Sie, wer sich für ein Abonnement angemeldet hat, indem Sie die Seite **Produkte & Dienste** im Admin Center anzeigen. Auf diese Weise können Sie sehen, wann neue oder nicht erkannte Lizenzen für Dienste in Ihrem Mandanten vorhanden sind. Um zu steuern, ob Benutzer sich für Self-Service-Abonnements anmelden können, verwenden Sie das Cmdlet " [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell" mit dem Parameter " **AllowAdHocSubscriptions** ". Weitere Informationen finden Sie unter [wie kann ich Self-Service-Einstellungen steuern?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
@@ -52,8 +52,8 @@ Im Folgenden werden die aktuell verfügbaren Self-Service-Programme aufgeführt.
 |:-----|:-----|:-----|:-----|
 |**Programm** <br/> |**Beschreibung** <br/> |**Zusätzliche Informationen** <br/> |****Website für die Self-Service-Registrierung**** <br/> |
 |Office 365 a1 * * * * <br/> |Jeder Schüler oder Lehrer kann eine Schul-e-Mail-Adresse verwenden, um sich kostenlos Office 365 anzumelden und Office-Apps für das Internet, 1TB von OneDrive-Cloud-Speicher und SharePoint Online für Klasse, Team und Projektwebsites zu erhalten.  <br/> |[Self-Service-Registrierung für Office 365 Education: Häufig gestellte technische Fragen](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 a1 Plus** <br/> |Entsprechend berechtigte Schüler/Studierende und Lehrkräfte können sich für Office 365 A1 Plus registrieren, in dem alles vorstehend Erwähnte und zusätzlich Office 365 ProPlus enthalten ist. Bei Office 365 ProPlus handelt es sich um Produktivitätssoftware mit Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access und Skype for Business, die auf Ihrem Desktop- oder Laptopcomputer installiert wird.  <br/> |[Self-Service-Registrierung für Office 365 Education: Häufig gestellte technische Fragen](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI ermöglicht Benutzern das Visualisieren von Daten, die Freigabe von Ermittlungen und die Zusammenarbeit auf intuitiven, neuen wegen. <br/> Wenn Ihre Organisation bereits Office 365 abonniert hat, werden Ihnen möglicherweise zusätzlich Lizenzen für "Power BI pro Einzelbenutzer Testversion" angezeigt, die Benutzern begrenzten, freien Zugriff auf Erweiterte Funktionen bieten.  <br/> |[Power BI in Ihrer Organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Office 365 a1 Plus** <br/> |Berechtigte Schüler und Lehrer können sich für Office 365 a1 Plus anmelden, einschließlich aller oben genannten Plus Microsoft 365-Apps für Unternehmen. Microsoft 365 Apps für Unternehmen sind Produktivitätssoftware, einschließlich Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access und Skype for Business, die auf Ihrem Desktop-oder Laptop Computer installiert ist.  <br/> |[Self-Service-Registrierung für Office 365 Education: Häufig gestellte technische Fragen](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Power BI** <br/> |Power BI ermöglicht Benutzern das Visualisieren von Daten, die Freigabe von Ermittlungen und die Zusammenarbeit auf intuitiven, neuen wegen. <br/> Wenn Ihre Organisation bereits abonniert hat, werden Ihnen möglicherweise zusätzlich Lizenzen für "Power BI pro Einzelbenutzer Testversion" angezeigt, die Benutzern begrenzten, freien Zugriff auf Erweiterte Funktionen bieten.  <br/> |[Power BI in Ihrer Organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Rechteverwaltungsdienste (RMS)** <br/> |RMS für Einzelpersonen ist ein kostenloses Self-Service-Abonnement für Benutzer in einer Organisation, denen vertrauliche Dateien gesendet wurden, die durch Azure Rights Management (Azure RMS) geschützt sind, deren IT-Abteilung jedoch Azure RMS oder Active Directory-Rechteverwaltungsdienste (Active Directory Rights Management Services, AD RMS) nicht implementiert hat.  <br/> |[RMS für Einzelpersonen und Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management-Portal](https://portal.azure.com/): Hier können Sie überprüfen, ob Sie ein bestimmtes durch RMS geschütztes Dokument öffnen können.  <br/> |
 |**Microsoft PowerApps** <br/> |In PowerApps können Sie Organisationsdaten verwalten, indem Sie eine App ausführen, die Sie selbst erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat. Apps werden auf mobilen Geräten wie Smartphones ausgeführt, oder Sie können sie in einem Browser ausführen, indem Sie Dynamics 365 öffnen. Sie können eine unbegrenzte Vielfalt an Apps erstellen - und dies alles, ohne eine Programmiersprache wie z. B. C# erlernen zu müssen.  <br/> |[Self-Service-Registrierung für PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |Erhalten Sie eine umfassende Business- und Finanzmanagementlösung für kleine und mittelständische Unternehmen. Dynamics 365 for Financials erleichtert das Bestellen, Verkaufen, Fakturieren und die Berichterstellung - und dies ab dem ersten Tag.  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

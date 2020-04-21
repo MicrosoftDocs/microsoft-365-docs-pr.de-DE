@@ -1,5 +1,5 @@
 ---
-title: Anzeigen des verfügbaren Office 365 Business-Abonnements
+title: Welches Abonnement habe ich?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409500"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621430"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
 Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zum Admin Center wechseln.
   
- **Sie sind kein Administrator?** Sehen Sie [, welche Office 365 Geschäfts Produkt oder-Lizenz habe ich?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Sie sind kein Administrator?** Finden Sie Informationen [zu den Microsoft 365 for Business-Produkten oder-Lizenzen?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
@@ -50,7 +50,7 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a> .  
 
-2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im nachstehenden Screenshot können Sie sehen, dass ich über ein Office 365 Business-Abonnement verfüge.
+2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im folgenden Screenshot sehen Sie, dass ich über ein Microsoft 365 apps for Business-Abonnement verfüge.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a> .  
 
-2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im nachstehenden Screenshot können Sie sehen, dass ich über ein Office 365 Business-Abonnement verfüge.
+2. Wenn Sie nur über ein einziges Abonnement verfügen, wird es auf der Seite **Abonnements** angezeigt - zusammen mit seinem Namen, zugehörigen Informationen und dem Status. Im folgenden Screenshot sehen Sie, dass ich über ein Microsoft 365 apps for Business-Abonnement verfüge.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

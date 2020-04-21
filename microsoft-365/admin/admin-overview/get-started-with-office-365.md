@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Office 365 Business
+title: Erste Schritte mit Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: Erfahren Sie, wie Sie Office 365 auf Ihrem Computer, Mobiltelefon und Tablet-PC einrichten und nutzen können.
-ms.openlocfilehash: 695bf6ef3acd6d9f9c4b1a5252172258b0af5a2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Telefon und Tablet einrichten und verwenden.
+ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241532"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623918"
 ---
 # <a name="get-started"></a>Erste Schritte
 
-Ihre Organisation hat vor kurzem Office 365, und jetzt müssen Sie Sie verwenden, damit Sie mit dem Lesen von e-Mails beginnen, Dokumente freigeben können und vieles mehr. Erfahren Sie, wie Sie Office 365 auf Ihrem Computer, Mobiltelefon und Tablet-PC einrichten und nutzen können.
+Ihre Organisation hat vor kurzem Microsoft 365, und jetzt müssen Sie es verwenden, damit Sie mit dem Lesen von e-Mails beginnen können, Freigabe von Dokumenten und vieles mehr. Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Telefon und Tablet einrichten und verwenden.
   
 ::: moniker range="o365-worldwide"
 
@@ -66,5 +66,5 @@ Hier finden Sie einige Ressourcen, die Sie beim Einstieg unterstützen.
     
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Einrichten von Office 365 Business - Administratorhilfe](../setup/setup.md)
+[Einrichten von Microsoft 365 für Unternehmen-Administratorhilfe](../setup/setup.md)
 

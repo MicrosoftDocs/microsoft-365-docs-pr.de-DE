@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 7c3e28cc112358fa5ecc9aacaec7e30aaaeec6fe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59c429a8460d16f2c636beeaf571689d33b400d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628220"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
   
 Sie können Änderungen an Ihrem Organisationsprofil vornehmen und z. B. die Bezeichnung der Organisation, deren Anschrift und Telefonnummer sowie den technischen Kontakt ändern. **Um diese Informationen aktualisieren zu können, müssen Sie ein globaler Administrator sein.**
   
-Informationen zu Änderungen der Rechnungsadresse oder Ihres Abonnements finden Sie unter [Ändern der Rechnungsadressen für Office 365 Business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+Informationen zum Ändern der Adresse, die Ihrer Rechnung oder Ihrem Abonnement zugeordnet ist, finden Sie unter [Ändern der Rechnungsadressen für Microsoft 365 for Business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
 
 ## <a name="edit-organization-information"></a>Bearbeiten von Organisationsinformationen
 
@@ -53,10 +53,10 @@ So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
 |**Field**  |**Beschreibung**  |
 |---------|---------|
 |Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Anmeldeseite: Wenn Ihre Benutzer andere Microsoft-Konten mit ihrer geschäftlichen E-Mail-Adresse bzw. der E-Mail-Adresse ihrer Schule eingerichtet haben, wird auf der Anmeldeseite möglicherweise der Organisationsname angezeigt. Auf diese Weise können sie zwischen ihrem Firmen- oder Schulkonto und ihren anderen Konten besser unterscheiden und identifizieren, welches Konto beim Anmelden zu verwenden ist.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/>        |
-|Straße, Ort, Bundesland/Kanton, Postleitzahl  <br/>     | Die hier eingegebene Adresse ist das, was Sie auf Ihrer Rechnung sehen, unter verkauft an: die auf Ihrer Rechnung verkaufte Adresse ist identisch mit ihrer Organisationsadresse auf Ihrer Profilseite (siehe [verstehen der Rechnung für Office 365 für Unternehmen](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Straße, Ort, Bundesland/Kanton, Postleitzahl  <br/>     | Die hier eingegebene Adresse ist das, was Sie auf Ihrer Rechnung sehen, unter verkauft an: die auf Ihrer Rechnung verkaufte Adresse ist identisch mit ihrer Organisationsadresse auf Ihrer Profilseite (siehe [verstehen Ihrer Rechnung für Microsoft 365 for Business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Land oder Region  <br/>    | Dies ist das Land oder die Region, in dem/der sich der Hauptsitz des Unternehmens befindet. Das ausgewählte Land bzw. die Region bestimmt, welche Dienste für Sie verfügbar sind, die Steuern und die Abrechnungswährung für Ihr Land bzw. Ihre Region sowie den Standort des Ihnen am nächsten gelegenen Rechenzentrums (siehe [Microsoft Office-Lizenzeinschränkungen](https://office.microsoft.com/redir/FX103037529)).  <br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../contact-support-for-business-products.md).        |
 |Telefon  <br/>     | Dies ist die primäre Nummer für Ihr Unternehmen. Normalerweise ist dies die Nummer Ihrer Unternehmenszentrale.  <br/>        |
-|Technischer Kontakt  <br/> |Dies ist die E-Mail-Adresse des primären Technikers, der Ihr Office 365-Abonnement verwaltet. Diese Person empfängt die Kommunikation zum Office 365-Dienststatus.  <br/> |
+|Technischer Kontakt  <br/> |Dies ist die e-Mail-Adresse der primären technischen Person, die Ihr Microsoft 365-Abonnement verwaltet. Dies ist die Person, die über den Microsoft 365-Dienststatus informiert wird.  <br/> |
 |Bevorzugte Sprache  <br/> |Die bevorzugte Sprache bestimmt die Sprache, in der alle Mitteilungen von Microsoft an Ihre Organisation gesendet werden. Bei der Registrierung bestimmt diese Einstellung die von SharePoint Online verwendete Sprache, die Ihren Benutzern auf Ihrer Teamwebsite angezeigt wird. Wenn Sie die Spracheinstellung nach Ihrer Registrierung ändern, werden alle zukünftigen Mitteilungen in der zuletzt ausgewählten Sprache gesendet.  <br/> BITTE BEACHTEN: Die von SharePoint Online verwendete Sprache kann nicht geändert werden.           |
 
 ## <a name="change-your-alternate-email-address"></a>Ändern der alternativen e-Mail-Adresse

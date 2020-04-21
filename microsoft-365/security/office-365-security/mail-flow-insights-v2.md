@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081436"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630467"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
-Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu ermitteln und Aktionen zum Beheben von Problemen im Zusammenhang mit dem Nachrichtenfluss in Ihrer Office 365 Organisation durchführen.
+Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu ermitteln und Aktionen zum Beheben von Problemen im Zusammenhang mit dem Nachrichtenfluss in Ihrer Organisation durchführen.
 
 Die im e-Mail-Fluss-Dashboard verfügbaren Einblicke, Berichte und Widgets sind:
 
@@ -50,9 +50,9 @@ Die im e-Mail-Fluss-Dashboard verfügbaren Einblicke, Berichte und Widgets sind:
 
 Das Nachrichtenfluss-Dashboard steht für Folgendes zur Verfügung:
 
-- Mitglieder der **globalen Administratorrolle Office 365** .
+- Mitglieder der **globalen Administrator** Rolle.
 
-- Mitglieder Office 365 Rolle " **Exchange-Administrator** ".
+- Mitglieder der **Exchange-Administrator** Rolle.
 
 - Mitglieder der **Rolle "Nachrichtenfluss-Administrator** " im Security & Compliance Center. Wenn diese Rolle explizit einem Benutzer zugewiesen ist, der kein Mitglied der globalen Administrator-oder Exchange-Administratorrolle ist:
 
@@ -60,11 +60,11 @@ Das Nachrichtenfluss-Dashboard steht für Folgendes zur Verfügung:
 
   - Der Benutzer verfügt nur über eine schreibgeschützte Berechtigung für das Nachrichtenfluss-Dashboard.
 
-  - Der Benutzer hat keinen Zugriff auf das Office 365-Verwaltungsportal.
+  - Der Benutzer hat keinen Zugriff auf das Microsoft 365 Admin Center.
 
-Weitere Informationen zur Rolle Office 365 globalen Administrators finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Weitere Informationen zur Rolle "globaler Administrator" finden Sie unter [Informationen zu Microsoft 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benutzer finden Sie unter [Gewähren von Benutzern Zugriff auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benutzer finden Sie unter [Gewähren von Benutzern Zugriff auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>So finden Sie das Nachrichtenfluss-Dashboard
 
@@ -72,4 +72,4 @@ Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benut
 
 2. Erweitern Sie **Nachrichtenfluss** , und wählen Sie dann **Dashboard**aus.
 
-   ![Das Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+   ![Das Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)

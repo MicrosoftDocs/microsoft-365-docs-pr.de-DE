@@ -1,5 +1,5 @@
 ---
-title: Ausführen einer internen Übernahme durch den Administrator in Office 365
+title: Ausführen einer internen Übernahme durch den Administrator
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Office 365 übernimmt.
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Microsoft 365 übernimmt.
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212245"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627944"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>Ausführen einer internen Übernahme durch den Administrator in Office 365
+# <a name="perform-an-internal-admin-takeover"></a>Ausführen einer internen Übernahme durch den Administrator
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
 
@@ -67,11 +67,11 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) ("3 Schritte zur Übernahme der IT-Administratorrolle für Power BI und Office 365", in englischer Sprache)
+YouTube: [3 Schritte zum Ausführen einer Übernahme durch IT-Administratoren für Power BI und Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Übernahme von Administratoren in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.md)
+[Abrufen von Hilfe zu Domänen](../get-help-with-domains/get-help-with-domains.md)
 
 [Verwenden von Self-Service-Registrierung in Ihrer Organisation](self-service-sign-up.md)
   

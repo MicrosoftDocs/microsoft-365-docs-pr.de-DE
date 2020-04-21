@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: In diesem Artikel erfahren Sie, wie Sie Windows Autopilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden, damit Sie für die Verwendung durch den Mitarbeiter verfügbar sind.
-ms.openlocfilehash: 3b1cf297914862aaa74fdf9a8bb7290d00f73b1d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561578"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627492"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
@@ -49,7 +49,7 @@ Geräte müssen diese Anforderungen erfüllen:
 
 Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, ist die beste Möglichkeit, mit der ersten Schritte zu beginnen, die schrittweise Anleitung. Sie können auch [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und Ihnen [profile zuweisen](create-and-edit-autopilot-profiles.md) , ohne die Anleitung zu verwenden. 
   
-1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Autopilot**aus.
 
@@ -81,7 +81,7 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, ist die beste M�
     
     - Erstellen Sie eine Anmeldeumgebung mit Ihrem Unternehmensbranding.
     
-    - Verbinden Sie Ihre Geräte mit Azure Active Directory-Konten, und registrieren Sie Sie automatisch für die Verwaltung durch Microsoft 365 Business.
+    - Verbinden Sie Ihre Geräte mit Azure Active Directory-Konten, und registrieren Sie Sie automatisch, um von Microsoft 365 Business Premium verwaltet zu werden.
     
     Weitere Informationen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md). 
     

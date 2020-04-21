@@ -1,5 +1,5 @@
 ---
-title: Wiederherstellen eines Benutzers in Office 365
+title: Wiederherstellen eines Benutzers
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,32 +21,32 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Hier erfahren Sie, wie gelöschte Office 365 Benutzerkonten und alle zugehörigen Daten wiederhergestellt werden.
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Hier erfahren Sie, wie gelöschte Benutzerkonten und alle zugehörigen Daten wiederhergestellt werden.
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241574"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624058"
 ---
-# <a name="restore-a-user-in-office-365"></a>Wiederherstellen eines Benutzers in Office 365
+# <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
    
 Wenn Sie ein Benutzerkonto innerhalb von 30 Tagen nach dem Löschen wiederherstellen, werden das Benutzerkonto und alle zugehörigen Daten wiederhergestellt. Der Benutzer kann sich mit demselben Firmen- oder Schulkonto anmelden. Das Postfach wird vollständig wiederhergestellt. Wenn Sie herausfinden müssen, wie viel Zeit noch bleibt, um ein bestimmtes Benutzerkonto wiederherzustellen, [wenden Sie sich an uns](../contact-support-for-business-products.md).
   
 Nachfolgend ein paar Tipps:
   
-- Stellen Sie sicher, dass Office 365-Lizenzen zur Verfügung stehen, die Sie dem Konto zuweisen können.
+- Stellen Sie sicher, dass Lizenzen zur Verfügung stehen, um das Konto zuzuweisen.
     
 - Wenn Ihr Unternehmen Active Directory verwendet, lesen Sie die unter [Behandeln von Problemen mit gelöschten Benutzerkonten in Office 365](https://support.microsoft.com/kb/2619308) aufgeführten Anweisungen zum Wiederherstellen eines Benutzerkontos. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Wiederherstellen eines oder mehrerer Benutzerkonten
 
-Sie müssen ein globaler Administrator oder Administrator der Benutzerverwaltung in Office 365 sein, um diese Schritte ausführen zu können. 
+Sie müssen ein Microsoft 365 globaler Administrator oder Administrator der Benutzerverwaltung sein, um diese Schritte ausführen zu können. 
   
  
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. ****
+1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. ****
+1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
 
 ::: moniker-end
 
@@ -117,12 +117,12 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 Ein Proxyadressenkonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, das eine Proxyadresse enthält, dieselbe Proxyadresse einem anderen Konto zuweisen und dann versuchen, das gelöschte Konto wiederherzustellen. Führen Sie die nachstehenden Schritte aus, um das Problem zu beheben.
   
-Sie benötigen [Administratorberechtigungen](about-admin-roles.md) in Office 365 zu diesem Zweck. 
+Sie benötigen [Administratorberechtigungen](about-admin-roles.md) in Microsoft 365, um dies zu tun. 
   
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. ****
+1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
 
 ::: moniker-end
 
@@ -148,4 +148,3 @@ Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041
 
 [Löschen eines Benutzers](delete-a-user.md)
   
-

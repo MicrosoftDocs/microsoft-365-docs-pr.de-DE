@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen für Office 365 bei Hostgator
+title: Erstellen von DNS-Einträgen bei Hostgator für Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hostgator für Office 365 einrichten.
-ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hostgator für Microsoft einrichten.
+ms.openlocfilehash: 9ac14d516dff6e84dd0fb06a6632376d475689fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211715"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629527"
 ---
-# <a name="create-dns-records-at-hostgator-for-office-365"></a>Erstellen von DNS-Einträgen für Office 365 bei Hostgator
+# <a name="create-dns-records-at-hostgator-for-microsoft"></a>Erstellen von DNS-Einträgen bei Hostgator für Microsoft
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -36,12 +36,12 @@ Wenn Hostgator Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel au
 > [!IMPORTANT]
 > Sie müssen die erste procedurebelow ausführen, [Ihre Domäne auf Ihr Hostingkonto hinweisen](#point-your-domain-to-your-hosting-account), bevor Sie DNS-Einträge mithilfe eines der anderen Verfahren in diesem Artikel hinzufügen. 
 
-Nachdem Sie all diese Änderungen bei Hostgator vorgenommen haben, ist Ihre Domäne für die Verwendung von Office 365-Diensten eingerichtet.
+Nachdem Sie alle diese Änderungen bei Hostgator vorgenommen haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
   
-Informationen zu Webhosting und DNS für Websites mit Office 365 finden Sie unter [Verwenden einer öffentlichen Website mit Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Informationen über Webhosting und DNS für Websites mit Microsoft finden Sie unter [Verwenden einer öffentlichen Website mit Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge in Office 365 hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Wenn Sie Probleme mit dem Nachrichtenfluss oder anderen Problemen haben, nachdem Sie DNS-Einträge hinzugefügt haben, finden Sie unter [Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>Verweisen Ihrer Domäne auf Ihr Hostingkonto
 <a name="BKMK_PointDomain"> </a>
@@ -70,7 +70,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Domäne und Hostingkonten zu ver
 > [!IMPORTANT]
 > Bevor Sie diesen Vorgang ausführen, müssen Sie zuerst die Schritte im ersten Abschnitt dieses Artikels ([Verweisen Ihrer Domäne auf Ihr Hostingkonto](#point-your-domain-to-your-hosting-account)) ausführen. 
   
-Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewissern, dass Sie deren Besitzer sind. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, ist für Office 365 der Nachweis, dass Sie der Besitzer der Domäne sind.
+Bevor Sie Ihre Domäne mit Microsoft verwenden, müssen wir sicherstellen, dass Sie Sie besitzen. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, beweist Microsoft, dass Sie die Domäne besitzen.
   
 > [!NOTE]
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
@@ -80,7 +80,7 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
     (Each hosted account at Hostgator is assigned a unique cPanel address. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
     
     > [!IMPORTANT]
-    > Um Ihrer Domäne eine cPanel-Adresse zuzuordnen, benötigen Sie ein Hostkonto bei Hostgator. Für den Einstieg in Office 365 können Sie entweder ein Hostkonto von Hostgator erwerben oder [Ihre Nameserver auf Office 365 umdelegieren](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
 2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
     
@@ -91,15 +91,15 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Verwenden Sie Ihre *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie jeweils Ihren Wert für **die Zieladresse bzw. die Adresse, auf die verwiesen wird** aus der Tabelle in Office 365. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Verwenden Sie Ihre *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
 5. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
-Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Office 365 zurück und fordern Office 365 auf, nach dem Eintrag zu suchen.
+Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern den Eintrag an.
   
-Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
+Wenn Microsoft den richtigen TXT-Eintrag findet, wird Ihre Domäne überprüft.
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -110,9 +110,9 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 4. Wählen Sie auf der Seite **Domäne überprüfen** die Option **Überprüfen** aus.
     
 > [!NOTE]
-> Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge in Office 365 hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Wenn Sie Probleme mit dem Nachrichtenfluss oder anderen Problemen haben, nachdem Sie DNS-Einträge hinzugefügt haben, finden Sie unter [Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Hinzufügen eines MX-Eintrags, damit E-Mails für Ihre Domäne zu Office 365 geleitet werden
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Hinzufügen eines MX-Eintrags, damit e-Mails für Ihre Domäne an Microsoft gelangen
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
     
     > [!IMPORTANT]
-    > Um Ihrer Domäne eine cPanel-Adresse zuzuordnen, benötigen Sie ein Hostkonto bei Hostgator. Für den Einstieg in Office 365 können Sie entweder ein Hostkonto von Hostgator erwerben oder [Ihre Nameserver auf Office 365 umdelegieren](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
 2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **e-Mail** die Option **MX-Eintrag**aus.
     
@@ -136,7 +136,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie \< Ihren *Domänenschlüssel* \> aus Ihrem Office 365-Konto ab.    [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie \< Ihren *Domänenschlüssel* \> von Ihrem Microsoft-Konto ab.    [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Wählen Sie **neuen Datensatz hinzufügen**aus.
    
@@ -144,7 +144,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 7. Wenn im Abschnitt **MX Records** weitere MX-Einträge vorhanden sind, entfernen Sie die einzelnen Einträge. 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen sechs CNAME-Einträge
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs CNAME-Einträge, die für Microsoft erforderlich sind
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -155,7 +155,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
     
     > [!IMPORTANT]
-    > Um Ihrer Domäne eine cPanel-Adresse zuzuordnen, benötigen Sie ein Hostkonto bei Hostgator. Für den Einstieg in Office 365 können Sie entweder ein Hostkonto von Hostgator erwerben oder [Ihre Nameserver auf Office 365 umdelegieren](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
 2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
     
@@ -186,7 +186,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen einzigen SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Schauen Sie sich diese [Details und SPF-Beispieleinträge](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords) an. Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.md) verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn Sie bereits einen SPF-Eintrag für Ihre Domäne haben, erstellen Sie keinen neuen für Microsoft. Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen einzelnen SPF-Eintrag haben, der beide Wertegruppen enthält. Benötigen Sie Beispiele? Sehen Sie sich diese [externen Domänennamen-System Einträge für Microsoft an](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.md) verwenden. 
   
 > [!IMPORTANT]
 > Bevor Sie diesen Vorgang ausführen, müssen Sie zuerst die Schritte im ersten Abschnitt dieses Artikels ([Verweisen Ihrer Domäne auf Ihr Hostingkonto](#point-your-domain-to-your-hosting-account)) ausführen. 
@@ -196,7 +196,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
     
     > [!IMPORTANT]
-    > Um Ihrer Domäne eine cPanel-Adresse zuzuordnen, benötigen Sie ein Hostkonto bei Hostgator. Für den Einstieg in Office 365 können Sie entweder ein Hostkonto von Hostgator erwerben oder [Ihre Nameserver auf Office 365 umdelegieren](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
 2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
     
@@ -210,7 +210,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
   
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -221,7 +221,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
     
     > [!IMPORTANT]
-    > Um Ihrer Domäne eine cPanel-Adresse zuzuordnen, benötigen Sie ein Hostkonto bei Hostgator. Für den Einstieg in Office 365 können Sie entweder ein Hostkonto von Hostgator erwerben oder [Ihre Nameserver auf Office 365 umdelegieren](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
   
 2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor**aus.
 
@@ -246,4 +246,4 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
     Erstellen Sie im Abschnitt **Hinzufügen eines Daten** Satzes einen Datensatz mithilfe der Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Datensatz hinzufügen** aus, um den Datensatz abzuschließen. 
     
 > [!NOTE]
-> Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge in Office 365 hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Wenn Sie Probleme mit dem Nachrichtenfluss oder anderen Problemen haben, nachdem Sie DNS-Einträge hinzugefügt haben, finden Sie unter [Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 

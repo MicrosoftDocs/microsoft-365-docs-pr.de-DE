@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Hier erfahren Sie, wie Sie einen Subscription Advisor-Partner als Partner von Record zum Zeitpunkt Office 365 Kaufs, Ändern des Partners oder Löschen eines Partners aus einem Abonnement hinzufügen.
-ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Hier erfahren Sie, wie Sie zum Zeitpunkt des Kaufs von Microsoft 365 einen Subscription Advisor-Partner als Partner von Record hinzufügen, den Partner ändern oder einen Partner aus einem Abonnement löschen.
+ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361580"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627968"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -37,13 +37,13 @@ ms.locfileid: "42361580"
 
 ::: moniker range="o365-worldwide"
 
-[] Ein autorisierter Microsoft-Partner, der als Abonnementberater fungiert, verfügt in den Bereichen Verkauf, Support und Technik über das Fachwissen, das Sie benötigen, um Ihr Abonnement einzurichten und zu verwalten. Sie können einen Abonnementberaterpartner beim Erwerb von Office 365 oder zu einem anderen Zeitpunkt als Partner of Record hinzufügen. Wenn Sie derzeit nicht mit einem Partner zusammenarbeiten, können Sie ihn auch auf der [Microsoft PinPoint](https://pinpoint.microsoft.com) -Website finden. 
+[] Ein autorisierter Microsoft-Partner, der als Abonnementberater fungiert, verfügt in den Bereichen Verkauf, Support und Technik über das Fachwissen, das Sie benötigen, um Ihr Abonnement einzurichten und zu verwalten. Sie können einen Subscription Advisor-Partner als Partner von Record hinzufügen, wenn Sie Microsoft 365 oder zu einem anderen Zeitpunkt erwerben. Wenn Sie derzeit nicht mit einem Partner zusammenarbeiten, können Sie ihn auch auf der [Microsoft PinPoint](https://pinpoint.microsoft.com) -Website finden. 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Ihre Wahl des Partners ist von den von Ihnen verwendeten Office 365-Diensten sowie von dem Land oder der Region abhängig, in dem/der Sie die Dienste verwenden. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
+Der von Ihnen ausgewählte Partner hängt von den von Ihnen verwendeten Microsoft-Diensten und dem Land oder der Region ab, in der Sie diese Dienste verwenden. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
 
 ::: moniker-end
 
@@ -272,4 +272,4 @@ Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abge
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Finden Sie Ihren Office 365 Partner oder Händler](../manage/find-your-partner-or-reseller.md)
+[Finden Sie Ihren Microsoft 365-Partner oder-Händler](../manage/find-your-partner-or-reseller.md)

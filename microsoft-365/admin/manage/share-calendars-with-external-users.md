@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Erfahren Sie, wie Sie Ihren Benutzern die Freigabe Ihrer Kalender mit externen Benutzern für Besprechungen und Termine ermöglichen können. '
-ms.openlocfilehash: 42bce53c3963c41684644d02dab18210f9ed828a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252726"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628040"
 ---
 # <a name="share-calendars-with-external-users"></a>Freigeben von Kalendern für externe Benutzer
 
-[] Es ist oft notwendig, Besprechungen mit Personen außerhalb Ihrer Organisation zu planen. Um die Suche nach Besprechungszeiten, die für alle passen, zu vereinfachen, ermöglicht Ihnen Office 365, Kalender für "externe Benutzer" zugänglich zu machen, nämlich für solche, die Frei/Gebucht-Informationen benötigen, aber keine Benutzerkonten in Ihrer Office 365-Umgebung besitzen.
+[] Es ist oft notwendig, Besprechungen mit Personen außerhalb Ihrer Organisation zu planen. Um den Prozess der Suche nach gegenseitig annehmbaren Besprechungszeiten zu vereinfachen, ermöglicht Ihnen Microsoft 365 das Bereitstellen von Kalendern für "externe Benutzer", die Frei/Gebucht-Zeiten anzeigen müssen, aber keine Benutzerkonten für Ihre Microsoft 365-Umgebung haben.
   
 Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie als Administrator für alle Benutzer im Mandanten aktivieren können. Nachdem die Freigabe aktiviert wurde, können Benutzer Outlook Web App verwenden, um ihre Kalender mit beliebigen Personen innerhalb oder außerhalb der Organisation zu teilen. Personen innerhalb der Organisation können freigegebene Kalender neben ihren eigenen anzeigen. An Personen außerhalb der Organisation wird eine URL gesendet, über die sie den Kalender anzeigen können. Die Benutzer entscheiden, wann sie teilen möchten, wie viel sie teilen möchten und wann sie ihre Kalender privat halten möchten.
   
@@ -44,7 +44,7 @@ Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie al
   
 2. Wählen Sie auf der Seite **Dienste &amp; -Add-ins** die Option **Kalender**aus.
   
-3. Wählen Sie auf der daraufhin geöffneten **Kalender** Seite aus, ob Ihre Benutzer ihre Kalender für Personen außerhalb Ihrer Organisation freigeben möchten, die über Office 365 oder Exchange verfügen.
+3. Wählen Sie auf der daraufhin geöffneten **Kalender** Seite aus, ob Ihre Benutzer ihre Kalender für Personen außerhalb Ihrer Organisation freigeben möchten, die über Microsoft 365 oder Exchange verfügen.
     
 4. Wählen Sie aus, ob Sie anonymen Benutzern (Benutzern ohne Anmeldeinformationen) den Zugriff auf Kalender über eine e-Mail-Einladung erlauben möchten.
 

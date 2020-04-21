@@ -1,5 +1,5 @@
 ---
-title: Erhöhter Bedrohungsschutz für Microsoft 365 Business
+title: Erhöhter Bedrohungsschutz für Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
-ms.openlocfilehash: 17425de3f6e0022945899a559cf88575b6315a56
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561608"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627124"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
 Dieser Artikel unterstützt Sie bei der Verbesserung des Schutzes Ihres Microsoft 365-Abonnements zum Schutz vor Phishing, Schadsoftware und anderen Bedrohungen. Diese Empfehlungen sind für Organisationen mit einem erhöhten Sicherheitsbedürfnis geeignet, wie zum Beispiel Anwaltskanzleien und Kliniken für das Gesundheitswesen.
 
-Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Office 365 Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Um die Punktzahl zu verbessern, führen Sie die in diesem Artikel empfohlenen Aktionen aus. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
+Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Um die Punktzahl zu verbessern, führen Sie die in diesem Artikel empfohlenen Aktionen aus. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
 
 Weitere Informationen finden Sie unter [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -42,7 +42,7 @@ Ihre Office 365-oder Microsoft 365-Umgebung umfasst den Schutz vor Schadsoftware
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Anti-Malware**für **Richtlinien** \> aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
     
 3. Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
     
@@ -130,7 +130,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite **Richtlinie** die Option **ATP Anti-Phishing**aus.
     
@@ -160,7 +160,7 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Anlagen**aus.
     
@@ -183,8 +183,6 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Schutz vor Phishing-Angriffen durch ATP-sichere Links
 
 Hacker verbergen manchmal böswillige Websites in Links in e-Mails oder anderen Dateien. Office 365 ATP-sichere Links (ATP-sichere Links), ein Teil Office 365 Advanced Threat Protection, können zum Schutz Ihrer Organisation beitragen, indem Sie die Zeit-für-Klick-Überprüfung von Webadressen (URLs) in e-Mail-Nachrichten und Office-Dokumenten ermöglichen. Der Schutz wird durch Richtlinien für ATP-sichere Links definiert.
@@ -199,7 +197,7 @@ Um ATP-sichere Links einzurichten, schauen Sie sich [Dieses kurze Schulungsvideo
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Links**aus.
     
@@ -207,7 +205,7 @@ So ändern Sie die Standardrichtlinie:
   
 1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die **Standard** Richtlinie aus. 
     
-2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail** **Office 365 ProPlus, Office für IOS und Android**aus.
+2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail**die Option **Microsoft 365 apps for Enterprise, Office für IOS und Android**aus.
     
 3. Klicken Sie auf **Speichern**. 
     

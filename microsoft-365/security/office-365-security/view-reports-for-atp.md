@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: b91fb8d000b610439618be687e36dabc787ebb58
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631061"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -107,9 +107,9 @@ Der Bericht " **ATP-Dateitypen** " zeigt Ihnen den Typ der Dateien, die von [ATP
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **ATP-Dateitypen**.
 
 ![ATP-Dateitypenbericht](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-
-Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti &amp; -Spam-Schutz vor Schadsoftware in Office 365](anti-spam-and-anti-malware-protection.md)erkannt wurden.
-
+  
+Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti &amp; -Spam-Schutz vor Schadsoftware](anti-spam-and-anti-malware-protection.md)erkannt wurden.
+  
 ![ATP-Dateitypen-Berichtsdaten für einen Tag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## <a name="atp-message-disposition-report"></a>ATP-Bericht zum Nachrichtenstatus
@@ -158,7 +158,7 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
 
 Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
-- [Berechtigungen im Office 365 Security &amp; Compliance-Center](permissions-in-the-security-and-compliance-center.md)
+- [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -168,8 +168,8 @@ Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Ric
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
+[Berichte und Einblicke im &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+  
 [Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center](create-a-schedule-for-a-report.md)
 
 [Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)

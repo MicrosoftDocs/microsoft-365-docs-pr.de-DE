@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Erfahren Sie, wie Sie ein Benutzerkonto löschen. Entscheiden Sie, was mit den E-Mails und OneDrive-Inhalten des Benutzers geschehen soll, und ob Sie die Produktlizenz behalten oder die Zahlung für die Lizenz beenden wollen.
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608126"
+ms.locfileid: "43617248"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
 ||
 |:-----|
-|**Suchen Sie nach einer Möglichkeit, Ihr *eigenes* Office 365-Benutzerkonto, das Sie bei der Arbeit oder in der Schule/Uni verwenden, zu löschen? Bitten Sie den technischen Support Ihres Arbeitgebers oder Ihrer Bildungseinrichtung, diese Schritte für Sie ausführen.**|
+|**Suchen Sie, wie Sie Ihr *eigenes* Microsoft 365-Benutzerkonto löschen, das Sie bei der Arbeit oder in der Schule verwenden? Wenden Sie sich an den technischen Support bei ihrer Arbeit oder Universität, um diese Schritte für Sie durchführen zu können.**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Wissenswertes über das Löschen von Benutzern
 
-- Nur Personen, die über Berechtigungen eines [globalen Office 365-Administrators](about-admin-roles.md) oder über Benutzerverwaltungsberechtigungen für das Unternehmen oder die Schule/Uni verfügen, können Benutzerkonten löschen. 
+- Benutzerkonten können nur von Benutzern gelöscht werden, die über [Microsoft 365 globale Administrator](about-admin-roles.md) -oder Benutzer Verwaltungsberechtigungen für das Unternehmen oder die Schule verfügen. 
     
 - Sie haben 30 Tage Zeit, das Konto [wiederherzustellen](restore-user.md), bevor die Daten des Benutzers endgültig gelöscht werden. 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608126"
     
 - Wenn Sie die E-Mails des Benutzers behalten möchten, müssen Sie diese an einen anderen Speicherort verschieben, **BEVOR** Sie das Konto löschen. Wenn Sie das Konto bereits gelöscht haben und dies weniger als 30 Tage her ist, können Sie das Konto wiederherstellen und dann die E-Mail-Daten verschieben. Anschließend löschen Sie das Konto. Weitere Informationen finden Sie unter [Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md).
     
-- Wenn Sie über ein Enterprise-Abonnement verfügen, z. B. Office 365 Enterprise E3, können Sie die Postfachdaten eines gelöschten Office 365-Benutzerkonto beibehalten, indem Sie es in ein *inaktives Postfach* umwandeln. Weitere Informationen dazu finden Sie unter [Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- Wenn Sie ein Enterprise-Abonnement wie Office 365 Enterprise E3 haben, können Sie die Postfachdaten eines gelöschten Benutzerkontos beibehalten, indem Sie es in ein *inaktives Postfach*umwandeln. Weitere Informationen dazu finden Sie unter [Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Globaler Administrator: Löschen eines Benutzers, Beenden der Zahlung für seine Lizenz und Auswählen, was mit seinen E-Mails und OneDrive-Inhalten geschehen soll.
@@ -62,7 +62,7 @@ Bevor Sie beginnen, sollten Sie sich überlegen, was mit den E-Mails und OneDriv
 |:-----|:-----|
 |Produktlizenzen  <br/> |Sie können die Lizenz des Benutzers entfernen und aus ihren Abonnements löschen, damit keine weiteren Kosten dafür anfallen. Wenn Sie diese Option auswählen, wird die Lizenz automatisch aus ihren Abonnements entfernt.  <br/><br/> **Sie können die Lizenz nicht entfernen**, wenn Sie sie über einen Partner oder eine Volumenlizenzierung erworben haben. Wenn Sie für einen jährlichen Plan bezahlen oder sich in der Mitte eines Abrechnungszyklus befinden, können Sie die Lizenz nicht aus Ihrem Abonnement entfernen, bis ihre vertraglichen Verpflichtungen beendet sind.  <br/> |
 |OneDrive-Inhalt  <br/> |Wenn der Benutzer seine Dateien auf OneDrive gespeichert hat, können Sie einem anderen Benutzer Zugriff auf diese Dateien gewähren.  <br/><br/> Sie müssen die Dateien, die Sie behalten möchten, innerhalb des für OneDrive-Dateien festgelegten Aufbewahrungszeitraums, der verschieben. **Die Standardeinstellung für den Aufbewahrungszeitraum ist 30 Tage.** Wenn Sie die Dateien nach dem Löschen des Benutzers nicht innerhalb des Aufbewahrungszeitraums verschieben, wird der OneDrive-Inhalt endgültig gelöscht. Wenn Sie den Aufbewahrungszeitraum für die OneDrive-Dateien gelöschter Konten erhöhen möchten, lesen Sie [Festlegen der OneDrive-Aufbewahrung für gelöschte Benutzer](https://support.office.com/article/fa1641ea-9f03-4f34-a826-dbd8697e76fe.aspx).  <br/><br/> **Wichtig!** Wenn der gelöschte Benutzer seinen privaten PC zum Herunterladen von Dateien aus SharePoint und OneDrive verwendet hat, haben Sie keine Möglichkeit, die auf diesem Computer gespeicherten Dateien zu bereinigen. Er hat weiterhin Zugriff auf alle Dateien, die mit OneDrive synchronisiert wurden.           |
-|E-Mail  <br/> | Wenn Sie einem anderen Benutzer den Zugriff auf die E-Mails des gelöschten Benutzers gewähren, wird das Postfach des gelöschten Benutzers in ein freigegebenes Postfach konvertiert. Der neue Postfachbesitzer kann dann auf das Postfach zugreifen und es auf neue E-Mails überwachen. Sie haben zudem folgende Möglichkeiten:  <br/>  <br/>Ändern des Anzeigenamens – Es empfiehlt sich, den Anzeigenamen so zu ändern, dass das freigegebene Postfach in der Liste "Aktive Benutzer" leicht zu identifizieren ist.  <br/>  Aktivieren von automatischen Antworten – Wir haben bereits eine höfliche automatische Antwort für Sie geschrieben. Sie können unterschiedliche automatische Antworten an Personen innerhalb und außerhalb Ihrer Organisation senden.  <br/> <br/> Bereinigen von Aliasnamen – Aliasnamen sind zusätzliche E-Mail-Adressen für Benutzer. In einigen Organisationen werden sie nicht verwendet. Wenn Sie also keine Aliasnamen verwenden, müssen Sie nichts weiter tun. Wenn der Benutzer über Aliasnamen verfügt, empfiehlt es sich, diese zu entfernen, damit die entsprechenden E-Mail-Adressen wieder verfügbar sind. Andernfalls können Sie diese E-Mail-Adressen erst wiederverwenden, wenn der Aufbewahrungszeitraum für die gelöschte Postfächer abgelaufen ist. Standardmäßig kann ein gelöschtes Postfach 30 Tage lang wiederhergestellt werden. Weitere Informationen finden Sie unter [Exchange Online-Benutzerpostfächer löschen oder wiederherstellen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
+|E-Mail  <br/> | Wenn Sie einem anderen Benutzer den Zugriff auf die E-Mails des gelöschten Benutzers gewähren, wird das Postfach des gelöschten Benutzers in ein freigegebenes Postfach konvertiert. Der neue Postfachbesitzer kann dann auf das Postfach zugreifen und es auf neue E-Mails überwachen. Sie haben zudem folgende Möglichkeiten:  <br/>  <br/>Ändern des Anzeigenamens – Es empfiehlt sich, den Anzeigenamen so zu ändern, dass das freigegebene Postfach in der Liste "Aktive Benutzer" leicht zu identifizieren ist.  <br/>  Aktivieren von automatischen Antworten – Wir haben bereits eine höfliche automatische Antwort für Sie geschrieben. Sie können unterschiedliche automatische Antworten an Personen innerhalb und außerhalb Ihrer Organisation senden.  <br/> <br/> Bereinigen von Aliasnamen – Aliasnamen sind zusätzliche E-Mail-Adressen für Benutzer. In einigen Organisationen werden sie nicht verwendet. Wenn Sie also keine Aliasnamen verwenden, müssen Sie nichts weiter tun. Wenn der Benutzer über Aliasnamen verfügt, empfiehlt es sich, diese zu entfernen, damit die entsprechenden E-Mail-Adressen wieder verfügbar sind. Andernfalls können Sie diese e-Mail-Adressen erst wieder verwenden, wenn der Aufbewahrungszeitraum für gelöschte Postfächer abgelaufen ist. Standardmäßig kann ein gelöschtes Postfach 30 Tage lang wiederhergestellt werden. Weitere Informationen finden Sie unter [Exchange Online-Benutzerpostfächer löschen oder wiederherstellen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory Domain Services  <br/> |Wenn Ihr Unternehmen **Active Directory** verwendet und mit Azure AD synchronisiert, müssen Sie das Benutzerkonto aus Active Directory löschen. Dies ist nicht über Office 365 möglich. Entsprechende Anweisungen finden Sie unter [Löschen eines Benutzerkontos](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
 ### <a name="get-started"></a>Erste Schritte
@@ -176,13 +176,13 @@ Nachfolgend sind die beim Löschen eines Benutzers am häufigsten auftretenden P
   
 - **Sie erhalten eine Fehlermeldung mit den Zeilen "Benutzer kann nicht gelöscht werden. Versuchen Sie es später erneut."** Überprüfen Sie sorgfältig, ob für das Konto die E-Mail-Weiterleitung eingerichtet wurde, oder ob es in ein freigegebenes Postfach konvertiert wurde. Beide Fällen verursachen diesen Fehler. Wenn für das Konto die E-Mail-Weiterleitung eingerichtet wurde oder es in ein freigegebenes Postfach konvertiert wurde, löschen Sie es nicht.
 
-- **Sie verfügen nicht über die entsprechenden Berechtigungen zum Löschen eines Benutzer**s. Nur Personen, die [globale Office 365-Administratoren oder Benutzerverwaltungsadministrator](about-admin-roles.md) sind, können Benutzer löschen. Normalerweise ist dies der technische Support in Ihrer Schule oder in Ihrem Unternehmen.
+- **Sie verfügen nicht über die entsprechenden Berechtigungen zum Löschen eines Benutzer**s. Nur Personen, die [Microsoft 365 globale Administratoren oder Benutzer Verwaltungs Administratoren](about-admin-roles.md) sind, können Benutzer löschen. Normalerweise ist dies der technische Support in Ihrer Schule oder in Ihrem Unternehmen.
 
 - **Sie haben den Benutzer gelöscht, aber dessen Name wird weiterhin in Ihrem globalen Adressbuch angezeigt**. Dies ist der Fall, wenn ein Unternehmen Active Directory verwendet. Sie müssen das Benutzerkonto aus Active Directory löschen. Entsprechende Anweisungen finden Sie im TechNet-Artikel [Löschen eines Benutzerkontos](https://go.microsoft.com/fwlink/p/?linkid=841808).
 
 ||
 |:-----|
-|**Möchten Sie Office 365 von Ihrem Computer löschen? Wechseln Sie zu [Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md).**|
+|**Möchten Sie Microsoft 365 von Ihrem Computer löschen? Wechseln [Sie zu kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## <a name="related-articles"></a>Verwandte Artikel
 

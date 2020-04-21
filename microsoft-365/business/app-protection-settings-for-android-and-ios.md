@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Hier erfahren Sie, wie Sie eine APP-Verwaltungsrichtlinie erstellen, bearbeiten oder löschen und Arbeitsdateien auf Android-oder IOS-Geräten schützen.
-ms.openlocfilehash: 0adb103ac3bef72e340c1f5daf54a6b8a184d85c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894278"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627432"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
@@ -37,7 +37,7 @@ ms.locfileid: "42894278"
 
 ## <a name="create-an-app-management-policy"></a>Erstellen einer App-Verwaltungsrichtlinie
 
-1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Richtlinien** \> **Hinzufügen**aus.
   
@@ -75,7 +75,7 @@ ms.locfileid: "42894278"
 
 Die folgenden Tabellen enthalten ausführliche Informationen zu den verfügbaren Einstellungen zum Schutz von Arbeitsdateien auf Geräten und den Einstellungen, die Steuern, wie Benutzer auf Ihre mobilen Geräte auf Office-Dateien zugreifen.
   
- Weitere Informationen finden Sie unter [Zuordnung von Microsoft 365 Business-Schutzfunktionen zu Intune-Einstellungen](map-protection-features-to-intune-settings.md). 
+ Weitere Informationen finden Sie unter [How do Protection Features in Microsoft 365 Business Premium zuordnen zu InTune-Einstellungen](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Einstellungen zum Schutz von Arbeitsdateien
 

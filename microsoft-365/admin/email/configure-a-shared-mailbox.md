@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen oder die Mitglieder.
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212021"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629047"
 ---
 # <a name="configure-a-shared-mailbox"></a>Konfigurieren eines freigegebenen Postfachs
 
@@ -122,7 +122,7 @@ Nachrichten, die aus dem freigegebenen Postfach gesendet wurden, werden standard
 Wenn Sie zulassen möchten, dass alle Benutzer die gesendeten e-Mails anzeigen können, bearbeiten Sie im Admin Center die Einstellungen für freigegebene Postfächer, und wählen Sie **Gesendete Elemente** \> **Bearbeiten**aus.
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>Auswählen der apps, die ein freigegebenes Postfach für den Zugriff auf Office 365 e-Mail verwenden kann
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Auswählen der apps, die ein freigegebenes Postfach für den Zugriff auf Microsoft e-Mail verwenden kann
 
 ::: moniker range="o365-worldwide"
 

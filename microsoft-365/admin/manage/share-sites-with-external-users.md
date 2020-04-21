@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Hier erfahren Sie, wie Sie Websites und Dateien für Personen außerhalb der Organisation freigeben. '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610572"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628028"
 ---
 # <a name="share-sites-and-files-externally"></a>Externe Freigabe von Websites und Dateien
 
@@ -54,7 +54,7 @@ Die Beantwortung dieser Fragen erleichtert die strategische Planung der Freigabe
 |Freigeben eines Dokuments, aber keine Authentifizierung erforderlich.  <br/> |Sie müssen einen Link zu einem Dokument ohne sensible oder vertrauliche Inhalte für Personen außerhalb Ihrer Organisation freigeben, damit sie es anzeigen oder mit Feedback aktualisieren können. Diese Personen benötigen keinen Zugriff auf Inhalte auf der Website.  <br/> |
    
 > [!IMPORTANT]
-> Wenn Sie die externe Freigabe deaktivieren, haben Personen außerhalb der Organisation, die derzeit Zugriff haben, keinen Zugriff mehr. Wenn Sie später die externe Freigabe wieder aktivieren, wird der Zugriff für diese Personen wiederhergestellt. Wenn Sie verhindern möchten, dass ein Benutzer auf freigegebene Inhalte zugreift, [Entfernen Sie ihn aus der Gruppe Office 365](/office365/admin/create-groups/add-or-remove-members-from-groups), entfernen Sie die Berechtigungen von der Website, oder [Beenden Sie die Freigabe der Datei oder des Ordners mit diesen](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> Wenn Sie die externe Freigabe deaktivieren, haben Personen außerhalb der Organisation, die derzeit Zugriff haben, keinen Zugriff mehr. Wenn Sie später die externe Freigabe wieder aktivieren, wird der Zugriff für diese Personen wiederhergestellt. Wenn Sie verhindern möchten, dass ein Benutzer auf freigegebene Inhalte zugreift, [Entfernen Sie ihn aus der Microsoft 365-Gruppe](/office365/admin/create-groups/add-or-remove-members-from-groups), entfernen Sie die Berechtigungen von der Website, oder [Beenden Sie die Freigabe der Datei oder des Ordners mit diesen](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Aktivieren der externen Freigabe auf Organisationsebene
 

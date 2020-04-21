@@ -1,5 +1,5 @@
 ---
-title: Erwerben eines Domänennamens in Office 365
+title: Kaufen eines Domänennamens
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Erfahren Sie, wie Sie einen Domänennamen in Office 365 kaufen.
+description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365 kaufen.
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211146"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628590"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>Erwerben eines Domänennamens in Office 365
+# <a name="buy-a-domain-name"></a>Kaufen eines Domänennamens
 
  *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
@@ -93,17 +93,17 @@ Fordern Sie die Übertragung bei der Registrierungsstelle an, auf die Sie Ihre D
 
 Wenn Sie noch über keine eigene Domäne verfügen, können Sie bei einer Domänenregistrierungsstelle, einem Domänenwiederverkäufer oder sogar Ihrem aktuellen Internetanbieter problemlos online eine Domäne erwerben. Sie erhalten bei Ihrer Anmeldung bei Office 365, betrieben von 21Vianet einen Domänennamen wie contoso.partner.onmschina.cn. Vielleicht möchten Sie aber lieber einen benutzerdefinierten Domänennamen wie fourthcoffee.com verwenden.
   
-Damit Sie eine Domäne in Office 365 einrichten können, müssen Sie bereits eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
+Zum Einrichten einer Domäne in Microsoft 365 müssen Sie eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
   
 > [!CAUTION]
-> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter lassen es nicht zu, dass alle für Office 365 erforderlichen DNS-Einträge erstellt werden. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter erlauben nicht das Erstellen aller DNS-Einträge, die für Microsoft 365 erforderlich sind. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Nachdem Sie Ihre Domäne bei einer Domänenregistrierungsstelle registriert haben, melden Sie sich bei Office 365 als Administrator an, und richten Sie Ihre Domäne so ein, dass Sie sie zusammen mit Ihrer E-Mail-Adresse und anderen Diensten nutzen können.
+Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert haben, melden Sie sich als Administrator bei Microsoft 365 an, und richten Sie Ihre Domäne so ein, dass Sie Sie mit Ihrer e-Mail-Adresse und anderen Diensten verwenden können..
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> Die SharePoint Online Informationen zur öffentlichen Website in diesem Artikel gelten nur, wenn Ihre Organisation Microsoft 365 vor dem 9. März 2015 erworben hat. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>Domänenregistrierungsstellen, die alle für Office 365 erforderlichen DNS-Einträge unterstützen
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänenregistrierungsstellen, die alle für Microsoft 365 erforderlichen DNS-Einträge unterstützen
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ Nachdem Sie Ihre Domäne bei einer Domänenregistrierungsstelle registriert habe
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Hinzufügen einer Domäne zu Office 365](../setup/add-domain.md)
+[Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md)
 
 [Häufig gestellte Fragen zu Domänen](../setup/domains-faq.md)
 
-[Hilfe zu Office 365-Domänen erhalten](get-help-with-domains.md)
+[Abrufen von Hilfe zu Domänen](get-help-with-domains.md)
 
-[Aktualisieren von DNS-Einträgen, damit Ihre Website mit Ihrem aktuellen Hosting-Anbieter bleibt](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[Aktualisieren von DNS-Einträgen, damit Ihre Website mit Ihrem aktuellen Hosting-Anbieter bleibt](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

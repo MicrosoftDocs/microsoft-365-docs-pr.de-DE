@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Erfahren Sie mehr über Domänen in Office 365, indem Sie Antworten auf Ihre Fragen in FAQ finden.
+description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540867"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627594"
 ---
 # <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
 
@@ -51,7 +51,7 @@ E-Mail wird an MX-Server (Mail Exchange) mit der niedrigsten Einstellungsnummer 
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Wie kann ich SPF-Einträge für meine Domäne überprüfen?
 
-Wichtig ist, dass Sie **nur einen TXT-Eintrag für SPF** haben bzw. erstellen. Wenn Sie bereits über einen SPF-Eintrag verfügen, müssen Sie die neuen Office 365-Werte daran anfügen, statt einen neuen Eintrag zu erstellen. Nachdem Sie Ihren SPF-Eintrag für Office 365-E-Mail hinzugefügt oder aktualisiert haben, müssen Sie mit einem dieser Tools prüfen, ob die Syntax ordnungsgemäß ist: 
+Es ist wichtig, dass Sie **nur einen TXT-Eintrag für SPF**haben oder erstellen. Wenn Sie bereits einen SPF-Eintrag haben, sollten Sie die neuen Office 365 Werte an ihn anfügen, anstatt einen neuen zu erstellen. Nachdem Sie den SPF-Eintrag für Microsoft e-Mail hinzugefügt oder aktualisiert haben, sollten Sie überprüfen, ob die Syntax für eines dieser Tools richtig ist: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ Wichtig ist, dass Sie **nur einen TXT-Eintrag für SPF** haben bzw. erstellen. W
 
 Es gibt zwei Optionen für die DNS-Verwaltung in Office 365:
   
-1. Sie ändern Ihre Namenservereinträge, woraufhin Office 365 sich um alle dienstspezifischen Einträge kümmert, z. B. das Einrichten Ihres MX-Eintrags für E-Mail. **(Empfohlen)**
+1. Sie ändern ihre Namenservereinträge (NS), und dann kümmert sich Microsoft um alle dienstspezifischen Einträge, wie das Einrichten Ihres MX-Eintrags für e-Mail. **Empfohlen**
     
 2. Sie fügen DNS-Einträge für E-Mail und andere Office 365-Dienste bei Ihrem DNS-Host selbst hinzu. **(Nur für Experten)**
     
@@ -87,7 +87,7 @@ Es gibt zwei Optionen für die DNS-Verwaltung in Office 365:
  
 #### <a name="disadvantages"></a>Nachteile
 Sie müssen die DNS-Einträge für Office 365-Dienste selbst einrichten (sofern Sie nicht über eine GoDaddy-Domäne verfügen). 
--  Wenn Ihr aktueller DNS-Host nicht alle erforderlichen Eintragstypen für Office 365 unterstützt, sind einige Office 365-Features nicht verfügbar, und Sie müssen möglicherweise zu einem anderen DNS-Host wechseln. 
+-  Wenn Ihr aktueller DNS-Host nicht alle erforderlichen Datensatztypen für Microsoft 365 unterstützt, sind einige Funktionen nicht verfügbar, und Sie müssen möglicherweise zu einem anderen DNS-Host wechseln. 
 - Wenn Office 365 die Anforderungen für DNS-Einträge ändert oder neue Dienste hinzufügt, müssen Sie die Aktualisierungen bei Ihrem DNS-Host selbst durchführen. 
    
 ## <a name="what-is-a-domain-name"></a>Was ist ein Domänenname?
@@ -333,9 +333,9 @@ Wenn Sie Office 365 mehrere Domänen hinzufügen, können Sie beliebige dieser D
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Warum habe ich eine Domäne des Typs "onmicrosoft.com"?
 
-Office 365 erstellt eine Domäne für Sie wie _contoso.onmicrosoft.com_, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie _Alan\@contoso.onmicrosoft.com_. 
+Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.com*. 
   
- __Wenn Sie möchten, dass Ihre e-Mails wie _Alan\@contoso.com_aussehen:__ [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ **Wenn Sie möchten, dass Ihre e-Mails wie *Alan\@contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn Sie beispielsweise "fourthcoffee.onmicrosoft.com" als ursprüngliche Domäne ausgewählt haben, können Sie sie nicht in "fabrikam.onmicrosoft.com" ändern. Um eine andere "onmicrosoft.com"-Domäne verwenden zu können, müssen Sie ein neues Abonnement bei Office 365 einrichten. 
     
@@ -348,12 +348,11 @@ Sie können die ursprüngliche Domäne "onmicrosoft.com" auch nach Hinzufügen I
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Warum habe ich eine "onmicrosoft.de"-Domäne?
 
-Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie "Alan@contoso.onmicrosoft.de". 
+Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.de*. 
   
-Wenn Sie Ihre e-Mails wie "Alan@contoso.de" aussehen lassen möchten: [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ **Wenn Sie möchten, dass Ihre e-Mails wie *Alan@contoso.de*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn beispielsweise die anfängliche Domäne, die Sie ausgewählt haben, fourthcoffee.onmicrosoft.de war, können Sie Sie nicht in fabrikam.onmicrosoft.de ändern. Um eine andere onmicrosoft.de-Domäne verwenden zu können, müssen Sie ein neues Abonnement mit Office 365 starten. 
     
@@ -489,11 +488,11 @@ Sie können, aber es gibt Einschränkungen:
         
     2. Führen Sie die folgenden Tests aus:
         
-    3. Testen Sie lokale Office 365 e-Mail. Senden Sie beispielsweise eine e-Mail an Benutzer B. Diese e-Mail sollte sofort zugestellt werden. In diesem Szenario wird die Nachricht nicht an das Postfach des Benutzers B auf dem ursprünglichen Server weitergeleitet, da Office 365 das Postfach als lokal betrachtet.
+    3. Testen Sie lokale Microsoft-e-Mails. Senden Sie beispielsweise eine e-Mail an Benutzer B. Diese e-Mail sollte sofort zugestellt werden. In diesem Szenario wird die Nachricht nicht an das Postfach des Benutzers B auf dem ursprünglichen Server weitergeleitet, da Office 365 das Postfach als lokal betrachtet.
         
     4. Testen Sie e-Mails an Personen, die sich im anderen e-Mail-System befinden. Senden Sie beispielsweise eine e-Mail an den Benutzer C. Diese e-Mail sollte an das Postfach des Benutzers C auf dem ursprünglichen e-Mail-Server übermittelt werden.
         
-    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem ursprünglichen Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und stellen Sie sicher, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
+    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem Gründungs-Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und vergewissern Sie sich, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
         
 9. Postfachinhalt migrieren
     

@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: Hier erfahren Sie, wie Sie Ihre eigenen DNS-Einträge verwalten oder Ihre DNS-Einträge Office 365 verwalten können.
+description: Hier erfahren Sie, wie Sie Ihre eigenen DNS-Einträge verwalten oder Ihre DNS-Einträge von Microsoft verwalten lassen.
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210356"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628422"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Einrichten Ihrer Domäne (hostspezifische Anweisungen)
 
 Um eine benutzerdefinierte Domäne (contoso.com) mit Office 365 verwenden zu können, müssen Sie Ihre Domäne überprüfen und die DNS-Einträge Ihrer Domäne konfigurieren. 
   
-Sie können DNS-Einträge mithilfe der Verwaltungstools auf Ihrem Domänenhost hinzufügen und verwalten oder Office 365 Steuerung Ihrer Domäneneinträge gewähren und diese für Sie einrichten.
+Sie können DNS-Einträge mithilfe der Verwaltungstools auf Ihrem Domänenhost hinzufügen und verwalten oder Microsoft die Kontrolle über Ihre Domäneneinträge erteilen, und wir werden Sie für Sie einrichten.
   
 Wählen Sie Ihren Domänenhost unten aus, um die genauen Schritte auszuführen. Wenn Sie nicht sicher sind, wer Ihr Host ist, finden Sie weitere Informationen unter [Suchen ihrer Domänen Registrierungs](find-your-domain-registrar.md)Stelle.
   

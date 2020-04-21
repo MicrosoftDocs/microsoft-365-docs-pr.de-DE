@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Ihre lokale Exchange-Umgebung so konfigurieren, dass Spam an die Junk-e-Mail-Ordner der lokalen Benutzer weitergeleitet wird, wenn Sie eigenständige Exchange Online Protection (EoP) in Hybrid Umgebungen verwenden.
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893718"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621282"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen
 
 > [!IMPORTANT]
-> Dieses Thema ist nur für eigenständige EoP-Kunden in Hybrid Umgebungen geeignet. Dieses Thema gilt nicht für Office 365 Kunden mit Exchange Online Postfächern.
+> Dieses Thema ist nur für eigenständige EoP-Kunden in Hybrid Umgebungen geeignet. Dieses Thema gilt nicht für Microsoft 365-Kunden mit Exchange Online Postfächern.
 
-Wenn Sie ein eigenständiger Exchange Online Schutz-Kunde (EoP) in einer Hybridumgebung sind, müssen Sie Ihre lokale Exchange-Organisation so konfigurieren, dass die Spamfilter Urteile von EoP erkannt und übersetzt werden, sodass die Junk-e-Mail-Regel im lokalen Postfach kann Nachrichten in den Junk-e-Mail-Ordner umlegen.
+Wenn Sie ein eigenständiger Exchange Online Schutz-Kunde (EoP) in einer Hybridumgebung sind, müssen Sie Ihre lokale Exchange-Organisation so konfigurieren, dass Sie die Spamfilter Urteile von EoP erkennt und übersetzt, sodass die Junk-e-Mail-Regel im lokalen Postfach Nachrichten in den Junk-e-Mail-Ordner verschieben kann.
 
-Insbesondere müssen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation mit Bedingungen erstellen, die Nachrichten mit den folgenden EoP-Antispam-Kopfzeilen und-Werten und Aktionen zur Festlegung der Spam Konfidenz Stufe suchen ( SCL) dieser Nachrichten an 6:
+Insbesondere müssen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation mit Bedingungen erstellen, die Nachrichten mit einem der folgenden EoP-Antispam-Header und-Werte und Aktionen, die die SCL-Bewertung (Spam Confidence Level) dieser Nachrichten festlegen, auf 6 finden:
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(Nachricht als Spam durch Spamfilterung gekennzeichnet)
 
@@ -139,7 +139,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie den eig
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- Senden Sie in einem externen e-Mail-System **, das ausgehende Nachrichten nicht nach Spam scannt**, einen generischen Test für unangeforderte Massen-e-Mail (GTUBE) an einen betroffenen Empfänger, und vergewissern Sie sich, dass er an den Junk-e-Mail-Ordner gesendet wird. Eine GTUBE-Nachricht ist vergleichbar mit der EICAR-Textdatei (European Institute for Computer Antivirus Research) zum Testen von Schadsoftware-Einstellungen.
+- Senden Sie in einem externen e-Mail-System **, das ausgehende Nachrichten nicht nach Spam scannt**, einen generischen Test für unangeforderte Massen-e-Mail (GTUBE) an einen betroffenen Empfänger, und vergewissern Sie sich, dass er an den Junk-e-Mail-Ordner gesendet wird. Eine GTUBE-Nachricht ähnelt der EICAR-Textdatei (European Institute for Computer Antivirus Research) zum Testen der Schadsoftwareeinstellungen.
 
   Um eine GTUBE-Nachricht zu senden, fügen Sie den folgenden Text in den Textkörper einer e-Mail-Nachricht in einer einzelnen Zeile ohne Leerzeichen oder Zeilenumbrüche ein:
 

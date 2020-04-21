@@ -1,5 +1,5 @@
 ---
-title: Verwalten der Bereitstellung von Office 365-Add-Ins im Admin Center
+title: Verwalten der Bereitstellung von Add-Ins im Admin Center
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212009"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628160"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Office 365-Add-Ins im Microsoft 365 Admin Center
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Add-Ins im Microsoft 365 Admin Center
 
 [] Office-Add-Ins helfen Ihnen beim Personalisieren Ihrer Dokumente und beim Optimieren der Art und Weise, wie Sie im Web auf Informationen zugreifen (lesen Sie [Erste Schritte mit Ihrem Office-Add-In](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Als Administrator können Sie Office-Add-Ins für die Benutzer in Ihrer Organisation bereitstellen. Verwenden Sie dazu das Feature für die zentralisierte Bereitstellung im Microsoft 365 Admin Center.
   
-Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Administratoren, um Add-Ins für Benutzer und Gruppen innerhalb einer Organisation bereitzustellen. Weitere Informationen zum Ermitteln, ob die zentrale Bereitstellung in Ihrer Organisation genutzt werden kann, finden Sie unter [Ermitteln, ob die zentrale Bereitstellung von Add-Ins in Ihrer Office 365-Organisation funktioniert](centralized-deployment-of-add-ins.md).
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Administratoren, um Add-Ins für Benutzer und Gruppen innerhalb einer Organisation bereitzustellen. Weitere Informationen zum ermitteln, ob Ihre Organisation eine zentralisierte Bereitstellung unterstützenkann, finden Sie unter [bestimmen, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](centralized-deployment-of-add-ins.md).
   
 Die zentrale Bereitstellung bietet die folgenden Vorteile:
   
@@ -41,7 +41,7 @@ Die zentrale Bereitstellung bietet die folgenden Vorteile:
 - Add-Ins werden nicht mehr für Benutzer angezeigt, wenn der Administrator das Add-in deaktiviert oder löscht oder wenn der Benutzer aus Azure Active Directory oder aus einer Gruppe entfernt wird, der das Add-in zugewiesen ist.
     
 > [!NOTE]
->  Für Word verwenden Excel und PowerPoint einen [SharePoint-App-Katalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) zum Bereitstellen von Add-Ins für Benutzer in einer lokalen Umgebung ohne Verbindung mit Office 365 und/oder Unterstützung für SharePoint-Add-Ins erforderlich. >  Verwenden Sie für Outlook die Exchange-Systemsteuerung in einer lokalen Umgebung ohne Verbindung zu Office 365. > 
+>  Für Word verwenden Excel und PowerPoint einen [SharePoint-App-Katalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) zum Bereitstellen von Add-Ins für Benutzer in einer lokalen Umgebung ohne Verbindung mit Microsoft 365 und/oder Unterstützung für SharePoint-Add-Ins erforderlich. > für Outlook verwenden Sie die Exchange-Systemsteuerung für die Bereitstellung in einer lokalen Umgebung ohne Verbindung mit Microsoft 365. > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Empfohlene Vorgehensweise für die Bereitstellung von Office-Add-ins
 
@@ -57,10 +57,10 @@ Je nach Größe der Zielgruppe möchten Sie ggf. Bereitstellungsschritte hinzuf�
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Bereitstellen eines Office-Add-Ins mithilfe des Admin Centers
 
-Lesen Sie zunächst [Ermitteln, ob die zentrale Bereitstellung von Add-Ins in Ihrer Office 365-Organisation funktioniert](centralized-deployment-of-add-ins.md).
+Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](centralized-deployment-of-add-ins.md).
 
   
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite mit den **Einstellungen** > **-Add-ins** .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** .
     
 2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus. Wählen Sie auf der Seite Übersicht die Option **weiter**aus.
     
@@ -75,13 +75,13 @@ Lesen Sie zunächst [Ermitteln, ob die zentrale Bereitstellung von Add-Ins in Ih
 7. Wenn das Add-in bereitgestellt wurde, wird ein grünes Häkchen angezeigt. Sie können den Anweisungen auf der Seite folgen, um zu testen, ob das Add-in erfolgreich bereitgestellt wurde.
 
 > [!NOTE]
-> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 24 Stunden in Anspruch nehmen, um auf den Benutzer-menübändern angezeigt zu werden.
+> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 12 Stunden dauern, bis Sie auf den Benutzermenü Bändern angezeigt werden.
     
 8. Wenn Sie fertig sind, wählen Sie **weiter**aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzer bereitzustellen.
 
 
 
-Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die angezeigten Anweisungen, um die Bereitstellung des Add-ins effektiv anzukündigen. <br/>Sie sehen nun Ihr Add-In sowie andere Apps in Office 365.
+Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die angezeigten Anweisungen, um die Bereitstellung des Add-ins effektiv anzukündigen. <br/>Das Add-in wird nun zusammen mit anderen apps in Microsoft 365 angezeigt.
   
 Es empfiehlt sich, die Benutzer und Gruppen zu informieren, für die Sie das Add-In bereitstellen, damit diese wissen, dass es verfügbar ist. Erwägen Sie, im Rahmen eine E-Mail zu senden, das beschreibt, wann und wie das Add-In verwendet werden sollten und die erläutert, wie das Add-In ihnen helfen kann, ihre Arbeit besser zu erledigen. Einschließen oder verknüpfen Sie relevante Hilfeinhalte oder FAQs, die hilfreich sein können, wenn Benutzer Probleme mit dem Add-in haben.
   
@@ -101,19 +101,12 @@ Die Option, die für Ihre Organisation richtig ist, hängt von Ihrer Konfigurati
   
 ### <a name="add-in-states"></a>Add-In-Statusangaben
 
-Administratoren können die Add-Ins, die Sie für alle Benutzer aus dem Microsoft 365 Admin Center bereitstellen, aktivieren oder deaktivieren.
-
-1.    Wechseln Sie im Admin Center zur Seite **Einstellungen** > **-Add-ins** . 
-2.    Wählen Sie das bereitgestellte Add-in aus. 
-3.    Klicken Sie auf die **Status** -Umschaltfläche, um das Add-in **ein** -oder **auszuschalten.** 
-4.    Speichern Sie die Änderungen.  
-
-Einer von drei Add-in-Status steht ebenfalls zur Verfügung.
- 
+Ein Add-in kann **entweder im Status ein oder** **aus** sein.
+  
 |**Status**|**Wie der Status eintritt**|**Auswirkung**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Der Administrator hat das Add-in hochgeladen und Benutzern oder Gruppen zugewiesen.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen sehen es im jeweiligen Client.  <br/> |
-|**Deaktiviert**  <br/> |Der Administrator hat das Add-In deaktiviert.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr auf das Add-In zugreifen.  <br/> Wenn der Add-in-Zustand in " **aktiv**" geändert wird, können die Benutzer und Gruppen erneut darauf zugreifen.  <br/> |
+|**Deaktiviert**  <br/> |Der Administrator hat das Add-In deaktiviert.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr auf das Add-In zugreifen.  <br/> Wenn der Zustand des Add-Ins in "Aktiv" geändert wird, können die Benutzer und Gruppen wieder darauf zugreifen.  <br/> |
 |**Gelöscht**  <br/> |Der Administrator hat das Add-In gelöscht.  <br/> |Die dem Add-In zugewiesenen Benutzer und Gruppen können nicht mehr darauf zugreifen.  <br/> |
    
 Sie sollten ein Add-in in einem Fall löschen, wenn es von keinem mehr verwendet wird. Das Deaktivieren eines Add-Ins ist möglicherweise sinnvoll, wenn ein Add-in nur zu bestimmten Jahreszeiten verwendet wird.
@@ -182,9 +175,9 @@ Dadurch wird verhindert, dass alle Benutzer die folgenden Add-Ins aus dem Speich
     
 - Übernahmen, die in **AppSource** beginnen
     
-- Add-Ins in Office 365
+- Add-Ins in Microsoft 365
     
-Ein Benutzer, der versucht, auf den Store zuzugreifen, wird die folgende Meldung angezeigt: **Sorry, Office 365 wurde so konfiguriert, dass die einzelne Akquisition von Office Store-Add-Ins verhindert wird.**
+Ein Benutzer, der versucht, auf den Store zuzugreifen, wird die folgende Meldung angezeigt: **Sorry, Microsoft 365 wurde so konfiguriert, dass die einzelne Akquisition von Office Store-Add-Ins verhindert wird.**
   
 Unterstützung für das Deaktivieren des Office Store ist in den folgenden Versionen verfügbar:
   
@@ -223,7 +216,7 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
 |Office 2016 für Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 für Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 für Mac  <br/> |16.11.18020200  <br/> |
-|Office für das Web  <br/> |–  <br/> |
+|Office für das Web  <br/> |Nicht zutreffend  <br/> |
    
  **Für Outlook**: 
   
@@ -235,13 +228,13 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
 |Office 2016 für Mac  <br/> |16.0.9318.1000  <br/> |
 |Outlook Mobile für IOS  <br/> |2.75.0  <br/> |
 |Outlook Mobile für Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |–  <br/> |
+|Outlook.com  <br/> |Nicht zutreffend  <br/> |
    
  **Office 2013 Anforderungen**
   
 Word-, Excel-und PowerPoint 2013 für Windows unterstützen dieselben geringfügigen Prüfungen, wenn Active Directory Authentifizierungsbibliothek (Adal) aktiviert ist. Es gibt zwei Optionen für die Compliance, wie weiter erläutert.
   
-- **Aktivieren Sie Adal**. In diesem Artikel wird erläutert, wie Sie Adal für Office 2013 aktivieren: [verwenden Office 365 modernen Authentifizierung mit Office-Clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um Adal zu aktivieren, wie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](../security-and-compliance/enable-modern-authentication.md)erläutert.<br/>Darüber hinaus müssen Sie die folgenden April-Updates für Office 2013 installieren:
+- **Aktivieren Sie Adal**. In diesem Artikel wird erläutert, wie Sie Adal für Office 2013 aktivieren: [Verwenden der modernen Authentifizierung von Microsoft 365 mit Office-Clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um Adal zu aktivieren, wie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](../security-and-compliance/enable-modern-authentication.md)erläutert.<br/>Darüber hinaus müssen Sie die folgenden April-Updates für Office 2013 installieren:
     
   - [Beschreibung des Sicherheitsupdates für Office 2013:10. April 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

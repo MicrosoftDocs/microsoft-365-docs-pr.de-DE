@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie mit Gästen in einer SharePoint-Website zusammenarbeiten.
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604754"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630737"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
-Wenn Sie mit Gästen in Dokumenten, Daten und Listen zusammenarbeiten müssen, können Sie eine SharePoint-Website verwenden. Moderne SharePoint-Websites sind mit Office 365 Gruppen verbunden, die die Website Mitgliedschaft verwalten und zusätzliche Tools für die Zusammenarbeit wie ein freigegebenes Postfach und einen Kalender bereitstellen können.
+Wenn Sie mit Gästen in Dokumenten, Daten und Listen zusammenarbeiten müssen, können Sie eine SharePoint-Website verwenden. Moderne SharePoint-Websites sind mit Microsoft 365-Gruppen verbunden und können die Website Mitgliedschaft verwalten und zusätzliche Tools für die Zusammenarbeit bereitstellen, beispielsweise ein freigegebenes Postfach und einen Kalender.
 
 In diesem Artikel werden die Microsoft 365-Konfigurationsschritte durchlaufen, die erforderlich sind, um eine SharePoint-Website für die Zusammenarbeit mit Gästen einzurichten.
 
@@ -48,17 +48,17 @@ So legen Sie Einstellungen für die Organisationsbeziehung fest
 
 Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammenarbeit** . Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert werden.
 
-## <a name="office-365-groups-guest-settings"></a>Gast Einstellungen für Office 365 Gruppen
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 Gruppen-Gast Einstellungen
 
-Moderne SharePoint-Websites verwenden Office 365 Gruppen, um den Website Zugriff zu steuern. Die Gast Einstellungen für Office 365 Gruppen müssen aktiviert sein, damit der Gastzugriff auf SharePoint-Websites funktioniert.
+Moderne SharePoint-Websites verwenden Microsoft 365-Gruppen, um den Website Zugriff zu steuern. Die Gast Einstellungen für Microsoft 365-Gruppen müssen aktiviert sein, damit der Gastzugriff auf SharePoint-Websites funktioniert.
 
-![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
+![Screenshot von Microsoft 365-Gruppen-Gast Einstellungen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
+So legen Sie die Gast Einstellungen für Microsoft 365-Gruppen fest
 
 1. Erweitern Sie im Microsoft 365 Admin Center in der linken Navigationsleiste **Einstellungen**.
 2. Klicken Sie auf **Dienste &-Add-ins**.
-3. Klicken Sie in der Liste auf **Office 365 Gruppen**.
+3. Klicken Sie in der Liste auf **Microsoft 365-Gruppen**.
 4. Stellen Sie sicher, dass die Gruppen **Mitglieder außerhalb Ihrer Organisation Zugriff auf Gruppeninhalte** haben und Gruppen **Besitzer Personen außerhalb Ihrer Organisation hinzufügen zulassen** Kontrollkästchen aktiviert sind.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Änderungen speichern**.
 
@@ -113,7 +113,7 @@ So legen Sie Freigabeeinstellungen auf Websiteebene fest
 
 ## <a name="invite-users"></a>Benutzer einladen
 
-Die Einstellungen für die Gast Freigabe sind nun konfiguriert, sodass Sie mit dem Hinzufügen interner Benutzer und Gäste zu Ihrer Website beginnen können. Der Website Zugriff wird über die zugehörige Office 365 Gruppe gesteuert, sodass Benutzer dort hinzugefügt werden.
+Die Einstellungen für die Gast Freigabe sind nun konfiguriert, sodass Sie mit dem Hinzufügen interner Benutzer und Gäste zu Ihrer Website beginnen können. Der Website Zugriff wird über die zugehörige Microsoft 365-Gruppe gesteuert, sodass Benutzer dort hinzugefügt werden.
 
 So laden Sie interne Benutzer zu einer Gruppe ein
 1. Navigieren Sie zu der Website, auf der Sie Benutzer hinzufügen möchten.

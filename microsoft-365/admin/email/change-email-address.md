@@ -23,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 'Ändern Sie Ihre anfängliche e-Mail-Adresse in eine freundliche e-Mail-Adresse wie Tom@fourthcoffee.com. Dazu müssen Sie einen Domänennamen kaufen und Office 365 hinzufügen. '
-ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Ändern Sie Ihre anfängliche e-Mail-Adresse in eine freundliche e-Mail-Adresse wie Tom@fourthcoffee.com. Hierzu müssen Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen. '
+ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212033"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629059"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
@@ -37,7 +37,7 @@ ms.locfileid: "43212033"
   
 ::: moniker range="o365-worldwide"
 
-Ihre anfängliche E-Mail-Adresse in Office 365 schließt ".onmicrosoft.com" ein, wie etwa in "karl@fourthcoffee.onmicrosoft.com". Sie können dies in eine benutzerfreundlichere Adresse ändern, z. B. "karl@fourthcoffee.com". Zunächst benötigen Sie Ihren eigenen Domänennamen, wie z. B. "fourthcoffee.com". Wenn Sie bereits darüber verfügen, ist eine Voraussetzung schon erfüllt. Wenn nicht, informieren Sie sich, wie Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](../get-help-with-domains/buy-a-domain-name.md).
+Ihre anfängliche e-Mail-Adresse in Microsoft 365 enthält onmicrosoft.com wie Tom@fourthcoffee.onmicrosoft.com. Sie können ihn in eine freundlichere Adresse wie Tom@fourthcoffee.com ändern. Sie benötigen Ihren eigenen Domänennamen, wie fourthcoffee.com zuerst. Wenn Sie bereits einen haben, Great! Wenn dies nicht der Fall ist, können Sie erfahren, wie Sie [eine von einer Domänenregistrierungsstelle kaufen](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Die erste e-Mail-Adresse in Office 365, die von 21Vianet betrieben wird, umfasst
 
 ::: moniker-end
 
-Wenn Sie das E-Mail-System Ihrer Domäne auf Office 365 ändern, indem Sie während des Setups den MX-Eintrag der Domäne aktualisieren, gelangen ALLE an die Domäne gesendeten E-Mails zu Office 365. Stellen Sie sicher, dass Sie Benutzer hinzugefügt und Postfächer für alle Personen in Office 365 erstellt haben, die in Ihrer Domäne über E-Mails verfügen, BEVOR Sie den MX-Eintrag ändern.Sie möchten E-Mails nicht für alle Personen in Ihrer Domäne nach Office 365 verschieben? Stattdessen können Sie [ein Pilotprojekt mit Office 365 und nur wenigen E-Mail-Adressen in die Wege leiten](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Wenn Sie die e-Mail-Adresse Ihrer Domäne in Microsoft 365 ändern, indem Sie den MX-Eintrag Ihrer Domäne während des Setups aktualisieren, werden alle e-Mails, die an diese Domäne gesendet werden, mit Microsoft 365 gestartet. Stellen Sie sicher, dass Sie Benutzer und erstellte Postfächer in Microsoft 365 für alle Benutzer hinzugefügt haben, die e-Mails in Ihrer Domäne haben, bevor Sie den MX-Eintrag ändern. Sie möchten keine e-Mails für alle Benutzer Ihrer Domäne nach Microsoft 365 bewegen? Sie können [stattdessen ein Pilotprojekt von Microsoft 365 mit nur wenigen e-Mail-Adressen](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)ausführen.
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändern Ihrer e-Mail-Adresse zur Verwendung Ihrer benutzerdefinierten Domäne mithilfe des Microsoft 365 Admin Center
 
@@ -83,12 +83,12 @@ Sie müssen über ein globales Administratorkonto verfügen, um diese Schritte a
     
 4. Befolgen Sie die angezeigten Schritte, um zu bestätigen, dass Sie die Domäne besitzen, und Ihre E-Mail-Adresse zu ändern.
     
-Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in Office 365 geführt.
+Sie werden geführt, um alles ordnungsgemäß mit Ihrer Domäne in Microsoft 365 eingerichtet zu erhalten.
 
 > [!NOTE]
-> Wenn Sie keine Exchange-Lizenz verwenden, können Sie die Domäne nicht zum Senden oder empfangen von e-Mails vom Office 365 Mandanten verwenden.
+> Wenn Sie keine Exchange-Lizenz verwenden, können Sie die Domäne nicht zum Senden oder empfangen von e-Mails vom Microsoft 365-Mandanten verwenden.
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erwerben einer benutzerdefinierten Domäne über Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Kaufen einer benutzerdefinierten Domäne mithilfe von Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
  

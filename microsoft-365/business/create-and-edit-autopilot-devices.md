@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Hier erfahren Sie, wie Sie Geräte mithilfe von Autopilot in Microsoft 365 Business hochladen. Sie können einem Gerät oder einer Gruppe von Geräten ein Profil zuweisen.
-ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Hier erfahren Sie, wie Sie Geräte mithilfe von Autopilot in Microsoft 365 Business Premium hochladen. Sie können einem Gerät oder einer Gruppe von Geräten ein Profil zuweisen.
+ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065978"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627392"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Erstellen und Bearbeiten von AutoPilot-Geräten
 
@@ -44,9 +44,9 @@ Geräte müssen diese Anforderungen erfüllen:
     
 - Neue Geräte, die die Out-of-Box-Erfahrung von Windows noch nicht durchlaufen haben
 
-1. Wählen Sie im Microsoft 365 Business Admin Center die Option **Geräte** \> **Autopilot**aus.
+1. Wählen Sie im Microsoft 365 Admin Center die Option **Geräte** \> **Autopilot**aus.
   
-2. Klicken Sie auf der Seite **Autopilot** auf **** der Register \> Karte Geräte auf **Geräte hinzufügen**.
+2. Klicken Sie auf der Seite **Autopilot** auf **Devices** der Register \> Karte Geräte auf **Geräte hinzufügen**.
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   

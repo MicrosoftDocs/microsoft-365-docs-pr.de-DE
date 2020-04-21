@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen für Office 365 mit Windows-basiertem DNS
+title: Erstellen von DNS-Einträgen für Microsoft mit Windows-basiertem DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste auf dem Windows-basierten DNS für Office 365 einrichten.
-ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Windows-basiertem DNS für Microsoft einrichten.
+ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210564"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631369"
 ---
-# <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Office 365 mit Windows-basiertem DNS
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mit Windows-basiertem DNS
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
    
 Wenn Sie Ihre eigenen DNS-Einträge mit Windows-basiertem DNS hosten, führen Sie die in diesem Artikel aufgeführten Schritte aus, um die Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
-Um zu beginnen, müssen Sie [Ihre DNS-Einträge in Windows-basiertem DNS Suchen](#find-your-dns-records-in-windows-based-dns) , damit Sie diese aktualisieren können. Wenn Sie Ihre lokale Active Directory mit Office 365 synchronisieren möchten, finden Sie weitere Informationen unter [nicht-routingfähige e-Mail-Adresse, die als UPN in Ihrem on-Prem-Active Directory verwendet wird](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
+Um zu beginnen, müssen Sie [Ihre DNS-Einträge in Windows-basiertem DNS Suchen](#find-your-dns-records-in-windows-based-dns) , damit Sie diese aktualisieren können. Wenn Sie beabsichtigen, Ihre lokale Active Directory mit Microsoft zu synchronisieren, finden Sie weitere Informationen unter [nicht routingfähige e-Mail-Adresse, die als UPN in Ihrem Active Directory auf dem Prem verwendet wird](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
   
 Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen von DNS-Einträgen finden Sie unter [Problembehandlung bei Problemen nach dem Ändern des Domänennamens oder der DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -43,13 +43,13 @@ Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen vo
 ## <a name="add-mx-record"></a>Hinzufügen eines MX-Eintrags
 <a name="BKMK_add_MX"> </a>
 
-Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Office 365 geleitet werden.
+Fügen Sie einen MX-Eintrag hinzu, damit e-Mails für Ihre Domäne an Microsoft gesendet werden.
 - Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
-- Kopieren Sie in der Zeile MX im Abschnitt Exchange Online der Seite DNS-Einträge hinzufügen in Office 365 den unter Verweist auf die Adresse aufgeführten Wert. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
+- Kopieren Sie in der Zeile MX im Abschnitt Exchange Online der Seite hinzufügen von DNS-Einträgen in Microsoft den Wert Unterpunkte in Adresse aufgeführt. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** > **Mail Exchanger (MX)**. Informationen zur Suche dieser Seite für die Domäne finden Sie unter [Suchen nach DNS-Einträgen in Windows-basiertem DNS](#find-your-dns-records-in-windows-based-dns).  
 - Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind: 
     - Hostname:  
-    - @Address: Fügen Sie den Wert für die Punkt-zu-Adresse ein, den Sie soeben aus Office 365 hier kopiert haben.  
+    - @Address: Fügen Sie hier den Punkt-zu-Adresse-Wert ein, den Sie soeben von Microsoft kopiert haben.  
     - Präferenz 
 - Wählen Sie **Save Changes**aus.
 - Entfernen Sie veraltete MX-Einträge. Wenn Sie über eine alte MX-Einträge für diese Domäne verfügen, die e-Mails an eine andere Stelle weiterleiten, aktivieren Sie das Kontrollkästchen neben jedem alten Datensatz, und wählen Sie dann **Löschen** > **OK**aus. 
@@ -57,10 +57,10 @@ Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Office 365
 ## <a name="add-cname-records"></a>Hinzufügen von CNAME-Einträgen
 <a name="BKMK_add_CNAME"> </a>
 
-Fügen Sie die für Office 365 erforderlichen CNAME-Einträge hinzu. Wenn in Office 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der hier angegebenen allgemeinen Schritte hinzu.
+Fügen Sie die für Microsoft erforderlichen CNAME-Einträge hinzu. Wenn zusätzliche CNAME-Einträge in Microsoft aufgeführt werden, fügen Sie die folgenden allgemeinen Schritte wie hier beschrieben hinzu.
   
 > [!IMPORTANT]
-> Wenn Sie über MDM (Mobile Device Management) für Office 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. (Wenn Sie nicht über MDM verfügen, können Sie diesen Schritt überspringen.) 
+> Wenn Sie über die Mobile Geräteverwaltung (MDM) für Microsoft verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (Wenn Sie nicht über MDM verfügen, können Sie diesen Schritt überspringen.) 
 
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** > **CNAME (CNAME)**.
 - Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
@@ -84,10 +84,10 @@ Hinzufügen des CNAME-Eintrags für Skype for Business Online-AutoErmittlung
     - Adresse: WebDir.online.lync.com
 - Wählen Sie **OK** aus.
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Hinzufügen von zwei CNAME-Einträgen für MDM (Mobile Device Management) für Office 365
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Hinzufügen von zwei CNAME-Einträgen für die Mobile Geräteverwaltung (Mobile Device Management, MDM) für Microsoft
 
 > [!IMPORTANT]
-> Wenn Sie über MDM (Mobile Device Management) für Office 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (wenn Sie nicht über MDM verfügen, können Sie diesen Schritt überspringen.) 
+> Wenn Sie über die Mobile Geräteverwaltung (MDM) für Microsoft verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (wenn Sie nicht über MDM verfügen, können Sie diesen Schritt überspringen.) 
   
 
 Hinzufügen des CNAME-Eintrags für MDM-Enterpriseregistration  
@@ -110,7 +110,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn Sie bereits einen SPF-Eintrag für Ihre Domäne haben, erstellen Sie keinen neuen für Microsoft. Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen *einzelnen* SPF-Eintrag haben, der beide Wertegruppen enthält. 
   
 Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhindern.
   
@@ -129,7 +129,7 @@ Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhin
 ## <a name="add-srv-records"></a>Hinzufügen von SRV-Einträgen
 <a name="BKMK_add_SRV"> </a>
 
-Fügen Sie die zwei für Office 365 erforderlichen SRV-Einträge hinzu.
+Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
 
 Hinzufügen des SIP SRV-Eintrags für Skype for Business Online-Webkonferenzen  <br/> 
 -  Wechseln Sie auf der Seite "DNS-Manager" für Ihre Domäne zu **Aktion** \> **Weitere neue Einträge**. 
@@ -159,16 +159,16 @@ Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbu
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Hinzufügen eines Eintrags zum Überprüfen des Domänenbesitzes, sofern das noch nicht geschehen ist
 <a name="BKMK_verify"> </a>
 
-Bevor Sie die DNS-Einträge zum Einrichten Ihrer Office 365-Dienste hinzufügen, muss Office 365 bestätigen, dass Sie der Besitzer der hinzugefügten Domäne sind. Dazu fügen Sie einen Eintrag anhand der nachfolgenden Schritte hinzu.
+Bevor Sie die DNS-Einträge zum Einrichten Ihrer Microsoft-Dienste hinzufügen, muss Microsoft bestätigen, dass Sie der Besitzer der Domäne sind, die Sie hinzufügen. Dazu fügen Sie einen Eintrag anhand der nachfolgenden Schritte hinzu.
   
 > [!NOTE]
 > Dieser Eintrag dient nur zum Überprüfen, dass Sie der Besitzer Ihrer Domäne sind; er wirkt sich auf nichts anderes aus. 
   
 
-1. Sammeln von Informationen aus Office 365  <br/> 
+1. Sammeln von Informationen von Microsoft.  <br/> 
 2. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>. 
 3. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktionen** für die Domäne, die Sie überprüfen möchten, **Setup starten**aus. 
-4. Wählen Sie auf der Seite **Domäne zu Office 365 hinzufügen** die Option **Schritt 1 starten**aus. 
+4. Wählen Sie auf der Seite **Domäne zu Microsoft hinzufügen** die Option **Schritt 1 starten**aus. 
 5. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** im **Abschnitt Anweisungen zum Ausführen dieses Schritts mit** der Dropdownliste die Option **Allgemeine Anweisungen**aus. 
 6. Kopieren Sie in der Tabelle den Wert unter Ziel oder verweisende Adresse. Sie benötigen ihn für den nächsten Schritt. Es wird empfohlen, diesen Wert zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.
 
@@ -182,14 +182,14 @@ Hinzufügen eines TXT-Eintrags
 
 - Hostname: @
 - Typ: txt
-- Address: Fügen Sie den Wert des Ziels oder der Punkt-zu-Adresse ein, den Sie soeben aus Office 365 hier kopiert haben.  
+- Address: Fügen Sie den Ziel-oder Punkt-zu-Adresse-Wert ein, den Sie hier soeben von Microsoft kopiert haben.  
 - Wählen Sie **OK** > **Fertig**aus.
 
-Überprüfen Ihrer Domäne in Office 365  
+Überprüfen Sie Ihre Domäne in Microsoft.  
 > [!IMPORTANT]
 > Warten Sie etwa 15 Minuten, bevor Sie dies tun, sodass der soeben erstellte Eintrag über das Internet aktualisiert werden kann.       
 
-- Kehren Sie zu Office 365 zurück, und führen Sie die folgenden Schritte aus, um eine Überprüfung anzufordern. Bei der Überprüfung wird nach dem TXT-Eintrag gesucht, den Sie im vorherigen Schritt hinzugefügt haben. Wenn der richtige TXT-Eintrag gefunden wird, ist die Domäne überprüft.  
+- Gehen Sie zurück zu Microsoft, und führen Sie die folgenden Schritte aus, um eine Überprüfungs Überprüfung anzufordern. Bei der Überprüfung wird nach dem TXT-Eintrag gesucht, den Sie im vorherigen Schritt hinzugefügt haben. Wenn der richtige TXT-Eintrag gefunden wird, ist die Domäne überprüft.  
 1. Wechseln Sie im Admin Center zur Seite **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a> .
 2. Wählen Sie auf der Seite **Domänen** in der Spalte **Aktion** für die Domäne, die Sie überprüfen möchten, **Setup starten**aus. 
 3. Wählen Sie auf der Seite **bestätigen, dass Sie Ihre Domäne besitzen** die Option **fertig, jetzt überprüfen**aus, und wählen Sie dann im Dialogfeld Bestätigung die Option **Fertig stellen**aus. 
@@ -200,7 +200,7 @@ Hinzufügen eines TXT-Eintrags
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Nicht routbare E-Mail-Adresse, die als UPN in Ihrem lokalen Active Directory verwendet wird
 <a name="BKMK_ADNote"> </a>
 
-Wenn Sie beabsichtigen, Ihr lokales Active Directory mit Office 365 zu synchronisieren, stellen Sie sicher, dass das Suffix des Active Directory-UPN (User Principal Name) ein gültiges Domänensuffix und kein nicht unterstütztes Domänensuffix wie @contoso.local ist. Wenn Sie das UPN-Suffix ändern müssen, finden Sie weitere Informationen unter [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Wenn Sie beabsichtigen, Ihre lokale Active Directory mit Microsoft zu synchronisieren, sollten Sie sicherstellen, dass das UPN-Suffix (Active Directory User Principal Name) ein gültiges Domänensuffix und kein nicht unterstütztes Domänensuffix wie @contoso. local ist. Wenn Sie das UPN-Suffix ändern müssen, finden Sie weitere Informationen unter [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 

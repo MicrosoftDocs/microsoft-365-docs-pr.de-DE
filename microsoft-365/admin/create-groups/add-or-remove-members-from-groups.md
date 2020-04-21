@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen oder Entfernen von Mitgliedern aus Office 365 Gruppen
+title: Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631313"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Office 365 Gruppen mithilfe des Admin Centers
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
 
-In Office 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Office 365 Gruppe?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > Wenn Sie kein Administrator sind, können Sie [Mitglieder mit Outlook hinzufügen oder entfernen](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
@@ -280,12 +280,12 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
     
 ## <a name="articles-about-managing-groups"></a>Artikel zum Verwalten von Gruppen
     
-- [Aktualisieren von Verteilerlisten für Office 365-Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
+- [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
     
 - [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Verwalten des Gastzugriffs in Office 365-Gruppen](manage-guest-access-in-groups.md)    
+- [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](manage-guest-access-in-groups.md)    
     
-- [Verwalten von Office 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) : Dieser Artikel führt Sie in die wichtigsten Cmdlets ein und stellt Beispiele bereit.
+- [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): in diesem Artikel werden wichtige Cmdlets vorgestellt und Beispiele bereitgestellt.
     
-- [Benennungsrichtlinie für Office 365-Gruppen](groups-naming-policy.md)
+- [Microsoft 365 gruppenbenennungsrichtlinie](groups-naming-policy.md)

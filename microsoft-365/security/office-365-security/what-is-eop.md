@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: Dieses Einführungsdokument hilft Ihnen, Exchange Online Schutz (EoP) und einige wichtige Terminologie zu verstehen. Dies gilt für Office 365 Kunden, die Exchange Online in der Cloud gehosteten Postfächern und EOP-eigenständigen Kunden schützen, die lokale Postfächer wie Exchange Server 2016 schützen.
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Dieses Einführungsdokument hilft Ihnen, Exchange Online Schutz (EoP) und einige wichtige Terminologie zu verstehen. Dies gilt für Kunden, die Exchange Online in der Cloud gehosteten Postfächern und EOP-eigenständigen Kunden schützen, die lokale Postfächer wie Exchange Server 2016 schützen.
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597992"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630917"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>Was ist Exchange Online Schutz (EoP)
 
-Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützen kann. Wenn Sie über Postfächer in Office 365 verfügen, werden diese automatisch von EoP geschützt, da Sie Teil des Diensts sind. Dies umfasst Organisationen mit Postfächern sowohl in Office 365 als auch lokal, was gemeinhin als Hybrid Szenario bezeichnet wird. EoP Standalone steht auch Kunden zur Verfügung, die keine Postfächer in der Cloud haben, aber ihre lokalen Postfächer schützen möchten.
+Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützen kann. Wenn Sie über Postfächer in Microsoft 365 verfügen, werden diese automatisch von EoP geschützt, da Sie Teil des Diensts sind. Dies umfasst Organisationen mit Postfächern sowohl in Microsoft 365 als auch in lokalen, was gemeinhin als Hybrid Szenario bezeichnet wird. EoP Standalone steht auch Kunden zur Verfügung, die keine Postfächer in der Cloud haben, aber ihre lokalen Postfächer schützen möchten.
 
 EoP versucht, Junk zu filtern, sodass Ihr Posteingang die Inhalte frei hält, die Benutzer nicht sehen möchten. Normalerweise werden Junk-e-Mails an den Junk-e-Mail-Ordner zugestellt. Einige Benutzer möchten sicherstellen, dass die Filterung das tut, was Sie möchten, damit der Junk-e-Mail-Ordner eine einfache Möglichkeit für Benutzer ist, sich selbst zu überprüfen.  
 
 > [!TIP]
-> Es ist eine gute Sache, wenn Junk-oder anderweitig ungültige e-Mails automatisch in den Junk-e-Mail-Ordner eingeht. Der Dienst tut, was erforderlich ist, basierend auf dem Status des Standard-oder benutzerdefinierten Administratoreinstellungen. In anderen Worten: Benutzer sollten sich keine Gedanken darüber machen, wie viele Spamnachrichten im Junk-e-Mail-Ordner angezeigt werden. Wenn Administratoren alle Junk-e-Mails aus dem Blickfeld ziehen möchten, sollte die Quarantäne konfiguriert werden. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in Office 365](quarantine-email-messages.md) Artikel.
+> Es ist eine gute Sache, wenn Junk-oder anderweitig ungültige e-Mails automatisch in den Junk-e-Mail-Ordner eingeht. Der Dienst tut, was erforderlich ist, basierend auf dem Status des Standard-oder benutzerdefinierten Administratoreinstellungen. In anderen Worten: Benutzer sollten sich keine Gedanken darüber machen, wie viele Spamnachrichten im Junk-e-Mail-Ordner angezeigt werden. Wenn Administratoren alle Junk-e-Mails aus dem Blickfeld ziehen möchten, sollte die Quarantäne konfiguriert werden. Weitere Informationen finden Sie im Artikel [Quarantäne-e-Mail-Nachrichten](quarantine-email-messages.md) .
 
 ## <a name="important-terms"></a>Wichtige Begriffe
 
-**Eingehend**: Nachrichten, die in Office 365 kommen.
+**Eingehend**: Nachrichten, die in Microsoft 365 kommen.
 
-**Outbound**: Nachrichten, die Office 365 ausgehen.
+**Outbound**: Nachrichten, die von Microsoft 365 ausgehen.
 
 **Intern**: Nachrichten, die von einer Person innerhalb der Organisation an eine Person innerhalb der Organisation gesendet werden. Dies umfasst Kunden, die sich in Hybrid Szenarien befinden, und ein Postfach könnte lokal sein, und das andere Postfach befindet sich in der Cloud.
 

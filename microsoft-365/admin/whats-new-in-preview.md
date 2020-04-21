@@ -21,74 +21,25 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43171012"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627522"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
-Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.md)ständig neue Features hinzu, beheben Probleme, die wir kennen, und machen Änderungen basierend auf Ihrem Feedback. Sehen Sie sich unten an, was heute für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlichen Geschwindigkeiten bereit gesetzt. Wenn Sie noch kein Feature sehen, versuchen Sie, [sich der zielgerichteten Version hinzuzufügen](manage/release-options-in-office-365.md).
+Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.md)ständig neue Features hinzu, beheben Probleme, die wir kennen, und machen Änderungen basierend auf Ihrem Feedback. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn Sie noch kein Feature sehen, versuchen Sie, [sich der zielgerichteten Version hinzuzufügen](manage/release-options-in-office-365.md).
 
 > [!IMPORTANT]
 > **"Classic" Admin Center Ruhestand ab März**<br><br>
 Wenn Sie sich bei admin.Microsoft.com anmelden, wechseln Sie jetzt jedes Mal zum neuen Admin Center. Im März wird mit dem Deaktivieren der Möglichkeit begonnen, wieder zum klassischen Admin Center zurückzukehren. Für den Moment können Sie immer noch zurückwechseln, aber da das neue Admin Center zu Parität kommt (und es überschreitet), werden wir den Switch für alle Organisationen deaktivieren. <br><br> *Letzte Aktualisierung: 2. März 2020*
 
-Wenn Sie an Neuigkeiten in anderen Microsoft-Cloud-Diensten interessiert sind:
+Wenn Sie an Neuigkeiten in anderen Verwaltungszentren interessiert sind:
 
-- [Neuerungen in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Neuerungen in Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
-
-## <a name="march-2020"></a>März 2020
-
-### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Featured Feedback Fix: verbessern der Zuverlässigkeit von "Benutzer hinzufügen" für die Lizenzierung
-
-Wir haben viel Feedback von Administratoren erhalten, wie schwer es ist, beim Hinzufügen von Benutzern Lizenzen zuzuweisen. Wir haben das erste Update für diesen Fix durchgeführt, und wir haben zu einem zuverlässigeren Behind-the-Scenes-Dienst migriert, um diese Anforderungen zu verarbeiten. Wenn etwas schief geht, erhalten Sie nun eine Fehlermeldung, mit der Sie es erneut versuchen können.
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Benutzer Bestätigungsseite mit dem Fehler hinzufügen.":::
-
-### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams-Startseite-Karte
-
-Mit dem Uptick in Teams-Nutzung erhalten einige Organisationen eine angeheftete dashboardkarte, die das Umwandeln von Teams auf mehr auffindbar macht. Die Karte enthält auch Links zu Schulungen und Dokumenten, die ihren org-Übergang zu Remote-Arbeit erleichtern. Wechseln Sie einfach zur **Start** Seite, um die neue Karte anzuzeigen.
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams-Startseite-Karte":::
-
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassen des SharePoint Mobile App Designs in Ihrer Organisation
-
-Mit dem Microsoft 365 Admin Center können Sie nun das Design Ihrer Organisation in SharePoint Mobile App für IOS und SharePoint Mobile App für Android anpassen. Dieses Feature bietet bequem eine Mobile Intranet-APP, die mit Ihrem SharePoint Online für Mitarbeiter unterwegs übereinstimmen kann. Die Design Anpassung umfasst das Logobild, die Farbe der Navigationsleiste, Text-und Symbol Farben sowie Akzentfarben, wodurch die Erkennung vereinfacht wird.
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramm, das die Admin Center-Einstellungen dem Mobile App zuordnet.":::
-
-:::image-end:::
-
-### <a name="improvements-to-the-add-a-group-wizard"></a>Verbesserungen am Assistenten zum Hinzufügen einer Gruppe
-
-Wenn Administratoren eine neue Gruppe erstellt haben und Sie gleichzeitig zu einem Team gemacht haben, können Sie Besitzern zuweisen, die nicht über eine Lizenz mit Teams verfügen. Und das verursachte Kopfzerbrechen. Wir haben den Assistenten Ablauf aktualisiert, um sicherzustellen, dass Besitzer eine Microsoft Teams-Lizenz besitzen und wenn Sie nicht die Möglichkeit haben, die Gruppe in ein Team zu verwandeln, ist deaktiviert.
-
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-Angebote für kleine und mittelständische Unternehmen
-
-Wir wissen, dass dies eine Ankündigung für den nächsten Monat ist, aber wir möchten sicherstellen, dass Sie bereit sind.
-
-Ab dem 21. April nehmen wir Änderungen in Bezug auf unsere Office 365 Abonnements für kleine und mittelständische Unternehmen – und Office 365 ProPlus vor. Für diese Produkte wird nun die Marke Microsoft 365 verwendet.
-
-Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änderung am Produktnamen, und derzeit gibt es keine Preis-oder Funktionsänderungen.
-
-|Aktueller Name |Neuer Name  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
-|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 apps for Business       | 
-|Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
-
-### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
-
-[Neuerungen in Microsoft 365-Webreihen](https://go.microsoft.com/fwlink/p/?linkid=2118096): in der Episode dieses Monats heben wir das dreijährige Jubiläum von Microsoft Teams hervor und decken neue Features ab, darunter eine verbesserte Audioqualität in Onlinebesprechungen, eine gezielte Kommunikation für First Line-Manager mit der "Shifts"-App, Teams und Skype Consumer-Interoperabilität und vieles mehr.
+- [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
 ## <a name="february-2020"></a>Februar 2020
 
@@ -111,7 +62,7 @@ Das ist buchstäblich!!!
 Ein paar Änderungen im Gruppenbereich in diesem Monat:
 
 - **Sortieren nach Gruppenname**: Sie können die Gruppenliste alphabetisch sortieren, indem Sie die Spalte **Gruppenname** auswählen.
-- **Wiederherstellen gelöschter Office 365 Gruppen**: Sie müssen nicht mehr zum Exchange Admin Center wechseln, um gelöschte Office 365 Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **Gelöschte Gruppen** \> (Wählen Sie eine Gruppe aus der \> Liste aus) **Restore Group**. Dadurch wird die Gruppe wieder in der **Gruppen** Liste wiederhergestellt und die e-Mails, Unterhaltungen, das Notizbuch, die Dateien und den Kalender der Gruppe wiederhergestellt.
+- **Wiederherstellen gelöschter Microsoft 365-Gruppen**: Sie müssen nicht mehr zum Exchange-Verwaltungskonsole wechseln, um gelöschte Microsoft 365-Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **Gelöschte Gruppen** \> (Wählen Sie eine Gruppe aus der \> Liste aus) **Restore Group**. Dadurch wird die Gruppe wieder in der **Gruppen** Liste wiederhergestellt und die e-Mails, Unterhaltungen, das Notizbuch, die Dateien und den Kalender der Gruppe wiederhergestellt.
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
 
@@ -160,7 +111,7 @@ Schauen Sie sich die Administratoren Schulung für kleine Unternehmen an, die wi
 - [Hilfe oder Support erhalten](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Benutzer löschen](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Auswählen eines Microsoft-Abonnements](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Übersicht über Microsoft 365 Business Security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Übersicht über Microsoft 365 for Business-Sicherheit](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>November und Dezember 2019
 
@@ -199,7 +150,7 @@ Im November haben wir einige Lern Pfade zur [Microsoft Learn](https://docs.micro
 
 - [Microsoft 365 Grundlagen](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Erweitern von Office-Grundlagen](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 – Modernisieren ihrer Unternehmensbereitstellung mit Windows 10 und Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 – Modernisierung ihrer Unternehmensbereitstellung mit Windows 10-und Microsoft 365-Apps für Unternehmen](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Verwalten Sie Ihre Unternehmensbereitstellung mit Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Maßgeschneidertes Upgrade von Microsoft Office für IT](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Übertragen von Remotedesktops und Apps aus Azure mit Windows Virtual Desktop](https://docs.microsoft.com/learn/paths/m365-wvd/)
@@ -320,7 +271,7 @@ Das Nachrichtencenter wurde auf das neue Design aktualisiert, und es sieht fanta
 
 Wir haben einige interessante Änderungen, die Ihnen helfen, Ihre Organisation einzurichten. Lassen Sie uns zunächst den Unterschied zwischen **Setup** und **Setup Seite**besprechen. **Setup** bezieht sich auf den anfänglichen Setup-Assistenten, den Sie für die Onlinedienste von Microsoft an Bord verwendet haben. Dies umfasst normalerweise drei spezifische Schritte: **Verbinden einer Domäne**, **Hinzufügen von Benutzern**und **herunterladen der Office-Apps**. Die Seite **Setup** ist die Seite im Admin Center, die die Einrichtung von Aufgaben empfohlen hat, um sicherzustellen, dass Sie Ihre Abonnements optimal nutzen – wie das Aktivieren von Features, für die Sie Lizenzen erworben haben.
 
-- **Setup** – der anfängliche Setup-Assistent wurde für **Office 365 for Business** -Abonnements aktualisiert. Dieses neue Design hilft neuen Organisationen, den Assistenten schneller und mit größerer erfolgreiche durch zugewinnen.
+- **Setup** – der anfängliche Setup-Assistent wurde für **Microsoft 365 for Business** -Abonnements aktualisiert. Dieses neue Design hilft neuen Organisationen, den Assistenten schneller und mit größerer erfolgreiche durch zugewinnen.
 - **Seite "Setup** " – die **Setup** Seite unterstützt Sie beim Abschließen der Einrichtung und Sicherung der Dienste, die mit ihren Abonnements geliefert werden. Auf der Seite **Setup** werden auch alle abgewiesenen Empfehlungen angezeigt. Um zu sehen, ob Sie noch für Ihre Abonnements verfügbar ist, wechseln Sie zum **Microsoft 365 Admin Center** > -**Setup**.
 
 ### <a name="billing--subscriptions"></a>Abrechnungs & Abonnements
@@ -414,7 +365,7 @@ Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, h
 
 - Es gibt ein neues Setup-Banner auf der **Start** Seite, das Sie sehen, wenn Sie die Schritte zum Einrichten, wie das Hinzufügen einer Domäne, das Hinzufügen von Benutzern und das Herunterladen der Office-Apps noch nicht abgeschlossen haben.
 - Der **Gruppen** Listen-und Detailbereich wurde auf die neue Formatvorlage aktualisiert. Wechseln Sie zu **Gruppen** > **Gruppen** , um die Änderungen anzuzeigen.
-  - Apropos Gruppen: Wir haben auch eine **Microsoft Teams** -Registerkarte zum Gruppen Detailbereich hinzugefügt, in dem Sie jede Office 365 Gruppe in ein Team umwandeln können. Um "teamify" eine Gruppe auszuwählen, wählen Sie in der Liste eine beliebige Office 365 Gruppe aus, wählen Sie die Registerkarte **Microsoft Teams** aus, und erstellen Sie dann **Team**. Wenn es sich bei der Gruppe bereits um ein Team handelt, erhalten Sie einen Link, um Sie über das **Teams Admin Center**zu verwalten.
+  - Apropos Gruppen: Wir haben auch eine **Microsoft Teams** -Registerkarte zum Gruppen Detailbereich hinzugefügt, in dem Sie jede Microsoft 365-Gruppe in ein Team umwandeln können. Um "teamify" eine Gruppe auszuwählen, wählen Sie in der Liste eine beliebige Microsoft 365-Gruppe aus, wählen Sie die Registerkarte **Microsoft Teams** aus, und erstellen Sie dann **Team**. Wenn es sich bei der Gruppe bereits um ein Team handelt, erhalten Sie einen Link, um Sie über das **Teams Admin Center**zu verwalten.
   - Schließlich können Sie den Status " **Teams** " zur Liste " **Gruppen** " hinzufügen. Wählen Sie in der Spalte Kopfzeile die Option **Spalten** > **Teams-Status** > **Speichern**aus.
 - **Neue beschränkte Administratorrollen** – wir veröffentlichen einige neue Administratorrollen, sodass Sie Benutzern nur den Zugriff gewähren können, den Sie benötigen.
   - **Kaizala-Administrator**: Benutzer in dieser Rolle verfügen über die Berechtigung zum Ausführen aller Verwaltungsaufgaben in Microsoft Kaizala, einschließlich Erstellen und Verwalten von Benutzern im Verzeichnis Kaizala, Verwalten von Kaizala Gruppen, Verwalten von Aktionskarten und Connectors und Erstellen von Dienstanforderungen.

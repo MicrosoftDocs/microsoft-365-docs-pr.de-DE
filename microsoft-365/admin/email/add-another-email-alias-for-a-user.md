@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Erfahren Sie, wie Sie mit Ihrem Office 365 für Unternehmen-Konto mehrere e-Mail-Adressen namens "e-Mail-Alias" erhalten. '
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Erfahren Sie, wie Sie mit Ihrem Microsoft 365 for Business-Konto mehr als eine e-Mail-Adresse namens "e-Mail-Alias" erhalten. '
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253098"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629083"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
   
-Dieser Artikel ist für Office 365 Administratoren mit Geschäfts Abonnements gedacht. Er gilt nicht für private Benutzer.
+Dieser Artikel richtet sich an Microsoft 365-Administratoren, die über Geschäfts Abonnements verfügen. Er gilt nicht für private Benutzer.
   
-Eine primäre e-Mail-Adresse in Office 365 ist normalerweise die e-Mail-Adresse, die einem Benutzer bei der Erstellung seines Kontos zugewiesen wurde. Wenn der Benutzer eine E-Mail an eine andere Person sendet, wird seine primäre E-Mail-Adresse in E-Mail-Apps in der Regel im Feld  *Von*  angezeigt. Benutzer können auch mehrere E-Mail-Adressen haben, die ihrem Office 365 Business-Konto zugeordnet sind. Diese zusätzlichen Adressen werden als "Aliase" bezeichnet. 
+Eine primäre e-Mail-Adresse in Microsoft 365 ist normalerweise die e-Mail-Adresse, die einem Benutzer bei der Erstellung seines Kontos zugewiesen wurde. Wenn der Benutzer eine E-Mail an eine andere Person sendet, wird seine primäre E-Mail-Adresse in E-Mail-Apps in der Regel im Feld  *Von*  angezeigt. Sie können auch mehrere e-Mail-Adressen haben, die mit Ihrem Microsoft 365 for Business-Konto verknüpft sind. Diese zusätzlichen Adressen werden als "Aliase" bezeichnet. 
   
 Angenommen, Jenna hat die e-Mail-Adresse Jenna@contosoco.com, aber Sie möchte auch eine e-Mail an Jen@contosoco.com empfangen, da einige Personen auf Sie mit diesem Namen Bezug nehmen. Sie können Aliase für Sie erstellen, sodass beide e-Mail-Adressen zu Jennas Posteingang wechseln.
 <br><br>  
@@ -94,7 +94,7 @@ Sie benötigen [Administratorberechtigungen](../add-users/about-admin-roles.md) 
     > [!Important] 
     > Wenn die Fehlermeldung "**ein Parameter kann nicht gefunden werden, der dem Parameternamen**e-Mail-e-Mail-Nachrichten entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis Sie den Mandanten eingerichtet haben, oder Ihre benutzerdefinierte Domäne, wenn Sie kürzlich einen hinzugefügt haben. Der Installationsvorgang kann bis zu 4 Stunden in Anspruch nehmen. Warten Sie eine Weile, damit der Setup-Prozesszeit zum fertig stellen hat, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support, um eine vollständige Synchronisierung für Sie durchführen zu können.
 
-4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen**aus.
+4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
@@ -125,7 +125,7 @@ Sie benötigen [Administratorberechtigungen](../add-users/about-admin-roles.md) 
     > [!Important] 
     > Wenn die Fehlermeldung "**ein Parameter kann nicht gefunden werden, der dem Parameternamen**e-Mail-e-Mail-Nachrichten entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis Sie den Mandanten eingerichtet haben, oder Ihre benutzerdefinierte Domäne, wenn Sie kürzlich einen hinzugefügt haben. Der Installationsvorgang kann bis zu 4 Stunden in Anspruch nehmen. Warten Sie eine Weile, damit der Setup-Prozesszeit zum fertig stellen hat, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support, um eine vollständige Synchronisierung für Sie durchführen zu können.
 
-4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen**aus.
+4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
