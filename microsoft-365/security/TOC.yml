@@ -231,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Konfigurieren von Antispamrichtlinien
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: Konfigurieren der Verbindungsfilterrichtlinie
+                    - name: Konfigurieren von Verbindungsfiltern
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: Erstellen von Listen blockierter Absender
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md

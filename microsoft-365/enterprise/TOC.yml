@@ -188,7 +188,9 @@
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
     - name: Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
       href: microsoft-365-deploment-guide-changes.md
-- name: Bereitstellungscenter für Desktop
+    - name: Integritätsstatus des Microsoft 365-Diensts
+      href: microsoft-365-service-health.md
+- name: Bereitstellungscenter für modernen Desktop
   href: desktop-deployment-center-home.md
   items:
     - name: 'Erste Schritte: Leitfaden zu Personen, Prozessen und Technologien'
