@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Erfahren Sie, wie Sie ein Benutzerkonto löschen. Entscheiden Sie, was mit den E-Mails und OneDrive-Inhalten des Benutzers geschehen soll, und ob Sie die Produktlizenz behalten oder die Zahlung für die Lizenz beenden wollen.
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353136"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608126"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
@@ -99,7 +99,8 @@ Da Sie in der geführten Oberfläche durch die Schritte zum Löschen eines Benut
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Benutzerverwaltungsadministrator – Löschen von Benutzern aus Office 365
 
 
- **WICHTIG** Löschen Sie das Konto eines Benutzers nicht, wenn Sie [das Konto in ein freigegebenes Postfach konvertiert](../email/convert-user-mailbox-to-shared-mailbox.md) oder eine E-Mail-Weiterleitung für das Konto eingerichtet haben. Für diese Funktionen wird das Konto benötigt. Wenn Sie es in ein freigegebenes Postfach konvertiert haben, können Sie [Beenden der Zahlung für die Lizenz](#stop-paying-for-the-license), damit Sie nicht dafür bezahlen. Wenn Sie eine E-Mail-Weiterleitung eingerichtet haben, können Sie die Lizenz nicht entfernen. Durch das Entfernen wird die E-Mail-Weiterleitung beendet und das Postfach deaktiviert. 
+> [!IMPORTANT]
+> Löschen Sie das Konto eines Benutzers nicht, wenn Sie [es in ein freigegebenes Postfach konvertiert](../email/convert-user-mailbox-to-shared-mailbox.md) haben oder wenn Sie die e-Mail-Weiterleitung für das Konto eingerichtet haben. Diese Funktionen benötigen weiterhin das Konto. Für ein freigegebenes Postfach ist keine Lizenz erforderlich. Wenn Sie das Konto in ein freigegebenes Postfach konvertiert haben, können Sie [die Zahlung für die Lizenz beenden](#stop-paying-for-the-license). Wenn Sie die e-Mail-Weiterleitung für das Konto eingerichtet haben, können Sie die Lizenz nicht entfernen. Dadurch wird die e-Mail-Weiterleitung beendet und das Postfach deaktiviert.
   
 ::: moniker range="o365-worldwide"
 

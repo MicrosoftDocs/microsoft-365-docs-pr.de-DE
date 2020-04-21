@@ -16,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Die Filterung ausgehender Spamnachrichten ist immer aktiviert, wenn Sie den Dienst für das Senden ausgehender E-Mails verwenden und dadurch Organisationen, die den Dienst nutzen, und ihre jeweiligen Empfänger schützen.
-ms.openlocfilehash: 3ac85776db5d990d46b858294acf8ef66c7f26bc
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231004"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608174"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Konfigurieren der ausgehenden Spamfilterung in Office 365
 
@@ -140,7 +140,11 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
      Deaktivieren Sie das Kontrollkästchen, um diese Einstellung zu deaktivieren.
 
-5. Optional Erweitern Sie den Abschnitt **Empfänger Grenzwerte** , um die Grenzwerte und Aktionen für verdächtige ausgehende e-Mail-Nachrichten zu konfigurieren:]
+5. Optional Erweitern Sie den Abschnitt **Empfänger Grenzwerte** , um die Grenzwerte und Aktionen für verdächtige ausgehende e-Mail-Nachrichten zu konfigurieren:
+
+   > [!NOTE]
+   > Diese Einstellungen gelten nur für Cloud-basierte Postfächer.
+     
    - **Maximale Anzahl von Empfängern pro Benutzer**
 
      Ein gültiger Wert ist 0 bis 10000. Der Standardwert ist 0, was bedeutet, dass die Dienst Standardwerte verwendet werden. Weitere Informationen finden Sie unter [sending Limits Across Office 365 Options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).

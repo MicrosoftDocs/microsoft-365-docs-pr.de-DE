@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Dokumentation und Ressourcen zu Microsoft 365 für Unternehmen
-summary: Best-in-Class-Produktivitäts-apps mit intelligenten Cloud-Diensten, die ihre Arbeitsweise transformieren.
+title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
+summary: Erstklassige Produktivitäts-Apps mit intelligenten Clouddiensten, mit denen Sie Ihre Arbeitsweise transformieren können.
 brand: m365
 metadata:
-  title: Dokumentation und Ressourcen zu Microsoft 365 für Unternehmen
-  description: Erfahren Sie mehr über die Produktdokumentation und die Ressourcen, die Microsoft 365 für Unternehmen für IT-Experten, Information Worker und Partner zur Verfügung stehen.
+  title: Dokumentation und Ressourcen zu Microsoft 365 Enterprise
+  description: Erfahren Sie mehr über die Microsoft 365 Enterprise-Dokumentation und -Ressourcen für IT-Experten, IT-Mitarbeiter und Partner.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -15,40 +15,40 @@ metadata:
   ms.date: 11/29/2019
   ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
   ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 12/19/2019
   ms.locfileid: "40801670"
 highlightedContent:
   items:
-  - title: Informationen zu Microsoft 365 für Unternehmen
+  - title: Informationen zu Microsoft 365 Enterprise
     itemType: get-started
     url: microsoft-365-overview.md
-  - title: Schnellere Bereitstellung mit schnellerem Einsatz
+  - title: Schnellere Bereitstellung mit FastTrack
     itemType: quickstart
     url: https://www.microsoft.com/fasttrack/microsoft-365
   - title: Schulen Ihrer IT-Experten und Administratoren
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: Erhalten von Hilfe zu Microsoft 365 für Unternehmen und andere Ressourcen
-  summary: Untersuchen Sie Microsoft 365 für Enterprise-Bereitstellungsanleitungen,-Features und-Dienste.
+  title: Hilfe zu Microsoft 365 Enterprise und weitere Ressourcen
+  summary: Erfahren Sie mehr über die Bereitstellung und die Funkionen und Dienste von Microsoft 365 Enterprise.
   items:
-  - title: Befolgter Bereitstellungswegweiser
+  - title: Folgen Sie der Roadmap für die Bereitstellung
     links:
     - url: deploy-microsoft-365-enterprise.md
       itemType: deploy
       text: Übersicht über die Bereitstellung
     - url: deploy-foundation-infrastructure.md
       itemType: how-to-guide
-      text: Foundation-Infrastruktur
+      text: Grundlegende Infrastruktur
     - url: deploy-workloads.md
       itemType: how-to-guide
       text: Workloads und Szenarien
     - url: desktop-deployment-center-home.md
       itemType: get-started
-      text: Bereitstellungscenter für modernen Desktop
-  - title: Bereitstellen von Schlüsselelementen
+      text: Desktop-Bereitstellungscenter
+  - title: Bereitstellen der wichtigsten Elemente
     links:
     - url: identity-infrastructure.md
       itemType: how-to-guide
@@ -62,21 +62,21 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: Bereitstellen von Schlüsselszenarien
+  - title: Wichtigste Bereitstellungsszenarien
     links:
     - url: secure-teams-highly-regulated-data-scenario.md
       itemType: how-to-guide
-      text: Microsoft Teams für Daten mit strengen Sicherheitsbestimmungen
+      text: Microsoft Teams für streng regulierte Daten
     - url: teams-sharepoint-online-sites-highly-regulated-data.md
       itemType: how-to-guide
       text: SharePoint-Websites für streng regulierte Daten
     - url: empower-people-to-work-remotely.md
       itemType: how-to-guide
-      text: Remote Mitarbeiter
+      text: Remotemitarbeiter
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
-      text: Office-Client-und Server-und Windows-Migration
-  - title: Verwalten von Microsoft 365 für Unternehmen
+      text: Migration von Office-Clients und -Servern sowie von Windows
+  - title: Verwalten von Microsoft 365 Enterprise
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
@@ -86,21 +86,21 @@ conceptualContent:
       text: Office 365 ProPlus
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
-      text: Apps mit InTune
+      text: Apps mit Intune
     - url: https://docs.microsoft.com/office365/
       itemType: get-started
-      text: Office 365 Dienste
+      text: Office 365-Dienste
 additionalContent:
   sections:
   - title: Weitere Ressourcen
-    summary: Erfahren Sie mehr über andere Microsoft 365-Features und-Ressourcen.
+    summary: Erfahren Sie mehr über weitere Microsoft 365-Features und -Ressourcen.
     items:
-    - title: Microsoft 365-Konformität
-      summary: Unterstützen Sie Ihre Organisation beim Steuern von Informationen, beim Schutz vor Risiken und bei der Einhaltung gesetzlicher oder behördlicher Standards.
+    - title: Microsoft 365-Compliance
+      summary: Unterstützen Sie Ihre Organisation bei der Verwaltung von Informationen, beim Schutz vor Risiken und bei der Einhaltung von gesetzlichen oder behördlichen Standards.
       url: https://docs.microsoft.com/microsoft-365/compliance/index
-    - title: Microsoft 365-Sicherheit
-      summary: Schützen Sie Ihre Organisation über Angriffsflächen hinweg mit robusten Sicherheitsdiensten und-Lösungen.
+    - title: Sicherheit in Microsoft 365
+      summary: Schützen Sie Ihre Organisation über sämtliche Angriffsflächen hinweg durch solide Sicherheitsdienste und -lösungen.
       url: https://docs.microsoft.com/microsoft-365/security/index
-    - title: Microsoft 365 Technical Community
-      summary: Stellen Sie eine Verbindung mit Kollegen und Experten in der Microsoft Tech Community her, und teilen Sie die bewährten Methoden von Microsoft 365.
+    - title: Microsoft 365 – technische Community
+      summary: Vernetzen Sie sich mit Kollegen und Experten in der Microsoft Tech-Community, und teilen Sie sich über bewährte Methoden für Microsoft 365 aus.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

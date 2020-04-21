@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails.
-ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230968"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608102"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -98,7 +98,7 @@ Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|
 |**Dynamische Zustellung**|Sendet sofort Nachrichten  <br/> Ersetzt Anlagen durch eine Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt dann die Anlagen erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen zur Vorschau der Anlage für die meisten PDFs und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> [Informationen zur dynamischen Zustellung und Vorschau mit ATP-sicheren Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien  <br/> Aktivieren von Empfängern zum Anzeigen einer Vorschau von Anlagen im abgesicherten Modus, während der Scan stattfindet|
 |**Umleitung aktivieren**|Gilt, wenn die Option Monitor, Block oder ersetzen ausgewählt ist.  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, die von Sicherheitsadministratoren oder Analysten untersucht werden kann.|Aktivieren von Sicherheitsadministratoren und Analysten zum Recherchieren verdächtiger Anlagen|
-|**Anwenden der obigen Auswahl, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt**|Wendet die für unasfe-Anlagen konfigurierte Aktion auf die Anlagen an, die nicht gescannt werden können (aufgrund eines Timeouts oder Fehlers)|
+|**Anwenden der obigen Auswahl, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt**|Wendet die für unsichere Anlagen konfigurierte Aktion auf die Anlagen an, die nicht gescannt werden können (aufgrund eines Timeouts oder Fehlers)|
 |
 
 ## <a name="next-steps"></a>Nächste Schritte

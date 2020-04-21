@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Administratoren können sich über die verfügbaren Optionen in Office 365 und EOP informieren, um eingehende Nachrichten zu blockieren.
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033422"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608119"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Erstellen blockierter Absenderlisten in Office 365
 
@@ -52,7 +52,7 @@ Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgr
 
 Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, daher lautet die nächste beste Option "Listen blockierter Absender" oder "Blockierte Domänen" in den Antispam-Richtlinien. Nachrichten von Absendern in den Listen werden als **Spam**gekennzeichnet, und die Aktion, die Sie für das **Spam** Filter-Urteil konfiguriert haben, wird in der Nachricht vorgenommen. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
-Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
+Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
 
 ## <a name="use-mail-flow-rules"></a>Verwenden von Nachrichtenfluss Regeln
 
