@@ -19,61 +19,61 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informationen zum Einrichten eines e-Mail-Kontos in Outlook für Windows und Mac sowie zum Installieren von Office-Apps und zum Online Zugriff auf e-Mails.
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361236"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627788"
 ---
-# <a name="set-up-outlook-to-read-email"></a><span data-ttu-id="4dbb2-103">Einrichten von Outlook zum Lesen von E-Mails</span><span class="sxs-lookup"><span data-stu-id="4dbb2-103">Set up Outlook to read email</span></span>
+# <a name="set-up-outlook-to-read-email"></a><span data-ttu-id="81854-103">Einrichten von Outlook zum Lesen von E-Mails</span><span class="sxs-lookup"><span data-stu-id="81854-103">Set up Outlook to read email</span></span>
 
-<span data-ttu-id="4dbb2-104">[] Ihr Office 365-Abonnement umfasst eine webbasierte Outlook-Version. Wenn Ihr Abonnement jedoch Office-Client-Apps beinhaltet, erhalten Sie Outlook auch als installierbare Version für Ihren PC oder Ihre Geräte.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-104">Your Office 365 subscription comes with a web-based Outlook, but if your subscription includes Office client apps, you will also get Outlook you can install on your personal computer or devices.</span></span>
+<span data-ttu-id="81854-104">Ihr Microsoft 365-Abonnement enthält eine webbasierte Outlook, aber wenn Ihr Abonnement Office-Client-apps umfasst, erhalten Sie auch Outlook, das Sie auf Ihrem PC oder Ihren Geräten installieren können.</span><span class="sxs-lookup"><span data-stu-id="81854-104">Your Microsoft 365 subscription comes with a web-based Outlook, but if your subscription includes Office client apps, you will also get Outlook you can install on your personal computer or devices.</span></span>
   
-## <a name="set-up-an-email-account-in-outlook"></a><span data-ttu-id="4dbb2-105">Einrichten eines E-Mail-Kontos in Outlook</span><span class="sxs-lookup"><span data-stu-id="4dbb2-105">Set up an email account in Outlook</span></span>
+## <a name="set-up-an-email-account-in-outlook"></a><span data-ttu-id="81854-105">Einrichten eines E-Mail-Kontos in Outlook</span><span class="sxs-lookup"><span data-stu-id="81854-105">Set up an email account in Outlook</span></span>
 
-<span data-ttu-id="4dbb2-p101">The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-p101">The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.</span></span>
+<span data-ttu-id="81854-p101">The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.</span><span class="sxs-lookup"><span data-stu-id="81854-p101">The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.</span></span>
   
-1. <span data-ttu-id="4dbb2-108">Wählen Sie auf der Seite **E-Mail-Konten** die Schaltfläche **Weiter** \> **Konto hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-108">On the **E-mail Accounts** page, choose **Next** \> **Add Account**.</span></span>
+1. <span data-ttu-id="81854-108">Wählen Sie auf der Seite **E-Mail-Konten** die Schaltfläche **Weiter** \> **Konto hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="81854-108">On the **E-mail Accounts** page, choose **Next** \> **Add Account**.</span></span>
     
-2. <span data-ttu-id="4dbb2-109">Geben Sie auf der Seite **Konto automatisch einrichten** Ihren Namen, Ihre E-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Weiter** \> **Fertig stellen** aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-109">On the **Auto Account Setup** page, enter your name, email address, and password, and then choose **Next** \> **Finish**.</span></span>
+2. <span data-ttu-id="81854-109">Geben Sie auf der Seite **Konto automatisch einrichten** Ihren Namen, Ihre E-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Weiter** \> **Fertig stellen** aus.</span><span class="sxs-lookup"><span data-stu-id="81854-109">On the **Auto Account Setup** page, enter your name, email address, and password, and then choose **Next** \> **Finish**.</span></span>
     
-<span data-ttu-id="4dbb2-110">[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)</span><span class="sxs-lookup"><span data-stu-id="4dbb2-110">Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).</span></span>
+<span data-ttu-id="81854-110">[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)</span><span class="sxs-lookup"><span data-stu-id="81854-110">Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).</span></span>
   
-## <a name="how-do-i-install-the-office-apps-including-outlook"></a><span data-ttu-id="4dbb2-111">Wie installiere ich die Office-Apps, einschließlich Outlook?</span><span class="sxs-lookup"><span data-stu-id="4dbb2-111">How do I install the Office apps, including Outlook?</span></span>
+## <a name="how-do-i-install-the-office-apps-including-outlook"></a><span data-ttu-id="81854-111">Wie installiere ich die Office-Apps, einschließlich Outlook?</span><span class="sxs-lookup"><span data-stu-id="81854-111">How do I install the Office apps, including Outlook?</span></span>
 
-1. <span data-ttu-id="4dbb2-112">Wechseln Sie zu [Admin.Microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).</span><span class="sxs-lookup"><span data-stu-id="4dbb2-112">Go to [admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).</span></span>
+1. <span data-ttu-id="81854-112">Wechseln Sie zu [Admin.Microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).</span><span class="sxs-lookup"><span data-stu-id="81854-112">Go to [admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).</span></span>
     
-2. <span data-ttu-id="4dbb2-113">Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-113">Sign in with your work or school account.</span></span>
+2. <span data-ttu-id="81854-113">Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="81854-113">Sign in with your work or school account.</span></span>
     
-3. <span data-ttu-id="4dbb2-114">Wählen Sie unter "Installationen verwalten" den Befehl **Installieren** aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-114">On Manage installs, select **Install**.</span></span>
+3. <span data-ttu-id="81854-114">Wählen Sie unter "Installationen verwalten" den Befehl **Installieren** aus.</span><span class="sxs-lookup"><span data-stu-id="81854-114">On Manage installs, select **Install**.</span></span>
     
-## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a><span data-ttu-id="4dbb2-115">Einrichten eines E-Mail-Kontos in Outlook 2016 für Mac</span><span class="sxs-lookup"><span data-stu-id="4dbb2-115">Set up an email account in Outlook 2016 for Mac</span></span>
+## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a><span data-ttu-id="81854-115">Einrichten eines E-Mail-Kontos in Outlook 2016 für Mac</span><span class="sxs-lookup"><span data-stu-id="81854-115">Set up an email account in Outlook 2016 for Mac</span></span>
 
-<span data-ttu-id="4dbb2-116">Beim ersten Öffnen der Outlook-App wird der Assistent zum Einrichten des Posteingangs geöffnet.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-116">The first time you open Outlook app, Set up my Inbox wizard opens.</span></span> <span data-ttu-id="4dbb2-117">Im Assistenten:</span><span class="sxs-lookup"><span data-stu-id="4dbb2-117">In the wizard:</span></span> 
+<span data-ttu-id="81854-116">Beim ersten Öffnen der Outlook-App wird der Assistent zum Einrichten des Posteingangs geöffnet.</span><span class="sxs-lookup"><span data-stu-id="81854-116">The first time you open Outlook app, Set up my Inbox wizard opens.</span></span> <span data-ttu-id="81854-117">Im Assistenten:</span><span class="sxs-lookup"><span data-stu-id="81854-117">In the wizard:</span></span> 
   
-1. <span data-ttu-id="4dbb2-118">Wählen Sie auf der Seite **meinen Posteingang einrichten** die Option **Konto hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-118">On the **Set up my Inbox** page, select **Add Account**.</span></span>
+1. <span data-ttu-id="81854-118">Wählen Sie auf der Seite **meinen Posteingang einrichten** die Option **Konto hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="81854-118">On the **Set up my Inbox** page, select **Add Account**.</span></span>
     
-2. <span data-ttu-id="4dbb2-119">Wählen Sie auf der Seite **Konten** die Option **Exchange oder Office 365**aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-119">On the **Accounts** page, select **Exchange or Office 365**.</span></span>
+2. <span data-ttu-id="81854-119">Wählen Sie auf der Seite **Konten** die Option **Exchange oder Office 365**aus.</span><span class="sxs-lookup"><span data-stu-id="81854-119">On the **Accounts** page, select **Exchange or Office 365**.</span></span>
     
-3. <span data-ttu-id="4dbb2-120">Geben Sie auf der Seite **Ihre Exchange-Kontoinformationen eingeben** ihren Namen, Ihre e-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Konto hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-120">On the **Enter your Exchange account information** page, enter your name, email address, and password, and then select **Add Account**.</span></span>
+3. <span data-ttu-id="81854-120">Geben Sie auf der Seite **Ihre Exchange-Kontoinformationen eingeben** ihren Namen, Ihre e-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Konto hinzufügen**aus.</span><span class="sxs-lookup"><span data-stu-id="81854-120">On the **Enter your Exchange account information** page, enter your name, email address, and password, and then select **Add Account**.</span></span>
     
-<span data-ttu-id="4dbb2-121">[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)</span><span class="sxs-lookup"><span data-stu-id="4dbb2-121">Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac).</span></span> 
+<span data-ttu-id="81854-121">[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)</span><span class="sxs-lookup"><span data-stu-id="81854-121">Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac).</span></span> 
   
-## <a name="how-do-i-access-my-mail-online"></a><span data-ttu-id="4dbb2-122">Wie greife ich online auf meine E-Mails zu?</span><span class="sxs-lookup"><span data-stu-id="4dbb2-122">How do I access my mail online?</span></span>
+## <a name="how-do-i-access-my-mail-online"></a><span data-ttu-id="81854-122">Wie greife ich online auf meine E-Mails zu?</span><span class="sxs-lookup"><span data-stu-id="81854-122">How do I access my mail online?</span></span>
 
-<span data-ttu-id="4dbb2-123">Nachdem Sie sich bei Office 365 angemeldet haben, wählen Sie **Outlook**aus.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-123">After you sign in to Office 365, select **Outlook**.</span></span>
+<span data-ttu-id="81854-123">Nachdem Sie sich bei Microsoft 365 angemeldet haben, wählen Sie **Outlook**aus.</span><span class="sxs-lookup"><span data-stu-id="81854-123">After you sign in to Microsoft 365, select **Outlook**.</span></span>
   
-![Die Office 365 Startseite mit hervorgehobener Outlook-App](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Die Microsoft 365-Startseite mit hervorgehobener Outlook-App](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-<span data-ttu-id="4dbb2-p103">Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-p103">Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.</span></span> 
+<span data-ttu-id="81854-125">Sie können die gesuchte App nicht finden?</span><span class="sxs-lookup"><span data-stu-id="81854-125">Can't find the app you're looking for?</span></span> <span data-ttu-id="81854-126">Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der Microsoft 365-apps anzuzeigen, die Ihnen zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="81854-126">From the app launcher, select **All apps** to see an alphabetical list of the Microsoft 365 apps available to you.</span></span> <span data-ttu-id="81854-127">Hier können Sie nach einer bestimmten App suchen.</span><span class="sxs-lookup"><span data-stu-id="81854-127">From there, you can search for a specific app.</span></span> 
   
-## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a><span data-ttu-id="4dbb2-128">Wie stelle ich fest, ob mein Abonnement Office-Apps einschließt?</span><span class="sxs-lookup"><span data-stu-id="4dbb2-128">How do I know if my subscription includes Office apps?</span></span>
+## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a><span data-ttu-id="81854-128">Wie stelle ich fest, ob mein Abonnement Office-Apps einschließt?</span><span class="sxs-lookup"><span data-stu-id="81854-128">How do I know if my subscription includes Office apps?</span></span>
 
-<span data-ttu-id="4dbb2-129">Office-Apps sind in Office 365 Business Premium und Office 365 Business enthalten.</span><span class="sxs-lookup"><span data-stu-id="4dbb2-129">Office 365 Business Premium and Office 365 Business include Office apps.</span></span> <span data-ttu-id="4dbb2-130">Ausführliche Informationen finden Sie unter [Office 365 Business-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=723731) oder [Office 365 Enterprise-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=800029).</span><span class="sxs-lookup"><span data-stu-id="4dbb2-130">For details see [Office 365 Business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731), or [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).</span></span>
+<span data-ttu-id="81854-129">Microsoft 365 Business Standard und Microsoft 365 apps for Business umfassen Office-Apps.</span><span class="sxs-lookup"><span data-stu-id="81854-129">Microsoft 365 Business Standard and Microsoft 365 Apps for business include Office apps.</span></span> <span data-ttu-id="81854-130">Ausführliche Informationen finden Sie unter [Microsoft 365 for Business-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=723731)oder [Office 365 Enterprise Pläne](https://go.microsoft.com/fwlink/p/?LinkId=800029).</span><span class="sxs-lookup"><span data-stu-id="81854-130">For details see [Microsoft 365 for business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731), or [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).</span></span>
   
-## <a name="how-do-i-determine-what-subscription-i-have"></a><span data-ttu-id="4dbb2-131">Wie stelle ich fest, über welches Abonnement ich verfüge?</span><span class="sxs-lookup"><span data-stu-id="4dbb2-131">How do I determine what subscription I have?</span></span>
+## <a name="how-do-i-determine-what-subscription-i-have"></a><span data-ttu-id="81854-131">Wie stelle ich fest, über welches Abonnement ich verfüge?</span><span class="sxs-lookup"><span data-stu-id="81854-131">How do I determine what subscription I have?</span></span>
 
-<span data-ttu-id="4dbb2-132">Informationen zum bestimmen Ihres Abonnements finden Sie unter [welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md)</span><span class="sxs-lookup"><span data-stu-id="4dbb2-132">To determine your subscription, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md)</span></span>
+<span data-ttu-id="81854-132">Informationen zum bestimmen Ihres Abonnements finden Sie unter [welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md)</span><span class="sxs-lookup"><span data-stu-id="81854-132">To determine your subscription, see [What subscription do I have?](../admin-overview/what-subscription-do-i-have.md)</span></span>
   
 

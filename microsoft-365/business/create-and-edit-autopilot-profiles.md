@@ -26,60 +26,60 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Hier erfahren Sie, wie Sie ein Autopilot-Profil erstellen und auf ein Gerät anwenden sowie ein Profil bearbeiten oder löschen oder ein Profil von einem Gerät entfernen.
-ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560718"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627372"
 ---
-# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="7ced9-103">Erstellen und Bearbeiten von AutoPilot-Profilen</span><span class="sxs-lookup"><span data-stu-id="7ced9-103">Create and edit AutoPilot profiles</span></span>
+# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="f6660-103">Erstellen und Bearbeiten von AutoPilot-Profilen</span><span class="sxs-lookup"><span data-stu-id="f6660-103">Create and edit AutoPilot profiles</span></span>
 
-## <a name="create-a-profile"></a><span data-ttu-id="7ced9-104">Erstellen eines Profils</span><span class="sxs-lookup"><span data-stu-id="7ced9-104">Create a profile</span></span>
+## <a name="create-a-profile"></a><span data-ttu-id="f6660-104">Erstellen eines Profils</span><span class="sxs-lookup"><span data-stu-id="f6660-104">Create a profile</span></span>
 
-<span data-ttu-id="7ced9-105">Ein Profil gilt für ein Gerät oder eine Gerätegruppe.</span><span class="sxs-lookup"><span data-stu-id="7ced9-105">A profile applies to a device, or a group of devices,</span></span>
+<span data-ttu-id="f6660-105">Ein Profil gilt für ein Gerät oder eine Gerätegruppe.</span><span class="sxs-lookup"><span data-stu-id="f6660-105">A profile applies to a device, or a group of devices,</span></span>
   
-1. <span data-ttu-id="7ced9-106">Wählen Sie im Microsoft 365 Business Admin Center die Option **Geräte** \> **Autopilot**aus.</span><span class="sxs-lookup"><span data-stu-id="7ced9-106">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
+1. <span data-ttu-id="f6660-106">Wählen Sie im Microsoft 365 Admin Center die Option **Geräte** \> **Autopilot**aus.</span><span class="sxs-lookup"><span data-stu-id="f6660-106">In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.</span></span>
   
-2. <span data-ttu-id="7ced9-107">Klicken Sie auf der Seite **Autopilot** auf \*\*\*\* die Register \> Karte Profile Profil **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
+2. <span data-ttu-id="f6660-107">Klicken Sie auf der Seite **Autopilot** auf **Profiles** die Register \> Karte Profile Profil **Erstellen**.</span><span class="sxs-lookup"><span data-stu-id="f6660-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
     
-3. <span data-ttu-id="7ced9-108">Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, das Sie bei der Identifizierung unterstützt, beispielsweise Marketing.</span><span class="sxs-lookup"><span data-stu-id="7ced9-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="7ced9-109">Aktivieren Sie die gewünschte Einstellung, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7ced9-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="7ced9-110">Weitere Informationen zu Autopilot-Profileinstellungen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md).</span><span class="sxs-lookup"><span data-stu-id="7ced9-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
+3. <span data-ttu-id="f6660-108">Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, das Sie bei der Identifizierung unterstützt, beispielsweise Marketing.</span><span class="sxs-lookup"><span data-stu-id="f6660-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="f6660-109">Aktivieren Sie die gewünschte Einstellung, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="f6660-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="f6660-110">Weitere Informationen zu Autopilot-Profileinstellungen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md).</span><span class="sxs-lookup"><span data-stu-id="f6660-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
-### <a name="apply-profile-to-a-device"></a><span data-ttu-id="7ced9-112">Zuweisen eines Profils zu einem Gerät</span><span class="sxs-lookup"><span data-stu-id="7ced9-112">Apply profile to a device</span></span>
+### <a name="apply-profile-to-a-device"></a><span data-ttu-id="f6660-112">Zuweisen eines Profils zu einem Gerät</span><span class="sxs-lookup"><span data-stu-id="f6660-112">Apply profile to a device</span></span>
 
-<span data-ttu-id="7ced9-113">Nachdem Sie ein Profil erstellt haben, können Sie es auf ein Gerät oder eine Gruppe von Geräten anwenden.</span><span class="sxs-lookup"><span data-stu-id="7ced9-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="7ced9-114">Sie können ein vorhandenes Profil in der [schrittweisen Anleitung](add-autopilot-devices-and-profile.md) auswählen und auf neue Geräte anwenden oder ein vorhandenes Profil für ein Gerät oder eine Gerätegruppe ersetzen.</span><span class="sxs-lookup"><span data-stu-id="7ced9-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
+<span data-ttu-id="f6660-113">Nachdem Sie ein Profil erstellt haben, können Sie es auf ein Gerät oder eine Gruppe von Geräten anwenden.</span><span class="sxs-lookup"><span data-stu-id="f6660-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="f6660-114">Sie können ein vorhandenes Profil in der [schrittweisen Anleitung](add-autopilot-devices-and-profile.md) auswählen und auf neue Geräte anwenden oder ein vorhandenes Profil für ein Gerät oder eine Gerätegruppe ersetzen.</span><span class="sxs-lookup"><span data-stu-id="f6660-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
   
-1. <span data-ttu-id="7ced9-115">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="f6660-115">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**.</span><span class="sxs-lookup"><span data-stu-id="f6660-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="7ced9-116">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich ein Profil aus der Dropdownliste \*\*\*\* \> zugewiesenes Profil **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7ced9-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="f6660-116">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich ein Profil aus der Dropdownliste **Assigned profile** \> zugewiesenes Profil **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="f6660-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
-## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="7ced9-118">Bearbeiten, Löschen oder Entfernen eines Profils</span><span class="sxs-lookup"><span data-stu-id="7ced9-118">Edit, delete, or remove a profile</span></span>
+## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="f6660-118">Bearbeiten, Löschen oder Entfernen eines Profils</span><span class="sxs-lookup"><span data-stu-id="f6660-118">Edit, delete, or remove a profile</span></span>
 
-<span data-ttu-id="7ced9-p103">Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisieren, auch wenn Sie das Gerät bereits einem Benutzer zugewiesen haben. Wenn sich das Gerät mit dem Internet verbindet, lädt es während des Setupvorgangs die neueste Version Ihres Profils herunter. Wenn der Benutzer das Gerät auf die werkseitigen Standardeinstellungen zurücksetzt, lädt das Gerät erneut die neuesten Updates in Ihr Profil herunter.</span><span class="sxs-lookup"><span data-stu-id="7ced9-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
+<span data-ttu-id="f6660-p103">Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisieren, auch wenn Sie das Gerät bereits einem Benutzer zugewiesen haben. Wenn sich das Gerät mit dem Internet verbindet, lädt es während des Setupvorgangs die neueste Version Ihres Profils herunter. Wenn der Benutzer das Gerät auf die werkseitigen Standardeinstellungen zurücksetzt, lädt das Gerät erneut die neuesten Updates in Ihr Profil herunter.</span><span class="sxs-lookup"><span data-stu-id="f6660-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
   
-### <a name="edit-a-profile"></a><span data-ttu-id="7ced9-122">Bearbeiten eines Profils</span><span class="sxs-lookup"><span data-stu-id="7ced9-122">Edit a profile</span></span>
+### <a name="edit-a-profile"></a><span data-ttu-id="f6660-122">Bearbeiten eines Profils</span><span class="sxs-lookup"><span data-stu-id="f6660-122">Edit a profile</span></span>
 
-1. <span data-ttu-id="7ced9-123">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="f6660-123">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**.</span><span class="sxs-lookup"><span data-stu-id="f6660-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="7ced9-124">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und aktualisieren Sie im **Profil** Bereich alle verfügbaren Einstellungen \> **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
+2. <span data-ttu-id="f6660-124">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und aktualisieren Sie im **Profil** Bereich alle verfügbaren Einstellungen \> **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="f6660-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
     
-    <span data-ttu-id="7ced9-125">Wenn Sie dies tun, bevor ein Benutzer das Gerät mit dem Internet verbindet, wird das Profil auf den Setupvorgang angewendet.</span><span class="sxs-lookup"><span data-stu-id="7ced9-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
+    <span data-ttu-id="f6660-125">Wenn Sie dies tun, bevor ein Benutzer das Gerät mit dem Internet verbindet, wird das Profil auf den Setupvorgang angewendet.</span><span class="sxs-lookup"><span data-stu-id="f6660-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
     
-### <a name="delete-a-profile"></a><span data-ttu-id="7ced9-126">Löschen eines Profils</span><span class="sxs-lookup"><span data-stu-id="7ced9-126">Delete a profile</span></span>
+### <a name="delete-a-profile"></a><span data-ttu-id="f6660-126">Löschen eines Profils</span><span class="sxs-lookup"><span data-stu-id="f6660-126">Delete a profile</span></span>
 
-1. <span data-ttu-id="7ced9-127">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="f6660-127">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Profile**.</span><span class="sxs-lookup"><span data-stu-id="f6660-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="7ced9-128">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Profil** Bereich die Option **Profil** \> **Speichern**löschen aus.</span><span class="sxs-lookup"><span data-stu-id="7ced9-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
+2. <span data-ttu-id="f6660-128">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Profil** Bereich die Option **Profil** \> **Speichern**löschen aus.</span><span class="sxs-lookup"><span data-stu-id="f6660-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
     
-    <span data-ttu-id="7ced9-129">Wenn Sie ein Profil löschen, wird es von einem Gerät oder einer Gruppe von Geräten entfernt, denen es zugewiesen war.</span><span class="sxs-lookup"><span data-stu-id="7ced9-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
+    <span data-ttu-id="f6660-129">Wenn Sie ein Profil löschen, wird es von einem Gerät oder einer Gruppe von Geräten entfernt, denen es zugewiesen war.</span><span class="sxs-lookup"><span data-stu-id="f6660-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
     
-### <a name="remove-a-profile"></a><span data-ttu-id="7ced9-130">Entfernen eines Profils</span><span class="sxs-lookup"><span data-stu-id="7ced9-130">Remove a profile</span></span>
+### <a name="remove-a-profile"></a><span data-ttu-id="f6660-130">Entfernen eines Profils</span><span class="sxs-lookup"><span data-stu-id="f6660-130">Remove a profile</span></span>
 
-1. <span data-ttu-id="7ced9-131">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**.</span><span class="sxs-lookup"><span data-stu-id="7ced9-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="f6660-131">Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**.</span><span class="sxs-lookup"><span data-stu-id="f6660-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="7ced9-132">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich **keine** aus der Dropdownliste \*\*\*\* \> zugewiesenes Profil **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7ced9-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="f6660-132">Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich **keine** aus der Dropdownliste **Assigned profile** \> zugewiesenes Profil **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="f6660-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
     
