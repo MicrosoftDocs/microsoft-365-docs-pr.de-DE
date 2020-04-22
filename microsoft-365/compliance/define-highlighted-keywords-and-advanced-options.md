@@ -1,5 +1,5 @@
 ---
-title: Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
+title: Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'Hier erfahren Sie, wie Sie benutzerdefinierte Stichwörter zur Relevanz hinzufügen können, um relevante Dateien bei der Kennzeichnung in Office 365 Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.  '
-ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'Hier erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zur Relevanz hinzufügen können, um relevante Dateien beim Tagging in Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.  '
+ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556763"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630552"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Advanced eDiscovery (klassisch)
 

@@ -1,5 +1,5 @@
 ---
-title: Erteilen von Postfachberechtigungen für einen anderen Benutzer in Office 365 – Administratorhilfe
+title: Erteilen von Postfachberechtigungen für einen anderen Benutzer – Administratorhilfe
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Erfahren Sie, wie Sie einem Benutzer die Berechtigung erteilen, auf das Postfach eines anderen Benutzers zuzugreifen. Damit erhält der Benutzer das Recht, E-Mails zu lesen und E-Mails aus dem Postfach des anderen Benutzers zu senden. '
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151347"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617170"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Erteilen von Postfachberechtigungen für einen anderen Benutzer in Office 365 – Administratorhilfe
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Erteilen von Postfachberechtigungen für einen anderen Benutzer – Administratorhilfe
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ Postfachberechtigungen ermöglichen es Ihnen, einem anderen Benutzer Lese-/Schre
   
 Der erste Schritt zum Einrichten von Berechtigungen ist die Entscheidung, welche Aktionen Sie dem anderen Benutzer im angegebenen Postfach erlauben möchten. Sie können einem Benutzer erlauben, E-Mails aus dem Postfach zu lesen, E-Mails im Auftrag eines anderen Benutzers zu senden und E-Mails so aussehen zu lassen, als ob sie über dieses Postfach gesendet wurden. In folgenden Artikeln finden Sie Informationen, wie die einzelnen Arten von Berechtigungen eingerichtet werden:
   
-- [Lesen von E-Mails aus dem Postfach eines anderen Benutzers](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Lesen von E-Mails aus dem Postfach eines anderen Benutzers](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Senden von E-Mails aus dem Postfach eines anderen Benutzers](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [Senden von E-Mails im Auftrag eines Benutzers](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [Senden von E-Mails aus dem Postfach eines anderen Benutzers](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Senden von E-Mails im Auftrag eines anderen Benutzers](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Ändern der Weitergabe:**
   

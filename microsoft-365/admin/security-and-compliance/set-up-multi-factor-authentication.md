@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: In diesem Artikel erfahren Sie, wie Sie Sicherheitsstandards zum Einrichten der mehrstufigen Authentifizierung für Benutzer verwenden.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4a829aa597596564b9c2f468e72f3a766b198372
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627680"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665632"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
 > [!IMPORTANT]
-> Wenn Sie Ihr Abonnement oder eine Testversion nach dem 21. Oktober 2019 gekauft haben und Sie unerwarteterweise zur MFA aufgefordert werden, wurden [Sicherheitsstandards](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) für Ihr Abonnement automatisch aktiviert.
+> Wenn Sie Ihr Abonnement oder eine Testversion nach dem 21. Oktober 2019 gekauft haben und Sie unerwarteterweise zur Eingabe einer mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) aufgefordert werden, wurden [Sicherheitsstandards](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) automatisch für Ihr Abonnement aktiviert.
 
-Für jedes neue Microsoft 365-Abonnement werden automatisch Sicherheitsstandards aktiviert. Dies bedeutet, dass jeder Benutzer die mehrstufige Authentifizierung (MFA) einrichten und die Authenticator-App auf seinem mobilen Gerät installieren muss. Weitere Informationen finden Sie unter [Einrichten der Überprüfung in zwei Schritten für Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
+Für jedes neue Microsoft 365-Abonnement werden automatisch [Sicherheitsstandards](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) aktiviert. Dies bedeutet, dass jeder Benutzer die Multi-Factor Authentication (MFA) einrichten und die Microsoft Authenticator-App auf seinem mobilen Gerät installieren muss. Weitere Informationen finden Sie unter [Einrichten von MFA für ein Microsoft 365-Konto](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 Für die folgenden neun Administratorrollen ist bei jeder Anmeldung eine zusätzliche Authentifizierung erforderlich:
 
@@ -48,35 +48,30 @@ Für die folgenden neun Administratorrollen ist bei jeder Anmeldung eine zusätz
 - Benutzeradministrator
 - Authentifizierungsadministrator
 
-Alle anderen Benutzer werden bei Bedarf zu einer weiteren Authentifizierung aufgefordert. Weitere Informationen hierzu finden Sie unter [Was sind Standardsicherheitseinstellungen?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Alle anderen Benutzer werden bei Bedarf zu einer weiteren Authentifizierung aufgefordert.
 
 > [!NOTE]
-> Sie müssen ein globaler Administrator sein, um die mehrstufige Authentifizierung einzurichten oder zu ändern. <br><br>
+> Sie müssen ein globaler Administrator sein, um MFA einzurichten oder zu ändern. <br><br>
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-Wenn Sie zuvor die mehrstufige Authentifizierung mit Basisrichtlinien eingerichtet haben, müssen Sie [diese deaktivieren und die Standardsicherheitseinstellungen aktivieren](#move-from-baseline-policies-to-security-defaults). Wenn Sie hingegen über Microsoft 365 Business verfügen oder Ihr Abonnement [Azure Active Directory Premium 1 oder Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/) enthält, können Sie auch Richtlinien für den [bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) einrichten. Um Richtlinien für bedingten Zugriff zu verwenden, müssen Sie sicherstellen, dass die [moderne Authentifizierung](#enable-modern-authentication-for-your-organization) aktiviert ist.
+Wenn Sie zuvor MFA mit Basisrichtlinien eingerichtet haben, [müssen Sie diese deaktivieren, um Sicherheitsstandards zu aktivieren](#move-from-baseline-policies-to-security-defaults). Wenn Sie jedoch über Microsoft 365 Business verfügen oder Ihr Abonnement [Azure Active Directory Premium P1 oder Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)enthält, können Sie auch Richtlinien für [bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) einrichten. Um Richtlinien für bedingten Zugriff zu verwenden, müssen Sie sicherstellen, dass die Sicherheitseinstellungen deaktiviert sind und die [moderne Authentifizierung](#enable-modern-authentication-for-your-organization) aktiviert ist.
 
 > [!TIP]
-> Wenn Sie Ihren Benutzern erklären möchten, wie die Authenticator-App eingerichtet wird, lesen Sie [Verwenden von Microsoft Authenticator mit Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
+> Um Ihren Benutzern zu erklären, wie Sie die Microsoft Authenticator-App einrichten, lesen Sie [Verwenden von Microsoft Authenticator mit Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411).
 
 ## <a name="manage-security-defaults"></a>Verwalten von Sicherheitsstandards
 
-1. Melden Sie sich mit Ihren globalen Administratoranmeldeinformationen beim [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) an.
-2. Wechseln Sie zu [Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+1. Melden Sie sich beim [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) mit globalen Administratoranmeldeinformationen an.
+2. Wechseln Sie zur [Seite Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 3. Wählen Sie am unteren Rand der Seite **Sicherheitsstandards verwalten** aus.
-4. Wählen Sie **Ja** aus, um Sicherheitsstandards zu aktivieren, und **Nein**, um Sicherheitsstandards zu deaktivieren.
+4. Wählen Sie **Ja** aus, um Sicherheitsstandards zu aktivieren, und **Nein** , um Sicherheitsstandards zu deaktivieren, und wählen Sie dann **Speichern**aus.
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Von Basisrichtlinien zu Sicherheitsstandards wechseln
 
-1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) die Option **Setup** aus.
-
-2. Wählen Sie neben **Anmeldung und Sicherheit** unter **Anmeldung sicherer machen** die Option **Anzeigen** aus.
-
-3. Wählen Sie unter **Anmeldung sicherer machen** die Option **Verwalten** aus. 
-
-4. Wählen Sie auf der Seite **bedingte Zugriffs-Richtlinien** jede Basisrichtlinie aus, die **auf**ist, und legen Sie Sie auf **Off**fest.
-5. Wechseln Sie zur Seite [Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-6. Klicken Sie unten auf der Seite auf **Sicherheitsstandards verwalten**, und wählen Sie im Bereich **Sicherheitsstandard Einstellungen aktivieren** die Option **Sicherheits Standardwerte aktivieren** auf **Ja**, und klicken Sie dann auf **Speichern**. 
+1. Wechseln Sie zur [Seite bedingte Zugriffs-Richtlinien](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
+2. Wählen Sie die einzelnen Basisrichtlinien **aus, und legen** Sie die **Option Richtlinie aktivieren** auf **aus**fest.
+3. Wechseln Sie zur [Seite Azure Active Directory-Eigenschaften](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+4. Klicken Sie unten auf der Seite auf **Sicherheitsstandards verwalten**, und wählen Sie im Bereich **Sicherheitsstandard Einstellungen aktivieren** die Option **Sicherheits Standardwerte aktivieren** auf **Ja**, und klicken Sie dann auf **Speichern**. 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren der modernen Authentifizierung für Ihre Organisation
 

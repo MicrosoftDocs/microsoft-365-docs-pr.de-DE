@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Wechseln Sie manuell Microsoft 365 for Business-Abonnements, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636534"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707511"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Manuelles Wechseln von Microsoft 365 for Business-Plänen
 
@@ -84,13 +84,9 @@ Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen
 
     Das Abonnement, von dem die Benutzer wechseln sollen, und das Abonnement, auf das die Benutzer umsteigen sollen, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Überprüfen Sie, dass beide Abonnements unter **AKTIV** aufgeführt werden. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Das neue Microsoft 365 for Business-Abonnement mit verfügbaren Lizenzen**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Überprüfen, dass ausreichend Lizenzen für jeden Benutzer bereitstehen**
 
-    Jeder Benutzer benötigt eine Lizenz, die dem jeweiligen Abonnement entspricht. Wenn beispielsweise zehn Benutzer auf Office 365 Enterprise E5 umsteigen sollen, vergewissern Sie sich, dass Sie über zehn Lizenzen verfügen. In der hier angezeigten Abbildung wurden zehn Lizenzen für Office 365 Enterprise E5 erworben, und alle zehn Lizenzen können zugewiesen werden.
+    Jeder Benutzer benötigt eine Lizenz, die dem jeweiligen Abonnement entspricht. Wenn Sie also zehn Benutzer zu Microsoft 365 Business Premium migrieren möchten, müssen Sie sicherstellen, dass zehn Lizenzen verfügbar sind. 
 
 4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?** Wechseln Sie zur Seite **Abonnements** , und [kaufen Sie Lizenzen für Ihr Microsoft 365 for Business-Abonnement](../licenses/buy-licenses.md).
   
@@ -139,8 +135,6 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
     > [!TIP]
     > Wenn Sie die für den Benutzer verfügbaren Dienste einschränken möchten, setzen Sie die Umschaltflächen für die Dienste, die Sie für diesen Benutzer entfernen möchten, auf die Stellung **Aus**. Soll der Benutzer beispielsweise Zugriff auf alle verfügbaren Dienste mit Ausnahme von Skype for Business Online haben, können Sie die Umschaltfläche für den Skype for Business Online-Dienst auf die Stellung **Aus** setzen.
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Wechseln Sie die Umschaltfläche für Lizenzen, die dieser Benutzer nicht mehr benötigt, in die Position **aus** .
 
 6. Wählen Sie unten im Bereich **Produktlizenzen** die Option **Close** \> **Close** **zuweisen** \> aus.
@@ -149,19 +143,19 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a> , oder wählen Sie **Benutzer** \> **aktive**Benutzer aus.
+1. Wechseln Sie im Admin Center zur Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zur Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">aktive Benutzer</a> .
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
@@ -176,8 +170,6 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
     > [!TIP]
     > - Wenn Sie die für den Benutzer verfügbaren Dienste einschränken möchten, setzen Sie die Umschaltflächen für die Dienste, die Sie für diesen Benutzer entfernen möchten, auf die Stellung **Aus**. Soll der Benutzer beispielsweise Zugriff auf alle verfügbaren Dienste mit Ausnahme von Skype for Business Online haben, können Sie die Umschaltfläche für den Skype for Business Online-Dienst auf die Stellung **Aus** setzen.
     > - Alle vorherigen Lizenzzuweisungen für die ausgewählten Benutzer werden entfernt.
-  
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. Wählen Sie unten im Bereich **Vorhandene Produkte ersetzen** nacheinander **Ersetzen** \> **Schließen** aus.
 

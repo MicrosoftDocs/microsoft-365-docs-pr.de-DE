@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Office 365 eDiscovery-Export Tools in Microsoft Edge
+title: Verwenden des eDiscovery-Export Tools in Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie müssen die ClickOnce-Unterstützung aktivieren, um die neueste Version von Microsoft Edge zum Herunterladen von Suchergebnissen aus der Inhaltssuche und von eDiscovery im Security and Compliance Center zu verwenden.
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710344"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632380"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Verwenden des Office 365 eDiscovery-Export Tools in Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Verwenden des eDiscovery-Export Tools in Microsoft Edge
 
-Aufgrund der letzten Änderungen an der neuesten Version von Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Um das eDiscovery-Export Tool Microsoft Office 365 zum Herunterladen von Inhaltssuche oder eDiscovery-Suchergebnissen weiterhin zu verwenden, müssen Sie entweder [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) verwenden oder die ClickOnce-Unterstützung in der neuesten Version von Microsoft Edge aktivieren.
+Aufgrund der letzten Änderungen an der neuesten Version von Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Um das eDiscovery-Export Tool zum Herunterladen der Inhaltssuche oder der eDiscovery-Suchergebnisse weiter verwenden zu können, müssen Sie entweder [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) verwenden oder die ClickOnce-Unterstützung in der neuesten Version von Microsoft Edge aktivieren.
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>Aktivieren der ClickOnce-Unterstützung in Microsoft Edge
 
@@ -49,7 +49,7 @@ Aufgrund der letzten Änderungen an der neuesten Version von Microsoft Edge ist 
 
    ![Klicken Sie auf öffnen, um das eDiscovery-Export Tool zu starten](../media/ClickOnceimage4.png)
 
-   Wenn das Microsoft Office-eDiscovery-Export Tool 365 nicht installiert ist, werden Sie mit einer Sicherheitswarnung aufgefordert, 
+   Wenn das eDiscovery-Export Tool nicht installiert ist, werden Sie mit einer Sicherheitswarnung aufgefordert, 
 
    ![Klicken Sie auf installieren, um das eDiscovery-Export Tool zu installieren](../media/ClickOnceimage5.png)
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Erstellen Sie ein Raum- oder Gerätepostfach, damit jeder im Unternehmen mithilfe von Outlook eine Reservierung für Besprechungen oder Ereignisse vornehmen. '
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361860"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628076"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Raum- und Gerätepostfächer
 
-Wenn Sie über einen Konferenzraum, einen Firmenwagen oder Geräte verfügen, die von allen Mitarbeitern verwendet werden, müssen Sie eine Möglichkeit finden, damit diese Ressourcen von jedem reserviert werden können. Die beste Möglichkeit ist, für jede Ressource ein Raum- oder Gerätepostfach in Office 365 zu erstellen. Sie können ein Postfach für den Konferenzraum auf der ersten Etage, die Medienausrüstung oder einen Umzugswagen erstellen.
+Wenn Sie über einen Konferenzraum, einen Firmenwagen oder Geräte verfügen, die von allen Mitarbeitern verwendet werden, müssen Sie eine Möglichkeit finden, damit diese Ressourcen von jedem reserviert werden können. Die beste Möglichkeit ist, für jede Ressource ein Raum- oder Gerätepostfach in Microsoft 365 zu erstellen. Sie können ein Postfach für den Konferenzraum auf der ersten Etage, die Medienausrüstung oder einen Umzugswagen erstellen.
   
 Sobald Sie ein Raum- oder Gerätepostfach erstellt haben, kann jeder im Unternehmen mithilfe von Outlook eine Reservierung für Besprechungen oder Ereignisse vornehmen. Informationen zum **Verwenden** und **Einrichten** solcher Postfächer sind auf den nächsten beiden Registerkarten enthalten. Hier folgen nun einige häufige Fragen zu Raum- und Gerätepostfächern. 
   
@@ -66,7 +66,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
   
 2. Klicken Sie auf **Hinzufügen**.
     
-3. Füllen Sie die Felder für den Raum bzw. das Gerät aus:<br/>![Hinzufügen eines Raumpostfachs in Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Füllen Sie die Felder für den Raum bzw. das Gerät aus:<br/>![Hinzufügen eines Raumpostfachs in Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Raum** oder **Gerät**: Der Postfachtyp, den Sie erstellen möchten.
     
@@ -105,7 +105,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Benötigt ein Raum- oder Gerätepostfach eine Produktlizenz?
 
-Nein. Obwohl für die meisten Benutzer in Ihrer Organisation eine Lizenz für die Nutzung von Office 365 erforderlich ist, müssen Sie einem Raum- oder Gerätepostfach keine Lizenz zuweisen.
+Nein. Obwohl für die meisten Benutzer in Ihrer Organisation eine Lizenz für die Nutzung von Microsoft 365 erforderlich ist, müssen Sie einem Raum- oder Gerätepostfach keine Lizenz zuweisen.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Benötige ich jemanden, der für das Buchen der Räume oder Geräte zuständig ist?
 

@@ -1,5 +1,5 @@
 ---
-title: Teilweise indizierte Elemente in der Inhaltssuche in Office 365
+title: Teilweise indizierte Elemente in der Inhaltssuche
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security & Compliance Center ausgeführt wird. '
-ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551226"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626679"
 ---
-# <a name="partially-indexed-items-in-content-search-in-office-365"></a>Teilweise indizierte Elemente in der Inhaltssuche in Office 365
+# <a name="partially-indexed-items-in-content-search"></a>Teilweise indizierte Elemente in der Inhaltssuche
 
-Eine Inhaltssuche, die Sie im Security & Compliance Center in Office 365 ausführen, enthält bei der Ausführung einer Suche automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
+Eine Inhaltssuche, die Sie im Security & Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive für Unternehmen Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. In Exchange enthält ein teilweise indiziertes Element normalerweise eine Datei (eines Dateityps, der nicht indiziert werden kann), die an eine e-Mail-Nachricht angefügt ist. Hier sind einige andere Gründe, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, wenn Sie eine Suche ausführen: 
   
 - Der Dateityp wird nicht erkannt oder wird nicht für die Indizierung unterstützt.
     
@@ -47,9 +47,9 @@ Eine Inhaltssuche, die Sie im Security & Compliance Center in Office 365 ausfüh
 - Eine Datei ist kennwortgeschützt.
     
 > [!NOTE]
-> Die meisten Office 365 Organisationen haben weniger als 1% des Inhalts auf dem Datenträger und weniger als 12% nach der Größe, die teilweise indiziert ist. Der Grund für den Unterschied zwischen Volumen und Größe besteht darin, dass größere Dateien eine höhere Wahrscheinlichkeit enthalten, Inhalte zu enthalten, die nicht vollständig indiziert werden können. 
+> Die meisten Organisationen haben weniger als 1% des Inhalts auf dem Datenträger und weniger als 12% nach der Größe, die teilweise indiziert ist. Der Grund für den Unterschied zwischen Volumen und Größe besteht darin, dass größere Dateien eine höhere Wahrscheinlichkeit enthalten, Inhalte zu enthalten, die nicht vollständig indiziert werden können. 
   
-Für rechtliche Untersuchungen muss Ihre Organisation möglicherweise teilweise indizierte Elemente überprüfen. Sie können auch angeben, ob teilweise indizierte Elemente beim Exportieren von Suchergebnissen auf einen lokalen Computer oder beim Vorbereiten der Ergebnisse zur Analyse mit Office 365 Advanced eDiscovery angegeben werden sollen. Weitere Informationen finden Sie unter unter [Suchen von teilweise indizierten Elementen in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+Für rechtliche Untersuchungen muss Ihre Organisation möglicherweise teilweise indizierte Elemente überprüfen. Sie können auch angeben, ob teilweise indizierte Elemente beim Exportieren von Suchergebnissen auf einen lokalen Computer oder beim Vorbereiten der Ergebnisse für die Analyse mit Advanced eDiscovery angegeben werden sollen. Weitere Informationen finden Sie unter unter [Suchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## <a name="file-types-not-indexed-for-search"></a>Für die Suche nicht indizierte Dateitypen
 

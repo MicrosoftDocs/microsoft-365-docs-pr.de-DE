@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den DLP-Berichten in Office 365 können Sie schnell sehen, wie viele DLP-Richtlinien übereinstimmen, Außerkraftsetzungen oder falsch positive Ergebnisse aufweisen. Überprüfen, ob Sie im Laufe der Zeit nach oben oder unten tendieren Filtern des Berichts auf unterschiedliche Weise und weitere Details anzeigen, indem Sie einen Punkt in einer Kurve im Diagramm auswählen.
-ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626291"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 
-Nachdem Sie die DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) erstellt haben, sollten Sie überprüfen, ob Sie wie beabsichtigt arbeiten und Ihnen dabei helfen, die Kompatibilität zu verbringen. Mit den DLP-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell Folgendes anzeigen:
+Nachdem Sie die DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) erstellt haben, sollten Sie überprüfen, ob Sie wie beabsichtigt arbeiten und Ihnen dabei helfen, die Kompatibilität zu verbringen. Mit den DLP-Berichten im Security &amp; Compliance Center können Sie schnell Folgendes anzeigen:
   
 - **Übereinstimmungen mit DLP-Richtlinien** Dieser Bericht zeigt die Anzahl der DLP-Richtlinien Übereinstimmungen im Laufe der Zeit an. Sie können den Bericht nach Datum, Ort, Richtlinie oder Aktion filtern. Sie können diesen Bericht für Folgendes verwenden: 
     
@@ -87,9 +87,9 @@ Um DLP-Berichte im Security & Compliance Center anzuzeigen, müssen Sie folgende
 
 Zur Verwendung der meisten Cmdlets für das Security &amp; Compliance Center müssen Sie folgende Aktionen ausführen:
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Herstellen einer Verbindung mit &amp; dem Security Compliance Center mithilfe von Remote-PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Verwenden eines dieser [Office 365 Security &amp; Compliance Center-Cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Verwenden eines dieser [Cmdlets &amp; für das Security Compliance Center](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 DLP-Berichte müssen jedoch Daten aus allen Office 365-Komponenten (einschließlich Exchange Online) abrufen. Aus diesem Grund sind die Cmdlets für die DLP-Berichte in Exchange Online PowerShell verfügbar – nicht in der &amp; Security Compliance Center-PowerShell. Zur Verwendung der Cmdlets für die DLP-Berichte müssen Sie daher folgende Aktionen ausführen:
   

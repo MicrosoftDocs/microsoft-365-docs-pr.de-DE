@@ -1,5 +1,5 @@
 ---
-title: Vergleichen von Gruppen in Office 365
+title: Vergleichen von Gruppen
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,33 +18,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: Hier erfahren Sie, welche Arten von Gruppen Sie in Office 365 verwenden können.
-ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Hier erfahren Sie, welche Arten von Gruppen Sie verwenden können.
+ms.openlocfilehash: 6f44214441c67e14d2cbc7ac12c0e2f3036acb2b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894599"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630713"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
 Im Microsoft 365 Admin Center können Sie im Bereich **Gruppen** die folgenden Gruppentypen erstellen und verwalten: 
 
-- **Office 365-Gruppen** werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet.
+- **Microsoft 365-Gruppen** werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet.
 - **Verteilergruppen** werden verwendet, um Benachrichtigungen an eine Gruppe von Personen zu senden.
 - **Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. SharePoint-Sites zu gewähren.
 - **E-Mail-aktivierte Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. Microsoft Office SharePoint Online zu gewähren und Benachrichtigungen per E-Mail an diese Benutzer zu senden.
 - **Freigegebene Postfächer** werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support.
 
-## <a name="office-365-groups"></a>Office 365-Gruppen
+## <a name="microsoft-365-groups"></a>Microsoft 365-Gruppen
 
-Office 365-Gruppen werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet. Bei jeder Office 365-Gruppe erhalten Mitglieder eine Gruppen-E-Mail und einen freigegebenen Arbeitsbereich für Unterhaltungen, Dateien und Kalenderereignisse sowie einen Planner.
+Microsoft 365-Gruppen werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet. Bei jeder Microsoft 365-Gruppe erhalten Mitglieder eine Gruppen-E-Mail und einen freigegebenen Arbeitsbereich für Unterhaltungen, Dateien und Kalenderereignisse sowie einen Planner.
 
 Sie können einer Gruppe Personen von außerhalb Ihres Unternehmens hinzufügen, sofern dieses Feature [vom Administrator aktiviert wurde](manage-guest-access-in-groups.md). Sie können externen Absendern das Senden von E-Mails an die Gruppen-E-Mail-Adresse gestatten.
 
-Office 365-Gruppen können [für die dynamische Mitgliedschaft in Azure Active Directory-konfiguriert](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type) werden, sodass Gruppenmitglieder basierend auf Benutzerattributen wie Abteilung, Standort, Position usw. automatisch hinzugefügt oder entfernt werden können.
+Microsoft 365-Gruppen können [für die dynamische Mitgliedschaft in Azure Active Directory-konfiguriert](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type) werden, sodass Gruppenmitglieder basierend auf Benutzerattributen wie Abteilung, Standort, Position usw. automatisch hinzugefügt oder entfernt werden können.
 
-Auf Office 365-Gruppen kann über Mobile Apps wie Outlook für iOS und Outlook für Android zugegriffen werden.
+Auf Microsoft 365-Gruppen kann über Mobile Apps wie Outlook für iOS und Outlook für Android zugegriffen werden.
 
 Gruppenmitglieder können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Gruppen-E-Mail-Adresse senden, sofern dieses Feature [vom Administrator aktiviert wurde](allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
@@ -56,7 +56,7 @@ Verteilergruppen eignen sich am besten für Situationen, in denen Sie Informatio
 
 ## <a name="security-groups"></a>Sicherheitsgruppen
 
-[Sicherheitsgruppen](../email/create-edit-or-delete-a-security-group.md) werden verwendet, um den Zugriff auf Office 365-Ressourcen wie z. B. SharePoint zu gewähren. Sicherheitsgruppen können die Verwaltung vereinfachen, weil Sie nur die Gruppe verwalten müssen, anstatt Benutzer zu jeder Ressource einzeln hinzuzufügen.
+[Sicherheitsgruppen](../email/create-edit-or-delete-a-security-group.md) werden verwendet, um den Zugriff auf Microsoft 365-Ressourcen wie z. B. SharePoint zu gewähren. Sicherheitsgruppen können die Verwaltung vereinfachen, weil Sie nur die Gruppe verwalten müssen, anstatt Benutzer zu jeder Ressource einzeln hinzuzufügen.
 
 Sicherheitsgruppen können Benutzer oder Geräte enthalten. Das Erstellen einer Sicherheitsgruppe für Geräte kann mit Verwaltungsdiensten für mobile Geräte (z. B. Intune) erfolgen.
 
@@ -76,8 +76,8 @@ Freigegebene Postfächer können externe E-Mails empfangen, wenn der Administrat
 
 Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
 
-Aktuell ist es nicht möglich, ein freigegebenes Postfach zu einer Office 365-Gruppe zu migrieren. Möchten Sie dies tun? Erzählen Sie uns davon. **[Stimmen Sie hier ab](https://go.microsoft.com/fwlink/?linkid=871518)**.
+Aktuell ist es nicht möglich, ein freigegebenes Postfach zu einer Microsoft 365-Gruppe zu migrieren. Möchten Sie dies tun? Erzählen Sie uns davon. **[Stimmen Sie hier ab](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Weitere Informationen zu Office 365-Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Informationen zu Microsoft 365-Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

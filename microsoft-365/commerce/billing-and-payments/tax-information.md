@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business-Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635004"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708131"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -94,7 +94,7 @@ Diese Länder können Ihre MwSt-Nummer oder eine lokale Entsprechung auf Ihren A
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
 
-Wenn Sie Office 365-Dienste in der Europäischen Union kaufen, unterliegt dieser Kauf der Mehrwertsteuer/Umsatzsteuer (MwSt/Ust).
+Wenn Sie Microsoft 365-Dienste in der Europäischen Union kaufen, unterliegt diese Anschaffung der Mehrwertsteuer.
   
 - Wenn Sie in einem Mitgliedsstaat der Europäischen Union ansässig sind und Ihre gültige lokale USt-ID nicht angeben, wendet Microsoft Ireland Operations Ltd. den aktuellen lokalen Mehrwertsteuersatz basierend auf dem Abrechnungsland an, das für Ihr Konto festgelegt ist.
 
@@ -154,13 +154,13 @@ Wenn die Rechnung von einem anderen Standort ausgestellt wird, gilt die lokale M
 
 In den USA und Kanada gelten, je nach Standort, verschiedene Steuersätze. Wenn Sie sich in Puerto Rico befinden, wird die lokale Mehrwertsteuer angewendet.
   
-Wenn Ihre Abrechnung über Microsoft Corporation erfolgt ([das können Sie auf der Rechnung ersehen](view-your-bill-or-invoice.md)) und Sie sich außerhalb der USA, Kanadas und Puerto Ricos für Office 365 registriert haben, wird im Allgemeinen keine Steuer in Rechnung gestellt.
+Wenn Ihre Abrechnung von der Microsoft Corporation ausgeführt wird ([Siehe Rechnung](view-your-bill-or-invoice.md)), und Sie sich für Microsoft 365 außerhalb der USA, Kanadas und Puerto Ricos angemeldet haben, wird die Steuer in der Regel nicht belastet.
 
 ## <a name="how-taxes-are-calculated"></a>Berechnung der Steuern
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Zum Beispiel:
+Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 

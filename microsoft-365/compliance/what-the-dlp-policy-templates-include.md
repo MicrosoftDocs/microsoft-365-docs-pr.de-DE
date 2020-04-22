@@ -17,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Bei der Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Office 365 Security Compliance Center stehen vorgefertigte Richtlinienvorlagen zur Verfügung, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem US-Krankenversicherungsgesetz (HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
-ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem u.s.-Krankenversicherungsgesetz (HIPAA), dem US Gramm-Leach-Bliley Act (GLBA) oder dem US-Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
+ms.openlocfilehash: 622a613fd0f43a7ad23c25ab52460181a8931e7f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597172"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626271"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Inhalt der DLP-Richtlinienvorlagen
 
-Bei der Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Office 365 Security Compliance Center stehen vorgefertigte Richtlinienvorlagen zur Verfügung, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem US-Krankenversicherungsgesetz (HIPAA), u.s. Gramm-Leach-Bliley Act (GLBA) oder u.s. Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
+Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem u.s.-Krankenversicherungsgesetz (HIPAA), dem US Gramm-Leach-Bliley Act (GLBA) oder dem US-Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
   
 ## <a name="australia-financial-data"></a>Finanzdaten – Australien
 

@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Office 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204056"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621270"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitätsberichte im Microsoft 365 Admin Center
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
-Sie können ganz einfach sehen, wie Personen in Ihrem Unternehmen die Office 365-Dienste nutzen. So können Sie beispielsweise erkennen, wer einen Dienst häufig nutzt und die Kontingente ausschöpft, oder wer möglicherweise gar keine Office 365-Lizenz benötigt.
+Sie können ganz einfach sehen, wie Personen in Ihrem Unternehmen die Microsoft 365-Dienste nutzen. So können Sie beispielsweise erkennen, wer einen Dienst häufig nutzt und die Kontingente ausschöpft, oder wer möglicherweise gar keine Microsoft 365-Lizenz benötigt.
   
 Berichte sind für die letzten 7 Tage, 30 Tage, 90 Tage und 180 Tage verfügbar.  Es stehen nicht sofort Daten für alle Berichtszeiträume zur Verfügung. Die Berichte sind erst nach 48 Stunden verfügbar.
   
@@ -58,7 +58,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 ::: moniker-end
 
    
-2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch auf ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (E-Mail, OneDrive usw.) klicken, um weitere Informationen anzuzeigen. <br/>![Das Office 365-Dashboard "Verwendungsübersicht"](../../media/usage-report-dashboard.png)
+2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch auf ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (E-Mail, OneDrive usw.) klicken, um weitere Informationen anzuzeigen. <br/>![Das Dashboard "Verwendung"](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Wer kann Berichte sehen
 
@@ -87,7 +87,6 @@ Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](..
 Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
   
 - [E-Mail-Aktivitäten](email-activity.md)
-- [Forms-Aktivitäten](forms-activity.md)
     
 - [Postfachnutzung](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 - [Aktive Benutzer](active-users.md)
   
 - [Nutzung der E-Mail-Apps](email-apps-usage.md)
+
+- [Forms-Aktivitäten](forms-activity.md)
   
-- [Office 365-Gruppen](office-365-groups.md)
+- [Microsoft 365-Gruppen](office-365-groups.md)
   
 - [OneDrive for Business-Benutzeraktivität](onedrive-for-business-activity.md)
   
 - [Nutzung von OneDrive for Business](onedrive-for-business-usage.md)
+
 - [ProPlus-Nutzung](microsoft365-apps-usage.md)
   
 - [Nutzung der SharePoint-Website](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ Wenn Sie beim Generieren von Berichten Benutzerinformationen ausblenden möchten
   
 Die Benutzerliste sieht wie folgt aus:
   
-![Office 365-Berichte – anonymisierte Benutzerliste](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Berichte – anonymisierte Benutzerliste](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Es dauert ein paar Minuten, bis diese Änderungen für die Berichte im Dashboard wirksam werden. Diese Einstellung gilt auch für die Berichte-API.
   
@@ -184,4 +186,3 @@ Wenn Sie jedoch einen bestimmten Tag auswählen (siehe Nummer 3), wird in dem Be
 
 [Berichte im Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
+title: Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery in Microsoft 365 beschrieben.
-ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3296fbbd04f2baa635fdf0330fc65b927a21448a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626761"
 ---
-# <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
+# <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 
 Die erweiterte eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen eDiscovery-und Analysefunktionen in Office 365 auf. Diese neue Lösung, die als *Erweiterte eDiscovery*bezeichnet wird, bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe Untersuchungen in Ihrer Organisation reagieren. Außerdem können Legal Teams den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren. 
 
@@ -44,7 +44,7 @@ Hier erfahren Sie, wie Advanced eDiscovery den EDRM-Workflow auf hohem Niveau un
 
 - **Erhaltung.** Um Daten beizubehalten und zu schützen, die für eine Untersuchung relevant sind, können Sie mit Advanced eDiscovery eine rechtliche Aufbewahrungspflicht für die mit den Depotbanken verknüpften Datenquellen in einem Fall setzen. Sie können auch Daten für nicht-Freiheitsentzug speichern. Advanced eDiscovery verfügt auch über einen integrierten Kommunikations Workflow, sodass Sie Benachrichtigungen für rechtliche Aufbewahrungen an Verwalter senden und deren Bestätigungen nachverfolgen können.
 
-- **Auflistung.** Nachdem Sie die für die Untersuchung relevanten Datenquellen identifiziert (und aufbewahrt) haben, können Sie das integrierte Such Tool in der erweiterten eDiscovery-Suche für und Sammeln von Livedaten aus den Freiheits Datenquellen (und ggf. auch aus Datenquellen ohne Freiheitsentzug) verwenden, die möglicherweise für den Fall relevant.
+- **Auflistung.** Nachdem Sie die für die Untersuchung relevanten Datenquellen identifiziert (und aufbewahrt) haben, können Sie das integrierte Such Tool in der erweiterten eDiscovery-Suche für und Sammeln von Livedaten aus den für den Fall relevanten Datenquellen (und ggf. auch aus Datenquellen ohne Freiheitsentzug) verwenden.
 
 - **Verarbeitung.** Nachdem Sie alle relevanten Daten für den Fall gesammelt haben, ist der nächste Schritt die Verarbeitung zur weiteren Überprüfung und Analyse. In Advanced eDiscovery werden die in der Sammlungsphase identifizierten in-Place-Daten in einen Azure-Speicherort (als *Überprüfungs*bezeichnet) kopiert, der eine statische Ansicht der Falldaten bereitstellt. 
  
@@ -80,7 +80,7 @@ Wenn Sie einem Fall eine Depotstelle und die entsprechenden Datenquellen für de
 
 ## <a name="collecting-case-data"></a>Erfassen von Falldaten
 
-Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge für in-Place-Freiheitsentzug-und nicht-Freiheitsentzug-Datenquellen in Office 365 für für den Fall relevante Inhalte zu erstellen. Sie können abfragebasierte Suchvorgänge erstellen und ausführen (unter Verwendung von Schlüsselwörtern und Bedingungen), um eine Gruppe von e-Mail-Nachrichten und Dokumenten zu identifizieren, die für den Fall relevant sind und die Sie in den folgenden Schritten im eDiscovery-Workflow weiter überprüfen und analysieren möchten. Sie können eine oder mehrere Suchvorgänge erstellen, die mit der Anfrage verknüpft sind. Sie können auch das Such Tool verwenden, um eine Vorschau von Beispiel Dokumenten anzuzeigen und Suchstatistiken anzuzeigen, die Sie beim verfeinern und verbessern der Suchergebnisse unterstützen. Nachdem Sie sichergestellt haben, dass die Suchergebnisse alle für den Fall relevanten Daten enthalten, fügen Sie die Suchergebnisse zu einem Überprüfungs für die weitere Überprüfung, Analyse und zum ausmerzen hinzu. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall in Advanced eDiscovery](collecting-data-for-ediscovery.md).
+Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge für in-Place-Freiheitsentzug-und nicht-Freiheitsentzug-Datenquellen für relevante Inhalte zu erstellen. Sie können abfragebasierte Suchvorgänge erstellen und ausführen (unter Verwendung von Schlüsselwörtern und Bedingungen), um eine Gruppe von e-Mail-Nachrichten und Dokumenten zu identifizieren, die für den Fall relevant sind und die Sie in den folgenden Schritten im eDiscovery-Workflow weiter überprüfen und analysieren möchten. Sie können eine oder mehrere Suchvorgänge erstellen, die mit der Anfrage verknüpft sind. Sie können auch das Such Tool verwenden, um eine Vorschau von Beispiel Dokumenten anzuzeigen und Suchstatistiken anzuzeigen, die Sie beim verfeinern und verbessern der Suchergebnisse unterstützen. Nachdem Sie sichergestellt haben, dass die Suchergebnisse alle für den Fall relevanten Daten enthalten, fügen Sie die Suchergebnisse zu einem Überprüfungs für die weitere Überprüfung, Analyse und zum ausmerzen hinzu. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall in Advanced eDiscovery](collecting-data-for-ediscovery.md).
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Überprüfen und Analysieren von Case-Daten
 

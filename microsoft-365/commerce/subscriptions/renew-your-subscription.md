@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Erfahren Sie, wie Sie Ihr Microsoft 365 for Business-Abonnement mit einem Product Key erneuern und die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636559"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707655"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Erneuern von Microsoft 365 for Business
 
@@ -48,11 +48,10 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
 
 ::: moniker range="o365-worldwide"
 
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
 2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
- 
+
 3. Wählen Sie unter **Abrechnung**neben **News on** oder **expire on**die Option **Bearbeiten**aus.
 
 4. Wählen Sie im Bereich **wiederkehrende Abrechnungseinstellungen** die Option **ausschalten aus,** um Sie zu deaktivieren. Wenn die wiederkehrende Abrechnung bereits deaktiviert ist, wählen Sie **monatlich** oder **einmal** aus, um Sie zu aktivieren.
@@ -68,11 +67,7 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
 
 ::: moniker range="o365-germany"
   
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
-
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
  
@@ -91,14 +86,10 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
 
 ::: moniker range="o365-21vianet"
   
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
-
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
- 
+
 3. Um die **wiederkehrende Abrechnung**zu aktivieren, schalten Sie die Umschaltfläche **auf ein ein**.
 
     ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

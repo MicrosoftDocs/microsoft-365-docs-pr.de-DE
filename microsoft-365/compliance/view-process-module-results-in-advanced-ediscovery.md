@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Ergebnisse des Prozess Moduls in Office 365 Advanced eDiscovery
+title: Anzeigen der Ergebnisse des Prozess Moduls in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'In diesem Artikel erfahren Sie, wie Sie die Ergebnisse eines in Office 365 Advanced eDiscovery ausgeführten Prozess Moduls finden, einschließlich Vorgangsstatus und Prozesszusammenfassung.  '
-ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Hier erfahren Sie, wie Sie die Ergebnisse eines in Advanced eDiscovery ausgeführten Prozess Moduls finden, einschließlich Vorgangsstatus und Prozesszusammenfassung.  '
+ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557603"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626311"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Anzeigen der Ergebnisse des Prozess Moduls in Advanced eDiscovery (klassisch)
 
@@ -110,7 +110,7 @@ In Prepare \> Process \> results \> Last Process Errors werden Details der Fehle
   
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Ausführung des Prozess Moduls und Laden von Daten](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

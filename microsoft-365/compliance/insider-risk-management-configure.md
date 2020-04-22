@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit dem Insider Risikomanagement
+title: Erste Schritte mit dem Insider-Risikomanagement
 description: Konfigurieren Sie das Insider Risikomanagement in Ihrer Organisation.
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097190"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637483"
 ---
-# <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider Risikomanagement
+# <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
-Verwenden Sie Richtlinien für Insider-Risikomanagement, um riskante Aktivitäten und Verwaltungstools zu identifizieren, mit denen Aktionen für Risikowarnungen in Ihrer Organisation durchführen werden. Führen Sie die folgenden Schritte aus, um Voraussetzungen einzurichten und eine Richtlinie für Insider-Risikomanagement zu konfigurieren.
+Verwenden Sie Richtlinien für das Insider-Risikomanagement, um riskante Aktivitäten und Verwaltungstools zu identifizieren, um Maßnahmen bei Risikoalarmen in Ihrer Organisation zu ergreifen. Führen Sie die folgenden Schritte aus, um Voraussetzungen einzurichten und eine Richtlinie für Insider-Risikomanagement zu konfigurieren.
 
 >[!IMPORTANT]
 >Die Microsoft 365 Insider Risk Management-Lösung bietet eine Mandantenebene, mit der Kunden die interne Steuerung auf Benutzerebene vereinfachen können. Administratoren auf Mandantenebene können Berechtigungen einrichten, um Zugriff auf diese Lösung für Mitglieder Ihrer Organisation bereitzustellen und Daten-Konnektoren im Microsoft 365 Compliance Center einzurichten, um relevante Daten zu importieren, um die Identifizierung potenziell riskanter Aktivitäten auf Benutzerebene zu unterstützen. Kunden bestätigen Einblicke in Bezug auf das Verhalten, den Charakter oder die Leistung der einzelnen Benutzer, die wesentlich im Zusammenhang mit der Beschäftigung stehen, können vom Administrator berechnet und anderen Benutzern in der Organisation zur Verfügung gestellt werden.
@@ -39,7 +39,7 @@ Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 3
 
 Benutzern, die in Richtlinien für das Insider Risikomanagement enthalten sind, muss eine der oben genannten Lizenzen zugewiesen sein.
 
-Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management ausprobieren möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Office 365-Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
+Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für das Insider Risikomanagement
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an. "" "" "" ""
 
-2. Wechseln Sie im Microsoft Office 365 Security and Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+2. Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
 3. Wählen Sie die Rollengruppe "Insider Risk Management" aus, der Sie Benutzer hinzufügen möchten, und wählen Sie dann **Rollengruppe bearbeiten**aus.
 
@@ -72,11 +72,11 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen. Wählen Sie **Schließen** aus, um die Schritte abzuschließen.
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Office 365 Überwachungsprotokolls
+## <a name="step-2-required-enable-the-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Überwachungsprotokolls
 
 Das Insider Risikomanagement verwendet Überwachungsprotokolle für Benutzer Einblicke und in Richtlinien konfigurierte Aktivitäten. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer Richtlinie für Insider Risiken zugeordnet sind, oder wenn sich eine Richtlinie ändert.
 
-Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
+Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Schritt 3 (optional): Konfigurieren der Voraussetzungen für Vorlagen
 

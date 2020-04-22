@@ -1,5 +1,5 @@
 ---
-title: Kunden-Lockbox-Anfragen in Office 365
+title: Kunden-Lockbox-Anforderungen
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211952"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637787"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 
-Dieser Artikel enthält Anleitungen zur Bereitstellung und Konfiguration für Kunden-Lockbox. Kunden-Lockbox unterstützt Anforderungen für den Zugriff auf Daten in Exchange Online, SharePoint Online und OneDrive für Unternehmen. Um die Unterstützung für andere Office 365 Dienste zu empfehlen, senden Sie eine Anforderung an [Office 365 UserVoice](https://office365.uservoice.com/).
+Dieser Artikel enthält Anleitungen zur Bereitstellung und Konfiguration für Kunden-Lockbox. Kunden-Lockbox unterstützt Anforderungen für den Zugriff auf Daten in Exchange Online, SharePoint Online und OneDrive für Unternehmen. Um die Unterstützung für andere Dienste zu empfehlen, senden Sie eine Anfrage an [Office 365 UserVoice](https://office365.uservoice.com/).
 
 Informationen zu den Optionen für die Lizenzierung von Benutzern, die von den Microsoft 365-Kompatibilitäts Angeboten profitieren, einschließlich dieses, ab dem 1. April 2020, finden Sie in der [Microsoft 365-Lizenzierungs Anleitung zur Sicherheit & Compliance](https://aka.ms/ComplianceSD).
 
@@ -42,7 +42,7 @@ Gelegentlich helfen Microsoft-Ingenieure bei der Problembehandlung und beim Behe
 
 Die folgenden Schritte beschreiben den typischen Workflow, wenn ein Microsoft-Techniker eine Kunden-Lockbox-Anforderung initiiert:
 
-1. Ein Benutzer in einer Organisation hat ein Problem mit dem Office 365 Postfach.
+1. Ein Benutzer in einer Organisation hat ein Problem mit seinem Microsoft 365-Postfach.
 
 2. Nachdem der Benutzer das Problem behoben, aber nicht beheben kann, öffnen Sie eine Supportanfrage mit dem Microsoft-Support.
 
@@ -56,7 +56,7 @@ Die folgenden Schritte beschreiben den typischen Workflow, wenn ein Microsoft-Te
 
    Jeder Benutzer, dem die Administratorrolle " [Customer Lockbox Access genehmigende](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) Person" im Microsoft 365 Admin Center zugewiesen ist, kann Kunden-Lockbox-Anforderungen genehmigen.
 
-6. Die genehmigende Person meldet sich beim Microsoft 365 Admin Center an und genehmigt die Anforderung. In diesem Schritt wird die Erstellung eines Überwachungsdatensatzes ausgelöst, der durch Durchsuchen des Office 365 Überwachungsprotokolls verfügbar ist. Weitere Informationen finden Sie unter [Auditing Customer Lockbox Requests](#auditing-customer-lockbox-requests).
+6. Die genehmigende Person meldet sich beim Microsoft 365 Admin Center an und genehmigt die Anforderung. In diesem Schritt wird die Erstellung eines Überwachungsdatensatzes ausgelöst, der durch Durchsuchen des Überwachungsprotokolls zur Verfügung steht. Weitere Informationen finden Sie unter [Auditing Customer Lockbox Requests](#auditing-customer-lockbox-requests).
 
    Wenn der Kunde die Anforderung ablehnt oder die Anforderung nicht innerhalb von 12 Stunden genehmigt, läuft die Anforderung ab, und dem Microsoft-Techniker wird kein Zugriff gewährt.
 
@@ -66,7 +66,7 @@ Die folgenden Schritte beschreiben den typischen Workflow, wenn ein Microsoft-Te
 7. Nachdem die genehmigende Person aus der Organisation die Anforderung genehmigt hat, erhält der Microsoft-Techniker die Genehmigungsnachricht, meldet sich beim Mandanten in Exchange Online an und behebt das Problem des Kunden. Microsoft-Techniker haben die angeforderte Dauer, um das Problem zu beheben, nach dem der Zugriff automatisch aufgehoben wird.
 
 > [!NOTE]
-> Alle von einem Microsoft-Techniker ausgeführten Aktionen werden im Office 365 Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
+> Alle von einem Microsoft-Techniker ausgeführten Aktionen werden im Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Aktivieren oder Deaktivieren von Kunden-Lockbox-Anforderungen
 
@@ -104,15 +104,15 @@ Sie können Kunden-Lockbox-Steuerelemente im Microsoft 365 Admin Center aktivier
 
 ## <a name="auditing-customer-lockbox-requests"></a>Überwachen von Kunden-Lockbox-Anforderungen
 
-Überwachungsdatensätze, die den Kunden-Lockbox-Anforderungen entsprechen, werden im Office 365 Überwachungsprotokoll protokolliert. Sie können auf diese Protokolle mithilfe des [Überwachungsprotokoll-Such Tools](search-the-audit-log-in-security-and-compliance.md) im Office 365 Security & Compliance Center zugreifen. Aktionen im Zusammenhang mit der Annahme oder Ablehnung einer Kunden-Lockbox-Anforderung und Aktionen, die von Microsoft-Ingenieuren ausgeführt werden (wenn Zugriffsanforderungen genehmigt werden) werden ebenfalls im Office 365 Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
+Überwachungsdatensätze, die den Kunden-Lockbox-Anforderungen entsprechen, werden im Überwachungsprotokoll protokolliert. Sie können auf diese Protokolle zugreifen, indem Sie das [Überwachungsprotokoll-Such Tool](search-the-audit-log-in-security-and-compliance.md) im Security & Compliance Center verwenden. Im Überwachungsprotokoll werden auch Aktionen im Zusammenhang mit der Annahme oder Ablehnung einer Kunden-Lockbox-Anforderung und von Microsoft-Ingenieuren durchgeführten Aktionen (wenn Zugriffsanforderungen genehmigt werden) im Überwachungsprotokoll protokolliert. Sie können diese Überwachungseinträge suchen und diese überprüfen.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Durchsuchen des Überwachungsprotokolls nach Aktivitäten im Zusammenhang mit Kunden-Lockbox-Anforderungen
 
-Bevor Sie das Überwachungsprotokoll zum Nachverfolgen von Anforderungen für Kunden-Lockbox verwenden können, müssen Sie einige Schritte ausführen, um die Überwachungsprotokollierung einzurichten. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Nachdem Sie das Setup abgeschlossen haben, führen Sie die folgenden Schritte aus, um eine Überwachungsprotokoll-Suchabfrage zu erstellen, um Überwachungseinträge im Zusammenhang mit Customer Lockbox zurückzugeben:
+Bevor Sie das Überwachungsprotokoll zum Nachverfolgen von Anforderungen für Kunden-Lockbox verwenden können, müssen Sie einige Schritte ausführen, um die Überwachungsprotokollierung einzurichten. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Nachdem Sie das Setup abgeschlossen haben, führen Sie die folgenden Schritte aus, um eine Überwachungsprotokoll-Suchabfrage zu erstellen, um Überwachungseinträge im Zusammenhang mit Customer Lockbox zurückzugeben:
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
   
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
 3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche & Ermittlungs** > **Überwachungsprotokoll-Suche**.
 
@@ -146,7 +146,7 @@ Bevor Sie das Überwachungsprotokoll zum Nachverfolgen von Anforderungen für Ku
 
 ### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Überwachungseintrag für eine Kunden-Lockbox-Zugriffsanforderung
 
-Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt oder ablehnt, wird ein Überwachungseintrag im Office 365 Überwachungsprotokoll protokolliert. Dieser Datensatz enthält die folgenden Informationen.
+Wenn eine Person in Ihrer Organisation eine Kunden-Lockbox-Anforderung genehmigt oder ablehnt, wird im Überwachungsprotokoll ein Überwachungseintrag protokolliert. Dieser Datensatz enthält die folgenden Informationen.
 
 | Audit Record-Eigenschaft| Beschreibung|
 |:---------- |:----------|
@@ -177,17 +177,17 @@ Die Aktionen, die von einem Microsoft-Techniker ausgeführt werden, nachdem eine
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-#### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>Für welche Office 365 Dienste wird die Kunden-Lockbox verwendet?
+#### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Auf welche Microsoft 365-Dienste wird Kunden-Lockbox angewendet?
 
 Kunden-Lockbox wird derzeit in Exchange Online, SharePoint Online und OneDrive für Unternehmen unterstützt.
 
-#### <a name="is-customer-lockbox-available-to-all-office-365-customers"></a>Ist die Kunden-Lockbox für alle Office 365 Kunden verfügbar?
+#### <a name="is-customer-lockbox-available-to-all-customers"></a>Ist die Kunden-Lockbox für alle Kunden verfügbar?
 
 Kunden-Lockbox ist in den Microsoft 365-oder Office 365 E5-Abonnements enthalten und kann mit einem Add-on für Informationsschutz und Compliance oder mit einem Advanced Compliance-Add-on-Abonnement zu anderen Plänen hinzugefügt werden. Weitere Informationen finden Sie unter [Pläne und Preise](https://products.office.com/business/office-365-enterprise-e5-business-software) .
 
 #### <a name="what-is-customer-content"></a>Was sind Kunden Inhalte?
 
-Kunden Inhalte sind die Daten, die von Benutzern Office 365 Diensten und Anwendungen erstellt wurden. Beispiele für Kunden Inhalte sind:
+Kunden Inhalte sind die Daten, die von Benutzern von Microsoft 365-Diensten und-Anwendungen erstellt wurden. Beispiele für Kunden Inhalte sind:
 
 - E-Mail-Text oder e-Mail-Anhänge
 
@@ -221,7 +221,7 @@ Ein globaler Administrator kann Kunden-Lockbox im Microsoft 365-oder Microsoft 3
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Was kann der Techniker tun, wenn ich eine Kunden-Lockbox-Anfrage genehmige, und woher weiß ich, was der Microsoft-Techniker getan hat?
 
-Nachdem Sie eine Kunden-Lockbox-Anforderung genehmigt haben, hat der Microsoft-Techniker diese erforderlichen Berechtigungen für den Zugriff auf Kunden Inhalte mithilfe von vorab genehmigten Cmdlets erteilt. Von Microsoft-Ingenieuren als Reaktion auf Kunden-Lockbox-Anforderungen ausgeführte Aktionen werden im Überwachungsprotokoll im Office 365 Security & Compliance Center protokolliert und zugänglich gemacht.
+Nachdem Sie eine Kunden-Lockbox-Anforderung genehmigt haben, hat der Microsoft-Techniker diese erforderlichen Berechtigungen für den Zugriff auf Kunden Inhalte mithilfe von vorab genehmigten Cmdlets erteilt. Von Microsoft-Ingenieuren als Reaktion auf Kunden-Lockbox-Anforderungen ausgeführte Aktionen werden im Überwachungsprotokoll im Security & Compliance Center protokolliert und zugänglich gemacht.
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Woher weiß ich, dass Microsoft den Genehmigungsprozess befolgt?
 
@@ -235,7 +235,7 @@ Nur ein globaler Administrator in Ihrer Organisation kann angeben, wer Kunden-Lo
 
 #### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>Was ist, wenn ich weitere Informationen zu einer Inhalts Zugriffsanforderung benötige, um Sie zu genehmigen?
 
-Jede Customer Lockbox-Anforderung enthält eine Office 365 Dienstanforderungsnummer. Sie können sich an den Microsoft-Support wenden und auf diese Servicenummer verweisen, um weitere Informationen zur Anforderung zu erhalten.
+Jede Kunden-Lockbox-Anforderung enthält eine Microsoft 365-Dienstanforderungsnummer. Sie können sich an den Microsoft-Support wenden und auf diese Servicenummer verweisen, um weitere Informationen zur Anforderung zu erhalten.
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Wie lange sind die Berechtigungen gültig, wenn eine Kunden-Lockbox-Anforderung genehmigt wird?
 
@@ -265,15 +265,15 @@ Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microso
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Wie gewährleistet Microsoft, dass ein Mitglied seiner Mitarbeiter in Office 365 Anwendungen keinen ständigen Zugriff auf Kunden Inhalte hat?
 
-Microsoft implementiert umfassende vorbeugende Maßnahmen durch Zugriffs Kontrollsysteme und Detektiv Maßnahmen, um Versuche zur Umgehung dieser Zugriffs Steuerungssysteme zu identifizieren und zu beheben. Office 365 arbeitet mit den Grundsätzen der geringsten Rechte und des Just-in-Time-Zugriffs. Daher verfügen keine Microsoft-Mitarbeiter über die Berechtigung für den regelmäßigen Zugriff auf Kunden Inhalte. Wenn die Berechtigung erteilt wird, ist Sie für eine beschränkte Dauer. 
+Microsoft implementiert umfassende vorbeugende Maßnahmen durch Zugriffs Kontrollsysteme und Detektiv Maßnahmen, um Versuche zur Umgehung dieser Zugriffs Steuerungssysteme zu identifizieren und zu beheben. Microsoft 365 arbeitet mit den Grundsätzen der geringsten Rechte und des Just-in-Time-Zugriffs. Daher verfügen keine Microsoft-Mitarbeiter über die Berechtigung für den regelmäßigen Zugriff auf Kunden Inhalte. Wenn die Berechtigung erteilt wird, ist Sie für eine beschränkte Dauer. 
 
-Office 365 verwendet ein Zugriffs Steuerungssystem namens *Lockbox* , um Anforderungen für Berechtigungen zu verarbeiten, die die Möglichkeit zum Ausführen von Betriebs-und Verwaltungsfunktionen innerhalb des Diensts ermöglichen. Ein Operator muss mithilfe von Lockbox Zugriff auf Kunden Inhalte anfordern, der dann eine zweite Person benötigt, um Maßnahmen für die Anforderung zu ergreifen (beispielsweise genehmigen), bevor der Zugriff erteilt wird. Diese zweite Person kann nicht der Anforderer sein und muss für die Genehmigung des Zugriffs auf Kunden Inhalte festgelegt werden. Nur wenn die Anforderung genehmigt wird, erwirbt der Operator temporären Zugriff auf Kunden Inhalte. Nach Ablauf des Höhen Zeitraums widerruft Lockbox den Zugriff.
+Microsoft 365 verwendet ein Zugriffs Steuerungssystem namens *Lockbox* , um Anforderungen für Berechtigungen zu verarbeiten, die die Möglichkeit zum Ausführen von Betriebs-und Verwaltungsfunktionen innerhalb des Diensts gewähren. Ein Operator muss mithilfe von Lockbox Zugriff auf Kunden Inhalte anfordern, der dann eine zweite Person benötigt, um Maßnahmen für die Anforderung zu ergreifen (beispielsweise genehmigen), bevor der Zugriff erteilt wird. Diese zweite Person kann nicht der Anforderer sein und muss für die Genehmigung des Zugriffs auf Kunden Inhalte festgelegt werden. Nur wenn die Anforderung genehmigt wird, erwirbt der Operator temporären Zugriff auf Kunden Inhalte. Nach Ablauf des Höhen Zeitraums widerruft Lockbox den Zugriff.
 
 Weitere Informationen zu allgemeinen Sicherheitsmethoden in Microsoft finden Sie in den [Online-Dienstbedingungen](https://www.microsoft.com/licensing/product-licensing/products) .
 
 #### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>Unter welchen Umständen benötigen Microsoft-Techniker Zugriff auf meine Inhalte?
 
-Das häufigste Szenario, in dem Microsoft-Ingenieure Zugriff auf Kunden Inhalte benötigen, besteht darin, dass der Kunde eine Supportanforderung für die Problembehandlung stellt. Ein grundlegendes Prinzip der Office 365 besteht darin, dass der Dienst ohne Microsoft-Zugriff auf Kunden Inhalte arbeitet. Fast alle von Microsoft ausgeführten Dienstvorgänge sind vollständig automatisiert, und die menschliche Beteiligung wird streng kontrolliert und von den Kundeninhalten abstrahiert. Das Ziel für Office 365 ist, dass der Zugriff auf Kunden Inhalte zur Unterstützung des Diensts erst dann erforderlich ist, wenn der Kunde eine bestimmte Anforderung für Microsoft Access genehmigt.
+Das häufigste Szenario, in dem Microsoft-Ingenieure Zugriff auf Kunden Inhalte benötigen, besteht darin, dass der Kunde eine Supportanforderung für die Problembehandlung stellt. Ein grundlegendes Prinzip von Microsoft 365 ist, dass der Dienst ohne Microsoft-Zugriff auf Kunden Inhalte arbeitet. Fast alle von Microsoft ausgeführten Dienstvorgänge sind vollständig automatisiert, und die menschliche Beteiligung wird streng kontrolliert und von den Kundeninhalten abstrahiert. Das Ziel für Microsoft 365 ist, dass der Zugriff auf Kunden Inhalte zur Unterstützung des Diensts erst dann erforderlich ist, wenn der Kunde eine bestimmte Anforderung für Microsoft Access genehmigt.
 
 #### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>Ich habe bereits gedacht, dass meine Daten mit der Microsoft-Cloud gesichert wurden, weshalb benötige ich die Kunden-Lockbox?
 

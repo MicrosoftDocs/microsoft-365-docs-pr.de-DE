@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43188988"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637797"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -35,7 +35,10 @@ Das FICIC verweist auf global anerkannte Standards einschließlich NIST SP 800-5
 
 NIST Cyber Framework (CSF) ist ein freiwilliges Framework, das aus Standards, Richtlinien und bewährten Methoden zum Verwalten von Cyber-bezogenen Risiken besteht. Microsoft-Cloud-Dienste wurden unabhängigen, FedRAMP mäßigen und hohen Baseline-Audits von Drittanbietern unterzogen und gemäß den FedRAMP-Standards zertifiziert. Durch eine validierte Bewertung, die von HITRUST, einer führenden Organisation für Sicherheit und Datenschutz bei der Entwicklung und Akkreditierung, durchgeführt wurde, ist Office 365 für die im NIST-GfK angegebenen Ziele zertifiziert.
 
-[Erfahren](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554) Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance-Score beschleunigen:
+Erfahren Sie, wie Sie Ihre NIST Cyber Framework-Bereitstellung mit Compliance Score und unserem Azure Security and Compliance Blueprint beschleunigen:
+
+- [Download der Azure Security and Compliance Blueprint-NIST CSF Risk Assessment Checkliste](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Weitere Informationen zur Bewertung des NIST-GFK für Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
@@ -51,10 +54,9 @@ Das NIST-GfK-Zertifikat für Office 365 gilt für zwei Jahre.
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>Schnelles Erstellen von NIST-CSF-Lösungen auf Azure
 
-Der NIST Cyber Framework (CSF)-Standard kann eine Herausforderung in der Cloud darstellen. Derzeit können Sie die neuen Blueprint-Beispiele für FedRAMP moderate oder FedRAMP High verwenden, um Ihnen den Einstieg zu erleichtern. Die neuen NIST-GfK-Steuerelemente werden aus den Steuerelementen in diesen FedRAMP-Basislinien entwickelt.
+Der NIST Cyber Framework (CSF)-Standard kann eine Herausforderung in der Cloud darstellen. Glücklicherweise mit Azure haben Sie einen Head Start der Azure Security and Compliance NIST CSF Blueprint. Dieser Blueprint enthält Tools und Anleitungen für den Einstieg in das Erstellen von NIST-GfK-konformen Lösungen heute.
 
-- [FedRAMP moderate Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
-- [FedRAMP High Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
+- [Beginnen Sie mit dem Azure NIST CSF Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>Durchführen einer Risikobewertung für Office 365 mithilfe von NIST CSF in Compliance Score
 
@@ -89,7 +91,7 @@ Nach Angaben des [Department of Homeland Security](https://www.dhs.gov/critical-
 Die in-Scope-Dienste der NIST CSF-Zertifizierung sind Exchange Online Archivierung, Exchange Online Schutz, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive für Unternehmen, Office Online, myAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-Mandanten-Cloud und Office 365 gcc.
 
 > [!NOTE]
-> Office 365 ProPlus ermöglicht den Zugriff auf verschiedene Cloud-Dienste, wie Roamingeinstellungen, Lizenzierung und OneDrive-Consumer-Cloud-Speicher, und kann zukünftig den Zugriff auf zusätzliche Cloud-Dienste ermöglichen. Roaming-Einstellungen und-Lizenzierung unterstützen die Standards für HITRUST. OneDrive-Consumer-cloudspeicher nicht, und andere Cloud-Dienste, auf die über Office 365 ProPlus zugegriffen werden kann, und die Microsoft in Zukunft möglicherweise auch nicht, unterstützen diese Standards möglicherweise nicht. *
+> Microsoft 365-Apps für Unternehmen ermöglichen den Zugriff auf verschiedene Cloud-Dienste wie Roamingeinstellungen, Lizenzierung und OneDrive-Consumer-Cloud-Speicher und ermöglichen möglicherweise den Zugriff auf zusätzliche Cloud-Dienste in der Zukunft. Roaming-Einstellungen und-Lizenzierung unterstützen die Standards für HITRUST. OneDrive-Consumer-cloudspeicher nicht, und andere Cloud-Dienste, auf die über Microsoft 365-Apps für Unternehmen zugegriffen werden kann, und die in Zukunft auch von Microsoft angeboten werden, unterstützen diese Standards möglicherweise nicht. *
 
 **Warum sind einige Office 365 Dienste nicht im Rahmen dieser Zertifizierung?**
 
@@ -97,7 +99,7 @@ Microsoft bietet die umfassendsten Angebote im Vergleich zu anderen Anbietern vo
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 
-[Microsoft Compliance Score](compliance-score.md) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen und Maßnahmen zur Verringerung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
+[Microsoft Compliancebewertung](compliance-score.md) ist ein Preview-Feature im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md), das Ihnen dabei hilft, den Compliance-Status Ihrer Organisation zu bestimmen und Maßnahmen zur Senkung von Risiken zu ergreifen. Nachdem Sie die [Kompatibilitätsbewertung eingerichtet](compliance-score-setup.md)haben, wählen Sie die vorkonfigurierte [NIST-CSF-Vorlage](https://go.microsoft.com/fwlink/?linkid=2117917) aus dem Dropdownmenü **Vorlage** aus, damit Ihre Organisation die Anforderungen für diese Verordnung erfüllt.
 
 ## <a name="resources"></a>Ressourcen
 

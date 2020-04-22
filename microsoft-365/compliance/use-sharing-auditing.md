@@ -1,5 +1,5 @@
 ---
-title: Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
+title: Verwenden der Freigabeüberwachung im Überwachungsprotokoll
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626381"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
+# <a name="use-sharing-auditing-in-the-audit-log"></a>Verwenden der Freigabeüberwachung im Überwachungsprotokoll
 
-Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen und wird in Office 365 Organisationen häufig verwendet. Administratoren können die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. 
+Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen und wird in Organisationen häufig verwendet. Administratoren können die Freigabe Überwachung im Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>Das SharePoint-Freigabe Schema
 
@@ -41,13 +41,13 @@ Das Freigabe Schema stellt zwei zusätzliche Felder in einem Überwachungseintra
 
 - **TargetUserOrGroupName:** Speichert den UPN oder Namen des Zielbenutzers oder der Zielgruppe, für die eine Ressource freigegeben wurde (Benutzer B im vorherigen Beispiel). 
 
-Diese beiden Felder können zusätzlich zu anderen Eigenschaften aus dem Office 365 Überwachungsprotokoll Schema wie "Benutzer", "Vorgang" und "Datum" die vollständige Übersicht darüber geben, *welcher* Benutzer *welche* Ressource mit *wem* und *wann*freigegeben hat. 
+Diese beiden Felder können zusätzlich zu anderen Eigenschaften aus dem Überwachungsprotokoll Schema wie "User", "Operation" und "Date" die ganze Geschichte darüber erzählen, *welcher* Benutzer *welche* Ressource mit *wem* und *wann*freigegeben hat. 
   
 Es gibt eine andere Schemaeigenschaft, die für den Freigabe Text wichtig ist. Wenn Sie Überwachungsprotokoll-Suchergebnisse exportieren, werden in der **Auditdata** -Spalte in der exportierten CSV-Dateiinformationen zu Freigabe Ereignissen gespeichert. Wenn ein Benutzer beispielsweise eine Website für einen anderen Benutzer freigibt, wird dies erreicht, indem der Zielbenutzer einer SharePoint-Gruppe hinzugefügt wird. Die **Auditdata** -Spalte erfasst diese Informationen, um Administratoren Kontext bereitzustellen. In [Schritt 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) finden Sie Anweisungen zum Analysieren der Informationen in der Spalte **Auditdata** .
 
 ## <a name="sharepoint-sharing-events"></a>SharePoint-Freigabe Ereignisse
 
-Die Freigabe wird definiert, wenn ein Benutzer (der *Stell* Ende Benutzer) eine Ressource für einen anderen Benutzer freigeben möchte (den *Ziel* Benutzer). Überwachungsdatensätze im Zusammenhang mit der Freigabe einer Ressource für einen externen Benutzer (ein Benutzer, der sich außerhalb Ihrer Organisation befindet und kein Gastkonto in der Azure-Active Directory Ihrer Organisation hat) werden durch die folgenden Ereignisse identifiziert, die im Office 365 protokolliert werden. Überwachungsprotokoll:
+Die Freigabe wird definiert, wenn ein Benutzer (der *Stell* Ende Benutzer) eine Ressource für einen anderen Benutzer freigeben möchte (den *Ziel* Benutzer). Überwachungsdatensätze im Zusammenhang mit der Freigabe einer Ressource für einen externen Benutzer (ein Benutzer, der sich außerhalb Ihrer Organisation befindet und kein Gastkonto in der Azure-Active Directory Ihrer Organisation hat) werden durch die folgenden Ereignisse identifiziert, die im Überwachungsprotokoll protokolliert werden:
 
 - **SharingInvitationCreated:** Ein Benutzer in Ihrer Organisation hat versucht, eine Ressource (wahrscheinlich eine Website) mit einem externen Benutzer freizugeben. Dies führt dazu, dass eine externe Freigabeeinladung an den Zielbenutzer gesendet wird. Zu diesem Zeitpunkt wird kein Zugriff auf die Ressource gewährt.
 
@@ -93,11 +93,11 @@ Eine häufige Anforderung an Administratoren ist das Erstellen einer Liste aller
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Schritt 1: Suchen nach Freigabe Ereignissen und Exportieren der Ergebnisse in eine CSV-Datei
 
-Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Der erste Schritt besteht darin, das Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
 3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Suchen**   > **Überwachungsprotokollsuche**.
     

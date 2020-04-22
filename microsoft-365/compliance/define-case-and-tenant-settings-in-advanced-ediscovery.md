@@ -1,5 +1,5 @@
 ---
-title: Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen in Office 365 Advanced eDiscovery
+title: Definieren von Fall-und Mandanten Einstellungen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, modulübergreifend und Mandanten, die Sie auf der Fallebene in Office 365 Advanced eDiscovery definieren können.  '
-ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, modulübergreifend und Mandanten, die Sie auf der Fallebene in Advanced eDiscovery definieren können.  '
+ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556943"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630562"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definieren von Case-und Mandanten Einstellungen in Advanced eDiscovery (klassisch)
 
@@ -90,7 +90,7 @@ Die Anzeige kann aktualisiert werden, indem Sie auf das **Aktualisierungs** Symb
   
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Verwenden von Dienstprogrammen](use-advanced-ediscovery-utilities.md)
 

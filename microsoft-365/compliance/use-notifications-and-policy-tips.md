@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284270"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626401"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -36,7 +36,7 @@ Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, 
   
 Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt.
   
-Wenn Sie im Office 365 &amp; Security Compliance Center eine DLP-Richtlinie erstellen, können Sie die Benutzer Benachrichtigungen für Folgendes konfigurieren:
+Wenn Sie im &amp; Security Compliance Center eine DLP-Richtlinie erstellen, können Sie die Benutzer Benachrichtigungen für Folgendes konfigurieren:
   
 - Senden Sie eine e-Mail-Benachrichtigung an die Personen, die Sie auswählen, die das Problem beschreibt.
     
@@ -54,7 +54,7 @@ Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigunge
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
@@ -219,13 +219,13 @@ Derzeit unterstützt Outlook 2013 und höher nur für diese Bedingungen Richtlin
 
 Beachten Sie, dass alle diese Bedingungen in Outlook funktionieren, in denen Sie Inhalte abgleichen und Schutzaktionen für Inhalte erzwingen können. Das Anzeigen von Richtlinien Tipps für Benutzer wird jedoch noch nicht unterstützt.
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Richtlinien Tipps im Exchange Admin Center vs. The Office 365 Security &amp; Compliance Center
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Richtlinien Tipps im Exchange Admin Center vs. Security &amp; Compliance Center
 
-Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP-Richt &amp; Linien, die im Office 365 Security Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
+Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP- &amp; Richtlinien, die im Security Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
   
-Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Office 365 Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionieren, bis Sie das Office 365 Security &amp; Compliance Center aktivieren.
+Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionsfähig sind, bis Sie sich für &amp; die Umstellung auf das Security Compliance Center entschieden haben.
   
-Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie DLP &amp; -Richtlinien sowohl im Office 365 Security Compliance Center als auch im Exchange Admin Center verwenden.
+Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie &amp; DLP-Richtlinien sowohl im Security Compliance Center als auch im Exchange Admin Center verwenden.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Standardtext für Richtlinien Tipps in e-Mail
 

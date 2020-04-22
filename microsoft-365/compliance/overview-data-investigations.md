@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328077"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626771"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 
@@ -41,7 +41,7 @@ In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Work
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Suchen nach vertraulichen, böswilligen oder verlegenen Daten
 
-Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge zu erstellen, um nach der Office 365 für Daten zu suchen, die Sie korrigieren möchten. Sie können abfragebasierte Suchvorgänge erstellen und ausführen, um festgelegte e-Mail-Nachrichten und Dokumente zu identifizieren, die möglicherweise verschüttete Daten enthalten, und diese dann als Beweise zum Überprüfen und analysieren sammeln. Außerdem können Sie das Such Tool verwenden, um eine Vorschau von Beispiel Dokumenten anzuzeigen und Suchstatistiken anzuzeigen, mit denen Sie die Suchergebnisse verfeinern und verbessern können. Nachdem Sie sichergestellt haben, dass die Suchergebnisse alle für die Untersuchung relevanten Daten enthalten, fügen Sie die Suchergebnisse dem festgelegten Beweis zur weiteren Überprüfung, zur Folgenabschätzung und gegebenenfalls zur Beachtung von Korrekturaktionen hinzu. Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md).
+Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge zu erstellen, um nach Microsoft 365 für Daten zu suchen, die Sie korrigieren möchten. Sie können abfragebasierte Suchvorgänge erstellen und ausführen, um festgelegte e-Mail-Nachrichten und Dokumente zu identifizieren, die möglicherweise verschüttete Daten enthalten, und diese dann als Beweise zum Überprüfen und analysieren sammeln. Außerdem können Sie das Such Tool verwenden, um eine Vorschau von Beispiel Dokumenten anzuzeigen und Suchstatistiken anzuzeigen, mit denen Sie die Suchergebnisse verfeinern und verbessern können. Nachdem Sie sichergestellt haben, dass die Suchergebnisse alle für die Untersuchung relevanten Daten enthalten, fügen Sie die Suchergebnisse dem festgelegten Beweis zur weiteren Überprüfung, zur Folgenabschätzung und gegebenenfalls zur Beachtung von Korrekturaktionen hinzu. Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md).
 
 ## <a name="review-and-investigate-evidence"></a>Überprüfen und untersuchen von beweisen
 

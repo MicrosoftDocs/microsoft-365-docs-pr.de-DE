@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Für Office 365-, Azure-und Dynamics 365-Online Richtlinien Konformitätsberichte, um Informationen zu Drittanbietern zu erhalten, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie mit ISO, HIPAA, NIST, FINRA, dsgvo und FedRAMP kompatibel sein können, wenn Sie diese Online Dienste verwenden.
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Für Microsoft 365, Azure und Dynamics 365 Online Regulatory Compliance Reports, um sich über Audits von Drittanbietern zu informieren, erfahren Sie, wie Microsoft Kundendaten sicher hält und wie Sie mit ISO, HIPAA, NIST, FINRA, dsgvo und FedRAMP kompatibel sein können, wenn Sie diese Online Dienste verwenden.
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632446"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust-Portal
 
@@ -27,11 +27,11 @@ Das Microsoft-Dienst Vertrauensstellungs Portal bietet eine Vielzahl von Inhalte
   
 ## <a name="accessing-the-service-trust-portal"></a>Zugreifen auf das Dienst Vertrauensstellungs Portal
 
-Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von Steuerelementen und Prozessen durch Microsoft, die unsere Cloud-Dienste und die darin enthaltenen Kundendaten schützen. Um auf einige Ressourcen im Dienst Vertrauensstellungs Portal zuzugreifen, müssen Sie sich als authentifizierter Benutzer mit Ihrem Microsoft Cloud Services-Konto (entweder mit einem Azure Active Directory-organisationskonto oder einem Microsoft-Konto) anmelden und das Microsoft-Konto überprüfen und akzeptieren. Geheimhaltungsvereinbarung für Compliance-Materialien.
+Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von Steuerelementen und Prozessen durch Microsoft, die unsere Cloud-Dienste und die darin enthaltenen Kundendaten schützen. Um auf einige Ressourcen im Dienst Vertrauensstellungs Portal zuzugreifen, müssen Sie sich als authentifizierter Benutzer mit Ihrem Microsoft Cloud Services-Konto (entweder mit einem Azure Active Directory-organisationskonto oder einem Microsoft-Konto) anmelden und die Microsoft-Geheimhaltungsvereinbarung für Compliance-Materialien überprüfen und akzeptieren.
   
 **Vorhandene Kunden können auf das Dienst Vertrauensstellungs Portal** unter [https://aka.ms/STP](https://aka.ms/STP) mit einem der folgenden Online Abonnements (Testversion oder bezahlt) zugreifen: 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von S
   
 Um ein neues Konto zu erstellen oder ein Test Konto zu erstellen, verwenden Sie eines der folgenden Anmeldeformulare (auch für Testkonten verwendet), um Zugriff auf STP zu erhalten.
   
-- Registrieren Sie sich für ein neues [Office 365 Geschäfts Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=507653) oder ein neues [Office 365 Enterprise Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=698279) .
+- Registrieren Sie sich für ein neues [Microsoft 365 apps for Business-Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=507653) oder ein neues [Office 365 Enterprise Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=698279) .
 
 - Registrieren für ein neues [Test Konto für Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -64,9 +64,9 @@ In den folgenden Abschnitten werden die einzelnen Elemente im Haupt Menü beschr
 
 Der Link **Service Trust Portal** zeigt die Startseite an. Es bietet eine schnelle Möglichkeit, wieder zur Startseite zu gelangen.
 
-### <a name="compliance-manager"></a>Compliance Manager
+### <a name="compliance-manager"></a>Compliance-Manager
 
-Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, das Sie bei der Überwachung, Zuweisung und Überprüfung der behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft-Cloud-Diensten wie Office 365, Dynamics 365 und Azure unterstützt. Verwenden Sie den Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften innerhalb des Modells der Cloud mit gemeinsamer Verantwortung zu verwalten. Je nach der Version von Compliance-Manager, die Sie verwenden möchten, lesen Sie die folgenden Artikel, um weitere Informationen zu erhalten:
+Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, mit dem Sie die behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft-Cloud-Diensten wie Microsoft 365, Dynamics 365 und Azure nachverfolgen, zuweisen und überprüfen können. Verwenden Sie den Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften innerhalb des Modells der Cloud mit gemeinsamer Verantwortung zu verwalten. Je nach der Version von Compliance-Manager, die Sie verwenden möchten, lesen Sie die folgenden Artikel, um weitere Informationen zu erhalten:
 
 - [Microsoft Compliance-Manager (klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -102,7 +102,7 @@ Bietet Branchen-und regionsspezifische Konformitätsinformationen zu Microsoft C
   
 ### <a name="trust-center"></a>Sicherheitscenter
 
-Links zum [Microsoft Trust Center](https://www.microsoft.com/trust-center), das weitere Informationen zur Sicherheit, Compliance und Datenschutz in der Microsoft-Cloud bereitstellt. Dies umfasst Informationen zu den Funktionen in Microsoft Cloud-Diensten, die Sie verwenden können, um bestimmte Anforderungen des dsgvo zu erfüllen, Dokumentation, die für Ihre dsgvo-Verantwortlichkeit hilfreich ist, sowie für Ihr Verständnis der technischen und organisatorischen Maßnahmen. Microsoft hat die Unterstützung für die dsgvo übernommen.
+Links zum [Microsoft Trust Center](https://www.microsoft.com/trust-center), das weitere Informationen zur Sicherheit, Compliance und Datenschutz in der Microsoft-Cloud bereitstellt. Dies umfasst Informationen zu den Funktionen in Microsoft Cloud-Diensten, die Sie verwenden können, um bestimmte Anforderungen des dsgvo zu erfüllen, Dokumentation, die für Ihre dsgvo-Verantwortlichkeit hilfreich ist, sowie für Ihr Verständnis der technischen und organisatorischen Maßnahmen, die Microsoft zur Unterstützung der dsgvo ergriffen hat.
   
 ### <a name="my-library"></a>Meine Bibliothek
 
@@ -122,7 +122,7 @@ Wechseln Sie zu **Weitere > Administrator** , um auf administrative Funktionen z
 
 - **Datenschutzeinstellungen für den Benutzer:** Auf dieser Seite können Sie einen Bericht exportieren, der Aktionselement Zuweisungen im Compliance-Manager für einen bestimmten Benutzer enthält. Sie können auch alle Aktionselemente einem anderen Benutzer zuweisen und das zugewiesene Aktionselement aus dem angegebenen Benutzer entfernen. Weitere Informationen finden Sie unter [Datenschutzeinstellungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)für den Benutzer.
 
-### <a name="search"></a>Suchen
+### <a name="search"></a>Suche
 
 Klicken Sie auf das Lupensymbol in der oberen rechten Ecke der Seite Vertrauens Portal für das Dienst Vertrauen, um das Feld zu erweitern, Ihre Suchbegriffe einzugeben und die **Eingabe**Taste zu drücken. Die **Such** Seite wird angezeigt, wobei der Suchbegriff im Suchfeld und die unten aufgeführten Suchergebnisse angezeigt werden.
   

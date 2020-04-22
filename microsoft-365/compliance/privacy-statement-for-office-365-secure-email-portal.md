@@ -1,5 +1,5 @@
 ---
-title: Datenschutzerklärung für Office 365 sicheres e-Mail-Portal
+title: Datenschutzerklärung für sicheres e-Mail-Portal
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Letzte Aktualisierung: Mai 2017'
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597720"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626629"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Datenschutzerklärung für Office 365 sicheres e-Mail-Portal
+# <a name="privacy-statement-for-secure-email-portal"></a>Datenschutzerklärung für sicheres e-Mail-Portal
 
 Letzte Aktualisierung: Mai 2017
   
@@ -37,7 +37,7 @@ Ihre Anmeldeinformationen für das Microsoft-Konto, das geschäftliche oder Schu
   
 Während des Entschlüsselungsprozesses werden die verschlüsselten e-Mails, die Sie erhalten, nicht vom neuen OM-Leistungs Portal gespeichert. Sie wird nicht über das neue OM-Funktionen-Portal zu jeder Zeit übertragen.
   
-Das neue OM-Funktionen-Portal kann in einigen Fällen Datenpunkte zur Verwendung und Leistung der neuen OM-Funktionen sammeln (beispielsweise, wie oft verschlüsselte Nachrichten angezeigt werden, der verwendete Browser oder die APP und eventuell auftretende Fehler), die in analysiert werden können. Aggregat zum Zwecke der Verbesserung der Qualität, Sicherheit und Integrität dieser und anderer Microsoft-apps,-Produkte oder-Dienste. Diese Informationen werden nicht zum identifizieren, kontaktieren oder Ausrichten von Werbung für Sie verwendet.
+Das neue OM-Funktionen-Portal kann in einigen Fällen Datenpunkte zur Verwendung und Leistung der neuen OM-Funktionen sammeln (beispielsweise, wie oft verschlüsselte Nachrichten angezeigt werden, der verwendete Browser oder die APP und eventuell aufgetretene Fehler), die in aggregierter Form analysiert werden können, um die Qualität, Sicherheit und Integrität dieser und anderer Microsoft-apps, Produkte zu verbessern oder Dienste. Diese Informationen werden nicht zum identifizieren, kontaktieren oder Ausrichten von Werbung für Sie verwendet.
   
 ## <a name="for-more-information"></a>Weitere Informationen
 
@@ -47,9 +47,9 @@ Microsoft Privacy – Informationsschutz
   
 Microsoft Corporation
   
-One Microsoft Way
+Langgasse 18
   
-Redmond, Washington 98052 USA
+50858 Köln
   
 ## <a name="changes"></a>Änderungen
 

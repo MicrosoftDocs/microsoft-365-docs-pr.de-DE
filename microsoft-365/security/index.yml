@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365-Sicherheitsdokumentation
-summary: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihr Unternehmen besser über Angriffsflächen hinweg schützen können.
+title: Microsoft 365 Sicherheitsdokumentation
+summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
 metadata:
-  title: Microsoft 365-Sicherheitsdokumentation
-  description: Erfahren Sie mehr über die robusten Sicherheitslösungen und-Dienste in der Microsoft 365-Sicherheit, damit Sie Ihr Unternehmen besser auf Angriffsflächen schützen können.
+  title: Microsoft 365 Sicherheitsdokumentation
+  description: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,18 +13,18 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
-  ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+  ms.openlocfilehash: 202a01b439755211cbf3d8b06ea1ef874a58c3c1
+  ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43198349"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43708667"
 landingContent:
-- title: Microsoft Threat Protection
+- title: Microsoft Bedrohungsschutz
   linkLists:
   - linkListType: overview
     links:
-    - text: Was ist Microsoft Threat Protection?
+    - text: Was ist Microsoft Bedrohungsschutz?
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 Security Center
       url: mtp/overview-security-center.md
@@ -36,13 +36,19 @@ landingContent:
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: Übersicht über die Funktionen
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+- title: Schützen Ihrer Remotemitarbeiter
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Schützen Ihrer Remotemitarbeiter
+      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Office 365 ATP
   linkLists:
   - linkListType: overview
     links:
     - text: Was ist Office 365 ATP?
       url: office-365-security/office-365-atp.md
-    - text: Office 365 ATP-Dienstbeschreibung
+    - text: Beschreibung des Office 365 ATP-Diensts
       url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Azure ATP
   linkLists:
@@ -56,7 +62,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Was ist Azure Security Center?
+    - text: Was ist das Azure Security Center?
       url: https://docs.microsoft.com/azure/security-center/security-center-intro
     - text: Unterstützte Features
       url: https://docs.microsoft.com/azure/security-center/security-center-services
@@ -66,7 +72,7 @@ landingContent:
     links:
     - text: Was ist Microsoft Cloud App Security?
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-    - text: Erste Schritte mit der Microsoft Cloud-App-Sicherheit
+    - text: Erste Schritte mit Microsoft Cloud App Security
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
 - title: Azure Sentinel
   linkLists:
@@ -78,5 +84,5 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Sicheres Ergebnis
+    - text: Secure Score
       url: mtp/microsoft-secure-score.md

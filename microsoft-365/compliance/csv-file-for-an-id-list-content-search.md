@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten einer CSV-Datei für eine ID-Listeninhalts Suche in Office 365
+title: Erstellen einer CSV-Datei für eine Inhaltssuche anhand der ID-Liste
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die CSV-Datei "results. csv" oder "nicht indexierte Elemente" aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die eine bestimmte e-Mail-Nachricht zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
-ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077017"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630702"
 ---
-# <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für eine ID-Listeninhalts Suche in Office 365
+# <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Erstellen einer CSV-Datei für eine Inhaltssuche anhand der ID-Liste
 
 Sie können mithilfe einer Liste von Exchange-IDs nach bestimmten Post Fachnachrichten und anderen Postfachelementen suchen. Um eine ID-Listensuche (formell als gezielte Suche bezeichnet) zu erstellen, senden Sie eine CSV-Datei (Comma Separated Value), die die zu suchenden Postfachelemente identifiziert. Für diese CSV-Datei verwenden Sie die Datei **results. CSV** oder die Datei nicht **indizierte Elemente. CSV** , die beim Exportieren der Inhalts Suchergebnisse oder Exportieren eines Inhaltssuche-Berichts aus und der vorhandenen Inhaltssuche enthalten sind. Bearbeiten Sie dann eine dieser Dateien, um anzugeben, nach welchen Elementen gesucht werden soll, und erstellen Sie dann eine neue ID-Listensuche, und senden Sie die CSV-Datei.
 
@@ -84,7 +84,7 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 
 3. Geben Sie im Flyout **Suche nach ID-Liste** den Namen der Suche ein (und beschreiben Sie Sie optional), und klicken Sie dann auf **Durchsuchen** , und wählen Sie dann die CSV-Datei aus, die Sie im vorherigen Schritt vorbereitet haben.
 
-    Office 365 versucht, die CSV-Datei zu überprüfen. Wenn die Überprüfung nicht erfolgreich ist, wird eine Fehlermeldung angezeigt, die Ihnen helfen kann, die Validierungsfehler zu beheben. Die CSV-Datei muss erfolgreich überprüft werden, um eine ID-Listensuche zu erstellen.
+    Microsoft 365 versucht, die CSV-Datei zu überprüfen. Wenn die Überprüfung nicht erfolgreich ist, wird eine Fehlermeldung angezeigt, die Ihnen helfen kann, die Validierungsfehler zu beheben. Die CSV-Datei muss erfolgreich überprüft werden, um eine ID-Listensuche zu erstellen.
 
 4. Nachdem die CSV-Datei erfolgreich überprüft wurde, klicken Sie auf **Suchen** , um die ID-Listensuche zu erstellen.
 
@@ -97,4 +97,4 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 5. Vorschau oder Exportieren der Elemente, die von der ID-Listensuche zurückgegeben werden.
 
 > [!NOTE]
-> Wenn Sie ein Postfach nach dem Erstellen einer ID-Listensuche migrieren, gibt die Abfrage für die Suche nicht die angegebenen Elemente zurück. Das liegt daran, dass die **Document** -Eigenschaft für Postfachelemente geändert wird, wenn ein Postfach verschoben wird. In der seltenen Instanz wenn ein Postfach verschoben wird, nachdem Sie eine ID-Listensuche erstellt haben, sollten Sie eine neue Inhaltssuche erstellen (oder die Suchergebnisse für die vorhandene Inhaltssuche aktualisieren) und dann die Suchergebnisse oder den Bericht exportieren, um aktualisierte CSV-Dateien zu generieren, die verwendet werden können.  zum Erstellen einer neuen ID-Listensuche.
+> Wenn Sie ein Postfach nach dem Erstellen einer ID-Listensuche migrieren, gibt die Abfrage für die Suche nicht die angegebenen Elemente zurück. Das liegt daran, dass die **Document** -Eigenschaft für Postfachelemente geändert wird, wenn ein Postfach verschoben wird. In der seltenen Instanz, in der ein Postfach verschoben wird, nachdem Sie eine ID-Listensuche erstellt haben, sollten Sie eine neue Inhaltssuche erstellen (oder die Suchergebnisse für die vorhandene Inhaltssuche aktualisieren) und dann die Suchergebnisse oder den Bericht exportieren, um aktualisierte CSV-Dateien zu generieren, mit denen eine neue ID-Listensuche erstellt werden kann.

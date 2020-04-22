@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Erstellen von vertraulichen und streng vertraulichen Teams in Microsoft Teams für Dateien in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5b3f5c74ac484eb00852d5756b3269fb7c8c6a5b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082259"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637968"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Sichere Teams für Dateien in einer Entwicklungs-/Testumgebung
 
@@ -64,9 +64,9 @@ Erstellen Sie zuerst zwei Gruppen für eine typische Organisation mit dem Azure-
       
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
     
-6.  Wiederholen Sie die Schritte 3-5 für eine neue Gruppe namens **Marketingmitarbeiter**.
+6.    Wiederholen Sie die Schritte 3-5 für eine neue Gruppe namens **Marketingmitarbeiter**.
     
-Im nächsten Schritt wird die automatische Lizenzierung konfiguriert, sodass Mitgliedern von Gruppen automatisch Lizenzen für Ihre Office 365- und EMS-Abonnements zugewiesen werden.
+Im nächsten Schritt wird die automatische Lizenzierung konfiguriert, sodass Mitgliedern von Gruppen automatisch Lizenzen für Ihre Microsoft 365- und EMS-Abonnements zugewiesen werden.
   
 1. Klicken Sie im Azure-Portal auf **Azure Active Directory > Lizenzen > Alle Produkte**.
     
@@ -125,7 +125,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die gruppenbasierte Lize
     
 4. Stellen Sie im Bereich, der die Eigenschaften des Benutzerkontos **CEO** anzeigt, sicher, dass ihm die Lizenz **Microsoft 365 Enterprise E5** zugewiesen wurde (in **Produktlizenzen**).
     
-## <a name="phase-3-create-office-365-retention-labels"></a>Phase 3: Erstellen von Office 365-Aufbewahrungsbezeichnungen
+## <a name="phase-3-create-retention-labels"></a>Phase 3: Erstellen von Aufbewahrungsbezeichnungen
 
 In dieser Phase erstellen Sie die Aufbewahrungsbezeichnungen für die verschiedenen Sicherheitsstufen für Dokumentordner für die zugrunde liegende SharePoint-Website.
 
@@ -171,18 +171,18 @@ Gehen Sie folgendermaßen vor, um ein Team auf der Ebene „Vertraulich“ für 
 
 1. [Erstellen Sie ein neues privates Team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Marketingkampagnen**.
 2. Öffnen Sie das Team **Marketingkampagnen**.
-3.  Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
-4.  Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
-5.  Klicken Sie in der Symbolleiste der zugrunde liegenden SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
-6.  Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
-7.  Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus, und klicken Sie dann auf **Speichern**.
+3.    Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
+4.    Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
+5.    Klicken Sie in der Symbolleiste der zugrunde liegenden SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
+6.    Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
+7.    Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus, und klicken Sie dann auf **Speichern**.
 
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der zugrunde liegenden SharePoint-Website „Marketingkampagnen“ für die Bezeichnung „Vertraulich“.
 
-1.  Klicken Sie auf der Registerkarte **Marketingkampagnen – Startseite** in Ihrem Browser auf **Dokumente**.
-2.  Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
-3.  Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
-4.  Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Vertraulich**, und klicken Sie dann auf **Speichern**. 
+1.    Klicken Sie auf der Registerkarte **Marketingkampagnen – Startseite** in Ihrem Browser auf **Dokumente**.
+2.    Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
+3.    Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
+4.    Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Vertraulich**, und klicken Sie dann auf **Speichern**. 
 
 Konfigurieren Sie als Nächstes eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP), die Benutzer benachrichtigt, wenn sie ein Dokument auf einer der zugrunde liegenden SharePoint-Website mit der Bezeichnung „Vertraulich“ freigeben, die die Marketingkampagnenwebsite enthält (außerhalb der Organisation).
 
@@ -236,19 +236,19 @@ Gehen Sie folgendermaßen vor, um ein Team auf der Ebene „Streng vertraulich�
 
 1. [Erstellen Sie ein neues privates Team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) mit dem Namen **Unternehmensstrategie**.
 2. Öffnen Sie das Team **Unternehmensstrategie**.
-3.  Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
-4.  Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
-5.  Klicken Sie in der Symbolleiste der zugrunde liegenden SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
-6.  Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
-7.  Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus.
-8.  Deaktivieren Sie **Zugriffsanforderungen zulassen**, und klicken Sie dann auf **Speichern**.
+3.    Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
+4.    Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
+5.    Klicken Sie in der Symbolleiste der zugrunde liegenden SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
+6.    Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
+7.    Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus.
+8.    Deaktivieren Sie **Zugriffsanforderungen zulassen**, und klicken Sie dann auf **Speichern**.
 
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der zugrunde liegenden SharePoint-Website „Unternehmensstrategie“ für die Bezeichnung „Streng vertraulich“.
 
-1.  Klicken Sie auf der Registerkarte **Unternehmensstrategie – Startseite** in Ihrem Browser auf **Dokumente**.
-2.  Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
-3.  Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
-4.  Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Streng vertraulich**, und klicken Sie dann auf **Speichern**. 
+1.    Klicken Sie auf der Registerkarte **Unternehmensstrategie – Startseite** in Ihrem Browser auf **Dokumente**.
+2.    Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
+3.    Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
+4.    Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Streng vertraulich**, und klicken Sie dann auf **Speichern**. 
 
 Konfigurieren Sie als Nächstes eine DLP-Richtlinie, die Benutzer blockiert, wenn sie ein Dokument auf einer zugrunde liegenden SharePoint-Website mit der Bezeichnung „Streng vertraulich" freigeben, die die Unternehmensstrategiewebsite enthält (außerhalb der Organisation).
   

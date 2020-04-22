@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online und in eigenständiger (standalone) Exchange Online Protection (EOP) erstellen, ändern und löschen können.
-ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: e3d49fecf456fe7f615cc2877c7522632b8db7d7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231016"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608186"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurieren von Antispamrichtlinien in Office 365
 
@@ -341,6 +341,11 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
    - **Spambenachrichtigungen für Endbenutzer aktivieren**: Aktivieren Sie das Kontrollkästchen, um Benachrichtigungen zu aktivieren. Deaktivieren Sie das Kontrollkästchen, um Benachrichtigungen zu deaktivieren.
 
    - **Spambenachrichtigungen für Endbenutzer senden alle (Tage)**: Wählen Sie aus, wie häufig Benachrichtigungen gesendet werden. Die Standardeinstellung beträgt 3 Tage. Sie können 1 bis 15 Tage eingeben.
+   
+     Es gibt 3 Zyklen der Spambenachrichtigung für Endbenutzer innerhalb eines 24-Stunden-Zeitraums, die zu den folgenden Zeiten beginnen: 01:00 UTC, 08:00 UTC und 16:00 UTC. 
+    
+     > [!NOTE]
+     > Wenn eine Benachrichtigung während eines vorherigen Zyklus ausgelassen wurde, wird die Benachrichtigung durch einen nachfolgenden Zyklus per Push gesendet. Dies kann dazu führen, dass mehrere Benachrichtigungen am selben Tag auftreten.
 
    - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, was bedeutet, dass die Quarantänebenachrichtigungen für Endbenutzer die Standardsprache der EOP-Organisation verwenden.
 

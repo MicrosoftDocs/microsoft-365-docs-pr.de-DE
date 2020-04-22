@@ -149,10 +149,6 @@
           href: document-fingerprinting.md
         - name: DLP-Funktionen für vertrauliche Informationen
           href: what-the-dlp-functions-look-for.md
-    - name: Verschlüsselung in M365
-      href: encryption.md
-    - name: Office 365-Dienstverschlüsselung
-      href: office-365-service-encryption.md
     - name: Kundenschlüssel
       items:
         - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
@@ -163,7 +159,7 @@
           href: customer-key-manage.md
         - name: Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels
           href: customer-key-availability-key-roll.md
-        - name: Erfahren Sie mehr über den Verfügbarkeitsschlüssel für Office 365-Kundenschlüssel
+        - name: Erfahren Sie mehr über den Verfügbarkeitsschlüssel für Kundenschlüssel
           href: customer-key-availability-key-understand.md
     - name: E-Mail-Verschlüsselung
       href: email-encryption.md
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Einrichten von IRM im SharePoint Admin Center
-      href: set-up-irm-in-sp-admin-center.md
     - name: Grundlegendes zur Datenklassifizierung (Vorschau)
       href: data-classification-overview.md
       items:
@@ -800,11 +794,11 @@
         - name: Compliance-Manager (Vorschau)
           href: compliance-manager-overview.md
           items:
-            - name: Versionshinweise zu Compliance Manager (Vorschau)
+            - name: Neuerungen beim Compliance-Manager (Vorschau)
               href: compliance-manager-release-notes.md
             - name: Arbeiten mit Compliance-Manager (Vorschau)
               href: working-with-compliance-manager.md
-            - name: Compliance-Manager (klassisch)
+            - name: Compliance-Manager (Klassisch)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: 'DSGVO: Tool für Anträge betroffener Personen'
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Business
+- name: Microsoft 365 Apps for Business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Microsoft 365 Security
+- name: Sicherheit in Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'

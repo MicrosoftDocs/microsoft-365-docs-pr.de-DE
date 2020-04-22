@@ -1,5 +1,5 @@
 ---
-title: Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery
+title: Ausführen des Prozess Moduls und Laden von Daten in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Erfahren Sie, wie Sie mit dem &amp; Office 365 Security Compliance Center auf Office 365 Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Erfahren Sie, wie Sie mithilfe &amp; des Security Compliance Centers auf Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557825"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626471"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls und Laden von Daten in "Advanced eDiscovery" (klassisch)
 
@@ -41,7 +41,7 @@ Advanced eDiscovery stellt Systemmetadaten-Werte bereit, beispielsweise nahe dop
   
 Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
   
-1. [Öffnen Sie das Office 365 &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Öffnen Sie das &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) . 
     
 2. Wechseln Sie **zu &amp; Search Investigation** \> **eDiscovery** , und klicken Sie dann auf **Gehe zu Advanced eDiscovery**.
     
@@ -83,7 +83,7 @@ Wenn Sie den Fall hinzufügen, können Sie den Vorgang erneut ausführen.
   
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Anzeigen der Ergebnisse des Prozess Moduls](view-process-module-results-in-advanced-ediscovery.md)
 

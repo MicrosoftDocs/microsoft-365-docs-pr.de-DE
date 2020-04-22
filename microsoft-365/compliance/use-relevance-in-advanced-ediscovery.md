@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Moduls "Relevanz" in Office 365 Advanced eDiscovery
+title: Verwenden des Moduls "Relevanz" in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Office 365 Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.  '
-ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.  '
+ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557633"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626391"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Verwenden des Moduls "Relevanz" in Advanced eDiscovery (klassisch)
 
@@ -124,7 +124,7 @@ Auf der Registerkarte **relevanzstatus \> ** enthält Advanced eDiscovery Empfeh
     
   - Implikation: an dieser Position ist keine Relevanz-Schulung erforderlich.
     
-Obwohl Advanced eDiscovery Sie durch den Prozess führt, mit empfohlenen nächsten Schritten in unterschiedlichen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für den jeweiligen Fall, das Problem oder Dokument Überprüfungsprozess. 
+Obwohl Advanced eDiscovery Sie durch den Prozess führt, mit empfohlenen nächsten Schritten in unterschiedlichen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für den jeweiligen Fall, das Problem oder den Dokument Überprüfungsprozess relevant sein können. 
   
 Es ist möglich, erweiterte eDiscovery-Verarbeitungsoptionen für den nächsten Schritt zu akzeptieren oder außer Kraft zu setzen. Wenn Sie einen anderen Schritt als den empfohlenen nächsten Schritt durchführen möchten, klicken Sie auf den **nächsten Schritt** , der in der erweiterten Problemanzeige im Dialogfeld aufgeführt ist, klicken Sie neben dem nächsten Schritt auf die Schaltfläche **ändern** , und wählen Sie eine andere Option für nächsten Schritt aus. 
   
@@ -133,7 +133,7 @@ Es ist möglich, erweiterte eDiscovery-Verarbeitungsoptionen für den nächsten 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   

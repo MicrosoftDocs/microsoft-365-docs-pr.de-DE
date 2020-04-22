@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
+title: Vorbereiten der Suchergebnisse für Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 für weitere Analysen mit dem erweiterten eDiscovery-Tool vorbereiten.
-ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security & Compliance Center zur weiteren Analyse mit dem erweiterten eDiscovery-Tool vorbereiten.
+ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557855"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626639"
 ---
-# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Vorbereiten der Suchergebnisse für Advanced eDiscovery (Classic)
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Vorbereiten der Suchergebnisse für Advanced eDiscovery (classic)
 
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand Office 365 Advanced eDiscovery *(klassisch)* oder Advanced eDiscovery *v 1.0*an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand von Advanced eDiscovery an, auch bekannt als Advanced eDiscovery *(Classic)* oder *Advanced eDiscovery v 1.0*. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
 
-Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und die für einen juristischen Fall relevante Datenmenge reduzieren können. Zu den erweiterten eDiscovery-Features gehören:
+Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse zur weiteren Analyse mit Advanced eDiscovery vorbereiten, mit der Sie große, unstrukturierte Datasets analysieren und die für einen rechtlichen Fall relevante Datenmenge reduzieren können. Zu den erweiterten eDiscovery-Features gehören:
   
 - **Optische Zeichenerkennung** – Wenn Sie Suchergebnisse für Advanced eDiscovery vorbereiten, extrahiert die optische Zeichenerkennung (OCR)-Funktion automatisch Text aus Bildern und enthält diese mit den Suchergebnissen, die in Advanced eDiscovery for Analysis geladen werden. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Auf diese Weise können Sie die Textanalyse Funktionen von Advanced eDiscovery (Near-Duplicates, e-Mail-Threading, Themes und Predictive Coding) auf den Textinhalt in Bilddateien anwenden. Die erweiterte eDiscovery-OCR unterstützt die folgenden Formate für Bilddateien:
 
@@ -47,7 +47,7 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zu
     
 - **Predictive Coding** -ermöglicht es Ihnen, das System auf das zu Schulen, was Sie suchen, indem Sie Entscheidungen treffen können (unabhängig davon, ob etwas relevant ist oder nicht) für eine kleine Gruppe von Dokumenten. Advanced eDiscovery wendet dann das Lernen (basierend auf ihrer Anleitung) an, wenn alle Dokumente im Datensatz analysiert werden. Basierend auf diesem Lernmaterial bietet Advanced eDiscovery eine Relevanz-Rangfolge, sodass Sie entscheiden können, welche Dokumente überprüft werden sollen, je nachdem, welches Dokument am ehesten für den Fall relevant ist. 
     
-- **Exportieren von Daten für Überprüfungs Anwendungen** -Sie können Daten aus Advanced eDiscovery und Office 365 exportieren, nachdem Sie Ihre Analyse abgeschlossen und das DataSet reduziert haben. Das Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus den exportierten Inhalts-und Analyse Metadaten enthält. Dieses Exportpaket kann dann in eine eDiscovery-Überprüfungs Anwendung importiert werden. 
+- **Exportieren von Daten für Überprüfungs Anwendungen** -Sie können Daten aus Advanced eDiscovery und Microsoft 365 exportieren, nachdem Sie Ihre Analyse abgeschlossen und das DataSet reduziert haben. Das Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus den exportierten Inhalts-und Analyse Metadaten enthält. Dieses Exportpaket kann dann in eine eDiscovery-Überprüfungs Anwendung importiert werden. 
     
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -120,4 +120,4 @@ Alle RMS-verschlüsselten e-Mail-Nachrichten, die in den Suchergebnissen enthalt
     
 - Wenn eine RMS-verschlüsselte e-Mail-Nachricht eine Anlage (beispielsweise ein Dokument oder eine andere e-Mail-Nachricht) enthält, die ebenfalls verschlüsselt ist, wird nur die e-Mail-Nachricht der obersten Ebene entschlüsselt.
     
-- Wenn Sie verhindern müssen, dass eine Person RMS-verschlüsselte Nachrichten entschlüsselt, wenn Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten, müssen Sie eine benutzerdefinierte Rollengruppe erstellen (durch Kopieren der integrierten eDiscovery-Manager-Rollengruppe) und dann den RMS entfernen. Entschlüsseln der Verwaltungsrolle aus der benutzerdefinierten Rollengruppe. Fügen Sie dann die Person hinzu, die Nachrichten nicht als Mitglied der benutzerdefinierten Rollengruppe entschlüsseln soll.
+- Wenn Sie verhindern müssen, dass eine Person RMS-verschlüsselte Nachrichten entschlüsselt, wenn Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten, müssen Sie eine benutzerdefinierte Rollengruppe erstellen (durch Kopieren der integrierten eDiscovery-Manager-Rollengruppe) und dann die Verwaltungsrolle "RMS Decrypt" aus der benutzerdefinierten Rollengruppe entfernen. Fügen Sie dann die Person hinzu, die Nachrichten nicht als Mitglied der benutzerdefinierten Rollengruppe entschlüsseln soll.

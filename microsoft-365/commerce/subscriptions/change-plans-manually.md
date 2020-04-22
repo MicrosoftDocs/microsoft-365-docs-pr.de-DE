@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636583"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707631"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -43,7 +43,7 @@ Die beste Möglichkeit, alle Ihre Benutzer von einem Plan in einen anderen zu ä
 Lesen Sie [Schritt 2: erwerben eines neuen Abonnements](#step-2-buy-a-new-subscription) in diesem Thema, um mit einer manuellen Änderung fortzufahren.
 
 > [!IMPORTANT]
-> Wenn Sie zu einem Plan mit weniger datenbezogenen Diensten wechseln als Ihr aktueller Plan (Herabstufung), müssen Sie alle Daten, die Sie behalten möchten, manuell sichern. Weitere Informationen finden Sie unter [Sichern von Daten vor dem Wechseln von O365 for Business-Plänen](back-up-data-before-switching-plans.md).
+> Wenn Sie zu einem Plan mit weniger datenbezogenen Diensten wechseln als Ihr aktueller Plan (Herabstufung), müssen Sie alle Daten, die Sie behalten möchten, manuell sichern. Weitere Informationen finden Sie unter [Sichern von Daten vor dem Ändern von Plänen](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Schritt 2: erwerben eines neuen Abonnements
 
@@ -62,7 +62,7 @@ Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wec
 
 2. **Sicherstellen, dass beide Abonnements aufgelistet und aktiv sind** Das Abonnement, aus dem Sie Benutzer verschieben, und das Abonnement, auf das Sie Benutzer verschieben, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Stellen Sie sicher, dass beide Abonnements aktiv sind. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. Stellen **Sie sicher, dass für jeden Benutzer genügend Lizenzen vorhanden sind** . Jeder Benutzer benötigt eine Lizenz, die seinem Abonnement entspricht. Wenn beispielsweise zehn Benutzer auf Office 365 Enterprise E5 umsteigen sollen, vergewissern Sie sich, dass Sie über zehn Lizenzen verfügen.
+3. Stellen **Sie sicher, dass für jeden Benutzer genügend Lizenzen vorhanden sind** . Jeder Benutzer benötigt eine Lizenz, die seinem Abonnement entspricht. Wenn Sie also zehn Benutzer zu Microsoft 365 Business Premium migrieren möchten, müssen Sie sicherstellen, dass zehn Lizenzen verfügbar sind.
 
 4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?**
    Wechseln Sie zur Seite **Produkte & Dienste** , und [kaufen Sie weitere Lizenzen](../licenses/buy-licenses.md).

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151395"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618920"
 ---
 # <a name="about-admin-roles"></a>Informationen zu Administratorrollen
 
@@ -73,10 +73,10 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 
 |Administratorrolle     |Wem sollte diese Rolle zugewiesen werden?  |
 |---------|---------|
-|Exchange-Administrator     |   Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die E-Mail-Postfächer Ihrer Benutzer, Office 365-Gruppen und Exchange Online einsehen und verwalten müssen. <br><br> Exchange-Administratoren sind außerdem zu Folgendem berechtigt:<br> - Wiederherstellen gelöschter Elemente im Postfach eines Benutzers <br> - Einrichten von "Senden als"- und "Senden im Auftrag von"-Stellvertretungen <br>  |
+|Exchange-Administrator     |   Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die E-Mail-Postfächer Ihrer Benutzer, Microsoft 365-Gruppen und Exchange Online einsehen und verwalten müssen. <br><br> Exchange-Administratoren sind außerdem zu Folgendem berechtigt:<br> - Wiederherstellen gelöschter Elemente im Postfach eines Benutzers <br> - Einrichten von "Senden als"- und "Senden im Auftrag von"-Stellvertretungen <br>  |
 |Globaler Administrator     |   Weisen Sie Benutzern, die globalen Zugriff auf die meisten Verwaltungsfunktionen und Daten in Microsoft Online-Diensten benötigen, die Rolle des globalen Administrators zu. <br><br> Wenn Sie zu vielen Benutzern globalen Zugriff gewähren, besteht ein Sicherheitsrisiko, deshalb empfiehlt es sich, nur zwei bis vier globale Administratoren vorzusehen. <br><br> Nur globale Administratoren sind zu Folgendem berechtigt:<br> - Zurücksetzen von Kennwörtern für alle Benutzer <br> - Hinzufügen und Verwalten von Domänen <br> <br> **Hinweis:** Die Person, die die Registrierung für Microsoft-Onlinedienste vorgenommen hat, wird automatisch zu einem globalen Administrator. |
 |Globaler Leser    |   Weisen Sie die Rolle "Globaler Leser" Benutzern zu, die Administratorfunktionen und -einstellungen in Admin Centern einsehen müssen, die der globale Administrator anzeigen kann. Ein Administrator mit der Rolle "Globaler Leser" kann keine Einstellungen bearbeiten.   |
-|Gruppenadministrator     |   Weisen Sie die Rolle des Gruppenadministrators Benutzern zu, die alle Gruppeneinstellungen in den Admin Centern verwalten müssen, einschließlich des Microsoft 365 Admin Centers und des Azure Active Directory-Portals. <br><br> Gruppenadministratoren sind zu Folgendem berechtigt:<br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Office 365-Gruppen <br> - Einrichten und Aktualisieren von Erstellung, Ablauf und Benennungsrichtlinien von bzw. für Gruppen <br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Azure Active Directory-Sicherheitsgruppen| 
+|Gruppenadministrator     |   Weisen Sie die Rolle des Gruppenadministrators Benutzern zu, die alle Gruppeneinstellungen in den Admin Centern verwalten müssen, einschließlich des Microsoft 365 Admin Centers und des Azure Active Directory-Portals. <br><br> Gruppenadministratoren sind zu Folgendem berechtigt:<br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Microsoft 365-Gruppen <br> - Einrichten und Aktualisieren von Erstellung, Ablauf und Benennungsrichtlinien von bzw. für Gruppen <br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Azure Active Directory-Sicherheitsgruppen| 
 |Helpdesk-Administrator     |   Weisen Sie die Rolle des Helpdesk-Administrators Benutzern zu, die folgende Aktionen ausführen müssen:<br> - Kennwörter zurücksetzen <br> - Die Abmeldung von Benutzern erzwingen <br> - Serviceanfragen verwalten <br> - Den Dienststatus überwachen <br> <br> **Hinweis**: Der Helpdesk-Administrator kann nur Benutzern ohne Administratorrolle sowie Benutzern helfen, welchen folgende Rollen zugewiesen wurden: Verzeichnisleseberechtigter, Gasteinladender, Helpdesk-Administrator, Nachrichtencenter-Leseberechtigter und Berichtleseberechtigter.      |
 |Office-Apps-Administrator    |   Weisen Sie die Rolle des Office-Apps-Administrators Benutzern zu, die folgende Aktionen ausführen müssen: <br> - Verwenden des Office-Cloudrichtliniendiensts zum Erstellen und Verwalten von cloudbasierten Richtlinien für Office <br> - Serviceanfragen erstellen und verwalten <br> - Verwalten der Inhalte im Dialogfenster "Neuigkeiten", das den Benutzern in ihren Office-Apps angezeigt wird   <br> - Den Dienststatus überwachen  |
 |Dienstadministrator    |   Weisen Sie die Rolle des Dienstadministrators als zusätzliche Rolle Administratoren oder Benutzern zu, die Berechtigungen für folgende, von ihren Rollen nicht vorgesehene Aktionen benötigen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben   |
@@ -127,9 +127,9 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Sicherheitsoperator     |    Untersucht und reagiert auf Sicherheitswarnungen, verwaltet Funktionen im Identity Protection Center, überwacht den Dienststatus.     |
 |Benutzer mit Leseberechtigung für Sicherheitsfunktionen     |    Hat reinen Lesezugriff auf Sicherheitsfeatures, Anmeldeberichte und Überwachungsprotokolle.     |
 |Dienstsupportadministrator     |    Erstellt Dienstanforderungen für Azure-, Microsoft 365- und Office 365-Dienste und überwacht den Dienststatus.     |
-|SharePoint-Administrator     |    Hat Vollzugriff auf SharePoint Online, verwaltet Office 365-Gruppen, verwaltet Serviceanfragen und überwacht den Dienststatus.     |
+|SharePoint-Administrator     |    Hat Vollzugriff auf SharePoint Online, verwaltet Microsoft 365-Gruppen, verwaltet Serviceanfragen und überwacht den Dienststatus.     |
 |Skype for Business-Administrator     | Hat Vollzugriff auf alle Microsoft Teams- und Skype-Funktionen sowie Skype-Benutzerattribute, verwaltet Serviceanfragen und überwacht den Dienststatus.      |
-|Microsoft Teams-Administrator     |    Hat Vollzugriff auf die Microsoft Teams- und Skype-Admin Center, verwaltet Office 365-Gruppen und Serviceanfragen und überwacht den Dienststatus.     |
+|Microsoft Teams-Administrator     |    Hat Vollzugriff auf die Microsoft Teams- und Skype-Admin Center, verwaltet Microsoft 365-Gruppen und Serviceanfragen und überwacht den Dienststatus.     |
 |Microsoft Teams-Kommunikationsmanager     |    Weist Telefonnummern zu, erstellt und verwaltet VoIP- und Besprechungsrichtlinien und liest Anrufanalysen.     |
 |Supporttechniker für die Microsoft Teams-Kommunikation     |    Liest Anrufaufzeichnungsdetails für alle Anrufteilnehmer, um Kommunikationsprobleme zu behandeln.     |
 |Supportexperte für die Microsoft Teams-Kommunikation     |    Liest Benutzeranrufdetails nur für einen bestimmten Benutzer, um Kommunikationsprobleme zu behandeln.|

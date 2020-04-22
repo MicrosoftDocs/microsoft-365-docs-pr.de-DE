@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
-ms.translationtype: HT
+ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179146"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637947"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -45,7 +45,7 @@ Im Abschnitt **Information Protection & Governance** sehen Sie auf einen Blick, 
 Hier sehen Sie Karten für die folgenden Lösungen:
 
 - [Verhinderung von Datenverlust](data-loss-prevention-policies.md): Ermittelt vertrauliche Inhalte, die in der gesamten Organisation, in der Cloud und auf Geräten verwendet und freigegeben werden, und hilft bei der Vorbeugung von versehentlichem Datenverlust.
-- [Informationsgovernance](manage-information-governance.md): Dient der Verwaltung des Lebenszyklus Ihrer Inhalte mithilfe von Lösungen zum Importieren, Speichern und Klassifizieren geschäftsrelevanter Daten, damit Erforderliches beibehalten und alles andere gelöscht wird.
+- [Information Governance](manage-information-governance.md): verwaltet ihren Inhaltslebenszyklus mithilfe von Lösungen zum Importieren, speichern und Klassifizieren von geschäftskritischen Daten, sodass Sie die benötigten Informationen behalten und löschen können.
 - [Schutz von Daten](protect-information.md): Ermittelt, klassifiziert und schützt vertrauliche und unternehmensrelevante Inhalte organisationsweit über ihren gesamten Lebenszyklus hinweg.
 - [Datensatzverwaltung](records-management.md): Nutzt eine intelligente Klassifizierung zum Automatisieren und Vereinfachen des Aufbewahrungszeitplans für gesetzlich vorgeschriebene, rechts- und unternehmensrelevante Datensätze in Ihrer Organisation.
 
@@ -70,10 +70,10 @@ Hier sehen Sie Karten für die folgenden Lösungen:
 
 - [Überwachung](search-the-audit-log-in-security-and-compliance.md): Erfasst Benutzer- und Administratoraktivitäten in Ihrer Organisation, sodass Sie das Überwachungsprotokoll durchsuchen und eine umfassende Liste der Aktivitäten an allen Orten und in allen Diensten überprüfen können.
 - [Datenuntersuchungen](overview-data-investigations.md): Sucht in allen Inhaltsspeicherorten nach vertraulichen, bösartigen oder falsch abgelegten Daten in allen Microsoft 365-Speicherorten, um Ihnen dabei zu helfen, Vorfälle wie z. B. Datenlecks zu untersuchen und zu beheben.
-- [Anträge von Datensubjekten](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Sucht und exportiert personenbezogene Daten eines Benutzers, um Ihnen dabei zu helfen, auf Anfragen einer betroffenen Person im Sinne der DSGVO (EU-Datenschutz-Grundverordnung) zu reagieren.
+- [Datensubjekt Anforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): sucht und exportiert die personenbezogenen Daten eines Benutzers, um Sie bei der Reaktion auf Anfragen von Datensubjekten für dsgvo zu unterstützen.
 - [eDiscovery](manage-legal-investigations.md)
     - [Core eDiscovery](ediscovery-cases.md): Durchsucht Inhaltsspeicherorte, um Daten für Reaktionen im Rahmen der Offenlegungspflicht und für eDiscovery-Fälle zu identifizieren, beizubehalten und zu exportieren.
-    - [Advanced eDiscovery](overview-ediscovery-20.md): Stützt sich auf eDiscovery-Funktionen und stellt intelligente Analysen und Maschinelles Lernen bereit, die Ihnen dabei helfen, die im Hinblick auf eine Offenlegungspflicht relevanten Daten noch genauer zu analysieren.
+    - [Advanced eDiscovery](overview-ediscovery-20.md): baut auf eDiscovery-Funktionen auf, indem intelligente Analysen und Maschinelles Lernen bereitgestellt werden, damit Sie die für Discovery-Anforderungen relevanten Daten weiter analysieren können.
 
 ## <a name="how-do-i-get-this"></a>Wie erhalte ich den Katalog?
 
@@ -89,7 +89,7 @@ Stellen Sie zunächst sicher, dass Sie über die entsprechenden Lizenzen und Ber
 
 Wir arbeiten ständig daran, dem Microsoft 365 Compliance Center und dem Lösungskatalog neue Funktionen hinzuzufügen. Wenn Sie eine bestimmte Lösung im Navigationsbereich nicht finden können, ist sie in Ihrem Abonnement (noch) nicht verfügbar.
 
-Wenn Sie nach einer vorhandenen Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie jederzeit auf Lösungen im vorhandenen Office 365 Security & Compliance Center zugreifen. Wechseln Sie hierzu zu [https://protection.office.com](https://protection.office.com). Alternativ können Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf die Registerkarte **Weitere Ressourcen** klicken und die Office 365 Security & Compliance Center-Karte auswählen.  
+Wenn Sie eine vorhandene Compliance-Lösung suchen und diese im Microsoft 365 Compliance Center noch nicht verfügbar ist, können Sie jederzeit auf Lösungen im vorhandenen Security &amp; Compliance Center zugreifen, indem Sie zu [https://protection.office.com](https://protection.office.com)wechseln. Alternativ können Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf die Registerkarte **Weitere Ressourcen** klicken und die Office 365 Security & Compliance Center-Karte auswählen.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

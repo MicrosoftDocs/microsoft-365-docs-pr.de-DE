@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen kontinuierlich neue Funktionen zum Microsoft 365 Compliance Center hinzu, beheben Probleme, von denen wir erfahren, und nehmen basierend auf Ihrem Feedback Änderungen vor. Finden Sie heraus, was wir diesen Monat vorhaben.
-ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
-ms.translationtype: HT
+ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557598"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626261"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -64,10 +64,10 @@ Wenn Sie diese Connectors einrichten und überprüfen, geben Sie uns bitte Feedb
 
 ## <a name="january-2020"></a>Januar 2020
 
-Die Wartezeit ist vorbei. Wir freuen uns, Ihnen mitzuteilen, dass das Microsoft 365 Compliance Center für alle Kunden mit Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) und Windows 10 Enterprise-Plänen verfügbar ist. Alle Daten oder Richtlinien, die Sie im für Office 365 Security & Compliance Center verwaltet haben, sind im Compliance Center verfügbar. Deshalb müssen Sie nicht hin- und herspringen.
+Die Wartezeit ist vorbei. Wir freuen uns, Ihnen mitzuteilen, dass das Microsoft 365 Compliance Center für alle Kunden mit Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) und Windows 10 Enterprise-Plänen verfügbar ist. Alle Daten oder Richtlinien, die Sie im Security & Compliance Center verwaltet haben, stehen im Compliance Center zur Verfügung, daher müssen Sie nicht mehr hin-und herspringen.
 
 > [!TIP]
-> Lesen Sie das Update des letzten Monats erneut durch, um eine Auffrischung einiger der [neuen Lösungen](#new-compliance-solutions), die vor kurzem in der Vorschau gezeigt wurden, sowie eine [Roadmap](#updated-compliance-solutions) zu erhalten, die zeigt, wo sich die Compliancefunktionen aus dem Office 365 Security & Compliance Center nun in Microsoft 365 befinden.
+> Lesen Sie das Update des letzten Monats erneut für ein Upgrade für einige der [neuen Lösungen](#new-compliance-solutions) , die kürzlich in der Vorschau angezeigt wurden, sowie eine [Roadmap](#updated-compliance-solutions) , die zeigt, wo Compliance-Features aus dem Security & Compliance Center jetzt in Microsoft 365.
 
 Setzen Sie jetzt ein Lesezeichen, und wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), um Ihre zentrale Anlaufstelle für die Verwaltung der Compliance in Ihrer gesamten Organisation zu besuchen..., oder [lesen Sie diesen Artikel](microsoft-365-compliance-center.md), um ein bisschen tiefer einzutauchen.
 

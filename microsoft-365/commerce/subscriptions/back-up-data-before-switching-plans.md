@@ -1,5 +1,5 @@
 ---
-title: Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
+title: Sichern von Daten vor dem Ändern der Pläne
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten vor dem Wechsel von Microsoft 365-Abonnements oder wenn ein Benutzer die Organisation verlässt.
-ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten, bevor Sie Microsoft 365-Pläne ändern.
+ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636080"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708095"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
 

@@ -20,35 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-oder Microsoft 365-Testversion oder ein kostenpflichtiges Abonnement kündigen.
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement kündigen.
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636595"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708083"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
-*Berechtigung:* Wenn Benutzern weniger als 25 Lizenzen zugewiesen sind, können Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement online im Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
+*Berechtigung:* Wenn Benutzern weniger als 25 Lizenzen zugewiesen sind, können Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement online im Microsoft 365 Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
 
 *Rückerstattung:* Eine anteilsmäßige Gutschrift wird Ihnen mit dem nächsten Abrechnungszyklus erstattet.
 
 > [!NOTE]
-> Wenn Sie über mehrere Abonnements für dasselbe Produkt verfügen, z. B. Office 365 Enterprise E3, wirkt sich die Kündigung eines dieser Produkte nicht auf die erworbenen Lizenzen oder Dienste innerhalb der anderen Abonnements aus.
+> Wenn Sie mehrere Abonnements für dasselbe Produkt wie Microsoft 365 Business Premium haben, wirkt sich das Abbrechen eines dieser Produkte nicht auf die erworbenen Lizenzen oder Dienste innerhalb der anderen Abonnements aus.
 
 ## <a name="steps-to-cancel-your-subscription"></a>Schritte zum Kündigen Ihres Abonnements
 
-Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzufügt haben, müssen Sie die Domäne entfernen, bevor Sie Ihr Abonnement kündigen. Weitere Informationen finden Sie unter [Entfernen einer Domäne aus Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzufügt haben, müssen Sie die Domäne entfernen, bevor Sie Ihr Abonnement kündigen. Weitere Informationen finden Sie unter [Entfernen einer Domäne](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
-
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
 2. Suchen Sie das Abonnement, das Sie kündigen möchten, und wählen Sie unter **Einstellungen und Aktionen** die Option **Abonnement kündigen** aus.
 
-3. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
+3. Überprüfen Sie die wichtigen Termine, geben Sie Feedback dazu, warum Sie Abbrechen, und wählen Sie dann **Abonnement kündigen**aus.
 
     Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
@@ -64,7 +63,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
     ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
+4. Überprüfen Sie die wichtigen Termine, geben Sie Feedback dazu, warum Sie Abbrechen, und wählen Sie dann **Abonnement kündigen**aus.
 
     Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
@@ -80,7 +79,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
     ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
+4. Überprüfen Sie die wichtigen Termine, geben Sie Feedback dazu, warum Sie Abbrechen, und wählen Sie dann **Abonnement kündigen**aus.
 
     Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
@@ -109,11 +108,11 @@ Bei Verwendung einer benutzerdefinierten Domäne mit Ihrem Abonnement müssen ei
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Ändern der Namenservereinträge Ihrer Domäne (falls erforderlich)
 
-Wenn Sie eine benutzerdefinierte Domäne eingerichtet haben, haben Sie auch DNS-Einträge hinzugefügt, damit die Domäne mit den Office 365-Diensten zusammenarbeitet. Bevor Sie Ihre Domäne entfernen, stellen Sie sicher, dass Sie die DNS-Einträge wie den MX-Eintrag der Domäne bei Ihrem DNS-Host aktualisieren.
+Wenn Sie eine benutzerdefinierte Domäne eingerichtet haben, haben Sie DNS-Einträge hinzugefügt, damit die Domäne mit Microsoft 365-Diensten funktionieren würde. Bevor Sie Ihre Domäne entfernen, stellen Sie sicher, dass Sie die DNS-Einträge wie den MX-Eintrag der Domäne bei Ihrem DNS-Host aktualisieren.
 
 So müssen Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern, E-Mails, die an Ihre Domäne gesendet werden, werden nicht mehr an Ihre Microsoft-Adresse weitergeleitet und stattdessen an Ihren neuen e-Mail-Anbieter gesendet. (Mit einem MX-Eintrag wird festgelegt, wohin E-Mails für Ihre Domäne gesendet werden.)
 
-- Wenn Ihre Namenservereinträge (NS) [auf Office 365-Namenserver verweisen](../../admin/setup/add-domain.md), werden Änderungen an Ihrem MX-Eintrag erst dann wirksam, wenn Sie die NS-Einträge so geändert haben, dass sie auf den neuen DNS-Host verweisen (siehe Schritt 2).
+- Wenn Ihre Namenservereinträge (NS) [auf Microsoft 365-Namenserver zeigen, werden](../../admin/setup/add-domain.md)Änderungen am MX-Eintrag erst wirksam, wenn Sie Ihre NS-Einträge so ändern, dass Sie auf Ihren neuen DNS-Host zeigen (siehe Schritt 2).
 
 - Informieren Sie vor der Aktualisierung des MX-Eintrags die Benutzer, zu welchem Termin Sie planen, die E-Mails umzustellen, und welchen neuen E-Mail-Anbieter Sie zu verwenden beabsichtigen. Wenn Ihre Benutzer ihre vorhandenen Microsoft-e-Mails auf den neuen Anbieter umstellen möchten, müssen Sie außerdem zusätzliche Schritte ausführen.
 
@@ -121,11 +120,11 @@ So müssen Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern, E-Mails
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Aktualisieren des MX- und anderer DNS-Einträge Ihrer Domäne (wenn Sie eine benutzerdefinierte Domäne verwenden)
 
-Wenn Sie Ihre Namenservereinträge (NS) beim Einrichten Ihrer Domäne auf Office 365 umgestellt haben, müssen Sie Ihren MX-Eintrag und andere DNS-Einträge bei dem DNS-Host, den Sie zukünftig verwenden wollen, einrichten oder aktualisieren und dann den NS-Eintrag so ändern, dass er auf diesen DNS-Host verweist.
+Wenn Sie Ihre Namenservereinträge (NS) zu Microsoft 365 beim Einrichten Ihrer Domäne gewechselt haben, müssen Sie den MX-Eintrag und andere DNS-Einträge auf dem zu verwendenden DNS-Host einrichten oder aktualisieren und dann den NS-Eintrag auf diesen DNS-Host ändern.
 
 Wenn Sie die NS-Einträge beim Einrichten der Domäne nicht umgestellt und den MX-Eintrag geändert haben, werden Ihre E-Mails umgehend an die neue Adresse gesendet.
 
-Weitere Informationen hierzu finden Sie unter [Wie verwaltet Office 365 meine DNS-Einträge?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Wenn Sie die NS-Einträge ändern möchten, lesen Sie [Entfernen einer Domäne aus Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Weitere Informationen finden Sie unter [wie kann Microsoft 365 meine DNS-Einträge verwalten?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Informationen zum Ändern der NS-Datensätze finden Sie unter [Remove a Domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Speichern Ihrer Daten
 
@@ -137,7 +136,7 @@ Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre D
 
 ### <a name="uninstall-office-optional"></a>Deinstallieren von Office (optional)
 
-Wenn Sie Ihr Abonnement gekündigt und die Benutzer nicht in ein anderes Abonnement, das Office enthält, verschoben haben, wird Office 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Modus können die Benutzer Dokumente nur lesen und drucken, und Office 365-Anwendungen zeigen die Benachrichtigung [Unlizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
+Wenn Sie Ihr Abonnement storniert haben und Benutzer nicht in ein anderes Abonnement mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

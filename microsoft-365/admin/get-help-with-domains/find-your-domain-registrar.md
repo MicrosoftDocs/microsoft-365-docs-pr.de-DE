@@ -1,5 +1,5 @@
 ---
-title: Finden der Domänenregistrierungsstelle für Office 365
+title: Suchen der Domänenregistrierungsstelle
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Erfahren Sie, wie Sie Ihre Domänenregistrierungsstelle und den DNS-Hostinganbieter mithilfe der InterNIC-Suche finden.
-ms.openlocfilehash: 71af74a0f94f2cdc251dab78fd59e9bdd90da5ce
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 234578c5622a883296a001ce7f226627dd9d93b5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210392"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628458"
 ---
-# <a name="find-your-domain-registrar-for-office-365"></a>Finden der Domänenregistrierungsstelle für Office 365
+# <a name="find-your-domain-registrar"></a>Suchen der Domänenregistrierungsstelle
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   

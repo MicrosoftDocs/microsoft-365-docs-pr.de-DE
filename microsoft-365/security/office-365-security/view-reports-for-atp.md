@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631061"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708499"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -60,9 +60,11 @@ Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kate
 
 ![Dropdown mit dem Status Bericht zum Bedrohungsschutz mit "aufschlüsseln nach".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Diese Ansichten bieten Ihnen die Möglichkeit, über eine Schaltfläche per Mausklick (in e-Mail > Phishing, e-Mail-> Schadsoftware und Inhalte > Malware Ansichten) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
+Diese Ansichten bieten Ihnen die Möglichkeit, über einen Mausklick (in **e-Mail-** \> **Phishing**, **e-Mail-** \> **Schadsoftware**und **Malware** Ansichten für **Inhalte** \> ) zu exportieren. Die aggregierten Daten, die auf Ihren Computer exportiert werden, können in Excel geöffnet werden.
 
 ![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Hinweis**: die maximale Anzahl von Einträgen, die für **Phishing** und **Schadsoftware** exportiert werden können, liegt bei knapp 10000. Wenn Sie eine Ansicht exportieren, werden nur die letzten 10000-Einträge exportiert.
 
 In den Ansichten Übersicht und e-Mails werden Informationen innerhalb von Stunden nach der Verarbeitung und nicht in 24 Stunden angezeigt (Demand Re. erhöhte Geschwindigkeiten hier war ein deutliches Signal)!
 

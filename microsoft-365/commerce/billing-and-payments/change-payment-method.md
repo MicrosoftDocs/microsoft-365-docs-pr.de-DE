@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Hier erfahren Sie, wie Sie die Zahlungsmethode für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632731"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708155"
 ---
 # <a name="change-your-payment-method"></a>Ändern der Zahlungsmethode
 
@@ -80,13 +80,13 @@ Wenn Sie von einer *Kreditkarte oder einem Bankkonto zu einer Rechnung*wechseln,
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Umstellen von Zahlung per Rechnung auf Zahlung per Kreditkarte oder Bankkonto
 
 > [!TIP]
 > Die folgenden Schritte gelten nur für Einzelabonnements. Wenn Ihre Organisation über mehrere Abonnements verfügt, führen Sie diese Schritte für jedes Abonnement aus, das Sie ändern möchten.
   
 Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder einem Bankkonto wechseln, wird automatisch ein neues Abonnement für Sie erstellt, die Benutzer werden in das neue Abonnement übertragen und Ihr altes Abonnement deaktiviert. Keine Sorge, Ihre Benutzer sehen keine Unterbrechung des Diensts, und alle Ihre Informationen werden über das neue Abonnement zur Verfügung stehen.
-
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
@@ -102,10 +102,10 @@ Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder ein
   
 7. Stellen Sie sicher, dass die ausgewählte Zahlungsmethode richtig ist, und wählen Sie dann **Speichern**aus.
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Umstellen von Zahlung per Rechnung auf Zahlung per Kreditkarte oder Bankkonto
 
 > [!TIP]
@@ -136,21 +136,21 @@ Wenn Sie zur Seite **Abonnements** zurückkehren, stellen Sie fest, dass das alt
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Umstellen von Zahlung per Kreditkarte oder Bankkonto auf Zahlung per Rechnung
 
 Sie können die Zahlungs Rechnung nur dann ändern, wenn Ihre Bestellung über einer bestimmten Menge liegt. Wenn Sie die Anforderung nicht erfüllen, wird die Meldung "Ihre Bestellmenge ist nicht groß genug, um sich für Rechnung mit Scheck Draht qualifizieren" angezeigt.
 
 Wenn Ihre Bestellmenge zu hoch ist, ist möglicherweise eine Bonitätsprüfung erforderlich. Wenn dies der Fall ist, sehen Sie die Meldung "nicht berechtigt, zu Rechnung zu wechseln. Ihre Bestellung erfordert eine Bonitätsprüfung. " In diesem Fall ändern Sie die Zahlung per Rechnung manuell. Führen Sie die folgenden Schritte aus, um die manuelle Änderung abzuschließen.
 
-
 1. Wechseln Sie zu <a href="https://Office365.com" target="_blank">Office365.com</a> , und kaufen Sie das gleiche Abonnement wie das, das Sie derzeit haben. Wählen Sie beim Auschecken die Option zur Zahlung per Rechnung aus.
 
-> [!IMPORTANT]
-> Sie können die Seite **Produkte & Dienste** im Admin Center nicht zum erwerben des Abonnements verwenden. Sie müssen <a href="https://Office365.com" target="_blank">Office365.com</a>verwenden.
+    > [!IMPORTANT]
+    > Sie können die Seite **Produkte & Dienste** im Admin Center nicht zum erwerben des Abonnements verwenden. Sie müssen <a href="https://Office365.com" target="_blank">Office365.com</a>verwenden.
 
 2. Kündigen Sie nach Abschluss des Kaufs das ursprüngliche Abonnement. Ihre Benutzer werden automatisch in das neue Abonnement verschoben.
 
-Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritte aus, um zu Zahlung per Rechnung zu wechseln. 
+Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritte aus, um zu Zahlung per Rechnung zu wechseln.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
@@ -168,14 +168,14 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 
 8. Stellen Sie sicher, dass die ausgewählte Zahlungsmethode richtig ist, und wählen Sie dann **Speichern**aus.
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Umstellen von Zahlung per Kreditkarte oder Bankkonto auf Zahlung per Rechnung
 
 > [!NOTE]
-> Die Option zur Zahlung per Rechnung ist nur verfügbar, wenn Ihr Abonnement über einen bestimmten Betrag (je nach Dienststandort) kostenpflichtig ist. Bei größeren Rechnungsbeträgen kann eine Bonitätsprüfung erforderlich werden. Weitere Informationen finden Sie unter [Bezahlen für Ihr Office 365 Business-Abonnement](pay-for-your-subscription.md).
+> Die Option zur Zahlung per Rechnung ist nur verfügbar, wenn Ihr Abonnement über einen bestimmten Betrag (je nach Dienststandort) kostenpflichtig ist. Bei größeren Rechnungsbeträgen kann eine Bonitätsprüfung erforderlich werden. Weitere Informationen finden Sie unter [Pay for your Subscription](pay-for-your-subscription.md).
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a> .
 
@@ -193,10 +193,10 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="verify-which-payment-method-is-configured"></a>Überprüfen der konfigurierten Zahlungsmethode
 
 Sie können jederzeit die folgenden Schritte ausführen, um die Zahlungsmethode zu überprüfen, die für ein Abonnement konfiguriert wurde.
-
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
@@ -211,6 +211,7 @@ Sie können jederzeit die folgenden Schritte ausführen, um die Zahlungsmethode 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="verify-which-payment-method-is-configured"></a>Überprüfen der konfigurierten Zahlungsmethode
 
 Sie können jederzeit die folgenden Schritte ausführen, um die Zahlungsmethode zu überprüfen, die für ein Abonnement konfiguriert wurde.
