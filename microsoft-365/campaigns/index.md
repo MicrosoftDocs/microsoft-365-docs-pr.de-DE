@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 für Kampagnen
-ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42056480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632035"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 für Kampagnen
 ===========================
@@ -40,21 +40,21 @@ In unserer aktuellen Welt ist die Sicherung von Daten und Kommunikation eine Pri
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Was ist Microsoft 365 für Kampagnen?** Es handelt sich um eine empfohlene Sicherheitskonfiguration, die Microsoft 365 Business umfasst, sodass Sie Folgendes tun können:
+**Was ist Microsoft 365 für Kampagnen?** Es handelt sich um eine empfohlene Sicherheitskonfiguration, die Microsoft 365 Business Premium umfasst, sodass Sie folgende Möglichkeiten haben:
 - Verlassen Sie sich auf vertrauenswürdige Geschäfts Produktivitäts-und Zusammenarbeitstools wie Outlook, Word, Excel und andere Office-Produkte. 
 - Schützen Sie Ihre Arbeitsdateien auf allen IOS-, Android-und Windows 10-Geräten mit unternehmensübergreifender Sicherheit, die einfach zu verwalten ist. 
 - Anwenden eines zusätzlichen Schutzes für Benutzerkonten und Identität 
 
-![Microsoft 365 Business schützt Ihre Produktivitätstools, Tools für die Zusammenarbeit, Dateispeicherung, e-Mail, Geräte und Identität](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium schützt Ihre Produktivitätstools, Tools für die Zusammenarbeit, Dateispeicherung, e-Mail, Geräte und Identität](../media/M365-WhatIsIt-SecurityFocus.png)
 
-Während sich Bundes Wahlkampagnen in den Vereinigten Staaten für spezielle Preise für Microsoft 365 Business qualifizieren, kann jede Organisation mit diesem Plan diese Anleitung nutzen, um erhöhte Sicherheit zu konfigurieren und zu erfahren, wie Sie sicher zusammenarbeiten.
+Während sich Bundes Wahlkampagnen in den Vereinigten Staaten für spezielle Preise für Microsoft 365 Business Premium qualifizieren, kann jede Organisation mit diesem Plan diese Anleitung nutzen, um erhöhte Sicherheit zu konfigurieren und zu erfahren, wie Sie sicher zusammenarbeiten.
 
 Diese Bibliothek umfasst Folgendes:
 - Anleitungen für das Hinzufügen erhöhter Sicherheit.
 - Hilfe für Benutzer zum Einrichten von Geräten für sicheren Zugriff.
 - Anleitung zur sicheren Zusammenarbeit und Freigabe.
 
-Weitere Informationen zum Lieferumfang von finden Sie unter [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). 
+Weitere Informationen zum Lieferumfang finden Sie unter [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
 
 
 <a name="get-started"></a>Erste Schritte
