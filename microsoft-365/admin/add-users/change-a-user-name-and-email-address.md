@@ -1,5 +1,5 @@
 ---
-title: Ändern eines Benutzernamens und einer E-Mail-Adresse in Office 365
+title: Ändern von Benutzernamen und -E-Mail-Adressen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Erfahren Sie, wie ein globaler Administrator die Office 365-E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241658"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618740"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>Ändern eines Benutzernamens und einer E-Mail-Adresse in Office 365
+# <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
-Möglicherweise müssen Sie die Office 365-E-Mail-Adresse und den Anzeigenamen einer Person ändern, wenn diese z. B. heiratet und ihren Nachnamen ändert.
+Es kann vorkommen, dass Sie die E-Mail-Adresse und den Anzeigenamen einer Person ändern müssen, wie z. B. wenn diese heiratet und ihren Nachnamen ändert.
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 ## <a name="change-a-users-email-address"></a>Ändern der E-Mail-Adresse eines Benutzers
 
-Sie müssen [globaler Office 365-Administrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können. 
+Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können. 
 
 ::: moniker range="o365-worldwide"
  
@@ -101,7 +101,7 @@ Sie müssen [globaler Office 365-Administrator](about-admin-roles.md) sein, um d
     
     **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Office 365-Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
@@ -129,7 +129,7 @@ Sie müssen [globaler Office 365-Administrator](about-admin-roles.md) sein, um d
     
     **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Office 365-Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
@@ -157,7 +157,7 @@ Sie müssen [globaler Office 365-Administrator](about-admin-roles.md) sein, um d
     
     **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
-    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Office 365-Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
+    Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
@@ -223,22 +223,22 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“
 
-Wenn die Fehlermeldung " **Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis Office 365 das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen hat. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den Support an. Er wird eine vollständige Synchronisierung für Sie durchführen.
+Wenn die Fehlermeldung "**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den Support an. Er wird eine vollständige Synchronisierung für Sie durchführen.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>„Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal“
 
-Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal**“ erhalten, bedeutet dies, dass Sie kein globaler Administrator von Office 365 sind und nicht über die Berechtigung zum Ändern des Benutzernamens verfügen. Suchen Sie den globalen Administrator in Ihrem Unternehmen und bitten Sie ihn, die Änderung vorzunehmen.
+Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal**“ erhalten, bedeutet dies, dass Sie kein globaler Administrator sind und nicht über die Berechtigung zum Ändern des Benutzernamens verfügen. Suchen Sie den globalen Administrator in Ihrem Unternehmen und bitten Sie ihn, die Änderung vorzunehmen.
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Was mit alten E-Mail-Adressen zu tun ist
 
 Die vorherige primäre E-Mail-Adresse einer Person wird als zusätzliche E-Mail-Adresse beibehalten. **Wir empfehlen dringend, dass Sie die alte E-Mail-Adresse nicht entfernen.**
   
-Einige Personen werden wahrscheinlich weiterhin E-Mails an die alte E-Mail-Adresse der Person senden, und ein Löschen dieser Adresse kann zu NDR-Fehlern führen. Office 365 leitet die E-Mails automatisch an die neue Adresse weiter. Außerdem: Verwenden Sie keine alten SMTP-E-Mail-Adressen, und wenden Sie sie nicht auf neue Konten an. Dies kann ebenfalls zu NDR-Fehlern oder zur Zustellung an ein nicht vorgesehenes Postfach führen.
+Einige Personen werden wahrscheinlich weiterhin E-Mails an die alte E-Mail-Adresse der Person senden, und ein Löschen dieser Adresse kann zu NDR-Fehlern führen. Microsoft leitet die E-Mails automatisch an die neue Adresse weiter. Außerdem: Verwenden Sie keine alten SMTP-E-Mail-Adressen, und wenden Sie sie nicht auf neue Konten an. Dies kann ebenfalls zu NDR-Fehlern oder zur Zustellung an ein nicht vorgesehenes Postfach führen.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Wie ist vorzugehen, wenn das Offline-Adressbuch des Benutzers nicht mit der globalen Adressliste synchronisiert wird?
 
-Wenn ein Benutzer Exchange Online verwendet oder sein Office 365-Konto mit der lokalen Exchange-Umgebung Ihrer Organisation verknüpft ist, wird bei Ihrem Versuch, einen Benutzernamen und die zugehörige E-Mail-Adresse zu ändern, möglicherweise die folgende Fehlermeldung angezeigt: "Dieser Benutzer ist mit Ihrem lokalen Active Directory synchronisiert. Bestimmte Details können nur in Ihrem lokalen Active Directory bearbeitet werden."
+Wenn ein Benutzer Exchange Online verwendet oder sein Konto mit der lokalen Exchange-Umgebung Ihrer Organisation verknüpft ist, wird bei Ihrem Versuch, einen Benutzernamen und die zugehörige E-Mail-Adresse zu ändern, möglicherweise die folgende Fehlermeldung angezeigt: "Dieser Benutzer ist mit Ihrem lokalen Active Directory synchronisiert. Bestimmte Details können nur in Ihrem lokalen Active Directory bearbeitet werden."
   
 Der Grund dafür ist die Microsoft Online Email Routing Address (MOERA). Die MOERA wird aus dem Attribut " _userPrincipalName_" der Person in Active Directory erstellt und dem Cloudkonto während der Erstsynchronisierung automatisch zugewiesen. Sobald eine MOERA erstellt wurde, kann sie in Office 365 nicht geändert oder entfernt werden. Sie können den Benutzernamen zwar anschließend in Active Directory ändern. Weil aber die MOERA unverändert bleibt, können Probleme auftreten, wenn Sie den gerade geänderten Namen in der globalen Adressliste anzeigen. 
   

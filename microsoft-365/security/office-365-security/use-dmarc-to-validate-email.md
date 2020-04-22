@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Office 365-Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c71d4edabcacd2cd4d98dad69aa134cbaf75a111
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633433"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608138"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Validieren von E-Mails in Office 365
 
@@ -207,13 +207,17 @@ Wenn Sie eine DMARC-Ablehnungsrichtlinie veröffentlichen (p=reject), kann kein 
 ## <a name="how-office-365-handles-inbound-email-that-fails-dmarc"></a>So behandelt Office 365 eingehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen
 <a name="inbounddmarcfail"> </a>
 
-Wenn die DMARC-Richtlinie des sendenden Servers „p=reject“ lautet, kennzeichnet EOP die Nachricht als Spam, anstatt sie abzulehnen. Anders ausgedrückt behandelt Office 365 eingehende E-Mail-Nachrichten mit den Richtlinien „p=reject“ und „p=quarantine“ gleich.
+Wenn die DMARC-Richtlinie des sendenden Servers `p=reject` lautet, kennzeichnet EOP die Nachricht als Spoof, anstatt sie abzulehnen. Mit anderen Worten, Office 365 behandelt im Hinblick auf eingehende E-Mails `p=reject` und `p=quarantine` auf die gleiche Weise. Administratoren können die Aktion definieren, die auf Nachrichten, die in der [Anti-Phishing-Richtlinie](set-up-anti-phishing-policies.md) als Spoof klassifiziert werden, angewendet werden soll.
   
-Office 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DMARC-Prüfung möglicherweise nicht bestehen. Eine Nachricht besteht die DMARC-Prüfung zum Beispiel möglicherweise nicht, wenn sie an eine Mailingliste gesendet wird, die die Nachricht an alle Teilnehmer auf der Liste weiterleitet. Wenn Office 365 diese Nachrichten ablehnen würde, könnten autorisierte E-Mail-Nachrichten für Benutzer verloren gehen, ohne dass die Benutzer sie auf andere Weise abrufen können. Diese Nachrichten bestehen die DMARC-Prüfung daher weiterhin nicht, werden jedoch als Spam gekennzeichnet und nicht abgelehnt. Falls gewünscht, können Benutzer diese Nachrichten immer noch anhand einer der folgenden Methoden in ihrem Posteingang erhalten:
+Office 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DMARC-Prüfung möglicherweise nicht bestehen. Eine Nachricht wird zum Beispiel an eine Mailingliste gesendet, die die Nachricht an alle Teilnehmer auf der Liste weiterleitet. Wenn Office 365 diese Nachrichten ablehnen würde, könnten autorisierte E-Mail-Nachrichten für Empfänger verloren gehen, ohne dass diese sie auf andere Weise abrufen können. Diese Nachrichten bestehen die DMARC-Prüfung daher weiterhin nicht, werden jedoch als Spoof gekennzeichnet und nicht abgelehnt. Die Benutzer können diese Nachrichten immer noch anhand einer der folgenden Methoden in ihrem Posteingang erhalten:
   
-- Benutzer fügen mithilfe des E-Mail-Clients sichere Absender einzeln hinzu
+- Die Benutzer fügen mithilfe des E-Mail-Clients sichere Absender einzeln hinzu.
 
-- Administratoren erstellen eine Exchange-E-Mail-Flussregel (auch bekannt als Transportregel) für alle Benutzer, die Nachrichten dieser bestimmten Absender zulassen. 
+- Administratoren können die [Spoofing Intelligence](learn-about-spoof-intelligence.md)-Berichterstellung so aktualisieren, dass Spoofing zulässig ist.
+
+- Administratoren erstellen eine Exchange-E-Mail-Flussregel (auch bekannt als Transportregel) für alle Benutzer, die Nachrichten dieser bestimmten Absender zulassen.
+
+Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365).
 
 ## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>So verwendet Office 365 ARC (Authenticated Received Chain)
 <a name="ARC"> </a>
