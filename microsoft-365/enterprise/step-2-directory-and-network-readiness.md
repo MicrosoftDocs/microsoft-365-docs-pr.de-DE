@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Sie die Verzeichnis- und Netzwerkbereitschaft in der Umgebung bewerten.
-ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085410"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636808"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Schritt 2: Verzeichnis- und Netzwerkbereitschaft
 
-Stellen Sie sicher, dass das Verzeichnis und das Netzwerk konfiguriert und bereit sind, den Wechsel zu Windows 10 und Office 365 ProPlus zu unterstützen. Hierzu muss Azure Active Directory Services für Benutzer aktiviert sein, und das Netzwerk muss in der Lage sein, den normalen Datenverkehr sowie die Bewegung von potenziell riesigen Mengen an Daten zu verarbeiten, während PCs aktualisiert und Benutzerdateien, Einstellungen und Anwendungen wiederhergestellt werden.
+Stellen Sie sicher, dass das Verzeichnis und das Netzwerk konfiguriert und bereit sind, den Wechsel zu Windows 10 und Microsoft 365 Apps for Enterprise zu unterstützen. Hierzu muss Azure Active Directory Services für Benutzer aktiviert sein, und das Netzwerk muss in der Lage sein, den normalen Datenverkehr sowie die Bewegung von potenziell riesigen Mengen an Daten zu verarbeiten, während PCs aktualisiert und Benutzerdateien, Einstellungen und Anwendungen wiederhergestellt werden.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ Stellen Sie sicher, dass das Verzeichnis und das Netzwerk konfiguriert und berei
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Schritt 2: Verzeichnis- und Netzwerkbereitschaft</strong></p>
-<p>Mit der Cloud verbundene Dienste in Office 365 ProPlus und neue Bereitstellungsoptionen wie Windows Autopilot erfordern Azure Active Directory. Netzwerk und Konnektivität sind auch wichtige Bereiche, die beim Verschieben von Windows-Abbildern, Apps, Treibern und zugehörigen Dateien auf Ihre Computer geplant werden müssen. Erfahren Sie, wie Sie mit neuen Tools und Bereitstellungsoptionen den Netzwerkverkehr reduzieren und optimieren können.</p></td>
+<p>Für mit der Cloud verbundene Dienste in Microsoft 365 Apps for Enterprise und neue Bereitstellungsoptionen wie Windows Autopilot ist Azure Active Directory erforderlich. Netzwerk und Konnektivität sind auch wichtige Bereiche, die beim Verschieben von Windows-Abbildern, Apps, Treibern und zugehörigen Dateien auf Ihre Computer geplant werden müssen. Erfahren Sie, wie Sie mit neuen Tools und Bereitstellungsoptionen den Netzwerkverkehr reduzieren und optimieren können.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -43,17 +43,17 @@ Stellen Sie sicher, dass das Verzeichnis und das Netzwerk konfiguriert und berei
 
 Die Verzeichnis- und Netzwerkbereitschaft ist eine grundlegende Voraussetzung, um eine reibungslose Betriebssystem- und Desktopbereitstellung zu gewährleisten. Wie bei der automatisierten Bereitstellung ist es auch hier wichtig, dass Dateifreigaben erreichbar sind, und das Netzwerk muss die Übertragung von sehr großen Dateien auf möglicherweise Hunderte oder Tausende von PCs gleichzeitig unterstützen.
 
-Beim Wechsel zu Windows 10 und Office 365 ProPlus müssen Sie außerdem sicherstellen, dass cloudbasierte Identität in Azure Active Directory eingerichtet ist. Dies ist nicht nur für die Aktivierung von Office 365 ProPlus äußerst wichtig, sondern ermöglicht Ihnen auch, moderne Bereitstellungslösungen wie Windows Autopilot zu nutzen.
+Beim Wechsel zu Windows 10 und Microsoft 365 Apps for Enterprise müssen Sie außerdem sicherstellen, dass cloudbasierte Identität in Azure Active Directory eingerichtet ist. Dies ist nicht nur für die Aktivierung von Microsoft 365 Apps for Enterprise äußerst wichtig, sondern ermöglicht Ihnen auch, moderne Bereitstellungslösungen wie Windows Autopilot zu nutzen.
 
-In diesem Artikel erfahren Sie mehr über die Tools und Optionen zum Vorbereiten der Verzeichnisdienste sowie Benutzer- und Geräteberechtigungen für die Bereitstellung in Windows 10 und Office 365 ProPlus.
+In diesem Artikel erfahren Sie mehr über die Tools und Optionen zum Vorbereiten der Verzeichnisdienste sowie Benutzer- und Geräteberechtigungen für die Bereitstellung in Windows 10 und Microsoft 365 Apps for Enterprise.
 
 ## <a name="adding-azure-active-directory"></a>Hinzufügen von Azure Active Directory
 
 Wenn Ihre Organisation bereits Office 365, Exchange Online, Microsoft Intune oder andere Microsoft Online-Dienste verwendet, ist die gute Nachricht, dass Sie bereits Azure Active Directory verwenden. Wenn dies der Fall ist, müssen Sie nur sicherzustellen, dass die Benutzer, für die Sie die Desktopbereitstellung vornehmen möchten, in Ihrem Azure Active Directory vorhanden sind, und dass Lizenzen zugewiesen wurden.
 
-Wenn Sie Azure Active Directory noch nicht verwenden, gibt es [zahlreiche Ressourcen](https://docs.microsoft.com/azure/active-directory/), die Ihnen bei der Einrichtung helfen. Sie sind möglicherweise für die persönliche Unterstützung über Microsoft FastTrack berechtigt, als Teil Ihrer Office 365-Lizenz. Weitere Informationen über Microsoft Fastrack finden Sie [hier](https://fasttrack.microsoft.com).
+Wenn Sie Azure Active Directory noch nicht verwenden, gibt es [zahlreiche Ressourcen](https://docs.microsoft.com/azure/active-directory/), die Ihnen bei der Einrichtung helfen. Sie sind möglicherweise zu persönlicher Unterstützung über Microsoft FastTrack berechtigt, als Teil Ihrer Lizenz. Weitere Informationen über Microsoft Fastrack finden Sie [hier](https://fasttrack.microsoft.com).
 
-Sobald Sie Azure Active Directory eingerichtet haben, können sich die Benutzer anmelden und ihre Office 365 ProPlus-Apps aktivieren, und Sie können die Microsoft Intune- oder Windows Autopilot-Bereitstellung für die automatisierte Bereitstellung von Apps und Richtlinien verwenden.
+Sobald Sie Azure Active Directory eingerichtet haben, können sich die Benutzer anmelden und ihre Microsoft 365 Apps for Enterprise-Apps aktivieren, und Sie können die Microsoft Intune- oder Windows Autopilot-Bereitstellung für die automatisierte Bereitstellung von Apps und Richtlinien verwenden.
 
 ## <a name="network-readiness"></a>Netzwerkbereitschaft
 
@@ -67,7 +67,7 @@ Bei Windows-Images ohne Anpassungen sollten Sie in der Regel 3 GB pro PC einplan
 
 ### <a name="software-updates"></a>Softwareupdates
 
-Sie müssen nach Netzwerkbandbreite für Softwareupdates einplanen. Windows 10 und Office 365 ProPlus verwenden ein Servicemodell mit monatlichen und halbjährliche Updates. Wenn Sie mit diesem Modell noch nicht vertraut sind, erfahren Sie [hier](https://docs.microsoft.com/windows/deployment/update/waas-overview) mehr zu seiner Funktionsweise.
+Sie müssen nach Netzwerkbandbreite für Softwareupdates einplanen. Windows 10 und Microsoft 365 Apps for Enterprise verwenden ein neues Wartungsmodell mit monatlichen und halbjährlichen Updates. Wenn Sie mit diesem Modell noch nicht vertraut sind, erfahren Sie [hier](https://docs.microsoft.com/windows/deployment/update/waas-overview) mehr zu seiner Funktionsweise.
 
 Das neue Servicemodell umfasst Featureupdates für Windows zwei Mal im Jahr, halbjährliche Kanalupdates für Office und monatliche Qualitätsupdates. Featureupdates sind in der Regel 2 bis 4 GB groß, und halbjährliche Kanalupdates für Office 300 bis 400 MB pro Update. Dann gibt es noch die monatlichen Qualitätsupdates. Diese können ein paar Hundert Megabyte (MB) bis über 1 GB groß sein. Dies liegt daran, dass monatliche Updates kumulativ sind, sodass ihre Größe während der Lebensdauer für jede Version von Windows 10 stetig zunimmt. Es gibt jedoch Tools, mit denen sich die Datenmenge reduzieren lässt, die zum Implementieren von Updates im Netzwerk übertragen werden muss. Dies wird weiter unten ausführlicher erläutert.
 
@@ -111,19 +111,19 @@ Hinweis: BranchCache and Peercache ergänzen sich und können zusammen in dersel
 
 [Branch-Cache und Peer-Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Übermittlungsoptimierung** Die Übermittlungsoptimierung ist eine weitere Peer-zu-Peer Technologie für die Zwischenspeicherung, die auf dem Netzwerk basierende Steuerungen für Bereitstellungen bietet. Verwenden Sie die Windows 10-Übermittlungsoptimierung, um integrierte UWP-Apps zu aktualisieren und um Anwendungen aus dem Microsoft Store sowie Softwareupdates mit Express-Updates zu installieren. Sie ist seit den frühen Versionen von Windows 10 verfügbar, wurde jedoch erst kürzlich mit Microsoft Endpoint Configuration Manager (Current Branch) integriert. Seit Windows 10 Version 1803 bedeuten neue Konfigurationsoptionen, dass Sie jetzt unabhängig voneinander Bandbreitengrenzwerte für die Aktualisierung im Hintergrund und Vordergrundaufgaben wie das Installieren einer App aus dem Store festlegen können. Die Windows-Übermittlungsoptimierung unterstützt nun auch Office 365 ProPlus bei Clientupdates, verfügbar in allen unterstützten Office 365-Clientupdatekanälen. Unterstützung für Windows-Übermittlungsoptimierung bei der Erstinstallation von Office 365-Clients wird in Kürze folgen.  
+**Übermittlungsoptimierung** Die Übermittlungsoptimierung ist eine weitere Peer-zu-Peer Technologie für die Zwischenspeicherung, die auf dem Netzwerk basierende Steuerungen für Bereitstellungen bietet. Verwenden Sie die Windows 10-Übermittlungsoptimierung, um integrierte UWP-Apps zu aktualisieren und um Anwendungen aus dem Microsoft Store sowie Softwareupdates mit Express-Updates zu installieren. Sie ist seit den frühen Versionen von Windows 10 verfügbar, wurde jedoch erst kürzlich mit Microsoft Endpoint Configuration Manager (Current Branch) integriert. Seit Windows 10 Version 1803 bedeuten neue Konfigurationsoptionen, dass Sie jetzt unabhängig voneinander Bandbreitengrenzwerte für die Aktualisierung im Hintergrund und Vordergrundaufgaben wie das Installieren einer App aus dem Store festlegen können. Die Windows-Übermittlungsoptimierung unterstützt nun auch Microsoft 365 Apps for Enterprise bei Clientupdates, verfügbar in allen unterstützten Clientupdatekanälen. Unterstützung für Windows-Übermittlungsoptimierung bei der Erstinstallation von Clients ist in Kürze verfügbar.  
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
-**Weitere Aspekte für Office 365 ProPlus**
+**Zusätzliche Überlegungen zu Microsoft 365 Apps for Enterprise**
 
-Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Elemente, die Ihnen helfen, Ihre Netzwerklast durch die Office 365 ProPlus-Bereitstellungen zu reduzieren.
+Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Elemente, die Ihnen helfen, Ihre Netzwerklast durch die Microsoft 365 Apps for Enterprise-Bereitstellungen zu reduzieren.
 
-**Binary Delta Compression (Binärdeltakomprimierung)** Office 365 ProPlus verwendet die Binary Delta Compression, um die Bandbreite zu verringern, die von Softwareupdates beim Aktualisieren von der neuesten Version von Office 365 ProPlus auf die nächste Version beansprucht wird. Indem nur die Änderungen auf Binärebene im Vergleich zur vorherigen Version abgerufen werden, werden die Auswirkung der monatlich wachsenden kumulativen Updates minimiert. So können bis zu mehrere Hundert MB von Daten pro PC jeden Monat eingespart werden. Um diese Funktion nutzen zu können, können Sie jedoch keine Versionen überspringen. Fall Sie dies doch tun, müssen Sie das gesamte kumulative Update herunterladen.
+**Binärdeltakomprimierung** Microsoft 365 Apps for Enterprise verwendet die Binärdeltakomprimierung, um die Bandbreite zu verringern, die von Softwareupdates beim Aktualisieren von der neuesten Version von Microsoft 365 Apps for Enterprise auf die nächste Version beansprucht wird. Indem nur die Änderungen auf Binärebene im Vergleich zur vorherigen Version abgerufen werden, werden die Auswirkungen der monatlich wachsenden kumulativen Updates minimiert. So können bis zu mehrere Hundert MB von Daten pro PC jeden Monat eingespart werden. Um diese Funktion nutzen zu können, können Sie jedoch keine Versionen überspringen. Fall Sie dies doch tun, müssen Sie das gesamte kumulative Update herunterladen.
 
 [Herunterladen von Updates für Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**Outlook-Datendateien** Outlook wird oft so konfiguriert, dass es das gesamte Postfach der Benutzer für die Offlineverwendung lokal zwischenspeichert. Dies gilt für alle Windows-Bereitstellungen, mit Ausnahme direkter Upgrades. Diese erfordern, dass sich die Outlook-Datendateien der Benutzer nach dem Upgrade selbst neu erstellen. Dies ist ein automatisierter Prozess, aber bei den Outlook-Postfachbeschränkungen, die normalerweise auf maximal 100 GB festgelegt sind, bedeutet das erneute lokale Zwischenspeichern des gesamten Postfachs für alle Benutzer eine Menge Datentransfer. Zum Reduzieren der Netzwerklast können Sie beispielsweise die Gruppenrichtlinie verwenden, um die Einstellung für "E-Mail im Offlinemodus" zu verringern. In Office 365 ProPlus oder Office 2016 ist der Standardwert für Outlook auf 12 Monate festgelegt. Um die Auswirkungen auf das Netzwerk zu reduzieren, sollten Sie für den Offlinecache eine Dauer von 1 bis 6 Monaten festlegen. Das Ändern dieser Einstellung hat keinen Einfluss auf die Größe des Onlinepostfachs, und das gesamte Postfach kann weiterhin über Outlook durchsucht werden, wenn es online ist.
+**Outlook-Datendateien** Outlook wird oft so konfiguriert, dass es das gesamte Postfach der Benutzer für die Offlineverwendung lokal zwischenspeichert. Dies gilt für alle Windows-Bereitstellungen, mit Ausnahme direkter Upgrades. Diese erfordern, dass sich die Outlook-Datendateien der Benutzer nach dem Upgrade selbst neu erstellen. Dies ist ein automatisierter Prozess, aber bei den Outlook-Postfachbeschränkungen, die normalerweise auf maximal 100 GB festgelegt sind, bedeutet das erneute lokale Zwischenspeichern des gesamten Postfachs für alle Benutzer eine Menge Datentransfer. Zum Reduzieren der Netzwerklast können Sie beispielsweise die Gruppenrichtlinie verwenden, um die Einstellung für "E-Mail im Offlinemodus" zu verringern. In Microsoft 365 Apps for Enterprise oder Office 2016 ist der Standardwert für Outlook auf 12 Monate festgelegt. Um die Auswirkungen auf das Netzwerk zu reduzieren, sollten Sie für den Offlinecache eine Dauer von 1 bis 6 Monaten festlegen. Das Ändern dieser Einstellung hat keinen Einfluss auf die Größe des Onlinepostfachs, und das gesamte Postfach kann weiterhin über Outlook durchsucht werden, wenn es online ist.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
@@ -135,15 +135,15 @@ Zusätzlich zur Nutzung der Übermittlungsoptimierung finden Sie hier drei Eleme
 
 [OneDrive-Dateien nach Bedarf](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-Wenn Sie OneDrive noch nicht ausgerollt haben, ist der Übergang von Windows 7 zu Windows 10 eine gute Gelegenheit, um OneDrive zu aktivieren, und es kann problemlos in Office 365 ProPlus integriert werden. Ziehen Sie den Beginn dieses Rollouts in Betracht, wenn Sie die App- und Gerätebereitschaft bearbeiten. Hierdurch erhalten Sie bei der Dateisynchronisierung einen Vorsprung, bevor Sie mit dem Verschieben von Windows-Images und dem Bereitstellen von Apps über das Netzwerk beginnen.
+Wenn Sie OneDrive noch nicht bereitgestellt haben, ist der Übergang von Windows 7 zu Windows 10 eine gute Gelegenheit, um OneDrive zu aktivieren, und es kann problemlos in Microsoft 365 Apps for Enterprise integriert werden. Ziehen Sie den Beginn dieses Rollouts in Betracht, wenn Sie die App- und Gerätebereitschaft bearbeiten. Hierdurch erhalten Sie bei der Dateisynchronisierung einen Vorsprung, bevor Sie mit dem Verschieben von Windows-Images und dem Bereitstellen von Apps über das Netzwerk beginnen.
 
 ## <a name="next-step"></a>Nächster Schritt 
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Schritt 3: Liefern von Office- und Branchen-Apps](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Schritt 3: Liefern von Office- und Branchen-Apps](https://aka.ms/mdd3)
 
 ## <a name="previous-step"></a>Vorheriger Schritt:
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[Schritt 1: Geräte- und App-Bereitschaft](https://aka.ms/mdd1)
 
 ## <a name="feedback"></a>Feedback
 

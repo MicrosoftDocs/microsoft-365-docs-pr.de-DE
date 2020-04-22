@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612645"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638260"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 
@@ -29,7 +29,7 @@ Auch Nicht-Unternehmen können Microsoft 365 Enterprise einsetzen und den Gesch�
 - Eine kleine oder gar keine lokale IT-Infrastruktur, wie E-Mail- und Dateiserver und eine Active Directory Domain Services (AD DS)-Domäne.
 - Ein kleines IT-Team, von dem die meisten Informatiker sind, und nicht Spezialisten für eine bestimmte Technologie oder Arbeitsbelastung wie Vernetzung oder E-Mail senden.
 
-Für Ihre Nicht-Unternehmen stellt Microsoft [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) bereit. Es gibt jedoch Gründe, warum Sie Microsoft 365 Enterprise benötigen, wie z. B.:
+Für Organisationen, die kein Unternehmen sind, bietet Microsoft [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) an. Es gibt jedoch Gründe, warum Sie Microsoft 365 Enterprise benötigen, wie z. B.:
 
 - Ihre Organisation benötigt jetzt oder später mehr als 300 Microsoft 365-Lizenzen, was das Maximum für Microsoft 365 Business darstellt.
 - Ihre Organisation benötigt die fortschrittliche Produktivität, Sprach-, Sicherheits- und Analysefunktionen, die mit Microsoft 365 Business nicht verfügbar sind.
@@ -38,7 +38,7 @@ Dieser Artikel führt Sie durch eine vereinfachte Bereitstellung der für Ihr Ni
 
 ## <a name="first-set-up-your-subscription"></a>Erstens: Einrichten Ihres Abonnements
 
-Sie müssen die DNS-Domänen (Domain Name System) für Ihr Abonnement einrichten. Wenn Sie bereits ein Office 365-Abonnement haben, sollte dies geschehen sein. Wenn dies nicht der Fall ist, folgen Sie den Anweisungen unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
+Sie müssen die DNS-Domänen (Domain Name System) für Ihr Abonnement einrichten. Wenn Sie bereits ein Microsoft 365-Abonnement haben, sollte dies geschehen sein. Wenn dies nicht der Fall ist, folgen Sie den Anweisungen unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
 
 Als nächstes müssen Sie zusätzliche Sicherheit für Microsoft 365 konfigurieren. Folgen Sie den Anweisungen unter [Konfigurieren der erhöhten Sicherheit](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
@@ -213,28 +213,28 @@ Zu den neuen und hervorgehobenen Elementen von Windows 10 Enterprise gehören:
 | ![Das Volume Licensing Service Center](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Das Volume Licensing Service Center, das Bilder für Neuinstallationen von Windows 10 Enterprise bereitstellt, und der Windows Update for Business Service, der die neuesten Updates bereitstellt. |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>Phase 4: Office 365 ProPlus
+## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Phase 4: Microsoft 365 Apps for Enterprise
 
-Microsoft 365 Enterprise enthält Office 365 ProPlus, die Abonnementversion von Microsoft Office. Wie Office 2016 oder Office 2019 wird Office 365 ProPlus direkt auf Ihren Clientgeräten installiert. Office 365 ProPlus erhält jedoch in regelmäßigen Abständen mit neuen Features. Weitere Informationen finden Sie unter [Informationen zu Office 365 ProPlus im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise enthält Microsoft 365 Apps for Enterprise, die Abonnementversion von Microsoft Office. Wie Office 2016 oder Office 2019 wird Microsoft 365 Apps for Enterprise direkt auf Ihren Clientgeräten installiert. Microsoft 365 Apps for Enterprise erhält jedoch in regelmäßigen Abständen Updates mit neuen Features. Weitere Informationen finden Sie unter [Info zu Microsoft 365 Apps for Enterprise im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
-Für Ihr Nicht-Unternehmen installieren Sie Office 365 ProPlus manuell auf Geräten, beispielsweise auf Windows-, iOS- und Android-Geräten. Dies kann im Rahmen der Vorbereitung eines neuen Geräts für den Gebrauch oder durch den Benutzer im Rahmen seines Onboarding-Prozesses erfolgen.
+Für Ihre Nicht-Unternehmensorganisation installieren Sie Microsoft 365 Apps for Enterprise manuell auf Geräten, beispielsweise auf Windows-, iOS- und Android-Geräten. Dies kann im Rahmen der Vorbereitung eines neuen Geräts für den Gebrauch oder durch den Benutzer im Rahmen seines Onboarding-Prozesses erfolgen.
 
 In beiden Fällen meldet sich der Administrator oder der Benutzer am Office 365-Portal unter https://portal.office.com an. Klicken Sie auf der Registerkarte **Microsoft Office-Startseite** auf **Office installieren**, und durchlaufen Sie den Installationsvorgang.
 
-Feature-Updates für Office 365 ProPlus werden monatlich von jedem Computer heruntergeladen, auf dem sie installiert sind. In der Regel ist es in einem Nicht-Unternehmen nicht erforderlich, eine Infrastruktur für die Verteilung von Office 365 ProPlus-Updates einzurichten. 
+Feature-Updates für Microsoft 365 Apps for Enterprise werden monatlich von jedem Computer heruntergeladen, auf dem sie installiert sind. In der Regel ist es in einer Nicht-Unternehmensorganisation nicht erforderlich, eine Infrastruktur für die Verteilung von Microsoft 365 Apps for Enterprise-Updates einzurichten. 
 
 ### <a name="your-configuration-so-far"></a>Ihre bisherige Konfiguration
 
-Hier ist eine visuelle Zusammenfassung der Phase "Office 365 ProPlus", in der die neuen Elemente hervorgehoben sind.
+Hier ist eine visuelle Zusammenfassung der Phase "Microsoft 365 Apps for Enterprise", in der die neuen Elemente hervorgehoben sind.
 
-![Ihre Organisation nach der Phase "Office 365 ProPlus"](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Ihre Organisation nach der Microsoft 365 Apps for Enterprise-Phase](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-Zu den neuen und hervorgehobenen Office 365 ProPlus-Elementen gehören:
+Zu den neuen und hervorgehobenen Elementen von Microsoft 365 Apps for Enterprise gehören:
  
 |||
 |:------:|:-----|
-| ![Office 365 ProPlus auf Geräten](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus wurde auf Geräten installiert, beispielsweise auf einem lokalen Laptop. |
-| ![Office-Content Delivery Network (CDN) für Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Das Office Content Delivery Network (CDN) für Office 365 ProPlus, auf das die Geräte für Office 365 ProPlus-Updates zugreifen. |
+| ![Auf Geräten installiertes Microsoft 365 Apps for Enterprise](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Microsoft 365 Apps for Enterprise wurde auf Geräten installiert, beispielsweise auf einem lokalen Laptop. |
+| ![Das Office-Content Delivery Network (CDN) für Microsoft 365 Apps for Enterprise](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Das Office Content Delivery Network (CDN) für Microsoft 365-Apps for Enterprise, auf das von Geräten für Microsoft 365 Apps for Enterprise-Updates zugegriffen wird. |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>Phase 5: Verwaltung mobiler Geräte
@@ -312,14 +312,14 @@ Basierend auf diesen Ebenen der Datensicherheit ist der nächste Schritt die Ide
 
 Weitere Informationen hierzu finden Sie unter [Microsoft 365-Klassifizierungstypen](infoprotect-configure-classification.md#microsoft-365-classification-types).
 
-Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Office 365-Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf, auf die die Vertraulichkeitsbezeichnung angewendet wurde. 
+Wenn Sie Vertraulichkeitsbezeichnungen mit Berechtigungen verwenden, müssen Sie möglicherweise zusätzliche Sicherheitsgruppen erstellen, um zu definieren, wer was mit E-Mails und Dokumenten tun darf, auf welche die Vertraulichkeitsbezeichnung angewendet wurde. 
 
 Beispielsweise müssen Sie eine Vertraulichkeitsbezeichnung FORSCHUNG erstellen, um die E-Mails und Dokumente Ihres Forschungsteams zu schützen. Sie bestimmen Folgendes:
 
 - Forscher müssen die Möglichkeit haben, Dokumente zu ändern, die mit der Vertraulichkeitsbezeichnung "FORSCHUNG" gekennzeichnet sind.
 - Angestellte, die nicht der Forschungsabteilung angehören, müssen Dokumente, die mit der Vertraulichkeitsbezeichnung "FORSCHUNG" gekennzeichnet sind, anzeigen können. 
 
-Dies bedeutet, dass Sie zwei zusätzliche Office 365-Gruppen erstellen und verwalten müssen:
+Dies bedeutet, dass Sie zwei zusätzliche Microsoft 365-Gruppen erstellen und verwalten müssen:
 
 - FORSCHUNG – ALLE
 - FORSCHUNG – ANZEIGEN
@@ -388,7 +388,7 @@ Geben Sie Angestellten, die sich zum ersten Mal bei Microsoft 365 anmelden, die 
 
 1. Sich auf ihren Geräten mit ihren Benutzerkonto-Anmeldeinformationen anzumelden.
 2. Sich mit einem Browser am Office 365-Portal unter https://portal.office.com anzumelden.
-3. Auf der Registerkarte **Office 365 Home** auf **Office installieren** zu klicken, um Office 365 ProPlus auf Ihrem Gerät zu installieren.
+3. Klicken Sie auf der Registerkarte **Office 365 Home** auf **Office installieren**, um Microsoft 365 Apps for Enterprise auf ihrem Gerät zu installieren.
 
 ## <a name="end-results"></a>Endergebnisse
 
@@ -405,7 +405,7 @@ Nach dem Aufbau und der Konfiguration Ihrer Microsoft 365 Enterprise-Infrastrukt
   - BEDINGTEN ZUGRIFF AUSSCHLIEßEN
   - Die entsprechenden AD DS- oder Azure AD-Sicherheitsgruppen, die auch Mitglieder der Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT sind 
   - Arbeitsgruppen-, Abteilungs- und Regionalgruppen
-  - Office 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
+  - Microsoft 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
 - Azure AD-Richtlinien für den bedingten Zugriff melden sich an, der die Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT sowie BEDINGTEN ZUGRIFF AUSSCHLIEßEN verwenden.
 - Intune-Richtlinien für Anwendungen und Gerätekompatibilität.
 - Benutzerdefinierte Typen vertraulicher Informationen (nach Bedarf).
@@ -429,11 +429,11 @@ Nach dem Onboarding sollte jeder Mitarbeiter Folgendes haben:
    - LIZENZIERT
    - Die entsprechenden AD DS- oder Azure AD-Sicherheitsgruppen, die auch Mitglieder der Azure AD-Gruppen BASISPLAN, VERTRAULICH und STRENG GEREGELT für Richtlinien für den bedingten Zugriff sind. 
    - Die entsprechenden Arbeitsgruppen-, Abteilungs- und Regionalgruppen
-   - Office 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
+   - Microsoft 365-Gruppen mit Vertraulichkeitsbezeichnung (nach Bedarf)
 - Ein Windows 10 Enterprise-Gerät, das:
    - Mit dem Azure AD-Mandanten (nur Cloud) oder mit dem Azure AD-Mandanten und Ihrer AD DS-Domäne (Hybrid) verbunden ist.
    - Sich automatisch mit den neuesten Produktverbesserungen und Sicherheitserweiterungen von Windows 10 Enterprise aktualisiert.
-   - Office 365 ProPlus installiert hat, welches sich automatisch mit den neuesten Produktverbesserungen und Sicherheitserweiterungen von Office aktualisiert.
+   - auf dem Microsoft 365 Apps for Enterprise installiert ist, das automatisch mit den neuesten Produktverbesserungen und Sicherheitserweiterungen von Microsoft aktualisiert wird.
    - In Intune registriert ist und den Intune-Richtlinien für die Gerätekompatibilität und den App-Schutzrichtlinien unterliegt.
 
 ## <a name="next-step"></a>Nächster Schritt
