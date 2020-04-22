@@ -1,5 +1,5 @@
 ---
-title: Einrichten von SPF in Office 365 zum Verhindern von Spoofing
+title: Einrichten von SPF zum Verhindern von Spoofing
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel enthält Informationen zum Aktualisieren des DNS-Eintrags (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365. SPF hilft bei der Überprüfung ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598332"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638320"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Einrichten von SPF in Office 365 zum Verhindern von Spoofing
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
  **Zusammenfassung:** Dieser Artikel enthält Informationen zum Aktualisieren des DNS-Eintrags (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365. SPF hilft bei der Überprüfung ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden.
 
@@ -59,7 +59,7 @@ Sammeln Sie folgende Informationen:
 
 1. Machen Sie sich mit der SFP-Syntax in der folgenden Tabelle vertraut.
 
-   ||**Wenn Sie Folgendes verwenden ...**|**Standard für Office 365-Kunden?**|**Fügen Sie Folgendes hinzu ...**|
+   ||**Wenn Sie Folgendes verwenden ...**|**Für Kunden üblich?**|**Fügen Sie Folgendes hinzu ...**|
    |:-----|:-----|:-----|:-----|
    |1|Beliebiges E-Mail-System (erforderlich)|Standard. Alle SPF TXT-Einträge beginnen mit dem folgenden Wert|v=spf1|
    |2|Exchange Online|Standard|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ Sammeln Sie folgende Informationen:
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   Dies ist der häufigste Office 365-SPF TXT-Eintrag. Dieser Eintrag eignet sich für fast alle Benutzer, unabhängig davon, ob sich Ihr Office 365-Rechenzentrum in den USA, in Europa (einschließlich Deutschland) oder an einem anderen Standort befindet.
+   Dies ist der häufigste SPF TXT-Eintrag. Dieser Eintrag eignet sich für fast alle Benutzer, unabhängig davon, ob sich Ihr Microsoft-Rechenzentrum in den USA, in Europa (einschließlich Deutschland) oder an einem anderen Standort befindet.
 
    Wenn Sie Office 365 Deutschland, Teil von Microsoft Cloud Deutschland, erworben haben, sollten Sie jedoch die Include-Anweisung aus Zeile 4 anstelle von Zeile 2 verwenden. Wenn Sie vollständig in Office 365 Deutschland gehostet werden (Sie haben also keine lokalen E-Mail-Server), sieht Ihr SPF TXT-Eintrag wie folgt aus und enthält Zeilen 1, 4 und 7:
 

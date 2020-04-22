@@ -1,5 +1,5 @@
 ---
-title: Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus
+title: Auffinden von Hilfe für Ihre Bereitstellung von Windows 10 mit Microsoft 365 Apps for Enterprise
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,19 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informationen dazu, wo Sie Hilfe und Support zur Bereitstellung von Windows 10 und Office 365 ProPlus finden.
-ms.openlocfilehash: c581cbfc7fdb537fddf10b20d697a42a8e564bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informationen dazu, wo Sie Hilfe und Support zu Ihrer Bereitstellung von Windows 10 mit Microsoft 365 Apps for Enterprise finden.
+ms.openlocfilehash: 7c5376228c3c0b7506fd9b9fe7fb565c0bb76446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634086"
 ---
-# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Hilfe zur Bereitstellung von Windows 10 und Office 365 ProPlus 
+# <a name="find-help-for-your-windows-10-and-microsoft-365-apps-for-enterprise-deployment"></a>Auffinden von Hilfe für Ihre Bereitstellung von Windows 10 mit Microsoft 365 Apps for Enterprise 
 
-Wenn Sie Ihre Windows 10-Bereitstellung mit Office 365 ProPlus planen, gibt es mehrere Optionen, um zusätzliche Hilfe von zertifizierten Microsoft-Partnern und von [Microsoft FastTrack](https://www.microsoft.com/fasttrack) zu erhalten.
+Wenn Sie Ihre Windows 10-Bereitstellung mit Microsoft 365 Apps for Enterprise planen, gibt es mehrere Möglichkeiten, um zusätzliche Hilfe von zertifizierten Microsoft-Partnern und [Microsoft FastTrack](https://www.microsoft.com/fasttrack) zu erhalten.
 
-Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopbereitstellungs](https://www.aka.ms/howtoshift)prozess für Windows 10, Office 365 ProPlus und Enterprise Mobility + Security mit vorhandenen Partnern und FastTrack-Angeboten ausgerichtet sind. In vielen Fällen sind diese Dienste in Ihr berechtigtem Abonnement von Microsoft 365, Office 365 oder Windows 10 Enterprise enthalten. Microsoft bietet als qualifizierende Organisation für von Partnern bereitgestellte Dienste, wie die Windows 10 -und Office 365 ProPlus-Desktopbewertung, einen Gutschein für vom Partner durchgeführte Dienste an. Details für die einzelnen Angebote finden Sie unter den folgenden Links.
+Nachfolgend finden Sie eine Zuordnung der verfügbaren Dienste, die am [Desktopbereitstellungs](https://www.aka.ms/howtoshift)prozess für Windows 10, Microsoft 365 Apps for Enterprise und Enterprise Mobility + Security mit vorhandenen Partnern und FastTrack-Angeboten ausgerichtet ist. In vielen Fällen sind diese Dienste in Ihr berechtigtem Abonnement von Microsoft 365, Office 365 oder Windows 10 Enterprise enthalten. Microsoft bietet als qualifizierende Organisation für von Partnern bereitgestellte Dienste, wie die Windows 10 -und Microsoft 365 Apps for Enterprise-Desktopbewertung, einen Gutschein für vom Partner durchgeführte Dienste an. Details für die einzelnen Angebote finden Sie unter den folgenden Links.
 
 <br>
 
@@ -36,7 +36,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Geräte- und App-Bereitschaft</strong></p>
 <ul>
 <li><p><a href="https://aka.ms/MDAcustomerform">Bewertung des modernen Desktops</a>, bei der ein qualifizierter Partner in Ihrer Region Ihrer Organisation eine tief gehende Anwendungs- und Gerätekompatibilität und Bewertung der Upgradebereitschaft mithilfe der neuesten Microsoft-Tools und -Verfahren bereitstellt.</p>
-<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>: FastTrack-Techniker von Microsoft stellen beratende Hilfestellung und Problemlösungen bereit, wenn Sie bei der Bereitstellung von Windows 10 und Office 365 ProPlus oder laufenden Updates auf Probleme bei der App-Kompatibilität stoßen.</p>
+<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>: FastTrack-Techniker von Microsoft stellen beratende Hilfestellung und Problemlösungen bereit, wenn Sie bei der Bereitstellung von Windows 10 und Microsoft 365 Apps for Enterprise oder laufenden Updates auf Probleme bei der App-Kompatibilität stoßen.</p>
 </ul></td>
 </tr>
 <tbody>
@@ -44,14 +44,14 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>Verzeichnis- und Netzwerkbereitschaft</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Haupt-Onboarding</a>: FastTrack-Spezialisten von Microsoft stellen eine Identitätsintegration zwischen Ihren aktuellen Verzeichnisdiensten und Azure Active Directory bereit. Dies ist im Rahmen der Desktopbereitstellung für Office 365 ProPlus, Microsoft Intune, OneDrive und andere Office 365- und EMS-Cloud-Dienste erforderlich.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Haupt-Onboarding</a>: FastTrack-Spezialisten von Microsoft stellen eine Identitätsintegration zwischen Ihren aktuellen Verzeichnisdiensten und Azure Active Directory bereit. Dies ist im Rahmen der Desktopbereitstellung für Microsoft 365 Apps for Enterprise, Microsoft Intune, OneDrive und andere Office 365- und EMS-Cloud-Dienste erforderlich.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Liefern von Office- und Branchen-Apps</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation Microsoft Endpoint Configuration Manager verwendet.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for Enterprise</a>-Konfiguration und -Bereitstellung, bei der FastTrack-Spezialisten von Microsoft Hilfestellung bei der Bereitstellung von Benutzerlizenzen, bei der Konfiguration der Installation, beim Aktualisieren der Einstellungen für Klick-und-Los und beim Erstellen von Paketen bereitstellen, wenn Ihre Organisation Microsoft Endpoint Configuration Manager verwendet.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>Office und Windows as a Service</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung beim Konfigurieren von Updaterichtlinien für Windows 10 und Office 365 ProPlus. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>: Microsoft FastTrack kann auch Unterstützung beim Einrichten von Bereitstellungsringen bereitstellen, um auf dem aktuellen Stand zu bleiben.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>: FastTrack-Spezialisten von Microsoft bieten Hilfestellung beim Konfigurieren von Updaterichtlinien für Windows 10 und Microsoft 365 Apps for Enterprise. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for Enterprise</a>: Microsoft FastTrack kann auch Unterstützung beim Einrichten von Bereitstellungsringen bereitstellen, um auf dem aktuellen Stand zu bleiben.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ Nachfolgend finden Sie eine Karte der verfügbaren Dienste, die am [Desktopberei
 <td><p><strong>Benutzerkommunikation und Schulung</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">Produktivitätsbibliothek</a>: Eine Reihe von Onlineressourcen von Microsoft für Kommunikation und Schulung der Endbenutzer in Microsoft 365.</p></li>
-<li><p><a href="https://www.office.com/training">Office-Schulungen</a>: Eine Reihe von Onlineressourcen von Microsoft Endbenutzer für die Schulung von Endbenutzern im Zusammenhang mit Office 365 und Office 365 ProPlus.</p></li>
+<li><p><a href="https://www.office.com/training">Office-Schulungen</a>: Eine Reihe von Onlineressourcen von Microsoft Endbenutzer für die Schulung von Endbenutzern im Zusammenhang mit Office 365 und Microsoft 365 Apps for Enterprise.</p></li>
 <li><p><a href="https://info.microsoft.com/Windows10AdoptionPlanningKit.html">Windows 10-Kit zur Planung der Akzeptanz</a>: Eine Reihe von Onlineressourcen von Microsoft, die Ressourcen für die Benutzerbereitschaft umfassen.</p></li>
 </ul></td>
 </tr>

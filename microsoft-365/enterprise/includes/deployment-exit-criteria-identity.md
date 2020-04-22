@@ -3,7 +3,7 @@ Unter [Voraussetzungen](https://docs.microsoft.com/microsoft-365/enterprise/iden
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Erforderlich: Ihre globalen Administratorkonten sind geschützt 
 
-Sie haben [Ihre globalen Office 365-Administratorkonten geschützt](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts), um Versuche von Angreifern zur Kompromittierung von Anmeldeinformationen zu vereiteln, die zu Verstößen gegen Ihr Microsoft 365-Abonnement führen können.
+Sie haben [Ihre globalen Administratorkonten geschützt](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts), um Versuche von Angreifern zur Kompromittierung von Anmeldeinformationen zu vereiteln, die zu Verstößen gegen Ihr Microsoft 365-Abonnement führen können.
 
 Wenn Sie diese Anforderung überspringen, können Ihre globalen Administratorkonten anfällig für Angriffe und Kompromittierung sein. Dadurch kann ein Angreifer systemweiten Zugriff auf Ihre Daten erhalten, um diese zu stehlen, zu zerstören oder für Lösegeldforderungen zu missbrauchen.
 
@@ -17,7 +17,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Admini
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Melden Sie sich bei Office 365 mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.
+2. Melden Sie sich mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.
 
 > [!Note]
 > Anweisungen zum Installieren des Azure Active Directory PowerShell-Moduls und zum Anmelden bei Office 365 finden Sie unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
@@ -66,11 +66,11 @@ Wenn Sie diese Option überspringen, werden die Benutzer möglicherweise zur Ein
 Gegebenenfalls hilft Ihnen [Schritt 2](../identity-secure-your-passwords.md#identity-sso) bei dieser Option.
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Optional: Der Office 365-Anmeldebildschirm ist für Ihre Organisation personalisiert
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Optional: Der Anmeldebildschirm ist für Ihre Organisation personalisiert
 
-Sie haben entsprechend den Anweisungen unter [Hinzufügen eines Unternehmensbrandings zu den Anmelde- und Zugriffspanelseiten](https://aka.ms/aadpaddbranding) das Branding Ihrer Organisation auf der Anmeldeseite von Office 365 hinzugefügt.
+Sie haben entsprechend den Anweisungen unter [Hinzufügen eines Unternehmensbrandings zu den Anmelde- und Zugriffspanelseiten](https://aka.ms/aadpaddbranding) das Branding Ihrer Organisation auf der Anmeldeseite hinzugefügt.
 
-Wenn Sie diese Option überspringen, sehen die Benutzer einen allgemeinen Office 365-Anmeldebildschirm und sind sich möglicherweise nicht sicher, dass sie sich auf der Website Ihrer Organisation anmelden.
+Wenn Sie diese Option überspringen, sehen die Benutzer einen allgemeinen Anmeldebildschirm und sind sich möglicherweise nicht sicher, dass sie sich auf der Website Ihrer Organisation anmelden.
 
 Gegebenenfalls hilft Ihnen [Schritt 2](../identity-secure-your-passwords.md#identity-custom-sign-in) bei dieser Option.
 
@@ -183,7 +183,7 @@ Melden Sie sich mit Ihrem Benutzerkontonamen und mittels mehrstufiger Azure-Auth
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Optional: Self-Service-Gruppenverwaltung ist für bestimmte Azure AD-Sicherheitsgruppen und Office 365-Gruppen aktiviert
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Optional: Self-Service-Gruppenverwaltung ist für bestimmte Azure AD-Sicherheitsgruppen und Microsoft 365-Gruppen aktiviert
 
 Sie haben bestimmt, welche Gruppen für Self-Service-Verwaltung geeignet sind, deren Besitzer bezüglich des Workflows und der Verantwortlichkeiten der Gruppenverwaltung instruiert und für diese Gruppen [die Self-Service-Verwaltung in Azure AD eingerichtet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
 

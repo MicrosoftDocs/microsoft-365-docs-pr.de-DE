@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt wurden.
-ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068386"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625290"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 
@@ -126,7 +126,7 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 | Sicherheit |  |  |
 |  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung von und Antwort auf Bedrohungen in Office 365 <BR> |
-|  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust in Office 365 <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |
@@ -135,7 +135,7 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 | Compliance |  |  |
 |  | Einhalten von regionalen gesetzlichen Vorschriften | DSGVO-Features in Office 365 |
 | Verwaltung |  |  |
-|  | Reduzieren des IT-Aufwands für die Installation von Clientupdates | Bereitstellungsringe <BR> Windows 10 Enterprise-Updates <BR> Office 365 ProPlus-Updates |
+|  | Reduzieren des IT-Aufwands für die Installation von Clientupdates | Bereitstellungsringe <BR> Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
 ||||
 
 ## <a name="next-step"></a>Nächster Schritt

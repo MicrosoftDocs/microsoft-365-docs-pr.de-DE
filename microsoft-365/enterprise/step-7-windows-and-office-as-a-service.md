@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur Vorbereitung für Windows und Office als Dienst in Ihrer Umgebung.
-ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636735"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Schritt 7: Windows und Office als Dienst
 
@@ -30,18 +30,18 @@ ms.locfileid: "42085170"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Schritt 7: Windows und Office als Dienst</strong></p>
-<p>Sowohl Windows 10 als auch Office 365 ProPlus fügen ständig neue Funktionen hinzu, um die Benutzerfreundlichkeit und Sicherheit durch die neuesten Innovationen zu bereichern. Erfahren Sie, wie Sie mit halbjährlichen und monatlichen Updates auf dem Laufenden bleiben, wie das neue Wartungsmodell funktioniert und welche Tools und Optionen Sie haben.</p></td>
+<p>Sowohl Windows 10 als auch Microsoft 365 Apps for Enterprise fügen ständig neue Funktionen hinzu, um die Benutzerfreundlichkeit und Sicherheit durch die neuesten Innovationen zu bereichern. Erfahren Sie, wie Sie mit halbjährlichen und monatlichen Updates auf dem Laufenden bleiben, wie das neue Wartungsmodell funktioniert und welche Tools und Optionen Sie haben.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Windows und Office als Dienst ist der siebte Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Planungsaspekte der Vorbereitung auf halbjährliche Updates für Features behandelt. Wenn Sie den vollständigen Desktopbereitstellungsprozess sehen möchten, besuchen Sie das [Bereitstellungscenter für Desktop](https://aka.ms/HowToShift).
+>Windows und Office als Dienst ist der siebte Schritt in dem von uns empfohlenen Rad für den Bereitstellungsprozess, der die Planungsaspekte der Vorbereitung auf halbjährliche Updates für Features behandelt. Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
-Sowohl in Windows 10 und als auch in Office 365 ProPlus werden neue Wartungsoptionen, Supportmodelle und Zeitpläne für Updates eingeführt. Anhand dieser Änderungen können Sie leichter über die neuesten Features auf dem Laufenden bleiben. Neben diesen Updates gibt es neue Konfigurationsoptionen, die Wartungspläne ermöglichen, die Ihren Anforderungen entsprechen. Erfahren Sie, wie Sie sich auf halbjährliche Kanalupdates mit neuen Features und Funktionen in Windows 10 und Office 365 ProPlus vorbereiten, während Sie neue Features in Microsoft Endpoint Configuration Manager (Current Branch) nutzen.
+Sowohl in Windows 10 und als auch in Microsoft 365 Apps for Enterprise werden neue Wartungsoptionen, Supportmodelle und Zeitpläne für Updates eingeführt. Anhand dieser Änderungen können Sie leichter über die neuesten Features auf dem Laufenden bleiben. Neben diesen Updates gibt es neue Konfigurationsoptionen, die Wartungspläne ermöglichen, die Ihren Anforderungen entsprechen. Erfahren Sie, wie Sie sich auf halbjährliche Kanalupdates mit neuen Features und Funktionen in Windows 10 und Microsoft 365 Apps for Enterprise vorbereiten, während Sie neue Features in Microsoft Endpoint Configuration Manager (Current Branch) nutzen.
 
-[Kunden beim Umstieg auf Windows 10 und Office 365 ProPlus unterstützen](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Unterstützung für Kunden beim Umstieg auf Windows 10 und Microsoft 365 Apps for Enterprise](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>Updatetypen
 
@@ -75,7 +75,7 @@ Beim kumulativen Modell fehlt Ihnen immer nur das letzte Update. Dadurch wird di
 
 Ein weiterer Vorteil besteht darin, dass wir vor der Veröffentlichung von Updates für die allgemeine Bereitstellung zunächst Builds über die Insider-Programme für [Office](https://products.office.com/office-insider?tab=Windows-Desktop) und [Windows](https://insider.windows.com/) veröffentlichen, sodass wir Diagnosedaten und Feedback vor der allgemeinen Veröffentlichung von Updates sammeln können. Die Insider-Programme sind jetzt für alle verfügbar, Sie können sich also schon mit den Updates vertraut machen. Bis Updates veröffentlicht werden, haben wir Diagnosedaten von Millionen von Konfigurationen erhalten, wenn die Updates schließlich eingeführt werden, ist die Qualität viel besser prognostizierbar.
 
-Ein weiterer Punkt: Wenn Sie einen halbjährlichen Kanal für Office zur Bereitstellung von Featureupdates zwei mal pro Jahr in Übereinstimmung mit Windows verwenden, können Sie, da die Insider-Builds von Office 365 ProPlus monatliche Kanalupdates wiedergeben, diese Builds frühzeitig mithilfe der halbjährlichen Kanalversionen überprüfen.
+Ein weiterer Punkt: Wenn Sie einen halbjährlichen Kanal für Office zur Bereitstellung von Featureupdates zwei mal pro Jahr in Übereinstimmung mit Windows verwenden, können Sie, da die Insider-Builds von Microsoft 365 Apps for Enterprise monatliche Kanalupdates wiedergeben, diese Builds frühzeitig mithilfe der halbjährlichen Kanalversionen überprüfen.
 
 ### <a name="supporting-management-tools"></a>Unterstützen der Verwaltungstools
 
@@ -83,7 +83,7 @@ Wir haben uns auch Gedanken darüber gemacht, wie wir die Bereitstellung von Upd
 
 [Bereitstellen von Windows 10-Updates mit Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Verwalten von Microsoft 365 Apps for Enterprise mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Übersicht über Windows und Office-Kanäle
 
@@ -93,7 +93,7 @@ Windows 10 bietet drei Wartungskanäle:
 - Der **halbjährliche Kanal** bietet zwei Mal pro Jahr neue Funktionen mit neuen Featureupdates.
 - Der **langfristige Wartungskanal** wurde nur für spezielle Geräte entwickelt, die eine längere Wartungsoption benötigen.
 
-Office 365 bietet vier Wartungskanäle:
+Microsoft 365 bietet vier Wartungskanäle:
 
 - [**Office Insider-Programm** ](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) für Organisationen zum Testen und für Feedback zu den neuesten Office-Features und Funktionen, die sich noch in der Entwicklung befinden.
 - Der **monatliche Kanal** stellt Benutzern die neuesten Funktionen von Office bereit, sobald diese verfügbar sind.
@@ -103,11 +103,11 @@ Office 365 bietet vier Wartungskanäle:
 Ausführliche Informationen zu Windows- und Office-Wartungskanälen finden Sie in der folgenden Dokumentation:
 
 - [Übersicht über Windows als Dienst](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Übersicht über die Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Übersicht über die Updatekanäle für Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC).
 
 ## <a name="phased-deployment-of-updates"></a>Phasenweise Bereitstellung von Updates
 
-Lassen Sie uns nun aber darüber sprechen, wie diese Updates eingeführt werden. Für alle Versionen empfehlen wir mindestens drei Bereitstellungsphasen für IT – Überprüfung, Pilotphase und allgemeine Produktionsbereitstellung. Nachdem Sie Windows 10 und Office 365 ProPlus zum Laufen gebracht haben, verwenden Sie eine monatliche Wartung, um mit kritischen Sicherheits- und Qualitätsupdates auf dem Laufenden zu bleiben. Danach verwenden Sie eine halbjährliche Wartung für neue Features.
+Lassen Sie uns nun aber darüber sprechen, wie diese Updates eingeführt werden. Für alle Versionen empfehlen wir mindestens drei Bereitstellungsphasen für IT – Überprüfung, Pilotphase und allgemeine Produktionsbereitstellung. Nachdem Sie Windows 10 und Microsoft 365 Apps for Enterprise zum Laufen gebracht haben, verwenden Sie eine monatliche Wartung, um mit kritischen Sicherheits- und Qualitätsupdates auf dem Laufenden zu bleiben. Danach verwenden Sie eine halbjährliche Wartung für neue Features.
 
 ### <a name="monthly-updating"></a>Monatliche Updates
 
@@ -125,7 +125,7 @@ Windows Update for Business und Windows Server Update Services haben Express-Upd
 
 #### <a name="binary-delta-compression"></a>Binäre Deltakomprimierung
 
-Binary Delta Compression in Office wird nur verwendet, wenn Sie eine Aktualisierung von der neuesten Version von Office 365 ProPlus ausführen. Verwenden Sie diesen Ansatz also, wenn Sie eine Aktualisierung vom vorherigen Build ausführen müssen und keine Updates überspringen können.
+Binary Delta Compression in Office wird nur verwendet, wenn Sie eine Aktualisierung von der neuesten Version von Microsoft 365 Apps for Enterprise ausführen. Verwenden Sie diesen Ansatz also, wenn Sie eine Aktualisierung vom vorherigen Build ausführen müssen und keine Updates überspringen können.
 
 Windows- und Office-Updatekanäle können mithilfe des Standardgenehmigungs- und Zielprozesses über Configuration Manager verwaltet werden. Darüber hinaus können Sie Richtlinieneinstellungen sowie verwandte Einstellungen in Office und Windows verwenden, um verwendete Updatekanäle zu erzwingen.
 
@@ -141,7 +141,7 @@ Was die Tools angeht, so können Sie Richtlinieneinstellungen mit Windows Update
 
 [Halbjährlicher Kanal in Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Halbjährlicher Kanal für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Halbjährlicher Kanal für Microsoft 365 Apps for Enterprise ](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Aufgabensequenzen bei Upgrades
 
@@ -165,7 +165,7 @@ Wenn Sie bereits Aufgabensequenzen zum Migrieren Ihrer Windows 7-Computer auf Wi
 
   - Zukünftige Featuresupdates (ab Version 1903), die auf März abzielen, werden weiterhin 18 Monate ab dem Tag ihrer Veröffentlichung unterstützt.
 
-  - Halbjährliche Updates für Office 365 ProPlus weiterhin 18 Monate lang unterstützt.
+  - Halbjährliche Updates für Microsoft 365 Apps for Enterprise weiterhin 18 Monate lang unterstützt.
 
 #### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>Weitere Setup-Automatisierungsoptionen außerhalb von Aufgabensequenzen
 
@@ -175,8 +175,8 @@ Wenn Sie keine Upgradeaufgabensequenzen verwenden, können Sie nun benutzerdefin
 
 ## <a name="next-step"></a>Nächster Schritt 
 
-## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[Schritt 8: Benutzerkommunikation und Schulung](https://aka.ms/mdd8)
+## <a name="step-8-user-communications-and-training"></a>[Schritt 8: Benutzerkommunikation und Schulung](https://aka.ms/mdd8)
 
 ## <a name="previous-step"></a>Vorheriger Schritt 
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[Schritt 6: Bereitstellung des Betriebssystems und Featureupdates](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[Schritt 6: Bereitstellung des Betriebssystems und Featureupdates](https://aka.ms/mdd6)

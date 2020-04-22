@@ -25,16 +25,16 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
-ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540855"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634956"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
-Dieser Artikel ist für Personen bestimmt, die über ein Office 365 Business-Abonnement verfügen. Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Schritte ausführen zu können.
+Dieser Artikel ist für Personen bestimmt, die über ein Microsoft 365 Business-Abonnement verfügen. Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Schritte ausführen zu können.
   
 Wenn Sie Hilfe bei der Interpretation der Gebühren auf Ihrer Rechnung benötigen, schauen Sie sich die ausführliche schrittweise Anleitung unter [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md) an.
   

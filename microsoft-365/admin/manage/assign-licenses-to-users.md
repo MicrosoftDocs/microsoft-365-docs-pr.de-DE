@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: Hier erfahren Sie, wie Sie Benutzern Lizenzen zuweisen oder Benutzer in ein neues Abonnement verschieben.
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362060"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628244"
 ---
 # <a name="assign-licenses-to-users"></a>Benutzern Lizenzen zuweisen
 
@@ -224,7 +224,7 @@ Wenn Sie über mehrere Abonnements verfügen und Benutzer haben, die bereits üb
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>Was Sie zum Zuweisen von Lizenzen zu Benutzern wissen müssen
 
-- Sie müssen globaler Administrator, Abrechnungsadministrator, Lizenzadministrator oder Benutzerverwaltungsadministrator sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Office 365](../add-users/about-admin-roles.md).
+- Sie müssen globaler Administrator, Abrechnungsadministrator, Lizenzadministrator oder Benutzerverwaltungsadministrator sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
 
 - Sie können [Lizenzen zu Benutzerkonten mit Office 365 PowerShell zuweisen](https://go.microsoft.com/fwlink/p/?linkid=850410).
 
@@ -236,7 +236,7 @@ Wenn Sie über mehrere Abonnements verfügen und Benutzer haben, die bereits üb
 
 [Grundlegendes zu Abonnements und Lizenzen](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Lösen von Lizenzkonflikten in Office 365 Business](resolve-license-conflicts.md)
+[Lösen von Lizenzkonflikten in Microsoft 365 Business](resolve-license-conflicts.md)
 
 [Entfernen von Benutzerlizenzen](remove-licenses-from-users.md)
 

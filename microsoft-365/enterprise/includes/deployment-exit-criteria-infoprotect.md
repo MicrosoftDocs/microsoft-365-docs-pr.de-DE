@@ -14,7 +14,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](../infoprotect-define-sec-infoprotect-lev
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>Erforderlich: Erhöhte Sicherheit für Microsoft 365 ist konfiguriert
 
-Sie haben die folgenden Einstellungen für [höhere Sicherheit von Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) konfiguriert:
+Sie haben die folgenden Einstellungen für [höhere Sicherheit von Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) konfiguriert:
 
 - Richtlinien für die Bedrohungsverwaltung im Microsoft 365 Security Center
 - Zusätzliche mandantenweite Exchange Online-Einstellungen
@@ -52,11 +52,11 @@ Für Ihre angemeldeten Windows 10 Enterprise-Geräte wird eine Intune-Richtlinie
 Gegebenenfalls hilft Ihnen [Schritt 4](../infoprotect-deploy-windows-information-protection.md), diese Anforderung zu erfüllen. 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Optional: Office 365 Verhinderung von Datenverlust (DLP) wird bereitgestellt.
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Optional: Verhinderung von Datenverlust (DLP) wird bereitgestellt
 
 Sie haben die DLP-Richtlinien analysiert, getestet und dann eingeführt, mit Standorten und Regeln, Bedingungen und Maßnahmen, die Ihre Organisation benötigt, um Kunden und andere Arten von privaten Daten zu schützen und branchenspezifische und regionale Vorschriften und Anforderungen einzuhalten.
 
-Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Office 365 Security & Compliance Dashboard zur Überwachung von DLP-Vorfällen.
+Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Security & Compliance Dashboard zur Überwachung von DLP-Vorfällen.
 
 Gegebenenfalls hilft Ihnen [Schritt 5](../infoprotect-data-loss-prevention.md), diese Anforderung zu erfüllen. 
 
@@ -68,9 +68,9 @@ Sie haben die folgende E-Mail-Verschlüsselung nach Bedarf für Ihre Organisatio
 |||
 |:-------|:-----|
 | **Verschlüsselungsmethode** | **Für gesendete E-Mails** |
-| [Office 365-Nachrichtenverschlüsselung (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Außerhalb Ihrer Organisation mit Verschlüsselung |
+| [Office 365-Nachrichtenverschlüsselung (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Außerhalb Ihres Unternehmens mit Verschlüsselung |
 | [Verwaltung von Informationsrechten (Information Rights Management, IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Verschlüsselung und Berechtigungen |
-| [Secure/Multipurpose Internet Mail Extensions (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Verschlüsselung und digitale Signaturen unter Verwendung der Kryptografie mit öffentlichen Schlüsseln |
+| [S/MIME (Secure/Multipurpose Internet Mail Extensions)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Verschlüsselung und digitale Signaturen unter Verwendung der Kryptografie mit öffentlichen Schlüsseln |
 |||
 
 Gegebenenfalls hilft Ihnen [Schritt 6](../infoprotect-email-encryption.md), diese Anforderung zu erfüllen.

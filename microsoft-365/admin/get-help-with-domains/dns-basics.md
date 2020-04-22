@@ -1,5 +1,5 @@
 ---
-title: DNS-Grundlagen
+title: Grundlagen von DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,13 +20,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Office 365-Domänen verwalten zu können.
-ms.openlocfilehash: 4fd41102193a9e630ed04a9d1fb2e196dc94486b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
+ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210468"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628482"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -34,7 +34,7 @@ ms.locfileid: "43210468"
   
 ::: moniker range="o365-worldwide"
 
-Domänennamen wie "contoso.com" werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen kann Ihnen helfen, Domänen in Office 365 zu verwalten.
+Domänennamen wie „contoso.com“ werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen kann Ihnen helfen, Domänen zu verwalten.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -144,7 +144,7 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ::: moniker-end
 
 > [!NOTE]
-> Wenn Sie Ihre Domäne in Office 365 so einrichten, dass [Office 365 Ihre DNS-Einträge einrichtet und verwaltet](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records), dann ändern Sie (als Teil des Setups) die [DNS-Verwaltung in Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
+> Wenn Sie Ihre Domäne in Office 365 so einrichten, dass [Microsoft Ihre DNS-Einträge einrichtet und verwaltet](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records), dann ändern Sie (als Teil des Setups) die [DNS-Verwaltung in Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
  
 
 ::: moniker range="o365-worldwide"
@@ -154,13 +154,13 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
   
 > [!NOTE]
-> Wenn Sie nur Office 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
 - **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
     
-- **Website:** Wenn Sie über ein Office 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie "contoso-public.sharepoint.com" auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
+- **Website:** Wenn Sie über ein Microsoft 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
 - **Chatnachrichten:** Ihre Skype for Business Online-Adresse kann ebenfalls so angepasst werden, dass sie Ihren Domänennamen verwendet, sodass Personen in Ihrer Organisation Verbindungen untereinander in Skype for Business Online mithilfe einer kürzeren, leichter zu merkenden Adresse (wie "joe@contoso.com") herstellen können. 
     
@@ -179,7 +179,7 @@ Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen W
   
 - **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
     
-- **Website:** Wenn Sie über ein Office 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie "contoso-public.sharepoint.com" auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
+- **Website:** Wenn Sie über ein Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
 - **Chatnachrichten:** Ihre Skype for Business Online-Adresse kann ebenfalls so angepasst werden, dass sie Ihren Domänennamen verwendet, sodass Personen in Ihrer Organisation Verbindungen untereinander in Skype for Business Online mithilfe einer kürzeren, leichter zu merkenden Adresse (wie "joe@contoso.com") herstellen können. 
     
@@ -189,7 +189,7 @@ Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen W
 
 In Office 365 werden mehrere DNS-Einträge benötigt, damit der Dienst mit Ihrer Domäne zusammenarbeitet. Neben dem MX-Eintrag für Ihre Domäne, der benötigt wird, damit E-Mail-Nachrichten an Office 365 gesendet werden, gibt es weitere Einträge, die dafür sorgen, dass Outlook automatisch die Verbindung zu dem richtigen Exchange-Server aufnimmt, dass Sofortnachrichten ordnungsgemäß eingerichtet werden und dass Spam-E-Mails abgewehrt werden.
   
-Hier [finden Sie eine Liste mit Werten](information-for-dns-records.md) zum Einrichten Ihrer Domäne. Sie sind direkt im Office 365-Portal enthalten. 
+Hier [finden Sie eine Liste mit Werten](information-for-dns-records.md) zum Einrichten Ihrer Domäne. Sie sind direkt im Microsoft 365 Admin Center enthalten. 
   
 Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Office 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
   

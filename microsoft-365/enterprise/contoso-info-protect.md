@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Features für den Informationsschutz in Microsoft 365 Enterprise verwendet, um digitale Datenbestände in der Cloud zu sichern.
-ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068412"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625302"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -107,10 +107,10 @@ Die folgende Tabelle ordnet die Datenstufen von Contoso zu den Informationsschut
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 und Office 365 ProPlus** | **EMS** |
+| | **Office 365** | **Windows 10 und Microsoft 365 Apps for Enterprise** | **EMS** |
 | Stufe 1: Baseline  | Bedingte Zugriffsrichtlinien für SharePoint und Exchange Online <BR> Berechtigungen für SharePoint-Websites | Vertraulichkeitsbezeichnungen <BR> BitLocker <BR> Windows Information Protection | Bedingte Zugriffsrichtlinien für Geräte und MAM-Richtlinien (Mobile Application Management) |
-| Stufe 2: Vertraulich | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen <BR> Office 365-Aufbewahrungsbezeichnungen auf SharePoint-Websites <BR> Office 365-DLP (Data Loss Prevention, Verhinderung von Datenverlust) für SharePoint und Exchange Online <BR> Isolierte SharePoint-Websites  | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen auf digitalen Assets  | Stufe 1 |
-| Stufe 3: Hochgradig reguliert | Stufe 2 plus: <BR><BR> BYOK-Verschlüsselung („Bring Your Own Key“, Bereitstellen eines eigenen Schlüssels) und Schutz von Geschäftsgeheimnissen <BR> Azure Key Vault für Branchenlösungen, die mit Diensten von Office 365 interagieren | Stufe 2 | Stufe 1 |
+| Stufe 2: Vertraulich | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen <BR> Microsoft 365-Aufbewahrungsbezeichnungen auf SharePoint-Websites <BR> Verhinderung von Datenverlust für SharePoint und Exchange Online <BR> Isolierte SharePoint-Websites  | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen auf digitalen Assets  | Stufe 1 |
+| Stufe 3: Hochgradig reguliert | Stufe 2 plus: <BR><BR> BYOK-Verschlüsselung („Bring Your Own Key“, Bereitstellen eines eigenen Schlüssels) und Schutz von Geschäftsgeheimnissen <BR> Azure Key Vault für Branchenlösungen, die mit Diensten von Microsoft 365 interagieren | Stufe 2 | Stufe 1 |
 |||||
 
 Hier sehen Sie die resultierende Informationsschutzkonfiguration von Contoso.

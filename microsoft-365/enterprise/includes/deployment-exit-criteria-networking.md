@@ -2,7 +2,7 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Erforderlich: Ihr Netzwerk ist bereit für Microsoft 365 Enterprise
 
 - Ihre Büros verfügen über ausreichende Internetbandbreite für Microsoft 365-Datenverkehr, einschließlich Office 365, Microsoft Intune sowie Windows 10 Enterprise (Installation und Updates).
-- Ihr Gesamtnetzwerk ist einer [Office 365-Referenzarchitektur](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2) zugeordnet.
+- Ihr Gesamtnetzwerk ist einer [Microsoft 365-Referenzarchitektur](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2) zugeordnet.
 - Ihre Netzwerkänderungen wurden eingeführt und getestet und erfüllen Ihre Anforderungen an die Datenverkehrslatenz.
 
 Gegebenenfalls hilft Ihnen [Schritt 1](../networking-provide-bandwidth-cloud-services.md), diese Anforderung zu erfüllen.

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Ihre globalen Administratorkonten benötigen eine spezielle Behandlung, um sie vor der Kompromittierung von Anmeldeinformationen zu schützen.
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633573"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621306"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Schritt 1: Erstellen und Schützen Ihrer globalen Administratorkonten
 
@@ -41,7 +41,7 @@ Für Ihre dedizierten globalen Administratorkonten müssen Sie außerdem Folgend
 1. Testen Sie Einstellungen für Benutzerkonto oder bedingte zugriffsbasierte mehrstufige Azure-Authentifizierung (MFA) mit einem Testbenutzerkonto, um sicherzustellen, dass die MFA korrekt und vorhersehbarer funktioniert. Die MFA erfordert eine sekundäre Authentifizierungsform wie etwa einen an ein Smartphone gesendeten Verifizierungscode.
 2. Erstellen und aktivieren Sie eine Richtlinie für den bedingten Zugriff für Ihre globalen Administratorkonten, die MFA erfordert und die stärkste in Ihrer Organisation verfügbare Form der sekundären Authentifizierung verwendet. Weitere Informationen finden Sie unter [Mehrstufige Azure-Authentifizierung](identity-access-prerequisites.md#protecting-administrator-accounts).
 
-Näheres zu weiteren Schutzmaßnahmen finden Sie unter [Schützen Ihrer globalen Office 365-Administratorkonten](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
+Näheres zu weiteren Schutzmaßnahmen finden Sie unter [Schützen Ihrer globalen Administratorkonten](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Notfallzugriffs-Konten für Notfälle wie etwa einen Cyberangriff sollten nur cloudbasiert sein. Sie können außerdem über globale Administratorkonten (berechtigt oder permanent) verfügen, die nicht rein cloudbasiert sind. Weitere Informationen finden Sie unter [Verwalten von Administratorkonten für den Notfallzugriff in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
@@ -86,9 +86,9 @@ Als Zwischenprüfung können Sie sich die [Abschlusskriterien](identity-exit-cri
 <a name="identity-pam"></a>
 ## <a name="privileged-access-management"></a>Privileged Access Management
 
-Privileged Access Management wird durch Konfigurieren von Richtlinien aktiviert, die Just-in-Time-Zugriff für aufgabenbasierte Aktivitäten in Ihrem Office 365-Mandanten angeben. Dadurch kann Ihre Organisation vor Sicherheitsverletzungen geschützt werden, bei denen vorhandene Privileged Access Management-Konten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden. Sie könnten beispielsweise eine Privileged Access Management-Richtlinie konfigurieren, die für den Zugriff und das Ändern von Postfacheinstellungen in der Organisation eine explizite Genehmigung in Ihrem Office 365-Mandanten benötigt. 
+Privileged Access Management wird durch Konfigurieren von Richtlinien aktiviert, die Just-in-Time-Zugriff für aufgabenbasierte Aktivitäten in Ihrem Mandanten angeben. Dadurch kann Ihre Organisation vor Sicherheitsverletzungen geschützt werden, bei denen vorhandene Privileged Access Management-Konten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden. Sie könnten beispielsweise eine Privileged Access Management-Richtlinie konfigurieren, die für den Zugriff und das Ändern von Postfacheinstellungen in der Organisation eine explizite Genehmigung in Ihrem Mandanten benötigt.
 
-In diesem Schritt aktivieren Sie Privileged Access Management in Ihrem Office 365-Mandanten und konfigurieren Richtlinien für privilegierten Zugriff, die zusätzliche Sicherheit für aufgabenbasierten Zugriff auf Office 365-Daten und Konfigurationseinstellungen für Ihre Organisation bereitstellen. Es gibt drei grundlegende Schritte, um mit dem privilegierten Zugriff in Ihrer Office 365-Organisation zu beginnen:
+In diesem Schritt aktivieren Sie Privileged Access Management in Ihrem Mandanten und konfigurieren Richtlinien für privilegierten Zugriff, die zusätzliche Sicherheit für aufgabenbasierten Zugriff auf Daten und Konfigurationseinstellungen für Ihre Organisation bereitstellen. Es gibt drei grundlegende Schritte, um mit dem privilegierten Zugriff in Ihrer Organisation zu beginnen:
 
 - Erstellen einer Gruppe einer genehmigenden Person
 - Aktivieren des privilegierten Zugriffs
@@ -96,9 +96,9 @@ In diesem Schritt aktivieren Sie Privileged Access Management in Ihrem Office 36
 
 Nach der Konfiguration kann Ihre Organisation mit Privileged Access Management ohne ständige Berechtigungen arbeiten und eine Schutzebene für Sicherheitslücken bereitstellen, die aufgrund eines derartigen ständigen Administratorzugriffs entstehen. Für privilegierten Zugriff sind Genehmigungen zum Ausführen von Aufgaben erforderlich, für die eine zugewiesene Genehmigungsrichtlinie definiert wurde. Benutzer, die Aufgaben ausführen müssen, die in einer Genehmigungsrichtlinie enthalten sind, müssen Zugriff anfordern und diesen gewährt bekommen, um die erforderlichen Berechtigungen zum Ausführen der in der Richtlinie definierten Aufgaben zu erhalten.
 
-Weitere Informationen zum Aktivieren von Privileged Access Management in Office 365 finden Sie im Thema [Konfigurieren von Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Weitere Informationen zum Aktivieren von Privileged Access Management finden Sie im Thema [Konfigurieren von Privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-Weitere Informationen finden Sie im Thema [Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Weitere Informationen finden Sie im Thema [Privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 
 |||

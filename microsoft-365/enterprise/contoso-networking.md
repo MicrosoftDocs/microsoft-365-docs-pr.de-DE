@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur Contoso-Netzwerkinfrastruktur und dazu, wie die SD-WAN-Technologie für eine optimale Netzwerkleistung für cloudbasierte Microsoft 365 Enterprise-Dienste verwendet wird.
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068340"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625278"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Netzwerkfunktionen für die Contoso Corporation
 
@@ -50,14 +50,14 @@ Abbildung 1 zeigt die Contoso-Netzwerkinfrastruktur und die dazugehörigen Verbi
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Verwenden des SD-WAN für eine optimale Netzwerkkonnektivität mit Microsoft
 
-Contoso folgte den folgenden [Prinzipien von Office 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) bei folgende Aufgaben:
+Contoso folgte den folgenden [Prinzipien von Microsoft 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) bei folgende Aufgaben:
 
-1. Identifizieren und Unterscheiden von Office 365-Netzwerkdatenverkehr
+1. Identifizieren und Unterscheiden von Microsoft 365-Netzwerkdatenverkehr
 2. Lokaler Ausgang von Netzwerkverbindungen
 3. Vermeiden von Spitzkehren für Netzwerke
 4. Umgehen von doppelten Netzwerksicherheitsgeräten
 
-Es gibt drei Kategorien von Netzwerkdatenverkehr für Office 365: "Optimize", "Allow" und "Default". Bei "Optimize" und "Allow" handelt es sich um vertrauenswürdigen Netzwerkdatenverkehr, der verschlüsselt und an den Endpunkten geschützt und an das Microsoft 365-Netzwerk gerichtet ist.
+Es gibt drei Kategorien von Netzwerkdatenverkehr für Microsoft 365: „Optimize“, „Allow“ und „Default“. Bei "Optimize" und "Allow" handelt es sich um vertrauenswürdigen Netzwerkdatenverkehr, der verschlüsselt und an den Endpunkten geschützt und an das Microsoft 365-Netzwerk gerichtet ist.
 
 Contoso hat Folgendes beschlossen:
 
@@ -94,7 +94,7 @@ Eine erfolgreiche Einführung von Microsoft 365 Enterprise-Diensten bei den Benu
 
 2. Es wurde ein Plan für die Microsoft 365 Enterprise-Netzwerkkonnektivität erstellt.
 
-   Contoso verwendete die [Prinzipien von Office 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) und stellte Referenznetzwerkarchitekturen bereit, um SD-WAN als bevorzugte Topologie für Office 365-Konnektivität zu bestimmen.
+   Contoso verwendete die [Prinzipien von Microsoft 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) und stellte Referenznetzwerkarchitekturen bereit, um SD-WAN als bevorzugte Topologie für Microsoft 365-Konnektivität zu bestimmen.
 
 3. In jeder Niederlassung wurde die Auslastung der Internetverbindung und die MPLS-WAN-Bandbreite analysiert und bei Bedarf erhöht.
 
@@ -106,7 +106,7 @@ Eine erfolgreiche Einführung von Microsoft 365 Enterprise-Diensten bei den Benu
 
 5. Es wurde ein internes DNS konfiguriert.
 
-   Das DNS muss betriebsbereit sein und für Office 365-Datenverkehr lokal nachgeschlagen werden.
+   Das DNS muss betriebsbereit sein und für Microsoft 365-Datenverkehr lokal nachgeschlagen werden.
 
 6. Netzwerkendpunkt und Portkonnektivität wurden überprüft.
 

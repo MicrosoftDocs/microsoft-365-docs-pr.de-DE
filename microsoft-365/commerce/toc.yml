@@ -4,7 +4,7 @@
   href: ../admin/admin-home.md
 - name: Testen oder kaufen
   items:
-    - name: Registrieren für Office 365 – Testversion
+    - name: Anmelden für Microsoft 365-Testversion
       href: sign-up-for-office-365-trial.md
     - name: Testen oder Kaufen von Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
       href: billing-and-payments/psd2.md
-    - name: Steuerinformationen
-      href: billing-and-payments/tax-information.md
 - name: Abrechnungskonten
   items:
     - name: Abrechnungskonten verwalten

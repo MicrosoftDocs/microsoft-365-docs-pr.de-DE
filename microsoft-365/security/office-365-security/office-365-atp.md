@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634532"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links oder sicheren Anlagen in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit für Office 365-Abonnenten](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) verfügen. Wenn Sie Outlook.com, Microsoft 365 Family oder Microsoft 365 Single verwenden und Informationen zu sicheren Links oder sicheren Anlagen in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit für Microsoft 365-Abonnenten](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Übersicht
 
@@ -53,7 +53,7 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 
 - Office 365 ATP Plan 2 ist in Office 365 E5, Office 365 A5 und Microsoft 365 E5 enthalten.
 
-- Office 365 ATP Plan 1 ist in Microsoft 365 Business enthalten.
+- Office 365 ATP Plan 1 ist in Microsoft 365 Business Premium enthalten.
 
 - Office 365 ATP Plan 1 und Office 365 ATP Plan 2 sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen hierzu finden Sie unter [Funktionsverfügbarkeit bei ATP-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
@@ -61,7 +61,7 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 
 ## <a name="configure-atp-policies"></a>Konfigurieren von ATP-Richtlinien
 
-Mit Office 365 ATP kann das Sicherheitsteam Ihrer Organisation den Schutz durch Definition von Richtlinien im Office 365 Security & Compliance Center konfigurieren. Navigieren Sie zu [https://protection.office.com](https://protection.office.com) > **Bedrohungsverwaltung** > **Richtlinie**.
+Mit Office 365 ATP kann das Sicherheitsteam Ihrer Organisation den Schutz durch Definition von Richtlinien im Security & Compliance Center konfigurieren. (Navigieren Sie zu [https://protection.office.com](https://protection.office.com) > **Bedrohungsverwaltung** > **Richtlinie**.)
 
 > [!TIP]
 > Eine schnelle Liste der zu definierenden Richtlinien finden Sie unter [Schutz vor Bedrohungen](protect-against-threats.md).
@@ -112,16 +112,16 @@ Für den Zugriff auf ATP-Features im Security & Compliance Center müssen Sie ü
 
 |Rolle oder Rollengruppe|Ressourcen mit mehr Informationen|
 |---------|---------|
-|Globaler Office 365-Administrator (kann in Azure Active Directory oder im Office 365 Security & Compliance Center zugewiesen werden.) |[Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Sicherheitsadministrator (kann in Azure Active Directory oder im Office 365 Security & Compliance Center zugewiesen werden.) |[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
+|Globaler Administrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.) |[Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Sicherheitsadministrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.) |[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online-Organisationsverwaltung (wird in Exchange Online zugewiesen)|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|Suchen und Löschen (wird nur im Office 365 Security & Compliance Center zugewiesen) |[Berechtigungen im Security & Compliance Center] (permissions-in-the-security-and-compliance-center.md|
+|Suchen und Löschen (wird nur im Security & Compliance Center zugewiesen) |[Berechtigungen im Security & Compliance Center] (permissions-in-the-security-and-compliance-center.md|
 
 Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-office-365-atp"></a>Office 365 ATP abrufen
 
-Office 365 ATP ist in bestimmten Abonnements wie Microsoft 365 E5, Office 365 E5, Office 365 A5 und Microsoft 365 Business enthalten. Wenn Ihr Abonnement Office 365 ATP nicht enthält, können Sie ATP Plan 1 oder ATP Plan 2 als Add-On für bestimmte Abonnements erwerben. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
+Office 365 ATP ist in bestimmten Abonnements wie Microsoft 365 E5, Office 365 E5, Office 365 A5 und Microsoft 365 Business Premium enthalten. Wenn Ihr Abonnement Office 365 ATP nicht enthält, können Sie ATP Plan 1 oder ATP Plan 2 als Add-On für bestimmte Abonnements erwerben. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
 - Unter [Verfügbarkeit von Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) finden Sie eine Liste der Abonnements, die ATP-Pläne enthalten.
 

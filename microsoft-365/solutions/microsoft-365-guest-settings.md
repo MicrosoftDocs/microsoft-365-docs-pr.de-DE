@@ -11,22 +11,22 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe.
-ms.openlocfilehash: 74bf2fd431b604b7f38043bfc029232137b24cf1
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 396f55063461bb4a87813cc1e3943c5a4afd7156
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625158"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
-Dieser Artikel bietet eine Referenz zu den verschiedenen Einstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation für Microsoft 365-Workloads auswirken können: Teams, Office 365-Gruppen, SharePoint und OneDrive. Diese Einstellungen befinden sich in Azure Active Directory, Microsoft 365, Teams und SharePoint Admin Center.
+Dieser Artikel bietet eine Referenz zu den verschiedenen Einstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation für Microsoft 365-Workloads auswirken können: Teams, Microsoft 365-Gruppen, SharePoint und OneDrive. Diese Einstellungen befinden sich in Azure Active Directory, Microsoft 365, Teams und SharePoint Admin Center.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 **Administratorrolle:** Globaler Administrator
 
-Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. Die Einstellungen für Azure Active Directory-Organisationsbeziehungen wirken sich unmittelbar auf die Freigabe in Teams, Office 365-Gruppen, SharePoint und OneDrive aus.
+Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. Die Einstellungen für Azure Active Directory-Organisationsbeziehungen wirken sich unmittelbar auf die Freigabe in Teams, Microsoft 365-Gruppen, SharePoint und OneDrive aus.
 
 > [!NOTE]
 > Diese Einstellungen betreffen SharePoint nur, wenn die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) konfiguriert wurde. Die nachstehende Tabelle setzt voraus, dass diese Konfiguration vorgenommen wurde.
@@ -41,7 +41,7 @@ Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. D
 |:-----|:-----|:-----|
 |Berechtigungen für Gastbenutzer sind eingeschränkt|Ja|Diese Einstellung wirkt sich auf die Verzeichnisaufgaben aus, die ein Gast ausführen kann.|
 |Administratoren und Benutzer mit der Rolle "Einladender" können einladen|Ja|Ist diese Option auf **Ja** festgelegt, können Administratoren Gäste über Azure AD- und Microsoft 365-Freigabefunktionen wie Teams und SharePoint einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich.|
-|Mitglieder können einladen|Ja|Ist diese Option auf **Ja** festgelegt, können Azure AD-Mitglieder Gäste über Azure AD einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. Ist diese Option auf **Ja** festgelegt, können Office 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen. Ist die Option auf **Nein** festgelegt, können Office 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen, die Besitzer müssen jedoch globale Administratoren sein, um die Genehmigung zu erteilen. <br><br>Bitte beachten Sie, dass **können einladen** sich auf Mitglieder in Azure AD (im Gegensatz zu Gästen) bezieht und nicht auf Website- oder Gruppenmitglieder in Microsoft 365. <br><br>Dies ist identisch mit der Einstellung **Benutzer dürfen neue Gäste zur Organisation hinzufügen** in Microsoft 365 Sicherheit und Datenschutz hinzufügen.|
+|Mitglieder können einladen|Ja|Ist diese Option auf **Ja** festgelegt, können Azure AD-Mitglieder Gäste über Azure AD einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. Ist diese Option auf **Ja** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen. Ist die Option auf **Nein** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen, die Besitzer müssen jedoch globale Administratoren sein, um die Genehmigung zu erteilen. <br><br>Bitte beachten Sie, dass **können einladen** sich auf Mitglieder in Azure AD (im Gegensatz zu Gästen) bezieht und nicht auf Website- oder Gruppenmitglieder in Microsoft 365. <br><br>Dies ist identisch mit der Einstellung **Benutzer dürfen neue Gäste zur Organisation hinzufügen** in Microsoft 365 Sicherheit und Datenschutz hinzufügen.|
 |Gäste können einladen|Ja|Ist diese Option auf **Ja** festgelegt, können Gäste im Verzeichnis andere Gäste einladen, an Azure AD-Ressourcen sowie an Dateien und Ordnern in SharePoint und OneDrive zusammenzuarbeiten. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. <br><br>Beachten Sie, dass **Externen Benutzern das Auffinden von Benutzerkonten im Verzeichnis durch Eingabe exakter E-Mail-Adressübereinstimmungen gestatten** im SharePoint Admin Center aktiviert sein muss, damit Gäste Dateien und Ordner für andere Gäste freigeben können.|
 |Einmalkennung per E-Mail für Gastbenutzer aktivieren (Vorschauversion)|Nein|Ist diese Option auf **Ja** festgelegt, können Gäste ohne MSA bzw. ein Geschäfts-, Schul- oder Unikonto [sich bei Azure AD mit einem einmaligen Zugangscode authentifizieren](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode). Ist die Option auf **Nein** festgelegt, müssen Benutzer ein Microsoft-Konto erstellen, um sich authentifizieren zu können. Dieser Einstellung muss auf **Ja** festgelegt sein, damit [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) funktioniert.|
 |Einschränkungen für die Zusammenarbeit|Senden von Einladungen an beliebige Domäne zulassen|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung wirkt sich auf Microsoft 365-Freigabefunktionen wie Teams und SharePoint aus. Mit der Domänenfilterung in SharePoint oder Teams können Sie Domänen auf einer differenzierteren Ebene zulassen oder sperren.|
@@ -52,7 +52,7 @@ Diese Einstellungen wirken sich auf die Art und Weise aus, wie Benutzer in das V
 
 **Administratorrolle:** Globaler Administrator
 
-Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für die Freigabe und für Office 365-Gruppen.
+Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für die Freigabe und für Microsoft 365-Gruppen.
 
 ### <a name="sharing"></a>Freigabe
 
@@ -62,18 +62,18 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 |**Setting**|**Standard**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Benutzer dürfen neue Gäste zur Organisation hinzufügen|Ein|Ist diese Option auf **Ja** festgelegt, können Azure AD-Mitglieder Gäste über Azure AD einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. Ist diese Option auf **Ja** festgelegt, können Office 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen. Ist die Option auf **Nein** festgelegt, können Office 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen, die Besitzer müssen jedoch globale Administratoren sein, um die Genehmigung zu erteilen. <br><br>Bitte beachten Sie, dass **können einladen** sich auf Mitglieder in Azure AD (im Gegensatz zu Gästen) bezieht und nicht auf Website- oder Gruppenmitglieder in Microsoft 365. <br><br>Dieser Wert ist mit der Einstellung **Mitglieder können einladen** in den Azure Active Directory-Einstellungen für Organisationsbeziehungen identisch.|
+|Benutzer dürfen neue Gäste zur Organisation hinzufügen|Ein|Ist diese Option auf **Ja** festgelegt, können Azure AD-Mitglieder Gäste über Azure AD einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. Ist diese Option auf **Ja** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen. Ist die Option auf **Nein** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen, die Besitzer müssen jedoch globale Administratoren sein, um die Genehmigung zu erteilen. <br><br>Bitte beachten Sie, dass **können einladen** sich auf Mitglieder in Azure AD (im Gegensatz zu Gästen) bezieht und nicht auf Website- oder Gruppenmitglieder in Microsoft 365. <br><br>Dieser Wert ist mit der Einstellung **Mitglieder können einladen** in den Azure Active Directory-Einstellungen für Organisationsbeziehungen identisch.|
 
-### <a name="office-365-groups"></a>Office 365-Gruppen
+### <a name="microsoft-365-groups"></a>Microsoft 365-Gruppen
 
-**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Einstellungen > Office 365-Gruppen
+**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Einstellungen > Microsoft 365-Gruppen
 
-![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
+![Screenshot der Gasteinstellungen für Microsoft 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+|**Einstellung**|**Standard**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen|Ein|Ist diese Option aktiviert, können Gäste auf Gruppeninhalte zugreifen. Ist die Option deaktiviert, ist dies nicht möglich. Diese Einstellung sollte für alle Szenarien aktiviert sein, in denen Gastbenutzer mit Office 365-Gruppen oder -Teams interagieren.|
-|Gruppenbesitzer dürfen Personen außerhalb Ihrer Organisation zu Gruppen hinzufügen|Ein|Ist diese Option aktiviert, können Besitzer von Office 365-Gruppen oder -Teams neue Gäste zur Gruppe einladen. Ist diese Option deaktiviert, können Besitzer nur Gäste einladen, die sich bereits im Verzeichnis befinden.|
+|Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen|Ein|Ist diese Option aktiviert, können Gäste auf Gruppeninhalte zugreifen. Ist die Option deaktiviert, ist dies nicht möglich. Diese Einstellung sollte für alle Szenarien **aktiviert** sein, in denen Gastbenutzer mit Microsoft 365-Gruppen oder -Teams interagieren.|
+|Erlauben Sie Gruppenbesitzern, Personen von außerhalb Ihrer Organisation zu Gruppen hinzuzufügen|Ein|Ist diese Option **aktiviert**, können Besitzer von Microsoft 365-Gruppen oder -Teams neue Gäste zur Gruppe einladen. Ist diese Option deaktiviert, können Besitzer nur Gäste einladen, die sich bereits im Verzeichnis befinden.|
 
 Diese Einstellungen erfolgen auf Organisationsebene. Informationen zum Ändern dieser Einstellungen auf Gruppenebene mithilfe von PowerShell finden Sie unter [Erstellen von Einstellungen für eine bestimmte Gruppe](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
 
@@ -136,7 +136,7 @@ Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen
 
 **Administratorrolle:** SharePoint-Administrator
 
-Diese Einstellungen wirken sich auf alle Websites in der Organisation aus. Sie wirken sich nicht direkt auf Office 365-Gruppen oder -Teams aus. Es wird jedoch empfohlen, diese Einstellungen mit den Einstellungen für Office 365-Gruppen und -Teams zu vereinheitlichen, um Probleme mit der Benutzererfahrung zu vermeiden. (Wenn die Gastfreigabe z. B. in Teams, aber nicht in SharePoint zulässig ist, haben Gäste in Teams keinen Zugriff auf die Registerkarte "Dateien", da Teams-Dateien in SharePoint gespeichert werden.)
+Diese Einstellungen wirken sich auf alle Websites in der Organisation aus. Sie wirken sich nicht direkt auf Microsoft 365-Gruppen oder -Teams aus. Es wird jedoch empfohlen, diese Einstellungen mit den Einstellungen für Microsoft 365-Gruppen und -Teams zu vereinheitlichen, um Probleme mit der Benutzererfahrung zu vermeiden. (Wenn die Gastfreigabe z. B. in Teams, aber nicht in SharePoint zulässig ist, haben Gäste in Teams keinen Zugriff auf die Registerkarte "Dateien", da Teams-Dateien in SharePoint gespeichert werden.)
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>SharePoint- und OneDrive-Freigabeeinstellungen
 
@@ -180,7 +180,7 @@ Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den 
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Einstellungen für SharePoint- und OneDrive-Sicherheitsgruppen
 
-Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elemente für Gäste freigeben können, können Sie die Freigabe für Personen in bestimmten Sicherheitsgruppen einschränken. Diese Einstellungen wirken sich nicht auf die Freigabe über Office 365-Gruppen oder -Teams aus. Gäste, die über eine Gruppe oder ein Team eingeladen wurden, haben auch Zugriff auf die zugehörige Website, obwohl die Freigabe von Dokumenten und Ordnern nur von Personen in den angegebenen Sicherheitsgruppen ausgeführt werden kann.
+Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elemente für Gäste freigeben können, können Sie die Freigabe für Personen in bestimmten Sicherheitsgruppen einschränken. Diese Einstellungen wirken sich nicht auf die Freigabe über Microsoft 365-Gruppen oder -Teams aus. Gäste, die über eine Gruppe oder ein Team eingeladen wurden, haben auch Zugriff auf die zugehörige Website, obwohl die Freigabe von Dokumenten und Ordnern nur von Personen in den angegebenen Sicherheitsgruppen ausgeführt werden kann.
 
 **Navigation:** SharePoint Admin Center > Freigabe > Externes Teilen auf bestimmte Sicherheitsgruppen einschränken
 
@@ -234,7 +234,7 @@ Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp
 |:-----|:-----|
 |Klassisch|**Nur Personen in Ihrer Organisation**|
 |OneDrive|**Jeder**|
-|Mit Gruppen verbundene Websites (einschließlich Teams)|**Neue und vorhandene Gäste**, wenn die Einstellung für Office 365-Gruppen **Gruppenbesitzer dürfen Personen außerhalb der Organisation zu Gruppen hinzufügen** aktiviert ist. Andernfalls **Nur vorhandene Gäste**.|
+|Mit Gruppen verbundene Websites (einschließlich Teams)|**Neue und vorhandene Gäste**, wenn die Einstellung für Microsoft 365-Gruppen **Gruppenbesitzer dürfen Personen außerhalb der Organisation zu Gruppen hinzufügen** **aktiviert** ist. Andernfalls **Nur vorhandene Gäste**|
 |Kommunikation|**Nur Personen in Ihrer Organisation**|
 |Moderne Websites ohne Gruppe (#STS3 TeamSite)|**Nur Personen in Ihrer Organisation**|
 
@@ -247,4 +247,4 @@ Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp
 
 [Gastzugriff in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/guest-access)
 
-[Hinzufügen von Gästen zu Office 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Hinzufügen von Gästen zu Microsoft 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
