@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365
+title: Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 erstellen.
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Microsoft 365 erstellen.
 ms.custom: okr_smb
-ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628494"
 ---
-# <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365
+# <a name="create-dns-records-at-any-dns-hosting-provider"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -41,7 +41,7 @@ Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre
 Wenn Sie die Einträge selbst einrichten möchten, finden Sie hier die Einträge, die hinzugefügt werden müssen. Beachten Sie, dass Ihr Überprüfungseintrag und der MX-Eintrag für Ihre Domäne einzigartig sind. Zum Einrichten dieser Einträge benötigen Sie einen "Token"-Wert für Ihre Domäne. Im Folgenden wird beschrieben, wie Sie hierfür vorgehen müssen.
   
 > [!IMPORTANT]
-> Die genauen Namen der Kästchen oder  *Felder*  , in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Office 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Office 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Office 365 empfehlen wird die Übertragung Ihrer Domäne auf GoDaddy. 
+> Die genauen Namen der Kästchen oder  *Felder*, in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Microsoft 365 empfehlen wird die Übertragung Ihrer Domäne zu GoDaddy. 
   
 > [!NOTE]
 > Normalerweise dauert es nur einige Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -52,7 +52,7 @@ Wenn Sie die Einträge selbst einrichten möchten, finden Sie hier die Einträge
 > [!NOTE]
 > Sie müssen nur einen der beiden Einträge erstellen. TXT ist der bevorzugte Eintragstyp, jedoch wird er von einigen DNS-Hostinganbietern nicht unterstützt. In diesem Fall können Sie stattdessen einen MX-Datensatz erstellen. 
   
-Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewissern, dass Sie deren Besitzer sind. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, ist für Office 365 der Nachweis, dass Sie der Besitzer der Domäne sind.
+Bevor Sie Ihre Domäne in Microsoft 365 verwenden können, müssen wir uns vergewissern, dass Sie deren Besitzer sind. Ihre Fähigkeit, sich bei Ihrem Konto bei Ihrer Domänenregistrierungsstelle anzumelden und den DNS-Eintrag zu erstellen, ist für Microsoft 365 der Nachweis, dass Sie der Besitzer der Domäne sind.
   
 > [!NOTE]
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
@@ -74,20 +74,20 @@ Bevor Sie Ihre Domäne in Office 365 verwenden können, müssen wir uns vergewis
 |||||
 |:-----|:-----|:-----|:-----|
 |**Record Type **|**Alias** oder **Hostname**|**Value**|**TTL**|
-|TXT|Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> **Hinweis:** Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich. |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.  <br/>        [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  |
+|TXT|Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> **Hinweis:** Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich. |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.  <br/>        [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  |
    
   - **Wenn Sie einen MX-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 2. Speichern Sie den Eintrag.
     
-Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Office 365 zurück und fordern Office 365 auf, nach dem Eintrag zu suchen.
+Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft 365 zurück und fordern Microsoft 365 auf, nach dem Eintrag zu suchen.
   
-Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
+Wenn Microsoft 365 den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -103,7 +103,7 @@ Wenn Office 365 den richtigen TXT-Eintrag findet, wird die Domäne überprüft.
 ## <a name="add-mx-record-to-route-email"></a>Hinzufügen eines MX-Eintrags zum Weiterleiten von E-Mails
 <a name="BKMK_add_MX"> </a>
 
-Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Office 365 geleitet werden.  *Nachdem Sie den MX-Eintrag Ihrer Domäne aktualisiert haben, treffen alle neuen E-Mails für jeden Benutzer Ihr Domäne in Office 365 ein*. Alle E-Mails, die Sie bereits erhalten haben, bleiben so lange auf Ihrem aktuellen E-Mail-Host gespeichert, bis Sie die [Migration von E-Mails und Kontakten zu Office 365](../setup/migrate-email-and-contacts-admin.md) beschließen. 
+Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft 365 geleitet werden.  *Nachdem Sie den MX-Eintrag Ihrer Domäne aktualisiert haben, treffen alle neuen E-Mails für jeden Benutzer Ihr Domäne in Microsoft 365 ein*. Alle E-Mails, die Sie bereits erhalten haben, bleiben so lange auf Ihrem aktuellen E-Mail-Host gespeichert, bis Sie die [Migration von E-Mails und Kontakten zu Microsoft 365](../setup/migrate-email-and-contacts-admin.md) beschließen. 
   
   
  **Aufgabe**
@@ -130,7 +130,7 @@ Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist 
 
 1. Fügen Sie auf der Website Ihres DNS-Hosts einen neuen MX-Eintrag hinzu.
     
-    Sie erhalten nun die [Informationen zu dem MX-Eintrag](../get-help-with-domains/information-for-dns-records.md) von Office 365. 
+    Sie erhalten nun die [Informationen zu dem MX-Eintrag](../get-help-with-domains/information-for-dns-records.md) von Microsoft 365. 
     
 2. Kopieren Sie für den MX-Eintrag (im vorherigen Schritt) den Wert unter **Verweist auf die Adresse**. 
     
@@ -146,7 +146,7 @@ Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist 
     
   - **Hostname**: **@**
     
-  - **Verweist auf die Adresse**: Fügen Sie den Wert für **Verweist auf die Adresse** ein, den Sie soeben aus Office 365 kopiert haben. 
+  - **Verweisende Adresse**: Fügen Sie den Wert für **verweisende Adresse** ein, den Sie soeben aus Microsoft 365 kopiert haben. 
     
   - **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
     
@@ -154,14 +154,14 @@ Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist 
     
 Entfernen Sie alle anderen MX-Einträge.
   
-Wenn Sie über MX-Einträge für diese Domäne verfügen, mit denen E-Mails an einen anderen Ort als Office 365 gesendet werden, löschen Sie diese.
+Wenn Sie über MX-Einträge für diese Domäne verfügen, mit denen E-Mails an einen anderen Ort als Microsoft 365 gesendet werden, löschen Sie diese.
   
 ## <a name="add-three-cname-records"></a>Hinzufügen von drei CNAME-Einträgen
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
-Folgen Sie den nachstehenden Schritten, um die drei für Office 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Office 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der hier angegebenen allgemeinen Schritte hinzu.
+Führen Sie die nachstehenden Schritte aus, um die drei für Microsoft 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Microsoft 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der selben hier angegebenen allgemeinen Schritte hinzu.
   
 Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Einträge.
   
@@ -182,7 +182,7 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 ::: moniker-end
 ::: moniker range="o365-germany"
 
-Folgen Sie den nachstehenden Schritten, um die drei für Office 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Office 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der hier angegebenen allgemeinen Schritte hinzu.
+Führen Sie die nachstehenden Schritte aus, um die drei für Microsoft 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Microsoft 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der selben hier angegebenen allgemeinen Schritte hinzu.
   
 Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Einträge.
   
@@ -204,7 +204,7 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 
 ::: moniker range="o365-21vianet"
 
-Folgen Sie den nachstehenden Schritten, um die drei für Office 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Office 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der hier angegebenen allgemeinen Schritte hinzu.
+Führen Sie die nachstehenden Schritte aus, um die drei für Microsoft 365 erforderlichen CNAME-Einträge hinzuzufügen. Wenn in Microsoft 365 zusätzliche CNAME-Einträge aufgeführt sind, fügen Sie diese anhand der selben hier angegebenen allgemeinen Schritte hinzu.
   
 Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Einträge.
   
@@ -224,13 +224,13 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
     
 ::: moniker-end
 
-## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Hinzufügen von zwei CNAME-Einträgen für MDM (Mobile Device Management) für Office 365
+## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft-365"></a>Hinzufügen von zwei CNAME-Einträgen für MDM (Mobile Device Management) für Microsoft 365
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Wenn Sie über MDM (Mobile Device Management) für Office 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
+> Wenn Sie über MDM (Mobile Device Management) für Microsoft 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -243,7 +243,7 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Wenn Sie über MDM (Mobile Device Management) für Office 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
+> Wenn Sie über MDM (Mobile Device Management) für Microsoft 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -259,12 +259,12 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind.
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft 365 keinen neuen, sondern fügen Sie die erforderlichen Microsoft 365-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind.
   
 Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder erstellen Sie einen neuen TXT-Eintrag für SPF.
   
 > [!IMPORTANT]
-> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Office 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Office 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Microsoft 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
@@ -284,12 +284,12 @@ Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft 365 keinen neuen, sondern fügen Sie die erforderlichen Microsoft 365-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder erstellen Sie einen neuen TXT-Eintrag für SPF.
   
 > [!IMPORTANT]
-> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Office 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Office 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Microsoft 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
@@ -309,12 +309,12 @@ Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. If you already have an SPF record for your domain, don't create a new one for Office 365. Damit verfügen Sie über einen  *einzigen*  SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft 365 keinen neuen, sondern fügen Sie die erforderlichen Microsoft 365-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder erstellen Sie einen neuen TXT-Eintrag für SPF.
   
 > [!IMPORTANT]
-> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Office 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Office 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 konfigurieren. Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne aus in Microsoft 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie danach [Verwenden von DMARC zur Überprüfung von E-Mails in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
@@ -429,10 +429,10 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander zwei neue SRV-Einträ
 ## <a name="more-about-updating-dns-records"></a>Weitere Informationen zum Aktualisieren von DNS-Einträgen
 <a name="BKMK_MoreAbout"> </a>
 
- **Wenn Sie wissen, wie DNS-Einträge beim DNS-Host Ihrer Domäne aktualisiert werden**, verwenden Sie die DNS-Werte von Office 365, um die Einträge beim DNS-Host Ihrer Domäne zu bearbeiten, also beispielsweise, um einen MX- oder SPF-Eintrag einzurichten. Die zu verwendenden Werte finden Sie, indem Sie [diesen Schritten folgen](../get-help-with-domains/information-for-dns-records.md) oder den Assistenten zum Einrichten von Domänen verwenden, der Sie schrittweise durch das Verfahren führt.
+ **Wenn Sie wissen, wie DNS-Einträge beim DNS-Host Ihrer Domäne aktualisiert werden**, verwenden Sie die DNS-Werte von Microsoft 365, um die Einträge beim DNS-Host Ihrer Domäne zu bearbeiten, also beispielsweise, um einen MX- oder SPF-Eintrag einzurichten. Die zu verwendenden Werte finden Sie, indem Sie [diesen Schritten folgen](../get-help-with-domains/information-for-dns-records.md) oder den Assistenten zum Einrichten von Domänen verwenden, der Sie schrittweise durch das Verfahren führt.
   
- **Wenn Sie Hilfe beim Hinzufügen der erforderlichen DNS-Einträge benötigen**, lesen Sie [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), und [sammeln Sie zunächst die erforderlichen Informationen zum Erstellen von DNS-Einträgen für Office 365](../get-help-with-domains/information-for-dns-records.md). Führen Sie dann die allgemeinen Schritte in diesem Artikel aus, um Ihre DNS-Einträge Ihrer Domäne einzurichten, um diese in Verbindung mit Office 365-Diensten wie E-Mail verwenden zu können.
+ **Wenn Sie Hilfe beim Hinzufügen der erforderlichen DNS-Einträge benötigen**, lesen Sie [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), und [sammeln Sie zunächst die erforderlichen Informationen zum Erstellen von DNS-Einträgen für Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Führen Sie dann die allgemeinen Schritte in diesem Artikel aus, um Ihre DNS-Einträge Ihrer Domäne einzurichten, um diese in Verbindung mit Microsoft 365-Diensten wie E-Mail verwenden zu können.
   
- **Wenn Sie nicht über eine Website verfügen, die Sie in Verbindung mit Ihrer benutzerdefinierten Domäne verwenden**, können Sie Office 365 nutzen, um DNS-Einträge für Ihre Domäne einzurichten und zu verwalten, anstatt die Einrichtung selbst vorzunehmen. Hier finden Sie weitere Informationen zu den [zwei Optionen zum Einrichten und Verwalten von DNS-Einträgen für eine benutzerdefinierte Domäne](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Office 365. 
+ **Wenn Sie nicht über eine Website verfügen, die Sie in Verbindung mit Ihrer benutzerdefinierten Domäne verwenden**, können Sie Microsoft 365 nutzen, um DNS-Einträge für Ihre Domäne einzurichten und zu verwalten, anstatt die Einrichtung selbst vorzunehmen. Hier finden Sie weitere Informationen zu den [zwei Optionen zum Einrichten und Verwalten von DNS-Einträgen für eine benutzerdefinierte Domäne](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Microsoft 365. 
   
 
