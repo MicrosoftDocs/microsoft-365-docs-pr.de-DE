@@ -1,5 +1,5 @@
 ---
-title: Office 365 Verschlüsselungs Ketten
+title: Verschlüsselungs Ketten
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Hier wird eine vollständige Liste der Stammzertifikate und Zertifizierungsstellen (CAS) in Office 365 angezeigt.
-ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131508"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631700"
 ---
-# <a name="office-365-encryption-chains"></a>Office 365 Verschlüsselungs Ketten
+# <a name="encryption-chains"></a>Verschlüsselungs Ketten
 
 Office 365 nutzt eine Reihe unterschiedlicher Zertifikatanbieter. Im folgenden wird die vollständige Liste der bekannten Office 365 Stammzertifikate beschrieben, auf die Kunden beim Zugriff auf Office 365 stoßen können. Informationen zu den Zertifikaten, die Sie möglicherweise in ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Planen von Drittanbieter-SSL-Zertifikaten für Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). Die folgenden Zertifikatinformationen gelten für alle globalen und nationalen Cloud-Instanzen von Office 365.
 

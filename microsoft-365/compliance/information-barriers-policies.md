@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029881"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621371"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -37,7 +37,7 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 
 - Benutzerkontoattribute werden in Azure Active Directory (oder Exchange Online) definiert. Diese Attribute können Abteilung, Position, Ort, Teamname und andere Auftragsprofil Details umfassen. 
 
-- Segmente sind Benutzergruppen, die im Office 365 Security & Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs**definiert sind. (Siehe [Liste der unterstützten Attribute](information-barriers-attributes.md).) 
+- Segmente sind Benutzergruppen, die im Security & Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs**definiert sind. (Siehe [Liste der unterstützten Attribute](information-barriers-attributes.md).) 
 
 - Richtlinien für Informationsbarrieren bestimmen Kommunikations Grenzwerte oder-Einschränkungen. Wenn Sie Richtlinien für Informationsbarrieren definieren, wählen Sie aus zwei Arten von Richtlinien:
     - "Blockieren"-Richtlinien verhindern, dass ein Segment mit einem anderen Segment kommuniziert.
@@ -67,12 +67,12 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Bereichsbezogene Verzeichnissuche – bevor Sie die erste Informations Sperrrichtlinie Ihrer Organisation definieren, müssen Sie die [bereichsbezogene Verzeichnissuche in Microsoft Teams aktivieren](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Warten Sie mindestens 24 Stunden nach dem Aktivieren der bereichsbezogenen Verzeichnissuche, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
-- Überwachungsprotokollierung – um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
+- Überwachungsprotokollierung – um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
 
 - Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf adressbuchrichtlinien, die beiden Arten von Richtlinien sind jedoch nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und das hierarchische Adressbuch aktiviert ist, werden alle Benutzer, die nicht in einem Segment mit Informationsbarrieren ***enthalten sind*** , das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online sehen.
 
 - PowerShell – derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das AzureRM-Modul.
-    - [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+    - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Installieren des Azure PowerShell-Moduls](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Zustimmung des Administrators für Informationsbarrieren in Microsoft Teams – Wenn Ihre Richtlinien vorhanden sind, können Informationsbarrieren Personen aus Chatsitzungen entfernen, in denen Sie sich nicht befinden sollen. Dadurch wird sichergestellt, dass Ihre Organisation mit den Richtlinien und Vorschriften konform bleibt. Verwenden Sie das folgende Verfahren, um Richtlinien für Informationsbarrieren zu aktivieren, die in Microsoft Teams erwartungsgemäß funktionieren. 
@@ -243,7 +243,7 @@ Richtlinien für Informationsbarrieren werden erst wirksam, wenn Sie Sie auf akt
 
     Wiederholen Sie diesen Schritt für jede Richtlinie entsprechend.
 
-3. Wenn Sie die Richtlinien für Informationsbarrieren auf den aktiven Status festgesetzt haben, verwenden Sie das Cmdlet **Start-InformationBarrierPoliciesApplication** im Office 365 Security & Compliance Center.
+3. Wenn Sie die Richtlinien für Informationsbarrieren auf den aktiven Status festgesetzt haben, verwenden Sie das Cmdlet **Start-InformationBarrierPoliciesApplication** im Security & Compliance Center.
 
     Syntax`Start-InformationBarrierPoliciesApplication`
 

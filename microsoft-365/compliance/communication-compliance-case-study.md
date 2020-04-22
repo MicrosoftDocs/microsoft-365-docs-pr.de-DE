@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165934"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637177"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Fallstudie: contoso konfiguriert eine Offensive Sprachrichtlinie für Microsoft Teams und Exchange Communications schnell.
 
@@ -81,7 +81,7 @@ IT-Administratoren von Contoso führen Sie die folgenden Schritte aus, um die Li
 
 Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. [Berechtigungen müssen so konfiguriert werden](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) , dass Administratoren von Contoso und Compliance-Experten Zugriff auf die Kommunikations Konformität haben.
 
-1. Contoso-IT-Administratoren melden sich auf der Seite Berechtigungen für das **Office 365 Security and Compliance Center** an [(https://protection.office.com/permissions) ](https://protection.office.com/permissions) Verwenden von Anmeldeinformationen für ein globales Administratorkonto und auswählen des Links zum Anzeigen und Verwalten von Rollen in Office 365.
+1. Contoso-IT-Administratoren melden sich auf der Seite Berechtigungen für das **Office 365 Security and Compliance Center** an [(https://protection.office.com/permissions) ](https://protection.office.com/permissions) Verwenden von Anmeldeinformationen für ein globales Administratorkonto und auswählen des Links zum Anzeigen und Verwalten von Rollen in Microsoft 365.
 2. Nachdem Sie **Create**ausgewählt haben, weisen Sie der neuen Rollengruppe den Anzeigenamen "*Communication Compliance*" zu und wählen **dann weiter**aus.
 3. Wählen Sie **Rollen auswählen** aus, und wählen Sie dann **Hinzufügen**aus. Sie fügen die erforderlichen Rollen hinzu, indem Sie das Kontrollkästchen für *Aufsichts Überprüfungs Administrator*, *Fallverwaltung*, *Kompatibilitäts Administrator*und *Überprüfung*aktivieren und dann **Hinzufügen**, **Fertig** und **weiter**auswählen.
 
@@ -141,7 +141,7 @@ Nachdem Sie **Alle anzeigen**ausgewählt haben, können die IT-Administratoren v
 
 Für den Einstieg in eine Kommunikations Konformitätsrichtlinie gibt es mehrere Voraussetzungen, die von Contoso-IT-Administratoren konfiguriert werden müssen, bevor die neue Richtlinie für die Überwachung auf anstößige Sprache eingerichtet wird. Nachdem diese Voraussetzungen erfüllt sind, können Contoso-IT-Administratoren und Compliance-Experten die neuen Richtlinien und Compliance-Experten konfigurieren, die mit der Untersuchung beginnen und alle generierten Warnungen remediationieren.
 
-### <a name="enabling-auditing-in-office-365"></a>Aktivieren der Überwachung in Office 365
+### <a name="enabling-auditing-in-microsoft-365"></a>Aktivieren der Überwachung in Microsoft 365
 
 Für die Kommunikations Kompatibilität müssen Überwachungsprotokolle Warnungen anzeigen und von den Prüfern vorgenommene Korrekturaktionen nachverfolgen. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer definierten Organisationsrichtlinie zugeordnet sind, oder wenn es eine Änderung an einer Kommunikations Konformitätsrichtlinie gibt.
 
@@ -154,13 +154,13 @@ Contoso Compliance Specialists möchten alle Mitarbeiter der Kommunikationsricht
 Sie müssen eine neue Gruppe erstellen, um alle Contoso-Mitarbeiter einzuschließen, sodass Sie die folgenden Schritte ausführen:
 
 1. Contoso IT-Administratoren melden Sie sich beim **Microsoft 365 Admin Center** [anhttps://admin.microsoft.com) (](https://admin.microsoft.com) und navigieren Sie zu **Microsoft 365 Admin Center** > **Groups** > **Groups**.
-2. Sie wählen **Hinzufügen einer Gruppe** und schließen den Assistenten aus, um eine neue *Office 365 Gruppe* oder *Verteilergruppe*zu erstellen.
+2. Sie wählen **Hinzufügen einer Gruppe** und schließen den Assistenten aus, um eine neue *Microsoft 365-Gruppe* oder- *Verteilergruppe*zu erstellen.
 
 ![Gruppen](../media/communication-compliance-case-all-employees.png)
 
 3. Nachdem die neue Gruppe erstellt wurde, müssen Sie alle Contoso-Benutzer zur neuen Gruppe hinzufügen. Sie öffnen das **Exchange Admin Center** [(https://outlook.office365.com/ecp) ](https://outlook.office365.com/ecp) und wechseln zu **Exchange Admin Center** > **Recipients** > **Groups**. Die IT-Administratoren von Contoso wählen den Mitgliedschaftsbereich und die neue Gruppe *alle Mitarbeiter* aus, die Sie erstellt haben, und wählen das **Bearbeitungs** Steuerelement aus, um alle Contoso-Mitarbeiter der neuen Gruppe im Assistenten hinzuzufügen.
 
-![Exchange Admin Center](../media/communication-compliance-case-eac.png)
+![Exchange Admin-Center](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>Erstellen der zu überwachenden Richtlinie für anstößige Sprachen
 

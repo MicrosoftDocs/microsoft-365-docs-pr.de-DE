@@ -1,5 +1,5 @@
 ---
-title: Importieren nicht Office 365der Inhalte für die erweiterte eDiscovery-Analyse
+title: Importieren von nicht-Microsoft 365-Inhalten für erweiterte eDiscovery-Analysen
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,23 +14,23 @@ search.appverid:
 - OEC150
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
-description: Vorgehensweise zum Importieren von Inhalten, die nicht in O365 gespeichert sind, in ein Azure-BLOB, damit es mit AeD analysiert werden kann
-ms.openlocfilehash: 529eb21117ed2cdfbb7f02caf058dbc6863d2d9b
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Vorgehensweise zum Importieren von Inhalten, die nicht in Microsoft 365 gespeichert sind, in ein Azure-BLOB, damit es mit AeD analysiert werden kann
+ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557895"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634157"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-classic-analysis"></a>Importieren von nicht Office 365en Inhalten für die erweiterte eDiscovery-Analyse (klassisch)
+# <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Importieren von nicht-Microsoft 365-Inhalten für die erweiterte eDiscovery-Analyse (klassisch)
 
-Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery analysieren müssen, werden in Office 365 Live verwendet. Mit der nicht Office 365 Inhalts Importfunktion in Advanced eDiscovery können Sie Dokumente hochladen, die nicht in Office 365 (außer PST-Dateien) Leben, in einen verknüpften Fall, ein Azure-Speicher-BLOB, und diese mit Advanced eDiscovery analysieren. In diesem Verfahren erfahren Sie, wie Sie Ihre nicht-Office 365-Dokumente zur Analyse in Advanced eDiscovery integrieren.
+Nicht alle Dokumente, die Sie möglicherweise mit Advanced eDiscovery analysieren müssen, werden in Microsoft 365 Live verwendet. Mit der nicht-Microsoft 365-Inhalts Importfunktion in Advanced eDiscovery können Sie Dokumente, die nicht in Microsoft 365 (außer PST-Dateien) Leben, in einen verknüpften Fall mit Azure Storage BLOB hochladen und mit Advanced eDiscovery analysieren. In diesem Verfahren erfahren Sie, wie Sie Ihre nicht-Microsoft 365-Dokumente zur Analyse in Advanced eDiscovery integrieren.
   
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
-> Sie können ein Office 365 erweitertes eDiscovery Data Storage-Add-on-Abonnement für Ihre nicht Office 365 Inhalte erwerben. Dies steht ausschließlich für Inhalte zur Verfügung, die mit Advanced eDiscovery analysiert werden sollen. Führen Sie die Schritte in [kaufen oder bearbeiten und Add-on für Office 365 für Unternehmen](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) aus, und kaufen Sie das Office 365 Advanced eDiscovery Storage Add-on. 
+> Sie können ein erweitertes eDiscovery Data Storage-Add-on-Abonnement für Ihre nicht von Microsoft 365 Inhalte erwerben. Dies steht ausschließlich für Inhalte zur Verfügung, die mit Advanced eDiscovery analysiert werden sollen. Befolgen Sie die Schritte unter [kaufen oder Bearbeiten eines Add-ons für Microsoft 365 for Business](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) , und erwerben Sie das erweiterte eDiscovery-Speicher-Add-on. 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -51,11 +51,11 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen nicht Office 365er Inhalte in die erweiterte eDiscovery
 
 
-1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator **eDiscovery**, und öffnen Sie den Fall, dass die nicht Office 365 Daten hochgeladen werden. Wenn Sie einen Fall erstellen müssen, finden Sie weitere Informationen unter [Verwalten von eDiscovery- &amp; Fällen im Office 365 Security Compliance Center](ediscovery-cases.md)
+1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator **eDiscovery**, und öffnen Sie den Fall, dass die nicht Office 365 Daten hochgeladen werden. Wenn Sie einen Fall erstellen müssen, finden Sie weitere Informationen unter [Verwalten von eDiscovery &amp; -Fällen im Security Compliance Center](ediscovery-cases.md) .
     
 2. Klicken Sie auf **zu Advanced eDiscovery wechseln** .
     
-3. Wählen **** Sie unter Quelltext **nicht Office 365 Daten**aus.
+3. Wählen **Source type** Sie unter Quelltext **nicht Office 365 Daten**aus.
     
 4. Klicken Sie auf **Container hinzufügen**. Nennen Sie den Container, und fügen Sie eine Beschreibung hinzu.
     
@@ -82,7 +82,7 @@ Wenn Sie das Feature nicht Office 365 hochladen wie in diesem Verfahren beschrie
     > [!IMPORTANT]
     > Pro Benutzer muss ein Stammordner vorhanden sein, und der Ordnername muss das *Alias@Domainname* Format aufweisen. 
   
-8. Nachdem die Ordner fertig hochgeladen wurden, wechseln Sie zurück zu Advanced eDiscovery. Der Inhalt in den Ordnern, die Sie hochgeladen haben, ist nun für die Verarbeitung in Advanced eDiscovery verfügbar. Wählen Sie den Container aus, und klicken Sie auf die Schaltfläche Prozess. Weitere Informationen zur erweiterten eDiscovery-Verarbeitung finden Sie unter [Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md) .
+8. Nachdem die Ordner fertig hochgeladen wurden, wechseln Sie zurück zu Advanced eDiscovery. Der Inhalt in den Ordnern, die Sie hochgeladen haben, ist nun für die Verarbeitung in Advanced eDiscovery verfügbar. Wählen Sie den Container aus, und klicken Sie auf die Schaltfläche Prozess. Weitere Informationen zur erweiterten eDiscovery-Verarbeitung finden Sie unter [Ausführen des Prozess Moduls und Laden von Daten in Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md) .
     
     > [!IMPORTANT]
     > Nachdem der Container in Advanced eDiscovery erfolgreich verarbeitet wurde, können Sie dem SAS-Speicher in Azure keine neuen Inhalte mehr hinzufügen. Wenn Sie zusätzliche Inhalte erfassen und Sie dem Fall für die erweiterte eDiscovery-Analyse hinzufügen möchten, müssen Sie einen neuen **nicht-Office 365-Daten** Container erstellen und dieses Verfahren wiederholen. 

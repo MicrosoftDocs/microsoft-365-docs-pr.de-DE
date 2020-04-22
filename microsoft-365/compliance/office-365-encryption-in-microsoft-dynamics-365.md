@@ -1,5 +1,5 @@
 ---
-title: Office 365 Verschlüsselung in Microsoft Dynamics 365
+title: Verschlüsselung in Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zur Verschlüsselung in Microsoft Dynamics 365.'
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597852"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637239"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Office 365 Verschlüsselung in Microsoft Dynamics 365
+# <a name="encryption-in-microsoft-dynamics-365"></a>Verschlüsselung in Microsoft Dynamics 365
 
 Microsoft verwendet Verschlüsselungstechnologien zum Schutz von Kundendaten in Dynamics 365, während Sie in einer Microsoft-Datenbank und während der Übertragung zwischen Benutzergeräten und unseren Rechenzentren in Ruhe bleiben. Zwischen Kunden und Microsoft-Rechenzentren hergestellte Verbindungen werden verschlüsselt, und alle öffentlichen Endpunkte werden mithilfe von TLS (Industry-Standard) gesichert. TLS richtet eine effektivere Browser-zu-Server-Verbindung für die Sicherheit ein, um die Vertraulichkeit und Integrität von Daten zwischen Desktops und Rechenzentren zu verbessern. Nachdem die Datenverschlüsselung aktiviert wurde, kann Sie nicht deaktiviert werden. Weitere Informationen finden Sie unter [Datenverschlüsselung auf Feldebene](https://msdn.microsoft.com/library/dn481562.aspx).
 

@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen des Office 365 Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien
+title: Durchsuchen des Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Sie können das Office 365 Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum sich ein externer Benutzer erfolgreich bei Ihrer Organisation angemeldet hat.
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Sie können das Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum sich ein externer Benutzer erfolgreich bei Ihrer Organisation angemeldet hat.
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636383"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Office 365 Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 
-In diesem Artikel wird beschrieben, wie Sie mithilfe des Office 365 Überwachungsprotokoll-Such Tools häufige Supportprobleme untersuchen können. Dies umfasst die Verwendung des Überwachungsprotokolls für Folgendes:
+In diesem Artikel wird beschrieben, wie Sie mithilfe des Überwachungsprotokoll-Such Tools häufige Supportprobleme untersuchen können. Dies umfasst die Verwendung des Überwachungsprotokolls für Folgendes:
 
 - Suchen der IP-Adresse des Computers, der für den Zugriff auf ein kompromittiertes Konto verwendet wurde
 - Bestimmen, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat
@@ -33,13 +33,13 @@ In diesem Artikel wird beschrieben, wie Sie mithilfe des Office 365 Überwachung
 - Ermitteln, ob ein Benutzer eine Posteingangsregel erstellt hat
 - Untersuchen der Gründe für eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>Verwenden des Office 365 Überwachungsprotokoll-Such Tools
+## <a name="using-the-audit-log-search-tool"></a>Verwenden des Überwachungsprotokoll-Such Tools
 
-Jedes der in diesem Artikel beschriebenen Problembehandlungsszenarien basiert auf der Verwendung des Überwachungsprotokoll-Such Tools im Office 365 Security and Compliance Center. In diesem Abschnitt werden die Berechtigungen aufgelistet, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und es werden die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokoll suchen beschrieben. In jedem Szenario-Abschnitt wird erklärt, wie Sie eine Überwachungsprotokoll-Suchabfrage konfigurieren und worauf Sie in den detaillierten Informationen in den Überwachungsdatensätzen achten, die den Suchkriterien entsprechen.
+Jedes der in diesem Artikel beschriebenen Problembehandlungsszenarien basiert auf der Verwendung des Überwachungsprotokoll-Such Tools im Security & Compliance Center. In diesem Abschnitt werden die Berechtigungen aufgelistet, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und es werden die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokoll suchen beschrieben. In jedem Szenario-Abschnitt wird erklärt, wie Sie eine Überwachungsprotokoll-Suchabfrage konfigurieren und worauf Sie in den detaillierten Informationen in den Überwachungsdatensätzen achten, die den Suchkriterien entsprechen.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Erforderliche Berechtigungen für die Verwendung des Überwachungsprotokoll-Such Tools
 
-Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" zugewiesen sein, um das Office 365 Überwachungsprotokoll durchsuchen zu können. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Globale Administratoren in Office 365 und Microsoft 365 werden automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" zugewiesen sein, um das Überwachungsprotokoll durchsuchen zu können. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Globale Administratoren in Office 365 und Microsoft 365 werden automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Ausführung von Überwachungsprotokoll suchen
 
@@ -80,7 +80,7 @@ Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses S
 **Aktivitäten:** Wenn relevant für Ihren Fall, wählen Sie eine bestimmte Aktivität aus, nach der gesucht werden soll. Für die Problembehandlung in kompromittierten Konten sollten **Sie die Option Benutzer bei Post** Fach **Aktivitäten unter Exchange-Postfachaktivitäten**Anmelden auswählen. Dadurch werden Überwachungseinträge zurückgegeben, die die IP-Adresse anzeigen, die bei der Anmeldung beim Postfach verwendet wurde. Lassen Sie andernfalls dieses Feld leer, um Überwachungseinträge für alle Aktivitäten zurückzugeben. 
 
 > [!TIP]
-> Wenn Sie dieses Feld leer lassen, werden **UserLoggedIn** -Aktivitäten zurückgegeben, bei denen es sich um eine Azure-Active Directory Aktivität handelt, die angibt, dass sich jemand bei einem Office 365-Benutzerkonto angemeldet hat. Verwenden Sie die Filterung in den Suchergebnissen, um die **UserLoggedIn** -Überwachungseinträge anzuzeigen.
+> Wenn Sie dieses Feld leer lassen, werden **UserLoggedIn** -Aktivitäten zurückgegeben, bei denen es sich um eine Azure-Active Directory Aktivität handelt, die angibt, dass sich jemand bei einem Benutzerkonto angemeldet hat. Verwenden Sie die Filterung in den Suchergebnissen, um die **UserLoggedIn** -Überwachungseinträge anzuzeigen.
 
 **Start Datum** und **Enddatum:** wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
@@ -198,9 +198,9 @@ d. Das **UserID** -Feld gibt den Benutzer an, der die im Feld **objectID** angeg
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Untersuchen der Gründe für eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation
 
-Wenn Sie Überwachungseinträge im Office 365 Überwachungsprotokoll überprüfen, werden möglicherweise Datensätze angezeigt, die angeben, dass ein externer Benutzer von Azure Active Directory authentifiziert wurde und sich erfolgreich bei Ihrer Organisation angemeldet hat. Beispielsweise kann ein Administrator in contoso.onmicrosoft.com einen Überwachungseintrag sehen, der anzeigt, dass ein Benutzer aus einer anderen Office 365 Organisation (beispielsweise fabrikam.onmicrosoft.com) sich erfolgreich bei Contoso.onmicrosoft.com angemeldet hat. Ebenso werden möglicherweise Überwachungseinträge angezeigt, die Benutzer mit einem Microsoft-Konto (MSA) anzeigen, beispielsweise eine Outlook.com-oder Live.com, die sich erfolgreich bei Ihrer Organisation angemeldet haben. In diesen Situationen ist die überwachte Aktivität **Benutzer angemeldet**. 
+Wenn Sie Überwachungseinträge im Überwachungsprotokoll überprüfen, werden möglicherweise Datensätze angezeigt, die angeben, dass ein externer Benutzer von Azure Active Directory authentifiziert wurde und sich erfolgreich bei Ihrer Organisation angemeldet hat. Beispielsweise kann ein Administrator in contoso.onmicrosoft.com einen Überwachungseintrag sehen, der anzeigt, dass ein Benutzer aus einer anderen Organisation (beispielsweise fabrikam.onmicrosoft.com) sich erfolgreich bei Contoso.onmicrosoft.com angemeldet hat. Ebenso werden möglicherweise Überwachungseinträge angezeigt, die Benutzer mit einem Microsoft-Konto (MSA) anzeigen, beispielsweise eine Outlook.com-oder Live.com, die sich erfolgreich bei Ihrer Organisation angemeldet haben. In diesen Situationen ist die überwachte Aktivität **Benutzer angemeldet**. 
 
-Dieses Verhalten ist so beabsichtigt. Azure Active Directory (Azure AD), der Verzeichnisdienst in Office 365, ermöglicht die so genannte *Pass-Through-Authentifizierung* , wenn ein externer Benutzer versucht, auf eine SharePoint-Website oder einen OneDrive-Speicherort in Ihrer Organisation zuzugreifen. Wenn der externe Benutzer versucht, dies zu tun, werden Sie aufgefordert, Ihre Office 365 Anmeldeinformationen einzugeben. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer derjenige ist, der er sagt. Die Angabe der erfolgreichen Anmeldung im Überwachungsdatensatz ist das Ergebnis Azure AD Authentifizierung des Benutzers. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer in der Lage war, auf Ressourcen zuzugreifen oder andere Aktionen in Ihrer Organisation auszuführen. Er gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint-oder OneDrive-Ressourcen zugreifen kann, muss ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er Ihnen eine Freigabeeinladung oder einen anonymen Freigabe Link sendet. 
+Dieses Verhalten ist so beabsichtigt. Azure Active Directory (Azure AD), der Verzeichnisdienst, ermöglicht die so genannte *Pass-Through-Authentifizierung* , wenn ein externer Benutzer versucht, auf eine SharePoint-Website oder einen OneDrive-Standort in Ihrer Organisation zuzugreifen. Wenn der externe Benutzer versucht, dies zu tun, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer derjenige ist, der er sagt. Die Angabe der erfolgreichen Anmeldung im Überwachungsdatensatz ist das Ergebnis Azure AD Authentifizierung des Benutzers. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer in der Lage war, auf Ressourcen zuzugreifen oder andere Aktionen in Ihrer Organisation auszuführen. Er gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint-oder OneDrive-Ressourcen zugreifen kann, muss ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er Ihnen eine Freigabeeinladung oder einen anonymen Freigabe Link sendet. 
 
 > [!NOTE]
 > Azure AD ermöglicht die Pass-Through-Authentifizierung nur für *Anwendungen von Erstanbietern*wie SharePoint Online und OneDrive für Unternehmen. Sie ist für andere Drittanbieteranwendungen nicht zulässig.
@@ -225,7 +225,7 @@ Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Thr
 
   - Ein Benutzer mit einem Microsoft-Konto (beispielsweise SaraD@Outlook.com) hat versucht, auf ein Dokument in einem OneDrive für Unternehmen-Konto in fourthcoffee.onmicrosoft.com zuzugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für SaraD@Outlook.com in fourthcoffee.onmicrosoft.com.
 
-  - Ein Benutzer mit einem Arbeits-oder Schulkonto in einer Office 365 Organisation (beispielsweise pilarp@fabrikam.onmicrosoft.com) hat versucht, auf eine SharePoint-Website in contoso.onmicrosoft.com zuzugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für pilarp@fabrikam.com in contoso.onmicrosoft.com.
+  - Ein Benutzer mit einem Arbeits-oder Schulkonto in einer Organisation (beispielsweise pilarp@fabrikam.onmicrosoft.com) hat versucht, auf eine SharePoint-Website in contoso.onmicrosoft.com zuzugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Tipps für die Untersuchung erfolgreicher Anmeldungen, die sich aus der Pass-Through-Authentifizierung ergeben
@@ -236,6 +236,6 @@ Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Thr
 
     Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, das für Sie freigegeben wurde, aufgerufen, geändert oder heruntergeladen hat.
 
-- Suche nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsprotokoll **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Verwenden der Freigabeüberwachung im Office 365-Überwachungsprotokoll](use-sharing-auditing.md).
+- Suche nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsprotokoll **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Use Sharing Auditing in the Audit Log](use-sharing-auditing.md).
 
 - Exportieren Sie die Überwachungsprotokoll-Suchergebnisse, die Datensätze enthalten, die für Ihre Untersuchung relevant sind, damit Sie Excel für die Suche nach anderen Aktivitäten im Zusammenhang mit dem externen Benutzer verwenden können. Weitere Informationen finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md).

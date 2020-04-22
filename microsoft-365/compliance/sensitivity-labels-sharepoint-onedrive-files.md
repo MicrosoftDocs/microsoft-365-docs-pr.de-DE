@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 8f57a680bf5cbd53153cedc339b35bc2712c3f73
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43188974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635783"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
@@ -156,7 +156,7 @@ Wenn Sie diese Vorschau deaktivieren, werden Dateien, die Sie während der Vorsc
 
 Verwenden Sie das Cmdlet "SPOTenant", um die Vorschau zu deaktivieren:
 
-1. Stellen Sie eine Verbindung mit SharePoint her, indem Sie ein Arbeits-oder Schulkonto mit globalen Administrator-oder SharePoint-Administratorrechten in Office 365 verwenden. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der SharePoint Online-Verwaltungsshell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Stellen Sie eine Verbindung mit SharePoint her, indem Sie ein Arbeits-oder Schulkonto mit globalen Administrator-oder SharePoint-Administratorrechten verwenden. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der SharePoint Online-Verwaltungsshell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 2. Führen Sie den folgenden Befehl aus:
 

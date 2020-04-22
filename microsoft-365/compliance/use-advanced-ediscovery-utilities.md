@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Office 365 erweiterten eDiscovery-Dienstprogrammen
+title: Verwenden von Advanced eDiscovery-Hilfsprogrammen
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Erfahren Sie mehr über die Dienstprogramme in Office 365 Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.  '
-ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Erfahren Sie mehr über die Dienstprogramme in Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.  '
+ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557655"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633390"
 ---
-# <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von erweiterten eDiscovery (Classic)-Dienstprogrammen
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von Advanced eDiscovery (Classic)-Hilfsprogrammen
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -109,7 +109,7 @@ In einem Szenario mit mehreren Problemfällen kann für jedes Problem ein Berich
     
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Definieren von Fall-und Mandanten Einstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

@@ -12,23 +12,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 'Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem Security #a0 Compliance Center in Office 365 exportieren. Durch das Deaktivieren dieser Berichte kann die Downloadzeit beschleunigt und Speicherplatz gespart werden.'
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem Security & Compliance Center in Office 365 exportieren. Durch das Deaktivieren dieser Berichte kann die Downloadzeit beschleunigt und Speicherplatz gespart werden.
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595240"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633450"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deaktivieren von Berichten beim Exportieren von Inhaltssuchergebnissen
 
-Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security #a0 Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Bei diesen Berichten handelt es sich um die Datei "results. csv" und die Datei "Manifest. xml" (ausführliche Beschreibungen dieser Berichte finden Sie im Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Sie können dies tun, indem Sie die Windows-Registrierung auf dem Computer ändern, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt einbeziehen möchten, können Sie die Registrierungseinstellung bearbeiten. 
+Wenn Sie das eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security & Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Bei diesen Berichten handelt es sich um die Datei "results. csv" und die Datei "Manifest. xml" (ausführliche Beschreibungen dieser Berichte finden Sie im Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Sie können dies tun, indem Sie die Windows-Registrierung auf dem Computer ändern, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt einbeziehen möchten, können Sie die Registrierungseinstellung bearbeiten. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Erstellen von Registrierungseinstellungen zum Deaktivieren der Export Berichte
 
 Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebnisse mit einer Inhaltssuche exportieren.
   
-1. Schließen Sie das Office 365 eDiscovery-Export Tool, wenn es geöffnet ist.
+1. Schließen Sie das eDiscovery-Export Tool, wenn es geöffnet ist.
     
 2. Führen Sie einen oder beide der folgenden Schritte aus, je nachdem, welchen Exportbericht Sie deaktivieren möchten.
     
@@ -62,7 +62,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebni
 
 Wenn Sie die Berichte "results. csv" und "Manifest. xml" durch Erstellen der reg-Dateien im vorherigen Verfahren deaktiviert haben, können Sie diese Dateien bearbeiten, um einen Bericht erneut zu aktivieren, sodass er mit den Suchergebnissen exportiert wird. Führen Sie erneut das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebnisse mit einer Inhaltssuche exportieren.
   
-1. Schließen Sie das Office 365 eDiscovery-Export Tool, wenn es geöffnet ist.
+1. Schließen Sie das eDiscovery-Export Tool, wenn es geöffnet ist.
     
 2. Bearbeiten Sie eine oder beide der reg-Bearbeitungs Dateien, die Sie im vorherigen Verfahren erstellt haben.
     
@@ -128,11 +128,11 @@ Dies hängt von ihren spezifischen Anforderungen ab. Viele Organisationen benöt
   
  **Auf welchem Computer muss ich diese Funktion ausführen?**
   
- Sie müssen die Registrierungseinstellung auf einem lokalen Computer ändern, auf dem Sie das Office 365 eDiscovery-Export Tool ausführen. 
+ Sie müssen die Registrierungseinstellung auf einem lokalen Computer ändern, auf dem Sie das eDiscovery-Export Tool ausführen. 
   
  **Muss ich den Computer neu starten, nachdem ich diese Einstellung geändert habe?**
   
-Nein, Sie müssen den Computer nicht neu starten. Wenn das Office 365 eDiscovery-Export Tool jedoch aktiv ist, müssen Sie es schließen und neu starten, nachdem Sie die Registrierungseinstellung geändert haben.
+Nein, Sie müssen den Computer nicht neu starten. Wenn das eDiscovery-Export Tool jedoch aktiv ist, müssen Sie es schließen und neu starten, nachdem Sie die Registrierungseinstellung geändert haben.
   
  **Wird ein vorhandener Registrierungsschlüssel bearbeitet oder wird ein neuer Schlüssel erstellt?**
   

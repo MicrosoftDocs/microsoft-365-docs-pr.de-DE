@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634603"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632310"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
@@ -68,7 +68,7 @@ So identifizieren Sie Depotbank-Datenquellen:
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Schritt 3: Zuordnen zusätzlicher Datenquellen zu einer Depotstelle
 
-Je nachdem, welchen Fall Sie untersuchen, müssen Sie möglicherweise auch Postfächer suchen (und beibehalten), auf die eine bestimmte Depotbank zugegriffen haben kann, Office 365 Gruppen, auf die eine Depotbank derzeit gehört, oder auf Websites, auf die auch eine Depotbank zugegriffen hat. Zusätzlich zu den primären Depotdaten Quellen, die Sie im vorherigen Schritt angegeben haben, können Sie auch zusätzliche Office 365 Datenquellen mit einer Depotbank in dem Fall verknüpfen. 
+Je nachdem, welchen Fall Sie untersuchen, müssen Sie möglicherweise auch die Postfächer, auf die von einer bestimmten Depotbank zugegriffen wurde, Microsoft 365-Gruppen, auf denen eine Depotbank derzeit Mitglied ist, oder Websites, auf die ein depotverwalter zugegriffen hat, Durchsuchen (und beibehalten). Zusätzlich zu den primären Depotdaten Quellen, die Sie im vorherigen Schritt angegeben haben, können Sie auch zusätzliche Microsoft-Datenquellen mit einer Depotbank in dem Fall verknüpfen. 
 
 So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
 
@@ -76,14 +76,14 @@ So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
   
    ![Zuordnen zusätzlicher Datenquellen](../media/AddCustodianStep3.PNG)
 
-2. Auf der Flyout-Seite können Sie eine Datenquelle aus einem der folgenden Office 365 Dienste angeben:
+2. Auf der Flyout-Seite können Sie eine Datenquelle aus einem der folgenden Dienste angeben:
   
-   -  **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie das Suchfeld, um nach Postfächern zu suchen, die der Depotbank zugeordnet werden sollen. Zum Angeben von Postfächern, die der ausgewählten Depotbank zugewiesen werden sollen, suchen Sie im Suchfeld nach Benutzerpostfächern und Verteilergruppen. Sie können auch das zugeordnete Postfach für eine Office 365 Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   -  **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie das Suchfeld, um nach Postfächern zu suchen, die der Depotbank zugeordnet werden sollen. Zum Angeben von Postfächern, die der ausgewählten Depotbank zugewiesen werden sollen, suchen Sie im Suchfeld nach Benutzerpostfächern und Verteilergruppen. Sie können auch das zugeordnete Postfach für eine Microsoft 365-Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
         > [!NOTE]
         > Wenn Sie auf Benutzer, Gruppen oder Teams auswählen, um Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen oder Alias (mindestens 3 Zeichen) in das Suchfeld ein, um dieser Liste ein Postfach hinzuzufügen.
      
-     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um eine Liste der SharePoint-Websites in Ihrer Organisation anzuzeigen. Zum Zuordnen einer Website zur Depotbank können Sie eine Website in der Liste auswählen oder die URL einer anderen Website oder Website eingeben, die einer Office 365 Gruppe, einem Microsoft Team oder einem OneDrive-Konto zugeordnet ist.
+     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um eine Liste der SharePoint-Websites in Ihrer Organisation anzuzeigen. Zum Zuordnen einer Website zur Depotbank können Sie eine Website in der Liste auswählen oder die URL einer anderen Website oder Website eingeben, die einer Microsoft 365-Gruppe, einem Microsoft-Team oder einem OneDrive-Konto zugeordnet ist.
      
      - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, bei denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 

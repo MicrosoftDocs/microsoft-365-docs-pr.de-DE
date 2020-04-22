@@ -17,28 +17,28 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: In diesem Artikel erfahren Sie, wie Sie SharePoint Online IRM über Microsoft Azure Active Directory Rights Management Services (RMS) zum Schutz von SharePoint-Listen und-Dokumentbibliotheken verwenden.
-ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610622"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634777"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
 ## <a name="introduction"></a>Einführung
 
-In SharePoint Online wird der IRM-Schutz auf Dateien auf Listen-und Bibliotheksebene angewendet. Bevor Ihre Organisation den IRM-Schutz verwenden kann, müssen Sie zunächst die Rechteverwaltung einrichten. IRM verwendet den Azure Rights Management Service von Azure Information Protection, um Nutzungseinschränkungen zu verschlüsseln und zuzuweisen. Einige Office 365 Pläne umfassen Azure Rights Management, aber nicht alle. Weitere Informationen finden Sie [unter Support für Azure Rights Management in Office-Anwendungen und-Dienste](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
+In SharePoint Online wird der IRM-Schutz auf Dateien auf Listen-und Bibliotheksebene angewendet. Bevor Ihre Organisation den IRM-Schutz verwenden kann, müssen Sie zunächst die Rechteverwaltung einrichten. IRM verwendet den Azure Rights Management Service von Azure Information Protection, um Nutzungseinschränkungen zu verschlüsseln und zuzuweisen. Einige Microsoft 365-Pläne umfassen Azure Rights Management, aber nicht alle. Weitere Informationen finden Sie [unter Support für Azure Rights Management in Office-Anwendungen und-Dienste](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
   
 ## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Aktivieren des IRM-Diensts mithilfe von SharePoint Admin Center
 
-Bevor Ihre Organisation SharePoint-Listen und-Bibliotheken mit IRM schützen kann, müssen Sie zunächst den Rechteverwaltungsdienst für Ihre Organisation aktivieren. Weitere Informationen finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). Sie müssen ein Geschäfts-oder Schulkonto verwenden, das über Office 365 globale Administratorrechte verfügt, um den Rechteverwaltungsdienst zu aktivieren. Andernfalls können Sie IRM-Funktionen nicht mit SharePoint Online verwenden.
+Bevor Ihre Organisation SharePoint-Listen und-Bibliotheken mit IRM schützen kann, müssen Sie zunächst den Rechteverwaltungsdienst für Ihre Organisation aktivieren. Weitere Informationen finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). Sie müssen ein Geschäfts-oder Schulkonto verwenden, das über globale Administratorrechte verfügt, um den Rechteverwaltungsdienst zu aktivieren. Andernfalls können Sie IRM-Funktionen nicht mit SharePoint Online verwenden.
   
 Melden Sie sich nach dem Aktivieren des Rights Management-Diensts beim SharePoint Admin Center an, um IRM zu aktivieren.
   
-1. Melden Sie sich bei Office 365 als globaler Administrator oder SharePoint-Administrator an.
+1. Melden Sie sich als globaler Administrator oder SharePoint-Administrator an.
     
-2. Wählen Sie das Symbol für das App-Startfeld ![The app launcher icon in Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in der oberen linken Ecke und dann **Administrator** aus, um das Microsoft 365 Admin Center zu öffnen. (Wenn die Kachel „Administrator“ nicht angezeigt wird, verfügen Sie in Ihrem Unternehmen nicht über Office 365-Administratorberechtigungen.) 
+2. Wählen Sie das Symbol für das App-Startfeld ![The app launcher icon in Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in der oberen linken Ecke und dann **Administrator** aus, um das Microsoft 365 Admin Center zu öffnen. (Wenn die Kachel "admin" nicht angezeigt wird, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.) 
     
 3. Wählen Sie im linken Bereich **Admin Center** \>**SharePoint** aus.
     
@@ -57,7 +57,7 @@ Wenn Personen Dateien in einer IRM-fähigen Liste oder Bibliothek herunterladen,
   
 Sie können Dokumente in einer IRM-fähigen Bibliothek nicht mithilfe von Office in einem Browser erstellen oder bearbeiten. Stattdessen kann eine Person gleichzeitig IRM-verschlüsselte Dateien herunterladen und bearbeiten. Verwenden Sie das Einchecken und Auschecken, um die *gemeinsame Dokumenterstellung* oder die Erstellung für mehrere Benutzer zu verwalten. 
   
-Wenn Sie eine PDF-Datei aus einer IRM-geschützten Bibliothek herunterladen, erstellt Office 365 eine geschützte PDF-Datei. Die Dateierweiterung ändert sich nicht, die Datei ist jedoch geschützt. Zum Anzeigen dieser Datei benötigen Sie den Azure Information Protection-Viewer, den vollständigen Azure Information Protection-Client oder eine andere Anwendung, die das Anzeigen geschützter PDF-Dateien unterstützt. 
+Wenn Sie eine PDF-Datei aus einer IRM-geschützten Bibliothek herunterladen, erstellt Microsoft 365 eine geschützte PDF-Datei. Die Dateierweiterung ändert sich nicht, die Datei ist jedoch geschützt. Zum Anzeigen dieser Datei benötigen Sie den Azure Information Protection-Viewer, den vollständigen Azure Information Protection-Client oder eine andere Anwendung, die das Anzeigen geschützter PDF-Dateien unterstützt. 
   
 SharePoint Online unterstützt die Verschlüsselung der folgenden Dateitypen:
   

@@ -1,5 +1,5 @@
 ---
-title: Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
+title: Einrichten einer Richtlinie für das Archivieren und Löschen von Postfächern in Ihrer Organisation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erstellen Sie eine Archivierungs-und Löschrichtlinie, mit der Elemente automatisch in das Archivpostfach eines Benutzers verschoben werden.
+ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635559"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Einrichten einer Richtlinie für das Archivieren und Löschen von Postfächern in Ihrer Organisation
 
- In Office 365 können Administratoren eine Archivierungs-und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und Elemente automatisch aus dem Postfach löscht. Der Administrator erstellt eine Aufbewahrungsrichtlinie, die Postfächern zugewiesen ist, und verschiebt Elemente nach einem bestimmten Zeitraum in das Archivpostfach eines Benutzers und löscht außerdem Elemente aus dem Postfach, nachdem Sie eine bestimmte Verfallszeit erreicht haben. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden, und wenn dies geschieht, werden als Aufbewahrungstags bezeichnet. Aufbewahrungstags sind mit einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen ist. Ein Aufbewahrungs Tag wendet Aufbewahrungseinstellungen auf einzelne Nachrichten und Ordner im Postfach eines Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Nachricht das angegebene Beibehaltungsalter erreicht. Wenn eine Nachricht das Aufbewahrungs Alter erreicht, wird Sie entweder in das Archivpostfach des Benutzers verschoben oder gelöscht. 
+ In Microsoft 365 können Administratoren eine Archivierungs-und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und Elemente automatisch aus dem Postfach löscht. Der Administrator erstellt eine Aufbewahrungsrichtlinie, die Postfächern zugewiesen ist, und verschiebt Elemente nach einem bestimmten Zeitraum in das Archivpostfach eines Benutzers und löscht außerdem Elemente aus dem Postfach, nachdem Sie eine bestimmte Verfallszeit erreicht haben. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden, und wenn dies geschieht, werden als Aufbewahrungstags bezeichnet. Aufbewahrungstags sind mit einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen ist. Ein Aufbewahrungs Tag wendet Aufbewahrungseinstellungen auf einzelne Nachrichten und Ordner im Postfach eines Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Nachricht das angegebene Beibehaltungsalter erreicht. Wenn eine Nachricht das Aufbewahrungs Alter erreicht, wird Sie entweder in das Archivpostfach des Benutzers verschoben oder gelöscht. 
   
 In den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrichtlinie für eine fiktive Organisation namens "Alpine House" eingerichtet. Das Einrichten dieser Richtlinie umfasst die folgenden Aufgaben:
   
@@ -48,9 +48,9 @@ Sie können einige oder alle Schritte in diesem Artikel befolgen, um eine Archiv
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
+- Sie müssen ein globaler Administrator in Ihrer Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
--  Wenn Sie ein neues Benutzerkonto in Office 365 erstellen und dem Benutzer eine Exchange Online Lizenz zuweisen, wird automatisch ein Postfach für den Benutzer erstellt. Wenn das Postfach erstellt wird, wird ihm automatisch eine standardmäßige Aufbewahrungsrichtlinie zugewiesen, die als Standard-MRM-Richtlinie bezeichnet wird. In diesem Artikel erstellen Sie eine neue Aufbewahrungsrichtlinie und weisen diese dann den Benutzerpostfächern zu, wobei die standardmäßige MRM-Richtlinie ersetzt wird. Einem Postfach kann jeweils nur eine Aufbewahrungsrichtlinie zugewiesen sein.
+-  Wenn Sie ein neues Benutzerkonto erstellen und dem Benutzer eine Exchange Online Lizenz zuweisen, wird automatisch ein Postfach für den Benutzer erstellt. Wenn das Postfach erstellt wird, wird ihm automatisch eine standardmäßige Aufbewahrungsrichtlinie zugewiesen, die als Standard-MRM-Richtlinie bezeichnet wird. In diesem Artikel erstellen Sie eine neue Aufbewahrungsrichtlinie und weisen diese dann den Benutzerpostfächern zu, wobei die standardmäßige MRM-Richtlinie ersetzt wird. Einem Postfach kann jeweils nur eine Aufbewahrungsrichtlinie zugewiesen sein.
     
 - Weitere Informationen zu Aufbewahrungstags und Aufbewahrungsrichtlinien in Exchange Online finden Sie unter [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/p/?LinkId=404424).
     
@@ -63,7 +63,7 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your global administrator account.
+2. Melden Sie sich mit ihrem globalen Administratorkonto an.
     
     
 3. Wechseln Sie im Security & Compliance Center zu **Information Governance** \> **Archive**.
@@ -248,7 +248,7 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online
     $UserCredential = Get-Credential
     ```
 
-    Geben Sie im Dialogfeld **Windows PowerShell Anmeldeinformationen** den Benutzernamen und das Kennwort für das Office 365 globale Administratorkonto ein, und klicken Sie dann auf **OK**.
+    Geben Sie im Dialogfeld **Windows PowerShell Anmeldeinformationen** den Benutzernamen und das Kennwort für Ihr globales Administratorkonto ein, und klicken Sie dann auf **OK**.
     
 2. Führen Sie den folgenden Befehl aus.
     
@@ -311,7 +311,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     
 - In der folgenden Tabelle finden Sie weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die durch Befolgen der Schritte in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Typ**|
+    |**Aufbewahrungstags**|**Funktionsweise dieses Tags**|**Integriert oder Benutzerdefiniert?**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre Umstellung auf Archiv  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpines Haus 7 Jahre dauerhaft löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |

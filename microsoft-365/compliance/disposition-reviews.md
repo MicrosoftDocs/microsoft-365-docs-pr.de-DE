@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633064"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
->*[Microsoft 365-Lizenzierungs Leit Faden für die Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere Gründe, warum Sie diesen Inhalt möglicherweise überprüfen möchten, um zu entscheiden, ob er sicher gelöscht werden kann ("verworfen"). Beispielsweise müssen Sie Folgendes tun:
   
@@ -37,7 +37,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
     
 - Zurückgeben der Inhalte an Clients oder übertragen an eine andere Organisation.
     
-Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security & Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
+Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Security & Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
   
 - Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
@@ -53,7 +53,7 @@ Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im M
     
 - Bearbeiter können entweder ausstehende oder abgeschlossene Dispositionen anzeigen und diese Liste als CSV-Datei exportieren.
 
-Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Office 365 Gruppen enthalten. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
+Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen umfassen. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
   
 ![Seite "Dispositions" im Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Overview 
 ![Aufbewahrungseinstellungen für eine Bezeichnung](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Wenn Sie die Option " **diese Personen Benachrichtigen" angeben, wenn Elemente zur Überarbeitung verfügbar sind**, geben Sie einen Benutzer an. Für diese Option werden Office 365 Gruppen nicht unterstützt.
+> Wenn Sie die Option " **diese Personen Benachrichtigen" angeben, wenn Elemente zur Überarbeitung verfügbar sind**, geben Sie einen Benutzer an. Microsoft 365-Gruppen werden für diese Option nicht unterstützt.
 
 ## <a name="disposing-content"></a>Freigeben von Inhalten
 
@@ -95,7 +95,7 @@ Ein Prüfer kann auch den Link verwenden, um das Dokument an seinem ursprünglic
   
 Beachten Sie, dass die e-Mail-Benachrichtigungen wöchentlich automatisch an Prüfer gesendet werden. Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, kann es bis zu sieben Tage dauern, bis die Bearbeiter die e-Mail-Benachrichtigung erhalten, dass der Inhalt auf die Disposition wartet.
   
-Beachten Sie außerdem, dass alle Dispositionsaktionen überwacht werden. Um dies sicherzustellen, müssen Sie die Überwachung mindestens einen Tag vor der ersten Dispositionsaktion aktivieren – Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 &amp; Security Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Beachten Sie außerdem, dass alle Dispositionsaktionen überwacht werden. Um dies sicherzustellen, müssen Sie die Überwachung mindestens einen Tag vor der ersten Dispositionsaktion aktivieren – Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im &amp; Security Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
 ## <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
@@ -105,7 +105,7 @@ Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
 
 - Da es sich bei dem zugrunde liegenden Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt, müssen Sie Benutzer diese Rolle mithilfe des [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center)anstatt mithilfe der Seite **Berechtigungen** im Security & Compliance Center zuweisen. Anweisungen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Office 365 Gruppen werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer oder e-Mail-Benutzer zu.
+- Microsoft 365-Gruppen werden für diese Rolle nicht unterstützt. Weisen Sie stattdessen Benutzerpostfächer oder e-Mail-Benutzer zu.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Wie lange, bis verworfene Inhalte endgültig gelöscht werden
 

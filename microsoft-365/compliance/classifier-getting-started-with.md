@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
+title: Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 4d11fcf4e1437641cb73510d341d299ce3695938
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 6ff13a8d33168e5ce46ef1dab5b1d27461f17c48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193523"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636303"
 ---
-# <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit lernbaren Klassifizierungen (Vorschau)
+# <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
 Das klassifizieren und kennzeichnen von Inhalten, damit es geschützt und ordnungsgemäß behandelt werden kann, ist der Ausgangspunkt für die Informationsschutz Disziplin. Microsoft 365 verfügt über drei Möglichkeiten zum Klassifizieren von Inhalten.
 
@@ -73,7 +73,7 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 |Name der Sprache|||||
 |---------|---------|---------|---------|---------|
-|ActionScript|C        |C #       |C++     |Clojure  |
+|ActionScript|C        |C#       |C++     |Clojure  |
 |CoffeeScript|CSS     |OK       |Haskell |HTML     |
 |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
 |Perl     |PHP      |Python   |R        |Ruby     |

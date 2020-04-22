@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren bearbeiten oder entfernen.
-ms.openlocfilehash: ef534f49c92abf1500b72b0d490ab9f22a48a680
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634843"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637887"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren
 
@@ -38,7 +38,7 @@ Nachdem Sie [Richtlinien für Informationsbarrieren definiert](information-barri
 |[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)     |Lesen Sie diesen Artikel, wenn Sie unerwartete Probleme mit Informationsbarrieren ausführen.         |
 
 > [!IMPORTANT]
-> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit der Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="edit-user-account-attributes"></a>Bearbeiten von Benutzerkonto Attributen
 

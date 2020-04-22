@@ -1,6 +1,6 @@
 ---
 title: Aufsichtsrichtlinien
-description: Informationen zu Aufsichtsrichtlinien in Office 365
+description: Weitere Informationen zu Aufsichtsrichtlinien
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604082"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626969"
 ---
-# <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
+# <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
-Aufsichtsrichtlinien in Office 365 ermöglichen es Ihnen, Mitarbeiter Kommunikationen zur Untersuchung durch designierte Bearbeiter zu erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation erfassen. Bearbeiter können dann die Nachrichten überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation übereinstimmen und diese mit dem Klassifizierungs lösen.
+Mit Aufsichtsrichtlinien in Microsoft 365 können Sie Mitarbeiter Kommunikationen zur Untersuchung durch designierte Bearbeiter erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation erfassen. Bearbeiter können dann die Nachrichten überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation übereinstimmen und diese mit dem Klassifizierungs lösen.
 
 Mithilfe dieser Richtlinien können Sie auch viele moderne Anforderungen an die Compliance bewältigen, darunter:
 
@@ -36,7 +36,7 @@ Mithilfe dieser Richtlinien können Sie auch viele moderne Anforderungen an die 
 - Die zunehmende Menge an Nachrichtendaten
 - Regulatorische Durchsetzung & das Risiko von Geldbußen
 
-In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Office 365 unterstützt die Trennung zwischen der Konfiguration von Aufsichtsrichtlinien Features und der Konfiguration von Richtlinien für aufgezeichnete Kommunikationen. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
+In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Microsoft 365 unterstützt die Trennung zwischen der Konfiguration von Aufsichtsrichtlinien Features und der Konfiguration von Richtlinien für aufgezeichnete Kommunikationen. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
 
 Eine kurze Übersicht über Aufsichtsrichtlinien finden Sie im [Video zur Aufsichtsrichtlinie](https://youtu.be/C3Y8WZ7o_dI) im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -44,13 +44,13 @@ Weitere Informationen zu Verbesserungen und Verfügbarkeit der Überwachungsfunk
 
 Möchten Sie die neue Erfahrung mit der Kommunikations Konformität in Microsoft 365 testen? Sehen Sie sich die neuen und verbesserten Features an, die in [Communication Compliance in Microsoft 365](communication-compliance.md)zur Verfügung stehen.
 
-## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
+## <a name="transitioning-from-supervision"></a>Übergang von der Überwachung
 
-Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Übergang zu [Kommunikationsrichtlinien in Microsoft 365](communication-compliance.md) planen, müssen diese wichtigen Punkte verstehen:
+Organisationen, die Aufsichtsrichtlinien und die Planung für den Übergang zu [Kommunikationsrichtlinien in Microsoft 365](communication-compliance.md) verwenden, müssen diese wichtigen Punkte verstehen:
 
-- Die Überwachungslösung in Office 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Für Organisationen, die von Aufsichtsrichtlinien auf die Konformität mit der Kommunikation umstellen, wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die dieselben *Bedingungen* wie die vorhandenen Aufsichtsrichtlinien haben, um neue Untersuchungen und Korrektur Verbesserungen zu ermöglichen. Beim Übergang zur Kommunikations Kompatibilität in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Beaufsichtigung in Office 365 zu exportieren, wenn Sie über interne Compliance-Aufbewahrungsrichtlinien Anforderungen verfügen.
+- Die Überwachungslösung in Microsoft 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Für Organisationen, die von Aufsichtsrichtlinien auf die Konformität mit der Kommunikation umstellen, wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die dieselben *Bedingungen* wie die vorhandenen Aufsichtsrichtlinien haben, um neue Untersuchungen und Korrektur Verbesserungen zu ermöglichen. Beim Übergang zur Kommunikations Kompatibilität in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Beaufsichtigung zu exportieren, wenn Sie über interne Compliance-Aufbewahrungsrichtlinien Anforderungen verfügen.
 - In der Zwischenzeit können Organisationen beide Lösungen nebeneinander verwenden, bis Sie vollständig migriert wurden, aber Richtlinien, die in jeder Lösung verwendet werden, müssen *eindeutige Richtliniennamen*aufweisen. Gruppen und benutzerdefinierte Schlüsselwörter Wörterbücher können während der Übergangsphase Zwischenlösungen freigegeben werden.
-- Nachrichten, die in Office 365 Richtlinien Übereinstimmungen gespeichert wurden, können nicht in der Kommunikations Kompatibilität in Microsoft 365 verschoben oder freigegeben werden.
+- Nachrichten, die in der Überwachung in Microsoft 365-Richtlinien Übereinstimmungen gespeichert wurden, können in Microsoft 365 nicht in die Kommunikations Kompatibilität verschoben oder weitergegeben werden.
 
 Informationen zur Beaufsichtigung in Office 365 finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap) für Vorsorge Informationen.
 
@@ -78,7 +78,7 @@ Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien defin
 
 ### <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
-Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
+Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
 
 >[!IMPORTANT]
 >Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -91,24 +91,24 @@ Wenn Sie eine Aufsichtsrichtlinie erstellen, müssen Sie festlegen, wer die Übe
 
 Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überwachen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
-Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
+Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
 
 ### <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 
 Mit Aufsichtsrichtlinien können Sie festlegen, dass Nachrichten in einer oder mehreren der folgenden Kommunikationsplattformen überwacht werden:
 
-- **Exchange-e-Mail:** Postfächer, die auf Exchange Online als Teil Ihres Office 365 Abonnements gehostet werden, sind für die Nachrichtenüberwachung geeignet. E-Mails und Anhänge, die Aufsichtsrichtlinien Bedingungen entsprechen, stehen sofort für die Überwachung und in Aufsichtsberichten zur Verfügung. Unterstützte Anlagentypen für die Überwachung sind identisch mit den [Dateitypen, die für Exchange-Nachrichtenfluss Regelinhalts Inspektionen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)werden.
+- **Exchange-e-Mail:** Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberwachung berechtigt. E-Mails und Anhänge, die Aufsichtsrichtlinien Bedingungen entsprechen, stehen sofort für die Überwachung und in Aufsichtsberichten zur Verfügung. Unterstützte Anlagentypen für die Überwachung sind identisch mit den [Dateitypen, die für Exchange-Nachrichtenfluss Regelinhalts Inspektionen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)werden.
 
 - **Microsoft Teams:** Chatnachrichten und zugehörige Anlagen sowohl in öffentlichen als auch privaten Microsoft Teams-Kanälen und einzelnen Chats können überwacht werden. Microsoft Teams-Chats entsprechende Aufsichtsrichtlinien Bedingungen werden einmal alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
     - **Für Teams-Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Dies gilt für 1-zu-1-oder 1: n-Benutzer/Chat-Beziehungen.
-    - **Für Teams-Kanal Kommunikation:** Weisen Sie alle Microsoft Team-Kanal oder Office 365 Gruppe, die Sie überwachen möchten, die einen bestimmten Benutzer für die Aufsichtsrichtlinie enthält. Wenn Sie denselben Benutzer anderen Microsoft Teams-Kanälen oder Office 365 Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Aufsichtsrichtlinie hinzufügen.
+    - **Für Teams-Kanal Kommunikation:** Weisen Sie jede Microsoft Team Channel-oder Microsoft 365-Gruppe zu, die Sie überwachen möchten, die einen bestimmten Benutzer für die Aufsichtsrichtlinie enthält. Wenn Sie denselben Benutzer anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Aufsichtsrichtlinie hinzufügen.
 
 - **Skype for Business Online:** Chat Nachrichten und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Aufsichtsrichtlinien Bedingungen entsprechen, werden einmal alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
     - **Für Skype for Business Online Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Dies gilt für 1-zu-1-oder 1: n-Benutzer/Chat-Beziehungen.
 
-- **Drittanbieterquellen:** Sie können die Kommunikation von Drittanbieter-Quellen (wie Facebook oder Dropbox) für Daten überwachen, die in Office 365 Postfächer in Ihrer Organisation importiert werden. [Hier erfahren Sie, wie Sie drittanbieterdaten in Office 365 importieren](archiving-third-party-data.md).
+- **Drittanbieterquellen:** Sie können die Kommunikation von Drittanbieter-Quellen (wie Facebook oder Dropbox) für Daten überwachen, die in Postfächer in Ihrer Organisation importiert werden. [Hier erfahren Sie, wie Sie drittanbieterdaten importieren](archiving-third-party-data.md).
 
 Auf diesen Plattformen erfasste Kommunikationen werden für jede Richtlinie standardmäßig sieben Jahre lang aufbewahrt, selbst wenn Benutzer Ihre Organisation verlassen und Ihr Postfach gelöscht wird.
 
@@ -124,7 +124,7 @@ Standardmäßig wird die Bedingung " **Direction** " angezeigt und kann nicht en
 
 #### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsichtsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen Office 365 [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
+Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsichtsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen der [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
 
 - Finanzwesen
 - Medizin und Gesundheit
@@ -183,7 +183,7 @@ Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu üb
   
 ##### <a name="enter-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
-Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 alle Bedingungen zusammen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall wären also die folgenden drei Bedingungen erfüllt:
+Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall wären also die folgenden drei Bedingungen erfüllt:
   
 - **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade"
 
@@ -263,7 +263,7 @@ Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag
   
 |**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
-| **Nicht überprüft** | Die Anzahl der e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Dashboard für die Office 365 Aufsicht.
+| **Nicht überprüft** | Die Anzahl der e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Microsoft 365-Aufsichts Dashboard.
 | **Compliant** | Die Anzahl der überprüften und als konform gekennzeichneten e-Mails. Diese Nachrichten benötigen noch eine Lösung. |
 | **Fragwürdig** | Die Anzahl der überprüften und fragwürdig markierten e-Mails. Dient als Kennzeichnung anderer Bearbeiter, um zu überprüfen, ob eine e-Mail-Konformität untersucht werden muss. Diese Nachrichten benötigen noch eine Lösung. |
 | **Nicht kompatibel (aktiv)** | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |
@@ -275,11 +275,11 @@ Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag
 >[!NOTE]
 >Aufsichtsrichtlinien müssen vor der Anzeige in Berichten eingerichtet werden. Wenn Richtlinien gelöscht werden, werden Verlaufsdaten weiterhin angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
 
-## <a name="audit"></a>Überwachungs
+## <a name="audit"></a>Überwachung
 
 In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Dies kann eine Zusammenfassung aller Aufsichtsaktivitäten sein, die einer definierten Richtlinie zugeordnet sind, oder wenn sich eine Aufsichtsrichtlinie ändert. Aufsichtsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder durch ihre Aufsichtsrichtlinien überwachten Aktion bieten einen Nachweis über Aufsichtsverfahren.
 
-Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den einheitlichen Office 365 Überwachungsprotokollen zur Verfügung gestellt:
+Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den einheitlichen Überwachungsprotokollen zur Verfügung gestellt:
 
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|

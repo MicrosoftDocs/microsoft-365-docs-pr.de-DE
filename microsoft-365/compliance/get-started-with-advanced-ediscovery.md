@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Advanced eDiscovery in Microsoft 365 beginnen. Nachdem Sie einige kurze Schritte ausgeführt haben, ist das erweiterte eDiscovery-Tooleinsatz fähig. Der erste Schritt besteht darin, einen Fall zu erstellen und dann erweiterte eDiscovery-Funktionen und-Funktionen zu verwenden.
-ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551126"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632476"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -33,7 +33,7 @@ In diesem Artikel werden die erforderlichen Schritte zum Einrichten von Advanced
 
 Für die Lizenzierung für Advanced eDiscovery ist das entsprechende Organisations Abonnement und die Lizenzierung pro Benutzer erforderlich.
 
-- **Organisations Abonnement:** Um auf Advanced eDiscovery im Microsoft 365 Compliance Center oder im Office 365 Security & Compliance Center zuzugreifen, muss Ihre Organisation über eine der folgenden Funktionen verfügen:
+- **Organisations Abonnement:** Um auf Advanced eDiscovery im Microsoft 365 Compliance Center oder im Security & Compliance Center zuzugreifen, muss Ihre Organisation über eine der folgenden Funktionen verfügen:
 
   - Microsoft 365 E5- oder Office 365 E5-Abonnement
   
@@ -41,7 +41,7 @@ Für die Lizenzierung für Advanced eDiscovery ist das entsprechende Organisatio
 
   - Microsoft 365 E3-Abonnement mit E5 eDiscovery und Überwachungs-Add-on
 
-  Wenn Sie keinen vorhandenen Microsoft 365 E5-Plan haben und Advanced eDiscovery ausprobieren möchten, können Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Office 365-Abonnement hinzufügen oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 E5 registrieren.
+  Wenn Sie keinen vorhandenen Microsoft 365 E5-Plan haben und Advanced eDiscovery testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 E5 registrieren.
 
 - **Lizenzierung pro Benutzer:** Wenn Sie einen Benutzer als depotverwalter in einem eDiscovery-vorab Fall hinzufügen möchten, muss diesem Benutzer je nach Ihrem Organisations Abonnement eine der folgenden Lizenzen zugewiesen sein:
 
@@ -56,7 +56,7 @@ Für die Lizenzierung für Advanced eDiscovery ist das entsprechende Organisatio
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Schritt 2: Zuweisen von eDiscovery-Berechtigungen
 
-Um auf Advanced eDiscovery zuzugreifen oder als Mitglied eines erweiterten eDiscovery-Falls hinzugefügt zu werden, muss einem Benutzer die entsprechenden Berechtigungen zugewiesen werden. Ein Benutzer muss insbesondere als Mitglied der Rollengruppe "eDiscovery-Manager" im Office 365 Security & Compliance Center hinzugefügt werden. Mitglieder dieser Rollengruppe können erweiterte eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungen und inhaltsspeicherorte in der Warteschleife platzieren, Benachrichtigungen für legale Aufbewahrungen verwalten, Suchvorgänge in einem Fall erstellen und bearbeiten, Suchergebnisse zu einem Überprüfungs hinzufügen, Daten in einem Überprüfungs Satzes analysieren und aus einem erweiterten eDiscovery-Fall exportieren und herunterladen.
+Um auf Advanced eDiscovery zuzugreifen oder als Mitglied eines erweiterten eDiscovery-Falls hinzugefügt zu werden, müssen einem Benutzer die entsprechenden Berechtigungen zugewiesen werden. Insbesondere muss ein Benutzer als Mitglied der eDiscovery-Manager-Rollengruppe im Security & Compliance Center hinzugefügt werden. Mitglieder dieser Rollengruppe können erweiterte eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungen und inhaltsspeicherorte in der Warteschleife platzieren, Benachrichtigungen für legale Aufbewahrungen verwalten, Suchvorgänge in einem Fall erstellen und bearbeiten, Suchergebnisse zu einem Überprüfungs hinzufügen, Daten in einem Überprüfungs Satzes analysieren und aus einem erweiterten eDiscovery-Fall exportieren und herunterladen.
 
 Führen Sie die folgenden Schritte aus, um Benutzer zur eDiscovery-Manager-Rollengruppe hinzuzufügen:
 
@@ -145,7 +145,7 @@ Um den Einstieg in die Verwendung von Advanced eDiscovery zu erleichtern, finden
   
    - Sie können Depotdaten aufbewahren. Dadurch werden Daten beibehalten, die für den Fall während der Untersuchung relevant sein können.
   
-   - Sie können einer Depotbank andere Datenquellen zuordnen (beispielsweise können Sie eine SharePoint-Website oder Office 365 Gruppe mit einer Depotbank verknüpfen), damit diese Daten neu indiziert, gespeichert und durchsucht werden können, genauso wie die Daten im Postfach des Depotbank-oder OneDrive-Kontos.
+   - Sie können einer Depotbank andere Datenquellen zuordnen (beispielsweise können Sie eine SharePoint-Website oder eine Microsoft 365-Gruppe mit einer Depotbank verknüpfen), damit diese Daten neu indiziert, gespeichert und durchsucht werden können, genauso wie die Daten im Postfach des Depotbank-oder OneDrive-Kontos.
 
    - Sie können den [Kommunikations Workflow](managing-custodian-communications.md) in Advanced eDiscovery verwenden, um eine rechtliche Aufbewahrungs Benachrichtigung an Verwalter zu senden.
 

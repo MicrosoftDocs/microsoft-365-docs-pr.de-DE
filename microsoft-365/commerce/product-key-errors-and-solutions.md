@@ -23,12 +23,12 @@ ms.assetid: 88d337ab-e7b1-43eb-a25e-7d6204e91099
 ROBOTS: NOINDEX
 description: 'In diesem Artikel erfahren Sie, wie Sie Probleme beheben können, die Sie beim Eingeben des Product Keys für Microsoft 365 for Business bewältigen müssen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5ab085a743bfabbb840816879914fd58adccf613
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a9a72921ea18cdaa2603e300cf3c18a52e3116ab
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632695"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708119"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Probleme mit Ihrem Product Key für Microsoft 365 for Business?
 
@@ -42,7 +42,7 @@ Wenn beim Versuch, einen Product Key für **Microsoft 365 for Business**einzulö
 
 | Angezeigte Fehlermeldung bei Eingabe des Product Keys... | Aktion |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Leider ist dieser Product Key ungültig. Wiederholen Sie die Eingabe. Wenn Ihr Product Key für die Microsoft 365 Personal-oder Microsoft 365-Produktfamilie gilt, lösen Sie ihn bei Office.com/Setup ein. " <br/><br/>Wenn Sie mit Office 365 Solo in Japan arbeiten: "Sorry, dies ist ein ungültiger Product Key. Wiederholen Sie die Eingabe. Wenn Ihr Product Key für Microsoft 365 Personal ist, lösen Sie ihn bei Office.com/Setup ein. " | Wenn Sie [Microsoft 365 Family oder Personal](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx)einrichten, müssen Sie Ihren Product Key bei [https://www.office.com/setup](https://www.office.com/setup)einlösen. Als Geschäftskunde sollten Sie die Ziffern und Zeichen sorgfältig überprüfen, die Sie eingeben. |
+| "Leider ist dieser Product Key ungültig. Wiederholen Sie die Eingabe. Wenn Ihr Product Key für die Microsoft 365 Personal-oder Microsoft 365-Produktfamilie gilt, lösen Sie ihn bei Office.com/Setup ein. " <br/><br/>Wenn Sie mit Office 365 Solo in Japan arbeiten: "Sorry, dies ist ein ungültiger Product Key. Wiederholen Sie die Eingabe. Wenn Ihr Product Key für Office 365 Solo ist, lösen Sie ihn bei Office.com/Setup ein. " | Wenn Sie [Microsoft 365 Family oder Personal](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx)einrichten, müssen Sie Ihren Product Key bei [https://www.office.com/setup](https://www.office.com/setup)einlösen. Als Geschäftskunde sollten Sie die Ziffern und Zeichen sorgfältig überprüfen, die Sie eingeben. |
 | "Der eingegebene Product Key ist ungültig. Wiederholen Sie die Eingabe." Oder: "Dieser Product Key ist ungültig. Bitte geben Sie einen anderen Product Key ein." | Überprüfen Sie sorgfältig die eingegebenen Zahlen und Zeichen. Bei 0 und o, 5 und S, I und l usw. können sich Fehler ergeben. Wenn das Problem weiterhin besteht, wenden Sie sich an den Händler, bei dem Sie Ihren Product Key erworben haben. |
 | "Diesen Product Key haben Sie bereits eingegeben. Bitte geben Sie einen anderen Product Key ein." | Überprüfen Sie die schon eingegebenen Product Keys, um zu ermitteln, ob der Product Key bereits verwendet wurde. Wenn Sie ein Abonnement mithilfe eines Product Keys verlängern, müssen Sie einen neuen und noch nicht genutzten Product Key verwenden.  <br/><br/>Müssen Sie einen neuen Product Key erwerben? Besuchen Sie den [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) oder einem Drittanbieterhändler, oder (wenn Sie mit einem Partner zusammenarbeiten) wenden Sie sich an Ihren Partner.  <br/><br/>Wenn das Problem weiter besteht, [wenden Sie sich an den Support](../admin/contact-support-for-business-products.md). Wenn Sie mit einem Partner arbeiten, wenden Sie sich wegen Product Key-Support an Ihren Partner. |
 | "Der eingegebene Product Key ist abgelaufen. Bitte geben Sie einen anderen Product Key ein." | Zum Verlängern eines aktuellen Abonnements oder zum Aktivieren eines neuen Abonnements müssen Sie einen neuen und noch nicht genutzten Product Key verwenden.<br/><br/>Müssen Sie einen neuen Product Key erwerben? Besuchen Sie den [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) oder einem Drittanbieterhändler, oder (wenn Sie mit einem Partner zusammenarbeiten) wenden Sie sich an Ihren Partner.   |

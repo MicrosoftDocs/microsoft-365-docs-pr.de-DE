@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche Protect in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: dd69266cccb1d04bc9ed3938b16bac45ca68b4a9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635885"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -30,7 +30,7 @@ Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschl
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Verwalten, ob sich Google-, Yahoo-und Microsoft-Konto Empfänger mit diesen Konten beim Office 365 Nachrichten Verschlüsselungs Portal anmelden können
 
-Wenn Sie die neuen Office 365 Nachrichten Verschlüsselungsfunktionen einrichten, können Benutzer in Ihrer Organisation Nachrichten an Empfänger senden, die sich außerhalb Ihrer Office 365 Organisation befinden. Wenn der Empfänger eine *soziale ID* wie ein Google-Konto, ein Yahoo-Konto oder ein Microsoft-Konto verwendet, kann sich der Empfänger beim OM-Portal mit einer sozialen ID anmelden. Wenn Sie möchten, können Sie festlegen, dass Empfänger keine sozialen IDs für die Anmeldung beim OM-Portal verwenden dürfen.
+Wenn Sie die neuen Office 365 Nachrichten Verschlüsselungsfunktionen einrichten, können Benutzer in Ihrer Organisation Nachrichten an Empfänger außerhalb Ihrer Organisation senden. Wenn der Empfänger eine *soziale ID* wie ein Google-Konto, ein Yahoo-Konto oder ein Microsoft-Konto verwendet, kann sich der Empfänger beim OM-Portal mit einer sozialen ID anmelden. Wenn Sie möchten, können Sie festlegen, dass Empfänger keine sozialen IDs für die Anmeldung beim OM-Portal verwenden dürfen.
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>So verwalten Sie, ob Empfänger soziale IDs verwenden können, um sich beim OM-Portal anzumelden
   
@@ -60,7 +60,7 @@ Wenn der Empfänger einer Nachricht, die von OM verschlüsselt wurde, Outlook ni
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>So verwalten Sie, ob OM einen einmal Durchlaufcode generiert
   
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet "OMEConfiguration" mit dem Parameter "OTPEnabled" aus:
 
@@ -86,7 +86,7 @@ Als Administrator können Sie steuern, ob diese Schaltfläche Endbenutzern angez
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>So verwalten Sie, ob die Schaltfläche Verschlüsseln in Outlook im Internet angezeigt wird
   
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet "IRMConfiguration" mit dem-SimplifiedClientAccessEnabled-Parameter aus:
 
@@ -108,7 +108,7 @@ Als Administrator können Sie steuern, ob diese Schaltfläche Endbenutzern angez
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Aktivieren der dienstseitigen Entschlüsselung von e-Mail-Nachrichten für Benutzer von IOS Mail App
 
-Die IOS Mail-App kann Nachrichten, die mit Office 365 Nachrichtenverschlüsselung geschützt sind, nicht entschlüsseln. Als Office 365 Administrator können Sie die dienstseitige Entschlüsselung für Nachrichten anwenden, die an die IOS-Mail-App übermittelt werden. Wenn Sie sich für die Verwendung der dienstseitigen Entschlüsselung entscheiden, sendet der Dienst eine entschlüsselte Kopie der Nachricht an das IOS-Gerät. Das Clientgerät speichert eine entschlüsselte Kopie der Nachricht. Die Nachricht behält auch Informationen zu Nutzungsrechten bei, obwohl die IOS-Mail-App keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Der Benutzer kann die Nachricht auch dann kopieren oder ausdrucken, wenn er ursprünglich nicht über die Rechte dazu verfügt. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, für die der Office 365-e-Mail-Server erforderlich ist, beispielsweise das Weiterleiten der Nachricht, wird die Aktion vom Server nicht zugelassen, wenn der Benutzer ursprünglich nicht über das Recht zum Verwenden des Benutzers verfügt. Endbenutzer können jedoch die Verwendungseinschränkung "nicht weiterleiten" umgehen, indem Sie die Nachricht von einem anderen Konto innerhalb der IOS-Mail-App weiterleiten. Unabhängig davon, ob Sie die dienstseitige Entschlüsselung von e-Mails einrichten, können Anlagen für verschlüsselte und Rechte geschützte Nachrichten nicht in der IOS-Mail-App angezeigt werden.
+Die IOS Mail-App kann Nachrichten, die mit Office 365 Nachrichtenverschlüsselung geschützt sind, nicht entschlüsseln. Als Microsoft 365-Administrator können Sie dienstseitige Entschlüsselung für Nachrichten anwenden, die an die IOS-Mail-App übermittelt werden. Wenn Sie sich für die Verwendung der dienstseitigen Entschlüsselung entscheiden, sendet der Dienst eine entschlüsselte Kopie der Nachricht an das IOS-Gerät. Das Clientgerät speichert eine entschlüsselte Kopie der Nachricht. Die Nachricht behält auch Informationen zu Nutzungsrechten bei, obwohl die IOS-Mail-App keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Der Benutzer kann die Nachricht auch dann kopieren oder ausdrucken, wenn er ursprünglich nicht über die Rechte dazu verfügt. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, bei der der Microsoft 365-e-Mail-Server erforderlich ist, beispielsweise das Weiterleiten der Nachricht, wird die Aktion vom Server nicht zugelassen, wenn der Benutzer ursprünglich nicht über das Recht zum Verwenden der Anwendung verfügt. Endbenutzer können jedoch die Verwendungseinschränkung "nicht weiterleiten" umgehen, indem Sie die Nachricht von einem anderen Konto innerhalb der IOS-Mail-App weiterleiten. Unabhängig davon, ob Sie die dienstseitige Entschlüsselung von e-Mails einrichten, können Anlagen für verschlüsselte und Rechte geschützte Nachrichten nicht in der IOS-Mail-App angezeigt werden.
   
 Wenn Sie nicht zulassen, dass entschlüsselte Nachrichten an Benutzer von IOS-Mail-apps gesendet werden, erhalten Benutzer eine Nachricht, die besagt, dass Sie nicht über die Berechtigung zum Anzeigen der Nachricht verfügen. Standardmäßig ist die dienstseitige Entschlüsselung von e-Mail-Nachrichten nicht aktiviert.
   
@@ -116,7 +116,7 @@ Weitere Informationen und eine Übersicht über die Clientumgebung finden Sie un
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>So verwalten Sie, ob Benutzer von IOS-Mail-apps Nachrichten anzeigen können, die durch Office 365 Nachrichtenverschlüsselung geschützt sind
   
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet "ActiveSyncOrganizations" mit dem Parameter "AllowRMSSupportForUnenlightenedApps" aus:
 
@@ -141,19 +141,19 @@ Weitere Informationen und eine Übersicht über die Clientumgebung finden Sie un
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Aktivieren der dienstseitigen Entschlüsselung von e-Mail-Anlagen für Webbrowser-e-Mail-Clients
 
-Normalerweise werden Anlagen automatisch verschlüsselt, wenn Sie Office 365 Nachrichtenverschlüsselung verwenden. Als Office 365 Administrator können Sie die dienstseitige Entschlüsselung für e-Mail-Anlagen anwenden, die von Benutzern aus einem Webbrowser heruntergeladen werden.
+Normalerweise werden Anlagen automatisch verschlüsselt, wenn Sie Office 365 Nachrichtenverschlüsselung verwenden. Als Administrator können Sie dienstseitige Entschlüsselung für e-Mail-Anlagen anwenden, die von Benutzern aus einem Webbrowser heruntergeladen werden.
   
-Wenn Sie die dienstseitige Entschlüsselung verwenden, sendet der Dienst eine entschlüsselte Kopie der Datei an das Gerät. Die Nachricht ist weiterhin verschlüsselt. Die e-Mail-Anlage behält auch Informationen zu Nutzungsrechten, obwohl der Browser keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Der Benutzer kann die e-Mail-Anlage auch dann kopieren oder ausdrucken, wenn er ursprünglich nicht über die Rechte dazu verfügt. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, für die der Office 365-e-Mail-Server erforderlich ist, beispielsweise das Weiterleiten der Anlage, wird die Aktion vom Server nicht zugelassen, wenn der Benutzer ursprünglich nicht über das Recht zum Verwenden verfügt.
+Wenn Sie die dienstseitige Entschlüsselung verwenden, sendet der Dienst eine entschlüsselte Kopie der Datei an das Gerät. Die Nachricht ist weiterhin verschlüsselt. Die e-Mail-Anlage behält auch Informationen zu Nutzungsrechten, obwohl der Browser keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Der Benutzer kann die e-Mail-Anlage auch dann kopieren oder ausdrucken, wenn er ursprünglich nicht über die Rechte dazu verfügt. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, bei der der Microsoft 365-e-Mail-Server erforderlich ist, beispielsweise das Weiterleiten der Anlage, wird die Aktion vom Server nicht zugelassen, wenn der Benutzer ursprünglich nicht über das Recht zum Verwenden der Anwendung verfügt.
   
 Unabhängig davon, ob Sie die dienstseitige Entschlüsselung von Anlagen einrichten, können Benutzer keine Anlagen in verschlüsselter und mit rechten geschützter e-Mail in der IOS Mail-App anzeigen.
   
 Wenn Sie entschlüsselte e-Mail-Anlagen nicht zulassen (Standardeinstellung), erhalten Benutzer eine Meldung, die besagt, dass Sie nicht über die Berechtigung zum Anzeigen der Anlage verfügen.
   
-Weitere Informationen dazu, wie Office 365 die Verschlüsselung für e-Mails und e-Mail-Anlagen mit der Option "nur verschlüsseln" implementiert, finden Sie unter [verschlüsseln-only-Option für e-Mails.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Weitere Informationen dazu, wie Microsoft 365 die Verschlüsselung von e-Mails und e-Mail-Anlagen mit der Option "nur verschlüsseln" implementiert, finden Sie unter [verschlüsseln-only-Option für e-Mails.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>So verwalten Sie, ob e-Mail-Anlagen beim Herunterladen aus einem Webbrowser entschlüsselt werden
   
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet "IRMConfiguration" mit dem Parameter "DecryptAttachmentForEncryptOnly" aus:
 
@@ -179,7 +179,7 @@ Sie können benutzerdefinierte Branding-Vorlagen verwenden, um zu erzwingen, das
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Verwenden einer benutzerdefinierten Vorlage, um zu erzwingen, dass alle externen Empfänger das OM-Portal und für verschlüsselte e-Mails verwenden
 
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet New-TransportRule aus:
 
@@ -217,7 +217,7 @@ Wir hoffen, dass es nicht dazu kommt, aber wenn Sie dies benötigen, ist die Dea
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>So deaktivieren Sie die neuen Funktionen für OM
   
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Wenn Sie die Schaltfläche **verschlüsseln** in Outlook im Internet aktiviert haben, deaktivieren Sie Sie, indem Sie das CmdletSet-IRMConfiguration mit dem Parameter SimplifiedClientAccessEnabled ausführen. Andernfalls können Sie diesen Schritt überspringen.
 

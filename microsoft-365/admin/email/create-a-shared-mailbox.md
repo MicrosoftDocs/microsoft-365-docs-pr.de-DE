@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Erstellen Sie ein freigegebenes Postfach, damit mehrere Benutzer in Ihrem Unternehmen die Verantwortung für das Lesen und Beantworten von E-Mails teilen, die an eine Adresse gesendet wurden.
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212305"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628903"
 ---
 # <a name="create-a-shared-mailbox"></a>Erstellen eines freigegebenen Postfachs 
 
 > [!NOTE]
 > Wenn Ihre Organisation eine Exchange-Hybridumgebung verwendet, sollten Sie das lokale Exchange Admin Center (EAC) zum Erstellen und Verwalten von freigegebenen Postfächern verwenden. Siehe [Erstellen freigegebener Postfächer im Exchange Admin Center](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> Wenn Sie nicht sicher sind, ob Sie ein freigegebenes Postfach oder eine Office 365-Gruppe für Outlook erstellen sollten, finden Sie Informationen dazu unter [Vergleichen von Gruppen](../create-groups/compare-groups.md). Bitte beachten Sie, dass es aktuell nicht möglich ist, ein freigegebenes Postfach zu einer Office 365-Gruppe zu migrieren. Wenn Sie diese Funktion wünschen, teilen Sie uns dies mittels [Hier abstimmen](https://go.microsoft.com/fwlink/?linkid=871518) mit.
+> Wenn Sie nicht sicher sind, ob Sie ein freigegebenes Postfach oder eine Microsoft 365-Gruppe für Outlook erstellen sollten, finden Sie Informationen dazu unter [Vergleichen von Gruppen](../create-groups/compare-groups.md). Beachten Sie, dass es aktuell nicht möglich ist, ein freigegebenes Postfach zu einer Microsoft 365-Gruppe zu migrieren. Wenn Sie diese Funktion wünschen, teilen Sie uns dies mittels [Hier abstimmen](https://go.microsoft.com/fwlink/?linkid=871518) mit.
 
 Freigegebene Postfächer lassen sich auf einfache Weise erstellen, damit eine Gruppe von Personen E-Mails einer gemeinsamen E-Mail-Adresse wie "info@contoso.com" überwachen und senden kann. Wenn eine Person in der Gruppe auf eine Nachricht antwortet, die an das freigegebene Postfach gesendet wurde, wird als Absender der E-Mail das freigegebene Postfach angegeben, nicht der einzelne Benutzer. 
 
@@ -42,7 +42,7 @@ Lesen Sie vor dem Erstellen eines freigegebenen Postfachs unbedingt [Information
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Erstellen eines freigegebenen Postfachs und Hinzufügen von Mitgliedern
   
-1. Melden Sie sich mit einem Office 365-Administratorkonto als globaler Administrator oder mit einem Exchange-Administratorkonto an. Wenn die Meldung „**Sie haben keine Berechtigung für den Zugriff auf diese Seite oder die Ausführung dieser Aktion**“ angezeigt wird, sind Sie kein Administrator. 
+1. Melden Sie sich mit einem globalen Administrator oder mit einem Exchange-Administratorkonto an. Wenn die Meldung „**Sie haben keine Berechtigung für den Zugriff auf diese Seite oder die Ausführung dieser Aktion**“ angezeigt wird, sind Sie kein Administrator. 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Sie können auf ein geteiltes Postfach auf einem mobilen Gerät auf zweierlei Ar
     
     Die entsprechenden Anleitungen finden Sie unter <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile</a>.
 
-- Öffnen Sie Ihren Browser, melden Sie sich bei Office 365 an und wechseln Sie dann zu Outlook im Web. Von Outlook im Web aus können Sie auf das freigegebene Postfach zugreifen.
+- Öffnen Sie Ihren Browser, melden Sie sich an und wechseln Sie dann zu Outlook im Web. Von Outlook im Web aus können Sie auf das freigegebene Postfach zugreifen.
 
     Die entsprechenden Anleitungen finden Sie unter <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook im Web</a>.
 

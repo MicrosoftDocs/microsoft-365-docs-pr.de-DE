@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Nachdem Sie die Ergebnisse einer Office 365-Überwachungsprotokoll Suche in eine CSV-Datei exportiert und heruntergeladen haben, können Sie das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um die einzelnen Eigenschaften im JSON-Objekt in der Auditdata-Spalte in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen.
-ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Nachdem Sie die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei exportiert und heruntergeladen haben, können Sie das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um die einzelnen Eigenschaften im JSON-Objekt in der Auditdata-Spalte in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen.
+ms.openlocfilehash: 64a16ad3e2584f61e6c30da26d6867614c9a9119
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634923"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615959"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 
-Nachdem Sie das Office 365 Überwachungsprotokoll durchsucht und die Suchergebnisse in eine CSV-Datei heruntergeladen haben, enthält die Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Die Daten in dieser Spalte werden als JSON-Objekt formatiert, das mehrere Eigenschaften enthält, die als *Eigenschaft: Wert-* Paare durch Kommas getrennt konfiguriert sind. Sie können das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um jede Eigenschaft im JSON-Objekt in der **Auditdata** -Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und Filtern, die Ihnen helfen, die gewünschten Überwachungsdaten schnell zu finden.
+Nachdem Sie das Überwachungsprotokoll durchsucht und die Suchergebnisse in eine CSV-Datei heruntergeladen haben, enthält die Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Die Daten in dieser Spalte werden als JSON-Objekt formatiert, das mehrere Eigenschaften enthält, die als *Eigenschaft: Wert-* Paare durch Kommas getrennt konfiguriert sind. Sie können das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um jede Eigenschaft im JSON-Objekt in der **Auditdata** -Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und Filtern, die Ihnen helfen, die gewünschten Überwachungsdaten schnell zu finden.
 
 ## <a name="step-1-export-audit-log-search-results"></a>Schritt 1: Exportieren von Überwachungsprotokoll-Suchergebnissen
 
@@ -102,11 +102,11 @@ Die CSV-Datei wird im **Abfrage-Editor**geöffnet. Es gibt vier Spalten: **Creat
 
 Im folgenden finden Sie einige Tipps und Beispiele für das Exportieren und Anzeigen des Überwachungsprotokolls vor und nach dem Verwenden des JSON-Transformations Features zum Aufteilen der **Auditdata** -Spalte in mehrere Spalten.
 
-- Filtern Sie die **RecordType** -Spalte, um nur die Datensätze eines bestimmten Office 365 Diensts oder Funktionsbereichs anzuzeigen. Um beispielsweise Ereignisse im Zusammenhang mit SharePoint-Freigabe anzuzeigen, wählen Sie **14** (enum-Wert für Datensätze, die von SharePoint-freigabeaktivitäten ausgelöst werden) aus. Eine Liste der Office 365 Dienste, die den in der Spalte **RecordType** angezeigten Enumerationswerten entsprechen, finden Sie unter [detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+- Filtern Sie die **RecordType** -Spalte, um nur die Datensätze eines bestimmten Diensts oder Funktionsbereichs anzuzeigen. Um beispielsweise Ereignisse im Zusammenhang mit SharePoint-Freigabe anzuzeigen, wählen Sie **14** (enum-Wert für Datensätze, die von SharePoint-freigabeaktivitäten ausgelöst werden) aus. Eine Liste der Dienste, die den Enumerationswerten entsprechen, die in der Spalte **RecordType** angezeigt werden, finden Sie unter [detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
 - Filtern Sie die Spalte **Vorgänge** , um die Datensätze für bestimmte Aktivitäten anzuzeigen. Eine Liste der meisten Vorgänge, die einer durchsuchbaren Aktivität im Überwachungsprotokoll-Such Tool im Security & Compliance Center entsprechen, finden Sie im Abschnitt "überwachte Aktivitäten" unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities).
 
-- Anstatt das Überwachungsprotokoll-Such Tool im Security & Compliance Center zu verwenden, können Sie das Cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Office 365 Überwachungsprotokoll Suche in eine CSV-Datei zu exportieren. Anschließend können Sie das gleiche Verfahren wie in Schritt 2 beschrieben ausführen, um das Überwachungsprotokoll mit dem Power Query-Editor zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht darin, dass Sie mithilfe des *RecordType* -Parameters nach Ereignissen eines bestimmten Office 365 Diensts suchen können. Im folgenden finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie den Power Query-Editor verwenden können, um das JSON-Objekt in der **Auditdata** -Spalte wie in Schritt 2 beschrieben zu transformieren.
+- Anstatt das Überwachungsprotokoll-Such Tool im Security & Compliance Center zu verwenden, können Sie das Cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei zu exportieren. Anschließend können Sie das gleiche Verfahren wie in Schritt 2 beschrieben ausführen, um das Überwachungsprotokoll mit dem Power Query-Editor zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht darin, dass Sie mithilfe des *RecordType* -Parameters nach Ereignissen eines bestimmten Diensts suchen können. Im folgenden finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie den Power Query-Editor verwenden können, um das JSON-Objekt in der **Auditdata** -Spalte wie in Schritt 2 beschrieben zu transformieren.
 
    Führen Sie in diesem Beispiel die folgenden Befehle aus, um alle Datensätze im Zusammenhang mit SharePoint-Freigabe Vorgängen zurückzugeben. 
    

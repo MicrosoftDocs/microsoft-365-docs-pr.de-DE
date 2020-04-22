@@ -1,5 +1,5 @@
 ---
-title: Exportieren von Ergebnissen in Office 365 Advanced eDiscovery
+title: Exportieren von Ergebnissen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: 'Hier erfahren Sie, wie Sie Optionen für den Export von Ergebnissen aus Office 365 Advanced eDiscovery definieren, einschließlich der Vorgehensweise zum Angeben von Parametern für einen Export Batch. '
-ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Hier erfahren Sie, wie Sie Optionen für den Export von Ergebnissen aus Advanced eDiscovery definieren, einschließlich der Vorgehensweise zum Angeben von Parametern für einen Export Batch. '
+ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558196"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615999"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Exportieren von Ergebnissen in "Advanced eDiscovery" (klassisch)
 
@@ -194,11 +194,11 @@ In der folgenden Tabelle sind die Ausgabedateien aufgeführt, die beim Ausführe
    
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse](view-batch-history-and-export-past-results.md)
   
-[Schnelleinrichtung für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Schnelles Setup für Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md)
   

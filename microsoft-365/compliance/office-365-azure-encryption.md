@@ -1,5 +1,5 @@
 ---
-title: Office 365 Verschlüsselung in Azure
+title: Verschlüsselung in Azure
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: eine Erläuterung der Verschlüsselung in Azure.'
-ms.openlocfilehash: 9828da8b2d39a3b80784d57ed71a335857cfaea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602112"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637433"
 ---
-# <a name="office-365-encryption-in-azure"></a>Office 365 Verschlüsselung in Azure
+# <a name="encryption-in-azure"></a>Verschlüsselung in Azure
 
 ## <a name="introduction"></a>Einführung
 
@@ -47,7 +47,7 @@ Weitere Informationen finden Sie unter [Security Recommendations for Windows Vir
 
 Bei der [Azure Storage Service-Verschlüsselung](https://docs.microsoft.com/azure/storage/storage-service-encryption)verschlüsselt Azure Storage automatisch Daten, bevor Sie gespeichert werden, und entschlüsselt Daten vor dem Abruf. Die Verschlüsselung, Entschlüsselung und die wichtigsten Verwaltungsprozesse sind für Benutzer vollkommen transparent. Azure Storage Service Encryption kann für Azure- [BLOB-Speicher](https://azure.microsoft.com/services/storage/blobs/) und [Azure-Dateien](https://azure.microsoft.com/services/storage/files/)verwendet werden. Sie können auch die von Microsoft verwalteten Verschlüsselungsschlüssel mit der Azure Storage Service-Verschlüsselung verwenden, oder Sie können eigene Verschlüsselungsschlüssel verwenden. (Informationen zur Verwendung eigener Schlüssel finden Sie unter [Speicherdienst Verschlüsselung mithilfe von Kunden verwalteten Schlüsseln in Azure Key Vault](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys). Informationen zur Verwendung von von Microsoft verwalteten Schlüsseln finden Sie unter [Speicherdienst Verschlüsselung für Daten im Ruhezustand](https://docs.microsoft.com/azure/storage/storage-service-encryption).) Darüber hinaus können Sie die Verwendung der Verschlüsselung automatisieren. Beispielsweise können Sie die Speicherdienst Verschlüsselung für ein Speicherkonto programmgesteuert mithilfe der [Rest-API des Azure-Speicherressourcen Anbieters](https://msdn.microsoft.com/library/azure/mt163683.aspx), des [Speicherressourcen Anbieters Clientbibliothek für .net](https://msdn.microsoft.com/library/azure/mt131037.aspx), [Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)oder der [Azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli)aktivieren oder deaktivieren.
 
-Einige Office 365 Dienste verwenden Azure zum Speichern von Daten. Beispielsweise SharePoint Online und OneDrive für Unternehmen Daten im Azure-BLOB-Speicher speichern, und Microsoft Teams speichert Daten für den Chatdienst in Tabellen, BLOBs und Warteschlangen. Darüber hinaus speichert das Feature für die Konformitätsbewertung im Microsoft 365 Compliance Center Kunden eingegebene Daten, die in verschlüsselter Form in [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)gespeichert sind, einer Plattform als Service (PaaS), global verteilte, mehrstufige Datenbank. Die Azure Storage Service-Verschlüsselung verschlüsselt Daten, die im Azure-BLOB-Speicher und in Tabellen gespeichert sind, und die Azure-Datenträgerverschlüsselung verschlüsselt Daten in Warteschlangen sowie Windows-und IaaS-Laufwerke virtueller Computer, um die Volumen Verschlüsselung für das Betriebssystem und den Datenträger bereitzustellen. Die Lösung stellt sicher, dass alle Daten auf den virtuellen Computer Datenträgern in der Ruhephase in Ihrem Azure-Speicher verschlüsselt sind. Die [Verschlüsselung in Rest in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) wird mithilfe verschiedener Sicherheitstechnologien implementiert, einschließlich sicherer Schlüsselspeicher Systeme, verschlüsselter Netzwerke und kryptografischer APIs.
+Einige Microsoft 365-Dienste verwenden Azure zum Speichern von Daten. Beispielsweise SharePoint Online und OneDrive für Unternehmen Daten im Azure-BLOB-Speicher speichern, und Microsoft Teams speichert Daten für den Chatdienst in Tabellen, BLOBs und Warteschlangen. Darüber hinaus speichert das Feature für die Konformitätsbewertung im Microsoft 365 Compliance Center Kunden eingegebene Daten, die in verschlüsselter Form in [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)gespeichert sind, einer Plattform als Service (PaaS), global verteilte, mehrstufige Datenbank. Die Azure Storage Service-Verschlüsselung verschlüsselt Daten, die im Azure-BLOB-Speicher und in Tabellen gespeichert sind, und die Azure-Datenträgerverschlüsselung verschlüsselt Daten in Warteschlangen sowie Windows-und IaaS-Laufwerke virtueller Computer, um die Volumen Verschlüsselung für das Betriebssystem und den Datenträger bereitzustellen. Die Lösung stellt sicher, dass alle Daten auf den virtuellen Computer Datenträgern in der Ruhephase in Ihrem Azure-Speicher verschlüsselt sind. Die [Verschlüsselung in Rest in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) wird mithilfe verschiedener Sicherheitstechnologien implementiert, einschließlich sicherer Schlüsselspeicher Systeme, verschlüsselter Netzwerke und kryptografischer APIs.
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

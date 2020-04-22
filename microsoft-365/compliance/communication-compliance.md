@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193471"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634177"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -121,10 +121,10 @@ In diesem Workflow Schritt ermitteln Sie die Compliance-Anforderungen und konfig
 
 Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorlagen auswählen:
 
-- **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die eingebauten Bedrohungen, Profanität und Belästigungs Klassifizierungen verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
+- **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die integrierte Klassifizierung verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
 - **Vertrauliche Informationen**: mit dieser Vorlage können Sie eine Richtlinie zum Überprüfen der Kommunikation mit definierten Typen von vertraulichen Informationen oder Stichwörtern erstellen, um sicherzustellen, dass wichtige Daten nicht für Personen freigegeben werden, die keinen Zugriff haben sollten.
 - **Einhaltung von Vorschriften**: Verwenden Sie diese Vorlage, um eine Richtlinie zum Überprüfen der Kommunikation für Verweise auf standardmäßige Finanzbegriffe zu erstellen, die regulatorischen Standards zugeordnet sind.
-- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, Klassifizierungen, individuelle Erkennungs Bedingungen und den Umfang der zu überprüfenden Inhalte für die Beaufsichtigung in Ihrer Organisation zu konfigurieren.
+- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, individuelle Erkennungs Bedingungen und den Umfang der zu überprüfenden Inhalte für die Beaufsichtigung in Ihrer Organisation zu konfigurieren.
 
 ### <a name="investigate"></a>Prüfen
 
@@ -151,7 +151,7 @@ Der nächste Schritt besteht darin, mit den folgenden Optionen Kompatibilitätsp
 
 Das Nachverfolgen und Verwalten von Compliance-Problemen, die durch Kommunikations Konformitätsrichtlinien identifiziert werden, umfasst den gesamten Workflowprozess. Wenn Warnungen generiert und Ermittlungs-und Korrekturaktionen ausgeführt werden, müssen vorhandene Richtlinien möglicherweise überprüft und aktualisiert werden, und es müssen möglicherweise neue Richtlinien erstellt werden.
 
-- **Überwachen und Berichten**: Verwenden Sie die Kommunikationsrichtlinien-Dashboards, Berichte, Export Protokolle und Ereignisse, die im Unified Office 365-Überwachungsprotokoll aufgezeichnet wurden, um Ihre Compliance-Position kontinuierlich auszuwerten und zu verbessern.
+- **Überwachen und Berichten**: Verwenden Sie die Kommunikationsrichtlinien-Dashboards, Berichte, Export Protokolle und Ereignisse, die in den einheitlichen Überwachungsprotokollen aufgezeichnet wurden, um Ihre Compliance-Haltung kontinuierlich auszuwerten und zu verbessern.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 

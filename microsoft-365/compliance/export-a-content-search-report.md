@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 zu exportieren, können Sie einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert werden würde.
-ms.openlocfilehash: 6730a1c406e02de26cbef964e445cfad31c948ec
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074392"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615929"
 ---
 # <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
 
@@ -56,7 +56,7 @@ Wenn Sie einen Bericht exportieren, wird er in einen Ordner mit dem gleichen Nam
 
   > [!NOTE]
   > <sup>1</sup> Microsoft stellt keine Drittanbietererweiterungen oder Add-ons für ClickOnce-Anwendungen her. Das Exportieren von Suchergebnissen mit einem nicht unterstützten Browser mit Erweiterungen oder Add-ons von Drittanbietern wird nicht unterstützt.<br/>
-  > <sup>2</sup> aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren der ClickOnce-Unterstützung in Edge finden Sie unter [Verwenden des Office 365 eDiscovery-Export Tools in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren der ClickOnce-Unterstützung in Edge finden Sie unter [Verwenden des eDiscovery-Export Tools in Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Wenn die geschätzte Gesamtgröße der Ergebnisse, die von einer Inhaltssuche zurückgegeben werden, 2 TB überschreitet, schlägt das Exportieren des Berichts fehl. Um den Bericht erfolgreich zu exportieren, versuchen Sie, den Bereich einzugrenzen, und führen Sie die Suche erneut aus, damit die geschätzte Größe der Ergebnisse weniger als 2 TB beträgt.
 
@@ -72,7 +72,7 @@ Der erste Schritt besteht darin, den Bericht für den Download auf Ihrem Compute
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
 3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such** \> **Inhaltssuche**.
     
@@ -127,7 +127,7 @@ Der nächste Schritt besteht darin, den Bericht aus dem Azure-Speicherbereich au
   
 3. Klicken Sie auf **Bericht herunterladen**.
     
-4. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool von Microsoft Office 365**zu installieren, klicken Sie auf **Installieren**.
+4. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool**zu installieren, klicken Sie auf **Installieren**.
     
 5. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 2 kopiert haben, in das entsprechende Feld ein.
     
@@ -144,10 +144,10 @@ Der nächste Schritt besteht darin, den Bericht aus dem Azure-Speicherbereich au
 
 Wenn Sie einen Bericht zu den Ergebnissen einer Inhaltssuche generieren und exportieren, werden die folgenden Dokumente heruntergeladen:
   
-- **Export Zusammenfassung:** Ein Excel-Dokument, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die Anzahl der Suchergebnisse von jedem Inhaltsspeicherort, die geschätzte Anzahl von Elementen, die tatsächliche Anzahl der exportierten Elemente sowie die geschätzte und tatsächliche Größe von Elementen. , die exportiert werden sollen. 
+- **Export Zusammenfassung:** Ein Excel-Dokument, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die Anzahl der Suchergebnisse von jedem Inhaltsspeicherort, die geschätzte Anzahl von Elementen, die tatsächliche Anzahl der exportierten Elemente sowie die geschätzte und tatsächliche Größe der exportierten Elemente. 
     
     > [!NOTE]
-    > Wenn Sie nicht indizierte Elemente beim Exportieren des Berichts einschließen, wird die Anzahl der nicht indizierten Elemente in der Gesamtzahl der geschätzten Suchergebnisse und in der Gesamtzahl der heruntergeladenen Suchergebnisse (wenn Sie die Suchergebnisse exportieren), die in der Liste Export Zusammenfassungsbericht. Mit anderen Worten: die Gesamtzahl der heruntergeladenen Elemente entspricht der Gesamtzahl der geschätzten Ergebnisse und der Gesamtzahl der nicht indizierten Elemente. 
+    > Wenn Sie nicht indizierte Elemente beim Exportieren des Berichts einschließen, wird die Anzahl der nicht indizierten Elemente in der Gesamtzahl der geschätzten Suchergebnisse und in der Gesamtzahl der heruntergeladenen Suchergebnisse (wenn Sie die Suchergebnisse exportieren) enthalten, die im Export Zusammenfassungsbericht aufgeführt sind. Mit anderen Worten: die Gesamtzahl der heruntergeladenen Elemente entspricht der Gesamtzahl der geschätzten Ergebnisse und der Gesamtzahl der nicht indizierten Elemente. 
   
 - **Manifest:** Eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist. 
     

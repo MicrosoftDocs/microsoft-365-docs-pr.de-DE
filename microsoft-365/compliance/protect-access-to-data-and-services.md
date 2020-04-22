@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Startseite für den Schutz des Zugriffs auf O365-Daten und-Dienste
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Startseite zum Schützen des Zugriffs auf Microsoft 365-Daten und-Dienste
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601702"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632210"
 ---
 # <a name="protect-user-and-device-access"></a>Schutz von Benutzer- und Gerätezugriff
 
-Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verteidigung gegen Cyberangriffe und den Schutz vor Datenverlusten entscheidend. Derselbe Schutz kann auf andere SaaS-Anwendungen in Ihrer Umgebung und sogar auf lokale Anwendungen angewendet werden, die mit Azure Active Directory Application Proxy veröffentlicht werden.
+Der Schutz des Zugriffs auf Ihre Microsoft 365-Daten und-Dienste ist für die Verteidigung gegen Cyberangriffe und den Schutz vor Datenverlusten entscheidend. Derselbe Schutz kann auf andere SaaS-Anwendungen in Ihrer Umgebung und sogar auf lokale Anwendungen angewendet werden, die mit Azure Active Directory Application Proxy veröffentlicht werden.
   
 ## <a name="step-1-review-recommendations"></a>Schritt 1: Überprüfen der Empfehlungen
 
@@ -33,7 +33,7 @@ Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 3
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Schritt 2: Schützen von Administratorkonten und Zugriff
-Die Administratorkonten, die Sie zum Verwalten Ihrer Office 365 Umgebung verwenden, umfassen erweiterte Berechtigungen. Dies sind wertvolle Ziele für Hacker und cyberattackers. 
+Die Administratorkonten, die Sie zum Verwalten Ihrer Microsoft 365-Umgebung verwenden, umfassen erweiterte Berechtigungen. Dies sind wertvolle Ziele für Hacker und cyberattackers. 
 
 Verwenden Sie zunächst Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für reguläre, nicht administrative Zwecke verfügen und bei Bedarf nur Ihr Administratorkonto verwenden, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist.
 

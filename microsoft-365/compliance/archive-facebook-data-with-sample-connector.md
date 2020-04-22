@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 8bd689f7a77497961948d8e94b160aca8bbb43ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c8bb4c1330af0f9c10dd93f9cedd47b3d3b34b0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596312"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637125"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten
 
@@ -38,9 +38,9 @@ Schließen Sie die folgenden Voraussetzungen ab, bevor Sie einen Connector im Mi
     - [Registrieren für ein Pay-as-you-go Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das in Ihrem Office 365-Abonnement enthalten ist, unterstützt die Connectors im Security #a0 Compliance Center nicht.
+    > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das im Lieferumfang Ihres Microsoft 365-Abonnements enthalten ist, unterstützt die Connectors im Security & Compliance Center nicht.
 
-- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
+- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
 - Der Benutzer, der den benutzerdefinierten Connector im Microsoft 365 Compliance Center (in Schritt 5) einrichtet, muss in Exchange Online über die Rolle "Post Fach Import-Export" verfügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -106,7 +106,7 @@ Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführe
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Schritt 5: Einrichten eines Facebook Business Pages-Connectors im Microsoft 365 Compliance Center
 
-Der letzte Schritt besteht darin, den Connector im Microsoft 365 Compliance Center einzurichten, mit dem Daten von ihren Facebook-Geschäfts Seiten in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt abgeschlossen haben, beginnt der Microsoft 365-Import Dienst mit dem Importieren von Daten von ihren Facebook-Geschäfts Seiten nach Microsoft 365.
+Der letzte Schritt besteht darin, den Connector im Microsoft 365 Compliance Center einzurichten, mit dem Daten von ihren Facebook-Geschäfts Seiten in ein angegebenes Postfach in Microsoft 365 importiert werden. Nachdem Sie diesen Schritt ausgeführt haben, startet der Office 365-Import Dienst mit dem Importieren von Daten von ihren Facebook-Geschäfts Seiten nach Microsoft 365.
 
 Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 5: Einrichten eines Facebook-Connectors im Microsoft 365 Compliance Center](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
 

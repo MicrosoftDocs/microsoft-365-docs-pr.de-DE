@@ -1,5 +1,5 @@
 ---
-title: Rückspeichern eines inaktiven Postfachs in Office 365
+title: Rückspeichern eines inaktiven Postfachs
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Wenn ein neuer Mitarbeiter oder ein anderer Benutzer Zugriff auf die Inhalte eines inaktiven Postfachs in Office 365 benötigt, können Sie den Inhalt des inaktiven Postfachs in einem vorhandenen Postfach wiederherstellen (oder zusammenführen).
-ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081601"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621317"
 ---
-# <a name="restore-an-inactive-mailbox-in-office-365"></a>Rückspeichern eines inaktiven Postfachs in Office 365
+# <a name="restore-an-inactive-mailbox"></a>Rückspeichern eines inaktiven Postfachs
 
 Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet, um die E-Mails eines ehemaligen Mitarbeiters aufzubewahren, nachdem dieser die Organisation verlassen hat. Wenn ein anderer Mitarbeiter die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt oder dieser Mitarbeiter in Ihre Organisation zurückkehrt, gibt es zwei Möglichkeiten, den Inhalt des inaktiven Postfachs wieder für einen Benutzer verfügbar zu machen:
   
@@ -103,7 +103,7 @@ Wenn ein inaktives Postfach ein Archivpostfach enthält, können Sie es auch im 
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Verwenden Sie ein Beweissicherungsverfahren oder eine Office 365-Aufbewahrungsrichtlinie zum Aufbewahren von Inhalten in inaktiven Postfächern.** Wenn Sie den Status eines inaktiven Postfachs nach dem Rückspeichern beibehalten möchten, können Sie für das Zielpostfach das [Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286) aktivieren oder eine [Office 365- Aufbewahrungsrichtlinie](retention-policies.md) anwenden, bevor Sie das inaktive Postfach rückspeichern. Dies verhindert das dauerhafte Löschen von Elementen aus dem inaktiven Postfach, nachdem sie in das Zielpostfach rückgespeichert wurden.
+- **Verwenden Sie ein Beweissicherungsverfahren oder eine Microsoft 365-Aufbewahrungsrichtlinie, um inaktive Postfachinhalte beizubehalten.** Wenn Sie den Status eines inaktiven Postfachs nach der Wiederherstellung beibehalten möchten, können Sie das Zielpostfach in einem [Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=856286) platzieren oder eine [Microsoft 365-Aufbewahrungsrichtlinie](retention-policies.md) anwenden, bevor Sie das inaktive Postfach wiederherstellen. Dies verhindert das dauerhafte Löschen von Elementen aus dem inaktiven Postfach, nachdem sie in das Zielpostfach rückgespeichert wurden.
 
 - **Aktivieren Sie das Anhalten der Aufbewahrungszeit für das Zielpostfach, ehe Sie ein inaktives Postfach rückspeichern.** Das Postfachelemente in einem inaktiven Postfach alt sein können, sollten Sie das Aktivieren des Anhaltens der Aufbewahrungszeit für das Zielpostfach erwägen, bevor Sie ein inaktives Postfach rückspeichern. Wenn Sie für ein Postfach das Anhalten der Aufbewahrungszeit aktivieren, wird die zugewiesene Aufbewahrungsrichtlinie so lange nicht verarbeitet, bis das Anhalten der Aufbewahrungszeit aufgehoben wird oder der entsprechende Zeitraum abgelaufen ist. Dadurch erhält der Besitzer der Zielpostfachs Zeit zum Verwalten alter Nachrichten aus dem inaktiven Postfach. Andernfalls löscht die Aufbewahrungsrichtlinie möglicherweise alte Elemente (oder verschiebt Elemente in das Archivpostfach, sofern aktiviert), die basierend auf den für das Zielpostfach konfigurierten Aufbewahrungseinstellungen abgelaufen sind. Weitere Informationen finden Sie unter [platzieren eines Postfachs in der Aufbewahrungszeit in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856300).
 

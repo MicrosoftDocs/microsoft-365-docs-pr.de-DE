@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99fa3ff77c957d209123458b15305f4b93ed6562
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 17820674f9c6db417289a232f006c115e7060d01
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637155"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -41,8 +41,7 @@ Erfahren Sie, wie Sie Ihre NEN 7510-Implementierung mithilfe der Azure Security 
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
-- [Azure und Office 365-Abdeckung in Bezug auf den NEN 7510:2011-Standard](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
-- [Benutzerleitfaden für die Azure und Office 365-Abdeckung in Bezug auf den NEN 7510:2011-Standard](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
+- [Azure und Office 365-Abdeckung in Bezug auf den NEN 7510:2011-Standard](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=15d5a5fa-fbb6-4ea6-8126-2a2c684ae789&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

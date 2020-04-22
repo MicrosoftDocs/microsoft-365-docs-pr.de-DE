@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Erfahren Sie, wie Administratoren Exchange Online PowerShell und eine CSV-Datei zum Massenimport externer Kontakte in die globale Adressliste verwenden können.
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078952"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636343"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte in Exchange Online
 
@@ -71,7 +71,7 @@ Der erste Schritt besteht darin, eine CSV-Datei zu erstellen, die Informationen 
 
 Der nächste Schritt besteht darin, die CSV-Datei zu verwenden, die Sie in Schritt 1 und PowerShell erstellt haben, um Massenimport der in der CSV-Datei aufgeführten externen Kontakte in Exchange Online durchführen zu können. 
   
-1.  Verbinden Sie PowerShell mit Ihrer Exchange Online Organisation. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Achten Sie darauf, den Benutzernamen und das Kennwort für Ihr Office 365 globales Administratorkonto zu verwenden, wenn Sie eine Verbindung mit Exchange Online PowerShell herstellen. 
+1.  Verbinden Sie PowerShell mit Ihrer Exchange Online Organisation. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Achten Sie darauf, den Benutzernamen und das Kennwort für Ihr globales Administratorkonto zu verwenden, wenn Sie eine Verbindung mit Exchange Online PowerShell herstellen. 
     
 2. Nachdem Sie PowerShell mit Exchange Online verbunden haben, wechseln Sie zu dem Desktop Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben. zum Beispiel `C:\Users\Administrator\desktop`.
     
@@ -123,7 +123,7 @@ Nachdem Sie den Befehl in Schritt 2 ausgeführt haben, werden die externen Konta
     
 1. Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**.
     
-2. Klicken Sie auf einen Kontakt, **** ![und klicken Sie](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) dann auf Bearbeitungssymbol bearbeiten, um die Eigenschaften des Kontakts anzuzeigen. 
+2. Klicken Sie auf einen Kontakt, **Edit** ![und klicken Sie](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) dann auf Bearbeitungssymbol bearbeiten, um die Eigenschaften des Kontakts anzuzeigen. 
     
 Das ist alles. Benutzer können die Kontakte und die zusätzlichen Informationen im Adressbuch Outlook und Outlook im Internet anzeigen.
   

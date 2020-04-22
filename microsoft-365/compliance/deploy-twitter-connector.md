@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Twitter-Daten nach Microsoft 365 einrichten. Nachdem diese Daten in Microsoft 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Twitter-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 80c3ca71204b6050a1944250c20df4ff13bbd71e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 1143239635aed64847c12a3d8c61c430a677e037
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636123"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten
 
@@ -26,7 +26,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Schritt 1: Erstellen einer APP in Azure Active Directory
 
-1. Wechseln Sie <https://portal.azure.com> zu, und melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administratorkontos an.
+1. Wechseln Sie <https://portal.azure.com> zu, und melden Sie sich mit den Anmeldeinformationen eines globalen Administratorkontos an.
 
    ![Bei Azure anmelden](../media/TCimage01.png)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097208"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631846"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -55,7 +55,7 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wi
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
 3. Wählen Sie im linken Bereich des Security and Compliance Centers **Berechtigungen**aus, und aktivieren Sie dann das Kontrollkästchen neben **eDiscovery-Manager**.
     
@@ -81,7 +81,7 @@ In der folgenden Tabelle sind die eDiscovery-Rollen im Sicherheits & Compliance 
 |Exportieren <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Vorschau <br/>  | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Überprüfung <br/>  | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS-Entschlüsselung <br/>  ||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Suchen und löschen <br/> | <br/> | <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -94,7 +94,7 @@ Diese Rolle ermöglicht Benutzern das Erstellen, bearbeiten, löschen und Steuer
 
 ### <a name="compliance-search"></a>Compliance-Suche
 
-Mit dieser Rolle können Benutzer das Tool für die Inhaltssuche im Security & Compliance Center ausführen, um Postfächer und öffentliche Ordner, SharePoint Online Websites, OneDrive für Unternehmen Websites, Skype for Business Unterhaltungen, Office 365 Gruppen und Microsoft Teams sowie Jammer Gruppen zu durchsuchen. Diese Rolle ermöglicht es einem Benutzer, eine Schätzung der Suchergebnisse zu erhalten und Export Berichte zu erstellen, aber zusätzliche Rollen sind erforderlich, um Inhalts Suchaktionen wie das Anzeigen einer Vorschau, exportieren oder Löschen von Suchergebnissen zu initiieren.
+Mit dieser Rolle können Benutzer das Tool für die Inhaltssuche im Security & Compliance Center ausführen, um Postfächer und öffentliche Ordner, SharePoint Online Websites, OneDrive für Unternehmen Websites, Skype for Business Unterhaltungen, Microsoft 365-Gruppen und Microsoft Teams sowie Jammer Gruppen zu durchsuchen. Diese Rolle ermöglicht es einem Benutzer, eine Schätzung der Suchergebnisse zu erhalten und Export Berichte zu erstellen, aber zusätzliche Rollen sind erforderlich, um Inhalts Suchaktionen wie das Anzeigen einer Vorschau, exportieren oder Löschen von Suchergebnissen zu initiieren.
 
 Benutzer, denen die Rolle "Konformitäts Suche" zugewiesen ist, jedoch nicht über die Rolle "Vorschau" verfügen, können eine Vorschau der Ergebnisse einer Suche anzeigen, in der die Vorschau Aktion von einem Benutzer initiiert wurde, dem die Rolle "Vorschau" zugewiesen wurde. Der Benutzer ohne die Vorschau-Rolle kann bis zu zwei Wochen nach dem Erstellen der ersten Vorschau-Aktion eine Vorschau der Ergebnisse anzeigen.
 
@@ -110,7 +110,7 @@ Weitere Informationen zum Exportieren von Suchergebnissen finden Sie unter [Expo
 
 ### <a name="hold"></a>Hold
 
-Diese Rolle ermöglicht es Benutzern, Inhalte in Postfächern, öffentlichen Ordnern, Websites, Skype for Business Unterhaltungen und Office 365 Gruppen aufzubewahren. Wenn Inhalte gespeichert sind, können Inhaltsbesitzer den ursprünglichen Inhalt weiterhin ändern oder löschen, der Inhalt bleibt jedoch erhalten, bis die Aufbewahrungsdauer aufgehoben oder die Aufbewahrungsdauer abgelaufen ist. 
+Diese Rolle ermöglicht es Benutzern, Inhalte in Postfächern, öffentlichen Ordnern, Websites, Skype for Business Unterhaltungen und Microsoft 365-Gruppen aufzubewahren. Wenn Inhalte gespeichert sind, können Inhaltsbesitzer den ursprünglichen Inhalt weiterhin ändern oder löschen, der Inhalt bleibt jedoch erhalten, bis die Aufbewahrungsdauer aufgehoben oder die Aufbewahrungsdauer abgelaufen ist. 
 
 Weitere Informationen zu Holds finden Sie unter:
 
@@ -122,7 +122,7 @@ Weitere Informationen zu Holds finden Sie unter:
 
 Diese Rolle ermöglicht Benutzern das Anzeigen einer Liste von Elementen, die von einer Inhaltssuche zurückgegeben wurden. Sie können auch jedes Element aus der Liste öffnen und anzeigen, um den Inhalt anzuzeigen.
 
-### <a name="review"></a>Review
+### <a name="review"></a>Überprüfung
 
 Diese Rolle ermöglicht Benutzern den Zugriff auf Falldaten in [Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md) (auch bekannt als *Advanced eDiscovery v1*). Der primäre Zweck dieser Rolle besteht darin, Benutzern den Zugriff auf Advanced eDiscovery (Classic) zu ermöglichen. Benutzer, denen diese Rolle zugewiesen ist, können die Liste der Fälle auf der Seite " **eDiscovery** " im Security & Compliance Center anzeigen und öffnen, von der Sie Mitglieder sind. Nachdem der Benutzer im Security & Compliance Center auf einen Fall zugegriffen hat, kann er auf " **Advanced eDiscovery" wechseln** , um auf die Falldaten in Advanced eDiscovery (klassisch) zuzugreifen und diese zu analysieren. Diese Rolle ermöglicht es dem Benutzer nicht, die Ergebnisse einer Inhaltssuche in der Vorschau anzuzeigen, die mit dem Fall verbunden ist, oder andere Aufgaben zur Inhaltssuche oder Fallverwaltung ausführen.
 
@@ -135,7 +135,7 @@ Mit dieser Rolle können Benutzer durch Rechte geschützte e-Mail-Nachrichten be
 
 ### <a name="search-and-purge"></a>Suchen und löschen
 
-Diese Rolle ermöglicht es Benutzern, das Massen Entfernen von Daten durchzuführen, die den Kriterien einer Inhaltssuche entsprechen. Weitere Informationen finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Office 365 Organisation](search-for-and-delete-messages-in-your-organization.md). 
+Diese Rolle ermöglicht es Benutzern, das Massen Entfernen von Daten durchzuführen, die den Kriterien einer Inhaltssuche entsprechen. Weitere Informationen finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Organisation](search-for-and-delete-messages-in-your-organization.md). 
 
 ## <a name="more-information"></a>Weitere Informationen
 
@@ -151,7 +151,7 @@ Diese Rolle ermöglicht es Benutzern, das Massen Entfernen von Daten durchzufüh
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange-Verteilergruppen und Office 365 Gruppen werden nicht unterstützt. Sie müssen eine e-Mail-aktivierte Sicherheitsgruppe verwenden, die Sie in Exchange Online PowerShell mithilfe des `New-DistributionGroup -Type Security` Befehls erstellen können. Sie können auch eine e-Mail-aktivierte Sicherheitsgruppe (und Mitglieder hinzufügen) im Exchange Admin Center oder im Microsoft 365 Admin Center erstellen. Es kann bis zu 60 Minuten dauern, nachdem Sie es erstellt haben, damit eine neue e-Mail-aktivierte Sicherheit zur Rollengruppe "eDiscovery-Manager" hinzugefügt werden kann. 
+    Exchange-Verteilergruppen und Microsoft 365-Gruppen werden nicht unterstützt. Sie müssen eine e-Mail-aktivierte Sicherheitsgruppe verwenden, die Sie in Exchange Online PowerShell mithilfe des `New-DistributionGroup -Type Security` Befehls erstellen können. Sie können auch eine e-Mail-aktivierte Sicherheitsgruppe (und Mitglieder hinzufügen) im Exchange Admin Center oder im Microsoft 365 Admin Center erstellen. Es kann bis zu 60 Minuten dauern, nachdem Sie es erstellt haben, damit eine neue e-Mail-aktivierte Sicherheit zur Rollengruppe "eDiscovery-Manager" hinzugefügt werden kann. 
     
     Wie bereits erwähnt, können Sie eine e-Mail-aktivierte Sicherheitsgruppe nicht mithilfe des Cmdlets **Add-eDiscoveryCaseAdmin** in Security & Compliance Center PowerShell als eDiscovery-Administrator festlegen. Sie können nur einzelne Benutzer als eDiscovery-Administratoren hinzufügen. 
     

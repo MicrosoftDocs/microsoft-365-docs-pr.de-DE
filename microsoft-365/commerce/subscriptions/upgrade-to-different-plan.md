@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636510"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707523"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln 
 
@@ -63,7 +63,7 @@ Wenn Sie das Auschecken abgeschlossen haben, kann es einige Minuten dauern, bis 
 
 ## <a name="the-upgrade-tab-is-empty"></a>Die Registerkarte "Upgrade" ist leer
 
-Wenn die Registerkarte **Upgrade** leer ist, sehen Sie eine Erläuterung dazu, warum Sie zu diesem Zeitpunkt kein Upgrade durchführen können. Sie können versuchen, [Pläne manuell zu ändern](change-plans-manually.md) oder den [Support anzurufen](../../admin/contact-support-for-business-products.md). Weitere Informationen finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](#why-cant-i-upgrade-plans)).
+Wenn die Registerkarte **Upgrade** leer ist, sehen Sie eine Erläuterung dazu, warum Sie zu diesem Zeitpunkt kein Upgrade durchführen können. Sie können versuchen, [Pläne manuell zu ändern](change-plans-manually.md) oder den [Support anzurufen](../../admin/contact-support-for-business-products.md). Weitere Informationen finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Der gewünschte Plan wird nicht angezeigt.
 
@@ -153,7 +153,7 @@ Wenn Sie Pläne automatisch mithilfe der Schaltfläche " **Pläne wechseln** " (
 
 Benutzer Ihres alten Abonnements werden automatisch in das neue Abonnement übernommen.
   
-Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie den Dienst, dem Ihre Benutzer zugewiesen sind, geändert haben, sollten Sie dies vor dem Upgrade der Pläne notieren, damit Sie diese Änderungen anschließend erneut erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie beispielsweise zuvor Office 365 Enterprise E3 für alle 100 Ihrer Benutzer erworben haben, aber den SharePoint Online-Dienst von 50 nicht zugewiesen haben, würde diese Änderung nach dem Upgrade der Pläne nicht beibehalten werden.
+Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie den Dienst, dem Ihre Benutzer zugewiesen sind, geändert haben, sollten Sie dies vor dem Upgrade der Pläne notieren, damit Sie diese Änderungen anschließend erneut erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie beispielsweise zuvor Microsoft 365 Business Premium für alle 100 Ihrer Benutzer erworben haben, aber den SharePoint Online Dienst von 50 nicht zugewiesen haben, würde diese Änderung nach dem Upgrade der Pläne nicht beibehalten werden.
   
 Wenn Sie vor dem Upgrade von Plänen mehr als ein Abonnement haben und Benutzern Lizenzen für mehr als ein Abonnement zugewiesen haben, wird dieses Zuordnungsmuster im neuen Abonnement so weit wie möglich aufbewahrt.
   
@@ -164,9 +164,9 @@ Alle Benutzerdaten werden während des Upgrades beibehalten, einschließlich Exc
 Der Tag, an dem Ihr Plan Upgrade abgeschlossen ist, wird die Abrechnung in Ihrem alten Abonnement deaktiviert, und die Abrechnung für Ihr neues Abonnement wird aktiviert. Sie erhalten eine anteilsmäßige Gutschrift für nicht genutzte Dienste aus dem alten Abonnement. Sie erhalten eine neue Rechnung, die den Kredit für Ihr altes Abonnement innerhalb von 30 Tagen nach dem Upgrade auf das neue Abonnement enthält.
   
 > [!NOTE]
-> Wie lange es dauert, bis die Gutschrift tatsächlich auf Ihrem Zahlungskonto eingeht, hängt von der für das Abonnement verwendeten Zahlungsmethode ab. 
+> Wie lange es dauert, bis die Gutschrift tatsächlich auf Ihrem Zahlungskonto eingeht, hängt von der für das Abonnement verwendeten Zahlungsmethode ab.
   
- **Upgrade von einem Prepaid-Abonnement, bevor es abläuft?** Wenn die Gesamtkosten Ihres neuen Abonnements höher sind oder dem Restwert Ihres im Voraus bezahlten Abonnements entsprechen, verlieren Sie beim Wechsel nicht Ihre im Voraus bezahlte Zeit. Auf der Seite zum Auschecken wird eine Gutschrift für Ihre ungenutzte im Voraus bezahlte Zeit angezeigt. Wenn die Kosten Ihres neuen Abonnements jedoch niedriger als der Restwert Ihres aktuellen im Voraus bezahlten Abonnements sind, verfällt einiges der nicht genutzten Zeit. Sie werden vor der Kasse benachrichtigt, und Sie können auf ein Upgrade warten, bis es dem Ablaufdatum des Prepaid-Abonnements näher kommt.
+**Upgrade von einem Prepaid-Abonnement, bevor es abläuft?** Wenn die Gesamtkosten Ihres neuen Abonnements höher sind oder dem Restwert Ihres im Voraus bezahlten Abonnements entsprechen, verlieren Sie beim Wechsel nicht Ihre im Voraus bezahlte Zeit. Auf der Seite zum Auschecken wird eine Gutschrift für Ihre ungenutzte im Voraus bezahlte Zeit angezeigt. Wenn die Kosten Ihres neuen Abonnements jedoch niedriger als der Restwert Ihres aktuellen im Voraus bezahlten Abonnements sind, verfällt einiges der nicht genutzten Zeit. Sie werden vor der Kasse benachrichtigt, und Sie können auf ein Upgrade warten, bis es dem Ablaufdatum des Prepaid-Abonnements näher kommt.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Unterstützung bei der Anruf Unterstützung für das Upgrade von Plänen
 

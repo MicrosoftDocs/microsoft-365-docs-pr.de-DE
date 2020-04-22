@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Erfahren Sie mehr über die Grenzwerte, die für die Inhaltssuche im Security & Compliance Center in Office 365 gelten, beispielsweise die maximale Anzahl gleichzeitiger Suchvorgänge. '
-ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634733"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632650"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Grenzwerte für die Inhaltssuche im Security & Compliance Center
 
 > [!NOTE]
 > Die Grenzwerte in diesem Thema unterscheiden sich von den aktuellen Grenzwerten für in-Place-eDiscovery in Exchange Online und für das eDiscovery Center in SharePoint Online. 
   
-Auf das Feature für die Inhaltssuche im Security & Compliance Center werden verschiedene Einschränkungen angewendet. Dazu gehören Suchvorgänge, die auf der Seite für die **Inhaltssuche** ausgeführt werden, und Suchvorgänge, die einem eDiscovery-Fall zugeordnet sind. Diese Beschränkungen sind nützlich, um die Integrität und Qualität der Dienste sicherzustellen, die an Office 365-Organisationen bereitgestellt werden. Es gibt auch Beschränkungen im Zusammenhang mit der Indizierung von e-Mail-Nachrichten in Exchange Online für die Suche. Die Grenzwerte für die Inhaltssuche oder die e-Mail-Indizierung können nicht geändert werden, aber Sie sollten sich dessen bewusst sein, damit Sie bei der Planung, Ausführung und Problembehandlung von Inhalts suchen diese Einschränkungen berücksichtigen können. 
+Auf das Feature für die Inhaltssuche im Security & Compliance Center werden verschiedene Einschränkungen angewendet. Dazu gehören Suchvorgänge, die auf der Seite für die **Inhaltssuche** ausgeführt werden, und Suchvorgänge, die einem eDiscovery-Fall zugeordnet sind. Diese Grenzwerte helfen, die Integrität und Qualität von Diensten zu gewährleisten, die Organisationen bereitgestellt werden. Es gibt auch Beschränkungen im Zusammenhang mit der Indizierung von e-Mail-Nachrichten in Exchange Online für die Suche. Die Grenzwerte für die Inhaltssuche oder die e-Mail-Indizierung können nicht geändert werden, aber Sie sollten sich dessen bewusst sein, damit Sie bei der Planung, Ausführung und Problembehandlung von Inhalts suchen diese Einschränkungen berücksichtigen können. 
   
 ## <a name="content-search-limits"></a>Grenzwerte für die Inhaltssuche
 
@@ -41,8 +41,8 @@ In der folgenden Tabelle sind die Such Grenzwerte im Security & Compliance Cente
 |Die maximale Anzahl von Inhalts suchen, die in Ihrer Organisation gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> |
 |Die maximale Anzahl von Inhalts suchen, die ein einzelner Benutzer gleichzeitig starten kann. Beachten Sie, dass dieser Grenzwert wahrscheinlich betroffen ist, wenn der Benutzer versucht, mehrere Suchvorgänge mithilfe des Befehls **get \| -ComplianceSearch Start-ComplianceSearch** in Security & Compliance Center PowerShell zu starten.  <br/> |10    <br/> |
 |Die maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen.  <br/> |100  <br/> |
-|Die maximale Anzahl von Elementen, die in allen Benutzerpostfächern gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |1,000  <br/> |
-|Die maximale Anzahl von Benutzerpostfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann. Wenn mehr als 1000 Postfächer vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1000-Postfächer mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |1,000  <br/> |
+|Die maximale Anzahl von Elementen, die in allen Benutzerpostfächern gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |1.000  <br/> |
+|Die maximale Anzahl von Benutzerpostfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann. Wenn mehr als 1000 Postfächer vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1000-Postfächer mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |1.000  <br/> |
 |Die maximale Anzahl von Elementen, die in SharePoint und OneDrive für Unternehmen Websites gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |200  <br/> |
 |Die maximale Anzahl von Websites (in SharePoint und OneDrive für Unternehmen), die in der Vorschau für Suchergebnisse angezeigt werden können. Wenn mehr als 200 Websites insgesamt Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die Top 200-Websites mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |200  <br/> |
 |Die maximale Anzahl von Elementen pro Postfach für Öffentliche Ordner, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen.  <br/> |100  <br/> |
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind die Such Grenzwerte im Security & Compliance Cente
 |Die maximale Anzahl von Zeichen für die Suchabfrage (einschließlich Operatoren und Bedingungen) für eine Inhaltssuche.  <br/><br/> **Hinweis:** Dieser Grenzwert wird wirksam, nachdem die Abfrage erweitert wurde, was bedeutet, dass die Abfrage für jedes der Schlüsselwörter erweitert wird. Wenn beispielsweise eine Suchabfrage 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen enthält, wird die Abfrage 15 Mal erweitert, wobei jeweils die anderen Parameter und Bedingungen in der Abfrage enthalten sind. Obwohl die Anzahl der Zeichen in der Suchabfrage möglicherweise unter dem Grenzwert liegt, ist dies die Erweiterte Abfrage, die dazu beitragen kann, diesen Grenzwert zu überschreiten.  <br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>1</sup> <br/> |
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix Platzhalter zum Suchen nach einem genauen Ausdruck in einer Suchabfrage oder bei Verwendung eines Präfix Platzhalters und des **near** -oder **ONEAR** -booleschen Operators verwendet wird.  <br/> |10.000 <sup>2</sup> <br/> |
 |Die minimale Anzahl von Alphazeichen für Präfix Platzhalter; beispielsweise `time*`,, `one*`, oder `set*`.  <br/> |3  <br/> |
-|Die maximale Anzahl von Postfächern in einer Inhaltssuche, in der Sie Elemente löschen können, indem Sie die Aktion "suchen und löschen" ausführen (mit dem Befehl " **New-ComplianceSearchAction-Purge** "). Wenn die Inhaltssuche, für die Sie eine Löschaktion durchführen, mehr Quellpostfächer als diesen Grenzwert enthält, schlägt die Löschaktion fehl. Weitere Informationen zur Suche und Bereinigung finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Office 365 Organisation](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
+|Die maximale Anzahl von Postfächern in einer Inhaltssuche, in der Sie Elemente löschen können, indem Sie die Aktion "suchen und löschen" ausführen (mit dem Befehl " **New-ComplianceSearchAction-Purge** "). Wenn die Inhaltssuche, für die Sie eine Löschaktion durchführen, mehr Quellpostfächer als diesen Grenzwert enthält, schlägt die Löschaktion fehl. Weitere Informationen zur Suche und Bereinigung finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Organisation](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
    
 > [!NOTE]
 > <sup>1</sup> beim Durchsuchen von SharePoint-und OneDrive für Unternehmen-Speicherorte werden die Zeichen in den URLs der gesuchten Websites mit diesem Grenzwert berechnet. <br/> <sup>2</sup> für nicht-Phrasen-Abfragen (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) wird ein spezieller Präfix Index verwendet. Dies weist darauf hin, dass ein Wort in einem Dokument auftritt, aber nicht dort, wo es im Dokument vorkommt. Um eine Phrasenabfrage (ein Stichwort Wert mit doppelten Anführungszeichen) durchführen zu können, müssen wir die Position im Dokument für die Wörter im Ausdruck vergleichen. Dies bedeutet, dass der Präfix Index für Phrase-Abfragen nicht verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, zu denen das Präfix erweitert wird. beispielsweise `"time*"` kann auf erweitert werden `"time OR timer OR times OR timex OR timeboxed OR …"`. Die maximale Anzahl von Varianten, in die das Wort erweitert werden kann (nicht die Anzahl der Dokumente, die der Abfrage entsprechen) ist 10.000. Für nicht-Phrasen-Ausdrücke gibt es keine Obergrenze. 
@@ -78,14 +78,14 @@ Es gibt zusätzliche Beschränkungen im Zusammenhang mit unterschiedlichen Aspek
   
 - [Exportieren von Inhaltssuchergebnissen ](export-search-results.md#export-limits)
     
-- [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md)
+- [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md)
     
-- [Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
+- [Untersuchen von teilweise indizierten Elementen in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
 - [Such Grenzwerte für SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
 Informationen zu Inhalts suchen finden Sie unter:
   
-- [Inhaltssuche in Office 365](content-search.md)
+- [Inhaltssuche in Microsoft 365](content-search.md)
     
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)

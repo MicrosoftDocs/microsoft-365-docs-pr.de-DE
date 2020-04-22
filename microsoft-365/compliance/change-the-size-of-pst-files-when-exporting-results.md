@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnissen auf Ihren Computer heruntergeladen werden.
-ms.openlocfilehash: 9deb90e688617981499bee286b95a0442fa1a1b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5fde9bbb37f6e22c49049c892a1b69b07d15bef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595932"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636323"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
-Wenn Sie das e-Mail-Ergebnis einer eDiscovery-Suche mithilfe des Office 365 eDiscovery-Exporttools aus den verschiedenen Microsoft eDiscovery-Tools exportieren, beträgt die Standardgröße einer PST-Datei, die exportiert werden kann, 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit dem Sie die Suchergebnisse exportieren. Ein Grund hierfür ist, dass eine PST-Datei auf Wechselmedien, einer solchen DVD, einer CD oder einem USB-Laufwerk angepasst werden kann. 
+Wenn Sie das eDiscovery-Export Tool verwenden, um die e-Mail-Ergebnisse einer eDiscovery-Suche aus den verschiedenen Microsoft eDiscovery-Tools zu exportieren, beträgt die Standardgröße einer PST-Datei, die exportiert werden kann, 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit dem Sie die Suchergebnisse exportieren. Ein Grund hierfür ist, dass eine PST-Datei auf Wechselmedien, einer solchen DVD, einer CD oder einem USB-Laufwerk angepasst werden kann. 
   
 > [!NOTE]
-> Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie das Tool für die Inhaltssuche im Security and Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden.
+> Das eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie das Inhalts Such Tool im Security & Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Erstellen einer Registrierungseinstellung zum Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
 Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebnisse einer eDiscovery-Suche exportieren.
   
-1. Schließen Sie das Office 365 eDiscovery-Export Tool, wenn es geöffnet ist. 
+1. Schließen Sie das eDiscovery-Export Tool, wenn es geöffnet ist. 
     
 2. Speichern Sie den folgenden Text in einer Fenster Registrierungsdatei unter Verwendung eines filename-Suffixes von. reg; Beispiel: PstExportSize. reg. 
     
@@ -74,11 +74,11 @@ Kunden neigen dazu, die Größenbeschränkung so zu verringern, dass die Sucherg
   
  **Auf welchem Computer muss ich diese Funktion ausführen?**
   
-Sie müssen die Registrierungseinstellung auf einem lokalen Computer ändern, auf dem Sie das Office 365 eDiscovery-Export Tool ausführen.
+Sie müssen die Registrierungseinstellung auf einem lokalen Computer ändern, auf dem Sie das eDiscovery-Export Tool ausführen.
   
  **Muss ich den Computer neu starten, nachdem ich diese Einstellung geändert habe?**
   
-Nein, Sie müssen den Computer nicht neu starten. Wenn das Office 365 eDiscovery-Export Tool jedoch aktiv ist, müssen Sie es schließen und neu starten, nachdem Sie diese Einstellung geändert haben.
+Nein, Sie müssen den Computer nicht neu starten. Wenn das eDiscovery-Export Tool jedoch aktiv ist, müssen Sie es schließen und neu starten, nachdem Sie diese Einstellung geändert haben.
   
  **Wird ein vorhandener Registrierungsschlüssel bearbeitet oder wird ein neuer Schlüssel erstellt?**
   

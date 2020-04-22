@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604182"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635965"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
-Die Verhinderung vor Datenverlust ist ein Compliance-Feature von Office 365, mit dem Ihre Organisation verhindern kann, dass vertrauliche Informationen absichtlich oder versehentlich an unerwünschte Personen übertragen werden. DLP hat seinen Ursprung in Exchange Server und Exchange Online und kann auch in SharePoint Online und OneDrive for Business angewendet werden.
+Bei der Verhinderung von Datenverlust (Data Loss Prevention, DLP) handelt es sich um eine Compliance-Funktion, mit der Ihre Organisation die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen verhindern kann DLP hat seinen Ursprung in Exchange Server und Exchange Online und kann auch in SharePoint Online und OneDrive for Business angewendet werden.
 
 DLP verwendet ein Inhaltsanalysemodul, um den Inhalt von E-Mail-Nachrichten und Dateien zu überprüfen und nach vertraulichen Informationen wie Kreditkartennummern und personenbezogenen Informationen (Personally Identifiable Information, PII) zu suchen. Vertrauliche Informationen sollten in der Regel nicht per E-Mail gesendet oder in Dokumente einbezogen werden, ohne zusätzliche Schritte auszuführen, wie z. B. die Verschlüsselung der betreffenden E-Mail-Nachrichten oder Dateien. Mithilfe von DLP können Sie vertrauliche Informationen identifizieren und die folgenden Aktionen vorsehen:
 
@@ -57,7 +57,7 @@ Wenn die Risiken von Datenverlust nicht ganz offensichtlich sind, ist es schwier
 
 DLP-Richtlinien für Exchange Online können über das Exchange Admin Center verwaltet werden. Sie können DLP-Richtlinien für alle Arbeitsvorgänge aber auch über das Security & Compliance Center konfigurieren, weshalb ich dies für Demonstrationen in diesem Artikel verwenden werde. Im Security & Compliance Center finden Sie die DLP-Richtlinien unter **Verhinderung von Datenverlust** > **Richtlinien**. Klicken Sie auf **Richtlinie erstellen**, um zu beginnen.
 
-Office 365 bietet eine Reihe von [DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md), die Sie zum Erstellen von DLP-Richtlinien verwenden können. Nehmen wir an, Sie sind Inhaber eines australischen Unternehmens. Sie können die Richtlinienvorlagen so filtern, dass nur diejenigen angezeigt werden, die für Australien relevant sind und in die allgemeinen Kategorien Finanzen, Medizin und Gesundheit sowie Datenschutz fallen.
+Microsoft 365 bietet eine Reihe von [DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md) , die Sie zum Erstellen von DLP-Richtlinien verwenden können. Nehmen wir an, Sie sind Inhaber eines australischen Unternehmens. Sie können die Richtlinienvorlagen so filtern, dass nur diejenigen angezeigt werden, die für Australien relevant sind und in die allgemeinen Kategorien Finanzen, Medizin und Gesundheit sowie Datenschutz fallen.
 
 ![Option zur Auswahl von Land oder Region](../media/DLP-create-test-tune-choose-country.png)
 

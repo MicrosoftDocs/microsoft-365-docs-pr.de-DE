@@ -1,5 +1,5 @@
 ---
-title: Unbegrenzte Archivierung in Office 365 aktivieren – Administratorhilfe
+title: Unbegrenzte Archivierung aktivieren – Administratorhilfe
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,21 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
-description: 'Für Administratoren: Hier erfahren Sie, wie Sie die automatisch erweiterte Archivierung in Office 365 aktivieren, wodurch Ihren Benutzern Unbegrenzter Speicherplatz für Ihre Exchange Online Postfächer zur Verfügung steht. Sie können die automatisch expandierende Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Für Administratoren: Informationen zum Aktivieren der automatisch wachsenden Archivierung, die Ihren Benutzern unbegrenzten Speicherplatz für Ihre Exchange Online Postfächer bietet. Sie können die automatisch expandierende Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
+ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074687"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631710"
 ---
-# <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Unbegrenzte Archivierung in Office 365 aktivieren – Administratorhilfe
+# <a name="enable-unlimited-archiving--admin-help"></a>Unbegrenzte Archivierung aktivieren – Administratorhilfe
 
-Sie können das Exchange Online automatisch expandierende Archivierungsfeature in Office 365 verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu aktivieren. Wenn die automatisch expandierende Archivierung aktiviert ist, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn er sich dem Speichergrenzwert nähert. Das Ergebnis ist eine unbegrenzte Speicherkapazität für Postfächer. Sie können die automatisch expandierende Archivierung für jeden in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
+Sie können die Exchange Online automatisch expandierende Archivierungsfunktion verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu aktivieren. Wenn die automatisch expandierende Archivierung aktiviert ist, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn er sich dem Speichergrenzwert nähert. Das Ergebnis ist eine unbegrenzte Speicherkapazität für Postfächer. Sie können die automatisch expandierende Archivierung für jeden in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation oder ein Mitglied der Rollengruppe Organisationsverwaltung in Ihrer Exchange Online Organisation sein, um die automatisch expandierende Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle "e-Mail-Empfänger" zugewiesen ist, um die automatisch erweiterte Archivierung für bestimmte Benutzer zu aktivieren.
+- Sie müssen ein globaler Administrator in Ihrer Organisation oder ein Mitglied der Rollengruppe Organisationsverwaltung in Ihrer Exchange Online Organisation sein, um die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle "e-Mail-Empfänger" zugewiesen ist, um die automatisch erweiterte Archivierung für bestimmte Benutzer zu aktivieren.
     
 - Das Archivpostfach eines Benutzers muss aktiviert sein, damit die automatisch erweiterte Archivierung aktiviert werden kann. Einem Benutzer muss eine Exchange Online Plan 2-Lizenz zugewiesen sein, um das Archivpostfach zu aktivieren. Wenn einem Benutzer eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, um das Archivpostfach zu aktivieren. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Security & Compliance Center](enable-archive-mailboxes.md).
     
@@ -58,11 +58,11 @@ Sie können die automatisch expandierende Archivierung für Ihre gesamte Organis
 
 Anstatt die automatische Erweiterung der Archivierung für jeden Benutzer in Ihrer Organisation zu aktivieren, können Sie ihn nur für bestimmte Benutzer aktivieren. Dies ist möglicherweise der Grund, weshalb nur einige Benutzer eine große Speicherkapazität für Archive benötigen.
   
-Wenn Sie die automatisch expandierende Archivierung für einen bestimmten Benutzer und das Postfach des Benutzers in on Hold aktivieren oder einer Office 365 Aufbewahrungsrichtlinie zugewiesen sind, werden die folgenden zwei Konfigurationsänderungen vorgenommen:
+Wenn Sie die automatisch expandierende Archivierung für einen bestimmten Benutzer aktivieren und das Postfach des Benutzers in on Hold oder einer Aufbewahrungsrichtlinie zugewiesen ist, werden die folgenden zwei Konfigurationsänderungen vorgenommen:
   
 - Das Speicherkontingent für das primäre Archivpostfach des Benutzers wird um 10 GB (von 100 GB auf 110 GB) erhöht. Das Kontingent für die Archiv Warnung wird ebenfalls um 10 GB (von 90 GB auf 100 GB) erhöht.
     
-- Das Speicherkontingent für den Ordner "refundable Items" im primären Postfach des Benutzers wird um 10 GB (auch von 100 GB auf 110 GB) erhöht. Das Warn Kontingent für das Wiederherstellungselement wird ebenfalls um 10 GB (von 90 GB auf 100 GB) erhöht. Diese Änderungen gelten nur, wenn das Postfach in on gespeichert oder einer Office 365 Aufbewahrungsrichtlinie zugewiesen ist.
+- Das Speicherkontingent für den Ordner "refundable Items" im primären Postfach des Benutzers wird um 10 GB (auch von 100 GB auf 110 GB) erhöht. Das Warn Kontingent für das Wiederherstellungselement wird ebenfalls um 10 GB (von 90 GB auf 100 GB) erhöht. Diese Änderungen gelten nur, wenn das Postfach in on gespeichert oder einer Aufbewahrungsrichtlinie zugewiesen ist.
     
 Dieser zusätzliche Speicherplatz wurde hinzugefügt, um Speicherprobleme zu vermeiden, die auftreten können, bevor das automatisch expandierende Archiv bereitgestellt wird. Zusätzlicher Speicherplatz *wird nicht* hinzugefügt, wenn Sie die automatisch expandierende Archivierung für Ihre gesamte Organisation aktivieren, wie im vorherigen Abschnitt beschrieben. 
   
@@ -119,7 +119,7 @@ Beachten Sie nach Aktivierung der automatisch expandierenden Archivierung Folgen
     
 - Die automatisch expandierende Archivierung wird für Cloud-basierte Archivpostfächer in einer Exchange-hybridbereitstellung für Benutzer unterstützt, die über ein lokales primäres Postfach verfügen. Nachdem die automatische Erweiterung der Archivierung für ein cloudbasierten Archivpostfach aktiviert wurde, können Sie dieses Archivpostfach jedoch nicht mehr an die lokale Exchange-Organisation zurück an Bord nehmen. Die automatisch expandierende Archivierung wird in Exchange Server 2010 nicht für lokale Postfächer unterstützt.
     
-- Eine Liste der Outlook-Clients, die Benutzer für den Zugriff auf Elemente im zusätzlichen Speicherbereich in Ihrem Archivpostfach verwenden können, finden Sie im Abschnitt "Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv" in Übersicht über die [unbegrenzte Archivierung in Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Eine Liste der Outlook-Clients, die Benutzer für den Zugriff auf Elemente im zusätzlichen Speicherbereich in Ihrem Archivpostfach verwenden können, finden Sie im Abschnitt "Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv" in [Overview of Unlimited](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)Archiving.
     
 - Wie bereits erläutert, wird dem Speicherkontingent des primären Archivpostfachs des Benutzers 10 GB hinzugefügt (und dem Ordner "refundable Items", wenn das Postfach in der Warteschleife steht), wenn Sie den Befehl **Enable-Mailbox-AutoExpandingArchive** ausführen. Dadurch wird ein zusätzlicher Speicherplatz bereitgestellt, bis der automatisch erweiterte Speicherplatz (der bis zu 30 Tage dauern kann) bereitgestellt wird. Dieser zusätzliche Speicherplatz wird nicht hinzugefügt, wenn Sie das **Paket-OrganizationConfig-AutoExpandingArchive** ausführen, um die automatisch expandierende Archivierung für alle Postfächer in Ihrer Organisation zu aktivieren. Wenn Sie die automatische Erweiterung der Archivierung für die gesamte Organisation aktiviert haben, jedoch zusätzliche 10 GB Speicherplatz für einen bestimmten Benutzer hinzufügen müssen, können Sie den Befehl **Enable-Mailbox-AutoExpandingArchive** für dieses Postfach ausführen. Es wird eine Fehlermeldung angezeigt, die besagt, dass die automatisch expandierende Archivierung bereits aktiviert wurde, der zusätzliche Speicherplatz wird jedoch dem Postfach hinzugefügt. 
 

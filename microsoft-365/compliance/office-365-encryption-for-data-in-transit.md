@@ -1,5 +1,5 @@
 ---
-title: Office 365 Verschlüsselung für Daten während der Übertragung
+title: Verschlüsselung von Daten während der Übertragung
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: eine kurze Erläuterung der Art und Weise, wie Microsoft Daten bei der Übertragung verschlüsselt.'
-ms.openlocfilehash: cd261621320d4543a99836e8699c537ed10a8dcf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597872"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637331"
 ---
-# <a name="office-365-encryption-for-data-in-transit"></a>Office 365 Verschlüsselung für Daten während der Übertragung
+# <a name="encryption-for-data-in-transit"></a>Verschlüsselung für Daten während der Übertragung
 
-Neben dem Schutz von Kundendaten im Rest verwendet Microsoft Verschlüsselungstechnologien, um Office 365 Kundendaten während der Übertragung zu schützen. 
+Neben dem Schutz von Kundendaten im Rest verwendet Microsoft Verschlüsselungstechnologien zum Schutz von Kundendaten während der Übertragung. 
 
 Die Daten werden in die Übertragung eingegangen:
 
-- Wenn ein Clientcomputer mit einem Office 365 Server kommuniziert;
-- Wenn ein Office 365 Server mit einem anderen Office 365-Server kommuniziert; und
-- Wenn ein Office 365 Server mit einem nicht Office 365-Server kommuniziert (beispielsweise Exchange Online Zustellung von e-Mails an einen fremden e-Mail-Server).
+- Wenn ein Clientcomputer mit einem Microsoft-Server kommuniziert;
+- Wenn ein Microsoft-Server mit einem anderen Microsoft-Server kommuniziert; und
+- Wenn ein Microsoft-Server mit einem nicht-Microsoft-Server kommuniziert (beispielsweise Exchange Online Zustellung von e-Mails an einen fremden e-Mail-Server).
 
-Die Kommunikation zwischen Datencentern zwischen Office 365 Servern erfolgt über TLS oder IPSec, und alle kundenorientierten Server verhandeln mit TLS mit Clientcomputern eine sichere Sitzung (beispielsweise wird Exchange Online TLS 1,2 mit 256-Bit-Verschlüsselungsstärke verwendet (FIPS 140-2 Ebene 2 – überprüft). (Siehe [technische Referenzdetails zur Verschlüsselung in Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) für eine Liste der von Office 365 unterstützten TLS-Verschlüsselungs Pakete.) Dies gilt für die Protokolle, die von Clients wie Outlook, Skype for Business und Outlook im Internet (beispielsweise http, POP3 usw.) verwendet werden.
+Die Kommunikation zwischen Datencentern zwischen Microsoft-Servern erfolgt über TLS oder IPSec, und alle kundenorientierten Server verhandeln mit TLS mit Clientcomputern eine sichere Sitzung (beispielsweise verwendet Exchange Online TLS 1,2 mit 256-Bit-Verschlüsselungsstärke (FIPS 140-2 Level 2-validiert). (Siehe [technische Referenzdetails zur Verschlüsselung in Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) für eine Liste der von Office 365 unterstützten TLS-Verschlüsselungs Pakete.) Dies gilt für die Protokolle, die von Clients wie Outlook, Skype for Business und Outlook im Internet (beispielsweise http, POP3 usw.) verwendet werden.
 
 Die öffentlichen Zertifikate werden von Microsoft IT SSL mit SSLAdmin, einem internen Microsoft-Tool zum Schutz der Vertraulichkeit von übermittelten Informationen, ausgestellt. Alle von Microsoft ausgestellten Zertifikate weisen mindestens 2048 Bits auf, und die WebTrust-Compliance erfordert SSLAdmin, um sicherzustellen, dass Zertifikate nur für öffentliche IP-Adressen ausgestellt werden, die Microsoft gehören. Alle IP-Adressen, die dieses Kriterium nicht erfüllen, werden durch einen Ausnahme Prozess weitergeleitet.
 
@@ -41,10 +41,10 @@ Alle Implementierungsdetails wie die verwendete TLS-Version, ob das Forward-Gehe
 
 - [Office 365 Portal](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
-- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
+- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
 - [Skype for Business (SIP)](https://www.ssllabs.com/ssltest/analyze.html?d=sipdir.online.lync.com)
 - [Skype for Business (im Internet)](https://www.ssllabs.com/ssltest/analyze.html?d=webdir.online.lync.com&hideResults=on)
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)
 - [Microsoft Teams](https://www.ssllabs.com/ssltest/analyze.html?d=teams.microsoft.com&latest)
 
-Für Exchange Online Schutz variieren URLs je nach Mandantennamen; Allerdings können alle Kunden Office 365 mit **Microsoft-com.Mail.Protection.Outlook.com**testen.
+Für Exchange Online Schutz variieren URLs je nach Mandantennamen; Allerdings können alle Kunden Microsoft 365 mit **Microsoft-com.Mail.Protection.Outlook.com**testen.

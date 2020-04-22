@@ -13,16 +13,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Überprüfen Sie Ihre Stichwortabfrage auf die Inhaltssuche nach Fehlern und Tippfehlern, wie nicht unterstützten Zeichen und booleschen Kleinbuchstaben Operatoren, bevor Sie die Suche ausführen. Wenn ein Fehler vorliegt, schlagen wir eine überarbeitete Abfrage vor.
-ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636313"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
 
-Wenn Sie eine Inhaltssuche erstellen oder bearbeiten, können Sie Office 365 Ihre Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren mit Kleinbuchstaben überprüfen lassen. Wie? Klicken Sie auf der Seite Abfrage einer Inhaltssuche einfach auf **Abfrage für Tippfehler überprüfen** . 
+Wenn Sie eine Inhaltssuche erstellen oder bearbeiten, kann Microsoft 365 die Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren in Kleinbuchstaben überprüfen lassen. Wie? Klicken Sie auf der Seite Abfrage einer Inhaltssuche einfach auf **Abfrage für Tippfehler überprüfen** . 
   
 ![Klicken Sie auf "Abfrage für Tippfehler überprüfen", um Ihre Suchabfrage auf nicht unterstützte Zeichen zu überprüfen.](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

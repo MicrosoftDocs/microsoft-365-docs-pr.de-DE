@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Wir erstellen kontinuierlich neue Artikel, aktualisieren bestehende und nehmen daran Änderungen basierend auf Ihrem Feedback vor. Erfahren Sie, was in diesem Monat alles neu ist.
-ms.openlocfilehash: 1f52139df6585cc0e8de240544befa3dd2175f67
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
-ms.translationtype: HT
+ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929349"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632160"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -53,15 +53,15 @@ ms.locfileid: "42929349"
 
 ### <a name="customer-key"></a>Kundenschlüssel
 
-[Dienstverschlüsselung mit Kundenschlüssel in Office 365](customer-key-overview.md) (neu)<br>Neuer Artikel über den Kundenschlüssel, zu verwandten Konzepten wie BitLocker und Dienstverschlüsselung und deren Zusammenwirken.
+[Dienst Verschlüsselung mit Kundenschlüssel](customer-key-overview.md) (neu)<br>Neuer Artikel über den Kundenschlüssel, zu verwandten Konzepten wie BitLocker und Dienstverschlüsselung und deren Zusammenwirken.
 
-[Verwalten des Kundenschlüssels für Office 365](customer-key-manage.md) (neu)<br>Anweisungen zum Verwalten des Kundenschlüssels nach der Einrichtung, einschließlich der Schritte zum Verwalten vorhandener Datenverschlüsselungsrichtlinien und Schlüsseltresor-Berechtigungen, geschätzter Zeiten für die Ausführung der Vorgänge, wie überprüft werden kann, ob die Verschlüsselung funktioniert hat, und wie der Office 365-Dienst beendet werden kann.
+[Verwalten des Kunden Schlüssels](customer-key-manage.md) (neu)<br>Anweisungen zum Verwalten von Kunden Schlüsseln nach dem Setup, einschließlich der Schritte zum Verwalten vorhandener DEPs und wichtiger Tresor Berechtigungen, geschätzte Zeiten für den Abschluss von Vorgängen, überprüfen, ob die Verschlüsselung funktioniert hat und wie Sie den Dienst beenden.
 
 [Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels](customer-key-availability-key-roll.md) (neu)<br>Beschreibt das Rollen der vom Kunden verwalteten Schlüssel für den Kundenschlüssel.
 
-[Erfahren Sie mehr über den Verfügbarkeitsschlüssel für Office 365-Kundenschlüssel](customer-key-availability-key-understand.md) (neu)<br>Detaillierte Erläuterung des Verfügbarkeitsschlüssels – wann und wie er zum Wiederherstellen nach Verlust eines Schlüssels verwendet wird, wo er sich in der Kundenschlüssel-Hierarchie befindet und vieles mehr.
+Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](customer-key-availability-key-understand.md) (neu)<br>Detaillierte Erläuterung des Verfügbarkeitsschlüssels – wann und wie er zum Wiederherstellen nach Verlust eines Schlüssels verwendet wird, wo er sich in der Kundenschlüssel-Hierarchie befindet und vieles mehr.
 
-[Einrichten des Kundenschlüssels für Office 365](customer-key-set-up.md) (aktualisiert)<br>Dieser Artikel (zuvor "Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln") befasst sich ausschließlich mit dem Einrichten des Kundenschlüssels für Office 365, einschließlich aktualisierter Anweisungen.
+Einrichten [des Kunden Schlüssels für Microsoft 365](customer-key-set-up.md) (aktualisiert)<br>In diesem Artikel geht es zuvor um die Einrichtung des Kunden Schlüssels für Office 365, einschließlich aktualisierter Anweisungen, mit dem Titel "Steuern der Daten in Microsoft 365 mit dem Kundenschlüssel".
 
 ### <a name="data-classification"></a>Datenklassifizierung
 
@@ -107,7 +107,7 @@ Die folgenden Artikel wurden zur Unterstützung der offiziellen Veröffentlichun
 
 [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (aktualisiert)<br>Der Abschnitt über das Konfigurieren des automatischen Bezeichnens von Office-Apps enthält jetzt die neue Option zum Verwenden von trainierbaren Klassifizierern.
 
-[Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md) (aktualisiert)<br>Allgemein überarbeitet für eine bessere Lesbarkeit und technische Erläuterungen. Außerdem wurden aufgrund Kundenfeedback Links zum [Azure AD-Artikel](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) zum Aktivieren der Vorschau und zum Anwenden von Vertraulichkeitsbezeichnungen auf Office 365-Gruppen im Azure-Portal hinzugefügt. Darüber hinaus wurde ein neuer Abschnitt über die Überwachung von Vertraulichkeitsbezeichnungsaktivitäten hinzugefügt.
+[Verwenden von Sensitivitäts Bezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md) (aktualisiert)<br>Allgemein überarbeitet für eine bessere Lesbarkeit und technische Erläuterungen. Außerdem wurden pro Kundenfeedback Links zum [Azure AD Artikel](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) hinzugefügt, um die Vorschau und das Anwenden von Sensitivitäts Bezeichnungen auf Microsoft 365-Gruppen im Azure-Portal zu aktivieren. Darüber hinaus wurde ein neuer Abschnitt über die Überwachung von Vertraulichkeitsbezeichnungsaktivitäten hinzugefügt.
 
 [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md) (aktualisiert)<br>Zu den verschiedenen Aktualisierungen zählen Erläuterungen aufgrund von Kundenfeedback zur Funktionsweise dieses Features, wobei hervorgehoben wird, dass neue Funktionen nur für neue und bearbeitete Dateien gelten, sowie zu einer neuen Einschränkung, die möglicherweise nur während einer Testphase beim Löschen von Bezeichnungen angezeigt wird.
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Kommunikations Kompatibilität
+title: Erste Schritte mit der Kommunikationscompliance
 description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Mitarbeiterkommunikation für die Überprüfung.
 f1.keywords:
 - NOCSH
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193513"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708394"
 ---
-# <a name="configure-communication-compliance-in-microsoft-365"></a>Konfigurieren der Kommunikations Kompatibilität in Microsoft 365
+# <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
 >[!IMPORTANT]
->Dieses Thema bezieht sich auf die Konfiguration der Kommunikations Kompatibilität in einem Microsoft 365-Abonnement. Wenn Sie Aufsichtsrichtlinien für ein Office 365-Abonnement konfigurieren möchten, finden Sie weitere Informationen unter [configure Supervision for Office 365](supervision-policies.md).
+>Dieses Thema bezieht sich auf die Konfiguration der Kommunikations Kompatibilität in einem Microsoft 365-Abonnement. Wenn Sie Aufsichtsrichtlinien für ein Microsoft 365-Abonnement konfigurieren möchten, finden Sie weitere Informationen unter [configure Supervision for Microsoft 365](supervision-policies.md).
 
 Verwenden Sie Kommunikationsrichtlinien zur Erfassung von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Wenn Sie überprüfen möchten, wie Contoso eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams und Exchange Online Kommunikation schnell konfiguriert hat, lesen Sie diese [Fallstudie](communication-compliance-case-study.md).
 
@@ -53,7 +53,7 @@ Benutzern, die in Kommunikationsrichtlinien Richtlinien enthalten sind, muss ein
 >[!IMPORTANT]
 >Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn die aktuellen Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements übergehen, die die gleichen oder zusätzliche Compliance-Features enthalten.
 
-Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management ausprobieren möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Office 365-Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
+Wenn Sie keinen Office 365 Enterprise E5-Plan haben und das Insider Risk Management ausprobieren möchten, können Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Office 365 Enterprise E5 anmelden.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikations Kompatibilität
 
@@ -66,7 +66,7 @@ Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance 
 
 1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
-2. Wechseln Sie im Microsoft Office 365 Security and Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+2. Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
 3. Wählen Sie **Erstellen** aus.
 
@@ -82,11 +82,11 @@ Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance 
 
 Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen im Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Office 365 Überwachungsprotokolls
+## <a name="step-2-required-enable-the-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Überwachungsprotokolls
 
 Für die Kommunikations Kompatibilität müssen Überwachungsprotokolle Warnungen anzeigen und von den Prüfern vorgenommene Korrekturaktionen nachverfolgen. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer definierten Organisationsrichtlinie zugeordnet sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert.
 
-Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
+Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Schritt 3 (optional): Einrichten von Gruppen für die Kommunikations Kompatibilität
 
@@ -96,15 +96,15 @@ Verwenden Sie das folgende Diagramm, um Sie bei der Konfiguration von Gruppen in
 
 | **Richtlinien Mitglied** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
-|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
-| Prüfer | Keine | Verteilergruppen <br> Dynamische Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
+|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen |
+| Prüfer | Keines | Verteilergruppen <br> Dynamische Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
   
-Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
+Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
 
 Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 - [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Übersicht über Office 365 Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Übersicht über Microsoft 365-Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>Schritt 4 (erforderlich): Erstellen einer Kommunikations Konformitätsrichtlinie
   
@@ -119,7 +119,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 4. Wählen Sie **Richtlinie erstellen** aus, um eine neue Richtlinie aus einer Vorlage zu erstellen und zu konfigurieren oder um eine benutzerdefinierte Richtlinie zu erstellen und zu konfigurieren.
 
-    Wenn Sie eine integrierte Richtlinienvorlage zum Erstellen einer Richtlinie auswählen, können Sie Folgendes tun:
+    Wenn Sie eine Richtlinienvorlage zum Erstellen einer Richtlinie auswählen, können Sie Folgendes tun:
 
     - Bestätigen oder aktualisieren Sie den Richtliniennamen. Richtliniennamen können nach der Erstellung der Richtlinie nicht mehr geändert werden.
     - Wählen Sie die zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten.
@@ -139,7 +139,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
     >[!CAUTION]
     >Wir veraltern die integrierte Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
-
+    
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
     - Überprüfen Sie Ihre Richtlinienauswahl und erstellen Sie die Richtlinie.
 

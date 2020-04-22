@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521466"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632960"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Manage Holds in Advanced eDiscovery
 
-Sie können einen erweiterten eDiscovery-Fall zum Erstellen von Haltebereichen verwenden, um Inhalte beizubehalten, die für Ihren Fall relevant sein könnten. Mithilfe der erweiterten eDiscovery-Aufbewahrungsfunktionen können Sie Aufbewahrungen und deren Datenquellen platzieren. Außerdem können Sie Postfächern und OneDrive für Unternehmen Websites einen Aufbewahrungs freien Speicherplatz hinzufügen. Sie können auch das Gruppenpostfach, die SharePoint-Website und die OneDrive für Unternehmen Website für eine Office 365 Gruppe aufbewahren. Ebenso können Sie das Postfach und die Website, die Microsoft Teams zugeordnet sind, aufbewahren. Wenn Sie inhaltsspeicherorte in der Warteschleife platzieren, wird der Inhalt so lange aufbewahrt, bis Sie die Depotbank freigeben, einen bestimmten Datenspeicherort entfernen oder die Aufbewahrungsrichtlinie vollständig löschen.
+Sie können einen erweiterten eDiscovery-Fall zum Erstellen von Haltebereichen verwenden, um Inhalte beizubehalten, die für Ihren Fall relevant sein könnten. Mithilfe der erweiterten eDiscovery-Aufbewahrungsfunktionen können Sie Aufbewahrungen und deren Datenquellen platzieren. Außerdem können Sie Postfächern und OneDrive für Unternehmen Websites einen Aufbewahrungs freien Speicherplatz hinzufügen. Sie können auch das Gruppenpostfach, die SharePoint-Website und die OneDrive für Unternehmen Website für eine Microsoft 365-Gruppe aufbewahren. Ebenso können Sie das Postfach und die Website, die Microsoft Teams zugeordnet sind, aufbewahren. Wenn Sie inhaltsspeicherorte in der Warteschleife platzieren, wird der Inhalt so lange aufbewahrt, bis Sie die Depotbank freigeben, einen bestimmten Datenspeicherort entfernen oder die Aufbewahrungsrichtlinie vollständig löschen.
 
 ## <a name="manage-custodian-based-holds"></a>Verwalten von Depot basierten Haltestatus
 
@@ -69,17 +69,17 @@ So erstellen Sie einen Aufbewahrungs freien Speicher für einen erweiterten eDis
   
 8. Wählen Sie die inhaltsspeicherorte aus, die Sie in die Warteschleife stellen möchten. Sie können Postfächer, Websites und öffentliche Ordner in der Warteschleife platzieren.
 
-   a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams** auswählen, um die Aufbewahrungszeit für Postfächer festzulegen. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für eine Office 365 Gruppe oder ein Microsoft-Team aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams** auswählen, um die Aufbewahrungszeit für Postfächer festzulegen. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder festhalten zu können), damit Sie in der Warteschleife platziert werden. Sie können das zugeordnete Postfach auch für eine Microsoft 365-Gruppe oder ein Microsoft-Team aufbewahren. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
  
     > [!NOTE]
     > Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um festzulegende Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen.
 
-    b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Microsoft-Team-oder Office 365 Gruppe hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+    b. **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint und OneDrive für Unternehmen Websites für die Aufbewahrung festzulegen. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Microsoft 365-Gruppe oder ein Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
-     Tipps zum Platzieren von Microsoft Teams und Office 365 Gruppen und zum Archivieren finden Sie im Abschnitt [Positionieren von Microsoft Teams und Office 365 Gruppen unterhalten](#place-a-hold-on-microsoft-teams-and-office-365-groups) .
+     Im Abschnitt **häufig gestellte Fragen** finden Sie Tipps dazu, wie Sie Microsoft 365-Gruppen und Microsoft Teams in die Warteschleife versetzen.
 
     > [!NOTE]
-    > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`UPN) (beispielsweise). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines Speichers ohne Freiheitsentzug ist und sein UPN geändert wird, müssen Sie den Haltestatus aktualisieren und auf die neue OneDrive-URL deuten. Weitere Informationen finden Sie unter [wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+    > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`UPN) (beispielsweise). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines Speichers ohne Freiheitsentzug ist und sein UPN geändert wird, müssen Sie den Haltestatus aktualisieren und auf die neue OneDrive-URL deuten. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Öffentliche Exchange-Ordner** – verschieben Sie die Umschaltfläche in die Position alle, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Beachten Sie, dass Sie keine bestimmten öffentlichen Ordner für die Aufbewahrung auswählen können. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
 
@@ -119,11 +119,10 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
 
 Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es sehr ähnlich, dass Sie in Advanced eDiscovery in die Warteschleife versetzt werden. 
 
-Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folgenden Aspekte.
-
-- Zum Platzieren von Inhalten in Office 365 Gruppen und in Microsoft Teams müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.
+- **Wie kann ich eine zusätzliche Microsoft 365-Gruppe oder Microsoft Teams-Website einer Depotbank zuordnen? Und was ist mit dem Platzieren eines nicht-Freiheits behaltes für Microsoft 365-Gruppen und Microsoft Teams?** Microsoft Teams basiert auf Microsoft 365-Gruppen. Daher ist es sehr ähnlich, dass Sie in einem eDiscovery-Fall aufbewahrt werden. Beachten Sie beim Platzieren von Microsoft 365-Gruppen und Microsoft Teams die folgenden Aspekte.
+  - Um Inhalte in Microsoft 365-Gruppen und Microsoft Teams in der Warteschleife zu platzieren, müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet ist.
   
-- Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Office 365 Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Office 365 Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
+  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Microsoft 365-Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Microsoft 365-Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden beispielsweise ausgewählte Eigenschaften für eine Microsoft 365-Gruppe mit dem Namen "Senior Leadership Team" angezeigt:
 
 
     ```text
@@ -137,9 +136,9 @@ Beachten Sie beim Platzieren von Office 365 Gruppen und Microsoft Teams die folg
     > [!NOTE]
     > Zum Ausführen des Get-UnifiedGroup-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde.
 
-- Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit als Verwalter hinzufügen oder Ihre Datenquellen halten. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team für eine bestimmte Depotbank in die Warteschleife stellen müssen, sollten Sie die Gruppen Website und das Gruppenpostfach der Depotbank zuordnen (siehe Managing custodys in Advanced eDiscovery). Wenn die Office 365 Gruppe oder das Microsoft-Team nicht auf eine einzelne Depotbank zurückzuführen ist, sollten Sie die Quelle einem nicht-Freiheitsentzug-Aufbewahrungsplatz hinzufügen. 
-
-- Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite **Start > Gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen:
+ - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Microsoft 365-Gruppen oder Microsoft-Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Microsoft 365-Gruppe oder ein Microsoft-Team halten, werden nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit als Verwalter hinzufügen oder Ihre Datenquellen halten. Wenn Sie daher eine Microsoft 365-Gruppe oder ein Microsoft-Team für eine bestimmte Depotbank in der Warteschleife platzieren möchten, sollten Sie die Gruppen Website und das Gruppenpostfach der Depotbank zuordnen (siehe Managing custodys in Advanced eDiscovery). Wenn die Microsoft 365-Gruppe oder das Microsoft-Team nicht auf eine einzige Depotbank zurückzuführen ist, sollten Sie die Quelle einem nicht-Freiheitsentzug-Aufbewahrungsplatz hinzufügen. 
+ 
+ - Wenn Sie eine Liste der Mitglieder einer Microsoft 365-Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite Start > Gruppen im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

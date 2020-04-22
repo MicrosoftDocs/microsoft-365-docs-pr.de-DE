@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631334"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
 Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. Sie können eine der folgenden Vorlagen verwenden oder die Regeln anpassen, um die spezifischen Compliance-Anforderungen Ihrer Organisation zu erfüllen.
   
-Office 365 umfasst mehr als 40 verwendungsbereite Vorlagen, mit denen Sie eine Vielzahl von allgemeinen behördlichen und geschäftlichen Richtlinienanforderungen erfüllen können. Es gibt z. B. DLP-Richtlinienvorlagen für:
+Microsoft 365 umfasst über 40 vorgefertigte Vorlagen, mit denen Sie eine breite Palette allgemeiner Richtlinien-und Geschäftsrichtlinien Anforderungen erfüllen können. Es gibt z. B. DLP-Richtlinienvorlagen für:
   
 - Gramm-Leach-Bliley Act (GLBA)
     
@@ -58,7 +58,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
@@ -110,13 +110,13 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     ![Schaltfläche ' Regel bearbeiten '](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Zum Hinzufügen eines Typs für vertrauliche Informationen **** im Abschnitt \> Bedingungen **Hinzufügen oder Ändern von Typen**. Wählen Sie dann unter **Hinzufügen oder ändern Typen** \> die **** \> Option Select **US Bank Account Number** und **u.s. Driver es License Number** \> **Add** \> **done**aus.
+10. Zum Hinzufügen eines Typs für vertrauliche Informationen **Conditions** im Abschnitt \> Bedingungen **Hinzufügen oder Ändern von Typen**. Wählen Sie dann unter **Hinzufügen oder ändern Typen** \> die **Add** \> Option Select **US Bank Account Number** und **u.s. Driver es License Number** \> **Add** \> **done**aus.
     
     ![Option zum Hinzufügen oder Ändern von Typen](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
     ![Bereich "Typen hinzufügen oder ändern"](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
-11. Wenn Sie die Anzahl der Instanzen von vertraulichen Informationen ändern möchten, die zum Auslösen der Regel erforderlich sind, wählen Sie unter **** **Instanz count** \> den Wert Min \> für jeden Typ 1 aus. Die minimale Anzahl darf nicht leer sein. Die maximale Anzahl kann leer sein; ein leerer **Max** -Wert, der in **any**konvertiert werden soll.
+11. Wenn Sie die Anzahl der Instanzen von vertraulichen Informationen ändern möchten, die zum Auslösen der Regel erforderlich sind, wählen Sie unter **min** **Instanz count** \> den Wert Min \> für jeden Typ 1 aus. Die minimale Anzahl darf nicht leer sein. Die maximale Anzahl kann leer sein; ein leerer **Max** -Wert, der in **any**konvertiert werden soll.
     
     Nach Abschluss des Vorgangs sollte die minimale Anzahl für alle Typen vertraulicher Informationen **1** sein, und die maximale Anzahl sollte **beliebig**sein. Mit anderen Worten: jedes Vorkommen dieses Typs vertraulicher Informationen erfüllt diese Bedingung.
     

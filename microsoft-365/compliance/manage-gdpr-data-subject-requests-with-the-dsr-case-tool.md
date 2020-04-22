@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Das dsgvo gibt EU-Bürgern (sogenannte Datensubjekte) bestimmte Rechte für Ihre personenbezogenen Daten. Diese Rechte umfassen das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen im elektronischen Format. Eine formelle Anforderung einer betroffenen Person, eine Aktion für Ihre personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072082"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635925"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security & Compliance Center
 
@@ -33,11 +33,11 @@ Wenn Sie Untersuchungen als Reaktion auf einen von einer Person in Ihrer Organis
   
 - Beliebiges Benutzerpostfach in Ihrer Organisation. Dies umfasst Skype for Business Unterhaltungen und 1:1-Chats in Microsoft Teams.
     
-- Alle Postfächer, die einer Office 365 Gruppe und allen Team Postfächern in Microsoft Teams zugeordnet sind
+- Alle Postfächer, die einer Microsoft 365-Gruppe und allen Team Postfächern in Microsoft Teams zugeordnet sind
     
 - Alle SharePoint Online-Websites und OneDrive for Business-Konten in Ihrer Organisation
     
-- Alle Teams-Websites und Office 365 Gruppen Websites in Ihrer Organisation
+- Alle Teams-Websites und Microsoft 365-Gruppen Websites in Ihrer Organisation
     
 - Alle öffentlichen Ordner in Exchange Online
     
@@ -76,18 +76,18 @@ Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zum Verwa
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern
 
-Standardmäßig kann ein Office 365 globaler Administrator im Security & Compliance Center auf das DSR Case-Tool zugreifen. Andere Benutzer wie ein Datenschutzbeauftragter, ein Personalmanager oder andere Personen, die an DSR-Untersuchungen beteiligt sind, haben keinen Zugriff auf das DSR-Fall Tool und müssen die entsprechenden Berechtigungen für den Zugriff auf das Tool erhalten. Die einfachste Möglichkeit besteht darin, auf die Seite **Berechtigungen** im Security & Compliance Center zu wechseln und Benutzer zur eDiscovery-Manager-Rollengruppe hinzuzufügen. Sie müssen diese Berechtigungen auch zuweisen, damit Sie Sie als Mitglieder des in Schritt 2 erstellten DSR-Falls hinzufügen können. 
+Standardmäßig kann ein globaler Administrator im Security & Compliance Center auf das DSR Case-Tool zugreifen. Andere Benutzer wie ein Datenschutzbeauftragter, ein Personalmanager oder andere Personen, die an DSR-Untersuchungen beteiligt sind, haben keinen Zugriff auf das DSR-Fall Tool und müssen die entsprechenden Berechtigungen für den Zugriff auf das Tool erhalten. Die einfachste Möglichkeit besteht darin, auf die Seite **Berechtigungen** im Security & Compliance Center zu wechseln und Benutzer zur eDiscovery-Manager-Rollengruppe hinzuzufügen. Sie müssen diese Berechtigungen auch zuweisen, damit Sie Sie als Mitglieder des in Schritt 2 erstellten DSR-Falls hinzufügen können. 
   
 Eine Schritt-für-Schritt-Anleitung finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> Standardmäßig verfügen ein Office 365 globaler Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen (siehe Schritt 4 in diesem Artikel). Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der Rollengruppe "eDiscovery-Manager" hinzufügen. 
+> Standardmäßig verfügen ein globaler Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen (siehe Schritt 4 in diesem Artikel). Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der Rollengruppe "eDiscovery-Manager" hinzufügen. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Schritt 2: Erstellen eines DSR-Falls und Hinzufügen von Mitgliedern
 
 Der nächste Schritt besteht darin, einen DSR-Fall zu erstellen. Wenn Sie eine Anfrage erstellen, können Sie die integrierte Suche starten, oder Sie können den Fall erstellen, ohne die Suche zu starten. Mit dem folgenden Verfahren werden Sie aufgefordert, den Fall zu erstellen, ohne die Suche zu starten und anschließend anzuzeigen, wie der Anfrage Mitglieder hinzugefügt werden.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich bei Office 365 mit ihrem geschäftlichen oder Schulkonto an. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
     
 2. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken ![Sie dann](../media/ITPro-EAC-AddIcon.gif) auf Symbol hinzufügen **neuer DSR-Fall**.
     
@@ -170,7 +170,7 @@ Nachdem Sie die integrierte Suche ausgeführt haben, können Sie die Suchergebni
 Wenn Sie Suchergebnisse exportieren, können Postfachelemente in PST-Dateien oder als einzelne Nachrichten heruntergeladen werden. Wenn Sie Inhalte aus SharePoint-und OneDrive-Konten exportieren, werden Kopien von systemeigenen Office-Dokumenten und anderen Dokumenten exportiert. In den Suchergebnissen ist eine Ergebnisdatei enthalten, die Informationen zu allen exportierten Elementen enthält. Ausführlichere Informationen zum Exportieren finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
   
 > [!NOTE]
-> Ein Office 365 globaler Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center) verfügen standardmäßig nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen. Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der Rollengruppe "eDiscovery-Manager" hinzufügen. 
+> Standardmäßig verfügen ein globaler Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center) nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen. Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der Rollengruppe "eDiscovery-Manager" hinzufügen. 
   
 Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Systemanforderungen erfüllen:
   
@@ -182,7 +182,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
   - Microsoft Edge
     
-    Oder:
+    Oder
     
   - Microsoft Internet Explorer 10 und höhere Versionen
     
@@ -203,7 +203,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
   
     a. Wählen Sie unter **Ausgabeoptionen**die erste Option (**alle Elemente, ausgenommen diejenigen, die über ein nicht erkanntes Format verfügen, verschlüsselt sind oder aus anderen Gründen nicht indiziert**wurden) aus, um nur indizierte Elemente zu exportieren. Der Grund, warum Sie nicht teilweise indizierte Elemente aus der integrierten Suche exportieren möchten, liegt daran, dass teilweise indizierte Elemente von anderen Benutzern ebenfalls exportiert werden. Um nur die teilweise indizierten Elemente für die betroffene Person zu exportieren, empfiehlt es sich, eine separate Suche zu erstellen. Weitere Informationen finden Sie unter [Export von teilweise indizierten Elementen](#exporting-partially-indexed-items) im Abschnitt "Weitere Informationen zum Verwenden des DSR-Fall Tools".
     
-    b. Wählen Sie unter **Exchange-Inhalt exportieren als**die dritte Option aus, **eine PST-Datei, die alle Nachrichten in einem einzelnen Ordner enthält**. Da einige der Ergebnisse möglicherweise für Elemente gelten, die im Postfach eines anderen Benutzers entstanden sind, wird mit dieser Option nur das Element in einem einzelnen Ordner aufgelistet, ohne das tatsächliche Postfach anzugeben, und es ist die beste Option, wenn Sie die Ergebnisse nach dem nächsten Element de duplizieren (empfohlen). . Mit dieser Option können die Elemente des Datensubjekts auch in chronologischer Reihenfolge überprüft werden (Elemente werden nach dem gesendeten Datum sortiert), ohne dass Sie durch die ursprüngliche Postfachordnerstruktur für jedes Element navigieren müssen.
+    b. Wählen Sie unter **Exchange-Inhalt exportieren als**die dritte Option aus, **eine PST-Datei, die alle Nachrichten in einem einzelnen Ordner enthält**. Da einige der Ergebnisse möglicherweise für Elemente gelten, die im Postfach eines anderen Benutzers entstanden sind, wird mit dieser Option nur das Element in einem einzelnen Ordner aufgelistet, ohne das tatsächliche Postfach anzugeben, und es ist die beste Option, wenn Sie die Ergebnisse wie im nächsten Element empfohlen deduplizieren. Mit dieser Option können die Elemente des Datensubjekts auch in chronologischer Reihenfolge überprüft werden (Elemente werden nach dem gesendeten Datum sortiert), ohne dass Sie durch die ursprüngliche Postfachordnerstruktur für jedes Element navigieren müssen.
     
     c. Wählen Sie die Option **Deduplizierung aktivieren** aus, um doppelte e-Mail-Nachrichten auszuschließen. Diese Option wird empfohlen, da die integrierte Suche alle Postfächer in Ihrer Organisation durchsucht. Wenn also mehrere Kopien derselben Nachricht in den durchsuchten Postfächern gefunden werden, bedeutet diese Option, dass nur eine Kopie einer Nachricht exportiert wird. Mit dieser Option werden Nachrichten zusammen in einer PST-Datei in einem einzigen Ordner exportiert, was zu einer optimalen Benutzererfahrung für DSR-Exportanforderungen führt. Der Bericht results. CSV Export listet alle Orte auf, an denen doppelte Nachrichten gefunden wurden.
     
@@ -221,7 +221,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
 9. Klicken ![Sie oben auf der](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
     
-10. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool Microsoft Office 365**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
+10. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
     
 11. Fügen Sie im **eDiscovery-Export Tool**den Exportschlüssel, den Sie in Schritt 8 kopiert haben, in das entsprechende Feld ein.
     
@@ -285,7 +285,7 @@ Die folgenden Abschnitte enthalten weitere Informationen zur Verwendung des DSR-
 
 [Exportieren von teilweise indizierten Elementen](#exporting-partially-indexed-items)
 
-[Suchen und Exportieren von Daten aus Microsoft Teams und Office 365 Gruppen](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Suchen und Exportieren von Daten aus Microsoft Teams und Microsoft 365-Gruppen](#searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups)
 
 [Durchsuchen öffentlicher Exchange-Ordner](#searching-exchange-public-folders)
   
@@ -352,7 +352,7 @@ Wenn Sie Daten aus dem Office-Roamingdienst exportieren, werden die Daten in ein
     
 8. Klicken ![Sie oben auf der](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
     
-9. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool Microsoft Office 365**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
+9. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
     
 10. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 7 kopiert haben, in das entsprechende Feld ein.
     
@@ -395,15 +395,15 @@ Weitere Informationen zu teilweise indizierten Elementen finden Sie unter:
 
 - [Exportieren von teilweise indizierten Elementen](export-search-results.md#exporting-partially-indexed-items)
     
-### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>Suchen und Exportieren von Daten aus Microsoft Teams und Office 365 Gruppen
+### <a name="searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups"></a>Suchen und Exportieren von Daten aus Microsoft Teams und Microsoft 365-Gruppen
 
 Unterhaltungen, die Teil der Chat Liste in Microsoft Teams sind (als teamchats oder One-to-One-Chat bezeichnet) werden im Exchange Online Postfach der Benutzer gespeichert, die an den Chats teilnehmen. Außerdem werden die Dateien, die eine Person in einem eins-zu-eins-Chat freigibt, im OneDrive-Konto der Person gespeichert, die die Datei freigibt. Da die integrierte Suche alle Postfächer und OneDrive-Konten in der Organisation durchsucht, werden Team-Chats und Dokumente, die in einer Chatsitzung freigegeben sind (dass die betroffene Person erstellt oder hochgeladen hat) von der integrierten Suche in einem DSR-Fall zurückgegeben.
   
 Alternativ werden Unterhaltungen, die Teil eines Teams-Kanals (auch Kanal Nachrichten genannt) sind, in dem Postfach gespeichert, das einem Team zugeordnet ist. Diese Arten von Unterhaltungen, an denen die betroffene Person teilgenommen hat, werden auch von der integrierten Suche zurückgegeben, da alle mit Microsoft Teams verknüpften Postfächer durchsucht werden. Darüber hinaus werden Dateien, die ein Datensubjekt in einem Teams-Kanal freigibt, auf der SharePoint-Website des Teams gespeichert. Dateien, die von der betroffenen Person erstellt oder hochgeladen wurden, werden von der integrierten Suche in einem DSR-Fall zurückgegeben, da die mit Microsoft Teams verknüpften Websites in der Suche enthalten sind.
   
-Ebenso sind Postfächer und SharePoint-Websites, die einer Office 365 Gruppe entsprechen, ebenfalls in der integrierten Suche enthalten. Dies bedeutet, dass e-Mail-Nachrichten, die von der betroffenen Person gesendet oder empfangen werden, und Dateien zurückgegeben werden, die von der betroffenen Person erstellt oder hochgeladen wurden 
+Ebenso sind Postfächer und SharePoint-Websites, die einer Microsoft 365-Gruppe entsprechen, ebenfalls in der integrierten Suche enthalten. Dies bedeutet, dass e-Mail-Nachrichten, die von der betroffenen Person gesendet oder empfangen werden, und Dateien zurückgegeben werden, die von der betroffenen Person erstellt oder hochgeladen wurden 
   
-Weitere Informationen zum Verwenden der Inhaltssuche zum Suchen nach Elementen in Microsoft Teams und Office 365 Gruppen oder zum Abrufen einer Liste von Mitgliedern finden Sie im Abschnitt "Durchsuchen von Microsoft Teams und Office 365 Gruppen" in der [Inhaltssuche in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+Weitere Informationen zum Verwenden der Inhaltssuche zum Suchen nach Elementen in Microsoft Teams und Microsoft 365-Gruppen oder zum Abrufen einer Liste von Mitgliedern finden Sie im Abschnitt "Durchsuchen von Microsoft Teams und Microsoft 365 Gruppen" in der [Inhaltssuche in Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups). 
   
 ### <a name="searching-exchange-public-folders"></a>Durchsuchen öffentlicher Exchange-Ordner
 

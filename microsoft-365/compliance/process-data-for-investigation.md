@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cdde5b4a569c1653c3ed48453f30c26081980307
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601722"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632230"
 ---
 # <a name="process-data-for-an-investigation"></a>Verarbeiten von Daten für eine Untersuchung
 
 Verarbeitung ist der Prozess der Datei Identifikation, Erweiterung eingebetteter Dokumente und Anlagen, Textextraktion, OCR (optische Zeichenerkennung) von Bilddateien und Indizierung dieses Inhalts.  
 
-Wenn eine Person auf der Registerkarte **Personen von Interesse** hinzugefügt wird, werden alle teilweise indizierten Elemente aus Office 365 verarbeitet, damit Sie vollständig durchsuchbar sind.  Ebenso wird der Inhalt auch verarbeitet, wenn der Registerkarte **Evidence** aus Office 365 oder nicht Office 365 Datenquellendaten hinzugefügt werden.
+Wenn eine Person auf der Registerkarte **Personen von Interesse** hinzugefügt wird, werden alle teilweise indizierten Elemente von Microsoft 365 verarbeitet, damit Sie vollständig durchsuchbar sind.  Ebenso wird der Inhalt auch verarbeitet, wenn der Registerkarte **Beweise** aus Microsoft 365-oder nicht-Microsoft 365-Datenquellendaten hinzugefügt werden.
 
 Die Registerkarte **Verarbeitung** in Data Investigations (Preview) bietet Transparenz in den Status der *erweiterten Indizierung* für alle diese Szenarien.
 

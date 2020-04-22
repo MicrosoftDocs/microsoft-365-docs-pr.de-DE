@@ -1,5 +1,5 @@
 ---
-title: Office 365 Verschlüsselung für Skype, OneDrive, SharePoint und Exchange
+title: Verschlüsselung für Skype, OneDrive, SharePoint und Exchange
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Zusammenfassung: eine Beschreibung der Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.'
-ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604162"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637285"
 ---
-# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 Verschlüsselung für Skype for Business, OneDrive für Unternehmen, SharePoint Online und Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Verschlüsselung in Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online
 
-Office 365 ist eine äußerst sichere Umgebung, die umfassenden Schutz auf mehreren Ebenen bietet: physische Sicherheit von Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit.
+Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren Schichten: Sicherheit von physischen Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -36,7 +36,7 @@ Skype for Business Kundendaten können in Ruhe in Form von Dateien oder Präsent
 
 Alle Kundendateien in SharePoint Online werden durch eindeutige, dateispezifische Schlüssel geschützt, die immer exklusiv für einen einzelnen Mandanten sind. Die Schlüssel werden entweder vom SharePoint Online Dienst erstellt und verwaltet oder wenn der Kundenschlüssel von Kunden verwendet, erstellt und verwaltet wird. Wenn eine Datei hochgeladen wird, wird die Verschlüsselung von SharePoint Online im Kontext der Upload-Anforderung ausgeführt, bevor Sie an Azure Storage gesendet wird. Wenn eine Datei heruntergeladen wird, ruft SharePoint Online die verschlüsselten Kundendaten aus dem Azure-Speicher basierend auf der eindeutigen Dokument-ID ab und entschlüsselt die Kundendaten vor dem Senden an den Benutzer. Azure Storage hat keine Möglichkeit, die Kundendaten zu entschlüsseln oder sogar zu identifizieren oder zu verstehen. Alle Verschlüsselung und Entschlüsselung erfolgen in denselben Systemen, die die Mandanten Isolierung erzwingen, die Azure Active Directory und SharePoint Online sind.
 
-Mehrere Arbeitslasten in Office 365 Speichern von Daten in SharePoint Online, einschließlich Microsoft Teams, in dem alle Dateien in SharePoint Online gespeichert sind, und OneDrive für Unternehmen, die SharePoint Online für den Speicher verwendet. Alle in SharePoint Online gespeicherten Kundendaten werden verschlüsselt (mit einem oder mehreren AES 256-Bit-Schlüsseln) und wie folgt über das Rechenzentrum verteilt. (In jedem Schritt dieses Verschlüsselungsprozesses wird FIPS 140-2 Level 2 validiert. Weitere Informationen zur FIPS 140-2-Konformität finden Sie unter [FIPS 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
+Mehrere Arbeitslasten in Microsoft 365 speichern Daten in SharePoint Online, einschließlich Microsoft Teams, in dem alle Dateien in SharePoint Online gespeichert werden, und OneDrive für Unternehmen, die SharePoint Online für den Speicher verwendet. Alle in SharePoint Online gespeicherten Kundendaten werden verschlüsselt (mit einem oder mehreren AES 256-Bit-Schlüsseln) und wie folgt über das Rechenzentrum verteilt. (In jedem Schritt dieses Verschlüsselungsprozesses wird FIPS 140-2 Level 2 validiert. Weitere Informationen zur FIPS 140-2-Konformität finden Sie unter [FIPS 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
 
 - Jede Datei wird je nach Dateigröße in einen oder mehrere Chunks aufgeteilt. Jeder Chunk wird mit seinem eigenen eindeutigen AES 256-Bit-Schlüssel verschlüsselt.
 - Wenn eine Datei aktualisiert wird, wird das Update auf die gleiche Weise behandelt: die Änderung wird in einen oder mehrere Chunks aufgeteilt, und jedes Segment wird mit einem separaten eindeutigen Schlüssel verschlüsselt.
@@ -83,6 +83,6 @@ In OneDrive for Business und SharePoint Online gibt es zwei Szenarien, in denen 
 
 Exchange Online verwendet BitLocker für alle Postfachdaten, und die BitLocker-Konfiguration wird in [BitLocker for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)beschrieben. Durch die Verschlüsselung auf Dienstebene werden alle Postfachdaten auf Postfachebene verschlüsselt. 
 
-Zusätzlich zur Dienst Verschlüsselung unterstützt Office 365 den Kundenschlüssel, der auf der Dienst Verschlüsselung basiert. Kundenschlüssel ist eine von Microsoft verwaltete Schlüssel Option für Exchange Online Dienst Verschlüsselung, die auch in der Roadmap von Microsoft zur Verfügung steht. Diese Verschlüsselungsmethode bietet erhöhten Schutz, der von BitLocker nicht gewährt wird, da Sie die Trennung von Serveradministratoren und kryptografischen Schlüsseln ermöglicht, die für die Entschlüsselung von Daten erforderlich sind, und weil die Verschlüsselung direkt auf die Daten angewendet wird (in Kontrast mit BitLocker, das die Verschlüsselung auf dem logischen Datenträgervolume verwendet) alle Kundendaten, die von einem Exchange-Server kopiert werden, bleiben verschlüsselt.
+Zusätzlich zur Dienst Verschlüsselung unterstützt Microsoft 365 den Kundenschlüssel, der auf der Dienst Verschlüsselung basiert. Kundenschlüssel ist eine von Microsoft verwaltete Schlüssel Option für Exchange Online Dienst Verschlüsselung, die auch in der Roadmap von Microsoft zur Verfügung steht. Diese Verschlüsselungsmethode bietet erhöhten Schutz, der von BitLocker nicht gewährt wird, da Sie die Trennung von Serveradministratoren und kryptografischen Schlüsseln ermöglicht, die für die Entschlüsselung von Daten erforderlich sind, und da die Verschlüsselung direkt auf die Daten angewendet wird (im Gegensatz zu BitLocker, das die Verschlüsselung auf dem logischen Datenträgervolume verwendet), bleiben alle von einem Exchange-Server kopierten Kundendaten verschlüsselt
 
 Der Bereich für die Exchange Online Dienst Verschlüsselung sind Kundendaten, die im Rest in Exchange Online gespeichert werden. (Skype for Business speichert fast alle vom benutzergenerierten Inhalte im Exchange Online Postfach des Benutzers und erbt daher das Dienst Verschlüsselungsfeature von Exchange Online.)

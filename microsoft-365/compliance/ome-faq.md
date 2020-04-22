@@ -1,5 +1,5 @@
 ---
-title: FAQ zur Office 365-Nachrichtenverschlüsselung
+title: Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
+ms.openlocfilehash: 87235d637d4c25f7e63b3b7125ea95c175c8ec3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626883"
 ---
-# <a name="office-365-message-encryption-faq"></a>Häufig gestellte Fragen zur Office 365-Nachrichtenverschlüsselung
+# <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
-Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort. Lesen Sie auch die [häufig gestellten Fragen zum Datenschutz in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) für Antworten auf Fragen zum Datenschutzdienst, Azure Rights Management, in Azure Information Protection.
+Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort. Lesen Sie auch die [häufig gestellten Fragen zum Datenschutz in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) für Antworten auf Fragen zum Datenschutzdienst, Azure Rights Management, in Azure Information Protection.
 
 ## <a name="what-is-office-365-message-encryption-ome"></a>Was ist Office 365 Nachrichtenverschlüsselung (OM)?
 
@@ -45,9 +45,9 @@ Sie können die neuen Funktionen für OM unter den folgenden Bedingungen verwend
 
 Um die neuen OM-Funktionen verwenden zu können, benötigen Sie einen der folgenden Pläne:
   
-- Office 365 Nachrichtenverschlüsselung wird im Rahmen von Office 365 Enterprise E3 und E5, Microsoft Enterprise E3 und E5, Microsoft 365 Business, Office 365 a1, a3 und A5 sowie Office 365 Government G3 und G5 angeboten. Kunden benötigen keine zusätzlichen Lizenzen, um die neuen Schutzfunktionen zu erhalten, die von Azure Information Protection betrieben werden.
+- Office 365 Nachrichtenverschlüsselung wird im Rahmen von Office 365 Enterprise E3 und E5, Microsoft Enterprise E3 und E5, Microsoft 365 Business Premium, Office 365 a1, a3 und A5 sowie Office 365 Government G3 und G5 angeboten. Kunden benötigen keine zusätzlichen Lizenzen, um die neuen Schutzfunktionen zu erhalten, die von Azure Information Protection betrieben werden.
 
-- Sie können auch Azure Information Protection Plan 1 zu den folgenden Plänen hinzufügen, um die neuen Office 365 Nachrichten Verschlüsselungsfunktionen zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Office 365 Business Essentials, Office 365 Business Premium oder Office 365 Enterprise E1.
+- Sie können auch Azure Information Protection Plan 1 zu den folgenden Plänen hinzufügen, um die neuen Office 365 Nachrichten Verschlüsselungsfunktionen zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard oder Office 365 Enterprise E1.
 
 - Jeder Benutzer, der von Office 365 Nachrichtenverschlüsselung profitiert, muss lizenziert sein, damit er von der Funktion abgedeckt wird.
 
@@ -74,7 +74,7 @@ Die neuen Funktionen für Office 365 Nachrichtenverschlüsselung stellen eine We
 |**Senden einer verschlüsselten e-Mail**|Nur über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Exchange-Nachrichtenfluss Regeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Internet initiierter Endbenutzer; oder über Nachrichtenfluss Regeln|
 |**Rechteverwaltung**|-|Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option "nicht weiterleiten", Option "nur verschlüsseln", Standard-und benutzerdefinierte Vorlagen|
 |**Unterstützte Empfängertypen**|Nur externe Empfänger|Nur interne Empfänger|Interne und externe Empfänger|
-|**Erfahrung für Empfänger**|Externe Empfänger haben eine HTML-Nachricht erhalten, die Sie heruntergeladen und in einem Browser geöffnet oder Mobile App heruntergeladen haben.|Interne Empfänger haben nur verschlüsselte e-Mails in Outlook für Windows, Outlook für Mac und Outlook im Internet erhalten.|Interne und externe Empfänger empfangen e-Mails in Outlook für Windows, Outlook für Mac, Outlook im Internet, Outlook für Android und Outlook für IOS oder über ein Webportal, unabhängig davon, ob Sie sich in derselben Office 365 Organisation oder in einer Office 365 Organisation. Das OM-Portal erfordert keinen separaten Download.|
+|**Erfahrung für Empfänger**|Externe Empfänger haben eine HTML-Nachricht erhalten, die Sie heruntergeladen und in einem Browser geöffnet oder Mobile App heruntergeladen haben.|Interne Empfänger haben nur verschlüsselte e-Mails in Outlook für Windows, Outlook für Mac und Outlook im Internet erhalten.|Interne und externe Empfänger empfangen e-Mails in Outlook für Windows, Outlook für Mac, Outlook im Internet, Outlook für Android und Outlook für IOS oder über ein Webportal, unabhängig davon, ob Sie sich in derselben Organisation oder in einer Organisation befinden. Das OM-Portal erfordert keinen separaten Download.|
 |**Holen Sie sich Ihre eigene Schlüssel Unterstützung**|Nicht verfügbar|Nicht verfügbar| BYOK unterstützt|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Wie aktiviere ich die neuen OM-Funktionen für meine Organisation?
@@ -91,7 +91,7 @@ Nein. Wenn Sie Exchange Online mit Active Directory Rights Management Service (A
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Meine Organisation verfügt über eine Exchange-Hybrid Bereitstellung. Kann ich dieses Feature verwenden?
 
-Lokale Benutzer können verschlüsselte e-Mails mit Exchange Online Nachrichtenfluss Regeln senden. Um dies zu erreichen, müssen Sie e-Mails über Exchange Online weiterleiten. Weitere Informationen finden Sie unter [Part 2: Konfigurieren von e-Mail-Fluss von Ihrem e-Mail-Server zu Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+Lokale Benutzer können verschlüsselte e-Mails mit Exchange Online Nachrichtenfluss Regeln senden. Um dies zu erreichen, müssen Sie e-Mails über Exchange Online weiterleiten. Weitere Informationen finden Sie unter [Part 2: Konfigurieren von e-Mail-Fluss von Ihrem e-Mail-Server zu Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Welchen e-Mail-Client muss ich verwenden, um eine OM-verschlüsselte Nachricht zu erstellen? Welche Anwendungen werden für das Senden geschützter Nachrichten unterstützt?
 
@@ -99,7 +99,7 @@ Sie können geschützte Nachrichten aus Outlook 2016 und Outlook 2013 für Windo
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Welche e-Mail-Clients werden zum Lesen und beantworten geschützter e-Mails unterstützt?
 
-Office 365 Benutzer können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie ein nicht Office 365er Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
+Microsoft 365-Benutzer können Outlook für Windows und Mac (2013 und 2016), Outlook im Web und Outlook Mobile (Android und IOS) lesen und darauf antworten. Sie können auch den IOS-systemeigenen e-Mail-Client verwenden, wenn Ihre Organisation dies zulässt. Wenn Sie kein Microsoft 365-Benutzer sind, können Sie verschlüsselte Nachrichten im Web über Ihren Webbrowser lesen und beantworten.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 
@@ -109,7 +109,7 @@ Wenn ein Dateiformat unterstützt wird, beispielsweise eine Word-, Excel-oder Po
   
 ## <a name="are-pdf-file-attachments-supported"></a>Werden PDF-Dateianlagen unterstützt?
 
-Ja! Sie können die Verschlüsselung für PDF-Anlagen für Ihre Office 365 Organisationen aktivieren. Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
+Ja! Sie können die Verschlüsselung für PDF-Anlagen für Ihre Organisation aktivieren. Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -148,7 +148,7 @@ Es gibt einen Verschlüsselungs Bericht im Security and Compliance Center. Weite
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Kann ich Nachrichtenverschlüsselung mit Compliance-Features wie eDiscovery verwenden?
 
-Ja. Alle verschlüsselten e-Mail-Nachrichten können durch Office 365 Compliance-Features erkannt werden.
+Ja. Alle verschlüsselten e-Mail-Nachrichten können von den Microsoft 365-Kompatibilitätsfeatures erkannt werden.
 
 ## <a name="can-i-remove-encryption-from-email"></a>Kann ich die Verschlüsselung aus e-Mails entfernen?
 

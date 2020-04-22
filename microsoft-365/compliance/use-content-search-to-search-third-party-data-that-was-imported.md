@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden
+title: Verwenden der Inhaltssuche zum Durchsuchen von importierten Daten von Drittanbietern
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Office 365 aus einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen oder eine Abfrage zum Suchen nach bestimmten Drittanbieter-Datentypen zu erstellen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Datentypen von Drittanbietern zu durchsuchen, die Sie in Office 365 importieren können.
-ms.openlocfilehash: 005290dc2dae203c4fddc1c78d3007306c613483
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen oder eine Abfrage zum Suchen nach bestimmten Drittanbieter-Datentypen zu erstellen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Drittanbieter-Datentypen zu durchsuchen, die Sie in Microsoft 365 importieren können.
+ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633370"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden
+# <a name="use-content-search-to-search-third-party-imported-data"></a>Verwenden der Inhaltssuche zum Durchsuchen von importierten Daten von Drittanbietern
 
-Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Security #a0 Compliance Center verwenden, um nach Elementen zu suchen, die in Office 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um alle importierten Datenelemente eines Drittanbieters zu durchsuchen, oder Sie können eine Abfrage zum Durchsuchen bestimmter Drittanbieter-Datenelemente erstellen. Sie können auch eine abfragebasierte Office 365-Aufbewahrungsrichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten in Office 365 zu speichern. 
+Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Security & Compliance Center verwenden, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um alle importierten Datenelemente eines Drittanbieters zu durchsuchen, oder Sie können eine Abfrage zum Durchsuchen bestimmter Drittanbieter-Datenelemente erstellen. Darüber hinaus können Sie auch eine abfragebasierte Aufbewahrungsrichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten zu speichern. 
   
-Weitere Informationen zum Importieren von drittanbieterdaten und eine Liste der Datentypen eines Drittanbieters, die Sie in Office 365 importieren können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Office 365](work-with-partner-to-archive-third-party-data.md). 
+Weitere Informationen zum Importieren von drittanbieterdaten und eine Liste der Drittanbieter-Datentypen, die Sie in Microsoft 365 importieren können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Erstellen einer Abfrage zum Durchsuchen aller drittanbieterdaten
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensicherheit in OneDrive for Business und SharePoint Online.
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633340"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Datenverschlüsselung in OneDrive for Business und SharePoint Online
 
@@ -31,9 +31,9 @@ Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensich
   
 ## <a name="overview"></a>Übersicht
 
-Office 365 ist eine äußerst sichere Umgebung, die umfassenden Schutz auf mehreren Ebenen bietet: physische Sicherheit von Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit. Dieser Artikel befasst sich speziell mit der Verschlüsselung der Datensicherheit während der Übertragung und im Ruhezustand für OneDrive for Business und SharePoint Online.
+Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren Schichten: Sicherheit von physischen Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit. Dieser Artikel befasst sich speziell mit der Verschlüsselung der Datensicherheit während der Übertragung und im Ruhezustand für OneDrive for Business und SharePoint Online.
   
-Eine Beschreibung Office 365 Sicherheit insgesamt finden Sie unter [Security in Office 365 White Paper](https://go.microsoft.com/fwlink/p/?LinkId=270895).
+Eine Beschreibung der Sicherheit von Microsoft 365 als Ganzes finden Sie unter [Security White Paper](https://go.microsoft.com/fwlink/p/?LinkId=270895).
   
 Sehen Sie sich im folgenden Video an, wie die Datenverschlüsselung funktioniert.
   
@@ -51,7 +51,7 @@ In OneDrive for Business und SharePoint Online gibt es zwei Szenarien, in denen 
 
 Die Verschlüsselung im Ruhezustand enthält zwei Komponenten: BitLocker-Verschlüsselung auf Datenträgerebene und dateispezifische Verschlüsselung von Kundeninhalten.
   
-BitLocker wird für OneDrive for Business und SharePoint Online im ganzen Dienst bereitgestellt. Die Verschlüsselung per Datei befindet sich auch in OneDrive für Unternehmen und SharePoint Online in Office 365 mehrmandantenfähigen und neuen dedizierten Umgebungen, die auf mehr mandantenfähiger Technologie basieren.
+BitLocker wird für OneDrive for Business und SharePoint Online im ganzen Dienst bereitgestellt. Die Verschlüsselung per Datei befindet sich auch in OneDrive für Unternehmen und SharePoint Online in Microsoft 365 Multi-Mandanten und neue dedizierte Umgebungen, die auf mehr mandantenfähiger Technologie basieren.
   
 Während alle Daten auf einem Datenträger mit BitLocker verschlüsselt werden, geht die Dateiverschlüsselung sogar noch weiter, indem ein eindeutiger Schlüssel für jede Datei eingeschlossen wird. Darüber hinaus wird jede Aktualisierung jeder Datei mit einem eigenen Schlüssel verschlüsselt. Bevor sie gespeichert werden, werden die Schlüssel für die verschlüsselten Inhalte an einem vom Inhalt separaten Speicherort gespeichert. Jeder Schritt der Verschlüsselung verwendet AES (Advanced Encryption Standard, erweiterter Verschlüsselungsstandard) mit 256-Bit-Schlüsseln und ist zu FIPS 140-2 (Federal Information Processing Standard) kompatibel. Die verschlüsselten Inhalte werden auf einer Reihe von Containern im gesamten Rechenzentrum verteilt, und jeder Container besitzt eindeutige Anmeldeinformationen. Diese Anmeldeinformationen werden in einem vom Inhalt oder den Inhaltsschlüsseln separaten physischen Speicherort gespeichert.
   

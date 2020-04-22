@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595412"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637735"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Anmerkungen zur Version für Daten Untersuchungen (Preview) in Microsoft 365
 
-Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 365 verwenden, um datenbezogene Vorfälle zu selektieren, zu untersuchen und zu beheben, beispielsweise einen Vorfall mit Datenüberlauf oder eine interne Untersuchung. Die öffentliche Vorschau der Daten Untersuchungen bietet Ihnen frühzeitigen Zugriff auf die bevorstehenden Funktionen und Updates. Wenn Sie frühzeitig Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Data Investigations (Preview) im Security #a0 Compliance Center. Weitere Informationen finden Sie unter [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md).
+Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 365 verwenden, um datenbezogene Vorfälle zu selektieren, zu untersuchen und zu beheben, beispielsweise einen Vorfall mit Datenüberlauf oder eine interne Untersuchung. Die öffentliche Vorschau der Daten Untersuchungen bietet Ihnen frühzeitigen Zugriff auf die bevorstehenden Funktionen und Updates. Wenn Sie frühzeitig Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Data Investigations (Preview) im Security & Compliance Center. Weitere Informationen finden Sie unter [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md).
 
-## <a name="whats-new"></a>Neuigkeiten 
+## <a name="whats-new"></a>Neuerungen 
 
 - Unter **suchungen** – Sie können Suchvorgänge und Vorfälle gruppieren, indem Sie eine Untersuchung erstellen. Verwalten der Benutzer, die auf die Untersuchung zugreifen können, indem Sie Mitglieder hinzufügen oder entfernen.  Sie können auch Ihre bevorzugten Untersuchungen markieren und kennzeichnen. Verfolgen und Überwachen von Aktivitäten innerhalb und zwischen Untersuchungen mithilfe neuer Dashboards. Nachdem Sie Ihre Untersuchung abgeschlossen haben, können Sie Sie schließen oder löschen.
 
-- **Personen von Interesse** – Wenn Sie Benutzer zu Untersuchungen als interessante Personen hinzufügen, können Sie die Websites Ihres Postfachs, OneDrive für Unternehmen Kontos und Microsoft Teams anzeigen. Sie können Sie verwenden, um Ihre investigativen Inhalts suchen zu bereichern. Um eine Person von Interesse weiter zu untersuchen, können Sie auch Überwachungsdatensätze anzeigen, die sich auf ihre Aktivitäten in Office 365 und anderen Microsoft-Diensten beziehen.
+- **Personen von Interesse** – Wenn Sie Benutzer zu Untersuchungen als interessante Personen hinzufügen, können Sie die Websites Ihres Postfachs, OneDrive für Unternehmen Kontos und Microsoft Teams anzeigen. Sie können Sie verwenden, um Ihre investigativen Inhalts suchen zu bereichern. Um eine Person von Interesse weiter zu untersuchen, können Sie auch Überwachungsdatensätze im Zusammenhang mit ihren Aktivitäten in Microsoft 365 und anderen Microsoft-Diensten anzeigen.
 
 - **Suchen – erstellen** Sie eine organisationsweite Suche mithilfe verschiedener Suchbedingungen. Wenn Sie Benutzer oder Websites kennen, die Sie durchsuchen möchten, können Sie dies tun, indem Sie diese Benutzer als interessante Personen hinzufügen oder Website Standorte im Assistenten zum Erstellen von Such Standorten angeben. 
 
@@ -47,4 +47,4 @@ Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 36
 
 - **Jobs** – Status der lang dauernden Prozesse nachverfolgen.
 
-- **Hartes Löschen von Postfachelementen** -in dringenden Situationen müssen Sie möglicherweise ungültige Elemente dauerhaft löschen. Dazu können Sie den Befehl **New-ComplianceSearchAction-Purge-purgetype HardDelete** in Security #a0 Compliance Center PowerShell ausführen, um Elemente dauerhaft aus Postfächern zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Hartes Löschen von Postfachelementen** -in dringenden Situationen müssen Sie möglicherweise ungültige Elemente dauerhaft löschen. Dazu können Sie den Befehl **New-ComplianceSearchAction-Purge-purgetype HardDelete** in Security & Compliance Center PowerShell ausführen, um Elemente dauerhaft aus Postfächern zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

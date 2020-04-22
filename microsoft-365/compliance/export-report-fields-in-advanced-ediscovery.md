@@ -1,5 +1,5 @@
 ---
-title: Exportieren von Berichtsfeldern in Office 365 Advanced eDiscovery
+title: Exportieren von Berichtsfeldern in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Beschreibt alle Felder, die in den Export Berichten für Advanced eDiscovery enthalten sind.
-ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a7ee8e3971ab2fc921085ca63f7a8451a1597be2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558206"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637807"
 ---
 # <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Exportieren von Berichtsfeldern in Advanced eDiscovery (klassisch)
 
@@ -137,7 +137,7 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
    
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Exportieren von Case-Daten mit Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
   

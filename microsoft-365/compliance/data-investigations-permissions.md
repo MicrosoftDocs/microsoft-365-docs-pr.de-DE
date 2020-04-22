@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie die erforderlichen Berechtigungen für die Verwendung des Tools zur Datenermittlung in Microsoft 365 einrichten.
-ms.openlocfilehash: 855d288c373bd2525afa3b8b7a3bbd894c4683a2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328140"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637757"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Zuweisen von Berechtigungen für Daten Untersuchungen (Vorschau)
 
@@ -40,4 +40,4 @@ So weisen Sie Berechtigungen für die Datenermittlung zu:
 5. Nachdem Sie alle Benutzer hinzugefügt haben, klicken Sie auf **Fertig** und dann auf **Speichern** , um die Änderungen an der Rollengruppe zu speichern.
 
 > [!NOTE]
-> Die Verwaltungsrolle "Data Investigation", die der Rollengruppe "Data Investigator" zugewiesen ist, stellt die erforderlichen Berechtigungen für den Zugriff auf das Tool für die Datenermittlung im Office 365 oder im Microsoft 365 Compliance Center bereit. Standardmäßig ist diese Rolle nicht der Rollengruppe "Organisationsverwaltung" zugewiesen, was bedeutet, dass globale Administratoren in Ihrer Organisation möglicherweise nicht standardmäßig auf das Tool für Daten Ermittlungen zugreifen können. Um dies zu beheben, können Sie der Rollengruppe "Data Investigator" globale Administratoren hinzufügen oder der Rollengruppe "Organisationsverwaltung" die Verwaltungsrolle "Daten Ermittlungsverwaltung" hinzufügen. Eine dritte Option besteht darin, eine benutzerdefinierte Rollengruppe zu erstellen und die Verwaltungsrolle "Data Investigation" (und andere Rollen) zuzuweisen und dann entsprechende Mitglieder hinzuzufügen. Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+> Die Verwaltungsrolle "Data Investigation", die der Rollengruppe "Data Investigator" zugewiesen ist, stellt die erforderlichen Berechtigungen für den Zugriff auf das Tool für die Datenermittlung im Office 365 oder im Microsoft 365 Compliance Center bereit. Standardmäßig ist diese Rolle nicht der Rollengruppe "Organisationsverwaltung" zugewiesen, was bedeutet, dass globale Administratoren in Ihrer Organisation möglicherweise nicht standardmäßig auf das Tool für Daten Ermittlungen zugreifen können. Um dies zu beheben, können Sie der Rollengruppe "Data Investigator" globale Administratoren hinzufügen oder der Rollengruppe "Organisationsverwaltung" die Verwaltungsrolle "Daten Ermittlungsverwaltung" hinzufügen. Eine dritte Option besteht darin, eine benutzerdefinierte Rollengruppe zu erstellen und die Verwaltungsrolle "Data Investigation" (und andere Rollen) zuzuweisen und dann entsprechende Mitglieder hinzuzufügen. Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).

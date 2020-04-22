@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193451"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634187"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -32,10 +32,10 @@ ms.locfileid: "43193451"
 >[!Important]
 >Die Verwendung von PowerShell zum Erstellen und Verwalten von Kommunikations Konformitätsrichtlinien wird nicht unterstützt. Zum Erstellen und Verwalten dieser Richtlinien müssen Sie die Steuerelemente für die Richtlinienverwaltung in der [Microsoft 365 Communication Compliance-Lösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Office 365 Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Office 365 Security & Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
+Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Microsoft 365-Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Security & Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
 >[!NOTE]
->Aufsichtsrichtlinien, die im Office 365 Security and Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
+>Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
 
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 
@@ -43,13 +43,13 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 |**Bereich**|**Richtlinienvorlage**|**Details**|
 |:-----|:-----|:-----|
-| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: Bedrohung, Profanität und sprach Klassifizierung für Belästigung |
+| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
 | **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und-Typen, benutzerdefinierte wörterbuchoption, Anlagen größer als 1 MB |
 | **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
-Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
+Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
 
 >[!IMPORTANT]
 >Für Benutzer, die von Kommunikationsrichtlinien Richtlinien abgedeckt werden, muss entweder eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Kommunikations Kompatibilität testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -62,7 +62,7 @@ Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermi
 
 Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
-Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überprüft die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, scannt die Richtlinie einzelne Benutzerpostfächer.
+Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überprüft die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, scannt die Richtlinie einzelne Benutzerpostfächer.
 
 ## <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 
@@ -71,7 +71,7 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
 - **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats und-Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
     - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
-    - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Team-Kanal oder Office 365 Gruppe, die Sie überprüfen möchten, die einen bestimmten Benutzer enthält, die Kommunikations Konformitätsrichtlinie zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Office 365 Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
+    - **Für Teams-Kanal Kommunikation:** Weisen Sie alle Microsoft Team Channel-oder Microsoft 365-Gruppen zu, die Sie überprüfen möchten, die einen bestimmten Benutzer für die Kommunikations Konformitätsrichtlinie enthalten. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
 
 - **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -116,7 +116,7 @@ Standardmäßig wird die Bedingung " **Direction** " angezeigt und kann nicht en
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Kommunikations Konformitätsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen der Office 365 [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
+Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Kommunikations Konformitätsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen der [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
 
 - Finanzwesen
 - Medizin und Gesundheit
@@ -133,7 +133,7 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 Integrierte Klassifizierungen überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation für unterschiedliche Arten von Kompatibilitätsproblemen. Für Klassifizierungen wird eine Kombination aus künstlicher Intelligenz und Stichwörtern verwendet, um die Sprache in Nachrichten zu identifizieren, die gegen Belästigungs Richtlinien verstoßen könnten. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
 
-Bei der Kommunikations Konformität werden integrierte Klassifizierungen verwendet, um die Kommunikation nach Ausdrücken und Gefühlen für die folgenden Sprachtypen zu überprüfen:
+Kommunikation Compliance integrierte Klassifizierungen überprüfen die Kommunikation nach Ausdrücken und Gefühlen für die folgenden Sprachtypen:
 
 - **Bedrohung**: scannt nach Bedrohungen, um Gewalt oder körperlichen Schaden für eine Person oder Eigenschaft zu begehen.
 - **Belästigung**: Scans für anstößige Verhaltensweisen, die sich an Personen in Bezug auf Rasse, Farbe, Religion und nationale Herkunft ausrichten.
@@ -194,7 +194,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
 
-|**Field**|**Required**| **Details** |
+|**Feld**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
@@ -236,7 +236,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Größe** | Die Größe der Nachricht in KB. |
+| **Size** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |
@@ -244,7 +244,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 
 ## <a name="alert-policies"></a>Warnungsrichtlinien
 
-Nachdem Sie eine Richtlinie konfiguriert haben, wird automatisch eine entsprechende Warnungs Richtlinie erstellt, und Warnungen werden für Nachrichten generiert, die die in der Richtlinie definierten Bedingungen erfüllen. Standardmäßig wird für alle Richtlinien Übereinstimmungen Warnungsauslöser ein Schweregrad von Medium in der zugeordneten Warnungs Richtlinie zugewiesen. Warnungen werden für eine Kommunikations Konformitätsrichtlinie generiert, nachdem die Schwellenwertstufe Aggregations Auslöser in der zugeordneten Office 365 Warnungs Richtlinie erfüllt ist.
+Nachdem Sie eine Richtlinie konfiguriert haben, wird automatisch eine entsprechende Warnungs Richtlinie erstellt, und Warnungen werden für Nachrichten generiert, die die in der Richtlinie definierten Bedingungen erfüllen. Standardmäßig wird für alle Richtlinien Übereinstimmungen Warnungsauslöser ein Schweregrad von Medium in der zugeordneten Warnungs Richtlinie zugewiesen. Warnungen werden für eine Kommunikations Konformitätsrichtlinie generiert, nachdem die Schwellenwertstufe Aggregations Auslöser in der zugeordneten Warnungs Richtlinie erfüllt ist.
 
 Für Kommunikations Konformitätsrichtlinien sind die folgenden Warnungsrichtlinien Werte standardmäßig konfiguriert:
 
@@ -257,7 +257,7 @@ Für Kommunikations Konformitätsrichtlinien sind die folgenden Warnungsrichtlin
 >[!Note]
 >Die Einstellungen für den Warnungsrichtlinien Schwellenwert für Aktivitäten unterstützen einen Mindestwert von 3 oder höher für Kommunikationsrichtlinien.
 
-Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivitäten, den Zeitraum für die Aktivitäten und für bestimmte Benutzer in Warnungsrichtlinien auf der Seite **Warnungsrichtlinien** im Office 365 Security & Compliance Center ändern.
+Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivitäten, den Zeitraum für die Aktivitäten und für bestimmte Benutzer in Warnungsrichtlinien auf der Seite **Warnungsrichtlinien** im Security & Compliance Center ändern.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Ändern des Schweregrads für eine Warnungs Richtlinie
 
@@ -277,16 +277,16 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 7. Wählen Sie **Schließen** aus, um die Seite Warnungsrichtlinien Details zu beenden.
 
-## <a name="audit"></a>Überwachungs
+## <a name="audit"></a>Überwachung
 
 In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Bei diesen Informationen kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
 
 >[!Important]
->Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [Aktivieren des Office 365 Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-office-365-audit-log).
+>Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [Aktivieren des Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Field**|**Details**|
+|**Feld**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |

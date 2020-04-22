@@ -1,5 +1,5 @@
 ---
-title: eDiscovery in Office 365
+title: eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Office 365 Gruppen und Skype for Business Unterhaltungen gefunden wurden.
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Microsoft 365-Gruppen und Skype for Business Unterhaltungen gefunden wurden.
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551216"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631760"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 
-Als eDiscovery (electronic discovery) wird das Identifizieren und Übermitteln elektronischer Informationen bezeichnet, die als Indizien in einem Rechtsstreit verwendet werden können. Mithilfe von eDiscovery-Tools in Microsoft 365 können Sie nach Inhalten in Exchange Online Postfächern, Office 365 Gruppen, Microsoft Teams, SharePoint Online und OneDrive für Unternehmen Websites sowie Skype for Business Unterhaltungen und Jammer Teams suchen. Sie können Postfächer und Websites in derselben eDiscovery-Suche mithilfe des Inhalts Such Tools durchsuchen. Sie können Haupt-eDiscovery-Fälle verwenden, um in Postfächern und Websites gefundene Inhalte zu identifizieren, zu speichern und zu exportieren. Wenn Ihre Organisation über ein Office 365 E5-oder Microsoft 365 E5-Abonnement (oder Verwandte E5-Add-on-Abonnements) verfügt, können Sie Verwalter weiter verwalten und Inhalte mithilfe der erweiterten eDiscovery-Lösung in Microsoft 365 analysieren.
+Als eDiscovery (electronic discovery) wird das Identifizieren und Übermitteln elektronischer Informationen bezeichnet, die als Indizien in einem Rechtsstreit verwendet werden können. Mithilfe von eDiscovery-Tools in Microsoft 365 können Sie nach Inhalten in Exchange Online Postfächern, Microsoft 365-Gruppen, Microsoft Teams, SharePoint Online und OneDrive für Unternehmen Websites sowie Skype for Business Unterhaltungen und Jammer Teams suchen. Sie können Postfächer und Websites in derselben eDiscovery-Suche mithilfe des Inhalts Such Tools durchsuchen. Sie können Haupt-eDiscovery-Fälle verwenden, um in Postfächern und Websites gefundene Inhalte zu identifizieren, zu speichern und zu exportieren. Wenn Ihre Organisation über ein Office 365 E5-oder Microsoft 365 E5-Abonnement (oder Verwandte E5-Add-on-Abonnements) verfügt, können Sie Verwalter weiter verwalten und Inhalte mithilfe der erweiterten eDiscovery-Lösung in Microsoft 365 analysieren.
   
 Microsoft 365 bietet die folgenden eDiscovery-Tools:
   
@@ -43,8 +43,8 @@ Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung des In
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ausführen einer Inhaltssuche](content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe des Inhalts Such Tools Postfächer, öffentliche Ordner, Office 365 Gruppen, Microsoft Teams, SharePoint Online Websites, ein Laufwerk für Geschäftsstandorte und Skype for Business Unterhaltungen in Ihrer Office 365 Organisation in einer einzigen Suche durchsuchen.  <br/> |
-|[Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md) <br/> |Erfahren Sie mehr über die e-Mail-und Dateieigenschaften und Suchbedingungen, die Sie verwenden können, um nach Inhalten in Postfächern und Websites in Ihrer Office 365 Organisation zu suchen.  <br/> |
+|[Ausführen einer Inhaltssuche](content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie das Inhalts Such Tool zum Durchsuchen von Postfächern, öffentlichen Ordnern, Microsoft 365-Gruppen, Microsoft Teams, SharePoint Online Websites, einem Laufwerk für Geschäftsstandorte und Skype for Business Unterhaltungen in Ihrer Organisation in einer einzigen Suche verwenden.  <br/> |
+|[Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md) <br/> |Erfahren Sie mehr über die e-Mail-und Dateieigenschaften und Suchbedingungen, die Sie für die Suche nach Inhalten in Postfächern und Websites in Ihrer Organisation verwenden können.  <br/> |
 |[Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md) <br/> |In diesem Artikel erfahren Sie, wie Sie mithilfe von Suchstatistiken die Statistiken für eine oder mehrere Inhalts suchen anzeigen und vergleichen sowie neue und vorhandene Suchvorgänge konfigurieren können, um Statistiken für jedes Keyword in der Suchabfrage zurückzugeben.  <br/> |
 |[Exportieren der Suchergebnisse](export-search-results.md) <br/> |Hier erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche exportieren.  <br/> |
 |[Konfigurieren der Berechtigungsfilterung für die Inhaltssuche](permissions-filtering-for-content-search.md) <br/> |Erfahren Sie, wie Sie mithilfe der Berechtigungs Filterung einen eDiscovery-Manager nur eine Teilmenge von Postfächern und Websites in Ihrer Organisation durchsuchen können.  <br/> |
@@ -62,7 +62,7 @@ Die folgende Tabelle enthält Links zu Themen, die Sie bei der Verwendung von ze
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Erste Schritte mit der Haupt-eDiscovery](get-started-core-ediscovery.md) |Erfahren Sie, wie Sie eDiscovery-Berechtigungen zuweisen und zentrale eDiscovery-Fälle erstellen. Dieses Thema bietet außerdem eine Übersicht über den zentralen eDiscovery-Workflow.<br/> |
+|[Erste Schritte mit Core eDiscovery](get-started-core-ediscovery.md) |Erfahren Sie, wie Sie eDiscovery-Berechtigungen zuweisen und zentrale eDiscovery-Fälle erstellen. Dieses Thema bietet außerdem eine Übersicht über den zentralen eDiscovery-Workflow.<br/> |
 |[Erstellen eines eDiscovery-Speichers](create-ediscovery-holds.md)|In diesem Artikel erfahren Sie, wie Sie eDiscovery-Speicher erstellen, die einem zentralen eDiscovery-Fall zugeordnet sind, um für den Fall relevante Inhalte beizubehalten.|
 |[Suchen nach Inhalten in einem zentralen eDiscovery-Fall](search-for-content-in-core-ediscovery.md)|Hier erfahren Sie, wie Sie nach Inhalten suchen, die für einen Fall relevant sind. Sie können Schnellsuch Vorgänge erstellen, die die Aufbewahrungsorte für Inhalte durchsuchen.|
 |[Exportieren von Inhalten aus einem zentralen eDiscovery-Fall](export-content-in-core-ediscovery.md)|Hier erfahren Sie, wie Sie Inhalte aus einem zentralen eDiscovery-Fall exportieren und herunterladen.|

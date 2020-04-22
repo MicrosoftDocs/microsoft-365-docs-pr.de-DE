@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für die neue Daten Untersuchung (Preview) im Security & Compliance Center einen Vorfall mit Datenüberlauf verwalten.
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634293"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635935"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Ereignisses zur Verschütten von Daten in Microsoft 365
 
@@ -29,14 +29,14 @@ Das Verschütten von Daten erfolgt, wenn ein Dokument mit vertraulichen, vertrau
 
 ## <a name="scope-of-this-article"></a>Umfang dieses Artikels
 
-Dieser Artikel enthält eine Liste mit Anweisungen zum endgültigen Löschen von Elementen aus Office 365 Postfächern, damit Sie nicht mehr zugänglich sind oder von Benutzern oder Administratoren wiederhergestellt werden können. 
+Dieser Artikel enthält eine Liste mit Anweisungen zum endgültigen Löschen von Elementen aus Microsoft 365-Postfächern, damit Sie von Benutzern oder Administratoren nicht mehr zugegriffen oder wiederhergestellt werden können. 
 
 > [!NOTE]
 > Wenn Sie Elemente löschen, die sich in einer SharePoint-oder OneDrive für Unternehmen-Website befinden, werden Sie für 93 Tage ab dem Zeitpunkt aufbewahrt, zu dem Sie Sie aus Ihrem ursprünglichen Speicherort löschen.
 
 ## <a name="scenario"></a>Szenario
 
-Sie werden über einen Vorfall mit Datenüberlauf informiert, bei dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail freigegeben hat. Sie möchten schnell beurteilen, wer dieses Dokument empfangen hat, sowohl innerhalb als auch außerhalb Ihrer Organisation. Nachdem Sie den Vorfall untersucht haben, planen Sie, ihre Ergebnisse mit anderen Ermittlern zu überprüfen und die verschütteten Daten dann endgültig aus Ihrer Office 365 Organisation zu entfernen. Nach Abschluss der Untersuchung möchten Sie alle Beweise entfernen. 
+Sie werden über einen Vorfall mit Datenüberlauf informiert, bei dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail freigegeben hat. Sie möchten schnell beurteilen, wer dieses Dokument empfangen hat, sowohl innerhalb als auch außerhalb Ihrer Organisation. Nachdem Sie den Vorfall untersucht haben, planen Sie, ihre Ergebnisse mit anderen Ermittlern zu überprüfen und die verschütteten Daten dann endgültig aus Ihrer Organisation zu entfernen. Nach Abschluss der Untersuchung möchten Sie alle Beweise entfernen. 
 
 > [!IMPORTANT]
 > Während Sie die verschütteten Daten in ihrer eigenen Organisation dauerhaft entfernen können, können alle Daten, die außerhalb Ihrer Organisation verschüttet werden, mit diesen Funktionen nicht entfernt werden.
@@ -68,7 +68,7 @@ So erstellen Sie eine Untersuchung im Tool zur Datenanalyse (Vorschau):
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit einem Konto an, das Mitglied der Rollengruppe "Data Investigator" ist.
+2. Melden Sie sich mit einem Konto an, das Mitglied der Rollengruppe "Data Investigator" ist.
     
 3. Klicken Sie im Security and Compliance Center auf **Daten Untersuchungen**.
  

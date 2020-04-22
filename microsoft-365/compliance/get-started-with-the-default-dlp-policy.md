@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Bevor Sie sogar Ihre erste DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (unten abgebildet) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie darüber informiert werden, dass e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine Person außerhalb Ihrer Organisation freigegeben wurden.
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073116"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637829"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der DLP-Standardrichtlinie
 
@@ -62,11 +62,11 @@ Wenn Sie diese Optionen zu einem späteren Zeitpunkt ändern möchten, können S
   
 ## <a name="edit-the-default-dlp-policy"></a>Bearbeiten der standardmäßigen DLP-Richtlinie
 
-Diese Richtlinie heißt **Standard Office 365 DLP-Richtlinie** und wird auf der Seite **Richtlinie** des Security &amp; Compliance Center unter **Verhinderung von Datenverlust** angezeigt. 
+Diese Richtlinie wird als **standardmäßige DLP-Richtlinie** bezeichnet und wird auf der Seite **Richtlinie** des Security &amp; Compliance Center unter **Verhinderung von Datenverlust** angezeigt. 
   
 Diese Richtlinie ist vollständig anpassbar, genauso wie jede DLP-Richtlinie, die Sie selbst von Grund auf neu erstellen. Sie können die Richtlinie auch deaktivieren oder löschen, sodass Ihre Benutzer keine Richtlinien Tipps oder e-Mail-Benachrichtigungen mehr erhalten.
   
-![DLP-Richtlinie mit dem Namen Default Office 365 DLP-Richtlinie](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![DLP-Richtlinie mit dem Namen Standard-DLP-Richtlinie](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Wenn das Widget funktioniert und nicht angezeigt wird
 

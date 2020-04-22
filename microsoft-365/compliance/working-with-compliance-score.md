@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Workflowtools in Microsoft Compliance Score die Compliance für Ihre Organisation verwalten können.
-ms.openlocfilehash: 8fe36f0cdf5e204e0fa6150141cc348b0d0e325f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 8bef3e09decede679d5d0667360ba87b7cd7e6ad
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142586"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626221"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Arbeiten mit Microsoft Compliance Score (Vorschau)
 

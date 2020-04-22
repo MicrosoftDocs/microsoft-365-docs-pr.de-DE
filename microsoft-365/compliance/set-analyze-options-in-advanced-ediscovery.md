@@ -1,5 +1,5 @@
 ---
-title: Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
+title: Festlegen von Analyseoptionen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Office 365 Advanced eDiscovery, einschließlich nahe Dubletten, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Advanced eDiscovery, einschließlich nahe gestellter Duplikate, e-Mail-Threads und Designs.  '
+ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557785"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631262"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Festlegen von Analyseoptionen in Advanced eDiscovery (klassisch)
 
@@ -78,7 +78,7 @@ Nachdem Sie diese Optionen festgelegt haben, klicken Sie auf **Analyse** ausfüh
   
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   

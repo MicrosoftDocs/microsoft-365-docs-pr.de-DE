@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Hier erfahren Sie, wie Sie einen oder mehrere vorhandene Berichte im &amp; Security Compliance Center herunterladen.
-ms.openlocfilehash: d5f381a5e59f7cb6348bdc96572dfa37c4919500
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 33ea3b52a99f1ec2f5f3717c51754d82204e22a3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631780"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Herunterladen vorhandener Berichte im Security &amp; Compliance Center
 
@@ -29,7 +29,7 @@ Im [ &amp; Security Compliance Center](https://protection.office.com)stehen mehr
 ## <a name="download-existing-reports"></a>Herunterladen von vorhandenen Berichten
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen, [die &amp; im Office 365 Security Compliance Center zugewiesen](../security/office-365-security/protect-against-threats.md)sind. Im Allgemeinen können Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. 
+> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen, die [im Security &amp; Compliance Center zugewiesen](../security/office-365-security/protect-against-threats.md)sind. Im Allgemeinen können globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. 
   
 1. Wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichts** \> Berichte **zum Download**.
     
@@ -39,7 +39,7 @@ Im [ &amp; Security Compliance Center](https://protection.office.com)stehen mehr
     
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Berichte und Einblicke im &amp; Security Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
 [Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center](../security/office-365-security/create-a-schedule-for-a-report.md)
   

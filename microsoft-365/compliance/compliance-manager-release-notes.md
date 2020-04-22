@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637535"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Anmerkungen zur Microsoft Compliance-Manager-Version (Vorschau)
 
@@ -63,7 +63,7 @@ Compliance-Manager steht nun zusätzlich zu Englisch in den folgenden Sprachen z
 
 Im folgenden Abschnitt werden bekannte Probleme in der aktuellen Version von Compliance-Manager behandelt.
 
-### <a name="compliance-score"></a>Compliancebewertung
+### <a name="compliance-score"></a>Compliance-Bewertung
 
 - Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird das dem Aktionselement zugewiesene Ergebnis nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** markiert sind, verbessern nicht Ihre Konformitätsbewertung.
 

@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Lasten zum Hinzufügen importierter Dateien in Office 365 Advanced eDiscovery
+title: Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie eine Relevanz-Schulung in Office 365 Advanced eDiscovery durchführen.  '
-ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie die Relevanz-Schulung in Advanced eDiscovery ausführen.  '
+ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557765"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636293"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery (klassisch)
 
@@ -97,7 +97,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
 
 1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
     
-2. Klicken **** Sie unter Loads Management **+** auf das Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
+2. Klicken **Loads management**Sie unter Loads Management **+** auf das Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
     
 3. Klicken Sie auf **Ja**, um den Vorgang fortzusetzen. Das Dialogfeld **neue Last hinzufügen** wird angezeigt. 
     
@@ -138,7 +138,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
     
 ## <a name="see-also"></a>Siehe auch
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
   

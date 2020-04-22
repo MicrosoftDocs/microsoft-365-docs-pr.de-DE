@@ -1,5 +1,5 @@
 ---
-title: Technische Details zur Verschlüsselung in Office 365
+title: Technische Referenzdetails zur Verschlüsselung
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Hier finden Sie technische Details zur Verschlüsselung in Office 365.
-ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637209"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>Technische Details zur Verschlüsselung in Office 365
+# <a name="technical-reference-details-about-encryption"></a>Technische Referenzdetails zur Verschlüsselung
 
 In diesem Artikel erhalten Sie Informationen zu Zertifikaten, Technologien und TLS-Verschlüsselungs Paketen, die für die [Verschlüsselung in Office 365](encryption.md)verwendet werden. Dieser Artikel enthält auch Details zu geplanten veralteten Abschreibungen.
   

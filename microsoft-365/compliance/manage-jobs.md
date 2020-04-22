@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Sie können den Status langwieriger Prozesse nachverfolgen, die beim Ausführen von Aufgaben im Tool zur Datenermittlung im Security & Compliance Center auftreten.
-ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41582924"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635915"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Verwalten von Aufträgen in Daten Untersuchungen (Vorschau)
 
@@ -31,7 +31,7 @@ Im folgenden finden Sie eine Liste der Aufträge (in der Regel langwierige Proze
 | :----------------- | :----------     |
 |Hinzufügen von Daten zu einem Beweissatzes | Ein Benutzer fügt die Ergebnisse einer Suche zu einem Beweissatz hinzu.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). |
 |Hinzufügen von Daten zu einem anderen Beweissatzes | Ein Benutzer fügt Dokumente aus einem Beweissatz in demselben Fall in einen anderen Beweissatz ein.|
-|Hinzufügen von nicht Office 365-Daten zu einem Beweissatzes | Ein Benutzer lädt nicht Office 365 Daten in einen Beweissatz hoch. Die Daten werden auch während dieses Prozesses indiziert. Beispielsweise werden Dateien von einem lokalen Dateiserver oder einem Clientcomputer in einen Beweissatz hochgeladen. Weitere Informationen finden Sie unter [Laden von nicht Office 365 Daten in Beweise](load-non-office365-data.md).| 
+|Hinzufügen von nicht-Microsoft 365-Daten zu einem Evidence-Datensatz | Ein Benutzer lädt nicht-Microsoft 365-Daten in einen Beweissatz hoch. Die Daten werden auch während dieses Prozesses indiziert. Beispielsweise werden Dateien von einem lokalen Dateiserver oder einem Clientcomputer in einen Beweissatz hochgeladen. Weitere Informationen finden Sie unter [Laden von nicht von Microsoft 365 Daten in Beweise](load-non-office365-data.md).| 
 |Hinzufügen von korrigierten Daten zu einem Evidence-Datensatz | Daten mit Verarbeitungsfehlern werden wiederhergestellt und in einen Beweissatz zurückgeladen. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md). | 
 |Vergleichen von Lastsätzen | Ein Benutzer prüft die Unterschiede zwischen verschiedenen Lastsätzen in einem Beweissatz. Bei einem Lastsatz handelt es sich um eine Instanz des Hinzufügens von Daten zu einem Beweissatz. Wenn Sie beispielsweise die Ergebnisse zweier unterschiedlicher Suchvorgänge dem gleichen Beweissatz hinzufügen, würde jeder einen Lastsatz darstellen. Weitere Informationen finden Sie unter [Manage Last Sets](manage-load-sets.md). |
 |Konvertieren von behandelten Dokumenten in PDF|Nachdem ein Benutzer ein Dokument in einem Beweissatz kommentiert und einen Teil davon verarbeitet hat, kann er das in eine PDF-Datei konvertierte Dokument auswählen. Dadurch wird sichergestellt, dass der behandelte Teil nicht sichtbar ist, wenn das Dokument zur Präsentation exportiert wird. Weitere Informationen finden Sie unter [Überprüfen von Daten in Evidence](review-data-in-evidence.md). |

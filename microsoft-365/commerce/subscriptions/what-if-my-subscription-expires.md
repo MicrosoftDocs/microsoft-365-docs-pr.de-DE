@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634874"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707607"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
@@ -220,7 +220,7 @@ Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement k
 Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie eine beschleunigte Aufhebung der Provision anfordern. Wenn Sie das beschleunigte Aufheben der Bereitstellung anfordern, werden Ihre Abonnementdaten innerhalb von 3 Tagen nach der Kündigung gelöscht. [Wenden Sie sich an den Support](../../admin/contact-support-for-business-products.md), wenn Sie das beschleunigte Aufheben verwenden möchten.
+> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie [Ihr Konto schließen](../close-your-account.md).
 
 > [!NOTE]
 > Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um Änderungen zu überprüfen.

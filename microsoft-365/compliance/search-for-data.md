@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1ccd922c0829155110e633fa45253c56b9006111
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632910"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Suchen nach Daten in einer Untersuchung
 
-Auf der Registerkarte **Suchen** in einer Datenermittlung können Sie in Office 365 mithilfe von Schlüsselwörtern und Bedingungen nach ungespeicherten, vertraulichen oder vertraulichen Daten in den Inhaltsspeicherorten suchen. 
+Auf der Registerkarte **Suchen** in einer Datenermittlung können Sie mithilfe von Schlüsselwörtern und Bedingungen nach ungespeicherten, vertraulichen oder vertraulichen Daten in Inhaltsspeicherorten suchen. 
 
 Nachdem Sie eine Suche ausgeführt haben, können Sie Statistiken zu den von der Suche zurückgegebenen Elementen anzeigen, beispielsweise die inhaltsspeicherorte mit den meisten Elementen, die mit der Suchabfrage übereinstimmen. Sie können auch eine Vorschau einer Teilmenge der Ergebnisse anzeigen. Nachdem Sie den zu untersuchenden Dokumentensatz identifiziert haben, können Sie die Ergebnisse der Suche einem Beweissatz hinzufügen, um Sie weiter zu verarbeiten und zu analysieren.
 
@@ -41,9 +41,9 @@ Nachdem Sie eine Suche ausgeführt haben, können Sie Statistiken zu den von der
 
 4. Wählen Sie die zu durchsuchenden inhaltsspeicherorte (Datenquellen) aus. Sie können die Suche Bereichen, indem Sie die inhaltsspeicherorte bestimmter interessierter Personen auswählen (sofern Sie die Untersuchung hinzugefügt haben). Wenn Sie für die Untersuchung interessante Personen hinzugefügt haben, können Sie diese hinzufügen, indem Sie die Schritte unter [Verwalten von Personen mit Interesse](manage-people-of-interest.md#add-people-of-interest)ausführen.
  
-   Manchmal müssen Sie möglicherweise zunächst alle inhaltsspeicherorte in Ihrer Organisation durchsuchen. Alternativ dazu müssen Sie möglicherweise Speicherorte durchsuchen, die nicht einer bestimmten Person gehören. In diesem Szenario können Sie auswählen, ob Sie Ihre gesamte Organisation oder alle Standorte nach einem bestimmten Office 365 Diensten (wie Exchange, SharePoint, OneDrive oder Teams) durchsuchen möchten.
+   Manchmal müssen Sie möglicherweise zunächst alle inhaltsspeicherorte in Ihrer Organisation durchsuchen. Alternativ dazu müssen Sie möglicherweise Speicherorte durchsuchen, die nicht einer bestimmten Person gehören. In diesem Szenario können Sie auswählen, ob Sie Ihre gesamte Organisation oder alle Standorte für bestimmte Dienste (wie Exchange, SharePoint, OneDrive oder Teams) durchsuchen möchten.
 
-5. Speichern Sie die Suche, und führen Sie Sie aus.
+5. Speichern Sie die Suche und führen Sie sie aus.
 
 Nachdem die Suche erstellt wurde, wird eine Flyout-Seite mit Details zur Suche angezeigt. Die Schaltflächen **Statistik** und **Vorschau** sind anfänglich abgeblendet, da die Suche nicht abgeschlossen wurde. Sie können den Fortschritt der Suche nachverfolgen, indem Sie die Spalte **Status** auf der Registerkarte **Suchen** überwachen.
 
@@ -76,14 +76,14 @@ Wenn Sie mit den Ergebnissen einer Suche zufrieden sind und diese Suchergebnisse
 
 - Alle Elemente (einschließlich der Inhalte und Metadaten) werden erneut indiziert, sodass alle Daten im Evidence-Satzes während der Untersuchung vollständig durchsuchbar sind. Durch das erneute Indizieren der Daten werden eingehende und schnelle Suchvorgänge durchsucht, wenn Sie während der Untersuchung die Daten im Beweissatzes durchsuchen.
 
-Ein Vorteil beim Kopieren der Livedaten in einen Beweissatz in Azure besteht darin, dass Sie für zeitkritische oder kritische Vorfälle schnell den Schaden durch sofortiges löschen verdächtiger Inhalte in der ursprünglichen Datenquelle im Live-Dienst und anschließend untersuchen können. der Vorfall durch Analysieren der Beweise, die in die Quarantäne Umgebung des Azure-Speicherorts kopiert wurden. 
+Ein Vorteil beim Kopieren der Livedaten in einen Beweissatz in Azure besteht darin, dass Sie für zeitkritische oder kritische Vorfälle schnell den Schaden durch sofortiges löschen verdächtiger Inhalte in der ursprünglichen Datenquelle im Live-Dienst und anschließend untersuchen des Vorfalls durch Analysieren der in die Quarantäne Umgebung des Azure-Speicherorts kopierten Beweise eindämmen können. 
 
 Das Kopieren der ursprünglichen Daten in den Beweissatz erleichtert auch ihre Untersuchung, indem Sie erweiterte Analysetools wie die Erkennung von Designs, die Erkennung praktischer Duplikate und die e-Mail-Threadidentifikation bereitstellen.
 
-Falls erforderlich, können Sie auch Daten aus nicht Office 365 Datenquellen zu einem Beweissatz hinzufügen, sodass dieser zusammen mit den Daten gespeichert wird, die Sie in Office 365 sammeln.
+Falls erforderlich, können Sie auch Daten aus nicht-Microcsoft 365-Datenquellen zu einem Beweissatz hinzufügen, sodass dieser zusammen mit den von Microsoft 365 gesammelten Daten gespeichert wird.
 
 Zum Hinzufügen von Daten zu einem Beweissatz wählen Sie auf der Registerkarte **Suchen** eine Suche aus, und klicken Sie dann auf der Flyout-Seite auf **Ergebnisse zu Beweismitteln hinzufügen** . Sie können einem vorhandenen Beweissatz Daten hinzufügen oder die neuen Beweis Sätze schnell erstellen.
 
 ### <a name="tracking-the-progress-of-adding-search-results-to-evidence"></a>Nachverfolgen des Fortschritts beim Hinzufügen von Suchergebnissen zu beweisen
 
-Das Hinzufügen von Daten zu einem Evidence-Datensatz ist ein langwieriger Prozess. Der Prozess umfasst das Sammeln der Elemente, die die ursprüngliche Datenquelle aus Office 365 (beispielsweise aus Postfächern und Websites), kopieren Sie Sie in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet) und dann erneut indizieren der Elemente. Sie können den Fortschritt entweder auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** in der Spalte **hinzugefügte Daten in Evidence nach** verfolgen. Nachdem die Verarbeitung der Beweis Verarbeitung abgeschlossen ist, können Sie zur Registerkarte **Beweise** wechseln, auf den Beweissatz klicken und dann Ihre Untersuchung starten, indem Sie die relevanten Daten nach Bedarf suchen, überprüfen, markieren und exportieren.
+Das Hinzufügen von Daten zu einem Evidence-Datensatz ist ein langwieriger Prozess. Der Prozess umfasst das Sammeln der Elemente, die die ursprüngliche Datenquelle von Microsoft 365 (beispielsweise von Postfächern und Websites), kopieren Sie Sie in den Azure-Speicherort (dieser Kopiervorgang wird auch als *Einnahme*bezeichnet), und dann erneut indizieren der Elemente. Sie können den Fortschritt entweder auf der Registerkarte **Aufträge** oder auf der Registerkarte **Suchen** in der Spalte **hinzugefügte Daten in Evidence nach** verfolgen. Nachdem die Verarbeitung der Beweis Verarbeitung abgeschlossen ist, können Sie zur Registerkarte **Beweise** wechseln, auf den Beweissatz klicken und dann Ihre Untersuchung starten, indem Sie die relevanten Daten nach Bedarf suchen, überprüfen, markieren und exportieren.

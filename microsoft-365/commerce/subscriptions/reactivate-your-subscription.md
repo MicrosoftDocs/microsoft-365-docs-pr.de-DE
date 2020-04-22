@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Hier erfahren Sie, wie Sie Ihr Abonnement erneut aktivieren, wenn es abläuft, oder wenn es von Microsoft deaktiviert wird, oder wenn Sie es in der Mitte abbrechen.
-ms.openlocfilehash: 4e43ef1a2558ecf6d94eefd04c5ed527a3512b15
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 79a8b157743b96dd3227086d417e6903ec1762b0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636571"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707667"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
@@ -49,15 +49,14 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 3. Bestätigen Sie Ihre Zahlungsdetails. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren. Wenn Sie die Eingabe Ihrer Zahlungsmethode abgeschlossen haben, wählen Sie **reaktivieren**aus.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+      - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, [Aktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
-  - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
+      - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
   
@@ -71,14 +70,14 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 3. Geben Sie Ihre Zahlungsdetails ein. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+      - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, [Aktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
-  - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
+      - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
-  ::: moniker-end
+::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
@@ -92,11 +91,11 @@ Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie 
 
 3. Geben Sie Ihre Zahlungsdetails ein. Hier können Sie Ihre vorhandenen Zahlungsinformationen aktualisieren.
 
-  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, befolgen Sie die Schritte zum [Aktivieren oder Deaktivieren von wiederkehrenden Rechnungen](renew-your-subscription.md).
+  - Wenn Ihr Abonnement abgelaufen ist, wird Ihr Abonnement, nachdem Sie Ihre Zahlungsdetails übermittelt haben, in einen aktiven Zustand versetzt, und das **nächste Abrechnungs** Datum wird je nach ihrer aktuellen Abonnement Verpflichtung um einen Monat oder ein Jahr verlängert. Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht mehr abläuft, [Aktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
   
   - Wenn Ihr Abonnement storniert wurde oder aufgrund einer nicht eingegangenen Zahlung deaktiviert wurde, wird der Status "aktiv" zurückgegeben, und das **nächste Abrechnungs** Datum bleibt unverändert.
 
-  ::: moniker-end
+::: moniker-end

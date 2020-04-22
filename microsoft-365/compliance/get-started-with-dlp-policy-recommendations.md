@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-description: Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Office 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine DLP-Richtlinie geschützt sind.
-ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Microsoft 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine DLP-Richtlinie geschützt sind.
+ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073207"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632466"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
 
-Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Office 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der **Start** Seite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) geschützt sind. 
+Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Microsoft 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der **Start** Seite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) geschützt sind. 
   
 Sie können dieses Widget verwenden, um schnell eine angepasste DLP-Richtlinie mit nur einem Mausklick oder zwei zu erstellen, und nachdem Sie diese DLP-Richtlinie erstellt haben, ist sie vollständig anpassbar. Wenn die Empfehlung zunächst nicht angezeigt wird, klicken Sie im unteren Bereich des Abschnitts **empfohlen für Sie** auf **+ mehr** . 
   

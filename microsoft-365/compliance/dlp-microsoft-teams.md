@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170555"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633054"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
@@ -67,7 +67,7 @@ Der Link " **Was ist das?** " öffnet einen [Artikel](data-loss-prevention-polic
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
 
 2. Wählen Sie > **Richtlinie**zur **Verhinderung von Datenverlust**aus.
 
@@ -87,7 +87,7 @@ Lassen Sie ungefähr eine Stunde zu, bis sich Ihre Änderungen durch Ihr Rechenz
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
 
 2. Wählen Sie > **Richtlinie**zur **Verhinderung von Datenverlust**aus.
 
@@ -105,7 +105,7 @@ Lassen Sie ungefähr eine Stunde zu, bis sich Ihre Änderungen durch Ihr Rechenz
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
 
 2. Wählen Sie **Datenverlust-Verhinderung** > -**Richtlinie** > **+ Richtlinie erstellen**.
 

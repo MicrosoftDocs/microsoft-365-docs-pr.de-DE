@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692662"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621349"
 ---
 # <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
@@ -27,7 +27,7 @@ ms.locfileid: "42692662"
 Für den Fall, dass Personen aufgrund von Informationsbarrieren unerwartete Probleme haben, können Sie einige Schritte zur Lösung dieser Probleme durchführen. Verwenden Sie diesen Artikel als Leitfaden.
 
 > [!IMPORTANT]
-> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzer werden unerwartet für die Kommunikation mit anderen Personen in Microsoft Teams blockiert. 
 
@@ -65,7 +65,7 @@ Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen 
     ```
     In diesem Fall können wir sehen, dass eine Informations Barriere-Richtlinie Personen betrifft, die sich in den Segmenten Vertrieb und Forschung befinden. In diesem Fall werden Personen im Vertrieb daran gehindert, mit Personen in der Forschung zu kommunizieren. 
     
-    Wenn dies richtig erscheint, funktionieren Informationsbarrieren wie erwartet. Wenn dies nicht der Fall ist, fahren Sie mit dem nächsten Schritt fort.
+    Wenn dies richtig erscheint, funktionieren Informationsbarrieren wie erwartet. Wenn nicht, fahren Sie mit dem nächsten Schritt fort.
 
 4. Stellen Sie sicher, dass ihre Segmente ordnungsgemäß definiert sind. Verwenden Sie dazu das `Get-OrganizationSegment` Cmdlet, und überprüfen Sie die Ergebnisliste. 
 

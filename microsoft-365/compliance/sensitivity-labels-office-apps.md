@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 4cb08f79bd45199b443332fc80b1d595ee3f17cb
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 87e4425658044d29c9306cdf57c13941c2d62785
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151406"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635793"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Wenn Sie Sensitivitäts Bezeichnungen aus dem Microsoft 365 Compliance Center oder einem entsprechenden Bezeichnungs Center [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben, werden diese in Office-Apps angezeigt, damit Benutzerdaten beim Erstellen oder bearbeiten klassifizieren und schützen können.
 

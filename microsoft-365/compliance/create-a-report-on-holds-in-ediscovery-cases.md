@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365
+title: Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632250"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts über Aufbewahrungen in eDiscovery-Fällen in Office 365
+# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
   
 Mit dem Skript in diesem Artikel können eDiscovery-Administratoren und eDiscovery-Manager einen Bericht generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind. Der Bericht enthält Informationen wie den Namen des Falls, dem ein Haltebereich zugeordnet ist, die Aufbewahrungsorte für Inhalte, die in der Warteschleife gespeichert werden, und ob der Haltebereich Abfrage basiert ist. Wenn es Fälle gibt, in denen keine Aufbewahrungspflicht besteht, erstellt das Skript einen zusätzlichen Bericht mit einer Liste von Fällen ohne Haltestatus.
 

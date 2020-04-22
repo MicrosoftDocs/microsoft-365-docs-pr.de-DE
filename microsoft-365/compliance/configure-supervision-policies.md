@@ -19,25 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604192"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632370"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
 >[!IMPORTANT]
->Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Office 365 Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
+>Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Microsoft 365-Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
 
 Verwenden Sie Aufsichtsrichtlinien zum Erfassen von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zum Überwachen der Kommunikation in Ihrer Organisation mithilfe von Aufsichtsrichtlinien finden Sie unter [Aufsichtsrichtlinien in Office 365](supervision-policies.md).
 
 >[!NOTE]
->Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein oder in einem Microsoft 365 E5 enthalten sein. Abonnement.
+>Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein.
 >Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
-Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 Organisation einzurichten und zu verwenden:
+Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Organisation einzurichten und zu verwenden:
   
 - **Schritt 1 (optional)**: Einrichten [von Gruppen für die Überwachung](#step-1-set-up-groups-for-supervision-optional)
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 
 
 - **Schritt 2 (erforderlich)**: [Beaufsichtigung in Ihrer Organisation verfügbar machen](#step-2-make-supervision-available-in-your-organization-required)
 
-    Fügen Sie sich selbst der Rollengruppe aufsichtsüberprüfung hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen ist, kann im Office 365 Security and Compliance Center auf die Seite " **Beaufsichtigung** " zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
+    Fügen Sie sich selbst der Rollengruppe aufsichtsüberprüfung hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen ist, kann im Security & Compliance Center auf die **Aufsichts** Seite zugreifen. Wenn beschreibbar-e-Mail auf Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
 
 - **Schritt 3 (optional)**: [Erstellen benutzerdefinierter vertraulicher Informationstypen und benutzerdefinierter Schlüsselwörter Wörterbücher](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 
 
 - **Schritt 4 (erforderlich)**: Einrichten [einer Aufsichtsrichtlinie](#step-4-set-up-a-supervision-policy-required)
 
-    Sie erstellen Aufsichtsrichtlinien im Office 365 Security and Compliance Center. Diese Richtlinien definieren, welche Kommunikation in Ihrer Organisation überprüft werden muss, und gibt an, wer Prüfungen durchführt. Kommunikationen umfassen e-Mail-und Microsoft Teams-Kommunikation und Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.). In Office 365 Organisationen erstellte Aufsichtsrichtlinien werden in der Kommunikationsüberwachung in Microsoft 365-Abonnements nicht unterstützt.
+    Sie erstellen Aufsichtsrichtlinien im Security & Compliance Center. Diese Richtlinien definieren, welche Kommunikation in Ihrer Organisation überprüft werden muss, und gibt an, wer Prüfungen durchführt. Kommunikationen umfassen e-Mail-und Microsoft Teams-Kommunikation und Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.). In Organisationen erstellte Aufsichtsrichtlinien werden in der Kommunikationsüberwachung in Microsoft 365-Abonnements nicht unterstützt.
 
 - **Schritt 5 (optional)**: [Testen der Richtlinie für die Kommunikationsüberwachung](#step-5-test-your-supervision-policy-optional)
 
@@ -67,10 +67,10 @@ Verwenden Sie das folgende Diagramm, um die Konfiguration von Gruppen in Ihrer O
 
 | **Richtlinien Mitglied** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
-|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
+|Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen |
 | Prüfer | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
   
-Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
+Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
 
 Um beaufsichtigte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Aufsichtsrichtlinie so aktualisieren, dass neue Mitarbeiter Ihrer Organisation beitreten.
 
@@ -105,19 +105,19 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 - [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
-- [Übersicht über Office 365 Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Übersicht über Microsoft 365-Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>Schritt 2: Bereitstellen der Überwachung in Ihrer Organisation (erforderlich)
 
-Um die **Überwachung** als Menüoption im Office 365 Security and Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle "Aufsichts Überprüfungs Administrator" zugewiesen sein.
+Um die **Überwachung** als Menüoption im Security & Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle "Aufsichts Überprüfungs Administrator" zugewiesen sein.
   
 Dazu können Sie sich selbst als Mitglied der Rollengruppe aufsichtsüberprüfung hinzufügen, oder Sie können eine Rollengruppe erstellen.
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Hinzufügen von Mitgliedern zur Rollengruppe "aufsichtsüberprüfung"
 
-1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
+1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Office 365 Security and Compliance Center zu **Berechtigungen**.
+2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen**.
 
 3. Wählen Sie die Rollengruppe **aufsichtsüberprüfung** aus, und klicken Sie dann auf das Symbol bearbeiten.
 
@@ -125,9 +125,9 @@ Dazu können Sie sich selbst als Mitglied der Rollengruppe aufsichtsüberprüfun
 
 ### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
 
-1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
+1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Office 365 Security and Compliance Center zu **Berechtigungen** , und klicken Sie dann auf**+** hinzufügen ().
+2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und klicken Sie dann auf**+** hinzufügen ().
 
 3. Klicken Sie im Abschnitt **Rollen** auf Hinzufügen**+**(), und führen Sie einen Bildlauf nach unten zum **Aufsichts Überprüfungs Administrator**durch. Fügen Sie diese Rolle der Rollengruppe hinzu.
 
@@ -149,7 +149,7 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
 ### <a name="create-custom-sensitive-information-types"></a>Erstellen benutzerdefinierter vertraulicher Informationstypen
 
-1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security & Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
+1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Security & Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
 
     - Definieren eines Namens und einer Beschreibung für den Typ vertraulicher Informationen
     - Definieren der Nähe, Konfidenz Stufe und primärer Musterelemente
@@ -162,9 +162,9 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Schritt 4: Einrichten einer Aufsichtsrichtlinie (erforderlich)
   
-1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Office 365 Organisation an.
+1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wählen Sie im Office 365 Security and Compliance Center die Option **Beaufsichtigung**aus.
+2. Wählen Sie im Security & Compliance Center die Option **Beaufsichtigung**aus.
   
 3. Wählen Sie **Create** aus, und führen Sie den Assistenten aus, um die Richtlinienkonfiguration einzurichten. Mithilfe des Assistenten können Sie Folgendes tun:
 
@@ -187,5 +187,5 @@ Nachdem Sie eine Richtlinie für die Kommunikationsüberwachung erstellt haben, 
     >[!NOTE]
     >E-Mails, die bestimmten Richtlinien unterliegen, werden nahezu in Echtzeit verarbeitet und können unmittelbar nach der Konfiguration der Richtlinie getestet werden. Chats in Microsoft Teams können bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten. 
 
-3. Melden Sie sich bei Ihrem Office 365-Mandanten als Prüfer an, der in der Kommunikations Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung** > *Ihre benutzerdefinierte Richtlinie* > **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
+3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung** > *Ihre benutzerdefinierte Richtlinie* > **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
 

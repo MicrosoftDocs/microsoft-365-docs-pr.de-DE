@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141612"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632990"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -43,16 +43,16 @@ Mit dem Compliance-Manager kann Ihre Organisation:
 - Erstellen Sie ausführliche Microsoft Excel Berichte, in denen Compliance-Aktivitäten dokumentiert werden, die von Microsoft und Ihrer Organisation für Auditoren, Regulatoren und andere Konformitäts Prüfer ausgeführt wurden.
 
 > [!NOTE]
-> Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Im Compliance-Manager gefundene Empfehlungen sollten nicht als Garantie für die Compliance interpretiert werden.
+> Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Empfehlungen aus dem Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden.
 
 ## <a name="relationship-to-compliance-score"></a>Beziehung zur Konformitätsbewertung
 
-[Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das eine Ansicht auf oberster Ebene in der Compliance-Position Ihrer Organisation bereitstellt. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
+[Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das eine Ansicht auf oberster Ebene in der Compliance-Position Ihrer Organisation bereitstellt. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
 
 Compliance-Manager teilt dasselbe Back-End mit Kompatibilitätsbewertung. Während der öffentlichen Vorschauphase für beide Tools ist Compliance-Manager der Ort, an dem Sie Ihre Bewertungen und Implementierungen von benutzerdefinierten Steuerelementen verwalten. Erfahren Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
   
 > [!IMPORTANT]
-> Compliance Score ist kein absolutes Maß für die organisatorische Einhaltung einer bestimmten Norm oder Regulierung. Sie drückt das Ausmaß aus, in dem Sie Steuerelemente eingeführt haben, die die Risiken für personenbezogene Daten und den Schutz der Privatsphäre reduzieren können. Kein Dienst kann gewährleisten, dass Sie mit einem Standard oder einer Verordnung konform sind, und der Kompatibilitäts Faktor sollte nicht als Garantie in irgendeiner Weise interpretiert werden.
+> Die Compliancebewertung ist kein absolutes Maß für die Einhaltung bestimmter Standards oder Vorschriften durch die Organisation. Sie drückt aus, inwieweit Sie Kontrollmechanismen eingeführt haben, die die Risiken für personenbezogene Daten und die Privatsphäre des Einzelnen verringern können. Kein Dienst kann gewährleisten, dass Sie mit einem Standard oder einer Verordnung konform sind, und der Kompatibilitäts Faktor sollte nicht als Garantie in irgendeiner Weise interpretiert werden.
 
 ## <a name="compliance-manager-components"></a>Compliance-Manager-Komponenten
 

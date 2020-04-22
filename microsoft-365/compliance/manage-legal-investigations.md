@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Verwenden Sie eDiscovery-Fälle im Microsoft 365 Compliance Center, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten weiter analysieren, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery verwenden.
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097194"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635905"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen in Microsoft 365
 
 Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass weitere Ermittlungs spezifische Informationen in e-Mails, Dokumenten, Chats und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell gefunden und aufbewahrt werden. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case-Tools im Security and Compliance Center ausführen.
   
-**Möchten Sie wissen, wie Microsoft die eDiscovery-Untersuchungen verwaltet?** Hier ist ein [Technisches Whitepaper](https://go.microsoft.com/fwlink/?linkid=852161) , das Sie herunterladen können, das erläutert, wie wir dieselben Office 365 Such-und Untersuchungs Tools zur Verwaltung unseres internen eDiscovery-Workflows verwenden.
+**Möchten Sie wissen, wie Microsoft die eDiscovery-Untersuchungen verwaltet?** Hier ist ein [Technisches Whitepaper](https://go.microsoft.com/fwlink/?linkid=852161) , das Sie herunterladen können, das erläutert, wie wir die gleichen Such-und Untersuchungs Tools zur Verwaltung unseres internen eDiscovery-Workflows verwenden.
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten von rechtlichen Untersuchungen mit eDiscovery-Fällen
 

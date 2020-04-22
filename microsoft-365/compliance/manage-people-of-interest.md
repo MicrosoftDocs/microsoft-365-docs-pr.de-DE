@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634713"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635839"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Verwalten von Personen mit Interesse an Daten Ermittlungen (Vorschau)
 
@@ -50,18 +50,18 @@ So fügen Sie einer Untersuchung interessante Personen hinzu:
 
 8. Optional Im Flyout:
    
-    -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie zum Hinzufügen weiterer Postfächer das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch Postfächer hinzufügen, die zum Speichern einer Office 365 Gruppe oder von Microsoft Team-Informationen verwendet werden. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+    -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie zum Hinzufügen weiterer Postfächer das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch Postfächer hinzufügen, die zum Speichern einer Microsoft 365-Gruppe oder Microsoft Team-Informationen verwendet werden. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
         > [!NOTE]
         > Wenn Sie auf Benutzer, Gruppen oder Teams auswählen, um Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen.
      
-     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann auf **Websites erneut auswählen** , um zusätzliche SharePoint-und OneDrive für Unternehmen-Websites anzugeben, die Sie einer Person hinzufügen wwant. Sie können auch die URL für die SharePoint-Website für eine Office 365 Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann auf **Websites erneut auswählen** , um zusätzliche SharePoint-und OneDrive für Unternehmen-Websites anzugeben, die Sie einer Person hinzufügen wwant. Sie können auch die URL für die SharePoint-Website für eine Microsoft 365-Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
      - **Microsoft Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann auf **Teams erneut auswählen** , um eine Liste der Microsoft-Team Gruppen anzuzeigen, in denen die Person heute Mitglied ist. Wählen Sie die Teams aus, die Sie der Person hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
         
       > [!NOTE]
       > Wenn Sie weitere Microsoft Teams hinzufügen möchten, müssen Sie das Postfach und die SharePoint-Website wie oben gezeigt separat hinzufügen.
 
-Nachdem Sie die Zuordnung von Datenquellen zu interessanten Personen abgeschlossen haben, können Sie die Zusammenfassung der Gesamtzahl der Postfächer, Websites und Teams anzeigen, die Sie soeben hinzugefügt haben. Wenn Sie zusätzliche Datenquellen den Interessen Personen zuordnen und Ihre Suche nach Interessenbereichen durchführen, wird die Zuordnung von Dokumenten zu Interessen Personen während der gesamten Untersuchung fortbestehen, wodurch es einfacher wird, Nachweise zu organisieren oder einen Bericht von interessanten Personen zu generieren. . 
+Nachdem Sie die Zuordnung von Datenquellen zu interessanten Personen abgeschlossen haben, können Sie die Zusammenfassung der Gesamtzahl der Postfächer, Websites und Teams anzeigen, die Sie soeben hinzugefügt haben. Wenn Sie zusätzliche Datenquellen den Interessen Personen zuordnen und Ihre Suche nach Interessenbereichen durchführen, wird die Zuordnung von Dokumenten zu Interessen Personen während der gesamten Untersuchung fortbestehen, wodurch es einfacher wird, Nachweise zu organisieren oder einen Bericht von interessanten Personen zu generieren. 
 
 ## <a name="view-additional-people-of-interest-information"></a>Anzeigen zusätzlicher Informationen zu interessanten Personen
 

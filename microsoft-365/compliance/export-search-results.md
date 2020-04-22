@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Compliance Center des Sicherheits & auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint-und OneDrive für Unternehmen-Websites werden als systemeigene Office-Dokumente exportiert. '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634933"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615989"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -56,7 +56,7 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
     
   > [!NOTE]
   > <sup>1</sup> Microsoft stellt keine Drittanbietererweiterungen oder Add-ons für ClickOnce-Anwendungen her. Das Exportieren von Suchergebnissen mit einem nicht unterstützten Browser mit Erweiterungen oder Add-ons von Drittanbietern wird nicht unterstützt.<br/>
-  > <sup>2</sup> aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren der ClickOnce-Unterstützung in Edge finden Sie unter [Verwenden des Office 365 eDiscovery-Export Tools in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> aufgrund der letzten Änderungen an Microsoft Edge ist die ClickOnce-Unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren der ClickOnce-Unterstützung in Edge finden Sie unter [Verwenden des eDiscovery-Export Tools in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Wenn Sie Suchergebnisse herunterladen (in Schritt 2 beschrieben), können Sie die Downloadgeschwindigkeit durch Konfigurieren einer Windows-Registrierungseinstellung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden, verbessern. Weitere Informationen finden Sie unter [höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -87,7 +87,7 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Office 365 an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
 3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such** \> **Inhaltssuche**.
     
@@ -160,7 +160,7 @@ Wie bereits erläutert, können Sie die Downloadgeschwindigkeit durch Konfigurie
   
 3. Klicken Sie auf **Ergebnisse herunterladen**.
     
-4. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool von Microsoft Office 365**zu installieren, klicken Sie auf **Installieren**.
+4. Wenn Sie aufgefordert werden, das **eDiscovery-Export Tool**zu installieren, klicken Sie auf **Installieren**.
     
 5. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 2 kopiert haben, in das entsprechende Feld ein.
     
@@ -212,7 +212,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
 - Die maximale Größe einer PST-Datei, die exportiert werden kann, ist standardmäßig 10 GB. Das heißt, wenn die Suchergebnisse aus dem Postfach eines Benutzers größer als 10 GB sind, werden die Suchergebnisse für das Postfach in zwei (oder mehr) getrennten PST-Dateien exportiert. Wenn Sie alle Suchergebnisse in einer einzigen PST-Datei exportieren, wird die PST-Datei in zusätzliche PST-Dateien verschüttet, wenn die Gesamtgröße der Suchergebnisse größer als 10 GB ist. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit dem Sie die Suchergebnisse exportieren. Weitere Informationen finden Sie unter [Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen](change-the-size-of-pst-files-when-exporting-results.md).
     
-    Außerdem werden die Suchergebnisse eines bestimmten Postfachs nicht auf mehrere PST-Dateien aufgeteilt, es sei denn, der Inhalt eines einzelnen Postfachs beträgt mehr als 10 GB. Wenn Sie die Suchergebnisse in einer PST-Datei exportieren, die alle Nachrichten in einem einzelnen Ordner enthält und die Suchergebnisse größer als 10 GB sind, sind die Elemente immer noch in chronologischer Reihenfolge angeordnet, sodass Sie in zusätzliche PST-Dateien basierend auf dem gesendeten Datum.
+    Außerdem werden die Suchergebnisse eines bestimmten Postfachs nicht auf mehrere PST-Dateien aufgeteilt, es sei denn, der Inhalt eines einzelnen Postfachs beträgt mehr als 10 GB. Wenn Sie die Suchergebnisse in einer PST-Datei exportieren, die alle Nachrichten in einem einzelnen Ordner enthält und die Suchergebnisse größer als 10 GB sind, sind die Elemente immer noch in chronologischer Reihenfolge angeordnet, sodass Sie basierend auf dem gesendeten Datum in zusätzliche PST-Dateien aufgeteilt werden.
      
  ### <a name="export-reports"></a>Exportieren von Berichten
   

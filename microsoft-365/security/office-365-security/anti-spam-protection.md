@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Hier erhalten Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Microsoft 365 verhindern können. Sie werden zu viel Spam in Microsoft 365? Sie können Ihre Spamfilter und Anti-Spam-Einstellungen anpassen.
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636046"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708571"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Anti-Spam-Schutz in Microsoft 365
 
@@ -83,7 +83,7 @@ Im folgenden finden Sie einige bewährte Methoden, die für beide Szenarien gelt
 
 - **Überprüfen Sie Ihre Organisationseinstellungen**: Achten Sie auf Einstellungen, mit denen Nachrichten Spamfilterung überspringen können (beispielsweise, wenn Sie Ihre eigene Domäne der Liste zugelassene Domänen in den Antispam-Richtlinien hinzufügen). Unsere empfohlenen Einstellungen finden Sie unter [recommended settings for EoP and Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) und [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
-- **Überprüfen, ob die Junk-e-Mail-Regel im Postfach des Benutzers aktiviert ist**: Sie ist standardmäßig aktiviert, wenn es sich jedoch nicht um Nachrichten handelt, die als Junk gekennzeichnet sind, können Sie nicht in den Ordner Junk-e-Mail verschoben werden Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Überprüfen, ob die Junk-e-Mail-Regel im Postfach des Benutzers aktiviert ist**: Sie ist standardmäßig aktiviert, wenn Sie jedoch deaktiviert ist, können Nachrichten, die als Junk gekennzeichnet sind, nicht in den Junk-e-Mail-Ordner verschoben werden. Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Verwenden der Listen verfügbarer blockierter Absender**: Weitere Informationen finden Sie unter [Create blocked Sender lists](create-block-sender-lists-in-office-365.md).
 

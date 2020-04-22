@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2d75a5e05bb3fce85d52856afabc6aba13594f26
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631169"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708559"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -240,4 +240,4 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 - Eine **alle e-Mail-** Ansicht ist in **Threat Explorer** verfügbar (und befindet sich nicht im Bericht über **Echt Zeit Erkennungen** ).
 - In **Threat Explorer**sind weitere Filterfunktionen und verfügbare Aktionen enthalten.
 
-Weitere Informationen finden Sie unter [Office 365 ATP-Dienstbeschreibung: Verfügbarkeit von Features in Advanced Threat Protection (ATP)-Plänen](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Weitere Informationen finden Sie unter [Office 365 ATP-Dienstbeschreibung: Verfügbarkeit von Features in Advanced Threat Protection (ATP)-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

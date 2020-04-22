@@ -1,5 +1,5 @@
 ---
-title: Verwalten des Kunden Schlüssels für Office 365
+title: Verwalten des Kunden Schlüssels
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Nachdem Sie den Kundenschlüssel eingerichtet haben, erfahren Sie, wie Sie ihn verwalten, indem Sie AKV-Schlüssel wiederherstellen und Berechtigungen und Daten Verschlüsselungsrichtlinien verwalten.
-ms.openlocfilehash: 112bdee7658334c251418903761866841625ff17
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804800"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635601"
 ---
-# <a name="manage-customer-key-for-office-365"></a>Verwalten des Kunden Schlüssels für Office 365
+# <a name="manage-customer-key"></a>Verwalten des Kunden Schlüssels
 
 Nachdem Sie den Kundenschlüssel für Office 365 eingerichtet haben, können Sie die Schlüssel wie in diesem Artikel beschrieben verwalten. Erfahren Sie mehr über den Kundenschlüssel in den verwandten Themen.
 
@@ -50,7 +50,7 @@ Führen Sie das Cmdlet Get-AzKeyVault aus, um die schlüsseltresor-Berechtigunge
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-Zum Beispiel:
+Beispiel:
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -62,7 +62,7 @@ Um die Berechtigungen eines Administrators zu entfernen, führen Sie das Cmdlet 
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-Zum Beispiel:
+Beispiel:
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -70,7 +70,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="manage-data-encryption-policies-deps-with-customer-key"></a>Verwalten von Daten Verschlüsselungsrichtlinien (DEPs) mit dem Kundenschlüssel
 
-Kundenschlüssel behandelt DEPs unterschiedlich zwischen den verschiedenen Office 365 Diensten. Sie können beispielsweise eine andere Anzahl von DEPs für die verschiedenen Dienste erstellen.
+Kundenschlüssel behandelt DEPs unterschiedlich zwischen den verschiedenen Diensten. Sie können beispielsweise eine andere Anzahl von DEPs für die verschiedenen Dienste erstellen.
 
 **Exchange Online und Skype for Business:** Sie können bis zu 50 DEPs erstellen. Anweisungen finden Sie unter [Erstellen einer Daten Verschlüsselungsrichtlinie (DEP) für die Verwendung mit Exchange Online und Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
@@ -80,7 +80,7 @@ Kundenschlüssel behandelt DEPs unterschiedlich zwischen den verschiedenen Offic
 
 Führen Sie die folgenden Schritte aus, um eine Liste aller DEPs anzuzeigen, die Sie für Exchange Online und Skype for Business mithilfe des PowerShell-Cmdlets "Get-DataEncryptionPolicy" erstellt haben.
 
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), indem Sie ein Arbeits-oder Schulkonto verwenden, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
+1. Wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Organisation verwenden möchten, stellen Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Wenn Sie alle DEPs in Ihrer Organisation zurückgeben möchten, führen Sie das Cmdlet Get-DataEncryptionPolicy ohne Parameter aus.
 
@@ -92,11 +92,11 @@ Führen Sie die folgenden Schritte aus, um eine Liste aller DEPs anzuzeigen, die
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Zuweisen einer Datenausführungsverhinderung vor der Migration eines Postfachs in die Cloud
 
-Wenn Sie die Datenausführungsverhinderung zuweisen, verschlüsselt Office 365 den Inhalt des Postfachs mithilfe der zugewiesenen DEP während der Migration. Dieser Prozess ist effizienter als die Migration des Postfachs, das Zuweisen der Datenausführungsverhinderung und das anschließende warten auf die Verschlüsselung, was Stunden oder möglicherweise Tage dauern kann.
+Wenn Sie die Datenausführungsverhinderung zuweisen, verschlüsselt Microsoft 365 die Inhalte des Postfachs mithilfe der zugewiesenen DEP während der Migration. Dieser Prozess ist effizienter als die Migration des Postfachs, das Zuweisen der Datenausführungsverhinderung und das anschließende warten auf die Verschlüsselung, was Stunden oder möglicherweise Tage dauern kann.
 
 Führen Sie das Cmdlet "MailUser" in Exchange Online PowerShell aus, um einem Postfach eine Datenausführungsverhinderung zuzuweisen, bevor Sie es zu Office 365 migrieren:
 
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), indem Sie ein Arbeits-oder Schulkonto verwenden, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
+1. Wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Organisation verwenden möchten, stellen Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Führen Sie das Cmdlet "Sets-MailUser" aus.
 
@@ -110,7 +110,7 @@ Führen Sie das Cmdlet "MailUser" in Exchange Online PowerShell aus, um einem Po
 
 Verwenden Sie das Cmdlet „Get-MailboxStatistics“, um zu ermitteln, welche Datenverschlüsselungsrichtlinie (DEP) einem Postfach zugewiesen ist. Das Cmdlet meldet einen eindeutigen Bezeichner (GUID) zurück.
   
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), indem Sie ein Arbeits-oder Schulkonto verwenden, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt.
+1. Wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Organisation verwenden möchten, stellen Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
@@ -142,7 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 Die IsEncrypted-Eigenschaft meldet den Wert **True** (Richtig), wenn das Postfach verschlüsselt ist, und den Wert **False** (Falsch), wenn das Postfach nicht verschlüsselt ist.
 
-Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, initiieren Sie eine Post Fach Verlagerung. Verwenden Sie dazu das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs an. Zum Beispiel:
+Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, initiieren Sie eine Post Fach Verlagerung. Verwenden Sie dazu das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs an. Beispiel:
   
 ```powershell
 New-MoveRequest <alias>
@@ -178,13 +178,13 @@ Die Ausgabe dieses Cmdlets umfasst Folgendes:
 
 Sie steuern die Sperrung aller Stammschlüssel, einschließlich des Verfügbarkeits Schlüssels. Kundenschlüssel bietet Ihnen die Kontrolle über den Aspekt der Beendigungs Planung der behördlichen Anforderungen. Wenn Sie Ihre Schlüssel widerrufen, um Ihre Daten zu löschen und den Dienst zu beenden, löscht der Dienst den Verfügbarkeits Schlüssel nach Abschluss des Daten Löschvorgangs.
 
-Office 365 überwacht und überprüft den Pfad der Datenbereinigung. Weitere Informationen finden Sie im SSAE 18 SOC 2-Bericht, der im [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com/)zur Verfügung steht. Darüber hinaus empfiehlt Microsoft die folgenden Dokumente:
+Microsoft 365 überwacht und validiert den Pfad zur Datenbereinigung. Weitere Informationen finden Sie im SSAE 18 SOC 2-Bericht, der im [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com/)zur Verfügung steht. Darüber hinaus empfiehlt Microsoft die folgenden Dokumente:
 
 - [Leitfaden für Risikobewertung und Compliance für Finanzinstitute in der Microsoft-Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [O365-Exit-Planungsüberlegungen](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Der Pfad der Datenbereinigung unterscheidet sich geringfügig zwischen den verschiedenen Office 365 Diensten.
+Der Pfad der Datenbereinigung unterscheidet sich geringfügig zwischen den verschiedenen Diensten.
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Widerrufen Sie Ihre Kundenschlüssel und den Verfügbarkeits Schlüssel für Exchange Online und Skype for Business
 
@@ -199,7 +199,7 @@ Führen Sie die folgenden Schritte aus, um den Pfad der Datenbereinigung zu init
 
 1. Entfernen Sie Wrap-und Unwrap-Berechtigungen für "O365 Exchange Online" aus Azure Key Vaults.
 
-2. Wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365 Organisation verwenden möchten, stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+2. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), indem Sie ein Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Organisation verwenden.
 
 3. Führen Sie für jede DEP, die Postfächer enthält, die Sie löschen möchten, das Cmdlet " [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) " wie folgt aus.
 
@@ -235,14 +235,14 @@ Führen Sie die folgenden Schritte aus, um den Daten Lösch Pfad für SharePoint
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienst Verschlüsselung mit Kundenschlüssel für Office 365](customer-key-overview.md)
+- [Dienst Verschlüsselung mit Kundenschlüssel](customer-key-overview.md)
 
 - [Informationen zum Verfügbarkeits Schlüssel](customer-key-availability-key-understand.md)
 
-- [Einrichten des Kunden Schlüssels für Office 365](customer-key-set-up.md)
+- [Einrichten des Kunden Schlüssels](customer-key-set-up.md)
 
-- [Rollen oder Drehen eines Kunden Schlüssels oder eines Verfügbarkeits Schlüssels](customer-key-availability-key-roll.md)
+- [Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels](customer-key-availability-key-roll.md)
 
-- [Kunden-Lockbox in Office 365](customer-lockbox-requests.md)
+- [Customer Lockbox](customer-lockbox-requests.md)
 
-- [Office 365-Dienstverschlüsselung](office-365-service-encryption.md)
+- [Dienst Verschlüsselung](office-365-service-encryption.md)
