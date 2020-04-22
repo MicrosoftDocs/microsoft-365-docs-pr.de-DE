@@ -87,7 +87,7 @@
       items:
         - name: E-Mail in Office 365
           href: email/email.md
-        - name: E-Mail-Einstellungen für Office 365-Benutzer
+        - name: E-Mail-Einstellungen für Benutzer
           href: email/office-365-user-email-settings.md
         - name: Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Lösen von Lizenzkonflikten
           href: manage/resolve-license-conflicts.md
+        - name: Verwalten von Nachrichten im Nachrichtencenter
+          href: manage/manage-messages.md
         - name: Ein- und Ausblenden neuer Funktionen mit What's New Management
           href: manage/show-hide-new-features.md
     - name: Abonnements und Abrechnung
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: Vergleichen von Gruppen
           href: create-groups/compare-groups.md
-        - name: Erstellen einer Office 365-Gruppe
+        - name: Erstellen einer Microsoft 365-Gruppe
           href: create-groups/create-groups.md
-        - name: Verwalten einer Office 365-Gruppe
+        - name: Verwalten einer Microsoft 365-Gruppe
           href: create-groups/manage-groups.md
-        - name: Planen der Governance in Office 365-Gruppen
+        - name: Planen der Governance in Microsoft 365-Gruppen
           href: create-groups/plan-for-groups-governance.md
         - name: Verwalten der Erstellung von Gruppen
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Hinzufügen oder Entfernen von Mitgliedern aus Gruppen
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Ablaufrichtlinie für Office 365-Gruppen
+        - name: Ablaufrichtlinie für Microsoft 365-Gruppen
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Wiederherstellen einer gelöschten Gruppe
           href: create-groups/restore-deleted-group.md

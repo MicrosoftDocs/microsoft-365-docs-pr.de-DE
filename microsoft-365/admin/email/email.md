@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
-ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Erfahren Sie, wie Sie E-Mail für Ihre Microsoft 365-Postfächer verwalten können.
+ms.openlocfilehash: 25d34ed4f86a918daea5e04c89b9b79c91bebc08
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126011"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628855"
 ---
 # <a name="email"></a>E-Mail
 
-Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
+Erfahren Sie, wie Sie E-Mail für Ihre Microsoft 365-Postfächer verwalten können.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -146,7 +146,7 @@ Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
                 <div class="card">
                     <div class="cardText">
                         <h3>Beheben von Problemen mit der E-Mail-Verbindung und -Übermittlung</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">Beheben von Outlook-Verbindungsproblemen in Office 365 und Exchange Online</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">Beheben von Outlook-Verbindungsproblemen in Microsoft 365 und Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Wiederherstellen gelöschter Elemente im Postfach eines Benutzers</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Suchen und Beheben von Problemen mit der E-Mail-Zustellung</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Suchen und Beheben von Problemen (einschließlich Problemen mit E-Mail), nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden</a></p>
@@ -162,8 +162,8 @@ Erfahren Sie, wie Sie E-Mail für Ihre Office 365-Postfächer verwalten können.
             <div class="card">
                 <div class="cardText">
                         <h3>Ressourcen für Unternehmen</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Nachrichtenfluss: Bewährte Methoden Exchange Online und Office 365</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Nachrichtenfluss: Bewährte Methoden für Exchange Online und Microsoft 365</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Methoden zum Migrieren mehrerer E-Mail-Konten zu Microsoft 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Inhalte zur Exchange-Hybridbereitstellung</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>
