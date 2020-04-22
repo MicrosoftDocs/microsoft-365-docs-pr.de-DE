@@ -1,5 +1,5 @@
 ---
-title: Funktionsweise Office 365 sicherer ATP-Anlagen
+title: Funktionsweise sicherer Anlagen in ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Das Feature "sichere Anlagen" bietet eine Zeit-für-Klick-Überprüfung von e-Mail-Anlagen. Verwenden Sie sichere Anlagen, um Ihre Organisation vor böswilligen Dateien zu schützen, die Personen in e-Mails senden oder empfangen.
-ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599222"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638022"
 ---
-# <a name="how-office-365-atp-safe-attachments-works"></a>Funktionsweise Office 365 sicherer ATP-Anlagen
+# <a name="how-atp-safe-attachments-works"></a>Funktionsweise sicherer Anlagen in ATP
 
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -35,5 +35,5 @@ Hier sind zwei Beispiele für sichere ATP-Anhänge bei der Arbeit.
 Richtlinien für ATP-sichere Anlagen können auf bestimmte Personen oder Gruppen in Ihrer Organisation oder auf Ihre gesamte Domäne angewendet werden. Darüber hinaus können Richtlinien für ATP-sichere Anlagen so konfiguriert werden, dass Platzhalter Anlagen verwendet werden, während tatsächliche Anlagen gescannt werden. Weitere Informationen finden Sie unter **[Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md)**.
 
 > [!NOTE]
-> Die Überprüfung der ATP-Tresoranlagen erfolgt in derselben Region, in der sich Ihre Office 365 Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All) 
+> Die Überprüfung der ATP-Tresoranlagen erfolgt in derselben Region, in der sich Ihre Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [Wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All). 
 

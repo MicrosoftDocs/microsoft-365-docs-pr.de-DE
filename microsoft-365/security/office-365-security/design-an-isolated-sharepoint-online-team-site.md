@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Zusammenfassung: Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.'
-ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638512"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
@@ -39,7 +39,7 @@ Jede SharePoint Online-Teamwebsite wird standardmäßig mit den folgenden ShareP
     
 - \<Websitename> Besitzer
     
-Diese Gruppen unterscheiden sich von Office 365- und Azure Active Directory (AD)-Gruppen und bilden die Grundlage zum Zuweisen von Berechtigungen für die Ressourcen der Website.
+Diese Gruppen sind von Microsoft 365-und Azure Active Directory (AD)-Gruppen getrennt und bilden die Grundlage für die Zuweisung von Berechtigungen für die Ressourcen der Website.
   
 Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitglied einer SharePoint-Gruppe auf einer Website ausführen kann, ist eine Berechtigungsstufe. Für eine SharePoint Online-Teamwebsite gibt es standardmäßig drei Berechtigungsstufen: Bearbeitungszugriff, Lesezugriff und Vollzugriff. In der folgenden Tabelle ist die standardmäßige Korrelation von SharePoint-Gruppen und zugewiesenen Berechtigungsstufen dargestellt:
   
@@ -57,7 +57,7 @@ Hier sind die standardmäßigen SharePoint-Gruppen und Berechtigungsstufen.
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2: Zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen
 
-Sie können Benutzern Berechtigungen zuweisen, indem Sie ihr Benutzerkonto oder eine Office 365- oder Azure AD-Gruppe, in der das Benutzerkonto Mitglied ist, zu den SharePoint-Gruppen hinzufügen. Nach dem Hinzufügen wird den Office 365-Benutzerkonten entweder direkt oder indirekt über die Mitgliedschaft in einer Office 365- oder Azure AD-Gruppe die Berechtigungsstufe zugewiesen, die der SharePoint-Gruppe zugeordnet ist.
+Sie können Benutzern Berechtigungen zuweisen, indem Sie Ihrem Benutzerkonto oder einer Microsoft 365-oder Azure Ad-Gruppe, der das Benutzerkonto angehört, die SharePoint-Gruppen hinzufügen. Einmal hinzugefügt, werden die Benutzerkonten, entweder direkt oder indirekt über die Mitgliedschaft in einer Microsoft 365-oder Azure Ad-Gruppe, der SharePoint-Gruppe zugeordneten Berechtigungsstufe zugeordnet.
   
 Am Beispiel der SharePoint-Standardgruppen bedeutet dies:
   
@@ -69,17 +69,17 @@ Am Beispiel der SharePoint-Standardgruppen bedeutet dies:
     
  **Bewährte Methode:** Obwohl Sie Berechtigungen über einzelne Benutzerkonten verwalten können, empfehlen wir stattdessen die Verwendung einer einzelnen Azure AD-Gruppe, die als Zugriffsgruppe bezeichnet wird. Dadurch wird die Verwaltung von Berechtigungen über Mitgliedschaft in der Zugriffsgruppe anstelle der Verwaltung der Liste von Benutzerkonten für jede SharePoint-Gruppe erleichtert.
   
-Azure AD-Gruppen für Office 365 unterscheiden sich von Office 365-Gruppen. Azure Ad Gruppen werden im Microsoft 365 Admin Center angezeigt, deren **Typ** auf **Sicherheit** festgelegt ist und keine e-Mail-Adresse hat. Azure AD-Gruppen können verwaltet werden in:
+Azure Ad Gruppen für Microsoft 365 unterscheiden sich von Microsoft 365-Gruppen. Azure Ad Gruppen werden im Microsoft 365 Admin Center angezeigt, deren **Typ** auf **Sicherheit** festgelegt ist und keine e-Mail-Adresse hat. Azure AD-Gruppen können verwaltet werden in:
   
 - Active Directory-Domänendienste (AD DS, Active Directory Domain Services)
     
-    Dabei handelt es sich um Gruppen, die in Ihrer lokalen AD DS Infrastruktur erstellt und mit Ihrem Office 365-Abonnement synchronisiert wurden. Im Microsoft 365 Admin Center haben diese Gruppen den **Status** **synchronisiert mit Active Directory**.
+    Dabei handelt es sich um Gruppen, die in Ihrer lokalen AD DS Infrastruktur erstellt und mit Ihrem Microsoft 365-Abonnement synchronisiert wurden. Im Microsoft 365 Admin Center haben diese Gruppen den **Status** **synchronisiert mit Active Directory**.
     
 - Office 365
     
     Dabei handelt es sich um Gruppen, die entweder mit dem Microsoft 365 Admin Center, dem Azure-Portal oder mit Microsoft PowerShell erstellt wurden. Im Microsoft 365 Admin Center haben diese Gruppen den **Status** **Cloud**.
     
- **Bewährte Methode:** Wenn Sie AD DS lokal verwenden und mit Ihrem Office 365-Abonnement synchronisieren, führen Sie die Benutzer-und Gruppenverwaltung mit AD DS aus.
+ **Bewährte Methode:** Wenn Sie AD DS lokal verwenden und mit Ihrem Microsoft 365-Abonnement synchronisieren, führen Sie die Benutzer-und Gruppenverwaltung mit AD DS aus.
   
 Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstruktur wie folgt aus:
   
@@ -89,7 +89,7 @@ Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstrukt
 |\<Websitename> Besucher  <br/> |\<Websitename> Viewer  <br/> |Lesen  <br/> |
 |\<Websitename> Besitzer  <br/> |\<Websitename> Administratoren  <br/> |Vollzugriff  <br/> |
    
- **Bewährte Methode:** Sie können zwar entweder Office 365 oder Azure Ad Gruppen als Mitglieder von SharePoint-Gruppen verwenden, es wird jedoch empfohlen, Azure Ad Gruppen zu verwenden. Azure Ad Gruppen, die entweder über AD DS oder Office 365 verwaltet werden, bieten Ihnen mehr Flexibilität bei der Verwendung von geschachtelten Gruppen zum Zuweisen von Berechtigungen.
+ **Bewährte Methode:** Sie können zwar entweder Microsoft 365-oder Azure Ad-Gruppen als Mitglieder von SharePoint-Gruppen verwenden, es wird jedoch empfohlen, Azure Ad Gruppen zu verwenden. Azure Ad Gruppen, die über AD DS oder Microsoft 365 verwaltet werden, bieten Ihnen mehr Flexibilität bei der Verwendung von geschachtelten Gruppen zum Zuweisen von Berechtigungen.
   
 Im folgenden finden Sie die standardmäßigen SharePoint-Gruppen, die für die Verwendung von Azure AD basierten Zugriffsgruppen konfiguriert sind.
   
@@ -111,7 +111,7 @@ Für ein Projekt, das auf eine kleine Anzahl von Personen beschränkt ist, ist e
   
 Beispiel: Sie möchten eine isolierte SharePoint Online-Teamwebsite für die Zusammenarbeit zwischen den Leitern der Abteilungen Vertrieb, Marketing, Technik, Recht und Support erstellen, und diese Abteilungen haben bereits eigene Gruppen mit Benutzerkonten der Führungskräfte als Mitgliedern. Anstatt eine neue Gruppe für die neuen Websitemitglieder zu erstellen und alle einzelnen Benutzerkonten der Führungskräfte hinzuzufügen, fügen Sie die vorhandenen Führungskräftegruppen für die einzelnen Abteilung zur neuen Gruppe hinzu.
   
-  Wenn ein Office 365-Abonnement von mehreren Organisationen gemeinsam genutzt wird, kann eine einzelne Gruppenmitgliedschaftsebene für eine isolierte Website für eine Organisation aufgrund der schieren Anzahl von Benutzerkonten schwierig zu verwalten sein. In diesem Fall können Sie zum Verwalten der Berechtigungen geschachtelte Azure AD-Gruppen für jede Organisation verwenden, die die Gruppen innerhalb der Organisationen enthalten.
+ Wenn Sie ein Microsoft 365-Abonnement für mehrere Organisationen freigeben, kann eine einzelne Ebene der Gruppenmitgliedschaft für einen isolierten Standort für eine Organisation aufgrund der schieren Anzahl von Benutzerkonten schwierig zu verwalten sein. In diesem Fall können Sie zum Verwalten der Berechtigungen geschachtelte Azure AD-Gruppen für jede Organisation verwenden, die die Gruppen innerhalb der Organisationen enthalten.
   
 So verwenden Sie geschachtelte Azure AD-Gruppen:
   
@@ -122,7 +122,7 @@ So verwenden Sie geschachtelte Azure AD-Gruppen:
 3.   Um die entsprechende Zugriffsebene für die Containerzugriffsgruppe festzulegen, identifizieren Sie die SharePoint-Gruppe und die entsprechende Berechtigungsstufe.
     
 > [!NOTE]
-> Sie können keine geschachtelten Office 365-Gruppen verwenden. 
+> Sie können keine geschachtelten Microsoft 365-Gruppen verwenden. 
   
 Im folgenden finden Sie ein Beispiel für geschachtelte Azure Ad Gruppen für die ProjectX-Mitglieder Zugriffsgruppe.
   

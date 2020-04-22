@@ -1,5 +1,5 @@
 ---
-title: Manuelles Ändern Office 365 für Unternehmen Pläne
+title: Manuelles Ändern von Microsoft 365 for Business-Plänen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142151"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636583"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -51,9 +51,9 @@ Lesen Sie [Schritt 2: erwerben eines neuen Abonnements](#step-2-buy-a-new-subscr
 
 ODER
 
-**Kaufen Sie ein neues Abonnement und die Lizenzen:** Folgen Sie den Schritten unter [Kaufen eines weiteren Office 365 Business-Abonnements](../buy-another-subscription.md) zum Erwerb eines neuen Abonnements.
+**Erwerben Sie ein neues Abonnement und Lizenzen:** Befolgen Sie die Schritte unter [kaufen eines anderen Microsoft 365 for Business-Abonnements](../buy-another-subscription.md) , um ein neues Abonnement zu erwerben.
 
-Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die E-Mail-Adressen der Office 365-Benutzer, die zu einem anderen Plan wechseln sollen. Wenn Ihre e-Mail \@-Adressen contoso.com enthalten, müssen Sie ein neues Abonnement für contoso.com erwerben.
+Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die e-Mail-Adressen der Benutzer, die Sie migrieren möchten. Wenn Ihre e-Mail \@-Adressen contoso.com enthalten, müssen Sie ein neues Abonnement für contoso.com erwerben.
 Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wechseln soll.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Schritt 3: Überprüfen Ihres neuen Abonnements und der Lizenzen
@@ -114,5 +114,4 @@ Wenn Sie alle Benutzer von einem Abonnement in das andere verschoben haben und S
 Wenn Sie nur einige Benutzer in ein anderes Abonnement verschoben haben, können Sie die [Lizenzen entfernen](../licenses/remove-licenses-from-subscription.md), die Sie nicht mehr benötigen.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Unterstützung bei der Anruf Unterstützung beim Ändern der Pläne
-
 [Anrufen des Microsoft-Supports](../../admin/contact-support-for-business-products.md)

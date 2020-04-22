@@ -14,18 +14,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung, um InTune-Geräte Konformitätsrichtlinien zu Ihrer Microsoft 365 Enterprise-Testumgebung hinzuzufügen.
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066912"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631585"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Geräte Konformitätsrichtlinien für Ihre Microsoft 365 Enterprise-Testumgebung
 
 *Diese Testumgebungsanleitung kann nur für Microsoft 365 Enterprise-Testumgebungen verwendet werden.*
 
-Mit den Anweisungen in diesem Artikel fügen Sie eine InTune-Geräte Konformitätsrichtlinie für Windows 10-Geräte und Office 365 ProPlus zu Ihrer Microsoft 365 Enterprise-Testumgebung hinzu.
+Mit den Anweisungen in diesem Artikel fügen Sie eine InTune-Geräte Konformitätsrichtlinie für Windows 10-Geräte und Microsoft 365-Apps für Enterprise zu Ihrer Microsoft 365 Enterprise-Testumgebung hinzu.
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -80,7 +80,7 @@ In dieser Phase erstellen Sie eine Geräte Kompatibilitäts Richtlinie für Wind
 
 17. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite-Informationen**aus.
  
-18. Geben Sie im Bereich **Informationen der APP-Suite** **Office 365 ProPlus** in **Suite Name** und **Suite Description**ein.
+18. Geben Sie im Bereich **Informationen zur APP-Suite** **Microsoft 365 apps for Enterprise** in **Suite Name** und **Suite Description**ein.
 Klicken Sie auf "OK".
 
 19. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite konfigurieren**aus, und klicken Sie dann auf **OK**.

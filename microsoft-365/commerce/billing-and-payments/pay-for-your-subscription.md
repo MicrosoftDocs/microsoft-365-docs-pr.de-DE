@@ -1,5 +1,5 @@
 ---
-title: Bezahlen Ihres Office 365 Business-Abonnements
+title: Bezahlen für Ihr Abonnement
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Erfahren Sie, welche Zahlungsoptionen für Ihr Office 365 Business-Abonnements zur Verfügung stehen.
+description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Business-Abonnement zur Verfügung stehen.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540903"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635016"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>Bezahlen Ihres Office 365 Business-Abonnements
+# <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
 
 Beim Einrichten Ihres Abonnements können Sie zwischen Zahlung mit Kreditkarte oder Bankkonto und Zahlung auf Rechnung (Scheck oder Überweisung) wählen. Die Zahlungsmethode, die Sie auswählen, verwenden wir auch für nachfolgende Abrechnungszeiträume, sofern Sie nicht Ihre [Zahlungsmethode ändern](change-payment-method.md).
 
@@ -93,7 +93,7 @@ Wenn die Kosten für Ihr Abonnement einen bestimmten Betrag (dieser ist abhängi
 Wenn Sie für Ihr Abonnement per Rechnung bezahlen, erhalten Sie eine E-Mail-Nachricht, in der Ihnen mitgeteilt wird, dass Ihre Rechnung zum Anzeigen bereitsteht. Diese E-Mail enthält keine Kopie Ihrer Rechnung. Allerdings können Sie auf Wunsch auch [Erhalten einer Kopie Ihrer Rechnung per E-Mail](#receive-a-copy-of-your-billing-statement-in-email). Ihre Rechnung enthält Details zu Ihren Zahlungsoptionen. Wenn Sie beim Kauf eines Abonnements eine Bestellnummer (PO) eingeben, wird diese auf Ihre Rechnung angezeigt. Informationen zum Zugriff auf Rechnungen finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> Standardmäßig werden die Abrechnungsbenachrichtigungen für Ihre Organisation an die Office 365-E-Mail-Adresse und die alternative E-Mail-Adresse jedes globalen Administrators und Rechnungsadministrators in Ihrer Organisation gesendet. Informationen zum Ändern der alternativen E-Mail-Adresse finden Sie unter [Ändern der Rechnungsadresse](change-your-billing-addresses.md).
+> Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an die Microsoft-e-Mail-Adresse und die Alternative e-Mail-Adresse jedes globalen und abrechnungsadministrators in Ihrer Organisation gesendet. Informationen zum Ändern der alternativen E-Mail-Adresse finden Sie unter [Ändern der Rechnungsadresse](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>Kann ich meine Rechnung online bezahlen?
 

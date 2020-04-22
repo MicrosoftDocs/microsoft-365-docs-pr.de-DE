@@ -16,16 +16,16 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die SCL-Bewertung von Nachrichten in Exchange Online Schutz festlegen.
-ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: cc75130d1e30b4cd64c32b1729c8145ad3088742
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895095"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636428"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
 
-Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) zum Überprüfen eingehende Nachrichten für Spam. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien), um eingehende Nachrichten auf Spam zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 Wenn Sie bestimmte Nachrichten als Spam kennzeichnen möchten, bevor Sie sogar durch Spamfilterung gescannt werden, oder um Nachrichten zu markieren, damit Sie die Spamfilterung überspringen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um die Nachrichten zu identifizieren und die SCL-Bewertung (Spam Confidence Level) festzulegen. Weitere Informationen zur SCL-Bewertung finden Sie unter [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
 

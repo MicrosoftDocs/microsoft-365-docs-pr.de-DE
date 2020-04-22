@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setup Übersicht für Microsoft 365 für Kampagnen
-ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632755"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Einrichten von Microsoft 365 für Kampagnen
 
-In diesem Artikel wird der Vorgang des Einrichtens von Microsoft 365 für Kampagnen beschrieben. Jeder mit Microsoft 365 Business kann diese Anleitung verwenden, um die Sicherheit zu verstärken. 
+In diesem Artikel wird der Vorgang des Einrichtens von Microsoft 365 für Kampagnen beschrieben. Jeder mit Microsoft 365 Business Premium kann diese Anleitung verwenden, um die Sicherheit zu verstärken. 
 
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>Administratoren: Einrichten von Microsoft 365 für Kampagnen
 Im folgenden Diagramm wird beschrieben, wie Microsoft 365 für Kampagnen von Administratoren eingerichtet wurde.
@@ -42,7 +42,7 @@ Im folgenden Diagramm wird beschrieben, wie Microsoft 365 für Kampagnen von Adm
 
 Für Kampagnen, die sich für spezielle Preise qualifizieren, beginnen Sie mit dem [Anfordern einer Einladung von Microsoft](https://m365forcampaigns.microsoft.com/), und melden [Sie sich dann bei Microsoft 365 für Kampagnen](m365-campaigns-sign-up.md)an. Führen Sie zum Abschließen [des Setups den Setup-Assistenten](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) aus, um die Kerneinstellungen zu konfigurieren.
 
-Für alle anderen Organisationen, nachdem Sie [sich für Microsoft 365 Business registriert](../business/sign-up.md)haben, führen Sie das Setup durch [Ausführen des Setup-Assistenten](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) aus, um die Kerneinstellungen zu konfigurieren.
+Nachdem Sie [sich für Microsoft 365 Business Premium registriert](../business/sign-up.md)haben, führen Sie für alle anderen Organisationen das Setup durch, indem Sie [den Setup-Assistenten ausführen](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) , um die Kerneinstellungen zu konfigurieren.
 
 Stoßen Sie für alle Organisationen Sicherheitsschutz durch: [Schützen von Administratorkonten](m365-campaigns-protect-admin-accounts.md), [Schützen des Zugriffs auf e-Mails und Daten](m365-campaigns-conditional-access.md)und [erhöhen des Bedrohungsschutzes](m365-campaigns-increase-protection.md).
 
@@ -58,10 +58,10 @@ So richten Sie Benutzer Geräte ein:
 2. Bei nicht verwalteten Geräten richten Benutzer ihre [PCs und Macs](m365-campaigns-protect-pcs-macs.md)ein. Für wichtige Mitarbeiter wird empfohlen, dass Sie [verwaltete Geräte](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) für einen noch besseren Schutz verwenden. Für alle Geräte sollten Sie die mehrstufige [Authentifizierung](m365-campaigns-multifactor-authenication.md)einrichten. 
 3. Alle Benutzer sollten erfahren, wie Sie sich selbst und Ihre Kampagne schützen, indem Sie über [Phishing und andere Angriffe](m365-campaigns-phishing-and-attacks.md)lernen. Diese [Infografik](m365-campaigns-protect-campaign-infographic.md) kann Ihren Benutzern auch helfen, zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen.
 
-## <a name="contact-support"></a>wenden Sie sich an den Support,
+## <a name="contact-support"></a>Support kontaktieren
 
  **Wenn Sie den Support kontaktieren müssen:**
   
-Als Microsoft 365 Business-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
 

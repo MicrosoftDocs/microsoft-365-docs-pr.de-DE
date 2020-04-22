@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198361"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637876"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -75,7 +75,6 @@ Diese Ressourcen können Ihnen bei der Beantwortung von Fragen helfen, die Sie z
 - Weitere Fragen zu Dell-Geräten erhalten Sie von <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@Dell.com</a>.
 
 - Weitere Fragen zu HP-Geräten und Geräte Bestellanweisungen finden Sie unter Contact: Americas (<a href="mailto:mmd-americas@hp.com">MMD-Americas@HP.com</a>); Europa/Mittlerer Osten/Afrika (<a href="mailto:mmd-emea@hp.com">MMD-EMEA@HP.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">MMD-APJ@HP.com</a>); Global (<a href="mailto:mmd@hp.com">MMD@HP.com</a>)
-
 
 
 

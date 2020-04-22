@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Office 365 Gruppe im Admin Center
+title: Verwalten einer Gruppe im Admin Center
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Hier erfahren Sie, wie Sie Office 365 Gruppen verwalten, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie mehr über das Verwalten von Microsoft 365-Gruppen, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
+ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212069"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630393"
 ---
-# <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Office 365 Gruppe im Microsoft 365 Admin Center
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Gruppe im Microsoft 365 Admin Center
 
-Nachdem Sie [eine Office 365 Gruppe erstellt](create-groups.md) und Gruppenmitglieder hinzugefügt haben, können Sie Ihre Gruppe konfigurieren. Sie können den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder verwalten und angeben, ob externe Absender die Gruppe per e-Mail senden können und ob Kopien von Gruppenunterhaltungen an Mitglieder gesendet werden sollen. 
+Nachdem Sie [eine Microsoft 365-Gruppe erstellt](create-groups.md) und Gruppenmitglieder hinzugefügt haben, können Sie Ihre Gruppe konfigurieren. Sie können den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder verwalten und angeben, ob externe Absender die Gruppe per e-Mail senden können und ob Kopien von Gruppenunterhaltungen an Mitglieder gesendet werden sollen. 
 
 ## <a name="edit-the-group-name-or-description"></a>Bearbeiten des Gruppennamens oder der Beschreibung
 
@@ -192,14 +192,14 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erstellen einer Office 365-Gruppe](create-groups.md)
+[Erstellen einer Microsoft 365-Gruppe](create-groups.md)
 
-[Verwalten des Gastzugriffs auf Office 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Verwalten des Gastzugriffs auf Microsoft 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Auswählen der beim Erstellen von Office 365-Gruppen zu verwendenden Domäne](choose-domain-to-create-groups.md)
+[Wählen Sie die Domäne aus, die beim Erstellen von Microsoft 365-Gruppen verwendet werden soll.](choose-domain-to-create-groups.md)
 
-[Mitgliedern das Senden als oder senden im Auftrag einer Office 365 Gruppe gestatten](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Zulassen, dass Mitglieder im Auftrag einer Microsoft 365-Gruppe senden als oder senden](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgraden von Verteilerlisten zu Office 365-Gruppen](../manage/upgrade-distribution-lists.md)
+[Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 
-[Verwalten von Office 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)

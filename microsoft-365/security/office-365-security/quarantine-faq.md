@@ -16,16 +16,16 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Antworten auf häufig gestellte Fragen zur Quarantäne in Office 365.
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856905"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634424"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Häufig gestellte Fragen zur Quarantäne in Office 365
+# <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zur Quarantäne für Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
+Dieses Thema enthält häufig gestellte Fragen und Antworten zur Quarantäne für Microsoft 365-Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>F: Wie kann ich Nachrichten verwalten, die auf Schadsoftware unter Quarantäne gestellt wurden?
 
@@ -33,7 +33,7 @@ Nur Administratoren können Nachrichten verwalten, die auf Schadsoftware unter Q
 
 ## <a name="q-how-do-i-quarantine-spam"></a>F: Wie kann ich Spam isolieren?
 
-A: Standardmäßig werden Nachrichten, die durch Spamfilterung als Spam oder Massen-e-Mail klassifiziert werden, an das Postfach des Benutzers übermittelt und in den Junk-e-Mail-Ordner verschoben. Sie können jedoch Anti-Spam-Richtlinien erstellen und konfigurieren, um Spam-oder Massen-e-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
+A: Standardmäßig werden Nachrichten, die durch Spamfilterung als Spam oder Massen-e-Mail klassifiziert werden, an das Postfach des Benutzers übermittelt und in den Junk-e-Mail-Ordner verschoben. Sie können jedoch Anti-Spam-Richtlinien erstellen und konfigurieren, um Spam-oder Massen-e-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>F.: Wie kann ich Benutzern Zugriff auf die Quarantäne gewähren?
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 Führen Sie dann den folgenden Befehl aus, um diese Nachrichten an alle ursprünglichen Empfänger freizugeben:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 Nachdem Sie eine Nachricht veröffentlicht haben, können Sie Sie nicht erneut freigeben.

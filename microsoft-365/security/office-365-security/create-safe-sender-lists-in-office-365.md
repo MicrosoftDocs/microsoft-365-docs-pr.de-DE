@@ -1,5 +1,5 @@
 ---
-title: Erstellen sicherer Absenderlisten in Office 365
+title: Erstellen von Listen sicherer Absender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Administratoren können sich über die verfügbaren Optionen in Office 365 und EOP informieren, die eingehende Nachrichten zum Überspringen der Spamfilterung erlauben.
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Administratoren können sich über die verfügbaren Optionen in Microsoft 365 und EOP informieren, die eingehende Nachrichten zum Überspringen der Spamfilterung erlauben.
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528629"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637676"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
+# <a name="create-safe-sender-lists"></a>Erstellen von Listen sicherer Absender
 
-Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_betrachten.
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_betrachten.
 
 Die verfügbaren Listen für sichere Absender werden in der folgenden Liste beschrieben, um von den meisten empfohlenen empfohlen zu werden:
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen blockierter Absenderlisten in Office 365
+title: Erstellen von Listen blockierter Absender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Administratoren können sich über die verfügbaren Optionen in Office 365 und EOP informieren, um eingehende Nachrichten zu blockieren.
-ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+description: Administratoren können sich über die verfügbaren Optionen in Microsoft 365 und EOP informieren, um eingehende Nachrichten zu blockieren.
+ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608119"
+ms.locfileid: "43637688"
 ---
-# <a name="create-blocked-sender-lists-in-office-365"></a>Erstellen blockierter Absenderlisten in Office 365
+# <a name="create-blocked-sender-lists"></a>Erstellen von Listen blockierter Absender
 
-Wenn Sie ein Office 365er Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten zum Blockieren von e-Mails von unerwünschten Absendern. Zu diesen Optionen gehören blockierte Absender in Outlook, blockierte Absenderlisten oder blockierte Domänenlisten in den antispamregeln, Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und die IP-Sperrliste (Verbindungsfilterung). Sie können diese Optionen gemeinsam als _Blockierte Absenderlisten_betrachten.
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten zum Blockieren von e-Mails von unerwünschten Absendern. Zu diesen Optionen gehören blockierte Absender in Outlook, blockierte Absenderlisten oder blockierte Domänenlisten in den antispamregeln, Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und die IP-Sperrliste (Verbindungsfilterung). Sie können diese Optionen gemeinsam als _Blockierte Absenderlisten_betrachten.
 
 Die beste Methode zum Blockieren von Absendern variiert im Wirkungsbereich. Für einen einzelnen Benutzer kann es sich bei der richtigen Lösung um von Outlook blockierte Absender handeln. Für viele Benutzer wäre eine der anderen Optionen besser geeignet. Die folgenden Optionen werden sowohl nach Wirkungsbereich als auch in der Breite bewertet. Die Liste wird von schmal zu breit, aber *Lesen Sie die Details* für vollständige Empfehlungen.
 
@@ -37,11 +37,11 @@ Die beste Methode zum Blockieren von Absendern variiert im Wirkungsbereich. Für
 > [!NOTE]
 > Sie können zwar organisationsweite Block Einstellungen zum Beheben von falsch negativen (verpassten Spam) verwenden, Sie sollten diese Nachrichten jedoch auch zur Analyse an Microsoft übermitteln. Durch das Verwalten von falsch negativen mithilfe von Sperrlisten wird der Verwaltungsaufwand erheblich gesteigert. Wenn Sie Sperrlisten verwenden, um verpasste Spam abzulenken, müssen Sie das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben.
 
-Im Gegensatz dazu können Sie auch mehrere Optionen verwenden, um e-Mails aus bestimmten Quellen mithilfe _sicherer Absenderlisten_immer zuzulassen. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in Office 365](create-safe-sender-lists-in-office-365.md).
+Im Gegensatz dazu können Sie auch mehrere Optionen verwenden, um e-Mails aus bestimmten Quellen mithilfe _sicherer Absenderlisten_immer zuzulassen. Weitere Informationen finden Sie unter [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="use-outlook-blocked-senders"></a>Verwenden von Outlook-blockierten Absendern
 
-Wenn nur eine kleine Anzahl von Benutzern unerwünschte e-Mails empfangen hat, können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste blockierter Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Wenn nur eine kleine Anzahl von Benutzern unerwünschte e-Mails empfangen hat, können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste blockierter Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
 
 Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgreich blockiert werden, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:BLK`.
 
@@ -50,7 +50,7 @@ Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgr
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Verwenden blockierter Absenderlisten oder blockierter Domänenlisten
 
-Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, daher lautet die nächste beste Option "Listen blockierter Absender" oder "Blockierte Domänen" in den Antispam-Richtlinien. Nachrichten von Absendern in den Listen werden als **Spam**gekennzeichnet, und die Aktion, die Sie für das **Spam** Filter-Urteil konfiguriert haben, wird in der Nachricht vorgenommen. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, daher lautet die nächste beste Option "Listen blockierter Absender" oder "Blockierte Domänen" in den Antispam-Richtlinien. Nachrichten von Absendern in den Listen werden als **Spam**gekennzeichnet, und die Aktion, die Sie für das **Spam** Filter-Urteil konfiguriert haben, wird in der Nachricht vorgenommen. Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md).
 
 Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
 

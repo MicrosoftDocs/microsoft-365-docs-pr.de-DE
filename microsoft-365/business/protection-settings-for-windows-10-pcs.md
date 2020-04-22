@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Erfahren Sie mehr über die standardmäßigen und anderen Einstellungen, die in Microsoft 365 Business zum Sichern von Windows 10-Geräten verfügbar sind.
-ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie mehr über die standardmäßigen und anderen Einstellungen, die in Microsoft 365 for Business zum Sichern von Windows 10-Geräten verfügbar sind.
+ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064960"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633015"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
 
 ## <a name="secure-windows-10-devices"></a>Absichern von Windows 10-Geräten
 
-Schauen Sie sich ein Video mit Informationen zum Sichern von Windows 10-Geräten mit Microsoft 365 Business an:
+Sehen Sie sich ein Video zur Sicherung von Windows 10-Geräten mit Microsoft 365 for Business an:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -59,7 +59,7 @@ Schauen Sie sich ein Video mit Informationen zum Sichern von Windows 10-Geräten
 
 Standardmäßig sind alle Einstellungen auf **Ein** festgelegt. Die folgenden Einstellungen stehen zur Verfügung:
   
-Weitere Informationen finden Sie unter [Zuordnung von Microsoft 365 Business-Schutzfunktionen zu Intune-Einstellungen](map-protection-features-to-intune-settings.md). 
+Weitere Informationen finden Sie unter [How do Protection Features in Microsoft 365 Premium Map to InTune Settings](map-protection-features-to-intune-settings.md). 
   
 |||
 |:-----|:-----|

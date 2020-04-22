@@ -17,16 +17,16 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einem Dashboard zu einer Einblicke mit empfohlenen Aktionen im &amp; Security Compliance Center wechseln können.
-ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 22ca34696bc46e0142818be715d68f0b469c6255
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537497"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638094"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
 
-Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken im &amp; Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, kann es hilfreich sein, zu sehen, wie Sie einfach von einem Dashboard zu einer Einblicke und empfohlenen Aktionen navigieren können. 
+Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken &amp; im Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, können Sie sehen, wie Sie problemlos von einem Dashboard zu einer Einblicke und empfohlenen Aktionen navigieren können. 
   
 Dies ist eine von mehreren exemplarischen Vorgehens &amp; weisen für das Security Compliance Center. Weitere Exemplarische Vorgehensweisen finden Sie im Abschnitt " [Verwandte Themen](#related-topics) ". 
   

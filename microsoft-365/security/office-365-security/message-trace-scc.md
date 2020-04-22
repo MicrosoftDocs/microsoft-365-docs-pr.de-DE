@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341268"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635316"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
-Die Nachrichtenablaufverfolgung im Office 365 Security & Compliance Center folgt e-Mail-Nachrichten bei der Reise durch Ihre Exchange Online Organisation. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+Die Nachrichtenablaufverfolgung im Security & Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
 Die Nachrichtenablaufverfolgung im Security & Compliance Center verbessert sich auf die ursprüngliche Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen zu den Ereignissen in Bezug auf Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
-> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+> * Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>* Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) ). Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
-1. Öffnen Sie das Office 365 Security & Compliance Center <https://protection.office.com>unter.
+1. Öffnen Sie das Security & Compliance Center <https://protection.office.com>unter.
 
 2. Erweitern Sie Nachrichten **Fluss**, und wählen Sie dann **Nachrichtenablaufverfolgung**aus.
 
@@ -106,7 +106,7 @@ Sie können den Standardwert **alle** ausgewählt lassen, oder Sie können einen
 
 Dies ist die Internet Nachrichten-ID (auch als Client-ID bezeichnet), die im Kopfzeilenfeld nach **richten-ID:** im Nachrichtenkopf gefunden wird. Benutzer können Ihnen diesen Wert geben, um bestimmte Nachrichten zu untersuchen.
 
-Dieser Wert ist für die Lebensdauer der Nachricht konstant. Bei Nachrichten, die in Office 365 oder Exchange erstellt wurden, liegt der `<GUID@ServerFQDN>`Wert im Format vor, einschließlich\< \>der spitzen Klammern (). Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle e-Mail-Systeme folgen strikt dieser Anforderung. Wenn das Kopfzeilenfeld **Message-ID:** für eingehende Nachrichten von externen Quellen nicht vorhanden oder leer ist, wird ein beliebiger Wert zugewiesen.
+Dieser Wert ist für die Lebensdauer der Nachricht konstant. Bei Nachrichten, die in Microsoft 365 oder Exchange erstellt wurden, liegt der `<GUID@ServerFQDN>`Wert im Format vor, einschließlich\< \>der spitzen Klammern (). Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle e-Mail-Systeme folgen strikt dieser Anforderung. Wenn das Kopfzeilenfeld **Message-ID:** für eingehende Nachrichten von externen Quellen nicht vorhanden oder leer ist, wird ein beliebiger Wert zugewiesen.
 
 Wenn Sie die nach **richten-ID** verwenden, um die Ergebnisse zu filtern, müssen Sie unbedingt die vollständige Zeichenfolge einschließlich aller spitzen Klammern einschließen.
 
@@ -346,7 +346,7 @@ Ein **custom_data** Wert, der mit `S:SFA` beginnt, ist vom Spamfilter-Agent. Die
 |`DI=SO`|Die Nachricht wurde durch den Pool für besonders riskante Zustellungen geleitet. Weitere Informationen finden Sie unter [hochriskanter Zustellungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Dies bedeutet, dass Übereinstimmungen mit den Spam-Regeln gefunden wurden.|
 |`IPV=CAL`|Die Nachricht wurde durch die Spam-Filter gelassen, weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
-|`H=<EHLOstring>`|Die HELO-oder EHLO-Zeichenfolge des Verbindungs-e-Mail-Servers.|
+|`H=<EHLOstring>`|Die HELO- oder EHLO-Zeichenfolge des verbindenden E-Mail-Servers.|
 |`PTR=<ReverseDNS>`|Der PTR-Eintrag der IP-Adresse des Absenders, auch bekannt als Reverse-DNS-Adresse.|
 
 Ein Beispiel **custom_data** Wert für eine Nachricht, die nach Spam wie folgt gefiltert wird:
@@ -385,7 +385,7 @@ Ein **custom_data** Wert, der mit`S:TRA` beginnt, ist vom Transportregel-Agent f
 |`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Das Datum und die Uhrzeit in UTC, als die Regelübereinstimmung aufgetreten ist.|
 |`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind: <br/>• **Erzwingen**: alle Aktionen für die Regel werden erzwungen. <br/>• **Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt. <br/>• **Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, aber die Absender werden nicht benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.|
+|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind: <br/>* **Erzwingen**: alle Aktionen für die Regel werden erzwungen. <br/>* **Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt. <br/>* **Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keiner Weise benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.|
 
 Ein Beispiel **custom_data** Wert für eine Nachricht, die mit den Bedingungen einer e-Mail-Fluss Regel übereinstimmt, sieht wie folgt aus:
 

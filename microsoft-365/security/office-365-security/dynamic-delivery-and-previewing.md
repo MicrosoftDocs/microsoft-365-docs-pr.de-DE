@@ -1,5 +1,5 @@
 ---
-title: Dynamische Zustellung und Vorschau mit ATP-sichere Anlagen in Office 365.
+title: Dynamische Zustellung und Vorschau mit ATP-sicheren Anlagen
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Beim Einrichten Ihrer Richtlinien für das Feature "ATP-sichere Anlagen", wählen Sie die Option "Dynamische Zustellung" aus, um Nachrichtenverzögerungen zu vermeiden und Personen in die Lage zu versetzen, Anlagen in der Vorschau zu betrachten, die gescannt werden.
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599422"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637568"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit ATP-sichere Anlagen in Office 365.
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit ATP-sicheren Anlagen
 
 ## <a name="overview"></a>Übersicht
 
@@ -38,16 +38,16 @@ Die Option "Dynamische Zustellung" verhindert Verzögerungen beim E-Mail-Versand
 
 - Sobald eine Anlage überprüft wurde, steht sie zum Öffnen oder Herunterladen zur Verfügung.
 
-- Wird eine Anlage als böswillig identifiziert, wird sie in Quarantäne gestellt. Ein Mitglied des Sicherheitsteams Ihrer Organisation (z. B. ein globaler Office 365-Administrator oder ein Sicherheitsadministrator) kann [in Quarantäne befindliche Nachrichten in Office 365 verwalten](manage-quarantined-messages-and-files.md).
+- Wenn eine Anlage als bösartig eingestuft wird, wird Sie an die Quarantäne gesendet, wobei eine Person im Sicherheitsteam Ihrer Organisation (beispielsweise ein globaler Administrator oder Sicherheitsadministrator) [in Office 365 isolierte Nachrichten verwalten](manage-quarantined-messages-and-files.md)kann.
 
 Die meisten PDFs und Office-Dokumente können im sicheren Modus in der Vorschau betrachtet werden, während der ATP-Scan erfolgt. Wenn eine Anlage nicht mit der Vorschau der dynamischen Zustellung kompatibel ist, sehen E-Mail-Empfänger einen Platzhalter für die Anlage, bis der Scan von ATP-sichere Anlagen beendet ist.
 
 > [!TIP]
-> Wenn Sie ein mobiles Gerät verwenden und PDFs in der Vorschau für "Dynamische Zustellung" zunächst nicht gerendert werden, versuchen Sie es, indem Sie sich mit Ihrem mobilen Browser bei Office 365 anmelden.
+> Wenn Sie ein mobiles Gerät verwenden und PDFs zunächst nicht in der dynamischen Zustellungs Vorschau gerendert werden, versuchen Sie, sich mit Ihrem mobilen Browser anzumelden.
 
 Mit der Option "Dynamische Zustellung" können Benutzer ihre E-Mail-Nachrichten sofort lesen und beantworten, während ihre Anlagen gerade analysiert werden.
 
-Das Scannen durch das Feature "ATP-sichere Anlagen" erfolgt in der gleichen Region, in der sich Ihre Office 365-Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [Wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All).
+Die Überprüfung der ATP-Tresoranlagen erfolgt in derselben Region, in der sich Ihre Microsoft 365-Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [Wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All).
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Was passiert, wenn jemand eine E-Mail mit einer Anlage weiterleitet?
 

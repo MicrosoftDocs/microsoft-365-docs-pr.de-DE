@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die grundlegende Anti-Phishing-Richtlinie in Exchange Online Protection (EoP) und die Advanced ATP Anti-Phishing Policies in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537473"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638356"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Anti-Phishing-Richtlinien in Office 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing sind in Office 365 Organisationen mit Exchange Online Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (ATP)-Organisationen verfügbar.
 
@@ -34,7 +34,7 @@ ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 
 
 Zu den ATP-Richtlinien für Anti-Phishing gehören eine integrierte standardmäßige Anti-Phishing-Richtlinie, und Sie können zusätzliche benutzerdefinierte ATP-Richtlinien für die Anti-Phishing erstellen.
 
-Andere Office 365 Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügen über eine integrierte Standard-Anti-Phishing-Richtlinie, aber Sie können keine weiteren Richtlinien erstellen. Nur Organisationen mit Exchange Online Postfächern können Ihre standardmäßige Anti-Phishing-Richtlinie ändern.
+Andere Microsoft 365-Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügen über eine integrierte Standard-Anti-Phishing-Richtlinie, aber Sie können keine weiteren Richtlinien erstellen. Nur Organisationen mit Exchange Online Postfächern können Ihre standardmäßige Anti-Phishing-Richtlinie ändern.
 
 In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien beschrieben:
 
@@ -55,30 +55,30 @@ Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den 
 
 - [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Office 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
 Im weiteren Verlauf dieses Themas werden die Einstellungen beschrieben, die in EoP und ATP-Richtlinien für die Anti-Phishing verfügbar sind.
 
 ## <a name="spoof-settings"></a>Spoof-Einstellungen
 
-Spoofing ist, wenn die von-Adresse in einer e-Mail-Nachricht (die Absenderadresse, die in e-Mail-Clients angezeigt wird) nicht mit der Domäne der e-Mail-Quelle übereinstimmt. Weitere Informationen zur Spoofing finden Sie unter [Anti-Spoofing Protection in Office 365](anti-spoofing-protection.md).
+Spoofing ist, wenn die von-Adresse in einer e-Mail-Nachricht (die Absenderadresse, die in e-Mail-Clients angezeigt wird) nicht mit der Domäne der e-Mail-Quelle übereinstimmt. Weitere Informationen zur Spoofing finden Sie unter [Anti-Spoofing Protection in Microsoft 365](anti-spoofing-protection.md).
 
 Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien zur Verfügung:
 
-- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoofeinstellungen sind standardmäßig in der standardmäßigen Anti-Phishing-Richtlinie in EoP, der standardmäßigen ATP-AntiPhishing-Richtlinie und in neuen benutzerdefinierten ATP-AntiPhishing-Richtlinien aktiviert, die Sie erstellen. <br/><br/> Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Office 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Spoofeinstellungen sind standardmäßig in der standardmäßigen Anti-Phishing-Richtlinie in EoP, der standardmäßigen ATP-AntiPhishing-Richtlinie und in neuen benutzerdefinierten ATP-AntiPhishing-Richtlinien aktiviert, die Sie erstellen. <br/><br/> Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
-  - **Nachricht in den Junk-e-Mail-Ordner umlegen**: Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Nachricht in den Junk-e-Mail-Ordner umlegen**: Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
 
-    - [Quarantäne in Office 365](quarantine-email-messages.md)
-    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md)
-    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
+    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - Nicht **authentifizierter Absender**: aktiviert oder deaktiviert die Unbekannte Absender Identifikation in Outlook. Insbesondere gilt:
 
@@ -88,7 +88,7 @@ Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-
 
   Um zu verhindern, dass diese Bezeichner Nachrichten von bestimmten Absendern hinzugefügt werden, stehen Ihnen die folgenden Optionen zur Verfügung:
 
-  - Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+  - Zulassen, dass Absender Spoofing in der Spoof Intelligence-Richtlinie vortäuscht. Anweisungen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   - [Konfigurieren Sie die e-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
   
@@ -118,7 +118,7 @@ Die folgenden Richtlinieneinstellungen sind nur in Richtlinien für ATP-Anti-Phi
 
   - **Empfänger ist**: ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation.
   - **Der Empfänger ist Mitglied von**: eine oder mehrere Gruppen in Ihrer Organisation.
-  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Office 365.
+  - **Die Empfängerdomäne ist**: eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
 
   - **Ausnahme**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
 
@@ -152,13 +152,13 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
 
   - **Nachricht an andere e-Mail-Adressen umleiten**: sendet die Nachricht an die angegebenen Empfänger anstelle der vorgesehenen Empfänger.
 
-  - **Nachricht in Junk-e-Mail-Ordner verschieben**: die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Nachricht in Junk-e-Mail-Ordner verschieben**: die Nachricht wird an das Postfach übermittelt und in den Junk-e-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-e-Mail-Ordner verschoben, wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist (Sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
     - **Nachricht in Quarantäne verschieben**: sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Themen:
 
-    - [Quarantäne in Office 365](quarantine-email-messages.md)
-    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md)
-    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
+    - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Übermitteln Sie die Nachricht, und fügen Sie der Zeile Bcc weitere Adressen hinzu**: senden Sie die Nachricht an die beabsichtigten Empfänger, und übermitteln Sie die Nachricht automatisch an die angegebenen Empfänger.
 
@@ -172,7 +172,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
 
 - **Post Fach Intelligenz**: aktiviert oder deaktiviert künstliche Intelligenz (AI), die Benutzer-e-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung unterstützt die KI zwischen legitimen und gefälschten e-Mails von diesen Kontakten. Die Post Fach Intelligenz steht nur für Exchange Online Postfächer zur Verfügung.
 
-- **Post Fachnachrichten basierter Identitätswechsel Schutz**: aktiviert oder deaktiviert erweiterte Identitätswechsel Ergebnisse basierend auf den einzelnen Absender Karten der einzelnen Benutzer. Diese Intelligenz ermöglicht Office 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn ein Benutzeridentitätswechsel erkannt wird, können Sie eine bestimmte Aktion definieren, die für die Nachricht ausgeführt werden soll:
+- **Post Fachnachrichten basierter Identitätswechsel Schutz**: aktiviert oder deaktiviert erweiterte Identitätswechsel Ergebnisse basierend auf den einzelnen Absender Karten der einzelnen Benutzer. Diese Intelligenz ermöglicht es Microsoft 365, die Erkennung von Benutzer Identitätswechseln anzupassen und besser mit falsch positiven Ergebnissen zu umgehen. Wenn ein Benutzeridentitätswechsel erkannt wird, können Sie eine bestimmte Aktion definieren, die für die Nachricht ausgeführt werden soll:
 
   - **Keine Aktion anwenden**
   - **Weiterleiten von Nachrichten an andere e-Mail-Adressen**

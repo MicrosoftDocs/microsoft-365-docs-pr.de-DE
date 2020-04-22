@@ -1,5 +1,5 @@
 ---
-title: Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links
+title: Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre ATP-Richtlinien für sichere Links einrichten, können Sie eine "do-not-rewrite"-Liste mit URLs einfügen, um es einigen Personen in Ihrer Organisation zu ermöglichen, Websites zu besuchen, die Sie in Ihre Liste aufnehmen.
-ms.openlocfilehash: 1983e0ff2ea85092af483d4f7a563681a6441152
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638380"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -37,16 +37,16 @@ In diesem Artikel wird beschrieben, wie Sie eine Liste von URLs angeben, die von
 
 Der Schutz für ATP-Verknüpfungen verwendet mehrere Listen, einschließlich der Liste der blockierten URLs Ihrer Organisation und der Listen "nicht umschreiben" für Ausnahmen. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie die benutzerdefinierten Listen "nicht umschreiben" einrichten. Sie tun dies, wenn Sie Richtlinien für sichere Links hinzufügen oder bearbeiten, die für bestimmte Empfänger in Ihrer Organisation gelten.
 
-Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprechende Rolle zugewiesen sein. Die folgende Tabelle enthält einige Beispiele. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprechende Rolle zugewiesen sein. Die folgende Tabelle enthält einige Beispiele. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
-|Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>So zeigen Sie eine benutzerdefinierte Liste der URLs "nicht umschreiben" an oder bearbeiten diese
 

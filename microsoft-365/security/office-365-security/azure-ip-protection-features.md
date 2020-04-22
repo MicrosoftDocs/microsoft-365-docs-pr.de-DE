@@ -1,5 +1,5 @@
 ---
-title: Schutzfunktionen in Azure Information Protection, die in vorhandene Office 365 Mandanten Einrollen
+title: Schutzfunktionen in Azure Information Protection, die für vorhandene Mandanten bereitstellen
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,24 +16,24 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Um mit dem ersten Schritt beim Schutz Ihrer Informationen zu helfen, werden ab Juli 2018 alle Azure Information Protection-berechtigten Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert haben. Die Schutzfunktionen in Azure Information Protection waren früher in Office 365 als Rights Management oder Azure RMS bekannt. Wenn Ihre Organisation über einen Office E3-Dienstplan oder einen höheren Service Plan verfügt, erhalten Sie jetzt einen Head-Start Schutz für Informationen durch Azure Information Protection, wenn wir diese Features bereitstellen.
-ms.openlocfilehash: de3b233d4baac380608d3a209c2ffea274c20d5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083573"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638272"
 ---
-# <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Schutzfunktionen in Azure Information Protection, die in vorhandene Office 365 Mandanten Einrollen
+# <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Schutzfunktionen in Azure Information Protection, die für vorhandene Mandanten bereitstellen
 
 Um mit dem ersten Schritt beim Schutz Ihrer Informationen zu helfen, werden ab Juli 2018 alle Azure Information Protection-berechtigten Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert haben. Die Schutzfunktionen in Azure Information Protection waren früher in Office 365 als Rights Management oder Azure RMS bekannt. Wenn Ihre Organisation über einen Office E3-Dienstplan oder einen höheren Service Plan verfügt, erhalten Sie jetzt einen Head-Start Schutz für Informationen durch Azure Information Protection, wenn wir diese Features bereitstellen.
 
 ## <a name="changes-beginning-july-1-2018"></a>Änderungen beginnen am 1. Juli 2018
 
-Ab dem 1. Juli 2018 wird Microsoft die Schutzfunktion in Azure Information Protection für alle Office 365 Mandanten aktivieren, die über eines der folgenden Abonnement Pläne verfügen:
+Ab dem 1. Juli 2018 wird Microsoft die Schutzfunktion in Azure Information Protection für alle Organisationen mit einem der folgenden Abonnement Pläne aktivieren:
 
 - Office 365 Nachrichtenverschlüsselung wird im Rahmen von Office 365 E3 und E5, Microsoft E3 und E5, Office 365 a1, a3 und A5 sowie Office 365 G3 und G5 angeboten. Sie benötigen keine zusätzlichen Lizenzen, um die neuen Schutzfunktionen zu erhalten, die von Azure Information Protection betrieben werden.
 
-- Sie können auch Azure Information Protection Plan 1 zu den folgenden Plänen hinzufügen, um die neuen Office 365 Nachrichten Verschlüsselungsfunktionen zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Office 365 Business Essentials, Office 365 Business Premium oder Office 365 Enterprise E1.
+- Sie können auch Azure Information Protection Plan 1 zu den folgenden Plänen hinzufügen, um die neuen Office 365 Nachrichten Verschlüsselungsfunktionen zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard oder Office 365 Enterprise E1.
 
 - Jeder Benutzer, der von Office 365 Nachrichtenverschlüsselung profitiert, muss lizenziert sein, damit er von der Funktion abgedeckt wird.
 
@@ -45,11 +45,11 @@ Mandantenadministratoren können den Schutzstatus im Office 365 Administratorpor
 
 ## <a name="why-are-we-making-this-change"></a>Warum machen wir diese Änderung?
 
-Office 365 Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der jüngsten Verbesserungen an Office 365 Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 machen wir es für Unternehmen einfacher, unsere Schutzfunktionen zu aktivieren und zu verwenden, wie historisch gesehen, Verschlüsselung die Einrichtung von Technologien ist schwierig. Wenn Sie die Schutzfunktionen in Azure Information Protection standardmäßig aktivieren, können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
+Office 365 Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der jüngsten Verbesserungen an Office 365 Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 ist es für Organisationen einfacher, unsere Schutzfunktionen zu aktivieren und zu nutzen, da Verschlüsselungstechnologien historisch gesehen schwer einzurichten sind. Wenn Sie die Schutzfunktionen in Azure Information Protection standardmäßig aktivieren, können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
 
 ## <a name="does-this-impact-me"></a>Wirkt sich dies auf mich aus?
 
-Wenn Ihre Office 365 Organisation eine berechtigte Office 365 Lizenz erworben hat, wird Ihr Mandant von dieser Änderung betroffen sein.
+Wenn Ihre Organisation eine berechtigte Office 365 Lizenz erworben hat, wird Ihr Mandant von dieser Änderung betroffen sein.
 
  **Wichtig!** Wenn Sie Active Directory Rights Management Services (AD RMS) in Ihrer lokalen Umgebung verwenden, müssen Sie entweder diese Änderung sofort deaktivieren oder zu Azure Information Protection migrieren, bevor wir diese Änderung innerhalb der nächsten 30 Tage ausführen. Informationen zum Deaktivieren von finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?" weiter unten in diesem Artikel. Wenn Sie lieber migrieren möchten, lesen Sie [Migrieren von AD RMS zu Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
@@ -65,7 +65,7 @@ Verwenden Sie diese Anweisungen aus [dem Vorbereiten der Umgebung für Azure Rig
 
 Verwenden Sie die ADSI-Bearbeitung, um festzustellen, ob ein SCP in Active Directory veröffentlicht wurde: CN = Configuration [Servername], CN = Services, CN = RightsManagementServices, CN = SCP
 
-2. Wenn Sie keinen SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD RMS-Cluster herstellen, für die clientseitige Dienstermittlung oder die Lizenzierungs Umleitung mithilfe der Windows-Registrierung konfiguriert werden: HKEY_LOCAL_MACHINE \software\microsoft\msipc\servicelocation oder HKEY_ LOCAL_MACHINE \software\wow6432node\microsoft\msipc\servicelocation
+2. Wenn Sie keinen SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD RMS-Cluster herstellen, für die clientseitige Dienstermittlung oder die Lizenzierungs Umleitung mithilfe der Windows-Registrierung konfiguriert werden: HKEY_LOCAL_MACHINE \software\microsoft\msipc\servicelocation oder HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\msipc\servicelocation
 
 Weitere Informationen zu diesen Registrierungs Konfigurationen finden Sie unter [Aktivieren der clientseitigen Dienstermittlung mithilfe der Windows-Registrierung](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) und [Umleiten des Lizenzierungsserver Datenverkehrs](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
 
@@ -73,7 +73,7 @@ Weitere Informationen zu diesen Registrierungs Konfigurationen finden Sie unter 
 
 Wenn Sie die bevorstehende Änderung deaktivieren möchten, führen Sie die folgenden Schritte aus:
 
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Führen Sie das Cmdlet "IRMConfiguration" mit der folgenden Syntax aus:
 

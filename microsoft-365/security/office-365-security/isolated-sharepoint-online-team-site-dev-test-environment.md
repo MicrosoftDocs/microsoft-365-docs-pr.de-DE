@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Zusammenfassung: Konfigurieren einer SharePoint Online Teamwebsite, die vom Rest der Organisation in Ihrer Microsoft 365-Entwicklungs-/Testumgebung isoliert ist.'
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083002"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634122"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.
+ **Zusammenfassung:** Konfigurieren Sie eine SharePoint Online Teamwebsite, die vom Rest der Organisation in Ihrer Microsoft 365-Entwicklungs-/Testumgebung isoliert ist.
 
-SharePoint Online-Teamwebsites in Office 365 sind Orte für die Zusammenarbeit unter Verwendung einer gemeinsamen Dokumentbibliothek, eines OneNote-Notizbuchs und anderer Dienste. In vielen Fällen sind ein umfangreicher Zugriff sowie eine ausgedehnte Zusammenarbeit über Abteilungen oder Organisationen hinweg hilfreich. In einigen Fällen ist es jedoch empfehlenswert, den Zugriff und die Berechtigungen für die Zusammenarbeit in einer kleinen Personengruppe genau zu steuern.
+SharePoint Online Teamwebsites in Microsoft 365 sind Standorte für die Zusammenarbeit mithilfe einer allgemeinen Dokumentbibliothek, eines OneNote-Notizbuchs und anderer Dienste. In vielen Fällen sind ein umfangreicher Zugriff sowie eine ausgedehnte Zusammenarbeit über Abteilungen oder Organisationen hinweg hilfreich. In einigen Fällen ist es jedoch empfehlenswert, den Zugriff und die Berechtigungen für die Zusammenarbeit in einer kleinen Personengruppe genau zu steuern.
 
 Der Zugriff auf SharePoint Online-Teamwebsites und die Aktionen, die Benutzer ausführen können, werden durch SharePoint-Gruppen und Berechtigungsstufen gesteuert. SharePoint Online-Websites haben standardmäßig drei Zugriffsebenen:
 
@@ -43,33 +43,33 @@ In diesem Artikel werden Sie durch die Konfiguration einer isolierten SharePoint
 
 - Nur der Ersteller der Website und die Mitglieder einer Administratorengruppe für die Website können die Websiteverwaltung durchführen, die das Ändern von Berechtigungen auf Websiteebene umfasst.
 
-Das Einrichten einer isolierten SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung umfasst drei Phasen:
+Es gibt drei Phasen zum Einrichten einer isolierten SharePoint Online Teamwebsite in Ihrer Microsoft 365-Entwicklungs-/Testumgebung:
 
-1. Erstellen der Office 365-Entwicklungs-/Testumgebung
+1. Erstellen Sie die Microsoft 365-Entwicklungs-/Testumgebung.
 
 2. Erstellen der Benutzer und Gruppen für ProjectX.
 
 3. Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website.
 
 > [!TIP]
-> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Phase 1: Erstellen Sie Ihre einfache oder simulierte Enterprise-Microsoft 365-Entwicklungs-/Testumgebung
 
-Wenn Sie lediglich auf einfache Weise eine isolierte SharePoint Online-Teamwebsite mit den Mindestanforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 unter [Office 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Wenn Sie einfach nur eine isolierte SharePoint Online Teamwebsite mit den Mindestanforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 von [Microsoft 365 dev/Test Environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Wenn Sie eine isolierte SharePoint Online-Teamwebsite in einer simulierten Unternehmenskonfiguration erstellen möchten, befolgen Sie die Anweisungen unter [DirSync für die Office 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Wenn Sie eine isolierte SharePoint Online Teamwebsite in einer simulierten Unternehmenskonfiguration erstellen möchten, befolgen Sie die Anweisungen in [Dirsync für Ihre Microsoft 365 dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
 
 > [!NOTE]
 > Für das Erstellen einer isolierten SharePoint Online Website ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie eine isolierte SharePoint Online-Website testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: Erstellen von Benutzerkonten und Zugriffsgruppen
 
-Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:
+Verwenden Sie die Anweisungen unter [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) , um mit ihrem globalen Administratorkonto eine Verbindung mit Ihrem Testabonnement herzustellen:
 
-- Ihrem Computer aus (für die einfache Office 365-Entwicklungs-/Testunternehmensumgebung).
+- Ihrem Computer (für die einfache Microsoft 365-Entwicklungs-/Testumgebung).
 
-- Dem virtuellen Computer CLIENT1 aus (für die simulierte Office 365-Entwicklungs-/Testumgebung).
+- Der virtuelle CLIENT1-Computer (für die simulierte Enterprise Microsoft 365 dev/Test-Umgebung).
 
 Führen Sie die folgenden Befehle aus dem Microsoft Azure Active Directory-Modul für Windows PowerShell aus, um die neuen Zugriffsgruppen für die SharePoint Online-Teamwebsite für ProjectX zu erstellen:
 
@@ -142,13 +142,13 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 **Abbildung 1**
 
-![Die Office 365-Gruppen und deren Mitgliedschaft für eine isolierte SharePoint Online-Gruppenwebsite](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Die Microsoft 365-Gruppen und Ihre Mitgliedschaft für eine isolierte SharePoint Online Gruppen Website](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Phase 3: Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
 
-1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://admin.microsoft.com](https://admin.microsoft.com) unter Verwendung des globalen Administratorkontos an.
+1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) mit ihrem globalen Administratorkonto an.
 
 2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -216,7 +216,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
 
-3. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
+3. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
 
 4. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -246,7 +246,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
 
-1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Development VP an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und dem Kennwort des Development VP an.
 
 2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -262,7 +262,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
 
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
 
-1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort von Benutzer 3 an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) unter Verwendung des Kontonamens "Benutzer 3" und des Kennworts an.
 
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
@@ -290,7 +290,7 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in der Produktion bereitst
 
 [Basiskonfiguration der Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Office 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Microsoft 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

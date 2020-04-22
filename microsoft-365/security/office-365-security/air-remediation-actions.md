@@ -1,5 +1,5 @@
 ---
-title: Korrekturaktionen in Office 365 automatisierte Untersuchung und Antwort
+title: Korrekturaktionen in Microsoft 365 automatisierte Untersuchung und Antwort
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: d0f08c3e89882e21263c18246612949ea68ac1ad
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 8dfb203cfdae179d8d88842a2d2b55aeab2e17fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634652"
 ---
-# <a name="remediation-actions-in-office-365"></a>Korrekturaktionen in Office 365
+# <a name="remediation-actions-in-microsoft-365"></a>Korrekturaktionen in Microsoft 365
 
 ## <a name="remediation-actions"></a>Wartungsaktionen
 
@@ -60,9 +60,9 @@ In der folgenden Tabelle sind die Bedrohungen und die entsprechenden Korrekturak
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Office 365](air-view-investigation-results.md)
+- [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Microsoft 365](air-view-investigation-results.md)
 
-- [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365](air-review-approve-pending-completed-actions.md)
+- [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Microsoft 365](air-review-approve-pending-completed-actions.md)
 
 
 ## <a name="related-articles"></a>Verwandte Artikel

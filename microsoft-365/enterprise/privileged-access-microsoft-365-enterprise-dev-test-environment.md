@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Verwenden Sie diese Test Umgebungs Anleitung, um die Verwaltung privilegierten Zugriffs für Ihre Microsoft 365 Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085374"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632863"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Privileged Access Management für die Microsoft 365 Enterprise-Testumgebung
 
@@ -46,7 +46,7 @@ Wenn Sie die privilegierte Zugriffsverwaltung in einem simulierten Unternehmen k
 
 In dieser Phase konfigurieren Sie eine Gruppe Genehmigende Personen und aktivieren die Verwaltung privilegierter Zugriffsrechte für Ihre Microsoft 365 Enterprise-Testumgebung. Weitere Details und eine Übersicht über die Verwaltung privilegierten Zugriffs finden Sie unter [privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Führen Sie die folgenden Schritte zum Einrichten und Verwenden von privilegiertem Zugriff in Ihrer Office 365 Organisation aus:
+Führen Sie die folgenden Schritte zum Einrichten und Verwenden von privilegiertem Zugriff in Ihrer Organisation aus:
 
 - [Schritt 1: Erstellen einer Gruppe einer genehmigenden Person](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte zum Einrichten und Verwenden von privilegiert
 
 - [Schritt 2: Aktivieren des privilegierten Zugriffs](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    Der privilegierte Zugriff muss in Office 365 explizit mit der standardmäßigen genehmigenden Gruppe aktiviert sein und eine Reihe von Systemkonten enthalten, die von der Zugriffssteuerung für privilegierte Zugriffsverwaltung ausgeschlossen werden sollen. Achten Sie darauf, den privilegierten Zugriff in Ihrer Office 365 Organisation zu aktivieren, bevor Sie Phase 3 dieses Handbuchs starten.
+    Der privilegierte Zugriff muss in Office 365 explizit mit der standardmäßigen genehmigenden Gruppe aktiviert sein und eine Reihe von Systemkonten enthalten, die von der Zugriffssteuerung für privilegierte Zugriffsverwaltung ausgeschlossen werden sollen. Achten Sie darauf, den privilegierten Zugriff in Ihrer Organisation zu aktivieren, bevor Sie Phase 3 dieses Handbuchs starten.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3: überprüfen, ob eine Genehmigung für erweiterte und privilegierte Aufgaben erforderlich ist
 

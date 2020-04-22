@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP-sichere Links für Teams, safelinks, sichere Links, blockieren schädlicher Links, Office 365 ATP, sichere Links für Teams, Beenden von Benutzern beim Klicken auf ungültige Links, böswillige Links
+title: ATP-sichere Links für Teams, safelinks, sichere Links, blockieren schädlicher Links, Office 365 ATP, sichere Links für Teams, Beenden von Benutzern beim Klicken auf ungültige Links, böswillige Links
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,30 +14,27 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Teams haben jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Sie Chats mit 1-zu-1-Chats, zwischen Gruppen oder in Kanälen und Registerkarten verwenden, wenn Sie ein Abonnement für Office 365 ATP haben, haben Sie die Möglichkeit, dieses Sicherheitsfeature zu aktivieren und zu verwenden.
-ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 88fe9756188eb16a2347d3c0cd4a98b4003ff457
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635998"
 ---
 <!--06/21/2019-->
 
-# <a name="office-365-safe-links-in-teams"></a>Office 365 sichere Links in Microsoft Teams
+# <a name="safe-links-in-teams"></a>Sichere Links in Teams
 
 > [!IMPORTANT]
 > Dieses Feature befindet sich in der **öffentlichen Vorschau** für Kunden im Microsoft Teams Technology Adoption Program (Tap) zum 28. Februar 2020. Dieser Hinweis wird aus dem Artikel entfernt, wenn sichere Links für Teams häufiger verfügbar sind.
 
-Microsoft Teams, eine Office 365 Cloud-basierte Anwendung zur Verwaltung ihrer Arbeit, verwendet bereits sichere Anlagen (für Office 365), hat aber jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Chats mit 1-zu-1-Chats, zwischen Gruppen oder in Kanälen und Registerkarten verwendet werden, wenn Sie ein Abonnement für Office 365 ATP haben, können Sie diese Sicherheitsmaßnahme aktivieren und verwenden.
+Microsoft Teams, eine in Microsoft cloudbasierten Anwendung zur Verwaltung ihrer Arbeit, verwendet bereits sichere Anlagen (für Office 365), hat aber jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Chats mit 1-zu-1-Chats, zwischen Gruppen oder in Kanälen und Registerkarten verwendet werden, wenn Sie ein Abonnement für Office 365 ATP haben, können Sie diese Sicherheitsmaßnahme aktivieren und verwenden.
 
 So funktioniert es: 
 
-1. Wenn Sie die Teams-Anwendung starten, überprüfen Office 365, ob der Benutzer einer Organisation angehört, die über Office 365 ATP verfügt, und dass der Benutzer Teil einer aktiven Richtlinie für sichere Links ist, deren Schutz für Microsoft Teams aktiviert ist.
+1. Wenn Sie die Teams-Anwendung starten, überprüft Microsoft 365, um sicherzustellen, dass der Benutzer zu einer Organisation gehört, die über Office 365 ATP verfügt, und dass der Benutzer Teil einer aktiven Richtlinie für sichere Links ist, deren Schutz für Microsoft Teams aktiviert ist.
 
 2. Wenn dies der Fall ist, werden URLs zum Zeitpunkt der Klickfunktion in Chats, Gruppenchats, Kanälen und Registerkarten für diesen Benutzer überprüft.
-
-> [!NOTE]
-> Sichere linksschützen Benutzer vor Links, die von Gastbenutzern, Verbundbenutzern und Mandanten Benutzern gesendet werden. Wenn der angemeldete Benutzer über sichere Links für aktivierte Teams verfügt, werden Schutz für sichere Links angewendet.
  
 ## <a name="what-will-users-experience"></a>Was werden Benutzer erfahren? 
 
@@ -47,12 +44,12 @@ Für alle geschützten Benutzer wird diese Erfahrung mit gefährlichen URLs verw
 
 - Dieser Benutzer wird vom Fortfahren mit der URL-Website blockiert.
 
-Wenn der Benutzer, der den Link gesendet hat, nicht durch Office 365 ATP geschützt ist, kann er auf die URL auf seinem Computer klicken und die Problem Website beheben. Auf diese Weise ist es für Office 365 Administratoren doppelt wichtig, sich darüber bewusst zu sein, wer Ihre geschützten Benutzer sind und sein sollten.
+Wenn der Benutzer, der den Link gesendet hat, nicht durch Office 365 ATP geschützt ist, kann er auf die URL auf seinem Computer klicken und die Problem Website beheben. Auf diese Weise ist es für Administratoren doppelt wichtig, sich darüber bewusst zu sein, wer Ihre geschützten Benutzer sind und sein sollten.
 
 ![Eine sichere Links für Teams-Seite, die einen bösartigen Link meldet und die Übertragung auf die Seite blockiert.](/microsoft-365/media/TP_SafelinksForTeams_Malicious.png)
 
 Wenn Sie auf dieser Seite in Microsoft Teams auf die Schaltfläche " *zurück* " klicken, wird diese geschlossen (oder es kann zu einer leeren Seite führen, wenn Benutzer schließen können). Durch Klicken auf den Link wird jedoch erneut die Zuverlässigkeit der Website bewertet, sodass diese Seite wieder angezeigt wird.
 
 > [!NOTE]
->Einige Office 365 Administratoren aktivieren die Meldung **Continue Anyway** auf der Seite blockieren. Wenn jedoch sichere Links den Ruf einer Website misst und diese nicht mehr zur Verfügung stehen, sollte keine weitere durch Klick erfolgen. Es wird nicht empfohlen, dass Benutzer Sicherheitsmaßnahmen umgehen. Wägen Sie dies bitte auf ihre Überlegungen ab, bevor Sie Continue trotzdem aktivieren. 
+>Einige Microsoft 365-Administratoren aktivieren die Meldung **Continue Anyway** auf der Seite blockieren. Wenn jedoch sichere Links den Ruf einer Website misst und diese nicht mehr zur Verfügung stehen, sollte keine weitere durch Klick erfolgen. Es wird nicht empfohlen, dass Benutzer Sicherheitsmaßnahmen umgehen. Wägen Sie dies bitte auf ihre Überlegungen ab, bevor Sie Continue trotzdem aktivieren. 
 

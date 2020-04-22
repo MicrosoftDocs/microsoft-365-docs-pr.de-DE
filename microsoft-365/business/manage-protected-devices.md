@@ -1,5 +1,5 @@
 ---
-title: Geschützte Geräte mit Microsoft 365 Business verwalten
+title: Verwalten geschützter Geräte mit Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Hier erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10-Geräte auf die Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: 97c9751d020d7f2aecb1e64718721c1ca25189e1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561518"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634286"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business"></a>Geschützte Geräte mit Microsoft 365 Business verwalten
+# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Verwalten geschützter Geräte mit Microsoft 365 for Business
 
 Wenn ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Geschäftskonto auf dem Gerät oder für Office-Apps auf dem Gerät angemeldet hat, können Sie das Gerät mit den Richtlinien schützen, die Sie eingerichtet haben. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
 

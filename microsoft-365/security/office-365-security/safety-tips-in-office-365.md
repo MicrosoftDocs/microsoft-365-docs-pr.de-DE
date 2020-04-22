@@ -1,5 +1,5 @@
 ---
-title: Sicherheitstipps in E-Mail-Nachrichten in Office 365
+title: Sicherheitstipps in E-Mail-Nachrichten
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die durch den Spamfilter von EoP und Office 365 gefiltert werden.
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die von EoP und dem Spamfilter gefiltert werden.
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032816"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634304"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in E-Mail-Nachrichten in Office 365
+# <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
-Exchange Online Protection (EoP) und Office 365 schützen Sie mit Spam, Phishing und Malware Prevention. Heute sind einige dieser Angriffe so gut gestaltet, dass Sie legitim erscheinen. Das Senden von Nachrichten an den Junk-e-Mail-Ordner ist nicht immer ausreichend. Wenn Sie nun Ihre e-Mails in Outlook oder Outlook im Internet überprüfen, überprüft EoP automatisch den Absender und fügt einen Sicherheitshinweis oben in der e-Mail hinzu.
+Exchange Online Protection (EoP) und Microsoft 365 schützen Sie mit Spam, Phishing und Malware Prävention. Heute sind einige dieser Angriffe so gut gestaltet, dass Sie legitim erscheinen. Das Senden von Nachrichten an den Junk-e-Mail-Ordner ist nicht immer ausreichend. Wenn Sie nun Ihre e-Mails in Outlook oder Outlook im Internet überprüfen, überprüft EoP automatisch den Absender und fügt einen Sicherheitshinweis oben in der e-Mail hinzu.
 
-Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell schädlichen Nachrichten. Die meisten Nachrichten in Ihrem Posteingang verfügen nicht über einen Sicherheitshinweis. Sie werden nur angezeigt, wenn EoP und Office 365 Informationen enthalten, die Sie zum Verhindern von Spam-, Phishing-und Schadsoftware-Angriffen benötigen. Wenn in Ihrem Posteingang Sicherheitstipps angezeigt werden, können Sie anhand der folgenden Beispiele Weitere Informationen zu den einzelnen Sicherheitstipp Typen erhalten.
+Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell schädlichen Nachrichten. Die meisten Nachrichten in Ihrem Posteingang verfügen nicht über einen Sicherheitshinweis. Sie werden nur angezeigt, wenn EoP und Microsoft 365 Informationen enthalten, die Sie bei der Vermeidung von Spam-, Phishing-und Schadsoftware-Angriffen unterstützen müssen. Wenn in Ihrem Posteingang Sicherheitstipps angezeigt werden, können Sie anhand der folgenden Beispiele Weitere Informationen zu den einzelnen Sicherheitstipp Typen erhalten.
 
 - Verdächtige e-Mails (roter Sicherheitshinweis).
 
@@ -58,6 +58,6 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 
-Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jede Nachricht eine erhalten wird. Office 365 Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+Sicherheitstipps sind für Outlook im Internet immer aktiviert, obwohl nicht jede Nachricht eine erhalten wird. Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 Wenn Sie mit der Kategorisierung einer Nachricht durch EoP nicht einverstanden sind (das heißt, die Nachricht ist kein Spam oder Sie sollte als Spam gekennzeichnet worden sein), können Sie die Nachrichten zur Analyse an Microsoft übermitteln, um eine bessere Benutzerfreundlichkeit zu ermöglichen. Anweisungen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden und uns dabei zu verbessern.

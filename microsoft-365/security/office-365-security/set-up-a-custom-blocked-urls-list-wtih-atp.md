@@ -1,5 +1,5 @@
 ---
-title: Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-Sicherheits Links
+title: Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie eine Liste blockierter URLs für Ihre Organisation mit Office 365 Advanced Threat Protection einrichten. Die gesperrten URLs gelten für e-Mail-Nachrichten und Office-Dokumente gemäß ihren ATP-Richtlinien für sichere Links.
-ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638404"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-Sicherheits Links
+# <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -33,7 +33,7 @@ Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre O
   
 ![Diese Website ist blockiert](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-Die Liste Blockierte URLs wird vom Office 365 Sicherheitsteam Ihrer Organisation definiert, und diese Liste gilt für alle Personen in der Organisation, die von Office 365 Richtlinien für ATP-sichere Links abgedeckt werden. 
+Die Liste Blockierte URLs wird vom Microsoft 365 for Business-Sicherheitsteam Ihrer Organisation definiert, und diese Liste gilt für alle Benutzer in der Organisation, die von Office 365 Richtlinien für ATP-sichere Links abgedeckt werden. 
   
 In diesem Artikel erfahren Sie, wie Sie die Liste der benutzerdefinierten blockierten URLs Ihrer Organisation für [ATP-sichere Links in Office 365](atp-safe-links.md)einrichten.
   
@@ -45,12 +45,12 @@ Um ATP-Richtlinien zu bearbeiten oder zu definieren, müssen Sie einer der in de
 
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
-|Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>So zeigen Sie eine benutzerdefinierte Liste blockierter URLs an oder bearbeiten Sie
   

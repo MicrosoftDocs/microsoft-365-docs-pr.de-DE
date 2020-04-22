@@ -1,5 +1,5 @@
 ---
-title: Benennungsrichtlinie für Office 365-Gruppen
+title: Benennungsrichtlinie für Gruppen
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Erfahren Sie, wie eine Benennungsrichtlinie für Office 365-Gruppen erstellt wird.
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Hier erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894623"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630443"
 ---
-# <a name="office-365-groups-naming-policy"></a>Benennungsrichtlinie für Office 365-Gruppen
+# <a name="groups-naming-policy"></a>Benennungsrichtlinie für Gruppen
 
 Mithilfe der Gruppenbenennungsrichtlinie können Sie eine konsistente Benennungsstrategie für Gruppen erzwingen, die von Benutzern in Ihrer Organisation erstellt werden. Eine Benennungsrichtlinie kann Ihnen und Ihren Benutzern bei der Identifizierung der Funktion der Gruppe, der Mitgliedschaft, der geografischen Region oder der Person helfen, die die Gruppe erstellt hat. Die Benennungsrichtlinie kann auch hilfreich beim Kategorisieren von Gruppen im Adressbuch sein. Mithilfe der Richtlinie können Sie bestimmte Wörter in Gruppennamen und -aliasen blockieren.
 
 Die Benennungsrichtlinie wird auf Gruppen angewendet, die für alle Gruppen Arbeitsauslastungen erstellt werden (wie Outlook, Microsoft Teams, SharePoint, Planer, jammern usw.). Sie wird sowohl auf den Gruppennamen als auch auf den Gruppenalias angewendet. Außerdem wird sie angewendet, wenn ein Benutzer eine Gruppe erstellt und wenn ein Gruppenname oder -alias bei einer bestehenden Gruppe bearbeitet wird.
 
 > [!TIP]
-> Eine Benennungsrichtlinie für Office 365 Gruppen gilt nur für Office 365 Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Eine Microsoft 365-gruppenbenennungsrichtlinie gilt nur für Microsoft 365-Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
@@ -44,7 +44,7 @@ Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Die Verwendung der Azure AD-Benennungsrichtlinie für Office 365-Gruppen setzt voraus, dass Sie über eine Azure Active Directory Premium P1-Lizenz oder eine Azure AD Basic EDU-Lizenz für jeden eindeutigen Benutzer (einschließlich Gäste) verfügen, der Mitglied einer oder mehrerer Office 365-Gruppen ist.
+Wenn Sie Azure AD Benennungsrichtlinie für Microsoft 365-Gruppen verwenden, müssen Sie für jeden eindeutigen Benutzer (einschließlich Gäste), der Mitglied einer oder mehrerer Microsoft 365-Gruppen ist, eine Azure Active Directory Premium P1-Lizenz oder Azure AD Basic edu-Lizenz besitzen, jedoch nicht unbedingt zuweisen.
 
 Dies gilt auch für den Administrator, der die Benennungsrichtlinie für Gruppen erstellt.
 
@@ -80,7 +80,7 @@ Es empfiehlt sich, Attribute mit ausgefüllten Werten für alle Benutzer in Ihre
 
 - Präfixe und Suffixe können Sonderzeichen enthalten, die in Gruppennamen und Gruppenaliasen unterstützt werden. Wenn die Präfixe und Suffixe Sonderzeichen enthalten, die im Gruppen Alias nicht zulässig sind, werden Sie nur auf den Gruppennamen angewendet. In diesem Fall würden sich also die auf den Gruppennamen angewendeten Präfixe und Suffixe von den auf den Gruppennamen angewendeten unterscheiden.
 
-- Wenn Sie jammern Office 365 verbundene Gruppen verwenden, vermeiden Sie die Verwendung der folgenden Zeichen in ihrer Benennungs \#Richtlinie \[: \]@ \<,, \>,, und. Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
+- Wenn Sie Microsoft 365-verbundene Gruppen mit jammern verwenden, vermeiden Sie die Verwendung der folgenden Zeichen in ihrer Benennungs \]Richtlinie \<: @ \>, \#, \[,, und. Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
 
 ## <a name="custom-blocked-words"></a>Benutzerdefinierte blockierte Wörter
 
@@ -126,10 +126,10 @@ So richten Sie eine Benennungsrichtlinie ein:
 ![Screenshot der Einstellungen für Benennungsrichtlinien für Gruppen in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub-Teams unterliegen nicht der Benennungsrichtlinie, die zugrunde liegende Office 365-Gruppe jedoch schon. Der StaffHub-Teamname wendet die Präfixe und Suffixe nicht an und wird nicht auf benutzerdefinierte blockierte Wörter überprüft. StaffHub wendet die Präfixe und Suffixe allerdings auf die zugrunde liegende Office 365-Gruppe an und entfernt dort ggf. blockierte Wörter.
+> StaffHub Teams bezieht sich nicht auf die Benennungsrichtlinie, die zugrunde liegende Microsoft 365-Gruppe wird jedoch nicht befolgt. Der StaffHub-Teamname wendet die Präfixe und Suffixe nicht an und wird nicht auf benutzerdefinierte blockierte Wörter überprüft. StaffHub jedoch wendet die Präfixe und Suffixe an und entfernt blockierte Wörter aus der zugrunde liegenden Microsoft 365-Gruppe.
 
 ## <a name="more-articles-on-naming-policy"></a>Weitere Artikel zur Benennungsrichtlinie
 
-[Erzwingen einer Benennungsrichtlinie für Office 365-Gruppen in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Erzwingen einer Benennungsrichtlinie für Microsoft 365-Gruppen in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Azure Active Directory-Cmdlets für die Konfiguration von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?linkid=868341)

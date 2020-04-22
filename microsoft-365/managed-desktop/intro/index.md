@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516809"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636220"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -28,7 +28,7 @@ Microsoft Managed Desktop bietet eine Lösung für einige der Herausforderungen,
 - Viele aktuelle IT-Verwaltungs-und Sicherheitsprozesse sind veraltet, zeitintensiv und kostspielig.
 - Unternehmen möchten sich darauf konzentrieren, was Sie zu einem einzigartigen Erfolg machen, anstatt die digitale Infrastruktur beizubehalten.
 
-Ihre Endbenutzer genießen die neuesten Versionen von Windows 10 und Office 365 ProPlus-Apps (und vieles mehr) mit Geräten und Software, die für eine optimale Leistung und Zuverlässigkeit kuratiert und rigoros getestet werden. Außerdem müssen Sie sich keine Gedanken darüber machen, dass diese Software auf dem neuesten Stand ist, da dies automatisch geschieht, wenn Sie eine sorgfältige Rollout Sequenz durchlaufen, die bei jedem Schritt überwacht wird. Und registrierte Geräte werden 24X7 für technische und Sicherheitsprobleme überwacht, wenn also etwas schief geht, wird Hilfe auf dem Weg sein.
+Ihre Endbenutzer genießen die neuesten Versionen von Windows 10 und Microsoft 365-Apps für Enterprise-Apps (und vieles mehr), indem Sie Geräte und Software verwenden, die für eine optimale Leistung und Zuverlässigkeit kuratiert und rigoros getestet werden. Außerdem müssen Sie sich keine Gedanken darüber machen, dass diese Software auf dem neuesten Stand ist, da dies automatisch geschieht, wenn Sie eine sorgfältige Rollout Sequenz durchlaufen, die bei jedem Schritt überwacht wird. Und registrierte Geräte werden 24X7 für technische und Sicherheitsprobleme überwacht, wenn also etwas schief geht, wird Hilfe auf dem Weg sein.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Einzigartig für Microsoft Managed Desktop
@@ -111,4 +111,3 @@ Wenn Microsoft Managed Desktop für Ihre Organisation geeignet ist, können Sie 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

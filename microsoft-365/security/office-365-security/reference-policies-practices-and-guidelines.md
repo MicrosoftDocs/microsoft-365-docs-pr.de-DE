@@ -16,22 +16,22 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033746"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634388"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
 
-Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen E-Mails an Office 365-Benutzer zu senden, sollten sicherstellen, dass sie diese vollständig verstehen und die Anleitungen in diesem Artikel befolgen, um potenzielle Probleme bei der Zustellung zu vermeiden.
+Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, e-Mails an Benutzer zu senden, sollten sicherstellen, dass Sie die Anleitungen in diesem Artikel vollständig verstehen und befolgen, um diese Bemühungen zu unterstützen und potenzielle Zustellungsprobleme zu vermeiden.
 
-Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Delist-Portals, um sich selbst aus der Liste blockierter Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Allgemeine Microsoft-Richtlinien
 
-E-Mail-Nachrichten, die an Office 365-Benutzer gesendet werden, müssen allen Microsoft-Richtlinien entsprechen, die die Übertragung von E-Mails und die Verwendung von Office 365 regeln.
+An Microsoft 365-Benutzer gesendete e-Mails müssen alle Microsoft-Richtlinien einhalten, die die e-Mail-Übertragung und Verwendung von Office 365 Regeln.
 
 - Nutzungsbedingungen Office 365; insbesondere das Verbot der Verwendung des Diensts zum Verbreiten von Spam oder Malware
 
@@ -39,7 +39,7 @@ E-Mail-Nachrichten, die an Office 365-Benutzer gesendet werden, müssen allen Mi
 
 ## <a name="governmental-regulations"></a>Einhaltung von gesetzlichen Vorschriften
 
-An Office 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und Vorschriften für die E-Mail-Kommunikation in der entsprechenden Zuständigkeit einhalten.
+An Microsoft 365-Benutzer gesendete e-Mails müssen alle geltenden Gesetze und Vorschriften für die e-Mail-Kommunikation in der jeweiligen Jurisdiktion einhalten.
 
 - [CAN-SPAM Act: Compliance-Leitfaden für Unternehmen](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -47,13 +47,13 @@ An Office 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und Vors
 
 ## <a name="technical-guidelines"></a>Technische Richtlinien
 
-An Office 365 gesendete E-Mail-Nachrichten sollten den jeweiligen Empfehlungen entsprechen, die in den folgenden Dokumenten aufgelistet werden (einige Links sind nur auf Englisch verfügbar).
+E-Mail-Nachrichten, die an Microsoft 365 gesendet werden, sollten den einschlägigen Empfehlungen entsprechen, die in den unten stehenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-Darüber hinaus müssen E-Mail-Server, die eine Verbindung mit Office 365 herstellen, die folgenden Anforderungen erfüllen:
+Darüber hinaus müssen e-Mail-Server, die eine Verbindung mit Microsoft 365 herstellen, die folgenden Anforderungen erfüllen:
 
 - Absender muss allen technischen Standards für die Übermittlung von Internet-E-Mails entsprechen - gemäß der Veröffentlichungen der Internet Engineering Task Force (IETF) von The Internet Society, einschließlich RFC 5321, RFC 5322 und anderen.
 
@@ -73,9 +73,9 @@ Darüber hinaus müssen E-Mail-Server, die eine Verbindung mit Office 365 herste
 
 Absender, ISPs und andere Dienstanbietern sollten die Zuverlässigkeit Ihrer ausgehenden IP-Adressen aktiv verwalten.
 
-## <a name="office-365-limits"></a>Office 365-Beschränkungen
+## <a name="microsoft-365-limits"></a>Microsoft 365-Beschränkungen
 
-Absender müssen die Office 365-Beschränkungen einhalten, die in [Beschränkungen von Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits) aufgeführt werden.
+Absender müssen die Microsoft 365-Grenzwerte einhalten, die unter [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)aufgeführt sind.
 
 ## <a name="email-delivery-resources-and-organizations"></a>E-Mail-Übermittlungsressourcen und -Organisationen
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633753"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633653"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
@@ -35,12 +35,12 @@ Da Administratorkonten mit erhöhten Rechten ausgestattet sind, sind Sie wertvol
 - Einrichten eines zusätzlichen Administratorkontos für Notfälle.
 - Wie diese Konten geschützt werden.
  
-Wenn Sie sich für Microsoft 365 Business registrieren und Ihre Informationen eingeben, werden Sie automatisch zum globalen Administrator. Ein globaler Administrator hat die ultimative Kontrolle über Benutzerkonten und alle anderen Einstellungen im Microsoft Admin Center, aber es gibt viele verschiedene Arten von Administratorkonten mit unterschiedlichem Zugriffs Grad. Unter Informationen zu [Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) finden Sie Informationen zu den verschiedenen Zugriffsebenen für jede Art von Administratorrolle.
+Wenn Sie sich für Microsoft 365 registrieren und Ihre Informationen eingeben, werden Sie automatisch zum globalen Administrator. Ein globaler Administrator hat die ultimative Kontrolle über Benutzerkonten und alle anderen Einstellungen im Microsoft Admin Center, aber es gibt viele verschiedene Arten von Administratorkonten mit unterschiedlichem Zugriffs Grad. Unter Informationen zu [Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) finden Sie Informationen zu den verschiedenen Zugriffsebenen für jede Art von Administratorrolle.
 
 
 ## <a name="create-additional-admin-accounts"></a>Erstellen zusätzlicher Administratorkonten
 
-Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und bei Bedarf nur Ihr Administratorkonto verwenden, um Konten und Geräte zu verwalten, sowie bei der Arbeit an anderen Verwaltungsfunktionen. Es empfiehlt sich auch, die Microsoft 365 Business License aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
+Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und bei Bedarf nur Ihr Administratorkonto verwenden, um Konten und Geräte zu verwalten, sowie bei der Arbeit an anderen Verwaltungsfunktionen. Es empfiehlt sich auch, die Microsoft 365-Lizenz von den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
 
 Sie möchten mindestens ein zusätzliches globales Administratorkonto einrichten, um Administratorzugriff auf einen anderen vertrauenswürdigen Mitarbeiter zu erhalten. Sie können auch separate Administratorkonten für die Benutzerverwaltung erstellen (diese Rolle wird als **Benutzer Verwaltungs Administrator**bezeichnet). Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 

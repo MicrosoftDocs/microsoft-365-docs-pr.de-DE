@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599242"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638046"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -25,13 +25,13 @@ In den hier aufgeführten Informationen des technischen Supports finden Sie Antw
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 
-Bei der Anmeldung stellt das Office 365-Portal Informationen zum Status der Dienste Ihrer Organisation bereit. Zudem enthält der Dienststatus-Abschnitt von Office 365 den aktuellen Status der Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten. Das Office 365-Portal bietet auch Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienst Integritätsbereich von Office 365 finden Sie unter [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mit den hier aufgeführten Tools, Foren und Community-Websites können Sie Probleme möglicherweise selbst lösen.
+Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation bereit. Außerdem werden im Abschnitt Dienst Integrität der aktuelle Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie geplante Wartungszeiten aufgeführt. Das Microsoft 365 Admin Center enthält außerdem Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienst Integritätsbereich finden Sie unter [Dienststatus und Kontinuität](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mit den hier aufgeführten Tools, Foren und Community-Websites können Sie Probleme möglicherweise selbst lösen.
 
 [Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
@@ -63,11 +63,11 @@ Weitere Informationen darüber, wie Ihnen der Premier-Support bei Ihrer Organisa
 
    Bei Fragen vor dem Erwerb von EOP oder bei Fragen zur Abrechnung und zu Abonnements wechseln Sie zu **Support** \> **Kundensupport anfordern** \> **Support zur Abrechnung und zu Abonnements anrufen**.
 
-3. Suchen Sie mithilfe des virtuellen Support-Assistenten für Office 365 nach der aktuellen Telefonnummer.
+3. Verwenden Sie den virtuellen Agent, um nach der aktuellsten geeigneten Telefonnummer zu suchen.
 
 ## <a name="support-telephone-numbers"></a>Telefonnummern für den Support
 
-Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsupport weltweit. Viele dieser Supportcenter bieten während der Geschäftszeiten in Ihrer Landessprache oder rund um die Uhr an 365 Tagen im Jahr auf Englisch Unterstützung. Wenn Ihr Land in der folgenden Liste nicht aufgeführt ist, verwenden Sie den virtuellen Support-Assistenten für Office 365 wie oben beschrieben, um nach der Telefonnummer für Ihr Land zu suchen.
+Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsupport weltweit. Viele dieser Supportcenter bieten während der Geschäftszeiten in Ihrer Landessprache oder rund um die Uhr an 365 Tagen im Jahr auf Englisch Unterstützung. Wenn Ihr Standort unten nicht aufgeführt ist, verwenden Sie den virtuellen Agent wie oben beschrieben, um Ihre lokale Support-Telefonnummer zu finden.
 
 |**Land oder Region**|**Fragen vor dem Kauf und zur Abrechnung**|**Fragen an den technischen Support**|
 |:-----|:-----|:-----|

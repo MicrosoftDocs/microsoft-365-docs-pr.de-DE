@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie die SCL-Bewertung (Spam Confidence Level) bestimmt, wie wahrscheinlich oder unwahrscheinlich eine Nachricht Spam ist, und die Standardaktionen, die von der Spamfilterung für Nachrichten basierend auf der SCL-Bewertung ausgeführt werden.
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893694"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638284"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>SCL (Spam Confidence Level) in Office 365
 
-Wenn Office 365 (Exchange Online oder eigenständiger Exchange Online Schutz (EoP) ohne Exchange Online Postfächer) eine eingehende e-Mail-Nachricht erhält, wird die Nachricht durch Spamfilterung und einem Spam-Faktor zugewiesen. Das Ergebnis wird einer individuellen SCL-Bewertung (Spam Confidence Level) zugeordnet, die der Nachricht in einer X-Kopfzeile hinzugefügt wird. Eine höhere SCL-Bewertung gibt an, dass eine Nachricht eher Spam ist. Der Dienst nimmt auf der Grundlage der SCL-Bewertung Aktionen an der Nachricht vor.
+Wenn Microsoft 365 (Exchange Online oder eigenständiger Exchange Online Schutz (EoP) ohne Exchange Online Postfächer) eine eingehende e-Mail-Nachricht erhält, durchläuft die Nachricht die Spamfilterung und wird mit einer Spambewertung versehen. Das Ergebnis wird einer individuellen SCL-Bewertung (Spam Confidence Level) zugeordnet, die der Nachricht in einer X-Kopfzeile hinzugefügt wird. Eine höhere SCL-Bewertung gibt an, dass eine Nachricht eher Spam ist. Der Dienst nimmt auf der Grundlage der SCL-Bewertung Aktionen an der Nachricht vor.
 
 Was der SCL-Wert bedeutet und welche Standardaktionen für Nachrichten ausgeführt werden, wird in der folgenden Tabelle beschrieben. Weitere Informationen zu Aktionen, die Sie Nachrichten basierend auf dem Spamfilter Urteil ausführen können, finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
@@ -46,4 +46,4 @@ Mithilfe von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) könn
 
 ||
 |:-----|
-|![Das Kurzsymbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?**         Entdecken Sie die kostenlosen Videokurse für **Office 365 admins and IT pros**, präsentiert von LinkedIn Learning.|
+|![Das Kurzsymbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?**         Entdecken Sie ﻿kostenlose Video Kurse für **Microsoft 365-Administratoren und IT-Experten**, die Ihnen von LinkedIn Learning angeboten werden.|

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie sich Microsoft 365 für Kampagnen auf Ihre Benutzer auswirkt.
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632767"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Auswirkungen von Microsoft 365 für Kampagnen auf Ihre Benutzer
 
@@ -70,7 +70,7 @@ Bei [nicht verwalteten Windows 10-und Mac-Geräten](m365-campaigns-protect-pcs-m
 
 Weitere Informationen zu diesen Empfehlungen finden Sie unter [Protect Your Account and Devices from Hackers and Malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Zusammenarbeit mit Microsoft Teams, OneDrive, SharePoint Online und anderen Office 365 Tools
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Zusammenarbeit mit Microsoft Teams, OneDrive, SharePoint Online und anderen Tools
 Ihre Benutzer sind möglicherweise versucht, ihre Organisationsdateien an anderen Orten als Microsoft 365 freizugeben und zu speichern. Mit Microsoft 365 ist es so einfach wie möglich, die Zusammenarbeit und die sichere Freigabe sicherzustellen. Sie können [Dateien und Videos](share-files-and-videos.md) direkt in Microsoft Teams, OneDrive, Stream und sogar in einer Datei freigeben. Die Freigabe in diesen Tools trägt dazu bei, dass Ihre Daten nicht mehr auslaufen. Sie können vertraulichen Daten zusätzlichen Schutz hinzufügen, um die Freigabe außerhalb Ihrer Organisation zu verhindern. 
 
 

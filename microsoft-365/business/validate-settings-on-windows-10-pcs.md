@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Erfahren Sie, wie Sie überprüfen können, ob die Microsoft 365 Business App Protection-Einstellungen auf den Windows 10-Geräten Ihrer Benutzer wirksam wurden.
-ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Hier erfahren Sie, wie Sie sicherstellen können, dass Microsoft 365 for Business-App-Schutzeinstellungen auf den Windows 10-Geräten Ihrer Benutzer wirksam wurden.
+ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560678"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635702"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Überprüfen von Geräteschutzeinstellungen auf Windows 10-PCs
 
@@ -60,11 +60,11 @@ Nachdem Sie [Geräterichtlinien eingerichtet haben](protection-settings-for-wind
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Microsoft 365 Business-Dokumentation und -Ressourcen](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Dokumentation und Ressourcen zu Microsoft 365 for Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Erste Schritte mit Microsoft 365 Business](microsoft-365-business-overview.md)
+[Erste Schritte mit Microsoft 365 for Business](microsoft-365-business-overview.md)
   
-[Verwalten von Microsoft 365 Business](manage.md)
+[Verwalten von Microsoft 365 for Business](manage.md)
   
 [Festlegen von Geräteschutzeinstellungen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)
   

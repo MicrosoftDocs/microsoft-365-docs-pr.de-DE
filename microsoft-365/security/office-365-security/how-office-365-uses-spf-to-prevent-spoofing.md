@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
+title: Verwenden von SPF (Sender Policy Framework) für Microsoft 365 zur Verhinderung von Spoofing
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,34 +15,34 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 'Zusammenfassung: in diesem Artikel wird beschrieben, wie Microsoft 365 den SPF-TXT-Eintrag (Sender Policy Framework) in DNS verwendet, um sicherzustellen, dass Ziel-e-Mail-Nachrichten von Ihrer benutzerdefinierten Domäne aus Vertrauen. Dies gilt für ausgehende e-Mails, die von Microsoft 365 gesendet wurden. Nachrichten, die von Microsoft 365 an einen Empfänger in Microsoft 365 gesendet werden, übergeben immer SPF.'
+ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633990"
 ---
-# <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden von SPF (Sender Policy Framework) für Microsoft 365 zur Verhinderung von Spoofing
 
- **Zusammenfassung:** Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.
+ **Zusammenfassung:** In diesem Artikel wird beschrieben, wie Microsoft 365 den SPF-TXT-Eintrag (Sender Policy Framework) in DNS verwendet, um sicherzustellen, dass Ziel-e-Mail-Nachrichten von Ihrer benutzerdefinierten Domäne aus Vertrauen. Dies gilt für ausgehende e-Mails, die von Microsoft 365 gesendet wurden. Nachrichten, die von Microsoft 365 an einen Empfänger in Microsoft 365 gesendet werden, übergeben immer SPF.
 
 Ein SPF TXT-Eintrag ist ein DNS-Eintrag, der Ihnen hilft, Spoofing und Phishing zu verhindern, indem der Name der Domäne überprüft wird, von der aus E-Mail-Nachrichten gesendet werden. SPF überprüft den Ursprung von E-Mails, indem die IP-Adresse des Absenders mit dem vorgeblichen Besitzer der Absenderdomäne verglichen wird.
 
 > [!NOTE]
 > SPF-Eintragstypen wurden von der Internet Engineering Task Force (IETF) 2014 als veraltet eingestuft. Stellen Sie stattdessen sicher, dass Sie zum Veröffentlichen von SPF-Informationen TXT-Einträge in DNS verwenden. Der Rest dieses Artikels verwendet aus Gründen der Klarheit den Begriff SPF TXT-Eintrag.
 
-Domänenadministratoren veröffentlichen SPF-Informationen in TXT-Einträgen in DNS. Durch die SPF-Informationen werden autorisierte Server für ausgehende E-Mails identifiziert. Von Ziel-E-Mail-Systemen wird überprüft, ob die Nachrichten von autorisierten Servern für ausgehende E-Mails stammen. Wenn Sie bereits mit SPF vertraut sind oder über eine einfache Bereitstellung verfügen und nur wissen möchten, was Sie in Ihren SPF TXT-Eintrag in DNS für Office 365 einschließen müssen, können Sie zu [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) wechseln. Wenn Ihre Bereitstellung nicht vollständig in Office 365 gehostet wird, oder wenn Sie weitere Informationen zur Funktionsweise von SPF oder zur Problembehandlung von SPF für Office 365 benötigen, lesen Sie hier weiter.
+Domänenadministratoren veröffentlichen SPF-Informationen in TXT-Einträgen in DNS. Durch die SPF-Informationen werden autorisierte Server für ausgehende E-Mails identifiziert. Von Ziel-E-Mail-Systemen wird überprüft, ob die Nachrichten von autorisierten Servern für ausgehende E-Mails stammen. Wenn Sie bereits mit SPF vertraut sind oder eine einfache Bereitstellung haben und nur wissen müssen, was Sie in ihren SPF TXT-Eintrag in DNS für Microsoft 365 einbeziehen möchten, können Sie zum [Einrichten von SPF in Microsoft 365 wechseln, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Wenn Sie nicht über eine Bereitstellung verfügen, die vollständig in Microsoft 365 gehostet wird, oder wenn Sie weitere Informationen zur Funktionsweise von SPF oder zur Problembehandlung für SPF für Microsoft 365 benötigen, lesen Sie weiter.
 
 > [!NOTE]
-> Zuvor mussten Sie einen anderen SPF TXT-Eintrag zu Ihrer benutzerdefinierten Domäne hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen keine Änderungen sofort vornehmen, aber wenn Sie den Fehler "zu viele Nachschlagevorgänge" erhalten, ändern Sie Ihren SPF TXT-Eintrag wie unter Einrichten von [SPF in Office 365 beschrieben, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+> Zuvor mussten Sie einen anderen SPF TXT-Eintrag zu Ihrer benutzerdefinierten Domäne hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen keine Änderungen sofort vornehmen, aber wenn Sie den Fehler "zu viele Nachschlagevorgänge" erhalten, ändern Sie Ihren SPF TXT-Eintrag wie unter Einrichten von [SPF in Microsoft 365 beschrieben, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
 
-## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Office 365
+## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365"></a>Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Microsoft 365
 <a name="HowSPFWorks"> </a>
 
 SPF ermittelt, ob ein Absender im Auftrag einer Domäne senden darf. Wenn der Absender dazu nicht berechtigt ist, wenn die E-Mail also die SPF-Prüfung auf dem empfangenden Server nicht besteht, ermittelt die Spamrichtlinie, die auf diesem Server konfiguriert ist, was mit der Nachricht geschieht.
 
-Jeder SPF TXT-Eintrag enthält drei Teile: die Deklaration, dass es sich um einen SPF TXT-Eintrag handelt, die IP-Adressen, die berechtigt sind, E-Mail-Nachrichten aus Ihrer Domäne zu senden, und die externen Domänen, die im Auftrag Ihrer Domäne senden können, sowie eine Regel für die Durchsetzung. Sie benötigen alle drei in einem gültigen SPF TXT-Eintrag. In diesem Artikel wird beschrieben, wie Sie Ihren SPF TXT-Eintrag erstellen. Außerdem werden bewährte Methoden für die Arbeit mit den Diensten in Office 365 bereitgestellt. Auch Links zu Anweisungen für die Arbeit mit Ihrer Domänenregistrierungsstelle zum Veröffentlichen Ihres Eintrags in DNS werden bereitgestellt.
+Jeder SPF TXT-Eintrag enthält drei Teile: die Deklaration, dass es sich um einen SPF TXT-Eintrag handelt, die IP-Adressen, die e-Mails von Ihrer Domäne senden dürfen, sowie die externen Domänen, die im Auftrag Ihrer Domäne gesendet werden können, und eine Erzwingungs Regel. Sie benötigen alle drei in einem gültigen SPF TXT-Eintrag. In diesem Artikel wird beschrieben, wie Sie Ihren SPF TXT-Eintrag bilden und bewährte Methoden für die Arbeit mit den Diensten in Microsoft 365 bereitstellen. Links zu Anweisungen zum Arbeiten mit Ihrer Domänenregistrierungsstelle zur Veröffentlichung Ihres Eintrags in DNS werden ebenfalls bereitgestellt.
 
 ### <a name="spf-basics-ip-addresses-allowed-to-send-from-your-custom-domain"></a>SPF-Grundlagen: IP-Adressen, die von Ihrer benutzerdefinierten Domäne aus senden dürfen
 <a name="SPFBasicsIPaddresses"> </a>
@@ -109,32 +109,32 @@ Zusätzlich zu den IP-Adressen können Sie auch Ihren SPF TXT-Eintrag zum Einsch
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-Wenn der empfangende Server diesen Eintrag in DNS sieht, führt er auch eine DNS-Suche für den SPF TXT-Eintrag für contoso.net und dann für contoso.org aus. Wenn eine zusätzliche include-Anweisung in den Datensätzen für contoso.net oder contoso.org gefunden wird, werden diese ebenfalls befolgt. Um DOS-Angriffe zu verhindern, beträgt die maximale Anzahl von DNS-Suchen für eine einzelne E-Mail-Nachricht 10. Jede „include“-Anweisung stellt eine zusätzliche DNS-Suche dar. Wenn eine Nachricht das Limit von 10 überschreitet, schlägt die Nachricht für SPF fehl. Sobald eine Nachricht diesen Grenzwert erreicht hat, kann der Absender abhängig von der Konfiguration des empfangenden Servers eine Meldung erhalten, die besagt, dass die Nachricht "zu viele Nachschlagevorgänge" generiert wurde oder dass die maximale Anzahl von Hops für die Nachricht überschritten wurde (was passieren kann, wenn die Lookups-Schleife und überschreitet das DNS-Timeout). Tipps, zum Vermeiden dieses Problems finden Sie unter [Problembehandlung: Bewährte Methoden für SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Wenn der empfangende Server diesen Eintrag in DNS sieht, führt er auch eine DNS-Suche für den SPF TXT-Eintrag für contoso.net und dann für contoso.org aus. Wenn eine zusätzliche include-Anweisung in den Datensätzen für contoso.net oder contoso.org gefunden wird, werden diese ebenfalls befolgt. Um DOS-Angriffe zu verhindern, beträgt die maximale Anzahl von DNS-Suchen für eine einzelne E-Mail-Nachricht 10. Jede „include“-Anweisung stellt eine zusätzliche DNS-Suche dar. Wenn eine Nachricht das Limit von 10 überschreitet, schlägt die Nachricht für SPF fehl. Sobald eine Nachricht diesen Grenzwert erreicht hat, kann der Absender abhängig von der Konfiguration des empfangenden Servers eine Meldung erhalten, die besagt, dass die Nachricht "zu viele Nachschlagevorgänge" generiert wurde oder dass die maximale Anzahl von Hops für die Nachricht überschritten wurde (was passieren kann, wenn die Lookups eine Schleife durchlaufen und das DNS-Timeout überschreiten). Tipps zur Vermeidung dieser Vorgehensweise finden Sie unter [Troubleshooting: Best Practices for SPF in Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
-## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>Anforderungen für Ihren SPF TXT-Eintrag und Office 365
+## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>Anforderungen für Ihren SPF TXT-Eintrag und Microsoft 365
 <a name="SPFReqsinO365"> </a>
 
-Wenn Sie E-Mail zusammen mit Office 365 eingerichtet haben, wurde bereits ein SPF-Eintrag erstellt, der die Microsoft-Messagingserver als rechtmäßige E-Mail-Quelle für Ihre Domäne identifiziert. Dieser Eintrag sieht wahrscheinlich wie folgt aus:
+Wenn Sie e-Mail-Nachrichten bei der Einrichtung von Microsoft 365 eingerichtet haben, haben Sie bereits einen SPF TXT-Eintrag erstellt, der die Microsoft Messaging-Server als legitime e-Mail-Adresse für Ihre Domäne identifiziert. Dieser Eintrag sieht wahrscheinlich wie folgt aus:
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-Wenn Sie ein vollständig gehosteter Office 365-Kunde sind, d. h., Sie haben keine lokalen E-Mail-Server, die ausgehende E-Mails senden, ist dies der einzige SPF TXT-Eintrag, den Sie für Office 365 veröffentlichen müssen.
+Wenn Sie ein vollständig gehosteter Kunde sind, also keine lokalen e-Mail-Server, die ausgehende e-Mails senden, ist dies der einzige SPF TXT-Eintrag, den Sie für Office 365 veröffentlichen müssen.
 
-Wenn Sie eine Hybridbereitstellung haben (d. h. einige Postfächer lokal und einige in Office 365 hosten), oder wenn Sie ein eigenständiger Exchange Online Protection (EOP)-Kunde sind (d. h. Ihre Organisation verwendet EOP zum Schutz Ihrer lokalen Postfächer), sollten Sie die ausgehende IP-Adresse für jeden Ihrer lokalen Edge-E-Mail-Server zum SPF TXT-Eintrag in DNS hinzufügen.
+Wenn Sie über eine hybridbereitstellung verfügen (also Sie verfügen über einige lokale Postfächer und einige in Microsoft 365), oder wenn Sie ein eigenständiger Exchange Online Schutz (EoP)-Kunde sind (das heißt, Ihre Organisation verwendet EoP, um Ihre lokalen Postfächer zu schützen), sollten Sie die ausgehende IP-Adresse für jeden Ihrer lokalen Edge-Mail-Server dem SPF TXT-Eintrag in DNS hinzufügen.
 
-## <a name="form-your-spf-txt-record-for-office-365"></a>Erstellen Ihres SPF TXT-Eintrags für Office 365
+## <a name="form-your-spf-txt-record-for-microsoft-365"></a>Bilden Sie Ihren SPF TXT-Eintrag für Microsoft 365
 <a name="FormYourSPF"> </a>
 
 Verwenden Sie die Syntaxinformationen in diesem Artikel, um den SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne zu erstellen. Obwohl es auch andere Optionen gibt, die hier nicht genannt werden, sind dies die am häufigsten verwendeten Syntaxoptionen. Nachdem Sie Ihren Eintrag erstellt haben, müssen Sie den Eintrag bei Ihrer Domänenregistrierungsstelle aktualisieren.
 
-Informationen zu den Domänen, die Sie für Office 365 einschließen müssen, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
+Informationen zu den Domänen, die Sie für Microsoft 365 einbeziehen müssen, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind. Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
 
-### <a name="spf-txt-record-syntax-for-office-365"></a>Syntax des SPF TXT-Eintrags für Office 365
+### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Syntax des SPF txt-Eintrags für Microsoft 365
 <a name="SPFSyntaxO365"> </a>
 
-Ein typischer SPF TXT-Eintrag für Office 365 weist die folgende Syntax auf:
+Ein typischer SPF TXT-Eintrag für Microsoft 365 hat die folgende Syntax:
 
 ```text
 v=spf1 [<ip4>|<ip6>:<IP address>] [include:<domain name>] <enforcement rule>
@@ -150,11 +150,11 @@ Dabei gilt:
 
 - **v=spf1** ist erforderlich. Dies definiert den TXT-Eintrag als SPF TXT-Eintrag.
 
-- **ip4** gibt an, dass Sie IP-Adressen der Version 4 verwenden. **ip6** gibt an, dass Sie IP-Adressen der Version 6 verwenden. Wenn Sie IPv6-IP-Adressen verwenden, ersetzen Sie in den Beispielen in diesem Artikel **ip4** durch **ip6**. Sie können auch IP-Adressbereiche in CIDR-Schreibweise angeben, z. B. **ip4:192.168.0.1/26**.
+- **ip4** gibt an, dass Sie IP-Adressen der Version 4 verwenden. **ip6** gibt an, dass Sie IP-Adressen der Version 6 verwenden. Wenn Sie IPv6-IP-Adressen verwenden, ersetzen Sie in den Beispielen in diesem Artikel **ip4** durch **ip6**. Sie können auch IP-Adressbereiche in CIDR-Schreibweise angeben, z. B. **ip4:192.168.0.1/26**.
 
-- _IP address_ ist die IP-Adresse, die Sie dem SPF TXT-Eintrag hinzufügen möchten. Normalerweise ist dies die IP-Adresse des Servers für ausgehende E-Mails für Ihre Organisation. Sie können mehrere ausgehende Mailserver auflisten. Weitere Informationen finden Sie unter [Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale E-Mail-Server und Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
+- _IP address_ ist die IP-Adresse, die Sie dem SPF TXT-Eintrag hinzufügen möchten. Normalerweise ist dies die IP-Adresse des Servers für ausgehende E-Mails für Ihre Organisation. Sie können mehrere ausgehende Mailserver auflisten. Weitere Informationen finden Sie unter [Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale e-Mail-Server und Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
 
-- _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänen, die Sie für Office 365 einschließen sollten, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+- _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänennamen, die für Microsoft 365 enthalten sein sollten, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind.
 
 - Die Durchsetzungsregel bietet normalerweise eine der folgenden Optionen:
 
@@ -170,25 +170,25 @@ Dabei gilt:
 
     Zeigt neutral an. Wird verwendet, um SPF zu testen. Wir empfehlen nicht, diese Option in Ihrer Livebereitstellung zu verwenden.
 
-### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-office-365"></a>Beispiel: Zu verwendender SPF TXT-Eintrag, wenn alle Ihre E-Mail-Nachrichten von Office 365 gesendet werden
+### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-microsoft-365"></a>Beispiel: SPF TXT-Eintrag, der verwendet wird, wenn alle Ihre e-Mails von Microsoft 365 gesendet werden
 <a name="ExampleSPFNoSP"> </a>
 
-Wenn alle Ihre E-Mail-Nachrichten von Office 365 gesendet werden, verwenden Sie Folgendes in Ihrem SPF TXT-Eintrag:
+Wenn Ihre e-Mail-Nachrichten von Microsoft 365 gesendet werden, verwenden Sie diese in Ihrem SPF TXT-Eintrag:
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-office-365"></a>Beispiel: SPF TXT-Eintrag für ein Hybridszenario mit einem lokalen Exchange-Server und Office 365
+### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-microsoft-365"></a>Beispiel: SPF TXT-Eintrag für ein Hybrid Szenario mit einem lokalen Exchange Server und Microsoft 365
 <a name="ExampleSPFHybridOneExchangeServer"> </a>
 
-Wenn in einer Hybridumgebung die IP-Adresse des lokalen Exchange-Servers „192.168.0.1“ lautet, um die SPF-Durchsetzungsregel auf einen schweren Fehler festzulegen, erstellen Sie den SPF TXT-Eintrag wie folgt:
+Wenn in einer Hybridumgebung die IP-Adresse des lokalen Exchange-Servers „192.168.0.1" lautet, um die SPF-Durchsetzungsregel auf einen schweren Fehler festzulegen, erstellen Sie den SPF TXT-Eintrag wie folgt:
 
 ```text
 v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-office-365"></a>Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale E-Mail-Server und Office 365
+### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale e-Mail-Server und Microsoft 365
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
 Wenn Sie über mehrere ausgehende E-Mail-Server verfügen, schließen Sie die IP-Adresse für jeden E-Mail-Server in den SPF TXT-Eintrag ein, und trennen Sie die IP-Adressen mit einem Leerzeichen, gefolgt von „ip4:". Beispiel:
@@ -197,14 +197,14 @@ Wenn Sie über mehrere ausgehende E-Mail-Server verfügen, schließen Sie die IP
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
 ```
 
-## <a name="next-steps-set-up-spf-for-office-365"></a>Nächste Schritte: Einrichten von SPF für Office 365
+## <a name="next-steps-set-up-spf-for-microsoft-365"></a>Nächste Schritte: Einrichten von SPF für Microsoft 365
 <a name="SPFNextSteps"> </a>
 
-Nachdem Sie den SPF TXT-Eintrag erstellt haben, führen Sie die Schritte in [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) durch, um ihn Ihrer Domäne hinzuzufügen.
+Nachdem Sie den SPF TXT-Eintrag formuliert haben, führen Sie die Schritte unter [Einrichten von SPF in Microsoft 365](set-up-spf-in-office-365-to-help-prevent-spoofing.md) aus, um zu verhindern, dass Spoofing ihn Ihrer Domäne hinzufügt.
 
-Obwohl SPF Spoofing verhindern soll, gibt es Spoofingtechniken, gegen die SPF nicht schützen kann. Zum Einrichten eines entsprechenden Schutzes sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren. Die ersten Schritte finden Sie unter [Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](use-dkim-to-validate-outbound-email.md). Lesen Sie anschließend [Verwenden von DMARC zum Überprüfen von E-Mails in Office 365](use-dmarc-to-validate-email.md).
+Obwohl SPF Spoofing verhindern soll, gibt es Spoofingtechniken, gegen die SPF nicht schützen kann. Um diese gegen diese zu schützen, sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Microsoft 365 konfigurieren. Informationen zu den ersten Schritten finden Sie unter [Verwenden von DKIM zum Überprüfen von ausgehenden e-Mails, die von Ihrer benutzerdefinierten Domäne in Microsoft 365 gesendet wurden](use-dkim-to-validate-outbound-email.md). Weitere Informationen finden Sie unter [Verwenden von DMARC zum Überprüfen von e-Mails in Microsoft 365](use-dmarc-to-validate-email.md).
 
-## <a name="troubleshooting-best-practices-for-spf-in-office-365"></a>Problembehandlung: Bewährte Methoden für SPF in Office 365
+## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>Problembehandlung: bewährte Methoden für SPF in Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
 Sie dürfen nur einen SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne erstellen. Das Erstellen von mehreren Einträgen führt zu einer Roundrobin-Situation, und SPF verursacht einen Fehler. Um dies zu vermeiden, können Sie separate Einträge für jede Unterdomäne erstellen. Erstellen Sie z. B. einen Eintrag für „contoso.com" und einen anderen für „bulkmail.contoso.com".
@@ -215,7 +215,7 @@ Wenn eine E-Mail-Nachricht mehr als 10 DNS-Suchvorgänge verursacht, bevor sie z
 
 - Die Nachricht hat zu viele Suchvorgänge benötigt.
 
-## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-office-365"></a>Vermeiden der Fehlermeldung "zu viele Suchvorgänge" bei der Verwendung von Drittanbieterdomänen mit Office 365
+## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-microsoft-365"></a>Vermeiden des Fehlers "zu viele Nachschlagevorgänge" bei der Verwendung von Drittanbieter Domänen mit Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
 Einige SPF TXT-Einträge für Drittanbieterdomänen weisen den empfangenden Server an, eine große Anzahl von DNS-Suchvorgängen auszuführen. „salesforce.com" enthält z. B. zum Zeitpunkt der Erstellung dieses Dokuments im Eintrag fünf „include"-Anweisungen:
@@ -246,6 +246,6 @@ Sie können nslookup zum Anzeigen der DNS-Einträge verwenden, einschließlich d
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="SPFTroubleshoot"> </a>
 
-Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? Lesen Sie den Artikel [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) ausführliche Informationen zur Verwendung von Sender Policy Framework mit Ihrer benutzerdefinierten Domäne in Office 365. [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfasst die Syntax- und Kopfzeilenfelder, die von Office 365 für SPF-Überprüfungen verwendet werden.
+Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? Lesen Sie den Artikel [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) , um ausführliche Informationen zur Verwendung von Sender Policy Framework mit Ihrer benutzerdefinierten Domäne in Microsoft 365 zu erhalten. [Anti-Spam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) enthält die Syntax-und Kopfzeilenfelder, die von Microsoft 365 für SPF-Überprüfungen verwendet werden.
 
 

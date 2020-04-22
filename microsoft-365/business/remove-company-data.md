@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Erfahren Sie, wie Sie mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Benutzer auf Ihren Geräten oder Windows-PCs haben.
-ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Erfahren Sie, wie Microsoft 365 for Business zum Entfernen von Unternehmensdaten verwendet wird, die Ihre Benutzer auf Ihren Geräten oder Windows-PCs haben.
+ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561318"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634846"
 ---
 # <a name="remove-company-data-from-devices"></a>Entfernen von Unternehmensdaten von Geräten
 
@@ -36,9 +36,9 @@ ms.locfileid: "42561318"
 
 ## <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
-Sie können mit Microsoft 365 Business Unternehmensdaten entfernen, die Ihre Benutzer auf ihren mit Microsoft 365 geschützten [Geräten](app-protection-settings-for-android-and-ios.md) oder [Windows-PCs](protection-settings-for-windows-10-devices.md) gespeichert haben. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**. 
+Sie können Microsoft 365 for Business verwenden, um Unternehmensdaten zu entfernen, die Ihre Benutzer auf Ihren [Geräten](app-protection-settings-for-android-and-ios.md) oder [Windows-PCs](protection-settings-for-windows-10-devices.md) haben, die von Microsoft 365 geschützt sind. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**. 
   
-1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Verwalten**aus.  
   

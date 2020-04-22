@@ -1,5 +1,5 @@
 ---
-title: Unterschied zwischen dem Office 365-Setup-Assistenten und der Setup-Seite
+title: Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
 f1.keywords:
 - NOCSH
 ms.author: v-sharos
@@ -18,46 +18,46 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Erfahren Sie mehr über den Unterschied zwischen dem Office 365-Setup-Assistenten und der Seite Setup.
-ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie mehr über den Unterschied zwischen dem Setup-Assistenten und der Seite Setup.
+ms.openlocfilehash: 41a87690282cdf2ff3d1514f9303776c0d2d33bf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209700"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631803"
 ---
-# <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Office 365-Setup-Assistenten und der Setup-Seite
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
 
-Office 365 bietet zwei Setup-Erfahrungen: 
+Microsoft 365 bietet zwei Setup-Erfahrungen: 
 
 - Erst Setup mit dem Setup-Assistenten
 - Fortlaufendes und erweitertes Setup mithilfe der **Setup** -Seite
 
-Der Setup-Assistent bietet eine Anleitung zum Einrichten der grundlegenden Office 365 Konfiguration. Nachdem Sie das anfängliche Setup abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um die Einrichtung und Konfiguration der Dienste abzuschließen, die mit ihren Abonnements geliefert werden.
+Der Setup-Assistent bietet eine Anleitung zum Einrichten der grundlegenden Konfiguration von Microsoft 365. Nachdem Sie das anfängliche Setup abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um die Einrichtung und Konfiguration der Dienste abzuschließen, die mit ihren Abonnements geliefert werden.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Ausführen der anfänglichen Setupaufgaben mithilfe des Setup-Assistenten
 
 Um Ihr Konto einzurichten, navigieren Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann auf der Seite **Setup** die Option **gesteuertes Setup** aus.
 
-![Starten des Office 365-Business-Setup-Assistenten](../../media/o365b-guided-setup.png)
+![Starten des Setup-Assistenten für Microsoft 365 apps for Business](../../media/o365b-guided-setup.png)
 
 Der Setup-Assistent führt Sie durch die folgenden Schritte aus:
 
-1. Installieren Sie die Office 365-apps auf Ihrem Computer.
+1. Installieren Sie die Microsoft 365-apps auf Ihrem Computer.
 
 2. Wählen Sie Ihre Domäne wie contoso.com aus, und überprüfen Sie diese.
 
-3. Fügen Sie neue Benutzer hinzu, und weisen Sie Ihnen Lizenzen zu, damit Sie Office 365-apps herunterladen und installieren können.
+3. Fügen Sie neue Benutzer hinzu, und weisen Sie Ihnen Lizenzen zu, damit Sie Microsoft 365-apps herunterladen und installieren können.
 
-4. Connect'your-Domäne.
+4. Verbinden Sie Ihre Domäne.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Verwenden der Setup Seite zum Abschließen und Verwalten Ihrer Konfiguration
 
-Um auf die Seite **Setup** im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)zuzugreifen, wählen Sie im Navigationsbereich die Option **Setup** aus. Basierend auf den von Ihnen erworbenen Produkten, den von Ihnen eingerichteten Features und der Administratorrolle werden hier Aufgaben und verwandte Informationen aus Across Office 365.
+Um auf die Seite **Setup** im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)zuzugreifen, wählen Sie im Navigationsbereich die Option **Setup** aus. Basierend auf den von Ihnen erworbenen Produkten, den von Ihnen eingerichteten Features und der Administratorrolle werden hier Aufgaben und verwandte Informationen aus Across Microsoft 365.
 
 Sie sehen die vollständige Liste der Einrichtungsaufgaben, die in logischen Kategorien angeordnet sind, einschließlich derer, die Sie im Setup-Assistenten abgeschlossen haben.
 
-![Seite "Office 365 für Business-Setup"](../../media/o365b-setup-page.png)
+![Microsoft 365 for Business-Setup Seite](../../media/o365b-setup-page.png)
 
 Wählen Sie **Ansicht** für eine beliebige Aufgabe aus, um auf einen Blick Informationen wie Aufgabenbeschreibung, Benutzer Auswirkungen, Voraussetzungen, Umsetzungsaufwand sowie Sicherheits-und Adoptions Statistiken zu erhalten, um Konsequenzen und Auswirkungen vor dem Fortfahren besser verstehen zu können.
 

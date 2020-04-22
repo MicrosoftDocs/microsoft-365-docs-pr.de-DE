@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Abonnements und Lizenzen in Office 365 Business
+title: Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,24 +20,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
-description: 'Erfahren Sie mehr über Abonnements und Lizenzen in Office 365 Business sowie darüber, wer Lizenzen zuweisen kann und was geschieht, wenn Sie einer Person eine Lizenz zuweisen. '
+description: 'Erfahren Sie mehr über Abonnements und Lizenzen in Microsoft 365 for Business und wissen, wer Lizenzen zuweisen kann und was passiert, wenn Sie einer Person eine Lizenz zuweisen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a90e4b80322ad075f2149801aebd02ac07a2aef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242318"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635436"
 ---
-# <a name="understand-subscriptions-and-licenses-in-office-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Office 365 Business
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 
 In diesem Artikel wird die Beziehung zwischen Abonnements und Lizenzen erläutert, und Sie erhalten zusätzliche Informationen zu den [Personen, die Lizenzen zuweisen können](#find-out-who-can-assign-licenses) sowie Antworten auf die Fragen [Was passiert, wenn Sie einer Person eine Lizenz zuweisen?](#understand-what-happens-when-you-assign-a-license-to-someone) und[ Auf wie vielen Geräten kann Office installiert werden?](#how-many-devices-can-people-install-office-on). Der Artikel umfasst außerdem Links zu [Grundlegendes zu Lizenzen für nicht benutzergebundene Postfächer](#understand-licenses-for-non-user-mailboxes) und [Artikel zum Verwalten von Lizenzen](#articles-about-managing-licenses).
   
-Wenn Sie ein Abonnement für Office 365 Business kaufen, können Sie sich für eine Reihe von Anwendungen und Diensten anmelden, die entweder auf monatlicher oder auf jährlicher Basis bezahlt werden. Welche Anwendungen und Dienste Sie als Teil Ihres Abonnements erhalten hängt davon ab, welches Produkt Sie gekauft haben, z. B. Office 365 Business oder Office 365 Business Premium. Was im Lieferumfang jedes Produkts enthalten ist erfahren Sie auf der Seite [Office 365 kaufen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+Wenn Sie ein Abonnement für Microsoft 365 for Business erwerben, registrieren Sie sich für eine Reihe von Anwendungen und Diensten, die Sie entweder monatlich oder jährlich bezahlen. Die Anwendungen und Dienste, die Sie im Rahmen Ihres Abonnements erhalten, hängen davon ab, welches Produkt Sie erworben haben, beispielsweise Microsoft 365 apps for Business oder Microsoft 365 Business Standard. Sie können die Lieferumfang jedes Produkts auf der [Seite Microsoft 365 kaufen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)überprüfen. 
 
 Wenn Sie ein Abonnement kaufen, geben Sie die Anzahl der Lizenzen an, die Sie benötigen, und zwar basierend auf der Anzahl der in Ihrer Organisation beschäftigten Mitarbeiter. Nach Abschluss des Kaufs erstellen Sie Konten für die Personen und weisen dann jeder Person eine Lizenz zu. Wenn sich die Anforderungen Ihrer Organisation ändern, können Sie zusätzliche Lizenzen für neue Benutzer erwerben, oder bestehende Lizenzen anderen Benutzern zuweisen, wenn jemand Ihre Organisation verlässt. 
 
-Wenn Sie über mehr als ein Abonnement verfügen, können Sie unterschiedlichen Personen Lizenzen aus dem jeweiligen Abonnement zuweisen. So könnten z. B. allen Ihren Benutzern alle Office 365-Anwendungen und -Dienste im Rahmen eines Office 365 Business Premium-Abonnements zugewiesen werden, während einer Teilmenge der Benutzer auch Visio Online über ein separates Visio-Abonnement zugewiesen werden kann. 
+Wenn Sie über mehr als ein Abonnement verfügen, können Sie unterschiedlichen Personen Lizenzen aus dem jeweiligen Abonnement zuweisen. Beispielsweise können alle Ihre Benutzer allen Microsoft 365-Anwendungen und-Diensten als Teil eines Microsoft 365 Business Standard-Abonnements zugewiesen werden, während eine Teilmenge von Benutzern auch Visio Online über ein separates Visio-Abonnement zugewiesen werden kann. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Personen, die Lizenzen zuweisen können
@@ -61,17 +61,17 @@ In der folgenden Tabelle wird aufgeführt, was automatisch passiert, wenn Sie ei
 |Exchange Online  <br/> |Es wird ein Postfach für diese Person erstellt.  <br/> |
 |SharePoint Online  <br/> |Dieser Person werden Bearbeitungsberechtigungen für die standardmäßige SharePoint Online-Teamwebsite zugewiesen.  <br/> |
 |Skype for Business Online  <br/> |Die Person kann auf die Features zugreifen, die der Lizenz zugeordnet sind.  <br/> |
-|Office 365 ProPlus  <br/> |Die Person kann dann Microsoft Office herunterladen und auf bis zu fünf Macs oder PCs, fünf Tablets und fünf Smartphones installieren.  <br/> |
+|Microsoft 365-Apps für Unternehmen  <br/> |Die Person kann dann Microsoft Office herunterladen und auf bis zu fünf Macs oder PCs, fünf Tablets und fünf Smartphones installieren.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Auf wie vielen Geräten kann Office installiert werden?
 
 Wenn Ihr Abonnement ein beliebiges der folgenden Produkte umfasst, kann jede Person Office auf bis zu fünf PCs oder Macs, fünf Tablets und fünf Smartphones installieren.
   
-- Office 365 Business
+- Microsoft 365 apps for Business
     
-- Office 365 Business Premium
+- Microsoft 365 Business Standard
     
-- Office 365 ProPlus
+- Microsoft 365-Apps für Unternehmen
     
 - Office 365 Enterprise E3
     
@@ -83,7 +83,7 @@ Sie müssen keine Lizenzen für Ressourcenpostfächer, Raumpostfächer und freig
   
 - [Erstellen eines freigegebenen Postfachs](../../admin/email/create-a-shared-mailbox.md)
     
-- [Freigegebene Postfächer in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) für alle anderen Office 365-Pläne 
+- [Freigegebene Postfächer in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) für alle anderen Microsoft 365-Pläne. 
     
 - [Erstellen und Verwalten von Raumpostfächern](https://go.microsoft.com/fwlink/p/?linkid=847434)
     

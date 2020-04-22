@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten der Office-Clientbereitstellung durch Microsoft 365 Business
+title: Vorbereiten der Office-Clientbereitstellung von Microsoft 365 for Business
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: In diesem Artikel erfahren Sie, wie Sie die 32-Bit-Office-Apps auf Windows 10-Computern automatisch installieren und auf dem neuesten Stand halten.
-ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633097"
 ---
-# <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Vorbereiten der Office-Clientbereitstellung durch Microsoft 365 Business
+# <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Vorbereiten der Office-Clientbereitstellung von Microsoft 365 for Business
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Vorbereiten der automatischen Installation von Office-Apps auf Clientcomputern
 
-Sie können Microsoft 365 Business verwenden, um die 32-Bit-Office-Apps auf Windows 10-Computern automatisch zu installieren und diese mit Updates auf dem neuesten Stand zu halten.
+Sie können Microsoft 365 for Business verwenden, um die 32-Bit-Office-Apps auf Windows 10-Computern automatisch zu installieren und diese mit Updates auf dem neuesten Stand zu halten.
   
 Die automatische Installation funktioniert am besten, wenn sich der Computer des Endbenutzers in Windows 10 Business befindet und:
   
@@ -50,15 +50,15 @@ Wenn Sie feststellen möchten, ob Sie über die Office Klick-und-Los-Version ver
   
 Der Endbenutzer, für dessen PC Folgendes zutrifft:
   
-- **Verfügt** über eine Windows 10 Business-Benutzerlizenz, eine aktive Microsoft 365 Business-Lizenz, Windows 10 Creators Update und ist in Azure Active Directory eingebunden. 
+- **Verfügt über** eine Windows 10-Geschäftsbenutzer Lizenz, eine aktive Microsoft 365 for Business-Lizenz, ein Windows 10 Creators-Update und ist mit Azure Active Directory verbunden. 
     
-- Verfügt **nicht über** 64-Bit-Office-Apps (Beispiel: Word, Excel, PowerPoint). Wenn 64-Bit-Office-Apps erforderlich sind, ist dieses Feature nicht geeignet, da es keine Unterstützung für das Auslösen einer 64-Bit-2016-Klick-und-Los-Version von Office über die Microsoft 365 Business-Verwaltungskonsole gibt. 
+- Verfügt **nicht über** 64-Bit-Office-Apps (Beispiel: Word, Excel, PowerPoint). Wenn 64-Bit-Office-Apps erforderlich sind, ist dieses Feature nicht geeignet, da es keine Unterstützung für die Auslösung einer 64-Bit-2016-Klick-und-Los-Version von Office von der Microsoft 365 for Business-Verwaltungskonsole gibt. 
     
-- Verfügt **nicht über** 2016 eigenständige Windows Installer (MSI)-Apps (beispielsweise Visio oder Project). Microsoft 365 Business aktualisiert Office auf die Klick-und-Los-Version von Office 2016 und funktioniert nicht mit Office 2016 MSI-eigenständigen apps. 
+- Verfügt **nicht über** 2016 eigenständige Windows Installer (MSI)-Apps (beispielsweise Visio oder Project). Microsoft 365 for Business aktualisiert Office auf die Klick-und-Los-Version von Office 2016 und funktioniert nicht mit eigenständigen Office 2016 MSI-apps. 
     
-Die folgende Tabelle zeigt, welche Aktion die Endbenutzer/Administratoren je nach Anfangsstatus möglicherweise ausführen müssen, um eine erfolgreiche 32-Bit-Klick-und-Los-Version der Office-Bereitstellung über die Microsoft 365 Business Admin Console zu erhalten.
+Die folgende Tabelle zeigt, welche Aktion die Endbenutzer/Administratoren je nach Anfangsstatus möglicherweise ausführen müssen, um eine erfolgreiche 32-Bit-Klick-und-Los-Version der Office-Bereitstellung von der Microsoft 365 for Business-Verwaltungskonsole zu erhalten.
   
-|**Status "Office-Installation starten"**|**Zu ergreifende Maßnahme vor Microsoft 365 Business Office-Installation**|**Endstatus**|
+|**Status "Office-Installation starten"**|**Auszuführende Aktion vor der Installation von Microsoft 365 for Business Office**|**Endstatus**|
 |:-----|:-----|:-----|
 |Keine Office-Suite installiert  <br/> |Keine  <br/> |Office 2016 32-Bit wird mithilfe von Klick-und-Los installiert  <br/> |
 |Vorhandene 32-Bit-Klick-und-Los-Version von Office (2016 oder früher) und keine eigenständigen Apps  <br/> |Keine  <br/> |Upgrade auf die neueste 32-Bit-Klick-und-Los-Version von Office 2016, je nach Bedarf **\*** <br/> |

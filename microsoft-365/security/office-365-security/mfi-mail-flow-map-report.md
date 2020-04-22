@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088519"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635292"
 ---
 # <a name="mail-flow-map-report"></a>Nachrichtenfluss-Bericht
 
-Dieser Bericht gibt Einblicke in die Art und Weise, wie e-Mails durch Ihre Office 365 Organisation fließen. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn diese auftreten.
+Dieser Bericht gibt Einblicke in die Art und Weise, wie e-Mails in Ihrer Organisation fließen. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn diese auftreten.
 
 ![Der Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Nachrichtenfluss-Map-widget
 
-Standardmäßig zeigt die e-Mail-Fluss-Zuordnung das hochstufige Nachrichtenfluss Muster des vorherigen Tags an. Sie können den linken und rechten Pfeil für unterschiedliche Tage verwenden. Wenn Sie den Mauszeiger über die einzelnen Bereiche im Bericht bewegen, wird das Volumen der e-Mails an und von Ihrer Office 365 Organisation angezeigt, wie im folgenden Diagramm dargestellt:
+Standardmäßig zeigt die e-Mail-Fluss-Zuordnung das hochstufige Nachrichtenfluss Muster des vorherigen Tags an. Sie können den linken und rechten Pfeil für unterschiedliche Tage verwenden. Wenn Sie den Mauszeiger über die einzelnen Bereiche im Bericht bewegen, wird das Volumen der e-Mails an und von Ihrer Organisation angezeigt, wie im folgenden Diagramm dargestellt:
 
 ![Pfeile Links und rechts im Nachrichtenfluss-Map-widget](../../media/mail-flow-map-widget.png)
 

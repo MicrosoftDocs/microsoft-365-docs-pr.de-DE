@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Windows-Geräten für Benutzer von Microsoft 365 Business
+title: Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: In diesem Artikel erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business-Benutzer einrichten, sodass zentralisierte Verwaltungs-und Sicherheitssteuerelemente aktiviert werden können.
-ms.openlocfilehash: 6ecc45f825a783d9d47c4b069a6021143d96597c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: In diesem Artikel erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business Premium-Benutzer einrichten, sodass zentralisierte Verwaltungs-und Sicherheitssteuerelemente aktiviert werden können.
+ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561158"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635450"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Einrichten von Windows-Geräten für Benutzer von Microsoft 365 Business
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Voraussetzungen für das Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Voraussetzungen für das Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
 
-Bevor Sie die Windows-Geräte für Microsoft 365 Business-Benutzer einrichten können, stellen Sie sicher, dass auf allen Windows-Geräten Windows 10 Pro, Version 1703 (Creators Update)) ausgeführt wird. Windows 10 Pro ist Voraussetzung für die Bereitstellung von Windows 10 Business. Windows 10 Business besteht aus einer Reihe von Clouddiensten und Funktionen zur Geräteverwaltung, die Windows 10 Pro ergänzen und die zentrale Verwaltung und Sicherheitskontrollen von Microsoft 365 Business ermöglichen.
+Bevor Sie Windows-Geräte für Microsoft 365 Business Premium-Benutzer einrichten können, müssen Sie sicherstellen, dass auf allen Windows-Geräten Windows 10 pro, Version 1703 (Creators Update), installiert ist. Windows 10 pro ist eine Voraussetzung für die Bereitstellung von Windows 10 Business, einer Reihe von Cloud-Diensten und Geräteverwaltungsfunktionen, die Windows 10 pro ergänzen und die zentralisierte Verwaltung und Sicherheitskontrollen von Microsoft 365 Business Premium ermöglichen.
   
-Wenn Sie Windows-Geräte unter Windows 7 Pro, Windows 8 Pro oder Windows 8.1 Pro einsetzen, sind Sie im Rahmen Ihres Microsoft 365 Business-Abonnements berechtigt, auf Windows 10 zu aktualisieren.
+Wenn Sie über Windows-Geräte mit Windows 7 pro, Windows 8 pro oder Windows 8.1 pro verfügen, berechtigt Ihr Microsoft 365 Business Premium-Abonnement zu einem Windows 10-Upgrade.
   
 Weitere Informationen zum Upgrade von Windows-Geräten auf Windows 10 Pro Creators Update erhalten Sie, indem Sie die Schritte in diesem Thema ausführen: [Aktualisieren von Windows-Geräten auf Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
@@ -52,7 +52,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Verbinden von Windows 10-Geräten in Ihrer Organisation mit Azure AD
 
-Wenn alle Windows-Geräte in Ihrer Organisation entweder auf Windows 10 pro Creators-Update aktualisiert wurden oder bereits Windows 10 pro Creators Update ausgeführt wurden, können Sie diese Geräte mit der Azure-Active Directory Ihrer Organisation verbinden. Sobald die Geräte verbunden sind, werden Sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business-Abonnements ist.
+Wenn alle Windows-Geräte in Ihrer Organisation entweder auf Windows 10 pro Creators-Update aktualisiert wurden oder bereits Windows 10 pro Creators Update ausgeführt wurden, können Sie diese Geräte mit der Azure-Active Directory Ihrer Organisation verbinden. Sobald die Geräte verbunden sind, werden Sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business Premium-Abonnements ist.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Ganz neue oder neu aktualisierte Windows 10 Pro-Geräte
 
@@ -62,7 +62,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. Wählen Sie hier **Für eine Organisation einrichten** aus, und geben Sie Ihren Benutzernamen und das Kennwort für Microsoft 365 Business ein. 
+2. Wählen Sie hier **Einrichten für eine Organisation** aus, und geben Sie dann Ihren Benutzernamen und Ihr Kennwort für Microsoft 365 Business Premium ein. 
     
 3. Beenden Sie die Windows 10-Geräteinstallation.
     
@@ -108,13 +108,13 @@ Um Ihren Synchronisierungsstatus zu überprüfen, klicken Sie auf der Seite **Au
   
 Klicken Sie auf der Seite "Synchronisierungsstatus" auf "Synchronisieren", um die neuesten Verwaltungsrichtlinien für Mobilgeräte auf den Computer abzurufen.
   
-Um mit dem Microsoft 365 Business-Konto zu beginnen, wechseln Sie zur Windows-Schaltfläche **Start** , klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie dann zu **Konto**. Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
+Um mit dem Microsoft 365 Business Premium-Konto zu beginnen, wechseln Sie zur Windows-Schaltfläche **Start** , klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie dann zu **Konto**. Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Sicherstellen, dass das Gerät auf Windows 10 Business aktualisiert wurde
 
-Stellen Sie sicher, dass Ihre mit Azure AD verbundenen Windows 10-Geräte im Rahmen Ihres Microsoft 365 Business-Abonnements auf Windows 10 Business aktualisiert wurden.
+Stellen Sie sicher, dass Ihre Azure AD beige tretenen Windows 10-Geräte als Teil Ihres Microsoft 365 Business Premium-Abonnements auf Windows 10 Business aktualisiert wurden.
   
 1. Wechseln Sie zu **Einstellungen** \> **System** \> **Info**.
     
@@ -124,8 +124,8 @@ Stellen Sie sicher, dass Ihre mit Azure AD verbundenen Windows 10-Geräte im Rah
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Einrichten von mobilen Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md). Informationen zum Festlegen von Richtlinien zum Schutz von Geräten oder Apps finden Sie unter [Verwalten von Microsoft 365 Business](manage.md).
+Informationen zum Einrichten von mobilen Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md)zum Festlegen des Geräteschutzes oder von Richtlinien für den App-Schutz unter [Verwalten von Microsoft 365 für Unternehmen](manage.md).
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

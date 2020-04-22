@@ -1,5 +1,5 @@
 ---
-title: Geben Sie Ihren Product Key für Office 365 Business Premium ein.
+title: Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,22 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: Hier erfahren Sie, wie Sie einen Office 365 Business Premium Product Key, der in einem Einzelhandelsgeschäft erworben wurde, einlösen.
+description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard Product Key einlösen, der in einem Einzelhandelsgeschäft erworben wurde.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6ae3a490d4ee7bc311421bf69e7437c1c345c1d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9cabc3d3f132ef2e3e56c1209b632f1e10a8637e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242350"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634908"
 ---
-# <a name="enter-your-product-key-for-office-365-business-premium"></a>Geben Sie Ihren Product Key für Office 365 Business Premium ein.
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
 
-Wenn Sie Office 365 Business Premium von einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements. 
+Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements. 
   
  **Benötigen Sie etwas anderes?**
- **Hilfe zu Office 365 privaten oder persönlichen**Informationen finden Sie unter [Verwenden von Produktschlüsseln mit Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Office 365 für Unternehmen über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel geben Sie den [von Microsoft Open erworbenen Product Key](purchases-from-microsoft-open.md)ein.
+ **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal**finden Sie unter [Verwenden von Product Keys mit Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel geben Sie den [von Microsoft Open erworbenen Product Key](purchases-from-microsoft-open.md)ein.
   
 ## <a name="activate-a-new-subscription"></a>Aktivieren eines neuen Abonnements
 
@@ -57,14 +57,14 @@ Wenn Sie Office 365 Business Premium von einem Einzelhandelsgeschäft erworben h
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Verlängern des Ablaufdatums oder Hinzufügen einer Lizenz zu einem vorhandenen Abonnement
 
-Wenn Sie einen Product Key zum Verlängern des Ablaufdatums oder zum Hinzufügen einer Lizenz zu Ihrem vorhandenen Office 365 Business Premium-Abonnement verwenden möchten, benötigen Sie einen neuen und nicht verwendeten Schlüssel für denselben Office 365 Plan. Die Eingabe des ursprünglichen Office 365-Product Keys funktioniert nicht, denn der Key wurde bereits eingelöst und kann nicht erneut verwendet werden. Weitere Informationen finden Sie unter [Hinzufügen von Lizenzen oder verlängern eines Abonnements, das mit einem Product Key bezahlt](licenses/add-licenses-using-product-key.md)wurde.
+Wenn Sie einen Product Key zum Verlängern des Ablaufdatums oder zum Hinzufügen einer Lizenz zu Ihrem vorhandenen Microsoft 365 Business Standard-Abonnement verwenden möchten, benötigen Sie einen neuen und ungenutzten Schlüssel für denselben Microsoft 365-Plan. Das Eingeben Ihres ursprünglichen Microsoft 365-Product Keys funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter [Hinzufügen von Lizenzen oder verlängern eines Abonnements, das mit einem Product Key bezahlt](licenses/add-licenses-using-product-key.md)wurde.
 
 ## <a name="whats-next"></a>Nächste Schritte
 
-Wenn Sie die ersten Schritte in Office 365 Business unternehmen, informieren Sie sich hier, wie Sie [Office 365 einrichten](../admin/setup/setup.md).
+Wenn Sie neu bei Microsoft 365 for Business sind, erfahren Sie, wie Sie [Microsoft 365 einrichten](../admin/setup/setup.md).
   
 ## <a name="still-having-trouble-with-product-keys"></a>Sie haben immer noch Probleme mit Produktschlüsseln?
 
-Schauen Sie sich diese Liste mit häufig auftretenden Problemen und deren Lösungen an: [Gibt es Probleme mit Ihrem Product Key für Office 365 Business?](product-key-errors-and-solutions.md)
+Sehen Sie sich diese Liste der häufigsten Fehler und Lösungen an: [Probleme mit Ihrem Product Key für Microsoft 365 for Business?](product-key-errors-and-solutions.md)
   
 Oder [rufen Sie den Microsoft-Support an](../admin/contact-support-for-business-products.md).

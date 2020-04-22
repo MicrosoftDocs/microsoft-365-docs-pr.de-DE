@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085524"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636663"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
 
@@ -30,7 +30,8 @@ Beachten Sie vor dem Upgrade Ihrer Geräte auf Windows 10 Enterprise Folgendes:
 - **Ihre Domänen müssen hinzugefügt und verifiziert werden** <br>Ein Abonnement von Microsoft 365 umfasst einen Standarddomänennamen, der auf „onmicrosoft.com“ endet (z. B. „contoso.onmicrosoft.com“). Die meisten Organisationen bevorzugen es jedoch, bereits vorhandene Domänen zu nutzen, sodass E-Mail-Adressen auf den eigenen Domänennamen enden (z. B. benutzername@contoso.com). Um Ihre eigene Domäne verwenden zu können, müssen Sie diese zu Microsoft 365 hinzufügen und nachweisen, dass Sie deren Besitzer sind. Wir empfehlen Ihnen, Ihre Domänen jetzt hinzuzufügen und zu bestätigen, sodass diese verfügbar sind, wenn Sie Microsoft 365-Dienste wie E-Mail und Skype for Business einrichten.
 - **Sie müssen zu diesem Zeitpunkt noch keine Benutzer hinzufügen.** <br>Um Microsoft 365-Dienste nutzen oder Microsoft 365-Produkte installieren zu können, müssen die Benutzer über Microsoft 365-Konten und entsprechende Produktlizenzen verfügen. Wie Sie Benutzer zu Microsoft 365 hinzufügen, hängt von der Anzahl der Benutzer und davon ab, ob Sie derzeit ein lokales Active Directory einsetzten. Wenn Sie derzeit kein Active Directory nutzen (oder dieses nicht mit Microsoft 365 synchronisieren möchten), können Sie Benutzer direkt zu Microsoft 365 hinzufügen und Lizenzen entweder einzeln oder gruppiert zuweisen.<br>Wenn Sie ein lokales Active Directory einsetzen, können Sie [dieses mit Microsoft 365 synchronisieren](identity-add-user-accounts.md#identity-sync), um Benutzerkonten in Azure AD zu erstellen, dem Cloudverzeichnis von Microsoft 365. Anhand dieser Methode können Sie Konten sowohl für Benutzer als auch für Sicherheitsgruppen erstellen, die Sie zur Verwaltung von Berechtigungen für Ressourcen einsetzen (wie SharePoint Online-Websitesammlungen oder -Dokumente). Durch die Synchronisierung Ihres Active Directory mit Microsoft 365 werden den Benutzern keine Lizenzen zugewiesen.
 - **Sie müssen zu diesem Zeitpunkt noch keine Benutzerlizenzen vergeben.** <br>Damit die Benutzer Microsoft 365-Dienste nutzen oder Software vom Microsoft 365-Portal installieren können, benötigen sie Produktlizenzen. Als globaler Administrator oder Benutzerverwaltungsadministrator können Sie einzelne oder gruppierte Produktlizenzen direkt in Microsoft 365 vergeben. Zudem können Sie [die Gruppenlizenzierung](identity-use-group-management.md#identity-group-license) nutzen, die Benutzern automatisch eine Lizenz zuweist, wenn diese einer bestimmten Gruppe hinzugefügt werden. 
-- **Sie installieren Office 365 ProPlus separat** <br>Beim Erwerb einer Microsoft 365-Lizenz wird Office 365 ProPlus nicht automatisch auf den Clientcomputern installiert. Weitere Einzelheiten finden Sie unter [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md). 
+- **Sie installieren Microsoft 365-Apps für Enterprise separat.** <br>
+  Beim Abrufen einer Microsoft 365-Lizenz werden Microsoft 365-Apps für Enterprise nicht automatisch auf Ihren Clientcomputern installiert. Weitere Informationen finden Sie unter [Phase 4: Microsoft 365 apps for Enterprise](office365proplus-infrastructure.md) . 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Windows-Diagnosedaten Ebene festlegen
 

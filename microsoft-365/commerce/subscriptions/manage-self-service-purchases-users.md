@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142139"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636639"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
 Als Benutzer können Sie Abonnements für bestimmte Produkte kaufen und Personen in Ihrem Teamlizenzen für diese Abonnements zuweisen. Sie sind für das bezahlen von Self-Service-Käufen verantwortlich, die Sie tätigen. Sie können Ihre Abonnements im Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.Microsoft.com</a>verwalten.
+
 
 Ihr Administrator hat eine schreibgeschützte Ansicht für alle Abonnements, die Sie kaufen. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Kaufpreis und die zugewiesenen Benutzer für jedes Abonnement sehen, das Sie kaufen.
 

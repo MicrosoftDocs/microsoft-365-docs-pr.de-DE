@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Microsoft 365 Business
+title: Einrichten von Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,17 +28,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Ermitteln Sie die Installationsschritte für Microsoft 365 Business, einschließlich Hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und vieles mehr.
-ms.openlocfilehash: 99994b6f1e9e817b4858aeafe4ce3ceaaf4c3c37
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Ermitteln Sie die Installationsschritte für Microsoft 365 Business Premium, einschließlich Hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und vieles mehr.
+ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633873"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635760"
 ---
-# <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business im Setup-Assistenten
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business Premium im Setup-Assistenten
 
-In diesem Video sehen Sie eine Übersicht über das Microsoft 365 Business-Setup.<br><br>
+In diesem Video sehen Sie eine Übersicht über das Microsoft 365 Business Premium-Setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -48,7 +48,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 [![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Wenn Sie Microsoft 365 Business erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen, oder einen Kauf während der [Anmeldung](sign-up.md).
+Wenn Sie Microsoft 365 Business Premium erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen oder die Sie während der [Anmeldung](sign-up.md)kaufen.
 
 - Wenn Sie bei der Registrierung eine neue Domäne erworben haben, ist Ihre Domäne eingerichtet, und Sie können zum [Hinzufügen von Benutzern und Zuweisen von Lizenzen](#add-users-and-assign-licenses)umsteigen.
 
@@ -82,11 +82,11 @@ Sie können Benutzer im Assistenten hinzufügen, Sie können aber auch später i
 
 #### <a name="add-users-in-the-wizard"></a>Hinzufügen von Benutzern im Assistenten
 
-Alle Benutzer, die Sie dem Assistenten hinzufügen, erhalten automatisch eine Microsoft 365 Business-Lizenz zugewiesen.
+Alle Benutzer, die Sie dem Assistenten hinzufügen, erhalten automatisch eine Microsoft 365 Business Premium-Lizenz zugewiesen.
 
 ![Screenshot der Seite "neue Benutzer hinzufügen" im Assistenten](../media/addnewuserspage.png)
 
-1. Wenn Ihr Microsoft 365 Business-Abonnement über vorhandene Benutzer verfügt (beispielsweise, wenn Sie Azure AD Connect verwendet haben), erhalten Sie eine Option, um Ihnen jetzt Lizenzen zuzuweisen. Fügen Sie die Lizenzen ebenfalls hinzu.
+1. Wenn Ihr Microsoft 365 Business Premium-Abonnement über vorhandene Benutzer verfügt (beispielsweise wenn Sie Azure AD Connect verwendet haben), erhalten Sie eine Option, um Ihnen jetzt Lizenzen zuzuweisen. Fügen Sie die Lizenzen ebenfalls hinzu.
 
 2. Nachdem Sie die Benutzer hinzugefügt haben, erhalten Sie auch eine Option zum Freigeben von Anmeldeinformationen für die neuen Benutzer, die Sie hinzugefügt haben. Sie können auswählen, ob Sie Sie ausdrucken, per e-Mail versenden oder herunterladen möchten.
 
@@ -130,10 +130,10 @@ Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen S
 
 Wenn Sie während des Setups die automatische Installation von Office-Apps ausgewählt haben, werden die apps auf den Windows 10-Geräten installiert, sobald sich die Benutzer bei Azure AD von Ihren Windows-Geräten unter Verwendung ihrer Arbeits Anmeldeinformationen angemeldet haben.
 
-Informationen zum Installieren von Office auf mobilen IOS-oder Android-Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business-Benutzer](set-up-mobile-devices.md).
+Informationen zum Installieren von Office auf mobilen IOS-oder Android-Geräten finden Sie unter [Einrichten von mobilen Geräten für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md).
 
 Sie können Office auch einzeln installieren. Anweisungen finden Sie unter [Installieren von Office auf einem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

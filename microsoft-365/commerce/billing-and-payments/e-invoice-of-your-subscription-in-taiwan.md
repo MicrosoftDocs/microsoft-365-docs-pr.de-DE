@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zur e-Rechnung für Office 365 für Unternehmen (Taiwan)
+title: Grundlegendes zur e-Rechnung für Microsoft 365 for Business (Taiwan)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: Erfahren Sie mehr über die Office 365 für Unternehmen e-Rechnung für Taiwan.
-ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Informationen zur Microsoft 365 for Business-e-Rechnung für Taiwan.
+ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632707"
 ---
-# <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Grundlegendes zur e-Rechnung für Office 365 für Unternehmen (Taiwan)
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Grundlegendes zur e-Rechnung für Microsoft 365 for Business (Taiwan)
 
 e-invoice ist eine elektronische Rechnung, die vom Verkäufer nach dem Kauf des Käufers in Übereinstimmung mit den e-Rechnung-Anforderungen der Taiwan-Steuerbehörde ausgestellt wurde. Informationen werden zur Datensatzaufbewahrung an die elektronische Rechnungs Wolke der Taiwan-Steuerbehörde übermittelt. Informationen zu Taiwan e-invoice finden Sie hier:<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
@@ -39,7 +39,7 @@ Eine Beispiel Kopie der e-Rechnung ist hier enthalten:
 
 Für kommerzielle Käufe wenden wir Steuern zusätzlich zum angegebenen Preis unserer Abonnements mit einem von der Taiwan Tax Authority verordneten Satz an. Für steuerliche Fragen oder Planung arbeiten Sie bitte mit Ihrem Steuerberater zusammen.
   
-## <a name="when-will-e-invoice-start-for-my-office-365-services"></a>Wann wird e-Rechnung für meine Office 365 Dienste gestartet?
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>Wann wird e-invoice für meine Microsoft 365-Dienste gestartet?
 
 Microsoft ersetzt die aktuelle computerbezogene Rechnung per e-Rechnung am **15. September**. Für die Abrechnung vor dem 15. September werden Papierkopien-Steuerrechnungen direkt an Kunden gesendet. Nach dem 15. September wird e-Invoice in Ihrem Microsoft 365 Admin Center zum Anzeigen, herunterladen und Drucken angeboten und wird nicht mehr direkt an Sie gesendet. 
   

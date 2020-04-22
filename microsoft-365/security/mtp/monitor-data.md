@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084778"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637092"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
 
-Die Kategorie **Daten** hilft beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Datenweitergabe führen könnten. Dabei handelt es sich um die überarbeiten vorhandener Office 365 DLP-Richtlinien Berichte sowie einen DLP-Richtlinien Übereinstimmungs Bericht eines Drittanbieters.
+Die Kategorie **Daten** hilft beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Datenweitergabe führen könnten. Dabei handelt es sich um die überarbeiten vorhandener DLP-Richtlinien Berichte sowie einen DLP-Richtlinien Übereinstimmungs Bericht eines Drittanbieters.
 
 Sie sehen Folgendes:
 

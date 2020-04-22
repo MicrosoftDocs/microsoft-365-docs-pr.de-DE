@@ -1,5 +1,5 @@
 ---
-title: Office 365 Warn Seiten für ATP-sichere Links
+title: Warnungsseiten für ATP-sichere Links
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528857"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635986"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 Warn Seiten für ATP-sichere Links
+# <a name="atp-safe-links-warning-pages"></a>Warnungsseiten für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und Informationen zu sicheren Links in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Microsoft 365-Familie oder Microsoft 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt.
 
@@ -60,7 +60,7 @@ Die URL verweist auf eine Website, die als bösartig identifiziert wurde.  <br/>
 
 ### <a name="a-site-is-blocked"></a>Eine Website ist blockiert
 
-Die URL wird für Ihre Organisation blockiert. Es gibt mehrere Gründe, warum eine URL blockiert werden kann. Es wird empfohlen, dass Sie sich an den Office 365 Administrator Ihrer Organisation wenden.
+Die URL wird für Ihre Organisation blockiert. Es gibt mehrere Gründe, warum eine URL blockiert werden kann. Es wird empfohlen, dass Sie sich an den Microsoft 365 for Business-Administrator Ihrer Organisation wenden.
 
 ![Diese Website ist blockiert](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 

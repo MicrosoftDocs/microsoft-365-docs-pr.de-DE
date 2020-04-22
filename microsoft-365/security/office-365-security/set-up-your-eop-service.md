@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081232"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638308"
 ---
 # <a name="set-up-your-eop-service"></a>Einrichten Ihres EOP-Diensts
 
@@ -30,7 +30,7 @@ In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (E
 
 - Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 1 Stunde
 
-- Wenn Sie Connectors konfigurieren möchten, muss Ihr Konto ein globales Administratorkonto für Office 365 oder ein Exchange-Unternehmensadministratorkonto (Rollengruppe "Organisationsverwaltung") sein. Weitere Informationen finden Sie unter [Feature Permissions in EoP](feature-permissions-in-eop.md).
+- Zum Konfigurieren von Connectors muss Ihr Konto ein globaler Administrator oder ein Exchange-Unternehmens Administrator (die Rollengruppe "Organisationsverwaltung") sein. Weitere Informationen finden Sie unter [Feature Permissions in EoP](feature-permissions-in-eop.md).
 
 - Wenn Sie sich noch nicht bei EOP registriert haben, rufen Sie [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) auf, und erwerben oder testen Sie den Dienst.
 
@@ -54,11 +54,11 @@ Bevor Sie die Übermittlung Ihrer E-Mails zum und vom EOP-Dienst konfigurieren, 
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Schritt 3: Einrichten des Nachrichtenflusses mithilfe der Exchange-Verwaltungskonsole
 
-Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachrichtenfluss zwischen EOP und Ihren lokalen E-Mail-Servern ermöglichen. Ausführliche Anweisungen finden Sie unter [Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachrichtenfluss zwischen EOP und Ihren lokalen E-Mail-Servern ermöglichen. Ausführliche Anweisungen finden Sie unter [Einrichten von Connectors zum Weiterleiten von e-Mails zwischen Microsft 365 und ihren eigenen e-Mail-Servern](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Woher wissen Sie, dass diese Aufgabe erfolgreich war?
 
-Überprüfen Sie den Nachrichtenfluss zwischen dem Dienst und ihrer Umgebung. Weitere Informationen finden Sie unter [Testen der Nachrichtenübermittlung durch Validieren der Office 365-Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+Überprüfen Sie den Nachrichtenfluss zwischen dem Dienst und ihrer Umgebung. Weitere Informationen finden Sie unter [Testen der Nachrichtenübermittlung durch validieren Ihrer Microsoft 365-Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Schritt 4: Zulassen eingehender SMTP-Verbindungen an Port 25
 
@@ -75,13 +75,13 @@ Wenn die Nachrichten nicht in die Junk-E-Mail-Ordner der Benutzer verschoben wer
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Center zum Verweisen Ihres MX-Eintrags auf EoP
 
-Befolgen Sie die Konfigurationsschritte für Office 365-Domänen, um den MX-Eintrag für die Domäne zu aktualisieren, damit Ihre eingehenden E-Mails über EOP weitergeleitet werden. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Führen Sie die Schritte zur Domänenkonfiguration aus, um den MX-Eintrag für Ihre Domäne zu aktualisieren, damit die eingehenden e-Mails über EoP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Woher wissen Sie, dass diese Aufgabe erfolgreich war?
 
 Zu diesem Zeitpunkt haben Sie die Dienstübermittlung für einen ordnungsgemäß konfigurierten Ausgang auf dem lokalen Connector geprüft und sichergestellt, dass Ihr MX-Eintrag auf EOP verwiesen wurde. Sie können nun zusätzlich die folgenden Tests ausführen, um sicherzustellen, dass der Dienst eine E-Mail erfolgreich an Ihre lokale Umgebung versendet hat:
 
-- Überprüfen Sie den Nachrichtenfluss zwischen dem Dienst und ihrer Umgebung. Weitere Informationen finden Sie unter [Testen der Nachrichtenübermittlung durch Validieren der Office 365-Konnektoren](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+- Überprüfen Sie den Nachrichtenfluss zwischen dem Dienst und ihrer Umgebung. Weitere Informationen finden Sie unter [Testen der Nachrichtenübermittlung durch validieren Ihrer Microsoft 365-Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 - Senden Sie von einem webbasierten E-Mail-Konto eine E-Mail an einen E-Mail-Empfänger in Ihrer Organisation, dessen Domäne der Domäne entspricht, die Sie dem Dienst hinzugefügt haben. Bestätigen Sie mithilfe von Microsoft Outlook oder einem anderen E-Mail-Client die Zustellung der Nachricht an das lokale Postfach.
 

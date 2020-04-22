@@ -1,5 +1,5 @@
 ---
-title: Erwerben eines weiteren Office 365 Business-Abonnements
+title: Erwerben eines weiteren Microsoft 365 for Business-Abonnements
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: 'Hier erfahren Sie, wie Sie ein weiteres Office 365 für Unternehmen Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
+description: 'Hier erfahren Sie, wie Sie ein weiteres Microsoft 365 for Business-Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142263"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634932"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>Erwerben eines weiteren Office 365 Business-Abonnements
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>Erwerben eines weiteren Microsoft 365 for Business-Abonnements
 
-Wenn Sie bereits über ein Office 365 für Unternehmen-Abonnement verfügen und ein weiteres Abonnement für Ihre Organisation kaufen möchten, ist dies am besten über das Admin Center möglich. Wenn Sie noch nicht das erste Office 365 für Unternehmen Abonnement für Ihre Organisation erworben haben, wählen Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans) einen Plan aus.
+Wenn Sie bereits ein Microsoft 365 for Business-Abonnement haben und ein weiteres Abonnement für Ihre Organisation kaufen möchten, ist dies am besten über das Admin Center möglich. Wenn Sie das erste Microsoft 365 for Business-Abonnement für Ihre Organisation noch nicht erworben haben, wählen Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans) einen Plan aus.
   
 Wenn Sie ein weiteres Abonnement über das Admin Center kaufen, wird sichergestellt, dass das neue Abonnement derselben Organisation (Domänennamens Raum) wie Ihr vorhandenes Abonnement zugeordnet wird. Dadurch ist es einfacher, Benutzer in Ihrer Organisation zwischen Abonnements zu verschieben oder ihnen eine Benutzerlizenz für das benötigte zusätzliche Abonnement zuzuweisen.
   
-Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die das Abonnement verwenden sollen, eine Benutzerlizenz dafür zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Office 365 für Unternehmen](../admin/manage/assign-licenses-to-users.md).
+Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die das Abonnement verwenden sollen, eine Benutzerlizenz dafür zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Microsoft 365 for Business](../admin/manage/assign-licenses-to-users.md).
   
 ## <a name="buy-another-subscription"></a>Ein weiteres Abonnement kaufen
 
 ::: moniker range="o365-worldwide"
+
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 

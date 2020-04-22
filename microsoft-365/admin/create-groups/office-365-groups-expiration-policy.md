@@ -1,5 +1,5 @@
 ---
-title: Ablaufrichtlinie für Office 365-Gruppen
+title: Ablaufrichtlinie für Gruppen
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie mehr über Office 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225919"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630055"
 ---
-# <a name="office-365-group-expiration-policy"></a>Ablaufrichtlinie für Office 365 Gruppe
+# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
-Durch die zunehmende Nutzung von Office 365 Gruppen benötigen Administratoren und Benutzer eine Möglichkeit, nicht verwendete Gruppen zu bereinigen. Mithilfe von Ablaufrichtlinien können inaktive Gruppen aus dem System entfernt und die Dinge sauberer gemacht werden.
+Durch die zunehmende Nutzung von Microsoft 365-Gruppen benötigen Administratoren und Benutzer eine Möglichkeit, nicht verwendete Gruppen zu bereinigen. Mithilfe von Ablaufrichtlinien können inaktive Gruppen aus dem System entfernt und die Dinge sauberer gemacht werden.
 
 Wenn eine Gruppe abläuft, werden auch alle zugehörigen Dienste (Postfach, Planer, SharePoint-Website, Team usw.) gelöscht.
 
@@ -46,14 +46,14 @@ Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Durch eine der
 Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Administratoren müssen Sie für Ihre Organisation aktivieren, wenn Sie Sie verwenden möchten.
 
 > [!NOTE]
-> Für das Konfigurieren und Verwenden der Ablaufrichtlinie für Office 365 Gruppen müssen Sie Azure AD Premium-Lizenzen für die Mitglieder aller Gruppen, auf die die Ablaufrichtlinie angewendet wird, besitzen, jedoch nicht unbedingt zuweisen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> Bei der Konfiguration und Verwendung der Ablaufrichtlinie für Microsoft 365-Gruppen müssen Sie Azure AD Premium-Lizenzen für die Mitglieder aller Gruppen, auf die die Ablaufrichtlinie angewendet wird, besitzen, jedoch nicht unbedingt zuweisen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>Wer kann die Ablaufrichtlinie für Office 365 Gruppen konfigurieren und verwenden?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Wer kann die Ablaufrichtlinie für Microsoft 365-Gruppen konfigurieren und verwenden?
 
 |Rolle|Was Sie tun können|
 |---------|---------|
-|Office 365 globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder Löschen der Ablaufrichtlinien Einstellungen für Office 365 Gruppen.|
-|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Office 365 Gruppe|
+|Globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder löschen Sie die Microsoft 365 Groups-Ablaufrichtlinien Einstellungen.|
+|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
@@ -77,7 +77,7 @@ Gruppenbesitzer werden nur per e-Mail benachrichtigt. Wenn die Gruppe über Plan
 
 30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die e-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine e-Mail-Nachricht, mit der Sie die Gruppe problemlos erneuern können. Wenn Sie es nicht erneuern, erhalten Sie eine weitere Verlängerungs-e-Mail 15 Tage vor Ablauf. Wenn Sie es noch nicht erneuert haben, erhalten Sie eine weitere e-Mail-Benachrichtigung am Tag vor Ablauf.
 
-Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, kann der Administrator die Gruppe noch bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Office 365 Gruppe](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
+Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, kann der Administrator die Gruppe noch bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
@@ -85,4 +85,4 @@ Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe er
 
 [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Konfigurieren des Ablaufs von Office 365 Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Konfigurieren des Ablaufs von Microsoft 365-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

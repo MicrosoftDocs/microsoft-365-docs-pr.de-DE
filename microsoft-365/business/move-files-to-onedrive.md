@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Erfahren Sie, wie Sie Ihre persönlichen Arbeitsdateien und vertrauliche Unternehmensdateien in wenigen einfachen Schritten in OneDrive für Unternehmen verlagern können.
-ms.openlocfilehash: 7c36eb272983f86ee42361478ff63dfca252f0ce
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4c41928ac51950a5a8c372ef0a170a76ff48ed2e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561678"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633137"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Verschieben von Dateien auf OneDrive for Business
 
@@ -43,14 +43,14 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 Wenn ein Benutzer einen Computer mit vielen persönlichen Dateien hat, sollten Sie diese Dateien zunächst auf OneDrive for Business verschieben:
   
-1. Wechseln Sie zu "portal.office.com", und melden Sie sich mit den Microsoft 365 Business-Anmeldeinformationen des Benutzers an.
-    
+1. Wechseln Sie zu Portal.Office.com, und melden Sie sich mit den Microsoft 365 for Business-Anmeldeinformationen des Benutzers an.
+
 2. Klicken Sie auf das App-Startfeld ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wechseln Sie zu OneDrive. 
     
 3. Wählen Sie in der Menüleiste **Hochladen**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) aus, und navigieren Sie zu den Dateien, die Sie speichern möchten. 
     
 Um das Benutzerprofil und wichtige Dateien zu übertragen, können Sie ein Drittanbietertool verwenden, z. B. ForensiT. Sie sollten auch die resultierenden Dateien auf OneDrive for Business hochladen.
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 for Business
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

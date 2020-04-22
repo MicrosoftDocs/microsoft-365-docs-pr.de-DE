@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP-Abonnements übertragen
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635062"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Übertragen eines Microsoft 365 Business-CSP-Abonnements
 
@@ -91,7 +91,7 @@ In der folgenden Tabelle werden die Auswirkungen auf die APP-Verwaltungsrichtlin
 | **Zurücksetzen der PIN, wenn die Anmeldung fehlschlägt** | Eingeschränkter Zugriff auf Apps | Keine Beschränkung für den Zugriff auf App-Ebene |
 | **Erfordert, dass Benutzer sich erneut anmelden, wenn Office-Apps sich im Leerlauf befunden haben** | Anmeldung erforderlich | Keine Anmeldung erforderlich |
 | **Verweigern des Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen** | Auf Arbeitsdateien kann nicht auf jailbroken/verwurzelten Geräten zugegriffen werden | Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen ist möglich |
-| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen beschränkt auf Apps, die Teil des Microsoft 365 Business-Abonnements sind | Kopieren und Einfügen für alle Apps verfügbar |
+| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen auf apps beschränkt, die im Rahmen des Microsoft 365-Abonnements verfügbar sind | Kopieren und Einfügen für alle Apps verfügbar |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Auswirkungen auf Windows 10 PC nach Ablauf des Abonnements
 

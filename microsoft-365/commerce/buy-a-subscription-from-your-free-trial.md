@@ -1,5 +1,5 @@
 ---
-title: So aktivieren Sie Microsoft Office 365 Business
+title: Erwerben Sie ein Abonnement für Microsoft 365 for Business aus Ihrer kostenlosen Testversion.
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: Erwerben Sie ein Office 365 für Unternehmen-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Erwerben Sie ein Microsoft 365 for Business-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142287"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634944"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>So aktivieren Sie Microsoft Office 365 Business
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Erwerben Sie ein Abonnement für Microsoft 365 for Business aus Ihrer kostenlosen Testversion.
 
-[] Sie haben Office 365 ausprobiert und möchten es jetzt kaufen. Beim Kauf von Office 365 aus Ihrer Testversion stehen Ihnen zwei Optionen zur Verfügung:
+Sie haben Microsoft 365 ausprobiert, und jetzt sind Sie zum Kauf fertig. Beim Kauf von Microsoft 365 aus Ihrer Testversion stehen Ihnen zwei Optionen zur Verfügung:
   
 - [Kaufen des gleichen Plans wie den Ihrer Testversion](#buy-the-same-plan-as-your-trial)
 - [Kaufen eines anderen Plans als den Ihrer Testversion](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 
 ::: moniker range="o365-worldwide"
 
+
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
 2. Wählen Sie auf der Seite **Einkaufsdienste** das Abonnement aus, das Sie kaufen möchten, und wählen Sie dann **kaufen**aus.
@@ -136,6 +137,7 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 
 ::: moniker range="o365-21vianet"
 
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Wählen Sie auf der Seite **Abonnement** die Option **Abonnements hinzufügen**aus.
@@ -156,10 +158,11 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Verlängern Ihrer Testversion](extend-your-trial.md)
   
-[Registrieren für Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Registrieren für Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Wechseln zu einem anderen Office 365-Plan oder einem anderen Abonnement](subscriptions/switch-to-a-different-plan.md)
+[Wechseln zu einem anderen Plan oder Abonnement von Microsoft 365](subscriptions/switch-to-a-different-plan.md)

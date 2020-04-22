@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537509"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631169"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -39,7 +39,7 @@ Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht,
 
 Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
-- [Siehe von Office 365 Sicherheitsfeatures erkannte Schadsoftware](#see-malware-detected-in-email-by-technology)
+- [Siehe von Microsoft 365-Sicherheitsfeatures erkannte Schadsoftware](#see-malware-detected-in-email-by-technology)
 - [Anzeigen von Daten zu Phishing-URLs und klicken auf Urteil](#view-data-about-phishing-urls-and-click-verdict)
 - [Starten eines automatisierten unter Such-und Antwort Prozesses aus einer Ansicht im Explorer](#start-automated-investigation-and-response) (nur ATP-Plan 2)
 - ... [Untersuchung schädlicher e-Mails und vieles mehr](#more-ways-to-use-explorer-or-real-time-detections)!
@@ -56,7 +56,7 @@ Diese neuen Features werden unten erläutert.
 
 ### <a name="preview-email-header-and-download-email-body"></a>E-Mail-Kopfzeile anzeigen und e-Mail-Textkörper downloaden
 
-Die Möglichkeit zum Anzeigen einer e-Mail-Kopfzeile und zum Herunterladen des e-Mail-Texts sind neue Features, die in Threat Explorer verfügbar sind. Administratoren können heruntergeladene Kopfzeilen/e-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von e-Mail-Nachrichten die Exposition von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Office 365 Rollengruppe (beispielsweise Sicherheitsvorgänge oder Sicherheits Administrator) hinzugefügt werden, um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "All-e-Mail-Nachrichten" zu gewähren.
+Die Möglichkeit zum Anzeigen einer e-Mail-Kopfzeile und zum Herunterladen des e-Mail-Texts sind neue Features, die in Threat Explorer verfügbar sind. Administratoren können heruntergeladene Kopfzeilen/e-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von e-Mail-Nachrichten die Exposition von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Rollengruppe hinzugefügt werden (beispielsweise Sicherheitsvorgänge oder Sicherheits Administrator), um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "All-e-Mail-Nachrichten" zu gewähren.
 
 Durch Explorer (und Echtzeiterkennung) werden jedoch auch neue Felder hinzugefügt, mit denen Sie ein vollständigeres Bild davon erhalten, wo Ihre e-Mail-Nachrichten landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsmitarbeiter einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mail-Nachrichten auf einen Blick zu erkennen ist.
 
@@ -117,7 +117,7 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
-Angenommen, Sie möchten die in e-Mail-nach Office 365-Technologie erkannte Malware sehen. Verwenden Sie dazu die [e-Mail->](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
+Angenommen, Sie möchten die von Microsoft 365-Technologie erkannte Schadsoftware in e-Mails sehen. Verwenden Sie dazu die [e-Mail->](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
 
 1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
@@ -176,7 +176,7 @@ Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
 
 1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus. (Dies wurde früher als **Benutzer gemeldet**bezeichnet.)
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.
 
    ![Menü "Ansicht" für Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 
-- [Berechtigungen im Office 365 Security &amp; Compliance-Center](permissions-in-the-security-and-compliance-center.md)
+- [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs-Explorer und Echt Zeit Erkennungen

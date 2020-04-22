@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie einen Bereich für die Zusammenarbeit für Ihr Team mit Microsoft Teams.
-ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056350"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635648"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Erstellen von Teams für die Zusammenarbeit in Microsoft Teams
 
@@ -48,7 +48,7 @@ Sie können auch Teams für bestimmte Projekte erstellen und die richtige Menge 
 
 Wenn Sie ein Team erstellen, erfahren Sie hier, was else erstellt wird:
 
-- Eine neue [Office 365 Gruppe](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- Eine neue [Microsoft 365-Gruppe](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - Eine [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) Website und Dokumentbibliothek zum Speichern von Team Dateien
 - Ein [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) freigegebenes Postfach und Kalender
 - Ein OneNote-Notizbuch

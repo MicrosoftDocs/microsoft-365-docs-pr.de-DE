@@ -1,5 +1,5 @@
 ---
-title: Wechseln zu einem anderen Office 365 Business-Plan
+title: Wechseln zu einem anderen Microsoft 365 for Business-Plan
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,42 +23,47 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: Hier erfahren Sie, wie Sie zu einem neuen Office 365 für Unternehmen Abonnement wechseln.
-ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Hier erfahren Sie, wie Sie zu einem neuen Microsoft 365 for Business-Abonnement wechseln.
+ms.openlocfilehash: a101ac47aede1413528fd2cb6be1d1df6ab4d961
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636522"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>Wechseln zu einem anderen Office 365 Business-Plan
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Wechseln zu einem anderen Microsoft 365 for Business-Plan
 
 Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können Sie Pläne wechseln.  
 
 Die einfachste Möglichkeit zum Wechseln von Plänen ist die Verwendung der Schaltfläche **Pläne wechseln** im Admin Center. Die Verwendung der Schaltfläche **Pläne wechseln** wird jedoch nicht in allen Situationen unterstützt. In einigen Fällen können Sie Pläne eventuell manuell wechseln.
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Dieser Artikel bezieht sich auf das alte Admin Center. Wenn Sie den Artikel zum neuen Admin Center anzeigen möchten, lesen Sie [Upgrade auf einen anderen Plan](upgrade-to-different-plan.md)durch. Das neue Admin Center steht allen Microsoft 365-Administratoren zur Verfügung. Weitere Informationen finden Sie unter[Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
-
-::: moniker-end
 
 **Benötigen Sie etwas anderes?**
-
 - [Kündigen Ihres Abonnements](cancel-your-subscription.md)
-- [Upgrade von Office 365 Home auf ein Business-Abonnement](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Aktualisieren der Microsoft 365-Produktfamilie auf ein Geschäfts Abonnement](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Anruf beim Microsoft-Support](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Verwenden der Schaltfläche "Pläne wechseln"
 
 Bei Verwendung der Schaltfläche **Pläne wechseln** werden Sie durch die Schritte zum Kaufen eines neuen Plans geführt, auf den Sie Ihren aktuellen Plan umstellen können. Allen Benutzern werden Lizenzen im neuen Plan automatisch zugewiesen, und Ihr alter Plan wird für Sie gekündigt.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
-    Wenn Sie Office 365 Deutschland verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+::: moniker-end
 
-    Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+
+::: moniker-end
 
 2. Wählen Sie **Pläne wechseln** aus, um eine Liste der verfügbaren neuen Pläne anzuzeigen.
 
@@ -70,7 +75,7 @@ Bei Verwendung der Schaltfläche **Pläne wechseln** werden Sie durch die Schrit
 
 4. Wenn Sie Hilfe benötigen, wählen Sie auf der Seite **Zur Kasse** die Schaltfläche **Jetzt chatten** aus.
 
-    Nachdem Sie das Auschecken beendet haben, dauert es ein paar Minuten, bis Office 365 den Wechsel abgeschlossen hat. Sie können mit der Nutzung Ihres neuen Abonnements sofort beginnen.
+    Wenn Sie das Checkout abgeschlossen haben, benötigt Microsoft 365 einige Minuten, um den Switch abzuschließen. Sie können mit der Nutzung Ihres neuen Abonnements sofort beginnen.
 
 ## <a name="the-switch-plans-button-isnt-there"></a>Es gibt keine Schaltfläche "Pläne wechseln".
 
@@ -78,7 +83,7 @@ Wenn die Schaltfläche **Pläne wechseln** nicht verfügbar ist, können Sie ver
   
 Dies kann aus folgenden Gründen geschehen:
   
-- Sie nutzen mehr als einen Office 365-Plan. Sie können die Schaltfläche **Pläne wechseln** nur verwenden, wenn alle Benutzer denselben Plan abonnieren.
+- Sie verwenden mehr als einen Microsoft 365-Plan. Sie können die Schaltfläche **Pläne wechseln** nur verwenden, wenn alle Benutzer denselben Plan abonnieren.
 
 - Da Sie bereits Office 365 Enterprise E5 nutzen, steht Ihnen die gesamte in Office 365 verfügbare Funktionalität zur Verfügung.
 
@@ -86,7 +91,7 @@ Dies kann aus folgenden Gründen geschehen:
 
 Wenn Sie die Schaltfläche **Pläne wechseln** verwenden, werden die Pläne, zu denen Sie wechseln können, auf Grundlage der in Ihrem aktuellen Plan vorhandenen Dienste angezeigt. Sie können über die Schaltfläche **Pläne wechseln** nur zu einem Plan mit denselben datenbezogenen Diensten oder zu einer höheren Version wechseln. Dadurch wird sichergestellt, dass Benutzer während des Wechsels keine auf diese Dienste bezogenen Daten verlieren.
   
-Wenn Sie Pläne vor dem Wechsel vergleichen möchten, schauen Sie sich die Seite mit dem [Office 365 Business-Produktvergleich](https://go.microsoft.com/fwlink/p/?linkid=842056) an. Technische Daten finden Sie in den Beschreibungen der [Office 365-Dienste](https://go.microsoft.com/fwlink/p/?linkid=842275).
+Informationen zum Vergleichen von Plänen vor dem Wechsel finden Sie auf der Seite [Microsoft 365 for Business-Produktvergleich](https://go.microsoft.com/fwlink/p/?linkid=842056) . Technische Spezifikationen finden Sie unter [Microsoft 365-Dienstbeschreibungen](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
 Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie die [Pläne manuell wechseln](switch-plans-manually.md)oder den [Microsoft-Support anrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
   
@@ -98,4 +103,4 @@ Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie die [
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Kontaktieren Sie den Support, um Hilfe beim Wechseln von Plänen zu erhalten!
 
-[Rufen Sie den Support an.](../../admin/contact-support-for-business-products.md)
+![Telefon](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)

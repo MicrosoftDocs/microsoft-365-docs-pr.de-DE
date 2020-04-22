@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Hier erfahren Sie, wie Sie Zeitpläne für Berichte im Security &amp; Compliance Center anzeigen, bearbeiten und verwalten können.
-ms.openlocfilehash: 5ae6a37a04604ca814348ac42d80a57e3e171b6b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ccd7ddd766a1e109fb0363b56290020356946e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082869"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635328"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Verwalten von Zeitplänen für mehrere Berichte im &amp; Security Compliance Center
 
@@ -28,7 +28,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
 ## <a name="manage-schedules-for-reports"></a>Verwalten von Zeitplänen für Berichte
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen, [die &amp; im Office 365 Security Compliance Center zugewiesen](permissions-in-the-security-and-compliance-center.md)sind. Im Allgemeinen können Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. 
+> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen, die [im Security &amp; Compliance Center zugewiesen](permissions-in-the-security-and-compliance-center.md)sind. Im Allgemeinen können globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. 
   
 ![Wählen Sie im &amp; Security Compliance Center die Option \> Berichte Manage Schedules aus.](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
@@ -44,7 +44,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
     
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Berichte und Einblicke im &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center](create-a-schedule-for-a-report.md)
   

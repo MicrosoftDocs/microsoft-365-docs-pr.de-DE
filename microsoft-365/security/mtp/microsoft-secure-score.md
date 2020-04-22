@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583381"
+ms.locfileid: "43637104"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -52,7 +52,7 @@ Die meisten werden auf binäre Art bewertet – wenn Sie die Verbesserungsmaßna
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Secure Score
 
-Derzeit gibt es Empfehlungen für Office 365 (einschließlich SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection und mehr), Azure AD und Cloud App Security. Empfehlungen zu anderen Sicherheitsprodukten wie Azure ATP und Microsoft Defender ATP werden demnächst verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
+Derzeit gibt es Empfehlungen für die Einbeziehung von SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD und Cloud-App-Sicherheit. Empfehlungen zu anderen Sicherheitsprodukten wie Azure ATP und Microsoft Defender ATP werden demnächst verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
@@ -66,7 +66,6 @@ Mit Lese- und Schreibzugriff können Sie Änderungen vornehmen und mit Secure Sc
 * Sicherheitsadministrator
 * Exchange-Administrator
 * SharePoint-Administrator
-* Konto Administrator
 
 ### <a name="read-only-roles"></a>Schreibgeschützte Rollen
 

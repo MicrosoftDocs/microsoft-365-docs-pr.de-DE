@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Erfahren Sie, wie Sie Ihr Testabonnement oder Ihr bezahltes Abonnement von Office 365 Business oder Microsoft 365 kündigen können.
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-oder Microsoft 365-Testversion oder ein kostenpflichtiges Abonnement kündigen.
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142163"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636595"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
-*Teilnahmeberechtigung:* Wenn Sie weniger als 25 Lizenzen für Benutzer zugewiesen haben, können Sie Ihr Testabonnement oder Ihr bezahltes Abonnement von Office 365 Business jederzeit online über das Admin Center kündigen.  Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
+*Berechtigung:* Wenn Benutzern weniger als 25 Lizenzen zugewiesen sind, können Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement online im Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
 
 *Rückerstattung:* Eine anteilsmäßige Gutschrift wird Ihnen mit dem nächsten Abrechnungszyklus erstattet.
 
@@ -43,13 +43,14 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 ::: moniker range="o365-worldwide"
 
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
 2. Suchen Sie das Abonnement, das Sie kündigen möchten, und wählen Sie unter **Einstellungen und Aktionen** die Option **Abonnement kündigen** aus.
 
 3. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
 
-    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Office 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
 
-    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Office 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 4. Überprüfen Sie die wichtigen Daten, geben Sie Ihr Feedback ab, warum Sie das Abonnement kündigen, und wählen Sie dann **Abonnement kündigen** aus.
 
-    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Office 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Office 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+    Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen darüber, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement storniert wird, finden Sie unter [Was passiert mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ Bei Verwendung einer benutzerdefinierten Domäne mit Ihrem Abonnement müssen ei
 
 Wenn Sie eine benutzerdefinierte Domäne eingerichtet haben, haben Sie auch DNS-Einträge hinzugefügt, damit die Domäne mit den Office 365-Diensten zusammenarbeitet. Bevor Sie Ihre Domäne entfernen, stellen Sie sicher, dass Sie die DNS-Einträge wie den MX-Eintrag der Domäne bei Ihrem DNS-Host aktualisieren.
 
-So müssen Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern, damit an Sie gesendete E-Mails nicht mehr an die Office 365-Adresse, sondern an den neuen E-Mail-Anbieter gesendet werden. (Mit einem MX-Eintrag wird festgelegt, wohin E-Mails für Ihre Domäne gesendet werden.)
+So müssen Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern, E-Mails, die an Ihre Domäne gesendet werden, werden nicht mehr an Ihre Microsoft-Adresse weitergeleitet und stattdessen an Ihren neuen e-Mail-Anbieter gesendet. (Mit einem MX-Eintrag wird festgelegt, wohin E-Mails für Ihre Domäne gesendet werden.)
 
 - Wenn Ihre Namenservereinträge (NS) [auf Office 365-Namenserver verweisen](../../admin/setup/add-domain.md), werden Änderungen an Ihrem MX-Eintrag erst dann wirksam, wenn Sie die NS-Einträge so geändert haben, dass sie auf den neuen DNS-Host verweisen (siehe Schritt 2).
 
-- Informieren Sie vor der Aktualisierung des MX-Eintrags die Benutzer, zu welchem Termin Sie planen, die E-Mails umzustellen, und welchen neuen E-Mail-Anbieter Sie zu verwenden beabsichtigen. Möglicherweise müssen die Benutzer weitere Schritte unternehmen, um die vorhandenen Office 365-E-Mails auf den neuen Anbieter zu verschieben.
+- Informieren Sie vor der Aktualisierung des MX-Eintrags die Benutzer, zu welchem Termin Sie planen, die E-Mails umzustellen, und welchen neuen E-Mail-Anbieter Sie zu verwenden beabsichtigen. Wenn Ihre Benutzer ihre vorhandenen Microsoft-e-Mails auf den neuen Anbieter umstellen möchten, müssen Sie außerdem zusätzliche Schritte ausführen.
 
 - Folgen Sie an dem Tag, an dem Sie den MX-Eintrag ändern, den restlichen Schritten in diesem Artikel.
 

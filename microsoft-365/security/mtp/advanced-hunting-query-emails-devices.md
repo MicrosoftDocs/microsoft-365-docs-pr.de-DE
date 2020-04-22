@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928984"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633507"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Suche nach Bedrohungen auf Geräten und in E-Mails
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928984"
 
 
 
-Die [erweiterte Suche](advanced-hunting-overview.md) in Microsoft Threat Protection bietet Ihnen die Möglichkeit, auf Ihren Windows-Geräten und in Ihren Office 365-E-Mails proaktiv nach Bedrohungen zu suchen. Nachfolgend finden Sie einige Suchszenarien und Beispielabfragen, die Ihnen dabei helfen, zu verstehen, wie Sie Abfragen erstellen können, die sowohl Geräte als auch E-Mails umfassen.
+[Advanced Hunting](advanced-hunting-overview.md) in Microsoft Threat Protection ermöglicht Ihnen die proaktive Suche nach Bedrohungen auf Ihren Windows-Geräten und Microsoft-e-Mails. Nachfolgend finden Sie einige Suchszenarien und Beispielabfragen, die Ihnen dabei helfen, zu verstehen, wie Sie Abfragen erstellen können, die sowohl Geräte als auch E-Mails umfassen.
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>Abrufen von Benutzerkonten aus E-Mail-Adressen
 Beim Erstellen von Abfragen über [Tabellen, die Geräte und E-Mail-Nachrichten enthalten](advanced-hunting-schema-tables.md), müssen Sie wahrscheinlich Benutzerkontonamen aus E-Mail-Adressen von Absendern oder Empfängern abrufen. Verwenden Sie dazu den *lokalen Host* aus der E-Mail-Adresse:

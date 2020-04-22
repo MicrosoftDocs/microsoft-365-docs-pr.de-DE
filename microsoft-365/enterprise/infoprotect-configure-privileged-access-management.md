@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 7: Konfigurieren von Privileged Access Management für Office 365'
+title: 'Schritt 7: Konfigurieren der privilegierten Zugriffsverwaltung'
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,32 +14,32 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: ''
-description: Verstehen und Konfigurieren von Privileged Access Management für Office 365.
-ms.openlocfilehash: f29b1e0934a4b9a6d4e3347584f39423d446ed58
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Verstehen und Konfigurieren der privilegierten Zugriffsverwaltung.
+ms.openlocfilehash: 4fed4daacc17a34563825bf0575880ce06ec6ebd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067232"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636988"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Schritt 7: Konfigurieren von Privileged Access Management für Office 365
+# <a name="step-7-configure-privileged-access-management"></a>Schritt 7: Konfigurieren der privilegierten Zugriffsverwaltung
 
 *Dieser Schritt ist optional und gilt nur für die Versionen E5 und Advanced Compliance von Microsoft 365 Enterprise.*
 
 ![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Privileged Access Management wird durch Konfigurieren von Richtlinien aktiviert, die Just-in-Time-Zugriff für aufgabenbasierte Aktivitäten in Ihrem Office 365-Mandanten angeben. Dadurch kann Ihre Organisation vor Sicherheitsverletzungen geschützt werden, bei denen vorhandene Privileged Access Management-Konten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden. Sie könnten beispielsweise eine Privileged Access Management-Richtlinie konfigurieren, die für den Zugriff und das Ändern von Postfacheinstellungen in der Organisation eine explizite Genehmigung in Ihrem Office 365-Mandanten benötigt. 
+Die Verwaltung privilegierter Zugriffsrechte wird durch Konfigurieren von Richtlinien aktiviert, die den Just-in-Time-Zugriff für aufgabenbasierte Aktivitäten in Ihrem Mandanten angeben. Damit können Sie Ihre Organisation vor Verstößen schützen, die vorhandene privilegierte Administratorkonten mit einem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Sie können beispielsweise eine Richtlinie für privilegierte Zugriffsverwaltung konfigurieren, die eine explizite Genehmigung für den Zugriff auf und die Änderung der Organisations Postfacheinstellungen in Ihrem Mandanten erfordert.
 
-In diesem Schritt aktivieren Sie Privileged Access Management in Ihrem Office 365-Mandanten und konfigurieren Richtlinien für privilegierten Zugriff, die zusätzliche Sicherheit für aufgabenbasierten Zugriff auf Office 365-Daten und Konfigurationseinstellungen für Ihre Organisation bereitstellen. Es gibt drei grundlegende Schritte, um mit dem privilegierten Zugriff in Ihrer Office 365-Organisation zu beginnen:
+In diesem Schritt aktivieren Sie die privilegierte Zugriffsverwaltung in Ihrem Mandanten und konfigurieren privilegierte Zugriffsrichtlinien, die zusätzliche Sicherheit für den aufgabenbasierten Zugriff auf Daten und Konfigurationseinstellungen für Ihre Organisation bieten. Es gibt drei grundlegende Schritte für die ersten Schritte mit privilegiertem Zugriff in Ihrer Organisation:
 - Erstellen einer Gruppe einer genehmigenden Person
 - Aktivieren des privilegierten Zugriffs
 - Erstellen von Genehmigungsrichtlinien
 
 Nach der Konfiguration kann Ihre Organisation mit Privileged Access Management ohne ständige Berechtigungen arbeiten und eine Schutzebene für Sicherheitslücken bereitstellen, die aufgrund eines derartigen ständigen Administratorzugriffs entstehen. Für privilegierten Zugriff sind Genehmigungen zum Ausführen von Aufgaben erforderlich, für die eine zugewiesene Genehmigungsrichtlinie definiert wurde. Benutzer, die Aufgaben ausführen müssen, die in einer Genehmigungsrichtlinie enthalten sind, müssen Zugriff anfordern und diesen gewährt bekommen, um die erforderlichen Berechtigungen zum Ausführen der in der Richtlinie definierten Aufgaben zu erhalten.
 
-Weitere Informationen zum Aktivieren von Privileged Access Management in Office 365 finden Sie im Thema [Konfigurieren von Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Informationen zum Aktivieren der Verwaltung privilegierten Zugriffs finden Sie im Thema [configure privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) .
 
-Weitere Informationen finden Sie im Thema [Privileged Access Management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Weitere Informationen finden Sie im Thema [privilegierte Zugriffsverwaltung](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) .
 
 
 |||

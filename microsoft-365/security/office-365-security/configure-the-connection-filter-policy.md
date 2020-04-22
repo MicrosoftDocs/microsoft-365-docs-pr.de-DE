@@ -16,16 +16,16 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste mit vertrauenswürdigen IP-Adressen zu erstellen. Sie können auch eine IP-Sperrliste blockierter Absender erstellen.
-ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893998"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637746"
 ---
-# <a name="configure-connection-filtering-in-office-365"></a>Konfigurieren der Verbindungsfilterung in Office 365
+# <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
-Wenn Sie ein Office 365 Kunde mit Postfächern in Exchange Online oder einem Kunden mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um zu ermitteln gute oder falsche Quell-e-Mail-Server durch Ihre IP-Adressen. Die Hauptkomponenten der standardmäßigen Verbindungsfilter Richtlinie sind:
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um gute oder ungültige Quell-e-Mail-Server anhand ihrer IP-Adressen zu identifizieren. Die Hauptkomponenten der standardmäßigen Verbindungsfilter Richtlinie sind:
 
 - **IP-Zulassungsliste**: Überspringen der Spamfilterung für alle eingehenden Nachrichten von den Quell-e-Mail-Servern, die Sie über die IP-Adresse oder den IP-Adressbereich angeben. In Szenarien, in denen die Spamfilterung bei Nachrichten aus diesen Quellen möglicherweise weiterhin auftritt, lesen Sie die Szenarien, in [denen Nachrichten von Quellen in der Liste der zugelassenen IP-Adressen](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) weiter unten in diesem Thema gefiltert werden. Weitere Informationen dazu, wie die IP-Zulassungsliste in Ihre allgemeine Strategie für sichere Absender passt, finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
@@ -33,18 +33,18 @@ Wenn Sie ein Office 365 Kunde mit Postfächern in Exchange Online oder einem Kun
 
 - Liste **sicherer**Adressen: die Liste *sicherer* Adressen ist eine dynamische Zulassungsliste im Microsoft-Rechenzentrum, für die keine Kundenkonfiguration erforderlich ist. Microsoft identifiziert diese vertrauenswürdigen e-Mail-Quellen von Abonnements für verschiedene Drittanbieter Listen. Sie können die Verwendung der Liste sicherer Adressen aktivieren oder deaktivieren. Sie können die Quell-e-Mail-Server nicht in der Liste sicherer Adressen konfigurieren. Die Spam Filterung wird bei eingehenden Nachrichten von den e-Mail-Servern in der Liste sicherer Adressen übersprungen.
 
-In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter Richtlinie im Office 365 Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Office 365 Kunden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden). Weitere Informationen darüber, wie die Verbindungsfilterung in EoP verwendet wird, sind Teil der allgemeinen Antispam-Einstellungen in Ihrer Organisation, siehe [Anti-Spam Protection in Office 365](anti-spam-protection.md).
+In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter Richtlinie im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Kunden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden). Weitere Informationen darüber, wie die Verbindungsfilterung in EoP verwendet wird, sind Teil der allgemeinen Antispam-Einstellungen in Ihrer Organisation, siehe [Anti-Spam Protection](anti-spam-protection.md).
 
 > [!NOTE]
-> Die IP-Zulassungsliste, die Liste sicherer Adressen und die IP-Sperrliste sind ein Teil ihrer allgemeinen Strategie zum Zulassen oder Blockieren von e-Mails in Ihrer Organisation. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md) und [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md).
+> Die IP-Zulassungsliste, die Liste sicherer Adressen und die IP-Sperrliste sind ein Teil ihrer allgemeinen Strategie zum Zulassen oder Blockieren von e-Mails in Ihrer Organisation. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten](create-safe-sender-lists-in-office-365.md) und [Erstellen blockierter Absenderlisten](create-block-sender-lists-in-office-365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Antispameinstellungen** wechseln möchten, verwenden <https://protection.office.com/antispam>Sie.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen Exchange Online Schutz-PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um die standardmäßige Verbindungsfilter Richtlinie zu ändern. Für den schreibgeschützten Zugriff auf die standardmäßige Verbindungsfilter Richtlinie müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um die standardmäßige Verbindungsfilter Richtlinie zu ändern. Für den schreibgeschützten Zugriff auf die standardmäßige Verbindungsfilter Richtlinie müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Um die Quell-IP-Adressen der e-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Kopfzeilenfeld Connecting IP (**CIP**) im Nachrichtenkopf überprüfen. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen e-Mail-Clients finden Sie unter [View Internet Message Headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -176,9 +176,9 @@ Beispielsweise sendet der Quell-e-Mail-Server 192.168.1.25 e-Mails von den Domä
 
 Nachrichten von einem e-Mail-Server in Ihrer IP-Zulassungsliste unterliegenweiterhin Spamfilterung in den folgenden Szenarien:
 
-- Eine IP-Adresse in Ihrer IP-Zulassungsliste wird auch in einem lokalen, IP-basierten eingehenden Connector in *einem beliebigen* Mandanten in Office 365 (nennen wir diesen Mandanten a) **und** dem Mandanten a und dem EoP-Server, der zuerst die Nachricht Office 365 in der *gleichen* Active Directory Gesamtstruktur in den Microsoft-Rechenzentren findet, konfiguriert. In diesem Szenario wird **IPV: Cal** *is* zu den [Antispam-Nachrichtenkopf Zeilen](anti-spam-message-headers.md) der Nachricht hinzugefügt (womit die Nachricht umgangen wird Spamfilterung), aber die Nachricht ist weiterhin Gegenstand der Spamfilterung.
+- Eine IP-Adresse in Ihrer IP-Zulassungsliste wird auch in einem lokalen, IP-basierten eingehenden Connector in *einem beliebigen* Mandanten in Microsoft 365 (nennen wir diesen Mandanten a) **und** dem Mandanten a und dem EoP-Server, der zuerst auf die Nachricht stößt, in der *gleichen* Active Directory Gesamtstruktur in den Microsoft-Rechenzentren konfiguriert. In diesem Szenario wird **IPV: Cal** *is* zu den [Antispam-Nachrichtenkopf Zeilen](anti-spam-message-headers.md) der Nachricht hinzugefügt (womit die Nachricht umgangen wird Spamfilterung), aber die Nachricht ist weiterhin Gegenstand der Spamfilterung.
 
-- Ihr Mandant, der die Liste der zugelassenen IP-Adressen enthält, und der EoP-Server, der die Nachricht zuerst in Office 365 trifft, in denen sich beide in *unterschiedlichen* Active Directory Gesamtstrukturen in den Microsoft-Rechenzentren befinden. In diesem Szenario wird **IPV: Cal** *nicht* den Nachrichtenkopfzeilen hinzugefügt, sodass die Nachricht weiterhin der Spamfilterung unterliegt.
+- Ihr Mandant, der die Liste der zugelassenen IP-Adressen enthält, und der EoP-Server, der die Nachricht zuerst findet, befinden sich beide in *unterschiedlichen* Active Directory Gesamtstrukturen in den Microsoft-Rechenzentren. In diesem Szenario wird **IPV: Cal** *nicht* den Nachrichtenkopfzeilen hinzugefügt, sodass die Nachricht weiterhin der Spamfilterung unterliegt.
 
 Wenn beide Szenarien auftreten, können Sie eine e-Mail-Fluss Regel mit den folgenden Einstellungen (mindestens) erstellen, um sicherzustellen, dass Nachrichten von den problematischen IP-Adressen die Spamfilterung überspringen:
 
@@ -190,4 +190,4 @@ Wenn beide Szenarien auftreten, können Sie eine e-Mail-Fluss Regel mit den folg
 
 ||
 |:-----|
-|![Das Kurzsymbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?** Entdecken Sie die kostenlosen Videokurse für **Office 365-Administratoren und IT-Experten**, präsentiert von LinkedIn Learning.|
+|![Das kurze Symbol für LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie ﻿kostenlose Video Kurse für **Administratoren und IT-Experten**, die Ihnen von LinkedIn Learning angeboten werden.|

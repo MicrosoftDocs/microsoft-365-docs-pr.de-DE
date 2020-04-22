@@ -1,5 +1,5 @@
 ---
-title: Kampagnenansichten in Office 365 ATP
+title: Kampagnen Ansichten in ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637328"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637818"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Kampagnenansichten in Office 365 ATP
+# <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
 
-Kampagnenansichten ist ein Feature von Advanced Threat Protection (ATP) im Office 365 Security & Compliance Center, das Phishing-Angriffe im Dienst identifiziert und kategorisiert. Kampagnenansichten können Ihnen bei Folgendem helfen:
+Kampagnen Ansichten sind ein Feature in Advanced Threat Protection (ATP) im Security & Compliance Center, das Phishing-Angriffe im Dienst identifiziert und kategorisiert. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
 - Phishing-Angriffe effektiv untersuchen und darauf reagieren.
 
@@ -40,7 +40,7 @@ Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und v
 
 Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organisationen. E-Mail-Angriffe, die Anmeldeinformationen und Unternehmensdaten stehlen, sind eine große und lukrative Branche. Wenn Technologien sich anstrengen, um Angriffe zu stoppen, ändern Angreifer Ihre Methoden, um den weiteren Erfolg sicherzustellen.
 
-Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten für den gesamten Office 365 Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Zum Beispiel:
+Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Zum Beispiel:
 
 - **Angriffsquellen**: Quell-IP-Adressen und E-Mail-Domänen des Absenders.
 
@@ -52,7 +52,7 @@ Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoft
 
 Eine Kampagne kann von kurzer Dauer sein oder mehrere Tage, Wochen oder Monate mit aktiven und inaktiven Zeitspannen umfassen. Möglicherweise wird eine Kampagne für ihre jeweilige Organisation gestartet, oder Ihre Organisation kann Teil einer größeren Kampagne in mehreren Unternehmen sein.
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Kampagnenansichten im Office 365 Security & Compliance Center
+## <a name="campaign-views-the-security--compliance-center"></a>Kampagnen Ansichten das Security & Compliance Center
 
 Kampagnen Ansichten stehen im [Security & Compliance Center](https://protection.office.com) unter **Threat Management** \> **Campaigns**zur Verfügung.
 
@@ -131,7 +131,7 @@ Das Diagramm enthält die folgenden Informationen:
   |:-----|:-----|:-----|
   | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
   |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde vor der Auswertung durch Spamfilterung (beispielsweisedurch eine Nachrichtenfluss Regel) als Spam markiert.|
-  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde durch Spamfilterung als Spam gekennzeichnet.|
+  |**Erkannt**|`SFV:SPM`|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
   |**Veröffentlicht**|`SFV:SKQ`|Die Nachricht hat die Spamfilterung übersprungen, da Sie aus der Quarantäne freigegeben wurde.|
   |**Mandanten zulässig**<sup>\*</sup>|`SFV:SKA`|Die Nachricht hat die Spamfilterung aufgrund von Anti-Spam-Richtlinieneinstellungen übersprungen (beispielsweise war der Absender in der Liste Zugelassene Absender oder zugelassener Domänen).|

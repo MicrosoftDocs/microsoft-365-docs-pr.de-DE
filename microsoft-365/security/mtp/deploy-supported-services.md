@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633471"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -62,7 +62,7 @@ In der folgenden Tabelle ist aufgeführt, wie jeder unterstützte Dienst zusätz
 | Dienst | Daten (Signale & korrelierten Informationen) | Korrektur & Reaktionsbereich |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | -Endpunkt Zustände und Rohdaten Ereignisse<br />-Endpunkt Erkennungen und Warnungen, einschließlich Antivirus, EDR, Verringerung der Angriffsfläche<br />-Informationen zu Dateien und anderen Entitäten, die an Endpunkten beobachtet werden | Endpunkte |
-| Office 365 ATP | -Mail-und Postfachstatus und RAW-Ereignisse<br />-E-Mail-, Anlagen-und Link Erkennungen | -Postfächer<br />-Office 365 Konten |
+| Office 365 ATP | -Mail-und Postfachstatus und RAW-Ereignisse<br />-E-Mail-, Anlagen-und Link Erkennungen | -Postfächer<br />-Microsoft 365-Konten |
 | Azure ATP | -Active Directory Signale, einschließlich Authentifizierungsereignissen<br />-Identitätsbezogene Verhaltens Erkennungen | Identitäten |
 | Microsoft Cloud App Security | -Erkennung unsanktionierter Cloud-apps und-Dienste (Shadow IT)<br />-Belichtung von Daten an Cloud-apps<br />-Bedrohungsaktivität im Zusammenhang mit Cloud-apps | Cloud-Apps |
 

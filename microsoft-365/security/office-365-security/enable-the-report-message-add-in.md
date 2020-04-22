@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061737"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633299"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>Aktivieren des Add-Ins "Berichtsnachricht" in Office 365
+# <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Office 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Office 365 Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
+> Wenn Sie ein Administrator in einer Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
 
 Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet (früher bekannt als Outlook Web App) ermöglicht Benutzern das einfache Melden von falsch positiven Ergebnissen (gute e-Mail-Nachrichten als "schlecht" gekennzeichnet) oder von falschen negativen (ungültige e-Mail-Nachrichten) an Microsoft und seine Partner zur Analyse. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern.
 
@@ -38,16 +38,16 @@ Administratoren können das Add-in "Berichtsnachricht" für die Organisation akt
 
 Wenn Sie ein einzelner Benutzer sind, können Sie [das Add-in "Berichtsnachricht" für sich selbst aktivieren](#get-the-report-message-add-in-for-yourself).
 
-Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization). Das Add-in "Berichtsnachricht" ist jetzt über eine [zentralisierte Bereitstellung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)verfügbar.
+Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exchange für die Verwendung der OAuth-Authentifizierung konfiguriert ist, können Sie [das Add-in "Berichtsnachricht" für Ihre Organisation aktivieren](#get-and-enable-the-report-message-add-in-for-your-organization). Das Add-in "Berichtsnachricht" ist jetzt über eine [zentralisierte Bereitstellung](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)verfügbar.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Das Add-in "Berichtsnachricht" funktioniert mit den meisten Office 365-Abonnements und den folgenden Produkten:
+- Das Add-in "Berichtsnachricht" funktioniert mit den meisten Microsoft 365-Abonnements und den folgenden Produkten:
 
   - Outlook im Web
   - Outlook 2013 SP1 oder höher
   - Outlook 2016 für Mac
-  - Outlook im Lieferumfang von Office 365 ProPlus
+  - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
 
 - Das Add-in "Berichtsnachricht" steht derzeit nicht zur Verfügung für:
 
@@ -58,7 +58,7 @@ Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administ
 
 - Für organisatorische Installationen muss die Organisation für die Verwendung der OAuth-Authentifizierung konfiguriert werden. Weitere Informationen finden Sie unter [bestimmen, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Administratoren müssen Mitglied der Rollengruppe "globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Administratoren müssen Mitglied der Rollengruppe "globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Abrufen des Berichtsnachrichten-Add-Ins für sich selbst
 
@@ -70,7 +70,7 @@ Wenn Sie ein Office 365 globaler Administrator oder ein Exchange Online Administ
 
 3. Lesen Sie im daraufhin angezeigten Dialogfeld Nutzungsbedingungen und Datenschutzrichtlinie, und klicken Sie dann auf **weiter**.
 
-4. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto (für geschäftliche Zwecke) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.
+4. Melden Sie sich mit Ihrem Geschäfts-oder Schulkonto (für geschäftliche Zwecke) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.
 
 Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole angezeigt:
 

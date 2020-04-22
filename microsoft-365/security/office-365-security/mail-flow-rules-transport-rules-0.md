@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
-ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu handeln, die Ihre Organisation durchlaufen.
+ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081424"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635412"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
-Mithilfe von Nachrichtenflussregeln (auch bekannt als Transportregeln) können Sie Nachrichten, die über Ihre Office 365-Organisation fließen, identifizieren und Maßnahmen dafür ergreifen. Nachrichtenflussregeln sind mit den Posteingangsregeln vergleichbar, die in Outlook und Outlook im Web zur Verfügung stehen. Der Hauptunterschied besteht darin, dass Nachrichtenflussregeln Nachrichten während der Übertragung behandeln und nicht nach der Übermittlung der Nachricht an das Postfach. Nachrichtenflussregeln enthalten einen reichhaltigeren Satz an Bedingungen, Ausnahmen und Aktionen, sodass Sie über die Flexibilität verfügen, viele Arten von Nachrichtenrichtlinien zu implementieren.
+Sie können Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die Ihre Organisation durchlaufen. Nachrichtenflussregeln sind mit den Posteingangsregeln vergleichbar, die in Outlook und Outlook im Web zur Verfügung stehen. Der Hauptunterschied besteht darin, dass Nachrichtenflussregeln Nachrichten während der Übertragung behandeln und nicht nach der Übermittlung der Nachricht an das Postfach. Nachrichtenflussregeln enthalten einen reichhaltigeren Satz an Bedingungen, Ausnahmen und Aktionen, sodass Sie über die Flexibilität verfügen, viele Arten von Nachrichtenrichtlinien zu implementieren.
 
 In diesem Artikel werden die Komponenten von Nachrichtenflussregeln und deren Funktionsweise erläutert.
 
 Schritte zum Erstellen, kopieren und Verwalten von Nachrichtenfluss Regeln finden Sie unter [Manage Mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Bei jeder Regel haben Sie die Möglichkeit, sie zu erzwingen, sie zu testen oder sie zu testen und den Absender zu benachrichtigen. Weitere Informationen zu den Testoptionen finden Sie unter [Test Mail Flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
-Eine Zusammenfassung und ausführliche Berichte zu Nachrichten, die Nachrichtenflussregeln entsprechen, finden Sie unter [Verwenden von Berichten zum E-Mail-Schutz in Office 365, um Daten über Schadsoftware, Spam und Regelerkennung anzuzeigen](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+Eine Zusammenfassung und ausführliche Berichte zu Nachrichten, die Nachrichtenfluss Regeln entsprechen, finden Sie unter [Verwenden von e-Mail-Schutz Berichten zum Anzeigen von Daten über Schadsoftware, Spam und Regel Erkennungen](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
 
 Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von Nachrichtenflussregeln finden Sie in den folgenden Themen:
 

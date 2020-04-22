@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Ergebnisse einer automatisierten Untersuchung in Office 365
+title: Anzeigen der Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Während und nach einer automatisierten Untersuchung in Office 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Während und nach einer automatischen Untersuchung in Microsoft 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634628"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Office 365
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
 Wenn in [Office 365 Advanced Threat Protection](office-365-atp.md)eine [automatisierte Untersuchung](office-365-air.md) erfolgt, sind Details zu dieser Untersuchung während und nach dem automatisierten Ermittlungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen. 
 
@@ -46,7 +46,7 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Wechseln Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
@@ -66,9 +66,9 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Anzeigen von Details zu einer Warnung im Zusammenhang mit einer Untersuchung
 
-Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
+Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Microsoft 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Wechseln Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an. 
+1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an. 
 
 2. Wechseln Sie zu **Threat Management** > **Investigations**.
 
@@ -215,7 +215,7 @@ Sie können:
 
 |Analyzer | Beschreibung |
 |-----|-----|
-|Untersuchung der DLP-Verstöße |Untersuchen von von [Office 365 Verhinderung von Datenverlust](../../compliance/data-loss-prevention-policies.md) (DLP) festgestellten Verstößen |
+|Untersuchung der DLP-Verstöße |Untersuchen von Verletzungen, die durch [Datenverlust Verhinderung](../../compliance/data-loss-prevention-policies.md) (DLP) erkannt wurden |
 |Extraktion von e-Mail-Indikatoren |Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt einer e-Mail-Nachricht zur Untersuchung |
 |Datei Hash Zuverlässigkeit |Erkennen von Anomalien basierend auf Datei Hashes für Benutzer und Computer in Ihrer Organisation |
 |E-Mail-Cluster Identifikation |E-Mail-Clusteranalyse basierend auf Kopf, Text, Inhalt und URLs |

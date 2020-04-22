@@ -1,5 +1,5 @@
 ---
-title: Erhöhter Bedrohungsschutz für Microsoft 365 Business
+title: Erhöhter Bedrohungsschutz für Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Compliance-Features ein, um Datenverlust zu verhindern und um sicherzustellen, dass die vertraulichen Informationen Ihrer Kunden geschützt sind.
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635122"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
-Ihr Microsoft 365 Business verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen dabei, die vertraulichen Informationen Ihrer Kunden sicher zu halten.
+Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen dabei, die vertraulichen Informationen Ihrer Kunden sicher zu halten.
 
 ## <a name="set-up-dlp-features"></a>Einrichten von DLP-Features
 

@@ -1,5 +1,5 @@
 ---
-title: Angriffssimulator in Office 365 ATP
+title: Angriffs Simulator in ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Verwenden Sie den Angriffs Simulator, um simulierte Phishing-und Kennwortangriffe in Ihrer Office 365 E5-oder ATP-Plan 2-Organisation auszuführen, die Sie bei der Identifizierung von gefährdeten Benutzern unterstützenkann, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: Als globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637338"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638572"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Angriffssimulator in Office 365 ATP
+# <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
 
-Angriffs Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) können Sie realistische, aber simulierte Kampagnen für Phishing und Kennwortangriffe in Ihrer Organisation ausführen. Sie können die Ergebnisse von Kampagnen verwenden, um gefährdete Benutzer zu identifizieren und zu Schulen.
+**Zusammenfassung** Wenn Sie globaler Administrator oder Sicherheitsadministrator sind und Ihre Organisation Office 365 Advanced Threat Protection Plan 2, einschließlich der [Funktionen zur Ermittlung und Reaktion von Bedrohungen](office-365-ti.md), verwendet, können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Auf diese Weise können Sie Benutzer mit Sicherheitslücken leichter identifizieren und finden, bevor ein echter Angriff passiert. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Um das Office 365 Security & Compliance Center zu öffnen, gehen <https://protection.office.com/>Sie zu. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar.
+- Wechseln Sie zum Öffnen des Security & Compliance Centers <https://protection.office.com/>zu. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar.
 
   ![Threat Management – Angriffs Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Weitere Informationen zur Verfügbarkeit des Angriffs Simulators in verschiedenen Office 365-Abonnements finden Sie unter [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Weitere Informationen zur Verfügbarkeit des Angriffs Simulators in verschiedenen Microsoft 365-Abonnements finden Sie unter [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Ihr Konto muss für die mehrstufige Authentifizierung (MFA) konfiguriert sein, um Kampagnen im Angriffs Simulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
 
-- Sie können nur Phishing-oder Kennwortangriffe für Benutzer mit Postfächern in Exchange Online ausführen.
+Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, dass das Konto, mit dem Simulierte Angriffe ausgeführt werden, die mehrstufige Authentifizierung verwendet. Darüber hinaus müssen Sie ein globaler Administrator oder Sicherheitsadministrator sein. (Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
 - Bei Phishing-Kampagnen werden Ereignisse für 30 Tage gesammelt und verarbeitet. Die Daten der Verlaufs Kampagne werden bis zu 90 Tage nach dem Start der Kampagne zur Verfügung stehen.
 
@@ -49,11 +49,11 @@ Angriffs Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) 
 
 *Phishing* ist ein allgemeiner Begriff für e-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die anscheinend von legitimen oder vertrauenswürdigen Absendern sind. *Spear-Phishing* ist ein gezielter Phishing-Angriff, der sehr fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (normalerweise nach Aufklärung der Empfänger durch den Angreifer).
 
-Weitere Informationen zu Phishing und Spear-Phishing finden Sie unter [Phishing](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+- Sie sind globaler Administrator oder Sicherheitsadministrator
 
 In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen zur Verfügung:
 
-- **Spear Phishing (Credentials Harvest)**: der Angriff versucht, die Empfänger davon zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn Sie auf den Link klicken, werden Benutzer aufgefordert, Ihre Anmeldeinformationen einzugeben. Wenn dies der Fall ist, werden Sie an einen der folgenden Speicherorte geleitet:
+- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das globale Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
 
   - Eine Standardseite, auf der dies erläutert wurde, war nur ein Test und gibt Tipps zum Erkennen von Phishing-Nachrichten.
 

@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Hier erfahren Sie, wie Sie die Zahlungsmethode für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142597"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632731"
 ---
 # <a name="change-your-payment-method"></a>Ändern der Zahlungsmethode
 
@@ -64,9 +64,9 @@ Beim Kauf von Office 365 Business können Sie entscheiden, ob Sie per Kreditkart
 > [!NOTE]
 > Nachdem Sie die Zahlungsmethode geändert haben, behalten die Benutzer die gleichen Lizenzzuweisungen wie zuvor.
   
- **Sie möchten Ihre Zahlungshäufigkeit ändern?** Wenn Sie ändern möchten, wie häufig Sie für Ihr Abonnement bezahlen, entweder von Jahr zu Monat oder monatlich, müssen Sie [Office 365 Support aufrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
+ **Sie möchten Ihre Zahlungshäufigkeit ändern?** Wenn Sie ändern möchten, wie häufig Sie Ihr Abonnement bezahlen, entweder von Jahr zu Monat oder monatlich, müssen Sie den [Microsoft-Support anrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
   
- **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Lesen Sie [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Office 365 Business](add-update-or-remove-credit-card-or-bank-account.md).
+ **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Weitere Informationen finden Sie unter [hinzufügen, aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](add-update-or-remove-credit-card-or-bank-account.md).
   
  **Was passiert, wenn noch eine Saldoforderung existiert?**
   
@@ -87,6 +87,7 @@ Wenn Sie von einer *Kreditkarte oder einem Bankkonto zu einer Rechnung*wechseln,
   
 Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder einem Bankkonto wechseln, wird automatisch ein neues Abonnement für Sie erstellt, die Benutzer werden in das neue Abonnement übertragen und Ihr altes Abonnement deaktiviert. Keine Sorge, Ihre Benutzer sehen keine Unterbrechung des Diensts, und alle Ihre Informationen werden über das neue Abonnement zur Verfügung stehen.
 
+
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten**aus.
@@ -100,6 +101,7 @@ Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder ein
 6. Wenn Sie eine Zahlungsmethode hinzufügen, geben Sie die Karten-oder Kontodetails ein, und wählen Sie dann **Speichern**aus.
   
 7. Stellen Sie sicher, dass die ausgewählte Zahlungsmethode richtig ist, und wählen Sie dann **Speichern**aus.
+
 
 ::: moniker-end
 
@@ -140,6 +142,7 @@ Sie können die Zahlungs Rechnung nur dann ändern, wenn Ihre Bestellung über e
 
 Wenn Ihre Bestellmenge zu hoch ist, ist möglicherweise eine Bonitätsprüfung erforderlich. Wenn dies der Fall ist, sehen Sie die Meldung "nicht berechtigt, zu Rechnung zu wechseln. Ihre Bestellung erfordert eine Bonitätsprüfung. " In diesem Fall ändern Sie die Zahlung per Rechnung manuell. Führen Sie die folgenden Schritte aus, um die manuelle Änderung abzuschließen.
 
+
 1. Wechseln Sie zu <a href="https://Office365.com" target="_blank">Office365.com</a> , und kaufen Sie das gleiche Abonnement wie das, das Sie derzeit haben. Wählen Sie beim Auschecken die Option zur Zahlung per Rechnung aus.
 
 > [!IMPORTANT]
@@ -147,7 +150,7 @@ Wenn Ihre Bestellmenge zu hoch ist, ist möglicherweise eine Bonitätsprüfung e
 
 2. Kündigen Sie nach Abschluss des Kaufs das ursprüngliche Abonnement. Ihre Benutzer werden automatisch in das neue Abonnement verschoben.
 
-Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritte aus, um zu Zahlung per Rechnung zu wechseln.
+Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritte aus, um zu Zahlung per Rechnung zu wechseln. 
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
@@ -164,6 +167,7 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 7. Wenn Sie fertig sind, wählen Sie **Speichern**aus.
 
 8. Stellen Sie sicher, dass die ausgewählte Zahlungsmethode richtig ist, und wählen Sie dann **Speichern**aus.
+
 
 ::: moniker-end
 
@@ -193,9 +197,16 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 
 Sie können jederzeit die folgenden Schritte ausführen, um die Zahlungsmethode zu überprüfen, die für ein Abonnement konfiguriert wurde.
 
+
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
 
 2. Suchen Sie nach dem Abonnement, das Sie überprüfen möchten. Die Zahlungsmethode, die für das Abonnement konfiguriert ist, wird im Abschnitt **Abrechnung** angezeigt.
+
+### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Überprüfen der konfigurierten Zahlungsmethode mithilfe des alten admin Centers
+
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a> .
+
+2. Suchen Sie nach dem Abonnement, das Sie überprüfen möchten. Die Zahlungsmethode, die für das Abonnement konfiguriert ist, wird unter **Zahlungsmethode**angezeigt.
 
 ::: moniker-end
 

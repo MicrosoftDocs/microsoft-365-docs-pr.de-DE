@@ -1,5 +1,5 @@
 ---
-title: Antiphishingschutz in Office 365
+title: Anti-Phishing-Schutz in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,15 +16,15 @@ ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: Office 365 bietet standardmäßig eine Vielzahl von Schutz vor Phishing-Angriffen sowie zusätzliche Features in Office 365 Advanced Threat Protection (ATP). In diesem Thema werden die Online Ressourcen vorgestellt, die Sie verwenden können, um sich über die Anti-Phishing-Optionen und-Strategien in Office 365 zu informieren und diese zu implementieren.
-ms.openlocfilehash: 321d983f422bf4d231a772ca445bb74a7150a56e
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+description: Microsoft 365 bietet standardmäßig eine Vielzahl von Schutz vor Phishing-Angriffen sowie zusätzliche Features in Office 365 Advanced Threat Protection (ATP). In diesem Thema werden die Online Ressourcen vorgestellt, die Sie verwenden können, um sich mit Anti-Phishing-Optionen und-Strategien in Microsoft 365 vertraut zu machen und Sie zu implementieren.
+ms.openlocfilehash: fd1aaee221254c3899c15d22850e95378436a392
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537425"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634580"
 ---
-# <a name="anti-phishing-protection-in-office-365"></a>Antiphishingschutz in Office 365
+# <a name="anti-phishing-protection-in-microsoft-365"></a>Anti-Phishing-Schutz in Microsoft 365
 
 *Phishing* ein e-Mail-Angriff, der versucht, vertrauliche Informationen in Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern sind. Es gibt bestimmte Kategorien von Phishing. Zum Beispiel:
 
@@ -34,25 +34,25 @@ ms.locfileid: "43537425"
 
 - **Business e-Mail-Kompromiss (BEC)** verwendet gefälschte vertrauenswürdige Absender (Finanzmitarbeiter, Kunden, vertrauenswürdige Partner usw.), um den Empfänger dazu zu verleiten, Zahlungen zu genehmigen, Geld zu überweisen oder Kundendaten offenzulegen.
 
-- **Ransomware** , die Ihre Daten verschlüsselt und die Zahlung zur Entschlüsselung verlangt. fast immer beginnt in Phishing-Nachrichten. Der Schutz vor Phishing kann Ihnen nicht dabei helfen, verschlüsselte Dateien zu entschlüsseln, aber er kann bei der Erkennung der anfänglichen Phishing-Nachrichten helfen, die der Ransomware-Kampagne zugeordnet sind. Weitere Informationen zum Wiederherstellen nach einem Ransomware-Angriff finden Sie unter [Recover by a Ransomware Attack in Office 365](recover-from-ransomware.md).
+- **Ransomware** , die Ihre Daten verschlüsselt und die Zahlung zur Entschlüsselung verlangt. fast immer beginnt in Phishing-Nachrichten. Der Schutz vor Phishing kann Ihnen nicht dabei helfen, verschlüsselte Dateien zu entschlüsseln, aber er kann bei der Erkennung der anfänglichen Phishing-Nachrichten helfen, die der Ransomware-Kampagne zugeordnet sind. Weitere Informationen zum Wiederherstellen nach einem Ransomware-Angriff finden Sie unter [Recover by a Ransomware Attack in Microsoft 365](recover-from-ransomware.md).
 
-Aufgrund der wachsenden Komplexität von Angriffen ist es für geschulte Benutzer sogar schwierig, anspruchsvolle Phishing-Nachrichten zu identifizieren. Glücklicherweise können Exchange Online Protection (EoP) und die zusätzlichen Features in Office 365 Advanced Threat Protection (ATP) hilfreich sein.
+Aufgrund der wachsenden Komplexität von Angriffen ist es für geschulte Benutzer sogar schwierig, anspruchsvolle Phishing-Nachrichten zu identifizieren. Glücklicherweise können Exchange Online Protection (EoP) und die zusätzlichen Features in Microsoft 365 Advanced Threat Protection (ATP) hilfreich sein.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Anti-Phishing-Schutz in EoP
 
-EoP (Office 365 Organisationen ohne ATP) enthält Features, mit denen Ihre Organisation vor Phishing-Bedrohungen geschützt werden kann:
+EoP (Microsoft 365-Organisationen ohne ATP) enthält Features, mit denen Ihre Organisation vor Phishing-Bedrohungen geschützt werden kann:
 
-- **Spoof Intelligence**: Überprüfen gefälschter Nachrichten von Absendern in internen und externen Domänen und zulassen oder Blockieren dieser Absender. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - **Standard-Anti-Phishing-Richtlinie**: Aktivieren oder deaktivieren Sie Spoof Intelligence, aktivieren oder deaktivieren Sie die nicht authentifizierte Absender Identifikation in Outlook, und geben Sie die Aktion für blockierte gefälschte Absender an (in den Ordner "Junk-e-Mail" oder "Quarantäne" verschieben). Weitere Informationen finden Sie unter [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md).
 
-- **Implizite e-Mail-Authentifizierung**: EoP verbessert standardmäßige e-Mail-Authentifizierungsüberprüfungen für eingehende e-Mails ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderzuverlässigkeit, Absender Verlauf, Empfänger Verlauf, Verhaltensanalyse und anderen erweiterten Techniken zur Identifizierung gefälschter Absender. Weitere Informationen finden Sie unter [e-Mail-Authentifizierung in Office 365](email-validation-and-authentication.md).
+- **Implizite e-Mail-Authentifizierung**: EoP verbessert standardmäßige e-Mail-Authentifizierungsüberprüfungen für eingehende e-Mails ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderzuverlässigkeit, Absender Verlauf, Empfänger Verlauf, Verhaltensanalyse und anderen erweiterten Techniken zur Identifizierung gefälschter Absender. Weitere Informationen finden Sie unter [e-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Zusätzlicher Schutz gegen Phishing in Office 365 ATP
 
 Office 365 ATP enthält zusätzliche und erweiterte Features zum Schutz vor Phishing:
 
-- **Richtlinien für ATP-Anti-Phishing**: Erstellen neuer benutzerdefinierter Richtlinien, Konfigurieren von Einstellungen für antiidentitäts Wechsel (schützen von Benutzern und Domänen vor Identitätswechsel), Post Fachnachrichten Einstellungen und anpassbaren erweiterten Phishing-Schwellenwerten. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Office 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien finden Sie unter [Anti-Phishing Policies in Office 365](set-up-anti-phishing-policies.md).
+- **Richtlinien für ATP-Anti-Phishing**: Erstellen neuer benutzerdefinierter Richtlinien, Konfigurieren von Einstellungen für antiidentitäts Wechsel (schützen von Benutzern und Domänen vor Identitätswechsel), Post Fachnachrichten Einstellungen und anpassbaren erweiterten Phishing-Schwellenwerten. Weitere Informationen finden Sie unter [configure ATP Anti-Phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien finden Sie unter [Anti-Phishing Policies in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Kampagnen Ansichten**: Maschinelles Lernen und andere Heuristiken identifizieren und analysieren Nachrichten, die an koordinierten Phishing-Angriffen für den gesamten Dienst und Ihre Organisation beteiligt sind. Weitere Informationen finden Sie unter [Kampagnen Ansichten in Office 365 ATP](campaigns.md).
 
@@ -62,4 +62,4 @@ Office 365 ATP enthält zusätzliche und erweiterte Features zum Schutz vor Phis
 
 - Für Endbenutzer: [schützen Sie sich vor Phishing-Schemas und anderen Formen von Onlinebetrug](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
 
-- [Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern](how-office-365-validates-the-from-address.md).
+- [Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern](how-office-365-validates-the-from-address.md).

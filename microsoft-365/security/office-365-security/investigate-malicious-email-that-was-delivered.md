@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955615"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634134"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen und beheben schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -34,24 +34,24 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
 - Ihre Organisation verfügt über [Office 365 erweiterte Bedrohungsschutz](office-365-atp.md) und [Lizenzen werden Benutzern zugewiesen](../../admin/manage/assign-licenses-to-users.md).
     
-- [Office 365 Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
+- die [Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
 - Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Anti-Phishing-Maßnahmen und so weiter definiert sind. Weitere Informationen finden Sie unter [Protect Against Threats in Office 365](protect-against-threats.md).
     
-- Sie sind ein Office 365 globaler Administrator oder haben dem Security &amp; Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen. Siehe [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein. 
+- Sie sind globaler Administrator oder haben im Security &amp; Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen. Weitere Informationen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein. 
 
 #### <a name="preview-role-permissions"></a>Vorschau der Rollen Berechtigungen
 
-Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von e-Mail-Nachrichteninhalten, müssen Sie eine neue Rolle mit dem Namen *Preview* haben, die einer anderen geeigneten Office 365 Rollengruppe hinzugefügt wird. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
+Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von e-Mail-Nachrichteninhalten, müssen Sie eine neue Rolle namens " *Preview* " zu einer anderen entsprechenden Rollengruppe hinzufügen. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
 
 |Aktivität  |Rollengruppe |Vorschau-Rolle erforderlich?  |
 |---------|---------|---------|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter     | Nein   |
-|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.    |Globaler Office 365-Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter   |       Nein  |
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Office 365-Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau   |   Ja      |
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |Globaler Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter     | Nein   |
+|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.    |Globaler Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter   |       Nein  |
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau   |   Ja      |
 
 > [!NOTE]
-> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der Office 365 globalen Administrator Rolle wird das Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der globalen Administrator Rolle wird das Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Security & Compliance Center zugewiesen ([https://protection.office.com](https://protection.office.com)). Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und löschen verdächtiger e-Mails, die zugestellt wurden
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filterdienst Microsoft Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:'
-ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893682"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636252"
 ---
 # <a name="eop-general-faq"></a>EOP – Allgemeine häufig gestellte Fragen
 
@@ -51,19 +51,19 @@ A. EOP wird auf Benutzerbasis lizenziert. Die aktuellen Preisinformationen finde
 
 A. Wenn Sie den MX-Eintrag gemäß den Anweisungen unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md) ändern, werden E-Mails sofort beim Durchlaufen von EOP gefiltert. Die Übertragung des MX-Eintrags über DNS kann 24 bis 48 Stunden dauern. Die Schutzeinstellungen in der Exchange-Verwaltungskonsole (EAC) können während dieses Vorgangs jederzeit angepasst werden.
 
-**F. Benötige ich alle Funktionen von Microsoft Office 365, um EOP verwenden zu können? Was ist, wenn ich nur den EOP-Schutz nutzen möchte und sonst nichts?**
+**F. muss ich alle Features von Microsoft 365 für die Verwendung von EoP verwenden? Was kann ich tun, wenn ich nur EoP Schutz möchte?**
 
-A. Sie können EOP zum Schutz lokaler Postfächer nutzen, ohne andere Funktionen von Office 365 zu verwenden. Dies wird als "eigenständiges Abonnement" bezeichnet. Eine Liste der EOP-Features finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+A: Sie können EoP verwenden, um Ihre lokalen Postfächer zu schützen, ohne andere Features von Microsoft 365 zu verwenden. Dies wird als "eigenständiges Abonnement" bezeichnet. Eine Liste der EOP-Features finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-**F. Weshalb benötige ich einen Office 365-Mandanten, wenn ich mich für die E-Mail-Filterung über EOP anmelde?**
+**F. Warum benötige ich einen Microsoft 365-Mandanten bei der Anmeldung zur e-Mail-Filterung über EoP?**
 
-A. Office 365 ist der Name einer Kollektion von Produkten und Dienstleistungen, auf die über einen Office 365-Mandanten zugegriffen werden kann. Sie sollten den Office 365-Mandanten als Ausgangspunkt betrachten, zu dem Sie Lizenzen für die E-Mail-Filterung hinzufügen können.
+A: Microsoft 365 ist der Name für eine Sammlung von Produkten und Diensten, auf die über einen Microsoft 365-Mandanten zugegriffen werden kann. Stellen Sie sich den Microsoft 365-Mandanten als Ausgangspunkt für das Hinzufügen von Lizenzen für die e-Mail-Filterung vor.
 
 **F. Verfügt EOP über ein Kommunikationsportal, auf dem ich Informationen über bekannte Probleme und die zu erwartenden Lösungen abrufen kann? Wie verhält es sich mit neuen Funktionen?**
 
 A. Das Microsoft 365 Admin Center enthält einige dieser Informationen. Wenn Sie von einem Ereignis auf Dienstebene betroffen sind, sollte eine Kommunikations Warnung (in der Regel von einem Glockensymbol begleitet) angezeigt werden, nachdem Sie sich beim Microsoft 365 Admin Center angemeldet haben. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
 
-Was neue EOP-Funktionen angeht, ist die [Office 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) eine gute Ressource für Informationen zu bevorstehenden neuen Funktionen. Außerdem werden Blog Artikel zu neuen Features auf der Website [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) veröffentlicht.
+In Bezug auf neue EoP-Funktionen ist die [Roadmap von Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) eine gute Ressource, um Informationen zu neuen Features zu finden. Außerdem werden Blog Artikel zu neuen Features auf der Website [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) veröffentlicht.
 
 **F. Funktioniert der Dienst mit älteren Exchange-Versionen (z. B. Exchange Server 2010) und in Umgebungen, die nicht auf Exchange basieren?**
 
@@ -75,7 +75,7 @@ A. Die Größe spielt keine Rolle. Das EOP-Netzwerk bietet für das Wachstum Ihr
 
 **Welche Berechtigungen müssen für EOP eingerichtet werden?**
 
-Zum Konfigurieren von EOP (Exchange Online Protection) müssen Sie globaler Office 365-Administrator oder Exchange-Unternehmensadministrator (Rollengruppe "Organisationsverwaltung") sein.
+Um EoP zu konfigurieren, müssen Sie ein globaler Administrator oder ein Exchange-Unternehmens Administrator (die Rollengruppe "Organisationsverwaltung") sein.
 
 **F. Woher weiß ich, ob meine Daten und persönlichen Informationen sicher sind?**
 

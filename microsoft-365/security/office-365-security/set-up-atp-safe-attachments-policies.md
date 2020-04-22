@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails.
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608102"
+ms.locfileid: "43638344"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -43,29 +43,28 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
 - Stellen Sie sicher, dass Ihre Organisation über [Office 365 Advanced Threat Protection](office-365-atp.md)verfügt.
 
-- Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), müssen Sie entweder eine Exchange Online Organisations Verwaltungsrolle zugewiesen sein (Office 365 globaler Administrator ist standardmäßig dieser Rolle zugewiesen) oder sowohl Exchange Online Hygiene Management-als auch Sicherheits Administrator Rollen. Weitere Informationen finden Sie in der folgenden Tabelle:
+- Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), müssen Sie entweder eine Exchange Online Organisations Verwaltungsrolle (globaler Administrator ist dieser Rolle standardmäßig zugewiesen) oder beide Rollen Exchange Online Verwaltung von Hygiene-und Sicherheitsadministratoren zugewiesen sein. Weitere Informationen finden Sie in der folgenden Tabelle:
 
-  |||
-  |---|---|
-  |**Rolle**|**Wo/wie zugewiesen**|
-  |Globaler Office 365-Administrator |Die Person, die sich zum Kauf Office 365 registriert, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
+  |Rolle|Wo/wie zugewiesen|
+  |---------|---------|
+  |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - [Erfahren Sie mehr über die Richtlinienoptionen für ATP-sichere Anlagen](#step-3-learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, beispielsweise die Optionen "Monitor" oder "ersetzen", können zu einer geringfügigen Verzögerung von e-Mails führen, während Anlagen gescannt werden. Um Verzögerungen bei der Nachrichtenübermittlung zu vermeiden, sollten Sie die [dynamische Zustellung und Vorschau](dynamic-delivery-and-previewing.md)verwenden.
 
-- Erlauben Sie bis zu 30 Minuten, bis Ihre neue oder aktualisierte Richtlinie auf alle Office 365-Rechenzentren verteilt ist.
+- Erlauben Sie bis zu 30 Minuten, bis Ihre neue oder aktualisierte Richtlinie auf alle Microsoft 365-Rechenzentren verteilt ist.
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: einrichten (oder bearbeiten) einer Richtlinie für ATP-sichere Anlagen
 
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinien** \> für **sichere Anlagen**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinien** \> für **sichere Anlagen**aus.
 
-3. Wenn Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**sehen, sollten Sie diese Option auswählen. Dadurch wird [Office 365 Advanced Threat Protection für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) für Ihre Office 365 Umgebung aktiviert.
+3. Wenn Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**sehen, sollten Sie diese Option auswählen. Dadurch wird [Office 365 Advanced Threat Protection für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) für Ihre Microsoft 365-Umgebung aktiviert.
 
 4. Wählen Sie **neu** (die Schaltfläche neu ähnelt einem Pluszeichen **+**()), um mit dem Erstellen Ihrer Richtlinie zu beginnen.
 
@@ -77,13 +76,13 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
    - Wählen Sie im Abschnitt Antwort die Option **dynamische Zustellung** aus. ([Weitere Informationen zur dynamischen Zustellung und zur Vorschau mit ATP-sicheren Anlagen](dynamic-delivery-and-previewing.md).)
 
-   - Wählen Sie im Abschnitt **Umleitungs Anlage** die Option zum Aktivieren der Umleitung aus, und geben Sie die e-Mail-Adresse des Office 365 globalen Administrators, des Sicherheitsadministrators oder des Sicherheitsanalysten ein, der böswillige Anlagen untersuchen soll.
+   - Wählen Sie im Abschnitt **Umleitungs Anlage** die Option zum Aktivieren der Umleitung aus, und geben Sie die e-Mail-Adresse des globalen Administrators, des Sicherheitsadministrators oder des Sicherheitsanalysten ein, der böswillige Anlagen untersuchen soll.
 
    - Wählen Sie im Abschnitt **angewendet für** **die Option Empfängerdomäne**aus, und wählen Sie dann Ihre Domäne aus. Klicken Sie auf **Hinzufügen**, und wählen Sie dann **OK**aus.
 
 6. Wählen Sie **Speichern** aus.
 
-Sie sollten mehrere ATP-Richtlinien für sichere Anlagen für Ihre Organisation einrichten. Diese Richtlinien werden in der Reihenfolge angewendet, in der Sie auf der Seite **ATP-sichere Anlagen** aufgeführt sind. Nachdem eine Richtlinie definiert oder bearbeitet wurde, müssen Sie mindestens 30 Minuten in Anspruch nehmen, damit die Richtlinien in Microsoft-Rechenzentren wirksam werden.
+Sie sollten mehrere ATP-Richtlinien für sichere Anlagen für Ihre Organisation einrichten. Diese Richtlinien werden in der Reihenfolge angewendet, in der Sie auf der Seite **ATP-sichere Anlagen** aufgeführt sind. Nachdem eine Richtlinie definiert oder bearbeitet wurde, müssen Sie mindestens 30 Minuten in Anspruch nehmen, damit die Policen in Microsoft-Rechenzentren wirksam werden.
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Schritt 3: Informationen zu Richtlinienoptionen für ATP-sichere Anlagen
 

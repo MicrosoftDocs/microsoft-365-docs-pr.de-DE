@@ -1,5 +1,5 @@
 ---
-title: Automatische Untersuchung und Reaktion (Air) in Office 365
+title: Automatische Untersuchung und Reaktion (Air)
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air
-ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826349"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634544"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
+# <a name="automated-investigation-and-response-air"></a>Automatische Untersuchung und Reaktion (Air)
 
 Der Plan 2 von [Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie die Zeit und den Aufwand Ihres Sicherheits Betriebs in Ihrem Team sparen können. Office 365 Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
 
@@ -69,7 +69,7 @@ Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitst
 
 Office 365 Air-Funktionen sind in [Office 365 Advanced Threat Protection-Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)enthalten. Ihre [Office 365 ATP-Richtlinien sollten jedoch so konfiguriert werden](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) , dass die Luft wie erwartet funktioniert. Stellen Sie außerdem sicher, dass Sie die [Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)Ihrer Organisation überprüfen und möglicherweise konfigurieren. 
 
-Office 365 enthält zahlreiche integrierte Warnungsrichtlinien, die die Identifizierung von Exchange-Administratorberechtigungen, Malwareaktivitäten, potenziellen externen und internen Bedrohungen sowie Risiken bei der Informationssteuerung ermöglichen. Mehrere der [standardmäßigen Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) können automatisierte Untersuchungen auslösen. Hierzu gehören:
+Microsoft 365 bietet zahlreiche integrierte Warnungsrichtlinien, die die Identifizierung von Exchange-Administratorberechtigungen, Malwareaktivitäten, potenziellen externen und internen Bedrohungen sowie Risiken bei der Informationssteuerung ermöglichen. Mehrere der [standardmäßigen Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) können automatisierte Untersuchungen auslösen. Hierzu gehören:
 
 - Es wurde ein potenziell böswilliger URL-Klick erkannt
 
@@ -91,8 +91,8 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 
 |Aufgabe |Erforderliche Rolle (n) |
 |--|--|
-|So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
-|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Compliance Center von Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) zugewiesen ist:<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suche und Bereinigung (diese Rolle wird nur im [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
+|So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
+|So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

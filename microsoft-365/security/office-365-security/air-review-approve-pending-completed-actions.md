@@ -1,5 +1,5 @@
 ---
-title: Überprüfen und genehmigen ausstehender Korrekturaktionen in Office 365 automatisierten Untersuchung und Antwort
+title: Überprüfen und genehmigen ausstehender Korrekturaktionen in automatisierter Untersuchung und Antwort
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: d2b617e29fc36d1f39ab6c9ef6f708d5f608b206
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826445"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634640"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365
 

@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153892"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631525"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5: Verwaltung mobiler Geräte für Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ In dieser Phase registrieren Sie Ihre Geräte in InTune und erstellen und erzwin
 
 ## <a name="step-1-plan-for-your-scenario"></a>Schritt 1: Planen des Szenarios
 
-Einer der Hauptgründe für die Verwaltung mobiler Geräte ist die Sicherung und der Schutz der Ressourcen Ihrer Organisation. [Häufige Verwendungsweisen von Microsoft InTune](https://docs.microsoft.com/intune/common-scenarios) sind einige Beispiele aus der realen Welt, einschließlich der Sicherung Office 365 e-Mails und Daten.
+Einer der Hauptgründe für die Verwaltung mobiler Geräte ist die Sicherung und der Schutz der Ressourcen Ihrer Organisation. [Häufige Verwendungsweisen von Microsoft InTune](https://docs.microsoft.com/intune/common-scenarios) sind einige Beispiele aus der realen Welt, einschließlich der Sicherung von Microsoft-e-Mails und-Daten.
 
 InTune bietet Ihnen Optionen zum Verwalten des Zugriffs auf Ihre Organisation mithilfe von MDM (Mobile Device Management) oder MAM (Mobile Application Management). MDM ist, wenn Benutzer ihre Geräte in InTune "registrieren". Sobald die Registrierung erfolgt ist, handelt es sich um verwaltete Geräte und kann alle Richtlinien, Regeln und Einstellungen empfangen, die von Ihrer Organisation verwendet werden. Beispielsweise können Sie bestimmte apps installieren, eine Kennwortrichtlinie erstellen, eine VPN-Verbindung installieren und vieles mehr.
 
@@ -47,7 +47,7 @@ Darüber hinaus bestimmen Sie, wie Sie persönliche oder organisationseigene Ger
 Als nächstes erhalten Sie Ihre Voraussetzungen basierend auf Ihren Anforderungen und Szenarien, die im vorherigen Schritt erstellt wurden. [Implementieren Ihres Plans](https://docs.microsoft.com/intune/planning-guide-onboarding) listet alle Anforderungen auf. Hier sind die wichtigen Elemente, die Sie für InTune mit Microsoft 365 benötigen:
 
 - **InTune-Abonnement**: im Lieferumfang von Microsoft 365 enthalten und erhalten Sie Zugriff auf Microsoft InTune im [Azure-Portal](https://portal.azure.com)
-- **Office 365 Abonnement**: in Microsoft 365 enthalten und wird für Office-Apps einschließlich e-Mail verwendet
+- **Microsoft 365-Abonnement**: im Lieferumfang von Microsoft 365 enthalten und wird für Office-Apps einschließlich e-Mail verwendet
 - **Azure Active Directory (Azure AD) Premium**: in Microsoft 365 enthalten und wird zum Erstellen von Benutzer-oder Sicherheitsgruppen verwendet. Diese Gruppen erhalten von Ihnen erstellte InTune-Richtlinien, beispielsweise das Erzwingen einer Kennwortlänge zum Entsperren eines Geräts. Die Gruppen, die Sie in [Phase 2: Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) erstellen, können verwendet werden.
 
 Es gibt möglicherweise einige zusätzliche Anforderungen, je nach den Anforderungen Ihrer Organisation. Wenn Sie beispielsweise IOS-Geräte verwalten, benötigen Sie ein Apple MDM Push-Zertifikat. Wenn Sie lokale Exchange-Umgebung verwenden, benötigen Sie den lokalen Exchange Connector. Diese zusätzlichen Anforderungen werden beschrieben, wenn Sie zu diesen Schritten gelangen.

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei easyDNS für Office 365
+title: Erstellen von DNS-Einträgen bei easyDNS für Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter easyDNS für Office 365 einrichten.
-ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter easyDNS für Microsoft einrichten.
+ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210552"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631357"
 ---
-# <a name="create-dns-records-at-easydns-for-office-365"></a>Erstellen von DNS-Einträgen bei easyDNS für Office 365
+# <a name="create-dns-records-at-easydns-for-microsoft"></a>Erstellen von DNS-Einträgen bei easyDNS für Microsoft
 
 [] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md) , wenn Sie nicht finden, wonach Sie suchen. 
   
-Sie müssen alle folgenden DNS-Einträge auf der Website Ihrer Registrierungsstelle hinzufügen, um e-Mails an Office 365 weiterzuleiten, Ihre Domäne für Teams und Skype for Business zu verwenden usw.
+Sie müssen alle folgenden DNS-Einträge auf der Website Ihrer Registrierungsstelle hinzufügen, um e-Mails an Microsoft weiterzuleiten, Ihre Domäne für Teams und Skype for Business zu verwenden usw.
   
-Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfügbar. Möglicherweise müssen Sie ein Upgrade auf ein höheres Service Level mit easyDNS durchführen, um SRV-Einträge hinzuzufügen, die für Office 365 Skype for Business erforderlich sind.
+Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfügbar. Möglicherweise müssen Sie ein Upgrade auf ein höheres Service Level mit easyDNS durchführen, um SRV-Einträge hinzuzufügen, die für Skype for Business erforderlich sind.
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Überprüfen, ob Sie die Domäne mit einem TXT-Eintrag besitzen
 
@@ -52,9 +52,9 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
     
-7. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag über das Internet verbreitet und von Office 365 erkannt wird.
+7. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag über das Internet verbreitet und von Microsoft erkannt werden kann.
     
-8. Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Office 365 zurück und fordern Office 365 auf, nach dem Eintrag zu suchen.
+8. Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern den Eintrag an.
     
 9. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -64,7 +64,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 12. Wählen Sie auf der Seite **Domäne überprüfen** die Option **Überprüfen** aus. 
     
-## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Hinzufügen eines MX-Eintrags zum Weiterleiten von e-Mails an Office 365
+## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Hinzufügen eines MX-Eintrags zum Weiterleiten von e-Mail an Microsoft
 
 1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
@@ -125,7 +125,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Hinzufügen der für Office 365 erforderlichen zwei SRV-Einträge
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
 
 Hinweis: SRV-Einträge sind derzeit unter easyDNS ' Domain plus Service Level nicht verfügbar. Möglicherweise müssen Sie ein Upgrade auf ein höheres Service Level mit easyDNS durchführen, um SRV-Einträge hinzuzufügen. 
   

@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Steuerung des Werts von Exchange Online in Microsoft 365 Enterprise innerhalb Ihrer Organisation.
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453861"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634146"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Bereitstellen von Exchange Online für Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ Exchange Online bietet außerdem erweiterte Sicherheitsfunktionen, einschließli
 
 Wenn Sie über keinerlei Erfahrung mit Exchange Online verfügen, finden Sie unter [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online) weitere Informationen.
 
-Die folgenden Phasen und Schritte führen Sie durch den Prozess der Vorstellung der Rolle von Exchange Online in Ihrer Organisation, der Onboarding Ihrer Organisation zur Exchange Online durch eine Reihe von progressiven Rollouts und die Verwendung von Exchange Online und deren Wert für die Endbenutzer.
+Die folgenden Phasen und Schritte führen Sie durch den Prozess der Vorstellung der Rolle von Exchange Online in Ihrer Organisation, der Onboarding Ihrer Organisation, um durch eine Reihe von progressiven Rollouts zu Exchange Online, und die Verwendung von Exchange Online und deren Wert für Ihre Endbenutzer zu steuern.
 
 >[!Note]
 >Diese Bereitstellungsanweisungen sollten nur befolgt werden, nachdem Sie [Phase 2-Identität der Microsoft 365 Enterprise Foundation-Infrastruktur](identity-infrastructure.md)abgeschlossen haben.
@@ -75,7 +75,7 @@ Verwenden Sie diese Ressourcen, um sich auf die technischen Aspekte eines Exchan
 
 - [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Migrieren von Exchange Server öffentlichen Ordnern zu Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [Migrieren von Exchange Server öffentlichen Ordnern zu Office 365 Gruppen](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [Migrieren von Exchange Server öffentlichen Ordnern zu Microsoft 365-Gruppen](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Zusammenarbeit in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Empfänger in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -84,7 +84,7 @@ Lesen Sie die folgenden Ressourcen, um ein besseres Verständnis der Sicherheit 
 
 - [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - [Sicherheit und Compliance für Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance) 
-- [Antispam- und Antischadsoftwareschutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+- [Schutz vor Spam und Schadsoftware](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 Verwenden Sie als nächstes die folgenden Ressourcen, um Exchange Online Postfachverwaltung zu verstehen:
 
@@ -155,8 +155,8 @@ Nachdem Sie Exchange Online für Ihre gesamte Organisation bereitstellen, müsse
 
 Nachfolgend finden Sie einige Vorschläge:
 
-- Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie in [Erfolgsfaktoren für Office 365](https://aka.ms/successfactors). 
-- Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
+- Informationen zu allgemeinen bewährten Methoden für die Einführung von Cloud-Diensten finden Sie unter [success factors for Microsoft 365](https://aka.ms/successfactors) . 
+- Lesen Sie [Microsoft 365-Berichte im Admin Center](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) , um die Dienstnutzung in Ihrer Organisation zu verstehen. Wenn Sie kein globaler Administrator für Ihre Organisation sind, bitten Sie eine Person, die ein globaler Administrator ist, dem Benutzerkonto Berichte Leserberechtigungen zu erteilen, damit Sie auf Aktivitätsberichte zugreifen können.
 - Überwachen Sie Ihren Feedback-Veranstaltungsort (ein öffentlicher Kanal in einem Team für zentrale Teams oder ein jammern) auf Probleme und Feedback von Einzelpersonen über ihre Erfahrungen mit Exchange Online. Behandeln Sie Fragen und Probleme so schnell wie möglich, um eine frustrierende Erfahrung für Einzelpersonen zu verhindern und Unterstützung für den Rollout zu demonstrieren.
 - Identifizieren und pflegen Sie Champions in jeder Unternehmensgruppe, und heben Sie die bewährten Methoden mithilfe von Outlook hervor. Zeigen Sie der Organisation ihre Erfolge, um den Erfolg und die Akzeptanz des Projekts zu zeigen. Die Befürwortung durch technische Führungskräfte innerhalb einer Unternehmensgruppe kann einen starken Einfluss auf Führungskräfte und Kollegen ausüben.
 

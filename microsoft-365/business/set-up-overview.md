@@ -25,17 +25,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
-ms.openlocfilehash: 9bb536b52981966f6c4c487f8400577b896261e0
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business Premium, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
+ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561188"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633353"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
-Sehen Sie sich ein kurzes Video über Microsoft 365 Business Setup an.<br><br>
+Sehen Sie sich ein kurzes Video über das Microsoft 365 Business Premium-Setup an.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
@@ -66,18 +66,18 @@ Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber 
 
 Informationen zu den ersten Schritten finden Sie unter [Erweitern des Bedrohungsschutzes](increase-threat-protection.md) und [Einrichten von Kompatibilitätsfeatures](set-up-compliance.md).
 
-Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
+Eine Übersicht über die besten Sicherheitsmethoden finden Sie auch unter [Top 10 Ways to Secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) .
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Schritt 3: Einrichten und Verwalten von Windows 10-Geräten
 
 Nachdem Sie den Assistenten für die Einrichtung ausgeführt haben, sollten Sie alle Windwos 10-Computer in Ihrer Organisation proctect.
   
-- Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Windows 10 pro ist eine [Voraussetzung](pre-requisites-for-data-protection.md) für Microsoft 365 Business Premium, aber wenn Sie Windows 7 pro, Windows 8 pro oder Windows 8.1 pro haben, berechtigen Sie Ihr Abonnement zu einem [Upgrade auf Windows 10 pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Führen Sie die Schritte unter [Secure Windows 10 PCs](secure-win-10-pcs.md) aus, um Richtlinien für Windows 10-Geräte einzurichten.
 
-Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien, die Sie für Windows 10-Computer festgelegt haben, auf diese angewendet. Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365 Business-Benutzer](set-up-windows-devices.md).
+Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien, die Sie für Windows 10-Computer festgelegt haben, auf diese angewendet. Weitere Informationen finden Sie unter [Einrichten von Windows-Geräten für Microsoft 365-Benutzer](set-up-windows-devices.md).
 
-## <a name="step-4-install-office-365-business"></a>Schritt 4: Installieren von Office 365 Business
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Schritt 4: Installieren von Microsoft 365 apps for Business
 - Sie können Office auf den Windows-Geräten automatisch mithilfe des [Setup-Assistenten](set-up.md#deploy-office-365-client-apps)installieren.
 - Benutzer können [Office-Apps](https://docs.microsoft.com/office365/admin/setup/install-applications) für Windows und Geräte installieren.
      
@@ -88,10 +88,10 @@ Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien,
 
 - **Zugriff auf lokale Ressourcen**
 
-     - Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern. Führen Sie die Schritte unter [enable Domain-Joined Windows 10 Devices to manage by Microsoft 365 Business](manage-windows-devices.md) aus, um diesen einzurichten. Dies ist die bevorzugte Methode, und Geräte in diesem Zustand werden als Hybrid Azure AD verbundene Geräte bezeichnet.
+     - Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business Premium zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern. Führen Sie die Schritte unter [enable Domain-Joined Windows 10 Devices to manage by Microsoft 365 Business Premium](manage-windows-devices.md) aus, um diesen einzurichten. Dies ist die bevorzugte Methode, und Geräte in diesem Zustand werden als Hybrid Azure AD verbundene Geräte bezeichnet.
 
-    - Wenn Ihr Unternehmen über ein lokales Active Directory verfügt, das einige lokale Ressourcen enthält (beispielsweise Dateifreigaben und Drucker), können Sie Ihren Azure AD-verbundenen Geräten Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business](access-resources.md).
+    - Wenn Ihr Unternehmen über ein lokales Active Directory verfügt, das einige lokale Ressourcen enthält (beispielsweise Dateifreigaben und Drucker), können Sie Ihren Azure AD-verbundenen Geräten Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 Business Premium](access-resources.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

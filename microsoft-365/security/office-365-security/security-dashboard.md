@@ -1,5 +1,5 @@
 ---
-title: Übersicht über das Sicherheits Dashboard
+title: Übersicht über das Sicherheitsdashboard
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um Office 365 Bedrohungsschutz Status zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537401"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632517"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
@@ -33,12 +33,12 @@ Sehen Sie sich das Video an, um einen Überblick zu erhalten, und lesen Sie dies
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-Je nachdem, was das Office 365 Abonnement Ihrer Organisation umfasst, enthält das Sicherheits Dashboard verschiedene Widgets wie die Zusammenfassung der Bedrohungs Verwaltung, den Status des Bedrohungsschutzes, globale wöchentliche Bedrohungserkennungen, Schadsoftware und vieles mehr, wie in den folgenden Abschnitten beschrieben.
+Je nachdem, was das Abonnement Ihrer Organisation umfasst, enthält das Sicherheits Dashboard verschiedene Widgets, wie die in den folgenden Abschnitten beschriebene Zusammenfassung der Bedrohungs Verwaltung, Bedrohungsschutz Status, globale wöchentliche Bedrohungserkennungen, Schadsoftware und vieles mehr.
 
-Wechseln Sie zum Anzeigen des Sicherheits Dashboards im [Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md)zu **Threat Management** \> **Dashboard**.
+Um das Sicherheits Dashboard anzuzeigen, wechseln Sie im [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md)zu **Threat Management** \> **Dashboard**.
 
 > [!NOTE]
-> Sie müssen ein Office 365 globaler Administrator, ein Sicherheitsadministrator oder ein Sicherheits Leser sein, um das Sicherheits Dashboard anzuzeigen. Einige Widgets erfordern zusätzliche Berechtigungen zur Anzeige. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Sie müssen ein globaler Administrator, ein Sicherheitsadministrator oder ein Sicherheits Leser sein, um das Sicherheits Dashboard anzuzeigen. Einige Widgets erfordern zusätzliche Berechtigungen zur Anzeige. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="threat-management-summary"></a>Threat Management-Zusammenfassung
 
@@ -61,7 +61,7 @@ Das Threat Protection-Status-Widget zeigt die Effektivität des Bedrohungsschutz
 
 ![Widget "Bedrohungsschutz Status"](../../media/tpswidget.png)
 
-Die Details hängen davon ab, ob Ihr Office 365 Abonnement [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
+Die Details hängen davon ab, ob Ihr Microsoft 365-Abonnement [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
 
 |||
 |---|---|
@@ -101,7 +101,7 @@ Insights nicht nur grundlegende Probleme, die Sie überprüfen sollten, sondern 
 
 ![Intelligente Einblicke](../../media/smartinsights.png)
 
-Beispielsweise können Sie sehen, dass Phishing-e-Mails zugestellt werden, weil einige Benutzer Ihre Junk-e-Mail-Optionen deaktiviert haben. Weitere Informationen zur Funktionsweise von Insights finden Sie unter [Reports and Insights in the Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+Beispielsweise können Sie sehen, dass Phishing-e-Mails zugestellt werden, weil einige Benutzer Ihre Junk-e-Mail-Optionen deaktiviert haben. Weitere Informationen zur Funktionsweise von Insights finden Sie unter [Reports and Insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
 
 ## <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
@@ -115,7 +115,7 @@ Im unteren Bereich des Sicherheits Dashboards finden Sie einen Abschnitt **Trend
 
 ![Im Abschnitt Trends werden die e-Mail-Fluss Trends für die Organisation zusammengefasst.](../../media/trends.png)
 
-Wenn das Office 365 Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen Bericht über **aktuelle Threat Management Alerts** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität anzeigen und ausführen kann.
+Wenn das Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen Bericht über **aktuelle Threat Management Alerts** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität anzeigen und ausführen kann.
 
 Zum Anzeigen oder zugreifen auf das gesendete und empfangene e-Mail-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 

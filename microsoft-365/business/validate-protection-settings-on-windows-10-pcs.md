@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Validieren von Microsoft 365 Business App Protection-Einstellungen auf Windows 10-Geräten und sicherstellen, dass Benutzer keine Unternehmensdaten in persönliche Dateien oder nicht verwaltete apps kopieren können.
-ms.openlocfilehash: 5b798e0335188543fc308553f71085bcde8b7752
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Validieren von Microsoft 365 Business Premium-App-Schutzeinstellungen auf Windows 10-Geräten und sicherstellen, dass Benutzer keine Unternehmensdaten in persönliche Dateien oder nicht verwaltete apps kopieren können.
+ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560838"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635742"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
 
@@ -37,7 +37,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Überprüfen der Verbindungseinstellungen**
   
-1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. Nachdem Sie sich mit Microsoft 365 Business Premium-Anmeldeinformationen angemeldet haben und eine Verbindung mit Azure AD hergestellt haben, wie unter [Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)beschrieben, wechseln Sie zu **Windows-Einstellungen** \> - **Konten** \> **Zugriff auf Arbeit oder Schule**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -47,7 +47,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Sicherstellen, dass keine Unternehmensdaten in eine nicht verwaltete app eingefügt werden können**
   
-1. Öffnen Sie das von Microsoft 365 Business installierte Outlook 2016.
+1. Öffnen Sie Outlook 2016, das von Microsoft 365 Business Premium installiert wurde.
     
 2. Öffnen Sie eine E-Mail, und kopieren Sie einige Inhalt daraus.
     
@@ -67,7 +67,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
 2. Klicken Sie unter **Auf Arbeits- oder Schulkonto zugreifen** auf **Verbinden**.
     
-3. Enter your Microsoft 365 Business credential into the **Set up a work or school account dialog** \> **Sign in**.
+3. Geben Sie Ihre Anmeldeinformationen für Microsoft 365 Business Premium in das **Dialogfeld** \> Einrichten einer Geschäfts-oder Schulkonto **Anmeldung**ein.
     
 4. Wählen Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** die Option **Geschäfts-, Schul- oder Unikonto** und dann **Informationen** aus.
     
@@ -79,7 +79,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Sicherstellen, dass keine Unternehmensdaten in eine nicht verwaltete app eingefügt werden können**
   
-1. Öffnen Sie Outlook 2016, und fügen Sie bei Bedarf Ihr Microsoft 365 Business-Konto hinzu. Melden Sie sich dann mit Ihren Microsoft 365 Business-Anmeldeinformationen an.
+1. Öffnen Sie Outlook 2016, und fügen Sie Ihr Microsoft 365 Business Premium-Konto bei Bedarf hinzu, und melden Sie sich mit Ihren Microsoft 365 Business Premium-Anmeldeinformationen an.
     
 2. Öffnen Sie eine E-Mail, und kopieren Sie einige Inhalt daraus.
     

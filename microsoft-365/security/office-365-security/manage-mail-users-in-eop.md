@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633793"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635580"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -63,7 +63,7 @@ In diesem Abschnitt finden Sie weitere Informationen zum Verwalten von E-Mail-Be
 
   - **Verzeichnisbasierte Edge-Blockierung (Blockierung)**: Weitere Informationen zu Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.
 
-  - **Spamquarantäne für Endbenutzer**: um auf die Spamquarantäne für Endbenutzer zugreifen zu können, benötigen Endbenutzer eine gültige Office 365 Benutzer-ID und ein Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein.
+  - **Spamquarantäne für Endbenutzer**: um auf die Spamquarantäne von Endbenutzern zugreifen zu können, benötigen Endbenutzer eine gültige Benutzer-ID und ein gültiges Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein.
 
   - **Nachrichtenfluss Regeln**: Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen abzielen, ohne Sie manuell über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
 
@@ -126,7 +126,7 @@ In diesem Beispiel wird anhand des [New-EOPMailUser](https://docs.microsoft.com/
 
 - Die externe E-Mail-Adresse ist "jzeng@tailspintoys.com".
 
-- Der Office 365-Anmeldename ist "jeffreyz@contoso.onmicrosoft.com".
+- Der Microsoft 365-Anmeldename lautet jeffreyz@contoso.onmicrosoft.com.
 
 - Das Kennwort lautet "Pa$$word1".
 

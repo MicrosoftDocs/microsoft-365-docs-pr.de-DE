@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie das Add-in "Microsoft Junk-e-Mail-Berichterstellung" installieren und verwenden, um Spam, nicht-Spam und Phishing-Nachrichten an Microsoft zu melden.
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638500"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook in Office 365
 
@@ -37,7 +37,7 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 - Das Add-in "Junk-e-Mail-Berichterstellung" funktioniert mit den folgenden Versionen von Outlook:
 
   - Outlook 2013 oder höher
-  - Outlook im Lieferumfang von Office 365 ProPlus
+  - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
 
 - Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Report Messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
 

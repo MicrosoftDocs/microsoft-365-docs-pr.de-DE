@@ -1,5 +1,5 @@
 ---
-title: Sichere Windows 10-Computer
+title: Sichern von Windows 10-Computern
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,22 +21,22 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 Business eingerichtet haben.
-ms.openlocfilehash: 068ac8c8b6011c879d859024b44192cb0a6d3d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 for Business eingerichtet haben.
+ms.openlocfilehash: 71fd9202b04c2559e992977f1c21a129dd5455b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593461"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633001"
 ---
-# <a name="secure-windows-10-computers"></a>Sichere Windows 10-Computer
+# <a name="secure-windows-10-computers"></a>Sichern von Windows 10-Computern
 
-Nachdem Sie Microsoft 365 Business [eingerichtet](set-up.md) haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
+Nachdem Sie Microsoft 365 for Business [eingerichtet](set-up.md) haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
 In diesem Video erfahren Sie, wie Sie Richtlinien zum Sichern Ihrer Windows 10-Computer einrichten können.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="to-secure-your-windows-10-pcs"></a>So sichern Sie Ihre Windows 10-PCs
 

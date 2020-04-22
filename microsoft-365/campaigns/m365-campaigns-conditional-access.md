@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie MFA erfordern und Richtlinien für bedingten Zugriff für Microsoft 365 Business einrichten.
-ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie Sie MFA benötigen und Richtlinien für bedingten Zugriff für Microsoft 365 for Business einrichten.
+ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056411"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635612"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Erzwingen der mehrstufigen Authentifizierung und Einrichten von Richtlinien für bedingten Zugriff
 

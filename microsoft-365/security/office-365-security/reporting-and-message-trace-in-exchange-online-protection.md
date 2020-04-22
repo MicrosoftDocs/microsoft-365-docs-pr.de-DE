@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an, mit deren Hilfe Sie den allgemeinen Status und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften. In der folgenden Tabelle sind die für EOP-Administratoren verfügbaren Berichte und Problembehandlungstools beschrieben.
-ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e961c76daaad72fbd1ddede5651cb49fd66d48be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598552"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634352"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection
 
@@ -25,7 +25,7 @@ Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an
 
 ## <a name="usage-reports"></a>Verwendungsberichte
 
-**Office 365 Groups-Aktivität**: dient zum Anzeigen von Informationen zur Anzahl der Office 365 Gruppen, die erstellt und verwendet werden.
+**Microsoft 365 Groups-Aktivität**: Anzeigen von Informationen zur Anzahl von Microsoft 365-Gruppen, die erstellt und verwendet werden.
 
 **E-Mail-Aktivität**: Anzeigen von Informationen zur Anzahl der gesendeten, empfangenen und eingelesenen Nachrichten in ihrer gesamten Organisation und von bestimmten Benutzern.
 
@@ -35,15 +35,15 @@ Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Office 365-Berichte im Admin Center – Office 365-Gruppen](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Office 365-Berichte im Admin Center - E-Mail-Aktivitäten](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365-Berichte im Admin Center-e-Mail-Aktivität](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Office 365-Berichte im Admin Center - Nutzung der E-Mail-Apps](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365-Berichte im Admin Center-Nutzung von e-Mail-apps](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Office 365-Berichte im Admin Center - Postfachnutzung](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365-Berichte im Admin Center-Postfachnutzung](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Security #a0 Compliance Reports im Microsoft 365 Admin Center
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Security & Compliance Reports im Microsoft 365 Admin Center
 
 Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Administratoren, die Zusammenfassungsinformationen und das Anzeigen von Detailinformationen umfasst.
 

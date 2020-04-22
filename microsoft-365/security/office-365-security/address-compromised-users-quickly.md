@@ -1,5 +1,5 @@
 ---
-title: Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Reaktion in Office 365 Advanced Threat Protection
+title: Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz, kompromittiert
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Erfahren Sie, wie Sie den Prozess der Erkennung und Adressierung kompromittierter Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection Plan 2 beschleunigen können.
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635772"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
 
@@ -60,7 +60,7 @@ Wenn ein Benutzerkonto kompromittiert wird, werden Warnungen ausgelöst. In eini
 
 ### <a name="view-and-investigate-restricted-users"></a>Anzeigen und untersuchen eingeschränkter Benutzer
 
-Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Office 365 Security & Compliance Center können Sie beispielsweise zu **Threat Management** > **Review** > **restricted users**wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
+Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Security & Compliance Center können Sie beispielsweise zu **Threat Management** > **Review** > **restricted users**wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
 
 1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an.
 
@@ -74,7 +74,7 @@ Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigi
 
 ### <a name="view-details-about-automated-investigations"></a>Anzeigen von Details zu automatisierten Untersuchungen
 
-Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Office 365 Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management** > **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
+Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management** > **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
 
 Weitere Informationen finden Sie unter [View Details of a Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 

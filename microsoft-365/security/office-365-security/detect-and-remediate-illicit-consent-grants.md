@@ -1,5 +1,5 @@
 ---
-title: Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
+title: Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710524"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637604"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 
 **Zusammenfassung**  Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
 
@@ -38,11 +38,11 @@ Diese Angriffe nutzen ein Interaktionsmodell, das davon ausgeht, dass die Entit�
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Wie sieht ein Angriff der illegalen Zustimmungs Erteilung in Office 365 aus?
 
-Sie müssen das Office 365 **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suchen, die auch als Indikatoren für Kompromisse (IOC) dieses Angriffs bezeichnet werden. Für Organisationen mit vielen Azure-registrierten Anwendungen und einer großen Benutzerbasis besteht die bewährte Methode darin, die Genehmigungs Stipendien für Organisationen auf wöchentlicher Basis zu überprüfen.
+Sie müssen das **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suchen, die auch als Indikatoren für Kompromisse (IOC) dieses Angriffs bezeichnet werden. Für Organisationen mit vielen Azure-registrierten Anwendungen und einer großen Benutzerbasis besteht die bewährte Methode darin, die Genehmigungs Stipendien für Organisationen auf wöchentlicher Basis zu überprüfen.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Auffinden von Anzeichen für diesen Angriff
 
-1. Öffnen Sie das **Security and Compliance Center** in Ihrem Office 365 Mandanten.
+1. Öffnen Sie das **Security & Compliance Center** in Ihrem Mandanten.
 
 2. Navigieren Sie zu **Suchen** , und wählen Sie **Überwachungsprotokoll Suche**aus.
 
@@ -53,7 +53,7 @@ Sie müssen das Office 365 **Überwachungsprotokoll** durchsuchen, um nach Zeich
 5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
-> * Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Der Zeitraum, in dem ein Überwachungsdatensatz aufbewahrt und im Überwachungsprotokoll durchsucht werden kann, hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
 
 ## <a name="how-to-confirm-an-attack"></a>Vorgehensweise zum Bestätigen eines Angriffs
@@ -121,7 +121,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimm
 
 Das Skript erstellt eine Datei namens "Permissions. csv". Führen Sie die folgenden Schritte aus, um nach illegalen Anwendungs Berechtigungs Zuschüssen zu suchen:
 
-1. Suchen Sie in der Spalte "zusenttype" (Spalte G) nach dem Wert "allprinciples". Die allprincipals-Berechtigung ermöglicht der Clientanwendung den Zugriff auf alle Inhalte im Mandanten. Systemeigene Office 365 Anwendungen benötigen diese Berechtigung, um ordnungsgemäß zu funktionieren. Jede nicht-Microsoft-Anwendung mit dieser Berechtigung sollte sorgfältig geprüft werden.
+1. Suchen Sie in der Spalte "zusenttype" (Spalte G) nach dem Wert "allprinciples". Die allprincipals-Berechtigung ermöglicht der Clientanwendung den Zugriff auf alle Inhalte im Mandanten. Native Microsoft 365-Anwendungen benötigen diese Berechtigung, um ordnungsgemäß zu funktionieren. Jede nicht-Microsoft-Anwendung mit dieser Berechtigung sollte sorgfältig geprüft werden.
 
 2. Überprüfen Sie in der Spalte Permission (Spalte F) die Berechtigungen, die jede Delegierte Anwendung auf Inhalte hat. Suchen Sie nach der Berechtigung "lesen" und "schreiben" oder "*. "Alle"-Berechtigungen und überprüfen diese sorgfältig, da Sie möglicherweise nicht geeignet sind.
 
@@ -131,7 +131,7 @@ Das Skript erstellt eine Datei namens "Permissions. csv". Führen Sie die folgen
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestimmen des Umfangs des Angriffs
 
-Nachdem Sie die Inventarisierung des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das Office 365 **Überwachungsprotokoll** , um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie die betroffenen Benutzer, die Zeiträume, für die die unerlaubte Anwendung Zugriff auf Ihre Organisation hatte, sowie die Berechtigungen, die die APP besaß. Sie können das **Überwachungsprotokoll** im [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)durchsuchen.
+Nachdem Sie die Inventarisierung des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das **Überwachungsprotokoll** , um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie die betroffenen Benutzer, die Zeiträume, für die die unerlaubte Anwendung Zugriff auf Ihre Organisation hatte, sowie die Berechtigungen, die die APP besaß. Sie können das **Überwachungsprotokoll** im [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)durchsuchen.
 
 > [!IMPORTANT]
 > Die [postfachüberwachung](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) und [Aktivitätsüberwachung für Administratoren und Benutzer](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) müssen vor dem Angriff aktiviert worden sein, damit Sie diese Informationen erhalten.
@@ -158,9 +158,9 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
 - Sie können integrierte Anwendungen für Ihr Mandanten deaktivieren. Dies ist ein drastischer Schritt, bei dem die Möglichkeit für Endbenutzer, die Zustimmung auf Mandantenebene zu erteilen, deaktiviert wird. Dadurch wird verhindert, dass Benutzer versehentlich Zugriff auf eine böswillige Anwendung gewähren. Dies wird nicht dringend empfohlen, da es die Fähigkeit Ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt. Befolgen Sie dazu die Schritte unter [Aktivieren oder deaktivieren integrierter apps](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sicherer Microsoft 365 wie ein Cyber pro
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
+Ihr Microsoft 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können. Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Microsoft 365-Mandanten zu implementieren.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

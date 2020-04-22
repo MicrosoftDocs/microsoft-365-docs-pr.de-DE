@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636723"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinien Empfehlungen für das Sichern von teamchats,-Gruppen und-Dateien
 
@@ -33,9 +33,9 @@ In diesem Artikel werden zusätzliche Empfehlungen speziell für die Microsoft T
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Erste Schritte mit Microsoft Teams vor anderen abhängigen Diensten
 
-Sie müssen abhängige Dienste nicht für den Einstieg in Microsoft Teams aktivieren. Diese werden alle ' einfach funktionieren '. Sie müssen jedoch bereit sein, Folgendes zu verwalten:
+Sie müssen abhängige Dienste nicht für den Einstieg in Microsoft Teams aktivieren. Diese werden alle "nur arbeiten". Sie müssen jedoch bereit sein, Folgendes zu verwalten:
 
-- Office 365-Gruppen
+- Microsoft 365-Gruppen
 - SharePoint-Teamwebsites
 - OneDrive for Business
 - Postfächer
@@ -84,7 +84,7 @@ In Azure AD sind Gast-und externe Benutzer identisch. Der Benutzertyp für diese
 
 ### <a name="guest-access-in-teams"></a>Gastzugriff in Microsoft Teams
 
-Zusätzlich zu den Richtlinien für Benutzer, die sich innerhalb Ihres Unternehmens oder Ihrer Organisation befinden, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen zu ermöglichen und mit zu interagieren. interne Personen für Dinge wie Gruppenunterhaltungen, Chats und Besprechungen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access)
+Zusätzlich zu den Richtlinien für Benutzer, die für Ihr Unternehmen oder Ihre Organisation intern sind, können Administratoren den Gastzugriff aktivieren, um Personen, die sich außerhalb Ihres Unternehmens oder Ihrer Organisation befinden, für den Zugriff auf Microsoft Teams-Ressourcen und die Interaktion mit internen Personen für Gruppenunterhaltungen, Chats und Besprechungen zu ermöglichen. Weitere Informationen zum Gastzugriff finden Sie unter folgendem Link: [Teams Gastzugriff](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Externer Zugriff in Microsoft Teams
 

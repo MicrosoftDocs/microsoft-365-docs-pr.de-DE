@@ -1,5 +1,5 @@
 ---
-title: Manueller Wechsel von Office 365 Business-Plänen
+title: Manuelles Wechseln von Microsoft 365 for Business-Plänen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Wechseln Sie Office 365 für Unternehmen Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Wechseln Sie manuell Microsoft 365 for Business-Abonnements, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540843"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636534"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>Manueller Wechsel von Office 365 Business-Plänen
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Manuelles Wechseln von Microsoft 365 for Business-Plänen
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das neue Admin Center finden Sie unter [Ändern von Plänen manuell](change-plans-manually.md). Das neue Admin Center steht allen Microsoft 365-Administratoren zur Verfügung. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
-
+> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das neue Admin Center finden Sie unter [Ändern von Plänen manuell](change-plans-manually.md). Das neue Admin Center steht allen Microsoft 365-Administratoren zur Verfügung, und Sie können sich anmelden, indem Sie die Schaltfläche **neuen Admin Center** -Toggle oben auf der Startseite auswählen. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Schritt 1: entscheiden, wie Pläne gewechselt werden sollen
@@ -56,11 +54,11 @@ Lesen Sie [Schritt 2: erwerben eines neuen Abonnements](#step-2-buy-a-new-subscr
   
 - ODER -
   
- **Kaufen Sie ein neues Abonnement und die Lizenzen:** Folgen Sie den Schritten unter [Kaufen eines weiteren Office 365 Business-Abonnements](../buy-another-subscription.md) zum Erwerb eines neuen Abonnements.
+ **Erwerben Sie ein neues Abonnement und Lizenzen:** Befolgen Sie die Schritte unter [kaufen eines anderen Microsoft 365 for Business-Abonnements](../buy-another-subscription.md) , um ein neues Abonnement zu erwerben.
   
 Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die e-Mail-Adressen der Benutzer, die Sie migrieren möchten. Wenn deren E-Mail-Adressen beispielsweise @contoso.com enthält, müssen Sie ein neues Abonnement für contoso.com kaufen. Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wechseln soll.
   
- **Wenn Sie Hilfe bei der Auswahl eines Plans benötigen**, finden Sie weitere Informationen unter [Office 365 für Unternehmen Produktvergleichs](https://go.microsoft.com/fwlink/p/?linkid=842056) Seite oder [unter Support für Anrufe](../../admin/contact-support-for-business-products.md).
+ **Wenn Sie Hilfe bei der Auswahl eines Plans benötigen**, lesen Sie die [Microsoft 365 Business-Produktvergleichs](https://go.microsoft.com/fwlink/p/?linkid=842056) Seite oder den [Anruf Support](../../admin/contact-support-for-business-products.md).
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Schritt 3: Überprüfen Ihres neuen Abonnements und der Lizenzen
 
@@ -86,7 +84,7 @@ Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen
 
     Das Abonnement, von dem die Benutzer wechseln sollen, und das Abonnement, auf das die Benutzer umsteigen sollen, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Überprüfen Sie, dass beide Abonnements unter **AKTIV** aufgeführt werden. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Das neue Office 365 Business-Abonnement mit verfügbaren Lizenzen**
+   **Das neue Microsoft 365 for Business-Abonnement mit verfügbaren Lizenzen**
 
     ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen
 
     Jeder Benutzer benötigt eine Lizenz, die dem jeweiligen Abonnement entspricht. Wenn beispielsweise zehn Benutzer auf Office 365 Enterprise E5 umsteigen sollen, vergewissern Sie sich, dass Sie über zehn Lizenzen verfügen. In der hier angezeigten Abbildung wurden zehn Lizenzen für Office 365 Enterprise E5 erworben, und alle zehn Lizenzen können zugewiesen werden.
 
-4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?** Wechseln Sie zur Seite **Abonnements** , und [kaufen Sie Lizenzen für Ihr Office 365 für Unternehmen Abonnement](../licenses/buy-licenses.md).
+4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?** Wechseln Sie zur Seite **Abonnements** , und [kaufen Sie Lizenzen für Ihr Microsoft 365 for Business-Abonnement](../licenses/buy-licenses.md).
   
     [Was passiert mit den alten Lizenzen?](#what-about-the-old-licenses)
 

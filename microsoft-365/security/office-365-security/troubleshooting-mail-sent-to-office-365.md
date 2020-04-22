@@ -1,5 +1,5 @@
 ---
-title: Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
+title: Problembehandlung bei an Microsoft 365 gesendeten e-Mails
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, E-Mails an Postfächer in Office 365 zu senden, und bewährte Methoden für Massenmailings an Office 365-Kunden.
-ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Dieser Artikel enthält Informationen zur Problembehandlung für Absender, bei denen Probleme auftreten, wenn Sie versuchen, e-Mails an Posteingänge in Microsoft 365 und bewährte Methoden für Massenversand an Kunden zu senden.
+ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631145"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
 
-Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, E-Mails an Postfächer in Office 365 zu senden, und bewährte Methoden für Massenmailings an Office 365-Kunden.
+Dieser Artikel enthält Informationen zur Problembehandlung für Absender, bei denen Probleme auftreten, wenn Sie versuchen, e-Mails an Posteingänge in Microsoft 365 und bewährte Methoden für Massenversand an Kunden zu senden.
 
 ## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Problembehandlung bei häufig auftretenden Probleme mit E-Mail-Übermittlung an Office 365
 
@@ -47,7 +47,7 @@ Wählen Sie aus den folgenden häufig auftretenden Problemen.
 
 ### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Verwalten Sie die Sendezuverlässigkeit Ihrer IP-Adresse und Ihrer Domäne?
 
-EOP-Filtertechnologien sollen Anti-Spam-Schutz für Microsoft Office 365 sowie andere Microsoft-Produkte wie Exchange Server, Microsoft Office Outlook und Windows Live Mail bereitstellen. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit. 
+EoP-Filtertechnologien sind für die Bereitstellung von Antispamschutz für Microsoft 365 und andere Microsoft-Produkte wie Exchange Server, Microsoft Office Outlook und Windows Live Mail konzipiert. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit.
 
 ### <a name="are-you-sending-email-from-new-ip-addresses"></a>Senden Sie E-Mails von neuen IP-Adressen?
 
@@ -79,9 +79,9 @@ Weitere Informationen zu dem Fehler, den Sie erhalten haben, finden Sie in der L
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Um die Entfernung aus dieser Liste anzufordern, können Sie wie folgt vorgehen: [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Um die Entfernung aus dieser Liste anzufordern, können Sie [das Delist-Portal verwenden, um sich selbst aus der Liste blockierter Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Meine E-Mails sind im Junk-Ordner des Empfängers in EOP gelandet.
+### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Meine e-Mails sind im Junk-Ordner des Empfängers in EoP gelandet.
 
 Falls eine Nachricht fälschlicherweise von EOP als Spam identifiziert wurde, können Sie diese falsch positive Nachricht zusammen mit dem Empfänger an das Microsoft-Spamanalyseteam weiterleiten, das die Nachricht bewertet und untersucht. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann. Sie können Nachrichten, die nicht als Spam klassifiziert werden sollen, per E-Mail an Microsoft weiterleiten. Gehen Sie dabei wie folgt vor.
 
@@ -112,9 +112,9 @@ Sie haben einen NDR erhalten, da an der betreffenden IP-Adresse eine verdächtig
 
  Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Bewährte Methoden für Massen-E-Mails an Office 365-Benutzer
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Bewährte Methoden für das Massen Senden von e-Mails an Microsoft 365-Benutzer
 
-Wenn Sie häufig Massen-E-Mail-Kampagnen für Benutzer von Office 365 durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah eintreffen, folgen Sie den Tipps in diesem Abschnitt.
+Wenn Sie häufig Massen-e-Mail-Kampagnen an Microsoft 365-Benutzer durchführen und sicherstellen möchten, dass Ihre e-Mails sicher und zeitnah ankommen, befolgten Sie die Tipps in diesem Abschnitt.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der Name unter „Von:“ angibt, wer die Nachricht sendet.
 

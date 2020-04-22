@@ -5,23 +5,23 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "35830493"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637864"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Beschreibung des Microsoft Managed Desktop-Diensts
 
-Microsoft Managed Desktop ist ein Dienst, der Ihren Benutzern eine sichere moderne Umgebung bietet und immer die neuesten Versionen von Windows 10 Enterprise Edition, Office 365 ProPlus und Microsoft-Sicherheitsdienste auf dem neuesten Stand hält, einschließlich:
+Microsoft Managed Desktop ist ein Dienst, der Ihren Benutzern eine sichere moderne Umgebung bietet und immer die neuesten Versionen von Windows 10 Enterprise Edition, Microsoft 365 apps for Enterprise und Microsoft-Sicherheitsdienste auf dem neuesten Stand hält, einschließlich:
 
 - Vereinfachte Registrierung neuer Geräte
 - Konfiguration von Geräten
 - Funktionen zur Sicherung von Benutzern und Geräten, einschließlich der Windows Hello-, BitLocker-, SecureBoot-und Virtualisierungs-basierten Sicherheit gemäß den bewährten Microsoft-Methoden
 - Geräte Sicherheitsüberwachung und-Behebungs Dienste
 - APP-Kompatibilität über [Desktop-App versichern](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Verwaltung von Updates für Windows 10 und Office 365 ProPlus-apps
+- Verwaltung von Updates für Windows 10-und Microsoft 365-Apps für Enterprise-apps
 - Analytische Daten zur Geräte-und App-Nutzung
 - IT-Support für Ihre Endbenutzer
 - Operative Unterstützung für IT-Experten

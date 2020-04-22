@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557573"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632851"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Apps in Microsoft Managed Desktop
 
@@ -28,25 +28,25 @@ Sie können auch zusätzliche nicht-Microsoft-Apps für Ihre Endbenutzer zur Sel
 
 ## <a name="apps-provided-by-microsoft"></a>Von Microsoft bereitgestellte apps
 
-In Ihrer Microsoft Managed Desktop-Lizenz enthalten sind 64-Bit-Versionen der apps in der Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business und OneNote). Klick-und-Los-Versionen von Microsoft Project und Visio sind standardmäßig *nicht* enthalten, Sie können jedoch anfordern, dass Sie hinzugefügt werden. Weitere Informationen zu diesen apps finden Sie unter [Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten](../get-started/project-visio.md).
+In Ihrer Microsoft Managed Desktop-Lizenz sind 64-Bit-Versionen der apps in der Microsoft 365-Apps für Enterprise-Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business und OneNote) enthalten. Klick-und-Los-Versionen von Microsoft Project und Visio sind standardmäßig *nicht* enthalten, Sie können jedoch anfordern, dass Sie hinzugefügt werden. Weitere Informationen zu diesen apps finden Sie unter [Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Was Microsoft zur Unterstützung der von uns bereitgestellten apps tut
 
-Microsoft stellt den vollständigen Dienst für die Bereitstellung, das Update und den Support für die enthaltenen Office 365 ProPlus-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen zur Verfügung, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation bereitstellen kann. Microsoft unterstützt Endbenutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
+Microsoft stellt den vollständigen Dienst für die Bereitstellung, Aktualisierung und Unterstützung für die enthaltenen Microsoft 365-Apps für Enterprise-apps bereit. Klick-und-Los-Versionen von Microsoft Project und Visio sind *nicht* standardmäßig enthalten, aber Microsoft Managed Desktop stellt Bereitstellungsgruppen zur Verfügung, mit denen Ihr IT-Administrator Lizenzen verwalten und diese Anwendungen entsprechend für Ihre Organisation bereitstellen kann. Microsoft unterstützt Endbenutzer dieser Anwendungen über die Microsoft Managed Desktop-Supportkanäle.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Was Sie zur Unterstützung der von uns bereitgestellten apps tun müssen
 
 Es gibt immer noch bestimmte Dinge, die Sie mit diesen apps tun müssen:
 
-- **Zuweisen von Lizenzen** – Sie sind für das Abrufen und Zuweisen der entsprechenden Lizenzen an Endbenutzer für Office 365 ProPlus verantwortlich.
+- **Zuweisen von Lizenzen** – Sie sind für das Abrufen und Zuweisen der entsprechenden Lizenzen an Endbenutzer für Microsoft 365 apps for Enterprise verantwortlich.
 - **Hinzufügen von Benutzern zu Sicherheitsgruppen** – Wenn Sie Microsoft Project oder Visio verwenden, muss Ihr IT-Administrator diese Benutzer den entsprechenden Bereitstellungsgruppen hinzufügen. IT-Administratoren sind außerdem dafür verantwortlich, Lizenzen von diesen Benutzern zurückzufordern, wenn Sie das Unternehmen verlassen.
-- **Bereitstellen von Office 365 Addons** – Wenn Sie Addons für eine der Office 365 ProPlus-apps benötigen, stellen Sie diese zentral wie jede andere Windows 32-App bereit. 
+- **Bereitstellen von Microsoft 365-Add-ons** – Wenn Sie Add-ons für alle Microsoft 365-Apps für Enterprise-apps benötigen, stellen Sie Sie wie jede andere Windows 32-App zentral bereit. 
 
 ## <a name="apps-you-provide"></a>Von Ihnen bereitgestellten apps
 
 Natürlich haben Sie wahrscheinlich eine Reihe anderer apps, die Sie für Ihre Geschäftsvorgänge benötigen. Diese können nur auf von Microsoft verwalteten Desktop Geräten mithilfe der Bereitstellungs Pipeline von Microsoft InTune bereitgestellt werden. Wenn die APP dies benötigt, können Sie Sie von einem Anbieter verpacken lassen (Dies kann ein Anbieter von Drittanbietern oder Microsoft Consulting Services (MCS) sein), oder wenn Sie über die Mittel verfügen, können Sie diese selbst verpacken. Anschließend fügen Sie diese Pakete dem Microsoft Managed Desktop Portal hinzu und weisen Sie Azure Active Directory Gruppen zu, um die Bereitstellung auszulösen. 
 
-Wenn Sie Ihre apps derzeit mithilfe von Microsoft Endpoint Configuration Manager bereitstellen, kann Ihnen von Microsoft Managed Desktop eine Abfrage zur Bewertung Ihrer Apps und zum ermitteln, welche für die Migration zu Microsoft InTune bereit sind und welche möglicherweise einige erfordern, bereitgestellt werden. Anpassung.
+Wenn Sie Ihre apps derzeit mithilfe von Microsoft Endpoint Configuration Manager bereitstellen, kann Microsoft Managed Desktop Sie mit einer Abfrage zum Bewerten Ihrer Apps und zum ermitteln, welche für die Migration zu Microsoft InTune bereit sind und welche möglicherweise eine gewisse Anpassung erfordern, bereitstellen.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Vorbereiten Ihrer eigenen Apps für die Integration in Microsoft Managed Desktop

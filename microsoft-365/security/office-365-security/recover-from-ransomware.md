@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365 Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Microsoft 365-Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032876"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634400"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Office 365
 
-Selbst wenn Sie alle Vorkehrungen treffen, um Ihre Office 365 Organisation zu schützen, können Sie dennoch einem [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) -Angriff zum Opfer fallen. Ransomware ist ein großes Unternehmen, und die Angriffe werden überprüfen anspruchsvoll.
+Selbst wenn Sie alle Vorkehrungen treffen, um Ihre Organisation zu schützen, können Sie dennoch einem [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) -Angriff zum Opfer fallen. Ransomware ist ein großes Unternehmen, und die Angriffe werden überprüfen anspruchsvoll.
 
-Die Schritte in diesem Thema bieten Ihnen die beste Möglichkeit zum Wiederherstellen von Daten, die von der Ransomware verschlüsselt wurden, und helfen, die Ausbreitung der Infektion in Ihrer Office 365 Organisation zu beenden. Bevor Sie beginnen, sollten Sie die folgenden Punkte beachten:
+Die Schritte in diesem Thema bieten Ihnen die beste Möglichkeit zum Wiederherstellen von Daten, die von der Ransomware verschlüsselt wurden, und helfen, die Ausbreitung der Infektion in Ihrer Organisation zu beenden. Bevor Sie beginnen, sollten Sie die folgenden Punkte beachten:
 
 - Es gibt keine Garantie, dass durch das bezahlen des Lösegelds der Zugriff auf Ihre Dateien zurückgegeben wird. Tatsächlich können Sie mit dem Lösegeld ein Ziel für mehr Ransomware machen. Wenn Sie bereits bezahlt haben, aber Ihre Dateien erfolgreich wiederherstellen konnten, ohne die Auflösung des Angreifers zu verwenden, sollten Sie Ihre Bank anrufen, um zu prüfen, ob Sie die Transaktion blockieren kann. Außerdem wird empfohlen, dass Sie den Ransomware-Angriff an Strafverfolgungs-, Scam-berichterstellungswebsites und Microsoft melden, wie weiter unten in diesem Thema beschrieben.
 
@@ -122,7 +122,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 ### <a name="submit-email-messages-to-microsoft"></a>Senden von e-Mail-Nachrichten an Microsoft
 
-Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Siehe auch
 

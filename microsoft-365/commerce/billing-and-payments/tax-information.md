@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 'Erfahren Sie, wie viel Steuern für Ihr Office 365 für Unternehmen Abonnement in verschiedenen Regionen erhoben werden. '
+description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business-Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635004"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
-Steuern für Microsoft 365 Admin Center-Käufe, die Sie über Microsoft durchführen, werden durch Ihre Geschäftsadresse oder, wenn es sich um eine andere handelt, durch Ihre Versandadresse bestimmt. Wenn Sie sich in den Vereinigten Staaten befinden, müssen Sie eine Federal Employer Identification Number (fein) angeben.
+Die anfallenden Steuern für Microsoft 365 Admin Center-Käufe, die Sie über Microsoft tätigen, werden anhand Ihrer Geschäftsadresse oder – sofern diese abweicht – anhand Ihrer Lieferadresse bestimmt. Wenn Sie sich in den Vereinigten Staaten befinden, müssen Sie eine Federal Employer Identification Number (fein) angeben.
 
 Unternehmen in diesen Ländern können Ihre Umsatzsteuernummer angeben:
 

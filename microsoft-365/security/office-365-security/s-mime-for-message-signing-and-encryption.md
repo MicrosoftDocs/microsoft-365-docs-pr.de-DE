@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME in Exchange Online informieren.
-ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170495"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634328"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
 
@@ -68,7 +68,7 @@ Da die Nachrichtensicherheit wichtiger wird, müssen Administratoren die Grunds�
 
 - **Transport Layer Security (TLS)** verschlüsselt den Tunnel oder die Route zwischen e-Mail-Servern, um das Snooping und abhören zu verhindern.
 
-- **Secure Sockets Layer (SSL)** verschlüsselt die Verbindung zwischen e-Mail-Clients und Office 365 Servern.
+- **Secure Sockets Layer (SSL)** verschlüsselt die Verbindung zwischen e-Mail-Clients und Microsoft 365-Servern.
 
 - **BitLocker** verschlüsselt die Daten auf einer Festplatte in einem Rechenzentrum, sodass Sie nicht gelesen werden können, wenn jemand nicht autorisierten Zugriff erhält.
 

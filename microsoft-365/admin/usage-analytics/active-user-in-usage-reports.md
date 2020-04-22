@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Erfahren Sie mehr über einen aktiven Benutzer von Microsoft 365-Nutzungsanalysen, Aktivitätsberichten und Akzeptanz Metriken.
-ms.openlocfilehash: 0e2f5f5112593c142b4a7829977221c5542adf49
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243502"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631791"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Aktiver Benutzer in Microsoft 365-Nutzungsberichten
 
-## <a name="active-user-in-usage-reports"></a>Aktiver Benutzer in Verwendungsberichten
+## <a name="active-user-in-usage-reports"></a>Aktive Benutzer in Verwendungsberichten
 
 Ein aktiver Benutzer von Microsoft 365-Produkten für [Microsoft 365-Verwendungsanalyse](usage-analytics.md) und die [Aktivitätsberichte im Admin Center](../activity-reports/activity-reports.md) ist wie folgt definiert. 
   

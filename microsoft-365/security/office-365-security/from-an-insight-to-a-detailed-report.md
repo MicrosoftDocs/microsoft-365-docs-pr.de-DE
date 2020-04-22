@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einer einblickung zu einem detaillierten Bericht im &amp; Security Compliance Center durch ein Beispiel zur Verhinderung von Datenverlust navigieren können.
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083049"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638070"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 
-Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken im &amp; Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, kann es hilfreich sein, zu sehen, wie Sie einfach von einem Einblick zu einem detaillierten Bericht navigieren können. 
+Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken &amp; im Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, können Sie sehen, wie Sie einfach von einem Einblick zu einem detaillierten Bericht navigieren können. 
   
 Dies ist eine von mehreren exemplarischen Vorgehensweisen für das [ &amp; Security Compliance Center](https://protection.office.com). Weitere Exemplarische Vorgehensweisen finden Sie im Abschnitt " [Verwandte Themen](#related-topics) ". 
   

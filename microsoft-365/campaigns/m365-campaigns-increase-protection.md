@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365 Business.
-ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365
+ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080656"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633713"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
 Dieser Artikel unterstützt Sie bei der Verbesserung des Schutzes Ihres Microsoft 365-Abonnements zum Schutz vor Phishing, Schadsoftware und anderen Bedrohungen. Diese Empfehlungen sind für Organisationen mit einem erhöhten Sicherheitsbedürfnis geeignet, beispielsweise für politische Kampagnen, Anwaltskanzleien und Kliniken für das Gesundheitswesen. 
 
-Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Office 365 Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen durchführen, erhöhen Sie die Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
+Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen durchführen, erhöhen Sie die Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
 
 Weitere Informationen finden Sie unter [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -44,7 +44,7 @@ Ihre Office 365-oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, ab
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Anti-Malware**für **Richtlinien** \> aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
     
 3. Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
     
@@ -134,7 +134,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite **Richtlinie** die Option **ATP Anti-Phishing**aus.
     
@@ -166,7 +166,7 @@ Stellen Sie zunächst sicher, <a href="https://go.microsoft.com/fwlink/p/?linkid
 
    ![Die neue Admin Center-Vorschau auf.](../media/previewon.png)
 
-Wenn die Seite **Setup** noch nicht mit Karten in Ihrem Mandanten angezeigt wird, finden Sie weitere Informationen unter Vorgehens &amp; Weise zum Ausführen dieser Schritte in Office 365 Security Compliance Center. Weitere Informationen finden Sie unter [Einrichten von ATP-Safe Attachments im Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) und [Einrichten von ATP-Safe-Links im Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+Wenn die Seite **Setup** noch nicht mit Karten in Ihrem Mandanten angezeigt wird, finden Sie weitere Informationen unter Vorgehensweise beim Ausführen dieser Schritte im Security &amp; Compliance Center. Weitere Informationen finden Sie unter [Einrichten von ATP-Safe Attachments im Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) und [Einrichten von ATP-Safe-Links im Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Klicken Sie im linken Navigationsbereich auf **Setup**.
 2. Wählen Sie auf der Seite **Setup** die Option **Ansicht** auf der Karte zum **Schutz vor fortgeschrittenen Bedrohungen vergrößern aus** .</br></br>
@@ -188,7 +188,7 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Anlagen**aus.
     
@@ -225,7 +225,7 @@ Um ATP-sichere Links einzurichten, schauen Sie sich [Dieses kurze Schulungsvideo
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Links**aus.
     
@@ -233,7 +233,7 @@ So ändern Sie die Standardrichtlinie:
   
 1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die **Standard** Richtlinie aus. 
     
-2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail** **Office 365 ProPlus, Office für IOS und Android**aus.
+2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail**die Option **Microsoft 365 apps for Enterprise, Office für IOS und Android**aus.
     
 3. Klicken Sie auf **Speichern**. 
     
@@ -258,12 +258,12 @@ Weitere Informationen finden Sie unter [Office 365 ATP-sichere Links](https://go
 
 Nachdem Sie die Überwachungsprotokoll Suche im Security &amp; Compliance Center aktiviert haben, können Sie den Administrator und andere Benutzeraktivitäten im Protokoll beibehalten und durchsuchen. 
 
-Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein, damit die Überwachungsprotokoll Suche in Ihrem Microsoft 365 Business-Abonnement aktiviert oder deaktiviert wird. Diese Rolle wird standardmäßig der Rollengruppe Compliance Management und Organisationsverwaltung auf der Seite Berechtigungen im Exchange Admin Center zugewiesen. Globale Administratoren in Microsoft 365 sind standardmäßig Mitglieder dieser Gruppe.
+Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein, damit die Überwachungsprotokoll Suche in Ihrem Microsoft 365-Abonnement aktiviert oder deaktiviert wird. Diese Rolle wird standardmäßig der Rollengruppe Compliance Management und Organisationsverwaltung auf der Seite Berechtigungen im Exchange Admin Center zugewiesen. Globale Administratoren in Microsoft 365 sind standardmäßig Mitglieder dieser Gruppe.
 
 1. Wenn Sie die Überwachungsprotokoll Suche aktivieren möchten, wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie dann im linken Navigationsbereich die Option **Compliance** unter **Admin Centers** aus. 
 2. Wählen Sie auf der Seite **Microsoft 365-Kompatibilität** **Weitere Ressourcen**aus, und **Öffnen** Sie dann auf der ** &amp; Office 365 Security Center** -Karte.
 
-    ![Wählen Sie im Office 365 Security & Compliance Cars die Option Öffnen aus.](../media/gotosecandcomp.png)
+    ![Wählen Sie im Thema Sicherheit & Compliance Cars die Option Öffnen aus.](../media/gotosecandcomp.png)
 3. Wählen Sie auf der Seite Sicherheit und Kompatibilität die Option **Suche** und dann **Überwachungsprotokoll Suche**aus.
 1. Wählen Sie oben auf der Seite **Überwachungsprotokoll Suche** die Option **Überwachung aktivieren**aus.
 
@@ -282,8 +282,8 @@ Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und viele
 
 Sie können Aktivitäts Warnungen zum Nachverfolgen von Administrator-und Benutzeraktivitäten sowie zum Erkennen von Schadsoftware und Vorfällen zur Verhinderung von Datenverlust in Ihrer Organisation verwenden. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, aber Sie können auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Wenn Sie beispielsweise eine wichtige Datei in SharePoint speichern, die nicht von allen Personen extern freigegeben werden soll, können Sie eine Benachrichtigung erstellen, mit der Sie benachrichtigt werden, wenn Sie von einer anderen Person freigegeben wird.
 
-In der folgenden Abbildung sind die Standardrichtlinien aufgeführt, die in Microsoft 365 Business enthalten sind. <br/><br/>
-    ![Standard Warnungsrichtlinien, die in Microsoft 365 Business enthalten sind.](../media/alertpolicies.png)
+In der folgenden Abbildung sind die Standardrichtlinien aufgeführt, die in Microsoft 365 enthalten sind. <br/><br/>
+    ![In Microsoft 365 enthaltene Standard Warnungsrichtlinien](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Deaktivieren oder Verwalten der Kalenderfreigabe
 

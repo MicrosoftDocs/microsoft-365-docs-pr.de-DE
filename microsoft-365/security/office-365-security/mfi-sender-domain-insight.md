@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können sich über das Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082566"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635172"
 ---
 # <a name="fix-sender-domain-insight"></a>Einblick in Absenderdomäne
 
-Office 365 erfordert, dass Nachrichten, die von internen lokalen e-Mail-Umgebungen gesendet werden, Office 365 werden, um bestimmte Sicherheitskriterien zu erfüllen:
+Microsoft 365 erfordert Nachrichten, die von internen lokalen e-Mail-Umgebungen an Microsoft 365 gesendet werden, um bestimmte Sicherheitskriterien zu erfüllen:
 
-- Sie haben in Office 365 einen eingehenden Connector erstellt, um SMTP-Verbindungen von Ihrem lokalen e-Mail-Server mithilfe der Quell-IP-Adresse oder eines Zertifikats zu authentifizieren.
+- Sie haben in Microsoft 365 einen eingehenden Connector erstellt, um SMTP-Verbindungen von Ihrem lokalen e-Mail-Server mithilfe der Quell-IP-Adresse oder eines Zertifikats zu authentifizieren.
 
-- Sie haben ihren lokalen e-Mail-Server so konfiguriert, dass e-Mails über Office 365 an die externe weltweiter geleitet werden.
+- Sie haben ihren lokalen e-Mail-Server so konfiguriert, dass e-Mails über Microsoft 365 an externe weltweiter geleitet werden.
 
 - In Ihrer Konfiguration ist eine der folgenden Aussagen zutreffend:
 
-  - Die e-Mail-Domäne des Absenders wird in Ihrer Office 365 Organisation registriert. Weitere Informationen finden Sie unter Hinzufügen von Domänen in Office 365.
+  - Die e-Mail-Domäne des Absenders ist in Ihrer Organisation registriert. Weitere Informationen finden Sie unter Hinzufügen von Domänen in Office 365.
 
-  - Der lokale e-Mail-Server ist für die Verwendung eines Zertifikats zum Senden von e-Mails an Office 365 konfiguriert, das Zertifikat enthält einen Domänennamen, den Sie in Office 365 registriert haben, oder stimmt genau überein und Sie haben einen zertifikatbasierten Connector in Office 365 mit diesem erstellt. Domäne. 
+  - Der lokale e-Mail-Server ist für die Verwendung eines Zertifikats zum Senden von e-Mails an Microsoft 365 konfiguriert, das Zertifikat enthält einen Domänennamen, den Sie in Microsoft 365 registriert haben, oder stimmt genau überein und Sie haben einen zertifikatbasierten Connector in Microsoft 365 mit dieser Domäne erstellt. 
 
 Nachrichten, die die Kriterien nicht erfüllen, werden nicht der Organisation zugeordnet und können zurückgewiesen werden.
 

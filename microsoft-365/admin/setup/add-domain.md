@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Office 365 im Microsoft 365-Verwaltungszentrum hinzu, indem Sie einen DNS-Eintrag bei Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209640"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631815"
 ---
 # <a name="add-a-domain-to-office-365"></a>Hinzufügen einer Domäne zu Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209640"
     
 5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domäne bei GoDaddy oder 1&amp;1 registriert ist, wählen Sie **Anmelden** > **Weiter** aus. Office 365 [richtet Ihre Einträge dann automatisch ein](../get-help-with-domains/domain-connect.md).
+    1. Wenn Ihre Domäne bei GoDaddy oder 1&amp;1 registriert ist, wählen Sie**weiter** **Anmelden** > aus, und Microsoft[wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
     
     2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie diese E-Mail nicht erkennen oder keinen Zugriff darauf haben, können Sie die dritte Option verwenden.
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209640"
 
 [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Hilfe zu Office 365-Domänen erhalten](../get-help-with-domains/get-help-with-domains.md)
+[Abrufen von Hilfe zu Domänen](../get-help-with-domains/get-help-with-domains.md)

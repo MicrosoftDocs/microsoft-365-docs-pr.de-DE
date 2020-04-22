@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 27f27a16de9d4aa2a2f163a18c1b837d6c575eb0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894264"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633483"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection Datensicherheit und Datenschutz
 
@@ -40,4 +40,4 @@ Durch Aktivieren von Microsoft Threat Protection (MTP) stimmen Sie den folgenden
 Weitere Informationen zur Datenspeicherung und zum Datenschutz der jeweiligen Produkte finden Sie unter:
 - [Microsoft Defender ATP-Datenspeicherung und Datenschutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security Datensicherheit und Datenschutz](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Office 365 Datenschutz, Sicherheit und Transparenz](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 Datenschutz, Sicherheit und Transparenz](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

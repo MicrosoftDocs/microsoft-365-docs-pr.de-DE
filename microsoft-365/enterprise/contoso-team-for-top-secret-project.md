@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: Hier erfahren Sie, wie Contoso ein Team für streng geregelte Daten für ein streng geheimes Projekt verwendet, um eine neue Produkt-und Dienst Suite zu entwickeln.'
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068026"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636498"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team für ein streng geheimes Projekt in der Contoso Corporation
 
@@ -50,21 +50,21 @@ Informationen zu den Konfigurationsdetails finden Sie unter [SharePoint-Einstell
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>Schritt 2: Konfigurieren einer DLP-Richtlinie und des zugrunde liegenden Standorts für eine Aufbewahrungs Bezeichnung 
 
-Zunächst wendeten Contoso-Administratoren die vorhandene **streng vertrauliche** Office 365 Aufbewahrungs Bezeichnung auf den Abschnitt **Documents** der zugrunde liegenden SharePoint-Website des Project 2X-Teams an.
+Zunächst wendeten Contoso-Administratoren die vorhandene **streng vertrauliche** Aufbewahrungs Bezeichnung auf den Abschnitt **Documents** der zugrunde liegenden SharePoint-Website des Project 2X-Teams an.
 
-Als nächstes haben Sie eine neue Office 365 DLP-Richtlinie mit dem Namen " **Project 2X** " erstellt, die:
+Als nächstes haben Sie eine neue DLP-Richtlinie mit dem Namen " **Project 2X** " erstellt, die:
 
-- Verwendet die Office 365 Aufbewahrungs Bezeichnung mit hoher Vertraulichkeit.
+- Verwendet die streng vertrauliche Aufbewahrungs Bezeichnung.
 - Blockiert Benutzer, wenn Sie versuchen, eine Datei im Team des Projekts 2X außerhalb von Contoso freizugeben.
 
 Informationen zu den Konfigurationsdetails finden Sie unter [Protect Files in Teams with Retention Labels and DLP](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>Schritt 3: Erstellen einer Office 365 Sensitivitäts Bezeichnung für das Team des Projekts 2x
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>Schritt 3: Erstellen einer Sensitivitäts Bezeichnung für das Team des Projekts 2x
 
-Contoso-Administratoren haben eine neue Office 365 Sensitivitäts Bezeichnung " **Project 2X** " erstellt, die:
+Contoso-Administratoren haben eine neue Sensitivitäts Bezeichnung mit dem Namen " **Project 2X** " erstellt, die:
 
 - Verschlüsselung erforderlich.
-- Erlaubt gemeinsame Author-Berechtigungen für das Projekt 2X Office 365 Gruppe.
+- Erlaubt gemeinsame Author-Berechtigungen für das Projekt 2X Microsoft 365 Group.
 
 Hier ist die resultierende Konfiguration des Project 2X-Teams.
 
@@ -72,7 +72,7 @@ Hier ist die resultierende Konfiguration des Project 2X-Teams.
  
 Dateien im Abschnitt "Dokumente" der zugrunde liegenden Project 2X SharePoint-Website wurden durch Folgendes geschützt:
 
-- Die Websiteberechtigungen, die nur den Zugriff auf Mitglieder des Projekts 2X Office 365 Gruppe ermöglichen.
+- Die Websiteberechtigungen, die nur den Zugriff auf Mitglieder der 2X Microsoft 365-Gruppe des Projekts ermöglichen.
 - Die streng vertrauliche Aufbewahrungs Bezeichnung, die automatisch neuen Dateien zugewiesen wird.
 - Eine DLP-Richtlinie, die die streng vertrauliche Aufbewahrungs Bezeichnung und Einstellungen verwendet, mit denen verhindert wird, dass die Datei für externe Benutzer freigegeben wird.
 - Die Bezeichnung "Project 2X Sensitivity" mit Verschlüsselung und Berechtigungen, die mit der Datei transportiert werden, wenn Sie von der Website verschoben oder kopiert wird.

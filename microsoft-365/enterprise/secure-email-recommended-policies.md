@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081292"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631405"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -57,12 +57,12 @@ Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Z
 
 1. Befolgtes "Schritt 2: Konfigurieren einer Azure AD Richtlinie für den bedingten Zugriff für Exchange Online mit ActiveSync (EAS)" in [Szenario 1: Office 365 apps erfordern genehmigte apps mit App-Schutzrichtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), wodurch verhindert wird, dass Exchange ActiveSync-Clients die Standardauthentifizierung für die Verbindung mit Exchange Online nutzen.
 
-## <a name="setup-office-365-message-encryption"></a>Einrichten Office 365 Nachrichtenverschlüsselung
+## <a name="set-up-message-encryption"></a>Einrichten der Nachrichtenverschlüsselung
 
-Mit den neuen Funktionen für die Office 365 Nachrichtenverschlüsselung (OM), die die Schutzfunktionen in Azure Information Protection nutzen, kann Ihre Organisation problemlos geschützte e-Mails für alle Benutzer auf jedem Gerät freigeben. Benutzer können mit Outlook.com, Gmail und anderen e-Mail-Diensten geschützte Nachrichten mit anderen Office 365 Organisationen sowie nicht-Office 365-Kunden senden und empfangen.
+Mit den neuen Funktionen für die Office 365 Nachrichtenverschlüsselung (OM), die die Schutzfunktionen in Azure Information Protection nutzen, kann Ihre Organisation problemlos geschützte e-Mails für alle Benutzer auf jedem Gerät freigeben. Benutzer können geschützte Nachrichten mit anderen Microsoft 365-Organisationen sowie nicht-Kunden mithilfe von Outlook.com, Gmail und anderen e-Mail-Diensten senden und empfangen.
 
 Weitere Informationen finden Sie unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 [Weitere Informationen zu Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dokumenten](sharepoint-file-access-policies.md)

@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: Erfahren Sie mehr über das Feature neue Kontingente.
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594686"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632413"
 ---
 # <a name="allotment-basics"></a>Grundlegendes zur Zuteilung
 
@@ -33,7 +33,7 @@ Sie können auch die Verwaltung ihrer Kontingente delegieren. Delegierte Zuteilu
 
 Sie müssen die Lizenzierungsanforderungen für die [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)erfüllen.
 
-Sie können Kontingente mit allen Office 365 Produkten verwenden, die Benutzern zur Verfügung stehen:
+Sie können Kontingente für alle Produkte verwenden, die Benutzern zur Verfügung stehen:
 
 - Office-Suiten und eigenständige Produkte
 - Enterprise-und Mobility-Produkte

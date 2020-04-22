@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Ihrer Rechnung für Office 365 Business
+title: Grundlegendes zu Ihrer Rechnung für Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Office 365 für Unternehmen Rechnung interpretieren und wie Sie die Bestellnummer ändern.
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Hier erfahren Sie, wie Sie die Gebühren-, Abrechnungs-und Zahlungsinformationen auf Ihrer Microsoft 365 for Business-Rechnung interpretieren und wie Sie die Bestellnummer ändern.
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142299"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634968"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Office 365 Business
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 for Business
 
 Jeden Monat erhalten Sie eine e-Mail, die Ihnen mitteilt, dass Ihre neue Abrechnungs Anweisung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   
@@ -138,6 +138,6 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Bezahlen für Ihr Office 365 Business-Abonnement](pay-for-your-subscription.md)
+[Bezahlen Ihres Microsoft 365 for Business-Abonnements](pay-for-your-subscription.md)
 
 [Minecraft Education Edition - Zahlungsoptionen](https://go.microsoft.com/fwlink/p/?linkid=838761)

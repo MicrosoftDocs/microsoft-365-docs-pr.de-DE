@@ -17,16 +17,16 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einem detaillierten Bericht zu einem Einblick mit empfohlenen Aktionen im Security &amp; Compliance Center übergehen können.
-ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8d56886a39e14eddd5ad6505a4fe68e20fc6a543
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086206"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638082"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick
 
-Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken im &amp; Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, können Sie sehen, wie Sie problemlos von einem detaillierten Bericht zu einer Einblicke und empfohlenen Aktionen navigieren können. 
+Wenn Sie noch keine [Erfahrung mit Berichten und Einblicken &amp; im Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, können Sie sehen, wie Sie problemlos von einem detaillierten Bericht zu einer Einblicke und empfohlenen Aktionen navigieren können. 
   
 Dies ist eine von mehreren exemplarischen Vorgehens &amp; weisen für das Security Compliance Center. Weitere Exemplarische Vorgehensweisen finden Sie im Abschnitt " [Verwandte Themen](#related-topics) ". 
   

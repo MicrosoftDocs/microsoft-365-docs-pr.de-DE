@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Office 365-Promotionscodes zum Reduzieren des Preises
+title: Verwenden Sie Ihren Promo-Code, um den Preis zu reduzieren
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Hier erfahren Sie, wie Sie einen Promotionscode auf Ihr Office 365-Abonnement anwenden, um den Preis zu reduzieren, und wie Sie im Falle eines Fehlers den Promo-Code beheben.
+description: Hier erfahren Sie, wie Sie einen Promotionscode auf Ihr Microsoft 365-Abonnement anwenden, um den Preis zu reduzieren, und wie Sie im Falle eines Fehlers den Promocode beheben.
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243093"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631857"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>Verwenden des Office 365-Promotionscodes zum Reduzieren des Preises
+# <a name="use-your-promo-code-to-reduce-price"></a>Verwenden Sie Ihren Promo-Code, um den Preis zu reduzieren
 
 Wenn Sie ein Abonnement erwerben, können Sie einen Promotionscode verwenden, um den Preis zu reduzieren. Lesen Sie diesen Artikel, um zu erfahren, wie Sie einen Promo-Code auf Ihr Abonnement anwenden, Informationen zu den [Promo-Code-Ausdrücken](#promo-code-terms)erhalten und Promo- [Codes behandeln](#troubleshooting-promo-codes)können.
   
@@ -47,7 +47,7 @@ Sie können jederzeit nach Abschluss des Kaufs den Rabatt anzeigen, um den die R
   
 ## <a name="promo-code-terms"></a>Bedingungen für den Promotionscode
 
-Die folgenden Richtlinien beziehen sich auf die Promotionscodes für Office 365 Business Business-Abonnements.
+Die folgenden Richtlinien gelten für Promo-Codes für Microsoft 365 for Business-Abonnements.
   
 - **Anzahl der Promotionscodes pro Abonnement** Sie können einen Promotionscode in der gleichen Reihenfolge für mehrere Abonnements verwenden, Sie können jedoch nicht mehrere Promotionscode für ein einziges Abonnement verwenden. 
     

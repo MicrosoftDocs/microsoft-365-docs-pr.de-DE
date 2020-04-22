@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailEvents" im Schema "Erweiterte Suche"
-description: Erfahren Sie mehr über die Ereignisse, die Office 365-E-Mails in der Tabelle "EmailEvents" des Schemas „Erweiterte Suche“ zugeordnet sind.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Urteil, Phishing-Urteil, ANLAGENANZAHL, Verknüpfungsanzahl, URL-Anzahl
+description: Informationen zu Ereignissen in Verbindung mit Microsoft-e-Mails in der EmailEvents-Tabelle des Advanced Hunting-Schemas
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Schadsoftware, Phishing-Urteil, ANLAGENANZAHL, Link Anzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633531"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `EmailId` | string | Eindeutige E-Mail- und Empfänger-ID |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Office 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte e-Mail |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `SenderMailFromAddress` | string | Absender-E-Mail-Adresse in der Kopfzeile "MAIL FROM", auch als Umschlagabsender oder als Return-Path-Adresse bezeichnet |
 | `SenderFromAddress` | string | Absender-E-Mail-Adresse in der Kopfzeile "FROM", die für E-Mail-Empfänger in ihren E-Mail-Clients sichtbar ist |

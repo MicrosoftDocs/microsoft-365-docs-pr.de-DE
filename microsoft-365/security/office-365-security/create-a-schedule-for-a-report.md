@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Informationen zum Einrichten eines Zeitplans für einen Bericht im Security &amp; Compliance Center.
-ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030164"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637700"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center
 
@@ -31,7 +31,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und Einblicke](repo
 ## <a name="create-a-schedule-for-a-report"></a>Erstellen eines Zeitplans für einen Bericht
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen dieser Aufgabe verfügen. Im Allgemeinen können Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. Weitere Informationen zu Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen dieser Aufgabe verfügen. Im Allgemeinen können globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. Weitere Informationen zu Berechtigungen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 1. Wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> - **Dashboard**.
     
@@ -72,7 +72,7 @@ Nachdem Sie einen Zeitplan für einen Bericht erstellt haben, wird dieser Berich
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Berichte und Einblicke im &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Verwalten von Zeitplänen für Berichte im &amp; Security Compliance Center](manage-schedules-for-multiple-reports.md)
   

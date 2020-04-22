@@ -1,5 +1,5 @@
 ---
-title: Reaktion auf Sicherheitsvorfälle in Office 365
+title: Reaktion auf Sicherheitsvorfälle
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Office 365 Aussehen und wie Sie darauf reagieren können.
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Microsoft 365 Aussehen und wie Sie darauf reagieren können.
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598722"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634508"
 ---
-# <a name="office-365-security-incident-response"></a>Reaktion auf Sicherheitsvorfälle in Office 365
+# <a name="security-incident-response"></a>Reaktion auf Sicherheitsvorfälle
 
  **Zusammenfassung:** In dieser Lösung erfahren Sie, welche Indikatoren für die häufigsten Cyber-Angriffe in Office 365 gelten, wie Sie einen bestimmten Angriff positiv bestätigen und wie Sie darauf reagieren.
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598722"
 
 Nicht alle Cyberangriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in ihrer Defensiv Strategie, oder Sie nutzen alte. Wenn Sie wissen, wie ein Angriff erkannt werden kann, können Sie schneller darauf reagieren, wodurch die Dauer des Sicherheitsvorfalls verkürzt wird.
 
-Diese Artikelreihe hilft Ihnen zu verstehen, wie ein bestimmter Angriffs in Office 365 aussehen kann, und gibt Ihnen die Schritte, die Sie ergreifen können, um zu reagieren. Sie sind schnelle Einstiegspunkte für das Verständnis:
+Diese Artikelreihe hilft Ihnen zu verstehen, welche Art von Angriff in Microsoft 365 möglicherweise aussieht, und gibt Ihnen die Schritte, die Sie ergreifen können, um zu reagieren. Sie sind schnelle Einstiegspunkte für das Verständnis:
 
 - Was der Angriff ist und wie er funktioniert.
 
@@ -55,9 +55,9 @@ Diese Artikelreihe hilft Ihnen zu verstehen, wie ein bestimmter Angriffs in Offi
 
 - [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sicherer Microsoft 365 wie ein Cyber pro
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
+Ihr Microsoft 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können.  Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden zum Sichern Ihrer Microsoft 365-Organisation zu implementieren.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

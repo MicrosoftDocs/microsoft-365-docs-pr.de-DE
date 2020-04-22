@@ -1,5 +1,5 @@
 ---
-title: Bericht "nicht akzeptierte Domäne"
+title: Bericht zu nicht akzeptierten Domänen
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,18 +11,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088469"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635280"
 ---
-# <a name="non-accepted-domain-report"></a>Bericht "nicht akzeptierte Domäne"
+# <a name="non-accepted-domain-report"></a>Bericht zu nicht akzeptierten Domänen
 
-Ähnlich wie bei der **Absenderdomänen** Einsicht identifiziert die **nicht akzeptierte Domäne** Insight Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte Domäne in Ihrer Office 365 Organisation konfiguriert.
+Ähnlich wie bei der **Absenderdomänen** Einsicht identifiziert die **nicht akzeptierte Domäne** Insight Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte Domäne in Ihrer Organisation konfiguriert.
 
-Office 365 können diese Nachrichten Drosseln, wenn wir Daten haben, um zu beweisen, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was passiert, und das Problem zu beheben.
+Microsoft 365 kann diese Nachrichten Drosseln, wenn wir Daten haben, um zu beweisen, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was passiert, und das Problem zu beheben.
 
 ![Der Bericht nicht akzeptierte Domäne im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
 

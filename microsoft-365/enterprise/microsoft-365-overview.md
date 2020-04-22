@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631561"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -32,7 +32,7 @@ Microsoft 365 for Enterprise besteht aus folgenden Elementen:
 
 |||
 |:-------|:-----|
-| Lokale und Cloud-basierte apps und Produktivitätsdienste | Umfasst Office 365 ProPlus, die neuesten Office-Apps für Ihren PC und Mac (z. B. Word, Excel, PowerPoint und Outlook) und den vollen Umfang von Onlinediensten für E-Mail, Dateispeicher und Zusammenarbeit, Besprechungen und vieles mehr. |
+| Lokale und Cloud-basierte apps und Produktivitätsdienste | Umfasst sowohl Microsoft 365-Apps für Unternehmen, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere) sowie eine vollständige Sammlung von Onlinediensten für e-Mail, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
 | Windows 10 Enterprise | Erfüllt die Anforderungen von Groß-und mittelständischen Organisationen und stellt Benutzern die produktivste und sichere Version von Windows-und IT-Experten mit umfassender Bereitstellung, Geräte-und App-Verwaltung zur Verfügung. |
 | Geräteverwaltung und erweiterte Sicherheitsdienste | Umfasst Microsoft InTune, ein Cloud-basierter Dienst für die Enterprise Mobility-Verwaltung (EMM), mit dem Ihre Mitarbeiter produktiv arbeiten und Ihre Unternehmensdaten geschützt werden können. |
 |||
@@ -45,7 +45,7 @@ Microsoft 365 for Enterprise ist in drei Plänen verfügbar.
 |:-------|:-----|
 | E3 | Greifen Sie auf Kernprodukte und-Features in Microsoft 365 zu, um die Produktivität am Arbeitsplatz zu verbessern und Innovationen sicher zu fördern. |
 | E5 | Greifen Sie auf die neuesten Produkte und Features in Microsoft 365, einschließlich Advanced Threat Protection, Security and Collaboration Tools, zu.. Umfasst alle E3's-Funktionen sowie erweiterte Sicherheits-, sprach-und Datenanalysetools. |
-| F3 | Stellen Sie eine Verbindung mit ihren First-Workern über speziell entwickelte Tools und Ressourcen her, mit denen Sie Ihre besten Aufgaben erledigen können. |
+| F1 | Stellen Sie eine Verbindung mit ihren First-Workern über speziell entwickelte Tools und Ressourcen her, mit denen Sie Ihre besten Aufgaben erledigen können. |
 |||
 
 Wenn Sie Microsoft 365 E3 haben, können Sie auch diese [Angebote](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)erhalten:
@@ -55,7 +55,7 @@ Wenn Sie Microsoft 365 E3 haben, können Sie auch diese [Angebote](https://www.m
 
 Diese Angebote enthalten zusätzliche Funktionen, die in Microsoft 365 E5 enthalten sind.
 
-Weitere Informationen dazu, was in jedem Plan enthalten ist, finden Sie unter [Transform Your Enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
+Weitere Informationen finden Sie unter [Features und Funktionen für jeden Plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
 ## <a name="get-the-big-picture"></a>Holen Sie sich das große Bild
 
@@ -125,7 +125,7 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 ## <a name="additional-microsoft-365-solutions"></a>Weitere Microsoft 365-Lösungen
 
-- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   Kombinieren Sie die Funktionen von Office 365 in puncto Produktivität und Zusammenarbeit mit Geräte und Lösungen zum Schutz von Geschäftsdaten für kleine und mittlere Unternehmen (SMB).
 

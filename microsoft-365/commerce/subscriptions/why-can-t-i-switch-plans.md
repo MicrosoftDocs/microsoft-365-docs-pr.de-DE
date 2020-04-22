@@ -1,5 +1,5 @@
 ---
-title: Warum kann ich den Office 365 Business-Plan nicht wechseln?
+title: Warum kann ich Microsoft 365 for Business-Pläne nicht wechseln?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,14 +23,14 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Grundlegendes zu den Ursachen, warum manchmal das Wechseln von Plänen manuell oder durch Anruf Unterstützung erfolgt.
-ms.openlocfilehash: 5aa0885c9f7d68dc46618522de00efe26701551f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211973"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631929"
 ---
-# <a name="why-cant-i-switch-office-365-for-business-plans"></a>Warum kann ich den Office 365 Business-Plan nicht wechseln?
+# <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Warum kann ich Microsoft 365 for Business-Pläne nicht wechseln?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]

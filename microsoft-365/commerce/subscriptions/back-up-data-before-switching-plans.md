@@ -1,5 +1,5 @@
 ---
-title: Sichern von Daten vor dem Umstieg auf Office 365 Business-Pläne
+title: Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Sichern Sie Outlook-, OneDrive-, Yammer- und SharePoint-Inhalte, bevor Sie Office 365-Abonnements wechseln oder wenn ein Benutzer die Organisation verlässt.
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten vor dem Wechsel von Microsoft 365-Abonnements oder wenn ein Benutzer die Organisation verlässt.
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105747"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636080"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>Sichern von Daten vor dem Umstieg auf Office 365 Business-Pläne
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
 
-[] Wenn ein Benutzer auf ein anderes Abonnement umgestellt wird, das über weniger datenbezogene Dienste verfügt oder ein Benutzer die Organisation verlässt, kann eine Kopie von dessen Daten, die in Office 365 gespeichert sind, vor dem Umstieg in das neue Abonnement heruntergeladen werden.
+Wenn ein Benutzer zu einem anderen Abonnement mit weniger datenbezogenen Diensten gewechselt wird oder ein Benutzer die Organisation verlässt, kann eine Kopie der in Microsoft 365 gespeicherten Daten heruntergeladen werden, bevor Sie zum neuen Abonnement gewechselt werden.
   
 ## <a name="save-a-copy-of-outlook-information"></a>Sichern einer Kopie von Outlook-Daten
 
@@ -48,7 +48,7 @@ Administratoren können alle Nachrichten, Notizen, Dateien, Themen, Benutzer und
   
 ## <a name="how-to-save-sharepoint-information"></a>Sichern von SharePoint-Daten
 
-Wenn ein Benutzer von einem Abonnement, in dem SharePoint Online verfügbar ist, zu einem Abonnent wechselt, in dem SharePoint Online nicht verfügbar ist, wird die Kachel **SharePoint** im Office 365-Menü nicht mehr angezeigt.
+Wenn ein Benutzer von einem Abonnement umgeschaltet wird, das über SharePoint Online verfügt, wird die **SharePoint** -Kachel nicht mehr in Ihrem Microsoft 365-Menü angezeigt.
   
 Solange sich das neue Abonnement jedoch in derselben Organisation wie der befindet, in der der Umstieg erfolgt ist, sind die Benutzer weiterhin in der Lage, auf die SharePoint-Teamwebsite zuzugreifen. Sie können Notizbücher, Dokumente, Aufgabe und Kalender anzeigen und aktualisieren, indem sie die direkte URL der Teamwebsite aufrufen.
   

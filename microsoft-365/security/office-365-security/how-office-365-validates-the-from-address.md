@@ -1,5 +1,5 @@
 ---
-title: Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern
+title: Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Lear über die Anforderungen an von e-Mail-Adressen für eingehende Nachrichten in Office 365. Ab November 2017 erfordert der Dienst jetzt RFC-konform von Adressen, um Spoofing zu verhindern.
-ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Lear über die Anforderungen an von e-Mail-Adressen für eingehende Nachrichten in Microsoft 365. Ab November 2017 erfordert der Dienst jetzt RFC-konform von Adressen, um Spoofing zu verhindern.
+ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529001"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633978"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern
+# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern
 
-Office 365 e-Mail-Konten erhalten eine immer größere Anzahl von Phishing-Angriffen. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Office 365 und Outlook.com jetzt eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
+Microsoft 365-e-Mail-Konten erhalten eine immer größere Anzahl von Phishing-Angriffen. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Microsoft 365 und Outlook.com jetzt eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
 
 **Hinweise**:
 
@@ -75,31 +75,31 @@ Die folgenden e-Mail-Adressen sind gültig:
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>`(Nicht empfohlen, da der Anzeigename nicht in doppelte Anführungszeichen eingeschlossen ist.)
+- `From: Microsoft 365 <sender@contoso.com>`(Nicht empfohlen, da der Anzeigename nicht in doppelte Anführungszeichen eingeschlossen ist.)
 
 Die folgenden e-Mail-Adressen sind ungültig:
 
-- **Keine Absender**Adresse: einige automatisierte Nachrichten enthalten keine Absenderadresse. Wenn Office 365 oder Outlook.com in der Vergangenheit eine Nachricht ohne Absenderadresse empfangen hat, hat der Dienst den folgenden Standardwert von: Address hinzugefügt, um die Nachricht zuzustellen:
+- **Keine Absender**Adresse: einige automatisierte Nachrichten enthalten keine Absenderadresse. Wenn Microsoft 365 oder Outlook.com in der Vergangenheit eine Nachricht ohne Absenderadresse empfangen hat, hat der Dienst den folgenden Standardwert von: Address hinzugefügt, um die Nachricht zuzustellen:
 
   `From: <>`
 
   Nachrichten mit leerer Absenderadresse werden nun nicht mehr akzeptiert.
 
-- `From: Office 365 sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
+- `From: Microsoft 365 sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(Text nach der e-Mail-Adresse.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Text nach der e-Mail-Adresse.)
 
 - `From: Sender, Example <sender.example@contoso.com>`(Der Anzeigename enthält ein Komma, ist jedoch nicht in doppelte Anführungszeichen eingeschlossen.)
 
-- `From: "Office 365 <sender@contoso.com>"`(Der gesamte Wert ist falsch in doppelte Anführungszeichen eingeschlossen.)
+- `From: "Microsoft 365 <sender@contoso.com>"`(Der gesamte Wert ist falsch in doppelte Anführungszeichen eingeschlossen.)
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Der Anzeigename ist vorhanden, aber die e-Mail-Adresse ist nicht in spitzen Klammern eingeschlossen.)
 
-- `From: Office 365<sender@contoso.com>`(Kein Leerzeichen zwischen dem Anzeigenamen und der linken spitzen Klammer.)
+- `From: Microsoft 365<sender@contoso.com>`(Kein Leerzeichen zwischen dem Anzeigenamen und der linken spitzen Klammer.)
 
-- `From: "Office 365"<sender@contoso.com>`(Kein Leerzeichen zwischen dem schließenden doppelten Anführungszeichen und der linken spitzen Klammer.)
+- `From: "Microsoft 365"<sender@contoso.com>`(Kein Leerzeichen zwischen dem schließenden doppelten Anführungszeichen und der linken spitzen Klammer.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Automatische Antworten auf Ihre benutzerdefinierte Domäne unterdrücken
 
@@ -115,16 +115,16 @@ Zum Beispiel:
 noreply.contoso.com IN MX .
 ```
 
-Weitere Informationen zum Einrichten von MX-Einträgen finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Weitere Informationen zum Einrichten von MX-Einträgen finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostanbieter für Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Weitere Informationen zum Veröffentlichen eines NULL MX finden Sie unter [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Überschreiben von der Adress Erzwingung
 
-Um die von-Adressanforderungen für eingehende e-Mails zu umgehen, können Sie die IP-Zulassungsliste (Verbindungsfilterung) oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, wie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md)beschrieben.
+Um die von den Adressanforderungen für eingehende e-Mails zu umgehen, können Sie die IP-Zulassungsliste (Verbindungsfilterung) oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, wie unter [Create Safe Sender Lists in Microsoft 365](create-safe-sender-lists-in-office-365.md)beschrieben.
 
-Sie können die von-Adresse-Anforderungen für ausgehende e-Mails, die Sie von Office 365 senden, nicht außer Kraft setzen. Darüber hinaus werden von Outlook.com keine Außerkraftsetzungen jeglicher Art zugelassen, auch über die Unterstützung.
+Sie können die von-Adresse-Anforderungen für ausgehende e-Mails, die Sie von Microsoft 365 senden, nicht außer Kraft setzen. Darüber hinaus werden von Outlook.com keine Außerkraftsetzungen jeglicher Art zugelassen, auch über die Unterstützung.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Weitere Möglichkeiten zum verhindern und schützen von Internetkriminalität in Office 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Weitere Möglichkeiten zum verhindern und schützen von Internetkriminalität in Microsoft 365
 
-Weitere Informationen darüber, wie Sie Ihre Organisation vor Phishing, Spam, Datenschutzverletzungen und anderen Bedrohungen stärken können, finden Sie unter [Top 10 Ways to Secure Office 365 und Microsoft 365 Business Plans](../../admin/security-and-compliance/secure-your-business-data.md).
+Weitere Informationen darüber, wie Sie Ihre Organisation vor Phishing, Spam, Datenschutzverletzungen und anderen Bedrohungen stärken können, finden Sie auf [den zehn besten wegen zum Sichern von Microsoft 365 for Business-Plänen](../../admin/security-and-compliance/secure-your-business-data.md).

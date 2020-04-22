@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: e35e380b61a94e08ff25e2e4c4bdfa28a635449e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612615"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637628"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -38,19 +38,19 @@ In dieser Phase erstellen Sie die drei Azure AD-basierten Zugriffsgruppen für d
 
 Bestimmen Sie den Satz von Benutzerkonten, die den SharePoint Online-Administratoren für die isolierte Teamwebsite entsprechen.
   
-Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste der zugehörigen Benutzerprinzipalnamen (User Principal Name, UPN) (UPN-Beispiel: belindan@contoso.com).
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste der Benutzerprinzipalnamen (UPNs) (Beispiel UPN: belindan@contoso.com).
   
 ### <a name="step-2-list-the-members-for-the-site"></a>Schritt 2: Auflisten der Mitglieder für die Website
 
 Bestimmen Sie den Satz von Benutzerkonten, die den Mitgliedern der isolierten Teamwebsite entsprechen, diejenigen, die an den in der Website gespeicherten Ressourcen zusammenarbeiten.
   
-Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste der zugehörigen UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste Ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
   
 ### <a name="step-3-list-the-viewers-for-the-site"></a>Schritt 3: Auflisten der Betrachter für die Website
 
 Bestimmen Sie den Satz von Benutzerkonten, die den Betrachtern der isolierten Teamwebsite entsprechen, diejenigen, die die auf der Website gespeicherten Ressourcen anzeigen, aber nicht ändern oder direkt an ihren Inhalten zusammenarbeiten können.
   
-Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste der zugehörigen UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste Ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
   
 Zu den Betrachtern der Website können die Unternehmensführung, Rechtsberater oder Projektbeteiligte aus mehreren Abteilungen gehören.
   
@@ -101,7 +101,7 @@ Führen Sie in diesem Schritt die folgenden Aufgaben aus:
     
 3. Fügen Sie die Liste der Benutzer aus Schritt 3 zur Zugriffsgruppe der Websitebetrachter hinzu.
     
-Wenn Sie Benutzerkonten und Gruppen über Active Directory-Domänendienste (AD DS) verwalten, fügen Sie Benutzer mithilfe der normalen AD DS Benutzer-und Gruppen Verwaltungsverfahren zu den entsprechenden Zugriffsgruppen hinzu, und warten Sie mit Ihrem Office 365 Abonnement auf die Synchronisierung.
+Wenn Sie Benutzerkonten und Gruppen über Active Directory-Domänendienste (AD DS) verwalten, fügen Sie mithilfe der normalen AD DS Benutzer-und Gruppen Verwaltungsverfahren Benutzer zu den entsprechenden Zugriffsgruppen hinzu, und warten Sie mit Ihrem Microsoft 365-Abonnement auf die Synchronisierung.
   
 Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das Microsoft 365 Admin Center oder PowerShell verwenden. Wenn Sie doppelte Gruppennamen für eine der Zugriffsgruppen haben, sollten Sie das Microsoft 365 Admin Center verwenden.
   
@@ -155,7 +155,7 @@ Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen mit
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Phase 2: Erstellen und Konfigurieren der isolierten Teamwebsite
 
-In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen. Standardmäßig umfassen neue Teamwebsites eine Office 365 Gruppe und andere zugehörige Ressourcen, in diesem Fall erstellen wir jedoch eine Teamwebsite ohne eine Office 365 Gruppe. Auf diese Weise können Berechtigungen vollständig über SharePoint verwaltet werden.
+In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen. Standardmäßig umfassen neue Teamwebsites eine Microsoft 365-Gruppe und andere zugehörige Ressourcen, in diesem Fall erstellen wir jedoch eine Teamwebsite ohne Microsoft 365-Gruppe. Auf diese Weise können Berechtigungen vollständig über SharePoint verwaltet werden.
   
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
   

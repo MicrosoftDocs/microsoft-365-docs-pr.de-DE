@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Erfahren Sie, wie Sie eine ﻿kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 erwerben.
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141623"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631905"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder kaufen eines Microsoft 365-Abonnements
 
 Microsoft 365 ist eine vollständige Lösung, die Office 365 und Windows 10 mit erweiterter Sicherheit und Geräteverwaltung kombiniert. Wenn Sie bereits ein Abonnement haben und ein Microsoft 365-Abonnement testen oder kaufen möchten, ist dies am besten über das Admin Center möglich. Die folgenden Microsoft 365-Abonnements sind im Admin Center verfügbar, damit Sie jetzt versuchen oder kaufen können:
   
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 Enterprise E3
 
@@ -41,6 +41,7 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder kaufen eines Microsoft 365-Abonnements
 
 ::: moniker range="o365-worldwide"
+
 
 1. Melden Sie sich beim Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
@@ -67,13 +68,13 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 
 11. Wählen Sie auf der Seite **Bestellbestätigung** die Option **Continue**aus.
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Melden Sie sich beim Admin Center unter [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
-2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind.
+2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind. 
 
 3. Wählen Sie die Auslassungspunkte unter dem Microsoft 365-Plan aus, den Sie ausprobieren oder kaufen möchten, und wählen Sie dann **﻿Kostenlose Testversion starten**aus, mit der Sie 25 Benutzerlizenzen für einen Zeitraum von einem Monat erhalten, oder wählen Sie **Jetzt kaufen**aus.
 
@@ -99,7 +100,6 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Melden Sie sich beim Admin Center unter [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
 2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind. 
@@ -127,14 +127,16 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 
 ::: moniker-end
 
+
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie das neue Abonnement erhalten haben, müssen Sie den Benutzern, die dieses Abonnement verwenden werden, eine Lizenz zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md).
+Nachdem Sie das neue Abonnement erhalten haben, müssen Sie den Benutzern, die dieses Abonnement verwenden werden, eine Lizenz zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md) .
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Kaufen eines weiteren Office 365 Business-Abonnements](buy-another-subscription.md)
+[Erwerben eines weiteren Microsoft 365 for Business-Abonnements](buy-another-subscription.md)
 
-[Kaufen oder Bearbeiten eines Add-Ons für Ihr Office 365 Business-Abonnement](buy-or-edit-an-add-on.md)
+[Kaufen oder Bearbeiten eines Add-ons für Microsoft 365 for Business](buy-or-edit-an-add-on.md)
 
 [Hinzufügen von Speicherplatz für Ihr Abonnement](add-storage-space.md)
+

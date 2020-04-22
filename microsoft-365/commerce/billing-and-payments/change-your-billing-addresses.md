@@ -1,5 +1,5 @@
 ---
-title: Ändern der Rechnungsadressen für Office 365 Business
+title: Ändern der Rechnungsadressen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Hier erfahren Sie, wie Sie Ihre Rechnungsadressen für Office 365 für Unternehmen aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
+description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142311"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632719"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>Ändern der Rechnungsadressen für Office 365 Business
+# <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
 Ihre Rechnung oder Rechnung enthält drei Adressen:
   
@@ -60,9 +60,6 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Ändern der Auftraggeberadresse
 
@@ -158,9 +155,9 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Ändern der alternativen E-Mail-Adresse, an die Rechnungsbenachrichtigungen gesendet werden
 
-Standardmäßig werden die Rechnungsbenachrichtigungen für Ihre Organisation an die Office 365-E-Mail-Adresse und an die alternative E-Mail-Adresse jedes globalen Administrators und Rechnungsadministrators in Ihrer Organisation gesendet. Jeder Administrator kann seine eigene alternative E-Mail-Adresse durch Aktualisieren seiner Profilinformationen ändern.
+Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an die Microsoft-e-Mail-Adresse und die Alternative e-Mail-Adresse jedes globalen und abrechnungsadministrators in Ihrer Organisation gesendet. Jeder Administrator kann seine eigene alternative E-Mail-Adresse durch Aktualisieren seiner Profilinformationen ändern.
   
-1. Melden Sie sich bei Office 365 mit Ihrem Firmen- oder Schulkonto als globaler Administrator an. [Hier erfahren Sie, wie Sie sich anmelden.](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+1. Melden Sie sich bei Microsoft 365 mit ihrem geschäftlichen oder Schulkonto als globaler Administrator an. [Hier erfahren Sie, wie Sie sich anmelden](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Wählen Sie das **Benutzersymbol**aus, und wählen Sie dann **mein Konto**aus.
   
@@ -173,9 +170,7 @@ Standardmäßig werden die Rechnungsbenachrichtigungen für Ihre Organisation an
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändern der alternativen E-Mail-Adresse für einen anderen Administrator
 
 Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren oder Rechnungsadministratoren in Ihrer Organisation ändern.
-
-::: moniker range="o365-worldwide"
-
+  
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
 
 ::: moniker-end
@@ -203,3 +198,5 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 [Grundlegendes zur Ihrer Rechnung](understand-your-invoice2.md)
 
 [Bezahlen Ihres Abonnements](pay-for-your-subscription.md)
+
+[Abonnements und Abrechnung – Administratorhilfe](../index.yml)

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Zusammenfassung: wie Contoso eine SharePoint-Website für hochregulierte Daten zur einfacheren Zusammenarbeit zwischen den Forschungsteams implementiert hat.'
-ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068271"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634252"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>SharePoint-Website für hoch vertrauliche digitale Objekte der Contoso Corporation
 
@@ -48,22 +48,22 @@ Anschließend wurden zusätzliche Berechtigungseinstellungen für die Website ko
 
 ## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>Schritt 2: Konfigurieren der Website für eine restriktive DLP-Richtlinie
 
-Zunächst wendeten Contoso-Administratoren die vorhandene **streng vertrauliche** Office 365 Aufbewahrungs Bezeichnung auf den Ordner "Dokumente" der **Forschungs** Website an.
+Zunächst wendeten Contoso-Administratoren die vorhandene **streng vertrauliche** Aufbewahrungs Bezeichnung auf den Ordner "Dokumente" der **Forschungs** Website an.
 
-Als nächstes haben Sie eine neue Office 365 DLP-Richtlinie mit dem Namen " **Forschung** " erstellt:
+Als nächstes haben Sie eine neue DLP-Richtlinie mit dem Namen " **Research** " erstellt:
 
-- Verwendet die Office 365 Aufbewahrungs Bezeichnung mit **hoher Vertraulichkeit** . 
+- Verwendet die **streng vertrauliche** Aufbewahrungs Bezeichnung. 
 - Blockiert Benutzer, wenn Sie versuchen, ein digitales Objekt auf der **Forschungs** Website außerhalb von Contoso freizugeben.
 
 Informationen zu den Konfigurationsdetails finden Sie unter [Schützen von SharePoint-Dateien mit Aufbewahrungs Bezeichnungen und DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Schritt 3: Erstellen einer sublabelgruppe für Office 365 Sensitivität für die Website
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>Schritt 3: Erstellen einer Sensitivitäts unter Bezeichnung für die Website
 
-Contoso-Administratoren haben eine neue unter Bezeichnung für Office 365 Sensitivität namens " **Research Teams** of the **streng Confidential** Label" erstellt, die:
+Contoso-Administratoren haben eine neue Sensitivitäts-unter Bezeichnung " **Research Teams** of the **streng Confidential** Label" erstellt, die:
 
 - Verschlüsselung erforderlich.
-- Erlaubt gemeinsame Author-Berechtigungen für die Gruppe " **Research** Office 365".
-- Gilt für die Gruppe " **Research** Office 365"
+- Erlaubt gemeinsame Author-Berechtigungen für die **Research** Microsoft 365-Gruppe
+- Gilt für die **Research** Microsoft 365-Gruppe
 
 Hier ist die resultierende Konfiguration der **Forschungs** Teamwebsite für streng vertrauliche Ressourcen.
 
@@ -71,7 +71,7 @@ Hier ist die resultierende Konfiguration der **Forschungs** Teamwebsite für str
 
 Dateien in Ordnern der **Forschungs** Website sind geschützt durch:
 
-- Die Websiteberechtigungen, die nur den Zugriff auf Mitglieder der Gruppe " **Research** Office 365" ermöglichen.
+- Die Websiteberechtigungen, die nur den Zugriff auf Mitglieder der Microsoft 365-Gruppe für **Forschung** erlauben.
 - Die DLP-Richtlinie für **Forschung** , die die **streng vertrauliche** Aufbewahrungs Bezeichnung und Einstellungen verwendet, die verhindern, dass die Datei für externe Benutzer freigegeben wird.
 - Die Sensitivitäts-Sublabel für **Forschungs Teams** mit Verschlüsselung und Berechtigungen, die mit der Datei transportiert werden, wenn Sie von der **Forschungs** Website verschoben oder kopiert wird.
 
@@ -86,7 +86,7 @@ Contoso-Administratoren haben alle lokalen Forschungs Dateien in der lokalen Sha
 
 ## <a name="step-5-trained-their-researchers"></a>Schritt 5: Ausbildung ihrer Forscher
 
-Contoso-Sicherheitsmitarbeiter haben die Mitglieder der Gruppe " **Research** Office 365" in einem obligatorischen Kurs geschult, der Sie schrittweise durchlaufen hat:
+Contoso-Sicherheitsmitarbeiter haben die Mitglieder der Microsoft 365- **Forschungs** Gruppe in einem obligatorischen Kurs geschult, der Sie durchschritten hat:
 
 - So greifen Sie auf die neue **Forschungs** Website und die vorhandenen Dateien zu.
 - Erklären Sie, wie neue Dateien auf der Website erstellt und neue, lokal gespeicherte Dateien hochgeladen werden.
@@ -96,7 +96,7 @@ Contoso-Sicherheitsmitarbeiter haben die Mitglieder der Gruppe " **Research** Of
 
 Das Endergebnis ist eine sichere Umgebung, in der die Forscher über Contoso hinweg in einer sicheren Umgebung mit Dateien zusammenarbeiten können, die Forschungsinformationen enthalten. 
 
-Wenn ein Forschungsdokument mit der unter Bezeichnung " **Research Teams** " den **Forschungs** Standort verlässt, ist es verschlüsselt und nur für Mitglieder der Gruppe " **Research** Office 365" mit gültigen Anmeldeinformationen für das Benutzerkonto zugänglich.
+Wenn ein Forschungsdokument mit der unter Bezeichnung **Research Teams** die **Forschungs** Website verlässt, ist es verschlüsselt und nur für Mitglieder der Microsoft **Research** 365-Gruppe mit gültigen Anmeldeinformationen für das Benutzerkonto zugänglich.
 
 ## <a name="next-step"></a>Nächster Schritt
 

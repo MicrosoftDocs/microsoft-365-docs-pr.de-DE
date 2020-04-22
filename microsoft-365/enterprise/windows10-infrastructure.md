@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085538"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636675"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise umfasst Windows 10 Enterprise, das Ihnen die Tools biet
 Sie müssen die verschiedenen Möglichkeiten kennen, wie Sie das Betriebssystem Windows 10 bereitstellen und das richtige für Ihre Organisation auswählen können. Je nach Ihrem Microsoft 365 Enterprise-Abonnement gibt es auch Windows 10-Dienste und Sicherheitsfeatures, die Sie konfigurieren müssen, um Windows 10 optimal nutzen zu können.
 
 >[!Note]
->Um Windows 10 Enterprise und Office 365 ProPlus zusammen zu erstellen und auf einen [modernen Desktop](https://www.microsoft.com/microsoft-365/modern-desktop) umzusteigen, gehen Sie zum [Bereitstellungscenter für modernen Desktop](https://aka.ms/howtoshift).
+>Informationen zum Zusammenstellen von Windows 10 Enterprise-und Microsoft 365-Apps für Enterprise und zur Verlagerung auf einen [modernen Desktop](https://www.microsoft.com/microsoft-365/modern-desktop)finden Sie im [modernen Desktop-Bereitstellungs Center](https://aka.ms/howtoshift).
 >
 
 ## <a name="windows-10-deployment"></a>Windows 10-Bereitstellung

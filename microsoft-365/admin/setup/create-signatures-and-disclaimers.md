@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Hier erfahren Sie, wie Sie e-Mail-Signaturen, rechtliche Hinweise oder Offenlegungserklärungen allen e-Mail-Nachrichten hinzufügen, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631977"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
@@ -37,7 +37,7 @@ ms.locfileid: "42360666"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Erstellen einer Signatur, die auf alle Nachrichten angewendet wird
 
@@ -62,9 +62,9 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Wählen Sie das App ![-Startprogramm Symbol in Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)aus, und wählen Sie dann **Admin**aus.
+1. Wählen Sie das App ![-Startfeld aus](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), und wählen Sie dann **Admin**aus.
    
-    Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen. 
+    Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der apps anzuzeigen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
     
 2. Wählen Sie **Admin Center**aus, und wählen Sie dann **Exchange**aus.
     
@@ -77,14 +77,14 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 6. Wählen Sie unter **diese Regel anwenden** **die Option [für alle Nachrichten anwenden]** aus.
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Bereichs Übersichtsartikel ist für Exchange Server, gilt aber auch für Office 365.) 
+    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Bereichs Übersichtsartikel ist für Exchange Server, gilt aber auch für Microsoft 365.) 
   
 7. Lassen Sie unter "Folgendes ausführen" die Option **Haftungsausschluss anfügen** ausgewählt. 
     
 8.  Wählen Sie **Text eingeben** aus, und geben Sie Ihren Haftungsausschluss ein. 
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) zum Formatieren von Haftungsausschlüssen. (Dieser Formatierungs Artikel ist für Exchange Server, aber er gilt auch für Office 365.) 
+    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) zum Formatieren von Haftungsausschlüssen. (Dieser Formatierungs Artikel ist für Exchange Server, gilt aber auch für Microsoft 365.) 
 
 9. Wählen Sie **einen auswählen** aus, und wählen Sie **umbrechen** als Fallback Option aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
     
@@ -96,9 +96,9 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 13. Wenn Sie fertig sind, wählen Sie **Speichern** aus. 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Einschränkungen von Office 365 organisationsweiten Signaturen
+## <a name="limitations-of-organization-wide-signatures"></a>Einschränkungen von organisationsweiten Signaturen
 
-Sie können nicht mit Office 365 Signaturen Folgendes ausführen:
+Mit Microsoft 365-Signaturen können Sie Folgendes nicht ausführen:
   
 - Einfügen der Signatur direkt unter der letzten e-Mail-Antwort oder Weiterleitung
     
@@ -112,6 +112,6 @@ Um diese und andere Funktionen zu erhalten, verwenden Sie ein Drittanbietertool.
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-- Informationen zur Verwendung von PowerShell finden Sie unter [organisationsweite Nachrichten Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Office 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
+- Informationen zur Verwendung von PowerShell finden Sie unter [organisationsweite Nachrichten Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
     
 

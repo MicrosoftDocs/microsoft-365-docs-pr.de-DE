@@ -1,5 +1,5 @@
 ---
-title: Schutz vor Bedrohungen in Office 365
+title: Schutz vor Bedrohungen
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,16 +17,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: 34a89f9db0ca7424d90909f09f7a2bfb4fcf3b6a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528557"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634460"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
+# <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
-Office 365 enthält eine Vielzahl von Features zum Schutz vor Bedrohungen. Hier ist eine Schnellstartanleitung, die Sie als Prüfliste verwenden können, um sicherzustellen, dass Ihre Threat Protection-Funktionen für Ihre Organisation eingerichtet sind. Wenn Sie neue Features für den Schutz vor Bedrohungen in Office 365 haben oder einfach nicht wissen, wo Sie beginnen sollten, verwenden Sie die folgende Anleitung als Ausgangspunkt.
+Microsoft 365 umfasst eine Vielzahl von Features zum Schutz vor Bedrohungen. Hier ist eine Schnellstartanleitung, die Sie als Prüfliste verwenden können, um sicherzustellen, dass Ihre Threat Protection-Funktionen für Ihre Organisation eingerichtet sind. Wenn Sie neue Features für den Schutz vor Bedrohungen in Office 365 haben oder einfach nicht wissen, wo Sie beginnen sollten, verwenden Sie die folgende Anleitung als Ausgangspunkt.
 
 > [!IMPORTANT]
 > Die **anfänglichen empfohlenen Einstellungen sind für jede Art von Richtlinie enthalten; viele Optionen sind jedoch verfügbar, und Sie können Ihre Einstellungen an die Anforderungen Ihrer Organisation anpassen**. Lassen Sie etwa 30 Minuten zu, bis Ihre Richtlinien oder Änderungen sich über Ihr Rechenzentrum durchsetzen.
@@ -35,7 +35,7 @@ Office 365 enthält eine Vielzahl von Features zum Schutz vor Bedrohungen. Hier 
 
 ### <a name="subscriptions"></a>Abonnements
 
-Die Features für den Bedrohungsschutz sind in allen Office 365 Abonnements enthalten; Einige Abonnements enthalten jedoch erweiterte Funktionen. In der folgenden Tabelle sind die in diesem Artikel enthaltenen Schutzfeatures zusammen mit den Mindestanforderungen für Abonnements aufgeführt.
+Die Features für den Bedrohungsschutz sind in allen Microsoft 365-Abonnements enthalten; Einige Abonnements enthalten jedoch erweiterte Funktionen. In der folgenden Tabelle sind die in diesem Artikel enthaltenen Schutzfeatures zusammen mit den Mindestanforderungen für Abonnements aufgeführt.<br/>
 
 |||
 |---|---|
@@ -53,15 +53,14 @@ Die Features für den Bedrohungsschutz sind in allen Office 365 Abonnements enth
 
 Sie müssen eine geeignete Rolle zum Konfigurieren von Richtlinien im [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)zugewiesen sein. Die folgende Tabelle enthält einige Beispiele:
 
-|||
-|---|---|
-|**Rolle oder Rollengruppe**|**Weitere Informationen**|
-|Globaler Office 365-Administrator|[Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Rolle oder Rollengruppe|Weitere Informationen|
+|---------|---------|
+|globaler Administrator|[Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Sicherheitsadministrator|[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online-Organisationsverwaltung|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Part 1 – Schutz vor Schadsoftware
 
@@ -107,7 +106,7 @@ Um ATP- [sichere Anlagen](atp-safe-attachments.md)einzurichten, müssen Sie mind
 
 5. Klicken Sie auf **Speichern**.
 
-6. (**Empfohlener zusätzlicher Schritt**) Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " mit dem Parameter " **DisallowInfectedFileDownload** " für Ihre Office 365 Umgebung auf " *true* " fest. (Dadurch wird verhindert, dass Benutzer Dateien öffnen, verschieben, kopieren oder freigeben, die als bösartig erkannt werden.)
+6. (**Empfohlener zusätzlicher Schritt**) Führen Sie als globaler Administrator oder SharePoint Online Administrator das Cmdlet " **[SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** " mit dem Parameter " **DisallowInfectedFileDownload** " für Ihre Microsoft 365-Umgebung auf *true* festgelegt. (Dadurch wird verhindert, dass Benutzer Dateien öffnen, verschieben, kopieren oder freigeben, die als bösartig erkannt werden.)
 
 Weitere Informationen finden Sie unter [Einrichten Office 365 ATP-Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) und [Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -119,7 +118,7 @@ Um ATP- [sichere Links](atp-safe-links.md)einzurichten, überprüfen und bearbei
 
 2. Doppelklicken Sie auf die **Standard** Richtlinie.
 
-3. Wählen Sie im Abschnitt **sichere Links in verwenden** die Option **Office 365 ProPlus, Office für IOS und Android**aus, und klicken Sie dann auf **Speichern**.
+3. Wählen Sie im Abschnitt **sichere Links in verwenden** die Option **Microsoft 365 Apps für Unternehmen, Office für IOS und Android**aus, und klicken Sie dann auf **Speichern**.
 
 4. Klicken Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auf das Pluszeichen (**+**).
 
@@ -215,7 +214,7 @@ Weitere Informationen finden Sie unter [Zero-Hour Auto Purge – Schutz vor Spam
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>Überwachungsprotokollierung für die Berichterstellung und Untersuchung
 
-Die Überwachungsprotokollierung steht in Abonnements zur Verfügung, die [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)umfassen. Um Daten in Threat Protection-Berichten wie dem [Sicherheits Dashboard](security-dashboard.md), [e-Mail-Sicherheitsberichten](view-email-security-reports.md)und dem [Explorer](threat-explorer.md)anzuzeigen, muss die Überwachungsprotokollierung für Ihre Organisation aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
+Die Überwachungsprotokollierung steht in Abonnements zur Verfügung, die [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)umfassen. Um Daten in Threat Protection-Berichten wie dem [Sicherheits Dashboard](security-dashboard.md), [e-Mail-Sicherheitsberichten](view-email-security-reports.md)und dem [Explorer](threat-explorer.md)anzuzeigen, muss die Überwachungsprotokollierung für Ihre Organisation aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="post-setup-tasks"></a>Aufgaben nach dem Setup
 
@@ -225,6 +224,6 @@ Nachdem Sie die Features für den Schutz vor Bedrohungen konfiguriert haben, mü
 |---|---|
 |**Nächste Schritte**|**Ressourcen mit mehr Informationen**|
 |Erfahren Sie, wie die Features für den Schutz von Bedrohungen für Ihre Organisation durch Anzeigen von Berichten funktionieren.|[Sicherheits Dashboard](security-dashboard.md)<br/>[E-Mail-Sicherheitsberichte](view-email-security-reports.md)<br/>[Reportagen für Office 365 ATP](view-reports-for-atp.md)<br/>[Sicherheitsrisiken-Explorer](threat-explorer.md)|
-|Regelmäßige Überprüfung und Überarbeitung ihrer Threat Protection-Richtlinien nach Bedarf|[Sicherheitsbewertung](../mtp/microsoft-secure-score.md)<br/>[Intelligente Berichte und Einblicke](reports-and-insights-in-security-and-compliance.md)<br/>[Untersuchung und Antwortfunktionen für Office 365 Bedrohungen](keep-users-safe-with-office-365-ti.md)|
+|Regelmäßige Überprüfung und Überarbeitung ihrer Threat Protection-Richtlinien nach Bedarf|[Sicherheitsbewertung](../mtp/microsoft-secure-score.md)<br/>[Intelligente Berichte und Einblicke](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 Threat Investigation and Response Features](keep-users-safe-with-office-365-ti.md)|
 |Überwachen neuer Features und dienstupdates|[Standard mäßige und gezielte Veröffentlichungsoptionen](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Nachrichtencenter](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Dienstbeschreibungen](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

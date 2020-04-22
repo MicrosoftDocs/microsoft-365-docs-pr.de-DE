@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409710"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634980"
 ---
 # <a name="understand-your-invoice"></a>Informationen zu Ihrer Rechnung
 
 Die Rechnung enthält eine Zusammenfassung ihrer Gebühren und Anweisungen zur Zahlung. Sie können [Ihre Online Rechnung](#view-your-online-invoice) im Microsoft 365 Admin Center anzeigen. Sie können es auch im Portable Document Format (. pdf) herunterladen, um es per e-Mail zu senden.
 
-Wenn Sie nur ein Office 365-Abonnement haben, finden Sie unter [Anzeigen der Rechnung für Office 365 für Unternehmen](view-your-bill-or-invoice.md).
+Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informationen unter [Anzeigen Ihrer Rechnung für Microsoft 365 für Unternehmen](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Grundlegendes zum Rechnungskopf
 

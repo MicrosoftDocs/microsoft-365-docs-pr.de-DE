@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Häufig gestellte Fragen und Antworten für Administratoren zum Schutz vor Spam in Exchange Online und eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636058"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>FAQ zum Anti-Spam-Schutz in Office 365
+# <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Spam für Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
+Dieses Thema enthält häufig gestellte Fragen und Antworten zum Antispamschutz für Microsoft 365-Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
 
 Informationen zu Fragen und Antworten in Bezug auf Quarantäne finden Sie unter [Häufig gestellte Fragen (FAQ) zur Quarantäne](quarantine-faq.md).
 
@@ -34,12 +34,12 @@ Fragen und Antworten zum Schutz vor Spoofing finden Sie unter [Anti-Spoofing-Sch
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>F: Was passiert standardmäßig mit einer Nachricht, die als Spam erkannt wird?
 
-A: **Für eingehende Nachrichten**: der Großteil des Spam-Mails wird über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md) und [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+A: **Für eingehende Nachrichten:** Die Mehrzahl der Spam Daten werden über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md) and [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **Für ausgehende Nachrichten**: die Nachricht wird entweder über den [risikoreichen Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet oder an den Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben. Weitere Informationen zum Schutz vor ausgehenden Spamnachrichten finden Sie unter [Outbound Spam Controls in Office 365](outbound-spam-controls.md).
+ **Für ausgehende Nachrichten:** Die Nachricht wird entweder über den risikoreichen [Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet oder an den Absender in einem Unzustellbarkeitsbericht (auch als NDR-oder Bounce-Nachricht bezeichnet) zurückgegeben. Weitere Informationen zum ausgehenden Spam Schutz finden Sie unter [Outbound Spam Controls](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>F: Was ist eine Zero-Day-Spam Variante und wie wird Sie von dem Dienst verarbeitet?
 
@@ -75,7 +75,7 @@ A: Ja, der Dienst verfügt über einen URL-Filter, der nach Nachrichten nach URL
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>F: Wie können Kunden den Dienst verwenden, um falsch negative Ergebnisse (Spam) und falsch positive Ergebnisse (kein Spam) an Microsoft zu senden?
 
-A: Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+A: Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>F: Kann ich Spamberichte abrufen?
 
@@ -97,11 +97,11 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>F: Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?
 
-A. Ja. Obwohl empfohlen wird, den MX-Eintrag auf Office 365 zu setzen, stellen wir fest, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Office 365 weiterzuleiten.
+A. Ja. Obwohl empfohlen wird, den MX-Eintrag auf Microsoft zu setzen, erkennen wir, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Microsoft weiterzuleiten.
 
 - **Eingehend**: Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Ausgehend **: Configure**Smart Host Routing from Office 365 to the Destination Third-Party Provider.
+- Ausgehend **: Konfigurieren**Sie das Smarthost-Routing von Microsoft 365 auf den Drittanbieter des Ziels.
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>F: Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?
 
@@ -133,7 +133,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
   Bei SPF-Einträgen handelt es sich um einen Mechanismus, mit dem überprüft wird, ob von einer Domäne gesendete E-Mails wirklich von dieser Domäne stammen und kein Spoofing vorliegt. Weitere Informationen zu SPF-Einträgen finden Sie unter den folgenden Links:
 
-  [Einrichten von SPF in Office 365 zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Einrichten von SPF zur Verhinderung von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

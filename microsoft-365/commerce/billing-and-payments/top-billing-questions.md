@@ -1,5 +1,5 @@
 ---
-title: Wichtige Fragen zur Abrechnung für Office 365 für Unternehmen
+title: Wichtige Fragen zur Abrechnung für Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,15 +24,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung Ihres Geschäfts Abonnements.
-ms.openlocfilehash: 661339518f43531f656ee9960d7f005fd1398023
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung für das Microsoft 365 for Business-Abonnement. '
+ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634992"
 ---
-# <a name="top-billing-questions-for-business-subscriptions"></a>Wichtige Fragen zur Abrechnung von Geschäfts Abonnements
+# <a name="top-billing-questions-for-microsoft-365-for-business"></a>Wichtige Fragen zur Abrechnung für Microsoft 365 for Business
 
 Haben Sie Fragen zu ihrer Abrechnungs Anweisung? Hier finden Sie die Antworten auf die häufigsten Fragen zur Abrechnung.
   

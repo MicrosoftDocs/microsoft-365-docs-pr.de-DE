@@ -1,19 +1,19 @@
 ---
-title: Ausnahmen vom Dienstplan
+title: Dienstplanausnahmen
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302902"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636184"
 ---
-# <a name="exceptions-to-the-service-plan"></a>Ausnahmen vom Dienstplan
+# <a name="exceptions-to-the-service-plan"></a>Dienstplanausnahmen
 
 Microsoft Managed Desktop stellt eine kuratierte Geräteliste, [Standardgeräte Einstellungen](device-policies.md), Anwendungsanforderungen und bestimmte [konfigurierbare Einstellungen](../working-with-managed-desktop/config-setting-overview.md)bereit, die für Endbenutzer eine sichere, produktive und angenehme Umgebung bieten. Es empfiehlt sich, immer bei der Bereitstellung des Diensts zu bleiben. Allerdings erkennen wir, dass einige Details des Diensts möglicherweise nicht genau den Anforderungen Ihrer Organisation entsprechen. Wenn Sie der Meinung sind, dass Sie den Dienst auf eine bestimmte Art und Weise ändern müssen, ist es wichtig, dass Sie die folgenden Prozesse befolgen, um diese Änderungen anzufordern.
  
@@ -24,10 +24,10 @@ Eine Ausnahme ist jede Ergänzung oder Änderung an der Microsoft Managed Deskto
 |Typ  |Beschreibung  |
 |---------|---------|
 |Produktivitätssoftware     |  Von Endbenutzern benötigte Vordergrund-Software, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)       |
-|Sicherheits-Agents #a0 VPNs     |  Software, die zum Sichern, überwachen oder Ändern des Verhaltens des Geräts oder Netzwerks verwendet wird       |
+|Sicherheits-Agents & VPNs     |  Software, die zum Sichern, überwachen oder Ändern des Verhaltens des Geräts oder Netzwerks verwendet wird       |
 |Digitale Erlebnis Überwachung     |  Software zum Nachverfolgen von Daten auf dem Gerät eines Benutzers, um Sie zu melden.       |
 |Hardware-oder Software Treiber     |   Gerätetreiber, eingeschränkt durch die [Anwendungsanforderungen](mmd-app-requirements.md)      |
-|Richtlinien     | Windows 10-oder Office 365 ProPlus-Einstellungen auf einem verwalteten Gerät        |
+|Richtlinien     | Windows 10-oder Microsoft 365-Apps für Enterprise-Einstellungen auf einem verwalteten Gerät        |
 |Geräte     | Geräte, die sich nicht in der Microsoft Managed Desktop- [Geräteliste](device-list.md) befinden        |
 |Andere     |  Alles, was nicht von den anderen Bereichen abgedeckt wird       |
  

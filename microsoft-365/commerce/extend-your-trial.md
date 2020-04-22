@@ -1,5 +1,5 @@
 ---
-title: Verlängern Ihrer Testversion von Office 365 Business
+title: Verlängern Ihrer Testversion
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,19 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
-description: Erfahren Sie, wie Sie Ihr Testabonnement für einen anderen 30day Zeitraum verlängern.
-ms.openlocfilehash: f3e4241156d312d5dc236689344ad29ce1e8ee4d
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Erfahren Sie, wie Sie Ihr Testabonnement für einen weiteren Zeitraum von 30 Tagen verlängern.
+ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142609"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634896"
 ---
-# <a name="extend-your-trial-for-office-365-for-business"></a>Verlängern Ihrer Testversion von Office 365 Business
+# <a name="extend-your-trial"></a>Verlängern Ihrer Testversion
 
-[] Benötigen Sie mehr Zeit, um die Features von Office 365 Business vor dem Kauf auszuprobieren? Wenn Ihr Testabonnement innerhalb von 15 Tagen abläuft und vor Ablauf dieser Frist noch nicht verlängert wurde, können Sie Ihren Testzeitraum um weitere 30 Tage verlängern. Dies können Sie nur ein Mal durchführen.
+Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem Kauf auszuprobieren? Wenn Ihr Testabonnement innerhalb von 15 Tagen abläuft und vor Ablauf dieser Frist noch nicht verlängert wurde, können Sie Ihren Testzeitraum um weitere 30 Tage verlängern. Dies können Sie nur ein Mal durchführen.
 
 ::: moniker range="o365-worldwide"
+
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
 
@@ -44,7 +45,9 @@ ms.locfileid: "43142609"
 
 ::: moniker range="o365-germany"
 
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
 
 2. Wählen Sie auf der Seite **Abonnements** das Testabonnement aus, das Sie erweitern möchten, und wählen Sie dann unter Ablaufdatum die Option **Testversion verlängern**aus.
 
@@ -62,4 +65,4 @@ ms.locfileid: "43142609"
 
 ::: moniker-end
 
-Wenn Sie fertig sind, finden Sie weitere Informationen unter [kaufen der Testversion von Office 365 für Unternehmen](buy-a-subscription-from-your-free-trial.md).
+Wenn Sie fertig sind, finden Sie weitere Informationen unter [kaufen Ihrer Testversion](buy-a-subscription-from-your-free-trial.md).

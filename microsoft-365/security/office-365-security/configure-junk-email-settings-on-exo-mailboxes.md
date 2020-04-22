@@ -16,16 +16,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 2b138830cff7337d7949606cc110ea8f7ae1c0ff
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897035"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638440"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365
 
-Die Einstellungen für die Organisation von Antispamfunktionen in Exchange Online werden durch Exchange Online Schutz gesteuert (EoP). Weitere Informationen finden Sie unter [Anti-Spam Protection in Office 365](anti-spam-protection.md).
+Die Einstellungen für die Organisation von Antispamfunktionen in Exchange Online werden durch Exchange Online Schutz gesteuert (EoP). Weitere Informationen finden Sie unter [Antispamschutz in Office 365](anti-spam-protection.md).
 
 Es gibt aber auch spezifische Antispam-Einstellungen, die Administratoren für einzelne Postfächer in Exchange Online konfigurieren können:
 
@@ -47,7 +47,7 @@ Administratoren können Exchange Online PowerShell verwenden, um den Status der 
 
 - Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Insbesondere benötigen Sie die Rolle **"e-Mail-Empfänger** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung**", " **Empfängerverwaltung**" und " **benutzerdefinierte e-Mail-Empfänger** " zugewiesen ist) oder die Rolle " **Benutzeroptionen** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung** " und " **Helpdesk** " zugewiesen ist). Informationen zum Hinzufügen von Benutzern zu Rollengruppen in Exchange Online finden Sie unter [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Beachten Sie, dass ein Benutzer mit Standardberechtigungen dieselben Verfahren in seinem eigenen Postfach ausführen kann, solange Sie [Zugriff auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)haben.
 
-- In eigenständigen EoP-Umgebungen, in denen EoP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in lokalem Exchange konfigurieren, um das EoP-Spamfilter Urteil zu übersetzen, damit die Junk-e-Mail-Regel die Nachricht in verschieben kann. der Junk-e-Mail-Ordner. Ausführliche Informationen finden Sie unter [Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Verwenden Exchange Online PowerShell zum Aktivieren oder Deaktivieren der Junk-e-Mail-Regel in einem Postfach
 
@@ -78,7 +78,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 
 - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie den vorherigen Befehl ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken `-ErrorAction SlientlyContinue` , fügen Sie den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
 
-- Selbst wenn Sie die Junk-e-Mail-Regel deaktivieren, kann der Outlook-Junk-e-Mail-Filter (je nach Konfiguration) auch ermitteln, ob es sich bei einer Nachricht um Spam handelt, und Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner basierend auf dem eigenen Spam Urteil und der Sammlung von Listen sicherer Adressen in das Postfach. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
+- Selbst wenn Sie die Junk-e-Mail-Regel deaktivieren, kann der Outlook-Junk-e-Mail-Filter (je nach Konfiguration) auch bestimmen, ob es sich bei einer Nachricht um Spam handelt, und Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner basierend auf dem eigenen Spam Urteil und der Sammlung "Listen sicherer Adressen" im Postfach verschieben können. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -169,7 +169,7 @@ Verwenden Sie eine der folgenden Vorgehensweisen, um sicherzustellen, dass die S
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook
 
-Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Office 365 ProPlus, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Microsoft 365-Apps für Unternehmen, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 Wenn der Outlook-Junk-e-Mail-Filter auf den Standardwert **No Automatic Filtering** in **Home** \> **Junk** \> **Junk e-Mail-Optionen** \> **Optionen**festgelegt ist, versucht Outlook nicht, Massagen als Spam zu klassifizieren, verwendet jedoch weiterhin die Sammlung von Listen sicherer Adressen (Liste sicherer Absender, Liste sicherer Empfänger und blockierte Absender), um Nachrichten nach der Zustellung in den Junk-e-Mail- Weitere Informationen zu diesen Einstellungen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

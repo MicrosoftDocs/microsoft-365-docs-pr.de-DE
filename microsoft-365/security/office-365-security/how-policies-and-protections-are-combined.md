@@ -1,5 +1,5 @@
 ---
-title: Reihenfolge und Priorität des e-Mail-Schutzes in Office 365
+title: Reihenfolge und Priorität des e-Mail-Schutzes
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Beschreibt die Anwendungsreihenfolge von Office 365 Schutz sowie die Art und Weise, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537413"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633966"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Reihenfolge und Priorität des e-Mail-Schutzes in Office 365
+# <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
 
-In Office 365 werden eingehende e-Mails von verschiedenen Schutzformen (Schadsoftware, Spam, Phishing usw.) ausgewertet und können daher gekennzeichnet werden. Angesichts all dieser Aktivitäten kann es schwierig sein, festzustellen, welche Richtlinie angewendet wurde und in welcher Reihenfolge.
+Als Microsoft 365-Benutzer können eingehende e-Mails durch mehrere Schutzformen gekennzeichnet werden. Beispielsweise die integrierten EoP-Anti-Phishing-Richtlinien, die allen Microsoft 365-Kunden zur Verfügung stehen, sowie die robusteren ATP-Richtlinien für die Anti-Phishing, die auch für Office 365 Advanced Threat Protection-Kunden verfügbar sind. Nachrichten werden auch durch mehrere Erkennungs Scans für Schadsoftware, Spam, Phishing, usw. geleitet. Angesichts all dieser Aktivitäten kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
 
 Im Allgemeinen wird eine Richtlinie, die auf eine Nachricht angewendet wird, im **X-Forefront-Antispam-Report-** Header in der Cat-Eigenschaft **(Category)** identifiziert. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
