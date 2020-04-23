@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise und bekannte Probleme für Microsoft Compliance Score (Preview), ein Feature im M365 Compliance Center, das das vereinfachen und Automatisieren von Risikobewertungen erleichtert.
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141550"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790590"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Versionshinweise zu Microsoft Compliance Score (Preview)
 
@@ -62,7 +62,7 @@ Viele der Funktionen, die im Compliance-Manager verarbeitet werden, können jetz
    - Benutzer müssen zum Compliance-Manager wechseln, um neue Vorlagen zu erstellen und vorhandene [Vorlagen](working-with-compliance-manager.md#templates)zu ändern. 
    - Beim Erstellen einer Vorlage müssen Sie Dimensionen für **Produkt** und **Zertifizierung** einschließen, um sicherzustellen, dass Ihre Vorlage im Kompatibilitäts Bewertungsergebnis angezeigt wird.
  - **Festlegen von Berechtigungen**: Benutzer, die noch nicht über Berechtigungen im Compliance-Manager verfügen, müssen Ihre Berechtigungen im Microsoft 365 Compliance Center festgelegt haben ([Weitere Informationen](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
-- **Übertragung von Daten**: Organisationen mit Daten in Compliance-Manager sehen diese Daten in der Kompatibilitätsbewertung, und das gleiche gilt umgekehrt.
+- **Übertragung von Daten**: Organisationen mit Daten im Compliance-Manager sehen diese Daten in der Kompatibilitätsbewertung, und das gleiche gilt umgekehrt.
 - **Anmelden beim Compliance-Manager aus Kompatibilitätsbewertung**: Wenn ein Benutzer bei der Kompatibilitätsbewertung angemeldet ist und einen Link auswählt, um zum Compliance-Manager zu wechseln, muss sich der Benutzer nicht erneut anmelden. Nachdem Sie auf den Link geklickt haben, wird in Ihrem Browser eine neue Registerkarte mit einem Dialogfeld geöffnet. Im oberen Abschnitt mit dem Header "bereits Microsoft Cloud Services-Kunde? Melden Sie sich bei Ihrem Konto an, "wählen Sie die Schaltfläche **Anmelden** aus, um sich automatisch beim Compliance-Manager anzumelden.
 
 ## <a name="known-issues-in-compliance-score-preview"></a>Bekannte Probleme in Compliance Score (Preview)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 87235d637d4c25f7e63b3b7125ea95c175c8ec3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626883"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781460"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -109,15 +109,18 @@ Wenn ein Dateiformat unterstützt wird, beispielsweise eine Word-, Excel-oder Po
   
 ## <a name="are-pdf-file-attachments-supported"></a>Werden PDF-Dateianlagen unterstützt?
 
-Ja! Sie können die Verschlüsselung für PDF-Anlagen für Ihre Organisation aktivieren. Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
+Die kurze Antwort lautet ja! Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Wenn Sie e-Mails senden, verschlüsselt der Office 365 Dienst PDF-Dateianlagen nicht den Outlook-Client. 
+
+Nachdem Sie die PDF-Dateianlagen Verschlüsselung aktiviert haben, können Sie PDFs, die Sie senden, ohne zusätzliche Schritte aus Outlook im Internet, Outlook für IOS und Outlook für Android verschlüsseln.
+
+Outlook-Desktop unterstützt keine systemeigene Verschlüsselung von PDF-Dateianlagen. Um dies zu umgehen, können Sie weiterhin die Verschlüsselung von PDF-Dateianlagen in Ihrer Organisation aktivieren. Wenn Sie e-Mails von Outlook Desktop mit einer PDF-Anlage senden, sendet der Client die Nachricht zuerst mit der Anlage an den Dienst. Wenn der Dienst die Datei empfängt, wendet der Dienst den Schutz der Datenverlust Richtlinie (Data Loss Prevention, DLP) oder der Nachrichtenfluss Regel in Exchange Online an. Als nächstes sendet Exchange Online die Nachricht mit dem geschützten PDF-Dateianhang.
+
+Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Für alle Outlook-Clients erben Nachrichten und ungeschützte PDF-Anlagen den OM-Schutz der Datenverlust Verhinderung (DLP)-Richtlinie oder der Nachrichtenfluss Regel in Exchange Online. Wenn ein Outlook im Internet-Benutzer ein ungeschütztes PDF-Dokument anhängt und den Schutz für die Nachricht anwendet, erbt die Nachricht auch den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (beispielsweise das OM-Portal und der Azure Information Protection-Viewer).
-
-  
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Werden OneDrive für Unternehmen Anlagen unterstützt?
 
 Not yet. OneDrive für Unternehmen Anlagen werden nicht unterstützt, und Endbenutzer können keine e-Mails verschlüsseln, die eine Cloud OneDrive für Unternehmen Anlage enthalten.

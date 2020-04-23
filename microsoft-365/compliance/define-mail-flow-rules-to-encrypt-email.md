@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mit Office 365 Nachrichtenverschlüsselung erlernen.
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632980"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790704"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail Nachrichten
 
@@ -93,6 +93,28 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 7. Entfernen Sie in der Liste **ausführen die folgenden** Aktionen, die zum **Ändern der Nachrichtensicherheit** \> zugewiesen sind, **die frühere Version von OM anwenden**.
 
 8. Wählen Sie **Speichern** aus.
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>Erstellen von Nachrichtenfluss Regeln zum Entfernen der Verschlüsselung für ausgehende e-Mail-Nachrichten mit den neuen OM-Funktionen
+
+Mithilfe der Exchange-Verwaltungskonsole können Sie e-Mail-Flussregeln zum Auslösen der Nachrichtenverschlüsselung mit den neuen OM-Funktionen definieren.
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>Erstellen einer Regel zum Entfernen der Verschlüsselung aus e-Mail-Nachrichten mit den neuen OM-Funktionen mithilfe der Exchange-Verwaltungskonsole
+
+1. Melden Sie sich in einem Webbrowser mit einem Arbeits-oder Schulkonto, dem globale Administratorberechtigungen erteilt wurden, bei [Office 365 an](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Wählen Sie die Kachel **Admin** aus.
+
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus ausgehenden e-Mails entfernen.
+
+6. Fügen Sie unter **diese Regel anwenden, wenn** die Bedingungen, an denen die Verschlüsselung aus Nachrichten entfernt werden soll, **den Absender** \> hinzu, der sich **innerhalb der Organisation**befindet. Fügen Sie nun zusätzliche Bedingungen hinzu, um bestimmte Empfänger zu adressieren, beispielsweise **der Empfänger** \> befindet sich **außerhalb der Organisation**.
+
+7. Wählen Sie unter **Folgendes ausführen die**Option **Nachrichtensicherheit** \> **Entfernen Office 365 Nachrichtenverschlüsselung und Rechte Schutz**aus.
+
+8. Klicken Sie auf **Speichern**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Erstellen von Nachrichtenfluss Regeln für Office 365 Nachrichtenverschlüsselung ohne die neuen Funktionen
 

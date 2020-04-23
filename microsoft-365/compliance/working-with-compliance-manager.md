@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool. Verwenden Sie es zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626231"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790662"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -35,7 +35,7 @@ Auf den Compliance-Manager kann über das Microsoft-Dienst Vertrauensstellungs P
 2. Melden Sie sich mit Ihrem Microsoft-Dienstkonto an, bei dem es sich um das Benutzerkonto Office 365, Microsoft 365 oder Azure Active Directory (Azure AD) handelt.
 
 > [!NOTE]
-> Wählen Sie im Dienst Vertrauensstellungs Portal **Compliance-Manager**aus, bei dem es sich um die Vorschauversion mit den neuesten Features handelt. Wählen Sie **Compliance-Manager (klassisch)** nicht aus, der Legacyfeatures enthält, die in dieser Dokumentation nicht behandelt werden.
+> Wählen Sie im Dienst Vertrauensstellungs Portal **Compliance-Manager**aus, bei dem es sich um die Vorschauversion mit den neuesten Features handelt. Wählen Sie **Compliance-Manager (klassisch)** nicht aus, der die Features der früh Version enthält, die in dieser Dokumentation nicht behandelt werden.
 
 ## <a name="administration"></a>Verwaltung
 

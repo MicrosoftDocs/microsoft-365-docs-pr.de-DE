@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42221997"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781450"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -40,9 +40,9 @@ Akkreditierte Drittanbieter-Assessment-Organisationen, Kratos Secureinfo und Coa
 
 NIST SP 800 – 171 Anforderungen sind eine Teilmenge von NIST SP 800-53, dem Standard, den FedRAMP verwendet. Anhang D von NIST SP 800 – 171 stellt eine direkte Zuordnung seiner Cui-Sicherheitsanforderungen zu den relevanten Sicherheitskontrollen in NIST SP 800-53 dar, für die die in-Scope-Cloud-Dienste bereits im Rahmen des FedRAMP-Programms geprüft und autorisiert wurden.
 
-Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschungseinrichtungen, Beratungsunternehmen, Fertigungsunternehmen – muss den strengen Anforderungen von NIST SP 800 – 171 entsprechen. Diese Bestätigung bedeutet, dass Microsoft-basierte Cloud-Dienste Kunden bei der Bereitstellung von Cui-Arbeitsauslastungen mit der Gewissheit unterstützen können, dass Microsoft die vollständige Compliance vorsieht. Beispielsweise treffen alle DoD-Auftragnehmer, die "abgedeckte Verteidigungsinformationen" mit in-Scope-Microsoft Cloud-Diensten in ihren Informationssystemen verarbeiten, speichern oder übertragen, die DFARS-Klauseln des US-Verteidigungsministeriums, die die Einhaltung der Sicherheitsbestimmungen erfordern. Anforderungen von NIST SP 800 – 171.
+Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschungseinrichtungen, Beratungsunternehmen, Fertigungsunternehmen – muss den strengen Anforderungen von NIST SP 800 – 171 entsprechen. Diese Bestätigung bedeutet, dass Microsoft-basierte Cloud-Dienste Kunden bei der Bereitstellung von Cui-Arbeitsauslastungen mit der Gewissheit unterstützen können, dass Microsoft die vollständige Compliance vorsieht. Beispielsweise erfüllen alle DoD-Auftragnehmer, die "abgedeckte Verteidigungsinformationen" mit in-Scope-Microsoft Cloud-Diensten in ihren Informationssystemen verarbeiten, speichern oder übertragen, die DFARS-Klauseln des US-Verteidigungsministeriums, die die Einhaltung der Sicherheitsanforderungen von NIST SP 800 – 171 erfordern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
@@ -55,7 +55,7 @@ Jede Entität, die die US-Regierung Cui verarbeitet oder speichert – Forschung
 
 ## <a name="how-to-implement"></a>Implementierung
 
-- [NIST SP 800 – 171 Blueprint](https://aka.ms/NIST-800-171-Blueprint): erhalten Sie Unterstützung für die Implementierung von Arbeitsauslastungen in Azure, die dem NIST SP 800 – 171 entsprechen.
+- [Azure Blueprint-Beispiele](https://docs.microsoft.com/azure/governance/blueprints/samples/): erhalten Sie Unterstützung für die Implementierung von Arbeitsauslastungen, die NIST-basierten Steuerelementen entsprechen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
