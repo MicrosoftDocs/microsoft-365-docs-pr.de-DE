@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 5: Optimieren der Leistung des Clients und des Office 365-Diensts'
+title: 'Schritt 5: Optimieren der Leistung des Clients und des Microsoft 365-Diensts'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Konfigurieren von TCP-Einstellungen und Office 365-Diensten für eine bessere Leistung.
-ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Konfigurieren von TCP-Einstellungen und Microsoft 365-Diensten für eine bessere Leistung.
+ms.openlocfilehash: 2db35f67ff19998b8a70742ec8fa24cb8d517c5d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631465"
 ---
-# <a name="step-5-optimize-client-and-office-365-service-performance"></a>Schritt 5: Optimieren der Leistung des Clients und des Office 365-Diensts
+# <a name="step-5-optimize-client-and-microsoft-365-service-performance"></a>Schritt 5: Optimieren der Leistung des Clients und des Microsoft 365-Diensts
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 ![Phase 1 – Netzwerken](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Sie können die Leistung durch die Optimierung der Art und Weise, wie TCP (Transmission Control-Protokoll) zwischen Clientgeräten und Office 365-Diensten funktioniert, erhöhen.
+Sie können die Leistung durch die Optimierung der Art und Weise, wie TCP (Transmission Control-Protokoll) zwischen Clientgeräten und Microsoft 365-Diensten funktioniert, erhöhen.
 
 Für Clientgeräte können Sie die folgenden TCP-Einstellungen auf Clientgeräten zum Optimieren der Leistung von TCP ändern:
 
@@ -37,7 +37,7 @@ Für Clientgeräte können Sie die folgenden TCP-Einstellungen auf Clientgeräte
 - [Maximale TCP-Segmentgröße](https://blogs.technet.microsoft.com/onthewire/2014/06/27/checking-your-tcp-packets-are-pulling-their-weight-tcp-max-segment-size-or-mss/), damit Ihr Clientgerät die größten Datenblöcke in einem Paket senden kann.
 - [Selektive TCP-Empfangsbestätigungen](https://blogs.technet.microsoft.com/onthewire/2014/06/27/ensuring-your-tcp-stack-isnt-throwing-data-away/), damit Ihr Clientgerät empfangene Daten effizienter bestätigen kann.
 
-Für Office 365-Dienste finden Sie hier weitere Informationsquellen zum Optimieren der Leistung:
+Für Microsoft 365-Dienste finden Sie hier weitere Informationsquellen zum Optimieren der Leistung:
 
 - [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
 - [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)

@@ -1,5 +1,5 @@
 ---
-title: Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
+title: Auf ein kompromittiertes E-Mail-Konto reagieren
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Office 365 erkennen und darauf reagieren.
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Microsoft 365 erkennen und darauf reagieren.
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634340"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
+# <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
-**Zusammenfassung** Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Office 365 erkennen und darauf reagieren.
+**Zusammenfassung** Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Microsoft 365 erkennen und darauf reagieren.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>Was ist ein angegriffenes E-Mail-Konto in Office 365?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>Was ist ein angegriffenes E-Mail-Konto in Microsoft 365?
 
-Der Zugriff auf Office 365-Postfächer, Daten und andere Dienste wird mithilfe von Anmeldeinformationen gesteuert, z. B. einem Benutzernamen und einem Kennwort oder einer PIN. Wenn es einer anderen Person gelingt, diese Anmeldeinformationen zu stehlen, gelten die Anmeldeinformationen als kompromittiert. Mit ihnen kann sich der Angreifer als der ursprüngliche Benutzer anmelden und unerlaubte Aktionen ausführen.
-Mit den gestohlenen Anmeldeinformationen kann der Angreifer zudem auf das Office 365-Postfach des Benutzers sowie auf SharePoint-Ordner oder -Dateien im OneDrive des Benutzers zugreifen. Angreifer senden häufig E-Mails im Namen des ursprünglichen Benutzers an Empfänger innerhalb und außerhalb der Organisation. Wenn der Angreifer Daten an externe Empfänger sendet, wird dies als Daten-Exfiltration bezeichnet.
+Der Zugriff auf Microsoft 365-Postfächer, Daten und andere Dienste wird mithilfe von Anmeldeinformationen gesteuert, z. B. einem Benutzernamen und einem Kennwort oder einer PIN. Wenn es einer anderen Person gelingt, diese Anmeldeinformationen zu stehlen, gelten die Anmeldeinformationen als kompromittiert. Mit ihnen kann sich der Angreifer als der ursprüngliche Benutzer anmelden und unerlaubte Aktionen ausführen.
+Mit den gestohlenen Anmeldeinformationen kann der Angreifer zudem auf das Microsoft 365-Postfach des Benutzers sowie auf SharePoint-Ordner oder -Dateien im OneDrive des Benutzers zugreifen. Angreifer senden häufig E-Mails im Namen des ursprünglichen Benutzers an Empfänger innerhalb und außerhalb der Organisation. Wenn der Angreifer Daten an externe Empfänger sendet, wird dies als Daten-Exfiltration bezeichnet.
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptome eines angegriffenen Office 365-E-Mail-Kontos
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Symptome eines angegriffenen Microsoft-E-Mail-Kontos
 
-Benutzer stellen möglicherweise ungewöhnliche Aktivitäten in ihren Office 365-Postfächern fest und melden diese. Hier sind einige häufige Symptome:
+Benutzer stellen möglicherweise ungewöhnliche Aktivitäten in ihren Microsoft 365-Postfächern fest und melden diese. Hier sind einige häufige Symptome:
 
 - Verdächtige Aktivitäten, z. B. fehlende oder gelöschte E-Mails.
 
@@ -58,9 +58,9 @@ Benutzer stellen möglicherweise ungewöhnliche Aktivitäten in ihren Office 365
 
 Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere Untersuchungen durchführen. Das Microsoft 365 Security & Compliance Center und das Azure-Portal bieten Tools, mit denen Sie die Aktivität eines Benutzerkontos untersuchen können, von dem Sie vermuten, dass es angegriffen wurde.
 
-- **Office 365 Unified Audit Logs im Security & Compliance Center**: Überprüfen Sie alle Aktivitäten des verdächtigen Kontos, indem Sie die Ergebnisse nach dem Datumsbereich (unmittelbar vor dem Auftreten der verdächtigen Aktivität bis zum aktuellen Datum) filtern. Filtern Sie die Aktivitäten nicht während der Suche.
+- **Unified Audit Logs im Security & Compliance Center**: Überprüfen Sie alle Aktivitäten des verdächtigen Kontos, indem Sie die Ergebnisse nach dem Datumsbereich (unmittelbar vor dem Auftreten der verdächtigen Aktivität bis zum aktuellen Datum) filtern. Filtern Sie die Aktivitäten nicht während der Suche.
 
-- **Office 365-Administratorüberwachungsprotokolle im EAC**: In Exchange Online können Sie im Exchange Admin Center (EAC) Einträge im Administratorüberwachungsprotokoll durchsuchen und anzeigen. Im Administratorüberwachungsprotokoll werden bestimmte Aktionen aufgezeichnet, die basierend auf den jeweiligen Exchange Online PowerShell-Cmdlets von Administratoren und Benutzern mit Administratorrechten ausgeführt werden. In Einträgen im Administratorüberwachungsprotokoll finden Sie Informationen dazu, welches Cmdlet ausgeführt wurde, welche Parameter verwendet wurden, wer das Cmdlet ausgeführt hat und welche Objekte betroffen sind.
+- **Administratorüberwachungsprotokolle im EAC**: In Exchange Online können Sie im Exchange Admin Center (EAC) Einträge im Administratorüberwachungsprotokoll durchsuchen und anzeigen. Im Administratorüberwachungsprotokoll werden bestimmte Aktionen aufgezeichnet, die basierend auf den jeweiligen Exchange Online PowerShell-Cmdlets von Administratoren und Benutzern mit Administratorrechten ausgeführt werden. In Einträgen im Administratorüberwachungsprotokoll finden Sie Informationen dazu, welches Cmdlet ausgeführt wurde, welche Parameter verwendet wurden, wer das Cmdlet ausgeführt hat und welche Objekte betroffen sind.
 
 - **Azure AD-Anmeldeprotokolle und andere Risikoberichte im Azure AD-Portal**: Überprüfen Sie die Werte in den folgenden Spalten:
 
@@ -72,7 +72,7 @@ Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere 
 
   - Anmeldeerfolge oder -fehler
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Sichern und Wiederherstellen der E-Mail-Funktion für ein vermutlich angegriffenes Office 365-Konto und -Postfach
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Sichern und Wiederherstellen der E-Mail-Funktion für ein vermutlich angegriffenes Microsoft 365-Konto und -Postfach
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 > [!WARNING]
 > Senden Sie das neue Kennwort nicht per E-Mail an den vorgesehenen Benutzer, da der Angreifer weiterhin Zugriff auf das Postfach hat.
 
-1. Befolgen Sie die Anweisungen zu „Zurücksetzen eines Office 365 Business-Kennworts für eine andere Person“ unter [Zurücksetzen von Office 365 Business-Kennwörtern](https://docs.microsoft.com/office365/admin/add-users/reset-passwords).
+1. Befolgen Sie die Anweisungen zu „Zurücksetzen eines Microsoft 365 Apps for Business-Kennworts für eine andere Person“ unter [Zurücksetzen von Microsoft 365 Apps for Business-Kennwörtern](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Hinweise**:
 
@@ -93,7 +93,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 
 - Verwenden Sie nicht eines Ihrer letzten fünf Kennwörter wieder. Obwohl die Kennwortverlaufsanforderung die Verwendung eines aktuelleren Kennworts zulässt, sollten Sie eines auswählen, das der Angreifer nicht erraten kann.
 
-- Wenn Ihre lokale Identität mit Office 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
+- Wenn Ihre lokale Identität mit Microsoft 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
 
 > [!TIP]
 > Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie [hier](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -178,13 +178,13 @@ Um die Sperre aufzuheben, führen Sie die Schritte unter [Entfernen von Benutzer
 
 1. Stellen Sie sicher, dass Sie die gesendeten Elemente überprüfen. Möglicherweise müssen Sie Personen in Ihrer Kontaktliste informieren, dass Ihr Konto manipuliert wurde. Angreifer können sie um Geld gebeten haben, z. B. unter dem Vorwand, dass Sie in einem anderen Land in einer Notsituation sind und Geld benötigen, oder der Angreifer hat ihnen möglicherweise einen Virus gesendet, um auch ihren Computer anzugreifen.
 
-2. Alle anderen Dienste, die dieses Exchange-Konto als alternatives E-Mail-Konto verwendet haben, wurden möglicherweise auch manipuliert. Führen Sie zunächst diese Schritte für Ihr Office 365-Abonnement aus, und führen Sie sie dann für Ihre anderen Konten aus.
+2. Alle anderen Dienste, die dieses Exchange-Konto als alternatives E-Mail-Konto verwendet haben, wurden möglicherweise auch manipuliert. Führen Sie zunächst diese Schritte für Ihr Microsoft 365-Abonnement aus, und führen Sie sie dann für Ihre anderen Konten aus.
 
 3. Stellen Sie sicher, dass Ihre Kontaktinformationen, z. B. Telefonnummern und Adressen, richtig sind.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 
-Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
+Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Microsoft 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 
@@ -194,7 +194,7 @@ Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen fü
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
 

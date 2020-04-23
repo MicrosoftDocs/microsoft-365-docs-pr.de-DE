@@ -14,12 +14,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die Optionen zum Einschränken oder Deaktivieren der Freigabe in Microsoft 365.
-ms.openlocfilehash: e6cce1102af793d38606b929951d20221eba4b12
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: ebeeefa61d9f4fc9fd77b417ccadfaa4308acb38
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604658"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632595"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Einschränken der Freigabe in Microsoft 365
 
@@ -29,7 +29,7 @@ Die Methoden zum Freigeben von Dateien sind in der nachstehenden Tabelle aufgef�
 
 |Freigabemethode|Beschreibung|Optionen für das Beschränken|
 |:-------------|:----------|:-------------|
-|[Office 365-Gruppe oder -Team](#office-365-group-or-team)|Personen, denen der Zugriff auf ein Microsoft Teams-Team oder eine Office 365-Gruppe gewährt wird, können auf Dateien auf der zugehörigen SharePoint-Website zugreifen.|Bei privaten Gruppen oder Teams gehen Freigabeeinladungen, dem Team beizutreten, zur Genehmigung an den Besitzer der Gruppe oder des Teams. Administratoren können den Gastzugang deaktivieren, um den Zugriff von Personen von außerhalb der Organisation zu verhindern.|
+|[Microsoft 365-Gruppe oder -Team](#microsoft-365-group-or-team)|Personen, denen der Zugriff auf ein Microsoft Teams-Team oder eine Microsoft 365-Gruppe gewährt wird, können auf Dateien auf der zugehörigen SharePoint-Website zugreifen.|Bei privaten Gruppen oder Teams gehen Freigabeeinladungen, dem Team beizutreten, zur Genehmigung an den Besitzer der Gruppe oder des Teams. Administratoren können den Gastzugang deaktivieren, um den Zugriff von Personen von außerhalb der Organisation zu verhindern.|
 |[SharePoint-Website](#sharepoint-site)|Personen können als Besitzer, Mitglied oder Besucher Zugriff auf eine SharePoint-Website erhalten und diese Zugriffsebene gilt auch für die Dateien auf der Website.|Die Websiteberechtigungen können eingeschränkt werden, sodass nur Websitebesitzer die Website freigeben können.|
 |[Freigeben für bestimmte Personen](#sharing-with-specific-people)|Websitemitglieder und Personen mit Bearbeitungsberechtigungen können direkte Berechtigungen für Dateien und Ordner erteilen oder diese über *Bestimmte Personen*-Links freigeben.|Die Websiteberechtigungen können eingeschränkt werden, sodass nur Websitebesitzer Dateien und Ordner freigeben können. In diesem Fall gehen die Freigabe des direkten Zugriffs und die Freigabe von *Bestimmte Personen*-Links durch Websitemitglieder an den Websitebesitzer zur Genehmigung.|
 |[SharePoint-Gastfreigabe](#sharepoint-guest-sharing)|Besitzer und Mitglieder von SharePoint-Websites können Dateien und Ordner für Personen außerhalb der Organisation freigeben.|Die Gastfreigabe kann für die gesamte Organisation oder für einzelne Websites deaktiviert werden.|
@@ -41,9 +41,9 @@ Sie können die Freigabe in Ihrer Organisation zwar mit den in diesem Artikel be
 
 Um zu verstehen, wie die Freigabe in Ihrer Organisation verwendet wird, [führen Sie einen Bericht über die Datei- und Ordnerfreigabe aus](https://docs.microsoft.com/sharepoint/sharing-reports).
 
-## <a name="office-365-group-or-team"></a>Office 365-Gruppe oder -Team
+## <a name="microsoft-365-group-or-team"></a>Microsoft 365-Gruppe oder -Team
 
-Wenn Sie die Freigabe in einer Office 365-Gruppe oder einem Microsoft Teams-Team einschränken möchten, ist es wichtig, die Gruppe oder das Team privat zu machen. Personen innerhalb Ihrer Organisation können einer öffentlichen Gruppe oder einem öffentlichen Team jederzeit beitreten. Wenn die Gruppe oder das Team nicht privat ist, gibt es keine Möglichkeit, die Freigabe des Teams oder seiner Dateien innerhalb der Organisation einzuschränken.
+Wenn Sie die Freigabe in einer Microsoft 365-Gruppe oder einem Microsoft Teams-Team einschränken möchten, ist es wichtig, die Gruppe oder das Team privat zu machen. Personen innerhalb Ihrer Organisation können einer öffentlichen Gruppe oder einem öffentlichen Team jederzeit beitreten. Wenn die Gruppe oder das Team nicht privat ist, gibt es keine Möglichkeit, die Freigabe des Teams oder seiner Dateien innerhalb der Organisation einzuschränken.
 
 ### <a name="guest-sharing"></a>Gastfreigabe
 
@@ -54,15 +54,15 @@ So deaktivieren Sie die Gastfreigabe in Teams
 2. Deaktivieren Sie **Gastzugriff in Teams ermöglichen**.
 3. Klicken Sie auf **Speichern**.
 
-Wenn Sie den Gastzugriff in Office 365-Gruppen verhindern möchten, können Sie die Gruppeneinstellungen für den Gastzugriff im Microsoft 365 Admin Center deaktivieren.
+Wenn Sie den Gastzugriff in Microsoft 365-Gruppen verhindern möchten, können Sie die Gruppeneinstellungen für den Gastzugriff im Microsoft 365 Admin Center deaktivieren.
 
-So deaktivieren Sie die Gastfreigabe in Office 365-Gruppen
+So deaktivieren Sie die Gastfreigabe in Microsoft 365-Gruppen
 1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **Einstellungen**.
-2. Klicken Sie auf der Registerkarte **Dienste** auf **Office 365-Gruppen**.
+2. Klicken Sie auf der Registerkarte **Dienste** auf **Microsoft 365-Gruppen**.
 3. Deaktivieren Sie die Kontrollkästchen **Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen** und **Gruppenbesitzer dürfen Personen außerhalb Ihrer Organisation zu Gruppen hinzufügen**.
 4. Klicken Sie auf **Änderungen speichern**.
 
-    ![Screenshot der Freigabeeinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings-off.png)
+    ![Screenshot der Freigabeeinstellungen für Microsoft 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > Wenn Sie die Gastfreigabe für eine bestimmte Gruppe oder ein bestimmtes Team verhindern möchten, können Sie dies mithilfe von Microsoft PowerShell tun. Details finden Sie unter [Blockieren von Gastbenutzern aus einer bestimmten Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group).
@@ -79,7 +79,7 @@ So erlauben Sie Freigabeeinladungen nur aus bestimmten Domänen
 
 ## <a name="sharepoint-site"></a>SharePoint-Website
 
-Sie können die Freigabe von SharePoint-Websites auf Websitebesitzer beschränken. Dadurch wird verhindert, dass Websitemitglieder die Website freigeben. Bedenken Sie Folgendes: Wenn die Website mit einer Office 365-Gruppe verbunden ist, können die Gruppenmitglieder andere in die Gruppe einladen, und diese Benutzer haben Zugriff auf die Website.
+Sie können die Freigabe von SharePoint-Websites auf Websitebesitzer beschränken. Dadurch wird verhindert, dass Websitemitglieder die Website freigeben. Bedenken Sie Folgendes: Wenn die Website mit einer Microsoft 365-Gruppe verbunden ist, können die Gruppenmitglieder andere in die Gruppe einladen, und diese Benutzer haben Zugriff auf die Website.
 
 So beschränken Sie die Freigabe von Websites auf Besitzer
 1. Klicken Sie in der Website auf das Zahnradsymbol und anschließend auf **Websiteberechtigungen**.

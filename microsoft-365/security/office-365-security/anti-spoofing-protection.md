@@ -1,5 +1,5 @@
 ---
-title: Antispoofingschutz in Office 365
+title: Antispoofingschutz
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,26 +18,26 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537521"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636034"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
+# <a name="anti-spoofing-protection"></a>Antispoofingschutz
 
-Falls Sie ein Office 365-Kunde mit Postfächern in Exchange Online oder ein Kunde des eigenständigen Exchange Online Protection-Produkts (EOP) ohne Exchange Online-Postfächer sind, beinhaltet EOP Features, die Ihre Organisation vor gefälschten („gespooften“) Absendern schützen können.
+Falls Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein Kunde des eigenständigen Exchange Online Protection-Produkts (EOP) ohne Exchange Online-Postfächer sind, beinhaltet EOP Features, die Ihre Organisation vor gefälschten („gespooften“) Absendern schützen können.
 
 Wenn es um den Schutz der Benutzer geht, nimmt Microsoft die Bedrohung durch Phishing ernst. Spoofing ist eine gängige Technik, die von Angreifern verwendet wird. **Diese gefälschten („Spoofing“-)Nachrichten scheinen von einer anderen Quelle als der tatsächlichen Quelle zu stammen**. Diese Methode wird häufig bei Phishingkampagnen verwendet, die darauf abzielen, an Anmeldeinformationen des Benutzers zu gelangen. Die Anti-Spoofing-Technologie in EOP prüft speziell auf Fälschungen des „Von“-Headers im Nachrichtentext (diese Information wird genutzt, um den Absender in E-Mail-Clients anzuzeigen). Wenn EOP mit hoher Wahrscheinlichkeit zu dem Ergebis kommt, dass der „Von“-Header gefälscht ist, wird die Nachricht als Spoof identifiziert.
 
 Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
-- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Office 365](learn-about-spoof-intelligence.md).
+- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Anti-Phishing-Richtlinien**: IN EOP können Sie mit der integrierten Anti-Phishing-Richtlinie Spoofintelligenz aktivieren oder deaktivieren, die Identifikation nicht authentifizierter Absender in Outlook aktivieren oder deaktivieren und die Aktion für blockierte Spoof-Absender angeben (in den Ordner „Junk-E-Mail“ oder „Quarantäne“ verschieben). Erweiterte Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (ATP) verfügbar sind, umfassen außerdem Einstellungen für den Identitätswechsel (geschützte Absender und Domänen), Postfach-Intelligenz-Einstellungen und anpassbare erweiterte Phishing-Schwellen. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Office 365](set-up-anti-phishing-policies.md).
+- **Anti-Phishing-Richtlinien**: IN EOP können Sie mit der integrierten Anti-Phishing-Richtlinie Spoofintelligenz aktivieren oder deaktivieren, die Identifikation nicht authentifizierter Absender in Outlook aktivieren oder deaktivieren und die Aktion für blockierte Spoof-Absender angeben (in den Ordner „Junk-E-Mail“ oder „Quarantäne“ verschieben). Erweiterte Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (ATP) verfügbar sind, umfassen außerdem Einstellungen für den Identitätswechsel (geschützte Absender und Domänen), Postfach-Intelligenz-Einstellungen und anpassbare erweiterte Phishing-Schwellen. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Office 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Office 365](email-validation-and-authentication.md).
+- **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
 Die Anti-Spoofing-Technologie von Microsoft wurde ursprünglich nur für Organisationen mit Office 365 Advanced Threat Protection (ATP) bereitgestellt. Im Oktober 2018 wurde EOP ein Anti-Spoofing-Schutz hinzugefügt.
 
@@ -113,15 +113,15 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
   - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 22 steht für organisationsinternes Spoofing.
 
-Weitere Informationen zu der Kategorie und den Werten der zusammengesetzten Authentifizierung (compauth), die sich auf Spoofing beziehen, finden Sie unter [Anti-Spam-Nachrichtenheader in Office 365](anti-spam-message-headers.md).
+Weitere Informationen zu der Kategorie und den Werten der zusammengesetzten Authentifizierung (compauth), die sich auf Spoofing beziehen, finden Sie unter [Anti-Spam-Nachrichtenheader in Microsoft 365](anti-spam-message-headers.md).
 
-Weitere Informationen über DMARC finden Sie unter [Verwenden von DMARC zur Überprüfung von E-Mails in Office 365](use-dmarc-to-validate-email.md).
+Weitere Informationen über DMARC finden Sie unter [Verwenden von DMARC zur Überprüfung von E-Mails in Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Berichte über die Anzahl von Nachrichten, die als gefälscht eingestuft wurden
 
 EOP-Organisationen können den Bericht **Erkannte Fälschungen** im Berichte-Dashboard im Security & Compliance Center verwenden. Weitere Informationen finden Sie unter [Bericht „Erkannte Fälschungen“](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP-Organisationen können den Sicherheitsrisiken-Explorer im Security & Compliance Center verwenden, um Informationen zu Phishingversuchen anzuzeigen. Weitere Informationen finden Sie unter [Office 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
+Office 365 ATP-Organisationen können den Sicherheitsrisiken-Explorer im Security & Compliance Center verwenden, um Informationen zu Phishingversuchen anzuzeigen. Weitere Informationen finden Sie unter [Microsoft 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Probleme mit dem Antispoofingschutz
 
@@ -154,7 +154,7 @@ Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfung
 
   - Erstellen Sie in Ihrem E-Mail-Client Regeln, um die Nachrichten in den Posteingang zu verschieben. Sie können auch Ihre Administratoren bitten, Außerkraftsetzungen so zu konfigurieren, wie dies in [Spoof-Intelligenz zur Konfiguration zulässiger Absender unauthentifizierter E-Mails verwenden](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email) beschrieben ist.
 
-  - Erstellen Sie ein Supportticket für Office 365, um eine Außerkraftsetzung für die Diskussionsliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird. Weitere Informationen finden Sie unter [Kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../admin/contact-support-for-business-products.md).
+  - Erstellen Sie ein Supportticket für Microsoft 365, um eine Außerkraftsetzung für die Diskussionsliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird. Weitere Informationen finden Sie unter [Kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../admin/contact-support-for-business-products.md).
 
 Falls alles andere fehlschlägt, können Sie die Nachricht als falsch-positiv an Microsoft melden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -162,4 +162,4 @@ Sie können auch Ihren Administrator kontaktieren, der ein Supportticket bei Mic
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Überlegungen zum Schutz vor Spoofing
 
-Falls Sie ein Administrator sind, der aktuell Nachrichten an Office 365 sendet, müssen Sie sicherstellen, dass Ihre E-Mails ordnungsgemäß authentifiziert werden. Andernfalls werden sie möglicherweise als Spam oder Phishingversuch gekennzeichnet. Weitere Informationen finden Sie unter [Lösungen für seriöse Absender, die nicht-authentifizierte E-Mails senden](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Falls Sie ein Administrator sind, der aktuell Nachrichten an Microsoft 365 sendet, müssen Sie sicherstellen, dass Ihre E-Mails ordnungsgemäß authentifiziert werden. Andernfalls werden sie möglicherweise als Spam oder Phishingversuch gekennzeichnet. Weitere Informationen finden Sie unter [Lösungen für seriöse Absender, die nicht-authentifizierte E-Mails senden](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).

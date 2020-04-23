@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso die Sicherheitsfunktionen für Microsoft 365 Enterprise verwendet
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636486"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
 
@@ -62,9 +62,9 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
   Den Contoso-Sicherheitsadministratoren sind Administratorrollen mit weniger Berechtigungen zugewiesen, die der Position und dem Verantwortungsbereich des IT-Mitarbeiters entsprechen.
 
-  Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-- Mehrstufige Authentifizierung für alle Benutzerkonten
+- Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten
 
   Bei der mehrstufigen Authentifizierung wird eine zusätzliche Sicherheitsstufe zum Anmeldevorgang hinzugefügt, indem Benutzer aufgefordert werden, Ihre Identität nach korrekter Eingabe des Kennworts per Telefonanruf, Textnachricht oder App-Benachrichtigung auf Ihrem Smartphone zu bestätigen. Mit der mehrstufigen Authentifizierung sind Azure AD-Benutzerkonten vor nicht autorisierter Anmeldung geschützt, selbst wenn ein Kontokennwort kompromittiert wird.
 
@@ -97,7 +97,7 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Angriffsüberwachung und -vermeidung mit der Bedrohungssuche und -reaktion von Office 365 
 
-  Contoso verwendet die [Bedrohungssuche und -reaktion von Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti), um die Office 365-Benutzer zu schützen, indem Angriffe auf einfache Weise erkannt werden und entsprechende Maßnahmen ergriffen werden können, damit so künftige Angriffe vermieden werden.
+  Contoso verwendet die [Bedrohungssuche und -reaktion von Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti), um die Benutzer zu schützen, indem Angriffe auf einfache Weise erkannt werden und entsprechende Maßnahmen ergriffen werden können, damit so künftige Angriffe vermieden werden.
 
 - Schutz vor raffinierten Angriffen mit Advanced Threat Analytics
 
@@ -107,9 +107,9 @@ In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an
 
 - Schützen von vertraulichen und hochgradig regulierten digitalen Objekten mit Azure Information Protection-Bezeichnungen
 
-  Contoso ermittelte drei Stufen für den Schutz von Daten und stellte [Office 365-Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) bereit, die Benutzer auf digitale Objekte anwenden konnten. Für Geschäftsgeheimnisse und anderes geistiges Eigentum verwendet Contoso Vertraulichkeitsunterbezeichnungen für stark regulierte Daten, die den Inhalt verschlüsseln und den Zugriff auf bestimmte Benutzerkonten und -gruppen beschränkt.
+  Contoso ermittelte drei Stufen für den Schutz von Daten und stellte [Microsoft 365-Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) bereit, die Benutzer auf digitale Objekte anwenden konnten. Für Geschäftsgeheimnisse und anderes geistiges Eigentum verwendet Contoso Vertraulichkeitsunterbezeichnungen für stark regulierte Daten, die den Inhalt verschlüsseln und den Zugriff auf bestimmte Benutzerkonten und -gruppen beschränkt.
 
-- Verhindern von Datenlecks mit Office 365 Data Loss Prevention (DLP)
+- Verhindern von Datenlecks mit Data Loss Prevention (DLP)
 
   Contoso hat [DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) für Exchange Online, SharePoint und OneDrive for Business konfiguriert, um zu verhindern, dass Benutzer versehentlich vertrauliche Daten weitergeben.
 

@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631513"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
-Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Office 365 ProPlus. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das Microsoft Endpoint Configuration Manager, Desktop Analytics, Office-Anpassungstool, OneDrive, Windows Autopilot und mehr umfasst.
+Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das Microsoft Endpoint Configuration Manager, Desktop Analytics, Office-Anpassungstool, OneDrive, Windows Autopilot und mehr umfasst.
 
 Diese Schulung wird dringend für Organisationen empfohlen, die sich auf das Ende der Lebensdauer von Windows 7 vorbereiten, und gilt auch, wenn Sie derzeit Windows 10 und Office 365 Plus oder Office 2019 verwenden. Darüber hinaus ist die Übung als isolierte Umgebung ideal geeignet, um Aktualisierungen von Bereitstellungstools zu untersuchen und die Automatisierung Ihrer Bereitstellung zu testen.
 
@@ -69,7 +69,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="office-and-lob-app-delivery"></a>Auslieferung von Office- und Branchen-Apps
 
-  - Office 365 ProPlus-Bereitstellung 
+  - Microsoft 365 Apps for Enterprise
   - Unternehmensverwaltete Bereitstellung mit Configuration Manager und Microsoft Intune
   - Anwendungsbereitstellung und -verwaltung mit Microsoft Intune
   - App-Bereitstellung und Self-Service-Installation mit Microsoft Store für Unternehmen
@@ -113,7 +113,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 5. Juli 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
+*Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 18. April 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 
@@ -125,7 +125,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
   - [<span class="underline">Planen der Windows 10-Bereitstellung</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Bereitstellungshandbuch für Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Bereitstellungshandbuch für Microsoft 365 Apps for Enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Erste Schritte mit Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

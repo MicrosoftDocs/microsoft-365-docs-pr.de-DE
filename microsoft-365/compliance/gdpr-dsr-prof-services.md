@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073326"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632496"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 
@@ -228,7 +228,7 @@ Für FastTrack-Migrationsdienste ist Microsoft der Datenauftragsverarbeiter. In 
   
 Wenn Sie Zugriff auf die Verarbeitung von Anträgen während der Verarbeitung der Daten eines Benutzers durch das FastTrack-Migrationssystem benötigen, oder Anträge berichtigen oder exportieren möchten, liegt es in der Verantwortung des Kunden, diese Anträge über seine vorhandenen Quellsysteme zu erfüllen, in denen die Benutzerdaten gespeichert sind. Sobald die Migration des Benutzers abgeschlossen ist und die Daten zum gewünschten Microsoft Cloud Service migriert wurden, gelten die von Microsoft bereitgestellten Leitfäden, wie Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zur Suche nach und zum Umgang mit persönlichen Daten nutzen können, um Anträge von betroffenen Personen zu bearbeiten. Sie finden diese Leitfäden unter [Anträge betroffener Personen für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-Wenn Sie ein Office 365-Benutzerkonto als Reaktion auf einen Antrag einer betroffenen Person auf Löschung löschen müssen, während Ihr Unternehmen in ein laufendes FastTrack-Migrationsprojekt involviert ist, müssen Sie sich bewusst sein, dass Migrationssysteme möglicherweise eine Kopie der Benutzermigrationsdaten für einen bestimmten Zeitraum nach Abschluss der Benutzermigration beibehalten. Durch die Löschung des Office 365-Benutzerkontos werden solche in den FastTrack-Migrationssystemen gespeicherten Benutzermigrationsdaten nicht automatisch gelöscht. Wenn Sie möchten, dass das Microsoft FastTrack-Team Benutzermigrationsdaten löscht, können Sie eine [Anfrage senden](https://go.microsoft.com/fwlink/?linkid=874544). Im normalen Geschäftsablauf löscht Microsoft FastTrack alle Kopien der Daten, sobald die Migration des Unternehmens abgeschlossen ist.
+Wenn Sie ein Benutzerkonto als Reaktion auf einen Antrag einer betroffenen Person auf Löschung löschen müssen, während Ihr Unternehmen in ein laufendes FastTrack-Migrationsprojekt involviert ist, müssen Sie sich bewusst sein, dass Migrationssysteme möglicherweise eine Kopie der Benutzermigrationsdaten für einen bestimmten Zeitraum nach Abschluss der Benutzermigration beibehalten. Durch die Löschung des Benutzerkontos werden solche in den FastTrack-Migrationssystemen gespeicherten Benutzermigrationsdaten nicht automatisch gelöscht. Wenn Sie möchten, dass das Microsoft FastTrack-Team Benutzermigrationsdaten löscht, können Sie eine [Anfrage senden](https://go.microsoft.com/fwlink/?linkid=874544). Im normalen Geschäftsablauf löscht Microsoft FastTrack alle Kopien der Daten, sobald die Migration des Unternehmens abgeschlossen ist.
 
 ## <a name="other-consulting-services"></a>Sonstige Beratungsdienste
 

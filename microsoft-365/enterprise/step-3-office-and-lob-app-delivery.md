@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085328"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636796"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085328"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Schritt 3: Liefern von Office- und Branchen-Apps</strong></p>
-<p>Stellen Sie sicher, dass Ihre Apps für eine automatische Installation verpackt und bereit sind. Erfahren Sie, wie Sie durch eine Klick-und-Los-Verpackung mit Office 365 ProPlus neue Optionen erhalten, um Ihre Office-Apps zu konfigurieren, zu liefern und auf dem neuesten Stand zu halten.</p></td>
+<p>Stellen Sie sicher, dass Ihre Apps für eine automatische Installation verpackt und bereit sind. Erfahren Sie, wie Sie durch eine Klick-und-Los-Verpackung mit Microsoft 365 Apps for Enterprise neue Optionen erhalten, um Ihre Office-Apps zu konfigurieren, zu liefern und auf dem neuesten Stand zu halten.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085328"
 >Office- und LOB-App-Bereitstellung ist der dritte Schritt in unserem empfohlenen Bereitstellungprozess-Rad, der die Optionen für die Installation von Office und LOB abdeckt. Für eine erfolgreiche Bereitstellung sollten Sie die ersten beiden Schritte nicht überspringen.  Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
-Sie sind nun bereit, Ihre Office- und Branchen-Apps bereitzustellen. Es gibt eine Reihe von Möglichkeiten, dies zu tun, darunter auch einige interessante neue Optionen. Während einige Anwendungen nur als kompilierte 32-Bit- oder 64-Bit-Version verfügbar sind, bieten andere wie z. B. Office 365 ProPlus sowohl nativen kompilierten 32-Bit- als auch 64-Bit-Code. Sie müssen die wichtige Entscheidung treffen, welche Version Sie bereitstellen möchten. Um zusätzliche Rechenleistung und RAM zu nutzen, empfiehlt Microsoft die 64-Bit-Version, wenn keine 32-Bit-Abhängigkeiten vorhanden sind. Wechseln Sie zu Schritt 1 Geräte- und App-Bereitschaft, um alle möglichen Herausforderungen im Bezug auf Add-In- oder dateibezogene Kompatibilität zu ermitteln.
+Sie sind nun bereit, Ihre Office- und Branchen-Apps bereitzustellen. Es gibt eine Reihe von Möglichkeiten, dies zu tun, darunter auch einige interessante neue Optionen. Während einige Anwendungen nur als kompilierte 32-Bit- oder 64-Bit-Version verfügbar sind, bieten andere wie z. B. Microsoft 365 Apps for Enterprise sowohl nativen kompilierten 32-Bit- als auch 64-Bit-Code. Sie müssen die wichtige Entscheidung treffen, welche Version Sie bereitstellen möchten. Um zusätzliche Rechenleistung und RAM zu nutzen, empfiehlt Microsoft die 64-Bit-Version, wenn keine 32-Bit-Abhängigkeiten vorhanden sind. Wechseln Sie zu Schritt 1 Geräte- und App-Bereitschaft, um alle möglichen Herausforderungen im Bezug auf Add-In- oder dateibezogene Kompatibilität zu ermitteln.
 
 Wenn Ihnen nichts im Wege steht, empfehlen wir Ihnen, die 64-Bit-Version aller Apps bereitzustellen, einschließlich Microsoft Office. Die nativen kompilierten 64-Bit-Apps bieten die beste Leistung und sind auf die Zukunft ausgelegt.
 
@@ -57,19 +57,19 @@ Software-Bereitstellungstools wie Microsoft Endpoint Configuration Manager und M
 
 ## <a name="pc-imaging"></a>PC-Imageerstellung
 
-Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstellung. In diesem Fall werden Anwendungen entweder über die Tasksequenz oder manuell auf einem Beispiel-PC installiert. Dann wird ein Systemabbild mit den erforderlichen vorinstallierten Anwendungen aufgezeichnet. Der Imaging-Ansatz zur Erstellung und Erfassung kann bei der Bereitstellung neuer PCs Zeit sparen, aber denken Sie daran, dass Betriebssysteme und Apps innerhalb des Abbilds schnell veraltet sein können. Das kumulative Updatemodell in Windows 10 und Office 365 ProPlus hilft bei diesem Problem, beseitigt es aber nicht vollständig. Deshalb empfehlen wir einen schlanken Imaging-Ansatz, bei dem Ihre Anwendungen zur Bereitstellungszeit von außerhalb des Images installiert werden.
+Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstellung. In diesem Fall werden Anwendungen entweder über die Tasksequenz oder manuell auf einem Beispiel-PC installiert. Dann wird ein Systemabbild mit den erforderlichen vorinstallierten Anwendungen aufgezeichnet. Der Imaging-Ansatz zur Erstellung und Erfassung kann bei der Bereitstellung neuer PCs Zeit sparen, aber denken Sie daran, dass Betriebssysteme und Apps innerhalb des Abbilds schnell veraltet sein können. Das kumulative Updatemodell in Windows 10 und Microsoft 365 Apps for Enterprise hilft bei diesem Problem, beseitigt es aber nicht vollständig. Deshalb empfehlen wir einen schlanken Imaging-Ansatz, bei dem Ihre Anwendungen zur Bereitstellungszeit von außerhalb des Images installiert werden.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-Wenn Sie Office 365 ProPlus in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Office 365-Anmeldeinformationen anmelden und Office 365 ProPlus aktivieren.
+Wenn Sie Microsoft 365 Apps for Enterprise in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Anmeldeinformationen anmelden und Microsoft 365 Apps for Enterprise aktivieren.
 
 [Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Bereitstellen von Office 365 ProPlus als Bestandteil eines Betriebssystemabbilds](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Bereitstellen von Microsoft 365 Apps for Enterprise als Teil eines Betriebssystemabbilds](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office Klick-und-Los 
 
-Office 365 ProPlus wird mit Klick-und-Los installiert, und Klick-und-Los ersetzt MSI-basierte Pakete in jeder anstehenden Office 2019-Version für Windows. Es bringt eine Reihe von Vorteilen mit sich, einschließlich einer schnelleren Installation, einer schnelleren und effizienteren Aktualisierung und einer saubereren Deinstallation. 
+Microsoft 365 Apps for Enterprise wird mit Klick-und-Los installiert, und Klick-und-Los ersetzt MSI-basierte Pakete in jeder anstehenden Office 2019-Version für Windows. Es bringt eine Reihe von Vorteilen mit sich, einschließlich einer schnelleren Installation, einer schnelleren und effizienteren Aktualisierung und einer saubereren Deinstallation. 
 
 Per Klick-und-Los bereitgestellte Programme werden in einer virtuellen Anwendungsumgebung auf Ihrem Computer ausgeführt und können deshalb parallel mit anderen Anwendungen existieren, ohne Konflikte auszulösen; zudem beanspruchen sie auch nur ungefähr die Hälfte des Speicherplatzes, den sie als MSI-basiertes Paket benötigen würden. Office-Anwendungen werden über das [Office-Bereitstellungstool](https://www.microsoft.com/download/details.aspx?id=49117) bereitgestellt und verwaltet, das das Office-Setup-Programm benötigt, um Ihre Office-Apps herunterzuladen, zu konfigurieren und anzupassen. Das Office-Bereitstellungstools liest eine XML-Konfigurationsdatei, die die Metadaten-Anweisungen zum Konfigurieren und Anpassen Ihrer Office-Installation bereitstellt.
 
@@ -77,15 +77,15 @@ Microsoft empfiehlt die Verwendung des [Office-Anpassungstools](https://config.o
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Wenn Sie Configuration Manager verwenden, können Sie dies weiter für die allgemeine Bereitstellung von Office 365 ProPlus verwenden. Configuration Manager (Current Branch) hat native Unterstützung für das aktualisierte Office-Anpassungstool, Paketanpassung für Klick-und-Los zum Installationszeitpunkt und native Unterstützung für die Verwaltung von Software-Updates nach der Installation.
+Wenn Sie Configuration Manager verwenden, können Sie dies weiter für die allgemeine Bereitstellung von Microsoft 365 Apps for Enterprise verwenden. Configuration Manager (Current Branch) hat native Unterstützung für das aktualisierte Office-Anpassungstool, Paketanpassung für Klick-und-Los zum Installationszeitpunkt und native Unterstützung für die Verwaltung von Software-Updates nach der Installation.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Bereitstellungshandbuch für Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Bereitstellungshandbuch für Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Verwalten von Office 365 ProPlus mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Verwalten von Microsoft 365 Apps for Enterprise mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ Weitere Informationen über MSIX finden Sie auf der Website der [MSIX Tech Commu
 
 ## <a name="next-step"></a>Nächster Schritt
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[Schritt 4: Benutzerdateien und Einstellungen](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[Schritt 4: Benutzerdateien und Einstellungen](https://aka.ms/mdd4)
 
 ## <a name="previous-step"></a>Vorheriger Schritt
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Schritt 2: Verzeichnis- und Netzwerkbereitschaft](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[Schritt 2: Verzeichnis- und Netzwerkbereitschaft](https://aka.ms/mdd2) 

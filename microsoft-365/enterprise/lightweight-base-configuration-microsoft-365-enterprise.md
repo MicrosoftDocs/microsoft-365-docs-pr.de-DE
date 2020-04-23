@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Verwenden Sie diese Tetstumgebungsanleitung zum Erstellen einer einfachen Testumgebung für das Testen von Microsoft 365 Enterprise.
-ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 04e63b1c3d9d35bd636041f8be7655ab17b1d165
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631609"
 ---
 # <a name="the-lightweight-base-configuration"></a>Die einfache Standardkonfiguration
 
@@ -63,7 +63,7 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
 5. Notieren Sie hier für Schritt 4 die Anmeldeseite (auswählen und kopieren): ![Zeile](../media/Common-Images/TableLine.png) 
 6. Notieren Sie hier die Benutzer-ID: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
-   Dieser Wert wird **Name des globalen Office 365-Administrators** genannt.
+   Dieser Wert wird **Name des globalen Administrators** genannt.
 8. Klicken Sie auf **Zu Setup wechseln**.
 9. Klicken Sie im Office 365 E5-Setup auf **Verwenden Sie *Ihre Organisation*.onmicrosoft.com weiter für E-Mails und die Anmeldung**, und klicken Sie dann auf **Beenden und zu einem späteren Zeitpunkt fortsetzen**.
 
@@ -73,11 +73,11 @@ Dann fordern wir Sie dazu auf, ein Office 365-Testabonnement zu erstellen, damit
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Phase 2: Konfigurieren des Office 365-Testabonnements
 
-In dieser Phase konfigurieren Sie Ihr Office 365-Abonnement mit weiteren Benutzern und weisen diesen Office 365 E5-Lizenzen zu.
+In dieser Phase konfigurieren Sie Ihr Abonnement mit weiteren Benutzern und weisen diesen Office 365 E5-Lizenzen zu.
   
-Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module), um Ihr Office 365-Abonnement von Ihrem Computer aus mit dem Azure Active Directory PowerShell-Modul für Graph zu verbinden.
+Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module), um Ihr Abonnement von Ihrem Computer aus mit dem Azure Active Directory PowerShell-Modul für Graph zu verbinden.
     
-Geben Sie in das Dialogfeld **Windows PowerShell Credential Request** den Namen des globalen Office 365-Administrators (z. B. "jdoe@contosotoycompany.onmicrosoft.com") und sein Kennwort ein.
+Geben Sie in das Dialogfeld **Windows PowerShell Credential Request** den Namen des globalen Administrators (z. B. "jdoe@contosotoycompany.onmicrosoft.com") und sein Kennwort ein.
   
 Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“), den zweistelligen Ländercode für Ihren Standort und ein gemeinsames Kontokennwort ein, und führen Sie dann die folgenden Befehle von der PowerShell-Eingabeaufforderung aus:
 
@@ -121,7 +121,7 @@ Sie können diesen Artikel auch ausdrucken, um die speziellen Informationen zu n
 
 Notieren Sie diese Werte:
   
-- Name des globalen Office 365-Administrators:  ![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
+- Name des globalen Administrators: ![Zeile](../media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 6 von Phase 1)
     
     Notieren Sie auch das Kennwort für dieses Konto, und bewahren Sie es an einem sicheren Ort auf.
     
@@ -291,7 +291,7 @@ Als Nächstes fügen Sie den WIN10-Computer dem Azure AD-Mandanten Ihres Microso
     
 6. Schließen Sie das Fenster mit den Einstellungen.
     
-Installieren Sie im nächsten Schritt Office 365 ProPlus auf dem WIN10-Computer.
+Installieren Sie dann Microsoft 365 Apps for Enterprise auf dem WIN10-Computer.
   
 1. Öffnen Sie den Microsoft Edge-Browser, und melden Sie sich mit den Anmeldeinformationen Ihres globalen Administratorkontos beim Office-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -309,7 +309,7 @@ Dies schließt den WIN10-Computer mit ein:
 
 - Er wurde dem Azure AD-Mandanten Ihres Microsoft 365 E5-Abonnements hinzugefügt.
 - Er wurde als Azure AD-Gerät in Microsoft Intune (EMS) registriert.
-- Auf ihm ist Office 365 ProPlus installiert.
+- Auf ihm wurde Microsoft 365 Apps for Enterprise installiert.
   
 Sie können nun die zusätzlichen Funktionen von [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) ausprobieren.
   

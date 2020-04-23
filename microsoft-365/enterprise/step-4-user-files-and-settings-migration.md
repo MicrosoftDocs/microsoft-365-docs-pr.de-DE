@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Sie Dateien und Einstellungen von Benutzern migrieren.
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636784"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Schritt 4: Migration von Benutzerdateien und -einstellungen
 
@@ -38,7 +38,7 @@ Das Verschieben der Dateien und Einstellungen der Benutzer auf die neuen oder ak
 </table>
 
 >[!NOTE]
->Obwohl Sie die bisher von Ihnen verwendeten Migrationsprozesse auch weiterhin verwenden können, empfehlen wir Ihnen beim Übergang zu Office 365 ProPlus, das Verfahren zum Verschieben von bekannten Ordnern in OneDrive zu verwenden (siehe unten). Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
+>Obwohl Sie die bisher von Ihnen verwendeten Migrationsprozesse auch weiterhin verwenden können, empfehlen wir Ihnen beim Übergang zu Microsoft 365 Apps for Enterprise, das Verfahren zum Verschieben von bekannten Ordnern in OneDrive zu verwenden (siehe unten). Den vollständigen Desktopbereitstellungsprozess finden Sie im [Desktopbereitstellungscenter](https://aka.ms/HowToShift).
 >
 
 Eine der schwierigsten und häufig hochgradig manuellen Aufgaben einer umfangreichen Bereitstellung ist das Übertragen der Dateien und Einstellungen Ihrer Benutzer. In diesem Artikel werden die verfügbaren Optionen zum Migrieren von Benutzern auf neue, aktualisierte und mit neuen Images versehene PCs behandelt.

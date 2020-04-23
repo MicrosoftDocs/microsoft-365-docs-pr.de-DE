@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602132"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632930"
 ---
 # <a name="my-number-act-japan"></a>„My Number“-Gesetz (Japan)
 
@@ -33,11 +33,11 @@ Die Personal Information Protection Commission (PPC), die als zentrale Datenschu
 
 Damit unsere japanischen Kunden personenbezogene Daten schützen können, verpflichtet sich Microsoft durch die [Microsoft Online Services-Nutzungsbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) vertraglich dazu, dass bei unseren betreffenden Business Cloud Services die technischen und Organisationssicherheitsvorkehrungen implementiert sind, die unseren Kunden bei der Einhaltung des „My Number“-Gesetzes helfen. Dies bedeutet, dass Kunden in Japan Microsoft Business Cloud Services mit dem Vertrauen darauf bereitstellen können, dass sie die gesetzlichen Vorschriften Japans einhalten.
 
-Die von der Personal Information Protection Commission (PPC) veröffentlichten [F\&A](https://www.ppc.go.jp/legal/policy/faq/) (japanisch) legen Richtlinien über die angemessene Behandlung und den Schutz personenbezogener Informationen dar. Sie sehen vor, dass ein Dritter nicht so ausgelegt wird, dass er personenbezogene Daten behandelt, wenn der Dritte in seinem Vertrag festlegt, dass (a) er dies nicht tut, und (b) ein geeignetes Zugriffssteuerungssystem einrichtet. Das „My Number“-Gesetz benennt Verpflichtungen, wenn Daten an einen Dritten übertragen werden, aber in Abschnitt [Q3–12](https://www.ppc.go.jp/legal/policy/faq/) (japanisch) der F\&A erklärt die PPC, dass diese nicht gelten, wenn der Dritte personenbezogene Daten nicht „handhabe, d. h. ständigen Zugriff darauf hat.
+Die von der Personal Information Protection Commission (PPC) veröffentlichten [F\&A](https://www.ppc.go.jp/legal/policy/faq/) (japanisch) legen Richtlinien über die angemessene Behandlung und den Schutz personenbezogener Informationen dar. Sie sehen vor, dass ein Dritter nicht so ausgelegt wird, dass er personenbezogene Daten behandelt, wenn der Dritte in seinem Vertrag festlegt, dass (a) er dies nicht tut, und (b) ein geeignetes Zugriffssteuerungssystem einrichtet. Das „My Number“-Gesetz benennt Verpflichtungen, wenn Daten an einen Dritten übertragen werden, aber in Abschnitt [Q3–12](https://www.ppc.go.jp/legal/policy/faq/) (japanisch) der F\&A erklärt die PPC, dass diese nicht gelten, wenn der Dritte personenbezogene Daten nicht „handhabe“, d. h. ständigen Zugriff darauf hat.
 
 Microsoft Business Cloud Services behandeln diese Anforderungen in den [Microsoft Online Services-Nutzungsbedingungen](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), die festlegen, dass der Besitz von und die Verantwortlichkeit für Kundendaten, die „My Number“-Daten umfassen, bei unseren Kunden liegen, nicht bei Microsoft. Der Kunde muss daher über geeignete vorhandene Kontrollmechanismen verfügen, um die in Kundendaten enthaltenen „My Number“-Daten zu schützen.
 
-Da Microsoft keinen ständigen Zugriff auf „My Number“-Daten hat, die in seinen Cloud Services gespeichert sind, ist ein Outsourcing-Vertrag über die Verarbeitung von „My Number“-Daten nicht erforderlich. Wenn ein Kunde wünscht, dass Microsoft Zugriff auf Kundendaten hat, die „My Number“-Daten umfassen, muss der Kunde für jeden Fall einen zusätzlichen Outsourcing-Vertrag mit Microsoft abschließen, bevor er einen solchen Antrag stellt.
+Da Microsoft keinen ständigen Zugriff auf „My Number“-Daten hat, die in seinen Cloud Services gespeichert sind, ist ein „Outsourcing“-Vertrag über die Verarbeitung von „My Number“-Daten nicht erforderlich. Wenn ein Kunde wünscht, dass Microsoft Zugriff auf Kundendaten hat, die „My Number“-Daten umfassen, muss der Kunde für jeden Fall einen zusätzlichen Outsourcing-Vertrag mit Microsoft abschließen, bevor er einen solchen Antrag stellt.
 
 Die Klauseln besagen auch, dass Microsoft verpflichtet ist, Kundendaten nur für die Bereitstellung von Dienstleistungen an den Kunden – nicht zu Werbe- oder ähnlichen kommerziellen Zwecken – zu verwenden, und dass Microsoft zuverlässige Zugriffssteuerungssysteme zur Verfügung stehen.
 
@@ -58,7 +58,7 @@ Microsoft Business Cloud Services unterstützt daher die Vorschriften des „My 
 
 - [Datenschutz in Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): So integriert Microsoft starken Datenschutz in Office 365.
 
-- [Administratorzugriff in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): So verwaltet Microsoft den administrativen Zugriff auf Office 365-Kundendaten.
+- [Administratorzugriff in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): So verwaltet Microsoft den administrativen Zugriff auf Kundendaten.
 
 - [Audits und Berichte in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-auditing-and-reporting-overview): Entdecken Sie die Features, die Kunden verwenden können, um Benutzer- und administrative Aktivitäten innerhalb des Mandanten nachzuverfolgen.
 

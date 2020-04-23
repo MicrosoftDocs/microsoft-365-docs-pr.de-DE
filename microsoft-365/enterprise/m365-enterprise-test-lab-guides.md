@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153916"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631597"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -76,7 +76,7 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
 
 - [Schützen von globalen Administratorkonten](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Sichern Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff ab.
+   Sperren Sie Ihre globalen Administratorkonten mit Richtlinien für bedingten Zugriff.
 
 - [Rückschreiben des Kennworts](password-writeback-m365-ent-test-environment.md)
 
@@ -116,16 +116,16 @@ Eine Veranschaulichung von Features und Funktionen im Zusammenhang mit der Verwa
 
 Eine Veranschaulichung der schutzbezogenen Features und Funktionen finden Sie unter:
 
-- [Erhöhte Office 365-Sicherheit](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Erhöhte Sicherheit in Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurieren der Einstellungen für höhere Sicherheit von Office 365 und Prüfen der integrierten Sicherheitstools.
+   Konfigurieren der Einstellungen für höhere Sicherheit von Microsoft 365 und Prüfen der integrierten Sicherheitstools.
   
 - [Datenklassifikation](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurieren und Anwenden von Office 365-Bezeichnungen auf ein Dokument in einer SharePoint Online-Teamwebsite.
+   Konfigurieren und Anwenden von Bezeichnungen auf ein Dokument in einer SharePoint Online-Teamwebsite.
     
 - [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurieren von Privileged Access Management für Just-in-Time-Zugriff auf privilegierte Aufgaben mit erhöhten Rechten in Ihrer Office 365-Organisation.
+   Konfigurieren von Privileged Access Management für Just-in-Time-Zugriff auf privilegierte Aufgaben mit erhöhten Rechten in Ihrer Organisation.
 
 

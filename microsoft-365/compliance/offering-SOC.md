@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633430"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>Berichte SOC 1, 2 und 3 – Übersicht
 
-Unternehmen lagern grundlegende Funktionen wie Datenspeicherung und Zugriff auf Anwendungen zunehmend an Clouddienstanbieter (CSPs) und andere Dienstorganisationen aus. Als Reaktion darauf hat das American Institute of Certified Public Accountants (AICPA) den Service Organization Controls (SOC) Framework entwickelt, einen Standard für Kontrollen, welche die Vertraulichkeit und den Schutz von Informationen, die in der Cloud gespeichert und verarbeitet werden, wahrt. Dieses Framework ist mit dem International Standard on Assurance Engagements (ISAE) konform, dem Berichtsstandard für internationale Dienstorganisationen.
+Unternehmen lagern grundlegende Funktionen wie Datenspeicherung und Zugriff auf Anwendungen zunehmend an Clouddienstanbieter (CSPs) und andere Dienstorganisationen aus. Als Reaktion darauf hat das American Institute of Certified Public Accountants (AICPA) den Service Organization Controls (SOC) Framework entwickelt, einen Standard für Kontrollen, welche die Vertraulichkeit und den Schutz von Informationen, die in der Cloud gespeichert und verarbeitet werden, wahrt. Dieses Rahmenwerk ist mit dem International Standard on Assurance Engagements (ISAE) konform, dem Berichtsstandard für internationale Dienstorganisationen.
 
-Dienstprüfungen, die auf dem SOC-Framework basieren, werden in eine der beiden Kategorien (SOC 1 oder SOC 2) eingestuft, die für im Umfang enthaltene Microsoft Cloud Services gelten.
+Dienstprüfungen basierend auf dem SOC-Rahmenwerk fallen in zwei Kategorien – SOC 1 und SOC 2 –, die für im Umfang enthaltene Microsoft Cloud Services gelten.
 
 Eine SOC 1-Prüfung ist für CPA-Firmen bestimmt, die Bilanzprüfungen ausführen. Bei dieser Prüfung wird die Effektivität der internen Kontrollen eines CSP bewertet, die sich auf die Finanzberichte eines Kunden auswirken, der die Cloud Services des Anbieters verwendet. Das Statement on Standards for Attestation Engagements (SSAE 18) und die International Standards for Assurance Engagements No. 3402 (ISAE 3402) sind die Standards, nach denen die Prüfung durchgeführt wird, und bilden die Grundlage für den SOC 1-Bericht.
 
@@ -35,7 +35,7 @@ Eine SOC 2-Prüfung misst die Effektivität des Systems eines CSP basierend auf 
 
 Am Ende einer SOC 1- oder SOC 2-Prüfung gibt der Wirtschaftsprüfer einen Bestätigungsvermerk in einem SOC 1 Typ 2- oder SOC 2 Typ 2-Bericht ab, der das System des CSP beschreibt und die Zuverlässigkeit der Beschreibung der Kontrollen durch den CSP bewertet. Außerdem wird bewertet, ob die Kontrollen des CSP ordnungsgemäß gestaltet sind, ob sie an einem bestimmten Datum in Betrieb waren und ob sie in einem bestimmten Zeitraum effektiv funktionierten.
 
-Prüfer können auch einen SOC 3-Bericht erstellen (eine gekürzte Version des SOC 2 Typ 2-Prüfberichts) für Benutzer, die Sicherheit im Hinblick auf die Kontrollen des CSP möchten, jedoch keinen vollständigen SOC 2-Bericht benötigen. Ein SOC 3-Bericht kann nur erstellt werden, wenn der CSP einen uneingeschränkten Bestätigungsvermerk für SOC 2 erhalten hat.
+Prüfer können auch einen SOC 3-Bericht erstellen – eine gekürzte Version des SOC 2 Typ 2-Prüfberichts – für Benutzer, die Sicherheit im Hinblick auf die Kontrollen des CSP möchten, jedoch keinen vollständigen SOC 2-Bericht benötigen. Ein SOC 3-Bericht kann nur erstellt werden, wenn der CSP einen uneingeschränkten Bestätigungsvermerk für SOC 2 erhalten hat.
 
 ## <a name="microsoft-and-soc-1-2-and-3-reports"></a>Microsoft und Berichte SOC 1, 2 und 3
 
@@ -99,7 +99,7 @@ Microsoft Cloud Services werden mindestens jährlich anhand der Standards SOC 1
 - [Office 365 Core – SSAE 18 SOC 2-Bericht](https://aka.ms/o365SOC-2)
 - [Office 365 Core – SSAE 18 SOC 3-Bericht](https://aka.ms/o365SOC-3)
 - [Office 365 Microservices T1 – SSAE 18 SOC2-Bericht (Typ I)](https://aka.ms/o365-MS-SOC-2-type1)
-- [Office 365 Kunden-Lockbox SOC 1 SSAE 16-Auditbericht](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Kunden-Lockbox SOC 1 SSAE 16-Auditbericht](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101-Auditbericht (Typ I)](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2-Bericht (Typ II)](https://aka.ms/yammerSOC-2)
 - [Siehe Bridge Letters und zusätzliche Auditberichte](https://aka.ms/auditreports)
@@ -115,7 +115,7 @@ Anhand der Berichte können Ihre Prüfer die Ergebnisse der Microsoft-Clouddiens
 
 **Wie oft werden Azure SOC-Berichte erstellt?**
 
-SOC-Berichte für Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte erscheinen halbjährlich (Ende dieses Zeitraums ist jeweils der 31. März und der 30. September). Bridge Letters werden vierteljährlich herausgegeben, normalerweise in der ersten Woche jedes Monats nach dem Quartalsende. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
+SOC-Berichte für Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte erscheinen halbjährlich (Ende dieses Zeitraums ist jeweils der 31. März und der 30. September). Bridge Letters werden im Januar herausgegeben, um den Zeitraum von 1.10. – 31.12. abzudecken und im Juli, um den Zeitraum vom 1.4. – 30.6. abzudecken. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
 
 **Muss ich eine eigene Prüfung der Microsoft-Datencenter durchführen?**
 

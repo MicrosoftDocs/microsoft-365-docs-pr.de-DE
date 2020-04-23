@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
+title: Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von MicrosoftTeams (so genannte 1xN-Chats) für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
-ms.openlocfilehash: ba3504289306543916667066738a25cf168d13e5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626451"
 ---
-# <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
+# <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer
 
 Wenn Ihre Organisation über eine Exchange-Hybridbereitstellung verfügt (oder Ihre Organisation eine lokale Exchange-Organisation mit Office 365 synchronisiert) und Microsoft Teams aktiviert hat, können Benutzer die Teams-Chatanwendung für Chatnachrichten verwenden. Bei cloudbasierten Benutzern werden die Chatdaten der Teams (ebenfalls *1xN-Chats* genannt) in ihrem primären cloudbasierten Postfach gespeichert. Wenn ein lokaler Benutzer die Teams-Chatanwendung verwendet, ist das primäre Postfach lokal untergebracht. Um diese Einschränkung zu umgehen, hat Microsoft ein neues Feature veröffentlicht, bei dem ein cloudbasierter Speicherbereich (bezeichnet als cloudbasiertes Postfach für lokale Benutzer) zum Speichern von Teams-Chatdaten für lokale Benutzer erstellt wird. Auf diese Weise können Sie das Tool für die Inhaltssuche im Security & Compliance Center verwenden, um Teams-Chatdaten für lokale Benutzer zu suchen und zu exportieren. 
   
 Hier sind die Anforderungen und Einschränkungen für das Einrichten von cloudbasierten Postfächern für lokale Benutzer:
   
-- Die Benutzerkonten in Ihrem lokalen Verzeichnisdienst (z. b. Active Directory) müssen mit Azure Active Directory, dem Verzeichnisdienst in Office 365, synchronisiert werden. Dies bedeutet, dass in Office 365 ein e-Mail-Benutzerkonto erstellt wird, das einem Benutzer zugeordnet ist, dessen primäres Postfach sich in der lokalen Organisation befindet.
+- Die Benutzerkonten in Ihrem lokalen Verzeichnisdienst (z. B. Active Directory) müssen mit Azure Active Directory, dem Verzeichnisdienst in Microsoft 365, synchronisiert werden. Dies bedeutet, dass in Microsoft 365 ein E-Mail-Benutzerkonto erstellt wird, das einem Benutzer zugeordnet ist, dessen primäres Postfach sich in der lokalen Organisation befindet.
 
 - Der Benutzer, dessen primäres Postfach in der lokalen Organisation gespeichert ist, muss eine Microsoft Teams-Lizenz und mindestens eine Exchange Online Plan 1-Lizenz zugewiesen haben.
 
@@ -39,7 +39,7 @@ Hier sind die Anforderungen und Einschränkungen für das Einrichten von cloudba
 - Sie müssen eine Anfrage an den Microsoft-Support senden, damit Ihre Organisation in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten suchen kann. Informationen hierzu finden Sie in diesem Artikel unter [Einreichen einer Anforderung an den Microsoft-Support, dieses Feature zu aktivieren](#filing-a-request-with-microsoft-support-to-enable-this-feature). 
 
 > [!NOTE]
-> Unterhaltungen eines Teams-Kanals werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, dass Sie die Inhaltssuche zum Durchsuchen von Kanal-Unterhaltungen verwenden können, ohne dass Sie eine Supportanfrage einreichen müssen. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Office 365-Gruppen](content-search.md#searching-microsoft-teams-and-office-365-groups).
+> Unterhaltungen eines Teams-Kanals werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, dass Sie die Inhaltssuche zum Durchsuchen von Kanal-Unterhaltungen verwenden können, ohne dass Sie eine Supportanfrage einreichen müssen. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -57,17 +57,17 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
   
 Geben Sie die folgenden Informationen an, wenn Sie die Anforderung an den Microsoft-Support senden:
   
-- Der Standarddomänenname Ihrer Office 365-Organisation.
+- Der Standarddomänenname Ihrer Organisation.
 
-- Der Mandantenname und die Mandanten-ID Ihrer Office 365-Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Siehe [Suchen Ihrer Office 365 Mandanten-ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
 
-- Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das Office 365 eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
+- Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
 
 Wenn die technischen Änderungen vorgenommen wurden, erhalten Sie vom Microsoft-Support ein voraussichtliches Bereitstellungsdatum. Der Bereitstellungsvorgang dauert in der Regel 2 bis 3 Wochen, nachdem Sie die Supportanfrage abgeschickt haben.
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Was geschieht nach der Aktivierung dieses Features?
 
-Nachdem dieses Feature in Ihrer Office 365-Organisation bereitgestellt wurde, werden die folgenden Änderungen in der Inhaltssuche und in Suchvorgängen, die mit einem eDiscovery-Fall im Security & Compliance Center verknüpft sind, vorgenommen:
+Nachdem dieses Feature in Ihrer Organisation bereitgestellt wurde, werden die folgenden Änderungen in der Inhaltssuche und in Suchvorgängen, die mit einem eDiscovery-Fall im Security & Compliance Center verknüpft sind, vorgenommen:
   
 - Das Kontrollkästchen **Inhalte der Office-App für lokale Benutzer hinzufügen** wird unter **Speicherorte** in der Inhaltssuche hinzugefügt.
 
@@ -143,7 +143,7 @@ Weitere Informationen über diese Cmdlets finden Sie unter:
 
  **Wo befinden sich die cloudbasierten Postfächer für lokale Benutzer?**
   
-Cloudbasierte Postfächer werden in demselben Rechenzentrum wie Ihre Office 365-Organisation erstellt und gespeichert.
+Cloudbasierte Postfächer werden in demselben Rechenzentrum wie Ihre Organisation erstellt und gespeichert.
   
  **Gibt es andere Voraussetzungen als die Einreichung einer Supportanfrage?**
   
@@ -153,7 +153,7 @@ Cloudbasierte Postfächer werden in demselben Rechenzentrum wie Ihre Office 365-
   
 Nein. Wenn Sie das primäre Postfach eines lokalen Benutzers in die Cloud migrieren, werden die Chatdaten des Teams für diesen Benutzer zum neuen cloudbasierten primären Postfach migriert.
   
- **Kann ich ein eDiscovery-Archiv oder Office 365-Aufbewahrungsrichtlinien auf lokale Benutzer anwenden?**
+ **Kann ich ein eDiscovery-Archiv oder Aufbewahrungsrichtlinien auf lokale Benutzer anwenden?**
   
 Ja. Sie können eDiscovery-Archive oder Aufbewahrungsrichtlinien für Teams-Chats und Kanalnachrichten auf cloudbasierte Postfächer für lokale Benutzer anwenden.
   
