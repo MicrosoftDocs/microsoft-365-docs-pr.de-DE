@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551146"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790632"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -141,7 +141,7 @@ Weitere Informationen zu diesen Klassifizierungen finden Sie unter [Erste Schrit
 
 Während des Vorschauzeitraums unterstützen die folgenden Apps Klassifizierungen für Vertraulichkeitsbezeichnungen:
 
-- Office 365 ProPlus-Desktop-Apps für Windows, von [Office Insider](https://office.com/insider):
+- Microsoft365-Apps für Unternehmen, Desktop-Apps für Windows, [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -152,7 +152,7 @@ Während des Vorschauzeitraums unterstützen die folgenden Apps Klassifizierunge
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Empfehlen des Anwendens einer Vertraulichkeitsbezeichnung in Office-Apps
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Dem Benutzer wird das Anwenden einer Vertraulichkeitsbezeichnung empfohlen
 
 Wenn Sie es vorziehen, können Sie Ihren Benutzern empfehlen, die Bezeichnung anzuwenden. Mithilfe dieser Option können Ihre Benutzer die Klassifizierung und alle zugehörigen Schutzmaßnahmen akzeptieren oder die Empfehlung zurückweisen, wenn die Bezeichnung für ihre Inhalte ungeeignet ist.
 
@@ -162,7 +162,7 @@ Im Folgenden finden Sie ein Beispiel für eine Aufforderung des Azure Informatio
 
 ![Aufforderung zum Anwenden einer empfohlene Bezeichnung](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Wenn automatische oder empfohlene Bezeichnungen in Office-Anwendungen angewendet werden
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>Anwenden automatischer oder empfohlener Bezeichnungen
 
 Die Implementierung der automatischen und empfohlenen Bezeichnung in Office-Apps hängt davon ab, ob Sie eine in Office integrierte Bezeichnung oder den Azure Information Protection-Client mit einheitlichen Bezeichnungen verwenden. In beiden Fällen gilt jedoch:
 
@@ -192,7 +192,7 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Voraussetzungen für Richtlinien der automatischen Bezeichnung
 
-- Die Überwachung von Office 365 muss für den Simulationsmodus aktiviert sein. Wenn Sie die Überwachung aktivieren oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
+- Die Überwachung von Microsoft 365 muss für den Simulationsmodus aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive (Public Preview) aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -202,9 +202,10 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
     - Benutzerdefinierte Vertraulichkeitsinformationstypen werden für Inhalte ausgewertet, die nach dem Speichern der benutzerdefinierten Vertraulichkeitsinformationstypen erstellt werden. 
     - Um neue benutzerdefinierte Typen sensibler Informationen zu testen, erstellen Sie diese, bevor Sie Ihre Richtlinie zum automatischen Bezeichnen erstellen, und erstellen Sie dann neue Dokumente mit Beispieldaten zum Testen.
 
-- Eine oder mehrere Vertraulichkeitsbezeichnungen [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), die Sie für Ihre Richtlinie der automatischen Bezeichnung auswählen können. Für diese Bezeichnungen:
+- Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:
     - Es spielt keine Rolle, ob das automatische Bezeichnen in den Bezeichnungseinstellungen der Office-Anwendungen ein- oder ausgeschaltet ist, da diese Bezeichnungseinstellungen die Richtlinien für die automatische Bezeichnung ergänzen, wie in der Einführung erläutert. 
     - Wenn die Etiketten, die Sie für die automatische Bezeichung verwenden möchten, für die Verwendung visueller Markierungen (Kopf- und Fußzeilen, Wasserzeichen) konfiguriert sind, beachten Sie, dass diese nicht auf Dokumente angewendet werden.
+    - Wenn die Bezeichnungen Verschlüsselungen anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen anwenden** konfiguriert sein.
 
 ### <a name="learn-about-simulation-mode"></a>Informationen zum Simulationsmodus
 
@@ -239,6 +240,8 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 2. Wählen Sie die Registerkarte **Automatisches Bezeichnen (Vorschau)** aus:
     
     ![Registerkarte „Automatisches Bezeichnen“ (Vorschau)](../media/auto-labeling-tab.png)
+    
+    Diese neue Registerkarte wird weiterhin für Mandanten bereitgestellt. Wenn sie nicht angezeigt wird, versuchen Sie es in einigen Tagen erneut.
 
 3. Wählen Sie **+ Richtlinie erstellen** aus.
 
@@ -292,5 +295,4 @@ Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch
 
 > [!TIP]
 > Sie können den Inhalts-Explorer auch verwenden, um Speicherorte zu identifizieren, die nicht bezeichnete Dokumente mit sensiblen Informationen enthalten. Anhand dieser Informationen können Sie diese Speicherorte ihrer Richtlinie zur automatischen Bezeichnung hinzufügen und die identifizierten Typen vertraulicher Informationen als Regeln aufnehmen.
-
 

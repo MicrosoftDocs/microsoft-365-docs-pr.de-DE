@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
-ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634885"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790622"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
 > [!NOTE]
-> In dieser Dokumentation wird ein veraltetes Produkt beschrieben. Benutzern wird dringend davon abgeraten, diese Version von Compliance-Manager zu verwenden; stattdessen wird empfohlen, die neue [Microsoft Compliancebewertung](compliance-score.md) zu verwenden.
+> Diese Dokumentation beschreibt eine frühere Version dieses Produkts. Benutzern wird dringend davon abgeraten, diese Version von Compliance Manager zu verwenden; stattdessen wird empfohlen, die neue [Microsoft Compliance-Bewertung](compliance-score.md) zu verwenden.
 
- *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.* 
+ *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
   
 Mit dem Compliance-Manager, einem workflowbasierten Tools zur Risikoabschätzung im Microsoft [Service Trust-Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), können Sie Complianceaktivitäten Ihres Unternehmens im Zusammenhang mit Microsoft Professional Services und Microsoft Cloud Services, z. B. Microsoft Office 365, Microsoft Dynamics 365 und Microsoft Azure, nachverfolgen, zuweisen und überprüfen. 
 
