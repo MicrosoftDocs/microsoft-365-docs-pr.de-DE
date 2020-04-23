@@ -1,5 +1,5 @@
 ---
-title: Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
+title: Einrichten neuer Nachrichtenverschlüsselungsfunktionen
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,25 +16,25 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Mit den neuen Office 365-Nachrichtenverschlüsselungsfunktionen (Office 365 Message Encryption, OME), die auf Azure Information Protection aufbauen, kann Ihre Organisation geschützte E-Mail-Kommunikation mit Personen innerhalb und außerhalb der Organisation nutzen. Die neuen OME-Funktionen arbeiten mit anderen Office 365-Organisationen, Outlook.com, Gmail und anderen E-Mail-Diensten zusammen.
-ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
-ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
+description: Mit den neuen Office 365-Nachrichtenverschlüsselungsfunktionen (Office 365 Message Encryption, OME), die auf Azure Information Protection aufbauen, kann Ihre Organisation geschützte E-Mail-Kommunikation mit Personen innerhalb und außerhalb der Organisation nutzen. Die neuen OME-Funktionen arbeiten mit anderen Organisationen, Outlook.com, Gmail und anderen E-Mail-Diensten zusammen.
+ms.openlocfilehash: 95ac1528c59dc3f59e0d0e923d78ffb7138456d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635467"
 ---
-# <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
+# <a name="set-up-new-message-encryption-capabilities"></a>Einrichten neuer Nachrichtenverschlüsselungsfunktionen
 
-Die neuen Funktionen der Office 365-Nachrichtenverschlüsselung (OME) ermöglichen es Organisationen, geschützte E-Mails mit anderen Personen auf jedem Gerät freizugeben. Benutzer können geschützte Nachrichten mit anderen Office 365-Organisationen sowie Nicht-Office 365-Kunden, die Outlook.com, Gmail und andere E-Mail-Dienste verwenden, austauschen.
+Die neuen Funktionen der Office 365-Nachrichtenverschlüsselung (OME) ermöglichen es Organisationen, geschützte E-Mails mit anderen Personen auf jedem Gerät freizugeben. Benutzer können geschützte Nachrichten mit anderen Microsoft 365-Organisationen sowie Nicht-Kunden austauschen, die Outlook.com, Gmail und andere E-Mail-Dienste verwenden.
 
-Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die neuen OME-Funktionen in Ihrer Office 365-Organisation verfügbar sind.
+Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die neuen OME-Funktionen in Ihrer Organisation zur Verfügung stehen.
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Überprüfen Sie, dass Azure Rights Management aktiv ist.
 
 Die neuen OME-Funktionen nutzen die Schutzfeatures in [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), der Technologie, die von [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) zum Schützen von E-Mails und Dokumenten mithilfe von Verschlüsselung und Zugriffssteuerelementen verwendet wird.
 
-Die einzige Voraussetzung für die Verwendung der neuen OME-Funktionen besteht darin, dass [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) im Mandanten Ihrer Organisation aktiviert sein muss. Ist dies der Fall, werden die neuen OME-Funktionen von Office 365 automatisch aktiviert, und Sie müssen nichts unternehmen.
+Die einzige Voraussetzung für die Verwendung der neuen OME-Funktionen besteht darin, dass [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) im Mandanten Ihrer Organisation aktiviert sein muss. Wenn dies zutrifft, werden die neuen OME-Funktionen von Microsoft 365 automatisch aktiviert, und Sie müssen nichts unternehmen.
 
 Azure RMS wird auch bei den meisten berechtigenden Plänen automatisch aktiviert, daher müssen Sie in dieser Hinsicht wahrscheinlich auch keine Maßnahmen ergreifen. Weitere Informationen hierzu finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
 
@@ -55,15 +55,15 @@ Wenn Sie Azure RMS deaktiviert haben oder wenn es aus irgendeinem Grund nicht au
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurieren der Verwaltung Ihres Azure Information Protection-Mandantenschlüssels
 
-Dies ist ein optionaler Schritt. Microsoft das Verwalten des Hauptschlüssels für Azure Information Protection zu gestatten, ist die Standardeinstellungen und wird als bewährte Methoden für die meisten Office 365-Mandanten empfohlen. In diesem Fall brauchen Sie nichts zu unternehmen.
+Dies ist ein optionaler Schritt. Microsoft das Verwalten des Hauptschlüssels für Azure Information Protection zu gestatten, ist die Standardeinstellung und wird als bewährte Methode für die meisten Organisationen empfohlen. In diesem Fall brauchen Sie nichts zu unternehmen.
 
 Es gibt viele Gründe, beispielsweise Complianceanforderungen, aus denen Sie Ihren eigenen Hauptschlüssel generieren und verwalten müssen – auch als "Bring Your Own Key" (BYOK) bezeichnet. In diesem Fall empfehlen wir Ihnen, vor dem Einrichten der neuen OME-Funktionen die erforderlichen Schritte auszuführen. Weitere Informationen finden Sie unter [Planen und Implementieren Ihres Azure Information Protection-Mandantenschlüssels](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Überprüfen der neuen OME-Konfiguration in Exchange Online PowerShell
 
-Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neuen OME-Funktionen in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) ordnungsgemäß konfiguriert ist.
+Sie können überprüfen, ob Ihr Microsoft 365-Mandant für die Verwendung der neuen OME-Funktionen in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) ordnungsgemäß konfiguriert wurde.
   
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) unter Verwendung eines Kontos mit globalen Administratorberechtigungen in Ihrem Office 365-Mandanten her.
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell), und verwenden Sie dafür ein Konto mit globalen Administratorberechtigungen in Ihrem Microsoft 365-Mandanten.
 
 2. Führen Sie das Cmdlet "Get-IRMConfiguration" aus.
 
@@ -81,7 +81,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neue
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-     - Die Angabe der E-Mail-Adresse eines Absenders ist optional, aber durch diesen Wert wird das System gezwungen, zusätzliche Prüfungen durchzuführen. Verwenden Sie die E-Mail-Adresse eines beliebigen Benutzers auf Ihrem Office 365-Mandanten.
+     - Die Angabe der E-Mail-Adresse eines Absenders ist optional, aber durch diesen Wert wird das System gezwungen, zusätzliche Prüfungen durchzuführen. Verwenden Sie die E-Mail-Adresse eines beliebigen Benutzers in Ihrem Microsoft 365-Mandanten.
 
      Die Ergebnisse sollten in etwa folgendermaßen aussehen:
 
@@ -99,7 +99,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neue
             OVERALL RESULT: PASS
      ```
 
-   - Der Name Ihrer Office 365-Organisation ersetzt *Contoso*.
+   - Der Name Ihrer Organisation ersetzt *Contoso*.
 
    - Die Standardvorlagennamen unterscheiden sich möglicherweise von den vorstehenden. Weitere Informationen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates).
 
@@ -111,7 +111,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant für die Verwendung der neue
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Nächste Schritte: Definieren von Nachrichtenflussregeln, um neue OME-Funktionen zu verwenden
 
-Wenn zuvor konfigurierte Nachrichtenflussregeln zum Verschlüsseln von E-Mails in Ihrer Office 365-Organisation konfiguriert wurden, müssen Sie die vorhandenen Regeln zur Verwendung der neuen OME-Funktionen aktualisieren. Für neue Bereitstellungen müssen Sie neue Nachrichtenflussregeln erstellen.
+Wenn zuvor konfigurierte Nachrichtenflussregeln zum Verschlüsseln von E-Mails in Ihrer Organisation konfiguriert wurden, müssen Sie die vorhandenen Regeln zur Verwendung der neuen OME-Funktionen aktualisieren. Für neue Bereitstellungen müssen Sie neue Nachrichtenflussregeln erstellen.
 
 >[!IMPORTANT]
 >Wenn Sie vorhandene Nachrichtenflussregeln nicht aktualisieren, werden Ihre Benutzer weiterhin verschlüsselte E-Mails empfangen, bei denen das vorherige HTML-Anlagenformat statt der neuen, nahtlosen OME-Erfahrung verwendet wird.

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informieren Sie sich über die Kriterien für Information Protection-basierte Dienste und -Infrastruktur, um sicherzustellen, dass Ihre Konfiguration die Anforderungen von Microsoft 365Enterprise erfüllt.
-ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633353"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631633"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Beendigungskriterien für die Information Protection-Infrastruktur
 
@@ -44,7 +44,7 @@ Gegebenenfalls hilft Ihnen [Schritt 1](infoprotect-define-sec-infoprotect-levels
 <a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>Erforderlich: Erhöhte Sicherheit für Microsoft 365 ist konfiguriert
 
-Sie haben die folgenden Einstellungen für [höhere Sicherheit von Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) konfiguriert:
+Sie haben die folgenden Einstellungen für [höhere Sicherheit von Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) konfiguriert:
 
 - Richtlinien für die Bedrohungsverwaltung im Microsoft 365 Security Center
 - Zusätzliche mandantenweite Exchange Online-Einstellungen
@@ -82,11 +82,11 @@ Für Ihre angemeldeten Windows 10 Enterprise-Geräte wird eine Intune-Richtlinie
 Gegebenenfalls hilft Ihnen [Schritt 4](infoprotect-deploy-windows-information-protection.md), diese Anforderung zu erfüllen. 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Optional: Office 365 Verhinderung von Datenverlust (DLP) wird bereitgestellt.
+## <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Optional: Verhinderung von Datenverlust (DLP) wird bereitgestellt
 
 Sie haben die DLP-Richtlinien analysiert, getestet und dann eingeführt, mit Standorten und Regeln, Bedingungen und Maßnahmen, die Ihre Organisation benötigt, um Kunden und andere Arten von privaten Daten zu schützen und branchenspezifische und regionale Vorschriften und Anforderungen einzuhalten.
 
-Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Office 365 Security & Compliance Dashboard zur Überwachung von DLP-Vorfällen.
+Ihre Datenkompatibilität- und Ihr Sicherheits-Personal nutzt das Security & Compliance Dashboard zur Überwachung von DLP-Vorfällen.
 
 Gegebenenfalls hilft Ihnen [Schritt 5](infoprotect-data-loss-prevention.md), diese Anforderung zu erfüllen. 
 

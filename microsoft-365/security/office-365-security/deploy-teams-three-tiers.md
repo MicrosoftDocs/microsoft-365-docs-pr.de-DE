@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Erstellen und Konfigurieren von Teams mit Microsoft Teams für verschiedene Ebenen des Informationsschutzes für Dateien.
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637640"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Bereitstellen von Teams für drei Schutzebenen für Dateien
 
@@ -32,7 +32,7 @@ Verwenden Sie die Schritte in diesem Artikel, um Richtlinien für grundlegende, 
 
 ## <a name="baseline-teams"></a>Grundlegende Teams
 
-Der grundlegende Schutz enthält jeweils öffentliche und private Teams. Öffentliche Teams können von allen Benutzern in der Organisation ermittelt werden und alle haben Zugriff auf diese. Nur Mitglieder der Office 365-Gruppe, die mit dem Team verknüpft sind, können die privaten Websites ermitteln und auf diese zugreifen. Bei diesen beiden Typen von Teams können Mitglieder die Website mit anderen Benutzern teilen.
+Der grundlegende Schutz enthält jeweils öffentliche und private Teams. Öffentliche Teams können von allen Benutzern in der Organisation ermittelt werden und alle haben Zugriff auf diese. Nur Mitglieder der Microsoft 365-Gruppe, die mit dem Team verknüpft sind, können die privaten Websites ermitteln und auf diese zugreifen. Bei diesen beiden Typen von Teams können Mitglieder die Website mit anderen Benutzern teilen.
 
 ### <a name="public"></a>Öffentlich
 

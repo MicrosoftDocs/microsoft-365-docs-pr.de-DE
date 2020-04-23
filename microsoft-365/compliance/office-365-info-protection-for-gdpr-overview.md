@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071166"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637219"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 
@@ -103,4 +103,4 @@ Weitere Informationen über das Anwenden von Schutzfunktionen finden Sie unter [
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>Schritt 5 – Überwachen auf Lecks für personenbezogene Daten
 
-Berichte zur Verhinderung von Datenverlust in Office 365 bieten die größtmögliche Detailebene für die Überwachung vertraulicher Daten. Sie können automatisierte Warnungen einrichten und Verletzungen mithilfe des Office 365-Überwachungsprotokolls untersuchen. Durch Cloud App Security wird die Möglichkeit zum Suchen und Überwachen vertraulicher Daten auf andere SaaS-Anbieter erweitert. Weitere Informationen zu diesen Tools finden Sie unter [Überwachen auf Verletzungen personenbezogener Daten](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
+Berichte zur Verhinderung von Datenverlust in Office 365 bieten die größtmögliche Detailebene für die Überwachung vertraulicher Daten. Sie können automatisierte Warnungen einrichten und Verletzungen mithilfe des Überwachungsprotokolls untersuchen. Durch Cloud App Security wird die Möglichkeit zum Suchen und Überwachen vertraulicher Daten auf andere SaaS-Anbieter erweitert. Weitere Informationen zu diesen Tools finden Sie unter [Überwachen auf Verletzungen personenbezogener Daten](/security/office-365-security/monitor-for-leaks-of-personal-data.md).

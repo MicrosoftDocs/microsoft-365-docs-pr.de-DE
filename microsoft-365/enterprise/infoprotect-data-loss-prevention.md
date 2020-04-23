@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 5: Konfigurieren von Office 365 Data Loss Prevention'
+title: 'Schritt 5: Konfigurieren der Verhinderung von Datenverlust'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verstehen und Bereitstellen von Office 365 Data Loss Prevention in Microsoft 365.
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Verstehen und Bereitstellen der Verhinderung von Datenverlust in Microsoft 365.
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067222"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636976"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>Schritt 5: Konfigurieren von Office 365 Data Loss Prevention
+# <a name="step-5-configure-data-loss-prevention"></a>Schritt 5: Konfigurieren der Verhinderung von Datenverlust
 
 *Dieser Schritt ist optional und gilt für die Versionen E3 und E5 von Microsoft 365 Enterprise.*
 
 ![Phase 6: Schutz von Daten](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Mithilfe von Data Loss Prevention-Richtlinien (DLP) im Office 365 Security & Compliance Center können Sie vertrauliche Informationen in Microsoft 365 identifizieren, überwachen und automatisch schützen. Mit DLP-Richtlinien können Sie folgende Aktionen ausführen:
+Mithilfe von Data Loss Prevention-Richtlinien (DLP) im Security & Compliance Center können Sie vertrauliche Informationen in Microsoft 365 identifizieren, überwachen und automatisch schützen. Mit DLP-Richtlinien können Sie folgende Aktionen ausführen:
 
 - Identifizieren vertraulicher Informationen an vielen Orten, zum Beispiel Exchange Online, SharePoint Online, OneDrive for Business und Microsoft Teams.
 - Verhindern der versehentlichen Freigabe von vertraulichen Informationen durch das Sperren des Zugriffs auf ein Dokument oder durch das Blockieren der E-Mail, die es enthält.

@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Authentifizierung in Office 365
+title: E-Mail-Authentifizierung in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Erfahren Sie, wie Exchange Online und Exchange Online Protection (EOP) in Office 365 E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwenden, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: 609f1a9bf80acc266bdfc5b0089eb6006be4bd7c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Erfahren Sie, wie Exchange Online und Exchange Online Protection (EOP) in Microsoft 365 E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwenden, um Spoofing, Phishing und Spam zu verhindern.
+ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637556"
 ---
-# <a name="email-authentication-in-office-365"></a>E-Mail-Authentifizierung in Office 365
+# <a name="email-authentication-in-microsoft-365"></a>E-Mail-Authentifizierung in Microsoft 365
 
-E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In Office 365-Organisationen mit Exchange Online-Postfächern und in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer nutzt EOP die Standards, um eingehende E-Mails zu überprüfen:
+E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In Microsoft 365-Organisationen mit Exchange Online-Postfächern und in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer nutzt EOP die Standards, um eingehende E-Mails zu überprüfen:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -55,7 +55,7 @@ Dies ist ein großes Problem, denn während Unternehmen möglicherweise nicht wi
 
 Die implizite E-Mail-Authentifizierung basiert auf zahlreichen Erweiterungen zu regulären E-Mail-Authentifizierungsrichtlinien. Zu diesen Erweiterungen gehören die Absenderzuverlässigkeit, die Geschichte des Absenders, die Geschichte des Empfängers, Verhaltensanalysen und weitere fortgeschrittene Techniken. Eine Nachricht von einer Domäne, die keine E-Mail-Authentifizierungsrichtlinien verwendet, wird als Spoof gekennzeichnet, wenn sie nicht auf andere Weise signalisiert, dass es sich dabei um eine seriöse Nachricht handelt.
 
-Eine allgemeine Ankündigung von Microsoft finden Sie unter [A Sea of Phish Part 2 – Enhanced Anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+Eine allgemeine Ankündigung von Microsoft finden Sie unter [A Sea of Phish Part 2 – Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
 ## <a name="composite-authentication"></a>Zusammengesetzte Authentifizierung
 
@@ -63,9 +63,9 @@ Obwohl SPF, DKIM und DMARC an sich hilfreich sind, wird hier der Authentifizieru
 
 > Authentifizierungsergebnisse:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-Diese Werte werden unter [Felder in der Nachrichtenkopfzeile „Authentication-results“, die durch die Office 365 E-Mail-Authentifizierung genutzt werden](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication) erklärt.
+Diese Werte werden in der [Nachrichtenkopfzeile „Authentication-results“](anti-spam-message-headers.md#authentication-results-message-header) erklärt.
 
-Durch Untersuchung der Nachrichtenkopfzeilen können Administratoren oder sogar Endbenutzer ermitteln, wie Office 365 ermittelt hat, dass der Absender gefälscht ist.
+Durch Untersuchung der Nachrichtenkopfzeilen können Administratoren oder sogar Endbenutzer ermitteln, wie Microsoft 365 ermittelt hat, dass der Absender gefälscht ist.
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Warum E-Mail-Authentifizierung nicht immer ausreicht, um Spoofing zu stoppen
 
@@ -128,11 +128,11 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>Lösungen für legitime Absender, die nicht-authentifizierte E-Mails senden
 
-Office 365 verfolgt, wer nicht authentifizierte E-Mails an Ihre Organisation sendet. Wenn der Dienst annimmt, dass der Absender nicht seriös ist, wird die Nachricht als Fehler bei der zusammengesetzten Authorisierung markiert. Um dies zu vermeiden, können Sie die Empfehlungen in diesem Abschnitt verwenden.
+Microsoft 365 verfolgt, wer nicht authentifizierte E-Mails an Ihre Organisation sendet. Wenn der Dienst annimmt, dass der Absender nicht seriös ist, wird die Nachricht als Fehler bei der zusammengesetzten Authorisierung markiert. Um dies zu vermeiden, können Sie die Empfehlungen in diesem Abschnitt verwenden.
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>Konfigurieren der E-Mail-Authentifizierung für Domänen, die Sie besitzen
 
-Sie können diese Methode verwenden, um Probleme mit organisationsinternem und domänenübergreifendem Spoofing zu beheben, wenn Sie mehrere Mandanten besitzen oder mit diesen interagieren. Sie kann auch zum Beheben von Problemen mit domänenübergreifenden Spoofing verwendet werden, wenn Sie Nachrichten an andere Kunden innerhalb von Office 365 oder an Drittanbieter senden, die von anderen Anbietern gehostet werden.
+Sie können diese Methode verwenden, um Probleme mit organisationsinternem und domänenübergreifendem Spoofing zu beheben, wenn Sie mehrere Mandanten besitzen oder mit diesen interagieren. Sie kann auch zum Beheben von Problemen mit domänenübergreifendem Spoofing verwendet werden, wenn Sie Nachrichten an andere Kunden innerhalb von Microsoft 365 oder an Drittanbieter senden, die von anderen Anbietern gehostet werden.
 
 - [Konfiguration von SPF-Einträgen](set-up-spf-in-office-365-to-help-prevent-spoofing.md) für Ihre Domänen.
 
@@ -152,7 +152,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 Dieses Beispiel bedeutet, dass E-Mails aus Ihrer Unternehmensinfrastruktur die E-Mail-Authentifizierung passieren, aber E-Mails aus unbekannten Quellen auf neutral zurückfallen.
 
-Office 365 behandelt eingehende E-Mails aus Ihrer Unternehmensinfrastruktur als authentifiziert, aber E-Mail-Nachrichten aus unbekannten Quellen werden möglicherweise weiterhin als Fälschung gekennzeichnet (je nachdem, ob sie von Office 365 implizit authentifiziert werden können). Dies stellt jedoch immer noch eine Verbesserung dazu dar, dass alle E-Mails von Office 365 als Spoofing markiert wurden.
+Microsoft 365 behandelt eingehende E-Mails aus Ihrer Unternehmensinfrastruktur als authentifiziert, aber E-Mail-Nachrichten aus unbekannten Quellen werden möglicherweise weiterhin als Fälschung gekennzeichnet (je nachdem, ob sie von Microsoft 365 implizit authentifiziert werden können). Dies stellt jedoch immer noch eine Verbesserung dazu dar, dass alle E-Mails von Microsoft 365 als Spoofing markiert wurden.
 
 Sobald Sie mit einer SPF-Fallback-Richtlinie von `?all`begonnen haben, können Sie nach und nach weitere E-Mail-Quellen für Ihre Nachrichten entdecken und dann Ihren SPF-Eintrag mit einer strikteren Richtlinie aktualisieren.
 
@@ -170,7 +170,7 @@ Damit dieser Absender nicht authentifizierte E-Mails senden kann, ändern Sie di
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Erstellen eines Zulassungseintrags für das Absender/Empfänger-Paar
 
-Wenn Sie die Spamfilterung, einige Teile der Phishing-Filterung, aber nicht die Malware-Filterung für bestimmte Absender umgehen möchten, lesen Sie [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md).
+Wenn Sie die Spamfilterung, einige Teile der Phishing-Filterung, aber nicht die Malware-Filterung für bestimmte Absender umgehen möchten, lesen Sie [Erstellen von Listen sicherer Absender in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Bitten Sie den Absender, die E-Mail-Authentifizierung für Domänen, die Sie nicht besitzen, zu konfigurieren
 

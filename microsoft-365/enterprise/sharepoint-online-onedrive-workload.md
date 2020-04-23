@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint in Ihrem Unternehmen.
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636916"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint und OneDrive für Microsoft 365 Enterprise
 
@@ -93,8 +93,8 @@ Verwenden Sie [Migrieren zu SharePoint](https://docs.microsoft.com/sharepointmig
 
 Sehen Sie sich für ein besseres Verständnis der Sicherheit in SharePoint die folgenden Ressourcen an:
 
--   [So schützen SharePoint und OneDrive Ihre Daten in der Cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [Datenverschlüsselung in OneDrive und SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [So schützen SharePoint und OneDrive Ihre Daten in der Cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Datenverschlüsselung in OneDrive und SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Ergebnis
 
@@ -155,8 +155,8 @@ Nach der Einführung in der gesamten Organisation, müssen Sie Ihre Strategie f�
 
 Nachfolgend finden Sie einige Vorschläge:
 
-- Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie in [Erfolgsfaktoren für Office 365](https://aka.ms/successfactors). 
-- Informationen zur Office 365-Dienstnutzung in Ihrer Organisation finden Sie unter [Office 365-Aktivitätsberichte](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Office 365 für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
+- Weitere Informationen zu allgemeinen bewährten Methoden für die Einführung von Clouddiensten finden Sie in [Erfolgsfaktoren für Microsoft 365](https://aka.ms/successfactors). 
+- Informationen zur Dienstnutzung in Ihrer Organisation finden Sie unter [Microsoft 365-Berichte im Admin Center](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Wenn Sie kein globaler Administrator für Ihre Organisation sind, bitten Sie eine Person, die globaler Administrator ist, Ihrem Benutzerkonto Berichteleserberechtigungen zu gewähren, damit Sie auf Aktivitätsberichte zugreifen können.
 - Überwachen Sie Ihren Feedback-Kanal (ein öffentlicher Kanal in einem zentralen Teams-Team oder Yammer) auf Fragen und Feedback von Einzelpersonen zu ihren Erfahrungen mit SharePoint. Behandeln Sie Fragen und Probleme so schnell wie möglich, um eine frustrierende Erfahrung für Einzelpersonen zu verhindern und Unterstützung für den Rollout zu demonstrieren.
 - Ermitteln und pflegen Sie Champions in jeder Geschäftsgruppe und heben Sie deren Erfolge und bewährte Methoden bei der Verwendung von SharePoint hervor. Zeigen Sie der Organisation ihre Erfolge, um den Erfolg und die Akzeptanz des Projekts zu zeigen. Die Bestätigung durch technische Leiter innerhalb einer Unternehmensgruppe kann einen starken Einfluss auf Führungskräfte und Kollegen ausüben.
 

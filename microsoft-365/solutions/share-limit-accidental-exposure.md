@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie die versehentliche Exposition von Informationen bei der Freigabe von Dateien für Personen außerhalb der Organisation begrenzen.
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604569"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632583"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begrenzen der versehentlichen Exposition von Dateien bei deren Freigabe für Personen außerhalb der Organisation
 
@@ -79,7 +79,7 @@ So schränken Sie die externe Freigabe auf Mitglieder einer Sicherheitsgruppe ei
 3. Aktivieren Sie unter **Wer kann außerhalb Ihrer Organisation freigeben** ein oder beide Kontrollkästchen: a. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer freigeben kann. b. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer und Verwendung anonymer Links**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer und über „Jeder“-Links freigeben kann. b.
 4. Klicken Sie auf **OK**.
 
-Dies wirkt sich auf Dateien, Ordner und Sites, aber nicht auf Office 365-Gruppen oder -Teams aus. Wenn Mitglieder Gäste zu einer privaten Office 365-Gruppe oder einem privaten Team in Microsoft Teams einladen, wird die Einladung zur Genehmigung an den Gruppen- oder Teambesitzer gesendet.
+Dies wirkt sich auf Dateien, Ordner und Sites, aber nicht auf Microsoft 365-Gruppen oder -Teams aus. Wenn Mitglieder Gäste zu einer privaten Microsoft 365-Gruppe oder einem privaten Team in Microsoft Teams einladen, wird die Einladung zur Genehmigung an den Gruppen- oder Teambesitzer gesendet.
 
 ## <a name="see-also"></a>Siehe auch
 

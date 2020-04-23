@@ -1,6 +1,6 @@
 ---
-title: Suche, Schutz und Berichterstellung für die DSGVO in der Office 365-Entwicklungs-/Testumgebung
-description: Veranschaulichung von DSGVO-Funktionen in Office 365
+title: Suche, Schutz und Berichterstellung für die DSGVO in der Entwicklungs-/Testumgebung
+description: Veranschaulichung von DSGVO-Funktionen in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632340"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Suche, Schutz und Berichterstellung für die DSGVO in der Office 365-Entwicklungs-/Testumgebung
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>Suche, Schutz und Berichterstellung für die DSGVO in der Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Veranschaulichung von DSGVO-Funktionen in Office 365 
+ **Zusammenfassung:** Veranschaulichung von DSGVO-Funktionen in Microsoft 365 
   
-Dieser Artikel beschreibt die Konfiguration und Veranschaulichung von Suche, Schutz und Berichterstellung für personenbezogene Informationen (PII) für die Datenschutz-Grundverordnung (DSGVO) in einer Office 365-Entwicklungs-/Testumgebung.
+In diesem Artikel wird die Konfiguration und Veranschaulichung von Suche, Schutz und Berichterstellung für personenbezogene Informationen (PII) für die EU-Datenschutz-Grundverordnung (DSGVO) in einer Microsoft 365-Entwicklungs-/Testumgebung beschrieben.
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>Phase 1: Erstellen und Konfigurieren Ihres Office 365-Testabonnements
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>Phase 1: Erstellen und Konfigurieren Ihres Microsoft 365-Testabonnements
 
-Führen Sie zunächst die Schritte in [Phase 2 des Artikels „Office 365-Entwicklungs-/Testumgebung“](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) aus.
+Führen Sie zunächst die Schritte in [Phase 2 des Artikels „Microsoft 365-Entwicklungs-/Testumgebung“](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) aus.
 
 Konfigurieren Sie dann mit den folgenden Schritte den eDiscovery-Manager:
 
-1. Melden Sie sich mit Ihrem globalen Administratorkonto bei Ihrem Office 365-Testmandanten an.
-2. Klicken Sie auf der Office 365-Startseite auf **Sicherheit und Compliance**.
+1. Melden Sie sich mit Ihrem globalen Administratorkonto bei Ihrem Microsoft 365-Testmandanten an.
+2. Klicken Sie auf der Microsoft 365-Startseite auf **Sicherheit und Compliance**.
 3. Klicken Sie auf der neuen Registerkarte „Sicherheit und Compliance“ auf **Berechtigungen** > **eDiscovery-Manager**.
 4. Klicken Sie für eDiscovery-Manager auf **Bearbeiten**, und klicken Sie dann auf **eDiscovery-Manager auswählen**.
 5. Klicken Sie auf **+ Hinzufügen**, suchen Sie nach dem Namen Ihres globalen Administratorkontos, und fügen Sie dieses als eDiscovery-Manager hinzu.
@@ -46,12 +46,12 @@ Konfigurieren Sie dann mit den folgenden Schritte den eDiscovery-Manager:
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>Phase 2: Hinzufügen von personenbezogenen Informationen zu Ihrem Mandanten
 
-In dieser Phase erstellen Sie ein Dokument mit PII für eine Reihe von Beispielen für internationale Kontonummern (International Banking Account Numbers, IBANs) und speichern es auf einer SharePoint Online-Website in Ihrer Office 365-Entwicklungs-/Testumgebung.
+In dieser Phase erstellen Sie ein Dokument mit PII für eine Reihe von Beispielen für internationale Kontonummern (International Banking Account Numbers, IBANs) und speichern es auf einer SharePoint Online-Website in Ihrer Microsoft 365-Entwicklungs-/Testumgebung.
 
 1. Öffnen Sie Microsoft Word auf dem lokalen Computer.
-2. Fügen Sie die folgende Tabelle in die Word-Datei ein, und speichern Sie sie als „IBANs.docx“ auf dem lokalen Computer.
+2. Fügen Sie die folgende Tabelle in die Word-Datei ein, und speichern Sie sie als „IBANs.docx“ auf Ihrem lokalen Computer.
     
-    Nummer  |Land  |Code |IBAN  |
+    Zahl  |Land  |Code |IBAN  |
     |---------|---------|---------|---------|
     |1     |  Österreich SEPA      | AT            |AT611904300234573201       |
     |2     |  Bulgarien SEPA       |BG    |BG80BNBG96611020345678      |
@@ -99,7 +99,7 @@ In dieser Phase erstellen Sie einen benutzerdefinierten vertraulichen Informatio
 - Eine vierstellige Seriennummer 
     - Mögliche Werte für Seriennummern liegen zwischen 0000 und 9999.   
 
-Contoso verwendet immer eine CCN beim Verweisen auf Kunden in der internen Korrespondenz, externen Korrespondenz, in Dokumenten und andere Formularen. Contoso benötigt einen benutzerdefinierten vertraulichen Informationstyp, um die Verwendung von CCNs in Office 365-Inhalt zu ermitteln, um einen möglichen Schutz für die Verwendung dieser personenbezogenen Informationen anzuwenden.
+Contoso verwendet immer eine CCN beim Verweisen auf Kunden in der internen Korrespondenz, externen Korrespondenz, in Dokumenten und anderen Formularen. Contoso benötigt einen benutzerdefinierten vertraulichen Informationstyp, um die Verwendung von CCNs in Microsoft 365-Inhalt zu ermitteln und so einen möglichen Schutz für die Verwendung dieser personenbezogenen Informationen anzuwenden.
 
 1. Folgen Sie den Anweisungen in [Verbinden mit Security & Compliance Center PowerShell über Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) und stellen Sie mit dem UPN Ihres globalen Administratorkontos eine Verbindung mit Security & Compliance Center her.
 2. Führen Sie die folgenden PowerShell-Befehle aus:
@@ -178,7 +178,7 @@ Contoso verwendet immer eine CCN beim Verweisen auf Kunden in der internen Korre
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Phase 5: Veranschaulichen des Datenschutzes
 
-Schutz von personenbezogenen Informationen in Office 365 umfasst Funktionen, um Datenverlust zu vermeiden.  Mit DLP-Richtlinien können Sie automatisch in Office 365 vertrauliche Informationen schützen.
+Zum Schutz von personenbezogenen Informationen in Microsoft 365 gehören Funktionen zur Verhinderung von Datenverlust (Data Loss Prevention, DLP).  Mit DLP-Richtlinien können Sie vertrauliche Informationen in Microsoft 365 automatisch schützen.
 
 Es gibt mehrere Methoden zum Anwenden des Schutzes. Die Aufklärung und Bewusstseinsbildung in Bezug auf Daten von EU-Bürgern, die in Ihrer Umgebung gespeichert werden, sowie den Umgang von Mitarbeitern mit diesen stellen eine Ebene des Informationsschutzes unter Verwendung von DLP von Office 365 dar.
 
@@ -189,7 +189,7 @@ In dieser Phase erstellen Sie eine neue DLP-Richtlinie und veranschaulichen, wie
 3. Klicken Sie auf **+ Erstellen einer Richtlinie**.
 4. Klicken Sie in **Mit einer Vorlage beginnen oder eine benutzerdefinierte Richtlinie erstellen** auf **Benutzerdefiniert** > **Benutzerdefinierte Richtlinie** > **Weiter**.
 5. Geben Sie in **Richtlinie benennen** die folgenden Details an, und klicken Sie dann auf **Weiter**: a. Name: **PII-Richtlinie für EU-Bürger** b. Beschreibung: **Schützen der personenbezogenen Informationen von EU-Bürgern**
-6. Wählen Sie in **Speicherorte auswählen** die Option **Alle Speicherorte in Office 365** aus. Dies beinhaltet Inhalt in Exchange-E-Mail- sowie OneDrive- und SharePoint-Dokumenten. Klicken Sie dann auf **Weiter**.
+6. Wählen Sie in **Speicherorte auswählen** die Option **Alle Speicherorte in Microsoft 365** aus. Damit werden Inhalte in Exchange-E-Mails sowie OneDrive- und SharePoint-Dokumenten einbezogen. Klicken Sie dann auf **Weiter**.
 7. Klicken Sie in **Anpassen des zu schützenden Inhaltstyps** auf **Nach Inhalten suchen, die Folgendes enthalten:**, und klicken Sie dann auf **Bearbeiten**.
 8. Klicken Sie in **Auswählen des zu schützenden Inhaltstyps** auf **Hinzufügen** > **Typen vertraulicher Informationen**.
 9. Klicken Sie in **Typen vertraulicher Informationen** auf **+ Hinzufügen**.
@@ -205,7 +205,7 @@ In dieser Phase erstellen Sie eine neue DLP-Richtlinie und veranschaulichen, wie
 17. Öffnen Sie auf dem lokalen Computer eine private Instanz des Browsers.
 18. Geben Sie in der Adressleiste **https://**\<NameIhresMandanten\>**. sharepoint.com** ein, und melden Sie sich mit Ihrem globalen Administratorkonto an.
 19. Klicken Sie auf **Dokumente**.
-20. Klicken Sie auf die Datei mit dem Namen „IBANs.docx“. „Richtlinientipp für IBANs.docx“ sollte angezeigt werden. Die Datei „IBANs.docx“ wurde an externe Empfänger versendet, was gegen die DLP-Richtlinie verstößt. 
+20. Klicken Sie auf die Datei mit dem Namen „IBANs.docx“. Dann sollte „Richtlinientipp für IBANs.docx“ angezeigt werden. Die Datei „IBANs.docx“ wurde für externe Empfänger freigegeben, und dies verstößt gegen die DLP-Richtlinie. 
 21. Geben Sie in der Adressleiste Folgendes ein: `https://outlook.office365.com`
 22. Klicken Sie auf **Neu** - **E-Mail-Nachricht**, und geben Sie Folgendes an:  
     - **An:** \< eine persönliche E-Mail-Adresse\>  
@@ -233,7 +233,7 @@ Hinweis: Dieser Beispieldatensatz wird von öffentlich verfügbaren Informatione
 
 ## <a name="phase-6-demonstrate-reporting"></a>Phase 6: Veranschaulichen der Berichterstellung
  
-In dieser Phase veranschaulichen Sie die Office 365-Berichterstellung basierend auf der in Phase 5 konfigurierten DLP-Richtlinie.
+In dieser Phase veranschaulichen Sie die Microsoft 365-Berichterstellung basierend auf der in Phase 5 konfigurierten DLP-Richtlinie.
 
    1. Klicken Sie auf der Registerkarte „Sicherheit und Compliance“ im Browser auf **Start**.
    2. Klicken Sie auf **Berichte** > **Dashboard** > **DLP-Richtlinienübereinstimmungen**.

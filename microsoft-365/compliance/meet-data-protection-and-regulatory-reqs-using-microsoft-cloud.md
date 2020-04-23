@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071797"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634885"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
@@ -701,7 +701,7 @@ Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung sta
     
 - Eine **kleinere** Änderung ist eine geringfügige Änderung an Kundenaktionen, z. B. die Korrektur eines Tippfehlers oder eines Formatierungsproblems oder das Aktualisieren oder Korrigieren von Hyperlinks. Bei kleineren Änderungen muss dass Steuerelement in der Regel nicht erneut bewertet werden, wir empfehlen aber, dass Sie die aktualisierte Kundenaktion überprüfen.
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Vom Kunden verwaltete Steuerelemente in Office 365 – Änderungsprotokoll für Juli 2018
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>Vom Kunden verwaltete Steuerelemente – Änderungsprotokoll für Juli 2018
 
 |**Steuerelement-ID**|**Bewertung**|**Art der Änderung**|**Beschreibung der Änderung**|**Empfohlene Aktionen für Kunden**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -711,7 +711,7 @@ Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung sta
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Größer|HITECH-Steuerelement wurde zur HIPAA-Bewertung für Office 365 hinzugefügt|Sehen Sie sich das hinzugefügte Steuerelement und die empfohlenen Kundenaktionen an.<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Vom Kunden verwaltete Steuerelemente in Office 365 – Änderungsprotokoll für April 2018
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>Vom Kunden verwaltete Steuerelemente – Änderungsprotokoll für April 2018
 
 |**DSGVO**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Art der Änderung**|**Beschreibung der Änderung**|**Empfohlene Aktionen für Kunden**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

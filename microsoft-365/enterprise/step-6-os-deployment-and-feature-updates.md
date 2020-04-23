@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zu den Optionen für die Bereitstellung des Betriebssystems und Featureupdates.
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085220"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636759"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Schritt 6: Bereitstellung des Betriebssystems und Featureupdates
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085220"
 
 Wenn Sie dem Rad für den Bereitstellungsprozess bis hier gefolgt sind, haben Sie die Schritte für die Geräte- und App-Bereitschaft zumindest teilweise abgeschlossen, Ihre Infrastruktur vorbereitet, App-Pakete konfiguriert und gesammelt, verfügen über einen Plan für die Migration von Benutzerdateien und das Konfigurieren von Standardeinstellungen sowie Pläne für die Beibehaltung vorhandener und möglicherweise auch für die Bereitstellung neuer Sicherheitssteuerungen.
 
-Sie sind jetzt an einer Stelle angelangt, an der Sie diese ganzen Puzzleteile zusammensetzen, um die Installation von Windows 10 und Office 365 ProPlus und den erforderlichen Treibern. Apps und anderen Komponenten so weit wie möglich zu automatisieren.
+Sie sind jetzt an einer Stelle angelangt, an der Sie diese ganzen Puzzleteile zusammensetzen, um die Installation von Windows 10 und Microsoft 365 Apps for Enterprise und den erforderlichen Treibern, Apps und anderen Komponenten so weit wie möglich zu automatisieren.
 
 Letztlich ist das beste Maß für den Erfolg einer Betriebssystembereitstellung die Erfüllung der Benutzererwartungen und die Vermeidung von Arbeitsunterbrechungen. In diesem Schritt stellen Sie die Pilotbenutzer als Teil einer gestaffelten Bereitstellung bereit und testen sie. Hier noch ein Tipp, bevor Sie die Bereitstellung ausweiten: Sie müssen in unserem Rad für den Bereitstellungsprozess mit Schritt 8 fortfahren ([Benutzerkommunikation und -schulung](https://aka.ms/mdd8)), um sicherzustellen, dass die Benutzer über die anstehenden Änderungen informiert und entsprechend vorbereitet sind und dass Sie Ihren Rolloutfortschritt anhand einer fortlaufenden Überprüfung durch die phasenweise Bereitstellung messen können.
 
@@ -131,8 +131,8 @@ Ausführlichere Informationen zu Windows Update for Business finden Sie in der f
 
 ## <a name="next-step"></a>Nächster Schritt 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Vorheriger Schritt
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Schritt 5: Überlegungen zu Sicherheit und Compliance](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Schritt 5: Überlegungen zu Sicherheit und Compliance](https://aka.ms/mdd5)

@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Hier erfahren Sie, wie sich die Planung und Implementierung von Geschäftskontinuität ändert, wenn Clouddienste Bestandteil Ihres IT-Angebots sind.
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030106"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633033"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Enterprise Business Continuity-Verwaltung (EBCM) mit Clouddiensten
 
@@ -40,8 +40,8 @@ Wenn Sie Ihre Pläne noch nicht aktualisiert haben, hilft Ihnen diese Themenreih
 - [Microsoft 365-Dienstausfallsicherheit](ebcm-m365-service-resiliency.md)
 - [Entwickeln Ihres Kontinuitätsplans](ebcm-developing-your-ebcm-plan.md)
 - [Schadensbegrenzungsszenarien für Microsoft 365-Dienstincidents](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365-Geschäftskontinuitätsplan – Training und Probelauf](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Microsoft 365 für Geschäftskontinuitätsplanung – Schulung und Probelauf](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Enterprise-Geschäftskontinuität – Haftungsausschluss](ebcm-legal-disclaimer.md)

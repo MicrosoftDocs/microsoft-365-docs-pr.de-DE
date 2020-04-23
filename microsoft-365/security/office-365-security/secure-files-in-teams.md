@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in Microsoft Teams.'
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088128"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638476"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Sichern von Dateien in Microsoft Teams
 
@@ -61,7 +61,7 @@ Erläuterung der Abbildung:
 
 - [Richtlinien zur Verhinderung von Datenverlust](../../compliance/data-loss-prevention-policies.md) sind für die Aufbewahrungsbezeichnungen „Sensibel“ und „Streng vertraulich“ konfiguriert, um Benutzer zu warnen oder daran zu hindern, diese Dateitypen außerhalb der Organisation zu senden.
 
-- Falls dies für Ihr Szenario nötig sein sollte, können Sie [Vertraulichkeitsbezeichnungen](../../compliance/sensitivity-labels.md) verwenden, um streng vertrauliche Dateien mit Verschlüsselung und Berechtigungen zu schützen. Azure Information Protection-Kunden können Ihre Azure Information Protection-Bezeichnungen im Microsoft 365 Compliance Center verwenden, damit Ihre Bezeichnungen mit dem Azure-Portal synchronisiert werden, falls Sie eine zusätzliche oder erweiterte Konfiguration ausgewählt haben. Azure Information Protection-Bezeichnungen und Office 365-Vertraulichkeitsbezeichnungen sind miteinander vollständig kompatibel. Dies bedeutet z. B., wenn Sie Inhalte mit Azure Information Protection gekennzeichnet haben, müssen Sie Ihre Inhalte nicht klassifizieren oder neu bezeichnen. Nicht alle Kunden benötigen diese Schutzstufe.
+- Falls dies für Ihr Szenario nötig sein sollte, können Sie [Vertraulichkeitsbezeichnungen](../../compliance/sensitivity-labels.md) verwenden, um streng vertrauliche Dateien mit Verschlüsselung und Berechtigungen zu schützen. Azure Information Protection-Kunden können Ihre Azure Information Protection-Bezeichnungen im Microsoft 365 Compliance Center verwenden, damit Ihre Bezeichnungen mit dem Azure-Portal synchronisiert werden, falls Sie eine zusätzliche oder erweiterte Konfiguration ausgewählt haben. Azure Information Protection-Bezeichnungen und Vertraulichkeitsbezeichnungen sind miteinander vollständig kompatibel. Dies bedeutet z. B., wenn Sie Inhalte mit Azure Information Protection gekennzeichnet haben, müssen Sie Ihre Inhalte nicht klassifizieren oder neu bezeichnen. Nicht alle Kunden benötigen diese Schutzstufe.
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>Organisationsweite Einstellungen für SharePoint und OneDrive
 
@@ -125,7 +125,7 @@ In der folgenden Tabelle wird die Konfiguration für die einzelnen Teams und der
 
 Die einzelnen Schritte zum Bereitstellen der vier verschiedenen Typen von Teams in dieser Lösung finden Sie unter [Bereitstellen von Teams für den Schutz auf drei Ebenen](deploy-teams-three-tiers.md).
 
-## <a name="office-365-retention-labels"></a>Office 365-Aufbewahrungsbezeichnungen
+## <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
 
 Das Verwenden von Aufbewahrungsbezeichnungen wird für Umgebungen mit vertraulichen Daten empfohlen. Nachdem Sie Aufbewahrungsbezeichnungen konfiguriert und bereitgestellt haben, haben Sie folgende Möglichkeiten:
 
@@ -135,7 +135,7 @@ Das Verwenden von Aufbewahrungsbezeichnungen wird für Umgebungen mit vertraulic
 
 - Sie können DLP-Richtlinien anwenden, die auf Aufbewahrungsbezeichnungen basieren.
 
-- Personen in Ihrer Organisation haben die Möglichkeit zum manuellen Anwenden einer Bezeichnung, und zwar auf Inhalte in Outlook im Web, Outlook 2010 und höher, auf OneDrive, SharePoint und in Office 365-Gruppen. Benutzer wissen häufig am besten, mit welcher Art von Inhalt sie arbeiten. Sie können den Inhalt somit klassifizieren und die entsprechende DLP-Richtlinie anwenden lassen.
+- Personen in Ihrer Organisation haben die Möglichkeit zum manuellen Anwenden einer Bezeichnung, und zwar auf Inhalte in Outlook im Web, Outlook 2010 und höher, auf OneDrive, SharePoint und in Microsoft 365-Gruppen. Benutzer wissen häufig am besten, mit welcher Art von Inhalt sie arbeiten. Sie können den Inhalt somit klassifizieren und die entsprechende DLP-Richtlinie anwenden lassen.
 
 Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Aufbewahrungsbezeichnungen:
 

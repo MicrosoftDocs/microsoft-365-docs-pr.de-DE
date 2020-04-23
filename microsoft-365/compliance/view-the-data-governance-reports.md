@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Data Governance-Berichte
+title: Anzeigen der Datengovernance-Berichte
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Mit den Data Governance-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell anzeigen, ob Ihre Bezeichnungen wie gewünscht auf Inhalte angewendet werden.
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Mit den Datengovernance-Berichten im Security &amp; Compliance Center können Sie schnell anzeigen, ob Ihre Bezeichnungen wie gewünscht auf Inhalte angewendet werden.
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068792"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626301"
 ---
-# <a name="view-the-data-governance-reports"></a>Anzeigen der Data Governance-Berichte
+# <a name="view-the-data-governance-reports"></a>Anzeigen der Datengovernance-Berichte
 
-Wenn Sie Bezeichnungen erstellt haben, sollten Sie überprüfen, ob sie wie gewünscht auf Inhalte angewendet werden. Mit den Data Governance-Berichten im Office 365 Security &amp; Compliance Center können Sie Folgendes schnell anzeigen:
+Nachdem Sie Ihre Bezeichnungen erstellt haben, sollten Sie überprüfen, ob sie wie gewünscht auf Inhalte angewendet werden. Mit den Datengovernance-Berichten im Security &amp; Compliance Center können Sie Folgendes schnell anzeigen:
   
 - **Top-5-Bezeichnungen** Dieser Bericht zeigt die Anzahl der Top-5-Bezeichnungen, die auf Inhalte angewendet wurden. Klicken Sie auf diesen Bericht, um eine Liste mit allen Bezeichnungen anzuzeigen, die vor Kurzem auf Inhalte angewendet wurden. Für jede Bezeichnung werden Anzahl, Speicherort, Art der Anwendung, zugehörige Aufbewahrungsaktionen, Dispositionstyp und ob es sich um einen Datensatz handelt, angezeigt. 
     

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189076"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630602"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -77,9 +77,9 @@ Angenommen, Sie verfügen über eine DLP-Richtlinie zur Erkennung von Informatio
   
 ![Diagramm zeigt, dass DLP-Richtlinie Speicherorte und Regeln enthält](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Orte
+### <a name="locations"></a>Standorte
 
-Eine DLP-Richtlinie kann vertrauliche Informationen überall in Office 365 finden und schützen, egal, ob diese sich in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können festlegen, dass Inhalte in Exchange-E-Mails, in Microsoft Teams-Chats und Kanalnachrichten sowie in allen SharePoint- oder OneDrive-Bibliotheken geschützt werden sollen, oder bestimmte Orte für eine Richtlinie auswählen.
+Eine DLP-Richtlinie kann vertrauliche Informationen überall in Microsoft 365 finden und schützen, egal, ob diese sich in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können festlegen, dass Inhalte in Exchange-E-Mails, in Microsoft Teams-Chats und Kanalnachrichten sowie in allen SharePoint- oder OneDrive-Bibliotheken geschützt werden sollen, oder bestimmte Orte für eine Richtlinie auswählen.
   
 ![Optionen für Orte, auf die eine DLP-Richtlinie angewendet werden kann](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -121,7 +121,7 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
     
 #### <a name="types-of-sensitive-information"></a>Arten von vertraulichen Informationen
 
-Mithilfe einer DLP-Richtlinie können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Office 365 enthält Definitionen für viele gängige Typen vertraulicher Informationen aus den verschiedensten Bereichen, die Sie direkt verwenden können, z. B. Kreditkartennummer, Bankkontonummer, National-ID-Nummer und Reisepassnummer. 
+Mithilfe einer DLP-Richtlinie können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Microsoft 365 enthält Definitionen für viele gängige Typen vertraulicher Informationen aus den verschiedensten Bereichen, die Sie direkt verwenden können, z. B. Kreditkartennummer, Bankkontonummer, Personalausweisnummer und Reisepassnummer. 
   
 ![Liste der verfügbaren Typen vertraulicher Daten](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -397,7 +397,7 @@ Um schnell zu einem bestimmten Abschnitt zu springen, klicken Sie auf der oberen
 
 Der erste Schritt beim Erstellen einer DLP-Richtlinie besteht in der Auswahl der zu schützenden Informationen. Wenn Sie mit einer DLP-Richtlinienvorlage beginnen, müssen Sie nicht alle Regeln von Grund auf neu erstellen und sich überlegen, welche Arten von Informationen standardmäßig einbezogen werden sollen. Anschließend können Sie diese Anforderungen ergänzen oder ändern, um die Regel an die spezifischen Anforderungen Ihrer Organisation anzupassen.
   
-Mithilfe einer vorkonfigurierten DLP-Richtlinienvorlage können spezifische Arten von vertraulichen Informationen ermittelt werden, wie z. B. HIPAA-Daten, PCI-DSS-Daten, Gramm-Leach-Bliley Act-Daten oder sogar standortspezifisch personenbezogene Informationen (PII). Damit Sie allgemeine Typen vertraulicher Informationen schnell ausfindig machen und schützen können, weisen die in Office 365 enthaltenen Richtlinienvorlagen bereits die gängigsten Typen vertraulicher Informationen auf, sodass Sie schnell einen Einstieg finden.
+Mithilfe einer vorkonfigurierten DLP-Richtlinienvorlage können spezifische Arten von vertraulichen Informationen ermittelt werden, wie z. B. HIPAA-Daten, PCI-DSS-Daten, Gramm-Leach-Bliley Act-Daten oder sogar standortspezifisch personenbezogene Informationen (PII). Damit Sie allgemeine Typen vertraulicher Informationen schnell ausfindig machen und schützen können, weisen die in Microsoft 365 enthaltenen Richtlinienvorlagen bereits die gängigsten Typen vertraulicher Informationen auf, sodass Sie schnell einen Einstieg finden.
   
 ![Liste der Vorlagen für Richtlinien zur Verhinderung von Datenverlust, wobei die Vorlage für das US-amerikanische Patriot Act hervorgehoben ist](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -501,11 +501,11 @@ Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Speicherort umfa
 
 Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Security &amp; Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diesen Ort und kann den Compliance Officers und anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zuzuweisen. Hierfür empfehlen wir, folgendermaßen vorzugehen:
   
-1. Erstellen Sie eine Gruppe in Office 365, und fügen Sie dieser Compliance Officers hinzu.
+1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
     
 2. Erstellen Sie eine Rollengruppe auf der Seite **Berechtigungen** des Security &amp; Compliance Center. 
     
-3. Fügen Sie die Office 365-Gruppe der Rollengruppe hinzu.
+3. Fügen Sie die Microsoft 365-Gruppe der Rollengruppe hinzu.
     
 Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
@@ -519,7 +519,7 @@ Zur Verwendung der meisten Cmdlets für das Security &amp; Compliance Center mü
     
 2. Verwenden Sie eines dieser [policy-and-compliance-dlp-Cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-DLP-Berichte müssen jedoch Daten aus allen Office 365-Komponenten (einschließlich Exchange Online) abrufen. Aus diesem Grund sind die **Cmdlets für die DLP-Berichte in Exchange Online PowerShell und nicht in Security &amp; Compliance Center Powershell** verfügbar. Zur Verwendung der Cmdlets für die DLP-Berichte müssen Sie daher folgende Aktionen ausführen:
+DLP-Berichte müssen jedoch Daten aus allen Microsoft 365-Komponenten (einschließlich Exchange Online) abrufen. Aus diesem Grund sind die **Cmdlets für die DLP-Berichte in Exchange Online PowerShell und nicht in Security &amp; Compliance Center Powershell** verfügbar. Zur Verwendung der Cmdlets für die DLP-Berichte müssen Sie daher folgende Aktionen ausführen:
   
 1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -544,4 +544,3 @@ DLP-Berichte müssen jedoch Daten aus allen Office 365-Komponenten (einschließ
 - [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
     
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
-    

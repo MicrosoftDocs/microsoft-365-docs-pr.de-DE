@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und Bereitstellen von Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067162"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631645"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Schritt 4: Konfigurieren von Windows Information Protection
 
@@ -51,6 +51,6 @@ Als Zwischenprüfung können Sie die [Beendigungskriterien](infoprotect-exit-cri
 
 |||
 |:-------|:-----|
-|![Schritt 5](../media/stepnumbers/Step5.png)|[Konfigurieren der Verhinderung von Datenverlust in Office 365](infoprotect-data-loss-prevention.md)|
+|![Schritt 5](../media/stepnumbers/Step5.png)|[Konfigurieren der Verhinderung von Datenverlust](infoprotect-data-loss-prevention.md)|
 
 

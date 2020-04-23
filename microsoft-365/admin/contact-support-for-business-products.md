@@ -24,17 +24,16 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land/Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln oder einen Microsoft Store besuchen.
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627078"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707547"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[Onlinesupport](#tab/online)
 
@@ -52,7 +51,9 @@ Sparen Sie Zeit, indem Ihre Serviceanfrage online starten. Wir unterstützen Sie
 
 ## <a name="phone-support"></a>[Telefonunterstützung](#tab/phone)
 
-Abrechnungssupport wird auf Englisch gewährleistet: von 9 bis 17 Uhr (9 bis18 Uhr in Australien), Montag bis Freitag.  <br/>Technischer Support wird in Englisch 24 Stunden am Tag, 7 Tage die Woche geboten. <br/> Administratoren müssen Ihre Kontodetails bereithalten, wenn sie anrufen.<br/>
+Abrechnungssupport wird in englischer Sprache montags bis freitags von 9 bis 17 Uhr (9 bis 18 Uhr in Australien) bereitgestellt.\
+Technischer Support wird in englischer Sprache 24 Stunden am Tag an 7 Tagen in der Woche bereitgestellt.\
+Administratoren müssen Ihre Kontodetails bereithalten, wenn sie anrufen.\
 
 - **In den USA wählen Sie 1 800 865 9408.**
 
@@ -62,7 +63,7 @@ Abrechnungssupport wird auf Englisch gewährleistet: von 9 bis 17 Uhr (9 bis18 U
 
 - **Wählen Sie im Vereinigten Königreich: 0800 032 6417.**
 
-Wenn die Telefonnummer Ihres Microsoft 365 Business-Supports oben nicht aufgeführt ist, verwenden Sie unten das Dropdownmenü, um Ihr Land oder Ihre Region auszuwählen.
+Wenn die Telefonnummer Ihres Microsoft 365 for Business-Supports oben nicht aufgeführt ist, verwenden Sie unten das Dropdownmenü, um Ihr Land oder Ihre Region auszuwählen.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -179,7 +180,7 @@ Kontaktieren Sie den Support. Wenn Probleme bei Onlineanfragen auftreten, steht 
 
 Personen mit Administratorrollen sind die einzigen Benutzer in der Organisation des Kunden, die zum Zugriff auf den Abschnitt „Administrator“ des Office 365-Portals, betrieben von 21Vianet, und die direkte Kommunikation mit 21Vianet über Office 365-Serviceanfragen berechtigt sind.
 
-Mit Office 365 können Sie mehrere Typen von Administratoren mit unterschiedlichen Funktionen bestimmen. In dieser Dienstbeschreibung wird die allgemeine Bezeichnung Administrator für alle Typen von Administratoren verwendet. Weitere Informationen zu den verschiedenen Administratorrollen finden Sie im Artikel zum Thema [Zuweisen von Administratorrollen in Microsoft 365 Business](add-users/assign-admin-roles.md).
+Mit Office 365 können Sie mehrere Typen von Administratoren mit unterschiedlichen Funktionen bestimmen. In dieser Dienstbeschreibung wird die allgemeine Bezeichnung Administrator für alle Typen von Administratoren verwendet. Weitere Informationen zu den verschiedenen Administratorrollen finden Sie im Artikel zum Thema [Zuweisen von Administratorrollen in Microsoft 365 for Business](add-users/assign-admin-roles.md).
 
 Der Administrator ist
 
@@ -255,6 +256,6 @@ Supportoptionen stehen nur für Administratoren in Organisationen mi einem Offic
 
 ### <a name="let-our-community-help"></a>Erhalten Sie Hilfe von unserer Community
 
-Sie können auch die [Communityforen von Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?LinkId=518605) nach bekannten Problemen und beliebten Themen durchsuchen oder eine neue Frage posten. Die Communityforen werden von geschulten Microsoft-Supportmitarbeitern überwacht, die Ihnen helfen können, das Problem zu beheben.
+Sie können auch die [Communityforen von Microsoft 365 for Business](https://go.microsoft.com/fwlink/p/?LinkId=518605) nach bekannten Problemen und beliebten Themen durchsuchen oder eine neue Frage posten. Die Communityforen werden von geschulten Microsoft-Supportmitarbeitern überwacht, die Ihnen helfen können, das Problem zu beheben.
 
 ::: moniker-end

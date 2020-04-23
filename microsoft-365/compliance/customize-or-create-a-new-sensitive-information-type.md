@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Informationen zum Ändern oder Erstellen eines neuen vertraulichen Informationstyps in Office 365 für DSGVO.
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Hier erfahren Sie, wie Sie neue vertrauliche Informationstypen für die DSGVO ändern oder erstellen können.
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637777"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Anpassen oder Erstellen eines neuen vertraulichen Informationstyps
 
-Dieser Artikel enthält drei Beispiele, anhand derer gezeigt wird, wie neue vertrauliche Informationstypen in Office 365 für die DSGVO erstellt bzw. geändert werden können.
+Dieser Artikel enthält drei Beispiele, anhand derer gezeigt wird, wie neue vertrauliche Informationstypen für die DSGVO erstellt oder geändert werden können.
 
 - Ändern eines vorhandenen vertraulichen Informationstyps – EU-Debitkartennummer
 
@@ -45,9 +45,9 @@ Siehe auch:
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>Ändern eines vertraulichen Informationstyps für verbesserte Genauigkeit
 
-Wenn Sie die Inhaltssuche für die Suche personenbezogener Daten mithilfe von vertraulichen Informationstypen verwenden und diese nicht die erwarteten Ergebnisse oder zu viele falsch positive Ergebnisse zurückgibt, sollten Sie den vertraulichen Informationstyp ändern, damit dieser besser mit Ihrer Umgebung funktioniert.
+Wenn Sie die Inhaltssuche für die Suche nach personenbezogenen Daten mithilfe von vertraulichen Informationstypen verwenden und diese nicht die erwarteten Ergebnisse oder zu viele falsch positive Ergebnisse zurückgibt, sollten Sie den vertraulichen Informationstyp ändern, damit er bei Ihrer Umgebung besser funktioniert.
 
-Eine bewährte Methode beim Erstellen oder Anpassen eines vertraulichen Informationstyps besteht darin, einen neuen vertraulichen Informationstyp basierend auf einem vorhandenen zu erstellen und für diesen einen eindeutigen Namen und Bezeichner festzulegen. Wenn Sie die Parameter des vertraulichen Informationstyps „EU-Debitkartennummer“ anpassen möchten, können Sie Ihre Kopie dieser Regel z. B. „EU-Debitkarte erweitert“ benennen, damit sie sich von der ursprünglichen Regel unterscheidet.
+Eine bewährte Methode beim Erstellen oder Anpassen eines vertraulichen Informationstyps besteht darin, einen neuen vertraulichen Informationstyp basierend auf einem vorhandenen zu erstellen und dafür einen eindeutigen Namen und Bezeichner festzulegen. Wenn Sie beispielsweise die Parameter des vertraulichen Informationstyps „EU-Debitkartennummer“ anpassen möchten, könnten Sie Ihre Kopie dieser Regel „EU-Debitkarte erweitert“ nennen, damit sie sich von der ursprünglichen Regel unterscheidet.
 
 Ändern Sie in Ihrem neuen vertraulichen Informationstyp einfach die Werte, die Sie für bessere Genauigkeit ändern möchten. Wenn Sie dies abgeschlossen haben, laden Sie Ihren neuen vertraulichen Informationstyp hoch und erstellen Sie eine neue DLP-Regel (oder ändern Sie eine vorhandene Regel), um den hinzugefügten neuen vertraulichen Informationstyp zu verwenden. Beim Ändern der Genauigkeit vertraulicher Informationstypen sind möglicherweise einige Testversuche erforderlich, sodass Sie durch eine Kopie des ursprünglichen Typs darauf zurückgreifen können, wenn dies in der Zukunft erforderlich ist.
 
@@ -77,9 +77,9 @@ So passen Sie einen benutzerdefinierten vertraulichen Informationstyp an
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Beispiel: Ändern des vertraulichen Informationstyps „EU-Debitkartennummer“
 
-Zur Verbesserung der Genauigkeit von DLP-Regeln in einem System sind Tests anhand eines Beispieldatensatzes erforderlich und ggf. eine Optimierung durch sich wiederholende Änderungen und Tests. In diesem Beispiel werden Änderungen des vertraulichen Informationstyps „EU-Debitkartennummer“ zur Verbesserung der Genauigkeit veranschaulicht.
+Zur Verbesserung der Genauigkeit von DLP-Regeln in einem System sind Tests anhand eines Beispieldatensatzes erforderlich, und ggf. muss eine Optimierung durch sich wiederholende Änderungen und Tests vorgenommen werden. In diesem Beispiel werden Änderungen des vertraulichen Informationstyps „EU-Debitkartennummer“ zur Verbesserung der Genauigkeit gezeigt.
 
-Bei der Suche nach einer EU-Debitkartennummer in unserem Beispiel ist die Definition dieser Zahl mithilfe eines komplexen Musters streng als 16 Ziffern definiert, die einer Überprüfung der Prüfsumme unterliegt. Wir können dieses Muster aufgrund der Zeichenfolgendefinition dieses vertraulichen Informationstyps nicht ändern. Wir können jedoch zur Verbesserung der Genauigkeit für die Suche dieses vertraulichen Informationstyps in Office 365 mit DLP von Office 365 folgende Änderungen vornehmen.
+Bei der Suche nach einer EU-Debitkartennummer in unserem Beispiel ist die Definition dieser Zahl mithilfe eines komplexen Musters streng als 16 Ziffern definiert und unterliegt einer Überprüfung der Prüfsumme. Wir können dieses Muster aufgrund der Zeichenfolgendefinition dieses vertraulichen Informationstyps nicht ändern, zur Verbesserung der Genauigkeit für die Suche dieses vertraulichen Informationstyps mit DLP in Office 365 aber die folgenden Änderungen vornehmen.
 
 ### <a name="proximity-modification"></a>Änderung der Näherung
 
@@ -139,7 +139,7 @@ Hinweis: In Kürze stehen viele neue vertrauliche Informationstypen für persone
 
 ### <a name="step-1--use-kql-queries-and-key-words-to-find-additional-data-in-your-environment"></a>Schritt 1 – Verwenden von KQL-Abfragen und Stichwörtern für die Suche nach zusätzlichen Daten in Ihrer Umgebung
 
-Sie müssen möglicherweise zusätzliche Abfragen erstellen, um nach personenbezogenen Daten zu suchen, die der DSGVO unterliegen. Die Inhaltssuche verwendet KQL (Keyword Query Language) für die Suche von Daten. Die meisten vertraulichen Daten können nicht ausschließlich mithilfe von KQL ohne vertrauliche Informationstypen ordnungsgemäß erkannt werden. Ziel ist es daher, KQL-Zeichenfolgen mithilfe der Inhaltssuche zu testen und zu optimieren und sie dann für das Erstellen und Optimieren neuer vertraulicher Informationstypen für verbesserte Genauigkeit zu verwenden.
+Sie müssen möglicherweise zusätzliche Abfragen erstellen, um nach personenbezogenen Daten zu suchen, die der DSGVO unterliegen. Die Inhaltssuche verwendet KQL (Keyword Query Language, Schlüsselwortabfragesprache) für die Suche von Daten. Die meisten vertraulichen Daten können nicht ausschließlich mithilfe von KQL ohne vertrauliche Informationstypen ordnungsgemäß erkannt werden. Ziel ist es daher, KQL-Zeichenfolgen mithilfe der Inhaltssuche zu testen, zu optimieren und dann für das Erstellen und Optimieren neuer vertraulicher Informationstypen zur Erzielung sogar einer größeren Genauigkeit zu verwenden.
 
 Verwenden Sie die folgenden Ressourcen, um Abfragen mithilfe von KQL zu formulieren und zu optimieren:
 
@@ -157,7 +157,7 @@ Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen f�
 
 E-Mail-Adressen werden als vertrauliche Informationen behandelt, die Personen betreffen. Dies ist ein einfaches Beispiel, das veranschaulicht, wie hilfreich die Inhaltssuche sein kann.
 
-KQL und Schlüsselwörter können nicht zusammen verwendet werden. Verwenden Sie diese Tools separat, um Ihre Abfrage zu verfeinern und Schlüsselwörter zu ermitteln, die bei vertraulichen Informationstypen nützlich sein können.
+KQL und Schlüsselwörter können nicht zusammen verwendet werden. Verwenden Sie diese Tools separat, um Ihre Abfrage zu verfeinern und Schlüsselwörter zu ermitteln, die bei vertraulichen Informationstypen nützlich sein könnten.
 
 ### <a name="kql-query"></a>KQL-Abfrage
 
@@ -169,7 +169,7 @@ Hinweise:
 
 -   Leider unterstützt KQL keine Abfragen mit der Regex-Klasse (Beispiel: IdRef="Regex\_email\_address")
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 Geben Sie jedes Schlüsselwort in einer separaten Zeile ein. Beispielschlüsselwörter:
 
@@ -191,13 +191,13 @@ In diesem Beispiel erfahren Sie möglicherweise, dass Schlüsselwörter nicht er
 
 ### <a name="step-2--create-a-new-custom-sensitive-information-type"></a>Schritt 2 – Erstellen eines neuen benutzerdefinierten vertraulichen Informationstyps
 
-Nachdem Sie KQL-Abfragen und Schlüsselwörter zum Identifizieren vertraulicher Informationstypen verwendet haben, verwenden Sie diese zum Erstellen von neuen benutzerdefinierten vertraulichen Informationstypen. In vielen Fällen benötigen Sie die Komplexität der vertraulichen Informationstypen, um eine geeignete Genauigkeitsebene zu erzielen. Sie können dann diese benutzerdefinierten vertraulichen Informationstypen mit der Inhaltssuche, in DLP-Richtlinien und anderen Tools und in anderen KQL-Abfragen verwenden.
+Nachdem Sie KQL-Abfragen und Schlüsselwörter zum Identifizieren vertraulicher Informationen verwendet haben, verwenden Sie sie zum Erstellen von neuen benutzerdefinierten vertraulichen Informationstypen. In vielen Fällen benötigen Sie die Komplexität von vertraulichen Informationstypen, um eine geeignete Genauigkeitsebene zu erzielen. Sie können dann diese benutzerdefinierten vertraulichen Informationstypen bei der Inhaltssuche, in DLP-Richtlinien und anderen Tools sowie in anderen KQL-Abfragen verwenden.
 
 Die bewährte Methode besteht darin, einen neuen vertraulichen Informationstyp basierend auf einem vorhandenen zu erstellen. Verwenden Sie das gleiche Verfahren, wie oben in diesem Artikel beschrieben.
 
 ### <a name="example--create-a-new-sensitive-information-for-email-addresses"></a>Beispiel – Erstellen eines neuen vertraulichen Informationstyps für E-Mail-Adressen 
 
-Wir werden mit der E-Mail-Adresse als Beispiel fortfahren, weil es einfach ist. In der folgende Tabelle sind die Änderungen enthalten, die für einen neuen vertraulichen Informationstyp „E-Mail-Adresse“ empfohlen sind.
+Wir werden mit der E-Mail-Adresse als Beispiel fortfahren, weil es einfach ist. In der folgenden Tabelle sind die Änderungen enthalten, die für einen neuen vertraulichen Informationstyp „E-Mail-Adresse“ empfohlen werden.
 
 <table>
 <thead>
@@ -294,7 +294,7 @@ Beispiele für Contoso-Kundennummern:
 >
 > 17040O1118
 
-Contoso verwendet immer eine Contoso-Kundennummer beim Verweisen auf Kunden in der internen Korrespondenz, externen Korrespondenz, in Dokumenten usw. Das Unternehmen möchte einen benutzerdefinierten vertraulichen Informationstyp erstellen, um die Verwendung von Contoso-Kundennummern in Office 365 zu ermitteln, um einen möglichen Schutz für die Verwendung dieser personenbezogenen Daten anzuwenden.
+Contoso verwendet immer eine Contoso-Kundennummer zum Verweisen auf Kunden in der internen Korrespondenz, externen Korrespondenz, in Dokumenten usw. Das Unternehmen möchte einen benutzerdefinierten vertraulichen Informationstyp erstellen, um die Verwendung von Contoso-Kundennummern zu ermitteln, damit es einen Schutz für die Verwendung dieser personenbezogenen Daten anwenden kann.
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Erstellen eines neuen vertraulichen Informationstyps für Contoso-Kundennummer
 
@@ -312,7 +312,7 @@ Contoso verwendet immer eine Contoso-Kundennummer beim Verweisen auf Kunden in d
 <td align="left">Contoso verwendet PowerShell und die Inhaltssuche, um nach Dokumenten zu suchen, die einem beispielhaften Satz an Contoso-Kundennummern entsprechen.</td>
 <td align="left">
 
-<p>#Verbinden mit Office 365 Security &amp; Compliance Center</p>
+<p>#Herstellen einer Verbindung mit dem Security &amp; Compliance Center</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Erstellen &amp; Starten der Suche für Beispieldaten</p>
@@ -363,7 +363,7 @@ Contoso verwendet immer eine Contoso-Kundennummer beim Verweisen auf Kunden in d
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso erstellt den benutzerdefinierten vertraulichen Informationstyp mit PowerShell.</td>
-<td align="left"><p>#Verbinden mit Office 365 Security &amp; Compliance Center</p>
+<td align="left"><p>#Herstellen einer Verbindung mit dem Security &amp; Compliance Center</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Erstellen eines neuen vertraulichen Informationstyps</p>

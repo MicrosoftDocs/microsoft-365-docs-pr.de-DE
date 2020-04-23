@@ -20,17 +20,17 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.'
-ms.openlocfilehash: a0a2a1e790711bf15db82068c00da5d614b498c4
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855450"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632190"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Schützen von SharePoint Online-Dateien mit Azure Information Protection
 
 >[!Note]
->Die aktuelle Lösung für Dateien auf einer hochgradig vertraulichen SharePoint Online-Teamwebsite verwendet Office 365-Vertraulichkeitsbezeichnungen. Weitere Einzelheiten finden Sie in [diesem Artikel](protect-sharepoint-online-files-with-sensitivity-label.md).
+>Die aktuelle Lösung für Dateien auf einer hochgradig vertraulichen SharePoint Online-Teamwebsite verwendet Microsoft 365-Vertraulichkeitsbezeichnungen. Weitere Einzelheiten finden Sie in [diesem Artikel](protect-sharepoint-online-files-with-sensitivity-label.md).
 >
 
 Konfigurieren Sie anhand der Schritte in diesem Artikel Azure Information Protection, um eine Verschlüsselung und Berechtigungen für Dateien bereitzustellen. Die Dateien können zu einer SharePoint-Bibliothek hinzugefügt werden, die für die Schutzebene „streng vertraulich“ konfiguriert wurde. Sie können eine Datei auch direkt über die Website öffnen und den Azure Information Protection-Client verwenden, um eine Verschlüsselung hinzuzufügen. Der Verschlüsselungs- und Berechtigungsschutz einer Datei bleibt auch dann bestehen, wenn die Datei von der Website heruntergeladen wird. 
@@ -40,12 +40,12 @@ Diese Schritte sind Teil einer umfangreicheren Lösung zur Konfiguration eines S
 Die Verwendung von Azure Information Protection für Dateien in SharePoint Online wird nicht für alle Benutzer empfohlen, sie ist jedoch eine Option für Kunden, die für eine Teilmenge von Dateien diese Ebene des Schutzes benötigen.
 
 Einige wichtige Hinweise zu dieser Lösung:
-- Wenn Azure Information Protection-Verschlüsselung auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur auf die Metadaten (einschließlich Office 365-Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).
+- Wenn Azure Information Protection-Verschlüsselung auf in Office 365 gespeicherte Dateien angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) können nur auf die Metadaten (einschließlich Microsoft 365-Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).
 
 - Bei dieser Lösung muss ein Benutzer eine Bezeichnung auswählen, die den Schutz von Azure Information Protection anwendet. Wenn Sie eine automatische Verschlüsselung benötigen und SharePoint die Dateien indizieren und überprüfen soll, sollten Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in SharePoint Online in Betracht ziehen. Wenn Sie eine SharePoint-Bibliothek für IRM konfigurieren, werden die Dateien automatisch beim Herunterladen für die Bearbeitung verschlüsselt. Für SharePoint IRM gelten einige Einschränkungen, die Ihre Entscheidung beeinflussen könnten. Weitere Informationen finden Sie unter [Einrichten von Information Rights Management (IRM) im SharePoint Admin Center](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
 ## <a name="admin-setup"></a>Einrichten eines Administrators
-Befolgen Sie zuerst die Anweisungen unter [Aktivieren von Azure RMS mit Microsoft 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) für Ihr Office 365-Abonnement.
+Führen Sie zuerst die Anleitungen unter [Aktivieren von Azure RMS mit Microsoft 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) für Ihr Microsoft 365-Abonnement aus.
   
 Konfigurieren Sie anschließend Azure Information Protection mit einer neuen bereichsbezogenen Richtlinie und einer untergeordneten Bezeichnung mit dem Schutz und den Berechtigungen für die streng vertrauliche SharePoint Online-Teamwebsite.
   
@@ -100,7 +100,7 @@ Sie müssen den [Azure Information Protection-Client](https://docs.microsoft.com
     
 - [Downloadseite für die manuelle Installation](https://www.microsoft.com/download/details.aspx?id=53018)
     
-Nach der Installation führen die Benutzer eine Office-Anwendung (wie z. B. Microsoft Word) aus und melden sich von dort aus mit Ihrem Office 365-Konto an. Die neue Symbolleiste **Information Protection** ermöglicht es Benutzern, die neue Bezeichnung auszuwählen. Stellen Sie sicher, dass Ihre Benutzer die SharePoint Online-Teamwebsite kennen und wissen, welche Bezeichnung sie verwenden müssen, um ihre streng vertraulichen Dateien zu schützen.
+Nach der Installation führen Ihre Benutzer eine Office-Anwendung (z. B. Microsoft Word) aus und melden sich von dort aus mit Ihrem Microsoft 365-Konto an. Die neue Symbolleiste **Information Protection** ermöglicht es Benutzern, die neue Bezeichnung auszuwählen. Stellen Sie sicher, dass Ihre Benutzer die SharePoint Online-Teamwebsite kennen und wissen, welche Bezeichnung sie verwenden müssen, um ihre streng vertraulichen Dateien zu schützen.
   
 > [!NOTE]
 > Wenn Sie über mehrere streng vertrauliche SharePoint Online-Teamwebsites verfügen, müssen Sie anhand der oben aufgeführten Einstellungen mehrere bereichsbezogene Azure Information Protection-Richtlinien mit Unterbezeichnungen erstellen, wobei die Berechtigungen für jede Unterbezeichnung auf die Websitemitglieder-Zugriffsgruppe einer bestimmten SharePoint Online-Teamwebsite festgelegt sind. 

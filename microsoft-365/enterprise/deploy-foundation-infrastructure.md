@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen Sie die Hauptphasen der Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise in Ihrer Organisation, auch bekannt als die zentrale Bereitstellung.
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153844"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638248"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise Foundation-Infrastruktur
 
@@ -33,9 +33,9 @@ Für einen definierten End-to-End-Pfad für die Bereitstellung können Sie diese
 |![Phase 1: Vernetzung](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Netzwerke](networking-infrastructure.md)| Ihr Netzwerk ist für den Zugriff auf die cloudbasiert Dienste von Microsoft 365 optimiert. |
 |![Phase 2: Identität](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identität](identity-infrastructure.md)| Ihre Admin-Konten sind geschützt, Ihre Benutzer und Gruppen sind synchronisiert, und Ihre Benutzerauthentifizierung ist stark. |
 |![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Ihre vorhandenen Windows-basierten Computer können auf Windows 10 Enterprise aktualisiert werden, und neue Geräte sind mit Windows 10 Enterprise ausgestattet. |
-|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Office 365 ProPlus durchführen. |
+|![Phase 4: Microsoft 365 Apps for Enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Microsoft 365 Apps for Enterprise](office365proplus-infrastructure.md)| Ihre vorhandenen Benutzer von Microsoft Office können ein Upgrade auf Microsoft 365 Apps for Enterprise durchführen. |
 |![Phase 5: Verwaltung mobiler Geräte](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Verwaltung mobiler Geräte](mobility-infrastructure.md)| Ihre Geräte können registriert und verwaltet werden. |
-|![Phase 6: Informationsschutz](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Schutz von Daten](infoprotect-infrastructure.md)| Office 365-Sicherheitsfunktionen sind aktiviert, und Ihre Bezeichnungen und Richtlinien sind bereit, Dokumente und E-Mail zu schützen. |
+|![Phase 6: Informationsschutz](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Schutz von Daten](infoprotect-infrastructure.md)| Microsoft 365-Sicherheitsfunktionen sind aktiviert, und Ihre Bezeichnungen und Richtlinien sind bereit, Dokumente und E-Mail zu schützen. |
 
 Die Phasen beginnen mit den grundlegendsten Elementen (Netzwerk und Identität), und erstellen dann Schichten von Infrastruktur-Einstellungen und Gruppen zu:
 
@@ -90,9 +90,9 @@ Beispielsweise erstellen Sie die Einstellungen für:
 |:-------|:-----|
 | Identität | Kontosynchronisierung und Gruppen für identitätsbasierte Richtlinien für bedingten Zugriff. |
 | Windows 10 Enterprise | Gruppen, die automatisch Computer mit Windows 7 oder Windows 8.1 auf Windows 10 Enterprise aktualisieren. |
-| Office 365 ProPlus | Gruppen, die Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitstellen. |
+| Microsoft 365 Apps for Enterprise | Gruppen, die Microsoft 365 Apps for Enterprise automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitstellen. |
 | Verwaltung mobiler Geräte | Gruppen für Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
-| Schutz von Daten | Gruppe für Office 365-Vertraulichkeitsbezeichnungen. |
+| Information Protection | Gruppen für Vertraulichkeitsbezeichnungen. |
 
 Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustellen, können Sie:
 
@@ -100,11 +100,11 @@ Wenn Sie bereit sind, Elemente dieser Infrastruktur für Benutzer bereitzustelle
 |:-------|:-----|
 | Identität | Hinzufügen von Benutzerkonten zu den Gruppen für identitätsbasierte Richtlinien für bedingten Zugriff. |
 | Windows 10 Enterprise | Hinzufügen von Konten zu den Gruppen, um Windows 10 Enterprise automatisch für Benutzer mit Windows 7 oder Windows 8.1 bereitzustellen. |
-| Office 365 ProPlus | Hinzufügen von Benutzerkonten zu den Gruppen, um Office 365 ProPlus automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitzustellen. |
+| Microsoft 365 Apps for Enterprise | Fügen Sie Benutzerkonten zu den Gruppen hinzu, um Microsoft 365 Apps for Enterprise automatisch für Benutzer mit Office 2010, Office 2013 oder Office 2016 bereitzustellen. |
 | Verwaltung mobiler Geräte | Hinzufügen von Konten zu den Gruppen für die Geräteregistrierung und gerätebasierte Richtlinien für bedingten Zugriff. |
 | Schutz von Daten | Fügen Sie Benutzerkonten zu den Gruppen für Vertraulichkeitsbezeichnungen hinzu. |
 
-Sobald die Phasen oder Elemente der Foundation-Infrastruktur fertiggestellt, getestet und erprobt ist, können Sie installierte Software, wie Windows 10 Enterprise und Office 365 ProPlus, sowie Cloud-basierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, an Ihre Benutzer so bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
+Sobald die Phasen oder Elemente der Foundation-Infrastruktur fertiggestellt, getestet und erprobt sind, können Sie installierte Software, wie Windows 10 Enterprise und Microsoft 365 Apps for Enterprise, sowie cloudbasierte Dienste und Schutzmaßnahmen, wie Geräteregistrierung und Richtlinien für bedingten Zugriff, auf die Art und Weise für Ihre Benutzer bereitstellen, wie es Ihren Unternehmenszielen und IT-Ressourcen am besten entspricht.
 
 ## <a name="deployment-and-project-management-strategies"></a>Bereitstellungs- und Projektmanagement-Strategien
 
@@ -112,7 +112,7 @@ Um Ihnen einige Ideen zu geben, wie Sie das Projektmanagement der verschiedenen 
 
 ## <a name="deployment-for-non-enterprises"></a>Bereitstellung für Nicht-Unternehmen
 
-Wenn Ihre Organisation kleiner und Microsoft 365 Business für Sie nicht geeignet ist, finden Sie unter [Bereitstellung für Nicht-Unternehmen](deploy-foundation-infrastructure-non-enterprises.md) eine vereinfachte Bereitstellungsmethode.
+Wenn Ihre Organisation kleiner und Microsoft 365 for Business für Sie nicht geeignet ist, finden Sie unter [Bereitstellung für Nicht-Unternehmen](deploy-foundation-infrastructure-non-enterprises.md) eine vereinfachte Bereitstellungsmethode.
 
 
 ## <a name="next-step"></a>Nächster Schritt

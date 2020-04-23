@@ -1,5 +1,5 @@
 ---
-title: Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
+title: Informationspflicht bei Verletzung des Schutzes personenbezogener Daten im Rahmen der Datenschutz-Grundverordnung (DSGVO)
 description: Wie Microsoft Sie vor Verletzungen des Schutzes personenbezogener Daten schützt und wie Microsoft reagiert und Sie benachrichtigt, wenn eine Verletzung auftritt.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 25888f0981cc4fe2b25e70282f5f6b49283cdcf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ae69a8330f5daec275247e718f7eb66a5f0f8bf9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073852"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633440"
 ---
-# <a name="office-365-breach-notification-under-the-gdpr"></a>Office 365 Benachrichtigungen bei Datenschutzverletzungen im Rahmen der DSGVO
+# <a name="breach-notification-under-the-gdpr"></a>Informationspflicht bei Verletzung des Schutzes personenbezogener Daten im Rahmen der Datenschutz-Grundverordnung (DSGVO)
 
 Als Datenauftragsverarbeiter stellt Office 365 sicher, dass unsere Kunden in ihrer Rolle als Datenverantwortliche die Anforderungen an Benachrichtigungen im Fall von Datenschutzverletzungen im Rahmen der DSGVO einhalten. Zu diesem Zweck sind wir bestrebt, Folgendes zu tun:
 

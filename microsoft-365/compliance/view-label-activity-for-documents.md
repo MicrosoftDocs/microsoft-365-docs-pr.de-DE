@@ -16,17 +16,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Mit dem Bezeichnungsaktivitäten-Explorer im Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bieten.
+ms.openlocfilehash: b0a799e192f6b6c3cb8087b38322094ca7423fea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626331"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 
-Nachdem Sie Ihre Bezeichnungen erstellt haben, sollten Sie überprüfen, ob sie auf Inhalte wie gewünscht angewendet werden. Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
+Nachdem Sie Ihre Bezeichnungen erstellt haben, sollten Sie überprüfen, ob sie auf Inhalte wie gewünscht angewendet werden. Mit dem Bezeichnungsaktivitäten-Explorer im Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bieten.
   
 Mit dem Bezeichnungsaktivitäten-Explorer können Sie beispielsweise folgende Aufgaben ausführen:
   

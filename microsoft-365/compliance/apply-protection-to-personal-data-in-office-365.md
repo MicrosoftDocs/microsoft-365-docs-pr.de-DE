@@ -1,5 +1,5 @@
 ---
-title: Anwenden des Schutzes auf personenbezogene Daten in Office 365
+title: Anwenden des Schutzes auf personenbezogene Daten
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,21 +18,21 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informationen zum Verwenden von DLP-Richtlinien (Data Loss Prevention, Verhindern von Datenverlusten) zum Schutz personenbezogener Daten in Office 365.
-ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Hier erfahren Sie, wie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) zum Schutz personenbezogener Daten in Microsoft 365 verwendet werden.
+ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079751"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634273"
 ---
-# <a name="apply-protection-to-personal-data-in-office-365"></a>Anwenden des Schutzes auf personenbezogene Daten in Office 365
+# <a name="apply-protection-to-personal-data"></a>Anwenden des Schutzes auf personenbezogene Daten
 
-Der Schutz von personenbezogenen Informationen in Office 365 umfasst Funktionen, um Datenverlust zu vermeiden. Mithilfe von Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
+Zum Schutz von personenbezogenen Informationen in Microsoft 365 gehören Funktionen zur Verhinderung von Datenverlust. Mithilfe von Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center können Sie vertrauliche Informationen in Microsoft 365 identifizieren, überwachen und automatisch schützen lassen.
 
 In diesem Thema wird die Verwendung von DLP zum Schutz personenbezogener Daten erläutert. Dieses Thema beinhaltet auch andere Schutzfunktionen, die verwendet werden können, um die Einhaltung der DSGVO zu gewährleisten, u. a. Festlegen von Berechtigungen in SharePoint-Bibliotheken und Verwenden von Gerätezugriffsrichtlinien.
 
-## <a name="apply-protection-using-data-loss-prevention-in-office-365"></a>Anwenden des Schutzes mithilfe von DLP in Office 365
+## <a name="apply-protection-using-data-loss-prevention-in-microsoft-365"></a>Anwenden des Schutzes mithilfe von DLP in Microsoft 365
 
 Mit DLP können Sie Folgendes:
 
@@ -42,7 +42,7 @@ Mit DLP können Sie Folgendes:
 
 -   Benutzern dabei helfen, zu erfahren, wie sie die Anforderungen erfüllen, ohne dabei ihren Arbeitsablauf unterbrechen zu müssen
 
--   DLP-Berichte mit Inhalten anzeigen, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen
+-   Anzeigen von DLP-Berichten mit Inhalten, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen.
 
 Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
@@ -62,9 +62,9 @@ Diese Abbildung zeigt die Optionen für das Erstellen einer DLP-Richtlinie:
 
 ### <a name="using-dlp-for-gdpr-compliance"></a>Verwenden von DLP für die Einhaltung der DSGVO
 
-Einer der primären Verwendungszwecke von DLP von Office 365 besteht darin, personenbezogene Daten, die Personen innerhalb der EU betreffen, in Ihrer Office 365-Umgebung zu identifizieren. DLP von Office 365 kann Ihren Complianceteams melden, wo personenbezogene Informationen in SharePoint Online und OneDrive for Business gespeichert wurden, oder wenn Benutzer E-Mails senden, die personenbezogene Informationen enthalten. DLP kann auch Richtlinientipps für Mitarbeiter bei der Arbeit mit personenbezogenen Informationen bereitstellen, die EU-Bürger betreffen.
+Einer der primären Verwendungszwecke von Microsoft 365 DLP besteht darin, personenbezogene Daten, die Personen innerhalb der EU betreffen, in Ihrer Microsoft 365-Umgebung zu identifizieren. Microsoft 365 DLP kann Ihren Complianceteams melden, wo personenbezogene Informationen in SharePoint Online und OneDrive for Business gespeichert wurden oder wenn Benutzer E-Mails senden, die personenbezogene Informationen enthalten. DLP kann auch Richtlinientipps für Ihre Mitarbeiter bei der Arbeit mit personenbezogenen Informationen bereitstellen, die EU-Bürger betreffen.
 
-Die Aufklärung und Bewusstseinsbildung in Bezug auf Daten von EU-Bürgern, die in Ihrer Umgebung gespeichert werden, sowie den Umgang von Mitarbeitern mit diesen stellen eine Ebene des Informationsschutzes unter Verwendung von DLP von Office 365. In vielen Fällen benötigen Mitarbeiter, die bereits Zugriff auf diese Art von Informationen haben, diesen Zugriff für ihre täglichen Aufgaben. Für die Erzwingung von DLP-Richtlinien zur Einhaltung der DSGVO ist nicht unbedingt eine Einschränkung des Zugriffs erforderlich.
+Die Aufklärung und Bewusstseinsbildung in Bezug auf Daten von EU-Bürgern, die in Ihrer Umgebung gespeichert werden, sowie den Umgang Ihrer Mitarbeiter damit stellen eine Ebene des Informationsschutzes unter Verwendung von Office 365 DLP dar. In vielen Fällen benötigen Mitarbeiter, die bereits Zugriff auf diese Informationsart haben, diesen Zugriff für ihre täglichen Aufgaben. Für die Erzwingung von DLP-Richtlinien zur Einhaltung der DSGVO ist nicht unbedingt eine Einschränkung des Zugriffs erforderlich.
 
 Jedoch beinhaltet die Einhaltung der DSGVO in der Regel eine Risikobewertung der Organisation, sowohl aus rechtlicher Sicht als auch aus der Sicht der Informationssicherheit, die Identifizierung von Typen und Speicherorten von personenbezogenen Informationen, sowie, ob es eine Rechtsgrundlage für die Speicherung und Verarbeitung dieser Informationen gibt. Basierend auf dieser Bewertung, kann es für die Implementierung von Richtlinien zum Schutz der Organisation und zur Einhaltung der DSGVO erforderlich sein, den Zugriff von Mitarbeitern auf Dokumente mit personenbezogenen Daten zu entfernen, die EU-Bürger betreffen. In Fällen, in denen weiterer Schutz erforderlich ist, kann zusätzlicher DLP-Schutz konfiguriert werden.
 
@@ -131,8 +131,8 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 <td align="left">Wählen Sie eine benutzerdefinierte Richtlinienvorlage.</td>
 </tr>
 <tr class="even">
-<td align="left">Speicherorte</td>
-<td align="left">Alle Speicherorte in Office 365</td>
+<td align="left">Standorte</td>
+<td align="left">Alle Speicherorte in Microsoft 365</td>
 </tr>
 <tr class="odd">
 <td align="left">Nach Inhalten suchen, die Folgendes enthalten</td>
@@ -140,18 +140,18 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 </tr>
 <tr class="even">
 <td align="left">Erkennen, wenn diese Inhalte freigegeben werden</td>
-<td align="left">Aktivieren Sie dieses Kontrollkästchen, und wählen Sie „Für Personen außerhalb meiner Organisation“.</td>
+<td align="left">Aktivieren Sie dieses Kontrollkästchen, und wählen Sie „Für Personen außerhalb meiner Organisation“ aus.</td>
 </tr>
 <tr class="odd">
 <td align="left">Benutzer benachrichtigen, wenn Inhalte den Richtlinieneinstellungen entsprechen</td>
-<td align="left"><p>Aktivieren Sie dieses Kontrollkästchen („Richtlinientipps für Benutzer anzeigen und eine E-Mail-Benachrichtigung senden“.)</p>
-<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie diese für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in dem Artikel: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
+<td align="left"><p>Aktivieren Sie dieses Kontrollkästchen („Richtlinientipps für Benutzer anzeigen und eine E-Mail-Benachrichtigung senden“.).</p>
+<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie sie für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in diesem Artikel: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Erkennen, wenn eine bestimmte Menge personenbezogener Informationen auf einmal freigegeben wird</td>
-<td align="left"><p>„Erkennen, wenn Inhalte, die freigegeben werden Folgendes enthalten: Mindestens ____ Instanzen von personenbezogenen Informationen des gleichen Typs“ – Diese Einstellung auf 1 festlegen.</p>
-<p>„Schadensberichte per E-Mail senden“ – Aktivieren Sie dieses Kontrollkästchen. Klicken Sie auf „Auswählen, was der Bericht enthalten und an wen dieser gesendet werden soll“. Stellen Sie sicher, dass Sie Ihr Complianceteam hinzufügen.</p>
-<p>„Zugriff auf Inhalte einschränken und die Richtlinie außer Kraft setzen“ – Deaktivieren Sie dieses Kontrollkästchen, um Benachrichtigungen zu personenbezogenen Informationen zu erhalten, ohne dass Benutzer daran gehindert werden, auf diese zuzugreifen.</p></td>
+<td align="left"><p>„Erkennen, wenn Inhalte, die freigegeben werden Folgendes enthalten: Mindestens ____ Instanzen desselben Typs vertraulicher Informationen“ – Legen Sie diese Einstellung auf „1“ fest.</p>
+<p>„Schadensberichte per E-Mail senden“ – Aktivieren Sie dieses Kontrollkästchen. Klicken Sie auf „Auswählen, was der Bericht enthalten und an wen er gesendet werden soll“. Außerdem müssen Sie Ihr Complianceteam hinzufügen.</p>
+<p>„Zugriff auf Inhalte einschränken und die Richtlinie außer Kraft setzen“ – Deaktivieren Sie dieses Kontrollkästchen, um Benachrichtigungen zu vertraulichen Informationen zu erhalten, ohne dass Benutzer am Zugriff darauf gehindert werden.</p></td>
 </tr>
 </tbody>
 </table>
@@ -164,9 +164,9 @@ Alle Speicherorte umfasst:
 
 - Exchange-Postfächer
 
-Da die Inhaltssuche derzeit das Testen personenbezogener Informationstypen mit E-Mails nicht unterstützt, sollten Sie ggf. separate Richtlinien für Exchange mit einer Teilmenge von vertraulichen Informationstypen in einer Richtlinie erstellen und die Einführung dieser Richtlinien überwachen.
+Weil die Inhaltssuche das Testen vertraulicher Informationstypen mit E-Mails derzeit nicht unterstützt, sollten Sie ggf. separate Richtlinien für Exchange mit einer Teilmenge von vertraulichen Informationstypen in jeder Richtlinie erstellen und die Einführung dieser Richtlinien überwachen.
 
-## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>Zusätzlicher Schutz, den Sie zum Schutz personenbezogener Daten in Office 365 anwenden können
+## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-microsoft-365"></a>Zusätzlicher Schutz, den Sie zum Schutz personenbezogener Daten in Microsoft 365 anwenden können
 
 Mit vertraulichen Informationstypen, Bezeichnungen und DLP-Richtlinien können Dokumente mit bestimmten Daten erkannt und entsprechender Schutz für diese angewendet werden. Diese Schutzfunktionen hängen jedoch von geeigneten Berechtigungen ab, die für den Zugriff auf Daten festgelegt sind, von Benutzern mit Konten, die nicht kompromittiert sind, und Geräten, die ordnungsgemäß ausgeführt werden.
 
@@ -189,7 +189,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Info
 <td align="left"><p>Typen vertraulicher Informationen</p>
 <p>Office-Bezeichnungen</p>
 <p>Richtlinien zur Verhinderung von Datenverlust</p>
-<p>Office 365-Nachrichtenverschlüsselung für E-Mails</p></td>
+<p>Microsoft 365-Nachrichtenverschlüsselung für E-Mails</p></td>
 </tr>
 <tr class="even">
 <td align="left">Schutz auf Website- und Bibliotheksebene (darunter SharePoint Online- und OneDrive for Business-Websites)</td>
@@ -198,7 +198,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Info
 <p>Gerätezugriffsrichtlinien auf Websiteebene</p></td>
 </tr>
 <tr class="odd">
-<td align="left">Dienstzugriffsrichtlinien (darunter Zugriff auf alle Dienste in Office 365)</td>
+<td align="left">Dienstzugriffsschutz (darunter Zugriff auf alle Dienste in Microsoft 365)</td>
 <td align="left"><p>Identitäts- und Gerätezugriffsschutz in Enterprise Mobility + Security (EMS) Suite</p>
 <p>Privileged Access Management</p>
 <p>Windows 10-Sicherheitsfunktionen</p></td>
@@ -212,7 +212,7 @@ Im restlichen Teil dieses Artikels finden Sie weitere Informationen über jede d
 
 Sie können die folgenden Funktionen in einer Umgebung verwenden, die für die Einhaltung der DSGVO konfiguriert ist. Diese Funktionen sind nicht für die Einhaltung der DSGVO erforderlich, sie können jedoch verwendet werden, ohne dass Ihre Möglichkeiten für die Ermittlung, für den Schutz, für die Überwachung und für die Benachrichtigungen zu Daten im Zusammenhang mit der Einhaltung der DSGVO beeinträchtigt werden.
 
-Kundenschlüssel – Ermöglicht Kunden Kontrolle über Verschlüsselungsschlüssel, die für die Verschlüsselung von ruhenden Daten in Office 365 verwendet werden. Empfohlen nur für Kunden mit gesetzlichen Anforderungen, eigene Verschlüsselungsschlüssel zu verwalten.
+Kundenschlüssel – Ermöglicht Kunden Kontrolle über die Verschlüsselungsschlüssel, die für die Verschlüsselung von ruhenden Daten in Microsoft 365 verwendet werden. Empfohlen nur für Kunden mit gesetzlichen Anforderungen, eigene Verschlüsselungsschlüssel zu verwalten.
 
 Kunden-Lockbox – Mit Kunden-Lockbox können Sie den Zugriff auf Ihre Daten durch einen Microsoft-Supporttechniker fallbasiert steuern, wenn dies zur Behebung eines technischen Problems erforderlich ist. Sie können steuern, ob der Supporttechniker Zugriff auf Ihre Daten erhält oder nicht. Ein Ablaufdatum wird bei jeder Anforderung bereitgestellt.
 
@@ -259,7 +259,7 @@ Weitere Informationen:
 
 In vielen Organisationen ist die externe Freigabe für die Zusammenarbeit zulässig. Erfahren Sie, wie Ihre mandantenweiten Einstellungen konfiguriert werden. Überprüfen Sie dann die Einstellungen für externe Freigaben für Websites, die personenbezogene Daten enthalten.
 
-Ein externer Benutzer ist eine Person außerhalb Ihrer Organisation, die eingeladen wurde, auf Ihre SharePoint Online-Websites und -Dokumente zuzugreifen, jedoch keine Lizenz für Ihr SharePoint Online- oder Microsoft Office 365-Abonnement hat.
+Ein externer Benutzer ist eine Person außerhalb Ihrer Organisation, die eingeladen wird, auf Ihre SharePoint Online-Websites und -Dokumente zuzugreifen, die jedoch keine Lizenz für Ihr SharePoint Online- oder Microsoft 365-Abonnement hat.
 
 Richtlinien für externe Freigabe gelten sowohl für SharePoint Online als auch OneDrive for Business.
 
@@ -288,7 +288,7 @@ Die folgende Tabelle enthält die Steuerelemente, die Sie konfigurieren können.
 </tr>
 <tr class="even">
 <td align="left">Aktionen, die externe Benutzer ausführen können</td>
-<td align="left"><p>Verhindern, dass externe Benutzer Dateien, Ordnern und Websites freigeben, die sie nicht besitzen</p>
+<td align="left"><p>Verhindern, dass externe Benutzer Dateien, Ordner und Websites freigeben, die sie nicht besitzen</p>
 <p>Festlegen, dass externe Benutzer Freigabeeinladungen mit demselben Konto akzeptieren müssen, an das die Einladung gesendet wurde</p></td>
 </tr>
 <tr class="odd">
@@ -358,7 +358,7 @@ Weitere Informationen: [SharePoint Online Admin Center: Steuern des Zugriffs von
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Dienstzugriffsschutz für Identitäten und Geräte
 
-Microsoft empfiehlt, den Schutz für Identitäten und Geräte zu konfigurieren, die auf den Dienst zugreifen. Die Arbeit, die Sie in den Schutz des Zugriffs auf Office 365-Dienste gesteckt haben, kann auch für den Schutz des Zugriffs auf andere SaaS-Dienste, PaaS-Dienste und Apps anderer Cloudanbieter verwendet werden.
+Microsoft empfiehlt, den Schutz für Identitäten und Geräte zu konfigurieren, die auf den Dienst zugreifen. Die Arbeit, die Sie in den Schutz des Zugriffs auf Microsoft 365-Dienste gesteckt haben, kann auch für den Schutz des Zugriffs auf andere SaaS-Dienste, PaaS-Dienste und sogar Apps anderer Cloudanbieter genutzt werden.
 
 Zugriffsschutz für Identitäten und Geräte bietet einen Basisschutz, um sicherzustellen, dass Identitäten nicht kompromittiert werden, Geräte sicher und Unternehmensdaten, auf die auf Geräten zugegriffen wird, isoliert und geschützt sind.
 
@@ -366,7 +366,7 @@ Empfehlungen zu den Ansatzpunkten und Konfigurationsanweisungen finden Sie unter
 
 Informationen zu Hybrididentitätsumgebungen mit AD FS finden Sie unter [Empfohlene Sicherheitsrichtlinien und Konfigurationen](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-Die folgende Abbildung beinhaltet die Beziehungen zwischen Clouddiensten (SaaS, PaaS), Kontotypen (Mandantendomänenkonten und B2B-Konten) und Funktionen für den Dienstzugriff. Es ist wichtig zu wissen, welche Funktionen mit B2B-Konten verwendet werden können.
+Die folgende Abbildung zeigt die Beziehungen zwischen Clouddiensten (SaaS, PaaS), Kontotypen (Mandantendomänenkonten und B2B-Konten) sowie Funktionen für den Dienstzugriff. Es ist wichtig zu wissen, welche Funktionen bei B2B-Konten verwendet werden können.
 
 ![Clouddienste, Kontotypen und Zugriffsfunktionen](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
@@ -374,11 +374,11 @@ Für Zwecke der Barrierefreiheit wird im übrigen Teil dieses Abschnitts die obi
 
 ### <a name="cloud-services"></a>Clouddienste
 
-Azure Active Directory bietet Identitätszugriff auf beliebige Clouddienst, darunter auch andere Anbieter als Microsoft wie z. B. Amazon Web Services. Die Abbildung zeigt Office 365, andere SaaS-App und PaaS-App. Die Pfeile zeigen von Azure Active Directory auf jeden dieser Dienste und geben somit an, dass Azure Active Directory für die Authentifizierung für alle diese App-Typen verwendet werden kann.
+Azure Active Directory bietet Identitätszugriff auf jeden beliebigen Clouddienst, darunter auch andere Anbieter als Microsoft wie z. B. Amazon Web Services. Die Abbildung zeigt Microsoft 365, „Andere SaaS-App“ und „PaaS-App“. Die Pfeile zeigen von Azure Active Directory auf jeden dieser Dienste und geben somit an, dass Azure Active Directory für die Authentifizierung für alle diese App-Typen verwendet werden kann.
 
 ### <a name="types-of-accounts"></a>Kontentypen
 
-Mandantendomänenkonten sind Konten, die Sie zu Ihrem Mandanten hinzufügen und direkt verwalten. B2B-Konten sind Konten für Benutzer außerhalb Ihrer Organisation, die Sie zur Zusammenarbeit einladen. Diese können andere Office 365-Konten, andere Organisationskonten oder Endbenutzerkonten (z. B. Gmail) sein. Die Abbildung zeigt die beiden Kontotypen in Azure Active Directory.
+Mandantendomänenkonten sind Konten, die Sie zu Ihrem Mandanten hinzufügen und direkt verwalten. B2B-Konten sind Konten für Benutzer außerhalb Ihrer Organisation, die Sie zur Zusammenarbeit einladen. Dies können andere Microsoft 365-Konten, andere Organisationskonten oder Endbenutzerkonten (z. B. Gmail) sein. Die Abbildung zeigt die beiden Kontotypen in Azure Active Directory.
 
 ### <a name="capabilities"></a>Funktionen
 

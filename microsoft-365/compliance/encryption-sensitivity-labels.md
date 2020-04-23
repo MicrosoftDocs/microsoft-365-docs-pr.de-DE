@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 543050a40848330b5e07c3a804b5718deac7bafa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631690"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -36,7 +36,7 @@ Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf
 Wenn ein Dokument oder eine E-Mail verschlüsselt ist, wird Zugriff auf den Inhalt so eingeschränkt, dass:
 
 - Er nur von Benutzern entschlüsselt werden kann, die durch die Verschlüsselungseinstellungen der Bezeichnung dazu autorisiert sind.
-- Er immer verschlüsselt bleibt, unabhängig davon, wo er sich befindet (innerhalb oder außerhalb der Organisation), auch dann, wenn die Datei umbenannt wird.
+- Er immer verschlüsselt bleibt – unabhängig davon, wo er sich befindet (innerhalb oder außerhalb Ihrer Organisation), und sogar bei einer Umbenennung der Datei.
 - Er sowohl im Ruhezustand (z. B. in einem OneDrive-Konto) als auch während der Übertragung (z. B. eine gesendete E-Mail) verschlüsselt ist.
 
 Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezeichnung für die Zwecke der Verschlüsselung eine der folgenden Optionen auswählen:
@@ -44,7 +44,7 @@ Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezei
 - **Berechtigungen sofort zuweisen**, um genau zu bestimmen, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten.
 - **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können.
 
-Die Verschlüsselungseinstellungen sind verfügbar, wenn Sie [eine Vertraulichkeitzbezeichnung](create-sensitivity-labels.md) im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security & Compliance Center erstellen.
+Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen](create-sensitivity-labels.md) – im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Security & Compliance Center.
 
 ## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
@@ -120,7 +120,7 @@ Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Be
 
 Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreifen kann, auf die eine bestimmte Bezeichnung angewendet wurde. Sie können:
 
-1. **Zulassen, dass Zugriff auf gekennzeichnete Inhalte abläuft**, entweder an einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Nach dieser Zeit können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt dieses ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Cachingmechanismen den Ablauf nicht durchsetzen können und E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
+1. **Zulassen, dass der Zugriff auf gekennzeichnete Inhalte abläuft** – entweder an einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Danach können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt es ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Cachingmechanismen den Ablauf nicht durchsetzen können und deshalb E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
 
 2. **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
 
@@ -130,7 +130,7 @@ Einstellungen für die Zugriffssteuerung für verschlüsselte Inhalte:
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Rights Management-Verwendungslizenz für den Offlinezugriff
 
-Wenn ein Benutzer ein Dokument oder eine E-Mail-Nachricht öffnet, das über Verschlüsselung durch den Azure Rights Management-Dienst geschützt wurde, erhält der Benutzer eine Azure Rights Management Verwendungslizenz. Hierbei handelt es sich um ein Zertifikat, das die Nutzungsberechtigungen des Benutzers für das Dokument oder die E-Mail sowie den Verschlüsselungsschlüssel enthält, der zum Verschlüsseln des Inhalts verwendet wurde. Die Verwendungslizenz enthält außerdem ein Ablaufdatum, sofern eins festgelegt wurde, und eine Gültigkeitsdauer.
+Wenn ein Benutzer ein Dokument oder eine E-Mail-Nachricht öffnet, das bzw. die durch Verschlüsselung über den Azure Rights Management-Dienst geschützt wurde, erhält der Benutzer eine Azure Rights Management-Verwendungslizenz für den jeweiligen Inhalt. Hierbei handelt es sich um ein Zertifikat, das die Nutzungsberechtigungen des Benutzers für das Dokument oder die E-Mail sowie den Verschlüsselungsschlüssel enthält, der zum Verschlüsseln des Inhalts verwendet wurde. Die Verwendungslizenz enthält außerdem ein Ablaufdatum, sofern eins festgelegt wurde, und eine Gültigkeitsdauer.
 
 Wenn kein Ablaufdatum festgelegt wurde, beträgt die Standardeinstellung für die Gültigkeitsdauer der Verwendungslizenz für einen Mandanten 30 Tage. Für die Dauer der Verwendungslizenz muss der Benutzer nicht erneut authentifiziert oder für den Inhalt erneut autorisiert werden. Auf diese Weise kann der Benutzer das geschützte Dokument oder die geschützte E-Mail weiterhin ohne Internetverbindung öffnen. Wenn der Gültigkeitszeitraum für die Verwendungslizenz abläuft, muss der Benutzer beim nächsten Zugriff auf das geschützte Dokument oder die geschützte E-Mail erneut authentifiziert und erneut autorisiert werden.
 
@@ -157,6 +157,8 @@ Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
 - Jeder in Ihrem Unternehmen (alle Mandantenmitglieder). Diese Einstellung schließt Gastkonten aus.
 
 - Alle authentifizierten Benutzer. Stellen Sie sicher, dass Sie die [Voraussetzungen und Einschränkungen](#requirements-and-limitations-for-add-any-authenticated-users) dieser Einstellung verstehen, bevor Sie sie auswählen.
+- Eine bestimmte Benutzer- oder E-Mail-aktivierte Sicherheitsgruppe, Verteilergruppe, Microsoft 365-Gruppe oder dynamische Verteilergruppe. 
+- Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
 
 - Bestimmte Benutzer oder E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder [dynamische Verteilergruppen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD. Sie können keine [dynamische Verteilergruppe aus Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) verwenden, da dieser Gruppentyp nicht mit Azure AD synchronisiert wird und Sie keine Sicherheitsgruppe verwenden können, die nicht E-Mail-aktiviert ist.
 

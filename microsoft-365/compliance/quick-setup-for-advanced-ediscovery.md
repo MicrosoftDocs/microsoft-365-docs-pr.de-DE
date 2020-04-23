@@ -1,5 +1,5 @@
 ---
-title: Schnelleinrichtung für Office 365 Advanced eDiscovery
+title: Schnelles Einrichten von Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: 'Informationen zum Zugriff auf Office 365 Advanced eDiscovery im Office 365 Security &amp; Compliance Center und Erläuterung des üblichen Workflows für die Verwendung von Advanced eDiscovery.  '
-ms.openlocfilehash: 1f434fe87fd93ebee03c4300c67214011f646134
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Hier erfahren Sie, wie Sie im Security &amp; Compliance Center auf Advanced eDiscovery zugreifen und den üblichen Workflow für die Verwendung von Advanced eDiscovery prüfen.  '
+ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632170"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Schnelle Einrichtung von Advanced eDiscovery (Classic)
 
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir die Deaktivierung von Office 365 Advanced eDiscovery (auch bekannt als *Advanced eDiscovery (Classic)* oder *Advanced eDiscovery V1.0*) an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> Während wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir jetzt die Deaktivierung von Advanced eDiscovery (auch bekannt als *Advanced eDiscovery (Classic)* oder *Advanced eDiscovery v1.0*) an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
 
 In diesem Setup-Abschnitt werden einem Microsoft 365 Security &amp; Compliance Center eDiscovery-Manager die ersten Schritte mit Advanced eDiscovery gezeigt. Es wird davon ausgegangen, dass in beiden Bereichen Grundkenntnisse vorhanden sind.
   
@@ -37,7 +37,7 @@ Sie rufen Advanced eDiscovery über das Security &amp; Compliance Center auf. Si
   
 So navigieren Sie zu einem Fall in Advanced eDiscovery: 
   
-1. [Wechseln Sie zum Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md). 
+1. [Wechseln Sie zum Security &amp; Compliance Center](go-to-the-securitycompliance-center.md). 
     
 2. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
@@ -51,7 +51,7 @@ So navigieren Sie zu einem Fall in Advanced eDiscovery:
 
 Das folgende Diagramm zeigt den allgemeinen Workflow für die Verwaltung und Verwendung von eDiscovery-Fällen im Security &amp; Compliance Center und in Advanced eDiscovery. 
   
-![Diagramm zeigt den Workflow „Erweiterte eDiscovery in Office 365“, der aus den vier Phasen des Einrichtens, einschließlich Benutzern und Fällen, des Identifizierens der Falldaten, des Exportierens und des Verarbeitens und dann aus den Phasen der Analyse und des Exports auf den lokalen Computer besteht.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![Das Diagramm zeigt den Workflow „Advanced eDiscovery“. Er besteht aus vier Einrichtungsphasen (einschließlich Einrichten von Benutzern &amp; Fällen, Identifizieren von Falldaten, Exportieren und Verarbeiten), gefolgt von den Phasen Analyse und Export auf den lokalen Computer.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 Dieser Setup-Abschnitt beschreibt die ersten vier Schritte im Workflow. Eine Beschreibung der anderen Schritte im Workflow finden Sie im Folgenden.
   

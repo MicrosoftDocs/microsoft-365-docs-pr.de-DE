@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Konfiguration die Kriterien von Microsoft 365 Enterprise für identitätsbasierte Dienste und Infrastrukturen erfüllt.
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632541"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Phase 2: Beendigungskriterien für die Identitätsinfrastruktur
 
@@ -33,7 +33,7 @@ Unter [Voraussetzungen](https://docs.microsoft.com/microsoft-365/enterprise/iden
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>Erforderlich: Ihre globalen Administratorkonten sind geschützt 
 
-Sie haben [Ihre globalen Office 365-Administratorkonten geschützt](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts), um Versuche von Angreifern zur Kompromittierung von Anmeldeinformationen zu vereiteln, die zu Verstößen gegen Ihr Microsoft 365-Abonnement führen können.
+Sie haben [Ihre globalen Administratorkonten geschützt](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts), um Versuche von Angreifern zur Kompromittierung von Anmeldeinformationen zu vereiteln, die zu Verstößen gegen Ihr Microsoft 365-Abonnement führen können.
 
 Wenn Sie diese Anforderung überspringen, können Ihre globalen Administratorkonten anfällig für Angriffe und Kompromittierung sein. Dadurch kann ein Angreifer systemweiten Zugriff auf Ihre Daten erhalten, um diese zu stehlen, zu zerstören oder für Lösegeldforderungen zu missbrauchen.
 
@@ -47,7 +47,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass Sie Ihre globalen Admini
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Melden Sie sich bei Office 365 mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.
+2. Melden Sie sich mit jedem der Konten aus Schritt 1 an. Bei jeder Anmeldung muss die mehrstufige Authentifizierung und die stärkste Form der sekundären Authentifizierung in Ihrer Organisation verlangt werden.
 
 > [!Note]
 > Anweisungen zum Installieren des Azure Active Directory PowerShell-Moduls und zum Anmelden bei Office 365 finden Sie unter [Verbinden mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
@@ -96,11 +96,11 @@ Wenn Sie diese Option überspringen, werden die Benutzer möglicherweise zur Ein
 Gegebenenfalls hilft Ihnen [Schritt 2](identity-secure-your-passwords.md#identity-sso) bei dieser Option.
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Optional: Der Office 365-Anmeldebildschirm ist für Ihre Organisation personalisiert
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Optional: Der Anmeldebildschirm ist für Ihre Organisation personalisiert
 
-Sie haben entsprechend den Anweisungen unter [Hinzufügen eines Unternehmensbrandings zu den Anmelde- und Zugriffspanelseiten](https://aka.ms/aadpaddbranding) das Branding Ihrer Organisation auf der Anmeldeseite von Office 365 hinzugefügt.
+Sie haben entsprechend den Anweisungen unter [Hinzufügen eines Unternehmensbrandings zu den Anmelde- und Zugriffspanelseiten](https://aka.ms/aadpaddbranding) das Branding Ihrer Organisation auf der Anmeldeseite hinzugefügt.
 
-Wenn Sie diese Option überspringen, sehen die Benutzer einen allgemeinen Office 365-Anmeldebildschirm und sind sich möglicherweise nicht sicher, dass sie sich auf der Website Ihrer Organisation anmelden.
+Wenn Sie diese Option überspringen, sehen die Benutzer einen allgemeinen Anmeldebildschirm und sind sich möglicherweise nicht sicher, dass sie sich auf der Website Ihrer Organisation anmelden.
 
 Gegebenenfalls hilft Ihnen [Schritt 2](identity-secure-your-passwords.md#identity-custom-sign-in) bei dieser Option.
 
@@ -116,11 +116,11 @@ Gegebenenfalls hilft Ihnen [Schritt 3](identity-secure-user-sign-ins.md#identity
 
 ### <a name="how-to-test"></a>Testen
 
-1.  Erstellen Sie ein Testbenutzerkonto, und weisen Sie ihm eine Lizenz zu. 
-2.  Konfigurieren Sie die mehrstufige Azure-Authentifizierung für das Testbenutzerkonto mit der zusätzlichen Überprüfungsmethode, die Sie für tatsächliche Benutzerkonten verwenden, z. B. Senden einer SMS an Ihr Telefon. 
-3.  Melden Sie sich mit dem Testbenutzerkonto beim Office 365-Portal an.
-4.  Vergewissern Sie sich, dass Sie von MFA zur Eingabe der zusätzlichen Überprüfungsinformationen aufgefordert werden und die Authentifizierung erfolgreich ist. 
-5.  Löschen Sie das Testbenutzerkonto.
+1.    Erstellen Sie ein Testbenutzerkonto, und weisen Sie ihm eine Lizenz zu. 
+2.    Konfigurieren Sie die mehrstufige Azure-Authentifizierung für das Testbenutzerkonto mit der zusätzlichen Überprüfungsmethode, die Sie für tatsächliche Benutzerkonten verwenden, z. B. Senden einer SMS an Ihr Telefon. 
+3.    Melden Sie sich mit dem Testbenutzerkonto beim Office 365-Portal an.
+4.    Vergewissern Sie sich, dass Sie von MFA zur Eingabe der zusätzlichen Überprüfungsinformationen aufgefordert werden und die Authentifizierung erfolgreich ist. 
+5.    Löschen Sie das Testbenutzerkonto.
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Optional: Azure AD Identity Protection ist zum Schutz vor Gefährdung der Anmeldeinformationen aktiviert (nur Microsoft 365 E5)
@@ -148,7 +148,7 @@ Gegebenenfalls hilft Ihnen [Schritt 3](identity-secure-user-sign-ins.md#identity
 
 Wenn Sie über lokale Active Directory Domain Services (AD DS) verfügen, haben Sie Azure AD Connect zum Synchronisieren von Benutzerkonten und Gruppen zwischen Ihren lokalen AD DS und Ihrem Azure AD-Mandanten verwendet.
 
-Dank der Verzeichnissynchronisierung können sich Ihre Benutzer bei Office 365 und anderen Microsoft Cloud Services mit denselben Anmeldeinformationen anmelden, die sie zum Anmelden an ihren Computern und zum Zugriff auf lokale Ressourcen verwenden.
+Dank der Verzeichnissynchronisierung können sich Ihre Benutzer bei Microsoft 365 und anderen Microsoft Cloud Services mit denselben Anmeldeinformationen anmelden, die sie zum Anmelden an ihren Computern und zum Zugriff auf lokale Ressourcen verwenden.
 
 Gegebenenfalls hilft Ihnen [Schritt 4](identity-add-user-accounts.md#identity-sync), diese Anforderung zu erfüllen.
 
@@ -164,9 +164,9 @@ Um zu überprüfen, ob die Authentifizierung mit lokalen Anmeldeinformationen fu
 
 Führen Sie folgende Schritte aus, um zu überprüfen, ob die Verzeichnissynchronisierung ordnungsgemäß funktioniert:
 
-1.  Erstellen Sie eine neue Testgruppe in AD DS.
-2.  Warten Sie, bis die Synchronisierungszeit abgelaufen ist.
-3.  Überprüfen Sie Ihren Azure AD-Mandanten, um sicherzustellen, dass der Name der neuen Testgruppe angezeigt wird.
+1.    Erstellen Sie eine neue Testgruppe in AD DS.
+2.    Warten Sie, bis die Synchronisierungszeit abgelaufen ist.
+3.    Überprüfen Sie Ihren Azure AD-Mandanten, um sicherzustellen, dass der Name der neuen Testgruppe angezeigt wird.
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>Optional: Verzeichnissynchronisierung wird überwacht
@@ -209,11 +209,11 @@ Sie testen das Kennwortrückschreiben durch Ändern Ihres Kennworts in Office 36
 
 ### <a name="how-to-test"></a>Testen
 
-Melden Sie sich mit Ihrem Benutzerkontonamen und mittels mehrstufiger Azure-Authentifizierung beim Office 365-Portal an. Auf der Anmeldeseite sollten Ihre benutzerdefinierten Branding-Elemente angezeigt werden.
+Melden Sie sich mit Ihrem Benutzerkontonamen und mittels mehrstufiger Azure-Authentifizierung beim Portal an. Auf der Anmeldeseite sollten Ihre benutzerdefinierten Branding-Elemente angezeigt werden.
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Optional: Self-Service-Gruppenverwaltung ist für bestimmte Azure AD-Sicherheitsgruppen und Office 365-Gruppen aktiviert
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Optional: Self-Service-Gruppenverwaltung ist für bestimmte Azure AD-Sicherheitsgruppen und Microsoft 365-Gruppen aktiviert
 
 Sie haben bestimmt, welche Gruppen für Self-Service-Verwaltung geeignet sind, deren Besitzer bezüglich des Workflows und der Verantwortlichkeiten der Gruppenverwaltung instruiert und für diese Gruppen [die Self-Service-Verwaltung in Azure AD eingerichtet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
 
@@ -222,13 +222,13 @@ Wenn Sie diese Option überspringen, müssen alle Verwaltungsaufgaben für Azure
 Gegebenenfalls hilft Ihnen [Schritt 5](identity-use-group-management.md#identity-self-service-groups) bei dieser Option.
 
 ### <a name="how-to-test"></a>Testen
-1.  Erstellen Sie ein Testbenutzerkonto in Azure AD mit dem Azure-Portal.
-2.  Melden Sie sich wie beim Testbenutzerkonto an, und erstellen Sie eine Azure AD-Testsicherheitsgruppe.
-3.  Melden Sie sich ab, und melden Sie sich dann mit Ihrem IT-Administratorkonto an.
-4.  Konfigurieren Sie die Testsicherheitsgruppe für Self-Service-Verwaltung für das Testbenutzerkonto.
-5.  Melden Sie sich ab, und melden Sie sich dann mit Ihrem Testbenutzerkonto an.
-6.  Verwenden Sie das Azure-Portal, um Mitglieder zu der Testsicherheitsgruppe hinzuzufügen.
-7.  Löschen Sie die Testsicherheitsgruppe und das Testbenutzerkonto.
+1.    Erstellen Sie ein Testbenutzerkonto in Azure AD mit dem Azure-Portal.
+2.    Melden Sie sich wie beim Testbenutzerkonto an, und erstellen Sie eine Azure AD-Testsicherheitsgruppe.
+3.    Melden Sie sich ab, und melden Sie sich dann mit Ihrem IT-Administratorkonto an.
+4.    Konfigurieren Sie die Testsicherheitsgruppe für Self-Service-Verwaltung für das Testbenutzerkonto.
+5.    Melden Sie sich ab, und melden Sie sich dann mit Ihrem Testbenutzerkonto an.
+6.    Verwenden Sie das Azure-Portal, um Mitglieder zu der Testsicherheitsgruppe hinzuzufügen.
+7.    Löschen Sie die Testsicherheitsgruppe und das Testbenutzerkonto.
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>Optional: Dynamische Gruppenmitgliedschaftseinstellungen fügen Benutzerkonten automatisch basierend auf Benutzerkontoattributen zu Gruppen hinzu

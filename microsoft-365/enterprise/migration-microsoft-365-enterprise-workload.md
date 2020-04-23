@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie den Prozess des Migrierens von Versionen von Microsoft Office, Office-Servern und Windows nach Microsoft 365 Enterprise in Ihrer Organisation.
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631537"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration nach Microsoft 365 Enterprise
 
@@ -25,7 +25,7 @@ In den meisten Unternehmen gibt es eine heterogene Umgebung mit mehreren Version
 
 Um den Geschäftswert der integrierten Suite von Microsoft 365 Enterprise-Produkten zu maximieren, beginnen Sie mit der Planung und Implementierung einer Strategie zum Migrieren der Versionen von:
 
-- Dem auf Ihren Computern installierten Office-Client nach Office 365 ProPlus
+- Dem auf Ihren Computern installierten Office-Client nach Microsoft 365 Apps for Enterprise
 - Den auf Ihren Servern installierten Office-Servern nach deren entsprechenden Diensten in Office 365
 - Windows 7 und Windows 8.1 auf Ihren Geräten nach Windows 10 Enterprise
 
@@ -49,7 +49,7 @@ In vielen großen und kleinen Organisationen wird vielleicht eine Kombination ä
 - Sind nicht optimal geeignet, um die Cloudtechnologien von Microsoft auszuschöpfen und Sie bei der digitalen Transformation Ihres Unternehmens zu unterstützen.
 - Keine neuen Features enthalten.
  
-Microsoft 365 Enterprise umfasst Office 365 ProPlus, eine Version der Office-Clientprodukte, die mit einer Microsoft 365 Enterprise-Lizenz verfügbar sind und aus der Microsoft-Cloud installiert und aktualisiert werden. Office 365 ProPlus enthält Sicherheitsupdates und die neuesten Features. Weitere Informationen finden Sie unter [Informationen zu Office 365 ProPlus im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise umfasst Microsoft 365 Apps for Enterprise, eine Version der Office-Clientprodukte, die mit einer Microsoft 365 Enterprise-Lizenz verfügbar sind und aus der Microsoft-Cloud installiert und aktualisiert werden. Microsoft 365 Apps for Enterprise enthält Sicherheitsupdates und die neuesten Features. Weitere Informationen finden Sie unter [Info zu Microsoft 365 Apps for Enterprise im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -59,9 +59,9 @@ Anstatt Ihre Computer, auf denen Office 2007 ausgeführt wird, mit Office 2010, 
 
 1. Abrufen und Zuweisen einer Microsoft 365-Lizenz für Ihre Benutzer.
 2. Deinstallieren von Office 2007 auf deren Computern.
-3. Installieren von Office 365 ProPlus, entweder einzeln oder in Verbindung mit einem IT-Rollout. Weitere Informationen finden Sie unter [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installieren von Microsoft 365 Apps for Enterprise, entweder einzeln oder in Verbindung mit einer IT-Implementierung. Weitere Informationen finden Sie unter [Phase 4: Microsoft 365 Apps for Enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installiert Updates automatisch und nutzt cloudbasierte Dienste in Office 365 für verbesserte Sicherheit und Produktivität.
+Microsoft 365 Apps for Enterprise installiert Updates automatisch und nutzt cloudbasierte Dienste für verbesserte Sicherheit und Produktivität.
 
 ### <a name="office-2010"></a>Office 2010
 
@@ -71,9 +71,9 @@ Anstatt Ihre Computer, auf denen Office 2010 ausgeführt wird, mit Office 2013 o
 
 1. Abrufen und Zuweisen einer Microsoft 365-Lizenz für Ihre Benutzer.
 2. Deinstallieren von Office 2010 auf deren Computern.
-3. Installieren von Office 365 ProPlus, entweder einzeln oder in Verbindung mit einem IT-Rollout. Weitere Informationen finden Sie unter [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installieren von Microsoft 365 Apps for Enterprise, entweder einzeln oder in Verbindung mit einer IT-Implementierung. Weitere Informationen finden Sie unter [Phase 4: Microsoft 365 Apps for Enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installiert Sicherheitsupdates und neue Features automatisch und nutzt cloudbasierte Dienste in Microsoft 365 für verbesserte Sicherheit und Produktivität.
+Microsoft 365 Apps for Enterprise installiert Sicherheitsupdates und neue Features automatisch und nutzt cloudbasierte Dienste in Microsoft 365 für verbesserte Sicherheit und Produktivität.
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 und Office 2016
 
@@ -83,9 +83,9 @@ Statt ihre Computer weiterhin mit den neuesten Sicherheitsupdates für Office 20
 
 1. Abrufen und Zuweisen einer Microsoft 365-Lizenz für Ihre Benutzer.
 2. Deinstallieren von Office 2013 oder Office 2016 auf deren Computern.
-3. Installieren von Office 365 ProPlus, entweder einzeln oder in Verbindung mit einem IT-Rollout. Weitere Informationen finden Sie unter [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installieren von Microsoft 365 Apps for Enterprise, entweder einzeln oder in Verbindung mit einer IT-Implementierung. Weitere Informationen finden Sie unter [Phase 4: Microsoft 365 Apps for Enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installiert Sicherheitsupdates und neue Features automatisch und nutzt cloudbasierte Dienste in Microsoft 365 für verbesserte Sicherheit und Produktivität.
+Microsoft 365 Apps for Enterprise installiert Sicherheitsupdates und neue Features automatisch und nutzt cloudbasierte Dienste in Microsoft 365 für verbesserte Sicherheit und Produktivität.
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Migration für Microsoft Office-Serverprodukte
 
@@ -116,10 +116,9 @@ Anstatt Ihre Serverprodukte in Office 2007 durch Serverprodukte in Office 2010, 
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-Für Serverprodukte im Office 2010-Release endet der Support am **13. Oktober 2020** für die folgenden Komponenten:
+Der Support für [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) endet am **13. Oktober 2020**.
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+Der Support für [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) endet am **13. April 2021**.
 
 Anstatt Ihre Serverprodukte in Office 2010 durch Serverupdates in Office 2013 oder Office 2016 zu aktualisieren, sollten Sie Folgendes in Betracht ziehen:
 
@@ -163,7 +162,7 @@ Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/micro
 
 Erfahren Sie anhand der folgenden Ressourcen, wie IT-Experten bei Microsoft die Migration des Unternehmens nach Microsoft 365 Enterprise ausführten: 
 
-- [Bereitstellen und Aktualisieren von Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Bereitstellen und Aktualisieren von Microsoft 365 Apps for Enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migriert 150.000 Postfächer nach Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint in der Cloud: Erfahren Sie, wie Microsoft seine eigene Migration ausführte](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Bereitstellung von Windows 10 bei Microsoft als direktes Upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

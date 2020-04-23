@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, wie Sie die Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise bereitstellen können.
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067802"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638152"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategien zur Bereitstellung der Foundation-Infrastruktur für Microsoft 365 Enterprise
 
@@ -90,7 +90,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im März wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im Juni wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im Juni wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im September erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Dezember wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -100,7 +100,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im April wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im Juli wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im Juli wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im Oktober erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Januar des Folgejahres wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -120,7 +120,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Februar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im April wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im April wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im Juni erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im August wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -130,7 +130,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im März wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im Mai wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im Mai wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im Juli erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im September wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -158,7 +158,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Pilotbenutzeroberfläche:
 
 - Im Dezember muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Januar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im Februar wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im Februar wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im März erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im April wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -168,7 +168,7 @@ Hier finden Sie ein Beispiel für eine vereinfachte Endbenutzeroberfläche:
 
 - Im Januar muss ich mein Smartphone für MFA verwenden. (Identität)
 - Im Februar wird Windows 10 Enterprise auf meinem Windows 8.1-Desktopcomputer installiert. (Windows 10 Enterprise)
-- Im März wird Office 365 ProPlus installiert und ersetzt Office 2013. (Office 365 ProPlus)
+- Im März wird Microsoft 365 Apps for Enterprise installiert, das Office 2013 ersetzt. (Microsoft 365 Apps for Enterprise)
 - Im April erfolgt die Geräteregistrierung, und es werden App- und Geräterichtlinien angewendet. (Verwaltung mobiler Geräte)
 - Im Mai wird der Azure Information Protection-Client installiert, und ich erhalte Schulung, wie Bezeichnungen auf Dokumente angewendet werden. (Information Protection)
 
@@ -186,7 +186,7 @@ Die IT-Abteilung konfiguriert die Infrastruktur für die Phasen 2 bis 6 und stel
 
 - MFA und andere Identitätsfeatures (Identität)
 - Windows 10 Enterprise auf Windows-Geräten (Windows 10 Enterprise)
-- Office 365 ProPlus für die Office-Suite (Office 365 ProPlus)
+- Microsoft 365 Apps for Enterprise für die Office-Suite (Microsoft 365 Apps for Enterprise)
 - App und Geräterichtlinien (Verwaltung mobiler Geräte)
 - Installation des Azure Information Protection-Clients und Schulung, wie Bezeichnungen auf Dokumente angewendet werden (Information Protection)
 
