@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Erstellen Sie eine sichere SharePoint-Teamwebsite zum Speichern Ihrer wertvollsten und vertraulichen Dateien.
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951982"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636711"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>SharePoint-Websites für streng regulierte Daten
 
@@ -40,10 +40,10 @@ Für ein cloudbasiertes Microsoft 365 Enterprise-Szenario, das diese Geschäftsa
 
 - Dateien (Dokumente, Folienstapel, Kalkulationstabellen usw.) in einer SharePoint-Teamwebsite speichern.
 - Die Website sperren, um Folgendes zu verhindern:
-  - Zugriff für Benutzer, die nicht Mitglied der Office 365-Gruppe für die Website sind.
+  - Zugriff für Benutzer, die nicht Mitglied der Microsoft 365-Gruppe für die Website sind.
   - Dass Mitglieder der Website anderen Personen Zugriff gewähren.
   - Dass Nicht-Mitglieder der Website Zugriff auf die Website anfordern.
-- Konfigurieren Sie eine Office 365-Aufbewahrungsbezeichnung für Ihre SharePoint-Websites als Standardmethode, um Benutzer am Senden von Dateien an Ziele außerhalb der Organisation hindern.
+- Konfigurieren Sie eine Aufbewahrungsbezeichnung für Ihre SharePoint-Websites als Standardmethode, um Benutzer am Senden von Dateien an Ziele außerhalb der Organisation hindern.
 - Verschlüsseln Sie die besonders sensiblen Dateien der Website mit einer an die Dateien gebundenen Verschlüsselung.
 - Fügen Sie den besonders sensiblen Dateien Berechtigungen hinzu, sodass zum Öffnen der Datei auch dann gültige Anmeldeinformationen eines Benutzerkontos mit Berechtigung erforderlich sind, wenn diese für Personen außerhalb der Website freigegeben werden.
 
@@ -53,11 +53,11 @@ In der folgenden Tabelle sind die Anforderungen dieses Szenarios einem Feature v
 |:-------|:-----|
 | **Anforderung** | **Microsoft 365 Enterprise-Feature** |
 | Speichern von Dateien | SharePoint-Teamwebsites |
-| Sperren der Website | Office 365-Gruppen und SharePoint-Teamwebsiteberechtigungen |
-| Zuordnen von Bezeichnungen zu den Dateien der Website | Office 365-Aufbewahrungsbezeichnungen |
-| Verhindern, dass Benutzer Dateien außerhalb der Organisation senden | Richtlinien zur Verhinderung von Datenverlust in Office 365 |
-| Verschlüsseln aller Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
-| Hinzufügen von Berechtigungen zu den Dateien der Website | Office 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
+| Sperren der Website | Microsoft 365-Gruppen und SharePoint-Teamwebsiteberechtigungen |
+| Zuordnen von Bezeichnungen zu den Dateien der Website | Microsoft 365-Aufbewahrungsbezeichnungen |
+| Verhindern, dass Benutzer Dateien außerhalb der Organisation senden | Richtlinien zur Verhinderung von Datenverlust (DLP) |
+| Verschlüsseln aller Dateien der Website | Microsoft 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
+| Hinzufügen von Berechtigungen zu den Dateien der Website | Microsoft 365-Vertraulichkeitsbezeichnungen oder -unterbezeichnungen |
 |||
 
 Hier sehen Sie eine Beispielkonfiguration für eine sichere SharePoint-Website.
@@ -88,26 +88,26 @@ Wenn Sie eine SharePoint-Website für stark regulierte Daten erstellen möchten,
 
 Dieser Zweck unterstützt die Ermittlung wichtiger Konfigurationselemente, z. B.:
 
-- Die Office 365-Aufbewahrungsbezeichnung, die dem Dokumententeil der Website zugewiesen werden soll, und DLP-Richtlinien für die Bezeichnung
-- Die Einstellungen einer Office 365-Vertraulichkeitsunterbezeichnung, die Benutzer auf streng vertrauliche Dateien anwenden, die auf der Website gespeichert sind
+- die Aufbewahrungsbezeichnung, die dem Dokumententeil der Website zugewiesen werden soll, und DLP-Richtlinien für die Bezeichnung
+- die Einstellungen einer Vertraulichkeitsunterbezeichnung, die Benutzer auf streng vertrauliche Dateien anwenden, die auf der Website gespeichert sind
 
 Nach der Ermittlung werden diese Einstellungen zur Konfiguration der Website in Phase 2 verwendet. 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>Schritt 1: Office 365-Aufbewahrungsbezeichnungen und DLP-Richtlinien
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>Schritt 1: Microsoft 365-Aufbewahrungsbezeichnungen und DLP-Richtlinien
 
-Wenn Office 365-Aufbewahrungsbezeichnungen auf den Dokumententeil einer SharePoint-Teamwebsite angewendet werden, bieten diese eine Standardmethode zum Klassifizieren aller Dateien, die auf der Website gespeichert sind.
+Wenn Aufbewahrungsbezeichnungen auf den Dokumententeil einer SharePoint-Teamwebsite angewendet werden, bieten diese eine Standardmethode zum Klassifizieren aller Dateien, die auf der Website gespeichert sind.
  
-Für SharePoint-Websites für streng regulierte Daten müssen Sie ermitteln, welche Office 365-Aufbewahrungsbezeichnung verwendet werden soll.
+Für SharePoint-Websites für streng regulierte Daten müssen Sie ermitteln, welche Aufbewahrungsbezeichnung verwendet werden soll.
 
-Die Entwurfsaspekte für Office 365-Bezeichnungen finden Sie unter [Office 365-Klassifizierung und -Bezeichnungen](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
+Die Entwurfsaspekte von Bezeichnungen finden Sie unter [Microsoft 365-Klassifizierung und -Bezeichnungen](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Um vertrauliche Informationen zu schützen und ihre versehentliche oder absichtliche Veröffentlichung zu verhindern, verwenden Sie die DLP-Richtlinien. Weitere Informationen finden Sie in dieser [Übersicht](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-Für SharePoint-Websites müssen Sie eine DLP-Richtlinie für die Office 365-Aufbewahrungsbezeichnung konfigurieren, die der Website zugewiesen ist, um zu verhindern, dass Benutzer Dateien für externe Benutzer freigeben. 
+Für SharePoint-Websites müssen Sie eine DLP-Richtlinie für die Aufbewahrungsbezeichnung konfigurieren, die der Website zugewiesen ist, um zu verhindern, dass Benutzer Dateien für externe Benutzer freigeben. 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Schritt 2: Ihre Office 365-Vertraulichkeitsunterbezeichnung
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>Schritt 2: Ihre Microsoft 365-Vertraulichkeitsunterbezeichnung
 
-Um für Ihre besonders sensiblen Dateien Verschlüsselung und eine Reihe von Berechtigungen bereitzustellen, müssen Benutzer eine Office 365-Vertraulichkeitsbezeichnung oder -unterbezeichnung anwenden. Eine Unterbezeichnung ist einer vorhandenen Bezeichnung untergeordnet. 
+Benutzer müssen eine Vertraulichkeitsbezeichnung oder -unterbezeichnung anwenden, um für Ihre besonders sensiblen Dateien Verschlüsselung und eine Reihe von Berechtigungen bereitzustellen. Eine Unterbezeichnung ist einer vorhandenen Bezeichnung untergeordnet. 
 
 Verwenden Sie eine Vertraulichkeitsbezeichnung, wenn Sie nur eine kleine Anzahl von Bezeichnungen für die globale Nutzung und für einzelne private Teams benötigen. Verwenden Sie eine Vertraulichkeitsunterbezeichnung, wenn Sie über eine große Anzahl von Bezeichnungen verfügen oder Bezeichnungen für sichere Websites unter ihrer streng regulierten Bezeichnung organisieren möchten. 
 
@@ -117,14 +117,14 @@ Die Einstellungen der angewendeten Bezeichnung oder Unterbezeichnung sind an die
 
 Sie haben Folgendes bestimmt:
 
-- Die entsprechende Office 365 Aufbewahrungsbezeichnung und die DLP-Richtlinie, die dieser Bezeichnung zugeordnet ist
-- Die Einstellungen der Office 365-Unterbezeichnung, die Verschlüsselung und Berechtigungen umfassen
+- die entsprechende Aufbewahrungsbezeichnung und die DLP-Richtlinie, die dieser Bezeichnung zugeordnet ist
+- die Einstellungen der Vertraulichkeitsunterbezeichnung, die Verschlüsselung und Berechtigungen umfassen
 
 ## <a name="phase-2-configure"></a>Phase 2: Konfigurieren
 
 In dieser Phase implementieren Sie die in Phase 1 ermittelten Einstellungen, um eine SharePoint-Website für streng regulierte Daten zu erstellen.
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>Schritt 1: Erstellen einer privaten SharePoint-Teamwebsite mit Besitzern und Mitgliedern der entsprechenden Office 365-Gruppe
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>Schritt 1: Erstellen einer privaten SharePoint-Teamwebsite mit Besitzern und Mitgliedern der entsprechenden Microsoft 365-Gruppe
 
 Folgen Sie [diesen Anweisungen]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8), um eine private SharePoint-Teamwebsite zu erstellen.
 
@@ -139,15 +139,15 @@ Konfigurieren Sie diese Berechtigungseinstellungen auf der SharePoint-Website.
 
 Bei diesen Einstellungen ist die Möglichkeit, dass Websitegruppenmitglieder die Website mit anderen Mitgliedern oder Nichtmitgliedern teilen, um den Zugriff auf die Website anzufordern, deaktiviert.
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>Schritt 3: Konfigurieren der Website für eine Office 365-Aufbewahrungsbezeichnung
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>Schritt 3: Konfigurieren der Website für eine Aufbewahrungsbezeichnung
 
-Verwenden Sie die Anweisungen unter [Schützen von SharePoint-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp), um Folgendes zu tun:
+Verwenden Sie die Anweisungen unter [Schützen von SharePoint-Dateien mit Bezeichnungen und Verhindern von Datenverlust](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp), um Folgendes zu tun:
 
 1. Erstellen und Veröffentlichen einer Aufbewahrungsbezeichnung für stark regulierte Daten (sofern erforderlich).
 2. Konfigurieren der Website für die in Schritt 1 erstellte Aufbewahrungsbezeichnung.
 3. Erstellen einer DLP-Richtlinie für stark regulierte Daten, die die in Schritt 2 erstellte Aufbewahrungsbezeichnung verwendet und Benutzer am Senden von Dateien an Ziele außerhalb der Organisation hindert
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>Schritt 4: Erstellen einer Office 365-Vertraulichkeitsunterbezeichnung für die Website
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>Schritt 4: Erstellen einer Vertraulichkeitsunterbezeichnung für die Website
 
 Im Gegensatz zu einer Vertraulichkeitsbezeichnung für streng regulierte Daten, die von jedem auf eine beliebige Datei angewendet werden kann, benötigt eine sichere Website eine eigene Unterbezeichnung, damit für Dateien, denen diese Unterbezeichnung zugeordnet ist, Folgendes gilt:
 
@@ -167,9 +167,9 @@ Verwenden Sie die [hier](https://docs.microsoft.com/microsoft-365/compliance/enc
 Sie haben Folgendes konfiguriert:
 
 - Restriktivere Berechtigungseinstellungen auf der SharePoint-Website
-- Eine Office 365-Aufbewahrungsbezeichnung, die dem Dokumententeil der SharePoint-Website zugewiesen ist
-- Eine DLP-Richtlinie für die Office 365-Aufbewahrungsbezeichnung
-- Eine Office 365-Vertraulichkeitsbezeichnung oder -unterbezeichnung, die Benutzer auf die auf der Website gespeicherten besonders sensiblen Dateien anwenden können. Die Vertraulichkeitsbezeichnung oder -unterbezeichnung verschlüsselt die Datei und erlaubt nur Mitgliedern der Teamwebsitegruppe den Zugriff für die gemeinsame Dokumenterstellung 
+- eine Aufbewahrungsbezeichnung, die dem Dokumententeil der SharePoint-Website zugewiesen ist
+- eine DLP-Richtlinie für die Aufbewahrungsbezeichnung
+- eine Vertraulichkeitsbezeichnung oder -unterbezeichnung, die Benutzer auf die auf der Website gespeicherten besonders sensiblen Dateien anwenden können. Die Vertraulichkeitsbezeichnung oder -unterbezeichnung verschlüsselt die Datei und lässt nur den Zugriff von Mitgliedern der Teamwebsitegruppe für die gemeinsame Dokumenterstellung zu 
 
 Hier ist die resultierende Konfiguration, die eine Unterbezeichnung der Vertraulichkeitsbezeichnung verwendet.
 
