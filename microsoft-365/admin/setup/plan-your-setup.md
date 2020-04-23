@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Erfahren Sie, was Sie tun müssen, um Ihr Microsoft 365 for Business einzurichten.
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627570"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794039"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen des Setups von Microsoft 365 for Business
 
@@ -93,7 +93,7 @@ Wenn Sie planen, von einem vorhandenen e-Mail-Dienst zu Microsoft 365 zu wechsel
   
 Wenn Sie Microsoft 365 für Ihre e-Mail verwenden möchten:
   
-- Um Ihre geschäftliche e-Mail-Adresse (beispielsweise *Rob@contoso.com*) von einem anderen e-Mail-Dienst zu Microsoft 365 zu migrieren, müssen Sie Ihre e-Mails an Ihr neues Microsoft 365-Postfach senden. Dazu wählen Sie auf der Seite **Setup** die Option **die Daten der Benutzer migrieren** aus, wo wir Sie Schritt für Schritt durch die Updates führen, die Sie auf Ihrem Domänenhost vornehmen müssen.
+- Um Ihre geschäftliche e-Mail-Adresse ( *wie\@Rob contoso.com*) aus einem anderen e-Mail-Dienst zu Microsoft 365 zu migrieren, müssen Sie Ihre e-Mails an Ihr neues Microsoft 365-Postfach senden. Dazu wählen Sie auf der Seite **Setup** die Option **die Daten der Benutzer migrieren** aus, wo wir Sie Schritt für Schritt durch die Updates führen, die Sie auf Ihrem Domänenhost vornehmen müssen.
 
 - Nach der Aktualisierung des Domänenhosts wird die Änderung normalerweise innerhalb von nur ein bis zwei Stunden wirksam. Beachten Sie jedoch, dass es manchmal bis zu 72 Stunden dauern kann, bis die Änderungen über das Internet aktualisiert werden.
 

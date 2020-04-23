@@ -1,5 +1,5 @@
 ---
-title: Inhaltssuche in Office 365
+title: Inhaltssuche
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: Verwenden Sie das Tool „Inhaltssuche“ im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, Microsoft Office SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Microsoft 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521501"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632360"
 ---
-# <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
+# <a name="content-search"></a>Inhaltssuche
 
-Mithilfe des eDiscovery-Tools für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 können Sie nach lokalen Elementen wie E-Mails, Dokumenten und Chat-Unterhaltungen in Ihrer Office 365-Organisation suchen. Mithilfe dieses Tools können Sie nach Elementen in folgenden Office 365-Diensten suchen:
+Sie können das Inhaltssuche-eDiscovery-Tool im Compliance Center in Office 365 oder Microsoft 365 verwenden, um in Ihrer Organisation nach internen Elementen wie E-Mails, Dokumenten und Instant Messaging-Unterhaltungen zu suchen. Verwenden Sie dieses Tool, um nach Elementen in folgenden Diensten zu suchen:
   
 - Exchange-Postfächer und öffentliche Ordner
     
@@ -38,7 +38,7 @@ Mithilfe des eDiscovery-Tools für die Inhaltssuche im Compliance Center in Offi
     
 - Microsoft Teams 
 
-- Office 365-Gruppen
+- Microsoft 365-Gruppen
 
 - Yammer-Gruppen 
     
@@ -48,7 +48,7 @@ Nach dem Ausführen einer Inhaltssuche werden die Anzahl der Inhaltsspeicherorte
 
 Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und die Suchergebnisse in der Vorschau anzuzeigen, müssen Administratoren, Compliance Officer oder eDiscovery-Manager Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
   
-1. Rufen Sie die Seite [https://protection.office.com](https://protection.office.com)auf und melden Sie sich mit Ihrer E-Mail -Adresse und Ihrem Kennwort für Office 365 an.
+1. Rufen Sie die Seite [https://protection.office.com](https://protection.office.com) auf, und melden Sie sich mit Ihrer Microsoft-E-Mail-Adresse und Ihrem Kennwort an.
     
 2. Klicken Sie auf **Suche** \> **Inhaltssuche**.
     
@@ -85,7 +85,7 @@ Um Zugriff auf die **Inhaltssuche** zu erhalten, Inhaltssuchen auszuführen und 
     
        - **Speicherorte:** Wählen Sie die Inhaltsspeicherorte aus, die durchsucht werden sollen.
     
-      - **Alle Speicherorte:**  Wählen Sie diese Option aus, um sämtliche Inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu zählen E-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer, Postfächer für alle Microsoft Teams, Yammer-Gruppen und Office 365-Gruppen), alle Skype for Business-Unterhaltungen, alle SharePoint- und OneDrive for Business-Websites (einschließlich der Websites für Microsoft Teams, Yammer-Gruppen und Office 365-Gruppen) sowie Elemente in allen öffentlichen Exchange-Ordnern.
+      - **Alle Speicherorte:**  Wählen Sie diese Option aus, um sämtliche Inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu gehören E-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer und Postfächer für alle Microsoft Teams, Yammer-Gruppen und Microsoft 365-Gruppen), alle Skype for Business-Unterhaltungen, alle SharePoint- und OneDrive for Business-Websites (einschließlich der Websites für alle Microsoft Teams, Yammer-Gruppen und Microsoft 365-Gruppen) sowie Elemente in allen öffentlichen Exchange-Ordnern.
     
       - **Bestimmte Speicherorte:**  Wählen Sie diese Option aus, um bestimmte Inhaltsspeicherorte zu durchsuchen. Sie können alle Inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (z. B. alle Exchange-Postfächer oder alle SharePoint-Websites durchsuchen), oder bestimmte Speicherorte in jedem der angezeigten Office 365-Dienste nach Inhalten durchsuchen. 
     
@@ -178,7 +178,7 @@ Weitere Informationen zu Inhaltssuchen finden Sie in den folgenden Abschnitten.
   
 [Durchsuchen von OneDrive-Konten](#searching-onedrive-accounts)
   
-[Durchsuchen von Microsoft Teams and Office 365-Gruppen](#searching-microsoft-teams-and-office-365-groups)
+[Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Durchsuchen von Yammer-Gruppen](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ Weitere Informationen zu Inhaltssuchen finden Sie in den folgenden Abschnitten.
 
 - Eine Beschreibung der Einschränkungen, die für das Inhaltssuchfeature gelten, finden Sie unter [Grenzwerte für die Inhaltssuche](limits-for-content-search.md).
     
-- Microsoft sammelt Leistungsdaten für alle Inhaltssuchen, die von Office 365-Organisationen durchgeführt werden. Obwohl sich die Komplexität einer Suchabfrage negativ auf die Suchzeiten auswirken kann, ist die Anzahl der durchsuchten Postfächer der Faktor, der die Suchdauer am stärksten beeinflusst. Microsoft bietet zwar keine Vereinbarung zum Servicelevel (Service Level Agreement, SLA) für Suchzeiten an, in der folgenden Tabelle werden jedoch durchschnittliche Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der in die Suche einbezogenen Postfächer angegeben.
+- Microsoft sammelt Leistungsinformationen für Inhaltssuchen, die von allen Organisationen durchgeführt werden. Obwohl sich die Komplexität einer Suchabfrage negativ auf die Suchzeiten auswirken kann, ist die Anzahl der durchsuchten Postfächer der Faktor, der die Suchdauer am stärksten beeinflusst. Microsoft bietet zwar keine Vereinbarung zum Servicelevel (Service Level Agreement, SLA) für Suchzeiten an, in der folgenden Tabelle werden jedoch durchschnittliche Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der in die Suche einbezogenen Postfächer angegeben.
     
 |**Anzahl Postfächer**|**Durchschnittliche Suchzeit**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ Bedenken Sie bei der Verwendung einer Schlüsselwortliste zum Erstellen einer Su
     
     ![Beispiel für die Abfrage, die unter Verwendung der Schlüsselwortliste und einer Bedingung erstellt wird](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- Wenn Sie eine Inhaltssuche ausführen, überprüft Office 365 die Suchabfrage automatisch auf nicht unterstützte Zeichen und boolesche Operatoren, die nicht groß geschrieben sind. Nicht unterstützte Zeichen sind häufig ausgeblendet und verursachen in der Regel einen Suchfehler, oder es werden unerwartete Ergebnisse zurückgegeben. Weitere Informationen zu den nicht unterstützten Zeichen, nach denen gesucht wird, finden Sie unter [Überprüfen der Inhaltssuchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
+- Wenn Sie eine Inhaltssuche ausführen, überprüft Microsoft 365 Ihre Suchanfrage automatisch auf nicht unterstützte Zeichen und auf boolesche Operatoren, die nicht großgeschrieben werden dürfen. Nicht unterstützte Zeichen sind häufig ausgeblendet und verursachen in der Regel einen Suchfehler, oder es werden unerwartete Ergebnisse zurückgegeben. Weitere Informationen zu den nicht unterstützten Zeichen, nach denen gesucht wird, finden Sie unter [Überprüfen der Inhaltssuchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
     
 - Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein. 
   
@@ -239,15 +239,15 @@ Bedenken Sie bei der Verwendung einer Schlüsselwortliste zum Erstellen einer Su
     
     In den seltenen Fällen, in denen der Benutzerprinzipalname (User Principal Name, UPN) einer Person geändert wird, wird die URL für deren OneDrive-Speicherort so geändert, dass der neue UPN integriert ist. In diesem Fall müssen Sie eine Inhaltssuche entsprechend ändern, indem Sie die neue OneDrive-URL für den Benutzer hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Durchsuchen von Microsoft Teams and Office 365-Gruppen
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen
 
-Sie können ein Postfach durchsuchen, das einer Office 365-Gruppe oder einem Microsoft-Team zugeordnet ist. Da Microsoft Teams auf Office 365-Gruppen aufgebaut ist, ist das Durchsuchen bei beiden ähnlich. In beiden Fällen wird nur das Gruppen- bzw. das Team-Postfach durchsucht. Die Postfächer der Gruppen- oder Teammitglieder werden nicht durchsucht. Um diese zu durchsuchen, müssen sie eigens zur Suche hinzugefügt werden.
+Sie können das Postfach durchsuchen, das mit einer Microsoft 365-Gruppe oder einem Microsoft-Team verknüpft ist. Da Microsoft Teams auf Microsoft 365-Gruppen aufbaut, ist die Suche nach diesen ähnlich. In beiden Fällen wird nur das Gruppen- bzw. das Team-Postfach durchsucht. Die Postfächer der Gruppen- oder Teammitglieder werden nicht durchsucht. Um diese zu durchsuchen, müssen sie eigens zur Suche hinzugefügt werden.
   
-Beachten Sie die folgenden Punkte, wenn Sie in Microsoft Teams und Office 365-Gruppen nach Inhalten suchen.
+Beachten Sie bei der Suche nach Inhalten in Microsoft Teams und Microsoft 365-Gruppen die folgenden Punkte.
   
-- Um nach Inhalten in Teams und Office 365-Gruppen zu suchen, müssen Sie das Postfach und die SharePoint-Website angeben, die der Gruppe oder dem Team zugeordnet sind.
+- Um nach Inhalten zu suchen, die sich in Teams und Microsoft 365-Gruppen befinden, müssen Sie das Postfach und die SharePoint-Website angeben, die mit einem Team oder einer Gruppe verknüpft sind.
     
-- Führen Sie das **Get-UnifiedGroup**-Cmdlet in Exchange Online aus, um die Eigenschaften für ein Team oder eine Office 365-Gruppe anzuzeigen. Dies ist eine gute Möglichkeit zum Abrufen der URL der einem Team oder einer Gruppe zugeordneten Website. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt: 
+- Führen Sie das Cmdlet **Get-UnifiedGroup** in Exchange Online aus, um Eigenschaften für ein Team oder eine Microsoft 365-Gruppe anzuzeigen. Dies ist eine gute Möglichkeit zum Abrufen der URL der einem Team oder einer Gruppe zugeordneten Website. Der folgende Befehl zeigt beispielsweise ausgewählte Eigenschaften für eine Microsoft 365-Gruppe mit dem Namen „Senior Leadership Team“ an: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ Beachten Sie die folgenden Punkte, wenn Sie in Microsoft Teams und Office 365-Gr
     > [!NOTE]
     > Zum Ausführen des **Get-UnifiedGroup**-Cmdlets müssen Sie über die Rolle "Empfänger (nur Anzeige)" in Exchange Online verfügen oder ein Mitglied einer Rollengruppe sein, der die Rolle "Empfänger (nur Anzeige)" zugewiesen wurde. 
   
-- Wenn ein Benutzerpostfach durchsucht wird, werden keine Office 365-Gruppen durchsucht, denen der Benutzer angehört. Außerdem werden beim Durchsuchen eines Teams oder einer Office 365-Gruppe nur das von Ihnen angegebene Gruppenpostfach und die von Ihnen angegebene Gruppen-Website durchsucht. Die Postfächer und OneDrive for Business-Konten von Gruppenmitgliedern werden nicht durchsucht, es sei denn, Sie fügen sie der Suche explizit hinzu.
+- Wenn die Mailbox eines Benutzers durchsucht wird, wird kein Team oder keine Microsoft 365-Gruppe durchsucht, in welchem bzw. welcher der Benutzer Mitglied ist. Wenn Sie ein Team oder eine Microsoft 365-Gruppe durchsuchen, wird nur das Gruppenpostfach und die Gruppensite durchsucht, die Sie angeben. Die Postfächer und OneDrive for Business-Konten von Gruppenmitgliedern werden nicht durchsucht, es sei denn, Sie fügen sie der Suche explizit hinzu.
     
-- Eine Liste der Mitglieder eines Teams oder einer Office 365-Gruppe können Sie über die Eigenschaften auf der Seite **Start \> Gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen: 
+- Um eine Liste der Mitglieder eines Teams oder einer Microsoft 365-Gruppe zu erhalten, können Sie die Eigenschaften auf der Seite **Start \> Gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Durchsuchen von getrennten oder nicht mehr lizensierten Postfächern
 
-Wenn die Exchange Online-Lizenz (oder die gesamte Office 365-Lizenz) aus einem Benutzerkonto in Office 365 oder in Azure Active Directory entfernt wird, wird das Postfach des betreffenden Benutzers zu einem *getrennten* Postfach. Dies bedeutet, dass das Postfach nicht mehr mit dem Benutzerkonto verknüpft ist. Beim Durchsuchen von getrennten Postfächern geschieht Folgendes:
+Wenn die Exchange Online-Lizenz (oder die gesamte Microsoft 365-Lizenz) von einem Benutzerkonto oder in Azure Active Directory entfernt wird, wird das Postfach des Benutzers zu einem *nicht mehr verbundenen* Postfach. Dies bedeutet, dass das Postfach nicht mehr mit dem Benutzerkonto verknüpft ist. Beim Durchsuchen von getrennten Postfächern geschieht Folgendes:
 
 - Wenn die Lizenz aus einem Postfach entfernt wird, kann das Postfach nicht mehr durchsucht werden. 
 
