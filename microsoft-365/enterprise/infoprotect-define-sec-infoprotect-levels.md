@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen und konfigurieren Sie Sicherheits- und Informationsschutzebenen für Ihre Organisation.
-ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa3e9fa11070ea505752d781ecdd21b344c8222
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067212"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636964"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Schritt 1: Definieren von Sicherheits- und Informationsschutzebenen
 
@@ -33,7 +33,7 @@ In diesem Schritt definieren Sie die Sicherheits- und Schutzebenen für Ihre Org
 Obwohl Sie eigene Sicherheitsebenen definieren können und möglicherweise bereits einige haben, empfiehlt Microsoft, dass Sie beim Entwickeln eines Plans mindestens drei unterschiedliche Ebenen von Sicherheit und Schutz verwenden, die angewendet werden können. Es folgt eine Liste für die ersten Schritte: 
 
 - **Baseline:** Dies ist ein Minimumstandard zum Schutz von Daten und für die Identitäten und Geräte, die auf Ihre Daten zugreifen. Sie können die Baseline-Empfehlungen für Sicherheit und Schutz befolgen, um starken Standardschutz bereitzustellen, der die Anforderungen vieler Organisationen oder ihrer Abteilungen erfüllt.
-- **Vertraulich:** Dies ist zusätzlicher Schutz für eine Teilmenge Ihrer Daten, die über die Baseline-Ebene hinaus geschützt werden müssen. Sie können diesen erhöhten Schutz auf spezifische Datensätze in Ihrer Office 365-Umgebung anwenden. Microsoft empfiehlt auch da Anwenden der vertraulichen Sicherheitsebene auf Identitäten und Geräte, die auf vertrauliche Daten zugreifen.
+- **Vertraulich:** Dies ist zusätzlicher Schutz für eine Teilmenge Ihrer Daten, die über die Standardebene hinaus geschützt werden müssen. Sie können diesen erhöhten Schutz auf spezifische Datensätze in Ihrer Microsoft 365-Umgebung anwenden. Microsoft empfiehlt auch das Anwenden der vertraulichen Sicherheitsebene auf Identitäten und Geräte, die auf vertrauliche Daten zugreifen.
 - **Hoch reguliert:** Dies ist die höchste Schutzebene für Organisationen, die in der Regel eine kleine Menge an streng klassifizierten Daten haben (geistiges Eigentum oder Betriebsgeheimnisse) oder Daten haben, die strengen Sicherheitsvorschriften unterliegen. Microsoft 365 Enterprise bietet Funktionen, damit Organisationen diese hohen Sicherheitsanforderungen erfüllen, einschließlich äquivalenter Schutz für Identitäten und Geräte.
 
 Weitere Informationen finden Sie unter [Drei Schutzebenen](microsoft-365-policies-configurations.md#three-tiers-of-protection).
