@@ -13,12 +13,12 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
-  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+  ms.openlocfilehash: b9cefc03e590b5f8ab94af9d86e01ba53f76334a
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/19/2019
-  ms.locfileid: "40801670"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43631657"
 highlightedContent:
   items:
   - title: Informationen zu Microsoft 365 Enterprise
@@ -58,7 +58,7 @@ conceptualContent:
       text: Windows 10 Enterprise
     - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
       itemType: deploy
-      text: Office 365 ProPlus
+      text: Microsoft 365 Apps for Enterprise
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
@@ -83,13 +83,13 @@ conceptualContent:
       text: Windows 10 Enterprise
     - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
       itemType: concept
-      text: Office 365 ProPlus
+      text: Microsoft 365 Apps for Enterprise
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
       text: Apps mit Intune
     - url: https://docs.microsoft.com/office365/
       itemType: get-started
-      text: Office 365-Dienste
+      text: Microsoft 365-Dienste
 additionalContent:
   sections:
   - title: Weitere Ressourcen
