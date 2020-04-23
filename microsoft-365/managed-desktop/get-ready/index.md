@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595591"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790611"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten auf die Registrierung in Microsoft Managed Desktop
 
@@ -21,5 +21,6 @@ In diesen Themen werden die Schritte beschrieben, die Sie in Ihrer Organisation 
 - [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](network.md)
 - [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
 - [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+- [Vorbereiten von Druckressourcen für Microsoft Managed Desktop](printing.md)
 - [Apps in Microsoft Managed Desktop](apps.md)
 

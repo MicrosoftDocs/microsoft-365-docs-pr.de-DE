@@ -6,26 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37422532"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790693"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Von Microsoft verwaltete Desktop unterstützte Regionen und Sprachen
 
-Dieses Thema enthält Details zu Regionen und Sprachen, die von Microsoft Managed Desktop unterstützt werden. 
+Dieser Artikel enthält Details zu Regionen und Sprachen, die von Microsoft Managed Desktop unterstützt werden, und die Regionen, in denen Sie es verwenden können.
 
-- **Regionen:** Vereinigte Staaten, Kanada (ohne Quebec), Vereinigtes Königreich, Belgien, Luxemburg, die Niederlande, Australien und Neuseeland
-- **Sprachen:** Englisch ist die einzige unterstützte Sprache, die Benutzern auf verwalteten Geräten derzeit zur Verfügung steht. Dies gilt sowohl für die Unterstützung von [Administratoren](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) als auch für die Supportoptionen für [Endbenutzer](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
+## <a name="supported-languages"></a>Unterstützte Sprachen
 
-Kunden können jedoch weiterhin verwaltete Geräte außerhalb der oben aufgeführten Regionen ohne Unterbrechung des Microsoft Managed Desktop-Diensts verwenden. Beispielsweise kann ein Mitarbeiter mit Hauptsitz in Großbritannien sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während Sie in Asien, Europa oder Südamerika Reisen.
+Englisch ist die einzige Sprache, die Benutzern von Microsoft Managed Desktop zur Verfügung steht. Dies umfasst alle Benutzeroberflächen für Endbenutzer und Administratoren sowie alle Interaktionen sowohl mit [Administrator Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) als auch mit [Endbenutzer Unterstützung](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+
+
+Sie können verwaltete Geräte auch außerhalb der englischsprachigen Regionen ohne Unterbrechung des von Microsoft verwalteten Desktop Diensts verwenden. Beispielsweise kann ein Mitarbeiter mit Hauptsitz in Großbritannien sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während Sie in Asien, Europa oder Südamerika Reisen. 
 
 Weitere Informationen zur Benutzerunterstützung mit Microsoft Managed Desktop finden Sie unter [Support für Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
 
-Wenn ein Benutzer in einer anderen Sprache als Englisch arbeiten möchte, kann er anfordern, dass der lokale IT-Administrator zusätzliche Sprachpakete auf verwalteten Geräten über die Intune-Unternehmens Portal-App zentral bereitstellt. Beginnend mit Windows 10, Version 1803, werden Language Packs als AppX-Pakete aus dem Microsoft Store ausgeliefert. Weitere Informationen finden Sie unter [Microsoft Store for Business-Apps](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).
+## <a name="availability-of-the-service"></a>Verfügbarkeit des Diensts
 
+Organisationen in den folgenden Ländern können Microsoft Managed Desktop abonnieren:
 
->[!NOTE]
->Die GetHelp-App auf einem Microsoft Managed Desktop-Gerät unterstützt nur Englisch. Damit Benutzer über die GetHelp-App Hilfe mit dem verwalteten Desktop von Microsoft erhalten, müssen Sie die Anzeigesprache in Englisch umschalten.
+- Vereinigte Staaten
+- Kanada (ohne Quebec)
+- Vereinigtes Königreich
+- Irland
+- Belgien
+- Luxemburg
+- Niederlande
+- Schweden
+- Finnland
+- Norwegen
+- Dänemark
+- Island
+- Australien
+- Neuseeland
+
+Sowohl für Endbenutzer als auch für Administratoren in diesen Regionen muss für Ihre Geräte und Verwaltungstools Englisch verwendet werden. 
