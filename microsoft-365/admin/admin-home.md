@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Erfahren Sie mehr über die Ressourcen, die Microsoft 365-Administratoren zur Verfügung stehen.
 ms.custom: okr_smb
-ms.openlocfilehash: 02d1afa763eda2edd7a0fba5624ab5a168b80a14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624000"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781493"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin-Hilfecenter
 
@@ -38,7 +38,7 @@ Erfahren Sie mehr über die Ressourcen, die Administratoren zur Verfügung stehe
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Aus Office 365 wird Microsoft 365</h3>
+                        <h3>Office 365 ist jetzt Microsoft 365</h3>
                         <p>Wir ändern einige unserer Abonnementnamen für Office 365 und Microsoft 365. Sie brauchen nichts zu tun. Ihre Dienste, Apps und Funktionen bleiben gleich, ebenso wie der Preis Ihres Abonnements. Ihr Abonnementname wird automatisch im Microsoft 365 Admin Center aktualisiert, und Ihre Rechnungsangaben werden am oder nach dem 21. April 2020 aktualisiert.</p>
                         <ul>
                             <li><p><b>Office 365 Business Essentials</b> heißt jetzt <b>Microsoft 365 Business Basic</b>.</p></li>
