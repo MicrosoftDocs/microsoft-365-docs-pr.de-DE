@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen und gleichzeitig sicherzustellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden. Mit diesen Bezeichnungen können Schutzeinstellungen angewendet werden, die die Verschlüsselung optischer Kennzeichnungen wie Fußzeilen und Wasserzeichen umfassen.
-ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631292"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790652"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Weitere Informationen Vertraulichkeitsbezeichnungen
 
@@ -80,7 +80,7 @@ Jedem Inhaltselement kann eine Vertraulichkeitsbezeichnung zugewiesen werden. Au
 > Zusätzlich zum Anwenden von Bezeichnungen auf E-Mails und Dokumente in Office-Apps sind nun auch Vertraulichkeitsbezeichnungen in den folgenden öffentlichen Vorschaureleases verfügbar:
 > 
 > - [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)
+> - [Verwenden von Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (Public Preview)](sensitivity-labels-teams-groups-sites.md)
 
 Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angewendet wurde, werden alle konfigurierten Schutzeinstellungen für diese Bezeichnung auf den Inhalt erzwungen. Mit einer Vertraulichkeitsbezeichnung können Sie folgende Aktionen auslösen:
 
@@ -92,12 +92,12 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
     
     ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](../media/Sensitivity-label-watermark-header.png)
     
-    Müssen Sie überprüfen, wann Inhaltsmarkierungen angebracht werden? Informationen hierzu finden Sie unter [Wann wendet Microsoft 365 die Inhaltskennzeichnung und -verschlüsselung an](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Müssen Sie überprüfen, wann Inhaltsmarkierungen angebracht werden? Informationen hierzu finden Sie unter [Wann Microsoft 365 die Inhaltskennzeichnung und -verschlüsselung anwendet](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
     Zeichenfolgenlängen: Wasserzeichen sind auf 255 Zeichen beschränkt. Kopf-und Fußzeilen sind (mit Ausnahme von Excel) auf 1024 Zeichen beschränkt. Bei Excel liegt der Höchstwert bei 255 Zeichen für Kopf-und Fußzeilen, aber in dieser Beschränkung sind nicht sichtbare Zeichen, wie z. B. Formatierungscodes, enthalten. Wenn dieser Wert erreicht ist, wird die eingegebene Zeichenfolge in Excel nicht angezeigt.
 
 
-- **Schützen von Inhalten in Containern, z. B. Websites und Gruppen**, wenn Sie sich für die Vorschauversion anmelden, um [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau) zu verwenden](sensitivity-labels-teams-groups-sites.md).
+- **Schützen von Inhalten in Containern, z. B. Websites und Gruppen**, wenn Sie sich für die Vorschauversion anmelden, um [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (Public Preview) zu verwenden](sensitivity-labels-teams-groups-sites.md).
     
     Konfigurationsoptionen für **Website- und Gruppeneinstellungen** werden erst angezeigt, wenn Sie sich für die Vorschauversion anmelden. Beachten Sie, dass diese Bezeichnungskonfiguration nicht dazu führt, dass Dokumente automatisch mit Bezeichnungen versehen werden. Stattdessen werden die Inhalte geschützt, indem die Bezeichnungseinstellungen den Zugriff auf den Container, in dem Dokumente gespeichert sind, steuern. Diese Einstellungen legen die Datenschutzebene fest, bestimmen, ob ein Microsoft 365-Gruppenbesitzer Gäste zur Gruppe hinzufügen kann, und steuern die Zugriffsebene für ein nicht verwaltetes Gerät.
 
@@ -141,9 +141,9 @@ Nachdem Sie Ihre Vertraulichkeitsbezeichnungen erstellt haben, müssen Sie diese
 
 Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
-- **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Bezeichnungen können für jede beliebige E-Mail-aktivierte Sicherheitsgruppe, Microsoft 365-Gruppe oder dynamische Verteilergruppe veröffentlicht werden.
+- **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
 
-- **Eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails anwenden, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Diese Option gilt auch für Container, wenn Sie [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktiviert haben](sensitivity-labels-teams-groups-sites.md). Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist. Sie haben die Möglichkeit, eine als Basisniveau Standardbezeichnung von Schutzeinstellungen festzulegen, die auf alle Ihre Inhalte angewendet werden sollen. Ohne Benutzerschulungen und andere Steuerelemente kann diese Einstellung aber auch zu ungenauen Bezeichnungen führen. 
+- **Eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails anwenden, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Diese Option gilt auch für Container, wenn [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktiviert sind](sensitivity-labels-teams-groups-sites.md). Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist. Sie haben die Möglichkeit, eine als Basisniveau Standardbezeichnung von Schutzeinstellungen festzulegen, die auf alle Ihre Inhalte angewendet werden sollen. Ohne Benutzerschulungen und andere Steuerelemente kann diese Einstellung aber auch zu ungenauen Bezeichnungen führen. 
 
 - **Begründung für das Ändern einer Bezeichnung anfordern.** Sie können festlegen, dass ein Benutzer, der versucht, eine Bezeichnung zu entfernen oder durch eine Bezeichnung mit einer niedrigeren Ordnungszahl zu ersetzen, eine Begründung für diese Aktion angeben muss. Beispiel: Ein Benutzer öffnet ein Dokument mit der Bezeichnung "Vertraulich" (Ordnungszahl 3) und ersetzt diese Bezeichnung durch die Bezeichnung "Öffentlich" (Ordnungszahl 1). Aktuell wird die Begründung nicht zur [Analyse der Bezeichnungen](label-analytics.md) an den Administrator gesendet. Allerdings sendet der [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) diese Informationen an [Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
@@ -197,7 +197,7 @@ Die Metadaten beider Bezeichnungstypen sind kompatibel, sodass Sie Dokumente und
 
 ### <a name="azure-information-protection-clients"></a>Azure Information Protection-Clients
 
-Wenn Sie Vertraulichkeitsbezeichnungen in Microsoft 365 Apps for Enterprise-Apps auf Windows-Computern verwenden, können Sie wählen, ob ein Azure Information Protection-Client oder die in Office integrierte Bezeichnung verwendet werden soll.
+Wenn Sie Vertraulichkeitsbezeichnungen in Microsoft 365 Apps for Enterprise-Apps auf Windows-Computern verwenden, können Sie auswählen, ob ein Azure Information Protection-Client oder die in Office integrierte Bezeichnung verwendet werden soll.
 
 Die integrierte Bezeichnung wird in diesen Apps standardmäßig deaktiviert, wenn der Azure Information Protection-Client installiert ist. Weitere Informationen, einschließlich der Möglichkeit, dieses Standardverhalten zu ändern, finden Sie unter [Integrierter Bezeichnungs-Client und der Azure Information Protection-Client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
