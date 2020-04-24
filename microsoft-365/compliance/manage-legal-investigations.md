@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Verwenden Sie eDiscovery-Fälle im Microsoft 365 Compliance Center, um die rechtliche Untersuchung Ihres Unternehmens zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten weiter analysieren, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery verwenden.
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635905"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799906"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Verwalten von rechtlichen Untersuchungen in Microsoft 365
 
@@ -64,7 +64,7 @@ Im folgenden finden Sie eine kurze Übersicht über den integrierten Workflow in
 
 - [Indizieren von Depotdaten](processing-data-for-case.md) und Beheben von Indizierungs Fehlern, damit Sie effektiv Daten für ihre Untersuchungen erfassen können
 
-- [Sammeln von Daten](collecting-data-for-ediscovery.md) für einen Fall und Hinzufügen des [Add-Ins zu einer Überprüfungsgruppe](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set) zur weiteren Untersuchung
+- [Sammeln von Daten](collecting-data-for-ediscovery.md) für einen Fall und Hinzufügen des [Add-Ins zu einer Überprüfungsgruppe](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) zur weiteren Untersuchung
 
 - [Anzeigen](view-documents-in-review-set.md) von Dokumenten, [Abfrage](review-set-search.md) Daten und [Tag](tagging-documents.md) -Elementen in einem Überprüfungs Satzes
 

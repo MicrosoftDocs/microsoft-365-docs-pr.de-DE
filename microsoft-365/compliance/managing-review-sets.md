@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56ed13ad02c176465f983ffc99af93330f19d00c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632940"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800056"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Verwalten von Überprüfungs Sätzen in Advanced eDiscovery
 
@@ -53,6 +53,6 @@ Es gibt drei verschiedene Möglichkeiten zum Hinzufügen von Daten zu einer Übe
 
 1. [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md)
 
-2. [Laden von nicht von Microsoft 365 Daten in einen Überprüfungs-Datensatz](load-non-office365-data.md)
+2. [Laden von nicht von Microsoft 365 Daten in einen Überprüfungs-Datensatz](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Hinzufügen von Daten zu einem Überprüfungs Satzes aus einer anderen Überprüfungsgruppe](add-data-to-review-set-from-another-review-set.md)

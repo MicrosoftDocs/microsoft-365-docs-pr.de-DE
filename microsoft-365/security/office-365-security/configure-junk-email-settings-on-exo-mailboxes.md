@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365
+title: Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638440"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800067"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
 Die Einstellungen für die Organisation von Antispamfunktionen in Exchange Online werden durch Exchange Online Schutz gesteuert (EoP). Weitere Informationen finden Sie unter [Antispamschutz in Office 365](anti-spam-protection.md).
 
@@ -48,6 +48,8 @@ Administratoren können Exchange Online PowerShell verwenden, um den Status der 
 - Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Insbesondere benötigen Sie die Rolle **"e-Mail-Empfänger** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung**", " **Empfängerverwaltung**" und " **benutzerdefinierte e-Mail-Empfänger** " zugewiesen ist) oder die Rolle " **Benutzeroptionen** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung** " und " **Helpdesk** " zugewiesen ist). Informationen zum Hinzufügen von Benutzern zu Rollengruppen in Exchange Online finden Sie unter [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Beachten Sie, dass ein Benutzer mit Standardberechtigungen dieselben Verfahren in seinem eigenen Postfach ausführen kann, solange Sie [Zugriff auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)haben.
 
 - In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- Sichere Absender für freigegebene Postfächer werden nicht mit Azure AD und EOP durch Entwurf synchronisiert.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Verwenden Exchange Online PowerShell zum Aktivieren oder Deaktivieren der Junk-e-Mail-Regel in einem Postfach
 
@@ -181,3 +183,38 @@ Wenn der Outlook-Junk-E-Mail-Filter auf **Niedrig** oder **Hoch** gesetzt ist, v
 Der Outlook-Junk-e-Mail-Filter kann also die Sammlung von Listen sicherer Adressen des Postfachs und seine eigene Spam Klassifizierung verwenden, um Nachrichten in den Junk-e-Mail-Ordner zu migrieren, auch wenn die Junk-e-Mail-Regel im Postfach deaktiviert ist.
 
 Die Sammlung von Listen sicherer Adressen wird sowohl in Outlook als auch in Outlook im Web unterstützt. Die Sammlung von Listen sicherer Adressen wird im Exchange Online Postfach gespeichert, sodass Änderungen an der Sammlung von Listen sicherer Adressen in Outlook im Internet und umgekehrt angezeigt werden.
+
+## <a name="limits-for-junk-email-settings"></a>Einschränkungen für Junk-e-Mail-Einstellungen
+
+Die Sammlung von Listen sicherer Adressen (die Liste sicherer Absender, Liste sicherer Empfänger und blockierte Absender), die im Postfach des Benutzers gespeichert ist, wird ebenfalls mit EoP synchronisiert. Bei der Verzeichnissynchronisierung wird die Sammlung von Listen sicherer Adressen mit Azure AD synchronisiert.
+
+- Die Sammlung von Listen sicherer Adressen im Postfach des Benutzers hat einen Grenzwert von 510 KB, einschließlich aller Listen sowie zusätzlicher Einstellungen für Junk-e-Mail-Filter. Wenn ein Benutzer diesen Grenzwert überschreitet, erhält er einen Outlook-Fehler, der wie folgt aussieht:
+
+  > Die Junk-e-Mail-Listen von Servern konnten nicht/nicht hinzugefügt werden. Sie haben die auf dem Server zulässige Größe überstiegen. Der Junk-e-Mail-Filter auf dem Server wird deaktiviert, bis Ihre Junk-e-Mail-Listen auf die vom Server zugelassene Größe reduziert wurden.
+
+  Weitere Informationen zu diesem Grenzwert und zum Ändern des Werts finden Sie unter [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- Die synchronisierte Sammlung von Listen sicherer Adressen in EoP weist die folgenden Synchronisierungs Grenzwerte auf:
+
+  - 1024 Gesamteinträge in der Liste "sichere Absender", "sichere Empfänger" und "externe Kontakte", wenn " **Vertrauenswürdige e-Mails von" meine Kontakte** "aktiviert ist.
+  - 500 Gesamteinträge in der Liste Blockierte Absender und Blockierte Domänen.
+
+  Wenn der Grenzwert für die 1024-Eingabe erreicht wird, treten folgende Vorgänge auf:
+  
+  - In der Liste werden keine Einträge in PowerShell und Outlook im Internet akzeptiert, aber es wird kein Fehler angezeigt.
+
+    Outlook-Benutzer können weiterhin mehr als 1024 Einträge hinzufügen, bis Sie den Outlook-Grenzwert von 510 KB erreichen. Outlook kann diese zusätzlichen Einträge verwenden, solange ein EoP-Filter die Nachricht nicht blockiert, bevor die Zustellung an das Postfach erfolgt (Nachrichtenfluss Regeln, Antispoofing usw.).
+
+- Bei der Verzeichnissynchronisierung werden die Einträge in der folgenden Reihenfolge mit Azure AD synchronisiert:
+
+  1. E-Mail-Kontakte, wenn **Vertrauenswürdige e-Mails aus meinen Kontakten** aktiviert sind.
+  2. Die Liste sicherer Absender und die Liste sicherer Empfänger werden kombiniert, dedupliziert und alphabetisch sortiert, wenn für die ersten 1024-Einträge eine Änderung vorgenommen wird.
+
+  Die ersten 1024-Einträge werden verwendet, und relevante Informationen werden in den Nachrichtenkopfzeilen gestempelt.
+  
+  Einträge über 1024, die nicht mit Azure AD synchronisiert wurden, werden von Outlook (nicht von Outlook im Internet) verarbeitet, und in den Nachrichtenkopfzeilen werden keine Informationen gestempelt.
+
+Wie Sie sehen können, wird durch Aktivieren der Einstellung **e-Mail aus meinen Kontakten Vertrauen** die Anzahl der sicheren Absender und der sicheren Empfänger reduziert, die synchronisiert werden können. Wenn dies ein Problem ist, empfehlen wir die Verwendung von Gruppenrichtlinien, um diese Funktion zu deaktivieren:
+
+- Dateiname: outlk16. OPAX
+- Richtlinieneinstellung: **e-Mail von Kontakten Vertrauen**
