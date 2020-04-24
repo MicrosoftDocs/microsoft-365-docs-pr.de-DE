@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707523"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796512"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln 
 
@@ -63,7 +63,7 @@ Wenn Sie das Auschecken abgeschlossen haben, kann es einige Minuten dauern, bis 
 
 ## <a name="the-upgrade-tab-is-empty"></a>Die Registerkarte "Upgrade" ist leer
 
-Wenn die Registerkarte **Upgrade** leer ist, sehen Sie eine Erläuterung dazu, warum Sie zu diesem Zeitpunkt kein Upgrade durchführen können. Sie können versuchen, [Pläne manuell zu ändern](change-plans-manually.md) oder den [Support anzurufen](../../admin/contact-support-for-business-products.md). Weitere Informationen finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](#why-cant-i-upgrade-plans).
+Wenn die Registerkarte **Upgrade** leer ist, sehen Sie eine Erläuterung dazu, warum Sie zu diesem Zeitpunkt kein Upgrade durchführen können. Sie können versuchen, [Pläne manuell zu ändern](change-plans-manually.md). Weitere Informationen finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Der gewünschte Plan wird nicht angezeigt.
 
