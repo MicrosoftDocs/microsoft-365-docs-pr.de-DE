@@ -513,8 +513,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: 'Hinzufügen von Daten zu einem anderen Prüfdateisatz '
               href: add-data-to-review-set-from-another-review-set.md
-            - name: Verwalten von Ladesätzen
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: Überprüfen von Falldaten
           items:
             - name: Verwenden des Prüfdateisatz-Dashboards (Vorschau)
