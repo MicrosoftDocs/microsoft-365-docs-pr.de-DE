@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen, Aufbewahrungsbezeichnungsrichtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151460"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708440"
 ---
 # <a name="overview-of-file-plan-manager"></a>Übersicht über den Dateiplan-Manager
 
@@ -37,9 +37,9 @@ Wenn Sie im Security & Compliance Center auf den Dateiplan-Manager zugreifen mö
 
 Um auf den Dateiplan-Manager zuzugreifen, müssen Sie über eine der folgenden Administratorrollen verfügen:
     
-- Aufbewahrungs-Manager
-
-- Aufbewahrungs-Manager (schreibgeschützt)
+    - Aufbewahrungs-Manager
+    
+    - Aufbewahrungs-Manager (schreibgeschützt)
 
 ## <a name="default-retention-labels-and-label-policy"></a>Standardmäßige Aufbewahrungsbezeichnung und Bezeichnungsrichtlinie
 
@@ -131,7 +131,7 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
 
    ![Leere Vorlage eines Dateiplans, geöffnet in Excel](../media/file-plan-blank-template.png)
 
-3. Füllen Sie die Vorlage aus. In der folgenden Tabelle werden die Eigenschaften und die gültigen Werte für jede Eigenschaft in der Dateiplanvorlage beschrieben.<br/>
+3. Füllen Sie die Vorlage aus. In der folgenden Tabelle werden die Eigenschaften und die gültigen Werte für jede Eigenschaft in der Dateiplanvorlage beschrieben. Wichtig: Jeder Wert hat eine maximale Länge von 64 Zeichen. <br/>
 
    |**Eigenschaft**|**Typ**|**Gültige Werte**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
    |CitationUrl|Zeichenfolge|Diese Eigenschaft gibt die URL an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird.|
    |CitationJurisdiction|Zeichenfolge|Diese Eigenschaft gibt die Zuständigkeit oder Behörde an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird, z. B. „U.S Securities and Exchange Commission (SEC)“.|
    |Regulatory|Zeichenfolge|Leer lassen. Diese Eigenschaft wird derzeit nicht verwendet.|
-   |EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Zum Beispiel:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>Mit dem Cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) können Sie die verfügbaren Aufbewahrungsregeln anzeigen. Beachten Sie: Wenn Sie Bezeichnungen aus einer Office 365-Organisation exportieren, können Sie die Werte für die EventType-Eigenschaft von dieser Organisation nicht verwenden, wenn Sie Bezeichnungen in eine andere Office 365-Organisation importieren. Dies liegt daran, dass die EventType-Werte für eine Organisation eindeutig sind. |
+   |EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Zum Beispiel:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>Mit dem Cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) können Sie die verfügbaren Aufbewahrungsregeln anzeigen. Beachten Sie: Wenn Sie Bezeichnungen aus einer Organisation exportieren, können Sie die Werte für die EventType-Eigenschaft von dieser Organisation nicht verwenden, wenn Sie Bezeichnungen in eine andere Organisation importieren. Dies liegt daran, dass die EventType-Werte für eine Organisation eindeutig sind. |
    |||
 
    Nachfolgend finden Sie ein Beispiel für die Vorlage mit den Informationen zu Aufbewahrungsbezeichnungen.

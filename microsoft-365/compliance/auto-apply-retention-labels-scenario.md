@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Office 365-Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von SharePoint Online-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106037"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636393"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Office 365-Aufbewahrungsbezeichnungen verwalten können, und zwar durch automatisches Anwenden von Bezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung. Die Funktion für die automatische Anwendung verwendet die Dokumentklassifizierung mithilfe von SharePoint-Metadaten. Das in diesem Artikel beschriebene Szenario basiert auf produktbezogenen Dokumenten, für andere Szenarios können jedoch dieselben Konzepte verwendet werden. In der Öl- und Gasindustrie können Sie beispielsweise den Lebenszyklus von Dokumenten verwalten, die sich auf physische Vermögenswerte wie Ölplattformen, Bohrlochprotokolle oder Produktionslizenzen beziehen. In der Finanzdienstleistungsbranche können Sie Dokumente verwalten, die sich auf Bankkonten, Hypotheken oder Versicherungsverträge beziehen. Im öffentlichen Sektor können Sie Dokumente zu Baugenehmigungen oder Steuerformularen verwalten.
+In diesem Artikel wird beschrieben, wie Sie den Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von Aufbewahrungsbezeichnungen verwalten können, und zwar durch automatisches Anwenden von Bezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung. Die Funktion für die automatische Anwendung verwendet die Dokumentklassifizierung mithilfe von SharePoint-Metadaten. Das in diesem Artikel beschriebene Szenario basiert auf produktbezogenen Dokumenten, für andere Szenarios können jedoch dieselben Konzepte verwendet werden. In der Öl- und Gasindustrie können Sie beispielsweise den Lebenszyklus von Dokumenten verwalten, die sich auf physische Vermögenswerte wie Ölplattformen, Bohrlochprotokolle oder Produktionslizenzen beziehen. In der Finanzdienstleistungsbranche können Sie Dokumente verwalten, die sich auf Bankkonten, Hypotheken oder Versicherungsverträge beziehen. Im öffentlichen Sektor können Sie Dokumente zu Baugenehmigungen oder Steuerformularen verwalten.
 
 Schauen wir uns das Szenario für diesen Artikel an. Wir werden uns die Informationsarchitektur und die Definition der Aufbewahrungsbezeichnungen ansehen. Anschließend sehen wir uns an, wie Sie Dokumente klassifizieren, indem Sie die Bezeichnungen automatisch anwenden und schließlich die Ereignisse generieren, die den Beginn des Aufbewahrungszeitraums auslösen.
 
 ## <a name="information-architecture"></a>Informationsarchitektur
 
-Das Szenario für diesen Artikel basiert auf einem Produktionsunternehmen, das Office 365 SharePoint Online verwendet, um alle Dokumente zu den von dem Unternehmen entwickelten Produkten zu speichern. Diese Dokumente enthalten Produktspezifikationen, Verträge mit Lieferanten und Benutzerhandbücher. Beim Speichern dieser Dokumente in SharePoint als Teil der Enterprise Content Management-Richtlinien, werden Dokumentmetadaten definiert und zur Klassifizierung verwendet. Jedes Dokument verfügt über die folgenden Metadateneigenschaften:
+Das Szenario für diesen Artikel basiert auf einem Produktionsunternehmen, das SharePoint Online verwendet, um alle Dokumente zu den von dem Unternehmen entwickelten Produkten zu speichern. Diese Dokumente enthalten Produktspezifikationen, Verträge mit Lieferanten und Benutzerhandbücher. Beim Speichern dieser Dokumente in SharePoint als Teil der Enterprise Content Management-Richtlinien, werden Dokumentmetadaten definiert und zur Klassifizierung verwendet. Jedes Dokument verfügt über die folgenden Metadateneigenschaften:
 
 - **Dokumenttyp** (wie Produktspezifikation, Vertrag und Benutzerhandbuch)
 
@@ -146,7 +146,7 @@ Nachdem die Aufbewahrungsbezeichnung erstellt wurde, wird die Aufbewahrungsbezei
 
 Wir werden die Aufbewahrungsbezeichnungen, die wir für dieses Szenario erstellt haben, mithilfe von KQL (Keyword Query Language) [automatisch anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions). KQL ist die Sprache, mit der Suchanfragen erstellt werden. In KQL können Sie mithilfe von Schlüsselwörtern oder verwalteten Eigenschaften suchen. Weitere Informationen zu KQL finden Sie hier <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-Auf hoher Ebene möchten wir Office 365 mitteilen, dass Sie die Aufbewahrungsbezeichnung der **Produktspezifikation** auf alle Dokumente "anwenden möchten, die über den **Status** **Entdültig** und einen **Dokumententypen** **Produktspezifikation** haben. Erinnern Sie sich daran, dass **Status** und **Dokumenttyp** die Sitespalten sind, die Sie zuvor für den Inhaltstyp "Produktdokumentation" im Abschnitt [Informationsarchitektur](#information-architecture) definiert haben. Um dies zu erreichen, müssen wir das Suchschema konfigurieren.
+Auf hoher Ebene möchten wir Microsoft 365 mitteilen, dass Sie die Aufbewahrungsbezeichnung der **Produktspezifikation** auf alle Dokumente anwenden möchten, die über den **Status** **Endgültig** verfügen und den **Dokumententypen** **Produktspezifikation** besitzen. Erinnern Sie sich daran, dass **Status** und **Dokumenttyp** die Sitespalten sind, die Sie zuvor für den Inhaltstyp "Produktdokumentation" im Abschnitt [Informationsarchitektur](#information-architecture) definiert haben. Um dies zu erreichen, müssen wir das Suchschema konfigurieren.
 
 Wenn SharePoint Inhalte indiziert, werden automatisch gecrawlte Eigenschaften für jede Sitespalte generiert. In diesem Szenario interessieren uns die Eigenschaften **Dokumenttyp** und **Status**. Wir benötigen Dokumente in der Bibliothek mit dem richtigen Inhaltstyp und die ausgefüllten Sitespalten, damit bei der Suche die gecrawlten Eigenschaften erstellt werden können.
 
@@ -237,7 +237,7 @@ Nachdem wir überprüft haben, dass die KQL-Abfrage ordnungsgemäß funktioniert
 
 6. Geben Sie einen Namen (z. B. **Bezeichnung „Produktspezifikation“ automatisch anwenden**) und eine optionale Beschreibung für die Bezeichnungsrichtlinie ein, und klicken Sie dann auf **Weiter**. 
 
-7. Wählen Sie auf der Assistenten-Seite **Speicherorte auswählen** die Inhaltsspeicherorte aus, auf die Sie die Richtlinie anwenden möchten. In diesem Szenario wenden wir die Richtlinie nur auf SharePoint-Standorte an, da alle Produktionsdokumente nur in SharePoint-Dokumentbibliotheken gespeichert werden. Klicken Sie daher auf **Mich bestimmte Speicherorte auswählen lassen**, ändern Sie den Status für Exchange-E-Mails, OneDrive-Konten und Office 365-Gruppen, und stellen Sie sicher, dass der Status für SharePoint-Sites aktiviert ist. 
+7. Wählen Sie auf der Assistenten-Seite **Speicherorte auswählen** die Inhaltsspeicherorte aus, auf die Sie die Richtlinie anwenden möchten. In diesem Szenario wenden wir die Richtlinie nur auf SharePoint-Standorte an, da alle Produktionsdokumente nur in SharePoint-Dokumentbibliotheken gespeichert werden. Klicken Sie daher auf **Mich bestimmte Speicherorte auswählen lassen**, ändern Sie den Status für Exchange-E-Mails, OneDrive-Konten und Microsoft 365-Gruppen, und stellen Sie sicher, dass der Status für SharePoint-Sites aktiviert ist. 
 
     ![Auswählen von bestimmten Websites, auf die Bezeichnungen automatisch angewendet werden](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ Nachdem die Aufbewahrungsbeschriftungen erfolgreich automatisch angewendet wurde
 
 Sie können das Ereignis manuell im Security & Compliance Center erstellen (indem Sie zu **Records Managements** > **Events** wechseln), den Ereignistyp auswählen, die richtigen Objekt-IDs festlegen und ein Datum für das Ereignis eingeben. Weitere Informationen finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md).
 
-In diesem Szenario erstellen wir das Ereignis automatisch, indem wir es aus einem externen Produktionssystem generieren. In diesem Fall ist das System, das das Ereignis generiert, eine einfache SharePoint-Liste, die angibt, ob ein Produkt in Produktion ist oder nicht, und ein [Microsoft Flow](https://docs.microsoft.com/flow/getting-started), der der Liste zugeordnet ist und das Ereignis auslöst. In einem realen Szenario kann es sich um ein beliebiges System handeln, das das Ereignis generiert, z. B. ein HR- oder CRM-System. Flow enthält viele einsatzbereite Interaktionen und Bausteine für Office 365-Workloads wie Exchange, SharePoint, Teams und Dynamics 365 sowie Drittanbieter-Apps wie Twitter, Box, Salesforce und Workdays. Dies erleichtert die Integration von Flow in diesen Systemen. Weitere Informationen finden Sie unter [Automatisieren Sie die ereignisgesteuerte Aufbewahrung](automate-event-driven-retention.md).
+In diesem Szenario erstellen wir das Ereignis automatisch, indem wir es aus einem externen Produktionssystem generieren. In diesem Fall ist das System, das das Ereignis generiert, eine einfache SharePoint-Liste, die angibt, ob ein Produkt in Produktion ist oder nicht, und ein [Microsoft Flow](https://docs.microsoft.com/flow/getting-started), der der Liste zugeordnet ist und das Ereignis auslöst. In einem realen Szenario kann es sich um ein beliebiges System handeln, das das Ereignis generiert, z. B. ein HR- oder CRM-System. Flow enthält viele einsatzbereite Interaktionen und Bausteine für Microsoft 365-Workloads wie Exchange, SharePoint, Teams und Dynamics 365 sowie Drittanbieter-Apps wie Twitter, Box, Salesforce und Workdays. Dies erleichtert die Integration von Flow in diesen Systemen. Weitere Informationen finden Sie unter [Automatisieren Sie die ereignisgesteuerte Aufbewahrung](automate-event-driven-retention.md).
 
 Der folgende Screenshot zeigt die SharePoint-Liste, die zum Auslösen des Ereignisses verwendet wird: 
 

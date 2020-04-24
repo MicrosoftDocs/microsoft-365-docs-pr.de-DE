@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Suchen und Finden personenbezogener Daten in Office 365.
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638129"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -33,7 +33,7 @@ Artikel 4: Definitionen
 
 > Als „personenbezogene Daten“ gelten alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
 
-In diesem Artikel wird veranschaulicht, wie in SharePoint Online und OneDrive for Business (was die Websites für alle Office 365-Gruppen und Microsoft Teams umfasst) gespeicherte personenbezogene Daten zu finden sind.
+In diesem Artikel wird veranschaulicht, wie in SharePoint Online und OneDrive for Business (was die Websites für alle Microsoft 365-Gruppen und Microsoft Teams umfasst) gespeicherte personenbezogene Daten zu finden sind.
 
 Das Suchen nach personenbezogenen Daten, das der DSGVO unterliegt, stützt sich auf die Verwendung von vertraulichen Informationstypen in Office 365. Sie legen fest, wie bestimmte Informationstypen (z. B. Krankenversicherungsnummern und Kreditkartennummern) von einem automatisierten Prozess erkannt werden. Sie können die Richtlinien zur Verhinderung von Datenverlust einsetzen, um personenbezogene Daten während der Übertragung zu finden. Sie können die vertraulichen Informationstypen, die Sie für GDPR zusammenstellen, verwenden, um personenbezogene Informationen zu finden und zu schützen, während sie per E-Mail versendet werden. Siehe auch [Verwalten von Anträgen betroffener Personen nach der DSGVO mit dem Anfragetool für Anträge betroffener Personen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
@@ -97,13 +97,13 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <tbody>
 <tr class="odd"><td align="left"><p>Wechseln zur Inhaltssuche im Security & Compliance Center</p></td>
 <td align="left"><p>Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** &gt; **Inhaltssuche**.</p>
-<p>Siehe <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center</a>.</p></td>
+<p>Siehe <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ausführen einer Inhaltssuche im Security &amp; Compliance Center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Erstellen eines neuen Suchelements für jeden Typ vertraulicher Informationen</p></td>
 <td align="left"><p>Verwenden Sie die folgende Syntax:</p>
 <blockquote>
-<p>SensitiveType:"&lt;Typ&gt;"</p>
+<p>SensitiveType: "&lt;Typ&gt;"</p>
 </blockquote>
 <p>Beispiel:</p>
 <blockquote>
@@ -117,7 +117,7 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <td align="left"><p>Suchen Sie nach dieser Art von Problemen, um zu ermitteln, ob die Abfragegenauigkeit eingehalten wird:</p>
 <p><li>Viele falsch positive Ergebnisse</li></p>
 <p><li>Fehlende bekannte Instanzen von Daten</li></p>
-<p>Siehe <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center</a>.</p>
+<p>Siehe <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportieren der Inhaltssuchergebnisse aus dem Security &amp; Compliance Center</a>.</p>
 <p>Hinweis: Wenn Sie Mozilla Firefox oder Chrome verwenden, müssen Sie möglicherweise zuerst Berichte mithilfe von Internet Explorer oder Edge herunterladen, um das erforderliche Add-In installieren zu können.</p></td>
 </tr>
 </tbody>
@@ -165,11 +165,11 @@ Beginnen Sie mit diesen Typen vertraulicher Informationen. In Kürze werden zahl
 >
 > IP-Adresse
 >
-> Irische Sozialversicherungsnummer (PPS, Personal Public Service)
+> Irische PPS-Nummer (Personal Public Service)
 >
 > Italienische Führerscheinnummer
 >
-> Niederländische persönliche Identifikationsnummer (BSN, Citizen Service Number)
+> Nummer des niederländischen Citizen's Service (BSN)
 >
 > Norwegische ID-Nummer
 >
@@ -187,9 +187,9 @@ Beginnen Sie mit diesen Typen vertraulicher Informationen. In Kürze werden zahl
 >
 > Schwedische Reisepassnummer
 >
-> UK-Führerscheinnummer
+> Vereinigtes Königreich – Führerscheinnummer
 >
-> Wählerverzeichnisnummer aus dem Vereinigten Königreich
+> Vereinigtes Königreich – Wählerverzeichnisnummer
 >
 > UK-Gesundheitsdienstnummer
 >

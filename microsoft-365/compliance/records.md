@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153833"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632114"
 ---
 # <a name="overview-of-records"></a>Übersicht über die Datensätze
 
@@ -108,6 +108,9 @@ Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrung
 
 ![Datensatzstatus-Eigenschaft in einem Dokument, das als Datensatz gekennzeichnet ist](../media/recordversioning8.png)
 
+> [!NOTE]
+> Für die Datensatzversionsverwaltung ist eine Office 365 Enterprise E5-Lizenz für jeden Benutzer erforderlich, der die Berechtigung zum Bearbeiten von Inhalten hat, die in einer SharePoint-Website oder in einem OneDrive-Konto als Datensatz gekennzeichnet wurden. Benutzer, die schreibgeschützten Zugriff haben, benötigen diese Lizenz nicht.
+
 ### <a name="locking-and-unlocking-a-record"></a>Sperren und Entsperren eines Datensatzes
 
 Nachdem einem Dokument eine Datensatzbezeichnung zugeordnet wurde, kann jeder Benutzer in der Berechtigung "Mitwirken" oder einer engeren Berechtigungsstufe einen Datensatz entsperren oder einen entsperrten Datensatz sperren.
@@ -153,7 +156,7 @@ Das permanente Dokumentarchiv ist nur für Websitesammlungsadministratoren sicht
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung
 
-Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Office 365-Überwachungsprotokoll protokolliert. Sie können nach den spezifischen Aktivitäten **Datensatzstatus auf „gesperrt“ geändert** und **Datensatzstatus auf „entsperrt“ geändert** suchen, die sich im Abschnitt **Datei- und Seitenaktivitäten** auf der Dropdownliste **Aktivitäten** auf der Seite **Überprüfungsprotokoll durchsuchen** im Security & Compliance Center befinden.
+Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Überwachungsprotokoll protokolliert. Sie können nach den spezifischen Aktivitäten **Datensatzstatus auf „gesperrt“ geändert** und **Datensatzstatus auf „entsperrt“ geändert** suchen, die sich im Abschnitt **Datei- und Seitenaktivitäten** auf der Dropdownliste **Aktivitäten** auf der Seite **Überprüfungsprotokoll durchsuchen** im Security & Compliance Center befinden.
 <br/><br/>
 
 ![Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung](../media/recordversioning13.png)

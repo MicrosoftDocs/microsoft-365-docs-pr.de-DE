@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634543"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632280"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -65,7 +65,7 @@ Informationen zu Überwachungsdatensätzen für MailItemsAccessed-Aktivitäten f
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Suchen nach MailItemsAccessed-Überwachungsdatensätzen
 
-Um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen, können Sie im Office 365 Security & Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Exchange-Postfachaktivitäten** nach der Aktivität **MailItemsAccessed** (Postfachelemente, auf die Zugegriffen wurde) suchen.
+Um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen, können Sie im Security & Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Exchange-Postfachaktivitäten** nach der Aktivität **MailItemsAccessed** (Postfachelemente, auf die zugegriffen wurde) suchen.
 
 ![Suchen nach MailItemsAccessed-Aktionen im Überwachungsprotokoll-Suchtool](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz 
 
 **Wo kann ich auf die erweiterte Überwachung zugreifen?**
 
-Nach der Einführung der erweiterten Überwachung für Ihre Organisation können Sie Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen und mithilfe des Überwachungsprotokoll-Suchtools im [Office 365 Security & Compliance Center](https://protection.office.com) nach MailItemsAccessed-Überwachungsdatensätzen suchen. Wir arbeiten daran, die erweiterte Überwachung in den kommenden Wochen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) bereitzustellen.
+Nach der Einführung der erweiterten Überwachung für Ihre Organisation können Sie Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen und mithilfe des Überwachungsprotokoll-Suchtools im [Security & Compliance Center](https://protection.office.com) nach MailItemsAccessed-Überwachungsdatensätzen suchen. Wir arbeiten daran, die erweiterte Überwachung in den kommenden Wochen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) bereitzustellen.
 
 **Benötigt jeder Benutzer eine E5-Lizenz, um von der erweiterten Überwachung profitieren zu können?**
 

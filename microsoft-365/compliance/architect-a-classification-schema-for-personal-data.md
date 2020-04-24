@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Ermitteln Sie, ob Ihre Organisation als Teil des DSGVO-Plans Bezeichnungen implementiert.
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596042"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637135"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 
@@ -32,11 +32,11 @@ Hinweis: Die Definition eines Klassifikationsschemas für eine Organisation und 
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Entscheiden, ob Bezeichnungen neben vertraulichen Informationstypen verwendet werden sollen
 
-Sie können einen der beiden Ansätze für die Klassifikation personenbezogener Informationen in Office 365 verwenden. Jeder Ansatz kann für Schutz für die DSGVO verwendet werden. Wenn Sie nur vertrauliche Informationstypen für die Klassifikation verwenden möchten, können Sie den Rest dieses Themas überspringen.
+Sie können einen der beiden Ansätze für die Klassifikation personenbezogener Informationen in Microsoft 365 verwenden. Jeder Ansatz kann für Schutz für die DSGVO verwendet werden. Wenn Sie nur vertrauliche Informationstypen für die Klassifikation verwenden möchten, können Sie den Rest dieses Themas überspringen.
 
 Wählen Sie eine der folgenden Optionen.
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Option 1: Ausschließliches Verwenden vertraulicher Informationstypen in Office 365
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>Option 1: Ausschließliches Verwenden vertraulicher Informationstypen in Microsoft 365
 
 - Vertrauliche Informationstypen sind gut zum Identifizieren und Schutz personenbezogener Daten geeignet, die der DSGVO und anderen Vorschriften unterliegen.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790632"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799978"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -263,7 +263,6 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     - Empfänger lautet
     - Dateierweiterung der Anlage lautet
     - Anlage ist passwortgeschützt
-    - Dokumenteigenschaft lautet
     - Der Inhalt einer E-Mail-Anlage konnte nicht vollständig gescannt werden
     - Der Inhalt einer E-Mail-Anlage wurde nicht vollständig gescannt
 
@@ -277,17 +276,23 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 
 11. Für die Seite **Wählen Sie eine Bezeichnung zum automatischen Bezeichnen aus**: Wählen Sie **+ Wählen Sie eine Bezeichnung aus**, eine Bezeichnung aus dem Bereich **Wählen Sie ein Vertraulichkeitsbezeichnung** und dann **Weiter** aus.
 
-12. Wählen Sie für die Seite **Wählen Sie einen Modus für die Richtlinie aus** **Probieren Sie ihn aus** aus, wenn Sie die Richtlinie für die automatische Bezeichnung jetzt im Simulationsmodus ausführen möchten. Andernfalls wählen Sie **Deaktiviert lassen** aus. Wählen Sie **Weiter** aus. 
+12. Für die Seite: **Entscheiden, ob Sie die Richtliniensimulation jetzt oder später ausführen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus. 
 
 13. Auf der Seite **Zusammenfassung**: Überprüfen Sie die Konfiguration der Richtlinie für die automatische Bezeichnung, nehmen Sie die erforderlichen Änderungen vor, und schließen Sie den Assistenten ab.
     
     Im Gegensatz zur automatischen Bezeichnung für Office-Anwendungen gibt es keine separate Veröffentlichungsoption. Wie bei Veröffentlichungsbezeichnungen sollten Sie jedoch bis zu 24 Stunden Zeit einräumen, damit sich die Richtlinie für die automatische Bezeichnung in Ihrer gesamten Organisation replizieren kann.
 
-Auf der Seite **Informationsschutz** der Registerkarte **Automatische Bezeichnung (Vorschau)** wird die Richtlinie zur automatischen Bezeichnung im Abschnitt **Test** angezeigt. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. "wird noch getestet" oder "Test abgeschlossen"). Wählen Sie die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
+Auf der Seite **Informationsschutz** wird auf der Registerkarte **Automatisches Bezeichnen (Vorschau)** für die Richtlinie zum automatischen Bezeichnen **Simulation** oder **Aus** angezeigt, je nachdem, ob Sie ausgewählt haben, dass die Richtlinie im Simulationsmodus ausgeführt wird oder nicht. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. **Richtliniensimulation wird noch ausgeführt**). Wählen Sie für Richtlinien im Simulationsmodus die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
 
-Sie können Ihre Richtlinie direkt über diese Benutzeroberfläche ändern, indem Sie oben auf der Seite die Option **Bearbeiten** auswählen.
+Sie können Ihre Richtlinie direkt über diese Oberfläche ändern:
 
-Wenn Sie die Richtlinie ohne Simulation ausführen möchten, wählen Sie die Option **Aktivieren** aus.
+- Wählen Sie für eine Richtlinie im Abschnitt **Aus** die Schaltfläche **Bearbeiten** aus.
+
+- Wählen Sie für eine Richtlinie im Abschnitt **Simulation** auf einer der beiden Registerkarten die Schaltfläche **Bearbeiten** oben auf der Seite aus:
+    
+    ![Option "Richtlinie für die automatische Bezeichnung"](../media/auto-labeling-edit.png)
+    
+    Wenn Sie die Richtlinie ohne Simulation ausführen möchten, wählen Sie die Option **Richtlinie aktivieren** aus.
 
 Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch anzeigen, indem Sie [Inhalts-Explorer](data-classification-content-explorer.md) verwenden, wenn Sie über die entsprechenden [Berechtigungen](data-classification-content-explorer.md#permissions) verfügen:
 - In der **Inhalts-Explorer-Listenanzeige** können Sie die Bezeichnung einer Datei anzeigen, aber nicht den Inhalt der Datei.

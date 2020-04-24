@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 39e83c74d2df8d0efe12225600813ef8007833e2
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: ea9b8d119f431079ff0558eddfae3caf0ec0fffb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528348"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635955"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Alle Microsoft Information Protection-Lösungen (gelegentlich als MIP abgekürzt) werden mithilfe von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) implementiert. Um diese Bezeichnungen zu erstellen und zu veröffentlichen, navigieren Sie zu Ihrem Admin Center für Bezeichnungen, z. B. zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Sie können auch das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center verwenden.
+Alle Microsoft Information Protection-Lösungen (gelegentlich als MIP abgekürzt) werden mithilfe von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) implementiert. Um diese Bezeichnungen zu erstellen und zu veröffentlichen, navigieren Sie zu Ihrem Admin Center für Bezeichnungen, z. B. zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Sie können auch das Microsoft 365 Security Center oder das Security & Compliance Center verwenden.
 
 Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die Sie für Apps und andere Dienste zur Verfügung stellen möchten, zum Beispiel die Bezeichnungen, die Benutzer in Office-Apps sehen und anwenden sollen. 
 
@@ -50,7 +50,7 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
     - Microsoft 365 Security Center: 
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
     
-    - Office 365 Security & Compliance Center:
+    - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie auf der Registerkarte **Bezeichnungen** die Option **+ Bezeichnung erstellen**, um den Assistenten **Neue Vertraulichkeitsbezeichnung** zu starten.
@@ -73,9 +73,9 @@ Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in A
 > [!IMPORTANT]
 > Wählen Sie auf dieser Registerkarte **Bezeichnungen** nicht die Registerkarte ** Bezeichnungen veröffentlichen** (oder die Schaltfläche **Bezeichnungen veröffentlichen**, wenn Sie eine Bezeichnung bearbeiten) aus, es sei denn, Sie müssen eine neue Bezeichnungsrichtlinie erstellen. Sie benötigen mehrere Bezeichnungsrichtlinien nur dann, wenn Benutzer unterschiedliche Bezeichnungen oder unterschiedliche Richtlinieneinstellungen benötigen. Bemühen Sie sich um möglichst wenige Bezeichnungsrichtlinien – es ist nicht ungewöhnlich, nur eine einzige Bezeichnungsrichtlinie für die Organisation zu haben.
 
-### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Office 365 Security & Compliance Center PowerShell
+### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
 Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und QuickInfo in der jeweiligen lokalen Sprache sehen. Eine Beispielkonfiguration finden Sie im folgenden Abschnitt. 
 
@@ -89,7 +89,7 @@ Als Ergebnis dieser Konfiguration sehen Benutzer, die Office-Apps mit einer dies
 
 Für die zu unterstützenden Sprachen verwenden Sie die Office [Sprachen-IDs](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (auch als Sprach-Tags bezeichnet), und geben Sie Ihre eigene Übersetzung für den Bezeichnungsnamen und die QuickInfo an.
 
-Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 
 ```powershell
@@ -123,7 +123,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
     - Microsoft 365 Security Center: 
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
     
-    - Office 365 Security & Compliance Center:
+    - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** aus.
@@ -150,9 +150,9 @@ Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und 
 
 Normalerweise werden die Bezeichnungen innerhalb weniger Stunden in den entsprechenden Office-Apps angezeigt. Es kann jedoch bis zu 24 Stunden dauern, bis Ihre Bezeichnungsrichtlinien und daran vorgenommene Änderungen für alle Benutzer und Dienste repliziert wurden.
 
-### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Office 365 Security & Compliance Center PowerShell
+### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
 Mit diesem Cmdlet können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) für den Azure Information Protection-Client für einheitliche Bezeichnungen festlegen. Diese erweiterten Einstellungen umfassen das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 

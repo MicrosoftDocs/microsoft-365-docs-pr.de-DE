@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: d19e18fa2c701996306f5b2e567ea01708d96144
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 25fbabd4c7524702a985616797b31730b14a2d8f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091318"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636373"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -85,9 +85,9 @@ Zurzeit gibt es keine Bestätigung, dass die Aufbewahrungsrichtlinie erfolgreich
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
 
-Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Office 365 Security & Compliance Center PowerShell erstellt werden. 
+Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Security & Compliance Center PowerShell erstellt werden. 
 
-1. [Stellen Sie eine Verbindung mit Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Führen Sie zum Erstellen einer neuen Aufbewahrungsrichtlinie den folgenden Befehl aus: 
 

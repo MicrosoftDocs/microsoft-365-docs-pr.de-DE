@@ -1,5 +1,5 @@
 ---
-title: Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
+title: Anwenden von Bezeichnungen auf personenbezogene Daten
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079797"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636283"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
+# <a name="apply-labels-to-personal-data"></a>Anwenden von Bezeichnungen auf personenbezogene Daten
 
  Verwenden Sie dieses Thema, wenn Sie im Rahmen Ihres DSGVO-Schutzplans Klassifizierungsbezeichnungen verwenden. 
 
-Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Office 365 verwenden, empfiehlt Microsoft, mit [Aufbewahrungsbezeichnungen](labels.md) zu beginnen. Mit Aufbewahrungsbezeichnungen können Sie Folgendes tun:
+Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Microsoft 365 verwenden, empfiehlt Microsoft, mit [Aufbewahrungsbezeichnungen](labels.md) zu beginnen. Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
 - Verwenden Sie die Erweiterte Datenkontrolle, um Bezeichnungen automatisch auf vertrauliche Informationstypen oder andere Kriterien anzuwenden.
 - Verwenden Sie Aufbewahrungsbezeichnungen mit der Verhinderung von Datenverlust, um einen Schutz anzuwenden. 
 - Verwenden Sie Bezeichnungen mit eDiscovery und der Inhaltssuche. 
 
-Cloud App Security unterstützt derzeit keine Aufbewahrungsbezeichnungen, aber Sie können Office 365-Typen für vertrauliche Informationen mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
+Cloud App Security unterstützt derzeit keine Aufbewahrungsbezeichnungen, aber Sie können Microsoft 365-Typen für vertrauliche Informationen mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
 
-[Vertraulichkeitsbezeichnungen](sensitivity-labels.md) werden derzeit empfohlen, um Bezeichnungen auf lokale Dateien und Dateien in anderen Cloud-Diensten und bei anderen Anbietern anzuwenden. Sie werden ebenfalls empfohlen für Dateien in Office 365, die für den Datenschutz eine Azure Informationen Protection-Verschlüsselung benötigen, wie z. B. Dateien mit Betriebsgeheimnissen.
+[Vertraulichkeitsbezeichnungen](sensitivity-labels.md) werden derzeit empfohlen, um Bezeichnungen auf lokale Dateien und Dateien in anderen Cloud-Diensten und bei anderen Anbietern anzuwenden. Sie werden ebenfalls empfohlen für Dateien in Microsoft 365, die für den Datenschutz eine Azure Informationen Protection-Verschlüsselung benötigen, wie z. B. Dateien mit Betriebsgeheimnissen.
 
-Zu diesem Zeitpunkt wird die Verwendung der Azure Information Protection-Verschlüsselung nicht für Dateien in Office 365 empfohlen, die der DSGVO unterliegen. Office 365-Dienste können derzeit keine AIP-verschlüsselten Dateien lesen. Aus diesem Grund findet der Dienst keine vertraulichen Daten in diesen Dateien.
+Zu diesem Zeitpunkt wird die Verwendung der Azure Information Protection-Verschlüsselung nicht für Dateien in Microsoft 365 empfohlen, die der DSGVO unterliegen. Microsoft 365-Dienste können derzeit keine AIP-verschlüsselten Dateien lesen. Aus diesem Grund findet der Dienst keine vertraulichen Daten in diesen Dateien.
 
-Aufbewahrungsbezeichnungen können in Exchange Online auf E-Mail-Nachrichten angewendet werden, und diese Bezeichnungen verwenden den Schutz vor Datenverlust von Office 365. 
+Aufbewahrungsbezeichnungen können in Exchange Online auf E-Mail-Nachrichten angewendet werden, und diese Bezeichnungen verwenden den Schutz vor Datenverlust von Microsoft 365. 
 
-![Bezeichnungen in Office 365 und Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Bezeichnungen in Microsoft 365 und Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
-In der Darstellung sehen Sie Folgendes:
+In der Abbildung sehen Sie Folgendes:
 
 -   Verwenden von Aufbewahrungsbezeichnungen für personenbezogene Daten und streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen in SharePoint Online und OneDrive for Business.
--   Sie können Office 365-Typen für vertrauliche Informationen in Office 365 und mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
+-   Sie können Microsoft 365-Typen für vertrauliche Informationen in Microsoft 365 und mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
 -   Verwenden von Vertraulichkeitsbezeichnungen für streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen, Exchange Online-E-Mails, Dateien in anderen SaaS-Diensten, Dateien in lokalen Rechenzentren und Dateien in anderen Cloudanbietern.
 
 
@@ -80,7 +80,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 <p>... auf Dokumente mit dieser Bezeichnung...</p>
 <p>Kundendaten</p></td>
 <td align="left"><p>Warnung, wenn Dateien mit diesen Attributen...</p>
-<p>Wählen Sie ein oder mehrere Attribute aus: vordefiniertes PII-Attribut, Office 365-Typ für vertrauliche Informationen, Vertraulichkeitsbezeichnung (AIP), benutzerdefinierter Ausdruck</p>
+<p>Wählen Sie ein oder mehrere Attribute aus: vordefiniertes PII-Attribut, Microsoft 365-Typ für vertrauliche Informationen, Vertraulichkeitsbezeichnung (AIP), benutzerdefinierter Ausdruck</p>
 <p>. . . in einer beliebigen genehmigten SaaS-App außerhalb der Organisation freigegeben werden</p><p>Hinweis: Aufbewahrungsbezeichnungen werden derzeit in Cloud App Security nicht unterstützt.</td>
 </tr>
 <tr class="even">
