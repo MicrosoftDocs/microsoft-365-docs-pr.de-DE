@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637104"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804757"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -120,9 +120,7 @@ Wenn Sie eine bestimmte Verbesserungsmaßnahme auswählen, wird ein Fly-out ange
 
 3. Wählen Sie **Ignorieren** aus, weil Sie sich entschieden haben, das Risiko zu übernehmen und die Verbesserungsmaßnahme nicht auszuführen. Wenn Sie eine Verbesserungsmaßnahme ignorieren, wird die Gesamtanzahl der Punkte, die Sie erzielen können, reduziert. Sie können diese Aktion jederzeit im Verlauf anzeigen oder rückgängig machen.
 
-4. Wählen Sie **Überprüfen** aus, weil die Verbesserungsmaßnahme es erforderlich macht, einen Bereich Ihrer Umgebung regelmäßig zu überprüfen, um Punkte zu bekommen und zu behalten. Beispielsweise sollten Weiterleitungsregeln für Postfächer wöchentlich überprüft werden, um sicherzustellen, dass die Daten aus Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, aber eine Aktion muss ausgeführt werden. Wenn Sie die Regeln regelmäßig überprüfen, erhalten Sie die Punkte. Wenn nicht, verschlechtert sich die Bewertung.
-
-![Beispiel für Verbesserungsmaßnahmen Secure Score](../../media/secure-score/secure-score1x450.png) ![Beispiel für Verbesserungsmaßnahmen Secure Score – Überprüfung](../../media/secure-score/secure-score2x450.png)
+![Beispiel für Verbesserungsmaßnahmen Secure Score](../../media/secure-score/secure-score1x450.png)
 
 *Abbildungen 2 & 3: Verbesserungsmaßnahmen Fly-outs*
 
@@ -137,6 +135,15 @@ Die Microsoft-Sicherheitsbewertung ist eine numerische Zusammenfassung Ihres Sic
 ## <a name="whats-new"></a>Was sind die Neuerungen?
 
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>21. April 2020
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Verbesserungsmaßnahmen, die die Erwartungen an zuverlässige Messungen nicht erfüllen oder keine nützlichen Darstellung des Sicherheitsstatus bieten, wurden entfernt.
+
+Um sicherzustellen, dass Microsoft-Sicherheitsbewertung aussagekräftig ist und jede Verbesserungsmaßnahme messbar und zuverlässig ist, entfernen wir die folgenden Verbesserungsmaßnahmen.
+
+- IRM-Schutz auf Dokumente anwenden
+- Richtlinien zur Verhinderung von Datenverlust anwenden
 
 ### <a name="january---march-2020"></a>Januar-März 2020
 

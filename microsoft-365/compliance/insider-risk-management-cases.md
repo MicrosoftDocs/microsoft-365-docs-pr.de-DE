@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179176"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804837"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
@@ -103,7 +103,7 @@ Die Registerkarte **Benutzeraktivität** ist eines der leistungsstärksten Tools
 
 ### <a name="content-explorer"></a>Inhalts-Explorer
 
-Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler Kopien aller einzelnen Dateien und e-Mail-Nachrichten überprüfen, die mit Risikowarnungen verbunden sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Mitarbeiter Hunderte von Dateien aus SharePoint Online auf ein USB-Gerät herunterlädt und die Aktivität eine Richtlinien Warnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und in den Fall Insider Risk Management aus kopiert. ursprüngliche Speicherquellen.
+Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler Kopien aller einzelnen Dateien und e-Mail-Nachrichten überprüfen, die mit Risikowarnungen verbunden sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Mitarbeiter Hunderte von Dateien aus SharePoint Online auf ein USB-Gerät herunterlädt und die Aktivität eine Richtlinien Warnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus den ursprünglichen Speicherquellen in den Fall Insider Risk Management kopiert.
 
 Der Inhalts-Explorer ist ein leistungsfähiges Tool mit einfachen und erweiterten Such-und Filterfunktionen. Weitere Informationen zur Verwendung des Inhalts-Explorers finden Sie unter [Insider Risk Management Content Explorer](insider-risk-management-content-explorer.md).
 
@@ -163,7 +163,7 @@ So senden Sie eine Benachrichtigung an den einem Fall zugewiesenen Mitarbeiter:
 
 ### <a name="escalate-for-investigation"></a>Eskalieren zur Untersuchung
 
-Eskalieren Sie den Fall für die Untersuchung von Mitarbeitern in Situationen, in denen zusätzliche rechtliche Überprüfungen für die Risiko Aktivität des Mitarbeiters erforderlich sind. Durch diese Eskalation wird ein neuer erweiterter eDiscovery-Fall in Ihrer Microsoft 365-Organisation geöffnet. Advanced eDiscovery bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe rechtliche Untersuchungen in Ihrer Organisation reagieren. Außerdem kann Ihr juristisches Team den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren. Das Zuweisen eines Bearbeiters als depotverwalter in einem erweiterten eDiscovery-Fall, der aus einem Insider Risikomanagement-Fall erstellt wurde, hilft Ihrem juristischen Team, geeignete Maßnahmen zu ergreifen und die Aufbewahrung von Inhalten zu verwalten. Weitere Informationen zu erweiterten eDiscovery-Fällen finden Sie unter [Overview of Advanced eDsicovery in Microsoft 365](overview-ediscovery-20.md).
+Eskalieren Sie den Fall für die Untersuchung von Mitarbeitern in Situationen, in denen zusätzliche rechtliche Überprüfungen für die Risiko Aktivität des Mitarbeiters erforderlich sind. Durch diese Eskalation wird ein neuer erweiterter eDiscovery-Fall in Ihrer Microsoft 365-Organisation geöffnet. Advanced eDiscovery bietet einen End-to-End-Workflow zum aufbewahren, sammeln, überprüfen, analysieren und Exportieren von Inhalten, die auf interne und externe rechtliche Untersuchungen in Ihrer Organisation reagieren. Außerdem kann Ihr juristisches Team den gesamten Workflow für rechtliche Aufbewahrungs Benachrichtigungen verwalten, um mit in einem Fall beteiligten Verwaltern zu kommunizieren. Das Zuweisen eines Bearbeiters als depotverwalter in einem erweiterten eDiscovery-Fall, der aus einem Insider Risikomanagement-Fall erstellt wurde, hilft Ihrem juristischen Team, geeignete Maßnahmen zu ergreifen und die Aufbewahrung von Inhalten zu verwalten. Weitere Informationen zu erweiterten eDiscovery-Fällen finden Sie unter [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 So eskalieren Sie einen Fall an eine Untersuchung durch Mitarbeiter:
 

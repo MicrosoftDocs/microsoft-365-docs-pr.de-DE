@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen.
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630797"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808844"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -45,7 +45,7 @@ Für Kunden, die unsere Unternehmenspläne verwenden, empfiehlt Microsoft, die i
 |8       |  [Registrieren von PCs für die Geräteverwaltung und erfordern von kompatiblen PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimieren Ihres Netzwerks für Cloud-Konnektivität](#9-optimize-your-network-for-cloud-connectivity)  |  ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10     | [Schulen von Benutzern](#10-train-users) |    ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11 |[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Überwachen auf Bedrohungen und ergreifen von Aktionen](#12-monitor-for-threats-and-take-action) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -191,7 +191,7 @@ Aktuelle Blog Artikel zu diesem Thema:
 
 ## <a name="10-train-users"></a>10: Schulen von Benutzern
 
-Wenn Benutzer in Ihrer Organisation nicht über die Funktionen zum Schutz vor Bedrohungen informiert sind, können Sie durch Schutzfeatures frustriert werden, die als verlangsamen oder verhindern, dass Sie Ihre Arbeit erledigen. Wenn Sie darüber hinaus wissen, was im Hinblick auf verdächtige e-Mail-Nachrichten oder URLs zu beachten ist, werden Sie fragwürdige Artefakte weit seltener öffnen. Schulung Benutzer können Ihre Benutzer und Sicherheits Betriebsteams viel Zeit und Frustration speichern.
+Schulung Benutzer können Ihre Benutzer und Sicherheits Betriebsteams viel Zeit und Frustration speichern. Versierte Benutzer sind weniger wahrscheinlich, Anlagen zu öffnen oder auf Links in fragwürdigen e-Mail-Nachrichten klicken, und Sie sind eher zu verdächtigen Websites zu vermeiden. 
 
 Das Harvard Kennedy School [Cyber Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) bietet eine hervorragende Anleitung zum Einrichten einer starken Kultur des Sicherheitsbewusstseins in Ihrer Organisation, einschließlich der Schulung von Benutzern zur Identifizierung von Phishing-Angriffen. 
 

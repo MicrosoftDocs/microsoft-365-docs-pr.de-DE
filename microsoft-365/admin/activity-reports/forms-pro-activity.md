@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: Erfahren Sie, wie Sie einen Microsoft Forms pro-Aktivitätsbericht mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781618"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804819"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte in der Admin Center-Formular Aktivität
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Microsoft 365-Berichte im Admin Center-Formulare pro-Aktivität
 
 Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an.
   

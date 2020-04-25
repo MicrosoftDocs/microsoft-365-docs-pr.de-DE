@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen auf dasselbe Postfach zugreifen müssen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629107"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808742"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
 Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support, den Empfangstresen oder andere Funktionen, die von mehreren Personen geteilt werden.
 
-Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe-und Support Postfächer, da Benutzer e-Mails von "Contoso-Support" oder "Erstellen einer Rezeption" senden können.
+Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
 
-Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), sollten Sie sich mit einigen Dingen vertraut machen.
+Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), sollten Sie folgende Punkte kennen:
 
 - **Lizenzen:** Ihr freigegebenes Postfach kann bis zu 50 GB Daten speichern, ohne dass Sie ihm eine Lizenz zuweisen. Anschließend müssen Sie dem Postfach eine Lizenz zuweisen, um mehr Daten speichern zu können. Weitere Informationen zur Lizenzierung freigegebener Postfächer finden Sie unter [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). Wenn ein freigegebenes Postfach die Speichergrenze erreicht, können Sie E-Mails noch eine Zeitlang empfangen, aber keine neuen E-Mails mehr senden. Danach wird auch der Empfang von E-Mails beendet. Absender für das Postfach erhalten einen Unzustellbarkeitsbericht.
 
@@ -55,7 +55,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), so
 
 - **Zu viele Benutzer:** Wenn zu viele designierte Benutzer gleichzeitig auf ein freigegebenes Postfach zugreifen, kann es vorkommen, dass eine Verbindung mit diesem Postfach nicht hergestellt wird. In diesem Fall können Sie die Anzahl der Benutzer verringern oder eine andere Arbeitsauslastung wie eine Microsoft 365-Gruppe oder einen öffentlichen Ordner verwenden.
 
-- **Löschen von Nachrichten:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit besteht darin, eine Microsoft 365-Gruppe anstelle eines freigegebenen Postfachs zu erstellen. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Informationen finden Sie unter [Compare Groups](../create-groups/compare-groups.md). Weitere Informationen zu Gruppen finden Sie unter Weitere Informationen [zu Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Löschen von Nachrichten:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit besteht darin, eine Microsoft 365-Gruppe anstelle eines freigegebenen Postfachs zu erstellen. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Informationen finden Sie unter [Compare Groups](../create-groups/compare-groups.md). Weitere Informationen zu Gruppen finden Sie unter Weitere Informationen [zu Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627522"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805174"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -36,10 +36,59 @@ Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.m
 > **"Classic" Admin Center Ruhestand ab März**<br><br>
 Wenn Sie sich bei admin.Microsoft.com anmelden, wechseln Sie jetzt jedes Mal zum neuen Admin Center. Im März wird mit dem Deaktivieren der Möglichkeit begonnen, wieder zum klassischen Admin Center zurückzukehren. Für den Moment können Sie immer noch zurückwechseln, aber da das neue Admin Center zu Parität kommt (und es überschreitet), werden wir den Switch für alle Organisationen deaktivieren. <br><br> *Letzte Aktualisierung: 2. März 2020*
 
-Wenn Sie an Neuigkeiten in anderen Verwaltungszentren interessiert sind:
+Wenn Sie an Neuigkeiten in anderen Microsoft-Cloud-Diensten interessiert sind:
 
+- [Neuerungen in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Neuerungen in Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>März 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Featured Feedback Fix: verbessern der Zuverlässigkeit von "Benutzer hinzufügen" für die Lizenzierung
+
+Wir haben viel Feedback von Administratoren erhalten, wie schwer es ist, beim Hinzufügen von Benutzern Lizenzen zuzuweisen. Wir haben das erste Update für diesen Fix durchgeführt, und wir haben zu einem zuverlässigeren Behind-the-Scenes-Dienst migriert, um diese Anforderungen zu verarbeiten. Wenn etwas schief geht, erhalten Sie nun eine Fehlermeldung, mit der Sie es erneut versuchen können.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Benutzer Bestätigungsseite mit dem Fehler hinzufügen.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams-Startseite-Karte
+
+Mit dem Uptick in Teams-Nutzung erhalten einige Organisationen eine angeheftete dashboardkarte, die das Umwandeln von Teams auf mehr auffindbar macht. Die Karte enthält auch Links zu Schulungen und Dokumenten, die ihren org-Übergang zu Remote-Arbeit erleichtern. Wechseln Sie einfach zur **Start** Seite, um die neue Karte anzuzeigen.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams-Startseite-Karte":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassen des SharePoint Mobile App Designs in Ihrer Organisation
+
+Mit dem Microsoft 365 Admin Center können Sie nun das Design Ihrer Organisation in SharePoint Mobile App für IOS und SharePoint Mobile App für Android anpassen. Dieses Feature bietet bequem eine Mobile Intranet-APP, die mit Ihrem SharePoint Online für Mitarbeiter unterwegs übereinstimmen kann. Die Design Anpassung umfasst das Logobild, die Farbe der Navigationsleiste, Text-und Symbol Farben sowie Akzentfarben, wodurch die Erkennung vereinfacht wird.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramm, das die Admin Center-Einstellungen dem Mobile App zuordnet.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Verbesserungen am Assistenten zum Hinzufügen einer Gruppe
+
+Wenn Administratoren eine neue Gruppe erstellt haben und Sie gleichzeitig zu einem Team gemacht haben, können Sie Besitzern zuweisen, die nicht über eine Lizenz mit Teams verfügen. Und das verursachte Kopfzerbrechen. Wir haben den Assistenten Ablauf aktualisiert, um sicherzustellen, dass Besitzer eine Microsoft Teams-Lizenz besitzen und wenn Sie nicht die Möglichkeit haben, die Gruppe in ein Team zu verwandeln, ist deaktiviert.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-Angebote für kleine und mittelständische Unternehmen
+
+Wir wissen, dass dies eine Ankündigung für den nächsten Monat ist, aber wir möchten sicherstellen, dass Sie bereit sind.
+
+Ab dem 21. April nehmen wir Änderungen in Bezug auf unsere Office 365 Abonnements für kleine und mittelständische Unternehmen – und Office 365 ProPlus vor. Für diese Produkte wird nun die Marke Microsoft 365 verwendet.
+
+Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änderung am Produktnamen, und derzeit gibt es keine Preis-oder Funktionsänderungen.
+
+|Aktueller Name |Neuer Name  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365 Apps for Business       | 
+|Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
+
+### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
+
+[Neuerungen in Microsoft 365-Webreihen](https://go.microsoft.com/fwlink/p/?linkid=2118096): in der Episode dieses Monats heben wir das dreijährige Jubiläum von Microsoft Teams hervor und decken neue Features ab, darunter eine verbesserte Audioqualität in Onlinebesprechungen, eine gezielte Kommunikation für First Line-Manager mit der "Shifts"-App, Teams und Skype Consumer-Interoperabilität und vieles mehr.
 
 ## <a name="february-2020"></a>Februar 2020
 
@@ -337,7 +386,7 @@ Möglicherweise wird in Ihrem Admin Center ein neues Empfehlungs Popup angezeigt
 - **InTune-Geräteschutz** : Wenn Ihre Lizenzen InTune enthalten und wir feststellen, dass Sie die Einrichtung von InTune oder Ihre Geräte nicht abgeschlossen haben, wird empfohlen, dass Sie eine InTune-Richtlinie erstellen, um die Dateien Ihrer Organisation zu schützen, wenn Benutzer von ihren mobilen Geräten aus darauf zugreifen.
 - **Monatliche Office-Feature-Updates** – wir haben Feedback von unseren sehr kleinen Kunden bekommen, dass Ihre Benutzer, wenn Sie monatliche Office-Feature-Updates erhalten, glücklicher sind. Wenn Sie also ein sehr kleines Unternehmen sind und Ihre Office-Feature-Updates derzeit alle sechs Monate erhalten, wird diese Empfehlung angezeigt.
 
-**Settings** <br>
+**Einstellungen** <br>
 Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung**! Zum Auschecken wechseln Sie zu **Einstellungen** > **Dienste & Add-ins** > **moderne Authentifizierung**.
 
 ## <a name="april-2019"></a>April 2019

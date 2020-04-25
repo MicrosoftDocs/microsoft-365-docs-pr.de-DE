@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Office 365 erkennen und korrigieren.
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637604"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808985"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 
@@ -48,17 +48,18 @@ Sie müssen das **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suche
 
 3. Suche (alle Aktivitäten und alle Benutzer), und geben Sie bei Bedarf das Startdatum und das Enddatum ein, und klicken Sie dann auf **Suchen**. 
 
-4. Filtern Sie die Ergebnisse zur Zustimmung zur Anwendung, und fügen Sie OAuth2PermissionGrant hinzu.
+4. Klicken Sie auf **Ergebnisse filtern** , und geben Sie im Feld **Aktivität** die Zustimmung zur Anwendung ein.
 
 5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
-> * Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
+> Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
 
 ## <a name="how-to-confirm-an-attack"></a>Vorgehensweise zum Bestätigen eines Angriffs
 
-Wenn Sie über eine oder mehrere Instanzen der IOCs verfügen, müssen Sie weitere Untersuchungen durchführen, um positiv zu bestätigen, dass der Angriff aufgetreten ist. Sie können eine dieser drei Methoden zum Bestätigen des Angriffs verwenden.
+Wenn Sie über eine oder mehrere Instanzen der IOCs verfügen, müssen Sie weitere Untersuchungen durchführen, um positiv zu bestätigen, dass der Angriff aufgetreten ist. Sie können eine der folgenden drei Methoden zum Bestätigen des Angriffs verwenden:
 
 - Inventory-Anwendungen und deren Berechtigungen mithilfe des Azure Active Directory-Portals. Diese Methode ist gründlich, aber Sie können nur einen Benutzer zu einem Zeitpunkt überprüfen, der sehr zeitaufwendig sein kann, wenn Sie viele Benutzer überprüfen müssen.
 
@@ -158,9 +159,9 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
 - Sie können integrierte Anwendungen für Ihr Mandanten deaktivieren. Dies ist ein drastischer Schritt, bei dem die Möglichkeit für Endbenutzer, die Zustimmung auf Mandantenebene zu erteilen, deaktiviert wird. Dadurch wird verhindert, dass Benutzer versehentlich Zugriff auf eine böswillige Anwendung gewähren. Dies wird nicht dringend empfohlen, da es die Fähigkeit Ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt. Befolgen Sie dazu die Schritte unter [Aktivieren oder deaktivieren integrierter apps](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sicherer Microsoft 365 wie ein Cyber pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 
-Ihr Microsoft 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können. Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Microsoft 365-Mandanten zu implementieren.
+Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Microsoft 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

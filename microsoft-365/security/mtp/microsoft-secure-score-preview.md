@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615918"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804763"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
 
 >[!IMPORTANT]
 >Einige Informationen beziehen sich auf vorversions Produkte, die möglicherweise wesentlich geändert werden, bevor Sie kommerziell veröffentlicht werden. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und daran arbeiten.
+Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Sie finden Sie https://security.microsoft.com/securescore im Microsoft 365 Security Center.
+
+Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und daran arbeiten.
 
 Secure Score hilft Organisationen auf diese Arten:  
 
@@ -154,9 +156,34 @@ Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposi
 
 ## <a name="whats-new"></a>Was sind die Neuerungen? 
 
-Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
+Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen. Informationen zu geplanten Änderungen finden Sie unter [What es Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="updated-interface-and-functionality"></a>Aktualisierte Benutzeroberfläche und Funktionalität
+### <a name="april-21st-2020"></a>21. April 2020
+
+#### <a name="added-azure-active-directory-improvement-action"></a>Azure Active Directory Improvement-Aktion hinzugefügt
+
+- Nicht zulassen, dass Benutzer nicht verwalteten Anwendungen zustimmen (zurzeit in der veröffentlichten Version verfügbar)
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Verbesserungs Aktionen für erweiterte Azure Advanced Threat Protection hinzugefügt
+
+- Druckerspoolerdienst auf Domänencontrollern deaktivieren
+- Unsichere Kerberos-Delegierungen ändern, um einen Identitätswechsel zu verhindern
+- Lokale Administratorkennwörter mit Microsoft LAPS schützen und verwalten
+- Risiko des lateralen Bewegungspfads auf sensible Entitäten reduzieren
+- Ruhende Konten aus sensiblen Gruppen entfernen
+- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
+- Unsichere Kontoattribute auflösen
+- Offenlegung von Anmeldeinformationen in Klartext verhindern
+- Kommunikation über Legacy-Protokolle verhindern
+- Verwendung schwacher Verschlüsselung verhindern
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Unterstützung der Sicherheitsempfehlungen von Microsoft Defender ATP Threat & Vulnerability Management (TVM)
+
+Alle veröffentlichten Sicherheitsempfehlungen, die von TVM bereitgestellt werden, sind jetzt verfügbar.
+
+### <a name="january---march-2020"></a>Januar-März 2020
+
+#### <a name="updated-interface-and-functionality"></a>Aktualisierte Benutzeroberfläche und Funktionalität
 
 * Völlig neue Metriken und Trend-Ansichten für CISO und Lead Level-Diskussionen
 * Neue Möglichkeiten zum Nachverfolgen und Benchmarken Ihrer Bewertung
@@ -165,13 +192,13 @@ Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition 
 * Verwalten Sie Ihre zukünftigen Ziele mithilfe von Score-Projektionen und geplanten Maßnahmen
 * Und mehr!
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" und "überprüfen" entfernt
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" und "überprüfen" entfernt
 
 Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Eine Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar, und Überprüfungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.
 
 Aus diesen Gründen wurden alle Verbesserungs Aktionen vorübergehend entfernt, die nicht bewertet oder eine Überarbeitungs Kadenz erforderlich waren. Es ist keine Aktion Ihrerseits erforderlich.
 
-### <a name="simplification-of-the-point-system"></a>Vereinfachung des Punktesystems
+#### <a name="simplification-of-the-point-system"></a>Vereinfachung des Punktesystems
 
 Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, wurden alle Aktionspunkte für eine sichere Ergebnisverbesserung auf 10 oder mehr Punkte aktualisiert. Es ist erforderlich, dass die gesamte Breite Verschnaufpause von Sicherheitskontrollen konsistenter ist, die wir heute haben, und diejenigen, die wir in Zukunft hinzufügen werden. Dies ist zwar eine wesentliche Änderung, und es wird eine Verringerung der Gesamtzahl der Punkte angezeigt, aber ihre Sicherheitsposition wird nicht geändert.
 

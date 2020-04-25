@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr Überkorrektur Aktionen in automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634640"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804826"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Office 365
 
-## <a name="approve-or-reject-pending-actions"></a>Genehmigen (oder ablehnen) Ausstehende Aktionen
 
 ![Seite "Luft Ermittlungsaktionen"](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>Genehmigen (oder ablehnen) Ausstehende Aktionen
 
 Während Sie die [Details einer Untersuchung](air-view-investigation-results.md)anzeigen, können Sie alle ausstehenden Korrekturaktionen genehmigen oder ablehnen. Wir empfehlen, dies so schnell wie möglich zu tun, damit Ihre automatisierten Untersuchungen abgeschlossen werden.
 
@@ -44,8 +45,8 @@ Während Sie die [Details einer Untersuchung](air-view-investigation-results.md)
 5. W?hlen Sie ein Element in der Liste aus. (Dadurch werden die Schaltflächen genehmigen und ablehnen aktiviert.)
 
 6. Überprüfen Sie die verfügbaren Informationen für die ausgewählten Elemente, und genehmigen oder lehnen Sie die Aktion (en) dann entweder ab. 
- - Mit **genehmigen** kann die Wiederherstellung beginnen.
- - **Reject** nimmt keine weiteren Aktionen vor
+   - Mit **genehmigen** kann die Wiederherstellung beginnen.
+   - **Reject** nimmt keine weiteren Aktionen vor
 
 ## <a name="next-steps"></a>Nächste Schritte
 

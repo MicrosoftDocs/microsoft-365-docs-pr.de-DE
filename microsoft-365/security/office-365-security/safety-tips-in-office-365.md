@@ -17,16 +17,18 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die von EoP und dem Spamfilter gefiltert werden.
-ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634304"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809022"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
-Exchange Online Protection (EoP) und Microsoft 365 schützen Sie mit Spam, Phishing und Malware Prävention. Heute sind einige dieser Angriffe so gut gestaltet, dass Sie legitim erscheinen. Das Senden von Nachrichten an den Junk-e-Mail-Ordner ist nicht immer ausreichend. Wenn Sie nun Ihre e-Mails in Outlook oder Outlook im Internet überprüfen, überprüft EoP automatisch den Absender und fügt einen Sicherheitshinweis oben in der e-Mail hinzu.
+Exchange Online Protection (EoP) und Microsoft 365 schützen Sie mit Spam, Phishing und Malware Prävention. Heute sind einige dieser Angriffe so gut gestaltet, dass Sie legitim erscheinen. Das Senden von Nachrichten an den Junk-e-Mail-Ordner ist nicht immer ausreichend. Wenn Sie nun Ihre e-Mails in Outlook oder Outlook im Internet oder in einem beliebigen e-Mail-Client überprüfen, überprüft EoP automatisch den Absender und fügt einen Sicherheitshinweis oben in der e-Mail hinzu.
+
+Sicherheitstipps in Outlook hängen nicht davon ab, welche Version von Outlook Sie verwenden, da der Sicherheitstipp geöffnet und direkt in den Nachrichtentext eingefügt wird. Dies bedeutet, dass der Sicherheitshinweis in dem von Ihnen verwendeten e-Mail-Client angezeigt wird. Er wird auf der Ebene der e-Mail-Filter ausgeführt und nicht auf der Ebene des e-Mail-Clients gerendert, sodass er nicht nur in einer beliebigen Version von Outlook angezeigt wird, sondern auch in einem beliebigen e-Mail-Client.
 
 Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell schädlichen Nachrichten. Die meisten Nachrichten in Ihrem Posteingang verfügen nicht über einen Sicherheitshinweis. Sie werden nur angezeigt, wenn EoP und Microsoft 365 Informationen enthalten, die Sie bei der Vermeidung von Spam-, Phishing-und Schadsoftware-Angriffen unterstützen müssen. Wenn in Ihrem Posteingang Sicherheitstipps angezeigt werden, können Sie anhand der folgenden Beispiele Weitere Informationen zu den einzelnen Sicherheitstipp Typen erhalten.
 
@@ -55,6 +57,7 @@ Der Sicherheitstipp – eine farbcodierte Nachricht – warnt Sie vor potenziell
     Wir sagen Ihnen auch, wann die Überprüfung einer e-Mail übersprungen wurde, da Sie von einem Absender stammt, dem Sie Ihre Liste sicherer Absender Vertrauen, oder wenn eine Nachrichtenfluss Regel zur Umgehung der Filterung vorhanden ist.
 
     Die graue Sicherheitsspitze wird auch angezeigt, wenn externe Bilder blockiert werden, das heißt, die Nachricht befindet sich in Ihrem Posteingang und scheint nicht Spam zu sein, sondern enthält externe Bilder, die Sie nicht zum Herunterladen entschieden haben.
+    
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 
