@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621270"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794017"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -58,7 +58,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 ::: moniker-end
 
    
-2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch auf ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (E-Mail, OneDrive usw.) klicken, um weitere Informationen anzuzeigen. <br/>![Das Dashboard "Verwendung"](../../media/usage-report-dashboard.png)
+2. Wählen Sie oben im Dashboard **Einen Bericht auswählen** aus, um aus einer Liste aller verfügbaren Berichte auszuwählen. Alternativ können Sie auch ein Widget für die Anzeige einer Aktivität auf einen Blick für einen Dienst (z. B. E-Mail, OneDrive) auswählen, um weitere Informationen anzuzeigen. <br/>![Das Dashboard "Verwendung"](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Wer kann Berichte sehen
 
@@ -104,7 +104,7 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
   
 - [Nutzung von OneDrive for Business](onedrive-for-business-usage.md)
 
-- [ProPlus-Nutzung](microsoft365-apps-usage.md)
+- [Verwendung von Microsoft 365 Apps](microsoft365-apps-usage.md)
   
 - [Nutzung der SharePoint-Website](sharepoint-site-usage.md)
   
