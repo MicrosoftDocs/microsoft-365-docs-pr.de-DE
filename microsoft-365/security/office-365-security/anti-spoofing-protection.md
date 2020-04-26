@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636034"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805222"
 ---
 # <a name="anti-spoofing-protection"></a>Antispoofingschutz
 
@@ -92,11 +92,9 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` zeigt organisationsinternes Spoofing an.
-
-  - CAT ist die Kategorie der Nachricht. Sie wird in der Regel als SPM (Spam) gekennzeichnet, gelegentlich kann dies jedoch HSPM (Nachricht mit hoher Spamwahrscheinlichkeit) oder PHISH (Phishing) sein, je nachdem, welche anderen Typen von Mustern in der Nachricht erkannt wurden.
 
   - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 11 steht für organisationsinternes Spoofing.
 
@@ -109,7 +107,7 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - Der Wert `reason=000` gibt an, dass die explizite E-Mail-Authentifizierung der Nachricht fehlgeschlagen ist. Der Wert `reason=001` gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist.
+  - `reason=000` gibt an, dass die explizite E-Mail-Authentifizierung der Nachricht fehlerhaft war. Der Wert `reason=001` gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist.
 
   - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 22 steht für organisationsinternes Spoofing.
 

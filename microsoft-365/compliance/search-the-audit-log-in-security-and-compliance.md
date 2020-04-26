@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
-ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800046"
+ms.locfileid: "43805192"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -113,7 +113,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 - Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
 
-  |**Microsoft 365-Dienst**|**30 Minuten**|**24 Stunden**|
+  |**Microsoft 365-Dienst oder -Feature**|**30 Minuten**|**24 Stunden**|
   |:-----|:-----:|:-----:|
   |Advanced Threat Protection und Threat Intelligence|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -129,6 +129,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Power-Apps||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Security & Compliance Center|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Vertraulichkeitsbezeichnungen||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online und OneDrive for Business|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
