@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Geschäfts Abonnements und Abrechnungs Dokumentation
-summary: Hier erfahren Sie, wie Sie Geschäfts Abonnements kaufen und verwalten, Lizenz Verwaltungsaufgaben ausführen und Rechnungen und Zahlungen für Ihre Geschäftskonten mit Microsoft verwalten.
+title: Unternehmensabonnements und Abrechnungsdokumentation
+summary: Hier erfahren Sie, wie Sie Business-Abonnements kaufen und verwalten, Aufgaben zur Lizenzverwaltung ausführen sowie die Abrechnungen und Zahlungen für Ihre Microsoft Business-Konten verwalten.
 metadata:
-  title: Geschäfts Abonnements und Abrechnungs Dokumentation
-  description: Hier erfahren Sie, wie Sie Geschäfts Abonnements kaufen und verwalten, Lizenz Verwaltungsaufgaben ausführen und Rechnungen und Zahlungen für Ihre Geschäftskonten mit Microsoft verwalten.
+  title: Unternehmensabonnements und Abrechnungsdokumentation
+  description: Hier erfahren Sie, wie Sie Business-Abonnements kaufen und verwalten, Aufgaben zur Lizenzverwaltung ausführen sowie die Abrechnungen und Zahlungen für Ihre Microsoft Business-Konten verwalten.
   ms.service: o365-administration
   ms.topic: landing-page
   ms.collection: commerce
@@ -14,18 +14,18 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
   ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 02/29/2020
   ms.locfileid: "42341574"
 landingContent:
-- title: Verwalten von Rechnungen und Zahlungen
+- title: Abrechnungen und Zahlungen verwalten
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Anzeigen Ihrer Rechnung
       url: billing-and-payments/view-your-bill-or-invoice.md
-    - text: Zahlungsmethoden verwalten
+    - text: Verwalten von Zahlungsmethoden
       url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
     - text: Informationen zu Ihrer Rechnung
       url: billing-and-payments/understand-your-invoice.md
@@ -37,7 +37,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Benutzern Lizenzen zuweisen
+    - text: Zuweisen von Lizenzen an Benutzer
       url: ../admin/manage/assign-licenses-to-users.md
     - text: Grundlegendes zu Abonnements und Lizenzen
       url: licenses/subscriptions-and-licenses.md
@@ -45,11 +45,11 @@ landingContent:
       url: licenses/buy-licenses.md
     - text: Entfernen von Lizenzen aus Ihrem Abonnement
       url: licenses/remove-licenses-from-subscription.md
-- title: Aktualisieren, verlängern oder stornieren
+- title: Upgraden, verlängern oder kündigen
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Wechseln zu einem anderen Plan
+    - text: Zu einem anderen Plan wechseln
       url: subscriptions/upgrade-to-different-plan.md
     - text: Verlängern Ihres Abonnements
       url: subscriptions/renew-your-subscription.md
@@ -65,9 +65,9 @@ landingContent:
     links:
     - text: Testen oder Kaufen von Microsoft 365
       url: try-or-buy-microsoft-365.md
-    - text: Erwerben von Abonnements aus Ihrer kostenlosen Testversion
+    - text: Erwerb eines Abonnements aus Ihrer kostenlosen Testversion
       url: buy-a-subscription-from-your-free-trial.md
     - text: Verlängern Ihrer Testversion
       url: extend-your-trial.md
-    - text: Erwerben eines Domänennamens
+    - text: Kaufen eines Domänennamens
       url: ../admin/get-help-with-domains/buy-a-domain-name.md
