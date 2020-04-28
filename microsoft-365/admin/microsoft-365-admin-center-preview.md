@@ -18,19 +18,33 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Erfahren Sie mehr über das neue Microsoft 365 Admin Center.
-ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627980"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907225"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informationen zum neuen Microsoft 365 Admin Center
 
+::: moniker range="o365-worldwide"
+
 Das neue Microsoft 365 Admin Center wurde für IT-Teams als vereinfachte Möglichkeit zur Verwaltung Ihrer Microsoft 365-Dienste entwickelt. Das Admin Center bietet eine maßgeschneiderte Erfahrung basierend auf den spezifischen Anforderungen ihrer Rolle oder Organisation, verbessert die Effizienz für alltägliche Aufgaben und bietet umsetzbare Einblicke, mit denen Sie datengesteuerte Entscheidungen treffen können, um Ihren Benutzern eine bessere Benutzerfreundlichkeit zu bieten.
-  
-Das Microsoft 365 Admin Center ist der allgemeine Einstiegspunkt für alle Microsoft 365-Administratoren und kann unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)verwendet werden. Spezielle Arbeitsbereiche wie Sicherheit oder Geräteverwaltung ermöglichen eine präzisere Steuerung. Weitere Informationen zur Zusammenarbeit der Verwaltungszentren finden Sie unter Was ist [mit den spezifischen Typen von IT-Rollen und anderen Arbeitsbereichen wie Sicherheit, Geräteverwaltung oder Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) weiter unten in diesem Artikel. 
-  
+
+Das Microsoft 365 Admin Center ist der allgemeine Einstiegspunkt für alle Microsoft 365-Administratoren und kann unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)verwendet werden. Spezielle Arbeitsbereiche wie Sicherheit oder Geräteverwaltung ermöglichen eine präzisere Steuerung. Weitere Informationen zur Zusammenarbeit der Verwaltungszentren finden Sie unter Was ist [mit den spezifischen Typen von IT-Rollen und anderen Arbeitsbereichen wie Sicherheit, Geräteverwaltung oder Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) weiter unten in diesem Artikel.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Das neue Microsoft 365 Admin Center, das sich derzeit in der Vorschau befindet, wird für IT-Teams als vereinfachte Möglichkeit zur Verwaltung Ihrer Microsoft 365-Dienste entwickelt. Das Admin Center bietet eine maßgeschneiderte Erfahrung basierend auf den spezifischen Anforderungen ihrer Rolle oder Organisation, verbessert die Effizienz für alltägliche Aufgaben und bietet umsetzbare Einblicke, mit denen Sie datengesteuerte Entscheidungen treffen können, um Ihren Benutzern eine bessere Benutzerfreundlichkeit zu bieten.
+
+Das Microsoft 365 Admin Center ist der häufigste Einstiegspunkt für alle Microsoft 365-Administratoren und kann durch Anmeldung bei erreicht werden [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627). Darüber hinaus ermöglichen spezialisierte Arbeitsbereiche wie Azure Active Directory und Exchange eine präzisere Steuerung. Sie können auf die Spezial Arbeitsbereiche im Navigationsbereich im Microsoft 365 Admin Center zugreifen.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 Sobald neue Features im Microsoft 365 Admin Center verfügbar sind, können Sie sich in das neue Admin Center einwählen und Ihr Feedback bei Microsoft freigeben, damit wir die Administrator Erfahrung weiter verbessern können. Wenn Sie sich anmelden, gibt es keine Auswirkungen auf Ihre Benutzer, und Sie können jederzeit wieder zum alten Admin Center wechseln.
 [Neuerungen im neuen Microsoft 365 Admin Center](whats-new-in-preview.md).
   
@@ -43,10 +57,12 @@ Wir würden uns freuen, wenn Sie am neuen Microsoft 365 Admin Center teilnehmen,
 ### <a name="turn-on-targeted-release"></a>Aktivieren der gezielten Veröffentlichung
 
 1. Melden Sie sich bei [Admin.Microsoft.com](https://admin.microsoft.com)an, wechseln Sie zum Navigationsbereich, und wählen Sie **Organisationsprofil**für **Einstellungen** \> aus.
-    
+
+1. Melden Sie sich bei [Portal.Partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)an, wechseln Sie zum Navigationsbereich, und wählen Sie **Organisationsprofil**für **Einstellungen** \> aus.
+
 2. Wechseln Sie zur Karte **Freigabeeinstellungen** , und wählen Sie dann **Bearbeiten**aus. 
     
-3.  Wählen Sie entweder **Targeted Release for everyone** oder **Targeted Release für ausgewählte Benutzer**aus. Wenn Sie "Targeted Release" für ausgewählte Benutzer auswählen, stellen Sie sicher, dass Sie Ihr Administratorkonto (und alle anderen Administratoren in Ihrer Organisation, die teilnehmen möchten) der Liste der ausgewählten Benutzer hinzufügen.
+3. Wählen Sie entweder **Targeted Release for everyone** oder **Targeted Release für ausgewählte Benutzer**aus. Wenn Sie "Targeted Release" für ausgewählte Benutzer auswählen, stellen Sie sicher, dass Sie Ihr Administratorkonto (und alle anderen Administratoren in Ihrer Organisation, die teilnehmen möchten) der Liste der ausgewählten Benutzer hinzufügen.
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Wechseln zum neuen Admin Center und wieder zurück
 
@@ -61,11 +77,25 @@ Wenn Sie im neuen Admin Center eine Early adopterin sein möchten, müssen Sie d
 > [!NOTE]
 > Der Zugriff auf das neue Admin Center wird für alle Microsoft 365-Administratoren ausgeführt. Administratoren, die sich in der Gruppe der gezielten Versionen in Ihrer Organisation befinden, erhalten zuerst das neue Admin Center. Die gezielte Veröffentlichung garantiert nicht, dass Sie die Umschaltfläche sofort sehen, Sie werden Sie jedoch früher als die in der Standard Version erhalten. 
   
+::: moniker-end
 
-   
+::: moniker range="o365-21vianet"
+
+### <a name="switch-to-the-new-admin-center-and-back-again"></a>Wechseln zum neuen Admin Center und wieder zurück
+
+Während sich das neue Admin Center in der Vorschau befindet, können Sie zwischen dem neuen Admin Center und dem alten Admin Center wechseln, indem Sie die Umschaltfläche oben auf der Admin Center-Startseite verwenden. Das neue Admin Center ist voll funktionsfähig und verfügt über alle Funktionen des alten admin Centers.
+
+Um das neue Admin Center auszuprobieren, drehen Sie die Umschaltfläche, um <b>die Vorschau zu testen</b>. Die Umschaltfläche wird dann <b>in der Vorschau</b>angezeigt. Wenn Sie sich das nächste Mal beim Admin Center anmelden, merken wir Ihre Auswahl und melden sich beim neuen Admin Center an.
+
+Um zur Verwendung des alten admin Centers zurückzukehren, schalten Sie die Umschaltfläche von der <b>Vorschau auf</b> die Position aus. Wenn Sie sich das nächste Mal beim Admin Center anmelden, melden wir Sie beim alten Admin Center an.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-Sie können Ihre Fragen hier nicht beantworten? Wechseln Sie zu **war diese Information hilfreich?** unten auf dieser Seite und stellen Sie Ihre Frage. 
+Sie können Ihre Fragen hier nicht beantworten? Wechseln Sie zum Abschnitt **Feedback** unten auf dieser Seite, und stellen Sie Ihre Frage. 
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>Kann ich im neuen Admin Center alles tun, was ich im alten Admin Center tun kann?
 
@@ -75,18 +105,18 @@ Ja. Das neue Admin Center ist voll funktionsfähig und verfügt über alle Funkt
 
 Microsoft 365 ist eine vollständige, intelligente Lösung, die Office 365, Windows 10 und Enterprise Mobility + Security umfasst, die es allen ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten. Die folgenden Microsoft 365-Abonnements sind im Admin Center verfügbar, damit Sie jetzt versuchen oder kaufen können:
   
-- Microsoft 365 for Business
+- Microsoft 365 Business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
 Weitere Informationen finden Sie unter [Testen oder kaufen eines Microsoft 365-Abonnements](../commerce/try-or-buy-microsoft-365.md).
-  
+
 ## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Ich habe einen Fehler gefunden, oder ich möchte eine Funktionserweiterung anfordern. Wie kann ich Microsoft informieren?
 
 Wir freuen uns, von Ihnen zu hören! Das Melden von Fehlern und das Freigeben von Feedback hilft uns, das Microsoft 365 Admin Center zu verbessern. Um Feedback zu geben, wählen Sie die **Feedback** Schaltfläche unten auf der Seite aus, und verwenden Sie das Formular, um uns Ihre Gedanken zu senden. Aktivieren Sie das Kontrollkästchen, und bestätigen Sie Ihre e-Mail-Adresse, wenn Sie möchten, dass eine Person im Microsoft 365 Admin Center-Team Ihre Kommentare weiter verfolgt. Wir können nicht versprechen, jedes Feedback zu verfolgen, aber wir werden es versuchen! 
   
 Sie können auch Feedback von außerhalb des Admin Centers in unserem UserVoice-Forum geben. Sie können diese Seite verwenden, um Vorschläge für Features zu machen, auf die von anderen Benutzer Foren abgestimmt werden kann: [UserVoice Forum für das neue Admin Center](https://go.microsoft.com/fwlink/?linkid=2024994).
-  
+
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Was ist mit den spezifischen Typen von IT-Rollen und anderen Arbeitsbereichen wie Sicherheit, Geräteverwaltung oder Exchange?
 
 Das Microsoft 365 Admin Center ist der allgemeine Einstiegspunkt für alle Teams und Rollen, die Microsoft 365 verwalten. Die Erfahrung, die Informationen und die Steuerelemente sind für jeden Administrator und jede Rolle zugeschnitten und anpassbar. Darüber hinaus ermöglichen spezielle Arbeitsbereiche eine Tiefe, granulare Steuerung. Zu diesen speziellen Arbeitsbereichen gehören SharePoint &amp; , Teams Skype, Exchange, Sicherheit, Compliance, Geräteverwaltung und Azure Active Directory. Die Spezial Arbeitsbereiche finden Sie im Navigationsbereich im Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
@@ -100,5 +130,5 @@ Das Aktualisieren aller Admin Center auf eine kohärente Umgebung dauert eine We
 - [Übersicht über die Microsoft 365-Geräteverwaltung](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Einführung in das Microsoft 365 Security and Compliance Center](https://go.microsoft.com/fwlink/?linkid=2025413)
-    
 
+::: moniker-end

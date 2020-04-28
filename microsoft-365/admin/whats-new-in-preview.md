@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805174"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907237"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Einige der Informationen in diesem Artikel gelten möglicherweise nicht für Office 365, die von 21Vianet betrieben werden.
+
+::: moniker-end
 
 Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.md)ständig neue Features hinzu, beheben Probleme, die wir kennen, und machen Änderungen basierend auf Ihrem Feedback. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn Sie noch kein Feature sehen, versuchen Sie, [sich der zielgerichteten Version hinzuzufügen](manage/release-options-in-office-365.md).
 
@@ -386,7 +393,7 @@ Möglicherweise wird in Ihrem Admin Center ein neues Empfehlungs Popup angezeigt
 - **InTune-Geräteschutz** : Wenn Ihre Lizenzen InTune enthalten und wir feststellen, dass Sie die Einrichtung von InTune oder Ihre Geräte nicht abgeschlossen haben, wird empfohlen, dass Sie eine InTune-Richtlinie erstellen, um die Dateien Ihrer Organisation zu schützen, wenn Benutzer von ihren mobilen Geräten aus darauf zugreifen.
 - **Monatliche Office-Feature-Updates** – wir haben Feedback von unseren sehr kleinen Kunden bekommen, dass Ihre Benutzer, wenn Sie monatliche Office-Feature-Updates erhalten, glücklicher sind. Wenn Sie also ein sehr kleines Unternehmen sind und Ihre Office-Feature-Updates derzeit alle sechs Monate erhalten, wird diese Empfehlung angezeigt.
 
-**Einstellungen** <br>
+**Settings** <br>
 Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung**! Zum Auschecken wechseln Sie zu **Einstellungen** > **Dienste & Add-ins** > **moderne Authentifizierung**.
 
 ## <a name="april-2019"></a>April 2019

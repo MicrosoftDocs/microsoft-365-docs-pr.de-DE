@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'In diesem Artikel erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und entsprechend Ihrem Firmen Logo oder ihrer eigenen Farbe anpassen. '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627606"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900774"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>Anpassen des Designs für Ihre Organisation
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassen des Microsoft 365-Designs für Ihre Organisation
 
 Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Administrator Ihres Microsoft 365 for Business-Abonnements können Sie das Standarddesign ändern, das in der oberen Navigationsleiste für alle Benutzer in der Organisation angezeigt wird. Sie können Ihr Firmen Logo hinzufügen und die Farben so ändern, dass Sie mit dem Rest Ihrer Marke übereinstimmen. Sie können sogar einen Ziel Link hinzufügen, zu dem Benutzer navigieren, wenn Sie Ihr Logo auswählen. Sie können hier das Standarddesign und das benutzerdefinierte Design Ergebnis in Microsoft 365 sehen.
   
@@ -64,7 +64,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Microsoft 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). In der folgenden Grafik finden Sie ein Beispiel für die Anpassung von Designänderungen im Admin Center.
+Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Microsoft 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Ein Beispiel dafür, wo Sie Designänderungen aus dem Admin Center anpassen können, finden Sie in der folgenden Abbildung.
 
 ![m365-admin-Mandanten-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben je
   
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Bei der Auswahl eines **Logo Bilds**wird empfohlen, nach Möglichkeit einen SVG-Dateityp zu verwenden, damit Ihr Logo auf allen Bildschirmen und auf allen Zoomebenen mit hoher Auflösung aussieht.
+Bei der Auswahl eines **Logo Bilds**wird empfohlen, einen SVG-Dateityp zu verwenden, damit Ihr Logo auf allen Bildschirmen und auf allen Zoomebenen mit hoher Auflösung angezeigt wird.
 
 Wenn Sie benutzerdefinierte Farben auswählen, wählen Sie eine **Navigationsleiste Hintergrundfarbe** , die ein hohes Kontrastverhältnis mit dem **Logo Bild** , das Sie ausgewählt hat. Wählen Sie auch eine **Text-und Symbol** Farbe mit einem hohen Kontrastverhältnis zur **Hintergrundfarbe der Navigationsleiste** aus, um sicherzustellen, dass der gesamte Text und die Symbole leicht sichtbar sind.
 
@@ -99,4 +99,3 @@ Hier ist ein einfaches Flussdiagramm, mit dem Sie sich schnell mit einem visuell
 [Hinzufügen benutzerdefinierter Kacheln zur Seite "Meine Apps" und zum App-Startprogramm](../manage/customize-the-app-launcher.md)
   
   
-

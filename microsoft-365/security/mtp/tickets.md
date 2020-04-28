@@ -17,16 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836880"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901022"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Verwalten von Tickets über ServiceNow
 
-Das Microsoft 365-Sicherheitscenter wird erweitert, sodass Tickets in ServiceNow nativ erstellt und nachverfolgt werden können. Sicherheitsadministratoren können eine [Microsoft Secure Score](microsoft-secure-score.md) -Verbesserungs Aktion direkt an ServiceNow senden und ein Ticket erstellen. Es können sowohl Incident Management als auch Change Management-Tickets erstellt werden.
+ServiceNow ist eine beliebte Cloud Computing-Plattform, mit der Unternehmen digitale Workflows für Unternehmensvorgänge verwalten können. Ihre now-Plattform umfasst IT-Workflows, Mitarbeiter Workflows und Kunden Workflows. Microsoft hat eine Partnerschaft mit ServiceNow getroffen, um IT-Administratoren die Verwaltung Ihrer Tickets und Aufgaben auf beiden Plattformen zu erleichtern. [Erfahren Sie mehr über ServiceNow](https://www.servicenow.com/)
+
+Das Microsoft 365-Sicherheitscenter wurde jetzt erweitert, sodass Tickets in ServiceNow nativ erstellt und nachverfolgt werden können. Sicherheitsadministratoren können eine [Microsoft Secure Score](microsoft-secure-score.md) -Verbesserungs Aktion direkt an ServiceNow senden und ein Ticket erstellen. Es können sowohl Incident Management als auch Change Management-Tickets erstellt werden. Anschließend können Sie auf der Microsoft Security Center-Startseite und in ServiceNow nachverfolgt werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

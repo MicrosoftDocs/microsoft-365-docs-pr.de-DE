@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten, die in Threat Explorer und in Echtzeit erkannt werden können.
-ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955639"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907249"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
@@ -30,7 +30,15 @@ ms.locfileid: "42955639"
 - Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2 haben, haben Sie den Explorer.
 - Wenn Sie Office 365 ATP-Plan 1 haben, haben Sie Echt Zeit Erkennungen.
 
-Wenn Sie Explorer zum ersten Mal öffnen (oder den Bericht über Echt Zeit Erkennungen), werden in der Standardansicht e-Mail-Malwareerkennungen für die letzten 7 Tage angezeigt. In diesem Bericht können auch ATP-Erkennungen angezeigt werden, beispielsweise bösartige URLs, die von [sicheren Links](atp-safe-links.md)erkannt wurden, sowie bösartige Dateien, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt wurden. Dieser Bericht kann geändert werden, um Daten für die letzten 30 Tage anzuzeigen (es sei denn, Sie verwenden ein Testabonnement). Testabonnements enthalten nur Daten für die letzten sieben Tage.
+Wenn Sie Explorer zum ersten Mal öffnen (oder den Bericht über Echt Zeit Erkennungen), werden in der Standardansicht e-Mail-Malwareerkennungen für die letzten 7 Tage angezeigt. In diesem Bericht können auch ATP-Erkennungen angezeigt werden, beispielsweise bösartige URLs, die von [sicheren Links](atp-safe-links.md)erkannt wurden, sowie bösartige Dateien, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt wurden. Dieser Bericht kann geändert werden, um Daten für die letzten 30 Tage anzuzeigen (mit einem kostenpflichtigen ATP P2-Abonnement). Testabonnements enthalten nur Daten für die letzten sieben Tage.
+
+|Abonnement  |Dienstprogramm  |Tage mit Daten  |
+|---------|---------|---------|
+|ATP P1-Testversion     | Echtzeiterkennungen        |   7       |
+|ATP P1 bezahlt     |   Echtzeiterkennungen      |    30     |
+|ATP P1 Paid testing ATP P2 Testversion     | Sicherheitsrisiken-Explorer   |   7    |
+|ATP P2 Trail     |  Sicherheitsrisiken-Explorer       |     7     |
+|ATP P2 Paid     |     Sicherheitsrisiken-Explorer    |  30       |
 
 Verwenden Sie das Menü **Ansicht** , um zu ändern, welche Informationen angezeigt werden. Mithilfe von QuickInfos können Sie bestimmen, welche Ansicht verwendet werden soll.
   
@@ -99,7 +107,7 @@ Um diesen Bericht anzuzeigen, wählen Sie im Explorer die Option**e-Mail** > **a
 > [!NOTE]
 > Wenn Sie eine Fehlermeldung erhalten, die zu **viele anzuzeigende Daten**liest, fügen Sie einen Filter hinzu, und verringern Sie ggf. den von Ihnen angezeigten Datumsbereich. 
 
-Wenn Sie einen Filter anwenden möchten, wählen Sie **Absender**aus, wählen Sie ein Element in der Liste aus, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel haben wir die **Erkennungstechnologie** als Filter verwendet (es stehen verschiedene Optionen zur Verfügung). Anzeigen von Informationen nach Absender, Domäne des Absenders, Empfänger, Betreff, Anlagendateiname, Malwarefamilie, Schutzstatus (Aktionen, die von den Bedrohungen geschützt sind, und Richtlinien in Office 365), Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und Weitere. 
+Wenn Sie einen Filter anwenden möchten, wählen Sie **Absender**aus, wählen Sie ein Element in der Liste aus, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel haben wir die **Erkennungstechnologie** als Filter verwendet (es stehen verschiedene Optionen zur Verfügung). Anzeigen von Informationen nach Absender, Domäne des Absenders, Empfänger, Betreff, Anlagendateiname, Malwarefamilie, Schutzstatus (Aktionen, die von den Bedrohungen geschützt sind, und Richtlinien in Office 365), Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und vieles mehr. 
 
 ![Anzeigen von Daten zu erkannten e-Mails anhand von Erkennungstechnologien](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
