@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool „Inhaltssuche“ im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, Microsoft Office SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Microsoft 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632360"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900739"
 ---
 # <a name="content-search"></a>Inhaltssuche
 
@@ -138,13 +138,13 @@ So zeigen Sie Suchstatistiken an:
     
 3. Klicken Sie in der Dropdownliste **Einzelne Ergebnisse** auf **Suchstatistiken**.
     
-4. Klicken Sie in der Dropdownliste **Typ** auf eine der folgenden Optionen, je nachdem, welche Suchstatistiken Sie anzeigen möchten. 
+4. Klicken Sie in der Dropdownliste **Typ** auf eine der folgenden Optionen, je nachdem, welche Suchstatistiken Sie anzeigen möchten:
     
-  - **Zusammenfassung:** Zeigt Statistiken für jeden Typ von durchsuchten Inhaltsspeicherorten an. Diese umfassen die Anzahl der Inhaltsspeicherorte mit Elementen, die der Suchabfrage entsprechen, sowie die Gesamtanzahl und die Größe von Suchergebniselementen. Dies ist die Standardeinstellung.
-    
-  - **Abfragen:** Bei dieser Option werden Statistiken zur Suchabfrage angezeigt. Dazu zählen der Typ des Inhaltsspeicherorts, auf den die Abfragestatistiken zutreffen, ein Teil der Suchabfrage, auf den die Statistiken zutreffen (beachten Sie, dass **Primär** die gesamte Suchabfrage angibt), die Anzahl der Inhaltsspeicherorte mit Elementen, die der Suchabfrage entsprechen, sowie die Gesamtanzahl und Größe der (am angegebenen Inhaltsspeicherort) gefundenen Elemente, die der Suchabfrage entsprechen. Außerdem werden Statistiken für nicht indizierte Elemente (auch als *teilweise indizierte Elemente* bezeichnet) angezeigt. Allerdings sind in den Statistiken nur teilweise indizierte Elemente aus Postfächern enthalten. Teilweise indizierte Elemente aus SharePoint und OneDrive werden nicht in die Statistiken einbezogen.
-    
-  - **Am häufigsten verwendete Speicherorte:** Bei dieser Option werden Statistiken zur Anzahl der Elemente angezeigt, die der Suchabfrage an jedem Inhaltsspeicherort entsprechen. Es werden die ersten 1.000 Speicherorte angezeigt.
+    - **Zusammenfassung:** Zeigt Statistiken für jeden Typ von durchsuchten Inhaltsspeicherorten an. Diese umfassen die Anzahl der Inhaltsspeicherorte mit Elementen, die der Suchabfrage entsprechen, sowie die Gesamtanzahl und die Größe von Suchergebniselementen. Dies ist die Standardeinstellung.
+
+    - **Abfragen:** Bei dieser Option werden Statistiken zur Suchabfrage angezeigt. Dazu zählen der Typ des Inhaltsspeicherorts, auf den die Abfragestatistiken zutreffen, ein Teil der Suchabfrage, auf den die Statistiken zutreffen (beachten Sie, dass **Primär** die gesamte Suchabfrage angibt), die Anzahl der Inhaltsspeicherorte mit Elementen, die der Suchabfrage entsprechen, sowie die Gesamtanzahl und Größe der (am angegebenen Inhaltsspeicherort) gefundenen Elemente, die der Suchabfrage entsprechen. Außerdem werden Statistiken für nicht indizierte Elemente (auch als *teilweise indizierte Elemente* bezeichnet) angezeigt. Allerdings sind in den Statistiken nur teilweise indizierte Elemente aus Postfächern enthalten. Teilweise indizierte Elemente aus SharePoint und OneDrive werden nicht in die Statistiken einbezogen.
+
+    - **Am häufigsten verwendete Speicherorte:** Bei dieser Option werden Statistiken zur Anzahl der Elemente angezeigt, die der Suchabfrage an jedem Inhaltsspeicherort entsprechen. Es werden die ersten 1.000 Speicherorte angezeigt.
     
 Weitere Details zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md).
   
@@ -246,6 +246,8 @@ Sie können das Postfach durchsuchen, das mit einer Microsoft 365-Gruppe oder ei
 Beachten Sie bei der Suche nach Inhalten in Microsoft Teams und Microsoft 365-Gruppen die folgenden Punkte.
   
 - Um nach Inhalten zu suchen, die sich in Teams und Microsoft 365-Gruppen befinden, müssen Sie das Postfach und die SharePoint-Website angeben, die mit einem Team oder einer Gruppe verknüpft sind.
+
+- Inhalte aus privaten Kanälen werden in den Postfächern jedes Benutzers, nicht im Postfach des Teams gespeichert. Wenn Sie nach Inhalten in privaten Kanälen suchen möchten, lesen Sie [eDiscovery für private Kanäle](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Führen Sie das Cmdlet **Get-UnifiedGroup** in Exchange Online aus, um Eigenschaften für ein Team oder eine Microsoft 365-Gruppe anzuzeigen. Dies ist eine gute Möglichkeit zum Abrufen der URL der einem Team oder einer Gruppe zugeordneten Website. Der folgende Befehl zeigt beispielsweise ausgewählte Eigenschaften für eine Microsoft 365-Gruppe mit dem Namen „Senior Leadership Team“ an: 
     

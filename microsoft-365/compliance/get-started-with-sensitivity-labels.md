@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 1ab56f6d4fadf87de49069e93de429b7eecba577
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707476"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907202"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -60,12 +60,12 @@ Mitglieder Ihres Compliance-Teams, die Vertraulichkeitsbezeichnungen erstellen, 
 
 Standardmäßig haben globale Administratoren für Ihren Mandanten Zugriff auf diese Admin Center und können Compliance-Beauftragte und anderen Personen Zugriff gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu erteilen. Um diesen delegierten eingeschränkten Administratorzugriff zu erteilen, gehen Sie folgendermaßen vor: Navigieren Sie zur Seite **Berechtigungen** des jeweiligen Admin Centers, und fügen Sie dann der Rollengruppe **Compliancedatenadministrator**, **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzu.
 
-Alternativ zur Verwendung von Rollen können Sie eine neue Rollengruppe erstellen und dieser entweder die Rolle **Administrator für Vertraulichkeitsbezeichnungen** oder die Rolle **Organisationskonfiguration** hinzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Alternativ zur Verwendung von Rollen können Sie eine neue Rollengruppe erstellen und dieser entweder die Rolle **Administrator für Vertraulichkeitsbezeichnungen** oder die Rolle **Organisationskonfiguration** hinzufügen. Verwenden Sie für eine schreibgeschützte Rolle den **Vertraulichkeitsbezeichnungen-Leser**. Anweisungen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden.
 
 > [!NOTE]
-> **Vertraulichkeitsbezeichnungsleser** ist eine neue Rolle, deren Rollout derzeit für Mandanten erfolgt und die anfänglich für die Cmdlets für PowerShell-Bezeichnungen sowie später für das Administratorbezeichnungscenter unterstützt wird.
+> Der **Vertraulichkeitsbezeichnungen-Leser** ist eine neue Rolle, die anfänglich nur die PowerShell-Cmdlets für Bezeichnungen unterstützt. Unterstützung für die Administratorbezeichnungs-Center wird jetzt schrittweise für Mandanten bereitgestellt.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Häufige Szenarien für Vertraulichkeitsbezeichnungen
 
