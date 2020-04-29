@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
-ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637219"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919604"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 

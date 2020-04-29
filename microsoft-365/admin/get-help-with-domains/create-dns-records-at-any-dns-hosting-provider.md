@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Microsoft 365 erstellen.
 ms.custom: okr_smb
-ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628494"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919505"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
 
@@ -69,19 +69,19 @@ Bevor Sie Ihre Domäne in Microsoft 365 verwenden können, müssen wir uns verge
   
 1. Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, führen Sie einen der folgenden Schritte aus:
     
-  - **Wenn Sie einen TXT-Eintrag erstellen, verwenden Sie die folgenden Werte:**
+   - **Wenn Sie einen TXT-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type **|**Alias** oder **Hostname**|**Value**|**TTL**|
-|TXT|Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> **Hinweis:** Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich. |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.  <br/>        [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Record Type **|**Alias** oder **Hostname**|**Value**|**TTL**|
+      |TXT|Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> **Hinweis:** Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich. |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.  <br/>        [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  |
    
-  - **Wenn Sie einen MX-Eintrag erstellen, verwenden Sie die folgenden Werte:**
+   - **Wenn Sie einen MX-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
-||||||
-|:-----|:-----|:-----|:-----|:-----|
-|**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+      ||||||
+      |:-----|:-----|:-----|:-----|:-----|
+      |**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
+      |MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 2. Speichern Sie den Eintrag.
     
@@ -103,9 +103,8 @@ Wenn Microsoft 365 den richtigen TXT-Eintrag findet, ist die Domäne überprüft
 ## <a name="add-mx-record-to-route-email"></a>Hinzufügen eines MX-Eintrags zum Weiterleiten von E-Mails
 <a name="BKMK_add_MX"> </a>
 
-Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft 365 geleitet werden.  *Nachdem Sie den MX-Eintrag Ihrer Domäne aktualisiert haben, treffen alle neuen E-Mails für jeden Benutzer Ihr Domäne in Microsoft 365 ein*. Alle E-Mails, die Sie bereits erhalten haben, bleiben so lange auf Ihrem aktuellen E-Mail-Host gespeichert, bis Sie die [Migration von E-Mails und Kontakten zu Microsoft 365](../setup/migrate-email-and-contacts-admin.md) beschließen. 
-  
-  
+Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft 365 geleitet werden.  *Nachdem Sie den MX-Eintrag Ihrer Domäne aktualisiert haben, treffen alle neuen E-Mails für jeden Benutzer Ihr Domäne in Microsoft 365 ein*. Alle E-Mails, die Sie bereits erhalten haben, bleiben so lange auf Ihrem aktuellen E-Mail-Host gespeichert, bis Sie die [Migration von E-Mails und Kontakten zu Microsoft 365](../setup/migrate-email-and-contacts-admin.md) beschließen.
+
  **Aufgabe**
   
 Suchen der Seite, auf der Sie DNS-Einträge für Ihre Domäne erstellen können
@@ -118,39 +117,39 @@ Suchen der Seite, auf der Sie DNS-Einträge für Ihre Domäne erstellen können
     
 ::: moniker range="o365-worldwide"
 
-Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
+  Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX-Token\>.mail.protection.outlook.de, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
+  Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX-Token\>.mail.protection.outlook.de, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
 
 ::: moniker-end
 
-1. Fügen Sie auf der Website Ihres DNS-Hosts einen neuen MX-Eintrag hinzu.
+4. Fügen Sie auf der Website Ihres DNS-Hosts einen neuen MX-Eintrag hinzu.
     
     Sie erhalten nun die [Informationen zu dem MX-Eintrag](../get-help-with-domains/information-for-dns-records.md) von Microsoft 365. 
     
-2. Kopieren Sie für den MX-Eintrag (im vorherigen Schritt) den Wert unter **Verweist auf die Adresse**. 
+5. Kopieren Sie für den MX-Eintrag (im vorherigen Schritt) den Wert unter **Verweist auf die Adresse**. 
     
     Sie verwenden diesen Wert in dem Eintrag, den Sie auf der Website Ihres DNS-Hosts erstellen, wie es im nächsten Schritt beschrieben ist.
     
-3. Stellen Sie bei dem neuen MX-Eintrag auf der Website Ihres DNS-Hosts sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:
+6. Stellen Sie bei dem neuen MX-Eintrag auf der Website Ihres DNS-Hosts sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:
     
-  - **Eintragstyp**: **MX**
+   - **Eintragstyp**: **MX**
     
-  - **Priorität**: Setzen Sie die Priorität des MX-Eintrags auf den höchsten verfügbaren Wert. Dies ist in der Regel **0**.
+   - **Priorität**: Setzen Sie die Priorität des MX-Eintrags auf den höchsten verfügbaren Wert. Dies ist in der Regel **0**.
     
-    Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
     
-  - **Hostname**: **@**
+   - **Hostname**: **@**
     
-  - **Verweisende Adresse**: Fügen Sie den Wert für **verweisende Adresse** ein, den Sie soeben aus Microsoft 365 kopiert haben. 
+   - **Verweisende Adresse**: Fügen Sie den Wert für **verweisende Adresse** ein, den Sie soeben aus Microsoft 365 kopiert haben. 
     
-  - **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+   - **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
     
-4. Speichern Sie den Eintrag.
+7. Speichern Sie den Eintrag.
     
 Entfernen Sie alle anderen MX-Einträge.
   
@@ -167,12 +166,12 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. Nachdem Sie die ersten drei neuen Einträge hinzugefügt haben, geben Sie an, dass Sie einen weiteren CNAME-Eintrag erstellen möchten.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 Stunde  <br/> |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+      |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
+      |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hour  <br/> |
+      |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 Stunde  <br/> |
    
    > [!NOTE]
    > **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. > Diese Datensätze gelten nicht für hybride Bereitstellungen von Exchange, Lync oder Skype for Business. 
@@ -188,15 +187,15 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. Nachdem Sie die ersten drei neuen Einträge hinzugefügt haben, geben Sie an, dass Sie einen weiteren CNAME-Eintrag erstellen möchten.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 Stunde  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hour  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hour  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 Stunde  <br/> |
    
-   > [!NOTE]
-   > **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. > Diese Datensätze gelten nicht für hybride Bereitstellungen von Exchange, Lync oder Skype for Business. 
+     > [!NOTE]
+     > **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. > Diese Datensätze gelten nicht für hybride Bereitstellungen von Exchange, Lync oder Skype for Business. 
   
 2. Wenn Sie fertig sind, speichern Sie die Einträge.
     
@@ -210,15 +209,15 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. Nachdem Sie die ersten drei neuen Einträge hinzugefügt haben, geben Sie an, dass Sie einen weiteren CNAME-Eintrag erstellen möchten.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 Stunde  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 Stunde  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 Stunde  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 Stunde  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 Stunde  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 Stunde  <br/> |
    
-   > [!NOTE]
-   > **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. > Diese Datensätze gelten nicht für hybride Bereitstellungen von Exchange, Lync oder Skype for Business. 
+     > [!NOTE]
+     > **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. > Diese Datensätze gelten nicht für hybride Bereitstellungen von Exchange, Lync oder Skype for Business. 
   
 2. Wenn Sie fertig sind, speichern Sie die Einträge.
     
@@ -232,11 +231,11 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 > [!IMPORTANT]
 > Wenn Sie über MDM (Mobile Device Management) für Microsoft 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 Stunde  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 Stunde  <br/> |
    
 ::: moniker-end
 
@@ -245,11 +244,11 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander drei neue CNAME-Eintr
 > [!IMPORTANT]
 > Wenn Sie über MDM (Mobile Device Management) für Microsoft 365 verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Folgen Sie den Schritten für die anderen vier CNAME-Einträge, geben Sie jedoch die Werte aus der nachstehenden Tabelle ein. > (Wenn Sie nicht mit MDM arbeiten, können Sie diesen Schritt überspringen.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Stunde  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Stunde  <br/> |
    
 ::: moniker-end
 
@@ -268,12 +267,12 @@ Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Host** <br/> |**TXT VALUE** <br/> |**TTL** <br/> |
-|TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Host** <br/> |**TXT VALUE** <br/> |**TTL** <br/> |
+    |TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde  <br/> |
    
-   Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
     
 2. Wenn Sie fertig sind, speichern Sie den Eintrag.
     
@@ -293,12 +292,12 @@ Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Host**|**TXT VALUE**|**TTL**|
-|TXT (Text)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type**|**Host**|**TXT VALUE**|**TTL**|
+    |TXT (Text)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde|
    
-   Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
     
 2. Wenn Sie fertig sind, speichern Sie den Eintrag.
     
@@ -318,12 +317,12 @@ Bearbeiten Sie auf der Website Ihres DNS-Hosts den vorhandenen SPF-Eintrag, oder
   
 1. Geben Sie in den Feldern für den neuen Eintrag die nachstehenden auf Ihre Situation zutreffenden Werte ein. Sie können diese Werte auch kopieren und einfügen.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Host**|**TXT VALUE**|**TTL**|
-|TXT (Text)|@|v=spf1 include:spf.protection.partner.outlook.cn -all > [!NOTE] > Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Record Type**|**Host**|**TXT VALUE**|**TTL**|
+    |TXT (Text)|@|v=spf1 include:spf.protection.partner.outlook.cn -all > [!NOTE] > Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |1 Stunde|
    
-   Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
     
 2. Wenn Sie fertig sind, speichern Sie den Eintrag.
     
@@ -340,27 +339,27 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander zwei neue SRV-Einträ
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. **(In den Anmerkungen unten wird erläutert, wie Sie die SRV-Einträge erstellen, wenn Ihr DNS-Host nicht über separate Felder alle diese Einträge verfügt.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
    
-  > [!NOTE]
-  >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
-
->  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt.  Beispiel: **Name**: _sip._tls 
-
->  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". Beispiel: **Target**: 100 1 443 sipdir.online.lync.com. 
-
->  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.lync.com 
-
-> Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    > [!NOTE]
+    >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
+    > 
+    >  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt.  Beispiel: **Name**: _sip._tls 
+    > 
+    >  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". Beispiel: **Target**: 100 1 443 sipdir.online.lync.com. 
+    > 
+    >  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.lync.com 
+    > 
+    > Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
   
 2. Wenn Sie fertig sind, speichern Sie die Einträge.
     
-> [!NOTE]
->  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -371,27 +370,27 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander zwei neue SRV-Einträ
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. **(In den Anmerkungen unten wird erläutert, wie Sie die SRV-Einträge erstellen, wenn Ihr DNS-Host nicht über separate Felder alle diese Einträge verfügt.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
    
- > [!NOTE]
- >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
-
->  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt. > Beispiel: **Name**: _sip._tls 
-
->  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". > Beispiel: **Target**: 100 1 443 sipdir.online.lync.de. 
-
->  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". > Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.lync.de 
-
->  Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    > [!NOTE]
+    >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
+    > 
+    >  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt. > Beispiel: **Name**: _sip._tls 
+    > 
+    >  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". > Beispiel: **Target**: 100 1 443 sipdir.online.lync.de. 
+    > 
+    >  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". > Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.lync.de 
+    > 
+    >  Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
   
 2. Wenn Sie fertig sind, speichern Sie die Einträge.
     
-> [!NOTE]
->  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -402,27 +401,27 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander zwei neue SRV-Einträ
   
 1. Geben Sie in den Feldern für jeden neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen. **(In den Anmerkungen unten wird erläutert, wie Sie die SRV-Einträge erstellen, wenn Ihr DNS-Host nicht über separate Felder alle diese Einträge verfügt.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
-|SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Record Type** <br/> |**Name** <br/> |**Target** <br/> |**Protocol** <br/> |**Service** <br/> |**Priority** <br/> |**Weight** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> (Oder leer lassen, wenn @ nicht zulässig ist)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
    
- > [!NOTE]
- >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
-
->  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt. > Beispiel: **Name**: _sip._tls 
-
->  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". > Beispiel: **Target**: 100 1 443 sipdir.online.partner.lync.cn. 
-
->  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". > Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.partner.lync.cn 
-
->  Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
+    > [!NOTE]
+    >  Für **Name**: Wenn Ihr DNS-Host die Einstellung auf **@** nicht zulässt, lassen Sie das Feld leer. Verwenden Sie diesen Ansatz *nur*, wenn Ihr DNS-Host über separate Felder für die Werte "Service" und "Protocol" verfügt. Andernfalls lesen Sie die Anmerkungen unten zu "Service" und "Protocol". 
+    > 
+    >  Für **Service** und **Protocol**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie die Werte für **Service** und **Protocol** als Werte für **Name** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Name** auch anders heißen, z. B: **Host**, **Hostname** oder **Subdomäne**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge und trennen die Werte durch einen Punkt. > Beispiel: **Name**: _sip._tls 
+    > 
+    >  Für **Priority**, **Weight** und **Port**: Wenn Ihr DNS-Host nicht über diese Felder für SRV-Einträge verfügt, müssen Sie sie als Wert für **Target** des Eintrags angeben. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge, trennen die Werte durch Leerzeichen und enden mit einem Punkt. Die Werte müssen in dieser Reihenfolge eingegeben werden: "Priority", "Weight", "Port", "Target". > Beispiel: **Target**: 100 1 443 sipdir.online.partner.lync.cn. 
+    > 
+    >  Variation für **Priority**, **Weight** und **Port**: Bei einigen DNS-Hosts werden einige, jedoch nicht alle der erforderlichen Felder separat aufgeführt. Geben Sie bei solchen DNS-Hostwebsites die Werte, die nicht in getrennten Feldern eingegeben werden können, als kombinierte Zeichenfolge in der richtigen Reihenfolge als Wert für **Target** des Eintrags an. (Hinweis: Abhängig von Ihrem DNS-Host kann das Feld **Target** auch anders heißen, z. B: **Inhalt**, **IP-Adresse** oder **Zielhost**). Zum Einrichten des kombinierten Werts erstellen Sie eine einzelne Zeichenfolge für Felder, die nicht separat angezeigt werden, und trennen die Werte durch Leerzeichen. Die Werte müssen in der *nachfolgenden Reihenfolge* eingegeben werden, wobei die Werte ausgelassen werden für die es separate Felder gibt: "Priority", "Weight", "Port", "Target". > Wenn es beispielsweise ein separates Feld für "Priority" gibt, verketten Sie nur die Werte für "Weight", "Port" und "Target": **Target**: 1 443 sipdir.online.partner.lync.cn 
+    > 
+    >  Für **TTL**: Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten (**60**), Sekunden (**3600**) usw. fest. 
   
 2. Wenn Sie fertig sind, speichern Sie die Einträge.
     
-> [!NOTE]
->  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
