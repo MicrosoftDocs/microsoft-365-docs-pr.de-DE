@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634187"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919672"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -43,13 +43,13 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 |**Bereich**|**Richtlinienvorlage**|**Details**|
 |:-----|:-----|:-----|
-| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
-| **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und-Typen, benutzerdefinierte wörterbuchoption, Anlagen größer als 1 MB |
-| **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Standorte: Exchange, Teams, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
+| **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
+| **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und-Typen, benutzerdefinierte wörterbuchoption, Anlagen größer als 1 MB |
+| **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
-Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
+Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten, Jammer Gemeinschaften und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
 
 >[!IMPORTANT]
 >Für Benutzer, die von Kommunikationsrichtlinien Richtlinien abgedeckt werden, muss entweder eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Kommunikations Kompatibilität testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -75,6 +75,8 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
 
 - **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
+- **Jammern**: Private Nachrichten und öffentliche Unterhaltungen und zugehörige Anlagen in Jammer Gemeinschaften können gescannt werden. Wenn ein Benutzer zur Kommunikations Konformitätsrichtlinie hinzugefügt wird, die das Jammern als definierten Kanal umfasst, werden die Kommunikationen in allen Jammer Gemeinschaften, in denen der Benutzer Mitglied ist, in den Überprüfungsprozess einbezogen. Jammern von Chats und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden in Anspruch nehmen. Jammern muss im [einheitlichen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) für Kommunikationsrichtlinien zur Überwachung von jammern von Kommunikation und Anlagen sein. Im nativen Modus befinden sich alle Yammer-Benutzer in Azure Active Directory (AAD), alle Gruppen sind Office 365-Gruppen, und alle Dateien werden in SharePoint Online gespeichert.
+
 - **Skype for Business Online**: Chat Kommunikation und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
     - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
@@ -84,7 +86,6 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SAP-SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Benutzerdefinierter Daten-Konnektor](archiving-third-party-data.md)
 
@@ -169,7 +170,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -236,7 +237,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Size** | Die Größe der Nachricht in KB. |
+| **Größe** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |

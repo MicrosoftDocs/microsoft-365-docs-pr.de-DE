@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über die Möglichkeiten, wie Sie mithilfe des Microsoft 365 Admin Center Hilfe erhalten können.
-ms.openlocfilehash: f9d42057e1ad16108237b9f53eedf60736cd6bd5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 847281acc368f45ffaf466cc3877c042507a7f79
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894745"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930195"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -94,6 +94,7 @@ Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microso
     </li>
 </ul>
  
+
 ## <a name="integrated-help"></a>Integrierte Hilfe
 
 Die Hilfe ist im gesamten Admin Center integriert, daher ist Sie genau dort, wo Sie Sie benötigen. Oben auf vielen Seiten finden Sie einen Inline Hilfetext, der eine Informationsübersicht über die Aufgabe bietet, sowie Links zu Artikeln, in denen Sie schnell die offizielle Dokumentation für ein vertieftes lernen finden können.
@@ -102,9 +103,9 @@ Die Hilfe ist im gesamten Admin Center integriert, daher ist Sie genau dort, wo 
 
 ## <a name="modern-self-help-powered-by-ai"></a>Moderne Selbsthilfe powered by AI
 
-Wenn Sie die Schaltfläche "Hilfe benötigen" im Microsoft 365 Admin Center auswählen, wird unsere moderne Selbsthilfe mit künstlicher Intelligenz betrieben. Wenn Sie beispielsweise nach " *meine Domäne überprüfen*" suchen, erhalten Sie die Schritte und einige Artikel, die Ihnen helfen werden. Wir verwenden Maschinelles Lernen, um die nächstgelegene Lösung zu finden, die für andere Administratoren, die ähnliche Abfragen vorgenommen haben, hilfreich ist.
+Um unsere moderne Selbsthilfe zu öffnen, die von künstlicher Intelligenz betrieben wird, wählen Sie die Schaltfläche **need help** im Microsoft 365 Admin Center aus. Wenn Sie beispielsweise nach "meine Domäne überprüfen" suchen, erhalten Sie die Schritte und einige Artikel, die Ihnen helfen werden. Wir verwenden Maschinelles Lernen, um die nächstgelegene Lösung zu Oberfläche, die anderen Administratoren geholfen hat, die ähnliche Abfragen eingegeben haben.
 
-Oder verwenden Sie den Support-Assistenten, wenn Sie nicht genau wissen, wie Sie in ihrer spezifischen Situation etwas erledigen können. Diese Erfahrung ist derzeit nur in englischer Sprache verfügbar. Verwenden Sie einfach die Umschaltfläche oben im Bereich "Hilfe benötigen", um Sie zu aktivieren. Der Support-Assistent bietet eine Konversations Schnittstelle, um Hilfe zu erhalten. Geben Sie Ihre Abfrage ein, und der Chatbot stellt Klärungs Fragen zur Verfügung, damit Sie die richtige Antwort für Ihre spezifische Situation erhalten. Betrachten Sie es als Ihren virtuellen Helfer, um Lösungen zu entdecken und Aufgaben abzuschließen.
+Oder verwenden Sie den Support-Assistenten, wenn Sie nicht genau wissen, wie Sie in ihrer spezifischen Situation etwas erledigen können. Derzeit ist diese Erfahrung nur in englischer Sprache verfügbar. Wenn Sie den Support-Assistenten aktivieren möchten, verwenden Sie einfach die Umschaltfläche oben im Bereich **need help** . Der Support-Assistent stellt Ihnen eine Konversations Schnittstelle zur Verfügung. Nachdem Sie Ihre Abfrage eingegeben haben, werden von der Chatbot Klärungs Fragen gestellt, damit Sie die richtige Antwort für Ihre spezifische Situation erhalten. Betrachten Sie es als Ihren virtuellen Helfer, um Lösungen zu entdecken und Aufgaben abzuschließen.
 
 ![Moderne Selbsthilfe](../../media/help-options.png)
 

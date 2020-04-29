@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617146"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919435"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
@@ -65,12 +65,12 @@ Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **Einstellungen** \> - **Sicherheits &amp; Datenschutz** .
+1. **Settings** \> Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite mit den Einstellungen für die **Sicherheit &amp; der Datenschutz** **Optionen** \>.
 
 ::: moniker-end
 
    
-2. Wählen Sie unter zulassen, dass **Ihre Personen Ihre eigenen Kennwörter zurücksetzen**die Verknüpfung für das **Azure AD Admin Center**aus. Azure wird kostenlos zur Verfügung gestellt!
+2. Wählen Sie **Selbstbedienung Kennwortzurücksetzung**aus, und wählen Sie den Link für das **Azure-Portal, um die Self-Service-Kennwortzurücksetzung**zu aktivieren. Azure wird kostenlos zur Verfügung gestellt!
   
 3. Wählen Sie im linken Navigationsbereich die Option **Benutzer** aus, und wählen Sie dann **Kennwortzurücksetzung**aus.
   

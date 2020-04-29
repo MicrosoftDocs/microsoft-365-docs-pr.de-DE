@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635783"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930145"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)
 
@@ -104,7 +104,7 @@ Verwenden Sie für diese Vorschau die OneDrive-Synchronisierungs-App-Version 19.
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Vorbereiten der SharePoint Online Management-Shell für die Vorschau
 
-Vergewissern Sie sich vor dem Aktivieren der Vorschau, dass SharePoint Online Verwaltungsshell Version 16.0.19418.12000 oder höher ausgeführt wird. Wenn Sie bereits über die neueste Version verfügen, können Sie die Vorschau aktivieren.
+Um die Vorschau mithilfe von PowerShell zu aktivieren, stellen Sie sicher, dass Sie SharePoint Online Management Shell-Version 16.0.19418.12000 oder höher ausgeführt haben. Wenn Sie bereits über die neueste Version verfügen, können Sie die Vorschau aktivieren.
 
 1. Wenn Sie eine frühere Version der SharePoint-Online-Verwaltungsshell aus dem PowerShell-Katalog installiert haben, können Sie das Modul aktualisieren, indem Sie das folgende Cmdlet ausführen.
 
@@ -119,7 +119,6 @@ Vergewissern Sie sich vor dem Aktivieren der Vorschau, dass SharePoint Online Ve
 4. Wählen Sie die gewünschte Sprache aus, und klicken Sie auf **Download**.
 
 5. Wählen Sie zwischen der x64- und der x86-Version der MSI-Datei aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, finden Sie unter [welche Version des Windows-Betriebssystems soll ich ausführen?](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. Nachdem Sie die Datei heruntergeladen haben, führen Sie die Datei aus, und führen Sie die Schritte im Setup-Assistenten aus.
 
@@ -137,6 +136,25 @@ Verwenden Sie zum Aktivieren der Vorschau das Cmdlet "SPOTenant":
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. Für Office 365 Multi-Geo: Wiederholen Sie die Schritte 1 und 2 für jeden ihrer verbleibenden geografischen Standorte.
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Aktivieren der Unterstützung für Vertraulichkeits Bezeichnungen mithilfe des Compliance Centers
+
+Diese Option wird derzeit für Mandanten als alternative Methode für die Aktivierung der Vorschau bereitstellen.
+
+Der globale Administrator für Ihre Organisation verfügt über vollständige Berechtigungen zum Erstellen und Verwalten aller Aspekte von Vertraulichkeitsbezeichnungen. Wenn Sie sich nicht als globaler Administrator anmelden, lesen Sie [Zum Erstellen und Verwalten von Vertraulichkeitsbezeichnungen erforderliche Berechtigungen](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Melden Sie sich beim [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)an, und navigieren Sie zu **Lösungs** > **Informationsschutz**
+    
+    Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
+
+2. Wenn auf der Registerkarte **Bezeichnungen** eine Meldung angezeigt wird, um die Fähigkeit zum Verarbeiten von Inhalten in Office Online-Dateien zu aktivieren, wählen Sie **jetzt**aktivieren aus:
+    
+    ![Schaltfläche "jetzt aktivieren", um Sensitivitäts Bezeichnungen für Office Online zu aktivieren](../media/sensitivity-labels-turn-on-banner.png)
+    
+    Der Befehl wird sofort ausgeführt, und wenn die Seite als nächstes aktualisiert wird, wird die Nachricht oder Schaltfläche nicht mehr angezeigt. 
+
+> [!NOTE]
+> Wenn Sie über Office 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Funktionen für alle geografischen Standorte zu aktivieren. Anweisungen hierzu finden Sie in den vorherigen Abschnitten.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planen des Roll-out nach dem Erstellen oder Ändern einer Sensitivitäts Bezeichnung
 

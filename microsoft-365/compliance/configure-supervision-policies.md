@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632370"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921457"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
 >[!IMPORTANT]
->Dieses Thema bezieht sich auf die Konfiguration von Aufsichtsrichtlinien in einem Microsoft 365-Abonnement. Informationen zum Konfigurieren der Kommunikations Kompatibilität für ein Microsoft 365-Abonnement finden Sie unter [configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
+>Nach dem Release of Communication Compliance in Microsoft 365 Compliance im Februar 2020 wird die Überwachung in Office 365 zurückgezogen. Aufsichtsrichtlinien stehen nicht mehr zur Erstellung zur Verfügung, und die Richtlinien werden nach einer längeren Lesezugriff-Zeit endgültig entfernt.
+>
+>Wenn Sie die Überwachung verwenden, beachten Sie Folgendes:
+>
+>- Ab dem 15. Juni 2020 werden Mandanten nicht in der Lage sein, neue Aufsichtsrichtlinien zu erstellen.
+>- Ab dem 31. August 2020 werden durch vorhandene Richtlinien keine neuen Nachrichten mehr erfasst.
+>- Ab dem 26. Oktober 2020 werden vorhandene Richtlinien gelöscht.
+>
+>Wir ermutigen Kunden, die derzeit die Überwachung in Office 365 untersuchen oder verwenden, aktiv dazu, die neue [Kommunikations Compliance](communication-compliance.md) -Lösung zu verwenden, um ihre Kommunikations Überwachungs-oder behördlichen Anforderungen mit einer wesentlich umfangreicheren Palette intelligenter Funktionen zu erfüllen.
 
 Verwenden Sie Aufsichtsrichtlinien zum Erfassen von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zum Überwachen der Kommunikation in Ihrer Organisation mithilfe von Aufsichtsrichtlinien finden Sie unter [Aufsichtsrichtlinien in Office 365](supervision-policies.md).
 

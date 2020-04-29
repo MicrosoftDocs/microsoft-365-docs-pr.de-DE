@@ -1,6 +1,6 @@
 ---
-title: 'Fallstudie: contoso konfiguriert eine Offensive Sprachrichtlinie für Microsoft Teams und Exchange Communications schnell.'
-description: Eine Fallstudie für Contoso und ihre schnelle Konfiguration einer Kommunikations Konformitätsrichtlinie zur Überwachung der anstößigen Sprache in Microsoft Teams und Exchange Online Kommunikation
+title: 'Fallstudie: contoso konfiguriert schnell eine Offensive Sprachrichtlinie für Microsoft Teams, Exchange und jammern von Kommunikation'
+description: Eine Fallstudie für Contoso und ihre schnelle Konfiguration einer Kommunikations Konformitätsrichtlinie zur Überwachung der anstößigen Sprache in Microsoft Teams, Exchange Online und jammern von Kommunikationen.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637177"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919712"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Fallstudie: contoso konfiguriert eine Offensive Sprachrichtlinie für Microsoft Teams und Exchange Communications schnell.
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Fallstudie: contoso konfiguriert schnell eine Offensive Sprachrichtlinie für Microsoft Teams, Exchange und jammern von Kommunikation
 
-Die Kommunikations Kompatibilität in Microsoft 365 hilft, Kommunikationsrisiken zu minimieren, indem Sie Sie bei der Erkennung, Erfassung und Durchführung von Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation unterstützen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Überprüfer können gescannte e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
+Die Kommunikations Kompatibilität in Microsoft 365 hilft, Kommunikationsrisiken zu minimieren, indem Sie Sie bei der Erkennung, Erfassung und Durchführung von Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation unterstützen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Bearbeiter können gescannte e-Mails, Microsoft Teams, jammern oder Kommunikation von Drittanbietern in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
 
-Die Contoso Corporation ist eine fiktive Organisation, die eine Richtlinie zum Überwachen von anstößigen Sprachen schnell konfigurieren muss. Sie verwenden Microsoft 365 in erster Linie für e-Mail-und Microsoft Teams-Unterstützung für Ihre Mitarbeiter, haben aber neue Anforderungen für die Durchsetzung von Unternehmensrichtlinien im Hinblick auf Mobbing am Arbeitsplatz. IT-Administratoren und Compliance-Experten von Contoso verfügen über grundlegende Kenntnisse der Grundlagen der Zusammenarbeit mit Microsoft 365 und suchen nach einer End-to-End-Anleitung, wie Sie schnell mit der Kommunikation beginnen können.
+Die Contoso Corporation ist eine fiktive Organisation, die eine Richtlinie zum Überwachen von anstößigen Sprachen schnell konfigurieren muss. Sie verwenden Microsoft 365 in erster Linie für e-Mails, Microsoft Teams und für die Unterstützung von jammern für Ihre Mitarbeiter, haben jedoch neue Anforderungen, um die Unternehmensrichtlinie um die Belästigung durch Mobbing zu erzwingen. IT-Administratoren und Compliance-Experten von Contoso verfügen über grundlegende Kenntnisse der Grundlagen der Zusammenarbeit mit Microsoft 365 und suchen nach einer End-to-End-Anleitung, wie Sie schnell mit der Kommunikation beginnen können.
 
 In dieser Fallstudie werden die Grundlagen für die schnelle Konfiguration einer Kommunikations Konformitätsrichtlinie für die Überwachung der Kommunikation für anstößige Sprachen behandelt. Dieser Leitfaden umfasst Folgendes:
 
@@ -41,7 +41,7 @@ In dieser Fallstudie werden die Grundlagen für die schnelle Konfiguration einer
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Schritt 1: Planen der Kommunikation Compliance
 
-IT-Administratoren und Compliance-Experten von Contoso nahmen an Online-Webinaren zu Compliance-Lösungen in Microsoft 365 Teil und entschieden, dass Compliance-Richtlinien für die Kommunikation Ihnen helfen, die aktualisierten Unternehmensrichtlinien Anforderungen für die Verringerung der Belästigung am Arbeitsplatz zu erfüllen. Gemeinsam haben Sie einen Plan zum Erstellen und Aktivieren einer Kommunikations Konformitätsrichtlinie entwickelt, die die beleidigende Sprache für Chats überwacht, die in Microsoft Teams in e-Mail-Nachrichten gesendet werden, die in Exchange Online gesendet werden. Ihr Plan umfasst die Ermittlung:
+IT-Administratoren und Compliance-Experten von Contoso nahmen an Online-Webinaren zu Compliance-Lösungen in Microsoft 365 Teil und entschieden, dass Compliance-Richtlinien für die Kommunikation Ihnen helfen, die aktualisierten Unternehmensrichtlinien Anforderungen für die Verringerung der Belästigung am Arbeitsplatz zu erfüllen. Gemeinsam haben Sie einen Plan zum Erstellen und Aktivieren einer Kommunikations Konformitätsrichtlinie entwickelt, mit der die beleidigende Sprache für in Microsoft Teams gesendete Chats, private Nachrichten und Community-Unterhaltungen in jammern sowie in Exchange Online gesendete e-Mail-Nachrichten überwacht werden. Ihr Plan umfasst die Ermittlung:
 
 - Die IT-Administratoren, die Zugriff auf die Kommunikationsrichtlinien Features benötigen.
 - Die Compliance-Experten, die Kommunikationsrichtlinien erstellen und verwalten müssen.
@@ -146,6 +146,12 @@ Für den Einstieg in eine Kommunikations Konformitätsrichtlinie gibt es mehrere
 Für die Kommunikations Kompatibilität müssen Überwachungsprotokolle Warnungen anzeigen und von den Prüfern vorgenommene Korrekturaktionen nachverfolgen. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer definierten Organisationsrichtlinie zugeordnet sind, oder wenn es eine Änderung an einer Kommunikations Konformitätsrichtlinie gibt.
 
 Contoso IT-Administratoren überprüfen und vervollständigen die [schrittweisen Anweisungen](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) zum Aktivieren der Überwachung. Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Die IT-Administratoren von Contoso müssen diese Aktion nur einmal durchführen.
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>Konfigurieren des Jammer-Mandanten für den einheitlichen Modus
+
+Für die Kommunikation ist es erforderlich, dass der Jammer-Mandant für eine Organisation im einheitlichen Modus ist, um anstößige Sprachen in privaten Nachrichten und Unterhaltungen in öffentlichen Communitys zu überwachen.
+
+IT-Administratoren von Contoso stellen Sie sicher, dass Sie die Informationen im [Thema "Übersicht über den einheitlichen Modus" "jammern" im Microsoft 365-Thema](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) lesen, und befolgen Sie die Schritte zum Ausführen des Migrationstools im Thema [configure your jammern Network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Einrichten einer Gruppe für Benutzer in einem Bereich
 

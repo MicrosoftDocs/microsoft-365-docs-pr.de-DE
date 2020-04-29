@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634177"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919692"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
-Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Überprüfer können gescannte e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
+Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Bearbeiter können gescannte e-Mails, Microsoft Teams, jammern oder Kommunikation von Drittanbietern in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
 
 Compliance-Richtlinien für Kommunikation in Microsoft 365 helfen Ihnen, viele moderne Herausforderungen im Zusammenhang mit Compliance sowie interner und externer Kommunikation zu bewältigen, einschließlich:
 
@@ -99,6 +99,7 @@ Compliance-Richtlinien für die Kommunikation überprüfen und Erfassen von Nach
 
 - **Microsoft Teams**: Chat Kommunikation für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Richtlinien überprüfen jetzt automatisch alle Microsoft Teams-Kanäle und-Teams für bestimmte Benutzer, die in einer Richtlinie definiert sind, sodass keine separate Zuordnungsliste für Microsoft Teams-Zuordnungen mehr erforderlich ist.
 - **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Aufsichtsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
+- **Jammern**: Private Nachrichten und öffentliche Community-Unterhaltungen in " [jammern](https://docs.microsoft.com/yammer/yammer-landing-page) " werden in Kommunikationsrichtlinien unterstützt. Jammern ist ein optionaler Kanal und muss sich im [einheitlichen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) befinden, um das Überprüfen von Nachrichten und Anlagen zu unterstützen.
 - **Skype for Business Online**: communication Compliance Policies unterstützen die Scan Chat Kommunikation und zugehörige Anlagen in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Drittanbieterquellen**: Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Communication Compliance unterstützt Verbindungen zu verschiedenen gängigen Plattformen, einschließlich Instant Bloomberg, Facebook, Twitter und andere.
 
@@ -155,4 +156,4 @@ Das Nachverfolgen und Verwalten von Compliance-Problemen, die durch Kommunikatio
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) oder in der [Fallstudie für Contoso](communication-compliance-case-study.md) und dazu, wie Sie eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams und Exchange Online Kommunikation schnell konfiguriert haben.
+Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) oder in der [Fallstudie für Contoso](communication-compliance-case-study.md) und dazu, wie Sie eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams, Exchange Online und Jammer Kommunikation schnell konfiguriert haben.

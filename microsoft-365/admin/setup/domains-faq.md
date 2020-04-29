@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627594"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919481"
 ---
 # <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
 
@@ -492,7 +492,7 @@ Sie können, aber es gibt Einschränkungen:
         
     4. Testen Sie e-Mails an Personen, die sich im anderen e-Mail-System befinden. Senden Sie beispielsweise eine e-Mail an den Benutzer C. Diese e-Mail sollte an das Postfach des Benutzers C auf dem ursprünglichen e-Mail-Server übermittelt werden.
         
-    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem Gründungs-Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und vergewissern Sie sich, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
+    5. Überprüfen Sie von einem externen Konto oder aus dem e-Mail-Konto eines Mitarbeiters im anderen e-Mail-System, dass die Weiterleitung ordnungsgemäß auf dem anderen e-Mail-System eingerichtet ist. Senden Sie beispielsweise aus dem ursprünglichen Server Konto von Benutzer C oder einem Hotmail-Konto Benutzer eine e-Mail, und stellen Sie sicher, dass Sie im Office 365 Postfach von Benutzer a eintrifft.
         
 9. Postfachinhalt migrieren
     

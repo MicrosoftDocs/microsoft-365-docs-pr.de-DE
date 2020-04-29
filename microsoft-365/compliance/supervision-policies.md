@@ -19,14 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626969"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930172"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
+
+>[!IMPORTANT]
+>Nach dem Release of Communication Compliance in Microsoft 365 Compliance im Februar 2020 wird die Überwachung in Office 365 zurückgezogen. Aufsichtsrichtlinien stehen nicht mehr zur Erstellung zur Verfügung, und die Richtlinien werden nach einer längeren Lesezugriff-Zeit endgültig entfernt.
+>
+>Wenn Sie die Überwachung verwenden, beachten Sie Folgendes:
+>
+>- Ab dem 15. Juni 2020 werden Mandanten nicht in der Lage sein, neue Aufsichtsrichtlinien zu erstellen.
+>- Ab dem 31. August 2020 werden durch vorhandene Richtlinien keine neuen Nachrichten mehr erfasst.
+>- Ab dem 26. Oktober 2020 werden vorhandene Richtlinien gelöscht.
+>
+>Wir ermutigen Kunden, die derzeit die Überwachung in Office 365 untersuchen oder verwenden, aktiv dazu, die neue [Kommunikations Compliance](communication-compliance.md) -Lösung zu verwenden, um ihre Kommunikations Überwachungs-oder behördlichen Anforderungen mit einer wesentlich umfangreicheren Palette intelligenter Funktionen zu erfüllen.
 
 Mit Aufsichtsrichtlinien in Microsoft 365 können Sie Mitarbeiter Kommunikationen zur Untersuchung durch designierte Bearbeiter erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder Drittanbieter Kommunikationen in Ihrer Organisation erfassen. Bearbeiter können dann die Nachrichten überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation übereinstimmen und diese mit dem Klassifizierungs lösen.
 
@@ -39,10 +50,6 @@ Mithilfe dieser Richtlinien können Sie auch viele moderne Anforderungen an die 
 In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Microsoft 365 unterstützt die Trennung zwischen der Konfiguration von Aufsichtsrichtlinien Features und der Konfiguration von Richtlinien für aufgezeichnete Kommunikationen. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
 
 Eine kurze Übersicht über Aufsichtsrichtlinien finden Sie im [Video zur Aufsichtsrichtlinie](https://youtu.be/C3Y8WZ7o_dI) im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries).
-
-Weitere Informationen zu Verbesserungen und Verfügbarkeit der Überwachungsfunktionen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
-
-Möchten Sie die neue Erfahrung mit der Kommunikations Konformität in Microsoft 365 testen? Sehen Sie sich die neuen und verbesserten Features an, die in [Communication Compliance in Microsoft 365](communication-compliance.md)zur Verfügung stehen.
 
 ## <a name="transitioning-from-supervision"></a>Übergang von der Überwachung
 
@@ -60,7 +67,7 @@ Aufsichtsrichtlinien können die Überwachung der Kommunikation in Ihrer Organis
 
 - **Unternehmensrichtlinien**
 
-    Mitarbeiter müssen in ihrer geschäftsbezogenen Kommunikation angemessene Verwendung, ethische Standards und andere Unternehmensrichtlinien einhalten. Aufsichtsrichtlinien können Richtlinienverstöße erkennen und Sie bei der Durchführung von Korrekturmaßnahmen unterstützen, um diese Art von Vorfällen zu verringern. Beispielsweise können Sie Ihre Organisation auf mögliche Verletzungen von Humanressourcen wie Belästigung oder die Verwendung ungeeigneter oder anstößiger Sprachen in der Mitarbeiterkommunikation überwachen.
+    Mitarbeiter müssen in ihrer geschäftsbezogenen Kommunikation angemessene Verwendung, ethische Standards und andere Unternehmensrichtlinien einhalten. Aufsichtsrichtlinien können Richtlinienverstöße erkennen und Sie bei der Durchführung von Korrekturmaßnahmen unterstützen, um diese Art von Vorfällen zu verringern. Sie können beispielsweise potenzielle Verletzungen von Humanressourcen wie Belästigung oder die Verwendung ungeeigneter oder anstößiger Sprachen in der Mitarbeiterkommunikation überwachen.
 
 - **Risikomanagement**
 
@@ -101,12 +108,12 @@ Mit Aufsichtsrichtlinien können Sie festlegen, dass Nachrichten in einer oder m
 
 - **Microsoft Teams:** Chatnachrichten und zugehörige Anlagen sowohl in öffentlichen als auch privaten Microsoft Teams-Kanälen und einzelnen Chats können überwacht werden. Microsoft Teams-Chats entsprechende Aufsichtsrichtlinien Bedingungen werden einmal alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
-    - **Für Teams-Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Dies gilt für 1-zu-1-oder 1: n-Benutzer/Chat-Beziehungen.
+    - **Für Teams-Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Diese Konfiguration ist für 1-zu-1-oder 1: n-Benutzer-/-Chat-Beziehungen.
     - **Für Teams-Kanal Kommunikation:** Weisen Sie jede Microsoft Team Channel-oder Microsoft 365-Gruppe zu, die Sie überwachen möchten, die einen bestimmten Benutzer für die Aufsichtsrichtlinie enthält. Wenn Sie denselben Benutzer anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Aufsichtsrichtlinie hinzufügen.
 
 - **Skype for Business Online:** Chat Nachrichten und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Aufsichtsrichtlinien Bedingungen entsprechen, werden einmal alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
-    - **Für Skype for Business Online Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Dies gilt für 1-zu-1-oder 1: n-Benutzer/Chat-Beziehungen.
+    - **Für Skype for Business Online Chat Überwachung:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Aufsichtsrichtlinie Diese Konfiguration ist für 1-zu-1-oder 1: n-Benutzer-/-Chat-Beziehungen.
 
 - **Drittanbieterquellen:** Sie können die Kommunikation von Drittanbieter-Quellen (wie Facebook oder Dropbox) für Daten überwachen, die in Postfächer in Ihrer Organisation importiert werden. [Hier erfahren Sie, wie Sie drittanbieterdaten importieren](archiving-third-party-data.md).
 
@@ -147,14 +154,14 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 >- Überwachen der Kommunikation von Microsoft Teams in Ihrer Organisation für anstößige Sprachen
 >- verhindern oder blockieren anstößiger Sprachen in der Kommunikation in Ihrer Organisation
 
-Beachten Sie, dass das Modell keine erschöpfende Liste mit anstößigen Sprachen bereitstellt. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, das Modell nach eigenem Ermessen zu aktualisieren. Das Modell unterstützt Ihre Organisation möglicherweise bei der Überwachung anstößiger Sprache, aber das Modell ist nicht dazu gedacht, die einzige Möglichkeit zu bieten, diese Sprache zu überwachen oder zu adressieren. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung und Sperrung anstößiger Sprachen verantwortlich.
+Das Modell bietet keine erschöpfende Liste der beleidigenden Sprache. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, das Modell nach eigenem Ermessen zu aktualisieren. Das Modell unterstützt Ihre Organisation möglicherweise bei der Überwachung anstößiger Sprache, aber das Modell ist nicht dazu gedacht, die einzige Möglichkeit zu bieten, diese Sprache zu überwachen oder zu adressieren. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung und Sperrung anstößiger Sprachen verantwortlich.
 
 Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
 
 |**Typ**|**Beschreibung**|
 |:-----|:-----|
 | **Weltlichkeiten** | Ausdrücke, die die meisten Menschen in Verlegenheit bringen. |
-| **Bögen** | Ausdrücke, die Vorurteile gegen bestimmte Gruppen (z. b. Rasse, ethnische Zugehörigkeit, sexuelle Ausrichtung, Behinderung) Ausdrücken. |
+| **Bögen** | Ausdrücke, die Vorurteile gegenüber bestimmten Gruppen (beispielsweise Rasse, ethnische Zugehörigkeit, sexuelle Orientierung, Behinderung) Ausdrücken. |
 | **Sticheleien** | Ausdrücke, die verspotten, verurteilen, lächerlich machen oder potenziell Wut oder Gewalt verursachen könnten. |
 | **Getarnte Ausdrücke** | Ausdrücke, für die die Bedeutung oder Aussprache identisch mit einem anderen beleidigenden Begriff ist. |
 
@@ -277,7 +284,7 @@ Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag
 
 ## <a name="audit"></a>Überwachung
 
-In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Dies kann eine Zusammenfassung aller Aufsichtsaktivitäten sein, die einer definierten Richtlinie zugeordnet sind, oder wenn sich eine Aufsichtsrichtlinie ändert. Aufsichtsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder durch ihre Aufsichtsrichtlinien überwachten Aktion bieten einen Nachweis über Aufsichtsverfahren.
+In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Diese Informationen können eine Zusammenfassung aller Aufsichtsaktivitäten sein, die einer definierten Richtlinie zugeordnet sind, oder wenn sich eine Aufsichtsrichtlinie ändert. Aufsichtsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder durch ihre Aufsichtsrichtlinien überwachten Aktion bieten einen Nachweis über Aufsichtsverfahren.
 
 Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den einheitlichen Überwachungsprotokollen zur Verfügung gestellt:
 
