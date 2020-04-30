@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59e2c36e87232efcda29f9d5abe41b4c37a17a62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071252"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943324"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft Compliance-Angebote
 
@@ -133,7 +133,7 @@ Microsoft bietet eine umfassende Reihe von Compliance-angeboten, mit denen Ihre 
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (Indien)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <p><a href="offering-sec-reg-sci.md">SEC-Regulierung Sci</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC-Verordnung SCI</a></p>
                         <p><a href="offering-shared-assessments.md">Gemeinsam genutzte Bewertungen</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Deutschland)</a></p>
@@ -182,6 +182,7 @@ Microsoft bietet eine umfassende Reihe von Compliance-angeboten, mit denen Ihre 
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Netzwerk (Neuseeland)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (Vereinigtes Königreich)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (Argentinien)</a></p>
+                        <p><a href="offering-russia-data-localization.md">Lokalisierung persönlicher Daten (Russland)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>
