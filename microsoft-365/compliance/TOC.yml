@@ -165,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: Erfahren Sie mehr über den Verfügbarkeitsschlüssel für Kundenschlüssel
           href: customer-key-availability-key-understand.md
+    - name: Verschlüsselung von Daten während der Übertragung
+      href: office-365-encryption-for-data-in-transit.md
     - name: E-Mail-Verschlüsselung
       href: email-encryption.md
       items:
@@ -1204,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF (VEREINIGTES KÖNIGREICH)
               href: offering-pasf-uk.md
+            - name: Lokalisierung persönlicher Daten (Russland)
+              href: offering-russia-data-localization.md
         - name: Nordamerika
           items:
             - name: California Consumer Privacy Act (CCPA)
