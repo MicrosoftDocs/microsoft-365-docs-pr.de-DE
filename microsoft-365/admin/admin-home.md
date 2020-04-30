@@ -10,18 +10,20 @@ ms.topic: landing-page
 layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Erfahren Sie mehr über die Ressourcen, die Microsoft 365-Administratoren zur Verfügung stehen.
 ms.custom: okr_smb
-ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 59b306ff3986c8dc776d149f2de9fc110617f2a4
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781493"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942279"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 Admin-Hilfecenter
 

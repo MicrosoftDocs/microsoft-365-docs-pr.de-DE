@@ -9,17 +9,19 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
+search.appverid:
+- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
 ms.custom: ''
 description: Erfahren Sie mehr über das Feature neue Kontingente.
-ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632413"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942175"
 ---
 # <a name="allotment-basics"></a>Grundlegendes zur Zuteilung
 
