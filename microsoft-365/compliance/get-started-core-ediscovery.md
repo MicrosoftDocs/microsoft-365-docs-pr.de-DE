@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Core eDiscovery in Microsoft 365 beginnen. Nachdem Sie eDiscovery-Berechtigungen zugewiesen und eine Anfrage erstellt haben, können Sie Mitglieder hinzufügen, eDiscovery-Haltestatus erstellen und dann nach Daten suchen und exportieren, die für Ihre Untersuchung relevant sind.
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551430"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943384"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Erste Schritte mit der Haupt-eDiscovery
+# <a name="get-started-with-core-ediscovery"></a>Erste Schritte mit Core eDiscovery
 
 Core eDiscovery in Microsoft 365 bietet ein einfaches eDiscovery-Tool, mit dem Organisationen Inhalte in Microsoft 365 und Office 365 durchsuchen und exportieren können. Sie können auch die zentrale eDiscovery verwenden, um eine eDiscovery-Aufbewahrung an Inhaltsspeicherorten wie Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Microsoft Teams zu platzieren. Für die Bereitstellung von Haupt-eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation mit der Verwendung von Core eDiscovery für die Suche, den Export und die Aufbewahrung von Inhalten beginnen kann.
 
@@ -36,15 +36,25 @@ Für die Lizenzierung für die zentrale eDiscovery ist das entsprechende Organis
 
 - **Organisations Abonnement:** Um auf die Haupt-eDiscovery im Microsoft 365 Compliance Center oder im Office 365 Security & Compliance Center zuzugreifen und die Funktionen Hold und Export zu verwenden, muss Ihre Organisation über ein Microsoft 365 E3-oder Office 365 E3-Abonnement oder höher verfügen.
 
-- **Lizenzierung pro Benutzer:** Um eine eDiscovery-Aufbewahrung auf Benutzerpostfächern zu platzieren, muss diesem Benutzer je nach Ihrem Organisations Abonnement eine der folgenden Lizenzen zugewiesen sein:
+- **Lizenzierung pro Benutzer:** Um einen eDiscovery-Speicher für Postfächer und Websites zu halten, muss einem Benutzer je nach Ihrem Organisations Abonnement eine der folgenden Lizenzen zugewiesen sein:
 
   - Eine Microsoft 365 E3-oder Office 365 E3-Lizenz oder höher
 
+   ODER
+
   - Eine Microsoft 365 E1-oder Office 365 E1-Lizenz mit einer Exchange Online Plan 2-oder Exchange Online-Add-on-Lizenz für die Archivierung
 
+  UND
+
+  - Eine Microsoft 365 E1-oder Office 365 E1-Lizenz mit einer SharePoint Online Plan 2-oder OneDrive für Unternehmen-Add-on-Lizenz für den Plan 2
+  
   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-Informationen zu Microsoft 365 und Office 365 Lizenzierung finden Sie unter "Discover & respond" im [Microsoft 365-Kompatibilitäts Lizenzierungs Vergleich](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf).
+Informationen zur Lizenzierung:
+
+- Laden Sie die Lösung "Discover & respond" im Vergleich zur [Microsoft 365-Kompatibilitäts Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)herunter.
+
+- Weitere Informationen finden Sie unter [Security & Compliance Center Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Schritt 2: Zuweisen von eDiscovery-Berechtigungen
 

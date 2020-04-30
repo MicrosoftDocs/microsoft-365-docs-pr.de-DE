@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite nach Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079632"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943214"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
 

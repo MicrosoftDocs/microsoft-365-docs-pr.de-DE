@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Microsoft 365-Gruppen und Skype for Business Unterhaltungen gefunden wurden.
-ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631760"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943430"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 

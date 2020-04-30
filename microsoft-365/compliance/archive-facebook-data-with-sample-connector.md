@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 5c8bb4c1330af0f9c10dd93f9cedd47b3d3b34b0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 21023e380e4065f40edd4c3dea3f4c461d743f04
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637125"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943234"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten
 

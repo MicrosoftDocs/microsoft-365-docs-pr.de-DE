@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Spoofing-Absender so konfiguriert werden, dass Sie zulassen oder nicht zulassen, und andere Spoof Intelligence-Einstellungen in Exchange Online und Exchange Online Protection (EoP).
-ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630491"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949237"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Konfigurieren von Spoof Intelligence in Microsoft 365
 
@@ -166,13 +166,11 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Phis
 
 Die Konfigurationsoptionen für Spoof Intelligence werden unter [Spoof Settings in Anti-Phishing Policies](set-up-anti-phishing-policies.md#spoof-settings)beschrieben.
 
-Die verfügbaren Optionen hängen von Ihrem Abonnement ab:
+Sie können Spoof Intelligence-Einstellungen in der standardmäßigen Anti-Phishing-Richtlinie und auch in benutzerdefinierten Richtlinien konfigurieren. Anweisungen basierend auf Ihrem Abonnement finden Sie in einem der folgenden Themen:
 
-- Eigenständige EoP-Organisationen ohne Exchange Online Postfächer können keine Spoof Intelligence-Einstellungen konfigurieren.
+- [Konfigurieren von Anti-Phishing-Richtlinien in EoP](configure-anti-phishing-policies-eop.md).
 
-- Microsoft 365-Organisationen mit Exchange Online Postfächern können Spoof Intelligence-Einstellungen in der standardmäßigen (und einzigen) Anti-Phishing-Richtlinie konfigurieren. Anweisungen finden Sie unter [configure the default Anti-Phishing Policy in EoP](configure-anti-phishing-policies-eop.md).
-
-- Microsoft 365-Organisationen mit ATP können Spoof Intelligence-Einstellungen in der standardmäßigen ATP-Anti-Phishing-Richtlinie und auch in benutzerdefinierten ATP-Richtlinien für die Anti-Phishing konfigurieren. Anweisungen finden Sie unter [configure ATP Anti-Phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
@@ -224,7 +222,7 @@ Sie sollten sich sorgfältig mit Spoofing und Phishing-Schutz bemühen. Im folge
 
 - Überprüfen Sie den **Spoof-e-Mail-Bericht**. Sie können diesen Bericht häufig verwenden, um gefälschte Absender anzuzeigen und zu verwalten. Weitere Informationen finden Sie unter [Spoof Detections Report](view-email-security-reports.md#spoof-detections-report).
 
-- Überprüfen Sie die SPF-Konfiguration (Sender Policy Framework). Eine kurze Einführung in SPF und die schnelle Konfiguration finden Sie unter Einrichten von [SPF in Microsoft 365, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ausführlichere Informationen zur Verwendung von SPF durch Office 365 oder zur Problembehandlung oder zu nicht standardmäßigen Bereitstellungen, z. B. Hybridbereitstellungen, finden Sie unter [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+- Überprüfen Sie die SPF-Konfiguration (Sender Policy Framework). Eine kurze Einführung in SPF und seine schnelle Konfiguration finden Sie unter [Einrichten von SPF in Microsoft 365 zur Verhinderung von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ausführlichere Informationen zur Verwendung von SPF durch Office 365 oder zur Problembehandlung oder zu nicht standardmäßigen Bereitstellungen, z. B. Hybridbereitstellungen, finden Sie unter [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 - Überprüfen Sie Ihre DomainKeys Identified Mail (DKIM)-Konfiguration. Sie sollten zusätzlich zu SPF und DMARC DKIM verwenden, um zu verhindern, dass Angreifer Nachrichten senden können, die so aussehen, wie Sie von Ihrer Domäne stammen. Mit DKIM können Sie E-Mail-Nachrichten in der Kopfzeile der Nachricht eine digitale Signatur hinzufügen. Weitere Informationen finden Sie unter [Verwenden von DKIM zum Überprüfen von ausgehenden e-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet wurden](use-dkim-to-validate-outbound-email.md).
 

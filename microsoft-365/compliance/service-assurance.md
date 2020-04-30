@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter Überwachungen herunter, erfahren Sie, wie Microsoft Kundendaten schützt und wie Sie ISO, HIPAA, FINRA und FedRAMP einhalten können, wenn Sie Office 365 verwenden.
-ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631282"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943588"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Dienst Assurance im Security & Compliance Center
 
@@ -57,7 +58,7 @@ Der Zugriff auf die Dienst Assurance erfolgt über das Security & Compliance Cen
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
     
 3. Wählen Sie im linken Bereich **Dienst Assurance**aus. [Wählen Sie als nächstes Ihre Branchen-und Ländereinstellungen](service-assurance.md#Chooseyourindustryregional) und [andere Dienst Assurance-Benutzer oder-Gruppen an Bord](service-assurance.md#addother)aus.
     

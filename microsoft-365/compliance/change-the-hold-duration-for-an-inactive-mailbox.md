@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Nachdem ein Microsoft 365-Postfach deaktiviert wurde, können Sie die Dauer der Aufbewahrungsrichtlinie oder der Microsoft 365-Aufbewahrungsrichtlinie ändern, die dem inaktiven Postfach zugewiesen ist. Die Aufbewahrungsdauer definiert die Aufbewahrungsdauer von Elementen im Ordner „Wiederherstellbare Elemente".
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636333"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942928"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Ändern der Aufbewahrungsdauer für ein inaktives Postfach
 

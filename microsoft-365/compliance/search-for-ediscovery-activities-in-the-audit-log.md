@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Hier erfahren Sie, wie Sie das Überwachungsprotokoll nach Ereignissen durchsuchen, die protokolliert werden, wenn Compliance-Administratoren Inhaltssuche-und eDiscovery-Fall Aufgaben im Security & Compliance Center ausführen.
-ms.openlocfilehash: 96f6b121064e7540778a418baa96bae448e4eed3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631826"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943654"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
 
@@ -46,7 +48,7 @@ Derzeit müssen Sie einige bestimmte Aufgaben durchführen, um eDiscovery-Aktivi
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im linken Bereich auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
@@ -180,7 +182,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die enthalten sin
 |OrganizationId  <br/> |Die GUID für Ihre Microsoft 365-Organisation.  <br/> |
 |Parameter  <br/> |Der Name und der Wert für die Parameter, die mit dem entsprechenden Cmdlet verwendet wurden.  <br/> |
 |PublicFolderLocations  <br/> |Die Speicherorte für Öffentliche Ordner in Exchange Online, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall in den Haltebereich gestellt werden.  <br/> |
-|Abfrage  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
+|Query  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
 |RecordType  <br/> |Der vom Datensatz angegebene Vorgangstyp. Der Wert **18** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Aktivitäten des eDiscovery-Cmdlets](#ediscovery-cmdlet-activities) aufgeführt ist. Der Wert **24** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Vorgehensweise zum Suchen und Anzeigen von eDiscovery-Aktivitäten](#how-to-search-for-and-view-ediscovery-activities) aufgeführt ist.  <br/> |
 |ResultStatus  <br/> |Gibt an, ob die Aktion (in der Eigenschaft "Operation" angegeben) erfolgreich war oder nicht.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Gibt an, dass es sich bei der Aktivität um ein Sicherheits & Compliance Center-Ereignis handelt. Für diese Eigenschaft wird für alle eDiscovery-Aktivitäten der Wert **0 (null** ) verwendet.  <br/> |

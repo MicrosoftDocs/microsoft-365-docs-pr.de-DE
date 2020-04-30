@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634980"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942877"
 ---
 # <a name="understand-your-invoice"></a>Informationen zu Ihrer Rechnung
 
 Die Rechnung enthält eine Zusammenfassung ihrer Gebühren und Anweisungen zur Zahlung. Sie können [Ihre Online Rechnung](#view-your-online-invoice) im Microsoft 365 Admin Center anzeigen. Sie können es auch im Portable Document Format (. pdf) herunterladen, um es per e-Mail zu senden.
 
-Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informationen unter [Anzeigen Ihrer Rechnung für Microsoft 365 für Unternehmen](view-your-bill-or-invoice.md).
+Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informationen Untergrund [Legendes zu Ihrer Rechnung für Microsoft 365 for Business](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Grundlegendes zum Rechnungskopf
 
@@ -78,7 +78,7 @@ Der Gesamtbetrag, der für jede Dienst Familie fällig ist, wird berechnet, inde
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Gebühren auf Ihrer Microsoft-Kundenvertrags Rechnung verstehen](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Überprüfen Ihrer Microsoft-Kundenvertrags Rechnung](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Grundlegendes zur letzten Rechnungsseite
 

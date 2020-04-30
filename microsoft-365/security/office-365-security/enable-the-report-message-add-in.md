@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921576"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939475"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
@@ -133,7 +133,7 @@ Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Bericht
 
    ![Add-in-Seite ankündigen](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>Informationen zur Verwendung des Berichtsnachrichten-Add-ins
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Informationen zur Verwendung des Berichtsnachrichten-Add-ins
 
 Personen, denen das Add-in zugewiesen ist, werden die folgenden Symbole angezeigt:
 
@@ -147,7 +147,7 @@ Personen, denen das Add-in zugewiesen ist, werden die folgenden Symbole angezeig
 
 Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie einen Link zur [Verwendung des Berichtsnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)hinzu.
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"
 
 1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
@@ -158,3 +158,11 @@ Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie e
 3. Überprüfen und bearbeiten Sie in der angezeigten Dropdown- **Meldung zum Bearbeiten des Berichtsnachrichten** die Einstellungen entsprechend Ihrer Organisation. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
    ![Einstellungen für das Add-in "Berichtsnachricht"](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>Anzeigen und Überprüfen von gemeldeten Nachrichten
+
+Sie haben folgende Möglichkeiten, um Nachrichten zu überprüfen, die Benutzer an Microsoft melden:
+
+- Verwenden Sie das Portal für Übermittlungen von Administratoren. Weitere Informationen finden Sie unter [View User Submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+
+- Erstellen Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet), um Kopien gemeldeter Nachrichten zu senden. Anweisungen finden Sie unter [Verwenden von Nachrichtenfluss Regeln, um zu sehen, was Ihre Benutzer an Microsoft melden](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

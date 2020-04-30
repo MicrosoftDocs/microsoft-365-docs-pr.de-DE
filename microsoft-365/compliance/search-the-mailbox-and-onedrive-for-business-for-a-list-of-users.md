@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Verwenden Sie die Inhaltssuche und das Skript in diesem Artikel, um die Postfächer und OneDrive für Unternehmen Websites für eine Gruppe von Benutzern zu durchsuchen.
-ms.openlocfilehash: fa17b9eab2613407ae6c537ffc2619e5857f9182
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 31dfa2057eff27ed1d2579cc541361858a11c7ce
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634673"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943274"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden Sie die Inhaltssuche, um das Postfach und die OneDrive for Business-Website nach einer Liste mit Benutzern zu durchsuchen.
 

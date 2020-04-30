@@ -16,14 +16,15 @@ ms.collection:
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Verstehen Sie, warum geschätzte und tatsächliche Suchergebnisse bei Suchvorgängen mit eDiscovery-Tools in Office 365 variieren können. '
-ms.openlocfilehash: 927042cd7c5f3966e7598f16fdbbcd4e7ddb7923
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3363b773e162d25a893319bcf2e38c7dd23f05cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632552"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943018"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen
 

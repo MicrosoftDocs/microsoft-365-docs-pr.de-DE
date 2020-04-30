@@ -16,22 +16,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ROBOTS: NOINDEX, NOFOLLOW
 description: Hinzufügen und Verwalten von Aktivitäts Warnungen im Security & Compliance Center, sodass Microsoft 365 Ihnen e-Mail-Benachrichtigungen sendet, wenn Benutzer bestimmte Aktivitäten ausführen.
-ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634229"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943164"
 ---
 # <a name="create-activity-alerts"></a>Aktivitäts Warnungen erstellen
 
 Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachrichtigung erhalten, wenn Benutzer bestimmte Aktivitäten in Office 365 durchführen. Aktivitäts Warnungen ähneln der Suche nach Ereignissen im Überwachungsprotokoll, es sei denn, es wird eine e-Mail-Nachricht gesendet, wenn ein Ereignis für eine Aktivität, für die Sie eine Benachrichtigung erstellt haben, erfolgt. 
   
- **Warum sollten Aktivitäts Warnungen verwendet werden, anstatt das Überwachungsprotokoll zu durchsuchen?** Es können bestimmte Arten von Aktivitäten oder Aktivitäten von bestimmten Benutzern ausgeführt werden, über die Sie wirklich Bescheid wissen möchten. Anstatt sich daran zu erinnern, das Überwachungsprotokoll für diese Aktivitäten zu durchsuchen, können Sie Aktivitäts Warnungen verwenden, damit Microsoft 365 Ihnen eine e-Mail-Nachricht sendet, wenn Benutzer diese Aktivitäten ausführen. Sie können beispielsweise eine Aktivitäts Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Dateien in SharePoint löscht, oder Sie können eine Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Nachrichten endgültig aus seinem Postfach löscht. Die an Sie gesendete e-Mail-Benachrichtigung enthält Informationen darüber, welche Aktivität ausgeführt wurde, und den Benutzer, der Sie ausgeführt hat. 
+ **Warum sollten Aktivitäts Warnungen verwendet werden, anstatt das Überwachungsprotokoll zu durchsuchen?** Es können bestimmte Arten von Aktivitäten oder Aktivitäten von bestimmten Benutzern ausgeführt werden, über die Sie wirklich Bescheid wissen möchten. Anstatt sich daran zu erinnern, das Überwachungsprotokoll für diese Aktivitäten zu durchsuchen, können Sie Aktivitäts Warnungen verwenden, damit Microsoft 365 Ihnen eine e-Mail-Nachricht sendet, wenn Benutzer diese Aktivitäten ausführen. Sie können beispielsweise eine Aktivitäts Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Dateien in SharePoint löscht, oder Sie können eine Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Nachrichten endgültig aus seinem Postfach löscht. Die an Sie gesendete e-Mail-Benachrichtigung enthält Informationen darüber, welche Aktivität ausgeführt wurde, und den Benutzer, der Sie ausgeführt hat.
 
 > [!NOTE]
-> Es wird empfohlen, Warnungsrichtlinien im Security and Compliance Center zu verwenden, anstatt neue Aktivitäts Warnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen, beispielsweise die Möglichkeit, eine Warnungs Richtlinie zu erstellen, die eine Warnung auslöst, wenn ein beliebiger Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
+> Aktivitäts Warnungen werden veraltet. Es wird empfohlen, Warnungsrichtlinien im Security and Compliance Center zu verwenden, anstatt neue Aktivitäts Warnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen, beispielsweise die Möglichkeit, eine Warnungs Richtlinie zu erstellen, die eine Warnung auslöst, wenn ein beliebiger Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -47,7 +48,7 @@ Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachri
 
 1. Wechseln Sie zu [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie auf der Seite **Aktivitäts Benachrichtigungen** auf ![](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neues**Symbol hinzufügen.
 
@@ -86,7 +87,7 @@ Sie können eine Aktivitäts Warnung deaktivieren, sodass keine e-Mail-Benachric
   
 1. Wechseln Sie zu [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie in der Liste der Aktivitäts Warnungen für Ihre Organisation auf die Warnung, die Sie deaktivieren möchten.
     
@@ -113,7 +114,7 @@ Wenn Sie eine Aktivitäts Warnung wieder aktivieren möchten, wiederholen Sie di
     |:-----|:-----|:-----|
     |Zeigt ein Dokument auf einer Website an.  <br/> |Dateizugriff  <br/> |Datei-und Ordner Aktivitäten  <br/> |
     |Bearbeitet oder ändert ein Dokument.  <br/> |Datei geändert  <br/> |Datei-und Ordner Aktivitäten  <br/> |
-    |Freigabe eines Dokuments für einen Benutzer außerhalb Ihrer Organisation.  <br/> |Freigeben von Datei, Ordner oder Website  <br/> Und  <br/> Freigabeeinladung erstellt  <br/> Weitere Informationen finden Sie unter [Use Sharing Auditing in the Audit Log](use-sharing-auditing.md).  <br/> |Freigabe- und Zugriffsanforderungsaktivitäten   <br/> |
+    |Freigabe eines Dokuments für einen Benutzer außerhalb Ihrer Organisation.  <br/> |Freigeben von Datei, Ordner oder Website  <br/> Und  <br/> Freigabeeinladung erstellt  <br/> Weitere Informationen finden Sie unter [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md).  <br/> |Freigabe- und Zugriffsanforderungsaktivitäten   <br/> |
     |Lädt ein Dokument hoch oder lädt es herunter.  <br/> |Datei hochgeladen  <br/> Und/oder  <br/> Datei heruntergeladen  <br/> |Datei-und Ordner Aktivitäten  <br/> |
     |Ändert die Zugriffsberechtigungen für eine Website.  <br/> |Websiteberechtigungen geändert  <br/> |Websiteverwaltungsaktivitäten  <br/> |
 

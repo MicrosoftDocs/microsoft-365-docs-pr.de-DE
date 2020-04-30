@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635569"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943344"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
@@ -220,7 +222,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </tr>
 <tr class="odd">
 <td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
-<td>Keine Änderungen</td>
+<td>Keine</td>
 <td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. Unter den folgenden häufig gestellten Fragen finden Sie alternative Lösungen.</td>
 </tr>
   <tr class=even>

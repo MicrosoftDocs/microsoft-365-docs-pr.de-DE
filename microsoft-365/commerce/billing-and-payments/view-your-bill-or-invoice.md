@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +27,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
-ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a7f6f7c28d429135959fa2612dd24721e35366b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634956"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942865"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 

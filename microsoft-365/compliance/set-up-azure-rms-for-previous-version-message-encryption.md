@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: Die frühere Version von Office 365 Nachrichtenverschlüsselung hängt von der Microsoft Azure Rights Management (bisher als Windows Azure Active Directory Rights Management bezeichnet) ab.
-ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635477"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943264"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Einrichten von Azure Rights Management für die vorherige Version der Nachrichtenverschlüsselung
 
 In diesem Thema werden die Schritte beschrieben, die Sie ausführen müssen, um Azure Rights Management (RMS), Teil von Azure Information Protection, zur Verwendung mit der vorherigen Version von Office 365 Message Encryption (OM) zu aktivieren und einzurichten.
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Dieser Artikel bezieht sich nur auf die vorherige Version von OM.
+
 Wenn Sie Ihre Organisation noch nicht zu den neuen OM-Funktionen verschoben haben, Sie jedoch bereits OM bereitgestellt haben, gelten die Informationen in diesem Artikel für Ihre Organisation. Microsoft empfiehlt, einen Plan für die Umstellung auf die neuen OM-Funktionen zu erstellen, sobald dies für Ihre Organisation sinnvoll ist. Anweisungen finden Sie unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md). Wenn Sie mehr darüber erfahren möchten, wie die neuen Funktionen als erstes funktionieren, lesen Sie [Office 365 Nachrichtenverschlüsselung](ome.md). Der Rest dieses Artikels bezieht sich auf das OM-Verhalten vor der Veröffentlichung der neuen OM-Funktionen.
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Voraussetzungen für die Verwendung der vorherigen Version von Office 365 Nachrichtenverschlüsselung
@@ -35,10 +36,6 @@ Wenn Sie Ihre Organisation noch nicht zu den neuen OM-Funktionen verschoben habe
 Office 365 Nachrichtenverschlüsselung (OM), einschließlich IRM, hängt von Azure Rights Management (Azure RMS) ab. Azure RMS ist die Schutztechnologie, die von Azure Information Protection verwendet wird. Um OM verwenden zu können, muss Ihre Organisation ein Exchange Online-oder Exchange Online Schutz Abonnement enthalten, das ihrerseits ein Azure Rights Management-Abonnement enthält.
   
 - Wenn Sie sich nicht sicher sind, was Ihr Abonnement enthält, finden Sie weitere Informationen unter Exchange Online Dienstbeschreibungen für [Nachrichtenrichtlinien, Wiederherstellung und Kompatibilität](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx).
-
-- Wenn Sie kein Azure RMS-Abonnement für Exchange Online oder Exchange Online Schutz haben, müssen Sie ein Abonnement erwerben und zuerst aktivieren.
-
-    Informationen zum Erwerb eines Abonnements für Azure Rights Management finden Sie unter [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). Der folgende Abschnitt enthält Informationen zur Aktivierung von Azure Rights Management.
 
 - Wenn Sie Azure Rights Management, aber nicht für Exchange Online oder Exchange Online Schutz eingerichtet haben, wird in diesem Artikel erläutert, wie Sie Azure Rights Management aktivieren und dann die beste Möglichkeit zum Einrichten von OM für die Verwendung von Azure Rights Management beschrieben.
 
@@ -68,46 +65,46 @@ Ein TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rech
 |Asien  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Südamerika  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Office 365 für Behörden (Community-Cloud der US-Regierung)  <br/> Dieser RMS-Schlüssel Freigabespeicherort ist für Kunden reserviert, die Office 365 für die Verwaltung von SKUs erworben haben.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-   
+  
 3. Konfigurieren Sie den Speicherort für die Schlüssel Freigabe, indem Sie das Cmdlet " [IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) " wie folgt ausführen: 
-    
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
-  ```
 
-    Beispielsweise zum Konfigurieren des Speicherorts für die Schlüssel Freigabe, wenn sich Ihre Organisation in Nordamerika befindet:
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
+   ```
+  
+   Beispielsweise zum Konfigurieren des Speicherorts für die Schlüssel Freigabe, wenn sich Ihre Organisation in Nordamerika befindet:
 
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
-  ```
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
+   ```
 
 4. Führen Sie das [Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx) -Cmdlet mit dem-RMSOnline-Schalter aus, um die TPD von Azure Rights Management zu importieren: 
 
-  ```powershell
-  Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
-  ```
+   ```powershell
+   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
+   ```
 
-    Dabei ist *TPDName* der Name, den Sie für die TPD verwenden möchten. Beispiel: "Contoso North American TPD". 
+   Dabei ist *TPDName* der Name, den Sie für die TPD verwenden möchten. Beispiel: "Contoso North American TPD". 
 
-5. Um zu überprüfen, ob Sie Ihre Organisation erfolgreich für die Verwendung des Azure Rights Management-Diensts konfiguriert haben, führen Sie das Cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) mit dem-RMSOnline-Schalter wie folgt aus: 
+5. Um zu überprüfen, ob Sie Ihre Organisation erfolgreich für die Verwendung des Azure Rights Management-Diensts konfiguriert haben, führen Sie das Cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) mit dem-RMSOnline-Schalter wie folgt aus:
 
-  ```powershell
-  Test-IRMConfiguration -RMSOnline
-  ```
+   ```powershell
+   Test-IRMConfiguration -RMSOnline
+   ```
 
-    Dieses Cmdlet prüft unter anderem die Konnektivität mit dem Azure Rights Management-Dienst, lädt das TPD herunter und überprüft seine Gültigkeit.
+   Dieses Cmdlet prüft unter anderem die Konnektivität mit dem Azure Rights Management-Dienst, lädt das TPD herunter und überprüft seine Gültigkeit.
 
 6. Führen Sie das Cmdlet " [IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) " wie folgt aus, um die Verfügbarkeit von Azure Rights Management-Vorlagen in Outlook im Internet und Outlook zu deaktivieren: 
 
-  ```powershell
-  Set-IRMConfiguration -ClientAccessServerEnabled $false
-  ```
+   ```powershell
+   Set-IRMConfiguration -ClientAccessServerEnabled $false
+   ```
 
-7. Führen Sie das Cmdlet " [IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) " wie folgt aus, um Azure Rights Management für Ihre cloudbasierten e-Mail-Organisation zu aktivieren und für die Verwendung von Azure Rights Management für Office 365 Nachrichtenverschlüsselung zu konfigurieren: 
+7. Führen Sie das Cmdlet " [IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) " wie folgt aus, um Azure Rights Management für Ihre cloudbasierten e-Mail-Organisation zu aktivieren und für die Verwendung von Azure Rights Management für Office 365 Nachrichtenverschlüsselung zu konfigurieren:
 
-  ```powershell
-  Set-IRMConfiguration -InternalLicensingEnabled $true
-  ```
+   ```powershell
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
 
 8. Verwenden Sie das Test-IRMConfiguration-Cmdlet, um die Azure Rights Management-Funktionalität zu testen, um sicherzustellen, dass Sie die TPD und die aktivierte Azure-Rechteverwaltung erfolgreich importiert haben. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
 

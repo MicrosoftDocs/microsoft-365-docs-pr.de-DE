@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632436"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949404"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -58,7 +58,7 @@ Sie erstellen und verwalten Aufbewahrungsrichtlinien über das [Microsoft 365 C
 
 Alternativ können Sie zur selben Stelle im Microsoft 365 Compliance Center navigieren, indem Sie die Registerkarten **Lösungen** > **Information Governance** > **Aufbewahrung** verwenden. 
 
-**Wenn Sie die Möglichkeit haben möchten, Inhalte zu überprüfen, bevor sie endgültig gelöscht werden, **sollten Sie die Verwendung von [Aufbewahrungsbezeichnungen](labels.md) anstelle einer Aufbewahrungsrichtlinie in Betracht ziehen. Wenn Sie eine Aufbewahrungsbezeichnung erstellen, können Sie eine [Löschungsprüfung](disposition-reviews.md) einrichten, um den Inhalt am Ende der Aufbewahrungsfrist zu überprüfen.
+**Wenn Sie die Möglichkeit haben möchten, Inhalte zu überprüfen, bevor sie endgültig gelöscht werden, **sollten Sie die Verwendung von [Aufbewahrungsbezeichnungen](labels.md) anstelle einer Aufbewahrungsrichtlinie in Betracht ziehen. Wenn Sie eine Aufbewahrungsbezeichnung erstellen, können Sie eine [Löschungsprüfung](disposition.md#disposition-reviews) einrichten, um den Inhalt am Ende der Aufbewahrungsfrist zu überprüfen.
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten
 

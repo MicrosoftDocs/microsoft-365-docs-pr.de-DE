@@ -1,5 +1,5 @@
 ---
-title: Konto schließen
+title: Schließen Ihres Kontos
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,16 +15,16 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080382"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942853"
 ---
-# <a name="close-your-account"></a>Konto schließen
+# <a name="close-your-account"></a>Schließen Ihres Kontos
 
-Wenn Sie Ihr Konto bei Microsoft schließen, werden alle Informationen im Zusammenhang mit Ihrem Konto gelöscht. Diese Informationen umfassen Abonnements, Lizenzen, Zahlungsmethoden, Benutzer und Benutzerdaten. Bevor Sie diesen Prozess starten, müssen Sie sicherstellen, dass alle Daten gesichert werden, die Sie beibehalten möchten.
+Wenn Sie Ihr Microsoft-Konto schließen, werden alle Informationen zu Ihrem Konto gelöscht. Diese Informationen umfassen Abonnements, Lizenzen, Zahlungsmethoden, Benutzer und Benutzerdaten. Bevor Sie diesen Prozess starten, müssen Sie sicherstellen, dass alle Daten gesichert werden, die Sie beibehalten möchten.
 
 ## <a name="step-1-delete-users"></a>Schritt 1: Löschen von Benutzern
 
@@ -72,7 +72,7 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 3. Deaktivieren Sie auf der Seite mehrstufige Authentifizierung alle Konten mit Ausnahme des globalen Administratorkontos, das Sie derzeit verwenden.
 
-Sie können auch <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">PowerShell verwenden, um die mehrstufige Authentifizierung für mehrere Benutzer zu deaktivieren</a>.
+Sie können auch <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell verwenden, um die mehrstufige Authentifizierung für mehrere Benutzer zu deaktivieren</a>.
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Schritt 5: Löschen des Verzeichnisses in Azure Active Directory
 

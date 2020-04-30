@@ -12,13 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
+search.appverid:
+- MET150
 description: Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Microsoft 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine DLP-Richtlinie geschützt sind.
-ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632466"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943374"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
 

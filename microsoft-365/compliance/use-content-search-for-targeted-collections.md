@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie die Inhaltssuche im Security & Compliance Center, um gezielte Sammlungen durchzuführen. Eine gezielte Sammlung bedeutet, dass Sie sicher sind, dass Elemente, die auf einen Fall reagieren, oder privilegierte Elemente sich in einem bestimmten Postfach oder Standortordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für das jeweilige Postfach oder die Websiteordner zu erhalten, die Sie durchsuchen möchten.
-ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4808dad8faed99ac15c4f9828ad1759e2f1179fc
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633380"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942978"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Verwenden der Inhaltssuche für gezielte Sammlungen
 
@@ -229,7 +231,7 @@ Nachdem Sie das Skript ausgeführt haben, um eine Liste der Ordner-IDs oder docu
     
     - Klicken Sie auf **bestimmte Postfächer für die Suche auswählen** , und fügen Sie dann das gleiche Postfach hinzu, das Sie beim Ausführen des Skripts in Schritt 1 angegeben haben. 
     
-      Oder
+      Oder:
     
     - Klicken Sie auf **bestimmte Websites für** die Suche auswählen, und fügen Sie dann die gleiche Website-URL hinzu, die Sie beim Ausführen des Skripts in Schritt 1 angegeben haben. 
     

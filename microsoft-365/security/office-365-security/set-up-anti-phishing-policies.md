@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die grundlegende Anti-Phishing-Richtlinie in Exchange Online Protection (EoP) und die Advanced ATP Anti-Phishing Policies in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638356"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949381"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
-Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing sind in Office 365 Organisationen mit Exchange Online Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (ATP)-Organisationen verfügbar.
+Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (ATP)-Organisationen verfügbar.
 
 ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
 
-- Office 365 Enterprise E5, Office 365 Education A5, etc.
+- Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP als Add-on](https://products.office.com/exchange/advance-threat-protection)
 
-Zu den ATP-Richtlinien für Anti-Phishing gehören eine integrierte standardmäßige Anti-Phishing-Richtlinie, und Sie können zusätzliche benutzerdefinierte ATP-Richtlinien für die Anti-Phishing erstellen.
-
-Andere Microsoft 365-Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügen über eine integrierte Standard-Anti-Phishing-Richtlinie, aber Sie können keine weiteren Richtlinien erstellen. Nur Organisationen mit Exchange Online Postfächern können Ihre standardmäßige Anti-Phishing-Richtlinie ändern.
+Alle anderen Organisationen verfügen über Anti-Phishing-Richtlinien.
 
 In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien beschrieben:
 
@@ -42,8 +40,8 @@ In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phish
 |---|:---:|:---:|
 |**Feature**|**Antiphishing-Richtlinien**|**Richtlinien für ATP-Anti-Phishing**|
 |Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Erstellen benutzerdefinierter Richtlinien||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Richtlinieneinstellungen<sup>\*</sup>||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Erstellen benutzerdefinierter Richtlinien|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Richtlinieneinstellungen<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Einstellungen für Identitätswechsel||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Spoof-Einstellungen|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Erweiterte Phishing-Schwellenwerte||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ Informationen zum Konfigurieren von Anti-Phishing-Richtlinien finden Sie in den 
 
 - [Konfigurieren von Richtlinien für die ATP-Anti-Phishing in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Im weiteren Verlauf dieses Themas werden die Einstellungen beschrieben, die in EoP und ATP-Richtlinien für die Anti-Phishing verfügbar sind.
+Im weiteren Verlauf dieses Themas werden die Einstellungen beschrieben, die in Anti-Phishing-Richtlinien und ATP-Anti-Phishing-Richtlinien verfügbar sind.
 
 ## <a name="spoof-settings"></a>Spoof-Einstellungen
 
@@ -65,10 +63,10 @@ Spoofing ist, wenn die von-Adresse in einer e-Mail-Nachricht (die Absenderadress
 
 Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien zur Verfügung:
 
-- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [configure Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Schutz gegen Spoofing**: aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Verwenden Sie die **Spoof Intelligence-Richtlinie** , um bestimmte gefälschte interne und externe Absender zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoofeinstellungen sind standardmäßig in der standardmäßigen Anti-Phishing-Richtlinie in EoP, der standardmäßigen ATP-AntiPhishing-Richtlinie und in neuen benutzerdefinierten ATP-AntiPhishing-Richtlinien aktiviert, die Sie erstellen. <br/><br/> Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Spoofeinstellungen sind standardmäßig in der standardmäßigen Anti-Phishing-Richtlinie in EoP, der standardmäßigen ATP-antiphishingpolitik und in neuen benutzerdefinierten Anti-Phishing-Richtlinien oder von Ihnen erstellten Richtlinien für das Anti-Phishing-Konzept von ATP aktiviert. <br/><br/> Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 

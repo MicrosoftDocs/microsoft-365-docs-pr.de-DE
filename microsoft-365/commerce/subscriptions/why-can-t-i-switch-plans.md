@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Grundlegendes zu den Ursachen, warum manchmal das Wechseln von Plänen manuell oder durch Anruf Unterstützung erfolgt.
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631929"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943143"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Warum kann ich Microsoft 365 for Business-Pläne nicht wechseln?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das Admin Center (Vorschau) finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](why-cant-i-change-plans.md). Die Vorschau steht für alle Microsoft 365-Administratoren zur Verfügung, Sie können sich durch Auswahl **der Option Vorschau der Vorschau** am oberen Rand der Startseite ausprobieren. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
+> Dieser Artikel bezieht sich auf das alte Admin Center. Informationen zum Artikel über das Admin Center (Vorschau) finden Sie unter [Warum kann ich Pläne nicht aktualisieren?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). Die Vorschau steht für alle Microsoft 365-Administratoren zur Verfügung, Sie können sich durch Auswahl **der Option Vorschau der Vorschau** am oberen Rand der Startseite ausprobieren. Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Wenn die Schaltfläche **Pläne wechseln** nicht angezeigt wird, kann Ihr Plan nicht automatisch gewechselt werden. In einigen Fällen können Sie das Problem möglicherweise beheben, sodass Sie die Schaltfläche **Pläne wechseln** verwenden können, oder Sie können die Pläne möglicherweise [manuell wechseln](switch-plans-manually.md), stattdessen. Positionieren Sie den Mauszeiger über dem Info Symbol, um eine Meldung anzuzeigen, in der erläutert wird, warum die Schaltfläche **Pläne wechseln** nicht verfügbar ist. Verwenden Sie die Informationen in diesem Artikel, um das Problem zu beheben.

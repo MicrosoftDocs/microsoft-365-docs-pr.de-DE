@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632250"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942898"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
   

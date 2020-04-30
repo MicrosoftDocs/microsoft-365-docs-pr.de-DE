@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Importieren von HR-Daten
+title: Einrichten eines Connectors zum Importieren von Personaldaten
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710544"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943364"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von HR-Daten
+# <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
 
-Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, indem Sie eine CSV-Zuordnungsdatei erstellt, die Ihre HR-Daten enthält, einen Data Connector im Compliance Center erstellt und dann ein Skript ausführt (auf einem geplante Basis), die die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
+Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, das Erstellen einer CSV-Zuordnungsdateien, die Ihre HR-Daten enthalten, das Erstellen eines datenkonnektors im Compliance Center und das anschließende Ausführen eines Skripts (geplant), das die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 

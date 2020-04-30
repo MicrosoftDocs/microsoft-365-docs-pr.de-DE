@@ -9,16 +9,18 @@ audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen.
-ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808844"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943543"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -45,7 +47,7 @@ Für Kunden, die unsere Unternehmenspläne verwenden, empfiehlt Microsoft, die i
 |8       |  [Registrieren von PCs für die Geräteverwaltung und erfordern von kompatiblen PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimieren Ihres Netzwerks für Cloud-Konnektivität](#9-optimize-your-network-for-cloud-connectivity)  |  ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10     | [Schulen von Benutzern](#10-train-users) |    ![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Überwachen auf Bedrohungen und ergreifen von Aktionen](#12-monitor-for-threats-and-take-action) |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 

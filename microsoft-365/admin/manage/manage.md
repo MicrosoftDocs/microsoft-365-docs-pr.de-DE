@@ -13,14 +13,16 @@ ms.collection:
 layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
 description: Schnell Links für die am häufigsten verwendeten Verwaltungsaufgaben in Microsoft 365.
-ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 102466b142d35125ab85d31cdf313ea6e9d9ba7e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628136"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942187"
 ---
 # <a name="manage"></a>Verwalten
 

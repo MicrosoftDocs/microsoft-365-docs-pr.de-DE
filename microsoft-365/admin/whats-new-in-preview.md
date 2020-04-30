@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 03fae5d2a9b8adc9859eb16bfd9d98740e7d8bf2
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919760"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939451"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -181,7 +181,7 @@ Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditka
 
 ![Screen Capture: Abrechnungs Abschnitt der Abonnementkarte mit einer Kreditkarte als Zahlungsmethode.](../media/MAC-BillingEditCreditCard.png)
 
-Möchten Sie mehr darüber erfahren? [Ändern von Kreditkarten-oder Bankkonten auf Rechnung](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
 ### <a name="global-reader"></a>Globaler Leser
 

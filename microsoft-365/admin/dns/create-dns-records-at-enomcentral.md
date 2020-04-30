@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter enomcentral für Microsoft einrichten.
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919493"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939271"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Erstellen von DNS-Einträgen bei eNomCentral für Microsoft
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919493"
 Wenn "eNomCentral" Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
 Nachdem Sie diese Einträge bei eNomCentral hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
-  
-Informationen zu Webhosting und DNS für Websites mit Microsoft finden Sie unter [Verwenden einer öffentlichen Website mit Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -64,7 +63,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
   
 4. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    \(Wählen Sie in der Dropdownliste den Wert des **Datensatztyps** aus.\) 
+    Wählen Sie in der Dropdownliste den Wert des **Datensatztyps** aus.
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
   
 5. Geben Sie in den Feldern für die sechs neuen Einträge die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen.
     
-        (Choose the **Record Type** value from the drop-down list.) 
+Wählen Sie in der Dropdownliste den Wert des **Datensatztyps** aus.
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     |enterpriseregistration  <br/> |CNAME (Alias)  <br/> |enterpriseregistration.windows.net.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
     |enterpriseenrollment  <br/> |CNAME (Alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
    
-    ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Wählen Sie **Speichern**aus.
     
@@ -203,7 +202,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
   
 4. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+Wählen Sie in der Dropdownliste den Wert des **Datensatztyps** aus.
     
     |**Host Name**|**Record Type**|**Adresse**|
     |:-----|:-----|:-----|

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, lync und andere Dienste in Google Domains für Microsoft einrichten.
-ms.openlocfilehash: 399482374f87d864edbc01feb4896b168d157f7f
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: baa406f61346dc052ab90a1b1c1271ab585d92c7
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919748"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939203"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Erstellen von DNS-Einträgen bei Google Domains für Microsoft
 
@@ -35,7 +35,7 @@ Wenn Google Domains Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artik
   
 Nachdem Sie diese Einträge bei Google-Domänen hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
   
-Informationen zu Webhosting und DNS für Websites mit Microsoft finden Sie unter [Verwenden einer öffentlichen Website mit Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Wenn Sie Probleme mit dem Nachrichtenfluss oder anderen Problemen haben, nachdem Sie DNS-Einträge hinzugefügt haben, finden Sie weitere Informationen unter [Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder DNS-Einträge in Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
@@ -237,7 +237,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Typ**|**TTL**|**Data**|
+    |**Name**|**Typ**|**TTL**|**Daten**|
     |:-----|:-----|:-----|:-----|
     |_sip._tls|SRV|1H|100 1 443 sipdir.online.lync.com. **Dieser Wert muss mit einem Punkt (.) enden.** **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit der gesamte Abstand korrekt bleibt.           |
     |_sipfederationtls._tcp|SRV|1H|100 1 5061 sipfed.online.lync.com. **Dieser Wert MUSS mit einem Punkt (.) enden.**

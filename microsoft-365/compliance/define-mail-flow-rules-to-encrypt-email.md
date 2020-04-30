@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mit Office 365 Nachrichtenverschlüsselung erlernen.
-ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790704"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943122"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail Nachrichten
 
-Als globaler Administrator können Sie e-Mail-Flussregeln erstellen (auch als Transportregeln bezeichnet), um e-Mail-Nachrichten zu schützen, die Sie senden und empfangen. Sie können Regeln einrichten, um ausgehende e-Mail-Nachrichten zu verschlüsseln und Verschlüsselung von verschlüsselten Nachrichten aus Ihrer Organisation oder aus Antworten auf verschlüsselte Nachrichten zu entfernen, die von Ihrer Organisation gesendet werden. Sie können die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um diese Regeln zu erstellen. Zusätzlich zu den allgemeinen Verschlüsselungsregeln können Sie auch die Aktivierung oder Deaktivierung einzelner Nachrichtenverschlüsselungsoptionen für Endbenutzer auswählen.
+Als globaler Administrator können Sie e-Mail-Flussregeln erstellen (auch als Transportregeln bezeichnet), um e-Mail-Nachrichten zu schützen, die Sie senden und empfangen. Sie können Regeln einrichten, um ausgehende e-Mail-Nachrichten zu verschlüsseln und Verschlüsselung von verschlüsselten Nachrichten aus Ihrer Organisation oder aus Antworten auf verschlüsselte Nachrichten zu entfernen, die von Ihrer Organisation gesendet werden. Sie können die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um diese Regeln zu erstellen. Zusätzlich zu den allgemeinen Verschlüsselungsregeln können Sie auch die Aktivierung oder Deaktivierung einzelner von Optionen für die Verschlüsselung einzelner Nachrichten für Endbenutzer auswählen.
 
 Sie können keine eingehenden e-Mails von Absendern außerhalb Ihrer Organisation verschlüsseln.
 
@@ -34,7 +34,7 @@ Wenn Sie kürzlich von AD RMS zu Azure Information Protection migriert haben, m�
 Informationen zu den Komponenten, die Nachrichtenfluss Regeln bilden und wie Nachrichtenfluss Regeln funktionieren, finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules). Weitere Informationen zur Funktionsweise von Nachrichtenfluss Regeln mit Azure Information Protection finden Sie unter [Configuring Exchange Online Mail Flow Rules for Azure Information Protection Labels](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
 
 > [!IMPORTANT]
-> Bei Exchange-Hybrid Umgebungen können lokale Benutzer verschlüsselte e-Mails nur mit OM senden, wenn e-Mails über Exchange Online weitergeleitet werden. Um om in einer Exchange-Hybridumgebung zu konfigurieren, müssen Sie zunächst [die Hybrid Konfiguration mit dem Assistenten für die Hybrid Konfiguration konfigurieren](https://docs.microsoft.com/Exchange/exchange-hybrid) und dann [Mail so konfigurieren, dass Sie vom e-Mail-Server zu Office 365 fließt](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Nachdem Sie die e-Mail-Nachricht für den Ablauf Office 365 konfiguriert haben, können Sie mithilfe dieser Anleitung Nachrichtenfluss Regeln für OM konfigurieren.
+> Bei Exchange-Hybrid Umgebungen können lokale Benutzer verschlüsselte e-Mails nur mit OM senden und empfangen, wenn e-Mails über Exchange Online weitergeleitet werden. Um om in einer Exchange-Hybridumgebung zu konfigurieren, müssen Sie zunächst [die Hybrid Konfiguration mit dem Assistenten für die Hybrid Konfiguration konfigurieren](https://docs.microsoft.com/Exchange/exchange-hybrid) und dann [e-Mail so konfigurieren, dass Sie von Office 365 auf Ihren e-Mail-Server](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) übermittelt wird, und [Konfigurieren von e-Mail für den Datenfluss von Ihrem e-Mail-Office 365 Server](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) Nachdem Sie die e-Mail-Nachricht für den Ablauf Office 365 konfiguriert haben, können Sie mithilfe dieser Anleitung Nachrichtenfluss Regeln für OM konfigurieren.
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>Erstellen von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten mit den neuen OM-Funktionen
 
@@ -52,7 +52,7 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise Verschlüsseln von e-Mails für DrToniRamos@hotmail.com.
 
-6. Wählen Sie unter **Diese Regel anwenden, wenn** eine Bedingung aus, und geben Sie ggf. einen Wert ein. Geben Sie beispielsweise Folgendes ein, um Nachrichten an "DrToniRamos@hotmail.com" zu verschlüsseln:
+6. Wählen Sie unter **diese Regel anwenden, wenn**eine Bedingung aus, und geben Sie bei Bedarf einen Wert ein. Beispielsweise zum Verschlüsseln von Nachrichten, die an DrToniRamos@hotmail.com gehen:
 
    1. Wählen Sie unter **Diese Regel anwenden, wenn****the recipient is** (Der Empfänger ist) aus.
 
@@ -110,7 +110,7 @@ Mithilfe der Exchange-Verwaltungskonsole können Sie e-Mail-Flussregeln zum Ausl
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus ausgehenden e-Mails entfernen.
 
-6. Fügen Sie unter **diese Regel anwenden, wenn** die Bedingungen, an denen die Verschlüsselung aus Nachrichten entfernt werden soll, **den Absender** \> hinzu, der sich **innerhalb der Organisation**befindet. Fügen Sie nun zusätzliche Bedingungen hinzu, um bestimmte Empfänger zu adressieren, beispielsweise **der Empfänger** \> befindet sich **außerhalb der Organisation**.
+6. Wählen Sie unter **diese Regel anwenden, wenn**die Bedingungen aus, in denen die Verschlüsselung aus Nachrichten entfernt werden soll. Hinzufügen **der Absender** \> befindet sich **innerhalb der Organisation**. Fügen Sie nun zusätzliche Bedingungen hinzu, um bestimmte Empfänger zu adressieren, beispielsweise **der Empfänger** \> befindet sich **außerhalb der Organisation**.
 
 7. Wählen Sie unter **Folgendes ausführen die**Option **Nachrichtensicherheit** \> **Entfernen Office 365 Nachrichtenverschlüsselung und Rechte Schutz**aus.
 
@@ -164,14 +164,14 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **Hinweise**:
-
-   - Der eindeutige Name der neuen Regel lautet "verschlüsseln Sie Regel für Dr. Toni Ramos".
-
-   - Der Parameter _SentTo_ gibt die Nachrichtenempfänger an (gekennzeichnet durch den Namen, die e-Mail-Adresse, den Distinguished Name usw.). In diesem Beispiel wird der Empfänger durch die e-Mail-Adresse "DrToniRamos@hotmail.com" identifiziert.
-
-   - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel befindet sich das Postfach des Empfängers in Hotmail und ist nicht Teil der Organisation, daher wird der `NotInOrganization` Wert verwendet.
-
+   > [!NOTE]
+   > 
+   > - Der eindeutige Name der neuen Regel lautet "verschlüsseln Sie Regel für Dr. Toni Ramos".
+   > 
+   > - Der Parameter _SentTo_ gibt die Nachrichtenempfänger an (gekennzeichnet durch den Namen, die e-Mail-Adresse, den Distinguished Name usw.). In diesem Beispiel wird der Empfänger durch die e-Mail-Adresse "DrToniRamos@hotmail.com" identifiziert.
+   > 
+   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel befindet sich das Postfach des Empfängers in Hotmail und ist nicht Teil der Organisation, daher wird der `NotInOrganization` Wert verwendet.
+   
    Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Entfernen der Verschlüsselung aus e-Mail-Antworten ohne die neuen OM-Funktionen verschlüsselt
@@ -208,17 +208,17 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **Hinweise**:
-
-   - Der eindeutige Name der neuen Regel lautet "Entfernen der Verschlüsselung aus eingehenden e-Mails".
-
-   - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel wird der Wert `InOrganization` Wert verwendet, der Folgendes angibt:
-
-     - Der Empfänger ist ein Postfach, ein e-Mail-Benutzer, eine Gruppe oder ein e-Mail-aktivierter Öffentlicher Ordner in Ihrer Organisation.
-
-       oder
-
-     - Die e-Mail-Adresse des Empfängers befindet sich in einer akzeptierten Domäne, die als autorisierende Domäne oder als interne Relay-Domäne in Ihrer Organisation konfiguriert ist, _und_ die Nachricht wurde über eine authentifizierte Verbindung gesendet oder empfangen.
+   > [!NOTE]
+   > 
+   > - Der eindeutige Name der neuen Regel lautet "Entfernen der Verschlüsselung aus eingehenden e-Mails".
+   > 
+   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel wird der Wert `InOrganization` Wert verwendet, der Folgendes angibt:
+   > 
+   >   - Der Empfänger ist ein Postfach, ein e-Mail-Benutzer, eine Gruppe oder ein e-Mail-aktivierter Öffentlicher Ordner in Ihrer Organisation.
+   > 
+   >     oder
+   > 
+   >   - Die e-Mail-Adresse des Empfängers befindet sich in einer akzeptierten Domäne, die als autorisierende Domäne oder als interne Relay-Domäne in Ihrer Organisation konfiguriert ist, _und_ die Nachricht wurde über eine authentifizierte Verbindung gesendet oder empfangen.
 
 Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 

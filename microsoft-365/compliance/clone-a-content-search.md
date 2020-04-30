@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um schnell eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 zu klonen. Beim Klonen einer Suche wird eine neue Suche (mit einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Anschließend können Sie die neue Suche bearbeiten, indem Sie die Stichwortabfrage oder den Datumsbereich ändern und diese dann ausführen.
-ms.openlocfilehash: 13a459cabd7febe3daf5c907e89025185821e835
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637493"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942938"
 ---
 # <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
