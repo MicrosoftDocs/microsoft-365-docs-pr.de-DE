@@ -285,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
           href: auto-apply-retention-labels-scenario.md
-    - name: Löschen von Daten
-      href: disposition-reviews.md
+    - name: Daten entfernen
+      href: disposition.md
     - name: Verwalten inaktiver Postfächer
       items:
         - name: Übersicht über inaktive Postfächer
@@ -340,7 +340,7 @@
             - name: Automatisieren der ereignisbasierten Aufbewahrung
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-reviews.md
+          href: disposition.md
         - name: Weitere Informationen zur Datensatzverwaltung
           items:
             - name: Videos zur Datensatzverwaltung ansehen
