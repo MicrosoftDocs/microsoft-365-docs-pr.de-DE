@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool „Inhaltssuche“ im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, Microsoft Office SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Microsoft 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900739"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943174"
 ---
 # <a name="content-search"></a>Inhaltssuche
 
@@ -302,6 +302,8 @@ Beachten Sie bei der Suche nach Inhalten in Microsoft Teams und Microsoft 365-Gr
   In den Suchergebnissen werden Besprechungszusammenfassungen im Feld **Typ** als **Besprechung**und Anrufübersichten als **Anruf** gekennzeichnet. Außerdem werden Unterhaltungen, die zu einem Teams-Kanals gehören und 1xN-Chats sind, im Feld **Typ** als **Sofortnachricht** gekennzeichnet.
   
   ![Teams-Besprechungen, Anrufe und 1xN-Chats sind im Feld "Typ" angegeben](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   Weitere Informationen finden Sie unter [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947) (Microsoft Teams startet eDiscovery für Anrufe und Besprechungen).
 
 - Sie können die E-Mail-Eigenschaft **Art** oder die Suchbedingung **Art der Nachricht** verwenden, um gezielt nach Inhalten in Teams zu suchen. 
   

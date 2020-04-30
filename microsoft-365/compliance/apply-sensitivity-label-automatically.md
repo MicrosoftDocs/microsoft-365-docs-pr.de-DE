@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799978"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943244"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -76,7 +76,7 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |:-----|:-----|:-----|:-----|
 |App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein |
 |Nach Speicherort einschränken|Nein |Ja |
-|Bedingungen: trainierbare Klassifizierer|Ja (beschränkte Vorschau) |Nein |
+|Bedingungen: trainierbare Klassifizierungen|Ja (beschränkte Vorschau) |Nein |
 |Bedingungen: Freigabeoptionen und zusätzliche E-Mail-Optionen|Nein |Ja |
 |Empfehlungen, Richtlinien-Tooltipps und Benutzer-Außerkraftsetzungen|Ja |Nein |
 |Simulationsmodus|Nein |Ja |
@@ -131,7 +131,7 @@ Darüber hinaus können Sie auswählen, ob eine Bedingung alle vertraulichen Inf
 
 ![Optionen für Instanzenanzahl und Übereinstimmungsgenauigkeit](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>Konfigurieren von Klassifizierungen für eine Bezeichnung
+### <a name="configuring-classifiers-for-a-label"></a>Konfigurieren von Klassifizierungen für eine Bezeichnung
 
 Wenn Sie die Option **Klassifizierungen** auswählen, wählen Sie eine oder mehrere der integrierten Klassifizierungen aus:
 
@@ -205,7 +205,7 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 - Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:
     - Es spielt keine Rolle, ob das automatische Bezeichnen in den Bezeichnungseinstellungen der Office-Anwendungen ein- oder ausgeschaltet ist, da diese Bezeichnungseinstellungen die Richtlinien für die automatische Bezeichnung ergänzen, wie in der Einführung erläutert. 
     - Wenn die Etiketten, die Sie für die automatische Bezeichung verwenden möchten, für die Verwendung visueller Markierungen (Kopf- und Fußzeilen, Wasserzeichen) konfiguriert sind, beachten Sie, dass diese nicht auf Dokumente angewendet werden.
-    - Wenn die Bezeichnungen Verschlüsselungen anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen anwenden** konfiguriert sein.
+    - Wenn die Bezeichnungen Verschlüsselungen anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen zuweisen** konfiguriert sein.
 
 ### <a name="learn-about-simulation-mode"></a>Informationen zum Simulationsmodus
 
@@ -278,7 +278,7 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 
 12. Für die Seite: **Entscheiden, ob Sie die Richtliniensimulation jetzt oder später ausführen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus. 
 
-13. Auf der Seite **Zusammenfassung**: Überprüfen Sie die Konfiguration der Richtlinie für die automatische Bezeichnung, nehmen Sie die erforderlichen Änderungen vor, und schließen Sie den Assistenten ab.
+13. Auf der Seite **Zusammenfassung**: Überprüfen Sie die Konfiguration Ihrer Richtlinie für die automatische Bezeichnung, nehmen Sie die erforderlichen Änderungen vor, und schließen Sie den Assistenten ab.
     
     Im Gegensatz zur automatischen Bezeichnung für Office-Anwendungen gibt es keine separate Veröffentlichungsoption. Wie bei Veröffentlichungsbezeichnungen sollten Sie jedoch bis zu 24 Stunden Zeit einräumen, damit sich die Richtlinie für die automatische Bezeichnung in Ihrer gesamten Organisation replizieren kann.
 

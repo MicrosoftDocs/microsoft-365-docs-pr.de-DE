@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632114"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949282"
 ---
 # <a name="overview-of-records"></a>Übersicht über die Datensätze
 
@@ -38,7 +38,7 @@ Auf hoher Ebene bedeutet die Kennzeichnung von Inhalten als Datensätze Folgende
 
 - Datensätze werden gelöscht, wenn der festgelegte Aufbewahrungszeitraum endet.
 
-Sie können [Aufbewahrungsbezeichnungen](labels.md) verwenden, um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zum Kennzeichnen von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder [veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) (sodass Benutzer Sie dazu verwenden können, Inhalte als Datensätze zu kennzeichnen) oder sie [automatisch auf Inhalte anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions), die Sie als Datensatz kennzeichnen möchten. Mithilfe von Bezeichnungen können Sie eine einzige, einheitliche Strategie zur Datensatzverwaltung überall in Office 365 implementieren, während andere Features der Datensatzverwaltung, z. B. das Datenarchiv, nur für SharePoint Online-Inhalte gelten.
+Verwenden Sie [Aufbewahrungsbezeichnungen](labels.md), um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zum Kennzeichnen von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder [veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) (sodass Benutzer Sie dazu verwenden können, Inhalte als Datensätze zu kennzeichnen) oder sie [automatisch auf Inhalte anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions), die Sie als Datensatz kennzeichnen möchten. Mithilfe von Bezeichnungen können Sie eine einzige, einheitliche Strategie zur Datensatzverwaltung überall in Office 365 implementieren, während andere Features der Datensatzverwaltung, z. B. das Datenarchiv, nur für SharePoint Online-Inhalte gelten.
 
 Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
@@ -74,10 +74,10 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
 Wenn Sie eine Aufbewahrungsbezeichnung erstellen, haben Sie die Möglichkeit, die Aufbewahrungsbezeichnung zum Kennzeichnen des Inhalts als Datensatz zu verwenden. Führen Sie die folgenden Schritte aus, um Inhalt als Datensatz zu deklarieren:
 
-1. Erstellen einer Aufbewahrungsbezeichnung. Wechseln Sie im Microsoft 365 Compliance Center zu **Records Management-** \> **Dateiplan**. Klicken Sie auf der Seite **Dateiplan** auf **Eine Bezeichnung erstellen**.
+1. Erstellen einer Aufbewahrungsbezeichnung. Wechseln Sie im Microsoft 365 Compliance Center zu **Records Management-** \> **Dateiplan**. Wählen Sie von der Seite **Dateiplan** **Eine Bezeichnung erstellen**.
 
-2. Wählen Sie auf der Seite **Bezeichnungseinstellungen** im Assistenten die Option aus, mit der die Aufbewahrungsbezeichnung Inhalte als Datensatz kennzeichnen soll.<br/>
-
+2. Wählen Sie auf der Seite **Bezeichnungseinstellungen** im Assistenten die Option aus, mit der die Aufbewahrungsbezeichnung Inhalte als Datensatz kennzeichnen soll.
+    
    ![Aktivieren Sie das Kontrollkästchen „Bezeichnung zum Klassifizieren von Inhalt als „Datensatz“ verwenden“](../media/recordversioning6.png)
 
 3. [Veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) Sie oder [wenden Sie](labels.md#applying-a-retention-label-automatically-based-on-conditions) die Aufbewahrungsbezeichnung auf SharePoint-Websites und/ oder OneDrive-Konten automatisch an.
