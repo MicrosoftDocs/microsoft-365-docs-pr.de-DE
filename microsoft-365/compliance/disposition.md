@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950106"
+ms.locfileid: "43952618"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -120,7 +120,7 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 > [!NOTE]
 > Die Möglichkeit zum Anzeigen von Datensätzen, die automatisch ohne Dispositions Überprüfung gelöscht wurden, wird schrittweise für die Mandanten im April und Mai 2020, sodass diese Benutzeroberfläche möglicherweise nicht sofort angezeigt wird.
 
-Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Im Vergleich werden Verworfene Datensätze, die genehmigt werden, durch eine Dispositions Überprüfung gelöscht werden, **ausstehende Disposition**angezeigt. Zum Beispiel:
+Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
 
 ![Elemente, die ohne eine Dispositions Überprüfung verworfen wurden](../media/records-disposed2.png)
 

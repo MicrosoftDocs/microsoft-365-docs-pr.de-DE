@@ -16,14 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Erfahren Sie mehr über das neue Microsoft 365 Admin Center.
-ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907225"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952639"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informationen zum neuen Microsoft 365 Admin Center
 
@@ -105,7 +104,7 @@ Ja. Das neue Admin Center ist voll funktionsfähig und verfügt über alle Funkt
 
 Microsoft 365 ist eine vollständige, intelligente Lösung, die Office 365, Windows 10 und Enterprise Mobility + Security umfasst, die es allen ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten. Die folgenden Microsoft 365-Abonnements sind im Admin Center verfügbar, damit Sie jetzt versuchen oder kaufen können:
   
-- Microsoft 365 Business
+- Microsoft 365 für Unternehmen
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

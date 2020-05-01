@@ -1,0 +1,80 @@
+### YamlMime:Landing
+title: Verwalten von Benutzern und Gruppen
+summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+metadata:
+  title: Verwalten von Benutzern und Gruppen
+  description: Verwalten von Kennwörtern, hinzufügen und Entfernen von Benutzern, Einrichten von Gruppen und Verwalten von Lizenzen
+  ms.service: O365-administration
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 01/27/2020
+  localization_priority: Priority
+  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955313"
+landingContent:
+- title: Verwalten von Benutzern
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hinzufügen eines Benutzers
+      url: add-users.md
+    - text: Bearbeiten eines Benutzers
+      url: add-users.md
+    - text: Hinzufügen einer weiteren e-Mail-Adresse
+      url: ../email/add-another-email-alias-for-a-user.md
+    - text: Erstellen eines freigegebenen Postfachs
+      url: ../email/create-a-shared-mailbox.md
+    - text: Zuweisen von Lizenzen an Benutzer
+      url: ../manage/assign-licenses-to-users.md
+    - text: Entfernen von Benutzerlizenzen
+      url: ../manage/remove-licenses-from-users.md
+    - text: Verwenden Ihrer benutzerdefinierten Domäne
+      url: ../email/change-email-address.md
+- title: Verwalten von Gruppen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Erstellen von Gruppen
+      url: ../create-groups/create-groups.md
+    - text: Mitglieder hinzufügen
+      url: ../create-groups/add-or-remove-members-from-groups.md
+    - text: Wiederherstellen oder Wiederherstellen einer gelöschten Gruppe
+      url: ../create-groups/restore-deleted-group.md
+    - text: Verwalten des Gastzugriffs in Gruppen
+      url: ../create-groups/manage-guest-access-in-groups.md
+- title: Verwalten von Kennwörtern
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Zurücksetzen eines Benutzerkennworts
+      url: reset-passwords.md
+    - text: Festlegen, dass Kennwörter nie ablaufen
+      url: set-password-to-never-expire.md
+    - text: Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
+      url: let-users-reset-passwords.md
+    - text: Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
+      url: ../manage/set-password-expiration-policy.md
+    - text: Administratorkennwort zurücksetzen
+      url: reset-passwords.md#reset-my-admin-password
+- title: Entfernen eines Mitarbeiters
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Löschen eines Benutzers
+      url: delete-a-user.md
+    - text: Zugreifen auf und Sichern der Daten eines ehemaligen Benutzers
+      url: get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Weiterleiten von e-Mails an einen anderen Benutzer
+      url: ../email/configure-email-forwarding.md
+    - text: Entfernen der Lizenz
+      url: ../manage/remove-licenses-from-users.md
+    - text: Wiederherstellen eines gelöschten Benutzers
+      url: restore-user.md
+    - text: Entfernen von Unternehmensdaten von Geräten (Microsoft 365 Business Premium)
+      url: ../../business/remove-company-data.md

@@ -1,0 +1,39 @@
+### YamlMime:Landing
+title: Arbeiten mit Kunden
+summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+metadata:
+  title: Arbeiten mit Kunden
+  description: Freigeben von Dokumenten und Verwenden von Teams für die Zusammenarbeit und Besprechung
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 299b7fa4cb98f05a1f5a3248fad59d3e8ea414ed
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952690"
+landingContent:
+- title: Arbeiten mit Kunden
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Externe Freigabe von Websites und Dateien
+      url: ../manage/share-sites-with-external-users.md
+    - text: Freigeben von Kalendern für Gastbenutzer
+      url: ../manage/share-calendars-with-external-users.md
+  - linkListType: video
+    links:
+    - text: Erstellen eines Teams mit Gästen
+      url: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+    - text: Als Gast an einem Team teilnehmen
+      url: https://support.office.com/article/928d1eef-61e2-49ec-b754-c2fe86b34824
+    - text: Chatten mit Mitarbeitern und Kunden
+      url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
+    - text: Planen einer Microsoft Teams-Besprechung mit Gästen
+      url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+    - text: An einer Microsoft Teams-Besprechung mit Gästen teilnehmen
+      url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8
