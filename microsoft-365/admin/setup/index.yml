@@ -1,0 +1,63 @@
+### YamlMime:Landing
+title: Erste Schritte
+summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+metadata:
+  title: Erste Schritte
+  description: Richten Sie Ihr Abonnement und Ihre e-Mail ein. Hinzufügen von Benutzern und Installieren von apps
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 0396ea8146e3e0d0419f6f1d9caeee9df7b86d59
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952740"
+landingContent:
+- title: Registrieren
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Wählen Sie einen Plan aus, und registrieren Sie sich für Microsoft 365
+      url: ../admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: Registrieren und Einrichten von Microsoft Business Basic
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Registrieren für Microsoft Business Standard
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Registrieren für Microsoft Business Premium
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: Gesteuerte Einrichtung
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Planen der Einrichtung
+      url: plan-your-setup.md
+  - linkListType: how-to-guide
+    links:
+    - text: Einrichten von Microsoft Business Standard
+      url: setup.md
+    - text: Einrichten von Microsoft Business Premium
+      url: ../../business/set-up.md
+- title: Abschließen der Einrichtung
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Migrieren von Daten
+      url: migrate-email-and-contacts-admin.md
+    - text: Installieren von apps
+      url: install-applications.md
+    - text: Bereitstellen von Teams
+      url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
+  - linkListType: video
+    links:
+    - text: Installieren von apps auf Android
+      url: https://support.office.com/article/647909af-560f-4977-ae45-3b45ad9e8236
+    - text: Installieren von apps unter IOS
+      url: https://support.office.com/article/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
+    - text: Schulen von Benutzern
+      url: https://support.office.com/office-training-center
