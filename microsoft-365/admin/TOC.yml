@@ -1,264 +1,49 @@
-- name: Administratorstartseite
-  href: admin-home.md
+- name: Microsoft 365 Admin Center-Hilfe
+  href: index.yml
   items:
-    - name: Übersicht
+    - name: Erste Schritte
+      href: setup/index.yml
       items:
-        - name: Administratorübersicht
-          href: admin-overview/admin-overview.md
-        - name: Registrieren für Office 365
+        - name: Registrieren
           href: admin-overview/sign-up-for-office-365.md
-        - name: Videoschulung
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
-        - name: Informationen zum Admin Center
-          href: admin-overview/about-the-admin-center.md
-        - name: Welches Abonnement habe ich?
-          href: admin-overview/what-subscription-do-i-have.md
-        - name: Weitere Informationen zu Office 365 Deutschland
-          href: admin-overview/learn-about-office-365-germany.md
-        - name: Mobile Administrator-App
-          href: admin-overview/admin-mobile-app.md
-    - name: Setup
-      items:
-        - name: Planen des Setups
+        - name: Testen oder Kaufen von Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Planen Ihres Setups
           href: setup/plan-your-setup.md
-        - name: Einrichten von Office 365
+        - name: Einrichten Ihrer Organisation mit dem geführten Setup
           href: setup/setup.md
-        - name: Unterschied zwischen Setup-Assistent und Setup-Seite
+        - name: Erkunden der Einrichtungsseite und des Assistenten
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Hinzufügen einer Domäne
-          href: setup/add-domain.md
-        - name: Häufig gestellte Fragen (FAQ) zu Domänen
-          href: setup/domains-faq.md
-        - name: Installieren von Anwendungen
-          href: setup/install-applications.md
-        - name: Migrieren von E-Mails und Kontakten
+        - name: Migration Ihrer Daten
           href: setup/migrate-email-and-contacts-admin.md
+        - name: Installieren von Office-Apps
+          href: setup/install-applications.md
         - name: Bereitstellen von Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
-        - name: Einrichten der Speicherung und Freigabe von Dateien
-          href: setup/set-up-file-storage-and-sharing.md
-        - name: Anpassen einer Teamwebsite
-          href: setup/customize-team-site.md
-        - name: Aktualisieren von Benutzern auf den neuesten Office-Client
-          href: setup/upgrade-users-to-latest-office-client.md
+        - name: App-Schulung für alle
+          href: 'https://support.office.com/en-us/office-training-center'
+        - name: Welches Abonnement habe ich?
+          href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassen der Anmeldeseite
           href: setup/customize-sign-in-page.md
-        - name: Erstellen von Verteilergruppen
-          href: setup/create-distribution-lists.md
         - name: Anpassen Ihres Organisationsdesigns
           href: setup/customize-your-organization-theme.md
-    - name: Benutzer und Rollen
+        - name: Weitere Informationen zu Office 365 Deutschland
+          href: admin-overview/learn-about-office-365-germany.md
+    - name: Übersicht über das Microsoft 365 Admin Center
       items:
-        - name: Hinzufügen von Benutzern
-          href: add-users/add-users.md
-        - name: 'Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen'
-          href: add-users/create-and-use-a-template-to-add-users.md
-        - name: Löschen eines Benutzers
-          href: add-users/delete-a-user.md
-        - name: Wiederherstellen eines Benutzers
-          href: add-users/restore-user.md
-        - name: Zurücksetzen von Kennwörtern
-          href: add-users/reset-passwords.md
-        - name: 'Festlegen des Kennworts derart, dass es nie abläuft'
-          href: add-users/set-password-to-never-expire.md
-        - name: 'Zulassen, dass Benutzer Kennwörter zurücksetzen'
-          href: add-users/let-users-reset-passwords.md
-        - name: Erneutes Senden des Benutzerkennworts
-          href: add-users/resend-user-password.md
-        - name: Erteilen von Postfachberechtigungen für einen anderen Benutzer
-          href: add-users/give-mailbox-permissions-to-another-user.md
-        - name: Ändern eines Benutzernamens und einer E-Mail-Adresse
-          href: add-users/change-a-user-name-and-email-address.md
-        - name: 'Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht'
-          href: add-users/create-edit-or-delete-a-custom-user-view.md
-        - name: Hinzufügen eines neues Mitarbeiters
-          href: add-users/add-new-employee.md
-        - name: Entfernen eines ehemaligen Mitarbeiters
-          href: add-users/remove-former-employee.md
-        - name: Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
-          href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+        - name: Übersicht über das Admin Center
+          href: admin-overview/about-the-admin-center.md
+        - name: "Info zum neuen Admin\_Center"
+          href: microsoft-365-admin-center-preview.md
         - name: Info zu Administratorrollen
           href: add-users/about-admin-roles.md
-        - name: Zuweisen von Administratorrollen
-          href: add-users/assign-admin-roles.md
-        - name: Info zur Exchange Online-Administratorrolle
-          href: add-users/about-exchange-online-admin-role.md
-    - name: E-Mail
-      items:
-        - name: E-Mail in Office 365
-          href: email/email.md
-        - name: E-Mail-Einstellungen für Benutzer
-          href: email/office-365-user-email-settings.md
-        - name: Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
-          href: email/add-another-email-alias-for-a-user.md
-        - name: Freigegebene Postfächer
-          items:
-            - name: Info zu freigegebenen Postfächern
-              href: email/about-shared-mailboxes.md
-            - name: Erstellen eines freigegebenen Postfachs
-              href: email/create-a-shared-mailbox.md
-            - name: Konfigurieren eines freigegebenen Postfachs
-              href: email/configure-a-shared-mailbox.md
-            - name: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
-              href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: Entfernen einer Lizenz aus einem freigegebenen Postfach
-              href: email/remove-license-from-shared-mailbox.md
-            - name: Beheben von Problemen mit freigegebenen Postfächern
-              href: email/resolve-issues-with-shared-mailboxes.md
-        - name: Ändern der E-Mail-Adresse
-          href: email/change-email-address.md
-        - name: Konfigurieren des Posteingangs mit Relevanz
-          href: setup/configure-focused-inbox.md
-        - name: Erstellen von Signaturen und Verzichtserklärungen
-          href: setup/create-signatures-and-disclaimers.md
-        - name: 'Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe'
-          href: email/create-edit-or-delete-a-security-group.md
-        - name: Konfigurieren der E-Mail-Weiterleitung
-          href: email/configure-email-forwarding.md
-        - name: Zusammenarbeit über E-Mail
-          href: email/email-collaboration.md
-        - name: Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
-          href: email/add-user-or-contact-to-distribution-list.md
-        - name: Konfigurieren von Clutter
-          href: email/configure-clutter.md
-    - name: Sichern Ihrer Geschäftsdaten
-      items:
-        - name: Top-10-Methoden zum Sichern Ihrer Daten
-          href: security-and-compliance/secure-your-business-data.md
-        - name: Einrichten der mehrstufigen Authentifizierung
-          href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Einrichten der mehrstufigen Authentifizierung (mit Office 2013)
-          href: security-and-compliance/enable-modern-authentication.md
-        - name: Einhaltung der DSGVO
-          href: security-and-compliance/gdpr-compliance.md
-    - name: Aktivitätsberichte im Admin Center
-      href: activity-reports/activity-reports.md
-    - name: Power BI-Nutzungsanalysen
-      items:
-        - name: Nutzungsanalysen
-          href: usage-analytics/usage-analytics.md
-        - name: Aktivieren von Nutzungsanalysen
-          href: usage-analytics/enable-usage-analytics.md
-        - name: Abrufen der neuesten Version der Nutzungsanalyse
-          href: usage-analytics/get-the-latest-version-of-usage-analytics.md
-        - name: Navigieren in und Verwenden von Berichten
-          href: usage-analytics/navigate-and-utilize-reports.md
-        - name: Aktive Benutzer in Verwendungsberichten
-          href: usage-analytics/active-user-in-usage-reports.md
-        - name: Anpassen von Berichten
-          href: usage-analytics/customize-reports.md
-        - name: Datenmodell von Nutzungsanalysen
-          href: usage-analytics/usage-analytics-data-model.md
-        - name: Nutzungsanalysefehler
-          href: usage-analytics/usage-analytics-errors.md
-    - name: Verwalten
-      items:
-        - name: Verwalten von Office 365
-          href: manage/manage.md
-        - name: Ändern von Kontakteinstellungen
-          href: manage/change-contact-preferences.md
-        - name: 'Ändern der Adresse, des Kontakts und vieles mehr'
-          href: manage/change-address-contact-and-more.md
-        - name: Aktualisieren der Telefonnummer und der E-Mail-Adresse
-          href: manage/update-phone-number-and-email-address.md
-        - name: Festlegen der Kennwortablaufrichtlinie
-          href: manage/set-password-expiration-policy.md
-        - name: Anpassen des App-Startfelds
-          href: manage/customize-the-app-launcher.md
-        - name: Voraussetzungen für Zentrale Bereitstellung
-          href: manage/centralized-deployment-of-add-ins.md
-        - name: Verwenden von Zentrale Bereitstellung zum Bereitstellen von Add-Ins
-          href: manage/manage-deployment-of-add-ins.md
-        - name: FAQ zu Zentrale Bereitstellung
-          href: manage/centralized-deployment-FAQ.md
-        - name: Suchen nach Ihrem Partner oder Händler
-          href: manage/find-your-partner-or-reseller.md
-        - name: Raum- und Gerätepostfächer
-          href: manage/room-and-equipment-mailboxes.md
-        - name: Senden einer E-Mail als Verteilerliste
-          href: manage/send-email-as-distribution-list.md
-        - name: Upgraden von Verteilerlisten
-          href: manage/upgrade-distribution-lists.md
-        - name: Externe Freigabe von Websites und Dateien
-          href: manage/share-sites-with-external-users.md
-        - name: Freigeben von Kalendern für externe Benutzer
-          href: manage/share-calendars-with-external-users.md
-        - name: Zuweisen von Lizenzen an Benutzer
-          href: manage/assign-licenses-to-users.md
-        - name: Aufheben der Zuweisung von Benutzerlizenzen
-          href: manage/remove-licenses-from-users.md
-        - name: Lösen von Lizenzkonflikten
-          href: manage/resolve-license-conflicts.md
-        - name: Verwalten von Nachrichten im Nachrichtencenter
-          href: manage/manage-messages.md
-        - name: Ein- und Ausblenden neuer Funktionen mit What's New Management
-          href: manage/show-hide-new-features.md
-    - name: Abonnements und Abrechnung
-      items:
-        - name: Verwalten Ihrer Abonnements
-          href: ../commerce/index.yml
-        - name: Anzeigen Ihrer Rechnung
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-        - name: Verwalten von Zahlungsmethoden
-          href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: Kündigen Ihres Abonnements
-          href: ../commerce/subscriptions/cancel-your-subscription.md
-    - name: Domänen
-      items:
-        - name: Domänen in Office 365
-          href: get-help-with-domains/get-help-with-domains.md
-        - name: Was ist eine Domäne?
-          href: get-help-with-domains/what-is-a-domain.md
-        - name: Kaufen eines Domänennamens
-          href: get-help-with-domains/buy-a-domain-name.md
-        - name: Suchen der Domänenregistrierungsstelle
-          href: get-help-with-domains/find-your-domain-registrar.md
-        - name: Grundlagen von DNS
-          href: get-help-with-domains/dns-basics.md
-        - name: Informationen zu DNS-Einträgen
-          href: get-help-with-domains/information-for-dns-records.md
-        - name: Suchen und Beheben von Problemen
-          href: get-help-with-domains/find-and-fix-issues.md
-        - name: Einrichten Ihrer Domäne (hostspezifische Anweisungen)
-          href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
-        - name: Ändern von Namenservern bei einer beliebigen Domänenegistrierungsstelle
-          href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
-        - name: Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
-          href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
-        - name: Entfernen einer Domäne
-          href: get-help-with-domains/remove-a-domain.md
-        - name: Manuelles Übertragen von Daten
-          href: get-help-with-domains/transfer-data-manually.md
-    - name: Gruppen
-      items:
-        - name: Gruppenübersicht
-          href: create-groups/office-365-groups.md
-        - name: Vergleichen von Gruppen
-          href: create-groups/compare-groups.md
-        - name: Erstellen einer Microsoft 365-Gruppe
-          href: create-groups/create-groups.md
-        - name: Verwalten einer Microsoft 365-Gruppe
-          href: create-groups/manage-groups.md
-        - name: Planen der Governance in Microsoft 365-Gruppen
-          href: create-groups/plan-for-groups-governance.md
-        - name: Verwalten der Erstellung von Gruppen
-          href: create-groups/manage-creation-of-groups.md
-        - name: Auswählen der Domäne zum Erstellen von Gruppen
-          href: create-groups/choose-domain-to-create-groups.md
-        - name: Benennungsrichtlinie für Gruppen
-          href: create-groups/groups-naming-policy.md
-        - name: 'Zulassen, dass Mitglieder mit "Senden als" oder "Senden im Auftrag von" E-Mails für Gruppen senden'
-          href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
-        - name: Hinzufügen oder Entfernen von Mitgliedern aus Gruppen
-          href: create-groups/add-or-remove-members-from-groups.md
-        - name: Ablaufrichtlinie für Microsoft 365-Gruppen
-          href: create-groups/office-365-groups-expiration-policy.md
-        - name: Wiederherstellen einer gelöschten Gruppe
-          href: create-groups/restore-deleted-group.md
-        - name: Verwalten des Gastzugriffs in Gruppen
-          href: create-groups/manage-guest-access-in-groups.md
-        - name: Verwenden von Vertraulichkeitsbezeichnungen bei Gruppen
-          href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
+        - name: Mobile Admin-App
+          href: admin-overview/admin-mobile-app.md
+        - name: Neuigkeiten im neuen Admin Center
+          href: whats-new-in-preview.md
+        - name: Bleiben Sie über Änderungen auf dem Laufenden
+          href: manage/stay-on-top-of-updates.md
     - name: 'Office 365, betrieben von 21Vianet'
       items:
         - name: 'Info zu Office 365, betrieben von 21Vianet'
@@ -275,19 +60,194 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection-Parität
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Neue Features erhalten
+    - name: Verwalten von Benutzern und Gruppen
+      href: add-users/index.yml
       items:
-        - name: "Info zum neuen Admin\_Center"
-          href: microsoft-365-admin-center-preview.md
-        - name: Neuerungen im neuen Admin Center
-          href: whats-new-in-preview.md
-        - name: Bleiben Sie auf dem Laufenden über Änderungen
-          href: manage/stay-on-top-of-updates.md
-        - name: Release-Optionen in Office 365
-          href: manage/release-options-in-office-365.md
-        - name: Nachrichtencenter
+        - name: Benutzer
+          items:
+            - name: Hinzufügen von Benutzern
+              href: add-users/add-users.md
+            - name: Hinzufügen eines neues Mitarbeiters
+              href: add-users/add-new-employee.md
+            - name: Zuweisen von Administratorrollen
+              href: add-users/assign-admin-roles.md
+            - name: Entfernen von Lizenzen von Benutzern
+              href: manage/remove-licenses-from-users.md
+            - name: Lösen von Lizenzkonflikten
+              href: manage/resolve-license-conflicts.md
+            - name: Ändern von Benutzernamen und -E-Mail-Adressen
+              href: add-users/change-a-user-name-and-email-address.md
+            - name: Entfernen eines ehemaligen Mitarbeiters
+              href: add-users/remove-former-employee.md
+            - name: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
+              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+            - name: Wiederherstellen eines Benutzers
+              href: add-users/restore-user.md
+            - name: Zurücksetzen von Kennwörtern
+              href: add-users/reset-passwords.md
+            - name: 'Festlegen von Kennwörtern, sodass sie nie ablaufen'
+              href: add-users/set-password-to-never-expire.md
+            - name: 'Zulassen, dass Benutzer Kennwörter zurücksetzen'
+              href: add-users/let-users-reset-passwords.md
+            - name: Benutzerkennwörter erneut senden
+              href: add-users/resend-user-password.md
+            - name: Vorlage zum Hinzufügen von Benutzern erstellen
+              href: add-users/create-and-use-a-template-to-add-users.md
+        - name: Gruppen
+          items:
+            - name: Gruppenübersicht
+              href: create-groups/office-365-groups.md
+            - name: Vergleichen von Gruppen
+              href: create-groups/compare-groups.md
+            - name: Erstellen einer Gruppe
+              href: create-groups/create-groups.md
+            - name: Verwalten von Gruppen
+              href: create-groups/manage-groups.md
+            - name: Hinzufügen oder Entfernen von Gruppenmitgliedern
+              href: create-groups/add-or-remove-members-from-groups.md
+            - name: Wiederherstellen einer gelöschten Gruppe
+              href: create-groups/restore-deleted-group.md
+            - name: Planen der Governance in Teams
+              href: create-groups/plan-for-groups-governance.md
+            - name: Verwalten der Erstellung von Gruppen
+              href: create-groups/manage-creation-of-groups.md
+            - name: Domäne für Gruppen auswählen
+              href: create-groups/choose-domain-to-create-groups.md
+            - name: Übersicht über Richtlinien zur Benennung von Gruppen
+              href: create-groups/groups-naming-policy.md
+            - name: 'Zulassen, dass Mitglieder E-Mails an und von Gruppen zu senden'
+              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+            - name: Verwalten des Gastzugriffs auf Gruppen
+              href: create-groups/manage-guest-access-in-groups.md
+            - name: Verwenden von Vertraulichkeitsbezeichnungen bei Gruppen
+              href: ../compliance/sensitivity-labels-teams-groups-sites.md
+    - name: Verwalten von E-Mail und Kalendern
+      href: email/index.yml
+      items:
+        - name: Info zu Benutzer-E-Mail-Einstellungen
+          href: email/office-365-user-email-settings.md
+        - name: Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
+          href: email/add-another-email-alias-for-a-user.md
+        - name: Verwenden Sie Ihre benutzerdefinierte Domäne
+          href: email/change-email-address.md
+        - name: Erstellen von Signaturen und Verzichtserklärungen
+          href: setup/create-signatures-and-disclaimers.md
+        - name: 'Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe'
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: Einrichten der E-Mail-Weiterleitung
+          href: email/configure-email-forwarding.md
+        - name: Freigegebene Postfächer
+          items:
+            - name: Info zu freigegebenen Postfächern
+              href: email/about-shared-mailboxes.md
+            - name: Erstellen eines freigegebenen Postfachs
+              href: email/create-a-shared-mailbox.md
+            - name: Einrichten eines freigegebenen Postfachs
+              href: email/configure-a-shared-mailbox.md
+            - name: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: Entfernen einer Lizenz aus einem freigegebenen Postfach
+              href: email/remove-license-from-shared-mailbox.md
+            - name: Beheben von Problemen mit freigegebenen Postfächern
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: Posteingang mit Relevanz einrichten
+          href: setup/configure-focused-inbox.md
+        - name: Info zu E-Mail-Zusammenarbeit
+          href: email/email-collaboration.md
+        - name: Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: Verwaltung von Clutter für Ihre Organisation
+          href: email/configure-clutter.md
+    - name: Verwalten von Domänen
+      href: get-help-with-domains/what-is-a-domain.md
+      items:
+        - name: Domäne hinzufügen
+          href: setup/add-domain.md
+        - name: Domäne kaufen
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: Entfernen einer Domäne
+          href: get-help-with-domains/remove-a-domain.md
+        - name: FAQ zu Domänen
+          href: setup/domains-faq.md
+        - name: Host-spezifische Anweisungen
+          items:
+            - name: Nameserver bei jedem DNS-Host ändern
+              href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+            - name: Erstellen von DNS-Einträgen bei jedem DNS-Host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: Troubleshooting von Problemen mit Domänen
+          href: get-help-with-domains/find-and-fix-issues.md
+    - name: Verwalten Sie Ihre Daten und Dienste
+      href: manage/index.yml
+      items:
+        - name: Aktualisieren Sie Ihre Organisation auf die neuesten Anwendungen
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: Überwachen der Benutzeraktivität mit Hilfe von Berichten
+          href: activity-reports/activity-reports.md
+        - name: Ändern Sie die Kontaktinformationen Ihrer Organisation
+          href: manage/change-address-contact-and-more.md
+        - name: Aktualisieren Sie Ihre Administrator-Kontaktinformationen
+          href: manage/update-phone-number-and-email-address.md
+        - name: Festlegen der Kennwortablaufrichtlinie
+          href: manage/set-password-expiration-policy.md
+        - name: Anpassen des App-Startfelds
+          href: manage/customize-the-app-launcher.md
+        - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
+          href: manage/centralized-deployment-of-add-ins.md
+        - name: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
+          href: manage/manage-deployment-of-add-ins.md
+        - name: Einen Partner oder Wiederverkäufer suchen
+          href: manage/find-your-partner-or-reseller.md
+        - name: Infor über das Nachrichtencenter
           href: manage/message-center.md
-        - name: Testen oder Kaufen von Microsoft 365
-          href: ../commerce/try-or-buy-microsoft-365.md
-    - name: Support für Business-Produkte kontaktieren
+        - name: Nachrichten im Nachrichtencenter verwalten
+          href: manage/manage-messages.md
+        - name: Einrichten von Freigabeoptionen
+          href: manage/release-options-in-office-365.md
+        - name: Power BI-Nutzungsanalysen
+          items:
+            - name: Info über Nutzungsanalysen
+              href: usage-analytics/usage-analytics.md
+            - name: Aktivieren von Nutzungsanalysen
+              href: usage-analytics/enable-usage-analytics.md
+            - name: Abrufen der neuesten Version der Nutzungsanalyse
+              href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+            - name: Navigieren in und Verwenden von Berichten
+              href: usage-analytics/navigate-and-utilize-reports.md
+            - name: Info über aktive Benutzer in Nutzungsberichten
+              href: usage-analytics/active-user-in-usage-reports.md
+            - name: Anpassen von Berichten
+              href: usage-analytics/customize-reports.md
+            - name: Info über das Datenmodell der Nutzungsanalyse
+              href: usage-analytics/usage-analytics-data-model.md
+            - name: Troubleshooting von Fehlern der Nutzungsanalyse
+              href: usage-analytics/usage-analytics-errors.md
+    - name: Verwalten von Abonnements und Abrechnung
+      href: ../commerce/index.yml
+    - name: Sichern Sie Ihre Organisation
+      items:
+        - name: Top-10-Methoden zum Sichern Ihrer Daten
+          href: security-and-compliance/secure-your-business-data.md
+        - name: Einrichten der mehrstufigen Authentifizierung
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Einrichten der mehrstufigen Authentifizierung (mit Office 2013)
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: Ein Leitfaden zur DSGVO-Compliance
+          href: security-and-compliance/gdpr-compliance.md
+    - name: Arbeiten mit Kunden
+      href: work-with-customers/index.yml
+      items:
+        - name: Externe Freigabe von Websites und Dateien
+          href: manage/share-sites-with-external-users.md
+        - name: Kalender für Gastbenutzer freigeben
+          href: manage/share-calendars-with-external-users.md
+        - name: Erstellen Sie ein Team mit Gästen
+          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: Planen Sie eine Teams-Besprechung mit Gästen
+          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+        - name: An einer Teams-Besprechung mit Gästen teilnehmen
+          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+    - name: Troubleshooting
+      href: 'https://docs.microsoft.com/office/troubleshoot/'
+    - name: 'wenden Sie sich an den Support,'
       href: contact-support-for-business-products.md

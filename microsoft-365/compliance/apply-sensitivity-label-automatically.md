@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943244"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952628"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -188,7 +188,7 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Konfigurieren von Richtlinien für die automatische Bezeichnung von Microsoft Office SharePoint Online, OneDrive und Exchange
 > [!NOTE]
-> Richtlinien der automatischen Bezeichnung werden nach und nach in Public Preview und vorbehaltlich Änderungen an Mandanten bereitgestellt.
+> Richtlinien der automatischen Bezeichnung befinden sich in Public Preview und können sich ändern.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Voraussetzungen für Richtlinien der automatischen Bezeichnung
 
@@ -241,7 +241,6 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     ![Registerkarte „Automatisches Bezeichnen“ (Vorschau)](../media/auto-labeling-tab.png)
     
-    Diese neue Registerkarte wird weiterhin für Mandanten bereitgestellt. Wenn sie nicht angezeigt wird, versuchen Sie es in einigen Tagen erneut.
 
 3. Wählen Sie **+ Richtlinie erstellen** aus.
 
