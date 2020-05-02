@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium-Ressourcen
-summary: Microsoft 365 Business Premium (ehemals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Es integriert Ihre bevorzugten Office-Produktivitäts-apps und-Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
+summary: Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Es integriert Ihre bevorzugten Office-Produktivitäts-apps und-Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium-Ressourcen
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 4dff1d10b8a4574ea8350aa194d7f6a2c8eb2605
-  ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
+  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43781476"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "44002180"
 productDirectory:
   title: Sichere Remote Arbeit mit Microsoft 365 Business Premium
   items:
@@ -79,6 +79,9 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: Technische Grundlagen
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+      itemType: download
+      text: Prüfliste für die Sicherung von Remoteaufgaben
   - title: Verwalten von Benutzern
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
