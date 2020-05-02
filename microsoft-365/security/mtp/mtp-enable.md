@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
+ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633903"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997514"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection vereinheitlicht Ihren Reaktionsprozess auf Sicherhei
 Um den optimalen Schutz zu erzielen und Microsoft Threat Protection zu optimieren, wird empfohlen, alle anwendbaren unterstützten Dienste in Ihrem Netzwerk bereitzustellen. Weitere Informationen finden [Sie unter Deploying supported Services](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Überprüfen der Lizenz Berechtigung und der erforderlichen Berechtigungen
-Eine Microsoft 365 E5, E5-oder A5-Lizenz oder eine gültige Kombination von Lizenzen bietet Zugriff auf unterstützte Dienste und berechtigt Sie zur Verwendung von Microsoft Threat Protection im Microsoft 365 Security Center.
+Eine Microsoft 365 E5, E5 Security, A5 oder A5-Sicherheitslizenz oder eine gültige Kombination von Lizenzen bietet Zugriff auf unterstützte Dienste und berechtigt Sie zur Verwendung von Microsoft Threat Protection im Microsoft 365 Security Center.
 
 Ausführliche Lizenzierungsinformationen finden [Sie in den Lizenzierungsanforderungen](prerequisites.md#licensing-requirements).
 
@@ -51,7 +51,7 @@ Bevor Sie den Dienst aktivieren, zeigt das Microsoft 365 Security Center ([Secur
 ![Abbildung der Willkommensseite von Microsoft Threat Protection, die angezeigt wird, wenn Microsoft Threat Protection nicht](../../media/mtp-welcome.png)
 auf der*Willkommensseite von Microsoft Threat Protection im Microsoft 365 Security Center* aktiviert wurde
 
-Um Microsoft Threat Protection zu aktivieren, führen Sie den Vorgang einfach auf der Willkommensseite aus. Sie können auch Microsoft Threat Protection aktivieren, indem Sie im Navigationsbereich auf **Einstellungen** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) zugreifen und **Microsoft Threat Protection**auswählen.
+Um Microsoft Threat Protection zu aktivieren, führen Sie den Vorgang einfach auf der Willkommensseite aus. Sie können auch Microsoft Threat Protection aktivieren, indem Sie im Navigationsbereich auf **Einstellungen** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) zugreifen und **Microsoft Threat Protection**auswählen. Klicken Sie auf **Speichern**.
 
 >[!NOTE]
 >Wenn im Navigationsbereich keine **Einstellungen** angezeigt werden oder Sie nicht auf die Seite zugreifen können, überprüfen Sie Ihre Berechtigungen und Lizenzen.

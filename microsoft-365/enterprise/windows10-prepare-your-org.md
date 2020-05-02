@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636663"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002343"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Schritt 1: Vorbereiten Ihrer Organisation auf Windows 10 Enterprise
 
@@ -52,7 +52,7 @@ Verwenden Sie den entsprechenden Wert in der Tabelle unten, wenn Sie die Verwalt
 
 Sie können Diagnosedaten mit einer der folgenden Methoden aktivieren:
 
-* **Microsoft InTune** -Wenn Sie die Verwendung von InTune zum Verwalten Ihrer Geräte planen, können Sie eine Konfigurationsrichtlinie zum Aktivieren von Diagnosedaten erstellen, indem Sie die <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> -Systemrichtlinie konfigurieren. Weitere Informationen zum Einrichten von Konfigurationsrichtlinien finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft InTune-Richtlinien](https://aka.ms/intuneconfigpolicies).
+* **Microsoft InTune** -Wenn Sie die Verwendung von InTune zum Verwalten Ihrer Geräte planen, können Sie eine Konfigurationsrichtlinie zum Aktivieren von Diagnosedaten erstellen, indem Sie die <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> -Systemrichtlinie konfigurieren.
 * **Registrierungs-Editor** : Sie können den Registrierungs-Editor verwenden, um Diagnosedaten auf jedem Gerät in Ihrer Organisation manuell zu aktivieren. Alternativ können Sie ein Skript zum Bearbeiten der Registrierung schreiben. Wenn bereits eine Verwaltungsrichtlinie vorhanden ist, wie etwa Gruppenrichtlinien oder MDM, wird diese Registrierungseinstellung außer Kraft gesetzt.
 * **Gruppenrichtlinien** -Wenn Sie keine Geräte in InTune registrieren möchten, können Sie ein Gruppenrichtlinienobjekt verwenden, um die Diagnosedaten Ebene Ihrer Organisation festzulegen.
 * **Eingabeaufforderung** -Sie können Windows 10 Diagnostics-Daten und-Dienst so festlegen, dass Sie automatisch mit der Eingabeaufforderung gestartet werden. Diese Methode ist am besten geeignet, wenn Sie den Dienst nur auf einigen Geräten testen. Wenn der Dienst automatisch mit diesem Befehl gestartet werden kann, wird die Diagnosedaten Ebene nicht konfiguriert. Wenn Sie keine Diagnosedaten Ebene mithilfe von Verwaltungstools konfiguriert haben, wird der Dienst mit der standardmäßigen erweiterten Stufe ausgeführt.

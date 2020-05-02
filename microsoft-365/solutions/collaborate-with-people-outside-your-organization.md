@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365 für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630725"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002252"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -42,7 +46,7 @@ Nachdem Sie das Szenario, das Sie für die Freigabe für Personen außerhalb Ihr
 
 - [Bewährte Methoden für die Freigabe von Dateien und Ordnern mit nicht authentifizierten Benutzern](best-practices-anonymous-sharing.md) – erfahren Sie mehr über bewährte Methoden für die Freigabe mit nicht authentifizierten Benutzern.
 - [Begrenzen Sie die unbeabsichtigte Belichtung](share-limit-accidental-exposure.md) – erfahren Sie, wie Sie die Wahrscheinlichkeit verringern, dass vertrauliche Inhalte versehentlich mit Personen außerhalb Ihrer Organisation geteilt werden.
-- [Erstellen einer sicheren Gast Freigabe Umgebung](create-secure-guest-sharing-environment.md)) -Erfahren Sie mehr über die in Microsoft 365 bereitgestellten Tools, um sicherzustellen, dass die Freigabe für Personen außerhalb Ihrer Organisation auf sichere und sichere Weise erfolgt und ihre Steuerungsanforderungen erfüllt.
+- [Erstellen Sie eine sichere Gast Freigabe Umgebung](create-secure-guest-sharing-environment.md) -erfahren Sie mehr über die in Microsoft 365 bereitgestellten Tools, um sicherzustellen, dass die Freigabe für Personen außerhalb Ihrer Organisation auf sichere und sichere Weise erfolgt und ihre Steuerungsanforderungen erfüllt.
 
 ## <a name="collaborate-with-partner-companies"></a>Zusammenarbeit mit Partnerunternehmen
 
