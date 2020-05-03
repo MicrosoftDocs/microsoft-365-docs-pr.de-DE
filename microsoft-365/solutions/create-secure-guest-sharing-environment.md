@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-security-compliance
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie in Microsoft 365 eine sichere Gastfreigabeumgebung erstellen.
-ms.openlocfilehash: 63a636ccf65b5439d5e83cf5fbe64e5db2ce40b5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 73d3e2a9a55ead5447d2c6d640123ee3befd8373
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604665"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44003747"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -29,9 +33,9 @@ Dieses Szenario umfasst:
 - Beschränken des Gastzugriffs auf reinen Webzugriff für nicht verwaltete Geräte.
 - Konfigurieren einer Richtlinie für Sitzungstimeouts, um sicherzustellen, dass Gäste sich täglich authentifizieren.
 - Erstellen und Veröffentlichen von Vertraulichkeitsbezeichnungen zum Klassifizieren von Inhalten.
-- Erstellen eines vertraulichen Informationstyps für ein streng vertrauliches Projekt.
-- Automatisches Zuweisen der Bezeichnung *streng vertraulich* für Dokumente, die den vertraulichen Informationstyp enthalten.
-- Automatisches Ausschließen des Gastzugriffs auf Dateien, die als *streng vertraulich* gekennzeichnet sind.
+- Erstellen eines sensiblen Informationstyps für ein streng vertrauliches Projekt.
+- Automatische Zuweisung eines *streng vertraulich*en Etiketts an Dokumente, die den Typ sensibler Informationen enthalten.
+- Automatisches Entfernen des Gastzugriffs von Dateien, die als *streng vertraulich* gekennzeichnet sind.
 
 Einige der in diesem Artikel beschriebenen Optionen setzen voraus, dass Gäste über ein Konto in Azure Active Directory verfügen. Verwenden Sie die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview), um sicherzustellen, dass Gäste in das Verzeichnis einbezogen werden, wenn Sie Dateien und Ordner für sie freigeben.
 
@@ -188,28 +192,28 @@ Vertraulichkeitsbezeichnungen können auf verschiedene Arten verwendet werden, u
 Zunächst erstellen wir drei Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center:
 
 - Allgemein
-- Vertraulich
+- vertraulich
 - Streng vertraulich
 
-Führen Sie die folgenden Schritte aus, um die Bezeichnungen *Allgemein* und *Vertraulich* zu erstellen.
+Verwenden Sie das folgende Verfahren zum Erstellen der *Allgemeinen* und *sensiblen* Etiketten.
 
-So erstellen Sie eine Klassifizierungsbezeichnung ("Allgemein" und "Vertraulich")
+So erstellen Sie ein Klassifizierungsetikett (allgemein und sensibel)
 1. Erweitern Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) im linken Navigationsbereich den Eintrag **Klassifizierung**, und klicken Sie dann auf **Vertraulichkeitsbezeichnungen**.
 2. Klicken Sie auf **Bezeichnung erstellen**.
-3. Geben Sie im Feld **Bezeichnung** den Namen *Allgemein* oder *Vertraulich* ein.
-4. Geben Sie in **Tooltip** Folgendes ein: *Allgemeine Informationen, die für Mitarbeiter, Gäste und Partner freigegeben werden können* beziehungsweise *Vertrauliche Informationen. Nur für Mitarbeiter und autorisierte Gäste freigeben.*. Klicken Sie anschließend auf **Weiter**.
+3. Geben Sie unter **Name des Etiketts**, *Allgemein* oder *vertraulich* ein.
+4. Geben Sie in **QuickInfo** *allgemeine Informationen ein, die für Mitarbeiter, Gäste und Partner freigegeben werden können,* oder *vertrauliche Informationen. Geben Sie die Informationen nur für Mitarbeiter und autorisierte Gäste frei*, und klicken Sie dann auf **Weiter**.
 5. Lassen Sie die Verschlüsselung auf **Aus** festgelegt und klicken Sie auf **Weiter**.
 6. Lassen Sie die Inhaltskennzeichnung auf **Aus** festgelegt und klicken Sie auf **Weiter**.
 7. Lassen Sie "Verhinderung von Datenverlust am Endpunkt" auf **Aus** festgelegt und klicken Sie auf **Weiter**.
 8. Lassen Sie die automatische Bezeichnung auf **Aus** festgelegt und klicken Sie auf **Weiter**.
 9. Klicken Sie auf **Erstellen**.
 
-Bei der Bezeichnung *Streng vertraulich* werden als solche gekennzeichneten Dokumenten automatisch Wasserzeichen hinzugefügt.
+Bei dem Etikett *Streng vertraulich* versehen wir die Dokumente automatisch mit einem Wasserzeichen.
 
-So erstellen Sie eine Klassifizierungsbezeichnung ("Streng vertraulich")
+So erstellen Sie ein Klassifizierungsetikett („Streng vertraulich“)
 1. Klicken Sie auf **Bezeichnung erstellen**.
-2. Geben Sie im Feld **Bezeichnung** den Namen *Streng vertraulich* ein.
-3. Geben Sie in **Tooltip** Folgendes ein: *Streng vertraulich. Nicht für Gäste freigeben.* Klicken Sie anschließend auf **Weiter**.
+2. Geben Sie in **Etikettenname** *Streng vertraulich* ein.
+3. Geben Sie in **QuickInfo** *Streng vertrauliche Informationen ein. Geben Sie sie nicht für Gäste frei*, und klicken Sie anschließend auf **Weiter**.
 4. Lassen Sie die Verschlüsselung auf **Aus** festgelegt und klicken Sie auf **Weiter**.
 5. Setzen Sie die Inhaltskennzeichnung auf **Ein**, aktivieren Sie das Kontrollkästchen **Kopfzeile hinzufügen**, und klicken Sie dann auf **Text anpassen**.
 6. Geben Sie als Kopfzeilentext *Streng vertraulich* ein, und klicken Sie dann auf **Speichern**.
@@ -237,16 +241,16 @@ So veröffentlichen Sie Bezeichnungen
 8. Geben Sie auf der Seite **Richtlinieneinstellungen** als Namen *Vertraulichkeitsgrad von Dokumenten* ein, und klicken Sie dann auf **Weiter**.
 9. Klicken Sie auf **Veröffentlichen**.
 
-Sobald sie veröffentlicht sind, stehen die Bezeichnungen Benutzern von Office Desktop-Apps zur Verfügung. Wenn jemand die Bezeichnung **Streng vertraulich** anwendet, wird dem entsprechenden Dokument automatisch ein Wasserzeichen hinzugefügt.
+Sobald sie veröffentlicht sind, stehen die Bezeichnungen Benutzern von Office Desktop-Apps zur Verfügung. Wenn Benutzer die Bezeichnung **Streng vertraulich** anwenden, wird dem entsprechenden Dokument automatisch ein Wasserzeichen hinzugefügt.
 
 ### <a name="more-information"></a>Weitere Informationen
 [Übersicht über Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="create-a-sensitive-information-type-for-a-highly-confidential-project"></a>Erstellen eines vertraulichen Informationstyps für ein streng vertrauliches Projekt
+## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Erstellen Sie einen Typ sensibler Informationen für ein streng vertrauliches Projekt
 
 Vertrauliche Informationstypen sind vordefinierte Zeichenfolgen, die in Richtlinienworkflows verwendet werden können, um Compliance-Anforderungen durchzusetzen. Das Microsoft 365 Compliance Center bietet über 100 vertrauliche Informationstypen, darunter Führerscheinnummern, Kreditkartennummern, Bankkontonummern usw.
 
-Sie können benutzerdefinierte vertrauliche Informationstypen erstellen, um für Ihre Organisation spezifische Inhalte zu verwalten. Im folgenden Beispiel werden wir einen vertraulichen Informationstyp für ein streng vertrauliches Projekt erstellen. Diesen vertraulichen Informationstyp können wir dann verwenden, um automatisch eine Klassifizierungsbezeichnung anzuwenden.
+Sie können benutzerdefinierte vertrauliche Informationstypen erstellen, um für Ihre Organisation spezifische Inhalte zu verwalten. Im folgenden Beispiel erstellen wir einen vertraulichen Informationstyp für ein streng vertrauliches Projekt. Diesen vertraulichen Informationstyp können wir dann verwenden, um automatisch eine Klassifizierungsbezeichnung anzuwenden.
 
 So erstellen Sie einen vertraulichen Informationstyp
 1. Erweitern Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) im linken Navigationsbereich den Eintrag **Klassifizierung**, und klicken Sie dann auf **Vertrauliche Informationstypen**.
@@ -262,7 +266,7 @@ So erstellen Sie einen vertraulichen Informationstyp
 
 ## <a name="create-a-policy-to-assign-a-label-based-on-a-sensitive-information-type"></a>Erstellen einer Richtlinie zum Zuweisen einer Bezeichnung auf der Grundlage eines vertraulichen Informationstyps
 
-Nachdem der vertrauliche Informationstyp erstellt wurde, können Sie in Microsoft Cloud App Security eine Dateirichtlinie erstellen, um die Bezeichnung *Streng vertraulich* automatisch auf Dokumente anzuwenden, welche die Zeichenfolge *Projekt Saturn* enthalten.
+Sobald der vertrauliche Informationstyp erstellt ist, können wir in Microsoft Cloud App Security eine Dateirichtlinie erstellen, um Dokumente, welche die *Projekt Saturn*-Zeichenfolge enthalten, automatisch mit dem Etikett *Streng vertraulich* zu versehen.
 
 > [!NOTE]
 > Dank eines Replikationsvorgangs sind Vertraulichkeitsbezeichnungen in Cloud App Security verfügbar. Die gewünschte Bezeichnung für eine Richtlinie wird möglicherweise nicht sofort angezeigt.
@@ -282,14 +286,14 @@ So erstellen Sie eine Dateirichtlinie auf der Grundlage eines vertraulichen Info
 12. Aktivieren Sie das Kontrollkästchen **Klassifizierungsbezeichnung anwenden**, und wählen Sie die Bezeichnung **Streng vertraulich** aus.
 13. Klicken Sie auf **Erstellen**.
 
-Wenn ein Benutzer bei aktivierter Richtlinie "Projekt Saturn" in ein Dokument eingibt, wird Cloud App Security beim Durchsuchen dieser Datei automatisch die Bezeichnung *Streng vertraulich* darauf anwenden.
+Wenn ein Benutzer bei aktivierter Richtlinie "Projekt Saturn" in ein Dokument eingibt, wird Cloud App Security beim Überprüfen dieser Datei automatisch die Bezeichnung *Streng vertraulich* darauf anwenden.
 
 ### <a name="more-information"></a>Weitere Informationen
 [Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## <a name="create-a-policy-to-remove-guest-access-to-highly-confidential-files"></a>Erstellen einer Richtlinie, um den Gastzugriff auf streng vertrauliche Dateien zu entfernen
+## <a name="create-a-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Erstellen einer Richtlinie zum Entfernen des Gastzugriffs auf streng vertrauliche Dateien
 
-Im Beispiel in diesem Artikel dürfen Dateien mit der Bezeichnung *Streng vertraulich* nicht für Gäste freigegeben werden. Sie können eine Dateirichtlinie in Cloud App Security erstellen, die den Gastzugriff auf Dateien mit dieser Bezeichnung automatisch entfernt.
+In dem Beispiel in diesem Artikel dürfen Dateien mit der Bezeichnung *Streng vertraulich* nicht für Gäste freigegeben werden. Sie können eine Dateirichtlinie in Cloud App Security erstellen, die den Gastzugriff auf Dateien mit dieser Bezeichnung automatisch entfernt.
 
 Beachten Sie, dass dadurch nicht verhindert wird, dass Benutzer diese Dateien mit anderen teilen oder erneut freigeben. Es kommt nach wie vor darauf an, dass Ihre Benutzer Ihre Governance-Richtlinien für Dateien einhalten, die an Orten mit der Möglichkeit der Gastfreigaben gespeichert sind. Allerdings kann dies ein hilfreiches Instrument zum Entfernen des Gastzugriffs auf Dateien darstellen, denen vertrauliche Informationen hinzugefügt wurden, nachdem sie für Gäste freigegeben wurden.
 
@@ -309,13 +313,13 @@ So erstellen Sie eine Dateirichtlinie auf der Grundlage einer Bezeichnung
 12. Geben Sie als benutzerdefinierte Benachrichtigung folgenden Text ein: *Diese Datei ist streng vertraulich. Die Unternehmensrichtlinien untersagen deren Freigabe für Gäste.*
 13. Klicken Sie auf **Erstellen**.
 
-Beachten Sie, dass mit dieser Richtlinie der Zugriff für Dateien entfernt wird, die über einen *Link für bestimmte Personen* freigegeben wurden. Der Zugriff über Links ohne Authentifizierung (*Jeder*-Links) wird nicht entfernt. Ebenfalls nicht entfernt wird der Zugriff für Gäste, die Mitglieder der Website oder des Teams als Ganzes sind. Wenn Sie vorhaben, auf einer Website oder in einem Team mit Gastmitgliedern streng vertrauliche Dokumente freizugeben, erwägen Sie die Verwendung [privater Kanäle in Microsoft Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9), und den Zugang zu diesen Kanälen nur Mitgliedern Ihrer Organisation zu gestatten.
+Beachten Sie, dass mit dieser Richtlinie der Zugriff für Dateien entfernt wird, die über einen *Link für bestimmte Personen* freigegeben wurden. Der Zugriff über Links ohne Authentifizierung (*Jeder*-Links) wird nicht entfernt. Ebenfalls nicht entfernt wird der Zugriff für Gäste, die Mitglieder der Website oder des Teams als Ganzes sind. Wenn Sie vorhaben, auf einer Website oder in einem Team mit Gastmitgliedern streng vertrauliche Dokumente freizugeben, erwägen Sie die Verwendung [privater Kanäle in Microsoft Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) und den Zugriff auf diese Kanäle nur Mitgliedern Ihrer Organisation zu gestatten.
 
 ## <a name="test-the-solution"></a>Testen der Lösung
 
 Wenn Sie die in diesem Artikel beschriebene Lösung testen möchten, erstellen Sie ein Word-Dokument und speichern Sie es in einer Dokumentbibliothek. Geben Sie die Datei für einen Gastbenutzer frei. Wenn der Gast versucht, auf das Dokument zuzugreifen, sollte er sich zuerst über die mehrstufige Authentifizierung anmelden und die Nutzungsbedingungen akzeptieren müssen.
 
-Sobald der Gast Zugriff auf das Dokument hat, geben Sie *Projekt Saturn* in das Dokument ein und speichern Sie es. Sobald Cloud App Security das Dokument überprüft hat, sollte die Bezeichnung *Streng vertraulich* angewendet werden, und der Gastbenutzer sollte nicht mehr darauf zugreifen können.
+Sobald der Gast Zugriff auf das Dokument hat, geben Sie *Projekt Saturn* in das Dokument ein und speichern Sie es. Sobald Cloud App Security das Dokument überprüft hat, sollte die Bezeichnung *Streng vertraulich* angewendet werden und der Gastbenutzer nicht mehr darauf zugreifen können.
 
 Sie können die in diesem Artikel beschriebenen Tools in verschiedenen Kombinationen verwenden, um eine produktive und zugleich sichere Gastfreigabeumgebung für Ihre Organisation zu schaffen.
 
