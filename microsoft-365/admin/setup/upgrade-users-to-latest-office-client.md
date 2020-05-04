@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Erfahren Sie, wie Sie Ihre Benutzer auf den neuesten Office-Client aktualisieren.
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627534"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011272"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aktualisieren Sie Ihre Microsoft 365 for Business-Benutzer auf den neuesten Office-Client
 
@@ -124,4 +124,4 @@ Wenn Sie dies noch nicht getan haben, weisen Sie allen Benutzern in Ihrer Organi
 Nachdem Sie überprüft haben, dass die Benutzer, für die Sie ein Upgrade durchführen möchten, über Lizenzen verfügen, müssen Sie Office im letzten Schritt installieren, siehe [herunterladen und installieren oder erneutes Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
   
 > [!TIP]
-> Wenn Sie nicht möchten, dass Ihre Benutzer Office selbst installieren, finden Sie weitere Informationen unter [Verwalten von Software Downloadeinstellungen in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Sie können das [Office-Bereitstellungs Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) verwenden, um die Office-Software in Ihr lokales Netzwerk herunterzuladen und dann Office mit der Software Bereitstellungsmethode bereitzustellen, die Sie normalerweise verwenden.
+> Wenn Sie nicht möchten, dass Ihre Benutzer Office selbst installieren, finden Sie weitere Informationen unter [Verwalten von Software Downloadeinstellungen in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Sie können das [Office-Bereitstellungs Tool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) verwenden, um die Office-Software in Ihr lokales Netzwerk herunterzuladen und dann Office mit der Software Bereitstellungsmethode bereitzustellen, die Sie normalerweise verwenden.

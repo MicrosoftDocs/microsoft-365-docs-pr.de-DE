@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fe98df2c64bca36bc44c30bddb8b5e53d25aa6a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634556"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011839"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft-Sicherheits Portale und Admin Center
 Während das [Microsoft 365 Security Center](overview-security-center.md) die neue Heimat für die Überwachung und Verwaltung der Sicherheit in ihren Identitäten, Daten, Geräten und Apps ist, müssen Sie für bestimmte spezielle Aufgaben auf verschiedene Portale zugreifen.
@@ -52,5 +52,5 @@ Diese Portale sind zwar nicht speziell für die Verwaltung der Sicherheit ausgel
 | Azure-Portal | Anzeigen und Verwalten von [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) und all ihren [Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 Compliance Center | Verwalten von Daten Bearbeitungsrichtlinien und sicherstellen der [Einhaltung von Vorschriften](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 Admin Center | Konfigurieren von Microsoft 365-Diensten; Verwalten von Rollen, Lizenzen und Nachverfolgen von Updates für Ihre Microsoft 365-Dienste | [admin.microsoft.com](https://admin.microsoft.com/) |
-| Microsoft Endpoint Manager-Verwaltungskonsole | Verwenden von [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/) zum Verwalten und Sichern von Geräten mithilfe kombinierter InTune-und Configuration Manager-Funktionen | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
+| Microsoft Endpoint Manager Admin Center | Verwenden von [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/configmgr/) zum Verwalten und Sichern von Geräten mithilfe kombinierter InTune-und Configuration Manager-Funktionen | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft InTune-Portal | Verwenden von [Microsoft InTune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) zum Bereitstellen von Geräterichtlinien und Überwachen von Geräten auf Kompatibilität | [Portal.Azure.com/#Blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)

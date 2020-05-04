@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636220"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011911"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -53,7 +53,7 @@ Ihre IT-Administratoren profitieren von diesen Funktionen:
 Microsoft Managed Desktop nimmt die Last der Verwaltung registrierter Geräte und der von Microsoft verwendeten Software an.
 
 - **Hardware:** Statt dass Ihre IT-Abteilung Geräte (und deren Treiber) recherchieren und testen muss, werden bestimmte Geräte sorgfältig von Microsoft Managed Desktop getestet, was zu einer kuratierten [Liste von Geräten](../service-description/device-list.md) führt, die die Leistungsanforderungen auf Unternehmensebene erfüllen und die garantiert mit dem Dienst arbeiten. Sie können entweder Geräte selbst beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wieder verwenden, vorausgesetzt, Sie befinden sich in der genehmigten Liste. Das Registrieren von Geräten ist einfach und unkompliziert, und bevor Sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteumgebung für Ihre Endbenutzer [Anpassen](../working-with-managed-desktop/config-setting-overview.md) .
-- **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts-und Feature-Updates, Treiber, Firmware, Virenschutzdefinitionen und Office ProPlus-Updates ein und verwaltet diese. Dies umfasst umfangreiche Tests und Überprüfungen aller Updates, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind und Unterbrechungen minimiert werden, sodass Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
+- **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts-und Feature-Updates, Treiber, Firmware, Virenschutzdefinitionen und Microsoft 365-Apps für Enterprise-Updates ein und verwaltet diese. Dies umfasst umfangreiche Tests und Überprüfungen aller Updates, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind und Unterbrechungen minimiert werden, sodass Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
 - **Apps:** Im Rahmen von Microsoft 365 Enterprise stellt Microsoft mehrere wichtige Microsoft-Apps für Sie bereit (und verwaltet Sie). Wahrscheinlich haben Sie aber auch andere apps, die Sie für Ihr Unternehmen benötigen. Anstatt dass Ihre IT-Abteilung diese Apps testen, Verpacken und bereitstellen muss, hilft Ihnen Microsoft bei der Bereitstellung und kann Ihnen bei der [Desktop-App versichern](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) , falls erforderlich. Weitere Informationen finden Sie unter [apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 

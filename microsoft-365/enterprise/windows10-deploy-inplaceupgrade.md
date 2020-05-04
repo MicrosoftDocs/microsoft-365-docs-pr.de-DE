@@ -12,12 +12,12 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085584"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011817"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Schritt 2: Bereitstellen von Windows 10 Enterprise für vorhandene Geräte als direktes Upgrade
 
@@ -47,7 +47,7 @@ Weitere Informationen, erste Schritte, Verwendung und Problembehandlung für das
 
 Führen Sie als nächstes die Anleitung aus, um Configuration Manager (Current Branch) zu verwenden, um Windows 7 oder höheres Betriebssystem auf Windows 10 zu aktualisieren. Wie bei jeder Bereitstellung mit hohem Risiko wird empfohlen, die Benutzerdaten zu sichern, bevor Sie fortfahren. OneDrive Cloud Storage ist für lizenzierte Microsoft 365-Benutzer einsatzfähig und kann verwendet werden, um Ihre Dateien sicher zu speichern. Weitere Informationen finden Sie unter [OneDrive-Schnellstarthandbuch](https://aka.ms/ODfBquickstartguide). Um auf diese Seite zugreifen zu können, müssen Sie sich als mandantenadministrator oder globaler Administrator in einem Office 365-oder Microsoft 365-Mandanten anmelden.
 
-Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+Eine Liste der Configuration Manager-Versionen und der entsprechenden Windows 10-Clientversionen, die unterstützt werden, finden Sie unter [Support für Windows 10 für Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **So überprüfen Sie die Bereitschaft zum Upgrade von Windows**
 
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um eine Aktualisierungstask Sequenz zu e
 Nachdem Sie die Aktualisierungstask Sequenz erstellt haben, müssen Sie eine Sammlung erstellen, die die zu aktualisierbaren Geräte enthält.
 
 > [!NOTE]
-> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
+> Verwenden Sie die folgenden Einstellungen, um die Bereitstellung auf einem einzelnen Gerät zu testen. Sie können unterschiedliche Mitgliedschaftsregeln verwenden, um Gerätegruppen einzuschließen, wenn Sie dazu fähig sind. Weitere Informationen finden Sie unter [How to Create Collections in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections).
 
 1. Klicken Sie in der Configuration Manager-Konsole im Arbeitsbereich **Ressourcen und Kompatibilität** mit der rechten Maustaste auf **gerätesammlungen**, und wählen Sie dann **gerätesammlung erstellen**aus. 
 2. Geben Sie im Assistenten zum Erstellen von gerätesammlungen auf der Seite **Allgemein** die folgenden Einstellungen ein, und wählen Sie dann **weiter**aus:
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte aus, um die Windows 10-Upgrade-Tasksequenz au
  
 1. Melden Sie sich am Windows-Computer an, und starten Sie das **Software Center**.
 2. Wählen Sie die Tasksequenz aus, die Sie in einem vorherigen Schritt erstellt haben, und wählen Sie dann **Installieren**aus.
-3. Wenn die Tasksequenz beginnt, initiiert Sie automatisch den in-Place-Upgradeprozess, indem das Windows-Setupprogramm (Setup. exe) mit den erforderlichen Befehlszeilenparametern aufgerufen wird, um ein automatisches Upgrade durchzuführen, das alle Daten, Einstellungen, Apps und Treiber.
+3. Wenn die Tasksequenz beginnt, initiiert Sie automatisch den in-Place-Upgradeprozess, indem das Windows-Setupprogramm (Setup. exe) mit den erforderlichen Befehlszeilenparametern aufgerufen wird, um ein automatisches Upgrade durchzuführen, bei dem alle Daten, Einstellungen, Apps und Treiber beibehalten werden.
 4. Nachdem die Tasksequenz erfolgreich abgeschlossen wurde, wird der Computer vollständig auf Windows 10 aktualisiert.
 
 Wenn bei der Verwendung von Windows 10 in einer Unternehmensumgebung Probleme auftreten, konsultieren Sie die [wichtigsten Microsoft-Support-Lösungen für am häufigsten auftretenden Probleme](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Diese Ressourcen umfassen KB-Artikel, Updates und Bibliotheksartikel.

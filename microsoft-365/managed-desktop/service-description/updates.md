@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636474"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011935"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Behandlung von Updates in Microsoft Managed Desktop
 
@@ -61,10 +61,10 @@ Funktionsweise der Updatebereitstellung:
 <tr><td>Funktionsupdates für das Betriebssystem</td><td>0 Tage</td><td>30 Tage</td><td>60 Tage</td><td>90 Tage</td></tr>
 <tr><td>Treiber/Firmware</td><td colspan="4">Folgt dem Zeitplan für Qualitäts Updates</td></tr>
 <tr><td>Virenschutz Definition</td><td colspan="4">Mit jeder Überprüfung aktualisiert</td></tr>
-<tr><td>Microsoft 365-Apps für Unternehmen</td><td colspan="4">Folgt dem monatlichen Office-Kanal
+<tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4">Folgt dem monatlichen Office-Kanal
 </table>
 
-Weitere Informationen zum monatlichen Kanal für Microsoft 365 apps for Enterprise finden Sie unter [Overview of Update Channels for Microsoft 365 apps for Enterprise](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+Weitere Informationen zum monatlichen Kanal für Microsoft 365 apps for Enterprise finden Sie unter [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Diese Zeiträume wurden absichtlich so konzipiert, dass Sie für alle Benutzer hohe Sicherheits-und Leistungsstandards gewährleisten. Darüber hinaus behält sich Microsoft Managed Desktop aufgrund der Daten, die auf allen verwalteten Desktopgeräten von Microsoft gesammelt wurden, sowie unterschiedlichen Umfangs und Auswirkungen von Updates die Flexibilität zur Veränderung der Länge der oben genannten Zeiträume für alle Bereitstellungsgruppen auf Ad-hoc-Basis vor.

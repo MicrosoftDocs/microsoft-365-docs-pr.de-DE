@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952651"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011327"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -289,7 +289,7 @@ Es wurde ein anderer unserer anfänglichen Setup-Assistenten aktualisiert: Micro
 
 Wir haben einige Updates für Abrechnung und Abonnements in diesem Monat:
 
-- Gerätebasierte Abonnements: Sie können **Office 365 ProPlus-Lizenzen (Geräte) für** Geräte im Microsoft 365 Admin Center zuweisen oder aufheben. **Office 365 ProPlus für Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnungs** > **Produkte & Dienste** , um die Lizenz zu suchen und zu erwerben.
+- Gerätebasierte Abonnements: Sie können **Microsoft 365 apps for Education (Geräte)** Lizenzen den Geräten im Microsoft 365 Admin Center zuweisen oder aufheben. **Microsoft 365 apps for Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnungs** > **Produkte & Dienste** , um die Lizenz zu suchen und zu erwerben.
 - Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer** > **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie unter:
   - [Zuweisen von Lizenzen für Benutzer](manage/assign-licenses-to-users.md)
   - [Entfernen der Zuweisung von Benutzerlizenzen](manage/remove-licenses-from-users.md)

@@ -1,5 +1,5 @@
 ---
-title: FAQ zur zentralen Bereitstellung
+title: FAQ zu Zentrale Bereitstellung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralisierten Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209664"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011735"
 ---
-# <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
+# <a name="centralized-deployment-faq"></a>FAQ zu Zentrale Bereitstellung
 
 Die zentralisierte Bereitstellung ist die empfohlene Vorgehensweise für einen Office 365 Administrator zum Bereitstellen von Office-Add-Ins (Word, Excel, PowerPoint und Outlook) für Benutzer und Gruppen in einer Organisation, vorausgesetzt, die Organisation erfüllt alle Anforderungen für die Verwendung einer zentralisierten Bereitstellung, wie in diesem Artikel beschrieben.   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Woher weiß ich, ob meine Organisation für die zentrale Bereitstellung eingerichtet ist?  
 
-Die zentrale Bereitstellung von Add-ins erfordert, dass Benutzer Office 365 ProPlus verwenden (und mit Ihren Anmeldeinformationen für die organisatorische Anmeldung bei Office angemeldet sind) und über Exchange Online Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit, Azure Active Directory befinden.  
+Die zentrale Bereitstellung von Add-ins erfordert, dass Benutzer Microsoft 365-Apps für Unternehmen verwenden (und mit Ihren Anmeldeinformationen für die organisatorische Anmeldung bei Office angemeldet sind) und über Exchange Online Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit, Azure Active Directory befinden.  
  
 Die zentralisierte Bereitstellung wird nur für Online Postfächer unterstützt. Die Bereitstellung für lokale Exchange-Postfächer wird nicht unterstützt.
  

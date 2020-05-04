@@ -1,5 +1,5 @@
 ---
-title: Ein-oder ausblenden neuer Features mit neuer Verwaltung
+title: Ein- und Ausblenden neuer Funktionen mit What's New Management
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Entscheiden Sie, welche Features und welche neuen Inhalte den Endbenutzern in der Office-Seite What es New Management for Office Desktop Apps angezeigt oder verborgen sind.
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131972"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011699"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>Ein-oder ausblenden neuer Features mit neuer Verwaltung
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>Ein- und Ausblenden neuer Funktionen mit What's New Management
 
 Office What es New Management für Win 32 ermöglicht Ihrer Organisation zu entscheiden, welche Features in der Office-Desktop-App für Endbenutzer angezeigt oder ausgeblendet werden. Jede Version von Office enthält neue und verbesserte Features, und mit der Inhaltsvorschau können Sie neue Inhalte für jede Releaseversion und jeden Kanal anzeigen und auswählen, ob die neuen Inhalte für jedes Feature für Endbenutzer ausgeblendet oder angezeigt werden sollen. 
 
@@ -62,7 +62,7 @@ Neue Features werden in Office What es New Management basierend auf diesem Zeitp
 |**Halbjährlich (gezielt)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt
 |**Halbjährlich** <br/> |1. Januar und 1. Juli <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt<br/> |
 
-Weitere Informationen zu Kanal Aktualisierungs Plänen finden Sie unter [Update History for Office 365 ProPlus (nach Datum aufgeführt)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Weitere Informationen zu Kanal Aktualisierungs Plänen finden Sie unter [Update History for Microsoft 365 Apps (aufgelistet nach Datum)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

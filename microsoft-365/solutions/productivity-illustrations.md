@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003140"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011851"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365-Produktivitäts Abbildungen
 
@@ -124,12 +124,12 @@ Weitere Informationen finden Sie im Artikel zu diesem Poster: [Microsoft-Telefon
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Bereitstellen eines modernen und sicheren Desktops mit Microsoft
 
-Informationen für IT-Architekten über das Bereitstellen und Verwalten von Updates für Office 365 ProPlus unter Windows 10
+Was IT-Architekten über die Bereitstellung und Verwaltung von Updates für Microsoft 365 apps for Enterprise (zuvor mit dem Namen Office 365 ProPlus) unter Windows 10 wissen müssen
   
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aktualisiert am 2017 | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
+|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aktualisiert am 2017 | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10-und Microsoft 365-Apps für Unternehmen aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10-und Microsoft 365-Apps für Unternehmen mit Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 apps for Enterprise aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 apps for Enterprise mit Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

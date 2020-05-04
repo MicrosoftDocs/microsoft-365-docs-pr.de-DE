@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637797"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011232"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cyber Framework (CSF)
 
@@ -88,7 +88,7 @@ Nach Angaben des [Department of Homeland Security](https://www.dhs.gov/critical-
 
 **Was sind die in-Scope-Dienste für Office 365?**
 
-Die in-Scope-Dienste der NIST CSF-Zertifizierung sind Exchange Online Archivierung, Exchange Online Schutz, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive für Unternehmen, Office Online, myAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-Mandanten-Cloud und Office 365 gcc.
+Die in-Scope-Dienste der NIST CSF-Zertifizierung sind Exchange Online Archivierung, Exchange Online Schutz, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive für Unternehmen, Office Online, myAnalytics, Microsoft Teams, Microsoft 365 apps for Enterprise in Office 365 Multi-Tenant Cloud und Office 365 gcc.
 
 > [!NOTE]
 > Microsoft 365-Apps für Unternehmen ermöglichen den Zugriff auf verschiedene Cloud-Dienste wie Roamingeinstellungen, Lizenzierung und OneDrive-Consumer-Cloud-Speicher und ermöglichen möglicherweise den Zugriff auf zusätzliche Cloud-Dienste in der Zukunft. Roaming-Einstellungen und-Lizenzierung unterstützen die Standards für HITRUST. OneDrive-Consumer-cloudspeicher nicht, und andere Cloud-Dienste, auf die über Microsoft 365-Apps für Unternehmen zugegriffen werden kann, und die in Zukunft auch von Microsoft angeboten werden, unterstützen diese Standards möglicherweise nicht. *
