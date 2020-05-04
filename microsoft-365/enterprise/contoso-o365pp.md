@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Microsoft 365 Apps for Enterprise verwendet.
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625254"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011887"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365 Apps for Enterprise-Bereitstellung für Contoso
 
@@ -40,7 +40,7 @@ Aufgrund seiner Anforderungen entschied sich Contoso für die Bereitstellung von
 - Intelligente Bereitstellung von Language Packs, einschließlich der automatischen Bereitstellung derselben Sprache, die das Betriebssystem verwendet
 - Vollständig unterstützte und einfach zu verwendende Methode zum Entfernen vorhandener Versionen von Office auf einem Client während der Bereitstellung
 
-Zusätzlich zu Configuration Manager verwendete Contoso das [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), ein kostenloses Tool von Microsoft, um Kompatibilitätsprobleme mit Office-Makros und -Add-Ins zu bewerten.
+Zusätzlich zu Configuration Manager verwendete Contoso das [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ein kostenloses Tool von Microsoft, um Kompatibilitätsprobleme mit Office-Makros und -Add-Ins zu bewerten.
 
 ## <a name="managing-the-deployment-and-updates"></a>Verwaltung der Bereitstellung und Updates
 
@@ -51,7 +51,7 @@ Microsoft 365 Apps for Enterprise hat ein neues Release-Modell: Office als Diens
 
 Anstatt Updates von Office mit Configuration Manager zu verwalten, aktivierte Contoso automatische Updates über die Cloud. Cloudbasierte Updates hatten einen reduzierten Verwaltungsaufwand zur Folge, wobei sichergestellt wurde, dass die Geräte stets auf dem neuesten Stand sind. 
 
-Contoso folgte dem gleichen zweistufigen Ansatz für Feature-Updates, den das Unternehmen für die Bereitstellung von Office nutzte: Geräte in der Pilotgruppe erhielten Feature-Updates vier Monate vor den Geräten in der restlichen Organisation (die allgemeine Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
+Contoso folgte dem gleichen zweistufigen Ansatz für Feature-Updates, den das Unternehmen für die Bereitstellung von Office nutzte: Geräte in der Pilotgruppe erhielten Feature-Updates vier Monate vor den Geräten in der restlichen Organisation (die allgemeine Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
 - den halbjährlichen Kanal (gezielt) für Updates für die Pilotgruppe 
 - den halbjährlichen Kanal für Updates für die allgemeine Gruppe. 
