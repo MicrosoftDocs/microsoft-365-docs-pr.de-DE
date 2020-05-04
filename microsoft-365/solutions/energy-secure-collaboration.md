@@ -9,15 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Erfahren Sie, wie Microsoft 365 Unternehmen der Energiebranche bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält
-ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- M365solutions
+ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637188"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002240"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Energiebranche
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Abbildung Metapher für eine globale Darstellung verschiedener Branchen, welche die Cloud nutzen":::
