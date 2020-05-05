@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011851"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022132"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365-Produktivitäts Abbildungen
 
@@ -28,7 +28,7 @@ Die Reihe der Microsoft 365 Enterprise-Lösungen bietet Hilfestellung zum Implem
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten
 Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend mit Microsoft Teams.
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild für Poster der logischen Architektur von Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aktualisiert am 2019   |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
 
@@ -36,7 +36,7 @@ Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppen in Microsoft 365 für IT-Architekten
 Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild für Gruppen-Infografik](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Aktualisiert am 2019|Diese Illustrationen erläutern die unterschiedlichen Arten von Gruppen, erklären, wie diese erstellt und verwaltet werden, und bieten einige Vorschläge für Governance.|
 
@@ -52,7 +52,7 @@ Sicherheit und Datenschutz für Organisationen mit einem einzelnen Microsoft 365
 Je nach Umgebung sind einige Tools für bestimmte Architekturen besser geeignet.
 
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |[![Thumb Image for Microsoft Defender ATP-Bereitstellungsstrategie](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aktualisiert am 2020| Das architektonische Material unterstützt Sie bei der Planung Ihrer Bereitstellung für die folgenden Architekturen: <ul><li> Cloud-systemeigen </li><li> Co-Management </li><li> Lokal</li><li>Evaluierung und lokales Onboarding</li>
 
@@ -121,16 +121,7 @@ Aktualisiert am 2019
 
 Weitere Informationen finden Sie im Artikel zu diesem Poster: [Microsoft-Telefonielösungen](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Bereitstellen eines modernen und sicheren Desktops mit Microsoft
-
-Was IT-Architekten über die Bereitstellung und Verwaltung von Updates für Microsoft 365 apps for Enterprise (zuvor mit dem Namen Office 365 ProPlus) unter Windows 10 wissen müssen
   
-
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aktualisiert am 2017 | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10-und Microsoft 365-Apps für Unternehmen aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10-und Microsoft 365-Apps für Unternehmen mit Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 apps for Enterprise aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 apps for Enterprise mit Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Siehe auch
 
 [Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 59c429a8460d16f2c636beeaf571689d33b400d5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94f2c875a9373675fd044db7b73251cefe859647
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628220"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44016014"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
   
@@ -52,7 +52,7 @@ So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
 
 |**Field**  |**Beschreibung**  |
 |---------|---------|
-|Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Anmeldeseite: Wenn Ihre Benutzer andere Microsoft-Konten mit ihrer geschäftlichen E-Mail-Adresse bzw. der E-Mail-Adresse ihrer Schule eingerichtet haben, wird auf der Anmeldeseite möglicherweise der Organisationsname angezeigt. Auf diese Weise können sie zwischen ihrem Firmen- oder Schulkonto und ihren anderen Konten besser unterscheiden und identifizieren, welches Konto beim Anmelden zu verwenden ist.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/>        |
+|Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Anmeldeseite: Wenn Ihre Benutzer andere Microsoft-Konten mit ihrer geschäftlichen E-Mail-Adresse bzw. der E-Mail-Adresse ihrer Schule eingerichtet haben, wird auf der Anmeldeseite möglicherweise der Organisationsname angezeigt. Auf diese Weise können sie zwischen ihrem Firmen- oder Schulkonto und ihren anderen Konten besser unterscheiden und identifizieren, welches Konto beim Anmelden zu verwenden ist.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/> MS Teams: Organisations Wechsler in Microsoft Teams zeigt den Namen der Organisation an. <br/>  |
 |Straße, Ort, Bundesland/Kanton, Postleitzahl  <br/>     | Die hier eingegebene Adresse ist das, was Sie auf Ihrer Rechnung sehen, unter verkauft an: die auf Ihrer Rechnung verkaufte Adresse ist identisch mit ihrer Organisationsadresse auf Ihrer Profilseite (siehe [verstehen Ihrer Rechnung für Microsoft 365 for Business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Land oder Region  <br/>    | Dies ist das Land oder die Region, in dem/der sich der Hauptsitz des Unternehmens befindet. Das ausgewählte Land bzw. die Region bestimmt, welche Dienste für Sie verfügbar sind, die Steuern und die Abrechnungswährung für Ihr Land bzw. Ihre Region sowie den Standort des Ihnen am nächsten gelegenen Rechenzentrums (siehe [Microsoft Office-Lizenzeinschränkungen](https://office.microsoft.com/redir/FX103037529)).  <br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../contact-support-for-business-products.md).        |
 |Telefon  <br/>     | Dies ist die primäre Nummer für Ihr Unternehmen. Normalerweise ist dies die Nummer Ihrer Unternehmenszentrale.  <br/>        |

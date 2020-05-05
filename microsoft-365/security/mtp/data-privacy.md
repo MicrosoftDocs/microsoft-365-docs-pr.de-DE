@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81773481f79a70cb5996696c9554dfe744170e8c
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: d11fdc58f44c9e4bacb708fb246fdea40eb75cff
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011243"
+ms.locfileid: "44016062"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection Datensicherheit und Datenschutz
 
@@ -33,7 +33,7 @@ ms.locfileid: "44011243"
 
 Mit dem Microsoft Threat Protection Stimmen Sie den folgenden Bedingungen zu:
 
-*Der Microsoft Threat Protection (MTP)-Dienst überträgt bestimmte Kundendaten von anderen Microsoft Enterprise Online-Diensten in MTP und von MTP zurück an diese Microsoft Enterprise Online-Dienste. Diese Datenübertragungen unterliegen den [Online Dienstleistungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2127420) und werden im [Microsoft Trust Center](https://go.microsoft.com/fwlink/?linkid=2127550)beschrieben.*
+*Durch Aktivieren von Microsoft Threat Protection (MTP) stimmen Sie den folgenden Bedingungen zu. Ihre zutreffenden Kundendaten gemäß Definition in den Online Service Terms (Ost) werden von anderen Microsoft-Diensten in MTP übertragen. Die Verwendung Ihrer Kundendaten in MTP befolgen die Daten Bearbeitungsstandards und-Zusagen für Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). Sie bestätigen, dass diese Zusagen möglicherweise von den Diensten abweichen, von denen die Kundendaten übertragen werden. Außerdem werden die in MTP gespeicherten Kundendaten im Rest in dem Geo gespeichert, das Sie für die Speicherung Ihrer MDATP-Kundendaten ausgewählt haben, was sich möglicherweise von dem in Verbindung mit anderen Diensten ausgewählten Geo unterscheidet. Microsoft überträgt die Kundendaten nicht außerhalb dieser Geo-Ausnahme wie im Abschnitt "Datenspeicherort" des [Microsoft Trust Center](https://www.microsoft.com/trust-center)angegeben.*
 
 Weitere Informationen zur Datenspeicherung und zum Datenschutz der jeweiligen Produkte finden Sie unter:
 - [Microsoft Defender ATP-Datenspeicherung und Datenschutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen von Threat Protection-Funktionen in Microsoft 365
 description: Informationen zum Bereitstellen von Threat Protection-Funktionen in Microsoft 365 E5.
-ms.author: samanro
-author: samanro
-manager: bcarter
+ms.author: bcarter
+author: brendacarter
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: b04e34c946e2e73c2d9c34f5de881618444e3892
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003645"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44016096"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Bereitstellen von Threat Protection-Funktionen in Microsoft 365
 

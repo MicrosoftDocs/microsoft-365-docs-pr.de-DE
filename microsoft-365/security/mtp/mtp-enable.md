@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011863"
+ms.locfileid: "44016074"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -45,9 +45,6 @@ Sie müssen ein **globaler Administrator** oder ein **Sicherheitsadministrator**
 
 ## <a name="start-using-the-service"></a>Verwenden des Diensts – erste Schritte
 
->[!IMPORTANT]
->Ab dem 3. Mai 2020 wird Microsoft schrittweise neue, optimierte Erfahrungen rund um die [Lizenzanforderungen](prerequisites.md#licensing-requirements) einführen und Microsoft Threat Protection aktivieren. Einige Wochen während dieses Zeitraums werden einige Kunden beginnen, Änderungen an Ihren Portal-Erlebnissen zu sehen. Informationen zu den neuen Erfahrungen sind in diesem Artikel als **neue Erfahrung** markiert.
-
 Microsoft Threat Protection aggregiert Daten aus den verschiedenen integrierten Diensten. Die Daten werden zentral verarbeitet und gespeichert, um neue Erkenntnisse zu identifizieren und um zentralisierte Antwort Workflows zu ermöglichen. Dies geschieht ohne Beeinträchtigung vorhandener Bereitstellungen, Einstellungen oder Daten, die den integrierten Diensten zugeordnet sind.
 
 Bevor Sie den Dienst aktivieren, zeigt das Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) die Microsoft Threat Protection-Willkommensseite an, wenn Sie **Vorfälle**, das **Aktionscenter**oder die **Suche** im Navigationsbereich auswählen. Diese Navigationsoptionen werden nicht angezeigt, wenn Sie nicht berechtigt sind, Microsoft Threat Protection zu verwenden.
@@ -64,8 +61,6 @@ Um Microsoft Threat Protection zu aktivieren, führen Sie den Vorgang einfach au
 Wenn Microsoft Defender ATP für Ihre Organisation bereitgestellt wurde, werden die Daten im selben Rechenzentrumsspeicherort gespeichert und verarbeitet, den Sie für [Ihre Microsoft Defender ATP-Daten](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) ausgewählt haben. Wenn Sie nicht über Microsoft Defender ATP verfügen, werden Sie aufgefordert, einen neuen Rechenzentrumsspeicherort speziell für Microsoft Threat Protection zu wählen. 
  
 Sie müssen die Zustimmung erteilen, bevor Daten zwischen Diensten freigegeben und aggregiert werden.
-
-**Neue Erfahrung:** Ab dem 3. Mai 2020 werden Kunden allmählich Änderungen an dieser Erfahrung erhalten. Für Personen mit der neuen Benutzeroberfläche wählt der Dienst automatisch den optimalen rechenzentrumsstandort für Ihre aggregierten Daten basierend auf Ihren vorhandenen Microsoft 365-Sicherheitsdiensten aus. Der ausgewählte Speicherort des Rechenzentrums wird auf dem Bildschirm angezeigt.
 
 ### <a name="confirm-that-the-service-is-on"></a>Vergewissern Sie sich, dass der Dienst aktiviert ist
 Sobald der Dienst bereitgestellt ist, wird Folgendes hinzugefügt:
