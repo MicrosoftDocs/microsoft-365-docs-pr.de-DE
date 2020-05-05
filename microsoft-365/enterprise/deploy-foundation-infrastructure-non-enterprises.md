@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638260"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011899"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 
@@ -215,7 +215,7 @@ Zu den neuen und hervorgehobenen Elementen von Windows 10 Enterprise gehören:
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Phase 4: Microsoft 365 Apps for Enterprise
 
-Microsoft 365 Enterprise enthält Microsoft 365 Apps for Enterprise, die Abonnementversion von Microsoft Office. Wie Office 2016 oder Office 2019 wird Microsoft 365 Apps for Enterprise direkt auf Ihren Clientgeräten installiert. Microsoft 365 Apps for Enterprise erhält jedoch in regelmäßigen Abständen Updates mit neuen Features. Weitere Informationen finden Sie unter [Info zu Microsoft 365 Apps for Enterprise im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise enthält Microsoft 365 Apps for Enterprise, die Abonnementversion von Microsoft Office. Wie Office 2016 oder Office 2019 wird Microsoft 365 Apps for Enterprise direkt auf Ihren Clientgeräten installiert. Microsoft 365 Apps for Enterprise erhält jedoch in regelmäßigen Abständen Updates mit neuen Features. Mehr Informationen erhalten Sie unter [Info zu Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 Für Ihre Nicht-Unternehmensorganisation installieren Sie Microsoft 365 Apps for Enterprise manuell auf Geräten, beispielsweise auf Windows-, iOS- und Android-Geräten. Dies kann im Rahmen der Vorbereitung eines neuen Geräts für den Gebrauch oder durch den Benutzer im Rahmen seines Onboarding-Prozesses erfolgen.
 

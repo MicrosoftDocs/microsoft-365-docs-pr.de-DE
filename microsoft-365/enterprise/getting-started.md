@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Einführung in den Desktopbereitstellungsprozess.
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634218"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011875"
 ---
 # <a name="getting-started---desktop-deployment"></a>Erste Schritte – Desktopbereitstellung
 
@@ -53,7 +53,7 @@ Einer der wichtigsten Mandanten der modernen Verwaltungsmethoden sind Geräte, d
 
 [Windows 10 für IT-Experten](https://www.microsoft.com/itpro/windows-10)
 
-[Info zu Microsoft 365 Apps for Enterprise im Unternehmen](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+[Info zu Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>Was wurde geändert?
 
@@ -67,7 +67,7 @@ Sehen wir uns zunächst an, was sich seit Ihrer letzten Desktopbereitstellung ge
 
 **Cloudbasierte Geräteverwaltung:** Dienste wie Microsoft Intune helfen Ihnen dabei, Windows 10-Geräte wie andere Mobilgeräte von einem zentralen Ort zu verwalten. Was Microsoft Intune einzigartig macht, ist die Möglichkeit, Windows 10-Geräte mit Microsoft Endpoint Configuration Manager gemeinsam zu verwalten. Sie können Configuration Manager verwenden, um zu Windows 10 zu wechseln und dann Microsoft Intune hinzuzufügen. Bei der Zusammenarbeit wird Microsoft Endpoint Configuration Manager zum intelligenten Edge in Ihrer Organisation, der mit der intelligenten Microsoft Cloud verbunden ist. Dadurch können Sie die Geräte Ihrer Benutzer sicher verwalten, egal, wo sie sich befinden und ob sie mit der Infrastruktur der Organisation verbunden oder mit der öffentlichen Cloud verbunden sind.
 
-[Mitverwaltung für Windows 10-Geräte](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Mitverwaltung für Windows 10-Geräte](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Cloudbasierter Bereitstellungsdienst:** Wenn Sie neue PCs kaufen, wurde bei diesen ein neuer Clouddienst namens Windows Autopilot-Bereitstellungsdienst eingeführt, mit dem Sie Microsoft 365-Geräte verwalten können. Autopilot ist bei Hardwareanbietern integriert, und neue PCs werden automatisch in Autopilot registriert, sodass sie direkt an den Endbenutzer gesendet werden können. Wenn der Computer das erste Mal eingeschaltet wird, ist die gewünschte Konfiguration Ihrer Organisation schnell konfiguriert und an die Bedürfnisse des Benutzers angepasst.
 
@@ -77,7 +77,7 @@ Sehen wir uns zunächst an, was sich seit Ihrer letzten Desktopbereitstellung ge
 
 Klick-und-Los unterscheidet sich stark von den MSI-basierten Paketen in der Vergangenheit. Klick-und-Los ist schneller und einfacher und unterstützt die Aktualisierung im Hintergrund ohne Auswirkungen auf die Benutzer. Es ist weiterhin eine lokale Kopie von Office, und Sie können weiterhin für die Bereitstellung und Konfiguration der Apps Ihre vorhandenen Bereitstellungstools wie Microsoft Endpoint Configuration Manager verwenden.
 
-[Bereitstellungshandbuch für Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Bereitstellungshandbuch für Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Halbjährliche Updates:** Nach dem Umstieg auf Windows 10 und Microsoft 365 Apps for Enterprise werden Updates mit neuen Funktionen halbjährlich bereitgestellt. Dank der Einblicke aus der Cloud von Microsoft können Sie diese Updates schnell und sicher für Hunderte oder Tausende von Geräten bereitstellen. Wie bei einem direkten Upgrade werden beim Featureupdate Apps, Daten und Konfigurationen aus der vorherigen Version beibehalten.
 
@@ -109,14 +109,14 @@ Wie in vorherigen Upgrades ist das Migrationstool für den Benutzerstatus (USMT)
 
 **[Schritt 6: Bereitstellung des Betriebssystems und Featureupdates](https://aka.ms/mdd6)** Wenn alles vorbereitet ist, besteht der nächste Schritt darin, die Betriebssystemabbilder bereitzustellen. Ein Großteil der Arbeit kann mithilfe der Aufgabensequenzen und der Infrastruktur von System Center Configuration Manager erledigt werden. Der empfohlene Ansatz besteht in einer stufenweisen Bereitstellung, bei der Sie sich zuerst auf eine Gruppe von „Early Adoptern“ konzentrieren, die einen repräsentativen Satz von Hardware und Apps verwenden. Sie können dann die Daten von diesen Geräten und Benutzern verwenden, um sich schrittweise immer mehr PCs vorzunehmen.
 
-[Einführung in die Betriebssystembereitstellung in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Einführung in die Betriebssystembereitstellung in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Schritt 7: Windows und Office-as-a-Service](https://aka.ms/mdd7)** Dies steht für eine bedeutende Änderung in der Weise, wie Desktops verwaltet werden. Mit diesem Umstieg auf Windows 10 und Microsoft 365 Apps for Enterprise können Sie zur Windows und Office-as-a-Service-Verwaltung wechseln. Anstelle eines großen Technologiewechsel alle paar Jahre können Sie Benutzern kontinuierlich neue Funktionen, Erfahrungen und Schutzfunktionen bereitstellen. Halbjährliche Featureupdates liefern neue Funktionen im Herbst und Frühling eines jeden Jahres, während monatliche kumulative Updates weiterhin Sicherheit, Zuverlässigkeit und Fehlerbehebungen enthalten. Sie können zwar den Office 2019-Client bereitstellen, es wird jedoch dringend ein Wechsel zu Microsoft 365 Apps for Enterprise empfohlen. Dies folgt einem ähnlichen Serviceplan wie Windows, sodass Benutzer Updates für die Office-Apps in regelmäßigen Abständen erhalten.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Übersicht über Windows-as-a-Service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Übersicht über Office-as-a-Service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Übersicht über Office-as-a-Service](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Schritt 8: Benutzerkommunikation und Schulung](https://aka.ms/mdd8) ** Dieser letzte Schritt ist entscheidend für die Verwendung der neuen Funktionen zur Verbesserung der Zusammenarbeit, Kommunikation, Sicherheit und mehr. Vor der allgemeinen Bereitstellung für reguläre Benutzer wird ein Rollout der Benutzerkommunikation und Schulung empfohlen. Dadurch können die gewünschten Änderungen bei der Verwendung neuer Funktionen in Office, Windows oder anderen Branchen-Apps und Diensten bewirkt werden. Zur Unterstützung bieten wir kostenlose Schulungen über Microsoft FastTrack an. Außerdem haben wir kostenlose Beispielkommunikationspläne und Zeitachsen und Vorlagen für E-Mails, soziale Netzwerke und Intranet veröffentlicht, die Sie beim der Einführung von Windows 10 unterstützen sollen. Als Microsoft 365-Organisation kann Ihre Organisation auch zu direkter Unterstützung berechtigt sein.
 

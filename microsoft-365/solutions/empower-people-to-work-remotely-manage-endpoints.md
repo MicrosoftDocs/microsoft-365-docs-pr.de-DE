@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: fdfe38a25947312b878b03734c320de004762506
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003061"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011603"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über Microsoft Intune](h
 
 Configuration Manager ist eine lokale Verwaltungslösung zur Verwaltung von Desktops, Servern und Laptops, die sich in Ihrem Netzwerk oder internetbasiert befinden. Sie können es für die Integration mit Intune, Azure AD, Microsoft Defender ATP und anderen Cloud-Diensten in der Cloud aktivieren. Verwenden Sie Configuration Manager zur Bereitstellung von Anwendungen, Software-Updates und Betriebssystemen. Sie können auch die Einhaltung von Vorschriften überwachen, Kunden in Echtzeit abfragen und auf sie einwirken und vieles mehr.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
+Weitere Informationen finden Sie in dieser [Übersicht über Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Co-Management
 
@@ -48,17 +48,17 @@ Co-Management kombiniert Ihre vorhandenen Investitionen in Configuration Manager
 
 Als Teil von Endpoint Manager nutzt das Co-Management Cloud-Funktionen, einschließlich bedingtem Zugriff. Sie behalten einige Aufgaben lokal, während Sie andere Aufgaben mit Intune in der Cloud ausführen.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Co-Management](https://docs.microsoft.com/configmgr/comanage/overview).
+Weitere Informationen finden Sie in dieser [Übersicht über Co-Management](https://docs.microsoft.com/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
 Desktop Analytics ist ein Cloud-basierter Dienst, der in Configuration Manager integriert ist und Ihnen Einblicke und Informationen liefert, damit Sie fundierte Entscheidungen über Ihre Windows-Clients treffen können. Es kombiniert Daten aus Ihrem Unternehmen mit Daten, die aus Millionen von Geräten aggregiert wurden, die mit Microsoft Cloud Services verbunden sind. Mit Desktop Analytics können Sie ein Inventar der in Ihrem Unternehmen ausgeführten Anwendungen erstellen, die Kompatibilität von Anwendungen mit den neuesten Windows 10-Feature-Updates bewerten, Kompatibilitätsprobleme identifizieren und auf der Grundlage von Einblicken in Cloud-fähige Daten Vorschläge zur Risikominderung erhalten, Pilotgruppen erstellen, welche die gesamte Anwendungs- und Treiberkombination auf einem minimalen Satz von Geräten repräsentieren, und Windows 10 auf pilot- und produktionsverwalteten Geräten bereitstellen.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview).
+Weitere Informationen finden Sie in dieser [Übersicht über Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot ist eine Self-Service-Plattform für die Bereitstellung von Windows ohne manuelles Eingreifen. Es ist eine Sammlung von Technologien, mit denen neue Geräte eingerichtet und vorkonfiguriert werden, damit sie für die Nutzung in der Produktion bereit stehen. Sie können Windows Autopilot auch zum Zurücksetzen, Ändern des Zwecks und Wiederherstellen von Geräten verwenden. Diese Lösung versetzt eine IT-Abteilung in die Lage, das zuvor Genannte mithilfe einer geringen bis gar keiner zu verwaltenden Infrastruktur zu erzielen, und das über einen einfachen und schnellen Vorgang. Aus Benutzersicht sind nur ein paar einfache Vorgänge nötig, um ihr Gerät einsatzbereit zu machen. Aus der Sicht der IT-Profis besteht die einzige Interaktion, die vom Endbenutzer verlangt wird, darin, sich mit einem Netzwerk zu verbinden und seine Anmeldeinformationen zu überprüfen.
+Windows Autopilot ist eine Self-Service-Plattform für die Bereitstellung von Windows ohne manuelles Eingreifen. Es ist eine Sammlung von Technologien, mit denen neue Geräte eingerichtet und vorkonfiguriert werden, damit sie für die Nutzung in der Produktion bereit stehen. Sie können Windows Autopilot auch zum Zurücksetzen, Ändern des Zwecks und Wiederherstellen von Geräten verwenden. Diese Lösung versetzt eine IT-Abteilung in die Lage, das zuvor Genannte mithilfe einer geringen bis gar keiner zu verwaltenden Infrastruktur zu erzielen, und das über einen einfachen und schnellen Vorgang. Aus der Sicht des Benutzers sind nur ein paar einfache Vorgänge nötig, um sein Gerät einsatzbereit zu machen. Aus der Sicht der IT-Profis besteht die einzige Interaktion, die vom Endbenutzer verlangt wird, darin, sich mit einem Netzwerk zu verbinden und seine Anmeldeinformationen zu überprüfen.
 
 Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
 

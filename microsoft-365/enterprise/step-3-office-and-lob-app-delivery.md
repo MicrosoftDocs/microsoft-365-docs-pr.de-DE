@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zum Liefern von Office- und Branchen-Apps.
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636796"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011639"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Schritt 3: Liefern von Office- und Branchen-Apps
 
@@ -63,9 +63,9 @@ Eine andere häufig verwendete Methode der App-Bereitstellung ist PC-Imageerstel
 
 Wenn Sie Microsoft 365 Apps for Enterprise in das Image einbeziehen möchten, denken Sie daran, dass dies eine benutzerbasierte Aktivierung erfordert. Es kann nicht vom Systemadministrator bereits aktiviert werden. Verwenden Sie das Office-Bereitstellungstool auf dem Gerät, von dem Sie ein Image erstellen, und überspringen Sie die Benutzeranmeldung. Nach der Bereitstellung des Images können sich Endbenutzer mit ihren Anmeldeinformationen anmelden und Microsoft 365 Apps for Enterprise aktivieren.
 
-[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Erstellen einer Aufgabensequenz zum Installieren des Betriebssystems](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Bereitstellen von Microsoft 365 Apps for Enterprise als Teil eines Betriebssystemabbilds](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Bereitstellen von Microsoft 365-Apps als Teil eines Betriebssystemabbilds](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office Klick-und-Los 
 
@@ -81,11 +81,11 @@ Wenn Sie Configuration Manager verwenden, können Sie dies weiter für die allge
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Bereitstellungshandbuch für Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Bereitstellungshandbuch für Microsoft 365-Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Entfernen vorhandener MSI-Versionen von Office beim Upgrade auf Microsoft 365-Apps](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Verwalten von Microsoft 365 Apps for Enterprise mit Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Verwalten von Microsoft 365 Apps for Enterprise mit Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

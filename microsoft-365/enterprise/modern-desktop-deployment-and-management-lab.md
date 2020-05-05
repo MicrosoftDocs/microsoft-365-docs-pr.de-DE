@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631513"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011959"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
@@ -104,7 +104,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="windows-and-office-as-a-service"></a>Windows und Office als Dienst
   - Verwalten von Windows-Updates über Gruppenrichtlinien
   - Warten von Windows 10 mit Configuration Manager und Intune
-  - Warten von Office 365 ProPlus mit Configuration Manager
+  - Wartung von Microsoft 365 Apps for Enterprise mit Configuration Manager
 
 ### <a name="new-windows-virtual-desktop"></a>NEU! Windows Virtual Desktop
   - Windows Virtual Desktop: Vorbereiten, Bereitstellen, Optimieren 
@@ -121,11 +121,11 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
   - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Betriebssystembereitstellung mit Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Betriebssystembereitstellung mit Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Planen der Windows 10-Bereitstellung</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Bereitstellungshandbuch für Microsoft 365 Apps for Enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Bereitstellungshandbuch für Microsoft 365-Apps</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Erste Schritte mit Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
