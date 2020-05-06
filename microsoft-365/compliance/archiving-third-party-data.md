@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: Administratoren können Daten von Drittanbietern aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Postfächern in Ihrer Microsoft 365-Organisation importieren. Auf diese Weise können Sie Daten aus Facebook, Twitter und anderen Datenquellen von Drittanbietern in Microsoft 365 archivieren. Anschließend können Sie Microsoft 365-Kompatibilitätsfeatures (wie Legal Hold, eDiscovery, in-situ-Archivierung und Aufbewahrungsrichtlinien) für drittanbieterdaten verwenden und anwenden.
-ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
+ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943184"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035483"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 

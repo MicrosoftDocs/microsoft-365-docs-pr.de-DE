@@ -1,6 +1,6 @@
 ---
 title: Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO und CCPA
-description: Leitfaden, wie unsere als Datenverantwortliche handelnden Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zum Suchen und Verarbeiten von personenbezogenen Daten im Rahmen von Anträgen betroffener Personen nach der DSGVO und CCPA verwenden können.
+description: Dieser Leitfaden wird Ihnen helfen zu verstehen, wie Sie personenbezogene Daten finden und behandeln und wie Sie auf DSR- und CCPA-Anforderungen von Dynamics 365-Kunden reagieren können.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558005"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043327"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO und CCPA
 
@@ -223,7 +225,7 @@ Administratoren können auf vom System generierte Protokolle zugreifen, die mit 
 
 Nachdem Sie eine neue Anforderung erstellt haben, wird sie auf der Seite **Datenprotokollexport** aufgelistet, wo Sie ihren Status nachverfolgen können. Nachdem eine Anforderung abgeschlossen ist, können Sie auf einen Link klicken, um auf die vom System generierten Protokolle zuzugreifen, die innerhalb von 30 Tagen nach Erstellung der Anforderung in den Azure-Speicherort Ihrer Organisation exportiert werden. Die Daten werden in gängigen, maschinenlesbaren Dateiformaten wie JSON oder XML gespeichert. Wenn Sie kein Azure-Konto und keinen Azure-Speicherort haben, müssen Sie ein Azure-Konto und/oder einen Azure-Speicherort für Ihre Organisation erstellen, damit das Datenprotokollexport-Tool die vom System generierten Protokolle exportieren kann.
 
-Azure unterstützt dies, indem es Ihrer Organisation ermöglicht, die Daten im nativen JSON-Format in den angegebenen Azure Storage-Container zu exportieren. Artikel [Einführung in Microsoft Azure Storage – Blob-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
+Azure unterstützt dies, indem es Ihrer Organisation ermöglicht, die Daten im nativen JSON-Format in den angegebenen Azure Storage-Container zu exportieren. Artikel [Einführung in Microsoft Azure Storage – Blob-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). Die abgerufenen Daten enthalten keine Daten, die die Sicherheit und Stabilität des Diensts beeinträchtigen können.
 
 > [!IMPORTANT]
 > Sie müssen ein Mandantenadministrator sein, um Benutzerdaten aus dem Mandanten exportieren können.
@@ -245,9 +247,7 @@ Die folgende Tabelle fasst den Zugriff auf und den Export von vom System generie
 
 ### <a name="deleting-system-generated-logs"></a>Löschen von vom System generierten Protokollen
 
-Um vom System generierte Protokolle zu löschen, die über eine Zugriffsanforderung abgerufen werden, müssen Sie den Benutzer aus dem Dienst entfernen und sein Azure Active Directory-Konto dauerhaft löschen. Anweisungen zum dauerhaften Löschen eines Benutzers finden Sie im Abschnitt [Löschen eines Benutzers](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) in diesem Handbuch. Es ist wichtig zu beachten, dass das dauerhafte Löschen eines Benutzerkontos nach dem Start unwiderruflich ist.
-
-Durch dauerhaftes Löschen eines Benutzerkontos werden die Daten des Benutzers innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Dynamics 365-Dienste entfernt.
+Wenn Sie vom System generierte Protokolle löschen möchten, die über eine Zugriffsanforderung abgerufen wurden, müssen Sie den Benutzer aus dem Dienst entfernen und dessen Azure Active Directory-Konto endgültig löschen. Es ist wichtig zu beachten, dass das Benutzerkonto nach dem Initiieren des Löschvorgangs endgültig gelöscht wird. Durch dauerhaftes Löschen eines Benutzerkontos werden die Daten des Benutzers innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Dynamics 365-Dienste entfernt.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

@@ -1,5 +1,5 @@
 ---
-title: Herunterladen von Exportaufträgen
+title: Herunterladen von Exportaufträgen für einen Fall
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus einer Überprüfungsgruppe in Advanced eDiscovery exportiert wurden.
-ms.openlocfilehash: 640dd9b6d5768a22cb6529f476e4003c5eeb4d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074872"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035677"
 ---
 # <a name="download-export-jobs"></a>Herunterladen von Exportaufträgen
 

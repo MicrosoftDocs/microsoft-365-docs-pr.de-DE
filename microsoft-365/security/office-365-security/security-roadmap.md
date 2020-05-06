@@ -1,5 +1,5 @@
 ---
-title: Security Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus
+title: Microsoft 365-Sicherheits-Roadmap – Hauptprioritäten
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Die wichtigsten Empfehlungen aus dem Cyber-Team von Microsoft für die Implementierung von Sicherheitsfunktionen zum Schutz Ihrer Microsoft 365-Umgebung. '
-ms.openlocfilehash: f00cf7c63e84f19ac2cae080adb87209b32d3012
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 762f0772002917d11459b97f76b7bfbddceb2016
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633725"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035408"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Security Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus
 
@@ -73,7 +73,7 @@ Die folgenden Maßnahmen erfordern etwas mehr Zeit für Planung und Implementier
 
 |||
 |:-----|:-----|
-|Bereich|Aufgabe|
+|Bereich|Vorgang|
 |Sicherheitsverwaltung|* Check Secure Score für empfohlene Aktionen für Ihre Umgebung ([https://securescore.office.com](https://securescore.office.com)).  <br/>  * Weiterhin regelmäßige Überprüfung von Dashboards und Berichten im Microsoft 365 Security Center, in der Cloud-App-Sicherheit und in Siem-Tools. <br/> * Suchen und Implementieren von Softwareupdates <br/> * Durchführen von Angriffssimulationen für Spear-Phishing, Kenn Wort Spray und Brute-Force-Kennwortangriffe mithilfe von [Attack Simulator](attack-simulator.md) (im Lieferumfang von [Office 365 Threat Intelligence](office-365-ti.md)enthalten).  <br/> * Suchen Sie nach Freigabe Risiko, indem Sie die integrierten Berichte in Cloud App Security (auf der Registerkarte untersuchen) überprüfen. <br/> * Überprüfen Sie die [Konformitätsbewertung](https://docs.microsoft.com/microsoft-365/compliance/compliance-score) , um den Status für Vorschriften zu überprüfen, die für Ihre Organisation gelten (beispielsweise dsgvo, NIST 800-171).|
 |Bedrohungsschutz| Implementieren Sie erweiterte Schutzbestimmungen für Administratorkonten: <br/> * Konfigurieren von [rechten Zugriffs Arbeitsstationen](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) für Administratoraktivitäten. <br/> * Konfigurieren [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure). <br/> * Konfigurieren Sie ein Siem-Tool (Security Information and Event Management) zum Erfassen von Protokollierungsdaten aus Office 365, Cloud-App-Sicherheit und anderen Diensten, einschließlich AD FS. Im Überwachungsprotokoll werden Daten für nur 90 Tage gespeichert. Durch das Erfassen dieser Daten im Siem-Tool können Sie Daten für einen längeren Zeitraum speichern.|
 |Identitäts- und Zugriffsverwaltung|* Aktivieren und Erzwingen von MFA für alle Benutzer. <br/> * Implementieren Sie eine Reihe von [bedingten Zugriff und verwandte Richtlinien](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations). |
@@ -86,7 +86,7 @@ Dies sind wichtige Sicherheitsmaßnahmen, die auf früheren Arbeiten aufbauen.
 
 |||
 |:-----|:-----|
-|Bereich|Aufgabe|
+|Bereich|Vorgang|
 |Sicherheitsverwaltung|* Fahren Sie mit der Planung der nächsten Aktionen mit [https://securescore.office.com](https://securescore.office.com)Secure Score () fort. <br/> * Weiterhin regelmäßige Überprüfung von Dashboards und Berichten im Microsoft 365 Security Center, in der Cloud-App-Sicherheit und in Siem-Tools. <br/> * Suchen und implementieren Sie weiterhin Softwareupdates. <br/> * Integrieren Sie eDiscovery in ihre rechtlichen und Bedrohungs Reaktionsprozesse.|
 |Bedrohungsschutz|* Implementieren Sie den [Secure privileged Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (Spa) für Identitäts Komponenten lokal (AD, AD FS). <br/> * Verwenden Sie die Cloud-App-Sicherheit, um Insiderbedrohungen zu überwachen. <br/> * Entdecken Sie Shadow IT Saas-Nutzung mithilfe der Cloud-App-Sicherheit.|
 |Identitäts- und Zugriffsverwaltung|* Optimieren von Richtlinien und Betriebsprozessen <br/> * Verwenden Sie Azure AD Identitätsschutz, um Insiderbedrohungen zu identifizieren.|

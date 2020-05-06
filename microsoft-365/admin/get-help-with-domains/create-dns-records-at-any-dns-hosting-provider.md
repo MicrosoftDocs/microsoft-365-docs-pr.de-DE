@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Microsoft 365 erstellen.
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919505"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048783"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
 
@@ -41,7 +41,7 @@ Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre
 Wenn Sie die Einträge selbst einrichten möchten, finden Sie hier die Einträge, die hinzugefügt werden müssen. Beachten Sie, dass Ihr Überprüfungseintrag und der MX-Eintrag für Ihre Domäne einzigartig sind. Zum Einrichten dieser Einträge benötigen Sie einen "Token"-Wert für Ihre Domäne. Im Folgenden wird beschrieben, wie Sie hierfür vorgehen müssen.
   
 > [!IMPORTANT]
-> Die genauen Namen der Kästchen oder  *Felder*, in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Microsoft 365 empfehlen wird die Übertragung Ihrer Domäne zu GoDaddy. 
+> Die genauen Namen der Kästchen oder  *Felder*, in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Microsoft 365 empfehlen wird die Übertragung Ihrer Domäne zu GoDaddy. 
   
 > [!NOTE]
 > Normalerweise dauert es nur einige Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -81,7 +81,7 @@ Bevor Sie Ihre Domäne in Microsoft 365 verwenden können, müssen wir uns verge
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type **|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-      |MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+      |MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert von **Ziel oder verweisende Adresse** aus der Tabelle in Office 365.    <br/>       [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 2. Speichern Sie den Eintrag.
     
@@ -141,7 +141,7 @@ Suchen der Seite, auf der Sie DNS-Einträge für Ihre Domäne erstellen können
     
    - **Priorität**: Setzen Sie die Priorität des MX-Eintrags auf den höchsten verfügbaren Wert. Dies ist in der Regel **0**.
     
-      Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
     
    - **Hostname**: **@**
     

@@ -1,6 +1,6 @@
 ---
 title: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
-description: Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
+description: Hier erfahren Sie, wie Sie Microsoft-Tools zum Verwalten von Visual Studio-Familie-Anträgen betroffener Personen in Visual Studio für die DSGVO und CCPA verwenden.
 keywords: Visual Studio, Visual Studio Code, Visual Studio für Mac, Visual Studio-Dokumentation, Datenschutz, DSGVO, CCPA
 localization_priority: Priority
 audience: itpro
@@ -18,12 +18,13 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f6d5e4fe6db8ef776435cc75da04ac5d2e038a47
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557985"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036300"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Visual Studio-Familie – Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 

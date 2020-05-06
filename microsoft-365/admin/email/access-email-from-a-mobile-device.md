@@ -16,18 +16,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie über Ihr mobiles Gerät auf e-Mails zugreifen.
-ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629095"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048819"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Optionen für den Zugriff auf e-Mails von Ihrem mobilen Gerät
 
 Ihre Organisation hat Einstellungen konfiguriert, die Steuern, welche Mobile Apps Sie für den Zugriff auf Ihr geschäftliches Konto für e-Mail, Kalender und Kontakte verwenden können.
   
-Die Outlook für Android und Outlook für IOS Mobile Apps sind für Ihre Arbeit oder Schul-e-Mails konzipiert und sind die einzigen apps, die Funktionen wie " [fokussierter Posteingang](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)" bereitstellen, die wichtige e-Mail-Nachrichten im Vorder-und mittleren Bereich und den Assistenten für die [Planung](https://go.microsoft.com/fwlink/?linkid=873406)von Besprechungen unterstützt, die Ihnen helfen, Besprechungszeiten zu finden, die mit Kollegen zusammenarbeiten.
+Die Outlook für Android und Outlook für IOS Mobile Apps sind für Ihre Arbeit oder Schul-e-Mails konzipiert und sind die einzigen apps, die Funktionen wie " [fokussierter Posteingang](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)" bereitstellen, die wichtige e-Mail-Nachrichten im Vorder-und mittleren Bereich und den Assistenten für die [Planung](https://www.microsoft.com/?ref=go)von Besprechungen unterstützt, die Ihnen helfen, Besprechungszeiten zu finden, die mit Kollegen zusammenarbeiten.
   
 ## <a name="end-user-experience"></a>Endbenutzeroberfläche
 

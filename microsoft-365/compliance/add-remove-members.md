@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 82bea95f1bc32dd6fd90c7ecda4a046788a9f154
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Hier erfahren Sie, wie Sie die Mitglieder hinzufügen oder entfernen, die beim Verwalten einer Datenermittlung auf eine Untersuchung zugreifen können.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594626"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034915"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Hinzufügen oder Entfernen von Mitgliedern aus einer Datenermittlung
 
@@ -29,7 +30,7 @@ Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die 
 
 1. Wechseln Sie auf der Seite **Daten Ermittlungen (Vorschau)** zu ihrer Untersuchung.
 
-2. Wechseln Sie zu **Einstellungen** , und wählen Sie "Zugriff #a0 Berechtigungen" aus.
+2. Wechseln Sie zu **Einstellungen** , und wählen Sie "Zugriff & Berechtigungen" aus.
  
 3. Wählen Sie **Aktualisieren** aus.
  

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business-Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708131"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045824"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -114,7 +114,7 @@ Entsprechend berechtigte Studierende und Lehrkräfte haben Anspruch auf Sonderpr
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Angeben Ihrer USt-ID (nur EU Länder)
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie die Abonnementkarte für das Abonnement, das Sie aktualisieren möchten.
 
@@ -160,7 +160,7 @@ Wenn Ihre Abrechnung von der Microsoft Corporation ausgeführt wird ([Siehe Rech
 
 Mehrwertsteuern werden anhand des VK-Preises berechnet und dann aggregiert.
 
-Beispiel:
+Zum Beispiel:
 
 >*(Einheitspreis X Steuersatz) X Quantity = Gesamtumsatz Steuer*
 

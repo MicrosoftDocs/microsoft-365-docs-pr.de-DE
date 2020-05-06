@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie Ihre lokale Exchange-Umgebung so konfigurieren, dass Spam an die Junk-e-Mail-Ordner der lokalen Benutzer weitergeleitet wird, wenn Sie eigenständige Exchange Online Protection (EoP) in Hybrid Umgebungen verwenden.
-ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratoren können erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in einer Exchange Online Protection Hybrid-Umgebung weiterleiten.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621282"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036572"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen
 

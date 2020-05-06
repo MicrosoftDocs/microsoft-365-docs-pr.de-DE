@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln in Microsoft Threat Protection
 description: Hier erfahren Sie, wie Sie benutzerdefinierte Erkennungsregeln basierend auf erweiterten Jagd Abfragen erstellen und verwalten können.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Regeln, Schema, Kusto, Microsoft 365, Microsoft Threat Protection, RBAC, Berechtigungen, Microsoft Verteidiger ATP
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Regeln, Schema, Kusto, Microsoft 365, Microsoft Threat Protection, RBAC, Permissions, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931740"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034864"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -114,7 +114,7 @@ Identifizieren Sie die Spalten in den Abfrageergebnissen, bei denen Sie davon au
 
 Sie können für jeden Entitätstyp (Postfach, Benutzer oder Gerät) nur eine Spalte auswählen. Spalten, die nicht von der Abfrage zurückgegeben werden, können nicht ausgewählt werden.
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. Geben Sie Aktionen für Dateien oder Computer an.
+### <a name="4-specify-actions-on-files-or-machines"></a>4. Geben Sie Aktionen für Dateien oder Computer an.
 Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen für Dateien oder Computer durchführen, die von der Abfrage zurückgegeben werden.
 
 #### <a name="actions-on-machines"></a>Aktionen auf Computern
@@ -130,7 +130,7 @@ Wenn diese Option ausgewählt ist, wird die **Quarantänedatei** -Aktion für Da
 > [!NOTE]
 > Die Aktion zulassen oder blockieren für benutzerdefinierte Erkennungsregeln wird derzeit von Microsoft Threat Protection nicht unterstützt.
 
-### <a name="4-set-the-rule-scope"></a>4. Legen Sie den Regelbereich fest.
+### <a name="5-set-the-rule-scope"></a>5. Legen Sie den Regelbereich fest.
 Legen Sie den Bereich fest, um anzugeben, welche Geräte von der Regel abgedeckt werden. Der Bereich beeinflusst Regeln, die Geräte überprüfen, und wirkt sich nicht auf Regeln aus, die nur Postfächer und Benutzerkonten oder Identitäten überprüfen.
 
 Beim Festlegen des Bereichs können Sie Folgendes auswählen:
@@ -140,7 +140,7 @@ Beim Festlegen des Bereichs können Sie Folgendes auswählen:
 
 Es werden nur Daten von Geräten im Bereich abgefragt. Außerdem werden Aktionen nur auf diesen Geräten ausgeführt.
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. überprüfen und aktivieren Sie die Regel.
+### <a name="6-review-and-turn-on-the-rule"></a>6. überprüfen und aktivieren Sie die Regel.
 Nachdem Sie die Regel überprüft haben, klicken Sie auf **Erstellen** , um Sie zu speichern. Die benutzerdefinierte Erkennungsregel wird sofort ausgeführt. Er wird basierend auf der konfigurierten Häufigkeit erneut ausgeführt, um nach Übereinstimmungen zu suchen, Warnungen zu generieren und Reaktions Aktionen durchführen zu können.
 
 ## <a name="manage-existing-custom-detection-rules"></a>Verwalten vorhandener benutzerdefinierter Erkennungsregeln
@@ -185,6 +185,6 @@ Wechseln Sie im Bildschirm Regel**Details (** > **benutzerdefinierte Erkennungs 
 >Um Informationen schnell anzuzeigen und Aktionen für ein Element in einer Tabelle durchführen zu können, verwenden Sie die Auswahlspalte [&#10003;] Links in der Tabelle.
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)
+- [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Erlernen der Abfragesprache für die erweiterte Suche](advanced-hunting-query-language.md)

@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die Nachrichtenkopfzeilen und die Werte, die Nachrichten von Exchange Online Protection hinzugefügt werden.
-ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+description: Erfahren Sie mehr über die Header-Felder, die Exchange Online Protection den Nachrichten hinzufügt, um Informationen über die Nachricht und ihre Verarbeitung zu liefern.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 035b081980e52d1e68d21e6227636ed78697b4cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805208"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033750"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 

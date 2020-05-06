@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: Nachdem ein Microsoft 365-Postfach deaktiviert wurde, können Sie die Dauer der Aufbewahrungsrichtlinie oder der Microsoft 365-Aufbewahrungsrichtlinie ändern, die dem inaktiven Postfach zugewiesen ist. Die Aufbewahrungsdauer definiert die Aufbewahrungsdauer von Elementen im Ordner „Wiederherstellbare Elemente".
-ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Nachdem ein Office 365 Postfach inaktiv gemacht wurde, ändern Sie die Dauer des Haltestatus oder Office 365 Aufbewahrungsrichtlinie, die dem inaktiven Postfach zugewiesen ist.
+ms.openlocfilehash: 7b74cad30adb1600bb37cbe4861a9a811145c065
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942928"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034157"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Ändern der Aufbewahrungsdauer für ein inaktives Postfach
 
@@ -32,7 +34,7 @@ Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeit
 > [!IMPORTANT]
 > Da wir weiterhin auf verschiedene Arten investieren, um Postfachinhalte beizubehalten, kündigen wir den Ruhestand von in-Place-Speicher in der Exchange-Verwaltungskonsole an. Das heißt, Sie sollten Beweissicherungsverfahren und Microsoft 365-Aufbewahrungsrichtlinien verwenden, um ein inaktives Postfach zu erstellen. Ab dem 1. April 2020 können Sie in Exchange Online keine neuen in-Place-Aufbewahrungsorte erstellen. Sie können jedoch weiterhin die Aufbewahrungsdauer eines in-situ-Speichers ändern, der in einem inaktiven Postfach platziert wird. Ab dem 1. Juli 2020 können Sie die Aufbewahrungsdauer jedoch nicht ändern. Sie können ein inaktives Postfach nur löschen, indem Sie den in-situ-Speicher entfernen. Vorhandene inaktive Postfächer, die sich im Compliance-Archiv befinden, werden weiterhin beibehalten, bis die Aufbewahrung aufgehoben wird. Weitere Informationen zum Ruhestand von in-Place-Archiven finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Zum Ändern der Aufbewahrungsdauer für ein Beweissicherungsverfahren für ein aktives Postfach müssen Sie die Exchange Online PowerShell verwenden. Sie können nicht die Exchange-Verwaltungskonsole (EAC) verwenden. Sie können Exchange Online PowerShell oder die Exchange-Verwaltungskonsole jedoch verwenden, um die Aufbewahrungsdauer für einen In-Situ-Speicher zu ändern. Sie können das Security and Compliance Center oder die Security & Compliance Center PowerShell verwenden, um die Aufbewahrungsdauer für eine Microsoft 365-Aufbewahrungsrichtlinie zu ändern.
     

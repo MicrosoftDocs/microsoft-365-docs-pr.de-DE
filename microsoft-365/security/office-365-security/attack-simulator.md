@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Als globaler Administrator können Sie mit dem Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Sie dabei unterstützen, gefährdete Benutzer zu identifizieren und zu finden, bevor ein echter Angriff auf Ihr Unternehmen trifft.
-ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihrer Microsoft 365 E5-oder ATP-Plan 2-Organisation ausführen.
+ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638572"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035858"
 ---
 # <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
 
@@ -29,13 +31,13 @@ ms.locfileid: "43638572"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Wechseln Sie zum Öffnen des Security & Compliance Centers <https://protection.office.com/>zu. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar.
+- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Angriffs Simulator ist unter **Threat Management** \> **Attack Simulator**verfügbar.
 
   ![Threat Management – Angriffs Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
 - Weitere Informationen zur Verfügbarkeit des Angriffs Simulators in verschiedenen Microsoft 365-Abonnements finden Sie unter [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Ihr Konto muss für die mehrstufige Authentifizierung (MFA) konfiguriert sein, um Kampagnen im Angriffs Simulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
 

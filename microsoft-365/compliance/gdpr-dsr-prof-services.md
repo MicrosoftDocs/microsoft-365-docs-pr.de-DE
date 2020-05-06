@@ -1,6 +1,6 @@
 ---
 title: Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
-description: Wie Microsoft-Support und Professional Services Daten für Anträge betroffener Personen für die DSGVO und den CCPA bearbeiten.
+description: Erfahren Sie, wie Microsoft-Support und Professional Services Daten für Anträge betroffener Personen für die DSGVO und den CCPA bearbeiten.
 keywords: Professional Services, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632496"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036310"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Microsoft-Support und Professional Services für Anträge betroffener Personen für die DSGVO und den CCPA
 
@@ -28,7 +29,7 @@ ms.locfileid: "43632496"
 
 Microsoft Professional Services umfasst eine heterogene Gruppe aus technischen Architekten, Technikern, Beratern und Supportmitarbeitern, welche die Mission von Microsoft unterstützen, Kunden zu befähigen, mehr zu tun und mehr zu erreichen. Unser Professional Services-Team umfasst insgesamt mehr als 21000 Berater, Berater für digitale Angelegenheiten, Premier-Support, Techniker und Vertriebsmitarbeiter in mehr als 191 Ländern, die 46 unterschiedliche Sprachen sprechen, mehrere Millionen Engagements pro Monat absolvieren und vor Ort oder über Telefon, Internet, Community und automatisierte Tools mit Kunden und Partnern interagieren. Die Organisation liefert umfangreiche Kenntnisse über das gesamte Spektrum des Microsoft-Portfolios hinweg, wofür ein weiteres Partnernetzwerk, technische Communities, Tools, Diagnosen und Kanäle genutzt werden, die uns mit unseren Unternehmenskunden verbinden.
 
-Weitere Informationen zu Microsoft Professional Services erhalten Sie unter der [Webseite Microsoft Professional Services Security Documentation ](https://www.microsoft.com/en-us/professionalservices/overview). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen zur Beantwortung von Kundenfragen, wie die Support- und Beratungsangebote von Microsoft den Data Subject Request(DSR)-Verpflichtungen im Rahmen der DSGVO gerecht werden und Kunden in dieser Hinsicht unterstützen.
+Weitere Informationen zu Microsoft Professional Services erhalten Sie unter der [Webseite Microsoft Professional Services Security Documentation ](https://www.microsoft.com/de-DE/professionalservices/overview). Microsoft Professional Services nimmt seine Verpflichtungen im Rahmen der Datenschutz-Grundverordnung (DSGVO) ernst. Die Informationen in diesem Dokument dienen zur Beantwortung von Kundenfragen, wie die Support- und Beratungsangebote von Microsoft den Data Subject Request(DSR)-Verpflichtungen im Rahmen der DSGVO gerecht werden und Kunden in dieser Hinsicht unterstützen.
 
 ### <a name="introduction-to-dsrs"></a>Einführung in Anträge betroffener Personen 
 
@@ -45,7 +46,7 @@ Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitar
 #### <a name="overview-of-the-processes-outlined-in-this-guide"></a>Übersicht über die in diesem Leitfaden beschriebenen Prozesse
 
 - **Erkennung:** Sie können Kundendaten, die ggf. Gegenstand eines Antrags einer betroffenen Person sind, mithilfe von Such- und Ermittlungstools finden. Sobald Sie potenziell relevante Dokumente ermittelt haben, können Sie dem Antrag entsprechend eine oder mehrere der in den folgenden Schritten beschriebenen Aktionen ausführen. Möglicherweise stellen Sie jedoch fest, dass der Antrag nicht den Vorgaben Ihrer Organisation für die Reaktion auf Anträge betroffener Personen entspricht.
-- **Zugang:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft-Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
+- **Zugriff:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
 - **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen an den personenbezogenen Daten vor oder führen Sie andere Aktionen aus, die für die Daten angefordert werden.
 - **Einschränkung:** Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können auch Daten aus der Microsoft Cloud entfernen und lokal oder an einem anderen Speicherort speichern.
 - **Löschung:** Entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
@@ -56,14 +57,14 @@ Sämtliche Anträge müssen wie nachfolgend beschrieben über einen Supportmitar
 Nachstehend sind die für diesen Leitfaden relevanten Definitionen von Ausdrücken aus der DSGVO aufgeführt:
 
 - **Datenverantwortlicher:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt. Sofern die Zwecke und Mittel der Verarbeitung durch das Recht der Union oder der Mitgliedstaaten bestimmt werden, können der Datenverantwortliche bzw. die spezifischen Kriterien für dessen Benennung durch das Recht der Union oder des Mitgliedstaats angegeben werden.
-- **Personenbezogene Daten und betroffene Person:** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person („betroffene Person“). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
+- **Personenbezogene Daten und betroffene Person:** Alle Informationen über eine identifizierte oder identifizierbare natürliche Person ("betroffene Person"). Eine identifizierbare natürliche Person ist eine Person, die direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
 - **Verarbeiter:** Eine natürliche oder juristische Person, öffentliche Behörde, Agentur oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
 
 #### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Zusätzliche Begriffe und Definitionen, die möglicherweise hilfreich für das Verständnis dieses Leitfadens sind
 
 - **Support- und Beratungsdaten:** Alle Daten, einschließlich Text-, Ton-, Video-, Bilddateien und Software, die Microsoft vom Kunden selbst oder in seinem Auftrag im Rahmen einer Vereinbarung mit Microsoft übermittelt werden (oder deren Abruf über einen Onlinedienst vom Kunden gestattet wird), um Support oder Professional Services zu erhalten. Um das nochmal deutlich zu machen: Dazu zählen keine Daten, die Microsoft als Datenverantwortlicher erfasst, z. B. Kontaktdaten des Kunden.
 - **Kundenkontakt:** Personenbezogene Daten, die möglicherweise Bestandteil Ihrer Geschäftsbeziehung mit Microsoft sind, z. B. personenbezogene Daten, die in Ihren Kundenkontaktinformationen enthalten sind. Dazu gehören beispielsweise Ihr Name, Ihre E-Mail-Adresse oder die Telefonnummer des Premier Contract Service Managers (CSM), des globalen oder IT-Administrators für einen Onlinedienst oder vergleichbare Rollen.
-- **Pseudonymisierte Daten:** Wenn Sie den Microsoft-Support für die Enterprise-Produkte und -Dienste von Microsoft nutzen, generiert Microsoft Daten, die mit einer numerischen ID verknüpft sind, um den Support bereitzustellen. Diese werden häufig als „pseudonymisierte Daten“ bezeichnet. Obwohl diese Daten nicht ohne Hinzuziehen weiterer Informationen einer bestimmten betroffenen Person zugeordnet werden können, ist es möglich, dass manche dieser Daten unter der DSGVO im weitesten Sinne als personenbezogen betrachtet werden. In Professional Services werden deshalb beim Ausfüllen oder beim Unterstützen des Ausfüllens von Anträgen betroffener Personen immer auch pseudonymisierte Daten berücksichtigt.
+- **Pseudonymisierte Daten:** Wenn Sie den Microsoft-Support für die Enterprise-Produkte und -Dienste von Microsoft nutzen, generiert Microsoft Daten, die mit einer numerischen ID verknüpft sind, um den Support bereitzustellen. Diese werden häufig als "pseudonymisierte Daten" bezeichnet. Obwohl diese Daten nicht ohne Hinzuziehen weiterer Informationen einer bestimmten betroffenen Person zugeordnet werden können, ist es möglich, dass manche dieser Daten unter der DSGVO im weitesten Sinne als personenbezogen betrachtet werden. In Professional Services werden deshalb beim Ausfüllen oder beim Unterstützen des Ausfüllens von Anträgen betroffener Personen immer auch pseudonymisierte Daten berücksichtigt.
 
 ### <a name="how-to-use-this-guide"></a>Verwenden dieses Leitfadens
 
@@ -130,9 +131,9 @@ Während er relevante Daten ausfindig macht und sich die Unterstützung von Micr
 
 ***Nachdem Engagements identifiziert wurden, fordern Sie an, dass der Antrag der betroffenen Person auf einen spezifischen Teil des Datensatzes oder Microsoft-weit auf alles in Verbindung mit diesem Engagement angewendet wird.***
 
-Um bestimmte Engagements zu identifizieren, müssen Kunden Engagement-übergreifend suchen. Bei Premier-Kunden hat der Contract Service Manager (CSM) für einen Kunden Einblick in alle Supportanfragen, die unter diesem Vertragsplan erstellt werden. Bei Nicht-Premier-Kunden sind entsprechende Portale für den Support im Rahmen von Engagements verfügbar, z. B. über Supportbereiche von Onlinediensten.
+Um bestimmte Engagements zu identifizieren, müssen Kunden Engagement-übergreifend suchen. Bei Premier-Kunden hat der Contract Service Manager ("CSM") für einen Kunden Einblick in alle Supportanfragen, die unter diesem Vertragsplan erstellt werden. Bei Nicht-Premier-Kunden sind entsprechende Portale für den Support im Rahmen von Engagements verfügbar, z. B. über Supportbereiche von Onlinediensten.
 
-![Suchen in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Der CSM kann das Portal unter Support.Microsoft.Com ([https://support.microsoft.com/\<local Sprachkürze\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) („SMC“) aufrufen und Supportanfragen auswählen und prüfen. (Hinweis: Ersetzen Sie das Sprachkürzel in der URL durch Ihr lokales Sprachkürzel).
+![Suchen in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)Der CSM kann das Portal unter Support.Microsoft.Com ([https://support.microsoft.com/\<local Sprachkürzel\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") aufrufen und Supportanfragen auswählen und prüfen. (Hinweis: Ersetzen Sie das Sprachkürzel in der URL durch Ihr lokales Sprachkürzel).
 
 >[!IMPORTANT]
 >Zusätzlich zum Fallverlauf der Supportfälle in SMC besitzen Kunden möglicherweise auch personenbezogene Daten eines Endbenutzers in Dateien, die von Microsoft während eines Support-Engagements erfasst (oder mit Erlaubnis des Kunden aus dem Onlinedienst entfernt) wurden. Beispiele hierfür sind Kopien der Exchange-Postfächer des Kunden, Azure-VMs oder Datenbanken. Diese personenbezogenen Daten sind im Fallverlauf, d. h. im Ticket, für ein bestimmtes Engagement möglicherweise nicht erwähnt. Um diese Daten überprüfen zu können, muss der Kundenkontakt ein Kontakt mit spezifischer Authentifizierung (über AAD oder MSA) sein, der eine URL für einen Arbeitsbereich im Data Transfer and Management Tool (DTM) des Microsoft-Supports erhalten hat. Ein Kundenkontakt hat zwar Zugriff auf die Dateien, es ist aber keine Übersicht verfügbar, und SMC gibt nicht an, ob Dateien vorhanden sind.
@@ -163,7 +164,7 @@ Hinweis: Engagements (Tickets) werden außerdem gemäß eines Zeitplans für Auf
 
 ## <a name="step-5-delete"></a>Schritt 5: Löschung
 
-Das „Recht auf Löschung" durch das Entfernen personenbezogener Daten aus den Support-Daten eines Unternehmens ist ein zentraler Schutzmechanismus in der DSGVO. Zum Entfernen von personenbezogenen Daten zählt das Löschen von ganzen Engagements, Dokumenten oder Dateien bzw. das Löschen bestimmter Daten innerhalb eines Engagements, eines Dokuments oder einer Datei.
+Das "Recht auf Löschung" durch das Entfernen personenbezogener Daten aus den Support-Daten eines Unternehmens ist ein zentraler Schutzmechanismus in der DSGVO. Zum Entfernen von personenbezogenen Daten zählt das Löschen von ganzen Engagements, Dokumenten oder Dateien bzw. das Löschen bestimmter Daten innerhalb eines Engagements, eines Dokuments oder einer Datei.
 
 Nachfolgend finden Sie einige wichtige Hinweise, wie das Löschen für den Microsoft-Support funktioniert. Diese sollte ein Kunde beachten, wenn er als Reaktion auf einen Antrag einer betroffenen Personen Daten untersucht oder plant, personenbezogene Daten zu löschen.
 
@@ -188,7 +189,7 @@ Bei all diesen Suchen sucht Microsoft aufgrund der potenziellen Vertraulichkeit 
 
 ## <a name="step-6-export"></a>Schritt 6: Export
 
-Das „Recht auf Datenübertragbarkeit“ ermöglicht es einer betroffenen Person, eine Kopie ihrer personenbezogenen Daten in elektronischem Format anzufordern und zu verlangen, dass Ihre Organisation sie an einen anderen Verantwortlichen übermittelt. Im Falle von Supportdaten liegen nutzbare Informationen bei Microsoft in Form von Engagement-Informationen oder Dateien vor, die zwecks erneuter Kommunikation oder Hochladen an einen anderen Verantwortlichen an Sie zurückgegeben werden können.
+Das "Recht auf Datenübertragbarkeit" ermöglicht es einer betroffenen Person, eine Kopie ihrer personenbezogenen Daten in elektronischem Format anzufordern und zu verlangen, dass Ihre Organisation sie an einen anderen Verantwortlichen übermittelt. Im Falle von Supportdaten liegen nutzbare Informationen bei Microsoft in Form von Engagement-Informationen oder Dateien vor, die zwecks erneuter Kommunikation oder Hochladen an einen anderen Verantwortlichen an Sie zurückgegeben werden können.
 
 Hinweis: Exportierte Daten dürfen kein geistiges Eigentum von Microsoft oder andere Daten enthalten, welche die Sicherheit oder Stabilität des Dienstes kompromittieren könnten.
 
@@ -224,7 +225,7 @@ Microsoft ist der Datenauftragsverarbeiter für einen Antrag einer betroffenen P
 
 Microsoft ist der Datenverantwortliche für Kundenkontakte, die mit dem FastTrack-Team arbeiten. Wenn Kundenkontakte Kontaktinformationen aus den Microsoft FastTrack-Datensätzen aufrufen, prüfen oder entfernen möchten, können Kunden die betroffene Person anweisen, den Antrag direkt an das Office 365 FastTrack-Postfach für Anträge gemäß der DSGVO zu senden\<<o365ftgdpr@microsoft.com>\>.
 
-Für FastTrack-Migrationsdienste ist Microsoft der Datenauftragsverarbeiter. In Übereinstimmung mit unserer zusätzlichen Datenschutzerklärung für Fast Track gelten alle Daten, die migriert werden, als „Migrationsdaten“. Wenn Sie Anträge betroffener Personen ausführen müssen, während Ihr Unternehmen ein FastTrack-Migrationsprojekt durchführt, ist besondere Vorsicht geboten.
+Für FastTrack-Migrationsdienste ist Microsoft der Datenauftragsverarbeiter. In Übereinstimmung mit unserer zusätzlichen Datenschutzerklärung für Fast Track gelten alle Daten, die migriert werden, als "Migrationsdaten". Wenn Sie Anträge betroffener Personen ausführen müssen, während Ihr Unternehmen ein FastTrack-Migrationsprojekt durchführt, ist besondere Vorsicht geboten.
   
 Wenn Sie Zugriff auf die Verarbeitung von Anträgen während der Verarbeitung der Daten eines Benutzers durch das FastTrack-Migrationssystem benötigen, oder Anträge berichtigen oder exportieren möchten, liegt es in der Verantwortung des Kunden, diese Anträge über seine vorhandenen Quellsysteme zu erfüllen, in denen die Benutzerdaten gespeichert sind. Sobald die Migration des Benutzers abgeschlossen ist und die Daten zum gewünschten Microsoft Cloud Service migriert wurden, gelten die von Microsoft bereitgestellten Leitfäden, wie Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zur Suche nach und zum Umgang mit persönlichen Daten nutzen können, um Anträge von betroffenen Personen zu bearbeiten. Sie finden diese Leitfäden unter [Anträge betroffener Personen für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 

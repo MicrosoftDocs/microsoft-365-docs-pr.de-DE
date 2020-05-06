@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796512"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046216"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln 
 
@@ -42,7 +42,7 @@ Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können 
 
 Wenn Sie die Registerkarte " **Upgrade** " verwenden, werden Sie durch den Prozess des Erwerbs eines neuen Plans geführt. Allen Benutzern werden automatisch Lizenzen im neuen Plan zugewiesen, und Ihr Alter Plan wird für Sie storniert.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wählen Sie das Abonnement aus, das Sie aktualisieren möchten.
 
@@ -59,7 +59,7 @@ Wenn Sie die Registerkarte " **Upgrade** " verwenden, werden Sie durch den Proze
 
 7. Wenn Sie fertig sind, wählen Sie **Bestellung aufgeben**aus.
 
-Wenn Sie das Auschecken abgeschlossen haben, kann es einige Minuten dauern, bis das Upgrade abgeschlossen ist. Sie können mit der Nutzung Ihres neuen Abonnements sofort beginnen. Wählen Sie **Upgradestatus überprüfen** aus, um den Status des Upgrades zu überprüfen. Sie werden benachrichtigt, wenn das Upgrade abgeschlossen ist. Die Benachrichtigung wird auf der Seite **Products & Services** neben Ihrem neuen Abonnement angezeigt.
+Wenn Sie das Auschecken abgeschlossen haben, kann es einige Minuten dauern, bis das Upgrade abgeschlossen ist. Sie können mit der Nutzung Ihres neuen Abonnements sofort beginnen. Wählen Sie **Upgradestatus überprüfen** aus, um den Status des Upgrades zu überprüfen. Sie werden benachrichtigt, wenn das Upgrade abgeschlossen ist. Die Benachrichtigung wird auf der Seite **Ihre Produkte** neben Ihrem neuen Abonnement angezeigt.
 
 ## <a name="the-upgrade-tab-is-empty"></a>Die Registerkarte "Upgrade" ist leer
 
@@ -137,7 +137,7 @@ Wenn Sie ein Add-on mit Ihrem Abonnement haben, können Sie Pläne möglicherwei
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>Ihr Abonnement verfügt über einen nicht bezahlten Saldo
 
-Um dies zu beheben, suchen Sie das Abonnement auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> , und wählen Sie im Abschnitt **Abrechnung** den Link **Jetzt bezahlen** aus. Nachdem die Zahlung vorgenommen wurde, überprüfen Sie die Registerkarte **Upgrade** erneut.
+Um dies zu beheben, suchen Sie das Abonnement auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a> , und wählen Sie den Link **Jetzt bezahlen** im Abschnitt **Abrechnung** aus. Nachdem die Zahlung vorgenommen wurde, überprüfen Sie die Registerkarte **Upgrade** erneut.
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Was bewirkt das Upgrade eines Plans an meinen Dienst und die Abrechnung?
 

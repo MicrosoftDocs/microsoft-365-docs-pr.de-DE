@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Compliance-Features ein, um Datenverlust zu verhindern und um sicherzustellen, dass die vertraulichen Informationen Ihrer Kunden geschützt sind.
-ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635122"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048063"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
@@ -54,7 +54,7 @@ So legen Sie ein Postfach für das Beweissicherungsverfahren im Admin Center ab:
     
 4. Im Dialogfeld **Beweissicherungsverfahren** können Sie die Dauer des beweissicherungsverfahrens im Feld **Dauer** des beweissicherungsverfahrens angeben. Lassen Sie das Feld leer, wenn Sie einen unbegrenzten Haltebereich platzieren möchten. Sie können auch Notizen hinzufügen und den Postfachbesitzer zu einer Website weiterleiten, auf der Sie möglicherweise mehr über das Beweissicherungsverfahren erklären müssen. \>**Save**.
     
-**Aufbewahrung:** Sie können benutzerdefinierte Aufbewahrungsrichtlinien aktivieren, beispielsweise um eine bestimmte Zeitspanne beizubehalten oder Inhalte dauerhaft am Ende des Aufbewahrungszeitraums zu löschen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+**Aufbewahrung:** Sie können benutzerdefinierte Aufbewahrungsrichtlinien aktivieren, beispielsweise um eine bestimmte Zeitspanne beizubehalten oder Inhalte dauerhaft am Ende des Aufbewahrungszeitraums zu löschen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 
 ## <a name="set-up-sensitivity-labels"></a>Einrichten von Sensitivitäts Bezeichnungen
 

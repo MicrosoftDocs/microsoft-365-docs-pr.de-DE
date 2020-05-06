@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Gruppen.
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630043"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049167"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -79,7 +79,7 @@ Die folgenden Grenzwertegelten für Microsoft 365-Gruppen:
 |Dateispeicher|1 TB plus 10 GB pro Abonnementbenutzer plus zusätzlich gekaufter Speicher. Sie können eine unbegrenzte Menge weiteren Speichers kaufen.|
 |Größe des Gruppenpostfachs|50 GB|
 
-Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organisation haben kann, ist 500.000, kann aber auf Anforderung erhöht werden. Weitere Informationen zu den Grenzwerten für Microsoft 365-Gruppen finden Sie unter [Microsoft 365 groups-admin Help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organisation haben kann, ist 500.000, kann aber auf Anforderung erhöht werden. Weitere Informationen zu den Grenzwerten für Microsoft 365-Gruppen finden Sie unter [Microsoft 365 groups-admin Help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Die Verwaltung Ihrer Microsoft 365-Gruppen ist effektiver, wenn Sie über Aktions fähige Informationen zur Verwendung von Gruppen verfügen. Das Microsoft 365 Admin Center verfügt über ein Berichtstool, mit dem Sie Dinge wie die Speichernutzung, die Anzahl der aktiven Gruppen und sogar die Verwendung der Gruppen durch Ihre Benutzer anzeigen können. Weitere Informationen finden Sie unter: [Microsoft 365 Reports im Admin Center](../activity-reports/office-365-groups.md) .
 

@@ -1,5 +1,5 @@
 ---
-title: Automatische Untersuchung und Reaktion (Air)
+title: Übersicht über die automatische Untersuchung und Reaktion (Luft)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.custom: air
-ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638548"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035616"
 ---
-# <a name="automated-investigation-and-response-air"></a>Automatische Untersuchung und Reaktion (Air)
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Eine Übersicht über die automatische Untersuchung und Reaktion (Air) in Microsoft 365
 
 Wenn Sicherheitswarnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu untersuchen und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheits Operations Teams von der Menge der ausgelösten Warnungen überfordert fühlen. Die Funktionen für die automatische Untersuchung und Reaktion (Air) können helfen. Mit Air kann Ihr Security Operations-Team effizienter und effektiver arbeiten. Air-Funktionen umfassen automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Korrekturaktionen warten auf die Genehmigung, sodass Ihr Sicherheits Betriebsteam auf erkannte Bedrohungen reagieren kann. 
 

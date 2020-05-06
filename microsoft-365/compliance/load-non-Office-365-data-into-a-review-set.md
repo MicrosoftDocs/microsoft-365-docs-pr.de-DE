@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Importieren Sie nicht von Microsoft 365 Daten in einen Überprüfungs in einem erweiterten eDiscovery-Fall.
-ms.openlocfilehash: 823ecbdbd50adbb1925bcda154db2c1b8ba24cca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie, wie Sie nicht von Microsoft 365 Daten in einen Überprüfungs für die Analyse in einem erweiterten eDiscovery-Fall importieren.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632640"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034423"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Laden von nicht von Microsoft 365 Daten in einen Überprüfungs-Datensatz
 
 Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befinden sich in Microsoft 365. Mit der nicht-Microsoft 365-datenimportfunktion in Advanced eDiscovery können Sie Dokumente, die sich nicht in Microsoft 365 befinden, in einen Überprüfungs-Datensatz hochladen. In diesem Artikel erfahren Sie, wie Sie Ihre nicht-Microsoft 365-Dokumente in Advanced eDiscovery for Analysis integrieren.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Bei Verwendung des in diesem Artikel beschriebenen Features zum Hochladen nicht von Microsoft 365 ist Folgendes erforderlich:
 

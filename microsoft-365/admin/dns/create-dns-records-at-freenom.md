@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Freenom für Microsoft einrichten.
-ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939227"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049035"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Freenom für Microsoft
 
@@ -139,7 +139,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Typ**|**TTL**|**Target**|**Priorität**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<Domain-Key\>. Mail.Protection.Outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<Domain-Key\>. Mail.Protection.Outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

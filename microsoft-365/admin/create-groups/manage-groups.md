@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Erfahren Sie mehr über das Verwalten von Microsoft 365-Gruppen, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630393"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049203"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Gruppe im Microsoft 365 Admin Center
 
@@ -194,7 +194,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 [Erstellen einer Microsoft 365-Gruppe](create-groups.md)
 
-[Verwalten des Gastzugriffs auf Microsoft 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Verwalten des Gastzugriffs auf Microsoft 365-Gruppen](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Wählen Sie die Domäne aus, die beim Erstellen von Microsoft 365-Gruppen verwendet werden soll.](choose-domain-to-create-groups.md)
 
@@ -202,4 +202,4 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

@@ -1,5 +1,5 @@
 ---
-title: Verwenden von DKIM in Ihrer benutzerdefinierten Domäne in Microsoft 365, 2048-Bit, 1024-Bit, Funktionsweise, SPF, DMARC
+title: Verwenden von DKIM für E-Mail in Ihrer benutzerdefinierten Domäne
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 17cfbcbe4f7279e8142e5102fc2d1f61c53d8ddc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
+ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631109"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036608"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 

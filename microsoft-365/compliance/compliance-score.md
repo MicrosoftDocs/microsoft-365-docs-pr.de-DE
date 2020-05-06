@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141570"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046273"
 ---
-# <a name="microsoft-compliance-score-preview"></a>Microsoft-Konformitätsbewertung (Vorschau)
+# <a name="microsoft-compliance-score-preview"></a>Microsoft-Compliancebewertung (Vorschau)
 
 Das [Microsoft-Kompatibilitäts Ergebnis](https://compliance.microsoft.com/compliancescore) hilft Ihnen, die Verwaltung der Compliance zu vereinfachen und Compliance-Risiken durch eine benutzerfreundliche Erfahrung zu verringern. Das Kompatibilitäts Ergebnis steht für die öffentliche Vorschau im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)zur Verfügung.
 
@@ -31,7 +31,7 @@ Informationen **zu Updates:** In der Version April 2020 wurden mehrere Updates v
 
 ## <a name="what-is-compliance-score"></a>Was ist Konformitätsbewertung
 
-Microsoft Compliance Score ist eine Vorschaufunktion im Microsoft 365 Compliance Center, die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Es wird eine risikobasierte Bewertung berechnet, die Ihren Fortschritt bei der Durchführung von Aktionen misst, um Risiken hinsichtlich des Datenschutzes und der regulatorischen Standards zu verringern.
+Microsoft Compliance Score ist eine Vorschaufunktion im Microsoft 365 Compliance Center, die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen.
 
 Sie können die Kompatibilitätsbewertung als Tool verwenden, um alle ihre Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, die Sie bei der effizienten Durchführung ihrer Risikobewertungen mithilfe eines allgemeinen Tools unterstützen.
 
@@ -49,8 +49,8 @@ Compliance-Score hilft bei der Vereinfachung der Compliance-Verwaltung durch fol
 - **Empfohlene Aktionen**: enthält Empfehlungen und Schritt-für-Schritt-Anleitungen zum Implementieren von Steuerelementen zur Maximierung der Punktzahl
 -  **Integrierte Steuerungs Zuordnung**: hilft Ihnen, mit der sich entwickelnden Compliance-Landschaft auf dem Laufenden zu bleiben, indem ein integriertes einheitliches Steuerelement Framework bereitgestellt wird
 
-> [!IMPORTANT] 
-> Compliance Score ist kein absolutes Maß für die organisatorische Einhaltung einer bestimmten Norm oder Regulierung. Sie drückt das Ausmaß aus, in dem Sie Steuerelemente eingeführt haben, die die Risiken für personenbezogene Daten und den Schutz der Privatsphäre reduzieren können. Empfehlungen aus dem Compliance Score und dem Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden. Dieser Dienst befindet sich derzeit in der Vorschau und unterliegt den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910).
+> [!IMPORTANT]
+> Empfehlungen der Compliancebewertung und vom Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste befinden sich derzeit in der Vorschau und unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="relationship-to-compliance-manager"></a>Beziehung zum Compliance-Manager
 
@@ -64,7 +64,7 @@ Weitere Informationen zur Beziehung zwischen Compliance Score und Compliance-Man
 
 ## <a name="understanding-your-score"></a>Grundlegendes zur Partitur
 
-Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die allgemeine Branchenvorschriften und-Standards umfassen. Diese Bewertung ist zwar ein guter Ausgangspunkt für die Bewertung Ihrer Compliance-Position, aber die Konformitätsbewertung wird leistungsfähiger, wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevanter sind.
+Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Grundwert ist eine Reihe von Kontrollen, die übliche, branchenspezifische Vorschriften und Standards umfassen. Diese Bewertung ist zwar ein guter Ausgangspunkt für die Bewertung Ihrer Compliance-Position, aber die Konformitätsbewertung wird leistungsfähiger, wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevanter sind.
 
 Wenn Ihre Organisation beispielsweise zur Finanzdienstleistungsbranche gehört, möchten Sie möglicherweise die FFIEC-Bewertung hinzufügen. Wenn Ihre Organisation der Healthcare-Branche angehört, können Sie die HIPAA/HITECH-Bewertung hinzufügen. Hier erfahren Sie, wie [Sie Assessments im Compliance-Manager hinzufügen](working-with-compliance-manager.md#assessments).
 

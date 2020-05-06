@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Microsoft 365 Business Premium
+title: Microsoft 365 Business Premium einrichten
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Ermitteln Sie die Installationsschritte für Microsoft 365 Business Premium, einschließlich Hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und vieles mehr.
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635760"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048037"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business Premium im Setup-Assistenten
 
@@ -124,7 +124,7 @@ Die Richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch a
 
 ## <a name="secure-windows-10-pcs"></a>Sichere Windows 10-PCs
 
-Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann unter **Sing-in und Sicherheit** **die Option Sichern Ihrer Windows 10-Computer**aus. Wählen Sie **Ansicht** für erste Schritte aus. Ausführliche Anweisungen finden Sie unter [Sichern Ihrer Windows 10-Computer](secure-win-10-pcs.md) .
+Wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann unter **Anmeldung und Sicherheit** **die Option Sichern Ihrer Windows 10-Computer**aus. Wählen Sie **Ansicht** für erste Schritte aus. Ausführliche Anweisungen finden Sie unter [Sichern Ihrer Windows 10-Computer](secure-win-10-pcs.md) .
 
 ## <a name="deploy-office-365-client-apps"></a>Bereitstellen von Office 365-Client-apps
 
@@ -136,4 +136,4 @@ Sie können Office auch einzeln installieren. Anweisungen finden Sie unter [Inst
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

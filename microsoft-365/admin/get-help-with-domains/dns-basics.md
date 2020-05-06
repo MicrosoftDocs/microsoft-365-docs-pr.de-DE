@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628482"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048185"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -191,7 +191,7 @@ In Office 365 werden mehrere DNS-Einträge benötigt, damit der Dienst mit Ihrer
   
 Hier [finden Sie eine Liste mit Werten](information-for-dns-records.md) zum Einrichten Ihrer Domäne. Sie sind direkt im Microsoft 365 Admin Center enthalten. 
   
-Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Office 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
+Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Office 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
   
 ## <a name="how-can-i-learn-more"></a>Wie kann ich mehr erfahren?
 

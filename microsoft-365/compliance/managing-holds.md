@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie, wie Sie Aufbewahrungsorte und Ihre Datenquellen speichern, um relevante Inhalte für ihren erweiterten eDiscovery-Fall beizubehalten.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632960"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034124"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Manage Holds in Advanced eDiscovery
 
@@ -122,7 +123,7 @@ Microsoft Teams sind auf Office 365 Gruppen aufgebaut. Daher ist es sehr ähnlic
 - **Wie kann ich eine zusätzliche Microsoft 365-Gruppe oder Microsoft Teams-Website einer Depotbank zuordnen? Und was ist mit dem Platzieren eines nicht-Freiheits behaltes für Microsoft 365-Gruppen und Microsoft Teams?** Microsoft Teams basiert auf Microsoft 365-Gruppen. Daher ist es sehr ähnlich, dass Sie in einem eDiscovery-Fall aufbewahrt werden. Beachten Sie beim Platzieren von Microsoft 365-Gruppen und Microsoft Teams die folgenden Aspekte.
   - Um Inhalte in Microsoft 365-Gruppen und Microsoft Teams in der Warteschleife zu platzieren, müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet ist.
   
-  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Microsoft 365-Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Microsoft 365-Gruppe oder einem Microsoft-Team zugeordnet ist. Mit dem folgenden Befehl werden beispielsweise ausgewählte Eigenschaften für eine Microsoft 365-Gruppe mit dem Namen "Senior Leadership Team" angezeigt:
+  - Führen Sie das Cmdlet **Get-Unifiedgroup** in Exchange Online aus, um Eigenschaften für eine Microsoft 365-Gruppe oder ein Microsoft-Team anzuzeigen. Dies ist eine gute Möglichkeit, die URL für die Website abzurufen, die einer Microsoft 365-Gruppe oder einem Microsoft-Team zugeordnet ist. Der folgende Befehl zeigt beispielsweise ausgewählte Eigenschaften für eine Microsoft 365-Gruppe mit dem Namen „Senior Leadership Team“ an:
 
 
     ```text

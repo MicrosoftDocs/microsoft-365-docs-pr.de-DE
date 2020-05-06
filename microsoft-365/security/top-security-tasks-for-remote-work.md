@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen.
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046352"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Die 12 wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -67,9 +67,9 @@ Die Anwendung dieser Richtlinien dauert nur ein paar Minuten, aber Sie können I
 
 |Plan  |Empfehlung  |
 |---------|---------|
-|Microsoft 365 Pläne (ohne Azure AD P1 oder P2)     |[Aktivieren Sie Sicherheitsstandards in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Zu den Sicherheitsstandards in Azure AD gehören MFA für Benutzer und Administratoren.   |
-|Microsoft 365 E3 (mit Azure AD P1)     | Verwenden Sie [Allgemeine Richtlinien für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) , um die folgenden Richtlinien zu konfigurieren: <br>- [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [MFA für alle Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Legacy Authentifizierung blockieren](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (mit Azure AD P2)     | Wenn Sie Azure AD Identitätsschutz nutzen, beginnen Sie mit der Implementierung [der empfohlenen Reihe von bedingten Zugriffs-und zugehörigen Richtlinien](../enterprise/identity-access-policies.md) von Microsoft, indem Sie die folgenden beiden Richtlinien erstellen:<br> - [MFA erforderlich, wenn das Anmelde Risiko mittelgroß oder hoch ist](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Benutzer mit hohem Risiko müssen das Kennwort ändern](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 Pläne (ohne Azure AD P1 oder P2)     |[Aktivieren Sie die Sicherheitsstandards in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Zu den Sicherheitsstandards in Azure AD gehört MFA für Nutzer und Administratoren.   |
+|Microsoft 365 E3 (mit Azure AD P1)     | Verwenden Sie [Allgemeine Richtlinien für den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common), um die folgenden Richtlinien zu konfigurieren: <br>- [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [MFA für alle Nutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockieren von Legacy-Authentifizierung](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (mit Azure AD P2)     | Nutzen Sie den Azure AD-Identity Protection, beginnen Sie mit der Implementierung des von Microsoft [empfohlenen Satzes von bedingtem Zugriff und zugehörigen Richtlinien](../enterprise/identity-access-policies.md), indem Sie die folgenden 2 Richtlinien nutzen:<br> - [MFA erforderlich, wenn das Anmelderisiko mittel oder hoch ist](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Nutzer mit hohem Risiko müssen das Kennwort ändern](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -100,7 +100,7 @@ Ihr globaler Administrator kann diese Schutzmaßnahmen konfigurieren:
 - [Einrichten von ATP-Safe-Links](office-365-security/set-up-atp-safe-links-policies.md)
 - [Einrichten von Richtlinien zu sicheren Anlagen in ATP](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Einrichten einer benutzerdefinierten Liste für URLs, die nicht neu geschrieben werden sollen](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Einrichten einer benutzerdefinierten Liste für blockierte URLs](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Einrichten einer benutzerdefinierten Liste für blockierte URLs](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 Sie müssen mit Ihrem Exchange Online Administrator und SharePoint Online Administrator zusammenarbeiten, um ATP für diese Arbeitslasten zu konfigurieren:
 - [Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -154,7 +154,8 @@ Verwenden Sie die Anleitungen [zum Aktualisieren der allgemeinen Richtlinien zum
 
 Die von Ihnen erstellten Schutzrichtlinien für InTune Mobile App zusammen mit der Regel für bedingten Zugriff, um genehmigte apps und App-Schutz zu erfordern, gelten für Gästekonten und tragen zum Schutz Ihrer Organisationsdaten bei. 
 
-**Hinweis**: Wenn Sie PCs bereits in der Geräteverwaltung registriert haben, um kompatible PCs zu benötigen, müssen Sie auch Gastkonten aus der Regel für bedingten Zugriff ausschließen, die die Geräte Konformität erzwingt. 
+> [!NOTE]
+> Wenn Sie PCs bereits in der Geräteverwaltung registriert haben, um kompatible PCs zu benötigen, müssen Sie auch Gastkonten aus der Regel für bedingten Zugriff ausschließen, die die Geräte Konformität erzwingt. 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: Registrieren von PCs in der Geräteverwaltung und erfordern von kompatiblen PCs
@@ -179,12 +180,12 @@ Wenn Sie schnell den Großteil ihrer Mitarbeiter von zu Hause aus arbeiten lasse
 
 Netzwerkelemente wie VPN-Konzentratoren, zentrale Ausstiegs Geräte (beispielsweise Proxies und Verhinderung von Datenverlust), zentrale Internet Bandbreite, Backhaul MPLS-Schaltungen, NAT-Funktionen und so weiter werden aufgrund der Auslastung des gesamten Unternehmens mit ihnen plötzlich unter enorme Belastung gesetzt. Das Endergebnis ist eine schlechte Leistung und Produktivität gepaart mit einer schlechten Benutzerfreundlichkeit für Benutzer, die sich an die Arbeit von zu Hause anpassen.
 
-Einige der Schutzmechanismen, die traditionell vom Routing Datenverkehr über ein Unternehmensnetzwerk bereitgestellt wurden, werden von den Cloud-apps bereitgestellt, auf die Ihre Benutzer zugreifen. Wenn Sie diesen Schritt in diesem Artikel erreicht haben, haben Sie eine Reihe von ausgefeilten Cloud-Sicherheitssteuerelementen für Microsoft 365-Dienste und-Daten implementiert. Wenn diese Steuerelemente vorhanden sind, können Sie den Datenverkehr von Remotebenutzern direkt an Office 365 weiterleiten. Wenn Sie weiterhin einen VPN-Link für den Zugriff auf andere Anwendungen benötigen, können Sie Ihre Leistung und Benutzerfreundlichkeit erheblich verbessern, indem Sie den geteilten Tunneling implementieren. Wenn Sie eine Einigung in Ihrem einer Organisation erzielen, kann dies innerhalb eines Tages durch ein gut koordiniertes Netzwerkteam erfolgen.
+Einige der Schutzmechanismen, die traditionell vom Routing Datenverkehr über ein Unternehmensnetzwerk bereitgestellt wurden, werden von den Cloud-apps bereitgestellt, auf die Ihre Benutzer zugreifen. Wenn Sie diesen Schritt in diesem Artikel erreicht haben, haben Sie eine Reihe von ausgefeilten Cloud-Sicherheitssteuerelementen für Microsoft 365-Dienste und-Daten implementiert. Wenn diese Steuerelemente vorhanden sind, können Sie den Datenverkehr von Remotebenutzern direkt an Office 365 weiterleiten. Wenn Sie weiterhin einen VPN-Link für den Zugriff auf andere Anwendungen benötigen, können Sie Ihre Leistung und Benutzerfreundlichkeit erheblich verbessern, indem Sie den geteilten Tunneling implementieren. Sobald Sie eine Vereinbarung in Ihrer Organisation erzielt haben, kann dies innerhalb eines Tages durch ein gut koordiniertes Netzwerkteam erfolgen.
 
 
 Weitere Informationen finden Sie in den folgenden Ressourcen zu Dokumenten:
 - [Übersicht: Optimieren der Konnektivität für Remotebenutzer mithilfe von VPN-Split-Tunneling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementierung des geteilten VPN-Tunnels für Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementieren eines geteilten VPN-Tunnels für Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Aktuelle Blog Artikel zu diesem Thema:
 - [Gewusst wie schnelles Optimieren des Datenverkehrs für Remotemitarbeiter & verringern der Auslastung Ihrer Infrastruktur](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
@@ -202,7 +203,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 |Konzept  |Ressourcen  |
 |---------|---------|
 |Microsoft 365     |[Anpassbare Lern Pfade](https://docs.microsoft.com/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammenzustellen.        |
-|Sicherheit in Microsoft 365 |[Lern Modul: Sichern Ihrer Organisation mit integrierter intelligenter Sicherheit von Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures artikulieren. |
+|Microsoft 365 Security Center |[Lern Modul: Sichern Ihrer Organisation mit integrierter intelligenter Sicherheit von Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures artikulieren. |
 |Mehrstufige Authentifizierung     | [Überprüfung in zwei Schritten: Was ist die zusätzliche Überprüfungsseite?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Dieser Artikel hilft Endbenutzern, die mehrstufige Authentifizierung zu verstehen, und warum Sie in Ihrer Organisation verwendet wird.    |
 | | |
 

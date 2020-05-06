@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637473"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043306"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
 
@@ -132,4 +132,5 @@ Die Kommunikation zwischen Mitarbeitern ist häufig eine Quelle für unbeabsicht
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Können Sie das Insider Risk Management für Ihre Organisation konfigurieren? Weitere Informationen finden Sie unter [Erste Schritte mit dem Insider Risikomanagement](insider-risk-management-configure.md) zum Konfigurieren von Voraussetzungen, Erstellen von Richtlinien und Starten des Empfangs von Benachrichtigungen.
+- Informationen zum Vorbereiten der Aktivierung von Richtlinien für das Insider Risikomanagement in Ihrer Organisation finden Sie unter [Plan for Insider Risk Management](insider-risk-management-plan.md) .
+- Weitere Informationen finden Sie unter [Erste Schritte mit dem Insider Risikomanagement](insider-risk-management-configure.md) zum Konfigurieren von Voraussetzungen, Erstellen von Richtlinien und Starten des Empfangs von Benachrichtigungen.

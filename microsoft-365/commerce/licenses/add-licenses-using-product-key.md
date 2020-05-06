@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Lizenzen zu Ihrem Abonnement hinzufügen.
-ms.openlocfilehash: 694b8ac57e28bbe6b03e5f8aeef87bda1bcc73ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632425"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045404"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Hinzufügen von Lizenzen zu oder verlängern eines Abonnements, das für die Verwendung eines Product Keys bezahlt wurde
 
@@ -42,8 +42,7 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 
 ::: moniker range="o365-worldwide"
 
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie nach dem Abonnement, dem Sie Lizenzen hinzufügen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Weitere Lizenzen hinzufügen**aus.
 
@@ -100,8 +99,7 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 
 ::: moniker range="o365-worldwide"
 
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Abrechnung** die Option **End-Datum verlängern**aus.
 

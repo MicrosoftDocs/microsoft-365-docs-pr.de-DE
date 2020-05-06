@@ -1,5 +1,5 @@
 ---
-title: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
+title: Funktionsweise von DLP mit Sicherheits & Compliance Center & Exchange Admin Center
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP-und Nachrichtenfluss Regeln (Transportregeln) in der Exchange-Verwaltungskonsole arbeitet.
-ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05e3c6342ab6d57c1f22de96e64a01df5fd15131
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073066"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036196"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
 

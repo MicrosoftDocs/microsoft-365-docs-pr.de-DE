@@ -1,6 +1,6 @@
 ---
 title: Bereitstellen von Threat Protection-Funktionen in Microsoft 365
-description: Informationen zum Bereitstellen von Threat Protection-Funktionen in Microsoft 365 E5.
+description: Informationen zum Bereitstellen von Threat Protection-Diensten und-Funktionen in Microsoft 365 E5.
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016096"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046262"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Bereitstellen von Threat Protection-Funktionen in Microsoft 365
 
@@ -48,7 +48,16 @@ In der folgenden Abbildung ist ein empfohlener Pfad für die bereitstellungdiese
 
 ![M365-Bedrohungsschutz Signale](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-Organisationen mit mehreren Sicherheitsteams können diese Funktionen parallel implementieren.
+|Lösung/Funktionen  |Beschreibung  |
+|---------|---------|
+|Mehrstufige Authentifizierung und bedingter Zugriff     |Schutz vor kompromittierten Identitäten und Geräten. Beginnen Sie mit diesem Schutz, da er Grundlegendes ist. Die in diesem Leitfaden Empfohlene Konfiguration umfasst Azure AD Identitätsschutz als Voraussetzung.     |
+|Azure Advanced Threat Protection     |  Eine Cloud-basierte Sicherheitslösung, die ihre lokalen Active Directory Signale nutzt, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. Konzentrieren Sie sich auf das nächste, da es Ihre on-Prem-und Cloud-Infrastruktur schützt, keine Abhängigkeiten oder Voraussetzungen hat und unmittelbare Vorteile bieten kann.       | 
+|Office 365 Advanced Threat Protection     | Schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. Schutzmaßnahmen für Malware, Phishing, Spoofing und andere Angriffstypen. Dies wird als nächstes empfohlen, da das Bereitstellen von Änderungs Steuerelementen, Migrieren von Einstellungen aus dem etablierten System und anderen Überlegungen länger dauern kann. <br><br>Hinweis: Stellen Sie sicher, dass Sie auch die Threat Protection-Funktionen konfigurieren, die in allen Office 365 Abonnements (Exchange Online Protection) enthalten sind.       |
+|Microsoft Defender Advanced Threat Protection    | Eine Endpunktschutz Plattform, die zum verhindern, erkennen, untersuchen und reagieren auf Erweiterte Bedrohungen beiträgt. Diese Bereitstellung dauert länger, kann aber parallel zu den anderen Funktionen ausgeführt werden, wenn andere Administratoren dafür verantwortlich sind.   |
+|Microsoft Cloud App Security     |   Ein Cloud Access-Sicherheits Broker für Ermittlung, Untersuchung und Steuerung. Sie können diese frühzeitig aktivieren, um mit dem Sammeln von Daten und Einblicken zu beginnen. Die Implementierung von Informationen und anderer gezielter Schutz in ihren Saas-apps umfasst die Planung und kann mehr Zeit in Anspruch nehmen.       | 
+
+> [!TIP]
+> Organisationen mit mehreren Sicherheitsteams können diese Funktionen parallel implementieren.
 
 ## <a name="deploy-your-threat-protection-solution"></a>Bereitstellen Ihrer Bedrohungsschutz Lösung
 
