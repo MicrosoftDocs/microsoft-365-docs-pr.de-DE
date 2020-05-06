@@ -1,5 +1,5 @@
 ---
-title: Finden und Freigeben von Nachrichten unter Quarantäne als Benutzer
+title: Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,15 +16,17 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: Als Microsoft 365-Benutzer können Sie Ihre unter Quarantäne gestellten Nachrichten anzeigen, freigeben und löschen (Nachrichten, bei denen Sie ein Empfänger sind und der Spam-Filter die Nachricht als Spam oder Massen-E-Mail unter Quarantäne gestellt hat). Sie können Ihre isolierten Nachrichten im Security & Compliance Center anzeigen und verwalten.
-ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie unter Quarantäne gestellte Nachrichten im Security & Compliance Center in Microsoft 365 anzeigen und verwalten können.
+ms.openlocfilehash: 177f60f1fccc764d74ec0374249a62c602cb84aa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43809009"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036512"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user"></a>Finden und Freigeben von Nachrichten unter Quarantäne als Benutzer
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer
 
 Die Quarantäne enthält potenziell gefährliche oder unerwünschte Nachrichten in Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer. Weitere Informationen finden Sie unter [Quarantäne in Office 365](quarantine-email-messages.md).
 

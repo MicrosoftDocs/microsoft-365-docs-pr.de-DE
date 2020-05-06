@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636639"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046168"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
@@ -30,11 +30,11 @@ Ihr Administrator hat eine schreibgeschützte Ansicht für alle Abonnements, die
 
 ## <a name="view-your-subscriptions"></a>Anzeigen Ihrer Abonnements
 
-Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Mehr kaufen oder reduzieren von Lizenzen
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, für das Sie mehr kaufen oder Lizenzen reduzieren möchten.
 
@@ -74,7 +74,7 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ## <a name="cancel-a-subscription"></a>Kündigen eines Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, das Sie abbrechen möchten.
 

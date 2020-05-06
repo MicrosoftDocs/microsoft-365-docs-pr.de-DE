@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Erwerben Sie ein Microsoft 365 for Business-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634944"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045800"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Erwerben Sie ein Abonnement für Microsoft 365 for Business aus Ihrer kostenlosen Testversion.
 
@@ -50,9 +50,9 @@ Es ist ganz einfach, und wenn Sie den gleichen Abonnementtyp wie den Ihrer Testv
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
-2. Suchen Sie auf der Seite **Produkte & Dienste** nach dem Abonnement, das Sie kaufen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Abonnement erwerben**aus.
+2. Suchen Sie auf der Seite **Ihre Produkte** nach dem Abonnement, das Sie kaufen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Abonnement erwerben**aus.
 
 3. Wählen Sie entweder eine monatliche oder jährliche Zusage für Ihr Abonnement aus, und wählen Sie dann **Auschecken**aus.
 

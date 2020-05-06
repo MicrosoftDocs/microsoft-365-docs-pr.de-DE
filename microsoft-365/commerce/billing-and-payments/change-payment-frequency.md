@@ -20,18 +20,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie die Häufigkeit Ihrer Abrechnung für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: 07824444f8302db08d789e8fdc9564f74318c7f1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 574a0c565a981aa1e2af4800aff379bbb6e9692c
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242477"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045916"
 ---
 # <a name="change-your-payment-frequency"></a>Ändern der Zahlungshäufigkeit
 
 Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnung. Führen Sie die folgenden Schritte aus, um zu ändern, wie oft Sie ein Abonnement fakturieren.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, das Sie ändern möchten. Wählen Sie im Abschnitt **Abrechnung** neben entweder **monatlich** oder in Rechnung gestellt **jährlich**die Option **Bearbeiten**aus.
 

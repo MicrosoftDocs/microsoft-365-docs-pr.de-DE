@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 for Business, wie Sie eingerichtet werden und wie Sie die Geräte und PCs Ihrer Benutzer vorbereiten können, um sicherzustellen, dass Sie von Microsoft 365 for Business geschützt sind.
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633201"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048083"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 for Business
 
@@ -44,7 +44,7 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 36
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 for Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, finden Sie weitere Informationen in der Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) . 
+Microsoft 365 for Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weitere Lizenzen benötigen, lesen Sie die Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986), um weitere Informationen zu erhalten. 
   
 ## <a name="get-microsoft-365-for-business"></a>Holen Sie sich Microsoft 365 for Business
 
@@ -52,7 +52,7 @@ Microsoft 365 for Business ist für bis zu 300 Lizenzen gedacht. Wenn Sie weiter
     
 - Wenn Sie keinen Partner haben und Microsoft 365 for Business erhalten möchten, können Sie [ihn hier kaufen](https://www.microsoft.com/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-for-business"></a>Einrichten von Microsoft 365 for Business
+## <a name="set-up-microsoft-365-for-business"></a>Einrichten von Microsoft 365 für Unternehmen
 
  **Übersicht über die Einrichtung von Microsoft 365 for Business Suite**
   
@@ -83,7 +83,7 @@ Melden Sie sich bei [Microsoft 365 Admin Center](https://portal.office.com/admin
     
     - Verwenden Sie den Verzeichnis Synchronisierungs-Assistenten, um Ihre Benutzer mit der Cloud zu synchronisieren. Führen Sie die Schritte unter [Einrichten der Verzeichnissynchronisierung für Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) aus, um diesen Vorgang abzuschließen. Nachdem Sie Ihre Benutzer mit der Cloud synchronisiert haben, müssen Sie die [Verzeichnissynchronisierung für Office 365 deaktivieren](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Außerdem müssen Sie jedem Benutzer, der auf diese Weise hinzugefügt wurde, eine Lizenz für Microsoft 365 for Business geben. Sie können dies im Setup- [Assistenten](set-up.md) tun, oder Sie können [Benutzern in Microsoft 365 for Business Lizenzen zuweisen](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Außerdem müssen Sie jedem Benutzer, der auf diese Weise hinzugefügt wurde, eine Lizenz für Microsoft 365 for Business geben. Sie können dies im Setup- [Assistenten](set-up.md) tun, oder Sie können [Benutzern in Microsoft 365 for Business Lizenzen zuweisen](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
 ### <a name="2-prepare-mobile-devices"></a>2: Vorbereiten von mobilen Geräten
 
@@ -98,7 +98,7 @@ Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können 
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (beispielsweise Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-verbundenen Geräten** Zugriff auf diese Ressourcen gewähren, indem Sie die folgenden Schritte ausführen: [zugreifen auf lokale Ressourcen von einem Azure AD verbundenen Gerät in Microsoft 365 for Business](access-resources.md).
   
   
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
@@ -112,4 +112,4 @@ Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen 
   
 [Verwalten von Microsoft 365 for Business](manage.md)[Migrieren zu Microsoft 365 for Business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

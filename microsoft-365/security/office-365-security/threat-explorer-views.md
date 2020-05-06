@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten, die in Threat Explorer und in Echtzeit erkannt werden können.
-ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+description: In diesem Artikel erfahren Sie, wie Sie Threat Explorer und den Bericht über Echt Zeit Erkennungen verwenden, um Bedrohungen im Security & Compliance Center zu untersuchen und auf diese zu reagieren.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907249"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035188"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 

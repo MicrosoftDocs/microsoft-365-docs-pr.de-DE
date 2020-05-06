@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Hier erfahren Sie, wie Sie den Dateispeicher in Ihrem Microsoft 365-Abonnement hinzufügen und reduzieren. Bei zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive speichern.
-ms.openlocfilehash: b5dea51e0e8616749a820ff35827b4390390af50
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a944c272f456fd6f284e1df28c52420e4deb40d4
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632743"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045940"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -43,45 +43,40 @@ Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Sp
 
 ::: moniker range="o365-worldwide"
 
-1. Melden Sie sich https://admin.microsoft.com als globaler oder SharePoint-Administrator an. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
-    
-2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen. 
-    
-3. Wählen Sie im linken Bereich des neuen SharePoint Admin Center **Aktive Websites** aus.
+1. Navigieren Sie zur [Seite „Aktive Websites“ im neuen SharePoint Admin Center](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true), und melden Sie sich mit einem Konto an, das über [Administratorberechtigungen](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) für Ihre Organisation verfügt.
 
-4. In der oberen rechten Ecke der Seite sehen Sie, wie viel Speicherplatz für alle Websites verwendet wird, und den Gesamtspeicher für Ihr Abonnement. (Wenn Ihre Organisation Multi-Geo in Office 365 konfiguriert hat, zeigt der Balken auch die Menge an Speicherplatz an, die für alle geografischen Standorte verwendet wird.) 
+2. In der oberen rechten Ecke der Seite sehen Sie, wie viel Speicherplatz für alle Websites verwendet wird, und den Gesamtspeicher für Ihr Abonnement. (Wenn Ihre Organisation Multi-Geo in Office 365 konfiguriert hat, zeigt der Balken auch die Menge an Speicherplatz an, die für alle geografischen Standorte verwendet wird.) 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Melden Sie sich https://portal.office.de bei als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
-    
-2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen. 
-    
+
+2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen.
+
 3. Wählen Sie im linken Bereich des neuen SharePoint Admin Center **Aktive Websites** aus.
 
-4. In der oberen rechten Ecke der Seite sehen Sie, wie viel Speicherplatz für alle Websites verwendet wird, und den Gesamtspeicher für Ihr Abonnement. 
+4. In der oberen rechten Ecke der Seite sehen Sie, wie viel Speicherplatz für alle Websites verwendet wird, und den Gesamtspeicher für Ihr Abonnement.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Melden Sie sich https://login.partner.microsoftonline.cn/ bei als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
-     
-2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen. 
-    
+
+2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen.
+
 3. Wählen Sie im linken Bereich des neuen SharePoint Admin Center **Aktive Websites** aus.
 
 4. In der oberen rechten Ecke der Seite sehen Sie, wie viel Speicherplatz für alle Websites verwendet wird, und den Gesamtspeicher für Ihr Abonnement.  
 
 ::: moniker-end
 
-
 ![Speicher Leiste auf der Seite "aktive Websites"](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> Der verwendete Speicher umfasst keine Änderungen, die innerhalb der letzten 24-48 Stunden vorgenommen wurden. 
+> Der verwendete Speicher umfasst keine Änderungen, die innerhalb der letzten 24-48 Stunden vorgenommen wurden.
 
 Nachdem Sie festgestellt haben, wie viel Speicherplatz Sie verwenden, können Sie Speicherplatz für Ihr Abonnement hinzufügen oder entfernen. Um herauszufinden, wie viel Speicherplatz hinzugefügt werden kann, befolgen Sie die Schritte in diesem Artikel, und überprüfen Sie die Preisinformationen vor dem Kauf.
   
@@ -92,7 +87,6 @@ Informationen zum Festlegen von Speichergrenzwerten für Websitesammlungen finde
 Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben haben, können Sie dies tun.
 
 ::: moniker range="o365-worldwide"
-
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
@@ -160,15 +154,13 @@ Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben ha
 
 ::: moniker-end
 
-
 ## <a name="increase-or-decrease-storage"></a>Vergrößern oder Verkleinern des Speicherplatzes
 
 Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlichen Dateispeicher erworben haben, können Sie diese Schritte verwenden, um den zusätzlichen Speicherplatz für Ihr Abonnement zu erweitern oder zu verringern. Sie können den Speicher auf so niedrig wie 1 Gigabyte reduzieren. Wenn Sie den gesamten zusätzlichen Speicherplatz entfernen möchten, müssen Sie [sich an den Support wenden](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
 
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wählen Sie das Abonnement aus, das das Add-on " **Office 365 extra File Storage** " enthält.
 
@@ -181,7 +173,6 @@ Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlich
 ::: moniker range="o365-germany"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
 
 2. Wählen Sie auf der Seite **Abonnements** die Option **Add-ons**aus.
 
@@ -224,8 +215,6 @@ Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlich
 5. Wählen Sie **Schließen** aus.
 
 ::: moniker-end
-
-
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Bin ich im Rahmen meines Plans für Office 365 Extra File Storage berechtigt?
 

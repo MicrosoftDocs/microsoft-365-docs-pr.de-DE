@@ -1,5 +1,5 @@
 ---
-title: Einrichten der virtuellen Zertifikat Sammlung in Exchange Online zur Überprüfung von S/MIME
+title: Einrichten der virtuellen Zertifikat Sammlung – Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: Administratoren können erfahren, wie Sie eine virtuelle Zertifikat Sammlung erstellen, die zum Validieren von S/MIME-Zertifikaten in Exchange Online verwendet wird.
-ms.openlocfilehash: 232f45b63a38ce4591c83e4ec7a9c09a03c339d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 89061e3c07803d741e25846ffe8a3325a12668a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598322"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035296"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Einrichten der virtuellen Zertifikat Sammlung in Exchange Online zur Überprüfung von S/MIME
 

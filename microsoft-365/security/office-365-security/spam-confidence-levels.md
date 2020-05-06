@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie die SCL-Bewertung (Spam Confidence Level) bestimmt, wie wahrscheinlich oder unwahrscheinlich eine Nachricht Spam ist, und die Standardaktionen, die von der Spamfilterung für Nachrichten basierend auf der SCL-Bewertung ausgeführt werden.
-ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel können Administratoren erfahren, wie die SCL-Bewertung (Spam Confidence Level) die Wahrscheinlichkeit einer Nachricht als Spam bestimmt.
+ms.openlocfilehash: 9448b1fd99878dbb85bc8699afc0719bc62dd951
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638284"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035248"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>SCL (Spam Confidence Level) in Office 365
 
@@ -32,7 +34,7 @@ Was der SCL-Wert bedeutet und welche Standardaktionen für Nachrichten ausgefüh
 ||||
 |:---:|---|---|
 |**SCL**|**Definition**|**Standardaktion**|
-|-1|Die Nachricht hat die Spamfilterung übersprungen. Die Nachricht stammt beispielsweise von einem sicheren Absender, wurde an einen sicheren Empfänger gesendet oder stammt von einem e-Mail-Quellserver in der IP-Zulassungsliste. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in Office 365](create-safe-sender-lists-in-office-365.md).|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
+|-1|Die Nachricht hat die Spamfilterung übersprungen. Die Nachricht stammt beispielsweise von einem sicheren Absender, wurde an einen sicheren Empfänger gesendet oder stammt von einem e-Mail-Quellserver in der IP-Zulassungsliste. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md).|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
 |0, 1|Spamfilterung bestimmt, dass die Nachricht kein Spam war.|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
 |5, 6|Spamfilterung markiert die Nachricht als **Spam**|Die Nachricht wird in den Ordner "Junk-E-Mail" des Empfängers zugestellt.|
 |9 |Spamfilterung kennzeichnete die Nachricht als **Spam mit hoher Vertrauens** Würdigkeit|Die Nachricht wird in den Ordner "Junk-E-Mail" des Empfängers zugestellt.|

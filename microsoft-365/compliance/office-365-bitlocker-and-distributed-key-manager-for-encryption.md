@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Zusammenfassung: Informationen zu BitLocker für die Verschlüsselung in der Cloud.'
-ms.openlocfilehash: 5596848e392736e20e8c796e6fd409b9c43235d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Office 365 BitLocker-Verschlüsselung verwendet, wodurch das Potenzial für Datendiebstahl aufgrund von verlorenen oder gestohlenen Computern und Datenträgern reduziert wird.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637351"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033623"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung
 
@@ -35,7 +36,7 @@ In der folgenden Tabelle wird die BitLocker-Schlüsselschutz Kette für einen be
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
 | Externer AES-Schlüssel 256-Bit | Pro Server | BitLocker-APIs | TPM oder geheimer Tresor | Lockbox/Zugriffssteuerung |
 |  |  |  | Post Fach Server-Registrierung | TPM verschlüsselt |
-| 48-stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory Domain Services | Lockbox/Zugriffssteuerung |
+| 48-stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory | Lockbox/Zugriffssteuerung |
 | X. 509-Zertifikat als Daten Wiederherstellungs-Agent (DRA), auch Public Key Protector genannt | Umgebung (z. b. Exchange Online Multimandanten) | Microsoft-Zertifizierungsstelle | Erstellungs System | Ein Benutzer hat nicht das vollständige Kennwort für den privaten Schlüssel. Das Kennwort ist unter physischem Schutz. |
 
 

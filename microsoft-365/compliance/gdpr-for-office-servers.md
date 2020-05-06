@@ -1,6 +1,6 @@
 ---
 title: DSGVO für Office-Server
-description: Erfahren Sie, wie Sie mit DSGVO-Anforderungen auf lokalen Office-Servern umgehen.
+description: Erfahren Sie, wie Sie mit Anforderungen der Datenschutz-Grundverordnung (DSGVO) in lokalen Office-Servern umgehen.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b50722d7f37b54b38bac259b7c42d3bd782dfb3d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557955"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036260"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>DSGVO für lokale Office-Server
 

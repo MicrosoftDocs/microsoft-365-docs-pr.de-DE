@@ -16,13 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: 'Zusammenfassung: eine Beschreibung der Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.'
-ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel finden Sie eine Beschreibung der Office 365 Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637285"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031395"
 ---
 # <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Verschlüsselung in Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online
 
@@ -32,7 +33,7 @@ Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren
 
 Skype for Business Kundendaten können in Ruhe in Form von Dateien oder Präsentationen gespeichert werden, die von Besprechungsteilnehmern hochgeladen werden. Der Webkonferenzserver verschlüsselt Kundendaten mithilfe von AES mit einem 256-Bit-Schlüssel. Die verschlüsselten Kundendaten werden in einer Dateifreigabe gespeichert. Jeder Teil der Kundendaten wird mit einem anderen zufällig generierten 256-Bit-Schlüssel verschlüsselt. Wenn ein Teil der Kundendaten in einer Konferenz freigegeben wird, weist der Webkonferenzserver die Konferenz Clients an, die verschlüsselten Kundendaten über HTTPS herunterzuladen. Der entsprechende Schlüssel wird an Clients gesendet, damit die Kundendaten entschlüsselt werden können. Der Webkonferenzserver authentifiziert auch Konferenz Clients, bevor er den Clients den Zugriff auf Konferenz Kundendaten ermöglicht. Wenn Sie an einer Webkonferenz teilnehmen, richtet jeder Konferenz Client zunächst ein SIP-Dialogfeld mit der Konferenz Fokus Komponente ein, die in dem Front-End-Server über TLS läuft. Der Konferenz Fokus übergibt dem Konferenz Client ein vom Webkonferenzserver generiertes Authentifizierungscookie. Der Konferenz Client stellt dann eine Verbindung mit dem Webkonferenzserver her, der das Authentifizierungscookie darstellt, um vom Server authentifiziert zu werden.
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online und OneDrive for Business
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online und OneDrive for Business
 
 Alle Kundendateien in SharePoint Online werden durch eindeutige, dateispezifische Schlüssel geschützt, die immer exklusiv für einen einzelnen Mandanten sind. Die Schlüssel werden entweder vom SharePoint Online Dienst erstellt und verwaltet oder wenn der Kundenschlüssel von Kunden verwendet, erstellt und verwaltet wird. Wenn eine Datei hochgeladen wird, wird die Verschlüsselung von SharePoint Online im Kontext der Upload-Anforderung ausgeführt, bevor Sie an Azure Storage gesendet wird. Wenn eine Datei heruntergeladen wird, ruft SharePoint Online die verschlüsselten Kundendaten aus dem Azure-Speicher basierend auf der eindeutigen Dokument-ID ab und entschlüsselt die Kundendaten vor dem Senden an den Benutzer. Azure Storage hat keine Möglichkeit, die Kundendaten zu entschlüsseln oder sogar zu identifizieren oder zu verstehen. Alle Verschlüsselung und Entschlüsselung erfolgen in denselben Systemen, die die Mandanten Isolierung erzwingen, die Azure Active Directory und SharePoint Online sind.
 

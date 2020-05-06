@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Windows-basiertem DNS für Microsoft einrichten.
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631369"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048843"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mit Windows-basiertem DNS
 
@@ -110,7 +110,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn Sie bereits einen SPF-Eintrag für Ihre Domäne haben, erstellen Sie keinen neuen für Microsoft. Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen *einzelnen* SPF-Eintrag haben, der beide Wertegruppen enthält. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen *einzelnen* SPF-Eintrag haben, der beide Wertegruppen enthält. 
   
 Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhindern.
   
@@ -200,7 +200,7 @@ Hinzufügen eines TXT-Eintrags
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Nicht routbare E-Mail-Adresse, die als UPN in Ihrem lokalen Active Directory verwendet wird
 <a name="BKMK_ADNote"> </a>
 
-Wenn Sie beabsichtigen, Ihre lokale Active Directory mit Microsoft zu synchronisieren, sollten Sie sicherstellen, dass das UPN-Suffix (Active Directory User Principal Name) ein gültiges Domänensuffix und kein nicht unterstütztes Domänensuffix wie @contoso. local ist. Wenn Sie das UPN-Suffix ändern müssen, finden Sie weitere Informationen unter [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Wenn Sie beabsichtigen, Ihre lokale Active Directory mit Microsoft zu synchronisieren, sollten Sie sicherstellen, dass das UPN-Suffix (Active Directory User Principal Name) ein gültiges Domänensuffix und kein nicht unterstütztes Domänensuffix wie @contoso. local ist. Wenn Sie das UPN-Suffix ändern müssen, finden Sie weitere Informationen unter [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 

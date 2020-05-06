@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621430"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045212"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -40,9 +40,9 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
-2. Ihre Abonnements werden auf der Seite **Products & Services** zusammen mit dem Abonnement Namen, Informationen zum Abonnement und seinem Status angezeigt. Zum Anzeigen einer verkürzten Ansicht wählen Sie **Tabellenansicht**aus.
+2. Ihre Abonnements werden auf der Seite **Ihre Produkte** zusammen mit dem Abonnement Namen, Informationen zum Abonnement und seinem Status angezeigt. Zum Anzeigen einer verkürzten Ansicht wählen Sie **Tabellenansicht**aus.
 
 ::: moniker-end
   

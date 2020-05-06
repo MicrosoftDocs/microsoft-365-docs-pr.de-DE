@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen und gleichzeitig sicherzustellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden. Mit diesen Bezeichnungen können Schutzeinstellungen angewendet werden, die die Verschlüsselung optischer Kennzeichnungen wie Fußzeilen und Wasserzeichen umfassen.
-ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957305"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022153"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Weitere Informationen Vertraulichkeitsbezeichnungen
 
@@ -140,18 +140,22 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 - **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
 
-- **Eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails anwenden, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Diese Option gilt auch für Container, wenn [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktiviert sind](sensitivity-labels-teams-groups-sites.md). Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist. Sie haben die Möglichkeit, eine als Basisniveau Standardbezeichnung von Schutzeinstellungen festzulegen, die auf alle Ihre Inhalte angewendet werden sollen. Ohne Benutzerschulungen und andere Steuerelemente kann diese Einstellung aber auch zu ungenauen Bezeichnungen führen. 
+- **Eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails anwenden, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Diese Option gilt auch für Container, wenn [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktiviert sind](sensitivity-labels-teams-groups-sites.md). Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist. 
+    
+    Sie haben die Möglichkeit, eine als Basisniveau Standardbezeichnung von Schutzeinstellungen festzulegen, die auf alle Ihre Inhalte angewendet werden sollen. Ohne Benutzerschulungen und andere Steuerelemente kann diese Einstellung aber auch zu ungenauen Bezeichnungen führen. Normalerweise empfiehlt es sich nicht, eine Bezeichnung auszuwählen, die Verschlüsselung als Standardbezeichnung für Dokumente anwendet. So müssen z.B. viele Organisationen Dokumente an externe Benutzer freigeben, die möglicherweise nicht über [Apps verfügen, welche die Verschlüsselung unterstützen](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications), oder die möglicherweise kein [Konto verwenden, das autorisiert werden kann](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#supported-scenarios-for-opening-protected-documents).
 
 - **Begründung für das Ändern einer Bezeichnung anfordern.** Sie können festlegen, dass ein Benutzer, der versucht, eine Bezeichnung zu entfernen oder durch eine Bezeichnung mit einer niedrigeren Ordnungszahl zu ersetzen, eine Begründung für diese Aktion angeben muss. Beispiel: Ein Benutzer öffnet ein Dokument mit der Bezeichnung "Vertraulich" (Ordnungszahl 3) und ersetzt diese Bezeichnung durch die Bezeichnung "Öffentlich" (Ordnungszahl 1). Aktuell wird die Begründung nicht zur [Analyse der Bezeichnungen](label-analytics.md) an den Administrator gesendet. Allerdings sendet der [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) diese Informationen an [Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Eingabeaufforderung, in der Benutzer eine Begründung eingeben](../media/Sensitivity-label-justification-required.png)
 
-- **Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden**. Dies wird auch obligatorische Bezeichnung genannt: Sie können festlegen, dass eine Bezeichnung angewendet werden muss, bevor Benutzer Dokumente speichern und E-Mails senden können. Nutzen Sie diese Option, um dafür zu sorgen, dass Bezeichnungen in höherem Maß verwendet werden. Die Bezeichnung kann vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Standardbezeichnung). Die Aufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss, sieht so aus:
+- **Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden**. Dies wird auch obligatorische Bezeichnung genannt: Sie können festlegen, dass eine Bezeichnung angewendet werden muss, bevor Benutzer Dokumente speichern und E-Mails senden können. Die Bezeichnung kann vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Standardbezeichnung). Eine Beispielaufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss:
 
     ![Eingabeaufforderung in Outlook, durch die der Benutzer zum Anwenden der erforderlichen Bezeichnung aufgefordert wird](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > Für die obligatorische Bezeichnung ist ein Azure Information Protection-Abonnement erforderlich. Wenn Sie diese Funktion verwenden möchten, müssen Sie den [Assistent für einheitliche Bezeichnungen von Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) installieren. Dieser Assistent kann nur unter Windows ausgeführt werden, sodass die Funktion derzeit nicht unter Mac, iOS und Android unterstützt wird.
+    > Die obligatorische Kennzeichnung setzt zurzeit den [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) voraus. Dieser Assistent kann nur unter Windows ausgeführt werden, sodass die Funktion derzeit nicht unter Mac, iOS und Android unterstützt wird.
+    
+    Erwägen Sie die Verwendung dieser Option, um dafür zu sorgen, dass Bezeichnungen in höherem Maß verwendet werden. Ohne Benutzerschulungen kann diese Einstellung jedoch zu ungenauen Bezeichnungen führen. Außerdem kann die obligatorische Kennzeichnung, sofern Sie keine Standardbezeichnung festlegen, dazu führen, dass Ihre Benutzer mit den häufig auftretenden Eingabeaufforderungen frustriert sind. 
 
 - **Link zu einer benutzerdefinierten Hilfeseite bereitstellen** Wenn Ihre Benutzer nicht genau wissen, was Vertraulichkeitsbezeichnungen sind oder wie sie verwendet werden sollten, können Sie eine URL zu weiteren Informationen angeben, die unten im Menü der **Vertraulichkeitsbezeichnungen** in den Office-Apps angezeigt wird:
 

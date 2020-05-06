@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: In diesem Artikel erfahren Sie, wie Sie eine Dokumentenmappe zur Überprüfung in einer Untersuchung mithilfe des Such Tools in Advanced eDiscovery identifizieren.
+ms.custom: seo-marvel-2020
+ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799938"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034349"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Sammeln von Daten für einen Fall in Advanced eDiscovery
 

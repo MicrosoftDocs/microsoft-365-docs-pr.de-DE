@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Hilft bei der Erläuterung der Unterschiede zwischen den Versionen der Nachrichtenverschlüsselung.
-ms.openlocfilehash: 89d145f19591ba59df6983bb8863a8e0cc28fcf3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel werden die Unterschiede zwischen verschiedenen Versionen Office 365 Nachrichtenverschlüsselung erläutert.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626791"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034875"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 

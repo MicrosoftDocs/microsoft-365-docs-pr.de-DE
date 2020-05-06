@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: In diesem Artikel erfahren Sie, wie Sie Benutzer gleichzeitig oder mehrere Benutzer gleichzeitig aus einer CSV-Datei zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618860"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049471"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Benutzer einzeln oder in Massen hinzufügen
 
@@ -118,7 +118,7 @@ Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich 
 Nachdem Sie einen Benutzer hinzugefügt haben, erhalten Sie eine E-Mail-Benachrichtigung vom Microsoft Online Services-Team. Die e-Mail enthält die Benutzer-ID und das Kennwort der Person, damit Sie sich bei Microsoft 365 anmelden können. Sie müssen ihren neuen Benutzer über die Microsoft 365-Anmeldeinformationen informieren. Verwenden Sie hierzu Ihre normale Vorgehensweise für die Übermittlung neuer Kennwörter.
 
 > [!NOTE]
->Wenn Sie Benutzer durch die Migration von e-Mail-Boxen erstellen, müssen Sie Benutzerkonten durch die Zuweisung von Lizenzen aktivieren. Wenn Sie einem Benutzer keine Lizenz zuweisen, wird sein Postfach nach Ablauf einer 30-tägigen Kulanzzeit deaktiviert. Erfahren Sie, wie Sie [Benutzern Lizenzen zuweisen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) unter Verwendung des Microsoft 365 Admin Centers.
+>Wenn Sie Benutzer durch die Migration von e-Mail-Boxen erstellen, müssen Sie Benutzerkonten durch die Zuweisung von Lizenzen aktivieren. Wenn Sie einem Benutzer keine Lizenz zuweisen, wird sein Postfach nach Ablauf einer 30-tägigen Kulanzzeit deaktiviert. Erfahren Sie, wie Sie [Benutzern Lizenzen zuweisen](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) unter Verwendung des Microsoft 365 Admin Centers.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Video: Benutzer im Admin Center hinzufügen und verwalten
 

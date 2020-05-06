@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Hier erfahren Sie, wie Sie Datenverkehr zu einer vorhandenen öffentlichen Website weiterleiten, die außerhalb von Microsoft gehostet wird, wenn Sie Microsoft zum Verwalten von DNS-Einträgen für Ihre benutzerdefinierte Domäne festgelegt haben.
-ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 58b58479a2c880cc0193058abc328cc5feea4af1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629119"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048831"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Aktualisieren von DNS-Einträgen, um die Website beim aktuellen Hostinganbieter zu belassen
 
@@ -64,7 +64,7 @@ Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Web
     
 Führen Sie schließlich die folgenden Schritte aus:
   
-[Aktualisieren Sie die NS-Einträge Ihrer Domäne](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) so, dass Sie auf Microsoft verweist. 
+[Aktualisieren Sie die NS-Einträge Ihrer Domäne](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) so, dass Sie auf Microsoft verweist. 
   
 Wenn die NS-Einträge so aktualisiert wurden, dass Sie auf Microsoft verweist, ist Ihre Domäne eingerichtet. E-Mail-Nachrichten werden an Microsoft weitergeleitet, und der Datenverkehr zu Ihrer Website-Adresse wird weiterhin an Ihren aktuellen Website-Host weitergeleitet.
  

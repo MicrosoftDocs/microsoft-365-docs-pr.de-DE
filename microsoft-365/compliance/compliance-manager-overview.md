@@ -10,16 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - MOE150
 - MET150
-description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über den Microsoft Compliance-Manager, ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust Portal.
+ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632990"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046283"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -42,17 +45,15 @@ Mit dem Compliance-Manager kann Ihre Organisation:
 - Stellen Sie ein sicheres Repository bereit, mit dem Sie Beweise und andere Artefakte im Zusammenhang mit ihren Compliance-Aktivitäten hochladen und verwalten können.
 - Erstellen Sie ausführliche Microsoft Excel Berichte, in denen Compliance-Aktivitäten dokumentiert werden, die von Microsoft und Ihrer Organisation für Auditoren, Regulatoren und andere Konformitäts Prüfer ausgeführt wurden.
 
-> [!NOTE]
-> Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Empfehlungen aus dem Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden.
+  
+> [!IMPORTANT]
+> Empfehlungen der Compliancebewertung und vom Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste befinden sich derzeit in der Vorschau und unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="relationship-to-compliance-score"></a>Beziehung zur Konformitätsbewertung
 
 [Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das eine Ansicht auf oberster Ebene in der Compliance-Position Ihrer Organisation bereitstellt. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
 
 Compliance-Manager teilt dasselbe Back-End mit Kompatibilitätsbewertung. Während der öffentlichen Vorschauphase für beide Tools ist Compliance-Manager der Ort, an dem Sie Ihre Bewertungen und Implementierungen von benutzerdefinierten Steuerelementen verwalten. Erfahren Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
-  
-> [!IMPORTANT]
-> Die Compliancebewertung ist kein absolutes Maß für die Einhaltung bestimmter Standards oder Vorschriften durch die Organisation. Sie drückt aus, inwieweit Sie Kontrollmechanismen eingeführt haben, die die Risiken für personenbezogene Daten und die Privatsphäre des Einzelnen verringern können. Kein Dienst kann gewährleisten, dass Sie mit einem Standard oder einer Verordnung konform sind, und der Kompatibilitäts Faktor sollte nicht als Garantie in irgendeiner Weise interpretiert werden.
 
 ## <a name="compliance-manager-components"></a>Compliance-Manager-Komponenten
 

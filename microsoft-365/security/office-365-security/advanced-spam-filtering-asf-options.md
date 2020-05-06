@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: Die ASF-Einstellungen (Advanced Spam Filter) in Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) ermöglichen Administratoren das Identifizieren von Nachrichten, die bestimmte Nachrichteneigenschaften enthalten, die häufig in Spam verwendet werden. Je nach Eigenschaft Kennzeichnen ASF-Erkennungen die Nachricht entweder als Spam oder als Spam mit hoher Vertrauenswürdigkeit.
-ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie mehr über die ASF-Einstellungen (Advanced Spam Filter) in Anti-Spam-Richtlinien, mit denen Administratoren Nachrichten mit bestimmten Nachrichteneigenschaften identifizieren können, die häufig in Spam verwendet werden.
+ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634730"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034134"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Einstellungen für erweiterte Spam Filter (ASF) in Office 365
 
