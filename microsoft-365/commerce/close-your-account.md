@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942853"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045776"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
@@ -40,7 +40,7 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Schritt 2: Abbrechen aller aktiven Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
 
@@ -52,7 +52,7 @@ Wenn Ihre Organisation Active Directory verwendet, die mit Azure AD synchronisie
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Schritt 3: Löschen aller deaktivierten Abonnements
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wenn sich die Liste Abonnements in der **Tabellen** Ansicht befindet, wählen Sie auf der rechten Seite **Karten**aus.
 

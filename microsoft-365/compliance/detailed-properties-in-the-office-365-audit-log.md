@@ -17,13 +17,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Beschreibungen der zusätzlichen Eigenschaften, die in einem Überwachungsprotokolleintrag enthalten sind.
-ms.openlocfilehash: 07f537e660fca01455995832de5f44d515d2cb55
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: Dieser Artikel enthält eine Beschreibung der zusätzlichen Eigenschaften, die beim Exportieren von Ergebnissen für einen Office 365 Überwachungsprotokolleintrag enthalten sind.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 3a82b0d1c651db166ea5a8cb370383d36b6d37e5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799948"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035707"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Detaillierte Eigenschaften im Überwachungsprotokoll
 

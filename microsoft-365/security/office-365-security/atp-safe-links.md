@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,13 +25,13 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Das Feature "sichere Links" bietet eine Zeit-für-Mausklick-Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: 912c2fc0e76ca39ff4d600f53386d65e43946758
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
+ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638560"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045250"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
 
@@ -85,7 +87,7 @@ In der folgenden Tabelle werden einige Beispielszenarien beschrieben, in denen d
 |Jean ist Mitglied einer Gruppe, die Richtlinien für ATP-sichere Links enthält, die URLs in e-Mail-und Office-Dokumenten umfassen. Jean öffnet eine PowerPoint-Präsentation, die von einem Benutzer gesendet wurde, und klickt dann in der Präsentation auf eine URL.  <br/> |Ja. Die definierten Richtlinien für ATP-sichere Links gelten für Jeans Gruppe, Jeans e-Mail und Word-, Excel-, PowerPoint-oder Visio-Dokumente, die Jean öffnet, solange Jean mit Microsoft 365 apps for Enterprise auf Windows-, IOS-oder Android-Geräten angemeldet ist.  <br/> |
 |In der Organisation von Chris haben keine globalen oder Sicherheitsadministratoren noch keine Richtlinien für ATP-sichere Links definiert. Chris erhält eine e-Mail mit einer URL zu einer bösartigen Website. Chris ist nicht bewusst, dass die URL bösartig ist, und klickt auf den Link.  <br/> |Nein. Die Standardrichtlinie, die URLs für alle Benutzer in der Organisation abdeckt, muss definiert werden, damit der Schutz in Kraft ist.  <br/> |
 |In der Organisation von Pat haben keine globalen oder Sicherheitsadministratoren noch keine Richtlinien für ATP-sichere Links definiert oder bearbeitet. Pat öffnet ein Word-Dokument und klickt auf eine URL in der Datei.  <br/> |Nein. Eine Richtlinie, die Office-Dokumente umfasst, muss definiert sein, damit der Schutz vorhanden ist. Weitere Informationen finden Sie unter [Einrichten von Richtlinien für ATP-sichere Links in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|Lees Organisation verfügt über eine Richtlinie für ATP-sichere `https://tailspintoys.com` Links, die als blockierte Website aufgeführt ist. Lee erhält eine e-Mail-Nachricht, die `https://tailspintoys.com/aboutus/trythispage`eine URL zu enthält. Lee klickt auf die URL.  <br/> |Dies hängt davon ab, ob die gesamte Website und alle ihre Unterseiten in der Liste der blockierten URLs enthalten sind. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |
+|Lees Organisation verfügt über eine Richtlinie für ATP-sichere `https://tailspintoys.com` Links, die als blockierte Website aufgeführt ist. Lee erhält eine e-Mail-Nachricht, die `https://tailspintoys.com/aboutus/trythispage`eine URL zu enthält. Lee klickt auf die URL.  <br/> |Dies hängt davon ab, ob die gesamte Website und alle ihre Unterseiten in der Liste der blockierten URLs enthalten sind. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Jamie, Jean es Kollege, sendet eine e-Mail an Jean, ohne zu wissen, dass die e-Mail eine bösartige URL enthält.  <br/> |Dies hängt davon ab, ob Richtlinien für ATP-sichere Links für innerhalb der Organisation gesendete e-Mails definiert sind. Weitere Informationen finden Sie unter [Einrichten von Richtlinien für ATP-sichere Links in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

@@ -16,12 +16,13 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Mit Office 365 erweiterten Nachrichten Verschlüsselungsfunktionen über Office 365-Nachrichtenverschlüsselung (OM) können Sie Ihre e-Mail-Sicherheit erweitern, indem Sie ein Ablaufdatum für e-Mails über eine benutzerdefinierte Marken Vorlage festlegen.
-ms.openlocfilehash: c9b639c016e86c3883191b04d4c7480625745e91
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f555e707cb377033c3bf643785e18b9203be0560
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626903"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036058"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Festlegen eines Ablaufdatums für E-Mails, die mit der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
 
@@ -47,7 +48,7 @@ Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den
      New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
      ```
 
-Dabei gilt:
+Dabei gilt Folgendes:
 
 - `Identity`ist der Name der benutzerdefinierten Vorlage.
 

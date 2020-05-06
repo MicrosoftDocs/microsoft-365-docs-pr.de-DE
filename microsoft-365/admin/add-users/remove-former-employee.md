@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617122"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045296"
 ---
 # <a name="remove-a-former-employee"></a>Entfernen eines ehemaligen Mitarbeiters
   
@@ -318,7 +318,7 @@ Wenn Sie die Lizenz entfernen, werden alle Daten des Benutzers noch 30 Tage gesp
 
 
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 
 ::: moniker-end

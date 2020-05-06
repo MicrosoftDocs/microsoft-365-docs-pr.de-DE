@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631313"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049399"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
 
@@ -276,16 +276,16 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
     
 - Um Hunderte oder Tausende von Benutzern zu Gruppen hinzuzufügen, verwenden [Sie das Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
     
-- [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## <a name="articles-about-managing-groups"></a>Artikel zum Verwalten von Gruppen
     
 - [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
     
-- [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](manage-guest-access-in-groups.md)    
     
-- [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): in diesem Artikel werden wichtige Cmdlets vorgestellt und Beispiele bereitgestellt.
+- [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): in diesem Artikel werden wichtige Cmdlets vorgestellt und Beispiele bereitgestellt.
     
 - [Microsoft 365 gruppenbenennungsrichtlinie](groups-naming-policy.md)

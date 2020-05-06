@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement kündigen.
-ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708083"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046204"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -43,7 +43,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, das Sie kündigen möchten, und wählen Sie unter **Einstellungen und Aktionen** die Option **Abonnement kündigen** aus.
 

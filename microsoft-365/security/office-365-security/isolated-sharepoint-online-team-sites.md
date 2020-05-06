@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: 'Zusammenfassung: Informationen zu Verwendungszwecken für isolierte SharePoint Online-Teamwebsites.'
-ms.openlocfilehash: b62223b231c4b6dc0d233d899472800226503323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über isolierte SharePoint Online-Teamwebsites, einschließlich der Anwendungen, Anforderungen und Funktionen, mit denen sie verwendet werden können.
+ms.openlocfilehash: f88be4b16d7f3a65ba624f7bf4c490b0173883c8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634110"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036704"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolierte SharePoint Online-Teamwebsites
 
