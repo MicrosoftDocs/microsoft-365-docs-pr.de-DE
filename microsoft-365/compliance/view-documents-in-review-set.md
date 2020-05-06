@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Dokumenten in einem Prüfdateisatz
+title: Anzeigen von Dokumenten in einem Überprüfungs Sätze-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,13 +13,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: ''
-ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Wählen Sie, wie Sie Inhalte in Advanced eDiscovery anzeigen, beispielsweise Text, Anmerkungen, konvertierte oder systemeigene Ansichten.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069022"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034287"
 ---
 # <a name="view-documents-in-a-review-set"></a>Anzeigen von Dokumenten in einem Prüfdateisatz
 

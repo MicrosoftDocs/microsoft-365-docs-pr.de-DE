@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall.
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie, wie Sie die Liste der depotverwalter in einem erweiterten eDiscovery-Fall anzeigen, bearbeiten und Massen bearbeiten können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635895"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034177"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall
 
@@ -126,9 +127,9 @@ So veröffentlichen Sie eine Depotstelle:
 
 1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
-2.  Wechseln Sie zur Registerkarte **depotverwalter** .
+2.    Wechseln Sie zur Registerkarte **depotverwalter** .
 
-3.  Klicken Sie auf die **Registerkarte depotverwalter**, und wählen Sie dann die Depotbank aus, die für den Fall freigegeben wird.
+3.    Klicken Sie auf die **Registerkarte depotverwalter**, und wählen Sie dann die Depotbank aus, die für den Fall freigegeben wird.
 
 4. Klicken Sie auf der Seite Flyout auf **Versionsverwalter**.
 

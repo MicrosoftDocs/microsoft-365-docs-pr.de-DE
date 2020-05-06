@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
-description: Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Die nachstehenden Themen und damit verknüpften Unterthemen enthalten Informationen und Konfigurationsverfahren zur Verwaltung von Empfängern und zur Zuweisung von Gruppenberechtigungen an die Administratorrollen.
-ms.openlocfilehash: a56151167bdc2500af461dbcd188cfe635c6d866
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: Informationen zu Konfigurationsverfahren für das Verwalten von e-Mail-Empfängern & zuweisen von Administratorrollengruppen Berechtigungen in Microsoft Exchange Online Protection (EoP).
+ms.openlocfilehash: 4e5ed4d19ec25eeb93da919a0f56c06dc1154d98
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598962"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036161"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>Verwalten von Empfängern und Administratorrollengruppen in EOP
 

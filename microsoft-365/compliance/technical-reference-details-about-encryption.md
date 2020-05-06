@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: Hier finden Sie technische Details zur Verschlüsselung in Office 365.
-ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über die verschiedenen Zertifikate, Technologien und TLS-Verschlüsselungs Pakete, die für die Verschlüsselung in Office 365 verwendet werden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f15f55c4a66d579d547a164633613175f254640b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637209"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034529"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Technische Referenzdetails zur Verschlüsselung
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von MicrosoftTeams (so genannte 1xN-Chats) für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626451"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034572"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer
 
@@ -47,7 +47,7 @@ Wenn ein aktivierter Microsoft Teams-Benutzer über ein lokales Postfach verfüg
   
 Die folgende Abbildung zeigt den Workflow, wie Teams-Chatdaten für lokale Benutzer für die Suche, Vorschau und den Export verfügbar sind.
   
-![Cloudbasierte Speicherung für lokale Benutzer in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Cloudbasierte Speicherung für lokale Benutzer in Microsoft Teams](../media/EHAMShard1.png)
   
 Zusätzlich zu dieser neuen Funktion können Sie die Inhaltssuche weiterhin dazu verwenden, um für lokale Benutzer Teams-Inhalte in der cloudbasierten SharePoint-Website und dem Exchange-Postfach, die mit jedem Microsoft Team und den 1xN-Chatdaten von Teams im Exchange Online-Postfach für cloudbasierte Benutzer verknüpft sind, zu suchen, in der Vorschau anzuzeigen und zu exportieren.
 

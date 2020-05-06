@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Sie können das Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie das Untersuchen eines kompromittierten Kontos zu beheben, herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat, oder zu ermitteln, warum sich ein externer Benutzer erfolgreich bei Ihrer Organisation angemeldet hat.
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie mithilfe des Office 365 Überwachungsprotokoll-Such Tools häufige Supportprobleme für e-Mail-Konten beheben können.
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636383"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034211"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 
@@ -236,6 +238,6 @@ Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Thr
 
     Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, das für Sie freigegeben wurde, aufgerufen, geändert oder heruntergeladen hat.
 
-- Suche nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsprotokoll **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Use Sharing Auditing in the Audit Log](use-sharing-auditing.md).
+- Suche nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsprotokoll **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md).
 
 - Exportieren Sie die Überwachungsprotokoll-Suchergebnisse, die Datensätze enthalten, die für Ihre Untersuchung relevant sind, damit Sie Excel für die Suche nach anderen Aktivitäten im Zusammenhang mit dem externen Benutzer verwenden können. Weitere Informationen finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md).

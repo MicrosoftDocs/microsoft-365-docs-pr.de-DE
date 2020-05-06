@@ -1,5 +1,5 @@
 ---
-title: Identitätsüberwachung und-Berichterstellung im Microsoft 365 Security Center
+title: Identitätsüberwachung und-Berichterstellung-Sicherheitscenter
 description: In diesem Artikel wird beschrieben, wie Sie die Benutzer in Ihrer Organisation überwachen und verdächtige oder riskante Verhaltensweisen im Auge behalten können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Identität, Benutzer
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 2a84cc9c275db1579dfab5050672faf2463698e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e884e6fc67670f25e48747324c15b158cc5c284
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084969"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034034"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitätsüberwachung und-Berichterstellung im Microsoft 365 Security Center
 

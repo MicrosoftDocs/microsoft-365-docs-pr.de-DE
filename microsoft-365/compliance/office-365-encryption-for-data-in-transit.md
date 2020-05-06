@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Eine kurze Erläuterung der Art und Weise, wie Microsoft Daten während der Übertragung in ihren Rechenzentren verschlüsselt.
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: In diesem Artikel finden Sie eine kurze Erläuterung, wie Microsoft 365-Kundendaten während der Übertragung verschlüsselt.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943304"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033603"
 ---
 # <a name="encryption-for-data-in-transit"></a>Verschlüsselung von Daten während der Übertragung
 

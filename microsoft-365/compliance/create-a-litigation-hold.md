@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Beweissicherungsverfahrens
+title: Erstellen einer Aufbewahrung für juristische Zwecke
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Hier erfahren Sie, wie Sie ein Postfach auf das Beweissicherungsverfahren setzen und während einer Untersuchung alle Postfachinhalte beibehalten.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077727"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035817"
 ---
-# <a name="create-a-litigation-hold"></a>Erstellen eines Beweissicherungsverfahrens
+# <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
 Sie können ein Postfach auf das Beweissicherungsverfahren setzen, um alle Postfachinhalte einschließlich der gelöschten Elemente und der ursprünglichen Versionen geänderter Elemente beizubehalten. Wenn Sie ein Benutzerpostfach auf das Beweissicherungsverfahren setzen, wird der Inhalt im Archivpostfach des Benutzers (sofern aktiviert) ebenfalls beibehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Aufbewahrungsdauer angeben (auch als *zeitbasierter Haltestatus*bezeichnet), sodass gelöschte und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte auf unbestimmte Zeit beibehalten (als *endlos Sperre*bezeichnet) oder bis das Beweissicherungsverfahren entfernt wird. Wenn Sie einen Zeitraum für die Aufbewahrungsdauer angeben, wird er ab dem Datum berechnet, an dem eine Nachricht empfangen oder ein Postfachelement erstellt wird. 
   
@@ -33,7 +35,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     

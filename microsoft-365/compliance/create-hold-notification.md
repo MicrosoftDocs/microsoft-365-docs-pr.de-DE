@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Verwenden Sie die Registerkarte Kommunikationen in einem erweiterten eDiscovery-Fall, um den Benachrichtigungs Workflow für depotverwalter zu verwalten.
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: Verwenden Sie das Kommunikationstool in einem erweiterten eDiscovery-Fall zum Senden, sammeln und Nachverfolgen von Benachrichtigungen über rechtliche Aufbewahrungsfristen.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280233"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035787"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen eines rechtlichen Aufbewahrungs Vermerks
 

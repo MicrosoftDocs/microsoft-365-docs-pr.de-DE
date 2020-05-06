@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 9eef3b38ceef7efc42e1f66c45069f51a0a95d45
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie, wie Sie das nicht Office 365 Inhalts Importfeature verwenden können, um nicht Office 365 Dokumente in einer Datenermittlung in Beweise hochzuladen.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632630"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034413"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Laden von nicht von Microsoft 365 Daten in Beweise
 
 Nicht alle Dokumente, die Sie möglicherweise in einer Datenuntersuchung analysieren müssen, befinden sich in Microsoft 365. Mit der nicht-Microsoft 365-Funktion zum Importieren von Inhalten können Sie Dokumente, die nicht in Microsoft 365 Leben, in Beweise hochladen, damit Sie in einer Datenuntersuchung analysiert werden können.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Wenn Sie das Feature "nicht-Microsoft 365 hochladen" wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
 

@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren, einschließlich Einblicke, Berichte und Widgets.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630467"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034146"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 

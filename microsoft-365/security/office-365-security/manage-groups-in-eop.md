@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Sie können Exchange Online Protection (EOP) zur Erstellung E-Mail-aktivierter Gruppen für eine Exchange-Organisation verwenden. Sie können EOP auch verwenden, um Gruppeneigenschaften zu definieren oder zu aktualisieren, über die Mitgliedschaften, E-Mail-Adressen und andere Aspekte von Gruppen festgelegt werden.
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie e-Mail-aktivierte Gruppen für eine Exchange-Organisation in Exchange Online Protection (EoP) erstellen und verwalten.
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082892"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034402"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -55,7 +57,7 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
 
 1. Navigieren Sie in der EAC zu **Empfänger** \> **Gruppen**.
 
-2. Klicken **** ![Sie auf neues](../../media/ITPro-EAC-AddIcon.gif)Symbol hinzufügen, und klicken Sie dann je nach Ihren Anforderungen auf **Verteilergruppe** oder **Sicherheitsgruppe**.
+2. Klicken **New** ![Sie auf neues](../../media/ITPro-EAC-AddIcon.gif)Symbol hinzufügen, und klicken Sie dann je nach Ihren Anforderungen auf **Verteilergruppe** oder **Sicherheitsgruppe**.
 
 3. Konfigurieren Sie auf der Seite **neue Verteilergruppe** oder **neue Sicherheitsgruppe** die folgenden Einstellungen:
 
@@ -82,9 +84,9 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
 
 2. Führen Sie einen der folgenden Schritte aus:
 
-   - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Gruppe, die Sie anzeigen oder ändern möchten, und **** ![klicken Sie dann](../../media/ITPro-EAC-EditIcon.gif)auf Bearbeitungssymbol bearbeiten. Sie können allgemeine Einstellungen aktualisieren, Gruppenbesitzer hinzufügen oder entfernen sowie Gruppenmitglieder bei Bedarf hinzufügen oder entfernen.
+   - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Gruppe, die Sie anzeigen oder ändern möchten, und **Edit** ![klicken Sie dann](../../media/ITPro-EAC-EditIcon.gif)auf Bearbeitungssymbol bearbeiten. Sie können allgemeine Einstellungen aktualisieren, Gruppenbesitzer hinzufügen oder entfernen sowie Gruppenmitglieder bei Bedarf hinzufügen oder entfernen.
 
-   - So entfernen Sie eine Gruppe: Wählen Sie die Gruppe **** ![aus, und](../../media/ITPro-EAC-RemoveIcon.gif)klicken Sie auf entfernen-Symbol entfernen.
+   - So entfernen Sie eine Gruppe: Wählen Sie die Gruppe **Remove** ![aus, und](../../media/ITPro-EAC-RemoveIcon.gif)klicken Sie auf entfernen-Symbol entfernen.
 
 3. Wenn Sie die Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 

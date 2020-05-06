@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie Sie eine neue Untersuchung in Data Investigations (Preview) im Microsoft 365 Compliance Center erstellen, konfigurieren und speichern.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077467"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035777"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 
 1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im Compliance Center auf **Daten Untersuchungen**.
  
