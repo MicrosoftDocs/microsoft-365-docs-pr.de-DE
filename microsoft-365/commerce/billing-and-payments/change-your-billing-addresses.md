@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632719"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048025"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
@@ -121,7 +121,7 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement, das Sie ändern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
 
@@ -170,6 +170,8 @@ Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an 
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändern der alternativen E-Mail-Adresse für einen anderen Administrator
 
 Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren oder Rechnungsadministratoren in Ihrer Organisation ändern.
+
+::: moniker range="o365-worldwide"
   
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
 

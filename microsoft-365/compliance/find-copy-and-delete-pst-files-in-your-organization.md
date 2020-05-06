@@ -1,5 +1,5 @@
 ---
-title: Verwenden des PST-Sammlungs Tools zum Suchen, kopieren und Löschen von PST-Dateien in Ihrer Organisation
+title: Verwenden des PST-Sammlungstools zum Suchen, Kopieren und Löschen von PST-Dateien
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Verwenden Sie das Microsoft PST-Sammlungs Tool, um das Netzwerk Ihrer Organisation zu durchsuchen, um eine Bestandsaufnahme der PST-Dateien zu erhalten, die in Ihrer Organisation verstreut sind. Nachdem Sie PST-Dateien gefunden haben, können Sie das PST-Sammlungs Tool verwenden, um Sie an einem zentralen Speicherort zu kopieren, damit Sie Sie in Office 365 importieren können.
-ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942198"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033809"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Verwenden des PST-Sammlungs Tools zum Suchen, kopieren und Löschen von PST-Dateien in Ihrer Organisation
 
@@ -47,7 +48,7 @@ Hier finden Sie eine kurze Übersicht über den Prozess der Verwendung des PST-S
     
 5. **[Schritt 5: Löschen der in Ihrem Netzwerk gefundenen PST](#step-5-delete-the-pst-files-found-on-your-network)** -Dateien – nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Online Postfächer importiert wurden, können Sie das PST-Sammlungs Tool verwenden, um die PST-Dateien von den ursprünglichen Speicherorten zu löschen, an denen Sie in Schritt 1 gefunden wurden. 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Führen Sie die folgenden Schritte aus, um das PST-Sammlungs Tool auf Ihren lokalen Computer herunterzuladen. 
     

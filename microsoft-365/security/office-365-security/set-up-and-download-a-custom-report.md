@@ -1,5 +1,5 @@
 ---
-title: Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security &amp; Compliance Center
+title: Einrichten & herunterladen eines benutzerdefinierten Berichts – Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,12 +16,13 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie einen Bericht mit einem benutzerdefinierten Datumsbereich und Filtern im Security &amp; Compliance Center einrichten und herunterladen.
-ms.openlocfilehash: 8807928141704339913e3a30c7804aad5e018d4a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f2539136a44cef5a17ce7c7cdc85ad9961877a2d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638368"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035344"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security &amp; Compliance Center
 

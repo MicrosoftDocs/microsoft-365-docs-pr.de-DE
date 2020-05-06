@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Erfahren Sie, wie Sie Ihr Testabonnement für einen weiteren Zeitraum von 30 Tagen verlängern.
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634896"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045764"
 ---
 # <a name="extend-your-trial"></a>Verlängern Ihrer Testversion
 
@@ -34,10 +34,9 @@ Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem
 
 ::: moniker range="o365-worldwide"
 
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
-
-2. Suchen Sie auf der Seite **Produkte & Dienste** nach dem Testabonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Testversion verlängern**aus.
+2. Suchen Sie auf der Seite **Ihre Produkte** nach dem Testabonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Testversion verlängern**aus.
 
 3. Überprüfen Sie die Erweiterungsinformationen, und ändern Sie gegebenenfalls Ihre Zahlungsmethode. Wenn Sie fertig sind, wählen Sie **Testversion verlängern**aus.
 
@@ -45,9 +44,7 @@ Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem
 
 ::: moniker range="o365-germany"
 
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
 
 2. Wählen Sie auf der Seite **Abonnements** das Testabonnement aus, das Sie erweitern möchten, und wählen Sie dann unter Ablaufdatum die Option **Testversion verlängern**aus.
 

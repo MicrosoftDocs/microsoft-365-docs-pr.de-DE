@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Microsoft 365-Postfach gespeichert werden können. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, eDiscovery-Haltestatus und Microsoft 365-Aufbewahrungsrichtlinien. Sie können auch ermitteln, ob ein Benutzer von einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 0f16b027f5c97871b490ce028a4c0b9e2d5e7f80
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 232173b82033f7372ef54411a04f3ee891a42bbb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634167"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44047999"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -200,7 +200,7 @@ Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie je nach der Ei
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder
+Oder:
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -214,7 +214,7 @@ Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie einen 
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-Oder
+Oder:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -235,7 +235,7 @@ Beachten Sie beim Verwalten eines Postfachs bei Verzögerung die folgenden Punkt
 
 Nachdem Sie die auf ein Postfach angewendeten Haltestatus identifiziert haben, können Sie Aufgaben wie das Ändern der Aufbewahrungsdauer, das vorübergehende oder permanente Entfernen des Haltestatus oder das Ausschließen eines inaktiven Postfachs aus einer Microsoft 365-Aufbewahrungsrichtlinie ausführen. Weitere Informationen zum Durchführen von Aufgaben im Zusammenhang mit Holds finden Sie in einem der folgenden Themen:
 
-- Führen Sie das>-Befehl für das [Benutzerpostfach "festlegen-RetentionCompliancePolicy-AddExchangeLocationException \<](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps) " in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der *ExchangeLocation* Wert für die `All`ExchangeLocation-Eigenschaft gleich ist.
+- Führen Sie das>-Befehl für das [Benutzerpostfach "festlegen-RetentionCompliancePolicy-AddExchangeLocationException \<](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) " in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der *ExchangeLocation* Wert für die `All`ExchangeLocation-Eigenschaft gleich ist.
 
 - Führen Sie die [ \<ExcludeFromOrgHolds Hold-GUID ohne Präfix oder Suffix>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) Befehl in Exchange Online PowerShell aus, um ein inaktives Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen.
 

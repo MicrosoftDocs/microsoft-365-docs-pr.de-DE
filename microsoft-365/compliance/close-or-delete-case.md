@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: " "
-ms.openlocfilehash: 15b6327809b3557c4d0d90b6c10dc5568ba47f43
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Erfahren Sie, was geschieht, wenn ein Ermittlungs-oder Rechtsfall, der von einem eDiscovery-Fall unterstützt wird, geschlossen oder gelöscht wird.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: f91755e6d2aeba89e795a623cd1268af0a53e675
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595872"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035637"
 ---
 # <a name="close-or-delete-a-case"></a>Schließen oder Löschen eines Falls
 
@@ -31,7 +32,7 @@ Wenn der von einem eDiscovery-Fall unterstützte rechtliche Fall oder die Unters
 
 - Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere haltebereiche an einem Inhaltsspeicherort platziert werden (beispielsweise ein Beweissicherungsverfahren. eine Erhaltungs Richtlinie oder ein Haltestatus aus einem anderen eDiscovery-Fall) diese Aufbewahrungen werden weiterhin beibehalten.
 
-- Der Fall wird weiterhin auf der Seite "eDiscovery" im Security #a0 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
+- Der Fall wird weiterhin auf der Seite "eDiscovery" im Security & Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
 
 - Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass die haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
 

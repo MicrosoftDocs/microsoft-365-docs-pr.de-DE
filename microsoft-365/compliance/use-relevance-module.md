@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie das Modul "Relevanz" Daten im Hinblick auf eine Beschreibung des Workflows für Relevanz und Schulungs Schritte in Daten Untersuchungen (Preview) analysiert.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080612"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034487"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Verwenden des Moduls "Relevanz" zum Analysieren von Daten in Evidence
 
@@ -121,7 +122,7 @@ Auf der Registerkarte **relevanzstatus \> ** werden mit den folgenden nächsten 
     
   - Implikation: an dieser Position ist keine Relevanz-Schulung erforderlich.
     
-Obwohl Daten Untersuchungen Sie durch den Prozess führen, mit empfohlenen nächsten Schritten in verschiedenen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für den jeweiligen Fall, das Problem oder Dokument Überprüfungsprozess. 
+Obwohl Daten Untersuchungen Sie durch den Prozess führen, mit empfohlenen nächsten Schritten in verschiedenen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für Ihren individuellen Fall, das Problem oder den Dokument Überprüfungsprozess relevant sein können. 
   
 Es ist möglich, Daten Untersuchungen im nächsten Schritt zur Verarbeitung von Optionen zu akzeptieren oder außer Kraft zu setzen. Wenn Sie einen anderen Schritt als den empfohlenen nächsten Schritt durchführen möchten, klicken Sie auf den **nächsten Schritt** , der in der erweiterten Problemanzeige im Dialogfeld aufgeführt ist, klicken Sie neben dem nächsten Schritt auf die Schaltfläche **ändern** , und wählen Sie eine andere Option für nächsten Schritt aus. 
   

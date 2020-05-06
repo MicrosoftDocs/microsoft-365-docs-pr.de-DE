@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Names.co.uk für Microsoft einrichten.
-ms.openlocfilehash: 91c328877d583f415ffd2b8312ff1dc899a05bcc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939167"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048939"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Erstellen von DNS-Einträgen bei Names.co.uk für Microsoft
 
@@ -120,7 +120,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Hostname**|**Priority**|**Ergebnis**|
     |:-----|:-----|:-----|
-    |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto abrufen.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto abrufen.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   

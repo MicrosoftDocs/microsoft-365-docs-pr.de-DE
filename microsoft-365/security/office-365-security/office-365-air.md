@@ -1,5 +1,5 @@
 ---
-title: Automatische Untersuchung und Reaktion (Air)
+title: Automatische Untersuchung und Reaktion (Air) – erste Schritte
 keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634544"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033950"
 ---
-# <a name="automated-investigation-and-response-air"></a>Automatische Untersuchung und Reaktion (Air)
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
 Der Plan 2 von [Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) enthält leistungsstarke Funktionen für die automatische Untersuchung und Reaktion (Air), mit denen Sie die Zeit und den Aufwand Ihres Sicherheits Betriebs in Ihrem Team sparen können. Office 365 Wenn Warnungen ausgelöst werden, liegt es an Ihrem Sicherheits Betriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Einhalten des Umfangs eingehender Warnungen kann überwältigend sein. Die Automatisierung einiger dieser Informationen kann helfen. Mit Air kann sich Ihr Sicherheits Betriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne die ausgelösten Warnungen aus den Augen zu verlieren.
 
@@ -52,7 +52,7 @@ Auf einer hohen Ebene wird eine Warnung ausgelöst, und ein Sicherheits Textbuch
     Wenn ausstehende Korrekturaktionen genehmigt (oder abgelehnt) werden, wird die automatische Untersuchung abgeschlossen.
 
 > [!NOTE]
-> In Office 365 ATP werden keine Korrekturaktionen automatisch durchgeführt. Korrekturaktionen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. 
+> In Office 365 ATP werden keine Korrekturaktionen automatisch durchgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. 
 
 Während und nach einem automatisierten Ermittlungsprozess kann Ihr Sicherheitsteam folgende Aufgaben ausführen:
 
@@ -89,7 +89,7 @@ Microsoft 365 bietet zahlreiche integrierte Warnungsrichtlinien, die die Identif
 
 Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden Tabelle beschrieben werden: 
 
-|Aufgabe |Erforderliche Rolle (n) |
+|Vorgang |Erforderliche Rolle (n) |
 |--|--|
 |So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
 |So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)

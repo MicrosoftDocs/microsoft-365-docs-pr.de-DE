@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Häufig gestellte Fragen und Antworten für Administratoren zum Schutz vor Spam in Exchange Online und eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Dieses Thema enthält FAQs & Antworten zum Schutz vor Spam. Antworten gelten für Kunden von Microsoft Exchange Online & Exchange Online Protection (EoP).
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636058"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033738"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -133,7 +135,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
   Bei SPF-Einträgen handelt es sich um einen Mechanismus, mit dem überprüft wird, ob von einer Domäne gesendete E-Mails wirklich von dieser Domäne stammen und kein Spoofing vorliegt. Weitere Informationen zu SPF-Einträgen finden Sie unter den folgenden Links:
 
-  [Einrichten von SPF zur Verhinderung von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Einrichten von SPF zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

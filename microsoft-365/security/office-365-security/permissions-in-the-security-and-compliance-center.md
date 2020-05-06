@@ -1,5 +1,5 @@
 ---
-title: Berechtigungen im Security & Compliance Center
+title: Berechtigungen – Microsoft 365 Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,13 +16,14 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-description: Administratoren können sich über die Berechtigungen informieren, die im Security & Compliance Center zur Verfügung stehen.
-ms.openlocfilehash: 8fd288aa9a0a409a005c43a1ff685bf29bfef6b3
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+description: Administratoren können sich über die Berechtigungen informieren, die im Microsoft 365 Security & Compliance Center zur Verfügung stehen.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dda0fe4263c6c62e9ac7829c87caf6332e56f809
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930183"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033914"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Berechtigungen im Security & Compliance Center
 

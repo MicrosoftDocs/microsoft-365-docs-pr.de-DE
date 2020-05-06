@@ -13,13 +13,15 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die grundlegende Anti-Phishing-Richtlinie in Exchange Online Protection (EoP) und die Advanced ATP Anti-Phishing Policies in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie den Schutz gegen Phishing in Microsoft 365 einrichten, um Ihre Organisation vor böswilligen Phishing-Angriffen zu schützen.
+ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949381"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035332"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 

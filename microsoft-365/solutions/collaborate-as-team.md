@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Hier erfahren Sie, wie Sie mit Gästen in Microsoft Teams zusammenarbeiten.
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit mit Gästen in Teams erforderlich sind.
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002192"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036007"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -60,17 +61,17 @@ Stellen Sie sicher, dass der Gastzugriff in Microsoft Teams aktiviert ist, und n
 
 ![Screenshot der Teams-Umschaltfläche für den Gastzugriff](../media/teams-guest-access-toggle-on.png)
 
-So legen Sie die Einstellungen für den Gastzugriff für Teams fest
+So legen Sie die Gastzugriffseinstellungen für Teams fest
 
-1. Melden Sie sich beim Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://admin.microsoft.com)an.
-2. Klicken Sie im linken Navigationsbereich auf **Alle anzeigen**.
-3. Klicken Sie unter **Admin Center**auf **Teams**.
-4. Erweitern Sie im Teamadministrator Center im linken Navigationsbereich die Option **organisationsweite Einstellungen** , und klicken Sie dann auf **Gastzugriff**.
-5. Stellen Sie sicher, dass **Gastzugriff in Microsoft Teams zulassen** auf **ein**festgelegt ist.
-6. Nehmen Sie die gewünschten Änderungen an den zusätzlichen Gast Einstellungen vor, und klicken Sie dann auf **Speichern**.
+1. Melden Sie sich beim Microsoft 365 Admin Center an auf [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Klicken Sie in der linken Navigationsleiste auf **Alle anzeigen**.
+3. Klicken Sie unter **Admin Centers** auf **Teams**.
+4. Erweitern Sie im Teams Admin Center **Organisationsweite Einstellungen** in der linken Navigationsleiste und klicken Sie auf **Gastzugriff**.
+5. Stellen Sie sicher, dass **Gastzugriff in Teams zulassen** auf **Ein** ist.
+6. Nehmen Sie alle gewünschten Änderungen an den zusätzlichen Gasteinstellungen vor, und klicken Sie dann auf **Speichern**.
 
 > [!NOTE]
-> Es kann bis zu vierundzwanzig Stunden dauern, bis die Einstellung für die Teams-Gast Aktivität aktiviert wird, nachdem Sie sie aktiviert haben.
+> Es könnte bis zu vierundzwanzig Stunden dauern, bis die Gasteinstellung für Teams aktiv wird, nachdem sie eingeschaltet wurde.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 Gruppen-Gast Einstellungen
 
@@ -127,7 +128,7 @@ So legen Sie die Standard Link Einstellungen für die SharePoint-Organisationseb
 2. Wählen Sie unter **Datei-und Ordner Links**den standardmäßigen Freigabe Link aus, den Sie verwenden möchten.
 3. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-## <a name="create-a-team"></a>Team erstellen
+## <a name="create-a-team"></a>Ein Team erstellen
 
 Der nächste Schritt besteht darin, das Team zu erstellen, das Sie für die Zusammenarbeit mit Gästen verwenden möchten.
 

@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Administratoren können sich über die verfügbaren Optionen in Microsoft 365 und EOP informieren, die eingehende Nachrichten zum Überspringen der Spamfilterung erlauben.
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, wie Administratoren eine Liste sicherer Absender in Microsoft 365 und EOP erstellen können, die eingehende Nachrichten zum Überspringen der Spamfilterung zulässt.
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637676"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036343"
 ---
 # <a name="create-safe-sender-lists"></a>Erstellen von Listen sicherer Absender
 
@@ -135,4 +137,4 @@ Um zu verhindern, dass diese Nachricht gefiltert wird, können Sie die folgenden
 
 - [Verwenden Sie eine e-Mail-Fluss Regel](#recommended-use-mail-flow-rules) mit einer Bedingung, die nach nach `5322.From` richten von blueyonder@News.blueyonderairlines.com sucht ( `5321.MailFrom`Adresse, blueyonder.Airlines@margiestravel.com () oder beides.
 
-Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in Office 365](create-safe-sender-lists-in-office-365.md).
+Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md).

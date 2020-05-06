@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634353"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043296"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -42,7 +42,7 @@ Vorlagen für Insider Risikomanagement sind vordefinierte Richtlinienbedingungen
 
 ### <a name="departing-employee-data-theft"></a>Verabschiedung von Datendiebstahl durch Mitarbeiter
 
-Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatoren, die typischerweise mit dem Datendiebstahl durch abfliegende Mitarbeiter verbunden sind. Diese Richtlinienvorlage priorisiert diese Indikatoren und konzentriert die Erkennung und Warnungen auf diesen Risikobereich. Der Datendiebstahl für abwesende Mitarbeiter kann das Herunterladen von Dateien aus SharePoint Online, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste in der Nähe ihrer Arbeitsplatz Rücktritts Arbeiten umfassen. End dates. In dieser Vorlage werden die Risikoindikatoren für diese Aktivitäten sowie deren Korrelation mit dem Status der Mitarbeitereinstellung priorisiert.
+Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatoren, die typischerweise mit dem Datendiebstahl durch abfliegende Mitarbeiter verbunden sind. Diese Richtlinienvorlage priorisiert diese Indikatoren und konzentriert die Erkennung und Warnungen auf diesen Risikobereich. Datendiebstahl für abwesende Mitarbeiter kann das Herunterladen von Dateien aus SharePoint Online, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste in der Nähe ihrer Arbeits Rücktritts-und Endtermine umfassen. In dieser Vorlage werden die Risikoindikatoren für diese Aktivitäten sowie deren Korrelation mit dem Status der Mitarbeitereinstellung priorisiert.
 
 >[!IMPORTANT]
 >Bei Verwendung dieser Vorlage müssen Sie einen Microsoft 365-HR-Connector für die regelmäßige Einfuhr von Rücktritts-und Kündigungsdatum-Informationen für Mitarbeiter in Ihrer Organisation konfigurieren. Lesen Sie den Abschnitt [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
@@ -60,13 +60,13 @@ Das erkennen und ergreifen von Aktionen zur Vorbeugung gegen beleidigendes und m
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 
-Die Einstellungen für Insider Risiken gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Einstellungen werden mit dem Steuerelement **Einstellungen für Insider Risiken* konfiguriert, das sich oben auf allen Registerkarten für das Insider Risikomanagement befindet. Mit diesen Einstellungen werden Datenschutz, Indikatoren, Überwachungsfenster und intelligente Erkennungen gesteuert.
+Die Einstellungen für Insider Risiken gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Einstellungen werden mit dem Steuerelement " **Insider Risk Settings** " konfiguriert, das sich oben auf allen Registerkarten für das Insider Risikomanagement befindet. Mit diesen Einstellungen werden Datenschutz, Indikatoren, Überwachungsfenster und intelligente Erkennungen gesteuert.
 
 ### <a name="privacy"></a>Datenschutz
 
 Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen ist wichtig und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Insider Risikowarnungen beitragen. Bei Übereinstimmungen mit Insider Risikorichtlinien können Sie eine der folgenden Einstellungen auswählen:
 
-- **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Daten Ermittler und Prüfer sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einer randomisierten psuedonym wie "AnonIS8-988" in allen Bereichen der Insider Risikomanagement-Erfahrung angezeigt. Wenn Sie diese Einstellung auswählen, werden alle Benutzer mit aktuellen und früheren Richtlinien Übereinstimmungen anonymisiert und gilt für alle Richtlinien. Benutzerprofilinformationen in der Warnung zu Insider Risiken und Fall Details sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
+- **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Daten Ermittler und Prüfer sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Insider Risikomanagement-Erfahrung angezeigt. Wenn Sie diese Einstellung auswählen, werden alle Benutzer mit aktuellen und früheren Richtlinien Übereinstimmungen anonymisiert und gilt für alle Richtlinien. Benutzerprofilinformationen in der Warnung zu Insider Risiken und Fall Details sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
 - **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Warnungen und Fälle angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Warnungen und Fälle im Insider Risikomanagement angezeigt.
 
 ### <a name="indicators"></a>Indikatoren
@@ -87,14 +87,14 @@ Mithilfe von Richtlinienzeit Rahmen können Sie vergangene und zukünftige Über
 
 ### <a name="intelligent-detections"></a>Intelligente Erkennungen
 
-Intelligente Erkennungseinstellungen helfen bei der Verarbeitung der Erkennung riskanter Aktivitäten für Warnungen. Unter bestimmten Umständen müssen Sie möglicherweise Dateitypen definieren, die ignoriert werden sollen, oder Sie möchten einen Erkennungs Grad für Dateien erzwingen, um eine minimale Leiste für Warnungen zu definieren. Wenn Sie Richtlinien für anstößige Sprachen verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erweitern oder verringern, um die Menge der gemeldeten Richtlinien Übereinstimmungen zu steuern. Verwenden Sie diese Einstellungen zum Steuern von Dateitypen Ausschlüssen, Grenzwerten für Datei Volumina und der Empfindlichkeit bei der Erkennung anstößiger Sprachen.
+Mithilfe intelligenter Erkennungseinstellungen können Sie die Verarbeitung von Erkennungen riskanter Aktivitäten für Warnungen optimieren. Unter bestimmten Umständen müssen Sie möglicherweise Dateitypen definieren, die ignoriert werden sollen, oder Sie möchten einen Erkennungs Grad für Dateien erzwingen, um eine minimale Leiste für Warnungen zu definieren. Wenn Sie Richtlinien für anstößige Sprachen verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erweitern oder verringern, um die Menge der gemeldeten Richtlinien Übereinstimmungen zu steuern. Verwenden Sie diese Einstellungen zum Steuern von Dateitypen Ausschlüssen, Grenzwerten für Datei Volumina und der Empfindlichkeit bei der Erkennung anstößiger Sprachen.
 
 #### <a name="anomaly-detections"></a>Anomale Erkennungen
 
 Zu den anomalen Erkennungen gehören Einstellungen für Dateitypen Ausschlüsse und Datei Volumenbeschränkungen.
 
 - **Dateitypen Ausschlüsse**: um bestimmte Dateitypen aus allen Richtlinien für die Insider Risikoverwaltung auszuschließen, geben Sie die Dateitypen Erweiterungen durch Kommas getrennt ein. Wenn Sie beispielsweise bestimmte Typen von Musikdateien aus Richtlinien Übereinstimmungen ausschließen möchten, können Sie im Feld **Dateitypen Ausschlüsse** *AAC, MP3, WAV, WMA* eingeben. Dateien mit diesen Erweiterungen würden von allen Insider Risk Management-Richtlinien ignoriert.
-- **Grenzwert für Datei Volumenbegrenzung**: um eine mindestdateimenge zu definieren, bevor Aktivitäts Warnungen in Insider Risikorichtlinien gemeldet werden, geben Sie die Anzahl der Dateien ein. Beispielsweise würden Sie "10" eingeben, wenn Sie keine Insider Risikowarnungen generieren möchten, wenn ein Benutzer 10 Dateien oder weniger herunterlädt, selbst wenn die Richtlinien dies als Anomalie ansehen.
+- **Grenzwert für Datei Volumenbegrenzung**: um eine mindestdateimenge zu definieren, bevor Aktivitäts Warnungen in Insider Risikorichtlinien gemeldet werden, geben Sie die Anzahl der Dateien ein. Beispielsweise würden Sie "10" eingeben, wenn Sie keine Insider Risikowarnungen generieren möchten, wenn ein Benutzer 10 Dateien oder weniger herunterlädt, selbst wenn die Richtlinien diese Aktivität als Anomalie ansehen.
 
 #### <a name="offensive-language-detections"></a>Anstößige Spracherkennungen
 

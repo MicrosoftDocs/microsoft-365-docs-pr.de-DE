@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite nach Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren, damit Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Richten Sie einen Connector zum Importieren von LinkedIn-Daten nach Microsoft 365 ein, damit Sie Compliance-Tools wie rechtliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können.
+ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943214"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043346"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
 
@@ -45,9 +47,9 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
 4. Klicken Sie auf der Seite **mit LinkedIn anmelden** auf **mit LinkedIn anmelden**.
 
-   Die LinkedIn-Anmeldeseite wird angezeigt.
+   Die LinkedIn Anmeldeseite wird angezeigt.
 
-   ![LinkedIn Anmeldeseite](../media/LinkedInSigninPage.png)
+   ![Anmeldeseite für LinkedIn](../media/LinkedInSigninPage.png)
 
 5. Geben Sie auf der Seite LinkedIn anmelden die e-Mail-Adresse (oder Telefonnummer) und das Kennwort für das LinkedIn-Konto ein, das der Unternehmensseite zugeordnet ist, die Sie archivieren möchten, und klicken Sie dann auf **Anmelden**.
 
@@ -57,17 +59,15 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
 6. Wählen Sie die Unternehmensseite aus, von der Sie Elemente archivieren möchten, und klicken Sie dann auf **weiter**.
 
-7. Auf der Seite **Filter festlegen** können Sie einen Filter anwenden, um Elemente anfänglich zu importieren, die ein bestimmtes Alter aufweisen. Wählen Sie ein Alter aus, und klicken Sie dann auf **weiter**.
+7. Klicken Sie auf der Seite Speicherort **auswählen** auf in das Feld, wählen Sie die e-Mail-Adresse eines Microsoft 365-Postfachs aus, in das die LinkedIn Elemente importiert werden sollen, und klicken Sie dann auf **weiter**. Elemente werden in den Ordner Posteingang in diesem Postfach importiert.
 
-8. Klicken Sie auf der Seite Speicherort **auswählen** auf in das Feld, wählen Sie die e-Mail-Adresse eines Microsoft 365-Postfachs aus, in das die LinkedIn Elemente importiert werden sollen, und klicken Sie dann auf **weiter**. Elemente werden in den Ordner Posteingang in diesem Postfach importiert.
+8. Klicken Sie im die **Zustimmung des Administrators bereit**stellen auf **Zustimmung erteilen** , und führen Sie dann die Schritte aus. Sie müssen ein globaler Administrator sein, um die Zustimmung des Office 365-Import Diensts für den Zugriff auf Daten in Ihrer Organisation zu geben.
 
-9. Klicken Sie im die **Zustimmung des Administrators bereit**stellen auf **Zustimmung erteilen** , und führen Sie dann die Schritte aus. Sie müssen ein globaler Administrator sein, um die Zustimmung des Office 365-Import Diensts für den Zugriff auf Daten in Ihrer Organisation zu geben.
-
-10. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
+9. Klicken Sie auf **weiter** , um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup abzuschließen.
 
 Nachdem Sie den Connector erstellt haben, können Sie zur Seite **Daten Konnektoren** zurückkehren, um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen (Wählen Sie bei Bedarf **Aktualisieren** aus, um die Liste der Connectors zu aktualisieren). Der Wert in der Spalte **Status** **wartet auf den Start**. Es dauert bis zu 24 Stunden, bis der erste Importvorgang gestartet wurde. Nachdem der Connector zum ersten Mal ausgeführt und die LinkedIn-Elemente importiert hat, wird der Connector alle 24 Stunden ausgeführt und importiert alle neuen Elemente, die in den vorherigen 24 Stunden auf der Seite "LinkedIn Company" erstellt wurden.
 
-Um weitere Details anzuzeigen, wählen Sie den Konnektor in der Liste auf der Seite **Daten Konnektoren** aus, um die Flyout-Seite anzuzeigen. Unter **Status**gibt der angezeigte Datumsbereich den Altersfilter an, der beim Erstellen des Konnektors ausgewählt wurde. 
+Um weitere Details anzuzeigen, wählen Sie den Konnektor in der Liste auf der Seite **Daten Konnektoren** aus, um die Flyout-Seite anzuzeigen. Unter **Status**gibt der angezeigte Datumsbereich den Altersfilter an, der beim Erstellen des Konnektors ausgewählt wurde.
 
 ## <a name="more-information"></a>Weitere Informationen
 

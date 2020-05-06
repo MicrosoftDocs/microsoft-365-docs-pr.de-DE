@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
-description: Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Daher hat Ihr Unternehmen für Ihre Website möglicherweise eine Dokumentlöschrichtlinie erstellt, nach der z. B. allgemeine Geschäftsdokumente fünf Jahre nach Erstellung gelöscht werden müssen.
-ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie eine Dokument Löschrichtlinie in einer Office 365 Websitesammlung erstellen, löschen und verwalten.
+ms.openlocfilehash: 7a9cbec25349de02da35f0aaf0cc206774a9b59a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079842"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034339"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
@@ -119,7 +121,7 @@ Wenn Ihre Website Inhaltstyprichtlinien verwendet hat und nun diese Meldung ange
 
 Wenn Ihre Website Informationsverwaltungsrichtlinien verwendet hat und nun diese Meldung angezeigt wird, werden diese Richtlinien nicht mehr angewendet. Um die Richtlinien für die Informationsverwaltung wiederherzustellen, können Sie die Dokument Löschungs Richtlinie wie oben beschrieben aus Ihrer Website entfernen, wenn eine Opt-out-Option zur Verfügung steht. Wenn keine Option zum Deaktivieren vorhanden ist, ist die Richtlinie für das Löschen von Dokumenten zwingend erforderlich, und Sie müssen sich an den Compliance Officer in Ihrer Organisation wenden.
   
-- Für eine Liste oder Bibliothek auf der Registerkarte \> **** \> **Bibliothekseinstellungen** \> der Menü Bandbibliothek unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
+- Für eine Liste oder Bibliothek auf der Registerkarte \> **Library** \> **Bibliothekseinstellungen** \> der Menü Bandbibliothek unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
     
     ![Warnung vor der Website, dass Dokument Löschungsrichtlinien verwendet werden](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
