@@ -1,5 +1,5 @@
 ---
-title: 'Melden von Junk-E-Mails und Phishing-Versuchen in Outlook im Web '
+title: E-Mail-Scams melden – Outlook im Internet
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365-Benutzer mit Exchange Online Postfächern können Outlook im Internet (Outlook Web App) verwenden, um Spam-, nicht-Spam-und Phishing-Nachrichten zur Analyse an Microsoft zu übermitteln.
-ms.openlocfilehash: 9fc17abafe219a450e0fb6e45438211ea03fb337
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 32e60aa707bcaea9e35cc3bb8ded3aefb7fe46ab
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921480"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031490"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>Melden von Junk-und Phishing-e-Mails in Outlook im Internet in Office 365
 

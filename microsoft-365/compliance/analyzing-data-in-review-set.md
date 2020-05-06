@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Erfahren Sie mehr über die Tools, die zum Organisieren von Dokumentenmappen bei der Analyse eines erweiterten eDiscovery-falls verfügbar sind.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556783"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033819"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 

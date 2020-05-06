@@ -15,13 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Zusammenfassung: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft 365.'
-ms.openlocfilehash: 1962bea9e3b5382edbd22691cdb7d79219ebe0f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: In diesem Artikel erfahren Sie mehr über Risiken für Office 365 und die Verschlüsselungstechnologien, die für den Schutz verfügbar sind.
+ms.openlocfilehash: 4b13e26e9ab9fbd7091c8c916758ff31c79a4e96
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637229"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031365"
 ---
 # <a name="encryption-risks-and-protections"></a>Verschlüsselungsrisiken und Schutzfunktionen
 
