@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
-description: Verwenden Sie den Massen Such-Editor im Security and Compliance Center in Office 365 oder Microsoft 365, um die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchen schnell zu ändern.
-ms.openlocfilehash: ec1996ade0b2452c00b5b4d912e9d441255bfe1e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Verwenden Sie den Massen Such-Editor im Security and Compliance Center, um schnell die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchen zu ändern.
+ms.openlocfilehash: 2bbe8248a82356a217557469b6639e28607be13e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942948"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035523"
 ---
 # <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhalts suchen
 

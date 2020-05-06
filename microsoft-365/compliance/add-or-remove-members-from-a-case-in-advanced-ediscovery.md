@@ -15,21 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 6991cfaa0cc174d3cee7cc441ab12195719b7056
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Hier erfahren Sie, wie Sie die Mitglieder hinzufügen oder entfernen, die beim Verwalten eines erweiterten eDiscovery-Falls auf einen Fall zugreifen können.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0f54953c77f3350746f3853ba128b2d5c08d4321
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594038"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034659"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Hinzufügen oder Entfernen von Mitgliedern aus einem Fall
 
-Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die Anfrage zugreifen kann. Bevor ein Mitglied jedoch auf einen erweiterten eDiscovery-Fall zugreifen kann (und dann Aufgaben ausführt), müssen Sie den Benutzer der Rollengruppe "eDiscovery-Manager" auf der Seite " **Berechtigungen** " im Security and Compliance Center hinzufügen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security #a0 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die Anfrage zugreifen kann. Bevor ein Mitglied jedoch auf einen erweiterten eDiscovery-Fall zugreifen kann (und dann Aufgaben ausführt), müssen Sie den Benutzer der Rollengruppe "eDiscovery-Manager" auf der Seite " **Berechtigungen** " im Security and Compliance Center hinzufügen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
 1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu dem Fall, dem Sie ein Mitglied hinzufügen möchten.
 
-2. Klicken Sie auf die Registerkarte **Einstellungen** , und klicken Sie dann auf der Kachel **Zugriffs #a0 Berechtigungen** auf **auswählen** .
+2. Klicken Sie auf die Registerkarte **Einstellungen** , und klicken Sie dann auf der Kachel **Zugriffs & Berechtigungen** auf **auswählen** .
 
 3. Klicken Sie auf **Aktualisieren**.
 

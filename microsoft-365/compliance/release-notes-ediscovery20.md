@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dieser Artikel enthält die Anmerkungen zu dieser Version für Advanced eDiscovery.
-ms.openlocfilehash: e51647e56e7fb29d8f67d36941a2847278c1e1c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Dieser Artikel enthält die Versionshinweise zu Advanced eDiscovery, einschließlich bekannter Probleme, behobener Probleme und neuer Features.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 45a4647856fef0186840ec5465bb9250e5d78de4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601642"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034619"
 ---
 # <a name="release-notes-for-advanced-ediscovery"></a>Anmerkungen zur Version für Advanced eDiscovery
 
-Das Public Preview-Programm für Advanced eDiscovery ist die Möglichkeit, frühzeitig Zugriff auf die bevorstehenden Funktionen und Updates zu erhalten. Um frühzeitig Zugriff auf die neuesten Funktionen zu erhalten, erstellen und verwenden Sie einfach einen erweiterten eDiscovery-Fall im Security #a0 Compliance Center. Weitere Informationen finden Sie unter [Create a New Case](create-new-ediscovery-case.md).
+Das Public Preview-Programm für Advanced eDiscovery ist die Möglichkeit, frühzeitig Zugriff auf die bevorstehenden Funktionen und Updates zu erhalten. Um frühzeitig Zugriff auf die neuesten Funktionen zu erhalten, erstellen und verwenden Sie einfach einen erweiterten eDiscovery-Fall im Security & Compliance Center. Weitere Informationen finden Sie unter [Create a New Case](create-new-ediscovery-case.md).
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
@@ -45,9 +46,9 @@ Das Public Preview-Programm für Advanced eDiscovery ist die Möglichkeit, früh
 - DCR: Benachrichtigungen halten
 - DCR: Verwalter in eDiscovery
 
-## <a name="whats-new"></a>Neuigkeiten
+## <a name="whats-new"></a>Neuerungen
 
-- Neu **gestaltete Navigation im Security #a0 Compliance Center** – Advanced eDiscovery hat ein neues Aussehen und Verhalten. Verwenden Sie Advanced eDiscovery, um einen größeren Teil Ihres Fall Workflows zu verwalten.
+- Neu **gestaltete Navigation im Security & Compliance Center** – Advanced eDiscovery hat ein neues Aussehen und Verhalten. Verwenden Sie Advanced eDiscovery, um einen größeren Teil Ihres Fall Workflows zu verwalten.
 
 - **Case Management** – zusätzliche Unterstützung für neue Falltypen. Sie können auch Ihre aktuellen und bevorzugten Fälle auswählen und speichern. Verfolgen und Überwachen von Aktivitäten innerhalb und über mehrere Fälle mithilfe neuer Dashboards.
 

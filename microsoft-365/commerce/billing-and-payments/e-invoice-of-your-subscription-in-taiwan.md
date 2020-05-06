@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Informationen zur Microsoft 365 for Business-e-Rechnung für Taiwan.
-ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632707"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045880"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Grundlegendes zur e-Rechnung für Microsoft 365 for Business (Taiwan)
 
@@ -55,7 +55,7 @@ Zum Zeitpunkt der Kontoerstellung, in **Schritt 1**, willkommen, Let es Get to K
   
 Nachdem Sie Ihr Konto erstellt haben, können Sie Ihre MwSt-ID über Ihr Admin Center aktualisieren, indem Sie die folgenden Schritte ausführen:
   
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
     
 2. Wählen Sie ein Abonnement aus, und wählen Sie dann **Weitere Aktionen**aus.
     

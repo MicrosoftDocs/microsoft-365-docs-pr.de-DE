@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Erfahren Sie mehr über die verschiedenen Arten von Gruppen und deren Verwendung mit den verschiedenen Zusammenarbeitsfeatures von Microsoft 365.
-ms.openlocfilehash: 09dce9a26d22989fecf828bf91c0e8ce9583a589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b5b8030b1f16562007ac2786dca776db6482eecb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628867"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048795"
 ---
 # <a name="email-collaboration"></a>Zusammenarbeit über E-Mail
 
@@ -47,7 +47,7 @@ In dieser Tabelle werden die verschiedenen verfügbaren Optionen für die Zusamm
 |:-----|:-----|
 |Gruppen in Outlook  <br/> |Ein freigegebener Arbeitsbereich, der für alle Anwendungen in Microsoft 365 verwendet werden kann. Er enthält einen freigegebenen Posteingang und Kalender sowie eine OneDrive for Business-Website zum Speichern von Dateien. Benutzer können Gruppen in Outlook direkt aus Ihrer e-Mail oder Ihrem Kalender erstellen, suchen und daran teilnehmen. Neue und vorhandene Benutzer mit einem Exchange Online oder einem Microsoft 365-Abonnement können Gruppen in Outlook verwenden.  <br/> |
 |Freigegebenes Postfach  <br/> |Ein Postfach für ausgewählte Benutzer zum Lesen und Senden von E-Mail-Nachrichten und für die gemeinsame Nutzung eines Kalenders. Freigegebene Postfächer können auch als generische E-Mail-Adresse (z. B. info@contoso.com oder sales@contoso.com) verwendet werden, die Kunden für Fragen an Ihr Unternehmen verwenden können. Wenn im freigegebenen Postfach die Berechtigung "Senden als" aktiviert ist, wird für die über das Postfach gesendeten E-Mails die generische Adresse (z. B. sales@contoso.com) verwendet.  <br/> |
-|Verteilerliste (auch Verteilergruppe genannt)  <br/> |Wird zur gleichzeitigen Verteilung von E-Mails an zwei oder mehr Personen verwendet. Verteilergruppen werden auch als E-Mail-aktivierte Verteilergruppen bezeichnet. Eine Variante der Verteilergruppe, die sogenannte dynamische Verteilergruppe, ist ein E-Mail-aktiviertes Active Directory-Gruppenobjekt, das zum Senden von E-Mails an große und sich kontinuierlich entwickelnde Gruppen von Empfängern verwendet wird. Die genauen Empfänger werden durch Filter und die Angabe bestimmter Bedingungen (z. B. alle Mitglieder in einer bestimmten Region oder alle Vollzeitmitarbeiter) definiert.<br/><br/> Microsoft 365-Gruppen in Outlook bieten eine leistungsstärkere Lösung für die Zusammenarbeit als Verteilergruppen. Weitere Informationen finden Sie unter [Warum sollten Sie Ihre Verteilerlisten auf Gruppen in Outlook aktualisieren](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx) und [Verteilerlisten zu Microsoft 365-Gruppen migrieren](../manage/upgrade-distribution-lists.md).  <br/> |
+|Verteilerliste (auch Verteilergruppe genannt)  <br/> |Wird zur gleichzeitigen Verteilung von E-Mails an zwei oder mehr Personen verwendet. Verteilergruppen werden auch als E-Mail-aktivierte Verteilergruppen bezeichnet. Eine Variante der Verteilergruppe, die sogenannte dynamische Verteilergruppe, ist ein E-Mail-aktiviertes Active Directory-Gruppenobjekt, das zum Senden von E-Mails an große und sich kontinuierlich entwickelnde Gruppen von Empfängern verwendet wird. Die genauen Empfänger werden durch Filter und die Angabe bestimmter Bedingungen (z. B. alle Mitglieder in einer bestimmten Region oder alle Vollzeitmitarbeiter) definiert.<br/><br/> Microsoft 365-Gruppen in Outlook bieten eine leistungsstärkere Lösung für die Zusammenarbeit als Verteilergruppen. Weitere Informationen finden Sie unter [Warum sollten Sie Ihre Verteilerlisten auf Gruppen in Outlook aktualisieren](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188) und [Verteilerlisten zu Microsoft 365-Gruppen migrieren](../manage/upgrade-distribution-lists.md).  <br/> |
 |Öffentlicher Ordner  <br/> |Öffentliche Ordner sind für den gemeinsamen Zugriff konzipiert und bieten eine einfache und effektive Möglichkeit zum Sammeln, organisieren und Freigeben von Informationen für andere Personen in Ihrer Organisation. Öffentliche Ordner organisieren Inhalte in einer tiefen Hierarchie, die einfach zu durchsuchen und in der Outlook-Ordneransicht immer sichtbar ist. Öffentliche Ordner können E-Mail-aktiviert und als Mitglied der Verteilergruppe hinzugefügt werden. E-Mails, die an die Verteilergruppe gesendet werden, werden automatisch dem öffentlichen Ordner zur Archivierung oder späterer Referenz hinzugefügt. Öffentliche Ordner bieten außerdem eine einfache Dokumentfreigabe, wenn Sie nicht über ein SharePoint Online-Abonnement verfügen.  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>Welches Tool soll für die Zusammenarbeit verwendet werden?

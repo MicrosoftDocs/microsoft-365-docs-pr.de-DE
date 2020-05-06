@@ -22,14 +22,14 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919481"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048161"
 ---
-# <a name="domains-faq"></a>Häufig gestellte Fragen (FAQ) zu Domänen
+# <a name="domains-faq"></a>FAQ zu Domänen
 
 [] In diesem Artikel finden Sie Antworten auf häufig gestellte Fragen zu Domänen in Office 365.
 
@@ -366,7 +366,7 @@ Sie können die anfängliche onmicrosoft.de-Domäne auch dann weiterhin verwende
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>Wie kann ich meinen gemeinnützigen oder Bildungsstatus überprüfen?
 
-1. Wählen Sie im [Admin Center](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) die Option **Setup** aus, um den Assistenten zu starten. (Achten Sie darauf, dass Sie sich zuerst bei Office 365 anmelden.) 
+1. Wählen Sie im [Admin Center](https://docs.microsoft.com/microsoft-365/admin/admin-home) die Option **Setup** aus, um den Assistenten zu starten. (Achten Sie darauf, dass Sie sich zuerst bei Office 365 anmelden.) 
     
 2. Um Administrator für Ihre Schule zu werden, wählen Sie die Option **Administrator werden** in Office 365 aus. 
     

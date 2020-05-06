@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011327"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045952"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -176,7 +176,7 @@ Wir kombinieren die Neuigkeiten von November und Dezember, da wir nach dem entz�
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Wechsel von der Kreditkarte zur Rechnungszahlung
 
-Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditkarte zu einer Rechnung zu ändern. Wechseln Sie zu **Abrechnungs** \> **Produkte & Dienste**, wählen Sie ein Abonnement aus, und wählen Sie dann den Link **Bearbeiten** neben der Kreditkartenzahlung aus.
+Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditkarte zu einer Rechnung zu ändern. Wechseln Sie zu **Fakturierung** \> **ihrer Produkte**, wählen Sie ein Abonnement aus, und wählen Sie dann den Link **Bearbeiten** neben der Kreditkartenzahlung aus.
 
 ![Screen Capture: Abrechnungs Abschnitt der Abonnementkarte mit einer Kreditkarte als Zahlungsmethode.](../media/MAC-BillingEditCreditCard.png)
 
@@ -244,7 +244,7 @@ Der Dienststatus wurde auf den neuen Stil aktualisiert, und wenn Sie von einem P
 
 ### <a name="viral-subscriptions"></a>"Virale" Abonnements
 
-Wie Sie wissen, können Benutzer ﻿kostenlose Abonnements für eine Vielzahl von Produkten wie Power BI und App Connect aktivieren. Nun können Sie die "Viral Subscriptions" sehen, die Ihre Benutzer versucht haben. Wechseln Sie zu **Abrechnungs** > **Produkte & Dienste**. Wählen Sie auf der Registerkarte Abonnements den **Kontotyp** Filter aus, um die vom Benutzer erworbenen Abonnements anzuzeigen. Bei Bedarf haben Sie nun die Möglichkeit, diese Abonnements aus Ihrem Konto zu entfernen.
+Wie Sie wissen, können Benutzer ﻿kostenlose Abonnements für eine Vielzahl von Produkten wie Power BI und App Connect aktivieren. Nun können Sie die "Viral Subscriptions" sehen, die Ihre Benutzer versucht haben. Wechseln Sie zu **Abrechnung** > **ihrer Produkte**. Wählen Sie auf der Registerkarte Abonnements den **Kontotyp** Filter aus, um die vom Benutzer erworbenen Abonnements anzuzeigen. Bei Bedarf haben Sie nun die Möglichkeit, diese Abonnements aus Ihrem Konto zu entfernen.
 
 ### <a name="user-templates"></a>Benutzervorlagen
 
@@ -289,7 +289,7 @@ Es wurde ein anderer unserer anfänglichen Setup-Assistenten aktualisiert: Micro
 
 Wir haben einige Updates für Abrechnung und Abonnements in diesem Monat:
 
-- Gerätebasierte Abonnements: Sie können **Microsoft 365 apps for Education (Geräte)** Lizenzen den Geräten im Microsoft 365 Admin Center zuweisen oder aufheben. **Microsoft 365 apps for Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnungs** > **Produkte & Dienste** , um die Lizenz zu suchen und zu erwerben.
+- Gerätebasierte Abonnements: Sie können **Microsoft 365 apps for Education (Geräte)** Lizenzen den Geräten im Microsoft 365 Admin Center zuweisen oder aufheben. **Microsoft 365 apps for Education (Gerät)** ist eine Add-on-Lizenz, mit der Sie einem Gerät eine Lizenz zuweisen können. Wechseln Sie zu **Abrechnung** > **ihrer Produkte** , um die Lizenz zu finden und zu kaufen.
 - Benutzerbasierte Lizenzverwaltung: Wir haben die Art und Weise aktualisiert, in der **Benutzer** > **aktive Benutzer** der neuen Formatvorlage Lizenzen zuweisen. Weitere Informationen finden Sie unter:
   - [Zuweisen von Lizenzen für Benutzer](manage/assign-licenses-to-users.md)
   - [Entfernen der Zuweisung von Benutzerlizenzen](manage/remove-licenses-from-users.md)
@@ -333,7 +333,7 @@ Wir haben einige interessante Änderungen, die Ihnen helfen, Ihre Organisation e
 
 ### <a name="billing--subscriptions"></a>Abrechnungs & Abonnements
 
-- **Software** Produkttyp – Sie können jetzt Softwareprodukte anzeigen, die über einen Anbieter von Cloud-Diensten (Service Provider, CSP) erworben wurden. Um Ihre Downloads und Schlüssel anzuzeigen, wechseln Sie zur Registerkarte **Abrechnungs** > **Produkte & Dienste** > -**Software** .
+- **Software** Produkttyp – Sie können jetzt Softwareprodukte anzeigen, die über einen Anbieter von Cloud-Diensten (Service Provider, CSP) erworben wurden. Um Ihre Downloads und Schlüssel anzuzeigen, wechseln Sie zur Registerkarte **Abrechnungs** > **Your products** > **Software** für Produkte.
 - Sie können moderne Azure-Produkte und-Dienste im Microsoft 365 Admin Center anzeigen, unabhängig davon, ob Sie Sie von Microsoft oder einem Drittanbieter erworben haben. Beispiele für moderne Azure-Produkte enthalten:
   - Azure reservierte virtuelle Instanzen
   - Azure-Support Pläne
@@ -431,7 +431,7 @@ Wir haben einige weitere Änderungen an der **Benutzerverwaltung**vorgenommen, h
 - In diesem Monat gibt es eine Goldgrube an **Abrechnungs** Änderungen...
   - Sie können jetzt die CVV für vorhandene Kreditkarten aktualisieren, ohne Sie löschen und erneut hinzufügen zu müssen. Sie können die CVV aktualisieren, indem Sie auf**Zahlungsmethoden**für **Zahlungen wechseln** > .
     - Wir haben es einfacher gemacht, Ihre **Rechnungen** zu finden und alle Abrechnungsprobleme zu verstehen, die Ihr Konto haben kann. Nun können Sie Ihre Rechnungen im Webbrowser anzeigen, anstatt die PDF herunterladen zu müssen. Wechseln Sie zu **Rechnungen** > **Rechnungen.**
-    - Auf der Seite **Products & Services** aggregieren wir jetzt Ihre Abonnementinformationen, wenn Sie mehrere Abonnements desselben Typs haben.
+    - Auf der Seite **Ihre Produkte** werden jetzt die Abonnementinformationen aggregiert, wenn Sie mehrere Abonnements desselben Typs haben.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>März 2019 – wir haben das Admin Center offiziell veröffentlicht.
 

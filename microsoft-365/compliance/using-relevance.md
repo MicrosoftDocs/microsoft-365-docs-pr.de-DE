@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie das Modul "Relevanz" Daten im Hinblick auf eine Beschreibung des Workflows für Relevanz und der Schulungs Schritte in Advanced eDiscovery analysiert.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4babb0aa7693bc1107cc7594da967bca2d307228
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069157"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034467"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Verwenden des Moduls "Relevanz" zum Analysieren von Daten in Advanced eDiscovery
 
@@ -127,7 +128,7 @@ Auf der Registerkarte **relevanzstatus \> ** enthält Advanced eDiscovery Empfeh
     
   - Implikation: an dieser Position ist keine Relevanz-Schulung erforderlich.
     
-Obwohl Advanced eDiscovery Sie durch den Prozess führt, mit empfohlenen nächsten Schritten in unterschiedlichen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für den jeweiligen Fall, das Problem oder Dokument Überprüfungsprozess. 
+Obwohl Advanced eDiscovery Sie durch den Prozess führt, mit empfohlenen nächsten Schritten in unterschiedlichen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für den jeweiligen Fall, das Problem oder den Dokument Überprüfungsprozess relevant sein können. 
   
 Es ist möglich, erweiterte eDiscovery-Verarbeitungsoptionen für den nächsten Schritt zu akzeptieren oder außer Kraft zu setzen. Wenn Sie einen anderen Schritt als den empfohlenen nächsten Schritt durchführen möchten, klicken Sie auf den **nächsten Schritt** , der in der erweiterten Problemanzeige im Dialogfeld aufgeführt ist, klicken Sie neben dem nächsten Schritt auf die Schaltfläche **ändern** , und wählen Sie eine andere Option für nächsten Schritt aus. 
   

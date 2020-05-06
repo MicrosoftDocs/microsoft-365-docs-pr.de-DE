@@ -12,13 +12,14 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Verwenden Sie diesen Artikel als Referenz für verschiedene Attribute, die Sie in Richtlinien für Informationsbarrieren verwenden können.
-ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Dies ist ein Referenzartikel zu den Azure Active Directory-Benutzerkonto Attributen, die Sie zum Definieren von Informations Sperr Segmenten verwenden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600622"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035051"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
@@ -59,8 +60,8 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |Name der Azure Active Directory-Eigenschaft<br/>(LDAP-Anzeigename)  |Exchange-Eigenschaftsname  |
 |---------|---------|
 |Gemeinsame Dokument       | Gemeinsame Dokument        |
-|Unternehmen     |Unternehmen         |
-|Department     |Department         |
+|Company     |Company         |
+|Abteilung     |Abteilung         |
 |ExtensionAttribute1 |CustomAttribute1  |
 |ExtensionAttribute2 |CustomAttribute2  |
 |ExtensionAttribute3 |CustomAttribute3  |
@@ -88,10 +89,10 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName  |UserPrincipalName  |
-|E-Mail   |WindowsEmailAddress    |
+|UserPrincipalName    |UserPrincipalName    |
+|E-Mail    |WindowsEmailAddress    |
 |Beschreibung    |Beschreibung    |
-|MemberOf   |MemberOfGroup  |
+|MemberOf    |MemberOfGroup    |
 
 ## <a name="related-topics"></a>Verwandte Themen
 

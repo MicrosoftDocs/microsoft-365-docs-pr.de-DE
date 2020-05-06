@@ -1,5 +1,5 @@
 ---
-title: Herunterladen von Exportaufträgen aus einer Datenuntersuchung
+title: Herunterladen von Exportaufträgen für eine Untersuchung
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,12 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installieren und verwenden Sie den Azure Storage Explorer zum Herunterladen von Dokumenten, die aus beweisen in einer Datenuntersuchung exportiert wurden.
-ms.openlocfilehash: 1f528101140a97df0161638be14e503a05b18f2c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: b9f3ee173fd9068f459e10b95fd497b7cf5015fc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074932"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035687"
 ---
 # <a name="download-export-jobs"></a>Herunterladen von Exportaufträgen
 

@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638332"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045236"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -39,7 +39,7 @@ Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e
   
 1. Überprüfen Sie die Voraussetzungen.
     
-2. Überprüfen und bearbeiten Sie die Standardrichtlinie für ATP-sichere Links, die für alle gilt. Beispielsweise können Sie [die Liste der benutzerdefinierten blockierten URLs für ATP-sichere Links einrichten](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Überprüfen und bearbeiten Sie die Standardrichtlinie für ATP-sichere Links, die für alle gilt. Beispielsweise können Sie [die Liste der benutzerdefinierten blockierten URLs für ATP-sichere Links einrichten](set-up-a-custom-blocked-urls-list-atp.md).
     
 3. Hinzufügen oder Bearbeiten von Richtlinien für bestimmte e-Mail-Empfänger, einschließlich [der Einrichtung Ihrer benutzerdefinierten Liste "nicht umschreiben" für ATP-sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -75,7 +75,7 @@ Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, verfü
     
 3. Wählen Sie in den **Richtlinien für den Abschnitt gesamte Organisation** die Option **Standard**aus, und klicken Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten ähnelt einem Bleistift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für den Schutz von sicheren Links zu bearbeiten.](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. Geben Sie im Abschnitt **folgende URLs blockieren** eine oder mehrere URLs an, die verhindern sollen, dass Personen in Ihrer Organisation besucht werden. (Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
+4. Geben Sie im Abschnitt **folgende URLs blockieren** eine oder mehrere URLs an, die verhindern sollen, dass Personen in Ihrer Organisation besucht werden. (Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-atp.md).)
     
 5. Wählen Sie im Abschnitt **Einstellungen für Inhalt außer e-Mail** die Optionen aus, die Sie verwenden möchten. (Es wird empfohlen, alle Optionen auszuwählen.) 
     
@@ -128,7 +128,7 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 
 |Diese Option  |Funktion  |
 |---------|---------|
-| **Blockieren der folgenden URLs** <br/>    | Ermöglicht Ihrer Organisation, eine benutzerdefinierte Liste von URLs zu haben, die automatisch blockiert werden. Wenn Benutzer auf eine URL in dieser Liste klicken, werden Sie zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, in der erklärt wird, warum die URL blockiert ist. Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mit Office 365 ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Blockieren der folgenden URLs** <br/>    | Ermöglicht Ihrer Organisation, eine benutzerdefinierte Liste von URLs zu haben, die automatisch blockiert werden. Wenn Benutzer auf eine URL in dieser Liste klicken, werden Sie zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, in der erklärt wird, warum die URL blockiert ist. Weitere Informationen finden Sie unter [Einrichten einer Liste benutzerdefinierter blockierter URLs mit Office 365 ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-atp.md). |
 | **Microsoft 365-Apps für Unternehmen, Office für IOS und Android** <br/>    | Wenn diese Option ausgewählt ist, der Schutz für ATP-sichere Office 365 Links wird auf URLs in Word-, Excel-und PowerPoint-Dateien unter Windows oder Mac OS, e-Mail-Nachrichten in Outlook, Office-Dokumenten auf IOS-oder Android-Geräten, Visio 2016-Dateien unter Windows und in den Webversionen von Office-Apps geöffneten Dateien (Word, PowerPoint, Excel, Outlook und OneNote) angewendet, voraus |
 | **Nicht nachverfolgen, wenn Benutzer auf ATP-sichere Links klicken** <br/>  | Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word-, Excel-, PowerPoint-, Visio-Dokumenten und Outlook-e-Mail-Nachrichten werden nicht gespeichert.  <br/> |
 |**Lassen Sie nicht zu, dass Benutzer durch ATP-sichere Links zur ursprünglichen URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |

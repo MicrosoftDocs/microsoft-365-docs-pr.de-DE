@@ -1,5 +1,5 @@
 ---
-title: Intelligente Berichte und Einblicke im Security & Compliance Center
+title: Smart Reports, Insights-Microsoft 365 Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: Hier erhalten Sie eine Übersicht über Berichte und Einblicke &amp; in avialable im Security Compliance Center.
-ms.openlocfilehash: 0ce3a0208344e328f4b494ab4d04c517fc2a21a6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security and Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2825aeac685ba4742165ed5e01829e24c9287c44
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637166"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035544"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im &amp; Security Compliance Center
 
@@ -58,7 +59,7 @@ Im Security &amp; Compliance Center steht eine Vielzahl von Berichten zur Verfü
 |**Erweiterte Bedrohungsschutz-und e-Mail-Sicherheitsberichte** <br/> Berichte zu e-Mail-Sicherheit und Bedrohungsschutz (einschließlich Schadsoftware, Spam, Phishing und Spoofing-Berichten)  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> - **Dashboard** <br/> |[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md) <br/> |
 |**Nachrichtenfluss** <br/> Informationen zu gesendeten und empfangenen E-Mail-Nachrichten, neuesten Warnungen, häufigsten Absendern und Empfängern, E-Mail-Weiterleitungsberichten und vieles mehr.  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Nachrichtenfluss** \> - **Dashboard** . <br/> |[Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md)<br/> |
 |**Einhaltung der DSGVO** <br/> Informationen zur dsgvo-Compliance, einschließlich Links zu Datensubjekten, Bezeichnungs &amp; Trends und aktiven geschlossenen Fällen  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Datenschutz** \> - **dsgvo-Dashboard** <br/> |[Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
-|**Überwachungsprotokoll** <br/> Informationen zu Microsoft 365-Aktivitäten, Benutzern, Dateien oder Ordnern und mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Search &amp; Investigation** \> **Audit Log Search** . <br/> |[Durchsuchen des Überwachungsprotokolls im Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
+|**Überwachungsprotokoll** <br/> Informationen über Microsoft 365-Aktivitäten, Benutzer, Dateien oder Ordner und mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Search &amp; Investigation** \> **Audit Log Search** . <br/> |[Durchsuchen des Überwachungsprotokolls im Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Kompatibilitätsberichte** <br/> FedRAMP-Berichte, Governance, Risiko- und Complianceberichte, Berichte über die ISO-Informationssicherheitsverwaltung und SOC-Überwachungs- und Beurteilungsberichte (Service Organization Controls)  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Dienst Assurance** \> - **Konformitätsberichten** . <br/> |[Planen der Sicherheits &amp; Konformität in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
 ## <a name="next-steps"></a>Nächste Schritte

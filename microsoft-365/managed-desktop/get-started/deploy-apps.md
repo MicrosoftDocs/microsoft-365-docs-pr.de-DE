@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302912"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046328"
 ---
 # <a name="deploy-apps-to-devices"></a>Bereitstellen von apps auf Geräten
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 
@@ -38,10 +38,10 @@ In diesem Verfahren wählen Sie aus, welche App-Art Sie hinzufügen möchten, un
 
 Sie können sich bei Microsoft Managed Desktop Portal anmelden oder sich bei InTune anmelden und dann nach Microsoft Managed Desktop suchen. Wir zeigen, dass Sie sich bei Microsoft Managed Desktop Portal anmelden. 
 
-1.  Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an. 
-2.  Wählen Sie unter **Inventar**die Option **apps**aus.
-3.  Wählen Sie in der Arbeitsauslastung von apps die Option **Hinzufügen**aus.
-4.  Wählen Sie unter **app hinzufügen**die Option **Branchen-App** oder **Windows-app (Win32)** aus.
+1.    Melden Sie sich beim [Microsoft Managed Desktop-Verwaltungsportal](https://aka.ms/mmdportal)an. 
+2.    Wählen Sie unter **Inventar**die Option **apps**aus.
+3.    Wählen Sie in der Arbeitsauslastung von apps die Option **Hinzufügen**aus.
+4.    Wählen Sie unter **app hinzufügen**die Option **Branchen-App** oder **Windows-app (Win32)** aus.
     - Wenn Sie die Branchen **-App**ausgewählt haben, finden Sie unter [Hinzufügen einer Windows-Branchen-APP zu Microsoft InTune](https://docs.microsoft.com/intune/lob-apps-windows) Anweisungen zum Hinzufügen und Konfigurieren von Branchen-apps.
     - Wenn Sie **Windows-app (Win32)** ausgewählt haben, finden Sie unter [Win32 App Management](https://docs.microsoft.com/intune/apps-win32-app-management) Anweisungen zum Hinzufügen und Konfigurieren von Windows-apps.
 
@@ -55,11 +55,11 @@ Wenn Sie sich nicht bei Microsoft Store for Business angemeldet haben, können S
 1. Melden Sie sich mit Ihrem Microsoft Store for Business-Administratorkonto bei [Microsoft Store for Business](https://businessstore.microsoft.com) an.
 2. Wählen Sie **für meine Gruppe Shop**aus.
 3. Verwenden Sie die Suche, um die gewünschte APP zu finden, und wählen Sie die APP aus.
-4. Wählen Sie auf den Produkt Details **die Option App abrufen**aus. Microsoft Store fügt die APP den **Produkten #a0 Diensten** für Ihre Organisation hinzu.
+4. Wählen Sie auf den Produkt Details **die Option App abrufen**aus. Mit dem Microsoft Store wird die APP **ihren Produkten** für Ihre Organisation hinzugefügt.
 
 **So erzwingen Sie eine Synchronisierung zwischen InTune und Microsoft Store for Business**
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als InTune-Administrator oder globaler Administrator für Ihren Mandanten an.
-2. Wählen Sie **alle Dienste #a0 InTune**aus. InTune befindet sich im Abschnitt Überwachung + Verwaltung.
+2. Wählen Sie **alle Dienste > InTune**aus. InTune befindet sich im Abschnitt Überwachung + Verwaltung.
 3. Wählen Sie im Bereich InTune die Option **Client apps**aus, und wählen Sie dann **Microsoft Store for Business**aus.
 4. Wählen Sie **aktivieren** aus, um Ihren Microsoft Store for Business-Apps mit InTune zu synchronisieren.
     - Wenn Sie noch nicht angemeldet sind, registrieren und Ihr Microsoft Store for Business-Konto mit InTune verknüpfen
@@ -79,7 +79,7 @@ Wenn Sie sich nicht bei Microsoft Store for Business angemeldet haben, können S
 
 Erstellen Sie für jede APP drei Azure Ad Gruppen. In dieser Tabelle werden die Gruppen beschrieben, die Sie benötigen (verfügbar, erforderlich und Uninstall). 
 
-Zuordnungstyp "App" |   Gruppenverwendung   | Beispiel Azure Ad Name
+Zuordnungstyp "App" |    Gruppenverwendung    | Beispiel Azure Ad Name
 --- | --- | ---
 Available |  Die APP wird über die APP oder Website des Unternehmensportals verfügbar sein. | MMD – *App-Name* – verfügbar
 Erforderlich |  Die APP wird auf Geräten in den ausgewählten Gruppen installiert. | MMD – *App-Name* – erforderlich

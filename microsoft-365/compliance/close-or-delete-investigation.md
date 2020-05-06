@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: f979a111b6c0026d7be4d096203c47060081cc64
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Hier erfahren Sie, wie Sie einen Daten Ermittlungs Fall schließen, während Sie die Informationen und den Nachweis für die zukünftige Verwendung beibehalten.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5a8d1e94f1c87155883d154984942663f6e0c04d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595862"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034369"
 ---
 # <a name="close-or-delete-an-investigation"></a>Schließen oder Löschen einer Untersuchung
 
 ## <a name="close-an-investigation"></a>Schließen einer Untersuchung
 
- Nachdem Sie die Untersuchung abgeschlossen und entsprechende Abhilfemaßnahmen ergriffen haben, möchten Sie möglicherweise die gesammelten Beweise beibehalten, aber den Fall schließen, damit Sie in Zukunft problemlos darauf zurückgreifen können. Nachdem Sie die Untersuchung beendet haben, wird Sie weiterhin auf der Seite Daten Untersuchungen im Security #a0 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten. Zu einem späteren Zeitpunkt können Sie abgeschlossene Untersuchungen erneut öffnen.
+ Nachdem Sie die Untersuchung abgeschlossen und entsprechende Abhilfemaßnahmen ergriffen haben, möchten Sie möglicherweise die gesammelten Beweise beibehalten, aber den Fall schließen, damit Sie in Zukunft problemlos darauf zurückgreifen können. Nachdem Sie die Untersuchung beendet haben, wird Sie weiterhin auf der Seite Daten Untersuchungen im Security & Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten. Zu einem späteren Zeitpunkt können Sie abgeschlossene Untersuchungen erneut öffnen.
 
 So schließen Sie eine Untersuchung:
 

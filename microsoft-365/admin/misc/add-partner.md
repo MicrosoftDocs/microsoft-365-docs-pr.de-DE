@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Hier erfahren Sie, wie Sie zum Zeitpunkt des Kaufs von Microsoft 365 einen Subscription Advisor-Partner als Partner von Record hinzufügen, den Partner ändern oder einen Partner aus einem Abonnement löschen.
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627968"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045284"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -114,7 +114,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
     
 2. Wenn Sie über mehr als ein Abonnement verfügen, wählen Sie das Abonnement aus, das Sie bearbeiten möchten.
   
@@ -161,7 +161,7 @@ So akzeptieren Sie dieses Angebot
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
     
 2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des zu bearbeitenden Abonnements aus.
     
@@ -209,7 +209,7 @@ So akzeptieren Sie dieses Angebot
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1.  Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1.  Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
     
 2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des zu bearbeitenden Abonnements aus.
     
@@ -248,7 +248,7 @@ So akzeptieren Sie dieses Angebot
 
 ::: moniker range="o365-worldwide"
 
-Sie können keine Reseller-Beziehung selbst entfernen.
+Händlerbeziehungen können Sie nicht selbst entfernen.
   
 Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abgeblendet, und Sie müssen Ihren Partner Händler bitten, diese Anweisungen zu befolgen: [Entfernen einer Reseller-Beziehung mit dem Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
 
@@ -256,7 +256,7 @@ Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abge
 
 ::: moniker range="o365-germany"
 
-Sie können keine Reseller-Beziehung selbst entfernen.
+Händlerbeziehungen können Sie nicht selbst entfernen.
   
 Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abgeblendet, und Sie müssen Ihren Partner Händler bitten, diese Anweisungen zu befolgen: [Entfernen einer Reseller-Beziehung mit dem Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
@@ -264,7 +264,7 @@ Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abge
 
 ::: moniker range="o365-21vianet"
 
-Sie können keine Reseller-Beziehung selbst entfernen.
+Händlerbeziehungen können Sie nicht selbst entfernen.
   
 Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abgeblendet, und Sie müssen Ihren Partner Händler bitten, diese Anweisungen zu befolgen: [Entfernen einer Reseller-Beziehung mit dem Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   

@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die von EoP und dem Spamfilter gefiltert werden.
-ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+description: Erfahren Sie, wie EoP und Office 365 Sie mit Spam, Phishing und Schadsoftware schützen, indem Sie oben in e-Mails einen Sicherheitstipp hinzufügen.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77722b564dc73829947593405b04a2086fb800bf
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43809022"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035942"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 

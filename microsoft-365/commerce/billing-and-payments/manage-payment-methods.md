@@ -1,5 +1,5 @@
 ---
-title: Zahlungsmethoden verwalten
+title: Verwalten von Zahlungsmethoden
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894841"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045868"
 ---
-# <a name="manage-payment-methods"></a>Zahlungsmethoden verwalten
+# <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
 Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine vorhandene Zahlungsmethode verwenden oder einen neuen hinzufügen. Sie können eine Kredit-oder Debitkarte oder ein Bankkonto verwenden, um die von Ihnen erworbenen Dinge zu bezahlen. Sie können jedoch nur Zahlungsmethoden verwalten, die Sie hinzufügen.
 
@@ -36,7 +36,7 @@ Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine 
 >
 > Sie müssen eine Zahlungsmethode verwenden, die aus demselben Land wie Ihr Mandant ausgestellt wurde.
 
-## <a name="add-a-payment-method"></a>Hinzufügen einer Zahlungsmethode
+## <a name="add-a-payment-method"></a>Zahlungsmethode hinzufügen
 
 Durch das Hinzufügen einer Zahlungsmethode werden keine Abonnements zugeordnet. Informationen zum Zuweisen eines einzelnen Abonnements zur Zahlungsmethode finden Sie unter [Ändern einer Zahlungsmethode für ein einzelnes Abonnement](#change-a-payment-method-for-a-single-subscription). Informationen zum Ersetzen aller Abonnements, die eine andere Zahlungsmethode mit der neuen Zahlung verwenden, finden Sie unter [Replace a Payment Method](#replace-a-payment-method).
 
@@ -73,7 +73,7 @@ Informationen zum Ändern der Zahlungsmethode für ein einzelnes Abonnement find
 
 Sie können die Zahlungsmethode ändern, die für das bezahlen eines einzelnen Abonnements verwendet wird.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 2. Wählen Sie auf der Registerkarte **Abonnements** das Abonnement aus, für das Sie mit der alternativen Zahlungsmethode bezahlen möchten. 
 3. Wählen Sie unter **Abrechnung**neben der Zahlungsmethode die Option **Bearbeiten**aus.
 4. Wählen Sie neben der vorhandenen Zahlungsmethode die Option **Change**aus.
@@ -108,7 +108,7 @@ Wenn eine Zahlungsmethode an alle Abonnements oder Abrechnungsprofile angehängt
 7. Die neue Zahlungsmethode ist in der Dropdownliste bereits ausgewählt. Wählen Sie **Weiter** aus.
 8. Wählen Sie **Löschen** aus.
 
-## <a name="troubleshoot-payment-methods"></a>Problembehandlung bei Zahlungsmethoden
+## <a name="troubleshoot-payment-methods"></a>Behandlung von Problemen mit Zahlungsmethoden
 
 |**Problem**|**Schritte zur Problembehandlung**|
 |:----------|:-----|
