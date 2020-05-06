@@ -1,5 +1,5 @@
 ---
-title: Funktionen zur Untersuchung und Reaktion auf Bedrohungen in Office 365 Advanced Threat Protection-Plan 2
+title: Threat Investigation &-Antwortfunktionen – Office 365 ATP-Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Microsoft 365 in Ihrem Namen erkannt hat, und suchen Sie nach Bedrohungs Indikatoren.
-ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie mehr über die Funktionen zur Ermittlung und Reaktion von Bedrohungen in Office 365 Advanced Threat Protection-Plan.
+ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634520"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033938"
 ---
 # <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 

@@ -13,15 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: 'Zusammenfassung: Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.'
-ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Entwerfen Sie isolierte SharePoint Online Teamwebsites, einschließlich bestimmen von Berechtigungsstufen, Zuweisen von Berechtigungen für Benutzer mit Zugriffsgruppen und geschachtelten Azure Ad Gruppen.
+ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638512"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034840"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
@@ -46,7 +48,7 @@ Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitg
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|
 |:-----|:-----|
 |\<Websitename> Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename> Besucher  <br/> |Lesen  <br/> |
+|\<Websitename> Besucher  <br/> |Read  <br/> |
 |\<Websitename> Besitzer  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Sie können weitere SharePoint-Gruppen und Berechtigungsstufen erstellen. Allerdings wird empfohlen, die SharePoint-Standardgruppen und die Berechtigungsstufen für die isolierte SharePoint Online-Website zu verwenden.
@@ -86,7 +88,7 @@ Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstrukt
 |**SharePoint-Gruppe**|**Azure AD-basierte Zugriffsgruppe**|**Berechtigungsstufe**|
 |:-----|:-----|:-----|
 |\<Websitename> Mitglieder  <br/> |\<Websitename> Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename> Besucher  <br/> |\<Websitename> Viewer  <br/> |Lesen  <br/> |
+|\<Websitename> Besucher  <br/> |\<Websitename> Viewer  <br/> |Read  <br/> |
 |\<Websitename> Besitzer  <br/> |\<Websitename> Administratoren  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Sie können zwar entweder Microsoft 365-oder Azure Ad-Gruppen als Mitglieder von SharePoint-Gruppen verwenden, es wird jedoch empfohlen, Azure Ad Gruppen zu verwenden. Azure Ad Gruppen, die über AD DS oder Microsoft 365 verwaltet werden, bieten Ihnen mehr Flexibilität bei der Verwendung von geschachtelten Gruppen zum Zuweisen von Berechtigungen.

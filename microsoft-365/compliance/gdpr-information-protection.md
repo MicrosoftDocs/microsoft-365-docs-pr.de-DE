@@ -1,8 +1,7 @@
 ---
-title: >
-  Schutz von Daten
-description: Schutz von Daten für die Datenschutz-Grundverordnung (DSGVO)
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+title: Informationsschutz
+description: Erfahren Sie mehr über die Informationsschutzfunktionen in Microsoft 365 für die DSGVO (EU-Datenschutz-Grundverordnung).
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -17,12 +16,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2b8bfa67a8af8686627e239b06c1025c3e8f3137
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9564445f6b5a92479ba264947dbeaa109db76e14
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557945"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036218"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 

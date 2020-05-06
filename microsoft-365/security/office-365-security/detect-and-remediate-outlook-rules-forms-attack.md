@@ -1,5 +1,5 @@
 ---
-title: Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe
+title: Erkennen und beheben Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen.
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,12 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
-ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637592"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034816"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe
 
@@ -234,9 +235,9 @@ Suchen Sie nach dem Schlüssel EnableUnsafeClientMailRules. Wenn er vorhanden un
 
 Kunden mit lokalen Exchange-Installationen sollten in Betracht gezogen, ältere Versionen von Outlook zu blockieren, für die keine Patches verfügbar sind. Details zu diesem Prozess finden Sie im Artikel [configure Outlook Client Blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sicherer Microsoft 365 wie ein Cyber pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 
-Ihr Microsoft 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können. Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden für die Sicherung Ihres Microsoft 365-Mandanten zu implementieren.
+Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können. Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Microsoft 365-Mandanten.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

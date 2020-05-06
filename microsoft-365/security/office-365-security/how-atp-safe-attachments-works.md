@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Das Feature "sichere Anlagen" bietet eine Zeit-für-Klick-Überprüfung von e-Mail-Anlagen. Verwenden Sie sichere Anlagen, um Ihre Organisation vor böswilligen Dateien zu schützen, die Personen in e-Mails senden oder empfangen.
-ms.openlocfilehash: 14a1b37ce08e0ab63c23515fcf0fb03d99e59cc8
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, wie Sie Ihre Organisation vor bösartigen Dateien mit ATP-Tresoranlagen für Office 365 schützen können.
+ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943759"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036656"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Funktionsweise sicherer Anlagen in ATP
 

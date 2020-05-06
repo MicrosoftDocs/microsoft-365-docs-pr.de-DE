@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Hier erfahren Sie, wie Sie Lizenzen für Ihr Microsoft 365 for Business-Abonnement hinzufügen und entfernen.
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632529"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045224"
 ---
 # <a name="manage-subscription-licenses"></a>Verwalten von Abonnementlizenzen
 
@@ -42,9 +42,9 @@ Mit den folgenden Schritten können Sie Lizenzen aus ihren Abonnements hinzufüg
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
-2. Suchen Sie auf der Seite **Produkte & Dienste** nach dem Abonnement, dem Sie Lizenzen hinzufügen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
+2. Suchen Sie auf der Seite **Ihre Produkte** nach dem Abonnement, dem Sie Lizenzen hinzufügen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
 
     [Was geschieht, wenn der Link zum Hinzufügen/Entfernen von Lizenzen nicht angezeigt wird?](#what-if-i-dont-see-the-addremove-licenses-link)
 

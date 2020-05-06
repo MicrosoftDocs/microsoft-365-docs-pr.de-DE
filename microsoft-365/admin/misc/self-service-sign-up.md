@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Erfahren Sie mehr über die Microsoft 365 Self-Service-Registrierung und verfügbare Self-Service-Programme wie Microsoft Power apps, Microsoft Flow und Dynamics 365 für Financials.
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627800"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045272"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Verwenden der Self-Service-Registrierung in Ihrer Organisation
 
@@ -42,7 +42,7 @@ Im folgenden Beispiel wird beschrieben, wie die Self-Service-Registrierung für 
 
 3. Wir validieren Ihre e-Mail-Adresse, und dann können Sie sofort mit Microsoft 365, Power BI oder anderen Diensten beginnen.
 
-4. Als Geschäfts Administrator sehen Sie, wer sich für ein Abonnement angemeldet hat, indem Sie die Seite **Produkte & Dienste** im Admin Center anzeigen. Auf diese Weise können Sie sehen, wann neue oder nicht erkannte Lizenzen für Dienste in Ihrem Mandanten vorhanden sind. Um zu steuern, ob Benutzer sich für Self-Service-Abonnements anmelden können, verwenden Sie das Cmdlet " [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell" mit dem Parameter " **AllowAdHocSubscriptions** ". Weitere Informationen finden Sie unter [wie kann ich Self-Service-Einstellungen steuern?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. Als Geschäfts Administrator sehen Sie, wer sich für ein Abonnement angemeldet hat, indem Sie die Seite **Ihre Produkte** im Admin Center anzeigen. Auf diese Weise können Sie sehen, wann neue oder nicht erkannte Lizenzen für Dienste in Ihrem Mandanten vorhanden sind. Um zu steuern, ob Benutzer sich für Self-Service-Abonnements anmelden können, verwenden Sie das Cmdlet " [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell" mit dem Parameter " **AllowAdHocSubscriptions** ". Weitere Informationen finden Sie unter [wie kann ich Self-Service-Einstellungen steuern?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>Verfügbare Self-Service-Programme
 
@@ -64,5 +64,5 @@ Im Folgenden werden die aktuell verfügbaren Self-Service-Programme aufgeführt.
 |**Microsoft Volume License Service Center** <br/> |Das Microsoft Volume License Service Center zeigt Lizenzen, die unter Enterprise, SELECT, Education (Campus oder School), Open Value, Open License und ISV Royalty Agreements erworben wurden.  <br/> |[VLSC Schulungen und Ressourcen](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Volumenlizenz Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft Education Edition** <br/> |Durch die Nutzung von Minecraft als Lernplattform können Lehrkräfte jeden Lernenden motivieren und inspirieren, mehr erreichen zu wollen, und eine Leidenschaft zum Lernen erwecken. Treten Sie einer Community von Lehrkräften bei, die lernen, wie sie mithilfe von Minecraft das Potenzial der Lernenden erschließen können.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Laden Sie Videos hoch, und geben Sie sie in der gesamten Organisation frei, um Kommunikation, Teilnahme und Lernerfolge zu verbessern.  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) (in Englisch) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
-|**Power-Automatisierung** <br/> |Power Automation ist ein Produkt, das Sie beim Einrichten von automatisierten Workflows zwischen Ihren bevorzugten apps und Diensten unterstützt, um Dateien zu synchronisieren, Benachrichtigungen zu erhalten, Daten zu sammeln und vieles mehr.  <br/> |[Registrieren und anmelden für Power Automation](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power-Automatisierung](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
+|**Power Automate** <br/> |Power Automation ist ein Produkt, das Sie beim Einrichten von automatisierten Workflows zwischen Ihren bevorzugten apps und Diensten unterstützt, um Dateien zu synchronisieren, Benachrichtigungen zu erhalten, Daten zu sammeln und vieles mehr.  <br/> |[Registrieren und anmelden für Power Automation](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Mit Power Virtual Agents können Teams mühelos leistungsstarke Bots mithilfe einer geführten, nicht-Code-grafischen Oberfläche erstellen, ohne dass Daten Wissenschaftler oder Entwickler benötigt werden. Power Virtual Agents befassen sich mit vielen der wichtigsten Probleme mit dem bot-Gebäude in der Branche heute. Dadurch wird die Lücke zwischen den Experten des Fachbereichs und den Entwicklungsteams, die die Bots erstellen, und der langen Wartezeit zwischen den Teams, die ein Problem erkennen, und dem Aktualisieren des bot zur Lösung eliminiert.  <br/> |[Lizenzierungs-und Zugriffsdetails](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrieren für Power Virtual Agents](https://aka.ms/TryPVA) <br/> |

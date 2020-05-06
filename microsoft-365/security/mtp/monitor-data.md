@@ -1,6 +1,6 @@
 ---
-title: Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
-description: Beschreibt, wie Sie Benutzeraktivitäten nachverfolgen können, die zu nicht autorisierter Datenweitergabe führen könnten.
+title: Daten Überwachungs & Berichterstellung – Sicherheitscenter
+description: Erfahren Sie, wie Sie Benutzeraktivitäten nachverfolgen können, die zu unbefugter Offenlegung von Daten im Microsoft 365 Security Center führen könnten.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Daten
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637092"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034010"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
 

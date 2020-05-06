@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Startseite für den Schutz von Informationen
-ms.openlocfilehash: f5153373d73ec542f2a21561ce32c37368ff02e4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+description: Diese Startseite enthält Links und Informationen zum Schutz von Informationen in Microsoft 365 und Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: bf230c8ca679b36046048b0b349326778a489369
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601672"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031479"
 ---
 # <a name="protect-information"></a>Schützen von Informationen
 

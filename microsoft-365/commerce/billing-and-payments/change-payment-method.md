@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Hier erfahren Sie, wie Sie die Zahlungsmethode für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708155"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045904"
 ---
 # <a name="change-your-payment-method"></a>Ändern der Zahlungsmethode
 
@@ -53,7 +53,7 @@ Wenn Sie von einer Rechnung in eine Kreditkarte oder ein Bankkonto wechseln, wer
 Wenn Sie von Kreditkarte oder Bankkonto zu Rechnung wechseln, wird ein ausstehender Saldo auf Ihre nächste Rechnung übertragen.
   
 > [!NOTE]
-> Wenn Sie per Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten Sie eine e-Mail, die Sie darüber informiert, dass die Zahlung nicht mehr verarbeitet werden konnte. Sie können Ihre Kreditkarteninformationen aktualisieren und die Zahlung sofort über den Link **Ausgleichs Saldo** auf der Seite **Produkte & Dienste** übermitteln. Weitere Informationen finden Sie unter [Was passiert, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> Wenn Sie per Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten Sie eine e-Mail, die Sie darüber informiert, dass die Zahlung nicht mehr verarbeitet werden konnte. Sie können Ihre Kreditkarteninformationen aktualisieren und die Zahlung sofort über den Link **Ausgleichs Saldo** auf der Seite **Ihre Produkte** übermitteln. Weitere Informationen finden Sie unter [Was passiert, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -81,14 +81,14 @@ Wenn Sie von einer *Kreditkarte oder einem Bankkonto zu einer Rechnung*wechseln,
 
 ::: moniker range="o365-worldwide"
 
-## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Umstellen von Zahlung per Rechnung auf Zahlung per Kreditkarte oder Bankkonto
+## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Ändern der Zahlungsmethode von auf Rechnung zu per Kreditkarte oder Bankkonto
 
 > [!TIP]
 > Die folgenden Schritte gelten nur für Einzelabonnements. Wenn Ihre Organisation über mehrere Abonnements verfügt, führen Sie diese Schritte für jedes Abonnement aus, das Sie ändern möchten.
   
-Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder einem Bankkonto wechseln, wird automatisch ein neues Abonnement für Sie erstellt, die Benutzer werden in das neue Abonnement übertragen und Ihr altes Abonnement deaktiviert. Keine Sorge, Ihre Benutzer sehen keine Unterbrechung des Diensts, und alle Ihre Informationen werden über das neue Abonnement zur Verfügung stehen.
+Bei einer Umstellung der Zahlungsmethode von auf Rechnung zu per Kreditkarte oder Bankkonto wird automatisch ein neues Abonnement für Sie erstellt. Verschieben Sie Ihre Benutzer in das neue Abonnement, und deaktivieren Sie dann das alte. Keine Sorge, für die Benutzer ergibt sich hieraus keine Dienstunterbrechung, und auch alle ihre Daten stehen im neuen Abonnement wieder zur Verfügung.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten**aus.
 
@@ -106,7 +106,7 @@ Wenn Sie von der Zahlung per Rechnung zur Zahlung mit einer Kreditkarte oder ein
 
 ::: moniker range="o365-germany"
 
-## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Umstellen von Zahlung per Rechnung auf Zahlung per Kreditkarte oder Bankkonto
+## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Ändern der Zahlungsmethode von auf Rechnung zu per Kreditkarte oder Bankkonto
 
 > [!TIP]
 > Die folgenden Schritte gelten nur für Einzelabonnements. Wenn Ihre Organisation über mehrere Abonnements verfügt, führen Sie diese Schritte für jedes Abonnement aus, das Sie ändern möchten.
@@ -137,22 +137,22 @@ Wenn Sie zur Seite **Abonnements** zurückkehren, stellen Sie fest, dass das alt
 
 ::: moniker range="o365-worldwide"
 
-## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Umstellen von Zahlung per Kreditkarte oder Bankkonto auf Zahlung per Rechnung
+## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung
 
-Sie können die Zahlungs Rechnung nur dann ändern, wenn Ihre Bestellung über einer bestimmten Menge liegt. Wenn Sie die Anforderung nicht erfüllen, wird die Meldung "Ihre Bestellmenge ist nicht groß genug, um sich für Rechnung mit Scheck Draht qualifizieren" angezeigt.
+Sie können die Änderung zu Zahlung auf Rechnung nur dann vornehmen, wenn Ihre Bestellung über einer bestimmten Menge liegt. Wenn die Voraussetzung nicht erfüllt ist, wird die Meldung "Die Auftragsmenge ist nicht ausreichend, um für die Bezahlung per Banküberweisung in Frage zu kommen" angezeigt.
 
-Wenn Ihre Bestellmenge zu hoch ist, ist möglicherweise eine Bonitätsprüfung erforderlich. Wenn dies der Fall ist, sehen Sie die Meldung "nicht berechtigt, zu Rechnung zu wechseln. Ihre Bestellung erfordert eine Bonitätsprüfung. " In diesem Fall ändern Sie die Zahlung per Rechnung manuell. Führen Sie die folgenden Schritte aus, um die manuelle Änderung abzuschließen.
+Wenn Ihre Auftragsmenge zu hoch ist, ist möglicherweise eine Bonitätsprüfung erforderlich. Wenn dies der Fall ist, wird die Meldung "Keine Berechtigung, zur Bezahlung auf Rechnung zu wechseln. Ihre Bestellung erfordert eine Bonitätsprüfung." angezeigt. Ändern Sie in diesem Fall die Zahlungsmethode zu auf Rechnung manuell. Führen Sie die folgenden Schritte aus, um die manuelle Änderung abzuschließen.
 
-1. Wechseln Sie zu <a href="https://Office365.com" target="_blank">Office365.com</a> , und kaufen Sie das gleiche Abonnement wie das, das Sie derzeit haben. Wählen Sie beim Auschecken die Option zur Zahlung per Rechnung aus.
+1. Wechseln Sie zu <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> , und kaufen Sie das gleiche Abonnement wie das, das Sie derzeit haben. Wählen Sie beim Auschecken die Option zur Zahlung per Rechnung aus.
 
     > [!IMPORTANT]
-    > Sie können die Seite **Produkte & Dienste** im Admin Center nicht zum erwerben des Abonnements verwenden. Sie müssen <a href="https://Office365.com" target="_blank">Office365.com</a>verwenden.
+    > Sie können die Seite **Ihre Produkte** im Admin Center nicht verwenden, um das Abonnement zu kaufen. Sie müssen <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>verwenden.
 
 2. Kündigen Sie nach Abschluss des Kaufs das ursprüngliche Abonnement. Ihre Benutzer werden automatisch in das neue Abonnement verschoben.
 
 Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritte aus, um zu Zahlung per Rechnung zu wechseln.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten**aus.
 
@@ -164,7 +164,7 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 
 6. Geben Sie Ihren Namen, Ihre Adresse und Ihre Telefonnummer ein. Sie können auch eine Bestellnummer hinzufügen, die auf der Rechnung angezeigt werden soll.
   
-7. Wenn Sie fertig sind, wählen Sie **Speichern**aus.
+7. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
 8. Stellen Sie sicher, dass die ausgewählte Zahlungsmethode richtig ist, und wählen Sie dann **Speichern**aus.
 
@@ -172,7 +172,7 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 
 ::: moniker range="o365-germany"
 
-## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Umstellen von Zahlung per Kreditkarte oder Bankkonto auf Zahlung per Rechnung
+## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung
 
 > [!NOTE]
 > Die Option zur Zahlung per Rechnung ist nur verfügbar, wenn Ihr Abonnement über einen bestimmten Betrag (je nach Dienststandort) kostenpflichtig ist. Bei größeren Rechnungsbeträgen kann eine Bonitätsprüfung erforderlich werden. Weitere Informationen finden Sie unter [Pay for your Subscription](pay-for-your-subscription.md).
@@ -198,7 +198,7 @@ Wenn keine Bonitätsprüfung erforderlich ist, führen Sie die folgenden Schritt
 
 Sie können jederzeit die folgenden Schritte ausführen, um die Zahlungsmethode zu überprüfen, die für ein Abonnement konfiguriert wurde.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte & Dienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie nach dem Abonnement, das Sie überprüfen möchten. Die Zahlungsmethode, die für das Abonnement konfiguriert ist, wird im Abschnitt **Abrechnung** angezeigt.
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Sie eine Suche erstellen, speichern und ausführen, um für Ihre Untersuchung relevante Daten zu identifizieren, und dann die Ergebnisse zu ihren beweisen hinzufügen.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 29a89c816c658b99b89de7f7a4e912c7b39b613c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632910"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036400"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Suchen nach Daten in einer Untersuchung
 

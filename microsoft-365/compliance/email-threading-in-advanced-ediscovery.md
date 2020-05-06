@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Threading
+title: E-Mail-Threading – eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: ea40acc3c83d5083a68473223f849a9bebbe98ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Bei der Durchführung einer erweiterten eDiscovery-Analyse analysiert e-Mail-Threading eine e-Mail-Unterhaltung und trennt jede Nachricht in verschiedene Kategorien.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: d3c014973996b312e0b51c1d5fae9da808000cf1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074742"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035879"
 ---
 # <a name="email-threading"></a>E-Mail-Threading
 

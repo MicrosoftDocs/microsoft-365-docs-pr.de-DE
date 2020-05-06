@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707631"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046192"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -58,14 +58,14 @@ Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wec
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Schritt 3: Überprüfen Ihres neuen Abonnements und der Lizenzen
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. **Sicherstellen, dass beide Abonnements aufgelistet und aktiv sind** Das Abonnement, aus dem Sie Benutzer verschieben, und das Abonnement, auf das Sie Benutzer verschieben, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Stellen Sie sicher, dass beide Abonnements aktiv sind. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. Stellen **Sie sicher, dass für jeden Benutzer genügend Lizenzen vorhanden sind** . Jeder Benutzer benötigt eine Lizenz, die seinem Abonnement entspricht. Wenn Sie also zehn Benutzer zu Microsoft 365 Business Premium migrieren möchten, müssen Sie sicherstellen, dass zehn Lizenzen verfügbar sind.
 
 4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?**
-   Wechseln Sie zur Seite **Produkte & Dienste** , und [kaufen Sie weitere Lizenzen](../licenses/buy-licenses.md).
+   Wechseln Sie zur Seite **Ihre Produkte** , und [kaufen Sie weitere Lizenzen](../licenses/buy-licenses.md).
 
 > [Was passiert mit den alten Lizenzen?](#what-about-the-old-licenses)
 

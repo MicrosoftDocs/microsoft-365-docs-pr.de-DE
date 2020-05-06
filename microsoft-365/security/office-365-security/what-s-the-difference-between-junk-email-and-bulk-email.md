@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: In diesem Thema wird der Unterschied zwischen Junk-e-Mails (Spam) und Massen-e-Mails sowie die zugehörigen Steuerelemente in Office 365 erläutert.
-ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie mehr über den Unterschied zwischen Junk-& Massen-e-Mails. Erfahren Sie auch mehr über die verschiedenen Optionen, die in Exchange Online & Exchange Online Protection (EoP) verfügbar sind.
+ms.openlocfilehash: 5d9d3b513de64d2a150d9e0a1c94bc5ca746b617
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630833"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036596"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk- und Massen-E-Mails?
 

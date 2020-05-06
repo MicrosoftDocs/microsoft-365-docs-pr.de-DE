@@ -1,5 +1,5 @@
 ---
-title: Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center
+title: Überwachen und Anzeigen von Berichten – Security Center
 description: Beschreibt, wie das Microsoft 365 Security Center einen Überblick über den Schutz und den Sicherheitsstatus bietet.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Status
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5acc122b827a9d715782923d03cef7fd0e0417e4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086984"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033986"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center
 

@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Zeigen Sie eine Tabelle an, in der die Metadatenfelder für Dokumente in einem in Data Investigations (Preview) festgelegten Nachweis aufgeführt sind.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595180"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035697"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Dokumentmetadaten-Felder in Daten Untersuchungen (Vorschau)
 
-In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem in einer Untersuchung in Data Investigations (Preview) festgelegten Evidence-Feld aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Beweissatz ausführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Beweissatz angezeigt werden, und ob das Feld enthalten ist, wenn Dokumente werden exportiert. 
+In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem in einer Untersuchung in Data Investigations (Preview) festgelegten Evidence-Feld aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Evidence-DataSet ausgeführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Beweissatz angezeigt werden, und ob das Feld beim Exportieren von Dokumenten enthalten ist. 
 
 > [!NOTE]
 > Die Werte in Klammern in der Spalte **durchsuchbar in Beweis Sätzen** sind der Name der Eigenschaft, nach der Sie suchen können. Die Werte in Klammern in der Spalte **sichtbar in Datei Metadaten** sind der Name der Eigenschaft, die angezeigt wird, wenn Sie die Datei Metadaten anzeigen.

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: b54fd3219354b0a5ee38480f8e3a591500c0524b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4b5db6afd7ef8428fea9fc0b57a090b22d027216
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623976"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049435"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -70,20 +70,20 @@ Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Sc
 
 ## <a name="admin-center-features-and-settings"></a>Funktionen und Einstellungen des Admin Centers
 
-Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der linken Seite des Admin Centers befinden. Weitere Informationen zu den Administratoraufgaben finden Sie in der [Hilfe für Administratoren](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx).
+Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der linken Seite des Admin Centers befinden. Weitere Informationen zu den Administratoraufgaben finden Sie in der [Hilfe für Administratoren](https://docs.microsoft.com/microsoft-365/admin/admin-home).
   
 |**Menü**|**Zweck**|
 |-----|-----|
 |**Start** <br/> |Dies ist die Startseite im neuen Admin Center. Sie sehen, wo Benutzer, Abrechnungen, Dienststatus und Berichte verwaltet werden.  <br/> |
 |**Users** <br/> |Hier können Sie Benutzer in Ihrer Organisation, beispielsweise Mitarbeiter oder Schüler, erstellen und verwalten. Sie können auch deren Berechtigungsstufe festlegen oder die Kennwörter zurücksetzen.  <br/> |
 |**Gruppen** <br/> |Erstellen und verwalten Sie Gruppen in Ihrer Organisation, beispielsweise eine Microsoft 365-Gruppe, eine Verteilergruppe, eine Sicherheitsgruppe oder ein freigegebenes Postfach. Weitere Informationen zum [Erstellen](../create-groups/create-groups.md) und [Verwalten](../create-groups/manage-groups.md) von Gruppen.  <br/> |
-|**Ressourcen** <br/> |Erstellen und verwalten Sie Ressourcen wie eine SharePoint-Websitesammlung. Weitere Informationen zum [Erstellen von Websitesammlungen](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx).  <br/> |
+|**Ressourcen** <br/> |Erstellen und verwalten Sie Ressourcen wie eine SharePoint-Websitesammlung. Weitere Informationen zum [Erstellen von Websitesammlungen](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |
 |**Abrechnung** <br/> |Sie können Abonnements für Ihre Organisation anzeigen, kaufen oder kündigen. Zeigen Sie ältere Abrechnungen oder die Anzahl der Lizenzen an, die einzelnen Benutzern zugewiesen wurden. Erfahren Sie, wie Sie [Abrechnungen verwalten](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | Sie können vorhandene Serviceanfragen anzeigen oder neue erstellen. Weitere Informationen finden Sie unter [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Hilfe für Administratoren](../contact-support-for-business-products.md). |
 |**Einstellungen** <br/> |Verwalten Sie globale Einstellungen für Apps wie E-Mail, Websites und die Office-Suite. Ändern Sie Ihre Kennwortrichtlinie und das Ablaufdatum. Fügen Sie Domänennamen wie "contoso.com" hinzu, und aktualisieren Sie diese. Ändern Sie Ihr Organisationsprofil und die Veröffentlichungseinstellungen. Und wählen Sie aus, ob Partner auf Ihr Admin Center zugreifen können.  <br/> |
 |**Setup** <br/> |Verwalten Sie vorhandene Domänen, aktivieren und verwalten Sie die mehrstufige Authentifizierung, verwalten Sie den Administratorzugriff, migrieren Sie Benutzerpostfächer zu Office 365, verwalten Sie Featureupdates, und helfen Sie den Benutzern beim Installieren ihrer Office-Apps. |
 |**Berichte** <br/> |Sehen Sie auf einen Blick, wie Ihre Organisation Microsoft 365 mit detaillierten Berichten zur e-Mail-Verwendung, Office-Aktivierungen und vielem mehr verwendet. Hier erfahren Sie, wie Sie die neuen [Aktivitätsberichte](../activity-reports/activity-reports.md)verwenden.<br/> |
-|**Integrität** <br/> |Zeigen Sie den Dienststatus auf einen Blick an. Sie können weitere Einzelheiten und den Dienststatusverlauf anzeigen. Schauen Sie sich [Überprüfen des Dienststatus](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0) an.  <br/> Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](../manage/message-center.md).  <br/> |
+|**Integrität** <br/> |Zeigen Sie den Dienststatus auf einen Blick an. Sie können weitere Einzelheiten und den Dienststatusverlauf anzeigen. Schauen Sie sich [Überprüfen des Dienststatus](https://docs.microsoft.com/office365/enterprise/view-service-health) an.  <br/> Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](../manage/message-center.md).  <br/> |
 |**Admin Center** <br/> |Öffnen Sie separate Admin Center für Exchange, Skype for Business, SharePoint, Yammer und Azure AD. Jedes Admin Center umfasst alle verfügbaren Einstellungen für den jeweiligen Dienst,  <br/> Im Exchange Admin Center werden beispielsweise E-Mail, Kalender, Verteilergruppen usw. eingerichtet und verwaltet. Im SharePoint Admin Center werden Websitesammlungen, Einstellungen der Teamwebsite und OneDrive for Business erstellt und verwaltet. Im Skype for Business Admin Center werden Chatbenachrichtigungen, Dial-In-Konferenzen und Onlineanwesenheit eingerichtet.  <br/> Weitere Informationen zum [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) und zum [SharePoint Admin Center](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Hinweis:** Die verfügbaren Admin Center sind von Ihrem Plan und Ihrer Region abhängig.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Allgemeine Aufgaben im Admin Center
@@ -100,4 +100,4 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

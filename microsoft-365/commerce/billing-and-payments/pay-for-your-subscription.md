@@ -24,12 +24,12 @@ description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Bu
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635016"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045836"
 ---
 # <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
 
@@ -51,7 +51,7 @@ Wenn Sie mit Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten 
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkte und Dienste</a>.
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 
 2. Suchen Sie das Abonnement mit dem ausstehenden Saldo. Wählen Sie im Abschnitt **Abrechnung** neben **Abonnement weist überfällige Zahlung auf** die Option **Saldo ausgleichen** aus.
 

@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 'Die einfachste und gängigste Methode zum Einstieg in DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: In diesem Artikel erfahren Sie, wie Sie DLP-Richtlinien mit einer der in Office 365 enthaltenen Vorlagen erstellen.
+ms.openlocfilehash: be063c8ee8605db94fe3a68f7ca42b7135553f5e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631334"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035717"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
@@ -58,7 +60,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
 3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
     
