@@ -22,6 +22,8 @@
       items:
         - name: Informationen zum Insider-Risikomanagement
           href: insider-risk-management.md
+        - name: Planen des Insider-Risikomanagements
+          href: insider-risk-management-plan.md
         - name: Erste Schritte mit dem Insider-Risikomanagement
           href: insider-risk-management-configure.md
         - name: Erstellen und Verwalten von Insider-Risikorichtlinien
