@@ -15,18 +15,20 @@ search.appverid:
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
-description: Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird. Lesen Sie die aktualisierte Version der Tipps und Vorgehensweisen zu dieser Aufgabe unter Verhindern der Kennzeichnung von falsch positiver E-Mail als Spam mithilfe einer Liste sicherer Adressen oder anderer Techniken.
-ms.openlocfilehash: 7ff5c7d027a4caabaaadc8169d6afab5698a50bb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie mehr über den Exchange Online-oder Exchange Online Protection-Administrator (EoP), wie Sie sicherstellen können, dass eine e-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird.
+ms.openlocfilehash: 4661e695d4bea363de396853ae78c3b31f878243
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893634"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036377"
 ---
-# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="b2d9c-104">Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird</span><span class="sxs-lookup"><span data-stu-id="b2d9c-104">How to help ensure that a message isn't marked as spam</span></span>
+# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="b6aa0-103">Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird</span><span class="sxs-lookup"><span data-stu-id="b6aa0-103">How to help ensure that a message isn't marked as spam</span></span>
 
-<span data-ttu-id="b2d9c-105">Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="b2d9c-105">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="b2d9c-106">Lesen Sie die aktualisierte Version der Tipps und Verfahren, um dies zu erreichen, indem Sie [sichere Absenderlisten in Office 365 erstellen](create-safe-sender-lists-in-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="b2d9c-106">See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
+<span data-ttu-id="b6aa0-104">Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="b6aa0-104">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="b6aa0-105">Lesen Sie die aktualisierte Version der Tipps und Verfahren, um dies zu erreichen, indem Sie [sichere Absenderlisten in Office 365 erstellen](create-safe-sender-lists-in-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="b6aa0-105">See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b2d9c-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b2d9c-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b6aa0-106">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b6aa0-106">See also</span></span>
 
-[<span data-ttu-id="b2d9c-108">Anti-Spam-Schutz in Office 365</span><span class="sxs-lookup"><span data-stu-id="b2d9c-108">Anti-spam protection in Office 365</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="b6aa0-107">Anti-Spam-Schutz in Office 365</span><span class="sxs-lookup"><span data-stu-id="b6aa0-107">Anti-spam protection in Office 365</span></span>](anti-spam-protection.md)
