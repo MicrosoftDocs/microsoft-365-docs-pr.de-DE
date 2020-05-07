@@ -20,14 +20,21 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627692"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140825"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Wenn Sie eine kleine oder mittelgroße Organisation mit einem der Geschäftspläne von Microsoft verwenden und Ihr Organisationstyp von Cyber-Kriminellen und Hackern abzielt, verwenden Sie die Anleitungen in diesem Artikel, um die Sicherheit Ihrer Organisation zu verbessern. Dieser Leitfaden hilft Ihrer Organisation, die im [Handbuch zur Kampagne](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)"Harvard Kennedy School Cyber" beschriebenen Ziele zu erreichen.
   

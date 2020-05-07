@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Microsoft 365 erstellen.
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048783"
+ms.locfileid: "44053722"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-Suchen Sie in der Liste der [hostspezifischen Anweisungen](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) Ihren Host, und führen Sie die Schritte zum Hinzufügen aller benötigten Datensätze aus. 
+Suchen Sie in der Liste der [hostspezifischen Anweisungen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) Ihren Host, und führen Sie die Schritte zum Hinzufügen aller benötigten Datensätze aus. 
   
 Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
   
 Wenn Sie die Einträge selbst einrichten möchten, finden Sie hier die Einträge, die hinzugefügt werden müssen. Beachten Sie, dass Ihr Überprüfungseintrag und der MX-Eintrag für Ihre Domäne einzigartig sind. Zum Einrichten dieser Einträge benötigen Sie einen "Token"-Wert für Ihre Domäne. Im Folgenden wird beschrieben, wie Sie hierfür vorgehen müssen.
   
 > [!IMPORTANT]
-> Die genauen Namen der Kästchen oder  *Felder*, in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Microsoft 365 empfehlen wird die Übertragung Ihrer Domäne zu GoDaddy. 
+> Die genauen Namen der Kästchen oder  *Felder*, in die Sie Informationen eingeben oder einfügen müssen, um die einzelnen DNS-Eintragstypen zu erstellen, sind bei jedem DNS-Host verschieden. Möglicherweise stellt Ihr DNS-Hostinganbieter auf seiner Website Hilfe bereit, damit Sie die hier angegebenen Anweisungen den entsprechenden Feldern auf seiner Website zuordnen können. Denken Sie daran, unter [Erstellen eines DNS-Eintrags für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) zu überprüfen, ob es schrittweise Anleitungen speziell für Ihren DNS-Host gibt. >  Bei einigen DNS-Hosts können Sie nicht alle erforderlichen Eintragstypen erstellen. Dies führt zu [Diensteinschränkungen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Wenn Ihr Anbieter SRV-, TXT- oder CNAME-Einträge nicht unterstützt, empfiehlt sich ein [Übertragen Ihrer Domäne](../get-help-with-domains/buy-a-domain-name.md) zu einem DNS-Host, der alle erforderlichen Eintragstypen unterstützt. Für einen schnellen, automatisierten Prozess zum Einrichten von Microsoft 365 empfehlen wird die Übertragung Ihrer Domäne zu GoDaddy. 
   
 > [!NOTE]
 > Normalerweise dauert es nur einige Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -432,6 +432,6 @@ Erstellen Sie auf der Website Ihres DNS-Hosts nacheinander zwei neue SRV-Einträ
   
  **Wenn Sie Hilfe beim Hinzufügen der erforderlichen DNS-Einträge benötigen**, lesen Sie [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), und [sammeln Sie zunächst die erforderlichen Informationen zum Erstellen von DNS-Einträgen für Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Führen Sie dann die allgemeinen Schritte in diesem Artikel aus, um Ihre DNS-Einträge Ihrer Domäne einzurichten, um diese in Verbindung mit Microsoft 365-Diensten wie E-Mail verwenden zu können.
   
- **Wenn Sie nicht über eine Website verfügen, die Sie in Verbindung mit Ihrer benutzerdefinierten Domäne verwenden**, können Sie Microsoft 365 nutzen, um DNS-Einträge für Ihre Domäne einzurichten und zu verwalten, anstatt die Einrichtung selbst vorzunehmen. Hier finden Sie weitere Informationen zu den [zwei Optionen zum Einrichten und Verwalten von DNS-Einträgen für eine benutzerdefinierte Domäne](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Microsoft 365. 
+ **Wenn Sie nicht über eine Website verfügen, die Sie in Verbindung mit Ihrer benutzerdefinierten Domäne verwenden**, können Sie Microsoft 365 nutzen, um DNS-Einträge für Ihre Domäne einzurichten und zu verwalten, anstatt die Einrichtung selbst vorzunehmen. Hier finden Sie weitere Informationen zu den [zwei Optionen zum Einrichten und Verwalten von DNS-Einträgen für eine benutzerdefinierte Domäne](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. 
   
 

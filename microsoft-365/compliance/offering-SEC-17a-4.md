@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5bbc8e8e39e28a020864d705489d704acd0c012b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3169a1e9e7cb8b269e74463adaee017b8f48e4ad
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602062"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065940"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (sec) Rule 17a-4 (f) Vereinigte Staaten
 
@@ -42,20 +42,20 @@ Zur Bewertung von Azure und Office 365 Compliance mit der SEC-Regel 17a-4 (f) be
 - **Azure**: [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Speicher](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), validierte der Benutzer, dass [Azure unveränderlicher BLOB-Speicher](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) mit der Richtlinien Sperroption, wenn zeitbasierte BLOBs in einem nicht löschbaren und nicht wiederbeschreibbaren (Worm)-Format aufbewahrt werden, die unveränderlichen Speicheranforderungen der SEC-Regel erfüllt. Jedes BLOB (Record) wird vor der Änderung, Überschreibung oder Löschung geschützt, bis der erforderliche Aufbewahrungszeitraum abgelaufen ist und alle zugehörigen rechtlichen Aufbewahrungspflichten freigegeben wurden. Software Anbieter und Partner mit vertraulichen Arbeitslasten können jetzt auf Azure unveränderlichen BLOB-Speicher als Onestop-Cloud-Lösung für die Aufbewahrung von Datensätzen und den unveränderlichen Speicher zurückgreifen. Finanzinstitute können jetzt Ihre eigenen Anwendungen erstellen, indem Sie diese Funktionen nutzen und gleichzeitig kompatibel bleiben.
 - **Office 365**: [verwenden Sie Exchange Online zur Einhaltung von SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), der bestätigte [, dass Office 365 mit der Aufbewahrungs Sperre](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) Archivierungsfunktionen enthält, mit denen regulierte Kunden, einschließlich Broker-Dealer, Daten so speichern können, dass Sie die Anforderungen der Datensatzaufbewahrung an die SEC erfüllen. Mithilfe von Aufbewahrungsrichtlinien in Office 365 erhalten Sie eine breite Palette von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern. Die Archivierung in Office 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
-### <a name="azure--sec-rule-17"></a>Azure #a0 sec-Regel 17
+### <a name="azure--sec-rule-17"></a>Azure & sec-Regel 17
 
-[SEC 17a-4 (f) #a0 CFTC 1,31 (c-d) Compliance Assessment of Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
+[SEC 17a-4 (f) & CFTC 1,31 (c-d) Compliance Assessment of Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
 
-### <a name="office-365--sec-rule-17"></a>Office 365 #a0 sec-Regel 17
+### <a name="office-365--sec-rule-17"></a>Office 365 & sec-Regel 17
 
-[SEC 17a-4 (f) Compliance Assessment: Microsoft Security #a0 Compliance Center mit Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+[SEC 17a-4 (f) Compliance Assessment: Microsoft Security & Compliance Center mit Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 ## <a name="how-to-implement"></a>Implementierung
 
@@ -63,7 +63,7 @@ Zur Bewertung von Azure und Office 365 Compliance mit der SEC-Regel 17a-4 (f) be
 
 Compliance-Map der wichtigsten US-regulatorischen Grundsätze für Cloud Computing und Microsoft Online Services. [Weitere Informationen](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-### <a name="risk-assessment--compliance-guide"></a>Risikobewertung #a0 Compliance-Leitfaden
+### <a name="risk-assessment--compliance-guide"></a>Risikobewertung & Compliance-Leitfaden
 
 Erstellen eines steuerungsmodells für die Risikobewertung von Microsoft-Cloud-Diensten und Regulierer-Benachrichtigungen. [Weitere Informationen](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
@@ -81,7 +81,3 @@ Verwenden Sie Groß-/Kleinschreibung, Lernprogramme und andere Ressourcen, um Az
 - [Microsoft Office 365-Aufbewahrungsrichtlinien](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf) herunter.

@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem senden, nachdem Sie eine Zahlung im Office 365 betrieben von 21Vianet in China vorgenommen haben.
 monikerRange: o365-21vianet
-ms.openlocfilehash: fece5448ecd72ad3d0aceabde76d6519bafa917d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 55629654599dd20b813708a148e3ce49f6b6cf88
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360956"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140813"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Sie können Ihre Fapiao-Anforderung etwa drei Tage nach dem bezahlen an das 21Vianet-Fapiao-Verwaltungssystem senden. Nachdem Sie Ihre Fapiao-Anforderung gesendet haben, wird Sie in zwei Tagen verarbeitet.
   
@@ -39,7 +46,7 @@ Es gibt zwei Möglichkeiten, um eine Fapiao zu beantragen:
   
 1. Nachdem Sie eine Zahlung im Office 365 von der 21Vianet-Website betrieben haben, erhalten Sie eine Bestätigungs-e-Mail mit Ihrer Bestellnummer und einen Link zum Fapiao-Verwaltungssystem. Sie können den Link in der e-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-informationsverwaltungssystem</a>zu erstellen.
     
-    Oder:
+    Oder
     
 2. Sie können ein Fapiao über das <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>beantragen.
     

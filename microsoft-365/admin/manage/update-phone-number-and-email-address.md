@@ -19,15 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aktualisieren Sie Ihre Administrator-Telefonnummer und e-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f4303cd637bfb87fc4d35ce49904cedf5bf7f0a
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628004"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139589"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administrator-Telefonnummer und e-Mail-Adresse
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 In diesem Artikel erfahren Sie, wie Sie als Administrator Ihre geschäftliche Telefon-und e-Mail-Adresse in Microsoft 365 ändern können.
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).
@@ -45,7 +51,7 @@ Auf der Seite **persönliche Informationen** können Sie Ihren Namen, Ihre Mobil
     > [!IMPORTANT]
     > Die Alternative e-Mail-Adresse und die Mobiltelefonnummer sind erforderlich, um Ihr Administratorkennwort zurücksetzen zu können (nicht Ihr Administratorkennwort für Ihr Computer).
 
-4. Wenn Sie fertig sind, wählen Sie **Speichern**aus.
+4. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
   
 Bei Fragen zur Abrechnung werden Sie hier fündig:
   

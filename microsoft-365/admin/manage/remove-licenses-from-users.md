@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Hier erfahren Sie, wie Sie Lizenzen aus Benutzerkonten entfernen.
-ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628100"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139637"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 Sie können Lizenzen von Benutzern entweder auf der Seite " **aktive Benutzer** " oder auf der Seite " **Lizenzen** " entfernen oder aufheben. Welche Methode Sie verwenden, hängt davon ab, ob Sie Produktlizenzen von bestimmten Benutzern aufheben oder die Zuweisung von Benutzerlizenzen von bestimmten Produkten aufheben möchten.
@@ -142,7 +149,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Was Sie über das Aufheben der Zuweisung von Lizenzen für Benutzer wissen müssen
 
-- Sie müssen ein globaler Administrator, abrechnungsadministrator, Lizenzadministrator oder Administrator der Benutzerverwaltung sein. Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](../add-users/about-admin-roles.md).
+- Sie müssen globaler Administrator, Abrechnungsadministrator, Lizenzadministrator oder Benutzerverwaltungsadministrator sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
 
 - Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](https://go.microsoft.com/fwlink/p/?linkid=848428).
 

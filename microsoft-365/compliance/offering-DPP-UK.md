@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602532"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066632"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Digitale Produktionspartnerschaft (DPP) Vereinigtes Königreich
 
@@ -35,7 +35,7 @@ Microsoft Azure wurde mit dem DPP Committed to Security Mark für Broadcast nach
   
 Dies bedeutet, dass Sender und andere Medien Kunden, die Azure verwenden, zuversichtlich sein können, dass seine robuste Sicherheits-und widerstandsfähigen Dienste zur Erfüllung der einzigartigen Anforderungen der Broadcast Branche von der Programmentwicklung bis hin zur Übertragung beitragen können.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -56,7 +56,3 @@ Die Azure-Übertragungs Marke gilt für ein Jahr und wird jährlich erneuert.
 - [DPP Committed to Security Program Broadcast Checklist User Guide](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA und DPP-Sender vereinen sich zur Förderung von Cyber-Sicherheitsanforderungen für Zulieferer](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf) herunter.

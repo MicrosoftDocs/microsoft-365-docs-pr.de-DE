@@ -1,6 +1,6 @@
 ---
 title: Anträge betroffener Personen für Intune im Rahmen der DSGVO und des CCPA
-description: Leitfaden, wie unsere als Datenverantwortliche handelnden Kunden Microsoft-Produkte, -Dienste und -Verwaltungstools zum Suchen und Verarbeiten von personenbezogenen Daten im Rahmen von Anträgen betroffener Personen nach der DSGVO und dem CCPA verwenden können.
+description: Dieser Leitfaden wird unseren Controller-Kunden dabei helfen, zu verstehen, wie sie personenbezogene Daten finden und behandeln und wie sie mithilfe von Microsoft Intune auf DSR- und CCPA-Anforderungen von Kunden reagieren können.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,14 +14,16 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3d30b2187199b223086d53a144d711537fd7e59d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 6c39450169f835b3d558f14d248d425cb20f939f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557995"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035431"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Intune im Rahmen der DSGVO und des CCPA
 

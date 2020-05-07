@@ -18,13 +18,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Hier erfahren Sie, wie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) zum Schutz personenbezogener Daten in Microsoft 365 verwendet werden.
-ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informationen zum Verwenden von DLP-Richtlinien (Data Loss Prevention, Verhindern von Datenverlusten) im Compliance Center zum Schutz personenbezogener Daten in Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634273"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035177"
 ---
 # <a name="apply-protection-to-personal-data"></a>Anwenden des Schutzes auf personenbezogene Daten
 
@@ -251,9 +252,9 @@ Die Abbildung enthält die Berechtigungsstufen von „Vollzugriff“ bis hin zu 
 
 Weitere Informationen:
 
--   [Grundlegendes zu Berechtigungsstufen in SharePoint](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Grundlegendes zu Berechtigungsstufen in SharePoint](https://support.office.com/de-DE/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [Grundlegendes zu SharePoint-Gruppen](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Grundlegendes zu SharePoint-Gruppen](https://support.office.com/de-DE/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Richtlinien für externe Freigabe für SharePoint- und OneDrive for Business-Bibliotheken
 
@@ -305,7 +306,7 @@ Weitere Informationen:
 
 -   [Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [Freigeben von Websites oder Dokumenten für Personen außerhalb Ihrer Organisation](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Freigeben von Websites oder Dokumenten für Personen außerhalb Ihrer Organisation](https://support.office.com/de-DE/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Gerätezugriffsrichtlinien auf Websiteebene
 

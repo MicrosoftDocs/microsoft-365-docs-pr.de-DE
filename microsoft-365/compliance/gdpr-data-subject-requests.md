@@ -1,6 +1,5 @@
 ---
 title: Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
-description: ''
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +14,20 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Hier erfahren Sie, wie Sie DSRs im Rahmen der Datenschutz-Grundverordnung (DSGVO) und der kalifornischen Verbraucherschutzgesetzgebung (CCPA) mithilfe von Microsoft-Produkten und -Diensten durchführen.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558055"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035473"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
 Die Datenschutz-Grundverordnung (DSGVO) führt neue Regeln für Organisationen ein, die Waren und Dienstleistungen in der Europäischen Union (EU) anbieten oder Daten von in der EU ansässigen natürlichen Personen erfassen und analysieren, unabhängig von deren Wohnsitz und Unternehmenssitz. Weitere Details finden Sie in der [Zusammenfassung zum Thema DSGVO](gdpr.md).
 
-In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGVO entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Anfragen von betroffenen Personen (Datensubjekten) im Rahmen der DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
+In ähnlicher Weise bietet der California Consumer Privacy Act (CCPA) den kalifornischen Verbrauchern Datenschutzrechte und -pflichten, einschließlich von Rechten, die den Rechten von betroffenen Personen der DSGV entsprechen, wie z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) der persönlichen Informationen.  Das CCPA ermöglicht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und Deaktivierungs-/Aktivierungsanforderungen für bestimmte Datentransfers, die als "Verkäufe" eingestuft werden. Dieses Dokument führt Sie zu Informationen zur Bearbeitung von Anfragen von betroffenen Personen (Datensubjekten) im Rahmen der DSGVO unter Verwendung von Microsoft-Produkten und -Diensten.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -59,8 +60,8 @@ Es sind möglicherweise mehrere Prozesse involviert, um eine Datensubjektanfrage
 - **Zugriff**. Abrufen der ermittelten Daten und deren potenzielle Übermittlung an das Datensubjekt.
 - **Berichtigung**. Implementieren von Änderungen oder andere angeforderte Änderungen der personenbezogenen Daten.
 - **Einschränkung**. Ändern des Zugriffs oder der Verarbeitung von personenbezogenen Daten durch Einschränken des Zugriffs oder Entfernen von Daten aus der Microsoft-Cloud.
-- **Export**. Bereitstellen personenbezogener Daten in einem "strukturierten, häufig verwendeten, maschinell lesbaren Format" an die betroffene Person gemäß dem "Recht auf Datenübertragbarkeit" gemäß DSGVO.
-- **Löschen**. Permanentes Entfernen personenbezogener Daten aus der Microsoft-Cloud.
+- **Export**. Bereitstellen personenbezogener Daten in einem „strukturierten, häufig verwendeten, maschinell lesbaren Format“ an die betroffene Person gemäß dem „Recht auf Datenübertragbarkeit“ gemäß DSGVO.
+- **Delete** Permanentes Entfernen personenbezogener Daten aus der Microsoft-Cloud.
 
 ## <a name="specific-dsr-considerations"></a>Spezifische Überlegungen zu Datensubjektanfragen
 
@@ -78,7 +79,7 @@ Protokolle und verwandte Daten, die von Microsoft generiert werden, enthalten m�
 
 ### <a name="yammer-and-kaizala"></a>Yammer und Kaizala
 
-Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle für Yammer und Kaizala nicht entfernt. Siehe die folgenden Ressourcen, um Daten aus diesen Anwendungen zu entfernen:
+Durch das Löschen eines Benutzerkontos werden keine vom System generierten Protokolle für „Yammer“ und „Kaizala“ entfernt. Wenn Sie die Daten aus diesen Anwendungen entfernen möchten, lesen Sie eine der folgenden Ressourcen:
 
 - [Verwalten von DSGVO-Datensubjektanforderungen in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Exportieren oder Löschen von Organisationsdaten eines Benutzers in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändern Sie Ihre anfängliche e-Mail-Adresse in eine freundliche e-Mail-Adresse wie Tom@fourthcoffee.com. Hierzu müssen Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen. '
-ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: baa2e49d98ed1d7b3de9af78b84403d028b4c91d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629059"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053824"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
@@ -53,7 +53,7 @@ Die erste e-Mail-Adresse in Office 365, die von 21Vianet betrieben wird, umfasst
 
 ::: moniker-end
 
-Wenn Sie die e-Mail-Adresse Ihrer Domäne in Microsoft 365 ändern, indem Sie den MX-Eintrag Ihrer Domäne während des Setups aktualisieren, werden alle e-Mails, die an diese Domäne gesendet werden, mit Microsoft 365 gestartet. Stellen Sie sicher, dass Sie Benutzer und erstellte Postfächer in Microsoft 365 für alle Benutzer hinzugefügt haben, die e-Mails in Ihrer Domäne haben, bevor Sie den MX-Eintrag ändern. Sie möchten keine e-Mails für alle Benutzer Ihrer Domäne nach Microsoft 365 bewegen? Sie können [stattdessen ein Pilotprojekt von Microsoft 365 mit nur wenigen e-Mail-Adressen](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)ausführen.
+Wenn Sie die e-Mail-Adresse Ihrer Domäne in Microsoft 365 ändern, indem Sie den MX-Eintrag Ihrer Domäne während des Setups aktualisieren, werden alle e-Mails, die an diese Domäne gesendet werden, mit Microsoft 365 gestartet. Stellen Sie sicher, dass Sie Benutzer und erstellte Postfächer in Microsoft 365 für alle Benutzer hinzugefügt haben, die e-Mails in Ihrer Domäne haben, bevor Sie den MX-Eintrag ändern. Sie möchten keine e-Mails für alle Benutzer Ihrer Domäne nach Microsoft 365 bewegen? Sie können [stattdessen ein Pilotprojekt von Microsoft 365 mit nur wenigen e-Mail-Adressen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)ausführen.
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändern Ihrer e-Mail-Adresse zur Verwendung Ihrer benutzerdefinierten Domäne mithilfe des Microsoft 365 Admin Center
 

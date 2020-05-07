@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie die Microsoft-Kompatibilitätsbewertung einrichten und verwenden, um Risikobewertungen zu vereinfachen und zu automatisieren.
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632390"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140860"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Setup der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Der globale Administrator von Microsoft 365 für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf das Kompatibilitäts Ergebnis zugreift. Wir empfehlen die globale Administratoranmeldung und legen Benutzerberechtigungen wie unten beschrieben fest, wenn Sie das Kompatibilitäts Ergebnis zum ersten Mal besuchen.
 
@@ -40,16 +40,14 @@ Bei der Kompatibilitätsbewertung wird ein RBAC-Berechtigungsmodell (Role-Based 
 
 ### <a name="where-to-set-permissions"></a>Festlegen von Berechtigungen
 
-Der globale Administrator für Ihre Organisation kann Benutzerberechtigungen im Microsoft 365 Compliance Center oder in Azure Active Directory (Azure AD) festlegen. Sobald die Rollen an beiden Speicherorten festgelegt wurden, können Benutzer auf die Konformitätsbewertung und den Compliance-Manager zugreifen.
-
-Beachten Sie, dass vorhandene Compliance Manger-Rollen **nicht** auf die Konformitätsbewertung übertragen werden. Wenn Sie über eine Rolle im Compliance-Manager verfügen und der Kompatibilitätsbewertung neu ist, gewährt Ihnen die Compliance-Manager-Rolle keinen Zugriff auf die Konformitätsbewertung. Ihr globaler Administrator muss im Microsoft 365 Compliance Center oder Azure AD Berechtigungen und eine Rolle für Sie festlegen, damit Sie auf das Kompatibilitäts Ergebnis zugreifen können.
+Der globale Administrator für Ihre Organisation kann Benutzerberechtigungen in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) oder im [Compliance-Manager](compliance-manager-overview.md#permissions)festlegen. Sobald die Rollen an beiden Speicherorten festgelegt wurden, können Benutzer auf die Konformitätsbewertung und den Compliance-Manager zugreifen.
 
 ### <a name="role-types"></a>Rollentypen
 
-In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-Centers von Microsoft 365 den vorhandenen Compliance-Manager-Rollen zugeordnet werden und welche Funktionen für die jeweilige Rolle zulässig sind.
+In der folgenden Tabelle wird gezeigt, wie jede [Azure AD Rolle](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) vorhandenen Compliance-Manager-Rollen zugeordnet ist und welche Funktionen für welche Rolle zulässig sind. Benutzer benötigen mindestens die Azure AD globale Leserrolle, um auf das Kompatibilitäts Ergebnis zuzugreifen.
 
 
-| Benutzer kann Folgendes: | Microsoft 365 Compliance Center-Rolle | Compliance-Manager-Rolle | 
+| Benutzer kann Folgendes: | Azure AD Rolle | Compliance-Manager-Rolle | 
 | :------------- | :-------------: | :------------: |
 | **Lesen, aber nicht bearbeiten von Daten**| Azure AD globaler Leser  | Azure AD globaler Leser | 
 | **Lesen, aber nicht bearbeiten von Daten**| Benutzer mit Leseberechtigung für Sicherheitsfunktionen | Compliance-Manager-Leser  | 
@@ -60,13 +58,6 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen Rollen des Compliance-C
 
 > [!NOTE]
 > Wenn Sie von der Kompatibilitätsbewertung zum Compliance-Manager wechseln, um eine Aufgabe abzuschließen (beispielsweise zum Verwalten von Bewertungen), öffnet Ihr Browser eine neue Registerkarte, und ein Dialogfeld wird angezeigt. Im oberen Abschnitt mit dem Header "bereits Microsoft Cloud Services-Kunde? Melden Sie sich bei Ihrem Konto an, "wählen Sie **Anmelden** bei Access Compliance Manager aus; Sie müssen Ihre Anmeldeinformationen nicht erneut eingeben.
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>Vorgehensweise Festlegen von Berechtigungen und Rollen im Microsoft 365 Compliance Center
-
-So legen Sie Berechtigungen im Microsoft 365 Compliance Center fest:
-
-1. Wechseln Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com) , und melden Sie sich mit ihrem globalen Administratorkonto an.
-2. Wählen Sie im linken Navigationsbereich **Berechtigungen** aus. Von hier aus können Sie Rollen anzeigen und Berechtigungen zuweisen.
 
 ## <a name="configure-automatic-secure-score-updates"></a>Konfigurieren automatischer Updates für sichere Bewertungen
 

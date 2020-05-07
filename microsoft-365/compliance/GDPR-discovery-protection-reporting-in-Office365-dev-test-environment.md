@@ -1,6 +1,6 @@
 ---
-title: Suche, Schutz und Berichterstellung für die DSGVO in der Entwicklungs-/Testumgebung
-description: Veranschaulichung von DSGVO-Funktionen in Microsoft 365
+title: Suche, Schutz und Berichterstellung für die DSGVO in der Microsoft 365-Entwicklungs-/Testumgebung
+description: Hier erfahren Sie, wie Sie personenbezogene Informationen (PII) im Sinne der DSGVO in Microsoft 365 Entwicklungs-/Testumgebungen konfigurieren und demonstrieren können.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b35db1a7be133e61cbde03f02af83baf9341d32e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632340"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034649"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>Suche, Schutz und Berichterstellung für die DSGVO in der Entwicklungs-/Testumgebung
 

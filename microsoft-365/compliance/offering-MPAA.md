@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f817ed755237a49d792ca66f78977729c5d13f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602162"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065636"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Motion Picture Association of America (MPAA)
 
@@ -34,8 +34,6 @@ Im Februar 2016 bestand Microsoft Azure als erster hyperskalierter, mandantenf�
 Die MPAA-Bewertung deckt 48 Sicherheitsbereiche in den allgemeinen Richtlinien und weitere sechs in den Anwendungs- und Cloudsicherheitsrichtlinien ab. Diese Richtlinien bauen auf branchenüblichen Sicherheitsstandards wie ISO/IEC 27001 und NIST 800-53 auf und sind auf bewährte Methoden wie Cloud Security Alliance (CSA) Cloud Controls Matrix abgestimmt.
 
 Die formale Bewertung der Azure-Compliance bedeutet, dass Unternehmen bei ihrer Geschäftstätigkeit mit großen Filmstudios Azure einsetzen können, um die IT-Kosten, die normalerweise mit der sicheren Erstellung, Verwaltung, Speicherung und Verteilung von Inhalten verbunden sind, zu senken und gleichzeitig die Anforderungen der MPAA zu erfüllen. Azure Media Services, Storage, Virtual Networks und mehr als 30 weitere Dienste stellen ein Workflowmodul für Inhalte in der Cloud bereit, das eine höhere Sicherheit und Skalierbarkeit als herkömmliche lokale Produktionsprozesse bietet und einen effektiveren Schutz für nachgelagerte Medienressourcen bereitstellt.
-
-Erfahren Sie mehr über die Vorteile der MPAA in Bezug auf die Microsoft Cloud: [Hintergrundwissen zur MPAA herunterladen](https://aka.ms/mpaa-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -70,7 +68,3 @@ Produktionseinrichtungen, Unternehmen für visuelle Effekte und andere Servicepa
 - [Azure-CSA STAR-Selbstbewertung](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure-Antworten auf CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf) herunter.

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Hier erfahren Sie, wie Sie eine CSV-Datei für Autopilot in Microsoft 365 for Business erstellen.
-ms.openlocfilehash: b1154d639ba23180f637520750d94f00e997cfc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c83862675db1372aa2cef27c727c04577b4cf5a3
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627860"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064651"
 ---
 # <a name="device-list-csv-file"></a>CSV-Datei einer Geräteliste
 
@@ -51,7 +51,7 @@ Wenn Sie Geräte hinzufügen, müssen Sie sie auch einem Profil hinzufügen. Ein
 
 [Dokumentation und Ressourcen zu Microsoft 365 for Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Erste Schritte mit Microsoft 365 for Business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Erste Schritte mit Microsoft 365 for Business](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
   
-[Verwalten von Microsoft 365 for Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Verwalten von Microsoft 365 for Business](https://docs.microsoft.com/microsoft-365/business/manage)
   

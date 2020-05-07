@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046273"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140850"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft-Compliancebewertung (Vorschau)
 
@@ -104,7 +104,7 @@ Hier erhalten Sie detaillierte Anweisungen zum [Verwalten von Bewertungen im Com
 
 ### <a name="templates"></a>Vorlagen
 
-Compliance Score stellt vorkonfigurierte Vorlagen für Bewertungen bereit. Sie können auch eine vorkonfigurierte Vorlage anpassen, indem Sie eigene Steuerelemente und Aktionen hinzufügen. Sie können beispielsweise eine Vorlage für Ihr Geschäftsprozess-Steuerelement oder eine Vorlage für einen regionalen Datenschutz-oder Kompatibilitätsstandard erstellen, der nicht von einer der vorkonfigurierten Vorlagen abgedeckt wird. Indem Sie Ihre eigenen Vorlagen in die Konformitätsbewertung einbringen, können Sie nicht nur Microsoft-Cloud-Bewertungen, sondern auch alle anderen Risikobewertungen im Bereich Ihrer Organisation nachverfolgen.
+Compliance Score stellt vorkonfigurierte Vorlagen für Bewertungen bereit. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eigene Steuerelemente und Aktionen zu einer vorkonfigurierten Vorlage hinzufügen. Sie können beispielsweise eine Vorlage für Ihr Geschäftsprozess-Steuerelement oder eine Vorlage für einen regionalen Datenschutz-oder Kompatibilitätsstandard erstellen, der nicht von einer der vorkonfigurierten Vorlagen abgedeckt wird. Indem Sie Ihre eigenen Vorlagen in die Konformitätsbewertung einbringen, können Sie nicht nur Microsoft-Cloud-Bewertungen, sondern auch alle anderen Risikobewertungen im Bereich Ihrer Organisation nachverfolgen.
 
 Die vorkonfigurierten Vorlagen für die Konformitätsbewertung lauten wie folgt:
 

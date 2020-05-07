@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Hier erfahren Sie, wie Sie die Berichte mithilfe von Navigationsregisterkarten und Filtern anzeigen können.
-ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dedcaf52a2b5e69d53f8c41494b5fd68ac1f248b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355106"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140671"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navigieren in und Verwenden von Berichten in Microsoft 365-Verwendungsanalyse
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Das Dashboard bietet Ihnen einen schnellen Überblick über die wichtigsten Metriken für die Verwendung und Einführung. Wenn Sie die Metriken auf oberster Ebene auswählen, können Sie auf Berichte zugreifen, die weitere Details und Einblicke bieten. Jede Registerkarte Bericht enthält Datenvisualisierungen speziell für einen Aspekt der Verwendung und Einführung für Ihre Organisation. Die erfassten Daten werden im Titel jedes Berichts erläutert, und es wird eine Kachel mit weiteren Informationen zu den Visualisierungen auf der angezeigten Berichts Registerkarte angezeigt.
 

@@ -18,13 +18,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Verwenden Sie das Tool „Inhaltssuche“ im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, Microsoft Office SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Microsoft 365-Gruppen, Yammer-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in einer Vielzahl von Office 365-Diensten nach Inhalten zu suchen.
+ms.openlocfilehash: e16b369c2844f75673ac4f6eee1cb3b8f4fdfab4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943174"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035503"
 ---
 # <a name="content-search"></a>Inhaltssuche
 

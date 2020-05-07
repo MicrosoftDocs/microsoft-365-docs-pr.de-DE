@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601992"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066448"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Selbsteinschätzung
 
@@ -41,8 +41,6 @@ STAR umfasst drei Assurance-Stufen; CSA STAR-Selbstbewertung stellt das Einführ
 ## <a name="microsoft-and-csa-star-self-assessment"></a>Microsoft und die CSA STAR-Selbstbewertung
 
 Im Rahmen der STAR-Selbstbewertung können CSPs zwei verschiedene Dokumenttypen einreichen, um ihre Compliance mit den bewährten Methoden der CSA nachzuweisen: einen beantworteten CAIQ oder einen Bericht, der die CCM-Compliance dokumentiert. Für die CSA STAR-Selbstbewertung veröffentlicht Microsoft sowohl einen CAIQ als auch einen CCM-basierten Bericht für Microsoft Azure sowie CCM-basierte Berichte für Microsoft Dynamics 365 und Microsoft Office 365.  
-  
-Erfahren Sie mehr über die Vorteile der CSA STAR-Selbstbewertung in Microsoft Cloud: [Hintergrundwissen zu CSA STAR-Selbstbewertung herunterladen](https://aka.ms/csastar-selfassessment-backgrounder)
 
 Erfahren Sie, wie Sie die Bereitstellung Ihrer CSA STAR-Selbstbewertung mit der Azure-Blaupause für Sicherheit und Compliance beschleunigen können. [Azure-Antwort auf die CSA-Konsensbewertung herunterladen](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -85,8 +83,3 @@ Sie ermöglicht CSPs, ihre Compliance mit den von der CSA veröffentlichten bew�
 
 - [Azure](https://aka.ms/Azure_STAR)
 - [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundwissen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf) herunter.
-

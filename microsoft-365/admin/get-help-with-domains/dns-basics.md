@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048185"
+ms.locfileid: "44053752"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -151,14 +151,14 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ## <a name="why-add-a-domain-in-office-365"></a>Warum muss ich in Office 365 eine Domäne hinzufügen?
 
 
-Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
+Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
+- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
     
 - **Website:** Wenn Sie über ein Microsoft 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
@@ -170,14 +170,14 @@ Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen W
 ## <a name="why-add-a-domain-in-office-365"></a>Warum muss ich in Office 365 eine Domäne hinzufügen?
 
 
-Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
+Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Office 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
+- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
     
 - **Website:** Wenn Sie über ein Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     

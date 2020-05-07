@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'In diesem Artikel erfahren Sie, wie Sie Ihr Microsoft 365 for Business-Abonnement mit einem Product Key erneuern und wiederkehrende Rechnungen aus-oder einschalten. '
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046228"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141078"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Erneuern von Microsoft 365 for Business
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Dieser Artikel bezieht sich auf die meisten kostenpflichtigen Microsoft 365 for Business-Abonnements.
   

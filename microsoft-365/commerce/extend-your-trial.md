@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Erfahren Sie, wie Sie Ihr Testabonnement für einen weiteren Zeitraum von 30 Tagen verlängern.
-ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045764"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141252"
 ---
 # <a name="extend-your-trial"></a>Verlängern Ihrer Testversion
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Benötigen Sie mehr Zeit, um die Features von Microsoft 365 for Business vor dem Kauf auszuprobieren? Wenn Ihr Testabonnement innerhalb von 15 Tagen abläuft und vor Ablauf dieser Frist noch nicht verlängert wurde, können Sie Ihren Testzeitraum um weitere 30 Tage verlängern. Dies können Sie nur ein Mal durchführen.
 

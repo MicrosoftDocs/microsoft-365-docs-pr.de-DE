@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043316"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065820"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -34,8 +34,10 @@ Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 3
 
 - Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion)
 - Microsoft 365 E3-Abonnement + das Microsoft 365 E5-Compliance-Add-on
+- Microsoft 365 E3-Abonnement + Microsoft 365 E5 Insider Risk Management-Add-on
 - Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion)
 - Microsoft 365 a3-Abonnement + das Microsoft 365 A5-Konformitäts-Add-on
+- Microsoft 365 a3-Abonnement + Microsoft 365 A5 Insider Risk Management-Add-on
 
 Benutzern, die in Richtlinien für das Insider Risikomanagement enthalten sind, muss eine der oben genannten Lizenzen zugewiesen sein.
 

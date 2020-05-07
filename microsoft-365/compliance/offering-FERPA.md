@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602432"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066368"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602432"
 
 Das Family Educational Rights and Privacy Act (FERPA) ist ein US-Bundesgesetz, das die Privatsphäre der Bildungsdaten Sätze von Kursteilnehmern schützt, einschließlich personenbezogener und Verzeichnisinformationen. FERPA wurde eingeführt, um sicherzustellen, dass Eltern und Schüler, die älter als 18 Jahre sind, auf diese Datensätze zugreifen, Änderungen an Ihnen anfordern und die Offenlegung von Informationen steuern können, außer in bestimmten und begrenzten Fällen, in denen FERPA die Offenlegung ohne Zustimmung zulässt.
 
-Das Gesetz gilt für Schulen, Schulbezirke und jede andere Institution, die vom US-Bildungsministerium finanziert wird, also praktisch alle öffentlichen K-12-Schulen und Schulbezirke sowie die meisten post sekundären Institutionen, sowohl öffentlich als auch privat. .
+Das Gesetz gilt für Schulen, Schulbezirke und jede andere Institution, die vom US-Bildungsministerium finanziert wird, also praktisch alle öffentlichen K-12-Schulen und Schulbezirke sowie die meisten post sekundären Institutionen, sowohl öffentlich als auch privat.
 
 Sicherheit ist eine zentrale Voraussetzung für die Einhaltung von FERPA, die den Schutz von Kursteilnehmerinformationen vor nicht autorisierten Offenlegungen erfordert. Bildungseinrichtungen, die Cloud Computing verwenden, benötigen vertragliche Zusicherungen, dass ein Technologieanbieter vertrauliche Kursteilnehmerdaten angemessen verwaltet.
 
@@ -39,13 +39,11 @@ FERPA erfordert oder erkennen keine Audits oder andere Zertifizierungen, sodass 
 - Darüber hinaus verpflichtet sich Microsoft zur Verwendung von Kundendaten, um Organisationen mit ihren Cloud-Diensten und kompatiblen Zwecken (beispielsweise Verbesserungen bei der Erkennung von Schadsoftware) zu versorgen, ohne dass Kundendaten für Werbung abgehört werden.
 - Microsoft verpflichtet sich auch vertraglich, Kundendaten nicht offenzulegen, es sei denn, die Bildungseinrichtung leitet, wie im Vertrag beschrieben, oder gesetzlich vorgeschrieben. Schulen, die Microsoft mithilfe eines Microsoft-Cloud-Diensts Schulungsunterlagen zur Verfügung stellen, können daher sicher sein, dass diese Einträge strengen vertraglichen Einschränkungen hinsichtlich ihrer Verwendung und Offenlegung unterliegen.
 
-Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterliegen – sowohl Bildungseinrichtungen als auch Drittanbieter, denen Sie Zugriff auf vertrauliche Kursteilnehmerdaten gewähren – sicher in-Scope Microsoft Business Cloud Services verwenden, um die Verarbeitung, Speicherung und übertragen diese Daten.
+Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterliegen – sowohl Bildungseinrichtungen als auch Drittanbieter, denen Sie Zugriff auf vertrauliche Kursteilnehmerdaten gewähren – zuverlässig Microsoft Business Cloud-Dienste zum verarbeiten, speichern und übertragen dieser Daten verwenden.
 
-Erfahren Sie mehr über die Vorteile von FERPA in der Microsoft-Cloud: [Laden Sie das FERPA Backgrounder herunter](https://aka.ms/ferpa-compliance) .
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
-
-Dienste, für die Microsoft zustimmt, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
+Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -79,7 +77,3 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Azure FERPA Compliance Framework-Zuordnung](https://aka.ms/AzureFERPAMapping)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf) herunter.

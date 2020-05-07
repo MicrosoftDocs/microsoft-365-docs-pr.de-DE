@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Hier erfahren Sie, wie Sie Lizenzen für Ihr Microsoft 365 for Business-Abonnement hinzufügen und entfernen.
-ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045224"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141233"
 ---
 # <a name="manage-subscription-licenses"></a>Verwalten von Abonnementlizenzen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Mit den folgenden Schritten können Sie Lizenzen aus ihren Abonnements hinzufügen oder entfernen.
 
