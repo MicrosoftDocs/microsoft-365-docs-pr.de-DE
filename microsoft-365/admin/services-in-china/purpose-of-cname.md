@@ -19,12 +19,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über den CNAME-Eintrag "MSOID" in Office 365, der Sie zum besten Server für Authentifizierungsprozesse leitet, sodass Sie eine schnellere Antwort erhalten.
 monikerRange: o365-21vianet
-ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: a7c59829419ac8e7db400b079681ccf5bff199d6
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212221"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053848"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Was ist der Zweck des CNAME-Eintrags für MSOID in Office 365?
 
@@ -40,7 +40,7 @@ Wenn dieser CNAME-Eintrag für Ihre Domäne fehlt, verwenden die Anwendungen ein
   
  **Wenn Office 365 die DNS-Einträge Ihrer Domäne verwaltet,** Office 365 richtet diesen CNAME-Eintrag für Sie ein. 
   
- **Wenn Sie DNS-Einträge für Ihre Domäne auf Ihrem DNS-Host verwalten,** erstellen Sie diesen Datensatz selbst, indem Sie [die Anweisungen für den DNS-Host befolgen](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx).
+ **Wenn Sie DNS-Einträge für Ihre Domäne auf Ihrem DNS-Host verwalten,** erstellen Sie diesen Datensatz selbst, indem Sie [die Anweisungen für den DNS-Host befolgen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
   
 Wenn Sie eine Office 365-Bereitstellung planen und mehr über alle DNS-Einträge erfahren möchten, die Sie möglicherweise hinzufügen oder aktualisieren müssen, lesen Sie diese in [Bezug auf: externe Domänennamen-System Einträge für Office 365](https://go.microsoft.com/fwlink/?LinkId=579013).
   

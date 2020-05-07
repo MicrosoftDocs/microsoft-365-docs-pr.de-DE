@@ -15,15 +15,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Bekommen Sie einen Überblick über benutzerdefinierte Typen vertraulicher Informationen für DLP.
-ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier finden Sie eine Übersicht über die benutzerdefinierten vertraulichen Informationstypen für DLP (Verhinderung von Datenverlust), z.B. primäres Muster, Zeichenabstand und Konfidenzniveau.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 621c7be728f772e113ef5cd65d5b79a2526ec7c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617089"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035747"
 ---
-# <a name="custom-sensitive-information-types"></a>Benutzerdefinierte Typen vertraulicher Informationen
+# <a name="custom-sensitive-information-types"></a>Benutzerdefinierten Typen vertraulicher Informationen
 
 ## <a name="overview"></a>Übersicht
 

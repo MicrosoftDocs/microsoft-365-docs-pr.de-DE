@@ -24,14 +24,21 @@ description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Bu
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045836"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140871"
 ---
 # <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Beim Einrichten Ihres Abonnements können Sie zwischen Zahlung mit Kreditkarte oder Bankkonto und Zahlung auf Rechnung (Scheck oder Überweisung) wählen. Die Zahlungsmethode, die Sie auswählen, verwenden wir auch für nachfolgende Abrechnungszeiträume, sofern Sie nicht Ihre [Zahlungsmethode ändern](change-payment-method.md).
 

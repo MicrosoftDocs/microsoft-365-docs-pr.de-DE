@@ -1,7 +1,7 @@
 ---
 title: Datenschutzbeauftragter von Microsoft
-description: Informationen zum EU-Datenschutzbeauftragten (DSB) von Microsoft für die DSGVO
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
+description: Erfahren Sie mehr zur Position und den Qualifikationen des EU-Datenschutzbeauftragten (DSB) von Microsoft für die DSGVO.
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558065"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036093"
 ---
 # <a name="microsofts-data-protection-officer"></a>Datenschutzbeauftragter von Microsoft
 
@@ -55,6 +56,6 @@ Telefon: + 353 (0) 1 295-3826<br>
 
 Die Kontaktdetails des Datenschutzbeauftragten wurden der Aufsichtsbehörde von Microsoft mitgeteilt.
 
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Mehr erfahren
 
 - [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

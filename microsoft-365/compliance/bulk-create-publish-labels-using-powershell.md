@@ -15,13 +15,15 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365 können Sie Aufbewahrungsbezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren. Mithilfe des bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang mit PowerShell erstellen und veröffentlichen.
-ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lernen Sie, wie Sie Aufbewahrungsbezeichnungen in Office 365 mittels PowerShell verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren.
+ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636353"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035533"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 

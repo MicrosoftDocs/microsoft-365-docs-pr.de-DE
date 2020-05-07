@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048161"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140749"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 [] In diesem Artikel finden Sie Antworten auf häufig gestellte Fragen zu Domänen in Office 365.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Hier erfahren Sie, wie Sie Daten manuell zwischen zwei Microsoft 365-Konten übertragen, wenn Sie den Plan oder den Firmennamen geändert oder mehrere Abonnements in einem kombiniert haben.
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628375"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053740"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Manuelles Übertragen von Daten zwischen zwei Konten
 
@@ -55,7 +55,7 @@ Bereiten Sie das Aufrollen der Ärmel vor und blockieren Sie einen Teil der Zeit
 
 Wechseln Sie in den einzelnen Konten zu den folgenden Seiten, und richten Sie das neue Konto auf Basis der Einstellungen des alten Kontos ein.
   
-Wenn Sie Daten von Microsoft 365 an Microsoft 365 mittelständisches Unternehmen oder Microsoft 365 Enterprise übertragen, sind die Administratorseiten unterschiedlich strukturiert. Schauen Sie sich ein [Video an: Einführung in Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx), und wechseln Sie zu den folgenden Stellen, um die Administratoreinstellungen zu betrachten.
+Wenn Sie Daten von Microsoft 365 an Microsoft 365 mittelständisches Unternehmen oder Microsoft 365 Enterprise übertragen, sind die Administratorseiten unterschiedlich strukturiert. Schauen Sie sich ein [Video an: Einführung in Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/), und wechseln Sie zu den folgenden Stellen, um die Administratoreinstellungen zu betrachten.
   
 Für Microsoft 365 Enterprise und Microsoft 365 mittelständisches Unternehmen:
   
@@ -90,9 +90,9 @@ Es gibt mehrere Möglichkeiten zum Speichern oder Übertragen von Teamwebsitedat
   
 - Sie können die alte Website als Vorlage speichern und die Vorlage in die neue Website importieren.
 
-- Zum Übertragen von Dokumenten müssen Sie zunächst manuell Ihre Hierarchie auf der neuen Website neu erstellen. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx).
+- Zum Übertragen von Dokumenten müssen Sie zunächst manuell Ihre Hierarchie auf der neuen Website neu erstellen. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Speichern Sie zum Übertragen von Listendaten eine [Listenvorlage](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx), und verwenden Sie die gespeicherte Vorlage, um die Liste auf der neuen Website neu zu erstellen.
+- Speichern Sie zum Übertragen von Listendaten eine [Listenvorlage](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), und verwenden Sie die gespeicherte Vorlage, um die Liste auf der neuen Website neu zu erstellen.
 
 - Informationen zum Speichern einer Dokumentbibliothek oder zum Auflisten von Inhalten aus einer SharePoint Online Umgebung (OneDrive für Unternehmen oder Teamwebsites) in Dateifreigaben oder auf einem lokalen Computer finden Sie unter [Informationen zur manuellen Migration von SharePoint Online Inhalten](https://support.microsoft.com/kb/2783484).
 

@@ -17,15 +17,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ''
-description: Hier erfahren Sie, wie Sie neue vertrauliche Informationstypen für die DSGVO ändern oder erstellen können.
-ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informationen zum Ändern oder Erstellen eines neuen vertraulichen Informationstyps in Office 365 für die Datenschutz-Grundverordnung (DSGVO).
+ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637777"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035737"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Anpassen oder Erstellen eines neuen vertraulichen Informationstyps
 
