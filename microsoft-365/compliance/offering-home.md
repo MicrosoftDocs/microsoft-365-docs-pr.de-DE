@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5ed79829cc7066f423c9ce6e97355446b5e855c3
+ms.sourcegitcommit: d93429635cbaf33a8e8e8948ac218043c7283ced
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943324"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44092547"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft Compliance-Angebote
 
@@ -128,7 +128,6 @@ Microsoft bietet eine umfassende Reihe von Compliance-angeboten, mit denen Ihre 
                         <p><a href="offering-nbb-fsma-belgium.md">NBB + FSMA (Belgien)</a></p>
                         <p><a href="offering-nen-7510-netherlands.md">NEN-7510 (Niederlande)</a></p>
                         <p><a href="offering-nerc-cip.md">NERC</a></p>
-                        <p><a href="offering-nhs-ig-toolkit-uk.md">NHS IG Toolkit (Vereinigtes Königreich)</a></p>
                         <p><a href="offering-osfi-canada.md">OSFI (Kanada)</a></p>
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (Indien)</a></p>

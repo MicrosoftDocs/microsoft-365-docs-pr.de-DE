@@ -42,6 +42,8 @@
       items:
         - name: Informationen zur Kommunikationscompliance
           href: communication-compliance.md
+        - name: Planen der Kommunikationscompliance
+          href: communication-compliance-plan.md
         - name: Erste Schritte mit der Kommunikationscompliance
           href: communication-compliance-configure.md
         - name: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
