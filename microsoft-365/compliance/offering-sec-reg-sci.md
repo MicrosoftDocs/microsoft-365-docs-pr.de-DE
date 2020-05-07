@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071222"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065710"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: Regulation Systems Compliance and Integrity (SCI)
 
@@ -43,7 +43,7 @@ Zur Unterstützung von US-Finanzdienstleistungskunden, die diese Verordnung einh
 
 Dieses Dokument enthält eine umfassende Prüfliste der kritischen regelmäßigen Sci-Fokusbereiche. Diese Prüfliste hilft Finanzinstituten zu verstehen, wie Sie Azure einsetzen können, um Ihren Regulatoren, Kunden und Führungskräften zu helfen, dass Sie die geltenden behördlichen Anforderungen einhalten können.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -52,7 +52,7 @@ Dieses Dokument enthält eine umfassende Prüfliste der kritischen regelmäßige
 - [Reglement Sci Implementation Guide](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): Maps Azure-Funktionen gegen die Verordnung und Details der gemeinsamenverantwortung für die Compliance.
 - [Entwerfen von zuverlässigen Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/resiliency/): eine kurze Übersicht über das Erstellen von Zuverlässigkeit in jedem Schritt des Azure-Anwendungsdesigns.
 - [Entwerfen hoch verfügbarer Anwendungen](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): wie Entwickler helfen können, sicherzustellen, dass Ihre Azure-Speicheranwendungen hoch verfügbar sind.
-- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft-Clouddiensten und die Benachrichtigung der Aufsichtsbehörden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -62,7 +62,7 @@ Wenn Computerumgebungen von den lokalen Rechenzentren zu den in der Cloud wechse
 
 **Welche Finanzinstitute können Azure nutzen, um die Anforderungen an die Regulierung Sci zu erfüllen?**
 
-Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, können Azure bereitstellen. Die SEC sagt, dass ihre Regelung auf "Self-Regulatory Organizations (SRO), einschließlich Aktien-und Options Austausch, registrierte Clearingstellen, FINRA, und die MSRB, Alternative Trading Systems (ATS), dass Handels-NMS und nicht-NMS-Bestände über die angegebenen Volumen Schwellenwerte, Verbreiter von konsolidierten Marktdaten (Plan Processors) und bestimmten ausgenommenen Clearingstellen.
+Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, können Azure bereitstellen. Die SEC sagt, dass die Verordnung auf "Self-Regulatory Organizations (SRO), einschließlich Aktien-und Options Börsen, registrierte Clearingstellen, FINRA, und die MSRB, Alternative Trading Systems (ATS), dass Handels-NMS und nicht-NMS-Bestände über die angegebenen Mengenschwellen Werte, verbreitern von konsolidierten Marktdaten (Plan Processors) und bestimmte freigestellten Clearing
 
 ## <a name="resources"></a>Ressourcen
 
@@ -74,7 +74,3 @@ Finanzorganisationen oder Sci-Entitäten, die dieser Verordnung unterliegen, kö
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft-und sec-Regel 17a-4](offering-SEC-17a-4.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) herunter.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781450"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065810"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -76,7 +76,3 @@ Ja. Microsoft-Kunden können die überwachten Steuerelemente, die in den Bericht
 - [Microsoft und das NIST-Cyber-Framework](offering-nist-csf.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ) herunter.

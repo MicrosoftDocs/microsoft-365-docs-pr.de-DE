@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b62e40ce317bc5a6bc817e5eade5b476542c5f04
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac5a027225ce0f7c4c719ba3a897f5bc6f5629d5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602172"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065646"
 ---
 # <a name="minimum-acceptable-risk-standards-for-exchanges-mars-e-20-framework"></a>Minimum Acceptable Risk-Standards für Exchanges (MARS-E) 2.0-Rahmenwerk
 
@@ -34,8 +34,6 @@ Diese Updates beziehen sich auf die Vertraulichkeit, Integrität und Verfügbark
 ## <a name="microsoft-and-mars-e-20-framework"></a>Microsoft und das MARS-E 2.0-Rahmenwerk
 
 Für MARS-E gibt es zurzeit keinen formellen Autorisierungs- und Akkreditierungsprozess. Die Microsoft Azure-Plattformdienste wurden jedoch unabhängigen FedRAMP-Prüfungen der Risikostufe „Moderate” und Azure Government Prüfungen der Risikostufe „High” unterzogen und sind gemäß FedRAMP-Standards autorisiert. Diese Standards wurden zwar nicht speziell für MARS-E entwickelt, die Kontrollanforderungen und Zielsetzungen von MARS-E sind jedoch nahezu identisch und dienen dem Schutz der Vertraulichkeit, Integrität und Verfügbarkeit der Daten in Azure.
-
-Erfahren Sie mehr über die Vorteile des MARS-E 2.0-Rahmenwerks in Bezug auf die Microsoft Cloud:[MARS-E Hintergrundinformationen herunterladen](https://aka.ms/mars-e-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -72,7 +70,3 @@ Ja. Die Prüfberichte Dritter zu den FedRAMP-Standards weisen die Wirksamkeit de
 - [Microsoft Whitepaper: Compliancerahmen für Onlinedienste](https://aka.ms/compliance-framework)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf) herunter.

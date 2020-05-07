@@ -20,14 +20,21 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049399"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140555"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 

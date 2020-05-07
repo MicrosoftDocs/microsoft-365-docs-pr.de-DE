@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 0b0c9089d7a61f328e7942aefc605b49148aa454
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313760"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066348"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Finanzmarktaufsichtsbehörde (FINMA) Schweiz
 
@@ -69,7 +69,3 @@ Ja. In Teil 2 der Compliance-Prüfliste sind diese Bedingungen sowie die Abschni
 - [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risikobewertungstool](https://aka.ms/FFIEC-CSDT)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/6/A/46AE2B08-49ED-478F-8E64-6BDE9B56C5F4/FINMA-Compliance.pdf) herunter.

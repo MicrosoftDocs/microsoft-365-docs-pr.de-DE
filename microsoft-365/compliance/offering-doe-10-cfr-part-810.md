@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601972"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066438"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DOE 10 CFR Part 810
 
@@ -34,18 +34,18 @@ FedRAMP bietet eine geeignete Basis, um sicherzustellen, dass Azure Government K
 
 Darüber hinaus ist Azure Government eine Community-Cloud der US-Regierung, die physisch von der Azure-Cloud getrennt ist. Es bietet zusätzliche Zusicherungen hinsichtlich spezifischer Anforderungen im Hinblick auf die Hintergrundprüfung durch die US-Regierung, einschließlich bestimmter Kontrollen, die den Zugriff auf Informationen und Systeme einschränken, um die US-Bürger unter Azure Operationspersonal zu überprüfen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - Intune
 
 ## <a name="how-to-implement"></a>Implementierung
 
-- [NERC CIP-Standards #a0 Cloud Computing](https://aka.ms/AzureNERC): Leitfaden für elektrische Hilfsprogramme und registrierte Entitäten, die Arbeitslasten für Azure oder Azure Government bereitstellen.
+- [NERC CIP-Standards & Cloud Computing](https://aka.ms/AzureNERC): Leitfaden für elektrische Hilfsprogramme und registrierte Entitäten, die Arbeitslasten für Azure oder Azure Government bereitstellen.
 
 ## <a name="about-doe-10-cfr-part-810"></a>Informationen zu Doe 10 CFR Part 810
 
-Die Export Kontrollverordnung des US-Energieministeriums (DOE) [10 CFR Teil 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) regelt die Ausfuhr von nicht klassifizierter Nukleartechnologie und-Hilfe. Dadurch wird sichergestellt, dass nukleare Technologien, die aus den USA exportiert werden, nur für friedliche Zwecke verwendet werden. Der überarbeitete Abschnitt 810 (letzte Regel) wurde im März 2015 wirksam und wird von der [nationalen Nuclear Security Administration](https://www.energy.gov/nnsa/national-nuclear-security-administration)verwaltet. In Abschnitt 810,6 wird angegeben, dass eine bestimmte Doe-Autorisierung sowohl für die Unterstützung als auch für die Übertragung von sensiblen Nukleartechnologie, die "Allgemein autorisiert" sind, sowie für Personen erforderlich ist, die eine bestimmte Autorisierung erfordern (beispielsweise Unterstützung mit sensiblen Nukleartechnologien wie Anreicherung und Produktion von schwer Wasser).
+Die Export Kontrollverordnung des US-Energieministeriums (DOE) [10 CFR Teil 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) regelt die Ausfuhr von nicht klassifizierter Nukleartechnologie und-Hilfe. Dadurch wird sichergestellt, dass nukleare Technologien, die aus den USA exportiert werden, nur für friedliche Zwecke verwendet werden. Der überarbeitete Abschnitt 810 (letzte Regel) wurde im März 2015 wirksam und wird von der [nationalen Nuclear Security Administration](https://www.energy.gov/nnsa/national-nuclear-security-administration)verwaltet. In Abschnitt 810,6 heißt es, dass eine spezifische Doe-Autorisierung sowohl für Unterstützungs-als auch für die Übertragung von sensiblen Nukleartechnologien, die "Allgemein autorisiert" sind, sowie für Personen erforderlich ist, die eine spezifische Autorisierung erfordern (beispielsweise für Unterstützung bei sensiblen Nukleartechnologien wie Anreicherung und Produktion von schwer Wasser).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -68,7 +68,3 @@ Kunden, die Daten für Azure Government bereitstellen, sind für den eigenen Sic
 - [Microsoft und DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf) herunter.

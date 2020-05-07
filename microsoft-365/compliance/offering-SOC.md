@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633430"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066318"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -43,9 +43,7 @@ Die von Microsoft abgedeckten Clouddienste werden mindestens einmal jährlich an
 
 Microsoft hat SOC 1 Typ 2-, SOC 2 Typ 2- und SOC 3-Berichte erhalten. Im Allgemeinen ist die Verfügbarkeit von SOC 1- und SOC 2-Berichten auf Kunden beschränkt, die Geheimaltungsvereinbarungen mit Microsoft unterzeichnet haben. Der SOC 3-Bericht ist öffentlich verfügbar.
 
-Erfahren Sie mehr über die Vorteile von SOC 1, 2, 3 für die Microsoft Cloud: [Hintergrundwissen zum SOC 1- und SOC 2-Bericht (Typ 2) herunterladen](https://aka.ms/soc_backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Im Umfang von SOC 1 und SOC 2 enthaltene Dienste
 

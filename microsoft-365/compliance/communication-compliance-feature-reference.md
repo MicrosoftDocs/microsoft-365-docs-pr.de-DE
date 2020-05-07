@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919672"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066204"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -32,7 +32,7 @@ ms.locfileid: "43919672"
 >[!Important]
 >Die Verwendung von PowerShell zum Erstellen und Verwalten von Kommunikations Konformitätsrichtlinien wird nicht unterstützt. Zum Erstellen und Verwalten dieser Richtlinien müssen Sie die Steuerelemente für die Richtlinienverwaltung in der [Microsoft 365 Communication Compliance-Lösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Wenn Sie über eine Microsoft 365-Organisation verfügen, [Konfigurieren Sie Aufsichtsrichtlinien](configure-supervision-policies.md) im Security & Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
+Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
@@ -179,7 +179,7 @@ Zum Überprüfen von e-Mail-Nachrichten und Anlagen für dieselben Stichwörter 
   
 #### <a name="enter-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
-Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Aufsichtsrichtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Beispiel wären die drei Bedingungen wie folgt definiert:
+Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Kommunikations Konformitätsrichtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Beispiel wären die drei Bedingungen wie folgt definiert:
   
 - **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade"
 - Die **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
@@ -187,7 +187,7 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen 
 
 ### <a name="review-percentage"></a>Überprüfen des Prozentsatzes
 
-Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die einer Aufsichtsrichtlinie unterliegt. Aus dem Gesamtprozentsatz des Inhalts, der den ausgewählten Richtlinienbedingungen entspricht, wird ein Zufalls Beispiel für eine echt Zeitauswahl ausgewählt. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie **100%** in einer Kommunikations Konformitätsrichtlinie konfigurieren.
+Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die durch eine Kommunikations Konformitätsrichtlinie geregelt wird. Aus dem Gesamtprozentsatz des Inhalts, der den ausgewählten Richtlinienbedingungen entspricht, wird ein Zufalls Beispiel für eine echt Zeitauswahl ausgewählt. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie **100%** in einer Kommunikations Konformitätsrichtlinie konfigurieren.
 
 ## <a name="notices"></a>Hinweise
 
@@ -195,7 +195,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
 
-|**Feld**|**Required**| **Details** |
+|**Field**|**Erforderlich**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
@@ -287,7 +287,7 @@ In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Infor
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |

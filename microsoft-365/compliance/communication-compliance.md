@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046293"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066238"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -49,7 +49,7 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
 - **Risikomanagement**
 
-    Organisationen sind für die gesamte Kommunikation verantwortlich, die über Ihre Infrastruktur und Unternehmensnetzwerk Systeme verteilt ist. Mithilfe von Kommunikations Überwachungsrichtlinien zur Ermittlung und Verwaltung potenzieller rechtlicher Risiken und Risiken können Risiken minimiert werden, bevor Sie den Unternehmensbetrieb beschädigen können. Beispielsweise können Sie Nachrichten in Ihrer Organisation für nicht autorisierte Kommunikationen über vertrauliche Projekte wie bevorstehende Akquisitionen, Fusionen, Gewinn Offenlegungen, Neuorganisationen oder Änderungen des Führungsteams überprüfen.
+    Organisationen sind für die gesamte Kommunikation verantwortlich, die über Ihre Infrastruktur und Unternehmensnetzwerk Systeme verteilt ist. Durch die Verwendung von Kommunikationsrichtlinien zur Unterstützung bei der Identifizierung und Verwaltung potenzieller rechtlicher Risiken und Risiken können Risiken minimiert werden, bevor Sie Unternehmensvorgänge beschädigen können. Beispielsweise können Sie Nachrichten in Ihrer Organisation für nicht autorisierte Kommunikationen über vertrauliche Projekte wie bevorstehende Akquisitionen, Fusionen, Gewinn Offenlegungen, Neuorganisationen oder Änderungen des Führungsteams überprüfen.
 
 - **Einhaltung von Vorschriften**
 
@@ -98,7 +98,7 @@ Mithilfe neuer interaktiver Dashboards für Warnungen, Richtlinien Übereinstimm
 Compliance-Richtlinien für die Kommunikation überprüfen und Erfassen von Nachrichten über mehrere Kommunikationskanäle, damit Sie Compliance-Probleme schnell überprüfen und beheben können:
 
 - **Microsoft Teams**: Chat Kommunikation für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Richtlinien überprüfen jetzt automatisch alle Microsoft Teams-Kanäle und-Teams für bestimmte Benutzer, die in einer Richtlinie definiert sind, sodass keine separate Zuordnungsliste für Microsoft Teams-Zuordnungen mehr erforderlich ist.
-- **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Aufsichtsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
+- **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Kompatibilitätsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
 - **Jammern**: Private Nachrichten und öffentliche Community-Unterhaltungen in " [jammern](https://docs.microsoft.com/yammer/yammer-landing-page) " werden in Kommunikationsrichtlinien unterstützt. Jammern ist ein optionaler Kanal und muss sich im [einheitlichen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) befinden, um das Überprüfen von Nachrichten und Anlagen zu unterstützen.
 - **Skype for Business Online**: communication Compliance Policies unterstützen die Scan Chat Kommunikation und zugehörige Anlagen in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Drittanbieterquellen**: Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Communication Compliance unterstützt Verbindungen zu verschiedenen gängigen Plattformen, einschließlich Instant Bloomberg, Facebook, Twitter und andere.
@@ -125,13 +125,13 @@ Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorl
 - **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die integrierte Klassifizierung verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
 - **Vertrauliche Informationen**: mit dieser Vorlage können Sie eine Richtlinie zum Überprüfen der Kommunikation mit definierten Typen von vertraulichen Informationen oder Stichwörtern erstellen, um sicherzustellen, dass wichtige Daten nicht für Personen freigegeben werden, die keinen Zugriff haben sollten.
 - **Einhaltung von Vorschriften**: Verwenden Sie diese Vorlage, um eine Richtlinie zum Überprüfen der Kommunikation für Verweise auf standardmäßige Finanzbegriffe zu erstellen, die regulatorischen Standards zugeordnet sind.
-- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, individuelle Erkennungs Bedingungen und den Umfang der zu überprüfenden Inhalte für die Beaufsichtigung in Ihrer Organisation zu konfigurieren.
+- **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, individuelle Erkennungs Bedingungen und den Umfang der zu überwachenden und zu überprüfenden Inhalte in Ihrer Organisation zu konfigurieren.
 
 ### <a name="investigate"></a>Prüfen
 
 In diesem Schritt sehen Sie sich die Probleme genauer an, die als Übereinstimmung mit ihren Kommunikationsrichtlinien erkannt wurden. Dieser Schritt umfasst die folgenden Aktionen, die im Microsoft 365 Compliance Center verfügbar sind:
 
-- **Warnungen**: Wenn eine Nachricht mit einer Aufsichtsrichtlinie übereinstimmt, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines Falles und dessen Status anzeigen. Neue Warnungen werden auf der Startseite der Kommunikations Kompatibilität und auf der Seite **Benachrichtigungen** angezeigt und in der Reihenfolgeihres Schweregrads aufgeführt.
+- **Warnungen**: Wenn eine Nachricht mit einer Richtlinienbedingung übereinstimmt, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines Falles und dessen Status anzeigen. Neue Warnungen werden auf der Startseite der Kommunikations Kompatibilität und auf der Seite **Benachrichtigungen** angezeigt und in der Reihenfolgeihres Schweregrads aufgeführt.
 - **Problemverwaltung**: für jede Warnung können Sie Ermittlungsaktionen durchführen, um das in der Nachricht erkannte Problem zu beheben.
 - **Dokumentüberprüfung**: während der Untersuchung eines Problems können Sie mehrere Ansichten der Nachricht verwenden, um das erkannte Problem ordnungsgemäß auszuwerten. Die Ansichten umfassen eine Zusammenfassung der Unterhaltung, nur-Text-, kommentierte und Detailansichten des Kommunikations Gesprächs.
 - Über **prüfen des Benutzer aktivitätsverlaufs**: Anzeigen des Verlaufs von Benutzer Nachrichten Aktivitäten und Korrekturaktionen wie vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602642"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065850"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Commodity Futures Trading Commission (CFTC) Rule 1.31 (c-d) Vereinigte Staaten
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602642"
 
 Die [Commodity Futures Trading Commission](https://www.cftc.gov/) (CFTC), eine unabhängige US-Bundesagentur, reguliert die Märkte für Rohstoff-Futures und-Optionen und neuerdings den Swaps-Markt.  
   
-Die langjährige CFTC-Regel 1,31 definiert die Aufbewahrungsanforderungen für Datensätze, die durch die SEC-Regel 17a-4 (f) festgelegt wurden. Darüber hinaus wird festgelegt, dass elektronische Aufzeichnungen fünf Jahre lang aufrecht erhalten werden müssen und dass die originale in den ersten beiden Jahren "leicht zugänglich" gehalten werden und von der Kommission oder dem US-Justizministerium während der gesamten Zeiträume zur Inspektion zur Verfügung gestellt werden. Aufbewahrungszeitraum.  
+Die langjährige CFTC-Regel 1,31 definiert die Aufbewahrungsanforderungen für Datensätze, die durch die SEC-Regel 17a-4 (f) festgelegt wurden. Darüber hinaus wird festgelegt, dass elektronische Aufzeichnungen fünf Jahre lang aufrecht erhalten werden müssen und dass die originale in den ersten beiden Jahren "leicht zugänglich" gehalten und während der gesamten Aufbewahrungszeit von der Kommission oder vom US-Justizministerium zur Verfügung gestellt werden.  
   
 In 2017 hat die [CFTC Ihre Regel überarbeitet](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf), die Archivierungs Verordnung geändert und modernisiert, um die Richtlinien mit einer niedrigeren Normativität zu verabschieden, die eine größere Flexibilität bei der Verwaltung von Datensätzen bieten. Dadurch wird die Regeltechnologie neutraler, sodass regulierte Entitäten die Technologie auswählen können, die für Ihr Unternehmen am besten geeignet ist, und gleichzeitig die Sicherheitsvorkehrungen beibehalten, die die Zuverlässigkeit des Archivierungsprozesses sicherstellen. Die überarbeitete Regel entfernt die Anforderung, dass Organisationen die ursprünglichen Datensätze für zwei Jahre beibehalten, behält jedoch den fünfjährigen Wartungszeitraum bei, der die Praktiken für Unternehmen harmonisiert, die sowohl von der CFTC als auch von der SEC reguliert werden.
 
@@ -41,25 +41,25 @@ Um die Azure-Konformität mit der CFTC-Regel 1.31 (c-d) zu bewerten, behielt Mic
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington #a0 Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
+Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington & Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
 
 Die Archivierung in Office 365 hilft bei der Beibehaltung einer Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern. Die Archivierung in Office 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
-[Azure #a0 CFTC Rule 1,31 – SEC 17a-4 (f) #a1 CFTC 1.31 (c-d) Compliance Assessment of Azure Storage
+[Azure & CFTC Rule 1,31 – SEC 17a-4 (f) & CFTC 1.31 (c-d) Compliance Assessment of Azure Storage
 
-[Office 365 #a0 CFTC-Regel 1,31 – Archivierung in Office 365, Datenaufbewahrung und sec-Regel 17a-4-Kompatibilität
+[Office 365 & CFTC-Regel 1,31 – Archivierung in Office 365, Datenaufbewahrung und sec-Regel 17a-4-Kompatibilität
 
 ## <a name="how-to-implement"></a>Implementierung
 
 - [Finanz dienstleistungsverordnung](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance-Karte der wichtigsten US-regulatorischen Grundsätze für Cloud Computing und Microsoft Online Services.
-- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
+- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft-Clouddiensten und die Benachrichtigung der Aufsichtsbehörden.
 - [Anwendungsfälle in der Finanzbranche](https://docs.microsoft.com/azure/industry/financial/): Verwenden Sie Fallübersichten, Lernprogramme und andere Ressourcen, um Azure-Lösungen für Finanzdienstleistungen zu entwickeln.
 
 ## <a name="resources"></a>Ressourcen
@@ -71,7 +71,3 @@ Die Archivierung in Office 365 hilft bei der Beibehaltung einer Vielzahl von Dat
 - [Microsoft Office 365-Aufbewahrungsrichtlinien](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf) herunter.

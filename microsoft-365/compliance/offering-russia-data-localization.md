@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943664"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065770"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Anforderungen für die Lokalisierung russischer personenbezogener Daten
 

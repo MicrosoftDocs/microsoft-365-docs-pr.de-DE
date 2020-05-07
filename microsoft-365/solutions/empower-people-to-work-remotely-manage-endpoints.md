@@ -1,5 +1,5 @@
 ---
-title: 3. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
+title: 'SCHRITT 3: Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4bc467b3da76a846d6d86e8812c542aa33f5e8b1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049582"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141455"
 ---
-# <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>SCHRITT 3: Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
 Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet einen modernen Arbeitsplatz und moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
 

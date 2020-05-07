@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Hier erfahren Sie, wie Sie ein weiteres Microsoft 365 for Business-Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634932"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141302"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Erwerben eines weiteren Microsoft 365 for Business-Abonnements
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Wenn Sie bereits ein Microsoft 365 for Business-Abonnement haben und ein weiteres Abonnement für Ihre Organisation kaufen möchten, ist dies am besten über das Admin Center möglich. Wenn Sie das erste Microsoft 365 for Business-Abonnement für Ihre Organisation noch nicht erworben haben, wählen Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans) einen Plan aus.
   

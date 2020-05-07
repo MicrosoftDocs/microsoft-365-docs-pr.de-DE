@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ef2f30492df89e97348e4dbce81ce4ae43c2e806
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602032"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066308"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act von 2002 (SOX)
 
@@ -43,7 +43,7 @@ Bei Microsoft teilen wir die Verantwortung für die Einhaltung unserer Kunden. W
 
 Erfahren Sie mehr über die Verwendung von Microsoft Azure Kompatibilitätsberichten bei der Erfüllung ihrer SOX-Compliance-Verpflichtungen: [Laden Sie die Azure-Anleitung für Sarbanes-Oxley herunter](https://aka.ms/Azure-SOX-Guide) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -73,7 +73,3 @@ Wenn Sie Ihre Anwendungen und Daten zu abgedeckten Microsoft Cloud-Diensten migr
 - [Microsoft-Clouddienste für Unternehmen und Finanzdienstleistungen](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Die gemeinsame Verantwortung beim Cloud Computing](https://aka.ms/sharedresponsibility)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf) herunter.

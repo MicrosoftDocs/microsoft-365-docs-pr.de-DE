@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049179"
+ms.locfileid: "44064821"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -77,7 +77,7 @@ Gruppenbesitzer werden nur per e-Mail benachrichtigt. Wenn die Gruppe über Plan
 
 30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die e-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine e-Mail-Nachricht, mit der Sie die Gruppe problemlos erneuern können. Wenn Sie es nicht erneuern, erhalten Sie eine weitere Verlängerungs-e-Mail 15 Tage vor Ablauf. Wenn Sie es noch nicht erneuert haben, erhalten Sie eine weitere e-Mail-Benachrichtigung am Tag vor Ablauf.
 
-Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, kann der Administrator die Gruppe noch bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group).
+Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, kann der Administrator die Gruppe noch bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

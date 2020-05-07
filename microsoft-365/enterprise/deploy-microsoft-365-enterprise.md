@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: Grundlegendes zu den Ressourcen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: Lernen Sie die verschiedenen Ressourcen kennen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002355"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031426"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -117,7 +117,7 @@ Die Definition einer digitalen Kultur hat für jede Führungskraft, die sich fü
 
 Gleichzeitig helfen intelligente Sicherheitsfunktionen und Produktintegration, die Verwaltungsanforderungen zu rationalisieren und die Gesamtbetriebskosten über den gesamten IT-Lebenszyklus hinweg zu minimieren. 
 
-Erfahren Sie, wie Core Services Engineering and Operations (vormals Microsoft IT) einen [modernen Arbeitsplatz mit Microsoft 365 bereitgestellt hat](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
+Erfahren Sie, wie Core Services Engineering and Operations (vormals Microsoft IT) einen [modernen Arbeitsplatz mit Microsoft 365 bereitgestellt hat](https://www.microsoft.com/de-DE/itshowcase/microsoft-365).
 
 > [!Note]
 > Diese Webseite steht nur in Englisch zur Verfügung.

@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 for Business-Abonnement zurücksetzen. '
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049447"
+ms.locfileid: "44064809"
 ---
 # <a name="reset-passwords"></a>Zurücksetzen von Kennwörtern
 
@@ -93,7 +93,7 @@ Wenn Sie Ihr Kennwort vergessen haben und sich nicht anmelden können:
     
 - Bitten Sie einen anderen globalen Administrator in Ihrem Unternehmen, Ihr Kennwort für Sie zurückzusetzen.
     
-- Oder [rufen Sie den Microsoft-Support an](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
+- Oder [rufen Sie den Microsoft-Support an](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Gleichzeitiges Zurücksetzen aller geschäftlichen Kennwörter für alle Benutzer in Ihrer Organisation
 <a name="bkmk_forgot"> </a>

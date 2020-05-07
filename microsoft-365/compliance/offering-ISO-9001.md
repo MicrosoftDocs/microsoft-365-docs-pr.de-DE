@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa996e73b4042e5f4585445e2db654385803409a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602222"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065750"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Standards für Qualitätsmanagementsysteme
 
@@ -74,7 +74,3 @@ Sie können das [ISO 9001:2015-Zertifikat](https://aka.ms/Azure9001Cert) für Az
 - [ISO 9000:2015](https://www.iso.org/standard/45481.html) (Grundlagen und Begriffe für den Kauf)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ) herunter.

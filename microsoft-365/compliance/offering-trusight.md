@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c6f175a140b3744e4bf47dff7b542414c659c4fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 62be8fe021ebacfe07faaaadfc33811dd7c8a7ef
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071212"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065700"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -69,7 +69,3 @@ Wenden Sie sich an info@trusightsolutions.com, um den Bericht *Comprehensive Ass
 - [Microsoft-Clouddienste für Unternehmen und Finanzdienstleistungen](https://aka.ms/FinServ-Compliance)
 - [Die gemeinsame Verantwortung beim Cloud Computing](https://aka.ms/sharedresponsibility)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf) herunter.
