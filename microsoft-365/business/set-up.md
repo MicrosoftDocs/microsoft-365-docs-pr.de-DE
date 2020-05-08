@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Ermitteln Sie die Installationsschritte für Microsoft 365 Business Premium, einschließlich Hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und vieles mehr.
-ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 03f446f790a664af85cc630048bc022d88b6e54f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048037"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165773"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business Premium im Setup-Assistenten
 
@@ -97,7 +97,7 @@ Alle Benutzer, die Sie dem Assistenten hinzufügen, erhalten automatisch eine Mi
   
 Zum Einrichten von Diensten müssen Sie einige Datensätze bei Ihrem DNS-Host oder Ihrer Domänenregistrierungsstelle aktualisieren.
   
-1. Der Setup-Assistent erkennt normalerweise Ihre Registrierungsstelle und stellt einen Link zu Schritt-für-Schritt-Anweisungen zum Aktualisieren der NS-Einträge auf der Registrierungsstellen Website bereit. Wenn dies nicht der Fall ist, ändern Sie Namen [Server, um Office 365 bei einer beliebigen Domänenregistrierungsstelle einzurichten](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
+1. Der Setup-Assistent erkennt normalerweise Ihre Registrierungsstelle und stellt einen Link zu Schritt-für-Schritt-Anweisungen zum Aktualisieren der NS-Einträge auf der Registrierungsstellen Website bereit. Wenn dies nicht der Fall ist, ändern Sie Namen [Server, um Office 365 bei einer beliebigen Domänenregistrierungsstelle einzurichten](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar). 
 
     - Wenn Sie über vorhandene DNS-Einträge verfügen, beispielsweise eine vorhandene Website, Ihr DNS-Host jedoch für die [Domäne Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)aktiviert ist, wählen Sie **für mich Datensätze hinzufügen**aus. Übernehmen Sie auf der Seite **Wählen Sie Ihre Onlinedienste aus** alle Standardeinstellungen, und wählen Sie **weiter**aus, und klicken Sie auf der Seite Ihres DNS-Hosts auf **autorisieren** .
     - Wenn Sie über vorhandene DNS-Einträge mit anderen DNS-Hosts verfügen (nicht für Domäne Connect aktiviert), sollten Sie Ihre eigenen DNS-Einträge verwalten, um sicherzustellen, dass die vorhandenen Dienste verbunden bleiben. Weitere Informationen finden Sie unter [Domain Basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .

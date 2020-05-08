@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222068"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066358"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Federal Financial Institutions Examination Council (FFIEC)
 
@@ -37,17 +37,17 @@ Beschleunigen Sie die Bereitstellung von Finanzdienstleistungen: [Laden Sie das 
 
 Damit Kunden von Finanzinstituten ihre FFIEC-Compliance-Anforderungen mit Azure erfüllen können, hat Microsoft Folgendes entwickelt:
 
-- [Cloud Security Diagnostic Tool * *](https://aka.ms/FFIEC-CSDT) , mit dem Sie eine Risikobewertung von Azure Services effizienter ausführen können. Das Tool (eine Excel-Tabelle) enthält 19 Informations Sicherheitsdomänen (wie Netzwerk-und Systemsicherheit sowie Informationen und Risikomanagement), die die Anforderungen von Finanzdienstleistungsvorschriften und anderen relevanten Standards sowie die FFIEC Prüfungshandbücher. Das Tool erläutert, wie Azure den einzelnen Anforderungen entspricht, die für Technologiedienst Anbieter (FDA) gelten.
+- [Cloud Security Diagnostic Tool * *](https://aka.ms/FFIEC-CSDT) , mit dem Sie eine Risikobewertung von Azure Services effizienter ausführen können. Das Tool (eine Excel-Tabelle) enthält 19 Informations Sicherheitsdomänen (wie Netzwerk-und Systemsicherheit sowie Informationen und Risikomanagement), die die Anforderungen von Finanzdienstleistungsvorschriften und anderen relevanten Standards sowie die FFIEC IT-Prüfungshandbücher nachverfolgen. Das Tool erläutert, wie Azure den einzelnen Anforderungen entspricht, die für Technologiedienst Anbieter (FDA) gelten.
 - [Azure Security and Compliance Blueprint für FFIEC regulierte Dienste Workloads](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint), ein Begleiter für das Diagnosetool. Es bietet Anleitungen zur Verwendung von Azure Cloud-Diensten sowie Überlegungen zur Einhaltung von FFIEC-Anforderungen und Richtlinien zur Risikobewertung durch die Kunden.
 
 Zur weiteren Unterstützung bei der Erfüllung der FFIEC-Anforderungen bieten Microsoft Cloud Services [SOC-Bestätigungs Berichte](offering-SOC.md) , die von einer unabhängigen CPA-Firma erstellt wurden. Die Zertifizierung für SOC 1 Typ 2 basiert beispielsweise auf dem AICPA SSAE 18-Standard (siehe Abschnitt "at-C" 105), der SAS 70 ersetzt hat und für die Berichterstellung über bestimmte Steuerelemente für die Finanzberichterstattung geeignet ist. Die SoC-Berichte enthalten die Stellungnahme des Auditors zur Effektivität von Microsoft-Steuerelementen bei der Erreichung der zugehörigen Kontrollziele während des angegebenen Überwachungszeitraums. Finanzinstitute können diese formelle Überwachung bei der Verfolgung von FFIEC-spezifischen Compliance-Verpflichtungen für in Azure, Power BI und Office 365 bereitgestellte Ressourcen verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
@@ -75,11 +75,7 @@ Um Sie bei der Erfüllung dieser Verpflichtungen zu unterstützen, stellt Micros
 ## <a name="other-microsoft-resources-for-financial-services"></a>Weitere Microsoft-Ressourcen für Finanzdienste
 
 - [Microsoft Compliance-Programm für Finanzdienstleiter](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Financial Services Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft-Clouddienste für Unternehmen und Finanzdienstleistungen](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Die gemeinsame Verantwortung beim Cloud Computing](https://aka.ms/sharedresponsibility)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf) herunter.

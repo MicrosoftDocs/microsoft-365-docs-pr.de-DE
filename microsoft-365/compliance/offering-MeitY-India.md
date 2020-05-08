@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602142"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066096"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministerium für Elektronik und Informationstechnologie (MeitY)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602142"
 
 Das Ministerium für Elektronik und Informationstechnologie (MeitY), eine Agentur der indischen Regierung, stellt Richtlinien für alle staatlichen und staatlichen Organisationen des öffentlichen Sektors zur Verfügung. Die Richtlinien werden auch häufig von Organisationen des privaten Sektors in regulierten Branchen wie Finanzdienstleistungen und Telekommunikation angenommen.
 
-MeitY stellt eine Akkreditierung (bezeichnet von MeitY als "empanelment") von Cloud-Dienstanbietern bereit, die erfordert, dass Cloud-Dienste als konform mit einer vordefinierten Reihe von Standards und Richtlinien für Sicherheit, Interoperabilität, Daten Portabilität zertifiziert sind. Vereinbarung zum Service Level und vertragliche Geschäftsbedingungen. Von MeitY akkreditierte Auditoren Überprüfen der Compliance durch das Durchführen von Audits von Cloud-Dienstanbietern.
+MeitY stellt eine Akkreditierung (bezeichnet von MeitY als "empanelment") von Cloud-Dienstanbietern bereit, die erfordert, dass Cloud-Dienste als konform mit einer vordefinierten Reihe von Standards und Richtlinien für Sicherheit, Interoperabilität, Daten Portabilität, Vereinbarung zum Service Level und vertragliche Geschäftsbedingungen zertifiziert werden. Von MeitY akkreditierte Auditoren Überprüfen der Compliance durch das Durchführen von Audits von Cloud-Dienstanbietern.
 
 Sobald akkreditiert, werden Cloud-Dienstanbieter in einem Government Cloud Services-Verzeichnis aufgeführt, in dem öffentliche Organisationen akkreditierte Cloud-Dienste vergleichen und beschaffen können. Das Verzeichnis ist ein Dienst der [MeghRaj Cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (oder GI \[Government of India\] Cloud), die den Einsatz von Cloud Computing in der Regierung fördert und die Implementierung von IT-Diensten des öffentlichen Sektors steuert.
 
@@ -39,9 +39,9 @@ Im November 2017 wurde Microsoft einer der ersten globalen Cloud-Dienstanbieter,
 - Government Virtual Private Cloud, die logisch von den öffentlichen und anderen Angeboten des Cloud-Dienstanbieters getrennt sein muss
 - Government Community Cloud, für Cloud-Dienste, die für Regierungsabteilungen dediziert sind und physisch getrennt von den öffentlichen und anderen Angeboten des Cloud-Dienstanbieters sind
 
-Die MeitY-Akkreditierung von Microsoft war das Ergebnis einer rigorosen Überwachung, die von der Direktion für Standardisierungs Tests und Qualitätszertifizierungen (STQC), einer Regierungsorganisation, die Qualitäts Sicherungsdienste bereitstellt, mithilfe eines Evaluierungs Frameworks durchgeführt wurde. basierend auf der Arbeit der MeghRaj-Cloud-Initiative. Über Microsoft Azure können Organisationen des öffentlichen Sektors nun auf eine breite Palette von Bereitstellungsmodellen und Dienst angeboten zurückgreifen, einschließlich der Infrastruktur als Dienst (IaaS), Plattform als Dienst (PaaS), Notfallwiederherstellung, DevOps und verwalteter Sicherung.
+Die MeitY-Akkreditierung von Microsoft war das Ergebnis einer rigorosen Überwachung, die von der Direktion für Standardisierungs Tests und Qualitätszertifizierungen (STQC), einer Regierungsorganisation, die Qualitäts Sicherungsdienste bereitstellt, mithilfe eines Evaluierungs Frameworks durchgeführt wird, das auf der Arbeit der MeghRaj-Cloud-Initiative basiert. Über Microsoft Azure können Organisationen des öffentlichen Sektors nun auf eine breite Palette von Bereitstellungsmodellen und Dienst angeboten zurückgreifen, einschließlich der Infrastruktur als Dienst (IaaS), Plattform als Dienst (PaaS), Notfallwiederherstellung, DevOps und verwalteter Sicherung.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -63,7 +63,3 @@ Die Bereitstellung von öffentlichen Diensten für Bürger Online ist ein wichti
 - [MeghRaj-Cloud-Initiative](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Zugelassene Cloud-Dienstanbieter](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf) herunter.

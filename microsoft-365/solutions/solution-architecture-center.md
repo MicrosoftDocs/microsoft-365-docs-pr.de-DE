@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f0c80cee878f845aa26a984e8374a911a6da120d
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011747"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159979"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Lösungs-und Architektur Center
 
@@ -26,7 +26,7 @@ Dieses Lösungs-und Architektur Center vereint die technischen Anleitungen, die 
 
 ![](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[grundlegende Lösungsanleitungen](foundation-solutions-overview.md)** für Blöcke diese Lösungen bieten eine umfassende Anleitung für ein bestimmtes Geschäftsproblem oder Ihre Anforderungen. Sie unterstützen Sie bei der Durchführung von Konzepten und Features und helfen Ihnen dabei, Entscheidungen zu treffen, die zu einem funktionierenden Endergebnis von der Planung bis zur Implementierung bis hin zur Einführung führen. 
 
-- [Empower Remote Workers mit Microsoft 365](empower-people-to-work-remotely.md)
+- [Fördern von Remotemitarbeitern mit Microsoft 365](empower-people-to-work-remotely.md)
 - [Einrichten einer sicheren Zusammenarbeit mit Microsoft 365](setup-secure-collaboration-with-teams.md)
 - [Bereitstellen von Bedrohungsschutz in Microsoft 365](deploy-threat-protection.md)
 

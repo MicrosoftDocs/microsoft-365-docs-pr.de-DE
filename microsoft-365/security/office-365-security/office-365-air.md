@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141547"
+ms.locfileid: "44159407"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
@@ -99,7 +99,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 - Das Sicherheits Betriebsteam Ihrer Organisation (einschließlich Sicherheits Lesern und Benutzern mit der Rolle "suchen und löschen")
 - Endbenutzer
 
-Darüber hinaus müssen [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) -Richtlinien definiert und angewendet werden, damit der Schutz erfolgt.
+Darüber hinaus müssen [Office 365 ATP-Richtlinien](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definiert und angewendet werden, damit der Schutz erfolgt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

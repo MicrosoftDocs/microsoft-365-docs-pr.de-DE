@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 in wenigen Schritten zum Schutz von lokalen Active Directory-verbundenen Windows 10-Geräten aktivieren.
-ms.openlocfilehash: 431c1be74723e156befb13ffe1ed98b48b9a23cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: adc125c32fe5aa56be8c17c07f28316602a36594
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633281"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165807"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 for Business verwaltet werden
 
@@ -53,7 +53,7 @@ Bevor Sie Ihre Benutzer und Computer aus der lokalen Active Directory Domäne sy
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. installieren und Konfigurieren von Azure AD Connect
 
-Wenn Sie Ihre Benutzer, Gruppen und Kontakte vom lokalen Active Directory in Azure Active Directory synchronisieren möchten, installieren Sie Azure Active Directory Connect, und richten Sie die Verzeichnissynchronisierung ein. Weitere Informationen finden Sie unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) .
+Wenn Sie Ihre Benutzer, Gruppen und Kontakte vom lokalen Active Directory in Azure Active Directory synchronisieren möchten, installieren Sie Azure Active Directory Connect, und richten Sie die Verzeichnissynchronisierung ein. Weitere Informationen finden Sie unter [Einrichten der Verzeichnissynchronisierung für Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) .
 
 > [!NOTE]
 > Die Schritte sind für Microsoft 365 for Business genau gleich. 

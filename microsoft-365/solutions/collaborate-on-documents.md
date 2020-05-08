@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: In diesem Artikel erfahren Sie, wie Sie mit Gästen in einem Dokument in SharePoint und OneDrive zusammenarbeiten.
-ms.openlocfilehash: 6fdf7d3ff90fb799b00da2c1ec84088b270ce009
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 82b9d6356144d6d465c7c94f58ec60fe96a1397a
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035983"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159991"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Zusammenarbeit mit Gästen an einem Dokument
 

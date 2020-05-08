@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637979"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066418"
 ---
 # <a name="european-union-model-clauses"></a>Standardvertragsklauseln der Europäischen Union
 
@@ -38,10 +38,6 @@ Die Unternehmenskunden von Microsoft, die die personenbezogenen Daten selbst kon
 Microsoft hat seine Standardvertragsklauseln der Artikel-29-Datenschutzgruppe der EU zur Prüfung und Genehmigung vorgelegt. Der Artikel-29-Datenschutzgruppe gehören u. a. Vertreter des Europäischen Datenschutzbeauftragten, der Europäischen Kommission sowie alle 28 EU-Datenschutzbehörden an.
 
 Die Gruppe hat festgestellt, dass die Implementierung der Bestimmungen in den Vereinbarungen von Microsoft ihre strengen Anforderungen erfüllt. (Microsoft erhielt als erster Clouddienstanbieter ein Bestätigungs- und Genehmigungsschreiben seitens der Datenschutzgruppe.) Die Genehmigung bezog sich auf die in den Standardvertragsklauseln 2010/87/EU dargelegten Vereinbarungen, jedoch nicht auf die Anhänge, die die Übertragung von Daten und die vom Datenimporteur implementierten Sicherheitsmaßnahmen beschreiben. Die Anhänge können von der Datenschutzbehörde separat analysiert werden.
-
-Erfahren Sie mehr über die Vorteile der EU-Standardvertragsklauseln in Bezug auf die Microsoft Cloud
-
-[Hintergrundinformationen zu den EU-Standardvertragsklauseln herunterladen](https://aka.ms/eu-model-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -94,7 +90,3 @@ Sie können eine Vereinbarung wie die [Nutzungsbedingungen für Onlinedienste](h
 - [Microsoft Common Controls Hub-Complianceframework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf) herunter.

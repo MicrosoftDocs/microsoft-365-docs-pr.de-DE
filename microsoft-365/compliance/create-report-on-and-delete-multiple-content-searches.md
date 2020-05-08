@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security & Compliance Center in Office 365.
-ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943496"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166076"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
  Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security & Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
     
-- Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, die Sie der CSV-Datei in Schritt 1 hinzufügen können, finden Sie unter [Erstellen einer Liste mit allen OneDrive-Speicherorten in Ihrer Organisation](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
+- Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, die Sie der CSV-Datei in Schritt 1 hinzufügen können, finden Sie unter [Erstellen einer Liste mit allen OneDrive-Speicherorten in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). 
     
 - Achten Sie darauf, alle in diesem Thema erstellten Dateien in demselben Ordner zu speichern. Dadurch wird das Ausführen der Skripts vereinfacht.
     

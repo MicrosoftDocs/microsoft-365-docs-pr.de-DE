@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637999"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066458"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -57,7 +57,7 @@ Wenn Sie erfahren möchten, wie die Microsoft-Cloud Kunden dabei unterstützt, H
 - Cloud-App-Sicherheit
 - Microsoft Health Bot Service
 - Microsoft Stream
-- Microsoft Professional Services: Premier und lokal für Azure, Dynamics 365, InTune und für mittelständische Unternehmen und Unternehmenskunden von Microsoft 365 for Business
+- Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Microsoft 365 for Business
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Intune
@@ -115,7 +115,3 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitf
 - [Grundlegendes zur HIPAA-Compliance mit Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19. Mai 2016)
 - [Azure HIPAA-Implementierungsleitfaden](https://aka.ms/azure-hipaa-guide)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf) herunter.

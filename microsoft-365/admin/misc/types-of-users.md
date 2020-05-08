@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Erfahren Sie mehr über Typen von Benutzern im Admin Center. '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627764"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155352"
 ---
 # <a name="quick-help-types-of-users"></a>Schnelle Hilfe: Typen von Benutzern
 
@@ -45,7 +45,7 @@ Auf der Seite " **aktive Benutzer** " im Microsoft 365 Admin Center können Sie 
 |Kennwortadministratoren  <br/> |Diese Benutzer können Kennwörter zurücksetzen, Serviceanfragen verwalten und den Dienststatus in Ihrem Auftrag überwachen.  <br/> |
 |Dienstadministratoren  <br/> |Diese Benutzer können Serviceanfragen verwalten und den Dienststatus in Ihrem Auftrag überwachen.  <br/> |
 |Benutzerverwaltungsadministratoren  <br/> |Diese Benutzer können Kennwörter zurücksetzen, den Dienststatus überwachen sowie Benutzerkonten, Benutzergruppen und Serviceanfragen überwachen. Folgendes können sie nicht: einen globalen Administrator entfernen, andere Administratorrollen erstellen oder Kennwörter für Abrechnungs-, globale- und Dienstadministratoren zurücksetzen.  <br/> |
-|Hinzufügen benutzerdefinierter Filter  <br/> |Mit dieser Option können Sie einen benutzerdefinierten Filter erstellen, um nur bestimmte Benutzertypen Ihrer Präferenz anzuzeigen, beispielsweise die Benutzer im Microsoft 365 apps for Business-Plan. [Schnelle Hilfe: Filtern von Benutzern](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Hinzufügen benutzerdefinierter Filter  <br/> |Mit dieser Option können Sie einen benutzerdefinierten Filter erstellen, um nur bestimmte Benutzertypen Ihrer Präferenz anzuzeigen, beispielsweise die Benutzer im Microsoft 365 apps for Business-Plan. [Schnelle Hilfe: Filtern von Benutzern](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Verwandte Artikel
 

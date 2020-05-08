@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Informationen zum Verwenden von DLP-Richtlinien (Data Loss Prevention, Verhindern von Datenverlusten) im Compliance Center zum Schutz personenbezogener Daten in Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: eb6ae528e54f93fea26a20be35a6f5bfb33337d2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035177"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165228"
 ---
 # <a name="apply-protection-to-personal-data"></a>Anwenden des Schutzes auf personenbezogene Daten
 
@@ -45,7 +45,7 @@ Mit DLP können Sie Folgendes:
 
 -   Anzeigen von DLP-Berichten mit Inhalten, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen.
 
-Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).
 
 ![Optionen zum Erstellen einer DLP-Richtlinie](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -146,7 +146,7 @@ Beschreibung: Anzeigen von Richtlinientipps für Mitarbeiter, Benachrichtigen vo
 <tr class="odd">
 <td align="left">Benutzer benachrichtigen, wenn Inhalte den Richtlinieneinstellungen entsprechen</td>
 <td align="left"><p>Aktivieren Sie dieses Kontrollkästchen („Richtlinientipps für Benutzer anzeigen und eine E-Mail-Benachrichtigung senden“.).</p>
-<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie sie für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in diesem Artikel: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
+<p>Klicken Sie auf „Tipp und E-Mail anpassen“, und aktualisieren Sie sie für Ihre Umgebung. Die standardmäßigen Benachrichtigungen finden Sie in diesem Artikel: <a href="https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips">Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Erkennen, wenn eine bestimmte Menge personenbezogener Informationen auf einmal freigegeben wird</td>
@@ -252,9 +252,9 @@ Die Abbildung enthält die Berechtigungsstufen von „Vollzugriff“ bis hin zu 
 
 Weitere Informationen:
 
--   [Grundlegendes zu Berechtigungsstufen in SharePoint](https://support.office.com/de-DE/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Grundlegendes zu Berechtigungsstufen in SharePoint](https://docs.microsoft.com/sharepoint/understanding-permission-levels)
 
--   [Grundlegendes zu SharePoint-Gruppen](https://support.office.com/de-DE/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Grundlegendes zu SharePoint-Gruppen](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Richtlinien für externe Freigabe für SharePoint- und OneDrive for Business-Bibliotheken
 
@@ -304,9 +304,9 @@ Die folgende Tabelle enthält die Steuerelemente, die Sie konfigurieren können.
 
 Weitere Informationen:
 
--   [Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
--   [Freigeben von Websites oder Dokumenten für Personen außerhalb Ihrer Organisation](https://support.office.com/de-DE/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Freigeben von Websites oder Dokumenten für Personen außerhalb Ihrer Organisation](https://support.office.com/article/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ### <a name="site-level-device-access-policies"></a>Gerätezugriffsrichtlinien auf Websiteebene
 
@@ -355,7 +355,7 @@ Für Gerätezugriffsrichtlinien für SharePoint und OneDrive for Business sind j
 </tbody>
 </table>
 
-Weitere Informationen: [SharePoint Online Admin Center: Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Weitere Informationen: [SharePoint Online Admin Center: Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Dienstzugriffsschutz für Identitäten und Geräte
 

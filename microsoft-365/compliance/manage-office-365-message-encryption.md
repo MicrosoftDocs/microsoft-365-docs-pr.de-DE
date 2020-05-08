@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche Protect in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: dd69266cccb1d04bc9ed3938b16bac45ca68b4a9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635885"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165976"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -112,7 +112,7 @@ Die IOS Mail-App kann Nachrichten, die mit Office 365 Nachrichtenverschlüsselun
   
 Wenn Sie nicht zulassen, dass entschlüsselte Nachrichten an Benutzer von IOS-Mail-apps gesendet werden, erhalten Benutzer eine Nachricht, die besagt, dass Sie nicht über die Berechtigung zum Anzeigen der Nachricht verfügen. Standardmäßig ist die dienstseitige Entschlüsselung von e-Mail-Nachrichten nicht aktiviert.
   
-Weitere Informationen und eine Übersicht über die Clientumgebung finden Sie unter Anzeigen von [verschlüsselten Nachrichten auf Ihrem iPhone oder iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Weitere Informationen und eine Übersicht über die Clientumgebung finden Sie unter Anzeigen von [verschlüsselten Nachrichten auf Ihrem iPhone oder iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>So verwalten Sie, ob Benutzer von IOS-Mail-apps Nachrichten anzeigen können, die durch Office 365 Nachrichtenverschlüsselung geschützt sind
   

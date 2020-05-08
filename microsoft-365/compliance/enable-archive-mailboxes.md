@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Im Security & Compliance Center in Office 365 können Sie Archivpostfächer aktivieren, um den Anforderungen Ihrer Organisation hinsichtlich Nachrichtenarchivierung, eDiscovery und Aufbewahrung gerecht zu werden.
-ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631740"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166016"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von Archivpostfächern im Security & Compliance Center
   
@@ -131,7 +131,7 @@ Führen Sie den folgenden Befehl aus, um die Archivpostfächer aller Benutzer in
   
 - Mit aktiviertem Archivpostfach können Benutzer Nachrichten in ihrem Archivpostfach speichern. Die Benutzer können mit Microsoft Outlook und Outlook im Web auf ihre Archivpostfächer zugreifen. Durch Verwendung einer dieser Clientanwendungen können die Benutzer Nachrichten in ihrem Archivpostfach anzeigen und zwischen ihrem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen.
 
-   Eine Liste der Outlook-Lizenzen, die In-Situ-Archivierung unterstützen, finden Sie unter [Outlook-Lizenzanforderungen für Exchange-Features](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+   Eine Liste der Outlook-Lizenzen, die In-Situ-Archivierung unterstützen, finden Sie unter [Outlook-Lizenzanforderungen für Exchange-Features](https://support.microsoft.com/de-DE/office/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
 - Archivpostfächer unterstützen Sie und Ihre Benutzer auch bei der Erfüllung der Anforderungen Ihrer Organisation hinsichtlich Aufbewahrung, eDiscovery und Archivierung. Sie können beispielsweise die Exchange-Aufbewahrungsrichtlinie Ihrer Organisation dazu verwenden, Postfachinhalte in das Archivpostfach eines Benutzers zu verschieben. Wenn Sie das Tool für die Inhaltssuche im Security & Compliance Center verwenden, um das Postfach eines Benutzers nach bestimmten Inhalten zu durchsuchen, wird auch das Archivpostfach des Benutzers durchsucht. Wenn Sie die Aufbewahrung für eventuelle Rechtsstreitigkeiten aktivieren oder eine Aufbewahrungsrichtlinie auf das Postfach eines Benutzers anwenden, werden die Elemente im Archivpostfach ebenfalls aufbewahrt.
   

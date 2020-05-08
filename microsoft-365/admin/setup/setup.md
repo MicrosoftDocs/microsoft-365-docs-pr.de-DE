@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Erfahren Sie, wie Sie Ihre Abonnements für Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education einrichten.
-ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053860"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165083"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Einrichten von Microsoft 365 für Unternehmen
 
@@ -285,7 +285,7 @@ Benötigen Sie detailliertere Schritte, oder möchten Sie die 64-Bit-Version von
 
 Installieren Sie Office auf Ihrem mobilen Gerät, und richten Sie Outlook so ein, dass es bei Ihrem neuen Microsoft-Postfach funktioniert. Jedes Mitglied Ihres Teams muss diesen Schritt ausführen. Jede Person kann die mobilen Office-Apps auf bis zu 5 Smartphones und 5 Tablets installieren. 
   
-Zeigen Sie die Schritte für Ihr Gerät an: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+Zeigen Sie die Schritte für Ihr Gerät an: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/de-DE/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. Onlinespeichern von Dateien
 
@@ -313,7 +313,7 @@ Wenn Sie eine Tour durch Microsoft 365 unternehmen und erfahren möchten, wie di
 
 - **Benötigen Sie Hilfe?** Wenn Sie Hilfe bei einer größer angelegten Bereitstellung benötigen, ist **[FastTrack](https://www.microsoft.com/de-DE/fasttrack/microsoft-365/office-365)** ein hervorragender Ausgangspunkt. Sie können auch [einen Partner finden](https://go.microsoft.com/fwlink/p/?linkid=391089), der Sie dabei unterstützt.
 
-- **Planung** – Diese Tools und Ressourcen helfen Ihnen bei der Vorbereitung Ihres Netzwerks, Ihres Verzeichnisses und Ihrer Benutzer für Office 365: [Vorbereiten Ihrer Organisation für Office 365 Enterprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
+- **Planung** – Diese Tools und Ressourcen helfen Ihnen bei der Vorbereitung Ihres Netzwerks, Ihres Verzeichnisses und Ihrer Benutzer für Office 365: [Vorbereiten Ihrer Organisation für Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365).
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. Hinzufügen der Domäne Ihrer Bildungseinrichtung oder Verbinden Ihres Verzeichnisses
 
@@ -339,25 +339,25 @@ Wenn Sie Office 365, betrieben von 21Vianet verwenden, nutzen Sie bitte dieses [
 
 Wählen Sie zum Starten des Assistenten **Zu Setup wechseln** aus.
 
-Was beim Ausführen des Assistenten geschieht, ist in einer exemplarischen Vorgehensweise unter [Verwenden des Installationsassistenten](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx) beschrieben.
+Was beim Ausführen des Assistenten geschieht, ist in einer exemplarischen Vorgehensweise unter [Verwenden des Installationsassistenten](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup) beschrieben.
   
-Wenn Sie Ihre Benutzer aus einem lokalen Verzeichnis synchronisieren oder einmaliges Anmelden (Single-Sign On, SSO) nutzen möchten, **verwenden Sie nicht den Setup-Assistenten zum Hinzufügen von Benutzern**. Lesen Sie stattdessen diesen Leitfaden zum Verständnis der Optionen: [Herstellen einer Verbindung zwischen Ihrem Verzeichnis und Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). Sie werden eine der beiden folgenden Identitäten einrichten:
+Wenn Sie Ihre Benutzer aus einem lokalen Verzeichnis synchronisieren oder einmaliges Anmelden (Single-Sign On, SSO) nutzen möchten, **verwenden Sie nicht den Setup-Assistenten zum Hinzufügen von Benutzern**. Lesen Sie stattdessen diesen Leitfaden zum Verständnis der Optionen: [Herstellen einer Verbindung zwischen Ihrem Verzeichnis und Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity). Sie werden eine der beiden folgenden Identitäten einrichten:
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync). Synchronisiert mit einem lokalen Verzeichnis. Sie verwalten die Benutzer lokal. Sie können auch Kennwörter synchronisieren, sodass die Benutzer lokal und in der Cloud über das gleiche Kennwort verfügen, sich zur Verwendung von Office 365 aber erneut anmelden müssen.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync). Synchronisiert mit einem lokalen Verzeichnis. Sie verwalten die Benutzer lokal. Sie können auch Kennwörter synchronisieren, sodass die Benutzer lokal und in der Cloud über das gleiche Kennwort verfügen, sich zur Verwendung von Office 365 aber erneut anmelden müssen.
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated). Synchronisiert mit einem lokalen Verzeichnis. Sie verwalten Ihre Benutzer lokal. Benutzer können lokal und in der Cloud über das gleiche Kennwort verfügen und müssen sich zur Verwendung von Office 365 nicht erneut anmelden. Dies wird häufig als "einmaliges Anmelden" bezeichnet.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated). Synchronisiert mit einem lokalen Verzeichnis. Sie verwalten Ihre Benutzer lokal. Benutzer können lokal und in der Cloud über das gleiche Kennwort verfügen und müssen sich zur Verwendung von Office 365 nicht erneut anmelden. Dies wird häufig als "einmaliges Anmelden" bezeichnet.
 
 ### <a name="2-set-up-services"></a>2. Einrichten von Diensten
 
-Richten Sie E-Mail, Dateifreigabe, Chat und alle anderen Office 365-Dienste und -Anwendungen ein: [Einrichten von Office 365-Diensten und -Anwendungen](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30).
+Richten Sie E-Mail, Dateifreigabe, Chat und alle anderen Office 365-Dienste und -Anwendungen ein: [Einrichten von Office 365-Diensten und -Anwendungen](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications).
   
 In diesem Schritt installieren Sie Office 365 auf bis zu 5 PCs und Laptops pro Person.
   
 ### <a name="3-migrate-data"></a>3. Migrieren von Daten
 
-Nachdem die Dienste konfiguriert wurden, können Sie mit der Datenmigration (z. B. von E-Mails und Dateien) beginnen: [Migrieren von Daten zu Office 365](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46).
+Nachdem die Dienste konfiguriert wurden, können Sie mit der Datenmigration (z. B. von E-Mails und Dateien) beginnen: [Migrieren von Daten zu Office 365](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365).
   
-Wenn Sie SIS (Student Information System) für Studierende und Mitarbeiter verwenden, informieren Sie sich hier zum [Einrichten der SIS-Integration](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx).
+Wenn Sie SIS (Student Information System) für Studierende und Mitarbeiter verwenden, informieren Sie sich hier zum [Einrichten der SIS-Integration](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
   
 ### <a name="train-your-users"></a>Schulen Ihrer Benutzer
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Hier erfahren Sie, wie Sie Geräte mithilfe von Autopilot in Microsoft 365 Business Premium hochladen. Sie können einem Gerät oder einer Gruppe von Geräten ein Profil zuweisen.
-ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627392"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165859"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Erstellen und Bearbeiten von AutoPilot-Geräten
 
@@ -50,7 +50,7 @@ Geräte müssen diese Anforderungen erfüllen:
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Navigieren Sie im Bereich **Geräte hinzufügen** zu einer [CSV-Datei für die Geräteliste](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) , die Sie gespeichert haben, \> **Speichern** \> Sie **Close**.
+3. Navigieren Sie im Bereich **Geräte hinzufügen** zu einer [CSV-Datei für die Geräteliste](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) , die Sie gespeichert haben, \> **Speichern** \> Sie **Close**.
     
     Sie können diese Informationen von Ihrem Hardwareanbieter abrufen, oder Sie können das [PowerShell-Skript Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) verwenden, um eine CSV-Datei zu generieren. 
     

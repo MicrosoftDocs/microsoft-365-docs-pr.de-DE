@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952618"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156890"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -63,11 +63,14 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
 
 Wenn eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums ausgelöst wird:
   
-- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Bei diesen Prüfern kann es sich um einzelne Benutzer, Verteilungs-oder Sicherheitsgruppen oder Office 365 Gruppen handeln. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
+- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Bei diesen Prüfern kann es sich um einzelne Benutzer, Verteilungs-oder Sicherheitsgruppen oder Microsoft 365-Gruppen ([früher Office 365 Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) handeln. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
 - Die Bearbeiter wechseln zur Registerkarte " **Disposition** " im Microsoft 365 Compliance Center, um die Inhalte zu überprüfen und zu entscheiden, ob Sie sie dauerhaft löschen, den Aufbewahrungszeitraum verlängern oder eine andere Aufbewahrungs Bezeichnung anwenden möchten.
 
 Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Microsoft 365-Gruppen umfassen. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
+
+> [!NOTE]
+> Ein Postfach muss mindestens 10 MB Daten zur Unterstützung von Dispositions Prüfungen aufweisen.
 
 Sie können eine Übersicht über alle ausstehenden Dispositionen auf der Registerkarte **Übersicht** sehen. Zum Beispiel:
 
@@ -106,10 +109,10 @@ Wie Sie aus dem Bild sehen können, werden die folgenden Aktionen unterstützt:
 - Anwenden einer anderen Aufbewahrungs Bezeichnung
 
 Wenn Sie über Berechtigungen für den Speicherort und den Inhalt verfügen, können Sie den Link in der Spalte **Speicherort** verwenden, um Dokumente an Ihrem ursprünglichen Speicherort anzuzeigen. Während einer Dispositions Überprüfung werden die Inhalte nie von Ihrem ursprünglichen Speicherort verschoben, und Sie werden erst gelöscht, wenn sich der Bearbeiter dafür entscheidet.
-  
+
 Die e-Mail-Benachrichtigungen werden wöchentlich automatisch an Prüfer gesendet. Dieser geplante Vorgang bedeutet, dass beim Erreichen des Endes des Aufbewahrungszeitraums durch Inhalte bis zu sieben Tage dauern kann, bis die Bearbeiter die e-Mail-Benachrichtigung erhalten, dass der Inhalt die Disposition wartet.
   
-Alle Dispositionsaktionen können überwacht werden.
+Alle Dispositionsaktionen können überwacht werden, und der vom Bearbeiter eingegebene Begründungstext wird gespeichert und in der Spalte **Kommentar** auf der Seite **verworfene Elemente** angezeigt.
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Wie lange, bis verworfene Inhalte endgültig gelöscht werden
 

@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 6c3d79e212a1a0333a7262b72ae0f1db8597096f
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 6ad5de355055ac193979db9154d54ab9974fcde0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002977"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159921"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Teams für den Schutz vertraulicher Daten konfigurieren
 

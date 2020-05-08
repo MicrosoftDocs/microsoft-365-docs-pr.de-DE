@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b3655c5b9a4fec2055993ace185ed899f8e0dbc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: efcdbf5700de94f268c1fbc62ca47b60c171fd45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602512"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064798"
 ---
 # <a name="european-banking-authority-eba"></a>Europäische Bankenaufsichtsbehörde (EBA)
 
@@ -70,8 +70,3 @@ Die Microsoft-Veröffentlichung, [Risikobewertungs- und Compliance-Leitfaden fü
 - [Azure Financial Services Cloud Risikobewertungstool](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/9/3/A93DEE11-4758-4E03-8035-D8C5843B70C2/EBA-Compliance.pdf) herunter.
-

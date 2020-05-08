@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: Informationen zum Einrichten von Teams zum Schutz Ihrer Daten basierend auf der Vertraulichkeit
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002672"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159467"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Einrichten einer sicheren Zusammenarbeit mit Microsoft 365
 
@@ -85,9 +85,9 @@ Das Konfigurieren dieser Ebenen umfasst Folgendes:
 
 Beginnen Sie mit der baselineebene, und fügen Sie dann Teams hinzu, die die *vertraulichen* und *hochsensiblen* Ebenen nach Bedarf verwenden, um die Informationen in Ihrer Organisation zu schützen. Die ersten Schritte finden Sie in den folgenden Ressourcen:
 
-- [Konfigurieren von Teams mit Basisplan-Schutz](configure-teams-baseline-protection.md)
-- [Konfigurieren von Teams mit Schutz für vertrauliche Daten](configure-teams-sensitive-protection.md)
-- [Konfigurieren von Teams mit Schutz für hoch vertrauliche Daten](configure-teams-highly-sensitive-protection.md)
+- [Konfigurieren von Teams mit grundlegendem Schutz](configure-teams-baseline-protection.md)
+- [Teams für den Schutz vertraulicher Daten konfigurieren](configure-teams-sensitive-protection.md)
+- [Teams für den Schutz hochgradig vertraulicher Daten konfigurieren](configure-teams-highly-sensitive-protection.md)
 
 Wenn Sie über ein hoch vertrauliches Projekt verfügen, das zusätzlichen Schutz vor der Freigabe auch innerhalb Ihrer Organisation erfordert, können Sie ein Team konfigurieren, das eine eigene Vertraulichkeits Bezeichnung verwendet, um Dateien zu verschlüsseln, sodass nur Teammitglieder Sie lesen können. Weitere Informationen finden Sie unter [Configure a Team with Security Isolation](secure-teams-security-isolation.md) .
 
@@ -104,7 +104,7 @@ Diese Ressourcen unterstützen Sie bei der Einrichtung Ihrer Umgebung für die Z
 Je nach Empfindlichkeit der freigegebenen Informationen können Sie Sicherheitsvorkehrungen hinzufügen, um eine übermäßige Freigabe zu verhindern. Diese Ressourcen helfen Ihnen beim Einrichten der Schutzmaßnahmen, die Sie für Ihre Organisation benötigen:
 
 - [Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer](best-practices-anonymous-sharing.md)
-- [Begrenzen der versehentlichen Exposition von Dateien bei deren Freigabe für Personen außerhalb der Organisation](share-limit-accidental-exposure.md)
+- [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](share-limit-accidental-exposure.md)
 - [Erstellen einer sicheren Gastfreigabeumgebung](create-secure-guest-sharing-environment.md)
 
 Wenn Sie ein Hauptprojekt mit einer Partnerorganisation haben, können Sie die Azure-Berechtigungsverwaltung verwenden, um die Gäste aus dieser Organisation in einem Team zu verwalten, das Sie für das Projekt eingerichtet haben. Weitere Informationen finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) .

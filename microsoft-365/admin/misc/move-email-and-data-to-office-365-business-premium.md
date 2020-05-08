@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: In diesem Artikel erfahren Sie, wie Sie Daten in Ihre neue Geschäftsidentität umlegen.
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627836"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155363"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Migrieren von e-Mails und Daten nach Microsoft 365 Business Standard
 
@@ -61,14 +61,14 @@ Wenn Sie einige Ihrer persönlichen Daten auf die neue Business-Identität versc
 ## <a name="outlookemail"></a>[Outlook/E-Mail](#tab/Outlook)
   
  **Exportieren von Outlook 2013-Daten in eine Outlook-Datendatei**
-1. Bevor Sie eine Outlook-Datendatei (PST) erstellen können, muss das Konto, aus dem Sie Outlook-Daten exportieren möchten, bereits in der Desktopversion von Outlook hinzugefügt worden sein. Weitere Informationen zum Hinzufügen eines Kontos in Outlook 2013 oder höher finden Sie unter [Einrichten von E-Mail in Outlook (für Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+1. Bevor Sie eine Outlook-Datendatei (PST) erstellen können, muss das Konto, aus dem Sie Outlook-Daten exportieren möchten, bereits in der Desktopversion von Outlook hinzugefügt worden sein. Weitere Informationen zum Hinzufügen eines Kontos in Outlook 2013 oder höher finden Sie unter [Einrichten von E-Mail in Outlook (für Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Jeden Benutzer muss die Schritte unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalender in einer Outlook-PST-Datei](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) ausführen.
     
  **Einrichten Ihres neuen E-Mail-Kontos in Outlook**
 1. Jeder Benutzer muss sein neues e-Mail-Konto einrichten, das im Lieferumfang des Microsoft 365 for Business-Abonnements aufgeführt ist. Hierfür benötigt er die Adresse des neuen E-Mail-Kontos. Das e-Mail-Konto jedes Benutzers ist identisch mit dem Benutzernamen, mit dem er sich bei Microsoft 365 for Business anmeldet. Also beispielsweise: laura@onmicrosoft.com oder karl@contoso.com.
     
-2. Bitten Sie jeden Benutzer, sein E-Mail-Konto in Outlook hinzuzufügen. Wenn Sie wissen möchten, wie das geht, lesen Sie [Einrichten von E-Mail in Outlook (für Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+2. Bitten Sie jeden Benutzer, sein E-Mail-Konto in Outlook hinzuzufügen. Wenn Sie wissen möchten, wie das geht, lesen Sie [Einrichten von E-Mail in Outlook (für Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importieren von -Daten aus einer Outlook-Datendatei**
 1. Dadurch werden die e-Mails, Kalender, Aufgaben und Kontakte, die in der PST-Datei gespeichert sind, in Ihr Microsoft 365 for Business-e-Mail-Konto zusammengeführt.

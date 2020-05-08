@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043296"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162687"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -52,7 +52,9 @@ Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatore
 Das Schützen von Daten und das verhindern von Datenverlusten stellt für die meisten Organisationen eine ständige Herausforderung dar, insbesondere mit dem schnellen Wachstum neuer Daten, die von Mitarbeitern, Geräten und Diensten erstellt wurden. Mitarbeiter sind befugt, Informationen über Dienste und Geräte hinweg zu erstellen, zu speichern und gemeinsam zu nutzen, mit denen die Verwaltung von Datenverlusten immer komplexer und schwieriger wird. Datenlecks können eine versehentliche Übernutzung von Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. Diese Vorlage priorisiert die Echtzeiterkennung verdächtiger SharePoint Online von Daten Downloads, die Datei-und Ordnerfreigabe, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste.
 
 >[!IMPORTANT]
->Bei Verwendung dieser Vorlage müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren. Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas.
+>Bei Verwendung dieser Vorlage müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren. Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
+>
+>Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas.
 
 ### <a name="offensive-language-in-email"></a>Anstößige Sprache in e-Mail
 

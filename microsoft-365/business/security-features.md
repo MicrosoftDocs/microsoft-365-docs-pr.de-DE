@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfunktionen, die mit Microsoft 365 Business Premium geliefert werden, um Ihre Daten auf PCs, Telefonen und Tablets zu schützen.
-ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635142"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165755"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-Sicherheits-und Compliance-Features
 
@@ -64,7 +64,7 @@ Sie können viele der Microsoft 365 Business Premium-Sicherheitsfunktionen im Ad
 
 Erweiterte Features in Microsoft 365 Business Premium stehen Ihnen zum Schutz Ihres Unternehmens vor Cyber-Bedrohungen und zum Schutz vertraulicher Informationen zur Verfügung.
   
-- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     Advanced Threat Protection (ATP) schützt Ihr Unternehmen vor ausgeklügelten Phishing-und Ransomware-Angriffen, die dazu dienen, Mitarbeiter-oder Kundeninformationen zu kompromittieren. Zu den Features gehören:
     
@@ -97,7 +97,7 @@ Erweiterte Features in Microsoft 365 Business Premium stehen Ihnen zum Schutz Ih
 
 Ihr Microsoft 365 Business Premium-Abonnement umfasst Features, mit denen Sie Compliance-und regulatorische Standards aufrecht erhalten können.
 
-- **[Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
+- **[Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** (DLP). 
     
     Sie können DLP so einrichten, dass vertrauliche Informationen wie Kreditkartennummern, Sozialversicherungsnummern usw. automatisch erkannt werden, um eine unbeabsichtigte Freigabe außerhalb Ihres Unternehmens zu verhindern.
     

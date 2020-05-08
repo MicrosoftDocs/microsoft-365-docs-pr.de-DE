@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 33723d5de94279e53a77434679c5406575dff3be
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632506"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166026"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
@@ -119,7 +119,7 @@ Der erste Schritt bei der Reaktion auf einen Antrag einer betroffenen Person bes
 
 Wie bereits erwähnt, schätzt Microsoft, dass mehr als 90 % der Daten einer Organisation mit Office-Anwendungen, wie Word und Excel, erstellt werden. Das bedeutet, dass Sie die Inhaltssuche im Security & Compliance Center verwenden können, um nach dem Großteil der Daten zu suchen, die im Zusammenhang mit einem Antrag einer betroffenen Person stehen.
 
-In diesem Leitfaden wird davon ausgegangen, dass Sie oder die Person, die nach personenbezogenen Daten sucht, die für einen Antrag einer betroffenen Person möglicherweise relevant sind, mit dem Tool zur Inhaltssuche im Security & Compliance Center vertraut sind oder bereits Erfahrungen damit gemacht haben. Hinweise zur allgemeinen Verwendung des Leitfadens zur Inhaltssuche finden Sie unter [Inhaltssuche in Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Achten Sie darauf, dass der Person, die die Suche ausführt, die erforderlichen Berechtigungen im Security & Compliance Center zugewiesen wurden. Diese Person sollte als Mitglied der Rollengruppe eDiscovery-Manager im Security & Compliance Center hinzugefügt werden; siehe [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Sie können ebenfalls andere Personen in Ihrer Organisation zur Rollengruppe eDiscovery-Manager hinzufügen, die an Anträgen betroffener Personen beteiligt sind, damit diese die erforderlichen Aktionen ausführen können, z. B. Vorschau und Export von Suchergebnissen im Tool zur Inhaltssuche. Beachten Sie jedoch, dass ein eDiscovery-Manager alle Inhaltsspeicherorte in Ihrer Organisation einsehen kann, einschließlich derer, die nicht mit Anträgen betroffener Personen im Zusammenhang stehen. Dies können Sie verhindern, indem Sie Compliance-Beschränkungen einrichten (wie [hier](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches) beschrieben).
+In diesem Leitfaden wird davon ausgegangen, dass Sie oder die Person, die nach personenbezogenen Daten sucht, die für einen Antrag einer betroffenen Person möglicherweise relevant sind, mit dem Tool zur Inhaltssuche im Security & Compliance Center vertraut sind oder bereits Erfahrungen damit gemacht haben. Hinweise zur allgemeinen Verwendung des Leitfadens zur Inhaltssuche finden Sie unter [Inhaltssuche in Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Achten Sie darauf, dass der Person, die die Suche ausführt, die erforderlichen Berechtigungen im Security & Compliance Center zugewiesen wurden. Diese Person sollte als Mitglied der Rollengruppe eDiscovery-Manager im Security & Compliance Center hinzugefügt werden; siehe [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Sie können ebenfalls andere Personen in Ihrer Organisation zur Rollengruppe eDiscovery-Manager hinzufügen, die an Anträgen betroffener Personen beteiligt sind, damit diese die erforderlichen Aktionen ausführen können, z. B. Vorschau und Export von Suchergebnissen im Tool zur Inhaltssuche. Beachten Sie jedoch, dass ein eDiscovery-Manager alle Inhaltsspeicherorte in Ihrer Organisation einsehen kann, einschließlich derer, die nicht mit Anträgen betroffener Personen im Zusammenhang stehen. Dies können Sie verhindern, indem Sie Compliance-Beschränkungen einrichten (wie [hier](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches) beschrieben).
 
 Nachdem Sie die Daten gefunden haben, können Sie die bestimmte Aktion ausführen, die im Rahmen eines Antrags einer betroffenen Person angefordert wurde.
 
@@ -141,7 +141,7 @@ Sie können nach folgenden Typen von Speicherorte für Inhalte mit dem Tool zur 
 #### <a name="tips-for-searching-content-locations"></a>Tipps zum Durchsuchen von Speicherorten für Inhalte
 
 - Durchsuchen Sie zunächst alle Speicherorte für Inhalte in Ihrem Unternehmen (die Sie in einem einzigen Suchvorgang durchsuchen können), um schnell zu ermitteln, welche Speicherorte Elemente enthalten, die Ihrer Suchabfrage entsprechen. Anschließend können Sie die Suche erneut durchführen und den Suchbereich auf jene Speicherorte beschränken, die relevante Elemente enthalten.
-- Verwenden Sie Suchstatistiken, um die am häufigsten verwendeten Speicherorte zu identifizieren, die Elemente enthalten, die der Suchabfrage entsprechen. Siehe [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+- Verwenden Sie Suchstatistiken, um die am häufigsten verwendeten Speicherorte zu identifizieren, die Elemente enthalten, die der Suchabfrage entsprechen. Siehe [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 - Suchen Sie im Überwachungsprotokoll nach zuletzt verwendeten Dateien und Ordneraktivitäten des Benutzers, der Gegenstand des Antrags einer betroffenen Person ist. Durch das Durchsuchen des Überwachungsprotokolls erhalten Sie eine Liste der Überwachungsberichte, die den Namen und den Speicherort der Ressourcen enthalten, mit denen der Benutzer kürzlich interagiert hat. Sie können diese Informationen unter Umständen verwenden, um eine Inhaltssuchabfrage zu erstellen. Siehe [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### <a name="building-search-queries-to-find-personal-data"></a>Erstellen von Suchabfragen zur Suche nach personenbezogenen Daten
@@ -170,11 +170,11 @@ In der folgenden Tabelle werden einige Bedingungen aufgelistet, die Sie verwende
 | Compliancetag |Die Beschriftung, die einer E-Mail-Nachricht oder einem Dokument zugewiesen wird. Beschriftungen werden verwendet, um E-Mails und Dokumente für die Datenkontrolle zu klassifizieren, die durch diese Beschriftung definiert wird, und um Aufbewahrungsregeln durchzusetzen. Verwenden Sie diese Bedingung, um nach Elementen suchen, denen automatisch oder manuell eine Beschriftung zugewiesen wurde.<br/>Dies ist eine nützliche Bedingung für Untersuchungen im Rahmen von Anträgen betroffener Personen, da Ihr Unternehmen möglicherweise Beschriftungen verwendet, um Inhalte zu klassifizieren, die im Zusammenhang mit Datenschutz stehen, bzw. Inhalte, die personenbezogene Daten oder vertrauliche Informationen enthalten. Weitere Informationen finden Sie im Abschnitt "Verwenden der Inhaltssuche zum Suchen aller Inhalte, denen eine bestimmte Beschriftung zugewiesen wurde in [Übersicht über Beschriftungen in Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personenbezogene Daten"|
 ||||
 
-Es gibt viele weitere E-Mail- und das Dokumenteigenschaften und Suchbedingungen, die Sie verwenden können, um komplexere Suchabfragen zu erstellen. Weitere Informationen finden Sie in den folgenden Abschnitten im Hilfethema [Schlüsselwortabfragen und Suchbedingungen für die Inhaltssuche](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Es gibt viele weitere E-Mail- und das Dokumenteigenschaften und Suchbedingungen, die Sie verwenden können, um komplexere Suchabfragen zu erstellen. Weitere Informationen finden Sie in den folgenden Abschnitten im Hilfethema [Schlüsselwortabfragen und Suchbedingungen für die Inhaltssuche](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
-- [Durchsuchbare E-Mail-Eigenschaften](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [Durchsuchbare Websiteeigenschaften (Dokumenteigenschaften)](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [Suchbedingungen](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
+- [Durchsuchbare E-Mail-Eigenschaften](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [Durchsuchbare Websiteeigenschaften (Dokumenteigenschaften)](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [Suchbedingungen](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
 
 #### <a name="searching-for-personal-data-in-sharepoint-lists-discussions-and-forms"></a>Suchen nach personenbezogenen Daten in SharePoint-Listen, -Diskussionen und -Formularen
 
@@ -222,15 +222,15 @@ In diesem Beispiel werden E-Mail-Nachrichten zurückgegeben, die die angegebene 
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Arbeiten mit teilweise indizierten Elemente in der Inhaltssuche
 
-Teilweise indizierte Elemente (auch als *nicht indizierte Elemente* bezeichnet) sind Exchange Online-Postfachelemente und Dokumente in SharePoint Online- und OneDrive for Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden, was bedeutet, dass sie nicht mithilfe der Inhaltssuche durchsucht werden können. Die meisten E-Mail-Nachrichten und Websitedokumente werden erfolgreich indiziert, da sie innerhalb der [Indizierungsgrenzwerte für Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?) liegen. Zu den Gründen dafür, dass E-Mail-Nachrichten oder Dateien für die Suche nicht indiziert werden, zählt unter anderem Folgendes:
+Teilweise indizierte Elemente (auch als *nicht indizierte Elemente* bezeichnet) sind Exchange Online-Postfachelemente und Dokumente in SharePoint Online- und OneDrive for Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden, was bedeutet, dass sie nicht mithilfe der Inhaltssuche durchsucht werden können. Die meisten E-Mail-Nachrichten und Websitedokumente werden erfolgreich indiziert, da sie innerhalb der [Indizierungsgrenzwerte für Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??) liegen. Zu den Gründen dafür, dass E-Mail-Nachrichten oder Dateien für die Suche nicht indiziert werden, zählt unter anderem Folgendes:
 
-- Der Dateityp wird [nicht erkannt oder wird nicht für die Indizierung unterstützt](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?). Manchmal wird der Dateityp zwar für die Indizierung unterstützt, aber es ist ein Indizierungsfehler für eine bestimmte Datei aufgetreten.
+- Der Dateityp wird [nicht erkannt oder wird nicht für die Indizierung unterstützt](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??). Manchmal wird der Dateityp zwar für die Indizierung unterstützt, aber es ist ein Indizierungsfehler für eine bestimmte Datei aufgetreten.
 - E-Mail-Nachrichten verfügen über eine angefügte Datei ohne einen gültigen Handler, wie Bilddatei (dies ist die häufigste Ursache für teilweise indizierten E-Mail-Elemente).
 - An E-Mails angefügt Dateien sind zu groß oder es gibt zu viele Dateianlagen.
 
 Es wird empfohlen, dass Sie mehr über teilweise indizierte Elemente in Erfahrung bringen, damit Sie bei der Reaktion auf Anträge betroffener Personen mit ihnen arbeiten können. Weitere Informationen finden Sie unter:
 
-- [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
+- [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 - [Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 - [Exportieren nicht indizierter Elemente](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
@@ -1037,7 +1037,7 @@ In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microso
 
 #### <a name="discover"></a>Entdecken
 
-Planner-Pläne sind mit Microsoft 365-Gruppen verknüpft, und die Dateien für Microsoft 365-Gruppen werden in einer der Gruppe zugeordneten SharePoint Online-Website gespeichert. Das bedeutet, dass Sie die Inhaltssuche verwenden können, um nach Planner-Dateien zu suchen, indem Sie die Website nach der Microsoft 365-Gruppe durchsuchen. Zu diesem Zweck benötigen Sie die URL für die Microsoft 365-Gruppe. Im Hilfethema "Inhaltssuche in Office 365" unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) finden Sie Tipps zum Abrufen von Informationen zu Microsoft 365-Gruppen für die Suche nach Planner-Dateien in der jeweiligen SharePoint Online-Website.
+Planner-Pläne sind mit Microsoft 365-Gruppen verknüpft, und die Dateien für Microsoft 365-Gruppen werden in einer der Gruppe zugeordneten SharePoint Online-Website gespeichert. Das bedeutet, dass Sie die Inhaltssuche verwenden können, um nach Planner-Dateien zu suchen, indem Sie die Website nach der Microsoft 365-Gruppe durchsuchen. Zu diesem Zweck benötigen Sie die URL für die Microsoft 365-Gruppe. Im Hilfethema "Inhaltssuche in Office 365" unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) finden Sie Tipps zum Abrufen von Informationen zu Microsoft 365-Gruppen für die Suche nach Planner-Dateien in der jeweiligen SharePoint Online-Website.
 
 #### <a name="access"></a>Access
 

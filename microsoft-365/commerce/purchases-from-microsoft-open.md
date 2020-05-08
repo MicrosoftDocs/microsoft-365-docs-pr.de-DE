@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Informationen zum Aktivieren, verlängern oder Hinzufügen von Lizenzen zu einem Microsoft 365 for Business-Abonnement.
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636452"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165127"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Geben Sie den von Microsoft Open erworbenen Product Key ein.
 
@@ -63,7 +63,7 @@ Wenn Sie neu bei Microsoft 365 for Business sind, erfahren Sie, wie Sie [Microso
 
 Schauen Sie sich diese Liste der häufigsten Fehler und Lösungen an: [Probleme mit Ihrem Product Key?](product-key-errors-and-solutions.md)
   
-Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Volumenlizenzkunden finden weitere Informationen unter [Microsoft Volume Licensing Service Center - Schulungen und Ressourcen](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

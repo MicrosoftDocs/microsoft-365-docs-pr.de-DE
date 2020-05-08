@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Remotemitarbeiter auf lokale Ressourcen zugreifen können, während Sie den Zugriff auf die Microsoft 365-Clouddienste optimieren.
-ms.openlocfilehash: daa1a04912dd83c7a53769299b3870b90dbfd33a
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049558"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160750"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste
 

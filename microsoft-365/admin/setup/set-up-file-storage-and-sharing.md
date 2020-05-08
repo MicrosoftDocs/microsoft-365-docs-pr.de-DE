@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Hier erfahren Sie, wie Sie OneDrive und eine Teamwebsite für die Speicherung und Freigabe von Dateien verwenden.
-ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627558"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165217"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Einrichten der Speicherung und Freigabe von Dateien
 
@@ -63,7 +63,7 @@ Hier sind Empfehlungen dafür, was an jedem Standort gespeichert werden soll, we
 |**SharePoint-Teamwebsites** <br/> |Zusammenarbeit. Wenn Sie eine Microsoft 365-Gruppe erstellen (beispielsweise im Microsoft 365 Admin Center, in Outlook oder beim Erstellen eines Teams in Microsoft Teams), wird eine SharePoint-Teamwebsite für diese Gruppe erstellt. Ebenso wird beim Erstellen einer neuen SharePoint-Teamwebsite von der SharePoint-Startseite oder aus dem neuen SharePoint Admin Center auch eine Microsoft 365-Gruppe erstellt. Weitere Informationen finden Sie unter [Was ist eine SharePoint-Teamwebsite?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) und [Erstellen einer Teamwebsite in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Dateien mit freigegebenem Besitz. Es wird empfohlen, separate Teamwebsites für jede Arbeitseinheit in Ihrer Organisation zu verwenden. Um beispielsweise Personal-und Finanzdokumente in einem kleinen Team privat zu halten, erstellen Sie eine separate Teamwebsite.  <br/> |
 
 > [!NOTE]
-> SharePoint hat auch andere Arten von Websites, die Sie für Ihr Unternehmen verwenden können. Sie können [Kommunikationswebsites](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) in Ihrem Intranet verwenden, um Informationen für eine breite Benutzergruppe zu veröffentlichen. Sie können auch [Hub-Standorte](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) verwenden, um Websites in Ihrem Intranet zu verbinden.
+> SharePoint hat auch andere Arten von Websites, die Sie für Ihr Unternehmen verwenden können. Sie können [Kommunikationswebsites](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in Ihrem Intranet verwenden, um Informationen für eine breite Benutzergruppe zu veröffentlichen. Sie können auch [Hub-Standorte](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) verwenden, um Websites in Ihrem Intranet zu verbinden.
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>Starten der Verwendung von OneDrive und ihrer Teamwebsite
 
@@ -201,4 +201,4 @@ Sie können Speicher von Drittanbietern für Ihre Benutzer in Microsoft 365 akti
 
   - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
