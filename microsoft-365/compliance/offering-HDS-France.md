@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 88f84cc73bfea5bbc072a46e894a140e227844b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 46118f9fe48e6fe794cdb256384bb88e9a1e0cfa
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602322"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066468"
 ---
 # <a name="health-data-hosting-hds-france"></a>Hosting von Gesundheitsdaten (HDS) Frankreich
 
@@ -74,7 +74,3 @@ Gesundheitswesen und Biowissenschaften: Fallübersichten, Lösungsleitfäden, Le
 - [Azure für das Gesundheitswesen](https://azure.microsoft.com/industries/healthcare/)
 - [Sicherheit bei Microsoft](https://www.microsoft.com/security)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf) herunter.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071282"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066378"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Title 21 Part 11
 
@@ -39,13 +39,13 @@ CFR Title 21 Part 11 legt Anforderungen fest, um sicherzustellen, dass elektroni
 
 Microsoft Enterprise Cloud Services unterliegen regelmäßigen unabhängigen Drittanbieter-SOC 1 Typ 2-und SOC 2 Typ 2-Überwachungen und sind gemäß den Standards ISO/IEC 27001 und ISO/IEC 27018 zertifiziert.
 
-Obwohl sich diese regelmäßigen Prüfungen und Zertifizierungen nicht speziell auf die Einhaltung der FDA-Vorschriften konzentrieren, sind deren Zweck und Ziele ähnlich wie die von CFR Title 21 Part 11 und dienen dazu, die Vertraulichkeit, Integrität und Verfügbarkeit zu gewährleisten. der in Microsoft Cloud Services gespeicherten Daten. Unser Qualifizierungsansatz basiert auch auf bewährten Vorgehensweisen der Branche, einschließlich der ISPE (International Society for Pharmaceutical Engineering) GAMP-Reihe von Good Practices-Richtlinien und des PIC/S) bewährter Methoden für computergestützte Systeme in regulierten GXP-Umgebungen.
+Obwohl sich diese regelmäßigen Prüfungen und Zertifizierungen nicht speziell auf die Einhaltung der FDA-Vorschriften konzentrieren, sind deren Zweck und Ziele ähnlich wie die von CFR Title 21 Part 11 und dienen dazu, die Vertraulichkeit, Integrität und Verfügbarkeit von in Microsoft Cloud-Diensten gespeicherten Daten sicherzustellen. Unser Qualifizierungsansatz basiert auch auf bewährten Vorgehensweisen der Branche, einschließlich der ISPE (International Society for Pharmaceutical Engineering) GAMP-Reihe von Good Practices-Richtlinien und des PIC/S) bewährter Methoden für computergestützte Systeme in regulierten GXP-Umgebungen.
 
-Kunden können über Ihren Microsoft-Konto Vertreter oder über das [Dienst Vertrauensstellungs Portal](https://aka.ms/stphelp)Zugriff auf die Konformitätsberichte anfordern, vorbehaltlich der Bedingungen für die Vertraulichkeitsvereinbarung. Darüber hinaus bieten Qualifizierungs Richtlinien für Microsoft Azure und Microsoft Office 365 eine ausführliche Erläuterung der Übereinstimmung der Microsoft-Überwachungssteuerelemente mit den Anforderungen des CFR-Titels 21 Teil 11, Anleitung zur Implementierung einer FDA-qualifizierungsstrategie und eine Beschreibung der Bereiche der gemeinsamenverantwortung.
+Kunden können über Ihren Microsoft-Konto Vertreter oder über das [Dienst Vertrauensstellungs Portal](https://aka.ms/stphelp)Zugriff auf die Konformitätsberichte anfordern, vorbehaltlich der Bedingungen für die Vertraulichkeitsvereinbarung. Darüber hinaus bieten Qualifizierungs Richtlinien für Microsoft Azure und Microsoft Office 365 eine ausführliche Erläuterung dazu, wie die Microsoft-Überwachungssteuerelemente den Anforderungen von CFR Title 21 Part 11, Leitfaden für die Implementierung einer FDA-qualifizierungsstrategie und einer Beschreibung der Bereiche der gemeinsamenverantwortung entsprechen.
 
 Erfahren Sie, wie Sie Ihre FDA CFR Title 21-Bereitstellung beschleunigen: [herunterladen des Azure FDA 21-Qualifizierungs Handbuchs](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 Obwohl es keine Zertifizierung für die Einhaltung des CFR-Titels 21 Teil 11 gibt, wurden die folgenden Microsoft Enterprise Cloud-Dienste unabhängigen Drittanbieter-Überprüfungen unterzogen, die Kunden bei ihren Compliance-Bemühungen unterstützen können. Diese Dienste umfassen Folgendes:
 
@@ -71,7 +71,7 @@ Mithilfe der formellen Überprüfungen, die von Drittanbietern für SOC 1 Typ 2,
 
 Von Microsoft implementierte überwachte Steuerelemente tragen zur Sicherstellung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten bei und entsprechen den geltenden regulatorischen Anforderungen in Titel 21 Teil 11, die als Aufgabe von Microsoft festgelegt wurden. In den Qualifizierungs Richtlinien für Azure und Office 365 wird detailliert beschrieben, wie die Microsoft-Überwachungssteuerelemente diesen Anforderungen entsprechen.
 
-**Wie kann ich Kopien der Berichte des Auditors erhalten?**
+**Wie kann ich Kopien der Berichte des Prüfers erhalten?**
 
 Das [Vertrauensstellungsportal](https://aka.ms/stphelp) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Cloud-Dienst Ergebnisse von Microsoft mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
@@ -94,7 +94,3 @@ Microsoft stellt sicher, dass die Enterprise Cloud-Dienste die in den Regeln fü
 - [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) herunter.

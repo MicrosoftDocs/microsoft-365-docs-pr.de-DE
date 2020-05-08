@@ -1,5 +1,5 @@
 ---
-title: Testen oder kaufen eines Microsoft 365-Abonnements
+title: Testen oder Kaufen eines Microsoft 365-Abonnements
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Erfahren Sie, wie Sie eine ﻿kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 erwerben.
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707535"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141054"
 ---
-# <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder kaufen eines Microsoft 365-Abonnements
+# <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder Kaufen eines Microsoft 365-Abonnements
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 ist eine vollständige Lösung, die Office 365 und Windows 10 mit erweiterter Sicherheit und Geräteverwaltung kombiniert. Wenn Sie bereits ein Abonnement haben und ein Microsoft 365-Abonnement testen oder kaufen möchten, ist dies am besten über das Admin Center möglich. Die folgenden Microsoft 365-Abonnements sind im Admin Center verfügbar, damit Sie jetzt versuchen oder kaufen können:
   
@@ -38,7 +45,7 @@ Microsoft 365 ist eine vollständige Lösung, die Office 365 und Windows 10 mit 
 
 Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonnement derselben Organisation (Domänennamespace) wie Ihr vorhandenes Abonnement zugeordnet. Dadurch wird es einfacher, Benutzer in Ihrer Organisation zwischen Abonnements zu migrieren oder Ihnen eine Lizenz für das zusätzliche Abonnement zuzuweisen, das Sie benötigen.
   
-## <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder kaufen eines Microsoft 365-Abonnements
+## <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder Kaufen eines Microsoft 365-Abonnements
 
 ::: moniker range="o365-worldwide"
 

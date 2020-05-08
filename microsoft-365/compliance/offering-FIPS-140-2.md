@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071292"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066580"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>FIPS-Publikation 140-2 (Federal Information Processing Standard)
 
 ## <a name="fips-140-2-standard-overview"></a>FIPS 140-2 Standard (Übersicht)
 
-Die FIPS-Publikation 140-2 (Federal Information Processing Standard) ist ein US-Regierungsstandard, der Mindestanforderungen an die Sicherheit von kryptografischen Modulen in IT-Produkten definiert, wie in Abschnitt 5131 der Informationen definiert. Technology Management Reform Act vom 1996.
+Die FIPS-Publikation 140-2 (Federal Information Processing Standard) ist ein US-Regierungsstandard, der Mindestanforderungen an die Sicherheit von kryptografischen Modulen in IT-Produkten definiert, wie in Abschnitt 5131 des Informationstechnologie-Verwaltungs Reform Gesetzes von 1996 beschrieben.
 
 Das [Cryptographic Module Validation Program](https://csrc.nist.gov/Projects/cryptographic-module-validation-program) (CMVP), eine gemeinsame Anstrengung des US National Institute of Standards and Technology (NIST) und des kanadischen Zentrums für Cyber Security (CCCS), validiert kryptografische Module für die *Sicherheitsanforderungen für kryptografische Module* Standard (dh., FIPS 140-2) und die zugehörigen FIPS Cryptography Standards. Die FIPS 140-2-Sicherheitsanforderungen umfassen 11 Bereiche im Zusammenhang mit dem Entwurf und der Implementierung eines kryptografischen Moduls. Das NIST-Informationstechnologie Labor betreibt ein verwandtes Programm, das die FIPS-genehmigten kryptografischen Algorithmen im Modul validiert.
 
@@ -35,7 +35,7 @@ Microsoft hält eine aktive Verpflichtung zur Erfüllung der 140-2-Anforderungen
 
 Technische Informationen zu Microsoft Windows Cryptographic Modules, die Sicherheitsrichtlinie für jedes Modul und den Katalog mit CMVP-Zertifikatdetails finden Sie unter [Windows und Windows Server FIPS 140-2-Inhalt](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 Während der aktuelle CMVP FIPS 140-2-Implementierungsleitfaden eine FIPS 140-2-Validierung für einen clouddienst selbst ausschließt; Cloud-Dienstanbieter können sich dafür entscheiden, FIPS 140 validierte kryptografische Module für die Datenverarbeitungs Elemente, die ihren clouddienst umfassen, zu erhalten und zu betreiben. Zu den Microsoft Online Services, die Komponenten enthalten, die FIPS 140-2 validiert wurden, gehören unter anderem:
 
@@ -87,7 +87,3 @@ Es handelt sich um zwei separate Sicherheitsstandards mit unterschiedlichen, abe
 - [NIST Cryptographic Module Validation Program](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server und FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf) herunter.

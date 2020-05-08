@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602192"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065730"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Internationaler Handel mit Rüstungs Vorschriften (ITAR)
 
 ## <a name="itar-overview"></a>ITAR-Übersicht
 
-Das US-Außenministerium ist für die Verwaltung des Exports und vorübergehenden Imports von Verteidigungs Artikeln zuständig (d. h. alle Elemente oder technischen Daten, die unter der US-Munitions Liste benannt sind (siehe Titel 22 CFR 121,1), die durch das Rüstungsexport Kontrollgesetz geregelt werden ( Titel 22 USC 2778) und der internationale Handel mit Rüstungs Vorschriften (ITAR) (Titel 22 CFR 120 – 130). Die Direktion für Verteidigungs Handelskontrollen (DDTC) ist für die Verwaltung von Entitäten zuständig, die unter diesen Programmen verwaltet werden.
+Das US-Außenministerium ist für die Verwaltung des Exports und des vorübergehenden Imports von Verteidigungs Artikeln zuständig (d. h. alle Elemente oder technischen Daten, die im Rahmen der US-Munitions Liste, wie Untertitel 22 CFR 121,1), unter dem Rüstungsexport Kontrollgesetz (Titel 22 USC 2778) und dem internationalen Traffic in Arms Regulation (ITAR) (Titel 22 CFR 120 Die Direktion für Verteidigungs Handelskontrollen (DDTC) ist für die Verwaltung von Entitäten zuständig, die unter diesen Programmen verwaltet werden.
 
 ## <a name="microsoft-and-itar"></a>Microsoft und ITAR
 
 Microsoft stellt bestimmte Cloud-Dienste oder Dienstfunktionen bereit, die Kunden mit ITAR-Verpflichtungen unterstützen können. Zwar gibt es keine Konformitätszertifizierung für das ITAR, Microsoft arbeitet und hat in-Scope-Dienste entworfen, um die ITAR-Verpflichtungen und das Compliance-Programm eines Kunden unterstützen zu können.  
   
-Microsoft Azure Regierung und Microsoft Office 365 US-Regierung für die Verteidigung bieten Kunden mit Daten, die dem ITAR unterliegen, zusätzliche vertragliche Verpflichtungen gegenüber Kunden hinsichtlich des Speicherorts gespeicherter Daten und Einschränkungen für die Möglichkeit, auf solche Daten für US-Personen zuzugreifen. Microsoft bietet diese Zusicherung für die Infrastruktur und die Betriebskomponenten dieser staatlichen Cloud-Dienste, aber die Kunden sind letztendlich für den Schutz und die Architektur Ihrer Anwendungen in ihren Umgebungen verantwortlich.  
+Microsoft Azure Regierung und Microsoft Office 365 US-Regierung für die Verteidigung bieten Kunden mit Daten, die dem ITAR unterliegen, zusätzliche vertragliche Verpflichtungen gegenüber Kunden hinsichtlich des Speicherorts gespeicherter Daten und Einschränkungen hinsichtlich der Möglichkeit, auf solche Daten für US-Personen zuzugreifen. Microsoft bietet diese Zusicherung für die Infrastruktur und die Betriebskomponenten dieser staatlichen Cloud-Dienste, aber die Kunden sind letztendlich für den Schutz und die Architektur Ihrer Anwendungen in ihren Umgebungen verantwortlich.  
   
 Kunden müssen zusätzliche Vereinbarungen unterzeichnen, die Microsoft formell darüber informieren, dass Sie ITAR-gesteuerte Daten speichern möchten, damit Microsoft die Verantwortung sowohl für unsere Kunden als auch für die US-Regierung einhalten kann.  
   
@@ -39,7 +39,7 @@ Die ITAR hat bestimmte Verpflichtungen zum Melden von Verstößen, die bestimmte
   
 Kunden, die ITAR-geregelte Daten hosten möchten, sollten mit Ihren Microsoft-Konto-und Lizenzierungs Teams zusammenarbeiten, um weitere Informationen zu erhalten, geeignete Vereinbarungen zu treffen und auf relevante Systemarchitektur Informationen zuzugreifen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure-Regierung](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -58,7 +58,3 @@ Wenden Sie sich an Ihren Microsoft-Konto Vertreter.
 - [Azure-Regierung](https://azure.microsoft.com/features/gov/)
 - [Office 365 US-Regierung](https://products.office.com/government/office-365-web-services-for-government)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf) herunter.
