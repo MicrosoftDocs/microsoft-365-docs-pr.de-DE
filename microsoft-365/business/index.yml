@@ -11,27 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 5f146e4d0ab5a86a3891e2313b93ad307f838ae1
+  ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002180"
+  ms.lasthandoff: 05/07/2020
+  ms.locfileid: "44159943"
 productDirectory:
   title: Sichere Remote Arbeit mit Microsoft 365 Business Premium
   items:
+  - title: Read
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Beste Möglichkeiten zum Aktivieren sicherer Remote-Arbeit mit Microsoft 365 Business Premium.
+    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: Kostenloses Partner Kit abrufen
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Praktische Anleitungen und wechseln Sie zu Markt Ressourcen für Partner, um sichere Remote-Arbeit zu ermöglichen.
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Was sind die Neuerungen?
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 kommt zu Microsoft 365 Business Premium!
     url: https://aka.ms/aadp1smbblog
-  - title: Partner-Webinar ansehen
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Sorgen Sie für Sicherheit für Ihre KMU-Kunden in COVID-19-Zeiten.
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-  - title: Lesen
-    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Beste Möglichkeiten zum Aktivieren sicherer Remote-Arbeit mit Microsoft 365 Business Premium.
-    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
   - title: Was ist Microsoft 365 Business Premium?
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: Pitch-Deck (für Partner)
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: Technische Grundlagen
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
