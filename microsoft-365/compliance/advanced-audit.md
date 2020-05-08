@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632280"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141043"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -93,7 +93,7 @@ Dem Benutzer muss eine E5-Lizenz zugewiesen werden, um von der erweiterten Über
 
 **Warum wird die erweiterte Überwachung in meiner Organisation nicht angezeigt, obwohl wir über ein E5-Abonnement und Benutzer mit E5-Lizenzen verfügen?**
 
-Es ist möglich, dass Features der erweiterten Überwachung (z. B. die Möglichkeit, Aufbewahrungsrichtlinien für Überwachungsprotokolle und die Protokollierung von MailItemsAccessed-Überwachungsdatensätzen zu erstellen) in Ihrer Organisation nicht verfügbar sind, selbst wenn die korrekte Lizenzierung vorhanden ist. Wenn Ihnen das passiert, liegt es daran, dass das Rollout des Pakets der erweiterten Überwachung für Ihre Organisation noch nicht erfolgt ist. Hierbei handelt es sich um ein vorübergehendes Problem des Lizenzabgleichs, das für die betroffenen Organisationen in den nächsten Wochen gelöst werden sollte. Um dieses Problem zu entschärfen, führen Sie bitte die folgenden Schritte für jeden E5-Benutzer durch:
+Es ist möglich, dass Features der erweiterten Überwachung (z. B. die Möglichkeit, Aufbewahrungsrichtlinien für Überwachungsprotokolle und die Protokollierung von MailItemsAccessed-Überwachungsdatensätzen zu erstellen) in Ihrer Organisation nicht verfügbar sind, selbst wenn die korrekte Lizenzierung vorhanden ist. Wenn Ihnen das passiert, liegt es daran, dass das Rollout des Pakets der erweiterten Überwachung für Ihre Organisation noch nicht erfolgt ist. Hierbei handelt es sich um ein vorübergehendes Problem des Lizenzabgleichs, das für die betroffenen Organisationen bald gelöst werden sollte. Um dieses Problem zu entschärfen, führen Sie bitte die folgenden Schritte für jeden E5-Benutzer durch:
 
 1. Wählen Sie im Microsoft 365 Admin Center unter **Benutzer > Aktive Benutzer** einen Benutzer aus.
 
@@ -106,6 +106,8 @@ Es ist möglich, dass Features der erweiterten Überwachung (z. B. die Möglich
    b. Wenn das Kontrollkästchen **Microsoft 365 – Erweiterte Überwachung** aktiviert ist, deaktivieren Sie es, und klicken Sie dann auf **Änderungen speichern**. Siehe Schritt 4.
 
 4. Wenn Sie das Kontrollkästchen in Schritt 3 deaktiviert haben, warten Sie 60 Minuten, und wiederholen Sie dann Schritt 3a, um die App "Microsoft 365 – Erweiterte Überwachung" zu aktivieren.
+
+Für Organisationen, die Gruppen von Benutzern mithilfe einer gruppenbasierten Lizenzierung Lizenzen zuweisen, müssen Sie die Lizenzzuweisung für Microsoft 365 Advanced Auditing für die Gruppe deaktivieren. Nachdem Sie die Änderungen gespeichert haben, stellen Sie sicher, dass Microsoft 365 Erweiterte Überwachung für die Gruppe deaktiviert ist. Aktivieren Sie dann die Lizenzierungszuordnung für die Gruppe wieder. Lesen Sie [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) für Anweisungen zur gruppenbasierten Lizenzierung.
 
 **Was passiert, wenn meine Organisation die private Vorschauversion für die einjährige Aufbewahrung von Überwachungsdatensätze verwendet hat?**
 

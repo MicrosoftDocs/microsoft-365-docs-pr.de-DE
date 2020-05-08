@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Hier erfahren Sie, wie Sie Ihr Abonnement erneut aktivieren, wenn es abläuft, oder wenn es von Microsoft deaktiviert wird, oder wenn Sie es in der Mitte abbrechen.
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046240"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141098"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Wenn Ihr Abonnement abläuft oder von Microsoft deaktiviert wurde oder wenn Sie es in der Mitte eines Abonnementzeitraums storniert haben, können Sie es im Admin Center reaktivieren.
   

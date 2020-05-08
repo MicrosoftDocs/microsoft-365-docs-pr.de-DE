@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 7a130275588b765514162cd08e37d9d5e512a409
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165900"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066160"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
@@ -40,7 +40,7 @@ Für Cloud-Dienstanbieter gibt es keine GxP-Zertifizierung; aber:
 
 Obwohl sich diese Standards und Best practices nicht speziell auf die regulatorische Compliance mit GxP beziehen, sind ihr Zweck und ihre Ziele ähnlich und tragen dazu bei, die Vertraulichkeit, Integrität und Verfügbarkeit der in Microsoft Cloud Services gespeicherten Daten sicherzustellen.
 
-Microsoft beauftragte [Montrium](https://www.montrium.com/), eine unabhängige Organisation, die sich auf Qualitätssicherung und regulatorische GxP-Compliance für die Life-Science-Industrie spezialisiert hat, mit der Durchführung der GxP-Qualifikationsprüfung für Microsoft. Die daraus resultierenden Qualifizierungsrichtlinien ([Azure](https://aka.ms/gxpcompliance) und [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) richten sich an Life Sciences-Organisationen, die planen, diese Clouddienste für das Hosting und den Support von GxP-geregelten computergestützten Systemen zu nutzen. Die Richtlinien legen die gemeinsame Verantwortung von Microsoft und seinen Kunden für die Erfüllung der GxP-Anforderungen fest und empfehlen Aktivitäten und Kontrollen, die Kunden, die Microsoft Cloud Services im Leistungsumfang nutzen, einführen können, um die Kontrolle über die computergestützten GxP-Systeme zu behalten.
+Microsoft beauftragte [Montrium](https://www.montrium.com/), eine unabhängige Organisation, die sich auf Qualitätssicherung und regulatorische GxP-Compliance für die Life-Science-Industrie spezialisiert hat, mit der Durchführung der GxP-Qualifikationsprüfung für Microsoft. Die daraus resultierenden Qualifizierungsrichtlinien ([Azure](https://aka.ms/gxpcompliance) und [Office 365](https://aka.ms/o365-qualification-guideline)) richten sich an Life Sciences-Organisationen, die planen, diese Clouddienste für das Hosting und den Support von GxP-geregelten computergestützten Systemen zu nutzen. Die Richtlinien legen die gemeinsame Verantwortung von Microsoft und seinen Kunden für die Erfüllung der GxP-Anforderungen fest und empfehlen Aktivitäten und Kontrollen, die Kunden, die Microsoft Cloud Services im Leistungsumfang nutzen, einführen können, um die Kontrolle über die computergestützten GxP-Systeme zu behalten.
 
 Life Sciences-Organisationen, die GxP-Lösungen auf Azure und Office 365 entwickeln, können die Vorteile der Cloud nutzen und gleichzeitig Patientensicherheit, Produktqualität und Datenintegrität schützen. Kunden profitieren auch von mehreren Ebenen von Sicherheits- und Governance-Technologien, Betriebsverfahren und Compliance-Richtlinien, die Datenschutz und Integrität auf bestimmten Ebenen durchsetzen.
 
@@ -53,7 +53,7 @@ Life Sciences-Organisationen, die GxP-Lösungen auf Azure und Office 365 entwick
 
 - [Azure GxP-Richtlinien](https://aka.ms/gxpcompliance): Ein umfassendes Toolset für die Nutzung von Azure unter Einhaltung der GxP Best Practices und Bestimmungen.
 - [Verwenden von Azure mit GxP-Systemen](https://aka.ms/GXP-Azure-Strategies): Unterstützen von Life Sciences-Organisationen bei der Entwicklung einer Strategie zur Erstellung von GxP-Anwendungen.
-- FDA CFR Title 21 Part 11 Guides: Erhalten Sie Unterstützung beim Erstellen einer Qualifizierungsstrategie für [Azure](https://aka.ms/Azure-FDA-Guidelines) und [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf), die den FDA-Richtlinien für elektronische Datensätze entspricht.
+- FDA CFR Title 21 Part 11 Guides: Erhalten Sie Unterstützung beim Erstellen einer Qualifizierungsstrategie für [Azure](https://aka.ms/Azure-FDA-Guidelines) und [Office 365](https://aka.ms/o365-qualification-guideline), die den FDA-Richtlinien für elektronische Datensätze entspricht.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -67,7 +67,3 @@ Kunden, die Anwendungen auf Azure bereitstellen, sollten die GxP-Anforderungen b
 - [Microsoft und ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft und ISO 9001](offering-iso-9001.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf) herunter.

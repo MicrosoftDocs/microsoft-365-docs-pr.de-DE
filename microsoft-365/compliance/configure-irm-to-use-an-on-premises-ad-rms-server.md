@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in Exchange Online für die Verwendung eines Active Directory Rights Management Service (AD RMS)-Servers konfigurieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 510dc7ea628a46bc5bedfc04ba3b197407d5d67d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033695"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166116"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
 Für die Verwendung mit lokalen Bereitstellungen verwendet die Verwaltung von Informationsrechten (Information Rights Management, IRM) in Exchange Online Active Directory Rights Management Services (AD RMS), eine Informationsschutztechnologie in Windows Server 2008 und höher. IRM-Schutz wird auf E-Mails angewendet, indem eine AD RMS-Berechtigungsrichtlinienvorlage auf eine E-Mail angewendet wird. Rechte werden der Nachricht selbst zugeordnet, sodass der Schutz sowohl online und offline als auch innerhalb und außerhalb der Firewall der Organisation stattfindet.
   
-Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert. Informationen zum Verwenden der neuen Funktionen für Office 365 Nachrichtenverschlüsselung mit Azure Active Directory und Azure Rights Management finden Sie in der [Office 365 FAQ zur Nachrichtenverschlüsselung](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert. Informationen zum Verwenden der neuen Funktionen für Office 365 Nachrichtenverschlüsselung mit Azure Active Directory und Azure Rights Management finden Sie in der [Office 365 FAQ zur Nachrichtenverschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
   
 Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von Informationsrechten in Exchange Online](information-rights-management-in-exchange-online.md).
   

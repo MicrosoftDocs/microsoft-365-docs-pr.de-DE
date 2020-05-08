@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065820"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162677"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -91,17 +91,19 @@ Das Insider Risk Management unterstützt das Importieren von Benutzer-und Protok
 Lesen Sie den Abschnitt [Einrichten eines Connectors zum Importieren von HR-Daten](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten. Wenn Sie den HF-Connector konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
 
 >[!IMPORTANT]
->Wenn Sie ein p'licy mithilfe der *emplo'ee-Datendiebstahl* Vorlage konfigurieren, müssen Sie den HR-Connector so konfigurieren, dass er die vollständigen Signal Erkennungs Features der Richtlinienvorlage verwendet. Wenn Sie mehr als einen HF-Connector für Ihre Organisation konfigurieren, ruft das Insider Risikomanagement automatisch Indikatoren von allen HR-Connectors ab.
+>Wenn Sie eine Richtlinie mithilfe der *Datendiebstahl* Vorlage für den abgehenden Mitarbeiter konfigurieren, müssen Sie den HR-Connector so konfigurieren, dass er die vollständigen Signal Erkennungsfunktionen der Richtlinienvorlage verwendet. Wenn Sie mehr als einen HF-Connector für Ihre Organisation konfigurieren, ruft das Insider Risikomanagement automatisch Indikatoren von allen HR-Connectors ab.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Konfigurieren von Richtlinien zur Verhinderung von Datenverlust (DLP)
 
-Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen zu identifizieren. Wenn Sie eine Richtlinie für Insider-Risikomanagement mit der Vorlage *Datenlecks* konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen. Diese Richtlinie hilft, die Warnindikatoren für vertrauliche Informationen zu konfigurieren, ist ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation.
+Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen zu identifizieren. Wenn Sie eine Richtlinie für Insider-Risikomanagement mit der Vorlage *Datenlecks* konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen.
 
-Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu dieser Konfigurationsdatei "Ration Steps" zurück. "" "" "" "" "" ""
+Diese Richtlinie unterstützt das Risikomanagement von Insider-Indikatoren für DLP-Warnungen mit hohem Schweregrad für vertrauliche Informationen und ist ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation. Wenn Sie mehr als eine DLP-Richtlinie für Ihre Organisation konfigurieren, müssen Sie pro DLP-Richtlinie eine Richtlinie für Insider-Risikomanagement zuweisen.
+
+Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
 
 >[!IMPORTANT]
->Wenn Sie eine Richtlinie mit der Vorlage *Datenlecks* konfigurieren, müssen Sie mindestens eine DLP-Richtlinie konfigurieren, um die vollständigen Signal Erkennungs Features der Richtlinienvorlage zu verwenden. Wenn Sie mehr als eine DLP-Richtlinie für Ihre Organisation konfigurieren, müssen Sie pro DLP-Richtlinie eine Richtlinie für Insider-Risikomanagement zuweisen.
-""""""""
+>Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
+
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Schritt 4 (erforderlich): Konfigurieren von Einstellungen für Insider Risiken
 
 Die [Einstellungen für Insider Risiken](insider-risk-management-policies.md#policy-settings) gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Einstellungen werden mit dem Steuerelement " **Insider Risk Settings** " konfiguriert, das sich oben auf allen Registerkarten für das Insider Risikomanagement befindet. Mit diesen Einstellungen werden Datenschutz, Indikatoren, Überwachungsfenster und intelligente Erkennungen gesteuert.

@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Hier erfahren Sie, wie Sie mit Office 365 Nachrichtenverschlüsselung eine Richtlinie für vertrauliche Informationstypen für Ihre Organisation erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031405"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165956"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Erstellen einer Richtlinie für vertrauliche Informationstypen für Ihre Organisation mithilfe der Nachrichtenverschlüsselung
 
@@ -64,7 +64,7 @@ Nachdem Microsoft eine Nachricht verschlüsselt hat, haben die Empfänger uneing
 
 Möglicherweise möchten Sie alle anwendbaren Endbenutzer Dokumentationen und Schulungsunterlagen aktualisieren, um Personen in Ihrer Organisation für diese Änderung vorzubereiten. Geben Sie diese Office 365 Nachrichten Verschlüsselungs Ressourcen für Ihre Benutzer frei, je nach Bedarf:
 
-- [Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook für PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook für PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Microsoft 365 Essentials-Video: Office-Nachrichtenverschlüsselung](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Anzeigen dieser Änderungen im Überwachungsprotokoll

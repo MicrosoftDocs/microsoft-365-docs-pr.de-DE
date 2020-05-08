@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066204"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159932"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -44,7 +44,7 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 |**Bereich**|**Richtlinienvorlage**|**Details**|
 |:-----|:-----|:-----|
 | **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
-| **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und-Typen, benutzerdefinierte wörterbuchoption, Anlagen größer als 1 MB |
+| **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und Typen, Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 | **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
@@ -62,7 +62,7 @@ Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermi
 
 Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
-Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überprüft die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, scannt die Richtlinie einzelne Benutzerpostfächer.
+Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überprüft die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, scannt die Richtlinie einzelne Benutzerpostfächer. Das Hinzufügen von Gruppen und Verteilerlisten zu Kommunikations Konformitätsrichtlinien ist Teil der allgemeinen Bedingungen und Regeln, sodass die maximale Anzahl von Gruppen und Verteilerlisten, die eine Richtlinie unterstützt, abhängig von der Anzahl der Bedingungen variiert, die auch der Richtlinie hinzugefügt werden. Jede Richtlinie sollte je nach der Anzahl der in der Richtlinie vorhandenen zusätzlichen Bedingungen ungefähr 20 Gruppen oder Verteilerlisten unterstützen.
 
 ## <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 

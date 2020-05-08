@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Microsoft 365 erstellen, indem Sie eine Aufbewahrungs-oder Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer des Haltestatus oder der Aufbewahrungsrichtlinie aufbewahrt, die auf Sie angewendet wurde, bevor Sie inaktiv gemacht wurde. Um ein inaktives Postfach endgültig zu löschen, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048014"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166086"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Erstellen und Verwalten inaktiver Postfächer
 
@@ -63,7 +63,7 @@ Eine schrittweise Anleitung für das Platzieren eines Postfachs für das Beweiss
   
 ### <a name="step-2-delete-the-mailbox"></a>Schritt 2: Löschen des Postfachs
 
-Nachdem das Postfach gespeichert wurde oder eine Aufbewahrungsrichtlinie angewendet wurde, besteht der nächste Schritt darin, das Postfach zu löschen. Die beste Möglichkeit zum Löschen eines Postfachs ist das Löschen des entsprechenden Benutzerkontos im Microsoft 365 Admin Center. Informationen zum Löschen von Benutzerkonten finden Sie unter [Löschen eines Benutzers aus Ihrer Organisation](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Nachdem das Postfach gespeichert wurde oder eine Aufbewahrungsrichtlinie angewendet wurde, besteht der nächste Schritt darin, das Postfach zu löschen. Die beste Möglichkeit zum Löschen eines Postfachs ist das Löschen des entsprechenden Benutzerkontos im Microsoft 365 Admin Center. Informationen zum Löschen von Benutzerkonten finden Sie unter [Löschen eines Benutzers aus Ihrer Organisation](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
   
 > [!NOTE]
 > Sie können das Postfach auch mit dem **Remove-Mailbox** -Cmdlet in Exchange Online PowerShell löschen. Weitere Informationen finden Sie unter [Löschen oder Wiederherstellen von Benutzerpostfächern in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 

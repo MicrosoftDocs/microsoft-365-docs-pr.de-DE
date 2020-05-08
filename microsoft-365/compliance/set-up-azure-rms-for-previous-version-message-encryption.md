@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: Die frühere Version von Office 365 Nachrichtenverschlüsselung hängt von der Microsoft Azure Rights Management (bisher als Windows Azure Active Directory Rights Management bezeichnet) ab.
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943264"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165916"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Einrichten von Azure Rights Management für die vorherige Version der Nachrichtenverschlüsselung
 
@@ -58,7 +58,7 @@ Ein TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rech
 
 2. Wählen Sie die URL für die Schlüssel Freigabe aus, die dem geografischen Standort Ihrer Organisation entspricht:
 
-|**Ort**|**URL für den Schlüssel Freigabespeicherort**|
+|**Location**|**URL für den Schlüssel Freigabespeicherort**|
 |:-----|:-----|
 |Nordamerika  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Europäische Union  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -116,7 +116,7 @@ Sie können weiterhin die e-Mail-Flussregeln für Nachrichtenverschlüsselung in
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="importTPDs"> </a>
 
-Wenn Sie das Azure Rights Management-Setup abgeschlossen haben, wenn Sie die neuen OM-Funktionen aktivieren möchten, finden Sie weitere Informationen unter [Einrichten von neuen Office 365 Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren.](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)
+Wenn Sie das Azure Rights Management-Setup abgeschlossen haben, wenn Sie die neuen OM-Funktionen aktivieren möchten, finden Sie weitere Informationen unter [Einrichten von neuen Office 365 Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
   
 Nachdem Sie Ihre Organisation für die Verwendung der neuen OM-Funktionen eingerichtet haben, sind Sie bereit, e- [Mail-Flussregeln zu definieren, um e-Mail-Nachrichten mit neuen OM-Funktionen zu schützen](define-mail-flow-rules-to-encrypt-email.md).
   

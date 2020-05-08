@@ -17,13 +17,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informationen zum Suchen und Finden personenbezogener Daten in Office 365.
-ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier erfahren Sie, wie Sie personenbezogene Daten suchen und finden, die den allgemeinen Datenschutzbestimmungen (DSGVO) in Office 365 unterliegen.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638129"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036410"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 

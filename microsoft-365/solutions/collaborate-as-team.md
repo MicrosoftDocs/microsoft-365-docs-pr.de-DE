@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit mit Gästen in Teams erforderlich sind.
-ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036007"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160027"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -128,7 +128,7 @@ So legen Sie die Standard Link Einstellungen für die SharePoint-Organisationseb
 2. Wählen Sie unter **Datei-und Ordner Links**den standardmäßigen Freigabe Link aus, den Sie verwenden möchten.
 3. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-## <a name="create-a-team"></a>Ein Team erstellen
+## <a name="create-a-team"></a>Team erstellen
 
 Der nächste Schritt besteht darin, das Team zu erstellen, das Sie für die Zusammenarbeit mit Gästen verwenden möchten.
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Teamwebsite für die Dateispeicherung und-Freigabe anpassen, organisieren und verwalten.
-ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155281"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165107"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
@@ -77,7 +77,7 @@ Informationen zum Erweitern der Listen mit weiteren Spalten finden Sie unter [Er
   
 Wenn Sie viele Daten in einer Liste speichern, finden Sie weitere Informationen unter [Verwalten umfangreicher Listen und Bibliotheken in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Sehen Sie sich ein Video zum Hinzufügen von Kalendern zu Ihrer Website an, siehe [Erstellen eines freigegebenen Kalenders](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Sehen Sie sich ein Video zum Hinzufügen von Kalendern zu Ihrer Website an, siehe [Erstellen eines freigegebenen Kalenders](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798).
 
 ## <a name="organize-sites-into-hubs"></a>Organisieren von Websites in Hubs
 
@@ -87,7 +87,7 @@ Hub-Standorte ermöglichen das Hinzufügen und Zuordnen von Websites. Weitere In
   
 Informationen zum Erstellen eines Hub-Standorts finden Sie unter [Create a Hub Site in SharePoint Online](/sharepoint/create-hub-site).
   
-Informationen zum Hinzufügen von Websites zu einem Hub-Standort finden Sie unter [Zuordnen einer SharePoint-Website zu einem Hub](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx)-Standort.
+Informationen zum Hinzufügen von Websites zu einem Hub-Standort finden Sie unter [Zuordnen einer SharePoint-Website zu einem Hub](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05)-Standort.
   
 ## <a name="sharing-files-with-the-team"></a>Freigeben von Dateien für das Team
 
@@ -115,7 +115,7 @@ Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten v
     
   - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Weitere Informationen zum Verwenden von OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

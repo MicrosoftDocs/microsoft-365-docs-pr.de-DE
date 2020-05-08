@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Sie haben die Möglichkeit, eDiscovery-Suchergebnisse zu deduplizieren, die exportiert werden, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl möglicherweise mehrere Instanzen derselben Nachricht in unterschiedlichen Postfächern gefunden wurden.
-ms.openlocfilehash: 17bfb7581da1147c7de8cae0437fe91316a3fcb6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943132"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166046"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
@@ -84,4 +84,4 @@ Eindeutige Nachrichten können auch als Duplikate markiert werden, wenn das Feat
 
   - [Exportieren von in-Place-eDiscovery-Suchergebnissen in eine PST-Datei](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [Exportieren von Inhalten und Erstellen von Berichten im eDiscovery Center](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [Exportieren von Inhalten und Erstellen von Berichten im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
