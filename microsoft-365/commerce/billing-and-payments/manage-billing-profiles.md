@@ -1,5 +1,7 @@
 ---
-title: Verwalten von Abrechnungs Profilen
+title: Verwalten von Abrechnungsprofilen
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Rechnungen durch Abrechnungsprofile unterstützt werden.
 keywords: Abrechnungsprofil, Rechnungen, Gebühren, verwaltete Gebühren
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837389"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140890"
 ---
-# <a name="manage-billing-profiles"></a>Verwalten von Abrechnungs Profilen
+# <a name="manage-billing-profiles"></a>Verwalten von Abrechnungsprofilen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Für kommerzielle Kunden, die Produkte und Dienste von Microsoft kaufen, können Sie mit Abrechnungs Profilen anpassen, welche Elemente in Ihrer Rechnung enthalten sind, und wie Sie Ihre Rechnungen bezahlen.
 
 Abrechnungsprofile umfassen die folgenden Informationen:
@@ -51,7 +61,7 @@ Rollen in Abrechnungs Profilen besitzen Berechtigungen zum Steuern von Käufen s
 
 ## <a name="view-billing-profiles"></a>Anzeigen von Abrechnungs Profilen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills #a0 Zahlungen</a> .
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Rechnungen & Zahlungen</a>.
 
 2. Wählen Sie **Abrechnungsprofile**aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
 

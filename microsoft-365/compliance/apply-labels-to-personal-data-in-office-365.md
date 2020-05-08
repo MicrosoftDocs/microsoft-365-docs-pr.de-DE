@@ -16,13 +16,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO- (Datenschutz-Grundverordnung) Schutzplans verwenden können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636283"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165258"
 ---
 # <a name="apply-labels-to-personal-data"></a>Anwenden von Bezeichnungen auf personenbezogene Daten
 
@@ -181,7 +182,7 @@ Erstellen Sie Bezeichnungen und Richtlinien im Security Center oder Compliance C
 <tr class="odd">
 <td align="left"><p>Gewähren von Berechtigungen für Mitglieder Ihres Complianceteams</p></td>
 <td align="left"><p>Die Mitglieder Ihres Complianceteams, die Bezeichnungen erstellen sollen, benötigen Berechtigungen für das Security Center und/oder das Compliance Center. Gehen Sie im Security Center oder im Compliance Center zu „Berechtigungen“ und ändern Sie die Mitglieder der Gruppe „Complianceadministrator“.</p>
-<p>Einzelheiten hierzu finden Sie unter <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Gewähren des Zugriffs auf das Security Center und/oder Compliance Center</a>.</p></td>
+<p>Einzelheiten hierzu finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Gewähren des Zugriffs auf das Security Center und/oder Compliance Center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Erstellen Sie Aufbewahrungsbezeichnungen.</p></td>

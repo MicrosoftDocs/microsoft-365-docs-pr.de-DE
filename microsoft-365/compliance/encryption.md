@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und in der Übertragung mit der stärksten Verschlüsselung, den verfügbaren Protokollen und Technologien verschlüsselt. Erhalten Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: fdd1c50c7fde1892b5bab4ad83cddf8e032f4d61
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631680"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166006"
 ---
 # <a name="encryption"></a>Verschlüsselung
 
@@ -63,7 +63,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
   
 - [Was ist Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Aktivieren der Rechteverwaltung im Admin Center](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Aktivieren der Rechteverwaltung im Admin Center](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -75,7 +75,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 |:-----|:-----|
 |Einrichten der Verschlüsselung für meine Organisation  <br/> |[Einrichten der Verschlüsselung in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Anzeigen von Details zu Zertifikaten, Technologien und TLS-Verschlüsselungs Paketen <br/> |[Technische Details zur Verschlüsselung](technical-reference-details-about-encryption.md) <br/> |
-|Arbeiten mit verschlüsselten Nachrichten auf einem mobilen Gerät  <br/> |[Anzeigen von verschlüsselten Nachrichten auf Ihrem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Verschlüsselte Nachrichten auf Ihrem iPhone oder iPad anzeigen](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
+|Arbeiten mit verschlüsselten Nachrichten auf einem mobilen Gerät  <br/> |[Anzeigen von verschlüsselten Nachrichten auf Ihrem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Verschlüsselte Nachrichten auf Ihrem iPhone oder iPad anzeigen](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |Verschlüsseln eines Dokuments mithilfe des Kennwortschutzes  <br/><br/>  Der Kennwortschutz wird in einem Browser nicht unterstützt. Verwenden Sie Desktop Versionen von Word, Excel und PowerPoint für den Kennwortschutz. |[Hinzufügen oder Entfernen von Schutz in Ihrem Dokument, in einer Arbeitsmappe oder in einer Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Wählen Sie einen Abschnitt **Schutz hinzufügen** aus, und lesen Sie dann **verschlüsseln mit Kennwort**.  |
 |Entfernen der Verschlüsselung aus einem Dokument  <br/> |[Hinzufügen oder Entfernen von Schutz in Ihrem Dokument, in einer Arbeitsmappe oder in einer Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Wählen Sie einen Abschnitt zum **Entfernen des Schutzes** aus, und entfernen Sie dann die **Kennwortverschlüsselung**.  |
 

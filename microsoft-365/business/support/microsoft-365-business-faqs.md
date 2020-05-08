@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, KMU, FAQ, häufig gestellte Fragen, Antworten, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 68e085313b0344f9e48ddfa9124c1d2d7297ae45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635082"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065833"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Häufig gestellte Fragen für Microsoft 365 Business Premium
 
@@ -48,7 +48,7 @@ Microsoft 365 ist eine integrierte Lösung, die erstklassige Produktivitätstool
 * Optimierte Bereitstellung von PCs mit Windows AutoPilot.
 
 **Andere Berechtigungen** 
-- Microsoft 365 Business Premium-Kunden haben außerdem Zugriff auf die Aktivierungsfunktionen von Windows Virtual Desktop und Office Shared Computer. Lesen Sie den [Microsoft 365 Business Premium-Blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog), um mehr zu erfahren. Siehe auch die [Dienstbeschreibung für Microsoft 365 for Business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium-Kunden haben außerdem Zugriff auf die Aktivierungsfunktionen von Windows Virtual Desktop und Office Shared Computer. Lesen Sie den [Microsoft 365 Business Premium-Blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog), um mehr zu erfahren. Siehe auch die [Microsoft 365 for Business-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>Wer sollte die Übernahme von Microsoft 365 Business Premium in Betracht ziehen? 
 Microsoft 365 Business Premium ist eine umfassende, Cloud-basierte Sicherheitslösung, die es Ihnen ermöglicht:  
@@ -85,7 +85,7 @@ Auch die vorhandene Desktopanwendungskompatibilität (Win32) in Windows 10 ist h
 ### <a name="what-is-windows-10-business"></a>Was ist Windows 10 Business? 
 Windows 10 Business ist ein Satz von Cloud-Diensten und Geräte-Management-Funktionen, die Windows 10 Pro ergänzen und die zentralisierten Verwaltungs- und Sicherheitskontrollen von Microsoft 365 Business Premium aktivieren.
 
-Windows 10 Business enthält außerdem bestimmte Premiumfunktionen von Microsoft Defender wie den kontrollierten Ordnerzugriff und den Netzwerkschutz für webbasierte Threads. Es umfasst auch Windows AutoPilot, einen Dienst, der die Bereitstellung der neuen Windows 10-PCs optimiert.
+Windows 10 Business wird auch mit bestimmten Premium-Features von Microsoft Defender ausgeliefert, wie Zugriff auf kontrollierte Ordner und Netzwerkschutz für webbasierte Bedrohungen. Es umfasst auch Windows AutoPilot, einen Dienst, der die Bereitstellung der neuen Windows 10-PCs optimiert.
 
 Bei Geräten, die für Windows 7, 8 und 8.1 Professional lizensiert sind, bietet Microsoft 365 Business Premium ein Upgrade auf Windows 10 Pro als Voraussetzung für die Bereitstellung von Windows 10 Business.
 > [!IMPORTANT]
@@ -130,7 +130,7 @@ Kunden, welche die vollständige Microsoft 365 Business Premium-Funktionen nutze
 ## <a name="deployment"></a>Bereitstellung
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-premium-deployment"></a>Was sollten Kunden bei der Planung einer Bereitstellung von Microsoft 365 Business Premium berücksichtigen? 
-Der direkteste Pfad für eine erfolgreiche Bereitstellung von Microsoft 365 Business Premium ist durch die Interaktion mit einem Microsoft-Partner. Sie bieten umfassendes Training und Erfahrung im Umgang mit einer Vielzahl von Kundenszenarien und sind am besten geeignet, Ihre Umgebung und Anforderungen zu verstehen. Kunden, die erfahrene IT-Mitarbeiter haben, können die <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Ersten Schritte mit Microsoft 365 Business Premium</a> nutzen, um sie bei der Bereitstellung mit Microsoft 365 Business Premium zu unterstützen. 
+Der direkteste Pfad für eine erfolgreiche Bereitstellung von Microsoft 365 Business Premium ist durch die Interaktion mit einem Microsoft-Partner. Sie bieten umfassendes Training und Erfahrung im Umgang mit einer Vielzahl von Kundenszenarien und sind am besten geeignet, Ihre Umgebung und Anforderungen zu verstehen. Kunden, die erfahrene IT-Mitarbeiter haben, können die <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Ersten Schritte mit Microsoft 365 Business Premium</a> nutzen, um sie bei der Bereitstellung mit Microsoft 365 Business Premium zu unterstützen. 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Ist die gesamte Funktionalität von Microsoft Intune in Microsoft 365 Business Premium enthalten? 
 Ja, Microsoft 365 Business Premium-Abonnenten sind lizenziert, die vollen Intune-Funktionen für iOS, Android, MacOS und andere plattformübergreifende Geräteverwaltung zu nutzen. Funktionen, die in der vereinfachten Verwaltungskonsole in Microsoft 365 Business Premium nicht verfügbar sind, wie die Verwaltung von Anwendungen von Drittanbietern und die Konfiguration von WLAN-Profilen und VPN-Zertifikaten, können in der vollständigen Intune-Konsole verwaltet werden. 

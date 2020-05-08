@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Schützen Sie sich gegen Phishing und andere Angriffe mit Microsoft 365 für Kampagnen.
-ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080602"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165709"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Schützen Sie sich vor Phishing und anderen Angriffen
 
@@ -43,7 +43,7 @@ Microsoft 365 umfasst viele Schutzmaßnahmen gegen Angriffe, aber es gibt Dinge,
 
 **Spam-e-Mails reduzieren**
 
-Befolgen Sie diese [10 Tipps, wie Sie Spam reduzieren können](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Befolgen Sie diese [10 Tipps, wie Sie Spam reduzieren können](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 **Melden Sie es!**
 
@@ -74,6 +74,6 @@ Laden Sie diese Infografik mit Tipps für Sie und die Mitglieder Ihres Kampagnen
 ## <a name="set-it-up"></a>Einrichtung
 
 Erfahren Sie mehr über die folgenden Vorgehensweise:
-- [Schützen Sie Ihre Dateien und ihre Kommunikation mit Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Schützen Sie Ihre Dateien und ihre Kommunikation mit Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Sicher und privat bei der Arbeit bleiben](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

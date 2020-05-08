@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 04b14f913a9b513ee5235223315daa2611395854
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 931aab574fd5bea59c2dca997fdff02db8a2e1c6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363031"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066642"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>Die Finanzaufsichtsbehörde (AMF) und die Aufsichts- und Beschlussaufsichtsbehörde (ACPR) Frankreich
 
@@ -76,8 +76,3 @@ Ja. Artikel 239 der [ACPR-Verordnung vom 3. November 2014](https://www.legifranc
 - [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risikobewertungstool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf) herunter.
-

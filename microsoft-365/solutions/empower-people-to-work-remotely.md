@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Dienstinfrastruktur, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: af5246971de87866c41eb90ec8524e567cfd48f1
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 7e396c509431772b9f044c24fdeb230b82241c60
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049534"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160917"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 

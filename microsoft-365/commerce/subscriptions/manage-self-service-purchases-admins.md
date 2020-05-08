@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Administratoren können sich mit der Verwaltung von Self-Service-Käufen von Benutzern in Ihrer Organisation vertraut machen.
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046180"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141150"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Self-Service-Einkäufe (Administrator) verwalten
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Als Administrator können Sie Self-Service-Käufe anzeigen, die von Personen in Ihrer Organisation getätigt wurden. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Kaufpreis und die zugewiesenen Benutzer für jeden Self-Service-Einkauf sehen. Wenn es für Ihre Organisation erforderlich ist, können Sie Self-Service-Einkauf pro Produkt über PowerShell deaktivieren. Sie haben die gleichen Datenverwaltungsdienste und Zugriffsrichtlinien für Produkte, die über Self-Service Purchase oder zentral erworben wurden.
 

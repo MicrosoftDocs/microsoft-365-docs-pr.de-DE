@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228521"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066298"
 ---
 # <a name="us-section-508"></a>U.S.-Abschnitt 508
 
 ## <a name="about-us-section-508"></a>Informationen zum US-Abschnitt 508
 
-Der US-amerikanische Kongreß hat das Rehabilitationsgesetz in 1998 und 2000 so geändert, dass Bundesbehörden ihre Produkte für elektronische und Informationstechnologien (ETI) wie Software, Hardware, elektronische Inhalte und Support Dokumentation für Personen mit Behinderungen. In Abschnitt 508 des United States Workforce Rehabilitation Act von 1973 (29 US Code § 794d), geändert, wird festgeschrieben, dass die Bundesbehörden das ETI in einer Weise beschaffen, verwalten und nutzen, die sicherstellt, dass Bundesangestellte mit Behinderungen vergleichbaren Zugriff auf und die Verwendung von haben. Daten und EIT im Verhältnis zu anderen Bundesangestellten.
+Der US-amerikanische Kongreß hat das Rehabilitationsgesetz in 1998 und 2000 so geändert, dass Bundesbehörden ihre Produkte für elektronische und Informationstechnologie (ETI) wie Software, Hardware, elektronische Inhalte und Support Dokumentation für Personen mit Behinderungen zugänglich machen müssen. In Abschnitt 508 des United States Workforce Rehabilitation Act von 1973 (29 US Code § 794d), geändert, wird das Mandat erteilt, dass föderale Behörden das ETI in einer Weise beschaffen, verwalten und nutzen, die sicherstellt, dass Bundesangestellte mit Behinderungen vergleichbaren Zugriff auf und die Verwendung von Daten und EIT im Vergleich zu anderen Bundesangestellten haben.
 
 Microsoft ist ein wichtiger Anbieter von Software und Cloud-Diensten für US-Bundes-und Landesregierungen.  Um Regierungskunden bei der Entscheidungsfindung bei der Beschaffung zu unterstützen, veröffentlicht Microsoft Zugänglichkeits Konformitätsberichte, in denen beschrieben wird, in welchem Ausmaß unsere Produkte und Dienste die Kriterien von Abschnitt 508 unterstützen.  Anhand dieser Informationen können Microsoft-Kunden ermitteln, ob ein bestimmtes Produkt oder eine bestimmte Dienstleistung den spezifischen Bedürfnissen gerecht wird.
 
@@ -33,7 +33,7 @@ Microsoft ist ein wichtiger Anbieter von Software und Cloud-Diensten für US-Bun
 
 Die Überlegungen von Microsoft zum US-Abschnitt 508 bei der Entwicklung von Produkten und Diensten zeigen, dass die Technologie und Daten für alle Kunden zugänglich sind.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -54,7 +54,3 @@ Die Überlegungen von Microsoft zum US-Abschnitt 508 bei der Entwicklung von Pro
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedizierter Support für Unternehmenskunden mit Fragen zur Barrierefreiheit unserer Produkte und Dienstleistungen oder zur Compliance.
 - [DHS Trusted Tester-Programm](https://go.microsoft.com/fwlink/?linkid=2052171): Informationen zum Trusted Tester-Programm des US-amerikanischen Department of Homeland Security (DHS) erhalten, an dem Microsoft teilnimmt.
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) herunter.

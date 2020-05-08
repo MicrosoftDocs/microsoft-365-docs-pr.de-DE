@@ -1,6 +1,6 @@
 ---
 title: Datenschutz-Grundverordnung
-description: Technische Unterstützung von Microsoft für die Datenschutz-Grundverordnung (DSGVO)
+description: Erfahren Sie mehr zur technischen Unterstützung von Microsoft für die Datenschutz-Grundverordnung (DSGVO) und erhalten Sie hilfreiche Informationen.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322554"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036208"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -68,7 +69,7 @@ Anträge betroffener Personen umfassen sechs Aktivitäten: Erkennung, Zugang, Be
 
 **Was sind Ihre Datenquellen?**
 
-Ein großer Teil der Daten einer Organisation wird in [Office-Anwendungen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) wie Excel und Outlook generiert.  Möglicherweise finden Sie auch relevante Daten für einen Antrag einer betroffenen Person in den von Microsoft-Produkten und -Diensten generierten [Erkenntnissen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) und [vom System generierten Protokollen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs).
+Ein großer Teil der Daten einer Organisation wird in [Office-Anwendungen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) wie Excel und Outlook generiert. Möglicherweise finden Sie auch relevante Daten für einen Antrag einer betroffenen Person in den von Microsoft-Produkten und -Diensten generierten [Erkenntnissen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) und [vom System generierten Protokollen](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs).
 
 **Welche Arten von Daten müssen durchsucht werden?**
 
@@ -249,7 +250,7 @@ Ja, die DSGVO gilt sowohl für Verantwortliche als auch für Verarbeiter. Die Ve
 
 **Wie hoch können die Strafen bei Nichteinhaltung sein?**
 
-Unternehmen können bei Nichterfüllung bestimmter DSGVO-Anforderungen mit einer Geldbuße von bis zu € 20 Mio. oder 4 % des weltweiten Jahresumsatzes belegt werden, je nachdem, welcher Betrag höher ist. Zusätzliche individuelle Abhilfemaßnahmen könnten Ihr Risiko erhöhen, wenn Sie sich nicht an die DSGVO-Anforderungen halten.
+Unternehmen können bei Nichterfüllung bestimmter DSGVO-Anforderungen mit einer Geldbuße von bis zu &euro; 20 Mio. oder 4 % des weltweiten Jahresumsatzes belegt werden, je nachdem, welcher Betrag höher ist. Zusätzliche individuelle Abhilfemaßnahmen könnten Ihr Risiko erhöhen, wenn Sie sich nicht an die DSGVO-Anforderungen halten.
 
 **Muss mein Unternehmen einen Datenschutzbeauftragten (Data Protection Officer, DPO) ernennen?**
 
@@ -316,7 +317,7 @@ Die DSGVO wird die Datenschutzanforderungen ändern und strengere Verpflichtunge
 
 Microsoft-Produkte und -Dienstleistungen, wie Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 und Windows 10, stehen heute zur Verfügung, um Sie bei der Erkennung und Bewertung von Sicherheitsbedrohungen und Sicherheitsverletzungen zu unterstützen und die DSGVO-Benachrichtigungspflichten zu erfüllen.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 - [Sprechen Sie Ihre Bedürfnisse rund um DSGVO mit einem unserer globalen Partner an, der Microsoft-basierte Lösungen anbietet.](https://aka.ms/findgdprpartner)
 - [Erfahren Sie, wie Microsoft Ihre Daten verwaltet, wo sie sich befinden, wer auf sie und die Bedingungen zugreifen kann und vieles mehr.](https://www.microsoft.com/trust-center/privacy)

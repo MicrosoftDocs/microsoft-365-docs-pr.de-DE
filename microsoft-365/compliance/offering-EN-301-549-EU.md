@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9cf5d3eed1854dbf715a9574b4efaa666c934a52
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ac8829d681e27609a505e7539e835c5c58c8474e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313770"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064724"
 ---
 # <a name="european-standards-en-301-549"></a>Europäische Normen EN 301 549
 
@@ -53,7 +53,3 @@ Die Berücksichtigung von EN 301 549 durch Microsoft bei der Entwicklung von Pro
 - [Office 365-Barrierefreiheitscenter](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365-Ressourcen für Menschen mit Behinderungen.
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedizierter Support für Unternehmenskunden mit Fragen zur Barrierefreiheit unserer Produkte und Dienstleistungen oder zur Compliance.
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf) herunter.

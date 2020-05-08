@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setup Übersicht für Microsoft 365 für Kampagnen
-ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 463d7cebf88ea830048c25e2781eac4aa379e30a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632755"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165697"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Einrichten von Microsoft 365 für Kampagnen
 
@@ -58,10 +58,10 @@ So richten Sie Benutzer Geräte ein:
 2. Bei nicht verwalteten Geräten richten Benutzer ihre [PCs und Macs](m365-campaigns-protect-pcs-macs.md)ein. Für wichtige Mitarbeiter wird empfohlen, dass Sie [verwaltete Geräte](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) für einen noch besseren Schutz verwenden. Für alle Geräte sollten Sie die mehrstufige [Authentifizierung](m365-campaigns-multifactor-authenication.md)einrichten. 
 3. Alle Benutzer sollten erfahren, wie Sie sich selbst und Ihre Kampagne schützen, indem Sie über [Phishing und andere Angriffe](m365-campaigns-phishing-and-attacks.md)lernen. Diese [Infografik](m365-campaigns-protect-campaign-infographic.md) kann Ihren Benutzern auch helfen, zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen.
 
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
-Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 

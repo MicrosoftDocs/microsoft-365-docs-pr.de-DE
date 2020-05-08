@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9cfa034de5d8116485a7d371c40ef55b0466103
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034221"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165966"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
@@ -30,7 +30,7 @@ ms.locfileid: "44034221"
 
  *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
   
-Mit dem Compliance-Manager, einem workflowbasierten Tools zur Risikoabschätzung im Microsoft [Service Trust-Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), können Sie Complianceaktivitäten Ihres Unternehmens im Zusammenhang mit Microsoft Professional Services und Microsoft Cloud Services, z. B. Microsoft Office 365, Microsoft Dynamics 365 und Microsoft Azure, nachverfolgen, zuweisen und überprüfen. 
+Mit dem Compliance-Manager, einem workflowbasierten Tools zur Risikoabschätzung im Microsoft [Service Trust-Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), können Sie Complianceaktivitäten Ihres Unternehmens im Zusammenhang mit Microsoft Professional Services und Microsoft Cloud Services, z. B. Microsoft Office 365, Microsoft Dynamics 365 und Microsoft Azure, nachverfolgen, zuweisen und überprüfen. 
 
 Für Compliance-Manager gilt Folgendes:
   

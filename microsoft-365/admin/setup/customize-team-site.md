@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Teamwebsite für die Dateispeicherung und-Freigabe anpassen, organisieren und verwalten.
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033786"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155281"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
@@ -51,7 +51,7 @@ Verbessern Sie die Navigation auf Ihrer Website, indem [Sie die Navigation auf I
   
 Um die Auffindbarkeit einer Website zu verbessern, fügen Sie Sie als Featured-Link auf der SharePoint-Startseite hinzu. Informationen finden Sie unter [Add Featured Links to the SharePoint Start Page](/sharepoint/change-links-list-on-sharepoint-home-page).
   
-Informationen zum Hinzufügen eines Bilds zu einer Startseite einer Teamwebsite finden Sie unter [Hinzufügen einer Bild-oder Bild Datei zu einer SharePoint-Seite](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+Informationen zum Hinzufügen eines Bilds zu einer Startseite einer Teamwebsite finden Sie unter [Hinzufügen einer Bild-oder Bild Datei zu einer SharePoint-Seite](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16).
   
 Informationen zum Hinzufügen von Seiten zu Ihrer Website finden Sie unter [Hinzufügen einer Seite zu einer Website](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
   
@@ -65,7 +65,7 @@ Informationen zum Starten des Uploads finden Sie unter [Hochladen eines Ordners 
    
 Hier erfahren Sie, wie Sie Dateien bearbeiten, löschen, Auschecken und vieles mehr. Weitere Informationen finden Sie unter [Arbeiten mit Dateien in einer Dokumentbibliothek](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
   
-Informationen zum Erstellen von Ansichten von Bibliotheken zum Aufteilen bestimmter Daten finden Sie unter [Erstellen einer benutzerdefinierten Ansicht einer Dokumentbibliothek](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx).
+Informationen zum Erstellen von Ansichten von Bibliotheken zum Aufteilen bestimmter Daten finden Sie unter [Erstellen einer benutzerdefinierten Ansicht einer Dokumentbibliothek](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7).
   
 ## <a name="work-with-lists-to-organize-data"></a>Arbeiten mit Listen zum Organisieren von Daten
 
@@ -73,7 +73,7 @@ SharePoint enthält zahlreiche Vorlagen für Listen, die Sie zu Ihrer Website hi
   
 Hier erfahren Sie, wie Sie [eine Liste in SharePoint erstellen](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online).
   
-Informationen zum Erweitern der Listen mit weiteren Spalten finden Sie unter [Erstellen einer Spalte in einer SharePoint-Liste oder-Bibliothek](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online).
+Informationen zum Erweitern der Listen mit weiteren Spalten finden Sie unter [Erstellen einer Spalte in einer SharePoint-Liste oder-Bibliothek](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2).
   
 Wenn Sie viele Daten in einer Liste speichern, finden Sie weitere Informationen unter [Verwalten umfangreicher Listen und Bibliotheken in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da137e3333164970729d0c737f7077c3c96ee634
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602542"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066428"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>Vereinigtes Königreich Cyber Essentials Plus
 
@@ -51,7 +51,3 @@ Das [Azure Cyber Essentials Plus-Zertifikat](https://aka.ms/AzureCyberEPlusCert)
 
 - [Cyber Essentials-Schema: Assurance Framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf) herunter.

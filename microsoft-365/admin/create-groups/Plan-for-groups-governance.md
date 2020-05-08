@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Hier erfahren Sie, wie Sie Microsoft 365 Groups Governance planen.
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049411"
+ms.locfileid: "44064787"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planen der Steuerung in Gruppen
 
@@ -154,7 +154,7 @@ Wenn Sie eine Microsoft 365-Gruppe gelöscht haben, wird Sie standardmäßig 30 
 >Wenn ein Benutzer während des Vorgangs "Vorläufiges Löschen" versucht, auf die Website zuzugreifen, wird eine "403 Verboten"-Meldung angezeigt. Wenn der Benutzer nach Ablauf dieses Zeitraums versucht, auf die Website zuzugreifen, wird eine "404 Nicht gefunden"-Meldung angezeigt.
 
 #### <a name="resources"></a>*Ressourcen*
-- [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Wiederherstellen einer gelöschten Microsoft 365-Gruppe in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Löschen von Gruppen mit dem Cmdlet "Remove-UnifiedGroup"](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 

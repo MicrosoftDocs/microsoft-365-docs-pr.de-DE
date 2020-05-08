@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: Zeigen Sie Ihre Abrechnung oder Rechnung über Ihre Office 365 an, die von 21Vianet in China betrieben wird.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7e11f2f597382651b58ca0ee6ba1ff5c513b80be
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 24a38afe834b147a7250a1c34b1c6af094b9421c
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360766"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140801"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>Anzeigen Ihrer Rechnung oder Abrufen eines Fapiao in Office 365 betrieben von 21Vianet
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Sie können Ihre Abrechnung oder Rechnung für Informationen zu Ihren Office 365 anzeigen, die von 21Vianet-Abonnementgebühren betrieben werden. Sie können auch ein Fapiao (Ihr letzter Kaufbeleg) erhalten. Sie können Ihre Fapiao-Anforderung etwa drei Tage nach der Zahlung an unser [Fapiao-Verwaltungssystem](https://go.microsoft.com/fwlink/p/?linkid=837465) senden. 
   

@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
 keywords: Partner, Lösungsanbieter
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080362"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141207"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt ein paar Schritte, wenn es darum geht, Dinge einzurichten.
 
@@ -72,7 +79,7 @@ Wenn Sie bereits über einen Partner verfügen, aber noch keinen Microsoft-Kunde
 1. Wenn Sie eine e-Mail von Ihrem Partner erhalten haben, wählen Sie den Link aus, um zum Microsoft 365 Admin Center zu wechseln, oder wechseln Sie zur Seite <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">akzeptieren des Vertrags</a> .
 2. Wählen Sie den Link für die **Microsoft-Kundenvereinbarung** aus, und lesen Sie das Dokument.
 3. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie den Vertrag gelesen haben.
-4. Wählen Sie **akzeptieren**aus.
+4. Wählen Sie **Annehmen** aus.
 5. Die Liste der Partner, mit denen Sie gerade arbeiten, wird angezeigt. Wählen Sie einen Partner aus, um Details anzuzeigen.
 
 ## <a name="remove-partner-admin-privileges"></a>Entfernen von Partneradministrator rechten

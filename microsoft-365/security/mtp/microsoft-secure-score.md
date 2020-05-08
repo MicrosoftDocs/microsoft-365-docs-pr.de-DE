@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804757"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141507"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -52,7 +52,7 @@ Die meisten werden auf binäre Art bewertet – wenn Sie die Verbesserungsmaßna
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Secure Score
 
-Derzeit gibt es Empfehlungen für die Einbeziehung von SharePoint Online, Exchange Online, OneDrive für Unternehmen, Microsoft Information Protection und mehr), Azure AD und Cloud-App-Sicherheit. Empfehlungen zu anderen Sicherheitsprodukten wie Azure ATP und Microsoft Defender ATP werden demnächst verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
+Derzeit gibt es Empfehlungen für Microsoft 365 (einschließlich Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP und Cloud-App-Sicherheit. Empfehlungen für andere Sicherheitsprodukte finden Sie in Kürze. Die Empfehlungen umfassen nicht alle Angriffsflächen, die jedem Produkt zugeordnet sind, sind aber ein guter Ausgangsbasis. Sie können die Verbesserungsmaßnahmen auch als „abgedeckt durch Dritte“ markieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
@@ -90,7 +90,7 @@ Für den Zugriff auf die Graph-API benötigen Sie, zusätzlich zu einer Rolle, e
 Damit Sie die benötigten Informationen schneller finden können, sind die Microsoft Verbesserungsmaßnahmen in Gruppen aufgeteilt:
 
 * Identität (Azure AD-Konten & -Rollen)
-* Daten (Microsoft Information Protection)
+* Data (Microsoft Information Protection)
 * Geräte (bisher keine Verbesserungsmaßnahmen)
 * App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
 * Infrastruktur (bisher keine Verbesserungsmaßnahmen)
@@ -110,8 +110,6 @@ Die Bewertung basiert auf der Anzahl der noch zu erreichenden Punkte, der Implem
 
 ### <a name="actions"></a>Maßnahmen
 
-Maßnahmen, die mit [Nicht bewertet] gekennzeichnet sind, werden nicht von der Microsoft-Sicherheitsbewertung nachverfolgt. Sie können zwar diese Maßnahmen ergreifen, aber deren Vervollständigung wirkt sich nicht auf die Bewertung aus. Wenn eine Aktion zukünftig von der Microsoft-Sicherheitsbewertung  nachverfolgt wird und Sie sie bereits abgeschlossen haben, wird Ihr Secure Score automatisch angepasst.
-
 Wenn Sie eine bestimmte Verbesserungsmaßnahme auswählen, wird ein Fly-out angezeigt. Zum Ausführen der Maßnahme stehen Ihnen verschiedene Optionen zur Verfügung:
 
 1. Wählen Sie **Einstellungen anzeigen** aus, um in den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Dann erhalten Sie die Punkte, die die Maßnahme wert ist und wie sie am oberen Rand des Fly-outs angezeigt werden. Es kann bis zu 24 Stunden dauern, bis Punkte aktualisiert werden.
@@ -122,7 +120,7 @@ Wenn Sie eine bestimmte Verbesserungsmaßnahme auswählen, wird ein Fly-out ange
 
 ![Beispiel für Verbesserungsmaßnahmen Secure Score](../../media/secure-score/secure-score1x450.png)
 
-*Abbildungen 2 & 3: Verbesserungsmaßnahmen Fly-outs*
+*Abbildungen 2: Flyout zur Verbesserungs Aktion*
 
 ## <a name="monitor-improvements-over-time"></a>Überwachen von Verbesserungen im Laufe der Zeit
 

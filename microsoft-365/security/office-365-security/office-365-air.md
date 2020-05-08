@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033950"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141547"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
@@ -93,6 +93,13 @@ Berechtigungen werden über bestimmte Rollen erteilt, wie Sie in der folgenden T
 |--|--|
 |So richten Sie Air-Features ein |Eine der folgenden Rollen: <br/>-Globaler Administrator<br/>-Sicherheits Administrator <br/>Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen werden. |
 |So genehmigen oder ablehnen Sie Empfohlene Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen ist):<br/>-Globaler Administrator <br/>-Sicherheits Administrator<br/>-Sicherheits Leser <br/>--- und ---<br/>-Suchen und löschen (diese Rolle wird nur im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Such-und Lösch Rolle dieser neuen Rollengruppe hinzufügen.)
+
+[Office 365 ATP Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) -Lizenzen sollten zugewiesen werden:
+- Sicherheitsadministratoren (einschließlich globaler Administratoren)
+- Das Sicherheits Betriebsteam Ihrer Organisation (einschließlich Sicherheits Lesern und Benutzern mit der Rolle "suchen und löschen")
+- Endbenutzer
+
+Darüber hinaus müssen [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) -Richtlinien definiert und angewendet werden, damit der Schutz erfolgt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

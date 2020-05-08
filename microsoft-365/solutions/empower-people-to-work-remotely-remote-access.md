@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Stellen Sie sicher, dass Ihre Remotemitarbeiter auf lokale Ressourcen zugreifen können, während Sie den Zugriff auf die Microsoft 365-Clouddienste optimieren.
-ms.openlocfilehash: fb91451b52c55f2cad1e0efefe19a044ce1cc37b
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: daa1a04912dd83c7a53769299b3870b90dbfd33a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002648"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049558"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste
 
@@ -35,6 +35,10 @@ Es gibt drei primäre Konfigurationen:
 1. Sie verwenden bereits eine VPN-Lösung für den Remotezugriff.
 2. Sie verwenden keine VPN-Lösung für den Remotezugriff, Sie verfügen über eine hybride Identität und Sie benötigen Remotezugriff nur für lokale webbasierte Apps.
 3. Sie verwenden keine VPN-Lösung für den Remotezugriff und Sie benötigen Zugriff auf lokale Apps, von denen einige nicht webbasiert sind.
+
+In diesem Flussdiagramm sehen Sie die Konfigurationsoptionen des Remotezugriffs, die in diesem Artikel erläutert werden.
+
+![Flussdiagramm der Konfiguration des Remotezugriffs](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 Bei Remotezugriffsverbindungen können Sie auch [Remotedesktop](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) verwenden, um Ihre Benutzer mit einem lokalen PC zu verbinden. So können beispielsweise Remotemitarbeiter Remotedesktop verwenden, um eine Verbindung mit PC in ihrem Büro über ihre Windows-, IOS-oder Android-Gerät herstellen. Sobald sie per Fernzugriff verbunden sind, können sie diese verwenden, als säßen sie davor.
 

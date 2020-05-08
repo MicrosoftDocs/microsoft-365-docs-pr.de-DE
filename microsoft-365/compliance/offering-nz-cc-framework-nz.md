@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601882"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065800"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>New Zealand Government Cloud Computing-Sicherheits-und Datenschutzüberlegungen
 
@@ -33,13 +33,11 @@ Zur Unterstützung von NZ government agencies bei der Durchführung einer konsis
 
 Microsoft and New Zealand Government Cloud Computing-Sicherheits-und Datenschutzüberlegungen
 
-Um Agenturen bei der Analyse und Evaluierung von Microsoft Enterprise Cloud-Diensten zu unterstützen, hat Microsoft New Zealand eine Reihe von Dokumenten erstellt, in denen gezeigt wird, wie sich Ihre Enterprise Cloud Services mit den Fragen in der "Cloud Computing ISPC" befassen. Verknüpfung mit den Standards, für die Microsoft Cloud Services zertifiziert sind. Diese Zertifizierungen sind wichtig, um sicherzustellen, dass Microsoft sowohl öffentliche als auch private Kunden darauf hinweisen kann, dass Ihre Cloud-Dienste entworfen, erstellt und betrieben werden, um Datenschutz-und Sicherheitsrisiken effektiv zu minimieren und die Probleme mit der Daten Souveränität zu beheben.
-
-Erfahren Sie mehr über die Vorteile von NZ CC Framework in der Microsoft-Cloud: [Laden Sie das NZ CC Framework Backgrounder herunter](https://aka.ms/nzcc-framework-backgrounder) .
+Um Agenturen bei der Analyse und Evaluierung von Microsoft Enterprise Cloud-Diensten zu unterstützen, hat Microsoft New Zealand eine Reihe von Dokumenten erstellt, in denen gezeigt wird, wie Ihre Enterprise Cloud Services die in der "Cloud Computing ISPC" dargelegten Fragen durch Verknüpfung mit den Standards, für die Microsoft Cloud Services zertifiziert sind, lösen. Diese Zertifizierungen sind wichtig, um sicherzustellen, dass Microsoft sowohl öffentliche als auch private Kunden darauf hinweisen kann, dass Ihre Cloud-Dienste entworfen, erstellt und betrieben werden, um Datenschutz-und Sicherheitsrisiken effektiv zu minimieren und die Probleme mit der Daten Souveränität zu beheben.
 
 Erfahren Sie, wie Sie Ihre NZ CC Framework-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen der Azure-Antwort auf das NZ CC-Framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -69,14 +67,10 @@ Wenn Ihre Agentur im Rahmen des [neuseeländischen Informations Sicherheitshandb
 - [Office 365: e-Mail-Integration und Referenzarchitektur](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (zusätzliche Microsoft NZ-Anleitungen für die Einführung in Cloud Services)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft-Antworten auf "Cloud Computing-unter"
+## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Antworten von Microsoft auf "Cloud Computing"
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) herunter.

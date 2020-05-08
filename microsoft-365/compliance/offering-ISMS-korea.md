@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bea6775580c4e4a7c9ab4cbf9b9368c312331038
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069267af4e695ebdf811f92cdab653c5f20e4af4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602282"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065930"
 ---
 # <a name="korea-information-security-management-system-k-isms"></a>Korea-Information Security Management System (K-ISMS)
 
@@ -86,7 +86,3 @@ Organisationen können die K-ISMS-Zertifizierung basierend auf den 80 Kontrollen
 - [K-ISMS-Dokumente und -Richtlinien](https://isms.kisa.or.kr/main/isms/notice/) (Koreanisch)
 - [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/regions/)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf) herunter.

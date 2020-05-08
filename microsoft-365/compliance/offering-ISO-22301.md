@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602262"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065910"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 
@@ -32,8 +32,6 @@ Der Standard ISO 22301:2012 wurde vom technischen Ausschuss 2012 veröffentlicht
 ## <a name="microsoft-and-iso-22301"></a>Microsoft und ISO 22301
 
 Microsoft erhielt als erster Anbieter hyperskalierter Clouddienste die ISO 22301-Zertifizierung für das Geschäftskontinuitätsmanagement. Eine unabhängige Zertifizierungsstelle erkannte diese Zertifizierung Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (einschließlich der Angebote für Geschäftskunden, Behördenkunden und Kunden aus dem Bildungsbereich), Microsoft Cloud App Security, Microsoft Intune und Microsoft Power BI nach einer strengen Prüfung, die alle Aspekte ihrer Geschäftskontinuitätsprozesse abdeckte, zu. Die Prüfung deckte die unten aufgeführten Dienste sowie Azure-Verwaltungsfunktionen, das Azure-Portal und die Systeme für die Überwachung, Ausführung und Aktualisierung der relevanten Dienste ab.
-
-Erfahren Sie mehr über die Vorteile von ISO/IEC-22301 für die Microsoft Cloud: [Hintergrundinformationen zur ISO/IEC 22301 herunterladen](https://aka.ms/iso22301-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -79,7 +77,3 @@ Ja. Wenn Ihr Unternehmen eine Zertifizierung nach ISO 22301 für Installationen 
 - [Beschreibung des Microsoft Enterprise-Programms für das Geschäftskontinuitätsmanagement](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [Compliance-Score](compliance-score.md)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ) herunter.

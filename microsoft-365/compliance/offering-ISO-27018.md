@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637525"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065760"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>ISO/IEC 27018-Verhaltenskodex zum Schutz von personenbezogenen Daten in der Cloud
 
@@ -39,8 +39,6 @@ Durch Einhalten der Standards nach ISO/IEC 27001 und des in ISO/IEC 27018 enthal
 - **Die Kundendaten werden ohne ausdrückliche Zustimmung nicht für Marketing- oder Werbezwecke verwendet.** Einige CSPs verwenden die Kundendaten für eigene kommerzielle Zwecke, einschließlich für gezielte Werbung. Da Microsoft den ISO/IEC 27018-Standard für seine im Umfang enthaltenen Enterprise Cloud-Dienste übernommen hat, können Kunden sicher sein, dass ihre Daten ohne ausdrückliche Zustimmung nicht für derartige Zwecke verwendet werden. Eine solche Zustimmung darf keine Bedingung für die Nutzung des Clouddienstes sein.
 - **Die Kunden von Microsoft sind über den Umgang mit den personenbezogenen Informationen informiert.** Nach ISO/IEC 27018 ist eine Richtlinie erforderlich, die die Rückgabe, Übertragung und sichere Aufbewahrung personenbezogener Informationen innerhalb eines angemessenen Zeitraums ermöglicht. Wenn Microsoft mit anderen Unternehmen zusammenarbeitet, die Zugriff auf Ihre Kundendaten benötigen, legt Microsoft die Identitäten dieser Unter-Datenverarbeiter eigeninitiativ offen.
 - **Microsoft erfüllt nur gesetzlich vorgeschriebene Anforderungen zur Offenlegung von Kundendaten.** Wenn Microsoft eine derartige Anforderung erfüllen muss, beispielsweise im Rahmen von polizeilichen Ermittlungen, werden die Kunden entsprechend benachrichtigt, sofern dies gesetzlich nicht untersagt ist.
-
-Erfahren Sie mehr über die Vorteile von ISO/IEC-27018 für die Microsoft Cloud: [Hintergrundwissen zur ISO/IEC 27017 herunterladen](https://aka.ms/iso27017-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
@@ -133,7 +131,3 @@ Sie sind jedoch dafür verantwortlich, einen Auditor mit der Prüfung Ihrer Impl
 - [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf) herunter.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236885"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066560"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -49,7 +49,7 @@ Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem
 - Intune
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
@@ -103,7 +103,7 @@ Die Microsoft-Cloud in Großbritannien bietet Zuverlässigkeit und Leistung in K
 
 Zusätzlich zu den Großbritannien-Rechenzentren verfügt Microsoft Cloud Services über Rechenzentren an mehreren Standorten. Die aktuelle Liste aller Zentren finden Sie auf unserer [Seite Datenspeicherort](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located).
 
-**Wie kann ich Kopien der Berichte des Auditors erhalten?**
+**Wie kann ich Kopien der Berichte des Prüfers erhalten?**
 
 Das [Vertrauensstellungsportal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Microsoft-Ergebnisse mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
@@ -115,7 +115,3 @@ Das [Vertrauensstellungsportal](https://support.office.com/article/Get-started-w
 - [Digitaler Marktplatz](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf) herunter.
