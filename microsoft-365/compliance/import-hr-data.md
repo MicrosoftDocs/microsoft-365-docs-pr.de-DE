@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943364"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173485"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
 
@@ -68,7 +68,7 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei beschrieb
 |**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem lokalen Computer, auf dem Sie das Skript ausführen, in Schritt 4. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellsten Informationen enthält, sodass bei jedem Ausführen des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
+Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem gleichen System wie das Skript, das Sie in Schritt 4 ausführen. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellsten Informationen enthält, sodass bei jedem Ausführen des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des HR-Connectors
 
@@ -136,7 +136,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
    |`appId` |Dies ist die Aad-Anwendungs-ID für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
    |`appSecret`|Dies ist der Aad-Anwendungsschlüssel für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
    |`jobId`|Dies ist die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
-   |`csvFilePath`|Dies ist der Dateipfad auf dem lokalen Computer (den Sie zum Ausführen des Skripts verwenden) für die CSV-Datei, die Sie in Schritt 2 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
+   |`csvFilePath`|Dies ist der Dateipfad für die CSV-Datei (gespeichert auf dem gleichen System wie das Skript), die Sie in Schritt 2 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden; Verwenden Sie andernfalls einfache Anführungszeichen.|
    |||
    
    Im folgenden finden Sie ein Beispiel für die Syntax für das HR-Connector-Skript mit Istwerten für jeden Parameter:
@@ -177,7 +177,7 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
 3. Klicken Sie im Abschnitt **Aktionen** auf **Aufgabe erstellen**.
 
-4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript**. Sie können auch eine optionale Beschreibung hinzufügen. 
+4. Geben Sie auf der Registerkarte **Allgemein** einen beschreibenden Namen für den geplanten Vorgang ein. Beispiel: **HR-Connector-Skript**. Sie können auch eine optionale Beschreibung hinzufügen.
 
 5. Führen Sie unter **Sicherheitsoptionen**die folgenden Aktionen aus:
 

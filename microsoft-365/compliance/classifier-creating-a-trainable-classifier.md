@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Auszubildende Klassifizierungen, wenn eine der integrierten Klassifizierungen Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266894"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173507"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 
@@ -118,12 +118,12 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 21. Veröffentlichen Sie die Klassifizierung.
 
-22. Nach der Veröffentlichung ist Ihre Klassifizierung als Bedingung in der [Richtlinie für die automatische Beibehaltung von Aufbewahrungs Bezeichnungen verfügbar, die auf einer Bedingung](labels.md#applying-a-retention-label-automatically-based-on-conditions) und in der [Kommunikations Konformität](communication-compliance.md)basiert.
+22. Nachdem Ihre Klassifizierung veröffentlicht wurde, ist Sie als Bedingung in [Office autolabeling mit Sensitivitäts Bezeichnungen](apply-sensitivity-label-automatically.md), [automatisch angewendete Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung](labels.md#applying-a-retention-label-automatically-based-on-conditions) und in der [Kommunikation Compliance](communication-compliance.md)verfügbar.
 
 > [!CAUTION]
 > Sobald eine Klassifizierung veröffentlicht wurde, kann Sie keine zusätzliche Schulung durchlaufen, daher sollten Sie sicherstellen, dass Sie so viele Elemente wie möglich getestet und überprüft haben, um sicherzustellen, dass die Genauigkeit so hoch wie möglich ist.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte mit lernbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md)
+- [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)
 - [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
