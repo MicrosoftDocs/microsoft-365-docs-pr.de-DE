@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 for Business-Abonnement zurücksetzen. '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064809"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173518"
 ---
 # <a name="reset-passwords"></a>Zurücksetzen von Kennwörtern
 
@@ -79,11 +79,11 @@ Diese Schritte gelten nur für Personen, die einen Microsoft 365 for Business-Pl
 
 Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, sich jedoch bei Microsoft 365 anmelden können, da Ihr Kennwort beispielsweise in Ihrem Browser gespeichert wird: 
     
-1. Wählen Sie in Microsoft 365 **Einstellungen** \> **Office 365** \> **persönliche Informationen**aus. 
+1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten Ecke >**persönlichen Informationen**zu **meinem Konto** > aus. 
           
-2. Überprüfen Sie, ob Ihre **Kontaktdetails** und **Alternative E-Mail-Adresse** korrekt sind. Wenn nicht, ändern Sie die Informationen jetzt. 
+2. Überprüfen Sie unter **Kontaktdetails**, ob Ihre **Alternative e-Mail-Adresse** korrekt ist und dass Sie eine Mobiltelefonnummer angegeben haben. Wenn nicht, ändern Sie die Informationen jetzt. 
         
-3. Melden Sie sich bei Office 365 ab: Wählen Sie Ihren Namen in der oberen rechten Ecke (im obigen Bild als **Diane** angezeigt) \> **Abmelden** aus. 
+3. Abmelden: Wählen Sie in der oberen rechten Ecke ihren Namen aus (im obigen Bild als **Diane**angezeigt) \> **Abmelden**. 
         
 4. Melden Sie sich jetzt erneut an: Geben Sie Ihren Benutzernamen ein, \> **Weiter** \>, und wählen Sie dann **Kennwort vergessen** aus. 
     
@@ -92,6 +92,8 @@ Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, s
 Wenn Sie Ihr Kennwort vergessen haben und sich nicht anmelden können: 
     
 - Bitten Sie einen anderen globalen Administrator in Ihrem Unternehmen, Ihr Kennwort für Sie zurückzusetzen.
+
+- Stellen Sie sicher, dass Sie alternative Kontaktinformationen angegeben haben, einschließlich einer Mobiltelefonnummer. 
     
 - Oder [rufen Sie den Microsoft-Support an](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     

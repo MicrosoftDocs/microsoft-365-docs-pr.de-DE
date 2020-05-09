@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624034"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173496"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicherheit & Privatsphäre</a> .
-2. Wählen Sie neben **Kennwortrichtlinie** die Option **Bearbeiten**aus. 
-3. Wenn Kennwörter auf nie ablaufen festgelegt sind, legen Sie die Umschaltfläche auf **aus**. Sie erhalten die Option, die Anzahl der Tage anzugeben, bis Kennwörter ablaufen.
+1. Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen.</a>
+2. Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.
+3. Wählen Sie **Kennwortablaufrichtlinie** aus. 
+4. Wenn Kennwörter auf nie ablaufen festgelegt sind, aktivieren Sie das Kontrollkästchen neben **Kennwort für Benutzer festlegen, um nach einer bestimmten Anzahl von Tagen zu verfallen**. Sie erhalten die Option, die Anzahl der Tage anzugeben, bis Kennwörter ablaufen.
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Festlegen der Kennwortablaufrichtlinie für einzelne Benutzer
 

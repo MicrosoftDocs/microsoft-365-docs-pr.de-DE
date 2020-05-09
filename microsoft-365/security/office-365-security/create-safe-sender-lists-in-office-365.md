@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Administratoren eine Liste sicherer Absender in Microsoft 365 und EOP erstellen können, die eingehende Nachrichten zum Überspringen der Spamfilterung zulässt.
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036343"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173416"
 ---
 # <a name="create-safe-sender-lists"></a>Erstellen von Listen sicherer Absender
 
@@ -85,7 +85,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
 ## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Outlook-Absendern
 
-Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, könnte der Absender kompromittiert werden und schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Dies verhindert auch, dass [zap](zero-hour-auto-purge.md) das tut, was es auch für die Nachricht tun sollte.
 
 Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutzers überspringen, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:SFE`, der angibt, dass die Spam-, spoof-und Phishing-Filterung umgangen wurde.
 

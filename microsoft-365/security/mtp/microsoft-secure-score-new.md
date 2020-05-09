@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score (Vorschau)
+title: Microsoft Secure Score neu
 description: Beschreibt Microsoft Secure Score im Microsoft 365 Security Center, wie Details berechnet werden und welche Sicherheitsadministratoren davon erwarten können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
 ms.prod: w10
@@ -17,17 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
+ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
 ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173462"
+ms.locfileid: "44173551"
 ---
-# <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (Vorschau)
+# <a name="microsoft-secure-score-new"></a>Microsoft Secure Score (neu)
 
 >[!IMPORTANT]
->Einige Informationen beziehen sich auf vorversions Produkte, die möglicherweise wesentlich geändert werden, bevor Sie kommerziell veröffentlicht werden. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Diese neue Iteration von Microsoft Secure Score ersetzt die vorherige Iteration durch neue Designelemente und Features in den nächsten Monaten.
+>
+>Wenn neben dem Verlauf keine **Metriken &** Registerkarte "Trends" angezeigt werden, befinden Sie sich in der vorherigen Iteration. [Wechseln Sie zu Microsoft Secure Score (frühere Iteration)](microsoft-secure-score.md)
 
 Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Sie finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center](overview-security-center.md).
 
@@ -103,8 +105,8 @@ Damit Sie die benötigten Informationen schneller finden können, sind die Micro
 
 Auf der Übersicht der Microsoft-Sicherheitsbewertung können Sie sehen, wie die Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite können Sie auch einen Überblick über die Gesamtpunktzahl, den historischen Trend Ihres Secure Score mit Benchmark-Vergleichen sowie priorisierte Verbesserungsmaßnahmen zur Verbesserung ihrer Punktzahl erhalten.
 
-![Secure Score-Startseite](../../media/secure-score/secure-score-homepage.png)
-*Abbildung 1: Übersichtsseite Microsoft-Sicherheitsbewertung*
+![Homepage für Secure Score](../../media/secure-score/secure-score-homepage-new.png)
+
 
 ## <a name="take-action-to-improve-your-score"></a>Ergreifen Sie Maßnahmen, um Ihre Punktzahl zu verbessern
 
@@ -176,32 +178,12 @@ Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposi
 
 Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen. Informationen zu geplanten Änderungen finden Sie unter [What es Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-2020"></a>April 2020
+- Azure-Active Directory-Verbesserungs Aktionen hinzugefügt
+- Verbesserungs Aktionen für erweiterte Azure Advanced Threat Protection hinzugefügt
+- Unterstützung für Sicherheitsempfehlungen für Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+    - Alle veröffentlichten Sicherheitsempfehlungen, die von TVM bereitgestellt werden, sind jetzt verfügbar.
 
-#### <a name="added-azure-active-directory-improvement-action"></a>Azure Active Directory Improvement-Aktion hinzugefügt
-
-- Nicht zulassen, dass Benutzer nicht verwalteten Anwendungen zustimmen (zurzeit in der veröffentlichten Version verfügbar)
-
-#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Verbesserungs Aktionen für erweiterte Azure Advanced Threat Protection hinzugefügt
-
-- Druckerspoolerdienst auf Domänencontrollern deaktivieren
-- Unsichere Kerberos-Delegierungen ändern, um einen Identitätswechsel zu verhindern
-- Lokale Administratorkennwörter mit Microsoft LAPS schützen und verwalten
-- Risiko des lateralen Bewegungspfads auf sensible Entitäten reduzieren
-- Ruhende Konten aus sensiblen Gruppen entfernen
-- Unsichere SID-Verlaufsattribute aus Entitäten entfernen
-- Unsichere Kontoattribute auflösen
-- Offenlegung von Anmeldeinformationen in Klartext verhindern
-- Kommunikation über Legacy-Protokolle verhindern
-- Verwendung schwacher Verschlüsselung verhindern
-
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Unterstützung der Sicherheitsempfehlungen von Microsoft Defender ATP Threat & Vulnerability Management (TVM)
-
-Alle veröffentlichten Sicherheitsempfehlungen, die von TVM bereitgestellt werden, sind jetzt verfügbar.
-
-### <a name="january---march-2020"></a>Januar-März 2020
-
-#### <a name="updated-interface-and-functionality"></a>Aktualisierte Benutzeroberfläche und Funktionalität
+### <a name="updated-interface-and-functionality"></a>Aktualisierte Benutzeroberfläche und Funktionalität
 
 * Völlig neue Metriken und Trend-Ansichten für CISO und Lead Level-Diskussionen
 * Neue Möglichkeiten zum Nachverfolgen und Benchmarken Ihrer Bewertung
@@ -209,16 +191,6 @@ Alle veröffentlichten Sicherheitsempfehlungen, die von TVM bereitgestellt werde
 * Filtern, Taggen, Suchen und Gruppieren von Verbesserungsmaßnahmen
 * Verwalten Sie Ihre zukünftigen Ziele mithilfe von Score-Projektionen und geplanten Maßnahmen
 * Und mehr!
-
-#### <a name="removed-not-scored-and-review-improvement-actions"></a>Verbesserungs Aktionen "nicht bewertet" und "überprüfen" entfernt
-
-Einer der Grundsätze von Secure Score ist, dass die Bewertung standardisiert und einfach nachvollziehbar sein sollte. Verbesserungsmaßnahmen, die nicht messbar sind oder nicht durchgeführt werden können, führen zu Verwirrung. Eine Microsoft-Sicherheitsbewertung ist nur sinnvoll, wenn jede Empfehlung einen eindeutigen Effekt auf die Bewertung haben kann. Nicht bewertete Verbesserungs Aktionen sind nicht messbar, und Überprüfungs Verbesserungs Aktionen werden nicht auf den gleichen Standard wie andere Verbesserungs Aktionen gemessen.
-
-Aus diesen Gründen wurden alle Verbesserungs Aktionen vorübergehend entfernt, die nicht bewertet oder eine Überarbeitungs Kadenz erforderlich waren. Es ist keine Aktion Ihrerseits erforderlich.
-
-#### <a name="simplification-of-the-point-system"></a>Vereinfachung des Punktesystems
-
-Um Punkte über mehrere Erfahrungen hinweg zu standardisieren, wurden alle Aktionspunkte für eine sichere Ergebnisverbesserung auf 10 oder mehr Punkte aktualisiert. Es ist erforderlich, dass die gesamte Breite Verschnaufpause von Sicherheitskontrollen konsistenter ist, die wir heute haben, und diejenigen, die wir in Zukunft hinzufügen werden. Dies ist zwar eine wesentliche Änderung, und es wird eine Verringerung der Gesamtzahl der Punkte angezeigt, aber ihre Sicherheitsposition wird nicht geändert.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

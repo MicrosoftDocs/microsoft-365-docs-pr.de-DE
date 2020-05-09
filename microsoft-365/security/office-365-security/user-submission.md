@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie ein Postfach So konfigurieren, dass Spam-und Phishing-e-Mails erfasst werden, die von Benutzern gemeldet werden.
-ms.openlocfilehash: a3a175c3815c6750086526ec92d097fb7cbcefa3
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 6de4c076af5b0c669625cd8edaa367f072c27598
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43922663"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173344"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-office-365"></a>Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Office 365
 
@@ -66,9 +66,9 @@ Durch das Übermitteln von Benutzern gemeldeten Nachrichten an ein benutzerdefin
 
      - **Microsoft (empfohlen)**: das Postfach "Benutzer Übermittlungen" wird nicht verwendet (alle gemeldeten Nachrichten werden an Microsoft weitergegeben).
 
-     - **Microsoft und ein benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein.
+     - **Microsoft und ein benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig.
 
-     - **Benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein.
+     - **Benutzerdefiniertes Postfach**: Geben Sie in das Feld, das angezeigt wird, die e-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig.
 
      Wenn Sie fertig sind, klicken Sie auf **bestätigen**.
 

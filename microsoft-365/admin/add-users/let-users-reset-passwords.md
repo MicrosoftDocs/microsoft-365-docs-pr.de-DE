@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919435"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173530"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
@@ -53,7 +53,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für jeden Benutzer in Ihrem Unternehmen.
   
 ::: moniker range="o365-worldwide"
-1.  Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicherheit & Privatsphäre</a> .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen.</a>
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für
 ::: moniker-end
 
    
-2. Wählen Sie **Selbstbedienung Kennwortzurücksetzung**aus, und wählen Sie den Link für das **Azure-Portal, um die Self-Service-Kennwortzurücksetzung**zu aktivieren. Azure wird kostenlos zur Verfügung gestellt!
+2. Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.
   
-3. Wählen Sie im linken Navigationsbereich die Option **Benutzer** aus, und wählen Sie dann **Kennwortzurücksetzung**aus.
+3. Wählen Sie **Self-Service Password Reset**aus.
   
 4. Wählen Sie auf der Seite Eigenschaften die Option **alle** aus, um Sie für alle Benutzer in Ihrem Unternehmen zu aktivieren, und wählen Sie dann **Speichern**aus.
   
-5. Wenn sich Ihre Benutzer bei Office 365 anmelden, werden sie zur Eingabe zusätzlicher Kontaktinformationen aufgefordert, mit denen sie ihr Kennwort künftig zurücksetzen können.
+5. Wenn sich Ihre Benutzer anmelden, werden Sie aufgefordert, zusätzliche Kontaktinformationen einzugeben, mit denen Sie Ihr Kennwort in Zukunft zurücksetzen können.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

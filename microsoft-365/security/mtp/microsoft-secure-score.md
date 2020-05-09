@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: Beschreibt Microsoft-Sicherheitsbewertung im Microsoft 365 Security Center, erläutert die Berechnung von Details und was Sicherheitsadministratoren erwarten dürfen.
+title: Microsoft Secure Score (frühere Iteration)
+description: Beschreibt Microsoft Secure Score im Microsoft 365 Security Center, wie Sie Ihre Sicherheitsposition verbessern und welche Sicherheitsadministratoren erwarten können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141507"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173392"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (frühere Iteration)
+
+>[!IMPORTANT]
+>Diese Iteration von Microsoft Secure Score wird in den nächsten Monaten durch neue Designelemente und-Features ersetzt. Wenn Sie noch nicht die neueste Iteration sehen, werden Sie in Kürze.
+>
+>Wenn Sie neben Verlauf eine **Metrik &** Registerkarte Trends sehen, befinden Sie sich in der neuen Iteration. [Wechseln Sie zu Microsoft Secure Score (neu)](microsoft-secure-score-new.md)
 
 Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und daran arbeiten.
 

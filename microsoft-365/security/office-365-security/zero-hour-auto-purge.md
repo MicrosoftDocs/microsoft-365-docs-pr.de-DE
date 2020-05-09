@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über Zero-Hour Auto Purge (zap), eine e-Mail-Schutzfunktion in Microsoft 365, die Spam, Schadsoftware oder Phishing-Nachrichten erkennt, die bereits an Exchange Online übermittelt wurden.
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034926"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173298"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Zero-Hour Auto Purge (zap) – Schutz vor Spam und Schadsoftware in Microsoft 365
 
@@ -42,7 +42,7 @@ Microsoft 365 aktualisiert täglich Spam-und Malware Signaturen in Echtzeit. All
 
 Die ZAP-Aktion ist für den Benutzer nahtlos; Sie werden nicht benachrichtigt, wenn eine Nachricht erkannt und verschoben wird.
 
-[Listen sicherer Absender](create-safe-sender-lists-in-office-365.md), Nachrichtenfluss Regeln (auch bekannt als Transportregeln), Posteingangsregeln oder zusätzliche Filter haben Vorrang vor zap.
+[Listen sicherer Absender](create-safe-sender-lists-in-office-365.md), Nachrichtenfluss Regeln (auch bekannt als Transportregeln), Posteingangsregeln oder zusätzliche Filter haben Vorrang vor zap. Ähnlich dem, was im Nachrichtenfluss geschieht, bedeutet dies, dass selbst dann, wenn der Dienst feststellt, dass die zugestellte Nachricht zap benötigt, die Nachricht aufgrund der Konfiguration sicherer Absender nicht verarbeitet wird. Dies ist ein weiterer Grund, um mit der Konfiguration von Nachrichten für die Umgehung der Filterung vorsichtig zu sein.
 
 ### <a name="malware-zap"></a>Malware zap
 
@@ -88,28 +88,28 @@ Um festzustellen, ob zap Ihre Nachricht verschoben hat, können Sie entweder den
 
 ## <a name="zap-faq"></a>Zap-FAQ
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>F.: Was passiert, wenn eine legitime Nachricht in den Junk-e-Mail-Ordner verschoben wird?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Was passiert, wenn eine legitime Nachricht in den Junk-e-Mail-Ordner verschoben wird?
 
-A.: Sie sollten den normalen Berichterstellungsprozess für [falsch positive Ergebnisse](report-junk-email-messages-to-microsoft.md)ausführen. Der einzige Grund, warum die Nachricht aus dem Posteingang in den Junk-e-Mail-Ordner verschoben würde, liegt daran, dass der Dienst festgestellt hat, dass die Nachricht Spam oder bösartig ist.
+Sie sollten den normalen Berichterstellungsprozess für [falsch positive Ergebnisse](report-junk-email-messages-to-microsoft.md)ausführen. Der einzige Grund, warum die Nachricht aus dem Posteingang in den Junk-e-Mail-Ordner verschoben würde, liegt daran, dass der Dienst festgestellt hat, dass die Nachricht Spam oder bösartig ist.
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>F.: Was ist, wenn ich den Ordner "Quarantine" anstelle des Junk-e-Mail-Ordners verwende?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Was geschieht, wenn ich den Ordner "Quarantine" anstelle des Junk-e-Mail-Ordners verwende?
 
-A.: Zap wird eine Aktion für eine Nachricht basierend auf der Konfiguration Ihrer Antispam-Richtlinien wie weiter oben in diesem Thema beschrieben durchführen.
+Zap wird auf einer Nachricht basierend auf der Konfiguration Ihrer Antispam-Richtlinien, wie weiter oben in diesem Thema beschrieben, Aktionen durchführen.
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>F.: Was geschieht, wenn e-Mail-Flussregeln oder zugelassene/blockierte Absenderlisten verwendet werden?
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Was geschieht, wenn ich sichere Absender, Nachrichtenfluss Regeln oder zugelassene/blockierte Senderlisten verwende?
 
-A: Nachrichtenfluss Regeln oder blockieren und Organisationseinstellungen zulassen haben Vorrang. Diese Nachrichten werden von zap ausgeschlossen.
+Sichere Absender, Nachrichtenfluss Regeln oder blockieren und zulassen von Organisationseinstellungen haben Vorrang. Diese Nachrichten werden von zap ausgeschlossen, da der Dienst das ausführt, was Sie konfiguriert haben. Dies ist ein weiterer Grund, um mit der Konfiguration von Nachrichten für die Umgehung der Filterung vorsichtig zu sein.
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>F.: Was geschieht, wenn eine Nachricht in einen anderen Ordner verschoben wird (z.b. Posteingangsregeln)?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Was geschieht, wenn eine Nachricht in einen anderen Ordner verschoben wird (z. b. Posteingangsregeln)?
 
-A: Zap funktioniert weiterhin, solange die Nachricht nicht gelöscht wurde oder solange die gleiche oder stärkere Aktion noch nicht angewendet wurde. Wenn beispielsweise die Phishing-Richtlinie auf "Quarantine" festgelegt ist und der Benutzer oder Administrator die e-Mail bereits junked hat, wird in der Quarantäne die Aktion zum Isolieren der Datei durchführen.
+Zap funktioniert weiterhin, solange die Nachricht nicht gelöscht wurde oder solange die gleiche oder stärkere Aktion noch nicht angewendet wurde. Wenn beispielsweise die Phishing-Richtlinie auf "Quarantine" festgelegt ist und der Benutzer oder Administrator die e-Mail bereits junked hat, wird in der Quarantäne die Aktion zum Isolieren der Datei durchführen.
 
-### <a name="q-does-zap-change-the-message-header"></a>F.: ändert zap die Nachrichtenkopfzeile?
+### <a name="does-zap-change-the-message-header"></a>Ändert zap die Nachrichtenkopfzeile?
 
-A: bei einer ZAP-Aktion werden keine Änderungen am Nachrichtenkopf vorgenommen.
+Bei einer ZAP-Aktion werden keine Änderungen am Nachrichtenkopf vorgenommen.
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>F.: wie wirkt sich Zap auf Postfächer in der Warteschleife aus?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Wie wirkt sich Zap auf Postfächer in der Warteschleife aus?
 
-A: Zap kann keine Nachrichten von Postfächern in der Warteschleife isolieren. Zap kann Nachrichten in den Junk-e-Mail-Ordner basierend auf der Aktion, die für ein Spam-oder Phishing-Urteil in Anti-Spam-Richtlinien konfiguriert ist.
+Zap wird keine Nachrichten von Postfächern in der Warteschleife isolieren. Zap kann Nachrichten in den Junk-e-Mail-Ordner basierend auf der Aktion, die für ein Spam-oder Phishing-Urteil in Anti-Spam-Richtlinien konfiguriert ist.
 
 Weitere Informationen zu Haltebereichen in Exchange Online finden Sie unter [in-situ-Speicher und Beweissicherungsverfahren in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie ausgehende Spam Richtlinien konfigurieren, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten.
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036788"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173440"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Konfigurieren der ausgehenden Spamfilterung
 
@@ -53,7 +53,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 
 - Wenn Sie eine ausgehende Spam Richtlinie aus dem Security & Compliance Center entfernen, werden die ausgehende Spamfilter Regel und die zugehörige Filterrichtlinie für ausgehende Spam entfernt.
 
-In Exchange Online PowerShell oder eigenständigen Exchange Online Protection-PowerShell wird der Unterschied zwischen ausgehenden Spamfilter Richtlinien und ausgehenden spamfilterregeln deutlich. Sie verwalten Richtlinien für ausgehende Spamfilter ** \*** mithilfe der Cmdlets-hostedcontentfilterpolicy dient zum, und Sie verwalten Filterregeln für ausgehende Spam mithilfe der ** \*Cmdlets-HostedContentFilterRule** .
+In Exchange Online PowerShell oder eigenständigen Exchange Online Protection-PowerShell wird der Unterschied zwischen ausgehenden Spamfilter Richtlinien und ausgehenden spamfilterregeln deutlich. Sie verwalten Richtlinien für ausgehende Spamfilter ** \*** mithilfe der Cmdlets-HostedOutboundSpamFilterPolicy, und Sie verwalten Filterregeln für ausgehende Spam mithilfe der ** \*Cmdlets-HostedOutboundSpamFilterRule** .
 
 - In PowerShell erstellen Sie zuerst die Richtlinie für ausgehende Spamfilter, dann erstellen Sie die ausgehende Spamfilter Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
 

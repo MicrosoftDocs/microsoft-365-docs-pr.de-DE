@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034962"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173322"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -101,7 +101,7 @@ In diesem Bericht werden gesammelte Daten und erkannte Bedrohungen pro Klick ers
 In der Detailtabelle können Sie weitere Informationen zu Klick Zeiten und Benutzerinformationen anzeigen. Denken Sie daran, dass der Status Bericht über den URL-Schutz den Schutz vor dem Feature für ATP-sichere Links anzeigt, sodass nur Kunden, die ATP-sichere Links aktiviert haben, Daten in diesem Bericht anzeigen können.
 
 > [!NOTE]
-> Hierbei handelt es sich um einen *Schutz Trendbericht*, was bedeutet, dass Datentrends in einem größeren DataSet darstellen. Die Berichterstellung steht hier in Echtzeit nicht zur Verfügung. Für die Echt Zeit URL klicken Sie auf Daten, und verwenden Sie weiterhin die URL-Ablaufverfolgung.
+> Hierbei handelt es sich um einen *Schutz Trendbericht*, was bedeutet, dass Datentrends in einem größeren DataSet darstellen. Daher sind die Daten in der Aggregatansicht hier nicht in Echtzeit verfügbar, aber die Daten in der Detailtabellen Ansicht sind möglicherweise geringfügig Diskrepanz zwischen den beiden Ansichten angezeigt.
 
 ## <a name="atp-file-types-report"></a>ATP-Dateitypenbericht
 
