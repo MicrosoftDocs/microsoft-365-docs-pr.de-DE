@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel werden Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer lernen.
-ms.openlocfilehash: 4660d1ab34172bf73e6bea0de3065d2c946a7d2c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 127f50a6a94e35a9f3c8acf655bd260080aa8420
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036764"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160679"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 
@@ -40,7 +40,7 @@ Sobald ein *Jeder*-Link abläuft, kann er nicht mehr für den Zugriff auf den In
 So legen Sie ein Ablaufdatum für Jeder-Links fest
 1. Öffnen Sie das SharePoint Online Admin Center.
 2. Klicken Sie in der linken Navigationsleiste auf **Freigabe**.
-3. Aktivieren Sie unter **Erweiterte Einstellungen für Jeder-Links** das Kontrollkästchen **Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen**.</br>
+3. Aktivieren Sie unter **Wählen Sie Berechtigungen und Ablaufoptionen für Jeder-Links aus** das Kontrollkästchen **Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen**.</br>
    ![Screenshot der SharePoint-Ablaufeinstellungen auf Organisationsebene für Jeder-Links](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Geben Sie im Feld eine Anzahl von Tagen ein, und klicken Sie dann auf **Speichern**.
 

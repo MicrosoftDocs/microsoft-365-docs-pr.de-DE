@@ -1,5 +1,5 @@
 ---
-title: 4. Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
+title: 'Schritt 4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 05704cdd08b315b5dbcdf4bf357fc211f9727761
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003200"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141431"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
 
 Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusammenarbeiten. Sie müssen sich treffen, per Sprach- und Textnachricht chatten, neue Inhalte erstellen und Informationen und Dateien gemeinsam nutzen, E-Mails austauschen und Kalender und Aufgaben verwalten. Microsoft 365 bietet Cloud-basierte Dienste für alle diese wichtigen Funktionen:
 
@@ -32,6 +32,8 @@ Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusa
 - Verwenden Sie zum Austauschen von E-Mails und Verwalten von Kalendern, Kontakten und Aufgaben Exchange Online und den Outlook-Client.
 - Verwenden Sie zum Speichern und Zusammenarbeiten an Dateien SharePoint und OneDrive. Diese können Sie mit einem Webbrowser oder in Teams verwenden.
 - Für das Erstellen neuer Inhalte oder die Zusammenarbeit an vorhandenen Inhalten sind die Microsoft 365-Apps Versionen von Word, PowerPoint, Excel und Outlook, die auf Ihrem lokalen Computer installiert sind und die laufenden Feature- und Sicherheitsupdates erhalten.
+
+![Verwenden von Teams, Outlook, SharePoint, OneDrive und Microsoft 365-Apps, um produktiv zu bleiben](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Menschen mit Microsoft Teams in Verbindung halten
 

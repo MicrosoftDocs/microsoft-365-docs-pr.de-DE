@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602892"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066662"
 ---
 # <a name="title-23-nycrr-part-500"></a>Titel 23 NYCRR Teil 500
 
@@ -40,7 +40,7 @@ Nach den New Yorker Bestimmungen muss jedes Finanzinstitut:
 - **Bestimmen Sie einen Chief Information Security Officer **(CISO) für die Verwaltung des Cybersicherheitsprogramms und die Durchsetzung der Richtlinien. Zur Unterstützung Ihres CISO stellt Microsoft ausführliche Informationen zur Cybersicherheit über [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h), [Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/)und [Power BI-Security](https://go.microsoft.com/fwlink/?LinkId=829185) bereit.
 - **Überwachen und Testen der Wirksamkeit des Cybersicherheitsprogramms**: Microsoft stellt Informationen aus Audits seiner Cybersicherheitspraktiken bereit, die kontinuierliche Überwachung, regelmäßige Penetrationstests und Schwachstellenbewertungen umfassen. Kunden können ihre eigenen Tests ohne vorherige Genehmigung von Microsoft durchführen.
 - **Führen Sie einen Audit-Trail.** Die integrierten Überwachungsfunktionen von Azure-, Office 365- und Power BI-Kunden generieren Informationen, die zum Wiederherstellen von Finanztransaktionen und zum Entwickeln von Prüfprotokollinformationen verwendet werden können.
-- **Beschränken des Zugriffs auf Informationssysteme mit nicht öffentlichen Informationen** "Maßnahmen, mit denen Azure, Office 365 und Power BI einen für jeden Dienst einheitlichen rollenbasierten Zugriffskontrollprozess (RBAC), strenge Sicherheits- und Zugriffsanforderungen für jeden Microsoft-Administrator und Prüfungen für jeden bieten Anfrage für erhöhte Zugriffsrechte.
+- **Beschränken des Zugriffs auf Informationssysteme mit nicht öffentlichen Informationen**: Maßnahmen, mit denen Azure, Office 365 und Power BI einen für jeden Dienst einheitlichen rollenbasierten Zugriffskontrollprozess (RBAC), strenge Sicherheits- und Zugriffsanforderungen für jeden Microsoft-Administrator und Prüfungen für jeden bieten Anfrage für erhöhte Zugriffsrechte.
 - **Institutsverfahren zum Bewerten und Testen der Sicherheit von extern entwickelten Anwendungen**: Für Entwickler, die Visual Studio verwenden, können [Sicherheitsregeln](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code) für verwalteten Code sicherstellen, dass Bedrohungen für die Cybersicherheit von Anwendungen erkannt und verringert werden, bevor der Code bereitgestellt wird.
 - **Verwenden Sie regelmäßige Risikobewertungen, um Cybersicherheitsprogramme zu entwerfen und zu verbessern**: Für Kunden fügt Microsoft Informationen zu Sicherheitsbedrohungen hinzu, stellt Roadmaps für das Änderungsmanagement bereit und aktualisiert regelmäßig Informationen zu Subunternehmern. Microsoft führt auch regelmäßig Risikobewertungen für seine eigenen Dienste durch, deren Ergebnisse den Kunden zur Verfügung stehen.
 - **Verwenden Sie qualifiziertes Personal, um Cybersicherheitsrisiken zu verwalten und Cybersicherheitsfunktionen zu überwachen**: Microsoft wendet strenge Verfahren für den Zugriff unserer Mitarbeiter auf Ihre Kundendaten an. Wenn wir Subunternehmer beauftragen, bleiben wir für die Erbringung der Dienstleistungen verantwortlich und stellen sicher, dass Subunternehmer die Datenschutz- und Sicherheitsverpflichtungen von Microsoft vollständig einhalten, einschließlich der Anforderungen für den Umgang mit vertraulichen Daten, Hintergrundprüfungen und Geheimhaltungsvereinbarungen.
@@ -76,7 +76,3 @@ Wenden Sie sich an das New Yorker Finanzdienstleistungsministerium, [Wen Wir Üb
 - [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Compliance der Finanzdienstleistungs in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Geteilte Verantwortlichkeiten für Cloud Computing](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>Hintergrundinformationen zum Angebot herunterladen
-
-Benötigen Sie das Dokument mit Hintergrundwissen für dieses Angebot? Laden Sie die [PDF-Datei](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf) herunter.
