@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365-Produktivitäts Abbildungen
-description: Verwenden Sie diese Illustrationen, um die Grundlagen der Architektur für die Implementierung von Microsoft 365-Produktivitätslösungen zu verstehen.
+title: Darstellungen zu Microsoft 365-Produktivitätslösungen
+description: Anhand dieser Darstellungen können Sie die Architekturgrundlagen für die Implementierung von Microsoft 365-Produktivitätslösungen verstehen.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -11,50 +11,50 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
-ms.translationtype: MT
+ms.openlocfilehash: 2ad424741ecbfe6f4bb8693df13a92bc71f012ce
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022132"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160087"
 ---
-# <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365-Produktivitäts Abbildungen
+# <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
 Die Reihe der Microsoft 365 Enterprise-Lösungen bietet Hilfestellung zum Implementieren von Microsoft 365-Funktionen, insbesondere bei technologieübergreifenden Funktionen.
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten
 Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend mit Microsoft Teams.
 
-|**Aspekt**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Poster der logischen Architektur von Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aktualisiert am 2019   |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
+|[![Miniaturbild für Poster der logischen Architektur von Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aktualisiert: April 2019   |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppen in Microsoft 365 für IT-Architekten
 Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
 
-|**Aspekt**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Gruppen-Infografik](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Aktualisiert am 2019|Diese Illustrationen erläutern die unterschiedlichen Arten von Gruppen, erklären, wie diese erstellt und verwaltet werden, und bieten einige Vorschläge für Governance.|
+|[![Miniaturbild für Gruppen-Infografik](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Aktualisiert: Juni 2019|Diese Illustrationen erläutern die unterschiedlichen Arten von Gruppen, erklären, wie diese erstellt und verwaltet werden, und bieten einige Vorschläge für Governance.|
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren
 Sicherheit und Datenschutz für Organisationen mit einem einzelnen Microsoft 365-Mandanten, die in mehreren Regionen agieren
 
 |**Aspekt**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für die Infografik „mehrere Regionen“](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Aktualisiert am 2020 |Die Verwendung eines einzelnen Microsoft 365-Mandanten für Ihre globale Organisation ist aus vielen Gründen die beste Wahl. Jedoch fällt es vielen Architekten schwer, den Sicherheits- und Datenschutzzielen der verschiedenen Regionen gleichmäßig gerecht zu werden. Diese Themengruppe bietet Empfehlungen dazu. |
+|[![Miniaturbild für die Infografik „mehrere Regionen“](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Aktualisiert: März 2020 |Die Verwendung eines einzelnen Microsoft 365-Mandanten für Ihre globale Organisation ist aus vielen Gründen die beste Wahl. Jedoch fällt es vielen Architekten schwer, den Sicherheits- und Datenschutzzielen der verschiedenen Regionen gleichmäßig gerecht zu werden. Diese Themengruppe bietet Empfehlungen dazu. |
 
 ### <a name="microsoft-defender-atp-deployment-strategy"></a>Microsoft Defender ATP-Bereitstellungsstrategie
 
-Je nach Umgebung sind einige Tools für bestimmte Architekturen besser geeignet.
+Je nach Ihrer Umgebung eignen sich einige Tools für bestimmte Architekturen besser.
 
 
 |**Aspekt**|**Beschreibung**|
 |:-----|:-----|
-|[![Thumb Image for Microsoft Defender ATP-Bereitstellungsstrategie](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aktualisiert am 2020| Das architektonische Material unterstützt Sie bei der Planung Ihrer Bereitstellung für die folgenden Architekturen: <ul><li> Cloud-systemeigen </li><li> Co-Management </li><li> Lokal</li><li>Evaluierung und lokales Onboarding</li>
+|[![Miniaturbild zur Microsoft Defender ATP-Bereitstellungsstrategie](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aktualisiert: Februar 2020| Das Architekturmaterial hilft Ihnen bei der Planung der Bereitstellung für die folgenden Architekturen: <ul><li> Cloudspezifisch </li><li> Co-Management </li><li> Lokal</li><li>Auswertung und lokales Onboarding</li>
 
 
 <a name="m365foundationinfra"></a>
@@ -64,7 +64,7 @@ Sie erhalten einen Überblick über die [grundlegende Infrastruktur](https://doc
   
 |**Item**|**Beschreibung**|
 |:-----|:-----|
-|[![Thumbnail-Bild des Microsoft 365 Enterprise-Foundation-Infrastruktur-Posters](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Online anzeigen](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Aktualisiert am 2019| Dieses Poster fasst alle Phasen der Basisinfrastruktur hinsichtlich der Ziele, Features und Werkzeuge, Design-Entscheidungen, Konfigurationsergebnisse, Onboarding sowie laufende Überwachung und Updates zusammen. <br/>| 
+|[![Thumbnail-Bild des Microsoft 365 Enterprise-Foundation-Infrastruktur-Posters](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Online anzeigen](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Aktualisiert: Dezember 2019| Dieses Poster fasst alle Phasen der Basisinfrastruktur hinsichtlich der Ziele, Features und Werkzeuge, Design-Entscheidungen, Konfigurationsergebnisse, Onboarding sowie laufende Überwachung und Updates zusammen. <br/>| 
 
    
 <a name="BKMK_O365IDP"></a>
@@ -74,7 +74,7 @@ Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 3
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Modellposter: Identität- und Geräteschutz für Office 365 und andere SaaS-Programme](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Aktualisiert am 2018|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. In diesem Dokument wird gezeigt, welche Funktionen mit weiteren Informationen über die Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
+|[![Modellposter: Identität- und Geräteschutz für Office 365 und andere SaaS-Programme](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Aktualisiert: November 2018|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. In diesem Dokument wird gezeigt, welche Funktionen mit weiteren Informationen über die Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
    
 <!--
 
@@ -115,9 +115,9 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 Microsoft unterstützt mehrere Optionen, wenn Sie mit der Einführung von Teams in der Microsoft-Cloud beginnen. Dieses Poster hilft Ihnen zu entscheiden, welche Microsoft-Telefonielösung (Telefonsystem in der Cloud oder Enterprise-VoIP, lokal) für die Benutzer in Ihrer Organisation geeignet ist und wie Ihre Organisation die Telefonfestnetzanbindung (Public Switched Telephone Network, PSTN) herstellen kann.
 
 
-[![Miniaturansicht für das Poster von Microsoft Telephony Solutions](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Miniaturansicht für das Poster der Microsoft-Telefonielösungen](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
-Aktualisiert am 2019
+Aktualisiert: Januar 2019
 
 Weitere Informationen finden Sie im Artikel zu diesem Poster: [Microsoft-Telefonielösungen](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   

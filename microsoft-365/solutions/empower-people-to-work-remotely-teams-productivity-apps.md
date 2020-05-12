@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
-ms.openlocfilehash: 05704cdd08b315b5dbcdf4bf357fc211f9727761
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141431"
+ms.locfileid: "44160738"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
 

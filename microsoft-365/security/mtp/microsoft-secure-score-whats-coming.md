@@ -17,21 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 17bfa8ee50fbdb7dce988324f478d88d00600121
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
-ms.translationtype: MT
+ms.openlocfilehash: a7e13ae8a3ccffa644a123f57b05c4364d4333d2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804746"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141347"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Was Microsoft-Sicherheitsbewertung in Kürze verfügbar ist
 
-Um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter ihrer Sicherheitsposition zu machen und die Benutzerfreundlichkeit zu verbessern, werden wir in naher Zukunft einige Änderungen vornehmen. Ihre Bewertung und die maximale Punktzahl werden geändert. Dies bedeutet jedoch nicht, dass sich Ihr Sicherheitsstatus ändert.
+Um [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) zu einem besseren Anlaufpunkt für Ihren Sicherheitsstatus zu machen und die Benutzerfreundlichkeit zu verbessern, nehmen wir in naher Zukunft einige Änderungen vor. Ihre Bewertung und die maximale Punktzahl werden geändert. Dies bedeutet jedoch nicht, dass sich Ihr Sicherheitsstatus ändert.
 
 Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score.md#whats-new).
 
 ## <a name="may-2020"></a>Mai 2020
 
-### <a name="adding-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Hinzufügen von Azure Advanced Threat Protection-Verbesserungs Aktionen zur Vorschau
+### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Hinzufügen zusätzlicher Azure Advanced Threat Protection-Verbesserungsmaßnahmen zur Vorschau
 
-- Aktivieren von Sicherheitsfeatures für Active Directory Vertrauensstellungen
+- Aktivieren von Sicherheitsfunktionen in Active Directory-Vertrauensstellungen

@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: Verwenden Sie Microsoft 365, um unterschiedliche Möglichkeiten für die Kommunikation über interne und öffentliche Nachrichten rund um COVID-19 zu erstellen.
-ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141479"
+ms.locfileid: "44160810"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>Schritt 5: Erstellen von COVID-19-Krisenkommunikationsstellen
 

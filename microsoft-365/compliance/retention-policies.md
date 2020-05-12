@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer anwenden sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949404"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165946"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
