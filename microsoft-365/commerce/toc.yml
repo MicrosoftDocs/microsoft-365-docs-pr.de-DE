@@ -1,7 +1,7 @@
 - name: Business-Abonnements verwalten
   href: index.yml
 - name: Microsoft 365 Admin-Hilfecenter
-  href: ../admin/admin-home.md
+  href: ../admin/index.yml
 - name: Testen oder kaufen
   items:
     - name: Anmelden für Microsoft 365-Testversion
@@ -51,7 +51,7 @@
     - name: Informationen zu Ihrer Rechnung
       href: billing-and-payments/understand-your-invoice.md
     - name: Zahlungsmethoden verwalten
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: Bezahlen für Ihr Abonnement
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Zahlungsweise ändern

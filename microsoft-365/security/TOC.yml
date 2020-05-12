@@ -180,7 +180,9 @@
                       href: mtp/custom-detection-rules.md
             - name: Sicherheitsbewertung
               items:
-                - name: Sicherheitsbewertung
+                - name: Sicherheitsbewertung (neu)
+                  href: mtp/microsoft-secure-score-new.md
+                - name: Sicherheitsbewertung (vorherige Iteration)
                   href: mtp/microsoft-secure-score.md
                 - name: Sicherheitsbewertung (Vorschau)
                   href: mtp/microsoft-secure-score-preview.md
