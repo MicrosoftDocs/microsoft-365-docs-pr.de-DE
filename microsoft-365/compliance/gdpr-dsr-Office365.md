@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4620938a5f7f63d7da09d60d701e81c3bbae0fa
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166026"
+ms.locfileid: "44171004"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
@@ -586,7 +586,7 @@ Nachdem Sie ein Benutzerkonto gelöscht haben gilt Folgendes:
 - Der Benutzer kann sich nicht mehr bei Office 365 anmelden oder auf die Microsoft-Ressourcen Ihres Unternehmens zugreifen, z. B. auf das OneDrive for Business-Konto, die SharePoint Online-Websites oder das Exchange Online-Postfach.
 - Personenbezogene Daten wie E-Mail-Adresse, Alias, Telefonnummer und Postanschrift, die mit dem Benutzerkonto verknüpft sind, werden gelöscht.
 - Einige Office 365-Anwendungen entfernen Informationen über den Benutzer. In Microsoft Flow etwa wird der Benutzer aus der Liste der Besitzer für einen gemeinsamen Fluss entfernt.
-- Vom System generierte Protokolle zur betroffenen Person werden 30 Tage nach der Löschung des Benutzerkontos gelöscht. Weitere Informationen finden Sie im Abschnitt [Löschen von vom System generierten Protokollen](#deleting-system-generated-logs) in diesem Leitfaden.
+- Vom System generierte Protokolle zur betroffenen Person, mit Ausnahme von Daten, die für die Sicherheit oder Stabilität des Diensts wesentlich sind, werden 30 Tage nach dem Löschen des Benutzerkontos gelöscht. Weitere Informationen finden Sie im Abschnitt [Vom System generierte Protokolle löschen](#deleting-system-generated-logs).
 
 >[!IMPORTANT]
 >Nachdem Sie ein Benutzerkonto löschen, kann sich die betreffende Person weder bei Office 365 noch bei den Produkten oder Diensten anmelden, die sie über ihr Geschäfts-, Schul- oder Unikonto genutzt hat. Diese Person könnte auch keine Anträge betroffener Personen direkt über Microsoft initialisieren in Fällen, in denen Microsoft der Datenverantwortliche ist. Weitere Informationen finden Sie im Abschnitt [Produkte und Dienste, die mit einer Unternehmens-ID authentifiziert wurden, für die Microsoft ein Datenverantwortlicher ist](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) in Teil 4 dieses Leitfadens.
@@ -597,7 +597,7 @@ Nachdem Sie ein Benutzerkonto gelöscht haben gilt Folgendes:
 Wie das vorläufige Löschen und das endgültige Löschen von Daten, die im vorherigen Abschnitt zum Löschen personenbezogener Daten beschrieben wurden, gibt es auch einen vorläufig gelöschten und einen endgültig gelöschten Status, wenn Sie ein Benutzerkonto löschen.
 
 - Wenn Sie zunächst ein Benutzerkonto (durch Löschen des Benutzers im Admin Center oder im Azure-Portal) löschen, ist das Benutzerkonto vorübergehend gelöscht und wird für bis zu 30 Tage in den Papierkorb in Azure verschoben. An diesem Punkt kann das Benutzerkonto wiederhergestellt werden.
-- Wenn Sie das Benutzerkonto endgültig gelöscht haben, wird das Benutzerkonto endgültig gelöscht und aus dem Papierkorb in Azure entfernt. An diesem Punkt kann das Benutzerkonto nicht wiederhergestellt werden, und alle mit dem Benutzerkonto verbundenen Daten werden aus der Microsoft-Cloud dauerhaft entfernt. Vom System generierte Protokolle zum Thema Daten werden gelöscht, nachdem das Benutzerkonto endgültig gelöscht wurde.
+- Wenn Sie das Benutzerkonto endgültig gelöscht haben, wird das Benutzerkonto endgültig gelöscht und aus dem Papierkorb in Azure entfernt. An diesem Punkt kann das Benutzerkonto nicht wiederhergestellt werden, und alle mit dem Benutzerkonto verbundenen Daten werden aus der Microsoft-Cloud dauerhaft entfernt. Beim endgültigen Löschen eines Kontos werden vom System generierte Protokolle zur betroffenen Person gelöscht, mit Ausnahme von Daten, die für die Sicherheit oder die Stabilität des Dienstes wesentlich sind.
 
 Im Folgenden finden Sie die grundlegenden Schritte zum Löschen eines Benutzers aus Ihrer Organisation.
 
@@ -1598,7 +1598,7 @@ Microsoft bietet die Möglichkeit, Kundendaten direkt über bereits vorhandene A
 
 Um vom System generierte Protokolle zu löschen, die über eine Zugriffsanforderung abgerufen werden, müssen Sie den Benutzer aus dem Dienst entfernen und sein Azure Active Directory-Konto dauerhaft löschen. Anweisungen zum dauerhaften Löschen eines Benutzers finden Sie im Abschnitt [Löschen eines Benutzers](#deleting-a-user) in diesem Leitfaden. Es ist wichtig zu beachten, dass das dauerhafte Löschen eines Benutzerkontos nach dem Start unwiderruflich ist.
 
-Durch die dauerhafte Löschung eines Benutzerkontos werden die Daten des Benutzers innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Office 365-Dienste entfernt. Eine Ausnahme bildet Exchange Online, da die dauerhafte Löschung des Benutzerkontos hier länger als 30 Tage dauert. Angesichts der kritischen Natur von Exchange Online-Inhalten und zur Vermeidung von versehentlichem Datenverlust wurde dieses System so konzipiert, dass es Daten nach der endgültigen Löschung eines Benutzerkontos für bis zu 60 Tage absichtlich in einen Haltestatus versetzt. Um die Exchange Online-Daten eines Benutzers in einem Zeitraum von 30 Tagen dauerhaft zu löschen, löschen Sie das Benutzerkonto in Azure Active Directory dauerhaft und wenden Sie sich dann an den [Microsoft-Support](https://support.microsoft.com/) mit der Bitte, die Exchange Online-Daten des Benutzers abweichend vom geplanten Löschvorgang manuell zu entfernen. Weitere Informationen finden Sie unter [Entfernen von Exchange Online-Daten](#removing-exchange-online-data), welches zuvor in diesem Leitfaden erläutert wurde.
+Durch die dauerhafte Löschung eines Benutzerkontos werden die Daten des Benutzers – mit Ausnahme von Daten, die für die Sicherheit und die Stabilität des Dienstes wesentlich sind – innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Office 365-Dienste entfernt. Eine Ausnahme bildet Exchange Online, da die dauerhafte Löschung des Benutzerkontos hier länger als 30 Tage dauert. Angesichts der kritischen Natur von Exchange Online-Inhalten und zur Vermeidung von versehentlichem Datenverlust wurde dieses System so konzipiert, dass es Daten nach der endgültigen Löschung eines Benutzerkontos für bis zu 60 Tage absichtlich in einen Haltestatus versetzt. Um die Exchange Online-Daten eines Benutzers in einem Zeitraum von 30 Tagen dauerhaft zu löschen, löschen Sie das Benutzerkonto in Azure Active Directory dauerhaft und wenden Sie sich dann an den [Microsoft-Support](https://support.microsoft.com/) mit der Bitte, die Exchange Online-Daten des Benutzers abweichend vom geplanten Löschvorgang manuell zu entfernen. Weitere Informationen finden Sie unter [Entfernen von Exchange Online-Daten](#removing-exchange-online-data), welches zuvor in diesem Leitfaden erläutert wurde.
 
 Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle für Yammer und Kaizala nicht entfernt. Siehe die folgenden Links, um Daten aus diesen Anwendungen zu entfernen:
 
