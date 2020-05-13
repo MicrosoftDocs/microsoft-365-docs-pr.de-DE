@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631549"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214662"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -121,10 +121,10 @@ In diesem Leitfaden erfahren Sie, wie Sie empfohlene Richtlinien erstellen, um d
 In diesem Leitfaden erfahren Sie, wie Sie eine Reihe von Richtlinien implementieren, um den Zugriff auf Office 365 zu schützen, einschließlich Exchange Online, SharePoint Online und OneDrive für Unternehmen. Zusätzlich zur Implementierung dieser Richtlinien sollten Sie auch den Schutzgrad für Ihren Mandanten mit diesen Ressourcen erhöhen:
 
 - [Konfigurieren Sie Ihren Mandanten für mehr Sicherheit](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): Diese Empfehlungen gelten für die grundlegende Sicherheit Ihres Mandanten.
-- [Microsoft 365 Security Roadmap: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): Diese Empfehlungen umfassen Protokollierung, Datensteuerung, Administratorzugriff und Bedrohungsschutz.
+- [Microsoft 365 Security Roadmap: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Diese Empfehlungen umfassen Protokollierung, Datensteuerung, Administratorzugriff und Bedrohungsschutz.
 
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 und Microsoft 365 Apps für Unternehmen
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 und Microsoft 365 Apps for Enterprise
 
 Windows 10 und Microsoft 365 apps for Enterprise sind die empfohlene Clientumgebung für PCs. Windows 10 wird empfohlen, da Azure so konzipiert ist, dass es sowohl lokal als auch Azure AD eine möglichst reibungslose Umgebung bietet. Windows 10 umfasst außerdem erweiterte Sicherheitsfunktionen, die über InTune verwaltet werden können. Microsoft 365 apps for Enterprise enthält die neuesten Versionen von Office-Anwendungen. Diese verwenden moderne Authentifizierung, die sicherer und eine Anforderung für bedingten Zugriff ist. Zu diesen apps gehören auch erweiterte Sicherheits-und Compliance-Tools.
 

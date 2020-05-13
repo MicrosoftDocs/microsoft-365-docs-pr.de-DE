@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 0fcdb9901c708842470f72106ab4eea20ff8b17e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: bd1c9ca0a034494f6556f0badca66284c3d9e1de
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011723"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214252"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -75,9 +75,9 @@ Um Microsoft 365-Apps für Enterprise verwenden zu können, muss ein Benutzer ü
 
 Die einfachste Möglichkeit zu erkennen, ob ein Benutzer Microsoft 365 apps for Enterprise installiert hat und seit kurzem verwendet wurde, ist die Verwendung des Berichts "Microsoft Office Aktivierungen", der im Microsoft 365 Admin Center verfügbar ist. Der Bericht enthält eine Liste aller Benutzer, die Microsoft 365-Apps für Enterprise in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen aktiviert haben. Im Zusammenhang mit der zentralen Bereitstellung sind die Desktopaktivierungen für Windows oder Mac die wichtigen Spalten im Bericht. Sie können den Bericht nach Excel exportieren. Weitere Informationen zum Bericht finden Sie unter [Microsoft 365 Reports im Admin Center – Microsoft Office Aktivierungen](../activity-reports/microsoft-office-activations.md).
   
-Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Benutzer bitten, eine Office-Anwendung wie Word auf seinem Computer zu öffnen, und dann **Datei** \> **Konto**auswählen. Unter **Produktinformationen**sollten das **Abonnement Produkt** und **Microsoft Microsoft 365 apps for Enterprise**angezeigt werden, wie in der folgenden Abbildung dargestellt.
+Wenn Sie den Aktivierungsbericht nicht verwenden möchten, können Sie einen Benutzer bitten, eine Office-Anwendung wie Word auf seinem Computer zu öffnen, und dann **Datei** \> **Konto**auswählen. Unter **Produktinformationen**sollten **Abonnement Produkt** und **Microsoft 365 für Enterprise**angezeigt werden, wie in der folgenden Abbildung dargestellt.
 
-![Produktinformationen in einer Office-Anwendung](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Produktinformationen in einer Office-Anwendung](../../media/product-information-microsoft-365-enterprise.png)
   
 Hilfe zu Microsoft 365-Apps für Unternehmen finden Sie unter [Troubleshooting Tips for Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
@@ -108,7 +108,7 @@ Import-Module O365CompatibilityChecker
 ```powershell
 Invoke-CompatibilityCheck
 ```
-   Sie werden aufgefordert, *_TenantDomain_* einzugeben (beispielsweise *TailspinToysIncorporated. onmicrosoft.</span> com*) und *_TenantAdmin_* -Anmeldeinformationen (verwenden Sie Ihre globalen Administratoranmeldeinformationen), und fordert dann die Zustimmung an.
+   Sie werden aufgefordert, *_TenantDomain_* einzugeben (beispielsweise *TailspinToysIncorporated. onmicrosoft. </span> com*) und *_TenantAdmin_* -Anmeldeinformationen (verwenden Sie Ihre globalen Administratoranmeldeinformationen), und fordert dann die Zustimmung an.
     
 > [!NOTE]
 > Je nach Anzahl der Benutzer Ihres Mandanten kann die Prüfung nach Minuten oder Stunden abgeschlossen sein. 
@@ -161,7 +161,7 @@ Wenn Sie oder Ihre Benutzer Probleme beim Laden des Add-ins bei der Verwendung v
   
 |**Plattform**|**Debuginformationen**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ( [So wird's gemacht](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationId. Zeigen Sie die Quelle einer der Office-Seiten an, und suchen Sie nach dem Wert der Korrelations-ID, und senden Sie ihn an Support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ( [So wird's gemacht](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationId. Zeigen Sie die Quelle einer der Office-Seiten an, und suchen Sie nach dem Wert der Korrelations-ID, und senden Sie ihn an Support:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich Clients (Windows, Mac)  <br/> | Charles/Fiddler-Protokolle  <br/>  Erstellen von Nummern der Client-app (vorzugsweise als Screenshot aus **Datei/Konto**)  <br/> |
    
 

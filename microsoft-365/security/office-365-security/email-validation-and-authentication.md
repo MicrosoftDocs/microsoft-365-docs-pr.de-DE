@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Erfahren Sie, wie Exchange Online und Exchange Online Protection (EOP) in Microsoft 365 E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwenden, um Spoofing, Phishing und Spam zu verhindern.
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratoren erfahren hier, wie Exchange Online und Exchange Online Protection (EOP) E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637556"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209499"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>E-Mail-Authentifizierung in Microsoft 365
+# <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
-E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In Microsoft 365-Organisationen mit Exchange Online-Postfächern und in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer nutzt EOP die Standards, um eingehende E-Mails zu überprüfen:
+E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In Microsoft 365-Organisationen mit Postfächern in Exchange Online und in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer nutzt EOP diese Standards, um eingehende E-Mails zu überprüfen:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

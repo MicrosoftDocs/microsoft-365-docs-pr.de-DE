@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Zu den grundlegenden Spamfiltereinstellungen zählt das Festlegen der Aktionen, die im Hinblick auf als Spam identifizierte Nachrichten durchgeführt werden sollen.
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637712"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209559"
 ---
-# <a name="configure-anti-spam-policies"></a>Konfigurieren von Antispamrichtlinien
+# <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein Kunde des eigenständigen Exchange Online Protection-Produkts (EOP) ohne Exchange Online-Postfächer sind, werden eingehende E-Mail-Nachrichten automatisch von EOP vor Spam geschützt. EOP verwendet Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet) als Teil des allgemeinen Schutzes Ihrer Organisation gegen Spam. Weitere Informationen finden Sie unter [Antispamschutz](anti-spam-protection.md).
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder Organisationen mit dem eigenständigen Exchange Online Protection-Produkt (EOP) ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten automatisch von EOP vor Spam geschützt. EOP verwendet Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet) als Teil des allgemeinen Schutzes Ihrer Organisation gegen Spam. Weitere Informationen finden Sie unter [Antispamschutz](anti-spam-protection.md).
 
 Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte Antispamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Kunden, Exchange Online Protection PowerShell für eigenständige EOP-Kunden).
+Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Antispamrichtlinien im Security & Compliance Center im Vergleich zu Exchange Online PowerShell oder Exchange Online Protection PowerShell
 
@@ -120,9 +120,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
     |**Keine Aktion**|||||![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Sie können diesen Wert als Bedingung in Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die Nachricht zu filtern oder weiterzuleiten.
+    > <sup>1</sup> In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).<br/>In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Sie können diesen Wert als Bedingung in Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die Nachricht zu filtern oder weiterzuleiten.
 
-   - **Schwellenwert auswählen**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die Spamfilterbewertung **Massen-E-Mail** auslöst (größer als der angegebene Wert, nicht größer als oder gleich). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in Office 365](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Schwellenwert auswählen**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die Spamfilterbewertung **Massen-E-Mail** auslöst (größer als der angegebene Wert, nicht größer als oder gleich). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in EOP](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Standardmäßig hat die ausschließliche PowerShell-Einstellung _MarkAsSpamBulkMail_ in Antispamrichtlinien den Wert `On`. Diese Einstellung hat einen wesentlichen Einfluss auf die Ergebnisse einer Filterungsbewertung **Massen-E-Mail-**:
 
@@ -132,9 +132,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
    - **Quarantäne**: Gibt an, wie lange die Nachricht in Quarantäne bleibt, wenn Sie **Nachricht in Quarantäne verschieben** als Aktion für eine Spamfilterbewertung ausgewählt haben. Nach Ablauf des Zeitraums wird die Nachricht gelöscht. Die Standardeinstellung beträgt 30 Tage. Ein gültiger Wert liegt zwischen 1 und 30 Tagen. Informationen zur Quarantäne finden Sie in den folgenden Themen:
 
-     - [Quarantäne in Office 365](quarantine-email-messages.md)
-     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](manage-quarantined-messages-and-files.md)
-     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [In Quarantäne befindliche Nachrichten in EOP](quarantine-email-messages.md)
+     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP](manage-quarantined-messages-and-files.md)
+     - [Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Diesen X-Header-Text hinzufügen**: Dieses Feld ist nur dann erforderlich und verfügbar, wenn Sie **X-Header hinzufügen** als Aktion für eine Spamfilterbewertung ausgewählt haben. Der von Ihnen angegebene Wert ist der Headerfeld-*Name*, der dem Nachrichtenheader hinzugefügt wird. Der Headerfeld-*Wert* lautet immer `This message appears to be spam`.
 
@@ -148,7 +148,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
    - **An diese E-Mail-Adresse umleiten**: Dieses Feld ist nur dann erforderlich und verfügbar, wenn Sie **An diese E-Mail-Adresse umleiten** als Aktion für eine Spamfilterbewertung ausgewählt haben. Geben Sie die E-Mail-Adresse ein, an die Sie die Nachricht senden möchten. Mehrere Werte können durch Semikolons (;) getrennt angegeben werden.
 
-   - **Sicherheitstipps**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen **Ein** deaktivieren. Weitere Informationen zu Sicherheitstipps finden Sie unter [Sicherheitstipps in E-Mail-Nachrichten in Office 365](safety-tips-in-office-365.md).
+   - **Sicherheitstipps**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen **Ein** deaktivieren. Weitere Informationen zu Sicherheitstipps finden Sie unter [Sicherheitstipps in E-Mail-Nachrichten](safety-tips-in-office-365.md).
 
    Einstellungen für **Automatische Bereinigung zur Nullstunde (ZAP)**: ZAP erkennt Nachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden, und ergreift Maßnahmen für diese. Weitere Informationen zu ZAP finden Sie unter [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md).
 
@@ -159,7 +159,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 5. (Optional) Erweitern Sie den Abschnitt **Zulassungslisten**, um Nachrichtenabsender anhand der E-Mail-Adresse oder der E-Mail-Domäne zu konfigurieren, die die Spamfilterung überspringen dürfen:
 
    > [!CAUTION]
-   > <ul><li>Überlegen Sie es sich genau, bevor Sie hier Domänen hinzufügen. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md).</li><li>Fügen Sie der Liste der zulässigen Domänen niemals akzeptierte Domänen (Domänen, die Sie besitzen) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Auf diese Weise könnten Angreifer E-Mails senden, die die Spamfilterung in Ihrer Organisation umgehen.</li></ul>
+   > • Überlegen Sie es sich genau, bevor Sie hier Domänen hinzufügen. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in EOP](create-safe-sender-lists-in-office-365.md). <br/><br/> • Fügen Sie der Liste der zulässigen Domänen niemals akzeptierte Domänen (Domänen, die Sie besitzen) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Auf diese Weise könnten Angreifer E-Mails senden, die die Spamfilterung in Ihrer Organisation umgehen.
 
    - **Absender zulassen**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste der zulässigen Absender** Folgendes aus:
 
@@ -188,7 +188,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 6. (Optional) Erweitern Sie den Abschnitt **Sperrlisten**, um Nachrichtenabsender nach E-Mail-Adresse oder E-Mail-Domäne zu konfigurieren, die immer als Nachricht mit hoher Spamwahrscheinlichkeit gekennzeichnet werden:
 
    > [!NOTE]
-   > Das manuelle Sperren von Domänen ist nicht gefährlich, kann jedoch zusätzliche Verwaltungsarbeit bedeuten. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md).
+   > Das manuelle Sperren von Domänen ist nicht gefährlich, kann jedoch zusätzliche Verwaltungsarbeit bedeuten. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
    - **Absender blockieren**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste blockierter Absender** folgende Schritte aus:
 
@@ -238,7 +238,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
 8. Der optionale Abschnitt **Spameigenschaften** enthält erweiterte Einstellungen für Spamfilter (Advanced Spam Filter, ASF), die standardmäßig deaktiviert sind. ASF-Einstellungen werden demnächst nicht mehr unterstützt, und ihre Funktionalität wird in andere Teile des Filterstapels übernommen. Wir empfehlen, alle diese ASF-Einstellungen in Ihren Antispamrichtlinien deaktiviert zu lassen.
 
-   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen für erweiterte Spam Filter (ASF) in Office 365](advanced-spam-filtering-asf-options.md).
+   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen für erweiterte Spam Filter (ASF) in EOP](advanced-spam-filtering-asf-options.md).
 
 9. (Erforderlich) Erweitern Sie den Abschnitt **Angewendet auf**, um die internen Empfänger zu identifizieren, auf die die Richtlinie angewendet wird.
 
@@ -246,7 +246,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
     Um alle verfügbaren Bedingungen anzuzeigen, ist es am einfachsten, wenn Sie auf **Bedingung hinzufügen** klicken. Sie können auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png) klicken, um Bedingungen zu entfernen, die Sie nicht konfigurieren möchten.
 
-    - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Office 365 an. Klicken Sie in das Feld **Tag hinzufügen**, um eine Domäne anzuzeigen und auszuwählen. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Domänen auszuwählen, falls mehrere Domänen verfügbar sind.
+    - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an. Klicken Sie in das Feld **Tag hinzufügen**, um eine Domäne anzuzeigen und auszuwählen. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Domänen auszuwählen, falls mehrere Domänen verfügbar sind.
 
     - **Der Empfänger ist**: Gibt ein oder mehrere Postfächer, einen oder mehrere E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation an. Klicken Sie auf **Tag hinzufügen**, und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Empfänger auszuwählen.
 
@@ -324,7 +324,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
 ### <a name="configure-end-user-spam-notifications"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer
 
-Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird, können Sie Spambenachrichtigungen für Endbenutzer konfigurieren, damit die Empfänger wissen, was mit Nachrichten passiert ist, die an sie gesendet wurden. Weitere Informationen zu diesen Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird, können Sie Spambenachrichtigungen für Endbenutzer konfigurieren, damit die Empfänger wissen, was mit Nachrichten passiert ist, die an sie gesendet wurden. Weitere Informationen zu diesen Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 

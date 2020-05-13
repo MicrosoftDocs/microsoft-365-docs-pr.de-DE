@@ -196,6 +196,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
           href: manage/manage-deployment-of-add-ins.md
+        - name: FAQ zur zentralen Bereitstellung
+          href: manage/centralized-deployment-faq.md
         - name: Einen Partner oder Wiederverkäufer suchen
           href: manage/find-your-partner-or-reseller.md
         - name: Infor über das Nachrichtencenter

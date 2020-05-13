@@ -1,5 +1,5 @@
 ---
-title: Erneuern von Microsoft 365 for Business
+title: Verlängern von Microsoft 365 Business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,52 +23,52 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'In diesem Artikel erfahren Sie, wie Sie Ihr Microsoft 365 for Business-Abonnement mit einem Product Key erneuern und wiederkehrende Rechnungen aus-oder einschalten. '
-ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
-ms.translationtype: MT
+description: 'Erfahren Sie, wie Sie Ihr Microsoft 365 Business-Abonnement mit einem Product Key verlängern und wie Sie die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
+ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141078"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208428"
 ---
-# <a name="renew-microsoft-365-for-business"></a>Erneuern von Microsoft 365 for Business
+# <a name="renew-microsoft-365-for-business"></a>Verlängern von Microsoft 365 Business
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Dieser Artikel bezieht sich auf die meisten kostenpflichtigen Microsoft 365 for Business-Abonnements.
+Dieser Artikel gilt für die meisten kostenpflichtigen Microsoft 365 Business-Abonnements.
   
-Informationen zum erneuern mithilfe eines Product Keys, den Sie bei einem Einzelhandelsgeschäft oder einem Microsoft-Partner erworben haben, finden Sie unter [Suchen und Eingeben Ihres Product Keys](../enter-your-product-key.md).
+Informationen zum Verlängern mit einem Product Key, den Sie bei einem Einzelhändler oder Microsoft-Partner erworben haben, finden Sie unter [Suchen und Eingeben Ihres Product Keys](../enter-your-product-key.md).
 
 > [!NOTE]
-> Die Zahlung per Bankkonto ist in einigen Ländern oder Regionen nicht möglich.
+> Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.
   
-## <a name="turn-recurring-billing-off-or-on"></a>Periodische Abrechnung deaktivieren oder aktivieren
+## <a name="turn-recurring-billing-off-or-on"></a>Aktivieren oder Deaktivieren der wiederkehrenden Abrechnung
 
-Wenn Sie per Kreditkarte oder Bankkonto bezahlen, ist die **wiederkehrende Abrechnung** standardmäßig aktiviert. Wenn die **wiederkehrende Abrechnung** fortgesetzt wird, wird Ihr Abonnement jedes Jahr an dem Tag in Rechnung gestellt, an dem Sie abonniert haben. Wenn Ihr Abonnement aktiv ist, können Sie es im Admin Center deaktivieren oder wieder einschalten.
+Wenn Sie mit Kreditkarte oder Bankkonto bezahlen, ist die **wiederkehrende Abrechnung** standardmäßig aktiviert. Wenn die **wiederkehrende Abrechnung** aktiviert ist, wird Ihr Abonnement jedes Jahr am Tag Ihrer Anmeldung in Rechnung gestellt. Wenn Ihr Abonnementstatus "Aktiv" lautet, können Sie die automatische Verlängerung im Admin Center deaktivieren oder erneut aktivieren.
   
-Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr Abonnement am Ende der Abonnementlaufzeit ab. Sie können **wiederkehrende Rechnungen** aktivieren und Kreditkarten-oder Bankkontoinformationen bereitstellen, damit Ihr Abonnement jedes Jahr am Tag, an dem Sie abonniert haben, weiterhin in Rechnung gestellt wird. Sie haben auch die Möglichkeit, jeden Monat zu zahlen oder das ganze Jahr über zu bezahlen. Ihre Kreditkarte oder Ihr Bankkonto wird erst nach Ablauf Ihrer anfänglichen Abonnementlaufzeit belastet.
+Wenn Sie für Ihr Abonnement mit einem Product Key im Voraus bezahlt haben, läuft Ihr Abonnement am Ende des Bereitstellungszeitraums ab. Sie können die **wiederkehrende Abrechnung** aktivieren und Informationen zur Kreditkarte oder dem Bankkonto bereitstellen, damit Ihr Abonnement jedes Jahr am Tag Ihrer Anmeldung in Rechnung gestellt wird. Sie haben auch die Möglichkeit, monatlich oder für das gesamte Jahr im Voraus zu bezahlen. Ihre Kreditkarte bzw. Ihr Bankkonto wird erst nach Ablauf des ersten Bereitstellungszeitraums belastet.
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
-2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
+2. Wählen Sie das Abonnement aus, für das Sie die wiederkehrende Abrechnung verwalten möchten.
 
-3. Wählen Sie unter **Abrechnung**neben **News on** oder **expire on**die Option **Bearbeiten**aus.
+3. Wählen Sie unter **Abrechnung** neben **Wird verlängert am** oder **Läuft ab am** die Option **Bearbeiten** aus.
 
-4. Wählen Sie im Bereich **wiederkehrende Abrechnungseinstellungen** die Option **ausschalten aus,** um Sie zu deaktivieren. Wenn die wiederkehrende Abrechnung bereits deaktiviert ist, wählen Sie **monatlich** oder **einmal** aus, um Sie zu aktivieren.
+4. Wählen Sie im Bereich mit den Einstellungen für die **wiederkehrende Abrechnung** die Option **Deaktivieren** aus, um sie zu deaktivieren. Wenn die wiederkehrende Abrechnung bereits deaktiviert wurde, wählen Sie **Monatlich** oder **Einmalig** aus, um Sie zu aktivieren.
 
-5. Wählen Sie **Änderungen übermitteln**.
+5. Wählen Sie **Änderung absenden** aus.
 
     > [!NOTE]
-    > - Sie können die Einstellung für **wiederkehrende Fakturierung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen ist oder deaktiviert ist, müssen Sie [es erneut aktivieren](reactivate-your-subscription.md) , bevor Sie die **wiederkehrende Abrechnung** ein-oder ausschalten können.
-    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort storniert. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum im Abschnitt **Abrechnung** der Abonnementdetails auf der Seite **Ihre Produkte** anzeigen.
-    > - Informationen zum sofortigen Abbrechen des Abonnements finden Sie unter [Cancel My Subscription](cancel-your-subscription.md).
+    > - Sie können die Einstellung für **wiederkehrende Abrechnung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen oder deaktiviert ist, müssen Sie es zuerst [reaktivieren](reactivate-your-subscription.md), bevor Sie die **wiederkehrende Abrechnung** aktivieren oder deaktivieren können.
+    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort gekündigt. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum im Abschnitt **Abrechnung** der Abonnementdetails auf der Seite **Ihre Produkte** anzeigen.
+    > - Wenn Sie erfahren möchten, wie Sie das Abonnement sofort kündigen können, lesen Sie [Kündigen eines Abonnements](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -76,18 +76,18 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
   
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
-2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
+2. Wählen Sie das Abonnement aus, für das Sie die wiederkehrende Abrechnung verwalten möchten.
 
-3. Um die **wiederkehrende Abrechnung**zu aktivieren, schalten Sie die Umschaltfläche **auf ein ein**.
+3. Wenn Sie die **wiederkehrende Abrechnung** aktivieren möchten, setzen Sie die Umschaltfläche auf **Ein**.
 
-    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Nahaufnahme einer Abonnementkarte mit aktivierter wiederkehrender Abrechnung.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **aus**schalten.
+    Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **Aus** setzen.
 
     > [!NOTE]
-    > - Sie können die Einstellung für **wiederkehrende Fakturierung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen ist oder deaktiviert ist, müssen Sie [es erneut aktivieren](reactivate-your-subscription.md) , bevor Sie die **wiederkehrende Abrechnung** ein-oder ausschalten können.
-    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort storniert. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum auf der Abonnementkarte anzeigen.
-    > - Informationen zum sofortigen Abbrechen des Abonnements finden Sie unter [Cancel My Subscription](cancel-your-subscription.md).
+    > - Sie können die Einstellung für **wiederkehrende Abrechnung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen oder deaktiviert ist, müssen Sie es zuerst [reaktivieren](reactivate-your-subscription.md), bevor Sie die **wiederkehrende Abrechnung** aktivieren oder deaktivieren können.
+    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort gekündigt. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum auf der Abonnementkarte anzeigen.
+    > - Wenn Sie erfahren möchten, wie Sie das Abonnement sofort kündigen können, lesen Sie [Kündigen eines Abonnements](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -95,18 +95,18 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
   
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
-2. Wählen Sie das Abonnement aus, für das Sie die wiederholte Abrechnung verwalten möchten.
+2. Wählen Sie das Abonnement aus, für das Sie die wiederkehrende Abrechnung verwalten möchten.
 
-3. Um die **wiederkehrende Abrechnung**zu aktivieren, schalten Sie die Umschaltfläche **auf ein ein**.
+3. Wenn Sie die **wiederkehrende Abrechnung** aktivieren möchten, setzen Sie die Umschaltfläche auf **Ein**.
 
-    ![Nahaufnahme einer Abonnementkarte, für die wiederkehrende Abrechnung aktiviert ist.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Nahaufnahme einer Abonnementkarte mit aktivierter wiederkehrender Abrechnung.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **aus**schalten.
+    Sie können die **wiederkehrende Abrechnung** deaktivieren, indem Sie die Umschaltfläche auf **Aus** setzen.
 
     > [!NOTE]
-    > - Sie können die Einstellung für **wiederkehrende Fakturierung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen ist oder deaktiviert ist, müssen Sie [es erneut aktivieren](reactivate-your-subscription.md) , bevor Sie die **wiederkehrende Abrechnung** ein-oder ausschalten können.
-    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort storniert. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum auf der Abonnementkarte anzeigen.
-    > - Informationen zum sofortigen Abbrechen des Abonnements finden Sie unter [Cancel My Subscription](cancel-your-subscription.md).
+    > - Sie können die Einstellung für **wiederkehrende Abrechnung** nur für aktive Abonnements ändern. Wenn Ihr Abonnement bereits abgelaufen oder deaktiviert ist, müssen Sie es zuerst [reaktivieren](reactivate-your-subscription.md), bevor Sie die **wiederkehrende Abrechnung** aktivieren oder deaktivieren können.
+    > - Wenn die **wiederkehrende Abrechnung** deaktiviert ist, wird das Abonnement nicht sofort gekündigt. Es bleibt bis zum Ablauf aktiv. Sie können das Ablaufdatum auf der Abonnementkarte anzeigen.
+    > - Wenn Sie erfahren möchten, wie Sie das Abonnement sofort kündigen können, lesen Sie [Kündigen eines Abonnements](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -116,6 +116,6 @@ Wenn Sie Ihr Abonnement mit einem Product Key voraus bezahlt haben, läuft Ihr A
   
 [Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann ich darauf noch zugreifen?](what-if-my-subscription-expires.md)
 
-[Eingeben des Product Keys](../enter-your-product-key.md)
+[Eingeben des Product Key](../enter-your-product-key.md)
   
-[Kaufen Ihrer Testversion von Microsoft 365 for Business](../buy-a-subscription-from-your-free-trial.md)
+[Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md)
