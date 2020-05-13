@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen und gleichzeitig sicherzustellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden. Mit diesen Bezeichnungen können Schutzeinstellungen angewendet werden, die die Verschlüsselung optischer Kennzeichnungen wie Fußzeilen und Wasserzeichen umfassen.
-ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022153"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213283"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Weitere Informationen Vertraulichkeitsbezeichnungen
 
@@ -89,7 +89,7 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
     
     ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](../media/Sensitivity-label-watermark-header.png)
     
-    Müssen Sie überprüfen, wann Inhaltsmarkierungen angebracht werden? Informationen hierzu finden Sie unter [Wann Microsoft 365 die Inhaltskennzeichnung und -verschlüsselung anwendet](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Müssen Sie überprüfen, wann Inhaltsmarkierungen angebracht werden? Siehe [Wenn Office-Apps Markierungen und Verschlüsselungen auf Inhalte anwenden](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
     Zeichenfolgenlängen: Wasserzeichen sind auf 255 Zeichen beschränkt. Kopf-und Fußzeilen sind (mit Ausnahme von Excel) auf 1024 Zeichen beschränkt. Bei Excel liegt der Höchstwert bei 255 Zeichen für Kopf-und Fußzeilen, aber in dieser Beschränkung sind nicht sichtbare Zeichen, wie z. B. Formatierungscodes, enthalten. Wenn dieser Wert erreicht ist, wird die eingegebene Zeichenfolge in Excel nicht angezeigt.
 

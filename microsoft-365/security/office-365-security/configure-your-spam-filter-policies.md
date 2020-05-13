@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 85517d5caeac900623c61ef8294b416ddbd97eb8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209559"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213376"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -31,7 +31,7 @@ Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbe
 
 Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Antispamrichtlinien im Security & Compliance Center im Vergleich zu Exchange Online PowerShell oder Exchange Online Protection PowerShell
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Antispamrichtlinien im Security & Compliance Center vs PowerShell
 
 Die grundlegenden Elemente einer Antispamrichtlinie in EOP sind:
 
@@ -363,7 +363,7 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
 
 Die Standardrichtlinie kann nicht entfernt werden.
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-anti-spam-policies"></a>Verwenden von Exchange Online PowerShell oder Exchange Online Protection PowerShell zum Konfigurieren von Antispamrichtlinien
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien
 
 Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verfügbar:
 

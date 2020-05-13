@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Microsoft 365 Finanzdienstleistern bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160459"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214696"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -216,7 +216,7 @@ Finanzinstitute verwalten große Datenmengen. Einige Aufbewahrungszeiträume wer
 - Was geschieht, wenn der Aufbewahrungszeitraum abläuft (Löschen des Dokuments, Starten einer Anordnungsüberprüfung oder keine Aktion)
 -  Was den Beginn des Aufbewahrungszeitraums auslöst (Erstellungsdatum, Datum der letzten Änderung, Datum der Bezeichnung oder ein Ereignis) und das Dokument oder die E-Mail als Datensatz kennzeichnet (d. h. es kann nicht bearbeitet oder gelöscht werden)
 
-Die Aufbewahrungsbezeichnungen werden dann auf SharePoint-oder OneDrive-Websites, Exchange-Postfächern und Microsoft 365-Gruppen veröffentlicht. Benutzer können die Aufbewahrungsbezeichnungen manuell auf Dokumente und E-Mails anwenden. Datensatzmanager können mithilfe von Intelligence die Beschriftungen automatisch anwenden. Intelligente Funktionen können auf [mehr als 90 integrierten Typen vertraulicher Informationen](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (z. B. „ABA-Outing“, „US-Bankkontonummer“ oder „US-Sozialversicherungsnummer“) basieren. Sie können auch basierend auf Schlüsselwörtern oder vertraulichen Daten in Dokumenten oder E-Mails wie Kreditkartennummern oder anderen persönlich identifizierbaren Informationen oder basierend auf SharePoint-Metadaten angepasst werden. Bei Daten, die nicht einfach durch manuellen oder automatisierten Musterabgleich erkannt werden, können lernfähige Klassifizierer dazu verwendet werden, Dokumente auf Grundlage des maschinellen Lernens intelligent einzustufen.
+Die Aufbewahrungsbezeichnungen werden dann auf SharePoint-oder OneDrive-Websites, Exchange-Postfächern und Microsoft 365-Gruppen veröffentlicht. Benutzer können die Aufbewahrungsbezeichnungen manuell auf Dokumente und E-Mails anwenden. Datensatzmanager können mithilfe von Intelligence die Beschriftungen automatisch anwenden. Intelligente Funktionen können auf [mehr als 90 integrierten Typen vertraulicher Informationen](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (z. B. „ABA-Outing“, „US-Bankkontonummer“ oder „US-Sozialversicherungsnummer“) basieren. Sie können auch basierend auf Schlüsselwörtern oder vertraulichen Daten in Dokumenten oder E-Mails wie Kreditkartennummern oder anderen persönlich identifizierbaren Informationen oder basierend auf SharePoint-Metadaten angepasst werden. Bei Daten, die nicht einfach durch manuellen oder automatisierten Musterabgleich erkannt werden, können lernfähige Klassifizierer dazu verwendet werden, Dokumente auf Grundlage des maschinellen Lernens intelligent einzustufen.
  
 Die **Securities and Exchange Commission (SEC)** verlangt, dass Börsenhändler und andere regulierte Finanzinstitute alle geschäftlichen Mitteilungen beibehalten. Diese Anforderungen gelten für viele Kommunikations-und Datentypen, einschließlich E-Mails, Dokumente, Chatnachrichten, Faxe und vieles mehr. **Die SEC-Regel 17a-4** definiert die Kriterien, denen diese Organisationen entsprechen müssen, um Datensätze in einem elektronischen Datenspeicher zu speichern. In 2003 hat die SEC eine Ausgabe herausgegeben, die diese Anforderungen präzisiert. Die folgenden Kriterien wurden miteinbezogen:
 
