@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Erfahren Sie mehr über Abonnements und Lizenzen in Microsoft 365 for Business und wissen, wer Lizenzen zuweisen kann und was passiert, wenn Sie einer Person eine Lizenz zuweisen. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635436"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211438"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 
@@ -58,20 +58,20 @@ In der folgenden Tabelle wird aufgeführt, was automatisch passiert, wenn Sie ei
   
 |**Bei diesem Dienst zum Abonnement**|**Dies geschieht automatisch**|
 |:-----|:-----|
-|Exchange Online  <br/> |Es wird ein Postfach für diese Person erstellt.  <br/> |
+|Exchange Online  <br/> |Es wird ein Postfach für diese Person erstellt.  <br/> Informationen zur SLA für diese Aufgabe, die abgeschlossen werden soll, finden Sie unter ["einrichten...". Nachrichten im Microsoft 365 Admin Center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Dieser Person werden Bearbeitungsberechtigungen für die standardmäßige SharePoint Online-Teamwebsite zugewiesen.  <br/> |
 |Skype for Business Online  <br/> |Die Person kann auf die Features zugreifen, die der Lizenz zugeordnet sind.  <br/> |
-|Microsoft 365-Apps für Unternehmen  <br/> |Die Person kann dann Microsoft Office herunterladen und auf bis zu fünf Macs oder PCs, fünf Tablets und fünf Smartphones installieren.  <br/> |
+|Microsoft 365 Apps for Enterprise  <br/> |Die Person kann dann Microsoft Office herunterladen und auf bis zu fünf Macs oder PCs, fünf Tablets und fünf Smartphones installieren.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Auf wie vielen Geräten kann Office installiert werden?
 
 Wenn Ihr Abonnement ein beliebiges der folgenden Produkte umfasst, kann jede Person Office auf bis zu fünf PCs oder Macs, fünf Tablets und fünf Smartphones installieren.
   
-- Microsoft 365 apps for Business
+- Microsoft 365 Apps for Business
     
 - Microsoft 365 Business Standard
     
-- Microsoft 365-Apps für Unternehmen
+- Microsoft 365 Apps for Enterprise
     
 - Office 365 Enterprise E3
     

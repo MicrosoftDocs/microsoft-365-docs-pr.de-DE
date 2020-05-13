@@ -15,29 +15,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Erfahren Sie, wie Sie mithilfe &amp; des Security Compliance Center Daten für die Analyse mit Advanced eDiscovery vorbereiten. '
-ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Center Daten für die Analyse mit Advanced eDiscovery vorbereiten. '
+ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626659"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208099"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Vorbereiten von Daten für Advanced eDiscovery (klassisch)
 
 In diesem Thema wird beschrieben, wie Sie die Ergebnisse einer Inhaltssuche in einen Fall in Advanced eDiscovery (Classic) laden. 
   
 > [!IMPORTANT]
-> Da wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir den Ruhestand von Advanced eDiscovery an, auch bekannt als Advanced eDiscovery *(Classic)* oder *Advanced eDiscovery v 1.0*. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).   
+> Während wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir jetzt die Deaktivierung von Advanced eDiscovery (auch bekannt als *Advanced eDiscovery (Classic)* oder *Advanced eDiscovery v1.0*) an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).   
   
 ## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten von Daten für erweiterte eDiscovery
 
-Zum &amp; Analysieren von Daten mit Advanced eDiscovery können Sie die Ergebnisse einer Inhaltssuche verwenden, die Sie im Microsoft 365 Security Compliance Center (aufgeführt auf der Seite " **Inhaltssuche** " im Microsoft 365 Security &amp; Compliance Center) oder einer Suche im Zusammenhang mit einem eDiscovery-Fall (aufgeführt auf der Seite " **eDiscovery** " im Security &amp; Compliance Center) ausführen. 
+Zum Analysieren von Daten mit Advanced eDiscovery können Sie die Ergebnisse einer Inhaltssuche verwenden, die Sie im Microsoft 365 Security &amp; Compliance Center (aufgeführt auf der Seite " **Inhaltssuche** " im Microsoft 365 Security &amp; Compliance Center) oder einer Suche im Zusammenhang mit einem eDiscovery-Fall (aufgeführt auf der Seite " **eDiscovery** " im Security &amp; Compliance Center) ausführen. 
   
 Die detaillierten Schritte zum Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery finden Sie unter [Prepare Search results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> Wenn Sie Daten außerhalb von Microsoft 365 haben und diese in Microsoft 365 importieren möchten, damit Sie Sie in Advanced eDiscovery vorbereiten und analysieren können, sehen Sie sich eine [Übersicht über das Importieren von PST-Dateien in Microsoft 365 und zum](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) [Archivieren von drittanbieterdaten](https://go.microsoft.com/fwlink/p/?linkid=716918)an. 
+> Wenn Sie Daten außerhalb von Microsoft 365 haben und diese in Microsoft 365 importieren möchten, damit Sie Sie in Advanced eDiscovery vorbereiten und analysieren können, sehen Sie sich eine [Übersicht über das Importieren von PST-Dateien in Microsoft 365 und zum](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) [Archivieren von drittanbieterdaten](https://go.microsoft.com/fwlink/p/?linkid=716918)an. 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Schritt 2: Laden von Suchergebnis Daten in einen Fall in Advanced eDiscovery
 
@@ -45,7 +45,7 @@ Nachdem Sie die Suchergebnisse im Security &amp; Compliance Center für die Anal
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     

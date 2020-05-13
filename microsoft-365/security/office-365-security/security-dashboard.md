@@ -1,5 +1,5 @@
 ---
-title: Übersicht über das Sicherheitsdashboard
+title: Übersicht über das Sicherheits Dashboard
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um Office 365 Bedrohungsschutz Status zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632517"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208036"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
@@ -61,7 +61,7 @@ Das Threat Protection-Status-Widget zeigt die Effektivität des Bedrohungsschutz
 
 ![Widget "Bedrohungsschutz Status"](../../media/tpswidget.png)
 
-Die Details hängen davon ab, ob Ihr Microsoft 365-Abonnement [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
+Die Details hängen davon ab, ob Ihr Microsoft 365-Abonnement [Exchange Online Protection](exchange-online-protection-overview.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
 
 |||
 |---|---|

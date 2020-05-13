@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637818"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209595"
 ---
 # <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
 
@@ -60,9 +60,9 @@ Kampagnen Ansichten stehen im [Security & Compliance Center](https://protection.
 
 Sie können auch die Ansicht Kampagnen Aufrufen von:
 
-- **Threat Management** \> **Explorer** \> – **Kampagnen** **anzeigen** \>
+- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Kampagnen**
 
-- **Threat Management** \> **Explorer** \> **View** \> **alle e-Mail-** \> **Kampagnen** anzeigen
+- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Alle e-Mails** \> **Kampagne**
 
 > [!TIP]
 > Wenn keine Kampagnendaten angezeigt werden, versuchen Sie, den Zeitraum zu ändern.
@@ -83,7 +83,7 @@ Auf der Seite "Übersicht" werden die folgenden Informationen zur Kampagne angez
 
 - **Geklickt**von: die Anzahl der Benutzer, die auf die URL in der Phishing-Nachricht geklickt haben.
 
-- **Klicken Sie auf Rate**: den Prozentsatz, der von "auf**Posteingang****geklickt** / " berechnet wird. Dieser Wert ist ein Indikator für die Effektivität der Kampagne und gibt an, ob die Empfänger die Nachricht als Phishing identifizieren konnten, und vermeiden Sie das Klicken auf die Nutzlast-URL.
+- **Klicken Sie auf Rate**: den Prozentsatz,**Clicked**der von "auf  /  **Posteingang**geklickt" berechnet wird. Dieser Wert ist ein Indikator für die Effektivität der Kampagne und gibt an, ob die Empfänger die Nachricht als Phishing identifizieren konnten, und vermeiden Sie das Klicken auf die Nutzlast-URL.
 
 - **Besucht**: Anzahl der Benutzer, die die Nutzlast-Website tatsächlich durchlaufen haben. Wenn auf Werte **geklickt** wird, aber sichere Links den Zugriff auf die Website blockiert haben, ist dieser Wert gleich NULL.
 
@@ -144,7 +144,7 @@ Das Diagramm enthält die folgenden Informationen:
 
   <sup>\*\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da diese Nachrichten isoliert und nicht zugestellt werden sollen.
 
-- **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
+- **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in EoP](quarantine-email-messages.md).
 
   - **Ordner gelöscht**
 

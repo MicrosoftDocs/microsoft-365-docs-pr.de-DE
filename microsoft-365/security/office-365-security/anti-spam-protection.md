@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Hier erhalten Sie Informationen zu den Antispameinstellungen und-Filtern, mit denen Sie Spam in Exchange Online und Microsoft 365 verhindern können.
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können Informationen zu den Antispameinstellungen und-Filtern erhalten, mit denen Spam in Exchange Online Protection (EoP) verhindert wird.
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034058"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211416"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Anti-Spam-Schutz in Microsoft 365
+# <a name="anti-spam-protection-in-eop"></a>Anti-Spam-Schutz in EoP
 
 > [!NOTE]
-> Dieses Thema richtet sich an Microsoft 365-Administratoren. Informationen zu Endbenutzer Themen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) und weitere Informationen [zu Junk-e-Mails und Phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Dieses Thema richtet sich an Administratoren. Informationen zu Endbenutzer Themen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) und weitere Informationen [zu Junk-e-Mails und Phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, werden Ihre e-Mail-Nachrichten automatisch vor Spam (Junk-e-Mail) durch EoP geschützt.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden e-Mail-Nachrichten automatisch vor Spam (Junk-e-Mail) durch EoP geschützt.
 
 Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. EoP Anti-Spam-und Anti-Phishing-Technologie wird auf unseren e-Mail-Plattformen angewendet, um Benutzern die neuesten Antispam-und Antiphishing-Tools und Innovationen im gesamten Netzwerk bereitzustellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
 
@@ -43,7 +43,7 @@ Zur Verringerung von Junk-e-Mails umfasst EoP den Junk-e-Mail-Schutz, der propri
 
 Die Anti-Spam-Einstellungen in EoP bestehen aus den folgenden Technologien:
 
-- **Verbindungsfilterung**: identifiziert gute und ungültige e-Mail-Quellserver frühzeitig in der eingehenden e-Mail-Verbindung über die IP-Zulassungsliste, die IP-Sperrliste und die Liste *sicherer* Adressen (eine dynamische, aber nicht bearbeitbare Liste von vertrauenswürdigen Absendern, die von Microsoft verwaltet werden). Sie konfigurieren diese Einstellungen in der Verbindungsfilter Richtlinie. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in Microsoft 365](configure-the-connection-filter-policy.md).
+- **Verbindungsfilterung**: identifiziert gute und ungültige e-Mail-Quellserver frühzeitig in der eingehenden e-Mail-Verbindung über die IP-Zulassungsliste, die IP-Sperrliste und die Liste *sicherer* Adressen (eine dynamische, aber nicht bearbeitbare Liste von vertrauenswürdigen Absendern, die von Microsoft verwaltet werden). Sie konfigurieren diese Einstellungen in der Verbindungsfilter Richtlinie. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof Intelligence verwendet Verbindungsfilterung zum Erstellen von Zulassungs-und Sperrlisten von Absendern, die Ihre e-Mail-Domäne manipulieren. Weitere Informationen finden Sie unter [erfahren Sie mehr über Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
@@ -105,7 +105,7 @@ Hier sind einige Schritte, die Sie ausführen können, um falsch positive Ergebn
 
   Weitere Informationen zu diesen Einstellungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Verwenden der verfügbaren Listen für sichere Absender**: Weitere Informationen finden Sie unter [Create Safe Sender Lists] (Create-Safe-Sender-Lists-in-Office-365.MD.
+- **Verwenden der verfügbaren Listen für sichere Absender**: Weitere Informationen finden Sie unter [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Stellen Sie sicher, dass Benutzer innerhalb der Sende-und Empfangs Grenzen liegen** , wie unter [empfangen und Senden von Grenzwerten](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in der Exchange Online Dienstbeschreibung beschrieben.
 

@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security & Compliance Center in Office 365.
-ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166076"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208139"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
  Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security & Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
     
@@ -64,7 +64,7 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
     |**Parameter**|**Beschreibung**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |Die SMTP-Adresse des Postfachs des Benutzers.  <br/> |
-    | `SharePointLocation` <br/> |Die URL für die OneDrive für Unternehmen Website des Benutzers oder die URL für eine beliebige Website in Ihrer Organisation. Verwenden Sie für die URL für OneDrive für Unternehmen Websites folgendes Format: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Zum Beispiel: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `SharePointLocation` <br/> |Die URL für die OneDrive für Unternehmen Website des Benutzers oder die URL für eine beliebige Website in Ihrer Organisation. Verwenden Sie für die URL für OneDrive für Unternehmen Websites folgendes Format: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Zum Beispiel: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
     | `ContentMatchQuery` <br/> |Die Suchabfrage für die Suche. Weitere Informationen zum Erstellen einer Suchabfrage finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Für e-Mail das Datum, an dem oder nachdem eine Nachricht von einem Empfänger empfangen oder vom Absender gesendet wurde. Für Dokumente auf SharePoint-oder OneDrive für Unternehmen-Websites das Datum, an dem oder nachdem ein Dokument zuletzt geändert wurde.  <br/> |
     | `EndDate` <br/> |Für e-Mail das Datum, an dem oder vor dem eine Nachricht von einem Benutzer gesendet wurde. Für Dokumente auf SharePoint-oder OneDrive für Unternehmen-Websites das Datum an oder vor der letzten Änderung eines Dokuments.  <br/> |
@@ -72,24 +72,10 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
 3. Speichern Sie die Excel-Datei als CSV-Datei in einem Ordner auf Ihrem lokalen Computer. Das in Schritt 3 erstellte Skript verwendet die Informationen in dieser CSV-Datei, um die Suchvorgänge zu erstellen. 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center-PowerShell
-
-Im nächsten Schritt stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation her.
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die CSV-Datei in Schritt 1 gespeichert haben.
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, wechseln Sie zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie dann das Skript aus. Zum Beispiel:
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+Der nächste Schritt besteht darin, eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+  
+Wenn Ihr Microsoft 365-Konto die mehrstufige Authentifizierung (MFA) oder Verbundauthentifizierung verwendet, können Sie die Anweisungen im vorherigen Thema zum Herstellen einer Verbindung mit Security & Compliance Center PowerShell nicht anwenden. Lesen Sie stattdessen die Anweisungen im Thema [Herstellen einer Verbindung mit Security & Compliance Center PowerShell bei mehrstufiger Authentifizierung](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Schritt 3: Ausführen des Skripts zum Erstellen und Starten der Suche
 
@@ -97,11 +83,11 @@ Mit dem Skript in diesem Schritt wird eine separate Inhaltssuche für jede Zeile
   
 - **Suchgruppen-ID** – dieser Name bietet eine einfache Möglichkeit zum Organisieren der aus der CSV-Datei erstellten Suchvorgänge. Jede erstellte Suche wird mit der Suchgruppen-ID benannt, und dann wird dem Suchnamen eine Zahl angefügt. Wenn Sie beispielsweise **ContosoCase** für die Suchgruppen-ID eingeben, werden die Suchvorgänge **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**usw. benannt. Beachten Sie, dass bei dem von Ihnen eingegebenen Namen Groß-/Kleinschreibung beachtet wird. Wenn Sie in Schritt 4 und Schritt 5 die Suchgruppen-ID verwenden, müssen Sie den gleichen Fall wie beim Erstellen verwenden. 
     
-- **CSV-Datei** : der Name der CSV-Datei, die Sie in Schritt 1 erstellt haben. Achten Sie darauf, dass Sie den vollständigen Dateinamen verwenden, einschließlich der CSV-Dateierweiterung; Beispiel: `ContosoCase.csv`.
+- **CSV-Datei** : der Name der CSV-Datei, die Sie in Schritt 1 erstellt haben. Achten Sie darauf, dass Sie den vollständigen Dateinamen verwenden, einschließlich der CSV-Dateierweiterung; Beispiel: `ContosoCase.csv` .
     
 So führen Sie das Skript aus
 
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `CreateSearches.ps1`. Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `CreateSearches.ps1` . Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -184,9 +170,9 @@ So führen Sie das Skript aus
     .\CreateSearches.ps1
     ```
 
-3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen ein, und drücken Sie dann die **EINGABETASTE**; Beispiel: `ContosoCase`. Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie Sie in den nachfolgenden Schritten auf die gleiche Weise eingeben müssen.
+3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen ein, und drücken Sie dann die **EINGABETASTE**; Beispiel: `ContosoCase` . Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie Sie in den nachfolgenden Schritten auf die gleiche Weise eingeben müssen.
     
-4. Geben Sie an der Eingabeaufforderung der **Quell-CSV-Datei** den Namen der CSV-Datei ein, einschließlich der CSV-Dateierweiterung; Beispiel: `ContosoCase.csv`.
+4. Geben Sie an der Eingabeaufforderung der **Quell-CSV-Datei** den Namen der CSV-Datei ein, einschließlich der CSV-Dateierweiterung; Beispiel: `ContosoCase.csv` .
     
 5. Drücken **Sie die EINGABETASTE** , um das Skript weiter auszuführen. 
     
@@ -198,7 +184,7 @@ So führen Sie das Skript aus
 
 Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin, ein Skript auszuführen, mit dem ein einfacher Bericht über die Anzahl der Suchtreffer für jede in Schritt 3 erstellte Suche angezeigt wird. Der Bericht enthält auch die Größe der Ergebnisse für jede Suche sowie die Gesamtanzahl der Treffer und die Gesamtgröße aller Suchvorgänge. Wenn Sie das Berichts Skript ausführen, werden Sie zur Eingabe der Suchgruppen-ID und eines CSV-Datei namens aufgefordert, wenn Sie den Bericht in einer CSV-Datei speichern möchten.
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `SearchReport.ps1`. Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `SearchReport.ps1` . Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -259,9 +245,9 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
     .\SearchReport.ps1
     ```
 
-3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen ein, und drücken Sie dann die **EINGABETASTE**; zum Beispiel `ContosoCase`. Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie ihn auf die gleiche Weise wie beim Ausführen des Skripts in Schritt 3 eingeben müssen.
+3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen ein, und drücken Sie dann die **EINGABETASTE**; zum Beispiel `ContosoCase` . Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie ihn auf die gleiche Weise wie beim Ausführen des Skripts in Schritt 3 eingeben müssen.
     
-4. Geben Sie am **Dateipfad zum Speichern des Berichts in einer CSV-Datei (leer lassen, um die Meldung anzuzeigen)** den Dateinamen des vollständigen Pfadnamens (einschließlich der CSV-Dateierweiterung) ein, wenn Sie den Bericht in einer CSV-Datei speichern möchten. Name der CSV-Datei, einschließlich der CSV-Dateierweiterung. Sie können beispielsweise eingeben `ContosoCaseReport.csv` , um es im aktuellen Verzeichnis zu speichern, oder Sie können `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` eingeben, um es in einem anderen Ordner zu speichern. Sie können die Eingabeaufforderung auch leer lassen, um den Bericht anzuzeigen, jedoch nicht in einer Datei zu speichern. 
+4. Geben Sie am **Dateipfad zum Speichern des Berichts in einer CSV-Datei (leer lassen, um die Meldung anzuzeigen)** den Dateinamen des vollständigen Pfadnamens (einschließlich der CSV-Dateierweiterung) ein, wenn Sie den Bericht in einer CSV-Datei speichern möchten. Name der CSV-Datei, einschließlich der CSV-Dateierweiterung. Sie können beispielsweise eingeben, um `ContosoCaseReport.csv` es im aktuellen Verzeichnis zu speichern, oder Sie können eingeben `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` , um es in einem anderen Ordner zu speichern. Sie können die Eingabeaufforderung auch leer lassen, um den Bericht anzuzeigen, jedoch nicht in einer Datei zu speichern. 
     
 5. Drücken Sie **EINGABE**.
     
@@ -276,7 +262,7 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
 
 Da Sie vielleicht viele Suchvorgänge erstellen, vereinfacht dieses letzte Skript einfach das schnelle Löschen der in Schritt 3 erstellten Suchvorgänge. Wie bei den anderen Skripts werden Sie auch von diesem aufgefordert, die Suchgruppen-ID einzugeben. Wenn Sie dieses Skript ausführen, werden alle Suchvorgänge mit der Suchgruppen-ID im Suchnamen gelöscht. 
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `DeleteSearches.ps1`. Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `DeleteSearches.ps1` . Speichern Sie die Datei im gleichen Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
   ```Powershell
   # Delete all searches in a search group
@@ -298,7 +284,7 @@ Da Sie vielleicht viele Suchvorgänge erstellen, vereinfacht dieses letzte Skrip
     .\DeleteSearches.ps1
     ```
 
-3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen für die Suchvorgänge ein, die Sie löschen möchten, und drücken Sie dann die **EINGABETASTE**; Beispiel: `ContosoCase`. Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie ihn auf die gleiche Weise wie beim Ausführen des Skripts in Schritt 3 eingeben müssen.
+3. Geben Sie an der Eingabeaufforderung der **Suchgruppen-ID** einen Suchgruppen Namen für die Suchvorgänge ein, die Sie löschen möchten, und drücken Sie dann die **EINGABETASTE**; Beispiel: `ContosoCase` . Beachten Sie, dass bei diesem Namen die Groß-/Kleinschreibung beachtet wird, sodass Sie ihn auf die gleiche Weise wie beim Ausführen des Skripts in Schritt 3 eingeben müssen.
     
     Das Skript zeigt den Namen jeder gelöschten Suche an.
     

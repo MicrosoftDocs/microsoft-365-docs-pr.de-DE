@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066238"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208387"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -97,7 +97,7 @@ Mithilfe neuer interaktiver Dashboards für Warnungen, Richtlinien Übereinstimm
 
 Compliance-Richtlinien für die Kommunikation überprüfen und Erfassen von Nachrichten über mehrere Kommunikationskanäle, damit Sie Compliance-Probleme schnell überprüfen und beheben können:
 
-- **Microsoft Teams**: Chat Kommunikation für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Richtlinien überprüfen jetzt automatisch alle Microsoft Teams-Kanäle und-Teams für bestimmte Benutzer, die in einer Richtlinie definiert sind, sodass keine separate Zuordnungsliste für Microsoft Teams-Zuordnungen mehr erforderlich ist.
+- **Microsoft Teams**: Chat Kommunikation für öffentliche und private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) -Kanäle und einzelne Chats werden in der Kommunikations Konformität als eigenständige Kanal Quelle oder mit anderen Microsoft 365-Diensten unterstützt. Sie müssen einzelne Benutzer, Verteilergruppen oder bestimmte Microsoft Teams-Kanäle manuell hinzufügen, wenn Sie Benutzer und Gruppen zum Überwachen in einer Kommunikations Konformitätsrichtlinie auswählen.
 - **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Kompatibilitätsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
 - **Jammern**: Private Nachrichten und öffentliche Community-Unterhaltungen in " [jammern](https://docs.microsoft.com/yammer/yammer-landing-page) " werden in Kommunikationsrichtlinien unterstützt. Jammern ist ein optionaler Kanal und muss sich im [einheitlichen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) befinden, um das Überprüfen von Nachrichten und Anlagen zu unterstützen.
 - **Skype for Business Online**: communication Compliance Policies unterstützen die Scan Chat Kommunikation und zugehörige Anlagen in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).

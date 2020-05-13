@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Entwerfen Sie isolierte SharePoint Online Teamwebsites, einschließlich bestimmen von Berechtigungsstufen, Zuweisen von Berechtigungen für Benutzer mit Zugriffsgruppen und geschachtelten Azure Ad Gruppen.
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034840"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209511"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
@@ -63,15 +63,15 @@ Sie können Benutzern Berechtigungen zuweisen, indem Sie Ihrem Benutzerkonto ode
   
 Am Beispiel der SharePoint-Standardgruppen bedeutet dies:
   
-- Mitglieder der SharePoint-Gruppe " ** \<Websitename> Mitglieder** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden der Berechtigungsstufe **Bearbeiten** zugewiesen.
+- Mitglieder der SharePoint-Gruppe " ** \< Websitename> Mitglieder** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden der Berechtigungsstufe **Bearbeiten** zugewiesen.
     
-- Mitglieder der SharePoint-Gruppe " ** \<Websitename> Besucher** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden mit der Berechtigungsstufe " **Lesen** " versehen.
+- Mitglieder der SharePoint-Gruppe " ** \< Websitename> Besucher** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden mit der Berechtigungsstufe " **Lesen** " versehen.
     
-- Mitglieder der SharePoint-Gruppe " ** \<Websitename> Besitzer** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden mit der Berechtigungsstufe " **Vollzugriff** " versehen.
+- Mitglieder der SharePoint-Gruppe " ** \< Websitename> Besitzer** ", die sowohl Benutzerkonten als auch Gruppen enthalten kann, werden mit der Berechtigungsstufe " **Vollzugriff** " versehen.
     
  **Bewährte Methode:** Obwohl Sie Berechtigungen über einzelne Benutzerkonten verwalten können, empfehlen wir stattdessen die Verwendung einer einzelnen Azure AD-Gruppe, die als Zugriffsgruppe bezeichnet wird. Dadurch wird die Verwaltung von Berechtigungen über Mitgliedschaft in der Zugriffsgruppe anstelle der Verwaltung der Liste von Benutzerkonten für jede SharePoint-Gruppe erleichtert.
   
-Azure Ad Gruppen für Microsoft 365 unterscheiden sich von Microsoft 365-Gruppen. Azure Ad Gruppen werden im Microsoft 365 Admin Center angezeigt, deren **Typ** auf **Sicherheit** festgelegt ist und keine e-Mail-Adresse hat. Azure AD-Gruppen können verwaltet werden in:
+Azure Ad Gruppen für Microsoft 365 sind andere Tha Microsoft 365-Gruppen. Azure Ad Gruppen werden im Microsoft 365 Admin Center angezeigt, deren **Typ** auf **Sicherheit** festgelegt ist und keine e-Mail-Adresse hat. Azure AD-Gruppen können verwaltet werden in:
   
 - Active Directory-Domänendienste (AD DS, Active Directory Domain Services)
     
@@ -99,9 +99,9 @@ Im folgenden finden Sie die standardmäßigen SharePoint-Gruppen, die für die V
   
 Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
   
-- Es sollte nur einige wenige Mitglieder im ** \<Websitenamen> Administrators** -Zugriffsgruppe geben, die einer kleinen Anzahl von SharePoint Online Administratoren entsprechen, die die Teamwebsite verwalten.
+- Es sollte nur einige wenige Mitglieder im ** \< Websitenamen> Administrators** -Zugriffsgruppe geben, die einer kleinen Anzahl von SharePoint Online Administratoren entsprechen, die die Teamwebsite verwalten.
     
-- Die meisten ihrer Websitemitglieder befinden sich im ** \<Websitenamen> Mitglieder** oder ** \<Websitename> Viewer** -Zugriffsgruppen. Da Websitemitglieder im ** \<Websitenamen> Mitglieder** Zugriffsgruppe die Möglichkeit haben, Ressourcen auf der Website zu löschen oder zu ändern, sollten Sie die Mitgliedschaft sorgfältig prüfen. Wenn Sie Zweifel haben, fügen Sie das Website Mitglied dem ** \<Websitenamen> Viewer** -Zugriffsgruppe hinzu.
+- Die meisten ihrer Websitemitglieder befinden sich im ** \< Websitenamen> Mitglieder** oder ** \< Websitename> Viewer** -Zugriffsgruppen. Da Websitemitglieder im ** \< Websitenamen> Mitglieder** Zugriffsgruppe die Möglichkeit haben, Ressourcen auf der Website zu löschen oder zu ändern, sollten Sie die Mitgliedschaft sorgfältig prüfen. Wenn Sie Zweifel haben, fügen Sie das Website Mitglied dem ** \< Websitenamen> Viewer** -Zugriffsgruppe hinzu.
     
 Im folgenden finden Sie ein Beispiel für die SharePoint-Gruppen und Zugriffsgruppen für eine isolierte Website mit dem Namen ProjectX.
   

@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
-ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2d011fcb63e0ec9804ade62f9fdcd1dd95fbf798
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035483"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210531"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -47,14 +47,14 @@ Es gibt zwei Möglichkeiten zum Importieren und Archivieren von drittanbieterdat
 
 - **Verwenden Sie einen Drittanbieter-Daten Konnektor im Security & Compliance Center:** Verwenden Sie einen benutzerdefinierten Daten Konnektor, der im Microsoft 365 Compliance Center verfügbar ist. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Drittanbieter-Datenquelle her, wandelt den Inhalt eines Elements in ein e-Mail-Nachrichtenformat um und importiert dann das Element in ein Postfach in Microsoft 365. Derzeit können Sie Connectors zum Importieren und Archivieren von Daten von Facebook-Geschäfts Seiten, Unternehmens Twitter-Konten, LinkedIn, Instant Bloomberg und den Personaldaten Ihrer Organisation implementieren. Eine Schritt-für-Schritt-Anleitung zum Einrichten eines dieser Connectors finden Sie unter:
 
-   - **Facebook:** [Verwenden eines Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
+   - **Facebook:** [Verwenden eines Connectors zum Archivieren von Facebook-Daten (Vorschau)](archive-facebook-data-with-sample-connector.md)
 
-   - **Twitter:** [Verwenden eines Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
+   - **Twitter:** [Verwenden eines Connectors zum Archivieren von Twitter-Daten (Vorschau)](archive-twitter-data-with-sample-connector.md)
 
    - **LinkedIn:** [Einrichten eines Connectors zum Archivieren von LinkedIn Daten](archive-linkedin-data.md)
 
    - **Instant Bloomberg:** [Einrichten eines Connectors zum Archivieren von sofort Bloomberg-Daten](archive-instant-bloomberg-data.md)
 
-   - **HR-Daten:** [Einrichten eines Connectors zum Importieren von HR-Daten](import-hr-data.md)
+   - **HR-Daten:** [Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)](import-hr-data.md)
 
 - **Arbeiten mit einem Microsoft-Partner:** Ihre Organisation arbeitet mit einem Microsoft-Partner zusammen, der einen benutzerdefinierten Connector bereitstellt, der so konfiguriert ist, dass er regelmäßig Elemente aus der Drittanbieter-Datenquelle extrahiert und anschließend eine Verbindung mit der Microsoft-Cloud über eine Drittanbieter-API herstellen und diese Elemente nach Microsoft 365 importieren kann. Der Partner Connector konvertiert auch den Inhalt eines Elements aus der Drittanbieter-Datenquelle in eine e-Mail-Nachricht und importiert diese dann in ein Postfach in Microsoft 365. Eine Liste der Partner, mit denen Sie zusammenarbeiten und den schrittweisen Prozess für diese Methode ausführen können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

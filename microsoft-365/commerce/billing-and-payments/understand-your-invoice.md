@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: dad635df97e9cdf490118adc3a041c876878521b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141328"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211404"
 ---
 # <a name="understand-your-invoice"></a>Informationen zu Ihrer Rechnung
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Oben auf der ersten Seite wird angegeben, wer für die Zahlung verantwortlich is
 | --- | --- |
 | Verkauft an |Das Abrechnungskonto, das den Namen und die Adresse der für die Zahlung verantwortlichen juristischen Person identifiziert. Diese Informationen können auf der Seite " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Abrechnungskonten</a> " verwaltet werden, auf der Sie die Kontovereinbarung finden und die Rollen und Berechtigungen verwalten können. |
 | Rechnung an |Gibt an, wer die Rechnung erhält. Diese Informationen können auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile</a> verwaltet werden. Das Abrechnungsprofil wird auch auf der Seite "Online Rechnung" im Abschnitt " **Rechnungszusammenfassung** " angezeigt. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Manage Billing Profiles](manage-billing-profiles.md). |
-| Abrechnungsprofil |Der Name des Abrechnungs Profils, das zum Definieren von Rechnungs Eigenschaften verwendet wird, wie Bill to, PO-Nummer und Zahlungsbedingungen. Diese Informationen können auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile</a> verwaltet werden. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Manage Billing Profiles](manage-billing-profiles.md). |
+| Abrechnungsprofil |Der Name des Abrechnungs Profils, das zum Definieren von Rechnungs Eigenschaften verwendet wird, wie **Bill to**, **PO-Nummer**und Zahlungsbedingungen. Diese Informationen können auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile</a> verwaltet werden. Weitere Informationen zu Abrechnungs Profilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter [Manage Billing Profiles](manage-billing-profiles.md). |
 | Rechnungsnummer |Eine eindeutige, von Microsoft generierte Rechnungsnummer, die zu Überwachungszwecken verwendet wird. |
 | Rechnungsdatum |Das Datum, an dem die Rechnung generiert wird, in der Regel fünf bis zwölf Tage nach dem Ende des Abrechnungszyklus. Sie können Ihr Rechnungsdatum auf der Seite Abrechnungsprofil Details überprüfen. Zuschläge, die zwischen dem Ende des Abrechnungszeitraums und dem Rechnungsdatum auftreten, sind in der Rechnung für den nächsten Monat enthalten, da Sie sich im nächsten Abrechnungszeitraum befinden. Die Anfangs-und Enddaten für die Abrechnungsperiode für jede Rechnung werden in der Rechnungs-PDF-Datei über die **Abrechnungszusammenfassung**aufgeführt.|
 | Zahlungsbedingungen |Wie Sie Ihre Microsoft-Rechnung bezahlen. *Net 30 Tage* bedeutet, dass Sie mit den folgenden Anweisungen auf Ihrer Rechnung bezahlen, innerhalb von 30 Tagen nach Rechnungsdatum. |
@@ -77,13 +77,13 @@ Auf den Gebührenseiten werden die Kosten nach Produkt aufgeschlüsselt angezeig
 | Steuerbetrag | Steuersatz, der auf den Erwerb basierend auf dem Steuersatz angewendet wird |
 | Gesamt | Der für den Kauf fällige Gesamtbetrag |
 
-Die Details der Einzelposten variieren je nach dem Typ des Produkts, für das Sie aufgeladen haben. Für Azure-Produkte wird beispielsweise die Menge an angewendeten Azure-Gutschriften angezeigt. Auf Sitz basierten Produkten wird ein VK-Preis und eine Menge angezeigt. In den Rechnungsdetails werden die gekauften Produkte, der Rabatt oder die Gutschriften, die angewendet wurden, der Steuersatz und der Betrag sowie die Gesamtsumme der Posten umrissen.
+Die Details der Einzelposten variieren je nach dem Typ des Produkts, für das Sie aufgeladen haben. Für Azure-Produkte wird beispielsweise die Menge an angewendeten Azure-Gutschriften angezeigt. Auf Sitz basierten Produkten wird ein VK-Preis und eine Menge angezeigt. Die Rechnungsdetails zeigen die gekauften Produkte, den Rabatt oder Guthaben, die angewendet wurden, den Steuersatz und den Betrag sowie die Gesamtsumme der Posten.
 
-`Total = Charges - Azure Credit + Tax`
+    `Total = Charges - Azure Credit + Tax`
 
 Der Gesamtbetrag, der für jede Dienst Familie fällig ist, wird berechnet, indem Azure Credits von Guthaben/Gebühren subtrahiert werden und Mehrwertsteuer hinzugefügt wird:
 
-`Total = Charges/Credits - Azure Credit + Tax`
+    `Total = Charges/Credits - Azure Credit + Tax`
 
 Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Überprüfen Ihrer Microsoft-Kundenvertrags Rechnung](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
@@ -103,9 +103,9 @@ Rechnungen sind online verfügbar. Ein Link zu Ihrer Online Rechnung steht in Ih
 
 - **Preise Details** &mdash; Weitere Informationen, einschließlich Details zu Rabatten und Produktpreisen.
 
-- **Online Zahlung** &mdash; Sie können wählen, eine Zahlung online von der Rechnung aus zu tätigen.
+- **Online Zahlung** &mdash; Sie können festlegen, dass eine Zahlung online über die Rechnung erfolgt.
 
-- **Azure Cost Management** &mdash; für Azure-Kunden, Online-Rechnungen enthalten einen Link zu Azure Cost Management.
+- **Azure-Kostenverwaltung** &mdash; Für Azure-Kunden enthalten Online Rechnungen einen Link zu Azure Cost Management.
 
 ### <a name="to-view-your-online-invoice"></a>So zeigen Sie Ihre Online Rechnung an
 
@@ -114,6 +114,42 @@ Rechnungen sind online verfügbar. Ein Link zu Ihrer Online Rechnung steht in Ih
 2. Zum Herunterladen der PDF-Version Ihrer Rechnung wählen Sie **Download Rechnung PDF** in der Zeile für die Rechnung aus, die Sie anzeigen möchten.
 
 3. Um Ihre Online Rechnung anzuzeigen, wählen Sie eine Rechnung aus der Liste aus. Sie können die PDF-Datei auch auf der Seite mit den Rechnungsdetails herunterladen.
+
+## <a name="invoice-faq"></a>Häufig gestellte Fragen zu Rechnungen
+
+### <a name="when-is-my-invoice-available"></a>Wann ist meine Rechnung verfügbar?
+
+Einige Rechnungen werden innerhalb von 24 Stunden nach dem Kauf generiert. Andere Rechnungen werden am Ende des Abrechnungszeitraums generiert und enthalten alle Elemente aus dieser Periode.
+
+### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>Wie bezahle ich den fälligen Betrag auf meiner Rechnung?
+
+Die Zahlungsanweisungen hängen von Ihrer Zahlungsmethode ab und werden unten in der Rechnung PDF angegeben. Wenn es sich bei Ihrer Zahlungsmethode um eine Kreditkarte handelt, wird Sie automatisch innerhalb von 10 Tagen nach Rechnungsdatum aufgeladen. Wenn Ihre Zahlungsmethode durch Scheck oder Überweisung erfolgt, lesen Sie die Informationen unter **Zahlungsanweisungen** in der PDF-Datei.
+
+### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>Was ist der Unterschied zwischen "verkauft an" und "Rechnung an"-Adressen?
+
+- **Verkauft an:** Die für die Zahlung verantwortliche und auf der Rechnung angegebene juristische Person. Die hier angegebene Adresse wird verwendet, um ihren Steuersatz zu ermitteln, es sei denn, Sie möchten während des Kaufs eine Alternative Versandadresse angeben. Weitere Informationen finden Sie unter [Steuerinformationen](tax-information.md).
+- **Rechnung an:** Die Adresse, an die die physische Rechnung gesendet wird (falls zutreffend). Es kann mehrere **Rechnungs** Adressen pro juristische Person geben, aber nur eine **Rechnung an die** Adresse pro Abrechnungsprofil.
+
+### <a name="what-are-billed-amount-and-amount-due"></a>Was sind "Rechnungsbetrag" und "Fälliger Betrag?"
+
+- **Abgerechneter Betrag:** Der Gesamtbetrag für den Kauf, den Sie getätigt haben.
+- **Fälliger Betrag:** Der verbleibende Saldo für das, was Sie Schulden.
+
+### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>Was ist der Unterschied zwischen "Service period" und "Abrechnungszeitraum?"
+
+- **Dienst Zeitraum:** Der Zeitraum, in dem Sie für die Nutzung des Diensts in Rechnung gestellt werden.
+- **Abrechnungszeitraum:** Der Zeitraum seit dem letzten Rechnungsdatum.
+
+### <a name="how-do-i-view-and-print-my-bill"></a>Wie kann ich meine Rechnung anzeigen und drucken?
+
+1. Wählen Sie **auf der**  >  Seite<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a> einen Rechnungsdatums Bereich aus.
+2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **Download Rechnung PDF**aus, und Drucken Sie die PDF-Datei.
+
+Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
+
+### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Warum wird die Azure-Vorauszahlung nicht als Zahlungsmethode angezeigt?
+
+Azure Prepayment steht als Zahlungsmethode nur für berechtigte Azure-Produkte und-Dienste zur Verfügung.
 
 ## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? Kontaktieren Sie den Support.
 

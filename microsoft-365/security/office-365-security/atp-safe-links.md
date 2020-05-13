@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
-ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045250"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208947"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
 
@@ -69,8 +69,8 @@ Wenn [ATP neue Features hinzugefügt werden](office-365-atp.md#new-features-in-o
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
 |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-|Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>So stellen Sie sicher, dass der ATP-Schutz für sichere Links vorhanden ist
 
@@ -87,7 +87,7 @@ In der folgenden Tabelle werden einige Beispielszenarien beschrieben, in denen d
 |Jean ist Mitglied einer Gruppe, die Richtlinien für ATP-sichere Links enthält, die URLs in e-Mail-und Office-Dokumenten umfassen. Jean öffnet eine PowerPoint-Präsentation, die von einem Benutzer gesendet wurde, und klickt dann in der Präsentation auf eine URL.  <br/> |Ja. Die definierten Richtlinien für ATP-sichere Links gelten für Jeans Gruppe, Jeans e-Mail und Word-, Excel-, PowerPoint-oder Visio-Dokumente, die Jean öffnet, solange Jean mit Microsoft 365 apps for Enterprise auf Windows-, IOS-oder Android-Geräten angemeldet ist.  <br/> |
 |In der Organisation von Chris haben keine globalen oder Sicherheitsadministratoren noch keine Richtlinien für ATP-sichere Links definiert. Chris erhält eine e-Mail mit einer URL zu einer bösartigen Website. Chris ist nicht bewusst, dass die URL bösartig ist, und klickt auf den Link.  <br/> |Nein. Die Standardrichtlinie, die URLs für alle Benutzer in der Organisation abdeckt, muss definiert werden, damit der Schutz in Kraft ist.  <br/> |
 |In der Organisation von Pat haben keine globalen oder Sicherheitsadministratoren noch keine Richtlinien für ATP-sichere Links definiert oder bearbeitet. Pat öffnet ein Word-Dokument und klickt auf eine URL in der Datei.  <br/> |Nein. Eine Richtlinie, die Office-Dokumente umfasst, muss definiert sein, damit der Schutz vorhanden ist. Weitere Informationen finden Sie unter [Einrichten von Richtlinien für ATP-sichere Links in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|Lees Organisation verfügt über eine Richtlinie für ATP-sichere `https://tailspintoys.com` Links, die als blockierte Website aufgeführt ist. Lee erhält eine e-Mail-Nachricht, die `https://tailspintoys.com/aboutus/trythispage`eine URL zu enthält. Lee klickt auf die URL.  <br/> |Dies hängt davon ab, ob die gesamte Website und alle ihre Unterseiten in der Liste der blockierten URLs enthalten sind. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
+|Lees Organisation verfügt über eine Richtlinie für ATP-sichere Links, die `https://tailspintoys.com` als blockierte Website aufgeführt ist. Lee erhält eine e-Mail-Nachricht, die eine URL zu enthält `https://tailspintoys.com/aboutus/trythispage` . Lee klickt auf die URL.  <br/> |Dies hängt davon ab, ob die gesamte Website und alle ihre Unterseiten in der Liste der blockierten URLs enthalten sind. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Jamie, Jean es Kollege, sendet eine e-Mail an Jean, ohne zu wissen, dass die e-Mail eine bösartige URL enthält.  <br/> |Dies hängt davon ab, ob Richtlinien für ATP-sichere Links für innerhalb der Organisation gesendete e-Mails definiert sind. Weitere Informationen finden Sie unter [Einrichten von Richtlinien für ATP-sichere Links in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 
