@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: d3b7638a1ff060d1c1760f62e487a7cd649a9131
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209463"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213424"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 
@@ -78,7 +78,7 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Webbasierte Verwaltung|Administratoren können den Dienst in der Exchange-Verwaltungskonsole (EAC) verwalten, die in 60 Sprachen unterstützt wird. Weitere Informationen finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Verzeichnissynchronisierung|Die Verzeichnissynchronisierung ist über das Azure Active Directory-Synchronisierungstool verfügbar. Weitere Informationen finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" unter [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).  |
 |Verzeichnisbasierte Edge-Blockierung (DBEB)|DBEB ermöglicht es Ihnen, Nachrichten für ungültige Empfänger im Dienstnetzwerkumkreis abzulehnen. Mit Blockierung können Administratoren e-Mail-aktivierte Empfänger zu Microsoft 365 hinzufügen und alle an e-Mail-Adressen gesendeten Nachrichten blockieren, die in Microsoft 365 nicht vorhanden sind. Weitere Informationen zum Konfigurieren von Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.|
-|PowerShell|Die vollständige EoP-Funktionalität ist in Exchange Online Protection PowerShell verfügbar. Weitere Informationen finden Sie unter [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|PowerShell|Die vollständige EoP-Funktionalität ist in eigenständigen EoP PowerShell verfügbar. Weitere Informationen finden Sie unter [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
 |**Berichterstellung und Protokollierung**||
 |Nachrichtenablaufverfolgung|Administratoren können e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen. Sie können bestimmen, ob eine Ziel-e-Mail-Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. So können Sie in effizienter Weise Fragen der Benutzer beantworten, Probleme mit dem Nachrichtenfluss behandeln und Richtlinienänderungen überprüfen und müssen seltener den technischen Support um Unterstützung bitten. Weitere Informationen finden Sie unter [Nachrichtenablaufverfolgung im Security & Compliance Center](message-trace-scc.md).|
 |Webbasierte Berichte|Die e-Mail-Schutz Berichte im Security & Compliance Center stellen Messagingdaten bereit. Beispielsweise können Sie überwachen, wie viel Spam und Schadsoftware erkannt wird oder wie oft ihre Nachrichtenfluss Regeln abgeglichen werden. Mithilfe dieser interaktiven Berichte erhalten Sie schnell einen visuellen Überblick über die zusammengefassten Daten und können Details zu einzelnen Nachrichten der letzten 90 Tage überprüfen. Weitere Informationen finden Sie unter [Verwenden von e-Mail-Schutz Berichten zum Anzeigen von Daten über Schadsoftware, Spam und Regel Erkennungen](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die AntiPhishing-Richtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EoP)-Organisationen mit oder ohne Exchange Online Postfächern verfügbar sind.
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208899"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213388"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurieren von Anti-Phishing-Richtlinien in EoP
 
@@ -31,7 +31,7 @@ Organisationen mit Exchange Online Postfächern können Anti-Phishing-Richtlinie
 
 Informationen zum Erstellen und Ändern der erweiterten ATP-Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen, finden Sie unter [configure ATP Anti-Phishing Policies](configure-atp-anti-phishing-policies.md).
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Anti-Phishing-Richtlinien im Security & Compliance Center vs Exchange Online PowerShell
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Anti-Phishing-Richtlinien im Security & Compliance Center vs PowerShell
 
 Die grundlegenden Elemente einer Anti-Phishing-Richtlinie sind:
 
