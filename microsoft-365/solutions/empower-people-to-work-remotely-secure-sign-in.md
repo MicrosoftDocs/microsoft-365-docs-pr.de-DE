@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Fordern Sie Ihre Remote-Mitarbeiter auf, sich mit der Mehrstufigen Authentifizierung (MFA) anzumelden.
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166137"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213472"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remote-Mitarbeiter mit MFA
 
@@ -55,9 +55,9 @@ Weitere Informationen finden Sie in dieser [Übersicht der Sicherheitsstandards]
 
 Richtlinien für den bedingten Zugriff sind eine Reihe von Regeln, die die Bedingungen angeben, unter denen Anmeldungen ausgewertet und zugelassen werden. Sie können beispielsweise eine Richtlinie für den bedingten Zugriff erstellen, in der Folgendes angegeben ist:
 
-- Wenn der Nutzerkontoname für einen Nutzer bestimmt ist, der ein Exchange-, Nutzer-, Kennwort-, Sicherheits-, SharePoint- oder globaler Administrator ist, wird MFA benötigt, bevor der Zugriff zugelassen wird.
+- Entspricht die Bezeichnung eines Benutzerkontos dem Namen eines Mitglieds einer Gruppe von Benutzern, denen Exchange, Benutzer, Kennwort sowie Sicherheits-, SharePoint- oder globale Administratorrollen zugewiesen sind, ist eine mehrstufige Authentifizierung (MFA) erforderlich, bevor der Zugriff genehmigt wird.
 
-Diese Richtlinie ist einfacher, als sich daran zu erinnern, einzelne Nutzerkonten für MFA zu konfigurieren, wenn sie diesen Administratorrollen hinzugefügt oder daraus entfernt werden.
+Diese Richtlinie ermöglicht es Ihnen, MFA basierend auf einer Gruppenmitgliedschaft zu verlangen, anstatt einzelne Benutzerkonten für MFA zu konfigurieren, wenn diesen Administratorrollen zugewiesen oder entzogen wurden.
 
 Sie können die Richtlinien für den bedingten Zugriff auch für erweiterte Funktionen verwenden, z. B. wenn die Anmeldung von einem kompatiblen Gerät aus erfolgen muss, z. B. von Ihrem Laptop unter Windows 10.
 
@@ -65,15 +65,15 @@ Für den bedingten Zugriff ist Azure AD Premium P1 erforderlich, das in Microsof
 
 Weitere Informationen finden Sie in dieser [Übersicht über den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## <a name="azure-ad-identity-protection-policies"></a>Azure AD-Identity Protection
+## <a name="azure-ad-identity-protection-support"></a>Support für Azure AD Identity Protection
 
-Azure AD-Identity Protection sind Regeln, die die Bedingungen angeben, unter denen Anmeldungen ausgewertet und zugelassen werden. Sie können beispielsweise eine Azure AD-Identity Protection-Richtlinie erstellen, in der Folgendes angegeben ist:
+Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für bedingten Zugriff erstellen, die festlegt:
 
-- Wenn das Risiko der Anmeldung als mittleres oder hohes Risiko eingestuft wird, muss der Nutzer MFA verwenden, um sich anzumelden.
+- Wenn das Anmelderisiko als mittleres oder hohes Risiko eingestuft wird, ist MFA zu fordern.
 
-Für den Azure AD-Identity Protection ist Azure AD Premium P2 erforderlich, das in Microsoft 365 E5 enthalten ist.
+Für Azure AD Identity Protection ist Azure AD Premium P2 erforderlich, das in Microsoft 365 E5 enthalten ist.
 
-Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+Weitere Informationen finden Sie unter [Risikoabhängiger bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## <a name="using-these-methods-together"></a>Diese Methoden zusammen verwenden
 
@@ -84,12 +84,12 @@ Beachten Sie Folgendes:
 
 Wenn die Sicherheitsstandards aktiviert sind, werden alle neuen Nutzer zur MFA-Registrierung und zur Verwendung der Microsoft Authenticator-App aufgefordert. 
 
-Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstandards, Richtlinien für bedingten Zugriff und Nutzerkonteneinstellungen.
+Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstandards und Richtlinien für bedingten Zugriff.
 
-|| Aktiviert | Deaktiviert | Sekundäre Authentifizierungsmethode |
+|| Aktiviert | Deaktiviert | Zusätzliche Authentifizierungsmethode |
 |:-------|:-----|:-------|:-------|
 | **Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
-| **Richtlinien für bedingten Zugriff** | Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn nicht alle aktiviert sind, können Sie die Sicherheitsstandards aktivieren  | Nutzerdefiniert bei der MFA-Registrierung  |
+| **Richtlinien für bedingten Zugriff** | Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren  | Werden vom Benutzer während der MFA-Registrierung festgelegt  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>Administratorschulung und technische Ressourcen für MFA und Identität

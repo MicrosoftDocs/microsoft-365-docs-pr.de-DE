@@ -2,8 +2,8 @@
 title: Antispam-Nachrichtenkopfzeilen
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die Header-Felder, die Exchange Online Protection den Nachrichten hinzufügt, um Informationen über die Nachricht und ihre Verarbeitung zu liefern.
+description: Administratoren können sich über die Kopfzeilenfelder informieren, die von Exchange Online Protection (EoP) zu Nachrichten hinzugefügt werden, um Informationen zu einer bestimmten Nachricht und deren Verarbeitung bereitzustellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173404"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208222"
 ---
-# <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Antispam-Nachrichtenkopfzeilen in Microsoft 365
 
-Wenn Exchange Online Protection (EOP) eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt. Mit den Feldern in dieser Kopfzeile können Administratoren Information zur Nachricht und deren Verarbeitung bereitgestellt werden. Die Felder in der Kopfzeile **X-Microsoft-Antispam** liefern zusätzliche Informationen über Massensendungen und Phishing. Zusätzlich zu diesen beiden Kopfzeilen fügt Exchange Online Protection auch E-Mail-Authentifizierungsergebnisse für jede verarbeitete Nachricht in die Kopfzeile **Authentication-results** ein.
+n Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection-Organisationen (EoP) ohne Exchange Online-Postfächer scannt EoP jede eingehende E-Mail-Nachricht und fügt zu dieser die **X-Forefront-Antispam-Report**-Kopfzeile hinzu. Die Felder in dieser Kopfzeile tragen dazu bei, für Administratoren Informationen zu der Nachricht und deren Verarbeitung bereitzustellen. Die Felder in der **X-Microsoft-Antispam-**-Kopfzeile bieten Zusatzinformationen zu „Massenmails“ und „Phishing“. Neben diesen beiden Kopfzeilen fügt Exchange Online Protection außerdem für jede verarbeitete E-Mail die E-Mail-Authentifizierungsergebnisse in die Kopfzeile mit den **Authentifizierungsergebnissen** ein.
 
 Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Anzeigen von Internet Nachrichtenkopfzeilen in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
