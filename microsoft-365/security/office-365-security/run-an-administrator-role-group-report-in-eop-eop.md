@@ -1,5 +1,5 @@
 ---
-title: Ausführen eines Administrator-Rollengruppenberichts in EOP
+title: Ausführen eines Administrator-Rollengruppen Berichts in eigenständigen EoP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,25 +13,25 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie, wie Sie einen Administratorrollengruppen Bericht in Exchange Online Protection (EoP) ausführen.
-ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in eigenständigen Exchange Online Schutz (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder aus Administratorrollengruppen hinzugefügt oder entfernt, EoP protokolliert jedes Vorkommen.
+ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034456"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209175"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppen Berichts in eigenständigen EoP
 
- Wenn ein Administrator Mitglieder zu Administratorrollengruppen hinzufügt oder diese entfernt, protokolliert Exchange Online Protection (EoP) jedes Vorkommen. Wenn Sie einen Administratorrollengruppen Bericht im Exchange Admin Center (EAC) ausführen, werden Einträge als Suchergebnisse angezeigt und umfassen die betroffenen Rollengruppen, die die Rollengruppenmitgliedschaft geändert haben und wann und welche Mitgliedschafts Aktualisierungen vorgenommen wurden. Mithilfe dieses Berichts können Sie Änderungen an den Administratorberechtigungen überwachen, die den Benutzern in der Organisation zugewiesen sind.
+In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer, wenn ein Administrator Mitglieder aus administrativen Rollengruppen hinzufügt oder diese entfernt, protokolliert der Dienst jedes Vorkommen. Weitere Informationen zu Rollengruppen in eigenständigen EoP finden Sie unter [Permissions in Standalone EoP](feature-permissions-in-eop.md).
+
+Wenn Sie einen Administratorrollengruppen Bericht im Exchange Admin Center (EAC) ausführen, werden Einträge als Suchergebnisse angezeigt und umfassen die betroffenen Rollengruppen, die die Rollengruppenmitgliedschaft geändert haben und wann und welche Mitgliedschafts Aktualisierungen vorgenommen wurden. Mithilfe dieses Berichts können Sie Änderungen an den Administratorberechtigungen überwachen, die den Benutzern in der Organisation zugewiesen sind.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Geschätzte Zeit bis zum Abschließen des Vorgangs: 2 Minuten
+- Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
-
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Berichte" im Thema [Featureberechtigungen in EOP](feature-permissions-in-eop.md).
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle nur anzeigen", die standardmäßig den Rollengruppen ComplianceManagement, Mitglied (globale Administratoren) und SecurityAdministrator zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -42,13 +42,15 @@ ms.locfileid: "44034456"
 
 Führen Sie den Bericht Administratorrollengruppe aus, um die Änderungen an Verwaltungsrollengruppen in Ihrer Organisation innerhalb eines bestimmten Zeitrahmens zu finden.
 
-1. Wählen Sie in der Exchange-Verwaltungskonsole **Verwaltung der Richtlinientreue** \> **Überwachung** aus, und klicken Sie anschließend auf **Administrator-Rollengruppenbericht ausführen**.
+1. Wechseln Sie in der Exchange- **Verwaltungskonsole zu Compliance Management** \> **Auditing**, und wählen Sie dann **Administratorrollengruppen Bericht ausführen**aus.
 
-2. Legen Sie **Startdatum** und **Enddatum** fest. Standardmäßig sucht der Bericht nach Änderungen, die innerhalb der letzten zwei Wochen an Administratorrollengruppen vorgenommen wurden.
+2. Konfigurieren Sie auf der Seite nach **Änderungen an Administratorrollengruppen suchen** , die geöffnet wird, die folgenden Einstellungen:
 
-3. Um die Änderungen für eine bestimmte Rollengruppe anzuzeigen, klicken Sie auf **Rollengruppen auswählen**. Wählen Sie im nachfolgenden Dialogfeld die Rollengruppe (oder -gruppen) aus, und klicken Sie auf **OK**. Sie können das Feld auch leer lassen, um nach allen geänderten Rollengruppen zu suchen.
+   - **Start Datum** und **Enddatum**: Geben Sie einen Datumsbereich ein. Standardmäßig sucht der Bericht nach Änderungen, die innerhalb der letzten zwei Wochen an Administratorrollengruppen vorgenommen wurden.
 
-4. Klicken Sie auf **Suchen**.
+   - **Auswählen von Rollengruppen**: Standardmäßig werden alle Rollengruppen durchsucht. Klicken Sie auf **Rollengruppen auswählen**, um die Ergebnisse nach bestimmten Rollengruppen zu filtern. Wählen Sie im daraufhin angezeigten Dialogfeld eine Rollengruppe aus, und klicken Sie auf **Add->**. Wiederholen Sie diesen Schritt so oft wie nötig, und klicken Sie dann auf **OK** , wenn Sie fertig sind.
+
+3. Wenn Sie fertig sind, klicken Sie auf **Suchen**.
 
 Wenn Änderungen gefunden werden, die mit den angegebenen Kriterien übereinstimmen, werden sie im Ergebnisbereich angezeigt. Klicken Sie auf eine Rollengruppe in den Suchergebnissen, um die Änderungen im Detailbereich anzuzeigen.
 
@@ -69,3 +71,81 @@ In diesem Beispiel wurden mit dem Administratorbenutzerkonto folgende Änderunge
 - Am 2/06/2018 wurde der Benutzer tonip hinzugefügt.
 
 - Am 2/19/2018 wurde der Benutzer pilarp entfernt.
+
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Verwenden eigenständiger Exchange Online PowerShell zum Suchen nach Überwachungsprotokolleinträgen
+
+Sie können Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen, die die von Ihnen angegebenen Kriterien erfüllen. Eine Liste mit Suchkriterien finden Sie unter [Administratorüberwachungsprotokollierung](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Bei diesem Verfahren wird das Cmdlet **Search-AdminAuditLog** verwendet, und es werden Suchergebnisse in Exchange Online PowerShell angezeigt. Dieses Cmdlet kann verwendet werden, wenn eine Ergebnismenge zurückgegeben werden muss, die die im Cmdlet **New-AdminAuditLogSearch** oder in den Überwachungsberichten der Exchange-Verwaltungskonsole definierten Grenzwerte überschreitet.
+
+Verwenden Sie die folgende Syntax, um das Überwachungsprotokoll anhand angegebener Kriterien zu durchsuchen.
+
+```PowerShell
+Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
+```
+
+> [!NOTE]
+> Das Cmdlet **Search-AdminAuditLog** gibt standardmäßig maximal 1.000 Protokolleinträge zurück. Verwenden Sie den _resultse_ -Parameter, um bis zu 250.000 Protokolleinträge anzugeben. Oder verwenden Sie den Wert `Unlimited` , um alle Einträge zurückzugeben.
+
+In diesem Beispiel wird eine Suche nach allen Überwachungsprotokolleinträgen ausgeführt, welche die folgenden Kriterien erfüllen:
+
+- **Start Datum**: 08/04/2018
+
+- **End-Datum**: 10/03/2018
+
+- **Benutzer-IDs**: Davids, chrisd, Kima
+
+- **Cmdlets**: **festlegen-Mailbox**
+
+- **Parameter**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
+
+```PowerShell
+Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
+```
+
+In diesem Beispiel werden Änderungen an einem bestimmten Postfach ermittelt. Dies ist bei der Problembehebung nützlich, oder wenn Sie Informationen für eine Untersuchung bereitstellen müssen. Die folgenden Kriterien werden verwendet:
+
+- **Start Datum**: 05/01/2018
+
+- **End-Datum**: 10/03/2018
+
+- **Objekt-ID**: contoso.com/users/DavidS
+
+```PowerShell
+Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
+```
+
+Wenn Ihre Suchvorgänge viele Protokolleinträge zurückgeben, wird empfohlen, dass Sie das in **verwenden Exchange Online PowerShell bereitgestellte Verfahren verwenden, um nach Überwachungsprotokolleinträgen zu suchen und Ergebnisse an einen Empfänger** weiter unten in diesem Thema zu senden. Bei dieser Vorgehensweise wird eine XML-Datei als E-Mail-Anlage an die angegebenen Empfänger gesendet, sodass die relevanten Daten einfacher extrahiert werden können.
+
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+
+### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
+
+Das Cmdlet **Search-AdminAuditLog** gibt die im Abschnitt "Inhalte von Überwachungsprotokollen" unter [Administratorüberwachungsprotokollierung](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx) beschriebenen Felder zurück. Zwei der zurückgegebenen Felder, **CmdletParameters** und **ModifiedProperties**, enthalten zusätzliche Informationen, die standardmäßig nicht angezeigt werden.
+
+Führen Sie die folgenden Schritte aus, um die Inhalte der Felder **CmdletParameters** und **ModifiedProperties** anzuzeigen. Sie können auch das Verfahren in Verwenden von **Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen und Ergebnisse an einen Empfänger** weiter unten in diesem Thema zu senden, um eine XML-Datei zu erstellen.
+
+In dieser Vorgehensweise werden die folgenden Konzepte verwendet:
+
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+
+1. Legen Sie die Suchkriterien fest, führen Sie das Cmdlet **Search-AdminAuditLog** aus, und speichern Sie die Ergebnisse über den folgenden Befehl in einer Variablen.
+
+    ```PowerShell
+    $Results = Search-AdminAuditLog <search criteria>
+    ```
+
+2. Jeder Überwachungsprotokolleintrag wird als Arrayelement in der Variablen gespeichert `$Results` . Zur Auswahl eines Arrayelements geben Sie den Arrayelementindex an. Arrayelementindizes beginnen für das erste Arrayelement bei 0. Verwenden Sie beispielsweise den folgenden Befehl, um das fünfte Arrayelement (mit dem Index 4) abzurufen.
+
+    ```PowerShell
+    $Results[4]
+    ```
+
+3. Der oben stehende Befehl gibt den im Arrayelement 4 gespeicherten Protokolleintrag zurück. Zum Anzeigen der Felder **CmdletParameters** und **ModifiedProperties** für diesen Protokolleintrag verwenden Sie die folgenden Befehle.
+
+    ```PowerShell
+    $Results[4].CmdletParameters
+    $Results[4].ModifiedProperties
+    ```
+
+4. Um die Inhalte der Felder **CmdletParameters** und **ModifiedParameters** in einem anderen Protokolleintrag anzuzeigen, ändern Sie den Arrayelementindex.

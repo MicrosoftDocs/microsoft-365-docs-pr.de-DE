@@ -2,10 +2,10 @@
 title: Referenz Richtlinien, Methoden und Anleitungen
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634388"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208210"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
 
@@ -31,9 +31,9 @@ Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich,
 
 ## <a name="general-microsoft-policies"></a>Allgemeine Microsoft-Richtlinien
 
-An Microsoft 365-Benutzer gesendete e-Mails müssen alle Microsoft-Richtlinien einhalten, die die e-Mail-Übertragung und Verwendung von Office 365 Regeln.
+An Microsoft 365-Benutzer gesendete e-Mails müssen alle Microsoft-Richtlinien für die e-Mail-Übermittlung und die Verwendung von Microsoft 365 einhalten.
 
-- Nutzungsbedingungen Office 365; insbesondere das Verbot der Verwendung des Diensts zum Verbreiten von Spam oder Malware
+- Für Microsoft 365 geltende Dienstbedingungen; insbesondere das Verbot der Verwendung des Diensts zum Spam oder zur Verteilung von Schadsoftware.
 
 - [Microsoft-Servicevertrag](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [E-Mail-Absender & Anbieter Koalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 

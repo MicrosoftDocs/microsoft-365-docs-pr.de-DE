@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365-Administratoren erfahren, wie Sie nach einem Ransomware-Angriff wiederherstellen können.
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634400"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208258"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Office 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365
 
 Selbst wenn Sie alle Vorkehrungen treffen, um Ihre Organisation zu schützen, können Sie dennoch einem [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) -Angriff zum Opfer fallen. Ransomware ist ein großes Unternehmen, und die Angriffe werden überprüfen anspruchsvoll.
 
@@ -42,7 +42,7 @@ Der entscheidende Punkt ist, dass die Verbreitung der Datenverschlüsselung durc
 
 Wenn Sie vermuten, dass e-Mail ein Ziel ist, sollten Sie den Benutzer Zugriff auf Postfächer vorübergehend deaktivieren. Exchange ActiveSync wird von mobilen Geräten zum Synchronisieren von Daten zwischen dem Gerät und dem Exchange Online Postfach verwendet.
 
-Informationen zum Deaktivieren von ActiveSync für ein Postfach finden Sie unter [Deaktivieren von Exchange ActiveSync für Benutzer in Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+Informationen zum Deaktivieren von ActiveSync für ein Postfach finden Sie unter [Deaktivieren von Exchange ActiveSync für Benutzer in Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
 
 Informationen zum Deaktivieren anderer Zugriffstypen auf ein Postfach finden Sie unter:
 
@@ -124,7 +124,7 @@ Wenn Ihr Land nicht aufgeführt ist, wenden Sie sich an Ihre lokalen oder Bundes
 
 Sie können Phishing-Nachrichten melden, die Ransomware enthalten, indem Sie eine von mehreren Methoden verwenden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

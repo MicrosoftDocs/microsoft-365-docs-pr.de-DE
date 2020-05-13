@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Hier erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 for Business-Abonnement zurücksetzen. '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173518"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208198"
 ---
 # <a name="reset-passwords"></a>Zurücksetzen von Kennwörtern
 
@@ -79,7 +79,7 @@ Diese Schritte gelten nur für Personen, die einen Microsoft 365 for Business-Pl
 
 Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, sich jedoch bei Microsoft 365 anmelden können, da Ihr Kennwort beispielsweise in Ihrem Browser gespeichert wird: 
     
-1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten Ecke >**persönlichen Informationen**zu **meinem Konto** > aus. 
+1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten **My Account**Ecke >  >  **persönlichen Informationen**zu meinem Konto aus. 
           
 2. Überprüfen Sie unter **Kontaktdetails**, ob Ihre **Alternative e-Mail-Adresse** korrekt ist und dass Sie eine Mobiltelefonnummer angegeben haben. Wenn nicht, ändern Sie die Informationen jetzt. 
         
@@ -100,7 +100,7 @@ Wenn Sie Ihr Kennwort vergessen haben und sich nicht anmelden können:
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Gleichzeitiges Zurücksetzen aller geschäftlichen Kennwörter für alle Benutzer in Ihrer Organisation
 <a name="bkmk_forgot"> </a>
 
-Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausführen. Wenn Ihr Unternehmen Hunderte oder Tausende von Benutzern umfasst, lesen Sie den nächsten Abschnitt, in dem die Massenzurücksetzung von Kennwörtern beschrieben ist.
+Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausführen. Wenn Sie Hunderte oder Tausende von Benutzern haben, lesen Sie den nächsten Abschnitt zum Zurücksetzen von Kennwörtern in einem Massenvorgang (maximal 40 Benutzer gleichzeitig).
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
     

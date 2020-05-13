@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Office 365 Advanced Threat Protection (ATP) verfügbar sind.
-ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind.
+ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949259"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208887"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurieren der ATP Antiphishing-Richtlinien
 
@@ -29,7 +29,7 @@ Administratoren können die standardmäßige ATP-Anti-Phishing-Richtlinie anzeig
 
 Sie können ATP-Anti-Phishing-Richtlinien im Security & Compliance Center oder in Exchange Online PowerShell konfigurieren.
 
-Informationen zum Konfigurieren der eingeschränkteren AntiPhishing-Richtlinien, die in Exchange Online Schutzorganisationen zur Verfügung stehen (also Office 365 Organisationen ohne ATP), finden Sie unter [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md).
+Informationen zum Konfigurieren der eingeschränkteren AntiPhishing-Richtlinien, die in Exchange Online Schutzorganisationen (Microsoft 365-Organisationen ohne Office 365 ATP) zur Verfügung stehen, finden Sie unter [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md).
 
 ## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>ATP-Richtlinien zum Schutz vor Phishing im Security & Compliance Center vs Exchange Online PowerShell
 
@@ -47,7 +47,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 
 - Wenn Sie eine ATP-Richtlinie zum Schutz vor Phishing aus dem Security & Compliance Center entfernen, werden die Anti-Phishing-Regel und die zugehörige Anti-Phishing-Richtlinie entfernt.
 
-In Exchange Online PowerShell ist der Unterschied zwischen Anti-Phishing-Richtlinien und Anti-Phishing-Regeln offensichtlich. Sie können Anti-Phishing-Richtlinien mithilfe der ** \*-AntiPhishPolicy-** Cmdlets verwalten und Anti-Phishing-Regeln mithilfe der ** \*Cmdlets-AntiPhishRule** verwalten.
+In Exchange Online PowerShell ist der Unterschied zwischen Anti-Phishing-Richtlinien und Anti-Phishing-Regeln offensichtlich. Sie können Anti-Phishing-Richtlinien mithilfe der ** \* -AntiPhishPolicy-** Cmdlets verwalten und Anti-Phishing-Regeln mithilfe der Cmdlets ** \* -AntiPhishRule** verwalten.
 
 - In PowerShell erstellen Sie zuerst die Anti-Phishing-Richtlinie, dann erstellen Sie die Anti-Phishing-Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
 
@@ -63,13 +63,13 @@ Jede ATP-Organisation verfügt über eine integrierte ATP-Richtlinie zum Schutz 
 
 - Die Richtlinie mit dem Namen Office365 AntiPhishing default weist den benutzerdefinierten Prioritätswert auf **niedrigster** Bedeutung auf, den Sie nicht ändern können (die Richtlinie wird immer zuletzt angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität als die Richtlinie mit dem Namen Office365 AntiPhishing default.
 
-- Die Richtlinie mit dem Namen Office365 AntiPhishing Default ist die Standardrichtlinie (die **IsDefault** - `True`Eigenschaft hat den Wert), und die Standardrichtlinie kann nicht gelöscht werden.
+- Die Richtlinie mit dem Namen Office365 AntiPhishing Default ist die Standardrichtlinie (die **IsDefault** -Eigenschaft hat den Wert `True` ), und die Standardrichtlinie kann nicht gelöscht werden.
 
 Um die Effektivität des Anti-Phishing-Schutzes zu verbessern, können Sie benutzerdefinierte ATP-Anti-Phishing-Richtlinien mit strengeren Einstellungen erstellen, die auf bestimmte Benutzer oder Benutzergruppen angewendet werden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite " **ATP-AntiPhishing** " zu wechseln, <https://protection.office.com/antiphishing>verwenden Sie.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite " **ATP-AntiPhishing** " zu wechseln, verwenden Sie <https://protection.office.com/antiphishing> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -79,7 +79,7 @@ Um die Effektivität des Anti-Phishing-Schutzes zu verbessern, können Sie benut
 
 - Erlauben Sie bis zu 30 Minuten, bis eine neue oder aktualisierte Richtlinie angewendet wird.
 
-- Informationen dazu, wo Anti-Phishing-Richtlinien in der Filter Pipeline angewendet werden, finden Sie unter [Order and Ranges of Email Protection in Office 365](how-policies-and-protections-are-combined.md).
+- Informationen dazu, wo Anti-Phishing-Richtlinien in der Filter Pipeline angewendet werden, finden Sie unter [Order and Ranges of Email Protection](how-policies-and-protections-are-combined.md).
 
 ## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a>Verwenden des Security & Compliance Center zum Erstellen von Richtlinien für die ATP-Anti-Phishing
 
@@ -107,15 +107,15 @@ Wenn Sie eine ATP-Anti-Phishing-Richtlinie erstellen, können Sie nur den Richtl
 
    - **Der Empfänger lautet**: gibt ein oder mehrere Postfächer, e-Mail-Benutzer oder e-Mail-Kontakte in Ihrer Organisation an.
    - **Der Empfänger ist Mitglied von**: gibt eine oder mehrere Gruppen in Ihrer Organisation an.
-   - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Office 365 an.
+   - **Die Empfängerdomäne lautet**: gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in der Organisation an.
 
    Nachdem Sie die Bedingung ausgewählt haben, wird eine entsprechende Dropdownliste mit einem **der folgenden** Felder angezeigt.
 
    - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der zu markierende Werte durch.
    - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Wert auszuwählen.
    - Klicken Sie zum Hinzufügen weiterer Werte in einen leeren Bereich des Felds.
-   - Wenn Sie einzelne Einträge entfernen möchten **Remove** ![, klicken Sie](../../media/scc-remove-icon.png) auf entfernen-Symbol für den Wert entfernen.
-   - Wenn Sie die gesamte Bedingung entfernen möchten **, klicken** ![Sie](../../media/scc-remove-icon.png) in der Bedingung auf entfernen-Symbol entfernen.
+   - Wenn Sie einzelne Einträge entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Wert entfernen.
+   - Wenn Sie die gesamte Bedingung entfernen möchten **, klicken Sie** ![ in der Bedingung auf entfernen-Symbol Entfernen ](../../media/scc-remove-icon.png) .
 
    Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf **Bedingung hinzufügen** , und wählen Sie einen verbleibenden Wert unter **angewendet bei**aus.
 
@@ -139,11 +139,11 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
 2. Wählen Sie die benutzerdefinierte ATP-Anti-Phishing-Richtlinie aus, die Sie ändern möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Das Flyout zum **Bearbeiten \<Ihres\> Richtlinien namens** wird angezeigt. Durch Klicken auf **Bearbeiten** in einem beliebigen Abschnitt erhalten Sie Zugriff auf die Einstellungen in diesem Abschnitt.
+3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt. Durch Klicken auf **Bearbeiten** in einem beliebigen Abschnitt erhalten Sie Zugriff auf die Einstellungen in diesem Abschnitt.
 
    - Die folgenden Schritte werden in der Reihenfolge angezeigt, in der die Abschnitte dargestellt werden, Sie sind jedoch nicht sequenziell (Sie können die Abschnitte in beliebiger Reihenfolge auswählen und ändern).
 
-   - Nachdem Sie in einem Abschnitt auf **Bearbeiten** klicken, werden die verfügbaren Einstellungen in einem Assistenten Format angezeigt, Sie können jedoch in beliebiger Reihenfolge innerhalb der Seiten springen, und Sie können auf einer beliebigen Seite auf **Speichern** (oder](../../media/scc-remove-icon.png) **Abbrechen** **oder schließen** ![schließen) klicken, um zur Seite **Bearbeiten der Richtlinien \<Namen\> ** zurückzukehren (Sie müssen nicht die letzte Seite des Assistenten zum Speichern oder verlassen besuchen).
+   - Nachdem Sie in einem Abschnitt auf **Bearbeiten** klicken, werden die verfügbaren Einstellungen in einem Assistenten Format angezeigt, Sie können jedoch in beliebiger Reihenfolge innerhalb der Seiten springen, und Sie können auf einer beliebigen Seite auf **Speichern** **(oder** **Abbrechen** oder Schließen schließen) klicken, um ![ ](../../media/scc-remove-icon.png) zur Seite **Bearbeiten der Richtlinien \< Namen \> ** zurückzukehren (Sie müssen nicht die letzte Seite des Assistenten zum Speichern oder verlassen besuchen).
 
 4. **Richtlinieneinstellung**: Klicken Sie auf **Bearbeiten** , um dieselben Einstellungen zu ändern, die beim [Erstellen der Richtlinie](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) im vorherigen Abschnitt verfügbar waren:
 
@@ -164,7 +164,7 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
         - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der Benutzer aus, die Sie auswählen möchten.
         - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer auszuwählen.
-        - Wenn Sie einen Eintrag entfernen möchten **Remove** ![, klicken Sie](../../media/scc-remove-icon.png) auf entfernen-Symbol für den Benutzer entfernen.
+        - Wenn Sie einen Eintrag entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Benutzer entfernen.
 
      - **Name**: dieser Wert wird basierend auf der e-Mail-Adresse aufgefüllt, die Sie ausgewählt haben, aber Sie können ihn ändern.
 
@@ -226,7 +226,7 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
        - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der Benutzer aus, die Sie auswählen möchten.
        - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Benutzer auszuwählen.
-       - Wenn Sie einen Eintrag entfernen möchten **Remove** ![, klicken Sie](../../media/scc-remove-icon.png) auf entfernen-Symbol für den Benutzer entfernen.
+       - Wenn Sie einen Eintrag entfernen möchten **Remove** , klicken Sie auf Entfernen- ![ Symbol ](../../media/scc-remove-icon.png) für den Benutzer entfernen.
 
      - **Vertrauenswürdige Domänen**: Geben Sie den Domänennamen ein (beispielsweise contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie den Vorgang bei Bedarf.
 
@@ -236,8 +236,8 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
      - Sie können die **folgenden Einstellungen direkt auf dieser** Seite aktivieren oder **Deaktivieren** :
 
        - **Geschützte Benutzer**
-       - **Geschützte Domänen** \> **umfassen Domänen, die ich besitze**
-       - Geschützte Domänen **geschützte** Domänen (benutzerdefinierte Domänen) **Protected domains** \>
+       - **Geschützte Domänen** \> **Domänen einschließen, die ich besitze**
+       - **Geschützte Domänen** \> **Geschützte Domänen** (benutzerdefinierte Domänen)
        - **Mailbox Intelligence**
 
    Wenn Sie fertig sind, klicken Sie auf jeder Seite auf **Speichern** .
@@ -246,10 +246,10 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
    Beachten Sie, dass diese Einstellungen auch in Anti-Phishing-Richtlinien in EoP verfügbar sind.
 
-   - **Spoofing-Filtereinstellungen**: der Standardwert ist " **on**", und es wird empfohlen, dass Sie die Einstellung aktiviert lassen. Um sie auszublenden, schieben Sie die Umschaltfläche auf **aus**. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Office 365](learn-about-spoof-intelligence.md).
+   - **Spoofing-Filtereinstellungen**: der Standardwert ist " **on**", und es wird empfohlen, dass Sie die Einstellung aktiviert lassen. Um sie auszublenden, schieben Sie die Umschaltfläche auf **aus**. Weitere Informationen finden Sie unter [configure Spoof Intelligence in EoP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Office 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr MX-Eintrag nicht auf Microsoft 365 verweist; Stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - Nicht **authentifizierte Absender Funktion aktivieren**: der Standardwert ist **on**. Um sie auszublenden, schieben Sie die Umschaltfläche auf **aus**.
 
@@ -283,7 +283,7 @@ Verwenden Sie die folgenden Verfahren, um ATP-AntiPhishing-Richtlinien zu änder
 
    Wenn Sie fertig sind, klicken Sie auf einer der Seiten auf **Speichern** .
 
-8. Überprüfen Sie die Einstellungen auf der Seite **Richtlinien \<\> Namen bearbeiten** , und klicken Sie dann auf **Schließen**.
+8. Überprüfen Sie die Einstellungen auf der Seite **Richtlinien \< Namen \> Bearbeiten** , und klicken Sie dann auf **Schließen**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a>Verwenden Sie das Security & Compliance Center, um die standardmäßige ATP-Anti-Phishing-Richtlinie zu ändern.
 
@@ -333,7 +333,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 2. Wählen Sie die Richtlinie aus, die Sie ändern möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Das Flyout zum **Bearbeiten \<Ihres\> Richtlinien namens** wird angezeigt.
+3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt.
 
    - Die benutzerdefinierte ATP-Anti-Phishing-Richtlinie mit dem **Prioritäts** Wert **0** hat nur die Schaltfläche **Priorität verringern** verfügbar.
 
@@ -355,7 +355,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
    - Klicken Sie auf **Standardrichtlinie** , um die standardmäßige Anti-Phishing-Richtlinie anzuzeigen.
 
-3. Das Flyout zum **Bearbeiten \<Ihres\> Richtlinien namens** wird angezeigt, in dem Sie die Einstellungen und Werte anzeigen können.
+3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt, in dem Sie die Einstellungen und Werte anzeigen können.
 
 ## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a>Verwenden des Security & Compliance Center zum Entfernen von ATP-Anti-Phishing-Richtlinien
 
@@ -363,7 +363,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 2. Wählen Sie die Richtlinie aus, die Sie entfernen möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Klicken Sie im angezeigten Dropdown-Dialogfeld ** \<Richtliniennamen\> bearbeiten** auf **Richtlinie löschen**, und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
+3. Klicken Sie im angezeigten Dropdown-Dialogfeld **Richtlinien \< Namen \> Bearbeiten** auf **Richtlinie löschen**, und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
 
 Die Standardrichtlinie kann nicht entfernt werden.
 
@@ -383,9 +383,9 @@ Das Erstellen einer Anti-Phishing-Richtlinie in PowerShell ist ein zweistufiger 
 
 - Sie können die folgenden Einstellungen für neue Anti-Phishing-Richtlinien in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Security & Compliance Center verfügbar sind:
 
-  - Erstellen Sie die neue Richtlinie als deaktiviert (_aktiviert_ `$false` im Cmdlet **New-AntiPhishRule** ).
+  - Erstellen Sie die neue Richtlinie als deaktiviert (_aktiviert_ im `$false` Cmdlet **New-AntiPhishRule** ).
 
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Prioritäts_ _ \<Nummer\>_) für das Cmdlet **New-AntiPhishRule** fest.
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Prioritäts_ _ \< Nummer \> _) für das Cmdlet **New-AntiPhishRule** fest.
 
 - Eine neue Anti-Phishing-Richtlinie, die Sie in PowerShell erstellen, ist erst im Security & Compliance Center sichtbar, wenn Sie die Richtlinie einer Anti-Phishing-Regel zuweisen.
 
@@ -399,7 +399,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 In diesem Beispiel wird die Anti-Phishing-Richtlinie mit dem Namen "Research Quarantine" mit den folgenden Einstellungen erstellt:
 
-- Die Richtlinie ist aktiviert (der Parameter _Enabled_ wird nicht verwendet, und der Standardwert `$true`ist).
+- Die Richtlinie ist aktiviert (der Parameter _Enabled_ wird nicht verwendet, und der Standardwert ist `$true` ).
 - Die Beschreibung lautet: Abteilungs Richtlinie für Forschung.
 - Aktiviert den Schutz von Organisationsdomänen für alle akzeptierten Domänen und den Schutz von Zieldomänen für fabrikam.com.
 - Gibt Mai Fujito (mfujito@fabrikam.com) als Benutzer an, der vor Identitätswechsel geschützt werden soll.
@@ -608,7 +608,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die Ric
   - Wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
   - Klicken Sie auf **Standardrichtlinie** , und zeigen Sie die Details im Flyout an.
 
-- Ersetzen \<Sie in Exchange Online PowerShell Name\> durch den Namen der Richtlinie oder Regel, und führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell \< Name \> durch den Namen der Richtlinie oder Regel, und führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

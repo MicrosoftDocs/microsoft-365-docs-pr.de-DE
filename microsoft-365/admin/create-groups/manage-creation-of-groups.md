@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern, welche Benutzer Microsoft 365-Gruppen erstellen können.
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630405"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208342"
 ---
 # <a name="manage-who-can-create-groups"></a>Verwalten von Personen, die Gruppen erstellen können
 
@@ -173,6 +173,8 @@ Wenn Sie später die verwendete Sicherheitsgruppe ändern möchten, können Sie 
 Wenn Sie die Einschränkung für die Gruppenerstellung deaktivieren und wieder allen Benutzern das Erstellen von Gruppen gestatten möchten, legen Sie $GroupName auf "" und $AllowGroupCreation auf "True" fest, und führen Sie das Skript erneut aus.
     
 ## <a name="step-4-verify-that-it-works"></a>Schritt 4: Überprüfen, ob alles ordnungsgemäß funktioniert
+
+Änderungen können dreißig Minuten oder mehr dauern, um wirksam zu werden. Sie können die neuen Einstellungen überprüfen, indem Sie die folgenden Schritte ausführen:
 
 1. Melden Sie sich mit einem Benutzerkonto von Personen an, die nicht in der Lage sein sollen, Gruppen zu erstellen. Also einer Person, die nicht Mitglied der von Ihnen erstellten Sicherheitsgruppe oder ein Administrator ist.
     

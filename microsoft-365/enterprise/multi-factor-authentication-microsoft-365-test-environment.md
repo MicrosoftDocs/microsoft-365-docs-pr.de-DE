@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurieren Sie die mehrstufige Authentifizierung mit Textnachrichten, die an ein Smartphone in Ihrer Microsoft 365 Enterprise-Testumgebung gesendet werden.
-ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153880"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213140"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -28,7 +28,7 @@ ms.locfileid: "43153880"
 
 Für eine zusätzliche Sicherheitsstufe für die Anmeldung bei Microsoft 365 oder für einen Dienst oder eine Anwendung, die den Azure AD Mandanten für Ihr Abonnement verwendet, können Sie die Azure-mehrstufige Authentifizierung aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort zum Überprüfen eines Kontos erfordert. 
 
-Bei der mehrstufigen Authentifizierung müssen Benutzer einen Telefonanruf bestätigen, einen in einer Textnachricht gesendeten Bestätigungscode eingeben oder ein App-Kennwort auf dem Smartphone angeben, nachdem Sie die entsprechenden Kennwörter korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde. 
+Bei der mehrstufigen Authentifizierung müssen Benutzer einen Telefonanruf bestätigen, einen in einer Textnachricht gesendeten Überprüfungscode eingeben oder die Authentifizierung mit einer APP auf ihren Smartphones überprüfen, nachdem Sie Ihre Kennwörter korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde. 
   
 In diesem Artikel wird beschrieben, wie Sie die Textnachrichten basierte Authentifizierung für ein bestimmtes Benutzerkonto aktivieren und testen.
   
@@ -58,7 +58,7 @@ Wenn Sie die mehrstufige Authentifizierung in einem simulierten Unternehmen test
 
 Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit den folgenden Schritten:
   
-1. Öffnen Sie eine separate private Instanz Ihres Browsers, wechseln Sie zum Microsoft 365 Admin Center ([https://portal.microsoft.com](https://portal.microsoft.com)), und melden Sie sich dann mit ihrem globalen Administratorkonto an.
+1. Öffnen Sie eine separate private Instanz Ihres Browsers, wechseln Sie zum Microsoft 365 Admin Center ( [https://portal.microsoft.com](https://portal.microsoft.com) ), und melden Sie sich dann mit ihrem globalen Administratorkonto an.
     
 2. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
@@ -80,7 +80,7 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
   
 1. Öffnen Sie eine neue private Instanz Ihres Browsers.
     
-2. Wechseln Sie zum Office 365 Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich mit dem Kontonamen und Kennwort des Benutzers 2 an.
+2. Wechseln Sie zum Office 365 Portal ( [https://portal.office.com](https://portal.office.com) ), und melden Sie sich mit dem Kontonamen und Kennwort des Benutzers 2 an.
     
 3. Nachdem Sie sich angemeldet haben, werden Sie aufgefordert, das Konto einzurichten, um weitere Informationen zu erhalten. Klicken Sie auf **Weiter**.
     
@@ -96,7 +96,7 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
     
 6. Geben Sie den Verifizierungscode aus der Textnachricht ein, die an Ihr Smartphone gesendet wurde, und klicken Sie dann auf **Überprüfen**.
     
-7. Zeichnen Sie das auf der Seite **Schritt 3: Keep your existing applications** angezeigte App-Kennwort für das Konto „Benutzer 2“ an einem sicheren Ort auf, und klicken Sie dann auf **Fertig**.
+7. Klicken Sie auf der Seite **Schritt 3: beibehalten Ihrer vorhandenen Anwendungen** auf **Fertig**.
     
 8. Wenn dies das erste Mal ist, dass Sie sich mit dem Konto „Benutzer 2“ angemeldet haben, werden Sie aufgefordert, das Kennwort zu ändern. Geben Sie das ursprüngliche Kennwort und dann zwei Mal ein neues Kennwort ein, und klicken Sie dann auf **Kennwort ändern und anmelden**. Zeichnen Sie das neue Kennwort an einem sicheren Ort auf.
     
@@ -121,7 +121,7 @@ Erstellen Sie als nächstes eine neue Gruppe mit dem Namen MFAUsers, und fügen 
 
 Erstellen Sie als nächstes eine Richtlinie für den bedingten Zugriff, um die mehrstufige Authentifizierung für Mitglieder der MFAUsers-Gruppe zu erfordern.
 
-1. Wechseln Sie auf einer neuen Registerkarte Ihres Browsers zu [https://portal.azure.com](https://portal.azure.com).
+1. Wechseln Sie auf einer neuen Registerkarte Ihres Browsers zu [https://portal.azure.com](https://portal.azure.com) .
 2. Klicken Sie auf **Azure Active Directory > Sicherheits > bedingten Zugriff**.
 3. Klicken Sie im Bereich **bedingter Zugriff – Richtlinien** auf **neue Richtlinie**.
 4. Geben Sie im **neuen** Bereich **MFA für Benutzerkonten** unter **Name**ein.

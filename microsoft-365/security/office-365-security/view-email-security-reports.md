@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
-ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631085"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208513"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
-Im [Security & Compliance Center](https://protection.office.com) stehen eine Vielzahl von Berichten zur Verfügung, um zu sehen, wie e-Mail-Sicherheitsfunktionen wie Antispam-, Antischadsoftware-und Verschlüsselungsfeatures in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zum **Dashboard** **Berichte** \> wechseln.
+Im [Security & Compliance Center](https://protection.office.com) stehen eine Vielzahl von Berichten zur Verfügung, um zu sehen, wie e-Mail-Sicherheitsfunktionen wie Antispam-, Antischadsoftware-und Verschlüsselungsfeatures in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie **Reports** zum \> **Dashboard**Berichte wechseln.
 
 ![Berichts Dashboard im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -75,7 +75,7 @@ Dieser Bericht, der für alle Personen mit Exchange Online Schutz verfügbar ist
 
 Im **Verschlüsselungs Bericht** werden Informationen über e-Mail-Nachrichten angezeigt, die entweder über die Richtlinien Ihrer Organisation oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen.
 
-Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu **Berichte** \> - **Dashboard** \> - **Verschlüsselungs Bericht**.
+Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu **Berichte** - \> **Dashboard** - \> **Verschlüsselungs Bericht**.
 
 ![Verschlüsselungs Bericht](../../media/encryptionreport-defaultview.png)
 
@@ -100,7 +100,7 @@ Mithilfe dieses Berichts kann das Sicherheits-und Compliance-Team Ihrer Organisa
 Der **Status Bericht zum Bedrohungsschutz** ist ein intelligenter Bericht, in dem böswillige e-Mails angezeigt werden, die durch Exchange Online Schutz erkannt und blockiert wurden. Dieser Bericht ist hilfreich, um e-Mails anzuzeigen, die als Schadsoftware oder als Phishing-Versuch im Laufe der Zeit identifiziert wurden (bis zu 90 Tage), und es ermöglicht Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Richtlinien angepasst werden müssen.
 
 > [!NOTE]
-> Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) oder [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)wurden, eine ATP-spezifische Funktion. ([Weitere Informationen zu ATP-Berichten](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).)
+> Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) oder [Exchange Online Protection](exchange-online-protection-overview.md) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)wurden, eine ATP-spezifische Funktion. ([Weitere Informationen zu ATP-Berichten](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).)
 
 Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **Threat Protection Status**.
 
@@ -154,7 +154,7 @@ Wenn Sie mit dem Mauszeiger auf einen Keil im Kreisdiagramm zeigen, wird die Anz
 
 Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten können.
 
-Verwenden Sie die Liste **Daten für anzeigen** , um festzustellen, ob Daten für die wichtigsten Absender, Empfänger, Spamempfänger und Schadsoftware-Empfänger angezeigt werden sollen. Sie können auch sehen, wer die Malware empfangen hat, die von [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)erkannt wurde.
+Verwenden Sie die Liste **Daten für anzeigen** , um festzustellen, ob Daten für die wichtigsten Absender, Empfänger, Spamempfänger und Schadsoftware-Empfänger angezeigt werden sollen. Sie können auch sehen, wer die Malware empfangen hat, die von [Exchange Online Protection](exchange-online-protection-overview.md)erkannt wurde.
 
 ![Verwenden der Liste "Daten für anzeigen" zum Anzeigen bestimmter Informationen](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
@@ -164,9 +164,9 @@ Unter dem Diagramm sehen Sie, wer die häufigsten e-Mail-Absender oder Empfänge
 
 Der Bericht **Spoof-Erkennungen** zeigt, wie viele gefälschte e-Mail-Nachrichten erkannt wurden und von denen, die als "gut" eingestuft wurden (Spoof-e-Mails wurden aus legitimen geschäftlichen Gründen ausgeführt).
 
-Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Berichte** \> **-Spoofing-e-Mail-** **Benachrichtigungen** \> .
+Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Berichte** \> **Dashboard** \> **-Spoofing-e-Mail-** Benachrichtigungen.
 
-![Wechseln Sie im Security & Compliance Center zu Berichte \> -Spoofing-e-Mail-Benachrichtigungen \>](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![Wechseln Sie im Security & Compliance Center zu Berichte \> \> -Spoofing-e-Mail-Benachrichtigungen](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
 
 Wenn Sie den Mauszeiger über einen Tag im Diagramm bewegen, können Sie sehen, wie viele Spoof-e-Mail-Nachrichten eingingen.
 
@@ -176,7 +176,7 @@ Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster 
 
 Der **Spam Erkennungs** Bericht zeigt alle von Exchange Online blockierten Spam Inhalte an. Nachrichten werden pro Nachricht und nicht pro Empfänger gezählt. Wenn beispielsweise eine e-Mail-Nachricht an 100-Empfänger in Ihrer Organisation gesendet wurde, wird Sie als eine Nachricht gezählt.
 
-Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> - **Spam Erkennungen**.
+Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** - \> **Spam Erkennungen**.
 
 ![Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu Reports \> Dashboard \> EoP Spam Detections](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
 
@@ -192,7 +192,7 @@ Unter dem Diagramm sehen Sie eine Liste mit Spam Elementen, die erkannt wurden. 
 
 Der Bericht **gesendeten und empfangenen e-Mail-Nachrichten** ist ein intelligenter Bericht, in dem Informationen zu eingehenden und ausgehenden e-Mails angezeigt werden, einschließlich Spamerkennungen, Schadsoftware und als "gut" identifizierte e-Mails.
 
-Um diesen Bericht anzuzeigen, wechseln Sie [im Security & Compliance Center](https://protection.office.com)zu **Berichte** \> **Dashboard** \> **-Dashboard gesendete und empfangene e-Mails**.
+Um diesen Bericht anzuzeigen, wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Berichte** \> **Dashboard** \> **-Dashboard gesendete und empfangene e-Mails**.
 
 ![Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu Berichte \> -Dashboard \> gesendete und empfangene e-Mails](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
 
@@ -220,11 +220,11 @@ Für jede Nachricht stehen Details zur Verfügung, einschließlich des Zustellun
 
 Führen Sie einen der folgenden Schritte aus, um diesen Bericht im [Security & Compliance Center](https://protection.office.com)anzuzeigen:
 
-- Wechseln Sie zu **Threat Management** \> **Dashboard** \> von **Benutzern gemeldete Nachrichten**.
+- Wechseln Sie zu **Threat Management** \> **Dashboard** von \> **Benutzern gemeldete Nachrichten**.
 
-- Wechseln Sie zu **Threat Management** \> **überprüfen** \> von **Benutzern gemeldeten Nachrichten**.
+- Wechseln Sie zu **Threat Management** \> **überprüfen** von \> **Benutzern gemeldeten Nachrichten**.
 
-![Wählen Sie im Security & Compliance Center die Option Threat \> Management \> Review User gemeldete Nachrichten aus.](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![Wählen Sie im Security & Compliance Center die Option Threat Management \> Review \> User gemeldete Nachrichten aus.](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
 > Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß funktioniert, **muss die Überwachungsprotokollierung** für Ihre Office 365 Umgebung aktiviert sein. Dies erfolgt in der Regel durch eine Person, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Microsoft 365-Überwachungsprotokoll Suche](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off).
@@ -235,9 +235,9 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
 
 - Für das Security & Compliance Center muss eine der folgenden Rollen zugewiesen sein:
 
-  -Organisationsverwaltung-Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com))-Sicherheits Leser
+  -Organisationsverwaltung-Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )-Sicherheits Leser
 
-- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
 
   -Organisationsverwaltung-nur Ansichts Organisationsverwaltung-ansichtsbasierte Empfänger Rolle – Compliance-Management
 

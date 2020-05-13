@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Hier erfahren Sie, wie Sie OneDrive und eine Teamwebsite für die Speicherung und Freigabe von Dateien verwenden.
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165217"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208186"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Einrichten der Speicherung und Freigabe von Dateien
 
@@ -144,7 +144,7 @@ Führen Sie zum Synchronisieren von Dateien zwischen Ihrer Teamwebsite und Ihrem
 
     ![Ändern des lokalen Ordners auf diesem Bildschirm](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. Die Dateien auf Ihren Teamwebsites werden im linken Bereich des Datei-Explorers unter dem Namen Ihrer Organisation angezeigt. Die Dateien in OneDrive werden unter "OneDrive- \<Name der Organisation\>" angezeigt.
+6. Die Dateien auf Ihren Teamwebsites werden im linken Bereich des Datei-Explorers unter dem Namen Ihrer Organisation angezeigt. Die Dateien in OneDrive werden unter "OneDrive- \< Name der Organisation \> " angezeigt.
 
     ![Sehen Sie, was in Ihrem lokalen Ordner synchronisiert wurde.](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ Sie können Speicher von Drittanbietern für Ihre Benutzer in Microsoft 365 akti
   
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>an.
 
-2. Wechseln Sie zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">Einstellungen.</a>
+2. Wechseln Sie zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Organisations**</a> Einstellungen.
 
 3. Wählen Sie auf der Registerkarte **Dienste** die Option **Office im Internet**aus.
 

@@ -1,5 +1,5 @@
 ---
-title: Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern
+title: Wie EoP die Absenderadresse überprüft, um Phishing zu verhindern
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'Um Phishing zu verhindern, benötigen Microsoft 365 und Outlook.com jetzt die RFC-Konformität für from: addresses.'
+description: Administratoren können sich über die Arten von e-Mail-Adressen informieren, die von Exchange Online Protection (EoP) und Outlook.com akzeptiert oder abgelehnt werden, um Phishing zu verhindern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034082"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209451"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Wie EoP die Absenderadresse überprüft, um Phishing zu verhindern
 
-Microsoft 365-e-Mail-Konten erhalten eine immer größere Anzahl von Phishing-Angriffen. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Microsoft 365 und Outlook.com jetzt eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
+Phishing-Angriffe stellen eine ständige Bedrohung für jede e-Mail-Organisation dar. Zusätzlich zur Verwendung [gefälschter Absender-e-Mail-Adressen](anti-spoofing-protection.md)verwenden Angreifer häufig Werte in der von-Adresse, die Internetstandards verletzen. Um diese Art von Phishing zu verhindern, benötigen Exchange Online Protection (EoP) und Outlook.com nun eingehende Nachrichten, um eine RFC-konforme von-Adresse hinzuzufügen, wie in diesem Thema beschrieben. Diese Erzwingung wurde im November 2017 aktiviert.
 
 **Hinweise**:
 
@@ -53,7 +53,7 @@ Die from-Adresse ist in mehreren RFCs detailliert definiert (beispielsweise RFC 
   - Wenn die von-Adresse einen Anzeigenamen enthält, muss der e-Post-Wert wie dargestellt in spitzen Klammern (< >) eingeschlossen werden.
   - Microsoft empfiehlt dringend, ein Leerzeichen zwischen dem Anzeigenamen und der e-Mail-Adresse einzufügen.
 
-- E-Mail- **Adresse: eine**e-Mail `local-part@domain`verwendet das folgende Format:
+- E-Mail- **Adresse: eine**e-Mail verwendet das folgende Format `local-part@domain` :
 
   - **local-Part**: eine Zeichenfolge, die das Postfach identifiziert, das der Adresse zugeordnet ist. Dieser Wert ist innerhalb der Domäne eindeutig. Häufig wird der Benutzername oder die GUID des Postfachbesitzers verwendet.
   - **Domäne**: der vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des e-Mail-Servers, der das Postfach hostet, das vom lokalen Teil der e-Mail-Adresse identifiziert wird.
@@ -104,7 +104,7 @@ Die folgenden e-Mail-Adressen sind ungültig:
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Automatische Antworten auf Ihre benutzerdefinierte Domäne unterdrücken
 
-Sie können den Wert `From: <>` nicht verwenden, um automatische Antworten zu unterdrücken. Stattdessen müssen Sie einen NULL-MX-Eintrag für Ihre benutzerdefinierte Domäne einrichten. Automatische Antworten (und alle Antworten) werden natürlich unterdrückt, da keine veröffentlichte Adresse vorhanden ist, an die der antwortenden Server Nachrichten senden kann.
+Sie können den Wert nicht verwenden `From: <>` , um automatische Antworten zu unterdrücken. Stattdessen müssen Sie einen NULL-MX-Eintrag für Ihre benutzerdefinierte Domäne einrichten. Automatische Antworten (und alle Antworten) werden natürlich unterdrückt, da keine veröffentlichte Adresse vorhanden ist, an die der antwortenden Server Nachrichten senden kann.
 
 - Wählen Sie eine e-Mail-Domäne aus, die keine e-Mails empfangen kann. Wenn Ihre primäre Domäne beispielsweise contoso.com ist, können Sie noreply.contoso.com auswählen.
 

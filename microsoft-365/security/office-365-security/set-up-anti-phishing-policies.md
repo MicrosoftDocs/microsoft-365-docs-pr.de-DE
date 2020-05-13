@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie, wie Sie den Schutz gegen Phishing in Microsoft 365 einrichten, um Ihre Organisation vor böswilligen Phishing-Angriffen zu schützen.
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035332"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209811"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
-Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (ATP)-Organisationen verfügbar.
+Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
 ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
 
@@ -185,7 +185,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Erweiterte Phishing-Schwellenwerte in ATP-Richtlinien zum Schutz vor Phishing
 
-Die folgenden erweiterten Phishing-Schwellenwerte sind nur in Richtlinien für ATP-AntiPhishing verfügbar, um anzugeben, wie erkannte Phishing-Nachrichten behandelt werden sollen:
+Die folgenden erweiterten Phishing-Schwellenwerte sind nur in ATP-AntiPhishing-Richtlinien verfügbar, um die Empfindlichkeit beim Anwenden von maschinellen Lernmodellen auf Nachrichten zur Bestimmung eines Phishing-Urteils zu steuern:
 
 - **1-Standard**: Dies ist der Standardwert. Der Schweregrad der Aktion, die für die Nachricht ausgeführt wird, hängt vom Grad der Vertrauenswürdigkeit der Nachricht ab (niedrig, Mittel, hoch oder sehr hohes Vertrauen). Nachrichten, die als Phishing mit einem sehr hohen Vertrauensgrad identifiziert werden, weisen beispielsweise die schwersten Aktionen auf, während Nachrichten, die als Phishing mit einem niedrigen Vertrauensgrad identifiziert werden, weniger schwerwiegende Aktionen angewendet haben.
 

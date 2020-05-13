@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Erfahren Sie mehr über Office 365 Deutschland.
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623906"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208354"
 ---
-> [!NOTE]
-> Office 365 Deutschland keine neuen Kunden mehr annimmt oder neue Dienste bereitstellt. Die neuen Cloud-Regionen in Deutschland, die im ersten Quartal 2020 für Microsoft 365 und Office 365 bereitgestellt werden, bieten sowohl zentrale Kundendaten in Deutschland als auch vollständige Konnektivität mit dem Microsoft Global Cloud-Netzwerk. 
->
-
 # <a name="learn-about-office-365-germany"></a>Weitere Informationen zu Office 365 Deutschland
+
+> [!NOTE]
+> Office 365 Deutschland keine neuen Kunden mehr annimmt oder neue Dienste bereitstellt. Die neuen Cloud-Regionen in Deutschland, die im ersten Quartal 2020 für Microsoft 365 und Office 365 bereitgestellt werden, bieten sowohl zentrale Kundendaten in Deutschland als auch vollständige Konnektivität mit dem Microsoft Global Cloud-Netzwerk.
 
 Office 365 Deutschland war eine differenzierte Option für die in Europa verfügbaren Office 365 Dienste. Sie hat dazu beigetragen, dass die Anforderungen der am häufigsten regulierten Kunden in Deutschland, der Europäischen Union (EU) und der Europäischen Freihandelszone (EFTA) erfüllt werden, indem unsere branchenführenden Produktivitätsdienste für digitale Arbeit, aus deutschen Rechenzentren mit Daten Wohnsitz in Deutschland und strenge Datenzugriffs-und Kontrollmaßnahmen über ein eindeutiges Daten Treuhänder Modell unter deutscher Rechtsprechung bereitgestellt werden
   

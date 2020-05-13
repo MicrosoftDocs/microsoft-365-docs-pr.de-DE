@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie sich mithilfe des Listenentfernungsportals selbst aus der Microsoft 365-Liste der blockierten Absender entfernen können.
-ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
-ms.translationtype: HT
+ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034986"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208537"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen
 
@@ -60,4 +60,4 @@ wobei _IP address_ die IP-Adresse des Computers ist, auf dem der E-Mail-Server a
     > [!NOTE]
     > Es kann bis zu 24 Stunden dauern oder die Ergebnisse können sehr unterschiedlich ausfallen, bevor die Beschränkungen aufgehoben werden.
 
-Informationen dazu, wie Sie verhindern, dass die IP gesperrt wird, finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md) und [Schutz vor ausgehenden Spam in Office 365](outbound-spam-controls.md).
+Weitere Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md) und [Outbound Spam Protection in EoP](outbound-spam-controls.md) , um zu verhindern, dass IP auf die schwarze Liste gesetzt wird.

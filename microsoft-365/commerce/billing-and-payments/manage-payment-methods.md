@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Zahlungsmethoden
+title: Zahlungsmethoden verwalten
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -20,16 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: c1679b8f525712681aaaad20334840da5e625ad6
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045868"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213068"
 ---
-# <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
+# <a name="manage-payment-methods"></a>Zahlungsmethoden verwalten
 
-Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine vorhandene Zahlungsmethode verwenden oder einen neuen hinzufügen. Sie können eine Kredit-oder Debitkarte oder ein Bankkonto verwenden, um die von Ihnen erworbenen Dinge zu bezahlen. Sie können jedoch nur Zahlungsmethoden verwalten, die Sie hinzufügen.
+Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine vorhandene Zahlungsmethode verwenden oder einen neuen hinzufügen. Sie können eine Kredit-oder Debitkarte oder ein Bankkonto verwenden, um die von Ihnen erworbenen Dinge zu bezahlen.
+
+Wenn Ihr Geschäftskonto über ein Abrechnungsprofil verfügt und Sie ein Abrechnungsprofil Besitzer oder ein Abrechnungsprofil Mitwirkender sind, können Sie das Abrechnungsprofil verwenden, das von einer Kreditkarte oder einer Rechnungszahlung unterstützt wird, um Einkäufe zu tätigen oder Rechnungen zu bezahlen. Wenn Sie Rechnungs Rechnungs-Manager sind, können Sie nur ein Abrechnungsprofil verwenden, um Rechnungen zu bezahlen. Weitere Informationen zu Abrechnungs Profilen und Rollen finden Sie unter [Verwalten von Abrechnungs Profilen](manage-billing-profiles.md).
+
+Wenn Ihr Geschäftskonto nicht über ein Abrechnungsprofil verfügt, kann ein globaler oder abrechnungsadministrator alle Bankkonten verwalten und verwenden, die dem Geschäftskonto hinzugefügt werden. Sie können jedoch nur Kreditkarten verwalten oder verwenden, die Sie hinzufügen.
 
 > [!NOTE]
 > Die Option zur Zahlung mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
@@ -40,7 +44,7 @@ Wenn Sie Geschäftsprodukte oder-Dienste von Microsoft kaufen, können Sie eine 
 
 Durch das Hinzufügen einer Zahlungsmethode werden keine Abonnements zugeordnet. Informationen zum Zuweisen eines einzelnen Abonnements zur Zahlungsmethode finden Sie unter [Ändern einer Zahlungsmethode für ein einzelnes Abonnement](#change-a-payment-method-for-a-single-subscription). Informationen zum Ersetzen aller Abonnements, die eine andere Zahlungsmethode mit der neuen Zahlung verwenden, finden Sie unter [Replace a Payment Method](#replace-a-payment-method).
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  **Bills & Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
 2. Wählen Sie **Zahlungsmethode hinzufügen** aus.
 3. Wählen Sie auf der Seite **Zahlungsmethoden** im Dropdownmenü eine Zahlungsmethode aus.
 4. Geben Sie die Informationen für das neue Kreditkarten-oder Bank Konto ein, und wählen Sie dann **Hinzufügen**aus.
@@ -49,9 +53,9 @@ Durch das Hinzufügen einer Zahlungsmethode werden keine Abonnements zugeordnet.
 
 Sie können den Namen auf der Kredit-oder Debitkarte, der Rechnungsadresse oder dem Ablaufdatum für eine vorhandene Zahlungsmethode ändern. Sie können die Karten-oder Kontonummer jedoch nicht ändern. Wenn sich die Kontonummer geändert hat, [Ersetzen Sie Sie durch eine andere Zahlungsmethode](#replace-a-payment-method), und [Löschen Sie die alte](#delete-a-payment-method).
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  **Bills & Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
 2. Wählen Sie die Zeile der zu aktualisierende Zahlungsmethode aus. Wählen Sie im rechten Bereich **Bearbeiten**aus.
-3. Aktualisieren Sie Ihre Zahlungsmethoden Informationen (Name auf der Kredit-oder Debitkarte, Rechnungsadresse oder Ablaufdatum), und wählen Sie dann **Speichern**aus.
+3. Aktualisieren Sie Ihre Zahlungsmethoden Informationen, einschließlich des Namens auf der Kredit-oder Debitkarte, der Rechnungsadresse oder dem Ablaufdatum, und wählen Sie dann **Speichern**aus.
 
 ## <a name="replace-a-payment-method"></a>Ersetzen einer Zahlungsmethode
 
@@ -59,7 +63,7 @@ Wenn Sie eine Zahlungsmethode ersetzen, ersetzen Sie Sie für alle Abonnements u
 
 Informationen zum Ändern der Zahlungsmethode für ein einzelnes Abonnement finden Sie unter [Ändern einer Zahlungsmethode für ein einzelnes Abonnement](#change-a-payment-method-for-a-single-subscription).
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  **Bills & Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
 2. Wählen Sie die Zeile der Zahlungsmethode aus, die ersetzt werden soll. Im rechten Bereich werden alle Abrechnungsprofile und einzelnen Abonnements aufgelistet, die die ausgewählte Zahlungsmethode verwenden.
 3. Wählen Sie im rechten Bereich **Zahlungsmethode ersetzen für alle Elemente**aus.
 4. Um eine vorhandene Zahlungsmethode zu verwenden, wählen Sie eine aus der Dropdownliste aus, und wählen Sie dann **ersetzen**aus.
@@ -73,7 +77,7 @@ Informationen zum Ändern der Zahlungsmethode für ein einzelnes Abonnement find
 
 Sie können die Zahlungsmethode ändern, die für das bezahlen eines einzelnen Abonnements verwendet wird.
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Wechseln Sie im Admin Center zur Seite **Fakturierung**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
 2. Wählen Sie auf der Registerkarte **Abonnements** das Abonnement aus, für das Sie mit der alternativen Zahlungsmethode bezahlen möchten. 
 3. Wählen Sie unter **Abrechnung**neben der Zahlungsmethode die Option **Bearbeiten**aus.
 4. Wählen Sie neben der vorhandenen Zahlungsmethode die Option **Change**aus.
@@ -89,7 +93,7 @@ Sie können nur eine Zahlungsmethode löschen, die nicht an ein Abonnement oder 
 
 Wenn eine Zahlungsmethode keinem Abonnement oder Abrechnungsprofil zugeordnet ist, können Sie Sie sofort löschen.
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  **Bills & Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
 2. Suchen Sie die zu löschende Zahlungsmethode, wählen Sie die drei Punkte aus, und wählen Sie dann **Löschen**aus.
 3. Wählen Sie unten im rechten Bereich **Löschen**aus.
 
@@ -97,7 +101,7 @@ Wenn eine Zahlungsmethode keinem Abonnement oder Abrechnungsprofil zugeordnet is
 
 Wenn eine Zahlungsmethode an alle Abonnements oder Abrechnungsprofile angehängt ist, ersetzen Sie Sie zunächst durch eine vorhandene Zahlungsmethode, oder fügen Sie eine neue Zahlung hinzu, und löschen Sie dann die alte Zahlungsmethode.
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  **Bills & Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment Methods</a> .
 2. Wählen Sie die Zeile für die zu löschende Zahlungsmethode aus. Im rechten Bereich werden vorhandene Abonnements aufgelistet, die diese Zahlungsmethode verwenden.
 3. Wählen Sie im rechten Bereich **Löschen**aus.
 4. Um eine vorhandene Zahlungsmethode zu verwenden, wählen Sie eine aus der Dropdownliste aus, wählen Sie dann **weiter**aus, und wählen Sie dann **Löschen**aus.
@@ -113,7 +117,7 @@ Wenn eine Zahlungsmethode an alle Abonnements oder Abrechnungsprofile angehängt
 |**Problem**|**Schritte zur Problembehandlung**|
 |:----------|:-----|
 |**Ich erhalte eine Fehlermeldung mit dem Hinweis "der Browser ist derzeit auf Cookies blockieren" festgelegt.** |Konfigurieren Sie Ihren Browser so, dass er Cookies von Drittanbietern zulässt, und versuchen Sie es dann erneut. |
-|**Meine Kreditkarte oder Debitkarte wurde abgelehnt.** |Wenn Sie per Kreditkarte oder Debitkarte bezahlen und Ihre Karte abgelehnt wird, erhalten Sie eine e-Mail, die besagt, dass Microsoft die Zahlung nicht verarbeiten konnte. Stellen Sie sicher, dass die Karten &mdash; Nummer, das Ablaufdatum, der Name auf der Karte und die Adresse, einschließlich Stadt, Bundesland und Postleitzahl, genau so angezeigt werden, wie Sie auf der Karte und ihrer Erklärung dargestellt werden. Sie können Ihre Karteninformationen aktualisieren und die Zahlung sofort über den Link **Ausgleichs Saldo** im Abschnitt **Abrechnung** auf der Seite Abonnementdetails übermitteln. Weitere Informationen finden Sie unter [Was passiert, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)  <br/><br/>  Wenn die Kreditkarte dann immer noch abgelehnt wird, wenden Sie sich an Ihre Bank. Es ist möglich, dass Ihre Karte nicht aktiv ist. Wenn Sie die Karte kürzlich in der e-Mail mit einem aktualisierten Ablaufdatum erhalten haben, stellen Sie sicher, dass Sie aktiviert ist. Ihre Bank kann Ihnen auch mitteilen, ob Ihre Karte nicht für Online-, internationale oder wiederkehrende Transaktionen genehmigt wurde. |
+|**Meine Kreditkarte oder Debitkarte wurde abgelehnt.** |Wenn Sie per Kreditkarte oder Debitkarte bezahlen und Ihre Karte abgelehnt wird, erhalten Sie eine e-Mail, die besagt, dass Microsoft die Zahlung nicht verarbeiten konnte. Stellen Sie sicher, dass die Karten &mdash; Nummer, das Ablaufdatum, der Name auf der Karte und die Adresse, einschließlich Stadt, Bundesland und Postleitzahl &mdash; genau so angezeigt werden, wie auf der Karte und ihrer Erklärung. Sie können Ihre Karteninformationen aktualisieren und die Zahlung sofort über den Link **Ausgleichs Saldo** im Abschnitt **Abrechnung** auf der Seite Abonnementdetails übermitteln. Weitere Informationen finden Sie unter [Was passiert, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)  <br/><br/>  Wenn die Kreditkarte dann immer noch abgelehnt wird, wenden Sie sich an Ihre Bank. Es ist möglich, dass Ihre Karte nicht aktiv ist. Wenn Sie die Karte kürzlich in der e-Mail mit einem aktualisierten Ablaufdatum erhalten haben, stellen Sie sicher, dass Sie aktiviert ist. Ihre Bank kann Ihnen auch mitteilen, ob Ihre Karte nicht für Online-, internationale oder wiederkehrende Transaktionen genehmigt wurde. |
 |**Ich möchte eine Karten-oder Bank Kontonummer aktualisieren.** |Sie können die Karten-oder Kontonummer für eine vorhandene Zahlungsmethode nicht ändern. Wenn sich Ihre Karte oder Kontonummer geändert hat, [Ersetzen Sie Sie durch eine andere Zahlungsmethode](#replace-a-payment-method), die alle aktiven Abonnements von der Zahlungsmethode in die neue verlagert und dann [die alte Zahlungsmethode löscht](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Ich habe nur eine Karte oder ein Bankkonto in meinem Konto und möchte es entfernen.** |Wenn Sie nur über eine Zahlungsmethode verfügen, müssen Sie Sie [durch eine neue Zahlungsmethode ersetzen](#replace-a-payment-method) , bevor Sie Sie löschen können. |
 |**Meine Karte oder Ihr Bankkonto kann nicht hinzugefügt werden.**  |Sie müssen eine Zahlungsmethode verwenden, die aus demselben Land wie Ihr Mandant ausgestellt wurde. Wenn Sie Probleme bei der Eingabe Ihrer Kreditkarten-oder Bankkontoinformationen haben, können Sie [sich an den Support wenden](../../admin/contact-support-for-business-products.md). |

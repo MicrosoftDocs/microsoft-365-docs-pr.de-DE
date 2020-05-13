@@ -1,11 +1,11 @@
 ---
-title: Dienste für Nicht-Kunden, die E-Mails an Office 365 senden
+title: Dienste für nicht-Kunden, die e-Mails an Microsoft 365 senden
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638392"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208234"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>Dienste für Nicht-Kunden, die E-Mails an Office 365 senden
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für nicht-Kunden, die e-Mails an Microsoft 365 senden
 
-E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit denen Absender ihre Fähigkeit, e-Mails an Microsoft 365-Benutzer zu übermitteln, durch proaktives Verwalten Ihrer Absenderzuverlässigkeit verbessern können.
+E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um die Vertrauenswürdigkeit von Benutzern bei der Verwendung von e-Mail zu unterstützen, hat Microsoft verschiedene Richtlinien und Technologien eingeführt, um den Schutz unserer Benutzer zu gewährleisten. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit denen Absender ihre Fähigkeit, e-Mails an Microsoft 365-Benutzer zu übermitteln, durch proaktives Verwalten Ihrer Absenderzuverlässigkeit verbessern können.
 
 Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation bieten, auch wenn Sie kein Kunde sind.
 
@@ -33,14 +33,14 @@ Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation
 
 |**Dienst**|**Vorteile**|
 |:-----|:-----|
-|Onlinehilfeinhalt| Beschreibung:  <br/>  Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikation für EOP-Benutzer  <br/>  Enthält einen einfachen Onlineleitfaden mit unseren Richtlinien und Anforderungen  <br/>  Eine Übersicht über die Filter für Junk-E-Mails und Authentifizierungstechnologien, die von Microsoft eingesetzt werden|
+|Onlinehilfeinhalt|Beschreibung: <br/> Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikation für EoP-Benutzer. <br/><br/> Enthält eine einfache Onlinedokumentation mit unseren Richtlinien und Anforderungen. <br/><br/> Eine Übersicht über die Junk-e-Mail-Filter und Authentifizierungstechnologien, die von Microsoft verwendet werden.|
 |[Microsoft-Support](#microsoft-support)|Stellt Selbsthilfe und Weiterleitungssupport für Zustellungsprobleme bereit.|
 |[Anti-Spam-IP-Delist-Portal](#anti-spam-ip-delist-portal)|Ein Tool zum Übermitteln von Anforderungen zum Entfernen von IP-Adressen aus einer Liste. Vor dem Absenden dieser Anforderung hat der Absender die Verantwortung, sicherzustellen, dass alle weiteren E-Mails, die von der fraglichen IP-Adresse ausgehen, weder beleidigend noch böswillig sind.|
-|[Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Verhindert, dass Spam und andere unerwünschte E-Mails von Exchange Online gesendet werden und das Internet und Ihr E-Mail-System überfrachten.|
+|[Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Verhindert, dass Spam und andere unerwünschte e-Mails von Exchange Online gesendet und das Internet und Ihr e-Mail-System überladen werden.|
 
 ## <a name="microsoft-support"></a>Microsoft-Support
 
-Microsoft bietet verschiedene Supportoptionen für Benutzer, die Probleme beim Senden von e-Mails an Microsoft 365-Posteingänge haben. Wir empfehlen, dass Sie wie folgt vorgehen:
+Microsoft bietet verschiedene Supportoptionen für Benutzer, die Probleme beim Senden von e-Mails an Microsoft 365-Empfänger haben. Wir empfehlen, dass Sie wie folgt vorgehen:
 
 - Folgen Sie den Anweisungen in allen Unzustellbarkeitsberichten, die Sie erhalten.
 

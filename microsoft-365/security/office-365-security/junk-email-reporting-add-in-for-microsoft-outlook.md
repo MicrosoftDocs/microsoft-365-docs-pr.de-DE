@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie das Add-in "Microsoft Junk-e-Mail-Berichterstellung" installieren und verwenden, um Spam, nicht-Spam und Phishing-Nachrichten an Microsoft zu melden.
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638500"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208827"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook in Office 365
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook
 
 > [!NOTE]
-> Wenn Sie derzeit das Add-in "Junk-e-Mail-Berichterstellung" nicht verwenden, wird stattdessen das [Add-in "Berichtsnachricht](enable-the-report-message-add-in.md) " empfohlen.
+> Wenn Sie derzeit das Add-in "Junk-e-Mail-Berichterstellung" nicht verwenden, wird stattdessen das [Add-in "Berichtsnachricht](enable-the-report-message-add-in.md) " empfohlen. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Mit dem Add-in "Junk-e-Mail-Berichterstellung" für Microsoft Outlook können Benutzer falsch positive Ergebnisse (gute e-Mail-Nachrichten als Spam gekennzeichnet), falsche Negative (ungültige e-Mail zulässig) und Phishing-Nachrichten an Exchange Online Protection (EoP) senden. Wenn Ihre Organisation nicht EoP verwendet, wirkt sich die Übermittlung Ihres Junk-e-Mail-Berichts nicht auf Ihre Spamfilterung aus.
+Mit dem Add-in "Junk-e-Mail-Berichterstellung" für Microsoft Outlook können Benutzer falsch positive Ergebnisse (gute e-Mail-Nachrichten als Spam gekennzeichnet), falsche Negative (ungültige e-Mail-Nachricht) und Phishing-Nachrichten an Microsoft senden. Wenn Ihre Organisation keinen Exchange Online Schutz verwendet (beispielsweise lokale Exchange-oder e-Mail-Dienste, die nicht Exchange Online sind), wirkt sich die Übermittlung des Junk-e-Mail-Berichts nicht auf Ihre Spamfilterung aus.
 
 In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellung" installieren und verwenden.
 
@@ -39,7 +39,7 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
   - Outlook 2013 oder höher
   - Outlook im Lieferumfang von Microsoft 365-Apps für Unternehmen
 
-- Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Report Messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
+- Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Verwenden des Add-Ins "Junk-e-Mail-Berichterstellung" zum Melden von Spam-und Phishing-Nachrichten
 
@@ -93,7 +93,7 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 
 - Sie benötigen Administratorrechte auf dem Computer, auf dem Sie das Add-in installieren.
 
-- Wechseln Sie <https://www.microsoft.com/download/details.aspx?id=18275> zu, und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort, der leicht zu finden ist:
+- Wechseln Sie zu, <https://www.microsoft.com/download/details.aspx?id=18275> und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort, der leicht zu finden ist:
 
   - **32-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
@@ -197,7 +197,7 @@ Führen Sie die folgenden Schritte in Outlook aus, um zu überprüfen, ob Sie da
 
 Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahren, um das Add-in "Junk-e-Mail-Berichterstellung" zu deinstallieren:
 
-- **System**Steuerung: Drücken Sie die Windows-Taste + R. Geben Sie **Run** im daraufhin geöffneten Dialogfeld Ausführen `control appwiz.cpl` die EINGABETASTE ein, und klicken Sie dann auf **OK**.
+- **System**Steuerung: Drücken Sie die Windows-Taste + R. Geben Sie im daraufhin geöffneten Dialogfeld **Ausführen** die EINGABETASTE ein, `control appwiz.cpl` und klicken Sie dann auf **OK**.
 
   Suchen und wählen Sie **Microsoft Junk-e-Mail-Berichts-Add-in** in der Liste aus, und klicken Sie dann auf **deinstallieren**.
 
@@ -209,7 +209,7 @@ Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahr
 
   Wählen Sie im daraufhin angezeigten Dialogfeld **Microsoft Junk-e-Mail-Berichts-Add-in für Outlook entfernen** aus, und klicken Sie dann auf **weiter**.
 
-- **Automatischer Modus**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen \<Sie in einem Eingabeaufforderungsfenster\> PathToFile durch den Speicherort der MSI-Datei, und führen Sie einen der folgenden Befehle aus:
+- **Automatischer Modus**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen Sie in einem Eingabeaufforderungsfenster \< PathToFile \> durch den Speicherort der MSI-Datei, und führen Sie einen der folgenden Befehle aus:
 
   - **32-Bit**:
 
@@ -249,7 +249,7 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
 
 #### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: Es wird ständig eine Fehlermeldung angezeigt, in der die Benutzer aufgefordert werden, Ihren System Administrator zu kontaktieren.
 
-1. Überprüfen oder festlegen `LoggingLevel` des Registrierungsschlüssels auf den Wert "Verbose":
+1. Überprüfen oder Festlegen des `LoggingLevel` Registrierungsschlüssels auf den Wert "Verbose":
 
    - **32-Bit-Outlook unter 32-Bit-Windows**:
 
@@ -288,7 +288,7 @@ Weitere Methoden, die Sie zum Übermitteln von Nachrichten an Microsoft verwende
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: Benutzer haben ausgewählt, beim Melden von Nachrichten keine Bestätigungsaufforderung zu erhalten, und möchten nun die Eingabeaufforderung zurück
 
-1. Erstellen Sie `ConfirmReportJunk`den Registrierungsschlüssel mit dem Wert "true":
+1. Erstellen Sie den `ConfirmReportJunk` Registrierungsschlüssel mit dem Wert "true":
 
    ```text
    Windows Registry Editor Version 5.00

@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dieses Thema enthält FAQs & Antworten zum Schutz vor Spam. Antworten gelten für Kunden von Microsoft Exchange Online & Exchange Online Protection (EoP).
-ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spam in Exchange Online Protection (EoP) anzeigen.
+ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033738"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209643"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zum Antispamschutz für Microsoft 365-Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
+Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Schadsoftware für Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern.
 
 Informationen zu Fragen und Antworten in Bezug auf Quarantäne finden Sie unter [Häufig gestellte Fragen (FAQ) zur Quarantäne](quarantine-faq.md).
 
@@ -34,88 +34,88 @@ Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter [Anti-Malware
 
 Fragen und Antworten zum Schutz vor Spoofing finden Sie unter [Anti-Spoofing-Schutz – FAQ](anti-spoofing-protection-faq.md).
 
-## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>F: Was passiert standardmäßig mit einer Nachricht, die als Spam erkannt wird?
+## <a name="by-default-what-happens-to-a-spam-detected-message"></a>Was passiert standardmäßig mit einer Nachricht, die als Spam erkannt wird?
 
-A: **Für eingehende Nachrichten:** Die Mehrzahl der Spam Daten werden über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md) and [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+**Für eingehende Nachrichten:** Die Mehrzahl der Spam Daten werden über die Verbindungsfilterung gelöscht, die auf der IP-Adresse des Quell-e-Mail-Servers basiert. Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) überprüfen und Klassifizieren von Nachrichten als Spam, Massen-oder Phishing. Standardmäßig werden Nachrichten, die als Spam oder Massen klassifiziert werden, an den Junk-e-Mail-Ordner des Empfängers übermittelt, während Nachrichten, die als Phishing klassifiziert wurden, isoliert werden. Sie können die standardmäßige Anti-Spam-Richtlinie ändern (gilt für alle Empfänger), oder Sie können benutzerdefinierte Anti-Spam-Richtlinien mit strengeren Einstellungen für bestimmte Benutzergruppen erstellen (beispielsweise können Sie Spam in Quarantäne verlagern, die an Führungskräfte gesendet werden). Weitere Informationen finden Sie unter [configure Anti-Spam Policies](configure-your-spam-filter-policies.md) and [Recommended Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > In hybridbereitstellungen, bei denen EoP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EoP-Spamfilter Kopfzeilen zu ermitteln, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder über den risikoreichen [Zustellungs Pool](high-risk-delivery-pool-for-outbound-messages.md) weitergeleitet oder an den Absender in einem Unzustellbarkeitsbericht (auch als NDR-oder Bounce-Nachricht bezeichnet) zurückgegeben. Weitere Informationen zum ausgehenden Spam Schutz finden Sie unter [Outbound Spam Controls](outbound-spam-controls.md).
 
-## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>F: Was ist eine Zero-Day-Spam Variante und wie wird Sie von dem Dienst verarbeitet?
+## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Was ist eine Zero-Day-Spam Variante und wie wird Sie von dem Dienst verarbeitet?
 
-A: Bei einer Zero-Day-Spam-Variante handelt es sich um eine erste Generation, bisher unbekannte Spam-Variante, die nie erfasst oder analysiert wurde, sodass unsere Anti-Spam-Filter noch keine Informationen zur Erkennung verfügbar haben. Wenn ein Zero-Day-Spam Beispiel erfasst und von unseren Spam Analysten analysiert wird, wenn es die Kriterien für die Spam Klassifizierung erfüllt, werden unsere Anti-Spam-Filter aktualisiert, um Sie zu erkennen, und Sie werden nicht mehr als "Zero-Day" betrachtet.
+Bei einer Zero-Day-Spam-Variante handelt es sich um eine erste Generation, bisher unbekannte Spam-Variante, die nie erfasst oder analysiert wurde, sodass unsere Anti-Spam-Filter noch keine Informationen zur Erkennung verfügbar haben. Wenn ein Zero-Day-Spam Beispiel erfasst und von unseren Spam Analysten analysiert wird, wenn es die Kriterien für die Spam Klassifizierung erfüllt, werden unsere Anti-Spam-Filter aktualisiert, um Sie zu erkennen, und Sie werden nicht mehr als "Zero-Day" betrachtet.
 
 **Hinweis:** Wenn Sie eine Nachricht erhalten, die möglicherweise eine NULL tägige Spam Variante ist, um den Dienst zu verbessern, senden Sie die Nachricht mit einer der unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md)beschriebenen Methoden an Microsoft.
 
-## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>F: Muss ich den Dienst für Antispamschutz konfigurieren?
+## <a name="do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Muss ich den Dienst für Antispamschutz konfigurieren?
 
-A: Nachdem Sie sich für den Dienst angemeldet und Ihre Domäne hinzugefügt haben, wird die Spamfilterung automatisch aktiviert. Standardmäßig ist die Spamfilterung optimiert, um Sie zu schützen, ohne zusätzliche Konfigurationsinformationen zu benötigen (abgesehen von der zuvor erwähnten Ausnahme für eigenständige EoP-eigenständige Kunden in Hybrid Umgebungen). Als Administrator können Sie die Standardeinstellungen für Spamfilterung bearbeiten, um die Anforderungen Ihrer Organisation optimal zu erfüllen. Um eine höhere Granularität zu erzielen, können Sie auch Antispam-und ausgehende Anti-Spam-Richtlinien erstellen, die auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation angewendet werden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie, die Priorität (das heißt, die Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
+Nachdem Sie sich für den Dienst angemeldet und Ihre Domäne hinzugefügt haben, wird die Spamfilterung automatisch aktiviert. Standardmäßig ist die Spamfilterung optimiert, um Sie zu schützen, ohne zusätzliche Konfigurationsinformationen zu benötigen (abgesehen von der zuvor erwähnten Ausnahme für eigenständige EoP-eigenständige Kunden in Hybrid Umgebungen). Als Administrator können Sie die Standardeinstellungen für Spamfilterung bearbeiten, um die Anforderungen Ihrer Organisation optimal zu erfüllen. Um eine höhere Granularität zu erzielen, können Sie auch Antispam-und ausgehende Anti-Spam-Richtlinien erstellen, die auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation angewendet werden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie, die Priorität (das heißt, die Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
 Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 [Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit](recommended-settings-for-eop-and-office365-atp.md)
 
-[Konfigurieren von Anti-Policy](configure-the-connection-filter-policy.md)
+[Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md)
 
-[Konfigurieren von Antispamrichtlinien in Office 365](configure-your-spam-filter-policies.md)
+[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)
 
 [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
 
-## <a name="q-if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>F: Wie lange dauert es, bis von mir vorgenommene Änderungen an einer Antivirusrichtlinie übernommen werden?
+## <a name="if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>Wie lange dauert es, bis von mir vorgenommene Änderungen an einer Antivirusrichtlinie übernommen werden?
 
-A: Es kann bis zu einer Stunde dauern, bis die Änderungen übernommen werden.
+Es kann bis zu einer Stunde dauern, bis die Änderungen übernommen werden.
 
-## <a name="q-is-bulk-email-filtering-automatically-enabled"></a>F: Ist die Filterung von Massen-E-Mails automatisch aktiviert?
+## <a name="is-bulk-email-filtering-automatically-enabled"></a>Ist die Filterung von Massen-E-Mails automatisch aktiviert?
 
-A. Ja. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Ja. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-## <a name="q-does-the-service-provide-url-filtering"></a>F: Bietet der Dienst die URL-Filterung?
+## <a name="does-the-service-provide-url-filtering"></a>Bietet der Dienst die URL-Filterung?
 
-A: Ja, der Dienst verfügt über einen URL-Filter, der nach Nachrichten nach URLs sucht. Mit bekannten Spam- oder nicht sicheren Inhalten verbundene URLs werden erkannt und die Nachrichten anschließend als Spam markiert.
+Ja, der Dienst verfügt über einen URL-Filter, der nach Nachrichten nach URLs sucht. Mit bekannten Spam- oder nicht sicheren Inhalten verbundene URLs werden erkannt und die Nachrichten anschließend als Spam markiert.
 
-## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>F: Wie können Kunden den Dienst verwenden, um falsch negative Ergebnisse (Spam) und falsch positive Ergebnisse (kein Spam) an Microsoft zu senden?
+## <a name="how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Wie können Kunden den Dienst verwenden, um falsch negative Ergebnisse (Spam) und falsch positive Ergebnisse (kein Spam) an Microsoft zu senden?
 
-A: Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
+Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kein Spam sind, zur Analyse an Microsoft zu übermitteln. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="q-can-i-get-spam-reports"></a>F: Kann ich Spamberichte abrufen?
+## <a name="can-i-get-spam-reports"></a>Kann ich Spamberichte abrufen?
 
-A: Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
+Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
 
 Exchange Online Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
 
 Eigenständige EoP-Kunden: [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Schutz](reporting-and-message-trace-in-exchange-online-protection.md)
 
-## <a name="q-someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>F: Jemand hat mir eine Nachricht geschickt und ich kann Sie nicht finden. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?
+## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Jemand hat mir eine Nachricht geschickt und ich kann Sie nicht finden. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?
 
-A: Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+Ja, mit dem Tool für die Nachrichtenablaufverfolgung können Sie e-Mail-Nachrichten verfolgen, während Sie den Dienst durchlaufen, um herauszufinden, was mit Ihnen geschehen ist. Weitere Informationen zur Verwendung des Nachrichtenablauf Verfolgungs Tools, um herauszufinden, warum eine Nachricht als Spam gekennzeichnet wurde, finden Sie unter [war eine Nachricht als Spam gekennzeichnet?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
-## <a name="q-will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>F: Schränkt der Dienst meine E-Mail ein (begrenzt ihre Rate), wenn die Benutzer ausgehenden Spam senden?
+## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>Schränkt der Dienst meine E-Mail ein (begrenzt ihre Rate), wenn die Benutzer ausgehenden Spam senden?
 
-A. Wenn mehr als der Hälfte der von einem Benutzer über den Dienst in einem bestimmten Zeitraum (z. B. in der Stunde) gesendeten E-Mails von Office 365 als Spam eingestuft werden, wird dieser Benutzer für das Senden von Nachrichten blockiert. Wenn eine ausgehende Nachricht als Spam identifiziert wird, wird sie in den meisten Fällen durch den Pool für besonders riskante Zustellungen geleitet, der die Wahrscheinlichkeit reduziert, dass der normale Pool für ausgehende IP-Adressen einer Liste blockierter IP-Adressen hinzugefügt wird.
+Wenn mehr als die Hälfte der e-Mails, die von einem Benutzer über den Dienst innerhalb eines bestimmten Zeitrahmens gesendet werden (beispielsweise pro Stunde), als Spam von EoP festgelegt wird, wird der Benutzer vom Senden von Nachrichten blockiert. Wenn eine ausgehende Nachricht als Spam identifiziert wird, wird sie in den meisten Fällen durch den Pool für besonders riskante Zustellungen geleitet, der die Wahrscheinlichkeit reduziert, dass der normale Pool für ausgehende IP-Adressen einer Liste blockierter IP-Adressen hinzugefügt wird.
 
 Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn ein Absender für das Senden ausgehender Spamnachrichten blockiert wird. Weitere Informationen zu dieser Einstellung finden Sie unter [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md).
 
-## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>F: Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?
+## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?
 
-A. Ja. Obwohl empfohlen wird, den MX-Eintrag auf Microsoft zu setzen, erkennen wir, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Microsoft weiterzuleiten.
+Ja. Obwohl empfohlen wird, den MX-Eintrag auf Microsoft zu setzen, erkennen wir, dass es legitime geschäftliche Gründe gibt, Ihre e-Mails an einen anderen Ort als Microsoft weiterzuleiten.
 
 - **Eingehend**: Ändern Sie Ihre MX-Einträge so, dass Sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EoP um. Weitere Informationen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - Ausgehend **: Konfigurieren**Sie das Smarthost-Routing von Microsoft 365 auf den Drittanbieter des Ziels.
 
-## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>F: Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?
+## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?
 
-A. Ja. Weitere Informationen finden Sie unter [Schützen Ihrer Daten im Internet](https://support.microsoft.com/help/4091455)
+Ja. Weitere Informationen finden Sie unter [Schützen Ihrer Daten im Internet](https://support.microsoft.com/help/4091455)
 
-## <a name="q-are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>F: Werden Spam- und Malwarenachrichten darauf untersucht, wer sie gesendet hat, oder werden sie an Strafverfolgungsbehörden weitergeleitet?
+## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Werden Spam- und Malwarenachrichten darauf untersucht, wer sie gesendet hat, oder werden sie an Strafverfolgungsbehörden weitergeleitet?
 
-A. Der Dienst dient in erster Linie zum Erkennen und Entfernen von Spam und Malware. Wir untersuchen gelegentlich jedoch besonders gefährlichen oder schädlichen Spam bzw. Angriffe genauer und verfolgen die Täter. Hierzu arbeiten wir gegebenenfalls auch mit unseren Rechtsabteilungen und Abteilungen zum Schutz vor Computerkriminalität zusammen, um ein Spammer-Botnet zu zerschlagen, den Spammer an der Verwendung des Dienstes zu hindern (wenn er den Dienst zum Senden von E-Mails verwendet) und die Informationen an die Strafverfolgungsbehörden weiterzugeben.
+Der Dienst konzentriert sich auf die Erkennung und Entfernung von Spam und Malware, wobei gelegentlich besonders gefährliche oder schädliche Spam-oder Angriffs Kampagnen untersucht und die Täter verfolgt werden. Dies kann dazu führen, dass Sie mit unseren juristischen und digitalen Kriminal Einheiten zusammenarbeiten, um einen Spammer-Botnet aufzunehmen, indem Sie den Spammer daran hindern, den Dienst zu verwenden (wenn er ausgehende e-Mails sendet) und die Informationen an Strafverfolgungsbehörden zur Strafverfolgung weiter gibt.
 
-## <a name="q-what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>F: Mit welchen bewährten Methoden für das Senden ausgehender E-Mails kann ich sicherstellen, dass meine E-Mails zugestellt werden?
+## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Mit welchen bewährten Methoden für das Senden ausgehender E-Mails kann ich sicherstellen, dass meine E-Mails zugestellt werden?
 
-A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Senden ausgehender E-Mails.
+Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Senden ausgehender E-Mails.
 
 - **Die Quell-e-Mail-Domäne sollte in DNS aufgelöst werden.**
 
@@ -125,7 +125,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
 
 - **Ausgehende e-Mail-eServer sollten einen Reverse-DNS-Eintrag (PTR) aufweisen.**
 
-  Wenn die e-Mail-Quell-IP-Adresse beispielsweise 192.0.43.10 lautet, lautet der `43-10.any.icann.org`Reverse-DNS-Eintrag ".
+  Wenn die e-Mail-Quell-IP-Adresse beispielsweise 192.0.43.10 lautet, lautet der Reverse-DNS-Eintrag `43-10.any.icann.org` ".
 
 - **Die Befehle HELO/EHLO und MAIL FROM sollten konsistent sein und in Form eines Domänennamens vorliegen, nicht in Form einer IP-Adresse.**
 

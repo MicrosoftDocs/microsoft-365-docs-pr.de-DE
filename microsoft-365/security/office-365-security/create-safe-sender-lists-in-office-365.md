@@ -15,34 +15,31 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Administratoren eine Liste sicherer Absender in Microsoft 365 und EOP erstellen können, die eingehende Nachrichten zum Überspringen der Spamfilterung zulässt.
-ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
+ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173416"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209535"
 ---
-# <a name="create-safe-sender-lists"></a>Erstellen von Listen sicherer Absender
+# <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
 Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Schutz (EoP)-Kunde ohne Exchange Online Postfächer sind, bietet EoP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer e-Mails von vertrauenswürdigen Absendern empfangen können. Zu diesen Optionen gehören Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die IP-Zulassungsliste (Verbindungsfilterung) und zugelassene Absenderlisten oder zugelassene Domänenlisten in den Antispam-Richtlinien. Sie können diese Optionen gemeinsam als _sichere Absenderlisten_betrachten.
 
 Die verfügbaren Listen für sichere Absender werden in der folgenden Liste beschrieben, um von den meisten empfohlenen empfohlen zu werden:
 
 1. Nachrichtenflussregeln
-
 2. Outlook-sichere Absender
-
 3. IP-Zulassungsliste (Verbindungsfilterung)
-
 4. Zugelassene Absenderlisten oder zugelassene Domänenlisten (Anti-Spam-Richtlinien)
 
 Nachrichtenfluss Regeln ermöglichen die größtmögliche Flexibilität, um sicherzustellen, dass nur die richtigen Nachrichten zulässig sind. Zugelassene Absender und zugelassene Domänenlisten in Anti-Spam-Richtlinien sind nicht so sicher wie die IP-Zulassungsliste, da die e-Mail-Domäne des Absenders leicht gefälscht ist. Die IP-Zulassungsliste stellt jedoch auch ein Risiko dar, da e-Mails von _jeder_ Domäne, die von dieser IP-Adresse gesendet wird, die Spamfilterung umgehen.
 
 > [!IMPORTANT]
-> <ul><li>Achten Sie darauf, *alle* Ausnahmen sorgfältig zu überwachen, die Sie zur Spamfilterung mithilfe sicherer Absenderlisten verwenden.</li><li>Sie können zwar sichere Absenderlisten verwenden, um bei falsch positiven Ergebnissen zu helfen (gute e-Mail-Nachrichten, die als Spam gekennzeichnet sind), aber Sie sollten die Verwendung von Listen sicherer Absender als eine vorübergehende Lösung in Betracht nehmen, die möglichst vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen bei der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie die Verwendung von Listen sicherer Absender zur Verwaltung von falsch positiven Ergebnissen beharren, müssen Sie wachsam sein und das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben.</li><li>Wenn Sie zulassen möchten, dass eine Domäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) hinzufügen.</li><li>EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.</li></ul>
+> • Achten Sie darauf, *alle* Ausnahmen sorgfältig zu überwachen, die Sie zur Spamfilterung mithilfe sicherer Absenderlisten verwenden. <br/><br/> • Sie können zwar sichere Absenderlisten verwenden, um falsch positive Ergebnisse zu unterstützen (gute e-Mail-Nachrichten, die als Spam gekennzeichnet sind), aber Sie sollten die Verwendung sicherer Absenderlisten als eine vorübergehende Lösung in Betracht nehmen, die möglichst vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen bei der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie die Verwendung von Listen sicherer Absender zur Verwaltung von falsch positiven Ergebnissen beharren, müssen Sie wachsam sein und das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben. <br/><br/> • Wenn Sie zulassen möchten, dass eine Domäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) hinzufügen. <br/><br/> • EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.
 
-Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md).
+Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Create Block Sender Lists in EoP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Empfohlen Verwenden von Nachrichtenfluss Regeln
 
@@ -54,7 +51,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
 2. Konfigurieren Sie eine der folgenden Einstellungen:
 
-   - Nachrichten **Fluss Regelbedingung**: **eine Nachrichtenkopfzeile** \> **enthält alle folgenden Wörter** \> **Kopfzeilenname**: `Authentication-Results` \> **Kopfzeilenwert** `dmarc=pass` : `dmarc=bestguesspass`oder.
+   - Nachrichten **Fluss Regelbedingung**: **eine Nachrichtenkopfzeile** \> **enthält alle folgenden Wörter** \> **Kopfzeilenname**: `Authentication-Results` \> **Kopfzeilenwert**: `dmarc=pass` oder `dmarc=bestguesspass` .
 
      Diese Bedingung überprüft den Absender Authentifizierungsstatus der sendenden e-Mail-Domäne, um sicherzustellen, dass die sendende Domäne nicht gefälscht wird. Weitere Informationen zur e-Mail-Authentifizierung finden Sie unter [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md).
 
@@ -67,31 +64,31 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
 3. **Optionale Bedingungen**:
 
-   - **Der Absender** \> **ist intern/extern** \> **außerhalb der Organisation**: Diese Bedingung ist implizit, aber Sie kann nicht verwendet werden, um lokale e-Mail-Server zu berücksichtigen, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
+   - **Der Absender** \> **ist intern/extern** \> **Außerhalb der Organisation**: Diese Bedingung ist implizit, aber Sie kann nicht verwendet werden, um lokale e-Mail-Server zu berücksichtigen, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
 
-   - **Der Betreff oder** \> Textkörper des Betreffs oder Text **Körpers enthält eines der folgenden** \> \<Wörter Schlüsselwörter\>: Wenn Sie die Nachrichten nach Stichwörtern oder Ausdrücken in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter als Bedingung verwenden.
+   - **Der Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter** \> \<Schlüsselwörter \> : Wenn Sie die Nachrichten nach Stichwörtern oder Ausdrücken in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter als Bedingung verwenden.
 
 4. **Aktion**: beide Aktionen in der Regel konfigurieren:
 
-   a. **Ändern der Nachrichteneigenschaften** \> **legen Sie die Spam Confidence Level (SCL) Bypass-** \> **Spamfilterung**fest.
+   a. **Ändern der Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)** \> **Umgehen Sie die Spamfilterung**.
 
-   b. **Eine Nachrichtenkopfzeile** \> **enthält alle folgenden Wörter** \> **Kopfzeilenname**: \<CustomHeaderName\> - **Headerwert**: \<CustomHeaderValue\>.
+   b. **Nachrichtenkopfzeile** \> **enthält eines dieser Wörter** \> **HeaderName**: \< CustomHeaderName \> - **Headerwert**: \< CustomHeaderValue \> .
 
       Beispiel: `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Wenn in der Regel mehr als eine Domäne vorhanden ist, können Sie den Kopfzeilentext nach Bedarf anpassen.
 
-      Wenn eine Nachricht Spamfilterung aufgrund einer Nachrichtenfluss Regel überspringt, wird der `SFV:SKN` Wert in der Kopfzeile **X-Forefront-Antispam-Report** gestempelt. Wenn die Nachricht aus einer Quelle stammt, die sich in der Liste der zugelassenen IP `IPV:CAL` -Adressen befindet, wird der Wert ebenfalls hinzugefügt. Diese Werte können Ihnen bei der Problembehandlung helfen.
+      Wenn eine Nachricht Spamfilterung aufgrund einer Nachrichtenfluss Regel überspringt, wird der Wert `SFV:SKN` in der Kopfzeile **X-Forefront-Antispam-Report** gestempelt. Wenn die Nachricht aus einer Quelle stammt, die sich in der Liste der zugelassenen IP-Adressen befindet, wird der Wert `IPV:CAL` ebenfalls hinzugefügt. Diese Werte können Ihnen bei der Problembehandlung helfen.
 
 ![Einstellungen für Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole zum Umgehen der Spamfilterung.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Outlook-Absendern
 
-Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, könnte der Absender kompromittiert werden und schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Dies verhindert auch, dass [zap](zero-hour-auto-purge.md) das tut, was es auch für die Nachricht tun sollte.
+Anstelle einer Organisations Einstellung können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filter Stapels umgehen müssen. Obwohl Sie dem Absender Vertrauen, sind die Absender Dosen weiterhin gefährdet und können schädlichen Inhalt senden. Am besten lassen Sie unsere Filter tun, was erforderlich ist, um jede Nachricht zu überprüfen, und melden Sie dann [falsch positiv/negativ an Microsoft](report-junk-email-messages-to-microsoft.md) , wenn sich unsere Filter falsch verstanden haben. Die Umgehung des Filter Stapels stört auch [zap](zero-hour-auto-purge.md).
 
-Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutzers überspringen, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:SFE`, der angibt, dass die Spam-, spoof-und Phishing-Filterung umgangen wurde.
+Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutzers überspringen, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:SFE` , der angibt, dass die Spam-, spoof-und Phishing-Filterung umgangen wurde.
 
 ## <a name="use-the-ip-allow-list"></a>Verwenden der IP-Zulassungsliste
 
-Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, ist die nächste beste Option das Hinzufügen des Quell-e-Mail-Servers oder der Server zur IP-Zulassungsliste in der Verbindungsfilter Richtlinie. Ausführliche Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in Office 365](configure-the-connection-filter-policy.md).
+Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, ist die nächste beste Option das Hinzufügen des Quell-e-Mail-Servers oder der Server zur IP-Zulassungsliste in der Verbindungsfilter Richtlinie. Ausführliche Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
 
 **Hinweise**:
 
@@ -106,7 +103,7 @@ Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, 
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Zugelassene Absenderlisten oder zugelassene Domänenlisten verwenden
 
-Die am wenigsten wünschenswerte Option besteht darin, die Liste Zugelassene Absender oder zugelassene Domänen in den Antispam-Richtlinien zu verwenden. Sie sollten diese Option möglichst vermeiden, da Absender den gesamten Spam-, spoof-und Phishing-Schutz *sowie die Absender* Authentifizierung (SPF, DKIM, DMARC) umgehen. Diese Methode wird am besten nur für temporäre Tests verwendet. Die detaillierten Schritte finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md) Topic.
+Die am wenigsten wünschenswerte Option besteht darin, die Liste Zugelassene Absender oder zugelassene Domänen in den Antispam-Richtlinien zu verwenden. Sie sollten diese Option möglichst vermeiden, da Absender den gesamten Spam-, spoof-und Phishing-Schutz *sowie die Absender* Authentifizierung (SPF, DKIM, DMARC) umgehen. Diese Methode wird am besten nur für temporäre Tests verwendet. Die detaillierten Schritte finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md) Topic.
 
 Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 
@@ -129,12 +126,12 @@ Nehmen wir beispielsweise an, dass die Blue Yonder Airlines Margie es Travel ang
 
 - Die `5322.From` Adresse lautet blueyonder@News.blueyonderairlines.com, was Sie in Outlook sehen.
 
-Listen für sichere Absender und sichere Domänen in antispamregeln in EoP untersuchen sowohl die `5321.MailFrom` - `5322.From` als auch-Adressen. Outlook-sichere Absender verwenden nur die `5322.From` Adresse.
+Listen für sichere Absender und sichere Domänen in antispamregeln in EoP untersuchen sowohl die-als `5321.MailFrom` auch- `5322.From` Adressen. Outlook-sichere Absender verwenden nur die `5322.From` Adresse.
 
 Um zu verhindern, dass diese Nachricht gefiltert wird, können Sie die folgenden Schritte ausführen:
 
-- Fügen Sie blueyonder@News.blueyonderairlines.com ( `5322.From` die Adresse) als Outlook-sicherer Absender hinzu.
+- Fügen Sie blueyonder@News.blueyonderairlines.com (die `5322.From` Adresse) als Outlook-sicherer Absender hinzu.
 
-- [Verwenden Sie eine e-Mail-Fluss Regel](#recommended-use-mail-flow-rules) mit einer Bedingung, die nach nach `5322.From` richten von blueyonder@News.blueyonderairlines.com sucht ( `5321.MailFrom`Adresse, blueyonder.Airlines@margiestravel.com () oder beides.
+- [Verwenden Sie eine e-Mail-Fluss Regel](#recommended-use-mail-flow-rules) mit einer Bedingung, die nach Nachrichten von blueyonder@News.blueyonderairlines.com sucht ( `5322.From` Adresse, blueyonder.Airlines@margiestravel.com ( `5321.MailFrom` ) oder beides.
 
-Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender in Office 365](create-safe-sender-lists-in-office-365.md).
+Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in EoP](create-safe-sender-lists-in-office-365.md).
