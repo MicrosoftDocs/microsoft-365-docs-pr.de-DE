@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
+description: Administratoren und en-users erfahren, wie Sie e-Mails Nachrichten (gute e-Mails, die als "schlecht" oder "schlecht" gekennzeichnet sind) zur Analyse an Microsoft senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7fc26e1cba976e68b8dcfee5ec8b4fe366b8c47
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035236"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208609"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online Postfächern sind, wird empfohlen, dass Sie das Portal für Übermittlungen im Security & Compliance Center verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
+> Wenn Sie ein Administrator in einer Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
 
 Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-Nachrichten (Spam) oder Phishing-Nachrichten in Ihrem Posteingang empfangen oder wenn Sie keine legitime e-Mail-Nachricht erhalten, weil Sie als Junk gekennzeichnet ist. Wir optimieren unsere Spamfilter ständig, um genauere Angaben zu machen.
 
@@ -57,7 +57,7 @@ Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, di
 3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 
 > [!TIP]
-> Administratoren haben verschiedene Möglichkeiten, bestimmte Nachrichten, die fälschlicherweise als Spam identifiziert werden, zu blockieren. Ausführliche Informationen finden Sie unter [Create blocked Sender Lists in Office 365](create-block-sender-lists-in-office-365.md).
+> Administratoren haben verschiedene Möglichkeiten, bestimmte Nachrichten, die fälschlicherweise als Spam identifiziert werden, zu blockieren. Ausführliche Informationen finden Sie unter [Create blocked Sender Lists in EoP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="submit-false-positives-to-microsoft"></a>Senden von falsch positiven Ergebnissen an Microsoft
 
@@ -66,7 +66,7 @@ Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, di
 
 Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie die Nachricht an das Microsoft-Spam Analyse Team übermitteln. Die Analysten bewerten die Nachricht, und (abhängig von den Ergebnissen der Analyse) können die Dienst weiten Filter so angepasst werden, dass die Nachricht durchlassen wird.
 
-1. Erstellen Sie eine neue, leere e- `not_junk@office365.microsoft.com` Mail-Nachricht mit als Empfänger:
+1. Erstellen Sie eine neue, leere e-Mail-Nachricht mit `not_junk@office365.microsoft.com` als Empfänger:
 
 2. Ziehen Sie die nicht identifizierte Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die nicht identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
@@ -76,7 +76,7 @@ Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie
 3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 
 > [!TIP]
-> Administratoren haben verschiedene Möglichkeiten, um zu ermöglichen, dass bestimmte Nachrichten die Spamfilterung überspringen. Ausführliche Informationen finden Sie unter [Create Safe Sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
+> Administratoren haben verschiedene Möglichkeiten, um zu ermöglichen, dass bestimmte Nachrichten die Spamfilterung überspringen. Ausführliche Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Erstellen einer e-Mail-Fluss Regel zum Empfangen von Kopien von Nachrichten, die an Microsoft gemeldet werden
 

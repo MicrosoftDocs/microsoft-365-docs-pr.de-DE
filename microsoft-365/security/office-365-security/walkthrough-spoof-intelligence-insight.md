@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie die neue Spoof Intelligence-Einblicke funktioniert, und wie Sie schnell ermitteln können, welche Absender legitimerweise nicht authentifizierte e-Mails senden.
+description: Administratoren erfahren, wie die Spoof Intelligence-Einblicke funktionieren, und wie Sie schnell ermitteln können, welche Absender legitimerweise nicht authentifizierte e-Mails senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033644"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208464"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Exemplarische Vorgehensweise – ATP-Spoof Intelligence Insight in Microsoft 365
 
@@ -35,7 +35,7 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Security Dashboard** zu wechseln, verwenden <https://protection.office.com/searchandinvestigation/dashboard>Sie.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Security Dashboard** zu wechseln, verwenden Sie <https://protection.office.com/searchandinvestigation/dashboard> .
 
   Sie können die Einblicke in Spoof Intelligence aus mehreren Dashboards im Security & Compliance Center anzeigen. Unabhängig davon, für welches Dashboard Sie sich interessieren, bietet die Insight dieselben Details und ermöglicht Ihnen, schnell dieselben Aufgaben auszuführen.
 
@@ -69,7 +69,7 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 
    Ein **Domänenpaar** ist eine Kombination aus der von-Adresse und der sendenden Infrastruktur:
 
-   - Die Absenderadresse ist die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Diese Adresse wird auch als `5322.From` Adresse bezeichnet.
+   - Die Absenderadresse ist die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Diese Adresse wird auch als Adresse bezeichnet `5322.From` .
 
    - Die sendende Infrastruktur oder der Absender ist die Organisationsdomäne des Reverse-DNS-Lookups (PTR-Eintrags) der sendenden IP-Adresse. Wenn die sendende IP-Adresse keinen PTR-Eintrag hat, wird der Absender von der sendenden IP mit der Subnetzmaske 255.255.255.0 in der CIDR-Notation (/24) identifiziert. Wenn die IP-Adresse beispielsweise 192.168.100.100 lautet, lautet die vollständige IP-Adresse des Absenders 192.168.100.100/24.
 

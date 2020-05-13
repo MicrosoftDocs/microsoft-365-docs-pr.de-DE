@@ -1,5 +1,5 @@
 ---
-title: Untersuchen und Beheben von Kommunikations Konformitätswarnungen
+title: Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 description: Untersuchen und Beheben von Benachrichtigungen zur Kommunikations Konformität in Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632856"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208397"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Kommunikations Konformitätswarnungen
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
 Nachdem Sie die Richtlinien für die Kommunikations Konformität konfiguriert haben, erhalten Sie Warnungen im Microsoft 365 Compliance Center für Nachrichten Probleme, die ihren Richtlinienbedingungen entsprechen. Befolgen Sie die hier beschriebenen Workflowanweisungen, um Warnungs Probleme zu untersuchen und zu beheben.
 
@@ -33,14 +33,14 @@ Nachdem Sie die Richtlinien für die Kommunikations Konformität konfiguriert ha
 
 Der erste Schritt zum Untersuchen von in ihren Richtlinien festgestellten Problemen besteht darin, generierte Warnungen im Microsoft 365 Compliance Center zu überprüfen. Im Compliance Center gibt es verschiedene Bereiche, die Ihnen helfen, Warnungen schnell zu untersuchen, je nachdem, wie Sie die Warnungs Gruppierung anzeigen möchten:
 
-- **Homepage zur Kommunikation-Compliance**: Wenn Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation anmelden, wählen Sie**Overview**  > Übersicht über die Kommunikations Kompatibilität aus, um die Startseite für die Kommunikations Kompatibilität anzuzeigen. **Communication compliance** Hier sehen Sie Folgendes:
+- **Homepage zur Kommunikation-Compliance**: Wenn Sie sich bei der [https://compliance.microsoft.com](https://compliance.microsoft.com) Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 **Communication compliance**-Organisation anmelden, wählen Sie Übersicht über die Kommunikations Kompatibilität aus,  >  **Overview** um die Startseite für die Kommunikations Kompatibilität anzuzeigen. Hier sehen Sie Folgendes:
     - Warnungen, die eine Überprüfung benötigen, die von hoher bis niedriger Dringlichkeit aufgeführt ist. Wählen Sie eine Warnung aus, um die Seite mit den Warnungsdetails zu starten und Korrekturaktionen zu starten.
     - Aktuelle Richtlinien Übereinstimmungen werden nach Richtliniennamen aufgeführt.
     - Aufgelöste Elemente werden nach Richtliniennamen aufgelistet.
     - Eskalationen werden nach Richtlinienname aufgeführt.
     - Benutzer mit den meisten Richtlinien Übereinstimmungen werden von den meisten zur geringsten Anzahl von Übereinstimmungen aufgeführt.
-- **Registerkarte "Benachrichtigungen"**: Navigieren Sie zu**Benachrichtigungen** zur **Kommunikations Konformität** > , um Warnungen anzuzeigen, die nach übereinstimmender Kommunikationsrichtlinien Richtlinie gruppiert sind. In dieser Ansicht können Sie schnell erkennen, welche Kommunikationsrichtlinien Richtlinien die meisten nach Schweregrad bestellten Warnungen generieren.  Erweitern Sie zum Starten von Korrekturaktionen eine Richtlinie, um eine bestimmte Warnung auszuwählen und die Seite Warnungsdetails zu öffnen.
-- **Registerkarte Richtlinien**: Navigieren Sie zu **Kommunikations Konformitäts** > **Richtlinien** , um Richtlinien für die Kommunikations Konformität anzuzeigen, die für Ihre Microsoft 365-Organisation konfiguriert sind. Jede aufgeführte Richtlinie enthält die Anzahl der Warnungen, die überprüft werden müssen. Wenn Sie eine Richtlinie auswählen, werden alle ausstehenden Warnungen für Übereinstimmungen mit der Richtlinie angezeigt, und Sie können eine bestimmte Warnung auswählen, um die Richtlinien Detailseite zu starten und Korrekturaktionen zu starten.
+- **Registerkarte "Benachrichtigungen"**: Navigieren Sie zu Benachrichtigungen zur **Kommunikations Konformität**  >  **Alerts** , um die nach Richtlinien Übereinstimmungen gruppierten Warnungen der letzten 30 Tage anzuzeigen. In dieser Ansicht können Sie schnell erkennen, welche Kommunikationsrichtlinien Richtlinien die meisten nach Schweregrad bestellten Warnungen generieren.  Erweitern Sie zum Starten von Korrekturaktionen eine Richtlinie, um eine bestimmte Warnung auszuwählen und die Seite Warnungsdetails zu öffnen.
+- **Registerkarte Richtlinien**: Navigieren Sie zu **Kommunikations Konformitäts**  >  **Richtlinien** , um Richtlinien für die Kommunikations Konformität anzuzeigen, die für Ihre Microsoft 365-Organisation konfiguriert sind. Jede aufgeführte Richtlinie enthält die Anzahl der Warnungen, die überprüft werden müssen. Wenn Sie eine Richtlinie auswählen, werden alle ausstehenden Warnungen für Übereinstimmungen mit der Richtlinie angezeigt, und Sie können eine bestimmte Warnung auswählen, um die Richtlinien Detailseite zu starten und Korrekturaktionen zu starten.
 
 ### <a name="using-filters"></a>Verwenden von Filtern
 
@@ -50,7 +50,7 @@ Eine vollständige Liste der Filter und Feld Details finden Sie unter [Filter](c
 
 #### <a name="to-configure-a-filter"></a>So konfigurieren Sie einen Filter
 
-1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+1. Melden [https://compliance.microsoft.com](https://compliance.microsoft.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wechseln Sie im Microsoft 365 Compliance Center zu **Communication Compliance**.
 
@@ -74,7 +74,7 @@ Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren aut
 
 #### <a name="to-remediate-duplicates"></a>So beheben Sie Duplikate
 
-1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+1. Melden [https://compliance.microsoft.com](https://compliance.microsoft.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wechseln Sie im Microsoft 365 Compliance Center zu **Communication Compliance**.
 

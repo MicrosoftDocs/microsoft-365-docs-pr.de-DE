@@ -2,10 +2,10 @@
 title: Senden von e-Mails an Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie als externer Absender die Möglichkeit zur Zustellung von e-Mails an Benutzer in Microsoft 365 verbessern können. Erfahren Sie auch, wie Junk-e-Mails & Phishing-versuchen als externer Benutzer gemeldet werden.
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035384"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209823"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Senden von e-Mails an Microsoft 365
 
-Diese Artikel helfen externen Absendern beim Verbessern ihres Rufs und ihrer Fähigkeit zum Übermitteln von E-Mails an Benutzer in Office 365. Sie stellen außerdem einige Informationen dazu bereit, wie Sie Junk-e-Mails und Phishing-Versuche melden können, selbst wenn Sie kein Microsoft 365-Benutzer sind.
+Diese Artikel helfen externen Absendern, ihre Reputation zu verbessern und die Möglichkeit zu erhöhen, e-Mails an Benutzer in Microsoft 365 zu übermitteln. Sie stellen außerdem einige Informationen dazu bereit, wie Sie Junk-e-Mails und Phishing-Versuche melden können, selbst wenn Sie kein Microsoft 365-Benutzer sind.
 
 Wenn Sie kein Kunde sind, aber versuchen, e-Mails an eine Person in der Person zu senden, sind Sie an der richtigen Stelle. Wenn Sie Administrator sind und Hilfe bei der Bekämpfung von Spam benötigen, ist dies nicht der richtige Abschnitt für Sie. Wechseln Sie stattdessen zu [Anti-Spam and Anti-Malware Protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

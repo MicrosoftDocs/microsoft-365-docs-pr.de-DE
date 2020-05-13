@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159932"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210536"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -56,7 +56,7 @@ Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen S
 
 ## <a name="reviewers"></a>Prüfer
 
-Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren Benutzer e-Mail-Adressen einzelne Personen oder Gruppen von Personen, um die beaufsichtigte Kommunikation zu überprüfen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und der **Fall Verwaltungs** -und **Überprüfungs** Rolle zugewiesen werden müssen.
+Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren Benutzer e-Mail-Adressen einzelne Personen oder Gruppen von Personen, um die beaufsichtigte Kommunikation zu überprüfen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und der **Fall Verwaltungs** -und **Überprüfungs** Rolle zugewiesen werden müssen. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
@@ -71,7 +71,7 @@ Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob 
 - **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats und-Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
     - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
-    - **Für Teams-Kanal Kommunikation:** Weisen Sie alle Microsoft Team Channel-oder Microsoft 365-Gruppen zu, die Sie überprüfen möchten, die einen bestimmten Benutzer für die Kommunikations Konformitätsrichtlinie enthalten. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
+    - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Teams-Kanal oder einer Microsoft 365-Gruppe zu, die Sie überprüfen möchten, die einen bestimmten Benutzer für die Kommunikations Konformitätsrichtlinie enthält. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
 
 - **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -195,7 +195,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-
 
 Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
 
-|**Field**|**Erforderlich**| **Details** |
+|**Feld**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
@@ -264,7 +264,7 @@ Sie können die Standardeinstellungen für Auslöser für die Anzahl der Aktivit
 
 Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Konformitätsrichtlinie zugewiesenen Schweregrad ändern möchten, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+1. Melden [https://compliance.microsoft.com](https://compliance.microsoft.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wechseln Sie im Microsoft 365 Compliance Center zu **Richtlinien**.
 
@@ -287,7 +287,7 @@ In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Infor
 
 Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Field**|**Details**|
+|**Feld**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |

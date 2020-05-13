@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können sich über die Fehlercodes informieren, die der Nachrichtenzustellung mithilfe von Connectors (auch als Nachrichtenfluss-Intelligence bezeichnet) zugeordnet sind.
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635636"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206616"
 ---
-# <a name="mail-flow-intelligence"></a>Nachrichtenfluss-Intelligence
+# <a name="mail-flow-intelligence-in-eop"></a>Nachrichtenfluss-Intelligence in EoP
 
-Normalerweise verwenden Sie einen Connector, um e-Mail-Nachrichten von Ihrer Organisation an Ihre lokale e-Mail-Umgebung weiterzuleiten. Sie können auch einen Connector verwenden, um Nachrichten von Microsoft 365 an eine Partnerorganisation weiterzuleiten. Wenn Microsoft 365 diese Nachrichten nicht über den Connector übertragen kann, werden Sie in Microsoft 365 in die Warteschlange eingereiht. Microsoft 365 wird weiterhin die Zustellung für jede Nachricht für 24 Stunden wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwenden Sie in der Regel einen Connector zum Weiterleiten von e-Mail-Nachrichten von EoP an Ihre lokale e-Mail-Umgebung. Sie können auch einen Connector verwenden, um Nachrichten von Microsoft 365 an eine Partnerorganisation weiterzuleiten. Wenn Microsoft 365 diese Nachrichten nicht über den Connector übertragen kann, werden Sie in Microsoft 365 in die Warteschlange eingereiht. Microsoft 365 wird weiterhin die Zustellung für jede Nachricht für 24 Stunden wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) zurückgegeben.
 
 Microsoft 365 generiert einen Fehler, wenn eine Nachricht nicht über einen Connector zugestellt werden kann. In diesem Thema werden die am häufigsten auftretenden Fehler und die dazugehörigen Lösungen beschrieben. Gemeinsam werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als _Nachrichtenfluss-Intelligence_bezeichnet.
 
@@ -68,13 +68,13 @@ Normalerweise bedeutet dieser Fehler, dass Microsoft 365 einen Verbindungsfehler
 
   - Deaktivieren oder löschen Sie in der [Exchange-Verwaltungs](https://docs.microsoft.com/Exchange/exchange-admin-center)Konsole den Connector, der e-Mails von Microsoft 365 an Ihre lokale e-Mail-Umgebung sendet:
 
-    1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> - **Konnektoren**.
+    1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss-** \> **Konnektoren**.
 
     2. Wählen Sie den Connector mit dem **from** -Wert **Office 365** und den **, um** den **e-Mail-Server Ihrer Organisation** zu schätzen, und führen Sie einen der folgenden Schritte aus:
 
-       - Löschen Sie den Connector, indem Sie auf **Löschen** ![Symbol Entfernen klicken.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Löschen Sie den Connector, indem Sie auf **Löschen** ![ Symbol Entfernen klicken.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Deaktivieren Sie den Connector, indem Sie auf](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) bearbeiten-Symbol **Bearbeiten** ![klicken und deaktivieren **aktivieren**.
+       - Deaktivieren Sie den Connector, **Edit** indem Sie auf Bearbeiten ![ -Symbol bearbeiten klicken und deaktivieren ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **aktivieren**.
 
   - Ändern Sie die akzeptierte Domäne in Microsoft 365, die Ihrer lokalen e-Mail-Umgebung zugeordnet ist, vom **internen Relay** an **autorisierend**. Anweisungen finden Sie unter [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -86,7 +86,7 @@ Normalerweise bedeutet dieser Fehler, dass Microsoft 365 einen Verbindungsfehler
 
 Normalerweise bedeutet dieser Fehler, dass Microsoft 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
 
-- Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
+- Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, der angibt, dass der Server die Kommunikation mit Microsoft 365 nicht aufrecht erhalten kann.
 
 - Der Connector ist so konfiguriert, dass er TLS erfordert, aber der Ziel-e-Mail-Server unterstützt TLS nicht.
 
@@ -102,15 +102,15 @@ Normalerweise bedeutet dieser Fehler, dass Microsoft 365 Schwierigkeiten hat, mi
 
 - Ihre Firewall verwendet SMTP-Paketprüfungsregeln, und diese Regeln funktionieren nicht ordnungsgemäß.
 
-- Der lokale e-Mail-Server funktioniert nicht ordnungsgemäß (beispielsweise Dienst hängt, stürzt ab oder niedrige Systemressourcen), was dazu führt, dass der Server eine Zeitüberschreitung verursacht und die Verbindung mit Office 365 schließt.
+- Der lokale e-Mail-Server funktioniert nicht ordnungsgemäß (beispielsweise Dienst hängt, stürzt ab oder niedrige Systemressourcen), was dazu führt, dass der Server eine Zeitüberschreitung verursacht und die Verbindung mit Microsoft 365 schließt.
 
-- Es treten Netzwerkprobleme zwischen Ihrer lokalen Umgebung und Office 365 auf.
+- Es gibt Netzwerkprobleme zwischen Ihrer lokalen Umgebung und Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>Wie behebe ich den Fehlercode 450 4.4.318?
 
 - Erfahren Sie, welches Szenario für Sie gilt, und nehmen Sie die erforderlichen Korrekturen vor.
 
-- Wenn das Problem durch Netzwerkprobleme zwischen Ihrer lokalen Umgebung und Office 365 verursacht wird, wenden Sie sich an Ihr Netzwerkteam, um das Problem zu beheben.
+- Wenn das Problem durch Netzwerkprobleme zwischen Ihrer lokalen Umgebung und Microsoft 365 verursacht wird, wenden Sie sich an Ihr Netzwerkteam, um das Problem zu beheben.
 
 - Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie personenbezogene Daten suchen und finden, die den allgemeinen Datenschutzbestimmungen (DSGVO) in Office 365 unterliegen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036410"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208089"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -118,7 +118,7 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <td align="left"><p>Suchen Sie nach dieser Art von Problemen, um zu ermitteln, ob die Abfragegenauigkeit eingehalten wird:</p>
 <p><li>Viele falsch positive Ergebnisse</li></p>
 <p><li>Fehlende bekannte Instanzen von Daten</li></p>
-<p>Siehe <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportieren der Inhaltssuchergebnisse aus dem Security &amp; Compliance Center</a>.</p>
+<p>Siehe <a href="https://docs.microsoft.com/microsoft-365/compliance/export-search-results">Exportieren der Inhaltssuchergebnisse aus dem Security &amp; Compliance Center</a>.</p>
 <p>Hinweis: Wenn Sie Mozilla Firefox oder Chrome verwenden, müssen Sie möglicherweise zuerst Berichte mithilfe von Internet Explorer oder Edge herunterladen, um das erforderliche Add-In installieren zu können.</p></td>
 </tr>
 </tbody>

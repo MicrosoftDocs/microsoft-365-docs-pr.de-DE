@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails in Office 365
+title: Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,28 +14,32 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln in Exchange Online Protection (EoP) für die Massen-e-Mail-Filterung verwenden.
+description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln (Transportregeln) verwenden, um Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) zu identifizieren und zu filtern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43a10951a24ac76108fb0531f9e2c205c3fc9047
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bb305551db1e86d8d6eccf5e95cdaad29e6711ef
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034974"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208525"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails in Office 365
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails in EoP
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwendet EoP Antispam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien), um eingehende Nachrichten für Spam und Massen-e-Mails zu scannen (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwendet EoP Antispam-Richtlinien (auch als Spamfilter Richtlinien oder Inhaltsfilter Richtlinien bezeichnet), um eingehende Nachrichten für Spam und Massen-e-Mails zu scannen (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
 
-Wenn Sie weitere Optionen zum Filtern von Massen-e-Mails wünschen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden, und diese Nachrichten als Spam markieren. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail? und der](what-s-the-difference-between-junk-email-and-bulk-email.md) [Massen Reklamations Stufe (BCL) in Office 365](bulk-complaint-level-values.md).
+Wenn Sie weitere Optionen zum Filtern von Massen-e-Mails wünschen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden, und diese Nachrichten als Spam markieren. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail? und der](what-s-the-difference-between-junk-email-and-bulk-email.md) [Massen Reklamations Stufe (BCL) in EoP](bulk-complaint-level-values.md).
 
-In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole (EAC) und PowerShell (Exchange Online PowerShell für Microsoft 365-Kunden erstellt werden; Exchange Online Protection PowerShell für eigenständige EoP-Kunden).
+In diesem Thema wird erläutert, wie Sie diese Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole (EAC) und PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EoP PowerShell für Organisationen ohne Exchange Online Postfächer) erstellen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie müssen Berechtigungen in Exchange Online zugewiesen werden, bevor Sie diese Verfahren ausführen können. Insbesondere müssen Sie die Rolle " **Transport Rules** " erhalten, die standardmäßig der Rollen " **Organisationsverwaltung**", " **Richtlinientreue Verwaltung**" und " **Datensatzverwaltung** " zugewiesen ist. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können:
 
-- Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  - Lesen Sie in Exchange Online den Eintrag "Nachrichtenfluss" unter [Feature Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  
+  - In eigenständigen EoP benötigen Sie die Transport Regel Rolle, die standardmäßig den Rollenmitglied, ComplianceManagement und RecordsManagement zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+
+- Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Informationen zum Öffnen der Exchange-Verwaltungskonsole in eigenständigen EoP finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -57,7 +61,7 @@ In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchan
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-2. Klicken Sie auf Add](../../media/ITPro-EAC-AddIcon.png) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
+2. Klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) , und wählen Sie dann **neue Regel erstellen**aus.
 
 3. Konfigurieren Sie auf der daraufhin geöffneten Seite **Neue Regel** die folgenden Einstellungen:
 
@@ -67,65 +71,42 @@ In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchan
 
    - **Diese Regel anwenden, wenn**: eine der folgenden Einstellungen zum Suchen nach Inhalten in Nachrichten mithilfe regulärer Ausdrücke (Regex) oder Wörtern oder Ausdrücken konfigurieren:
 
-     - **Der Betreff oder** \> Textkörper des Unternehmens **entspricht diesen Textmustern**: Geben Sie im angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der folgenden Werte ein, klicken Sie](../../media/ITPro-EAC-AddIcon.png)auf Add-Symbol **Hinzufügen** ![, und wiederholen Sie diese Schritte, bis Sie alle Werte eingegeben haben.
+     - **Der Betreff oder Textkörper** \> **Betreff oder Text entspricht diesen Textmustern**: Geben Sie im angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der folgenden Werte ein, klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) , und wiederholen Sie diese Schritte, bis Sie alle Werte eingegeben haben.
 
        - `If you are unable to view the content of this email\, please`
-
        - `\>(safe )?unsubscribe( here)?\</a\>`
-
        - `If you do not wish to receive further communications like this\, please`
-
        - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
-
        - `To stop receiving these+emails\:http\://`
-
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
        - `If you are unable to view the content of this email\, please click here`
-
        - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
        - `If you no longer wish to receive these emails`
-
        - `to change your (subscription preferences|preferences or unsubscribe)`
-
        - `click (here to|the) unsubscribe`
 
-      Um einen Eintrag zu bearbeiten, wählen Sie ihn **Edit** ![aus, und](../../media/ITPro-EAC-EditIcon.png)klicken Sie auf Bearbeitungssymbol bearbeiten. Um einen Eintrag zu entfernen, wählen Sie ihn **Remove** ![aus, und](../../media/ITPro-EAC-DeleteIcon.png)klicken Sie auf entfernen-Symbol entfernen.
+      Um einen Eintrag zu bearbeiten, wählen Sie ihn aus, und klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/ITPro-EAC-EditIcon.png) . Um einen Eintrag zu entfernen, wählen Sie ihn aus, und klicken Sie auf entfernen-Symbol **Entfernen** ![ ](../../media/ITPro-EAC-DeleteIcon.png) .
 
        Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
-     - **Das Subjekt oder der Text** \> Körper des Betreffs oder Text **Körpers enthält eines dieser Wörter**: Geben Sie im angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der folgenden Werte ein, klicken](../../media/ITPro-EAC-AddIcon.png)Sie auf Add-Symbol **Hinzufügen** ![, und wiederholen Sie diese Schritte, bis Sie alle Werte eingegeben haben.
+     - **Der Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter**: Geben Sie im angezeigten Dialogfeld **Wörter oder Ausdrücke angeben** einen der folgenden Werte ein, klicken Sie auf Add-Symbol **Hinzufügen** ![ ](../../media/ITPro-EAC-AddIcon.png) , und wiederholen Sie diese Schritte, bis Sie alle Werte eingegeben haben.
 
        - `to change your preferences or unsubscribe`
-
        - `Modify email preferences or unsubscribe`
-
        - `This is a promotional email`
-
        - `You are receiving this email because you requested a subscription`
-
        - `click here to unsubscribe`
-
        - `You have received this email because you are subscribed`
-
        - `If you no longer wish to receive our email newsletter`
-
        - `to unsubscribe from this newsletter`
-
        - `If you have trouble viewing this email`
-
        - `This is an advertisement`
-
        - `you would like to unsubscribe or change your`
-
        - `view this email as a webpage`
-
        - `You are receiving this email because you are subscribed`
 
-      Um einen Eintrag zu bearbeiten, wählen Sie ihn **Edit** ![aus, und](../../media/ITPro-EAC-EditIcon.png)klicken Sie auf Bearbeitungssymbol bearbeiten. Um einen Eintrag zu entfernen, wählen Sie ihn **Remove** ![aus, und](../../media/ITPro-EAC-DeleteIcon.png)klicken Sie auf entfernen-Symbol entfernen.
+      Um einen Eintrag zu bearbeiten, wählen Sie ihn aus, und klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/ITPro-EAC-EditIcon.png) . Um einen Eintrag zu entfernen, wählen Sie ihn aus, und klicken Sie auf entfernen-Symbol **Entfernen** ![ ](../../media/ITPro-EAC-DeleteIcon.png) .
 
        Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
@@ -135,7 +116,7 @@ In diesem Thema wird erläutert, wie diese Nachrichtenfluss Regeln in der Exchan
 
      - So markieren Sie Nachrichten als **Spam mit hoher Zuverlässigkeit** wählen Sie **9**aus. Die Aktion, die Sie für Spam Filterungs Urteile mit **hoher Vertrauens** Würdigkeit in ihren Anti-Spam-Richtlinien konfiguriert haben, wird auf die Nachrichten angewendet (der Standardwert ist **"Nachricht in Junk-e-Mail-Ordner"**).
 
-    Weitere Informationen zu SCL-Werten finden Sie unter [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
+    Weitere Informationen zu SCL-Werten finden Sie unter [Spam Confidence Level (SCL) in EoP](spam-confidence-levels.md).
 
    Wenn Sie fertig sind, klicken Sie auf **Speichern**
 
@@ -165,9 +146,9 @@ Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-T
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob e-Mail-Flussregeln zum Filtern von Massen-e-Mails konfiguriert wurden:
 
-- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** \> \> wählen Sie die Regel](../../media/ITPro-EAC-EditIcon.png)klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und überprüfen Sie die Einstellungen.
+- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** \> Wählen Sie die Regel \> Klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/ITPro-EAC-EditIcon.png) , und überprüfen Sie die Einstellungen.
 
-- Ersetzen \<Sie in PowerShell den Regel\> Namen durch den Namen der Regel, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
+- Ersetzen Sie in PowerShell den \< Regelnamen \> durch den Namen der Regel, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

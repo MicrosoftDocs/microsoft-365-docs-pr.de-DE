@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie der Pool mit hoher Risikoverteilung verwendet wird, um die Reputation von e-Mail-Servern in den Microsoft 365-Rechenzentren zu schützen.
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638034"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209187"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool für besonders riskante Zustellungen für ausgehende Nachrichten
 
@@ -45,11 +45,8 @@ Der ausgehende Pool mit hoher Risikoverteilung verwaltet die Zustellung für all
 Zu den möglichen Ursachen für einen Anstieg bei Unzustellbarkeitsberichten gehören:
 
 - Eine Spoofing-Kampagne, die sich auf einen Kunden auswirkt, der den Dienst verwendet.
-
 - Ein Verzeichnis Lese Angriff.
-
 - Ein Spamangriff.
-
 - Ein Rogue-e-Mail-Server.
 
 Alle diese Probleme können zu einer plötzlichen Vergrößerung der Anzahl von Unzustellbarkeitsberichten führen, die vom Dienst verarbeitet werden. Viele Male scheinen diese Unzustellbarkeitsberichte Spam auf andere e-Mail-Server und-Dienste zu sein (auch bekannt als _[Backscatter](backscatter-messages-and-eop.md)_).

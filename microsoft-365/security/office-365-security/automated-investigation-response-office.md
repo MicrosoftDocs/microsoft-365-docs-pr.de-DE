@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035616"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208911"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Eine Übersicht über die automatische Untersuchung und Reaktion (Air) in Microsoft 365
 
@@ -50,7 +50,7 @@ Derzeit werden Warnungen, die aus den folgenden Arten von Warnungsrichtlinien ge
 > [!NOTE]
 > Die mit einem Sternchen (*) gekennzeichneten Warnungen werden in den jeweiligen Warnungsrichtlinien im Security & Compliance Center mit einem *Informations* Schweregrad versehen, wobei e-Mail-Benachrichtigungen deaktiviert sind. E-Mail-Benachrichtigungen können über die [Warnungsrichtlinien Konfiguration](../../compliance/alert-policies.md#alert-policy-settings)aktiviert werden. Mit einem Hash (#) gekennzeichnete Warnungen sind allgemein verfügbare Warnungen für öffentliche Vorschau-Textbuch.
 
-Um Warnungen anzuzeigen **, wählen Sie** > im Security & Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](air-view-investigation-results.md#investigation-graph)zu gelangen.  
+Um Warnungen anzuzeigen, wählen Sie im Security & Compliance **Center Benachrichtigungen**  >  **anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](air-view-investigation-results.md#investigation-graph)zu gelangen.  
 
 > [!NOTE]
 > Informationswarnungen werden standardmäßig in der Warnungsansicht ausgeblendet. Um diese anzuzeigen, ändern Sie die Warnungsfilterung so, dass Sie Informationswarnungen einschließt.
@@ -68,6 +68,7 @@ Die Sicherheits-Textbuch-Dokumente, die Sie mit Air erhalten, wurden entwickelt,
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Sicherheits-Textbuch-Rollen in Phasen
 
 Im Rahmen von Air werden Sicherheits-Textbuch in Phasen ausgerollt. Phase 1 ist jetzt allgemein verfügbar und enthält mehrere Textbuch, die Empfehlungen für Aktionen enthalten, die Sicherheitsadministratoren überprüfen und genehmigen können:
+
 - Vom Benutzer gemeldete Phishing-Nachricht
 - Änderung des URL-Klick Urteils
 - Erkannte Schadsoftware nach der Zustellung (Malware zap)
@@ -76,6 +77,7 @@ Im Rahmen von Air werden Sicherheits-Textbuch in Phasen ausgerollt. Phase 1 ist 
 Phase 1 enthält auch Unterstützung für von Administratoren ausgelöste e-Mail-Untersuchungen (mithilfe von [Threat Explorer](threat-explorer.md)).
 
 Phase 2 wird nun mit den folgenden Textbuch in der **öffentlichen Vorschau**fortgesetzt, wobei Empfehlungen für Aktionen und Sicherheitsadministratoren bei der Untersuchung von Problemen gegeben werden:
+
 - Als kompromittiert gemeldeter Benutzer (öffentliche Vorschau)
 
 Weitere Textbuch werden als abgeschlossen veröffentlicht. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was noch geplant ist und demnächst verfügbar ist.
@@ -83,6 +85,7 @@ Weitere Textbuch werden als abgeschlossen veröffentlicht. Besuchen Sie die [Mic
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Manuskripte umfassen Untersuchungen und Empfehlungen
 
 In der Luft umfasst jedes Sicherheits-Textbuch Folgendes: 
+
 - eine Stamm Untersuchung der Entitäten einer e-Mail (Dateien, URLs, Empfänger, IP-Adressen usw.),
 - Weitere Jagd auf ähnliche e-Mails, die von der Organisation empfangen werden 
 - Schritte zum Identifizieren und korrelieren anderer potenzieller Bedrohungen und 
@@ -95,6 +98,7 @@ Jeder allgemeine Schritt enthält eine Reihe von unterschritten, die ausgeführt
 Angenommen, ein Benutzer in Ihrer Organisation erhält eine e-Mail, die er für einen Phishing-Versuch halte. Der Benutzer, der zum Melden solcher Nachrichten ausgebildet wurde, verwendet das [Add-in "Berichtsnachricht](enable-the-report-message-add-in.md) ", um ihn zur Analyse an Microsoft zu senden. Die Übermittlung wird auch an Ihr System gesendet und im Explorer in der Ansicht " **Einsendungen** " (zuvor als vom **Benutzer gemeldete** Ansicht bezeichnet) angezeigt. Darüber hinaus wird von der vom Benutzer gemeldeten Nachricht nun eine System basierte Informationswarnung ausgelöst, die das unter suchbuch automatisch startet.
 
 Während der Stamm Untersuchungsphase werden verschiedene Aspekte der e-Mail bewertet. Zu diesen zählen:
+
 - Eine Bestimmung darüber, welche Art von Bedrohung es sein könnte;
 - Absender
 - Woher die e-Mail gesendet wurde (sendende Infrastruktur);
@@ -110,8 +114,8 @@ Im nächsten Schritt werden mehrere Schritte zur Ermittlung und Jagd von Bedrohu
 - Ähnliche e-Mail-Nachrichten werden über e-Mail-Cluster Suchvorgänge identifiziert.
 - Das Signal wird für andere Plattformen wie [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)freigegeben.
 - Es wird festgestellt, ob Benutzer in verdächtigen e-Mail-Nachrichten auf böswillige Links geklickt haben.
-- Eine Überprüfung erfolgt über Exchange Online Protection ([EoP](exchange-online-protection-eop.md)) und Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)), um zu sehen, ob andere ähnliche Nachrichten von Benutzern gemeldet werden.
-- Eine Überprüfung wird durchgeführt, um festzustellen, ob ein Benutzer kompromittiert wurde. Bei dieser Überprüfung werden Signale in Bezug auf Office 365, [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security)und [Azure-Active Directory](https://docs.microsoft.com/azure/active-directory)verwendet, sodass alle zugehörigen Anomalien bei Benutzeraktivitäten korreliert werden. 
+- Eine Überprüfung erfolgt über Exchange Online Protection ([EoP](exchange-online-protection-overview.md)) und Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)), um zu sehen, ob andere ähnliche Nachrichten von Benutzern gemeldet werden.
+- Eine Überprüfung wird durchgeführt, um festzustellen, ob ein Benutzer kompromittiert wurde. Bei dieser Überprüfung werden Signale in Bezug auf Office 365, [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security)und [Azure-Active Directory](https://docs.microsoft.com/azure/active-directory)verwendet, sodass alle zugehörigen Anomalien bei Benutzeraktivitäten korreliert werden.
 
 Während der Jagd Phase werden Risiken und Bedrohungen verschiedenen Jagd Schritten zugeordnet. 
 
@@ -136,4 +140,3 @@ Nehmen wir beispielsweise an, dass Sie die **Malware** Ansicht im Threat Explore
 - [Erste Schritte mit Air](office-365-air.md)
 
 - [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was bald kommt und wie Sie Rollen](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

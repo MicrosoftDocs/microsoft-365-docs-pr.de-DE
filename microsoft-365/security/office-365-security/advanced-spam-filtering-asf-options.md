@@ -1,5 +1,5 @@
 ---
-title: ASF-Einstellungen in Office 365
+title: ASF-Einstellungen in EoP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie mehr über die ASF-Einstellungen (Advanced Spam Filter) in Anti-Spam-Richtlinien, mit denen Administratoren Nachrichten mit bestimmten Nachrichteneigenschaften identifizieren können, die häufig in Spam verwendet werden.
-ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
+ms.openlocfilehash: 3193c1ea11d9a470a6b0df72f052bab20dec29f8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034134"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208048"
 ---
-# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Einstellungen für erweiterte Spam Filter (ASF) in Office 365
+# <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
 
 > [!NOTE]
 > ASF-Einstellungen, die derzeit in Anti-Spam-Richtlinien verfügbar sind, werden gerade veraltet. Es wird empfohlen, diese Einstellungen nicht in Anti-Spam-Richtlinien zu verwenden. Die Funktionalität dieser ASF-Einstellungen wird in andere Teile des Filter Stapels integriert. Weitere Informationen finden Sie unter [EoP Anti-Spam Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Die ASF-Einstellungen (Advanced Spam Filter) in Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter-Richtlinien) erlauben Administratoren, Nachrichten auf der Grundlage bestimmter Nachrichteneigenschaften als Spam zu kennzeichnen. ASF zielt speziell auf diese Eigenschaften ab, da Sie häufig in Spam enthalten sind. Je nach Eigenschaft Kennzeichnen ASF-Erkennungen die Nachricht entweder als **Spam** oder als Spam mit **hoher Vertrauens**Würdigkeit.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer ermöglichen die Einstellungen für den erweiterten Spamfilter (ASF) in Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) Administratoren das Markieren von Nachrichten als Spam basierend auf bestimmten Nachrichteneigenschaften. ASF zielt speziell auf diese Eigenschaften ab, da Sie häufig in Spam enthalten sind. Je nach Eigenschaft Kennzeichnen ASF-Erkennungen die Nachricht entweder als **Spam** oder als Spam mit **hoher Vertrauens**Würdigkeit.
 
 > [!NOTE]
 > Das Aktivieren einer oder mehrerer der ASF-Einstellungen ist ein aggressiver Ansatz für die Spamfilterung. Sie können Nachrichten, die von ASF gefiltert werden, nicht als falsch positive Ergebnisse melden. Nachrichten, die von ASF gefiltert wurden, können Sie nach folgenden Kriterien identifizieren: <ul><li>Regelmäßige Spamquarantäne Benachrichtigungen für Endbenutzer.</li><li>Das vorhanden sein gefilterter Nachrichten in Quarantäne.</li><li>Die spezifischen `X-CustomSpam:` X-Headerfelder, die Nachrichten hinzugefügt werden, wie in diesem Thema beschrieben.</li></ul>
 
-In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieben, die in den Anti-Spam-Richtlinien im Security & Compliance Center und in Exchange Online PowerShell oder eigenständigen Exchange Online Protection PowerShell ([New-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) und [hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)) zur Verfügung stehen. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieben, die in den Anti-Spam-Richtlinien im Security & Compliance Center und in Exchange Online PowerShell oder eigenständigen Exchange Online Protection PowerShell ([New-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) und [hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)) zur Verfügung stehen. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivieren, deaktivieren oder Testen von ASF-Einstellungen
 
@@ -49,7 +49,7 @@ Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlin
 
   - **None**: das Nachrichtenrouting und die Zustellung sind von der ASF-Erkennung nicht betroffen. Die Nachricht unterliegt weiterhin anderen Arten von Filtern und Regeln in EoP.
 
-  - **Standard-x-Header-Text hinzufügen (*AddXHeader*)**: der Wert `X-CustomSpam: This message was filtered by the custom spam filter option` der x-Kopfzeile wird der Nachricht hinzugefügt. Sie können diesen Wert in Posteingangsregeln oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, um das Routing und die Zustellung der Nachricht zu beeinflussen.
+  - **Standard-x-Header-Text hinzufügen (*AddXHeader*)**: der Wert der x-Kopfzeile `X-CustomSpam: This message was filtered by the custom spam filter option` wird der Nachricht hinzugefügt. Sie können diesen Wert in Posteingangsregeln oder Nachrichtenfluss Regeln (auch bekannt als Transportregeln) verwenden, um das Routing und die Zustellung der Nachricht zu beeinflussen.
 
   - **BCC-Nachricht senden (*BccMessage*)**: die angegebenen e-Mail-Adressen (der Wert des *den testmodebcctorecipients* -Parameters in PowerShell) werden dem Feld Bcc der Nachricht hinzugefügt, und die Nachricht wird an die Bcc-Empfänger übermittelt. Im Security & Compliance Center trennen Sie mehrere e-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere e-Mail-Adressen durch Kommas.
 
@@ -70,9 +70,9 @@ Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlin
 Die folgenden ASF-Einstellungen legen die SCL-Bewertung (Spam Confidence Level) der erkannten Nachrichten auf 5 oder 6 fest, was dem **Spam** Filter Urteil und der entsprechenden Aktion in den Antispam-Richtlinien entspricht.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Anti-Spam-Richtlinieneinstellung**|**Beschreibung**|**X-Header hinzugefügt**|
-|**Bildlinks zu Remotestandorten** <br/><br/> *IncreaseScoreWithImageLinks*|Nachrichten, `<Img>` die HTML-Tag-Links zu Remotestandorten enthalten (beispielsweise mit http), werden als Spam gekennzeichnet.|`X-CustomSpam: Image links to remote sites`|
+|**Bildlinks zu Remotestandorten** <br/><br/> *IncreaseScoreWithImageLinks*|Nachrichten, die `<Img>` HTML-Tag-Links zu Remotestandorten enthalten (beispielsweise mit http), werden als Spam gekennzeichnet.|`X-CustomSpam: Image links to remote sites`|
 |**URL-Umleitung zu anderem Port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Nachricht mit Hyperlinks, die andere TCP-Ports als 80 (http), 8080 (alternatives http) oder 443 (HTTPS) umleiten, werden als Spam gekennzeichnet.|`X-CustomSpam: URL redirect to other port`|
 |**Numerische IP-Adresse in URL** <br/><br/> *IncreaseScoreWithNumericIps*|Nachrichten mit numerischen URLs (in der Regel IP-Adressen) werden als Spam gekennzeichnet.|`X-CustomSpam: Numeric IP in URL`|
 |**URL zu BIZ- oder INFO-Websites:** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Nachrichten, die die Links. biz oder. info im Nachrichtentext enthalten, werden als Spam gekennzeichnet.|`X-CustomSpam: URL to .biz or .info websites`|
@@ -83,14 +83,14 @@ Die folgenden ASF-Einstellungen legen die SCL-Bewertung (Spam Confidence Level) 
 Mit den folgenden ASF-Einstellungen wird die SCL-Bewertung der erkannten Nachrichten auf 9 festgelegt, was dem Spamfilter-Urteil für **hohe Zuverlässigkeit** und der entsprechenden Aktion in den Antispam-Richtlinien entspricht.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Anti-Spam-Richtlinieneinstellung**|**Beschreibung**|**X-Header hinzugefügt**|
 |**Leere Nachrichten** <br/><br/> *MarkAsSpamEmptyMessages*|Nachrichten ohne Betreff, ohne Inhalt im Nachrichtentext und ohne Anlagen werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet.|`X-CustomSpam: Empty Message`|
 |**JavaScript oder VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Nachrichten, die JavaScript oder Visual Basic Script Edition in HTML verwenden, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Diese Skriptsprachen werden in e-Mail-Nachrichten verwendet, um zu verursachen, dass bestimmte Aktionen automatisch ausgeführt werden.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
-|**Frame- oder IFrame-Tags in HTML** <br><br/> *MarkAsSpamFramesInHtml*|Nachrichten, `<frame>` die `<iframe>` oder HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Diese Tags werden in e-Mail-Nachrichten verwendet, um die Seite zum Anzeigen von Text oder Grafiken zu formatieren.|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**Object-Tags in HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Nachrichten, `<object>` die HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Mit diesem Tag können Plug-ins oder Anwendungen in einem HTML-Fenster ausgeführt werden.|`X-CustomSpam: Object tag in html`|
-|**Embed-Tags in HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Nachrichten, `<embed>` die HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Dieses Tag ermöglicht das Einbetten verschiedener Arten von Dokumenten unterschiedlicher Datentypen in einem HTML-Dokument (beispielsweise Sounds, Filme oder Bilder).|`X-CustomSpam: Embed tag in html`|
-|**Form-Tags in HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Nachrichten, `<form>` die HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Dieses Tag wird zum Erstellen von Websiteformularen verwendet. Werbe-E-Mails enthalten häufig dieses Tag, um Informationen vom Empfänger zu erbitten.|`X-CustomSpam: Form tag in html`|
+|**Frame- oder IFrame-Tags in HTML** <br><br/> *MarkAsSpamFramesInHtml*|Nachrichten, die `<frame>` oder `<iframe>` HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Diese Tags werden in e-Mail-Nachrichten verwendet, um die Seite zum Anzeigen von Text oder Grafiken zu formatieren.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Object-Tags in HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Nachrichten, die `<object>` HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Mit diesem Tag können Plug-ins oder Anwendungen in einem HTML-Fenster ausgeführt werden.|`X-CustomSpam: Object tag in html`|
+|**Embed-Tags in HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Nachrichten, die `<embed>` HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Dieses Tag ermöglicht das Einbetten verschiedener Arten von Dokumenten unterschiedlicher Datentypen in einem HTML-Dokument (beispielsweise Sounds, Filme oder Bilder).|`X-CustomSpam: Embed tag in html`|
+|**Form-Tags in HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Nachrichten, die `<form>` HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Dieses Tag wird zum Erstellen von Websiteformularen verwendet. Werbe-E-Mails enthalten häufig dieses Tag, um Informationen vom Empfänger zu erbitten.|`X-CustomSpam: Form tag in html`|
 |**Web-Bugs in HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Ein *Web-Bug* (auch als *Web-Beacon*bezeichnet) ist ein Grafikelement (oft nur ein Pixel um ein Pixel), das in e-Mail-Nachrichten verwendet wird, um zu bestimmen, ob die Nachricht gelesen wurde. <br/><br/> Nachrichten, die Webfehler enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Legitime Newsletter verwenden möglicherweise Webfehler, obwohl viele dies als eine Invasion der Privatsphäre ansehen. |`X-CustomSpam: Web bug`|
 |**Liste mit sensiblen Begriffen anwenden** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft verwaltet eine dynamische, aber nicht bearbeitbare Liste von Wörtern, die potenziell anstößigen Nachrichten zugeordnet sind. <br/><br/> Nachrichten, die Wörter aus der Liste der vertraulichen Wörter im Betreff oder Nachrichtentext enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-Eintrag: Schwerer Fehler** <br><br/> *MarkAsSpamSpfRecordHardFail*|Nachrichten, die von einer IP-Adresse gesendet werden, die im SPF-Eintrag (SPF) in DNS für die Quell-e-Mail-Domäne nicht angegeben ist, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: SPF Record Fail`|

@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie zu Exchange Online Protection (EoP) von einer lokalen e-Mail-Hygiene-Appliance oder einem Cloud-basierten Schutzdienst umschalten.
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035224"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209271"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort
 
@@ -57,7 +57,7 @@ Wenn Sie sich für einen Wechsel zu EOP entscheiden, sollten Sie unbedingt folge
 
 - **Benutzerdefinierte Filterregeln**: Wenn Sie benutzerdefinierte Filter-oder Geschäftsrichtlinien Regeln zum Abfangen bestimmter Spam-Nachrichten verwenden, sollten Sie EoP mit den Standardeinstellungen für einen bestimmten Zeitraum testen, bevor Sie die Regeln migrieren. Die Standardeinstellungen von EOP bieten unternehmensgerechten Spamschutz, sodass einige Ihrer eigenen Regeln möglicherweise nicht zu EOP migriert werden müssen. Sollten bei Ihnen Regeln zur Umsetzung bestimmter benutzerdefinierter Unternehmensrichtlinien gelten, können Sie diese natürlich erstellen. [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) enthält detaillierte Anweisungen zum Erstellen von Nachrichtenfluss Regeln in EoP.
 
-- **IP-Zulassungslisten und IP-Sperrlisten**: Wenn Sie Listen mit zugelassenen Benutzern und blockierten Listen verwenden, lassen Sie die Listen in EoP im Rahmen des Setupprozesses auf einige Zeit kopieren. Weitere Informationen zu IP-Zulassungslisten und IP-Sperrlisten finden Sie unter [Konfigurieren der Verbindungsfilter Richtlinie](configure-the-connection-filter-policy.md).
+- **IP-Zulassungslisten und IP-Sperrlisten**: Wenn Sie Listen mit zugelassenen Benutzern und blockierten Listen verwenden, lassen Sie die Listen in EoP im Rahmen des Setupprozesses auf einige Zeit kopieren. Weitere Informationen zur IP-Zulassungsliste und zur IP-Sperrliste finden Sie unter [Konfigurieren der Verbindungsfilter Richtlinie](configure-the-connection-filter-policy.md).
 
 - **Sichere Kommunikation**: Wenn Sie über einen Partner verfügen, der verschlüsselte Nachrichten benötigt, wird empfohlen, diese im Exchange Admin Center einzurichten. Informationen zum Konfigurieren dieses Szenarios finden Sie unter [Einrichten von Connectors für den sicheren e-Mail-Fluss mit einer Partnerorganisation](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

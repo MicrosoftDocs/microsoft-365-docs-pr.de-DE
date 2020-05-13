@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie das Add-in "Berichtsnachricht" für Outlook und Outlook im Internet für einzelne Benutzer oder die gesamte Organisation aktivieren.
-ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939475"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209487"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
+> Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungen-Portal im Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Verwenden der Administrator Übermittlung zum Übermitteln von verdächtigen Spam, Phishing, URLs und Dateien an Microsoft](admin-submission.md).
 
 Das Berichtsnachrichten-Add-in für Outlook und Outlook im Internet (früher bekannt als Outlook Web App) ermöglicht Benutzern das einfache Melden von falsch positiven Ergebnissen (gute e-Mail-Nachrichten als "schlecht" gekennzeichnet) oder von falschen negativen (ungültige e-Mail-Nachrichten) an Microsoft und seine Partner zur Analyse. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern.
 
@@ -54,7 +54,7 @@ Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exch
   - Postfächer in lokalen Exchange-Organisationen
   - Gcc-, gcc-High-oder DoD-Abonnements
 
-- Sie können gemeldete Nachrichten so konfigurieren, dass Sie kopiert oder an ein von Ihnen angegebenes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Office 365](user-submission.md).
+- Sie können gemeldete Nachrichten so konfigurieren, dass Sie kopiert oder an ein von Ihnen angegebenes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Angeben eines Postfachs für Benutzer Übermittlungen von Spam-und Phishing-Nachrichten in Exchange Online](user-submission.md).
 
 - Ihr vorhandener Webbrowser sollte mit dem Add-in "Berichtsnachricht" funktionieren. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es mit einem anderen Browser.
 
@@ -64,7 +64,7 @@ Wenn Sie globaler Administrator oder Exchange Online Administrator sind und Exch
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Abrufen des Berichtsnachrichten-Add-Ins für sich selbst
 
-1. Wechseln Sie zum Microsoft-AppSource <https://appsource.microsoft.com/marketplace/apps> , und suchen Sie nach dem Add-in "Berichtsnachricht". Wechseln Sie zu, um direkt zum Add-in "Berichtsnachricht <https://appsource.microsoft.com/product/office/wa104381180>" zu wechseln.
+1. Wechseln Sie zum Microsoft-AppSource, <https://appsource.microsoft.com/marketplace/apps> und suchen Sie nach dem Add-in "Berichtsnachricht". Wechseln Sie zu, um direkt zum Add-in "Berichtsnachricht" zu wechseln <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. Klicken Sie auf **Jetzt abrufen**.
 
@@ -91,7 +91,7 @@ Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Bericht
 > [!NOTE]
 > Es kann bis zu 12 Stunden dauern, bis das Add-in in Ihrer Organisation angezeigt wird.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, und klicken Sie dann auf **Add-in bereitstellen**.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> , und klicken Sie dann auf **Add-in bereitstellen**.
 
    ![Seite "Dienste und Add-Ins" im Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -101,7 +101,7 @@ Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Bericht
 
    ![Bereitstelleneiner neuen Add-in-Seite](../../media/NewAddInScreen2.png)
 
-4. Klicken Sie auf der Seite **Add-in auswählen** , die angezeigt wird, auf das **Suchfeld** , geben Sie **Berichtsnachricht**ein, und klicken](../../media/search-icon.png)Sie dann auf Suchsymbol **Suchen** ![. Suchen Sie in der Ergebnisliste nach **Berichtnachricht** , und klicken Sie dann auf **Hinzufügen**.
+4. Klicken Sie auf der Seite **Add-in auswählen** , die angezeigt wird, auf das **Suchfeld** , geben Sie **Berichtsnachricht**ein, und klicken Sie dann auf Suchsymbol **Suchen** ![ ](../../media/search-icon.png) . Suchen Sie in der Ergebnisliste nach **Berichtnachricht** , und klicken Sie dann auf **Hinzufügen**.
 
    ![Auswählen von Add-in-Suchergebnissen](../../media/NewAddInScreen3.png)
 
@@ -118,7 +118,7 @@ Informationen zur Verwendung des Add-Ins finden Sie unter [Verwenden des Bericht
    - **Bereitstellungsmethode**: Wählen Sie einen der folgenden Werte aus:
 
      - **Fixed (Standard)**: das Add-in wird automatisch für die angegebenen Benutzer bereitgestellt und kann nicht entfernt werden.
-     - **Verfügbar**: Benutzer können das Add-in zu **Hause** \> installieren **Get Add-ins** \> **Administrator verwaltet**.
+     - **Verfügbar**: Benutzer können das Add-in zu **Hause** installieren \> **Get Add-ins** \> **Administrator verwaltet**.
      - **Optional**: das Add-in wird automatisch für die angegebenen Benutzer bereitgestellt, aber es kann ausgewählt werden, es zu entfernen.
 
    ![Konfigurieren der Add-in-Seite](../../media/configure-add-in.png)
@@ -149,7 +149,7 @@ Wenn Sie Benutzer über das Add-in "Berichtsnachricht" informieren, fügen Sie e
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Überprüfen oder Bearbeiten der Einstellungen für das Add-in "Berichtsnachricht"
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Dienste &-Add-ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
    ![Seite "Dienste und Add-Ins" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

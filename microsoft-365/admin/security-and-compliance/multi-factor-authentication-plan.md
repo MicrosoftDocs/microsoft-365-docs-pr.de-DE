@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365 und die Schritte, die Sie für die Einrichtung durchführen müssen.
-ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 6d28e9e7db825aa9030196396ad420028dc1c881
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665668"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213128"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Planen der mehrstufigen Authentifizierung für Microsoft 365-Bereitstellungen
 
@@ -131,10 +131,10 @@ Führen Sie die folgenden Schritte aus, um MFA für Ihr Abonnement zu aktivieren
     
 2. [Einrichten von MFA für Microsoft 365](set-up-multi-factor-authentication.md).
     
-3. Einzelnen Benutzern mitteilen, wie Sie sich über MFA anmelden. Weitere Informationen finden Sie unter [Anmelden bei Microsoft 365 mit MFA](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb).
+3. Einzelnen Benutzern mitteilen, wie Sie sich über MFA anmelden. Weitere Informationen finden Sie unter [Anmelden bei Microsoft 365 mit MFA](https://support.office.com/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb).
 
 > [!IMPORTANT]
-> Wenn Sie Ihre Benutzer für die Azure-mehrstufige Authentifizierung aktiviert haben und auf Geräten Office 2013, die nicht für die moderne Authentifizierung aktiviert sind, muss Wörtern auf diesen Geräten verwendet werden. Weitere Informationen zu Wörtern und wann/wo/wie Sie verwendet werden sollten, finden Sie hier: [App-Kennwörter mit mehrstufiger Azure-Authentifizierung](https://go.microsoft.com/fwlink/p/?LinkId=528178).
+> Wenn Sie Ihre Benutzer für die Azure-mehrstufige Authentifizierung aktiviert haben und auf diesen Geräten Office 2013 verwendet werden, die nicht für die moderne Authentifizierung aktiviert sind, müssen Sie die APP-Kennwörter für diese Geräte verwenden. Weitere Informationen finden Sie in [diesem Artikel](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) .
   
 ## <a name="faq"></a>Häufig gestellte Fragen
 

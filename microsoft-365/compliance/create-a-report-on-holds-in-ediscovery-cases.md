@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942898"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208377"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
   
@@ -41,27 +41,9 @@ Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden 
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit der Security & Compliance Center PowerShell
 
-Der erste Schritt besteht darin, eine Verbindung mit dem Security & Compliance Center für Ihre Organisation herzustellen.
+Der erste Schritt besteht darin, eine Verbindung mit Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `ConnectSCC.ps1`. 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, und wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. 
-    
-3. Ausführen des Skripts; Zum Beispiel:
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. Wenn Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihre e-Mail-Adresse und Ihr Kennwort ein, und klicken Sie auf **OK**. 
+Wenn Ihr Microsoft 365-Konto die mehrstufige Authentifizierung (MFA) oder Verbundauthentifizierung verwendet, können Sie die Anweisungen im vorherigen Thema zum Herstellen einer Verbindung mit Security & Compliance Center PowerShell nicht anwenden. Lesen Sie stattdessen die Anweisungen im Thema [Herstellen einer Verbindung mit Security & Compliance Center PowerShell bei mehrstufiger Authentifizierung](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen des Skripts zum Melden von Haltestatus für eDiscovery-Fälle
 
@@ -172,9 +154,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > Wenn Sie den Bericht in demselben Ordner speichern möchten, in dem sich das Skript befindet, geben Sie einen Punkt (".") ein, wenn Sie zur Eingabe eines Zielordners aufgefordert werden. Wenn Sie den Bericht in einem Unterordner im Ordner speichern möchten, in dem sich das Skript befindet, geben Sie einfach den Namen des Unterordners ein. 
   
-    Das Skript beginnt mit der Erfassung von Informationen über alle eDiscovery-Fälle in Ihrer Organisation. Greifen Sie während der Ausführung des Skripts nicht auf die Berichtsdatei zu. Nachdem das Skript abgeschlossen ist, wird eine Bestätigungsmeldung in der Windows PowerShell-Sitzung angezeigt. Nachdem diese Meldung angezeigt wurde, können Sie auf den Bericht in dem Ordner zugreifen, den Sie in Schritt 4 angegeben haben. Der Datei Name für den Bericht lautet `CaseHoldsReport<DateTimeStamp>.csv`.
+    Das Skript beginnt mit der Erfassung von Informationen über alle eDiscovery-Fälle in Ihrer Organisation. Greifen Sie während der Ausführung des Skripts nicht auf die Berichtsdatei zu. Nachdem das Skript abgeschlossen ist, wird eine Bestätigungsmeldung in der Windows PowerShell-Sitzung angezeigt. Nachdem diese Meldung angezeigt wurde, können Sie auf den Bericht in dem Ordner zugreifen, den Sie in Schritt 4 angegeben haben. Der Datei Name für den Bericht lautet `CaseHoldsReport<DateTimeStamp>.csv` .
 
-    Addtionly, erstellt das Skript auch einen Bericht mit einer Liste von Fällen, die keine Haltestatus haben. Der Datei Name für diesen Bericht lautet `CaseswithNoHolds<DateTimeStamp>.csv`.
+    Addtionly, erstellt das Skript auch einen Bericht mit einer Liste von Fällen, die keine Haltestatus haben. Der Datei Name für diesen Bericht lautet `CaseswithNoHolds<DateTimeStamp>.csv` .
     
     Hier sehen Sie ein Beispiel für das Ausführen des CaseHoldsReport. ps1-Skripts. 
     

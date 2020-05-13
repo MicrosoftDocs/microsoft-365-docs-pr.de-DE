@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Häufig gestellte Fragen und Antworten für Administratoren zum Schutz vor Spoofing in Exchange Online und eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: b39e48fd57b899e6296d40ab10aac265cb4165a3
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spoofing in Exchange Online Protection (EoP) anzeigen.
+ms.openlocfilehash: 603293dd00100e3b93a225d94f2ed8fd9baae6a5
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529859"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209095"
 ---
-# <a name="anti-spoofing-protection-faq-in-office-365"></a>Häufig gestellte Fragen zum Anti-Spoofing-Schutz in Office 365
+# <a name="anti-spoofing-protection-faq"></a>Antispoofingschutz Häufig gestellte Fragen
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Spoofing für Office 365 Kunden mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutz Kunden (EoP) ohne Exchange Online Postfächer.
+Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Spoofing für Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern.
 
 Fragen und Antworten zum Antispamschutz finden Sie unter [Anti-Spam Protection FAQ](anti-spam-protection-faq.md).
 
-Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter [Anti-Malware Protection FAQ in Office 365](anti-malware-protection-faq-eop.md)
+Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter [Anti-Malware Protection FAQ](anti-malware-protection-faq-eop.md)
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Warum hat Microsoft sich für Junk-nicht authentifizierte eingehende e-Mails entschieden?
 
@@ -41,11 +41,11 @@ Wenn Microsoft dieses Feature in 2018 aktiviert hat, sind einige falsch positive
 
 Microsoft selbst hat die neuen e-Mail-Authentifizierungsanforderungen mehrere Wochen vor der Bereitstellung an Kunden übernommen. Zunächst gab es zwar Störungen, diese gingen jedoch allmählich zurück.
 
-## <a name="is-spoof-intelligence-available-to-office-365-customers-without-atp"></a>Ist Spoof Intelligence für Office 365 Kunden ohne ATP verfügbar?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>Sind Spoof Intelligence für Microsoft 365-Kunden ohne ATP verfügbar?
 
-Ja. Ab Oktober 2018 ist Spoof Intelligence für alle Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächer verfügbar.
+Ja. Ab Oktober 2018 steht Spoof Intelligence für alle Organisationen mit Postfächern in Exchange Online und eigenständigen EoP-Organisationen ohne Exchange Online Postfächer zur Verfügung.
 
-Die Antispoofing-Technologie wurde anfänglich für Organisationen bereitgestellt, die Office 365 Enterprise E5-Abonnements oder das Office 365 Advanced Threat Protection (ATP)-Add-on für Ihr Abonnement hatten.
+Die Anti-Spoofing-Technologie wurde anfänglich nur für Organisationen bereitgestellt, die Office 365 Enterprise E5-Abonnements oder das Office 365 Advanced Threat Protection (Office 365 ATP)-Add-on für Ihr Abonnement hatten.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
 
@@ -63,17 +63,17 @@ Da nun die [Erweiterte Filterung für Connectors](https://docs.microsoft.com/exc
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Bedeutet der Schutz vor Spoofing, dass ich vor allen Phishing-Daten geschützt werde?
 
-Leider Nein. Angreifer passen sich an die Verwendung anderer Techniken an (beispielsweise kompromittierte Konten oder Konten in kostenlosen e-Mail-Diensten). Der Schutz vor Phishing funktioniert jedoch wesentlich besser, um diese anderen Arten von Phishing-Methoden zu erkennen. Die Schutzebenen in Office 365 sind zusammenarbeiten und übereinander aufgebaut.
+Leider Nein. Angreifer passen sich an die Verwendung anderer Techniken an (beispielsweise kompromittierte Konten oder Konten in kostenlosen e-Mail-Diensten). Der Schutz vor Phishing funktioniert jedoch wesentlich besser, um diese anderen Arten von Phishing-Methoden zu erkennen. Die Schutzebenen in EoP sind zusammenarbeiten entworfen und übereinander aufgebaut.
 
 ## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>Blockieren andere große e-Mail-Dienste nicht authentifizierte eingehende e-Mails?
 
-Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Prüfungen, aber nur wenige gehen so weit, wie Office 365, nicht authentifizierte e-Mails zu blockieren und Sie als gefälschte Nachrichten zu behandeln. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
+Fast alle großen e-Mail-Dienste implementieren herkömmliche SPF-, DKIM-und DMARC-Prüfungen. Einige Dienste haben andere, strengere Überprüfungen, aber nur wenige gehen so weit, dass Sie nicht authentifizierte e-Mails blockieren und Sie als gefälschte Nachrichten behandeln EoP. Allerdings wird die Branche in Bezug auf Probleme mit nicht authentifizierten e-Mails, insbesondere aufgrund des Problems der Phishing-Problematik, immer stärker bewusst.
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Muss ich dennoch die erweiterte Spam Filter Einstellung "SPF Record: Hard Fail" (_MarkAsSpamSpfRecordHardFail_) aktivieren, wenn ich Antispoofing aktiviere?
 
 Nein. Diese ASF-Einstellung ist nicht mehr erforderlich, da bei der Antispoofing-Funktion nicht nur SPF-schwer Fehler, sondern eine weitaus umfassendere Gruppe von Kriterien berücksichtigt werden. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
 
-Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keine zusätzlichen Vorteile für das Erkennen von Spam-oder Phishing-Nachrichten bietet und stattdessen meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Erweiterte Einstellungen für den Spamfilter (ASF) in Office 365](advanced-spam-filtering-asf-options.md).
+Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keine zusätzlichen Vorteile für das Erkennen von Spam-oder Phishing-Nachrichten bietet und stattdessen meistens falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Advanced Spam Filter (ASF) Settings in EoP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Hilft das Programm zum Umschreiben von Absendern beim Beheben weitergeleiteter e-Mails?
 

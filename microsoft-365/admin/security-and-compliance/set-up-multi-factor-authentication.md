@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: In diesem Artikel erfahren Sie, wie Sie Sicherheitsstandards zum Einrichten der mehrstufigen Authentifizierung für Benutzer verwenden.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665632"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213010"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -75,7 +75,9 @@ Wenn Sie zuvor MFA mit Basisrichtlinien eingerichtet haben, [müssen Sie diese d
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Aktivieren der modernen Authentifizierung für Ihre Organisation
 
-Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Active Directory-Authentifizierungsbibliothek (Active Directory Authentication Library, ADAL). Dies bedeutet, dass App-Kennwörter für Office 2016-Clients nicht erforderlich sind. Sie müssen jedoch sicherstellen, dass Ihr Microsoft 365-Abonnement für Adal oder moderne Authentifizierung aktiviert ist.
+Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Active Directory-Authentifizierungsbibliothek (Active Directory Authentication Library, ADAL). Dies bedeutet, dass App-Kennwörter für Office 2016-Clients nicht erforderlich sind. Weitere Informationen finden Sie in [diesem Artikel](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) .
+
+Sie müssen jedoch sicherstellen, dass Ihr Microsoft 365-Abonnement für Adal oder moderne Authentifizierung aktiviert ist.
 
 1. Wenn Sie die moderne Authentifizierung aktivieren möchten, wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) die Option **Einstellungen** \> **Einstellungen**, und dann auf der Registerkarte **Dienste** die Option **Moderne Authentifizierung** aus der Liste aus.
 

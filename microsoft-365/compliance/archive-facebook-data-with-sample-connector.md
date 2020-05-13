@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Richten Sie einen Connector ein, um Facebook-Daten in Microsoft 365 zu importieren, damit Sie Compliance-Features wie rechtliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können.
-ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035157"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210533"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten (Vorschau)
 
 Verwenden Sie einen Connector im Microsoft 365 Compliance Center zum Importieren und Archivieren von Daten von Facebook-Geschäfts Seiten nach Microsoft 365. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Microsoft 365.
 
@@ -74,7 +74,7 @@ In den Schritt-für-Schritt-Anleitungen zum Ausführen dieses Schritts geben Sie
 
 - Mandantenkennung: die Mandanten-ID Ihrer Microsoft 365-Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 1 kopiert haben.
 
-Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren https://fbconnector.azurewebsites.net)(beispielsweise. Sie müssen diese URL verwenden, um Schritt 3, Schritt 4 und Schritt 5 abzuschließen.
+Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Azure-App-Dienst-URL kopieren (beispielsweise https://fbconnector.azurewebsites.net) . Sie müssen diese URL verwenden, um Schritt 3, Schritt 4 und Schritt 5 abzuschließen.
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>Schritt 3: Registrieren der Webanwendung auf Facebook
 

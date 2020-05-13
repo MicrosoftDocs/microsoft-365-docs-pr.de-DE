@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173485"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210571"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
 
 Sie können einen Daten Konnektor im Microsoft 365 Compliance Center einrichten, um Personaldaten (HR) zu importieren, beispielsweise das Datum, an dem ein Mitarbeiter seinen Rücktritt gesendet hat, und das Datum des letzten Tages des Mitarbeiters. Diese HR-Daten können dann von Microsoft Information Protection-Lösungen wie der neuen [Insider Risiko-Verwaltungslösung](insider-risk-management.md)verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. Das Einrichten eines HR-Konnektors besteht darin, eine app in Azure Active Directory zu erstellen, die für die Authentifizierung über Connector verwendet wird, das Erstellen einer CSV-Zuordnungsdateien, die Ihre HR-Daten enthalten, das Erstellen eines datenkonnektors im Compliance Center und das anschließende Ausführen eines Skripts (geplant), das die HR-Daten in der CSV-Datei in die Microsoft-Cloud einnimmt. Der Data Connector verwendet dann Microsoft-Compliance-Lösungen (wie Insider Risk Management), um auf die in Ihre Microsoft 365-Organisation importierten HR-Daten zuzugreifen.
 
@@ -64,8 +64,8 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei beschrieb
 |**Spaltenname**|**Beschreibung**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Gibt die e-Mail-Adresse des terminierten Mitarbeiters an.|
-| **TerminationDate** <br/> |Gibt das Datum an, an dem die Erwerbstätigkeit der Person in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Mitarbeiter seine Nachricht über das verlassen Ihrer Organisation mitgeteilt hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Gibt das Datum an, an dem die Erwerbstätigkeit der Person in Ihrer Organisation offiziell gekündigt wurde. Dies kann beispielsweise das Datum sein, an dem der Mitarbeiter seine Nachricht über das verlassen Ihrer Organisation mitgeteilt hat. Dieses Datum kann unterschiedlich sein als das Datum des letzten Arbeitstags des Benutzers. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Gibt den letzten Tag der Arbeit für den terminierten Mitarbeiter an. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speichern Sie Sie auf dem gleichen System wie das Skript, das Sie in Schritt 4 ausführen. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellsten Informationen enthält, sodass bei jedem Ausführen des Skripts die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden.
@@ -74,7 +74,7 @@ Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speich
 
 Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, wird der von Ihnen erstellte HR-Konnektor die HR-Daten aus der CSV-Datei in Ihre Microsoft 365-Organisation aufnehmen. In diesem Schritt müssen Sie unbedingt die JobID kopieren, die beim Erstellen des Connectors generiert wird. Sie verwenden das JobID, wenn Sie das Skript ausführen.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
 2. Klicken Sie auf der Seite **Daten Konnektoren (Vorschau)** unter **HR**auf **Ansicht**.
 
@@ -118,7 +118,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
 
 4. Ändern Sie bei Bedarf das Beispielskript für Ihre Organisation.
 
-5. Speichern Sie die Textdatei als Windows PowerShell Skriptdatei unter Verwendung des `.ps1`Suffixes filename; Beispiel: `HRConnector.ps1`.
+5. Speichern Sie die Textdatei als Windows PowerShell Skriptdatei unter Verwendung des Suffixes filename `.ps1` ; beispielsweise `HRConnector.ps1` .
 
 6. Öffnen Sie eine Eingabeaufforderung auf dem lokalen Computer, und wechseln Sie zu dem Verzeichnis, in dem Sie das Skript gespeichert haben.
 
@@ -151,7 +151,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
 
 Nachdem Sie den HR-Connector erstellt und das Skript zum Hochladen Ihrer HR-Daten ausgeführt haben, können Sie den Connector-und den Uploadstatus im Microsoft 365 Compliance Center anzeigen. Wenn Sie planen, dass das Skriptregel mäßig automatisch ausgeführt wird, können Sie auch den aktuellen Status nach der letzten Ausführung des Skripts anzeigen.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
 
 2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den HF-Konnektor aus, um die Flyout-Seite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 
@@ -199,7 +199,7 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
    a. Stellen Sie in der Dropdownliste **Aktion** sicher, dass **Programm starten** ausgewählt ist.
 
-   b. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`Feld angezeigt wird:.
+   b. Klicken Sie im Feld **Programm/Skript** auf **Durchsuchen**, und wechseln Sie zum folgenden Speicherort, und wählen Sie ihn aus, damit der Pfad im Feld angezeigt wird: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
    c. Fügen Sie im Feld **Argumente hinzufügen (optional)** den gleichen Skriptbefehl ein, den Sie in Schritt 4 ausgeführt haben. Beispiel: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

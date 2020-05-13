@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Microsoft 365-Postfach gespeichert werden können. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, eDiscovery-Haltestatus und Microsoft 365-Aufbewahrungsrichtlinien. Sie können auch ermitteln, ob ein Benutzer von einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 232173b82033f7372ef54411a04f3ee891a42bbb
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047999"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208666"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -30,7 +30,7 @@ Microsoft 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation ve
 
 - ** [Beweissicherungsverfahren](create-a-litigation-hold.md):** Haltestatus, die auf Benutzerpostfächer in Exchange Online angewendet werden.
 
-- ** [eDiscovery-Aufbewahrung](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Hält, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Haltestatus können auf Benutzerpostfächer und auf das entsprechende Postfach für Microsoft 365-Gruppen und Microsoft Teams angewendet werden.
+- ** [eDiscovery-Aufbewahrung](create-ediscovery-holds.md):** Hält, die einem zentralen eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Haltestatus können auf Benutzerpostfächer und auf das entsprechende Postfach für Microsoft 365-Gruppen und Microsoft Teams angewendet werden.
 
 - ** [In-situ-](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)Speicher:** Gilt für Benutzerpostfächer, die mithilfe des in-situ-eDiscovery-&-halte Tools im Exchange Admin Center in Exchange Online angewendet werden.
 
@@ -66,18 +66,18 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
 > [!TIP]
-> Wenn die InPlaceHolds-Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den Befehl ausführen, um `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` die einzelnen GUIDs in einer separaten Zeile anzuzeigen.
+> Wenn die InPlaceHolds-Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um die einzelnen GUIDs in einer separaten Zeile anzuzeigen.
 
 In der folgenden Tabelle wird beschrieben, wie Sie unterschiedliche Aufbewahrungs Typen basierend auf den Werten in der *InPlaceHolds* -Eigenschaft identifizieren, wenn Sie das Cmdlet **Get-Mailbox** ausführen.
 
 
 |Haltebereichstyp  |Beispielwert  |Vorgehensweise zum Identifizieren des Haltestatus  |
 |---------|---------|---------|
-|Aufbewahrung für eventuelle Rechtsstreitigkeiten     |    `True`     |     Das Beweissicherungsverfahren ist für ein Postfach aktiviert, wenn die *LitigationHoldEnabled* - `True`Eigenschaft auf festgelegt ist.    |
-|eDiscovery-Aufbewahrung     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   Die *InPlaceHolds-Eigenschaft* enthält die GUID aller Halterungen, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. Sie können feststellen, dass es sich um einen eDiscovery-Speicher handelt `UniH` , da die GUID mit dem Präfix beginnt (das einen einheitlichen Haltestatus bezeichnet).      |
-|Compliance-Archiv     |     `c0ba3ce811b6432a8751430937152491` <br/> oder <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der im Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID entweder nicht mit einem `cld` Präfix beginnt oder mit dem Präfix beginnt.     |
-|Microsoft 365-Aufbewahrungsrichtlinie, die speziell auf das Postfach angewendet wird     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oder <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     Die InPlaceHolds-Eigenschaft enthält GUIDs einer bestimmten Aufbewahrungsrichtlinie für Standorte, die auf das Postfach angewendet wird. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit `mbx` dem oder `skp` dem Präfix beginnt. Das `skp` Präfix gibt an, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen im Postfach des Benutzers angewendet wird.    |
-|Von einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie ausgeschlossen     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Wenn ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie ausgeschlossen wird, wird die GUID für die Aufbewahrungsrichtlinie, von der das Postfach ausgeschlossen wird, in der InPlaceHolds-Eigenschaft `-mbx` angezeigt und durch das Präfix identifiziert.    |
+|Aufbewahrung für eventuelle Rechtsstreitigkeiten     |    `True`     |     Das Beweissicherungsverfahren ist für ein Postfach aktiviert, wenn die *LitigationHoldEnabled* -Eigenschaft auf festgelegt ist `True` .    |
+|eDiscovery-Aufbewahrung     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   Die *InPlaceHolds-Eigenschaft* enthält die GUID aller Halterungen, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. Sie können feststellen, dass es sich um einen eDiscovery-Speicher handelt, da die GUID mit dem `UniH` Präfix beginnt (das einen einheitlichen Haltestatus bezeichnet).      |
+|Compliance-Archiv     |     `c0ba3ce811b6432a8751430937152491` <br/> oder <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der im Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID entweder nicht mit einem Präfix beginnt oder mit dem `cld` Präfix beginnt.     |
+|Microsoft 365-Aufbewahrungsrichtlinie, die speziell auf das Postfach angewendet wird     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oder <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     Die InPlaceHolds-Eigenschaft enthält GUIDs einer bestimmten Aufbewahrungsrichtlinie für Standorte, die auf das Postfach angewendet wird. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit dem `mbx` oder dem `skp` Präfix beginnt. Das `skp` Präfix gibt an, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen im Postfach des Benutzers angewendet wird.    |
+|Von einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie ausgeschlossen     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Wenn ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie ausgeschlossen wird, wird die GUID für die Aufbewahrungsrichtlinie, von der das Postfach ausgeschlossen wird, in der InPlaceHolds-Eigenschaft angezeigt und durch das `-mbx` Präfix identifiziert.    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 Wenn die *InPlaceHolds* -Eigenschaft leer ist, wenn Sie das Cmdlet **Get-Mailbox** ausführen, kann es immer noch eine oder mehrere organisationsweite Microsoft 365-Aufbewahrungsrichtlinien auf das Postfach angewendet werden. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Liste von GUIDs für organisationsweite Microsoft 365-Aufbewahrungsrichtlinien zu erhalten.
@@ -87,15 +87,15 @@ Get-OrganizationConfig | FL InPlaceHolds
 ```
 
 > [!TIP]
-> Wenn die InPlaceHolds-Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den Befehl ausführen, um `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` die einzelnen GUIDs in einer separaten Zeile anzuzeigen.
+> Wenn die InPlaceHolds-Eigenschaft zu viele Werte enthält und nicht alle angezeigt werden, können Sie den `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Befehl ausführen, um die einzelnen GUIDs in einer separaten Zeile anzuzeigen.
 
 In der folgenden Tabelle werden die unterschiedlichen Typen von organisationsweiten Haltebereichen beschrieben, und Sie können jeden Typ basierend auf den in der *InPlaceHolds* -Eigenschaft enthaltenen GUIDs identifizieren, wenn Sie das Cmdlet **Get-OrganizationConfig** ausführen.
 
 
 |Haltebereichstyp  |Beispielwert  |Beschreibung  |
 |---------|---------|---------|
-|Microsoft 365-Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und Chats von Teams angewendet werden    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und 1xN-Chats in Microsoft Teams angewendet werden, werden durch `mbx` GUIDs identifiziert, die mit dem Präfix beginnen. Hinweis 1xN-Chats werden im Postfach der einzelnen Chat Teilnehmer gespeichert.      |
-|Microsoft 365-Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen und Teams-Kanal Nachrichten angewendet wird     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organisationsweite Aufbewahrungsrichtlinien, die auf Microsoft 365-Gruppen und Kanal Nachrichten in Microsoft Teams angewendet werden, werden durch GUIDs `grp` identifiziert, die mit dem Präfix beginnen. Hinweis Kanal Nachrichten werden im Gruppenpostfach gespeichert, das einem Microsoft-Team zugeordnet ist.     |
+|Microsoft 365-Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und Chats von Teams angewendet werden    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und 1xN-Chats in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `mbx` Präfix beginnen. Hinweis 1xN-Chats werden im Postfach der einzelnen Chat Teilnehmer gespeichert.      |
+|Microsoft 365-Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen und Teams-Kanal Nachrichten angewendet wird     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organisationsweite Aufbewahrungsrichtlinien, die auf Microsoft 365-Gruppen und Kanal Nachrichten in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `grp` Präfix beginnen. Hinweis Kanal Nachrichten werden im Gruppenpostfach gespeichert, das einem Microsoft-Team zugeordnet ist.     |
 
 Weitere Informationen zu Aufbewahrungsrichtlinien, die auf Microsoft Teams angewendet werden, finden Sie im Abschnitt "Teams-Standort" unter [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
@@ -200,7 +200,7 @@ Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie je nach der Ei
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder:
+Oder
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -214,7 +214,7 @@ Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie einen 
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-Oder:
+Oder
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -235,9 +235,9 @@ Beachten Sie beim Verwalten eines Postfachs bei Verzögerung die folgenden Punkt
 
 Nachdem Sie die auf ein Postfach angewendeten Haltestatus identifiziert haben, können Sie Aufgaben wie das Ändern der Aufbewahrungsdauer, das vorübergehende oder permanente Entfernen des Haltestatus oder das Ausschließen eines inaktiven Postfachs aus einer Microsoft 365-Aufbewahrungsrichtlinie ausführen. Weitere Informationen zum Durchführen von Aufgaben im Zusammenhang mit Holds finden Sie in einem der folgenden Themen:
 
-- Führen Sie das>-Befehl für das [Benutzerpostfach "festlegen-RetentionCompliancePolicy-AddExchangeLocationException \<](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) " in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der *ExchangeLocation* Wert für die `All`ExchangeLocation-Eigenschaft gleich ist.
+- Führen Sie das>-Befehl für das [ \< Benutzerpostfach "festlegen-RetentionCompliancePolicy-AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) " in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der Wert für die *ExchangeLocation* -Eigenschaft gleich ist `All` .
 
-- Führen Sie die [ \<ExcludeFromOrgHolds Hold-GUID ohne Präfix oder Suffix>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) Befehl in Exchange Online PowerShell aus, um ein inaktives Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen.
+- Führen Sie die [ExcludeFromOrgHolds \< Hold-GUID ohne Präfix oder Suffix>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) Befehl in Exchange Online PowerShell aus, um ein inaktives Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen.
 
 - [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Exchange Admin Center in Exchange Online Protection
+title: Exchange Admin Center in eigenständigen EoP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,29 +15,39 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Erfahren Sie mehr über die Webverwaltungsoberfläche in eigenständigen Exchange Online Schutz (EoP).
+ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372493"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209731"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Admin Center in Exchange Online Protection
+# <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in eigenständigen EoP
 
-Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-
-Suchen Sie die Exchange Server-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+Das Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Schutz (EoP).
 
 Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="accessing-the-eac"></a>Zugreifen auf die Exchange-Verwaltungskonsole
+## <a name="open-the-eac-in-eop"></a>Öffnen der Exchange-Verwaltungskonsole in EoP
 
-In den meisten Fällen greifen EoP-Kunden über das Microsoft 365 Admin Center auf die Exchange-Verwaltungskonsole zu. Einen Link zu EOP finden Sie im Dropdownmenü der **Admin**-Kachel, die sich neben der **Ich**-Kachel befindet. Klicken Sie auf die Kachel admin, und wählen Sie **Exchange Online Schutz** aus dem Dropdownmenü aus, der in die Exchange- **Verwaltungs** Konsole übernommen werden soll.
+Eigenständige EoP-Kunden können mithilfe der folgenden Methoden auf die Exchange-Verwaltungskonsole zugreifen:
 
-Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seite zugreifen: `https://admin.protection.outlook.com/ecp/<companydomain>`. Beispiel: `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. Nachdem Sie Ihre Benutzeranmeldeinformationen eingegeben haben, gelangen Sie direkt zur Exchange-Verwaltungskonsole.
+- **Aus dem Microsoft 365 Admin Center**:
 
-## <a name="common-user-interface-elements-in-the-eac"></a>Allgemeine Elemente der Benutzeroberfläche in der Exchange-Verwaltungskonsole
+  1. Wechseln Sie zu, <https://admin.microsoft.com> und klicken Sie auf **Alle anzeigen**.
+
+     ![Klicken Sie im Microsoft 365 Admin Center auf alle anzeigen.](../../media/m365-center-show-all.png)
+
+  2. Klicken Sie im angezeigten Abschnitt **Admin Centers** auf **alle Admin Center**.
+
+     ![Klicken Sie auf alle Admin Center im Microsoft 365 Admin Center](../../media/m365-center-select-all-admin-centers.png)
+
+  3. Klicken Sie auf der Seite **alle Admin Center** , die angezeigt wird, auf **Exchange Online Schutz**.
+
+- Wechseln Sie direkt zu `https://admin.protection.outlook.com/ecp/` .
+
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Allgemeine Elemente der Benutzeroberfläche in der Exchange-Verwaltungskonsole in EoP
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
 
@@ -47,15 +57,20 @@ In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Ver
 
 Dies ist die erste Navigationsebene für die meisten Aufgaben, die Sie in der Exchange-Verwaltungskonsole ausführen. Der Featurebereich ist nach Funktionsbereichen organisiert.
 
-1. **Recipients**: Dies ist der Ort, an dem Sie interne Benutzer und externe Kontakte anzeigen können.
+- **Recipients**: Hier werden Gruppen und externe Kontakte angezeigt.
 
-2. **Berechtigungen**: Hier können Sie Administratorrollen verwalten.
+- **Berechtigungen**: Hier können Sie Administratorrollen verwalten.
 
-3. **Compliance-Verwaltung**: Hier finden Sie Überwachungsprotokolle und Berichte wie den Administrator-Rollengruppen Bericht.
+- **Compliance-Verwaltung**: Hier finden Sie den Administrator-Rollengruppen Bericht und den Bericht admin-Überwachungsprotokoll.
 
-4. **Schutz**: Hier können Sie Antischadsoftware-und Antispamschutz für Ihre Organisation sowie Nachrichten in Quarantäne verwalten.
+- **Schutz**: Hier können Sie Antischadsoftware-Richtlinien, die standardmäßige Verbindungsfilter Richtlinie und DKIM verwalten.
 
-5. **Nachrichtenfluss**: Hier können Sie Regeln, akzeptierte Domänen und Connectors verwalten sowie die Nachrichtenablaufverfolgung durchführen.
+  > [!NOTE]
+  > Sie sollten Antischadsoftware-Richtlinien und die standardmäßige Verbindungsfilter Richtlinie im Security & Compliance Center verwalten. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in EoP](configure-anti-malware-policies.md) und [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
+
+- **Nachrichtenfluss**: Hier können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln), akzeptierte Domänen und Connectors verwalten sowie den Weg zur Ausführung der Nachrichtenablaufverfolgung.
+
+- **Hybrid**: Dies ist der Ort, an dem Sie den [Assistenten für die Hybrid Konfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen können und auf dem Sie das [Exchange Online-PowerShell-Modul](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)installieren können.
 
 ### <a name="tabs"></a>Registerkarten
 
@@ -65,8 +80,9 @@ Die Registerkarten sind Ihre zweite Ebene der Navigation. Alle Featurebereiche e
 
 Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie auf sie geklickt haben. Die Symbolleiste enthält Symbole, die jeweils eine bestimmte Aktion auslösen. Die folgende Tabelle beschreibt die Symbole und deren Aktionen.
 
+||||
+|---|---|---|
 |**Symbol**|**Name**|**Action**|
-|:-----|:-----|:-----|
 |![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif)|Hinzufügen, Neu|Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.|
 |![Bearbeitungssymbol](../../media/ITPro-EAC-EditIcon.gif)|Bearbeiten|Über dieses Symbol können Sie ein Objekt bearbeiten.|
 |![Löschen (Symbol)](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
@@ -75,6 +91,7 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
 |![Weitere Optionen (Symbol)](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Weitere Optionen|Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  |
 |![NACH-OBEN-TASTE (Symbol)](../../media/ITPro-EAC-UpArrowIcon.gif)![NACH-UNTEN-TASTE (Symbol)](../../media/ITPro-EAC-DownArrowIcon.gif)|Pfeil nach oben und Pfeil nach unten|Mithilfe dieser Symbole können Sie die Priorität eines Objekts nach oben oder unten verschieben.|
 |![Entfernen (Symbol)](../../media/ITPro-EAC-RemoveIcon.gif)|Entfernen|Über dieses Symbol können Sie Objekte aus einer Liste entfernen.|
+|
 
 ### <a name="list-view"></a>Listenansicht
 
@@ -88,21 +105,23 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](../../media/ITPro-EAC-HelpIcon.gif) können Sie folgende Aktionen ausführen:
 
-1. **Hilfe**: Klicken ![Sie auf](../../media/ITPro-EAC-HelpIcon.gif) Hilfesymbol, um den Inhalt der Online Hilfe anzuzeigen.
+- **Hilfe**: Klicken Sie auf ![ Hilfesymbol ](../../media/ITPro-EAC-HelpIcon.gif) , um den Inhalt der Online Hilfe anzuzeigen.
 
-2. **Hilfe Blase deaktivieren**: in der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe Blase deaktivieren oder aktivieren, wenn Sie deaktiviert wurde.
+- **Feedback**: hinterlassen Sie Feedback.
 
-3. **Copyright**: Klicken Sie auf diesen Link, um den Copyright-Hinweis für Exchange Online Protection zu lesen.
+- **Community**: Stellen Sie eine Frage für Find Answers in den Community-Foren bereit.
 
-4. **Privacy**: Klicken Sie hier, um die Datenschutzrichtlinie für Exchange Online Schutz zu lesen.
+- **Hilfe Blase deaktivieren**: in der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe Blase deaktivieren oder aktivieren, wenn Sie deaktiviert wurde.
+
+- **Befehlsprotokollierung anzeigen**: Es wird ein neues Fenster geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der Exchange-Verwaltungskonsole konfigurierten angezeigt werden.
 
 ## <a name="supported-browsers"></a>Unterstützte Browser
 
 Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [System Requirements for Office](https://products.office.com/office-system-requirements).
 
-## <a name="supported-languages-in-eop"></a>Unterstützte Sprachen in EOP
+## <a name="supported-languages"></a>Unterstützte Sprachen
 
-Die folgenden Sprachen werden für Exchange Online Protection unterstützt und zur Verfügung gestellt.
+Die folgenden Sprachen werden für die Exchange-Verwaltungskonsole in eigenständigen EoP unterstützt und zur Verfügung gestellt.
 
 - Amharisch
 
@@ -227,5 +246,3 @@ Die folgenden Sprachen werden für Exchange Online Protection unterstützt und z
 - Vietnamesisch
 
 - Walisisch
-
-

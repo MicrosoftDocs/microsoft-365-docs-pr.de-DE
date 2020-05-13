@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie zentrale eDiscovery-Fälle verwalten. Dazu gehört das Schließen einer Anfrage, das erneute Öffnen eines geschlossenen Falls und das Löschen einer Anfrage.
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551423"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208417"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls
 
@@ -42,7 +42,7 @@ Wenn die von einem zentralen eDiscovery-Fall unterstützte Rechtssache oder Unte
 
 So schließen Sie einen Fall:
   
-1. Klicken Sie im Microsoft 365-Compliance-Eingabefeld auf **eDiscovery** > **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
 
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie schließen möchten.
 
@@ -66,7 +66,7 @@ So schließen Sie einen Fall:
 
 Wenn Sie einen Fall erneut öffnen, werden alle eDiscovery-Aufbewahrungsorte, die bei der Schließung des Falles abgeschlossen wurden, nicht automatisch wieder eingesetzt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur Seite "halte **Status** " wechseln und die vorherigen Haltestatus aktivieren. Zum Aktivieren eines haltebereichs wählen Sie ihn aus, um die Flyout-Seite anzuzeigen, und legen Sie dann die **Status** Umschalttaste **auf**ein fest.
   
-1. Klicken Sie im Microsoft 365-Compliance-Eingabefeld auf **eDiscovery** > **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
 
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie erneut öffnen möchten.
 
@@ -102,7 +102,7 @@ So löschen Sie eine eDiscovery-Sperre:
 
 So löschen Sie einen Fall:
 
-1. Klicken Sie im Microsoft 365-Compliance-Eingabefeld auf **eDiscovery** > **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
 
 2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie löschen möchten.
 
