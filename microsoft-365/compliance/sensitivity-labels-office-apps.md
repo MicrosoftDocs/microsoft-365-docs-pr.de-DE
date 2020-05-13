@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208069"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213305"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Wenn Sie Sensitivitäts Bezeichnungen aus dem Microsoft 365 Compliance Center oder einem entsprechenden Bezeichnungs Center [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben, werden diese in Office-Apps angezeigt, damit Benutzerdaten beim Erstellen oder bearbeiten klassifizieren und schützen können.
 
@@ -169,9 +169,9 @@ Andernfalls:
 
 Wenn Sie den integrierten Office-Bezeichnungs Client mit Office im Internet für Dokumente in OneDrive für Unternehmen oder SharePoint Online verwenden möchten, stellen Sie sicher, dass Sie sich für die Vorschau entschieden haben, um [Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive zu aktivieren](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>Wenn Office 365 Inhalts Markierung und-Verschlüsselung anwendet
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Wenn Office-Apps Inhalts Markierung und-Verschlüsselung anwenden
 
-Office 365 wendet die Inhalts Markierung und-Verschlüsselung mit einer Sensitivitäts Bezeichnung unterschiedlich an, abhängig von der verwendeten app.
+In Office-Apps werden Inhalts Markierung und-Verschlüsselung mit einer Sensitivitäts Bezeichnung unterschiedlich angewendet, je nachdem, welche app Sie verwenden.
 
 | App | Inhaltskennzeichnung | Verschlüsselung |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 wendet die Inhalts Markierung und-Verschlüsselung mit einer Sensitiv
 | Outlook für PC und Mac | Nachdem Exchange Online die e-Mail gesendet hat | Sofort |
 | Outlook im Web, für iOS und Android | Nachdem Exchange Online die e-Mail gesendet hat | Nachdem Exchange Online die e-Mail gesendet hat |
 |
+
+Lösungen, die Vertraulichkeits Bezeichnungen auf Dateien außerhalb von Office-Apps anwenden, tun dies, indem Sie der Datei Bezeichnungs Metadaten zuweisen. In diesem Szenario wird die Inhalts Markierung aus der Bezeichnungs Konfiguration nicht in die Datei eingefügt, sondern die Verschlüsselung wird angewendet. 
+
+Wenn diese Dateien in einer Office-Desktop-App geöffnet werden, werden die Inhalts Markierungen automatisch vom Azure Information Protection Unified Labeling-Client angewendet. Die Inhalts Markierungen werden nicht automatisch angewendet, wenn Sie die integrierte Beschriftung für Desktop-, Mobile oder Webanwendungen verwenden.
+
+Zu den Szenarien, in denen eine Vertraulichkeits Bezeichnung außerhalb von Office-Apps angewendet wird, gehören:
+
+- Der Scanner, der Datei-Explorer und PowerShell aus dem Unified Labeling-Client für Azure Information Protection 
+
+- Automatisches bezeichnen von Richtlinien für SharePoint und OneDrive
+
+- Exportierte beschriftete und verschlüsselte Daten aus Power BI
+
+- Microsoft Cloud App Security
+
+Bei diesen Szenarien kann ein Benutzer mit integrierter Beschriftung mithilfe seiner Office-Apps die Inhalts Markierungen der Beschriftung durch vorübergehendes entfernen oder Ersetzen der aktuellen Bezeichnung und anschließendes erneutes Anwenden der ursprünglichen Bezeichnung anwenden.
 
 ## <a name="end-user-documentation"></a>Endbenutzerdokumentation
 

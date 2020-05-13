@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die erweiterten Anti-Phishing-Richtlinien erstellen, ändern und löschen, die in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind.
-ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208887"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213460"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurieren der ATP Antiphishing-Richtlinien
 
@@ -31,7 +31,7 @@ Sie können ATP-Anti-Phishing-Richtlinien im Security & Compliance Center oder i
 
 Informationen zum Konfigurieren der eingeschränkteren AntiPhishing-Richtlinien, die in Exchange Online Schutzorganisationen (Microsoft 365-Organisationen ohne Office 365 ATP) zur Verfügung stehen, finden Sie unter [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md).
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>ATP-Richtlinien zum Schutz vor Phishing im Security & Compliance Center vs Exchange Online PowerShell
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>ATP-Richtlinien zum Schutz vor Phishing im Security & Compliance Center vs PowerShell
 
 Die grundlegenden Elemente einer ATP-Anti-Phishing-Richtlinie sind:
 

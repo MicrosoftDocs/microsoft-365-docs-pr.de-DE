@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EoP) konfigurieren, um e-Mails von e-Mail-Servern zuzulassen oder zu blockieren.
-ms.openlocfilehash: 9b4f203f11e72b4459c9fa35d3e4fdca544cffbb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209583"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213436"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
@@ -44,7 +44,7 @@ In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um die standardmäßige Verbindungsfilter Richtlinie zu ändern. Für den schreibgeschützten Zugriff auf die standardmäßige Verbindungsfilter Richtlinie müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -90,7 +90,7 @@ In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter
 
 3. Die Richtlinieneinstellungen werden in der Dropdownliste angezeigt, die geöffnet wird.
 
-## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>Verwenden Sie Exchange Online PowerShell oder eigenständiger Exchange Online Protection PowerShell, um die standardmäßige Verbindungsfilter Richtlinie zu ändern.
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Verwenden Exchange Online PowerShell oder eigenständiger EoP PowerShell zum Ändern der standardmäßigen Verbindungsfilter Richtlinie
 
 Verwenden Sie die folgende Syntax:
 
@@ -134,7 +134,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die sta
 
 - Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Spam** \> Klicken Sie neben **Verbindungsfilter Richtlinie (immer ein**) auf die Dropdownliste, und überprüfen Sie die Einstellungen.
 
-- Führen Sie den folgenden Befehl in Exchange Online PowerShell oder eigenständigen Exchange Online Protection PowerShell aus, und überprüfen Sie die Einstellungen:
+- Führen Sie in Exchange Online PowerShell oder in der eigenständigen EoP PowerShell den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
   ```powershell
   Get-HostedConnectionFilterPolicy -Identity Default
