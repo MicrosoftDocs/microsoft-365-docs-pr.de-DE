@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: In diesem Artikel erfahren Sie mehr über den Schutz vor Spoofing in Microsoft 365, der gegen Phishing-Angriffe durch gefälschte Domänen schützen hilft.
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034070"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209031"
 ---
-# <a name="anti-spoofing-protection"></a>Antispoofingschutz
+# <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
-Falls Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein Kunde des eigenständigen Exchange Online Protection-Produkts (EOP) ohne Exchange Online-Postfächer sind, beinhaltet EOP Features, die Ihre Organisation vor gefälschten („gespooften“) Absendern schützen können.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer enthält EOP Funktionen zum Schutz Ihrer Organisation vor gefälschten Absendern.
 
 Wenn es um den Schutz der Benutzer geht, nimmt Microsoft die Bedrohung durch Phishing ernst. Spoofing ist eine gängige Technik, die von Angreifern verwendet wird. **Diese gefälschten („Spoofing“-)Nachrichten scheinen von einer anderen Quelle als der tatsächlichen Quelle zu stammen**. Diese Methode wird häufig bei Phishingkampagnen verwendet, die darauf abzielen, an Anmeldeinformationen des Benutzers zu gelangen. Die Anti-Spoofing-Technologie in EOP prüft speziell auf Fälschungen des „Von“-Headers im Nachrichtentext (diese Information wird genutzt, um den Absender in E-Mail-Clients anzuzeigen). Wenn EOP mit hoher Wahrscheinlichkeit zu dem Ergebis kommt, dass der „Von“-Header gefälscht ist, wird die Nachricht als Spoof identifiziert.
 
@@ -37,11 +37,11 @@ Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
 - **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Anti-Phishing-Richtlinien**: IN EOP können Sie mit der integrierten Anti-Phishing-Richtlinie Spoofintelligenz aktivieren oder deaktivieren, die Identifikation nicht authentifizierter Absender in Outlook aktivieren oder deaktivieren und die Aktion für blockierte Spoof-Absender angeben (in den Ordner „Junk-E-Mail“ oder „Quarantäne“ verschieben). Erweiterte Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (ATP) verfügbar sind, umfassen außerdem Einstellungen für den Identitätswechsel (geschützte Absender und Domänen), Postfach-Intelligenz-Einstellungen und anpassbare erweiterte Phishing-Schwellen. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Anti-Phishing-Richtlinien**: In EOP können Sie mit Anti-Phishing-Richtlinien Spoofing-Informationen ein- oder ausschalten, nicht authentifizierte Absenderkennung in Outlook ein- oder ausschalten und die Aktion für blockierte Spoofing-Absender festlegen (Verschieben in den Junk-E-Mail-Ordner oder Quarantäne). Erweiterte Anti-Phishing-Richtlinien, die in Office 365 Advanced Threat Protection (Office 365 ATP) verfügbar sind, enthalten auch Anti-Imitationseinstellungen (geschützte Absender und Domänen), Mailboxintelligenz-Einstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
-Die Anti-Spoofing-Technologie von Microsoft wurde ursprünglich nur für Organisationen mit Office 365 Advanced Threat Protection (ATP) bereitgestellt. Im Oktober 2018 wurde EOP ein Anti-Spoofing-Schutz hinzugefügt.
+Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar. Zuvor war der Anti-Spoofing-Schutz nur in Organisationen mit Office 365 ATP verfügbar.
 
 EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von standardmäßigen E-Mail-Authentifizierungsmethoden und Absender-Reputations-Techniken authentifiziert werden können.
 
