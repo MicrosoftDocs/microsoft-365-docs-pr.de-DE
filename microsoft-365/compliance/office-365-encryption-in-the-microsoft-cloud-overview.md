@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Lesen Sie in diesem Artikel eine Übersicht über die verschiedenen Verschlüsselungs Formen, die verwendet werden, um Kundendaten in der Microsoft-Cloud zu schützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e48cc4fc54f0bc4553bab655611900523e11bd4d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031385"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214273"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -30,7 +30,7 @@ Kundendaten innerhalb von Microsoft Enterprise Cloud Services sind durch eine Vi
 
 Unabhängig von der Kundenkonfiguration werden Kundendaten, die in den Enterprise Cloud-Diensten von Microsoft gespeichert sind, mit einer oder mehreren Verschlüsselungs Formen geschützt. (Die Validierung unserer Crypto-Richtlinie und deren Erzwingung wird unabhängig von mehreren Auditoren von Drittanbietern überprüft, und Berichte dieser Audits stehen im [Dienst Vertrauensstellungs Portal](https://aka.ms/stp)zur Verfügung.)
 
-Microsoft stellt dienstseitige Technologien bereit, mit denen Kundendaten im Ruhezustand und bei der Übertragung verschlüsselt werden. Für Kundendaten im Ruhezustand verwendet Microsoft Azure beispielsweise [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) und [dm-crypt](https://en.wikipedia.org/wiki/Dm-crypt), und Microsoft 365 verwendet BitLocker, [Azure Storage Service Encryption](https://azure.microsoft.com/documentation/articles/storage-service-encryption/), [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM) und Microsoft 365 Service Encryption. Für Kundendaten in Transit, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI und Visual Studio Team Services werden branchenübliche sichere Transportprotokolle wie Internet Protocol Security (IPSec) und Transport Layer Security (TLS) zwischen Microsoft-Rechenzentren und zwischen Benutzergeräten und Microsoft-Rechenzentren verwendet.
+Microsoft stellt dienstseitige Technologien bereit, mit denen Kundendaten im Ruhezustand und bei der Übertragung verschlüsselt werden. Für Kundendaten im Ruhezustand verwendet Microsoft Azure beispielsweise [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) und [dm-crypt](https://en.wikipedia.org/wiki/Dm-crypt), und Microsoft 365 verwendet BitLocker, [Azure Storage Service Encryption](https://docs.microsoft.com/azure/), [Distributed Key Manager](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM) und Microsoft 365 Service Encryption. Für Kundendaten in Transit, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI und Visual Studio Team Services werden branchenübliche sichere Transportprotokolle wie Internet Protocol Security (IPSec) und Transport Layer Security (TLS) zwischen Microsoft-Rechenzentren und zwischen Benutzergeräten und Microsoft-Rechenzentren verwendet.
 
 Zusätzlich zur von Microsoft bereitgestellten Basisstufe der kryptografischen Sicherheit umfassen unsere Cloud-Dienste auch zusätzliche Kryptografiefunktionen, die Sie verwalten können. Sie können beispielsweise die Verschlüsselung für den Datenverkehr zwischen Ihren virtuellen Azure-Computern (VMS) und ihren Benutzern aktivieren. Bei [virtuellen Azure-Netzwerken](https://azure.microsoft.com/services/virtual-network/)können Sie das standardmäßige IPSec-Protokoll verwenden, um den Datenverkehr zwischen dem VPN-Gateway des Unternehmens und Azure sowie zwischen den VMS im virtuellen Netzwerk zu verschlüsseln. Darüber hinaus können Sie mit der [neuen Office 365 Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md) verschlüsselte e-Mails an alle Personen senden.
 
@@ -46,7 +46,7 @@ Microsoft bescheinigt die zugrunde liegenden kryptografischen Module, die in uns
 - Dynamics 365 und Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense
 
-Die Verschlüsselung von Kundendaten im Ruhezustand wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage Service Encryption und Service Encryption in Exchange Online, Skype for Business, OneDrive für Unternehmen und SharePoint Online. Office 365 Dienst Verschlüsselung enthält eine Option zur Verwendung von Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese vom Kunden verwaltete Schlüssel Option, die als " [Kundenschlüssel](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)" bezeichnet wird, ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive für Unternehmen verfügbar.
+Die Verschlüsselung von Kundendaten im Ruhezustand wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage Service Encryption und Service Encryption in Exchange Online, Skype for Business, OneDrive für Unternehmen und SharePoint Online. Office 365 Dienst Verschlüsselung enthält eine Option zur Verwendung von Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese vom Kunden verwaltete Schlüssel Option, die als " [Kundenschlüssel](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)" bezeichnet wird, ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive für Unternehmen verfügbar.
 
 Für Kundendaten während der Übertragung verhandeln alle Office 365 Server sichere Sitzungen mit TLS standardmäßig mit Clientcomputern, um Kundendaten zu sichern.  Dies gilt für Protokolle auf allen Geräten, die von Clients verwendet werden, beispielsweise Skype for Business, Outlook und Outlook im Internet, Mobile Clients und Webbrowser.
 

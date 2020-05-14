@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einschließen können, die über das Security & Compliance Center ausgeführt wird. '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626679"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214211"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Teilweise indizierte Elemente in der Inhaltssuche
 
@@ -57,11 +57,11 @@ Bestimmte Dateitypen wie Bitmap- oder MP3-Dateien enthalten keinen zu indizieren
   
 Eine Liste von unterstützten und deaktivierten Dateiformaten finden Sie in den folgenden Themen:
   
-- **Exchange** - [Von der Exchange-Suche indizierte Exchange-Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Von der Exchange-Suche indizierte Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [-Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint** - [-standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  -  [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ Eine Ausnahme zu dieser Regel besteht darin, dass Sie einen abfragebasierten Hal
 
 In der folgenden Tabelle werden die Grenzwerte für die Indizierung beschrieben, die möglicherweise dazu führen, dass eine e-Mail-Nachricht als teilweise indiziertes Element in einer Inhaltssuche in Office 365 zurückgegeben wird.
   
-Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unter [Such Grenzwerte für SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unter [Such Grenzwerte für SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Indizierungs Grenzwert**|**Maximalwert**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -125,7 +125,7 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 |Maximale Parser-Ausgabe  <br/> |2 Millionen Zeichen  <br/> |Die maximale Textausgabe des indizierten Parsers. Wenn der Parser beispielsweise 8 Millionen Zeichen aus einem Dokument extrahiert hat, werden nur die ersten 2 Millionen Zeichen indiziert.  <br/> |
 |Maximale Anmerkungs Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert wird, wird jedes Wort mit unterschiedlichen Verarbeitungsanweisungen versehen, die angeben, wie dieses Wort indiziert werden soll. Jeder Sätze von Verarbeitungsanweisungen wird als Anmerkungs Token bezeichnet. Um die Dienstqualität in Office 365 beizubehalten, gibt es einen Grenzwert von 2 Millionen-Anmerkungs Token für eine e-Mail-Nachricht.  <br/> |
 |Maximale Körpergröße im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen im Textkörper einer e-Mail-Nachricht und aller Anlagen. Wenn eine e-Mail-Nachricht indiziert wird, wird der gesamte Text im Nachrichtentext und in allen Anlagen in einer einzigen Zeichenfolge verkettet. Die maximale Größe dieser Zeichenfolge, die indiziert wird, ist 67 Millionen Zeichen.  <br/> |
-|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck `"cat, mouse, bird, dog, dog"` enthält beispielsweise 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
+|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus dem Inhalt, dem Entfernen von Satzzeichen und Leerzeichen und der anschließende Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck enthält beispielsweise `"cat, mouse, bird, dog, dog"` 5 Token. Aber nur 4 von diesen sind eindeutige Token. Es gibt ein Limit von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert werden kann, dass der Index zu groß wird mit zufälligen Token.  <br/> |
 
 ## <a name="more-information-about-partially-indexed-items"></a>Weitere Informationen zu teilweise indizierten Elementen
 

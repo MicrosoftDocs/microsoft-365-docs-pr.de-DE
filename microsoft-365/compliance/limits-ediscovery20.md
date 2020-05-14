@@ -1,5 +1,5 @@
 ---
-title: Erweiterte eDiscovery-Grenzwerte
+title: Advanced eDiscovery-Beschränkungen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über die Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten. Dies umfasst Fall Grenzen, Indizierungs Grenzwerte und Such Grenzwerte, wenn das Such Tool zum Sammeln von Falldaten verwendet wird.
-ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585714"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224662"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -32,7 +32,7 @@ In der folgenden Tabelle sind die Grenzwerte für Fälle in Advanced eDiscovery 
 |**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
 |Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |1 Mio.  <br/> |
-|Gesamtdateigröße pro Lastsatz.  <br/> |100 GB  <br/> |
+|Gesamtdateigröße pro Lastsatz.  <br/> |100 GB  <br/> |
 |Die Gesamtmenge der Daten, die pro Tag in einen Fall geladen wurden.<br/> |2 TB <br/> |
 |Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15  <br/> |
 |Maximale Anzahl von Überprüfungs Sätzen pro Fall.  <br/> |20 <br/> |
@@ -60,8 +60,8 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 |Maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> | 
 |Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10    <br/> | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen).  <br/> |**Postfächer**: 10.000<br/>**Websites**: 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>2</sup> <br/> |
-|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel **\* eins** oder **festgelegt\***. <br/> |3   <br/> |  
-|Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter zum Suchen nach einem genauen Ausdruck oder bei Verwendung eines Präfix Platzhalters und des **near** -oder **ONEAR** -booleschen Operators verwendet wird.  <br/> |10.000 <sup>3</sup> <br/> |
+|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3  <br/> |  
+|Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen oder wenn ein Präfix Platzhalter und der **near** -Boolesche Operator verwendet werden.  <br/> |10.000 <sup>3</sup> <br/> |
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.   <br/> |100  <br/> |
 |Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1.000  <br/> |
 |Maximale Anzahl von Postfächern, für die eine Vorschau für Suchergebnisse angezeigt werden kann.  Wenn mehr als 1000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die obersten 1.000-Postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.<br/> |1.000  <br/> |
@@ -92,6 +92,6 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 > [!NOTE]
 > <sup>1</sup> jedes Element, das einen einzelnen Datei Grenzwert überschreitet, wird als Verarbeitungsfehler angezeigt.<br/>
 > <sup>2</sup> beim Durchsuchen von SharePoint-und OneDrive für Unternehmen-Speicherorte zählen die Zeichen in den URLs der gesuchten Websites auf diesen Grenzwert.<br/>
-> <sup>3</sup> bei nicht-Phrase-Abfragen (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) wird ein spezieller Präfix Index verwendet. Dies weist darauf hin, dass ein Wort in einem Dokument auftritt, aber nicht dort, wo es im Dokument vorkommt. Um eine Phrasenabfrage (ein Stichwort Wert mit doppelten Anführungszeichen) durchführen zu können, müssen wir die Position im Dokument für die Wörter im Ausdruck vergleichen. Dies bedeutet, dass der Präfix Index für Phrase-Abfragen nicht verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, zu denen das Präfix erweitert wird. Beispielsweise kann **time\* ** auf **"Zeit oder Timer oder Uhrzeiten oder Timex oder Zeit verpackt oder..."** erweitert werden. Der Grenzwert von 10.000 ist die maximale Anzahl von Varianten, zu der das Wort erweitert werden kann, und nicht die Anzahl der Dokumente, die mit der Abfrage übereinstimmen. Für nicht-Phrasen-Ausdrücke gibt es keine Obergrenze.<br/>
+> <sup>3</sup> bei nicht-Phrase-Abfragen (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) wird ein spezieller Präfix Index verwendet. Dies weist darauf hin, dass ein Wort in einem Dokument auftritt, aber nicht dort, wo es im Dokument vorkommt. Um eine Phrasenabfrage (ein Stichwort Wert mit doppelten Anführungszeichen) durchführen zu können, müssen wir die Position im Dokument für die Wörter im Ausdruck vergleichen. Dies bedeutet, dass der Präfix Index für Phrase-Abfragen nicht verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, zu denen das Präfix erweitert wird. Beispielsweise kann **time \* ** auf **"Zeit oder Timer oder Uhrzeiten oder Timex oder Zeit verpackt oder..."** erweitert werden. Der Grenzwert von 10.000 ist die maximale Anzahl von Varianten, zu der das Wort erweitert werden kann, und nicht die Anzahl der Dokumente, die mit der Abfrage übereinstimmen. Für nicht-Phrasen-Ausdrücke gibt es keine Obergrenze.<br/>
 > <sup>4</sup> dieser Grenzwert gilt für das Herunterladen ausgewählter Dokumente aus einem Überprüfungs Sätze. Sie gilt nicht für das Exportieren von Dokumenten aus einem Überprüfungspaket. Weitere Informationen zum herunterladen und Exportieren von Dokumenten finden Sie unter [Export Case Data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
 

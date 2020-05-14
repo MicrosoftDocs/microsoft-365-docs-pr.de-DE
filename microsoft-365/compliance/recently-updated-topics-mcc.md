@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Wir erstellen kontinuierlich neue Artikel, aktualisieren bestehende und nehmen daran Änderungen basierend auf Ihrem Feedback vor. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036018"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221419"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -32,7 +32,122 @@ ms.locfileid: "44036018"
 > [!TIP]
 > Die neuesten Feature-Updates im Microsoft 365 Compliance Center finden Sie unter [Neuerungen im Microsoft 365 Compliance Center](whats-new.md).
 
+## <a name="march-2020"></a>März 2020
+
+### <a name="auditing"></a>Überwachung
+
+[Verwenden der erweiterten Überwachung zum untersuchen gefährdeter Konten](mailitemsaccessed-forensics-investigations.md) (neu)<br>Neue Anleitungen zur Verwendung der neuen *MailItemsAccessed* -Post Fach Überwachungsaktion für forensische Untersuchungen.
+
+Mehrere Updates zum [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md), einschließlich:
+- [Neuer Abschnitt](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) mit Details zum "App@SharePoint"-Benutzer, der in Überwachungseinträgen aufgeführt ist.
+- [Neue Beschreibungen](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) von Quarantäneaktivitäten.
+- Im Abschnitt [Benutzer Verwaltungsaktivität](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) wurde klargestellt, dass das Ereignis "Benutzerkennwort ändern" ausgelöst wird, wenn ein Benutzer sein eigenes Kennwort ändert (über Self-Service Password Reset) und das Ereignis "Benutzerkennwort zurücksetzen" ausgelöst wird, wenn ein Administrator das Kennwort eines Benutzers zurücksetzt.
+
+### <a name="auto-expanding-archive"></a>Automatisch expandierendes Archiv
+
+[Übersicht über die unbegrenzte Archivierung](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(aktualisiert)<br>Klärung hinzugefügt, dass Sie keinen Ordner im Hauptarchiv oder ein zusätzliches Archiv löschen können, wenn die automatisch erweiterte Archivierung für ein Postfach aktiviert ist.
+
+### <a name="compliance-scorecompliance-manager"></a>Kompatibilitätsbewertung/Compliance-Manager
+
+Alle [Kompatibilitäts Bewertungspunkte](compliance-score.md) und [Compliance-Manager-](compliance-manager-overview.md) Themen reflektieren Updates für diese Produkte, die Anfang April veröffentlicht wurden (beide befinden sich noch in der öffentlichen Vorschau). Zu den wichtigsten Updates gehören:
+- Vereinfachter Prozess zum Erstellen und Ändern von Vorlagen
+- Versions Verwaltungs Hinweis und-Steuerung für Vorlagen und Aktionen
+- Synchronisieren allgemeiner Aktionen über Gruppen hinweg
+- Sprachunterstützung jetzt erweitert auf Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch
+
+### <a name="communication-compliance"></a>Kommunikationscompliance
+
+[Fallstudie: contoso konfiguriert schnell eine Offensive Sprachrichtlinie für Microsoft Teams, Exchange und jammern für Kommunikation](communication-compliance-case-study.md) (neu)<br>Eine schrittweise Fallstudie für Bildungseinrichtungen und Organisationen für kleine Unternehmen, die Ihnen dabei helfen, eine Offensive Sprachrichtlinie schnell zu konfigurieren. Erhöhte Anforderungen von Kunden als Organisationen Ramp up für COVID19 Antworten.
+
+[Erste Schritte mit der Kommunikations Kompatibilität](communication-compliance-configure.md) (aktualisiert)<br>Aktualisierte Lizenzierungs-und Berechtigungsanforderungen.
+
+### <a name="customer-key"></a>Kundenschlüssel
+
+[Rollen oder Drehen eines Kunden Schlüssels oder eines Verfügbarkeits Schlüssels](customer-key-availability-key-roll.md) (aktualisiert)<br>Organisatorische Aktualisierungen, die klären, welche Tasten Sie ausführen können und welche nicht.
+
+Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](customer-key-availability-key-understand.md) (aktualisiert)<br>Klärung rund um Exchange Online Architektur für den Kundenschlüssel hinzugefügt.
+
+### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
+
+[Übersicht über die Verhinderung von Datenverlust](data-loss-prevention-policies.md) (aktualisiert)<br>Aktualisiert, wie lange es dauert, bis Aufbewahrungs Bezeichnungen wirksam werden und die Standardrichtlinien für das Verhalten ohne Benachrichtigung konfiguriert sind.
+
+### <a name="ediscovery"></a>eDiscovery
+
+[Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md) (neu)<br>Enthält Informationen zu Lizenzierungs-und Berechtigungsanforderungen, Schritte zum Konfigurieren globaler Einstellungen und zum Erstellen eines neuen Falles sowie eine exemplarische Vorgehensweise des erweiterten eDiscovery-Workflows.
+
+[Ruhestand von vorversions-eDiscovery-Tools](legacy-ediscovery-retirement.md) (aktualisiert)<br>Die Ruhestands Daten wurden aufgrund der öffentlichen Gesundheitssituation drei Monate verschoben. Aktualisierter Artikel zitiert die neuen Pensions Termine.
+
+### <a name="insider-risk-management"></a>Insider-Risikomanagement
+
+[Erste Schritte mit dem Insider Risikomanagement](insider-risk-management-configure.md) (aktualisiert)<br>Aktualisierte Lizenzierungs-und Berechtigungsanforderungen.
+
+[Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md) (aktualisiert)<br>Verdeutlichte Verarbeitungsgeschwindigkeit und erforderliche Zeit für die Anwendung. Details dazu hinzugefügt, wie keine adressbuchrichtlinien vorhanden sein sollten. Auch verschiedene PowerShell-Codeaktualisierungen, einschließlich des neuen Code für die Filterung.
+
+[Informationsbarrieren](information-barriers.md) (aktualisiert)<br>Einige fehlerhafte Links und aktualisierte PDF-Links und Titel wurden behoben. Je nach Kundenfeedback wurde klargestellt, dass Informationsbarrieren nur zwei-Wege-Einschränkungen unterstützen. Einseitige Einschränkungen (beispielsweise Marketing können mit Day Traders kommunizieren, aber Day Trader können nicht mit Marketing kommunizieren) werden nicht unterstützt.
+
+[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md) (aktualisiert)<br>Abschnitt "neues Problembehandlungsszenario" hinzugefügt. Link zu den Schritten zum erneuten Anwenden von Informationsbarrieren hinzugefügt.
+
+### <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
+
+[Verwalten von Office 365 Nachrichtenverschlüsselung](manage-office-365-message-encryption.md) (aktualisiert)<br>Aktualisiert, um widerzuspiegeln, dass die Force-Wrapperfunktion ein Standard-OM-Feature ist, nicht ein erweitertes. PowerShell-Beispiele wurden erneut verfasst, um alle Verweise auf die Funktionen Widerruf und Ablaufdatum für erweiterte OM-Features auszuschließen.
+
+[Häufig gestellte Fragen zur Nachrichtenverschlüsselung](ome-faq.md) (aktualisiert)<br>Es wurde klargestellt, dass nur Outlook für das Internet Ad-hoc-Verschlüsselung anwenden kann. Ebenso erben Nachrichten und ungeschützte PDF-Anlagen für alle Outlook-Clients den OM-Schutz der Datenverlust Verhinderung (DLP)-Richtlinie oder der e-Mail-Fluss Regel in Exchange Online.
+
+### <a name="privileged-access-management"></a>Verwaltung des privilegierten Zugriffs
+
+[Erste Schritte mit privilegierter Zugriffsverwaltung](privileged-access-management-configuration.md) (aktualisiert)<br>Aktualisierte Lizenzierungs-und Berechtigungsanforderungen.
+
+### <a name="pst-import"></a>PST-Import
+
+[FAQ zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md) (aktualisiert)<br>FAQ dazu hinzugefügt, wie PST-Importprozesse doppelte e-Mail-Elemente verarbeiten.
+
+### <a name="retention"></a>Aufbewahrung
+
+[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md) (aktualisiert)<br>Dazu gehören:
+
+- Inhalts Pfade für Aufbewahrungsrichtlinien für "Aufbewahrung" und "nur löschen" hinzugefügt (zuvor erklärte Inhalts Pfade werden nur beibehalten und dann gelöscht).
+- [Aktualisierter Abschnitt](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) , in dem erläutert wird, dass Sie für SharePoint-Standorte jetzt eine URL angeben, anstatt eine Website auszuwählen. Dies bedeutet, dass Sie keine Berechtigungen für den Zugriff auf die Website benötigen, um Sie in eine Aufbewahrungsrichtlinie einzubeziehen.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+[ Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md) (aktualisiert)<br>Veraltete Details zur Bezeichnungs Verwaltung im Azure-Portal hinzugefügt, einschließlich eines Links zum [offiziellen Hinweis](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+
+[Erste Schritte mit Sensitivitäts Bezeichnungen](get-started-with-sensitivity-labels.md) (aktualisiert)<br>Informationen zur neuen Leserrolle "Sensitivitäts Bezeichnung" hinzugefügt, die anfänglich nur für die Labeling PowerShell-Cmdlets unterstützt wird.
+
+[Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien](create-sensitivity-labels.md#removing-and-deleting-labels) (aktualisiert)<br>In "neuer Abschnitt" werden die Konsequenzen des Entfernens und Löschens von Bezeichnungen erläutert.
+
+[Verwenden von Sensitivitäts Bezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md) (aktualisiert)<br>Dazu gehören:
+
+- Azure AD Anweisungen entfernt und stattdessen mit den [Azure AD autorisierenden Informationen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)verknüpft.
+- Die [Vorgehensweise zum Konfigurieren von Website-und Gruppeneinstellungen beim Erstellen oder Bearbeiten von Sensitivitäts Bezeichnungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) mit Informationen zum **Datenschutz von Office 365 Einstellung von Gruppen verbundenen Microsoft Teams-Websites** , die die neue Option **keine** enthält, wurden aktualisiert.
+- Hinweis hinzugefügt, in dem beschrieben wird, wie nur Beschriftungen mit Website-und Gruppeneinstellungen zur Auswahl stehen, wenn Benutzer Teams, Gruppen und Websites erstellen. Diese Funktionalität wird schrittweise in Organisationen eingeführt.
+
+[Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md) (aktualisiert)<br>[Neuer Abschnitt](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) mit Beispiel Verschlüsselungseinstellungen für einige der am häufigsten verwendeten Konfigurationen zum Schutz von Dokumenten und e-Mails.
+
+[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (aktualisiert)<br>Erläuterung der Verhaltensunterschiede zwischen integrierter Bezeichnungs Funktion und dem Azure Information Protection Unified Labeling-Client.
+
+[Aktivieren von Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) (aktualisiert)<br>Dazu gehören:
+
+- Klargestellt, dass durch Aktivieren dieser Vorschau die Schaltfläche **Empfindlichkeit** auf dem Menüband für Bezeichnungen in Office für das Internet sowie unterstützende Dokumente angezeigt wird, die beschriftet und verschlüsselt sind.
+- Die Anweisungen für Office 365 Multi-Geo wurden aktualisiert.
+- Die Liste der Einschränkungen enthält eine neue Einträge, die einschließen, was geschieht, wenn ein Computer offline geht oder in den Standbymodus wechselt und eine Bezeichnung gelöscht wird.
+
+[Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md) (aktualisiert)<br>Dazu gehören:
+
+- Lizenzierungsinformationen wurden in die [ersten Schritte mit Sensitivitäts Beschriftungen](get-started-with-sensitivity-labels.md)verschoben.
+- In [neuem Abschnitt](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps) wird erklärt, wie Sie in Office-Desktop-Apps integrierte Bezeichnungen eine Abonnement Edition von Office anstelle von eigenständigen Editionen verwenden müssen.
+- Die Tabellen der unterstützten apps umfassen die Office-App für IOS und Android und die Konfiguration, mit der Benutzerberechtigungen für Word, Excel und PowerPoint zuweisen können, die jetzt auf den monatlichen Kanal für Windows und Mac übertragen werden.  
+- [Neuer Abschnitt](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) , in dem erläutert wird, wie Sie die Gruppenrichtlinieneinstellung verwenden können, um die integrierte Kennzeichnung zu deaktivieren, wenn Sie derzeit andere Bezeichnungs Lösungen verwenden, die Sie für Ihre Windows-Computer weiterhin verwenden möchten. 
+- [Informationsrechteverwaltung (IRM)-Optionen und Sensitivitäts Bezeichnungen](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) wurden mit der Empfehlung aktualisiert, Bezeichnungen zu verwenden, die Verschlüsselung anstelle von IRM-Optionen anwenden, mit einer Erläuterung möglicher Konsequenzen, wenn die beiden Schutzlösungen gemischt werden.
+
+### <a name="trainable-classifiers"></a>Schulungs Klassifizierer
+
+[Erste Schritte mit Schulungs Klassifizierern (Vorschau)](classifier-getting-started-with.md) (aktualisiert)<br>Informationen dazu hinzugefügt, wie die anstößige Sprachvorlage veraltet ist. Außerdem wurde eine Tabelle mit den 25 wichtigsten Codesprachen hinzugefügt, die in der integrierten Klassifizierung des Quellcodes verwendet wurden.
+
 ## <a name="february-2020"></a>Februar 2020
+
+> [!NOTE]
+> Die in den Vormonaten aufgeführten Artikel wurden möglicherweise seither aktualisiert, verschoben oder gelöscht. Daher sind einige der unten aufgeführten Details möglicherweise veraltet, und es sind möglicherweise Links Fehler aufgetreten.
 
 ### <a name="auditing"></a>Überwachung
 

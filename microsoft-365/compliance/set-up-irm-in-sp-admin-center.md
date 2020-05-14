@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: In diesem Artikel erfahren Sie, wie Sie SharePoint Online IRM über Microsoft Azure Active Directory Rights Management Services (RMS) zum Schutz von SharePoint-Listen und-Dokumentbibliotheken verwenden.
-ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634777"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222372"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -77,6 +77,6 @@ SharePoint Online unterstützt die Verschlüsselung der folgenden Dateitypen:
 
 Nachdem Sie IRM für SharePoint Online aktiviert haben, können Sie mit der Anwendung der Rechteverwaltung auf Listen und Bibliotheken beginnen. Weitere Informationen finden Sie unter [Anwenden der Verwaltung von Informationsrechten auf eine Liste oder Bibliothek](apply-irm-to-a-list-or-library.md).
   
-Der neue OneDrive-synchronisierungsclient für Windows unterstützt jetzt das Synchronisieren von IRM-geschützten SharePoint-Dokumentbibliotheken und OneDrive-Speicherorten (solange die IRM-Einstellung für die Bibliothek nicht auf Ablauf von Dokumentzugriffs rechten festgelegt ist). Weitere Informationen oder erste Schritte zum Bereitstellen des neuen Synchronisierungs Clients finden Sie unter [deploy the New OneDrive Sync Client for Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
+Der neue OneDrive-synchronisierungsclient für Windows unterstützt jetzt das Synchronisieren von IRM-geschützten SharePoint-Dokumentbibliotheken und OneDrive-Speicherorten (solange die IRM-Einstellung für die Bibliothek nicht auf Ablauf von Dokumentzugriffs rechten festgelegt ist). Weitere Informationen oder erste Schritte zum Bereitstellen des neuen Synchronisierungs Clients finden Sie unter [deploy the New OneDrive Sync Client for Windows](https://docs.microsoft.com/onedrive/deploy-on-windows).
   
 [Seitenanfang](#introduction)  

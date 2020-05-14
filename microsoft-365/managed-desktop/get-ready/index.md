@@ -6,10 +6,10 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43790611"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten auf die Registrierung in Microsoft Managed Desktop

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Microsoft 365, mit der Elemente automatisch in das Archivpostfach eines Benutzers verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222526"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation
 
@@ -298,6 +298,6 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     |Nie löschen  <br/> |Dieses Tag verhindert, dass Elemente durch eine Aufbewahrungsrichtlinie gelöscht werden.  <br/> |Integriert  <br/> |Persönlichen Dieses Tag kann von Benutzern angewendet werden.  <br/> |
     |Persönlich, 1 Jahre, in Archiv verschieben  <br/> |Verschiebt Elemente nach einem Jahr in das Archivpostfach.  <br/> |Integriert  <br/> |Persönlichen Dieses Tag kann von Benutzern angewendet werden.  <br/> |
    
-    > <sup>\*</sup>Benutzer können das Tool zum Wiederherstellen von gelöschten Elementen in Outlook und Outlook im Internet (früher als Outlook Web App bezeichnet) verwenden, um ein gelöschtes Element innerhalb des Aufbewahrungszeitraums für gelöschte Elemente wiederherzustellen, der standardmäßig 14 Tage in Exchange Online ist. Ein Administrator kann Windows PowerShell verwenden, um den Aufbewahrungszeitraum für gelöschte Elemente auf maximal 30 Tage zu verbessern. Weitere Informationen finden Sie unter: [Wiederherstellen von gelöschten Elementen in Outlook für Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) und [Ändern des Aufbewahrungszeitraums für gelöschte Elemente für ein Postfach in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>Benutzer können das Tool zum Wiederherstellen von gelöschten Elementen in Outlook und Outlook im Internet (früher als Outlook Web App bezeichnet) verwenden, um ein gelöschtes Element innerhalb des Aufbewahrungszeitraums für gelöschte Elemente wiederherzustellen, der standardmäßig 14 Tage in Exchange Online ist. Ein Administrator kann Windows PowerShell verwenden, um den Aufbewahrungszeitraum für gelöschte Elemente auf maximal 30 Tage zu verbessern. Weitere Informationen finden Sie unter: [Wiederherstellen von gelöschten Elementen in Outlook für Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) und [Ändern des Aufbewahrungszeitraums für gelöschte Elemente für ein Postfach in Exchange Online](https://www.microsoft.com/?ref=go)
   
 - Verwenden der **wiederherstellbaren Elemente 14 Tage verschieben in Archiv** Aufbewahrungs Tag hilft beim Freigeben von Speicherplatz im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers. Dies ist hilfreich, wenn das Postfach eines Benutzers in den Haltestatus versetzt wird, was bedeutet, dass das Postfach des Benutzers nicht immer endgültig gelöscht wird. Ohne das Verschieben von Elementen in das Archivpostfach ist es möglich, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" im primären Postfach erreicht wird. Weitere Informationen zu diesem Thema und dazu, wie Sie dies vermeiden können, finden Sie unter [increase the refundable Items Quota for Mailboxes on Hold](https://go.microsoft.com/fwlink/p/?LinkId=786479).

@@ -15,19 +15,19 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Verwenden Sie das Security & Compliance Center, um verschiedene Berichte für Ihre SharePoint Online und Exchange Online Organisation sowie Azure Active Directory-Berichte zu erhalten.  '
-ms.openlocfilehash: 9134cf403c8452ea457983226be04ba139bf72e6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4783c3171f5f49dd50d6da8f5f4835ba243f7ab3
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943284"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214707"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Berichte im Security & Compliance Center
 
 Sie können die Seite **Berichte anzeigen** im Security & Compliance Center verwenden, um schnell auf Überwachungsberichte für Ihre SharePoint Online und Exchange Online Organisationen zuzugreifen. Sie können auf der Seite **Berichte anzeigen** auch auf Azure Active Directory (AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD Überwachungsprotokoll zugreifen. Dies liegt daran, dass Ihr bezahltes Microsoft 365-Abonnement ein kostenloses Abonnement für Microsoft Azure enthält. Wenn Sie erstmals versuchen, auf diese Azure-Berichte zuzugreifen, müssen Sie einen einmaligen Registrierungsvorgang abschließen. 
   
 > [!TIP]
-> Weitere Berichte zu Aktivitäten in Ihrer Organisation finden Sie unter [Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+> Weitere Berichte zu Aktivitäten in Ihrer Organisation finden Sie unter [Aktivitätsberichte im Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports). 
   
  **Bevor Sie beginnen:**
   

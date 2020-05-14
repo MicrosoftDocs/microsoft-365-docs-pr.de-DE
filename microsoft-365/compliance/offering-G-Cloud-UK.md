@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066560"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214499"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -41,7 +41,7 @@ Erfahren Sie mehr über die Vorteile von Großbritannien g-Cloud V6 in der Micro
 
 Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Betreffende Cloud Services von Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud-App-Sicherheit
@@ -49,7 +49,7 @@ Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem
 - Intune
 - Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
@@ -105,7 +105,7 @@ Zusätzlich zu den Großbritannien-Rechenzentren verfügt Microsoft Cloud Servic
 
 **Wie kann ich Kopien der Berichte des Prüfers erhalten?**
 
-Das [Vertrauensstellungsportal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Microsoft-Ergebnisse mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
+Das [Vertrauensstellungsportal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) stellt unabhängig geprüfte Complianceberichte zur Verfügung. Sie können das Portal verwenden, um Überwachungsberichte anzufordern, damit ihre Prüfer die Microsoft-Ergebnisse mit ihren eigenen rechtlichen und behördlichen Anforderungen vergleichen können.
 
 ## <a name="resources"></a>Ressourcen
 

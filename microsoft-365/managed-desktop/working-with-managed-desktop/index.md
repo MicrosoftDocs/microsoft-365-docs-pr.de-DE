@@ -7,10 +7,10 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "37595411"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Arbeiten mit Microsoft Managed Desktop

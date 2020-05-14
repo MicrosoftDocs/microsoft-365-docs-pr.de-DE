@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034816"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224589"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe
 
@@ -137,7 +137,7 @@ Sie benötigen eine globale Administratorberechtigung zum Ausführen des Skripts
 
 3. Öffnen Sie eine PowerShell-Instanz als Administrator, und öffnen Sie den Ordner, in dem Sie das Skript gespeichert haben.
 
-4. Führen Sie diese PowerShell-Befehlszeile `.\Get-AllTenantRulesAndForms.ps1`wie folgt .\Get-AllTenantRulesAndForms.ps1
+4. Führen Sie diese PowerShell-Befehlszeile wie folgt `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretieren der Ausgabe
 
@@ -159,7 +159,7 @@ Wenn Sie einen der beiden Angriffs Beweise gefunden haben, ist die Korrektur ein
 
 1. Identifizieren Sie alle Geräte, die der Benutzer mit Outlook verwendet hat. Sie müssen alle von potentiellen Schadsoftware gereinigt werden. Lassen Sie den Benutzer sich nicht anmelden und e-Mail verwenden, bis alle Geräte bereinigt wurden.
 
-2. Befolgen Sie die Schritte unter [Löschen einer Regel](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) für jedes Gerät.
+2. Befolgen Sie die Schritte unter [Löschen einer Regel](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) für jedes Gerät.
 
 3. Wenn Sie sich über das vorhanden sein anderer Schadsoftware nicht sicher sind, können Sie die gesamte Software auf dem Gerät formatieren und neu installieren. Für mobile Geräte können Sie den Herstellern Schritte folgen, um das Gerät auf das Factory-Image zurückzusetzen.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über den Microsoft Compliance-Manager, ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust Portal.
-ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046283"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224642"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -150,22 +150,25 @@ Compliance-Manager kann Beweise für Ihre Implementierungsaufgaben zum Testen un
 
 Compliance-Manager stellt vorkonfigurierte [Vorlagen](working-with-compliance-manager.md#templates) für Bewertungen bereit und ermöglicht es Ihnen, angepasste Vorlagen für von Kunden verwaltete Steuerelemente für Ihre Compliance-Anforderungen zu erstellen. Neue Vorlagen werden erstellt, indem Steuerelementinformationen aus einer Excel-Datei importiert werden, oder Sie können eine Vorlage aus einer Kopie einer vorhandenen Vorlage erstellen.
 
-Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen lauten wie folgt:
+Die vorkonfigurierten Vorlagen lauten wie folgt:
 
-1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST-Cyber-Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / -[HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-10. [FedRAMP moderat](https://go.microsoft.com/fwlink/?linkid=2108869)
-11. [Dsgvo der Europäischen Union](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Vorschau)
-13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
-14. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+1. [Brasilien – allgemeine Datenschutz Gesetze (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
+2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Vorschau)
+3. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+4. [Dsgvo der Europäischen Union](https://go.microsoft.com/fwlink/?linkid=2108870)
+5. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
+6. [FedRAMP moderat](https://go.microsoft.com/fwlink/?linkid=2108869)
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [Australische Regierung ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
+9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+12. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+13. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+15. [NIST-Cyber-Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>Integration von Secure Score
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631405"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222697"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
@@ -42,7 +42,7 @@ Wenn Sie Exchange Online und Outlook in den Bereich der Richtlinien einbezogen h
 |Schutzebene|Richtlinien|Weitere Informationen|
 |:---------------|:-------|:----------------|
 |**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
-|        |[Sperrt Clients, die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
+|        |[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von Exchange Online in die Zuweisung von Cloud-apps|
 |        |[Anwenden von App-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass Outlook in der Liste der Apps enthalten ist. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
 |        |[Erfordern von genehmigten apps und App-Schutz](identity-access-policies.md#require-approved-apps-and-app-protection)|Einschließen von Exchange Online in die Liste der Cloud-apps|
 |        |[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einschließen von Exchange Online in die Liste der Cloud-apps|
@@ -61,7 +61,7 @@ Mit dieser Richtlinie wird verhindert, dass ActiveSync-Clients andere bedingte Z
 
 Mit den neuen Funktionen für die Office 365 Nachrichtenverschlüsselung (OM), die die Schutzfunktionen in Azure Information Protection nutzen, kann Ihre Organisation problemlos geschützte e-Mails für alle Benutzer auf jedem Gerät freigeben. Benutzer können geschützte Nachrichten mit anderen Microsoft 365-Organisationen sowie nicht-Kunden mithilfe von Outlook.com, Gmail und anderen e-Mail-Diensten senden und empfangen.
 
-Weitere Informationen finden Sie unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
+Weitere Informationen finden Sie unter [Einrichten neuer Office 365 Nachrichten Verschlüsselungsfunktionen](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

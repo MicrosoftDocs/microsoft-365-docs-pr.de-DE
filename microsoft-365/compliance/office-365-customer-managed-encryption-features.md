@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: In diesem Artikel erfahren Sie mehr über Verschlüsselungstechnologien, die Sie in Microsoft 365 verwalten und konfigurieren können.
-ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a70f737d1af10622b093bddc682cc493396fff45
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033613"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214221"
 ---
 # <a name="customer-managed-encryption-features"></a>Von Kunden verwaltete Verschlüsselungsfeatures
 
@@ -56,11 +56,11 @@ Secure/Multipurpose Internet Mail Extensions (S/MIME) ist ein Standard für die 
 
 ## <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
 
-Mit der [Office 365-Nachrichtenverschlüsselung](https://products.office.com/exchange/office-365-message-encryption) (OM), die auf dem [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) basiert, können Sie verschlüsselte und durch Rechte geschützte e-Mails an alle Personen senden. Mit OM werden Bedrohungen wie Draht anzapfungen und man-in-the-Middle-Angriffe sowie andere Bedrohungen wie unbefugter Zugriff von Daten durch einen nicht autorisierten Benutzer, der nicht über die entsprechenden Berechtigungen verfügt, abgefedert. Wir haben Investitionen getätigt, die Ihnen eine einfachere, intuitivere, sichere e-Mail-Erfahrung bieten, die auf dem Azure Information Protection-Bereich basiert. Sie können Nachrichten, die von Microsoft 365 gesendet werden, an Personen innerhalb oder außerhalb Ihrer Organisation schützen. Diese Nachrichten können über eine Vielzahl von e-Mail-Clients mit einer beliebigen Identität angezeigt werden, einschließlich Azure Active Directory, Microsoft-Konto und Google IDs. Weitere Informationen dazu, wie Ihre Organisation verschlüsselte Nachrichten verwenden kann, finden Sie unter [Office 365 Nachrichtenverschlüsselung](https://support.office.com/article/F87CB016-7876-4317-AE3C-9169B311FF8A).
+Mit der [Office 365-Nachrichtenverschlüsselung](https://products.office.com/exchange/office-365-message-encryption) (OM), die auf dem [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) basiert, können Sie verschlüsselte und durch Rechte geschützte e-Mails an alle Personen senden. Mit OM werden Bedrohungen wie Draht anzapfungen und man-in-the-Middle-Angriffe sowie andere Bedrohungen wie unbefugter Zugriff von Daten durch einen nicht autorisierten Benutzer, der nicht über die entsprechenden Berechtigungen verfügt, abgefedert. Wir haben Investitionen getätigt, die Ihnen eine einfachere, intuitivere, sichere e-Mail-Erfahrung bieten, die auf dem Azure Information Protection-Bereich basiert. Sie können Nachrichten, die von Microsoft 365 gesendet werden, an Personen innerhalb oder außerhalb Ihrer Organisation schützen. Diese Nachrichten können über eine Vielzahl von e-Mail-Clients mit einer beliebigen Identität angezeigt werden, einschließlich Azure Active Directory, Microsoft-Konto und Google IDs. Weitere Informationen dazu, wie Ihre Organisation verschlüsselte Nachrichten verwenden kann, finden Sie unter [Office 365 Nachrichtenverschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/ome).
 
 ## <a name="transport-layer-security"></a>Transport Layer Security   
 
-Wenn Sie eine sichere Kommunikation mit einem Partner sicherstellen möchten, können Sie eingehende und ausgehende Connectors zum Bereitstellen von Sicherheit und Nachrichtenintegrität verwenden. Sie können erzwungene eingehende und ausgehende TLS-Verbindungen für jeden Connector mit einem Zertifikat konfigurieren. Durch die Verwendung eines verschlüsselten SMTP-Kanals kann verhindert werden, dass Daten über einen man-in-the-Middle-Angriff gestohlen werden. Weitere Informationen finden Sie unter [how Exchange Online verwendet TLS zum Sichern von e-Mail-Verbindungen](https://support.office.com/article/How-Exchange-Online-uses-TLS-to-secure-email-connections-in-Office-365-4CDE0CDA-3430-4DC0-B489-F2C0736C929F).
+Wenn Sie eine sichere Kommunikation mit einem Partner sicherstellen möchten, können Sie eingehende und ausgehende Connectors zum Bereitstellen von Sicherheit und Nachrichtenintegrität verwenden. Sie können erzwungene eingehende und ausgehende TLS-Verbindungen für jeden Connector mit einem Zertifikat konfigurieren. Durch die Verwendung eines verschlüsselten SMTP-Kanals kann verhindert werden, dass Daten über einen man-in-the-Middle-Angriff gestohlen werden. Weitere Informationen finden Sie unter [how Exchange Online verwendet TLS zum Sichern von e-Mail-Verbindungen](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections).
 
 ## <a name="domain-keys-identified-mail"></a>Domänenschlüssel identifizierte e-Mail
 
