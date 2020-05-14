@@ -1,0 +1,34 @@
+---
+title: Office 365 ist jetzt Microsoft 365
+ms.author: sirkkuw
+author: sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- Adm_O365
+search.appverid:
+- MET150
+- MOE150
+- FRP150
+description: Erfahren Sie mehr über die neuen Microsoft 365-Abonnement Namen.
+ms.openlocfilehash: 35e7ecf4fad9903637a440e61de6604e932e7a68
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44223430"
+---
+# <a name="office-365-is-now-microsoft-365"></a>Office 365 ist jetzt Microsoft 365
+
+Wir ändern einige unserer Abonnementnamen für Office 365 und Microsoft 365. Sie brauchen nichts zu tun. Ihre Dienste, Apps und Funktionen bleiben gleich, ebenso wie der Preis Ihres Abonnements. Ihr Abonnementname wird automatisch im Microsoft 365 Admin Center aktualisiert, und Ihre Rechnungsangaben werden am oder nach dem 21. April 2020 aktualisiert.
+
+- **Office 365 Business Essentials** ist jetzt **Microsoft 365 Business Basic**
+- **Office 365 Business Premium** ist jetzt **Microsoft 365 Business Standard**
+- **Microsoft 365 Business** ist jetzt **Microsoft 365 Business Premium**
+- **Office 365 Business** ist jetzt **Microsoft 365 apps for Business**
+- **Office 365 ProPlus** ist jetzt **Microsoft 365 apps for Enterprise**
+
+[Weitere Informationen!](https://go.microsoft.com/fwlink/?linkid=2120533)

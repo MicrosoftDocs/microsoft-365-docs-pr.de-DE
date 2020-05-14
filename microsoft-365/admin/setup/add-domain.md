@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Fügen Sie Ihre Domäne zu Office 365 im Microsoft 365-Verwaltungszentrum hinzu, indem Sie einen DNS-Eintrag bei Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140775"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222339"
 ---
-# <a name="add-a-domain-to-office-365"></a>Hinzufügen einer Domäne zu Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140775"
 
 ::: moniker-end
     
-2. Wechseln Sie zur Seite **Setup** > **Domänen** . 
+2. Wechseln Sie zur Seite **Setup**  >  **Domänen** . 
 
 3. Wählen Sie **Domäne hinzufügen** aus.
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140775"
     
 5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domäne bei GoDaddy oder 1&amp;1 registriert ist, wählen Sie**weiter** **Anmelden** > aus, und Microsoft[wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
+    1. Wenn Ihre Domäne bei GoDaddy oder 1 1 registriert ist &amp; , wählen Sie weiter **Anmelden**aus,  >  **Next** und Microsoft [wird Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md).
     
     2. Sie können auch eine E-Mail mit einem Prüfcode an den registrierten Kontakt für die Domäne senden lassen. Wenn Sie diese E-Mail nicht erkennen oder keinen Zugriff darauf haben, können Sie die dritte Option verwenden.
     
@@ -113,7 +113,7 @@ ms.locfileid: "44140775"
 
 Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz für eine Website oder einen Drittanbieterdienst hinzuzufügen.
 
-1. Melden Sie sich beim Microsoft Admin Center an <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Melden Sie sich beim Microsoft Admin Center an <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Wechseln Sie zur Seite **Einstellungen**  > **Domänen**.
 
@@ -123,7 +123,7 @@ Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz f
 
 5. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Datensatz ein.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
 
 ## <a name="registrars-with-domain-connect"></a>Registrierungsstellen mit Domäne Connect
 
@@ -136,7 +136,7 @@ Im Assistenten bestätigen wir lediglich, dass Sie die Domäne besitzen und dann
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domänen Verbindungs Registrierungsstellen, die in Microsoft 365 integriert sind
 
-- [1&amp;1 Ionos](https://www.1and1.com/)
+- [1 &amp; 1 Ionos](https://www.1and1.com/)
 - [123reg wußte](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)

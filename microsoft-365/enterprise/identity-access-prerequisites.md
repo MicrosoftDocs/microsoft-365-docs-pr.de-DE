@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625206"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222589"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts-und Gerätezugriffs Richtlinien
 
@@ -42,7 +42,7 @@ Vor dem Implementieren der empfohlenen Richtlinien für Identitäts-und Geräte 
 | **Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies könnte das Hinzufügen zu einer Richtlinien Ausschlussgruppe oder das Registrieren neuer MFA-Informationen für Sie sein. Bevor Sie eine dieser sicherheitsrelevanten Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung macht. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen. | Ja | Ja | Ja | Ja |  
 | [Konfigurieren des Kenn Wort Rückschreibens für lokale Ad](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Durch das Kenn Wort Rückschreiben können Azure AD festlegen, dass Benutzer ihre lokalen Kennwörter ändern müssen, wenn eine risikoreiche Konto Gefährdung erkannt wird. Sie können dieses Feature mit Azure AD Connect auf zwei Arten aktivieren: entweder aktivieren Sie das Rückschreiben von **Kennwörtern** im optionalen Features-Bildschirm des Setup-Assistenten für Azure AD Connect, oder aktivieren Sie es über Windows PowerShell. |   | Ja | Ja | Ja |
 | [Aktivieren Sie Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable). Mit Azure AD Identity Protection können Sie potenzielle Sicherheitsrisiken erkennen, die sich auf die Identitäten Ihrer Organisation auswirken, und eine automatisierte Behebungs Richtlinie auf niedrigem, mittlerem und hohem Anmelde Risiko und Benutzer Risiko konfigurieren.  | Ja | Ja | Ja | Ja |
-| **Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (MFA). Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint Online und OneDrive für Unternehmen standardmäßig aktiviert. | Ja | Ja | Ja | Ja |
+| **Aktivieren Sie die moderne Authentifizierung** für [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) und [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (MFA). Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint Online und OneDrive für Unternehmen standardmäßig aktiviert. | Ja | Ja | Ja | Ja |
 ||||||
 
 
@@ -69,7 +69,7 @@ Die folgenden e-Mail-Clients unterstützen moderne Authentifizierung und bedingt
 
 |Plattform|Client|Version/Hinweise|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016, 2013 [Aktivieren der modernen Authentifizierung](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [erforderliche Updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016, 2013 [Aktivieren der modernen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), [erforderliche Updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook für iOS|[Neueste Version](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook für Android|[Neueste Version](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
@@ -91,7 +91,7 @@ Die folgenden Clients werden empfohlen, wenn eine Richtlinie für sichere Dokume
 |macOS|Öffentliche Vorschau|Öffentliche Vorschau|Nicht zutreffend|Nicht zutreffend|Nicht unterstützt|
 |Linux|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|Nicht unterstützt|
 
-<sup>*</sup>Erfahren Sie mehr über die Verwendung von bedingtem Zugriff mit dem [OneDrive-synchronisierungsclient](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
+<sup>*</sup>Erfahren Sie mehr über die Verwendung von bedingtem Zugriff mit dem [OneDrive-synchronisierungsclient](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365-Clientunterstützung
 Weitere Informationen zur Clientunterstützung finden Sie in den folgenden Artikeln:
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter [Baseline Security Policy for Azure AD Ad
 Weitere Empfehlungen umfassen Folgendes:
 - Verwenden Sie Azure AD Privileged Identity Management zum Reduzieren der Anzahl der persistenten Administratorkonten. Weitere Informationen finden Sie unter [Beginn der Verwendung von PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Verwenden Sie die privilegierte Zugriffsverwaltung in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) , um Ihre Organisation vor Verstößen zu schützen, die vorhandene privilegierte Administratorkonten mit dem ständigen Zugriff auf vertrauliche Daten oder den Zugriff auf wichtige Konfigurationseinstellungen verwenden können. 
-- Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre nicht-administrative Verwendung verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist. [Microsoft 365-Administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) Rollen haben wesentlich mehr Berechtigungen als Microsoft 365-Dienste.
+- Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre nicht-administrative Verwendung verfügen und nur dann Ihr Administratorkonto verwenden, wenn es erforderlich ist, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist. [Microsoft 365-Administrator](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) Rollen haben wesentlich mehr Berechtigungen als Microsoft 365-Dienste.
 - Führen Sie bewährte Methoden zum Sichern von privilegierten Konten in Azure AD wie in diesem [Artikel](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)beschrieben aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
