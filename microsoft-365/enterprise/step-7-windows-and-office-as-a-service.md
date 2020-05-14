@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen zur Vorbereitung für Windows und Office als Dienst in Ihrer Umgebung.
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011615"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222673"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Schritt 7: Windows und Office als Dienst
 
@@ -95,7 +95,7 @@ Windows 10 bietet drei Wartungskanäle:
 
 Microsoft 365 bietet vier Wartungskanäle:
 
-- [**Office Insider-Programm** ](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) für Organisationen zum Testen und für Feedback zu den neuesten Office-Features und Funktionen, die sich noch in der Entwicklung befinden.
+- [**Office Insider-Programm** ](https://products.office.com/office-insider) für Organisationen zum Testen und für Feedback zu den neuesten Office-Features und Funktionen, die sich noch in der Entwicklung befinden.
 - Der **monatliche Kanal** stellt Benutzern die neuesten Funktionen von Office bereit, sobald diese verfügbar sind.
 - Der **halbjährliche Kanal** bietet nur zwei Mal pro Jahr neue Funktionen mit neuen Features.
 - Der **halbjährliche Kanal (gezielt)** ist ein vollständig unterstützter Build von Office, mit dem Pilotbenutzer und Anwendungskompatibilitätstester den nächsten halbjährlichen Kanal testen und überprüfen können.

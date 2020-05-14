@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie personenbezogene Daten suchen und finden, die den allgemeinen Datenschutzbestimmungen (DSGVO) in Office 365 unterliegen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e0d29697a28221b5ff998f5ce923c143bf7a0804
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208089"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214579"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -80,7 +80,7 @@ Beginnen Sie mit der Suche nach personenbezogenen Daten, indem Sie vertrauliche 
 
 Dieses Thema enthält eine Liste einiger vertraulicher Informationstypen, die für Bürger in der Europäischen Union gelten. Gehen Sie zum Security Center oder Compliance Center, um sich über neue Ergänzungen zu informieren, die bei der DSGVO-Compliance hilfreich sind.
 
-Weitere Informationen finden Sie im Artikel: [Liste der Typen vertraulicher Informationen und wonach sie suchen](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
+Weitere Informationen finden Sie im Artikel: [Liste der Typen vertraulicher Informationen und wonach sie suchen](https://docs.microsoft.com/microsoft-365/compliance/content-search).
 
 Typen vertraulicher Informationen definieren, wie der automatisierte Prozess bestimmte Informationstypen wie Kreditkartennummern und Bankkontonummern erkennt. Typen vertraulicher Informationen werden auch als Bedingungen bezeichnet. Ein Typ vertraulicher Informationen wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Darüber hinaus können auch belegende Hinweise wie Schlüsselwörter oder Prüfsummen zum Identifizieren eines Typs vertraulicher Informationen verwendet werden. Zuverlässigkeitsgrad und Näherung werden ebenfalls bei der Auswertung verwendet.
 
@@ -111,7 +111,7 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <p>SensitiveType:&quot;Französische Reisepassnummer&quot;</p>
 </blockquote>
 <p>Beschränken Sie die Suche auf SharePoint (schließt OneDrive for Business ein). Stellen Sie sicher, dass die Syntax genau stimmt und keine zusätzlichen Leerzeichen oder Tippfehler enthalten sind.</p>
-<p>Siehe <a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten</a>.</p></td>
+<p>Siehe <a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Überprüfen der Ergebnisse für jede Suche</p></td>
@@ -218,4 +218,4 @@ Beispiele:
 
 Hinweis: Bei "SensitiveType" wird die Groß-/Kleinschreibung beachtet, im Rest der Abfrage jedoch nicht.
 
-Sie können auch Eigenschaften und Operatoren verwenden, um zu veranschaulichen, wie Sie Abfragen optimieren können. Weitere Informationen und Beispiele finden Sie unter [Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).
+Sie können auch Eigenschaften und Operatoren verwenden, um zu veranschaulichen, wie Sie Abfragen optimieren können. Weitere Informationen und Beispiele finden Sie unter [Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites).

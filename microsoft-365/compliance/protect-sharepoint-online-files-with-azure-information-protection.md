@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite.'
-ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f905f673efe050e07ad26728628bce05073a26b8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632190"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214639"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Schützen von SharePoint Online-Dateien mit Azure Information Protection
 
@@ -42,7 +42,7 @@ Die Verwendung von Azure Information Protection für Dateien in SharePoint Onlin
 Einige wichtige Hinweise zu dieser Lösung:
 - Wenn Azure Information Protection-Verschlüsselung auf in Office 365 gespeicherte Dateien angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) können nur auf die Metadaten (einschließlich Microsoft 365-Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).
 
-- Bei dieser Lösung muss ein Benutzer eine Bezeichnung auswählen, die den Schutz von Azure Information Protection anwendet. Wenn Sie eine automatische Verschlüsselung benötigen und SharePoint die Dateien indizieren und überprüfen soll, sollten Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in SharePoint Online in Betracht ziehen. Wenn Sie eine SharePoint-Bibliothek für IRM konfigurieren, werden die Dateien automatisch beim Herunterladen für die Bearbeitung verschlüsselt. Für SharePoint IRM gelten einige Einschränkungen, die Ihre Entscheidung beeinflussen könnten. Weitere Informationen finden Sie unter [Einrichten von Information Rights Management (IRM) im SharePoint Admin Center](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+- Bei dieser Lösung muss ein Benutzer eine Bezeichnung auswählen, die den Schutz von Azure Information Protection anwendet. Wenn Sie eine automatische Verschlüsselung benötigen und SharePoint die Dateien indizieren und überprüfen soll, sollten Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in SharePoint Online in Betracht ziehen. Wenn Sie eine SharePoint-Bibliothek für IRM konfigurieren, werden die Dateien automatisch beim Herunterladen für die Bearbeitung verschlüsselt. Für SharePoint IRM gelten einige Einschränkungen, die Ihre Entscheidung beeinflussen könnten. Weitere Informationen finden Sie unter [Einrichten von Information Rights Management (IRM) im SharePoint Admin Center](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center).
 
 ## <a name="admin-setup"></a>Einrichten eines Administrators
 Führen Sie zuerst die Anleitungen unter [Aktivieren von Azure RMS mit Microsoft 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) für Ihr Microsoft 365-Abonnement aus.

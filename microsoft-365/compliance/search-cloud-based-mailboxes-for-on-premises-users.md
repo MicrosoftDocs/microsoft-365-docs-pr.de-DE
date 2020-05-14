@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von MicrosoftTeams (so genannte 1xN-Chats) für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034572"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214599"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer
 
@@ -59,7 +59,7 @@ Geben Sie die folgenden Informationen an, wenn Sie die Anforderung an den Micros
   
 - Der Standarddomänenname Ihrer Organisation.
 
-- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von ** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
 

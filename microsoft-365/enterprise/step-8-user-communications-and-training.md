@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Office 365 ProPlus vorbereiten.
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Erfahren Sie, wie Sie Ihre Endbenutzer anhand von Benutzerkommunikation und Schulungen auf Windows 10 und Microsoft 365 Apps for Enterprise vorbereiten.
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085120"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222661"
 ---
 # <a name="step-8-user-communications-and-training"></a>Schritt 8: Benutzerkommunikation und Schulung
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085120"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Schritt 8: Benutzerkommunikation und Schulung</strong></p>
-<p>Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Office 365 ProPlus umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</p></td>
+<p>Stellen Sie sicher, dass Ihre Benutzer über neue Oberflächen und neue Arbeitsmethoden informiert sind, wenn Sie Ihre Computer auf Windows 10 und Microsoft 365 Apps for Enterprise umstellen. Erfahren Sie, wie Sie mit Microsoft FastTrack, Schulungsmaterialien und Kommunikationsvorlagen die Akzeptanz beim Endbenutzer beschleunigen können, und lernen Sie neue Möglichkeiten zur Überwachung der Benutzerakzeptanz und -verwendung kennen.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ Es gibt jedoch auch eine gute Nachricht: Wenn Sie von Windows 7 und Office 2010 
 
 ## <a name="getting-ready-for-new-experiences"></a>Vorbereitung auf neue Oberflächen
 
-Wir fangen bei Office an: Wenn Sie Office 365 ProPlus das erste Mal bereitstellen, dann können Sie die Vorteile herausstellen, die sich durch die Anmeldung bei den Office-Apps und durch das Speichern von Dateien in OneDrive oder SharePoint ergeben, wie zum Beispiel die einfachere gemeinsame Verwendung, geringere Dateiverzweigungen und die Aktivierung der gemeinsamen Dokumenterstellung in Echtzeit.
+Wir fangen bei Office an: Wenn Sie Microsoft 365 Apps for Enterprise das erste Mal bereitstellen, dann können Sie die Vorteile herausstellen, die sich durch die Anmeldung bei den Office-Apps und durch das Speichern von Dateien in OneDrive oder SharePoint ergeben, wie zum Beispiel die einfachere gemeinsame Verwendung, geringere Dateiverzweigungen und die Aktivierung der gemeinsamen Dokumenterstellung in Echtzeit.
 
 Detaillierte Kommunikations- und Schulungsvorlagen stehen für diese und andere lokale oder browserbasierten Apps, wie Teams und Planer, zur Verfügung.
 
@@ -61,7 +61,7 @@ Es gibt außerdem sichtbare Sicherheits- und Compliance-Steuerungen, die möglic
 
 Wenn Sie zum Beispiel die mehrstufige Authentifizierung aktiviert haben, verwendet diese Azure AD und schützt so die Benutzeranmeldung bei Ressourcen, indem eine Telefon-App oder PIN zum sicheren Zugriff auf die Dienste genutzt wird. Azure Information Protection erleichtert es Benutzern außerdem, Dokumente zu klassifizieren und mit Bezeichnungen zu versehen.
 
-[Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Einrichten der mehrstufigen Authentifizierung für Benutzer](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 Dies sind nur einige wenige der neuen Funktionen, die den Benutzern nun zur Verfügung stehen, und einige Benutzer werden überrascht sein – positiv, oder auch weniger positiv. Dies kann dazu führen, dass Sie mehr Support-Anfragen und -Tickets für den Helpdesk erhalten, insbesondere dann, wenn sich der normale Arbeitsablauf ändert.
 
@@ -77,15 +77,15 @@ Um die Risiken zu minimieren, die mit Änderungen der Benutzeroberfläche einher
 
 Das Konzept der phasenweisen Bereitstellung mit Bereitstellungsringen sieht wie folgt aus: Es beginnt mit kleinen Gruppen und weitet den Bereitstellungsumfang dann mit der Zeit kontrolliert aus. In der Regel sind zu dem Zeitpunkt, zu dem ein Kommunikations- und Schulungsplan entworfen ist, diese Ringe und deren Mitglieder bereits gebildet. Auf diese Weise können Sie das potenzielle Risiko verringern und Ihren Ansatz überprüfen, während Sie kontinuierlich das Bereitstellungsventil öffnen oder bei Bedarf die Aktivitäten anhalten, wenn beispielsweise mehr Anrufe beim Helpdesk eingehen als erwartet.
 
-Erstellen Sie Bereitstellungsringen am besten in Zusammenarbeit mit den Geschäftsbereichen und deren Vorgesetzten. Sie müssen über wichtige Daten und Zeiten Bescheid wissen, die Sie bei der Bereitstellung oder dem Vornehmen von Änderungen berücksichtigen müssen. Ohne eine sorgfältige Planung und die Unterstützung der Prozessbeteiligten wird es schwierig, Benutzer ins Boot zu holen und sie an die Änderungen zu gewöhnen, die bevorstehen.
+Erstellen Sie Bereitstellungsringe am besten in Zusammenarbeit mit den Geschäftsbereichen und deren Vorgesetzten. Sie müssen über wichtige Daten und Zeiten Bescheid wissen, die Sie bei der Bereitstellung oder dem Vornehmen von Änderungen berücksichtigen müssen. Ohne eine sorgfältige Planung und die Unterstützung der Prozessbeteiligten wird es schwierig, Benutzer ins Boot zu holen und sie an die Änderungen zu gewöhnen, die bevorstehen.
 
 ![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>Phase 1: Das IT Team und Early Adopter-Insider 
 
-Es ist in der Regel am besten, die Bereitstellung beim IT-Team und mit enthusiastischen Early Adoptern zu beginnen, die sich gerne für einen frühzeitigen Zugriff bereitstellen. Mit diesen „Insidern“ können Sie die Kommunikation, die Auswirkungen der Änderung und die Effektivität Ihrer Kommunikation und Schulungen testen. In dieser Phase führt die IT kleine Pilotprojekte durch und lernt Techniken zur Problembehandlung und Automatisierung kennen, die in der Phase der umfangreicheren Bereitstellung nützlich sein können.
+Es ist in der Regel am besten, die Bereitstellung beim IT-Team und mit enthusiastischen Early Adoptern zu beginnen, die gern für einen frühzeitigen Zugriff bereitstehen. Mit diesen „Insidern“ können Sie die Kommunikation, die Auswirkungen der Änderung und die Effektivität Ihrer Kommunikation und Schulungen testen. In dieser Phase führt die IT kleine Pilotprojekte durch und lernt Techniken zur Problembehandlung und Automatisierung kennen, die in der Phase der umfangreicheren Bereitstellung nützlich sein können.
 
-Es ist wichtig, in der anfänglichen Pilotphase engagierte Mitglieder zu haben, um so sicherzustellen, dass sie ihre Beobachtungen dokumentieren und Feedback zum Prozess geben. Außerdem ist es sinnvoll, Befürworter außerhalb des IT-Teams zu haben, die die neuen Funktionen durch Mund-zu-Mund-Propaganda bekannt machen und häufig die erste Anlaufstelle sind, wenn Benutzer in späteren Phasen Hilfe benötigen.
+Es ist wichtig, in der anfänglichen Pilotphase engagierte Mitglieder zu haben, um so sicherzustellen, dass sie ihre Beobachtungen dokumentieren und Feedback zum Prozess geben. Außerdem ist es sinnvoll, Befürworter außerhalb des IT-Teams zu haben, welche die neuen Funktionen durch Mund-zu-Mund-Propaganda bekannt machen und häufig die erste Anlaufstelle sind, wenn Benutzer in späteren Phasen Hilfe benötigen.
 
 ### <a name="phase-2-pilot"></a>Phase 2: Pilotprojekt 
 
@@ -105,13 +105,13 @@ Bei der Zusammenstellung von Schulungsinhalten haben Sie in der Produktivitätsb
 
 [Microsoft FastTrack-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
-Es gibt Hunderte von Themen, basierend auf dem, was für Ihre Organisation wesentlich ist: Erstellen von wirkungsvolleren Inhalten, Freigeben von Websites und Inhalten, Transformieren der Teamarbeit und Steigern der Produktivität mit modernen Geräten.
+Es gibt Hunderte von Themen, basierend auf dem, was für Ihre Organisation wesentlich ist: Erstellen wirkungsvollerer Inhalte, Freigeben von Websites und Inhalten, Transformieren der Teamarbeit und Steigern der Produktivität mit modernen Geräten.
 
 Wenn Sie Microsoft 365 oder Office 365 verwenden, stehen die Chancen gut, dass Sie berechtigt sind, über den Microsoft FastTrack-Dienst Hilfe beim Vorantreiben der Benutzerakzeptanz zu erhalten Dabei leiten unsere Mitarbeiter Sie während des Rollouts von Microsoft 365 – Windows, Office und EMS – durch bewährte Methoden zum Vorantreiben der Benutzerakzeptanz.
 
 #### <a name="microsoft-it-showcase"></a>Microsoft IT Showcase 
 
-Die Microsoft IT Showcase-Serie ist eine andere großartige Ressource für Inhalte im Zusammenhang mit der Bereitstellung von Windows 10. Sie enthält Zeitachsen und Zeitpläne, digitale Angebotsvorlagen, E-Mail-Vorlagen und Intranetinhalte. Diese basieren auf eigenen Materialien von Microsoft für die Bereitstellung von Windows 10, die für die Verwendung durch andere Organisationen angepasst wurden.
+Die Microsoft IT Showcase-Serie ist eine andere großartige Ressource für Inhalte im Zusammenhang mit der Bereitstellung von Windows 10. Sie enthält Zeitachsen und -pläne, digitale Angebotsvorlagen, E-Mail-Vorlagen und Intranetinhalte. Diese basieren auf eigenen Materialien von Microsoft für die Bereitstellung von Windows 10, die für die Verwendung durch andere Organisationen angepasst wurden.
 
 [Vorbereiten Ihrer Organisation für eine nahtlose Bereitstellung von Windows 10](https://www.microsoft.com/itshowcase/windows10deployment)
 
@@ -129,8 +129,8 @@ Führen Sie die Bereitstellung in dem Maße durch, mit dem Ihre IT-Abteilung, da
 
 Zusätzlich zu den Diagnosedaten, die Sie über die Analysewerkzeuge überwachen, können Sie auch die Nutzung von Office 365- und Microsoft 365-Diensten anhand von umfangreichen Nutzungsberichten nach Arbeitslast im Admin Center und unter Verwendung der Administratordashboards über Power BI detailliert überwachen. Dies sind hervorragende Tools, um Ziele bei der Einführung neuer Tools für die Zusammenarbeit festzulegen und nachzuverfolgen – z. B. Microsoft Teams – oder neue Methoden zum Freigeben von Dateien – z. B OneDrive.
 
-Der Prozess, bei dem die Benutzer neue Technologien akzeptieren und übernehmen, wird noch lange fortdauern, nachdem auf jedem PC in Ihrer Organisation Windows 10 und Office 365 ProPlus installiert wurden. Und wenn Sie sich nicht die Zeit nehmen, die Benutzer zu informieren und sie zu schulen, werden sie nicht unbedingt ihre Arbeitsweise ändern. Und nun, da die neuen Servicemodelle fortlaufend nach einem halbjährlichen Zeitplan neue Funktionen für Windows und optional monatlich für Office bereitstellen, ist die Kommunikation ein andauernder Prozess.
+Der Prozess, bei dem die Benutzer neue Technologien akzeptieren und übernehmen, wird noch lange fortdauern, nachdem auf jedem PC in Ihrer Organisation Windows 10 und Microsoft 365 Apps for Enterprise installiert wurden. Und wenn Sie sich nicht die Zeit nehmen, die Benutzer zu informieren und zu schulen, werden sie nicht unbedingt ihre Arbeitsweise ändern. Und nun, da die neuen Servicemodelle fortlaufend nach einem halbjährlichen Zeitplan für Windows und optional monatlich für Office neue Funktionen bereitstellen, ist die Kommunikation ein andauernder Prozess.
 
 ## <a name="previous-step"></a>Vorheriger Schritt 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Schritt 7: Windows und Office als Dienst](https://aka.ms/mdd7)

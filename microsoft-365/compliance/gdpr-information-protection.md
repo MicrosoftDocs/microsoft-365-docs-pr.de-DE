@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9564445f6b5a92479ba264947dbeaa109db76e14
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036218"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214569"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Schutz von Daten für die DSGVO mit Microsoft 365-Funktionen
 
@@ -57,8 +57,8 @@ Microsoft bietet eine empfohlene Konfiguration, die Sie als Ausgangspunkt verwen
 
 Der Bedrohungsschutz ist in Microsoft 365-Diensten integriert. Nachfolgend finden Sie einige Ressourcen für die ersten Schritte:
 
-- [Office 365-Sicherheits-Roadmap: Die obersten Prioritäten für die ersten 30 Tage, die 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). Diese Roadmap enthält Empfehlungen für das Implementieren von Funktionen. 
-- [Schutz vor Bedrohungen in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Erfahren Sie mehr über die Schutzaktion, die Sie im Microsoft 365 Security Center ergreifen können.
+- [Office 365-Sicherheits-Roadmap: Die obersten Prioritäten für die ersten 30 Tage, die 90 Tage und darüber hinaus](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). Diese Roadmap enthält Empfehlungen für das Implementieren von Funktionen. 
+- [Schutz vor Bedrohungen in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Erfahren Sie mehr über die Schutzaktion, die Sie im Microsoft 365 Security Center ergreifen können.
 - [Windows-Bedrohungsschutz](https://docs.microsoft.com/windows/security/threat-protection/). Weitere Informationen zu Windows Defender Advanced Threat Protection und anderen Funktionen in Windows 10.
 
 ## <a name="learn-more"></a>Weitere Informationen
