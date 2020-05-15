@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie die spezifischen Aufbewahrungszeitpläne Ihrer Organisation in einen Aktenplan einbinden, um Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus zu verwalten.
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949248"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231868"
 ---
 # <a name="records-management-in-microsoft-365"></a>Datensatzverwaltung in Microsoft 365
 
@@ -34,7 +34,7 @@ Die Datensatzverwaltungslösung unterstützt die folgenden Elemente:
 
 - **Migrieren und verwalten Sie Ihren Aufbewahrungsplan mit einem Dateiplan** und verwenden Sie den [Dateiplan-Manager](file-plan-manager.md), um Ihren bestehenden Aufbewahrungsplan einzubinden oder einen neuen mit Dateideskriptoren zu erstellen und Hierarchien zu expandieren.
 
-- **Erstellung von Aufbewahrungs- und Löschrichtlinien**. Definieren Sie Zeiträume für [Aufbewahrung](retention-policies.md#retaining-content-for-a-specific-period-of-time) und [Disposition](retention-policies.md#deleting-content-thats-older-than-a-specific-age), basierend auf zahlreichen Faktoren, z. B. dem Datum der letzten Änderung oder dem Erstellungsdatum.
+- **Erstellung von Aufbewahrungs- und Löschrichtlinien innerhalb der Datensatzbezeichnung**. Definieren Sie Zeiträume für [Aufbewahrung](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) und [Disposition](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age), basierend auf zahlreichen Faktoren, z. B. dem Datum der letzten Änderung oder dem Erstellungsdatum.
 
 - **Lösen Sie ereignisbasierte Aufbewahrung** mit [ereignisbasierter Aufbewahrung](event-driven-retention.md) aus.
 
