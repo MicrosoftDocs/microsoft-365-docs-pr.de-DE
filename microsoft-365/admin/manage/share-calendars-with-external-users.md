@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Erfahren Sie, wie Sie Ihren Benutzern die Freigabe Ihrer Kalender mit externen Benutzern für Besprechungen und Termine ermöglichen können. '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628040"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249872"
 ---
 # <a name="share-calendars-with-external-users"></a>Freigeben von Kalendern für externe Benutzer
 
@@ -39,10 +39,9 @@ Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie al
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivieren der Kalenderfreigabe mit dem Microsoft 365 Admin Center
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Dienste und Add-Ins</a>. 
+1. Wechseln Sie im Admin Center zu **Einstellungen** \> **Einstellungen**. 
     
-  
-2. Wählen Sie auf der Seite **Dienste &amp; -Add-ins** die Option **Kalender**aus.
+2. Wählen Sie auf der Registerkarte **Dienste** die Option **Kalender**aus.
   
 3. Wählen Sie auf der daraufhin geöffneten **Kalender** Seite aus, ob Ihre Benutzer ihre Kalender für Personen außerhalb Ihrer Organisation freigeben möchten, die über Microsoft 365 oder Exchange verfügen.
     
@@ -55,4 +54,3 @@ Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie al
 
 Nachdem die Freigabe für den Mandanten aktiviert wurde, können die Besitzer von Kalendern Einladungen an bestimmte Benutzer senden. Anweisungen finden Sie unter [Freigabe Ihres Kalenders in Outlook-Webanwendung](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx). 
   
-
