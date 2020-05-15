@@ -24,19 +24,19 @@ description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Bu
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140871"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232875"
 ---
 # <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Wenn Sie mit Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten 
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie das Abonnement mit dem ausstehenden Saldo. Wählen Sie im Abschnitt **Abrechnung** neben **Abonnement weist überfällige Zahlung auf** die Option **Saldo ausgleichen** aus.
 
@@ -107,7 +107,7 @@ Wenn Sie für Ihr Abonnement per Rechnung bezahlen, erhalten Sie eine E-Mail-Nac
 Wenn Ihr Abonnement für die Zahlung per Rechnung eingerichtet ist, können nicht wir Onlinezahlungen leider nicht direkt akzeptieren. Sie können Ihre [Zahlungsmethode jedoch in Zahlung per Kreditkarte oder Bankkonto ändern](change-payment-method.md), sodass der fällige Betrag am Ende des jeweiligen Dienstzeitraums automatisch von Ihrer Kreditkarte bzw. Ihrem Bankkonto abgebucht wird. Für Azure finden Sie Informationen unter [Ändern der zum Bezahlen eines Azure-Abonnements verwendeten Kreditkarte](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Wenn Sie die Zahlungsmethode auf automatische Kreditkartenzahlungen umstellen, müssen Sie zuerst alle offenen Posten bezahlen. Überprüfen Sie Ihre Rechnung auf Zahlungsoptionen und -anweisungen. Weitere Informationen finden Sie unter [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md).
+> Wenn Sie die Zahlungsmethode auf automatische Kreditkartenzahlungen umstellen, müssen Sie zuerst alle offenen Posten bezahlen. Überprüfen Sie Ihre Rechnung auf Zahlungsoptionen und -anweisungen. Weitere Informationen finden Sie Untergrund [Legendes zu Ihrer Rechnung oder Rechnung](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>Wohin sende ich meinen Scheck oder die Zahlung per elektronischem Zahlungsverkehr?
 
@@ -312,4 +312,4 @@ Wenn sich Ihre ursprünglichen Beweggründe für die Auswahl von Rechnung, Kredi
 
 [Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Grundlegendes zur Ihrer Rechnung](understand-your-invoice2.md)
+[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice2.md)

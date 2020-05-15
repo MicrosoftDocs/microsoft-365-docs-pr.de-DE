@@ -23,19 +23,19 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
 ms.custom: okr_SMB
-ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140923"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232887"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -51,13 +51,13 @@ In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie ein
   
 ::: moniker range="o365-worldwide"
 
-Weitere Informationen zu Ihrer Rechnung oder Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md) und [verstehen Ihrer Rechnung](understand-your-invoice2.md).
+Weitere Informationen zu Ihrer Rechnung oder Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder](view-your-bill-or-invoice.md) Rechnung und [verstehen Ihrer Rechnung oder](understand-your-invoice2.md)Rechnung.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Weitere Informationen zu Ihrer Rechnung oder Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md) und [verstehen Ihrer Rechnung](understand-your-invoice2.md).
+Weitere Informationen zu Ihrer Rechnung oder Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md) und [verstehen Ihrer Rechnung orinvoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie das Abonnement, das Sie ändern möchten. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
 
@@ -204,7 +204,7 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 
 [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md)
 
-[Grundlegendes zur Ihrer Rechnung](understand-your-invoice2.md)
+[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice2.md)
 
 [Bezahlen Ihres Abonnements](pay-for-your-subscription.md)
 

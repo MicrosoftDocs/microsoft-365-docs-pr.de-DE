@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung für das Microsoft 365 for Business-Abonnement. '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634992"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232805"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Wichtige Fragen zur Abrechnung für Microsoft 365 for Business
 
@@ -40,13 +40,13 @@ Wenn Sie keine Antwort auf Ihre Frage finden oder ein Problem mit Ihrer Rechnung
   
 ::: moniker range="o365-worldwide"
 
-Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie die Informationen zu [Ihrer Rechnung](understand-your-invoice2.md).
+Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie [Ihre Rechnung oder Rechnung](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie die Informationen zu [Ihrer Rechnung](understand-your-invoice2.md).
+Wenn Sie Hilfe bei der Interpretation der Gebühren benötigen, die auf Ihrer Rechnung angezeigt werden, oder wenn Sie die verwendeten Begriffe verstehen, lesen Sie [Ihre Rechnung oder Rechnung](understand-your-invoice2.md).
 
 ::: moniker-end
 

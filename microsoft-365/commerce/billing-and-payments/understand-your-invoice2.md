@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Ihrer Rechnung für Microsoft 365 for Business
+title: Grundlegendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Hier erfahren Sie, wie Sie die Gebühren-, Abrechnungs-und Zahlungsinformationen auf Ihrer Microsoft 365 for Business-Rechnung interpretieren und wie Sie die Bestellnummer ändern.
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Hier erfahren Sie, wie Sie Gebühren, Abrechnung und Zahlungsinformationen auf Ihrer Microsoft 365 for Business-Rechnung oder-Rechnung interpretieren und wie Sie die Bestellnummer ändern.
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045812"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232793"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 for Business
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business
 
 Jeden Monat erhalten Sie eine e-Mail, die Ihnen mitteilt, dass Ihre neue Abrechnungs Anweisung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   
@@ -104,7 +104,7 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Wenn Sie sich in der **Tabellen** Ansicht befinden, wählen Sie **Karten** aus, um Ansichten zu wechseln.
 

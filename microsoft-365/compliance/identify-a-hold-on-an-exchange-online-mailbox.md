@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Microsoft 365-Postfach gespeichert werden können. Zu diesen Aufbewahrungsarten zählen Beweissicherungsverfahren, eDiscovery-Haltestatus und Microsoft 365-Aufbewahrungsrichtlinien. Sie können auch ermitteln, ob ein Benutzer von einer unternehmensweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208666"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232070"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -41,7 +41,8 @@ Microsoft 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation ve
     - **Spezifische Aufbewahrungsrichtlinien für Standorte:** Hierbei handelt es sich um Richtlinien, die den Inhaltsspeicherorten bestimmter Benutzer zugewiesen sind. Verwenden Sie das Cmdlet **Get-Mailbox** in Exchange Online PowerShell, um Informationen zu Aufbewahrungsrichtlinien abzurufen, die bestimmten Postfächern zugewiesen sind.
 
     - **Organisationsweite Aufbewahrungsrichtlinien:** Dabei handelt es sich um Richtlinien, die allen Inhaltsspeicherorten in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien zu erhalten.
-  Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder bestimmte Standorte" in [Übersicht über Microsoft 365-Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    
+  Weitere Informationen finden Sie unter [Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder einen bestimmten Speicherort](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) Abschnitt.
 
 - **[Microsoft 365-Aufbewahrungs Bezeichnungen](labels.md):** wenn ein Benutzer eine Microsoft 365-Aufbewahrungs Bezeichnung anwendet (eine, die für das Aufbewahren von Inhalten oder das aufbewahren und Löschen von Inhalten konfiguriert ist *), wird* ein Aufbewahrungsplatz im Postfach abgelegt, als ob das Postfach in einem Beweissicherungsverfahren abgelegt oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner oder ein Element](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
 
@@ -97,7 +98,7 @@ In der folgenden Tabelle werden die unterschiedlichen Typen von organisationswei
 |Microsoft 365-Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und Chats von Teams angewendet werden    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und 1xN-Chats in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `mbx` Präfix beginnen. Hinweis 1xN-Chats werden im Postfach der einzelnen Chat Teilnehmer gespeichert.      |
 |Microsoft 365-Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen und Teams-Kanal Nachrichten angewendet wird     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organisationsweite Aufbewahrungsrichtlinien, die auf Microsoft 365-Gruppen und Kanal Nachrichten in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `grp` Präfix beginnen. Hinweis Kanal Nachrichten werden im Gruppenpostfach gespeichert, das einem Microsoft-Team zugeordnet ist.     |
 
-Weitere Informationen zu Aufbewahrungsrichtlinien, die auf Microsoft Teams angewendet werden, finden Sie im Abschnitt "Teams-Standort" unter [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Weitere Informationen zu Aufbewahrungsrichtlinien, die auf Microsoft Teams angewendet werden, finden Sie im Abschnitt "Teams-Standort" unter [Übersicht über Aufbewahrungsrichtlinien](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Grundlegendes zum Format des InPlaceHolds-Werts für Aufbewahrungsrichtlinien
 
@@ -117,7 +118,7 @@ In der folgenden Tabelle werden die drei möglichen Aufbewahrungsaktionen defini
 |**2**    |    Gibt an, dass die Aufbewahrungsrichtlinie zum Speichern von Elementen konfiguriert ist. Die Richtlinie löscht keine Elemente nach Ablauf des Aufbewahrungszeitraums.     |
 |**3**     |   Gibt an, dass die Aufbewahrungsrichtlinie so konfiguriert ist, dass Sie Elemente aufbewahrt und anschließend nach Ablauf des Aufbewahrungszeitraums gelöscht wird.      |
 
-Weitere Informationen zu Aufbewahrungsaktionen finden Sie im Abschnitt "Aufbewahrung von Inhalten für einen bestimmten Zeitraum" in Übersicht über [Aufbewahrungsrichtlinien](retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Weitere Informationen zu Aufbewahrungsaktionen finden Sie im Abschnitt "Aufbewahrung von Inhalten für einen bestimmten Zeitraum" in Übersicht über [Aufbewahrungsrichtlinien](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Schritt 2: Verwenden der GUID zum Identifizieren des Haltestatus
 
@@ -200,7 +201,7 @@ Um die Verzögerung zu entfernen, bevor Sie abläuft, können Sie je nach der Ei
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder
+Oder:
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -214,7 +215,7 @@ Um die Verzögerung für ein inaktives Postfach zu entfernen, führen Sie einen 
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-Oder
+Oder:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied

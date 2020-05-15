@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Wir erstellen kontinuierlich neue Artikel, aktualisieren bestehende und nehmen daran Änderungen basierend auf Ihrem Feedback vor. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221419"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231898"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -38,14 +38,14 @@ ms.locfileid: "44221419"
 
 [Verwenden der erweiterten Überwachung zum untersuchen gefährdeter Konten](mailitemsaccessed-forensics-investigations.md) (neu)<br>Neue Anleitungen zur Verwendung der neuen *MailItemsAccessed* -Post Fach Überwachungsaktion für forensische Untersuchungen.
 
-Mehrere Updates zum [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md), einschließlich:
+[Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md) (aktualisiert)<br>Dazu gehören:
 - [Neuer Abschnitt](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) mit Details zum "App@SharePoint"-Benutzer, der in Überwachungseinträgen aufgeführt ist.
 - [Neue Beschreibungen](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) von Quarantäneaktivitäten.
 - Im Abschnitt [Benutzer Verwaltungsaktivität](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) wurde klargestellt, dass das Ereignis "Benutzerkennwort ändern" ausgelöst wird, wenn ein Benutzer sein eigenes Kennwort ändert (über Self-Service Password Reset) und das Ereignis "Benutzerkennwort zurücksetzen" ausgelöst wird, wenn ein Administrator das Kennwort eines Benutzers zurücksetzt.
 
 ### <a name="auto-expanding-archive"></a>Automatisch expandierendes Archiv
 
-[Übersicht über die unbegrenzte Archivierung](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(aktualisiert)<br>Klärung hinzugefügt, dass Sie keinen Ordner im Hauptarchiv oder ein zusätzliches Archiv löschen können, wenn die automatisch erweiterte Archivierung für ein Postfach aktiviert ist.
+[Übersicht über die unbegrenzte Archivierung](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (aktualisiert)<br>Klärung hinzugefügt, dass Sie keinen Ordner im Hauptarchiv oder ein zusätzliches Archiv löschen können, wenn die automatisch erweiterte Archivierung für ein Postfach aktiviert ist.
 
 ### <a name="compliance-scorecompliance-manager"></a>Kompatibilitätsbewertung/Compliance-Manager
 

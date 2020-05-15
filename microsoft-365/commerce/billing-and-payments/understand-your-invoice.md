@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Ihrer Rechnung
+title: Verstehen Ihrer Rechnung oder Rechnung
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Hier erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen.
+description: Hier erfahren Sie, wie Sie Ihre Rechnung oder Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211404"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232817"
 ---
-# <a name="understand-your-invoice"></a>Informationen zu Ihrer Rechnung
+# <a name="understand-your-bill-or-invoice"></a>Verstehen Ihrer Rechnung oder Rechnung
 
 ::: moniker range="o365-21vianet"
 
@@ -36,7 +36,7 @@ ms.locfileid: "44211404"
 
 Die Rechnung enthält eine Zusammenfassung ihrer Gebühren und Anweisungen zur Zahlung. Sie können [Ihre Online Rechnung](#view-your-online-invoice) im Microsoft 365 Admin Center anzeigen. Sie können es auch im Portable Document Format (. pdf) herunterladen, um es per e-Mail zu senden.
 
-Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informationen Untergrund [Legendes zu Ihrer Rechnung für Microsoft 365 for Business](understand-your-invoice2.md).
+Wenn Sie nur ein Microsoft 365-Abonnement haben, finden Sie weitere Informationen Untergrund [Legendes zu Ihrer Rechnung oder Rechnung für Microsoft 365 for Business](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Grundlegendes zum Rechnungskopf
 

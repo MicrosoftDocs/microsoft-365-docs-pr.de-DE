@@ -13,19 +13,19 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Informationen zum Aktivieren und Verwalten von Drittanbieter-apps im Microsoft 365 Admin Center.
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141188"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232745"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Unterstützung für Drittanbieter-Apps ist in diesen Regionen verfügbar:
 
 Administratoren müssen apps von Drittanbietern aktivieren, bevor Sie Sie Benutzern zuweisen. Diese apps werden im Portal des Drittanbieters des Herausgebers aktiviert.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > **Produkte** > -<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  **Produkte**-  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie unter **Einstellungen & Aktionen** **die Option im Portal des Herausgebers verwalten**aus.
 
@@ -81,7 +81,7 @@ Hier sehen Sie, was Sie in jedem Portal tun können.
 
 | Microsoft 365 Admin Center | App-Publisher-Portal |
 | --- | --- |
-| Lizenzmenge ändern <br> Verwalten der Bezahlung Ihrer Rechnung <br> Verwalten der Bezahlung Ihrer Rechnung <br> Zahlungsmethode ändern (Kreditkarte) <br> Rechnung anzeigen <br> App-Abonnement kündigen | Einrichten der APP (einmal für jede APP) <br> Zuweisen von Lizenzen an Benutzer <br> Technischer Support |
+| Lizenzmenge ändern <br> Verwalten der Bezahlung Ihrer Rechnung <br> Verwalten der Bezahlung Ihrer Rechnung <br> Zahlungsmethode ändern (Kreditkarte) <br> Rechnung anzeigen <br> App-Abonnement kündigen | Einrichten der APP (einmal für jede APP) <br> Benutzern Lizenzen zuweisen <br> Technischer Support |
 
 Nachdem die App aktiviert wurde, bleibt sie aktiv, es sei denn, Sie wird abgebrochen, läuft ab oder wenn die Zahlung nicht aktuell gehalten wird. Diese Ereignisse ändern den App-Status in "deaktiviert". Wenn eine APP deaktiviert ist, kann Sie nicht erneut aktiviert werden. Um die APP weiterhin zu verwenden, kaufen Sie eine weitere Kopie davon.
 
@@ -89,7 +89,7 @@ Nachdem die App aktiviert wurde, bleibt sie aktiv, es sei denn, Sie wird abgebro
 
 Administratoren müssen apps von Drittanbietern aktivieren, bevor Sie Sie Benutzern zuweisen. Sie werden im Portal des Drittanbieters des Herausgebers aktiviert. Wählen Sie auf der Seite app unter **Einstellungen & Aktionen**den Link zum Zuweisen von Lizenzen aus.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > **Produkte** > -<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  **Produkte**-  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie unter **Einstellungen & Aktionen**den Link aus, der **im Portal von Publisher verwaltet**werden soll.
 
@@ -97,11 +97,11 @@ Administratoren müssen apps von Drittanbietern aktivieren, bevor Sie Sie Benutz
 
 Administratoren können die Anzahl der Lizenzen ändern, die Ihrer Organisation gehören. Dies gilt nur für apps, die mit Sitz basierter Preisgestaltung erworben wurden.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > **Produkte** > -<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  **Produkte**-  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie **Lizenzmenge ändern**aus.
 
-## <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
+## <a name="manage-payment-methods"></a>Zahlungsmethoden verwalten
 
 Software-as-a-Service-apps haben jeweils ein Abrechnungsprofil zugewiesen. Mit Abrechnungs Profilen können Sie anpassen, welche Produkte auf Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen. Hierzu zählen unter anderem folgende bewährte Methoden:
 
@@ -113,16 +113,16 @@ Weitere Informationen zu Abrechnungs Profilen finden Sie unter [Understanding Bi
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändern des Abrechnungs Profils für ein Software-as-a-Service-APP-Abonnement
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > **Produkte** > -<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  **Produkte**-  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie neben **Abrechnungsprofil**die Option **Bearbeiten**aus.
 
-Weitere Informationen zu Rechnungen finden Sie Untergrund [Legendes zu Ihrer Rechnung](billing-and-payments/understand-your-invoice.md).
+Weitere Informationen zu Rechnungen finden Sie Untergrund [Legendes zu Ihrer Rechnung oder Rechnung](billing-and-payments/understand-your-invoice.md).
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>Abbrechen eines Software-as-a-Service-APP-Abonnements
 
 Sie können eine Software-as-a-Service-APP von der APP-Seite abbrechen.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > **Produkte** > -<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  **Produkte**-  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">apps</a> .
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie unter **Einstellungen & Aktionen**die Option **Abonnement kündigen**aus.

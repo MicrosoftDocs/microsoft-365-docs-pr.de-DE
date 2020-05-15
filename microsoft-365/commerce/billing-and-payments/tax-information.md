@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business-Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045824"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232829"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -114,7 +114,7 @@ Entsprechend berechtigte Studierende und Lehrkräfte haben Anspruch auf Sonderpr
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Angeben Ihrer USt-ID (nur EU Länder)
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie die Abonnementkarte für das Abonnement, das Sie aktualisieren möchten.
 
@@ -186,4 +186,4 @@ Halten Sie die folgende Dokumentation für Sie parat:
   
 [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md)
   
-[Grundlegendes zur Ihrer Rechnung](understand-your-invoice.md)
+[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice.md)

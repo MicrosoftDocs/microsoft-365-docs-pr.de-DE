@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035041"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232052"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -72,7 +72,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf adressbuchrichtlinien, die beiden Arten von Richtlinien sind jedoch nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und das hierarchische Adressbuch aktiviert ist, werden alle Benutzer, die nicht in einem Segment mit Informationsbarrieren ***enthalten sind*** , das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online sehen.
 
-- PowerShell – derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das AzureRM-Modul.
+- PowerShell – derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das Azure PowerShell-Modul.
     - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Installieren des Azure PowerShell-Moduls](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
    1. Führen Sie die folgenden PowerShell-Cmdlets aus:
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ Nehmen Sie beispielsweise an, dass Sie die Kommunikation zwischen Segment a und 
 
     |Syntax  |Beispiel  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen *Manufacturing-HR* für ein Segment namens *Manufacturing*definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Sie in der *Fertigung* nur Personen in einem Segment namens *HR*kommunizieren. (In diesem Fall kann die *Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil von *HR*sind.)         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen *Manufacturing-HR* für ein Segment namens *Manufacturing*definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Sie in der *Fertigung* nur Personen in einem Segment namens *HR*kommunizieren. (In diesem Fall kann die *Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil von *HR*sind.)         |
 
     **Bei Bedarf können Sie mit diesem Cmdlet mehrere Segmente angeben, wie im folgenden Beispiel gezeigt.**
 
     |Syntax  |Beispiel  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>In diesem Beispiel haben wir eine Richtlinie definiert, mit der das *Forschungs* Segment nur mit *HR* und *Manufacturing*kommunizieren kann.        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>In diesem Beispiel haben wir eine Richtlinie definiert, mit der das *Forschungs* Segment nur mit *HR* und *Manufacturing*kommunizieren kann.        |
 
     Wiederholen Sie diesen Schritt für jede Richtlinie, die Sie definieren möchten, damit bestimmte Segmente nur mit bestimmten anderen Segmenten kommunizieren können.
 
@@ -248,7 +248,7 @@ Richtlinien für Informationsbarrieren werden erst wirksam, wenn Sie Sie auf akt
 
     Syntax`Start-InformationBarrierPoliciesApplication`
 
-    Nachdem Sie 30 `Start-InformationBarrierPoliciesApplication` Minuten ausgeführt haben, damit das System die Richtlinien anwenden kann. Das System wendet Richtlinien Benutzer nach Benutzer an. Im allgemeinen verarbeitet das System etwa 5.000 Benutzerkonten pro Stunde.
+    Nachdem Sie `Start-InformationBarrierPoliciesApplication` 30 Minuten ausgeführt haben, damit das System die Richtlinien anwenden kann. Das System wendet Richtlinien Benutzer nach Benutzer an. Im allgemeinen verarbeitet das System etwa 5.000 Benutzerkonten pro Stunde.
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>Anzeigen des Status von Benutzerkonten, Segmenten, Richtlinien oder Richtlinien Anwendungen
 
@@ -256,7 +256,7 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 
 |So zeigen Sie dies an  |Aktion  |
 |---------|---------|
-|Benutzerkonten     |Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern. <p>Syntax`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. <p>Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*. <p>(Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p>Dieses Cmdlet gibt Informationen zu Benutzern zurück, beispielsweise Attributwerte und alle angewendeten Richtlinien für Informationsbarrieren.|
+|Benutzerkonten     |Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern. <p>Syntax`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. <p>Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*. <p>(Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Dieses Cmdlet gibt Informationen zu Benutzern zurück, beispielsweise Attributwerte und alle angewendeten Richtlinien für Informationsbarrieren.|
 |Segmente     |Verwenden Sie das Cmdlet **Get-OrganizationSegment** .<p>Syntax`Get-OrganizationSegment` <p>Dadurch wird eine Liste aller Segmente angezeigt, die für Ihre Organisation definiert sind.         |
 |Richtlinien für Informationsbarrieren     |Verwenden Sie das Cmdlet **Get-InformationBarrierPolicy** . <p> Syntax`Get-InformationBarrierPolicy` <p>Dadurch wird eine Liste der definierten Richtlinien für Informationsbarrieren angezeigt, die definiert wurden, und deren Status.       |
 |Die neueste Informations Barriere-Richtlinienanwendung     | Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntax`Get-InformationBarrierPoliciesApplicationStatus`<p>    Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.       |
@@ -321,7 +321,7 @@ Contoso definiert drei Policen, wie in der folgenden Tabelle beschrieben:
 |---------|---------|
 |Richtlinie 1: verhindern, dass Verkäufe mit Forschung kommunizieren     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In diesem Beispiel wird die Richtlinie "Informations Barriere" als " *Sales-Research*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, können Benutzer, die sich im Vertriebs Segment befinden, nicht mit Benutzern im Forschungs Segment kommunizieren. Dies ist eine unidirektionale Richtlinie. Damit wird nicht verhindert, dass die Forschung mit dem Vertrieb kommuniziert. Dafür ist Richtlinie 2 erforderlich.      |
 |Richtlinie 2: verhindern, dass die Forschung mit dem Vertrieb kommuniziert     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In diesem Beispiel wird die Richtlinie "Informations Barriere" als " *Research-Sales*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, können Benutzer, die sich im Forschungs Segment befinden, nicht mit Benutzern im Vertriebs Segment kommunizieren.       |
-|Richtlinie 3: zulassen, dass die Fertigung nur mit HR und Marketing kommuniziert     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>In diesem Fall wird die Richtlinie "Informations Barriere" als " *Manufacturing-HRMarketing*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, kann Manufacturing nur mit HR und Marketing kommunizieren. Beachten Sie, dass HR und Marketing nicht von der Kommunikation mit anderen Segmenten eingeschränkt werden. |
+|Richtlinie 3: zulassen, dass die Fertigung nur mit HR und Marketing kommuniziert     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>In diesem Fall wird die Richtlinie "Informations Barriere" als " *Manufacturing-HRMarketing*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, kann Manufacturing nur mit HR und Marketing kommunizieren. Beachten Sie, dass HR und Marketing nicht von der Kommunikation mit anderen Segmenten eingeschränkt werden. |
 
 Wenn Segmente und Richtlinien definiert sind, wendet Contoso die Richtlinien durch Ausführen des Cmdlets **Start-InformationBarrierPoliciesApplication** an. 
 

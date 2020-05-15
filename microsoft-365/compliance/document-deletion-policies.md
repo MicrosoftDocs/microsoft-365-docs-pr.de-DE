@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Möglicherweise ist es erforderlich, dass Ihre Organisation Dokumente für einen bestimmten Zeitraum aufbewahrt, da Compliance, rechtliche oder andere geschäftliche Anforderungen erfüllt sind. Wenn Ihre Organisation Dokumente jedoch länger als erforderlich aufrecht erhält, erstellen Sie unnötiges rechtliches Risiko. Mit einer Richtlinie zum Löschen von Dokumenten können Sie das Risiko proaktiv verringern, indem Sie Dokumente in einer Website nach einem bestimmten Zeitraum löschen (beispielsweise können Sie fünf Jahre nach dem Erstellen der Dokumente die OneDrive für Unternehmen Websites von Benutzern löschen.
-ms.openlocfilehash: fba7af2c58b373e51aed93ce9a353a45528bb9f9
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 63bf9e83bb6ef793359e35943cbfc6244ef5078c
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942998"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232090"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Übersicht über Dokumentlöschrichtlinien
 
 > [!IMPORTANT]
-> Es wird empfohlen, dass Sie eine Aufbewahrungsrichtlinie oder Bezeichnungen verwenden, die im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im &amp; Security Compliance Center anstelle einer Dokument Löschungs Richtlinie erstellt wurden. Dokument Löschungsrichtlinien funktionieren weiterhin nebeneinander mit Aufbewahrungsrichtlinien, wenn Sie jedoch Inhalte an einer beliebigen Stelle in Office 365 beibehalten oder löschen müssen, wird empfohlen, eine Aufbewahrungsrichtlinie zu verwenden. Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsrichtlinie anstelle dieser Features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
-  
+> Es wird empfohlen, eine Aufbewahrungsrichtlinie aus dem Microsoft 365 Compliance Center anstelle einer Dokument Löschungs Richtlinie zu verwenden. Dokument Löschungsrichtlinien funktionieren weiterhin nebeneinander mit Aufbewahrungsrichtlinien, wenn Sie jedoch Inhalte an einer beliebigen Stelle in Office 365 beibehalten oder löschen müssen, wird empfohlen, dass Sie eine Aufbewahrungsrichtlinie oder Aufbewahrungs Bezeichnungen verwenden. Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsrichtlinie anstelle von älteren Features](retention-policies.md#use-a-retention-policy-instead-of-older-features).
+
 Möglicherweise ist es erforderlich, dass Ihre Organisation Dokumente für einen bestimmten Zeitraum aufbewahrt, da Compliance, rechtliche oder andere geschäftliche Anforderungen erfüllt sind. Wenn Ihre Organisation Dokumente jedoch länger als erforderlich aufrecht erhält, erstellen Sie unnötiges rechtliches Risiko. Mit einer Richtlinie zum Löschen von Dokumenten können Sie das Risiko proaktiv verringern, indem Sie Dokumente in einer Website nach einem bestimmten Zeitraum löschen (beispielsweise können Sie fünf Jahre nach dem Erstellen der Dokumente die OneDrive für Unternehmen Websites von Benutzern löschen.
   
 Dokument Löschungsrichtlinien sind leistungsfähig und dennoch flexibel – Sie können beispielsweise:
