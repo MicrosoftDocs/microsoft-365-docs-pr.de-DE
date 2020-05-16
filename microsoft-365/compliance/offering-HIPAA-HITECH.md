@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066458"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254208"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -54,12 +54,12 @@ Wenn Sie erfahren möchten, wie die Microsoft-Cloud Kunden dabei unterstützt, H
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
-- Microsoft Health Bot Service
+- Microsoft Cloud App Security
+- Microsoft Microsoft Healthcare Bot-Dienst
 - Microsoft Stream
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Microsoft 365 for Business
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automation (ehemals Microsoft Flow)-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossenen Dienst
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten

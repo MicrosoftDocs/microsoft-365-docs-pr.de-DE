@@ -11,12 +11,12 @@ metadata:
   ms.author: sirkkuw
   ms.date: 01/27/2020
   localization_priority: Priority
-  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.openlocfilehash: fadbb38cbf4174366993ec3c27b58b914173b2be
+  ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955313"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "44267135"
 landingContent:
 - title: Verwalten von Benutzern
   linkLists:
@@ -26,15 +26,17 @@ landingContent:
       url: add-users.md
     - text: Bearbeiten eines Benutzers
       url: add-users.md
+    - text: Hinzufügen von Gästen zu einer Microsoft 365-Gruppe
+      url: ../create-groups/manage-guest-access-in-groups.md
     - text: Hinzufügen einer weiteren e-Mail-Adresse
       url: ../email/add-another-email-alias-for-a-user.md
     - text: Erstellen eines freigegebenen Postfachs
       url: ../email/create-a-shared-mailbox.md
-    - text: Zuweisen von Lizenzen an Benutzer
+    - text: Benutzern Lizenzen zuweisen
       url: ../manage/assign-licenses-to-users.md
-    - text: Entfernen von Benutzerlizenzen
+    - text: Entfernen von Lizenzen von Benutzern
       url: ../manage/remove-licenses-from-users.md
-    - text: Verwenden Ihrer benutzerdefinierten Domäne
+    - text: Verwenden Sie Ihre benutzerdefinierte Domäne
       url: ../email/change-email-address.md
 - title: Verwalten von Gruppen
   linkLists:
@@ -54,7 +56,7 @@ landingContent:
     links:
     - text: Zurücksetzen eines Benutzerkennworts
       url: reset-passwords.md
-    - text: Festlegen, dass Kennwörter nie ablaufen
+    - text: Festlegen von Kennwörtern, sodass sie nie ablaufen
       url: set-password-to-never-expire.md
     - text: Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
       url: let-users-reset-passwords.md
@@ -68,7 +70,7 @@ landingContent:
     links:
     - text: Löschen eines Benutzers
       url: delete-a-user.md
-    - text: Zugreifen auf und Sichern der Daten eines ehemaligen Benutzers
+    - text: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
       url: get-access-to-and-back-up-a-former-user-s-data.md
     - text: Weiterleiten von e-Mails an einen anderen Benutzer
       url: ../email/configure-email-forwarding.md

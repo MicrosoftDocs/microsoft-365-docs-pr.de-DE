@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Erfahren Sie, wie Sie die Option "Release" für neue Produkt-und Funktionsupdates im Microsoft 365 Admin Center einrichten.
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249884"
+ms.locfileid: "44262317"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Einrichten der Standard-oder Targeted Release-Optionen
 
@@ -99,7 +99,7 @@ Sie können die Art und Weise ändern, wie Ihre Organisation Microsoft 365-Updat
 > [!IMPORTANT]
 > Es kann bis zu 24 Stunden dauern, bis die folgenden Änderungen in Microsoft 365 wirksam werden. Wenn Sie sich bei "Targeted Release" abmelden, nachdem Sie es zuvor aktiviert hatten, verlieren Ihre Benutzer möglicherweise Zugriff auf Features, deren geplanter Freigabetermin noch nicht erreicht ist. 
   
-1. Wechseln Sie im Admin Center zur **Settings**  >  **Einstellung**Einstellungen, und wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Freigabeeinstellungen**aus.
+1. Wechseln Sie im Admin Center zur **Settings**  >  **Einstellung org**(Einstellungen), und wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Freigabeeinstellungen**aus.
 
 5. Um die Zielversion zu deaktivieren, wählen Sie **Standard Version**aus, und wählen Sie dann **Änderungen speichern**aus. 
     

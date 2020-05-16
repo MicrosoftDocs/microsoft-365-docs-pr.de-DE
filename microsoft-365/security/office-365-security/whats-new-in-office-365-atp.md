@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036584"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267167"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Neuerungen in Office 365 ATP
 
@@ -35,6 +35,10 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
 > [!TIP]
 > Sie haben noch keine Office 365 ATP? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="marchapril-2020"></a>März/April 2020
+
+- Die Möglichkeit, [kompromittierte Benutzerkonten mit automatisierter Untersuchung und Antwort zu adressieren](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) , ist nun allgemein verfügbar.
+
 ## <a name="januaryfebruary-2020"></a>Januar/Februar 2020
 
 - [Allgemeine Verfügbarkeit von Kampagnen Ansichten in Office 365 ATP](campaigns.md)
@@ -46,7 +50,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Office 365 AT
     - Advanced not Filters (Dies sind Erweiterte Filteroptionen, die Include enthält, nicht enthalten, usw.)
     - Granulare Zeitfilter (Tag, Stunde, halbe Stunde) 
 
-- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zu **Threat Management** > **Review**.)
+- Das **Incidents** -Widget ist jetzt das **Action Center** -Widget. (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zu **Threat Management**  >  **Review**.)
 
 - [Sichere Dokumente in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(Vorschau)**
 

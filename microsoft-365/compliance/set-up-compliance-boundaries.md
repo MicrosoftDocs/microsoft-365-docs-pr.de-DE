@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231848"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262568"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
@@ -75,19 +75,20 @@ Obwohl mehr Benutzerattribute verfügbar sind, insbesondere für Exchange-Postf�
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Schritt 2: Datei eine Anforderung mit dem Microsoft-Support, um das Benutzerattribut mit OneDrive-Konten zu synchronisieren
 
-Im nächsten Schritt wird eine Anforderung mit dem Microsoft-Support gespeichert, um das Azure Active Directory-Attribut zu synchronisieren, das Sie in Schritt 1 für alle OneDrive-Konten in Ihrer Organisation ausgewählt haben. Nach dieser Synchronisierung wird das Attribut (und sein Wert), das Sie in Schritt 1 ausgewählt haben, einer ausgeblendeten verwalteten Eigenschaft in SharePoint namens zugeordnet `ComplianceAttribute` . Sie verwenden dieses Attribut, um den Such Berechtigungsfilter für OneDrive in Schritt 4 zu erstellen.
+Im nächsten Schritt wird eine Anforderung mit dem Microsoft-Support gespeichert, um das Azure Active Directory-Attribut zu synchronisieren, das Sie in Schritt 1 für alle OneDrive-Konten in Ihrer Organisation ausgewählt haben. Nach dieser Synchronisierung wird das Attribut (und sein Wert), das Sie in Schritt 1 ausgewählt haben, einer ausgeblendeten verwalteten Eigenschaft mit dem Namen zugeordnet `ComplianceAttribute` . Sie verwenden dieses Attribut, um den Such Berechtigungsfilter für OneDrive in Schritt 4 zu erstellen.
   
 Schließen Sie die folgenden Informationen ein, wenn Sie die Anforderung an den Microsoft-Support übermitteln:
   
 - Der Standarddomänenname Ihrer Organisation
-    
+
 - Der Name des Azure Active Directory-Attributs (aus Schritt 1)
-    
+
 - Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "aktivieren Sie OneDrive für Unternehmen Synchronisierung mit Azure Active Directory für Compliance-Sicherheitsfilter". Dadurch wird die Anforderung an das eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert.
-    
+
 Nachdem die technische Änderung vorgenommen wurde und das Attribut mit OneDrive synchronisiert wurde, sendet der Microsoft-Support Ihnen die Buildnummer, in der die Änderung vorgenommen wurde, und ein geschätztes Bereitstellungsdatum. Der Bereitstellungsprozess dauert in der Regel 4 bis 6 Wochen, nachdem Sie die Supportanfrage gesendet haben.
   
- **Wichtig:** Sie können Schritt 3 bis Schritt 5 abschließen, bevor die Änderung bereitgestellt wird. Durch die Ausführung von Inhalts suchen werden jedoch keine Dokumente von OneDrive-Websites zurückgegeben, die im Such Berechtigungsfilter angegeben sind, bis die Änderung bereitgestellt wurde. 
+> [!IMPORTANT]
+> Sie können Schritt 3 bis Schritt 5 abschließen, bevor diese Attributänderung bereitgestellt wird. Durch die Ausführung von Inhalts suchen werden jedoch keine Dokumente von OneDrive-Websites zurückgegeben, die im Such Berechtigungsfilter angegeben sind, bis die Änderung bereitgestellt wurde.
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Schritt 3: Erstellen einer Rollengruppe für jede Agentur
 

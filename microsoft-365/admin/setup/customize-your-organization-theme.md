@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'In diesem Artikel erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und entsprechend Ihrem Firmen Logo oder ihrer eigenen Farbe anpassen. '
-ms.openlocfilehash: cfde26e2b7f6d74a59b7431091fbc3c2f6049ec6
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022120"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262329"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassen des Microsoft 365-Designs für Ihre Organisation
 
@@ -34,7 +34,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Anpassen des Designs im Admin Center
 
-1. Wechseln Sie im Admin Center zu den **Einstellungs** \> **Einstellungen**, und wählen Sie dann die Registerkarte **Organisationsprofil** aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der \> **org**-Einstellungen, und wählen Sie dann die Registerkarte **Organisationsprofil** aus.
 
 2. Wählen Sie auf der Registerkarte **Organisationsprofil** **benutzerdefinierte Designs**aus.
 

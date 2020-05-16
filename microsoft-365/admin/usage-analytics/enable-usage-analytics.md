@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit der Microsoft 365 Usage Analytics-Vorlagen-app in Power BI mit dem Sammeln von Daten für Ihren Mandanten beginnen.
-ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140683"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262535"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ Um die Vorlagen-APP zu initiieren, müssen Sie entweder **globaler Administrator
 
 5.  Klicken Sie auf **App durchsuchen** , um die APP mit Beispieldaten anzuzeigen. Klicken Sie auf **verbinden** , um die APP mit den Daten Ihrer Organisation zu verbinden.
 
-6.  Geben Sie nach dem Klicken auf **verbinden**im Bildschirm **Connect to Microsoft 365 Usage Analytics** die Mandanten-ID ein, die Sie in \> Schritt (1) **weiter**kopiert haben.
+6.  Geben Sie nach dem Klicken auf **verbinden**im Bildschirm **Connect to Microsoft 365 Usage Analytics** die Mandanten-ID ein, die Sie in Schritt (1) \> **weiter**kopiert haben.
     
 7. Wählen Sie auf dem nächsten Bildschirm **oAuth2** als **Authentifizierungsmethode** \> **Anmelden**aus. Wenn Sie eine andere Authentifizierungsmethode auswählen, tritt bei der Verbindung zur Vorlagen-App ein Fehler auf.
     
@@ -97,7 +97,7 @@ Aggregate auf Mandantenebene sind in allen Berichten verfügbar. **Details auf B
 
 Sie müssen ein globaler Administrator sein, um die für alle Berichte gesammelten Daten anonymisieren zu können. Dadurch werden identifizierbare Informationen wie Benutzer-, Gruppen-und Websitenamen in Berichten und in der Vorlagen-App ausgeblendet.
   
-1. Wechseln Sie im Admin Center zu den **Einstellungs** \> **Einstellungen**, und wählen Sie unter **Dienste** die Registerkarte **Berichte**aus.
+1. Wechseln Sie im Admin Center zu den **Einstellungen** der \> **org**-Einstellungen, und wählen Sie unter **Dienste** die Registerkarte **Berichte**aus.
     
 2. Wählen Sie **Berichte**aus, und wählen Sie dann **Anonyme Bezeichner anzeigen**aus. Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
   

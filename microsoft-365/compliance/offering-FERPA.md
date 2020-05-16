@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066368"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254268"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Family Educational Rights and Privacy Act (FERPA)
 
@@ -41,7 +41,7 @@ FERPA erfordert oder erkennen keine Audits oder andere Zertifizierungen, sodass 
 
 Aufgrund dieser vertraglichen Verpflichtungen können Kunden, die FERPA unterliegen – sowohl Bildungseinrichtungen als auch Drittanbieter, denen Sie Zugriff auf vertrauliche Kursteilnehmerdaten gewähren – zuverlässig Microsoft Business Cloud-Dienste zum verarbeiten, speichern und übertragen dieser Daten verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtigten Bildungs Interessen in Kundendaten festgelegt zu werden, umfassen Folgendes:
 
@@ -49,7 +49,7 @@ Dienste, für die Microsoft sich verpflichtet, als "Schul Beamter" mit berechtig
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI, PowerApps und Microsoft Flow entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
+- Power BI, PowerApps und Power Automation (ehemals Microsoft Flow) entweder als eigenständiger Dienst oder als in einem Office 365-Branding-Plan oder einer Suite enthalten
 - Azure DevOps Services
 - Windows Defender ATP
 
@@ -75,5 +75,5 @@ Dieses US-Bundesgesetz beauftragt den Schutz der Privatsphäre der Bildungsunter
 - [Bundes Register: FERPA-Abschluss Regel](https://aka.ms/ferpa-reg)
 - [FERPA-Implementierungshandbuch für Microsoft Azure](https://aka.ms/azureferpa)
 - [Azure FERPA Compliance Framework-Zuordnung](https://aka.ms/AzureFERPAMapping)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

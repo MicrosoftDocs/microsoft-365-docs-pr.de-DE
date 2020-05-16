@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214499"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254178"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -41,13 +41,13 @@ Erfahren Sie mehr über die Vorteile von Großbritannien g-Cloud V6 in der Micro
 
 Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Betreffende Cloud Services von Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automation (ehemals Microsoft Flow)-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossenen Dienst
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten

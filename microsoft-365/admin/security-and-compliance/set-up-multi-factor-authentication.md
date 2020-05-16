@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: In diesem Artikel erfahren Sie, wie Sie Sicherheitsstandards zum Einrichten der mehrstufigen Authentifizierung für Benutzer verwenden.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213010"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262375"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -79,7 +79,7 @@ Alle Office 2016-Clientanwendungen unterstützen MFA durch die Nutzung der Activ
 
 Sie müssen jedoch sicherstellen, dass Ihr Microsoft 365-Abonnement für Adal oder moderne Authentifizierung aktiviert ist.
 
-1. Wenn Sie die moderne Authentifizierung aktivieren möchten, wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) die Option **Einstellungen** \> **Einstellungen**, und dann auf der Registerkarte **Dienste** die Option **Moderne Authentifizierung** aus der Liste aus.
+1. Um moderne Authentifizierung zu aktivieren, wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822) **Einstellungen** \> **org-Einstellungen** aus, und wählen Sie dann auf der Registerkarte **Dienste** die Option **moderne Authentifizierung** aus der Liste aus.
 
 2. Aktivieren Sie das Kontrollkästchen **moderne Authentifizierung aktivieren (empfohlen)** im Bereich **moderne Authentifizierung** , und wählen Sie dann **Save Changes**aus. 
 
