@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: 'Was geschieht, wenn mein Abonnement abläuft?'
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: Apps von Drittanbietern verwalten
+    - name: Verwalten der Abonnements von Drittanbieter-Apps
       href: manage-saas-apps.md
     - name: Self-Service-Einkäufe (Benutzer) verwalten
       href: subscriptions/manage-self-service-purchases-users.md
@@ -38,19 +38,19 @@
   items:
     - name: Verwalten von Abonnementlizenzen
       href: licenses/buy-licenses.md
-    - name: Benutzern Lizenzen zuweisen
+    - name: Zuweisen von Lizenzen an Benutzer
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: 'Entfernen von Lizenzen, die Benutzern zugewiesen wurden'
+    - name: Aufheben der Zuweisung von Benutzerlizenzen
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Grundlegendes zu Abonnements und Lizenzen
       href: licenses/subscriptions-and-licenses.md
 - name: Abrechnungen und Zahlungen
   items:
-    - name: Rechnung anzeigen
+    - name: Ihre Rechnung ansehen
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Informationen zu Ihrer Rechnung
+    - name: Ihre Rechnung verstehen
       href: billing-and-payments/understand-your-invoice.md
-    - name: Zahlungsmethoden verwalten
+    - name: Verwalten von Zahlungsmethoden
       href: billing-and-payments/manage-payment-methods.md
     - name: Bezahlen für Ihr Abonnement
       href: billing-and-payments/pay-for-your-subscription.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: Ändern der Rechnungsadressen
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: Zahlungsdienstleistungsrichtlinie 2 und starke Kundenauthentifizierung
+    - name: Informationen zur „Zahlungsdienstleistungsrichtlinie 2“ und „Strengen Kundenauthentifizierung“
       href: billing-and-payments/psd2.md
 - name: Abrechnungskonten
   items:
     - name: Abrechnungskonten verwalten
       href: manage-billing-accounts.md
-    - name: Zuordnen eines Mandanten zu meinem Abrechnungskonto
+    - name: Zuordnen eines Mandanten zu Ihrem Abrechnungskonto
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: Verwalten von Beziehungen mit meinen Partnern
+- name: Beziehungen zu Ihren Partnern verwalten
   href: manage-partners.md
 - name: Schließen Ihres Kontos
   href: close-your-account.md

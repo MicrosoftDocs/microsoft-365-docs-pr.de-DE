@@ -271,13 +271,23 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Aufbewahren von Daten
       items:
-        - name: Aufbewahrungsrichtlinien
+        - name: Informationen zu Aufbewahrungsrichtlinien
           href: retention-policies.md
+        - name: Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
+          href: create-retention-policies.md
+        - name: Aufbewahrung für SharePoint und OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Aufbewahrung für Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Aufbewahrung für Exchange
+          href: retention-policies-exchange.md
         - name: Dateiplan-Manager
           href: file-plan-manager.md
-        - name: Aufbewahrungsbezeichnungen
+        - name: Informationen zu Aufbewahrungsbezeichnungen
           href: labels.md
-        - name: Einhalten von SEC Rule 17a-4
+        - name: 'Erstellen, Veröffentlichen und automatisches Anwenden einer Aufbewahrungsbezeichnung'
+          href: create-retention-labels.md
+        - name: Einhaltung der SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
           href: bulk-create-publish-labels-using-powershell.md
@@ -325,9 +335,11 @@
           items:
             - name: Dateiplan-Manager
               href: file-plan-manager.md
-            - name: Aufbewahrungsbezeichnungen
+            - name: Informationen zu Aufbewahrungsbezeichnungen
               href: labels.md
-            - name: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
+            - name: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen
+              href: create-retention-labels.md
+            - name: Erstellen und Veröffentlichen von maßstabsgerechten Aufbewahrungsbezeichnungen mithilfe von PowerShell
               href: bulk-create-publish-labels-using-powershell.md
             - name: Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
               href: label-analytics.md
