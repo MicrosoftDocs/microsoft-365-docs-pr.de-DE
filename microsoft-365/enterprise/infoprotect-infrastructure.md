@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Die Schritte zur Bereitstellung der Infrastruktur für Informationsschutz in Microsoft 365 Enterprise.
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631621"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268303"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6: Informationsschutz
 
 ![Phase 6: Informationsschutz](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-Informationsschutz beinhaltet eine Reihe von Richtlinien und Technologien, die das Übermitteln, Speichern und Verarbeiten vertraulicher Informationen definieren. In Phase 6 werden Sie durch die Einstellungen und Funktionen für Identitätsschutz in Microsoft 365 Enterprise geführt, die Sie bei der Sicherung Ihrer Daten für cloudbasierte Arbeitslasten und Szenarien unterstützen.
+Informationsschutz beinhaltet eine Reihe von Richtlinien und Technologien, die das Übermitteln, Speichern und Verarbeiten vertraulicher Informationen definieren. In Phase 6 werden Sie durch die Einstellungen und Funktionen für Identitätsschutz in Microsoft 365 Enterprise geführt, die Sie bei der Sicherung Ihrer Daten für cloudbasierte Arbeitslasten unterstützen.
 
 >[!Note]
 >Wenn Sie bereits Informationsschutz bereitgestellt haben, lesen Sie bitte den Abschnitt zu den [Beendigungskriterien](infoprotect-exit-criteria.md) für diese Phase, um sicherzustellen, dass sie die erforderlichen und optionalen Kriterien für Microsoft 365 Enterprise erfüllen.

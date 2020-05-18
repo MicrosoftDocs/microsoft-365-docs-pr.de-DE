@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081748"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262396"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 
@@ -216,6 +216,10 @@ Verwenden Sie anschließend diese Schritte, um eine DLP-Richtlinie zu konfigurie
 Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePoint Online-Teamwebsites.
   
 ![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Aufbewahrungsbezeichnung „Streng vertraulich“.](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Die Unterstützung von Vertraulichkeitsbezeichnungen wird in Kürze verfügbar sein
+
+Derzeit können Sie nur eine Aufbewahrungsbezeichnung als Bedingung verwenden, jedoch nicht eine [Vertraulichkeitsbezeichnung](sensitivity-labels.md). Wir arbeiten derzeit an der Unterstützung der Verwendung einer Vertraulichkeitsbezeichnung in dieser Bedingung.
   
 ## <a name="next-step"></a>Nächster Schritt
 

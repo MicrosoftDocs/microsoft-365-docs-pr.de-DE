@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint in Ihrem Unternehmen.
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636916"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268209"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint und OneDrive für Microsoft 365 Enterprise
 
@@ -67,10 +67,6 @@ Die folgenden Geschäftssäulen können den Anforderungen Ihrer Organisation ger
 Unter [SharePoint-Admin](https://docs.microsoft.com/sharepoint/sharepoint-online) finden Sie Ressourcen zum Konfigurieren von SharePoint für Ihre Anforderungen.
 
 Sie können die Vorteile von SharePoint ermitteln, indem Sie die aktuelle Interaktionsweise von Personen, eines Teams, einer Abteilung oder der gesamten Organisation untersuchen und dann ein entsprechendes Szenario suchen, das einfachere Methoden zum Speichern und Freigeben von Dateien bietet. Beachten Sie, dass [Microsoft Teams](teams-workload.md) für einige Szenarien die bessere Wahl sein kann.
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>SharePoint-Website für Daten mit strengen Sicherheitsbestimmungen
-
-Daten mit strengen Sicherheitsbestimmungen unterliegen regionalen Bestimmungen oder sind die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie. Sie können eine SharePoint-Website für diesen Datentyp für eingeschränkten Zugriff, Datenklassifizierung, Verhinderung von Datenverlust und Verschlüsselung konfigurieren. Details finden Sie unter [Microsoft Teams und SharePoint-Websites für Daten mit strengen Sicherheitsbestimmungen](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### <a name="result"></a>Ergebnis
 Eine Liste der SharePoint-Szenarien, in denen die Anforderungen Ihrer Organisation in Bezug auf die Speicherung und Freigabe von Dokumenten, das Content-Management, die Zusammenarbeit und die Sicherheit behandelt werden.

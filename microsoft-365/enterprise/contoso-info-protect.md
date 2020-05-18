@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Features für den Informationsschutz in Microsoft 365 Enterprise verwendet, um digitale Datenbestände in der Cloud zu sichern.
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625302"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268410"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -65,15 +65,11 @@ Contoso führte die folgenden Schritte aus, um Microsoft 365 Enterprise für sei
 
    Contoso hat Vertraulichkeitsbezeichnungen (hochgradig reguliert) für seine Datenstufen erstellt, die Verschlüsselung, Berechtigungen und Wasserzeichen umfasst.
 
-4. Erstellen geschützter SharePoint-Websites für vertrauliche und hochgradig regulierten Daten mit Berechtigungen, die den Zugriff einschränken
-
-   Sowohl vertrauliche als auch streng regulierte Websites wurden als private Teamwebsites mit zusätzlichen Berechtigungseinschränkungen konfiguriert. Vertrauliche und hochgradig regulierte SharePoint-Websites wurden auch mit einer entsprechenden Aufbewahrungsbezeichnung konfiguriert. Auf hochgradig regulierten SharePoint-Websites gespeicherte Dateien werden durch eine Vertraulichkeitsunterbezeichnung der Bezeichnung "Hochgradig reguliert" geschützt. Weitere Informationen finden Sie im Szenario [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-5.  Verschieben der Daten von den lokalen SharePoint-Websites und Dateifreigaben in die neuen SharePoint-Websites
+4.  Verschieben der Daten von den lokalen SharePoint-Websites und Dateifreigaben in die neuen SharePoint-Websites
 
     Die Dateien, die zu den neuen SharePoint-Websites migriert wurden, übernahmen die standardmäßigen Aufbewahrungsbezeichnungen, die der Website zugewiesen waren.
 
-6.  Schulen der Mitarbeiter im Hinblick auf die Verwendung von Aufbewahrungsbezeichnungen für neue Dokumente, die Interaktion mit den Contoso-IT-Mitarbeitern beim Erstellen neuer SharePoint-Websites und das stetige Speichern von digitalen Assets auf SharePoint-Websites
+5.  Schulen der Mitarbeiter im Hinblick auf die Verwendung von Aufbewahrungsbezeichnungen für neue Dokumente, die Interaktion mit den Contoso-IT-Mitarbeitern beim Erstellen neuer SharePoint-Websites und das stetige Speichern von digitalen Assets auf SharePoint-Websites
 
     Folgendes galt als der schwierigste Teil des Informationsschutzübergangs in die Cloud: Die IT-Mitarbeiter von Contoso und das Management mussten die schlechten Angewohnheiten der Mitarbeiter, wenn es um Informationsspeicherung geht, ändern und sie anhalten, digitale Assets immer mit Bezeichnungen zu versehen und zu speichern, keine lokalen Dateifreigaben und nie Cloudspeicherdienste von Drittanbietern oder USB-Laufwerke zu verwenden.
 
