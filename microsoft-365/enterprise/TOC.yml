@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: Bereitstellung für Nicht-Unternehmen
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Bereitstellen von Workloads und Szenarien
+    - name: Bereitstellen von Arbeitslasten
       href: deploy-workloads.md
       items:
         - name: "Microsoft\_Teams"
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migration
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Fördern von Remotemitarbeitern
-          href: empower-people-to-work-remotely.md
-        - name: SharePoint-Websites für streng regulierte Daten
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Testumgebungsanleitungen
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: Sicherheitszusammenfassung
           href: contoso-security-summary.md
-        - name: Team für ein streng geheimes Projekt
-          href: contoso-team-for-top-secret-project.md
-        - name: SharePoint-Website für Daten mit strengen Sicherheitsbestimmungen
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Änderungen an den Microsoft 365 Enterprise-Bereitstellungsinhalten
-      href: microsoft-365-deploment-guide-changes.md
     - name: Integritätsstatus des Microsoft 365-Diensts
       href: microsoft-365-service-health.md
 - name: Bereitstellungscenter für modernen Desktop
