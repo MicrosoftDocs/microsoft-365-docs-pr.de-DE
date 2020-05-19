@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209235"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280534"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Voraussetzungen für Microsoft Threat Protection
 
@@ -79,8 +79,12 @@ Wechseln Sie zu Microsoft 365 Admin Center ([Admin.Microsoft.com](https://admin.
 ## <a name="browser-requirements"></a>Browseranforderungen
 Greifen Sie auf Microsoft Threat Protection im Microsoft 365 Security Center mit Microsoft Edge, Internet Explorer 11 oder einem beliebigen HTML 5-konformen Webbrowser zu.
 
-## <a name="us-gcc-and-gcc-high-availability"></a>Hohe Verfügbarkeit von US gcc und gcc
-Derzeit steht Microsoft Threat Protection nicht für US Government Community Cloud (gcc) und Government Community Cloud High (gcc High) zur Verfügung. 
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Verfügbarkeit für US gcc, gcc High und andere US-Regierungsinstitutionen
+Derzeit steht Microsoft Threat Protection *nicht* zur Verfügung:
+- US Government Community Cloud (gcc)
+- US Government Community Cloud High (gcc hoch)
+- US-Verteidigungsministerium
+- Alle US-Regierungsinstitutionen mit kommerziellen Lizenzen
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über Microsoft Threat Protection](microsoft-threat-protection.md)

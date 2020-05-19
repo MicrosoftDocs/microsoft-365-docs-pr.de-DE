@@ -14,22 +14,22 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 3c2a89a881e2615a8459f0a7126b2d92f750c6b0
+ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065770"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278448"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Anforderungen für die Lokalisierung russischer personenbezogener Daten
 
-Ab dem 1. September 2015 müssen Organisationen, die als personenbezogene Daten Betreiber betrachtet werden, bei der Erfassung personenbezogener Daten sicherstellen, dass die Erfassung, Systematisierung, Akkumulation, Speicherung, Klärung (Aktualisierung, Änderung) und Extraktion durch die in Russland befindlichen Datenbanken ("Anforderungen an die persönliche Daten Lokalisierung") von russischen Bürgern vorgenommen werden. <sup>1</sup>
+Ab dem 1. September 2015 müssen Organisationen, die als personenbezogene Daten Betreiber betrachtet werden, sicherstellen, dass bei der Erfassung personenbezogener Daten, der Datenerfassung, Systematisierung, Akkumulation, Speicherung, Klärung (Aktualisierung, Änderung) und Extraktion durch die in Russland befindlichen Datenbanken ("Anforderungen an die persönliche Daten Lokalisierung") personenbezogene Daten erfasst werden. <sup>1</sup>
 
-Microsoft Online Services, verfügbar für Organisationen (einschließlich, aber nicht ausschließlich für Bildungseinrichtungen) (im folgenden "Kunde" genannt), einschließlich derer, die die Verarbeitung personenbezogener Daten ermöglichen – wie Microsoft Azure, Microsoft 365, Dynamics 365 und Power Platform – werden von Rechenzentren außerhalb Russlands bereitgestellt (Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trust-center)).
+Microsoft Online Services, die Organisationen zur Verfügung stehen (einschließlich, aber nicht ausschließlich für Bildungseinrichtungen) (im folgenden "Kunde" genannt), einschließlich derer, die die Verarbeitung personenbezogener Daten wie Microsoft Azure, Microsoft 365, Dynamics 365 und Power Platform ermöglichen, werden von Rechenzentren außerhalb Russlands bereitgestellt (Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trust-center)).
 
-Basierend auf der Art und dem Inhalt von Informationen, die von Kundeninformationssystemen verarbeitet werden, können solche Systeme, einschließlich derer, die Microsoft-Cloud-Produkte verwenden, als Daten Informationssystem ("PDIS", "ISPD") betrachtet werden. In Fällen, in denen der Kunde Microsoft Online Services in einem System verwenden möchte, das durch seine Architektur und die Art der Verarbeitung von Informationen als PDIS qualifiziert wird, lädt Microsoft seine Kunden ein, unter anderem verfügbare Lösungen zu prüfen, die unten angegeben sind. Alle unten bereitgestellten Szenarien stehen Kunden als zusätzliche Option für standardmäßige Unternehmensangebote zur Verfügung.
+Basierend auf der Art und dem Inhalt der von den Kundeninformationssystemen verarbeiteten Informationen können solche Systeme, einschließlich derer, die Microsoft-cloudprodukte verwenden, als Daten Informationssystem ("PDIS", "ISPD") betrachtet werden. In Fällen, in denen der Kunde Microsoft Online Services in einem System verwenden möchte, das durch seine Architektur und die Art der Verarbeitung von Informationen als PDIS qualifiziert wird, lädt Microsoft seine Kunden ein, unter anderem die nachfolgend aufgeführten verfügbaren Lösungen zu prüfen. Alle bereitgestellten Szenarien stehen Kunden als zusätzliche Option für standardmäßige Unternehmensangebote zur Verfügung.
 
-Es sei darauf hingewiesen, dass der Kunde als Betreiber von PDIS für personenbezogene Daten für die Compliance verantwortlich ist und die anwendbaren rechtlichen Bestimmungen für die Lokalisierung personenbezogener Daten analysiert und beurteilt und nach eigenem Ermessen selbstständig ausreichende Vorkehrungen trifft, um sicherzustellen, dass die Verarbeitung personenbezogener Daten in PDIS dem russischen personenbezogenen Daten Gesetz entspricht. <sup>2</sup>
+Es sei darauf hingewiesen, dass es der Kunde als personenbezogener Datenanbieter von PDIS ist, der für die Compliance verantwortlich ist, und die anwendbaren rechtlichen Anforderungen für die Lokalisierung personenbezogener Daten zu analysieren und zu bewerten und nach eigenem Ermessen unabhängige Maßnahmen zu treffen, um sicherzustellen, dass die Verarbeitung personenbezogener Daten in PDIS dem russischen personenbezogenen Daten Gesetz entspricht. <sup>2</sup>
 
 ## <a name="subscribing-to-microsoft-online-services"></a>Abonnieren von Microsoft Online Services
 
@@ -39,7 +39,7 @@ Microsoft lädt Kunden ein, Microsoft Online Services – Microsoft Azure, Micro
 
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Verwalten der Benutzeridentität und des Zugriffs für Microsoft Online Services
 
-Für Microsoft Online Services wie Microsoft Azure, Microsoft 365, Dynamics 365 und Power Platform werden Benutzerüberprüfung und Zugriffsverwaltung über [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/)ausgeführt. Beachten Sie, dass Fälle, in denen ein Microsoft-Kunde ein lokales Identifikations Verwaltungssystem für Microsoft-Cloud-Dienste verwendet (wie die Windows Server-Active Directory (AD) oder ein anderes ID-Verwaltungssystem), der Kunde die Möglichkeit hat, dieses System schnell über Azure AD Connect mit dem Azure-Active Directory (AAD) zu integrieren. Weitere Informationen finden Sie unter der [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) -Option. Microsoft-Kunden können außerdem Anwendungen und Lösungen von Drittanbietern für die Verwaltung Ihrer Benutzer verwenden und Ihr lokales Identifikationssystem mit dem Azure AD integrieren.
+Für Microsoft Online Services wie Microsoft Azure, Microsoft 365, Dynamics 365 und Power Platform werden die Benutzerüberprüfung und die Zugriffsverwaltung über [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/)ausgeführt. Beachten Sie, dass Fälle, in denen ein Microsoft-Kunde ein lokales Identifikations Verwaltungssystem für Microsoft-Cloud-Dienste verwendet (wie die Windows Server-Active Directory (AD) oder ein anderes ID-Verwaltungssystem), der Kunde die Möglichkeit hat, dieses System schnell über Azure AD Connect mit dem Azure-Active Directory (AAD) zu integrieren. Weitere Informationen finden Sie unter der [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) -Option. Microsoft-Kunden können außerdem Anwendungen und Lösungen von Drittanbietern verwenden, um Ihre Benutzer zu verwalten und Ihr lokales Identifikationssystem mit dem Azure AD zu integrieren.
 
 ## <a name="questions-and-support"></a>Fragen und Support
 
@@ -56,7 +56,7 @@ Technische und Abrechnungsfragen finden Sie in den folgenden Microsoft-Support R
 
 - **Gebührenfreie Telefonkosten**: 8 10 800 2548 1044
 - **Ortsgespräch**: 499 922 8623
-- **Online Support**: Senden von Abfragen über [Admin Center](https://portal.office.com/)
+- **Online Support**: Senden von Abfragen über das [Admin Center](https://portal.office.com/)
 
 ### <a name="dynamics-365"></a>Dynamics 365
 

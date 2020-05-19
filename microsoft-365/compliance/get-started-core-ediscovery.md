@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie mit der Verwendung von Core eDiscovery in Microsoft 365 beginnen. Nachdem Sie eDiscovery-Berechtigungen zugewiesen und eine Anfrage erstellt haben, können Sie Mitglieder hinzufügen, eDiscovery-Haltestatus erstellen und dann nach Daten suchen und exportieren, die für Ihre Untersuchung relevant sind.
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943384"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280545"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Erste Schritte mit Core eDiscovery
 
@@ -42,11 +42,11 @@ Für die Lizenzierung für die zentrale eDiscovery ist das entsprechende Organis
 
    ODER
 
-  - Eine Microsoft 365 E1-oder Office 365 E1-Lizenz mit einer Exchange Online Plan 2-oder Exchange Online-Add-on-Lizenz für die Archivierung
+  - Office 365 E1-Lizenz mit einer Exchange Online Plan 2-oder Exchange Online-Add-on-Lizenz für die Archivierung
 
   UND
 
-  - Eine Microsoft 365 E1-oder Office 365 E1-Lizenz mit einer SharePoint Online Plan 2-oder OneDrive für Unternehmen-Add-on-Lizenz für den Plan 2
+  - Office 365 E1-Lizenz mit einer Add-on-Lizenz für SharePoint Online Plan 2 oder OneDrive für Unternehmen Plan 2
   
   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -62,7 +62,7 @@ Um auf die zentrale eDiscovery zuzugreifen oder als Mitglied eines zentralen eDi
 
 Führen Sie die folgenden Schritte aus, um Benutzer zur eDiscovery-Manager-Rollengruppe hinzuzufügen:
 
-1. Wechseln Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-oder Office 365-Organisation an.
+1. Wechseln Sie zu, [https://protection.office.com/permissions](https://protection.office.com/permissions) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-oder Office 365-Organisation an.
 
 2. Wählen Sie auf der Seite **Berechtigungen** die Rollengruppe **eDiscovery-Manager** aus.
 
@@ -98,7 +98,7 @@ Weitere Informationen zu eDiscovery-Berechtigungen und eine Beschreibung der ein
 
 Der nächste Schritt besteht darin, einen Fall zu erstellen und mit der Verwendung von Core eDiscovery zu beginnen. Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch Haupt-eDiscovery-Fälle erstellen.
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe "Organisationsverwaltung" können auch Haupt-eDiscovery-Fälle erstellen.
 
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
 
