@@ -57,6 +57,8 @@
               href: mtp/portals.md
             - name: Behandeln von Problemen
               href: ./mtp/troubleshoot.md
+            - name: Branchentrends
+              href: ./mtp/top-scoring-industry-tests.md
         - name: Auswerten von Funktionen
           items:
             - name: Übersicht über das Testlabor
@@ -282,6 +284,8 @@
                   items:
                     - name: Verwenden der Übermittlung durch den Administrator
                       href: ./office-365-security/admin-submission.md
+                    - name: Angeben eines Postfachs für Benutzerübermittlungen
+                      href: ./office-365-security/user-submission.md
                     - name: Aktivieren des Add-Ins „Nachrichten melden“
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
