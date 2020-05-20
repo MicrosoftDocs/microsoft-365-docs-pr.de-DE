@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie, wie Sie verschlüsselte e-Mails mit Outlook senden.
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165685"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322147"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Verschlüsseln oder bezeichnen von vertraulichen e-Mails
 
@@ -52,7 +52,7 @@ Wenn Sie eine Nachricht verschlüsseln möchten, die keine vordefinierte Regel e
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Weitere Informationen zum Einrichten der e-Mail-Verschlüsselung finden Sie unter [e-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+Weitere Informationen zum Einrichten der e-Mail-Verschlüsselung finden Sie unter [e-Mail-Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>E-Mail-Nachrichten automatisch verschlüsseln
 
@@ -64,9 +64,9 @@ Sie erstellen Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten 
 2. Wählen Sie die Kachel admin aus. 
 3. Wählen Sie im Admin Center die Option admin Centers **> Exchange**aus. 
 
-Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Branding Ihrer Verschlüsselungs Nachrichten
 
-Sie können auch Ihr Kampagnen Branding anwenden, um das Aussehen und den Text in den e-Mail-Nachrichten anzupassen. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+Sie können auch Ihr Kampagnen Branding anwenden, um das Aussehen und den Text in den e-Mail-Nachrichten anzupassen. Weitere Informationen finden Sie unter [Hinzufügen der Marke Ihrer Organisation zu ihren verschlüsselten Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 

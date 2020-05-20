@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162687"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292502"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -75,7 +75,7 @@ Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen is
 
 Vorlagen für Insider Risikorichtlinien definieren Sie die Art der Risiko Aktivitäten, die Sie erkennen und untersuchen möchten. Jede Richtlinienvorlage basiert auf spezifischen Indikatoren, die bestimmten Risiko Aktivitäten entsprechen, und Warnungen werden durch Richtlinien ausgelöst, wenn Benutzeraktivitäten im Zusammenhang mit diesen Indikatoren ausführen. In einigen Fällen möchten Sie möglicherweise die Indikatoren einschränken, die auf Insider Risikorichtlinien in Ihrer Organisation angewendet werden. Sie können die Indikatoren für bestimmte Bereiche deaktivieren, indem Sie Sie von allen Insider Risikorichtlinien deaktivieren.
 
-Um die Indikatoren zu definieren, die in allen Richtlinien aktiviert sind, navigieren Sie zu**Indikatoren** für **Insider Risiko Einstellungen** > , und wählen Sie ein oder mehrere Indikatoren aus. Die auf der Seite **indikatoreneinstellungen** ausgewählten Indikatoren können beim Erstellen oder Bearbeiten einer Insider Risiko Richtlinie im Richtlinien-Assistenten nicht individuell konfiguriert werden.
+Um die Indikatoren zu definieren, die in allen Richtlinien aktiviert sind, navigieren Sie zu Indikatoren für **Insider Risiko Einstellungen**,  >  **Indicators** und wählen Sie ein oder mehrere Indikatoren aus. Die auf der Seite **indikatoreneinstellungen** ausgewählten Indikatoren können beim Erstellen oder Bearbeiten einer Insider Risiko Richtlinie im Richtlinien-Assistenten nicht individuell konfiguriert werden.
 
 >[!IMPORTANT]
 >Um Warnungen für riskante Aktivitäten zu erhalten, die in ihren Richtlinien definiert sind, müssen Sie vor dem Konfigurieren einer Insider Risiko Richtlinie ein oder mehrere Indikatoren auswählen.
@@ -89,7 +89,7 @@ Mithilfe von Richtlinienzeit Rahmen können Sie vergangene und zukünftige Über
 
 ### <a name="intelligent-detections"></a>Intelligente Erkennungen
 
-Mithilfe intelligenter Erkennungseinstellungen können Sie die Verarbeitung von Erkennungen riskanter Aktivitäten für Warnungen optimieren. Unter bestimmten Umständen müssen Sie möglicherweise Dateitypen definieren, die ignoriert werden sollen, oder Sie möchten einen Erkennungs Grad für Dateien erzwingen, um eine minimale Leiste für Warnungen zu definieren. Wenn Sie Richtlinien für anstößige Sprachen verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erweitern oder verringern, um die Menge der gemeldeten Richtlinien Übereinstimmungen zu steuern. Verwenden Sie diese Einstellungen zum Steuern von Dateitypen Ausschlüssen, Grenzwerten für Datei Volumina und der Empfindlichkeit bei der Erkennung anstößiger Sprachen.
+Mithilfe intelligenter Erkennungseinstellungen können Sie die Verarbeitung von Erkennungen riskanter Aktivitäten für Warnungen optimieren. Unter bestimmten Umständen müssen Sie möglicherweise Dateitypen definieren, die ignoriert werden sollen, oder Sie möchten einen Erkennungs Grad für Dateien erzwingen, um eine minimale Leiste für Warnungen zu definieren. Wenn Sie Richtlinien für anstößige Sprachen verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erweitern oder verringern, um die Menge der gemeldeten Richtlinien Übereinstimmungen zu steuern. Verwenden Sie diese Einstellungen, um das gesamte Warnungs Volumen, die Dateitypen Ausschlüsse, die Grenzwerte für Datei Volumina und die Empfindlichkeit bei der Erkennung anstößiger Sprachen zu steuern.
 
 #### <a name="anomaly-detections"></a>Anomale Erkennungen
 
@@ -105,6 +105,14 @@ Wählen Sie eine der folgenden Einstellungen aus, um die Empfindlichkeit der Kla
 - **Niedrig**: die niedrigste Empfindlichkeitsstufe mit dem breitesten Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, wird erhöht.
 - **Mittel**: die Empfindlichkeitsstufe auf mittlerer Ebene mit einem ausgewogenen Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, ist durchschnittlich.
 - **High**: die höchste Empfindlichkeitsstufe mit einem engen Bereich für Erkennungs Offensive Sprache und Sentiment. Die Wahrscheinlichkeit, dass falsch positive Ergebnisse für anstößige Sprachen übereinstimmen, ist gering.
+
+#### <a name="alert-volume"></a>Warnungs Lautstärke
+
+Benutzeraktivitäten, die von Insider Risikorichtlinien erkannt werden, werden mit einem bestimmten Risikoergebnis versehen, das wiederum den Warnungsschweregrad (niedrig, Mittel, hoch) bestimmt. Standardmäßig wird eine bestimmte Anzahl von Warnungen mit niedrigem, mittlerem und hohem Schweregrad generiert, aber Sie können die Lautstärke entsprechend Ihren Anforderungen erweitern oder verringern. Wählen Sie eine der folgenden Einstellungen aus, um die Anzahl der Warnungen für alle Richtlinien für das Insider Risikomanagement anzupassen:
+
+- **Weniger Warnungen**: Sie sehen alle Warnungen mit hohem Schweregrad, weniger Warnungen mittlerer Dringlichkeit und keine niedrigen Schweregrade. Dies bedeutet, dass Sie möglicherweise einige echte positive Ergebnisse verpassen.
+- **Standard Volume**: alle Warnungen mit hohem Schweregrad und eine ausgewogene Anzahl mittlerer und niedriger Dringlichkeits Warnungen werden angezeigt.
+- **Weitere Warnungen**: Es werden alle Warnungen bei mittlerer und hoher Dringlichkeit sowie Warnungen mit niedrigem Schweregrad angezeigt. Dies kann zu mehr falsch positiven Ergebnissen führen.
 
 ## <a name="create-a-new-policy"></a>Erstellen einer neuen Richtlinie
 
@@ -129,7 +137,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
     - Typ vertraulicher Informationen: Wählen Sie **vertrauliche Informationstypen** auswählen aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
     - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnungen** auswählen aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 7. Wählen Sie **weiter** aus, um fortzufahren.
-8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite**Indikatoren** für **Insider Risiko Einstellungen** > definiert haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
+8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen**definiert haben  >  **Indicators** . Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
 9. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die Sie in den Einstellungen für Insider Risiken konfiguriert haben. Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
 10. Wählen Sie **weiter** aus, um fortzufahren.
 11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **senden** aus, um die Richtlinie zu erstellen und zu aktivieren.
@@ -153,7 +161,7 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Richtlinie zu verwalt
     - Typ vertraulicher Informationen: Wählen Sie **vertrauliche Informationstypen** auswählen aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
     - Vertraulichkeits Bezeichnungen: Wählen Sie **Vertraulichkeits Bezeichnungen** auswählen aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 8. Wählen Sie **weiter** aus, um fortzufahren.
-9. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite**Indikatoren** für **Insider Risiko Einstellungen** > definiert haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
+9. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen**definiert haben  >  **Indicators** . Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
 10. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die Sie in den Einstellungen für Insider Risiken konfiguriert haben. Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
 11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **Submit** to Update aus, und aktivieren Sie die Änderungen in der Richtlinie.
 

@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Erfahren Sie, wie Sie den Bericht über die Postfachnutzung über die Aktivitäten der Benutzer mit einem Benutzerpostfach informieren.
-ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046927"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321993"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-Berichte im Admin Center-Postfachnutzung
 
@@ -37,7 +37,7 @@ Der **Bericht zur Postfachnutzung** enthält Informationen zu Benutzern mit eine
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Exchange** \> - **Postfachnutzung**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Exchange** - \> **Postfachnutzung**aus.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretieren des Berichts zur Postfachnutzung
 
@@ -48,7 +48,7 @@ Sie können die **Postfachnutzung** in Ihrer Organisation anzeigen, indem Sie si
 |1.  <br/> |Im Bericht **Postfachnutzung** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |
 |3.  <br/> |Das Diagramm "Postfach" zeigt die Gesamtzahl der Benutzerpostfächer in Ihrer Organisation an, sowie die Gesamtzahl der aktiven Postfächer an einem gegebenen Tag des Berichtszeitraums. Ein Benutzerpostfach wird als aktiv betrachtet, wenn es eine e-Mail-Nachricht senden, lesen, Termin erstellen, Besprechung senden, Besprechung annehmen, Besprechung ablehnen und Besprechungs Aktivität Abbrechen hatte.  <br/> |
-|4.  <br/> |Das Diagramm **Speicher** zeigt die Menge des Speicherplatzes an, der von Ihrer Organisation verwendet wird. Das Speicher Diagramm enthält keine Archivpostfächer. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving).<br/> |
+|4.  <br/> |Das Diagramm **Speicher** zeigt die Menge des Speicherplatzes an, der von Ihrer Organisation verwendet wird. Das Speicher Diagramm enthält keine Archivpostfächer. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
 |5.  <br/> | Das Diagramm **Kontingent** zeigt die Anzahl der Benutzerpostfächer in jeder Kontingentkategorie an. Es gibt vier Kontingentkategorien:  <br/>  "Gut" - Anzahl der Benutzer, deren verwendeter Speicher unterhalb der Kontingentwarnungsschwelle liegt.  <br/>  "Warnung" - Anzahl der Benutzer, deren verwendeter Speicher an der oder über der Warnungsschwelle liegt, deren Sendekontingent jedoch noch nicht überschritten ist.  <br/>  "Senden nicht möglich" - Anzahl der Benutzer, deren verwendeter Speicher das Sendekontingent erreicht oder überschritten hat, die jedoch noch nicht das Sende-/Empfangskontingent überschritten haben.  <br/>  "Senden/Empfangen nicht möglich" - Anzahl der Benutzer, deren verwendeter Speicher das Sende-/Empfangskontingent überschritten hat.  <br/> |
 |6.  <br/> | Im Diagramm **Postfach** gibt die Y-Achse die Anzahl der Benutzerpostfächer an.  <br/>  Im Diagramm **Speicher** gibt die Y-Achse die von den Benutzerpostfächern in Ihrer Organisation belegten Speicher an.  <br/>  Im Diagramm **Kontingent** gibt die Y-Achse die Anzahl der Benutzerpostfächer in jeder Kontingentkategorie an.  <br/>  Die X-Achse in den Diagrammen "Postfach" und "Speicher" entspricht dem ausgewählten Zeitraum für diesen bestimmten Bericht.  <br/>  Die X-Achse in den Kontingentdiagrammen gibt die Kontingentkategorie an.  <br/> |
 |7.  <br/> |Sie können Diagramme, die angezeigt werden, Filtern, indem Sie ein Element in der Legende auswählen.  <br/> |

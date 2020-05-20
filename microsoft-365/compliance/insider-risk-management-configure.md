@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162677"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292473"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -28,7 +28,7 @@ Verwenden Sie Richtlinien für das Insider-Risikomanagement, um riskante Aktivit
 
 Weitere Informationen dazu, wie Sie mit Insider Risikorichtlinien Risiken in Ihrer Organisation verwalten können, finden Sie unter [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung des Insider Risikomanagements muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -60,9 +60,9 @@ Je nach Struktur Ihres Compliance-Verwaltungsteams haben Sie die Möglichkeit, B
 
 Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insider Risk Management" hinzuzufügen:
 
-1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an. "" "" "" ""
+1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an. "" "" "" ""
 
-2. Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
 3. Wählen Sie die Rollengruppe "Insider Risk Management" aus, der Sie Benutzer hinzufügen möchten, und wählen Sie dann **Rollengruppe bearbeiten**aus.
 
@@ -118,7 +118,7 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
     >Um Warnungen für riskante Aktivitäten zu erhalten, die in ihren Richtlinien definiert sind, müssen Sie ein oder mehrere Indikatoren auswählen.
 
 4. Wählen Sie auf der Seite **Richtlinienzeit Rahmen** die [Richtlinien Zeiträume](insider-risk-management-policies.md#policy-timeframes) aus, die für einen Benutzer wirksam werden sollen, wenn eine Übereinstimmung mit einer Insider Risiko Richtlinie ausgelöst wird.
-5. Konfigurieren Sie auf der Seite **intelligente Erkennungen** die [Anomalie und anstößige Spracherkennung](insider-risk-management-policies.md#intelligent-detections) für Insider Risikorichtlinien.
+5. Konfigurieren Sie auf der Seite **intelligente Erkennungen** die [Anomalie-Erkennung, die Erkennung anstößiger Sprachen und die Warnstufe für Warnmeldungen](insider-risk-management-policies.md#intelligent-detections) für Insider Risikorichtlinien.
 6. Wählen Sie **Speichern** aus, um diese Einstellungen für ihre Insider Risikorichtlinien zu aktivieren.
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Schritt 5 (erforderlich): Erstellen einer Richtlinie für das Insider Risikomanagement
@@ -142,8 +142,8 @@ Die Richtlinien für das Insider Risikomanagement umfassen zugewiesene Benutzer 
     - **Typ vertraulicher Informationen**: Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
     - **Vertraulichkeits Bezeichnungen**: Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 7. Wählen Sie **weiter** aus, um fortzufahren.
-8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite**Indikatoren** für **Insider Risiko Einstellungen** > definiert haben. Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
-9. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die auf der Seite mit den**Richtlinien für die Richtlinienzeit** für **Insider Risiken** > angezeigt wird. Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
+8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen**definiert haben  >  **Indicators** . Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
+9. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die auf der Seite mit den Richtlinien für die Richtlinienzeit für **Insider Risiken**angezeigt wird  >  **Policy timeframes** . Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
 10. Wählen Sie **weiter** aus, um fortzufahren.
 11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **senden** aus, um die Richtlinie zu erstellen und zu aktivieren.
 

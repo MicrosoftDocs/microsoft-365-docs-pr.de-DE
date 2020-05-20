@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250435"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322005"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicherheit in Microsoft Managed Desktop
 
@@ -25,6 +25,7 @@ Microsoft Managed Desktop verwendet mehrere Microsoft-Technologien, um die Siche
 - [Netzwerksicherheit](#network-security) – empfohlene Lösung und Einstellungen für VPN-Informationen und Microsoft Managed Desktop
 - [Informationssicherheit](#information-security) – optional verfügbare Dienste für den weiteren Schutz vertraulicher Informationen 
 
+Informationen zu den von Microsoft Managed Desktop verwendeten Daten Speicherungs-, Nutzungs-und Sicherheitsmethoden finden Sie in unserem White Paper unter [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 Weitere Informationen zum Security Operations-Team auf dem Microsoft Managed Desktop und zur Sicherheit Ihrer Geräte finden Sie unter Video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
@@ -48,7 +49,7 @@ Identity and Access Management schützt Unternehmensressourcen und unternehmensw
 
 Dienst | Beschreibung
 --- | ---
-Biometrische Authentifizierung |  Windows Hello ermöglicht es Benutzern, sich mit Ihrem Gesicht oder einer PIN anzumelden, wodurch Kennwörter schwerer zu vergessen oder zu stehlen sind. Kunden sind für die Implementierung der erforderlichen Voraussetzungen für Ihre lokalen Active Directory für die Verwendung dieses Diensts in einer Hybrid Konfiguration verantwortlich. Weitere Informationen finden Sie unter [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Biometrische Authentifizierung |  Mit Windows Hello können sich Benutzer mit Ihrem Gesicht oder einer PIN anmelden, wodurch Kennwörter schwerer zu vergessen oder zu stehlen sind. Kunden sind für die Implementierung der erforderlichen Voraussetzungen für Ihre lokalen Active Directory für die Verwendung dieses Diensts in einer Hybrid Konfiguration verantwortlich. Weitere Informationen finden Sie unter [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standard Benutzerberechtigung |  Um das System zu schützen und es sicherer zu machen, wird dem Benutzer Standard Benutzerberechtigungen zugewiesen. Dies wird als Teil der Out-of-Box-Erfahrung von Windows Autopilot zugewiesen.
 
 

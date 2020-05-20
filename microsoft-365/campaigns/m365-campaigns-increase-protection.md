@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365
-ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39c79f438bd8018f2e70863225664c55e4bcd615
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633713"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322123"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -35,16 +35,16 @@ Dieser Artikel unterstützt Sie bei der Verbesserung des Schutzes Ihres Microsof
 
 Bevor Sie beginnen, überprüfen Sie Ihr Office 365 sicheres Ergebnis. Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen durchführen, erhöhen Sie die Punktzahl. Ziel ist nicht die maximale Punktzahl, sondern die Möglichkeiten zum Schutz Ihrer Umgebung, die sich negativ auf die Produktivität Ihrer Benutzer auswirken. 
 
-Weitere Informationen finden Sie unter [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+Weitere Informationen finden Sie unter [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Erhöhen des Schutzniveaus gegen Schadsoftware in Mail
 
 Ihre Office 365-oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, aber Sie können diesen Schutz verbessern, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. So stoßen Sie Malware Schutz in e-Mails an:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
     
 3. Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
     
@@ -73,7 +73,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 2. Klicken Sie in der Kategorie **Nachrichtenfluss** auf **Regeln**.
     
-3. Klicken **+** Sie auf, und klicken Sie dann auf **neue Regel erstellen**.
+3. Klicken Sie auf **+** , und klicken Sie dann auf **neue Regel erstellen**.
     
 4. Klicken Sie unten im Dialogfeld auf **Weitere Optionen** , um die vollständige Palette von Optionen anzuzeigen. 
     
@@ -103,11 +103,11 @@ Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können Ihre e-Ma
   
 Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) an, oder führen Sie die folgenden Schritte aus:
   
-1. Klicken Sie im Microsoft 365 Admin Center auf **Admin** \> Centers **Exchange**.
+1. Klicken Sie im Microsoft 365 Admin Center auf **Admin** Centers \> **Exchange**.
     
 2. Klicken Sie in der Kategorie **Nachrichtenfluss** auf **Regeln**.
     
-3. Klicken **+** Sie auf, und klicken Sie dann auf **neue Regel erstellen**.
+3. Klicken Sie auf **+** , und klicken Sie dann auf **neue Regel erstellen**.
     
 4. Klicken Sie unten im Dialogfeld auf **Weitere Optionen** , um die vollständige Palette von Optionen anzuzeigen. 
     
@@ -134,7 +134,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite **Richtlinie** die Option **ATP Anti-Phishing**aus.
     
@@ -151,18 +151,18 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
 |Beschreibung  <br/> |Stellen Sie sicher, dass die meisten wichtigen Mitarbeiter und unsere Domäne nicht angenommen werden.  <br/> |
 |Zu schützende Benutzer hinzufügen  <br/> |Wählen Sie **+ Bedingung hinzufügen, ist der Empfänger**. Geben Sie Benutzernamen ein, oder geben Sie die e-Mail-Adresse des Kandidaten, des Kampagnen Managers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor dem Identitätswechsel schützen möchten.  <br/> |
 |Zu schützende Domänen hinzufügen  <br/> |Wählen Sie **+ Bedingung hinzufügen, die Empfängerdomäne ist**. Geben Sie die benutzerdefinierte Domäne, die Ihrem Microsoft 365-Abonnement zugeordnet ist, ein, wenn Sie eine definiert haben. Sie können mehr als eine Domäne eingeben.  <br/> |
-|Aktionen auswählen  <br/> |Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten**aus, und geben Sie dann die e-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: *Alice<span><span>@contoso. com*.          Wenn eine E-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Nachricht in Quarantäne verschieben**aus.  <br/> |
+|Aktionen auswählen  <br/> |Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten**aus, und geben Sie dann die e-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: *Alice <span> <span> @contoso. com*.          Wenn eine E-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Nachricht in Quarantäne verschieben**aus.  <br/> |
 |Mailbox Intelligence  <br/> |Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.  <br/> |
 |Vertrauenswürdige Absender und Domänen hinzufügen  <br/> |Hier können Sie Ihre eigene Domäne oder andere vertrauenswürdige Domänen hinzufügen.  <br/> |
-|Angewendet auf  <br/> |Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise *contoso.<span> com <span>* in der Liste aus, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
+|Angewendet auf  <br/> |Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise *contoso. <span> <span> com*in der Liste aus, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Schutz vor böswilligen Anlagen, Dateien und Links mit Advanced Threat Protection (ATP)
 
-![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](../media/m365admincenterchanging.png)
+![Banner, auf das verwiesen wird https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Stellen Sie zunächst sicher, <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> dass im Admin Center die neue Vorschau für das Admin Center aktiviert ist. Aktivieren Sie die Umschaltfläche neben dem Text **das neue Admin Center**.
+Stellen Sie zunächst sicher, dass im Admin Center <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> die neue Vorschau für das Admin Center aktiviert ist. Aktivieren Sie die Umschaltfläche neben dem Text **das neue Admin Center**.
 
    ![Die neue Admin Center-Vorschau auf.](../media/previewon.png)
 
@@ -186,15 +186,15 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
   
 Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Anlagen**aus.
     
 4. Wenden Sie diesen Schutz auf der Seite sichere Anlagen allgemein an, indem Sie das Kontrollkästchen **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren** aktivieren. 
     
-5. Wählen **+** Sie diese Option aus, um eine neue Richtlinie zu erstellen. 
+5. Wählen Sie diese Option aus **+** , um eine neue Richtlinie zu erstellen. 
     
 6. Wenden Sie die Einstellungen in der folgenden Tabelle an. 
     
@@ -223,9 +223,9 @@ Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
     
 Um ATP-sichere Links einzurichten, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Links**aus.
     
@@ -239,7 +239,7 @@ So ändern Sie die Standardrichtlinie:
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
-1. Klicken Sie **+** auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, auf, um eine neue Richtlinie zu erstellen. 
+1. Klicken Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, auf, **+** um eine neue Richtlinie zu erstellen. 
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
@@ -260,14 +260,14 @@ Nachdem Sie die Überwachungsprotokoll Suche im Security &amp; Compliance Center
 
 Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein, damit die Überwachungsprotokoll Suche in Ihrem Microsoft 365-Abonnement aktiviert oder deaktiviert wird. Diese Rolle wird standardmäßig der Rollengruppe Compliance Management und Organisationsverwaltung auf der Seite Berechtigungen im Exchange Admin Center zugewiesen. Globale Administratoren in Microsoft 365 sind standardmäßig Mitglieder dieser Gruppe.
 
-1. Wenn Sie die Überwachungsprotokoll Suche aktivieren möchten, wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , und wählen Sie dann im linken Navigationsbereich die Option **Compliance** unter **Admin Centers** aus. 
-2. Wählen Sie auf der Seite **Microsoft 365-Kompatibilität** **Weitere Ressourcen**aus, und **Öffnen** Sie dann auf der ** &amp; Office 365 Security Center** -Karte.
+1. Wenn Sie die Überwachungsprotokoll Suche aktivieren möchten, wechseln Sie zum Admin Center unter, <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> und wählen Sie dann im linken Navigationsbereich die Option **Compliance** unter **Admin Centers** aus. 
+2. Wählen Sie auf der Seite **Microsoft 365-Kompatibilität** **Weitere Ressourcen**aus, und **Öffnen** Sie dann auf der **Office 365 Security &amp; Center** -Karte.
 
     ![Wählen Sie im Thema Sicherheit & Compliance Cars die Option Öffnen aus.](../media/gotosecandcomp.png)
 3. Wählen Sie auf der Seite Sicherheit und Kompatibilität die Option **Suche** und dann **Überwachungsprotokoll Suche**aus.
 1. Wählen Sie oben auf der Seite **Überwachungsprotokoll Suche** die Option **Überwachung aktivieren**aus.
 
-Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und vielen Aktivitäten suchen. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
+Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und vielen Aktivitäten suchen. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Optimieren anonymer Freigabeeinstellungen für SharePoint-und OneDrive-Dateien und-Ordner
 
@@ -280,7 +280,7 @@ Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und viele
 
 ## <a name="activity-alerts"></a>Aktivitäts Warnungen
 
-Sie können Aktivitäts Warnungen zum Nachverfolgen von Administrator-und Benutzeraktivitäten sowie zum Erkennen von Schadsoftware und Vorfällen zur Verhinderung von Datenverlust in Ihrer Organisation verwenden. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, aber Sie können auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Wenn Sie beispielsweise eine wichtige Datei in SharePoint speichern, die nicht von allen Personen extern freigegeben werden soll, können Sie eine Benachrichtigung erstellen, mit der Sie benachrichtigt werden, wenn Sie von einer anderen Person freigegeben wird.
+Sie können Aktivitäts Warnungen zum Nachverfolgen von Administrator-und Benutzeraktivitäten sowie zum Erkennen von Schadsoftware und Vorfällen zur Verhinderung von Datenverlust in Ihrer Organisation verwenden. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, aber Sie können auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). Wenn Sie beispielsweise eine wichtige Datei in SharePoint speichern, die nicht von allen Personen extern freigegeben werden soll, können Sie eine Benachrichtigung erstellen, mit der Sie benachrichtigt werden, wenn Sie von einer anderen Person freigegeben wird.
 
 In der folgenden Abbildung sind die Standardrichtlinien aufgeführt, die in Microsoft 365 enthalten sind. <br/><br/>
     ![In Microsoft 365 enthaltene Standard Warnungsrichtlinien](../media/alertpolicies.png)

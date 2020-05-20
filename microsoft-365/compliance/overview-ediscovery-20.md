@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dieser Artikel bietet eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool für interne und externe Untersuchungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034905"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322040"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 
@@ -106,7 +106,3 @@ Verwenden Sie die Registerkarte **Aufträge** , um langwierige Prozesse für ber
 ## <a name="configuring-case-settings"></a>Konfigurieren von Falleinstellungen
 
 Verwenden Sie die Registerkarte **Einstellungen** , um Einstellungen für Groß-/Kleinschreibung zu konfigurieren. Dies umfasst das Hinzufügen von Mitgliedern zu einem Fall, das Schließen oder Löschen eines Falls und das Konfigurieren von Such-und Analyse Einstellungen.
-
-## <a name="advanced-ediscovery-reports"></a>Erweiterte eDiscovery-Berichte
-
-Sie können die erweiterten eDiscovery-Berichte auf der Startseite verwenden, um Ihre Organisation bei der Verfolgung von Aktivitäten und Status in allen erweiterten eDiscovery-Fällen zu unterstützen. Das Feature für erweiterte eDiscovery-Berichte aggregiert Informationen zu Fällen, Depotbanken, Datenquellen und Kommunikation. Sie können die Berichtsdaten anhand verschiedener Kriterien filtern und die aggregierten Informationen zur weiteren Analyse in eine CSV-Datei exportieren.  Weitere Informationen finden Sie unter [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).

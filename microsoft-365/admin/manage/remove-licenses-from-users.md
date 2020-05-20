@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Hier erfahren Sie, wie Sie Lizenzen aus Benutzerkonten entfernen.
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139637"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322029"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -115,7 +115,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 4. Wählen Sie im Bereich **Produktlizenzen verwalten** nacheinander **Vorhandenen Produktlizenzzuweisungen ersetzen** \> **Weiter** aus.
 
-5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontroll **Kästchen alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Schließen** **ersetzen** \> aus.
+5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontrollkästchen **alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Replace** \> **Schließen**ersetzen aus.
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 4. Wählen Sie im Bereich **Vorhandene Produkte ersetzen** nacheinander **Vorhandene Produktlizenzverträge ersetzen** \> **Weiter** aus.
 
-5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontroll **Kästchen alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Close** \> **Close** **ersetzen** \> aus.
+5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontrollkästchen **alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Replace** \> **Close** \> **Close**ersetzen aus.
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 4. Wählen Sie im Bereich **Vorhandene Produkte ersetzen** nacheinander **Vorhandene Produktlizenzverträge ersetzen** \> **Weiter** aus.
 
-5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontroll **Kästchen alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Close** \> **Close** **ersetzen** \> aus.
+5. Aktivieren Sie am unteren Rand des Bereichs **vorhandene Produkte ersetzen** das Kontrollkästchen **alle Produktlizenzen aus dem ausgewählten Benutzer entfernen** , und wählen Sie dann **Replace** \> **Close** \> **Close**ersetzen aus.
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 - Beachten Sie, dass in OneDrive für Unternehmen gespeicherte Dateien nicht gelöscht werden, es sei denn, der Benutzer wird aus dem Microsoft 365 Admin Center gelöscht oder durch Active Directory Synchronisierung entfernt. Weitere Informationen finden Sie unter [OneDrive Retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Außerdem kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie der Inhaltssuche oder der erweiterten eDiscovery durchsucht werden, wenn die Lizenz entfernt wird. Weitere Informationen finden Sie im Abschnitt "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Außerdem kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie der Inhaltssuche oder der erweiterten eDiscovery durchsucht werden, wenn die Lizenz entfernt wird. Weitere Informationen finden Sie im Abschnitt "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Wenn Sie über ein Enterprise-Abonnement wie Office 365 Enterprise E3 verfügen, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- Wenn Sie über ein Enterprise-Abonnement wie Office 365 Enterprise E3 verfügen, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Informationen dazu, wie Sie den Zugriff eines Benutzers auf Microsoft 365-Daten nach dem Entfernen Ihrer Lizenz blockieren und wie Sie später auf die Daten zugreifen können, finden Sie unter [Entfernen eines ehemaligen Mitarbeiters](../add-users/remove-former-employee.md).
 

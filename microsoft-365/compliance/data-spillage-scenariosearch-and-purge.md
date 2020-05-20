@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery-und Such Tools, um einen Vorfall zur Verschütten von Daten in Ihrer Organisation zu verwalten und zu reagieren.
-ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166056"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292451"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario mit Datenüberlauf-Suche und Bereinigung
 
@@ -157,14 +157,15 @@ Es gibt zwei Möglichkeiten, eine Liste der e-Mail-Adressen von Postfächern mit
 Wenn die Wiederherstellung einzelner Elemente aktiviert ist oder ein Postfach aufbewahrt wird, wird im Ordner "Wiederherstellbare Elemente" eine endgültig gelöschte Nachricht (bereinigt) gespeichert. Bevor Sie also verschüttete Daten löschen können, müssen Sie die vorhandenen Postfachkonfigurationen überprüfen und die Wiederherstellung einzelner Elemente deaktivieren und alle halte-oder Aufbewahrungsrichtlinien entfernen. Beachten Sie, dass Sie ein Postfach gleichzeitig vorbereiten und dann denselben Befehl für verschiedene Postfächer ausführen oder ein PowerShell-Skript erstellen können, um mehrere Postfächer gleichzeitig vorzubereiten.
 
 - Weitere Informationen zum Überprüfen, ob die Wiederherstellung einzelner Elemente aktiviert ist oder ob das Postfach in der Warteschleife oder einer Aufbewahrungsrichtlinie zugewiesen ist, finden Sie unter "Schritt 1: Erfassen von Informationen über das Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) " in der Warteschleife. 
-    
+
 - Anweisungen zum Deaktivieren der Wiederherstellung einzelner Elemente finden Sie unter "Schritt 2: Vorbereiten des Postfachs" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
-    
+
 - Weitere Informationen zum Entfernen einer Aufbewahrungs-oder Aufbewahrungsrichtlinie aus einem Postfach finden Sie unter "Schritt 3: Entfernen aller haltebereiche aus dem Postfach" unter " [Löschen von Elementen im Ordner" Wiederherstellbare Elemente "in der Warteschleife für Cloud-basierte Postfächer](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) . 
 
 - Siehe "Schritt 4: Entfernen der Verzögerungszeit aus dem Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) , um Anweisungen zum Entfernen des Verzögerungs Speichers zu erhalten, der auf das Postfach gesetzt wird, nachdem ein Aufbewahrungs entfernt wurde.
-    
- **Wichtig:** Erkundigen Sie sich bei der Datensatzverwaltung oder den Rechtsabteilungen, bevor Sie eine Aufbewahrungsrichtlinie entfernen. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein aufbewahrtes Postfach oder ein Vorfall mit Datenüberlauf Vorrang hat. 
+
+> [!IMPORTANT]
+> Erkundigen Sie sich bei der Datensatzverwaltung oder den Rechtsabteilungen, bevor Sie eine Aufbewahrungsrichtlinie entfernen. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein aufbewahrtes Postfach oder ein Vorfall mit Datenüberlauf Vorrang hat. 
   
 Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetzt wird, nachdem Sie sichergestellt haben, dass die verschütteten Daten endgültig gelöscht wurden. Weitere Informationen finden Sie in [Schritt 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -173,6 +174,9 @@ Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetz
 Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage zum Auffinden von e-Mail-Nachrichten, die die verschütteten Daten enthalten, können Sie nun die verschütteten Daten endgültig löschen.  Wie bereits erläutert, müssen Sie ein Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rolle Search and Purge Management zugewiesen sein, um Nachrichten zu löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
 Informationen zum Löschen der verschütteten Nachrichten finden Sie in den Schritten 2 & 3 unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+
+> [!IMPORTANT]
+> E-Mail-Elemente in einem Überprüfungs Satz in einem erweiterten eDiscovery-Fall können nicht mithilfe der Verfahren in diesem Artikel gelöscht werden. Das liegt daran, dass Elemente in einem Überprüfungs Sätze Kopien von Elementen im Live-Dienst sind, die kopiert und an einem Azure-Speicherort gespeichert werden. Dies bedeutet, dass Sie nicht von einer Inhaltssuche zurückgegeben werden, die Sie in Schritt 3 erstellen. Um Elemente in einem Überprüfungs Satzes zu löschen, müssen Sie den erweiterten eDiscovery-Fall löschen, der die Überprüfungsgruppe enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, stellen Sie einen Nachweis für die Löschung bereit, und überwachen
 
