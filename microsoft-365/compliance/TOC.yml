@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Typen vertraulicher Informationen
       items:
-        - name: Wonach die Typen von vertraulichen Informationen suchen
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Entitätsdefinitionen für Typen vertraulicher Informationstypen
+          href: sensitive-information-type-entity-definitions.md
         - name: Wonach die DLP-Funktionen suchen
           href: what-the-dlp-functions-look-for.md
         - name: Ansehen eines erweiterten Überblicks über das Anpassen von DLP
