@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informationen zum Wiederherstellen einer gelöschten Microsoft 365-Gruppe.
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140524"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327628"
 ---
 # <a name="restore-a-deleted-group"></a>Wiederherstellen einer gelöschten Gruppe
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -72,6 +72,9 @@ Wenn Sie globaler Administrator oder Gruppenadministrator sind, können Sie eine
 1. Wechseln Sie zum [Admin Center](https://admin.microsoft.com).
 2. Erweitern Sie **Gruppen**, und klicken Sie dann auf **Gelöschte Gruppen**.
 3. Wählen Sie die Gruppe aus, die Sie wiederherstellen möchten, und klicken Sie dann auf **Gruppe wiederherstellen**.
+
+> [!NOTE]
+> In einigen Fällen kann es bis zu 24 Stunden dauern, bis die Gruppe und alle Daten wiederhergestellt werden. 
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Dauerhaftes Löschen einer Microsoft 365-Gruppe
 

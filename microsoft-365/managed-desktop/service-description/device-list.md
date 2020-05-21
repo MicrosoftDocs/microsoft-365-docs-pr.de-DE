@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804807"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327924"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -25,7 +25,7 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit ihren kommerziellen Kanal Kontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Lebensdauer von Microsoft Managed Desktops unterworfen werden. solche Geräte, die nach diesem Datum an Bord sind, erhalten keine vollständige dreijährige Unterstützung von Microsoft Managed Desktop. Archivierte Geräte werden auch in [archivierten Microsoft Managed Desktop-Geräten](archived-device-list.md)aufgeführt. Das *Renten Datum* ist das Datum, an dem dieses Modell nicht mehr von Microsoft Managed Desktop unterstützt wird. An diesem Tag werden alle registrierten Geräte dieses Modells aus dem Microsoft Managed Desktop entfernt, unabhängig davon, wann Sie registriert wurden.
 
 >[!NOTE]
->Geräte können zu dieser Tabelle jederzeit hinzugefügt werden, aber wir stellen 90 Tage zur Verfügung, um Änderungen in Bezug auf Archiv oder Ruhestands Datum vorzunehmen. Die zuletzt hinzugefügten Geräte sind **\*** mit gekennzeichnet.
+>Geräte können zu dieser Tabelle jederzeit hinzugefügt werden, aber wir stellen 90 Tage zur Verfügung, um Änderungen in Bezug auf Archiv oder Ruhestands Datum vorzunehmen. Die zuletzt hinzugefügten Geräte sind mit gekennzeichnet **\*** .
 
 
 **Microsoft Managed Desktop-Geräte**
@@ -60,13 +60,17 @@ Die Links zu Geräten sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen mö
 | [Surface pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | Keine | 16. Oktober 2020 | 16. Oktober 2023 |
 | **\*[Surface pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | Keine | 22. Oktober 2021 | 22. Oktober 2024 |
 
-
-
 Darüber hinaus muss das Gerät auch die folgenden Kriterien erfüllen:     
 
 - Lassen Sie ein Bild von Microsoft Managed Desktop genehmigen. Wenn Sie Geräte bestellen, stellen Sie sicher, dass Sie angeben, dass Sie mit Microsoft Managed Desktop verwendet werden.
 - Die Windows-Erstausführung wurde nicht abgeschlossen.
 - Bei Microsoft Managed Desktop mithilfe der [Geräte Registrierungs](https://aka.ms/mmddrhelp) Funktion registriert werden
+
+>[!NOTE]
+>Geräte mit einem Prozessor mit 2,0 GHz oder schneller können Benutzern, die an diesen Aktivitäten beteiligt sind, eine viel bessere Erfahrung bieten:
+>- Verwenden von Videokonferenzen mit Microsoft Teams. Details finden Sie unter [Hardware Requirements for Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) .
+>-  Verwenden eines Geräts für verschiedene Arbeitslasten
+>- Verwenden von mehreren Monitoren
 
 **Weitere Hilfe**
 

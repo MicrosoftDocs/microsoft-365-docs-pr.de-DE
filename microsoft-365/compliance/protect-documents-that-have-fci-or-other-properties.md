@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies Ihre Organisation beschreibt, können Sie eine DLP-Richtlinie erstellen, die die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, sodass die DLP-Richtlinie in Office-Dokumenten mit bestimmten FCI-oder anderen Eigenschaftswerten erzwungen werden kann.
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632200"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327101"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
@@ -56,11 +56,11 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in de
     
 2. Wählen Sie im linken Navigationsbereich **Admin Centers** \> **SharePoint**aus. Sie befinden sich jetzt im SharePoint Admin Center.
     
-3. Klicken Sie im linken Navigationsbereich **search** \> auf der \> Seite **Suchverwaltung** auf Suche verwalten, um das **Such Schema zu verwalten**.
+3. Klicken Sie im linken Navigationsbereich **search** \> auf der Seite **Suchverwaltung** auf Suche verwalten, um das \> **Such Schema zu verwalten**.
     
     ![Seite "Suchverwaltung" im SharePoint Admin Center](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. Klicken Sie auf der Seite \> **verwaltete Eigenschaften** auf **neue verwaltete Eigenschaft**.
+4. Klicken Sie auf der Seite **verwaltete Eigenschaften** auf \> **neue verwaltete Eigenschaft**.
     
     ![Seite "verwaltete Eigenschaften" mit hervorgehobener Schaltfläche "verwaltete Eigenschaft"](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -72,11 +72,11 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in de
     
 8. Fügen Sie unter **Zuordnungen zu durchforstete Eigenschaften** \> **eine Zuordnung hinzu**.
     
-9. Suchen und wählen Sie im Dialogfeld \> durch **forstete Eigenschaften Auswahl** die durchforstete Eigenschaft aus, die der Eigenschaft Windows Server-FCI oder einer anderen Eigenschaft entspricht, die Sie in Ihrer \> DLP-Richtlinie verwenden werden, **OK**.
+9. Suchen und wählen Sie im Dialogfeld durch **forstete Eigenschaften Auswahl** \> die durchforstete Eigenschaft aus, die der Eigenschaft Windows Server-FCI oder einer anderen Eigenschaft entspricht, die Sie in ihrer DLP-Richtlinie verwenden werden, \> **OK**.
     
     ![Dialogfeld "durchforstete Eigenschaften Auswahl"](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
-10. Klicken Sie unten auf der Seite \> auf **OK**.
+10. Klicken Sie unten auf der Seite auf \> **OK**.
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Erstellen einer DLP-Richtlinie, die eine FCI-Eigenschaft oder eine andere Eigenschaft verwendet
 
@@ -92,13 +92,13 @@ Als Nächstes erstellen Sie eine DLP-Richtlinie mit zwei Regeln, die beide die B
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>Erstellen der DLP-Richtlinie mithilfe von PowerShell
 
-Beachten Sie, dass die Bedingungs **Dokumenteigenschaften einen dieser Werte enthalten** , die in der Benutzeroberfläche des Security &amp; Compliance Centers vorübergehend nicht verfügbar sind, Sie können diese Bedingung jedoch weiterhin mithilfe von PowerShell verwenden. Sie können `New\Set\Get-DlpCompliancePolicy` die Cmdlets verwenden, um mit einer DLP-Richtlinie zu arbeiten `New\Set\Get-DlpComplianceRule` , und die Cmdlets mit dem `ContentPropertyContainsWords` Parameter verwenden, um die Bedingung **Dokumenteigenschaften enthalten einen dieser Werte**hinzufügen.
+Beachten Sie, dass die Bedingungs **Dokumenteigenschaften einen dieser Werte enthalten** , die in der Benutzeroberfläche des Security &amp; Compliance Centers vorübergehend nicht verfügbar sind, Sie können diese Bedingung jedoch weiterhin mithilfe von PowerShell verwenden. Sie können die `New\Set\Get-DlpCompliancePolicy` Cmdlets verwenden, um mit einer DLP-Richtlinie zu arbeiten, und die `New\Set\Get-DlpComplianceRule` Cmdlets mit dem Parameter verwenden, `ContentPropertyContainsWords` um die Bedingung **Dokumenteigenschaften enthalten einen dieser Werte**hinzufügen.
   
 Weitere Informationen zu diesen Cmdlets finden Sie unter [Security &amp; Compliance Center-Cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Herstellen einer Verbindung mit &amp; dem Security Compliance Center mithilfe von Remote-PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Herstellen einer Verbindung mit dem Security &amp; Compliance Center mithilfe von Remote-PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Erstellen Sie die Richtlinie `New-DlpCompliancePolicy`mithilfe von.
+2. Erstellen Sie die Richtlinie mithilfe von `New-DlpCompliancePolicy` .
 
 Hier ist ein PowerShell-Beispiel, das eine DLP-Richtlinie erstellt, die für alle Standorte gilt.
 
@@ -106,7 +106,7 @@ Hier ist ein PowerShell-Beispiel, das eine DLP-Richtlinie erstellt, die für all
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. Erstellen Sie die beiden oben beschriebenen Regeln mithilfe `New-DlpComplianceRule`von, wobei eine Regel für den **niedrigen** Wert steht, und eine andere Regel für die **hohen** und **moderaten** Werte. 
+3. Erstellen Sie die beiden oben beschriebenen Regeln mithilfe von `New-DlpComplianceRule` , wobei eine Regel für den **niedrigen** Wert steht, und eine andere Regel für die **hohen** und **moderaten** Werte. 
     
     Es folgt ein PowerShell-Beispiel, in dem diese beiden Regeln erstellt werden. Beachten Sie, dass die Eigenschaften Name/Wert-Paare in Anführungszeichen eingeschlossen sind, und ein Eigenschaftsname möglicherweise mehrere Werte durch Kommas ohne Leerzeichengetrennt angibt, wie`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -135,7 +135,7 @@ Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens un
   
 ### <a name="re-index-a-site-optional"></a>Erneute Indizierung einer Website (optional)
 
-1. Wählen Sie auf der Website **Einstellungen** (Zahnradsymbol in der oberen rechten \> ) **Websiteeinstellungen**aus.
+1. Wählen Sie auf der Website **Einstellungen** (Zahnradsymbol in der oberen rechten) \> **Websiteeinstellungen**aus.
     
 2. Wählen Sie unter **Suchen**die Option **Such-und Offline Verfügbarkeits** \> **REINDEX Website**aus.
     
@@ -149,4 +149,4 @@ Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens un
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Verfügbare Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md)
+- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)

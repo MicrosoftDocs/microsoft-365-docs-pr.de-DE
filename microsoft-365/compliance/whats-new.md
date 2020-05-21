@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Wir fügen kontinuierlich neue Funktionen zum Microsoft 365 Compliance Center hinzu, beheben Probleme, von denen wir erfahren, und nehmen basierend auf Ihrem Feedback Änderungen vor. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034267"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327737"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -177,7 +177,7 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliancebedürn
 |Bezeichnungsaktivitäten-Explorer|Information Governance > Bezeichnungsaktivitäten-Explorer <br/> https://protection.office.com/labelexplorer |Datenklassifizierung > Registerkarte „Aktivitäten-Explorer“ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten für Ihre Inhalte mit Bezeichnungen (Vorschau)](data-classification-activity-explorer.md)|
 |Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/retentionlabels |Information Governance > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](labels.md)|
 |Aufbewahrungsrichtlinien|Information Governance > Aufbewahrung <br/> https://protection.office.com/retention |Information Governance > Registerkarte „Aufbewahrung“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)|
-|Typen vertraulicher Informationen|Klassifizierung > Typen vertraulicher Informationen <br/> https://protection.office.com/sensitivetypes |Datenklassifizierung > Registerkarte „Typen vertraulicher Informationen“ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)|
+|Typen vertraulicher Informationen|Klassifizierung > Typen vertraulicher Informationen <br/> https://protection.office.com/sensitivetypes |Datenklassifizierung > Registerkarte „Typen vertraulicher Informationen“ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)|
 |Vertraulichkeitsbezeichnungen und Bezeichnungsrichtlinien|Klassifizierung > Vertraulichkeitsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/sensitivity |Information Protection > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zurzeit kann nur im Office 365 Security & Compliance Center auf Dienstüberprüfungsressourcen zugegriffen werden. |[Dienstüberprüfung im Security & Compliance Center](service-assurance.md)|
 |Aufsicht|Aufsicht <br/> https://protection.office.com/supervisoryreviewv2 |Kommunikationscompliance <br/> https://compliance.microsoft.com/supervisoryreview |[Kommunikationscompliance in Microsoft 365 (Vorschau)](communication-compliance.md) |

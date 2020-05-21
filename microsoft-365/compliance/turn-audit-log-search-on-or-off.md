@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Sie können das Feature Überwachungsprotokoll Suche im Security & Compliance Center aktivieren. Wenn Sie Ihre Meinung ändern, können Sie jederzeit deaktivieren. Wenn die Überwachungsprotokoll Suche deaktiviert ist, können Administratoren das Microsoft 365-Überwachungsprotokoll nicht nach Benutzer-und Administratoraktivitäten in Ihrer Organisation durchsuchen.
-ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633420"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330789"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
 
@@ -48,22 +48,24 @@ Sie können das Security & Compliance Center oder PowerShell verwenden, um die �
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>Aktivieren der Überwachungsprotokoll Suche mithilfe des Security & Compliance Centers
 
-1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Überwachungsprotokoll-Suche**.
-    
+1. [Wechseln Sie zum Security & Compliance Center](https://protection.office.com) , und melden Sie sich an.
+
+2. Wechseln Sie im Security & Compliance Center zu **Such** \> **Überwachungsprotokoll-Suche**.
+
    Ein Banner wird angezeigt, das besagt, dass die Überwachung aktiviert werden muss, um Benutzer-und Administratoraktivitäten aufzuzeichnen.
 
-2. Klicken Sie auf **Überwachung aktivieren**.
-    
+3. Klicken Sie auf **Überwachung aktivieren**.
+
     ![Klicken Sie auf Überwachung aktivieren](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     Das Banner wird aktualisiert, um zu sagen, dass das Überwachungsprotokoll vorbereitet wird und dass Sie in wenigen Stunden nach Benutzer-und Administratoraktivitäten suchen können.
-    
+
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Aktivieren der Überwachungsprotokoll Suche mithilfe von PowerShell
 
 1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554).
-    
+
 2. Führen Sie den folgenden PowerShell-Befehl aus, um die Überwachungsprotokoll Suche in Office 365 zu aktivieren.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -75,15 +77,15 @@ Sie können das Security & Compliance Center oder PowerShell verwenden, um die �
 Sie müssen Remote-PowerShell verwenden, die mit Ihrer Exchange Online Organisation verbunden ist, um die Überwachungsprotokoll Suche zu deaktivieren. Ähnlich wie beim Aktivieren der Überwachungsprotokoll Suche müssen Sie der Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen sein, um die Überwachungsprotokoll Suche zu deaktivieren.
   
 1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554).
-    
+
 2. Führen Sie den folgenden PowerShell-Befehl aus, um die Überwachungsprotokoll Suche in Office 365 zu deaktivieren.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. Überprüfen Sie nach einer Weile, ob die Überwachungsprotokoll Suche deaktiviert (disabled) ist. Sie können auf zwei Arten vorgehen:
-    
+
     - Führen Sie in PowerShell den folgenden Befehl aus:
 
     ```powershell
@@ -91,7 +93,7 @@ Sie müssen Remote-PowerShell verwenden, die mit Ihrer Exchange Online Organisat
     ```
 
       Der Wert von `False` für die _UnifiedAuditLogIngestionEnabled_ -Eigenschaft gibt an, dass die Überwachungsprotokoll Suche deaktiviert ist. 
-    
-    - Wechseln Sie im Security & Compliance Center zu **Such** \> **Überwachungsprotokoll-Suche**.
-    
+
+    - Wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Such** \> **Überwachungsprotokoll-Suche**.
+
       Ein Banner wird angezeigt, das besagt, dass die Überwachung aktiviert werden muss, um Benutzer-und Administratoraktivitäten aufzuzeichnen.

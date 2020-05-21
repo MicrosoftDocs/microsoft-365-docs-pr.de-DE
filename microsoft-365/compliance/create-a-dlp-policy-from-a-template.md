@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: In diesem Artikel erfahren Sie, wie Sie DLP-Richtlinien mit einer der in Office 365 enthaltenen Vorlagen erstellen.
-ms.openlocfilehash: be063c8ee8605db94fe3a68f7ca42b7135553f5e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 612f6d0c9459c31087bafa5c498bd4767535e169
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035717"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327807"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
@@ -62,23 +62,23 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
-3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
+3. Im Security &amp; Compliance Center \> Links Navigations Richtlinie zur \> **Verhinderung von Datenverlust** und \> **Policy** \> **Erstellen einer Richtlinie**.
     
     ![Erstellen einer Richtlinien Schaltfläche](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen \> Informationen schützt, die Sie **als nächstes**benötigen.
+4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen Informationen schützt, die Sie \> **als nächstes**benötigen.
     
-    In diesem Beispiel wählen Sie Daten **Schutz** \> - **US-Daten für personenbezogene Informationen (PII)** aus, da Sie bereits die meisten Arten von vertraulichen Informationen enthält, die Sie schützen möchten – Sie fügen später ein paar hinzu. 
+    In diesem Beispiel wählen Sie Daten **Schutz** - \> **US-Daten für personenbezogene Informationen (PII)** aus, da Sie bereits die meisten Arten von vertraulichen Informationen enthält, die Sie schützen möchten – Sie fügen später ein paar hinzu. 
     
     Wenn Sie eine Vorlage auswählen, können Sie die Beschreibung auf der rechten Seite lesen, um zu erfahren, welche Arten von vertraulichen Informationen die Vorlage schützt.
     
     ![Seite zum Auswählen einer DLP-Richtlinienvorlage](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
-5. Nennen Sie die \> Richtlinie **als nächstes**.
+5. Nennen Sie die Richtlinie \> **als nächstes**.
     
 6. Führen Sie einen der folgenden Schritte aus, um die Speicherorte auszuwählen, die von der DLP-Richtlinie geschützt werden sollen:
     
-  - Wählen Sie **in Office 365** \> **Next**alle Standorte aus.
+  - Wählen Sie **in Office 365 Next alle Standorte aus** \> **Next**.
     
   - Wählen Sie **Let Me Choose specific Locations** \> **Next**aus. Wählen Sie in diesem Beispiel diese aus.
     
@@ -90,7 +90,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
   
     Wenn Sie in diesem Beispiel vertrauliche Informationen schützen möchten, die in allen OneDrive für Unternehmen Konten gespeichert sind, deaktivieren Sie den **Status** für **Exchange-e-Mails** und **SharePoint-Websites**, und belassen Sie den **Status** für **OneDrive-Konten**.
     
-7. Wählen Sie \> **weiter** **Erweiterte Einstellungen verwenden** aus.
+7. Wählen Sie weiter **Erweiterte Einstellungen verwenden** aus \> **Next**.
     
 8. Eine DLP-Richtlinienvorlage enthält vordefinierte Regeln mit Bedingungen und Aktionen, die bestimmte Arten von vertraulichen Informationen erkennen und entsprechende Aktionen ausführen. Sie können eine der vorhandenen Regeln bearbeiten, löschen oder deaktivieren oder neue Regeln hinzufügen. Klicken Sie nach Abschluss des Vorganges auf **weiter**.
     
@@ -108,17 +108,17 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     ![Schaltfläche "Regel löschen"](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
-9. In diesem Beispiel müssen Sie nun zwei vertrauliche Informationstypen hinzufügen (US-Bank Kontonummern und US-Führerscheinnummern), Benutzern das außer Kraft setzen einer Regel ermöglichen und die Anzahl in jedes Vorkommen ändern. Sie können dies alles tun, indem Sie eine Regel bearbeiten, daher wählen Sie **hohe Anzahl von Inhalten, die in der US-PII** \> - **Bearbeitungsregel**erkannt wurden.
+9. In diesem Beispiel müssen Sie nun zwei vertrauliche Informationstypen hinzufügen (US-Bank Kontonummern und US-Führerscheinnummern), Benutzern das außer Kraft setzen einer Regel ermöglichen und die Anzahl in jedes Vorkommen ändern. Sie können dies alles tun, indem Sie eine Regel bearbeiten, daher wählen Sie **hohe Anzahl von Inhalten, die in der US** \> -PII- **Bearbeitungsregel**erkannt wurden.
     
     ![Schaltfläche ' Regel bearbeiten '](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Zum Hinzufügen eines Typs für vertrauliche Informationen **Conditions** im Abschnitt \> Bedingungen **Hinzufügen oder Ändern von Typen**. Wählen Sie dann unter **Hinzufügen oder ändern Typen** \> die **Add** \> Option Select **US Bank Account Number** und **u.s. Driver es License Number** \> **Add** \> **done**aus.
+10. Zum Hinzufügen eines Typs für vertrauliche Informationen im Abschnitt **Bedingungen** \> **Hinzufügen oder Ändern von Typen**. Wählen Sie dann unter **Hinzufügen oder ändern Typen** \> **Add** \> die Option Select **US Bank Account Number** und **u.s. Driver es License Number** \> **Add** \> **done**aus.
     
     ![Option zum Hinzufügen oder Ändern von Typen](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
     ![Bereich "Typen hinzufügen oder ändern"](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
-11. Wenn Sie die Anzahl der Instanzen von vertraulichen Informationen ändern möchten, die zum Auslösen der Regel erforderlich sind, wählen Sie unter **min** **Instanz count** \> den Wert Min \> für jeden Typ 1 aus. Die minimale Anzahl darf nicht leer sein. Die maximale Anzahl kann leer sein; ein leerer **Max** -Wert, der in **any**konvertiert werden soll.
+11. Wenn Sie die Anzahl der Instanzen von vertraulichen Informationen ändern möchten, die zum Auslösen der Regel erforderlich sind, wählen Sie unter **Instanz count** \> den Wert **Min** für jeden Typ \> 1 aus. Die minimale Anzahl darf nicht leer sein. Die maximale Anzahl kann leer sein; ein leerer **Max** -Wert, der in **any**konvertiert werden soll.
     
     Nach Abschluss des Vorgangs sollte die minimale Anzahl für alle Typen vertraulicher Informationen **1** sein, und die maximale Anzahl sollte **beliebig**sein. Mit anderen Worten: jedes Vorkommen dieses Typs vertraulicher Informationen erfüllt diese Bedingung.
     
@@ -136,11 +136,11 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
 14. Am unteren Rand des Regel-Editors \> **Speichern**.
     
-15. Überprüfen Sie die Bedingungen und Aktionen für \> diese Regel **als nächstes**.
+15. Überprüfen Sie die Bedingungen und Aktionen für diese Regel \> **als nächstes**.
     
     Beachten Sie auf der rechten Seite die **Status** Option für die Regel. Wenn Sie eine gesamte Richtlinie deaktivieren, werden auch alle in der Richtlinie enthaltenen Regeln deaktiviert. Hier können Sie jedoch eine bestimmte Regel deaktivieren, ohne die gesamte Richtlinie zu deaktivieren. Dies kann hilfreich sein, wenn Sie eine Regel untersuchen müssen, die eine große Anzahl falsch positiver Ergebnisse generiert. 
     
-16. Lesen und verstehen Sie auf \> **der nächsten Seite**die folgenden Informationen, und wählen Sie dann aus, ob die Regel aktiviert oder zuerst getestet werden soll.
+16. Lesen und verstehen Sie auf der nächsten Seite die folgenden Informationen, und wählen Sie dann aus, ob die Regel aktiviert oder zuerst getestet werden soll \> **Next**.
     
      Bevor Sie DLP-Richtlinien erstellen, sollten Sie sie erst einmal nach und nach bereitstellen, um die Auswirkungen beurteilen und ihre Effektivität testen zu können, bevor Sie sie vollständig durchsetzen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende von Dokumenten blockiert, die für Personen erforderlich sind, damit Sie Ihre Arbeit erledigen können. 
     
@@ -154,7 +154,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, in der die US-PII-Daten id
     
     ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
-20. Überprüfen Sie die Einstellungen für \> diese Richtlinie **Create**.
+20. Überprüfen Sie die Einstellungen für diese Richtlinie \> **Create**.
     
 Nachdem Sie eine DLP-Richtlinie erstellt und aktiviert haben, wird Sie in allen darin enthaltenen Inhaltsquellen bereitgestellt, beispielsweise SharePoint Online Websites oder OneDrive für Unternehmen Konten, bei denen die Richtlinie automatisch mit der Durchsetzung der Regeln für diese Inhalte beginnt.
   
@@ -178,7 +178,7 @@ Nachfolgend werden die verschiedenen Statuswerte und deren Bedeutung beschrieben
 
 Sie können eine DLP-Richtlinie jederzeit bearbeiten oder deaktivieren. Durch das Deaktivieren einer Richtlinie werden alle Regeln in der Richtlinie deaktiviert.
   
-Zum Bearbeiten oder Deaktivieren einer DLP-Richtlinie wählen Sie auf der \> Seite \> **Richtlinie** die Richtlinien **Bearbeitungs Richtlinie**aus.
+Zum Bearbeiten oder Deaktivieren einer DLP-Richtlinie wählen Sie auf der Seite **Richtlinie** \> die Richtlinien \> **Bearbeitungs Richtlinie**aus.
   
 ![Schaltfläche ' Richtlinie bearbeiten '](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
@@ -194,6 +194,6 @@ Darüber hinaus können Sie jede Regel einzeln deaktivieren, indem Sie die Richt
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Verfügbare Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md)
+- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
     
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: a6b73070affc1054d316f71c071772b53b2e4f09
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155433"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327230"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
 
@@ -42,8 +42,8 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben abzusch
   
 ||**Aufgabe**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1   <br/> |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |3  <br/> |[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Erhöhen des Schutzniveaus gegen Schadsoftware in Mail](secure-your-business-data.md#malware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Schutz vor Ransomware](secure-your-business-data.md#ransomware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -67,7 +67,7 @@ Ein Schulungsvideo zur Einrichtung von MFA und zur Fertigstellung von Benutzern 
   
 So richten Sie die mehrstufige Authentifizierung ein:
 
-1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822)die Option **Users** > **Active Users**aus.
+1. Wählen Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=834822)die Option **Users**  >  **Active Users**aus.
 
 2. Wählen Sie im Abschnitt **aktive Benutzer** die Option **mehrstufige Authentifizierung**aus.
 
@@ -117,9 +117,9 @@ Die Administratorkonten, die Sie zum Verwalten Ihrer Microsoft 365-Umgebung verw
 
 Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, aber Sie können diesen Schutz verbessern, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in e-Mails zu erhöhen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0)an, oder führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Threat Management**die Option **Policy** \> **Anti-Malware**aus.
     
 3. Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
     
@@ -148,13 +148,13 @@ Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
 
 2. Wählen Sie in der Kategorie **Nachrichtenfluss** die Option **Regeln**aus.
     
-3. Wählen **+** Sie aus, und erstellen Sie dann **eine neue Regel**.
+3. Wählen Sie aus **+** , und erstellen Sie dann **eine neue Regel**.
     
 4. Wählen Sie am unteren Rand des Dialogfelds die Option * * * * aus, um den vollständigen Optionssatz anzuzeigen. 
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|**Blockieren von Dateitypen, die Ransomware oder anderen bösartigen Code enthalten könnten**|
 |:-----|:-----|:-----|
@@ -184,18 +184,19 @@ So erstellen Sie eine e-Mail-Transportregel:
 
 2. Wählen Sie in der Kategorie **Nachrichtenfluss** die Option **Regeln**aus.
     
-3. Wählen **+** Sie aus, und erstellen Sie dann **eine neue Regel**.
+3. Wählen Sie aus **+** , und erstellen Sie dann **eine neue Regel**.
     
 4. Wählen Sie im unteren Bereich des Dialogfelds **Weitere Optionen** aus, um den vollständigen Optionssatz anzuzeigen. 
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
-|**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
+|**Einstellung**|**Ablehnen automatischer Weiterleitung von e-Mails an externe Domänen**|
 |:-----|:-----|
 |Name  <br/> |Verhindern der automatischen Weiterleitung von e-Mails an externe Domänen  <br/> |
 |Diese Regel anwenden, wenn...  <br/> |Absender. . . ist extern/intern. . . Innerhalb der Organisation  <br/> |
+|Bedingung hinzufügen  <br/> |Empfänger. . . ist extern/intern. . . Außerhalb der Organisation  <br/> |
 |Bedingung hinzufügen  <br/> |Die Nachrichteneigenschaften. . . Geben Sie den Nachrichtentyp ein. . . Automatische Weiterleitung  <br/> |
 |Führen Sie die folgenden Schritte aus...  <br/> |Blockiert die Nachricht. . . die Nachricht ablehnen und eine Erklärung einschließen.  <br/> |
 |Nachrichtentext bereitstellen  <br/> |Die automatische Weiterleitung von e-Mails außerhalb dieser Organisation wird aus Sicherheitsgründen verhindert.  <br/> |
@@ -244,7 +245,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Sc
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP Anti-Phishing**aus.
     
@@ -254,7 +255,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Sc
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** oder **Speichern**(je nach Bedarf) aus.
     
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>
+| | | **Einstellung oder Option** | **Empfohlene Einstellung** <br/>
 | Name  <br/> | Domäne und die wertvollsten Kampagnen Mitarbeiter  <br/> | | Beschreibung  <br/> | Stellen Sie sicher, dass die meisten wichtigen Mitarbeiter und unsere Domäne nicht angenommen werden.  <br/> | | Hinzufügen von Benutzern zum Schutz  <br/> | Wählen Sie **+ Bedingung hinzufügen, ist der Empfänger**. Geben Sie Benutzernamen ein, oder geben Sie die e-Mail-Adresse des Kandidaten, des Kampagnen Managers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor dem Identitätswechsel schützen möchten.  <br/> | | Hinzufügen von Domänen zum Schutz  <br/> | Wählen Sie **+ Bedingung hinzufügen, die Empfängerdomäne ist**. Geben Sie die benutzerdefinierte Domäne, die Ihrem Microsoft 365-Abonnement zugeordnet ist, ein, wenn Sie eine definiert haben. Sie können mehr als eine Domäne eingeben.  <br/> | | Auswählen von Aktionen  <br/> | Wenn e-Mail von einem imitierten Benutzer gesendet wird: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten**aus, und geben Sie dann die e-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: securityadmin@contoso.com.          Wenn e-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Quarantäne Nachricht**aus.  <br/> | | Post Fach Intelligenz  <br/> | Standardmäßig wird die Post Fach Intelligenz ausgewählt, wenn Sie eine neue Richtlinie zum Schutz vor Phishing erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.  <br/> | | Hinzufügen von vertrauenswürdigen Absendern und Domänen  <br/> | Definieren Sie für dieses Beispiel keine Außerkraftsetzungen.  <br/> | | Angewendet auf  <br/> | Wählen Sie **die Empfängerdomäne**aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise contoso.com, in der Liste, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
@@ -266,21 +267,21 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
   
 Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Anlagen**aus.
     
 4. Wenden Sie diesen Schutz auf der Seite sichere Anlagen allgemein an, indem Sie das Kontrollkästchen **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren** aktivieren. 
     
-5. Wählen **+** Sie diese Option aus, um eine neue Richtlinie zu erstellen. 
+5. Wählen Sie diese Option aus **+** , um eine neue Richtlinie zu erstellen. 
     
 6. Wenden Sie die Einstellungen in der folgenden Tabelle an. 
     
 7. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** oder **Speichern**(je nach Bedarf) aus.
     
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>| | Name  <br/> | Blockiert aktuelle und zukünftige e-Mails mit erkannter Schadsoftware.  <br/> | | Beschreibung  <br/> | Blockiert aktuelle und zukünftige e-Mails und Anlagen mit erkannter Schadsoftware.  <br/> | | Anhänge speichern unbekannte Schadsoftware-Antwort  <br/> | Wählen Sie **die Option Blockieren der aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware**aus.  <br/> | | Umleitungs Anlage bei der Erkennung  <br/> | Umleitung aktivieren (aktivieren Sie dieses Kontrollkästchen) geben Sie das Administratorkonto oder ein Post Fach Setup für Quarantäne ein.          Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt (aktivieren Sie dieses Kontrollkästchen).  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+| | | **Einstellung oder Option** | **Empfohlene Einstellung** <br/>| | Name  <br/> | Blockiert aktuelle und zukünftige e-Mails mit erkannter Schadsoftware.  <br/> | | Beschreibung  <br/> | Blockiert aktuelle und zukünftige e-Mails und Anlagen mit erkannter Schadsoftware.  <br/> | | Anhänge speichern unbekannte Schadsoftware-Antwort  <br/> | Wählen Sie **die Option Blockieren der aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware**aus.  <br/> | | Umleitungs Anlage bei der Erkennung  <br/> | Umleitung aktivieren (aktivieren Sie dieses Kontrollkästchen) geben Sie das Administratorkonto oder ein Post Fach Setup für Quarantäne ein.          Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt (aktivieren Sie dieses Kontrollkästchen).  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
    
 Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -297,9 +298,9 @@ Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
     
 Um auf ATP-sichere Links zu gelangen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Administratorkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie auf der Seite Richtlinie die Option **ATP-sichere Links**aus.
     
@@ -309,16 +310,16 @@ So ändern Sie die Standardrichtlinie:
     
 2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail**die Option **Microsoft 365 apps for Enterprise, Office für IOS und Android**aus.
     
-3. Klicken Sie auf **Speichern**. 
+3. Wählen Sie **Speichern**. 
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
-1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die Option aus **+** , um eine neue Richtlinie zu erstellen. 
+1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die Option aus, **+** um eine neue Richtlinie zu erstellen. 
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
-3. Klicken Sie auf **Speichern**. 
+3. Wählen Sie **Speichern**. 
     
-| | | Einstellung **oder**|**Empfohlene Einstellung** für die Option <br/>| | Name  <br/> | Richtlinie für sichere Links für alle Empfänger in der Domäne  <br/> | | Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten  <br/> | Select **on-URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt**.  <br/> | | Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte  <br/> | Aktivieren Sie dieses Kontrollkästchen.  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
+| | | **Einstellung oder Option** | **Empfohlene Einstellung** <br/>| | Name  <br/> | Richtlinie für sichere Links für alle Empfänger in der Domäne  <br/> | | Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten  <br/> | Select **on-URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt**.  <br/> | | Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte  <br/> | Aktivieren Sie dieses Kontrollkästchen.  <br/> | | Angewendet auf  <br/> | Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
    
 Weitere Informationen finden Sie unter [Office 365 ATP-sichere Links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

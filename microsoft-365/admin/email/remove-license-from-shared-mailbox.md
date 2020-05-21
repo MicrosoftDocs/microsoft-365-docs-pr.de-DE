@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um Sie einem anderen Benutzer zuzuweisen. '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140429"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327242"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Freigegebene Postfächer benötigen keine Lizenz, es sei denn, das Postfach hat mehr als 50 GB Daten. Befolgen Sie diese Anweisungen, um eine Lizenz aus einem freigegebenen Postfach zu entfernen, damit Sie Sie entweder einem Benutzer zuweisen oder die Lizenz zurückgeben können, damit Sie nicht für eine Lizenz bezahlen, die Sie nicht benötigen.
+Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie diese Anweisungen, um eine Lizenz aus einem freigegebenen Postfach zu entfernen, damit Sie Sie entweder einem Benutzer zuweisen oder die Lizenz zurückgeben können, damit Sie nicht für eine Lizenz bezahlen, die Sie nicht benötigen.
+
+> [!NOTE]
+> In den folgenden Szenarien ist eine Lizenz erforderlich:
+> 1. Das freigegebene Postfach verfügt über mehr als 50 GB Speicherplatz.
+> 2. Das freigegebene Postfach verwendet die in-Place-Archivierung.
+> 3. Das freigegebene Postfach wird in einem Beweissicherungsverfahren aufbewahrt.
+
   
 ## <a name="remove-the-license"></a>Entfernen der Lizenz
 
@@ -74,7 +81,7 @@ Freigegebene Postfächer benötigen keine Lizenz, es sei denn, das Postfach hat 
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 
@@ -93,7 +100,7 @@ Freigegebene Postfächer benötigen keine Lizenz, es sei denn, das Postfach hat 
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 

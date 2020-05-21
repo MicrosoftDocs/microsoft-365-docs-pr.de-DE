@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: dbc8d1e8dae1845412b1fb3ad86b831b08a4a518
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173551"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327144"
 ---
 # <a name="microsoft-secure-score-new"></a>Microsoft Secure Score (neu)
 
@@ -103,6 +103,9 @@ Damit Sie die benötigten Informationen schneller finden können, sind die Micro
 * App (E-Mail-und Cloud-Apps, einschließlich Office 365 und Microsoft Cloud App Security)
 * Infrastruktur (bisher keine Verbesserungsmaßnahmen)
 
+>[!NOTE]
+>In der letzten Version von Microsoft Secure Score wurde ein verbessertes Bewertungsmodell veröffentlicht, das Microsoft Secure Score vorübergehend inkompatibel mit Identity Secure Score und der Graph-API machte. [Details anzeigen](microsoft-secure-score-new.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 Auf der Übersicht der Microsoft-Sicherheitsbewertung können Sie sehen, wie die Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite können Sie auch einen Überblick über die Gesamtpunktzahl, den historischen Trend Ihres Secure Score mit Benchmark-Vergleichen sowie priorisierte Verbesserungsmaßnahmen zur Verbesserung ihrer Punktzahl erhalten.
 
 ![Homepage für Secure Score](../../media/secure-score/secure-score-homepage-new.png)
@@ -120,8 +123,8 @@ Die Bewertung basiert auf der Anzahl der noch zu erreichenden Punkte, der Implem
 
 Wenn Sie eine bestimmte Verbesserungs Aktion auswählen, wird ein ganzseitiges Flyout angezeigt.  
 
-![Verbesserungs Aktion-](../../media/secure-score/secure-score-improvement-action-details.png)
-Flyout-Beispiel*Abbildung 2: Beispiel für ein Verbesserungs Aktion-Flyout*
+![Verbesserungs Aktion-Flyout-Beispiel ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *Abbildung 2: Beispiel für ein Verbesserungs Aktion-Flyout*
 
 Zum Ausführen der Maßnahme stehen Ihnen verschiedene Optionen zur Verfügung:
 
@@ -177,6 +180,14 @@ Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposi
 ## <a name="whats-new"></a>Was sind die Neuerungen? 
 
 Um Microsoft Secure Score zu einem besseren Vertreter ihrer Sicherheitsposition zu machen, haben wir einige Änderungen vorgenommen. Informationen zu geplanten Änderungen finden Sie unter [What es Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilität mit Identity Secure Score und Graph-API
+
+In der letzten Version von Microsoft Secure Score wurde ein verbessertes Bewertungsmodell veröffentlicht. Diese Änderungen ermöglichen eine flexiblere und präzisere Darstellung Ihrer Sicherheitsposition. Diese Updates haben jedoch zur vorübergehenden Inkompatibilität von Microsoft Secure Score mit Identity Secure Score und der Graph-API geführt.
+
+In der Zeit wird das neue Bewertungsmodell von Identity Secure Score und der Graph-API übernommen. Bis dahin werden Kunden Unterschiede in den von Microsoft Secure Score, Identity Secure Score und der Graph-API gemeldeten Bewertungen sehen. Wir entschuldigen uns für eventuelle Unannehmlichkeiten und arbeiten daran, dass diese Erfahrungen in Zukunft besser kompatibel sind.
+
+### <a name="updated-improvement-actions"></a>Aktualisierte Verbesserungs Aktionen
 
 - Azure-Active Directory-Verbesserungs Aktionen hinzugefügt
 - Verbesserungs Aktionen für erweiterte Azure Advanced Threat Protection hinzugefügt

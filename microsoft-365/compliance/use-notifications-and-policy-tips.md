@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626401"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327263"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -36,7 +36,7 @@ Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, 
   
 Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt.
   
-Wenn Sie im &amp; Security Compliance Center eine DLP-Richtlinie erstellen, können Sie die Benutzer Benachrichtigungen für Folgendes konfigurieren:
+&amp;Wenn Sie im Security Compliance Center eine DLP-Richtlinie erstellen, können Sie die Benutzer Benachrichtigungen für Folgendes konfigurieren:
   
 - Senden Sie eine e-Mail-Benachrichtigung an die Personen, die Sie auswählen, die das Problem beschreibt.
     
@@ -44,9 +44,9 @@ Wenn Sie im &amp; Security Compliance Center eine DLP-Richtlinie erstellen, kön
     
   - Bei e-Mails in Outlook im Internet und Outlook 2013 und höher wird die RichtlinienInfo oben in einer Nachricht oberhalb der Empfänger angezeigt, während die Nachricht verfasst wird.
     
-  - Für Dokumente in einem OneDrive für Unternehmen Konto oder SharePoint Online Website wird der richtlinientipp durch ein Warnsymbol angezeigt, das auf dem Element angezeigt wird. Um weitere Informationen anzuzeigen, können Sie ein Element auswählen und dann in **Information** ![der rechten oberen Ecke](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) der Seite auf Informations Informationsbereichs Symbol klicken, um den Detailbereich zu öffnen. 
+  - Für Dokumente in einem OneDrive für Unternehmen Konto oder SharePoint Online Website wird der richtlinientipp durch ein Warnsymbol angezeigt, das auf dem Element angezeigt wird. Um weitere Informationen anzuzeigen, können Sie ein Element auswählen und dann **Information** ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in der rechten oberen Ecke der Seite auf Informations Informationsbereichs Symbol klicken, um den Detailbereich zu öffnen. 
     
-  - Für Excel-, PowerPoint-und Word-Dokumente, die auf einer OneDrive für Unternehmen Website oder SharePoint Online Website gespeichert sind, die in der DLP-Richtlinie enthalten ist, wird der richtlinientipp in **File** der Status \> Leiste und im Backstage-Ansicht (Menü **Informationen**für Dateien) angezeigt.
+  - Für Excel-, PowerPoint-und Word-Dokumente, die auf einer OneDrive für Unternehmen Website oder SharePoint Online Website gespeichert sind, die in der DLP-Richtlinie enthalten ist, wird der richtlinientipp in **File** der Statusleiste und im Backstage-Ansicht (Menü \> **Informationen**für Dateien) angezeigt.
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Hinzufügen von Benutzer Benachrichtigungen zu einer DLP-Richtlinie
 
@@ -54,21 +54,21 @@ Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigunge
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Security &amp; Compliance Center.
     
-3. Im &amp; Security \> Compliance Center Links Navigations \> **Richtlinie** \> zur **Verhinderung** \> von Datenverlust und **Erstellen einer Richtlinie**.
+3. Im Security &amp; Compliance Center \> Links Navigations Richtlinie zur \> **Verhinderung von Datenverlust** und \> **Policy** \> **Erstellen einer Richtlinie**.
     
     ![Erstellen einer Richtlinien Schaltfläche](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen \> Informationen schützt, die Sie **als nächstes**benötigen.
+4. Wählen Sie die DLP-Richtlinienvorlage aus, die die Typen von vertraulichen Informationen schützt, die Sie \> **als nächstes**benötigen.
     
-    Um mit einer leeren Vorlage zu beginnen, wählen Sie **als nächstes** **Benutzer** \> definierte **Richtlinie** \> aus.
+    Um mit einer leeren Vorlage zu beginnen, **Custom** wählen Sie \> **Custom policy** \> **als nächstes**benutzerdefinierte Richtlinie aus.
     
-5. Nennen Sie die \> Richtlinie **als nächstes**.
+5. Nennen Sie die Richtlinie \> **als nächstes**.
     
 6. Führen Sie einen der folgenden Schritte aus, um die Speicherorte auszuwählen, die von der DLP-Richtlinie geschützt werden sollen:
     
-   - Wählen Sie **in Office 365** \> **Next**alle Standorte aus.
+   - Wählen Sie **in Office 365 Next alle Standorte aus** \> **Next**.
     
    - Wählen Sie **Let Me Choose specific Locations** \> **Next**aus.
     
@@ -76,7 +76,7 @@ Wenn Sie eine DLP-Richtlinie erstellen, können Sie **Benutzer Benachrichtigunge
     
    Wenn Sie nur bestimmte SharePoint-Websites oder OneDrive-Konten einschließen möchten, wechseln Sie den **Status** auf ein, und klicken Sie dann auf die Links unter **einschließen** , um bestimmte Websites oder Konten auszuwählen. 
     
-7. Wählen Sie \> **weiter** **Erweiterte Einstellungen verwenden** aus.
+7. Wählen Sie weiter **Erweiterte Einstellungen verwenden** aus \> **Next**.
     
 8. Wählen Sie **+ neue Regel**aus.
     
@@ -168,7 +168,7 @@ Wenn ein Dokument auf einer OneDrive für Unternehmen Website oder SharePoint On
     
    ![Richtlinientipp Symbole für Dokumente in einem OneDrive-Konto](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Um Aktionen für ein Dokument durchführen zu können, wählen Sie \> ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in der oberen rechten Ecke der Seite ein Element **Informations** ![Informationsbereich auswählen aus, um den Detailbereich \> **Ansichts richtlinientipp**zu öffnen.
+Um Aktionen für ein Dokument durchführen zu können, wählen Sie \> **Information** ![ in der oberen rechten Ecke der Seite ein Element Informations Informationsbereich auswählen ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) aus, um den Detailbereich \> **Ansichts richtlinientipp**zu öffnen.
   
 Der richtlinientipp listet die Probleme mit dem Inhalt auf, und wenn die Richtlinien Tipps mit diesen Optionen konfiguriert sind, können Sie **Auflösen**auswählen und dann den richtlinientipp **außer Kraft setzen** oder ein falsch positives Ergebnis **melden** . 
   
@@ -202,7 +202,7 @@ Richtlinien Tipps funktionieren, ob die vertraulichen Informationen im Nachricht
   
 ![Richtlinientipp, der zeigt, dass eine Anlage mit einer DLP-Richtlinie kollidiert](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Wenn die Richtlinien Tipps so konfiguriert sind, dass Außerkraftsetzung zulässig ist, können Sie **Details** \> **anzeigen Außerkraftsetzung** \> Enter a Business \> Rechtfertigung oder Bericht eine falsch positive **Außerkraftsetzung**auswählen.
+Wenn die Richtlinien Tipps so konfiguriert sind, dass Außerkraftsetzung zulässig ist, können Sie **Details anzeigen** \> **Außerkraftsetzung** \> Enter a Business Rechtfertigung oder Bericht eine falsch positive \> **Außerkraftsetzung**auswählen.
   
 ![Richtlinientipp in Nachricht erweitert zur Anzeige der Außerkraftsetzungsoption](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -221,11 +221,11 @@ Beachten Sie, dass alle diese Bedingungen in Outlook funktionieren, in denen Sie
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Richtlinien Tipps im Exchange Admin Center vs. Security &amp; Compliance Center
 
-Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP- &amp; Richtlinien, die im Security Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
+Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP-Richtlinien, die im Security &amp; Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
   
-Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionsfähig sind, bis Sie sich für &amp; die Umstellung auf das Security Compliance Center entschieden haben.
+Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Security &amp; Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) weiterhin funktionsfähig sind, bis Sie sich für die Umstellung auf das Security &amp; Compliance Center entschieden haben.
   
-Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie &amp; DLP-Richtlinien sowohl im Security Compliance Center als auch im Exchange Admin Center verwenden.
+Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie DLP-Richtlinien sowohl im Security Compliance Center als auch im &amp; Exchange Admin Center verwenden.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Standardtext für Richtlinien Tipps in e-Mail
 
@@ -287,4 +287,4 @@ Sie können den Text für Richtlinien Tipps separat von der e-Mail-Benachrichtig
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)
+- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)

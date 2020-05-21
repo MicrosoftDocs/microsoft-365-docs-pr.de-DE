@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine ordnungsgemäße Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Schlüsselwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
-ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601202"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327747"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 
 Die Verhinderung von Datenverlust (DLP) umfasst vertrauliche Informationstypen wie Kreditkartennummer und EU-Debitkarten-Nummer, die Sie in ihren DLP-Richtlinien verwenden können. Diese Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine ordnungsgemäße Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Schlüsselwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. Der vertrauliche Informationstyp Kreditkartennummer verwendet beispielsweise eine Funktion, um nach Datumsangaben zu suchen, die wie ein Ablaufdatum formatiert sind, um zu bestätigen, dass eine Zahl eine Kreditkartennummer ist.
   
-In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
+In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) .
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -126,7 +126,7 @@ Akzeptierte Monatsnamen:
 > [!NOTE]
 > Diese Funktion ist veraltet, da Sie nur portugiesische Monatsnamen unterstützt, die nun in der `Func_eu_date` obigen Funktion enthalten sind. 
   
-Diese Funktion sucht nach einem Datum in dem Format, das in Portugiesisch häufig verwendet wird. Das Format für diese Funktion ist identisch `Func_eu_date`mit der Unterschiede nur in der verwendeten Sprache.
+Diese Funktion sucht nach einem Datum in dem Format, das in Portugiesisch häufig verwendet wird. Das Format für diese Funktion ist identisch mit der `Func_eu_date` Unterschiede nur in der verwendeten Sprache.
   
 Beispiele:
   
@@ -157,7 +157,7 @@ Akzeptierte Monatsnamen:
 > [!NOTE]
 > Diese Funktion ist veraltet, da nur niederländische Monatsnamen unterstützt werden, die jetzt in der `Func_eu_date` obigen Funktion enthalten sind. 
   
-Diese Funktion sucht nach einem Datum in dem Format, das in Niederländisch häufig verwendet wird. Das Format für diese Funktion ist identisch `Func_eu_date`mit der Unterschiede nur in der verwendeten Sprache.
+Diese Funktion sucht nach einem Datum in dem Format, das in Niederländisch häufig verwendet wird. Das Format für diese Funktion ist identisch mit der `Func_eu_date` Unterschiede nur in der verwendeten Sprache.
   
 Beispiele:
   

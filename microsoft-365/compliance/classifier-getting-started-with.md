@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292431"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327757"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -34,7 +34,7 @@ Für diese Methode ist menschliches Urteilen und Handeln erforderlich. Ein Admin
 Diese Kategorie von Klassifizierungsmechanismen umfasst das Auffinden von Inhalten nach folgenden Themen:
 
 - Schlüsselwörter oder Metadatenwerte (Stichwortabfrage Sprache)
-- verwenden zuvor identifizierter Muster vertraulicher Informationen wie soziale Sicherheit, Kreditkarten-oder Bank Kontonummern [(vertrauliche Informationstypen)](what-the-sensitive-information-types-look-for.md)
+- verwenden zuvor identifizierter Muster vertraulicher Informationen wie soziale Sicherheit, Kreditkarten-oder Bank Kontonummern [(vertrauliche Informationstypen – Entitätsdefinitionen)](sensitive-information-type-entity-definitions.md)
 - Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md)
 - Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
 
@@ -114,10 +114,10 @@ Das Erstellen und Veröffentlichen einer Schulungs Klassifizierer zur Verwendung
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Aufbewahrungs Bezeichnungen](labels.md)
+- [Aufbewahrungsbezeichnungen](labels.md)
 - [Aufbewahrungsrichtlinien](retention-policies.md)
 - [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
-- [Vertraulichkeits Bezeichnungen](sensitivity-labels.md)
-- [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md)
+- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
 - [Dokumentieren des Finger Drucks](document-fingerprinting.md)
-- [exakte Datenübereinstimmung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Exakte Datenübereinstimmung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

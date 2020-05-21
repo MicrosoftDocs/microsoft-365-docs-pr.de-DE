@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit der Microsoft 365 Usage Analytics-Vorlagen-app in Power BI mit dem Sammeln von Daten für Ihren Mandanten beginnen.
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262535"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327672"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
@@ -83,7 +83,7 @@ Um die Vorlagen-APP zu initiieren, müssen Sie entweder **globaler Administrator
 
 5.  Klicken Sie auf **App durchsuchen** , um die APP mit Beispieldaten anzuzeigen. Klicken Sie auf **verbinden** , um die APP mit den Daten Ihrer Organisation zu verbinden.
 
-6.  Geben Sie nach dem Klicken auf **verbinden**im Bildschirm **Connect to Microsoft 365 Usage Analytics** die Mandanten-ID ein, die Sie in Schritt (1) \> **weiter**kopiert haben.
+6.  Geben Sie nach dem Klicken auf **verbinden**im Bildschirm **Verbindung mit Microsoft 365-Verwendungsanalyse herstellen** die Mandanten-ID (ohne Bindestriche) ein, die Sie in Schritt (1) kopiert haben, und wählen Sie **weiter**aus.
     
 7. Wählen Sie auf dem nächsten Bildschirm **oAuth2** als **Authentifizierungsmethode** \> **Anmelden**aus. Wenn Sie eine andere Authentifizierungsmethode auswählen, tritt bei der Verbindung zur Vorlagen-App ein Fehler auf.
     

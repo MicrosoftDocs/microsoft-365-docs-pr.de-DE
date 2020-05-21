@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend den Anforderungen Ihrer Organisation erstellen, testen und optimieren.
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035757"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327797"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -51,7 +51,7 @@ Mit anderen Worten: DLP ist normalerweise intelligent genug, um den Unterschied 
 - "Können Sie mir einen neuen Laptop bestellen. Verwenden Sie meine Visa Nummer 1111-1111-1111-1111, Verfall 11/22, und senden Sie mir das geschätzte Zustellungsdatum, wenn Sie es haben. "
 - "Meine Laptop-Seriennummer ist 2222-2222-2222-2222 und wurde am 11/2010 erworben. Übrigens: ist mein Reisevisum noch freigegeben? "
 
-Eine gute Informationsquelle diesbezüglich ist dieser [Beitrag zu vertraulichen Informationstypen](what-the-sensitive-information-types-look-for.md), in dem erläutert wird, wie die einzelnen Informationstypen erkannt werden.
+Ein guter Hinweis zum Beibehalten von Lesezeichen sind [vertrauliche Informationstypen](sensitive-information-type-entity-definitions.md) , in denen erläutert wird, wie die einzelnen Informationstypen erkannt werden.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Erste Schritte mit DLP (Verhinderung von Datenverlust)
 
@@ -95,7 +95,7 @@ Klicken Sie auf der abschließenden Überprüfungsseite auf **Erstellen**, um di
 
 ## <a name="test-a-dlp-policy"></a>Testen einer DLP-Richtlinie
 
-Ihre neue DLP-Richtlinie wird innerhalb ungefähr einer Stunde wirksam. Sie können warten, bis sie durch normale Benutzeraktivitäten ausgelöst wird, oder die Auslösung selbst herbeiführen. Ich hatte bereits diesen [Beitrag zu vertraulichen Informationstypen](what-the-sensitive-information-types-look-for.md) verlinkt, wo Sie auch Informationen zum Auslösen von DLP-Abgleichen finden.
+Ihre neue DLP-Richtlinie wird innerhalb ungefähr einer Stunde wirksam. Sie können warten, bis sie durch normale Benutzeraktivitäten ausgelöst wird, oder die Auslösung selbst herbeiführen. Früher habe ich mit [vertraulichen Informationstypen Entitätsdefinitionen](sensitive-information-type-entity-definitions.md)verknüpft, die Informationen zum Auslösen von DLP-Übereinstimmungen bereitstellen.
 
 Die DLP-Richtlinie, die ich für diesen Artikel erstellt habe, wird beispielsweise australische Steuernummern (TFN) erkennen. Gemäß der Dokumentation basiert der Abgleich auf den folgenden Kriterien:
 
@@ -192,7 +192,7 @@ Eine andere Option besteht darin, einfach die Instanzenanzahl zu erhöhen, sodas
 
 Zusätzlich zum Ändern der Instanzenanzahl können Sie auch die Übereinstimmungsgenauigkeit (oder Konfidenzniveau) anpassen. Wenn Ihr Typ vertraulicher Informationen mehrere Muster aufweist, können Sie die Übereinstimmungsgenauigkeit in Ihrer Regel so anpassen, dass Letztere nur auf bestimmte Muster ausgerichtet ist. Um falsch positive Ergebnisse zu vermeiden, können Sie beispielsweise die Übereinstimmungsgenauigkeit Ihrer Regel so festlegen, dass sie nur dem Muster mit dem höchsten Konfidenzniveau entspricht. Die Berechnung des Konfidenzniveaus ist eine etwas komplexe Angelegenheit (und es zu erklären würde den Rahmen dieses Beitrags sprengen). Hier finden Sie eine gute Erläuterung, [wie Sie das Konfidenzniveau einsetzen können, um Ihre Regeln zu optimieren](data-loss-prevention-policies.md#match-accuracy).
 
-Und falls Sie schließlich an noch fortgeschritteneren Maßnahmen interessiert sind – Sie können jeden vertraulichen Informationstyp anpassen. So können Sie z. B. "Sydney NSW" aus der Liste der Schlüsselwörter für [australischer Führerschein](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)entfernen, um die weiter oben ausgelöste falsch positive Meldung zu eliminieren. Informationen dazu, wie das unter Verwendung von XML und PowerShell geht, finden Sie in dem Beitrag [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md).
+Wenn Sie sich noch etwas weiter fortgeschrittene wünschen, können Sie alle Arten von vertraulichen Informationen anpassen – beispielsweise können Sie "Sydney NSW" aus der Liste der Schlüsselwörter für die [australische Führerscheinnummer](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)entfernen, um das oben ausgelöste falsch positive Ergebnis zu eliminieren. Informationen dazu, wie das unter Verwendung von XML und PowerShell geht, finden Sie in dem Beitrag [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Aktivieren einer DLP-Richtlinie
 

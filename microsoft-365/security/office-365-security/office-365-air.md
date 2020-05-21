@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159407"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327830"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Erste Schritte mit der automatisierten Untersuchung und Reaktion (Air) in Office 365
 
@@ -31,7 +31,7 @@ In diesem Artikel werden der [gesamte Luftstrom](#the-overall-flow-of-air) , das
 
 ## <a name="the-overall-flow-of-air"></a>Der gesamte Luftstrom
 
-Auf einer hohen Ebene wird eine Warnung ausgelöst, und ein Sicherheits Textbuch wird gestartet, und die automatische Untersuchung führt zu Ergebnissen und Empfehlungen. Hier ist der Gesamtfluss der Luft, Schritt für Schritt:
+Auf einer hohen Ebene wird eine Warnung ausgelöst, und ein Sicherheits Textbuch startet eine automatisierte Untersuchung, die Ergebnisse und Empfehlungen ergibt. Hier ist der Gesamtfluss der Luft, Schritt für Schritt:
 
 1. Eine automatisierte Untersuchung wird auf eine der folgenden Arten eingeleitet:
 

@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140749"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327112"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Sie müssen die DNS-Einträge für Office 365-Dienste selbst einrichten (sofern 
 
 Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@** -Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem standardmäßigen Internetsuffix, z. B.  *ihrunternehmen.com*  oder  *musikhochschule.edu*  . 
   
-Die Verwendung einer benutzerdefinierten Domäne wie "**Rob\@contoso.com**" mit Office 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke aufzubauen. 
+Die Verwendung einer benutzerdefinierten Domäne wie "**Rob \@ contoso.com**" mit Office 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke aufzubauen. 
   
 Sie können [eine Domäne in Office 365 erwerben](../get-help-with-domains/buy-a-domain-name.md), die wir dann automatisch einrichten, oder Sie können eine Domäne bei Ihrer Domänenregistrierungsstelle erwerben oder eine dort bereits erworbene Domäne übertragen.
   
@@ -132,7 +132,7 @@ Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalt
 
 ::: moniker-end
     
-2. Wählen Sie auf der Seite **Domänen** die Office 365 Domäne aus, die Sie an eine andere Domänenregistrierungsstelle übertragen möchten **, und wählen Sie dann Domaintransfer** > **enable Domaintransfer**aus.
+2. Wählen Sie auf der Seite **Domänen** die Office 365 Domäne aus, die Sie an eine andere Domänenregistrierungsstelle übertragen möchten, **und wählen Sie dann Domaintransfer**  >  **enable Domaintransfer**aus.
        
 4. Führen Sie die nachstehenden Schritte aus, um die Übertragung Ihrer Domäne vorzubereiten.
     
@@ -258,6 +258,8 @@ Anbieter, die alle erforderlichen DNS-Einträge unterstützen:
 - Skype for Business Online-Desktopclients können mit dem AutoErmittlungsdienst automatisch den Skype for Business Online-Dienst finden, sodass die Benutzer sich anmelden können, ohne den Servernamen eingeben zu müssen.
     
 - Mobile Skype for Business Online-Clients können mit dem AutoErmittlungsdienst automatisch den Skype for Business Online-Dienst finden, sodass die Benutzer sich anmelden können, ohne den Servernamen eingeben zu müssen.
+
+- Microsoft Teams-Verbund mit Skype for Business, entweder lokal oder online. Weitere Informationen finden Sie unter [Vorbereiten des Netzwerks Ihrer Organisation für Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **Wenn SPF-/TXT-Einträge nicht unterstützt werden**, sind andere Personen möglicherweise in der Lage, über Ihre Domäne Spam oder andere schädliche E-Mails zu senden. Mithilfe von SPF-Einträgen werden die Server bestimmt, denen es gestattet ist, E-Mails über Ihre Domäne zu senden. 
   
@@ -342,7 +344,7 @@ Wenn Sie Office 365 mehrere Domänen hinzufügen, können Sie beliebige dieser D
 
 Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn Sie sich beim Dienst anmelden. Die Benutzer-ID, die Sie bei der Registrierung erstellen, umfasst die Domäne, wie *Alan@contoso.onmicrosoft.com*. 
   
- **Wenn Sie möchten, dass Ihre e-Mails wie *Alan\@contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
+ **Wenn Sie möchten, dass Ihre e-Mails wie *Alan \@ contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
 - **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn Sie beispielsweise "fourthcoffee.onmicrosoft.com" als ursprüngliche Domäne ausgewählt haben, können Sie sie nicht in "fabrikam.onmicrosoft.com" ändern. Um eine andere "onmicrosoft.com"-Domäne verwenden zu können, müssen Sie ein neues Abonnement bei Office 365 einrichten. 
     
@@ -431,7 +433,7 @@ Sie können, aber es gibt Einschränkungen:
         
     4. Wählen Sie im daraufhin geöffneten Fenster **Internes Relay**aus. 
         
-    5. Klicken Sie auf **Speichern**. Diese Einstellung erfordert möglicherweise einige Minuten, um wirksam zu werden. 
+    5. Wählen Sie **Speichern**. Diese Einstellung erfordert möglicherweise einige Minuten, um wirksam zu werden. 
     
 4. Optional: Aufheben der Blockierung des vorhandenen e-Mail-Servers
     
@@ -441,7 +443,7 @@ Sie können, aber es gibt Einschränkungen:
         
     3. Wählen Sie in der Exchange-Verwaltungskonsole **Schutz**aus, und wählen Sie **Verbindungsfilter**aus. 
         
-    4. Wählen **+** Sie in der **Liste der zugelassenen IP**-Adressen die IP-Adresse des e-Mail-Servers aus, die Sie von Ihrem aktuellen e-Mail-Anbieter erhalten können. 
+    4. Wählen Sie in der **Liste der zugelassenen IP**- **+** Adressen die IP-Adresse des e-Mail-Servers aus, die Sie von Ihrem aktuellen e-Mail-Anbieter erhalten können. 
     
 5. Erstellen von Benutzerkonten und Festlegen der primären Adresse (Reply-to)
     
@@ -457,7 +459,7 @@ Sie können, aber es gibt Einschränkungen:
         
     6. Wählen Sie neben Benutzername Ihren benutzerdefinierten Domänennamen aus der Dropdownliste aus.
         
-    7. Wählen Sie **Close** **Erstellen** \> aus. 
+    7. Wählen **Create** Sie \> **Close**erstellen aus. 
         
 6. Aktualisieren von DNS-Einträgen bei Ihrem DNS-Hostanbieter
     

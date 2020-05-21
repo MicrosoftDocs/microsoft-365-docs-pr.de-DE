@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'In diesem Artikel erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und entsprechend Ihrem Firmen Logo oder ihrer eigenen Farbe anpassen. '
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262329"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327206"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassen des Microsoft 365-Designs für Ihre Organisation
 
@@ -64,7 +64,7 @@ Erfahren Sie, wie Sie Ihr Design im Microsoft 365 Admin Center anpassen. Als Adm
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie sehen Ihr neues Design sofort im Admin Center und nach einer kurzen Verzögerung sehen Sie es in Microsoft 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Ein Beispiel dafür, wo Sie Designänderungen aus dem Admin Center anpassen können, finden Sie in der folgenden Abbildung.
+Sie sehen Ihr neues Design sofort im Admin Center, und nach einer kurzen Verzögerung sehen Sie es in Microsoft 365, einschließlich Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Ein Beispiel dafür, wo Sie Designänderungen aus dem Admin Center anpassen können, finden Sie in der folgenden Abbildung.
 
 ![m365-admin-Mandanten-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 

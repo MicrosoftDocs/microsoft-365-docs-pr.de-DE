@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084989"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327892"
 ---
 # <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
 
@@ -55,6 +55,12 @@ Endbenutzer mit von Microsoft verwalteten Desktop Geräten haben auch Zugriff au
 - Luxemburg: + 352 800 40119
 - Australien: + 61 180 037 0619
 - Neuseeland: + 64 988 44380
+- Schweden: + 46 20 120 3554
+- Norwegen: + 47 800 62584
+- Island: + 354 800 9006
+- Irland: + 353 1 800 832272
+- Dänemark: + 45 80 40 04 01
+- Finnland: + 358 800 525088
 
 >[!NOTE]
 >Sie müssen ihre organisatorische e-Mail-Adresse parat haben, wenn Sie anrufen, um Ihre Identität zu überprüfen. 

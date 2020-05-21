@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Versionshinweise und bekannte Probleme für Microsoft Compliance Score (Preview), ein Feature im M365 Compliance Center, das das vereinfachen und Automatisieren von Risikobewertungen erleichtert.
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790590"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330779"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Versionshinweise zu Microsoft Compliance Score (Preview)
 
@@ -32,6 +32,7 @@ Compliance Score ist ein neues Feature im [Microsoft 365 Compliance Center](micr
 Neue vorkonfigurierte Vorlagen für Bewertungen werden in Produktion für das Kompatibilitäts Ergebnis (Preview) veröffentlicht, sobald diese verfügbar werden. Überprüfen Sie die [vollständige Liste der Vorlagen hier](compliance-score.md#templates). Zu den zuletzt hinzugefügten Vorlagen gehören:
 
 - Brasilien – allgemeine Datenschutz Gesetze (LGPD)
+- Dubai Information Security Resolution (DGISR)
 - IRAP/australische Regierung ISM (Vorschau)
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ Das Kompatibilitäts Ergebnis steht nun zusätzlich zu Englisch in den folgenden
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>Häufige Aktionen synchronisieren den Status über Gruppen hinweg.
 
-Wenn Ihre Organisation über mehrere Bewertungsgruppen verfügt, hat sich das Verhalten von **technischen** Aktionen (also Aktionen, die sich auf Ihre gesamte Organisation auswirken) geändert. Doppelte Aktionen in mehreren Gruppen wurden zu einer einzigen Aktion zusammengefasst. Diese einzelne Aktion enthält alle hochgeladenen Notizen und Beweise aus den doppelten Versionen. Durch diese Änderung verhalten sich technische Aktionen nun so, wie Sie es in der gleichen Gruppe getan haben. Alle Änderungen, die an der Aktion in einer Gruppe oder Bewertung vorgenommen werden, werden nun in allen Instanzen wiedergegeben. Der **Implementierungsstatus**, das **Implementierungsdatum**, der **Test Status**und das **Test Datum** spiegeln die neuesten Aktualisierungen wider.
+Wenn Ihre Organisation über mehrere Bewertungsgruppen verfügt, hat sich das Verhalten von **technischen** Aktionen (also Aktionen, die sich auf Ihre gesamte Organisation auswirken) geändert. Doppelte Aktionen in mehreren Gruppen wurden zu einer einzigen Aktion zusammengefasst. Diese einzelne Aktion enthält alle hochgeladenen Notizen und Beweise aus den doppelten Versionen. Durch diese Änderung verhalten sich technische Aktionen nun so, wie Sie es in der gleichen Gruppe getan haben. Alle Änderungen, die an der Aktion in einer Gruppe oder Bewertung vorgenommen werden, werden nun in allen Instanzen wiedergegeben. Der **Implementierungsstatus**, das **Implementierungsdatum**, der **Test Status**und das **Test Datum**   spiegeln die neuesten Aktualisierungen wider.
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>Kompatibilitäts Bewertungspunkt-Beziehung zum Compliance-Manager
 

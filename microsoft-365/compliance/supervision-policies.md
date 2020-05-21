@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034559"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327253"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -139,7 +139,7 @@ Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsic
 - Datenschutz
 - Benutzerdefinierter Informationstyp
 
-Weitere Informationen zu Details zu vertraulichen Informationen und zu den Mustern, die in den Standardtypen enthalten sind, finden Sie unter [welche Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen zu vertraulichen Informationsdetails und den Mustern, die in den Standardtypen enthalten sind, finden Sie unter [sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md).
 
 #### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Schlüsselwörter Wörterbücher
 
@@ -213,7 +213,7 @@ Es ist einfach, die Ergebnisse ihrer Aufsichtsrichtlinien zu überwachen und ein
 
 ### <a name="supervision-policy-dashboard"></a>Aufsichtsrichtlinien-Dashboard
 
-Verwenden Sie das Dashboard für Aufsichtsrichtlinien, um Aufsichtsrichtlinien Ergebnisse zu verwalten und ausstehende Elemente aufzulösen. In diesem Dashboard können Bearbeiter Elemente anzeigen, die überprüft werden müssen, auf ein Element reagieren und die Ergebnisse der zuvor geprüften und aufgelösten Elemente für jede Aufsichtsrichtlinie überprüfen. Sie können auf das Dashboard für Aufsichtsrichtlinien im Compliance Center unter **beaufsichtigen** > der*benutzerdefinierten Richt* > Linie**Öffnen**zugreifen.
+Verwenden Sie das Dashboard für Aufsichtsrichtlinien, um Aufsichtsrichtlinien Ergebnisse zu verwalten und ausstehende Elemente aufzulösen. In diesem Dashboard können Bearbeiter Elemente anzeigen, die überprüft werden müssen, auf ein Element reagieren und die Ergebnisse der zuvor geprüften und aufgelösten Elemente für jede Aufsichtsrichtlinie überprüfen. Sie können auf das Dashboard für Aufsichtsrichtlinien im Compliance Center unter **beaufsichtigen**der  >  *benutzerdefinierten Richt*Linie  >  **Öffnen**zugreifen.
 
 #### <a name="dashboard-home"></a>Dashboard-Startseite
 

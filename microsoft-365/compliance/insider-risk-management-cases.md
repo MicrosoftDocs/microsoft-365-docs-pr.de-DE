@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804837"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327861"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
@@ -172,7 +172,7 @@ So eskalieren Sie einen Fall an eine Untersuchung durch Mitarbeiter:
 3. Geben Sie im Dialogfeld **zur Untersuchung eskalieren** einen Namen für die neue Mitarbeiter Ermittlung ein. Geben Sie bei Bedarf Hinweise zu dem Fall ein, und wählen Sie **eskalieren**aus.
 5. Wählen Sie **bestätigen** aus, um den Ermittlungs Fall für Mitarbeiter zu erstellen, oder wählen Sie **Abbrechen** , um das Dialogfeld zu schließen, ohne einen neuen Ermittlungs Fall für Mitarbeiter zu erstellen.
 
-Nachdem der Fall des Insider Risikomanagements an einen neuen Ermittlungs Fall für Mitarbeiter eskaliert wurde, können Sie den neuen Fall im Microsoft 365 Compliance Center im **eDiscovery** > **Advanced** -Bereich überprüfen.
+Nachdem der Fall des Insider Risikomanagements an einen neuen Ermittlungs Fall für Mitarbeiter eskaliert wurde, können Sie den neuen Fall im **eDiscovery**  >  Microsoft 365 Compliance Center im eDiscovery**Advanced** -Bereich überprüfen.
 
 ### <a name="resolve-the-case"></a>Auflösen der Groß-/Kleinschreibung
 
