@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327757"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339913"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -33,10 +33,10 @@ Für diese Methode ist menschliches Urteilen und Handeln erforderlich. Ein Admin
 
 Diese Kategorie von Klassifizierungsmechanismen umfasst das Auffinden von Inhalten nach folgenden Themen:
 
-- Schlüsselwörter oder Metadatenwerte (Stichwortabfrage Sprache)
-- verwenden zuvor identifizierter Muster vertraulicher Informationen wie soziale Sicherheit, Kreditkarten-oder Bank Kontonummern [(vertrauliche Informationstypen – Entitätsdefinitionen)](sensitive-information-type-entity-definitions.md)
-- Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md)
-- Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
+- Schlüsselwörter oder Metadatenwerte (Stichwortabfrage Sprache).
+- Verwenden zuvor identifizierter Muster vertraulicher Informationen wie soziale Sicherheit, Kreditkarten-oder Bank Kontonummern [(vertrauliche Informationstypen – Entitätsdefinitionen)](sensitive-information-type-entity-definitions.md).
+- Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md).
+- Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [DLP (Data Loss Prevention)](data-loss-prevention-policies.md) und [Aufbewahrungsrichtlinien](retention-policies.md)zur Verfügung zu stellen.
 
@@ -44,8 +44,10 @@ Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewe
 
 Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es um die Schulung einer Klassifizierung, um ein Element basierend auf dem Element zu identifizieren, nicht durch Elemente, die sich im Element befinden (Mustervergleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die geschulte Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert.
 
-> [!IMPORTANT]
-> Sowohl integrierte Klassifizierungen als auch schulungsable-Klassifizierungen stehen als Bedingung für die [automatische Anwendung der Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung und einer](labels.md#applying-a-retention-label-automatically-based-on-conditions) [Kommunikations Konformität](communication-compliance.md)zur Verfügung. Vertraulichkeits Bezeichnungen können nur integrierte Klassifizierungen als Bedingung verwenden, siehe [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md).
+### <a name="where-you-can-use-trainable-classifiers"></a>Wo Sie Schulungs Klassifizierer verwenden können
+Sowohl integrierte Klassifizierungen als auch schulungsable-Klassifizierungen stehen als Bedingung für die [automatische Anwendung der Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung und einer](labels.md#applying-a-retention-label-automatically-based-on-conditions) [Kommunikations Konformität](communication-compliance-configure.md)zur Verfügung. 
+
+Für Sensitivitäts Bezeichnungen können integrierte und eigene Klassifizierungen als Bedingungen verwendet werden, siehe [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)und automatisches [bezeichnen von Office-Apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
 
 > [!IMPORTANT]
 > Schulungs fähige Klassifizierungen funktionieren nur mit Elementen, die nicht verschlüsselt sind und sich in Englisch befinden.
@@ -53,6 +55,18 @@ Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht 
 ### <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
 Auszubildende Klassifizierer sind ein Microsoft 365 E5-oder E5-Compliance-Feature. Sie müssen über eines dieser Abonnements verfügen, damit Sie Sie nutzen können.
+
+### <a name="pre-requisites"></a>Voraussetzungen
+
+So greifen Sie in der Benutzeroberfläche auf schulungsbezogene Klassifizierungen zu: 
+- der globale Administrator muss sich für den Mandanten anmelden.
+- Compliance-Administratorrolle oder Kompatibilitätsdaten Administrator ist erforderlich, um eine Klassifizierung zu trainieren.
+
+In diesen Szenarien benötigen Sie Konten mit diesen Berechtigungen zur Verwendung von Schulungs Klassifizierern:
+
+- Richtlinien Szenario für Aufbewahrungs Bezeichnungen: RecordManagement-und Aufbewahrungs Verwaltungsrollen 
+- Richtlinien Szenario für die Sensitivitäts Bezeichnung: Sicherheitsadministrator, Kompatibilitäts Administrator, Kompatibilitätsdaten Administrator
+- Kommunikations Konformitätsrichtlinien Szenario: Administrator für Insider Risiko Management, Aufsichts Überprüfungs Administrator 
 
 ## <a name="types-of-classifiers"></a>Typen von Klassifizierungen
 
@@ -114,10 +128,11 @@ Das Erstellen und Veröffentlichen einer Schulungs Klassifizierer zur Verwendung
 
 ## <a name="see-also"></a>Siehe auch
 
+
 - [Aufbewahrungsbezeichnungen](labels.md)
 - [Aufbewahrungsrichtlinien](retention-policies.md)
 - [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationstypen](sensitive-information-type-entity-definitions.md)
 - [Dokumentieren des Finger Drucks](document-fingerprinting.md)
 - [Exakte Datenübereinstimmung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
