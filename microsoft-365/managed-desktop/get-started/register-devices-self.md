@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557553"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347819"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
 Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mithilfe von Microsoft Managed Desktop im Azure-Portal registrieren.
 
 > [!NOTE]
-> Arbeiten mit einem Partner, um Geräte zu beziehen? Wenn dies der Fall ist, müssen Sie sich keine Gedanken über das erhalten der Hardware-Hashes machen. Das werden Sie für Sie erledigen. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center](https://partner.microsoft.com/dashboard) herstellt und dass er Delegierte Administratorrechte für Azure Active Directory und Office 365 enthält. Ihr Partner kann weitere Informationen finden Sie unter [Hilfe zum Partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Nachdem diese Beziehung hergestellt wurde, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Schritte, die von Ihnen benötigt werden. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, finden Sie unter [Schritte für Partner zum Registrieren von Geräten](register-devices-partner.md). Nachdem die Geräte registriert wurden, können Sie mit der [Überprüfung des Images](#check-the-image) fortfahren und [die Geräte](#deliver-the-device) an Ihre Benutzer übermitteln.
+> Arbeiten mit einem Partner, um Geräte zu beziehen? Wenn dies der Fall ist, müssen Sie sich keine Gedanken über das erhalten der Hardware-Hashes machen. Das werden Sie für Sie erledigen. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center](https://partner.microsoft.com/dashboard)herstellt. Ihr Partner kann weitere Informationen finden Sie unter [Hilfe zum Partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Nachdem diese Beziehung hergestellt wurde, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Schritte, die von Ihnen benötigt werden. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, finden Sie unter [Schritte für Partner zum Registrieren von Geräten](register-devices-partner.md). Nachdem die Geräte registriert wurden, können Sie mit der [Überprüfung des Images](#check-the-image) fortfahren und [die Geräte](#deliver-the-device) an Ihre Benutzer übermitteln.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Vorbereiten der Registrierung brandneuer Geräte
 
@@ -53,7 +53,7 @@ Microsoft Managed Desktop identifiziert jedes Gerät eindeutig, indem es auf sei
 3. Ausführen`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Aktivieren Sie das Gerät, das Sie registrieren, aber *beginnen Sie nicht mit der Setup-Umgebung*. Wenn Sie das Setupprogramm versehentlich gestartet haben, müssen Sie das Gerät zurücksetzen oder neu abbilden.
 5. Legen Sie das USB-Laufwerk ein, und drücken Sie dann UMSCHALT + F10.
-6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, `cd <pathToUsb>`und führen Sie dann aus.
+6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, und führen Sie dann aus `cd <pathToUsb>` .
 7. Ausführen`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Ausführen`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Entfernen Sie das USB-Laufwerk, und fahren Sie dann das Gerät herunter, indem Sie`shutdown -s -t 0`

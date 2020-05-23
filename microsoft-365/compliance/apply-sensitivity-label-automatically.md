@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952628"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280555"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -48,7 +48,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
 - **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint Online oder OneDrive for Business) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie – aktuell in der Vorschau. 
     
     > [!NOTE]
-    > Sehen Sie sich die Ankündigung der Vorschau an, die die [Public Preview der automatischen Klassifizierung mit Vertraulichkeitsbezeichnungen in Microsoft 365-Diensten ankündigt](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    > Schauen Sie sich die Vorschauankündigung, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) (Ankündigung einer öffentlichen Vorschau der automatischen Klassifizierung mit Vertraulichkeitsbezeichnungen in Microsoft 365-Diensten) und das Webinar [Introduction to SharePoint & OneDrive Auto-Labeling with Sensitivity Labels](https://aka.ms/SPOAutoLabelWebinar-Recording) (Einführung in das automatische Bezeichnen mit Vertraulichkeitsbezeichnungen in SharePoint und OneDrive) an.
     
     Diese Methode wird Autoklassifizierung mit Vertraulichkeitsbezeichnungen genannt. Möglicherweise wird sie auch als automatische Bezeichnung für ruhende Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten im Transit (E-Mails, die von Exchange gesendet oder empfangen werden). Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer). 
     
@@ -76,7 +76,7 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |:-----|:-----|:-----|:-----|
 |App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein |
 |Nach Speicherort einschränken|Nein |Ja |
-|Bedingungen: trainierbare Klassifizierungen|Ja (beschränkte Vorschau) |Nein |
+|Bedingungen: trainierbare Klassifizierungen|Ja |Nein |
 |Bedingungen: Freigabeoptionen und zusätzliche E-Mail-Optionen|Nein |Ja |
 |Empfehlungen, Richtlinien-Tooltipps und Benutzer-Außerkraftsetzungen|Ja |Nein |
 |Simulationsmodus|Nein |Ja |
@@ -104,16 +104,12 @@ Weitere Informationen zu übergeordneten Bezeichnungen und Unterbezeichnungen fi
 
 Die automatische Zuweisung von Bezeichnungen in Office-Apps für Windows wird durch den Client mit einheitlichen Bezeichnungen von Azure Information Protection unterstützt. Für integrierte Bezeichnungen in Office-Apps befindet sich diese Funktion [für einigen Apps in der Vorschau](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Die Einstellungen für automatische Zuweisung von Bezeichnungen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md):
-
-![Optionen der automatischen Zuweisung von Bezeichnungen für Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-auto-labeling-options.png)
-
-Sie können sich dafür entscheiden, Inhalten automatisch Vertraulichkeitsbezeichnungen zuzuordnen, wenn diese Inhalte bestimmte Arten von sensiblen Informationen enthalten. Wählen Sie aus einer Liste von Arten von sensiblen Informationen oder Klassifizierungen:
+Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md). Sie können sich dafür entscheiden, Inhalten automatisch Vertraulichkeitsbezeichnungen zuzuordnen, wenn vertrauliche Informationen erkannt werden. Wählen Sie aus einer Liste von Typen vertraulicher Informationen oder trainierbarer Klassifizierungen aus:
 
 ![Bezeichnungsbedingungen für die automatische Zuweisung von Bezeichnungen in Office-Apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Derzeit befindet sich die Option für **Klassifizierungen** in einer begrenzten Vorschau und erfordert, dass Sie ein Formular an Microsoft senden, um diese Funktion für Ihren Mandanten zu aktivieren. Weitere Informationen finden Sie im Blogbeitrag [Announcing automatic labeling in Office Apps using built-in classifiers – Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889) (Ankündigung der automatischen Zuweisung von Bezeichnungen in Office-Apps mit integrierten Klassifizierungen – begrenzte Vorschau).
+> Das Rollout der Option für **Trainierbare Klassifizierungen** erfolgt zurzeit für Mandanten in der öffentlichen Vorschau. Wenn die Option nicht angezeigt wird, versuchen Sie es in einigen Tagen erneut.
 
 Wenn eine Vertraulichkeitsbezeichnung automatisch angewendet wird, wird dem Benutzer eine Benachrichtigung in der Office-App angezeigt. Zum Beispiel:
 
@@ -131,22 +127,25 @@ Darüber hinaus können Sie auswählen, ob eine Bedingung alle vertraulichen Inf
 
 ![Optionen für Instanzenanzahl und Übereinstimmungsgenauigkeit](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>Konfigurieren von Klassifizierungen für eine Bezeichnung
+### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 
-Wenn Sie die Option **Klassifizierungen** auswählen, wählen Sie eine oder mehrere der integrierten Klassifizierungen aus:
+Wenn Sie die Option **Trainierbare Klassifizierungen** auswählen, wählen Sie eine oder mehrere der integrierten trainierbaren Klassifizierungen von Microsoft aus. Wenn Sie eigene benutzerdefinierte trainierbare Klassifizierungen erstellt haben, können Sie diese auch auswählen:
 
-![Optionen für Klassifizierungen und Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-classifers.png)
+![Optionen für trainierbare Klassifizierungen und Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie diese integrierte Klassifizierung nicht mehr, und ändern Sie Ihre Geschäftsprozesse entsprechend, falls sie derzeit noch verwendet wird. Wir empfehlen stattdessen die Verwendung der integrierten Klassifizierungen **Gezielte Belästigung**, **Obszönitäten** und **Bedrohung**.
 
 Weitere Informationen zu diesen Klassifizierungen finden Sie unter [Erste Schritte mit trainierbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md).
 
-Während des Vorschauzeitraums unterstützen die folgenden Apps Klassifizierungen für Vertraulichkeitsbezeichnungen:
+Während des Vorschauzeitraums unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
 
-- Microsoft365-Apps für Unternehmen, Desktop-Apps für Windows, [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for Enterprise (vormals Office 365 ProPlus) für Windows aus [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
 
-- Office für das Web-Apps, wenn Sie über [aktivierte Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md) verfügen:
+- Office für das Web-Apps, wenn Sie über [aktivierte Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) verfügen:
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +175,7 @@ Spezifisch für integrierte Bezeichnungen:
 
 - Bei empfohlenen Bezeichnungen in den Desktopversionen von Word wird der sensible Inhalt, der die Empfehlung ausgelöst hat, markiert, sodass Benutzer den sensiblen Inhalt überprüfen und entfernen können, anstatt die empfohlene Vertraulichkeitsbezeichnung anzuwenden.
 
-- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/de-DE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnungen:
 
@@ -298,5 +297,5 @@ Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch
 - **Inhalts-Explorer-Inhaltsanzeige** können Sie den Inhalt der Datei anzeigen.
 
 > [!TIP]
-> Sie können den Inhalts-Explorer auch verwenden, um Speicherorte zu identifizieren, die nicht bezeichnete Dokumente mit sensiblen Informationen enthalten. Anhand dieser Informationen können Sie diese Speicherorte ihrer Richtlinie zur automatischen Bezeichnung hinzufügen und die identifizierten Typen vertraulicher Informationen als Regeln aufnehmen.
+> Sie können den Inhalts-Explorer auch verwenden, um Speicherorte zu identifizieren, die Dokumente mit vertraulichen Informationen, aber ohne Bezeichnungen enthalten. Anhand dieser Informationen können Sie diese Speicherorte ihrer Richtlinie zur automatischen Bezeichnung hinzufügen und die identifizierten Typen vertraulicher Informationen als Regeln aufnehmen.
 

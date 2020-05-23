@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633054"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347854"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
@@ -31,10 +31,8 @@ Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Micros
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
 
-Vor kurzem wurden die Funktionen zur [Verhinderung von Datenverlust (Data Loss Prevention](data-loss-prevention-policies.md) , DLP) auf Microsoft Teams-Chat und Kanal Nachrichten erweitert.
+Vor kurzem wurden die Funktionen zur [Verhinderung von Datenverlust (Data Loss Prevention](data-loss-prevention-policies.md) , DLP) auf Microsoft Teams-Chat und Kanal Nachrichten **einschließlich privater Kanal Nachrichten**erweitert.
 
-> [!NOTE]
-> DLP wird derzeit für private Kanal Nachrichten nicht unterstützt.
 
 Wenn Ihre Organisation über DLP verfügt, können Sie jetzt Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einem Microsoft Teams-Kanal oder in einer Chatsitzung freigeben. Im folgenden finden Sie einige Beispiele für die Funktionsweise dieses Schutzes:
 
@@ -67,9 +65,9 @@ Der Link " **Was ist das?** " öffnet einen [Artikel](data-loss-prevention-polic
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wählen Sie > **Richtlinie**zur **Verhinderung von Datenverlust**aus.
+2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust**aus  >  **Policy**.
 
 3. Wählen Sie eine Richtlinie aus, und wählen Sie neben **Richtlinieneinstellungen**die Option **Bearbeiten**aus.
 
@@ -87,9 +85,9 @@ Lassen Sie ungefähr eine Stunde zu, bis sich Ihre Änderungen durch Ihr Rechenz
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wählen Sie > **Richtlinie**zur **Verhinderung von Datenverlust**aus.
+2. Wählen Sie Richtlinie zur **Verhinderung von Datenverlust**aus  >  **Policy**.
 
 3. Wählen Sie eine Richtlinie aus, und sehen Sie sich die Werte unter **Standorte**an. Wenn Sie Microsoft **Teams-Chat und Kanal Nachrichten**sehen, sind Sie alle festgelegt. Klicken Sie andernfalls auf **Bearbeiten**.<br/>![Speicherorte für vorhandene Richtlinien](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,9 +103,9 @@ Lassen Sie ungefähr eine Stunde zu, bis sich Ihre Änderungen durch Ihr Rechenz
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wählen Sie **Datenverlust-Verhinderung** > -**Richtlinie** > **+ Richtlinie erstellen**.
+2. Wählen Sie **Datenverlust-Verhinderung**  >  -**Richtlinie**  >  **+ Richtlinie erstellen**.
 
 3. Wählen Sie eine [Vorlage](data-loss-prevention-policies.md#dlp-policy-templates)aus, und klicken Sie dann auf **weiter**.<br/>In unserem Beispiel haben wir die Datenvorlage "U.S. persönlich identifizierbare Informationen" ausgewählt.<br/>![Datenschutz Vorlage für DLP-Richtlinie](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

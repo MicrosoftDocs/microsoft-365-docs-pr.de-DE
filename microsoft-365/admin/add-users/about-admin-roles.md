@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618920"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294213"
 ---
-# <a name="about-admin-roles"></a>Informationen zu Administratorrollen
+# <a name="about-admin-roles"></a>Info zu Administratorrollen
 
-Ihr Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet. Über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern. Weitere Informationen finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
+Ihr Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe von Microsoft 365 Admin Center zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet. Über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
 
-> [!TIP] 
-> Sind Sie an detaillierten Rollenbeschreibungen interessiert? Diese finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Im Microsoft 365 Admin Center können Sie Azure AD-Rollen und Microsoft Intune-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure AD-Portal und im Intune Admin Center verfügbar sind.
+
+Sind Sie an detaillierten Rollenbeschreibungen für AZURE AD interessiert? Diese finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+Sind Sie an detaillierten Rollenbeschreibungen für Microsoft Intune interessiert? Siehe [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+
+Weitere Informationen zum Zuweisen von Rollen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
 
 ## <a name="things-to-consider"></a>Zu berücksichtigende Aspekte...
 
@@ -44,32 +49,21 @@ Da Administratoren Zugriff auf vertrauliche Daten und Dateien haben, empfiehlt e
 | Die Rolle *mit den wenigsten Berechtigungen* zuweisen    | Die Rolle *mit den wenigsten Berechtigungen* zuweisen bedeutet, Administratoren nur den Zugriff zu gewähren, den sie zum Erledigen einer Aufgabe benötigen. Wenn Sie beispielsweise möchten, dass jemand Mitarbeiterkennwörter zurücksetzen kann, sollten Sie ihm nicht die unbegrenzte Rolle des globalen Administrators zuweisen, sondern eine Rolle mit eingeschränkten Befugnissen wie jene des Kennwortadministrators oder des Helpdesk-Administrators. Dies trägt dazu bei, Ihre Daten zu schützen.                 |
 | Mehrstufige Authentifizierung vorschreiben                  |    Es ist zwar sinnvoll, die mehrstufige Authentifizierung für alle Benutzer vorzuschreiben, für Administratoren sollte sie jedoch unbedingt zur Anmeldung vorgesehen sein. Bei der mehrstufigen Authentifizierung müssen Benutzer eine zweite Identifikationsmethode eingeben, um sicherzustellen, dass sie tatsächlich die Person sind, die sie behaupten zu sein. Administratoren können auf eine Vielzahl von Kunden- und Mitarbeiterdaten zugreifen. Wenn Sie die mehrstufige Authentifizierung vorschreiben, ist ein kompromittiertes Administratorkennwort ohne die zweite Art der Identifizierung nutzlos.  <br><br>Wenn Sie die mehrstufige Authentifizierung aktivieren, müssen die Benutzer bei der nächsten Anmeldung eine alternative E-Mail-Adresse und Telefonnummer für die Kontowiederherstellung angeben.  <br> [Einrichten der mehrstufigen Authentifizierung](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>Unter "Aktive Benutzer" > "Administratorrollen verwalten" fehlen einige Rollen. Wo sind diese nun?
-Standardmäßig werden zuerst die Rollen angezeigt, die von den meisten Organisationen verwendet werden. Wenn Sie eine Rolle nicht finden können, gehen Sie zum Ende der Liste, und wählen Sie **Weitere Rollen anzeigen** aus.
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>Wie kann ich feststellen, welche Berechtigungen mir zugewiesen sind?
 Wenn im Admin Center eine Nachricht angezeigt wird, die besagt, dass Sie nicht über die Berechtigungen zum Bearbeiten einer Einstellung oder Seite verfügen, liegt dies daran, dass Ihnen eine Rolle zugewiesen ist, die nicht über die entsprechende Berechtigung verfügt.
 
-## <a name="what-about-the-azure-active-directory-roles"></a>Azure Active Directory-Rollen
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Im Microsoft 365 Admin Center verfügbare Azure AD-Rollen
 
-Das Azure-Portal verfügt über mehr Rollen als im Microsoft 365 Admin Center verfügbar sind. Wenn es sich bei Ihrer Organisation um ein großes Unternehmen handelt, gibt es im Azure-Portal möglicherweise Rollen, die Ihren organisatorischen Anforderungen entsprechen.
-
-Eine Liste und Beschreibungen aller Azure Active Directory-Rollen finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Im Microsoft 365 Admin Center können Sie mehr als 30 Azure AD-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure-Portal verfügbar sind. Wenn es sich bei Ihrer Organisation um ein großes Unternehmen handelt, gibt es im Azure-Portal möglicherweise Rollen, die Ihren organisatorischen Anforderungen entsprechen.
 
 Ein Benutzer, dem eine Administratorrolle zugewiesen wurde, verfügt über die gleichen Zugriffsrechte für Clouddienste, die Ihre Organisation abonniert hat, unabhängig davon, ob Sie die Rolle im Microsoft 365 Admin Center, im Azure-Portal oder mithilfe des Azure AD-Moduls für Windows PowerShell zuweisen.
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Im Microsoft 365 Admin Center verfügbare Rollen
-
-Im Microsoft 365 Admin Center können Sie mehr als 30 Azure AD-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure-Portal verfügbar sind.
 
 ::: moniker range="o365-worldwide"
 
-Im Admin Center können Sie zu **Rollen**wechseln und dann eine beliebige Rolle auswählen, um den entsprechenden Detailbereich zu öffnen. Wählen Sie die Registerkarte **Berechtigungen** aus, um eine detaillierte Liste der Berechtigungen anzuzeigen, über die Administratoren mit dieser Rolle verfügen.
+Im Microsoft 365 Admin Center können Sie zu **Rollen**wechseln und dann eine beliebige Rolle auswählen, um den entsprechenden Detailbereich zu öffnen. Wählen Sie die Registerkarte **Berechtigungen** aus, um eine detaillierte Liste der Berechtigungen anzuzeigen, über die Administratoren mit dieser Rolle verfügen. Wählen Sie die Registerkarte **Zugewiesene** oder **Zugewiesene Administratoren** aus, um Benutzer zu Rollen hinzuzufügen.
 
 ::: moniker-end
 
-Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend aufgeführten Rollen zuweisen. (Ausführliche Informationen, einschließlich der mit einer Rolle verknüpften Cmdlets, finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend aufgeführten Rollen zuweisen. Standardmäßig werden zuerst die Rollen angezeigt, die von den meisten Organisationen verwendet werden. Wenn Sie eine Rolle nicht finden können, gehen Sie zum Ende der Liste, und wählen Sie **Weitere Rollen anzeigen** aus. (Ausführliche Informationen, einschließlich der mit einer Rolle verknüpften Cmdlets, finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
 |Administratorrolle     |Wem sollte diese Rolle zugewiesen werden?  |
 |---------|---------|
@@ -84,7 +78,7 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Teams-Dienstadministrator    |   Weisen Sie die Teams-Dienstadministratorrolle Benutzern zu, die auf das Teams Admin Center zugreifen und es verwalten müssen. <br><br>Teams-Dienstadministratoren können auch folgende Aktionen ausführen: <br> - Verwalten von Besprechungen <br> - Verwalten von Konferenzbrücken <br> - Verwalten aller organisationsweiten Einstellungen einschließlich Partnerverbund, Microsoft Teams-Upgrades und Einstellungen des Microsoft Teams-Clients   |
 |Benutzeradministrator     |    Weisen Sie die Rolle des Benutzeradministrators Benutzern zu, die folgende Aktionen für alle Benutzer ausführen müssen: <br> - Benutzer und Gruppen hinzufügen <br> - Lizenzen zuweisen <br> - Die meisten Benutzereigenschaften verwalten <br> - Benutzeransichten erstellen und verwalten <br> - Kennwortablaufrichtlinien aktualisieren <br> - Serviceanfragen verwalten <br> - Den Dienststatus überwachen <br><br>  Der Benutzeradministrator kann außerdem die unten aufgeführten Aktionen für Benutzer ohne Administratorrolle sowie für Benutzer ausführen, denen die folgenden Rollen zugewiesen sind: Verzeichnisleseberechtigter, Gasteinladender, Helpdesk-Administrator, Nachrichtencenter-Leseberechtigter und Berichtleseberechtigter. <br> - Benutzernamen verwalten<br> - Benutzerkonten löschen und wiederherstellen<br> - Kennwörter zurücksetzen <br> - Die Abmeldung von Benutzern erzwingen <br> - (FIDO)-Geräteschlüssel aktualisieren   |
 
-### <a name="all-roles"></a>Alle Rollen
+### <a name="all-azure-ad-roles"></a>Alle Azure AD-Rollen
 
  Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administratorrollen.
 
@@ -134,6 +128,17 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Supporttechniker für die Microsoft Teams-Kommunikation     |    Liest Anrufaufzeichnungsdetails für alle Anrufteilnehmer, um Kommunikationsprobleme zu behandeln.     |
 |Supportexperte für die Microsoft Teams-Kommunikation     |    Liest Benutzeranrufdetails nur für einen bestimmten Benutzer, um Kommunikationsprobleme zu behandeln.|
 |Benutzeradministrator     |   Setzt Benutzerkennwörter zurück, erstellt und verwaltet Benutzer und Gruppen, einschließlich Filtern, verwaltet Serviceanfragen und überwacht den Dienststatus.|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Im Microsoft 365 Admin Center verfügbare Microsoft Intune-Rollen
+
+|Administratorrolle     |Wem sollte diese Rolle zugewiesen werden?  |
+|---------|---------|
+|Anwendungsmanager     |   Weisen Sie die Rolle des Anwendungsmanagers Benutzern zu, die den Anwendungs-Lebenszyklus für mobile Anwendungen verwalten, richtlinienverwaltete Anwendungen konfigurieren und Geräteinformationen und Konfigurationsprofile anzeigen.  |
+|Helpdesk-Operator     |   Weisen Sie die Helpdesk-Operator-Rolle den Benutzern zu, die Benutzern und Geräten Anwendungen und Richtlinien zuweisen. |
+|Intune-Rollenadministrator    |   Weisen Sie den Intune-Rollenadministrator Benutzern zu, die anderen Administratoren Intune-Berechtigungen zuweisen und benutzerdefinierte und eingebaute Intune-Rollen verwalten können.   |
+|Richtlinien- und Profilmanager     |   Weisen Sie die Rolle des Richtlinien- und Profilmanagers den Benutzern zu, die Konformitätsrichtlinien, Konfigurationsprofile und Registrierung bei Apple verwalten.   |
+|Operator für „Schreibgeschützt“     |   Weisen Sie Benutzern, die nur Benutzer, Geräte, Anmeldedetails und Konfigurationen anzeigen können, die Rolle des Operators für „Schreibgeschützt“ zu.   |
+|Schuladministrator     |   Weisen Sie den Benutzern die Rolle des Schuladministrators zu, damit sie vollen Zugriff auf die Verwaltung von Windows 10 und iOS-Geräten, Anwendungen und Konfigurationen in Intune for Education haben.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Delegierte Administration für Microsoft-Partner
 

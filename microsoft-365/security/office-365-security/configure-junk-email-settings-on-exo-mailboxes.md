@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206628"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347795"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -40,6 +40,9 @@ Wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist, kann EoP Nachrichten
  Wenn die Junk-e-Mail-Regel für das Postfach deaktiviert ist, kann EoP Nachrichten nicht in den Junk-e-Mail-Ordner basierend auf der Spam Filterungs **Entscheidungs Aktion "Nachricht in Junk-e-Mail-Ordner"** oder "Sammlung von Listen sicherer Adressen" im Postfach
 
 Administratoren können Exchange Online PowerShell verwenden, um den Status der Junk-e-Mail-Regel für Postfächer zu deaktivieren, zu aktivieren und anzuzeigen. Administratoren können auch Exchange Online PowerShell zum Konfigurieren von Einträgen in der Sammlung von Listen sicherer Adressen für Postfächer verwenden (die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste Absender blockieren).
+
+> [!NOTE]
+> Nachrichten von Absendern, die Benutzer zu ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die EoP-Filterung (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -165,7 +168,7 @@ Verwenden Sie eine der folgenden Vorgehensweisen, um sicherzustellen, dass die S
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook
 
-Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Microsoft 365-Apps für Unternehmen, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Microsoft 365-Apps für Unternehmen, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) und [Bereitstellen von Junk-e-Mail-Einstellungen wie der Liste sicherer Absender mithilfe von Gruppenrichtlinien](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
 
 Wenn der Outlook-Junk-e-Mail-Filter auf den Standardwert **No Automatic Filtering** in **Home** \> **Junk** \> **Junk e-Mail-Optionen** \> **Optionen**festgelegt ist, versucht Outlook nicht, Massagen als Spam zu klassifizieren, verwendet jedoch weiterhin die Sammlung von Listen sicherer Adressen (Liste sicherer Absender, Liste sicherer Empfänger und blockierte Absender), um Nachrichten nach der Zustellung in den Junk-e-Mail- Weitere Informationen zu diesen Einstellungen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

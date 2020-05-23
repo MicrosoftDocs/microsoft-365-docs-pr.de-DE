@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066418"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254318"
 ---
 # <a name="european-union-model-clauses"></a>Standardvertragsklauseln der Europäischen Union
 
@@ -42,11 +42,11 @@ Die Gruppe hat festgestellt, dass die Implementierung der Bestimmungen in den Ve
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
+- Microsoft Cloud App Security
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Microsoft 365 for Business
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: Clouddienstkomponente des Intune Add-on-Produkts und Verwaltung mobiler Geräte für Office 365
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemalig Microsoft Flow) als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
