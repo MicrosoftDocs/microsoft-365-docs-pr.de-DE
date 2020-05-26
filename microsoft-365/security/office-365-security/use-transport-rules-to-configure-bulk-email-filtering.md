@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln (Transportregeln) verwenden, um Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) zu identifizieren und zu filtern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a31030ea2f844cdeb4bee68bf748a2ab8ca29dad
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213364"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352396"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Nachrichtenfluss Regeln zum Filtern von Massen-e-Mails in EoP
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Regeln zum Filtern von Massen-E-Mails in EOP
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwendet EoP Antispam-Richtlinien (auch als Spamfilter Richtlinien oder Inhaltsfilter Richtlinien bezeichnet), um eingehende Nachrichten für Spam und Massen-e-Mails zu scannen (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwendet EoP Antispam-Richtlinien (auch als Spamfilter Richtlinien oder Inhaltsfilter Richtlinien bezeichnet), um eingehende Nachrichten für Spam und Massen-e-Mails zu scannen (auch als graue e-Mail bezeichnet). Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 Wenn Sie weitere Optionen zum Filtern von Massen-e-Mails wünschen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden, und diese Nachrichten als Spam markieren. Weitere Informationen zu Massen-e-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-e-Mail und Massen-e-Mail? und der](what-s-the-difference-between-junk-email-and-bulk-email.md) [Massen Reklamations Stufe (BCL) in EoP](bulk-complaint-level-values.md).
 
@@ -41,7 +41,7 @@ In diesem Thema wird erläutert, wie Sie diese Nachrichtenfluss Regeln in der Ex
 
 - Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Informationen zum Öffnen der Exchange-Verwaltungskonsole in eigenständigen EoP finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Weitere Informationen zu Nachrichtenfluss Regeln in Exchange Online und eigenständigen EoP finden Sie in den folgenden Themen:
 
@@ -140,7 +140,7 @@ In diesem Beispiel wird eine neue Regel mit dem Namen "Massen-e-Mail-Filterung-W
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
 ```
 
-Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 

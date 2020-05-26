@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen erstellt haben, können Sie überprüfen, wie sie mandantenübergreifend verwendet werden. Mithilfe der Analyse der Bezeichnungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center können Sie schnell sehen, welche Bezeichnungen am häufigsten verwendet werden und wo sie angewendet werden.
-ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072286"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231988"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
 
@@ -99,5 +99,5 @@ Wenn Sie die Analyse der Bezeichnungen anzeigen möchten, muss Ihnen eine der fo
 - Sicherheitsadministrator
 - Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 
-Beachten Sie außerdem, dass diese Berichte Azure Monitor verwenden, um die Daten in einem Protokollanalysearbeitsbereich Ihres Unternehmens zu speichern. Aus diesem Grund sollte der Benutzer als Benutzer mit Leseberechtigung zum Azure Monitoring-Arbeitsbereich hinzugefügt werden, der die Daten enthält. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Beachten Sie außerdem, dass diese Berichte Azure Monitor verwenden, um die Daten in einem Protokollanalysearbeitsbereich Ihres Unternehmens zu speichern. Aus diesem Grund sollte der Benutzer als Leseberechtigter zum Azure Monitoring-Arbeitsbereich hinzugefügt werden, der die Daten enthält. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Azure Information Protection-Analysen](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

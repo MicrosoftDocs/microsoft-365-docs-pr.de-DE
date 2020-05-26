@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Nachdem Sie die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei exportiert und heruntergeladen haben, können Sie das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um die einzelnen Eigenschaften im JSON-Objekt in der Auditdata-Spalte in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen. Sie können auch PowerShell zum Durchsuchen und Exportieren von Überwachungsprotokolldaten Sätzen verwenden.
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799928"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352385"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 
@@ -100,7 +100,7 @@ Im nächsten Schritt wird das JSON-Transformations Feature im Power Query-Editor
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Verwenden von PowerShell zum Durchsuchen und Exportieren von Überwachungsprotokolldaten Sätzen
 
-Anstatt das Überwachungsprotokoll-Such Tool im Security & Compliance Center zu verwenden, können Sie das Cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei zu exportieren. Anschließend können Sie das gleiche Verfahren wie in Schritt 2 beschrieben ausführen, um das Überwachungsprotokoll mit dem Power Query-Editor zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht darin, dass Sie mithilfe des *RecordType* -Parameters nach Ereignissen eines bestimmten Diensts suchen können. Im folgenden finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie den Power Query-Editor verwenden können, um das JSON-Objekt in der **Auditdata** -Spalte wie in Schritt 2 beschrieben zu transformieren.
+Anstatt das Überwachungsprotokoll-Such Tool im Security & Compliance Center zu verwenden, können Sie das Cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei zu exportieren. Anschließend können Sie das gleiche Verfahren wie in Schritt 2 beschrieben ausführen, um das Überwachungsprotokoll mit dem Power Query-Editor zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht darin, dass Sie mithilfe des *RecordType* -Parameters nach Ereignissen eines bestimmten Diensts suchen können. Im folgenden finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie den Power Query-Editor verwenden können, um das JSON-Objekt in der **Auditdata** -Spalte wie in Schritt 2 beschrieben zu transformieren.
 
 Führen Sie in diesem Beispiel die folgenden Befehle aus, um alle Datensätze im Zusammenhang mit SharePoint-Freigabe Vorgängen zurückzugeben.
 

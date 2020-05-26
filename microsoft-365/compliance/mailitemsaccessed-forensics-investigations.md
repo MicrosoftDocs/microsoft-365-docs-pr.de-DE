@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die MailItemsAccessed-Postfachüberwachungsaktion, um forensische Untersuchungen kompromittierter Benutzerkonten auszuführen.
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262578"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327649"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten
 
@@ -43,7 +43,7 @@ Ein Beispiel für die Darstellung des Synchronisierungszugriffstyps in einem Üb
 
 ### <a name="auditing-bind-access"></a>Überwachen des Bindungszugriffs
 
-Bei einem Bindungsvorgang handelt es sich um einen individuellen Zugriff auf eine E-Mail-Nachricht. Beim Bindungszugriff wird die Internetnachrichten-ID (internet-message-id) einzelner Nachrichten im Überwachungsdatensatz aufgezeichnet. Die MailItemsAccessed-Überwachungsaktion zeichnet Bindungsvorgänge auf, und aggregiert diese dann in einem einzigen Überwachungsdatensatz. Alle Bindungsvorgänge, die innerhalb eines 2-Minuten-Intervalls auftreten, werden in einem einzelnen Überwachungsdatensatz im Ordner-Feld innerhalb der AuditData-Eigenschaft aggregiert. Jede Nachricht, auf die zugegriffen wurde, wird anhand ihres internet-message-id-Werts angegeben. Die Anzahl der in dem Datensatz aggregierten Bindungsvorgänge wird im Feld "OperationCount" in der AuditData-Eigenschaft angezeigt.
+Bei einem Bindungsvorgang handelt es sich um einen individuellen Zugriff auf eine E-Mail-Nachricht. Beim Bindungszugriff wird die Internetnachrichten-ID (internet-message-id) einzelner Nachrichten im Überwachungsdatensatz aufgezeichnet. Die MailItemsAccessed-Überwachungsaktion zeichnet Bindungsvorgänge auf, und aggregiert diese dann in einem einzigen Überwachungsdatensatz. Alle Bindungsvorgänge, die innerhalb eines 2-Minuten-Intervalls auftreten, werden in einem einzelnen Überwachungsdatensatz im Ordner-Feld innerhalb der AuditData-Eigenschaft aggregiert. Jede Nachricht, auf die zugegriffen wurde, wird anhand ihres Internetnachrichten-ID-Werts identifiziert. Die Anzahl der in dem Datensatz aggregierten Bindungsvorgänge wird im Feld „OperationCount“ in der AuditData-Eigenschaft angezeigt.
 
 Ein Beispiel für die Darstellung des Bindungszugriffstyps in einem Überwachungsdatensatz finden Sie in Schritt 4 im Abschnitt [Verwenden von MailItemsAccessed-Überwachungsdatensätzen für forensische Untersuchungen](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
 

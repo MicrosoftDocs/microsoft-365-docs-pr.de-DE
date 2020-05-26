@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der Datenklassifizierung (Vorschau)
+title: Datenklassifizierung – Erste Schritte
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957275"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327871"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>Kenne Deine Daten – Überblick über die Datenklassifizierung (Vorschau)
+# <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
 Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalte in Ihrer Organisation auswerten und diese dann markieren, um zu steuern, wohin diese sich bewegen, sie zu schützen, unabhängig davon, an welchem Ort sie sich befinden, und sicherstellen, dass sie gemäß den Anforderungen Ihrer Organisation beibehalten oder gelöscht werden. Dies erfolgt über die Anwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), [Aufbewahrungsbezeichnungen](labels.md) und der Klassifizierung von Typen vertraulicher Informationen. Es gibt verschiedene Möglichkeiten für die Ermittlung, die Auswertung und die Kennzeichnung, das Endergebnis ist aber immer, dass Sie möglicherweise eine sehr große Anzahl von Dokumenten und E-Mails haben, die mit einer oder beiden Bezeichnungen gekennzeichnet und klassifiziert werden. Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen angewendet haben, können Sie überprüfen, wie die Bezeichnungen mandantenübergreifend verwendet und wofür diese Elemente eingesetzt werden. Auf der Datenklassifizierungsseite erhalten Sie einen Einblick darin. Insbesondere wird Folgendes erläutert:
 
@@ -33,11 +33,41 @@ Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalt
 - Eine Zusammenfassung von Aktivitäten, die Benutzer für Ihre vertraulichen Inhalten ausführen.
 - Die Speicherorte Ihrer vertraulichen und aufbewahrten Daten.
 
+Diese Merkmale können Sie auch auf der Datenklassifizierungsseite verwalten:
+- [trainierbare Klassifizierungsmerkmale](classifier-getting-started-with.md)
+- [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md)
+
 Sie finden die Datenklassifizierung im **Microsoft 365 Compliance Center** oder unter **Microsoft 365 Security Center** > **Klassifizierung** > **Datenklassifizierung**.
+
+Machen Sie eine Videotour durch unsere Datenklassifizierungsmerkmale.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+Die Datenklassifizierung scannt Ihre vertraulichen Inhalte und bezeichneten Inhalte, bevor Sie Richtlinien erstellen. Dies wird als **Zero Change Management** bezeichnet. Auf diese Weise können Sie die Auswirkungen aller Aufbewahrungs- und Vertraulichkeitsbezeichnungen in Ihrer Umgebung sehen und damit beginnen, Ihre Anforderungen im Zusammenhang mit Schutz- und Governancerichtlinien zu überdenken.
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss eine Lizenz aus einem dieser Abonnements zugewiesen sein:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5)-Add-on
+- Advanced Threat Intelligence (E5)-Add-on
+
+### <a name="permissions"></a>Berechtigungen
+
+ Um Zugriff auf die Datenklassifizierungsseite zu erhalten, muss einem Konto die Mitgliedschaft in einer dieser Rollen oder Rollengruppen zugewiesen werden.
+
+**Microsoft 365-Rollengruppen**
+
+- Globaler Administrator
+- Compliance-Administrator
+- Sicherheitsadministrator
+- Compliancedatenadministrator
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Typen vertraulicher Informationen, die in Ihren Inhalten am häufigsten verwendet werden
 
-Microsoft 365 enthält viele Definitionen von Typen vertraulicher Informationen, beispielsweise ein Element, das eine Sozialversicherungsnummer oder eine Kreditkartennummer enthält. Weitere Informationen zu vertraulichen Informationstypen finden Sie unter [Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 enthält viele Definitionen von Typen vertraulicher Informationen, beispielsweise ein Element, das eine Sozialversicherungsnummer oder eine Kreditkartennummer enthält. Weitere Informationen zu vertraulichen Informationstypen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md).
 
 Auf der Karte mit den Typen vertraulicher Informationen werden die am häufigsten verwendeten Typen vertraulicher Informationen angezeigt, die in Ihrer Organisation gefunden und gekennzeichnet wurden.
 
@@ -51,7 +81,7 @@ Wenn Sie wissen möchten, wie viele Elemente in einer bestimmten Klassifizierung
 > Wenn auf der Karte die Meldung angezeigt wird, dass keine Daten mit vertraulichen Informationen gefunden wurden, bedeutet das, dass in Ihrer Organisation keine Elemente vorhanden sind, die als Typ vertraulicher Informationen klassifiziert wurden oder dass keine Elemente durchsucht wurden. Informationen zu den ersten Schritten mit Bezeichnungen finden Sie unter:
 >- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 >- [Aufbewahrungsbezeichnungen](labels.md)
->- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
+>- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Die am häufigsten auf Inhalte angewendeten Vertraulichkeitsbezeichnungen
 
@@ -106,5 +136,6 @@ Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Tr
 - [Anzeigen von beschriftetem Inhalt (Vorschau)](data-classification-content-explorer.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Aufbewahrungsbezeichnungen](labels.md)
-- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
+- [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)

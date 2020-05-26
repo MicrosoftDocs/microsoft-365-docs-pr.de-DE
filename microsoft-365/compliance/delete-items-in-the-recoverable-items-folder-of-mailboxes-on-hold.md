@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, auch wenn das Postfach legal aufbewahrt wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die versehentlich in Microsoft 365 verschüttet wurden.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232059"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352180"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife – Administratorhilfe
 
@@ -262,7 +262,7 @@ Wenn der Wert der *DelayHoldApplied* -oder *DelayReleaseHoldApplied* -Eigenschaf
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Oder:
+Oder
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -272,7 +272,7 @@ Sie müssen die Rolle "Legal Hold" in Exchange Online zugewiesen haben, um den P
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Schritt 5: Löschen von Elementen im Ordner "Wiederherstellbare Elemente"
 
-Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe der Cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch) und [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) im Security & Compliance Center tatsächlich löschen. 
+Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" mithilfe der Cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) und [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) im Security & Compliance Center tatsächlich löschen. 
 
 Informationen dazu finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 

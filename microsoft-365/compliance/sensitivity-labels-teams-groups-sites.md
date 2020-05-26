@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8717f6dc9f86ed8d0d9bab378588d70e2854e8e7
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327273"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352487"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)
 
@@ -198,7 +198,7 @@ Wenn Sie eine Änderung an den Website- und Gruppeneinstellungen für eine Bezei
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Führen Sie das Cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
+2. Führen Sie das Cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
     
     ```powershell
     Get-Label |ft Name, Guid
@@ -216,7 +216,7 @@ Wenn Sie eine Änderung an den Website- und Gruppeneinstellungen für eine Bezei
     Import-PSSession $Session
     ```
     
-5. Führen Sie das Cmdlet [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) aus. Geben Sie dabei die GUID der Bezeichnung anstelle der Beispiel-GUID "e48058ea-98e8-4940-8db0-ba1310fd955e" an: 
+5. Führen Sie das Cmdlet [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) aus. Geben Sie dabei die GUID der Bezeichnung anstelle der Beispiel-GUID "e48058ea-98e8-4940-8db0-ba1310fd955e" an: 
     
     ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
@@ -295,7 +295,7 @@ Sie können Benutzer zwar nicht daran hindern, neue Gruppen in Apps und Diensten
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Führen Sie das Cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
+2. Führen Sie das Cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
     
     ```powershell
     Get-Label |ft Name, Guid

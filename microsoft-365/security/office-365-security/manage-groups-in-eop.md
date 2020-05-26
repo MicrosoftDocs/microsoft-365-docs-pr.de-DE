@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in eigenständigen Exchange Online Schutzorganisationen können Informationen zum Erstellen, ändern und Entfernen von Verteilergruppen und e-Mail-aktivierten Sicherheitsgruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenständigen Exchange Online Protection (EoP) PowerShell EoP.
-ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209019"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352191"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -38,7 +38,7 @@ Sie können Gruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenst�
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie Gruppen in eigenständigen EoP PowerShell verwalten, treten möglicherweise Einschränkungen auf. In den PowerShell-Verfahren in diesem Thema wird eine Batch Verarbeitungsmethode verwendet, die zu einer Ausbreitungs Verzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
@@ -147,7 +147,7 @@ Um die Liste der Gruppenmitglieder zurückzugeben, ersetzen Sie \< GroupIdentity
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) und [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) und [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember).
 
 ### <a name="use-standalone-eop-powershell-to-create-groups"></a>Verwenden eigenständiger EoP PowerShell zum Erstellen von Gruppen
 
@@ -173,7 +173,7 @@ In diesem Beispiel wird eine Verteilergruppe mit dem Namen "IT Administrators" m
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup).
 
 ### <a name="use-standalone-eop-powershell-to-modify-groups"></a>Verwenden eigenständiger EoP PowerShell zum Ändern von Gruppen
 
@@ -207,7 +207,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup) und [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) und [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember).
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>Entfernen einer Gruppe mithilfe von Remote Windows PowerShell
 
@@ -217,7 +217,7 @@ In diesem Beispiel wird die Verteilergruppe "IT-Administratoren" entfernt.
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 

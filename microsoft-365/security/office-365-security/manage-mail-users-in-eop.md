@@ -1,5 +1,5 @@
 ---
-title: Verwalten von e-Mail-Benutzern in eigenständigen EoP
+title: Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208645"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352432"
 ---
-# <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von e-Mail-Benutzern in eigenständigen EoP
+# <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer sind e-Mail-Benutzer der grundlegende Typ des Benutzerkontos. Ein e-Mail-Benutzer verfügt über Kontoanmeldeinformationen in ihrer eigenständigen EoP-Organisation und kann auf Ressourcen zugreifen (Berechtigungen zugewiesen). Die e-Mail-Adresse eines e-Mail-Benutzers ist extern (beispielsweise in Ihrer lokalen e-Mail-Umgebung).
 
@@ -35,7 +35,7 @@ Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
 - Informationen zum Öffnen des Exchange Admin Center (EAC) finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie e-Mail-Benutzer in EoP PowerShell erstellen, stoßen Sie möglicherweise auf Drosselung. Außerdem verwenden die EoP-PowerShell-Cmdlets eine Batch Verarbeitungsmethode, die zu einer Ausbreitungs Verzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle sichtbar sind.
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) und [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) und [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>Verwenden eigenständiger EoP PowerShell zum Erstellen von e-Mail-Benutzern
 
@@ -178,7 +178,7 @@ In diesem Beispiel wird ein e-Mail-Benutzer mit den folgenden Einstellungen erst
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>Verwenden eigenständiger EoP PowerShell zum Ändern von e-Mail-Benutzern
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Verwenden eigenständiger EoP PowerShell zum Entfernen von e-Mail-Benutzern
 
@@ -221,7 +221,7 @@ In diesem Beispiel wird der e-Mail-Benutzer für Jeffrey Zeng entfernt.
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
@@ -255,7 +255,7 @@ In eigenständigen EoP steht die Verzeichnissynchronisierung für Kunden mit lok
 
 - Für die folgenden Funktionen wird empfohlen, Verzeichnissynchronisierung zu verwenden:
 
-  - Listen **sicherer Absender in Outlook und blockierte Absender**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer Absender und blockierte Absender mit einzelnen Absender-und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online Postfächer](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listen **sicherer Absender in Outlook und blockierte Absender**: Wenn Sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Dadurch können Benutzer ihre eigene Liste sicherer Absender und blockierte Absender mit einzelnen Absender-und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
   - **Verzeichnisbasierte Edge-Blockierung (Blockierung)**: Weitere Informationen zu Blockierung finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)werden.
 

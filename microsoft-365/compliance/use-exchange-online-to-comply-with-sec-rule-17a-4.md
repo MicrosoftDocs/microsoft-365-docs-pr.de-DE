@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates bestätigt, dass Exchange Online und das Security & Compliance Center bei der empfohlenen Konfiguration die relevanten Speicheranforderungen der CFTC-Richtlinie 1.31(c)-(d), der FINRA-Richtlinie 4511 und der SEC-Richtlinie 17a-4 erfüllen. Sie können die Bewertung herunterladen.
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626421"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231838"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
 
@@ -53,7 +53,7 @@ In hochgradig regulierten Branchen müssen oft elektronische Kommunikationsdaten
 - Sie müssen über einen erforderlichen Aufbewahrungszeitraum gespeichert werden, der nicht verkürzt sondern nur verlängert werden kann.
 - Sie müssen unveränderlich sein, d. h. Datensätze können während des erforderlichen Aufbewahrungszeitraums nicht überschrieben, gelöscht oder geändert werden.
 
-Wenn Exchange Online eine [Aufbewahrungsrichtlinie](retention-policies.md) auf das Postfach eines Benutzers angewendet wird, werden alle Inhalte des Benutzers basierend auf den Kriterien der Richtlinie aufbewahrt. Wenn ein Benutzer eine E-Mail zu löschen oder zu ändern, wird eine Kopie der E-Mail im unveränderten Zustand an einem sicheren, versteckten Speicherort im Postfach des Benutzers abgelegt. Durch Aufbewahrungsrichtlinien kann sichergestellt werden, dass eine Organisation elektronische Kommunikationsdaten aufbewahrt, solche Richtlinien können jedoch verändert werden.
+Wenn in Exchange Online eine [Aufbewahrungsrichtlinie](retention-policies.md) auf das Postfach eines Benutzers angewendet wird, werden alle Inhalte des Benutzers basierend auf den Kriterien der Richtlinie aufbewahrt. Dis bedeutet, dass, sobald ein Benutzer versucht, eine E-Mail zu löschen oder zu ändern, eine Kopie der E-Mail im unveränderten Zustand an einem sicheren, versteckten Speicherort im Postfach des Benutzers abgelegt wird. Durch Aufbewahrungsrichtlinien kann sichergestellt werden, dass eine Organisation elektronische Kommunikationsdaten aufbewahrt, allerdings können derartige Richtlinien geändert werden.
 
 Durch das Anwenden einer Erhaltungssperre auf eine Aufbewahrungsrichtlinie kann eine Organisation sicherstellen, dass die Richtlinie nicht geändert werden kann. Nach dem Anwenden einer Erhaltungssperre auf eine Aufbewahrungsrichtlinie sind folgende Aktionen eingeschränkt:
 
@@ -65,7 +65,7 @@ Eine Erhaltungssperre kann Sie bei der Einhaltung der gesetzlichen Bestimmungen 
 
 ## <a name="how-to-set-up-preservation-lock"></a>So richten Sie eine Erhaltungssperre ein
 
-Sie können eine Aufbewahrungsrichtlinie über PowerShell sperren. Weitere Informationen finden Sie unter [Sperren einer Aufbewahrungsrichtlinie](retention-policies.md#locking-a-retention-policy).
+Sie können eine Aufbewahrungsrichtlinie nur mithilfe von PowerShell sperren. Weitere Informationen hierzu finden Sie unter [Verwenden der Erhaltungssperre zur Einhaltung gesetzlicher Vorschriften](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
@@ -75,4 +75,4 @@ Derzeit gibt es einige Einschränkungen für Exchange Online:
 - Für Teams Chat- und Kanalnachrichten werden „gefällt mir“-Angaben nicht gespeichert.
 
 > [!NOTE]
-> Überwachung auf Elementebene für Microsoft 365-Gruppen-Postfächer steht jetzt zur Verfügung. Weitere Informationen finden Sie unter [Verwalten der Postfachüberwachung](enable-mailbox-auditing.md).
+> Überwachung auf Elementebene für Microsoft 365-Gruppenpostfächer steht jetzt zur Verfügung. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](enable-mailbox-auditing.md).

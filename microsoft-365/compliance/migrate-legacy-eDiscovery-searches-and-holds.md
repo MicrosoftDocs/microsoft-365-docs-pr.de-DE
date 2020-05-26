@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 409afed8ea927f1bdfc602264bbff7bce34e8533
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 216ec3853f1b55c7fb34de3a236f50094202bca5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943334"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352465"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrieren von Legacy-eDiscovery-suchen und-Archiven zum Microsoft 365 Compliance Center
 
@@ -79,11 +79,11 @@ Die Ausgabe dieser beiden Befehle ist wie folgt:
 ![Beispiel für eine PowerShell-Ausgabe mit Get-MailboxSearch für eine individuelle Suche](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> Die Dauer des in-situ-Speichers in diesem Beispiel ist unbestimmt (*ItemHoldPeriod: Unlimited*). Dies ist typisch für eDiscovery-und rechtliche Ermittlungs Szenarien. Wenn die Aufbewahrungsdauer einen anderen Wert als unbegrenzt hat, liegt der Grund wahrscheinlich daran, dass der Haltebereich zum Beibehalten von Inhalt in einem Aufbewahrungs Szenario verwendet wird. Anstatt die eDiscovery-Cmdlets in Security & Compliance Center PowerShell für Aufbewahrungs Szenarien zu verwenden, wird empfohlen, dass Sie " [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) " und " [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) " verwenden, um Inhalte beizubehalten. Das Ergebnis der Verwendung dieser Cmdlets ähnelt der Verwendung von **New-CaseHoldPolicy** und **New-CaseHoldRule**, aber Sie können einen Aufbewahrungszeitraum und eine Aufbewahrungsaktion angeben, beispielsweise das Löschen von Inhalten nach Ablauf des Aufbewahrungszeitraums. Darüber hinaus ist es für die Verwendung der Aufbewahrungs-Cmdlets nicht erforderlich, die Aufbewahrungszeiträume einem eDiscovery-Fall zuzuordnen.
+> Die Dauer des in-situ-Speichers in diesem Beispiel ist unbestimmt (*ItemHoldPeriod: Unlimited*). Dies ist typisch für eDiscovery-und rechtliche Ermittlungs Szenarien. Wenn die Aufbewahrungsdauer einen anderen Wert als unbegrenzt hat, liegt der Grund wahrscheinlich daran, dass der Haltebereich zum Beibehalten von Inhalt in einem Aufbewahrungs Szenario verwendet wird. Anstatt die eDiscovery-Cmdlets in Security & Compliance Center PowerShell für Aufbewahrungs Szenarien zu verwenden, wird empfohlen, dass Sie " [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy) " und " [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) " verwenden, um Inhalte beizubehalten. Das Ergebnis der Verwendung dieser Cmdlets ähnelt der Verwendung von **New-CaseHoldPolicy** und **New-CaseHoldRule**, aber Sie können einen Aufbewahrungszeitraum und eine Aufbewahrungsaktion angeben, beispielsweise das Löschen von Inhalten nach Ablauf des Aufbewahrungszeitraums. Darüber hinaus ist es für die Verwendung der Aufbewahrungs-Cmdlets nicht erforderlich, die Aufbewahrungszeiträume einem eDiscovery-Fall zuzuordnen.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Schritt 4: Erstellen eines Falls im Microsoft 365 Compliance Center
 
-Um einen eDiscovery-Speicher zu erstellen, müssen Sie einen eDiscovery-Fall erstellen, dem der Haltestatus zugeordnet werden soll. Im folgenden Beispiel wird ein eDiscovery-Fall mithilfe eines Namens Ihrer Wahl erstellt. Die Eigenschaften des neuen Falls werden in einer Variablen gespeichert, um Sie später zu verwenden. Sie können diese Eigenschaften anzeigen, indem Sie `$case | FL` den Befehl ausführen, nachdem Sie die Anfrage erstellt haben.
+Um einen eDiscovery-Speicher zu erstellen, müssen Sie einen eDiscovery-Fall erstellen, dem der Haltestatus zugeordnet werden soll. Im folgenden Beispiel wird ein eDiscovery-Fall mithilfe eines Namens Ihrer Wahl erstellt. Die Eigenschaften des neuen Falls werden in einer Variablen gespeichert, um Sie später zu verwenden. Sie können diese Eigenschaften anzeigen, indem Sie den Befehl ausführen, `$case | FL` nachdem Sie die Anfrage erstellt haben.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
@@ -132,7 +132,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Schritt 8: Überprüfen der Groß-/Kleinschreibung, des Haltestatus und der Suche im Microsoft 365 Compliance Center
 
-Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zum Microsoft 365 Compliance [https://compliance.microsoft.com](https://compliance.microsoft.com)Center unter, und klicken Sie auf **eDiscovery > Core**.
+Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zum Microsoft 365 Compliance Center unter [https://compliance.microsoft.com](https://compliance.microsoft.com) , und klicken Sie auf **eDiscovery > Core**.
 
 ![Microsoft 365 Compliance Center eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
@@ -156,18 +156,18 @@ Wenn Sie eine Compliance-eDiscovery-Suche migrieren, diese aber keinem eDiscover
 
 - Weitere Informationen zu den im Artikel verwendeten PowerShell-Cmdlets finden Sie unter:
 
-  - [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch)
+  - [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch)
   
-  - [New-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-compliancecase)
+  - [New-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/new-compliancecase)
 
-  - [New-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-caseholdpolicy)
+  - [New-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/new-caseholdpolicy)
   
-  - [New-CaseHoldRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-caseholdrule)
+  - [New-CaseHoldRule](https://docs.microsoft.com/powershell/module/exchange/new-caseholdrule)
 
-  - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)
+  - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
   
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 - Weitere Informationen zum Microsoft 365 Compliance Center finden Sie unter [Overview of the Microsoft 365 Compliance Center](microsoft-365-compliance-center.md).

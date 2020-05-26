@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156880"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254298"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -48,30 +48,30 @@ Microsoft hat SOC 1 Typ 2-, SOC 2 Typ 2- und SOC 3-Berichte erhalten. Im Allgeme
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Im Umfang von SOC 1 und SOC 2 enthaltene Dienste
 
 - [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
+- Microsoft Cloud App-Sicherheit
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Graph
+- Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
-- Stream
+- Microsoft Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>Im Umfang von SOC 3 enthaltene Dienste
 
 - [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
-- Graph
+- Microsoft Cloud App-Sicherheit
+- Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
-- Stream
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
@@ -79,7 +79,7 @@ Microsoft hat SOC 1 Typ 2-, SOC 2 Typ 2- und SOC 3-Berichte erhalten. Im Allgeme
 
 Microsoft Cloud Services werden mindestens jährlich anhand der Standards SOC 1 (SSAE18, ISAE 3402), SOC 2 (AT Section 101) und SOC 3 überprüft.
 
-#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter
+#### <a name="azure-dynamics-365-microsoft-cloud-app-security-flow-microsoft-graph-intune-power-bi-powerapps-microsoft-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Microsoft Cloud App-Sicherheit, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream und Microsoft Rechenzentren
 
 - [Azure + Dynamics 365 und Azure + Dynamics 365 Government SOC 1 Type 2 Bericht](https://aka.ms/azuresoc1auditreport)
 - [Azure + Dynamics 365 und Azure + Dynamics 365 Government SOC 2 Type 2 Bericht](https://aka.ms/azuresoc2auditreport)
@@ -107,7 +107,7 @@ Anhand der Berichte können Ihre Prüfer die Ergebnisse der Microsoft-Clouddiens
 
 **Wie oft werden Azure SOC-Berichte erstellt?**
 
-SOC-Berichte für Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream und Microsoft Datacenter werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte erscheinen halbjährlich (Ende dieses Zeitraums ist jeweils der 31. März und der 30. September). Bridge Letters werden im Januar herausgegeben, um den Zeitraum von 1.10. – 31.12. abzudecken und im Juli, um den Zeitraum vom 1.4. – 30.6. abzudecken. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
+SOC-Berichte für Azure, Microsoft Cloud App-Sicherheit, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream und Microsoft Rechenzentren werden über einen Zeitraum von 12 Monaten (Prüfungszeitraum) erstellt. Neue Berichte werden halbjährlich (jeweils zum 31. März und 30. September) erstellt. Bridge Letters werden im Januar herausgegeben, um den Zeitraum von 1.10. – 31.12. abzudecken und im Juli, um den Zeitraum vom 1.4. – 30.6. abzudecken. Kunden können die neuesten Berichte im Service Trust Portal [herunterladen](https://aka.ms/stp).
 
 **Muss ich eine eigene Prüfung der Microsoft-Datencenter durchführen?**
 

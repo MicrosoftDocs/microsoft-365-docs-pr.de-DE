@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 329bb7c4662d6449d69c6dca9ad489bdd70a0d3f
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065690"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254228"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Verhaltenskodex für Informationssicherheitskontrollen
 
@@ -44,26 +44,28 @@ ISO/IEC 27017 ist einzigartig, da es Anleitungen für Anbieter und Kunden von C
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
+- Microsoft Cloud App-Sicherheit
+- [Dynamics 365, Dynamics 365 und Dynamics 365 Deutschland](https://aka.ms/d365-compliance-list)
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense und Office 365 Deutschland
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
-- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
+- Power BI Embedded
+- Microsoft Stream
 - Sehen Sie sich eine [detaillierten Liste](https://go.microsoft.com/fwlink/p/?linkid=2077751) der abgedeckten Dienste in Office 365 an
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 
 Microsoft-Clouddienste werden einmal jährlich im Rahmen des Zertifizierungsprozesses nach ISO/IEC 27001:2013 hinsichtlich des ISO/IEC 27017:2015-Verhaltenskodex überprüft.
 
-- [Azure ISO 27017-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2078005)
-- [Azure ISO 27017-Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017-Erklärung zur Anwendbarkeit](https://aka.ms/azureiso27017StatementofApplicability)
-- [Office 365 ISO 27001, 27018- und 27017-Prüfbericht](https://aka.ms/o365isoreport)
+- [Azure ISO 27017-Zertifikat](https://aka.ms/azureiso27017cert)
+- [Azure ISO 27017-Bewertungsbericht](https://aka.ms/azureiso27017report)
+- [Office 365: ISO 27001, 27018 und 27017-Prüfbericht](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 

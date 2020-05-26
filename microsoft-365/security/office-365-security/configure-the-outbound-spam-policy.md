@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie ausgehende Spam Richtlinien in Exchange Online Protection (EoP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213032"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351999"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EoP
 
@@ -77,7 +77,7 @@ Um die Effektivität der ausgehenden Spamfilterung zu verbessern, können Sie be
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Zum Hinzufügen, ändern und Löschen von ausgehenden Spam Richtlinien müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Für den schreibgeschützten Zugriff auf ausgehende Spam Richtlinien müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -308,7 +308,7 @@ In diesem Beispiel wird eine neue Richtlinie für ausgehende Spamfilter namens "
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Schritt 2: Erstellen einer ausgehenden Spamfilter Regel mithilfe von PowerShell
 
@@ -328,7 +328,7 @@ In diesem Beispiel wird eine neue ausgehende Spamfilter Regel namens "Contoso Ex
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Verwenden von PowerShell zum Anzeigen von Richtlinien für ausgehende Spamfilter
 
@@ -350,7 +350,7 @@ In diesem Beispiel werden alle Eigenschaftswerte für die ausgehende Spamfilter 
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Anzeigen von Regeln für ausgehende Spamfilter
 
@@ -388,7 +388,7 @@ In diesem Beispiel werden alle Eigenschaftswerte für die ausgehende Spamfilter 
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern von Richtlinien für ausgehende Spamfilter
 
@@ -402,7 +402,7 @@ Verwenden Sie die folgende Syntax, um eine ausgehende Spamfilter Richtlinie zu �
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Ändern von Regeln für ausgehende Spamfilter
 
@@ -416,7 +416,7 @@ Verwenden Sie die folgende Syntax, um eine Filterregel für ausgehende Spam zu �
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Aktivieren oder Deaktivieren von Regeln für ausgehende Spamfilter
 
@@ -440,7 +440,7 @@ In diesem Beispiel wird dieselbe Regel aktiviert.
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) und [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) und [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Festlegen der Priorität von ausgehenden spamfilterregeln
 
@@ -480,7 +480,7 @@ In diesem Beispiel wird die Richtlinie für ausgehende Spamfilter namens "Market
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Entfernen von Filterregeln für ausgehende Spam
 
@@ -498,7 +498,7 @@ In diesem Beispiel wird die ausgehende Spamfilter Regel namens "Marketing Depart
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

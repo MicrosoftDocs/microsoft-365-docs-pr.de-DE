@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel wird beschrieben, wie Sie verhindern können, dass Phishing-Nachrichten Ihr Postfach, Outlook.com und Outlook im Internet erreichen.
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224875"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352454"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 
@@ -50,7 +50,7 @@ Nicht jede Nachricht, die nicht authentifiziert werden kann, ist bösartig. Sie 
 
 Wenn Sie ein Office 365er Kunde sind, können Sie dieses Feature über das Office 365 Security & Compliance Center verwalten.
 
-- Im Security & Compliance Center können globale oder Sicherheitsadministratoren das Feature durch Schutz vor Spoofing unter der Anti-Phishing-Richtlinie aktivieren oder deaktivieren. Darüber hinaus können Sie das Cmdlet " **AntiPhishPolicy** " in Exchange Online PowerShell verwenden. Ausführliche Informationen finden Sie unter [Anti-Phishing Protection in Office 365](anti-phishing-protection.md) und [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- Im Security & Compliance Center können globale oder Sicherheitsadministratoren das Feature durch Schutz vor Spoofing unter der Anti-Phishing-Richtlinie aktivieren oder deaktivieren. Darüber hinaus können Sie das Cmdlet " **AntiPhishPolicy** " in Exchange Online PowerShell verwenden. Ausführliche Informationen finden Sie unter [Anti-Phishing Protection in Office 365](anti-phishing-protection.md) und [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy).
 
     ![Bearbeiten von nicht authentifizierten Absendern in der grafischen Benutzeroberfläche.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ Wenn Sie ein Office 365er Kunde sind, können Sie dieses Feature über das Offic
 
   - Fügen Sie das Domänenpaar über die Spoof Intelligence-Einblicke hinzu. Ausführliche Informationen finden Sie unter [Exemplarische Vorgehensweise: Spoof Intelligence Insight](walkthrough-spoof-intelligence-insight.md).
 
-  - Fügen Sie das Domänenpaar über das Cmdlet " **PhishFilterPolicy** " in Exchange Online PowerShell hinzu. Ausführliche Informationen finden Sie unter [Festlegen von PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) und [Einrichten Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing](set-up-anti-phishing-policies.md).
+  - Fügen Sie das Domänenpaar über das Cmdlet " **PhishFilterPolicy** " in Exchange Online PowerShell hinzu. Ausführliche Informationen finden Sie unter [Festlegen von PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy) und [Einrichten Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing](set-up-anti-phishing-policies.md).
 
 Darüber hinaus wird die nicht verifizierte Absender Behandlung nicht angewendet, wenn die Nachricht über Nachrichtenfluss Regeln (auch bekannt als Transportregeln) oder über die Liste sicherer Domänen (Anti-Spam Policies) an den Posteingang übermittelt wurde.
 

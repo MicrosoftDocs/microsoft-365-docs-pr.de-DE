@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratoren können erfahren, wie Sie Berechtigungen in der Exchange-Verwaltungskonsole (EAC) in Exchange Online Protection zuweisen oder entfernen.
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209674"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352335"
 ---
-# <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in eigenständigen EoP
+# <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie die Exchange-Verwaltungskonsole verwenden, um Benutzer zu Rollengruppen hinzuzufügen. Durch das Hinzufügen von Benutzern zu einer Rollengruppe erhalten die Benutzerberechtigungen für bestimmte Administratoraufgaben. Sie können Benutzer auch aus Rollengruppen entfernen.
 
@@ -135,7 +135,7 @@ In diesem Beispiel werden alle Rollengruppen zurückgegeben, in denen der Benutz
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Verwenden eigenständiger EoP PowerShell zum Erstellen von Rollengruppen
 
@@ -184,7 +184,7 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen manuel
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Verwenden eigenständiger EoP PowerShell ändern der Liste der Mitglieder in Rollengruppen
 
@@ -214,7 +214,7 @@ In diesem Beispiel wird Daigoro Akai hinzugefügt und Valeria Barrio aus der Lis
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Verwenden eigenständiger EoP PowerShell zum Entfernen von Rollengruppen
 
@@ -232,7 +232,7 @@ In diesem Beispiel wird die Rollengruppe "Schulungs Administratoren" entfernt.
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 

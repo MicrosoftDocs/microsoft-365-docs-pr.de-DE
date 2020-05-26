@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von MicrosoftTeams (so genannte 1xN-Chats) für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
-ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: ab523c0d2d334d3d2366711e241b3bafa2e0002f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214599"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352118"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer
 
@@ -129,11 +129,11 @@ Sie können die Cmdlets **New-ComplianceSearch** und **Set-ComplianceSearch** in
   
 Weitere Informationen über diese Cmdlets finden Sie unter:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

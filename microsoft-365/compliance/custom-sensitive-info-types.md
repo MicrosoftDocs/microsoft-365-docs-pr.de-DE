@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: Hier finden Sie eine Übersicht über die benutzerdefinierten vertraulichen Informationstypen für DLP (Verhinderung von Datenverlust), z.B. primäres Muster, Zeichenabstand und Konfidenzniveau.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 621c7be728f772e113ef5cd65d5b79a2526ec7c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6bd0d0d751a7ed03b645ae3d3fce83e3b7b04073
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035747"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327767"
 ---
 # <a name="custom-sensitive-information-types"></a>Benutzerdefinierten Typen vertraulicher Informationen
 
 ## <a name="overview"></a>Übersicht
 
-Microsoft 365 enthält viele einsatzbereite integrierte Typen vertraulicher Informationen, die Sie in Ihrer Organisation nutzen können, wie zum Beispiel zur [Verhinderung vor Datenverlust](data-loss-prevention-policies.md) (DLP) oder mit [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). Integrierte Typen vertraulicher Informationen helfen beim Erkennen und Schützen von Kreditkartennummern, Bankverbindungsnummern, Reisepassnummern und mehr, basierend auf Mustern, die durch einen regulären Ausdruck (RegEx) oder eine Funktion definiert sind. Weitere Informationen finden Sie unter [Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 enthält viele einsatzbereite integrierte Typen vertraulicher Informationen, die Sie in Ihrer Organisation nutzen können, wie zum Beispiel zur [Verhinderung vor Datenverlust](data-loss-prevention-policies.md) (DLP) oder mit [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). Integrierte Typen vertraulicher Informationen helfen beim Erkennen und Schützen von Kreditkartennummern, Bankverbindungsnummern, Reisepassnummern und mehr, basierend auf Mustern, die durch einen regulären Ausdruck (RegEx) oder eine Funktion definiert sind. Weitere Informationen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md).
 
 Was aber ist, wenn Sie eine andere Art Typ vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel für Mitarbeiter-IDs oder Projektnummern, die ein für Ihre Organisation spezifisches Format verwendet? Hierfür können Sie einen benutzerdefinierten Typ vertraulicher Informationen erstellen.
 

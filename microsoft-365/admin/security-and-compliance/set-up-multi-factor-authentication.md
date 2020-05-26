@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die mehrstufige Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: ca1a8bd47e2fa5bbd7b7aed396debefaad10ea5e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340774"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351715"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -104,7 +104,7 @@ Wenn Sie [grundlegende Richtlinien für bedingten Zugriff](https://docs.microsof
 
 ### <a name="conditional-access-policies"></a>Richtlinien für bedingten Zugriff
 
-Erstellen, konfigurieren oder aktivieren Sie die entsprechenden Richtlinien, die die Gruppe von Benutzern enthalten, die MFA für die Anmeldung benötigen.
+Erstellen, konfigurieren und aktivieren Sie die entsprechenden Richtlinien, die die Gruppe von Benutzern enthalten, die MFA für die Anmeldung benötigen.
 
 ### <a name="per-user-mfa-not-recommended"></a>MFA pro Benutzer (nicht empfohlen)
 

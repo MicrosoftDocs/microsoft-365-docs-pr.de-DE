@@ -1,5 +1,5 @@
 ---
-title: Anzeigen des administratorüberwachungsprotokolls in eigenständigen EoP
+title: Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: 3aedebc97ccd32c1641510017a276ddbe4770633
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208476"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351861"
 ---
-# <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des administratorüberwachungsprotokolls in eigenständigen EoP
+# <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie die Exchange-Verwaltungskonsole (EAC) oder die eigenständige EoP-PowerShell verwenden, um nach Einträgen im Administrator-Überwachungsprotokoll zu suchen und diese anzuzeigen.
 
@@ -32,7 +32,7 @@ Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grun
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit einer eigenständigen EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle nur anzeigen", die standardmäßig den Rollengruppen ComplianceManagement, Mitglied (globale Administratoren) und SecurityAdministrator zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -100,7 +100,7 @@ In diesem Beispiel wird eine Suche nach allen Überwachungsprotokolleinträgen a
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
 

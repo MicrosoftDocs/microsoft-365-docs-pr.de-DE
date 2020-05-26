@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208676"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327133"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -40,7 +40,7 @@ Wenn Sie bereit sind, die Daten Ihrer Organisation mit Vertraulichkeitsbezeichnu
     
     Ausführlichere Anleitungen zum Definieren einer Klassifizierungstaxonomie finden Sie im Whitepaper „Datenklassifizierung und Taxonomie von Vertraulichkeitsbezeichnungen“, das Sie über das [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper) herunterladen können.
 
-2. **Legen Sie fest, wozu jede einzelne Bezeichnung dient.** Konfigurieren Sie die Schutzeinstellungen, die mit den einzelnen Bezeichnungen verknüpft werden sollen. Für Inhalte mit geringer Vertraulichkeitsstufe (z.B. mit der Bezeichnung „Allgemein“) können Sie beispielsweise nur eine Kopf- oder Fußzeile benutzen, während für Inhalt mit höheren Vertraulichkeitsstufen (z.B. die Bezeichnung „Vertraulich“) ein Wasserzeichen, eine Verschlüsselung und Endpunktschutz angewendet werden sollten.
+2. **Legen Sie fest, wozu jede einzelne Bezeichnung dient.** Konfigurieren Sie die Schutzeinstellungen, die mit den einzelnen Bezeichnungen verknüpft werden sollen. Für Inhalte mit geringer Vertraulichkeitsstufe (z.B. mit der Bezeichnung „Allgemein“) können Sie beispielsweise nur eine Kopf- oder Fußzeile benutzen, während für Inhalt mit höheren Vertraulichkeitsstufen (z.B. die Bezeichnung „Vertraulich“) ein Wasserzeichen und eine Verschlüsselung angewendet werden sollten.
 
 3. **Veröffentlichen Sie die Bezeichnungen.** Nachdem Sie die Vertraulichkeitsbezeichnungen konfiguriert haben, können Sie sie mithilfe einer Bezeichnungsrichtlinie veröffentlichen. Legen Sie fest, welche Benutzer und Gruppen die Bezeichnungen haben sollen und welche Richtlinieneinstellungen verwendet werden. Eine einzelne Bezeichnung kann wiederverwendet werden, d. h. Sie definieren eine Bezeichnung nur einmal und können sie anschließend in mehrere Bezeichnungsrichtlinien einfügen, die unterschiedlichen Benutzern zugewiesen sind. So könnten Sie beispielsweise mit Vertraulichkeitsbezeichnungen beginnen, indem Sie nur wenigen Benutzern eine Kennzeichnungsrichtlinie zuweisen. Wenn Sie dann bereit sind, die Bezeichnungen für Ihre gesamte Organisation bereitzustellen, können Sie eine neue Bezeichnungsrichtlinie für Ihre Bezeichnungen erstellen und dieses Mal alle Benutzer angeben.
 
@@ -82,15 +82,15 @@ Die folgende Dokumentation hilft Ihnen bei der Bereitstellung Ihrer Vertraulichk
 |Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Dateien, die in Datenspeichern in der Cloud gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen|[Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und sensibler Daten, die in der Cloud gespeichert werde](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen in Power BI und Schützen von heruntergeladenen Berichten|[Datenschutz in Power BI (Vorschau)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|Sehen Sie, wie und wo Ihre Vertraulichkeitsbezeichnungen verwendet werden und ergründen Sie die bezeichneten Inhalte|[Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung (Vorschau)](data-classification-overview.md)|
+|Überwachen und Verstehen, wie Vertraulichkeitsbezeichnungen in meiner Organisation verwendet werden|[Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md) <br /><br /> [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentation für Endbenutzer zu Vertraulichkeitsbezeichnungen
 
 Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitungen und Anweisungen, die Sie für die von Ihnen ausgewählten Bezeichnungsnamen und -konfigurationen bereitstellen. Für grundlegende Anweisungen können Sie jedoch die folgenden Ressourcen verwenden:   
 
-- [Verwenden von Vertraulichkeitsbezeichnungen auf Ihre Dateien und E-Mails in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Bekannte Probleme mit Vertraulichkeitsbezeichnungen in Office](https://support.office.com/de-DE/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Verwenden von Vertraulichkeitsbezeichnungen auf Ihre Dateien und E-Mails in Office](https://support.microsoft.com/de-DE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Bekannte Probleme mit Vertraulichkeitsbezeichnungen in Office](https://support.microsoft.com/de-DE/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Bekannte Probleme beim automatischen Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

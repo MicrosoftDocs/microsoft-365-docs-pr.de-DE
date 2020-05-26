@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: 25fbabd4c7524702a985616797b31730b14a2d8f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b68eac3dde2f6802d5a5419f8f28b5df26e0a92
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636373"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351040"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -111,7 +111,7 @@ Hier ist ein weiteres Beispiel für das Erstellen einer Aufbewahrungsrichtlinie 
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Weitere Informationen finden Sie unter [New-UnifiedAuditLogRetentionPolicy-](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-unifiedauditlogretentionpolicy).
+Weitere Informationen finden Sie unter [New-UnifiedAuditLogRetentionPolicy-](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ## <a name="view-audit-log-retention-policies"></a>Anzeigen von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -124,13 +124,13 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 > [!NOTE]
 > Zurzeit gibt das Cmdlet **Get-UnifiedAuditLogRetentionPolicy** nicht die Standardrichtlinie für Überwachungsprotokolle für Ihre Organisation zurück.
 
-Weitere Informationen finden Sie unter [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/get-unifiedauditlogretentionpolicy).
+Weitere Informationen finden Sie unter [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy).
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Verwenden Sie das Cmdlet **Set-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine bestehende Aufbewahrungsrichtlinie für Überwachungsprotokolle zu ändern. Weitere Informationen finden Sie unter [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-unifiedauditlogretentionpolicy).
+- Verwenden Sie das Cmdlet **Set-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine bestehende Aufbewahrungsrichtlinie für Überwachungsprotokolle zu ändern. Weitere Informationen finden Sie unter [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy).
 
-- Verwenden Sie das Cmdlet **Remove-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie vollständig entfernt wurde. Weitere Informationen finden Sie unter [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
+- Verwenden Sie das Cmdlet **Remove-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie vollständig entfernt wurde. Weitere Informationen finden Sie unter [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy).
 
 - Wie bereits erwähnt, werden Überwachungseinträge für Vorgänge in Azure Active Directory, Exchange und SharePoint für ein Jahr aufbewahrt. In der folgenden Tabelle sind alle Datensatztypen (für jeden dieser Dienste) aufgelistet, die in der standardmäßigen Aufbewahrungsrichtlinie für Überwachungsprotokolle enthalten sind. Dies bedeutet, dass Überwachungsprotokolle für jeden Vorgang mit diesem Datensatztyp für ein Jahr aufbewahrt werden, es sei denn, eine benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle hat Vorrang in Hinblick auf einen bestimmten Datensatztyp, Vorgang oder Benutzer. Der Enumerationswert (der als Wert für die RecordType-Eigenschaft in einem Überwachungsdatensatz angezeigt wird) ist in Klammern angezeigt.
 

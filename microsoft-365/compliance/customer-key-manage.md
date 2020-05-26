@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Nachdem Sie den Kundenschlüssel eingerichtet haben, erfahren Sie, wie Sie ihn verwalten, indem Sie AKV-Schlüssel wiederherstellen und Berechtigungen und Daten Verschlüsselungsrichtlinien verwalten.
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635601"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352202"
 ---
 # <a name="manage-customer-key"></a>Verwalten des Kunden Schlüssels
 
@@ -50,7 +50,7 @@ Führen Sie das Cmdlet Get-AzKeyVault aus, um die schlüsseltresor-Berechtigunge
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-Beispiel:
+Zum Beispiel:
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -62,7 +62,7 @@ Um die Berechtigungen eines Administrators zu entfernen, führen Sie das Cmdlet 
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-Beispiel:
+Zum Beispiel:
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -88,7 +88,7 @@ Führen Sie die folgenden Schritte aus, um eine Liste aller DEPs anzuzeigen, die
   Get-DataEncryptionPolicy
   ```
 
-  Weitere Informationen zum Get-DataEncryptionPolicy-Cmdlet finden Sie unter [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+  Weitere Informationen zum Get-DataEncryptionPolicy-Cmdlet finden Sie unter [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Zuweisen einer Datenausführungsverhinderung vor der Migration eines Postfachs in die Cloud
 
@@ -104,7 +104,7 @@ Führen Sie das Cmdlet "MailUser" in Exchange Online PowerShell aus, um einem Po
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und *DataEncryptionPolicyIdParameter* ist die ID der DEP. Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
+  Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und *DataEncryptionPolicyIdParameter* ist die ID der DEP. Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Ermitteln der Datenverschlüsselungsrichtlinie (DEP), die einem Postfach zugewiesen ist
 
@@ -116,7 +116,7 @@ Verwenden Sie das Cmdlet „Get-MailboxStatistics“, um zu ermitteln, welche Da
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und DataEncryptionPolicyID gibt die GUID der Datenausführungsverhinderung zurück. Weitere Informationen zum Cmdlet „Get-MailboxStatistics“ finden Sie unter [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps).
+   Dabei gibt *GeneralMailboxOrMailUserIdParameter* ein Postfach an, und DataEncryptionPolicyID gibt die GUID der Datenausführungsverhinderung zurück. Weitere Informationen zum Cmdlet „Get-MailboxStatistics“ finden Sie unter [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps).
   
 2. Führen Sie das Cmdlet Get-DataEncryptionPolicy aus, um den Anzeigenamen der DEP zu ermitteln, der das Postfach zugewiesen ist.
   
@@ -142,13 +142,13 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 Die IsEncrypted-Eigenschaft meldet den Wert **True** (Richtig), wenn das Postfach verschlüsselt ist, und den Wert **False** (Falsch), wenn das Postfach nicht verschlüsselt ist.
 
-Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, initiieren Sie eine Post Fach Verlagerung. Verwenden Sie dazu das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs an. Beispiel:
+Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, initiieren Sie eine Post Fach Verlagerung. Verwenden Sie dazu das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs an. Zum Beispiel:
   
 ```powershell
 New-MoveRequest <alias>
 ```
 
-Weitere Informationen zu diesem Cmdlet finden Sie unter [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
+Weitere Informationen zu diesem Cmdlet finden Sie unter [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Überprüfen, ob die Verschlüsselung für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien abgeschlossen ist
 
@@ -201,7 +201,7 @@ Führen Sie die folgenden Schritte aus, um den Pfad der Datenbereinigung zu init
 
 2. Stellen Sie eine [Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), indem Sie ein Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Organisation verwenden.
 
-3. Führen Sie für jede DEP, die Postfächer enthält, die Sie löschen möchten, das Cmdlet " [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) " wie folgt aus.
+3. Führen Sie für jede DEP, die Postfächer enthält, die Sie löschen möchten, das Cmdlet " [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) " wie folgt aus.
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>

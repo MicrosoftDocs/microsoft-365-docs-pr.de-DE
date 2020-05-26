@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
-ms.openlocfilehash: 904513780ca472efb91cfcd914ad6c72d6c720f7
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213412"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352476"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
 
@@ -35,7 +35,7 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenst
 > [!NOTE]
 > Das Aktivieren einer oder mehrerer der ASF-Einstellungen ist ein aggressiver Ansatz für die Spamfilterung. Sie können Nachrichten, die von ASF gefiltert werden, nicht als falsch positive Ergebnisse melden. Nachrichten, die von ASF gefiltert wurden, können Sie nach folgenden Kriterien identifizieren: <ul><li>Regelmäßige Spamquarantäne Benachrichtigungen für Endbenutzer.</li><li>Das vorhanden sein gefilterter Nachrichten in Quarantäne.</li><li>Die spezifischen `X-CustomSpam:` X-Headerfelder, die Nachrichten hinzugefügt werden, wie in diesem Thema beschrieben.</li></ul>
 
-In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieben, die in den Anti-Spam-Richtlinien im Security & Compliance Center und in Exchange Online PowerShell oder eigenständigen EoP PowerShell ([New-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) und [sethostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)) zur Verfügung stehen. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
+In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieben, die in den Anti-Spam-Richtlinien im Security & Compliance Center und in Exchange Online PowerShell oder eigenständigen EoP PowerShell ([New-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) und [sethostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) zur Verfügung stehen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivieren, deaktivieren oder Testen von ASF-Einstellungen
 

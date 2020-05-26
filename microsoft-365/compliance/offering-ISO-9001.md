@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214303"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254308"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Standards für Qualitätsmanagementsysteme
 
@@ -31,23 +31,27 @@ ISO 9001:2015 ist ein internationaler Standard, in dem die Kriterien für ein Q
 
 Ein unabhängiges externes Auditunternehmen führte eine strenge Überprüfung von Microsoft Azure und verschiedenen anderen Microsoft-Onlinediensten auf die Einhaltung der Qualitätsmanagementgrundsätze der ISO 9001:2015 durch. Die Zertifizierung des externen Auditunternehmens ist verfügbar und stellt einen unabhängigen Nachweis dafür dar, dass Azure und die abgedeckten Microsoft-Onlinedienste die Anforderungen der ISO 9001:2015 erfüllen.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
-- Genomics
-- Graph
+- [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App-Sicherheit
+- Dynamics 365, Dynamics 365 Government und Dynamics 365 Deutschland
+- Microsoft Graph
 - Intune
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Healthcare Bot
 - Microsoft Managed Desktop
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
-- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
-- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
+- PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
+- Power BI Embedded
+- Microsoft Stream
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
-- [GJ19 Microsoft Azure ISO 9001-Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [GJ19 Microsoft Azure ISO 9001-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [Weitere Prüfberichte anzeigen](https://aka.ms/auditreports)
+- [Azure, Dynamics 365 und Onlinedienste: ISO9001-Zertifikat](https://aka.ms/azureiso9001cert)
+- [Azure, Dynamics 365 und Onlinedienste: ISO9001-Bewertungsbericht](https://aka.ms/azureiso9001report)
+- [Azure, Dynamics 365 und Online Services: ISO9001-Verfügbarkeitserklärung (Statement of Availability, SOA)](https://aka.ms/azureiso9001soa)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -61,7 +65,7 @@ Das [Vertrauensstellungsportal](https://docs.microsoft.com/microsoft-365/complia
 
 **Führt Microsoft jährliche Tests auf Infrastrukturfehler durch?**
 
-Ja. Die jährliche ISO 9001:2015-Bewertung umfasst die physische Rechenzentrumsinfrastruktur. Im [Zertifikat](https://www.microsoft.com/?ref=aka) finden Sie Einzelheiten zum Prüfumfang.
+Ja. Die jährliche ISO 9001:2015-Bewertung umfasst die physische Rechenzentrumsinfrastruktur. [Überprüfen Sie das Zertifikat](https://www.microsoft.com/?ref=aka), um Einzelheiten zum Bericht zu erhalten.
 
 **Wo sehe ich die Complianceinformationen von Microsoft für ISO 9001:2015?**
 

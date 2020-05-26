@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066448"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254188"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Cloud Security Alliance (CSA) STAR Selbsteinschätzung
 
@@ -68,7 +68,7 @@ Sie ermöglicht CSPs, ihre Compliance mit den von der CSA veröffentlichten bew�
 **Welche CSA STAR-Bewertungen haben Microsoft Business Cloud Services erhalten?**
 
 - **Stufe 1**: **CSA STAR-Selbstbewertung**: Azure, Dynamics 365 und Office 365. Die Selbstbewertung ist ein ergänzendes Angebot der Clouddienstanbieter, um ihre Sicherheitskontrollen zu dokumentieren und die Kunden beim Bewerten der Sicherheit des Diensts zu unterstützen.
-- **Stufe 2**: **CSA STAR-Zertifizierung**: Azure, Cloud App Security, Intune und Power BI. Für die STAR-Zertifizierung ist das Erreichen der ISO/IEC 27001-Zertifizierung und die Erfüllung der in der CCM angegebenen Kriterien erforderlich. Sie wird nach strenger Bewertung der Sicherheitskontrollen und Methoden eines Clouddienstanbieters durch Dritte erteilt.
+- **Stufe 2**: **CSA STAR-Zertifizierung**: Azure, Microsoft Cloud App Security, Intune und Power BI. Für die STAR-Zertifizierung ist das Erreichen der ISO/IEC 27001-Zertifizierung und die Erfüllung der in der CCM angegebenen Kriterien erforderlich. Sie wird nach strenger Bewertung der Sicherheitskontrollen und Methoden eines Clouddienstanbieters durch Dritte erteilt.
 - **Stufe 2**: **CSA STAR-Nachweis**: Azure und Intune. CSA und AICPA haben gemeinsam Richtlinien für CPAs aufgestellt, die diese für SOC 2-Bestrebungen unter Verwendung der Kriterien des AICPA (Trust Service Principles, AT 101) und der CSA CCM nutzen können. Der STAR-Nachweis beruht auf diesen Richtlinien und wird aufgrund strenger unabhängiger Bewertungen der Cloudanbieter ausgestellt.
 
 ## <a name="resources"></a>Ressourcen

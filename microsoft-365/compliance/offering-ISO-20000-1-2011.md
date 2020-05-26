@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065920"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254198"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 – IT Service Management
 
@@ -35,26 +35,28 @@ Die ISO 20000-1:2011-Zertifizierung ist ein logischer Schritt für Microsoft A
   
 Ein unabhängiges, externes Auditunternehmen führt strenge Prüfungen von Microsoft Azure und verschiedenen Microsoft-Onlinediensten durch und überwacht damit, dass die in ISO 20000-1:2011 festgelegten Anforderungen eingehalten werden. Das verfügbare ISO 20000-1-Zertifikat zeigt, dass für Azure und die abgedeckten Microsoft-Onlinedienste die richtigen IT Service Management-Verfahren implementiert worden sind, um effiziente und zuverlässige IT-Dienste zur Verfügung zu stellen, die regelmäßig kontrolliert, überprüft und verbessert werden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
-- [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud-App-Sicherheit
+- [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App-Sicherheit
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - Office 365, betrieben von 21Vianet
+- Microsoft PowerApps
+- Power Automate (ehemals Microsoft Flow)
 - Power BI
+- Power BI Embedded
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
-2017 ISO 20000-1 Dokumentation für Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics und Microsoft Datacenter
+ISO 20000-1-Dokumentation wie folgt:
 
-- [Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [Erklärung zur Anwendbarkeit](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure, Dynamics 365 und Onlinedienste: ISO20000-1-Zertifikat](https://aka.ms/azureiso200001cert)
+- [Azure, Dynamics 365 und Onlinedienste: ISO20000-1-Bewertungsbericht](https://aka.ms/azureiso200001report)
+- [Azure, Dynamics 365 und Online Services: ISO20000-1-Verfügbarkeitserklärung (Statement of Availability, SOA)](https://aka.ms/azureiso200001soa)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -77,5 +79,5 @@ Ja. Wenn Ihr Unternehmen eine Zertifizierung für Installationen anstrebt, die i
 ## <a name="resources"></a>Ressourcen
 
 - [ISO 20000-1:2011 – Dienstverwaltung](https://www.iso.org/standard/51986.html) (Voraussetzungen für den Kauf)
-- [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services-Nutzungsbedingungen](https://aka.ms/Online-Services-Terms)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

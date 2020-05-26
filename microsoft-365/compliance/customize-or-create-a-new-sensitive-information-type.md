@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Informationen zum Ändern oder Erstellen eines neuen vertraulichen Informationstyps in Office 365 für die Datenschutz-Grundverordnung (DSGVO).
-ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 70ce61f582cbc952811d01cccc7b958bf1b52dbb
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166066"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224632"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Anpassen oder Erstellen eines neuen vertraulichen Informationstyps
 
@@ -165,7 +165,7 @@ KQL und Schlüsselwörter können nicht zusammen verwendet werden. Verwenden Sie
 
 Hinweise:
 
--   Sie können NEAR und ONEAR für Näherungssuchen verwenden.
+-   Sie können NEAR für Näherungssuchen verwenden.
 
 -   Leider unterstützt KQL keine Abfragen mit der Regex-Klasse (Beispiel: IdRef="Regex\_email\_address")
 

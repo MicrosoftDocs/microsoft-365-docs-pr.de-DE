@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Hier erfahren Sie, wie Sie ein Postfach auf das Beweissicherungsverfahren setzen und während einer Untersuchung alle Postfachinhalte beibehalten.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035817"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351050"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
@@ -35,7 +35,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     
@@ -44,7 +44,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
 
 Hier finden Sie die Schritte zum Aufbewahren eines Postfachs für das Beweissicherungsverfahren mithilfe der Exchange-Verwaltungskonsole.
 
-1. Wechseln Sie [https://outlook.office.com/ecp](https://outlook.office.com/ecp) zu, und melden Sie sich mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie zu, [https://outlook.office.com/ecp](https://outlook.office.com/ecp) und melden Sie sich mit ihrem globalen Administratorkonto an.
 
 2. Klicken Sie im linken Navigationsbereich auf **Empfänger > Postfächer** .
 
@@ -78,7 +78,7 @@ Der vorherige Befehl behält Elemente auf unbestimmte Zeit bei, da die Aufbewahr
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Weitere Informationen finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Weitere Informationen finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>Wie funktioniert das Beweissicherungsverfahren?
 

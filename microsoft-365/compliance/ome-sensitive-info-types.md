@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Hier erfahren Sie, wie Sie mit Office 365 Nachrichtenverschlüsselung eine Richtlinie für vertrauliche Informationstypen für Ihre Organisation erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: da459ab5e92592f86bc32d7dd9d648de24b9a3ed
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165956"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352068"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Erstellen einer Richtlinie für vertrauliche Informationstypen für Ihre Organisation mithilfe der Nachrichtenverschlüsselung
 
@@ -31,7 +31,7 @@ Sie können entweder Exchange-Nachrichtenfluss Regeln oder DLP (Data Loss Preven
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>So erstellen Sie die Richtlinie mithilfe von Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole
 
-Melden Sie sich bei der Exchange-Verwaltungskonsole an, und wechseln Sie zu **Nachrichtenfluss** > **Regeln**. Erstellen Sie auf der Seite Regeln eine Regel, die Office 365 Nachrichtenverschlüsselung zutrifft. Sie können eine Regel basierend auf Bedingungen wie dem vorhanden sein bestimmter Schlüsselwörter oder vertraulicher Informationstypen in der Nachricht oder Anlage erstellen.
+Melden Sie sich bei der Exchange-Verwaltungskonsole an, und wechseln Sie zu **Nachrichtenfluss**  >  **Regeln**. Erstellen Sie auf der Seite Regeln eine Regel, die Office 365 Nachrichtenverschlüsselung zutrifft. Sie können eine Regel basierend auf Bedingungen wie dem vorhanden sein bestimmter Schlüsselwörter oder vertraulicher Informationstypen in der Nachricht oder Anlage erstellen.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>So erstellen Sie die Richtlinie mithilfe von Nachrichtenfluss Regeln in PowerShell
 
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-Weitere Informationen finden Sie unter [Sets-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps) und [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule?view=exchange-ps).
+Weitere Informationen finden Sie unter [Sets-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration?view=exchange-ps) und [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule?view=exchange-ps).
 
 ## <a name="how-recipients-access-attachments"></a>Zugriff auf Anlagen durch Empfänger
 
@@ -77,4 +77,4 @@ Microsoft 365 überwacht diese Aktivität und stellt Sie Administratoren zur Ver
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>So deaktivieren oder ändern Sie die Richtlinie für vertrauliche Informationstypen
 
-Nachdem Sie die Exchange-Nachrichtenfluss Regel erstellt haben, können Sie [die Regel deaktivieren oder bearbeiten](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) , indem Sie im Exchange Admin Center (EAC) zu **Nachrichtenfluss** > **Regeln** wechseln und die Regel "*ausgehende vertrauliche e-Mails verschlüsseln (Out-of-Box-Regel)*" deaktivieren.
+Nachdem Sie die Exchange-Nachrichtenfluss Regel erstellt haben, können Sie [die Regel deaktivieren oder bearbeiten](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) , indem Sie im Exchange Admin Center (EAC) zu **Nachrichtenfluss**  >  **Regeln** wechseln und die Regel "*ausgehende vertrauliche e-Mails verschlüsseln (Out-of-Box-Regel)*" deaktivieren.

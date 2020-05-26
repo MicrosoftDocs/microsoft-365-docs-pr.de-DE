@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/08/2019
+ms.date: 05/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Durchlaufen Sie die vereinfachten Phasen der Foundation-Infrastruktur für Microsoft 365 Enterprise für Nicht-Unternehmen.
-ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: caca093463e4a180f50c880a77fa18399103f069
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011899"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268385"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Microsoft 365 Enterprise Foundation-Infrastruktur für Nicht-Unternehmen
 
@@ -438,4 +438,4 @@ Nach dem Onboarding sollte jeder Mitarbeiter Folgendes haben:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Bereitstellen Ihrer [Workloads und Szenarien](deploy-workloads.md), um von den Features und der Konfiguration Ihrer Microsoft 365 Enterprise Foundation-Infrastruktur zu profitieren.
+Bereitstellen Ihrer [Workloads](deploy-workloads.md), um von den Features und der Konfiguration Ihrer Microsoft 365 Enterprise Foundation-Infrastruktur zu profitieren.

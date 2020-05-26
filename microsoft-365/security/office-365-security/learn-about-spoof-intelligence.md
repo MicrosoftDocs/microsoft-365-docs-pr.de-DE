@@ -19,18 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu Spoof Intelligence in Exchange Online Protection (EoP) erhalten, in der Sie bestimmte gefälschte Absender zulassen oder blockieren können.
-ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347843"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351939"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurieren von Spoof Intelligence in EoP
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden eingehende e-Mail-Nachrichten automatisch ab Oktober 2018 vor Spoofing durch EoP geschützt. EoP verwendet Spoof Intelligence als Teil der gesamten Verteidigung ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter [Anti-Spoofing-Schutz in EoP](anti-spoofing-protection.md).
 
-Wenn ein Absender eine e-Mail-Adresse spooft, scheinen Sie ein Benutzer in einer ihrer Organisationsdomänen oder ein Benutzer in einer externen Domäne zu sein, der e-Mails an Ihre Organisation sendet. Angreifer, die Absender zum Senden von Spam-oder Phishing-e-Mails Spoofing, müssen blockiert werden. Es gibt jedoch Szenarien, in denen legitime Absender Spoofing durchsetzen. Beispiel:
+Wenn ein Absender eine e-Mail-Adresse spooft, scheinen Sie ein Benutzer in einer ihrer Organisationsdomänen oder ein Benutzer in einer externen Domäne zu sein, der e-Mails an Ihre Organisation sendet. Angreifer, die Absender zum Senden von Spam-oder Phishing-e-Mails Spoofing, müssen blockiert werden. Es gibt jedoch Szenarien, in denen legitime Absender Spoofing durchsetzen. Zum Beispiel:
 
 - Legitime Szenarien für Spoofing interner Domänen:
 
@@ -48,7 +48,7 @@ Wenn ein Absender eine e-Mail-Adresse spooft, scheinen Sie ein Benutzer in einer
 
   - Ein externes Unternehmen sendet e-Mails im Auftrag eines anderen Unternehmens (beispielsweiseeines automatisierten Berichts oder eines Software-as-a-Service-Unternehmens).
 
-Spoof Intelligence und speziell die standardmäßige Spoof Intelligence-Richtlinie gewährleisten, dass die gefälschten e-Mail-Nachrichten, die von legitimen Absendern gesendet werden, nicht in Spamfiltern in Microsoft 365 oder externen e-Mail-Systemen erfasst werden, während Ihre Benutzer vor Spam-oder Phishing-Angriffen geschützt werden.
+Spoof Intelligence und speziell die standardmäßige Spoof Intelligence-Richtlinie gewährleisten, dass die gefälschten e-Mail-Nachrichten, die von legitimen Absendern gesendet werden, nicht in EoP-Spamfiltern oder externen e-Mail-Systemen erfasst werden, während Ihre Benutzer vor Spam-oder Phishing-Angriffen geschützt werden.
 
 Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EoP PowerShell für Organisationen ohne Exchange Online Postfächer) verwalten.
 
@@ -60,7 +60,7 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Um die Spoof Intelligence-Richtlinie zu ändern oder Spoof Intelligence zu aktivieren oder zu deaktivieren, müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Für den schreibgeschützten Zugriff auf die Spoof Intelligence-Richtlinie müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Unsere empfohlenen Einstellungen für Spoof Intelligence [EoP Standardeinstellungen für AntiPhishing-Richtlinien](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
+- Unsere empfohlenen Einstellungen für Spoof Intelligence finden Sie unter [EoP default Anti-Phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Verwenden des Security & Compliance Center zum Verwalten von gefälschten Absendern
 
@@ -140,7 +140,7 @@ In diesem Beispiel werden detaillierte Informationen zu allen Absendern zurückg
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy).
 
 Führen Sie die folgenden Schritte aus, um zugelassene und blockierte Absender in Spoof Intelligence zu konfigurieren:
 
@@ -162,7 +162,7 @@ Führen Sie die folgenden Schritte aus, um zugelassene und blockierte Absender i
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy).
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Konfigurieren von Spoof Intelligence mithilfe des Security & Compliance Center
 
@@ -195,28 +195,16 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Spoof I
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Führen Sie in Microsoft 365-Organisationen mit Exchange Online Postfächer einen der folgenden Schritte aus:
+- Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Phishing** oder **ATP Anti-Phishing**, und führen Sie einen der folgenden Schritte aus:  
 
-  - Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Anti-Phishing** \> Klicken Sie auf **Standardrichtlinie** , und zeigen Sie die Details im Flyout an.
+  - Wählen Sie eine Richtlinie aus der Liste aus. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.
+  - Klicken Sie auf **Standardrichtlinie**. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.
 
-  - Führen Sie in Exchange Online PowerShell den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell \< Name \> durch Office365 AntiPhishing default oder den Namen einer benutzerdefinierten Richtlinie, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
 
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
-    ```
-
-- Führen Sie in Microsoft 365 ATP-Organisationen einen der folgenden Schritte aus:
-
-  - Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **ATP Anti-Phishing** , und führen Sie einen der folgenden Schritte aus:
-
-    - Wählen Sie eine Richtlinie aus der Liste aus. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.
-    - Klicken Sie auf **Standardrichtlinie**. Überprüfen Sie im Flyout, das angezeigt wird, die Werte im **Spoof** -Abschnitt.
-
-  - Ersetzen Sie in Exchange Online PowerShell \< Name \> durch Office365 AntiPhishing default oder den Namen einer benutzerdefinierten ATP-Anti-Phishing-Richtlinie, und führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
-
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "<Name>"
-    ```
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Andere Methoden zum Verwalten von Spoofing und Phishing
 

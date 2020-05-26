@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: 6405dac51c34163f8eadb359d9c29f1aa81a1b82
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551459"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352252"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -43,7 +43,7 @@ Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den 
 
 So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDiscovery-Fall zugeordnet ist:
   
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
+1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
 
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
 
@@ -63,7 +63,7 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
 
    b. **Website Standorte** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint-und OneDrive-Konten für die Aufbewahrung anzugeben. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, Office 365 Gruppe oder eine Gruppe jammern hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
   
-   c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![-Steuer](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Element der Umschaltfläche in die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
+   c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![ -Steuerelement der Umschaltfläche in ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
 
 8. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
 
@@ -173,7 +173,7 @@ Beachten Sie beim Platzieren von Teams und Office 365 Gruppen in einer eDiscover
 Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehmen Websites in Ihrer Organisation, damit Sie Sie zu einem Haltestatus oder einer Suche hinzufügen können, die einem eDiscovery-Fall zugeordnet ist, finden Sie unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). Das Skript in diesem Artikel erstellt eine Textdatei, die eine Liste aller OneDrive-Websites in Ihrer Organisation enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Achten Sie darauf, die URL für die "MeineWebsite"-Domäne Ihrer Organisation an jede OneDrive-Website anzuhängen, die Sie durchsuchen möchten. Dies ist die Domäne, die Ihr gesamtes OneDrive enthält, z. B. `https://contoso-my.sharepoint.com`. Hier ein Beispiel für die URL der OneDrive-Website eines Benutzers: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`UPN) (beispielsweise). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines eDiscovery-Speichers ist, wenn alt und sein UPN geändert wurden, müssen Sie den Haltestatus aktualisieren, und Sie müssen den Haltestatus aktualisieren und die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+> Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, UPN) (beispielsweise `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines eDiscovery-Speichers ist, wenn alt und sein UPN geändert wurden, müssen Sie den Haltestatus aktualisieren, und Sie müssen den Haltestatus aktualisieren und die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
 
 ## <a name="ediscovery-hold-limits"></a>eDiscovery-Aufbewahrungs Grenzwerte
 
@@ -189,4 +189,4 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case-Hol
   |||
 
    > [!NOTE]
-   > <sup>1</sup> Wenn Sie eine Liste mit mehr als 1.000 Fällen, Aufbewahrungen, Suchvorgängen oder Exporten anzeigen möchten, können Sie das entsprechende PowerShell-Cmdlet Office 365 Security & Compliance verwenden:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+   > <sup>1</sup> Wenn Sie eine Liste mit mehr als 1.000 Fällen, Aufbewahrungen, Suchvorgängen oder Exporten anzeigen möchten, können Sie das entsprechende PowerShell-Cmdlet Office 365 Security & Compliance verwenden:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 358b87fca010aa5e910337b0942df0b33ee38951
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 50411e04ac04dc0bf00e7b743f3f30d25b9fa12e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232722"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352212"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -75,7 +75,7 @@ Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in A
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungseinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
 Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und QuickInfo in der jeweiligen lokalen Sprache sehen. Eine Beispielkonfiguration finden Sie im folgenden Abschnitt. 
 
@@ -151,7 +151,7 @@ Normalerweise werden die Bezeichnungen innerhalb weniger Stunden in den entsprec
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
 Mit diesem Cmdlet können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) für den Azure Information Protection-Client für einheitliche Bezeichnungen festlegen. Diese erweiterten Einstellungen umfassen das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 

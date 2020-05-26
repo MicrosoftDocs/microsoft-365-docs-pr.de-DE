@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365 Enterprise implementiert.
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625350"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268422"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise für die Contoso Corporation
 
@@ -68,14 +68,9 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
   Contoso verwendet das volle Spektrum der Microsoft 365 Enterprise-Sicherheitsfeatures für Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung.
 
-- [Team für ein streng geheimes Projekt](contoso-team-for-top-secret-project.md)
+- [Team für ein streng geheimes Projekt](../solutions/contoso-team-for-top-secret-project.md)
 
-  Um eine sichere Umgebung zur Zusammenarbeit für ein streng geheimes Projekt zu erstellen, hat Contoso ein Team für stark regulierte Daten verwendet.
-
-- [SharePoint Online-Website für streng vertrauliche digitale Objekte](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  Um das geistige Eigentum zu schützen und die Zusammenarbeit der Forschungsteams einfacher zu gestalten, verwendete Contoso eine SharePoint Online-Website für Daten mit strengen Sicherheitsbestimmungen.
-
+  Um eine sichere Umgebung zur Zusammenarbeit für ein streng geheimes Projekt zu erstellen, hat Contoso ein Team mit Sicherheitsisolation verwendet.
 
 ## <a name="next-step"></a>Nächster Schritt
 

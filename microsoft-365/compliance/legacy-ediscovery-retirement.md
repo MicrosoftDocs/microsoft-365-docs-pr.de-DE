@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943344"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351916"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
@@ -33,18 +33,18 @@ Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 3
 
 - Die Exchange Online PowerShell-Cmdlets, die Compliance-eDiscovery und in-Place-Speicher unterstützen (diese Cmdlets werden gemeinsam als **-MailboxSearch-* Cmdlets bezeichnet). Dies umfasst die folgenden Cmdlets:
 
-  - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
+  - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
-  - [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
+  - [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/start-mailboxsearch)
 
-  - [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch)
+  - [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/stop-mailboxsearch)
 
-  - [Gruppe-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
+  - [Gruppe-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > Die Cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch) und [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-mailboxsearch) sind verfügbar, nachdem die anderen Cmdlets * * * *-MailboxSearch * * * zurückgezogen wurden, damit Sie Sie beim Übergang zu anderen eDiscovery-und Hold-Tools unterstützen können. Nach einem bestimmten Datum (zitiert unten) wird der Microsoft-Support diese beiden Cmdlets jedoch nicht mehr unterstützen.
+   > Die Cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) und [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) sind verfügbar, nachdem die anderen Cmdlets * * * *-MailboxSearch * * * zurückgezogen wurden, damit Sie Sie beim Übergang zu anderen eDiscovery-und Hold-Tools unterstützen können. Nach einem bestimmten Datum (zitiert unten) wird der Microsoft-Support diese beiden Cmdlets jedoch nicht mehr unterstützen.
 
-- Das Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps) in Exchange Online PowerShell.
+- Das Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps) in Exchange Online PowerShell.
 
 - Die folgenden Vorgänge in der Exchange Webdienste-API:
 
@@ -146,7 +146,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
   </tr>
 <tr class="odd">
 <td>Wiederherstellen von Elementen aus dem Ordner "Wiederherstellbare Elemente"</td>
-  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>Sie können endgültig gelöschte Elemente (auch als <i>vorläufig gelöschte</i> Elemente bezeichnet) in Postfächern wiederherstellen, solange der Aufbewahrungszeitraum für gelöschte Elemente für ein Element nicht abgelaufen ist. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Ordner "refundable Items" in Exchange Online</a>.</td>
 </tr>
 </tbody>
@@ -168,9 +168,9 @@ Es ist möglich, in-Place-eDiscovery-suchen und-Aufbewahrungen mithilfe von Powe
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch-Cmdlets
 
-Gemäß dem ursprünglichen Hinweis, der am 1. Juli 2017 in der Exchange-Verwaltungskonsole angekündigt wurde, werden die in-situ-eDiscovery-&-Funktionalität und die entsprechenden ** \*-MailboxSearch-** Cmdlets zurückgezogen. Mit diesen Cmdlets können Benutzer Postfachinhalte für rechtliche, regulatorische und öffentliche Anforderungen durchsuchen, speichern und exportieren.
+Gemäß dem ursprünglichen Hinweis, der am 1. Juli 2017 in der Exchange-Verwaltungskonsole angekündigt wurde, werden die in-situ-eDiscovery-&-Funktionalität und die entsprechenden ** \* -MailboxSearch-** Cmdlets zurückgezogen. Mit diesen Cmdlets können Benutzer Postfachinhalte für rechtliche, regulatorische und öffentliche Anforderungen durchsuchen, speichern und exportieren.
 
-Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) und Office 365 Security & Compliance Center PowerShell mit verbesserter Leistung und Skalierbarkeit verfügbar sind, sollten Sie diese verbesserten Cmdlets verwenden. Zu diesen Cmdlets gehören [<span class="underline"> \*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline"> \*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline"> \*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)und [<span class="underline"> \*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
+Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) und Office 365 Security & Compliance Center PowerShell mit verbesserter Leistung und Skalierbarkeit verfügbar sind, sollten Sie diese verbesserten Cmdlets verwenden. Zu diesen Cmdlets gehören [<span class="underline"> \* -ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)und [<span class="underline"> \* -ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
 
@@ -203,9 +203,9 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tbody>
 <tr class="odd">
 <td>Suchen und exportieren</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
 <td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Exportieren von Inhalten zu unterstützen. Sie können eine neue Suche erstellen und die geschätzte Suche anzeigen, indem Sie die Cmdlets <strong>New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> verwenden. Anschließend können Sie das Cmdlet <strong>New-ComplianceSearchAction</strong> verwenden, um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p>
 <p>
@@ -213,9 +213,9 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </tr>
 <tr class="even">
 <td>Speichern von Inhalten in einem Postfach</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
 <td><p>Haltestatus im Microsoft 365 Compliance Center müssen einem ComplianceCase zugeordnet sein. Erstellen Sie zuerst den Fall Compliance, und erstellen Sie dann eine CaseHoldPolicy und eine CaseHoldRule.</p>
 <p><strong>Hinweis:</strong> Durch das Erstellen einer CaseHoldPolicy ohne Erstellungs-CaseHoldRule wird der Haltestatus so lange funktionsfähig gerendert, bis das CaseHoldRule erstellt und dem CaseHoldPolicy zugeordnet ist. Weitere Informationen finden Sie in der Cmdlet-Dokumentation.</p></td>
@@ -239,7 +239,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 
 **Wir verwenden die Kopie-Suche zum Exportieren von e-Mail-Nachrichten oder Chatnachrichten für Zwecke anderer eDiscovery und rechtlicher Untersuchungen. Welche weiteren Optionen haben wir, nachdem diese Cmdlets ausgemustert wurden?**
 
-Die [<span class="underline">Microsoft Graph-APIs</span>](https://developer.microsoft.com/en-us/graph) bieten eine Reihe von Methoden zum Extrahieren von Daten zur Analyse und anderen Zwecken, die weitaus widerstandsfähiger und skalierbarer als die Verwendung der ** \*-MailboxSearch-** Cmdlets sind.
+Die [<span class="underline">Microsoft Graph-APIs</span>](https://developer.microsoft.com/en-us/graph) bieten eine Reihe von Methoden zum Extrahieren von Daten zur Analyse und anderen Zwecken, die weitaus widerstandsfähiger und skalierbarer als die Verwendung der ** \* -MailboxSearch-** Cmdlets sind.
 
 **Wie kann ich meine suchen und Haltestatus an das Microsoft 365 Compliance Center migrieren?**
 
@@ -282,16 +282,16 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <tbody>
 <tr class="odd">
 <td>Durchsuchen eines Postfachs</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
 <td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Exportieren von Inhalten zu unterstützen. Sie können eine neue Suche erstellen und die geschätzte Suche anzeigen, indem Sie die Cmdlets <strong>New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> verwenden. Anschließend können Sie den Befehl <strong>New-ComplianceSearchAction-Export</strong> verwenden, um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>Nachrichten aus einem Postfach löschen</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
 <td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen, und dann können Sie den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge-purgetype</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
 </td>
@@ -313,7 +313,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 
 ## <a name="exchange-web-services-api-operations"></a>Exchange Webdienste-API-Vorgänge
 
-Diese Vorgänge in der Exchange Webdienste-API werden von der Funktion in-Place-eDiscovery-& in der Exchange-Verwaltungskonsole und den entsprechenden ** \*-MailboxSearch-** Cmdlets in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Ausscheidens der anderen vorversions-eDiscovery-Tools in den Ruhestand gehen.
+Diese Vorgänge in der Exchange Webdienste-API werden von der Funktion in-Place-eDiscovery-& in der Exchange-Verwaltungskonsole und den entsprechenden ** \* -MailboxSearch-** Cmdlets in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Ausscheidens der anderen vorversions-eDiscovery-Tools in den Ruhestand gehen.
 
 ### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
 

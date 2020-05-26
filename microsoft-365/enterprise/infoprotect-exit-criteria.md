@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informieren Sie sich über die Kriterien für Information Protection-basierte Dienste und -Infrastruktur, um sicherzustellen, dass Ihre Konfiguration die Anforderungen von Microsoft 365Enterprise erfüllt.
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631633"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268221"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Beendigungskriterien für die Information Protection-Infrastruktur
 
@@ -116,4 +116,4 @@ Gegebenenfalls hilft Ihnen [Schritt 7](infoprotect-configure-privileged-access-m
 
 Ihre Informationsschutzinfrastruktur für Microsoft 365 Enterprise verwendet definierte Sicherheitsstufen, erhöhte Sicherheit für Office 365, Klassifizierung mithilfe von Datentypen und Bezeichnungen für vertrauliche Daten, Windows Information Protection, Verhinderung von Datenverlust, E-Mail-Verschlüsselung und Privileged Access Management.
 
-Wenn Sie die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise befolgen, Sie können jetzt für alle Ihre [Arbeitslasten und Szenarien](deploy-workloads.md) die Vorteile der Funktionen und Konfiguration der Foundation-Infrastruktur nutzen.
+Wenn Sie die Ende-zu-Ende-Bereitstellung von Microsoft 365 Enterprise befolgen, Sie können jetzt für alle Ihre [Workloads](deploy-workloads.md) die Vorteile der Funktionen und Konfiguration der Foundation-Infrastruktur nutzen.

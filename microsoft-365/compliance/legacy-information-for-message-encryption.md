@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Organisation noch nicht zu den neuen OM-Funktionen verschoben haben, Sie jedoch bereits OM bereitgestellt haben, gelten die Informationen in diesem Artikel für Ihre Organisation. Microsoft empfiehlt, einen Plan für die Umstellung auf die neuen OM-Funktionen zu erstellen, sobald dies für Ihre Organisation sinnvoll ist. Anweisungen finden Sie unter Einrichten von neuen Office 365 Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren. Wenn Sie mehr darüber erfahren möchten, wie die neuen Funktionen als erstes funktionieren, lesen Sie Office 365 Nachrichtenverschlüsselung. Der Rest dieses Artikels bezieht sich auf das OM-Verhalten vor der Veröffentlichung der neuen OM-Funktionen.
-ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00b42dfceaeac5b7e9e28263c56f9f7490644a3b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632684"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351906"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -108,7 +108,7 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
   
 1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)beschrieben.
 
-2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: " [festlegen-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)". Wenn Sie die Marken Anpassungen ihrer Organisation aus den DisclaimerText-, EmailText-und Portal Text-Werten entfernen möchten, legen Sie den Wert auf eine `""`leere Zeichenfolge fest. Legen Sie für alle Bild Werte wie Logo den Wert auf `"$null"`fest.
+2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: " [festlegen-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)". Wenn Sie die Marken Anpassungen ihrer Organisation aus den DisclaimerText-, EmailText-und Portal Text-Werten entfernen möchten, legen Sie den Wert auf eine leere Zeichenfolge fest `""` . Legen Sie für alle Bild Werte wie Logo den Wert auf fest `"$null"` .
 
    **Anpassungsoptionen für Verschlüsselung**
 
@@ -220,3 +220,9 @@ Es gibt keinen Bericht, der anzeigt, ob eine verschlüsselte Nachricht angezeigt
  **F. Wofür verwendet Microsoft die von mir über das OME-Portal und die OME-Viewer-App eingegebenen Informationen?**
   
 Die [Datenschutzerklärung für das Office 365 Messaging-Verschlüsselungs Portal](https://privacy.microsoft.com/privacystatement) enthält detaillierte Informationen dazu, was Microsoft mit ihren privaten Informationen macht und was nicht.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Was muss ich tun, wenn ich den einmaligen Passcode nicht erhalte, nachdem ich ihn angefordert habe?
+
+Überprüfen Sie zuerst den Junk-oder Spam-Ordner in Ihrem e-Mail-Client. DKIM-und DMARC-Einstellungen für Ihre Organisation können dazu führen, dass diese e-Mails als Spam gefiltert werden.
+
+Überprüfen Sie als nächstes die Quarantäne im Security & Compliance Center. Häufig werden Nachrichten, die einen einmaligen Passcode enthalten, insbesondere die ersten, die in Ihrer Organisation empfangen werden, in Quarantäne gelandet.

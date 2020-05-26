@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347795"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352510"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -77,7 +77,7 @@ In diesem Beispiel wird die Junk-E-Regel in den Postfächern aller Benutzer in d
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
 > 
@@ -140,7 +140,7 @@ In diesem Beispiel wird die Domäne „contoso.com" aus der Liste blockierter Ab
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
 > 

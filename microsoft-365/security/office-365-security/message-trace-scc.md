@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44212986"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352498"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -27,7 +27,7 @@ Die Nachrichtenablaufverfolgung im Security & Compliance Center folgt e-Mail-Nac
 Die Nachrichtenablaufverfolgung im Security & Compliance Center verbessert sich auf die ursprüngliche Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen zu den Ereignissen in Bezug auf Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
-> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder in der eigenständigen EoP-PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+> • Um eine Nachrichtenablaufverfolgung durchführen zu können, müssen Sie Mitglied der Rollengruppen "Organisationsverwaltung", "Compliance Management" oder "Helpdesk" sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [auswählen des Berichtstyps](#choose-report-type) .) Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder in der eigenständigen EoP-PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 

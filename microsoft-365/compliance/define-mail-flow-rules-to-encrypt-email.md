@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mit Office 365 Nachrichtenverschlüsselung erlernen.
-ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 869448ff1f5161fc71d332c1b5956015dca50fa2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943122"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351792"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail Nachrichten
 
@@ -46,9 +46,9 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise Verschlüsseln von e-Mails für DrToniRamos@hotmail.com.
 
@@ -60,7 +60,7 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 
       - Um einen vorhandenen Namen auszuwählen, wählen Sie ihn in der Liste aus, und klicken Sie dann auf **OK**.
 
-      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie \> dann **Namen überprüfen** **OK**aus.
+      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie dann **Namen überprüfen** \> **OK**aus.
 
 7. Wenn Sie weitere Bedingungen hinzufügen möchten, wählen Sie **Weitere Optionen** aus, und wählen Sie dann **Bedingung hinzufügen** aus und wählen Sie aus der Liste aus.
 
@@ -78,11 +78,11 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
 
 4. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
 
-5. Wählen Sie in der Liste der Nachrichtenfluss Regeln die Regel aus, die Sie ändern möchten, um die neuen OM-Funktionen **Edit** ![zu verwenden,](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)und klicken Sie dann auf Bearbeitungssymbol bearbeiten.
+5. Wählen Sie in der Liste der Nachrichtenfluss Regeln die Regel aus, die Sie ändern möchten, um die neuen OM-Funktionen zu verwenden, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
 
 6. Um die Verschlüsselung mithilfe der neuen OM-Funktionen zu aktivieren, wählen Sie die Option **Nachrichtensicherheit ändern** **aus,** und wählen Sie dann **Office 365 Nachrichtenverschlüsselung und Rechte Schutz anwenden**aus. Wählen Sie in der Liste eine RMS-Vorlage aus, klicken Sie auf **Speichern** , und wählen Sie dann **OK**aus.
 
@@ -90,7 +90,7 @@ Sie können e-Mail-Flussregeln für die Auslösung der Nachrichtenverschlüsselu
 
    Sie können die Option **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
 
-7. Entfernen Sie in der Liste **ausführen die folgenden** Aktionen, die zum **Ändern der Nachrichtensicherheit** \> zugewiesen sind, **die frühere Version von OM anwenden**.
+7. Entfernen Sie in der Liste **ausführen die folgenden** Aktionen, die zum **Ändern der Nachrichtensicherheit** zugewiesen sind, \> **die frühere Version von OM anwenden**.
 
 8. Wählen Sie **Speichern** aus.
 
@@ -104,17 +104,17 @@ Mithilfe der Exchange-Verwaltungskonsole können Sie e-Mail-Flussregeln zum Ausl
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus ausgehenden e-Mails entfernen.
 
-6. Wählen Sie unter **diese Regel anwenden, wenn**die Bedingungen aus, in denen die Verschlüsselung aus Nachrichten entfernt werden soll. Hinzufügen **der Absender** \> befindet sich **innerhalb der Organisation**. Fügen Sie nun zusätzliche Bedingungen hinzu, um bestimmte Empfänger zu adressieren, beispielsweise **der Empfänger** \> befindet sich **außerhalb der Organisation**.
+6. Wählen Sie unter **diese Regel anwenden, wenn**die Bedingungen aus, in denen die Verschlüsselung aus Nachrichten entfernt werden soll. Hinzufügen **der Absender** befindet sich \> **innerhalb der Organisation**. Fügen Sie nun zusätzliche Bedingungen hinzu, um bestimmte Empfänger zu adressieren, beispielsweise **der Empfänger** befindet sich \> **außerhalb der Organisation**.
 
 7. Wählen Sie unter **Folgendes ausführen die**Option **Nachrichtensicherheit** \> **Entfernen Office 365 Nachrichtenverschlüsselung und Rechte Schutz**aus.
 
-8. Klicken Sie auf **Speichern**.
+8. Wählen Sie **Speichern**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Erstellen von Nachrichtenfluss Regeln für Office 365 Nachrichtenverschlüsselung ohne die neuen Funktionen
 
@@ -126,9 +126,9 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise Verschlüsseln von e-Mails für DrToniRamos@hotmail.com.
 
@@ -140,7 +140,7 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
 
       - Um einen vorhandenen Namen auszuwählen, wählen Sie ihn in der Liste aus, und klicken Sie dann auf **OK**.
 
-      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie \> dann **Namen überprüfen** **OK**aus.
+      - Geben Sie zum Eingeben eines neuen Namens eine e-Mail-Adresse in das Feld **Namen überprüfen** ein, und wählen Sie dann **Namen überprüfen** \> **OK**aus.
 
 7. Um weitere Bedingungen hinzuzufügen, wählen Sie **Weitere Optionen** aus, und wählen Sie dann **Bedingung hinzufügen** aus, und wählen Sie aus der Liste aus.
 
@@ -156,7 +156,7 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
 
 1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, _ApplyOME_ und legen Sie `$true`den Parameter ApplyOME auf fest.
+2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, und legen Sie den Parameter _ApplyOME_ auf fest `$true` .
 
    In diesem Beispiel müssen alle e-Mail-Nachrichten, die an DrToniRamos@hotmail.com gesendet werden, verschlüsselt werden.
 
@@ -170,9 +170,9 @@ Wenn Sie Ihre Organisation noch nicht in die neuen OM-Funktionen verschoben habe
    > 
    > - Der Parameter _SentTo_ gibt die Nachrichtenempfänger an (gekennzeichnet durch den Namen, die e-Mail-Adresse, den Distinguished Name usw.). In diesem Beispiel wird der Empfänger durch die e-Mail-Adresse "DrToniRamos@hotmail.com" identifiziert.
    > 
-   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel befindet sich das Postfach des Empfängers in Hotmail und ist nicht Teil der Organisation, daher wird der `NotInOrganization` Wert verwendet.
+   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel befindet sich das Postfach des Empfängers in Hotmail und ist nicht Teil der Organisation, daher wird der Wert `NotInOrganization` verwendet.
    
-   Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+   Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Entfernen der Verschlüsselung aus e-Mail-Antworten ohne die neuen OM-Funktionen verschlüsselt
 
@@ -184,23 +184,23 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** Center \> **Exchange**aus.
 
-4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![ Neues Symbol neue ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. Geben Sie unter **Name**einen Namen für die Regel ein, beispielsweise die Verschlüsselung aus eingehenden e-Mails entfernen.
 
-6. Wählen Sie unter **diese Regel anwenden, wenn** die Bedingungen aus, aus denen die Verschlüsselung aus Nachrichten entfernt werden soll, wie **der Empfänger** \> sich **innerhalb der Organisation**befindet.
+6. Wählen Sie unter **diese Regel anwenden, wenn** die Bedingungen aus, aus denen die Verschlüsselung aus Nachrichten entfernt werden soll, wie **der Empfänger** sich \> **innerhalb der Organisation**befindet.
 
-7. Wählen Sie unter **Folgendes ausführen**die Option **Nachrichtensicherheit** \> ändern aus, um **die vorherige Version von OM zu entfernen**.
+7. Wählen Sie unter **Folgendes ausführen**die Option **Nachrichtensicherheit ändern** aus, um \> **die vorherige Version von OM zu entfernen**.
 
-8. Klicken Sie auf **Speichern**.
+8. Wählen Sie **Speichern**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Verwenden Exchange Online PowerShell zum Erstellen einer Regel zum Entfernen der Verschlüsselung aus e-Mail-Antworten, die ohne die neuen OM-Funktionen verschlüsselt wurden
 
 1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, _RemoveOME_ und legen Sie `$true`den Parameter RemoveOME auf fest.
+2. Erstellen Sie mithilfe des Cmdlets **New-TransportRule** eine Regel, und legen Sie den Parameter _RemoveOME_ auf fest `$true` .
 
    In diesem Beispiel wird die Verschlüsselung von allen e-Mails entfernt, die an Empfänger in der Organisation gesendet wurden.
 
@@ -212,7 +212,7 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
    > 
    > - Der eindeutige Name der neuen Regel lautet "Entfernen der Verschlüsselung aus eingehenden e-Mails".
    > 
-   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel wird der Wert `InOrganization` Wert verwendet, der Folgendes angibt:
+   > - Der Parameter _SentToScope_ gibt den Speicherort der Nachrichtenempfänger an. In diesem Beispiel wird der Wert Wert `InOrganization` verwendet, der Folgendes angibt:
    > 
    >   - Der Empfänger ist ein Postfach, ein e-Mail-Benutzer, eine Gruppe oder ein e-Mail-aktivierter Öffentlicher Ordner in Ihrer Organisation.
    > 
@@ -220,7 +220,7 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
    > 
    >   - Die e-Mail-Adresse des Empfängers befindet sich in einer akzeptierten Domäne, die als autorisierende Domäne oder als interne Relay-Domäne in Ihrer Organisation konfiguriert ist, _und_ die Nachricht wurde über eine authentifizierte Verbindung gesendet oder empfangen.
 
-Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

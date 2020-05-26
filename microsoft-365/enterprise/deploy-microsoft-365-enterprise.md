@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Lernen Sie die verschiedenen Ressourcen kennen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031426"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268332"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
 - die erforderliche [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) für integrierte Sicherheit und Integration für eine vereinfachte Verwaltung bereitstellen. Dies vereinfacht die Aktualisierung Ihrer Client-Software mit den neuesten Produktivitäts- und Sicherheitsverbesserungen. 
  
-  Die Foundation-Infrastruktur ist als eine Reihe von nummerierten Phasen organisiert, die aufeinander aufbauen und eine Umgebung schaffen, die Microsoft 365 Enterprise-Workloads und -Szenarien unterstützt. 
+  Die Foundation-Infrastruktur ist als eine Reihe von nummerierten Phasen organisiert, die aufeinander aufbauen und eine Umgebung schaffen, die Microsoft 365 Enterprise-Workloads unterstützt. 
 
   **Wenn Sie eine kleinere oder neuere Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
 
@@ -63,13 +63,13 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
   **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
-- Stellen Sie wichtige [Arbeitslasten und Szenarios](deploy-workloads.md) für Produktivität zusätzlich zu Ihrer Infrastruktur bereit. Diese setzen Kreativität und Teamwork in Ihrer Organisation frei.
+- Stellen Sie für die Produktivität wichtige [Workloads](deploy-workloads.md) zusätzlich zu Ihrer Infrastruktur bereit. Diese setzen Kreativität und Teamwork in Ihrer Organisation frei.
 
-Die Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien ist wie folgt.
+Die Beziehung zwischen der Foundation-Infrastruktur und den Workloads.
 
-![Beziehung zwischen der Foundation-Infrastruktur und den Arbeitslasten und Szenarien](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Die Beziehung zwischen der Foundation-Infrastruktur und den Workloads](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Arbeitslasten und Szenarios agieren auf Grundlage der Foundation-Infrastruktur. Sie müssen jedoch nicht alle Phasen der Foundation-Infrastruktur vollständig durchlaufen haben, um Arbeitslasten für Produktivität und Zusammenarbeit verwenden zu können.
+Workloads werden zusätzlich zur Foundation-Infrastruktur ausgeführt. Sie müssen jedoch nicht alle Phasen der Foundation-Infrastruktur vollständig durchlaufen haben, um Arbeitslasten für Produktivität und Zusammenarbeit verwenden zu können.
 
 Beginnen Sie Ihre End-to-End-Bereitstellung [hier](deploy-foundation-infrastructure.md).
 
@@ -125,10 +125,6 @@ Erfahren Sie, wie Core Services Engineering and Operations (vormals Microsoft IT
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Bereitstellung von Microsoft 365 Enterprise für die Contoso Corporation
 
 Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris. Erfahren Sie, wie [Contoso Microsoft 365 for Enterprise bereitgestellt](contoso-case-study.md) und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Microsoft 365 Apps for Enterprise, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt hat. 
-
-## <a name="stay-current-with-deployment-content"></a>Immer auf dem neuesten Stand mit Bereitstellungsinhalten
-
-Die neuesten Änderungen am Inhalt finden Sie in [diesem Artikel](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Nächster Schritt
 

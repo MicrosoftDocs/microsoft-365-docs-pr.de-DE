@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049520"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352081"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -28,7 +28,7 @@ Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? H
 ## <a name="what-is-office-365-message-encryption-ome"></a>Was ist Office 365 Nachrichtenverschlüsselung (OM)?
 
 OM kombiniert Funktionen für e-Mail-Verschlüsselung und Rechteverwaltung. Rechte Verwaltungsfunktionen werden von Azure Information Protection betrieben.
-  
+
 ## <a name="who-can-use-ome"></a>Wer kann OM verwenden?
 
 Sie können die neuen Funktionen für OM unter den folgenden Bedingungen verwenden:
@@ -137,7 +137,7 @@ Ja. Verwenden von Nachrichtenfluss Regeln in Exchange Online zum automatischen V
 
 Administratoren können eine e-Mail-Fluss Regel einrichten, um die Verschlüsselung für ausgehende e-Mails zu entfernen. Es ist nicht möglich, eine Regel zum Entfernen der Verschlüsselung für eingehende e-Mails einzurichten.
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Kann ich Nachrichten automatisch verschlüsseln, indem ich Richtlinien in Data Loss Prevention (DLP &amp; ) über das Security Compliance Center einrichtete?
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Kann ich Nachrichten automatisch verschlüsseln, indem ich Richtlinien in Data Loss Prevention (DLP) über das Security Compliance Center einrichtete &amp; ?
 
 Ja! Sie können Nachrichtenfluss Regeln in Exchange Online oder mithilfe von DLP im Security &amp; Compliance Center einrichten.
   
@@ -185,3 +185,9 @@ Derzeit gibt es zwei bekannte Einschränkungen:
 - Wir unterstützen nur den Zugriff, der durch direkte Benutzerzuweisung auf das freigegebene Postfach bereitgestellt wird. Die Zuweisung über eine e-Mail-aktivierte Sicherheitsgruppe wird nicht unterstützt.
 
 - Sie können keine Anlagen in e-Mails öffnen, die Sie auf mobilen Geräten mithilfe von Outlook Mobile empfangen.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Was muss ich tun, wenn ich den einmaligen Passcode nicht erhalte, nachdem ich ihn angefordert habe?
+
+Überprüfen Sie zuerst den Junk-oder Spam-Ordner in Ihrem e-Mail-Client. DKIM-und DMARC-Einstellungen für Ihre Organisation können dazu führen, dass diese e-Mails als Spam gefiltert werden.
+
+Überprüfen Sie als nächstes die Quarantäne im Security & Compliance Center. Häufig werden Nachrichten, die einen einmaligen Passcode enthalten, insbesondere die ersten, die in Ihrer Organisation empfangen werden, in Quarantäne gelandet.

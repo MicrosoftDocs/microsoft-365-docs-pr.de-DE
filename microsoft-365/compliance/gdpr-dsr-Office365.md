@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e77fe9c8340608afae3a308ee399809144f6308f
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211461"
+ms.locfileid: "44221429"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
 
@@ -35,7 +35,7 @@ In dem Leitfaden wird erläutert, wie Sie Office 365-Produkte, -Dienste und -Ver
 - **Erkennung:** Sie können Kundendaten, die ggf. Gegenstand eines Antrags einer betroffenen Person sind, mithilfe von Such- und Ermittlungstools finden. Sobald Sie potenziell relevante Dokumente ermittelt haben, können Sie dem Antrag entsprechend eine oder mehrere der in den folgenden Schritten beschriebenen Aktionen ausführen. Möglicherweise stellen Sie jedoch fest, dass der Antrag nicht den Vorgaben Ihrer Organisation für die Reaktion auf Anträge betroffener Personen entspricht.
 - **Zugriff:** Rufen Sie personenbezogene Daten ab, die sich in der Microsoft Cloud befinden, und erstellen Sie eine Kopie, die der betroffenen Person zur Verfügung gestellt werden kann, sofern dies beantragt wurde.
 - **Berichtigung:** Nehmen Sie gegebenenfalls Änderungen an den personenbezogenen Daten vor oder führen Sie andere Aktionen aus, die für die Daten angefordert werden.
-- **Einschränkung:** Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können auch Daten aus der Microsoft Cloud entfernen und lokal oder an einem anderen Speicherort speichern.
+- **Einschränkung:** Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Microsoft Cloud-Dienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können auch Daten aus der Microsoft Cloud entfernen und lokal oder an einem anderen Speicherort speichern.
 - **Löschung:** Entfernen Sie personenbezogene Daten, die sich in der Microsoft-Cloud befinden, dauerhaft.
 - **Exportieren/Empfangen (Portierbarkeit):** Stellen Sie der betroffenen Person eine elektronische Kopie (in einem maschinenlesbaren Format) von personenbezogenen Daten oder persönlichen Informationen zur Verfügung. Personenbezogene Informationen gemäß CCPA sind alle Informationen, die eine identifizierte oder identifizierbare Person betreffen. Es wird nicht zwischen privaten, öffentlichen oder beruflichen Rollen einer Person unterschieden. Der definierte Begriff "persönliche Informationen" entspricht in etwa dem Begriff "persönliche Daten" unter der DSGVO. Allerdings umfasst das CCPA auch Familien- und Haushaltsdaten. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](offering-ccpa.md) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](ccpa-faq.md).
 
@@ -1192,7 +1192,7 @@ In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microso
 
 #### <a name="discover"></a>Ermittlung
 
-Mithilfe von Sway erstellte Inhalte (unter [www.sway.com](https://www.sway.com)) können nur vom Besitzer und denjenigen Benutzern angezeigt werden, denen der Autor die Berechtigung zum Anzeigen gewährt hat. Weitere Informationen finden Sie unter [Datenschutzeinstellungen in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Um festzustellen, ob in Sway personenbezogene Daten vorhanden sind, die für Anträge betroffener Personen relevant sind, können Sie die betroffene Person und die Organisationsbenutzer, die wahrscheinlich Inhalte zu der betroffenen Person generiert haben, bitten, in Sway nach diesen Daten zu suchen und die Sways mitzuteilen, in denen wahrscheinlich personenbezogene Daten enthalten sind, die für den Antrag einer betroffenen Person relevant sind. Informationen zum Teilen von Sways finden Sie unter "Teilen eines Sway aus Ihrem Organisationskonto" im Artikel [Teilen Ihres Sways](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+Mithilfe von Sway erstellte Inhalte (unter [www.sway.com](https://sway.office.com/)) können nur vom Besitzer und denjenigen Benutzern angezeigt werden, denen der Autor die Berechtigung zum Anzeigen gewährt hat. Weitere Informationen finden Sie unter [Datenschutzeinstellungen in Sway](https://support.microsoft.com/de-DE/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Um festzustellen, ob in Sway personenbezogene Daten vorhanden sind, die für Anträge betroffener Personen relevant sind, können Sie die betroffene Person und die Organisationsbenutzer, die wahrscheinlich Inhalte zu der betroffenen Person generiert haben, bitten, in Sway nach diesen Daten zu suchen und die Sways mitzuteilen, in denen wahrscheinlich personenbezogene Daten enthalten sind, die für den Antrag einer betroffenen Person relevant sind. Informationen zum Teilen von Sways finden Sie unter "Teilen eines Sway aus Ihrem Organisationskonto" im Artikel [Teilen Ihres Sways](https://support.microsoft.com/de-DE/office/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
@@ -1200,7 +1200,7 @@ Wenn Sie personenbezogene Daten in einem Sway gefunden haben, die Sie an die bet
 
 #### <a name="delete"></a>Löschen
 
-Informationen zum Löschen eines Sways finden Sie im Abschnitt "Wie kann ich Sway löschen?" in den [Datenschutzeinstellungen in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
+Informationen zum Löschen eines Sways finden Sie im Abschnitt "Wie kann ich Sway löschen?" in den [Datenschutzeinstellungen in Sway](https://support.microsoft.com/de-DE/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
 
 #### <a name="export"></a>Exportieren
 
@@ -1262,11 +1262,11 @@ In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microso
 
 #### <a name="discover"></a>Entdecken
 
-Im Yammer Admin Center kann ein bestätigter Yammer-Administrator (globaler Administrator oder ein bestätigter Administrator in Yammer) Daten für einen bestimmten Benutzer exportieren. Der Export enthält die vom Benutzer geposteten und bearbeiteten Nachrichten und Dateien sowie Informationen zu den Themen und Gruppen, die vom Benutzer erstellt wurden. Beim Ausführen eines benutzerspezifischen Datenexports erhält der Administrator auch eine Nachricht mit den Aktivitätsdaten des Benutzerkontos, die Sie dem Benutzer bei Bedarf bereitstellen können. Eine detaillierte Anleitung finden Sie unter [Yammer Enterprise: Datenschutz](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Im Yammer Admin Center kann ein bestätigter Yammer-Administrator (globaler Administrator oder ein bestätigter Administrator in Yammer) Daten für einen bestimmten Benutzer exportieren. Der Export enthält die vom Benutzer geposteten und bearbeiteten Nachrichten und Dateien sowie Informationen zu den Themen und Gruppen, die vom Benutzer erstellt wurden. Beim Ausführen eines benutzerspezifischen Datenexports erhält der Administrator auch eine Nachricht mit den Aktivitätsdaten des Benutzerkontos, die Sie dem Benutzer bei Bedarf bereitstellen können. Eine detaillierte Anleitung finden Sie unter [Yammer Enterprise: Datenschutz](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise).
 
 Benutzerspezifische Exporte werden für ein einzelnes Netzwerk erstellt. Wenn der Benutzer also in einem externen Yammer-Netzwerk ist, muss der Administrator die Daten für dieses externe Netzwerk sowie für das Heimnetzwerk exportieren.
 
-Um auf nicht im Datenexport enthaltene Daten zuzugreifen, können Sie Screenshots des Profils, der Einstellungen, Gruppenmitgliedschaften, mit einer Textmarke versehenen Nachrichten, Benutzer und Themen, denen gefolgt wird, des Benutzers erstellen. Benutzer oder Administratoren können diese Informationen sammeln. Weitere Informationen finden Sie unter [Yammer Enterprise: Datenschutz](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Um auf nicht im Datenexport enthaltene Daten zuzugreifen, können Sie Screenshots des Profils, der Einstellungen, Gruppenmitgliedschaften, mit einer Textmarke versehenen Nachrichten, Benutzer und Themen, denen gefolgt wird, des Benutzers erstellen. Benutzer oder Administratoren können diese Informationen sammeln. Weitere Informationen finden Sie unter [Yammer Enterprise: Datenschutz](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise).
 
 #### <a name="access"></a>Access
 
@@ -1277,7 +1277,7 @@ Im Datenexport pro Benutzer ist Folgendes nicht enthalten:
 - Das Profil des Benutzers:
     - Wenn der Benutzer über ein Yammer-Konto verfügt, hat der Benutzer die vollständige Kontrolle über sein Profil. Informationen zum Anzeigen und Ändern des Profils finden Sie unter [Ändern des Profils und den Einstellungen in Yammer](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
     
-    - Wenn der Benutzer ein Office 365-Konto hat, wird das Yammer-Benutzerprofil automatisch von Office 365 abgerufen, darunter die Profilinformationen von Azure Active Directory (AAD). Yammer-Benutzer können ihre Profile in Yammer vorübergehend ändern, diese Änderungen werden jedoch überschrieben, wenn eine Änderung in AAD vorgenommen wird, sodass Verzeichnisdaten in AAD angezeigt und geprüft werden müssen. Weitere Informationen finden Sie unter [Verwalten von Yammer-Benutzern über ihren gesamten Lebenszyklus in Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) und [Hinzufügen oder Ändern von Profilinformationen für einen Benutzer in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+    - Wenn der Benutzer ein Office 365-Konto hat, wird das Yammer-Benutzerprofil automatisch von Office 365 abgerufen, darunter die Profilinformationen von Azure Active Directory (AAD). Yammer-Benutzer können ihre Profile in Yammer vorübergehend ändern, diese Änderungen werden jedoch überschrieben, wenn eine Änderung in AAD vorgenommen wird, sodass Verzeichnisdaten in AAD angezeigt und geprüft werden müssen. Weitere Informationen finden Sie unter [Verwalten von Yammer-Benutzern über ihren gesamten Lebenszyklus in Office 365](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle) und [Hinzufügen oder Ändern von Profilinformationen für einen Benutzer in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 -   Die Einstellungen des Benutzers:
 
@@ -1288,7 +1288,7 @@ Im Datenexport pro Benutzer ist Folgendes nicht enthalten:
 
 #### <a name="export"></a>Exportieren
 
-Anweisungen zum Exportieren von Daten finden Sie unter [Verwalten von DSGVO-Datensubjektanforderungen in Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf). Sie müssen einen Export pro Benutzer für jedes Yammer-Netzwerk ausführen, bei dem der Benutzer Mitglied ist.
+Anweisungen zum Exportieren von Daten finden Sie unter [Verwalten von DSGVO-Datensubjektanforderungen in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise). Sie müssen einen Export pro Benutzer für jedes Yammer-Netzwerk ausführen, bei dem der Benutzer Mitglied ist.
 
 Yammer verfügt über Einstellungen für die Aufbewahrung von Daten, durch die Daten entweder vorläufig oder endgültig gelöscht werden, wenn ein Benutzer eine Nachricht oder eine Datei löscht. Wenn diese Einstellung auf „Vorläufiges Löschen“ festgelegt ist, sind die Daten, die ein Benutzer gelöscht hat, im Export enthalten. Wenn die Einstellung auf „Endgültiges Löschen“ festgelegt ist, sind die gelöschten Daten nicht mehr in Yammer gespeichert und somit nicht in dem Export enthalten.
 
@@ -1301,7 +1301,7 @@ Yammer ermöglicht bestätigten Administratoren das Ausführen von DSGVO-kompati
 
 Wenn ein Benutzer mit der Option "Benutzer löschen" gelöscht wurde, wird eine Benachrichtigung an den Yammer-Posteingang aller Netzwerkadministratoren und bestätigter Administratoren gesendet. Mit der Option "Benutzer löschen" wird das Yammer-Profil des Benutzers gelöscht, jedoch nicht das Office 365- oder Azure Active Directory-Profil.
 
-Ausführliche Schritte zum Entfernen eines Benutzers finden Sie unter [Verwalten von Anträgen betroffener Personen nach der DSGVO in Yammer Enterprise](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Ausführliche Schritte zum Entfernen eines Benutzers finden Sie unter [Verwalten von Anträgen betroffener Personen nach der DSGVO in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise).
 
 ## <a name="responding-to-dsr-rectification-requests"></a>Reagieren auf Anträge betroffener Personen auf Berichtigung von Daten
 
@@ -1324,7 +1324,7 @@ Wenn es für den Dateneigentümer nicht möglich ist, den Antrag einer betroffen
 
 Informationen zum Erteilen von Administrator- oder Besitzerberechtigungen für eine SharePoint Online-Website, damit Sie oder eine andere Person auf dieses Dokument zugreifen und es bearbeiten kann, finden Sie unter
 
-- [Verwalten der Administratoren für eine Websitesammlung](https://support.office.com/article/Manage-administrators-for-a-site-collection-9A7E46F9-3FC4-4297-955A-82CB292A5BE0)
+- [Verwalten der Administratoren für eine Websitesammlung](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators)
 
 - [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/article/Edit-and-manage-permissions-for-a-SharePoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
@@ -1342,7 +1342,7 @@ Ein globaler Administrator kann über das Admin Center auf das OneDrive for Busi
 
 Ein globaler Administrator kann sich selbst die erforderlichen Berechtigungen zum Öffnen und Bearbeiten (oder Löschen) von Elementen im Postfach eines anderen Benutzers gewähren, so als wäre er Besitzer des Postfachs. Ein globaler Administrator kann diese Berechtigungen auch einem anderen Benutzer erteilen. Der globale Administrator muss insbesondere die Berechtigung **Lesen und Verwalten** hinzufügen, welche Vollzugriff in Exchange Online bedeutet. Weitere Informationen finden Sie unter:
 
-- [Erteilen von Postfachberechtigungen für einen anderen Benutzer in Office 365](https://support.office.com/article/Give-mailbox-permissions-to-another-user-in-Office-365-Admin-Help-1DBCF12F-A9DE-4D1D-B0B3-A227F8A736D8)
+- [Erteilen von Postfachberechtigungen für einen anderen Benutzer in Office 365](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
 - [Zugreifen auf das Postfach einer anderen Person](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
 
 Wenn für das Benutzerpostfach eine Aufbewahrung für juristische Zwecke aktiviert ist oder wenn es einer Aufbewahrungsrichtlinie zugeordnet wurde, werden alle Versionen des Postfachs beibehalten, bis die Aufbewahrungsdauer abläuft oder bis die Aufbewahrungspflicht für das Postfach aufgehoben wird. Das heißt, wenn ein Postfachelement in Reaktion auf einen Antrag einer betroffenen Person auf Berichtigung geändert wird, wird eine Kopie des ursprünglichen Elements (vor der Änderung) beibehalten und in einem ausgeblendeten Ordner im Ordner "Wiederherstellbare Elemente" im Postfach des Benutzers gespeichert.
@@ -1359,7 +1359,7 @@ Administratoren oder Datenbesitzer können Änderungen an Dokumente, Listen und 
     3. Nehmen Sie die Änderungen an der Kopie des Dokuments auf Ihrem lokalen Computer vor.
     4. Laden Sie die überarbeitete Datei am ursprünglichen Speicherort in SharePoint Online hoch.
 
-- Daten in SharePoint-Listen können bearbeitet werden. Informationen dazu finden Sie unter [Hinzufügen, Bearbeiten oder Löschen von Listenelementen](https://support.office.com/article/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
+- Daten in SharePoint-Listen können bearbeitet werden. Informationen dazu finden Sie unter [Hinzufügen, Bearbeiten oder Löschen von Listenelementen](https://support.microsoft.com/de-DE/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
 
 IT-Administratoren können auch bestimmte persönlichen Eigenschaften korrigieren, die mit einem Dokument verknüpft sind:
 
@@ -1389,7 +1389,7 @@ Bei Daten, auf die der Benutzer über das Profil und die Einstellungen zugreifen
 - Das Profil des Benutzers:
 
     - Wenn der Benutzer über ein Yammer-Konto verfügt, hat der Benutzer die vollständige Kontrolle über sein Profil. Informationen zum Anzeigen und Ändern des Profils finden Sie unter [Ändern des Profils und den Einstellungen in Yammer](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
-    - Wenn der Benutzer ein Office 365-Konto hat, wird das Yammer-Benutzerprofil automatisch von Office 365 abgerufen, welches die Profilinformationen von Azure Active Directory (AAD) erhält. Yammer-Benutzer können ihre Profile in Yammer vorübergehend ändern, diese Änderungen werden jedoch überschrieben, wenn eine Änderung in AAD vorgenommen wird. Somit ist AAD der beste Ort zum Anzeigen und Ändern von Verzeichnisdaten. Der Benutzer muss die Aktualisierung von AAD anfordern. Weitere Informationen finden Sie unter [Verwalten von Yammer-Benutzern über ihren gesamten Lebenszyklus in Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) und [Hinzufügen oder Ändern von Profilinformationen für einen Benutzer in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+    - Wenn der Benutzer ein Office 365-Konto hat, wird das Yammer-Benutzerprofil automatisch von Office 365 abgerufen, welches die Profilinformationen von Azure Active Directory (AAD) erhält. Yammer-Benutzer können ihre Profile in Yammer vorübergehend ändern, diese Änderungen werden jedoch überschrieben, wenn eine Änderung in AAD vorgenommen wird. Somit ist AAD der beste Ort zum Anzeigen und Ändern von Verzeichnisdaten. Der Benutzer muss die Aktualisierung von AAD anfordern. Weitere Informationen finden Sie unter [Verwalten von Yammer-Benutzern über ihren gesamten Lebenszyklus in Office 365](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle) und [Hinzufügen oder Ändern von Profilinformationen für einen Benutzer in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 - Die Einstellungen des Benutzers:
 
@@ -1411,11 +1411,11 @@ Wenn Ihre Organisation später feststellt, dass eine Einschränkung nicht mehr g
 
 ### <a name="removing-the-license-for-an-office-365-application"></a>Entfernen der Lizenz für eine Office 365-Anwendung
 
-Wie zuvor erläutert, werden Lizenzen für alle Office 365-Anwendungen, die in dem Microsoft 365 Business-Abonnement Ihrer Organisation enthalten sind, standardmäßig allen Benutzern zugewiesen. Wenn Sie den Zugriff auf Daten einschränken müssen, die Gegenstand eines Antrags einer betroffenen Person sind, kann ein IT-Administrator über das Office 365-Administratorportal eine Benutzerlizenz für eine Anwendung vorübergehend deaktivieren. Wenn ein Benutzer dann versucht, diese Anwendung zu verwenden, erhält er die Benachrichtigung „Nicht lizenziertes Produkt“ oder eine Meldung, die besagt, dass er keinen Zugriff mehr hat. Weitere Informationen dazu finden Sie unter [Entfernen von Lizenzen für Benutzer in Office 365 Business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
+Wie zuvor erläutert, werden Lizenzen für alle Office 365-Anwendungen, die in dem Microsoft 365 Business-Abonnement Ihrer Organisation enthalten sind, standardmäßig allen Benutzern zugewiesen. Wenn Sie den Zugriff auf Daten einschränken müssen, die Gegenstand eines Antrags einer betroffenen Person sind, kann ein IT-Administrator über das Office 365-Administratorportal eine Benutzerlizenz für eine Anwendung vorübergehend deaktivieren. Wenn ein Benutzer dann versucht, diese Anwendung zu verwenden, erhält er die Benachrichtigung „Nicht lizenziertes Produkt“ oder eine Meldung, die besagt, dass er keinen Zugriff mehr hat. Weitere Informationen dazu finden Sie unter [Entfernen von Lizenzen für Benutzer in Office 365 Business](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 **Hinweise:**
 
-- Um einen Benutzer daran zu hindern, auf Yammer zuzugreifen, müssen Sie zunächst die [Office 365-Identifizierung für Yammer-Benutzer](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562) erzwingen und dann die Yammer-Lizenz des Benutzers entfernen.
+- Um einen Benutzer daran zu hindern, auf Yammer zuzugreifen, müssen Sie zunächst die [Office 365-Identifizierung für Yammer-Benutzer](https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity) erzwingen und dann die Yammer-Lizenz des Benutzers entfernen.
 
 - Für Szenarien, die die Vorteile von Power BI Embedded nutzen, können Sie den Zugriff auf die Anwendung des unabhängigen Softwareanbieters (ISV), in die der Inhalt eingebettet ist, einschränken.
 
@@ -1444,9 +1444,9 @@ Da die meisten Office-Dokumente auf einer SharePoint Online- oder OneDrive for B
 
     a. Löschen Sie die Original-Kopie des Dokuments. Wenn Sie ein Dokument von einer Website löschen, wird es in den Papierkorb der Website (auch bezeichnet als *Standardpapierkorb*) verschoben.
 
-    b. Gehen Sie zum Papierkorb der Website und löschen Sie diese Kopie des Dokuments. Wenn Sie ein Dokument aus dem Papierkorb der Website löschen, wird es an den Papierkorb der Websitesammlung gesendet (auch als *endgültiger Papierkorb* bezeichnet). Siehe [Eine Datei, einen Ordner oder einen Link aus einer SharePoint-Dokumentbibliothek löschen](https://support.office.com/article/Delete-a-file-folder-or-link-from-a-SharePoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52).
+    b. Gehen Sie zum Papierkorb der Website und löschen Sie diese Kopie des Dokuments. Wenn Sie ein Dokument aus dem Papierkorb der Website löschen, wird es an den Papierkorb der Websitesammlung gesendet (auch als *endgültiger Papierkorb* bezeichnet). Siehe [Eine Datei, einen Ordner oder einen Link aus einer SharePoint-Dokumentbibliothek löschen](https://support.microsoft.com/de-DE/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52).
 
-    c. Rufen Sie den Papierkorb der Websitesammlung auf und löschen Sie diese Kopie des Dokuments, wodurch diese dauerhaft aus Office 365 entfernt wird. Siehe [Löschen von Elementen aus dem Papierkorb der Websitesammlung](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653).
+    c. Rufen Sie den Papierkorb der Websitesammlung auf und löschen Sie diese Kopie des Dokuments, wodurch diese dauerhaft aus Office 365 entfernt wird. Siehe [Löschen von Elementen aus dem Papierkorb der Websitesammlung](https://support.microsoft.com/de-DE/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653).
 
 4. Wenn die Einschränkung nicht mehr gültig ist, kann die Kopie des Dokuments, das lokal gespeichert wurde, wieder auf die Website in Office 365 hochgeladen werden.
 
@@ -1459,7 +1459,7 @@ Ein SharePoint Online-Administrator kann den Zugriff aller Benutzer auf eine Sha
 
 ### <a name="preventing-a-user-from-signing-in-to-office-365"></a>Verhindern, dass einen Benutzer sich bei Office 365 anmeldet
 
-Ein IT-Administrator kann auch verhindern, dass sich ein Benutzer bei Office 365 anmeldet, was den Zugriff auf einen Office 365-Onlinedienst oder die Verarbeitung von in Office 365 gespeicherten Daten verhindern würde. Siehe [Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Office 365-Daten](https://support.office.com/article/Remove-a-former-employee-from-Office-365-44d96212-4d90-4027-9aa9-a95eddb367d1).
+Ein IT-Administrator kann auch verhindern, dass sich ein Benutzer bei Office 365 anmeldet, was den Zugriff auf einen Office 365-Onlinedienst oder die Verarbeitung von in Office 365 gespeicherten Daten verhindern würde. Siehe [Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Office 365-Daten](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee).
 
 ## <a name="part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365"></a>Teil 2: Reaktion auf Anträge betroffener Personen bezüglich von Office 365 generierten Erkenntnissen
 
@@ -1507,7 +1507,7 @@ Benutzer können die folgenden Informationen in Delve ändern:
 
 #### <a name="restrict"></a>Einschränkung
 
-Um die Verarbeitung in Delve für Ihre Organisation einzuschränken, können Sie Office Graph deaktivieren. Weitere Informationen finden Sie [hier](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff).
+Um die Verarbeitung in Delve für Ihre Organisation einzuschränken, können Sie Office Graph deaktivieren. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/sharepoint/delve-for-office-365-admins).
 
 #### <a name="delete"></a>Löschen
 
@@ -1674,7 +1674,7 @@ Wir empfehlen Ihnen, das Falltool für Anträge betroffener Personen im Security
 
 - Löschen Sie Fälle, wenn die Untersuchung eines Antrags einer betroffenen Person abgeschlossen wurde. Dadurch werden alle Inhaltssuchen und Exportaufträge entfernt, die dem Fall zugeordnet sind.
 
-Informationen zu den ersten Schritten mit Anträgen betroffener Personen finden Sie in unter [Verwalten von Anträgen betroffener Personen nach der DSGVO mit dem Falltool für Anträge betroffener Personen im Security & Compliance Center](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
+Informationen zu den ersten Schritten mit Anträgen betroffener Personen finden Sie in unter [Verwalten von Anträgen betroffener Personen nach der DSGVO mit dem Falltool für Anträge betroffener Personen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
 >[!IMPORTANT]
 >Ein eDiscovery-Administrator kann alle Fälle für Anträge betroffener Personen in Ihrer Organisation verwalten. Weitere Informationen zu den verschiedenen Rollen im Zusammenhang mit eDiscovery finden Sie unter [Zuweisen von eDiscovery-Berechtigungen für potenzielle Fallmitglieder](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
@@ -1700,7 +1700,7 @@ Hier ist eine allgemeine Übersicht zum Implementieren von Compliance-Grenzen (z
 
 6. Erstellen Sie einen Suchberechtigungsfilter für jede Compliance-Grenze, damit die Mitglieder der entsprechenden Administrator-Rollengruppe nur Postfächer und Websites für Benutzer innerhalb dieser Agentur-/Compliance-Grenze suchen können. Der Suchberechtigungsfilter erlaubt Mitgliedern der entsprechenden Rollengruppe, nur die Speicherorte zu durchsuchen, die den Benutzerobjektattributwert aufweisen, der der Agentur-/Compliance-Grenze entspricht.
 
-Eine Schritt-für-Schritt-Anleitung finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
+Eine Schritt-für-Schritt-Anleitung finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries).
 
 ### <a name="use-the-audit-log-search-tool-in-dsr-investigations"></a>Verwenden des Überwachungsprotokoll-Suchtools für Untersuchungen im Rahmen von Anträgen betroffener Personen
 

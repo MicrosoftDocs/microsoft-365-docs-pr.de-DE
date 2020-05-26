@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033655"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352158"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Konfigurieren von Aufsichtsrichtlinien in Office 365
 
@@ -83,7 +83,7 @@ Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, übe
 
 Um beaufsichtigte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Aufsichtsrichtlinie so aktualisieren, dass neue Mitarbeiter Ihrer Organisation beitreten.
 
-1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365 Dienste verwendet wird.
+1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365 Dienste verwendet wird.
 
     - **MemberDepartRestriction = geschlossen**. Stellt sicher, dass sich Benutzer nicht aus der Verteilergruppe entfernen können.
     - **MemberJoinRestriction = geschlossen**. Stellt sicher, dass Benutzer sich nicht der Verteilergruppe hinzufügen können.
@@ -124,7 +124,7 @@ Dazu können Sie sich selbst als Mitglied der Rollengruppe aufsichtsüberprüfun
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Hinzufügen von Mitgliedern zur Rollengruppe "aufsichtsüberprüfung"
 
-1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden [https://protection.office.com](https://protection.office.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen**.
 
@@ -134,11 +134,11 @@ Dazu können Sie sich selbst als Mitglied der Rollengruppe aufsichtsüberprüfun
 
 ### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
 
-1. Melden Sie [https://protection.office.com/permissions](https://protection.office.com/permissions) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und klicken Sie dann auf**+** hinzufügen ().
+2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und klicken Sie dann auf hinzufügen ( **+** ).
 
-3. Klicken Sie im Abschnitt **Rollen** auf Hinzufügen**+**(), und führen Sie einen Bildlauf nach unten zum **Aufsichts Überprüfungs Administrator**durch. Fügen Sie diese Rolle der Rollengruppe hinzu.
+3. Klicken Sie im Abschnitt **Rollen** auf hinzufügen ( **+** ), und führen Sie einen Bildlauf nach unten zum **Aufsichts Überprüfungs Administrator**durch. Fügen Sie diese Rolle der Rollengruppe hinzu.
 
 4. Fügen Sie im Abschnitt **Mitglieder** die Personen hinzu, die Sie für Ihre Organisation die Kommunikationsüberwachung verwalten möchten.
 
@@ -167,11 +167,11 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
     Ausführlichere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md) und [Erstellen eines Stichwort Wörterbuchs](create-a-keyword-dictionary.md) .
 
-    Nachdem das Benutzerwörterbuch/das Lexikon erstellt wurde, können Sie die konfigurierten Schlüsselwörter mit dem Cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) oder hinzufügen und entfernen mithilfe des Cmdlets "Cmdlet" [festlegen-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) anzeigen.
+    Nachdem das Benutzerwörterbuch/das Lexikon erstellt wurde, können Sie die konfigurierten Schlüsselwörter mit dem Cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) oder hinzufügen und entfernen mithilfe des Cmdlets "Cmdlet" [festlegen-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) anzeigen.
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Schritt 4: Einrichten einer Aufsichtsrichtlinie (erforderlich)
   
-1. Melden Sie [https://protection.office.com](https://protection.office.com) sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden [https://protection.office.com](https://protection.office.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Wählen Sie im Security & Compliance Center die Option **Beaufsichtigung**aus.
   
@@ -196,5 +196,5 @@ Nachdem Sie eine Richtlinie für die Kommunikationsüberwachung erstellt haben, 
     >[!NOTE]
     >E-Mails, die bestimmten Richtlinien unterliegen, werden nahezu in Echtzeit verarbeitet und können unmittelbar nach der Konfiguration der Richtlinie getestet werden. Chats in Microsoft Teams können bis zu 24 Stunden in Anspruch nehmen, um eine Richtlinie vollständig zu verarbeiten. 
 
-3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung** > *Ihre benutzerdefinierte Richtlinie* > **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
+3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Aufsichtsrichtlinie angegeben ist. Navigieren Sie zu **Beaufsichtigung**  >  *Ihre benutzerdefinierte Richtlinie*  >  **geöffnet** , um den Bericht für die Richtlinie anzuzeigen.
 

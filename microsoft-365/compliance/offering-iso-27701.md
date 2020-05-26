@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222017"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254168"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Datenschutz-Informationsmanagementsystem (Privacy Information Management System, PIMS)
 
@@ -51,7 +51,7 @@ Es ist wichtig zu wissen, dass für eine offizielle DSGVO-Zertifizierung aussteh
 
 Die modernen Unternehmen betreiben komplexe Datenübertragungen mit einem umfangreichen Netzwerk von Geschäftspartnern, einschließlich Partnerorganisationen oder Co-Controllern, Verarbeitern wie Cloud-Anbietern und Unterverarbeitern wie Anbietern, die dieselben Verarbeiter unterstützen. Die Nichteinhaltung von Bestimmungen in diesem Netzwerk kann zu einer Überlappung von Compliance-Problemen innerhalb der gesamten Lieferkette führen. An dieser Stelle kann eine Prüfung der Einhaltung der Vorschriften über die Zusicherung hinaus wertvoll sein, die durch die Vertragsbedingungen zwischen diesen Unternehmen gegeben ist. Da die Weltwirtschaft eine weltweite Verteilung der meisten dieser Unternehmen erfordert, ist es sinnvoll, die Compliance über das gesamte Netzwerk mit einem internationalen Standard von ISO zu verwalten.
 
-Diese Abhängigkeit von der Konformität erhöht die Bedeutung der Zertifizierung nach dem Standard. Obwohl nicht alle Unternehmen und Organisationen eine solche Zertifizierung erwerben müssen, werden die meisten von Partnern und Lieferanten profitieren, die dies besonders dann tun, wenn sensible oder große Datenmengen involviert sind.
+Diese Abhängigkeit von der Konformität erhöht die Bedeutung der Zertifizierung nach dem Standard. Obwohl nicht alle Unternehmen und Organisationen eine derartige Zertifizierung erwerben müssen, profitieren die meisten von Partnern und Lieferanten, die dies tun, vor allem, wenn es um die Verarbeitung sensibler oder großer Datenmengen geht.
 
 ## <a name="building-blocks-of-the-standard"></a>Bausteine des Standards
 
@@ -65,12 +65,32 @@ Eckpunkte zu ISO/IEC 27001 und PIMS:
 
 ## <a name="what-should-your-organization-do-with-pims"></a>Was sollte Ihre Organisation mit PIMS tun?
 
-Unabhängig von der Größe Ihrer Organisation und unabhängig davon, ob es sich um einen Controller oder einen Verarbeiter handelt, sollte Ihre Organisation die Zertifizierung entweder für Ihre eigene Organisation in Betracht ziehen oder sie von Anbietern oder Lieferanten auf der Grundlage Ihrer Geschäftsanforderungen anfordern. Dies gilt insbesondere für Verarbeiter, Unterverarbeiter und Co-Controller, die sensible Daten oder große Mengen personenbezogener Daten verarbeiten. In jedem Fall sollte Ihre Organisation ihre geschäftlichen Anforderungen prüfen, um festzustellen, ob die Zertifizierung für Ihre eigenen Produkte und Dienste geeignet ist.
+Unabhängig von der Größe Ihrer Organisation und unabhängig davon, ob es sich um einen Controller oder einen Verarbeiter handelt, sollte Ihre Organisation die Zertifizierung entweder für Ihre eigene Organisation in Betracht ziehen oder sie von Anbietern oder Lieferanten auf der Grundlage Ihrer Geschäftsanforderungen anfordern. Dies gilt insbesondere für Verarbeiter, Unterverarbeiter und Co-Controller, die sensible Daten oder große Mengen personenbezogener Daten verarbeiten. In jedem Fall sollte Ihre Organisation die geschäftlichen Anforderungen prüfen, um zu ermitteln, ob eine Zertifizierung für die eigenen Produkte und Dienste geeignet ist.
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
-- [Azure ISO/IEC 27701-Zertifizierung](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701-Bewertungsbericht](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- Azure, Azure Government und Azure Deutschland
+- Azure DevOps Services
+- Microsoft Cloud App-Sicherheit
+- Dynamics 365, Dynamics 365 Government und Dynamics 365 Deutschland
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Microsoft Managed Desktop
+- Power Automate (ehemals Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft Stream
+- Microsoft-Bedrohungsexperten
+- Windows Defender Advanced Threat Protection
+
+
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
+
+- [Azure, Dynamics 365 und Onlinedienste: ISO27701-Zertifizierung](https://aka.ms/azureiso27701cert)
+- [Azure, Dynamics 365 und Onlinedienste: ISO27701-Bewertungsbericht](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Verwenden von Microsoft Compliancebewertungen zur Einschätzung des Risikos
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 451eb2a10074081b6d688754002d4f2e9f50f4b1
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141043"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351692"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -69,7 +69,7 @@ Um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen, können Sie im Se
 
 ![Suchen nach MailItemsAccessed-Aktionen im Überwachungsprotokoll-Suchtool](../media/MailItemsAccessedSCC1.png)
 
-Sie können auch die Befehle [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
+Sie können auch die Befehle [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Zugriff mit hoher Bandbreite auf die Office 365-Verwaltungsaktivitäts-API
 

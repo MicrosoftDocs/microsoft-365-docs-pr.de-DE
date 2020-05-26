@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatisierte Upgrades von Windows 7 auf Windows 10 für große Organisationen
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011551"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221398"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>In-Place-Upgrades von Windows 7 auf Windows 10 für große Organisationen
 
@@ -90,7 +90,7 @@ Clients können mithilfe des [Features „vorgeschalteter Cache“ (pre-cache, V
 
 Vorabzwischengespeicherte Aufgabensequenzen in Kombination mit Kompatibilitätsüberprüfungen
 
-Zusätzlich zur Zeiteinsparung für den Pakete-Download können Sie das Upgrade-Paket vorabzwischenspeichern und mithilfe von Windows Setup bestimmen, ob das In-Place-Upgrade erfolgreich war, bevor Sie das eigentliche Windows-Upgrade ausführen. Die folgende Befehlszeilensyntax kann verwendet werden, um eine Kompatibilitätsüberprüfung im Hintergrund auszuführen und zu ermitteln, ob Windows Setup das Gerät als für das Upgrade bereit bewertet.
+Zusätzlich zur Zeiteinsparung für den Pakete-Download können Sie das Upgrade-Paket vorabzwischenspeichern und mithilfe von Windows Setup bestimmen, ob das In-Place-Upgrade erfolgreich war, bevor Sie das eigentliche Windows-Upgrade ausführen. Die folgende Befehlszeilensyntax kann verwendet werden, um eine Kompatibilitätsüberprüfung im Hintergrund auszuführen und zu ermitteln, ob Windows Setup das Gerät als für das Upgrade bereit bewertet: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 Die Protokolle werden dann an den festgelegten Server-Pfad gesendet, während Windows Setup selbst dem Benutzer nicht angezeigt wird und ohne Benutzerinteraktion geschlossen wird.
 

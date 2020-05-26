@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzer müssen Berechtigungen im Microsoft 365 Security & Compliance Center zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036668"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351951"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Freigeben des Benutzerzugriffs auf das Security & Compliance Center
 
@@ -50,11 +50,11 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 3. Wechseln Sie im Security & Compliance Center zu **Berechtigungen**.
 
-4. Wählen Sie in der Liste die Rollengruppe aus, der Sie den Benutzer hinzufügen möchten, **Edit** ![und klicken Sie](../../media/O365-MDM-CreatePolicy-EditIcon.gif)auf Bearbeitungssymbol bearbeiten.
+4. Wählen Sie in der Liste die Rollengruppe aus, der Sie den Benutzer hinzufügen möchten, und klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-5. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf Add-](../../media/ITPro-EAC-AddIcon.gif) Symbol **Hinzufügen**![, und wählen Sie den Namen des Benutzers (oder der Benutzer) aus, den Sie hinzufügen möchten.
+5. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf Add-Symbol **Hinzufügen**, ![ ](../../media/ITPro-EAC-AddIcon.gif) und wählen Sie den Namen des Benutzers (oder der Benutzer) aus, den Sie hinzufügen möchten.
 
-6. Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu\> fügen** und dann auf **OK**.
+6. Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu \> fügen** und dann auf **OK**.
 
 7. Klicken Sie auf **Speichern**, um die Änderungen an der Rollengruppe zu speichern.
 
@@ -82,7 +82,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
    - _Mitglied_ ist das Postfach, die universelle Sicherheitsgruppe (Universal Security Group, USG) oder der Computer, der der Rollengruppe hinzugefügt werden soll. Sie können immer nur ein Element angeben.
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -92,4 +92,4 @@ Verwenden Sie das Cmdlet **Get-RoleGroupMember** , um die Mitglieder in der Roll
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

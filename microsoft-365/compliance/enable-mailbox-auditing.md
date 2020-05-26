@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 458e5c9797874f35e99c09edbc3ef45753132cba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631730"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352108"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -153,13 +153,13 @@ Denken Sie daran, dass ein Administrator mit Vollzugriff-Berechtigung für ein M
 
 Durch Standardeinstellungen für die postfachüberwachung wird allen Postfächern eine neue *DefaultAuditSet* -Eigenschaft hinzugefügt. Der Wert dieser Eigenschaft gibt an, ob die standardmäßigen Postfachaktionen (verwaltet von Microsoft) für das Postfach überwacht werden.
 
-Um den Wert für Benutzerpostfächer oder freigegebene Post \<Fächer\> anzuzeigen, ersetzen Sie Mailbox Identity durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
+Um den Wert für Benutzerpostfächer oder freigegebene Postfächer anzuzeigen, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Wenn Sie den Wert in Microsoft 365-Gruppen Postfächern \<anzeigen\> möchten, ersetzen Sie Mailbox Identity durch den Namen, den Alias oder die e-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
+Wenn Sie den Wert in Microsoft 365-Gruppen Postfächern anzeigen möchten, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias oder die e-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -177,7 +177,7 @@ Beispielsweise gibt der Wert `Owner` für die *DefaultAuditSet* -Eigenschaft fü
 
 - Die standardmäßigen Postfachaktionen für den Postfachbesitzer werden überwacht.
 
-- Die überwachten Postfachaktionen `Delegate` für `Admin` die-und-Anmeldetypen wurden von den Standardaktionen geändert.
+- Die überwachten Postfachaktionen für die `Delegate` -und- `Admin` Anmeldetypen wurden von den Standardaktionen geändert.
 
 Ein leerer Wert für die *DefaultAuditSet* -Eigenschaft gibt an, dass die Postfachaktionen für alle drei Anmeldetypen für das Benutzerpostfach oder ein freigegebenes Postfach geändert wurden.
 
@@ -185,10 +185,10 @@ Weitere Informationen finden Sie im Abschnitt [ändern oder Wiederherstellen von
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Anzeigen der Postfachaktionen, die für Postfächer angemeldet sind
 
-Wenn Sie die Postfachaktionen anzeigen möchten, die derzeit für Benutzerpostfächer oder freigegebene Postfächer angemeldet sind, ersetzen \<Sie Mailbox Identity\> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle in Exchange Online PowerShell aus.
+Wenn Sie die Postfachaktionen anzeigen möchten, die derzeit für Benutzerpostfächer oder freigegebene Postfächer angemeldet sind, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle in Exchange Online PowerShell aus.
 
 > [!NOTE]
-> Obwohl Sie den `-GroupMailbox` Switch den folgenden **Get-Mailbox-** Befehlen für Microsoft 365-Gruppen Postfächer hinzufügen können, glauben Sie nicht, welche Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Microsoft 365-Gruppen Postfächer überwacht werden, werden im Abschnitt [Postfachaktionen für Microsoft 365-Gruppen Postfächer](#mailbox-actions-for-microsoft-365-group-mailboxes) weiter oben in diesem Thema beschrieben.
+> Obwohl Sie den Switch den `-GroupMailbox` folgenden **Get-Mailbox-** Befehlen für Microsoft 365-Gruppen Postfächer hinzufügen können, glauben Sie nicht, welche Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Microsoft 365-Gruppen Postfächer überwacht werden, werden im Abschnitt [Postfachaktionen für Microsoft 365-Gruppen Postfächer](#mailbox-actions-for-microsoft-365-group-mailboxes) weiter oben in diesem Thema beschrieben.
 
 #### <a name="owner-actions"></a>Besitzer Aktionen
 
@@ -223,9 +223,9 @@ Sie können die Parameter *AuditAdmin*, *AuditDelegate*oder *AuditOwner* im Cmdl
 
 Sie können zwei verschiedene Methoden verwenden, um die Postfachaktionen anzugeben:
 
-- *Ersetzen* (überschreiben) der vorhandenen Postfachaktionen mithilfe dieser Syntax `action1,action2,...actionN`:.
+- *Ersetzen* (überschreiben) der vorhandenen Postfachaktionen mithilfe dieser Syntax: `action1,action2,...actionN` .
 
-- *Hinzufügen oder entfernen* von Postfachaktionen ohne Beeinträchtigung anderer vorhandener Werte mithilfe dieser Syntax `@{Add="action1","action2",..."actionN"}` : `@{Remove="action1","action2",..."actionN"}`oder.
+- *Hinzufügen oder entfernen* von Postfachaktionen ohne Beeinträchtigung anderer vorhandener Werte mithilfe dieser Syntax: `@{Add="action1","action2",..."actionN"}` oder `@{Remove="action1","action2",..."actionN"}` .
 
 In diesem Beispiel werden die Aktionen des Administratorpostfachs für das Postfach mit dem Namen "Gabriela Laureano zugewiesen" geändert, indem die Standardaktionen mit SoftDelete und HardDelete überschrieben werden.
 
@@ -315,7 +315,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Derzeit können Sie die postfachüberwachung für bestimmte Postfächer nicht deaktivieren, wenn die postfachüberwachung standardmäßig in Ihrer Organisation aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled* -Postfacheigenschaft auf **false** ignoriert.
 
-Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Beispiel:
+Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Zum Beispiel:
 
 - Postfachbesitzer Aktionen, die von den umgangenen Benutzern ausgeführt werden, werden nicht protokolliert.
 
@@ -323,7 +323,7 @@ Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in
 
 - Von den umgangenen Benutzern ausgeführte Administratoraktionen werden nicht protokolliert.
 
-Wenn Sie die postfachüberwachungsprotokollierung für einen bestimmten Benutzer \<umgehen\> möchten, ersetzen Sie Mailbox Identity durch den Namen, die e-Mail-Adresse, den Alias oder den Benutzerprinzipalnamen (username) des Benutzers, und führen Sie den folgenden Befehl aus:
+Wenn Sie die postfachüberwachungsprotokollierung für einen bestimmten Benutzer umgehen möchten, ersetzen Sie \< Mailbox Identity \> durch den Namen, die e-Mail-Adresse, den Alias oder den Benutzerprinzipalnamen (username) des Benutzers, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -343,16 +343,16 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
   Zum Abrufen von postfachüberwachungsprotokoll Einträgen für Benutzer ohne E5-Lizenzen haben Sie folgende Möglichkeiten:
 
-  - Aktivieren Sie die postfachüberwachung für einzelne Postfächer manuell ( `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`führen Sie den Befehl aus). Anschließend können Sie Überwachungsprotokoll suchen im Security & Compliance Center oder über die API für die Office 365-Verwaltungsaktivität verwenden.
+  - Aktivieren Sie die postfachüberwachung für einzelne Postfächer manuell (führen Sie den Befehl aus `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). Anschließend können Sie Überwachungsprotokoll suchen im Security & Compliance Center oder über die API für die Office 365-Verwaltungsaktivität verwenden.
   
     > [!NOTE]
-    > Wenn die postfachüberwachung für das Postfach bereits aktiviert ist, Ihre Suche jedoch keine Ergebnisse zurückgibt, ändern Sie den Wert des Parameters _AuditEnabled_ in `$false` und `$true`dann zurück zu.
+    > Wenn die postfachüberwachung für das Postfach bereits aktiviert ist, Ihre Suche jedoch keine Ergebnisse zurückgibt, ändern Sie den Wert des Parameters _AuditEnabled_ in `$false` und dann zurück zu `$true` .
   
   - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
 
-    - [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen.
+    - [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen.
 
-    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen und die Ergebnisse per e-Mail an angegebene Empfänger zu senden.
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen und die Ergebnisse per e-Mail an angegebene Empfänger zu senden.
 
   - Verwenden Sie das Exchange Admin Center (EAC) in Exchange Online, um folgende Aktionen auszuführen:
 
@@ -362,11 +362,11 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
 - Standardmäßig werden postfachüberwachungsprotokoll-Datensätze für 90 Tage aufbewahrt, bevor Sie gelöscht werden. Sie können die Verfallszeit für Überwachungsprotokolldatensätze mithilfe des *AuditLogAgeLimit* -Parameters im Cmdlet " **Satz-Postfach** " in Exchange Online PowerShell ändern. Durch Erhöhen dieses Werts können Sie jedoch nicht nach Ereignissen suchen, die älter als 90 Tage im Überwachungsprotokoll sind.
 
-  Wenn Sie die Verfallszeit verlängern, müssen Sie das Cmdlet [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell verwenden, um das postfachüberwachungsprotokoll des Benutzers nach Datensätzen zu durchsuchen, die älter als 90 Tage sind.
+  Wenn Sie die Verfallszeit verlängern, müssen Sie das Cmdlet [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell verwenden, um das postfachüberwachungsprotokoll des Benutzers nach Datensätzen zu durchsuchen, die älter als 90 Tage sind.
 
 - Wenn Sie die *AuditLogAgeLimit* -Eigenschaft für ein Postfach vor dem Aktivieren der postfachüberwachung für die Organisation standardmäßig geändert haben, wird die Verfallszeit des Postfachs des vorhandenen Überwachungsprotokolls nicht geändert. Das bedeutet, dass die postfachüberwachung standardmäßig keine Auswirkung auf die aktuelle Altersgrenze für Post Fach Überwachungseinträge hat.
 
-- Um den *AuditLogAgeLimit* -Wert für ein Microsoft 365-Gruppenpostfach zu ändern, müssen Sie `-GroupMailbox` den Switch in den Befehl " **Postfach festlegen** " einschließen.
+- Um den *AuditLogAgeLimit* -Wert für ein Microsoft 365-Gruppenpostfach zu ändern, müssen Sie den `-GroupMailbox` Switch in den Befehl " **Postfach festlegen** " einschließen.
 
 - Postfachüberwachungsprotokoll-Datensätze werden in einem Unterordner (benannte *Überwachungen*) im Ordner "refundable Items" im Postfach jedes Benutzers gespeichert. Beachten Sie die folgenden Aspekte hinsichtlich der Post Fach Überwachungseinträge und des Ordners "Wiederherstellbare Elemente":
 

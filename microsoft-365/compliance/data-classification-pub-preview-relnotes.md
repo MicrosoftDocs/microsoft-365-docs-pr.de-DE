@@ -1,5 +1,5 @@
 ---
-title: Versionshinweise zur Datenklassifizierung (Vorschau)
+title: Veröffentlichungshinweise zur Datenklassifizierung
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,34 +13,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Versionshinweise für die öffentliche Vorschau der Datenklassifizierung.
-ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Veröffentlichungshinweise für die Datenklassifizierung.
+ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076362"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327606"
 ---
-# <a name="data-classification-public-preview-release-notes-preview"></a>Versionshinweise für die öffentliche Vorschau der Datenklassifizierung (Vorschau)
+# <a name="data-classification-release-notes"></a>Veröffentlichungshinweise zur Datenklassifizierung
 
-In dieser öffentlichen Vorschau wird eine neue Funktionalität eingeführt, mit der das Überprüfen Ihrer vertraulichen Inhalte und beschrifteten Inhalte beginnt, *bevor* Sie Richtlinien erstellen. Dies wird als **Zero Change Management** bezeichnet. Auf diese Weise können Sie die Auswirkungen aller Aufbewahrungs- und Vertraulichkeitsbezeichnungen in Ihrer Umgebung sehen und damit beginnen, Ihre Anforderungen im Zusammenhang mit Schutz- und Governancerichtlinien zu überdenken.
-
-Lesen Sie diese Versionshinweise, damit Sie diese öffentliche Vorschau optimal nutzen können. Die Punkte zwischen dem jetzigen Zeitpunkt und der allgemeinen Verfügbarkeit (GA) werden ebenfalls behandelt.
-
-## <a name="permissions-for-accessing-content-explorer"></a>Berechtigungen für den Zugriff auf den Inhalts-Explorer
-
-Der Zugriff auf den Inhalts-Explorer ist hochgradig eingeschränkt, da Sie damit den Inhalt überprüfter Dateien lesen können. Für den Zugriff auf den Inhalts-Explorer ist die Mitgliedschaft in den Rollengruppen **Inhalts-Explorer-Listenanzeige** und **Inhalts-Explorer-Inhaltsanzeige** erforderlich. Kein Konto hat standardmäßig Zugriff auf den Inhalts-Explorer. Lesen Sie die Informationen unter [Verwenden des Daten Inhalts-Explorers zur Datenklassifizierung (Vorschau)](data-classification-content-explorer.md#permissions). Ein globaler Administrator, ein Compliance-Administrator oder ein Datenadministrator kann die erforderliche Rollengruppenmitgliedschaft **Inhalts-Explorer-Listenanzeige** und **Inhalts-Explorer-Inhaltsanzeige** zuweisen.
-
-> [!TIP]
-> Die Rollengruppen **Inhalts Explorer-Listenanzeige** und **Inhalts-Explorer-Inhaltsanzeige** werden möglicherweise nicht auf der Seite "Berechtigungen" angezeigt, wohingegen die rollenbasierten Zugriffssteuerungen (RBAC) weltweit bereitgestellt werden. Wenn sie auf der Seite "Berechtigungen" nicht angezeigt werden, müssen Sie eine benutzerdefinierte Rollengruppe erstellen und der benutzerdefinierten Rollengruppe die `data classification list viewer`-Rolle bzw. die `data classification content viewer`-Rolle zuweisen.
+Lesen Sie diese Versionshinweise, damit Sie diese Datenklassifizierung optimal nutzen können.
 
 ## <a name="exchange-mailbox-count"></a>Anzahl der Exchange-Postfächer
 
 Beim Ausführen eines Drilldowns in Exchange-Postfächer wird ein kleiner QuickInfo-Tipp angezeigt. Dadurch wird darauf hingewiesen, dass die für den vertraulichen Informationstyp, die Vertraulichkeitsbezeichnung und die Aufbewahrungsbezeichnung angezeigte Gesamtzahl möglicherweise nicht genau mit der Anzahl von Elementen übereinstimmt, die im Postfach zu finden sind. Der Grund dafür ist, dass der Drilldown in den Ordner die Live-Ansichten von Inhalten abruft, die klassifiziert sind, während die Gesamtzahl berechnet wird.
 
-## <a name="seeing-guids-instead-of-label-names"></a>Anzeigen von GUIDs anstelle von Bezeichnungsnamen
-
-Bei Kunden der privaten Vorschau kam es vor, dass mit migrierten Bezeichnungen oder das Löschen einer Bezeichnung, die bereits einem Inhalt zugeordnet wurde, dazu führt, dass die Bezeichnungsnamen im Inhalts-Explorer und im Aktivitäts-Explorer in eine 32-Bit-GUID anstelle des Bezeichnungsnamens aufgelöst werden. 
 
 ## <a name="rendering-of-encrypted-documents"></a>Rendern von verschlüsselten Dokumenten
 
@@ -50,6 +38,11 @@ Verschlüsselte SharePoint-, Exchange- und OneDrive-Dateien werden im Inhalts-Ex
 
 Die SharePoint-Suche unterstützt keine Namen von Aufbewahrungsbezeichnungen, die `-` oder `_` enthalten. `Label-MIP` und `Label_MIP` werden beispielsweise nicht unterstützt. Diese Zeichen werden von der SharePoint-Suche nicht in Namen von Aufbewahrungsbezeichnungen und Namen von Typen vertraulicher Informationen unterstützt.
 
+## <a name="onedrive-remains-in-preview"></a>OneDrive bleibt in der Vorschauphase
+
+Wir haben uns Ihr wertvolles Feedback zur OneDrive-Integration während unseres Vorschauprogramms angehört. Während wir die Einzelheiten bearbeiten, können Sie auf inkonsistente Daten/Flüsse stoßen. Wir werden weiterhin OneDrive in der Vorschauphase präsentieren, bis alle Fehlerkorrekturen umgesetzt sind. Wir wissen Ihre anhaltende Unterstützung diesbezüglich zu schätzen.
+
+
 ## <a name="see-also"></a>Siehe auch
 
 - [Erste Schritte mit der Datenklassifizierung (Vorschau)](data-classification-overview.md)
@@ -57,5 +50,4 @@ Die SharePoint-Suche unterstützt keine Namen von Aufbewahrungsbezeichnungen, di
 - [Anzeigen von beschriftetem Inhalt (Vorschau)](data-classification-content-explorer.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Aufbewahrungsbezeichnungen](labels.md)
-- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
-
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)

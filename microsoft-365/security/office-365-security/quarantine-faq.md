@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können häufig gestellte Fragen und Antworten zu unter Quarantäne gestellten Nachrichten in Exchange Online Protection (EoP) anzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 0a231e363d5764465547ee1e80cc080c3d7c006c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213104"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351095"
 ---
 # <a name="quarantined-messages-faq"></a>Häufig gestellte Fragen zu Nachrichten in Quarantäne
 
@@ -40,7 +40,7 @@ Nur Administratoren können Nachrichten verwalten, die auf Schadsoftware unter Q
 
 ## <a name="how-do-i-quarantine-spam"></a>Wie kann ich Spam isolieren?
 
-Standardmäßig werden Nachrichten, die durch Spamfilterung als Spam oder Massen-e-Mail klassifiziert werden, an das Postfach des Benutzers übermittelt und in den Junk-e-Mail-Ordner verschoben. Sie können jedoch Anti-Spam-Richtlinien erstellen und konfigurieren, um Spam-oder Massen-e-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
+Standardmäßig werden Nachrichten, die durch Spamfilterung als Spam oder Massen-e-Mail klassifiziert werden, an das Postfach des Benutzers übermittelt und in den Junk-e-Mail-Ordner verschoben. Sie können jedoch Anti-Spam-Richtlinien erstellen und konfigurieren, um Spam-oder Massen-e-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Wie gebe ich Benutzern Zugriff auf die Quarantäne?
 
@@ -62,7 +62,7 @@ Nach Ablauf des Zeitraums werden die Nachrichten gelöscht und können nicht meh
 
 Im Security & Compliance Center können Sie bis zu 100 Nachrichten gleichzeitig auswählen und freigeben.
 
-Administratoren können die Cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) und [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) in Exchange Online PowerShell oder eigenständiger EoP-PowerShell verwenden, um isolierte Nachrichten massenhaft zu finden und freizugeben und falsch positive Ergebnisse in Massen zu melden.
+Administratoren können die Cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) und [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell oder eigenständiger EoP-PowerShell verwenden, um isolierte Nachrichten massenhaft zu finden und freizugeben und falsch positive Ergebnisse in Massen zu melden.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Werden bei der Suche nach in der Quarantäne isolierte Nachrichten Platzhalterzeichen unterstützt? Kann ich für eine bestimmte Domäne nach Nachricht in Quarantäne suchen?
 

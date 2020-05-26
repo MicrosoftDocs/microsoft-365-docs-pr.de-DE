@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 0729530537e1d01f2e58633bf67a968a6ae2717b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327253"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352292"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -291,11 +291,11 @@ Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den
 
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|
-| **Erstellen einer Richtlinie** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| **Bearbeiten einer Richtlinie** | [Gruppe-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Gruppe-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| **Löschen einer Richtlinie** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **Erstellen einer Richtlinie** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
+| **Bearbeiten einer Richtlinie** | [Gruppe-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Gruppe-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
+| **Löschen einer Richtlinie** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
-Zeigen Sie Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) an.
+Zeigen Sie Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) an.
 
 Im folgenden Beispiel werden die Aktivitäten für alle Aufsichts Überprüfungsaktivitäten (Richtlinien und Regeln) zurückgegeben, und es werden detaillierte Informationen zu den einzelnen Vorgängen aufgelistet:
 
@@ -309,8 +309,8 @@ In diesem Beispiel werden die Updateaktivitäten für Ihre Richtlinien für die 
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das Cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
+Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das Cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
+## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
 
 Informationen zum Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation finden Sie unter [configure Supervision Policies](configure-supervision-policies.md).

@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035031"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352324"
 ---
 # <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
@@ -45,7 +45,7 @@ Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen 
 
     |Syntax  |Beispiel  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Sie können jeden Identitätswert verwenden, der jeden Empfänger eindeutig identifiziert, beispielsweise Name, Alias, DN (Distinguished Name), kanonischer DN, e-Mail-Adresse oder GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In diesem Beispiel wird ein Alias (*meganb*) für den Parameter Identity verwendet. Dieses Cmdlet gibt Informationen zurück, die angeben, ob der Benutzer von einer Richtlinie für Informationsbarrieren betroffen ist. (Suchen Sie nach * ExoPolicyId \<: GUID>.)         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Sie können jeden Identitätswert verwenden, der jeden Empfänger eindeutig identifiziert, beispielsweise Name, Alias, DN (Distinguished Name), kanonischer DN, e-Mail-Adresse oder GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In diesem Beispiel wird ein Alias (*meganb*) für den Parameter Identity verwendet. Dieses Cmdlet gibt Informationen zurück, die angeben, ob der Benutzer von einer Richtlinie für Informationsbarrieren betroffen ist. (Suchen Sie nach * ExoPolicyId: \< GUID->.)         |
 
     **Wenn die Benutzer nicht in Richtlinien für Informationsbarrieren enthalten sind, wenden Sie sich an den Support**. Führen Sie andernfalls die nächste Aktion aus.
 
@@ -57,7 +57,7 @@ Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen 
 
     Suchen Sie nach dem Ausführen des Cmdlets in den Ergebnissen nach **AssignedSegment**-, **SegmentsAllowed**-und **SegmentsBlocked** -Werten.
 
-    Beispielsweise haben wir nach dem `Get-InformationBarrierPolicy` Ausführen des Cmdlets in der Ergebnisliste Folgendes gesehen:
+    Beispielsweise haben wir nach dem Ausführen des `Get-InformationBarrierPolicy` Cmdlets in der Ergebnisliste Folgendes gesehen:
 
     ```powershell
         AssignedSegment      : Sales
@@ -104,7 +104,7 @@ Stellen Sie sicher, dass die fraglichen Benutzer in einer Informations Sperrrich
     |---------|---------|
     |Für die ausgewählten Benutzer werden keine Segmente aufgeführt.     |Führen Sie einen der folgenden Schritte aus:<br/>– Zuweisen von Benutzern zu einem vorhandenen Segment durch Bearbeiten der Benutzerprofile in Azure Active Directory. (Weitere Informationen finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>-Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md). Definieren Sie dann entweder [eine neue Richtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) , oder [Bearbeiten Sie eine vorhandene Richtlinie](information-barriers-edit-segments-policies.md#edit-a-policy) , um dieses Segment einzubeziehen.  |
     |Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen.     |Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer neuen Informations Sperrrichtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes betreffende Segment<br/>- [Bearbeiten einer vorhandenen Richtlinie für Informationsbarrieren](information-barriers-edit-segments-policies.md#edit-a-policy) , um Sie dem richtigen Segment zuzuweisen         |
-    |Segmente werden aufgelistet, und jede Richtlinie enthält eine Informations Barriere.     |-Führen Sie `Get-InformationBarrierPolicy` das Cmdlet aus, um sicherzustellen, dass Richtlinien für Informationsbarrieren aktiv sind.<br/>-Führen Sie `Get-InformationBarrierPoliciesApplicationStatus` das Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet werden<br/>-Ausführen des `Start-InformationBarrierPoliciesApplication` Cmdlets zum Anwenden aller Active Information Barrier-Richtlinien          |
+    |Segmente werden aufgelistet, und jede Richtlinie enthält eine Informations Barriere.     |-Führen `Get-InformationBarrierPolicy` Sie das Cmdlet aus, um sicherzustellen, dass Richtlinien für Informationsbarrieren aktiv sind.<br/>-Führen `Get-InformationBarrierPoliciesApplicationStatus` Sie das Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet werden<br/>-Ausführen des `Start-InformationBarrierPoliciesApplication` Cmdlets zum Anwenden aller Active Information Barrier-Richtlinien          |
     
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problem: Ich muss einen einzelnen Benutzer aus einer Informations Sperrrichtlinie entfernen.
@@ -163,7 +163,7 @@ Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-adressbuchrichtli
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) her. 
 
-2. Führen Sie das Cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) aus, und überprüfen Sie die Ergebnisse.
+2. Führen Sie das Cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) aus, und überprüfen Sie die Ergebnisse.
 
     |Ergebnisse  |Nächster Schritt  |
     |---------|---------|
@@ -189,13 +189,13 @@ Wenn Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet ausführen
 
 ### <a name="what-to-do"></a>Nächste Schritte
 
-1. Suchen im Überwachungsprotokoll für `<application guid>`. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
+1. Suchen im Überwachungsprotokoll für `<application guid>` . Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Überprüfen Sie die detaillierte Ausgabe des Überwachungsprotokolls auf die Werte der `"UserId"` Felder `"ErrorDetails"` und. Dadurch erhalten Sie den Grund für den Fehler. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
+2. Überprüfen Sie die detaillierte Ausgabe des Überwachungsprotokolls auf die Werte der `"UserId"` `"ErrorDetails"` Felder und. Dadurch erhalten Sie den Grund für den Fehler. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,7 +206,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >"ErrorDetails": "Status: IBPolicyConflict. Fehler: das IB-Segment "Segment id1" und das IB-Segment "Segment id2" hat einen Konflikt und kann dem Empfänger nicht zugewiesen werden. 
 
-3. Normalerweise werden Sie feststellen, dass ein Benutzer in mehr als einem Segment enthalten ist. Sie können dieses Problem beheben, indem `-UserGroupFilter` Sie den `OrganizationSegments`Wert in aktualisieren.
+3. Normalerweise werden Sie feststellen, dass ein Benutzer in mehr als einem Segment enthalten ist. Sie können dieses Problem beheben, indem Sie den `-UserGroupFilter` Wert in aktualisieren `OrganizationSegments` .
 
 4. Wenden Sie Richtlinien zu Informationsbarrieren erneut an, indem Sie [diese Verfahren verwenden](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 

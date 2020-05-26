@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe des Office 365 Überwachungsprotokoll-Such Tools häufige Supportprobleme für e-Mail-Konten beheben können.
-ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034211"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351128"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
 
@@ -47,7 +47,7 @@ Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" 
 
 In diesem Abschnitt werden die Grundlagen für die Erstellung und Ausführung von Überwachungsprotokoll suchen beschrieben. Verwenden Sie diese Anweisungen als Ausgangspunkt für jedes Problembehandlungsszenario in diesem Artikel. Ausführlichere Schritt-für-Schritt-Anweisungen finden Sie unter durch [Suchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Wechseln Sie [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+1. Wechseln Sie zu, [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
     Die Seite **Überwachungsprotokollsuche** wird angezeigt. 
     
@@ -128,7 +128,7 @@ Wenn Sie feststellen, dass die e-Mail-Weiterleitung nicht für das Postfach fest
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Weitere Informationen zu den Parametern im Zusammenhang mit der e-Mail-Weiterleitung finden Sie im Artikel zum [Festlegen von Postfächern](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Weitere Informationen zu den Parametern im Zusammenhang mit der e-Mail-Weiterleitung finden Sie im Artikel zum [Festlegen von Postfächern](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Ermitteln, ob ein Benutzer e-Mail-Elemente gelöscht hat
 
@@ -192,9 +192,9 @@ Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungseinträge für
 
 a. Im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise "Sarad") und den Namen der Posteingangsregel (beispielsweise "Nachrichten von Administrator verschieben").
 
-b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den Parameter *from* definierte Wert gibt an, dass die Posteingangsregel auf von admin@alpinehouse.onmicrosoft.com gesendeten e-Mails agiert. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den Parameter *from* definierte Wert gibt an, dass die Posteingangsregel auf von admin@alpinehouse.onmicrosoft.com gesendeten e-Mails agiert. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
-c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. In diesem Beispiel werden Nachrichten, die von admin@alpinehouse.onmicrosoft.com empfangen werden, in den Ordner " *AdminSearch*" verschoben. Eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können, finden Sie auch im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. In diesem Beispiel werden Nachrichten, die von admin@alpinehouse.onmicrosoft.com empfangen werden, in den Ordner " *AdminSearch*" verschoben. Eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können, finden Sie auch im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
 d. Das **UserID** -Feld gibt den Benutzer an, der die im Feld **objectID** angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt.
 
@@ -202,7 +202,7 @@ d. Das **UserID** -Feld gibt den Benutzer an, der die im Feld **objectID** angeg
 
 Wenn Sie Überwachungseinträge im Überwachungsprotokoll überprüfen, werden möglicherweise Datensätze angezeigt, die angeben, dass ein externer Benutzer von Azure Active Directory authentifiziert wurde und sich erfolgreich bei Ihrer Organisation angemeldet hat. Beispielsweise kann ein Administrator in contoso.onmicrosoft.com einen Überwachungseintrag sehen, der anzeigt, dass ein Benutzer aus einer anderen Organisation (beispielsweise fabrikam.onmicrosoft.com) sich erfolgreich bei Contoso.onmicrosoft.com angemeldet hat. Ebenso werden möglicherweise Überwachungseinträge angezeigt, die Benutzer mit einem Microsoft-Konto (MSA) anzeigen, beispielsweise eine Outlook.com-oder Live.com, die sich erfolgreich bei Ihrer Organisation angemeldet haben. In diesen Situationen ist die überwachte Aktivität **Benutzer angemeldet**. 
 
-Dieses Verhalten ist so beabsichtigt. Azure Active Directory (Azure AD), der Verzeichnisdienst, ermöglicht die so genannte *Pass-Through-Authentifizierung* , wenn ein externer Benutzer versucht, auf eine SharePoint-Website oder einen OneDrive-Standort in Ihrer Organisation zuzugreifen. Wenn der externe Benutzer versucht, dies zu tun, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer derjenige ist, der er sagt. Die Angabe der erfolgreichen Anmeldung im Überwachungsdatensatz ist das Ergebnis Azure AD Authentifizierung des Benutzers. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer in der Lage war, auf Ressourcen zuzugreifen oder andere Aktionen in Ihrer Organisation auszuführen. Er gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint-oder OneDrive-Ressourcen zugreifen kann, muss ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er Ihnen eine Freigabeeinladung oder einen anonymen Freigabe Link sendet. 
+Es handelt sich hierbei um ein beabsichtigtes Verhalten. Azure Active Directory (Azure AD), der Verzeichnisdienst, ermöglicht die so genannte *Pass-Through-Authentifizierung* , wenn ein externer Benutzer versucht, auf eine SharePoint-Website oder einen OneDrive-Standort in Ihrer Organisation zuzugreifen. Wenn der externe Benutzer versucht, dies zu tun, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer derjenige ist, der er sagt. Die Angabe der erfolgreichen Anmeldung im Überwachungsdatensatz ist das Ergebnis Azure AD Authentifizierung des Benutzers. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer in der Lage war, auf Ressourcen zuzugreifen oder andere Aktionen in Ihrer Organisation auszuführen. Er gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint-oder OneDrive-Ressourcen zugreifen kann, muss ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er Ihnen eine Freigabeeinladung oder einen anonymen Freigabe Link sendet. 
 
 > [!NOTE]
 > Azure AD ermöglicht die Pass-Through-Authentifizierung nur für *Anwendungen von Erstanbietern*wie SharePoint Online und OneDrive für Unternehmen. Sie ist für andere Drittanbieteranwendungen nicht zulässig.

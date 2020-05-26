@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595492"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327293"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
 Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten *Regel* enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird. 
   
-Dieses Beispiel können Sie auf weitere integrierte vertrauliche Informationstypen anwenden. Eine Liste der standardmäßigen vertraulichen Informationstypen und XML-Definitionen finden Sie unter [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md). 
+Dieses Beispiel können Sie auf weitere integrierte vertrauliche Informationstypen anwenden. Eine Liste der standardmäßigen vertraulichen Informationstypen und XML-Definitionen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md). 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportieren der XML-Datei der aktuellen Regeln
 
@@ -234,7 +234,7 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
    
 ## <a name="for-more-information"></a>Weitere Informationen
 
-- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
     
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
     

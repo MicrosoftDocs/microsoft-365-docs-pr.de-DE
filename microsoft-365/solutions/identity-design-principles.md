@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160378"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352546"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Zur Identität und darüber hinaus – ein Architektur Standpunkt
 
@@ -94,7 +94,7 @@ Sollte ich die Standard Synchronisierungsregeln anpassen ([Filterobjekte](https:
 Unterstützt XYZ-Saas die Just-in-time (JIT)-Vorgehensweise, warum müssen Sie mich synchronisieren? Siehe weiter oben. Viele Anwendungen benötigen "Profil"-Informationen für die Funktionalität. Sie können keine GAL haben, wenn alle e-Mail-aktivierten Objekte nicht verfügbar sind. Gleiches gilt für [Benutzer](https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning) Prothesen in Anwendungen, die in Azure AD integriert sind.
 
 
-### <a name="authentication"></a>Authentifizierung
+### <a name="authentication"></a>Authentication
 
 [Kennwort-Hash-Synchronisierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) (PHS) vs. [Pass-Through-Authentifizierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) vs. [Federation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
@@ -183,7 +183,7 @@ Einige Kunden entscheiden sich für das wechseln mit mehr als einem Mandanten. D
 - Simulation der Kundenumgebung, die die Produktionsumgebung des Kunden nicht ändert. 
 - Entwicklung von Software für Kunden.
 
-In diesen Szenarien mit mehreren Mandanten möchten Kunden häufig die gleiche Konfiguration für Mandanten beibehalten oder Konfigurationsänderungen und-Verschiebungen melden. Dies bedeutet häufig das Wechseln von manuellen Änderungen zur Konfiguration als Code. Microsoft Premiere Support bietet einen Workshop für diese Arten von Anforderungen basierend auf dieser öffentlichen IP: [https://Microsoft365dsc.com](https://Microsoft365dsc.com).
+In diesen Szenarien mit mehreren Mandanten möchten Kunden häufig die gleiche Konfiguration für Mandanten beibehalten oder Konfigurationsänderungen und-Verschiebungen melden. Dies bedeutet häufig das Wechseln von manuellen Änderungen zur Konfiguration als Code. Microsoft Premiere Support bietet einen Workshop für diese Arten von Anforderungen basierend auf dieser öffentlichen IP: [https://Microsoft365dsc.com](https://Microsoft365dsc.com) .
 
 
 ### <a name="multi-geo"></a>Multi-Geo 
@@ -209,7 +209,7 @@ Es gibt eine lange und wachsende Liste [integrierter Rollen](https://docs.micros
 
 Es ist nicht möglich, alles zu delegieren (obwohl die Lücke abnimmt), was bedeutet, dass die globale Administratorrolle manchmal verwendet werden muss. Konfigurationscode und Automatisierung sollten anstelle der Personen Mitgliedschaft in dieser Rolle berücksichtigt werden.
 
-**Hinweis**: das Microsoft 365 Admin Center verfügt über eine benutzerfreundlichere Oberfläche, verfügt jedoch über eine Teilmenge der Funktionen im Vergleich zum Azure AD Administrator Erlebnis. Beide Portale verwenden dieselben Azure AD Rollen, sodass Änderungen an der gleichen Stelle stattfinden. Tipp: Wenn Sie eine auf Identitätsverwaltung ausgerichtete Verwaltungsbenutzeroberfläche ohne alle Azure clutter möchten, verwenden [https://aad.portal.azure.com](https://aad.portal.azure.com)Sie. 
+**Hinweis**: das Microsoft 365 Admin Center verfügt über eine benutzerfreundlichere Oberfläche, verfügt jedoch über eine Teilmenge der Funktionen im Vergleich zum Azure AD Administrator Erlebnis. Beide Portale verwenden dieselben Azure AD Rollen, sodass Änderungen an der gleichen Stelle stattfinden. Tipp: Wenn Sie eine auf Identitätsverwaltung ausgerichtete Verwaltungsbenutzeroberfläche ohne alle Azure clutter möchten, verwenden Sie [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
 
 Was ist im Namen? Machen Sie keine Annahmen aus dem Namen der Rolle. Sprache ist kein sehr präzises Tool. Ziel sollte es sein, Vorgänge zu definieren, die delegiert werden müssen, bevor Sie sich mit den erforderlichen Rollen begeben. Durch das Hinzufügen einer Person zur Rolle "Sicherheits Leser" werden keine Sicherheitseinstellungen in allen Bereichen angezeigt. 
 
@@ -243,29 +243,29 @@ Wie bereits erwähnt, suchen viele Kunden nach einem präziseren Delegierungsmod
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft**  -  [ Teamshttps://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft Teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **Berechtigungs**  -  [ Filterunghttps://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **Compliance-Grenzen**  -  [ https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **Erweiterte**  -  [ eDiscoveryhttps://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **Berechtigungs Filterung**  -  [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **Compliance-Grenzen**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **Erweiterte eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **Multi-Geo** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   Hinweis: dieser Link befindet sich im Stammverzeichnis der Dokumentation. Es gibt mehrere Arten von Diensten mit Variationen im Administrator/Delegierungsmodell.
-- **Power-Plattform**  -  [ https://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **Power-apps**  -  [ https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **Power-Plattform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **Power-apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     Hinweis: Es gibt mehrere Typen mit Variationen in den Modellen admin/Delegation.
-  + **Power-Automatisierung**  -  [ https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI** -  [ PowerBIhttps://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **Power-Automatisierung**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 Hinweis: Sicherheit und Delegierung von Datenplattformen (die Power BI ist eine Komponente) ist ein komplexer Bereich.
-- **MEM/InTune**  -  [ https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft Defender ATP**  -  [ https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **Mem/InTune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft Defender ATP**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
 - **Microsoft Threat Protection** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Microsoft Cloud-App-Sicherheit** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Daten**  -  [ Stromhttps://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **Informationsbarrieren**  -  [ https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **Datenstrom**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **Informationsbarrieren**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
-Für den Rest war die Suche in Dokumenten in letzter Zeit wirklich gut [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers). 
+Für den Rest war die Suche in Dokumenten in letzter Zeit wirklich gut [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) . 
 
 
 ### <a name="activity-logs"></a>Aktivitätsprotokolle
@@ -273,7 +273,7 @@ Office 365 verfügt über ein [einheitliches Überwachungsprotokoll](https://doc
 
 Beispiele für Microsoft 365-Protokolle, auf die über andere APIs zugegriffen wird, sind folgende:
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (Aktivitäten, die nicht mit Office 365 in Zusammenhangstehen)
-- [Exchange-Nachrichtenverfolgung](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Exchange-Nachrichtenverfolgung](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - Oben beschriebene Threat/UEBA-Systeme (beispielsweise Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634197"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352272"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -312,7 +312,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename.backup>
 ```
 
-Stellen Sie sicher, dass Ihre Ausgabedatei `.backup`das Suffix verwendet.
+Stellen Sie sicher, dass Ihre Ausgabedatei das Suffix verwendet `.backup` .
   
 Die aus diesem Cmdlet resultierende Ausgabedatei ist verschlüsselt und kann außerhalb von Azure Key Vault nicht verwendet werden. Die Sicherung kann nur für das Azure-Abonnement wiederhergestellt werden, aus dem die Sicherung erstellt wurde.
   
@@ -448,7 +448,7 @@ Zuweisen der Datenverschlüsselungsrichtlinie (DEP) zu einem Postfach mithilfe d
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
   
 ### <a name="validate-mailbox-encryption"></a>Überprüfen einer Postfachverschlüsselung
 

@@ -1,5 +1,5 @@
 ---
-title: Weitere Informationen Vertraulichkeitsbezeichnungen
+title: Informationen zu Vertraulichkeitsbezeichnungen
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen und gleichzeitig sicherzustellen, dass Produktivität und Zusammenarbeit der Benutzer nicht beeinträchtigt werden. Mit diesen Bezeichnungen können Schutzeinstellungen angewendet werden, die die Verschlüsselung optischer Kennzeichnungen wie Fußzeilen und Wasserzeichen umfassen.
-ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen, ohne die Produktivität und Zusammenarbeit der Benutzer zu behindern.
+ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213283"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292543"
 ---
-# <a name="learn-about-sensitivity-labels"></a>Weitere Informationen Vertraulichkeitsbezeichnungen
+# <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
 

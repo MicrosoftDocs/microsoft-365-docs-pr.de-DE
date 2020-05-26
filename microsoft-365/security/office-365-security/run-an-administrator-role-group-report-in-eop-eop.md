@@ -1,5 +1,5 @@
 ---
-title: Ausführen eines Administrator-Rollengruppen Berichts in eigenständigen EoP
+title: Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in eigenständigen Exchange Online Schutz (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder aus Administratorrollengruppen hinzugefügt oder entfernt, EoP protokolliert jedes Vorkommen.
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209175"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350939"
 ---
-# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppen Berichts in eigenständigen EoP
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer, wenn ein Administrator Mitglieder aus administrativen Rollengruppen hinzufügt oder diese entfernt, protokolliert der Dienst jedes Vorkommen. Weitere Informationen zu Rollengruppen in eigenständigen EoP finden Sie unter [Permissions in Standalone EoP](feature-permissions-in-eop.md).
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 Wenn Ihre Suchvorgänge viele Protokolleinträge zurückgeben, wird empfohlen, dass Sie das in **verwenden Exchange Online PowerShell bereitgestellte Verfahren verwenden, um nach Überwachungsprotokolleinträgen zu suchen und Ergebnisse an einen Empfänger** weiter unten in diesem Thema zu senden. Bei dieser Vorgehensweise wird eine XML-Datei als E-Mail-Anlage an die angegebenen Empfänger gesendet, sodass die relevanten Daten einfacher extrahiert werden können.
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
 

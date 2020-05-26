@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Verwenden Sie diese Test Umgebungs Anleitung, um die Verwaltung privilegierten Zugriffs für Ihre Microsoft 365 Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632863"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352522"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Privileged Access Management für die Microsoft 365 Enterprise-Testumgebung
 
@@ -62,9 +62,9 @@ In dieser Phase stellen Sie sicher, dass die Richtlinie für privilegierten Zugr
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testen der Fähigkeit zum Ausführen einer Aufgabe, die nicht in einer privilegierten Zugriffsrichtlinie definiert ist
 
-Stellen Sie zunächst eine Verbindung mit der Exchange-Verwaltungs-PowerShell mit den Anmeldeinformationen eines als globaler Administrator konfigurierten Benutzers in Ihrer Testumgebung her, und versuchen Sie, eine neue Journal Regel zu erstellen. Der [New-JournalRule-](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) Vorgang ist derzeit nicht in einer privilegierten Zugriffsrichtlinie für Ihre Organisation definiert.
+Stellen Sie zunächst eine Verbindung mit der Exchange-Verwaltungs-PowerShell mit den Anmeldeinformationen eines als globaler Administrator konfigurierten Benutzers in Ihrer Testumgebung her, und versuchen Sie, eine neue Journal Regel zu erstellen. Der [New-JournalRule-](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) Vorgang ist derzeit nicht in einer privilegierten Zugriffsrichtlinie für Ihre Organisation definiert.
 
-1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation** > **Microsoft Exchange Online Remote-PowerShell-Modul** mit dem globalen Administratorkonto für Ihre Testumgebung an.
+1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation**  >  **Microsoft Exchange Online Remote-PowerShell-Modul** mit dem globalen Administratorkonto für Ihre Testumgebung an.
 
 2. Erstellen Sie in der Exchange-Verwaltungs-PowerShell eine neue Journal Regel für Ihre Organisation:
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit den Anmeldeinformationen des globalen Administratorkontos für Ihre Testumgebung an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **Sicherheit & Zugriff auf Datenschutz**  >  **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -103,7 +103,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Testen der Genehmigungsanforderung für den in einer privilegierten Zugriffsrichtlinie definierten New-JournalRule-Vorgang
 
-1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation** > **Microsoft Exchange Online-Remote-PowerShell-Modul** mithilfe eines globalen Administratorkontos für Ihre Testumgebung an.
+1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation**  >  **Microsoft Exchange Online-Remote-PowerShell-Modul** mithilfe eines globalen Administratorkontos für Ihre Testumgebung an.
 
 2. Erstellen Sie in der Exchange-Verwaltungs-PowerShell eine neue Journal Regel für Ihre Organisation:
 
@@ -125,7 +125,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit dem globalen Administratorkonto für Ihre Testumgebung an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **Sicherheit & Zugriff auf Datenschutz**  >  **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit den Anmeldeinformationen für Benutzer 3 in Ihrer Testumgebung an (Mitglied der Sicherheitsgruppe "privilegierte Zugriffs genehmigende Personen" in Ihrer Testumgebung).
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **Sicherheit & Zugriff auf Datenschutz**  >  **privilegiert**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testen Erstellen einer neuen Journal Regel mit privilegiertem Zugriff genehmigt für die Aufgabe "New-JournalRule"
 
-1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation** > **Microsoft Exchange Online Remote-PowerShell-Modul** mit dem globalen Administratorkonto für Ihre Testumgebung an.
+1. Öffnen Sie auf Ihrem lokalen Computer, und melden Sie sich beim Exchange Online Remote-PowerShell-Modul bei der **Microsoft Corporation**  >  **Microsoft Exchange Online Remote-PowerShell-Modul** mit dem globalen Administratorkonto für Ihre Testumgebung an.
 
 2. Erstellen Sie in der Exchange-Verwaltungs-PowerShell eine neue Journal Regel für Ihre Organisation:
 

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065910"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254434"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 – Standard für Business Continuity Management 
 
 ## <a name="iso-22301-overview"></a>ISO 22301-Übersicht
 
-Die International Organization for Standardization (ISO) ist eine unabhängige Nichtregierungsorganisation und der weltweit größte Entwickler von freiwilligen internationalen Standards. Die ISO bildete den technischen Ausschuss des TC 223 Societal Security, um Standards zum Schutz der Gesellschaft, einschließlich Organisationen, im Falle von Katastrophen, wie Naturkatastrophen, Terroranschläge oder Ausfall des Energieversorgungsnetzes, zu entwickeln.
+Die International Organization for Standardization (ISO) ist eine unabhängige Nichtregierungsorganisation und der weltweit größte Entwickler von freiwilligen internationalen Standards. Die ISO bildete den technischen Ausschuss TC 223 Societal Security, um Standards zum Schutz der Gesellschaft, einschließlich Organisationen, im Falle von Unglücksfällen, wie Naturkatastrophen, Terroranschlägen oder Ausfall des Energieversorgungsnetzes, zu entwickeln.
 
 Der Standard ISO 22301:2012 wurde vom technischen Ausschuss 2012 veröffentlicht und ist der erste internationale Standard für Verwaltungssysteme zur Sicherstellung der Geschäftskontinuität. ISO 22301 ist der Premiumstandard für die Geschäftskontinuität und die Zertifizierung weist die Einhaltung strenger Vorschriften für Verhinderung, Abschwächung, Reaktion und Wiederherstellung bei Unterbrechungen der Geschäftskontinuität nach.
 
@@ -35,21 +35,24 @@ Microsoft erhielt als erster Anbieter hyperskalierter Clouddienste die ISO 2230
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
-- [Azure und Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure und Azure Government und Azure Deutschland](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App-Sicherheit
+- Dynamics 365, Dynamics 365 Government und Dynamics 365 Deutschland
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - [Office 365 für Geschäftskunden, Behörden und Bildungseinrichtungen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan bzw. einer -Anwendungssuite enthalten
-- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan oder einer -Anwendungssuite enthalten
+- Power BI Embedded
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
-- [Azure und Azure ISO 22301-Registrierungszertifikat](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Azure ISO 22301-Bewertungsbericht](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure, Dynamics 365 und Onlinedienste: ISO22301-Zertifikat](https://aka.ms/azureiso22301cert)
+- [Azure, Dynamics 365 und Onlinedienste: ISO22301-Bewertungsbericht](https://aka.ms/azureiso22301report)
 - [BSI 22301 Microsoft Office 365-Zertifikat](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 Stage 2 Nachtrag](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 Stage 2-Bericht](https://go.microsoft.com/fwlink/p/?linkid=2092211)

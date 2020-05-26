@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte hinter dem Dokument Fingerabdruck und das Erstellen eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074947"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352022"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -65,7 +65,7 @@ Das Dokumentieren von Fingerabdrücken erkennt in den folgenden Fällen keine ve
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregel Pakets basierend auf dem Dokument Fingerabdruck
 
-Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security &amp; Compliance Center einen Dokument Fingerabdruck erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Beachten Sie, dass Sie derzeit nur mithilfe von PowerShell im Security Compliance Center einen Dokument Fingerabdruck erstellen können &amp; . Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu erkennen. Zum Erstellen eines Klassifizierungsregel Pakets basierend auf einem Dokument Fingerabdruck verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** . Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **festlegen-DlpSensitiveInformationType** in derselben PowerShell-Sitzung aus. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können.
   
@@ -84,7 +84,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Sie können jetzt das Cmdlet **Get-DlpSensitiveInformationType** verwenden, um nach allen DLP-Daten Klassifizierungsregel Paketen zu suchen, und in diesem Beispiel ist "Contoso-Kunde vertraulich" Teil der Liste der Daten Klassifizierungsregel Pakete. 
   
-Fügen Sie abschließend das Daten Klassifizierungsregel Paket "Contoso Customer Confidential" zu einer DLP-Richtlinie &amp; im Security Compliance Center hinzu. In diesem Beispiel wird einer vorhandenen DLP-Richtlinie mit dem Namen "ConfidentialPolicy" eine Regel hinzugefügt.
+Fügen Sie abschließend das Daten Klassifizierungsregel Paket "Contoso Customer Confidential" zu einer DLP-Richtlinie im Security &amp; Compliance Center hinzu. In diesem Beispiel wird einer vorhandenen DLP-Richtlinie mit dem Namen "ConfidentialPolicy" eine Regel hinzugefügt.
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
@@ -100,8 +100,8 @@ DLP erkennt jetzt Dokumente, die dem Fingerabdruck des Dokuments "Contoso Custom
   
 Informationen zu Syntax und Parametern finden Sie unter:
 
-- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [Gruppe-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
+- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [Gruppe-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)

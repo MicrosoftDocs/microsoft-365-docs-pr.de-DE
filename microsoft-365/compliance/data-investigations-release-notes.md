@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: In diesem Artikel finden Sie Versionshinweise, die Änderungen und neue Features für das Tool zur Datenermittlung (Preview) in Microsoft 365 enthalten.
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035727"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352282"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Anmerkungen zur Version für Daten Untersuchungen (Preview) in Microsoft 365
 
@@ -50,4 +50,4 @@ Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 36
 
 - **Jobs** – Status der lang dauernden Prozesse nachverfolgen.
 
-- **Hartes Löschen von Postfachelementen** -in dringenden Situationen müssen Sie möglicherweise ungültige Elemente dauerhaft löschen. Dazu können Sie den Befehl **New-ComplianceSearchAction-Purge-purgetype HardDelete** in Security & Compliance Center PowerShell ausführen, um Elemente dauerhaft aus Postfächern zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Hartes Löschen von Postfachelementen** -in dringenden Situationen müssen Sie möglicherweise ungültige Elemente dauerhaft löschen. Dazu können Sie den Befehl **New-ComplianceSearchAction-Purge-purgetype HardDelete** in Security & Compliance Center PowerShell ausführen, um Elemente dauerhaft aus Postfächern zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction).

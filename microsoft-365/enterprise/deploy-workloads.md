@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 Enterprise-Workloads und -Szenarien
+title: Microsoft 365 Enterprise-Workloads
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Führen Sie die Benutzer Ihrer Organisation in die Produktivitätsworkloads von Microsoft 365 Enterprise ein.
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066215"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268281"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise-Workloads und -Szenarien
+# <a name="microsoft-365-for-enterprise-workloads"></a>Microsoft 365 Enterprise-Workloads
 
 Um die Vorteile für Kreativität und Teamwork von Microsoft 365 Enterprise zu realisieren, stellen Sie die folgenden Workloads über Ihre Foundation-Infrastruktur bereit:
 
@@ -29,31 +29,13 @@ Um die Vorteile für Kreativität und Teamwork von Microsoft 365 Enterprise zu r
 
 Im Artikel [Migration](migration-microsoft-365-enterprise-workload.md) finden Sie eine allgemeine Roadmap zum Migrieren Ihrer gesamten Organisation zu Microsoft 365 Enterprise. Dies beinhaltet Microsoft Office-Client-Produkte, lokale Office-Serverprodukte und Microsoft Windows-basierte Geräte.
 
-Szenarien verwenden Funktionen und Dienste aus Microsoft 365 Enterprise auf integrierte Art und Weise, um eine Geschäftsanforderung zu erfüllen. 
+Dies sind die Workloads im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
 
-Eine solche Notwendigkeit besteht darin sicherzustellen, dass Ihre Mitarbeiter produktiv und sicher arbeiten können, wenn sie nicht direkt mit Ihrem Intranet verbunden sind. Eine Roadmap zur Bereitstellung von Infrastrukturelementen und zur Förderung der Einführung wichtiger Workloads, wie z. B. Microsoft Teams and Exchange Online, für Remotemitarbeiter finden Sie unter [Fördern von Remotemitarbeitern](empower-people-to-work-remotely.md).
-
-Eine derartige Anforderung ist der Schutz von umfassend regulierten Daten, die in Microsoft 365 gespeichert sind. Stark regulierte Daten umfassen folgende digitale Assets:
-
-- Daten, die regionalen Vorschriften unterliegen.
-- Die wertvollsten Daten für Ihre Organisation, z. B. Geschäftsgeheimnisse, Informationen zu Finanzen oder Personalwesen und die Organisationsstrategie.
-
-Informationen zum Schutz dieser Daten vor internen und externen Bedrohungen, finden Sie unter:
-
-- [Microsoft Teams für streng regulierte Daten](secure-teams-highly-regulated-data-scenario.md)
-- [SharePoint-Websites für streng regulierte Daten](teams-sharepoint-online-sites-highly-regulated-data.md). 
-
-Diese Szenarien leiten Sie durch die Konfiguration eines Microsoft Teams-Teams oder einer SharePoint-Website, um Ihre wertvollsten Daten sicher zu speichern.
-
-Dies sind die Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:
-
-![Workloads und Szenarien im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch:](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-Weitere Szenarien finden Sie in der [Microsoft 365-Produktivitätsbibliothek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
+![Workloads im allgemeinen Microsoft 365 Enterprise-Bereitstellungshandbuch](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Foundation-Infrastruktur – Voraussetzungen
 
-*Idealerweise* sollten Sie Arbeitslasten und Szenarios bereitstellen, nachdem Sie alle Phasen der [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) konfiguriert haben. Dadurch wird sichergestellt, dass alle zugrunde liegenden Foundation-Ebenen vorhanden sind, um Integration, Sicherheit und die besten Ergebnisse für die Benutzer und deren Geräte bereitzustellen.
+*Idealerweise* sollten Sie Workloads bereitstellen, nachdem Sie alle Phasen der [Foundation-Infrastruktur](deploy-foundation-infrastructure.md) konfiguriert haben. Dadurch wird sichergestellt, dass alle zugrunde liegenden Foundation-Ebenen vorhanden sind, um Integration, Sicherheit und die besten Ergebnisse für die Benutzer und deren Geräte bereitzustellen.
 
 | Phase | Ergebnis |
 |:-------|:-----|

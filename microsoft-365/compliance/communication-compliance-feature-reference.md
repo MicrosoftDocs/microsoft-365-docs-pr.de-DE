@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327605"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352084"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -170,7 +170,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -294,7 +294,7 @@ Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelem
 | **Operations** | Die für die Richtlinie ausgeführten Vorgänge. |
 | **Auditdata** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinien Aktivitäten. Alle Aktivitäten werden durch Kommata-Trennzeichen aufgezeichnet und getrennt. |
 
-Sie können auch Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) anzeigen.
+Sie können auch Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) anzeigen.
 
 Im folgenden Beispiel werden die Aktivitäten für alle Aufsichts Überprüfungsaktivitäten (Richtlinien und Regeln) zurückgegeben:
 
@@ -308,6 +308,6 @@ In diesem Beispiel werden die Updateaktivitäten für Ihre Richtlinien für die 
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
+## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
 
 Informationen zum Konfigurieren der Kommunikations Kompatibilität für Ihre Microsoft 365-Organisation finden Sie unter [configure Communication Compliance for your Microsoft 365 Organization](communication-compliance-configure.md).
