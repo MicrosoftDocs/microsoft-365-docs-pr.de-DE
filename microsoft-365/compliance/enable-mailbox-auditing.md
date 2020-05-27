@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352108"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371429"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -39,7 +39,8 @@ Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 - Sie verfügen über eine konsistente Überwachungsrichtlinie für Postfächer in Ihrer Organisation (da Sie die gleichen Aktionen für alle Postfächerüber Wachen).
 
 > [!NOTE]
->* Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts Unternehmen, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen. <br><br>* Standardmäßig sind nur Post Fach Überwachungsereignisse für E5-Benutzer in Überwachungsprotokoll suchen im Security & Compliance Center oder über die Office 365-Verwaltungs Aktivitäts-API verfügbar. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
+>* Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts Unternehmen, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen.
+>- Standardmäßig sind nur Post Fach Überwachungsereignisse für E5-Benutzer in Überwachungsprotokoll suchen im Security & Compliance Center oder über die API für die Office 365-Verwaltungsaktivität verfügbar. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die postfachüberwachung standardmäßig aktiviert ist
 
@@ -108,7 +109,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**ApplyRecord**|Ein Element wird als Datensatz gekennzeichnet.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Kopieren**|Eine Nachricht wurde in einen anderen Ordner kopiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, Senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Default**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Standard**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|

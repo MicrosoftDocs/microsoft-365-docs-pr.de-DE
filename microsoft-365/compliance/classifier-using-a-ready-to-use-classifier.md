@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292421"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371407"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testen integrierter Klassifizierungen mithilfe von Aufbewahrungs Bezeichnungen (Vorschau)
 
@@ -33,18 +33,18 @@ Weitere Informationen zu Schulungs Klassifizierern finden Sie unter [Erste Schri
 Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 > [!CAUTION]
-> Wir veraltern die integrierte Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+> Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
 
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
 - **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
 
-|Name der Sprache|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |OK       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Shell    |SWIFT    |Tex      |Vim-Skript|
+  |Name der Sprache|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |OK       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Shell    |SWIFT    |Tex      |Vim-Skript|
 
 > [!NOTE]
 > Der Quellcode wird geschult, um zu erkennen, wann der Hauptteil des Texts Quellcode ist. Es wird kein quellcodetext erkannt, der mit nur-Text vermischt wird.
@@ -60,8 +60,8 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 1. Sammeln Sie Inhaltselemente für den verfügbaren Test, die Sie in die Kategorie der integrierten Klassifizierung (positive Übereinstimmungen) und diejenigen, die nicht berücksichtigt werden sollten (negative Übereinstimmungen) in der Kategorie, die Sie testen, gehören.
 
-> [!IMPORTANT]
-> Die Beispielelemente dürfen nicht verschlüsselt werden und müssen in Englisch sein.
+   > [!IMPORTANT]
+   > Die Beispielelemente dürfen nicht verschlüsselt werden und müssen in Englisch sein.
 
 2. Erstellen eines dedizierten SharePoint Online Ordners; warten Sie mindestens eine Stunde, bis der Ordner dem Suchindex hinzugefügt wurde. Notieren Sie sich die Ordner-URL.
 
@@ -79,7 +79,7 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 9. Wählen Sie aus `Apply label to content that matches a trainable classifier` .
 
-![Auswählen der Klassifizierung als Bedingung](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![Auswählen der Klassifizierung als Bedingung](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. Wählen Sie Ihre Klassifizierung aus der Liste aus, in diesem Fall`Source Code`
 

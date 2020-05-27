@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339913"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371463"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -80,18 +80,18 @@ Es gibt integrierte Klassifizierungen und Klassifizierer für Auszubildende. Das
 Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 > [!CAUTION]
-> Wir veraltern die integrierte Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+> Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
 
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
 - **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
 
-|Name der Sprache|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |OK       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Shell    |SWIFT    |Tex      |Vim-Skript|
+  |Name der Sprache|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |OK       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Shell    |SWIFT    |Tex      |Vim-Skript|
 
 > [!NOTE]
 > Der Quellcode wird geschult, um zu erkennen, wann der Hauptteil des Texts Quellcode ist. Es wird kein quellcodetext erkannt, der mit nur-Text vermischt wird.
@@ -133,6 +133,6 @@ Das Erstellen und Veröffentlichen einer Schulungs Klassifizierer zur Verwendung
 - [Aufbewahrungsrichtlinien](retention-policies.md)
 - [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Entitätsdefinitionen für Typen vertraulicher Informationstypen](sensitive-information-type-entity-definitions.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Dokumentieren des Finger Drucks](document-fingerprinting.md)
 - [Exakte Datenübereinstimmung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
