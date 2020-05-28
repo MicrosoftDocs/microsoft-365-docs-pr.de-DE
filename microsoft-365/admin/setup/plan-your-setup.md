@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Erfahren Sie, was Sie tun müssen, um Ihr Microsoft 365 for Business einzurichten.
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794039"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398846"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen des Setups von Microsoft 365 for Business
 
@@ -49,7 +50,7 @@ Der Setup-Assistent führt Sie durch die Installation der Microsoft 365-apps auf
 > [!NOTE]
 > Wenn Sie den Benutzern, die Sie im Assistenten hinzufügen, [Administratorrollen in Microsoft 365 for Business zuweisen](../add-users/assign-admin-roles.md) müssen, können Sie dies später auf der Seite **Benutzer** tun. 
   
-Wenn Sie den Setup-Assistenten nicht abschließen, können Sie Setupaufgaben jederzeit über das**Setup**von [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > ausführen. Von hier aus können Sie e-Mails und Kontakte aus einem anderen e-Mail-Dienst migrieren, die Domäne Ihres Administratorkontos ändern, Ihre Abrechnungsinformationen verwalten, Benutzer hinzufügen oder entfernen, Kennwörter zurücksetzen und andere Geschäftsfunktionen ausführen. Weitere Informationen zu den Unterschieden zwischen dem Setup-Assistenten und der Seite **Setup** finden Sie unter [Differences From the Microsoft 365 Setup Wizard and the Setup Page](o365-setup-wizard-and-setup-page.md).
+Wenn Sie den Setup-Assistenten nicht abschließen, können Sie Setupaufgaben jederzeit über das Setup von [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)ausführen  >  **Setup**. Von hier aus können Sie e-Mails und Kontakte aus einem anderen e-Mail-Dienst migrieren, die Domäne Ihres Administratorkontos ändern, Ihre Abrechnungsinformationen verwalten, Benutzer hinzufügen oder entfernen, Kennwörter zurücksetzen und andere Geschäftsfunktionen ausführen. Weitere Informationen zu den Unterschieden zwischen dem Setup-Assistenten und der Seite **Setup** finden Sie unter [Differences From the Microsoft 365 Setup Wizard and the Setup Page](o365-setup-wizard-and-setup-page.md).
 
 Wenn Sie an einer Stelle nicht weiterkommen, rufen Sie uns an. [Wir helfen Ihnen gerne!](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ Wenn Sie planen, von einem vorhandenen e-Mail-Dienst zu Microsoft 365 zu wechsel
   
 Wenn Sie Microsoft 365 für Ihre e-Mail verwenden möchten:
   
-- Um Ihre geschäftliche e-Mail-Adresse ( *wie\@Rob contoso.com*) aus einem anderen e-Mail-Dienst zu Microsoft 365 zu migrieren, müssen Sie Ihre e-Mails an Ihr neues Microsoft 365-Postfach senden. Dazu wählen Sie auf der Seite **Setup** die Option **die Daten der Benutzer migrieren** aus, wo wir Sie Schritt für Schritt durch die Updates führen, die Sie auf Ihrem Domänenhost vornehmen müssen.
+- Um Ihre geschäftliche e-Mail-Adresse (wie *Rob \@ contoso.com*) aus einem anderen e-Mail-Dienst zu Microsoft 365 zu migrieren, müssen Sie Ihre e-Mails an Ihr neues Microsoft 365-Postfach senden. Dazu wählen Sie auf der Seite **Setup** die Option **die Daten der Benutzer migrieren** aus, wo wir Sie Schritt für Schritt durch die Updates führen, die Sie auf Ihrem Domänenhost vornehmen müssen.
 
 - Nach der Aktualisierung des Domänenhosts wird die Änderung normalerweise innerhalb von nur ein bis zwei Stunden wirksam. Beachten Sie jedoch, dass es manchmal bis zu 72 Stunden dauern kann, bis die Änderungen über das Internet aktualisiert werden.
 

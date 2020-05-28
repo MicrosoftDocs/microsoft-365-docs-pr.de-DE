@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Hier erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
-ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627884"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399386"
 ---
 # <a name="quick-help-deleted-user"></a>Schnelle Hilfe: Gelöschter Benutzer
 
@@ -50,7 +51,7 @@ ms.locfileid: "43627884"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** > Benutzer **Löschen**aus.
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** Benutzer > **Löschen**aus.
   
 3. Wählen Sie im Bereich Löschungsbestätigung die Option **Benutzer löschen**aus. <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
 
@@ -60,7 +61,7 @@ ms.locfileid: "43627884"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** > Benutzer **Löschen**aus.
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** Benutzer > **Löschen**aus.
   
 3. Wählen Sie im Bereich Löschungsbestätigung die Option **Benutzer löschen**aus. <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
 

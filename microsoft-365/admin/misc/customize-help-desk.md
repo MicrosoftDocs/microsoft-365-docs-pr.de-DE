@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Erstellen benutzerdefinierter Helpdesk-Karten im Admin Center und Hinzufügen von benutzerdefinierten Supportkontaktinformationen zum Hilfebereich.
-ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: aa85ec844b4961fc21c1033409f510ba25e65472
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262271"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399398"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>Hinzufügen angepasster Helpdesk-Informationen zum Hilfebereich
 

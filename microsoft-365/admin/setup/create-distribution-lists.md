@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Senden Sie eine e-Mail an eine Gruppe von Personen, ohne den Namen jedes einzelnen Empfängers eingeben zu müssen, indem Sie die Verteilung (List) erstellen.
-ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627642"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398966"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen im Microsoft 365 Admin Center
   
@@ -58,7 +59,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
     Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der apps anzuzeigen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
     
-2. Wählen **Groups** \> **Sie im linken** Navigationsbereich Gruppen Gruppen aus, und wählen Sie dann **Gruppe hinzufügen**aus. 
+2. Wählen **Groups** Sie \> im linken Navigationsbereich Gruppen **Gruppen aus** , und wählen Sie dann **Gruppe hinzufügen**aus. 
       
 3. Wählen Sie im Feld **Gruppentyp auswählen** die Option **Verteilung**aus, und klicken Sie dann auf **weiter**.
   

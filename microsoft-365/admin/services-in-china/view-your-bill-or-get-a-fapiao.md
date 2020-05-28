@@ -14,25 +14,26 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: Zeigen Sie Ihre Abrechnung oder Rechnung über Ihre Office 365 an, die von 21Vianet in China betrieben wird.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 24a38afe834b147a7250a1c34b1c6af094b9421c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 03417651817a4f61f03f84f232e8952771e1a53a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140801"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399002"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>Anzeigen Ihrer Rechnung oder Abrufen eines Fapiao in Office 365 betrieben von 21Vianet
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 

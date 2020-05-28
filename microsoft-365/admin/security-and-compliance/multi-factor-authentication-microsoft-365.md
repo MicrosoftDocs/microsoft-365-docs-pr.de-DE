@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365.
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340833"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399146"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
@@ -151,17 +152,10 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 |:-------|:-----|:-------|:-------|
 | **Sicherheitsstandards** | Richtlinien für bedingten Zugriff können nicht verwendet werden |   Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
 | **Richtlinien für bedingten Zugriff** |Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren | Nutzerdefiniert bei der MFA-Registrierung |
-| **Einstellung pro Benutzerkonto (nicht empfohlen)** | Durch Sicherheitsstandards und Richtlinien für bedingten Zugriff, die MFA erfordern, außer Kraft gesetzt | Durch Sicherheitsstandards und Richtlinien für bedingten Zugriff außer Kraft gesetzt | Nutzerdefiniert bei der MFA-Registrierung|
+| **Einstellung pro Benutzerkonto (nicht empfohlen)** | Überschreibt Sicherheitsstandards und Richtlinien für bedingten Zugriff, für die die MFA bei jedem anmelden erforderlich ist. | Durch Sicherheitsstandards und Richtlinien für bedingten Zugriff außer Kraft gesetzt | Nutzerdefiniert bei der MFA-Registrierung|
 ||||
 
 Wenn Sicherheitsstandards aktiviert sind, werden alle neuen Benutzer zur MFA-Registrierung und zur Verwendung der Microsoft Authenticator-App bei der nächsten Anmeldung aufgefordert.
-
-Wenn ein Benutzer jedoch über ein älteres Telefon verfügt, das Textnachrichten empfangen kann, die Microsoft Authenticator-App jedoch nicht ausführen kann, können Sie MFA für dieses spezifische Benutzerkonto aktivieren und diese mit der zusätzlichen Überprüfungsmethode "Text Code" mit den folgenden Schritten registrieren lassen:
-
-1. Deaktivieren Sie Sicherheitsstandards im Azure-Portal.
-2. Aktivieren Sie MFA für das Benutzerkonto im Microsoft 365 Admin Center.
-3. Lassen Sie sich von dem Benutzer anmelden und sich für MFA und die Text Code Authentifizierungsmethode registrieren.
-4. Aktivieren Sie nach Abschluss Sicherheitsstandards im Azure-Portal.
 
 ## <a name="ways-to-manage-mfa-settings"></a>Möglichkeiten zum Verwalten von MFA-Einstellungen
 

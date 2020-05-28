@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Erfahren Sie mehr über integrierte apps und wie Sie Sie aktivieren können, um Drittanbieter-Apps für den Zugriff auf Microsoft 365-Informationen von Benutzern zu ermöglichen.
-ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399338"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
 
@@ -35,7 +36,7 @@ Wenn integrierte apps aktiviert sind, können Benutzer in Ihrer Organisation Dri
 
 Wie folgt aktivieren oder deaktivieren Sie integrierte Apps.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungs** \> **Einstellungen,** \> Registerkarte **Dienste** , und wählen Sie dann **integrierte apps**aus.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungs** \> **Einstellungen** , \> Registerkarte **Dienste** , und wählen Sie dann **integrierte apps**aus.
 
 2. Wählen Sie auf der Seite **integrierte apps** die Option zum Aktivieren oder deaktivieren integrierter Apps aus.
 

@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Erfahren Sie, wie Microsoft 365 for Business Sie beim dsgvo-Prozess (General Data Protection Regulation) unterstützenkann.
-ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627716"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399158"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Dsgvo Simplified: Leitfaden für kleine Unternehmen
 
@@ -155,7 +156,7 @@ Wenn Sie sich für die dsgvo vorbereiten möchten, finden Sie hier einige Vorsch
 > [!IMPORTANT]
 > Erhalten Sie einen Rechtsbeistand, der für Ihr Unternehmen oder Ihre Organisation geeignet ist.
   
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Microsoft Trust Center – Übersicht über die dsgvo](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )

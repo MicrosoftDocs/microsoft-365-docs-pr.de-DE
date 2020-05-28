@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: Hier erfahren Sie, wie Sie ein Office 365 Abonnement ausprobieren oder sofort kaufen, Abonnements hinzufügen oder Add-ons zu einem vorhandenen Office 365-Konto erhalten, das von 21Vianet in China betrieben wird.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360836"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399086"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Kaufen oder Testen von Abonnements für Office 365 betrieben von 21Vianet
 
@@ -65,7 +66,7 @@ Sie können ein Abonnement sofort erwerben oder Office 365 bis zu 30 Tage lang t
 
 ## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Hinzufügen von Abonnements oder Add-ons zu einem vorhandenen Office 365-Konto
 
-1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627)zur Seite **Abrechnungs** \> - **Einkaufsdienste** .
+1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627)zur Seite **Abrechnungs** - \> **Einkaufsdienste** .
 
 2. Wählen Sie die Dienste aus, die Sie kaufen möchten, wählen Sie **kaufen**aus, und wählen Sie dann **jetzt Auschecken aus**.
 
