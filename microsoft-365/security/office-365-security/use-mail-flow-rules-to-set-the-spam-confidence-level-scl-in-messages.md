@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie Nachrichtenfluss Regeln (Transportregeln) erstellen, um Nachrichten zu identifizieren und die SCL-Bewertung (Spam Confidence Level) von Nachrichten in Exchange Online Schutz festzulegen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208561"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405119"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten in EoP
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwendet EoP Antispam-Richtlinien (auch als Spamfilter Richtlinien oder Inhaltsfilter Richtlinien bezeichnet), um eingehende Nachrichten auf Spam zu überprüfen. Weitere Informationen finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md).
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verwendet EoP Antispam-Richtlinien (auch als Spamfilter Richtlinien oder Inhaltsfilter Richtlinien bezeichnet), um eingehende Nachrichten auf Spam zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 Wenn Sie bestimmte Nachrichten als Spam kennzeichnen möchten, bevor Sie sogar durch Spamfilterung gescannt werden, oder um Nachrichten zu markieren, damit Sie die Spamfilterung überspringen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um die Nachrichten zu identifizieren und die SCL-Bewertung (Spam Confidence Level) festzulegen. Weitere Informationen zur SCL-Bewertung finden Sie unter [Spam Confidence Level (SCL) in EoP](spam-confidence-levels.md).
 
@@ -54,7 +54,7 @@ Wenn Sie bestimmte Nachrichten als Spam kennzeichnen möchten, bevor Sie sogar d
 
    - **Gehen Sie folgen**dermaßen vor: Wählen Sie **ändern die Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)**. Konfigurieren Sie im angezeigten **SCL** -Dialogfeld einen der folgenden Werte:
 
-   - **Spamfilterung umgehen**: Hiermit wird der SCL-Wert auf-1 festgelegt, was bedeutet, dass die Nachrichten die Spamfilterung überspringen.
+   - **Spamfilterung umgehen**: durch die Nachrichten wird die Spamfilterung übersprungen.
 
      > [!CAUTION]
      > Achten Sie darauf, dass Nachrichten Spamfilterung überspringen. Angreifer können diese Sicherheitsanfälligkeit verwenden, um Phishing-und andere schädliche Nachrichten an Ihre Organisation zu senden. Die Nachrichtenfluss Regeln erfordern mehr als nur die e-Mail-Adresse oder Domäne des Absenders. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in EoP](create-safe-sender-lists-in-office-365.md).

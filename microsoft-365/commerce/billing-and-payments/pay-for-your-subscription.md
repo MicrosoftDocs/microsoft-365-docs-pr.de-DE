@@ -24,12 +24,13 @@ description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Bu
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232875"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407956"
 ---
 # <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
 
@@ -47,7 +48,7 @@ Beim Einrichten Ihres Abonnements können Sie zwischen Zahlung mit Kreditkarte o
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Bezahlen mit Kreditkarte oder Bankkonto
 
-Wenn Sie mit Kreditkarte oder Bankkonto bezahlen, wird Ihnen die Abonnementgebühr automatisch am Tag nach dem Rechnungsdatum bis zum Ende der Laufzeit Ihres Abonnements belastet. Sie können, wann immer nötig, [Ihre Kreditkarteninformationen oder Bankkontodaten aktualisieren](add-update-or-remove-credit-card-or-bank-account.md). Sie können auf Wunsch auch [Erhalten einer Kopie Ihrer Rechnung per E-Mail](#receive-a-copy-of-your-billing-statement-in-email).
+Wenn Sie mit Kreditkarte oder Bankkonto bezahlen, wird Ihnen die Abonnementgebühr automatisch am Tag nach dem Rechnungsdatum bis zum Ende der Laufzeit Ihres Abonnements belastet. Sie können [Zahlungsmethoden](manage-payment-methods.md) bei Bedarf verwalten. Sie können auf Wunsch auch [Erhalten einer Kopie Ihrer Rechnung per E-Mail](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Was geschieht, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?
 
@@ -62,12 +63,12 @@ Wenn Sie mit Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten 
 
 2. Suchen Sie das Abonnement mit dem ausstehenden Saldo. Wählen Sie im Abschnitt **Abrechnung** neben **Abonnement weist überfällige Zahlung auf** die Option **Saldo ausgleichen** aus.
 
-3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](add-update-or-remove-credit-card-or-bank-account.md).
+3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
 
     > [!NOTE]
     > Wenn Sie die Funktion **Saldo ausgleichen** verwenden, wird Ihnen der gesamte offene Saldo, den Ihr Konto aufweist, belastet. Das kann mehr als der Betrag sein, der an anderer Stelle als fällig angezeigt wird.
 
-4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](add-update-or-remove-credit-card-or-bank-account.md).
+4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
 
 5. Nachdem Sie die Kreditkarteninformationen aktualisiert oder die zum Bezahlen des Abonnements verwendete Kreditkarte geändert haben, wählen **Speichern** aus.
 
@@ -79,12 +80,12 @@ Wenn Sie mit Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten 
 
 2. Wählen Sie das Abonnement aus, das Sie ändern möchten. Wählen Sie im Abschnitt **Meine Rechnung** die Option **Jetzt bezahlen** aus.
 
-3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](add-update-or-remove-credit-card-or-bank-account.md).
+3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
 
     > [!NOTE]
     > Wenn Sie die Funktion **Jetzt bezahlen** verwenden, wird Ihnen der gesamte offene Saldo, den Ihr Konto aufweist, belastet. Das kann mehr als der Betrag sein, der an anderer Stelle als fällig angezeigt wird.
 
-4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](add-update-or-remove-credit-card-or-bank-account.md).
+4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
 
 5. Nachdem Sie die Kreditkarteninformationen aktualisiert oder die zum Bezahlen des Abonnements verwendete Kreditkarte geändert haben, wählen **Senden** aus. Es wird eine Bestätigungsmeldung angezeigt, die besagt: "Ihre Zahlungsmethode wurde aktualisiert, und alle offenen Beträge wurden beglichen. Vielen Dank!"
 
@@ -310,6 +311,6 @@ Wenn sich Ihre ursprünglichen Beweggründe für die Auswahl von Rechnung, Kredi
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Hinzufügen, Aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](add-update-or-remove-credit-card-or-bank-account.md)
+[Zahlungsmethoden verwalten](manage-payment-methods.md)
 
-[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice2.md)
+[Ihre Rechnung verstehen](understand-your-invoice2.md)

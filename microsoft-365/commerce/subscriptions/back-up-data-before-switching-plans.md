@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten, bevor Sie Microsoft 365-Pläne ändern.
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708095"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403618"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
 
@@ -61,7 +62,7 @@ Standardmäßig weist die URL der Teamwebsite das folgende Format auf:
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-Hierbei steht _\<OrgDomäne\>_ für die URL der Organisation.
+dabei _\<orgDomain\>_ ist die URL der Organisation.
   
 Wenn die Domäne der Organisation beispielsweise contoso.onmicrosoft.com lautet, ist die direkte URL der Teamwebsite https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
   

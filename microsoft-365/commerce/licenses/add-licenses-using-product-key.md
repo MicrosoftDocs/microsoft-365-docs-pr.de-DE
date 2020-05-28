@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Lizenzen zu Ihrem Abonnement hinzufügen.
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045404"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404010"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Hinzufügen von Lizenzen zu oder verlängern eines Abonnements, das für die Verwendung eines Product Keys bezahlt wurde
 
@@ -42,7 +43,7 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie nach dem Abonnement, dem Sie Lizenzen hinzufügen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Weitere Lizenzen hinzufügen**aus.
 
@@ -99,7 +100,7 @@ Prepaid-Lizenzen werden Ihnen als 25-stelliger alphanumerischer Code ausgestellt
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie das Abonnement, das Sie erweitern möchten. Wählen Sie im Abschnitt **Abrechnung** die Option **End-Datum verlängern**aus.
 

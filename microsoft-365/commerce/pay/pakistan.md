@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ea6aafa1d53e2f22fc4409e9df7aedec52a0e8c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f333d608de3a175f8e135fa07d91278c00e93904
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241970"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403950"
 ---
 # <a name="payment-information-for-pakistan"></a>Zahlungsinformationen für Pakistan
 

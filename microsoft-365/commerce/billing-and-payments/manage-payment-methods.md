@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322159"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403678"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
@@ -70,7 +71,7 @@ Durch das Hinzufügen einer Zahlungsmethode werden keine Abonnements zugeordnet.
 
 4. Geben Sie die Informationen für das neue Kreditkarten-oder Bank Konto ein, und wählen Sie dann **Hinzufügen**aus.
 
-## <a name="update-payment-method-details"></a>Details zur Zahlungsmethode aktualisieren
+## <a name="update-payment-method-details"></a>Zahlungsmethodendetails aktualisieren
 
 Sie können den Namen auf der Kredit-oder Debitkarte, der Rechnungsadresse oder dem Ablaufdatum für eine vorhandene Zahlungsmethode ändern. Sie können die Karten-oder Kontonummer jedoch nicht ändern. Wenn sich die Kontonummer geändert hat, [Ersetzen Sie Sie durch eine andere Zahlungsmethode](#replace-a-payment-method), und [Löschen Sie die alte](#delete-a-payment-method).
 
@@ -86,9 +87,9 @@ Sie können den Namen auf der Kredit-oder Debitkarte, der Rechnungsadresse oder 
 1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > **Payment Methods** .
 ::: moniker-end
 
-2. Wählen Sie die Zeile der zu aktualisierende Zahlungsmethode aus. Wählen Sie im rechten Bereich **Bearbeiten**aus.
+2. Wählen Sie die Zeile der Zahlungsmethode aus, die aktualisiert werden soll. Wählen Sie im rechten Bereich die Option **Bearbeiten** aus.
 
-3. Aktualisieren Sie Ihre Zahlungsmethoden Informationen, einschließlich des Namens auf der Kredit-oder Debitkarte, der Rechnungsadresse oder dem Ablaufdatum, und wählen Sie dann **Speichern**aus.
+3. Aktualisieren Sie Ihre Angaben zur Zahlungsmethode, einschließlich des Namens auf der Kredit- oder Debitkarte, der Rechnungsadresse oder des Ablaufdatums, und wählen Sie dann **Speichern** aus.
 
 ## <a name="replace-a-payment-method"></a>Ersetzen einer Zahlungsmethode
 
@@ -108,19 +109,19 @@ Informationen zum Ändern der Zahlungsmethode für ein einzelnes Abonnement find
 1. Wechseln Sie im Admin Center zur Seite **Billing** > **Bills & Payments** > **Payment Methods** .
 ::: moniker-end
 
-2. Wählen Sie die Zeile der Zahlungsmethode aus, die ersetzt werden soll. Im rechten Bereich werden alle Abrechnungsprofile und einzelnen Abonnements aufgelistet, die die ausgewählte Zahlungsmethode verwenden.
+2. Wählen Sie die Zeile der Zahlungsmethode aus, die ersetzt werden soll. Im rechten Bereich werden alle Abrechnungsprofile und einzelne Abonnements mit der ausgewählten Zahlungsmethode aufgelistet.
 
-3. Wählen Sie im rechten Bereich **Zahlungsmethode ersetzen für alle Elemente**aus.
+3. Wählen Sie im rechten Bereich **Zahlungsmethode für alle Elemente ersetzen** aus.
 
-4. Um eine vorhandene Zahlungsmethode zu verwenden, wählen Sie eine aus der Dropdownliste aus, und wählen Sie dann **ersetzen**aus.
+4. Wenn Sie eine vorhandene Zahlungsmethode verwenden möchten, wählen Sie in der Dropdownliste eine aus und wählen Sie dann **Ersetzen**.
     > [!NOTE]
-    > Wenn Sie einem Abrechnungsprofil Abonnements zugeordnet haben, können Sie nur eine Kredit-oder Debitkarte verwenden, um Sie zu bezahlen. Wenn auf der Seite **Zahlungsmethoden** Bankkonten aufgeführt sind, stehen Sie in der Dropdownliste nicht zur Auswahl zur Verfügung.
+    > Wenn Sie Abonnements haben, die mit einem Abrechnungsprofil verknüpft sind, können Sie diese nur mit einer Kredit- oder Debitkarte bezahlen. Wenn Sie auf der Seite **Zahlungsmethoden** Bankkonten aufgelistet haben, können diese in der Dropdownliste nicht ausgewählt werden.
 
-5. Um eine neue Zahlungsmethode hinzuzufügen, wählen Sie **Zahlungsmethode hinzufügen**aus.
+5. Wenn Sie eine neue Zahlungsmethode hinzufügen möchten, wählen Sie **Zahlungsmethode hinzufügen** aus.
 
-6. Geben Sie im Bereich **Zahlungsmethode hinzufügen** die Kontoinformationen ein, und wählen Sie dann **Speichern**aus. Sie müssen eine Zahlungsmethode aus demselben Land wie Ihr Mandant verwenden.
+6. Geben Sie im Bereich **Zahlungsmethode hinzufügen** die Kontoinformationen ein und wählen Sie dann **Speichern** aus. Sie müssen eine Zahlungsmethode aus dem gleichen Land wie Ihr Mandant verwenden.
 
-7. Die neue Zahlungsmethode ist in der Dropdownliste bereits ausgewählt. Wählen Sie **ersetzen**aus.
+7. Die neue Zahlungsmethode ist bereits in der Dropdownliste ausgewählt. Wählen Sie **Ersetzen**.
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>Ändern einer Zahlungsmethode für ein einzelnes Abonnement
 
@@ -198,11 +199,11 @@ Wenn eine Zahlungsmethode an alle Abonnements oder Abrechnungsprofile angehängt
     > [!NOTE]
     > Wenn Sie einem Abrechnungsprofil Abonnements zugeordnet haben, können Sie diese nur mit einer Kreditkarte bezahlen. Wenn auf der Seite **Zahlungsmethoden** Bankkonten aufgeführt sind, stehen Sie in der Dropdownliste nicht zur Auswahl.
 
-5. Um eine neue Zahlungsmethode hinzuzufügen, wählen Sie **Zahlungsmethode hinzufügen**aus.
+5. Wenn Sie eine neue Zahlungsmethode hinzufügen möchten, wählen Sie **Zahlungsmethode hinzufügen** aus.
 
 6. Wählen Sie den Typ der Zahlungsmethode aus, den Sie hinzufügen möchten, geben Sie die Kontoinformationen ein, und wählen Sie dann **Speichern**aus.
 
-7. Die neue Zahlungsmethode ist in der Dropdownliste bereits ausgewählt. Wählen Sie **Weiter** aus.
+7. Die neue Zahlungsmethode ist bereits in der Dropdownliste ausgewählt. Wählen Sie **Weiter** aus.
 
 8. Wählen Sie **Löschen** aus.
 

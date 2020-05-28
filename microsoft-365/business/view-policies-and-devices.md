@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Zeigen Sie Geräterichtlinien und-Aktionen an, indem Sie sich bei Microsoft 365 for Business mit globalen Administratoranmeldeinformationen anmelden.
-ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635682"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403568"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Anzeigen und Verwalten von Richtlinien und Geräten
 

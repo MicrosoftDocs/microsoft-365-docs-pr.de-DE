@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -16,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Aktualisieren Sie die Kontaktinformationen Ihrer Organisation, und wählen Sie die produktbezogene Kommunikation von Microsoft 365 aus, die Sie erhalten möchten.
-ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628208"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407932"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Ändern von Kontakteinstellungen für die Kommunikation mit Microsoft
 
@@ -50,4 +51,4 @@ Bei Fragen zur Abrechnung werden Sie hier fündig:
   
 - [Ändern ihrer Abrechnungs Adressen für Microsoft 365 for Business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Hinzufügen, aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos in Microsoft 365 for Business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Zahlungsmethoden verwalten](../../commerce/billing-and-payments/manage-payment-methods.md)

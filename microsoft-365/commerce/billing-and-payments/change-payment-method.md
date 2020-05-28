@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Hier erfahren Sie, wie Sie die Zahlungsmethode für Ihr Geschäfts Abonnement ändern.
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401810"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407968"
 ---
 # <a name="change-your-payment-method"></a>Ändern der Zahlungsmethode
 
@@ -43,7 +43,7 @@ Wenn Sie ein Abonnement kaufen, können Sie mit einer Kreditkarte oder einem Ban
 > [!IMPORTANT]
 > Das bezahlen mit einem Bankkonto steht in einigen Ländern oder Regionen nicht zur Verfügung.
 
- **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Weitere Informationen finden Sie unter [hinzufügen, aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](add-update-or-remove-credit-card-or-bank-account.md).
+ **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Weitere Informationen finden Sie unter [Manage Payment Methods](manage-payment-methods.md).
 
  **Möchten Sie nur ändern, wie oft Sie in Rechnung gestellt werden?** Weitere Informationen finden Sie unter [Ändern der Zahlungshäufigkeit](change-payment-frequency.md).
   
@@ -67,7 +67,7 @@ Beim Kauf von Office 365 Business können Sie entscheiden, ob Sie per Kreditkart
   
  **Sie möchten Ihre Zahlungshäufigkeit ändern?** Wenn Sie ändern möchten, wie häufig Sie Ihr Abonnement bezahlen, entweder von Jahr zu Monat oder monatlich, müssen Sie den [Microsoft-Support anrufen](../../admin/contact-support-for-business-products.md) , um Hilfe zu erhalten.
   
- **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Weitere Informationen finden Sie unter [hinzufügen, aktualisieren oder Entfernen einer Kreditkarte oder eines Bankkontos](add-update-or-remove-credit-card-or-bank-account.md).
+ **Möchten Sie lediglich Ihre Kreditkarten- oder Bankkontoinformationen ändern?** Weitere Informationen finden Sie unter [Manage Payment Methods](manage-payment-methods.md).
   
  **Was passiert, wenn noch eine Saldoforderung existiert?**
   

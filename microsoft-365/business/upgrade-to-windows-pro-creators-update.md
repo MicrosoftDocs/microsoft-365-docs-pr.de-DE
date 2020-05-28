@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Ermitteln Sie, wie Sie Ihre Windows-Geräte auf Windows 10 pro aktualisieren können, um erweiterte Sicherheits-und Geschäftsnetzwerk Features zu nutzen.
-ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632049"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403528"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Aktualisieren von Windows-Geräten auf Windows 10 pro
 
@@ -44,11 +45,11 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
   
 Um ein Upgrade auf Windows 10 pro durchführen zu können, stehen Ihnen mehrere Optionen zur Verfügung. Sie können:
     
-- Installieren des Upgrades von der [Microsoft-Software Download Website](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; wählen Sie diese Option aus, wenn sich das Gerät, auf dem Sie angemeldet sind, auf dem Gerät befindet, das Sie aktualisieren möchten. 
+- Installieren des Upgrades von der [Microsoft-Software Download Website](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Wählen Sie diese Option aus, wenn sich das Gerät, auf dem Sie angemeldet sind, auf dem Gerät befindet, das Sie aktualisieren möchten. 
 
     - Klicken Sie auf der Seite Software Download auf **Jetzt aktualisieren** , um das Upgrade des Geräts auf Windows 10 pro Creators Update zu starten. 
     
-- Erstellen eines Installationsmediums mit dem [Medien Erstellungs Tool](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; wählen Sie diese Option aus, um ein Windows 10 pro Creators Update Installationsmedium (USB-Flashlaufwerk oder ISO-Datei) zu erstellen, um Windows 10 auf einem PC zu installieren, der sich von dem unterscheidet, das Sie verwenden.
+- Erstellen eines Installationsmediums mit dem [Medien Erstellungs Tool](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Wählen Sie diese Option aus, um ein Windows 10 pro Creators Update Installationsmedium (USB-Flashlaufwerk oder ISO-Datei) zu erstellen, um Windows 10 auf einem PC zu installieren, der sich von dem unterscheidet, das Sie verwenden.
 
     - Lesen Sie die Anweisungen zur Verwendung des Tools und zum Erstellen Ihrer Installationsmedien. 
 
@@ -61,4 +62,4 @@ Informationen zum Abschließen der Einrichtung von Android-und IOS-Geräten find
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 for Business
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

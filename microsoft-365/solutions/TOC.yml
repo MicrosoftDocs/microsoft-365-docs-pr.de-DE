@@ -3,7 +3,7 @@
   displayName: Home
 - name: Lösungs-und Architektur Illustrationen
   items:
-    - name: Microsoft 365-Produktivitäts Abbildungen
+    - name: Darstellungen zu Microsoft 365-Produktivitätslösungen
       href: productivity-illustrations.md
     - name: Microsoft-Cloud-Architekturmodelle
       href: cloud-architecture-models.md
@@ -14,17 +14,17 @@
     - name: Fördern von Remotemitarbeitern mit Microsoft 365
       href: empower-people-to-work-remotely.md
       items:
-        - name: Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remote-Mitarbeiter mit MFA
+        - name: Schritt 1. Erhöhte Anmeldesicherheit
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: "Schritt\_2: Bereitstellen von Remotezugriff"
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'SCHRITT 3: Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte'
+        - name: 'SCHRITT 3: Bereitstellen der Endpunkt Verwaltung'
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: "Schritt\_4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter"
+        - name: "Schritt\_4: Bereitstellen von Produktivitäts-apps und-Diensten"
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: "Schritt\_5: Erstellen von COVID-19-Krisenkommunikationsstellen"
+        - name: "Schritt\_5: Erstellen von Kommunikations Standorten"
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: Schritt 6. Schulung von Remotemitarbeitern und Ansprechen von Nutzungsrückmeldungen
+        - name: Schritt 6. Schulen von Remotemitarbeitern
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Einrichten einer sicheren Zusammenarbeit mit Microsoft 365
       href: setup-secure-collaboration-with-teams.md
@@ -139,7 +139,7 @@
       items:
         - name: Teams für das Gesundheitswesen
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-    - name: Schulung und Weiterbildung
+    - name: Education
       items:
         - name: Teams für Bildung
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
