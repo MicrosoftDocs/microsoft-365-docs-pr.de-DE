@@ -9,18 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5dfdb1209a7a8acd8282f6cef661bf3005579cdc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b7af4ce3df336bf6002a7a7e2592e8b2c5b38924
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253326"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404130"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="dca91-103">Zahlungsinformationen für Indien</span><span class="sxs-lookup"><span data-stu-id="dca91-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="ab6de-103">Zahlungsinformationen für Indien</span><span class="sxs-lookup"><span data-stu-id="ab6de-103">Payment information for India</span></span>
 
-<span data-ttu-id="dca91-104">[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="dca91-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="ab6de-104">[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="ab6de-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="dca91-105">Folgen Sie den Zahlungsanweisungen auf Ihrer Rechnung und der Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="dca91-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
+<span data-ttu-id="ab6de-105">Folgen Sie den Zahlungsanweisungen auf Ihrer Rechnung und der Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="ab6de-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
