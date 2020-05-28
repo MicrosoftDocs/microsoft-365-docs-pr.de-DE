@@ -9,36 +9,37 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5aeca73e5cfb0db9d3677fbe82d57511564456ca
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 35202116d072d36eaa581f8a7df959c5770c6391
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357926"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397298"
 ---
-# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="48939-103">Kontakt Support für Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="48939-103">Contact support for Liechtenstein</span></span>
+# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="86bee-103">Kontakt Support für Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="86bee-103">Contact support for Liechtenstein</span></span>
 
-<span data-ttu-id="48939-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="48939-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="86bee-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="86bee-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="48939-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="48939-105">Phone number</span></span>
-<span data-ttu-id="48939-106">+ 41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="48939-106">+41 800 000 300</span></span>
+## <a name="phone-number"></a><span data-ttu-id="86bee-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="86bee-105">Phone number</span></span>
+<span data-ttu-id="86bee-106">+ 41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="86bee-106">+41 800 000 300</span></span>
 
-## <a name="hours"></a><span data-ttu-id="48939-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="48939-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="48939-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="48939-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="86bee-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="86bee-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="86bee-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="86bee-108">Billing Support:</span></span>
 
-<span data-ttu-id="48939-109">Deutsch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="48939-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="86bee-109">Deutsch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="86bee-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="48939-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="48939-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="86bee-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="86bee-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="48939-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="48939-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="86bee-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="86bee-111">Technical Support:</span></span>
 
-<span data-ttu-id="48939-112">Deutsch: Mo-Fr 8:00 bis 21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="48939-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="86bee-112">Deutsch: Mo-Fr 8:00 bis 21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="86bee-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="48939-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="48939-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="86bee-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="86bee-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="48939-114">Alternative Telefonnummer: + 41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="48939-114">Alternative Phone Number: +41 22 76 141 14</span></span>
+<span data-ttu-id="86bee-114">Alternative Telefonnummer: + 41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="86bee-114">Alternative Phone Number: +41 22 76 141 14</span></span>
 
-<span data-ttu-id="48939-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="48939-115">Local call charges apply</span></span>
+<span data-ttu-id="86bee-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="86bee-115">Local call charges apply</span></span>

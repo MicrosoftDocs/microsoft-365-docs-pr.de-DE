@@ -9,34 +9,35 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: db27d1665d888250fef51196fc8bf56f4ba89edb
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 448d428089f56bacf366da133c4931caca56b387
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359356"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398198"
 ---
-# <a name="contact-support-for-congo-drc"></a><span data-ttu-id="e5dcd-103">Kontaktieren des Supports für Congo (DRC)</span><span class="sxs-lookup"><span data-stu-id="e5dcd-103">Contact support for Congo (DRC)</span></span>
+# <a name="contact-support-for-congo-drc"></a><span data-ttu-id="2bb24-103">Kontaktieren des Supports für Congo (DRC)</span><span class="sxs-lookup"><span data-stu-id="2bb24-103">Contact support for Congo (DRC)</span></span>
 
-<span data-ttu-id="e5dcd-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="e5dcd-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="2bb24-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2bb24-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e5dcd-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="e5dcd-105">Phone number</span></span>
-<span data-ttu-id="e5dcd-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="e5dcd-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2bb24-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="2bb24-105">Phone number</span></span>
+<span data-ttu-id="2bb24-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="2bb24-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e5dcd-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="e5dcd-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e5dcd-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="e5dcd-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2bb24-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="2bb24-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2bb24-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="2bb24-108">Billing Support:</span></span>
 
-<span data-ttu-id="e5dcd-109">Französisch: Mo-Fr 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="e5dcd-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="2bb24-109">Französisch: Mo-Fr 9.00-17.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="2bb24-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="e5dcd-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="e5dcd-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="2bb24-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="2bb24-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e5dcd-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="e5dcd-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2bb24-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="2bb24-111">Technical Support:</span></span>
 
-<span data-ttu-id="e5dcd-112">Französisch: Mo-Fr 8.00-21.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="e5dcd-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="2bb24-112">Französisch: Mo-Fr 8.00-21.00 Uhr</span><span class="sxs-lookup"><span data-stu-id="2bb24-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="e5dcd-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="e5dcd-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2bb24-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="2bb24-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e5dcd-114">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="e5dcd-114">International call charges apply</span></span>
+<span data-ttu-id="2bb24-114">Gebühren für internationale Anrufe</span><span class="sxs-lookup"><span data-stu-id="2bb24-114">International call charges apply</span></span>
