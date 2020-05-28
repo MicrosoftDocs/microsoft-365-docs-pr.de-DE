@@ -8,16 +8,17 @@ manager: mnirkhe
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
+ms.custom: AdminSurgePortfolio
 ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f91029c1c39b95b35dce78678f46faecaa79a2c6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 61a6d161b252eb349bd461f69ffc32e04d34a0cf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358726"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397802"
 ---
 # <a name="contact-support-for-gibraltar"></a>Kontakt Support für Gibraltar
 

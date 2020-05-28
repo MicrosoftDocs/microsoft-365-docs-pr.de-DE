@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0079a02aaea57dbeccddd162fb814f9d2e69242e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a2c5a68cbe9908d268ef2b22a3c2d78eae7099b0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358016"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397382"
 ---
 # <a name="contact-support-for-kyrgyzstan"></a>Kontaktieren des Supports für Kirgisistan
 
