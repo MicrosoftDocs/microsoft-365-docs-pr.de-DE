@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Hier erfahren Sie, wie Sie den Microsoft Teams-Benutzer Aktivitätsbericht abrufen und Einblicke in die Teams-Aktivitäten in Ihrer Organisation erhalten.
-ms.openlocfilehash: 4a1b546efa7ba3bac887f60de54231389b8b5ca6
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 59fdeec9979b939524279d938e97baf6993d3cb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047097"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387669"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität
 
@@ -37,7 +38,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Microsoft Teams** \> - **Benutzeraktivität**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Microsoft Teams** - \> **Benutzeraktivität**aus.
   
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretieren des Berichts "Microsoft Teams-Benutzeraktivität"
 

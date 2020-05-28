@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 description: Erhalten Sie Einblicke in die Microsoft Teams-apps, die in Ihrer Organisation verwendet werden, indem Sie den Microsoft Teams-App-Nutzungsbericht aus Microsoft 365-Berichten erhalten.
-ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c2070f13c790f2a66c5849e68fc2fe3579ffa3e3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621210"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387718"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Geräteverwendung
 
@@ -39,7 +40,7 @@ Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Microsoft Teams** \> - **Gerätenutzung**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **Microsoft Teams** - \> **Gerätenutzung**aus.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpretieren des Berichts "Microsoft Teams-App-Verwendung"
 

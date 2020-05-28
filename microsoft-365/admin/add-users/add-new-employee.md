@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Hinzufügen von neuen Mitarbeitern zu Microsoft 365 for Business für e-Mail-, Skype-und Office-Apps.
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049497"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387309"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Hinzufügen eines neuen Mitarbeiters zu Microsoft 365
 
@@ -63,7 +64,7 @@ Da Sie noch nicht auf Ihre e-Mails zugreifen können, senden Sie die Information
 
 Genau wie Facebook, Amazon oder Gmail meldet sich Ihr Mitarbeiter bei der Verwendung von Microsoft 365 an. Geben Sie Ihnen die folgenden Anmeldeinformationen:
   
-- Melden Sie sich [https://www.office.com](https://www.office.com)bei an.
+- Melden Sie sich bei an [https://www.office.com](https://www.office.com) .
     
 - Wählen Sie **Anmelden**aus, und geben Sie dann die Benutzer-ID und das Kennwort ein.
     
@@ -76,7 +77,7 @@ Hier finden Sie eine Kurzübersicht, die Ihnen bei der ersten Schritte hilft:
   
 |**Aufgabe**|**Suchen der Details**|
 |:-----|:-----|
-|Anmelden bei Office  <br/> |Wechseln Sie [https://www.office.com](https://www.office.com)zu, wählen Sie **Anmelden**aus, und geben Sie Ihre Benutzer-ID und Ihr Kennwort ein.  <br/> |
+|Anmelden bei Office  <br/> |Wechseln [https://www.office.com](https://www.office.com) Sie zu, wählen Sie **Anmelden**aus, und geben Sie Ihre Benutzer-ID und Ihr Kennwort ein.  <br/> |
 |Installieren Sie Office-Apps auf Ihrem Computer.  <br/><br/> |Wenn Sie sich anmelden, verfügt die Startseite über einen Link zum herunterladen und Installieren von apps wie Word und Outlook.  Wählen Sie **Office installieren**aus.         Anweisungen finden Sie unter [How to Install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Richten Sie Ihre e-Mails in Outlook 2016 ein.  <br/> |Sobald Office-Apps auf Ihrem Computer installiert sind, richten Sie Ihre e-Mail ein. Anweisungen finden Sie unter [How to Setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Richten Sie Skype for Business ein, damit Sie mit Kollegen oder Geschäftspartnern in Ihrem Unternehmen oder auf der ganzen Welt eine Verbindung herstellen können. Sie können Unterhaltungen mit Chat-, sprach-oder Videoanrufen beginnen.  <br/> |[Installieren Sie Skype for Business auf Ihrem Computer](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Wenn Sie erfahren möchten, wie Sie Skype for Business verwenden, schauen Sie sich [ein Video an.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Haben Sie Skype for Business eingerichtet, damit Ihre Mitarbeiter Personen außerhalb Ihres Unternehmens kontaktieren können, die die ﻿kostenlose Skype-App nutzen? Wenn dies nicht der Fall ist, informieren Sie den neuen Mitarbeiter, damit er wissen sollte, was bei Verwendung von Skype for Business erwartet wird.  <br/> |

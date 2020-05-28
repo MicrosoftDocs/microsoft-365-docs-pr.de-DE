@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern erlauben, e-Mails als Microsoft 365-Gruppe zu senden oder e-Mails im Namen einer Microsoft 365-Gruppe zu senden.
-ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049387"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388137"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
@@ -46,11 +47,11 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails al
   
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
     
-2. Wählen **Edit**![Sie Edit Group Symbol](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, die Sie Benutzern erlauben möchten, als zu senden.   
+2. Wählen **Edit**Sie Edit ![ Group Symbol bearbeiten ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) in der Gruppe aus, die Sie Benutzern erlauben möchten, als zu senden.   
     
 3. Wählen Sie **Gruppendelegierung** aus.
     
-4. Wählen Sie im Abschnitt **Senden als** das **+** Zeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
+4. Wählen Sie im Abschnitt **Senden als** das Zeichen aus, **+** um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
     
     ![Wählen Sie das Pluszeichen aus, um die Benutzer hinzuzufügen, die Sie als Microsoft 365-Gruppe senden möchten.](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
@@ -64,7 +65,7 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails im
   
 1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
     
-2. Wählen **Edit** ![Sie Edit Group Icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) bearbeiten in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten. 
+2. Wählen **Edit** Sie Edit ![ Group Icon bearbeiten ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten. 
     
 3. Wählen Sie **Gruppendelegierung** aus.
     

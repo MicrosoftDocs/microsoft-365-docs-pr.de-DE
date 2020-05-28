@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Informieren Sie sich über die Gruppen und ihre Aktivitäten über einen Microsoft 365-Gruppenbericht.
-ms.openlocfilehash: f1d1c333946f20ecfb76223d79a38e1a18783550
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 5c89cc6b5b211cbba3414f61d6b15c0c62f54c73
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516853"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387561"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
 

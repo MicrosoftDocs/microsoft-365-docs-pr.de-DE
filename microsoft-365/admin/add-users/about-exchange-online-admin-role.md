@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-Administratoren verwalten die e-Mails und Postfächer Ihrer Organisation. Beispielsweise werden gelöschte Elemente im Postfach eines Benutzers wiederhergestellt. '
-ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322075"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387423"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 

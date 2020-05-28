@@ -1,5 +1,5 @@
 ---
-title: Admin Center (Übersicht)
+title: Übersicht über das Admin Center
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,20 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Erfahren Sie mehr über das Microsoft 365 Admin Center: Wie funktioniert die Anmeldung?, Wer ist Ihr Administrator?, und sehen Sie sich eine Videoeinführung dazu an.'
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623964"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386937"
 ---
-# <a name="admin-center-overview"></a>Admin Center (Übersicht) 
+# <a name="admin-center-overview"></a>Übersicht über das Admin Center 
 
   
 Wenn Sie einen [Microsoft 365 apps for Business-Plan](https://go.microsoft.com/fwlink/?linkid=856886) oder einen [Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/business)-Plan kaufen, erhalten Sie ein spezielles Konto mit Administratorberechtigungen. Dieses Konto wird als Administratorkonto bezeichnet.

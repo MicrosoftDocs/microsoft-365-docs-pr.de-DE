@@ -16,25 +16,26 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Hier erfahren Sie, wie Sie die Dateien und e-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140633"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387201"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -156,7 +157,7 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
     
     ![So sieht das Menüband in Outlook 2016 aus.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
-3. Wählen **Sie &amp; Open Export** \> **Import/Export**aus.
+3. Wählen Sie **Open &amp; Export** \> **Import/Export**aus.
     
     ![Befehl 'Importieren/Exportieren' in der Backstage-Ansicht](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   

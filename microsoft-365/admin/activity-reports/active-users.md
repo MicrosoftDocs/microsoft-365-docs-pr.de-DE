@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Erfahren Sie, wie Sie einen Bericht über aktive Benutzer mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten und erfahren, wie viele Produktlizenzen verwendet werden.
-ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 7f32059f01163a2a499f1befb9f4e3c519973549
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046843"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387897"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365-Berichte im Admin Center – aktive Benutzer
 

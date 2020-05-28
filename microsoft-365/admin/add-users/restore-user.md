@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Hier erfahren Sie, wie gelöschte Benutzerkonten und alle zugehörigen Daten wiederhergestellt werden.
-ms.openlocfilehash: 7ac0805024ebf78075a66f77c99496675f20e497
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140567"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387002"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
    
@@ -53,19 +54,19 @@ Sie müssen ein Microsoft 365 globaler Administrator oder Administrator der Benu
  
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
+1. Wechseln Sie im Admin Center zur Seite gelöschte **Benutzer Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 
@@ -88,19 +89,19 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
+1. Wechseln Sie im Admin Center zur Seite gelöschte **Benutzer Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 
@@ -129,19 +130,19 @@ Sie benötigen [Administratorberechtigungen](about-admin-roles.md) in Microsoft 
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur \> Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Gelöschte</a> Benutzer Benutzer. **Users**
+1. Wechseln Sie im Admin Center zur Seite gelöschte **Benutzer Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** \> dann **Gelöschte**Benutzer aus.
+1. Wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627), **und wählen Sie** dann \> **Gelöschte**Benutzer aus.
 
 ::: moniker-end
 

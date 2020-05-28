@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618872"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387273"
 ---
 # <a name="get-started-with-the-roles-page"></a>Erste Schritte mit der Seite "Rollen"
 
@@ -61,7 +62,7 @@ Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die e-Mail-Postfäc
 
 Zuweisen der globalen Administratorrolle zu Benutzern, die globalen Zugriff auf die meisten Verwaltungsfeatures und-Daten in Microsoft Online Services benötigen. Wenn Sie zu vielen Benutzern globalen Zugriff gewähren, besteht ein Sicherheitsrisiko, deshalb empfiehlt es sich, nur zwei bis vier globale Administratoren vorzusehen. Nur globale Administratoren können Kennwörter für alle Benutzer zurücksetzen und Domänen hinzufügen und verwalten. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. Die Person, die sich für Microsoft Online Services angemeldet hat, wird automatisch zu einem globalen Administrator. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>Globaler Leser
+### <a name="global-reader"></a>Globale Leseberechtigung
 
 Weisen Sie die Rolle "globaler Leser Administrator" den Benutzern zu, die Administrator Features und-Einstellungen in allen admin Centern anzeigen müssen, die der globale Administrator anzeigen kann. Die globale Leser-Administratorrolle kann keine Einstellungen bearbeiten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 

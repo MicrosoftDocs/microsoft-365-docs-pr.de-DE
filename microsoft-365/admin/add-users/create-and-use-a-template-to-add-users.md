@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen.
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140652"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387225"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstell
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
-Vorlagen sind einfach zu erstellen&mdash;Sie können Benutzer**Vorlagen**für **Benutzer** > **aktive** > Benutzer auswählen und dann in der Dropdownliste **eine Vorlage hinzufügen** auswählen, oder Sie können einen neuen Benutzer hinzufügen, und wenn Sie fertig sind, haben Sie die Möglichkeit, den Eintrag als Vorlage zu speichern.
+Vorlagen sind einfach zu erstellen &mdash; Sie können Benutzervorlagen für **Benutzer**  >  **aktive**Benutzer auswählen  >  **User templates**und dann in der Dropdownliste **eine Vorlage hinzufügen** auswählen, oder Sie können einen neuen Benutzer hinzufügen, und wenn Sie fertig sind, haben Sie die Möglichkeit, den Eintrag als Vorlage zu speichern.
 
 Wenn Sie nach dem Hinzufügen eines Benutzers eine Vorlage erstellen, werden die Werte, die Sie für die folgenden Einstellungen auswählen, in der Vorlage gespeichert:
 
@@ -68,12 +69,12 @@ Wenn Sie eine Vorlage erstellen, indem Sie die Option **Vorlage hinzufügen** au
 
 So verwenden Sie eine vorhandene Vorlage zum Hinzufügen eines Benutzers:
 
-1. Wählen Sie im Admin Center die Option **Users** > **Active Users**aus.
+1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users**aus.
 
 2. Wählen Sie **Benutzervorlagen**aus, und wählen Sie dann in der Dropdownliste eine Vorlage aus. (Die Liste enthält nur die Vorlagen, die Sie erstellt haben, nicht jene, die von anderen Administratoren erstellt wurden.)
 
  > [!NOTE]
- > Sie können auch eine Vorlage verwenden, um einen Benutzer hinzuzufügen, indem Sie **Benutzervorlagen** > Vorlagen**Verwalten**auswählen, eine Vorlage auswählen und dann **Vorlage verwenden**auswählen.
+ > Sie können auch eine Vorlage verwenden, um einen Benutzer hinzuzufügen, indem Sie **Benutzervorlagen**Vorlagen  >  **Verwalten**auswählen, eine Vorlage auswählen und dann **Vorlage verwenden**auswählen.
 
 3. Führen Sie die Schritte aus, um einen Benutzer aus der ausgewählten Vorlage zu erstellen.
 
@@ -84,7 +85,7 @@ So verwenden Sie eine vorhandene Vorlage zum Hinzufügen eines Benutzers:
 
 Vorlagen, die Sie nicht mehr benötigen, können Sie ganz einfach löschen und neue hinzufügen. So löschen Sie eine Vorlage:
 
-1. Wählen Sie im Admin Center die Option **Users** > **Active Users**aus.
+1. Wählen Sie im Admin Center die Option **Users**  >  **Active Users**aus.
 
 2. Wählen Sie **Vorlagen**aus, und wählen Sie dann **Vorlagen verwalten** in der Dropdownliste aus.
 

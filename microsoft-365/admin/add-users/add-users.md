@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: In diesem Artikel erfahren Sie, wie Sie Benutzer gleichzeitig oder mehrere Benutzer gleichzeitig aus einer CSV-Datei zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049471"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387261"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Benutzer einzeln oder in Massen hinzufügen
 

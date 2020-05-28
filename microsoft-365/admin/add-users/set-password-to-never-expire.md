@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: In diesem Artikel erfahren Sie, wie Sie mit Windows PowerShell einzelne Benutzerkennwörter so festlegen, dass Sie nie ablaufen.
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173496"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387003"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen.</a>
+1. Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen</a> .
 2. Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.
 3. Wählen Sie **Kennwortablaufrichtlinie** aus. 
 4. Wenn Kennwörter auf nie ablaufen festgelegt sind, aktivieren Sie das Kontrollkästchen neben **Kennwort für Benutzer festlegen, um nach einer bestimmten Anzahl von Tagen zu verfallen**. Sie erhalten die Option, die Anzahl der Tage anzugeben, bis Kennwörter ablaufen.
@@ -127,4 +128,4 @@ Führen Sie einen der folgenden Befehle aus:
     ```
 
 > [!WARNING]
-> Kennwörter, `-PasswordPolicies DisablePasswordExpiration` die auf dem Attribut basierend `pwdLastSet` auf "still Age" festgelegt sind. Wenn Sie festlegen, dass die Benutzerkennwörter nie ablaufen und dann 90 + Tage vergehen, laufen die Kennwörter ab. Wenn Sie den `pwdLastSet` Ablauf in `-PasswordPolicies None`ändern, müssen alle Kennwörter, die `pwdLastSet` älter als 90 Tage sind, basierend auf dem Attribut geändert werden, wenn Sie sich das nächste Mal anmelden. Diese Änderung kann sich auf eine große Anzahl von Benutzern auswirken.
+> Kennwörter, `-PasswordPolicies DisablePasswordExpiration` die auf dem Attribut basierend auf "still Age" festgelegt sind `pwdLastSet` . Wenn Sie festlegen, dass die Benutzerkennwörter nie ablaufen und dann 90 + Tage vergehen, laufen die Kennwörter ab. `pwdLastSet`Wenn Sie den Ablauf in ändern `-PasswordPolicies None` , müssen alle Kennwörter, die älter als 90 Tage sind, basierend auf dem Attribut geändert werden, wenn Sie sich das `pwdLastSet` nächste Mal anmelden. Diese Änderung kann sich auf eine große Anzahl von Benutzern auswirken.

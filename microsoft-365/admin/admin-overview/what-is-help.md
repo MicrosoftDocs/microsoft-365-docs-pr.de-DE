@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über die Möglichkeiten, wie Sie mithilfe des Microsoft 365 Admin Center Hilfe erhalten können.
-ms.openlocfilehash: 847281acc368f45ffaf466cc3877c042507a7f79
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930195"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386769"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

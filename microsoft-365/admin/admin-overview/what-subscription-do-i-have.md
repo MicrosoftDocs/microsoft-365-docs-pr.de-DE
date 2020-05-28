@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045212"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386745"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -40,7 +42,7 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Ihre Abonnements werden auf der Seite **Ihre Produkte** zusammen mit dem Abonnement Namen, Informationen zum Abonnement und seinem Status angezeigt. Zum Anzeigen einer verkürzten Ansicht wählen Sie **Tabellenansicht**aus.
 

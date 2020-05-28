@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Rufen Sie den SharePoint-Aktivitäts Verwendungsbericht ab, um die Aktivität aller SharePoint-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung zu kennen.
-ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: de4d4951f98e722a3608e9bccf2c4a1dbfc388d0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047047"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387489"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365-Berichte im Admin Center – SharePoint-Aktivität
 
@@ -46,7 +47,7 @@ Wenn Sie den Umfang der Aktivität für die einzelnen SharePoint-Websites und di
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **SharePoint** \> - **Aktivität**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **SharePoint** - \> **Aktivität**aus.
   
 ## <a name="interpreting-the-sharepoint-activity-report"></a>Interpretieren des SharePoint-Aktivitätsberichts
 
@@ -62,7 +63,7 @@ Sie können einen Einblick in die SharePoint-Aktivität erhalten, indem Sie die 
 |6.  <br/> | Im Diagramm **Dateien** stellt die Y-Achse die Anzahl der eindeutigen Dateien dar, die ein Benutzer gespeichert, synchronisiert, geändert oder freigegeben hat.  <br/>  Im Diagramm **Benutzer** stellt die Y-Achse die Anzahl der eindeutigen Benutzer dar, die Dateiinteraktionen (Speichern, Synchronisieren, Ändern oder Freigeben) auf einer Website ausgeführt haben.  <br/>  Im Diagramm **Seiten** stellt die X-Achse die Anzahl der eindeutigen Seiten dar, die von Benutzern besucht wurden.  <br/>  Die x-Achse in allen Diagrammen entspricht dem ausgewählten Zeitraum für diesen bestimmten Bericht.  <br/> |
 |7.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Dateien** die Option **angezeigt oder bearbeitet**, **synchronisiert**, **intern freigegeben**oder **extern freigegeben** aus, um nur die zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
 |8.  <br/> | Die Tabelle zeigt eine Aufschlüsselung der Aktivitäten auf Ebene der einzelnen Websites.  <br/>  <br/> **Username** ist die e-Mail-Adresse des Benutzers, der die Aktivität auf der SharePoint-Website ausgeführt hat.  <br/> **Datum der letzten Aktivität (UTC)** ist das letzte Datum, an dem innerhalb des ausgewählten Datumsbereichs eine Dateiaktivität ausgeführt oder eine Seite besucht wurde. Um Aktivitäten anzuzeigen, die an einem bestimmten Datum stattfanden, wählen Sie das Datum direkt im Diagramm aus.  <br/> ![Auswählen eines bestimmten Datums im Diagramm](../../media/29e54c4b-8dc2-4ed8-9367-1f66f2988fac.png) <br/> Dadurch wird die Tabelle so gefiltert, dass Datei Aktivitätsdaten nur für Benutzer angezeigt werden, die die Aktivität an diesem bestimmten Tag ausgeführt haben.  <br/>  **Angezeigte oder bearbeitete Dateien** gibt die Anzahl der Dateien an, die der Benutzer hochgeladen, heruntergeladen, geändert oder angezeigt hat.  <br/>  **Synchronisierte Dateien** ist die Anzahl der Dateien, die vom lokalen Gerät eines Benutzers mit der SharePoint-Website synchronisiert wurden.  <br/>  **Intern freigegebene Dateien** ist die Anzahl der Dateien, die für Benutzer innerhalb der Organisation freigegeben wurden, oder mit Benutzern innerhalb von Gruppen (die externe Benutzer enthalten können).  <br/>  **Extern freigegebene Dateien** gibt die Anzahl der Dateien an, die für Benutzer außerhalb der Organisation freigegeben wurden.  <br/>  Bei **besuchten Seiten** handelt es sich um Besuche von eindeutigen Seiten durch den Benutzer.  <br/>  **Gelöscht** gibt an, dass die Lizenz des Benutzers entfernt wurde.  <br/>  **Hinweis:** Aktivitäten für einen gelöschten Benutzer werden weiterhin im Bericht angezeigt, solange er während des ausgewählten Zeitraums zu einem bestimmten Zeitpunkt lizenziert wurde. Durch die Spalte "Gelöscht" werden Sie darauf aufmerksam gemacht, dass der Benutzer möglicherweise nicht mehr aktiv ist, aber zu den Daten im Bericht beigetragen hat.  <br/> **Gelöscht am** ist das Datum, an dem die Lizenz des Benutzers entfernt wurde.  <br/>  " **Produkt zugewiesen** " sind die Microsoft 365-Produkte, die für den Benutzer lizenziert sind.  <br/> |
-|9.  <br/> |Wählen ![Sie **das Symbol Spalten verwalten** aus](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) , um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
+|9.  <br/> |Wählen Sie **das Symbol Spalten verwalten** ![ ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
 |10.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten für alle Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    

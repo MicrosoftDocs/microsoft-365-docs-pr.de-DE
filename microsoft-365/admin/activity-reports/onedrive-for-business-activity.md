@@ -12,6 +12,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Rufen Sie den OneDrive-Verwendungsbericht für Ihre Organisation ab, und kennen Sie die Aktivitäten aller OneDrive-Benutzer, die Anzahl der freigegebenen Dateien und die Speicherauslastung.
-ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 9de2260049d901b401bd62a9e4d05191222b97a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047085"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387537"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365-Berichte im Admin Center – OneDrive für Unternehmen Aktivität
 
@@ -47,7 +48,7 @@ Wenn Sie den Umfang der Aktivität für die einzelnen OneDrive-Konten und die Sp
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **OneDrive** \> - **Aktivität**aus.
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **OneDrive** - \> **Aktivität**aus.
   
 ## <a name="interpret-the-onedrive-for-business-activity-report"></a>Interpretieren des Aktivitätsberichts für OneDrive for Business
 
@@ -64,7 +65,7 @@ Sie können einen Einblick in die OneDrive for Business-Aktivität erhalten, ind
 |5.  <br/> | Im Diagramm **Dateien** stellt die Y-Achse die Anzahl der eindeutigen Dateien dar, die ein beliebiger Benutzer gespeichert, synchronisiert, geändert oder freigegeben hat.  <br/>  Im Diagramm **Benutzer** stellt die Y-Achse die Anzahl der eindeutigen Benutzer dar, die Dateiinteraktionen (Speichern, Synchronisieren, Ändern oder Freigeben) für ein beliebiges OneDrive-Konto ausgeführt haben.  <br/>  Die x-Achse in allen Diagrammen entspricht dem ausgewählten Zeitraum für diesen bestimmten Bericht.  <br/> |
 |6.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Dateien** die Option **angezeigt oder bearbeitet** oder **synchronisiert** aus, um nur die zugehörigen Informationen anzuzeigen. Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> |
 |7.  <br/> | Die Tabelle zeigt eine Auflistung der Daten nach Benutzerebene. Sie können Spalten zur Tabelle hinzufügen oder aus der Tabelle entfernen.   <br/>  **Username** ist der Benutzername des Besitzers des OneDrive-Kontos.  <br/> **Datum der letzten Aktivität (UTC)** ist das letzte Datum, an dem eine Dateiaktivität für das OneDrive-Konto für den ausgewählten Datumsbereich ausgeführt wurde. Um Aktivitäten anzuzeigen, die an einem bestimmten Datum stattfanden, wählen Sie das Datum direkt im Diagramm aus.  <br/> ![Auswählen eines bestimmten Datums im Diagramm](../../media/29e54c4b-8dc2-4ed8-9367-1f66f2988fac.png)  <br/>  Dadurch wird die Tabelle so gefiltert, dass Datei Aktivitätsdaten nur für Benutzer angezeigt werden, die die Aktivität an diesem bestimmten Tag ausgeführt haben.  <br/> **Angezeigte oder bearbeitete Dateien** gibt die Anzahl der Dateien an, die der Benutzer hochgeladen, heruntergeladen, geändert oder angezeigt hat.  <br/> **Synchronisierte Dateien** gibt die Anzahl der Dateien an, die vom lokalen Gerät eines Benutzers mit dem OneDrive-Konto synchronisiert wurden.  <br/> **Intern freigegebene Dateien** ist die Anzahl der Dateien, die für Benutzer innerhalb der Organisation freigegeben wurden, oder mit Benutzern innerhalb von Gruppen (die externe Benutzer enthalten können).  <br/> **Extern freigegebene Dateien** gibt die Anzahl der Dateien an, die für Benutzer außerhalb der Organisation freigegeben wurden.  <br/> **Gelöscht** gibt an, dass die Lizenz des Benutzers entfernt wurde.  <br/> Hinweis: Aktivitäten für einen gelöschten Benutzer werden weiterhin in einem Bericht angezeigt, solange er während des ausgewählten Zeitraums zu einem bestimmten Zeitpunkt lizenziert wurde. Der Spalte **Gelöscht** können Sie entnehmen, dass der Benutzer zwar möglicherweise nicht mehr aktiv ist, aber dass der Bericht dennoch ihn betreffende Daten enthält.<br/>**Gelöscht am** ist das Datum, an dem die Lizenz des Benutzers entfernt wurde.  <br/> **Produkt zugewiesen** sind die Microsoft 365-Produkte, die für den Benutzer lizenziert sind.  <br/>  Wenn die Richtlinien Ihrer Organisation das Anzeigen von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
-|8.  <br/> |Wählen ![Sie **das Symbol Spalten verwalten** aus](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) , um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
+|8.  <br/> |Wählen Sie **das Symbol Spalten verwalten** ![ ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
 |9.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |
 |||
    

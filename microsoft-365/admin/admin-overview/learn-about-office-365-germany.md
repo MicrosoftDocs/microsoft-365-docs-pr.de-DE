@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Erfahren Sie mehr über Office 365 Deutschland.
-ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208354"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386793"
 ---
 # <a name="learn-about-office-365-germany"></a>Weitere Informationen zu Office 365 Deutschland
 

@@ -12,6 +12,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: 'Erhalten Sie den Bericht über die OneDrive für Unternehmen Nutzung, um die Gesamtzahl der in Ihrer Organisation verwendeten Dateien und Speicher zu kennen. '
-ms.openlocfilehash: 4c7cfaeed03627b6dfab6c694f3a5e858b125c40
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 84c76e564067f2580455296a1ed4d1159de7d44c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047107"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387549"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365-Berichte im Admin Center – OneDrive für Unternehmen Nutzung
 
@@ -42,7 +43,7 @@ Die OneDrive Karte auf dem Dashboard bietet beispielsweise einen allgemeinen Üb
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **OneDrive** \> - **Verwendung**aus. 
+2. Wählen Sie in der Dropdownliste **Bericht auswählen** die Option **OneDrive** - \> **Verwendung**aus. 
   
 ## <a name="interpret-the-onedrive-usage-report"></a>Interpretieren des Berichts zur Verwendung von OneDrive
 
@@ -60,7 +61,7 @@ Sie können einen Überblick über die Verwendung von OneDrive for Business erha
 |6.  <br/> | Im Diagramm **Konten** stellt die Y-Achse die Anzahl der OneDrive Konten dar.  <br/>  Im Diagramm **Dateien** stellt die Y-Achse die Anzahl der gespeicherten Dateien dar OneDrive.  <br/>  Im Diagramm **Speicher** gibt die y-Achse die Menge des OneDrive verwendeten Speicherplatzes an.  <br/>  Die x-Achse in allen Diagrammen entspricht dem ausgewählten Zeitraum für diesen bestimmten Bericht.  <br/> |
 |7.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie beispielsweise im Diagramm **Dateien** die Option **Gesamtdateien** oder **aktive Dateien**aus. Wählen Sie im Diagramm **Konten** die Option **Gesamtkonten** oder **aktive Konten**aus. Oder wählen Sie im **Speicher** Diagramm die Option **Speicher verwendet**aus. Wenn Sie Ihre Auswahl ändern, werden die Informationen in der Tabelle nicht geändert.  <br/> |
 |8.  <br/> | Die Tabelle zeigt eine Auflistung der Daten für jeden Benutzer OneDrive. Um in der Tabelle zu erscheinen, muss einem Benutzer eine Produktlizenz zugeordnet wurden, die OneDrive enthält, und sie müssen SharePoint Online aktivieren. Der Benutzer muss sich auch entweder im OneDrive Synchronisierungsclient anmelden, oder mithilfe eines Webbrowsers zu seiner OneDrive gehen.  <br/>  Wenn Dateiaktivitäten für das OneDrive stattgefunden haben, weist es das aktuelle Datum auf, an dem die Dateiaktivität ausgeführt wurde. Die Zeilen in der Tabelle sind nach dem Wert **Datum der letzten Aktivität** sortiert, damit die OneDrive mit der letzten Dateiaktivität am Anfange der Liste angezeigt werden.  <br/>  Sie können der Tabelle Spalten hinzufügen oder daraus entfernen.  <br/> ![Spaltenoptionen](../../media/onedriveusage-columns.png)  <br/> **URL** ist die Webadresse für die OneDrive des Benutzers.  <br/> **Gelöscht** ist der Löschstatus des OneDrive. Es dauert mindestens 7 Tage bis Konten als gelöscht gekennzeichnet werden.  <br/> **Besitzer** ist der Benutzername des primären Administrators der OneDrive.  <br/> **Besitzer Prinzipalname** ist die e-Mail-Adresse des Besitzers des OneDrive.  <br/> **Datum der letzten Aktivität (UTC)** ist das letzte Datum, an dem eine Dateiaktivität für die OneDrive ausgeführt wurde. Wenn die OneDrive keine Dateiaktivität aufweist, bleibt der Wert leer.  <br/> **Dateien** entspricht der Anzahl von Dateien auf der OneDrive.  <br/> **Aktive Dateien** entspricht der Anzahl der aktiven Dateien für einen Zeitraum. Eine Datei wird als aktiv betrachtet, wenn sie gespeichert, synchronisiert, geändert oder innerhalb eines bestimmten Zeitraums freigegeben wurde.  <br/> Hinweis: eine Dateiaktivität kann mehrere Male für eine einzelne Datei auftreten, wird aber nur als eine aktive Datei gezählt. Sie können beispielsweise dieselbe Datei über einen angegebenen Zeitraum mehrmals speichern und synchronisieren, aber sie wird nur als einzelne aktive Datei und als einzelne synchronisierte Datei in den Daten gezählt. >  Wenn während des angegebenen Zeitraums für den Bericht Dateien entfernt wurden, ist die Anzahl der aktiven Dateien, die im Bericht angegeben ist, möglicherweise größer als die aktuelle Anzahl der Dateien auf der OneDrive. >  Gelöschte Benutzer werden in Berichten für 180 Tage weiterhin angezeigt.<br/>**Verwendeter Speicherplatz (MB)** entspricht der auf der OneDrive verwendeten Speichermenge in MB. Dies umfasst alle Versionen und Metadaten, die mit den Dateien verknüpft sind.  <br/>  Wenn die Richtlinien Ihrer Organisation das Anzeigen von Berichten verhindern, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt **How do I hide User Level Details** in den [Aktivitätsberichten in der Microsoft 365 Admin Center-Vorschau](activity-reports.md).  <br/> |
-|9.  <br/> |Wählen ![Sie **das Symbol Spalten verwalten** aus](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) , um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
+|9.  <br/> |Wählen Sie **das Symbol Spalten verwalten** ![ ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> |
 |10.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller OneDrive exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2000 OneDrive Konten können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2000 OneDrive Konten müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> Hinweis: Wenn die Daten in eine Excel-Datei exportiert werden, beachten Sie, dass das Datum, an dem der Inhaltsbericht generiert wurde, in der Datei in der Spalte **Daten als von** angezeigt wird.  <br/> |
 |||
    

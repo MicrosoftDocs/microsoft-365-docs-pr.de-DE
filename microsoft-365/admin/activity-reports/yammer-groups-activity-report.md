@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Nutzen Sie den Bericht zur Yammer-Gruppenaktivität, um sich über die Anzahl der Yammer-Gruppen, die in Ihrer Organisation erstellt und verwendet werden, sowie über deren Aktivitäten zu informieren.
-ms.openlocfilehash: 0b7dbfe7b578987103c63a9975ea61eb442297e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5a9d3d8820241cc3d99a4a08e647bd05dafd5ef
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618932"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387441"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365-Berichte im Admin Center-Aktivitätsbericht "Jammer Gruppen"
 
