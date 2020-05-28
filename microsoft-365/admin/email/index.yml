@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Verwalten von e-Mails und Kalendern
+title: Verwalten von E-Mail und Kalendern
 summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
 metadata:
-  title: Verwalten von e-Mails und Kalendern
+  title: Verwalten von E-Mail und Kalendern
   description: Verwalten von e-Mail-Einstellungen, Verteilergruppen, Sicherheitseinstellungen und Einrichten von freigegebenen Postfächern
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952765"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400064"
 landingContent:
 - title: Verwalten von e-Mails
   linkLists:
@@ -23,15 +24,15 @@ landingContent:
     links:
     - text: Verwalten von Benutzer-e-Mail-Einstellungen
       url: office-365-user-email-settings.md
-    - text: Informationen zur e-Mail-Zusammenarbeit
+    - text: Info zu E-Mail-Zusammenarbeit
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
     - text: Hinzufügen eines weiteren e-Mail-Alias
       url: add-another-email-alias-for-a-user.md
-    - text: Verwenden Ihrer benutzerdefinierten Domäne
+    - text: Verwenden Sie Ihre benutzerdefinierte Domäne
       url: change-email-address.md
-    - text: Einrichten der e-Mail-Weiterleitung
+    - text: Einrichten der E-Mail-Weiterleitung
       url: configure-email-forwarding.md
     - text: Arbeiten mit Sicherheitsgruppen
       url: create-edit-or-delete-a-security-group.md
