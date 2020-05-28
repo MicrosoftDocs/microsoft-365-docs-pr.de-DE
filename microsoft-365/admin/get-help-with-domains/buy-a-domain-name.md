@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,20 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365 kaufen.
-ms.custom: okr_smb
-ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140417"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400004"
 ---
 # <a name="buy-a-domain-name"></a>Kaufen eines Domänennamens
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -42,7 +44,7 @@ ms.locfileid: "44140417"
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.md)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Melden Sie sich an und wechseln \> Sie \> zu Einstellungen Domänen kaufen einer Domäne
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Melden Sie sich an und wechseln Sie zu Einstellungen \> Domänen \> kaufen einer Domäne
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -80,7 +82,7 @@ Wir bieten ein kostenloses Datenschutz Abonnement für Domänen mit dem Erwerb e
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Erwerben eines Domänennamens von einer anderen Domänenregistrierungsstelle
 Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, empfehlen wir die Verwendung eines unterstützten automatischen Setups (Domäne Connect). 
   
-- [1&amp;1 Ionos](https://www.1and1.com/)
+- [1 &amp; 1 Ionos](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    

@@ -10,15 +10,16 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Suchen, testen und Bereitstellen von Microsoft-und Microsoft-Partner-Apps für Benutzer und Gruppen in Ihrer Organisation über das integrierte apps-Portal im Microsoft 365 Admin Center.
-ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942154"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399518"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testen und Bereitstellen von Microsoft 365-apps im Microsoft 365 Admin Center
 

@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Helfen Sie Ihren Benutzern, Office-Apps auf Windows 10-Geräten zu installieren und Office auf Windows 10-PCs problemlos aus dem Microsoft 365 Admin Center zu installieren.
-ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627198"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400906"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 
@@ -49,7 +50,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 ## <a name="manage-office-deployments"></a>Verwalten von Office-Bereitstellungen
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>, und melden Sie sich mit globalen Administratoranmeldeinformationen an. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> , und melden Sie sich mit globalen Administratoranmeldeinformationen an. 
 
 2. Wechseln Sie im linken Navigationsbereich zu **Setup** , und führen Sie auf der Seite **Setup** einen Bildlauf zu **apps und Updates**durch.
     > [!NOTE]
@@ -64,4 +65,4 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Freenom für Microsoft einrichten.
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049035"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400473"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Freenom für Microsoft
 
@@ -70,7 +71,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
-    |**Name**|**Typ**|**TTL**|**Target**|
+    |**Name**|**Type**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |(leer lassen)  <br/> |TXT  <br/> |3600 (Sekunden)  <br/> |MS = msXXXXXXXX  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -137,9 +138,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 8. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
-    |**Name**|**Typ**|**TTL**|**Target**|**Priorität**|
+    |**Name**|**Type**|**TTL**|**Target**|**Priorität**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<Domain-Key\>. Mail.Protection.Outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<domain-key\>. Mail.Protection.Outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

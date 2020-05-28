@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Hier erfahren Sie, wie Sie e-Mails als Verteilerliste in Microsoft 365 senden.
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628064"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399590"
 ---
 # <a name="send-email-as-a-distribution-list"></a>E-Mail als Verteilerliste senden
 
@@ -45,7 +46,7 @@ Stellen Sie vor dem Ausführen dieser Schritte sicher, dass Sie einer Microsoft 
     
 4. Wählen Sie unten in der Nachricht **mehr** \> **anzeigen aus aus**.<br/> ![Wählen Sie mehr aus, und wählen Sie dann anzeigen aus](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Klicken Sie mit der rechten Maustaste auf die von- `Ina@weewalter.me` Adresse-wie-und wählen Sie **Entfernen**aus.<br/> ![Entfernen des from-Alias](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Klicken Sie mit der rechten Maustaste auf die von-Adresse-wie `Ina@weewalter.me` -und wählen Sie **Entfernen**aus.<br/> ![Entfernen des from-Alias](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. Geben Sie dann die Verteilerlisten Adresse wie support@contoso.com ein, und senden Sie die Nachricht. Wenn Sie das nächste Mal von der Verteilerliste Antworten, wird Ihre Adresse als Option in der Liste **von** angezeigt.<br/>![Alias des freigegebenen Postfachs wird angezeigt](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

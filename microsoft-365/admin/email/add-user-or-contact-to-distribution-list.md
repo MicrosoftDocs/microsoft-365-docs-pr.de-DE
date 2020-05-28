@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Hier erfahren Sie, wie Sie einer Verteilergruppe einen Microsoft 365-Benutzer oder-Kontakt hinzufügen. Sie können beispielsweise einen Mitarbeiter, einen Partner oder einen Kreditor zu Ihrer e-Mail-Verteilergruppe hinzufügen.
-ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 47b338a326c5c1152c8e14e13f01f9a36de1cb6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629071"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400172"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
 

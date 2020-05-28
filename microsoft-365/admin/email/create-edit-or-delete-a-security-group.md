@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Hier erfahren Sie, wie Sie eine Sicherheitsgruppe erstellen, bearbeiten oder löschen.
-ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140441"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400088"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Erstellen, bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
 
 ### <a name="add-a-security-group"></a>Hinzufügen einer Sicherheitsgruppe
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Gruppen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen.</a>
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Gruppen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a> .
   
 2. Wählen Sie auf der Seite **Gruppen** die Option **Gruppe hinzufügen**aus.
     
@@ -142,7 +143,7 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Gruppen in Exchange Online und SharePoint Online
 
-Wenn Sie Benutzergruppen erstellen möchten, damit Sie e-Mails an alle gleichzeitig senden können, können Sie dies im Exchange Admin Center tun, indem Sie zu **Administrator** \> **-Exchange** \> - **Empfänger** \> **Gruppen**wechseln. Wählen Sie dann **neu**![hinzu](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)fügen aus, und wählen Sie die Art der Gruppe aus, die Sie erstellen möchten: 
+Wenn Sie Benutzergruppen erstellen möchten, damit Sie e-Mails an alle gleichzeitig senden können, können Sie dies im Exchange Admin Center tun, indem Sie zu **Administrator** - \> **Exchange** - \> **Empfänger** \> **Gruppen**wechseln. Wählen Sie dann **neu** ![ hinzufügen aus ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) , und wählen Sie die Art der Gruppe aus, die Sie erstellen möchten: 
   
 - **Verteilergruppe**: Wird verwendet, um Nachrichten an eine Benutzergruppe zu senden. Sie wird auch als *e-Mail-aktivierte Verteilergruppe*oder eine *Verteilerliste*bezeichnet. Weitere Informationen finden Sie unter [Verwalten von Verteilergruppen](https://technet.microsoft.com/library/bb124513.aspx).
     

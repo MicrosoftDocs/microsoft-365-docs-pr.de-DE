@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628148"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399716"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -32,7 +33,7 @@ ms.locfileid: "43628148"
   
 ## <a name="read-a-message"></a>Lesen einer Nachricht
 
-Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts** > **Meldungscenter**aus. 
+Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts**  >  **Meldungscenter**aus. 
 
 Wählen Sie einen Nachrichtentitel aus, um ihn im Lesebereich zu öffnen. Jede Nachricht enthält eine Zusammenfassung der Änderung, eine Erklärung dazu, wie sich die Änderung auf Sie auswirken kann, Informationen darüber, wie Sie Ihre Organisation auf die Änderung vorbereiten können, und (in den meisten Fällen) einen zusätzlichen Informations Link, in dem Sie weitere Informationen erhalten. Diese zusätzlichen Informationen stehen auch nach dem Ablauf eine Nachricht weiterhin zur Verfügung.
 
@@ -111,7 +112,7 @@ Sie müssen einen anderen Administrator nachverfolgen, um sicherzustellen, dass 
 
 1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
 
-2. Klicken Sie in der Aktionsleiste auf **more** \> **Get a Link** .
+2. Klicken **More** Sie \> in der Aktionsleiste auf More **Get a Link** .
 
 3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
 
@@ -123,7 +124,7 @@ Sie müssen einen anderen Administrator nachverfolgen, um sicherzustellen, dass 
 
 1. Wählen Sie die Nachricht aus, um Sie zu öffnen.
 
-2. Klicken Sie in der Aktionsleiste auf **more** \> **Get a Link** .
+2. Klicken **More** Sie \> in der Aktionsleiste auf More **Get a Link** .
 
 3. Erlauben Sie der Webseite Zugriff auf Ihre Zwischenablage. Eine direkte Verknüpfung wird in die Zwischenablage kopiert.
 

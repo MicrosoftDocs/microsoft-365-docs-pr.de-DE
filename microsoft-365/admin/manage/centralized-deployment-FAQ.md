@@ -1,5 +1,5 @@
 ---
-title: FAQ zu Zentrale Bereitstellung
+title: FAQ zur zentralen Bereitstellung
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,19 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralisierten Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011735"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399824"
 ---
-# <a name="centralized-deployment-faq"></a>FAQ zu Zentrale Bereitstellung
+# <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
 
 Die zentralisierte Bereitstellung ist die empfohlene Vorgehensweise für einen Office 365 Administrator zum Bereitstellen von Office-Add-Ins (Word, Excel, PowerPoint und Outlook) für Benutzer und Gruppen in einer Organisation, vorausgesetzt, die Organisation erfüllt alle Anforderungen für die Verwendung einer zentralisierten Bereitstellung, wie in diesem Artikel beschrieben.   
   
@@ -35,7 +36,7 @@ Die zentrale Bereitstellung von Add-ins erfordert, dass Benutzer Microsoft 365-A
  
 Die zentralisierte Bereitstellung wird nur für Online Postfächer unterstützt. Die Bereitstellung für lokale Exchange-Postfächer wird nicht unterstützt.
  
-Sie können die [Office 365 zentrale Bereitstellungs Kompatibilitätsprüfung](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) verwenden, um zu ermitteln, ob Ihr Abonnement berechtigt ist. 
+Sie können die [Office 365 zentrale Bereitstellungs Kompatibilitätsprüfung](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)verwenden   , um zu ermitteln, ob Ihr Abonnement berechtigt ist. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Wie Zielen Sie auf Add-in-Benutzerzuweisungen mit zentralisierter Bereitstellung ab?  
 
@@ -59,7 +60,7 @@ Weitere Informationen zum Verwalten des Benutzerzugriffs finden Sie unter </br>[
 
 Ja. Die zentralisierte Bereitstellung bietet Administratoren die Möglichkeit, während der Add-in-Bereitstellung eine von drei Bereitstellungsmethoden für Outlook-Add-Ins auszuwählen:
 
-**Fixed (Standard)**   das Add-in wird automatisch für die zugewiesenen Benutzer bereitgestellt und kann nicht entfernt werden.  
+**Fixed (Standard)**   Das Add-in wird automatisch für die zugewiesenen Benutzer bereitgestellt und kann nicht entfernt werden.  
  
 **Verfügbar** Benutzer können das Add-in in Outlook installieren, indem Sie "Home" auswählen > Weitere Add-Ins > admin-Managed hinzufügen.   
  

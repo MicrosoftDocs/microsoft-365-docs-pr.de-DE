@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Microsoft 365 benötigen. '
-ms.custom: okr_smb
-ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628446"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399908"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Sammeln der erforderlichen Informationen zum Erstellen von DNS-Einträgen
 

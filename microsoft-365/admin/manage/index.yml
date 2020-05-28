@@ -10,34 +10,35 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: b1a5bd2f50542a9c76c32da7465e80e371238560
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955325"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44399752"
 landingContent:
 - title: Überwachen des Status unseres Diensts
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Überwachen der Benutzeraktivität mithilfe von Berichten
+    - text: Überwachen der Benutzeraktivität mit Hilfe von Berichten
       url: ../activity-reports/activity-reports.md
     - text: Überwachen der Verwendungsanalyse
       url: ../usage-analytics/usage-analytics.md
     - text: Aktivieren von Nutzungsanalysen
       url: ../usage-analytics/enable-usage-analytics.md
-    - text: Ändern der Kontaktinformationen Ihrer Organisation
+    - text: Ändern Sie die Kontaktinformationen Ihrer Organisation
       url: change-address-contact-and-more.md
-    - text: Aktualisieren Ihrer Administratorkontakt Informationen
+    - text: Aktualisieren Sie Ihre Administrator-Kontaktinformationen
       url: update-phone-number-and-email-address.md
-    - text: Einrichten von Veröffentlichungsoptionen
+    - text: Einrichten von Freigabeoptionen
       url: release-options-in-office-365.md
 - title: Blockieren des Benutzerzugriffs und Sichern von Daten
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Zugreifen auf und Sichern der Daten eines ehemaligen Benutzers
+    - text: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
     - text: Einrichten der e-Mail-Aufbewahrung (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
@@ -47,15 +48,15 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Aktualisieren Ihrer Organisation auf die neuesten apps
+    - text: Aktualisieren Sie Ihre Organisation auf die neuesten Anwendungen
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: Anpassen des App-Startfelds
       url: customize-the-app-launcher.md
-    - text: Anforderungen für die zentrale Bereitstellung von Add-ins
+    - text: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
       url: centralized-deployment-of-add-ins.md
-    - text: Installieren und Verwalten von Add-Ins mithilfe einer zentralisierten Bereitstellung
+    - text: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
       url: manage-deployment-of-add-ins.md
-- title: Microsoft Teams
+- title: Microsoft Teams
   linkLists:
   - linkListType: overview
     links:

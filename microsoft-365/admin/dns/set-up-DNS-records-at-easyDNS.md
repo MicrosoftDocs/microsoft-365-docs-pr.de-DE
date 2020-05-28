@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter easyDNS für Microsoft einrichten.
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631357"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400232"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Erstellen von DNS-Einträgen bei easyDNS für Microsoft
 
@@ -36,7 +37,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Überprüfen, ob Sie die Domäne mit einem TXT-Eintrag besitzen
 
-1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
+1. Wechseln Sie zu, [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
 2. Wählen Sie unter der Überschrift **alle Domänen** die Option **DNS aus.**
     
@@ -54,7 +55,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 7. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag über das Internet verbreitet und von Microsoft erkannt werden kann.
     
-8. Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern den Eintrag an.
+8. Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und fordern Sie den Eintrag an.
     
 9. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
@@ -66,7 +67,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Hinzufügen eines MX-Eintrags zum Weiterleiten von e-Mail an Microsoft
 
-1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
+1. Wechseln Sie zu, [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
 2. Wählen Sie unter der Überschrift **alle Domänen** die Option **DNS aus.**
     
@@ -76,7 +77,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
     |**e-Mail für Zone**|**e-Mail-Server**|**Präferenz**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<Domain-Key\>. Mail.Protection.Outlook.com (Abrufen des \<Domänenschlüssel\> Werts auf der Seite Admin Center-Domänen)  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>. Mail.Protection.Outlook.com (Abrufen Ihres \<domain-key\> Werts über die Admin Center-Domänen Seite)  <br/> |0  <br/> |
    
 2. Wenn Sie Ihre anderen MX-Einträge zu Sicherungszwecken speichern möchten, kopieren Sie Sie an einer beliebigen Stelle. Bevor Sie fortfahren, entfernen Sie alle anderen MX-Einträge hier.
     
@@ -86,7 +87,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 ## <a name="add-the-required-cname-records"></a>Hinzufügen der erforderlichen CNAME-Einträge
 
-1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
+1. Wechseln Sie zu, [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
 2. Wählen Sie unter der Überschrift **alle Domänen** die Option **DNS aus.**
     
@@ -109,7 +110,7 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 
-1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
+1. Wechseln Sie zu, [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
 2. Wählen Sie unter der Überschrift **alle Domänen** die Option **DNS aus.**
     
@@ -125,11 +126,11 @@ Hinweis: SRV-Einträge sind derzeit nicht in allen easyDNS-Dienst Paketen verfü
     
 6. Stellen Sie sicher, dass der Eintrag richtig ist, und wählen Sie dann **bestätigen**aus. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge
 
 Hinweis: SRV-Einträge sind derzeit unter easyDNS ' Domain plus Service Level nicht verfügbar. Möglicherweise müssen Sie ein Upgrade auf ein höheres Service Level mit easyDNS durchführen, um SRV-Einträge hinzuzufügen. 
   
-1. Wechseln Sie [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) zu, und melden Sie sich mit Ihren Anmeldeinformationen an. 
+1. Wechseln Sie zu, [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) und melden Sie sich mit Ihren Anmeldeinformationen an. 
     
 2. Wählen Sie unter der Überschrift **alle Domänen** die Option **DNS aus.**
     
@@ -139,8 +140,8 @@ Hinweis: SRV-Einträge sind derzeit unter easyDNS ' Domain plus Service Level ni
     
     |**SERVICE**|**Proto**|**HOST**|**PRI**|**WGT**|**PORT**|**Target (muss mit einem "." enden)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Wählen Sie **weiter**aus. 
     

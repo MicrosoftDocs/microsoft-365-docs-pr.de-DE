@@ -20,12 +20,13 @@ search.appverid:
 description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features, die in diesem Monat hinzugefügt wurden.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+- AdminSurgePortfolio
+ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322135"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401142"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -252,7 +253,7 @@ Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditka
 
 Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>Globaler Leser
+### <a name="global-reader"></a>Globale Leseberechtigung
 
 Wir haben die Rolle des globalen Lesers in der [Oktober 2019-Ignite-Edition](#october-2019---ignite-edition)erwähnt, aber da Sie im allgemeinen weiter kommt, lassen Sie uns einige Details besprechen:
 
@@ -306,7 +307,7 @@ Es wurden viele Änderungen für Rollen im Admin Center vorgenommen, seit wir im
 
 - **Favoriten** – Sie können Ihren bevorzugten oder am häufigsten verwendeten Rollen einen Stern hinzufügen, damit Sie diese leicht finden können, indem Sie die Spalte sortieren oder einen Filter erstellen.
 - **Aktive Benutzer**  >  **Rollen verwalten** – diese wurde so aktualisiert, dass Sie mit den Änderungen in den Rollen übereinstimmt. Wie bei der Rollenliste haben wir die Standardliste der Rollen auf den nützlichsten Bereich beschränkt, aber Sie können alle Rollen anzeigen, indem Sie **Alle anzeigen nach Kategorie**erweitern.
-- **Globale Leserrolle** -Sie haben ihn gefragt. Du hast es! Die [globale Leser](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) Rolle!
+- **Globale Leserrolle** -Sie haben ihn gefragt. Du hast es! Die [globale Leser](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) Rolle!
 
 ### <a name="report-an-issue"></a>Melden eines Problems
 
@@ -464,7 +465,7 @@ Möglicherweise wird in Ihrem Admin Center ein neues Empfehlungs Popup angezeigt
 - **InTune-Geräteschutz** : Wenn Ihre Lizenzen InTune enthalten und wir feststellen, dass Sie die Einrichtung von InTune oder Ihre Geräte nicht abgeschlossen haben, wird empfohlen, dass Sie eine InTune-Richtlinie erstellen, um die Dateien Ihrer Organisation zu schützen, wenn Benutzer von ihren mobilen Geräten aus darauf zugreifen.
 - **Monatliche Office-Feature-Updates** – wir haben Feedback von unseren sehr kleinen Kunden bekommen, dass Ihre Benutzer, wenn Sie monatliche Office-Feature-Updates erhalten, glücklicher sind. Wenn Sie also ein sehr kleines Unternehmen sind und Ihre Office-Feature-Updates derzeit alle sechs Monate erhalten, wird diese Empfehlung angezeigt.
 
-**Settings** <br>
+**Einstellungen** <br>
 Was die Einstellungen anbetrifft, gibt es einige Änderungen. Meistens aktualisieren Sie einfach die vorhandenen Einstellungen auf den neuen Admin Center-Stil. Wenn wir fortfahren und neue Einstellungen hinzufügen, die Sie noch nie zuvor gesehen haben, werden wir Sie hier ansprechen. Und wir haben eine vollständige Einstellung, die Sie ankündigen müssen: **moderne Authentifizierung**. Ja, es gibt eine neue Einstellung zum Aktivieren der **modernen Authentifizierung**! Zum Auschecken wechseln Sie zu **Einstellungen**  >  **Dienste & Add-ins**  >  **moderne Authentifizierung**.
 
 ## <a name="april-2019"></a>April 2019

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Windows-basiertem DNS für Microsoft einrichten.
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048843"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400244"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mit Windows-basiertem DNS
 
@@ -38,21 +39,21 @@ Um zu beginnen, müssen Sie [Ihre DNS-Einträge in Windows-basiertem DNS Suchen]
 Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen von DNS-Einträgen finden Sie unter [Problembehandlung bei Problemen nach dem Ändern des Domänennamens oder der DNS-Einträge](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Suche nach Ihren DNS-Einträgen in einem Windows-basierten DNS
-<a name="BKMK_find_your_dns_1"> </a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start** > **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc**ein, und wählen Sie dann **OK**aus. Erweitern Sie im DNS-Manager den Eintrag ** \<DNS-Servername\> \> Forward-Nachschlage Zonen  **. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
+<a name="BKMK_find_your_dns_1"> </a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start**  >  **Ausführen**. Wenn Sie in Windows Server 2012 arbeiten, drücken Sie die Windows-Taste und **r**. Geben Sie **dnsmgmnt. msc**ein, und wählen Sie dann **OK**aus. Erweitern Sie im DNS-Manager den Knoten ** \<DNS server name\> \> Forward-Lookupzonen  **. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
    
 ## <a name="add-mx-record"></a>Hinzufügen eines MX-Eintrags
 <a name="BKMK_add_MX"> </a>
 
 Fügen Sie einen MX-Eintrag hinzu, damit e-Mails für Ihre Domäne an Microsoft gesendet werden.
-- Der von Ihnen hinzugefügte MX-Eintrag enthält einen Wert (den Wert **Verweist auf die Adresse**), der Folgendem ähnelt: \<MX token\>.mail.protection.outlook.com, wobei \<MX-Token\> ein Wert wie z. B. MSxxxxxxx ist.   
+- Der MX-Eintrag, den Sie hinzufügen, enthält einen Wert (den **Punkt auf den Adress** Wert), der etwa wie folgt aussieht: \<MX token\> . Mail.Protection.Outlook.com, wobei \<MX token\> ein Wert wie MSxxxxxxx ist. 
 - Kopieren Sie in der Zeile MX im Abschnitt Exchange Online der Seite hinzufügen von DNS-Einträgen in Microsoft den Wert Unterpunkte in Adresse aufgeführt. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
-- Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** > **Mail Exchanger (MX)**. Informationen zur Suche dieser Seite für die Domäne finden Sie unter [Suchen nach DNS-Einträgen in Windows-basiertem DNS](#find-your-dns-records-in-windows-based-dns).  
+- Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion**  >  **Mail Exchanger (MX)**. Informationen zur Suche dieser Seite für die Domäne finden Sie unter [Suchen nach DNS-Einträgen in Windows-basiertem DNS](#find-your-dns-records-in-windows-based-dns).  
 - Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind: 
     - Hostname:  
     - @Address: Fügen Sie hier den Punkt-zu-Adresse-Wert ein, den Sie soeben von Microsoft kopiert haben.  
     - Präferenz 
 - Wählen Sie **Save Changes**aus.
-- Entfernen Sie veraltete MX-Einträge. Wenn Sie über eine alte MX-Einträge für diese Domäne verfügen, die e-Mails an eine andere Stelle weiterleiten, aktivieren Sie das Kontrollkästchen neben jedem alten Datensatz, und wählen Sie dann **Löschen** > **OK**aus. 
+- Entfernen Sie veraltete MX-Einträge. Wenn Sie über eine alte MX-Einträge für diese Domäne verfügen, die e-Mails an eine andere Stelle weiterleiten, aktivieren Sie das Kontrollkästchen neben jedem alten Datensatz, und wählen Sie dann **Löschen**  >  **OK**aus. 
    
 ## <a name="add-cname-records"></a>Hinzufügen von CNAME-Einträgen
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Fügen Sie die für Microsoft erforderlichen CNAME-Einträge hinzu. Wenn zusätz
 > [!IMPORTANT]
 > Wenn Sie über die Mobile Geräteverwaltung (MDM) für Microsoft verfügen, müssen Sie zwei zusätzliche CNAME-Einträge erstellen. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (Wenn Sie nicht über MDM verfügen, können Sie diesen Schritt überspringen.) 
 
-- Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** > **CNAME (CNAME)**.
+- Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion**  >  **CNAME (CNAME)**.
 - Stellen Sie im Dialogfeld **neuen Ressourceneintrag** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
     - Hostname: AutoErmittlung
     - Typ: 
@@ -183,7 +184,7 @@ Hinzufügen eines TXT-Eintrags
 - Hostname: @
 - Typ: txt
 - Address: Fügen Sie den Ziel-oder Punkt-zu-Adresse-Wert ein, den Sie hier soeben von Microsoft kopiert haben.  
-- Wählen Sie **OK** > **Fertig**aus.
+- Wählen Sie **OK**  >  **Fertig**aus.
 
 Überprüfen Sie Ihre Domäne in Microsoft.  
 > [!IMPORTANT]

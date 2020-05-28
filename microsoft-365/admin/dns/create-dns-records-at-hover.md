@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hover für Microsoft einrichten.
-ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048987"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400425"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Erstellen von DNS-Einträgen bei Hover für Microsoft
 
@@ -75,7 +76,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
    
     ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     ![Wählen Sie speichern aus.](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -127,11 +128,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     
     |**Hostname**|**Record Type**|**Priorität**|**Hostname**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*. Mail.Protection.Outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     ![Wählen Sie speichern aus.](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -182,7 +183,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
    
     ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     ![Wählen Sie speichern aus.](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -220,7 +221,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
    
     ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     ![Wählen Sie speichern aus.](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
@@ -251,12 +252,12 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an](htt
     
     |**Hostname**|**Record Type**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Eingeben oder kopieren und Einfügen von DNS-Werten](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     ![Wählen Sie speichern aus.](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   

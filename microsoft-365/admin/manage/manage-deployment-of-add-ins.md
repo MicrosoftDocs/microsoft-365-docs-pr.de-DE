@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139709"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399728"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Add-Ins im Microsoft 365 Admin Center
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -147,7 +148,7 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
 
 Nach der Bereitstellung können Administratoren auch den Benutzer Zugriff auf Add-Ins ändern.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > für**Dienste &-Add-ins** .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 
@@ -261,7 +262,7 @@ Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>In Word 2016, Excel 2016 oder PowerPoint 2016
 
-1. Wählen **Sie \> meine Add-Ins einfügen**aus. 
+1. Wählen **Sie \> Meine Add-Ins einfügen**aus. 
     
 2. Wählen Sie im Office-Add-In-Fenster die Schaltfläche **Vom Administrator verwaltet** aus. 
     
@@ -277,7 +278,7 @@ Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie 
 
 Sie können auch ein Add-in löschen, das bereitgestellt wurde.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > für**Dienste &-Add-ins** .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen**für  >  **Dienste &-Add-ins** .
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter OVH für Microsoft einrichten.
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048915"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400340"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Erstellen von DNS-Einträgen bei OVH für Microsoft
 
@@ -142,7 +143,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
     |**Eintragstyp**|**Unterdomäne**|**TTL**|**Priorität**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<Domänenschlüssel\>.mail.protection.outlook.com.  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>. Mail.Protection.Outlook.com.  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH MX-Eintrag für e-Mail](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -276,8 +277,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Eintragstyp**|**Unterdomäne**|**Priority**|**Weight**|**Port**|**TTL**|**Ziel**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![OVH-SRV-Eintrag](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

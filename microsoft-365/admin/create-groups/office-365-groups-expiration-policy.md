@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064821"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400725"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -53,11 +54,11 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder löschen Sie die Microsoft 365 Groups-Ablaufrichtlinien Einstellungen.|
-|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
+|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
-Wie oben erwähnt, ist ablaufy standardmäßig deaktiviert. Ein Administrator muss die Ablaufrichtlinie aktivieren und die Eigenschaften festlegen, damit diese wirksam werden. Um Sie zu aktivieren, gehen Sie zu **Azure Active Directory (AAD)-** > **Gruppen** > **Ablauf**. Hier können Sie die standardmäßige Gruppen Lebensdauer festlegen und angeben, wie weit im Voraus die ersten und zweiten Ablaufbenachrichtigungen zum Gruppenbesitzer wechseln sollen.
+Wie oben erwähnt, ist ablaufy standardmäßig deaktiviert. Ein Administrator muss die Ablaufrichtlinie aktivieren und die Eigenschaften festlegen, damit diese wirksam werden. Um Sie zu aktivieren, gehen Sie zu **Azure Active Directory (AAD)-**  >  **Gruppen**  >  **Ablauf**. Hier können Sie die standardmäßige Gruppen Lebensdauer festlegen und angeben, wie weit im Voraus die ersten und zweiten Ablaufbenachrichtigungen zum Gruppenbesitzer wechseln sollen.
 
 Die Gruppen Lebensdauer wird in Tagen angegeben und kann auf 180, 365 oder auf einen benutzerdefinierten Wert festgelegt werden, den Sie angeben. Der benutzerdefinierte Wert muss mindestens 30 Tage lang sein.
 

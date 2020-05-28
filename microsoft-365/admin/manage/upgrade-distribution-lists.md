@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Hier erfahren Sie, wie Sie eine oder mehrere Verteilerlisten auf Microsoft 365-Gruppen in Outlook aktualisieren und wie Sie mithilfe von PowerShell mehrere Verteilerlisten gleichzeitig aktualisieren.
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065669"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399494"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Wenn Sie beispielsweise fünf Verteilerlisten mit SMTP- `dl1@contoso.com` Adressen `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com`aktualisieren möchten, führen Sie den folgenden Befehl aus:
+Wenn Sie beispielsweise fünf Verteilerlisten mit SMTP-Adressen aktualisieren möchten `dl1@contoso.com` , `dl2@contoso.com` `dl3@contoso.com` führen Sie `dl4@contoso.com` `dl5@contoso.com` den folgenden Befehl aus:
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Wenn Sie beispielsweise fünf Verteilerlisten mit SMTP- `dl1@contoso.com` Adress
 Es gibt zwei Möglichkeiten, ein Upgrade aller berechtigten Verteilerlisten durchführen zu können.
 
 > [!NOTE]
-> Das Cmdlet "Upgrade-DistributionGroup" empfängt keine Daten aus der Pipeline, daher ist es erforderlich, dass der "ForEach-{}Object"-Operator zum erfolgreichen ausführen verwendet wird.
+> Das Cmdlet "Upgrade-DistributionGroup" empfängt keine Daten aus der Pipeline, daher ist es erforderlich, dass der "ForEach-Object {} "-Operator zum erfolgreichen ausführen verwendet wird.
 
 1. Rufen Sie die berechtigten DLS im Mandanten ab, und aktualisieren Sie Sie mithilfe des Befehls Upgrade:
 

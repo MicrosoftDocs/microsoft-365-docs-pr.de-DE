@@ -1,5 +1,5 @@
 ---
-title: Bleiben Sie auf dem Laufenden über Änderungen
+title: Bleiben Sie über Änderungen auf dem Laufenden
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,20 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: Hier erfahren Sie, wie Sie die Microsoft 365-Updates mithilfe des Nachrichten Centers, der gezielten Version, der Roadmap und der Blogs und der Community auf dem laufenden halten.
-ms.openlocfilehash: 8e803fbf725f162d34d42cec8abc62d0de9c9178
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2700ee1eb06986c885920c7cac4a57581354d61a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628016"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399530"
 ---
-# <a name="stay-on-top-of-changes"></a>Bleiben Sie auf dem Laufenden über Änderungen
+# <a name="stay-on-top-of-changes"></a>Bleiben Sie über Änderungen auf dem Laufenden
 
 Mit Microsoft 365 erhalten Sie neue Produktupdates und-Features, sobald diese statt geplanter Updates, die Monate oder Jahre voneinander entfernt sind, verfügbar werden. Dementsprechend erhalten Sie und Ihre Benutzer regelmäßig neue und verbesserte Möglichkeiten, um Ihre Arbeit zu erledigen, anstatt ein kosten- und zeitaufwändiges unternehmensweites Upgrade zu verwenden. Die Herausforderung für ein solches Modell ist, mit den Änderungen und Updates Schritt zu halten. Im folgenden finden Sie einige Möglichkeiten, wie Sie die Microsoft 365-Updates in Ihrer Organisation im Vordergrund halten können.
 

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Microsoft 365 übernimmt.
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627944"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399446"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Ausführen einer internen Übernahme durch den Administrator
 
@@ -40,9 +41,9 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
 > [!NOTE]
 > Wenn Self-Service in Ihrem Mandanten aktiviert ist, können Benutzer kostenlos Dienste wie Power BI selbst abonnieren. Bei diesen Schritten wird davon ausgegangen, dass ein Self-Service-Benutzer Abonnement den nicht verwalteten Mandanten erstellt hat, den Sie als Administrator übernehmen möchten. Im ersten Schritt erstellen Sie einen Benutzerkontext im nicht verwalteten Mandanten, indem Sie Power BI verwenden, um den Übernahme Pfad des Administrators zu illustrieren.
 
-1. Wenn Sie sich für Power BI registrieren möchten, wechseln Sie zur [Power BI-Website](https://powerbi.com) , **und wählen Sie ﻿kostenlose** > **Testversion** starten (in Freigabe mit Power BI pro Box) aus. 
+1. Wenn Sie sich für Power BI registrieren möchten, wechseln Sie zur [Power BI-Website](https://powerbi.com) , **und wählen Sie ﻿kostenlose**  >  **Testversion** starten (in Freigabe mit Power BI pro Box) aus. 
 
-2. Registrieren Sie sich mit einem Benutzerkonto, das den Domänennamen Ihrer Organisation (like `powerbiadmin@contoso.com`) verwendet. Wenn Ihr Konto bereits verwendet wird, melden Sie sich mit Ihrem aktuellen Kennwort an.
+2. Registrieren Sie sich mit einem Benutzerkonto, das den Domänennamen Ihrer Organisation (like `powerbiadmin@contoso.com` ) verwendet. Wenn Ihr Konto bereits verwendet wird, melden Sie sich mit Ihrem aktuellen Kennwort an.
 
 3. Überprüfen Sie Ihre e-Mails auf den **Verifizierungscode** , und geben Sie den Code zum Überprüfen Ihrer e-Mail-Adresse ein.
     

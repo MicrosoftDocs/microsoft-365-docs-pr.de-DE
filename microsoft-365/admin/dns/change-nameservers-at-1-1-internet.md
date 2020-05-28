@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Erfahren Sie, wie Sie Office 365, die von 21Vianet betrieben werden, zum Verwalten Ihrer DNS-Einträge einrichten können, wenn 1&1 Internet der DNS-Hostanbieter ist.
-ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939409"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400701"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit 1&1 Ionos
 
@@ -140,7 +141,7 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft 365 Ihre Domäne einri
    
 ![Eingeben von Namenserver Werten](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
     
     ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +172,7 @@ Möchten Sie Ihre NS-Einträge so ändern, dass Microsoft 365 Ihre Domäne einri
    
    ![Eingeben von Namenserver Werten](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern**.
     
     ![Auswählen von "Speichern" auf der Seite "Name Server-Einstellungen"](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

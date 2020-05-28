@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Hier erfahren Sie, wie Sie zum Zeitpunkt des Kaufs von Microsoft 365 einen Subscription Advisor-Partner als Partner von Record hinzufügen, den Partner ändern oder einen Partner aus einem Abonnement löschen.
-ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045284"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399470"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -72,7 +73,7 @@ Als Administrator für Office 365 können Sie unter anderem Benutzer erstellen o
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
     
 2. Wählen Sie das Produkt aus, das Sie erwerben möchten, und wählen Sie dann **kaufen**aus.
   
@@ -91,7 +92,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Hinzufügen eines Partners beim Erwerb
 
-1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041)zur Seite **Abrechnungs** \> - **Einkaufsdienste** .
+1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041)zur Seite **Abrechnungs** - \> **Einkaufsdienste** .
     
 2. Wählen Sie das Produkt aus, das Sie erwerben möchten, und wählen Sie dann **kaufen**aus.
   
@@ -114,7 +115,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
     
 2. Wenn Sie über mehr als ein Abonnement verfügen, wählen Sie das Abonnement aus, das Sie bearbeiten möchten.
   
@@ -161,7 +162,7 @@ So akzeptieren Sie dieses Angebot
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
     
 2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des zu bearbeitenden Abonnements aus.
     
@@ -198,7 +199,7 @@ So akzeptieren Sie dieses Angebot
 
 ## <a name="view-your-partner-relationships"></a>Anzeigen Ihrer Partnerbeziehungen
 
-- Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> . Ihre Partner werden auf dieser Seite aufgelistet. 
+- Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> . Ihre Partner werden auf dieser Seite aufgelistet. 
   
   Wenn Sie keinen Partner haben, wird eine Meldung angezeigt, die besagt: "hier ist nichts".
   
@@ -209,7 +210,7 @@ So akzeptieren Sie dieses Angebot
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-1.  Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1.  Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
     
 2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des zu bearbeitenden Abonnements aus.
     

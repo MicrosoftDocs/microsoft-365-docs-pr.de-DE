@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Hier erfahren Sie, wie Sie ein Autopilot-Profil erstellen und auf ein Gerät anwenden sowie ein Profil bearbeiten oder löschen oder ein Profil von einem Gerät entfernen.
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627372"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400972"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Erstellen und Bearbeiten von AutoPilot-Profilen
 
@@ -41,7 +42,7 @@ Ein Profil gilt für ein Gerät oder eine Gerätegruppe.
   
 1. Wählen Sie im Microsoft 365 Admin Center die Option **Geräte** \> **Autopilot**aus.
   
-2. Klicken Sie auf der Seite **Autopilot** auf **Profiles** die Register \> Karte Profile Profil **Erstellen**.
+2. Klicken Sie auf der Seite **Autopilot** auf die Registerkarte **profile** Profil \> **Erstellen**.
     
 3. Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, das Sie bei der Identifizierung unterstützt, beispielsweise Marketing. Aktivieren Sie die gewünschte Einstellung, und wählen Sie dann **Speichern**aus. Weitere Informationen zu Autopilot-Profileinstellungen finden Sie unter [Informationen zu Autopilot-Profileinstellungen](autopilot-profile-settings.md).
     
@@ -53,7 +54,7 @@ Nachdem Sie ein Profil erstellt haben, können Sie es auf ein Gerät oder eine G
   
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich ein Profil aus der Dropdownliste **Assigned profile** \> zugewiesenes Profil **Speichern**aus.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich ein Profil aus der Dropdownliste **zugewiesenes Profil** \> **Speichern**aus.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -81,5 +82,5 @@ Nachdem Sie einem Gerät ein Profil zugewiesen haben, können Sie es aktualisier
 
 1. Wählen Sie auf der Seite **Windows vorbereiten** die Registerkarte **Geräte**. 
     
-2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich **keine** aus der Dropdownliste **Assigned profile** \> zugewiesenes Profil **Speichern**aus.
+2. Aktivieren Sie das Kontrollkästchen neben einem Gerätenamen, und wählen Sie im **Geräte** Bereich **keine** aus der Dropdownliste **zugewiesenes Profil** \> **Speichern**aus.
     

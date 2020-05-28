@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste auf 1&1 Ionos für Microsoft einrichten.
-ms.openlocfilehash: 1c32e15be8bfdf9ea29647af511d0f8ff0ac0b57
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 983fba73a6f82308d6d1bcf706ff93d72b98976c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049143"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400593"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Erstellen von DNS-Einträgen bei 1&1 Ionos für Microsoft
 
@@ -68,7 +69,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
     |TXT  <br/> |(Lassen Sie dieses Feld leer)  <br/> |MS=ms *XXXXXXXX*  <br/> Hinweis: Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Klicken Sie auf **Speichern**.
+7. Wählen Sie **Speichern**.
     
 8. Wählen Sie erneut **Speichern** aus. 
     
@@ -108,19 +109,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 4. Wählen Sie im Bereich **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten**aus.
     
-5. Wählen Sie im Abschnitt **MX Records** im Bereich **Mail Exchanger (MX Record)** einen **anderen e-Mail-Server**aus.<br/>(Möglicherweise müssen Sie nach unten scrollen.)<br/>![1&amp;1-BP-configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. Wählen Sie im Abschnitt **MX Records** im Bereich **Mail Exchanger (MX Record)** einen **anderen e-Mail-Server**aus.<br/>(Möglicherweise müssen Sie nach unten scrollen.)<br/>![1 &amp; 1-BP-configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
-6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(Wenn noch keine MX-Einträge aufgeführt sind, fahren Sie mit dem nächsten Schritt fort.)<br/>![1&amp;1-BP-configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
+6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(Wenn noch keine MX-Einträge aufgeführt sind, fahren Sie mit dem nächsten Schritt fort.)<br/>![1 &amp; 1-BP-configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
 7. Geben Sie in den Feldern für den Eintrag **MX 1** die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. 
     
     |**MX 1**|**Priorität**|
     |:-----|:-----|
-    | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/>  Hinweis: Rufen Sie \<ihren Domänenschlüssel\> von Ihrem Microsoft-Konto ab. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
+    | *\<domain-key\>*. Mail.Protection.Outlook.com  <br/>  Hinweis: erhalten Sie Ihre \<domain-key\> von Ihrem Microsoft-Konto. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
     
     ![1 und 1-configure 2 und 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Klicken Sie auf **Speichern**.<br/>(Möglicherweise müssen Sie nach unten scrollen.)<br/>![1&amp;1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Wählen Sie **Speichern**.<br/>(Möglicherweise müssen Sie nach unten scrollen.)<br/>![1 &amp; 1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.<br/>![Auswählen von "Ja" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -143,7 +144,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 2. Wählen Sie **Manage Domains**aus.
     
-3. Suchen Sie auf der Seite **Domänen Center** die Domäne, die Sie aktualisieren möchten, und wählen Sie dann unter **Domänen verwalten**aus.<br/>![1&amp;1-BP-configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Im nächsten Schritt erstellen Sie zwei Unterdomänen und legen einen **Alias** für jede hiervor fest.<br/>(Dies ist erforderlich, da 1&1 Ionos nur einen CNAME-Eintrag auf oberster Ebene unterstützt, für Microsoft jedoch mehrere CNAME-Einträge erforderlich sind.)<br/>Zuerst erstellen Sie die Autoermittlungs-Unterdomäne.
+3. Suchen Sie auf der Seite **Domänen Center** die Domäne, die Sie aktualisieren möchten, und wählen Sie dann unter **Domänen verwalten**aus.<br/>![1 &amp; 1-BP-configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Im nächsten Schritt erstellen Sie zwei Unterdomänen und legen einen **Alias** für jede hiervor fest.<br/>(Dies ist erforderlich, da 1&1 Ionos nur einen CNAME-Eintrag auf oberster Ebene unterstützt, für Microsoft jedoch mehrere CNAME-Einträge erforderlich sind.)<br/>Zuerst erstellen Sie die Autoermittlungs-Unterdomäne.
     
 4. Wählen Sie im Abschnitt unter **Domänenübersicht** die Option unter **Domäne erstellen**aus.
     
@@ -155,15 +156,15 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com   | 
 
-    ![1&amp;1-BP-configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
+    ![1 &amp; 1-BP-configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
-6. Wählen Sie unter **Domäne erstellen**aus.<br/>![1&amp;1-BP-configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
+6. Wählen Sie unter **Domäne erstellen**aus.<br/>![1 &amp; 1-BP-configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. Suchen Sie im Abschnitt **Subdomain Overview** die Unterdomäne **AutoErmittlung** , die Sie soeben erstellt haben, und wählen Sie dann das Panel-Steuerelement **(v)** für diese Unterdomäne aus. <br/>![1&amp;1-BP-configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. Suchen Sie im Abschnitt **Subdomain Overview** die Unterdomäne **AutoErmittlung** , die Sie soeben erstellt haben, und wählen Sie dann das Panel-Steuerelement **(v)** für diese Unterdomäne aus. <br/>![1 &amp; 1-BP-configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. Wählen Sie im Bereich unter **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten**aus. <br/>![1&amp;1-BP-configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. Wählen Sie im Bereich unter **Domäneneinstellungen** die Option **DNS-Einstellungen bearbeiten**aus. <br/>![1 &amp; 1-BP-configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. Wählen Sie im Abschnitt **a/AAAA Records (IP Addresses)** im Bereich **IP-Adresse (a Record)** die Option **CNAME**aus.<br/>![1&amp;1-BP-configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. Wählen Sie im Abschnitt **a/AAAA Records (IP Addresses)** im Bereich **IP-Adresse (a Record)** die Option **CNAME**aus.<br/>![1 &amp; 1-BP-configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. Geben Sie im Feld **Alias:** nur den Wert für **Alias** aus der folgenden Tabelle ein. Sie können den Wert auch kopieren und einfügen.<br/> 
     
@@ -171,11 +172,11 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com   |
 
-    ![1&amp;1-BP-configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
+    ![1 &amp; 1-BP-configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
   
-11. Aktivieren Sie das Kontrollkästchen für den Haftungsausschluss **I am aware**.<br/>![1&amp;1-BP-configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
+11. Aktivieren Sie das Kontrollkästchen für den Haftungsausschluss **I am aware**.<br/>![1 &amp; 1-BP-configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Klicken Sie auf **Speichern**.<br/>![1&amp;1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Wählen Sie **Speichern**.<br/>![1 &amp; 1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>Zusätzliche CNAME-Einträge
@@ -266,15 +267,15 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
     
-    |**Typ**|**Prefix**|**Name Value**|
+    |**Type**|**Prefix**|**Name Value**|
     |:-----|:-----|:-----|
     |TXT  <br/> |(Dieses Feld leer lassen.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           | 
     
     ![TXT-Eintrag](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. Klicken Sie auf **Speichern**.<br/>![Add record](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. Wählen Sie **Speichern**.<br/>![Add record](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. Klicken Sie auf **Speichern**.<br/>![Save record](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. Wählen Sie **Speichern**.<br/>![Save record](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus.<br/>![Auswählen von "Ja" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -299,14 +300,14 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     |**Type**|**Service**|**Protocol**|**Name**|**Host**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Dieses Feld leer lassen.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Dieses Feld leer lassen.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(Dieses Feld leer lassen.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Dieses Feld leer lassen.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
-    ![1&amp;1-BP-configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
+    ![1 &amp; 1-BP-configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Klicken Sie auf **Speichern**. <br/>![1&amp;1-BP-configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Wählen Sie **Speichern**. <br/>![1 &amp; 1-BP-configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Klicken Sie auf **Speichern**. <br/>![1&amp;1-BP-configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Wählen Sie **Speichern**. <br/>![1 &amp; 1-BP-configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. Wählen Sie im Dialogfeld **DNS-Einstellungen bearbeiten** die Option **Ja**aus. <br/>![Auswählen von "Ja" im Dialogfeld "DNS-Einstellungen bearbeiten"](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   

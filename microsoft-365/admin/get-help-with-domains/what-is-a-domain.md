@@ -19,13 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: Erfahren Sie, was eine Domäne ist, und wie Sie eine Domäne erwerben oder die Standarddomäne Ihres Unternehmens verwenden können.
-ms.custom: okr_smb
-ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
+ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628256"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399860"
 ---
 # <a name="what-is-a-domain"></a>Was ist eine Domäne?
 
@@ -33,7 +35,7 @@ ms.locfileid: "43628256"
   
 Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@**-Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem Internet-Standardsuffix, z. B. *ihrunternehmen.<span>com* oder *musikhochschule.<span>edu*. 
   
-Verwenden einer benutzerdefinierten Domäne wie *Rob@Contoso<span> . com* mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
+Verwenden einer benutzerdefinierten Domäne wie *Rob@contoso. <span> com* mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Wählen Sie die Option aus, die für Sie am besten geeignet ist:
 
@@ -43,7 +45,7 @@ Verwenden Sie Microsoft 365, um eine neue Domäne zu kaufen – wir richten alle
   
  **Verwenden einer Domäne, die Sie bereits besitzen:**
   
-Wenn Sie bereits eine Domäne wie *you@yourcompany besitzen.<span> com* Sie können es hinzufügen und sofort mit der Verwendung von OneDrive und Microsoft apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
+Wenn Sie bereits eine Domäne wie *you@yourcompany besitzen. <span> com* Sie können es hinzufügen und sofort mit der Verwendung von OneDrive und Microsoft apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
   
 > [!TIP]
 > Sie wissen nicht sicher, wo Ihre Domäne registriert ist? – [Hilfe zum Ermitteln Ihrer Domänenregistrierungsstelle anfordern](find-your-domain-registrar.md)

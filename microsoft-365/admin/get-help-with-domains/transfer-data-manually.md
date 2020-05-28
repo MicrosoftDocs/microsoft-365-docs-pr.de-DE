@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Hier erfahren Sie, wie Sie Daten manuell zwischen zwei Microsoft 365-Konten übertragen, wenn Sie den Plan oder den Firmennamen geändert oder mehrere Abonnements in einem kombiniert haben.
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053740"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399872"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Manuelles Übertragen von Daten zwischen zwei Konten
 
@@ -61,7 +62,7 @@ Für Microsoft 365 Enterprise und Microsoft 365 mittelständisches Unternehmen:
   
 |**Ort**|**Zweck**|
 |:-----|:-----|
-|**Administrator** \> - **Microsoft 365** \> - **Diensteinstellungen** <br/> |Wählen Sie jede Registerkarte für Einstellungen für e-Mail, Websites, lync, Benutzer Software, Kennwörter, Community, Rights Management und Mobile aus.  <br/> |
+|**Administrator** \> **Microsoft 365** \> **Diensteinstellungen** <br/> |Wählen Sie jede Registerkarte für Einstellungen für e-Mail, Websites, lync, Benutzer Software, Kennwörter, Community, Rights Management und Mobile aus.  <br/> |
 |**Admin** \> **Exchange** <br/> | Exchange Online-Einstellungen  <br/> |
 |**Admin** \> **SharePoint** <br/> | SharePoint Online-Einstellungen  <br/> |
 |**Administrator** \> **Skype for Business** <br/> |Zusätzliche Skype for Business Einstellungen  <br/> |

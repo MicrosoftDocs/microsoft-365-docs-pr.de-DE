@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Hier erfahren Sie, wie Sie Websites und Dateien für Personen außerhalb der Organisation freigeben. '
-ms.openlocfilehash: e49cc84314b55f1aacfa47ab28916bae12132a3e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 6990b4ffe45af1a591c72e36c1348d1e804e829b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139613"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399554"
 ---
 # <a name="share-sites-and-files-externally"></a>Externe Freigabe von Websites und Dateien
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -74,7 +75,7 @@ Die externe Freigabe ist auf Organisationsebene standardmäßig aktiviert, jedoc
   
 2. Wählen Sie auf der Seite, die geöffnet wird, aus, ob Benutzer nur für vorhandene Gäste, für neue und vorhandene Gäste oder für beliebige Personen freigegeben werden können. 
     
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern**.
     
 Nachdem Sie die externe Freigabe auf Organisationsebene aktiviert haben, können Sie Ihre Freigabeeinstellungen optimieren, um die externe Freigabe für bestimmte Websites zu deaktivieren. Informationen finden Sie unter [Aktivieren oder Deaktivieren der externen Freigabe für eine Website](/sharepoint/change-external-sharing-site).
   

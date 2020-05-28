@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen oder die Mitglieder.
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629047"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400148"
 ---
 # <a name="configure-a-shared-mailbox"></a>Konfigurieren eines freigegebenen Postfachs
 
@@ -55,7 +56,7 @@ Nachdem Sie [ein freigegebenes Postfach erstellt](create-a-shared-mailbox.md)hab
 
 3. Geben Sie einen neuen Namen ein, oder fügen Sie einen weiteren Alias hinzu. Wenn Sie die primäre e-Mail-Adresse ändern möchten, muss Ihr Postfach über mehr als einen e-Mail-Alias verfügen.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Weiterleiten von E-Mails, die an ein freigegebenes Postfach gesendet wurden
 
@@ -83,7 +84,7 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
     
 3. Legen Sie die Umschaltfläche **auf**ein und geben Sie eine e-Mail-Adresse ein, an die die Nachrichten weitergeleitet werden sollen. Es kann sich um eine beliebige gültige e-Mail-Adresse handeln. Um an mehrere Adressen weiterzuleiten, müssen Sie [eine Verteilergruppe](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) für die Adressen erstellen und dann den Namen der Gruppe in dieses Feld eingeben.
     
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Senden von automatischen Antworten aus einem freigegebenen Postfach
 
@@ -113,7 +114,7 @@ Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendet
 
 5. Wenn Sie *auch* eine Antwort an Personen außerhalb Ihrer Organisation senden möchten, aktivieren Sie das Kontrollkästchen, die Antwort erhalten soll, und geben Sie den Text ein. Es ist nicht möglich, eine Antwort nur an Personen außerhalb Ihrer Organisation (ohne Einbeziehung von Personen innerhalb Ihrer Organisation) zu senden.
 
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Jedem erlauben, die gesendeten E-Mails (die Antworten) anzuzeigen
 
@@ -146,7 +147,7 @@ Wenn Sie zulassen möchten, dass alle Benutzer die gesendeten e-Mails anzeigen k
 
 3. Legen Sie die Umschaltfläche für alle apps, die Mitglieder für den Zugriff auf das freigegebene Postfach verwenden können, auf **ein** fest. Legen Sie die Umschaltfläche für alle apps, die Sie nicht verwenden möchten, auf **Off** fest. 
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Speichern eines freigegebenen Postfachs für das Beweissicherungsverfahren
@@ -171,13 +172,13 @@ Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a L
 
 ::: moniker-end
 
-2. Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **Bearbeitungs** **Prozess halten** \> aus.
+2. Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann Bearbeitungs **Prozess halten** aus \> **Edit**.
 
 3. Legen Sie die Umschaltfläche **auf ein**fest. 
 
 4. Geben Sie optional eine Dauer, eine Notiz zum Haltestatus und eine URL mit weiteren Informationen ein.  
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 
 ## <a name="add-or-remove-members"></a>Hinzufügen oder Entfernen von Mitgliedern
@@ -264,7 +265,7 @@ Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen m�
 
 3. Legen Sie die Umschaltfläche **auf ein** oder **aus**fest. 
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 > [!NOTE]
 > Wenn Sie ein freigegebenes Postfach aus der Adressliste ausblenden, ist es für neue freigegebene Post Fach Mitglieder unmöglich, das ausgeblendete Postfach Ihrem Outlook-Profil hinzuzufügen, bis das freigegebene Postfach erneut in der Adressliste angezeigt wird. 

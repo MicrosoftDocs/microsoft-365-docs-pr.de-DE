@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Wir erstellen kontinuierlich neue Artikel, aktualisieren bestehende und nehmen daran Änderungen basierend auf Ihrem Feedback vor. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231898"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401199"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -100,13 +100,6 @@ Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](custome
 ### <a name="pst-import"></a>PST-Import
 
 [FAQ zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md) (aktualisiert)<br>FAQ dazu hinzugefügt, wie PST-Importprozesse doppelte e-Mail-Elemente verarbeiten.
-
-### <a name="retention"></a>Aufbewahrung
-
-[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md) (aktualisiert)<br>Dazu gehören:
-
-- Inhalts Pfade für Aufbewahrungsrichtlinien für "Aufbewahrung" und "nur löschen" hinzugefügt (zuvor erklärte Inhalts Pfade werden nur beibehalten und dann gelöscht).
-- [Aktualisierter Abschnitt](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) , in dem erläutert wird, dass Sie für SharePoint-Standorte jetzt eine URL angeben, anstatt eine Website auszuwählen. Dies bedeutet, dass Sie keine Berechtigungen für den Zugriff auf die Website benötigen, um Sie in eine Aufbewahrungsrichtlinie einzubeziehen.
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Names.co.uk für Microsoft einrichten.
-ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048939"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400376"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Erstellen von DNS-Einträgen bei Names.co.uk für Microsoft
 
@@ -72,7 +73,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -120,11 +121,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Hostname**|**Priority**|**Ergebnis**|
     |:-----|:-----|:-----|
-    |(Dieses Feld leer lassen.)  <br/> |1  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto abrufen.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Dieses Feld leer lassen.)  <br/> |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*. Mail.Protection.Outlook.com  <br/> > [!NOTE]Erhalten Sie> *\<domain-key\>* von Ihrem Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -134,7 +135,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![NamesUK-BP-configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -171,7 +172,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
        
     ![NamesUK-BP-configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
     
     ![NamesUK-BP-configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -209,7 +210,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
        
     ![NamesUK-BP-configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
@@ -234,12 +235,12 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     

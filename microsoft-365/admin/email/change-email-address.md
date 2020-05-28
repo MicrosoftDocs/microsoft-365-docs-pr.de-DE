@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändern Sie Ihre anfängliche e-Mail-Adresse in eine freundliche e-Mail-Adresse wie Tom@fourthcoffee.com. Hierzu müssen Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen. '
-ms.openlocfilehash: 50739c01fda9528140870798324dd69a1c68abce
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e1ac40fb38a207cc0f19f48ac4ab7c6f34ffbb35
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140500"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400160"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -84,7 +85,7 @@ Sie müssen über ein globales Administratorkonto verfügen, um diese Schritte a
 
 ::: moniker-end 
 
-2. Wechseln Sie zur Seite **Setup** > **Domänen** . 
+2. Wechseln Sie zur Seite **Setup**  >  **Domänen** . 
 
 3. Wählen Sie auf der Seite **Domänen** die Option **Domäne hinzufügen**aus.
     

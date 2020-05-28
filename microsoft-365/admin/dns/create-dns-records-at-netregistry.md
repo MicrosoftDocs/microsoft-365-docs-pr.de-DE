@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei Netregistry für Microsoft einrichten.
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939155"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400364"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Erstellen von DNS-Einträgen bei Netregistry für Microsoft
 
@@ -137,7 +138,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**TTL (SEC)**|**Exchange (verweist auf Adresse oder Wert)**|**Ist der Host vollständig qualifiziert?**|**Präferenz (Priorität)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> | *\<Domänenschlüssel\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)      |(aktivieren Sie das Kontrollkästchen)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter Was ist MX-Priorität?  <br/> |
+    |(leer lassen)  <br/> |3600 (Sekunden)  <br/> | *\<domain-key\>*. Mail.Protection.Outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)      |(aktivieren Sie das Kontrollkästchen)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter Was ist MX-Priorität?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -166,7 +167,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 5. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    |**Name**|**Typ**|**TTL**|**Host (Punkt-zu-oder Adresswert)**|
+    |**Name**|**Type**|**TTL**|**Host (Punkt-zu-oder Adresswert)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (Sekunden)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com  <br/> |
@@ -211,7 +212,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     > [!NOTE]
     > Sie müssen vor und nach dem Eintrag im Feld txt Anführungszeichen setzen. 
   
-    |**Name**|**Typ**|**TTL**|**TXT-Daten (Ziel)**|
+    |**Name**|**Type**|**TTL**|**TXT-Daten (Ziel)**|
     |:-----|:-----|:-----|:-----|
     |(leer lassen)  <br/> |TXT  <br/> |3600 (Sekunden)  <br/> |"v = spf1 include:SPF. Protection. Outlook. com-all"  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
@@ -247,8 +248,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
     |**Typ**|**Name**|**TTL (SEC)**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |_sip._tls  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (Dienst)  <br/> |_sip._tls  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |3600 (Sekunden)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

@@ -19,21 +19,22 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Hier erfahren Sie, wie Sie eine APP-Verwaltungsrichtlinie erstellen, bearbeiten oder löschen und Arbeitsdateien auf Android-oder IOS-Geräten schützen.
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627432"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401052"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte
 
-![Banner, auf das https://aka.ms/aboutM365previewverwiesen wird.](../media/m365admincenterchanging.png)
+![Banner, auf das verwiesen wird https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Erstellen einer App-Verwaltungsrichtlinie
 
@@ -51,7 +52,7 @@ ms.locfileid: "43627432"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Next decide **Who will get these settings?** Wenn Sie die standardmäßige Sicherheitsgruppe " **alle Benutzer** " nicht verwenden möchten, wählen Sie **ändern**aus, und wählen Sie \> die Sicherheitsgruppen aus, die **diese Einstellungen erhalten**.
+6. Next decide **Who will get these settings?** Wenn Sie die standardmäßige Sicherheitsgruppe " **alle Benutzer** " nicht verwenden möchten, wählen Sie **ändern**aus, und wählen Sie die Sicherheitsgruppen aus, die diese Einstellungen erhalten \> **Select**.
     
 7. Wählen Sie schließlich **Fertig** aus, um die Richtlinie zu speichern, und weisen Sie sie Geräten zu. 
     

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter DreamHost for Microsoft einrichten.
-ms.openlocfilehash: 756889457e802bdd9ee18b239b6986fb69f6b924
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939295"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400509"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Erstellen von DNS-Einträgen bei DreamHost für Microsoft
 
@@ -65,7 +66,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Typ**|**Value**|**Kommentar**|
+    |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |(Dieses Feld ist optional.)  <br/> |
    
@@ -126,7 +127,7 @@ Führen Sie die folgenden Schritte aus.
     
     |**MX-Eintrag (erforderlich)**|
     |:-----|
-    |0  *\<Domänenschlüssel\>*  .mail.protection.outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> Die 0 ist der MX-Prioritätswert. Fügen Sie ihn am Anfang des MX-Werts hinzu, vom Rest des Werts durch ein Leerzeichen getrennt.  <br/> **Hinweis:** Rufen Sie Ihren * \<Domänenschlüssel\> * von Ihrem Microsoft-Konto ab.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0 *\<domain-key\>* . Mail.Protection.Outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> Die 0 ist der MX-Prioritätswert. Fügen Sie ihn am Anfang des MX-Werts hinzu, vom Rest des Werts durch ein Leerzeichen getrennt.  <br/> **Hinweis:** Holen Sie sich Ihr *\<domain-key\>* Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![DreamHost-BP-configure-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -166,7 +167,7 @@ Führen Sie die folgenden Schritte aus.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Typ**|**Value**|**Kommentar**|
+    |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |(Dieses Feld ist optional.)  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |(Dieses Feld ist optional.)  <br/> |
@@ -209,7 +210,7 @@ Führen Sie die folgenden Schritte aus.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Typ**|**Value**|**Kommentar**|
+    |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |(Dieses Feld ist optional.)  <br/> |
    
@@ -245,7 +246,7 @@ Führen Sie die folgenden Schritte aus.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Typ**|**Value**|**Kommentar**|
+    |**Name**|**Type**|**Wert**|**Kommentar**|
     |:-----|:-----|:-----|:-----|
     |_sip._tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |(Dieses Feld ist optional.)  <br/> |
     |_sipfederationtls._tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |(Dieses Feld ist optional.)  <br/> |

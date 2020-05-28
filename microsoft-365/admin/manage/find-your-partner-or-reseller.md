@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Erfahren Sie, wie Sie einen neuen Microsoft 365-Partner suchen oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628184"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399764"
 ---
 # <a name="find-your-partner-or-reseller"></a>Suchen nach Ihrem Partner oder Händler
 
@@ -50,7 +51,7 @@ Wenn Sie Microsoft 365 über eine offene Volumenlizenzierung kaufen oder verlän
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Abrufen von Partner Informationen im Admin Center
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> .
   
 2. Wenn Sie über einen Partner verfügen, werden hier der Name des Partners und die Beziehung zu Ihrer Organisation aufgeführt. Um Partner Kontaktinformationen (Telefonnummer und e-Mail-Adresse) anzuzeigen, wählen Sie den Partnernamen aus.
     

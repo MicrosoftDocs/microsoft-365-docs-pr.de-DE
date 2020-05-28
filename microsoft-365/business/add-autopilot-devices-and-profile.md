@@ -18,18 +18,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: In diesem Artikel erfahren Sie, wie Sie Windows Autopilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden, damit Sie für die Verwendung durch den Mitarbeiter verfügbar sind.
-ms.openlocfilehash: de14012ebf9e7cdd22e41505f316ab665773c670
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: efcb5442b34d2d42275cedc30e71ac98c7ea1266
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165879"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401092"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
@@ -59,7 +60,7 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, ist die beste M�
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Navigieren Sie auf der Seite **Upload. CSV-Datei mit Geräteliste** zu einem Speicherort, an dem Sie die vorbereitete bereit haben. CSV-Datei, und **Öffnen** \> Sie dann **Next**. Die Datei muss drei Kopfzeilen aufweisen:
+3. Navigieren Sie auf der Seite **Upload. CSV-Datei mit Geräteliste** zu einem Speicherort, an dem Sie die vorbereitete bereit haben. CSV-Datei, und **Öffnen** Sie dann \> **Next**. Die Datei muss drei Kopfzeilen aufweisen:
     
     - Spalte A: Seriennummer des Geräts
     
