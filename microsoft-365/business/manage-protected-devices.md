@@ -21,18 +21,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Hier erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10-Geräte auf die Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634286"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403096"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Verwalten geschützter Geräte mit Microsoft 365 for Business
 

@@ -1,5 +1,5 @@
 ---
-title: Wechseln zu einem anderen Microsoft 365 for Business-Plan
+title: Wechseln zu einem anderen Microsoft 365 Business-Plan
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Hier erfahren Sie, wie Sie zu einem neuen Microsoft 365 for Business-Abonnement wechseln.
-ms.openlocfilehash: 8682ced4aab6fd1b0cbfc132527e977eabc59306
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707499"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403186"
 ---
-# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Wechseln zu einem anderen Microsoft 365 for Business-Plan
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Wechseln zu einem anderen Microsoft 365 Business-Plan
 
 Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können Sie Pläne wechseln.  
 

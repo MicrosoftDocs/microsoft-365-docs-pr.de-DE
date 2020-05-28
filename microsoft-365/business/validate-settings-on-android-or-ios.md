@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Erfahren Sie, wie Sie die Microsoft 365 Business Premium-App-Schutzeinstellungen auf Ihren Android-oder IOS-Geräten validieren.
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635722"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403368"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Überprüfen der APP-Schutzeinstellungen auf Android-oder IOS-Geräten
 
@@ -41,7 +42,7 @@ Nachdem Sie [App-Konfigurationen für Android-Geräte festgelegt haben](app-prot
   
 Stellen Sie zunächst sicher, dass die Richtlinie auf die APP angewendet wird, in der Sie Sie validieren möchten.
   
-1. Wechseln Sie im Microsoft 365 Business Premium [Admin Center](https://portal.office.com)zu **Richtlinien** \> - **Bearbeitungs Richtlinie**.
+1. Wechseln Sie im Microsoft 365 Business Premium [Admin Center](https://portal.office.com)zu **Richtlinien** - \> **Bearbeitungs Richtlinie**.
     
 2. Wählen Sie **Anwendungsrichtlinie für Android** für die Einstellungen, die Sie beim Setup erstellt haben, oder eine andere Richtlinie, die Sie erstellt haben, und stellen Sie sicher, dass Sie für Outlook erzwungen wird, beispielsweise. 
     
@@ -130,7 +131,7 @@ Nachdem Sie [App-Konfigurationen für iOS-Geräte festgelegt haben](app-protecti
   
 Stellen Sie zunächst sicher, dass die Richtlinie auf die APP angewendet wird, in der Sie Sie validieren möchten.
   
-1. Wechseln Sie im Microsoft 365 Business Premium [Admin Center](https://portal.office.com)zu **Richtlinien** \> - **Bearbeitungs Richtlinie**.
+1. Wechseln Sie im Microsoft 365 Business Premium [Admin Center](https://portal.office.com)zu **Richtlinien** - \> **Bearbeitungs Richtlinie**.
     
 2. Wählen Sie **Anwendungsrichtlinie für IOS** für die Einstellungen, die Sie beim Setup erstellt haben, oder eine andere Richtlinie, die Sie erstellt haben, und stellen Sie sicher, dass Sie für Outlook erzwungen wird. 
     

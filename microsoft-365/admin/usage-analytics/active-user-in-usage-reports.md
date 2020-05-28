@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Erfahren Sie mehr über einen aktiven Benutzer von Microsoft 365-Nutzungsanalysen, Aktivitätsberichten und Akzeptanz Metriken.
-ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631791"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402882"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Aktiver Benutzer in Microsoft 365-Nutzungsberichten
 

@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Erfahren Sie, wie Sie eine ﻿kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 erwerben.
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141054"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403138"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Testen oder Kaufen eines Microsoft 365-Abonnements
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 ::: moniker range="o365-worldwide"
 
 
-1. Melden Sie sich beim Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
+1. Melden Sie sich beim Admin Center unter an [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) , und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
 2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind. Wählen Sie den Microsoft 365-Plan aus, den Sie ausprobieren oder kaufen möchten.
 
@@ -79,7 +80,7 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. Melden Sie sich beim Admin Center unter [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
+1. Melden Sie sich beim Admin Center unter an [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) , und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
 2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind. 
 
@@ -107,7 +108,7 @@ Wenn Sie ein Abonnement über das Admin Center hinzufügen, wird das neue Abonne
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. Melden Sie sich beim Admin Center unter [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)an, und wechseln Sie dann zu **Billing** \> **Purchase Services**.
+1. Melden Sie sich beim Admin Center unter an [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) , und wechseln Sie dann zu **Billing** \> **Purchase Services**.
 
 2. Auf der Seite " **Dienste kaufen** " werden die Abonnements aufgeführt, die für Ihre Organisation verfügbar sind. 
 

@@ -1,5 +1,5 @@
 ---
-title: Verstehen Ihrer Rechnung oder Rechnung
+title: Ihre Rechnung verstehen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,19 +13,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung oder Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232817"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402642"
 ---
-# <a name="understand-your-bill-or-invoice"></a>Verstehen Ihrer Rechnung oder Rechnung
+# <a name="understand-your-bill-or-invoice"></a>Ihre Rechnung verstehen
 
 ::: moniker range="o365-21vianet"
 

@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 for Business zum Zurücksetzen von Windows 10-Geräten verwenden, die Sie verwalten, und die ursprünglichen Einstellungen beim Kauf wiederherstellen.
-ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62585828274652e48b6c6d3654faa8c20fb4caba
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634790"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402764"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen
 

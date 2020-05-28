@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Erfahren Sie, wie Sie Ihr Microsoft 365 Business-Abonnement mit einem Product Key verlängern und wie Sie die wiederkehrende Abrechnung aktivieren oder deaktivieren. '
-ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208428"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403222"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Verlängern von Microsoft 365 Business
 

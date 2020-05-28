@@ -11,16 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom:
+- AdminSurgePortfolio
+- aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Self-Service-Käufen.
-ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: cc0a059c745c64c9c196deccf771fffa30a5fe63
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046156"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403210"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ zum Self-Service-Kauf
 
@@ -119,7 +121,7 @@ Administratoren können vorhandene Lizenzen zuweisen oder zusätzliche Abonnemen
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Wo sieht der Administrator Self-Service-Käufe?
 
-Global-und Abrechnungs Administratoren können Abonnements, die im Self-Service-Kauf erworben wurden, bei der **Abrechnung** > **ihrer Produkte** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über die zentrale Beschaffung erworben wurden. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
+Global-und Abrechnungs Administratoren können Abonnements, die im Self-Service-Kauf erworben wurden, bei der **Abrechnung**  >  **ihrer Produkte** im <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> zusammen mit allen anderen Abonnements anzeigen, die über die zentrale Beschaffung erworben wurden. Sie können die Liste nur auf die Abonnements filtern, die über die zentrale Beschaffung erworben wurden, oder auch Abonnements, die über Self-Service Purchase erworben wurden.
 
 Administratoren können das Produkt, den Käufer Namen, das erworbene Abonnement, das Ablaufdatum, den Bestellverlauf, den Kaufpreis und die zugewiesenen Benutzer sehen.
 

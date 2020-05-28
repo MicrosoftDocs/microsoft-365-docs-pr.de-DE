@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: Hier erfahren Sie, wie Sie Gruppen für die Verwendung mit Geräten Lizenzen zuweisen.
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011185"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402870"
 ---
 # <a name="manage-licenses-for-devices"></a>Verwalten von Lizenzen für Geräte
 
@@ -41,7 +43,7 @@ Zunächst erstellen Sie eine Gruppe im Azure Active Directory Admin Center und w
 
 Wenn Sie einer Gruppe Lizenzen zuweisen, weisen Sie allen Geräten innerhalb der Gruppe Lizenzen zu. Sie können einer einzelnen Gruppe nur ein Abonnement zuweisen.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
 2. Wählen Sie auf der Seite **Lizenzen** die Option **Microsoft 365 apps for Education (Gerät)** oder **Microsoft 365 apps for Enterprise (Gerät)** aus.
 3. Wählen Sie auf der nächsten Seite ein Abonnement aus, und wählen Sie dann **Lizenzen zuweisen**aus.
 4. Geben Sie im Bereich **Lizenzen einer Gruppe zuweisen** die Eingabe eines Gruppennamens ein, und wählen Sie ihn aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.
@@ -51,7 +53,7 @@ Wenn Sie einer Gruppe Lizenzen zuweisen, weisen Sie allen Geräten innerhalb der
 
 Wenn Sie die Zuweisung von Lizenzen von einer Gruppe aufheben, entfernen Sie die Lizenzen von allen Geräten innerhalb der Gruppe. Alle apps und die zugehörigen Daten sind dann schreibgeschützt.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
 2. Wählen Sie auf der Seite **Lizenzen** die Option **Microsoft 365 apps for Education (Gerät)** oder **Microsoft 365 apps for Enterprise (Gerät)** aus.
 3. Wählen Sie auf der nächsten Seite ein Abonnement aus, wählen Sie **Weitere Aktionen**aus, und wählen Sie dann Lizenzen für die **Zuweisung**aufheben aus.
 4. Wählen Sie im Dialogfeld **Lizenzen** aufheben die Option **Zuweisung**aufheben aus.

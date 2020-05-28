@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Validieren von Microsoft 365 Business Premium-App-Schutzeinstellungen auf Windows 10-Geräten und sicherstellen, dass Benutzer keine Unternehmensdaten in persönliche Dateien oder nicht verwaltete apps kopieren können.
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635742"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403388"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Überprüfen der Einstellungen für den App-Schutz auf Windows 10-PCs
 
@@ -37,11 +38,11 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Überprüfen der Verbindungseinstellungen**
   
-1. Nachdem Sie sich mit Microsoft 365 Business Premium-Anmeldeinformationen angemeldet haben und eine Verbindung mit Azure AD hergestellt haben, wie unter [Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)beschrieben, wechseln Sie zu **Windows-Einstellungen** \> - **Konten** \> **Zugriff auf Arbeit oder Schule**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. Nachdem Sie sich mit Microsoft 365 Business Premium-Anmeldeinformationen angemeldet haben und eine Verbindung mit Azure AD hergestellt haben, wie unter [Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)beschrieben, wechseln Sie zu **Windows-Einstellungen** - \> **Konten** \> **Zugriff auf Arbeit oder Schule**. Wählen Sie **verbunden mit \<tenant name\> Azure AD**aus, und wählen Sie dann **Info**aus.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. Auf der Seite **verwaltet nach** \<Mandantenname\> werden die **Verbindungsinformationen** angezeigt, die eine **Verwaltungs Server Adresse** enthalten, wie in der folgenden Abbildung dargestellt. 
+2. Auf der Seite **verwaltet von** \<tenant name\> können Sie die **Verbindungsinformationen** sehen, die eine **Verwaltungs Server Adresse** enthalten, wie in der folgenden Abbildung dargestellt. 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -67,7 +68,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
     
 2. Klicken Sie unter **Auf Arbeits- oder Schulkonto zugreifen** auf **Verbinden**.
     
-3. Geben Sie Ihre Anmeldeinformationen für Microsoft 365 Business Premium in das **Dialogfeld** \> Einrichten einer Geschäfts-oder Schulkonto **Anmeldung**ein.
+3. Geben Sie Ihre Anmeldeinformationen für Microsoft 365 Business Premium in das **Dialogfeld Einrichten einer Geschäfts-oder Schulkonto** \> **Anmeldung**ein.
     
 4. Wählen Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** die Option **Geschäfts-, Schul- oder Unikonto** und dann **Informationen** aus.
     

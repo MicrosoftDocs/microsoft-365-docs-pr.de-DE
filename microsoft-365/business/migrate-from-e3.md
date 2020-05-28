@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business Premium von Office 365 E3.
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633187"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402238"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium 
 
@@ -41,7 +42,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business Premium 
 | Feature    | Unterstützung in Microsoft 365 Business Premium    | Unterstützung in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Lokal**        | | | 
-| Office-Apps<sup>1</sup>    | Microsoft 365 apps for Business    | Microsoft 365-Apps für Unternehmen | 
+| Office-Apps<sup>1</sup>    | Microsoft 365 Apps for Business    | Microsoft 365 Apps for Enterprise | 
 | **Apps für die Cloud-Produktivität**        | | | 
 | Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
 | Teams    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 

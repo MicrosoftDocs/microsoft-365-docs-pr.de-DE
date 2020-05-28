@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165120"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403162"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
@@ -40,9 +41,9 @@ Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entsc
 
 In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement abläuft.
 
-| **Active**                                                             | **Abgelaufen <br/>(30 Tage\*)**                                                | **Deaktiviert <br/>(90 Tage\*)**                                               | **Nicht Bereitgestellt**                                                                         |
+| **Active**                                                             | **Abgelaufen <br/> (30 Tage \* )**                                                | **Deaktiviert <br/> (90 Tage \* )**                                               | **Nicht Bereitgestellt**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte<br/>Daten Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
+| *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte Daten <br/> Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
 | Benutzer haben normalen Zugriff auf Microsoft 365-, Daten-und Office-Anwendungen  | Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen              | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                        | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                                     |
 | Administratoren haben normalen Zugriff auf Microsoft 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen                                           | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
 |                                                                        | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. |                                                                                           |

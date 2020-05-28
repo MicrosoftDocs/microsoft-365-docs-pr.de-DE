@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Grundlegendes zu den Ursachen, warum manchmal das Wechseln von Plänen manuell oder durch Anruf Unterstützung erfolgt.
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943143"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403150"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Warum kann ich Microsoft 365 for Business-Pläne nicht wechseln?
 
@@ -41,18 +42,18 @@ Wenn die Schaltfläche **Pläne wechseln** nicht angezeigt wird, kann Ihr Plan n
   
 ::: moniker range="o365-worldwide"
 
- **Benötigen Sie etwas anderes?** [Kaufen eines weiteren Abonnements](../buy-another-subscription.md) | [kündigen ihrer Abonnement](cancel-your-subscription.md) | [Abonnements und](../index.yml) | des[Supports für](../../admin/contact-support-for-business-products.md) den Abrechnungs Anruf
+ **Benötigen Sie etwas anderes?** [Kaufen eines weiteren Abonnements](../buy-another-subscription.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Abonnements und Abrechnung](../index.yml)  |  [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Benötigen Sie etwas anderes?** [Kaufen eines weiteren Abonnements](../buy-another-subscription.md) | [kündigen ihrer Abonnement](cancel-your-subscription.md) | [Abonnements und](../index.yml) | des[Supports für](../../admin/contact-support-for-business-products.md) den Abrechnungs Anruf
+ **Benötigen Sie etwas anderes?** [Kaufen eines weiteren Abonnements](../buy-another-subscription.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Abonnements und Abrechnung](../index.yml)  |  [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Benötigen Sie etwas anderes?** [Kaufen oder Testen von Abonnements für Office 365 betrieben von 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [kündigen des](cancel-your-subscription.md) | [Supports](../../admin/contact-support-for-business-products.md) für Abonnement Anrufe
+ **Benötigen Sie etwas anderes?** [Kaufen oder Testen von Abonnements für Office 365 betrieben von 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Anruf Unterstützung](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

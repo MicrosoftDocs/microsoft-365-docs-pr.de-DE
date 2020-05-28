@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365-Dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011759"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402022"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 ---
@@ -71,7 +72,7 @@ Der Microsoft 365 Overview-Bericht enthält die folgenden Berichte. Sie können 
 
 Auf der Seite "Aktivierung und Lizenzierung" werden Berichte zur Aktivierung von Microsoft 365 angeboten. Das bedeutet, wie viele Benutzer Office-Apps heruntergeladen und aktiviert haben und wie viele Lizenzen von Ihrer Organisation zugewiesen wurden. Der Monatswert im oberen Bereich bezieht sich auf den aktuellen Monat, und die Metriken spiegeln die vom Anfang des Monats bis zum aktuellen Datum aggregierten Werte wider.
 
-- **Aktivierungs** &ndash; Track-Dienstplan (beispielsweise Microsoft 365 apps for Enterprise, Project und Visio) in Ihrer Organisation. Jede Person mit einer Office-Lizenz kann Produkte auf bis zu fünf Geräten installieren. Mit den Berichten in diesem Abschnitt können Sie auch die Geräte anzeigen, auf denen Personen Office-Apps installiert haben. Beachten Sie, dass ein Benutzer die App installieren und sich mit seinem-Konto anmelden muss, um einen Plan zu aktivieren.
+- **Aktivierung** &ndash; Verfolgen Sie den Service Plan (beispielsweise Microsoft 365 apps for Enterprise, Project und Visio) in Ihrer Organisation. Jede Person mit einer Office-Lizenz kann Produkte auf bis zu fünf Geräten installieren. Mit den Berichten in diesem Abschnitt können Sie auch die Geräte anzeigen, auf denen Personen Office-Apps installiert haben. Beachten Sie, dass ein Benutzer die App installieren und sich mit seinem-Konto anmelden muss, um einen Plan zu aktivieren.
 
 - **Lizenzierung** &ndash; Dieser Bericht enthält eine Übersicht über die Lizenztypen, die Anzahl der Benutzer, denen die jeweiligen Lizenztypen zugewiesen wurden, und die Verteilung der Lizenzzuweisung für jeden Monat. Der Monatswert im oberen Bereich bezieht sich auf den aktuellen Monat, und die Metriken spiegeln die vom Anfang des Monats bis zum aktuellen Datum aggregierten Werte wider.
 

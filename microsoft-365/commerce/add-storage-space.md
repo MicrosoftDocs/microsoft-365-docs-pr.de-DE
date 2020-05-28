@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Hier erfahren Sie, wie Sie den Dateispeicher in Ihrem Microsoft 365-Abonnement hinzufügen und reduzieren. Bei zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive speichern.
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140966"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402678"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Sp
 
 ::: moniker range="o365-germany"
 
-1. Melden Sie sich https://portal.office.de bei als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
+1. Melden Sie sich bei https://portal.office.de als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
 
 2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen.
 
@@ -70,7 +71,7 @@ Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Sp
 
 ::: moniker range="o365-21vianet"
 
-1. Melden Sie sich https://login.partner.microsoftonline.cn/ bei als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
+1. Melden Sie sich bei https://login.partner.microsoftonline.cn/ als globaler oder SharePoint-Administrator an, und wählen Sie dann die Kachel admin aus, um das Admin Center zu öffnen. (Wenn eine Meldung angezeigt wird, dass Sie keine Berechtigung für den Zugriff auf die Seite haben, verfügen Sie über keine Microsoft 365-Administratorberechtigungen in Ihrer Organisation.)
 
 2. Wählen Sie im linken Bereich unter **Admin Center**die Option **SharePoint**aus. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen.
 
@@ -95,7 +96,7 @@ Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben ha
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
 2. Wählen Sie unten auf der Seite " **Einkaufsdienste** " **Add-ons**aus.
 
@@ -107,7 +108,7 @@ Wenn Sie noch keinen zusätzlichen Speicherplatz für Ihr Abonnement erworben ha
 
 6. Überprüfen Sie auf der Seite **wie sieht** das aus? die Anzahl von Gigabytes Speicher, die Sie ausgewählt haben, überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
 
-7. Überprüfen Sie auf der Seite **vollständige Bestellung** die Summe. Wenn Sie Änderungen vornehmen müssen, wählen Sie **Bestellung bearbeiten**aus. Wenn für die Bestellung eine Bonitätsprüfung erforderlich ist, aktivieren Sie das Kontrollkästchen. Wenn Sie fertig sind, klicken Sie auf \> **Bestellung aufgeben** , **um zu admin Home zu wechseln**.
+7. Überprüfen Sie auf der Seite **vollständige Bestellung** die Summe. Wenn Sie Änderungen vornehmen müssen, wählen Sie **Bestellung bearbeiten**aus. Wenn für die Bestellung eine Bonitätsprüfung erforderlich ist, aktivieren Sie das Kontrollkästchen. Wenn Sie fertig sind, klicken Sie auf **Bestellung aufgeben** , \> **um zu admin Home zu wechseln**.
 
 ::: moniker-end
 
@@ -167,7 +168,7 @@ Wenn Sie bereits über das **Office 365 extra File Storage** -Add-on zusätzlich
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Wählen Sie das Abonnement aus, das das Add-on " **Office 365 extra File Storage** " enthält.
 

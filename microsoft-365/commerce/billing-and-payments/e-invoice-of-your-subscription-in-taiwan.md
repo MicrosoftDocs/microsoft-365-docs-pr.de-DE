@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Informationen zur Microsoft 365 for Business-e-Rechnung für Taiwan.
-ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045880"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401786"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Grundlegendes zur e-Rechnung für Microsoft 365 for Business (Taiwan)
 
@@ -55,7 +56,7 @@ Zum Zeitpunkt der Kontoerstellung, in **Schritt 1**, willkommen, Let es Get to K
   
 Nachdem Sie Ihr Konto erstellt haben, können Sie Ihre MwSt-ID über Ihr Admin Center aktualisieren, indem Sie die folgenden Schritte ausführen:
   
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
     
 2. Wählen Sie ein Abonnement aus, und wählen Sie dann **Weitere Aktionen**aus.
     

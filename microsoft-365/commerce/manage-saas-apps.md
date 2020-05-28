@@ -11,14 +11,15 @@ ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informationen zum Aktivieren und Verwalten von Drittanbieter-apps im Microsoft 365 Admin Center.
-ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232745"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402582"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
 
@@ -81,7 +82,7 @@ Hier sehen Sie, was Sie in jedem Portal tun können.
 
 | Microsoft 365 Admin Center | App-Publisher-Portal |
 | --- | --- |
-| Lizenzmenge ändern <br> Verwalten der Bezahlung Ihrer Rechnung <br> Verwalten der Bezahlung Ihrer Rechnung <br> Zahlungsmethode ändern (Kreditkarte) <br> Rechnung anzeigen <br> App-Abonnement kündigen | Einrichten der APP (einmal für jede APP) <br> Benutzern Lizenzen zuweisen <br> Technischer Support |
+| Lizenzmenge ändern <br> Verwalten der Bezahlung Ihrer Rechnung <br> Verwalten der Bezahlung Ihrer Rechnung <br> Zahlungsmethode ändern (Kreditkarte) <br> Rechnung anzeigen <br> App-Abonnement kündigen | Einrichten der APP (einmal für jede APP) <br> Zuweisen von Lizenzen an Benutzer <br> Technischer Support |
 
 Nachdem die App aktiviert wurde, bleibt sie aktiv, es sei denn, Sie wird abgebrochen, läuft ab oder wenn die Zahlung nicht aktuell gehalten wird. Diese Ereignisse ändern den App-Status in "deaktiviert". Wenn eine APP deaktiviert ist, kann Sie nicht erneut aktiviert werden. Um die APP weiterhin zu verwenden, kaufen Sie eine weitere Kopie davon.
 
@@ -101,7 +102,7 @@ Administratoren können die Anzahl der Lizenzen ändern, die Ihrer Organisation 
 2. Suchen Sie die APP, die Sie verwalten möchten, und wählen Sie Sie aus.
 3. Wählen Sie **Lizenzmenge ändern**aus.
 
-## <a name="manage-payment-methods"></a>Zahlungsmethoden verwalten
+## <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
 Software-as-a-Service-apps haben jeweils ein Abrechnungsprofil zugewiesen. Mit Abrechnungs Profilen können Sie anpassen, welche Produkte auf Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen. Hierzu zählen unter anderem folgende bewährte Methoden:
 

@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten.
 keywords: Partner, Lösungsanbieter
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141207"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402594"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
 Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt ein paar Schritte, wenn es darum geht, Dinge einzurichten.
 
-- Administratoren suchen und kontaktieren einen Partner mithilfe des Formulars unter <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
+- Administratoren suchen und kontaktieren einen Partner mithilfe des Formulars unter <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
 - Partner senden eine e-Mail-Anforderung an Kunden, um eine Partnerbeziehung herzustellen.
 - Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit dem Partner zu arbeiten.
 
@@ -90,7 +90,7 @@ Wenn Sie keine Administratorrechte an den Partner delegieren möchten, können S
 
 Wenn Sie Administratorrechte an einen Partner delegieren, können Sie diese Berechtigungen jederzeit entfernen. Durch das Entfernen von Administratorrechten wird die Partnerbeziehung nicht entfernt. Sie können auch weiterhin mit Ihnen zusammenarbeiten, beispielsweise als Reseller.
 
-1. Wechseln Sie im Admin Center zur Seite **Rechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
+1. Wechseln Sie im Admin Center zur Seite **Rechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
 2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
 3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
 4. Wählen Sie auf der Seite Partner die Option **Administratorrollen entfernen**aus.
@@ -99,7 +99,7 @@ Wenn Sie Administratorrechte an einen Partner delegieren, können Sie diese Bere
 
 Wenn Sie entscheiden, dass Sie nicht mehr mit einem Partner zusammenarbeiten möchten, können Sie die Beziehung beenden. Sie können jedoch nur Beziehungen löschen, bei denen es sich bei dem Partner entweder um einen delegierten Administrator oder einen Berater handelt. Wenden Sie sich für alle anderen Partnertypen an Ihren Partner, um die Beziehung zu beenden.
 
-1. Wechseln Sie im Admin Center zur Seite **Rechnungs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
+1. Wechseln Sie im Admin Center zur Seite **Rechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungskonten</a> .
 2. Wählen Sie auf der Seite **Abrechnungskonten** die Registerkarte **Partner Beziehungen** aus.
 3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
 4. Wählen Sie auf der Seite Partner Detail die Option **Partner löschen**aus.

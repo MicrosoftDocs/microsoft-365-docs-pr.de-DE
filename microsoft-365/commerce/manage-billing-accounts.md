@@ -11,16 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826267"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402606"
 ---
 # <a name="manage-billing-accounts"></a>Abrechnungskonten verwalten
 
@@ -66,9 +66,9 @@ In diesem Abschnitt werden die Versandadressen aufgelistet, die Ihrem Abrechnung
 
 Sie können anderen Benutzern den Zugriff auf das Abrechnungskonto im Microsoft 365 Admin Center über Rollen und Berechtigungen ermöglichen. Nur ein Abrechnungskonto Besitzer kann Zugriff auf ein Abrechnungskonto gewähren. Sie können Benutzern eine der folgenden Rollen zuweisen:
 
-- Der **Besitzer** &mdash; des Abrechnungskontos kann Berechtigungen zuweisen, Konten bearbeiten, Vereinbarungen abschliessen und Konten anzeigen.
-- **Abrechnungskonto mitwirk** &mdash; Ende kann Konten bearbeiten, Vereinbarungen abschliessen und Konten anzeigen.
-- **Abrechnungskonto Leser** &mdash; kann Konten anzeigen.
+- **Abrechnungskonto Besitzer** &mdash; Kann Berechtigungen zuweisen, Konten bearbeiten, Vereinbarungen abschliessen und Konten anzeigen.
+- **Abrechnungskonto Mitwirkender** &mdash; Kann Konten bearbeiten, Vereinbarungen Signieren und Konten anzeigen.
+- **Konto Leser** &mdash; für Abrechnungskonten Kann Konten anzeigen.
 
 > [!Note]
 > Abrechnungskonto Rollen gelten nur für Abrechnungskonten und gelten nicht für andere Microsoft 365 Admin Center-Szenarien.

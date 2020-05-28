@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: Erfahren Sie mehr über das Feature neue Kontingente.
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942175"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402414"
 ---
 # <a name="allotment-basics"></a>Grundlegendes zur Zuteilung
 
@@ -51,4 +49,4 @@ Sie müssen ein globaler oder Lizenzadministrator sein, um mit einer Zuteilung b
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Das Feature Kontingente steht in einer privaten Vorschau nur für eine kleine Anzahl von Kunden zur Verfügung. Wenn Sie an einer Teilnahme interessiert sind, füllen Sie dieses Formular [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)aus:.
+Das Feature Kontingente steht in einer privaten Vorschau nur für eine kleine Anzahl von Kunden zur Verfügung. Wenn Sie an einer Teilnahme interessiert sind, füllen Sie dieses Formular aus: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

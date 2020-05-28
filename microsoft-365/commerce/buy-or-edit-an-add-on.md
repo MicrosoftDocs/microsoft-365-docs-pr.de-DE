@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Erfahren Sie, wie Sie ein Add-on erwerben, um Ihrem Microsoft 365 for Business-Abonnement zusätzliche Funktionen hinzuzufügen. Sie können auch ein Add-on aktualisieren und entfernen.
-ms.custom: okr_SMB
-ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141290"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402190"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Erwerben oder Bearbeiten eines Add-Ons
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +46,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
 2. Wählen Sie unten auf der Seite " **Einkaufsdienste** " **Add-ons**aus.
 
@@ -56,7 +58,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 6. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
 
-7. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** \> aufgeben, **um zu admin Home wechseln**.
+7. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
 ::: moniker-end
 
@@ -66,7 +68,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on erwerben möchten.
 
-3. **Wählen** \> Sie in der unteren linken Ecke der Abonnementdetails Add-ons **Buy Add-ons**aus.
+3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons**aus.
 
     ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -78,7 +80,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
 
-8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** \> aufgeben, **um zu admin Home wechseln**.
+8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
 ::: moniker-end
 
@@ -88,7 +90,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 2. Wählen Sie auf der Seite **Abonnements** das Abonnement aus, für das Sie ein Add-on erwerben möchten.
 
-3. **Wählen** \> Sie in der unteren linken Ecke der Abonnementdetails Add-ons **Buy Add-ons**aus.
+3. Wählen Sie in der unteren linken Ecke der Abonnementdetails **Add-ons** \> **Buy Add-ons**aus.
 
     ![Link "Add-ons kaufen" auf der Seite "Abonnements" im Microsoft 365 Admin Center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -100,7 +102,7 @@ Einige der Microsoft 365 for Business-Pläne verfügen über Add-ons, die Sie f�
 
 7. Überprüfen Sie die Preisinformationen, und wählen Sie dann **weiter**aus.
 
-8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** \> aufgeben, **um zu admin Home wechseln**.
+8. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
 ::: moniker-end
 
@@ -116,7 +118,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Wählen Sie auf der Seite **Ihre Produkte** das Abonnement aus, für das Sie ein Add-on aktualisieren möchten.
 
@@ -179,7 +181,7 @@ Die Schritte, die Sie zum Aktualisieren eines Add-ons verwenden, hängen davon a
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Wählen Sie auf der Seite **Ihre Produkte** das Add-on-Abonnement aus, das Sie aktualisieren möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen**aus.
 

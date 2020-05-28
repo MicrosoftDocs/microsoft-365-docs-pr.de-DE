@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installieren Sie Office auf einem iPhone oder Android-Telefon, und Ihre Arbeitsdateien in Office-Apps werden von Microsoft 365 for Business geschützt.
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632565"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402996"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Einrichten von mobilen Geräten für Microsoft 365 for Business-Benutzer
 
@@ -59,7 +60,7 @@ Tippen Sie nach Abschluss der Installation auf die Schaltfläche **Öffnen**, um
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Geben Sie Ihre geschäftliche e-Mail-Adresse auf dem \> Bildschirm Add **-e-Mail-Konto** **Hinzufügen**ein \> , und geben Sie dann Ihre Anmeldeinformationen für Microsoft 365 for Business **Anmelden**ein.
+Geben Sie Ihre geschäftliche e-Mail-Adresse auf dem Bildschirm Add **-e-Mail-Konto** \> **Hinzufügen**ein, und geben Sie dann Ihre Anmeldeinformationen für Microsoft 365 for Business \> **Anmelden**ein.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ Geben Sie Microsoft Outlook in das Google Play-Suchfeld ein, und tippen Sie auf 
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Tippen Sie in der Outlook-App auf **Erste Schritte**, fügen Sie Ihr Microsoft 365 for Business \> -e-Mail-Konto **weiterhin**hinzu, und melden Sie sich mit Ihren Anmeldeinformationen für Ihre Organisation an.
+Tippen Sie in der Outlook-App auf **Erste Schritte**, fügen Sie Ihr Microsoft 365 for Business-e-Mail-Konto \> **weiterhin**hinzu, und melden Sie sich mit Ihren Anmeldeinformationen für Ihre Organisation an.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +106,6 @@ Installieren Sie im Wiedergabe-Store das InTune-Unternehmens Portal.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 for Business-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

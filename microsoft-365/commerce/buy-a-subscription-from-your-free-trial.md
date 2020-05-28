@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Erwerben Sie ein Microsoft 365 for Business-Abonnement. Sie können den gleichen Typ von Abonnement erwerben, den Sie versucht haben, oder einen anderen Plan.
-ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: de141cb42b310bff6221d0bef6d923882dadadfd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045800"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402618"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Erwerben Sie ein Abonnement für Microsoft 365 for Business aus Ihrer kostenlosen Testversion.
 
@@ -50,7 +51,7 @@ Es ist ganz einfach, und wenn Sie den gleichen Abonnementtyp wie den Ihrer Testv
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. Suchen Sie auf der Seite **Ihre Produkte** nach dem Abonnement, das Sie kaufen möchten. Wählen Sie im Abschnitt **Lizenzen** die Option **Abonnement erwerben**aus.
 
@@ -99,7 +100,7 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 ::: moniker range="o365-worldwide"
 
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
 2. Wählen Sie auf der Seite **Einkaufsdienste** das Abonnement aus, das Sie kaufen möchten, und wählen Sie dann **kaufen**aus.
 
@@ -109,7 +110,7 @@ Wenn Sie eine andere Art von Abonnement als die Testversion erwerben, müssen Si
 
 5. Überprüfen Sie die Preisinformationen, und wählen Sie **weiter**aus.
 
-6. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** \> aufgeben, **um zu admin Home wechseln**.
+6. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
 ::: moniker-end
 

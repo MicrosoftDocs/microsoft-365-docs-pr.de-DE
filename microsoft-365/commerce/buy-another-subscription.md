@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Hier erfahren Sie, wie Sie ein weiteres Microsoft 365 for Business-Abonnement für Ihre Organisation erwerben, wenn Sie bereits über ein Abonnement verfügen. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: ebadf9a019829080c145eec2f3f5d612473e91b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141302"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402202"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Erwerben eines weiteren Microsoft 365 for Business-Abonnements
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +51,7 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 ::: moniker range="o365-worldwide"
 
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** \> - <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
+1. Wechseln Sie im Admin Center zur Seite **Abrechnungs** - \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Einkaufsdienste</a> .
 
 2. Wählen Sie auf der Seite **Einkaufsdienste** das Abonnement aus, das Sie kaufen möchten, und wählen Sie dann **kaufen**aus.
 
@@ -59,7 +61,7 @@ Nachdem Sie ein neues Abonnement erworben haben, müssen Sie den Benutzern, die 
 
 5. Überprüfen Sie die Preisinformationen, und wählen Sie **weiter**aus.
 
-6. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** \> aufgeben, **um zu admin Home wechseln**.
+6. Geben Sie Ihre Zahlungsinformationen an, und wählen Sie dann **Bestellung** aufgeben, \> **um zu admin Home wechseln**.
 
 ::: moniker-end
 

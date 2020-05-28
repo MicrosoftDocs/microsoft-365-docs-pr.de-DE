@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass beide Abonnements aufgelistet und aktiv sind.
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046192"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403282"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -53,12 +54,12 @@ ODER
 
 **Erwerben Sie ein neues Abonnement und Lizenzen:** Befolgen Sie die Schritte unter [kaufen eines anderen Microsoft 365 for Business-Abonnements](../buy-another-subscription.md) , um ein neues Abonnement zu erwerben.
 
-Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die e-Mail-Adressen der Benutzer, die Sie migrieren möchten. Wenn Ihre e-Mail \@-Adressen contoso.com enthalten, müssen Sie ein neues Abonnement für contoso.com erwerben.
+Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die e-Mail-Adressen der Benutzer, die Sie migrieren möchten. Wenn Ihre e-Mail-Adressen \@ contoso.com enthalten, müssen Sie ein neues Abonnement für contoso.com erwerben.
 Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wechseln soll.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Schritt 3: Überprüfen Ihres neuen Abonnements und der Lizenzen
 
-1. Wechseln Sie im Admin Center zur Seite **Fakturierung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">ihrer Produkte</a> .
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 
 2. **Sicherstellen, dass beide Abonnements aufgelistet und aktiv sind** Das Abonnement, aus dem Sie Benutzer verschieben, und das Abonnement, auf das Sie Benutzer verschieben, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Stellen Sie sicher, dass beide Abonnements aktiv sind. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 

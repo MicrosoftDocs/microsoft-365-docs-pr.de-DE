@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141066"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403174"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht mit den hier dargestellten Details übereinstimmt, lesen Sie [Informationen zum neuen Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -133,7 +134,7 @@ Möglicherweise werden auf der Registerkarte **Upgrade** keine Pläne angezeigt,
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Der Plan, auf den Sie ein Upgrade durchführen möchten, ist keine unterstützte Option
 
-Wenn Sie Pläne aktualisieren, werden die Pläne, auf die Sie ein Upgrade durchführen können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste wie Exchange Online oder SharePoint Online oder eine höhere Version verfügt. Dadurch wird sichergestellt,\'dass Benutzer während des Upgrades keine Daten verlieren, die sich auf diese Dienste beziehen.
+Wenn Sie Pläne aktualisieren, werden die Pläne, auf die Sie ein Upgrade durchführen können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste wie Exchange Online oder SharePoint Online oder eine höhere Version verfügt. Dadurch wird sichergestellt, dass Benutzer \' während des Upgrades keine Daten verlieren, die sich auf diese Dienste beziehen.
 
 Wenn Ihr Plan nicht zum automatischen Aktualisieren von Plänen berechtigt ist, können Sie stattdessen möglicherweise [Pläne manuell ändern](change-plans-manually.md). Sie können auch [Unterstützung](../../admin/contact-support-for-business-products.md) für Hilfe aufrufen.
 

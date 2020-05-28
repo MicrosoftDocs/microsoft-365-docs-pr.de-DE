@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Erfahren Sie, wie Microsoft 365 for Business zum Entfernen von Unternehmensdaten verwendet wird, die Ihre Benutzer auf Ihren Geräten oder Windows-PCs haben.
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634846"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402784"
 ---
 # <a name="remove-company-data-from-devices"></a>Entfernen von Unternehmensdaten von Geräten
 
@@ -48,7 +49,7 @@ Sie können Microsoft 365 for Business verwenden, um Unternehmensdaten zu entfer
     
     ![Wählen Sie im Bereich Unternehmensdaten entfernen das Gerät aus, aus dem Sie die Daten entfernen möchten.](../media/resetorremove.png)
   
-5. Klicken Sie im Bestätigungsbereich auf **Schließen** **bestätigen** \> .
+5. Klicken Sie im Bestätigungsbereich **Confirm** auf \> **Schließen**bestätigen.
     
 
 

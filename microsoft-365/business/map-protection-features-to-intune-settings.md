@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: In diesem Artikel erfahren Sie, wie die Schutzfunktionen in Microsoft 365 Business Premium InTune-Einstellungen zugeordnet werden. Das Abonnement bietet Ihnen eine Lizenz zum Ändern von InTune-Einstellungen.
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633241"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401576"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Vorgehensweise Zuordnen von Schutzfunktionen in Microsoft 365 Business Premium zu InTune-Einstellungen
 
@@ -44,7 +45,7 @@ Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Bus
  > 
  > Ein Microsoft 365 Business Premium-Abonnement bietet Ihnen eine Lizenz zum Ändern aller InTune-Einstellungen. [Die ersten Schritte finden Sie unter Einführung in InTune.](https://docs.microsoft.com/intune/introduction-intune)
   
-Wählen Sie den gewünschten &mdash; Richtliniennamen aus, beispielsweise Anwendungsrichtlinie für &mdash; Android, und wählen Sie dann **Richtlinieneinstellungen**aus.
+Wählen Sie den gewünschten Richtliniennamen &mdash; aus, beispielsweise Anwendungsrichtlinie für Android, &mdash; und wählen Sie dann **Richtlinieneinstellungen**aus.
   
 Unter **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen werden**
   
@@ -95,7 +96,7 @@ Um die verfügbaren Einstellungen zu untersuchen, wählen Sie den gewünschten R
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Gerätekonfiguration zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zu [Azure-Portal](https://portal.azure.com), wählen Sie dann **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie **InTune** \> - **Geräte Konfigurations** \> **profile**aus. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zu [Azure-Portal](https://portal.azure.com), wählen Sie dann **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie **InTune** - \> **Geräte Konfigurations** \> **profile**aus. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Einstellung der Windows 10-Geräterichtlinie**|**Intune-Einstellung(en)**|
 |:-----|:-----|
@@ -103,9 +104,9 @@ Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Bus
 |PCs vor webbasierten Bedrohungen in Microsoft Edge schützen  <br/> |**SmartScreen** in den **Edge Browser-Einstellungen** ist auf **Erforderlich** festgelegt.  <br/> |
 |Bildschirm deaktivieren, wenn ein Gerät im Leerlauf ist für (Minuten)  <br/> |Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung  <br/> |
 |Benutzern den Download von Apps aus dem Microsoft Store erlauben  <br/> |Benutzerdefinierte URI-Richtlinie  <br/> |
-|Benutzern den Zugriff auf Cortana erlauben  <br/> |**General** \> **Cortana** ist in InTune **in Microsoft** 365 Business Premium auf " **Off** " festgelegt.  <br/> |
+|Benutzern den Zugriff auf Cortana erlauben  <br/> |**Allgemein** \> **Cortana** wird in InTune **blockiert** , wenn in Microsoft 365 Business Premium auf **Off** festgelegt.  <br/> |
 |Benutzern erlauben, Windows-Tipps und Werbung von Microsoft zu empfangen  <br/> |**Windows-Spotlight**, alle blockiert, wenn diese Einstellung in Microsoft 365 Business Premium auf **Off** festgelegt ist.  <br/> |
-|Windows 10-Geräte automatisch auf dem neuesten Stand halten  <br/> | Diese Einstellung befindet sich **in Microsoft InTune** \> **-dienstupdates – Windows 10-Update klingelt**, wählen Sie **Updaterichtlinie für Windows 10-Geräte**und dann **Eigenschaften** \> **Einstellungen**aus.  <br/>  Wenn die Einstellung Microsoft 365 Business Premium auf **ein**festgelegt ist, werden alle folgenden Einstellungen festgelegt:  <br/> **Dienstzweig** ist auf **CB** (CBB, wenn dieser in Microsoft 365 Business Premium deaktiviert ist) festgelegt.  <br/> **Microsoft-Produktupdates** ist auf **Zulassen** festgelegt.  <br/> **Windows-Treiber** ist auf **Zulassen** festgelegt.  <br/> **Automatisches Updateverhalten** ist auf **Zur Wartungszeit automatisch installieren** mit diesen Werten festgelegt:  <br/> **Beginn der Nutzungszeit** ist auf **6 Uhr** festgelegt.  <br/> **Ende der Nutzungszeit** ist auf **22 Uhr** festgelegt.  <br/> **Rückstellungszeitraum für Qualitätsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Rückstellungszeitraum für Funktionsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Downloadmodus für Bereitstellungsoptimierung** ist auf **HTTP kombiniert mit Peering hinter derselben NAT** festgelegt.  <br/> |
+|Windows 10-Geräte automatisch auf dem neuesten Stand halten  <br/> | Diese Einstellung befindet sich in **Microsoft InTune** \> **-dienstupdates – Windows 10-Update klingelt**, wählen Sie **Updaterichtlinie für Windows 10-Geräte**und dann **Eigenschaften** \> **Einstellungen**aus.  <br/>  Wenn die Einstellung Microsoft 365 Business Premium auf **ein**festgelegt ist, werden alle folgenden Einstellungen festgelegt:  <br/> **Dienstzweig** ist auf **CB** (CBB, wenn dieser in Microsoft 365 Business Premium deaktiviert ist) festgelegt.  <br/> **Microsoft-Produktupdates** ist auf **Zulassen** festgelegt.  <br/> **Windows-Treiber** ist auf **Zulassen** festgelegt.  <br/> **Automatisches Updateverhalten** ist auf **Zur Wartungszeit automatisch installieren** mit diesen Werten festgelegt:  <br/> **Beginn der Nutzungszeit** ist auf **6 Uhr** festgelegt.  <br/> **Ende der Nutzungszeit** ist auf **22 Uhr** festgelegt.  <br/> **Rückstellungszeitraum für Qualitätsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Rückstellungszeitraum für Funktionsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Downloadmodus für Bereitstellungsoptimierung** ist auf **HTTP kombiniert mit Peering hinter derselben NAT** festgelegt.  <br/> |
 |||
    
 

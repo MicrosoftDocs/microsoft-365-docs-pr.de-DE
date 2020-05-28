@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Hier erfahren Sie, wie Sie Probleme mit der Vorlagen-App für Microsoft 365 Usage Analytics beheben können.
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212149"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402034"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Problembehandlung bei Microsoft 365-Verwendungsanalysen
 
@@ -39,7 +40,7 @@ Untersuchen Sie die folgende Liste von Fehlermeldungen, um Hilfe zu den am häuf
   
  **Ursache:** Bevor Sie eine Verbindung mit der App herstellen können, müssen Sie die Daten im Microsoft 365 Admin Center abonnieren. Wenn dieser Schritt nicht zuerst ausgeführt wird, können Sie keine Verbindung mit der Vorlagen-App herstellen, auch wenn Sie Ihre Microsoft 365-Mandanten-ID angeben. 
   
- **So beheben Sie diesen Fehler:** Wenn Sie die Daten abonnieren möchten, wechseln Sie zur Verwaltungs \> Konsole **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Wählen Sie die Schaltfläche **Erste Schritte** aus, und aktivieren Sie dann im Bereich **Berichte** , der geöffnet wird, die Option **Daten für Microsoft 365-Verwendungsanalyse für Power BI verfügbar machen** und **Speichern**.
+ **So beheben Sie diesen Fehler:** Wenn Sie die Daten abonnieren möchten, wechseln Sie zur Verwaltungskonsole \> **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a> , und suchen Sie die Kachel Microsoft 365 Usage Analytics auf der Hauptseite des Dashboards. Wählen Sie die Schaltfläche **Erste Schritte** aus, und aktivieren Sie dann im Bereich **Berichte** , der geöffnet wird, die Option **Daten für Microsoft 365-Verwendungsanalyse für Power BI verfügbar machen** und **Speichern**.
   
 ## <a name="we-are-processing-your-data"></a>Ihre Daten werden verarbeitet.
 

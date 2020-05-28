@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informationen zu Vorschlägen, die Sie beim Kauf von Microsoft-Produkten und-Diensten unterstützen.
-ms.custom: ''
 ROBOTS: NOINDEX
-ms.openlocfilehash: 18d106894aeebe499cca2254a6e3a534cd255db6
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340120"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403126"
 ---
 # <a name="understand-the-proposal-workflow"></a>Grundlegendes zum Vorschlagsworkflow
 
