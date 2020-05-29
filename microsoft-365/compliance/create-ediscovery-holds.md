@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352252"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412854"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -113,7 +113,7 @@ Im folgenden sind einige andere Punkte aufgeführt, die beim Suchen von Speicher
 
 - Wenn eine Suche für Suchspeicher Orte in der Warteschleife konfiguriert ist und Sie dann einen eDiscovery-Haltestatus in dem Fall ändern (durch Hinzufügen oder Entfernen eines Speicherorts oder Ändern einer halte Abfrage), wird die Suchkonfiguration mit diesen Änderungen aktualisiert. Sie müssen die Suche jedoch erneut ausführen, nachdem der Haltebereich geändert wurde, um die Suchergebnisse zu aktualisieren.
 
-- Wenn mehrere eDiscovery-Halterungen an einem einzigen Speicherort in einem eDiscovery-Fall gespeichert werden und Sie Speicherorte für die Suche in der Warteschleife auswählen, beträgt die maximale Anzahl von Stichwörtern für diese Suchabfrage 500. Das liegt daran, dass die Suche alle abfragebasierten haltebereiche mit dem **or** -Operator kombiniert. Wenn in den kombinierten halte Abfragen und der Suchabfrage mehr als 500 Schlüsselwörter vorhanden sind, wird der gesamte Inhalt im Postfach durchsucht, und nicht nur der Inhalt, der mit dem abfragebasierten Fall übereinstimmt. 
+- Wenn mehrere eDiscovery-Halterungen an einem einzigen Speicherort in einem eDiscovery-Fall gespeichert werden und Sie Speicherorte für die Suche in der Warteschleife auswählen, beträgt die maximale Anzahl von Stichwörtern für diese Suchabfrage 500. Das liegt daran, dass die Suche alle abfragebasierten haltebereiche mit dem **or** -Operator kombiniert. Wenn in den kombinierten halte Abfragen und der Suchabfrage mehr als 500 Schlüsselwörter vorhanden sind, wird der gesamte Inhalt im Postfach durchsucht, und nicht nur der Inhalt, der mit dem abfragebasierten Fall übereinstimmt.
     
 - Wenn ein eDiscovery-Haltestatus aktiviert ist, können Sie die Speicherorte weiterhin durch **suchen, während**der Haltebereich aktiviert ist.
 
@@ -174,6 +174,26 @@ Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehme
 
 > [!IMPORTANT]
 > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, UPN) (beispielsweise `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines eDiscovery-Speichers ist, wenn alt und sein UPN geändert wurden, müssen Sie den Haltestatus aktualisieren, und Sie müssen den Haltestatus aktualisieren und die neue OneDrive-URL des Benutzers hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Entfernen von Inhaltsspeicherorten aus einer eDiscovery-Aufbewahrung
+
+Nachdem ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto aus einer eDiscovery-Aufbewahrungsstelle entfernt wurde, wird eine *Verzögerungs Sperre* angewendet. Dies bedeutet, dass die tatsächliche Entfernung des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus einem Inhaltsspeicherort gelöscht (bereinigt) werden. Dadurch erhalten Administratoren die Möglichkeit, Inhalte zu suchen oder wiederherzustellen, die nach dem Entfernen eines eDiscovery-Haltestatus gelöscht werden. Die Details der Funktionsweise des Verzögerungs Speichers für Postfächer und Websites sind unterschiedlich.
+
+- **Postfächer:** Das nächste Mal, wenn der Assistent für verwaltete Ordner das Postfach verarbeitet und festgestellt hat, dass ein eDiscovery-Speicher entfernt wurde, wird ein Verzögerungs Speicher für ein Postfach festgehalten. Insbesondere wird eine Verzögerungs Sperre auf ein Postfach angewendet, wenn der Assistent für verwaltete Ordner eine der folgenden Postfacheigenschaften auf **true**festlegt: 
+
+   - **DelayHoldApplied:** Diese Eigenschaft bezieht sich auf e-Mail-bezogene Inhalte (die von Personen mit Outlook und Outlook im Internet generiert werden), die im Postfach eines Benutzers gespeichert sind.
+
+   - **DelayReleaseHoldApplied:** Diese Eigenschaft bezieht sich auf cloudbasierten Inhalte (die von nicht-Outlook-apps wie Microsoft Teams, Microsoft Forms und Microsoft jammern generiert werden), die im Postfach eines Benutzers gespeichert sind. Von einer Microsoft-App generierte clouddaten werden normalerweise in einem verborgenen Ordner im Postfach eines Benutzers gespeichert.
+
+   Wenn ein Verzögerungs Speicher für das Postfach gesetzt wird (wenn eine der vorherigen Eigenschaften auf " **true**" festgelegt ist), wird das Postfach weiterhin für eine unbegrenzte Aufbewahrungsdauer als aufbewahrt, als ob das Postfach das Beweissicherungsverfahren aufweist. Nach 30 Tagen läuft die Verzögerungsdauer ab, und Microsoft 365 versucht automatisch, die Verzögerungszeit zu entfernen (indem die DelayHoldApplied-oder DelayReleaseHoldApplied-Eigenschaft auf **false**festgelegt wird), sodass der Haltebereich entfernt wird. Nachdem eine dieser Eigenschaften auf " **false**" festgelegt wurde, werden die entsprechenden Elemente, die zum Entfernen markiert sind, beim nächsten verarbeiten des Postfachs vom Assistenten für verwaltete Ordner gelöscht.
+
+   Weitere Informationen finden Sie unter [Verwalten von Postfächern mit angehaltener Aufbewahrungszeit](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+
+- **SharePoint-und OneDrive-Websites:** Alle SharePoint-oder OneDrive-Inhalte, die in der Aufbewahrungs Archiv-Bibliothek aufbewahrt werden, werden während der 30-tägigen Verzögerungszeit nicht gelöscht, nachdem eine Website aus einer eDiscovery-Aufbewahrungsstelle entfernt wurde. Dies ähnelt dem, was geschieht, wenn eine Website von einer Aufbewahrungsrichtlinie freigegeben wird. Darüber hinaus können Sie diesen Inhalt in der Aufbewahrungs Archiv-Bibliothek während der 30-tägigen Verzögerungszeit nicht manuell löschen. 
+
+   Weitere Informationen finden Sie unter [Freigeben einer Aufbewahrungsrichtlinie](retention-policies.md#releasing-a-retention-policy).
+
+Ein Verzögerungs Speicher wird auch auf Aufbewahrungsorte für Inhalte angewendet, wenn Sie einen zentralen eDiscovery-Fall schließen, da die Haltestatus deaktiviert sind, wenn ein Fall geschlossen wird. Weitere Informationen zum Schließen von Fällen finden Sie unter [Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>eDiscovery-Aufbewahrungs Grenzwerte
 

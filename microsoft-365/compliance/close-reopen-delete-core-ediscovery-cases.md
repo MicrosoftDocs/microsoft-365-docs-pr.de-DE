@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie zentrale eDiscovery-Fälle verwalten. Dazu gehört das Schließen einer Anfrage, das erneute Öffnen eines geschlossenen Falls und das Löschen einer Anfrage.
-ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208417"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412794"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls
 
@@ -32,7 +32,7 @@ In diesem Artikel wird beschrieben, wie Sie zentrale eDiscovery-Fälle in Micros
 
 Wenn die von einem zentralen eDiscovery-Fall unterstützte Rechtssache oder Untersuchung abgeschlossen ist, können Sie den Fall schließen. Hier erfahren Sie, was passiert, wenn Sie einen Fall schließen:
   
-- Wenn der Fall inhaltsspeicherorte in der eDiscovery-Aufbewahrungsstelle enthält, werden diese Haltestatus deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder gelöscht werden, entweder durch den Benutzer oder durch einen automatisierten Prozess, beispielsweise eine Löschrichtlinie.
+- Wenn der Fall inhaltsspeicherorte in der eDiscovery-Aufbewahrungsstelle enthält, werden diese Haltestatus deaktiviert. Nachdem der Haltestatus deaktiviert wurde, wird eine 30-tägige Kulanzfrist (so genannte *Verzögerungs*Speicher) auf Aufbewahrungsorte für Inhalte angewendet. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren können den Inhalt suchen und wiederherstellen, bevor er nach Ablauf des Verzögerungszeitraums endgültig gelöscht wird. Weitere Informationen finden Sie unter [Entfernen von Inhaltsspeicherorten aus einer eDiscovery-Aufbewahrung](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere haltebereiche an einem Inhaltsspeicherort (beispielsweise ein Beweissicherungsverfahren, eine Aufbewahrungsrichtlinie oder ein Haltestatus von einem anderen zentralen eDiscovery-Fall) gespeichert werden, werden diese Aufbewahrungsorte weiterhin beibehalten.
 

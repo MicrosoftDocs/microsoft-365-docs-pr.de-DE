@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security & Compliance Center zur weiteren Analyse mit dem erweiterten eDiscovery-Tool vorbereiten.
-ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943294"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412844"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Vorbereiten der Suchergebnisse für Advanced eDiscovery (classic)
 
@@ -51,7 +51,7 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zu
     
 - **Exportieren von Daten für Überprüfungs Anwendungen** -Sie können Daten aus Advanced eDiscovery und Microsoft 365 exportieren, nachdem Sie Ihre Analyse abgeschlossen und das DataSet reduziert haben. Das Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus den exportierten Inhalts-und Analyse Metadaten enthält. Dieses Exportpaket kann dann in eine eDiscovery-Überprüfungs Anwendung importiert werden. 
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 - Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die Fällen zugeordnet sind, und Verwenden von Advanced eDiscovery zum Analysieren von Daten benötigen keine E5-Lizenz. 
     
@@ -98,7 +98,7 @@ Wenn die Vorbereitung abgeschlossen ist, besteht der nächste Schritt darin, zu 
     
 2. Klicken Sie neben dem Fall, in dem Sie Daten laden möchten in Advanced eDiscovery auf **Öffnen** . 
     
-3. Klicken Sie auf der Seite **Start** für den Fall auf **Advanced eDiscovery**. 
+3. Klicken Sie auf der **Start** Seite für den Fall auf **zu Advanced eDiscovery wechseln**. 
     
     ![Klicken Sie auf zu Erweiterte eDiscovery wechseln, um die Anfrage in Advanced eDiscovery zu öffnen.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

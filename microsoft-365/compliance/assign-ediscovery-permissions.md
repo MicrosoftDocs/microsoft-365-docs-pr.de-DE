@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374404"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411032"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -43,7 +43,7 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wi
   Im Abschnitt [Weitere Informationen](#more-information) finden Sie Gründe, warum Sie eDiscovery-Administratoren in Ihrer Organisation benötigen.
 
 > [!NOTE]
-> Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-oder Microsoft E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer E1-oder E3-Lizenz eine E5-Add-on-Lizenz zugewiesen werden. Administratoren, Compliance Officer oder juristische Personen, die den Fällen als Mitglieder zugewiesen sind, und Verwenden von Advanced eDiscovery zum erfassen, anzeigen und Analysieren von Daten benötigen keine E5-Lizenz. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://aka.ms/complianceSD).
+> Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-oder Microsoft 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder Office 365-oder Microsoft 365 E3-Lizenz eine Microsoft 365 E5-Compliance oder eine Microsoft 365 eDiscovery-und Überwachungs-Add-on-Lizenz zugewiesen werden. Administratoren, Compliance Officer oder juristische Personen, die den Fällen als Mitglieder zugewiesen sind, und Verwenden von Advanced eDiscovery zum erfassen, anzeigen und Analysieren von Daten benötigen keine E5-Lizenz. Weitere Informationen zur erweiterten eDiscovery-Lizenzierung finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
 ## <a name="before-you-begin"></a>Vorabinformationen
 

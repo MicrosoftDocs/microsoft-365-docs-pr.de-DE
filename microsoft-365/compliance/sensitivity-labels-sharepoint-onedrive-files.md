@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342509"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411012"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -57,6 +57,8 @@ Sehen Sie sich das folgende Video (kein Audio) an, um die neuen Funktionen in Ak
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 Sie haben immer die Wahl, um Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und OneDrive ([Opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) zu jeder Zeit zu deaktivieren.
+
+Wenn Sie Dokumente in SharePoint derzeit mithilfe von SharePoint Information Rights Management (IRM) schützen, müssen Sie den Abschnitt [SharePoint Information Rights Management (IRM) and Sensitivity Labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) auf dieser Seite überprüfen. 
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -171,6 +173,26 @@ Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
 2. Warten Sie mindestens 24 Stunden nach der ersten Veröffentlichung. Stellen Sie sicher, dass die Bezeichnung vollständig synchronisiert wurde.
 
 3. Veröffentlichen Sie das Label breiter.
+
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint-Informationsrechteverwaltung (IRM) und Vertraulichkeits Bezeichnungen
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) ist eine ältere Technologie zum Schutz von Dateien auf Listen-und Bibliotheksebene, indem beim Herunterladen von Dateien Verschlüsselung und Einschränkungen angewendet werden. Diese ältere Schutztechnologie wurde entwickelt, um zu verhindern, dass nicht autorisierte Benutzer die Datei öffnen, während Sie sich außerhalb von SharePoint befinden.
+
+Im Vergleich dazu bieten Sensitivitäts Beschriftungen zusätzlich zur Verschlüsselung die Schutzeinstellungen von visuellen Markierungen (Kopfzeilen, Fußzeilen, Wasserzeichen). Die Verschlüsselungseinstellungen unterstützen die gesamte Palette an [Nutzungsrechten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) , um zu beschränken, was Benutzer mit dem Inhalt tun können, und die gleichen Vertraulichkeits Bezeichnungen werden für [viele Szenarien](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)unterstützt. Durch die Verwendung derselben Schutzmethode mit konsistenten Einstellungen für Arbeitslasten und apps ergibt sich eine konsistente Schutzstrategie.
+
+Sie können jedoch beide Protection-Lösungen zusammen verwenden, und das Verhalten lautet wie folgt: 
+
+- Wenn Sie eine Datei mit einer Vertraulichkeits Bezeichnung hochladen, die die Verschlüsselung zutrifft, wird die Verschlüsselung für diese Dateien nicht entfernt, und die gemeinsame Dokumenterstellung, eDiscovery, DLP und die Suche werden nicht unterstützt.
+
+- Wenn Sie eine Datei mit Office im Internet bezeichnen, werden alle Verschlüsselungseinstellungen von der Bezeichnung erzwungen. Für diese Dateien werden die gemeinsame Dokumenterstellung, eDiscovery, DLP und die Suche unterstützt.
+
+- Wenn Sie eine Datei herunterladen, die mit Office im Internet gekennzeichnet ist, wird die Bezeichnung beibehalten, und alle Verschlüsselungseinstellungen von der Bezeichnung werden anstelle der IRM-Einschränkungseinstellungen erzwungen.
+
+- Wenn Sie eine Office-oder PDF-Datei herunterladen, die nicht mit einer Vertraulichkeits Bezeichnung verschlüsselt wurde, werden IRM-Einstellungen angewendet.
+
+- Wenn Sie eine der zusätzlichen IRM-Bibliothekseinstellungen aktiviert haben, die verhindern, dass Benutzer Dokumente hochladen können, die IRM nicht unterstützen, werden diese Einstellungen erzwungen.
+
+Mit diesem Verhalten können Sie sicher sein, dass alle Office-und PDF-Dateien vor nicht autorisiertem Zugriff geschützt werden, wenn Sie heruntergeladen werden, auch wenn Sie nicht mit einer Bezeichnung versehen sind. Beschriftete Dateien, die hochgeladen werden, profitieren jedoch nicht von den neuen Funktionen.
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Deaktivieren von Sensitivitäts Bezeichnungen für SharePoint und OneDrive (Opt-out)
 

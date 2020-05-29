@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, was passiert, wenn eine Untersuchung oder ein Rechtsfall, der von einem erweiterten eDiscovery-Fall unterstützt wird, geschlossen oder gelöscht wird.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292411"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412784"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Schließen oder Löschen eines erweiterten eDiscovery-Falls
 
@@ -32,7 +32,7 @@ Wenn die von einem erweiterten eDiscovery-Fall unterstützte Rechtssache oder Un
 
 Hier erfahren Sie, was passiert, wenn Sie einen erweiterten eDiscovery-Fall schließen:
 
-- Wenn der Fall alle inhaltsspeicherorte enthält, sind diese Haltestatus deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder gelöscht werden, entweder durch den Benutzer oder durch einen automatisierten Prozess, beispielsweise eine Löschrichtlinie.
+- Wenn der Fall alle inhaltsspeicherorte enthält, sind diese Haltestatus deaktiviert. Nachdem der Haltestatus deaktiviert wurde, wird eine 30-tägige Kulanzfrist (so genannte *Verzögerungs*Speicher) auf Aufbewahrungsorte für Inhalte angewendet. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren haben die Möglichkeit, Inhalte zu suchen oder wiederherzustellen, die nach Ablauf der Verzögerungszeit endgültig gelöscht werden. Weitere Informationen finden Sie unter [Entfernen von Inhaltsspeicherorten aus einer eDiscovery-Aufbewahrung](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere Aufbewahrungsorte auf einem Inhaltsspeicherort platziert werden (beispielsweise ein Beweissicherungsverfahren, ein zentrales eDiscovery-Archiv oder ein Haltestatus aus einem anderen erweiterten eDiscovery-Fall), werden diese Haltestatus weiterhin beibehalten.
 
