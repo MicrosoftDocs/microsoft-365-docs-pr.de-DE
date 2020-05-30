@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen zu Vorschlägen, die Sie beim Kauf von Microsoft-Produkten und-Diensten unterstützen.
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403126"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419112"
 ---
 # <a name="understand-the-proposal-workflow"></a>Grundlegendes zum Vorschlagsworkflow
 
@@ -31,7 +31,7 @@ Ein Microsoft-Mitarbeiter erstellt einen Vorschlag, der die Elemente enthält, d
 
 Nachdem Sie die Benachrichtigungs-e-Mail erhalten haben, führen Sie den Link zur Vorschlags Website aus. Nachdem Sie sich bei der Website angemeldet haben, können Sie den Antrags Prüfungsprozess starten.
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>Was sind die Voraussetzungen für die Organisation, um Elemente mit einem Vorschlag zu kaufen?
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Voraussetzungen für den Kauf von Artikeln mit einem Vorschlag
 
 Bevor Sie Elemente für einen Vorschlag kaufen können, benötigen Sie ein Abrechnungskonto und eine Vereinbarung mit Microsoft.
 
@@ -49,7 +49,7 @@ Weitere Informationen zu Abrechnungskonten finden Sie unter [Manage Billing Acco
 
 Mit der Microsoft-Kundenvereinbarung (MCA) kann eine Organisation Microsoft-Produkte und-Dienste kaufen. Weitere Informationen finden Sie unter [Microsoft-Kundenvereinbarung](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>Welche Berechtigungen benötige ich, um eine Vereinbarung zu unterzeichnen oder für Elemente zu bezahlen?
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Erforderliche Berechtigungen zum Signieren einer Vereinbarung oder zum bezahlen von Elementen
 
 Wenn Sie keine zugewiesene Rolle im Abrechnungskonto haben, wird Ihnen beim Anzeigen des Vorschlags die grundlegende Leserrolle zugewiesen. Mit dieser Rolle können Sie den Vorschlag anzeigen, aber keine Aktion ausführen. Bevor Sie eine Vereinbarung abschließen oder Produkte und Dienste kaufen können, muss Ihnen die Rolle "Abrechnungskonto Besitzer" oder "Abrechnungskonto Mitwirkender" zugewiesen sein. Ihr Abrechnungskonto Besitzer kann Ihnen diese Rolle zuweisen.
 
@@ -59,7 +59,7 @@ Wenn es sich um ein neues Abrechnungskonto handelt und niemand eine Vereinbarung
 
 - Ist die Person, die im Vorschlag genannt wird \
     ODER
-- Sind bereits ein Azure Active Directory globaler Administrator für Ihre Organisation
+- Sind bereits ein [Azure Active Directory globaler Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) für Ihre Organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Was ist der Gesamtworkflow?
 
@@ -86,7 +86,6 @@ Die folgende Tabelle enthält Begriffe und Definitionen, die in Ihrem Vorschlag 
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Abrechnungskonto | Ein Konto, das zum Verwalten von Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Produkten verwendet wird. |
 | Abrechnungsprofil | Informationen zu Ihrer Organisation, mit deren Hilfe Sie anpassen können, welche Elemente in Ihrer Rechnung enthalten sind, und wie Sie Ihre Rechnungen bezahlen. Das Abrechnungsprofil enthält den Namen des Abrechnungskontos, die für das jeweilige Abrechnungsprofil verwendeten Zahlungsmethoden, Kontaktinformationen, Rechnungseinstellungen und Berechtigungen, mit denen Sie das Abrechnungsprofil ändern, Rechnungen bezahlen und Produkte und Dienste kaufen können. |
-| Kunden Partner-Einkaufsbedingungen (CAPT) | Eine zusätzliche Reihe von Begriffen, mit denen eine Tochtergesellschaft Ihrer Organisation Produkte und Dienste kaufen kann, ohne einen separaten MCA zu signieren. |
 | Vorhandene Vereinbarungen | Jede Vereinbarung, die Ihre Organisation bereits mit Microsoft eingerichtet hat. Dabei kann es sich um eine Enterprise-Vereinbarung, eine Microsoft-Produkt &-Dienstvereinbarung oder eine Microsoft-Kundenvereinbarung, aber nicht nur um Sie, verfügen. |
 | Microsoft-Kundenvertrag (MCA) | Eine Vereinbarung, in der die Geschäftsbedingungen des Kontos aufgeführt sind, das Ihre Organisation mit Microsoft geführt hat. |
 | Microsoft-Mitarbeiter | Ein autorisierter Microsoft-Mitarbeiter, der einen Vorschlag für Sie und Ihre Organisation vorbereitet. |

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Gruppen.
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400713"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419136"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -84,12 +84,27 @@ Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organis
 
 Die Verwaltung Ihrer Microsoft 365-Gruppen ist effektiver, wenn Sie über Aktions fähige Informationen zur Verwendung von Gruppen verfügen. Das Microsoft 365 Admin Center verfügt über ein Berichtstool, mit dem Sie Dinge wie die Speichernutzung, die Anzahl der aktiven Gruppen und sogar die Verwendung der Gruppen durch Ihre Benutzer anzeigen können. Weitere Informationen finden Sie unter: [Microsoft 365 Reports im Admin Center](../activity-reports/office-365-groups.md) .
 
+## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+Sie können Sensitivitäts Bezeichnungen erstellen, die die Benutzer in Ihrer Organisation festlegen können, wenn Sie eine Microsoft 365-Gruppe erstellen. Mit Sensitivitäts Bezeichnungen können Sie Folgendes konfigurieren: 
+
+- Datenschutz (öffentlich oder privat)
+- Zugriff externer Benutzer
+- Zugriff auf nicht verwalteter Geräte
+
+Sie können beispielsweise eine Bezeichnung mit dem Namen " *streng vertraulich* " erstellen und angeben, dass jede mit dieser Bezeichnung erstellte Gruppe privat ist und externe Benutzer nicht zulässt. Wenn Benutzer in Ihrer Organisation diese Bezeichnung während der Gruppenerstellung auswählen, wird die Gruppe auf privat festgelegt, und Gruppenmitglieder werden nicht berechtigt, externe Benutzer zur Gruppe hinzuzufügen.
+
+> [!IMPORTANT]
+> Wenn Sie derzeit Klassifizierungs Bezeichnungen verwenden, stehen diese nicht mehr für Benutzer zur Verfügung, die Gruppen erstellen, sobald die Vertraulichkeits Bezeichnungen aktiviert sind. 
+
+Informationen zum Erstellen, verwalten und Verwenden von Sensitivitäts Bezeichnungen finden Sie unter [use Sensitivity Labels to Protect Content in Microsoft Teams, Microsoft 365 Groups und SharePoint Sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>Welche Microsoft 365-Pläne umfassen Gruppen?
 
 Jedes Microsoft 365-Abonnement, das über Exchange Online und SharePoint Online verfügt, wird Gruppen unterstützen. Dazu gehören die Business Essentials- und Business Premium-Pläne sowie die Pläne Enterprise E1, E3 und E5. Die Gruppe übernimmt die Lizenzierung der Person, die die Gruppe erstellt (auch als "Organisator" der Gruppe bezeichnet). Solange der Organisator über die richtige Lizenz für alle Funktionen verfügt, die die Gruppe aufweisen soll, wird die Lizenz an die Gruppe übermittelt.
 
 > [!NOTE]
-> Weitere Informationen zu Microsoft 365-Dienst Familien und-Plänen finden Sie unter [Microsoft 365-Planoptionen](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Weitere Informationen zu Microsoft 365-Dienst Familien und-Plänen finden Sie unter [Microsoft 365-Planoptionen](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 Wenn Sie über einen Exchange-only-Plan verfügen, können Sie weiterhin den freigegebenen Posteingang und die freigegebenen Kalenderfunktionen von Gruppen in Outlook abrufen, aber Sie erhalten nicht die Dokumentbibliothek, den Planer oder andere Funktionen.
 

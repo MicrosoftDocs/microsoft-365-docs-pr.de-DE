@@ -19,21 +19,21 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 8720d4811377365ad00ced4d950d89cf459f653e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165166"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429215"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
-Sie können die neuen Warnungsrichtlinien-und Benachrichtigungs-Dashboard-Tools im Security and Compliance Center verwenden, um Warnungsrichtlinien zu erstellen und dann die Warnungen anzuzeigen, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
+Sie können die Warnungsrichtlinien-und Benachrichtigungs-Dashboard-Tools im Microsoft 365 Security and Compliance Center verwenden, um Warnungsrichtlinien zu erstellen und dann die Warnungen anzuzeigen, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
 
 Warnungsrichtlinien erstellen und erweitern die Funktionalität von Aktivitäts Warnungen, indem Sie die Benachrichtigungsrichtlinie kategorisieren, die Richtlinie auf alle Benutzer in Ihrer Organisation anwenden, eine Schwellenwertstufe für das Auslösen einer Warnung festlegen und entscheiden, ob e-Mail-Benachrichtigungen empfangen werden sollen. Es gibt auch eine Seite **Benachrichtigungen anzeigen** im Security and Compliance Center, in der Sie Warnungen anzeigen und Filtern, einen Warnungsstatus festlegen können, der Ihnen bei der Verwaltung von Warnungen hilft, und dann Warnungen nach dem angesprochenen oder behobenen Vorfall ignorieren. Außerdem haben wir den Typ der Ereignisse erweitert, für die Sie Warnungen erstellen können. Sie können beispielsweise Warnungsrichtlinien erstellen, um Malwareaktivitäten und Datenverlust Vorfälle nachzuverfolgen. Wir haben auch mehrere standardmäßige Warnungsrichtlinien aufgeführt, mit denen Sie Aktivitäten wie das Zuweisen von Administratorrechten in Exchange Online, Malwareangriffe, Phishing-Kampagnen und ungewöhnliche Ebenen von Dateilöschungen und externer Freigabe überwachen können.
 
 > [!NOTE]
-> Benachrichtigungsrichtlinien stehen für Organisationen mit einem Microsoft 365, Office 365 Enterprise oder Office 365 US Government E1/F1/G1, E3/G3 oder E5/G5 zur Verfügung. Erweiterte Funktionen sind nur für Organisationen mit einem E5/G5-Abonnement oder für Organisationen mit einem E1/F1/G1-oder E3/G3-Abonnement und einem Office 365 Advanced Threat Protection (ATP) P2 oder Microsoft 365 E5 Compliance oder Microsoft 365 E5 eDiscovery und Audit Add-on-Abonnement verfügbar. Die Funktionalität, die ein E5/G5-oder Add-on-Abonnement erfordert, ist in diesem Thema hervorgehoben. Beachten Sie außerdem, dass Warnungsrichtlinien in den US-Regierungs Umgebungen Office 365 gcc, gcc High und DoD verfügbar sind.
+> Warnungsrichtlinien sind für Organisationen mit einem Microsoft 365 Enterprise-, Office 365 Enterprise-oder Office 365 US Government E1/F1/G1, E3/G3 oder E5/G5-Abonnement verfügbar. Erweiterte Funktionen sind nur für Organisationen mit einem E5/G5-Abonnement oder für Organisationen mit einem E1/F1/G1-oder E3/G3-Abonnement und einem Office 365 Advanced Threat Protection (ATP) P2 oder Microsoft 365 E5 Compliance oder Microsoft 365 E5 eDiscovery und Audit Add-on-Abonnement verfügbar. Die Funktionalität, die ein E5/G5-oder Add-on-Abonnement erfordert, ist in diesem Thema hervorgehoben. Beachten Sie außerdem, dass Warnungsrichtlinien in den US-Regierungs Umgebungen Office 365 gcc, gcc High und DoD verfügbar sind.
 
 ## <a name="how-alert-policies-work"></a>Funktionsweise von Warnungsrichtlinien
 
@@ -53,7 +53,7 @@ Im folgenden finden Sie einen kurzen Überblick über die Funktionsweise von War
 
 Eine Warnungs Richtlinie besteht aus einer Reihe von Regeln und Bedingungen, die den Benutzer oder die Administrator Aktivität definieren, die eine Warnung generiert, eine Liste der Benutzer, die die Warnung auslösen, wenn Sie die Aktivität ausführen, und einen Schwellenwert, der definiert, wie oft die Aktivität ausgeführt werden muss, bevor eine Warnung ausgelöst wird. Sie kategorisieren auch die Richtlinie und weisen ihr einen Schweregrad zu. Diese beiden Einstellungen unterstützen Sie beim Verwalten von Warnungsrichtlinien (und Warnungen, die ausgelöst werden, wenn die Richtlinienbedingungen übereinstimmen), da Sie diese Einstellungen beim Verwalten von Richtlinien und beim Anzeigen von Warnungen im Security and Compliance Center filtern können. Beispielsweise können Sie Warnungen anzeigen, die den Bedingungen aus der gleichen Kategorie entsprechen, oder Warnungen mit dem gleichen Schweregrad anzeigen.
 
-Wechseln Sie zum Anzeigen und Erstellen von Warnungsrichtlinien [https://protection.office.com](https://protection.office.com) zu **und wählen Sie Alerts Alert** \> **Policies**aus.
+Wechseln Sie zum Anzeigen und Erstellen von Warnungsrichtlinien zu [https://protection.office.com](https://protection.office.com) und wählen **Alerts** Sie Alerts Alert \> **Policies**aus.
 
 ![Wählen Sie im Security and Compliance Center Alerts aus, und wählen Sie dann Warnungsrichtlinien zum Anzeigen und Erstellen von Warnungsrichtlinien aus.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -141,7 +141,7 @@ Die ungewöhnliche Aktivität, die von einigen der integrierten Richtlinien übe
 
 Wenn eine von Benutzern in Ihrer Organisation ausgeführte Aktivität mit den Einstellungen einer Warnungs Richtlinie übereinstimmt, wird eine Warnung generiert und auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center angezeigt. In Abhängigkeit von den Einstellungen einer Warnungs Richtlinie wird eine e-Mail-Benachrichtigung auch an eine Liste der angegebenen Benutzer gesendet, wenn eine Warnung ausgelöst wird. Für jede Warnung zeigt das Dashboard auf der Seite **Benachrichtigungen anzeigen** den Namen der entsprechenden Warnungs Richtlinie, den Schweregrad und die Kategorie für die Warnung (definiert in der Warnungs Richtlinie) sowie die Häufigkeit an, mit der eine Aktivität aufgetreten ist, die dazu führte, dass die Warnung generiert wurde. Dieser Wert basiert auf der Schwellenwerteinstellung der Warnungs Richtlinie. Das Dashboard zeigt außerdem den Status jeder Warnung an. Weitere Informationen zur Verwendung der Status-Eigenschaft zum Verwalten von Warnungen finden Sie im Abschnitt [Managing Alerts](#managing-alerts) .
 
-Um Warnungen anzuzeigen, wechseln Sie [https://protection.office.com](https://protection.office.com) zu und wählen Sie **Alerts** \> Benachrichtigungen **anzeigen**aus.
+Um Warnungen anzuzeigen, wechseln [https://protection.office.com](https://protection.office.com) Sie zu und wählen Sie **Alerts** Benachrichtigungen \> **anzeigen**aus.
 
 ![Wählen Sie in der Sicherheits-und Konformitätsstufe Warnungen aus, und wählen Sie Warnungen anzeigen aus, um Warnungen anzuzeigen.](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
@@ -158,6 +158,27 @@ Sie können die folgenden Filter verwenden, um eine Teilmenge aller Benachrichti
 - **Kategorie.** Verwenden Sie diesen Filter, um Warnungen aus einer oder mehreren Warnungs Kategorien anzuzeigen.
 
 - **Quelle.** Verwenden Sie diesen Filter, um Warnungen anzuzeigen, die von Warnungsrichtlinien im Security and Compliance Center ausgelöst wurden, oder Warnungen, die durch Office 365 Cloud App-Sicherheitsrichtlinien ausgelöst wurden, oder beides. Weitere Informationen zu Office 365 Cloud App-Sicherheitswarnungen finden Sie im Abschnitt zum [Anzeigen von Cloud-App-Sicherheitswarnungen](#viewing-cloud-app-security-alerts) .
+
+## <a name="alert-aggregation"></a>Warnungs Aggregation
+
+Wenn mehrere Ereignisse mit den Bedingungen einer Warnungs Richtlinie mit einer kurzen Zeitspanne auftreten, werden Sie einer vorhandenen Warnung durch einen Prozess namens " *Warnungs Aggregation*" hinzugefügt. Wenn ein Ereignis eine Warnung auslöst, wird die Warnung generiert und auf der Seite **Benachrichtigungen anzeigen** angezeigt, und eine Benachrichtigung wird gesendet. Wenn das gleiche Ereignis innerhalb des Aggregations Intervalls auftritt, fügt Microsoft 365 der vorhandenen Warnung Details zu dem neuen Ereignis hinzu, anstatt eine neue Warnung auszulösen. Das Ziel der Warnungs Aggregation besteht darin, die Warnung "Ermüdung" zu reduzieren und Sie zu konzentrieren und Aktionen für weniger Warnungen für dasselbe Ereignis durchführen zu können.
+
+Die Länge des Aggregations Intervalls hängt von Ihrem Office 365-oder Microsoft 365-Abonnement ab.
+
+|Abonnement|Aggregations Intervall|
+|:---------|:---------:|
+|Office 365 oder Microsoft 365 E5/G5|1 Minute|
+|Office 365 ATP Plan 2 |1 Minute|
+|E5-Konformitäts-Add-on oder E5-Ermittlungs-und Überwachungs-Add-on|1 Minute|
+|Office 365 oder Microsoft 365 E1/F1/G1 oder E3/F3/G3|15 Minuten|
+|Office 365 ATP-Plan 1 oder Exchange Online Protection|15 Minuten|
+|||
+
+Wenn Ereignisse mit derselben Warnungs Richtlinie innerhalb des Aggregations Intervalls auftreten, werden der ursprünglichen Warnung Details zum nachfolgenden Ereignis hinzugefügt. Für alle Ereignisse werden Informationen über aggregierte Ereignisse im Feld Details angezeigt, und die Häufigkeit, mit der ein Ereignis mit dem Aggregations Intervall aufgetreten ist, wird im Feld Aktivität/Trefferanzahl angezeigt. Sie können weitere Informationen zu allen Instanzen von aggregierten Ereignissen anzeigen, indem Sie die Aktivitätsliste anzeigen.
+
+Der folgende Screenshot zeigt eine Warnung mit vier aggregierten Ereignissen. Die Aktivitätsliste enthält Informationen zu den vier e-Mail-Nachrichten, die für die Warnung relevant sind.
+
+![Beispiel für eine Warnungs Aggregation](../media/AggregatedAlertExample.png)
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Erforderliche RBAC-Berechtigungen zum Anzeigen von Warnungen
 

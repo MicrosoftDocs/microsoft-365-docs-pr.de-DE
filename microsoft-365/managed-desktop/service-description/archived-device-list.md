@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284366"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418878"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -42,6 +42,7 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**14. Mai 2023** |
 |HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | **23. Oktober 2023** |
 |DGM-Buch 2| 256 GB/Intel i5/8 GB RAM | Keine | **16. November 2022** |
+|DGM-go| 128 GB/Intel 4415Y/8GB RAM | Keine | **2. August 2023** |
 |Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |
 |Surface pro| 256 GB/Intel i5/8 GB RAM | Keine | **15. Juni 2022** |
 

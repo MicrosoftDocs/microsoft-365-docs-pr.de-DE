@@ -1,5 +1,5 @@
 ---
-title: Pool für besonders riskante Zustellungen für ausgehende Nachrichten
+title: Pools für ausgehende Zustellungen
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,21 +15,24 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie der Pool mit hoher Risikoverteilung verwendet wird, um die Reputation von e-Mail-Servern in den Microsoft 365-Rechenzentren zu schützen.
-ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Erfahren Sie, wie die Zustellungs Pools verwendet werden, um die Reputation von e-Mail-Servern in Microsoft 365-Rechenzentren zu schützen.
+ms.openlocfilehash: 213149eda3dd121b65b64e3bddbb4bd73d66f57c
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209187"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419160"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool für besonders riskante Zustellungen für ausgehende Nachrichten
+# <a name="outbound-delivery-pools"></a>Pools für ausgehende Zustellungen
 
-E-Mail-Server in den Microsoft 365-Rechenzentren sind möglicherweise vorübergehend für das Senden von Spam schuldig. Beispielsweise eine Schadsoftware oder ein böswilliger Spamangriff in einer lokalen e-Mail-Organisation, die ausgehende e-Mails über Microsoft 365 sendet oder Microsoft 365-Konten kompromittiert. Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365 Datacenter-Server in Blocklisten von Drittanbietern angezeigt wird. Ziel-e-Mail-Organisationen, die diese Sperrlisten verwenden, lehnen e-Mails von diesen Nachrichtenquellen ab.
+E-Mail-Server in den Microsoft 365-Rechenzentren sind möglicherweise vorübergehend für das Senden von Spam schuldig. Beispielsweise eine Schadsoftware oder ein böswilliger Spamangriff in einer lokalen e-Mail-Organisation, die ausgehende e-Mails über Microsoft 365 sendet oder Microsoft 365-Konten kompromittiert. Angreifer versuchen auch, die Erkennung durch Weiterleiten von Nachrichten über die Microsoft 365-Weiterleitung zu vermeiden.
 
+Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365 Datacenter-Server in Blocklisten von Drittanbietern angezeigt wird. Ziel-e-Mail-Organisationen, die diese Sperrlisten verwenden, lehnen e-Mails von diesen Nachrichtenquellen ab.
+
+## <a name="high-risk-delivery-pool"></a>Hochriskanter Zustellungs Pool
 Um dies zu verhindern, werden alle ausgehenden Nachrichten von Microsoft 365 Datacenter-Servern, die als Spam festgestellt werden oder die die Sende Grenzen des [Diensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) oder der [ausgehenden Spam Richtlinien](configure-the-outbound-spam-policy.md) überschreiten, über den _Pool mit hoher Risikoverteilung_gesendet.
 
-Der Pool mit hoher Risikoverteilung ist ein sekundärer IP-Adresspool für ausgehende e-Mails, der nur zum Senden von Nachrichten mit niedriger Qualität verwendet wird (beispielsweise Spam und [Backscatter](backscatter-messages-and-eop.md)). Die Verwendung des Pools mit hoher Risikoverteilung verhindert, dass der normale IP-Adresspool für ausgehende e-Mails Spam sendet. Der normale IP-Adresspool für ausgehende e-Mails behält die Reputation, die Nachrichten mit hoher Qualität sendet, wodurch die Wahrscheinlichkeit verringert wird, dass diese IP-Adresse in IP-Sperrlisten angezeigt wird.
+Der Pool mit hoher Risikoverteilung ist ein separater IP-Adresspool für ausgehende e-Mails, der nur zum Senden von Nachrichten mit niedriger Qualität verwendet wird (beispielsweise Spam und [Backscatter](backscatter-messages-and-eop.md)). Die Verwendung des Pools mit hoher Risikoverteilung verhindert, dass der normale IP-Adresspool für ausgehende e-Mails Spam sendet. Der normale IP-Adresspool für ausgehende e-Mails behält die Reputation, die Nachrichten mit hoher Qualität sendet, wodurch die Wahrscheinlichkeit verringert wird, dass diese IP-Adresse in IP-Sperrlisten angezeigt wird.
 
 Die reale Möglichkeit, dass IP-Adressen im hochriskanten Zustellungs Pool in IP-Sperrlisten eingefügt werden, bleibt jedoch im Entwurf. Die Zustellung an die vorgesehenen Empfänger ist nicht gewährleistet, da viele e-Mail-Organisationen keine Nachrichten aus dem Pool mit hoher Risikoverteilung annehmen.
 
@@ -38,7 +41,7 @@ Weitere Informationen finden Sie unter [Control Outbound Spam](outbound-spam-con
 > [!NOTE]
 > Nachrichten, bei denen die Quell-e-Mail-Domäne keinen Datensatz und keinen im öffentlichen DNS definierten MX-Eintrag enthält, werden immer über den risikoreichen Zustellungs Pool weitergeleitet, unabhängig von ihrer Spam-oder sende Grenzwert-Disposition.
 
-## <a name="bounce-messages"></a>Bounce-Nachrichten
+### <a name="bounce-messages"></a>Bounce-Nachrichten
 
 Der ausgehende Pool mit hoher Risikoverteilung verwaltet die Zustellung für alle Unzustellbarkeitsberichte (auch bekannt als NDR, Unzustellbarkeitsnachrichten, Benachrichtigungen über Zustellungsstatus oder DSNs).
 
@@ -50,3 +53,9 @@ Zu den möglichen Ursachen für einen Anstieg bei Unzustellbarkeitsberichten geh
 - Ein Rogue-e-Mail-Server.
 
 Alle diese Probleme können zu einer plötzlichen Vergrößerung der Anzahl von Unzustellbarkeitsberichten führen, die vom Dienst verarbeitet werden. Viele Male scheinen diese Unzustellbarkeitsberichte Spam auf andere e-Mail-Server und-Dienste zu sein (auch bekannt als _[Backscatter](backscatter-messages-and-eop.md)_).
+
+## <a name="relay-pool"></a>Relay-Pool
+
+Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relay-Pool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender berücksichtigen sollte. Es ist auch wichtig, dass wir diesen Datenverkehr isolieren, da es legitime und illegitmate Szenarien für die Auto Weiterleitung oder Weiterleitung von e-Mails von Microsoft 365 gibt. Ähnlich wie bei dem Pool mit hoher Risikoverteilung wird für weitergeleitete e-Mails ein separater IP-Adresspool verwendet. Dieser Adresspool wird nicht veröffentlicht, da er häufig geändert werden kann. 
+
+Microsoft 365 muss sicherstellen, dass der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht zuverlässig übermitteln können. Um dies zu erreichen, muss die e-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht zu uns kommt. In Fällen, in denen der Absender authentifiziert werden kann, verwenden wir die Absender Umschreibung, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Sie können mehr darüber erfahren, wie das funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Absender umschreibungs Schema (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)übergibt.

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 318ecd19d7dcfb4b80e1bdcec743057462c44b1b
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280555"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408477"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -45,10 +45,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     
     Konfigurationsanweisungen finden Sie unter [Konfigurieren der automatischen Bezeichnung von Office-Apps](#how-to-configure-auto-labeling-for-office-apps) auf dieser Seite.
 
-- **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint Online oder OneDrive for Business) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie – aktuell in der Vorschau. 
-    
-    > [!NOTE]
-    > Schauen Sie sich die Vorschauankündigung, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) (Ankündigung einer öffentlichen Vorschau der automatischen Klassifizierung mit Vertraulichkeitsbezeichnungen in Microsoft 365-Diensten) und das Webinar [Introduction to SharePoint & OneDrive Auto-Labeling with Sensitivity Labels](https://aka.ms/SPOAutoLabelWebinar-Recording) (Einführung in das automatische Bezeichnen mit Vertraulichkeitsbezeichnungen in SharePoint und OneDrive) an.
+- **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint oder OneDrive) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie. 
     
     Diese Methode wird Autoklassifizierung mit Vertraulichkeitsbezeichnungen genannt. Möglicherweise wird sie auch als automatische Bezeichnung für ruhende Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten im Transit (E-Mails, die von Exchange gesendet oder empfangen werden). Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer). 
     
@@ -60,6 +57,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Höchstens 25 000 automatisch bezeichnete Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
     - Höchstens 10 Websitesammlungen in allen Richtlinien
     - Höchstens 10 Richtlinien für den gesamten Mandanten
+    - Das Änderungsdatum wird nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
     - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
@@ -186,12 +184,14 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 - Vertrauliche Informationen können im Text von Dokumenten und E-Mails sowie in Kopf- und Fußzeilen, aber nicht in der Betreffzeile oder E-Mail-Anlagen erkannt werden.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Konfigurieren von Richtlinien für die automatische Bezeichnung von Microsoft Office SharePoint Online, OneDrive und Exchange
-> [!NOTE]
-> Richtlinien der automatischen Bezeichnung befinden sich in Public Preview und können sich ändern.
+
+Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatische Bezeichnungsrichtlinien konfigurieren. 
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Voraussetzungen für Richtlinien der automatischen Bezeichnung
 
-- Die Überwachung von Microsoft 365 muss für den Simulationsmodus aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
+- Simulationsmodus:
+    - Die Überwachung von Microsoft 365 muss aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
+    - Um die Dateiinhalte in der Quellansicht anzuzeigen (wird für E-Mails nicht unterstützt), müssen Sie über die Rolle **Inhalts-Explorer/Inhalts-Anzeiger** verfügen, wenn Sie kein globaler Administrator sind. Wenn Sie nicht über diese Berechtigung verfügen, wird der Bereich „Vorschau“ nicht angezeigt, wenn Sie ein Element aus der Registerkarte **Übereinstimmende Elemente** auswählen.
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive (Public Preview) aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -236,9 +236,9 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus.
 
-2. Wählen Sie die Registerkarte **Automatisches Bezeichnen (Vorschau)** aus:
+2. Wählen Sie die Registerkarte **Automatisches Bezeichnen** aus:
     
-    ![Registerkarte „Automatisches Bezeichnen“ (Vorschau)](../media/auto-labeling-tab.png)
+    ![Registerkarte „Automatisches Bezeichnen“](../media/auto-labeling-tab.png)
     
 
 3. Wählen Sie **+ Richtlinie erstellen** aus.
@@ -248,6 +248,12 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 5. Für die Seite **Benennen Sie Ihre Richtlinie zum automatischen Bezeichnen**: Geben Sie einen eindeutigen Namen und optional eine Beschreibung an, um die automatisch angewandte Bezeichnung, die Speicherorte und Bedingungen zu identifizieren, die den zu bezeichnenden Inhalt identifizieren.
 
 6. Für die Seite **Wählen Sie Orte aus, an denen Sie die Bezeichnung anwenden möchten**: Wählen und geben Sie Orte für Exchange, Microsoft Office SharePoint Online-Websites und OneDrive an. Wählen Sie dann **Weiter** aus.
+    
+    Für OneDrive müssen Sie einzelne Konten angeben. Die URL für den OneDrive eines Benutzers hat das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    Beispielsweise bei einem Benutzer im Mandanten „Contoso“, der den Benutzernamen „rsimone“ hat: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifizieren von URLs für Benutzer finden Sie unter [Abrufen einer Liste aller Benutzer OneDrive-URLs in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 7. Für die **Richtlinieneinstellungen definieren** Seite: Behalten Sie die Standardeinstellung **Inhalte suchen, der enthält** bei, um Regeln zu definieren, mit denen zu bezeichnende Inhalte für alle ausgewählten Speicherorte identifiziert werden. Wenn Sie pro Speicherort unterschiedliche Regeln benötigen, wählen Sie **Erweiterte Einstellungen** aus. Wählen Sie dann **Weiter** aus.
     
@@ -280,7 +286,7 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     Im Gegensatz zur automatischen Bezeichnung für Office-Anwendungen gibt es keine separate Veröffentlichungsoption. Wie bei Veröffentlichungsbezeichnungen sollten Sie jedoch bis zu 24 Stunden Zeit einräumen, damit sich die Richtlinie für die automatische Bezeichnung in Ihrer gesamten Organisation replizieren kann.
 
-Auf der Seite **Informationsschutz** wird auf der Registerkarte **Automatisches Bezeichnen (Vorschau)** für die Richtlinie zum automatischen Bezeichnen **Simulation** oder **Aus** angezeigt, je nachdem, ob Sie ausgewählt haben, dass die Richtlinie im Simulationsmodus ausgeführt wird oder nicht. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. **Richtliniensimulation wird noch ausgeführt**). Wählen Sie für Richtlinien im Simulationsmodus die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
+Auf der Seite **Informationsschutz** wird auf der Registerkarte **Automatisches Bezeichnen** für die Richtlinie zum automatischen Bezeichnen **Simulation** oder **Aus** angezeigt, je nachdem, ob Sie ausgewählt haben, dass die Richtlinie im Simulationsmodus ausgeführt wird oder nicht. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. **Richtliniensimulation wird noch ausgeführt**). Wählen Sie für Richtlinien im Simulationsmodus die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
 
 Sie können Ihre Richtlinie direkt über diese Oberfläche ändern:
 

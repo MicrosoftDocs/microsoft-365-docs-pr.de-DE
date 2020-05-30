@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie mithilfe von Aufbewahrungsbezeichnungen Daten organisationsweit für die Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen können. Sie können Aufbewahrungsbezeichnungen auch verwenden, um eine Lösung zur Datensatzverwaltung für Microsoft 365 zu implementieren.
-ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327903"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411042"
 ---
 # <a name="learn-about-retention-labels"></a>Informationen zu Aufbewahrungsbezeichnungen
 
@@ -107,10 +107,6 @@ Um zu verstehen, wie und warum eine Aufbewahrungsbezeichnung und nicht eine ande
 
 Eine explizit zugewiesene Aufbewahrungsbezeichnung hat Vorrang vor einer implizit zugewiesenen. Weitere Informationen finden Sie im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](#the-principles-of-retention-or-what-takes-precedence) auf dieser Seite.
 
-In den Ergebnissen zeigt die Eigenschaft `ELCLastSuccessTimeStamp` (UTC), wann das System zuletzt Ihr Postfach verarbeitet hat. Wenn dies seit dem Zeitpunkt der Richtlinienerstellung nicht geschehen ist, werden die Bezeichnungen nicht angezeigt. Um die Verarbeitung zu erzwingen, führen Sie `Start-ManagedFolderAssistant -Identity <user>` aus.
-    
-Wenn die Bezeichnungen nicht in Outlook im Web angezeigt werden und Sie denken, dass sie angezeigt werden sollten, müssen Sie den Cache des Browsers leeren (STRG + F5).
-    
 ## <a name="retention-label-policies-and-locations"></a>Aufbewahrungsbezeichnungsrichtlinien und Speicherorte
 
 Verschiedene Arten von Aufbewahrungsbezeichnungen können an verschiedenen Speicherorten veröffentlicht werden, je nach Funktion der Aufbewahrungsbezeichnung.
@@ -123,12 +119,12 @@ Verschiedene Arten von Aufbewahrungsbezeichnungen können an verschiedenen Speic
    
 In Exchange werden automatisch angewendete Bezeichnungen (sowohl für Abfragen als auch für vertrauliche Informationstypen) nur auf neu gesendete Nachrichten (in Übertragung begriffene Daten) angewendet, und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem können automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationstypen nur auf alle Postfächer angewendet werden; Sie können keine bestimmten Postfächer dafür auswählen.
   
-Öffentliche Ordner in Exchange und Skype unterstützen keine Aufbewahrungsbezeichnungen.
+Öffentliche Exchange-Ordner, Skype- und Teams-Kanalnachrichten und -Chats unterstützen keine Aufbewahrungskennzeichnungen.
 
 ## <a name="how-retention-labels-enforce-retention"></a>So erzwingen Aufbewahrungsbezeichnungen die Aufbewahrung
 
-Aufbewahrungsbezeichnungen können die gleichen Aufbewahrungsaktionen wie eine Aufbewahrungsrichtlinie erzwingen: aufbewahren und dann löschen, nur aufbewahren oder nur löschen. Mithilfe von Aufbewahrungsbezeichnungen können Sie einen komplexen Inhaltsplan (oder Dateiplan) implementieren. Näheres über die Aufbewahrung erfahren Sie unter [Informationen zu Aufbewahrungsrichtlinien](retention-policies.md).
-  
+Aufbewahrungsbezeichnungen können die gleichen Aufbewahrungsaktionen wie eine Aufbewahrungsrichtlinie erzwingen: aufbewahren und dann löschen, nur aufbewahren oder nur löschen. Sie können Aufbewahrungskennzeichnungen verwenden, um einen detaillierten Dateiplan zu implementieren, der für bestimmte Dateien verschiedene Aufbewahrungseinstellungen festlegt. Näheres über die Aufbewahrung erfahren Sie unter [Informationen zu Aufbewahrungsrichtlinien](retention-policies.md).
+
 Darüber hinaus hat eine Aufbewahrungsbezeichnung zwei Aufbewahrungsoptionen, die nur für eine Aufbewahrungsbezeichnung und nicht in einer Aufbewahrungsrichtlinie verfügbar sind. Aufbewahrungsbezeichnungen bieten Ihnen die folgenden Möglichkeiten:
   
 - Auslösen einer Löschungsprüfung am Ende des Aufbewahrungszeitraums, damit SharePoint- und OneDrive-Dokumente überprüft werden müssen, bevor sie gelöscht werden können. Weitere Informationen finden Sie unter [Löschungsprüfungen](disposition.md#disposition-reviews).
@@ -136,6 +132,8 @@ Darüber hinaus hat eine Aufbewahrungsbezeichnung zwei Aufbewahrungsoptionen, di
 - Beginnen des Aufbewahrungszeitraums zu dem Zeitpunkt, an dem der Inhalt mit der Bezeichnung versehen wurde, und nicht ausgehend vom Alter des Inhalts oder dem Zeitpunkt, zu dem er zuletzt geändert wurde. Diese Option gilt nur für Inhalte auf SharePoint-Websites und in OneDrive-Konten. Bei Exchange-E-Mails basiert der Aufbewahrungszeitraum immer auf dem Datum, an dem die Nachricht gesendet oder empfangen wurde, und zwar unabhängig davon, welche Option Sie hier auswählen.
     
 ![Aufbewahrungseinstellungen mit Optionen speziell für Bezeichnungen](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Ein weiterer wichtiger Unterschied besteht darin, dass Benutzer die Datei nicht löschen können, während der Aufbewahrungszeitraum erzwungen wird, wenn Sie eine Aufbewahrungskennzeichnung anstelle einer Aufbewahrungsrichtlinie auf Dateien in SharePoint anwenden und die Kennzeichnungen für die Aufbewahrung von Inhalten konfiguriert ist. Benutzer können Inhalte löschen, wenn dieselbe Bezeichnung auf Dateien in OneDrive und auf E-Mails angewendet wird, es sei denn, der Inhalt wird als Datensatz gekennzeichnet.
 
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Wo veröffentlichte Aufbewahrungsbezeichnungen Endbenutzern verfügbar gemacht werden können
 
@@ -197,7 +195,7 @@ Nachdem eine Aufbewahrungsbezeichnung auf ein Element angewendet wurde, wird sie
 ![Angewendete Bezeichnung im Detailbereich](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 Für SharePoint, aber nicht OneDrive, können Sie eine Bibliotheksansicht erstellen, die die Spalten **Bezeichnungen** oder **Element ist ein Datensatz** enthält. In dieser Ansicht sehen Sie auf einen Blick die Aufbewahrungsbezeichnungen, die allen Elementen zugeordnet sind, und bei welchen Elementen es sich um Datensätze handelt. Beachten Sie jedoch, dass Sie die Ansicht nicht nach der Spalte **Element ist ein Datensatz** filtern können. Anweisungen zum Hinzufügen von Spalten finden Sie unter [Ein- oder Ausblenden von Spalten in einer Liste oder Bibliothek](https://support.microsoft.com/de-DE/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
-  
+
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365-Gruppen
 
@@ -276,11 +274,12 @@ Sie können eine Aufbewahrungsbezeichnung erstellen, ohne eine Aufbewahrungsakti
   
 Sie können beispielsweise die Aufbewahrungsbezeichnung „Später überprüfen“ ohne Aktionen erstellen und diese Aufbewahrungsbezeichnung dann automatisch auf Inhalte mit vertraulichen Informationen oder auf abgefragte Inhalte anwenden.
   
-![Seite „Bezeichnungseinstellungen“ mit deaktivierter Aufbewahrung](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Seite „Bezeichnungseinstellungen“ mit deaktivierter Aufbewahrung](../media/retention-label-retentionoff.png)
+
   
 ## <a name="using-retention-labels-for-records-management"></a>Verwenden von Aufbewahrungsbezeichnungen für die Datensatzverwaltung
     
-Sie können Aufbewahrungsbezeichnungen verwenden, um Inhalte als Datensätze zu klassifizieren. Auf diese Weise können Sie eine einzige, einheitliche Strategie zur Datensatzverwaltung in Microsoft 365 einrichten. Weitere Informationen finden Sie unter [Übersicht über Datensätze](records.md).
+Sie können Aufbewahrungsbezeichnungen verwenden, um Inhalte als Datensätze zu klassifizieren. Auf diese Weise können Sie eine einzige, einheitliche Strategie zur Datensatzverwaltung in Microsoft 365 einrichten. Weitere Informationen finden Sie unter [Informationen zu Datensätzen](records.md).
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie
 

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141583"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429190"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
 > [!IMPORTANT]
-> Compliance Score ist kein absolutes Maß für die organisatorische Einhaltung einer bestimmten Norm oder Regulierung. Sie drückt das Ausmaß aus, in dem Sie Steuerelemente eingeführt haben, die die Risiken für personenbezogene Daten und den Schutz der Privatsphäre reduzieren können. Empfehlungen aus dem Compliance Score und dem Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden. Dieser Dienst befindet sich derzeit in der Vorschau und unterliegt den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910).
+> Empfehlungen der Compliancebewertung und vom Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste befinden sich derzeit in der Vorschau und unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="overview"></a>Übersicht
 
@@ -78,13 +78,13 @@ Steuerelementen wird ein Bewertungs Wert zugewiesen, je nachdem, ob Sie obligato
   
 Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend auf dem Risiko, das es darstellt:
 
-|**Typ**|**Zugewiesene Punktzahl**|
+|**Type**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
 | Vorbeugender Ermessensspielraum | 9  |
 | Detektiv erforderlich | 3 |
-| Detektiv-diskretionäres | 1 |
+| Detektiv-diskretionäres | 1  |
 | Korrektur Pflicht | 3 |
-| Korrigierendes diskretionäre | 1 |
+| Korrigierendes diskretionäre | 1  |
   
 ![Konformitätsbewertung steuert Punktwerte](../media/compliance-score-controls-scoring.png "Konformitätsbewertung steuert Punktwerte")

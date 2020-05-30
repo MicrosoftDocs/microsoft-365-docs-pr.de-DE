@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, was passiert, wenn eine Untersuchung oder ein Rechtsfall, der von einem erweiterten eDiscovery-Fall unterstützt wird, geschlossen oder gelöscht wird.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412784"
+ms.locfileid: "44419061"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Schließen oder Löschen eines erweiterten eDiscovery-Falls
 
@@ -56,7 +56,7 @@ Wenn Sie einen erweiterten eDiscovery-Fall erneut öffnen, werden alle holdes-Ob
 
 So öffnen Sie einen geschlossenen Fall erneut:
 
-1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie löschen möchten.
+1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie erneut öffnen möchten.
 
 2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
 
