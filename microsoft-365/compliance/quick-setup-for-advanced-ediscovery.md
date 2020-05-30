@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Hier erfahren Sie, wie Sie im Security &amp; Compliance Center auf Advanced eDiscovery zugreifen und den üblichen Workflow für die Verwendung von Advanced eDiscovery prüfen.  '
-ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b824183c88e4bbf300c2e07c9e8802dfb704aadf
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632170"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412834"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Schnelle Einrichtung von Advanced eDiscovery (Classic)
 
@@ -32,7 +32,6 @@ In diesem Setup-Abschnitt werden einem Microsoft 365 Security &amp; Compliance C
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Aufrufen eines Falls in Advanced eDiscovery
 
-
 Sie rufen Advanced eDiscovery über das Security &amp; Compliance Center auf. Sie müssen ein Mitglied eines eDiscovery-Falls im Security &amp; Compliance Center sein, um den Fall in Advanced eDiscovery aufzurufen. Anweisungen zum Zuweisen von eDiscovery-Fallrechten und Hinzufügen von Benutzern zu einem eDiscovery-Fall finden Sie unter [Verwalten von eDiscovery-Fällen in Office 365](ediscovery-cases.md). 
   
 So navigieren Sie zu einem Fall in Advanced eDiscovery: 
@@ -41,15 +40,15 @@ So navigieren Sie zu einem Fall in Advanced eDiscovery:
     
 2. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
-3. Klicken Sie auf der Seite **eDiscovery** auf **Öffnen** neben dem Fall, zu dem Sie in Advanced eDiscovery wechseln möchten. 
+3. Klicken Sie auf der Seite **eDiscovery** auf **Öffnen** neben dem Fall, zu dem Sie in Advanced eDiscovery wechseln möchten.
     
-4. Klicken Sie auf der Seite **Start** für den Fall auf **Advanced eDiscovery**.
+4. Klicken Sie auf der Seite **Start** für den Fall auf **Zu Advanced eDiscovery**.
     
     Die Statusanzeige für die Verbindung zu Advanced eDiscovery wird angezeigt****. Wenn Sie verbunden sind, wird der Fall in Advanced eDiscovery geöffnet. 
     
 ## <a name="workflow"></a>Workflow
 
-Das folgende Diagramm zeigt den allgemeinen Workflow für die Verwaltung und Verwendung von eDiscovery-Fällen im Security &amp; Compliance Center und in Advanced eDiscovery. 
+Das folgende Diagramm zeigt den allgemeinen Workflow für die Verwaltung und Verwendung von eDiscovery-Fällen im Security &amp; Compliance Center und in Advanced eDiscovery.
   
 ![Das Diagramm zeigt den Workflow „Advanced eDiscovery“. Er besteht aus vier Einrichtungsphasen (einschließlich Einrichten von Benutzern &amp; Fällen, Identifizieren von Falldaten, Exportieren und Verarbeiten), gefolgt von den Phasen Analyse und Export auf den lokalen Computer.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
