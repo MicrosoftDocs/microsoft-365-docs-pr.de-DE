@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anweisungen zum Erstellen, Veröffentlichen und automatischen Anwenden von Aufbewahrungsbezeichnungen, um gewünschte Elemente aufzubewahren und anderes zu löschen, und um ein Element als Datensatz in Ihrer Office 365-Umgebung zu deklarieren.
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352242"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408467"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen
 
@@ -80,7 +80,7 @@ Veröffentlichen Sie Aufbewahrungsbezeichnungen, damit sie von Benutzern manuell
 
 2. Folgen Sie den Anweisungen des Assistenten.
     
-    Informationen zum Konfigurieren der Speicherorte finden Sie im Abschnitt [Aufbewahrungsbezeichnungen und -speicherorte](#retention-labels-and-locations) auf dieser Seite. 
+    Informationen über die von Aufbewahrungsbezeichnungen unterstützten Speicherorte finden Sie im Abschnitt [Aufbewahrungsbezeichnungen und -speicherorte](labels.md#retention-label-policies-and-locations). 
 
 ## <a name="auto-apply-a-retention-label"></a>Aufbewahrungsbezeichnungen automatisch anwenden
 
@@ -100,21 +100,7 @@ Richten Sie eine Aufbewahrungsbezeichnung so ein, dass sie basierend auf den von
     
     Informationen zum Konfigurieren der Bedingungen, die zur automatischen Anwendung der Aufbewahrungsbezeichnung führen, finden Sie im Abschnitt [Konfigurieren der Bedingungen für automatisch angewendete Aufbewahrungsbezeichnungen](#configuring-conditions-for-auto-apply-retention-labels) auf dieser Seite.
     
-    Informationen zum Konfigurieren der Speicherorte finden Sie im nächsten Abschnitt auf dieser Seite, [Aufbewahrungsbezeichnungen und -speicherorte](#retention-labels-and-locations).
-
-## <a name="retention-labels-and-locations"></a>Aufbewahrungsbezeichnungen und -speicherorte
-
-Verschiedene Arten von Aufbewahrungsbezeichnungen können an verschiedenen Speicherorten veröffentlicht werden, je nach Funktion der Aufbewahrungsbezeichnung.
-  
-|**Wenn für die Aufbewahrungsbezeichnung Folgendes gilt:**|**So kann die Bezeichnungsrichtlinie angewendet werden auf...**|
-|:-----|:-----|
-|für Endbenutzer veröffentlicht  <br/> |Gruppen in Exchange, SharePoint, OneDrive, Office 365  <br/> |
-|basierend auf Typen vertraulicher Informationen automatisch angewendet  <br/> |Exchange (nur alle Postfächer), SharePoint, OneDrive  <br/> |
-|basieren auf einer Abfrage automatisch angewendet  <br/> |Gruppen in Exchange, SharePoint, OneDrive, Office 365  <br/> |
-   
-In Exchange werden automatisch angewendete Bezeichnungen (sowohl für Abfragen als auch für vertrauliche Informationstypen) nur auf neu gesendete Nachrichten (in Übertragung begriffene Daten) angewendet, und nicht auf alle Elemente, die sich derzeit im Postfach befinden (ruhende Daten). Außerdem können automatisch angewendete Aufbewahrungsbezeichnungen für vertrauliche Informationstypen nur auf alle Postfächer angewendet werden; Sie können keine bestimmten Postfächer dafür auswählen.
-  
-Öffentliche Ordner in Exchange und Skype unterstützen keine Aufbewahrungsbezeichnungen.
+    Informationen über die von Aufbewahrungsbezeichnungen unterstützten Speicherorte finden Sie im Abschnitt [Aufbewahrungsbezeichnungen und -speicherorte](labels.md#retention-label-policies-and-locations).
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Konfigurieren der Bedingungen für automatisch angewendete Aufbewahrungsbezeichnungen
@@ -206,7 +192,7 @@ Wenn Sie Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, die bestim
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>So überprüfen Sie den Status der in Exchange veröffentlichten Aufbewahrungsbezeichnungen
 
-In Exchange Online werden Aufbewahrungsbezeichnungen Endbenutzern anhand eines Prozesses bereitgestellt, die alle sieben Tage ausgeführt wird. Mit PowerShell können Sie sehen, wann dieser Prozess zuletzt ausgeführt wurde, und so ermitteln, wann er erneut ausgeführt wird.
+In Exchange Online werden Aufbewahrungsbezeichnungen für Endbenutzer über einen Prozess bereitgestellt, der alle sieben Tage ausgeführt wird. Wenn Sie Powershell verwenden, können Sie sehen, wenn der Prozess zuletzt ausgeführt wurde und damit ermitteln, wann er erneut ausgeführt wird.
   
 1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=799773).
     

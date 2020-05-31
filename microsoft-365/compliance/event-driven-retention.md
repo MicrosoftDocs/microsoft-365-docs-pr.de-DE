@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Aufbewahrungsbezeichnungen können Sie einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053883"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385007"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -108,13 +108,16 @@ Beachten Sie, dass der Ereignistyp nicht mehr geändert werden kann, sobald Sie 
   
 ![Optionen zum Erstellen oder Auswählen eines Ereignistyps](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>Schritt 3: Veröffentlichen der ereignisbasierten Aufbewahrungsbezeichnungen
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Schritt 3: Veröffentlichen oder automatisches Zuweisen der ereignisbasierten Aufbewahrungsbezeichnungen
 
-Veröffentlichen Sie Ihre ereignisbasierten Aufbewahrungsbezeichnungen, so dass sie manuell auf Inhalte angewendet werden können. Sie können keine ereignisbasierte Aufbewahrungsbezeichnung für eine automatisch anzuwendende Richtlinie auswählen. 
+Wie jede Aufbewahrungsbezeichnung müssen Sie auch ereignisbasierte Bezeichnungen [veröffentlichen oder automatisch zuweisen](create-retention-labels.md), damit es Inhalten manuell oder automatisch zugewiesen werden kann.
 
-Um Ihre ereignisbasierten Aufbewahrungsbezeichnungen zu veröffentlichen, wechseln Sie zur Seite **Klassifizierung** > **Aufbewahrungsbezeichnungen**.
-  
-![Optionen zum Veröffentlichen oder automatischen Anwenden einer Aufbewahrungsbezeichnung](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> Wenn Sie eine ereignisgesteuerte Aufbewahrungsbezeichnung aus der Registerkarte **Datensatzverwaltung** > **Dateiplan** oder der Registerkarte **Datensteuerung** > **Bezeichnungen** wühlen, ist die Schaltfläche **Bezeichnung automatisch anwenden** nicht verfügbar.
+> 
+> Statt dieser Schaltfläche verwenden Sie die Option **Bezeichnung automatisch anwenden** über der Liste der Bezeichnungen oder Richtlinien aus einer der folgenden Speicherorte:
+> - Registerkarte **Datensatzverwaltung** > **Bezeichnungsrichtlinien**
+> - Registerkarte **Datensteuerung** > **Bezeichnungen**  oder Registerkarte **Bezeichnungsrichtlinien**
 
 ### <a name="step-4-enter-an-asset-id"></a>Schritt 4: Eine Asset-ID eingeben
 
@@ -144,7 +147,7 @@ Wenn Sie ein Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der v
 
 Jetzt können Sie den Umfang der Inhalte eingrenzen, indem Sie Asset-IDs für SharePoint- und OneDrive-Inhalte oder Stichwörter für Exchange-Inhalte angeben. Bei Asset IDs wird die Aufbewahrung nur für Inhalte mit dem angegebenen Eigenschaft-Wert-Paar erzwungen. Wenn keine Asset-ID eingegeben wird, wird der **gesamte Inhalt**, der Bezeichnungen dieses Ereignistyps aufweist, mit dem gleichen Aufbewahrungsdatum versehen. 
   
-Beachten Sie, dass die Asset-ID einfach eine weitere Dokumenteigenschaft in SharePoint und OneDrive for Business ist. Wenn Sie die Asset-ID-Eigenschaft verwenden, geben Sie in das Feld für die Asset-ID „ComplianceAssetID:\<Wert\>“ ein, wie unten dargestellt.
+Beachten Sie, dass die Objekt-ID nur eine weitere Dokumenteigenschaft in SharePoint und OneDrive for Business ist. Wenn Sie die Eigenschaft "Objekt-ID" verwenden, geben Sie "ComplianceAssetID:\<value\>" in das untenstehende Feld für Objekt-IDs ein.
   
 Ihre Organisation hat möglicherweise andere Eigenschaften und IDs auf die Dokumente angewendet, die sich auf diesen Ereignistyp beziehen. Wenn Sie zum Beispiel die Datensatz eines bestimmten Produkts ermitteln müssen, kann die ID eine Kombination aus Ihrer benutzerdefinierten ProductID-Eigenschaft und den Wert „XYZ“ sein. In diesem Fall würden Sie „ProductID:XYZ“ in das Feld für die Asset-IDs eingeben.
   
@@ -162,7 +165,7 @@ Beachten Sie beim Erstellen einer Inhaltssuche Folgendes:
   
 - Um alle Inhalte mit einer bestimmten Aufbewahrungsbezeichnung zu finden, wählen Sie die Bedingung **Compliancetag**, und geben Sie dann den vollständigen oder teilweisen Bezeichnungsnamen ein, oder verwenden Sie ein Platzhalterzeichen. 
     
-- Um alle Inhalte mit einer bestimmten Asset-ID zu finden, geben Sie die **ComplianceAssetID**-Eigenschaft und einen Wert ein, und zwar im Format „ComplianceAssetID:\<Wert\>“. 
+- Um alle Inhalte mit einer bestimmten Asset-ID zu finden, geben Sie die **ComplianceAssetID**-Eigenschaft und einen Wert ein, und zwar im Format „ComplianceAssetID:\<value\>“. 
     
 Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
   
