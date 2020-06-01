@@ -283,7 +283,7 @@
                   items:
                     - name: Konfigurieren der ausgehenden Spamfilterung
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: Pool für besonders riskante Zustellungen für ausgehende Nachrichten
+                    - name: Pools für die Zustellung ausgehender Nachrichten
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Entfernen von blockierten Benutzern aus dem Portal „eingeschränkte Benutzer“
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
