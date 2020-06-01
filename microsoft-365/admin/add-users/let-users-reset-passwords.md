@@ -24,65 +24,64 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387033"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431701"
 ---
-# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="9a099-103">Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten</span><span class="sxs-lookup"><span data-stu-id="9a099-103">Let users reset their own passwords</span></span>
+# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="2ac63-103">Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten</span><span class="sxs-lookup"><span data-stu-id="2ac63-103">Let users reset their own passwords</span></span>
 
-<span data-ttu-id="9a099-104">Werden Sie öfter von Personen bedrängt, die Sie bitten, ihre Kennwörter zurückzusetzen?</span><span class="sxs-lookup"><span data-stu-id="9a099-104">Getting crushed with people asking you to reset their passwords?</span></span> <span data-ttu-id="9a099-105">Als Microsoft 365-Administrator können Sie Benutzern das [Tool zum Zurücksetzen von Self-Service-Kennwörtern](https://go.microsoft.com/fwlink/p/?LinkId=522677) zur Verfügung stellen, damit Sie keine Kennwörter für diese zurücksetzen müssen.</span><span class="sxs-lookup"><span data-stu-id="9a099-105">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="9a099-106">Geringerer Arbeitsaufwand!</span><span class="sxs-lookup"><span data-stu-id="9a099-106">Less work for you!</span></span> 
+<span data-ttu-id="2ac63-104">Werden Sie öfter von Personen bedrängt, die Sie bitten, ihre Kennwörter zurückzusetzen?</span><span class="sxs-lookup"><span data-stu-id="2ac63-104">Getting crushed with people asking you to reset their passwords?</span></span> <span data-ttu-id="2ac63-105">Als Microsoft 365-Administrator können Sie Benutzern das [Tool zum Zurücksetzen von Self-Service-Kennwörtern](https://go.microsoft.com/fwlink/p/?LinkId=522677) zur Verfügung stellen, damit Sie keine Kennwörter für diese zurücksetzen müssen.</span><span class="sxs-lookup"><span data-stu-id="2ac63-105">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="2ac63-106">Geringerer Arbeitsaufwand!</span><span class="sxs-lookup"><span data-stu-id="2ac63-106">Less work for you!</span></span> 
   
-<span data-ttu-id="9a099-107">Hier sind ein paar Dinge, die Sie wissen müssen:</span><span class="sxs-lookup"><span data-stu-id="9a099-107">Here are a few things you need to know:</span></span>
+<span data-ttu-id="2ac63-107">Hier sind ein paar Dinge, die Sie wissen müssen:</span><span class="sxs-lookup"><span data-stu-id="2ac63-107">Here are a few things you need to know:</span></span>
   
-- <span data-ttu-id="9a099-108">Sie erhalten Self-Service Password Reset für Cloud- **Benutzer mit** einem beliebigen Microsoft 365 Business-, Education-oder gemeinnützigen kostenpflichtigen Plan.</span><span class="sxs-lookup"><span data-stu-id="9a099-108">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="9a099-109">Sie funktioniert nicht mit der Microsoft 365-Testversion.</span><span class="sxs-lookup"><span data-stu-id="9a099-109">It doesn't work with Microsoft 365 trial.</span></span> 
-    
-- <span data-ttu-id="9a099-p103">Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden.</span><span class="sxs-lookup"><span data-stu-id="9a099-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span> 
-    
-- <span data-ttu-id="9a099-113">**Wenn Sie eine lokale Active Directory verwenden**, gelten die beiden folgenden Punkte nicht.</span><span class="sxs-lookup"><span data-stu-id="9a099-113">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="9a099-114">Stattdessen können Sie dies einrichten, **es ist jedoch ein kostenpflichtiges Abonnement für Azure AD Premium erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="9a099-114">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span> 
+- <span data-ttu-id="2ac63-108">Sie erhalten Self-Service Password Reset für Cloud- **Benutzer mit** einem beliebigen Microsoft 365 Business-, Education-oder gemeinnützigen kostenpflichtigen Plan.</span><span class="sxs-lookup"><span data-stu-id="2ac63-108">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="2ac63-109">Sie funktioniert nicht mit der Microsoft 365-Testversion.</span><span class="sxs-lookup"><span data-stu-id="2ac63-109">It doesn't work with Microsoft 365 trial.</span></span>
 
-<span data-ttu-id="9a099-115">Sehen Sie sich ein kurzes Video an, in dem Benutzer ihre eigenen Kennwörter zurücksetzen lassen.</span><span class="sxs-lookup"><span data-stu-id="9a099-115">Watch a short video about letting users reset their own passwords.</span></span> <br><br>
+- <span data-ttu-id="2ac63-p103">Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden.</span><span class="sxs-lookup"><span data-stu-id="2ac63-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+- <span data-ttu-id="2ac63-113">**Wenn Sie eine lokale Active Directory verwenden**, gelten die beiden folgenden Punkte nicht.</span><span class="sxs-lookup"><span data-stu-id="2ac63-113">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="2ac63-114">Stattdessen können Sie dies einrichten, **es ist jedoch ein kostenpflichtiges Abonnement für Azure AD Premium erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="2ac63-114">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
 
-<span data-ttu-id="9a099-116">Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.</span><span class="sxs-lookup"><span data-stu-id="9a099-116">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="2ac63-115">Sehen Sie sich ein kurzes Video an, in dem Benutzer ihre eigenen Kennwörter zurücksetzen lassen.</span><span class="sxs-lookup"><span data-stu-id="2ac63-115">Watch a short video about letting users reset their own passwords.</span></span> <br><br>
 
-## <a name="let-people-reset-their-own-passwords"></a><span data-ttu-id="9a099-117">Zulassen, dass Benutzer ihre eigenen Kennwörter zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="9a099-117">Let people reset their own passwords</span></span> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-<span data-ttu-id="9a099-118">Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für jeden Benutzer in Ihrem Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="9a099-118">These steps turn on self-service password reset for everyone in your business.</span></span>
+<span data-ttu-id="2ac63-116">Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.</span><span class="sxs-lookup"><span data-stu-id="2ac63-116">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+
+## <a name="let-people-reset-their-own-passwords"></a><span data-ttu-id="2ac63-117">Zulassen, dass Benutzer ihre eigenen Kennwörter zurücksetzen</span><span class="sxs-lookup"><span data-stu-id="2ac63-117">Let people reset their own passwords</span></span>
+
+<span data-ttu-id="2ac63-118">Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für jeden Benutzer in Ihrem Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="2ac63-118">These steps turn on self-service password reset for everyone in your business.</span></span>
   
 ::: moniker range="o365-worldwide"
-1. <span data-ttu-id="9a099-119">Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen</a> .</span><span class="sxs-lookup"><span data-stu-id="9a099-119">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.</span></span>
+1. <span data-ttu-id="2ac63-119">Wechseln Sie im Admin Center zur Seite **Einstellungs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Einstellungen</a> .</span><span class="sxs-lookup"><span data-stu-id="2ac63-119">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="9a099-120">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **Einstellungen** - \> **Sicherheits &amp; Datenschutz** .</span><span class="sxs-lookup"><span data-stu-id="9a099-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="2ac63-120">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>zur Seite **Einstellungen** - \> **Sicherheits &amp; Datenschutz** .</span><span class="sxs-lookup"><span data-stu-id="2ac63-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9a099-121">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite mit den **Einstellungen** für die \> **Settings** \> **Sicherheit der &amp; Datenschutz** Optionen.</span><span class="sxs-lookup"><span data-stu-id="9a099-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="2ac63-121">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite mit den **Einstellungen** für die \> **Settings** \> **Sicherheit der &amp; Datenschutz** Optionen.</span><span class="sxs-lookup"><span data-stu-id="2ac63-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
-   
-2. <span data-ttu-id="9a099-122">Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.</span><span class="sxs-lookup"><span data-stu-id="9a099-122">At the top of the Settings page select **Security & Privacy**.</span></span>
+2. <span data-ttu-id="2ac63-122">Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.</span><span class="sxs-lookup"><span data-stu-id="2ac63-122">At the top of the Settings page select **Security & Privacy**.</span></span>
   
-3. <span data-ttu-id="9a099-123">Wählen Sie **Self-Service Password Reset**aus.</span><span class="sxs-lookup"><span data-stu-id="9a099-123">Select **Self Service Password Reset**.</span></span>
+3. <span data-ttu-id="2ac63-123">Wählen Sie **Self-Service Password Reset**aus.</span><span class="sxs-lookup"><span data-stu-id="2ac63-123">Select **Self Service Password Reset**.</span></span>
   
-4. <span data-ttu-id="9a099-124">Wählen Sie auf der Seite Eigenschaften die Option **alle** aus, um Sie für alle Benutzer in Ihrem Unternehmen zu aktivieren, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="9a099-124">On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
+4. <span data-ttu-id="2ac63-124">Wählen Sie auf der Seite Eigenschaften die Option **alle** aus, um Sie für alle Benutzer in Ihrem Unternehmen zu aktivieren, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="2ac63-124">On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
   
-5. <span data-ttu-id="9a099-125">Wenn sich Ihre Benutzer anmelden, werden Sie aufgefordert, zusätzliche Kontaktinformationen einzugeben, mit denen Sie Ihr Kennwort in Zukunft zurücksetzen können.</span><span class="sxs-lookup"><span data-stu-id="9a099-125">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
+5. <span data-ttu-id="2ac63-125">Wenn sich Ihre Benutzer anmelden, werden Sie aufgefordert, zusätzliche Kontaktinformationen einzugeben, mit denen Sie Ihr Kennwort in Zukunft zurücksetzen können.</span><span class="sxs-lookup"><span data-stu-id="2ac63-125">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="9a099-126">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="9a099-126">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="2ac63-126">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="2ac63-126">Related articles</span></span>
 
-[<span data-ttu-id="9a099-127">Festlegen der Kennwortablaufrichtlinie für Ihre Organisation</span><span class="sxs-lookup"><span data-stu-id="9a099-127">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+[<span data-ttu-id="2ac63-127">Festlegen der Kennwortablaufrichtlinie für Ihre Organisation</span><span class="sxs-lookup"><span data-stu-id="2ac63-127">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
   
-[<span data-ttu-id="9a099-128">Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft</span><span class="sxs-lookup"><span data-stu-id="9a099-128">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+[<span data-ttu-id="2ac63-128">Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft</span><span class="sxs-lookup"><span data-stu-id="2ac63-128">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
 
-[<span data-ttu-id="9a099-129">Microsoft 365 Business-Schulungsvideos</span><span class="sxs-lookup"><span data-stu-id="9a099-129">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="2ac63-129">Microsoft 365 Business-Schulungsvideos</span><span class="sxs-lookup"><span data-stu-id="2ac63-129">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
