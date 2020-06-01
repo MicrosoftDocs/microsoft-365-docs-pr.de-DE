@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-Administratoren verwalten die e-Mails und Postfächer Ihrer Organisation. Beispielsweise werden gelöschte Elemente im Postfach eines Benutzers wiederhergestellt. '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387423"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432135"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
@@ -56,9 +56,10 @@ In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchan
   
  Der Exchange-Administrator kann z. B. eine Person der Rollengruppe "Discoveryverwaltung" zuweisen, damit sie in Postfächern nach Daten suchen können, die bestimmte Kriterien erfüllen. Weitere Informationen hierzu finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>Informationen zu anderen Administratorrollen
-    
+## <a name="learn-about-other-admin-role"></a>Informationen zur anderen Administratorrolle
+
+- [Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
+
 - [Informationen zur SharePoint Online-Administratorrolle](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [Informationen zur Skype for Business-Administratorrolle](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

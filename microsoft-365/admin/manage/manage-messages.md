@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399716"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432265"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -36,13 +36,6 @@ ms.locfileid: "44399716"
 Um zum Nachrichtencenter zu wechseln, wechseln Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), und wählen Sie **Integritäts**  >  **Meldungscenter**aus. 
 
 Wählen Sie einen Nachrichtentitel aus, um ihn im Lesebereich zu öffnen. Jede Nachricht enthält eine Zusammenfassung der Änderung, eine Erklärung dazu, wie sich die Änderung auf Sie auswirken kann, Informationen darüber, wie Sie Ihre Organisation auf die Änderung vorbereiten können, und (in den meisten Fällen) einen zusätzlichen Informations Link, in dem Sie weitere Informationen erhalten. Diese zusätzlichen Informationen stehen auch nach dem Ablauf eine Nachricht weiterhin zur Verfügung.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>Filtern und Sortieren
 

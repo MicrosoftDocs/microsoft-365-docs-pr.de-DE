@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411012"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432604"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -39,6 +39,8 @@ Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneD
 - Damit SharePoint die Verschlüsselung aus der Datei beim Hochladen entfernen kann, muss der Benutzer, der die beschriftete und verschlüsselte Datei hochlädt, über Nutzungsrechte verfügen, um die Datei mindestens anzuzeigen. In SharePoint wird die Verschlüsselung von Dateien nicht entfernt, wenn der Benutzer Sie nicht außerhalb von SharePoint öffnen kann.
 
 - Verwenden Sie Office im Internet (Word, Excel, PowerPoint) zum Öffnen und Bearbeiten von Office-Dateien mit Vertraulichkeits Bezeichnungen, die Verschlüsselung anwenden. Die Berechtigungen, die der Verschlüsselung zugewiesen wurden, werden erzwungen. Mit Word im Internet können Sie auch die automatische Kennzeichnung verwenden, wenn Sie diese Dokumente bearbeiten.
+
+- Externe Benutzer können mithilfe von Gastkonten auf Dokumente zugreifen, die mit Verschlüsselung versehen sind. Weitere Informationen finden Sie unter [Support für externe Benutzer und beschriftete Inhalte](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
 - Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien. DLP-Richtlinien (Data Loss Prevention) decken Inhalte in diesen Dateien ab.
 

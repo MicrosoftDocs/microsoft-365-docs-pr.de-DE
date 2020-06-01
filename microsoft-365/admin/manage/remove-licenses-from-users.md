@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Hier erfahren Sie, wie Sie Lizenzen aus Benutzerkonten entfernen.
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399680"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432231"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -45,9 +45,6 @@ Sie können Lizenzen von Benutzern entweder auf der Seite " **aktive Benutzer** 
 
 Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, werden Lizenzen für ein bestimmtes Produkt für bis zu 20 Benutzer aufheben. 
 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
 2. Wählen Sie das Produkt aus, für das Sie die Zuweisung von Lizenzen aufheben möchten.
 3. Wählen Sie die Benutzer aus, für die Sie die Zuweisung von Lizenzen aufheben möchten.
@@ -59,9 +56,6 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Aufheben der Zuweisung von Lizenzen von einem Benutzer auf der Seite "aktive Benutzer"
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -104,9 +98,6 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 ## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>Aufheben der Zuweisung von Lizenzen von mehreren Benutzern auf der Seite "aktive Benutzer"
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 

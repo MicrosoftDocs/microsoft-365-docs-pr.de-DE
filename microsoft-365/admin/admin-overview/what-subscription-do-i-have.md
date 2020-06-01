@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
-ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431605"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -38,9 +38,6 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
  **Sie sind kein Administrator?** Finden Sie Informationen [zu den Microsoft 365 for Business-Produkten oder-Lizenzen?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 

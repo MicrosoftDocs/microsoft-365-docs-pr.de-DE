@@ -23,21 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Hier erfahren Sie, wie Sie die Dateien und e-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387201"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431713"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 
 Wenn ein Mitarbeiter Ihre Organisation verlässt, möchten Sie wahrscheinlich auf Ihre Daten (Dokumente und e-Mails) zugreifen und diese entweder überprüfen, sichern oder an einen neuen Mitarbeiter weitergeben.
@@ -50,9 +43,6 @@ Wenn Sie die Lizenz eines Benutzers entfernen, aber das Konto nicht löschen, k�
 Um die OneDrive-Dateien eines früheren Benutzers beizubehalten, geben Sie sich zunächst Zugriff auf Ihre OneDrive, und legen Sie dann die Dateien, die Sie behalten möchten, fest. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.  
     
@@ -132,7 +122,7 @@ Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte in de
 
 2. Wählen Sie im linken Bereich **Admin Center** \> **SharePoint**aus. (Möglicherweise müssen Sie **Alle anzeigen** auswählen, um die Liste der Admin Center anzuzeigen.)
 
-3. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie **Jetzt öffnen** am oberen Rand der Seite aus, um das neue SharePoint Admin Center zu öffnen.
+3. Wenn das klassische SharePoint Admin Center angezeigt wird, wählen Sie oben auf der Seite die Option **jetzt öffnen** aus, um das SharePoint Admin Center zu öffnen.
 
 4. Wählen Sie im linken Bereich **Weitere Features**aus.
 

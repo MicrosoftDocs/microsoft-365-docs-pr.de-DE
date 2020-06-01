@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Erhalten Sie einen Überblick über das Microsoft 365-Nachrichtencenter und seine Rolle im Change Management.
-ms.openlocfilehash: 509c379beffaa4be8bb9cfcd7277ef6beb147bf3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0d23280f5657d656e778c358dfe6349e16db9c3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399704"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432253"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
 
 Um bevorstehende Änderungen, einschließlich neuer und geänderter Features, geplanter Wartung oder anderer wichtiger Ankündigungen, zu verfolgen, wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Nachrichtencenter</a>. Hier veröffentlichen wir offizielle Ankündigungen, mit denen Sie eine proaktive Herangehensweise an das Change Management durchführen können. Jeder Beitrag bietet eine allgemeine Übersicht über eine geplante Änderung und deren Auswirkungen auf die Benutzer sowie Links zu detaillierten Informationen, die Sie bei der Vorbereitung unterstützen.
   
-Um das Nachrichtencenter zu öffnen, stellen Sie zunächst sicher, dass Sie auf der Startseite des Admin Centers die Schaltfläche **Neues Admin Center ausprobieren** ausgewählt haben, und klicken Sie dann auf:
+So öffnen Sie das Nachrichtencenter:
 
 ::: moniker range="o365-worldwide"
 
@@ -62,7 +62,7 @@ Sie können auch die [Microsoft 365-Administrator-App](https://go.microsoft.com/
 |Wer kann Beiträge im Nachrichtencenter anzeigen?  <br/> |Die meisten Benutzer, denen in Microsoft 365 eine Administratorrolle zugewiesen wurde, können Nachrichtencenter-Beiträge anzeigen. Im [folgenden finden Sie eine Liste](#admin-roles-that-dont-have-access-to-the-message-center) von Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben. Sie können auch die Nachrichtencenter-Leserrolle Benutzern zuweisen, die in der Lage sein sollen, Nachrichtencenter-Beiträge zu lesen und freizugeben, ohne andere Administratorrechte zu haben.<br/><br/> Darüber hinaus können Sie Personen, die Benachrichtigungen zu Sicherheits-und Datenschutzinformationen für Ihre Organisation erhalten sollen, die Rolle "Nachrichten Center-Datenschutz Leser" zuweisen. Unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md) finden Sie weitere Informationen zu den Funktionen, die jede Administratorrolle ausführen kann. <br/><br/>Die meisten Beiträge des Nachrichten Centers können über e-Mail mit Benutzern ohne Administratorrechte freigegeben werden, die möglicherweise Aktionen ausführen müssen. Diese Option ist nicht verfügbar für Datenschutz Beiträge, die die Nachrichten Center-Datenschutz Leser Ansichten anzeigen. <br/> |
 |Ist dies die einzige Möglichkeit, mit der Microsoft Änderungen über Microsoft 365 kommuniziert?  <br/> |Nein, es gibt viele Möglichkeiten, Änderungen in Microsoft 365 zu kommunizieren. Das Nachrichtencenter ist der primäre Kanal, über den wir über den zeitlichen Ablauf einzelner Änderungen informieren. Informationen zu weiteren Ressourcen finden Sie unter [stay on Top of Microsoft 365 Changes](stay-on-top-of-updates.md) .  <br/> |
 |Wie kann ich Beiträge in meiner Sprache anzeigen?  <br/> |Beiträge im Nachrichtencenter werden nur aufgrund der Aktualität der von uns bereitgestellten Informationen in Englisch verfasst, aber Sie können steuern, ob Beiträge standardmäßig in englischer Sprache angezeigt werden oder automatisch in Ihre bevorzugte Sprache übersetzt werden. Unabhängig davon, welche Standardansicht Sie auswählen, können Sie für die maschinelle Übersetzung von Beiträgen in jede von uns unterstützte Sprache auswählen. Weitere Informationen finden Sie unter [Language Translation for Message Center posts](language-translation-for-message-center-posts.md) .  <br/> |
-|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?  <br/> |Manchmal ist dies möglich. Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das gezielte Release-Programm entscheiden. Um sich anzumelden, navigieren Sie im Admin Center zu **Einstellungen**für die Freigabe von  >  **Organisationsprofilen**  >  **Release preferences**. (Im neuen Admin Center müssen Sie möglicherweise am unteren Rand des linken Navigationsbereichs **Alle anzeigen** auswählen, um die **Einstellungen**anzuzeigen.) Sie können die Zielversion für die gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie unter [Standard oder Targeted Release Options in Microsoft 365](release-options-in-office-365.md) .  <br/> |
+|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?  <br/> |Manchmal ist dies möglich. Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das gezielte Release-Programm entscheiden. Um sich anzumelden, navigieren Sie im Admin Center zu **Einstellungen**für die Freigabe von  >  **Organisationsprofilen**  >  **Release preferences**. (Im Admin Center müssen Sie möglicherweise am unteren Rand des linken Navigationsbereichs **Alle anzeigen** auswählen, um die **Einstellungen**anzuzeigen.) Sie können die Zielversion für die gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie unter [Standard oder Targeted Release Options in Microsoft 365](release-options-in-office-365.md) .  <br/> |
 |Kann ich das genaue Datum ermitteln, an dem eine Änderung für meine Organisation zur Verfügung steht?  <br/> |Leider können wir Ihnen das genaue Datum, an dem eine Änderung an Ihrer Organisation vorgenommen wird, nicht mitteilen. In unserem Message Center-Beitrag werden wir entsprechend unserer Konfidenz Stufe so viele Informationen wie möglich über den Zeitpunkt der Veröffentlichung geben. Wir verstehen, dass Sie möchten, dass wir genauer auf das Timing von Veröffentlichungen eingehen, und wir arbeiten an Verbesserungen, um diese Detailebene besser zu nutzen.  <br/> |
 |Sind diese Nachrichten spezifisch für meine Organisation?  <br/> |Wir tun unser Bestes, um sicherzustellen, dass nur Nachrichtencenter-Beiträge angezeigt werden, die sich auf Ihre Organisation auswirken. Die Microsoft 365-Roadmap umfasst alle Funktionen, an denen wir derzeit arbeiten, und die bereitstellen, aber nicht alle diese Features gelten für jede Organisation. Wenn beispielsweise ein Feature nur für Bildungseinrichtungen bereitstellt, richten wir das Nachrichtencenter nur an diese Organisationen.  <br/> |
 |Kann ich Nachrichtencenter-Beiträge stattdessen per e-Mail erhalten?  <br/> |Ja! Sie können auswählen, dass Ihnen ein wöchentlicher Digest und bis zu zwei e-Mail-Adressen gesendet werden. Wenn Sie den Digest an mehr als zwei Personen weiterleiten müssen, können Sie an eine Microsoft 365-Gruppe oder Verteilerliste senden. Die wöchentliche e-Mail-Übersicht ist standardmäßig aktiviert. Wenn Sie Ihre wöchentlichen Digests nicht erhalten, überprüfen Sie den Spam Ordner. Weitere Informationen zum Einrichten des wöchentlichen Digest finden Sie im Abschnitt ["Einstellungen"](#preferences) dieses Artikels.  <br/> |
@@ -128,9 +128,6 @@ Wenn die Verwaltung in Ihrer Organisation verteilt ist, möchten oder müssen Si
 - Festlegen von e-Mail-Einstellungen, um eine wöchentliche Übersicht über alle Nachrichten, e-Mails für wichtige Updates und e-Mails für Datenschutz Nachrichten zu erhalten.  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wählen Sie oben im Nachrichtencenter die Option **"Einstellungen bearbeiten"** aus.
 

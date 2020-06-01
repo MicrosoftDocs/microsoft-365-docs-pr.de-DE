@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Hier erfahren Sie, wie Sie Filter zum Erstellen, bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Microsoft 365 verwenden können.
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387213"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431641"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Office 365
 
 [] Wenn Sie ein globaler Administrator oder als Administrator für die Benutzerverwaltung in Office 365 zuständig sind, können Sie benutzerdefinierte Benutzeransichten erstellen, um eine bestimmte Untermenge von Benutzern anzuzeigen. Diese Ansichten werden zusätzlich zu den Standardansichten angezeigt, die zum Bereitstellungsumfang von Office 365 gehören. Sie können benutzerdefinierte Benutzeransichten erstellen, bearbeiten oder löschen, und die von Ihnen erstellten benutzerdefinierten Ansichten stehen allen Administratoren zur Verfügung.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Benutzerdefinierte Benutzeransichten im Admin Center
 

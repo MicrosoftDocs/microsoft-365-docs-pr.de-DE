@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die mehrstufige Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399122"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432379"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -42,7 +42,8 @@ Bevor Sie beginnen, sollten Sie feststellen, ob diese speziellen Bedingungen auf
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Schritt 1: entscheiden Sie sich für die Methode, dass Ihre Benutzer MFA verwenden
 
-Es gibt drei Möglichkeiten, Ihre Benutzer zur Verwendung von MFA für die Anmeldung zu zwingen. Details finden Sie unter [MFA Support in Microsoft 365](multi-factor-authentication-microsoft-365.md) .
+> [!NOTE]
+> Sie müssen ein globaler Administrator sein, um MFA einzurichten oder zu ändern. Es gibt drei Möglichkeiten, Ihre Benutzer zur Verwendung von MFA für die Anmeldung zu zwingen. Details finden Sie unter [MFA Support in Microsoft 365](multi-factor-authentication-microsoft-365.md) .
 
 - Sicherheitsstandards (empfohlen für kleine Unternehmen)
 

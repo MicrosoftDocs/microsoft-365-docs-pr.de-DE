@@ -21,21 +21,17 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem senden, nachdem Sie eine Zahlung im Office 365 betrieben von 21Vianet in China vorgenommen haben.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c920f7497c50e7f961028624f9e3ca954a6108f3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4503226d50a719e169e9112538e7d0dcd172197e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399098"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432403"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
 
-::: moniker range="o365-21vianet"
-
 > [!NOTE]
 > Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 Sie können Ihre Fapiao-Anforderung etwa drei Tage nach dem bezahlen an das 21Vianet-Fapiao-Verwaltungssystem senden. Nachdem Sie Ihre Fapiao-Anforderung gesendet haben, wird Sie in zwei Tagen verarbeitet.
   
@@ -46,39 +42,39 @@ Sie können Ihre Fapiao-Anforderung etwa drei Tage nach dem bezahlen an das 21Vi
 Es gibt zwei Möglichkeiten, um eine Fapiao zu beantragen:
   
 1. Nachdem Sie eine Zahlung im Office 365 von der 21Vianet-Website betrieben haben, erhalten Sie eine Bestätigungs-e-Mail mit Ihrer Bestellnummer und einen Link zum Fapiao-Verwaltungssystem. Sie können den Link in der e-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-informationsverwaltungssystem</a>zu erstellen.
-    
+
     Oder:
-    
+
 2. Sie können ein Fapiao über das <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>beantragen.
-    
+
     ![Die Seite "Zahlungen" im Microsoft 365 Admin Center.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Schritt 2: registrieren beim 21Vianet-Fapiao-Verwaltungssystem
 
 > [!NOTE]
-> Sie können den gleichen e-Mail-Namen und das gleiche Kennwort wie Ihr Office 365 Konto verwenden, oder Sie können etwas anderes verwenden. 
+> Sie können den gleichen e-Mail-Namen und das gleiche Kennwort wie Ihr Office 365 Konto verwenden, oder Sie können etwas anderes verwenden.
   
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">informationsverwaltungssystem 21Vianet Fapiao</a>.
-    
+
 2. Geben Sie im Registrierungsformular Ihre Bestellnummer, e-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Registrierung**aus.
-    
+
     ![Die Registrierungsseite für das 21Vianet-Fapioa-Verwaltungssystem.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
 3. Nachdem Ihre Registrierung abgeschlossen ist, sendet das System eine Aktivierungs-e-Mail an Ihre e-Mail-Adresse. Öffnen Sie die e-Mail-Nachricht, und wählen Sie den Link zum Aktivieren Ihres Kontos aus.
-    
+
 ## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Schritt 3: übermitteln Ihrer Rechnung für ein Fapiao
 
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-Verwaltungssystem</a>an.
-    
+
 2. Wählen Sie den Abrechnungsdaten Satz aus, und wählen Sie dann **Rechnung anwenden**aus.
-    
+
     > [!NOTE]
-    > Das Zahlungssystem befindet sich auf einer Plattform eines Drittanbieters und dauert drei Tage, um den Bestell-und Zahlungsdatensatz zu synchronisieren. 
+    > Das Zahlungssystem befindet sich auf einer Plattform eines Drittanbieters und dauert drei Tage, um den Bestell-und Zahlungsdatensatz zu synchronisieren.
   
     ![Die Seite "Fapiao Management System", auf der zuletzt Bestellungen angezeigt werden.](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
 3. Wählen Sie den Typ Fapiao aus, geben Sie die erforderlichen Informationen ein, und wählen Sie dann **weiter**aus.
-    
+
     ![Das Fapiao-Anforderungsformular, in dem Sie den Fapiao-Typ auswählen.](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
@@ -86,9 +82,9 @@ Es gibt zwei Möglichkeiten, um eine Fapiao zu beantragen:
     > - Bei Bedarf können Sie ein Fapiao mit einem anderen Titel beantragen. Sie können jedoch nur einen Fapiao-Titel für eine Rechnung im System anwenden. Wenn Sie das Fapiao in unterschiedliche Beträge oder Titel aufteilen möchten, <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">Senden Sie Ihre Anfrage im Admin Center</a>.
     > - Wenn Sie das nächste Mal ein Fapiao-System beantragen, zeigt das System automatisch die vorherigen Fapiao-Informationen an.
     > - Wenn Sie einen Kauf Schein oder eine Rückerstattung benötigen, müssen der Payer-Name und der Fapiao-Titel übereinstimmen.
-    
+
 4. Wählen Sie eine Versandmethode aus, und geben Sie die e-Mail-Informationen ein. Sie können Yunda oder SF (Freight Collect) auswählen. Sie können auch zur 21Vianet Shanghai Branch wechseln, um die Fapiao zu erhalten. Wählen Sie **weiter**aus.
-    
+
     ![Das Fapiao-Anforderungsformular mit e-Mail-Informationen.](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
     **21Vianet Shanghai Branch Company Address:**
@@ -98,9 +94,9 @@ Es gibt zwei Möglichkeiten, um eine Fapiao zu beantragen:
     **Kontaktinformationen:**
 
     Zhu Qin Qin 021-28986102
-   
+
 5. Stellen Sie sicher, dass die Informationen richtig sind, und wählen Sie **bestätigen**aus.
-    
+
     ![Die Bestätigungsseite des Fapiao-Anforderungsformulars.](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
 ## <a name="step-4-check-application-progress"></a>Schritt 4: Überprüfen des Anwendungsstatus
@@ -128,25 +124,24 @@ Wenn Sie den Fapiao-Titel ändern möchten, senden Sie uns das Fapiao, und wir w
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>Wie ändere ich meine Anmelde-e-Mail-Adresse und Ihr Kennwort?
 
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-Verwaltungssystem</a>an, und wählen Sie dann **e-Mail-Adresse ändern**aus.
-    
+
     ![Das Dropdownmenü, nachdem sich ein Benutzer beim 21Vianet Fapiao-Verwaltungssystem angemeldet hat.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
 2. Wenn Sie Ihr Anmeldekennwort vergessen haben, können Sie Ihre Anmelde-e-Mail-Adresse verwenden, um das Kennwort zurückzusetzen. Das Fapiao-Verwaltungssystem wird ein neues Kennwort an Ihre e-Mail-Adresse senden. Sie können das neue Kennwort verwenden, um sich anzumelden.
-    
+
     ![Sequenzielle Bilder, die zeigen, wie Ihr Kennwort im 21Vianet Fapiao-Verwaltungssystem zurückgesetzt wird.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
 3. Wenn Sie Ihre Anmelde-e-Mail-Adresse vergessen haben, wenden Sie sich an den 21Vianet-Kundendienst unter (86) 400-089-0365.
-    
+
 ### <a name="how-do-i-find-my-order-id"></a>Wie finde ich meine Bestell-ID?
 
 1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627)zur Seite **Billing** \> **Bills & Zahlungen** .
-    
+
 2. Suchen Sie nach der gewünschten Rechnung, wählen Sie zum Anzeigen aus, oder laden Sie die PDF-Datei herunter.
 
-  
 ### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>Was geschieht, wenn ich bei der Registrierung die falsche e-Mail-Adresse eingebe?
 
-Wenn Sie bei der Registrierung die falsche e-Mail-Adresse eingeben, erhalten Sie keine Aktivierungs-e-Mail. Der Registrierungslink in der e-Mail läuft nach 24 Stunden automatisch ab. Sie können zur <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">Registrierungsseite</a> zurückkehren und sich mit der korrekten e-Mail-Adresse erneut registrieren. 
+Wenn Sie bei der Registrierung die falsche e-Mail-Adresse eingeben, erhalten Sie keine Aktivierungs-e-Mail. Der Registrierungslink in der e-Mail läuft nach 24 Stunden automatisch ab. Sie können zur <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">Registrierungsseite</a> zurückkehren und sich mit der korrekten e-Mail-Adresse erneut registrieren.
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>Was geschieht, wenn ich keine Aktivierungs-e-Mail erhalte?
 

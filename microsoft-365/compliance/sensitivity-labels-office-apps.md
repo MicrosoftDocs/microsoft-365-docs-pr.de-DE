@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222504"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432594"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -48,7 +48,7 @@ Zusätzliche Funktionen sind verfügbar, wenn Sie den Azure Information Protecti
 
 Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die Empfindlichkeits beschriftungsfunktion auch in der [Office-App](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)unterstützt.
 
-|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Netz                                                         |
+|Funktion                                                                                                        |Windows Desktop |Mac-Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manuelles zuweisen, ändern oder Entfernen von Bezeichnungen](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Standardbezeichnung anwenden](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | Unter Review                                                        |
@@ -169,6 +169,34 @@ Andernfalls:
 
 Wenn Sie den integrierten Office-Bezeichnungs Client mit Office im Internet für Dokumente in SharePoint oder OneDrive verwenden möchten, stellen Sie sicher, dass Sie die [Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md)haben.
 
+## <a name="support-for-external-users-and-labeled-content"></a>Unterstützung für externe Benutzer und beschriftete Inhalte
+
+Wenn Sie ein Dokument oder eine e-Mail bezeichnen, wird die Bezeichnung als Metadaten gespeichert, die ihren Mandanten und eine Label-GUID enthalten. Wenn ein Dokument oder eine e-Mail-Nachricht von einer Office-App geöffnet wird, die Vertraulichkeits Bezeichnungen unterstützt, werden diese Metadaten gelesen und nur dann, wenn der Benutzer demselben Mandanten angehört, wird die Bezeichnung in ihrer App angezeigt. Beispielsweise wird für die integrierte Kennzeichnung von Word, PowerPoint und Excel der Beschriftungsname auf der Statusleiste angezeigt. 
+
+Wenn Sie also Dokumente für eine andere Organisation freigeben, die unterschiedliche Bezeichnungsnamen verwendet, kann jede Organisation eine eigene auf das Dokument angewendete Bezeichnung anwenden und anzeigen. Die folgenden Elemente aus einer angewendeten Bezeichnung sind jedoch für Benutzer außerhalb Ihrer Organisation sichtbar:
+
+- Inhalts Markierungen. Wenn eine Beschriftung eine Kopfzeile, eine Fußzeile oder ein Wasserzeichen anwendet, werden diese direkt dem Inhalt hinzugefügt und bleiben sichtbar, bis jemand Sie ändert oder löscht.
+
+- Der Name und die Beschreibung der zugrunde liegenden Schutz Vorlage aus einer Bezeichnung, die die Verschlüsselung angewendet hat. Diese Informationen werden in einer Statusleiste am oberen Rand des Dokuments angezeigt, um Informationen darüber bereitzustellen, wer zum Öffnen des Dokuments berechtigt ist, sowie deren Nutzungsrechte für dieses Dokument.
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>Freigeben von verschlüsselten Dokumenten mit externen Benutzern
+
+Zusätzlich zum Einschränken des Zugriffs auf Benutzer in ihrer eigenen Organisation können Sie den Zugriff auf alle anderen Benutzer mit einem Konto in Azure Active Directory erweitern. Alle Office-Apps und andere von [RMS aufgeklärte Anwendungen](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) können verschlüsselte Dokumente öffnen, nachdem der Benutzer erfolgreich authentifiziert wurde. 
+
+Wenn externe Benutzer kein Konto in Azure Active Directory haben, können Sie ein Gastkonto für diese in Ihrem Mandanten erstellen. Für Ihre e-Mail-Adresse können Sie eine beliebige e-Mail-Adresse angeben, die Sie bereits verwenden. Zum Beispiel Ihre gmail-Adresse. Dieses Gastkonto kann auch für den Zugriff auf ein freigegebenes Dokument in SharePoint oder OneDrive verwendet werden, wenn Sie [Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md)haben.
+
+Externe Benutzer können auch ein Microsoft-Konto für verschlüsselte Dokumente verwenden und erstellen, wenn Sie Microsoft 365-apps unter Windows verwenden. Diese Funktion wird für MacOS, Android oder IOS noch nicht unterstützt. Beispielsweise teilt jemand ein verschlüsseltes Dokument mit Ihnen, und die Verschlüsselungseinstellungen geben Ihre Gmail-e-Mail-Adresse an. Dieser Benutzer kann ein eigenes Microsoft-Konto erstellen, das seine Gmail-e-Mail-Adresse verwendet. Anschließend können Sie nach der Anmeldung mit diesem Konto das Dokument öffnen und entsprechend den für diesen Benutzer festgelegten Verwendungseinschränkungen bearbeiten. Ein exemplarisches Beispiel für dieses Szenario finden Sie unter [Öffnen und Bearbeiten des geschützten Dokuments](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+
+> [!NOTE]
+> Die e-Mail-Adresse für das Microsoft-Konto muss mit der angegebenen e-Mail-Adresse übereinstimmen, um den Zugriff auf die Verschlüsselungseinstellungen einzuschränken.
+
+Wenn ein Benutzer mit einem Microsoft-Konto auf diese Weise ein verschlüsseltes Dokument öffnet, wird automatisch ein Gastkonto für den Mandanten erstellt, wenn noch kein Gastkonto mit dem gleichen Namen vorhanden ist. Wenn das Gastkonto vorhanden ist, kann es dann zum Öffnen von Dokumenten in SharePoint und OneDrive mithilfe eines Browsers (Office im Internet) verwendet werden, zusätzlich zum Öffnen von verschlüsselten Dokumenten über die Windows-Desktop-App. 
+
+Das automatische Gastkonto wird jedoch nicht unmittelbar aufgrund der Replikationswartezeit erstellt. Wenn Sie persönliche e-Mail-Adressen als Teil ihrer Bezeichnungs Verschlüsselungseinstellungen angeben, wird empfohlen, dass Sie entsprechende Gastkonten in Azure Active Directory erstellen. Lassen Sie diese Benutzer dann wissen, dass Sie dieses Konto verwenden müssen, um ein verschlüsseltes Dokument aus Ihrer Organisation zu öffnen.
+
+> [!TIP]
+> Da Sie nicht sicher sein können, dass externe Benutzer eine unterstützte Office-Client-App verwenden, ist das Freigeben von Links von SharePoint und OneDrive nach dem Erstellen von Gastkonten eine zuverlässigere Methode zur Unterstützung der sicheren Zusammenarbeit mit externen Benutzern.
+
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Wenn Office-Apps Inhalts Markierung und-Verschlüsselung anwenden
 
 In Office-Apps werden Inhalts Markierung und-Verschlüsselung mit einer Sensitivitäts Bezeichnung unterschiedlich angewendet, je nachdem, welche app Sie verwenden.
@@ -192,7 +220,7 @@ Zu den Szenarien, in denen eine Vertraulichkeits Bezeichnung außerhalb von Offi
 
 - Exportierte beschriftete und verschlüsselte Daten aus Power BI
 
-- Microsoft Cloud App Security
+- Microsoft Cloud App-Sicherheit
 
 Bei diesen Szenarien kann ein Benutzer mit integrierter Beschriftung mithilfe seiner Office-Apps die Inhalts Markierungen der Beschriftung durch vorübergehendes entfernen oder Ersetzen der aktuellen Bezeichnung und anschließendes erneutes Anwenden der ursprünglichen Bezeichnung anwenden.
 

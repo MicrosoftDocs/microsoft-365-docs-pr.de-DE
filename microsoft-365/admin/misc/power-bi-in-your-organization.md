@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Power BI und wie Benutzer in Ihrer Organisation diesen Business Analytics-Dienst verwenden können.
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399302"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432171"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI in Ihrer Organisation
 
@@ -171,9 +171,6 @@ Wenn Sie es Ihren vorhandenen Benutzern ermöglichen möchten, sich für Power B
 Wenn ein Benutzer sich für Power BI registriert hat, Sie aber nicht möchten, dass diese Person weiterhin Zugriff auf Power BI hat, können Sie die Power BI-Lizenz für diesen Benutzer entfernen.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
     
@@ -210,7 +207,7 @@ Wenn ein Benutzer sich für Power BI registriert hat, Sie aber nicht möchten, d
     
 4. Schaltet die **Microsoft Power BI** -Option aus.
     
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end 
 

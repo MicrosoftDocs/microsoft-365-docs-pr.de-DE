@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Hier erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
-ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399386"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432183"
 ---
 # <a name="quick-help-deleted-user"></a>Schnelle Hilfe: Gelöschter Benutzer
 
@@ -35,9 +35,6 @@ ms.locfileid: "44399386"
 ## <a name="delete-a-user"></a>Löschen eines Benutzers
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 

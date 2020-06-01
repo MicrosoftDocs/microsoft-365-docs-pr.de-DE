@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Hier erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verlagern.
-ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399896"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432391"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
 
@@ -47,9 +47,6 @@ Entfernen Sie Ihre Domäne, da Sie Sie einem anderen Microsoft 365-Abonnementpla
 #### <a name="move-users"></a>Benutzer verlagern
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>.
 
@@ -100,9 +97,6 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 #### <a name="move-yourself"></a>Selbst positionieren
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>.
 

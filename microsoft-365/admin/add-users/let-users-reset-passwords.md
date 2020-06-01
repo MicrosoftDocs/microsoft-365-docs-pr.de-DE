@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kenn Wort Zurücksetzungs Tools zurücksetzen können.
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387033"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431701"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
@@ -37,19 +37,19 @@ Werden Sie öfter von Personen bedrängt, die Sie bitten, ihre Kennwörter zurü
   
 Hier sind ein paar Dinge, die Sie wissen müssen:
   
-- Sie erhalten Self-Service Password Reset für Cloud- **Benutzer mit** einem beliebigen Microsoft 365 Business-, Education-oder gemeinnützigen kostenpflichtigen Plan. Sie funktioniert nicht mit der Microsoft 365-Testversion. 
-    
-- Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden. 
-    
-- **Wenn Sie eine lokale Active Directory verwenden**, gelten die beiden folgenden Punkte nicht. Stattdessen können Sie dies einrichten, **es ist jedoch ein kostenpflichtiges Abonnement für Azure AD Premium erforderlich**. 
+- Sie erhalten Self-Service Password Reset für Cloud- **Benutzer mit** einem beliebigen Microsoft 365 Business-, Education-oder gemeinnützigen kostenpflichtigen Plan. Sie funktioniert nicht mit der Microsoft 365-Testversion.
+
+- Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden.
+
+- **Wenn Sie eine lokale Active Directory verwenden**, gelten die beiden folgenden Punkte nicht. Stattdessen können Sie dies einrichten, **es ist jedoch ein kostenpflichtiges Abonnement für Azure AD Premium erforderlich**.
 
 Sehen Sie sich ein kurzes Video an, in dem Benutzer ihre eigenen Kennwörter zurücksetzen lassen. <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
-## <a name="let-people-reset-their-own-passwords"></a>Zulassen, dass Benutzer ihre eigenen Kennwörter zurücksetzen 
+## <a name="let-people-reset-their-own-passwords"></a>Zulassen, dass Benutzer ihre eigenen Kennwörter zurücksetzen
 
 Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für jeden Benutzer in Ihrem Unternehmen.
   
@@ -70,7 +70,6 @@ Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für
 
 ::: moniker-end
 
-   
 2. Wählen Sie oben auf der Seite Einstellungen die Option **Sicherheit & Datenschutz**aus.
   
 3. Wählen Sie **Self-Service Password Reset**aus.

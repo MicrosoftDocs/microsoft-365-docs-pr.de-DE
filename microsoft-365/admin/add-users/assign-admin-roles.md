@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387237"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432099"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -47,13 +47,6 @@ Sehen Sie sich ein kurzes Video über das Hinzufügen eines Administrators an.<b
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
 
@@ -99,7 +92,7 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen**die Option **Bearbeiten**aus. 
+2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen**die Option **Bearbeiten**aus.
 
     Wenn die Option **Bearbeiten** nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuweisen. In einem kleinen Unternehmen ist der Geschäftsinhaber (die Person, die das Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Personen in der IT-Abteilung globale Administratoren.
 
@@ -125,9 +118,10 @@ Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, sodass S
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
+[Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
+
 [Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md)
 
 [Hinzufügen einer alternativen e-Mail-Adresse mithilfe der Exchange-Verwaltungskonsole](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um Sie einem anderen Benutzer zuzuweisen. '
-ms.openlocfilehash: 1f69cd6f0e572da18abf7253832604ad3ac0ab8f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400028"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432219"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
@@ -50,9 +50,6 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 ## <a name="remove-the-license"></a>Entfernen der Lizenz
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -82,7 +79,7 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 
@@ -101,7 +98,7 @@ Freigegebene Postfächer benötigen normalerweise keine Lizenz. Befolgen Sie die
 
 3. Legen Sie auf der Seite **Produktlizenzen** die Umschaltfläche für die Lizenz, die Sie entfernen möchten, auf **aus** fest.
 
-4. Wählen Sie **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 5. Wenn Sie zur Seite **aktive Benutzer** zurückkehren, wird der Status des freigegebenen Postfachs nicht **lizenziert**.
 

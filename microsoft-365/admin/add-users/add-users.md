@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: In diesem Artikel erfahren Sie, wie Sie Benutzer gleichzeitig oder mehrere Benutzer gleichzeitig aus einer CSV-Datei zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387261"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432123"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Benutzer einzeln oder in Massen hinzufügen
 
@@ -38,10 +38,7 @@ Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich 
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
-1. Wechseln Sie zum Admin Center auf <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
    

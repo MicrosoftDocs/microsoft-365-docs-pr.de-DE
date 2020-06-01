@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen.
-ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387225"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431809"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen. Vorlagen sind besonders nützlich, wenn Sie über Benutzer verfügen, die viele allgemeine Eigenschaften aufweisen, beispielsweise diejenigen, die dieselbe Rolle haben und am gleichen Speicherort arbeiten und die dieselbe Software benötigen. Möglicherweise verfügen Sie über ein Team von Supportingenieuren, die im gleichen Büro arbeiten.  
 

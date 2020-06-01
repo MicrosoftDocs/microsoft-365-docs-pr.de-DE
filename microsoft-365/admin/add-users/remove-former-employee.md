@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387045"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431653"
 ---
 # <a name="remove-a-former-employee"></a>Entfernen eines ehemaligen Mitarbeiters
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387045"
 ## <a name="sign-out-now"></a>Sofortiges Abmelden
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
@@ -156,9 +153,6 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
-
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
 2. Wählen Sie den Namen des Mitarbeiters aus, den Sie blockieren möchten, und wählen Sie dann die Registerkarte **e-Mail** aus.
@@ -167,7 +161,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
  
@@ -183,7 +177,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -199,7 +193,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -221,7 +215,7 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
 5. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie Daten Zurücksetzungs Gerät **wischen**aus ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , und wählen Sie dann **blockieren**aus. 
     
-6. Wählen Sie **Speichern**. 
+6. Klicken Sie auf **Speichern**. 
     
     **Tipp**: Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen Blackberry Enterprise-Dienst entfernen bzw. darin deaktivieren. Sie sollten auch alle Blackberry-Geräte für den Benutzer deaktivieren. Die einzelnen Schritte zum Deaktivieren eines Benutzers finden Sie im Administratorhandbuch für die BlackBerry Business Cloud Services. 
     
@@ -233,9 +227,6 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -287,9 +278,6 @@ Damit Sie nicht weiterhin für eine Lizenz bezahlen, nachdem jemand Ihre Organis
 Wenn Sie die Lizenz entfernen, werden alle Daten des Benutzers noch 30 Tage gespeichert. Sie können auf die Daten [zugreifen](get-access-to-and-back-up-a-former-user-s-data.md) oder das Konto [wiederherstellen](restore-user.md), wenn der Benutzer zurückkehrt. Nach 30 Tagen werden alle Daten des Benutzers (mit Ausnahme der auf SharePoint Online gespeicherten Dokumente) dauerhaft aus Microsoft 365 gelöscht und können nicht wiederhergestellt werden. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -364,9 +352,6 @@ Nachdem Sie auf alle Benutzerdaten des ehemaligen Mitarbeiters zugegriffen und d
 Löschen Sie das Konto nicht, wenn Sie eine E-Mail-Weiterleitung eingerichtet oder das Konto in ein freigegebenes Postfach konvertiert haben. Für beide Funktionen wird das Konto benötigt, damit die Weiterleitung oder Postfachfreigabe funktioniert.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
