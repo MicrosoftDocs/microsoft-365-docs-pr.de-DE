@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 525d58a37fe4bb254d06ce7a4fcb6e2a54344a79
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
+ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035797"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44474536"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -47,7 +47,7 @@ Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrau
 
 Sie müssen ein globaler, Compliance- oder Exchange Online-Administrator sein, um die in diesem Artikel beschriebenen Aufgaben auszuführen. Weitere Informationen über DLP-Berechtigungen finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-Nach allgemeiner Verfügbarkeit wird die EDM-basierte Klassifikation in folgenden Abonnements berücksichtigt:
+Die EDM-basierte Klassifizierung ist in diesen Abonnements enthalten.
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -447,11 +447,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>Teil 3: Verwenden der EDM-basierten Klassifizierung mit Ihren Microsoft Cloud Services
 
-DLP für Exchange Online (E-Mail-Adresse), OneDrive for Business (Dateien), Microsoft Teams (Unterhaltungen) und Microsoft Cloud App Security-DLP-Richtlinien unterstützen vertrauliche EDM-Informationstypen.
+Diese Speicherorte sind unterstützte Typen vertraulicher EDM-Informationen:
+
+- DLP für Exchange Online (E-Mail)
+- OneDrive for Business (Dateien)
+- Microsoft Teams (Unterhaltungen)
+- DLP für SharePoint (Dateien)
+- DLP-Richtlinien für Microsoft Cloud App-Sicherheit
 
 Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in der Entwicklung, aber noch nicht verfügbar:
 
-- DLP für SharePoint (Dateien)
 - automatische Klassifizierung von Vertraulichkeits- und Aufbewahrungsbezeichnungen
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Erstellen einer DLP-Richtlinie mit EDM
@@ -494,7 +499,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Integrierte vertrauliche Informationstypen und wonach diese suchen](what-the-sensitive-information-types-look-for.md)
+[Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 
 [Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md)
 
@@ -502,7 +507,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 

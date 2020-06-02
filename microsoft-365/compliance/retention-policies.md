@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412814"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432336"
 ---
 # <a name="learn-about-retention-policies"></a>Informationen zu Aufbewahrungsrichtlinien
 
@@ -178,8 +178,12 @@ Sie finden alle konfigurierten Erhaltungsrichtlinien auf der Seite **Richtlinien
 
 ## <a name="related-information"></a>Verwandte Informationen
 
-- [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md)
 - [Informationen zu Aufbewahrungsbezeichnungen](labels.md)
 - [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits und Spezifikationen für Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Wenn Sie bereit sind, Aufbewahrungsrichtlinien zu erstellen, lesen Sie [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
+

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie mithilfe von Aufbewahrungsbezeichnungen Daten organisationsweit für die Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen können. Sie können Aufbewahrungsbezeichnungen auch verwenden, um eine Lösung zur Datensatzverwaltung für Microsoft 365 zu implementieren.
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411042"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432242"
 ---
 # <a name="learn-about-retention-labels"></a>Informationen zu Aufbewahrungsbezeichnungen
 
@@ -362,4 +362,6 @@ Es gibt mehrere andere Features, die zuvor zum Aufbewahren oder Löschen von Inh
     
 - [Richtlinien zur Informationsverwaltung](intro-to-info-mgmt-policies.md) (Nur Löschen) 
     
+## <a name="next-steps"></a>Nächste Schritte
 
+Wenn Sie bereit sind, Aufbewahrungsbezeichnungen zu erstellen und zu veröffentlichen, lesen Sie [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen](create-retention-labels.md).

@@ -16,35 +16,35 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Informationen zu Datensätzen Wenn Sie eine Strategie für die Datensatzverwaltung in Ihrer Office 365- oder Microsoft-Organisation implementieren möchten, verwenden Sie Aufbewahrungsbezeichnungen, um Inhalte als Datensatz zu kennzeichnen. Veröffentlichen oder wenden Sie dann die Aufbewahrungsbezeichnungen für den Datensatz automatisch an.
-ms.openlocfilehash: 8dcb3b03dcd908da2a3133d52c1a70ae197eee99
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+description: Erfahren Sie mehr über Datensätze, um Sie beim Implementieren einer Datensatzverwaltungslösung in Microsoft 365 zu unterstützen.
+ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231908"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470580"
 ---
 # <a name="learn-about-records"></a>Informationen zu Datensätzen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Die Verwaltung von Datensätzen in Microsoft 365 hilft einer Organisation bei der Einhaltung Ihrer Unternehmensrichtlinien, gesetzlicher und regulatorischer Verpflichtungen bei gleichzeitiger Verringerung der Risiken und der gesetzlichen Haftung.
+Die Verwaltung von Datensätzen in Microsoft 365 hilft Ihrer Organisation bei der Einhaltung von Unternehmensrichtlinien und gesetzlichen oder regulatorischer Verpflichtungen bei gleichzeitiger Verringerung der Risiken und der gesetzlichen Haftung.
 
-Auf hoher Ebene bedeutet die Kennzeichnung von Inhalten als Datensätze Folgendes:
+Wenn Inhalt als Datensatz gekennzeichnet ist, gilt Folgendes:
 
-- Das Element wird unveränderlich (ein Datensatz kann nicht geändert oder gelöscht werden).
+- Das Element wird unveränderlich, d. h. es kann nicht geändert oder gelöscht werden.
 
 - Andere Aktivitäten in Verbindung mit dem Element werden protokolliert.
 
-- Datensätze werden gelöscht, wenn der festgelegte Aufbewahrungszeitraum endet.
+- Sie verfügen über einen Dispositionsnachweis, wenn Datensätze am Ende ihrer Aufbewahrungsfrist gelöscht werden.
 
-Verwenden Sie [Aufbewahrungsbezeichnungen](labels.md), um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder veröffentlichen (sodass Benutzer diese auf Inhalte anwenden können) oder automatisch auf Inhalte anwenden, die Sie als Datensatz kennzeichnen möchten. Eine Anleitung finden Sie unter [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen ](create-retention-labels.md).
+Verwenden Sie [Aufbewahrungsbezeichnungen](labels.md), um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder veröffentlichen (sodass Benutzer und Administratoren diese manuell auf Inhalte anwenden können) oder automatisch auf Inhalte anwenden, die Sie als Datensatz kennzeichnen möchten. Eine Anleitung finden Sie unter [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen ](create-retention-labels.md).
 
 Mithilfe von Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen können Sie eine einheitliche Strategie für die Datensatzverwaltung in Ihrer Microsoft 365-Umgebung implementieren.
 
 Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
-  - **Die Bezeichnungen sind unveränderlich.** Eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz kennzeichnet, kann neben SharePoint und OneDrive for Business auch auf Exchange-Inhalte angewendet werden. Allerdings ist die [Versionsverwaltung der Bezeichnung](#record-versioning) nur in SharePoint und OneDrive und nicht für Exchange verfügbar.
+  - **Die Bezeichnungen sind unveränderlich.** Eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz kennzeichnet, kann neben SharePoint und OneDrive auch auf Exchange-Inhalte angewendet werden. Allerdings ist die [Versionsverwaltung der Bezeichnung](#record-versioning) nur in SharePoint und OneDrive und nicht für Exchange verfügbar.
 
     In Exchange sind Inhalte, die als Datensatz gekennzeichnet sind, bis zum endgültigen Löschen unveränderlich. Wenn ein Exchange-Element als Datensatz bezeichnet wird, geschehen vier Dinge:
 
@@ -58,7 +58,7 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
   - **Datensätze und Ordner.** Sie können eine Aufbewahrungsbezeichnung auf einen Ordner in Exchange, SharePoint und OneDrive anwenden. Wenn ein Ordner als Datensatz bezeichnet wird und Sie ein Element in den Ordner verschieben, wird das Element als Datensatz bezeichnet. Wenn Sie das Element aus dem Ordner verschieben, bleibt es weiterhin als Datensatz gekennzeichnet.
 
-    Wenn Sie die Datensatzkennzeichnung eines Ordners (in SharePoint und OneDrive), in eine Aufbewahrungskennzeichnung abändern, die den Inhalt nicht als Datensatz deklariert, behalten die Elemente im Ordner trotzdem ihre bestehende Datensatzkennzeichnung.
+    Wenn Sie die Datensatzkennzeichnung eines Ordners (in SharePoint und OneDrive), in eine Aufbewahrungskennzeichnung abändern, die den Inhalt nicht als Datensatz deklariert, behalten die Elemente im Ordner ihre bestehende Datensatzkennzeichnung.
 
     Weitere Informationen zum Anwenden von Datensatzkennzeichnungen auf SharePoint- und OneDrive-Ordner finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
@@ -70,7 +70,7 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
     Wenn ein Benutzer versucht, einen Datensatz in OneDrive zu löschen, wird das Element in das permanente Dokumentarchiv verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit SharePoint und OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive) beschrieben.
 
-  - **Datensatzbezeichnungen können nicht entfernt werden.** Sobald eine Datensatzbezeichnung auf ein Element angewendet wurde, kann nur der Administrator dieses Speicherorts (beispielsweise ein Websitesammlungsadministrator einer SharePoint-Website) diese Datensatzbezeichnung entfernen.
+  - **Datensatzbezeichnungen können nicht entfernt werden.** Nachdem eine Datensatzbezeichnung auf ein Element angewendet wurde, kann nur der Administrator dieses Speicherorts (beispielsweise ein Websitesammlungsadministrator einer SharePoint-Website) diese Datensatzbezeichnung entfernen.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Verwenden von Aufbewahrungsbezeichnungen zum Kennzeichnen von Datensätzen
 
@@ -96,9 +96,9 @@ Es sieht so aus, als ob eine Datensatzbezeichnung auf ein Dokument auf einer Sha
 
 ## <a name="record-versioning"></a>Datensatzversionsverwaltung
 
-Ein wesentlicher Bestandteil der Datensatzverwaltung ist die Möglichkeit, ein Dokument als Datensatz zu kennzeichnen und den Datensatz unveränderlich zu halten. Gleichzeitig wird durch die Datensatzunveränderlichkeit die Zusammenarbeit am Dokument verhindert, wenn andere Benutzer eine spätere Version erstellen müssen. Sie können z. B. einen Kaufvertrag als Datensatz kennzeichnen, den Vertrag dann aber mit neuen Bedingungen aktualisieren und die neueste Version als neuen Datensatz kennzeichnen, während die vorherige Datensatzversion weiterhin beibehalten wird. Bei diesen Szenarien unterstützt SharePoint Online und OneDrive for Business jetzt die *Versionsverwaltung für Datensätze*. OneNote-Notizbuchordner werden nicht unterstützt.
+Ein wesentlicher Bestandteil der Datensatzverwaltung ist die Möglichkeit, ein Dokument als Datensatz zu kennzeichnen und den Datensatz unveränderlich zu halten. Gleichzeitig wird durch die Datensatzunveränderlichkeit die Zusammenarbeit am Dokument verhindert, wenn andere Benutzer eine spätere Version erstellen müssen. Sie können z. B. einen Kaufvertrag als Datensatz kennzeichnen, den Vertrag dann aber mit neuen Bedingungen aktualisieren und die neueste Version als neuen Datensatz kennzeichnen, während die vorherige Datensatzversion weiterhin beibehalten wird. Bei diesen Szenarien unterstützt SharePoint und OneDrive die *Versionsverwaltung für Datensätze*. OneNote-Notizbuchordner unterstützen keine Datensatzversionsverwaltung.
 
-Wenn Sie die Datensatzversionsverwaltung verwenden möchten, müssen Sie im ersten Schritt das Microsoft 365 Compliance Center verwenden, um Aufbewahrungsbezeichnungen zu erstellen und zu veröffentlichen, die Datensätze für alle SharePoint-Websites und/ oder OneDrive-Konten kennzeichnen oder auf bestimmten SharePoint-Websites und/ oder OneDrive-Konten veröffentlichen. Der nächste Schritt besteht darin, eine veröffentlichte Aufbewahrungsdatenbezeichnung für einen Datensatz auf ein Dokument anzuwenden. Wenn dies erfolgt ist, wird neben der Aufbewahrungsbezeichnung eine Dokumenteigenschaft mit dem Namen *Datensatzstatus* angezeigt, und der ursprüngliche Datensatzstatus wird **Gesperrt** sein. An dieser Stelle können Sie die folgenden Aktionen durchführen:
+Wenn Sie die Datensatzversionsverwaltung verwenden möchten, besteht der erste Schritt darin, Aufbewahrungsbezeichnungen, die Datensätze kennzeichnen, im Microsoft 365 Compliance Center zu erstellen und für alle SharePoint-Websites und OneDrive-Konten bzw. für bestimmte SharePoint-Websites oder OneDrive-Konten zu veröffentlichen. Der nächste Schritt besteht darin, eine veröffentlichte Aufbewahrungsdatenbezeichnung für einen Datensatz auf ein Dokument anzuwenden. Wenn dies erfolgt ist, wird neben der Aufbewahrungsbezeichnung eine Dokumenteigenschaft mit dem Namen *Datensatzstatus* angezeigt, und der ursprüngliche Datensatzstatus wird **Gesperrt** sein. An dieser Stelle können Sie die folgenden Aktionen durchführen:
 
   - **Sie können einzelne Versionen des Dokuments kontinuierlich bearbeiten und als Datensätze kennzeichnen, indem Sie die Eigenschaft „Datensatzstatus“ ordnungsgemäß entsperren und sperren.** Nur die als Datensätze gekennzeichneten Versionen bleiben erhalten, wenn die Eigenschaft **Datensatzstatus** auf **Gesperrt** gestellt ist. Dadurch wird das Risiko verringert, dass nicht benötigte Versionen und Kopien des Dokuments aufbewahrt werden.
 
@@ -106,13 +106,12 @@ Wenn Sie die Datensatzversionsverwaltung verwenden möchten, müssen Sie im erst
 
   - **Verwalten Sie ein erneuerndes Dokument, das alle Versionen enthält.** Standardmäßig enthält jedes SharePoint- und OneDrive-Dokument einen Versionsverlauf, der im Element „Menü“ zur Verfügung steht. In diesem Versionsverlauf können Sie leicht sehen, welche Versionen Datensätze sind und diese Dokumente anzeigen.
 
-Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrungsbezeichnung , die das Element als Datensatz kennzeichnet, automatisch zur Verfügung. Wenn ein Benutzer die Dokumenteigenschaften über den Detailbereich anzeigt, wechselt er **Datensatzstatus** von **Gesperrt** zu **Entsperrt**. Dieser einzelne Klick erstellt einen Datensatz im Ordner „Datensätze des permanenten Dokumentenarchiv, in dem er sich für den Rest des Aufbewahrungszeitraums befindet. Während das Dokument entsperrt ist, kann jeder Benutzer mit Berechtigungen die Datei bearbeiten. Benutzer können die Datei jedoch nicht löschen, weil Sie als gekennzeichneter Datensatz betrachtet wird. Nachdem die erforderlichen Änderungen vorgenommen wurden, kann der Benutzer den **Datensatzstatus** von **Entsperrt** auf **Gesperrt**wechseln, sodass das Dokument erneut als Datensatz gekennzeichnet wird und nicht bearbeitet werden kann.
+Die Datensatzversionsverwaltung steht für alle Dokumente mit einer Aufbewahrungsbezeichnung , die das Element als Datensatz kennzeichnet, automatisch zur Verfügung. Wenn ein Benutzer die Dokumenteigenschaften über den Detailbereich anzeigt, wechselt er **Datensatzstatus** von **Gesperrt** zu **Entsperrt**. Dieser einzelne Klick erstellt einen Datensatz im Ordner „Datensätze des permanenten Dokumentenarchiv, in dem er sich für den Rest des Aufbewahrungszeitraums befindet. 
+
+Während das Dokument entsperrt ist, kann jeder Benutzer mit Berechtigungen die Datei bearbeiten. Benutzer können die Datei jedoch nicht löschen, weil Sie als Datensatz betrachtet wird. Nachdem die erforderlichen Änderungen vorgenommen wurden, kann der Benutzer den **Datensatzstatus** von **Entsperrt** auf **Gesperrt**wechseln, sodass das Dokument erneut als Datensatz gekennzeichnet wird und nicht bearbeitet werden kann.
 <br/><br/>
 
 ![Datensatzstatus-Eigenschaft in einem Dokument, das als Datensatz gekennzeichnet ist](../media/recordversioning8.png)
-
-> [!NOTE]
-> Für die Datensatzversionsverwaltung ist eine Office 365 Enterprise E5-Lizenz für jeden Benutzer erforderlich, der die Berechtigung zum Bearbeiten von Inhalten hat, die in einer SharePoint-Website oder in einem OneDrive-Konto als Datensatz gekennzeichnet wurden. Benutzer, die schreibgeschützten Zugriff haben, benötigen diese Lizenz nicht.
 
 ### <a name="locking-and-unlocking-a-record"></a>Sperren und Entsperren eines Datensatzes
 
@@ -165,3 +164,7 @@ Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Überwachungs
 ![Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung](../media/recordversioning13.png)
 
 Weitere Informationen zum Durchsuchen dieser Ereignisse finden Sie im Abschnitt „Datei- und Seitenaktivitäten“ im [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Anweisungen zum Erstellen und Veröffentlichen der Aufbewahrungsbezeichnungen, die die Einstellung enthalten, Inhalte als Datensatz zu kennzeichnen, finden Sie [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen](create-retention-labels.md).

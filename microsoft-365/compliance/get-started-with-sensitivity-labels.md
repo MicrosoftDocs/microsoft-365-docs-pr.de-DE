@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: a69b71ec364eae4258960c3b33876f0df9530611
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 88b9ad0ea97ff035491f6e2d2ec2ec57b2b8d796
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411022"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432614"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -78,7 +78,7 @@ Die folgende Dokumentation hilft Ihnen bei der Bereitstellung Ihrer Vertraulichk
 |Vertraulichkeitsbezeichnungen zum Schützen von Inhalten in Teams und SharePoint verwenden |[Verwenden von Vertraulichkeitsbezeichnungen in Microsoft Teams, für Microsoft 365-Gruppen und auf SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)|
 |Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Dateien, die in Datenspeichern in der Cloud gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen|[Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und sensibler Daten, die in der Cloud gespeichert werde](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen in Power BI und Schützen von heruntergeladenen Berichten|[Datenschutz in Power BI (Vorschau)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen in Power BI und Schützen von heruntergeladenen Berichten|[Datenschutz in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Überwachen und Verstehen, wie Vertraulichkeitsbezeichnungen in meiner Organisation verwendet werden|[Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md) <br /><br /> [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)|
 
 

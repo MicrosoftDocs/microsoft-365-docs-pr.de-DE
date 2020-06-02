@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 795803b79a60c7fb8ce6154c61730d10baabdce1
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419081"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470662"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -191,7 +191,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
     - Um die Dateiinhalte in der Quellansicht anzuzeigen (wird für E-Mails nicht unterstützt), müssen Sie über die Rolle **Inhalts-Explorer/Inhalts-Anzeiger** verfügen, wenn Sie kein globaler Administrator sind. Wenn Sie nicht über diese Berechtigung verfügen, wird der Bereich „Vorschau“ nicht angezeigt, wenn Sie ein Element aus der Registerkarte **Übereinstimmende Elemente** auswählen.
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
-    - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive (Public Preview) aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
+    - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
     - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein.
 
 - Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](custom-sensitive-info-types.md) zu verwenden: 

@@ -14,16 +14,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
+description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166036"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470672"
 ---
-# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung 
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
@@ -38,7 +38,7 @@ Wenn ein Dokument oder eine E-Mail verschlüsselt ist, wird Zugriff auf den Inha
 
 - Kann nur von Benutzern entschlüsselt werden, die durch die Verschlüsselungseinstellungen der Bezeichnung dazu autorisiert sind.
 - Bleibt verschlüsselt, ganz gleich, wo sich diese befindet, ob innerhalb oder außerhalb Ihrer Organisation, auch wenn sie umbenannt wurde.
-- Er sowohl im Ruhezustand (z. B. in einem OneDrive-Konto) als auch während der Übertragung (z. B. eine gesendete E-Mail) verschlüsselt ist.
+- Er sowohl im Ruhezustand (z. B. in einem OneDrive-Konto) als auch während der Übertragung (z. B. eine E-Mail während der Übertragung über das Internet) verschlüsselt ist.
 
 Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezeichnung für die Zwecke der Verschlüsselung eine der folgenden Optionen auswählen:
 
@@ -359,7 +359,7 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 
 Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie sicherstellen, dass nur autorisierte Personen auf diese Daten zugreifen können. Es müssen jedoch einige Überlegungen berücksichtigt werden:
 
-- Wenn Ihre Organisation[Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive (öffentliche Vorschau)](sensitivity-labels-sharepoint-onedrive-files.md) nicht gewählt hat:
+- Wenn Ihre Organisation[Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) nicht gewählt hat:
     
     - werden Suche, eDiscovery und Delve bei verschlüsselten Dateien nicht funktionieren. 
     - funktionieren DLP-Richtlinien für die Metadaten dieser verschlüsselten Dateien (einschließlich Aufbewahrungsbezeichnungen), aber nicht für die Inhalte dieser Dateien (z. B. Kreditkartennummern innerhalb von Dateien).
