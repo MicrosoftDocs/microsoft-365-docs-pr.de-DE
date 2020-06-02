@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: 'Erfahren Sie mehr über die Standardkonfiguration und das Hinzufügen von Anwendungsverwaltungsrichtlinien zum Schutz von Unternehmensdaten auf persönlichen mobilen Geräten von Benutzern. '
-ms.openlocfilehash: 1d76b8fde6db4cf99d29fcfff000c20f0e7c18fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401280"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470905"
 ---
 # <a name="protect-work-files-on-devices"></a>Schützen von Arbeitsdateien auf Geräten
+
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
 In der heutigen Welt sind Benutzer an Ihre Geräte gebunden, und wenn persönliche und geschäftliche Lebensdauer kollidieren, können Ihre Unternehmensdaten auf dem persönlichen Gerät eines Mitarbeiters enden. Die hier konfigurierten Einstellungen können Ihnen dabei helfen, das Steuerelement zurückzunehmen und den Schutz für Arbeitsdateien zu gewährleisten, ohne dass sich dies auf die persönlichen Einstellungen oder Daten des Benutzers auswirkt.
   

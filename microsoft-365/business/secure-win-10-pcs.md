@@ -22,22 +22,24 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 for Business eingerichtet haben.
-ms.openlocfilehash: 88fb149e521848d6a7daa9498cd7d6240169c9fa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 Business Premium eingerichtet haben.
+ms.openlocfilehash: 5d5dda9c1faa7d50063c9b2b05bd938c67b54a76
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402750"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470611"
 ---
 # <a name="secure-windows-10-computers"></a>Sichern von Windows 10-Computern
 
-Nachdem Sie Microsoft 365 for Business [eingerichtet](set-up.md) haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
+
+Nachdem Sie Microsoft 365 Business Premium [eingerichtet](set-up.md) haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
 In diesem Video erfahren Sie, wie Sie Richtlinien zum Sichern Ihrer Windows 10-Computer einrichten können.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="to-secure-your-windows-10-pcs"></a>So sichern Sie Ihre Windows 10-PCs
 

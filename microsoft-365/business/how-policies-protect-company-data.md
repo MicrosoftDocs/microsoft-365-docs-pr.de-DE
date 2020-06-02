@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Verwenden Sie zum Schutz von Unternehmensdaten auf persönlichen Geräten der Benutzer Richtlinien, die auf bestimmte Geräte und Sicherheitsgruppen abzielen.
-ms.openlocfilehash: 2407db3309ed0967daa6eef9da14a702079d0487
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400888"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471157"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Schützen von Unternehmensdaten durch Richtlinien in Microsoft 365 for Business
+
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
 [] Die von Ihnen erstellten Richtlinien gelten speziell für den jeweiligen Gerätetyp und können auf bestimmte Benutzergruppen angewendet werden. Dies bedeutet, dass Sie eine Richtlinie erstellen können, die für die leitenden Mitarbeiter gilt, und eine weitere, die für alle anderen Personen gilt.
   

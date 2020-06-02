@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Erfahren Sie mehr über die standardmäßigen und anderen Einstellungen, die in Microsoft 365 for Business zum Sichern von Windows 10-Geräten verfügbar sind.
-ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402804"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470845"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
+
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
 ## <a name="secure-windows-10-devices"></a>Absichern von Windows 10-Geräten
 

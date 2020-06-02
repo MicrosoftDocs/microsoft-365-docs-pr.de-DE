@@ -27,14 +27,16 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: In diesem Artikel erfahren Sie, wie Sie problemlos neue Benutzer hinzufügen, Ihre Geräte sichern und Rollen in Microsoft 365 Business Premium zuweisen können.
-ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bb5c3ffe29448437b6c369fc770281aca3355ee7
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401072"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471217"
 ---
 # <a name="add-more-users"></a>Hinzufügen weiterer Benutzer
+
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
 ## <a name="add-new-users"></a>Neue Benutzer hinzufügen
 
@@ -42,7 +44,7 @@ Sehen Sie sich ein kurzes Video zum Hinzufügen eines Benutzers an. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 So fügen Sie einen Benutzer hinzu:
 

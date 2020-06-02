@@ -1,5 +1,5 @@
 ---
-title: Aktivieren oder Deaktivieren von integrierten Apps
+title: Verwalten der Zustimmung von Benutzern zu apps in Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,42 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Erfahren Sie mehr über integrierte apps und wie Sie Sie aktivieren können, um Drittanbieter-Apps für den Zugriff auf Microsoft 365-Informationen von Benutzern zu ermöglichen.
-ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie mehr über die Benutzer Zustimmung zu apps und wie Sie Sie aktivieren, damit Drittanbieter-apps auf die Microsoft 365-Informationen von Benutzern zugreifen können.
+ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399338"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477172"
 ---
-# <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Verwalten der Zustimmung von Benutzern zu apps in Microsoft 365
 
-Wenn integrierte apps aktiviert sind, können Benutzer in Ihrer Organisation Drittanbieter-apps den Zugriff auf Ihre Microsoft 365-Informationen erlauben. Wenn beispielsweise jemand eine App eines Drittanbieters verwendet, könnte diese App Berechtigungen für den Zugriff auf den Kalender des Benutzers anfordern sowie zum Bearbeiten von Dateien, die sich in einem OneDrive-Ordner befinden.
+Mit dieser Einstellung wird gesteuert, ob Benutzer diese Zustimmung für apps erteilen können, die OpenID Connect und OAuth 2,0 für die Anmeldung und Anforderungen für den Zugriff auf Daten verwenden. Eine APP kann in ihrer eigenen Organisation erstellt werden oder aus einer anderen Office 365 Organisation oder einem Drittanbieter stammen.
 
-## <a name="turning-integrated-apps-on-or-off"></a>Aktivieren oder Deaktivieren von integrierten Apps
+Wenn Sie diese Einstellung aktivieren, werden die Benutzer von diesen apps aufgefordert, die Berechtigungen für den Zugriff auf die Daten Ihrer Organisation aufzurufen, und die Benutzer können entscheiden, ob Sie Sie zulassen möchten. Wenn Sie diese Einstellung deaktivieren, müssen Administratoren diesen apps zustimmen, bevor Sie von Benutzern verwendet werden können. In diesem Fall sollten Sie einen Administrator-Genehmigungsworkflow im Azure-Portal einrichten, damit Benutzer eine Anforderung zur Genehmigung des Administrators senden können, um eine blockierte APP zu verwenden.
+
+Ein Benutzer kann nur Apps, deren Besitzer er ist, Zugriff auf seine Office 365-Informationen gewähren. Sie können einer App keinen Zugriff auf die Informationen anderer Benutzer gewähren.
+
+## <a name="turning-user-consent-on-or-off"></a>Aktivieren oder Deaktivieren der Benutzer Zustimmung
 <a name="__toc379982114"> </a>
 
-Wie folgt aktivieren oder deaktivieren Sie integrierte Apps.
+Hier erfahren Sie, wie Sie die Zustimmung von Benutzern zu Apps aktivieren oder deaktivieren.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungs** \> **Einstellungen** , \> Registerkarte **Dienste** , und wählen Sie dann **integrierte apps**aus.
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> **Organisationseinstellungen**für  >  [Dienste](https://go.microsoft.com/fwlink/p/?linkid=2053743) , und wählen Sie dann **Benutzer Zustimmung für apps**aus.
 
-2. Wählen Sie auf der Seite **integrierte apps** die Option zum Aktivieren oder deaktivieren integrierter Apps aus.
+2. Wählen Sie auf der Seite **Benutzer Zustimmung für apps** die Option aus, um integrierte apps ein-oder auszuschalten.
 
-## <a name="more-info-on-integrated-apps"></a>Weitere Informationen zu integrierten Apps
+## <a name="more-info"></a>Weitere Informationen
 <a name="__toc379982114"> </a>
 
-Eine integrierte App kann in ihrer eigenen Organisation erstellt werden oder aus einer anderen Organisation oder einem Drittanbieter stammen.
+Informationen zum Konfigurieren ihrer Zustimmungs Einstellungen in Azure Active Directory finden Sie unter [Konfigurieren des Administrator-Genehmigungsworkflows](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
-Wenn integrierte Apps aktiviert sind und eine App verwendet wird, fordert die App die Berechtigung an, die Zugriffsebene so festlegen zu dürfen, wie sie beim Zugriff auf die Informationen des Benutzers erforderlich sind. Ein Benutzer kann nur Zugriff auf apps gewähren, denen er angehört, die auf seine Microsoft 365-Informationen zugreifen. Sie können einer App keinen Zugriff auf die Informationen anderer Benutzer gewähren.
-
-Es gibt zwei Arten von Berechtigungen, die bei der Verwendung integrierter apps in Microsoft 365 verwendet werden: Benutzerberechtigungen und Administratorberechtigungen. Wenn Ihre Organisation beispielsweise für integrierte Apps aktiviert ist und ein Benutzer eine App eines Drittanbieters verwendet, könnte die App vom Benutzer die Berechtigung zum Lesen seiner Benutzerprofildetails, zum Bearbeiten oder Löschen seiner Dateien, zum Lesen von in Websitesammlungen enthaltenen Elementen und zum Senden von E-Mail im Namen dieses Benutzers fordern.
-
-![Benutzerberechtigungen für integrierte Apps](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
-
-Wenn ein Administrator eine APP für alle Benutzer in einer Organisation registriert, wird er aufgefordert, diese APP auf Informationen und Ressourcen in der Organisation zugreifen zu lassen. Danach werden andere Benutzer in der Organisation, wenn sie diese App benutzen, nicht mehr um Berechtigungen gebeten. Wenn ein Administrator eine App registriert, muss dieser Administrator sicherstellen, dass der Herausgeber dieser App vertrauenswürdig ist. Details zum Registrieren einer App finden Sie unter [Hinzufügen, Aktualisieren und Entfernen einer Anwendung](https://go.microsoft.com/fwlink/p/?LinkID=518600).
-
-![Administratorberechtigungen für integrierte Apps](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
-
-Wenn integrierte Apps deaktiviert sind, werden Apps, die bereits installiert sind und Berechtigungen für den Zugriff auf Informationen nicht deinstalliert, und die Berechtigungen werden auch nicht entfernt. Selbst wenn integrierte Apps deaktiviert sind, können Administratoren immer noch Apps registrieren, um sie für ihre Benutzer verfügbar zu machen und diesen Apps zu gestatten, auf die Informationen der Benutzer zuzugreifen. Details zum Entfernen einer registrierten App mit ihren Berechtigungen finden Sie unter [Hinzufügen, Aktualisieren und Entfernen einer Anwendung](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
-
-
+Informationen zum Verwalten der Benutzer Zustimmung zu apps finden Sie unter [Verwalten der Zustimmung zu Anwendungen und bewerten von Zustimmungs Anforderungen](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).

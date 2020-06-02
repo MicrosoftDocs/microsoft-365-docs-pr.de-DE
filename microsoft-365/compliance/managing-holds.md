@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie Aufbewahrungsorte und Ihre Datenquellen speichern, um relevante Inhalte für ihren erweiterten eDiscovery-Fall beizubehalten.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034124"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477161"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Manage Holds in Advanced eDiscovery
 
@@ -40,7 +40,7 @@ So zeigen Sie die Richtlinie für Depot Aufbewahrung an:
    
 2. Wechseln Sie zur Registerkarte **depotverwalter** , um Verwalter in Ihrem Fall hinzuzufügen. Weitere Informationen zum Hinzufügen und Platzieren von Depot Haltern in einem erweiterten eDiscovery-Fall finden Sie unter Hinzufügen von Depot Betreuern [zu einem erweiterten eDiscovery-Fall](add-custodians-to-case.md). Wenn Sie bereits Verwalter hinzugefügt und in die Warteschleife gesetzt haben, fahren Sie mit Schritt 3 fort.
    
-3. Wechseln Sie zur Registerkarte halte **Status** , und klicken Sie auf **CustodianHold\<>**.
+3. Wechseln Sie zur Registerkarte halte **Status** , und klicken Sie auf **CustodianHold \<HoldId> **.
    
 4. Auf der Flyout-Seite finden Sie Statistiken für die Richtlinie speichern. Sie können auch Aktionen wie das Anwenden einer Abfrage auf Ihren Depot-basierten Haltebereich ausführen. Weitere Informationen zum Erstellen einer halte Abfrage und zum Verwenden von Bedingungen finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
  
@@ -80,7 +80,7 @@ So erstellen Sie einen Aufbewahrungs freien Speicher für einen erweiterten eDis
      Im Abschnitt **häufig gestellte Fragen** finden Sie Tipps dazu, wie Sie Microsoft 365-Gruppen und Microsoft Teams in die Warteschleife versetzen.
 
     > [!NOTE]
-    > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`UPN) (beispielsweise). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines Speichers ohne Freiheitsentzug ist und sein UPN geändert wird, müssen Sie den Haltestatus aktualisieren und auf die neue OneDrive-URL deuten. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+    > Die URL für das OneDrive-Konto eines Benutzers enthält den Benutzerprinzipalnamen (User Principal Name, UPN) (beispielsweise `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Im seltenen Fall, dass der UPN eines Benutzers geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das OneDrive-Konto eines Benutzers Teil eines Speichers ohne Freiheitsentzug ist und sein UPN geändert wird, müssen Sie den Haltestatus aktualisieren und auf die neue OneDrive-URL deuten. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Öffentliche Exchange-Ordner** – verschieben Sie die Umschaltfläche in die Position alle, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Beachten Sie, dass Sie keine bestimmten öffentlichen Ordner für die Aufbewahrung auswählen können. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
 
