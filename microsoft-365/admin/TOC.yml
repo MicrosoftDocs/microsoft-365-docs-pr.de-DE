@@ -11,7 +11,15 @@
         - name: Planen Ihres Setups
           href: setup/plan-your-setup.md
         - name: Einrichten Ihrer Organisation mit dem geführten Setup
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 Business Basic
+              href: setup/setup-business-basic.md
+            - name: Office 365 Business Premium
+              href: setup/setup-business-standard.md
+            - name: Microsoft Business Premium
+              href: ../business/set-up.md
+            - name: Microsoft 365 Apps for Business
+              href: setup/setup-apps-for-business.md
         - name: Erkunden der Einrichtungsseite und des Assistenten
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Migration Ihrer Daten
@@ -21,7 +29,7 @@
         - name: Bereitstellen von Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: App-Schulung für alle
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: Welches Abonnement habe ich?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassen der Anmeldeseite
@@ -240,10 +248,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Aktivieren der moderner Authentifizierung für Office 2013
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Absichern von Microsoft Business Premium
+          items:
+            - name: Voraussetzungen zum Schutz von Daten
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Sicherheitsfeatures
+              href: ../business/security-features.md
+            - name: Erhöhen des Bedrohungsschutzes
+              href: ../business/increase-threat-protection.md
+            - name: Einrichten von Compliancefeatures
+              href: ../business/set-up-compliance.md
         - name: Sicherheitsbewertung
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: Ein Leitfaden zur DSGVO-Compliance
           href: security-and-compliance/gdpr-compliance.md
+    - name: Verwalten von Geräten
+      items:
+        - name: Anzeigen und Bearbeiten von Richtlinien und Geräten
+          href: ../business/view-policies-and-devices.md
+        - name: Entfernen von Unternehmensdaten
+          href: ../business/remove-company-data.md
+        - name: Zurücksetzen von Geräten auf Werkseinstellungen
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: Zuordnen von Schutzfunktionen zu Intune-Einstellungen
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: App-Schutzeinstellungen für Android und iOS
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Überprüfen der Einstellungen unter Android oder iOS
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Geräteschutzeinstellungen für Windows 10-PCs
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Überprüfen der Einstellungen auf Windows 10-PCs
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: "App-Schutzeinstellungen für Windows\_10-PCs"
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: Arbeiten mit Kunden
       href: work-with-customers/index.yml
       items:
