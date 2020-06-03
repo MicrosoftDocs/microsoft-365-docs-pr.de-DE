@@ -218,6 +218,8 @@
           href: manage/manage-messages.md
         - name: Einrichten von Freigabeoptionen
           href: manage/release-options-in-office-365.md
+        - name: Ein- oder ausblenden neuer Funktionen
+          href: manage/show-hide-new-features.md
         - name: Power BI-Nutzungsanalysen
           items:
             - name: Info über Nutzungsanalysen
