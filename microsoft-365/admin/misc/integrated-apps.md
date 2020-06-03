@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Erfahren Sie mehr über die Benutzer Zustimmung zu apps und wie Sie Sie aktivieren, damit Drittanbieter-apps auf die Microsoft 365-Informationen von Benutzern zugreifen können.
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477172"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498317"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Verwalten der Zustimmung von Benutzern zu apps in Microsoft 365
 
@@ -42,7 +42,7 @@ Hier erfahren Sie, wie Sie die Zustimmung von Benutzern zu Apps aktivieren oder 
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> **Organisationseinstellungen**für  >  [Dienste](https://go.microsoft.com/fwlink/p/?linkid=2053743) , und wählen Sie dann **Benutzer Zustimmung für apps**aus.
 
-2. Wählen Sie auf der Seite **Benutzer Zustimmung für apps** die Option aus, um integrierte apps ein-oder auszuschalten.
+2. Wählen Sie auf der Seite **Benutzer Zustimmung für apps** die Option aus, um die Benutzer Zustimmung ein-oder auszuschalten.
 
 ## <a name="more-info"></a>Weitere Informationen
 <a name="__toc379982114"> </a>

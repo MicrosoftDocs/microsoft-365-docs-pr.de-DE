@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Erstellen Sie Warnungsrichtlinien im Security and Compliance Center in Office 365 und Microsoft 365, um potenzielle Bedrohungen, Datenverlust und Berechtigungsprobleme zu überwachen.
-ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429215"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520169"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security & Compliance Center
 
@@ -42,6 +42,9 @@ Im folgenden finden Sie einen kurzen Überblick über die Funktionsweise von War
 ![Übersicht über die Funktionsweise von Warnungsrichtlinien](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Ein Administrator in Ihrer Organisation erstellt, konfiguriert und aktiviert eine Warnungs Richtlinie mithilfe der Seite " **Warnungsrichtlinien** " im Security and Compliance Center. Sie können auch Warnungsrichtlinien erstellen, indem Sie das **New-protectionalert können-** Cmdlet in Security & Compliance Center PowerShell verwenden. Zum Erstellen von Warnungsrichtlinien müssen Sie im Security and Compliance Center die Rolle "Warnungen verwalten" oder "Organisationskonfiguration" zugewiesen haben.
+
+   > [!NOTE]
+   > Es dauert bis zu 24 Stunden nach dem Erstellen oder Aktualisieren einer Warnungs Richtlinie, bevor Warnungen von der Richtlinie ausgelöst werden können. Dies liegt daran, dass die Richtlinie mit dem Warnungs Erkennungsmodul synchronisiert werden muss.
 
 2. Ein Benutzer führt eine Aktivität aus, die mit den Bedingungen einer Warnungs Richtlinie übereinstimmt. Im Fall von Malwareangriffen lösen infizierte e-Mail-Nachrichten, die an Benutzer in Ihrer Organisation gesendet werden, eine Warnung aus.
 
@@ -179,6 +182,12 @@ Wenn Ereignisse mit derselben Warnungs Richtlinie innerhalb des Aggregations Int
 Der folgende Screenshot zeigt eine Warnung mit vier aggregierten Ereignissen. Die Aktivitätsliste enthält Informationen zu den vier e-Mail-Nachrichten, die für die Warnung relevant sind.
 
 ![Beispiel für eine Warnungs Aggregation](../media/AggregatedAlertExample.png)
+
+Beachten Sie die folgenden Aspekte bei der Warnungs Aggregation:
+
+- Warnungen, die durch das **Klicken auf eine potenziell bösartige URL ausgelöst wurden, wurde erkannt** [Standard Warnungs Richtlinie](#default-alert-policies) wird nicht aggregiert. Dies liegt daran, dass von dieser Richtlinie ausgelöste Warnungen für jeden Benutzer und jede e-Mail-Nachricht eindeutig sind.
+
+- Zu diesem Zeitpunkt gibt die Alert-Eigenschaft der **Trefferanzahl** nicht die Anzahl aggregierter Ereignisse für alle Warnungsrichtlinien an. Für Warnungen, die durch diese Warnungsrichtlinien ausgelöst werden, können Sie die aggregierten Ereignisse anzeigen, indem Sie in der Benachrichtigung auf **Nachrichtenliste anzeigen** oder **Aktivität anzeigen** klicken. Wir arbeiten daran, die Anzahl aggregierter Ereignisse, die in der Alert-Eigenschaft der **Trefferanzahl** aufgeführt sind, für alle Warnungsrichtlinien zu erstellen.
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Erforderliche RBAC-Berechtigungen zum Anzeigen von Warnungen
 

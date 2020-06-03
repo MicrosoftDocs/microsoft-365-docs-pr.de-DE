@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292473"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515762"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -95,14 +95,17 @@ Lesen Sie den Abschnitt [Einrichten eines Connectors zum Importieren von HR-Date
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Konfigurieren von Richtlinien zur Verhinderung von Datenverlust (DLP)
 
-Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen zu identifizieren. Wenn Sie eine Richtlinie für Insider-Risikomanagement mit der Vorlage *Datenlecks* konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen.
+Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen für DLP-Warnungen mit hohem Schweregrad zu identifizieren. Wenn Sie eine Richtlinie für Insider-Risikomanagement mit der Vorlage **Datenlecks** konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen.
 
-Diese Richtlinie unterstützt das Risikomanagement von Insider-Indikatoren für DLP-Warnungen mit hohem Schweregrad für vertrauliche Informationen und ist ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation. Wenn Sie mehr als eine DLP-Richtlinie für Ihre Organisation konfigurieren, müssen Sie pro DLP-Richtlinie eine Richtlinie für Insider-Risikomanagement zuweisen.
-
-Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
+Diese Richtlinie unterstützt das Risikomanagement von Insider-Indikatoren für DLP-Warnungen mit hohem Schweregrad für vertrauliche Informationen und ist ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation. Weitere Informationen zu Insider Risikomanagement und DLP-Richtlinien Integration und Planungsüberlegungen finden Sie unter [Insider Risk Management Policies](insider-risk-management-policies.md#data-leaks).
 
 >[!IMPORTANT]
->Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
+>Stellen Sie sicher, dass Sie Folgendes abgeschlossen haben:
+>
+>- Sie verstehen und konfigurieren die in-Scope-Benutzer sowohl in den DLP-als auch im Insider Risk Management-Richtlinien, um die von Ihnen erwartete Richtlinien Abdeckung zu erstellen.
+>- Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
+
+Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Schritt 4 (erforderlich): Konfigurieren von Einstellungen für Insider Risiken
 

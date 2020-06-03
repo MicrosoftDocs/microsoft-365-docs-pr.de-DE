@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262410"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520158"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262410"
 Haben [automatisierte Funktionen für die Untersuchung und Reaktion (Air) Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) vermissen oder fälschlicherweise etwas erkannt? Es gibt Schritte, die Sie ausführen können, um es zu beheben. Sie können:
 - [Melden einer falsch positiven/negativen Meldung an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Passen Sie Ihre Benachrichtigungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) an (falls erforderlich); und 
-- [Rückgängigmachen von auf Geräten ausgeführten Korrekturaktionen](#undo-a-remediation-action) 
+- [Rückgängigmachen von Korrekturaktionen, die ausgeführt wurden](#undo-a-remediation-action). 
 
 Verwenden Sie diesen Artikel als Leitfaden. 
 
@@ -71,7 +71,7 @@ Mit Threat Explorer kann Ihr Sicherheits Betriebsteam eine von einer Aktion betr
 
 Im Wartungscenter können Sie Korrekturaktionen sehen, die ausgeführt wurden, und die Aktion möglicherweise rückgängig machen.
 
-1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Sie gelangen auf das Sicherheits & Compliance Center.
+1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an. Dadurch gelangen Sie zum Security & Compliance Center.
 
 2. Wechseln Sie zu **Threat Management**  >  **Investigations**.
 

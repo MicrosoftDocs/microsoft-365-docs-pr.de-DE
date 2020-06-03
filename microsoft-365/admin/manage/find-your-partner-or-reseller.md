@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Erfahren Sie, wie Sie einen neuen Microsoft 365-Partner suchen oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
-ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399764"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515795"
 ---
 # <a name="find-your-partner-or-reseller"></a>Suchen nach Ihrem Partner oder Händler
 
@@ -47,7 +47,7 @@ Wenn Sie Microsoft 365 über eine offene Volumenlizenzierung kaufen oder verlän
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>Suchen nach Kontaktinformationen für einen Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben
 
 > [!NOTE]
-> In einigen Fällen können Sie findinformation im Microsoft 365 Admin Center für Partner, mit denen Sie zuvor gearbeitet haben, betätigen. Beachten Sie, dass diese Informationen möglicherweise nicht mehr aktuell sind. Es wird empfohlen, sich an die für den Einkauf verantwortliche Person oder Abteilung in Ihrer Organisation zu wenden, um zu erfahren, mit welchem Partner Sie zusammenarbeiten sollten. 
+> In einigen Fällen finden Sie Informationen im Microsoft 365 Admin Center für Partner, mit denen Sie in der Vergangenheit zusammengearbeitet haben. Beachten Sie, dass diese Informationen möglicherweise nicht mehr aktuell sind. Es wird empfohlen, sich an die für den Einkauf verantwortliche Person oder Abteilung in Ihrer Organisation zu wenden, um zu erfahren, mit welchem Partner Sie zusammenarbeiten sollten. 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Abrufen von Partner Informationen im Admin Center
 

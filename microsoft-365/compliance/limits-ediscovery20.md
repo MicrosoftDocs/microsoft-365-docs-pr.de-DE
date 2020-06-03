@@ -14,27 +14,27 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über die Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten. Dies umfasst Fall Grenzen, Indizierungs Grenzwerte und Such Grenzwerte, wenn das Such Tool zum Sammeln von Falldaten verwendet wird.
-ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224662"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520147"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
 In diesem Artikel werden die Grenzwerte für die erweiterte eDiscovery-Lösung in Microsoft 365 beschrieben.
 
-## <a name="case-limits"></a>Fall Grenzwerte
+## <a name="case-and-review-set-limits"></a>Grenzwerte für Fall-und Überprüfungs Sätze
 
-In der folgenden Tabelle sind die Grenzwerte für Fälle in Advanced eDiscovery aufgeführt.
+In der folgenden Tabelle sind die Grenzwerte für Fälle und Überprüfungs Sätze in Advanced eDiscovery aufgeführt.
 
 |**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
 |Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |1 Mio.  <br/> |
-|Gesamtdateigröße pro Lastsatz.  <br/> |100 GB  <br/> |
-|Die Gesamtmenge der Daten, die pro Tag in einen Fall geladen wurden.<br/> |2 TB <br/> |
-|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15  <br/> |
+|Gesamtdateigröße pro Lastsatz. Dies umfasst das Laden von nicht Office 365 in einen Überprüfungs Satz.  <br/> |100 GB  <br/> |
+|Die Gesamtmenge an Daten, die in alle Überprüfungs Sätze in der Organisation pro Tag geladen wurden.<br/> |2 TB <br/> |
+|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15 <br/> |
 |Maximale Anzahl von Überprüfungs Sätzen pro Fall.  <br/> |20 <br/> |
 |||
 

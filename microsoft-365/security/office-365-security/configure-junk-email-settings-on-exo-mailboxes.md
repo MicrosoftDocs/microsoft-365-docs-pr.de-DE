@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352510"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498663"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -42,7 +42,7 @@ Wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist, kann EoP Nachrichten
 Administratoren können Exchange Online PowerShell verwenden, um den Status der Junk-e-Mail-Regel für Postfächer zu deaktivieren, zu aktivieren und anzuzeigen. Administratoren können auch Exchange Online PowerShell zum Konfigurieren von Einträgen in der Sammlung von Listen sicherer Adressen für Postfächer verwenden (die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste Absender blockieren).
 
 > [!NOTE]
-> Nachrichten von Absendern, die Benutzer zu ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die EoP-Filterung (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben.
+> Nachrichten von Absendern, die Benutzer ihren eigenen Listen sicherer Absender hinzugefügt haben, überspringen die Verbindungsfilterung als Teil von EoP (der SCL-Wert ist-1). Wenn Sie verhindern möchten, dass Benutzer Ihrer Liste sicherer Absender in Outlook Einträge hinzufügen, verwenden Sie Gruppenrichtlinien wie im Abschnitt [Informationen zu Junk-e-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) weiter unten in diesem Thema beschrieben. Die Richtlinienfilterung, Inhaltsfilterung und ATP-Prüfungen (Advanced Threat Protection) werden weiterhin auf die Nachrichten angewendet.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -89,7 +89,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 
 Befolgen Sie einen der folgenden Schritte, um zu überprüfen, ob die Junk-E-Mail-Regel für ein Postfach erfolgreich aktiviert bzw. deaktiviert wurde:
 
-- Ersetzen Sie _ \< \> Mailbox Identity_ durch den Namen, den Alias oder die e-Mail-Adresse des Postfachs, und führen Sie den folgenden Befehl zum Überprüfen des **Enabled** -Eigenschaftswerts aus:
+- Ersetzen _\<MailboxIdentity\>_ Sie durch den Namen, den Alias oder die e-Mail-Adresse des Postfachs, und führen Sie den folgenden Befehl zum Überprüfen des **Enabled** -Eigenschaftswerts aus:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 
 Verwenden Sie eine der folgenden Vorgehensweisen, um sicherzustellen, dass die Sammlung von Listen sicherer Adressen für ein Postfach erfolgreich konfiguriert wurde:
 
-- Ersetzen Sie _ \< Mailbox Identity \> _ durch den Namen, den Alias oder die e-Mail-Adresse des Postfachs, und führen Sie den folgenden Befehl aus, um die Eigenschaftswerte zu überprüfen:
+- Ersetzen _\<MailboxIdentity\>_ Sie durch den Namen, den Alias oder die e-Mail-Adresse des Postfachs, und führen Sie den folgenden Befehl aus, um die Eigenschaftswerte zu überprüfen:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

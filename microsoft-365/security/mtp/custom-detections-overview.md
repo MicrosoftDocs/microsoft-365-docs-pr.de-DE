@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931732"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498351"
 ---
-# <a name="custom-detections-overview"></a>Übersicht über benutzerdefinierte Erkennungen
+# <a name="custom-detections-overview"></a>Benutzerdefinierte Erkennungen – Übersicht
 
 **Gilt für:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Mit benutzerdefinierten Erkennungen können Sie proaktiv auf verschiedene Ereignisse und Systemzustände überwachen und darauf reagieren, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Dies wird durch anpassbare Erkennungsregeln ermöglicht, die automatisch Warnungen und Reaktions Aktionen auslösen.
 

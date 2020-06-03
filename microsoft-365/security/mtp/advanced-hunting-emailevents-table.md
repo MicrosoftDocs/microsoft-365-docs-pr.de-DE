@@ -1,6 +1,6 @@
 ---
 title: Tabelle "EmailEvents" im Schema "Erweiterte Suche"
-description: Informationen zu Ereignissen in Verbindung mit Microsoft-e-Mails in der EmailEvents-Tabelle des Advanced Hunting-Schemas
+description: Informationen zu Ereignissen in Verbindung mit Microsoft 365-e-Mails in der EmailEvents-Tabelle des Advanced Hunting-Schemas
 keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Schadsoftware, Phishing-Urteil, ANLAGENANZAHL, Link Anzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633531"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515855"
 ---
 # <a name="emailevents"></a>EmailEvents
 

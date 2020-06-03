@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: 8993a3e88ab7513713086499a316c92fdb7509cb
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477195"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498328"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -32,12 +32,9 @@ Nachdem Sie einen eDiscovery-Haltestatus erstellt haben, kann es bis zu 24 Stund
 
 Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den Inhalt zu belegen, der an den angegebenen Inhaltsspeicherorten aufbewahrt wird:
   
-- Sie erstellen einen unbegrenzten Haltebereich, in dem der gesamte Inhalt aufbewahrt wird. Alternativ können Sie einen abfragebasierten Speicher erstellen, in dem nur der Inhalt, der mit einer Suchabfrage übereinstimmt, in die Warteschleife gestellt wird.
+- Sie erstellen einen unbegrenzten Haltebereich, in dem der gesamte Inhalt an den angegebenen Positionen in den Haltebereich gesetzt wird. Alternativ können Sie einen abfragebasierten Haltebereich erstellen, in dem nur der Inhalt der angegebenen Speicherorte, der mit einer Suchabfrage übereinstimmt, gespeichert wird.
 
-- Sie können einen Datumsbereich angeben, um nur den Inhalt beizubehalten, der innerhalb dieses Datumsbereichs gesendet, empfangen oder erstellt wurde. Alternativ können Sie alle Inhalte speichern, unabhängig davon, wann Sie gesendet, empfangen oder erstellt wurden.
-
-> [!NOTE]
-> Sie können maximal 10.000 eDiscovery für alle zentralen eDiscovery-Fälle in Ihrer Organisation bereithalten.
+- Sie können einen Datumsbereich angeben, um nur den Inhalt beizubehalten, der innerhalb dieses Datumsbereichs gesendet, empfangen oder erstellt wurde. Alternativ können Sie alle Inhalte an bestimmten Speicherorten speichern, unabhängig davon, wann Sie gesendet, empfangen oder erstellt wurden.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Haltestatus
 
@@ -64,6 +61,9 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
    b. **Website Standorte** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um SharePoint-und OneDrive-Konten für die Aufbewahrung anzugeben. Geben Sie die URL für jede Website ein, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, Office 365 Gruppe oder eine Gruppe jammern hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
   
    c. **Öffentliche Exchange-Ordner.** Verschieben Sie das Toggle ![ -Steuerelement der Umschaltfläche in ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) die **all** -Position, um alle öffentlichen Ordner in Ihrer Exchange Online Organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in die Warteschleife gestellt werden sollen. Lassen Sie den Toggle-Schalter auf " **None** " festgelegt, wenn Sie öffentliche Ordner nicht in den Speicher setzen möchten.
+
+   > [!NOTE]
+   > Sie müssen mindestens einen Inhaltsspeicherort zum Haltestatus hinzufügen. Andernfalls wird in den eDiscovery-halte-statischen Elementen angezeigt, dass keine Elemente gespeichert sind.
 
 8. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
 

@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034864"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498363"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
 **Gilt für:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Mithilfe von benutzerdefinierten Erkennungsregeln, die aus [erweiterten Jagd](advanced-hunting-overview.md) Abfragen erstellt wurden, können Sie verschiedene Ereignisse und Systemzustände proaktiv überwachen, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Sie können festlegen, dass Sie in regelmäßigen Intervallen ausgeführt werden, indem Sie Warnungen generieren und Reaktions Aktionen ausführen, wenn Übereinstimmungen vorliegen.
 
@@ -43,8 +41,8 @@ Um benutzerdefinierte Erkennungen zu verwalten, müssen Sie eine der folgenden R
 
 Um die erforderlichen Berechtigungen zu verwalten, kann ein **globaler Administrator** folgende Aufgaben ausführen:
 
-- Weisen Sie die Rolle " **Sicherheitsadministrator** " oder " **Sicherheits Operator** " im [Microsoft 365 Admin Center](https://admin.microsoft.com/) unter **roles** > **Security Admin**zu.
-- Überprüfen Sie die RBAC-Einstellungen für Microsoft Defender ATP im [Microsoft Defender Security Center](https://securitycenter.windows.com/) unter **Einstellungen** > **Berechtigungs** > **Rollen**. Wählen Sie die entsprechende Rolle aus, um die Berechtigung **Sicherheitseinstellungen verwalten** zuzuweisen.
+- Weisen Sie die Rolle " **Sicherheitsadministrator** " oder " **Sicherheits Operator** " im [Microsoft 365 Admin Center](https://admin.microsoft.com/) unter **roles**  >  **Security Admin**zu.
+- Überprüfen Sie die RBAC-Einstellungen für Microsoft Defender ATP im [Microsoft Defender Security Center](https://securitycenter.windows.com/) unter **Einstellungen**  >  **Berechtigungs**  >  **Rollen**. Wählen Sie die entsprechende Rolle aus, um die Berechtigung **Sicherheitseinstellungen verwalten** zuzuweisen.
 
 > [!NOTE]
 > Zum Verwalten von benutzerdefinierten Erkennungen benötigen **Sicherheits Operatoren** die Berechtigung **Sicherheitseinstellungen verwalten** in Microsoft Defender ATP, wenn RBAC aktiviert ist.
@@ -66,7 +64,9 @@ Um eine benutzerdefinierte Erkennungsregel zu erstellen, muss die Abfrage die fo
     - `SenderFromAddress`(Absender der Umschlags-oder Rückgabepfad Adresse)
     - `SenderMailFromAddress`(Absenderadresse wird vom e-Mail-Client angezeigt)
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
@@ -75,15 +75,14 @@ Um eine benutzerdefinierte Erkennungsregel zu erstellen, muss die Abfrage die fo
 
 Einfache Abfragen, beispielsweise solche, die den `project` or `summarize` -Operator nicht zum Anpassen oder Aggregieren von Ergebnissen verwenden, geben normalerweise diese allgemeinen Spalten zurück.
 
-Es gibt verschiedene Möglichkeiten, um sicherzustellen, dass komplexere Abfragen diese Spalten zurückgeben. Wenn Sie beispielsweise die Aggregate und die Anzahl nach Entitäten in einer Spalte wie verwenden `DeviceId`möchten, können Sie dennoch `Timestamp` zurückkehren, indem Sie Sie aus dem letzten Ereignis `DeviceId`abrufen, das die einzelnen Eindeutigkeiten umfasst.
+Es gibt verschiedene Möglichkeiten, um sicherzustellen, dass komplexere Abfragen diese Spalten zurückgeben. Wenn Sie beispielsweise die Aggregate und die Anzahl nach Entitäten in einer Spalte wie verwenden möchten `DeviceId` , können Sie dennoch zurückkehren, `Timestamp` indem Sie Sie aus dem letzten Ereignis abrufen, das die einzelnen Eindeutigkeiten umfasst `DeviceId` .
 
-Die folgende Beispielabfrage zählt die Anzahl der eindeutigen Computer (`DeviceId`) mit Antivirus-Erkennungen und verwendet diese Anzahl, um nur die Computer mit mehr als fünf Erkennungen zu finden. Um die neueste Version `Timestamp`zurückzugeben, wird `summarize` der Operator mit `arg_max` der-Funktion verwendet.
+Die folgende Beispielabfrage zählt die Anzahl der eindeutigen Geräte ( `DeviceId` ) mit Antivirus-Erkennungen und verwendet diese Anzahl, um nur die Geräte mit mehr als fünf Erkennungen zu finden. Um die neueste Version zurückzugeben `Timestamp` , wird der `summarize` Operator mit der- `arg_max` Funktion verwendet.
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Erstellen Sie eine neue Regel, und geben Sie Warnungsdetails an.
@@ -95,7 +94,7 @@ Wählen Sie mit der Abfrage im Abfrage-Editor **Erkennungsregel erstellen** aus,
 - **Warnungs Titel** – Titel mit Warnungen, die von der Regel ausgelöst werden
 - **Schweregrad** – potenzielles Risiko der von der Regel identifizierten Komponente oder Aktivität
 - **Category** – Bedrohungs Komponente oder Aktivität, die von der Regel identifiziert wird
-- **Mitra ATT&ck Techniques** – eine oder mehrere von der Regel identifizierte Angriffstechniken, wie im [Mitra ATT&ck-Framework](https://attack.mitre.org/) dokumentiert
+- **Mitra ATT&ck Techniques** – eine oder mehrere von der Regel identifizierte Angriffstechniken, wie im [Mitra ATT&ck-Framework](https://attack.mitre.org/)dokumentiert. Dieser Abschnitt gilt nicht und ist für bestimmte Warnungs Kategorien verborgen, einschließlich Schadsoftware, Ransomware, verdächtiger Aktivitäten und unerwünschter Software.
 - **Description** – Weitere Informationen zur von der Regel identifizierten Komponente oder Aktivität 
 - **Empfohlene Aktionen** – zusätzliche Aktionen, die Responder als Reaktion auf eine Warnung ausführen können
 
@@ -110,22 +109,26 @@ Beim Speichern wird eine neue oder bearbeitete benutzerdefinierte Erkennungsrege
 Wählen Sie die Häufigkeit aus, die der Art und Weise entspricht, in der die Erkennungen überwacht werden sollen, und prüfen Sie die Kapazität Ihrer Organisation, auf die Warnungen zu reagieren.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. Wählen Sie die betroffenen Entitäten aus.
-Identifizieren Sie die Spalten in den Abfrageergebnissen, bei denen Sie davon ausgehen, dass Sie die Hauptbetroffene oder betroffene Entität finden. Beispielsweise kann eine Abfrage Absender (`SenderFromAddress` oder `SenderMailFromAddress`)-und Empfängeradressen (`RecipientEmailAddress`) zurückgeben. Das Identifizieren der Spalten, die die Hauptbetroffene Entität darstellen, hilft dem Dienst, relevante Warnungen zu aggregieren, Vorfälle und Ziel Antwort Aktionen zu korrelieren.
+Identifizieren Sie die Spalten in den Abfrageergebnissen, bei denen Sie davon ausgehen, dass Sie die Hauptbetroffene oder betroffene Entität finden. Beispielsweise kann eine Abfrage Absender ( `SenderFromAddress` oder `SenderMailFromAddress` )-und Empfängeradressen ( `RecipientEmailAddress` ) zurückgeben. Das Identifizieren der Spalten, die die Hauptbetroffene Entität darstellen, hilft dem Dienst, relevante Warnungen zu aggregieren, Vorfälle und Ziel Antwort Aktionen zu korrelieren.
 
 Sie können für jeden Entitätstyp (Postfach, Benutzer oder Gerät) nur eine Spalte auswählen. Spalten, die nicht von der Abfrage zurückgegeben werden, können nicht ausgewählt werden.
 
-### <a name="4-specify-actions-on-files-or-machines"></a>4. Geben Sie Aktionen für Dateien oder Computer an.
-Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen für Dateien oder Computer durchführen, die von der Abfrage zurückgegeben werden.
+### <a name="4-specify-actions"></a>4. Geben Sie Aktionen an.
+Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen für Geräte, Dateien oder Benutzer durchführen, die von der Abfrage zurückgegeben werden.
 
-#### <a name="actions-on-machines"></a>Aktionen auf Computern
-Diese Aktionen werden auf Computer in der `DeviceId` Spalte der Abfrageergebnisse angewendet:
-- **Isolate Machine** – mit Microsoft Defender ATP wird die vollständige Netzwerkisolation angewendet, wodurch verhindert wird, dass der Computer eine Verbindung mit einer Anwendung oder einem Dienst herstellt. [Weitere Informationen zur Isolierung von Microsoft Defender ATP-Computern](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **Ermittlungs Paket sammeln** – sammelt Computer Informationen in einer ZIP-Datei. [Weitere Informationen zum Microsoft Defender ATP-Ermittlungs Paket](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
-- **Ausführen eines Antivirus-Scans** – führt eine vollständige Windows Defender-Antivirus-Überprüfung auf dem Computer aus.
-- **Einleitung einer Untersuchung** – initiiert eine [automatisierte Untersuchung](mtp-autoir.md) auf dem Computer
+#### <a name="actions-on-devices"></a>Aktionen auf Geräten
+Diese Aktionen werden auf Geräte in der `DeviceId` Spalte der Abfrageergebnisse angewendet:
+- **Isolier Gerät** – mit Microsoft Defender ATP wird die vollständige Netzwerkisolation angewendet, sodass das Gerät nicht mit einer Anwendung oder einem Dienst verbunden werden kann. [Weitere Informationen zur Isolierung von Microsoft Defender ATP-Computern](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **Ermittlungs Paket sammeln** – sammelt Geräteinformationen in einer ZIP-Datei. [Weitere Informationen zum Microsoft Defender ATP-Ermittlungs Paket](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **Ausführen eines Antivirus-Scans** – führt eine vollständige Windows Defender-Antivirus-Überprüfung auf dem Gerät aus.
+- **Einleitung einer Untersuchung** – initiiert eine [automatisierte Untersuchung](mtp-autoir.md) auf dem Gerät
+- **App-Ausführung einschränken** – legt Einschränkungen für das Gerät fest, damit nur Dateien ausgeführt werden können, die mit einem von Microsoft ausgestellten Zertifikat signiert sind. [Weitere Informationen zu app-Einschränkungen mit Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Aktionen für Dateien
-Wenn diese Option ausgewählt ist, wird die **Quarantänedatei** -Aktion für Dateien `SHA1`in `InitiatingProcessSHA1`der `SHA256`,, `InitiatingProcessSHA256` oder Spalte der Abfrageergebnisse ausgeführt. Mit dieser Aktion wird die Datei von Ihrem aktuellen Speicherort gelöscht und eine Kopie in Quarantäne platziert.
+Wenn diese Option ausgewählt ist, können Sie die Aktion " **Quarantänedatei** " auf Dateien in der `SHA1` , `InitiatingProcessSHA1` , `SHA256` oder `InitiatingProcessSHA256` Spalte der Abfrageergebnisse anwenden. Mit dieser Aktion wird die Datei von Ihrem aktuellen Speicherort gelöscht und eine Kopie in Quarantäne platziert.
+
+#### <a name="actions-on-users"></a>Aktionen für Benutzer
+Wenn diese Option ausgewählt ist, wird die Aktion **Benutzer als kompromittiert markieren** für Benutzer in `AccountObjectId` der `InitiatingProcessAccountObjectId` Spalte, oder der `RecipientObjectId` Abfrageergebnisse verwendet. Mit dieser Aktion wird die Benutzer Risikostufe in Azure Active Directory auf "hoch" festgelegt, sodass entsprechende [Identitätsschutz Richtlinien](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)ausgelöst werden.
 
 > [!NOTE]
 > Die Aktion zulassen oder blockieren für benutzerdefinierte Erkennungsregeln wird derzeit von Microsoft Threat Protection nicht unterstützt.
@@ -148,7 +151,7 @@ Sie können die Liste der vorhandenen benutzerdefinierten Erkennungsregeln anzei
 
 ### <a name="view-existing-rules"></a>Anzeigen vorhandener Regeln
 
-Um alle vorhandenen benutzerdefinierten Erkennungsregeln anzuzeigen, navigieren Sie zu**benutzerdefinierten**Erkennungen für die **Suche** > . Auf der Seite werden alle Regeln mit den folgenden Ausführungsinformationen aufgelistet:
+Um alle vorhandenen benutzerdefinierten Erkennungsregeln anzuzeigen, navigieren **Hunting**Sie zu  >  **benutzerdefinierten**Erkennungen für die Suche. Auf der Seite werden alle Regeln mit den folgenden Ausführungsinformationen aufgelistet:
 
 - **Letzte Ausführung** : beim letzten Ausführen einer Regel, um nach Abfrage Übereinstimmungen zu suchen und Warnungen zu generieren
 - **Status der letzten Ausführung** – gibt an, ob eine Regel erfolgreich ausgeführt wurde
@@ -157,7 +160,7 @@ Um alle vorhandenen benutzerdefinierten Erkennungsregeln anzuzeigen, navigieren 
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Anzeigen von Regeldetails, Regel ändern und Ausführen einer Regel
 
-Wenn Sie umfassende Informationen zu einer **benutzerdefinierten Erkennungs** > Regel anzeigen möchten, wählen Sie in der Liste der Regeln unter**benutzerdefinierte**Erkennungen den Namen der Regel aus. Dadurch wird eine Seite zur benutzerdefinierten Erkennungsregel mit allgemeinen Informationen zur Regel geöffnet, einschließlich der Details der Warnung, des Ausführungsstatus und des Bereichs. Außerdem wird die Liste der ausgelösten Warnungen und ausgelösten Aktionen bereitgestellt.
+Wenn Sie umfassende Informationen zu einer **benutzerdefinierten Erkennungs**Regel anzeigen möchten, wählen Sie in der Liste der Regeln unter  >  **benutzerdefinierte**Erkennungen den Namen der Regel aus. Dadurch wird eine Seite zur benutzerdefinierten Erkennungsregel mit allgemeinen Informationen zur Regel geöffnet, einschließlich der Details der Warnung, des Ausführungsstatus und des Bereichs. Außerdem wird die Liste der ausgelösten Warnungen und ausgelösten Aktionen bereitgestellt.
 
 ![Seite "Details zur benutzerdefinierten Erkennungsregel"](../../media/custom-detection-details.png)<br>
 *Details der benutzerdefinierten Erkennungsregel*
@@ -167,19 +170,19 @@ Auf dieser Seite können Sie auch die folgenden Aktionen für die Regel ausführ
 - **Ausführen** – die Regel wird sofort ausgeführt. Dadurch wird auch das Intervall für die nächste Ausführung zurückgesetzt.
 - **Bearbeiten** – Ändern der Regel, ohne die Abfrage zu ändern
 - **Abfrage ändern** – Bearbeiten der Abfrage in erweiterter Suche
-- **Aktivieren Deaktivieren –** Aktivieren der Regel oder Beenden der Ausführung**Turn off**  / 
+- **Einschalten**  /  **Deaktivieren** – Aktivieren der Regel oder Beenden der Ausführung
 - **Delete** – deaktivieren Sie die Regel, und entfernen Sie Sie.
 
 ### <a name="view-and-manage-triggered-alerts"></a>Anzeigen und Verwalten von ausgelösten Warnungen
 
-Wechseln Sie im Bildschirm Regel**Details (** > **benutzerdefinierte Erkennungs Erkennungen** > **[Regelname]**) zu **ausgelöste Warnungen** , um die Liste der Warnungen anzuzeigen, die von Übereinstimmungen mit der Regel generiert wurden. Wählen Sie eine Warnung aus, um detaillierte Informationen zu dieser Warnung anzuzeigen, und führen Sie die folgenden Aktionen für diese Warnung aus:
+Wechseln Sie im Bildschirm Regel**Details (**  >  **benutzerdefinierte Erkennungs Erkennungen**  >  **[Regelname]**) zu **ausgelöste Warnungen** , um die Liste der Warnungen anzuzeigen, die von Übereinstimmungen mit der Regel generiert wurden. Wählen Sie eine Warnung aus, um detaillierte Informationen zu dieser Warnung anzuzeigen, und führen Sie die folgenden Aktionen für diese Warnung aus:
 
 - Verwalten der Warnung durch Festlegen des Status und der Klassifizierung (true oder false Alert)
 - Verknüpfen der Warnung mit einem Vorfall
 - Ausführen der Abfrage, die die Warnung bei Advanced Hunting ausgelöst hat
 
 ### <a name="review-actions"></a>Überprüfen von Aktionen
-Wechseln Sie im Bildschirm Regel**Details (** > **benutzerdefinierte Erkennungs Erkennungen** > **[Regelname]**) zu **ausgelöste Aktionen** , um die Liste der ausgeführten Aktionen anzuzeigen, die auf Übereinstimmungen mit der Regel basieren.
+Wechseln Sie im Bildschirm Regel**Details (**  >  **benutzerdefinierte Erkennungs Erkennungen**  >  **[Regelname]**) zu **ausgelöste Aktionen** , um die Liste der ausgeführten Aktionen anzuzeigen, die auf Übereinstimmungen mit der Regel basieren.
 
 >[!TIP]
 >Um Informationen schnell anzuzeigen und Aktionen für ein Element in einer Tabelle durchführen zu können, verwenden Sie die Auswahlspalte [&#10003;] Links in der Tabelle.

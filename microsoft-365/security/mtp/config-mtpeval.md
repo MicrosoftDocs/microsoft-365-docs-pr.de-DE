@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330853"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498459"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurieren von Microsoft Threat Protection-Säulen für Ihre Testlaborumgebung
 
@@ -67,7 +67,7 @@ Microsoft Threat Protection besteht aus vier Pfeilern. Auch wenn ein Pfeiler ber
 In diesem Abschnitt erhalten Sie Informationen zu configure:
 -   Office 365 Advanced Threat Protection
 -   Azure Advanced Threat Protection 
--   Microsoft Cloud App Security
+-   Microsoft Cloud App-Sicherheit
 -   Microsoft Defender Advanced Threat Protection
 
 
@@ -238,6 +238,9 @@ Klicken Sie auf **Weiter**.
 <br>![Schaltfläche "Bild of_Save Einstellungen", auf die Sie klicken müssen](../../media/mtp-eval-72.png) <br>
 
 ## <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
+>[!NOTE]
+>Ab dem 1. Juni 2020 Microsoft Threat Protection-Features für alle berechtigten Mandanten automatisch aktiviert. Weitere Informationen finden Sie [in diesem Artikel Microsoft Tech Community on License Berechtigung](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
+<br>
 1. Wechseln Sie zu [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigieren Sie zu **Einstellungen** , und wählen Sie dann **Microsoft Threat Protection**aus.
 <br>![Screenshot der Option "Image of_Microsoft Threat Protection" auf der Seite "Microsoft 365 Security Center Settings"](../../media/mtp-eval-72b.png) <br>
 

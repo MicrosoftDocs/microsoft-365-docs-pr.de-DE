@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503983"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515867"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -48,7 +48,7 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 2. Wählen Sie **Microsoft Threat Protection**aus.
 
 
-3. **Vorschau-Features** > aktivieren aktivieren Sie die**Vorschaufunktionen**. 
+3. **Vorschau-Features**aktivieren aktivieren Sie die  >  **Vorschaufunktionen**. 
 
 3. Klicken Sie auf **Speichern**.
 
@@ -57,6 +57,8 @@ Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, das
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[Benutzerdefinierte Erkennungen](custom-detections-overview.md)** – verwenden Sie erweiterte Suchabfragen, um Regeln zu erstellen, die in regelmäßigen Intervallen automatisch nach Verstößen und anderen interessanten Elementen suchen. Übereinstimmungen mit den Abfragen lösen Warnungen und die angegebenen Antwort Aktionen aus.
-
 - **[Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)** – erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
+
+- **[EmailPostDeliveryEvents-Tabelle](advanced-hunting-emailpostdeliveryevents-table.md)** – verwenden Sie diese Tabelle, um [Erweiterte Jagd](advanced-hunting-overview.md) Abfragen zu erstellen, die nach der Zustellung an Empfängerpostfächer nach Aktionen suchen, die auf e-Mails durchgeführt wurden.
+
+- **[Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md)** – verwenden Sie in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um umfassende Dateiinformationen zu integrieren.

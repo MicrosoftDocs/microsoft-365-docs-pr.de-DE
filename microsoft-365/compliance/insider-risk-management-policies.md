@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292502"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515880"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -49,12 +49,27 @@ Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatore
 
 ### <a name="data-leaks"></a>Datenlecks
 
-Das Schützen von Daten und das verhindern von Datenverlusten stellt für die meisten Organisationen eine ständige Herausforderung dar, insbesondere mit dem schnellen Wachstum neuer Daten, die von Mitarbeitern, Geräten und Diensten erstellt wurden. Mitarbeiter sind befugt, Informationen über Dienste und Geräte hinweg zu erstellen, zu speichern und gemeinsam zu nutzen, mit denen die Verwaltung von Datenverlusten immer komplexer und schwieriger wird. Datenlecks können eine versehentliche Übernutzung von Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. Diese Vorlage priorisiert die Echtzeiterkennung verdächtiger SharePoint Online von Daten Downloads, die Datei-und Ordnerfreigabe, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste.
+Das Schützen von Daten und das verhindern von Datenverlusten stellt für die meisten Organisationen eine ständige Herausforderung dar, insbesondere mit dem schnellen Wachstum neuer Daten, die von Mitarbeitern, Geräten und Diensten erstellt wurden. Mitarbeiter sind befugt, Informationen über Dienste und Geräte hinweg zu erstellen, zu speichern und gemeinsam zu nutzen, mit denen die Verwaltung von Datenverlusten immer komplexer und schwieriger wird. Datenlecks können eine versehentliche Übernutzung von Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. In Verbindung mit einer zugewiesenen DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) priorisiert diese Vorlage die Echtzeiterkennung verdächtiger SharePoint Online von Daten Downloads, die Datei-und Ordnerfreigabe, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste.
 
->[!IMPORTANT]
->Bei Verwendung dieser Vorlage müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren. Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
->
->Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas.
+Bei Verwendung von **Datenlecks** -Vorlage müssen Sie eine DLP-Richtlinie zuweisen, um Indikatoren in der Insider Risiko Richtlinie für Warnungen mit hohem Schweregrad in Ihrer Organisation auszulösen. Wenn eine DLP-Richtlinienregel zum Office 365 Überwachungsprotokoll hinzugefügt wird, wird eine Warnung mit hohem Schweregrad generiert, und die mit dieser Vorlage erstellten Insider Risikorichtlinien untersuchen automatisch die DLP-Warnung mit hohem Schweregrad. Wenn die Warnung einen in-Scope-Benutzer enthält, der in der Insider Risiko Richtlinie definiert ist, wird die Warnung von der Insider Risiko Richtlinie als neue Warnung verarbeitet und einem Insider risikoschweregrad und Risikobewertung zugeordnet. Diese Warnung kann im Rahmen des Insider Risk Management-Workflows ausgewertet und bei Bedarf zu einem Insider Risikomanagement-Fall hinzugefügt werden.
+
+Beachten Sie beim Erstellen oder Ändern von DLP-Richtlinien für die Verwendung mit Richtlinien für Insider-Risikomanagement die folgenden Richtlinien:
+
+- Priorisieren von Daten zugrunde liegenden Ereignissen und selektives Zuweisen von **Vorfalls Berichten** zu *hohen* Einstellungen beim Konfigurieren von Regeln in ihren DLP-Richtlinien. Wenn Sie beispielsweise vertrauliche Dokumente an einen bekannten Mitbewerber senden möchten, sollte dies ein *hohes* Ereignis bei der Warnstufe für die Alarmstufe sein. Die übermäßige Zuweisung der *hohen* Ebene in den **Vorfall Berichts** Einstellungen in anderen DLP-Richtlinien Regeln kann das Rauschen im Warnungs Workflow für Insider Risken verbessern und es erschweren, dass Ihre Daten Ermittler und Analysten diese Warnungen ordnungsgemäß auswerten. Durch die Zuweisung *hoher* Warnungsstufen zu Blockierungs Aktivitäten in DLP-Richtlinien ist es beispielsweise schwieriger, wirklich riskante Benutzerverhalten und-Aktivitäten zu bewerten.
+- Stellen Sie sicher, dass Sie die in-Scope-Benutzer in den DLP-und Insider Risk Management-Richtlinien verstehen und ordnungsgemäß konfigurieren. Nur Benutzer, die im Rahmen von Richtlinien für das Insider Risikomanagement mithilfe der **Datenlecks** -Vorlage definiert sind, werden mit hohem Schweregrad DLP-Richtlinienwarnungen verarbeitet. Darüber hinaus werden nur Benutzer, die in einer Regel für eine DLP-Warnung mit hohem Schweregrad in einem Bereich definiert sind, von der Richtlinie für den Umgang mit Insider Risiken untersucht. Es ist wichtig, dass Sie nicht unwissentlich in ihrer DLP-und Insider-Risiko Richtlinie auf widersprüchliche Weise Benutzer in einem Bereich konfigurieren.
+
+     Wenn beispielsweise ihre DLP-Richtlinien Regeln nur auf Benutzer im Vertriebsteam beschränkt sind und die Insider Risiko Richtlinie, die aus der **Datenlecks** -Vorlage erstellt wurde, alle Benutzer als in-Scope definiert hat, verarbeitet die Insider Risiko Richtlinie nur DLP-Warnungen mit hohem Schweregrad für die Benutzer im Verkaufsteam. Die Insider Risiko Richtlinie erhält keine DLP-Warnungen hoher Priorität für Benutzer, die verarbeitet werden sollen, die in den DLP-Regeln in diesem Beispiel nicht definiert sind. Wenn Ihre Richtlinie für das Insider Risikomanagement, die aus der **Datenlecks** -Vorlage erstellt wurde, auf die Benutzer im Vertriebsteam beschränkt ist und die zugewiesene DLP-Richtlinie auf alle Benutzer beschränkt ist, verarbeitet die Insider Risiko Richtlinie nur DLP-Warnungen mit hohem Schweregrad für Mitglieder des Vertriebsteams. Die Richtlinie für das Insider Risikomanagement ignoriert die DLP-Warnungen mit hohem Schweregrad für alle Benutzer, die sich nicht im Verkaufs Team befinden.
+
+- Stellen Sie sicher, dass die Einstellung " **vorfallberichte** " in der für diese Insider Risikomanagement-Vorlage verwendeten DLP-Richtlinie für Warnungen mit *hohem* Schweregrad konfiguriert ist. Der *hohe* Schweregrad ist der auslösende Indikator, und Warnungen im Hinblick auf Insider Risikomanagement werden nicht aus Regeln in DLP-Richtlinien generiert, wobei das Feld **vorfallberichte** auf *niedrig* oder *Mittel*festgelegt ist.
+
+    ![Warnungseinstellung für DLP-Richtlinie](../media/insider-risk-DLP-policy-high-severity.png)
+
+     >[!NOTE]
+     >Wenn Sie eine neue DLP-Richtlinie mithilfe der integrierten Vorlagen erstellen, müssen Sie die Option **Advanced DLP Rules erstellen oder anpassen** auswählen, um die Einstellung **vorfallberichte** für den *hohen* Schweregrad zu konfigurieren.
+
+Für jede Richtlinie für Insider-Risikomanagement, die aus der **Datenlecks** -Vorlage erstellt wurde, kann nur eine DLP-Richtlinie zugewiesen werden. Wenn Sie über mehr als eine DLP-Richtlinie verfügen, für die Warnungen mit hohem Schweregrad von einer Richtlinie für den Umgang mit Insider Risiken verarbeitet werden sollen, müssen Sie pro DLP-Richtlinie eine separate Richtlinie für Insider-Risikomanagement erstellen.
+
+Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas.
 
 ### <a name="offensive-language-in-email"></a>Anstößige Sprache in e-Mail
 
@@ -66,7 +81,7 @@ Die Einstellungen für Insider Risiken gelten unabhängig von der Vorlage, die S
 
 ### <a name="privacy"></a>Datenschutz
 
-Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen ist wichtig und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Insider Risikowarnungen beitragen. Bei Übereinstimmungen mit Insider Risikorichtlinien können Sie eine der folgenden Einstellungen auswählen:
+Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen ist wichtig und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Insider Risikowarnungen beitragen. Für Benutzer, denen eine Insider Risiko Richtlinie zugeordnet ist, können Sie eine der folgenden Einstellungen auswählen:
 
 - **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Daten Ermittler und Prüfer sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Insider Risikomanagement-Erfahrung angezeigt. Wenn Sie diese Einstellung auswählen, werden alle Benutzer mit aktuellen und früheren Richtlinien Übereinstimmungen anonymisiert und gilt für alle Richtlinien. Benutzerprofilinformationen in der Warnung zu Insider Risiken und Fall Details sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
 - **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Warnungen und Fälle angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Warnungen und Fälle im Insider Risikomanagement angezeigt.
@@ -110,9 +125,9 @@ Wählen Sie eine der folgenden Einstellungen aus, um die Empfindlichkeit der Kla
 
 Benutzeraktivitäten, die von Insider Risikorichtlinien erkannt werden, werden mit einem bestimmten Risikoergebnis versehen, das wiederum den Warnungsschweregrad (niedrig, Mittel, hoch) bestimmt. Standardmäßig wird eine bestimmte Anzahl von Warnungen mit niedrigem, mittlerem und hohem Schweregrad generiert, aber Sie können die Lautstärke entsprechend Ihren Anforderungen erweitern oder verringern. Wählen Sie eine der folgenden Einstellungen aus, um die Anzahl der Warnungen für alle Richtlinien für das Insider Risikomanagement anzupassen:
 
-- **Weniger Warnungen**: Sie sehen alle Warnungen mit hohem Schweregrad, weniger Warnungen mittlerer Dringlichkeit und keine niedrigen Schweregrade. Dies bedeutet, dass Sie möglicherweise einige echte positive Ergebnisse verpassen.
+- **Weniger Warnungen**: Sie sehen alle Warnungen mit hohem Schweregrad, weniger Warnungen mittlerer Dringlichkeit und keine niedrigen Schweregrade. Diese Einstellungsebene bedeutet, dass Sie möglicherweise einige echte positive Ergebnisse verpassen.
 - **Standard Volume**: alle Warnungen mit hohem Schweregrad und eine ausgewogene Anzahl mittlerer und niedriger Dringlichkeits Warnungen werden angezeigt.
-- **Weitere Warnungen**: Es werden alle Warnungen bei mittlerer und hoher Dringlichkeit sowie Warnungen mit niedrigem Schweregrad angezeigt. Dies kann zu mehr falsch positiven Ergebnissen führen.
+- **Weitere Warnungen**: Es werden alle Warnungen bei mittlerer und hoher Dringlichkeit sowie Warnungen mit niedrigem Schweregrad angezeigt. Diese Einstellungsebene kann zu mehr falsch positiven Ergebnissen führen.
 
 ## <a name="create-a-new-policy"></a>Erstellen einer neuen Richtlinie
 

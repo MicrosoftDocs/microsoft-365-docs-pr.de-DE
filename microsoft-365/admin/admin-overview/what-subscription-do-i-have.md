@@ -25,10 +25,10 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite Abonnements wechseln.
 ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "44431605"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
