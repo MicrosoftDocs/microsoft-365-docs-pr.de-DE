@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: b1a5bd2f50542a9c76c32da7465e80e371238560
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 99441695ad069ffe15f5347991d9dd65976eb23e
+  ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44399752"
+  ms.lasthandoff: 06/02/2020
+  ms.locfileid: "44498269"
 landingContent:
 - title: Überwachen des Status unseres Diensts
   linkLists:
@@ -34,6 +34,8 @@ landingContent:
       url: update-phone-number-and-email-address.md
     - text: Einrichten von Freigabeoptionen
       url: release-options-in-office-365.md
+    - text: Anzeigen oder ausblenden neuer Features
+      url: show-hide-new-features.md
 - title: Blockieren des Benutzerzugriffs und Sichern von Daten
   linkLists:
   - linkListType: how-to-guide
@@ -56,7 +58,7 @@ landingContent:
       url: centralized-deployment-of-add-ins.md
     - text: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
       url: manage-deployment-of-add-ins.md
-- title: Microsoft Teams
+- title: Microsoft Teams
   linkLists:
   - linkListType: overview
     links:
