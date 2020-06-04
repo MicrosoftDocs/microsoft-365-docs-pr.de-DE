@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322171"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545934"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Was Microsoft-Sicherheitsbewertung in Kürze verfügbar ist
 
@@ -30,6 +30,26 @@ Um [Microsoft-Sicherheitsbewertung](microsoft-secure-score-new.md) zu einem bess
 
 Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score-new.md#whats-new).
 
-## <a name="may-2020"></a>Mai 2020
+## <a name="june-2020"></a>Juni 2020
 
-Derzeit keine Änderungen geplant
+### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Entfernen von Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection
+
+* Aktivieren von Regeln für Angriffsflächen Reduzierung
+
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Hinzufügen von Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection
+
+* Blockieren des Erstellens von untergeordneten Prozessen durch Adobe Reader
+* Verwenden von erweitertem Schutz gegen Ransomware
+* Verhindern, dass alle Office-Anwendungen untergeordnete Prozesse erstellen
+* Verhindern der Erstellung von ausführbaren Inhalten durch Office-Anwendungen
+* Blockieren von JavaScript oder VBScript beim Starten heruntergeladener ausführbarer Inhalte
+* Blockieren der Ausführung von potenziell verborgenen Skripts
+* Blockieren von ausführbaren Inhalten aus dem e-Mail-Client und Webmail
+* Blockieren der Office-Kommunikationsanwendung beim Erstellen von untergeordneten Prozessen
+* Blockieren von nicht vertrauenswürdigen und nicht signierten Prozessen, die von USB ausgeführt werden
+* Block Persistenz durch WMI-Ereignisabonnement
+* Verhindern, dass Office-Anwendungen Code in andere Prozesse einfügen
+* Verhindern der Ausführung von ausführbaren Dateien, es sei denn, Sie entsprechen einer Prävalenz, einem Alter oder einem vertrauenswürdigen Listen Kriterium
+* Blockieren von Prozess Kreationen, die von PSExec-und WMI-Befehlen stammen
+* Blockieren des Diebstahls von Anmeldeinformationen vom Windows Local Security Authority Subsystem (Lsass. exe)
+* Blockieren von Win32-API-Aufrufen aus Office-Makros

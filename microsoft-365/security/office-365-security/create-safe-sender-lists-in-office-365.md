@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209535"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545946"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -39,7 +39,7 @@ Nachrichtenfluss Regeln ermöglichen die größtmögliche Flexibilität, um sich
 > [!IMPORTANT]
 > • Achten Sie darauf, *alle* Ausnahmen sorgfältig zu überwachen, die Sie zur Spamfilterung mithilfe sicherer Absenderlisten verwenden. <br/><br/> • Sie können zwar sichere Absenderlisten verwenden, um falsch positive Ergebnisse zu unterstützen (gute e-Mail-Nachrichten, die als Spam gekennzeichnet sind), aber Sie sollten die Verwendung sicherer Absenderlisten als eine vorübergehende Lösung in Betracht nehmen, die möglichst vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen bei der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie die Verwendung von Listen sicherer Absender zur Verwaltung von falsch positiven Ergebnissen beharren, müssen Sie wachsam sein und das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben. <br/><br/> • Wenn Sie zulassen möchten, dass eine Domäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) hinzufügen. <br/><br/> • EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.
 
-Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Create Block Sender Lists in EoP](create-block-sender-lists-in-office-365.md).
+Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Empfohlen Verwenden von Nachrichtenfluss Regeln
 
@@ -66,13 +66,13 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
 
    - **Der Absender** \> **ist intern/extern** \> **Außerhalb der Organisation**: Diese Bedingung ist implizit, aber Sie kann nicht verwendet werden, um lokale e-Mail-Server zu berücksichtigen, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
 
-   - **Der Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter** \> \<Schlüsselwörter \> : Wenn Sie die Nachrichten nach Stichwörtern oder Ausdrücken in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter als Bedingung verwenden.
+   - **Der Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter** \> \<keywords\>: Wenn Sie die Nachrichten nach Stichwörtern oder Ausdrücken in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter als Bedingung verwenden.
 
 4. **Aktion**: beide Aktionen in der Regel konfigurieren:
 
    a. **Ändern der Nachrichteneigenschaften** \> **Festlegen der SCL-Bewertung (Spam Confidence Level)** \> **Umgehen Sie die Spamfilterung**.
 
-   b. **Nachrichtenkopfzeile** \> **enthält eines dieser Wörter** \> **HeaderName**: \< CustomHeaderName \> - **Headerwert**: \< CustomHeaderValue \> .
+   b. **Nachrichtenkopfzeile** \> **enthält eines dieser Wörter** \> **Kopfzeilenname**: \<CustomHeaderName\> **Kopfzeilenwert**: \<CustomHeaderValue\> .
 
       Beispiel: `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Wenn in der Regel mehr als eine Domäne vorhanden ist, können Sie den Kopfzeilentext nach Bedarf anpassen.
 
@@ -103,7 +103,7 @@ Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, 
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Zugelassene Absenderlisten oder zugelassene Domänenlisten verwenden
 
-Die am wenigsten wünschenswerte Option besteht darin, die Liste Zugelassene Absender oder zugelassene Domänen in den Antispam-Richtlinien zu verwenden. Sie sollten diese Option möglichst vermeiden, da Absender den gesamten Spam-, spoof-und Phishing-Schutz *sowie die Absender* Authentifizierung (SPF, DKIM, DMARC) umgehen. Diese Methode wird am besten nur für temporäre Tests verwendet. Die detaillierten Schritte finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md) Topic.
+Die am wenigsten wünschenswerte Option besteht darin, die Liste Zugelassene Absender oder zugelassene Domänen in den Antispam-Richtlinien zu verwenden. Sie sollten diese Option möglichst vermeiden, da Absender den gesamten Spam-, spoof-und Phishing-Schutz *sowie die Absender* Authentifizierung (SPF, DKIM, DMARC) umgehen. Diese Methode eignet sich nur für temporäre Tests. Die detaillierten Schritte finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md) Topic.
 
 Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 
@@ -118,7 +118,7 @@ Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und d
 
 - Die `5322.From` (auch bekannt als **von** -Adresse oder P2-Absender bezeichnet) ist die e-Mail-Adresse im Feld **von** -Kopfzeile und die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird.
 
-Häufig sind die `5321.MailFrom` und `5322.From` -Adressen identisch (Kommunikation zwischen Mensch und Person). Wenn allerdings die E-Mail im Auftrag eines anderen Benutzers gesendet wird, sind die Adressen häufig verschieden. Dies ist am häufigsten bei Massen-E-Mail-Nachrichten der Fall.
+Häufig sind die `5321.MailFrom` und `5322.From` -Adressen identisch (Kommunikation zwischen Mensch und Person). Wenn e-Mails jedoch im Namen einer anderen Person gesendet werden, können die Adressen unterschiedlich sein. Dies geschieht am häufigsten bei Massen-e-Mail-Nachrichten.
 
 Nehmen wir beispielsweise an, dass die Blue Yonder Airlines Margie es Travel angeheuert hat, um Ihre e-Mail-Werbung zu senden. Die Nachricht, die Sie in Ihrem Posteingang erhalten, verfügt über die folgenden Eigenschaften:
 

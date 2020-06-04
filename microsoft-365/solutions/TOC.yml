@@ -12,8 +12,9 @@
     - name: Übersicht
       href: foundation-solutions-overview.md
     - name: Fördern von Remotemitarbeitern mit Microsoft 365
-      href: empower-people-to-work-remotely.md
       items:
+        - name: Übersicht
+          href: empower-people-to-work-remotely.md
         - name: Schritt 1. Erhöhte Anmeldesicherheit
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: "Schritt\_2: Bereitstellen von Remotezugriff"

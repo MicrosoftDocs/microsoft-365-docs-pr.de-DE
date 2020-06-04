@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515880"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534927"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -67,7 +67,7 @@ Beachten Sie beim Erstellen oder Ändern von DLP-Richtlinien für die Verwendung
      >[!NOTE]
      >Wenn Sie eine neue DLP-Richtlinie mithilfe der integrierten Vorlagen erstellen, müssen Sie die Option **Advanced DLP Rules erstellen oder anpassen** auswählen, um die Einstellung **vorfallberichte** für den *hohen* Schweregrad zu konfigurieren.
 
-Für jede Richtlinie für Insider-Risikomanagement, die aus der **Datenlecks** -Vorlage erstellt wurde, kann nur eine DLP-Richtlinie zugewiesen werden. Wenn Sie über mehr als eine DLP-Richtlinie verfügen, für die Warnungen mit hohem Schweregrad von einer Richtlinie für den Umgang mit Insider Risiken verarbeitet werden sollen, müssen Sie pro DLP-Richtlinie eine separate Richtlinie für Insider-Risikomanagement erstellen.
+Für jede Richtlinie für Insider-Risikomanagement, die aus der **Datenlecks** -Vorlage erstellt wurde, kann nur eine DLP-Richtlinie zugewiesen werden. Sie sollten eine dedizierte DLP-Richtlinie erstellen, die die verschiedenen Aktivitäten kombiniert, die Sie erkennen möchten, und als auslösende Indikatoren für Insider Risikorichtlinien fungieren, die die Vorlage **Datenlecks** verwenden.
 
 Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas.
 

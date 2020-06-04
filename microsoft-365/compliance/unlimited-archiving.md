@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatisch expandierende Archivierung, die unbegrenzten Archivspeicher für Exchange Online Postfächer bereitstellt.
-ms.openlocfilehash: 584502092e04822a91bf6d04c77daa277ed70547
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633400"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534917"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Übersicht über die unbeschränkte Archivierung
 
@@ -57,7 +57,7 @@ Hier finden Sie eine kurze Übersicht über den Prozess.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Was wird auf den zusätzlichen Archivspeicherplatz verschoben?
 
-Um den automatisch expandierenden Archivspeicher effizient zu nutzen, werden Ordner möglicherweise verschoben. Microsoft 365 legt fest, welche Ordner verschoben werden, wenn dem Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, werden in einigen Fällen automatisch ein oder mehrere Unterordner erstellt, und Elemente aus dem ursprünglichen Ordner werden an diese Ordner verteilt, um den Verschiebungsprozess zu vereinfachen. Wenn Sie den Archivteil der Ordnerliste in Outlook anzeigen, werden diese Unterordner im ursprünglichen Ordner angezeigt.  Die Benennungskonvention, die Microsoft 365 zum Benennen dieser Unterordner verwendet, ist ** \<Folder\>Name _yyyy (erstellt auf Mmm dd, yyyy h_mm)**, wobei Folgendes gilt:
+Um den automatisch expandierenden Archivspeicher effizient zu nutzen, werden Ordner möglicherweise verschoben. Microsoft 365 legt fest, welche Ordner verschoben werden, wenn dem Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, werden in einigen Fällen automatisch ein oder mehrere Unterordner erstellt, und Elemente aus dem ursprünglichen Ordner werden an diese Ordner verteilt, um den Verschiebungsprozess zu vereinfachen. Wenn Sie den Archivteil der Ordnerliste in Outlook anzeigen, werden diese Unterordner im ursprünglichen Ordner angezeigt.  Die Benennungskonvention, die Microsoft 365 zum Benennen dieser Unterordner verwendet, ist ** \<folder name\> _yyyy (erstellt auf Mmm dd, yyyy h_mm)**, wobei Folgendes gilt:
 
 - **yyyy** ist das Jahr, in dem die Nachrichten im Ordner empfangen wurden.
 
@@ -90,7 +90,7 @@ Hier sind einige Punkte, die Sie berücksichtigen sollten, wenn Sie Outlook oder
 
 - Sie können auf einen beliebigen Ordner im Archivpostfach zugreifen, einschließlich derer, die in den automatisch erweiterten Speicherbereich verschoben wurden.
 
-- Sie können nur nach Elementen suchen, die in einen zusätzlichen Speicherbereich verschoben wurden, indem Sie den Ordner selbst durchsuchen. Dies bedeutet, dass Sie den Archivordner in der Ordnerliste auswählen müssen, um die Option **Aktueller Ordner** als Suchbereich auszuwählen. Wenn ein Ordner in einem automatisch erweiterten Speicherbereich Unterordner enthält, müssen Sie auch jeden Unterordner einzeln durchsuchen.
+- Die Suche nach automatisch erweiterter Archivierung ist nur im Outlook-Desktop als Insider-Build 16.0.12716.10000 verfügbar. Die Suche ist in Outlook für das Internet verfügbar. Ähnlich wie Online Archive können Sie auch nach Elementen suchen, die in einen zusätzlichen Speicherbereich verschoben wurden, indem Sie den Ordner selbst durchsuchen. Dies bedeutet, dass Sie den Archivordner in der Ordnerliste auswählen müssen, um die Option **Aktueller Ordner** als Suchbereich auszuwählen. Wenn ein Ordner in einem automatisch erweiterten Speicherbereich Unterordner enthält, müssen Sie auch jeden Unterordner einzeln durchsuchen.
 
 - Elementanzahlen in Outlook und Lese-/ungelesene Zählungen (in Outlook und Outlook im Web) in einem automatisch erweiterten Archiv sind möglicherweise nicht korrekt.
 
