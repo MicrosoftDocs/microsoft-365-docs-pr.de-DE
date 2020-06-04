@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie mithilfe von Aufbewahrungsbezeichnungen Daten organisationsweit für die Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen können. Sie können Aufbewahrungsbezeichnungen auch verwenden, um eine Lösung zur Datensatzverwaltung für Microsoft 365 zu implementieren.
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432242"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545967"
 ---
 # <a name="learn-about-retention-labels"></a>Informationen zu Aufbewahrungsbezeichnungen
 
@@ -129,7 +129,9 @@ Darüber hinaus hat eine Aufbewahrungsbezeichnung zwei Aufbewahrungsoptionen, di
   
 - Auslösen einer Löschungsprüfung am Ende des Aufbewahrungszeitraums, damit SharePoint- und OneDrive-Dokumente überprüft werden müssen, bevor sie gelöscht werden können. Weitere Informationen finden Sie unter [Löschungsprüfungen](disposition.md#disposition-reviews).
     
-- Beginnen des Aufbewahrungszeitraums zu dem Zeitpunkt, an dem der Inhalt mit der Bezeichnung versehen wurde, und nicht ausgehend vom Alter des Inhalts oder dem Zeitpunkt, zu dem er zuletzt geändert wurde. Diese Option gilt nur für Inhalte auf SharePoint-Websites und in OneDrive-Konten. Bei Exchange-E-Mails basiert der Aufbewahrungszeitraum immer auf dem Datum, an dem die Nachricht gesendet oder empfangen wurde, und zwar unabhängig davon, welche Option Sie hier auswählen.
+- Beginnen des Aufbewahrungszeitraums zu dem Zeitpunkt, an dem der Inhalt mit der Bezeichnung versehen wurde, und nicht ausgehend vom Alter des Inhalts oder dem Zeitpunkt, zu dem er zuletzt geändert wurde. Wenn Sie diese Option verwenden:
+    - Gilt sie nur für Inhalte auf SharePoint-Websites und in OneDrive-Konten. Bei Exchange-E-Mails basiert der Aufbewahrungszeitraum immer auf dem Datum, an dem die Nachricht gesendet oder empfangen wurde.
+    - Sie können den Aufbewahrungszeitraum nach dem Speichern der Bezeichnung nicht ändern.
     
 ![Aufbewahrungseinstellungen mit Optionen speziell für Bezeichnungen](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
