@@ -21,19 +21,20 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Rufen Sie den Bericht über die SharePoint-Websitenutzung ab, um zu erfahren, wie viele Dateien Benutzer in SharePoint-Websites speichern, wie viele aktiv verwendet werden und wie viel Speicher insgesamt verbraucht wird. '
-ms.openlocfilehash: 45614557710e05c600a3603d85462c4987022881
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a7fece8868ceb34cbcf356e23fd13006defa439
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387513"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560399"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-Berichte im Admin Center – Verwendung von SharePoint-Websites
 
 Als Microsoft 365-Administrator zeigt das Dashboard **Berichte** die Aktivitätsübersicht für verschiedene Produkte in Ihrer Organisation an. Hiermit können Sie einen Drilldown ausführen, um genauere Einblicke in die Aktivitäten für die einzelnen Produkte zu erhalten. Sie können beispielsweise eine allgemeine Übersicht über den Wert erhalten, den Sie von SharePoint erhalten, in Bezug auf die Gesamtzahl der Dateien, die Benutzer in SharePoint-Websites speichern, die Anzahl der aktiven Dateien und den Speicherplatz, der für alle diese Websites genutzt wird. Anschließend können Sie einen Drilldown zum SharePoint-Websiteverwendungsbericht durchführen, um die Trends und Details auf Websiteebene für alle Websites zu verstehen. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.
+Microsoft 365-Berichte im Admin Center werden für gcc High-und DoD-Mandanten nicht unterstützt.
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Wie erhalten Sie einen Bericht zur Verwendung von SharePoint-Websites
 

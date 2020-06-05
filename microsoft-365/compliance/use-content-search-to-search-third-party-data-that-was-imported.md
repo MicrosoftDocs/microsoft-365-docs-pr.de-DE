@@ -16,18 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen oder eine Abfrage zum Suchen nach bestimmten Drittanbieter-Datentypen zu erstellen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Drittanbieter-Datentypen zu durchsuchen, die Sie in Microsoft 365 importieren können.
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942968"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564968"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>Verwenden der Inhaltssuche zum Durchsuchen von importierten Daten von Drittanbietern
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die von einem benutzerdefinierten Partner Connector importiert wurden
 
-Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Security & Compliance Center verwenden, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um alle importierten Datenelemente eines Drittanbieters zu durchsuchen, oder Sie können eine Abfrage zum Durchsuchen bestimmter Drittanbieter-Datenelemente erstellen. Darüber hinaus können Sie auch eine abfragebasierte Aufbewahrungsrichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten zu speichern. 
+Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Security & Compliance Center verwenden, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um alle importierten Datenelemente eines Drittanbieters zu durchsuchen, oder Sie können eine Abfrage zum Durchsuchen bestimmter Drittanbieter-Datenelemente erstellen. Darüber hinaus können Sie auch eine abfragebasierte Aufbewahrungsrichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten zu speichern.
   
-Weitere Informationen zum Importieren von drittanbieterdaten und eine Liste der Drittanbieter-Datentypen, die Sie in Microsoft 365 importieren können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Office 365](work-with-partner-to-archive-third-party-data.md). 
+Weitere Informationen zur Zusammenarbeit mit einem Partner zum Importieren von drittanbieterdaten und einer Liste der Drittanbieter Datentypen, die Sie in Microsoft 365 importieren können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Office 365](work-with-partner-to-archive-third-party-data.md).
+
+> [!IMPORTANT]
+> Die Anleitungen in diesem Artikel gelten nur für drittanbieterdaten, die von einem benutzerdefinierten Partner Connector importiert wurden. Dieser Artikel gilt nicht für drittanbieterdaten, die mithilfe der [Drittanbieter-Daten Konnektoren](archiving-third-party-data.md#third-party-data-connectors) im Microsoft Compliance Center importiert werden.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Erstellen einer Abfrage zum Durchsuchen aller drittanbieterdaten
 
@@ -55,7 +58,7 @@ Um beispielsweise Facebook-Daten zu durchsuchen, die das Wort "Contoso" in der S
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie durchsuchen können, und der Wert `itemclass:` , der für die Message-Eigenschaft verwendet werden kann, um speziell nach diesem Typ von drittanbieterdaten zu suchen. Bei der Abfragesyntax wird die Groß-/Kleinschreibung nicht beachtet. 
+In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie durchsuchen können, und der Wert, der für die Message-Eigenschaft verwendet werden kann, `itemclass:` um speziell nach diesem Typ von drittanbieterdaten zu suchen. Bei der Abfragesyntax wird die Groß-/Kleinschreibung nicht beachtet. 
   
 |**Datentyp eines Drittanbieters**|**Wert für `itemclass:` Eigenschaft**|
 |:-----|:-----|
@@ -82,7 +85,7 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg-Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco- &amp; Chat-Anwesenheits Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Cisco-Chat- &amp; Anwesenheits Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

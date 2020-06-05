@@ -20,41 +20,73 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
-ms.openlocfilehash: 2d011fcb63e0ec9804ade62f9fdcd1dd95fbf798
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: fab3147b5226b2d69a8dac6d214da7efdd26def6
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210531"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564990"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
-Microsoft 365 ermöglicht Administratoren das Importieren und Archivieren von drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen in Postfächern in Ihrer Microsoft 365-Organisation. Beispiele für Drittanbieter-Datenquellen, die Sie in Microsoft 365 importieren können, umfassen die folgenden Dienste: 
-  
-- **Soziale Netzwerke:** Facebook, LinkedIn, Twitter und jammern
+Microsoft 365 ermöglicht Administratoren das Importieren und Archivieren von drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen in Postfächern in Ihrer Microsoft 365-Organisation mithilfe von Daten-Konnektoren. Ein Hauptvorteil der Verwendung von Daten Konnektoren zum Importieren und Archivieren von drittanbieterdaten in Microsoft 365 besteht darin, dass Sie verschiedene Microsoft 365-Kompatibilitätslösungen auf diese anwenden können, nachdem Sie importiert wurde. Auf diese Weise können Sie sicherstellen, dass die nicht-Microsoft-Daten Ihrer Organisation mit den Vorschriften und Standards in Ihrer Organisation übereinstimmen.
 
-- **Instant Messaging:** Yahoo Messenger und googletalk
+## <a name="third-party-data-connectors"></a>Daten-Connectoren von Drittanbietern
 
-- **Dokument Zusammenarbeit:** Box und Dropbox
+In der folgenden Tabelle sind die Drittanbieter-Daten-Konnektoren aufgeführt, die im Microsoft 365 Compliance Center verfügbar sind. In der Tabelle sind auch die Kompatibilitätslösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf drittanbieterdaten anwenden können. Im [nächsten Abschnitt](#overview-of-compliance-solutions-that-support-third-party-data) finden Sie eine ausführlichere Beschreibung der einzelnen Kompatibilitätslösungen sowie Informationen dazu, wie drittanbieterdaten genutzt werden können.
 
-- **Vertikale Branchen:** Kunden Beziehungs Management (beispielsweise Salesforce Chatter) und Finanzdienstleistungen (wie Bloomberg und Thomson Reuters)
+> [!TIP]
+> Klicken Sie auf den Link in der Spalte **drittanbieterdaten** , um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu öffnen.
 
-- **SMS/Textnachrichten:** BlackBerry
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungsrichtlinien  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Facebook](archive-facebook-data-with-sample-connector.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Personaldaten](import-hr-data.md) ||||||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[LinkedIn](archive-linkedin-data.md)   |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+||||||||
 
-Nach dem Importieren von drittanbieterdaten können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, eDiscovery, in-situ-Archivierung, Überwachung, Kommunikations Konformität und Aufbewahrungsrichtlinien auf diese Daten anwenden. Wenn beispielsweise ein Postfach in das Beweissicherungsverfahren gestellt wird, werden drittanbieterdaten beibehalten. Sie können drittanbieterdaten mithilfe von Microsoft eDiscovery-Tools durchsuchen. Sie können auch Archivierungs-und Aufbewahrungsrichtlinien auf drittanbieterdaten anwenden, genau wie für Microsoft-Daten. Kurz gesagt: das Archivieren von drittanbieterdaten in Microsoft 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Die in der vorherigen Tabelle aufgeführten drittanbieterdaten (mit Ausnahme von HR-Daten) werden in Benutzerpostfächer importiert. Die entsprechenden Compliance-Lösungen, die drittanbieterdaten unterstützen, werden auf das Benutzerpostfach angewendet, in dem die Daten gespeichert sind.
 
-Es gibt zwei Möglichkeiten zum Importieren und Archivieren von drittanbieterdaten in Microsoft 365:
+## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Übersicht über Kompatibilitätslösungen zur Unterstützung von drittanbieterdaten
 
-- **Verwenden Sie einen Drittanbieter-Daten Konnektor im Security & Compliance Center:** Verwenden Sie einen benutzerdefinierten Daten Konnektor, der im Microsoft 365 Compliance Center verfügbar ist. Nachdem Sie den Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Drittanbieter-Datenquelle her, wandelt den Inhalt eines Elements in ein e-Mail-Nachrichtenformat um und importiert dann das Element in ein Postfach in Microsoft 365. Derzeit können Sie Connectors zum Importieren und Archivieren von Daten von Facebook-Geschäfts Seiten, Unternehmens Twitter-Konten, LinkedIn, Instant Bloomberg und den Personaldaten Ihrer Organisation implementieren. Eine Schritt-für-Schritt-Anleitung zum Einrichten eines dieser Connectors finden Sie unter:
+In den folgenden Abschnitten werden einige der Dinge beschrieben, die die Microsoft 365-Kompatibilitätslösungen bei der Verwaltung der in der vorherigen Tabelle aufgeführten drittanbieterdaten unterstützen können.
 
-   - **Facebook:** [Verwenden eines Connectors zum Archivieren von Facebook-Daten (Vorschau)](archive-facebook-data-with-sample-connector.md)
+### <a name="litigation-hold"></a>Beweissicherungsverfahren
 
-   - **Twitter:** [Verwenden eines Connectors zum Archivieren von Twitter-Daten (Vorschau)](archive-twitter-data-with-sample-connector.md)
+Sie legen ein [Beweissicherungsverfahren](create-a-litigation-hold.md) für ein Benutzerpostfach fest, um drittanbieterdaten beizubehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Aufbewahrungsdauer (auch als *zeitbasierter halte*Bereich bezeichnet) festlegen, damit gelöschte und geänderte drittanbieterdaten für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte auf unbestimmte Zeit beibehalten (als *endlos Sperre*bezeichnet) oder bis das Beweissicherungsverfahren entfernt wird.
 
-   - **LinkedIn:** [Einrichten eines Connectors zum Archivieren von LinkedIn Daten](archive-linkedin-data.md)
+### <a name="ediscovery"></a>eDiscovery
 
-   - **Instant Bloomberg:** [Einrichten eines Connectors zum Archivieren von sofort Bloomberg-Daten](archive-instant-bloomberg-data.md)
+Die drei primären eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, zentrale eDiscovery und erweiterte eDiscovery.
 
-   - **HR-Daten:** [Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)](import-hr-data.md)
+- **[Inhaltssuche](content-search.md).** Sie können das Inhalts Such Tool verwenden, um Postfächer für Daten von Drittanbietern zu durchsuchen, die Sie importiert haben. Sie können Suchabfragen und-Bedingungen verwenden, um die Suchergebnisse einzuschränken, und die Suchergebnisse exportieren.
 
-- **Arbeiten mit einem Microsoft-Partner:** Ihre Organisation arbeitet mit einem Microsoft-Partner zusammen, der einen benutzerdefinierten Connector bereitstellt, der so konfiguriert ist, dass er regelmäßig Elemente aus der Drittanbieter-Datenquelle extrahiert und anschließend eine Verbindung mit der Microsoft-Cloud über eine Drittanbieter-API herstellen und diese Elemente nach Microsoft 365 importieren kann. Der Partner Connector konvertiert auch den Inhalt eines Elements aus der Drittanbieter-Datenquelle in eine e-Mail-Nachricht und importiert diese dann in ein Postfach in Microsoft 365. Eine Liste der Partner, mit denen Sie zusammenarbeiten und den schrittweisen Prozess für diese Methode ausführen können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+- **[Zentrale eDiscovery](get-started-core-ediscovery.md).** Dieses Tool baut auf den grundlegenden Such-und Exportfunktionen auf, indem es Ihnen ermöglicht, Fälle zu erstellen, mit denen Sie steuern können, wer auf Falldaten zugreifen kann, indem Sie Benutzerpostfächer oder Postfachinhalte, die Suchkriterien entsprechen, aufbewahren. Das bedeutet, dass Sie den drittanbieterdaten, die in Benutzerpostfächern importiert wurden, einen eDiscovery-Aufbewahrungsplatz geben können.
+
+- **[Erweiterte eDiscovery](overview-ediscovery-20.md).** Dieses leistungsstarke Tool erweitert die Fall Funktionen von Core eDiscovery, indem Sie Verwalter zu einem Fall hinzufügen, die Aufbewahrungsdaten der Depotbank speichern und dann die drittanbieterdaten eines Depot Empfängers zur weiteren Analyse wie Designs und doppelter Erkennung in eine Überprüfung laden. Nachdem Sie Daten eines Drittanbieters in einen Überprüfungs importiert haben, können Sie ihn in einem engen Resultset Abfragen und filtern.
+
+   Sowohl die Haupt-eDiscovery-als auch die Advanced-eDiscovery ermöglichen Ihnen die Verwaltung von drittanbieterdaten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
+
+### <a name="retention-policies"></a>Aufbewahrungsrichtlinien
+
+Sie können eine [Aufbewahrungsrichtlinie](retention-policies.md) auf Benutzerpostfächer anwenden, um drittanbieterdaten (und andere Postfachinhalte) nach Ablauf des Aufbewahrungszeitraums beizubehalten und anschließend zu löschen. Sie können auch Aufbewahrungsrichtlinien verwenden, um drittanbieterdaten eines bestimmten Alters zu löschen oder eine Dispositions Überprüfung auszulösen, wenn der Aufbewahrungszeitraum abgelaufen ist.
+
+### <a name="records-management"></a>Datensatzverwaltung
+
+Mit dem Feature für die [Datensatzverwaltung](records-management.md) in Microsoft 365 können Sie drittanbieterdaten als Datensatz deklarieren. Dies kann manuell von Benutzern durchgeführt werden, die eine Aufbewahrungs Bezeichnung anwenden, die drittanbieterdaten in Ihrem Postfach als Datensatz kennzeichnet. Oder Sie können Aufbewahrungs Bezeichnungen automatisch anwenden, indem Sie vertrauliche Informationen, Stichwörter oder Inhaltstypen in drittanbieterdaten identifizieren.
+
+### <a name="communication-compliance"></a>Kommunikationscompliance
+
+Sie können die [Kommunikations Konformität](communication-compliance.md) verwenden, um drittanbieterdaten zu überprüfen, um sicherzustellen, dass Sie mit den Datenstandards Ihrer Organisation konform sind. Sie können dies tun, indem Sie Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation erkennen, erfassen und ausführen. Beispielsweise können Sie die von Ihnen importierten drittanbieterdaten für anstößige Sprache, vertrauliche Informationen und behördliche Compliance überwachen.
+
+### <a name="insider-risk-management"></a>Insider-Risikomanagement
+
+Signale von drittanbieterdaten, wie beispielsweise selektive HR-Daten, können von der [Insider Risikomanagement](insider-risk-management.md) -Lösung verwendet werden, um interne Risiken zu minimieren, indem Sie riskante Aktivitäten in Ihrer Organisation erkennen, untersuchen und auf diese reagieren. Beispielsweise werden Daten, die vom HR Data Connector importiert werden, als Risikoindikatoren verwendet, um den Datendiebstahl beim Mitarbeiter zu ermitteln.
+
+## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Arbeiten mit einem Microsoft-Partner zum Archivieren von drittanbieterdaten
+
+Eine weitere Option zum Importieren und Archivieren von drittanbieterdaten besteht darin, dass Ihre Organisation mit einem Microsoft-Partner zusammenarbeitet. Wenn ein Drittanbieter Datentyp nicht von den im Microsoft Compliance Center verfügbaren Daten Konnektoren unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert ist, dass er regelmäßig Elemente aus der Drittanbieter-Datenquelle extrahiert und dann über eine Drittanbieter-API eine Verbindung mit der Microsoft-Cloud hergestellt und diese Elemente in Microsoft 365 importiert Der Partner Connector konvertiert auch den Inhalt eines Elements aus der Drittanbieter-Datenquelle in eine e-Mail-Nachricht und importiert diese dann in ein Postfach in Microsoft 365.
+
+Eine Liste der Partner, mit denen Sie zusammenarbeiten und den schrittweisen Prozess für diese Methode ausführen können, finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
