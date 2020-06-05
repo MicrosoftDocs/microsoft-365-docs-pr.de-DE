@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Intelligente Berichte und Einblicke im Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: Übersicht über das Sicherheitsdashboard
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Erstellen eines Zeitplans für einen Bericht
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Verwalten von Zeitplänen für mehrere Berichte
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Einrichten und Herunterladen eines benutzerdefinierten Berichts
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Herunterladen von vorhandenen Berichten
-                      href: ./office-365-security/download-existing-reports.md
-                - name: Anzeigen von Informationen über schädliche Dateien
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Übersicht über das Sicherheitsdashboard
+              href: ./office-365-security/security-dashboard.md
+            - name: Anzeigen von Informationen über schädliche Dateien
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
