@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160798"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560493"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>SCHRITT 3: Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
-Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet einen modernen Arbeitsplatz und moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
+Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
 
 Endpoint Manager bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
 
@@ -34,7 +34,7 @@ Endpoint Manager bietet Dienste und Tools für die Verwaltung von mobilen Gerät
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune soll Ihnen helfen, Daten zu schützen, wenn Sie die Geräte, die für den Zugriff auf Unternehmensdaten verwendet werden, nicht verwalten. Intune App-Schutzrichtlinien in Kombination mit Azure AD Conditional Access bieten granulare Kontrolle über Daten auf mobilen Geräten. Intune ermöglicht es Ihnen auch, umfassende Richtlinien zu definieren, die nur den richtigen Personen unter den richtigen Bedingungen den Zugriff auf Ihre Unternehmensdaten ermöglichen und sicherstellen, dass die Daten geschützt bleiben, indem kontrolliert wird, wie sie innerhalb von Office, Outlook und anderen mobilen Anwendungen verwendet werden.
+Intune soll Ihnen helfen, Daten zu schützen, wenn Sie die Geräte, die für den Zugriff auf Unternehmensdaten verwendet werden, nicht verwalten. Intune App-Schutzrichtlinien in Kombination mit bedingtem Zugriff in Azure Active Directory (Azure AD) bietet granulare Kontrolle über Daten auf mobilen Geräten. Intune ermöglicht es Ihnen auch, umfassende Richtlinien zu definieren, die nur den richtigen Personen unter den richtigen Bedingungen den Zugriff auf Ihre Unternehmensdaten ermöglichen und sicherstellen, dass die Daten geschützt bleiben, indem kontrolliert wird, wie sie innerhalb von Office, Outlook und anderen mobilen Anwendungen verwendet werden.
 
 Weitere Informationen finden Sie in dieser [Übersicht über Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
@@ -66,8 +66,10 @@ Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Verwaltung technischer Ressourcen für die Endpunktverwaltung
 
-- [Registrieren Sie verwaltete Geräte für die Sicherheit, nutzen Sie Anwendungseinstellungen für nicht verwaltete Geräte und verwenden Sie Geräte- und Anwendungsrichtlinien](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
-- [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung (MDM)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [Teil 3: Video über die Verwaltung von Windows 10-Geräten für Remotemitarbeiter](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Teil 5: Video über die Verwaltung von Benutzerdesktops und Browsern für Remotemitarbeiter](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Bereitstellen einer Mobilitätsinfrastruktur für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Informieren Ihrer Endbenutzer über Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>Ergebnisse von Schritt 3
