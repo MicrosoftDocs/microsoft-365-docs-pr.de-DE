@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md
         - name: Weitere Informationen zu Office 365 Deutschland
           href: admin-overview/learn-about-office-365-germany.md
+        - name: Auf lokale Benutzer und Ressourcen zugreifen
+          items:
+            - name: Synchronisieren von Domänenbenutzern mit Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: 'Ermöglichen, dass der Domäne beigetretene Windows 10-Geräte verwaltet werden'
+              href: ../business/manage-windows-devices.md
+            - name: Zugreifen auf Ressourcen von einem in Azure AD eingebundenen Gerät
+              href: ../business/access-resources.md
     - name: Übersicht über das Microsoft 365 Admin Center
       items:
         - name: Übersicht über das Admin Center
@@ -278,6 +286,8 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: Zuordnen von Schutzfunktionen zu Intune-Einstellungen
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: Gerätestatus
+          href: ../business/device-states.md
         - name: App-Schutzeinstellungen für Android und iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -290,6 +300,16 @@
               href: ../business/validate-settings-on-windows-10-pcs.md
         - name: "App-Schutzeinstellungen für Windows\_10-PCs"
           href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items:
+            - name: Hinzufügen von Autopilot-Geräten und -Profilen
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: Erstellen und Bearbeiten von AutoPilot-Profilen
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: Erstellen und Bearbeiten von AutoPilot-Geräten
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot-Profileinstellungen
+              href: ../business/autopilot-profile-settings.md
     - name: Arbeiten mit Kunden
       href: work-with-customers/index.yml
       items:
