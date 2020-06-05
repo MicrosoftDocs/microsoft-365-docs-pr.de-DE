@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351873"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566728"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -173,8 +173,4 @@ Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Ric
 
 [Berichte und Einblicke im Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Erstellen eines Zeitplans für einen Bericht im Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
-
-[Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-
 [Rollen Berechtigungen (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

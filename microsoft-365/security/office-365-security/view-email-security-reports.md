@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
-ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e62d64ec062653c5292f98c2456cd26275916dca
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208513"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566740"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -256,7 +256,3 @@ Wenn Sie keine Daten in ihren Berichten sehen, überprüfen Sie, ob Ihre Richtli
 [Microsoft 365 e-Mail-Antispam-Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 [Berichte und Einblicke im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
-
-[Erstellen eines Zeitplans für einen Bericht im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
-
-[Einrichten und Herunterladen eines benutzerdefinierten Berichts im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie die Spoof Intelligence-Einblicke funktionieren, und wie Sie schnell ermitteln können, welche Absender legitimerweise nicht authentifizierte e-Mails senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208464"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566704"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Exemplarische Vorgehensweise – ATP-Spoof Intelligence Insight in Microsoft 365
 
@@ -102,9 +102,3 @@ Wenn Sie beispielsweise das folgende Domänenpaar zur Absender Zulassungsliste "
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Schutz gegen Spoofing in Microsoft 365](anti-spoofing-protection.md)
-
-[Exemplarische Vorgehensweise – Vom Dashboard zum Einblick](from-a-dashboard-to-an-insight.md)
-
-[Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick](from-a-detailed-report-to-an-insight.md)
-
-[Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht](from-an-insight-to-a-detailed-report.md)
