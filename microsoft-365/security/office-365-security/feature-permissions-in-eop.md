@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Erfahren Sie mehr über die Berechtigungen, die für Aufgaben in eigenständigen Exchange Online Schutz erforderlich sind.
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208870"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588252"
 ---
-# <a name="permissions-in-standalone-eop"></a>Berechtigungen in eigenständigen EoP
+# <a name="permissions-in-standalone-eop"></a>Berechtigungen in EOP als eigenständige Lösung
 
 Eigenständiger Exchange Online Schutz (EoP) ohne Exchange Online Postfächer verwenden das Berechtigungsmodell für die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC), um Ihren Administratoren einfach Berechtigungen zu gewähren. Sie können die Berechtigungsfunktionen in eigenständigen EoP verwenden, um Ihre neue Organisation schnell bereitzustellen und zu starten.
 
@@ -134,7 +134,7 @@ In der folgenden Tabelle sind die Microsoft 365-Rollen und die eigenständigen E
 |Benutzer mit Leseberechtigung für Sicherheitsfunktionen|SecurityReader|
 |
 
-Andere Microsoft 365-Rollen verfügen nicht über eine entsprechende EoP-Rollengruppe und erteilen keine administrativen Berechtigungen in EoP. Weitere Informationen zum Zuweisen einer Microsoft 365-Rolle zu einem Benutzer finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Andere Microsoft 365-Rollen verfügen nicht über eine entsprechende EoP-Rollengruppe und erteilen keine administrativen Berechtigungen in EoP. Weitere Informationen zum Zuweisen einer Microsoft 365-Rolle zu einem Benutzer finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
 
 Benutzern können in EoP Administratorrechte erteilt werden, ohne Sie zu Microsoft 365-Rollen hinzuzufügen. Hierzu fügen Sie den Benutzer als Mitglied einer EoP-Rollengruppe hinzu. Der Benutzer erhält Berechtigungen in EoP, erhält aber keine Berechtigungen in anderen Microsoft 365-Arbeitsauslastungen.
 
@@ -144,7 +144,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Ro
 
 - Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, und überprüfen Sie, ob die Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detail **Edit** Bereich, oder klicken Sie auf ![ Bearbeitungssymbol bearbeiten ](../../media/ITPro-EAC-EditIcon.png) , um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in Exchange Online PowerShell den Namen der \< Rollengruppe \> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell \<Role Group Name\> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

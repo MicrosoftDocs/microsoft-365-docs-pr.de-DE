@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie einen Administratorrollengruppen Bericht in eigenständigen Exchange Online Schutz (EoP) ausführen. Dieser Bericht protokolliert, wenn ein Administrator Mitglieder aus Administratorrollengruppen hinzugefügt oder entfernt, EoP protokolliert jedes Vorkommen.
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350939"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587364"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
 
@@ -74,7 +74,7 @@ In diesem Beispiel wurden mit dem Administratorbenutzerkonto folgende Änderunge
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Verwenden eigenständiger Exchange Online PowerShell zum Suchen nach Überwachungsprotokolleinträgen
 
-Sie können Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen, die die von Ihnen angegebenen Kriterien erfüllen. Eine Liste mit Suchkriterien finden Sie unter [Administratorüberwachungsprotokollierung](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Bei diesem Verfahren wird das Cmdlet **Search-AdminAuditLog** verwendet, und es werden Suchergebnisse in Exchange Online PowerShell angezeigt. Dieses Cmdlet kann verwendet werden, wenn eine Ergebnismenge zurückgegeben werden muss, die die im Cmdlet **New-AdminAuditLogSearch** oder in den Überwachungsberichten der Exchange-Verwaltungskonsole definierten Grenzwerte überschreitet.
+Sie können Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen, die die von Ihnen angegebenen Kriterien erfüllen. Eine Liste der Suchkriterien finden Sie unter Search [-AdminAuditLog Suchkriterien](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). Bei diesem Verfahren wird das Cmdlet **Search-AdminAuditLog** verwendet, und es werden Suchergebnisse in Exchange Online PowerShell angezeigt. Dieses Cmdlet kann verwendet werden, wenn eine Ergebnismenge zurückgegeben werden muss, die die im Cmdlet **New-AdminAuditLogSearch** oder in den Überwachungsberichten der Exchange-Verwaltungskonsole definierten Grenzwerte überschreitet.
 
 Verwenden Sie die folgende Syntax, um das Überwachungsprotokoll anhand angegebener Kriterien zu durchsuchen.
 
@@ -119,7 +119,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Search-Ad
 
 ### <a name="view-details-of-audit-log-entries"></a>Anzeigen der Details von Überwachungsprotokolleinträgen
 
-Das Cmdlet **Search-AdminAuditLog** gibt die im Abschnitt "Inhalte von Überwachungsprotokollen" unter [Administratorüberwachungsprotokollierung](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx) beschriebenen Felder zurück. Zwei der zurückgegebenen Felder, **CmdletParameters** und **ModifiedProperties**, enthalten zusätzliche Informationen, die standardmäßig nicht angezeigt werden.
+Das Cmdlet **Search-AdminAuditLog** gibt die in [Überwachungsprotokoll Inhalt](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)beschriebenen Felder zurück. Zwei der zurückgegebenen Felder, **CmdletParameters** und **ModifiedProperties**, enthalten zusätzliche Informationen, die standardmäßig nicht angezeigt werden.
 
 Führen Sie die folgenden Schritte aus, um die Inhalte der Felder **CmdletParameters** und **ModifiedProperties** anzuzeigen. Sie können auch das Verfahren in Verwenden von **Exchange Online PowerShell verwenden, um nach Überwachungsprotokolleinträgen zu suchen und Ergebnisse an einen Empfänger** weiter unten in diesem Thema zu senden, um eine XML-Datei zu erstellen.
 

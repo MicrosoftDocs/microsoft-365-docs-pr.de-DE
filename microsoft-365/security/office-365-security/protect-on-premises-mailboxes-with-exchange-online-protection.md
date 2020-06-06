@@ -1,5 +1,5 @@
 ---
-title: Schützen von lokalen Postfächern in China mit eigenständigen EoP
+title: Schützen von lokalen Postfächern in China mit EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in China mit Office 365, die von 21Vianet betrieben werden, erfahren, wie Sie eigenständige Exchange Online Protection (EoP) verwenden, um Ihre lokalen Postfächer zu schützen.
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208294"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587980"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Schützen von lokalen Postfächern in China mit eigenständigen EoP
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Schützen von lokalen Postfächern in China mit EOP als eigenständige Lösung
 
 > [!NOTE]
 > Dieser Artikel bezieht sich nur auf Office 365, die von 21Vianet in China betrieben werden.
 
-Selbst wenn Sie planen, einige oder alle ihre Postfächer lokal zu hosten, können Sie die Postfächer dennoch mit Exchange Online Schutz schützen (EoP). Zum Konfigurieren von Connectors muss Ihr Konto ein globaler Administrator oder ein Exchange-Unternehmens Administrator (die Rollengruppe "Organisationsverwaltung") sein. Informationen dazu, wie sich Office 365 Berechtigungen auf Exchange-Berechtigungen beziehen, finden Sie unter [Zuweisen von Administratorrollen in Office 365 betrieben von 21Vianet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Wenn alle Exchange-Postfächer lokal sind, führen Sie die folgenden Schritte aus, um den EoP-Dienst einzurichten.
+Selbst wenn Sie planen, einige oder alle ihre Postfächer lokal zu hosten, können Sie die Postfächer dennoch mit Exchange Online Schutz schützen (EoP). Zum Konfigurieren von Connectors muss Ihr Konto ein globaler Administrator oder ein Exchange-Unternehmens Administrator (die Rollengruppe "Organisationsverwaltung") sein. Informationen dazu, wie sich Office 365 Berechtigungen auf Exchange-Berechtigungen beziehen, finden Sie unter [Zuweisen von Administratorrollen in Office 365 betrieben von 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Wenn alle Exchange-Postfächer lokal sind, führen Sie die folgenden Schritte aus, um den EoP-Dienst einzurichten.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 
@@ -42,7 +42,7 @@ Selbst wenn Sie planen, einige oder alle ihre Postfächer lokal zu hosten, könn
 2. Führen Sie die Schritte im Portal aus, um dem DNS-Hosting-Anbieter die entsprechenden DNS-Einträge hinzuzufügen, um den Domänenbesitz zu überprüfen.
 
 > [!TIP]
-> [Fügen Sie Ihre Domäne und Benutzer Office 365 betrieben von 21Vianet hinzu](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) , und [Erstellen Sie DNS-Einträge für Office 365 beim Verwalten Ihrer DNS-Einträge](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) sind hilfreiche Ressourcen, die Sie beim Hinzufügen Ihrer Domäne zum Dienst und beim Konfigurieren von DNS referenzieren.
+> [Fügen Sie Ihre Domäne und Benutzer Office 365 betrieben von 21Vianet hinzu](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) , und [Erstellen Sie DNS-Einträge für Office 365 beim Verwalten Ihrer DNS-Einträge](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) sind hilfreiche Ressourcen, die Sie beim Hinzufügen Ihrer Domäne zum Dienst und beim Konfigurieren von DNS referenzieren.
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Schritt 2: Hinzufügen von Empfängern und Konfigurieren des Domänentyps
 
@@ -69,7 +69,7 @@ Sie müssen eine Reihe von Konfigurationsschritten ausführen, um wirklich siche
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Center zum Verweisen Ihres MX-Eintrags auf EoP
 
-Befolgen Sie die Konfigurationsschritte für Office 365-Domänen, um den MX-Eintrag für die Domäne zu aktualisieren, damit Ihre eingehenden E-Mails über EOP weitergeleitet werden. Weitere Informationen finden Sie erneut [Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Befolgen Sie die Konfigurationsschritte für Office 365-Domänen, um den MX-Eintrag für die Domäne zu aktualisieren, damit Ihre eingehenden E-Mails über EOP weitergeleitet werden. Weitere Informationen finden Sie erneut [Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 Woher wissen Sie, dass diese Aufgabe erfolgreich war?
 

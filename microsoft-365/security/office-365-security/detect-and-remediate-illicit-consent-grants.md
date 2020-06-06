@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Microsoft Office 365 erkennen und korrigieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034828"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587496"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 
@@ -90,7 +90,7 @@ Dadurch werden die apps angezeigt, die dem Benutzer zugewiesen sind und welche B
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Schritte zum Auflisten des Anwendungszugriffs durch Ihre Benutzer
 
-Lassen Sie Ihre Benutzer dorthin https://myapps.microsoft.com wechseln und ihren eigenen Anwendungszugriff überprüfen. Sie sollten in der Lage sein, alle apps mit Zugriff anzuzeigen, Details dazu anzuzeigen (einschließlich des Umfangs des Zugriffs) und in der Lage zu sein, Berechtigungen für verdächtige oder illegale apps zu widerrufen.
+Lassen Sie Ihre Benutzer https://myapps.microsoft.com dorthin wechseln und ihren eigenen Anwendungszugriff überprüfen. Sie sollten in der Lage sein, alle apps mit Zugriff anzuzeigen, Details dazu anzuzeigen (einschließlich des Umfangs des Zugriffs) und in der Lage zu sein, Berechtigungen für verdächtige oder illegale apps zu widerrufen.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Schritte dafür mit PowerShell
 
@@ -158,7 +158,7 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
 - Sie können die Anmeldung für das betroffene Konto auch ganz deaktivieren, wodurch wiederum der APP-Zugriff auf die Daten in diesem Konto deaktiviert wird. Dies ist natürlich nicht ideal für die Produktivität des Endbenutzers, aber wenn Sie die Auswirkungen schnell begrenzen möchten, kann es sich um eine praktikable kurzfristige Behebung handeln.
 
-- Sie können integrierte Anwendungen für Ihr Mandanten deaktivieren. Dies ist ein drastischer Schritt, bei dem die Möglichkeit für Endbenutzer, die Zustimmung auf Mandantenebene zu erteilen, deaktiviert wird. Dadurch wird verhindert, dass Benutzer versehentlich Zugriff auf eine böswillige Anwendung gewähren. Dies wird nicht dringend empfohlen, da es die Fähigkeit Ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt. Befolgen Sie dazu die Schritte unter [Aktivieren oder deaktivieren integrierter apps](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
+- Sie können integrierte Anwendungen für Ihr Mandanten deaktivieren. Dies ist ein drastischer Schritt, bei dem die Möglichkeit für Endbenutzer, die Zustimmung auf Mandantenebene zu erteilen, deaktiviert wird. Dadurch wird verhindert, dass Benutzer versehentlich Zugriff auf eine böswillige Anwendung gewähren. Dies wird nicht dringend empfohlen, da es die Fähigkeit Ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt. Befolgen Sie dazu die Schritte unter [Aktivieren oder deaktivieren integrierter apps](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 

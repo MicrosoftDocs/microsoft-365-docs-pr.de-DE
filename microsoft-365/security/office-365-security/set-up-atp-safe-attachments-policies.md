@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035320"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588120"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Anlagen in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Anlagen in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Und das letzte, was Sie möchten, ist eine böswillige Anlage, die durchkommt und verheerende Verwüstungen für Ihre Organisation anrichtet. Glücklicherweise kann [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hilfreich sein. Sie können Richtlinien für [ATP-sichere Anlagen](atp-safe-attachments.md) einrichten, um sicherzustellen, dass Ihre Organisation vor Angriffen durch nicht sichere e-Mail-Anlagen geschützt ist.
 
@@ -48,12 +48,12 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
   |Rolle|Wo/wie zugewiesen|
   |---------|---------|
-  |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-  |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+  |Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+  |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - [Erfahren Sie mehr über die Richtlinienoptionen für ATP-sichere Anlagen](#step-3-learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, beispielsweise die Optionen "Monitor" oder "ersetzen", können zu einer geringfügigen Verzögerung von e-Mails führen, während Anlagen gescannt werden. Um Verzögerungen bei der Nachrichtenübermittlung zu vermeiden, sollten Sie die [dynamische Zustellung und Vorschau](dynamic-delivery-and-previewing.md)verwenden.
 
@@ -61,13 +61,13 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: einrichten (oder bearbeiten) einer Richtlinie für ATP-sichere Anlagen
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
-2. Wählen Sie im &amp; Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinien** \> für **sichere Anlagen**aus.
+2. &amp;Wählen Sie im Security Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinien** für \> **sichere Anlagen**aus.
 
 3. Wenn Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**sehen, sollten Sie diese Option auswählen. Dadurch wird [Office 365 Advanced Threat Protection für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) für Ihre Microsoft 365-Umgebung aktiviert.
 
-4. Wählen Sie **neu** (die Schaltfläche neu ähnelt einem Pluszeichen **+**()), um mit dem Erstellen Ihrer Richtlinie zu beginnen.
+4. Wählen Sie **neu** (die Schaltfläche neu ähnelt einem Pluszeichen ( **+** )), um mit dem Erstellen Ihrer Richtlinie zu beginnen.
 
 5. Geben Sie den Namen, die Beschreibung und die Einstellungen für die Richtlinie an.<br/><br/>**Beispiel:** Um eine Richtlinie mit dem Namen "keine Verzögerungen" einzurichten, die alle Nachrichten sofort bereitstellt und dann Anlagen nach dem Scannen erneut anfügt, können Sie die folgenden Einstellungen angeben:
 
@@ -101,7 +101,7 @@ Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter
 |**Anwenden der obigen Auswahl, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt**|Wendet die für unsichere Anlagen konfigurierte Aktion auf die Anlagen an, die nicht gescannt werden können (aufgrund eines Timeouts oder Fehlers)|
 |
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Sobald Ihre ATP-Richtlinien für sichere Anlagen vorhanden sind, können Sie sehen, wie ATP für Ihre Organisation funktioniert, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 

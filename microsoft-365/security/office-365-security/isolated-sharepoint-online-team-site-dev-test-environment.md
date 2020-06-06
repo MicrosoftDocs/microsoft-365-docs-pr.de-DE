@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online Teamwebsite, die vom Rest der Organisation in Ihrer Microsoft 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634122"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588028"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -56,9 +56,9 @@ Es gibt drei Phasen zum Einrichten einer isolierten SharePoint Online Teamwebsit
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Phase 1: Erstellen Sie Ihre einfache oder simulierte Enterprise-Microsoft 365-Entwicklungs-/Testumgebung
 
-Wenn Sie einfach nur eine isolierte SharePoint Online Teamwebsite mit den Mindestanforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 von [Microsoft 365 dev/Test Environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Wenn Sie nur eine isolierte SharePoint Online Teamwebsite mit minimalen Anforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 der [einfachen Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-Wenn Sie eine isolierte SharePoint Online Teamwebsite in einer simulierten Unternehmenskonfiguration erstellen möchten, befolgen Sie die Anweisungen in [Dirsync für Ihre Microsoft 365 dev/Test-Umgebung](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Wenn Sie eine isolierte SharePoint Online Teamwebsite in einer simulierten Unternehmenskonfiguration erstellen möchten, befolgen Sie die Anweisungen unter [Kennworthash Synchronisierung für Ihre Microsoft 365-Testumgebung](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
 
 > [!NOTE]
 > Für das Erstellen einer isolierten SharePoint Online Website ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie eine isolierte SharePoint Online-Website testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
@@ -148,7 +148,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
 
-1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) mit ihrem globalen Administratorkonto an.
+1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit ihrem globalen Administratorkonto an.
 
 2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -216,7 +216,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
 
-3. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
+3. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) unter Verwendung des Lead Designer-Kontonamens und des Kennworts an.
 
 4. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -246,7 +246,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
 
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
 
-1. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und dem Kennwort des Development VP an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) mit dem Kontonamen und dem Kennwort des Development VP an.
 
 2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
 
@@ -262,7 +262,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
 
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
 
-1. Melden Sie sich beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) unter Verwendung des Kontonamens "Benutzer 3" und des Kennworts an.
+1. Melden Sie sich beim Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) unter Verwendung des Kontonamens "Benutzer 3" und des Kennworts an.
 
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
 
@@ -288,12 +288,8 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in der Produktion bereitst
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Basiskonfiguration der Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[Die simulierte Unternehmensstandardkonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Microsoft 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Die einfache Standardkonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

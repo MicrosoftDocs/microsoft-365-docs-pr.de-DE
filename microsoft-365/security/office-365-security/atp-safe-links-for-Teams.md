@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Teams haben jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Sie Chats mit 1-zu-1-Chats, zwischen Gruppen oder in Kanälen und Registerkarten verwenden, wenn Sie ein Abonnement für Office 365 ATP haben, haben Sie die Möglichkeit, dieses Sicherheitsfeature zu aktivieren und zu verwenden.
-ms.openlocfilehash: 07f20f0adf503e4592d2bd3f3bc9857d08a1e433
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: d7586dba86c7ec9f43457b5510a1255e06bb6bf9
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808994"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588276"
 ---
 <!--06/21/2019-->
 
@@ -28,17 +28,17 @@ ms.locfileid: "43808994"
 > [!IMPORTANT]
 > Dieses Feature befindet sich in der **öffentlichen Vorschau** für Kunden im Microsoft Teams Technology Adoption Program (Tap) zum 28. Februar 2020. Dieser Hinweis wird aus dem Artikel entfernt, wenn sichere Links für Teams häufiger verfügbar sind.
 
-Microsoft Teams, eine in Microsoft cloudbasierten Anwendung zur Verwaltung ihrer Arbeit, verwendet bereits sichere Anlagen (für Office 365), hat aber jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Sie Chats, Gruppenchats, Kanäle oder Registerkarten verwenden, wenn Sie über ein Abonnement für Office 365 ATP verfügen, können Sie diese Sicherheitsmaßnahme aktivieren und verwenden. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+Microsoft Teams, eine in Microsoft cloudbasierten Anwendung zur Verwaltung ihrer Arbeit, verwendet bereits sichere Anlagen (für Office 365), hat aber jetzt Zugriff auf sichere Links zum Zeitpunkt des Klickens. Unabhängig davon, ob Sie Chats, Gruppenchats, Kanäle oder Registerkarten verwenden, wenn Sie über ein Abonnement für Office 365 ATP verfügen, können Sie diese Sicherheitsmaßnahme aktivieren und verwenden. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-So funktioniert es: 
+So funktioniert es:
 
 1. Wenn Sie die Teams-Anwendung starten, überprüft Microsoft 365, um sicherzustellen, dass der Benutzer zu einer Organisation gehört, die über Office 365 ATP verfügt, und dass der Benutzer Teil einer aktiven Richtlinie für sichere Links ist, deren Schutz für Microsoft Teams aktiviert ist.
 
 2. Wenn dies der Fall ist, werden URLs zum Zeitpunkt der Klickfunktion in Chats, Gruppenchats, Kanälen und Registerkarten für diesen Benutzer überprüft.
- 
-## <a name="what-will-users-experience"></a>Was werden Benutzer erfahren? 
 
-Für alle geschützten Benutzer wird diese Erfahrung mit gefährlichen URLs verwendet: 
+## <a name="what-will-users-experience"></a>Was werden Benutzer erfahren?
+
+Für alle geschützten Benutzer wird diese Erfahrung mit gefährlichen URLs verwendet:
 
 - Wenn auf den Link aus einer Microsoft Teams-Unterhaltung, einem Gruppenchat oder aus Kanälen geklickt wurde, wird eine Seite im Standardbrowser gerendert. Wenn auf der Registerkarte angeheftet auf den Link geklickt wurde, wird die Seite auf der Benutzeroberfläche von Teams auf dieser Registerkarte angezeigt, und die Option zum Öffnen im Browser wird aus Sicherheitsgründen deaktiviert.
 
@@ -51,4 +51,4 @@ Wenn der Benutzer, der den Link gesendet hat, nicht durch Office 365 ATP geschü
 Wenn Sie auf dieser Seite in Microsoft Teams auf die Schaltfläche " *zurück* " klicken, wird diese geschlossen (oder es kann zu einer leeren Seite führen, wenn Benutzer schließen können). Durch Klicken auf den Link wird jedoch erneut die Zuverlässigkeit der Website bewertet, sodass diese Seite wieder angezeigt wird.
 
 > [!NOTE]
-> Einige Microsoft 365-Administratoren aktivieren die Meldung **Continue Anyway** auf der Seite blockieren. Wenn jedoch sichere Links den Ruf einer Website misst und diese nicht mehr zur Verfügung stehen, sollte keine weitere durch Klick erfolgen. Es wird nicht empfohlen, dass Benutzer Sicherheitsmaßnahmen umgehen. Wägen Sie dies bitte auf ihre Überlegungen ab, bevor Sie Continue trotzdem aktivieren. 
+> Einige Microsoft 365-Administratoren aktivieren die Meldung **Continue Anyway** auf der Seite blockieren. Wenn jedoch sichere Links den Ruf einer Website misst und diese nicht mehr zur Verfügung stehen, sollte keine weitere durch Klick erfolgen. Es wird nicht empfohlen, dass Benutzer Sicherheitsmaßnahmen umgehen. Wägen Sie dies bitte auf ihre Überlegungen ab, bevor Sie Continue trotzdem aktivieren.

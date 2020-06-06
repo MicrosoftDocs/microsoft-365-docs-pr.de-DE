@@ -17,17 +17,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045236"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588088"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP-sichere Links](atp-safe-links.md), ein Feature von [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), können Ihnen helfen, Ihre Organisation vor bösartigen Links zu schützen, die in Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Richtlinien für ATP-sichere Links einrichten, um sicherzustellen, dass Ihre Organisation geschützt ist, wenn Personen auf Webadressen (URLs) klicken. Ihre Richtlinien für ATP-sichere Links können so konfiguriert werden, dass Sie URLs in e-Mails und URLs in Office-Dokumenten überprüfen.
 
@@ -53,11 +53,11 @@ Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e
 
     |Rolle  |Wo/wie zugewiesen  |
     |---------|---------|
-    |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-    |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
+    |Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+    |Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Stellen Sie sicher, dass Office-Clients für die Verwendung der [modernen Authentifizierung](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) konfiguriert sind (Dies gilt für den Schutz von ATP-Links in Office-Dokumenten).
     
@@ -69,7 +69,7 @@ Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e
 
 Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, verfügen Sie über eine Standardrichtlinie für ATP-sichere Links, die auf alle Benutzer in Ihrer Organisation angewendet wird. Stellen Sie sicher, dass Sie die Standardrichtlinie überprüfen und bei Bedarf bearbeiten.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
     
 2. Wählen Sie im linken Navigationsbereich unter **Threat Management**die **Option \> Richtlinien** **sichere Links**aus.
     
@@ -85,13 +85,13 @@ Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, verfü
 
 Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bearbeitet) haben, die für alle gilt, müssen Sie im nächsten Schritt zusätzliche Richtlinien definieren, die für bestimmte Empfänger gelten. Sie können beispielsweise Ausnahmen für die Standardrichtlinie angeben, indem Sie eine zusätzliche Richtlinie definieren. 
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
     
 2. Wählen Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
     
 3. Wählen Sie **sichere Links**aus.
     
-4. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auswählen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()).<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auswählen die Option **neu** aus (die Schaltfläche neu ähnelt einem Pluszeichen ( **+** )).<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an.<br/>**Beispiel:** Um eine Richtlinie mit dem Namen "kein direkter Mausklick" einzurichten, mit der Personen in einer bestimmten Gruppe in Ihrer Organisation nicht durch Klicken auf eine bestimmte Website ohne den Schutz vor ATP-Links geschützt werden können, geben Sie möglicherweise die folgenden empfohlenen Einstellungen an: 
     
@@ -144,9 +144,9 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 |**Anwenden von sicheren Links auf Nachrichten, die innerhalb der Organisation gesendet werden** <br/> | Wenn diese Option verfügbar und ausgewählt ist, wird der Schutz für ATP-sichere Links auf e-Mail-Nachrichten angewendet, die zwischen Personen in Ihrer Organisation gesendet werden, vorausgesetzt, die e-Mail-Konten werden in Office 365 gehostet.  <br/> |
 |**Benutzerklicks nicht nachverfolgen** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail von externen Absendern wird nicht gespeichert. Die URL-klickverfolgung für Links in e-Mail-Nachrichten, die innerhalb der Organisation gesendet werden, wird derzeit nicht unterstützt.  <br/> |
 |**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |
-|**Folgende URLs dürfen nicht umgeschrieben werden** <br/> |Lässt URLs so wie Sie sind. Speichert eine benutzerdefinierte Liste sicherer URLs, die nicht für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation überprüft werden müssen.  Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste "nicht umschreiben"-URLs mit ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich der letzten Änderungen bei der Unterstützung\*von Platzhalter Sternchen ().  <br/> |
+|**Folgende URLs dürfen nicht umgeschrieben werden** <br/> |Lässt URLs so wie Sie sind. Speichert eine benutzerdefinierte Liste sicherer URLs, die nicht für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation überprüft werden müssen.  Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste "nicht umschreiben"-URLs mit ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich der letzten Änderungen bei der Unterstützung von Platzhalter Sternchen ( \* ).  <br/> |
    
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Sobald Ihre ATP-Richtlinien für sichere Links vorhanden sind, können Sie sehen, wie ATP für Ihre Organisation funktioniert, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 

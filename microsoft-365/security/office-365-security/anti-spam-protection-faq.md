@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spam in Exchange Online Protection (EoP) anzeigen.
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209643"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588040"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -59,7 +59,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md)
 
-[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)
+[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)
 
 [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
 
@@ -137,7 +137,7 @@ Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Send
 
   [Einrichten von SPF zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Wenn Sie E-Mails mit DKIM signieren, melden Sie sich mit eingeschränkter Kanonisierung an.**
 

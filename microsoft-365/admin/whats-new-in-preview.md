@@ -2,8 +2,8 @@
 title: Was ist neu im Microsoft 365 Admin Center?
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401142"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587580"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -43,18 +43,62 @@ Wir fügen [dem Microsoft 365 Admin Center](microsoft-365-admin-center-preview.m
 > **"Classic" Admin Center Ruhestand ab März**<br><br>
 Wenn Sie sich beim Microsoft 365 Admin Center anmelden, wechseln Sie jetzt jedes Mal zum neuen Admin Center. Im März haben wir damit begonnen, die Möglichkeit zu deaktivieren, wieder zum klassischen Admin Center zu wechseln. Für den Moment können Sie immer noch zurückwechseln, aber da das neue Admin Center zu Parität kommt (und es überschreitet), werden wir den Switch für alle Organisationen deaktivieren. <br><br> *Letzte Aktualisierung: 11. Mai 2020*
 
-Wenn Sie an Neuigkeiten in anderen Microsoft-Cloud-Diensten interessiert sind:
+Und wenn Sie wissen möchten, was mit anderen Microsoft-Cloud-Diensten neu ist:
 
-- [Neuerungen in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Neuerungen in Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Neuerungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Neuerungen im Exchange Admin Center](https://docs.microsoft.com/Exchange/whats-new)
+- [Neuerungen in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Neues in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>Mai 2020
+
+### <a name="new-update-channel-for-office"></a>Neuer Update Kanal für Office
+
+Am 12. Mai kündigten wir die Verfügbarkeit eines neuen Update Kanals für Office an: Monthly Enterprise Channel. Dieser Update Kanal bietet ihren Benutzern neue Office-Funktionen einmal monatlich am zweiten Dienstag des Monats.
+
+Wenn Sie den Benutzern die Selbstinstallation von Office über das Portal gestatten, können Sie für diese Benutzer den monatlichen Enterprise-Kanal auswählen. Um dies zu tun, melden Sie sich beim Microsoft 365 Admin Center an, und wechseln Sie zu **alle Einstellungen anzeigen**  > **Settings**  >  **org Settings**  >  **Services**  >  **Office Software Download Settings**. Wenn Sie **einmal monatlich (monatlicher Enterprise-Kanal)** auswählen, werden alle neuen selbst Installationen von Office für die Verwendung des monatlichen Enterprise-Kanals konfiguriert.
+
+In Verbindung mit der Veröffentlichung des monatlichen Enterprise-Kanals überarbeiten wir auch die Namen der vorhandenen Update Kanäle. Beispielsweise wird der monatliche Kanal in den aktuellen Kanal umbenannt. Die neuen Namen werden am 2020. Juni wirksam.
+
+Weitere Informationen finden Sie unter [Changes to Update Channels for Microsoft 365 apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### <a name="new-admin-roles"></a>Neue Administratorrollen
+
+Wir haben einige neue Azure Active Directory Administratorrollen zum Microsoft 365 Admin Center hinzugefügt.
+
+- Die Administratorrolle "Hybrid Identity" gibt Benutzern die Berechtigung zum Verwalten von Cloud-Bereitstellungs-und Authentifizierungsdiensten.
+- Die Rolle "Netzwerkadministrator" ermöglicht Benutzern das Verwalten von Netzwerkstandorten und das Überprüfen von Netzwerk Einblicken für Microsoft 365-Software als Dienst apps.
+- Die Druckeradministrator Rolle erteilt die Berechtigung zum Verwalten aller Aspekte von Druckern und Druckerverbindungen.
+- Der Drucker Techniker ist eine Teilmenge der Druckeradministrator Rolle, mit der diese Benutzer Drucker registrieren und aufheben können, und Aktualisieren des Druckerstatus.
+Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### <a name="export-groups-list"></a>Liste "Gruppen exportieren"
+
+Wir haben viele Administratoren gehört, dass Sie Informationen über Gruppen und deren Nutzung für Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können die Gruppenliste nun zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen**, und wählen Sie dann in der Befehlsleiste **Gruppen exportieren** aus.
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Lösungs-und Architektur Center
+
+In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com](https://docs.microsoft.com) Namen " [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)" veröffentlicht, in der die technischen Anleitungen zum Verständnis, zur Planung und zur Implementierung integrierter Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zusammengefasst werden. In diesem Center finden Sie:
+
+- Grundlegende Lösungsanleitungen
+- Arbeits Auslastungs Lösungen und Szenario-Anleitungen
+- Lösungs-und Architektur Illustrationen (Poster!!!)
+- Branchenspezifische Anleitungen
+- Entwurfs Prinzipale für die Unternehmensarchitektur
+
+### <a name="docs-training-and-videos"></a>Dokumente, Schulungen und Videos
+
+- **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- Die Seite [Microsoft 365 Admin Center Help](https://docs.microsoft.com/microsoft-365/admin/) Hub wurde aktualisiert, um Ihnen zu helfen, schneller zu finden, was Sie benötigen. Wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
 ## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>InTune-Rollenverwaltung
+
+[April 2020](#april-2020)
 
 Nun, wir haben es geschafft! Wir haben den zweiten Schritt hin zu einer einheitlichen Rollen Erfahrung unternommen, und Sie können jetzt InTune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features wie die Suche nach Rollen und das Anzeigen von Rollen Berechtigungen nutzen. Dies bedeutet, dass Sie nicht zwei separate Tools zum Verwalten von Rollen für Microsoft 365 und InTune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, sehen Sie, dass auf der Seite "Rollen" zwei Pivots vorhanden sind: eine für Azure AD und eine für InTune.
 
@@ -103,7 +147,7 @@ Wir haben zwei Updates für Gruppen in diesem Monat:
 - Sie können nun e-Mail-Adressen für Office 365 Gruppen (auch Gruppen in Outlook und bald als Microsoft 365-Gruppen bezeichnet) bearbeiten.
 - Wir haben Ihr Feedback gehört und wir haben klarer Fehlermeldungen hinzugefügt, warum Sie eine Gruppe nicht in ein Microsoft-Team konvertieren können.
 
-### <a name="docs-videos-and-training"></a>Dokumente, Videos und Schulungen
+### <a name="docs-videos-and-training-april"></a>Dokumente, Videos und Schulungen (April)
 
 **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir Tipps und Ressourcen ab, um kleinen Unternehmen den Übergang zu Remote-Arbeit zu erleichtern, einschließlich der Bereitstellung von Microsoft Teams, Remote-Arbeits Schulungsressourcen, um mit Kunden und Partnern in Verbindung zu bleiben, und dem neuen Business Voice-Plan von Microsoft 365. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ Wir haben zwei Updates für Gruppen in diesem Monat:
 
 #### <a name="for-admins-and-business-owners"></a>Für Administratoren und Unternehmer
 
-- [Empower Your Small Business mit Remote-Arbeit](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Empower Your Small Business mit Remote-Arbeit](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Führen eines Remote-Kleinunternehmens](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Registrieren für Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Einrichten der zweistufigen Anmeldung](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ Mit dem Microsoft 365 Admin Center können Sie nun das Design Ihrer Organisation
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramm, das die Admin Center-Einstellungen dem Mobile App zuordnet.":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Verbesserungen am Assistenten zum Hinzufügen einer Gruppe
 
 Wenn Administratoren eine neue Gruppe erstellt haben und Sie gleichzeitig zu einem Team gemacht haben, können Sie Besitzern zuweisen, die nicht über eine Lizenz mit Teams verfügen. Und das verursachte Kopfzerbrechen. Wir haben den Assistenten Ablauf aktualisiert, um sicherzustellen, dass Besitzer eine Microsoft Teams-Lizenz besitzen und wenn Sie nicht die Möglichkeit haben, die Gruppe in ein Team zu verwandeln, ist deaktiviert.
@@ -160,9 +202,9 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 |Aktueller Name |Neuer Name  |
 |---------|---------|
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Office 365 Business Premium     |    Office 365 Business Premium     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for Business       | 
+|Office 365 Business     |    Microsoft 365 Apps for Business       |
 |Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
@@ -192,7 +234,7 @@ Ein paar Änderungen im Gruppenbereich in diesem Monat:
 - **Sortieren nach Gruppenname**: Sie können die Gruppenliste alphabetisch sortieren, indem Sie die Spalte **Gruppenname** auswählen.
 - **Wiederherstellen gelöschter Microsoft 365-Gruppen**: Sie müssen nicht mehr zum Exchange-Verwaltungskonsole wechseln, um gelöschte Microsoft 365-Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **Gelöschte Gruppen** \> (Wählen Sie eine Gruppe aus der Liste aus) \> **Restore Group**. Dadurch wird die Gruppe wieder in der **Gruppen** Liste wiederhergestellt und die e-Mails, Unterhaltungen, das Notizbuch, die Dateien und den Kalender der Gruppe wiederhergestellt.
 
-### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
+### <a name="videos-training-and-docs-february"></a>Videos, Schulungen und Dokumente (Februar)
 
 - **Neuerungen in der Microsoft 365-Videoreihe**: in diesem Monat konzentrieren wir uns auf benutzerdefinierte Suchfunktionen für SharePoint Online, das Office-Verwaltungsfeature "What es New", mit dem Sie bestimmte Features von Endbenutzern über den in-App-Hilfebereich, die neuesten Sicherheits-und Kompatibilitätsupdates in jammern oder mehr anzeigen oder ausblenden können. Hier ist die neueste Episode: [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -253,7 +295,7 @@ Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditka
 
 Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>Globale Leseberechtigung
+### <a name="global-reader"></a>Globaler Leser
 
 Wir haben die Rolle des globalen Lesers in der [Oktober 2019-Ignite-Edition](#october-2019---ignite-edition)erwähnt, aber da Sie im allgemeinen weiter kommt, lassen Sie uns einige Details besprechen:
 

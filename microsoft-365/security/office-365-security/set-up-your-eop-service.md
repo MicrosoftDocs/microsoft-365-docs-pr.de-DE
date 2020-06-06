@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren können erfahren, wie Sie eigenständige Exchange Online Schutz (EoP) einrichten, um lokale e-Mail-Umgebungen zu schützen.
-ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209799"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588064"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EoP-Diensts
 
@@ -43,12 +43,12 @@ In diesem Thema wird erläutert, wie Sie eigenständige Exchange Online Schutz e
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 
-1. Wechseln Sie im [Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)zu **Setup** , um Ihre Domäne dem Dienst hinzuzufügen.
+1. Wechseln Sie im [Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)zu **Setup** , um Ihre Domäne dem Dienst hinzuzufügen.
 
 2. Befolgen Sie die Schritte, um Ihrem DNS-Hostinganbieter die entsprechenden DNS-Datensätze hinzuzufügen, um die Domäneneigentümerschaft zu überprüfen.
 
 > [!TIP]
-> [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) und [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sind hilfreiche Ressourcen, die Sie beim Hinzufügen Ihrer Domäne zum Dienst und Konfigurieren von DNS referenzieren.
+> [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) und [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sind hilfreiche Ressourcen, die Sie beim Hinzufügen Ihrer Domäne zum Dienst und Konfigurieren von DNS referenzieren.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Schritt 2: Hinzufügen von Empfängern und optionales Aktivieren der verzeichnisbasierten Edge-Blockierung (DBEB)
 
@@ -77,7 +77,7 @@ Wenn Sie keine Nachrichten in den Junk-e-Mail-Ordner der einzelnen Benutzer übe
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Center zum Verweisen Ihres MX-Eintrags auf EoP
 
-Führen Sie die Schritte zur Domänenkonfiguration aus, um den MX-Eintrag für Ihre Domäne zu aktualisieren, damit die eingehenden e-Mails über EoP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Führen Sie die Schritte zur Domänenkonfiguration aus, um den MX-Eintrag für Ihre Domäne zu aktualisieren, damit die eingehenden e-Mails über EoP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!NOTE]
 > Wenn Sie den MX-Eintrag auf einen anderen Server oder Dienst zeigen müssen, der sich vor EoP befindet, finden Sie weitere Informationen unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Häufig gestellte Fragen an Administratoren zur Verwendung des Office 365-Import Diensts zum Importieren der PST-Dateien Ihrer Organisation in Microsoft 365-Postfächer. '
-ms.openlocfilehash: e2ddd464f2cfd421766fb9c4d1043533f5561b25
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208129"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579200"
 ---
 # <a name="faq-about-importing-pst-files"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien
 
@@ -50,7 +50,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea und Australien. Network upload will be available in more regions soon.
+Netzwerk Upload ist derzeit in diesen Regionen verfügbar: USA, Kanada, Brasilien, Vereinigtes Königreich, Frankreich, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea, Australien und Vereinigte Arabische Emirate (VAE). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > Zurzeit ist der Netzwerkupload von PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Netzwerkupload in diesen Ländern verfügbar ist.

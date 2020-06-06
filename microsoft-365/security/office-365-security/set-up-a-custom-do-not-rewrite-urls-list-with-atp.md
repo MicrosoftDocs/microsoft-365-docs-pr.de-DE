@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: c75f468aa98c8fa9e45cd596c62a7509310fdca5
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046304"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588132"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation eine [benutzerdefinierte Blockierte URL](set-up-a-custom-blocked-urls-list-atp.md)haben, wenn Personen in e-Mail-Nachrichten oder bestimmten Office-Dokumenten auf Webadressen (URLs) klicken, wird verhindert, dass Sie zu diesen URLs wechseln. Ihre Organisation kann auch benutzerdefinierte Listen für bestimmte Gruppen in Ihrer Organisation erstellen. Eine Liste "nicht umschreiben" ermöglicht einigen Benutzern das Aufrufen von URLs, die ansonsten durch [ATP-sichere Links in Office 365](atp-safe-links.md)blockiert werden.
 
@@ -43,20 +43,20 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 |Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
-|globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-|Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online-Organisationsverwaltung |Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
+|Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>So zeigen Sie eine benutzerdefinierte Liste der URLs "nicht umschreiben" an oder bearbeiten diese
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
-2. Klicken Sie im linken Navigationsbereich unter **sichere Links**zur **Bedrohungs Verwaltungs** \> **Richtlinie** \> .
+2. Klicken Sie im linken Navigationsbereich unter sichere Links zur **Bedrohungs Verwaltungs** \> **Richtlinie** \> **Safe Links**.
 
-3. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** festlegen die Option **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()), um eine neue Richtlinie zu erstellen. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Wählen Sie im Abschnitt **Richtlinien für bestimmte Empfänger** festlegen die Option **neu** aus (die Schaltfläche neu ähnelt einem Pluszeichen ( **+** )), um eine neue Richtlinie zu erstellen. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)<br/>![Wählen Sie neu aus, um eine Richtlinie zu sicheren Links für bestimmte e-Mail-Empfänger hinzuzufügen](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Geben Sie einen Namen und eine Beschreibung für Ihre Richtlinie an.
 
@@ -73,15 +73,15 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 - Alle URLs, die Sie in der Liste "nicht umschreiben" angeben, werden von der Überprüfung der ATP-sichere Links für die von Ihnen angegebenen Empfänger ausgeschlossen.
 
-- Wenn Sie bereits über eine Liste von URLs in Ihrer Liste "nicht umschreiben" verfügen, stellen Sie sicher, dass Sie diese Liste überprüfen und je nach Bedarf Platzhalter hinzufügen. Wenn Ihre vorhandene Liste beispielsweise einen Eintrag wie `https://contoso.com/a` enthält und Sie untergeordnete Pfade wie `https://contoso.com/a/b` in Ihrer Richtlinie einschließen möchten, fügen Sie Ihrem Eintrag ein Platzhalterzeichen hinzu, `https://contoso.com/a/*`damit es aussieht.
+- Wenn Sie bereits über eine Liste von URLs in Ihrer Liste "nicht umschreiben" verfügen, stellen Sie sicher, dass Sie diese Liste überprüfen und je nach Bedarf Platzhalter hinzufügen. Wenn Ihre vorhandene Liste beispielsweise einen Eintrag wie enthält und Sie untergeordnete `https://contoso.com/a` Pfade wie `https://contoso.com/a/b` in Ihrer Richtlinie einschließen möchten, fügen Sie Ihrem Eintrag ein Platzhalterzeichen hinzu, damit es aussieht `https://contoso.com/a/*` .
 
-- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalter Sternchen\*() einschließen. Platzhalterzeichen\*() werden verwendet, um explizit Präfixe oder Unterdomänen einzuschließen. Der Eintrag `contoso.com` ist nicht identisch mit `*.contoso.com/*`, da `*.contoso.com/*` es den Völkern erlaubt, Unterdomänen und Pfade in der angegebenen Domäne zu besuchen.
+- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalter Sternchen ( \* ) einschließen. Platzhalterzeichen ( \* ) werden verwendet, um explizit Präfixe oder Unterdomänen einzuschließen. Der Eintrag `contoso.com` ist nicht identisch `*.contoso.com/*` mit, da `*.contoso.com/*` es den Völkern erlaubt, Unterdomänen und Pfade in der angegebenen Domäne zu besuchen.
 
 In der folgenden Tabelle sind Beispiele aufgeführt, was Sie eingeben können und welche Auswirkungen diese Einträge haben.
 
 |**Beispieleintrag**|**Funktionsweise**|
 |:-----|:-----|
-|`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website `https://contoso.com` wie, aber keine Unterdomänen oder Pfade.|
-|`*.contoso.com/*`|Ermöglicht Empfängern das Aufrufen einer Domäne, Unterdomänen und Pfaden, beispielsweise `https://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`,, oder `https://www.contoso.com/a`. <br/><br/> Dieser Eintrag ist grundsätzlich besser als `*contoso.com*`, da er potenziell betrügerische Websites wie `https://www.falsecontoso.com` oder nicht enthält.`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Ermöglicht bestimmten Empfängern das Besuchen einer Website `https://contoso.com/a`wie, aber keine untergeordneten Pfade wie`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Ermöglicht bestimmten Empfängern das Besuchen einer Website `https://contoso.com/a` wie und untergeordnete Pfade wie`https://contoso.com/a/b`|
+|`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website wie, `https://contoso.com` aber keine Unterdomänen oder Pfade.|
+|`*.contoso.com/*`|Ermöglicht Empfängern das Aufrufen einer Domäne, Unterdomänen und Pfaden, beispielsweise `https://www.contoso.com` ,,, `https://www.contoso.com` `https://maps.contoso.com` oder `https://www.contoso.com/a` . <br/><br/> Dieser Eintrag ist grundsätzlich besser als `*contoso.com*` , da er potenziell betrügerische Websites wie oder nicht enthält. `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie `https://contoso.com/a` , aber keine untergeordneten Pfade wie`https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie und untergeordnete `https://contoso.com/a` Pfade wie`https://contoso.com/a/b`|

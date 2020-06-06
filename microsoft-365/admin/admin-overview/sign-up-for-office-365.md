@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Registrierungsprozess für Office 365 durchlaufen. '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386757"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579169"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Vorgehensweise beim Anmelden – Administratorhilfe
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386757"
 
 Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen in Ihrem Unternehmen beginnen kann.
   
-Sehen Sie sich eine kurze Übersicht über die drei Microsoft 365 for Business-Pläne an, oder Scrollen Sie nach unten, um weitere Informationen zu erhalten.
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Registrieren Sie sich für Microsoft 365 for Business, damit Ihr Team mit den neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen in Ihrem Unternehmen beginnen kann.
-  
-Sehen Sie sich eine kurze Übersicht über die drei Pläne am besten für Ihr Unternehmen an. oder Scrollen Sie nach unten, um weitere Informationen zu haben.
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 
@@ -80,7 +70,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Microsoft 365 for Business-Pla
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
   

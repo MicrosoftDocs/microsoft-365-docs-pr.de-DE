@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635986"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588288"
 ---
 # <a name="atp-safe-links-warning-pages"></a>Warnungsseiten für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Microsoft 365-Familie oder Microsoft 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Office 365 Advanced Threat Protection](office-365-atp.md) verfügen. Wenn Sie Outlook.com, Microsoft 365-Familie oder Microsoft 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt.
 

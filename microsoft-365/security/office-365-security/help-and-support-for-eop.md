@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 277c48a8ac9503681eb695fba3697ddd16e49b88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209199"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588240"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -29,7 +29,7 @@ Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status
 
 [Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 [Microsoft 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über das Feature "ATP-sichere Anlagen" für Office 365 und wie Sie das Feature für Ihr Abonnement abrufen.
-ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034852"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588300"
 ---
 # <a name="atp-safe-attachments"></a>Sichere Anlagen in ATP
 
@@ -47,9 +47,9 @@ Um ATP-Richtlinien zu definieren oder zu bearbeiten, muss Ihnen eine entsprechen
 
 |Rolle|Wo/wie zugewiesen|
 |---------|---------|
-|globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-|Sicherheitsadministrator|Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online-Organisationsverwaltung|Exchange Admin Center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Sicherheitsadministrator|Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>So erfahren Sie, ob der Schutz für ATP-sichere Anlagen vorhanden ist
 

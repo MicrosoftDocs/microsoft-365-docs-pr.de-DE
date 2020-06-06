@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Microsoft 365 den SPF-TXT-Eintrag (Sender Policy Framework) in DNS verwendet, um sicherzustellen, dass Ziel-e-Mail-Nachrichten von Ihrer benutzerdefinierten Domäne aus Vertrauen.
-ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036389"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587484"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Microsoft 365 zum Verhindern von Spoofing
 
@@ -51,13 +51,13 @@ Jeder SPF TXT-Eintrag enthält drei Teile: die Deklaration, dass es sich um eine
 
 Sehen Sie sich die allgemeine Syntax für eine SPF-Regel an:
 
-v=spf1 \<IP\> \<Durchsetzungsregel\>
+v = spf1 \<IP\>\<enforcement rule\>
 
-Nehmen wir z. B. an, dass die folgende SPF-Regel für „contoso.com" vorhanden ist:
+Nehmen wir z. B. an, dass die folgende SPF-Regel für „contoso.com“ vorhanden ist:
 
-v=spf1 \<IP-Adresse #1\> \<IP-Adresse #2\> \<IP-Adresse #3\> \<Durchsetzungsregel\>
+v = spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
 
-In diesem Beispiel weist die SPF-Regel den empfangenden E-Mail-Server an, nur E-Mail-Nachrichten von diesen IP-Adressen für die Domäne „contoso.com" zu akzeptieren:
+In diesem Beispiel weist die SPF-Regel den empfangenden E-Mail-Server an, nur E-Mail-Nachrichten von diesen IP-Adressen für die Domäne „contoso.com“ zu akzeptieren:
 
 - IP-Adresse #1
 
@@ -131,7 +131,7 @@ Wenn Sie über eine hybridbereitstellung verfügen (also Sie verfügen über ein
 
 Verwenden Sie die Syntaxinformationen in diesem Artikel, um den SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne zu erstellen. Obwohl es auch andere Optionen gibt, die hier nicht genannt werden, sind dies die am häufigsten verwendeten Syntaxoptionen. Nachdem Sie Ihren Eintrag erstellt haben, müssen Sie den Eintrag bei Ihrer Domänenregistrierungsstelle aktualisieren.
 
-Informationen zu den Domänen, die Sie für Microsoft 365 einbeziehen müssen, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind. Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
+Informationen zu den Domänen, die Sie für Microsoft 365 einbeziehen müssen, finden Sie unter [externe DNS-Einträge, die für SPF erforderlich](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)sind. Verwenden Sie die [schrittweisen Anweisungen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Syntax des SPF txt-Eintrags für Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -248,6 +248,6 @@ Sie können nslookup zum Anzeigen der DNS-Einträge verwenden, einschließlich d
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="SPFTroubleshoot"> </a>
 
-Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? Lesen Sie den Artikel [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) , um ausführliche Informationen zur Verwendung von Sender Policy Framework mit Ihrer benutzerdefinierten Domäne in Microsoft 365 zu erhalten. [Anti-Spam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) enthält die Syntax-und Kopfzeilenfelder, die von Microsoft 365 für SPF-Überprüfungen verwendet werden.
+Benötigen Sie Hilfe beim Hinzufügen des SPF-TXT-Eintrags? Lesen Sie den Artikel [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) , um ausführliche Informationen zur Verwendung von Sender Policy Framework mit Ihrer benutzerdefinierten Domäne in Microsoft 365 zu erhalten. [Anti-Spam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) enthält die Syntax-und Kopfzeilenfelder, die von Microsoft 365 für SPF-Überprüfungen verwendet werden.
 
 

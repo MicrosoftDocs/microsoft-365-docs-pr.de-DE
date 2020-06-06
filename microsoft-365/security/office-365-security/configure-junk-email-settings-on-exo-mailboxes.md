@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498663"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588452"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -32,7 +32,7 @@ Es gibt aber auch spezifische Antispam-Einstellungen, die Administratoren für e
 - **Aktivieren oder Deaktivieren der Junk-e-Mail-** Regel: die Junk-e-Mail-Regel ist eine verborgene Posteingangsregel namens Junk-e-Mail-Regel, die in jedem Postfach standardmäßig aktiviert ist. Die Junk-e-Mail-Regel steuert die folgenden Funktionen:
 
   - **Verschieben von Nachrichten in den Junk-e-Mail-Ordner auf der Grundlage von Anti-Spam-Richtlinien**: Wenn eine Antispampolitik mit dem Vorgang **Nachricht in Junk-e-Mail verschieben** für ein Spamfilter Urteil konfiguriert ist, verschiebt die Junk-e-Mail-Filterregel die Nachricht in den Junk-e-Mail-Ordner, nachdem die Nachricht an das Postfach gesendet wurde. Weitere Informationen zu Spamfilter Urteilen in Anti-Spam-Richtlinien finden Sie unter [configure Anti-Spam Policies in EoP](configure-your-spam-filter-policies.md). Ebenso verschiebt die Junk-e-Mail-Filterregel die Nachricht in den Ordner Junk-e-Mail-Nachricht **in Junk-e** -Mail-Spamfilter-Urteils Aktionen, wenn Zero-Hour Auto Purge (zap) feststellt, dass eine zugestellte Nachricht Spam oder Phishing ist. Weitere Informationen zu zap finden Sie unter [Zero-Hour Auto Purge (zap) in Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Junk-e-Mail-Einstellungen, die Benutzer in Outlook oder Outlook im Internet für sich selbst konfigurieren**: die _Sammlung_ von Listen sicherer Adressen ist die Liste sicherer Absender, die Liste Sichere Empfänger und die Liste Absender blockieren für jedes Postfach. Die Einträge in diesen Listen bestimmen, ob die Junk-e-Mail-Regel die Nachricht in den Posteingang oder in den Junk-e-Mail-Ordner verschiebt. Benutzer können die Sammlung von Listen sicherer Adressen für Ihr eigenes Postfach in Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) konfigurieren. Administratoren können die Sammlung von Listen sicherer Adressen für das Postfach eines beliebigen Benutzers konfigurieren.
 
 Wenn die Junk-e-Mail-Regel für das Postfach aktiviert ist, kann EoP Nachrichten in den Junk-e-Mail-Ordner basierend auf der Spam Filterungs Entscheidungs Aktion Nachrichten **in den Junk-e-Mail-Ordner** oder in die Liste blockierter Absender im Postfach migrieren und verhindern, dass Nachrichten an den Junk-e-Mail-Ordner übermittelt werden (basierend auf
@@ -148,7 +148,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-Mail
 > 
 > - Selbst wenn die Junk-e-Mail-Regel für das Postfach deaktiviert ist, können Sie die Sammlung von Listen sicherer Adressen weiterhin konfigurieren, und der Outlook-Junk-e-Mail-Filter kann Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner verschieben. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
 > 
-> - Der Outlook-Junk-e-Mail-Filter verfügt über zusätzliche Einstellungen für die Sammlung von Listen sicherer Adressen (beispielsweise **automatisch Personen I-e-Mails zur Liste sicherer Absender hinzufügen**). Weitere Informationen finden Sie unter [Verwenden von Junk-e-Mail-Filter, um zu steuern, welche Nachrichten angezeigt](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)werden.
+> - Der Outlook-Junk-e-Mail-Filter verfügt über zusätzliche Einstellungen für die Sammlung von Listen sicherer Adressen (beispielsweise **automatisch Personen I-e-Mails zur Liste sicherer Absender hinzufügen**). Weitere Informationen finden Sie unter [Verwenden von Junk-e-Mail-Filter, um zu steuern, welche Nachrichten angezeigt](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)werden.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -197,7 +197,7 @@ Die Sammlung von Listen sicherer Adressen (die Liste sicherer Absender, Liste si
   - 500 Gesamteinträge in der Liste Blockierte Absender und Blockierte Domänen.
 
   Wenn der Grenzwert für die 1024-Eingabe erreicht wird, treten folgende Vorgänge auf:
-  
+
   - In der Liste werden keine Einträge in PowerShell und Outlook im Internet akzeptiert, aber es wird kein Fehler angezeigt.
 
     Outlook-Benutzer können weiterhin mehr als 1024 Einträge hinzufügen, bis Sie den Outlook-Grenzwert von 510 KB erreichen. Outlook kann diese zusätzlichen Einträge verwenden, solange ein EoP-Filter die Nachricht nicht blockiert, bevor die Zustellung an das Postfach erfolgt (Nachrichtenfluss Regeln, Antispoofing usw.).
@@ -208,7 +208,7 @@ Die Sammlung von Listen sicherer Adressen (die Liste sicherer Absender, Liste si
   2. Die Liste sicherer Absender und die Liste sicherer Empfänger werden kombiniert, dedupliziert und alphabetisch sortiert, wenn für die ersten 1024-Einträge eine Änderung vorgenommen wird.
 
   Die ersten 1024-Einträge werden verwendet, und relevante Informationen werden in den Nachrichtenkopfzeilen gestempelt.
-  
+
   Einträge über 1024, die nicht mit Azure AD synchronisiert wurden, werden von Outlook (nicht von Outlook im Internet) verarbeitet, und in den Nachrichtenkopfzeilen werden keine Informationen gestempelt.
 
 Wie Sie sehen können, wird durch Aktivieren der Einstellung **e-Mail aus meinen Kontakten Vertrauen** die Anzahl der sicheren Absender und der sicheren Empfänger reduziert, die synchronisiert werden können. Wenn dies ein Problem ist, empfehlen wir die Verwendung von Gruppenrichtlinien, um diese Funktion zu deaktivieren:

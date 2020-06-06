@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihrer Microsoft 365 E5-oder ATP-Plan 2-Organisation ausführen.
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035858"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587568"
 ---
 # <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
 
@@ -39,7 +39,7 @@ ms.locfileid: "44035858"
 
 - Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Ihr Konto muss für die mehrstufige Authentifizierung (MFA) konfiguriert sein, um Kampagnen im Angriffs Simulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
+- Ihr Konto muss für die mehrstufige Authentifizierung (MFA) konfiguriert sein, um Kampagnen im Angriffs Simulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehr](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)stufigen Authentifizierung.
 
 Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, dass das Konto, mit dem Simulierte Angriffe ausgeführt werden, die mehrstufige Authentifizierung verwendet. Darüber hinaus müssen Sie ein globaler Administrator oder Sicherheitsadministrator sein. (Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
@@ -55,7 +55,7 @@ Damit ein Angriff erfolgreich gestartet werden kann, müssen Sie sicherstellen, 
 
 In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen zur Verfügung:
 
-- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das globale Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
+- [Mehrstufige Authentifizierung/bedingter Zugriff](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) ist aktiviert, für mindestens das globale Administratorkonto und Sicherheitsadministratoren, die den Angriffs Simulator verwenden werden. (Im Idealfall ist mehrstufige Authentifizierung/bedingter Zugriff für alle Benutzer in Ihrer Organisation aktiviert.)
 
   - Eine Standardseite, auf der dies erläutert wurde, war nur ein Test und gibt Tipps zum Erkennen von Phishing-Nachrichten.
 
@@ -63,7 +63,7 @@ In Attack Simulator stehen zwei verschiedene Arten von Speer-Phishing-Kampagnen 
 
   - Eine benutzerdefinierte Seite (URL), die Sie angeben.
 
-- **Spear-Phishing (Attachment)**: der Angriff versucht, die Empfänger davon zu überzeugen, eine DOCX-oder PDF-Anlage in der Nachricht zu öffnen. Die Anlage enthält denselben Inhalt aus dem standardmäßigen Phishing-Link, aber der erste Satz beginnt mit\<"Anzeige\>Name, Sie sehen diese Nachricht als kürzlich geöffnete e-Mail-Nachricht...".
+- **Spear-Phishing (Attachment)**: der Angriff versucht, die Empfänger davon zu überzeugen, eine DOCX-oder PDF-Anlage in der Nachricht zu öffnen. Die Anlage enthält denselben Inhalt aus dem standardmäßigen Phishing-Link, aber der erste Satz beginnt mit " \<Display Name\> , diese Nachricht wird als kürzlich geöffnete e-Mail-Nachricht angezeigt...".
 
 > [!NOTE]
 > Derzeit laufen Speer-Phishing-Kampagnen in Attack Simulator nicht ab.
@@ -82,7 +82,7 @@ Ein wichtiger Bestandteil jeder Speer-Phishing-Kampagne ist das Aussehen und Ver
 
 Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht direkt im Assistenten erstellen, können Sie diesen Schritt überspringen.
 
-1. Wechseln Sie im Security & Compliance Center zum **Threat Management** \> - **Angriffs Simulator**.
+1. Wechseln Sie im Security & Compliance Center zum **Threat Management** - \> **Angriffs Simulator**.
 
 2. Klicken Sie auf der Seite " **Angriffe simulieren** " entweder in den Abschnitten **Spear Phishing (Credentials Harvest)** oder **Spear Phishing (Attachment)** auf **Attack Details**.
 
@@ -138,7 +138,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
 
 #### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Schritt 2: Erstellen und Starten der Spear-Phishing-Kampagne
 
-1. Wechseln Sie im Security & Compliance Center zum **Threat Management** \> - **Angriffs Simulator**.
+1. Wechseln Sie im Security & Compliance Center zum **Threat Management** - \> **Angriffs Simulator**.
 
 2. Wählen Sie auf der Seite **Angriffe simulieren** eine der folgenden Optionen basierend auf der Art der Kampagne aus, die Sie erstellen möchten:
 
@@ -235,7 +235,7 @@ In Attack Simulator stehen zwei verschiedene Arten von Kenn Wort Angriffs Kampag
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Erstellen und Starten einer Kenn Wort Angriffs Kampagne
 
-1. Wechseln Sie im Security & Compliance Center zum **Threat Management** \> - **Angriffs Simulator**.
+1. Wechseln Sie im Security & Compliance Center zum **Threat Management** - \> **Angriffs Simulator**.
 
 2. Wählen Sie auf der Seite **Angriffe simulieren** eine der folgenden Optionen basierend auf der Art der Kampagne aus, die Sie erstellen möchten:
 
@@ -291,7 +291,7 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Erfolgreiche Versuche**: die Anzahl der Benutzer, die auf den Link geklickt **und** Ihre Anmeldeinformationen eingegeben haben (*beliebiger* Benutzername und Kennwortwert).
 
-- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** / berechnet wird.**Gesamtzahl der Benutzer**, die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen**berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
 - **Schnellster Mausklick**: wie lange es dauerte, bis der erste Benutzer auf den Link klickt, nachdem Sie die Kampagne gestartet haben.
 
@@ -331,7 +331,7 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Erfolgreiche Versuche**: die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Vorschau wird nicht gezählt).
 
-- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** / berechnet wird.**Gesamtzahl der Benutzer**, die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen**berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
 - **Schnellste Anlage Open Time**: wie lange dauerte es, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
 
@@ -349,7 +349,7 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Erfolgreiche Versuche**: die Anzahl der Benutzer, bei denen festgestellt wurde, dass Sie eines der angegebenen Kennwörter verwenden.
 
-- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** / berechnet wird.**Gesamtzahl der Benutzer**, die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen**berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.
 
 - Im Abschnitt **kompromittierte Benutzer** werden die e-Mail-Adressen der betroffenen Benutzer aufgelistet. Sie können auf **exportieren** klicken, um die Ergebnisse in eine CSV-Datei zu exportieren.
 
@@ -363,4 +363,4 @@ Die folgenden Informationen sind auf der Seite mit den **Angriffs Details** für
 
 - **Erfolgreiche Versuche**: die Anzahl der Benutzer, für die das angegebene Kennwort verwendet wurde.
 
-- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen** / berechnet wird.**Gesamtzahl der Benutzer**, die gezielt sind.
+- **Gesamterfolgs Rate**: ein Prozentsatz, der von **erfolgreichen versuchen**berechnet wird  /  .**Gesamtzahl der Benutzer**, die gezielt sind.

@@ -23,7 +23,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: "Schritt\_4: Bereitstellen von Produktivitäts-apps und-Diensten"
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: "Schritt\_5: Erstellen von Kommunikations Standorten"
+        - name: "Schritt\_5: Erstellen von Kommunikationsveranstaltungsorten"
           href: empower-people-to-work-remotely-communication-venues.md
         - name: Schritt 6. Schulen von Remotemitarbeitern
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -81,7 +81,7 @@
         - name: Telefonie-Lösungen
           items:
             - name: Auswählen Ihrer Lösung
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Fallstudie für Multi-National Corporation
               href: null
         - name: Dateizusammenarbeit in SharePoint mit Microsoft 365
@@ -89,7 +89,7 @@
         - name: Planen eines intelligenten SharePoint-Intranets
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: OneDrive Leitfaden für Unternehmen
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Sicherheit
       items:
         - name: Wichtige Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: 'Sicherheitshürden, über die Sie segeln können'
       href: security-design-principles.md
+    - name: Vernetzen (zur Cloud)
+      href: networking-design-principles.md
 - name: Microsoft 365-Bereitstellungsressourcen
   items:
     - name: Bereitstellen von Microsoft 365

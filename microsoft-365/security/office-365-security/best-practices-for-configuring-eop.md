@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese Best Practice-Empfehlungen für den eigenständigen Exchange Online Schutz (EoP), um sich für den Erfolg einzusetzen und häufige Konfigurationsfehler zu vermeiden.
-ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351927"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587532"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden für die Konfiguration eigenständiger EoP
 
@@ -56,7 +56,7 @@ Diese Einstellungen umfassen eine Reihe von Features, die sich außerhalb von Si
 |[PowerShell-Konnektivität](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Deaktiviert|Deaktiviert|Verfügbar für Postfachbenutzer oder e-Mail-Benutzer (Benutzerobjekte, die vom Cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) zurückgegeben werden).|
 |Verwenden von [Spoofing Intelligence](learn-about-spoof-intelligence.md) zum Whitelisting von Absendern, wann immer möglich|Ja|Ja||
 |[Verzeichnisbasierte Edge-Blockierung (Blockierung)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiviert|Aktiviert|Domain-Typ = autorisierend|
-|[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiviert|Aktiviert||
+|[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiviert|Aktiviert||
 |
 
 ## <a name="troubleshooting"></a>Problembehandlung
