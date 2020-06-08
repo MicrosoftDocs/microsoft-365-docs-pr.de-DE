@@ -885,8 +885,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: Schutz von Daten
-          href: gdpr-information-protection.md
         - name: Anträge betroffener Personen
           items:
             - name: Anträge betroffener Personen
@@ -927,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: Schutz von Daten
+          href: gdpr-information-protection.md
         - name: Datenschutzbeauftragter von Microsoft
           href: gdpr-data-protection-officer.md
+        - name: Zusätzliche Schritte zum Exportieren der vom System generierten Protokolldaten
+          href: gdpr-system-generated-log-data.md
 - name: Hybridcompliancefunktionen
   items:
     - name: Exchange Online-E-Mailverschlüsselung mit AD RMS
