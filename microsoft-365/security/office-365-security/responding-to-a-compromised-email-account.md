@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto mit den in Microsoft 365 verfügbaren Tools erkennen und darauf reagieren.
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033830"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588216"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
@@ -87,7 +87,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 > [!WARNING]
 > Senden Sie das neue Kennwort nicht per E-Mail an den vorgesehenen Benutzer, da der Angreifer weiterhin Zugriff auf das Postfach hat.
 
-1. Befolgen Sie die Anweisungen zu „Zurücksetzen eines Microsoft 365 Apps for Business-Kennworts für eine andere Person“ unter [Zurücksetzen von Microsoft 365 Apps for Business-Kennwörtern](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Befolgen Sie die Anweisungen zu „Zurücksetzen eines Microsoft 365 Apps for Business-Kennworts für eine andere Person“ unter [Zurücksetzen von Microsoft 365 Apps for Business-Kennwörtern](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Hinweise**:
 
@@ -98,7 +98,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 - Wenn Ihre lokale Identität mit Microsoft 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
 
 > [!TIP]
-> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie [hier](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie [hier](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2: Entfernen Sie verdächtige E-Mail-Weiterleitungsadressen.
 
@@ -202,4 +202,4 @@ Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen 
 
 - [Securities and Exchange Commission – Phishing-Betrug](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- Um Spam direkt an Microsoft und Ihren Admin zu melden, [verwenden Sie das Report Message-Add-In](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- Um Spam direkt an Microsoft und Ihren Admin zu melden, [verwenden Sie das Report Message-Add-In](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
