@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588452"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616634"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -46,9 +46,9 @@ Administratoren können Exchange Online PowerShell verwenden, um den Status der 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie können nur Exchange Online PowerShell verwenden, um diese Verfahren auszuführen. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Sie können nur Exchange Online PowerShell verwenden, um diese Verfahren auszuführen. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Insbesondere benötigen Sie die Rolle **"e-Mail-Empfänger** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung**", " **Empfängerverwaltung**" und " **benutzerdefinierte e-Mail-Empfänger** " zugewiesen ist) oder die Rolle " **Benutzeroptionen** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung** " und " **Helpdesk** " zugewiesen ist). Informationen zum Hinzufügen von Benutzern zu Rollengruppen in Exchange Online finden Sie unter [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Beachten Sie, dass ein Benutzer mit Standardberechtigungen dieselben Verfahren in seinem eigenen Postfach ausführen kann, solange Sie [Zugriff auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)haben.
+- Sie müssen Berechtigungen zugewiesen haben, bevor Sie diese Verfahren ausführen können. Insbesondere benötigen Sie die Rolle **"e-Mail-Empfänger** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung**", " **Empfängerverwaltung**" und " **benutzerdefinierte e-Mail-Empfänger** " zugewiesen ist) oder die Rolle " **Benutzeroptionen** " (die standardmäßig der Rollengruppe " **Organisationsverwaltung** " und " **Helpdesk** " zugewiesen ist). Informationen zum Hinzufügen von Benutzern zu Rollengruppen in Exchange Online finden Sie unter [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Beachten Sie, dass ein Benutzer mit Standardberechtigungen dieselben Verfahren in seinem eigenen Postfach ausführen kann, solange Sie [Zugriff auf Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)haben.
 
 - In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zur Zustellung von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 

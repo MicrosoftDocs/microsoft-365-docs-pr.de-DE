@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235044"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617174"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -45,7 +45,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht aufgefüllt – verwenden Sie die Spalte SHA1, wenn verfügbar. |
+| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountName` | string | Benutzername des Kontos |
@@ -68,7 +68,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `FileOriginIP` | string | IP-Adresse, von der die Datei heruntergeladen wurde |
 | `AdditionalFields` | string | Weitere Informationen zum Ereignis im JSON-Array Format |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |
-| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht aufgefüllt – verwenden Sie die Spalte SHA1, wenn verfügbar. |
+| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessFolderPath` | string | Ordner mit dem Prozess (Image-Datei), der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln (Transportregeln) verwenden, um Massen-e-Mails (Gray Mail) in Exchange Online Protection (EoP) zu identifizieren und zu filtern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 860c9a1af2cb560c4fd966b303501686a1cbfea7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352396"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613312"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Verwenden von Regeln zum Filtern von Massen-E-Mails in EOP
 
@@ -41,7 +41,7 @@ In diesem Thema wird erläutert, wie Sie diese Nachrichtenfluss Regeln in der Ex
 
 - Informationen zum Öffnen des EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Informationen zum Öffnen der Exchange-Verwaltungskonsole in eigenständigen EoP finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Weitere Informationen zu Nachrichtenfluss Regeln in Exchange Online und eigenständigen EoP finden Sie in den folgenden Themen:
 
@@ -148,7 +148,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob e-Mail-Flus
 
 - Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** \> Wählen Sie die Regel \> Klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/ITPro-EAC-EditIcon.png) , und überprüfen Sie die Einstellungen.
 
-- Ersetzen Sie in PowerShell den \< Regelnamen \> durch den Namen der Regel, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
+- Ersetzen Sie in PowerShell \<Rule Name\> durch den Namen der Regel, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

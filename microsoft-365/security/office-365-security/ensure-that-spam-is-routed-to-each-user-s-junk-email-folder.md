@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in einer Exchange Online Protection Hybrid-Umgebung weiterleiten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351963"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617054"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen
 
@@ -60,7 +60,7 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenfluss Regeln in der E
 
   - Gibt an, ob die Junk-e-Mail-Regel für das Postfach aktiviert ist (der Parameterwert _Enabled_ ist $true im Cmdlet " [MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) " im Exchange-Verwaltungsshell). Es handelt sich um die Junk-e-Mail-Regel, die die Nachricht nach der Zustellung in den Junk-e-Mail-Ordner verschiebt. Standardmäßig ist die Junk-e-Mail-Regel für Postfächer aktiviert. Weitere Informationen finden Sie unter [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Informationen zum Öffnen des EAC auf einem Exchange Server finden Sie unter [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Informationen zum Öffnen des Exchange-Verwaltungsshell finden Sie unter [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
+- Informationen zum Öffnen des EAC auf einem Exchange Server finden Sie unter [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Informationen zum Öffnen des Exchange-Verwaltungsshell finden Sie unter [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
 
 - Weitere Informationen zu Nachrichtenfluss Regeln in lokalen Exchange finden Sie in den folgenden Themen:
 
@@ -134,7 +134,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie den eig
 
 - Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**, wählen Sie die Regel **Edit** aus, und klicken Sie dann auf ![ Bearbeitungssymbol bearbeiten, ](../../media/ITPro-EAC-EditIcon.png) um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in der Exchange-Verwaltungsshell \< Regelname \> durch den Namen der Nachrichtenfluss Regel, und Regel Sie den folgenden Befehl, um die Einstellungen zu überprüfen:
+- Ersetzen Sie im Exchange-Verwaltungsshell \<RuleName\> durch den Namen der e-Mail-Fluss Regel, und Regel Sie den folgenden Befehl, um die Einstellungen zu überprüfen:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

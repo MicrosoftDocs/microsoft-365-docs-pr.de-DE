@@ -1,7 +1,7 @@
 ---
 title: DeviceNetworkEvents-Tabelle im Advanced Hunting-Schema
 description: Informationen zu Netzwerk Verbindungsereignissen, die Sie in der DeviceNetworkEvents-Tabelle des Advanced Hunting-Schemas Abfragen können
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, devicenetworkevents, NetworkCommunicationEvents, Netzwerk Verbindung, Remote-IP, lokale IP-Adresse
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, devicenetworkevents, NetworkCommunicationEvents, Netzwerkverbindung, Remote-IP, lokale IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929040"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617118"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -50,6 +50,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `LocalIPType` | string | Typ der IP-Adresse, beispielsweise Public, private, reservierte, Loopback, Teredo, FourToSixMapping und Broadcast |
 | `RemoteIPType` | string | Typ der IP-Adresse, beispielsweise Public, private, reservierte, Loopback, Teredo, FourToSixMapping und Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |
+| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Image-Datei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |

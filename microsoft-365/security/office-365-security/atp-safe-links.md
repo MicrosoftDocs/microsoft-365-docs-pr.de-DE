@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
-ms.openlocfilehash: f71ff8d625c6c365f39fd581f3483c8a0384d817
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587544"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616766"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
 
@@ -69,7 +69,7 @@ Wenn [ATP neue Features hinzugefügt werden](office-365-atp.md#new-features-in-o
 |---------|---------|
 |globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Sicherheitsadministrator|Azure Active Directory Admin Center ( <https://aad.portal.azure.com> )|
-|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( <https://outlook.office365.com/ecp> ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( <https://outlook.office365.com/ecp> ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>So stellen Sie sicher, dass der ATP-Schutz für sichere Links vorhanden ist
 

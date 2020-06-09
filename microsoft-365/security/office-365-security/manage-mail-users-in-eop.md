@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: In diesem Artikel erfahren Sie, wie Sie e-Mail-Benutzer in Exchange Online Protection (EoP) verwalten, einschließlich der Verwendung der Verzeichnissynchronisierung, der Exchange-Verwaltungskonsole und PowerShell zum Verwalten von Benutzern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352432"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616834"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
@@ -35,7 +35,7 @@ Für eigenständige EoP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
 - Informationen zum Öffnen des Exchange Admin Center (EAC) finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie e-Mail-Benutzer in EoP PowerShell erstellen, stoßen Sie möglicherweise auf Drosselung. Außerdem verwenden die EoP-PowerShell-Cmdlets eine Batch Verarbeitungsmethode, die zu einer Ausbreitungs Verzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle sichtbar sind.
 
@@ -139,7 +139,7 @@ Führen Sie den folgenden Befehl aus, um eine Zusammenfassungsliste aller e-Mail
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-Wenn Sie detaillierte Informationen zu einem bestimmten e-Mail-Benutzer anzeigen möchten, ersetzen Sie \< MailUserIdentity \> durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie die folgenden Befehle aus:
+Wenn Sie detaillierte Informationen zu einem bestimmten e-Mail-Benutzer anzeigen möchten, ersetzen Sie \<MailUserIdentity\> durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie die folgenden Befehle aus:
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-EOPM
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Verwenden eigenständiger EoP PowerShell zum Entfernen von e-Mail-Benutzern
 
-Wenn Sie e-Mail-Benutzer in eigenständiger EoP PowerShell entfernen möchten, ersetzen Sie \< MailUserIdentity \> durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie den folgenden Befehl aus:
+Wenn Sie e-Mail-Benutzer in eigenständiger EoP PowerShell entfernen möchten, ersetzen Sie \<MailUserIdentity\> durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Verwenden Sie eines der folgenden Verfahren, um zu überprüfen, ob Sie e-Mail-B
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Ersetzen \< \> Sie MailUserIdentity durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie die folgenden Befehle aus, um die Einstellungen zu überprüfen:
+- Ersetzen \<MailUserIdentity\> Sie durch den Namen, den Alias oder den Kontonamen des e-Mail-Benutzers, und führen Sie die folgenden Befehle aus, um die Einstellungen zu überprüfen:
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

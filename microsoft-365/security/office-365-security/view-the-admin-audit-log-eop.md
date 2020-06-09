@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351861"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613324"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 
@@ -32,7 +32,7 @@ Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grun
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle nur anzeigen", die standardmäßig den Rollengruppen ComplianceManagement, Mitglied (globale Administratoren) und SecurityAdministrator zugewiesen sind. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -86,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - Datum/Uhrzeit-Wert in UTC, z. B.: "2016-05-06 14:30:00z".
 
-  - Geben Sie den Wert für Datum/Uhrzeit als Formel an, die das Datum/die Uhrzeit in Ihrer lokalen Zeitzone in UTC konvertiert: beispielsweise `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Weitere Informationen finden Sie unter [Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Geben Sie den Wert für Datum/Uhrzeit als Formel an, die das Datum/die Uhrzeit in Ihrer lokalen Zeitzone in UTC konvertiert: beispielsweise `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Weitere Informationen finden Sie unter [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - Das Cmdlet gibt standardmäßig maximal 1.000 Protokolleinträge zurück. Verwenden Sie den _resultse_ -Parameter, um bis zu 250.000 Protokolleinträge anzugeben. Oder verwenden Sie den Wert `Unlimited` , um alle Einträge zurückzugeben.
 

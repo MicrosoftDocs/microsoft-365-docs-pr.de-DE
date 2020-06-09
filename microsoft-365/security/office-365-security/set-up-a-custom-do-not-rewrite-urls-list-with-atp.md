@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: c75f468aa98c8fa9e45cd596c62a7509310fdca5
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588132"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617242"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
@@ -45,7 +45,7 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 |---------|---------|
 |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
 |Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

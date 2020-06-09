@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 54b896616cf09c84525b812fed6fb3f35b07bf10
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588088"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617218"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -55,7 +55,7 @@ Wenn ATP-sichere Links aktiviert sind und ein Benutzer auf einen Link in einer e
     |---------|---------|
     |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
     |Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-    |Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
 
     Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -146,7 +146,7 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 |**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |
 |**Folgende URLs dürfen nicht umgeschrieben werden** <br/> |Lässt URLs so wie Sie sind. Speichert eine benutzerdefinierte Liste sicherer URLs, die nicht für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation überprüft werden müssen.  Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste "nicht umschreiben"-URLs mit ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich der letzten Änderungen bei der Unterstützung von Platzhalter Sternchen ( \* ).  <br/> |
    
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Sobald Ihre ATP-Richtlinien für sichere Links vorhanden sind, können Sie sehen, wie ATP für Ihre Organisation funktioniert, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
 

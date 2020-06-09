@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können erfahren, wie Sie URL-und Dateieinträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: b3a25458bbde2b3a78cfecc60ccb75fe298013f7
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419261"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613420"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Verwalten von URLs und Dateien in der Liste "Mandanten zulassen/blockieren"
 
@@ -56,7 +56,7 @@ In diesem Thema wird beschrieben, wie Sie Einträge in der Liste "Allow/Block" d
 
 - Standardmäßig laufen Einträge in der Liste Mandanten-Allow/Block nach 30 Tagen ab. Sie können ein Datum angeben oder festlegen, dass es nie abläuft.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um Werte aus der Liste "Allow/Block" für Mandanten hinzuzufügen und daraus zu entfernen. Sie müssen ein Mitglied der Rollengruppe **Sicherheits Leser** sein, um den schreibgeschützten Zugriff auf die Liste der zugelassenen und blockierten Mandanten zu erhalten. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 

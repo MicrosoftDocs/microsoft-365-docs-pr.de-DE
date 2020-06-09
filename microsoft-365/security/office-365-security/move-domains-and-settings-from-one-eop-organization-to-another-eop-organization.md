@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EoP)-Organisation (Mandant) zu einer anderen migrieren.
-ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588192"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617450"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
@@ -59,7 +59,7 @@ Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Si
   > [!NOTE]
   > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenfluss Regelsammlung wird derzeit nur für EoP Premium-Abonnement Pläne unterstützt.
 
-Die einfachste Möglichkeit zum Sammeln aller Einstellungen ist die Verwendung von PowerShell. Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Die einfachste Möglichkeit zum Sammeln aller Einstellungen ist die Verwendung von PowerShell. Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Als Nächstes können Sie alle Einstellungen sammeln und sie in eine XML-Datei exportieren, um sie in den Zielmandanten zu importieren. Im Allgemeinen können Sie bei jeder Einstellung die Ausgabe des Cmdlets **Get** in das Cmdlet **Export-Clixml** übergeben, um die Einstellungen in XML-Dateien zu speichern, wie im folgenden Beispielcode dargestellt.
 

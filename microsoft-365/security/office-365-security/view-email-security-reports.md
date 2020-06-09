@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
-ms.openlocfilehash: e62d64ec062653c5292f98c2456cd26275916dca
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 6fc77696625fb11d4ebfc6f339939c751c7a45f2
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566740"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613456"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -237,7 +237,7 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
 
   -Organisationsverwaltung-Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )-Sicherheits Leser
 
-- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   -Organisationsverwaltung-nur Ansichts Organisationsverwaltung-ansichtsbasierte Empfänger Rolle – Compliance-Management
 

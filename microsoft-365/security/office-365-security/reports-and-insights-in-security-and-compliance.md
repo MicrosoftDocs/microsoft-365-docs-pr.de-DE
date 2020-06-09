@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security and Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588156"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617308"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im Security &amp; Compliance Center
 
@@ -54,11 +54,6 @@ Im Security Compliance Center steht eine Vielzahl von Berichten zur Verfügung &
 |**Überwachungsprotokoll** <br/> Informationen über Microsoft 365-Aktivitäten, Benutzer, Dateien oder Ordner und mehr  <br/> |&amp;Wechseln Sie im Security Compliance Center zu **Search &amp; Investigation** \> **Audit Log Search** . <br/> |[Durchsuchen des Überwachungsprotokolls im Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Kompatibilitätsberichte** <br/> FedRAMP-Berichte, Governance, Risiko- und Complianceberichte, Berichte über die ISO-Informationssicherheitsverwaltung und SOC-Überwachungs- und Beurteilungsberichte (Service Organization Controls)  <br/> |&amp;Wechseln Sie im Security Compliance Center zu **Dienst Assurance** - \> **Konformitätsberichten** . <br/> |[Planen der Sicherheits &amp; Konformität in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Weitere Schritte
-
-Nun, da Sie eine Übersicht über Berichte und Einblicke haben, erfahren Sie im nächsten Schritt, wie Sie Berichte anpassen, verwalten und herunterladen können. Lesen Sie die folgenden Artikel:
-  
-
     
 ## <a name="related-topics"></a>Verwandte Themen
 

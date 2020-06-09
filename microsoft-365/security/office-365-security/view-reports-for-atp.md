@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten f체r Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566728"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613360"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten f체r Office 365 Advanced Threat Protection
 
@@ -152,7 +152,7 @@ Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden k�
   - Sicherheits Operator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Sicherheitsleseberechtigter
 
-- F체r Exchange Online m체ssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- F체r Exchange Online m체ssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organisationsverwaltung
   - Organisationsverwaltung mit Leserechten

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie ausgehende Spam Richtlinien in Exchange Online Protection (EoP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351999"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616578"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EoP
 
@@ -77,7 +77,7 @@ Um die Effektivität der ausgehenden Spamfilterung zu verbessern, können Sie be
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Zum Hinzufügen, ändern und Löschen von ausgehenden Spam Richtlinien müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein. Für den schreibgeschützten Zugriff auf ausgehende Spam Richtlinien müssen Sie Mitglied der Rollengruppe **Sicherheits Leser** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -178,7 +178,7 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
 6. Erforderlich Erweitern Sie den Abschnitt **angewendet für** , um die internen Absender zu identifizieren, auf die die Richtlinie angewendet wird.
 
-    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Mehrere Werte der gleichen Bedingung oder Ausnahme Verwendung oder Logik (beispielsweise _ \< sender1 \> _ oder _ \< sender2 \> _). Unterschiedliche Bedingungen oder Ausnahmen: Verwendung und Logik (beispielsweise _ \< sender1 \> _ und _ \< Mitglied von Gruppe \> 1_).
+    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Mehrere Werte der gleichen Bedingung oder Ausnahme verwenden oder Logik (beispielsweise _\<sender1\>_ oder _\<sender2\>_ ). Unterschiedliche Bedingungen oder Ausnahmen: Verwendung und Logik (beispielsweise _\<sender1\>_ und _\<member of group 1\>_ ).
 
     Um alle verfügbaren Bedingungen anzuzeigen, ist es am einfachsten, wenn Sie auf **Bedingung hinzufügen** klicken. Sie können auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png) klicken, um Bedingungen zu entfernen, die Sie nicht konfigurieren möchten.
 
@@ -286,7 +286,7 @@ Das Erstellen einer ausgehenden Spam Richtlinie in PowerShell erfolgt in einem z
 
   - Erstellen Sie die neue Richtlinie als deaktiviert (_aktiviert_ im `$false` Cmdlet **New-HostedOutboundSpamFilterRule** ).
 
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Prioritäts_ _ \< Nummer \> _) für das Cmdlet **New-HostedOutboundSpamFilterRule** fest.
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ _\<Number\>_ ) für das Cmdlet **New-HostedOutboundSpamFilterRule** fest).
 
 - Eine neue Richtlinie für ausgehende Spamfilter, die Sie in PowerShell erstellen, ist erst im Security & Compliance Center sichtbar, wenn Sie die Richtlinie einer Spamfilter Regel zuweisen.
 

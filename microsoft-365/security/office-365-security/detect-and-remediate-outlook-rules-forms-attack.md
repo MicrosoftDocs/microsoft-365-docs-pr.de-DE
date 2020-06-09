@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und Injektionen von benutzerdefinierten Formularen in Office 365 erkennen und beheben können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588264"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613384"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Erkennen und Beheben von Outlook-Regeln und benutzerdefinierten Formularen Injektionsangriffe
 
@@ -173,7 +173,7 @@ Es gibt zwei Remote-PowerShell-Cmdlets, mit denen Sie gefährliche Regeln entfer
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Schritte für Postfächer auf einem Exchange-Server
 
-1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit dem Exchange-Server her. Führen Sie die Schritte unter [Verbinden mit Exchange-Servern mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)aus.
+1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit dem Exchange-Server her. Führen Sie die Schritte unter [Verbinden mit Exchange-Servern mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)aus.
 
 2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln aus einem Postfach vollständig entfernen möchten, verwenden Sie das Cmdlet [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
@@ -181,7 +181,7 @@ Es gibt zwei Remote-PowerShell-Cmdlets, mit denen Sie gefährliche Regeln entfer
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Schritte für Postfächer in Exchange Online
 
-1. Führen Sie die Schritte unter [Verbinden mit Exchange Online mithilfe von PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)aus.
+1. Führen Sie die Schritte unter [Verbinden mit Exchange Online mithilfe von PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)aus.
 
 2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln aus einem Postfach vollständig entfernen möchten, verwenden Sie das Cmdlet [Remove-Posteingangsregel](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 

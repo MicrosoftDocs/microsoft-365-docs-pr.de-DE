@@ -1,5 +1,5 @@
 ---
-title: Exchange Admin Center in eigenständigen EoP
+title: Exchange Admin Center in EOP als eigenständige Lösung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Webverwaltungsoberfläche in eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209731"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616998"
 ---
-# <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in eigenständigen EoP
+# <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in EOP als eigenständige Lösung
 
 Das Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Schutz (EoP).
 
@@ -70,7 +70,7 @@ Dies ist die erste Navigationsebene für die meisten Aufgaben, die Sie in der Ex
 
 - **Nachrichtenfluss**: Hier können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln), akzeptierte Domänen und Connectors verwalten sowie den Weg zur Ausführung der Nachrichtenablaufverfolgung.
 
-- **Hybrid**: Dies ist der Ort, an dem Sie den [Assistenten für die Hybrid Konfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen können und auf dem Sie das [Exchange Online-PowerShell-Modul](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)installieren können.
+- **Hybrid**: Dies ist der Ort, an dem Sie den [Assistenten für die Hybrid Konfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen können und auf dem Sie das [Exchange Online-PowerShell-Modul](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)installieren können.
 
 ### <a name="tabs"></a>Registerkarten
 

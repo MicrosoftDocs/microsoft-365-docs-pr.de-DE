@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel werden die Änderungen erläutert, die für die Schutzfunktionen in Azure Information Protection ausgeführt werden.
-ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c2f386e17d3c0da74f360a7b1262a2f32dbf92cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035604"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616734"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Schutzfunktionen in Azure Information Protection, die für vorhandene Mandanten bereitstellen
 
@@ -75,7 +75,7 @@ Weitere Informationen zu diesen Registrierungs Konfigurationen finden Sie unter 
 
 Wenn Sie die bevorstehende Änderung deaktivieren möchten, führen Sie die folgenden Schritte aus:
 
-1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Führen Sie das Cmdlet "IRMConfiguration" mit der folgenden Syntax aus:
 

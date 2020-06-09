@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in eigenständigen Exchange Online Schutzorganisationen können Informationen zum Erstellen, ändern und Entfernen von Verteilergruppen und e-Mail-aktivierten Sicherheitsgruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenständigen Exchange Online Protection (EoP) PowerShell EoP.
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352191"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616502"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -38,7 +38,7 @@ Sie können Gruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenst�
 
 - Informationen zum Öffnen des Exchange Admin Center finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie Gruppen in eigenständigen EoP PowerShell verwalten, treten möglicherweise Einschränkungen auf. In den PowerShell-Verfahren in diesem Thema wird eine Batch Verarbeitungsmethode verwendet, die zu einer Ausbreitungs Verzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
@@ -141,7 +141,7 @@ Führen Sie den folgenden Befehl aus, um eine Zusammenfassungsliste aller Vertei
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-Um die Liste der Gruppenmitglieder zurückzugeben, ersetzen Sie \< GroupIdentity \> durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus:
+Um die Liste der Gruppenmitglieder zurückzugeben, ersetzen Sie \<GroupIdentity\> durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus:
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Ve
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- Ersetzen \< \> Sie GroupIdentity durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
+- Ersetzen \<GroupIdentity\> Sie durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- Um die Gruppenmitglieder anzuzeigen, ersetzen Sie \< GroupIdentity \> durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus:
+- Um die Gruppenmitglieder anzuzeigen, ersetzen Sie \<GroupIdentity\> durch den Namen, den Alias oder die e-Mail-Adresse der Gruppe, und führen Sie den folgenden Befehl aus:
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

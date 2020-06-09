@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
+ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432604"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604310"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -195,6 +195,35 @@ Sie können jedoch beide Protection-Lösungen zusammen verwenden, und das Verhal
 - Wenn Sie eine der zusätzlichen IRM-Bibliothekseinstellungen aktiviert haben, die verhindern, dass Benutzer Dokumente hochladen können, die IRM nicht unterstützen, werden diese Einstellungen erzwungen.
 
 Mit diesem Verhalten können Sie sicher sein, dass alle Office-und PDF-Dateien vor nicht autorisiertem Zugriff geschützt werden, wenn Sie heruntergeladen werden, auch wenn Sie nicht mit einer Bezeichnung versehen sind. Beschriftete Dateien, die hochgeladen werden, profitieren jedoch nicht von den neuen Funktionen.
+
+## <a name="search-for-documents-by-sensitivity-label"></a>Suchen nach Dokumenten nach Sensitivitäts Bezeichnung
+
+Verwenden Sie die verwaltete Eigenschaft **InformationProtectionLabelId** , um nach allen Dokumenten in SharePoint oder OneDrive zu suchen, die eine bestimmte Vertraulichkeits Bezeichnung aufweisen. Verwenden Sie die folgende Syntax:`InformationProtectionLabelId:<GUID>`
+
+Um beispielsweise nach allen Dokumenten zu suchen, die als "vertraulich" bezeichnet wurden und diese Bezeichnung eine GUID von "8faca7b8-8d20-48a3-8ea2-0f96310a848e" aufweist, geben Sie Folgendes im Suchfeld ein:
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+Verwenden Sie das [Get-Label-](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) Cmdlet, um die GUIDs für Ihre Vertraulichkeits Bezeichnungen abzurufen:
+    
+1. Stellen Sie [zunächst eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    Melden Sie sich beispielsweise bei einer PowerShell-Sitzung, die Sie als Administrator ausführen, mit einem globalen Administratorkonto an:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Führen Sie dann den folgenden Befehl aus:
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+Weitere Informationen zur Verwendung von verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Deaktivieren von Sensitivitäts Bezeichnungen für SharePoint und OneDrive (Opt-out)
 

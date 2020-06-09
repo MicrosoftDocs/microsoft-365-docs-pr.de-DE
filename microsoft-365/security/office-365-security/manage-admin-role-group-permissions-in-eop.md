@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratoren können erfahren, wie Sie Berechtigungen in der Exchange-Verwaltungskonsole (EAC) in Exchange Online Protection zuweisen oder entfernen.
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352335"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616514"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
 
@@ -29,7 +29,7 @@ Weitere Informationen zu Rollen und Rollengruppen finden Sie unter [Permissions 
 
 - Informationen zum Öffnen des Exchange Admin Center (EAC) finden Sie unter [Exchange Admin Center in Standalone EoP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Öffnen eigenständiger EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Informationen zum Öffnen eigenständiger EoP PowerShell finden Sie unter [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle "Rollenverwaltung", die standardmäßig der Rollengruppe Mitglied (globale Administratoren) zugewiesen ist. Weitere Informationen finden Sie unter [Berechtigungen in eigenständigen EoP](feature-permissions-in-eop.md) und [Verwenden der Exchange-Verwaltungskonsole ändern der Liste der Mitglieder in Rollengruppen](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -240,7 +240,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Ro
 
 - Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, und überprüfen Sie, ob die Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detail **Edit** Bereich, oder klicken Sie auf ![ Bearbeitungssymbol bearbeiten ](../../media/ITPro-EAC-EditIcon.png) , um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in Exchange Online PowerShell den Namen der \< Rollengruppe \> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell \<Role Group Name\> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

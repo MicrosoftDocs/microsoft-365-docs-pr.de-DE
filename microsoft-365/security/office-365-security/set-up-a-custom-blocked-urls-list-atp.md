@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie eine Liste blockierter URLs für Ihre Organisation mit Office 365 Advanced Threat Protection einrichten.
-ms.openlocfilehash: 9bf4417044dab5488e2945ccea5fa30a7fd4113d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588144"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617264"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links
 
@@ -49,7 +49,7 @@ Um ATP-Richtlinien zu bearbeiten oder zu definieren, müssen Sie einer der in de
 |---------|---------|
 |globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Sicherheitsadministrator|Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

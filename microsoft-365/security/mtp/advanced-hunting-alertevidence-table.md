@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a58d1e5db2ea8689d4909e6e9c47b08a6e94d34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929146"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617086"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -40,7 +40,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `EntityType` | string | Objekttyp, beispielsweise eine Datei, ein Prozess, ein Gerät oder ein Benutzer |
 | `EvidenceRole` | string | Wie die Entität an einer Warnung beteiligt ist und angibt, ob Sie betroffen ist oder lediglich mit ihr zusammenhängen soll |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht aufgefüllt, wenn es verfügbar ist, verwenden Sie die SHA1-Spalte. |
+| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |
 | `RemoteUrl` | string | URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde |
 | `AccountName` | string | Benutzername des Kontos |

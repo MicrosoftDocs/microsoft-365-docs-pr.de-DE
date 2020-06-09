@@ -1,7 +1,7 @@
 ---
 title: DeviceProcessEvents-Tabelle im Advanced Hunting-Schema
 description: Erfahren Sie mehr über das Prozess Laichen oder Erstellen von Ereignissen in der DeviceProcessEventstable des Advanced Hunting-Schemas.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, processcreationevents, DeviceProcessEvents, Prozess-ID, Befehl DeviceProcessEvents-Reihe
+keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, processcreationevents, DeviceProcessEvents, Prozess-ID, Befehlszeile, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eae1eff69fa6a91413e3f2dd6644c9c27549968e
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: a6e22dc9462ff8f06f171b71b2d68973fd87cc63
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234774"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617472"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -44,7 +44,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht aufgefüllt, wenn es verfügbar ist, verwenden Sie die SHA1-Spalte. |
+| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `ProcessId` | int | Prozess-ID (PID) des neu erstellten Prozesses |
 | `ProcessCommandLine` | string | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
@@ -62,7 +62,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessIntegrityLevel` | string | Integritätsstufe des Prozesses, der das Ereignis initiiert hat. Windows weist Prozessen auf der Grundlage bestimmter Merkmale Integritätsstufen zu, beispielsweise, wenn Sie von einem Internet Download aus gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
 | `InitiatingProcessTokenElevation` | string | Tokentyp, der angibt, dass die Rechteerweiterung "Benutzerzugriffssteuerung" (UAC) auf den Prozess angewendet wird, der das Ereignis initiiert hat |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Image-Datei), der das Ereignis initiiert hat |
-| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht aufgefüllt – verwenden Sie die Spalte SHA1, wenn verfügbar. |
+| `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Image-Datei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Image-Datei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |

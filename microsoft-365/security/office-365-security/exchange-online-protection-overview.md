@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Exchange Online Protection (EoP) zum Schutz Ihrer lokalen e-Mail-Organisation in eigenständigen und Hybriden Umgebungen beitragen kann.
-ms.openlocfilehash: 7a019b2651eda114bab8dcf9df6d9a6201558704
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206681"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616986"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -109,6 +109,6 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
 
 - [Exchange Admin Center in eigenständiger EoP](exchange-admin-center-in-exchange-online-protection-eop.md): Beschreibt, wie auf die Verwaltungsschnittstelle der Exchange-Verwaltungskonsole zugegriffen und diese navigiert wird, um den EoP-Dienst zu verwalten.
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): enthält Informationen zur Remote-PowerShell, mit der Sie Ihren EoP-Dienst über die Befehlszeile verwalten können.
+- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): enthält Informationen zur Remote-PowerShell, mit der Sie Ihren EoP-Dienst über die Befehlszeile verwalten können.
 
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support.

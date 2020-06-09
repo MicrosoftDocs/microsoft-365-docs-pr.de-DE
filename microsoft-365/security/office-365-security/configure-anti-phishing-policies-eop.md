@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die AntiPhishing-Richtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EoP)-Organisationen mit oder ohne Exchange Online Postfächern verfügbar sind.
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352057"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616698"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurieren von Anti-Phishing-Richtlinien in EoP
 
@@ -69,7 +69,7 @@ Um die Effektivität des Anti-Phishing-Schutzes zu verbessern, können Sie benut
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Anti-Phishing** wechseln möchten, verwenden Sie <https://protection.office.com/antiphishing> .
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   Sie können keine Anti-Phishing-Richtlinien in eigenständigen EoP PowerShell verwalten.
 
@@ -103,7 +103,7 @@ Wenn Sie eine Anti-Phishing-Richtlinie erstellen, können Sie nur den Richtlinie
 
 4. Identifizieren Sie auf der Seite **angewendet auf** , die angezeigt wird, die internen Empfänger, auf die die Richtlinie angewendet wird.
 
-   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
+   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Mehrere Werte der gleichen Bedingung oder Ausnahme verwenden oder Logik (beispielsweise _\<recipient1\>_ oder _\<recipient2\>_ ). Unterschiedliche Bedingungen oder Ausnahmen: Verwendung und Logik (beispielsweise _\<recipient1\>_ und _\<member of group 1\>_ ).
 
    Klicken Sie auf **Bedingung hinzufügen**. Wählen Sie in der Dropdownliste, die angezeigt wird, eine Bedingung unter **angewendet, wenn**:
 
@@ -141,11 +141,11 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
 
 2. Wählen Sie die benutzerdefinierte Richtlinie zum Schutz vor Phishing aus, die Sie ändern möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt. Durch Klicken auf **Bearbeiten** in einem beliebigen Abschnitt erhalten Sie Zugriff auf die Einstellungen in diesem Abschnitt.
+3. Das Flyout **Richtlinie \<name\> Bearbeiten** wird angezeigt. Durch Klicken auf **Bearbeiten** in einem beliebigen Abschnitt erhalten Sie Zugriff auf die Einstellungen in diesem Abschnitt.
 
    - Die folgenden Schritte werden in der Reihenfolge angezeigt, in der die Abschnitte dargestellt werden, Sie sind jedoch nicht sequenziell (Sie können die Abschnitte in beliebiger Reihenfolge auswählen und ändern).
 
-   - Nachdem Sie in einem Abschnitt auf **Bearbeiten** klicken, werden die verfügbaren Einstellungen in einem Assistenten Format angezeigt, Sie können jedoch in beliebiger Reihenfolge innerhalb der Seiten springen, und Sie können auf einer beliebigen Seite auf **Speichern** **(oder** **Abbrechen** oder Schließen schließen) klicken, um ![ ](../../media/scc-remove-icon.png) zur Seite **Bearbeiten der Richtlinien \< Namen \> ** zurückzukehren (Sie müssen nicht die letzte Seite des Assistenten zum Speichern oder verlassen besuchen).
+   - Nachdem Sie in einem Abschnitt auf **Bearbeiten** klicken, werden die verfügbaren Einstellungen in einem Assistenten Format angezeigt, aber Sie können in beliebiger Reihenfolge auf die Seiten springen, und Sie können auf einer beliebigen Seite auf **Speichern** **(oder** **Abbrechen** oder Schließen schließen) klicken, um ![ ](../../media/scc-remove-icon.png) zur Seite **Richtlinie \<name\> Bearbeiten** zurückzukehren (Sie müssen nicht die letzte Seite des Assistenten zum Speichern oder verlassen besuchen).
 
 4. **Richtlinieneinstellung**: Klicken Sie auf **Bearbeiten** , um dieselben Einstellungen zu ändern, die beim [Erstellen der Richtlinie](#use-the-security--compliance-center-to-create-anti-phishing-policies) im vorherigen Abschnitt verfügbar waren:
 
@@ -184,7 +184,7 @@ Verwenden Sie die folgenden Verfahren, um Richtlinien zum Schutz vor Phishing zu
 
    Wenn Sie fertig sind, klicken Sie auf jeder Seite auf **Speichern** .
 
-6. Überprüfen Sie die Einstellungen auf der Seite **Richtlinien \< Namen \> Bearbeiten** , und klicken Sie dann auf **Schließen**.
+6. Überprüfen Sie die Einstellungen auf der Seite **Richtlinie \<Name\> Bearbeiten** , und klicken Sie dann auf **Schließen**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Verwenden des Security & Compliance Center zum Ändern der standardmäßigen Anti-Phishing-Richtlinie
 
@@ -234,7 +234,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 2. Wählen Sie die Richtlinie aus, die Sie ändern möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt.
+3. Das Flyout **Richtlinie \<name\> Bearbeiten** wird angezeigt.
 
    - Für die benutzerdefinierte Richtlinie zum Schutz vor Phishing mit dem **Prioritäts** Wert **0** ist nur die Schaltfläche **Priorität verringern** verfügbar.
 
@@ -256,7 +256,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
    - Klicken Sie auf **Standardrichtlinie** , um die standardmäßige Anti-Phishing-Richtlinie anzuzeigen.
 
-3. Das Flyout zum **Bearbeiten Ihres Richtlinien \< namens \> ** wird angezeigt, in dem Sie die Einstellungen und Werte anzeigen können.
+3. Das Flyout zum **Bearbeiten \<name\> Ihrer Richtlinie** wird angezeigt, in dem Sie die Einstellungen und Werte anzeigen können.
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Verwenden des Security & Compliance Center zum Entfernen von Anti-Phishing-Richtlinien
 
@@ -264,7 +264,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 2. Wählen Sie die Richtlinie aus, die Sie entfernen möchten. Wenn es bereits ausgewählt ist, deaktivieren Sie es, und wählen Sie es erneut aus.
 
-3. Klicken Sie im angezeigten Dropdown-Dialogfeld **Richtlinien \< Namen \> Bearbeiten** auf **Richtlinie löschen**, und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
+3. Klicken Sie im daraufhin angezeigten Dialogfeld **Richtlinie \<name\> Bearbeiten** auf **Richtlinie löschen**, und klicken Sie dann im angezeigten Warndialogfeld auf **Ja** .
 
 Die Standardrichtlinie kann nicht entfernt werden.
 
@@ -288,7 +288,7 @@ Das Erstellen einer Anti-Phishing-Richtlinie in PowerShell ist ein zweistufiger 
 
   - Erstellen Sie die neue Richtlinie als deaktiviert (_aktiviert_ im `$false` Cmdlet **New-AntiPhishRule** ).
 
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Prioritäts_ _ \< Nummer \> _) für das Cmdlet **New-AntiPhishRule** fest.
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ _\<Number\>_ ) für das Cmdlet **New-AntiPhishRule** fest).
 
 - Eine neue Anti-Phishing-Richtlinie, die Sie in PowerShell erstellen, ist erst im Security & Compliance Center sichtbar, wenn Sie die Richtlinie einer Anti-Phishing-Regel zuweisen.
 
@@ -507,7 +507,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die Ric
   - Wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
   - Klicken Sie auf **Standardrichtlinie** , und zeigen Sie die Details im Flyout an.
 
-- Ersetzen Sie in Exchange Online PowerShell \< Name \> durch den Namen der Richtlinie oder Regel, und führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell \<Name\> durch den Namen der Richtlinie oder Regel, und führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

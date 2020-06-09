@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und echt &amp; Zeit Erkennungen im Security Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
+description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036752"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613444"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -36,7 +36,7 @@ Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md
 
 Mit Explorer (oder Echtzeiterkennung) haben Sie einen leistungsfähigen Bericht, der es Ihrem Sicherheitsteam ermöglicht, Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren. Der Bericht ähnelt dem folgenden Bild:
 
-![Wechseln Sie zu Threat \> Management Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Wechseln Sie zu Threat Management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
@@ -103,13 +103,13 @@ Weitere Informationen zur Untersuchung schädlicher e-Mail-Nachrichten finden Si
 
 Außerdem können Sie nun Berichte für URL-Klicks in Microsoft Excel exportieren, um sowohl die Netzwerknachrichten-ID als auch das Klick Urteil anzuzeigen, um zu verstehen, wo Ihre URL auf den Datenverkehr fällt. So funktioniert es. Klicken Sie auf der Office 365-Schnellstartleiste in Threat Management auf diese Kette:
 
-**Explorer** \> - **Ansicht Phish** \> **Klicks** \> **Top URLs oder URL Top Klicks** \> **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout zu öffnen** .
+**Explorer** \> **Phishing anzeigen** \> **Klicks** \> Top- **URLs oder URL-Top-Klicks** \> **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout zu öffnen**
 
 Wenn Sie auf eine URL in der Liste klicken, wird im Ausklappbereich eine neue Schaltfläche Exportieren angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in eine Excel-Tabelle zu migrieren.
 
 Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie folgt abrufen:
 
-**Explorer** \> - **Echt Zeit Erkennungen** \> **Anzeigen von Phishing** \> - **URLs** \> **Top-URLs oder oberen Klicks** \> **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout** \> **zu öffnen, navigieren Sie zur Registerkarte Klicks.**
+**Explorer** \> **Echt Zeit Erkennungen** \> **Phishing anzeigen** \> **URLs** \> **Top-URLs oder Top-Klicks** \> **Klicken Sie auf einen beliebigen Datensatz, um das URL-Flyout** \> zu öffnen **Navigieren Sie zur Registerkarte Klicks.**
 
 > [!TIP]
 > Network Message ID ordnet den Klick zurück zu bestimmten Mails zu, wenn Sie über den Explorer oder zugeordnete Tools von Drittanbietern über die Netzwerknachrichten-ID suchen. Durch die Suche über die Netzwerknachrichten-ID erhalten Administratoren die spezifische e-Mail-Adresse, die mit einem Klick Ergebnis verknüpft ist. Für eine schnellere und leistungsstärkere Analyse durch den Export mit wird die korrelierte Identifikation der Netzwerknachrichten-ID ermöglicht.
@@ -120,13 +120,13 @@ Sie können den gleichen Speicherort im Bericht über Echt Zeit Erkennungen wie 
 
 Angenommen, Sie möchten die von Microsoft 365-Technologie erkannte Schadsoftware in e-Mails sehen. Verwenden Sie dazu die [e-Mail->](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-**  >  **Schadsoftware**aus.
 
    ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis** > **Erkennungstechnologie**aus.
+3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis**  >  **Erkennungstechnologie**aus.
 
    Ihre Erkennungstechnologien stehen nun als Filter für den Bericht zur Verfügung.
 
@@ -144,13 +144,13 @@ Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschli
 
 Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-> Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option**Phishing** **per e-Mail** > aus.
+2. Wählen Sie im Menü **Ansicht** die Option Phishing **per e-Mail**aus  >  **Phish**.
 
    ![Menü "Ansicht" für Explorer](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs** > **Klicken Sie auf Urteil**.
+3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs**  >  **Klicken Sie auf Urteil**.
 
 4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise " **blockiert** " und "über **schrieben**", und klicken Sie dann auf die Schaltfläche **Aktualisieren** , die sich in derselben Reihe befindet wie die Optionen zum Anwenden des Filters. (Aktualisieren Sie Ihr Browserfenster nicht.)
 
@@ -175,13 +175,13 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die Ansicht [e-Mail > Übermittlungen](threat-explorer-views.md#email--submissions) des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) **Threat Management**  >  **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** über  >  **mittlungen**aus.
 
    ![Menü "Ansicht" für Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicken Sie auf **Absender**, und wählen Sie **Standard** > **Berichtstyp**aus.
+3. Klicken Sie auf **Absender**, und wählen Sie **Standard**  >  **Berichtstyp**aus.
 
 4. Wählen Sie eine Option wie **Phishing**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** .
 
@@ -219,10 +219,10 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
 - Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
 
   - Organisationsverwaltung
-  - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
+  - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Sicherheitsleseberechtigter
 
-- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organisationsverwaltung
   - Organisationsverwaltung mit Leserechten
