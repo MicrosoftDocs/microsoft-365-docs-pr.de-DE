@@ -1,13 +1,13 @@
-- name: Microsoft 365-Lösungs-und Architektur Center
+- name: Microsoft 365-Center – Lösungen und Architekturen
   href: solution-architecture-center.md
   displayName: Home
-- name: Lösungs-und Architektur Illustrationen
+- name: Darstellungen zu Lösungen und Architekturen
   items:
     - name: Darstellungen zu Microsoft 365-Produktivitätslösungen
       href: productivity-illustrations.md
-    - name: Microsoft-Cloud-Architekturmodelle
+    - name: Microsoft Cloud-Architekturmodelle
       href: cloud-architecture-models.md
-- name: Microsoft 365 Foundation-Lösungen
+- name: Grundlegende Microsoft 365-Lösungen
   items:
     - name: Übersicht
       href: foundation-solutions-overview.md
@@ -15,30 +15,30 @@
       items:
         - name: Übersicht
           href: empower-people-to-work-remotely.md
-        - name: Schritt 1. Erhöhte Anmeldesicherheit
+        - name: 'Schritt 1: Erhöhung der Anmeldesicherheit'
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: "Schritt\_2: Bereitstellen von Remotezugriff"
+        - name: "Schritt\_2: Remotezugriff ermöglichen"
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'SCHRITT 3: Bereitstellen der Endpunkt Verwaltung'
+        - name: 'Schritt 3: Endpunktverwaltung bereitstellen'
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: "Schritt\_4: Bereitstellen von Produktivitäts-apps und-Diensten"
+        - name: "Schritt\_4: Produktivitätsanwendungen und -dienste bereitstellen"
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: "Schritt\_5: Erstellen von Kommunikationsveranstaltungsorten"
+        - name: "Schritt\_5: Orte für die Kommunikation schaffen"
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: Schritt 6. Schulen von Remotemitarbeitern
+        - name: 'Schritt 6: Remotemitarbeiter schulen'
           href: empower-people-to-work-remotely-train-monitor-usage.md
-    - name: Einrichten einer sicheren Zusammenarbeit mit Microsoft 365
+    - name: Sichere Zusammenarbeit mit Microsoft 365 einrichten
       href: setup-secure-collaboration-with-teams.md
       items:
         - name: Drei Schutzebenen mit Microsoft Teams
           items:
-            - name: Drei Schutzebenen (Übersicht)
+            - name: Drei Schutzebenen – Übersicht
               href: configure-teams-three-tiers-protection.md
-            - name: Konfigurieren des Basis Schutzes
+            - name: Grundlegenden Schutz konfigurieren
               href: configure-teams-baseline-protection.md
-            - name: Konfigurieren des vertraulichen Schutzes
+            - name: Schutz vertraulicher Daten konfigurieren
               href: configure-teams-sensitive-protection.md
-            - name: Konfigurieren von hochgradig vertraulichem Schutz
+            - name: Schutz streng vertraulicher Daten konfigurieren
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurieren eines Teams mit Sicherheitsisolierung
               href: secure-teams-security-isolation.md
@@ -48,53 +48,53 @@
               href: collaborate-with-people-outside-your-organization.md
             - name: Konfigurationsszenarien
               items:
-                - name: Zusammenarbeiten an Dokumenten
+                - name: Gemeinsames Bearbeiten von Dokumenten
                   href: collaborate-on-documents.md
                 - name: Zusammenarbeiten an einer Website
                   href: collaborate-in-site.md
-                - name: Zusammenarbeiten als Team
+                - name: Zusammenarbeit als Team
                   href: collaborate-as-team.md
                 - name: Erstellen eines B2B-Extranets
                   href: b2b-extranet.md
-                - name: Grenzwert Freigabe
+                - name: Freigabe einschränken
                   href: microsoft-365-limit-sharing.md
             - name: Sicherheitsszenarien
               items:
                 - name: Nicht authentifizierte Freigabe
                   href: best-practices-anonymous-sharing.md
-                - name: Begrenzen der versehentlichen Exposition
+                - name: Einschränken der Risikos der versehentlichen Exposition
                   href: share-limit-accidental-exposure.md
-                - name: Sichere Gastfreigabeumgebung
+                - name: Sichere Umgebung für die Gastfreigabe
                   href: create-secure-guest-sharing-environment.md
-            - name: Externe Freigabe Referenz
+            - name: Referenz zu externer Freigabe
               href: microsoft-365-guest-settings.md
-    - name: Bereitstellen von Bedrohungsschutz in Microsoft 365
+    - name: Bereitstellen des Bedrohungsschutzes in Microsoft 365
       href: deploy-threat-protection.md
-- name: Arbeits Auslastungs Lösungen und-Szenarien
+- name: Workload-Lösungen und -Szenarien
   items:
     - name: Übersicht
       href: workload-solutions-scenarios-overview.md
-    - name: Teamarbeit und Zusammenarbeit
+    - name: Teamwork und Zusammenarbeit
       items:
-        - name: Architektur Poster für Teams
+        - name: Architekturposter für Microsoft Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Telefonie-Lösungen
+        - name: Telefonielösungen
           items:
-            - name: Auswählen Ihrer Lösung
+            - name: Lösung auswählen
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-            - name: Fallstudie für Multi-National Corporation
+            - name: Fallstudie für multinationales Unternehmen
               href: null
-        - name: Dateizusammenarbeit in SharePoint mit Microsoft 365
+        - name: Zusammenarbeit an Dateien in SharePoint mit Microsoft 365
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Planen eines intelligenten SharePoint-Intranets
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: OneDrive Leitfaden für Unternehmen
+        - name: OneDrive-Leitfaden für Unternehmen
           href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Sicherheit
       items:
-        - name: Wichtige Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
+        - name: Die wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
           href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Microsoft 365 Security for Business-Entscheidungsträger (BDMs)
+        - name: 'Microsoft 365 Security für Entscheidungsträger in der Wirtschaft (BDMs, Business Decision Makers)'
           href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Bereitstellen von Microsoft Defender Advanced Threat Protection
           href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
@@ -110,7 +110,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: CCPA – Häufig gestellte Fragen
               href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-            - name: Dsgvo – empfohlener Aktionsplan
+            - name: DSGVO – Empfohlener Aktionsplan
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso-Fallstudien
       items:
@@ -118,9 +118,9 @@
           href: contoso-case-study-solutions.md
         - name: Isoliertes Team für ein streng geheimes Projekt
           href: contoso-team-for-top-secret-project.md
-    - name: Testumgebungsanleitungen
+    - name: Leitfäden für Testumgebungen
       items:
-        - name: Testen von Übungsanleitungen für Lösungen und Szenarien
+        - name: Testumgebungsleitfäden für Lösungen und Szenarien
           href: test-lab-guides-overview-solutions.md
         - name: Team mit Sicherheitsisolierung
           href: team-security-isolation-dev-test.md
@@ -130,35 +130,35 @@
       href: industry-specific-guidance-overview.md
     - name: Finanzen
       items:
-        - name: Sicherheit und Compliance für Finanzdienstleistungen
+        - name: Sicherheit und Compliance für Finanzdienstleister
           href: financial-services-secure-collaboration.md
-    - name: Energie-und Versorgungsdienste
+    - name: Energie- und Versorgungsdienste
       items:
-        - name: Sicherheit und Compliance für Energie-und Hilfsdienste
+        - name: Sicherheit und Compliance für Energie- und Versorgungsdienste
           href: energy-secure-collaboration.md
-    - name: Gesundheits
+    - name: Gesundheitswesen
       items:
-        - name: Teams für das Gesundheitswesen
+        - name: Microsoft Teams für das Gesundheitswesen
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-    - name: Education
+    - name: Bildung
       items:
-        - name: Teams für Bildung
+        - name: Microsoft Teams für Bildungseinrichtungen
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Behörden
       items:
-        - name: Teams für Behörden
+        - name: Microsoft Teams für Behörden
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Unterstützung von Remote-Regierungsmitarbeitern mithilfe von Teams
+        - name: Unterstützung von Remote-Mitarbeitern von Behörden mithilfe von Microsoft Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-- name: Entwurfsgrundsätze für die Unternehmensarchitektur
+- name: Planungsgrundsätze für Unternehmensarchitekturen
   items:
     - name: Übersicht
       href: design-principles.md
     - name: Zur Identität und darüber hinaus
       href: identity-design-principles.md
-    - name: 'Sicherheitshürden, über die Sie segeln können'
+    - name: 'Sicherheitshürden, über die Sie hinwegsegeln können'
       href: security-design-principles.md
-    - name: Vernetzen (zur Cloud)
+    - name: Networking mit Aufwärtsdynamik (in die Cloud)
       href: networking-design-principles.md
 - name: Microsoft 365-Bereitstellungsressourcen
   items:
