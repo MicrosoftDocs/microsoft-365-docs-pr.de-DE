@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie diese Test Umgebungs Anleitung, um InTune-Geräte Konformitätsrichtlinien zu Ihrer Microsoft 365 Enterprise-Testumgebung hinzuzufügen.
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631585"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679026"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Geräte Konformitätsrichtlinien für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -46,9 +46,9 @@ Wenn Sie MAM-Richtlinien in einem simulierten Unternehmen konfigurieren möchten
 
 In dieser Phase erstellen Sie eine Geräte Kompatibilitäts Richtlinie für Windows 10-Geräte.
   
-1. Wechseln Sie zum Office 365 Portal unter ([https://portal.office.com](https://portal.office.com)), und melden Sie sich bei Ihrem Office 365 Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie zum Office 365 Portal unter ( [https://portal.office.com](https://portal.office.com) ), und melden Sie sich bei Ihrem Office 365 Test Lab-Abonnement mit ihrem globalen Administratorkonto an.
     
-2. Öffnen Sie auf einer neuen Registerkarte Ihres Browsers das Azure-Portal [https://portal.azure.com](https://portal.azure.com)unter.
+2. Öffnen Sie auf einer neuen Registerkarte Ihres Browsers das Azure-Portal unter [https://portal.azure.com](https://portal.azure.com) .
 
 3. Geben Sie auf der Registerkarte Azure Portal in Ihrem Browser **InTune** in das Suchfeld ein, und klicken Sie dann auf **InTune**.
     
@@ -87,7 +87,7 @@ Klicken Sie auf "OK".
 
 20. Wählen Sie im Bereich **app hinzufügen** die Option **App Suite Settings**aus.
 
-21. Wählen Sie für **Update Kanal** **halbjährliche**aus, und klicken Sie dann auf **OK**.
+21. Wählen Sie für **Update Kanal** **halbjährliche Enterprise**aus, und klicken Sie dann auf **OK**.
 
 22. Klicken Sie im Bereich **app hinzufügen** auf **Hinzufügen**.
 

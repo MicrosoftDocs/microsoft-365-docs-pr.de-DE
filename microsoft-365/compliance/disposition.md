@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156890"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678991"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -35,7 +35,7 @@ Zum Verwalten von Dispositions Überprüfungen und zum bestätigen, dass Datens�
 
 ### <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
-Zum erfolgreichen Zugriff auf die Registerkarte " **Disposition** " im Microsoft 365 Compliance Center müssen Sie Mitglied der **Dispositions-Verwaltungs** Rolle und der Rolle " **nur Überwachungsprotokolle anzeigen** " sein. Es wird empfohlen, eine neue Rollengruppe mit dem Namen **Dispositions Prüfer**zu erstellen und diese beiden Rollen zu dieser Rollengruppe hinzuzufügen. 
+Zum erfolgreichen Zugriff auf die Registerkarte " **Disposition** " im Microsoft 365 Compliance Center müssen Sie Mitglied der **Dispositions-Verwaltungs** Rolle und der Rolle " **nur Überwachungsprotokolle anzeigen** " sein. Es wird empfohlen, eine neue Rollengruppe mit dem Namen **Dispositions Prüfer**zu erstellen und diese beiden Rollen zu dieser Rollengruppe hinzuzufügen. Selbst wenn Sie ein **globaler Administrator** Benutzer sind, müssen Sie Teil der **Dispositions-Verwaltungs** Rolle sein, damit Sie auf die Registerkarte Disposition zugreifen können.
 
 Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
 

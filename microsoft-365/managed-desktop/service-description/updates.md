@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011935"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678694"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Behandlung von Updates in Microsoft Managed Desktop
 
@@ -61,10 +61,10 @@ Funktionsweise der Updatebereitstellung:
 <tr><td>Funktionsupdates für das Betriebssystem</td><td>0 Tage</td><td>30 Tage</td><td>60 Tage</td><td>90 Tage</td></tr>
 <tr><td>Treiber/Firmware</td><td colspan="4">Folgt dem Zeitplan für Qualitäts Updates</td></tr>
 <tr><td>Virenschutz Definition</td><td colspan="4">Mit jeder Überprüfung aktualisiert</td></tr>
-<tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4">Folgt dem monatlichen Office-Kanal
+<tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4">Folgt dem aktuellen Kanal von Office
 </table>
 
-Weitere Informationen zum monatlichen Kanal für Microsoft 365 apps for Enterprise finden Sie unter [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+Weitere Informationen zum aktuellen Kanal für Microsoft 365-Apps für Unternehmen finden Sie unter [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Diese Zeiträume wurden absichtlich so konzipiert, dass Sie für alle Benutzer hohe Sicherheits-und Leistungsstandards gewährleisten. Darüber hinaus behält sich Microsoft Managed Desktop aufgrund der Daten, die auf allen verwalteten Desktopgeräten von Microsoft gesammelt wurden, sowie unterschiedlichen Umfangs und Auswirkungen von Updates die Flexibilität zur Veränderung der Länge der oben genannten Zeiträume für alle Bereitstellungsgruppen auf Ad-hoc-Basis vor.

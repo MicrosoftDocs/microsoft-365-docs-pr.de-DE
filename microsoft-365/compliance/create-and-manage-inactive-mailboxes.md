@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Microsoft 365 erstellen, indem Sie eine Aufbewahrungs-oder Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer des Haltestatus oder der Aufbewahrungsrichtlinie aufbewahrt, die auf Sie angewendet wurde, bevor Sie inaktiv gemacht wurde. Um ein inaktives Postfach endgültig zu löschen, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166086"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679099"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Erstellen und Verwalten inaktiver Postfächer
 
@@ -32,7 +32,7 @@ Mit Microsoft 365 können Sie den Inhalt von gelöschten Postfächern beibehalte
 > [!IMPORTANT]
 > Da wir weiterhin auf verschiedene Arten investieren, um Postfachinhalte beizubehalten, kündigen wir den Ruhestand von in-Place-Speicher in der Exchange-Verwaltungskonsole an. Das heißt, Sie sollten Beweissicherungsverfahren und Aufbewahrungsrichtlinien verwenden, um ein inaktives Postfach zu erstellen. Ab dem 1. Juli 2020 können Sie in Exchange Online keine neuen in-Place-Aufbewahrungsorte erstellen. Sie können jedoch weiterhin die Aufbewahrungsdauer eines in-situ-Speichers ändern, der in einem inaktiven Postfach platziert wird. Ab dem 1. Oktober 2020 können Sie die Aufbewahrungsdauer jedoch nicht ändern. Sie können ein inaktives Postfach nur löschen, indem Sie den in-situ-Speicher entfernen. Vorhandene inaktive Postfächer, die sich im Compliance-Archiv befinden, werden weiterhin beibehalten, bis die Aufbewahrung aufgehoben wird. Weitere Informationen zum Ruhestand von in-Place-Archiven finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um ein Postfach inaktiv zu machen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen sein, damit ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online Plan 2-Lizenzen sind Teil eines Office 365 Enterprise E3-und E5-Abonnements. Wenn einem Postfach eine Exchange Online Plan 1 oder Exchange Online Kiosk Lizenz (die Teil eines Office 365 E1-und F1-Abonnements sind) zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, damit ein Aufbewahrungsspeicher auf das Postfach angewendet werden kann, bevor es gelöscht wird. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
@@ -75,9 +75,9 @@ So zeigen Sie eine Liste der inaktiven Postfächer in Ihrer Organisation an:
   
 1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
     
-2. Klicken Sie auf **Informations Verwaltungs** > **Beibehaltung**.
+2. Klicken Sie auf **Informations Verwaltungs**  >  **Beibehaltung**.
     
-3. Klicken Sie auf der Seite **Aufbewahrung** auf **Weitere**![Ellipsen der](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)Navigationsleiste, und klicken Sie dann auf **inaktive Postfächer**.
+3. Klicken Sie auf der Seite **Aufbewahrung** auf **Weitere** ![ Ellipsen der Navigationsleiste ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) , und klicken Sie dann auf **inaktive Postfächer**.
     
     ![Klicken Sie auf der Seite Aufbewahrung auf mehr und dann auf inaktive Postfächer, um eine Liste der inaktiven Postfächer anzuzeigen.](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausfü
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-Sie können auf ![Export Suchergebnisse Symbol](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren** klicken, um eine CSV-Datei anzuzeigen oder herunterzuladen, die zusätzliche Informationen zu den inaktiven Postfächern in Ihrer Organisation enthält. 
+Sie können auf Export ![ Suchergebnisse Symbol ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren** klicken, um eine CSV-Datei anzuzeigen oder herunterzuladen, die zusätzliche Informationen zu den inaktiven Postfächern in Ihrer Organisation enthält. 
   
 Sie können auch den folgenden Befehl ausführen, um die Liste der inaktiven Postfächer und anderer Informationen in eine CSV-Datei zu exportieren. In diesem Beispiel wird die CSV-Datei im aktuellen Verzeichnis erstellt.
 
@@ -112,7 +112,7 @@ Sie können auf die Inhalte des inaktiven Postfachs mithilfe des Tools zur Inhal
     
 Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
   
-- Wenn eine Inhaltssuche ein Benutzerpostfach enthält und dieses Postfach dann inaktiv gemacht wird, wird durch die Inhaltssuche weiterhin das inaktive Postfach durchsucht, wenn Sie die Suche erneut ausführen, nachdem Sie inaktiv geworden ist.
+- Wenn eine Inhaltssuche ein Benutzerpostfach enthält und dieses Postfach inaktiv ist, wird die Inhaltssuche weiterhin das inaktive Postfach durchsuchen, wenn Sie die Suche erneut ausführen, nachdem Sie inaktiv geworden ist.
     
 - In einigen Fällen verfügt ein Benutzer möglicherweise über ein aktives Postfach und ein inaktives Postfach mit der gleichen SMTP-Adresse. In diesem Fall wird nur das bestimmte Postfach durchsucht, das Sie als Speicherort für eine Inhaltssuche ausgewählt haben. Wenn Sie also das Postfach eines Benutzers zu einer Suche hinzufügen, können Sie nicht davon ausgehen, dass sowohl die aktiven als auch die inaktiven Postfächer durchsucht werden. nur das Postfach, das Sie explizit zur Suche hinzufügen, wird durchsucht.
     

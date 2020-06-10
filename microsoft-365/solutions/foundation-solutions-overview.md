@@ -13,18 +13,19 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 37d0de34bb9a6f138b31e063b76761124c1664a9
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 49d58c8d489906519f0c5e3aab4cec8183a5fe5d
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160366"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664550"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Microsoft 365 Foundation-Lösungen (Übersicht)
 
 
-![Blocks](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation-Lösungen** diese Lösungen bieten eine umfassende Anleitung für ein bestimmtes geschäftliches Problem oder Bedürfnis. Sie unterstützen Sie bei der Durchführung von Konzepten und Features und helfen Ihnen dabei, Entscheidungen zu treffen, die zu einem funktionierenden Endergebnis von der Planung bis zur Implementierung bis hin zur Einführung führen. 
+![Blocks ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation-Lösungen** diese Lösungen bieten eine umfassende Anleitung für ein bestimmtes geschäftliches Problem oder Bedürfnis. Sie unterstützen Sie bei der Durchführung von Konzepten und Features und helfen Ihnen dabei, Entscheidungen zu treffen, die zu einem funktionierenden Endergebnis von der Planung bis zur Implementierung bis hin zur Einführung führen. 
 
-- [Fördern von Remotemitarbeitern mit Microsoft 365](empower-people-to-work-remotely.md)
+- [Fördern von Remotemitarbeitern](empower-people-to-work-remotely.md)
 - [Sicheres zusammenarbeiten in Teams, Gruppen und Websites](setup-secure-collaboration-with-teams.md)
 - [Einrichten von Bedrohungsschutz und Cyber-Sicherheit in Ihrer Organisation](deploy-threat-protection.md)
+- [Bereitstellen des Informationsschutzes für Datenschutzbestimmungen](information-protection-deploy.md)

@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um Office 365 Bedrohungsschutz Status zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566716"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679132"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
@@ -48,13 +48,11 @@ Das Widget "Threat Management Summary" informiert Sie auf einen Blick, wie Ihre 
 
 Die Informationen, die Sie in der Zusammenfassung des Threat Managements sehen, hängen davon ab, was Ihr Abonnement enthält. In der folgenden Tabelle wird beschrieben, welche Informationen für Office 365 E3 und Office 365 E5 enthalten sind.
 
-
-|Office 365 E3 |Office 365 E5 |
+|Office 365 E3|Office 365 E5|
 |---|---|
 |Blockierte Schadsoftware-Nachrichten<br/>Blockierte Phishing-Nachrichten<br>Von Benutzern gemeldete Nachrichten<br><br><br><br>|Blockierte Schadsoftware-Nachrichten<br>Blockierte Phishing-Nachrichten<br>Von Benutzern gemeldete Nachrichten<br>Zero-Day-Schadsoftware blockiert<br>Erweiterte Phishing-Nachrichten erkannt<br>Blockierte schädliche URLs|
 
-
-Zum Anzeigen oder zugreifen auf das Threat Management-Zusammenfassungs Widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Zum Anzeigen oder zugreifen auf das Threat Management-Zusammenfassungs Widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="threat-protection-status"></a>Bedrohungsschutz Status
 
@@ -69,7 +67,7 @@ Die Details hängen davon ab, ob Ihr Microsoft 365-Abonnement [Exchange Online P
 |EoP, jedoch nicht Office 365 ATP|Böswillige e-Mails, die von EoP erkannt und blockiert wurden.<br><br> Siehe [Threat Protection-Status Bericht (EoP)](view-email-security-reports.md#threat-protection-status-report).|
 |Office 365 ATP|Böswillige Inhalte und böswillige e-Mails, die von EoP und Office 365 ATP erkannt und blockiert wurden<br><br>Aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit böswilligen Inhalten, die durch das Anti-Malware-Modul, die [Automatische Säuberungs](zero-hour-auto-purge.md)-und ATP-Funktion (einschließlich [sicherer Links](atp-safe-links.md), [sicherer Anlagen](atp-safe-attachments.md)und [ATP-AntiPhishing](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)) blockiert wurden.<br><br>Siehe [Threat Protection-Status Bericht (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
 
-Zum Anzeigen oder zugreifen auf das Threat Protection-Status-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Zum Anzeigen oder zugreifen auf das Threat Protection-Status-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Globale wöchentliche Bedrohungserkennungen
 
@@ -79,13 +77,12 @@ Das Global Weekly Threat Detections-Widget zeigt, wie viele Bedrohungen in e-Mai
 
 Die Metriken werden wie in der folgenden Tabelle beschrieben berechnet:
 
-|Metrik|Berechnung |
+|Metrik|Berechnung|
 |---|---|
 |Gescannte Nachrichten|Anzahl der gescannten e-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
 |Bedrohungen angehalten|Anzahl von e-Mail-Nachrichten, die mit der Anzahl der Empfänger multipliziert wurden.|
 |Gesperrt durch [ATP](office-365-atp.md)|Anzahl von von ATP blockierten e-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
 |Nach Zustellung entfernt|Die Anzahl der Nachrichten, die von der [automatischen Bereinigung ohne Stunden](zero-hour-auto-purge.md) entfernt werden multipliziert mit der Anzahl der Empfänger|
-
 
 ## <a name="malware"></a>Schadsoftware
 

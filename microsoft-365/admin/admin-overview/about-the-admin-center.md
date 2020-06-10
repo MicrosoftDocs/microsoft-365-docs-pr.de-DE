@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386961"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678648"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -75,7 +75,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
   
 |**Menü**|**Zweck**|
 |-----|-----|
-|**Start** <br/> |Dies ist die Startseite im neuen Admin Center. Sie sehen, wo Benutzer, Abrechnungen, Dienststatus und Berichte verwaltet werden.  <br/> |
+|**Start** <br/> |Dies ist die Startseite im Admin Center. Sie sehen, wo Benutzer, Abrechnungen, Dienststatus und Berichte verwaltet werden.  <br/> |
 |**Users** <br/> |Hier können Sie Benutzer in Ihrer Organisation, beispielsweise Mitarbeiter oder Schüler, erstellen und verwalten. Sie können auch deren Berechtigungsstufe festlegen oder die Kennwörter zurücksetzen.  <br/> |
 |**Gruppen** <br/> |Erstellen und verwalten Sie Gruppen in Ihrer Organisation, beispielsweise eine Microsoft 365-Gruppe, eine Verteilergruppe, eine Sicherheitsgruppe oder ein freigegebenes Postfach. Weitere Informationen zum [Erstellen](../create-groups/create-groups.md) und [Verwalten](../create-groups/manage-groups.md) von Gruppen.  <br/> |
 |**Ressourcen** <br/> |Erstellen und verwalten Sie Ressourcen wie eine SharePoint-Websitesammlung. Weitere Informationen zum [Erstellen von Websitesammlungen](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |

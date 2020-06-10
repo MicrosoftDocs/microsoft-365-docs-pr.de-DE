@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Hier erfahren Sie, wie Sie Filter zum Erstellen, bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Microsoft 365 verwenden können.
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431641"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664574"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht in Office 365
+# <a name="create-edit-or-delete-a-custom-user-view"></a>Erstellen, Bearbeiten oder Löschen einer benutzerdefinierten Benutzeransicht
 
-[] Wenn Sie ein globaler Administrator oder als Administrator für die Benutzerverwaltung in Office 365 zuständig sind, können Sie benutzerdefinierte Benutzeransichten erstellen, um eine bestimmte Untermenge von Benutzern anzuzeigen. Diese Ansichten werden zusätzlich zu den Standardansichten angezeigt, die zum Bereitstellungsumfang von Office 365 gehören. Sie können benutzerdefinierte Benutzeransichten erstellen, bearbeiten oder löschen, und die von Ihnen erstellten benutzerdefinierten Ansichten stehen allen Administratoren zur Verfügung.
+Wenn Sie ein globales oder Benutzer Verwaltungs Administrator eines Microsoft 365 for Business-Abonnements sind, können Sie benutzerdefinierte Benutzeransichten erstellen, um eine bestimmte Teilmenge von Benutzern anzuzeigen. Diese Ansichten werden zusätzlich zu den Standardansichten festgelegt. Sie können benutzerdefinierte Benutzeransichten erstellen, bearbeiten oder löschen, und die von Ihnen erstellten benutzerdefinierten Ansichten stehen allen Administratoren zur Verfügung.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Benutzerdefinierte Benutzeransichten im Admin Center
 
@@ -98,7 +98,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a>.
     
 2. Klicken Sie auf der Seite **aktive Benutzer** auf **Filter** , und wählen Sie **Neuer Filter**aus.
   
@@ -108,7 +108,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">aktive Benutzer</a>.  
 
 2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Ansichten** aus, und wählen Sie **benutzerdefinierte Ansicht hinzufügen**aus.
   
@@ -119,7 +119,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">aktive Benutzer</a>. 
 
 2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Ansichten** aus, und wählen Sie **benutzerdefinierte Ansicht hinzufügen**aus.
   
@@ -132,7 +132,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">aktive Benutzer</a>.
     
 2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Filter**aus, wählen Sie den Filter aus, den Sie ändern möchten, und klicken Sie dann auf **Filter bearbeiten**. 
     
@@ -145,7 +145,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">aktive Benutzer</a>.  
 
 2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Ansichten**aus, wählen Sie den Filter aus, den Sie ändern möchten, und klicken Sie dann auf **diese Ansicht bearbeiten**. 
     
@@ -158,7 +158,7 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
+1. Wechseln Sie im Admin Center zu **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">aktive Benutzer</a>. 
 
 2. Wählen Sie auf der Seite **aktive Benutzer** die Option **Ansichten**aus, wählen Sie den Filter aus, den Sie ändern möchten, und klicken Sie dann auf **diese Ansicht bearbeiten**. 
     

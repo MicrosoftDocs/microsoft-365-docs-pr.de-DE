@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: In diesem Artikel erfahren Sie, wie Sie Postfachinhalte für frühere Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umwandeln. Sie können dies tun, indem Sie das Postfach in einem Beweissicherungsverfahren platzieren oder eine Microsoft 365-Aufbewahrungsrichtlinie auf das Postfach anwenden und dann das entsprechende Microsoft 365-Konto entfernen.
-ms.openlocfilehash: 1e6851d628af861982d0447f6b592d4b1aa8bba5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637927"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679049"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Übersicht über inaktive Postfächer
 
@@ -44,10 +44,10 @@ Zusätzlich zum Beweissicherungsverfahren ist die Verwendung des neuen Microsoft
   
 - Es muss so konfiguriert werden, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden. Wenn eine Aufbewahrungsrichtlinie so konfiguriert ist, dass nur Inhalte gelöscht werden, wird ein Postfach, auf das die Richtlinie angewendet wird, nicht inaktiv, wenn das Postfach gelöscht wird.
 
-- Die Richtlinie muss auf Exchange-Postfächer oder Skype for Business-Speicherorte angewendet werden (da Skype-bezogene Inhalte im Postfach des Benutzers gespeichert werden). 
-    
-- Sie kann abfragebasiert sein, sodass nur Elemente aufbewahrt werden, die einer Suchabfrage entsprechen. 
-    
+- Die Richtlinie muss auf Exchange-Postfächer oder Skype for Business-Speicherorte angewendet werden (da Skype-bezogene Inhalte im Postfach des Benutzers gespeichert werden).
+  
+- Sie kann abfragebasiert sein, sodass nur Elemente aufbewahrt werden, die einer Suchabfrage entsprechen.
+
 Weitere Informationen zum Konfigurieren von Aufbewahrungsrichtlinien finden Sie unter [Overview of Retention Policies](retention-policies.md).
   
 Wenn Sie eine Aufbewahrungsrichtlinie verwenden, um ein inaktives Postfach zu erstellen, wird von Microsoft 365 weiterhin die Aufbewahrungsrichtlinie für das inaktive Postfach verarbeitet. Dies bedeutet Folgendes: Wenn die Aufbewahrungsrichtlinie so konfiguriert ist, das Inhalte aufbewahrt und anschließend gelöscht werden, werden Elemente in den Ordner „Wiederherstellbare Elemente" verschoben, wenn die Aufbewahrungsdauer abläuft, und schließlich aus dem inaktiven Postfach gelöscht. Wenn die Aufbewahrungsrichtlinie nicht für gelöschte Elemente konfiguriert ist, werden Elemente, die nicht dauerhaft vom Benutzer gelöscht wurden (bevor das Postfach inaktiv gemacht wurde), nicht in den Ordner "Wiederherstellbare Elemente" verschoben und werden unbegrenzt aufbewahrt, nachdem das Postfach inaktiv geworden ist. 
@@ -55,9 +55,9 @@ Wenn Sie eine Aufbewahrungsrichtlinie verwenden, um ein inaktives Postfach zu er
 Möglicherweise sollten Sie eine Microsoft 365-Aufbewahrungsrichtlinie speziell für inaktive Postfächer erstellen. Hier sind einige Gründe dafür und Punkte, die Sie beachten sollten.
   
 - Sie können die Aufbewahrungsrichtlinie so konfigurieren, dass Postfachinhalte nur so lange aufbewahrt werden, wie erforderlich ist, um die Anforderungen Ihrer Organisation in Bezug auf ehemalige Mitarbeiter zu erfüllen.
-    
+
 - Es ist eine gute Möglichkeit, inaktive Postfächer zu identifizieren, da die Aufbewahrungsrichtlinie nur auf inaktive Postfächer angewendet wird.
-    
+
 - Sie können die Aufbewahrungsrichtlinie, die inaktiven Postfächern in Ihrer Organisation zugewiesen ist, schnell identifizieren. Auf diese Weise können Sie die Aufbewahrungseinstellungen (oder Löschungen) bei Bedarf einfacher ändern. Außerdem ist es einfacher, ein inaktives Postfach endgültig zu löschen, da Sie es mithilfe des Security & Compliance Center aus der Richtlinie entfernen können. Andernfalls müssen Sie Exchange Online PowerShell verwenden, um ein Beweissicherungsverfahren aus einem inaktiven Postfach zu entfernen, oder verwenden Sie Security & Compliance Center PowerShell, um ein inaktives Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen.
     
 - Wenn Sie eine Microsoft 365-Aufbewahrungsrichtlinie speziell für inaktive Postfächer erstellen, können Sie der Richtlinie maximal 1.000 Postfächer hinzufügen. Wenn Sie eine große Organisation sind, müssen Sie möglicherweise mehr als eine Microsoft 365-Aufbewahrungsrichtlinie für inaktive Postfächer erstellen.
@@ -108,13 +108,16 @@ Die folgende Tabelle enthält eine Übersicht über das Verfahren, mit dem ein i
 
 Nachdem Sie ein Postfach als inaktiv festgelegt haben, können Sie verschiedene Verwaltungsaufgaben für inaktive Postfächer ausführen.
   
-- **Ändern der Aufbewahrungsdauer für ein inaktives Postfach** Nachdem ein Postfach deaktiviert wurde, können Sie die Aufbewahrungsdauer des beweissicherungsverfahrens oder der Microsoft 365-Aufbewahrungsrichtlinie ändern, die auf das inaktive Postfach angewendet wird. Eine schrittweise Anleitung finden Sie unter [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md).
+- **Ändern der Aufbewahrungsdauer für ein inaktives Postfach.** Nachdem ein Postfach deaktiviert wurde, können Sie die Aufbewahrungsdauer des beweissicherungsverfahrens oder der Microsoft 365-Aufbewahrungsrichtlinie ändern, die auf das inaktive Postfach angewendet wird. Eine schrittweise Anleitung finden Sie unter [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md).
 
   > [!NOTE]
   > Andere Aufbewahrungsrichtlinien können nicht auf ein inaktives Postfach angewendet werden. Sie können nur die Aufbewahrungsdauer einer vorhandenen Aufbewahrungsrichtlinie ändern, die auf das inaktive Postfach angewendet wird.
     
-- **Wiederherstellen eines inaktiven Postfachs** Wenn ein ehemaliger (oder für längere Zeit freigestellter) Mitarbeiter in Ihre Organisation zurückkehrt oder ein neuer Mitarbeiter eingestellt wird, der die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird das Postfach in ein neues Postfach konvertiert, der Inhalt und die Ordnerstruktur des inaktiven Postfachs werden beibehalten, und das Postfach ist mit einem neuen Benutzerkonto verknüpft. Nach der Wiederherstellung ist das inaktive Postfach nicht mehr vorhanden. Schritt-für-Schritt-Verfahren und Informationen dazu, was geschieht, wenn Sie ein inaktives Postfach wiederherstellen, finden Sie unter [Wiederherstellen eines inaktiven Postfachs](recover-an-inactive-mailbox.md).
+- **Wiederherstellen eines inaktiven Postfachs.** Wenn ein ehemaliger Mitarbeiter (oder ein Mitarbeiter bei einem Abwesenheits) zu Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben des ehemaligen Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird das Postfach in ein neues Postfach konvertiert, der Inhalt und die Ordnerstruktur des inaktiven Postfachs werden beibehalten, und das Postfach ist mit einem neuen Benutzerkonto verknüpft. Nach der Wiederherstellung ist das inaktive Postfach nicht mehr vorhanden. Schritt-für-Schritt-Verfahren und Informationen dazu, was geschieht, wenn Sie ein inaktives Postfach wiederherstellen, finden Sie unter [Wiederherstellen eines inaktiven Postfachs](recover-an-inactive-mailbox.md).
+
+  > [!NOTE]
+  > Wenn Sie ein inaktives Postfach wiederherstellen, das einer Aufbewahrungsrichtlinie mit Erhaltungs Sperre zugewiesen wurde (als *Gesperrte Aufbewahrungsrichtlinie*bezeichnet), wird das wiederhergestellte Postfach derselben gesperrten Aufbewahrungsrichtlinie zugewiesen. Wenn Sie ein inaktives Postfach wiederherstellen, das einer Aufbewahrungsrichtlinie ohne Aufbewahrungs Sperre zugewiesen wurde, wird das wiederhergestellte Postfach aus der nicht gesperrten Aufbewahrungsrichtlinie entfernt. Das Beweissicherungsverfahren ist jedoch für das wiederhergestellte Postfach aktiviert, um das Löschen von Postfachinhalten basierend auf organisationsweiten Aufbewahrungsrichtlinien zu verhindern, die Inhalte löschen, die älter sind als ein bestimmtes Alter.
+
+- **Stellen Sie ein inaktives Postfach wieder her.** Wenn ein anderer Mitarbeiter die Aufgaben eines ehemaligen Mitarbeiters übernimmt oder eine andere Person Zugriff auf die Inhalte des inaktiven Postfachs benötigt, können Sie den Inhalt des inaktiven Postfachs in einem vorhandenen Postfach wiederherstellen (oder zusammenführen). Wenn Sie ein inaktives Postfach wiederherstellen, werden die Inhalte in ein anderes Postfach kopiert. Das inaktive Postfach wird beibehalten und bleibt ein inaktives Postfach. Das inaktive Postfach kann weiterhin mithilfe von eDiscovery-Tools durchsucht werden, dessen Inhalt kann in einem anderen Postfach wiederhergestellt werden, und es kann später wiederhergestellt oder gelöscht werden. Eine schrittweise Anleitung finden Sie unter [Wiederherstellen eines inaktiven Postfachs](restore-an-inactive-mailbox.md).
     
-- **Wiederherstellen eines inaktiven Postfachs** Wenn ein anderer Mitarbeiter die Aufgaben eines ehemaligen Mitarbeiters übernimmt oder eine andere Person Zugriff auf die Inhalte des inaktiven Postfachs benötigt, können Sie den Inhalt des inaktiven Postfachs in einem vorhandenen Postfach wiederherstellen (oder zusammenführen). Wenn Sie ein inaktives Postfach wiederherstellen, werden die Inhalte in ein anderes Postfach kopiert. Das inaktive Postfach wird beibehalten und bleibt ein inaktives Postfach. Das inaktive Postfach kann weiterhin mithilfe von eDiscovery-Tools durchsucht werden, dessen Inhalt kann in einem anderen Postfach wiederhergestellt werden, und es kann später wiederhergestellt oder gelöscht werden. Eine schrittweise Anleitung finden Sie unter [Wiederherstellen eines inaktiven Postfachs](restore-an-inactive-mailbox.md).
-    
-- **Löschen eines inaktiven Postfachs** Wenn Sie den Inhalt eines inaktiven Postfachs nicht mehr aufbewahren müssen, können Sie ihn dauerhaft löschen, indem Sie alle Haltestatus oder Microsoft 365-Aufbewahrungsrichtlinien entfernen, die auf das inaktive Postfach angewendet werden. Wenn ein Postfach vor mehr als 30 Tagen inaktiv gemacht wurde, wird es für die dauerhafte Löschung markiert, nachdem Sie den Haltebereich entfernt haben. Wenn das Postfach innerhalb der letzten 30 Tage inaktiv gemacht wurde, können Sie es erneut aktivieren, nachdem Sie die Aufbewahrungs-oder Aufbewahrungsrichtlinie entfernt haben. Eine schrittweise Anleitung finden Sie unter [Löschen eines inaktiven Postfachs](delete-an-inactive-mailbox.md).
+- **Löschen eines inaktiven Postfachs.** Wenn Sie den Inhalt eines inaktiven Postfachs nicht mehr aufbewahren müssen, können Sie ihn dauerhaft löschen, indem Sie alle Haltestatus oder Microsoft 365-Aufbewahrungsrichtlinien entfernen, die auf das inaktive Postfach angewendet werden. Wenn ein Postfach vor mehr als 30 Tagen inaktiv gemacht wurde, wird es für die dauerhafte Löschung markiert, nachdem Sie den Haltebereich entfernt haben. Wenn das Postfach innerhalb der letzten 30 Tage inaktiv gemacht wurde, können Sie es erneut aktivieren, nachdem Sie die Aufbewahrungs-oder Aufbewahrungsrichtlinie entfernt haben. Eine schrittweise Anleitung finden Sie unter [Löschen eines inaktiven Postfachs](delete-an-inactive-mailbox.md).
