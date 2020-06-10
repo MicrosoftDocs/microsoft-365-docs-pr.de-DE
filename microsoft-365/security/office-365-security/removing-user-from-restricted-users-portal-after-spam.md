@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Administratoren, wie sie Benutzer aus dem Portal für eingeschränkte Benutzer in Office 365 entfernen können. Benutzer werden aufgrund des Versands von ausgehenden Spamnachrichten zum Portal für eingeschränkte Benutzer hinzugefügt, in der Regel als Folge einer Kontokompromittierung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351007"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617362"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365
 
@@ -40,7 +40,7 @@ Im Security & Compliance Center oder in Exchange Online PowerShell können Admin
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Verwenden Sie <https://protection.office.com/restrictedusers>, um direkt zur Seite **Eingeschränkte Benutzer** zu wechseln.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Wenn Sie Benutzer aus dem Portal für eingeschränkte Benutzer entfernen möchten, müssen Sie Mitglied der Rollengruppen**Organisationsverwaltung** oder **Sicherheitsadministrator** sein. Für den schreibgeschützten Zugriff auf das Portal für eingeschränkte Benutzer müssen Sie Mitglied der Rollengruppe **Sicherheitsleseberechtigter** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
