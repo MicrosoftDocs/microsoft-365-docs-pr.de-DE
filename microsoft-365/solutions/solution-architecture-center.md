@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f0c80cee878f845aa26a984e8374a911a6da120d
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 55cb2e396b4e557a9fc6de2bba4a90b962137d7b
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159979"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664538"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Lösungs-und Architektur Center
 
@@ -29,12 +29,13 @@ Dieses Lösungs-und Architektur Center vereint die technischen Anleitungen, die 
 - [Fördern von Remotemitarbeitern mit Microsoft 365](empower-people-to-work-remotely.md)
 - [Einrichten einer sicheren Zusammenarbeit mit Microsoft 365](setup-secure-collaboration-with-teams.md)
 - [Bereitstellen von Bedrohungsschutz in Microsoft 365](deploy-threat-protection.md)
+- [Bereitstellen des Informationsschutzes für Datenschutzbestimmungen](information-protection-deploy.md)
 
-![Lösungen](https://docs.microsoft.com/office/media/icons/objects-blue.png) für die **[Arbeitsauslastung von Objekten und Szenario-Anleitung](workload-solutions-scenarios-overview.md)** diese Szenarien und Lösungen helfen Ihnen dabei, ein bestimmtes Unternehmensziel zu erreichen. Sie können Sie den grundlegenden Lösungen hinzufügen, um ihrer Umgebung Funktionen hinzuzufügen.
+![Lösungen für ](https://docs.microsoft.com/office/media/icons/objects-blue.png) die **[Arbeitsauslastung von Objekten und Szenario-Anleitung](workload-solutions-scenarios-overview.md)** diese Szenarien und Lösungen helfen Ihnen dabei, ein bestimmtes Unternehmensziel zu erreichen. Sie können Sie den grundlegenden Lösungen hinzufügen, um ihrer Umgebung Funktionen hinzuzufügen.
 
-![Symbole](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) für die Wolke und das Lineal **[– Lösungen und Architektur: Illustrationen](productivity-illustrations.md)** anzeigen oder Herunterladen dieser Illustrationen, um die Funktionen von Microsoft 365 und die Architektur der Cloud-Dienste von Microsoft 365 zu verstehen.
+![Symbole für die Wolke und das Lineal ](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[– Lösungen und Architektur: Illustrationen](productivity-illustrations.md)** anzeigen oder Herunterladen dieser Illustrationen, um die Funktionen von Microsoft 365 und die Architektur der Cloud-Dienste von Microsoft 365 zu verstehen.
 
-![Bewährte Methoden-](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) Menüband **[branchenspezifische Anleitungen](industry-specific-guidance-overview.md)** finden Sie bewährte Methoden für Ihre Branche – Finanzen, Gesundheitswesen und Bildung.
+![Bewährte Methoden-Menüband ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[branchenspezifische Anleitungen](industry-specific-guidance-overview.md)** finden Sie bewährte Methoden für Ihre Branche – Finanzen, Gesundheitswesen und Bildung.
 
-![Layout/Navigationssymbol](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) – **[Entwurfsprinzipien Grund](design-principles.md)** Legendes zu den wichtigsten Grundsätzen, die Sie zum Verständnis von Netzwerk-, Identitäts-, Sicherheits-und multinationalen Architekturen benötigen.
+![Layout/Navigationssymbol ](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) – **[Entwurfsprinzipien Grund](design-principles.md)** Legendes zu den wichtigsten Grundsätzen, die Sie zum Verständnis von Netzwerk-, Identitäts-, Sicherheits-und multinationalen Architekturen benötigen.
 
