@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209811"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689278"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
@@ -128,7 +128,7 @@ Die folgenden Richtlinieneinstellungen sind nur in Richtlinien für ATP-Anti-Phi
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Identitätswechseleinstellungen in ATP-Richtlinien zum Schutz vor Phishing
 
-Identitätswechsel: der Absender oder die e-Mail-Domäne des Absenders in einer Nachricht ähnelt einem tatsächlichen Absender oder einer echten Domäne:
+Bei einem Identitätswechsel sieht der Absender oder die e-Mail-Domäne des Absenders in einer Nachricht wie ein echter Absender oder eine reale Domäne aus:
 
 - Ein Beispiel für einen Identitätswechsel der Domäne contoso.com ist ćóntoso.com.
 
@@ -140,11 +140,11 @@ Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-A
 
 - **Zu schützende Benutzer**: verhindert, dass die Identität der angegebenen internen oder externen Benutzer imitiert wird. Beispiel: Führungskräfte (intern) und Verwaltungsratsmitglieder (extern). Sie können bis zu 60 interne und externe Adressen hinzufügen. Diese Liste geschützter Benutzer unterscheidet sich von der Liste der Empfänger, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
 
-  Sie geben beispielsweise Felipe Apodaca (felipea@contoso.com) als geschützten Benutzer in einer Richtlinie an, die für die Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der die Identität, in der Felipe Apodaca imitiert wird, von der Richtlinie verarbeitet wird (die Aktion, die Sie für imitierte Benutzer konfigurieren).
+  Sie geben beispielsweise Felipe Apodaca (felipea@contoso.com) als geschützten Benutzer in einer Richtlinie an, die für die Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der Felipe Apodaca imitiert wird, werden von der Richtlinie verarbeitet (die Aktion, die Sie für imitierte Benutzer konfigurieren).
 
 - **Zu schützende Domänen**: verhindern, dass die Identität der angegebenen Domänen imitiert wird. Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte Domänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste geschützter Domänen unterscheidet sich von der Liste der Domänen, für die die Richtlinie in der Einstellung **angewendet auf** gilt.
 
-  Beispielsweise geben Sie tailspintoys.com als geschützte Domäne in einer Richtlinie an, die für Mitglieder der Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der die Identität des Where tailspintoys.com von der Richtlinie verarbeitet wird (die Aktion, die Sie für imitierte Domänen konfigurieren).
+  Beispielsweise geben Sie tailspintoys.com als geschützte Domäne in einer Richtlinie an, die für Mitglieder der Gruppe "Führungskräfte" gilt. Eingehende Nachrichten, die an Mitglieder der Gruppe "Führungskräfte" gesendet werden, in der tailspintoys.com imitiert wird, werden von der Richtlinie verarbeitet (die Aktion, die Sie für imitierte Domänen konfigurieren).
 
 - **Aktionen für geschützte Benutzer oder Domänen**: Wählen Sie die Aktion aus, die für eingehende Nachrichten ausgeführt werden soll, die Identitätswechsel Versuche für geschützte Benutzer und geschützte Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel von geschützten Benutzern im Vergleich zum Identitätswechsel geschützter Domänen angeben:
 

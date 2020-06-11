@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Erfahren Sie, wie die Verwendungsanalyse eine Verbindung mit einer API herstellt und eine monatliche Nutzungs Tendenz verschiedener Microsoft 365-Dienste bereitstellt.  '
-ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402046"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695091"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 Datenmodell von Nutzungsanalysen
 
@@ -43,16 +43,16 @@ Diese API enthält Informationen zur monatlichen Nutzungs Tendenz der verschiede
 
 |**Tabellenname**|**Informationen in der Tabelle**|**Datumsbereich**|
 |:-----|:-----|:-----|
-|Tenant Product Usage  <br/> |Enthält monatliche Gesamtsummen von aktivierten und aktiven Benutzern, Monat für Monat beibehaltenen Benutzern, erstmaligen Benutzern und die kumulative Anzahl aktiver Benutzer.  <br/> |Enthält monatliche kumulierte Daten für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
+|Tenant Product Usage  <br/> |Enthält monatliche Gesamtsummen für aktivierte, aktive Benutzer, Monat für Monat behaltene Benutzer, erstmalige Benutzer und die kumulativen aktiven Benutzer.  <br/> |Enthält monatliche kumulierte Daten für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
 |Tenant Product Activity  <br/> |Enthält monatliche Gesamtsummen der Anzahl von Aktivitäten und aktiven Benutzern für verschiedene Aktivitäten innerhalb der Produkte.  <br/> Informationen zu den Aktivitäten innerhalb eines Produkts, die in dieser Datentabelle zurückgegeben werden, finden Sie unter [Definition aktiver Benutzer](active-user-in-usage-reports.md).  <br/> |Enthält monatliche kumulierte Daten für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Tenant Office Licenses  <br/> |Enthält Daten zur Anzahl von Microsoft Office-Abonnements, die Benutzern zugewiesen sind.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Tenant Mailbox Usage  <br/> |Enthält Daten zum Postfach des Benutzers, die sich auf die Gesamtpostfachanzahl und die Verwendung des Speichers beziehen.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
+|Tenant Office Licenses  <br/> |Enthält Daten zur Anzahl von Microsoft Office-Abonnements, die Benutzern zugewiesen sind.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
+|Tenant Mailbox Usage  <br/> |Enthält Daten zum Postfach des Benutzers, die sich auf die Gesamtpostfachanzahl und die Verwendung des Speichers beziehen.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
 |Tenant Client Usage  <br/> |Enthält Daten zur Anzahl der Benutzer, die bestimmte Clients/Geräte aktiv verwenden, um eine Verbindung mit Exchange Online, Skype for Business und Yammer herzustellen.  <br/> |Enthält monatliche kumulierte Daten für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Tenant SharePoint Online Usage  <br/> |Enthält Daten zu den SharePoint-Websites, die Team- oder Gruppenwebsites umfassen, z. B. die Gesamtanzahl von Websites, die Anzahl von Dokumenten auf der Website, die Anzahl der Dateien nach Aktivitätstyp und verwendetem Speicherplatz.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Tenant OneDrive for Business Usage  <br/> |Enthält Daten zu den OneDrive-Konten, z. B. die Anzahl der Konten, die Anzahl der auf OneDrive verteilten Dokumente, der verwendete Speicherplatz oder die Dateianzahl nach Aktivitätstyp.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Mandanten Microsoft 365 Gruppen Nutzung  <br/> |Enthält Daten zur Verwendung von Microsoft 365-Gruppen, einschließlich Mailbox, SharePoint und jammern.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Tenant Office Activation  <br/> |Enthält Daten zur Anzahl der Office-Abonnement Aktivierungen, zur Anzahl der Aktivierungen pro Gerät (Android/IOS/Mac/PC), Aktivierungen nach Dienstplänen, beispielsweise Microsoft 365-Apps für Unternehmen, Visio, Project.  <br/> |Enthält Daten zum Monatsende für einen fortlaufenden 12-monatigen Zeitraum einschließlich des aktuellen Teilmonats.  <br/> |
-|Benutzerstatus  <br/> |Enthält Metadaten zu Benutzern. Hierzu zählen der Anzeigename des Benutzers, die zugewiesenen Produkte, der Standort, die Abteilung, der Titel und das Unternehmen. Diese Daten beziehen sich auf Benutzer, denen im letzten abgelaufenen Monat eine Lizenz zugewiesen wurde. Jeder Benutzer wird durch eine Benutzer-ID eindeutig dargestellt.  <br/> |Diese Daten beziehen sich auf Benutzer, denen im letzten abgelaufenen Monat eine Lizenz zugewiesen war.  <br/> |
+|Tenant SharePoint Online Usage  <br/> |Enthält Daten zu den SharePoint-Websites, die Team- oder Gruppenwebsites umfassen, z. B. die Gesamtanzahl von Websites, die Anzahl von Dokumenten auf der Website, die Anzahl der Dateien nach Aktivitätstyp und verwendetem Speicherplatz.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
+|Tenant OneDrive for Business Usage  <br/> |Enthält Daten zu den OneDrive-Konten, z. B. die Anzahl der Konten, die Anzahl der auf OneDrive verteilten Dokumente, der verwendete Speicherplatz oder die Dateianzahl nach Aktivitätstyp.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
+|Mandanten Microsoft 365 Gruppen Nutzung  <br/> |Enthält Daten zur Verwendung von Microsoft 365-Gruppen, einschließlich Mailbox, SharePoint und jammern.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
+|Tenant Office Activation  <br/> |Enthält Daten zur Anzahl der Office-Abonnement Aktivierungen, zur Anzahl der Aktivierungen pro Gerät (Android/IOS/Mac/PC), Aktivierungen nach Dienstplänen, beispielsweise Microsoft 365-Apps für Unternehmen, Visio, Project.  <br/> |Enthält Monats Zustandsdaten für einen laufenden 12-monatigen Zeitraum einschließlich des aktuellen Teil Monats.  <br/> |
+|Benutzerstatus  <br/> |Enthält Metadaten zu Benutzern, einschließlich Anzeigename des Benutzers, zugewiesene Produkte, Standort, Abteilung, Titel, Unternehmen. Bei diesen Daten handelt es sich um Benutzer, denen im letzten abgeschlossenen Monat eine Lizenz zugewiesen wurde. Jeder Benutzer wird durch eine Benutzer-ID eindeutig dargestellt.  <br/> |Diese Daten beziehen sich auf Benutzer, denen im letzten abgelaufenen Monat eine Lizenz zugewiesen war.  <br/> |
 |User Activity  <br/> |Enthält Informationen pro Benutzer zu den von lizenzierten Benutzern ausgeführten Aktivitäten.  <br/> Informationen zu den Aktivitäten innerhalb eines Produkts, die in dieser Datentabelle zurückgegeben werden, finden Sie unter [Definition aktiver Benutzer](active-user-in-usage-reports.md).  <br/> |Diese Daten beziehen sich auf Benutzer, die im letzten abgelaufenen Monat eine Aktivität in einem der Dienste ausgeführt haben.  <br/> |
    
 Erweitern Sie die folgenden Abschnitte, um ausführliche Informationen zu jeder Datentabelle anzuzeigen.
@@ -154,7 +154,7 @@ Diese Tabelle enthält Daten zu jedem Benutzer, der im vorherigen Monat in einem
    
 ### <a name="data-table---tenant-product-usage"></a>Datentabelle – Tenant Product Usage
 
-In dieser Tabelle werden die Daten zur Einführung von Monat zu Monat im Hinblick auf Enable, Active, Returning und First Time Users für jedes Produkt in Microsoft 365 bereitgestellt. Der Microsoft 365-Wert stellt die aktive Verwendung in einem der Produkte dar.
+Diese Tabelle enthält Daten zur Monats übergreifenden Einführung in Bezug auf Enable, Active, Returning und First-Time Users für jedes Produkt in Microsoft 365. Der Microsoft 365-Wert stellt die aktive Verwendung in einem der Produkte dar.
   
 |**Spaltenname**|**Spaltenbeschreibung**|
 |:-----|:-----|
@@ -164,7 +164,7 @@ In dieser Tabelle werden die Daten zur Einführung von Monat zu Monat im Hinblic
 |ActiveUsers  <br/> |Die Anzahl der Benutzer, die eine beabsichtigte Aktivität im Produkt für den Zeitrahmenwert ausgeführt haben.  <br/> Ein Benutzer wird für ein Produkt für einen bestimmten Monat als aktiviert gezählt, wenn er eine der Hauptaktivitäten im Produkt ausgeführt hat. Die Hauptaktivitäten sind in der Tabelle **Tenant Product Activity** verfügbar.  <br/> |
 |CumulativeActiveUsers  <br/> |Die Anzahl der Benutzer, die zur Verwendung eines Produkts aktiviert sind und das Produkt bis zum Zeitrahmenmonat mindestens einmal seit Beginn der Datensammlung im neuen Verwendungssystem genutzt haben.  <br/> |
 |MoMReturningUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmenmonat aktiv sind und auch im vorherigen Monat aktiv waren.  <br/> |
-|FirstTimeUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmen zum ersten Mal seit Beginn der Datensammlung im neuen Verwendungssystem aktiv wurden.  <br/> Ein Benutzer wird in einem bestimmten Monat als Erstbenutzer gezählt, wenn er seine Aktivität erstmalig seit Beginn der Datenerfassung in diesem neuen Berichtssystem erkennt. Einmal als Benutzer gezählt, selbst wenn dieser Benutzer eine große Lücke in Ihrer Aktivität hat, werden Sie nie als erster Benutzer wieder gezählt.  <br/> |
+|FirstTimeUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmen zum ersten Mal seit Beginn der Datensammlung im neuen Verwendungssystem aktiv wurden.  <br/> Ein Benutzer wird in einem bestimmten Monat als Erstbenutzer gezählt, wenn er seine Aktivität erstmalig seit Beginn der Datenerfassung in diesem neuen Berichtssystem erkennt. Einmal als Erstbenutzer gezählt, selbst wenn dieser Benutzer eine große Lücke in Ihrer Aktivität hat, werden Sie nie wieder als Erstbenutzer gezählt.  <br/> |
 |Content Date  <br/> |Wenn der Zeitrahmen den aktuellen Monat angibt, stellt dieser Wert das neueste Datum des aktuellen Monats dar, für das Daten verfügbar sind.  <br/> Wenn der Zeitrahmen den vorherigen Monat angibt, stellt dieser Wert das letzte Datum des Zeitrahmenmonats dar.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Datentabelle – Tenant Product Activity 
@@ -202,7 +202,7 @@ Diese Tabelle besteht aus Zusammenfassungsdaten für alle lizenzierten Exchange 
    
 ### <a name="data-table---tenant-client-usage"></a>Datentabelle – Tenant Client Usage 
 
-Diese Tabelle enthält monatliche Zusammenfassungsdaten zu den Clients, die von Benutzern zum Herstellen von Verbindungen mit Exchange Online, Skype for Business und Yammer verwendet wurden. In dieser Tabelle sind noch keine Daten zur Clientnutzung für SharePoint Online und OneDrive for Business enthalten. 
+Diese Tabelle enthält zusammenfassende Zusammenfassungsdaten von Monaten über die Clients, die die Benutzer zum Herstellen einer Verbindung mit Exchange Online, Skype for Business und jammern verwenden. In dieser Tabelle sind noch keine Client Nutzungsdaten für SharePoint Online und OneDrive für Unternehmen vorhanden.
   
 |**Spaltenname**|**Spaltenbeschreibung**|
 |:-----|:-----|
