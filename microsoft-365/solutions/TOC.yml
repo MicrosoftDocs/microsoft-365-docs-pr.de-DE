@@ -70,6 +70,22 @@
               href: microsoft-365-guest-settings.md
     - name: Bereitstellen des Bedrohungsschutzes in Microsoft 365
       href: deploy-threat-protection.md
+    - name: Bereitstellen des Informationsschutzes für Datenschutzbestimmungen
+      items:
+        - name: Übersicht
+          href: information-protection-deploy.md
+        - name: Planen
+          href: information-protection-deploy-assess.md
+        - name: Nachverfolgen
+          href: information-protection-deploy-compliance.md
+        - name: Verhindern
+          href: information-protection-deploy-identity-device-threat.md
+        - name: Schützen
+          href: information-protection-deploy-protect-information.md
+        - name: Aufbewahren
+          href: information-protection-deploy-govern.md
+        - name: Untersuchen
+          href: information-protection-deploy-monitor-respond.md
 - name: Workload-Lösungen und -Szenarien
   items:
     - name: Übersicht
