@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: baf8fc0dbfb464dcf6b8054a9d91aacda00e3da6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636628"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679059"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation
 
@@ -145,7 +145,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Großbritannien, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea und Australien verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
+Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Vereinigtes Königreich, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea, Australien und den Vereinigten Arabischen Emiraten (VAE) verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
 
 > [!NOTE]
 > Zurzeit ist der Netzwerkupload von PST-Dateien in Deutschland und der Schweiz nicht verfügbar. Diese Häufig gestellten Fragen werden aktualisiert, sobald der Netzwerkupload in diesen Ländern verfügbar ist.

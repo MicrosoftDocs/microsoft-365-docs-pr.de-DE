@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470672"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678981"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -349,7 +349,7 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 
 5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
 
-6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld die gewünschte **Viewer**-Berechtigung und dann **Speichern** aus.
+6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld die gewünschten Berechtigungen und dann **Speichern** aus.
 
 7. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
 

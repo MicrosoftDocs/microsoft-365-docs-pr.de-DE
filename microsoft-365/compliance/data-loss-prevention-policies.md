@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630602"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679069"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
     
 - Inhalte werden an Personen außerhalb oder innerhalb der Organisation weitergeleitet.
 
-> [!NOTE]
-> Benutzer, die keine Gastkonten im Active Directory- oder Azure Active Directory-Mandanten einer Hostorganisation besitzen, werden als Personen innerhalb der Organisation betrachtet.
+  > [!NOTE]
+  > Benutzer, die keine Gastkonten im Active Directory- oder Azure Active Directory-Mandanten einer Hostorganisation besitzen, werden als Personen innerhalb der Organisation betrachtet.
     
 #### <a name="types-of-sensitive-information"></a>Arten von vertraulichen Informationen
 
@@ -127,13 +127,13 @@ Mithilfe einer DLP-Richtlinie können vertrauliche Informationen geschützt werd
   
 Wenn eine DLP-Richtlinie nach einem vertraulichen Informationstyp wie z. B. einer Kreditkartennummer sucht, wird nicht einfach nach einer 16-stelligen Zahl gesucht. Jede Art vertraulicher Informationen wird durch eine Kombination der folgenden Elemente definiert und anhand dieser ermittelt:
   
-- Schlüsselwörter
+- Schlüsselwörter.
     
-- Interne Funktionen zur Überprüfung von Prüfsummen oder der Zusammensetzung
+- Interne Funktionen zur Überprüfung von Prüfsummen oder der Zusammensetzung.
     
-- Auswertung regulärer Ausdrücke zum Auffinden übereinstimmender Muster
+- Auswertung regulärer Ausdrücke zum Auffinden übereinstimmender Muster.
     
-- Andere Inhaltsuntersuchungsmethoden
+- Andere Inhaltsuntersuchungsmethoden.
     
 Dadurch erzielt die DLP-Erkennung einen hohen Grad an Zuverlässigkeit, und die Anzahl falsch positiver Ergebnisse, welche Mitarbeiter beim Arbeiten behindern können, wird verringert.
   
@@ -145,13 +145,19 @@ Wenn ein Inhalt mit einer Bedingung in einer Regel übereinstimmt, können Sie A
   
 Mit den nun verfügbaren Aktionen können Sie:
   
-- **Den Zugriff auf Inhalte einschränken** Für Seiteninhalte bedeutet dies, dass Berechtigungen für ein Dokument für alle Personen mit Ausnahme des primären Websitesammlungsadministrators, des Dokumentbesitzers und der Person, die zuletzt Änderungen am Dokument vorgenommen hat, eingeschränkt sind. Diese Personen können die vertraulichen Informationen aus dem Dokument entfernen oder andere Abhilfemaßnahmen ergreifen. Wenn das Dokument den Anforderungen entspricht, werden die ursprünglichen Berechtigungen automatisch wiederhergestellt. Wenn der Zugriff auf ein Dokument gesperrt ist, wird dieses Dokument in der Bibliothek auf der Website mit einem speziellen Richtlinientipp-Symbol angezeigt. 
+- **Einschränken des Zugriffs auf die Inhalte** – Je nach Bedarf können Sie den Zugriff auf Inhalte auf drei Arten einschränken:
+
+  1. Einschränken des Zugriffs auf Inhalte für alle.
+  2. Einschränken des Zugriffs auf Inhalte für Personen außerhalb der Organisation.
+  3. Einschränken des Zugriffs auf "Jeder mit dem Link".
+
+  Für Websiteinhalt bedeutet dies, dass Berechtigungen für ein Dokument für alle Personen mit Ausnahme des primären Websitesammlungsadministrators, des Dokumentbesitzers und der Person, die zuletzt Änderungen am Dokument vorgenommen hat, eingeschränkt sind. Diese Personen können die vertraulichen Informationen aus dem Dokument entfernen oder andere Abhilfemaßnahmen ergreifen. Wenn das Dokument den Anforderungen entspricht, werden die ursprünglichen Berechtigungen automatisch wiederhergestellt. Wenn der Zugriff auf ein Dokument gesperrt ist, wird dieses Dokument in der Bibliothek auf der Website mit einem speziellen Richtlinientipp-Symbol angezeigt. 
     
-    ![Richtlinientipp, der zeigt, dass der Zugriff auf das Dokument gesperrt ist.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Richtlinientipp, der zeigt, dass der Zugriff auf das Dokument gesperrt ist.](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    Im Fall von E-Mail-Inhalten blockiert diese Aktion das Senden der Nachricht. Abhängig von der Konfiguration der DLP-Regel erhält der Absender einen Unzustellbarkeitsbericht (wenn die Regel eine Benachrichtigung verwendet), oder es wird ein Richtlinientipp angezeigt bzw. eine E-Mail-Benachrichtigung gesendet.
+  Im Fall von E-Mail-Inhalten blockiert diese Aktion das Senden der Nachricht. Abhängig von der Konfiguration der DLP-Regel erhält der Absender einen Unzustellbarkeitsbericht (wenn die Regel eine Benachrichtigung verwendet), oder es wird ein Richtlinientipp angezeigt bzw. eine E-Mail-Benachrichtigung gesendet.
     
-    ![Warnung, dass nicht autorisierte Empfänger aus der Nachricht entfernt werden müssen](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Warnung, dass nicht autorisierte Empfänger aus der Nachricht entfernt werden müssen](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Benutzerbenachrichtigungen und Benutzeraußerkraftsetzungen
 
@@ -289,7 +295,7 @@ Normalerweise verwenden Sie in einer Regel mit einer geringeren Instanzenanzahl 
   
 ### <a name="match-accuracy"></a>Treffergenauigkeit
 
-Wie vorstehend beschrieben wird jeder Typ vertraulicher Informationen durch eine Kombination unterschiedlicher Arten von Beweisen definiert und ermittelt. Im Allgemeinen wird ein Typ vertraulicher Informationen durch mehrere solche Kombinationen, den so genannten Mustern, definiert. Ein Muster, das weniger Beweise erfordert, verfügt über eine geringere Übereinstimmungsgenauigkeit (oder Vertrauensstufe), während ein Muster, das mehr Beweise erfordert, über eine höhere Übereinstimmungsgenauigkeit (oder Vertrauensstufe) verfügt. Wenn Sie mehr über die tatsächlichen Muster und Vertrauensstufen, die von jedem Typ vertraulicher Informationen verwendet werden, wissen möchten, lesen Sie [Wonach Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Wie vorstehend beschrieben wird jeder Typ vertraulicher Informationen durch eine Kombination unterschiedlicher Arten von Beweisen definiert und ermittelt. Im Allgemeinen wird ein Typ vertraulicher Informationen durch mehrere solche Kombinationen, den so genannten Mustern, definiert. Ein Muster, das weniger Beweise erfordert, verfügt über eine geringere Übereinstimmungsgenauigkeit (oder Vertrauensstufe), während ein Muster, das mehr Beweise erfordert, über eine höhere Übereinstimmungsgenauigkeit (oder Vertrauensstufe) verfügt. Wenn Sie mehr über die tatsächlichen Muster und Vertrauensstufen, die von jedem Typ vertraulicher Informationen verwendet werden, wissen möchten, lesen Sie [Entitätsdefinitionen für Typen vertraulicher Informationstypen](sensitive-information-type-entity-definitions.md).
   
 So wird der Typ vertraulicher Informationen mit Namen Kreditkartennummer durch zwei Muster definiert:
   
@@ -332,18 +338,17 @@ Aus diesen Gründen lautet die Anleitung zum Erstellen von Regeln mit unterschie
 Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](labels.md) als Bedingung in einer DLP-Richtlinie verwenden, müssen Sie Folgendes beachten:
 
 - Sie müssen die Aufbewahrungsbezeichnung erstellt, veröffentlicht und angewendet haben, bevor Sie sie als Bedingung in einer DLP-Richtlinie verwenden können.
-- Nach ihrer Erstellung und Veröffentlichung kann es bis zu einem Tag dauern, bis Aufbewahrungsbezeichnungen synchronisiert wurden, und bis zu sieben Tage, bis sie automatisch angewendet werden. Weiter Informationen hierzu finden Sie unter [Wie lange es dauert, bis Aufbewahrungsbezeichnungen wirksam werden](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- Nach ihrer Erstellung und Veröffentlichung kann es bis zu einem Tag dauern, bis Aufbewahrungsbezeichnungen synchronisiert wurden, und bis zu sieben Tage, bis sie automatisch angewendet werden. Weiter Informationen hierzu finden Sie unter [Wie lange es dauert, bis Aufbewahrungsbezeichnungen wirksam werden](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
 - Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie ***wird nur für Elemente in SharePoint Online und OneDrive for Business*** unterstützt.
 
+  ![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Disposition stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
 
-Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Disposition stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
+  - Sie haben eine Aufbewahrungsbezeichnung namens **Steuerjahr 2018** veröffentlicht, durch deren Anwendung auf Steuerdokumente von 2018, die in SharePoint gespeichert sind, diese für 10 Jahre aufbewahrt und dann freigegeben werden. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
 
-- Sie haben eine Aufbewahrungsbezeichnung namens **Steuerjahr 2018** veröffentlicht, durch deren Anwendung auf Steuerdokumente von 2018, die in SharePoint gespeichert sind, diese für 10 Jahre aufbewahrt und dann freigegeben werden. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
-
-> [!IMPORTANT]
-> Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Microsoft Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: **"Der Schutz von mit Bezeichnungen versehenen Inhalten in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten, oder deaktivieren Sie Exchange und Microsoft Teams als Speicherort."** Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
+  > [!IMPORTANT]
+  > Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Microsoft Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: **"Der Schutz von mit Bezeichnungen versehenen Inhalten in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten, oder deaktivieren Sie Exchange und Microsoft Teams als Speicherort."** Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Die Unterstützung von Vertraulichkeitsbezeichnungen wird in Kürze verfügbar sein
 
@@ -449,15 +454,15 @@ DLP erkennt vertrauliche Informationen mithilfe einer eingehenden Inhaltsanalyse
 
 Nach der Erstellung einer DLP-Richtlinie im Security &amp; Compliance Center wird diese in einem zentralen Richtlinienspeicher abgelegt und dann mit den verschiedenen Inhaltsquellen synchronisiert, einschließlich:
   
-- Exchange Online und von dort aus mit Outlook im Web und Outlook
+- Exchange Online und von dort aus mit Outlook im Web und Outlook.
     
-- OneDrive for Business-Websites
+- OneDrive for Business-Websites.
     
-- SharePoint Online-Websites
+- SharePoint Online-Websites.
     
-- Office-Desktopprogrammen (Excel, PowerPoint und Word)
+- Office-Desktopprogrammen (Excel, PowerPoint und Word).
 
-- Microsoft Teams-Kanälen und Chatnachrichten
+- Microsoft Teams-Kanälen und Chatnachrichten.
     
 Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, werden Inhalte ausgewertet und Aktionen erzwungen.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -504,9 +509,13 @@ Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berech
 1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
     
 2. Erstellen Sie eine Rollengruppe auf der Seite **Berechtigungen** des Security &amp; Compliance Center. 
+
+3. Verwenden Sie beim Erstellen der Rollengruppe den Abschnitt **Rollen auswählen**, um die folgende Rolle zur Rollengruppe hinzuzufügen: **DLP-Complianceverwaltung**.
     
-3. Fügen Sie die Microsoft 365-Gruppe der Rollengruppe hinzu.
-    
+4. Verwenden Sie den Abschnitt **Mitglieder auswählen**, um die zuvor erstellte Microsoft 365-Gruppe der Rollengruppe hinzuzufügen.
+
+Sie können auch eine Rollengruppe mit Nur-Lese-Rechten für die DLP-Richtlinien und DLP-Berichte erstellen, indem Sie die Rolle **DLP-Complianceverwaltung mit Leserechten**.
+
 Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden. Für die Richtlinienerzwingung ist kein Zugriff auf den Inhalt erforderlich.
@@ -515,19 +524,19 @@ Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen 
 
 Zur Verwendung der meisten Cmdlets für das Security &amp; Compliance Center müssen Sie folgende Aktionen ausführen:
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Stellen Sie eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Verwenden Sie eines dieser [policy-and-compliance-dlp-Cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
+2. Verwenden Sie eines dieser [policy-and-compliance-dlp-Cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps).
     
 DLP-Berichte müssen jedoch Daten aus allen Microsoft 365-Komponenten (einschließlich Exchange Online) abrufen. Aus diesem Grund sind die **Cmdlets für die DLP-Berichte in Exchange Online PowerShell und nicht in Security &amp; Compliance Center Powershell** verfügbar. Zur Verwendung der Cmdlets für die DLP-Berichte müssen Sie daher folgende Aktionen ausführen:
   
-1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Weitere Informationen
 
@@ -539,7 +548,7 @@ DLP-Berichte müssen jedoch Daten aus allen Microsoft 365-Komponenten (einschlie
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
     
 - [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
     

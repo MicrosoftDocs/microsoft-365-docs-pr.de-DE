@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432336"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695138"
 ---
 # <a name="learn-about-retention-policies"></a>Informationen zu Aufbewahrungsrichtlinien
 
@@ -141,18 +141,17 @@ Nachfolgend die älteren Features, die Sie möglicherweise verwendet haben:
   
 **Ältere Features von Exchange Online:**
 
-- [Verwalten von eDiscovery-Fällen im Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery-Sperre) 
-    
 - [In-Situ-Speicher und Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery-Sperre) 
 
 - [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=846125), auch bekannt als [Messaging-Datensatzverwaltung](https://go.microsoft.com/fwlink/?linkid=846126) (Nur Löschen)
     
+Siehe auch [Einstellung älterer eDiscovery-Tools](legacy-ediscovery-retirement.md).
+
+
 **Ältere Features von SharePoint und OneDrive:**
 
-- [Verwalten von eDiscovery-Fällen im Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery-Sperre) 
-    
 - [Hinzufügen von Inhalten zu einem Fall und temporäres Sperren von Quellen im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery-Sperre) 
     
 - [Richtlinien zum Löschen von Dokumenten](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (nur Löschvorgang)

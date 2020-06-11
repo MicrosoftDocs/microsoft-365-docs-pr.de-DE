@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Microsoft 365 Apps for Enterprise verwendet.
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011887"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679038"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365 Apps for Enterprise-Bereitstellung für Contoso
 
@@ -53,10 +53,10 @@ Anstatt Updates von Office mit Configuration Manager zu verwalten, aktivierte Co
 
 Contoso folgte dem gleichen zweistufigen Ansatz für Feature-Updates, den das Unternehmen für die Bereitstellung von Office nutzte: Geräte in der Pilotgruppe erhielten Feature-Updates vier Monate vor den Geräten in der restlichen Organisation (die allgemeine Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
-- den halbjährlichen Kanal (gezielt) für Updates für die Pilotgruppe 
-- den halbjährlichen Kanal für Updates für die allgemeine Gruppe. 
+- Halbjährlicher Enterprise-Kanal (Vorschau) für Updates für die Pilotgruppe 
+- Halbjährlicher Enterprise-Kanal für Updates für die allgemeinere Gruppe. 
 
-Da der halbjährliche (gezielt) Kanal vier Monate früher als der halbjährliche Kanal eine Version von Microsoft 365 Apps for Enterprise veröffentlicht, hat Contoso Zeit, die Updates zu validieren, ohne sie verwalten zu müssen. 
+Da der halbjährliche Enterprise-Kanal (Vorschau) vier Monate früher als der halbjährliche Enterprise-Kanal eine Version von Microsoft 365 Apps for Enterprise veröffentlicht, hat Contoso Zeit, die Updates zu validieren, ohne sie verwalten zu müssen. 
 
 ## <a name="deployment-process"></a>Bereitstellungsprozess
 
@@ -65,7 +65,7 @@ Um die Bereitstellung von Office abzuschließen, hat Contoso den folgenden Proze
 1. Vor der Bereitstellung testete das Unternehmen unter Verwendung des Readiness Toolkits ihre Anwendungen und Office-Add-Ins, um ihre Kompatibilität mit Microsoft 365 Apps for Enterprise zu bewerten.
 2. Contoso aktivierte in Configuration Manager den Peercache auf Clientgeräten, was bei begrenzter Netzwerkkapazität von Nutzen ist, wenn die Bereitstellung auf Clientgeräten an Remotestandorten erfolgt. 
 3. Das Unternehmen definierte im Configuration Manager zwei Bereitstellungsgruppen als Gerätesammlungen: eine Pilotgruppe und eine breite Gruppe. Die Pilotgruppe, die eine kleine Gruppe repräsentativer Geräte in der gesamten Organisation umfasste, wurde dazu verwendet, zusätzliche Tests von Anwendungen, Add-Ins und Hardware mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise durchzuführen. 
-4. Das Unternehmen erstellte mithilfe des Office Client Management-Dashboards und des Office 365-Installationsassistenten Bereitstellungspakete für Office, die beide Teil der Konfigurationsmanager-Konsole sind. Es wurden zwei Microsoft 365 Apps for Enterprise-Pakete erstellt, eins für die Pilotgruppe im halbjährlichen Kanal (gezielt) und eins für die breite Gruppe im halbjährlichen Kanal. 
+4. Das Unternehmen erstellte mithilfe des Office Client Management-Dashboards und des Office 365-Installationsassistenten Bereitstellungspakete für Office, die beide Teil der Konfigurationsmanager-Konsole sind. Es wurden zwei Microsoft 365 Apps for Enterprise-Pakete erstellt, eins für die Pilotgruppe im halbjährlichen Enterprise-Kanal (Vorschau) und eins für die breite Gruppe im halbjährlichen Enterprise-Kanal. 
 5. Als Teil der einzelnen Office-Pakete wurden Language Packs für Englisch, Französisch und Deutsch einbezogen. Wenn ein Gerät eine Sprache erforderte, die nicht im Office-Paket enthalten war, wurde sie automatisch vom Office Content Delivery Network (CDN) heruntergeladen.
 6. Das Unternehmen nutzte die integrierte Funktion im Office-Paket, um automatisch alle vorhandenen MSI-Versionen von Office zu entfernen, bevor Microsoft 365 Apps for Enterprise installiert wurde.
 7. In Configuration Manager stellte das Unternehmen die Windows- und Office-Pakete an Verteilungspunkten in seinem Netzwerk bereit und führte dann die Configuration Manager-Bereitstellungsaufgabensequenzen aus, um das Microsoft 365 Apps for Enterprise-Pilotpaket für die Pilotgruppe bereitzustellen.

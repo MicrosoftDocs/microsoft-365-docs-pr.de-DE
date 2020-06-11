@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
-ms.openlocfilehash: 9aeee6040b3b5a8505a09ffc696a14f515af0e43
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 330195cd9362722fccd5a8f7445abaee8a725857
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224506"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678749"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -95,7 +95,7 @@ Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schri
 > [!IMPORTANT]
 > Wenn Sie PST-Dateien mit der in diesem Artikel beschriebenen Netzwerkuploadmethode und Befehlssyntax importieren möchten, müssen Sie die Version von AzCopy verwenden, die in Schritt 6b im folgenden Verfahren heruntergeladen werden kann. Sie können die gleiche Version von AzCopy auch [hier](https://aka.ms/downloadazcopy) herunterladen. Die Verwendung einer anderen Version von AzCopy wird nicht unterstützt.
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
+1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
     
 2. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Information Governance** \> **Import** \> **Importieren von PST-Dateien**.
     
@@ -204,7 +204,7 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
 Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organisation hochgeladen wurden, besteht der nächste Schritt darin, eine durch Trennzeichen getrennte Datei (CSV) zu erstellen, die angibt, in welche Benutzerpostfächer die PST-Dateien importiert werden. Diese CSV-Datei wird im nächsten Schritt übermittelt, wenn Sie einen PST-Importauftrag erstellen.
   
 1. [Laden Sie eine Kopie der PST-Importzuordnungsdatei herunter](https://go.microsoft.com/fwlink/p/?LinkId=544717).
-    
+
 2. Öffnen oder speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Das folgende Beispiel zeigt eine abgeschlossene PST-Importzuordnungsdatei (in Editor geöffnet). Es ist wesentlich einfacher, Microsoft Excel zum Bearbeiten der CSV-Datei zu verwenden.
 
     ```text
@@ -220,13 +220,13 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organis
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
-    
-    Die erste Zeile oder Kopfzeile der CSV-Datei enthält die Parameter, die vom PST-Importdienst verwendet werden, um die PST-Dateien in Benutzerpostfächer zu importieren. Die einzelnen Parameternamen werden jeweils durch ein Komma getrennt. Jede Zeile unter der Kopfzeile stellt die Parameterwerte für das Importieren einer PST-Datei in ein bestimmtes Postfach dar. Sie benötigen eine Zeile für jede PST-Datei, die Sie in ein Benutzerpostfach importieren möchten. Vergessen Sie nicht, die Platzhalterdaten in der Zuordnungsdatei durch die tatsächlichen Werte zu ersetzen.
 
-   **Hinweis:** Ändern Sie nichts in der Kopfzeile, einschließlich der SharePoint-Parameter; diese werden während des PST-Importvorgangs ignoriert. 
+    Die erste Zeile oder Kopfzeile der CSV-Datei enthält die Parameter, die vom PST-Importdienst verwendet werden, um die PST-Dateien in Benutzerpostfächer zu importieren. Die einzelnen Parameternamen werden jeweils durch ein Komma getrennt. Jede Zeile unter der Kopfzeile stellt die Parameterwerte für das Importieren einer PST-Datei in ein bestimmtes Postfach dar. Sie benötigen eine Zeile für jede PST-Datei, die Sie in ein Benutzerpostfach importieren möchten. Die CSV-Zuordnungsdatei kann maximal 500 Zeilen enthalten. Wenn Sie mehr als 500 PST-Dateien importieren möchten, müssen Sie mehrere Zuordnungsdateien erstellen und in Schritt 5 mehrere Importaufträge erstellen.
+
+    > [!NOTE]
+    > Ändern Sie nichts in der Kopfzeile, einschließlich der SharePoint-Parameter; diese werden während des PST-Importvorgangs ignoriert. Vergessen Sie auch nicht, die Platzhalterdaten in der Zuordnungsdatei durch die tatsächlichen Werte zu ersetzen.
 
  3. Verwenden Sie die Informationen in der folgenden Tabelle, um die CSV-Datei mit den erforderlichen Informationen zu füllen.
-
 
     |**Parameter**|**Beschreibung**|**Beispiel**|
     |:-----|:-----|:-----|
@@ -235,7 +235,7 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organis
     | `Name` <br/> |Gibt den Namen der PST-Datei an, die in das Benutzerpostfach importiert wird. Beim Wert für diesen Parameter muss die Groß-/Kleinschreibung beachtet werden.  <br/> <br/>**Wichtig:** Die Groß-/Kleinschreibung für den PST-Dateinamen in der CSV-Datei muss mit derjenigen der PST-Datei identisch sein, die in Schritt 2 in den Azure Storage-Speicherort hochgeladen wurde. Wenn Sie beispielsweise `annb.pst` im Parameter `Name` der CSV-Datei verwenden, der Name der tatsächlichen PST-Datei aber `AnnB.pst` lautet, schlägt der Import für diese PST-Datei fehl. Sorgen Sie deshalb dafür, dass im Namen der PST-Datei in der CSV-Datei dieselbe Groß-/Kleinschreibung wie in der tatsächlichen PST-Datei verwendet wird.  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |Gibt die E-Mail-Adresse des Postfachs an, in das die PST-Datei importiert werden soll. Sie können keinen öffentlichen Ordner angeben, da der PST-Importdienst keine Unterstützung für den Import von PST-Dateien in öffentliche Ordner bietet.  <br/> Zum Importieren einer PST-Datei in ein inaktives Postfach müssen Sie für diesen Parameter die Postfach-GUID angeben. Zum Abrufen dieser GUID führen Sie den folgenden PowerShell-Befehl in Exchange Online aus: `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid`. <br/> <br/>**Hinweis:** In einigen Fällen besitzen Sie möglicherweise mehrere Postfächer mit derselben E-Mail-Adresse, bei der ein Postfach ein aktives Postfach ist und sich das andere Postfach in einem Status "vorübergehend gelöscht" (oder "inaktiv") befindet. In diesen Fällen müssen Sie die Postfach-GUID angeben, um das Postfach eindeutig zu identifizieren, in das die PST-Datei importiert werden soll. Zum Abrufen dieser GUID für aktive Postfächer führen Sie den folgenden PowerShell-Befehl aus: `Get-Mailbox <identity of active mailbox> | FL Guid`. Zum Abrufen der GUID für vorübergehend gelöschte (oder inaktive) Postfächer führen Sie diesen Befehl aus: `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.  <br/> | `annb@contoso.onmicrosoft.com` <br/> Oder  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Gibt an, ob die PST-Datei in das Archivpostfach des Benutzers importiert werden soll. Es gibt zwei Möglichkeiten:  <br/><br/>**FALSE:** Importiert die PST-Datei in das primäre Postfach des Benutzers.  <br/> **TRUE:** Importiert die PST-Datei in das Archivpostfach des Benutzers. Dies setzt voraus, dass das [Archivpostfach des Benutzers aktiviert ist](enable-archive-mailboxes.md). <br/><br/>Wenn Sie diesen Parameter auf `TRUE` festlegen und das Archivpostfach des Benutzers nicht aktiviert ist, schlägt der Import für diesen Benutzer fehl. Wenn der Import für einen Benutzer fehlschlägt (weil sein Archiv nicht aktiviert und diese Eigenschaft auf `TRUE` festgelegt ist), sind die übrigen Benutzer im Importauftrag davon nicht betroffen.  <br/>  Wenn Sie diesen Parameter leer lassen, wird die PST-Datei in das primäre Postfach des Benutzers importiert.  <br/> <br/>**Hinweis:** Zum Importieren einer PST-Datei in ein cloudbasiertes Archivpostfach für einen Benutzer, dessen primäres Postfach lokal gehostet wird, geben Sie für diesen Parameter einfach `TRUE` an und geben Sie die E-Mail-Adresse des lokalen Postfachs des Benutzers für den Parameter `Mailbox` an.  <br/> | `FALSE` <br/> Oder  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Gibt den Postfachordner an, in den die PST-Datei importiert wird.  <br/> <br/> Wenn Sie diesen Parameter leer lassen, wird die PST-Datei in einen neuen Ordner mit dem Namen **Imported** auf der Stammebene des Postfachs importiert (dieselbe Ebene wie der Ordner "Posteingang" und die anderen Standardordner des Postfachs).  <br/> <br/> Wenn Sie `/` angeben, werden Ordner und Elemente auf oberster Ebene in der Ordnerstruktur des Zielpostfachs oder -archivs importiert. Wenn im Zielpostfach ein Ordner vorhanden ist (z. b. Standardordner wie "Posteingang", "Gesendete Elemente" und "Gelöschte Elemente"), werden die Elemente dieses Ordners in der PST-Datei in den vorhandenen Ordner im Zielpostfach zusammengeführt. Wenn die PST-Datei beispielsweise einen Ordner "Posteingang" enthält, werden die Elemente in diesem Ordner in den Ordner "Posteingang" im Zielpostfach importiert. Neue Ordner werden erstellt, wenn Sie in der Ordnerstruktur des Zielpostfachs nicht vorhanden sind.  <br/><br/>  Wenn Sie `/<foldername>` angeben, werden Elemente und Ordner in der PST-Datei in einen Ordner mit dem Namen *\<Ordnername\>* importiert. Bei Verwendung von `/ImportedPst` würden beispielsweise Elemente in einen Ordner mit dem Namen **ImportedPst** importiert. Dieser Ordner befindet sich im Postfach des Benutzers auf der gleichen Ebene wie der Ordner "Posteingang".  <br/><br/> **Tipp:** Sie sollten ein paar Testbatches ausführen, um mit diesem Parameter zu experimentieren, damit Sie den besten Ordnerspeicherort für das Importieren der PST-Dateien ermitteln können.  <br/> |(leer lassen)  <br/> Oder  <br/>  `/` <br/> Oder  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | Gibt den Postfachordner an, in den die PST-Datei importiert wird.  <br/> <br/> Wenn Sie diesen Parameter leer lassen, wird die PST-Datei in einen neuen Ordner mit dem Namen **Imported** auf der Stammebene des Postfachs importiert (dieselbe Ebene wie der Ordner "Posteingang" und die anderen Standardordner des Postfachs).  <br/> <br/> Wenn Sie `/` angeben, werden Ordner und Elemente auf oberster Ebene in der Ordnerstruktur des Zielpostfachs oder -archivs importiert. Wenn im Zielpostfach ein Ordner vorhanden ist (z. b. Standardordner wie "Posteingang", "Gesendete Elemente" und "Gelöschte Elemente"), werden die Elemente dieses Ordners in der PST-Datei in den vorhandenen Ordner im Zielpostfach zusammengeführt. Wenn die PST-Datei beispielsweise einen Ordner "Posteingang" enthält, werden die Elemente in diesem Ordner in den Ordner "Posteingang" im Zielpostfach importiert. Neue Ordner werden erstellt, wenn Sie in der Ordnerstruktur des Zielpostfachs nicht vorhanden sind.  <br/><br/>  Wenn Sie `/<foldername>` angeben, werden Elemente und Ordner in der PST-Datei in einen Ordner mit dem Namen *\<foldername\>* importiert. Bei Verwendung von `/ImportedPst` würden beispielsweise Elemente in einen Ordner mit dem Namen **ImportedPst** importiert. Dieser Ordner befindet sich im Postfach des Benutzers auf der gleichen Ebene wie der Ordner "Posteingang".  <br/><br/> **Tipp:** Sie sollten ein paar Testbatches ausführen, um mit diesem Parameter zu experimentieren, damit Sie den besten Ordnerspeicherort für das Importieren der PST-Dateien ermitteln können.  <br/> |(leer lassen)  <br/> Oder  <br/>  `/` <br/> Oder  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Dieser optionale Parameter gibt einen numerischen Wert für die Codepage an, die zum Importieren von PST-Dateien im ANSI-Dateiformat verwendet werden muss. Der Parameter wird zum Importieren von PST-Dateien aus chinesischen, japanischen und koreanischen (CJK) Organisationen verwendet, weil in diesen Sprachen normalerweise ein Doppelbyte-Zeichensatz (double byte character set, DBCS) verwendet wird. Wenn dieser Parameter nicht verwendet wird, um PST-Dateien für Sprachen zu importieren, die DBCS für die Namen von Postfachordnern verwenden, sind die Ordnernamen nach dem Import oft nicht leserlich.  <br/><br/> Eine Liste von unterstützten Werten, die für diesen Parameter verwendet werden müssen, finden Sie unter [CodePage-Bezeichner](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> <br/>**Hinweis:** Wie vorstehend erwähnt, ist dies ein optionaler Parameter, den Sie in die CSV-Datei nicht einschließen müssen. Sie können ihn aber auch einschließen und den Wert für eine oder mehrere Zeilen leer lassen.  <br/> |(leer lassen)  <br/> Oder  <br/>  `932` (dies ist der Codepagebezeichner für ANSI/OEM – Japanisch)  <br/> |
     | `SPFileContainer` <br/> |Lassen Sie diesen Parameter für den PST-Import leer.  <br/> |Nicht zutreffend  <br/> |
     | `SPManifestContainer` <br/> |Lassen Sie diesen Parameter für den PST-Import leer.  <br/> |Nicht zutreffend  <br/> |
@@ -246,41 +246,45 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organis
 Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Microsoft 365 zu erstellen. Wie zuvor beschrieben, übermitteln Sie die erstellte PST-Importzuordnungsdatei in Schritt 4. Nachdem Sie den Auftrag erstellt haben, analysiert Microsoft 365 die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, die Daten zu filtern, die tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind (siehe [Schritt 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
 1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
+
 2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Information Governance > Import > Importieren von PST-Dateien**.
-    
+
 3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
-    
-    **Hinweis:** Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen, um einen Importauftrag erstellen zu können. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
-    
+
+   > [!NOTE]
+   > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen, um einen Importauftrag erstellen zu können. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
+
 4. Geben Sie einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **Weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie dürfen weder Großbuchstaben noch Leerzeichen in dem Namen verwenden.
-    
+
 5. Klicken Sie auf der Seite **Möchten Sie Daten hochladen oder ausliefern?** auf **Daten hochladen** und dann auf **Weiter**.
-    
+
     ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Klicken Sie in Schritt 4 auf der Seite zum **Importieren von Daten** auf die Kontrollkästchen zur Angabe, dass **das Hochladen der Dateien abgeschlossen ist** und **Zugriff auf die Zuordnungsdatei besteht**, und klicken Sie dann auf **Weiter**.
-    
+
     ![Klicken Aktivieren Sie die beiden Kontrollkästchen in Schritt 4.](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
-7. Klicken Sie auf der Seite **Auswählen der Zuordnungsdatei** auf **Zuordnungsdatei auswählen**, um die PST-Importzuordnungsdatei zu übermitteln, die Sie in Schritt 4 erstellt haben. 
-    
+7. Klicken Sie auf der Seite **Auswählen der Zuordnungsdatei** auf **Zuordnungsdatei auswählen**, um die CSV-Zuordnungsdatei zu übermitteln, die Sie in Schritt 4 erstellt haben. 
+
     ![Klicken Sie auf "Zuordnungsdatei auswählen", um die CSV-Datei zu übermitteln, die Sie für den Importvorgang erstellt haben.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 8. Wenn der Name der CSV-Datei unter **Name der Zuordnungsdatei** angezeigt wird, klicken Sie auf **Überprüfen**, um die CSV-Datei auf Fehler zu überprüfen. 
-    
+
     ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Die CSV-Datei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Der Bericht mit den Überprüfungsfehlern wird geöffnet, in dem für jede Zeile in der Datei, in der ein Fehler aufgetreten ist, eine Fehlermeldung aufgeführt ist.
-    
-9. Nachdem die PST-Zuordnungsdatei erfolgreich überprüft wurde, lesen Sie das Dokument mit den allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
-    
+
+   > [!NOTE]
+   > Wie zuvor erläutert, kann eine Zuordnungsdatei maximal 500 Zeilen umfassen. Die Überprüfung schlägt fehl, wenn die Zuordnungsdatei mehr als 500 Zeilen enthält. Wenn Sie mehr als 500 PST-Dateien importieren möchten, müssen Sie mehrere Zuordnungsdateien und mehrere Importaufträge erstellen.
+
+9. Nachdem die Zuordnungsdatei erfolgreich überprüft wurde, lesen Sie das Dokument mit den allgemeinen Geschäftsbedingungen, und aktivieren Sie dann das Kontrollkästchen.
+
 10. Klicken Sie auf **Speichern**, um den Auftrag zu übermitteln, und klicken Sie dann auf **Schließen**, nachdem der Auftrag erfolgreich erstellt wurde. 
-    
+
     Es wird eine Status-Flyout-Seite mit dem Status **Analyse in Bearbeitung ** angezeigt, und der neue Importauftrag wird in der Liste auf der Seite **PST-Dateien importieren** angezeigt. 
-    
+
 11. Klicken Sie auf **Aktualisieren** ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif), um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status in **Analyse abgeschlossen** geändert.
-    
+
     Sie können auf den Importauftrag klicken, um die Status-Flyout-Seite anzuzeigen, die ausführlichere Informationen zu dem Importauftrag enthält, z. B. den Status jeder PST-Datei, die in der Zuordnungsdatei aufgeführt ist.
  
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Schritt 6: Filtern von Daten und Starten des PST-Importauftrags
