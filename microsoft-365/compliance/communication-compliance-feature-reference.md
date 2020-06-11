@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352084"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689243"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -62,7 +62,9 @@ Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermi
 
 Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
-Wenn Sie eine Microsoft 365-Gruppe für beaufsichtigte Benutzer auswählen, überprüft die Richtlinie den Inhalt des freigegebenen Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, scannt die Richtlinie einzelne Benutzerpostfächer. Das Hinzufügen von Gruppen und Verteilerlisten zu Kommunikations Konformitätsrichtlinien ist Teil der allgemeinen Bedingungen und Regeln, sodass die maximale Anzahl von Gruppen und Verteilerlisten, die eine Richtlinie unterstützt, abhängig von der Anzahl der Bedingungen variiert, die auch der Richtlinie hinzugefügt werden. Jede Richtlinie sollte je nach der Anzahl der in der Richtlinie vorhandenen zusätzlichen Bedingungen ungefähr 20 Gruppen oder Verteilerlisten unterstützen.
+Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails, die an diese Gruppe gesendet werden, und nicht die einzelnen e-Mails, die von den einzelnen Gruppenmitgliedern empfangen werden.
+
+Das Hinzufügen von Gruppen und Verteilerlisten zu Kommunikations Konformitätsrichtlinien ist Teil der allgemeinen Bedingungen und Regeln, sodass die maximale Anzahl von Gruppen und Verteilerlisten, die eine Richtlinie unterstützt, abhängig von der Anzahl der Bedingungen variiert, die auch der Richtlinie hinzugefügt werden. Jede Richtlinie sollte je nach der Anzahl der in der Richtlinie vorhandenen zusätzlichen Bedingungen ungefähr 20 Gruppen oder Verteilerlisten unterstützen.
 
 ## <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 
@@ -232,7 +234,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. |
 | **File-Klasse** | Die Klasse der Nachricht auf der Grundlage des Nachrichtentyps, entweder *Nachricht* oder *Anlage*. |
 | **Weist eine Anlage auf** | Das Attachment-vorhanden sein in der Nachricht. |
-| **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloonmberg usw. |
+| **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloonmberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Diese Domäne ist normalerweise Ihre Microsoft 365-Abonnement Domäne standardmäßig. |
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
