@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043327"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579190"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Auskunftsrecht betroffener Personen für Dynamics 365 im Rahmen der DSGVO und CCPA
 
@@ -242,12 +242,9 @@ Die folgende Tabelle fasst den Zugriff auf und den Export von vom System generie
 |**Wie werden Daten an den Benutzer zurückgegeben?**| Die Daten werden an den Azure-Speicherort Ihrer Organisation exportiert; es ist Sache der Administratoren in Ihrer Organisation, zu bestimmen, wie sie diese Daten den Benutzern anzeigen/bereitstellen. |
 |**Wie werden Daten in vom System generierten Protokollen dargestellt?**| Beispiel für ein vom System generiertes Protokoll im JSON-Format: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> Bei einigen Features ist das Exportieren oder Löschen personenbezogener Daten nicht möglich, um die Integrität derartiger Informationen aus Sicherheits- und Überwachungsgründen zu schützen.
-
 ### <a name="deleting-system-generated-logs"></a>Löschen von vom System generierten Protokollen
 
-Wenn Sie vom System generierte Protokolle löschen möchten, die über eine Zugriffsanforderung abgerufen wurden, müssen Sie den Benutzer aus dem Dienst entfernen und dessen Azure Active Directory-Konto endgültig löschen. Es ist wichtig zu beachten, dass das Benutzerkonto nach dem Initiieren des Löschvorgangs endgültig gelöscht wird. Durch dauerhaftes Löschen eines Benutzerkontos werden die Daten des Benutzers innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Dynamics 365-Dienste entfernt.
+Wenn Sie vom System generierte Protokolle löschen möchten, die über eine Zugriffsanforderung abgerufen wurden, müssen Sie den Benutzer aus dem Dienst entfernen und dessen Azure Active Directory-Konto endgültig löschen. Anweisungen dazu, wie ein Benutzer dauerhaft gelöscht wird, finden Sie im Abschnitt [Schritt 5: Löschen](gdpr-dsr-azure.md#step-5-delete) im Thema „Leitfaden für Anträge betroffener Personen in Azure“. Es ist wichtig zu beachten, dass das Benutzerkonto nach dem Initiieren des Löschvorgangs endgültig gelöscht wird. Durch die dauerhafte Löschung eines Benutzerkontos werden die Daten des Benutzers – mit Ausnahme von Daten, die für die Sicherheit und die Stabilität des Dienstes wesentlich sind – innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Dynamics 365-Dienste entfernt.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

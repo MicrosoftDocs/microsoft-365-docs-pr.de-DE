@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection Framework, um die Daten Ihrer Organisation zu klassifizieren und zu schützen, ohne die Produktivität und Zusammenarbeit der Benutzer zu behindern.
-ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 26b916f2a6aa86131da6f0bf9250291bad85dd74
+ms.sourcegitcommit: 57afde60f81499f58a9dce13649361c62f2b5a01
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292543"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44590926"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -163,7 +163,7 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 Nachdem Sie eine Bezeichnungsrichtlinie erstellt haben, die Benutzern und Gruppen Vertraulichkeitsbezeichnungen zuweist, kann es bis zu 24 Stunden dauern, bis die Bezeichnungen in den Office-Anwendungen der Benutzer angezeigt werden.
 
-Es gibt keine Beschränkung für die Anzahl der Vertraulichkeitsbezeichnungen, die Sie erstellen und veröffentlichen können, mit einer Ausnahme: Wenn bei der die Bezeichnung Verschlüsselung angewendet wird, gibt es maximal 500 Bezeichnungen. Allerdings gilt als bewährte Methode, um den Verwaltungsaufwand für die Administratoren und die Komplexität für die Benutzer zu verringern, die Anzahl der Bezeichnungen möglichst gering zu halten. Praxisnahe Bereitstellungen haben sich als weit weniger effektiv erwiesen, wenn Benutzer mehr als fünf Hauptbezeichnungen oder mehr als fünf Unterbezeichnungen pro Hauptbezeichnung zuordnen.
+Es gibt keine Beschränkung für die Anzahl der Vertraulichkeitsbezeichnungen, die Sie erstellen und veröffentlichen können, mit einer Ausnahme: Wenn bei der die Bezeichnung Verschlüsselung angewendet wird, gibt es maximal 500 Bezeichnungen, die Sie erstellen können. Allerdings gilt als bewährte Methode, um den Verwaltungsaufwand für die Administratoren und die Komplexität für die Benutzer zu verringern, die Anzahl der Bezeichnungen möglichst gering zu halten. Praxisnahe Bereitstellungen haben sich als weit weniger effektiv erwiesen, wenn Benutzer mehr als fünf Hauptbezeichnungen oder mehr als fünf Unterbezeichnungen pro Hauptbezeichnung zuordnen.
 
 ### <a name="label-policy-priority-order-matters"></a>Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)
 

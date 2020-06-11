@@ -1,5 +1,5 @@
 ---
-title: Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
+title: Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 description: Verstehen der Benutzerrechte gemäß DSGVO und CCPA und wie Office 365 Unternehmen bei der Suche von und Reaktion auf Anträge betroffener Personen unterstützt.
 keywords: Office 365, Anträge betroffener Personen, Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO, CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221429"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579270"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen im Rahmen der DSGVO und des CCPA
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 
 ## <a name="introduction-to-dsrs"></a>Einführung in Anträge betroffener Personen
 
@@ -1130,7 +1130,7 @@ In den folgenden Abschnitten wird erläutert, wie die In-App-Funktion in Microso
 Sie können mithilfe der Inhaltssuche die SharePoint-Online-Website durchsuchen, die mit einem Projekt verbunden ist (beim Erstellen eines Projekts besteht eine Option zur Erstellung einer verbundenen SharePoint-Online-Website). Die Inhaltssuche durchsucht nicht die Daten in einem tatsächlichen Projekt in Project Online, sondern nur die verbundene Seite. Die Inhaltssuche sucht jedoch nach Metadaten zu Projekten wie etwa Personen, die im Betreff genannt werden. Dies kann Ihnen bei der Suche nach dem Projekt (und dem Zugriff darauf) helfen, das die mit dem Antrag der betroffenen Personen verbundenen Daten enthält.
 
 >[!TIP]
->Die URL für die Websitesammlung in Ihrer Organisation, in der Websites mit Projekten verknüpft sind, lautet **https://\<Ihre Organisation\>.sharepoint.com/sites/pwa**; zum Beispiel **https://contoso.sharepoint.com/pwa**. Sie können diese spezielle Websitesammlung als Speicherort Ihrer Inhaltssuche und dann den Namen des Projekts in der Suchanfrage verwenden. Zusätzlich kann ein IT-Administrator die Websitesammlungsseite im SharePoint Admin Center verwenden, um eine Liste der PWA-Websitesammlungen in der Organisation zu erhalten.
+>Die URL für die Websitesammlung in Ihrer Organisation, in der Websites mit Projekten verknüpft sind, lautet **https://\<your org\>.sharepoint.com/sites/pwa**; zum Beispiel **https://contoso.sharepoint.com/pwa**. Sie können diese spezifische Websitesammlung als Speicherort Ihrer Inhaltssuche und dann den Namen des Projekts in der Suchanfrage verwenden. Zusätzlich kann ein IT-Administrator die Websitesammlungsseite im SharePoint Admin Center verwenden, um eine Liste der PWA-Websitesammlungen in der Organisation zu erhalten.
 
 #### <a name="delete"></a>Löschen
 
@@ -1382,7 +1382,7 @@ Sobald die Änderungen an den Daten vorgenommen wurden, können Sie die Funktion
 
 Bei Nachrichten können Benutzer eine bestimmte Nachricht bearbeiten, um eventuelle Unstimmigkeiten zu korrigieren. Sie können eine Liste aller Nachrichten von einem bestätigten Yammer-Administrator anfordern und dann auf einen Link in der Datei klicken, um die jeweilige Nachricht zu prüfen.
 
-Bei Dateien können Benutzer eine bestimmte Datei bearbeiten, um eventuelle Unstimmigkeiten zu korrigieren. Sie können eine Liste aller geposteten Dateien von einem bestätigten Yammer-Administrator anfordern und dann auf die Dateien in Yammer zugreifen. Dateien, die in den Ordner „Dateien“ exportiert werden, können angezeigt werden, indem Sie anhand der Nummer nach der Datei suchen. Verwenden Sie z. B. für eine Datei mit dem Namen „12345678.ppx“ im Export das Suchfeld in Yammer, um nach „1235678.ppx“ zu suchen. Alternativ können Sie zu <strong> https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong> wechseln, zum Beispiel <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
+Bei Dateien können Benutzer eine bestimmte Datei bearbeiten, um eventuelle Unstimmigkeiten zu korrigieren. Sie können eine Liste aller geposteten Dateien von einem bestätigten Yammer-Administrator anfordern und dann auf die Dateien in Yammer zugreifen. Dateien, die in den Ordner „Dateien“ exportiert werden, können angezeigt werden, indem Sie anhand der Nummer nach der Datei suchen. Verwenden Sie z. B. für eine Datei mit dem Namen „12345678.ppx“ im Export das Suchfeld in Yammer, um nach „1235678.ppx“ zu suchen. Alternativ können Sie zu <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; zum Beispiel <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
 
 Bei Daten, auf die der Benutzer über das Profil und die Einstellungen zugreifen kann, kann der Benutzer alle nötigen Änderungen vornehmen.
 
@@ -1581,24 +1581,62 @@ Die Möglichkeit, Daten in vom System generierten Protokollen einzuschränken od
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Zugreifen auf und Exportieren von vom System generierte(n) Protokolle(n)
 
-Durch das "Recht auf Datenübertragbarkeit" kann eine betroffene Person eine Kopie ihrer personenbezogenen Daten in einem elektronischen Format (d. h. einem "strukturierten, gängigen, maschinenlesbaren und kompatiblen Format") anfordern, die an einen anderen Datenverantwortlichen übertragen werden kann. Azure unterstützt dies, indem es Ihrer Organisation ermöglicht, die Daten im nativen JSON-Format in den angegebenen Azure Storage-Container zu exportieren.
+Der Mandantenadministrator ist die einzige Person in Ihrer Organisation, die auf vom System generierte Protokolle zugreifen kann, die sich auf die Verwendung von Office 365-Diensten und -Anwendungen durch einen bestimmten Benutzer beziehen. Die für eine Exportanforderung abgerufenen Daten werden in einem maschinell lesbaren Format bereitgestellt und in Dateien bereitgestellt, durch die der Benutzer erkennen kann, welchen Diensten die Daten zugeordnet sind. Die abgerufenen Daten enthalten keine Daten, die die Sicherheit oder Stabilität des Dienstes beeinträchtigen könnten.
+
+So können Sie auf vom System generierte Protokolle zugreifen und sie exportieren:
+
+1. Melden Sie sich beim Azure-Portal an, und wählen Sie **Alle Dienste** aus.
+2. Geben Sie "Richtlinie" in den Filter ein, und wählen Sie dann **Richtlinie** aus.
+3. Wählen Sie im Blatt **Richtlinie** die Option **Datenschutz** und dann die Option **Benutzeranforderungen verwalten** aus, und wählen Sie dann **Exportanforderung hinzufügen** aus.
+4. Schließen Sie die **Anforderung zum Exportieren von Daten** ab:
+
+    - **Benutzer**: Geben Sie die E-Mail-Adresse des Azure Active Directory-Benutzers ein, der den Export angefordert hat.
+    - **Abonnement**: Wählen Sie das Konto aus, das Sie für Berichte zur Ressourcennutzung und für die Abrechnung für Dienste verwenden. Hierbei handelt es sich auch um den Ort Ihres Azure Speicherkontos.
+    - **Speicherkonto**: Wählen Sie den Ort für Ihren Azure-Speicher (Blob) aus. Weitere Informationen finden Sie im Artikel "Einführung in Microsoft Azure Storage – Blob-Speicher".
+    - **Container**: Erstellen Sie eine neuen Container (oder wählen Sie einen vorhandenen aus) als Speicherort für den Export der vertraulichen Daten des Benutzers.
+
+5. Wählen Sie **Erstellen** aus.
+
+Die Exportanforderung erhält den Status **ausstehend**. Sie können den Berichtsstatus auf dem Blatt **Benutzerdatenschutz** > **Übersicht** einsehen.
 
 >[!IMPORTANT]
->Sie müssen ein Mandantenadministrator sein, um Benutzerdaten aus dem Mandanten exportieren können.
+>Da personenbezogene Daten aus mehreren Systemen stammen können, kann es bis zu einen Monat dauern, bis der Exportvorgang abgeschlossen ist.
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>Benachrichtigung über Probleme beim Exportieren oder Löschen
 
-Für Kundendaten stellt Microsoft sowohl ein Portal als auch produktinterne Erfahrungen bereit, über die der Mandantenadministrator des Unternehmenskunden Exportanträge für Informationen zur Identifizierung eines Endkunden verwalten kann.
+Wenn beim Exportieren oder Löschen von Daten aus dem Azure-Portal Probleme auftreten, rufen Sie das Azure-Portalblatt **Hilfe + Support** auf, und übermitteln Sie unter **Abonnementverwaltung** > **Andere Sicherheits- und Complianceanforderung** > **Datenschutzblatt und DSGVO-Anforderungen** ein neues Ticket.
 
-#### <a name="service-specific-interfaces"></a>Dienstspezifische Schnittstellen
+>[!NOTE]
+ >Wenn Sie Daten aus dem Azure-Portal exportieren, werden für einige wenige Anwendungen keine vom System generierten Daten exportiert. Informationen zum Exportieren von Daten für diese Anwendungen finden Sie unter [Zusätzliche Schritte zum Exportieren der vom System generierten Protokolldaten](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
-Microsoft bietet die Möglichkeit, Kundendaten direkt über bereits vorhandene Anwendungsprogrammierschnittstellen (APIs) oder über Benutzeroberflächen (UIs) für bestimmte Dienste zu ermitteln. Details werden in der jeweiligen Referenzdokumentation zu entsprechenden CRUD-Vorgängen (Erstellen, Lesen, Aktualisieren, Löschen) beschrieben.
+Nachfolgend eine Zusammenfassung zum Thema Zugriff auf und Export von vom System generierten Protokollen:
+
+- **Wie lange dauert es, bis eine Exportanforderung über das Azure-Portal abgeschlossen ist?** Dies kann von mehreren Faktoren abhängig sein. Normalerweise sollte die Anforderung nach ein bis zwei Tagen abgeschlossen sein, es kann aber auch bis zu 30 Tage dauern.
+- **Welches Format wird die Ausgabe haben?** Die Ausgabe erfolgt in strukturierten, maschinenlesbaren Dateien wie XML, CSV oder JSON.
+- **Wer kann auf das Azure-Portal zugreifen, um Zugriffsanforderungen für vom System generierte Daten zu übermitteln?** Auf das Azure-Portal können globale Office 365-Administratoren zugreifen.
+- **Welche Daten sind in den Exportergebnissen enthalten?** Die Ergebnisse enthalten von Microsoft gespeicherte, vom System generierte Protokolle. Die exportierten Daten umfassen mehrere Microsoft-Dienste, einschließlich Office 365, Azure und Dynamics. Die Ergebnisse enthalten keine Daten, die die Sicherheit oder Stabilität des Diensts beeinträchtigen könnten.
+- **Wie werden Daten an den Benutzer ausgegeben?** Die Daten werden an den Azure-Speicherort Ihrer Organisation exportiert; es ist Sache der Administratoren in Ihrer Organisation, zu bestimmen, wie sie diese Daten den Benutzern anzeigen/bereitstellen.
+- **Wie sehen die vom System generierten Protokolldaten aus?** Nachfolgend sehen Sie ein Beispiel für Daten im JSON-Format:
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+Produkt- und Servicenutzungsdaten für einige der am häufigsten genutzten Dienste von Microsoft wie Exchange Online, SharePoint Online, Skype for Business, Yammer und Office 365-Gruppen können auch über das Office 365-Auditprotokoll im Security & Compliance Center abgerufen werden. Weitere Informationen finden Sie unter [Verwenden des Office 365-Überwachungsprotokoll-Suchtools für Untersuchungen von Anforderungen betroffener Personen](#use-the-audit-log-search-tool-in-dsr-investigations) in Anhang A. Die Verwendung des Überwachungsprotokolls kann für Sie von Interesse sein, da es möglich ist, anderen Personen in Ihrer Organisation (z. B. Ihrem Compliance-Beauftragten) Berechtigungen zuzuweisen, um im Überwachungsprotokoll nach diesen Daten zu suchen.
 
 ### <a name="deleting-system-generated-logs"></a>Löschen von vom System generierten Protokollen
 
 Um vom System generierte Protokolle zu löschen, die über eine Zugriffsanforderung abgerufen werden, müssen Sie den Benutzer aus dem Dienst entfernen und sein Azure Active Directory-Konto dauerhaft löschen. Anweisungen zum dauerhaften Löschen eines Benutzers finden Sie im Abschnitt [Löschen eines Benutzers](#deleting-a-user) in diesem Leitfaden. Es ist wichtig zu beachten, dass das dauerhafte Löschen eines Benutzerkontos nach dem Start unwiderruflich ist.
 
-Durch die dauerhafte Löschung eines Benutzerkontos werden die Daten des Benutzers – mit Ausnahme von Daten, die für die Sicherheit und die Stabilität des Dienstes wesentlich sind – innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Office 365-Dienste entfernt. Eine Ausnahme bildet Exchange Online, da die dauerhafte Löschung des Benutzerkontos hier länger als 30 Tage dauert. Angesichts der kritischen Natur von Exchange Online-Inhalten und zur Vermeidung von versehentlichem Datenverlust wurde dieses System so konzipiert, dass es Daten nach der endgültigen Löschung eines Benutzerkontos für bis zu 60 Tage absichtlich in einen Haltestatus versetzt. Um die Exchange Online-Daten eines Benutzers in einem Zeitraum von 30 Tagen dauerhaft zu löschen, löschen Sie das Benutzerkonto in Azure Active Directory dauerhaft und wenden Sie sich dann an den [Microsoft-Support](https://support.microsoft.com/) mit der Bitte, die Exchange Online-Daten des Benutzers abweichend vom geplanten Löschvorgang manuell zu entfernen. Weitere Informationen finden Sie unter [Entfernen von Exchange Online-Daten](#removing-exchange-online-data), welches zuvor in diesem Leitfaden erläutert wurde.
+Durch die dauerhafte Löschung eines Benutzerkontos werden die Daten des Benutzers – mit Ausnahme von Daten, die für die Sicherheit und die Stabilität des Dienstes wesentlich sind – innerhalb von 30 Tagen aus vom System generierten Protokollen für fast alle Office 365-Dienste entfernt. 
+
+Eine Ausnahme im Hinblick auf dieses 30-tägige Zeitfenster bildet Exchange Online, da die dauerhafte Löschung des Benutzerkontos hier länger als 30 Tage dauert. Der Grund dafür sind die kritische Natur von Exchange Online-Inhalten und die Vermeidung von versehentlichem Datenverlust. Exchange Online wurde so konzipiert, dass es Daten nach der endgültigen Löschung eines Benutzerkontos für bis zu 60 Tage absichtlich in einen Haltestatus versetzt. Um die Exchange Online-Daten eines Benutzers in einem Zeitraum von 30 Tagen dauerhaft zu löschen, löschen Sie das Benutzerkonto in Azure Active Directory dauerhaft und wenden Sie sich dann an den [Microsoft-Support](https://support.microsoft.com/) mit der Bitte, die Exchange Online-Daten des Benutzers abweichend vom geplanten Löschvorgang manuell zu entfernen. Weitere Informationen finden Sie unter [Entfernen von Exchange Online-Daten](#removing-exchange-online-data), welches zuvor in diesem Leitfaden erläutert wurde.
 
 Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle für Yammer und Kaizala nicht entfernt. Siehe die folgenden Links, um Daten aus diesen Anwendungen zu entfernen:
 
@@ -1607,11 +1645,11 @@ Beim Löschen eines Benutzerkontos werden die vom System generierten Protokolle 
 
 #### <a name="national-clouds"></a>Nationale Clouds
 
-In den folgenden nationalen Clouds muss ein globaler IT-Administrator Folgendes tun, um vom System generierte Protokolle zu löschen:
+Ein globaler IT-Administrator muss in den folgenden nationalen Clouds Folgendes tun, um vom System generierte Protokolle zu exportieren:
 
-- Office 365 Deutschland – Wenn das Benutzerkonto dauerhaft gelöscht wird, werden auch die vom System erzeugten Protokolle gelöscht. 
-- Office 365 US Government – Senden Sie eine Anforderungen an den Microsoft-Support über das [Office 365-Verwaltungsportal](https://portal.office365.us).
-- Office 365, das von 21Vianet betrieben wird (China) – Senden Sie eine Anforderung an den Microsoft-Support über das Office 365-Verwaltungsportal unter dieser [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Gehen Sie zu **Handel**, und wählen Sie dann **Abonnement** -> **Datenschutz** -> **GDPR** aus, und geben Sie die erforderlichen Informationen ein.
+- **Office 365 Deutschland**: Führen Sie die vorstehenden Schritte aus.
+- **Office 365 US Government**: [Wechseln Sie zum Office 365-Verwaltungsportal](https://portal.office365.us), und reichen Sie eine Anforderung beim Microsoft-Support ein.
+- **Office 365, das von 21Vianet betrieben wird (China)**: [ Navigieren Sie zum Office 365-Verwaltungsportal, das von 21Vianet betrieben wird](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage), gehen Sie zu **Handel** > **Abonnement** > **Datenschutz** > **DSGVO**, und geben Sie die erforderlichen Informationen ein.
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Teil 4: Weitere Ressourcen, die bei Anträgen betroffener Personen hilfreich sind
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d1cd4812cdb8a58062d7c64e73049c080f8b906f
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035106"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588464"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -35,7 +35,7 @@ Folgen Sie den Anweisungen in diesem Artikel beim Erstellen einer Entwicklungs-/
 
 In dieser Phase erhalten Sie Testabonnements für Office 365 E5 und Enterprise Mobility + Security (EMS) E5 für eine fiktive Organisation, die eine politische Kampagne darstellt.
 
-Folgen Sie zunächst den Anweisungen in **Phase 2** des Artikels [Office 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Befolgen Sie zunächst die Anweisungen unter **Phase 2** von [Einfache Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
 Als Nächstes registrieren Sie sich für das EMS E5-Testabonnement und fügen es derselben Organisation wie Ihr Testabonnement hinzu.
 
