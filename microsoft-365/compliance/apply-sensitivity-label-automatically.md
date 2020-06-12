@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470662"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44658355"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -135,7 +135,7 @@ Weitere Informationen zu diesen Klassifizierungen finden Sie unter [Erste Schrit
 
 Während des Vorschauzeitraums unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
 
-- Microsoft 365 Apps for Enterprise (vormals Office 365 ProPlus) für Windows aus [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for Enterprise ([vormals Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) für Windows aus dem [Betakanal](https://office.com/insider) ([vormals Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
     - Word
     - Excel
     - PowerPoint
