@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678991"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702559"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -35,7 +35,10 @@ Zum Verwalten von Dispositions Überprüfungen und zum bestätigen, dass Datens�
 
 ### <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
-Zum erfolgreichen Zugriff auf die Registerkarte " **Disposition** " im Microsoft 365 Compliance Center müssen Sie Mitglied der **Dispositions-Verwaltungs** Rolle und der Rolle " **nur Überwachungsprotokolle anzeigen** " sein. Es wird empfohlen, eine neue Rollengruppe mit dem Namen **Dispositions Prüfer**zu erstellen und diese beiden Rollen zu dieser Rollengruppe hinzuzufügen. Selbst wenn Sie ein **globaler Administrator** Benutzer sind, müssen Sie Teil der **Dispositions-Verwaltungs** Rolle sein, damit Sie auf die Registerkarte Disposition zugreifen können.
+Um erfolgreich auf die Registerkarte **Disposition** im Microsoft 365 Compliance Center zugreifen zu können, müssen die Benutzer über die **Verwaltungs** Rolle "Disposition" und die Rolle " **Überwachungsprotokolle nur anzeigen** " verfügen. Obwohl standardmäßig Benutzer zu den Standardrollengruppen hinzugefügt werden sollen, empfehlen wir Ihnen, in diesem Fall eine neue Rollengruppe mit dem Namen **Dispositions Prüfer** mit diesen beiden Rollen zu erstellen und Benutzer dieser Gruppe nach Bedarf hinzuzufügen. Eine einzelne Rollengruppe für die Disposition reduziert die Verwaltungskosten und erleichtert Benutzern die benötigten kombinierten Berechtigungen.
+
+> [!NOTE]
+> Selbst einem globalen Administrator muss die **Dispositions Verwaltungs** Rolle erteilt werden. Wenn also globale Administratoren auf die Registerkarte "Disposition" zugreifen müssen, werden Sie als Mitglieder der Rollengruppe " **Dispositions Prüfer** " angezeigt. 
 
 Spezifisch für die Rolle " **nur Ansichts Überwachungsprotokolle** ":
 
