@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Nachdem Sie den Kundenschlüssel eingerichtet haben, erfahren Sie, wie Sie ihn verwalten, indem Sie AKV-Schlüssel wiederherstellen und Berechtigungen und Daten Verschlüsselungsrichtlinien verwalten.
-ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352202"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717306"
 ---
 # <a name="manage-customer-key"></a>Verwalten des Kunden Schlüssels
 
@@ -142,13 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 Die IsEncrypted-Eigenschaft meldet den Wert **True** (Richtig), wenn das Postfach verschlüsselt ist, und den Wert **False** (Falsch), wenn das Postfach nicht verschlüsselt ist.
 
-Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, initiieren Sie eine Post Fach Verlagerung. Verwenden Sie dazu das Cmdlet New-MoveRequest, und geben Sie den Alias des Postfachs an. Zum Beispiel:
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-Weitere Informationen zu diesem Cmdlet finden Sie unter [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
+Die Zeit bis zum Abschließen der Postfachverschiebungen hängt von der Größe des Postfachs ab. Wenn der Kundenschlüssel das Postfach nach 72 Stunden nach dem Zuweisen einer neuen DEP nicht vollständig verschlüsselt hat, wenden Sie sich an den Microsoft-Support, um Hilfe zu erhalten. Das Cmdlet New-MoveRequest ist für Verschiebungen von lokalen Postfächern nicht mehr verfügbar. Weitere Informationen erhalten Sie in [dieser Ankündigung](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) .
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Überprüfen, ob die Verschlüsselung für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien abgeschlossen ist
 

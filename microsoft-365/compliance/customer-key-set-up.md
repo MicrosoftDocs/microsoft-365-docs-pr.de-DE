@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352272"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717262"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -108,15 +108,15 @@ Führen Sie zur Übermittlung eines Angebots zum Aktivieren von Customer Key die
 
 2. Sobald Sie angemeldet sind, wechseln Sie zum **Dashboard**.
 
-3. Wählen Sie **Angebote** und überprüfen Sie das Verzeichnis der aktuellen Angebote.
+3. Wählen Sie **Bereitstellen** in der Navigationsleiste aus, **oder** wählen Sie **alle Bereitstellungsressourcen anzeigen** auf der Seite Informationskarte **Bereitstellen** aus, und überprüfen Sie die Liste der aktuellen Angebote.
 
-4. Wählen Sie **Weitere Informationen** zu dem für Sie geltenden Angebot:
+4. Wählen Sie die Informationskarte für das Angebot aus, das für Sie gilt:
 
-   - **Exchange Online und Skype for Business:** Wählen Sie ** Weitere Informationen ** zum Angebot **Customer Key für Exchange**.
+   - **Exchange Online und Skype for Business:** Wählen Sie die **Hilfe zum Verschlüsselungsschlüssel anfordern für das Exchange Online-** Angebot aus.
 
-   - **SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien:** Wählen Sie weitere **Informationen** im **Kundenschlüssel für SharePoint und OneDrive für Unternehmen** Angebot.
+   - **SharePoint Online-, OneDrive-und Microsoft Teams-Dateien:** Wählen Sie die **Hilfe zur Verschlüsselungsschlüssel Anforderung für SharePoint und OneDrive-** Angebot aus.
 
-5. Wählen Sie auf der Seite **Angebotsdetails** **Anforderung erstellen**.
+5. Nachdem Sie die Angebotsdetails überprüft haben, wählen Sie **weiter mit Schritt 2**aus.
 
 6. Tragen Sie alle relevanten Details und erforderlichen Informationen im Angebotsformular ein. Achten Sie besonders auf Ihre Auswahl, welche MitarbeiterInnen Ihrer Organisation Sie autorisieren, die permanente und unwiderrufliche Vernichtung von kryptografischen Schlüsseln und Daten zu genehmigen. Sobald Sie das Formular ausgefüllt haben, wählen Sie **Senden**.
 
@@ -137,7 +137,7 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie für jedes Azure-Ab
 
 3. Wenden Sie sich an Microsoft, damit der Prozess abgeschlossen wird. Um mit dem SharePoint- und OneDrive for Business-Team in Verbindung zu treten, wenden Sie sich bitte an [spock@microsoft.com](mailto:spock@microsoft.com). Für Exchange Online und Skype for Business wenden Sie sich bitte an [exock@microsoft.com](mailto:exock@microsoft.com). Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
 
-   **Betreff**: Customer Key für \<*Vollständig qualifizierter Domänenname Ihres Mandanten*\>
+   **Betreff**: Kundenschlüssel für\<*Your tenant's fully-qualified domain name*\>
 
    **Textkörper**: Abonnements-IDs, für die Sie einen obligatorischen Aufbewahrungszeitraum verbindlich festlegen möchten.
    Die Ausgabe von Get-AzProviderFeature für jedes Abonnement.

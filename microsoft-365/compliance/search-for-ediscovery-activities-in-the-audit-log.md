@@ -16,22 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Hier erfahren Sie, wie Sie das Überwachungsprotokoll nach Ereignissen durchsuchen, die protokolliert werden, wenn Compliance-Administratoren Inhaltssuche-und eDiscovery-Fall Aufgaben im Security & Compliance Center ausführen.
-ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943654"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726523"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
 
-Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Sicherheits & Compliance Center oder durch Ausführen der entsprechenden PowerShell-Cmdlets ausgeführt werden, werden im Überwachungsprotokoll protokolliert. Ereignisse werden protokolliert, wenn Administratoren oder eDiscovery-Manager (oder Benutzer, denen eDiscovery-Berechtigungen zugewiesen sind) die folgenden Inhaltssuche und zentralen eDiscovery-Aufgaben im Security & Compliance Center ausführen:
+Im Überwachungsprotokoll werden Inhaltssuche und eDiscovery-bezogene Aktivitäten (für die zentrale eDiscovery-und erweiterte eDiscovery), die im Sicherheits & Compliance Center ausgeführt werden, oder durch Ausführen der entsprechenden PowerShell-Cmdlets protokolliert. Ereignisse werden protokolliert, wenn Administratoren oder eDiscovery-Manager (oder Benutzer, denen eDiscovery-Berechtigungen zugewiesen sind) die folgenden Inhaltssuche und zentralen eDiscovery-Aufgaben im Security & Compliance Center ausführen:
   
-- Erstellen und Verwalten von eDiscovery-Fällen
+- Erstellen und Verwalten von zentralen und erweiterten eDiscovery-Fällen
 
 - Erstellen, Starten und Bearbeiten von Inhaltssuchen
 
 - Durchführen von Aktionen bei der Inhaltssuche, wie Vorschau, Exportieren und Löschen von Suchergebnissen
+
+- Verwalten von Verwaltern und Überprüfungs Sätzen in Advanced eDiscovery
 
 - Konfigurieren von Berechtigungsfiltern für die Inhaltssuche
 
@@ -47,31 +49,33 @@ Weitere Informationen zum Durchsuchen des Überwachungsprotokolls, zu den erford
 Derzeit müssen Sie einige bestimmte Aufgaben durchführen, um eDiscovery-Aktivitäten im Überwachungsprotokoll anzuzeigen. Die gehen so:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
-    
+
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
-    
+
 3. Klicken Sie im linken Bereich auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
-    
-4. Klicken Sie in der Dropdownliste **Aktivitäten** unter **eDiscovery-Aktivitäten**auf eine oder mehrere Aktivitäten, nach denen gesucht werden soll. Sie können auch auf **eDiscovery-Aktivitäten** klicken, um nach allen eDiscovery-bezogenen Aktivitäten zu suchen. 
-    
+
+4. Klicken Sie in der Dropdownliste **Aktivitäten** unter **eDiscovery-Aktivitäten** oder **Erweiterte eDiscovery-Aktivitäten**auf eine oder mehrere Aktivitäten, nach denen gesucht werden soll.
+
     > [!NOTE]
-    > Die Dropdownliste Aktivitäten enthält auch eine Gruppe von Aktivitäten mit dem Namen **eDiscovery-Cmdlet-Aktivitäten** , mit denen Datensätze aus dem Cmdlet-Überwachungsprotokoll zurückgegeben werden. 
+    > Die Dropdownliste **Aktivitäten** enthält auch eine Gruppe von Aktivitäten mit dem Namen **eDiscovery-Cmdlet-Aktivitäten** , mit denen Datensätze aus dem Cmdlet-Überwachungsprotokoll zurückgegeben werden.
   
-5.  Wählen Sie einen Datums-und Zeitbereich aus, um eDiscovery-Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. 
-    
-6. Wählen Sie im Feld **Benutzer** einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer zurückzugeben. 
-    
-7. Klicken Sie auf **Suchen**, um die Suche anhand der Suchkriterien auszuführen.  
-    
+5. Wählen Sie einen Datums-und Zeitbereich aus, um eDiscovery-Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. 
+
+6. Wählen Sie im Feld **Benutzer** einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer zurückzugeben.
+
+7. Klicken Sie auf **Suchen**, um die Suche anhand der Suchkriterien auszuführen. 
+
 8. Nachdem die Suchergebnisse angezeigt wurden, können Sie auf **Filterergebnisse** klicken, um die resultierenden Aktivitätsdatensätze zu filtern oder zu sortieren. Leider können Sie das Filtern nicht verwenden, um bestimmte Aktivitäten explizit auszuschließen. 
-    
+
 9. Wenn Sie Details zu einer Aktivität anzeigen möchten, klicken Sie in der Liste der Suchergebnisse auf den Aktivitäts Eintrag. 
-    
-    Eine Seite Fly Out **Details** wird angezeigt, die die detaillierten Eigenschaften aus dem Ereigniseintrag enthält. Klicken Sie auf **Weitere Informationen**, um weitere Details anzuzeigen. Eine Beschreibung dieser Eigenschaften finden Sie im Abschnitt [detaillierte Eigenschaften für eDiscovery-Aktivitäten](#detailed-properties-for-ediscovery-activities) . 
+
+    Eine Seite Fly Out **Details** wird angezeigt, die die detaillierten Eigenschaften aus dem Ereigniseintrag enthält. Klicken Sie auf **Weitere Informationen**, um weitere Details anzuzeigen. Eine Beschreibung dieser Eigenschaften finden Sie im Abschnitt [detaillierte Eigenschaften für eDiscovery-Aktivitäten](#detailed-properties-for-ediscovery-activities) .
+
+10. Bei Bedarf können Sie die Überwachungsprotokoll-Suchergebnisse in eine CSV-Datei exportieren und dann mithilfe der Excel-Funktion "Power-Abfrage" diese Datensätze formatieren und filtern. Weiter Informationen findn Sie unter[Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
 
-In der folgenden Tabelle werden die Inhaltssuche und die wichtigsten eDiscovery-Aktivitäten beschrieben, die protokolliert werden, wenn ein Administrator oder eDiscovery-Manager eine eDiscovery-bezogene Aktivität mithilfe des Security & Compliance Center ausführt oder das entsprechende Cmdlet in Security & Compliance Center PowerShell ausführt. 
+In der folgenden Tabelle werden die Inhaltssuche und die wichtigsten eDiscovery-Aktivitäten beschrieben, die protokolliert werden, wenn ein Administrator oder eDiscovery-Manager eine eDiscovery-bezogene Aktivität mithilfe des Security & Compliance Center ausführt oder das entsprechende Cmdlet in Security & Compliance Center PowerShell ausführt. Beachten Sie auch, dass einige in Advanced ausgeführte Aktivitäten zurückgegeben werden, wenn Sie nach Aktivitäten in dieser Liste suchen.
   
 > [!NOTE]
 > Die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten bieten ähnliche Informationen zu den im nächsten Abschnitt beschriebenen eDiscovery-Cmdlet-Aktivitäten. Es wird empfohlen, die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten zu verwenden, da Sie innerhalb von 30 Minuten in den Überwachungsprotokoll-Suchergebnissen angezeigt werden. Es dauert bis zu 24 Stunden, bis die eDiscovery-Cmdlet-Aktivitäten in Überwachungsprotokoll-Suchergebnissen angezeigt werden. 
@@ -118,9 +122,40 @@ In der folgenden Tabelle werden die Inhaltssuche und die wichtigsten eDiscovery-
 |(keine)|ViewedSearchPreviewed|Get-ComplianceSearchAction-Vorschau|Ein Benutzer zeigt eine Vorschau der Ergebnisse einer Inhaltssuche im Security and Compliance Center oder durch Ausführen des Cmdlets an.|
 |||||
   
+## <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery-Aktivitäten
+
+In der folgenden Tabelle werden die im Überwachungsprotokoll angemeldeten erweiterten eDiscovery-Aktivitäten beschrieben. Diese Aktivitäten (zusätzlich zu relevanten eDiscovery-Aktivitäten können verwendet werden, um Sie beim Nachverfolgen des Fortschritts der Aktivität in einem erweiterten eDiscovery-Fall zu unterstützen.
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Daten zu einem anderen Prüfdateisatz hinzugefügt|AddWorkingSetQueryToWorkingSet|Der Benutzer hat Dokumente eines Prüfdateisatzes einem anderen hinzugefügt.|
+|Daten zu einem Prüfdateisatz hinzugefügt|AddQueryToWorkingSet|Der Benutzer hat die Suchergebnisse einer Inhaltssuche, die einem Advanced eDiscovery-Fall zugeordnet sind, einem Prüfdateisatz zugeordnet.|
+|Nicht von Microsoft 365 stammende Daten zu Prüfdateisatz hinzugefügt|AddNonOffice365DataToWorkingSet|Ein Benutzer hat nicht von Microsoft 365 stammende Daten zu einem Prüfdateisatz hinzugefügt.|
+|Wiederhergestellte Dokumente zu Prüfdateisatz hinzugefügt|AddRemediatedData|Der Benutzer lädt Dokumente hoch, bei denen Indizierungsfehler aufgetreten sind, die in einem Prüfdateisatz festgehalten worden sind.|
+|Daten im Prüfdateisatz analysiert|RunAlgo|Der Benutzer hat eine Analyse der Dokumente in einem Prüfdateisatz durchgeführt.|
+|Dokument im Prüfdateisatz kommentiert|AnnotateDocument|Ein Benutzer hat ein Dokument in einem Prüfdateisatz kommentiert. „Kommentieren“ umfasst auch das Bearbeiten/Redigieren des Dokuments.|
+|Ladesätze verglichen|LoadComparisonJob|Der Benutzer hat zwei verschiedene Ladesätze in einem Prüfdateisatz verglichen. Unter Ladesatz versteht man, dass Daten aus einer Inhaltssuche, die einem Fall zugeordnet sind, einem Prüfdateisatz hinzugefügt werden.|
+|Dokumente in PDF-Dateien konvertiert|BurnJob|Der Benutzer hat alle redigierten Dokumente in einem Prüfdateisatz in PDF-Dateien konvertiert.|
+|Prüfdateisatz erstellt|CreateWorkingSet|Der Benutzer hat einen Prüfdateisatz erstellt.|
+|Prüfdateisatzsuche erstellt|CreateWorkingSetSearch|Der Benutzer hat eine Suchabfrage erstellt, die die Dokumente in einem Prüfdateisatz durchsuchen.|
+|Tag erstellt|CreateTag|Ein Benutzer hat eine Tag-Gruppe in einem Prüfdateisatz erstellt. Eine Tag-Gruppe kann ein oder mehrere untergeordnete Tags enthalten. Diese Tags werden dann zum Taggen von Dokumenten im Prüfdateisatz verwendet.|
+|Prüfdateisatzsuche gelöscht|DeleteWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz gelöscht.|
+|Tag gelöscht|DeleteTag|Ein Benutzer hat ein Tag oder eine Tag-Gruppe in einem Prüfdateisatz gelöscht.|
+|Heruntergeladenes Dokument|DownloadDocument|Ein Benutzer hat ein Dokument aus einem Prüfdateisatz heruntergeladen.|
+|Tag bearbeitet|UpdateTag|Ein Benutzer hat ein Tag in einem Prüfdateisatz geändert.|
+|Dokumente aus einem Prüfdateisatz exportiert|ExportJob|Der Benutzer hat Dokumente aus einem Prüfdateisatz exportiert.|
+|Falleinstellungen geändert|UpdateCaseSettings|Der Benutzer hat die Einstellungen für einen Fall geändert. Die Falleinstellungen umfassen Fallinformationen, Zugriffsberechtigungen und Einstellungen, mit denen das Such- und Analyseverhalten gesteuert werden.|
+|Prüfdateisatzsuche geändert|UpdateWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz geändert.|
+|Vorschau einer Prüfdateisatzsuche angezeigt|PreviewWorkingSetSearch|Der Benutzer hat die Ergebnisse einer Suchabfrage in einem Prüfdateisatz in einer Vorschau angezeigt.|
+|Fehler in Dokumenten behoben|ErrorRemediationJob|Der Benutzer behebt Dateien mit Indizierungsfehlern.|
+|Dokument getaggt|TagFiles|Ein Benutzer hat ein Dokument in einem Prüfdateisatz mit Tags versehen.|
+|Ergebnisse einer Abfrage getaggt|TagJob|Ein Benutzer hat alle Dokumente getaggt, die den Kriterien einer Suchabfrage in einem Prüfdateisatz entsprechen.|
+|Dokument im Prüfdateisatz angezeigt|ViewDocument|Ein Benutzer hat ein Dokument in einem Prüfdateisatz angezeigt.|
+|||
+
 ## <a name="ediscovery-cmdlet-activities"></a>eDiscovery-Cmdlet-Aktivitäten
 
-In der folgenden Tabelle sind die Cmdlet-Überwachungsprotokolleinträge aufgeführt, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security & Compliance Center ausführt oder das entsprechende Cmdlet in der Remote-PowerShell ausführt, die mit dem Security & Compliance Center Ihrer Organisation verbunden ist. Die detaillierten Informationen im Überwachungsprotokolleintrag unterscheiden sich für die in dieser Tabelle aufgeführten Cmdlet-Aktivitäten und für die im vorherigen Abschnitt beschriebenen eDiscovery-Aktivitäten. 
+In der folgenden Tabelle sind die Cmdlet-Überwachungsprotokolleinträge aufgeführt, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität mithilfe des Security & Compliance Center ausführt oder das entsprechende Cmdlet in der Remote-PowerShell ausführt, die mit dem Security & Compliance Center Ihrer Organisation verbunden ist. Die detaillierten Informationen im Überwachungsprotokolleintrag unterscheiden sich für die in dieser Tabelle aufgeführten Cmdlet-Aktivitäten und für die im vorherigen Abschnitt beschriebenen eDiscovery-Aktivitäten.
   
 Wie bereits erwähnt, dauert es bis zu 24 Stunden, bis eDiscovery-Cmdlet-Aktivitäten in den Überwachungsprotokoll-Suchergebnissen angezeigt werden.
   
@@ -182,7 +217,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die enthalten sin
 |OrganizationId  <br/> |Die GUID für Ihre Microsoft 365-Organisation.  <br/> |
 |Parameter  <br/> |Der Name und der Wert für die Parameter, die mit dem entsprechenden Cmdlet verwendet wurden.  <br/> |
 |PublicFolderLocations  <br/> |Die Speicherorte für Öffentliche Ordner in Exchange Online, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall in den Haltebereich gestellt werden.  <br/> |
-|Query  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
+|Abfrage  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder ein abfragebasierter Haltestatus.  <br/> |
 |RecordType  <br/> |Der vom Datensatz angegebene Vorgangstyp. Der Wert **18** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Aktivitäten des eDiscovery-Cmdlets](#ediscovery-cmdlet-activities) aufgeführt ist. Der Wert **24** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Vorgehensweise zum Suchen und Anzeigen von eDiscovery-Aktivitäten](#how-to-search-for-and-view-ediscovery-activities) aufgeführt ist.  <br/> |
 |ResultStatus  <br/> |Gibt an, ob die Aktion (in der Eigenschaft "Operation" angegeben) erfolgreich war oder nicht.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |Gibt an, dass es sich bei der Aktivität um ein Sicherheits & Compliance Center-Ereignis handelt. Für diese Eigenschaft wird für alle eDiscovery-Aktivitäten der Wert **0 (null** ) verwendet.  <br/> |

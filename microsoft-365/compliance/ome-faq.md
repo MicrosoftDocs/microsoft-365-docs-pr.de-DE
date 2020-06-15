@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
-ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352081"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717154"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -120,6 +120,11 @@ Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.mi
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Für alle Outlook-Clients erben Nachrichten und ungeschützte PDF-Anlagen den OM-Schutz der Datenverlust Verhinderung (DLP)-Richtlinie oder der Nachrichtenfluss Regel in Exchange Online. Wenn ein Outlook im Internet-Benutzer ein ungeschütztes PDF-Dokument anhängt und den Schutz für die Nachricht anwendet, erbt die Nachricht auch den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (beispielsweise das OM-Portal und der Azure Information Protection-Viewer).
+
+> [!IMPORTANT]
+> Der Outlook-Desktop Client unterstützt keine PDF-Verschlüsselung.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Werden OneDrive für Unternehmen Anlagen unterstützt?
 

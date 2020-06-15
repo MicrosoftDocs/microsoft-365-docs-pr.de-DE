@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: In diesem Artikel finden Sie eine Beschreibung der Office 365 Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 'Zusammenfassung: eine Beschreibung der Verschlüsselung für Skype, OneDrive, SharePoint, Microsoft Teams und Exchange Online.'
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031395"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717336"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Verschlüsselung in Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Verschlüsselung für Skype for Business, OneDrive für Unternehmen, SharePoint Online, Microsoft Teams und Exchange Online
 
 Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren Schichten: Sicherheit von physischen Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit.
 
@@ -33,7 +32,7 @@ Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren
 
 Skype for Business Kundendaten können in Ruhe in Form von Dateien oder Präsentationen gespeichert werden, die von Besprechungsteilnehmern hochgeladen werden. Der Webkonferenzserver verschlüsselt Kundendaten mithilfe von AES mit einem 256-Bit-Schlüssel. Die verschlüsselten Kundendaten werden in einer Dateifreigabe gespeichert. Jeder Teil der Kundendaten wird mit einem anderen zufällig generierten 256-Bit-Schlüssel verschlüsselt. Wenn ein Teil der Kundendaten in einer Konferenz freigegeben wird, weist der Webkonferenzserver die Konferenz Clients an, die verschlüsselten Kundendaten über HTTPS herunterzuladen. Der entsprechende Schlüssel wird an Clients gesendet, damit die Kundendaten entschlüsselt werden können. Der Webkonferenzserver authentifiziert auch Konferenz Clients, bevor er den Clients den Zugriff auf Konferenz Kundendaten ermöglicht. Wenn Sie an einer Webkonferenz teilnehmen, richtet jeder Konferenz Client zunächst ein SIP-Dialogfeld mit der Konferenz Fokus Komponente ein, die in dem Front-End-Server über TLS läuft. Der Konferenz Fokus übergibt dem Konferenz Client ein vom Webkonferenzserver generiertes Authentifizierungscookie. Der Konferenz Client stellt dann eine Verbindung mit dem Webkonferenzserver her, der das Authentifizierungscookie darstellt, um vom Server authentifiziert zu werden.
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online und OneDrive for Business
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online und OneDrive for Business
 
 Alle Kundendateien in SharePoint Online werden durch eindeutige, dateispezifische Schlüssel geschützt, die immer exklusiv für einen einzelnen Mandanten sind. Die Schlüssel werden entweder vom SharePoint Online Dienst erstellt und verwaltet oder wenn der Kundenschlüssel von Kunden verwendet, erstellt und verwaltet wird. Wenn eine Datei hochgeladen wird, wird die Verschlüsselung von SharePoint Online im Kontext der Upload-Anforderung ausgeführt, bevor Sie an Azure Storage gesendet wird. Wenn eine Datei heruntergeladen wird, ruft SharePoint Online die verschlüsselten Kundendaten aus dem Azure-Speicher basierend auf der eindeutigen Dokument-ID ab und entschlüsselt die Kundendaten vor dem Senden an den Benutzer. Azure Storage hat keine Möglichkeit, die Kundendaten zu entschlüsseln oder sogar zu identifizieren oder zu verstehen. Alle Verschlüsselung und Entschlüsselung erfolgen in denselben Systemen, die die Mandanten Isolierung erzwingen, die Azure Active Directory und SharePoint Online sind.
 
@@ -87,3 +86,32 @@ Exchange Online verwendet BitLocker für alle Postfachdaten, und die BitLocker-K
 Zusätzlich zur Dienst Verschlüsselung unterstützt Microsoft 365 den Kundenschlüssel, der auf der Dienst Verschlüsselung basiert. Kundenschlüssel ist eine von Microsoft verwaltete Schlüssel Option für Exchange Online Dienst Verschlüsselung, die auch in der Roadmap von Microsoft zur Verfügung steht. Diese Verschlüsselungsmethode bietet erhöhten Schutz, der von BitLocker nicht gewährt wird, da Sie die Trennung von Serveradministratoren und kryptografischen Schlüsseln ermöglicht, die für die Entschlüsselung von Daten erforderlich sind, und da die Verschlüsselung direkt auf die Daten angewendet wird (im Gegensatz zu BitLocker, das die Verschlüsselung auf dem logischen Datenträgervolume verwendet), bleiben alle von einem Exchange-Server kopierten Kundendaten verschlüsselt
 
 Der Bereich für die Exchange Online Dienst Verschlüsselung sind Kundendaten, die im Rest in Exchange Online gespeichert werden. (Skype for Business speichert fast alle vom benutzergenerierten Inhalte im Exchange Online Postfach des Benutzers und erbt daher das Dienst Verschlüsselungsfeature von Exchange Online.)
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Microsoft Teams verwendet TLS und MTLS zum Verschlüsseln von Chatnachrichten. Der gesamte Datenverkehr zwischen den Servern erfordert MTLS, und zwar unabhängig davon, ob die Daten innerhalb des internen Netzwerks verbleiben oder den internen Netzwerkumkreis verlassen.
+
+In dieser Tabelle werden die von Microsoft Teams verwendeten Protokolle zusammengefasst.
+
+***Datenverkehrs Verschlüsselung***
+
+|||
+|:-----|:-----|
+|**Datenverkehrstyp**|**Verschlüsselt durch**|
+|Server-zu-Server|MTLS|
+|Client-zu-Server (ex. Sofortnachrichten und Anwesenheitsinformationen)|TLS|
+|Medien Flüsse (z. b. Audio-und Videofreigabe von Medien)|TLS|
+|Audio-und Videofreigabe von Medien|SRTP/TLS|
+|Signalisierung|TLS|
+|||
+
+#### <a name="media-encryption"></a>Medienverschlüsselung
+
+Der Mediendatenverkehr wird über Secure RTP (SRTP) verschlüsselt, ein Profil von RTP (Real-Time Transport Protocol), das Vertraulichkeit, Authentifizierung und Schutz vor Replay-Angriffen für RTP-Datenverkehr bereitstellt. SRTP verwendet einen Sitzungsschlüssel, der mithilfe eines sicheren Zufallszahlengenerators generiert wird und mit dem Signalisierungs-TLS-Kanal ausgetauscht wird. Der Client-zu-Client-Mediendatenverkehr wird über eine Client-zu-Server-Verbindungs Signalisierung ausgehandelt, wird jedoch mithilfe von SRTP verschlüsselt, wenn er direkt Client-zu-Client wird.
+
+Microsoft Teams verwendet ein Anmelde Informations basiertes Token für den sicheren Zugriff auf Medien Relays im Gegenzug. Medien Relays tauschen das Token über einen TLS-gesicherten Kanal aus.
+
+#### <a name="fips"></a>FIPS
+
+Microsoft Teams verwendet FIPS (Federal Information Processing Standard)-konforme Algorithmen für den Austausch von Verschlüsselungsschlüsseln. Weitere Informationen zur Implementierung von FIPS finden Sie unter [Federal Information Processing Standard (FIPS) Publication 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide).

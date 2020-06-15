@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208397"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717316"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -70,7 +70,7 @@ Eine vollständige Liste der Filter und Feld Details finden Sie unter [Filter](c
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Verwenden von Near und Exact Duplicate Analysis
 
-Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren automatisch nahe und exakte Nachrichtenduplikate ohne zusätzliche Konfigurationsschritte. Diese Ansicht ermöglicht es Ihnen, gleichzeitig oder als Gruppe schnell Nachrichten zu beheben, wodurch die Belastung der Nachrichten Ermittlung für Bearbeiter reduziert wird. Wenn Duplikate erkannt werden, werden die Steuerelemente **nahe Duplikate** und/oder **exakte Duplikate** auf der Symbolleiste für die Behebungsaktion angezeigt.
+Compliance-Richtlinien für die Kommunikation überprüfen und konfigurieren automatisch nahe und exakte Nachrichtenduplikate ohne zusätzliche Konfigurationsschritte. Diese Ansicht ermöglicht es Ihnen, gleichzeitig oder als Gruppe schnell Nachrichten zu beheben, wodurch die Belastung der Nachrichten Ermittlung für Bearbeiter reduziert wird. Wenn Duplikate erkannt werden, werden die Steuerelemente **nahe Duplikate** und/oder **exakte Duplikate** auf der Symbolleiste für die Behebungsaktion angezeigt. Diese Ansicht ist nicht verfügbar, wenn nahe oder exakte Duplikate nicht gefunden werden.
 
 #### <a name="to-remediate-duplicates"></a>So beheben Sie Duplikate
 

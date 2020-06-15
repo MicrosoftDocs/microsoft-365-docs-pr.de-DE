@@ -511,13 +511,6 @@
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Sichern von Dateien in Microsoft Teams
-              items:
-                - name: Sichere Teams für Dateien in einer Entwicklungs-/Testumgebung
-                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
-            - name: Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung
-              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
-              items: null
             - name: SIEM-Serverintegration
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection im Überblick

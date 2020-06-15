@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
-ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
+ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604310"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724793"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -32,22 +32,22 @@ Bevor Sie Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und O
 
 Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren, werden alle diese Funktionen aktiviert. Zusätzlich zur Anzeige von Sensitivitäts Bezeichnungen für Benutzer, für neue und geänderte Dateien, für die eine Vertraulichkeits Bezeichnung angewendet wurde, die die Verschlüsselung mit einem cloudbasierten Schlüssel umfasst:
 
-- SharePoint erkennt Vertraulichkeits Bezeichnungen, die auf Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive angewendet werden: während die Datei in SharePoint gespeichert wird, wird die Verschlüsselung von Azure Information Protection entfernt, sodass der Dateiinhalt verarbeitet werden kann. Informationen dazu, wie Dokumente geschützt werden, während Sie in SharePoint gespeichert werden, finden Sie unter [Datenverschlüsselung in OneDrive für Unternehmen und SharePoint Online](data-encryption-in-odb-and-spo.md).
+- Für Word-, Excel-und PowerPoint-Dateien erkennt SharePoint die Bezeichnung und kann nun den Inhalt der verschlüsselten Datei verarbeiten.
 
-- Wenn Sie diese Datei aus SharePoint oder OneDrive herunterladen oder darauf zugreifen, werden die Vertraulichkeits Bezeichnung und alle Verschlüsselungseinstellungen aus der Bezeichnung erneut mit der Datei angewendet, und diese Einstellungen bleiben überall dort bestehen, wo die Datei gespeichert wird. Stellen Sie aufgrund dieses Verhaltens sicher, dass Sie Benutzeranleitungen zur Verwendung nur von Bezeichnungen zum Schützen von Dokumenten bereitstellen. Weitere Informationen finden Sie unter [Information Rights Management (IRM) Options and Sensitivity Labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+- Wenn Sie diese Dateien aus SharePoint oder OneDrive herunterladen oder darauf zugreifen, werden die Vertraulichkeits Bezeichnung und alle Verschlüsselungseinstellungen von der Bezeichnung erzwungen und verbleiben bei der Datei, unabhängig davon, wo Sie gespeichert ist. Stellen Sie sicher, dass Sie Benutzeranleitungen zur Verwendung nur von Bezeichnungen zum Schutz von Dokumenten bereitstellen. Weitere Informationen finden Sie unter [Information Rights Management (IRM) Options and Sensitivity Labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
-- Damit SharePoint die Verschlüsselung aus der Datei beim Hochladen entfernen kann, muss der Benutzer, der die beschriftete und verschlüsselte Datei hochlädt, über Nutzungsrechte verfügen, um die Datei mindestens anzuzeigen. In SharePoint wird die Verschlüsselung von Dateien nicht entfernt, wenn der Benutzer Sie nicht außerhalb von SharePoint öffnen kann.
+- Wenn Benutzer beschriftete und verschlüsselte Dateien in SharePoint hochladen, müssen Sie mindestens über die Berechtigung "anzeigen" für diese Dateien verfügen. Beispielsweise können Sie die Dateien außerhalb von SharePoint öffnen. Wenn Sie nicht über dieses minimale Nutzungsrecht verfügen, ist der Upload erfolgreich, aber SharePoint erkennt die Bezeichnung nicht und kann die Dateiinhalte nicht verarbeiten.
 
 - Verwenden Sie Office im Internet (Word, Excel, PowerPoint) zum Öffnen und Bearbeiten von Office-Dateien mit Vertraulichkeits Bezeichnungen, die Verschlüsselung anwenden. Die Berechtigungen, die der Verschlüsselung zugewiesen wurden, werden erzwungen. Mit Word im Internet können Sie auch die automatische Kennzeichnung verwenden, wenn Sie diese Dokumente bearbeiten.
 
 - Externe Benutzer können mithilfe von Gastkonten auf Dokumente zugreifen, die mit Verschlüsselung versehen sind. Weitere Informationen finden Sie unter [Support für externe Benutzer und beschriftete Inhalte](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien. DLP-Richtlinien (Data Loss Prevention) decken Inhalte in diesen Dateien ab.
+- Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien. Datenverlust Verhinderung (DLP)-Richtlinien unterstützen Inhalte in diesen Dateien.
 
 > [!NOTE]
 > Wenn die Verschlüsselung nicht mit einem cloudbasierten Schlüssel, sondern einem lokalen Schlüssel, einer Schlüssel Verwaltungstopologie, die häufig als "eigenen Schlüssel halten" (Hyok) verwendet wurde, wird das SharePoint-Verhalten bei der Verarbeitung des Dateiinhalts nicht geändert.
 >
-> Das SharePoint-Verhalten ändert sich auch nicht für vorhandene beschriftete und verschlüsselte Dateien in SharePoint. Damit diese Dateien von den neuen Funktionen profitieren, müssen Sie entweder heruntergeladen und hochgeladen oder bearbeitet werden, nachdem Sie den Befehl ausgeführt haben, um Sensitivitäts Bezeichnungen für SharePoint und OneDrive zu aktivieren. Sie werden dann beispielsweise in Such-und eDiscovery-Ergebnissen zurückgegeben.
+> Das SharePoint-Verhalten ändert sich auch nicht für vorhandene beschriftete und verschlüsselte Dateien in SharePoint. Damit diese Dateien von den neuen Funktionen profitieren, müssen Sie entweder heruntergeladen und hochgeladen oder bearbeitet werden, nachdem Sie den Befehl ausgeführt haben, um Sensitivitäts Bezeichnungen für SharePoint und OneDrive zu aktivieren. SharePoint kann diese Dateien dann verarbeiten. Sie werden dann beispielsweise in Such-und eDiscovery-Ergebnissen zurückgegeben.
 
 Nachdem Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, stehen drei neue [Überwachungsereignisse](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) für die Überwachung von Sensitivitäts Bezeichnungen zur Verfügung, die auf Dokumente in SharePoint und OneDrive angewendet werden:
 - **Vertraulichkeitsbezeichnung wurde auf Datei angewendet**

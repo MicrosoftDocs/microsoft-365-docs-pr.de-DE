@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungs Satz in einem Fall in Advanced eDiscovery in Microsoft 365 definiert.
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941237"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726449"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
@@ -44,8 +44,8 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Anlagennamen|AttachmentNames|Attachment_Names|Liste der Namen von Anlagen.|
 |Anwalts Kunde-Berechtigungs Bewertung|AttorneyClientPrivilegeScore||Inhalts Ergebnis des Anwalts-Client-Berechtigungsmodells.|
 |Ursprung|Ursprung|Doc_authors|Autor aus den Dokumentmetadaten.|
-|BCC|Bcc|Email_bcc|BCC-Feld für Nachrichtentypen. Das Format **ist \<DisplayName SMTPAddress>**.|
-|CC|Cc|Email_cc|Feld CC für Nachrichtentypen. Das Format **ist \<DisplayName SMTPAddress>**.|
+|BCC|Bcc|Email_bcc|BCC-Feld für Nachrichtentypen. Format ist **Display \<SMTPAddress> Name **.|
+|CC|Cc|Email_cc|Feld CC für Nachrichtentypen. Format ist **Display \<SMTPAddress> Name **.|
 |Konformitäts Bezeichnungen|ComplianceLabels|Compliance_labels|[Aufbewahrungs Bezeichnungen](labels.md) , die auf Inhalte in Office 365 angewendet werden.|
 |Zusammengesetzter Pfad|CompoundPath|Compound_path|Mensch lesbarer Pfad, der die Quelle des Elements beschreibt.|
 |Inhalts|Inhalt||Extrahierter Text des Elements.|
@@ -110,10 +110,11 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Markiert als Ausgangsfall Problem 1 *||Marked_as_seed_Case_issue_1|Als Ausgangsfall Problem 1 von Relevanz gekennzeichnet.|
 |Enddatum der Besprechung|MeetingEndDate|Meeting_end_date|Termin für Besprechungsende für Besprechungen.|
 |Besprechungs Start Datum|MeetingStartDate|Meeting_start_date|Besprechungs Starttermin für Besprechungen.|
-|Nachrichten Art|MessageKind|Message_kind|Der Typ der zu suchenden Nachricht. Mögliche Werte: ** <br /> <br />Kontakte <br />docs <br />e-Mail <br />externaldata <br />Faxe <br />Chat <br />Journals <br />Meetings <br />verläuft** (gibt Elemente aus Chats, Besprechungen und Anrufe in Microsoft Teams zurück ** <br />) <br />Notizen <br />Beiträge <br />RSSfeeds <br />Aufgaben Voicemail**| 
+|Nachrichten Art|MessageKind|Message_kind|Der Typ der zu suchenden Nachricht. Mögliche Werte: ** <br /> <br /> Kontakte <br /> docs <br /> e-Mail <br /> externaldata <br /> Faxe <br /> Chat <br /> Journals <br /> Meetings <br /> verläuft** (gibt Elemente aus Chats, Besprechungen und Anrufe in Microsoft Teams zurück) ** <br /> Notizen <br /> Beiträge <br /> RSSfeeds <br /> Aufgaben <br /> Voicemail**| 
 |Systemeigene Erweiterung|NativeExtension|Native_extension|Systemeigene Erweiterung des Elements.|
 |Name der systemeigenen Datei|NativeFileName|Native_file_name|Name des systemeigenen Datei namens des Elements.|
-|NativeMD5||Native_MD5|MD5-Hash des Dateidatenstroms.|
+|NativeMD5||Native_MD5|MD5-Hash (128-Bit-Hashwert) des Dateidatenstroms.|
+|NativeSHA256||Native_SHA_256|SHA256-Hash (256-Bit-Hashwert) des Dateidatenstroms.|
 |ND/et Sort: Ausschließen von Anlagen|NdEtSortExclAttach|ND_ET_sort_excl_attach|Verkettung von e-Mail-Thread (et) und Near-Duplicate (ND) festgelegt. Dieses Feld wird zur effizienten Sortierung zur Überprüfungszeit verwendet. A **D** wird auf ND gesetzt, und **E** wird auf et-Sätzen fixiert.|
 |ND/et Sort: einschließen von Anlagen|NdEtSortInclAttach|ND_ET_sort_incl_attach|Verkettung eines e-Mail-Threads (et) und eines near-Duplicate (ND)-Satzes. Dieses Feld wird zur effizienten Sortierung zur Überprüfungszeit verwendet. A **D** wird auf ND gesetzt, und **E** wird auf et-Sätzen fixiert. Auf jedes e-Mail-Element in einem et-Satz folgen die entsprechenden Anlagen.|
 |Normales Relevanz-Ergebnis bei Ausgabe 1||Normalized_relevance_score_case_issue_1|Normalisierte Relevanz-Bewertung bei Ausgabe 1 von Relevanz.|
@@ -142,7 +143,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Relevanz-Ergebnis|RelevanceScore||Relevanz-Score eines Dokuments, das auf Relevanz basiert.|
 |Relevanz-Tag|RelevanceTag||Relevanz-Score eines Dokuments, das auf Relevanz basiert.|
 |Vertreter-ID|Representative-Nr||Numerischer Bezeichner der einzelnen Sätze exakter Duplikate.|
-|Absender|Absender|Email_sender|Absenderfeld (von) für Nachrichtentypen. Das Format **ist \<DisplayName SmtpAddress>**.|
+|Absender|Absender|Email_sender|Absenderfeld (von) für Nachrichtentypen. Format ist **Display \<SmtpAddress> Name **.|
 |Absender/Autor|SenderAuthor||Berechnetes Feld, das aus dem Absender oder dem Autor des Elements besteht.|
 |Absenderdomäne|SenderDomain|Email_sender_domain|Domäne des Absenders.|
 |Gesendet|Gesendet|Email_date_sent|Gesendet am-Datum der Nachricht.|
@@ -155,7 +156,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Tags|Tags|Tags|In einem Überprüfungs Satzes angewendete Tags.|
 |Themenliste|Themeslist|Themes_list|Für Analyse berechnete Themenliste.|
 |Titel|Titel|Doc_title|Titel aus den Dokumentmetadaten.|
-|An|An|Email_to|An-Feld für Nachrichtentypen. Format ist **Display\<Name SmtpAddress>**|
+|An|An|Email_to|An-Feld für Nachrichtentypen. Format ist **Display \<SmtpAddress> Name**|
 |Eindeutig in e-Mail-Gruppe|UniqueInEmailSet||**False** , wenn in der e-Mail-Gruppe ein Duplikat der Anlage vorhanden ist.|
 |Wurde behoben|WasRemediated|Was_Remediated|**True** , wenn das Element behoben wurde, andernfalls **false**.|
 |Wörter zählen|WordCount|Word_count|Die Anzahl der Wörter im Element.|

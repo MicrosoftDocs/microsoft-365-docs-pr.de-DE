@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte E-Mail-Nachrichten von bzw. zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
-ms.openlocfilehash: e4210feb2f510507a1d930ffed6ac784566951b5
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: f5ce3103a6fc8c9f025d657408814a954cf0a13e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214231"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717326"
 ---
 # <a name="message-encryption"></a>Nachrichtenverschlüsselung
 
@@ -33,9 +33,6 @@ Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüs
 ## <a name="how-office-365-message-encryption-works"></a>Funktionsweise von Office 365 Nachrichtenverschlüsselung
 
 Der Rest dieses Artikels gilt für die neuen OM-Funktionen.
-
-> [!NOTE]
-> Stellvertretungen, die über Vollzugriff auf ein Postfach verfügen, können verschlüsselte Nachrichten lesen, die an das Postfach gesendet werden.
 
 Office 365 Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) basiert, das Teil von Azure Information Protection ist. Dies umfasst Verschlüsselungs-, Identitäts-und Autorisierungsrichtlinien, um Ihre e-Mails zu schützen. Sie können Nachrichten mithilfe von Vorlagen für die Rechteverwaltung, der [Option "nicht weiterleiten"](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)und der [Option "nur verschlüsseln](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)" verschlüsseln.
 
