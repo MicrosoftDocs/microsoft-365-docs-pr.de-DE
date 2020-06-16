@@ -28,9 +28,10 @@
         - name: 'Schritt 6: Remotemitarbeiter schulen'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Sichere Zusammenarbeit mit Microsoft 365 einrichten
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Drei Schutzebenen mit Microsoft Teams
+        - name: Übersicht
+          href: setup-secure-collaboration-with-teams.md
+        - name: 'Schritt 1: Konfigurieren von drei Schutzebenen mit Microsoft Teams'
           items:
             - name: Drei Schutzebenen – Übersicht
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurieren eines Teams mit Sicherheitsisolierung
               href: secure-teams-security-isolation.md
-        - name: Konfigurieren der externen Freigabe
+        - name: "Schritt\_2: Konfigurieren der externen Freigabe"
           items:
             - name: Externe Freigabe – Übersicht
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,11 @@
             - name: Referenz zu externer Freigabe
               href: microsoft-365-guest-settings.md
     - name: Bereitstellen des Bedrohungsschutzes in Microsoft 365
-      href: deploy-threat-protection.md
+      items:
+        - name: Übersicht
+          href: deploy-threat-protection.md
+        - name: Schritte zur Bereitstellung des Bedrohungsschutzes
+          href: deploy-threat-protection-configure.md
     - name: Bereitstellen des Informationsschutzes für Datenschutzbestimmungen
       items:
         - name: Übersicht
