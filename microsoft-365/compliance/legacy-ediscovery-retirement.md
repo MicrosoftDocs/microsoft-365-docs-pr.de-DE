@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351916"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761685"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
@@ -289,14 +289,6 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </td>
 </tr>
 <tr class="even">
-<td>Nachrichten aus einem Postfach löschen</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p></p></td>
-<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen, und dann können Sie den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge-purgetype</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
-</td>
-</tr>
-<tr class="odd">
 <td>Löschen von Massen-e-Mails aus einem Postfach</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer</span></a></p>
 <p></p></td>
@@ -307,6 +299,24 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
 <td> </td>
 <td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. In den FAQs im Abschnitt <strong>*-MailboxSearch-Cmdlets</strong> finden Sie alternative Lösungen. </td>
+</tr>
+<tr class=odd>
+  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+</tr>
+<tr class=even>
+  <td>Nachrichten aus einem Postfach löschen</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p></p></td>
+<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen, und dann können Sie den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge-purgetype</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>Nachrichten aus einem Postfach löschen</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+<td>Wenn Sie Nachrichten aus einem Postfach löschen möchten, weisen Sie Administratorberechtigungen für den Zugriff auf das Postfach des Mitarbeiters zu. Nachrichten können nach Bedarf gelöscht und wieder verwendet werden, wobei die integrierten Such-und Anzeigefunktionen in Outlook genutzt werden.</td>
 </tr>
 </tbody>
 </table>

@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Verwenden Sie das erweiterte eDiscovery-Dashboard für Überprüfungs Sätze, um Ihren Korpus schnell zu analysieren, um Trends oder wichtige Statistiken zu identifizieren, mit denen Sie Ihre Überprüfungsstrategie entwickeln können.
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080090"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741700"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Erweitertes eDiscovery-Dashboard für Überprüfungs Sätze (Vorschau)
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Erweitertes eDiscovery-Dashboard für Überprüfungs Sätze
 
 In einigen Fällen in Advanced eDiscovery ist möglicherweise eine große Menge an Dokumenten und e-Mail-Nachrichten vorhanden, die überprüft werden müssen. Bevor Sie mit dem Überprüfungsprozess beginnen, können Sie Ihren Korpus schnell analysieren, um Trends oder wichtige Statistiken zu identifizieren, die Sie bei der Entwicklung ihrer Überprüfungsstrategie unterstützen sollen. Zu diesem Zweck können Sie das erweiterte eDiscovery-Dashboard für Überprüfungs Sätze verwenden, um Ihren Korpus schnell zu analysieren.
 

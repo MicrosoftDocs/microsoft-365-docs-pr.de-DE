@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Verwenden Sie das Tool Bulk-Add, um schnell mehrere Verwalter und die zugehörigen Datenquellen zu einem Fall in Advanced eDiscovery hinzuzufügen.
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432438"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741642"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>Massen-Hinzufügen von Depot Betreuern zu einem erweiterten eDiscovery-Fall (Vorschau)
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Massenhafte Hinzufügen von Depot Betreuern zu einem erweiterten eDiscovery-Fall
 
 Für erweiterte eDiscovery-Fälle, in denen viele depotverwalter involviert sind, können Sie mehrere Verwalter gleichzeitig durch eine CSV-Datei importieren, die alle Informationen enthält, die erforderlich sind, um Sie zu einem Fall hinzuzufügen.
 
