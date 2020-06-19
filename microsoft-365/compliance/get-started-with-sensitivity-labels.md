@@ -66,7 +66,7 @@ Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkei
 
 ## <a name="deployment-strategy-for-sensitivity-labels"></a>Bereitstellungsstrategie für Vertraulichkeitsbezeichnungen
 
-Eine erfolgreiche Strategie zur Bereitstellung von Vertraulichkeitsbezeichnungen in einer Organisation ist es, es virtuelles Team ins Leben zu rufen, das die geschäftlichen und technischen Anforderungen, die Proof of Concept-Überprüfung, interne Prüfpunkte und Genehmigungen sowie die endgültige Bereitstellung für die Produktumgebung ermittelt und verwaltet.
+Eine erfolgreiche Strategie zur Bereitstellung von Vertraulichkeitsbezeichnungen in einer Organisation ist es, ein virtuelles Team ins Leben zu rufen, das die geschäftlichen und technischen Anforderungen, die Proof of Concept-Überprüfung, interne Prüfpunkte und Genehmigungen sowie die endgültige Bereitstellung für die Produktumgebung ermittelt und verwaltet.
 
 Wir empfehlen, mithilfe der Tabelle im nächsten Abschnitt ihre ein oder zwei wichtigsten Szenarien zu ermitteln, die Ihre wirksamsten geschäftlichen Anforderungen abbilden. Kehren Sie nach dem Bereitstellen dieser Szenarien zur Liste zurück, um die nächsten ein oder zwei Prioritäten für die Bereitstellung zu ermitteln.
 
