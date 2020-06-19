@@ -2,6 +2,8 @@
   href: index.yml
 - name: Erste Schritte
   items:
+    - name: Schnelle Aufgaben für die ersten Schritte in Bezug auf die Compliance
+      href: compliance-quick-tasks.md
     - name: Neuerungen im Compliance Center
       href: whats-new.md
     - name: Neueste Aktualisierungen für Compliance-Inhalte
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Office 365-Dienstverschlüsselung
       href: office-365-service-encryption.md
+    - name: Technische Details zur Verschlüsselung in Office 365
+      href: technical-reference-details-about-encryption.md
     - name: Kundenschlüssel
       items:
         - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 schützt
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: Technische Details zur Verschlüsselung in Office 365
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: Legacy OME
@@ -533,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Überprüfen von Falldaten
           items:
-            - name: Verwenden des Prüfdateisatz-Dashboards (Vorschau)
+            - name: Verwenden des Prüfdateisatz-Dashboards
               href: advanced-ediscovery-dashboard.md
             - name: Anzeigen von Dokumenten in einem Prüfdateisatz
               href: view-documents-in-review-set.md

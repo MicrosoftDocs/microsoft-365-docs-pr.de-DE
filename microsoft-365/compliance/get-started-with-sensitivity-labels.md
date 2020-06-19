@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649394"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739054"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -42,7 +42,7 @@ Wenn Sie bereit sind, die Daten Ihrer Organisation mit Vertraulichkeitsbezeichnu
 
 2. **Legen Sie fest, wozu jede einzelne Bezeichnung dient.** Konfigurieren Sie die Schutzeinstellungen, die mit den einzelnen Bezeichnungen verknüpft werden sollen. Für Inhalte mit geringer Vertraulichkeitsstufe (z.B. mit der Bezeichnung „Allgemein“) können Sie beispielsweise nur eine Kopf- oder Fußzeile benutzen, während für Inhalt mit höheren Vertraulichkeitsstufen (z.B. die Bezeichnung „Vertraulich“) ein Wasserzeichen und eine Verschlüsselung angewendet werden sollten.
 
-3. **Veröffentlichen Sie die Bezeichnungen.** Nachdem Sie die Vertraulichkeitsbezeichnungen konfiguriert haben, können Sie sie mithilfe einer Bezeichnungsrichtlinie veröffentlichen. Legen Sie fest, welche Benutzer und Gruppen die Bezeichnungen haben sollen und welche Richtlinieneinstellungen verwendet werden. Eine einzelne Bezeichnung kann wiederverwendet werden, d. h. Sie definieren eine Bezeichnung nur einmal und können sie anschließend in mehrere Bezeichnungsrichtlinien einfügen, die unterschiedlichen Benutzern zugewiesen sind. So könnten Sie beispielsweise mit Vertraulichkeitsbezeichnungen beginnen, indem Sie nur wenigen Benutzern eine Kennzeichnungsrichtlinie zuweisen. Wenn Sie dann bereit sind, die Bezeichnungen für Ihre gesamte Organisation bereitzustellen, können Sie eine neue Bezeichnungsrichtlinie für Ihre Bezeichnungen erstellen und dieses Mal alle Benutzer angeben.
+3. **Veröffentlichen Sie die Bezeichnungen.** Nachdem Sie die Vertraulichkeitsbezeichnungen konfiguriert haben, können Sie sie mithilfe einer Bezeichnungsrichtlinie veröffentlichen. Legen Sie fest, welche Benutzer und Gruppen die Bezeichnungen haben sollen und welche Richtlinieneinstellungen verwendet werden. Eine einzelne Bezeichnung kann wiederverwendet werden – Sie definieren eine Bezeichnung nur einmal und können sie anschließend in mehrere Bezeichnungsrichtlinien einfügen, die unterschiedlichen Benutzern zugewiesen sind. So könnten Sie beispielsweise mit Vertraulichkeitsbezeichnungen beginnen, indem Sie nur wenigen Benutzern eine Kennzeichnungsrichtlinie zuweisen. Wenn Sie dann bereit sind, die Bezeichnungen für Ihre gesamte Organisation bereitzustellen, können Sie eine neue Bezeichnungsrichtlinie für Ihre Bezeichnungen erstellen und dieses Mal alle Benutzer angeben.
 
 Im Folgenden werden die grundlegenden Schritte für die Bereitstellung und Anwendung von Vertraulichkeitsbezeichnungen beschrieben:
 
@@ -64,17 +64,24 @@ Alternativ zur Verwendung von Rollen können Sie eine neue Rollengruppe erstelle
 
 Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden. Wenn für bestimmte Konfigurationen, die sich auf Vertraulichkeitsbezeichnungen beziehen, zusätzliche Berechtigungen erforderlich sind, sind diese Berechtigungen in den entsprechenden Dokumentations-Anweisungen aufgelistet.
 
+## <a name="deployment-strategy-for-sensitivity-labels"></a>Bereitstellungsstrategie für Vertraulichkeitsbezeichnungen
+
+Eine erfolgreiche Strategie zur Bereitstellung von Vertraulichkeitsbezeichnungen in einer Organisation ist es, es virtuelles Team ins Leben zu rufen, das die geschäftlichen und technischen Anforderungen, die Proof of Concept-Überprüfung, interne Prüfpunkte und Genehmigungen sowie die endgültige Bereitstellung für die Produktumgebung ermittelt und verwaltet.
+
+Wir empfehlen, mithilfe der Tabelle im nächsten Abschnitt ihre ein oder zwei wichtigsten Szenarien zu ermitteln, die Ihre wirksamsten geschäftlichen Anforderungen abbilden. Kehren Sie nach dem Bereitstellen dieser Szenarien zur Liste zurück, um die nächsten ein oder zwei Prioritäten für die Bereitstellung zu ermitteln.
+
+Weitere allgemeine Hinweise zur Bereitstellung finden Sie im Microsoft 365 Information Protection & Compliance Deployment Acceleration Guide zum Herunterladen. Weitere Informationen finden Sie im Blogbeitrag [Microsoft Information Protection and Compliance Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Häufige Szenarien für Vertraulichkeitsbezeichnungen
 
-Die folgende Dokumentation hilft Ihnen bei der Bereitstellung Ihrer Vertraulichkeitsbezeichnungen:
+In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlinien erstellen und konfigurieren](create-sensitivity-labels.md).
 
 |Ich möchte...|Dokumentation|
 |----------------|---------------|
-|Vertraulichkeitsbezeichnungen zum Schützen der Daten meiner Organisation erstellen und veröffentlichen|[Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien](create-sensitivity-labels.md)|
+|Vertraulichkeitsbezeichnungen für Office-Apps verwalten, sodass der Inhalt so bei der Erstellung mit Bezeichnungen versehen wird |[Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
 |Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Aktivieren Sie Vertraulichkeitsbezeichnungen für Office im Web mit Unterstützung für die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust und Suche – sogar für verschlüsselte Dokumente. | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
-|Vertraulichkeitsbezeichnungen für Office-Apps verwalten, sodass der Inhalt so bei der Erstellung mit Bezeichnungen versehen wird |[Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
 |Automatisches Anwenden von Vertraulichkeitsbezeichnungen auf Dokumente und E-Mails | [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)|
 |Vertraulichkeitsbezeichnungen zum Schützen von Inhalten in Teams und SharePoint verwenden |[Verwenden von Vertraulichkeitsbezeichnungen in Microsoft Teams, für Microsoft 365-Gruppen und auf SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md)|
 |Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
