@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lesen Sie die grundlegenden Schritte zum Erstellen eines Stichwort Wörterbuchs im Office 365 Security & Compliance Center.
+ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636463"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818054"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -29,9 +31,9 @@ Mit der Verhinderung von Datenverlust (DLP) können Sie vertrauliche Information
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Grundlegende Schritte zum Erstellen eines Schlüsselwörterbuchs
 
-Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer in den Dienst importierten Datei (etwa einer CSV- oder TXT-Liste), oder durch ein einem PowerShell-Cmdlet, aus einer Liste, die Sie direkt in das PowerShell-Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch.Beim Erstellen eines Schlüsselwörterbuchs befolgen Sie die gleichen einfachen Schritte:
+The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. Verwenden Sie das **Security & Compliance Center** ([https://protection.office.com](https://protection.office.com)), oder stellen Sie eine Verbindung mit dem ** &amp; Security Compliance Center PowerShell**her.
+1. Verwenden Sie das **Security & Compliance Center** ( [https://protection.office.com](https://protection.office.com) ), oder stellen Sie eine Verbindung mit dem **Security &amp; Compliance Center PowerShell**her.
     
 2. **Definieren oder laden Sie Ihre Schlüsselwörter aus ihrer beabsichtigten Quelle**. Der Assistent und das Cmdlet akzeptieren beide eine durch trennzeichengetrennte Liste von Schlüsselwörtern, um ein benutzerdefiniertes Stichwort Wörterbuch zu erstellen, sodass dieser Schritt geringfügig variiert, je nachdem, woher Ihre Schlüsselwörter stammen. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
     
@@ -41,7 +43,7 @@ Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quelle
 
 Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsselwörtern für ein Benutzerwörterbuch:
 
-1. Stellen Sie eine Verbindung mit dem Security &[https://protection.office.com](https://protection.office.com)Compliance Center her ().
+1. Stellen Sie eine Verbindung mit dem Security & Compliance Center her ( [https://protection.office.com](https://protection.office.com) ).
 
 2. Navigieren Sie zu **Klassifizierungen > Typen vertraulicher Informationen**.
 
@@ -67,11 +69,11 @@ Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsse
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei mit PowerShell
 
-Häufig, wenn Sie ein großes Wörterbuch erstellen müssen, können Sie Stichwörter aus einer Datei oder aus einer aus einer anderen Quelle exportierten Liste verwenden. In diesem Fall erstellen Sie ein Stichwort Wörterbuch mit einer Liste ungeeigneter Sprache, die in externen e-Mails angezeigt wird. Sie müssen zunächst [eine Verbindung mit &amp; dem Security Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Kopieren Sie die Schlüsselwörter in eine Textdatei, und stellen Sie sicher, dass sich jedes Schlüsselwort in einer separaten Zeile befindet.
     
-2. Speichern Sie die Textdatei in Unicode-Codierung: Im Editor \> **Speichern als** \> **Codierung** \> **Unicode**.
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
     
 3. Lesen Sie die Datei in eine Variable, indem Sie das folgende Cmdlet ausführen:
     
@@ -97,19 +99,19 @@ Rufen Sie zuerst das Wörterbuchobjekt ab:
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-Beim `$dict` Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsselwörter selbst werden in einem Objekt im Back-End gespeichert `$dict.KeywordDictionary` , enthalten jedoch eine Zeichenfolgendarstellung, die Sie zum Ändern des Wörterbuchs verwenden. 
+`$dict`Beim Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsselwörter selbst werden in einem Objekt im Back-End gespeichert, `$dict.KeywordDictionary` enthalten jedoch eine Zeichenfolgendarstellung, die Sie zum Ändern des Wörterbuchs verwenden. 
 
-Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge von Ausdrücken mithilfe der `.split(',')` -Methode wieder in ein Array umwandeln. Anschließend bereinigen Sie die unerwünschten Leerzeichen zwischen den Stichwörtern `.trim()` mit der-Methode, sodass nur die Schlüsselwörter für die Arbeit übrig bleiben. 
+Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge von Ausdrücken mithilfe der-Methode wieder in ein Array umwandeln `.split(',')` . Anschließend bereinigen Sie die unerwünschten Leerzeichen zwischen den Stichwörtern mit der `.trim()` -Methode, sodass nur die Schlüsselwörter für die Arbeit übrig bleiben. 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-Jetzt entfernen Sie einige Ausdrücke aus dem Wörterbuch. Da das Beispielwörterbuch nur einige Schlüsselwörter enthält, können Sie diesen Schritt auch überspringen und mit dem Exportieren des Wörterbuchs und dem Bearbeiten im Editor fortfahren. Wörterbücher enthalten aber in der Regel eine große Textmenge, daher erfahren Sie zunächst, wie diese in PowerShell ganz einfach bearbeiten werden.
+Now you'll remove some terms from the dictionary. Because the example dictionary has only a few keywords, you could just as easily skip to exporting the dictionary and editing it in Notepad, but dictionaries generally contain a large amount of text, so you'll first learn this way to edit them easily in PowerShell.
   
-Im letzten Schritt haben Sie die Schlüsselwörter in einem Array gespeichert. Es gibt mehrere Möglichkeiten, um [Elemente aus einem Array zu entfernen](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)). Der Einfachheit halber erstellen Sie aber ein Array der Ausdrücke, die Sie aus dem Wörterbuch entfernen möchten, und kopieren dann nur die Wörterbuchbegriffe dort hinein, die sich nicht in der Liste der zu entfernenden Ausdrücke befinden.
+In the last step, you saved the keywords to an array. There are several ways to [remove items from an array](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), but as a straightforward approach, you'll create an array of the terms you want to remove from the dictionary, and then copy only the dictionary terms to it that aren't in the list of terms to remove.
   
-Führen Sie den Befehl  `$terms` aus, um die aktuelle Liste von Ausdrücken anzuzeigen. Die Ausgabe des Befehls sieht wie folgt aus: 
+Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
   
 `aarskog's syndrome`
 `abandonment`
@@ -142,7 +144,7 @@ Führen Sie diesen Befehl, um die Ausdrücke tatsächlich aus der Liste zu entfe
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
-Führen Sie den Befehl  `$updatedTerms` aus, um die aktualisierte Liste von Ausdrücken anzuzeigen. Die Ausgabe des Befehls sieht wie folgt aus (die angegebenen Ausdrücke wurden entfernt): 
+Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
   
 `aarskog's syndrome`
 `abasia`
@@ -170,13 +172,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-Öffnen Sie jetzt einfach die Datei, fügen Sie Ihre zusätzlichen Ausdrücke hinzu, und speichern Sie die Datei mit Unicode-Codierung (UTF-16). Nun laden Sie die aktualisierten Ausdrücke hoch und aktualisieren das vorhandene Wörterbuch.
+Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `Identity` den Namen des Wörterbuchs erhält. Wenn Sie auch den Namen Ihres Wörterbuchs mit dem `set-`-Cmdlet ändern möchten, müssten Sie oben einfach den `-Name`-Parameter mit dem neuen Wörterbuchnamen hinzufügen. 
+Now the dictionary has been updated in place. Note that the  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Verwenden von Schlüsselwörterbüchern in benutzerdefinierten vertraulichen Informationstypen und DLP-Richtlinien
 
@@ -208,7 +210,7 @@ Die Ausgabe des Befehls sieht wie folgt aus:
 `ObjectState       : Unchanged`
 
 
-Fügen Sie die Identität in den XML-Code Ihres benutzerdefinierten Typs vertraulicher Informationen ein, und laden Sie ihn hoch. Jetzt wird das Wörterbuch in Ihrer Liste der Typen vertraulicher Informationen angezeigt, und Sie können es direkt in Ihrer Richtlinie verwenden und festlegen, bei wie vielen Schlüsselwörtern eine Übereinstimmung festgestellt werden muss.
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">

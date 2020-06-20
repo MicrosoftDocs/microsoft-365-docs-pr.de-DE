@@ -14,19 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase.
-ms.openlocfilehash: 012154e117e0d2b800f0e1077d43f2e1c1d10b0e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557805"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818894"
 ---
 # <a name="search-and-tagging"></a>Suche und Kennzeichnung
 
 In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase. Eine kurze Demonstration der Suche und Kennzeichnung finden Sie unter [Verwalten von Daten mit erweiterten eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) -Videos.
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="search-the-documents-in-your-case"></a>Durchsuchen der Dokumente in Ihrem Fall
 
@@ -73,9 +74,9 @@ Alternativ können Sie eine Bedingungs Karte im erweiterten eDiscovery-Such Tool
 
 Weitere Informationen zu durchsuchbaren Eigenschaften finden Sie unter [Keyword-Abfragen und Suchbedingungen](keyword-queries-and-search-conditions.md).
   
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
-[Advanced eDiscovery (klassisch)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   

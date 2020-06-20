@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: Erfahren Sie, wie Sie mithilfe von Kompatibilitäts Grenzen logische Grenzen erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262568"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819205"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen
 
@@ -264,11 +265,11 @@ Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche
   
  **Was geschieht, wenn der Wert des Attributs, das als Kompatibilitätsattribut in einem Such Berechtigungsfilter verwendet wird, geändert wird?**
   
-Es dauert bis zu drei Tage, bis ein Such Berechtigungsfilter zum Erzwingen der Konformitäts Grenze verwendet wird, wenn der Wert des im Filter verwendeten Attributs geändert wird. Beispielsweise wird im Contoso-Szenario angenommen, dass ein Benutzer in der Fourth Coffee-Agentur an die Weingut-Agentur von Winery übergeben wird. Daher wird der Wert des **Department** -Attributs für das User-Objekt von *fourthcoffee* in *cohowinery*geändert. In dieser Situation erhalten vierter Kaffee eDiscovery und Investoren Suchergebnisse für diesen Benutzer für drei Tage nach dem Ändern des Attributs. In ähnlicher Weise dauert es bis zu drei Tage, bis die Weingut eDiscovery-Manager und Ermittler Suchergebnisse für den Benutzer erhalten. 
+Es dauert bis zu drei Tage, bis ein Such Berechtigungsfilter zum Erzwingen der Konformitäts Grenze verwendet wird, wenn der Wert des im Filter verwendeten Attributs geändert wird. Beispielsweise wird im Contoso-Szenario angenommen, dass ein Benutzer in der Fourth Coffee-Agentur an die Weingut-Agentur von Winery übergeben wird. Daher wird der Wert des **Department** -Attributs für das User-Objekt von *fourthcoffee* in *cohowinery*geändert. In dieser Situation erhalten vierter Kaffee eDiscovery und Investoren Suchergebnisse für diesen Benutzer für drei Tage nach dem Ändern des Attributs. In ähnlicher Weise dauert es bis zu drei Tage, bis die Weingut eDiscovery-Manager und Ermittler Suchergebnisse für den Benutzer erhalten.
   
  **Kann ein eDiscovery-Manager Inhalte aus zwei separaten Kompatibilitäts Grenzen anzeigen?**
   
-Ja. Dies kann durch Hinzufügen des Benutzers zu Rollengruppen erfolgen, die für beide Agenturen sichtbar sind.
+Ja, dies kann beim Durchsuchen von Exchange-Postfächern geschehen, indem der eDiscovery-Manager Rollengruppen hinzugefügt wird, die eine Sichtbarkeit für beide Agenturen haben. Beim Durchsuchen von SharePoint-Websites und OneDrive-Konten kann ein eDiscovery-Manager jedoch nur dann nach Inhalten in unterschiedlichen Kompatibilitäts Grenzen suchen, wenn sich die Agenturen in derselben Region oder an einem geografischen Standort befinden. **Hinweis:** Diese Einschränkung für Websites gilt nicht für Advanced eDiscovery, da die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort gebunden ist.
   
  **Funktionieren Such Berechtigungsfilter für eDiscovery Case holdes, Microsoft 365-Aufbewahrungsrichtlinien oder DLP?**
   

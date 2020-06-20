@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Richten Sie einen Connector ein, um Facebook-Daten in Microsoft 365 zu importieren, damit Sie Compliance-Features wie rechtliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können.
-ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie & einen Connector im Microsoft 365 Compliance Center verwenden, um & Archivdaten von Facebook-Geschäfts Seiten nach Microsoft 365 zu importieren.
+ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210533"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818464"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Einrichten eines Connectors zum Archivieren von Facebook-Daten (Vorschau)
 

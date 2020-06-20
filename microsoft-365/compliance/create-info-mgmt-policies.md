@@ -19,13 +19,15 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Mithilfe von Informationsverwaltungsrichtlinien kann Ihre Organisation steuern, wie lange Inhalt aufbewahrt werden soll, um zu überwachen, was Benutzer mit Inhalten tun, und um einem dokumentbarcodes oder Beschriftungen hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Vorschriften oder interner Geschäftsprozesse zu erzwingen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente überwacht werden und wie lange Dokumente aufbewahrt werden sollen.
-ms.openlocfilehash: eabbd2d6292de621b4c8e14d6d491f27b8fb24f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie eine Informationsverwaltungsrichtlinie einrichten, um zu steuern, wie lange Informationen aufbewahrt werden und nachverfolgen, wer die Informationen verwendet.
+ms.openlocfilehash: 2519f039e7495d01a828aee564ce1a6caf41342d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077512"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817994"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Erstellen und Anwenden von Informationsverwaltungsrichtlinien
 
@@ -46,15 +48,15 @@ Weitere Informationen finden Sie unter [Einführung in Informationsverwaltungsri
 
 Um sicherzustellen, dass eine Informationsrichtlinie auf alle Dokumente eines bestimmten Typs in einer Websitesammlung angewendet wird, sollten Sie die Richtlinie auf Websitesammlungsebene erstellen und die Richtlinie später auf Inhaltstypen anwenden. Diese werden als Websitesammlungsrichtlinien bezeichnet. 
   
-1. Klicken Sie auf der \> **Seite Einstellungen für die**![SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
+1. Klicken Sie auf der Seite Einstellungen für die \> **Settings** ![ SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
     
     Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen unter **Inhaltstyp Richtlinienvorlagen**für die **Websitesammlungsverwaltung** \> . 
+2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung. 
   
 ![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. \> **Erstellen**Sie auf der Seite Richtlinien die. 
+3. Erstellen Sie auf der Seite Richtlinien die \> **Create**. 
     
 4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Richtlinienanweisung, die den Benutzern erklärt, wofür die Richtlinie verwendet wird.
     
@@ -69,17 +71,17 @@ Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltsty
   
  Sie können auch eine Informationsverwaltungsrichtlinie zu einem für Listenspezifischen Inhaltstyp hinzufügen. Dies hat den Effekt, dass die Richtlinie nur auf Elemente in dieser Liste angewendet wird, die den Inhaltstyp verwenden. 
   
-1. Klicken Sie auf der \> **Seite Einstellungen für die**![SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
+1. Klicken Sie auf der Seite Einstellungen für die \> **Settings** ![ SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
     
     Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
     
-2. Klicken Sie auf der Seite Websiteeinstellungen unter **Web-Designer-Kataloge** \> auf **Websiteinhaltstypen**.
+2. Klicken Sie auf der Seite Websiteeinstellungen unter **Web-Designer-Kataloge** auf \> **Websiteinhaltstypen**.
   
 ![Link "Websiteinhaltstypen" auf der Seite "Websiteeinstellungen"](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. Wählen Sie auf der Seite Einstellungen des Websiteinhaltstyps den Inhaltstyp aus, dem Sie eine Richtlinie hinzufügen möchten.
     
-4. Klicken Sie auf der Seite Websiteinhaltstyp unter **Einstellungen** \> für die **Richtlinieneinstellungen für die Informationsverwaltung**.
+4. Klicken Sie auf der Seite Websiteinhaltstyp unter **Einstellungen** für die \> **Richtlinieneinstellungen für die Informationsverwaltung**.
     
 5. Geben Sie auf der Seite Richtlinie bearbeiten einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Beschreibung, die den Benutzern erklärt, wofür die Richtlinie gilt.
     
@@ -114,7 +116,7 @@ Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltsty
     
     So aktivieren Sie Barcodes
     
-||||||1. * * * *|**Aktivieren Sie auf der Seite Richtlinie bearbeiten unter **Barcodes** \> die **Option Barcodes**.**|
+||||||1. * * * *|**Aktivieren Sie auf der Seite Richtlinie bearbeiten unter **Barcodes** die \> **Option Barcodes**.**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |Um Benutzer aufzufordern, diese Barcodes in Dokumente einzufügen, wählen Sie **Benutzer auffordern, vor dem Speichern oder Drucken einen Barcode einzufügen**.  <br/> |
 ||||||**3.** <br/> |Wählen Sie **OK** aus, um das Barcode-Feature auf die Richtlinie anzuwenden.  <br/> |
@@ -128,7 +130,7 @@ Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltsty
 ||||||**1.**|* * Wenn Sie festlegen möchten, dass Benutzer einem Dokument eine Bezeichnung hinzufügen möchten, wählen Sie **Benutzer zum Einfügen einer Bezeichnung vor dem Speichern oder Drucken auffordern**aus.  <br/> > [!NOTE]> wenn Beschriftungen optional sein sollen, aktivieren Sie dieses Kontrollkästchen nicht.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> |Wenn Sie eine Beschriftung so sperren möchten, dass Sie nach dem Einfügen nicht mehr geändert werden kann, wählen Sie **nach dem Hinzufügen Änderungen an Beschriftungen verhindern**aus.  <br/>  Mit dieser Einstellung wird verhindert, dass der Bezeichnungstext aktualisiert wird, nachdem die Bezeichnung in ein Element in einer Clientanwendung wie Word, Excel oder PowerPoint eingefügt wurde. Aktivieren Sie dieses Kontrollkästchen nicht, falls die Bezeichnung aktualisiert werden soll, wenn die Eigenschaften für dieses Dokument oder Element aktualisiert werden.  <br/> |
-||||||3.  <br/> |Geben Sie im Feld Bezeichnungsformat den Text für die Beschriftung so ein, wie er angezeigt werden soll. Beschriftungen können bis zu 10 Spaltenbezüge enthalten, von denen jede bis zu 255 Zeichen lang sein kann. Führen Sie die folgenden Schritte aus, um das Format für ihre Bezeichnung zu erstellen:  <br/> Geben Sie die Namen der Spalten ein, die Sie in die Bezeichnung einschließen möchten, in der Reihenfolge, in der Sie angezeigt werden sollen. Schließen Sie die Spaltennamen in geschweifte Klammern ({}) ein, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> Geben Sie Wörter ein, um die Spalten außerhalb der Klammern zu identifizieren, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> |
+||||||3.  <br/> |Geben Sie im Feld Bezeichnungsformat den Text für die Beschriftung so ein, wie er angezeigt werden soll. Beschriftungen können bis zu 10 Spaltenbezüge enthalten, von denen jede bis zu 255 Zeichen lang sein kann. Führen Sie die folgenden Schritte aus, um das Format für ihre Bezeichnung zu erstellen:  <br/> Geben Sie die Namen der Spalten ein, die Sie in die Bezeichnung einschließen möchten, in der Reihenfolge, in der Sie angezeigt werden sollen. Schließen Sie die Spaltennamen in geschweifte Klammern ( {} ) ein, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> Geben Sie Wörter ein, um die Spalten außerhalb der Klammern zu identifizieren, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> |
 ||||||4.  <br/> |Geben Sie zum Hinzufügen eines Positions Umbruchs **\n** an der Stelle ein, an der der Positions Umbruch angezeigt werden soll.  <br/> |
 ||||||5.  <br/> |Wählen Sie den gewünschten Schriftgrad und die gewünschte Formatvorlage aus, und geben Sie an, ob die Beschriftung links, zentriert oder rechts im Dokument positioniert werden soll.  <br/>  Wählen Sie eine Schriftart und ein Format aus, die auf den Benutzercomputern verfügbar sind. Es hängt vom Schriftgrad ab, wie viel Text auf der Bezeichnung angezeigt werden kann.  <br/> |
 ||||||6.  <br/> |Geben Sie die Höhe und Breite der Beschriftung ein. Die Bezeichnungshöhe kann zwischen .25 Zoll und 20 Zoll liegen, und die Breite der Beschriftung reicht von .25 Zoll bis 20 Zoll. Bezeichnungstext ist immer vertikal innerhalb des Bezeichnungs Bilds zentriert.  <br/> |
@@ -155,7 +157,7 @@ Sie benötigen mindestens die Berechtigung Listen verwalten, um die Einstellunge
   
 1. Navigieren Sie zu der Liste oder Bibliothek, für die Sie eine Informationsverwaltungsrichtlinie angeben möchten. 
     
-2. Wählen Sie im Menüband die Bibliotheks **Einstellungen** oder Listen \> **Einstellungen** **für Bibliotheks** -oder **Listen** Registerkarten aus.
+2. Wählen Sie im Menüband die Bibliothekseinstellungen oder Listeneinstellungen **für Bibliotheks** -oder **Listen** Registerkarten aus \> **Library Settings** . **List Settings**
     
     Klicken Sie in SharePoint Online auf **Einstellungen** , und klicken Sie dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
     
@@ -186,7 +188,7 @@ Wenn **Inhaltstyp** als Quelle angezeigt wird, klicken Sie auf **Quelle ändern*
     
 8. Die Option **Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, dem bereits ein Workflow zugeordnet ist. Sie erhalten dann eine Auswahl von Workflows zur Auswahl. 
     
-9. Wählen **** Sie unter Serie **die Aktion diese Phase wiederholen...** und geben Sie ein, wie oft die Aktion wieder aufgetreten werden soll. 
+9. Wählen **Recurrence**Sie unter Serie **die Aktion diese Phase wiederholen...** und geben Sie ein, wie oft die Aktion wieder aufgetreten werden soll. 
     
     > [!NOTE]
     >  Diese Option ist nur verfügbar, wenn die Aktion, die Sie ausgewählt haben, wiederholt werden kann. Beispielsweise können Sie die Serie für die Aktion nicht **dauerhaft löschen**festlegen. 
@@ -202,7 +204,7 @@ Wenn für Ihre Website bereits Informationsverwaltungsrichtlinien als Websitesam
   
 1. Navigieren Sie zu der Liste oder Bibliothek, die den Inhaltstyp enthält, auf den Sie eine Richtlinie anwenden möchten.
     
-2. Wählen Sie im Menüband die Bibliotheks **Einstellungen** oder Listen \> **Einstellungen** **für Bibliotheks** -oder **Listen** Registerkarten aus.
+2. Wählen Sie im Menüband die Bibliothekseinstellungen oder Listeneinstellungen **für Bibliotheks** -oder **Listen** Registerkarten aus \> **Library Settings** . **List Settings**
     
     Klicken Sie in SharePoint Online auf **Einstellungen** , und klicken Sie dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
     
@@ -237,15 +239,15 @@ Sie können eine Informationsverwaltungsrichtlinie definieren und anschließend 
 ### <a name="export-a-policy"></a>Exportieren einer Richtlinie
 <a name="__toc260646790"> </a>
 
-1. Wählen Sie auf der Homepage der Websitesammlung **Einstellungen**![für kleine Einstellungen aus, die als Standort für Websiteeinstellungen eintraten. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **** Website \> Einstellungen.
+1. Wählen Sie auf der Homepage der Websitesammlung **Einstellungen**für ![ kleine Einstellungen aus, die als Standort für Websiteeinstellungen festgelegte Einstellungen übernommen haben. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Site Settings**
     
     Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen unter **Inhaltstyp Richtlinienvorlagen**für die **Websitesammlungsverwaltung** \> . 
+2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung. 
   
 ![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Wählen Sie die Richtlinie aus, \> die Sie exportieren möchten \> , Scrollen Sie zum unteren **Export**.
+3. Wählen Sie die Richtlinie aus, die Sie exportieren möchten, \> Scrollen Sie zum unteren \> **Export**.
     
 4. Wählen Sie an der Eingabeaufforderung zum Speichern oder Öffnen der Datei **Speichern**aus, und wählen Sie dann einen Speicherort aus, in dem die Datei gespeichert werden soll. Stellen Sie sicher, dass Sie einen Speicherort auswählen, der für die Websitesammlungen zur Verfügung steht, die die Richtlinie importieren.
     
@@ -256,17 +258,17 @@ Sie können eine Informationsverwaltungsrichtlinie definieren und anschließend 
 
 Wenn Sie eine Informationsverwaltungsrichtlinie importieren, können Sie Sie auf der Website-oder Listenebene innerhalb einer bestimmten Websitesammlung auf mehrere Inhaltstypen anwenden. Die Vorteile dieser Vorgehensweise liegen auf zweierlei Weise: Sie müssen die Richtlinie nicht für jeden Inhaltstyp neu definieren und anwenden, und Sie können Richtlinienänderungen einfacher verwalten, indem Sie Änderungen an der Richtlinie an nur einer Stelle vornehmen.
   
-1. Wählen Sie auf der Homepage der Websitesammlung, auf die Sie die Richtlinie anwenden möchten, die Option **Einstellungen**![für kleine Einstellungen aus, die den Ort der Websiteeinstellungen übernahm. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **** Website \> Einstellungen.
+1. Wählen Sie auf der Homepage der Websitesammlung, auf die Sie die Richtlinie anwenden möchten, die Option **Einstellungen**für ![ kleine Einstellungen aus, die die Websiteeinstellungen übernahm. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Site Settings**
     
     Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen unter **Inhaltstyp Richtlinienvorlagen**für die **Websitesammlungsverwaltung** \> .
+2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung.
     
-3. Suchen Sie auf der \> Seite Richtlinien **importieren** \> **nach der** XML-Datei für die Richtlinie. 
+3. Suchen Sie auf der Seite Richtlinien \> **importieren** \> **Browse** nach der XML-Datei für die Richtlinie. 
     
-4. Wählen Sie die XML-Datei aus, in der die \> Richtlinie **geöffnet**gespeichert wurde. 
+4. Wählen Sie die XML-Datei aus, in der die Richtlinie \> **geöffnet**gespeichert wurde. 
     
-5. Klicken Sie auf der Seite \> Importieren einer Websitesammlungsrichtlinie auf **importieren** , um die Richtlinie der Websitesammlung hinzuzufügen. 
+5. Klicken Sie auf der Seite Importieren einer Websitesammlungsrichtlinie auf \> **importieren** , um die Richtlinie der Websitesammlung hinzuzufügen. 
     
 Die importierte Richtlinie kann nun auf einen oder mehrere Inhaltstypen auf Website-oder Listenebene angewendet werden. 
   
