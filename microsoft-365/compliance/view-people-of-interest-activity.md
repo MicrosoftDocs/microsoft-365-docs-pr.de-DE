@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: Verwenden Sie das Tool für die Daten Ermittlungen (Preview) People of Interest Management in ihrer Untersuchung, indem Sie die Aktivität für Personen mit Interesse aufrufen und durchsuchen.
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034277"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819015"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Anzeigen der Überwachungsaktivität von Personen von Interesse
 
 Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Data Investigations (Preview) ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security & Compliance Center integriert. Mithilfe dieser eingebetteten Benutzeroberfläche können Sie das Verwaltungstool "Daten Ermittlungen (Preview) People of Interest" verwenden, um Ihre Untersuchung zu vereinfachen, indem Sie die Aktivität für Personen, die in ihrer Untersuchung interessant sind, leicht aufrufen und durchsuchen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="get-permissions"></a>Berechtigungen abrufen
 
 Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Um einem Benutzer die Möglichkeit zu geben, das Überwachungsprotokoll für Daten Untersuchungen (Preview) mit der minimalen Berechtigungsstufe zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Ansicht nur Überwachungsprotokolle oder Überwachungsprotokoll Rolle hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
 

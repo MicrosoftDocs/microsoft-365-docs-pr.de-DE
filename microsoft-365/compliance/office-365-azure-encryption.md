@@ -17,18 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Informationen zur verfügbaren Verschlüsselung in Azure, wie Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 57581f7ca1f4cb605aa2617f73dd1e4b04bd129c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033633"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818854"
 ---
 # <a name="encryption-in-azure"></a>Verschlüsselung in Azure
 
 Technologische Schutzvorkehrungen in Azure, wie verschlüsselte Kommunikation und Betriebsprozesse, tragen dazu bei, dass Ihre Daten sicher sind. Sie haben auch die Flexibilität, zusätzliche Verschlüsselungsfunktionen zu implementieren und eigene kryptografische Schlüssel zu verwalten. Unabhängig von der Kundenkonfiguration wendet Microsoft die Verschlüsselung an, um Kundendaten in Azure zu schützen. Mit Microsoft können Sie auch die in Azure gehosteten Daten über eine Reihe von fortschrittlichen Technologien steuern, um kryptografische Schlüssel zu verschlüsseln, zu steuern und zu verwalten sowie den Zugriff auf Daten zu steuern und zu überwachen. Darüber hinaus bietet Azure Storage einen umfassenden Satz an Sicherheitsfunktionen, mit denen Entwickler sichere Anwendungen erstellen können.
-
-## <a name="introduction"></a>Einführung
 
 Azure bietet viele Mechanismen zum Schutz von Daten, die von einem Standort an einen anderen verschoben werden. Microsoft verwendet TLS, um Daten zu schützen, wenn es zwischen den Cloud-Diensten und Kunden reist. Microsoft-Rechenzentren verhandeln eine TLS-Verbindung mit Clientsystemen, die eine Verbindung mit Azure Services herstellen. Perfect Forward Verschwiegenheit (PFS) schützt die Verbindungen zwischen Clientsystemen von Kunden und den Cloud-Diensten von Microsoft mit eindeutigen Schlüsseln. Verbindungen verwenden auch RSA-basierte 2.048-Bit-Verschlüsselungsschlüssel Längen. Diese Kombination erschwert das Abfangen und Zugreifen auf Daten, die während der Übertragung durch den Benutzer durchführt werden.
 

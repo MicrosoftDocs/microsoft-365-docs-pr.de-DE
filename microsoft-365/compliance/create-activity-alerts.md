@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hinzufügen und Verwalten von Aktivitäts Warnungen im Security & Compliance Center, sodass Microsoft 365 Ihnen e-Mail-Benachrichtigungen senden kann, wenn Benutzer bestimmte Aktivitäten ausführen
-ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035807"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818024"
 ---
 # <a name="create-activity-alerts"></a>Aktivitäts Warnungen erstellen
 
@@ -34,7 +34,7 @@ Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachri
 > [!NOTE]
 > Aktivitäts Warnungen werden veraltet. Es wird empfohlen, Warnungsrichtlinien im Security and Compliance Center zu verwenden, anstatt neue Aktivitäts Warnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen, beispielsweise die Möglichkeit, eine Warnungs Richtlinie zu erstellen, die eine Warnung auslöst, wenn ein beliebiger Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite **Benachrichtigungen anzeigen** im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="confirm-roles-and-configure-audit-logging"></a>Überprüfen der Rollen und Konfigurieren der Überwachungsprotokollierung
 
 - Sie müssen die Rolle Organisationskonfiguration im Sicherheits & Compliance Center zugewiesen sein, um Aktivitäts Warnungen zu verwalten. Diese Rolle wird standardmäßig den Rollengruppen Compliance-Administrator und Organisationsverwaltung zugewiesen. Weitere Informationen zum Hinzufügen von Mitgliedern zu Rollengruppen finden Sie unter [Erteilen von Benutzern den Zugriff auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -50,7 +50,7 @@ Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachri
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie auf der Seite **Aktivitäts Benachrichtigungen** auf ![](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neues**Symbol hinzufügen.
+3. Klicken Sie auf der Seite **Aktivitäts Benachrichtigungen** auf ![ Neues Symbol hinzufügen ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
 
    Die Flyout-Seite zum Erstellen einer Aktivitäts Warnung wird angezeigt.
 
@@ -85,7 +85,7 @@ Sie können eine Aktivitäts Warnung erstellen, mit der Sie eine e-Mail-Benachri
 
 Sie können eine Aktivitäts Warnung deaktivieren, sodass keine e-Mail-Benachrichtigung gesendet wird. Nachdem Sie die Aktivitäts Warnung deaktiviert haben, wird Sie weiterhin in der Liste der Aktivitäts Warnungen für Ihre Organisation angezeigt, und Sie können ihre Eigenschaften weiterhin anzeigen.
   
-1. Wechseln Sie zu [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Wechseln Sie zu [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     

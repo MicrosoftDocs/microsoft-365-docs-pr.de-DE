@@ -18,19 +18,20 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Ausführen eines Skripts zum schnellen Hinzufügen von Postfächern und OneDrive für Unternehmen Websites zu einem neuen Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist.
-ms.openlocfilehash: 499a4ce3eb0f7be59f71565c0c841f323a364305
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+description: Informationen zum Ausführen eines Skripts zum Hinzufügen von Postfächern & OneDrive für Unternehmen Websites zu einem neuen Haltestatus, der einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist.
+ms.openlocfilehash: ff309bcc01bec5d67abbb0c9a0619a10ccebebac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942988"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819115"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem eDiscovery-Fall im Security & Compliance Center
 
 Das Security & Compliance Center bietet viele Windows PowerShell-Cmdlets, mit denen Sie zeitaufwändige Aufgaben im Zusammenhang mit dem Erstellen und Verwalten von eDiscovery-Fällen automatisieren können. Mit dem eDiscovery Case-Tool im Security & Compliance Center können Sie derzeit eine große Anzahl von Speicherorten für Depot Inhalte Zeit-und Vorbereitungs bereitstellen. Vor dem Erstellen eines Haltestatus müssen Sie beispielsweise die URL für jede OneDrive für Unternehmen Website erfassen, die Sie in die Warteschleife stellen möchten. Anschließend müssen Sie für jeden Benutzer, den Sie in die Warteschleife setzen möchten, das Postfach und die OneDrive für Unternehmen Website in das Archiv eintragen. In zukünftigen Versionen des Security & Compliance Center wird dies einfacher. Bis dahin können Sie das Skript in diesem Artikel verwenden, um diesen Prozess zu automatisieren.
   
-Im Skript werden Sie zur Angabe des Namens der mysite-Domäne Ihrer Organisation aufgefordert (beispielsweise " **contoso** " https://contoso-my.sharepoint.com)in der URL, der Name eines vorhandenen eDiscovery-Falles, der Name des neuen haltebereichs, der dem Fall zugeordnet ist, eine Liste der e-Mail-Adressen der Benutzer, die Sie speichern möchten, und eine Suchabfrage, die verwendet werden soll, wenn Sie einen abfragebasierten Speicher Das Skript ruft dann die URL für die OneDrive für Unternehmen Website für jeden Benutzer in der Liste ab, erstellt den neuen Haltestatus und fügt dann das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste in den Haltebereich ein. Das Skript generiert auch Protokolldateien, die Informationen zum neuen Haltestatus enthalten. 
+Im Skript werden Sie zur Angabe des Namens der mysite-Domäne Ihrer Organisation aufgefordert (beispielsweise " **contoso** " in der URL https://contoso-my.sharepoint.com) , der Name eines vorhandenen eDiscovery-Falles, der Name des neuen haltebereichs, der dem Fall zugeordnet ist, eine Liste der e-Mail-Adressen der Benutzer, die Sie speichern möchten, und eine Suchabfrage, die verwendet werden soll, wenn Sie einen abfragebasierten Speicher Das Skript ruft dann die URL für die OneDrive für Unternehmen Website für jeden Benutzer in der Liste ab, erstellt den neuen Haltestatus und fügt dann das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste in den Haltebereich ein. Das Skript generiert auch Protokolldateien, die Informationen zum neuen Haltestatus enthalten. 
   
 Hier sind die Schritte, um dies zu erreichen:
   
@@ -40,7 +41,7 @@ Hier sind die Schritte, um dies zu erreichen:
   
 [Schritt 3: Ausführen des Skripts zum Erstellen eines Haltestatus und Hinzufügen von Benutzern](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-add-users-to-a-hold"></a>Vor dem Hinzufügen von Benutzern zu einem Haltestatus
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center und SharePoint Online globaler Administrator sein, um das Skript in Schritt 3 auszuführen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
     
@@ -52,7 +53,7 @@ Hier sind die Schritte, um dies zu erreichen:
     
 - Das Skript enthält eine minimale Fehlerbehandlung. Der primäre Zweck besteht darin, das Postfach und die OneDrive für Unternehmen Website jedes Benutzers schnell und einfach aufzubewahren.
     
-- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Schritt 1: Installieren der SharePoint Online-Verwaltungsshell
 
@@ -64,13 +65,13 @@ Wechseln Sie zum [Einrichten der SharePoint Online Verwaltungsshell Windows Powe
 
 Mit dem Skript in Schritt 3 wird ein Haltestatus erstellt, der einem eDiscovery-Fall zugeordnet ist, sowie das Hinzufügen der Postfächer und OneDrive für Unternehmen Websites einer Liste von Benutzern in den Haltebereich. Sie können die e-Mail-Adressen einfach in eine Textdatei eingeben oder einen Befehl in Windows PowerShell ausführen, um eine Liste mit e-Mail-Adressen zu erhalten und diese in einer Datei zu speichern (in demselben Ordner, in dem Sie das Skript in Schritt 3 speichern werden).
   
-Es folgt ein PowerShell-Befehl (den Sie mit der Remote-PowerShell ausführen, die mit Ihrer Exchange Online Organisation verbunden ist), um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation abzurufen und in einer Textdatei mit dem Namen "HoldUsers. txt" zu speichern.
+Es folgt ein PowerShell-Befehl (den Sie mit der Remote-PowerShell ausführen, die mit Ihrer Exchange Online Organisation verbunden ist), um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation abzurufen und in einer Textdatei namens "HoldUsers.txt" zu speichern.
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Nachdem Sie diesen Befehl ausgeführt haben, öffnen Sie die Textdatei, und entfernen Sie die Kopfzeile, die `PrimarySmtpAddress`den Eigenschaftennamen enthält. Entfernen Sie dann alle e-Mail-Adressen außer denjenigen für die Benutzer, die Sie dem Haltestatus hinzufügen möchten, den Sie in Schritt 3 erstellen. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
+Nachdem Sie diesen Befehl ausgeführt haben, öffnen Sie die Textdatei, und entfernen Sie die Kopfzeile, die den Eigenschaftennamen enthält `PrimarySmtpAddress` . Entfernen Sie dann alle e-Mail-Adressen außer denjenigen für die Benutzer, die Sie dem Haltestatus hinzufügen möchten, den Sie in Schritt 3 erstellen. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Schritt 3: Ausführen des Skripts zum Erstellen eines Haltestatus und Hinzufügen von Benutzern
 
@@ -78,7 +79,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
   
 - **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen, um eine Verbindung mit dem Security & Compliance Center mit Remote-PowerShell herzustellen. Außerdem werden diese Anmeldeinformationen für den Zugriff auf SharePoint Online verwendet, um die OneDrive für Unternehmen-URLs für die Liste der Benutzer abzurufen.
     
-- **Name Ihrer mysite-Domäne** : die mysite-Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre mysite-Domäne lautet **https://contoso-my.sharepoint.com**, geben `contoso` Sie ein, wenn Sie vom Skript nach dem Namen Ihrer mysite-Domäne gefragt werden. 
+- **Name Ihrer mysite-Domäne** : die mysite-Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre mysite-Domäne lautet **https://contoso-my.sharepoint.com** , geben Sie ein, `contoso` Wenn Sie vom Skript nach dem Namen Ihrer mysite-Domäne gefragt werden. 
     
 - **Name der Groß-/Kleinschreibung** -der Name eines vorhandenen Falls. Mit dem Skript wird ein neuer Haltebereich erstellt, der diesem Fall zugeordnet ist.
     
@@ -96,11 +97,11 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Name der Textdatei mit der Liste der Benutzer** -der Name der Textdatei aus Schritt 2, die die Liste der Benutzer enthält, die dem Haltestatus hinzugefügt werden sollen. Wenn sich diese Datei im gleichen Ordner wie das Skript befindet, geben Sie einfach den Namen der Datei ein (beispielsweise "HoldUsers. txt"). Wenn sich die Textdatei in einem anderen Ordner befindet, geben Sie den vollständigen Pfadnamen der Datei ein.
+- **Name der Textdatei mit der Liste der Benutzer** -der Name der Textdatei aus Schritt 2, die die Liste der Benutzer enthält, die dem Haltestatus hinzugefügt werden sollen. Wenn sich diese Datei im gleichen Ordner wie das Skript befindet, geben Sie einfach den Namen der Datei ein (beispielsweise HoldUsers.txt). Wenn sich die Textdatei in einem anderen Ordner befindet, geben Sie den vollständigen Pfadnamen der Datei ein.
     
 Nachdem Sie die Informationen gesammelt haben, für die das Skript Sie auffordert, besteht der letzte Schritt darin, das Skript auszuführen, um den neuen Haltestatus zu erstellen und ihm Benutzer hinzuzufügen.
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `AddUsersToHold.ps1`.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `AddUsersToHold.ps1` .
     
   ```powershell
   #script begin
@@ -289,10 +290,10 @@ Nachdem Sie die Informationen gesammelt haben, für die das Skript Sie aufforder
     
 Nachdem das Skript ausgeführt wurde, werden die folgenden Protokolldateien erstellt und in dem Ordner gespeichert, in dem sich das Skript befindet.
   
-- **LocationsOnHold. txt** – enthält eine Liste von Postfächern und OneDrive für Unternehmen Websites, die vom Skript erfolgreich gespeichert wurden.
+- **LocationsOnHold.txt** enthält eine Liste von Postfächern und OneDrive für Unternehmen Websites, die das Skript erfolgreich in die Warteschleife gestellt hat.
     
-- **LocationsNotOnHold. txt** – enthält eine Liste von Postfächern und OneDrive für Unternehmen Websites, die das Skript nicht in der Warteschleife aufbewahren konnte. Wenn ein Benutzer über ein Postfach verfügt, jedoch nicht über einen OneDrive für Unternehmen-Standort, wird der Benutzer in die Liste der OneDrive für Unternehmen-Websites aufgenommen, die nicht in der Warteschleife gespeichert wurden.
+- **LocationsNotOnHold.txt** – enthält eine Liste von Postfächern und OneDrive für Unternehmen Websites, die das Skript nicht in der Warteschleife aufbewahren konnte. Wenn ein Benutzer über ein Postfach verfügt, jedoch nicht über einen OneDrive für Unternehmen-Standort, wird der Benutzer in die Liste der OneDrive für Unternehmen-Websites aufgenommen, die nicht in der Warteschleife gespeichert wurden.
     
-- **GetCaseHoldPolicy. txt** – enthält die Ausgabe des Cmdlets **Get-CaseHoldPolicy** für den neuen Haltestatus, den das Skript nach dem Erstellen des neuen Haltestatus ausgeführt hat. Die Informationen, die von diesem Cmdlet zurückgegeben werden, umfassen eine Liste der Benutzer, deren Postfächer und OneDrive für Unternehmen Websites gespeichert wurden, und ob der Haltebereich aktiviert oder deaktiviert ist. 
+- **GetCaseHoldPolicy.txt** -enthält die Ausgabe des **Get-CaseHoldPolicy** -Cmdlets für den neuen Haltestatus, den das Skript nach dem Erstellen des neuen Haltestatus ausgeführt hat. Die Informationen, die von diesem Cmdlet zurückgegeben werden, umfassen eine Liste der Benutzer, deren Postfächer und OneDrive für Unternehmen Websites gespeichert wurden, und ob der Haltebereich aktiviert oder deaktiviert ist. 
     
-- **GetCaseHoldRule. txt** – enthält die Ausgabe des Cmdlets **Get-CaseHoldRule** für den neuen Haltestatus, den das Skript nach dem Erstellen des neuen Haltestatus ausgeführt hat. Die Informationen, die von diesem Cmdlet zurückgegeben werden, enthalten die Suchabfrage, wenn Sie das Skript zum Erstellen eines abfragebasierten haltebereichs verwendet haben. 
+- **GetCaseHoldRule.txt** -enthält die Ausgabe des **Get-CaseHoldRule** -Cmdlets für den neuen Haltestatus, den das Skript nach dem Erstellen des neuen Haltestatus ausgeführt hat. Die Informationen, die von diesem Cmdlet zurückgegeben werden, enthalten die Suchabfrage, wenn Sie das Skript zum Erstellen eines abfragebasierten haltebereichs verwendet haben. 

@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Nachdem ein Office 365 Postfach inaktiv gemacht wurde, ändern Sie die Dauer des Haltestatus oder Office 365 Aufbewahrungsrichtlinie, die dem inaktiven Postfach zugewiesen ist.
-ms.openlocfilehash: 7b74cad30adb1600bb37cbe4861a9a811145c065
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 113a3af38d83eabef2e3022f47952c2db70f47a9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034157"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818404"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Ändern der Aufbewahrungsdauer für ein inaktives Postfach
 
@@ -34,7 +34,7 @@ Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeit
 > [!IMPORTANT]
 > Da wir weiterhin auf verschiedene Arten investieren, um Postfachinhalte beizubehalten, kündigen wir den Ruhestand von in-Place-Speicher in der Exchange-Verwaltungskonsole an. Das heißt, Sie sollten Beweissicherungsverfahren und Microsoft 365-Aufbewahrungsrichtlinien verwenden, um ein inaktives Postfach zu erstellen. Ab dem 1. April 2020 können Sie in Exchange Online keine neuen in-Place-Aufbewahrungsorte erstellen. Sie können jedoch weiterhin die Aufbewahrungsdauer eines in-situ-Speichers ändern, der in einem inaktiven Postfach platziert wird. Ab dem 1. Juli 2020 können Sie die Aufbewahrungsdauer jedoch nicht ändern. Sie können ein inaktives Postfach nur löschen, indem Sie den in-situ-Speicher entfernen. Vorhandene inaktive Postfächer, die sich im Compliance-Archiv befinden, werden weiterhin beibehalten, bis die Aufbewahrung aufgehoben wird. Weitere Informationen zum Ruhestand von in-Place-Archiven finden Sie unter [Retirement of Legacy eDiscovery Tools](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="connect-to-powershell"></a>Herstellen einer Verbindung mit PowerShell
 
 - Zum Ändern der Aufbewahrungsdauer für ein Beweissicherungsverfahren für ein aktives Postfach müssen Sie die Exchange Online PowerShell verwenden. Sie können nicht die Exchange-Verwaltungskonsole (EAC) verwenden. Sie können Exchange Online PowerShell oder die Exchange-Verwaltungskonsole jedoch verwenden, um die Aufbewahrungsdauer für einen In-Situ-Speicher zu ändern. Sie können das Security and Compliance Center oder die Security & Compliance Center PowerShell verwenden, um die Aufbewahrungsdauer für eine Microsoft 365-Aufbewahrungsrichtlinie zu ändern.
     
@@ -105,10 +105,10 @@ In der folgenden Tabelle sind fünf unterschiedliche Haltebereichstypen aufgefü
 |**Inaktives Postfach**|**Haltebereichstyp**|**Wie Sie den Haltebereich für das inaktive Postfach erkennen**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |Beweissicherungsverfahren  <br/> |Die  *LitigationHoldEnabled*  -Eigenschaft wird festgelegt auf  `True`.  <br/> |
-|Pilar Pinilla  <br/> |Compliance-Archiv  <br/> |Die  *InPlaceHolds*  -Eigenschaft enthält die GUID des In-Situ-Speichers, in dem das inaktive Postfach platziert wird. Sie können erkennen, dass es sich hierbei um einen In-Situ-Speichern handelt, da die ID nicht mit einem Präfix beginnt.  <br/> Sie können den Befehl  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` in Exchange Online PowerShell verwenden, um Informationen zu dem In-Situ-Speicher für das inaktive Postfach zu erhalten.  <br/> |
-|Mario Necaise  <br/> |Organisationsweite Aufbewahrungsrichtlinie für Microsoft 365 im Security & Compliance Center  <br/> |Die  *InPlaceHolds*  -Eigenschaft ist leer. Dies deutet darauf hin, dass eine oder mehrere organisationsweite oder (Exchange-weit) Microsoft 365-Aufbewahrungsrichtlinie auf das inaktive Postfach angewendet wird. In diesem Fall können Sie den `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Microsoft 365-Aufbewahrungsrichtlinien zu erhalten. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer angewendet werden `mbx` , beginnt mit dem Präfix; Beispiel: `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> <br/>Um die Microsoft 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das inaktive Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
-|Carol Olson  <br/> |Microsoft 365-Aufbewahrungsrichtlinie im Security & Compliance Center, das auf bestimmte Postfächer angewendet wird  <br/> |Die *InPlaceHolds* -Eigenschaft enthält die GUID der Microsoft 365-Aufbewahrungsrichtlinie, die auf das inaktive Postfach angewendet wird. Sie können erkennen, dass es sich hierbei um eine Aufbewahrungsrichtlinie handelt, die auf bestimmte Postfächer angewendet wurde, da die GUID mit dem Präfix  `mbx` beginnt. Wenn die GUID der Aufbewahrungsrichtlinie, die auf das inaktive Postfach `skp` angewendet wurde, mit dem Präfix begonnen hat, würde dies darauf hindeuten, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen angewendet wird.  <br/><br/> Um die Microsoft 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das inaktive Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Entfernen Sie die Präfix  `mbx` oder  `skp`, wenn Sie diesen Befehl ausführen.  <br/> |
-|Abraham McMahon  <br/> |eDiscovery-Aufbewahrungs Fall im Security & Compliance Center  <br/> |Die  *InPlaceHolds*  -Eigenschaft enthält die GUID des eDiscovery-Falls, in dem das inaktive Postfach platziert wird. Sie können erkennen, dass es sich hierbei um einen eDiscovery-Fall handelt, da die GUID mit dem Präfix  `UniH` beginnt.  <br/> Sie können das `Get-CaseHoldPolicy` Cmdlet in Security & Compliance Center PowerShell verwenden, um Informationen über den eDiscovery-Fall abzurufen, dem das inaktive Postfach zugeordnet ist. Sie können beispielsweise den Befehl  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH`, wenn Sie diesen Befehl ausführen.  <br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, mit dem der Haltebereich für das inaktive Postfach verknüpft ist.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Hinweis:** Es wird nicht empfohlen, eDiscovery-Haltestatus für inaktive Postfächer zu verwenden. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. Eine Rechtsstreitigkeit endet wahrscheinlich irgendwann, und der mit dem Fall verknüpfte Haltebereich wird entfernt, und der eDiscovery-Fall wird geschlossen (oder gelöscht). Wenn ein Haltebereich für ein inaktives Postfach mit einem eDiscovery-Fall verknüpft ist und der Haltebereich freigegeben oder der eDiscovery-Fall geschlossen oder gelöscht wird, wird das inaktive Postfach dauerhaft gelöscht. 
+|Pilar Pinilla  <br/> |Compliance-Archiv  <br/> |The  *InPlaceHolds*  property contains the GUID of the In-Place Hold that's placed on the inactive mailbox. You can tell this is an In-Place Hold because the ID doesn't start with a prefix.  <br/> Sie können den Befehl  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` in Exchange Online PowerShell verwenden, um Informationen zu dem In-Situ-Speicher für das inaktive Postfach zu erhalten.  <br/> |
+|Mario Necaise  <br/> |Organisationsweite Aufbewahrungsrichtlinie für Microsoft 365 im Security & Compliance Center  <br/> |Die  *InPlaceHolds*  -Eigenschaft ist leer. Dies deutet darauf hin, dass eine oder mehrere organisationsweite oder (Exchange-weit) Microsoft 365-Aufbewahrungsrichtlinie auf das inaktive Postfach angewendet wird. In diesem Fall können Sie den `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Microsoft 365-Aufbewahrungsrichtlinien zu erhalten. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer angewendet werden, beginnt mit dem `mbx` Präfix, beispielsweise `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> <br/>Um die Microsoft 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das inaktive Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Carol Olson  <br/> |Microsoft 365-Aufbewahrungsrichtlinie im Security & Compliance Center, das auf bestimmte Postfächer angewendet wird  <br/> |Die *InPlaceHolds* -Eigenschaft enthält die GUID der Microsoft 365-Aufbewahrungsrichtlinie, die auf das inaktive Postfach angewendet wird. Sie können erkennen, dass es sich hierbei um eine Aufbewahrungsrichtlinie handelt, die auf bestimmte Postfächer angewendet wurde, da die GUID mit dem Präfix  `mbx` beginnt. Wenn die GUID der Aufbewahrungsrichtlinie, die auf das inaktive Postfach angewendet wurde, mit dem Präfix begonnen hat `skp` , würde dies darauf hindeuten, dass die Aufbewahrungsrichtlinie auf Skype for Business Unterhaltungen angewendet wird.  <br/><br/> Um die Microsoft 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das inaktive Postfach angewendet wird, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Entfernen Sie die Präfix  `mbx` oder  `skp`, wenn Sie diesen Befehl ausführen.  <br/> |
+|Abraham McMahon  <br/> |eDiscovery-Aufbewahrungs Fall im Security & Compliance Center  <br/> |The  *InPlaceHolds*  property contains the GUID of the eDiscovery case hold that's placed on the inactive mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/> Sie können das `Get-CaseHoldPolicy` Cmdlet in Security & Compliance Center PowerShell verwenden, um Informationen über den eDiscovery-Fall abzurufen, dem das inaktive Postfach zugeordnet ist. Sie können beispielsweise den Befehl  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH`, wenn Sie diesen Befehl ausführen.  <br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, mit dem der Haltebereich für das inaktive Postfach verknüpft ist.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Hinweis:** Es wird nicht empfohlen, eDiscovery-Haltestatus für inaktive Postfächer zu verwenden. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. Eine Rechtsstreitigkeit endet wahrscheinlich irgendwann, und der mit dem Fall verknüpfte Haltebereich wird entfernt, und der eDiscovery-Fall wird geschlossen (oder gelöscht). Wenn ein Haltebereich für ein inaktives Postfach mit einem eDiscovery-Fall verknüpft ist und der Haltebereich freigegeben oder der eDiscovery-Fall geschlossen oder gelöscht wird, wird das inaktive Postfach dauerhaft gelöscht. 
 
 Weitere Informationen zu Microsoft 365-Aufbewahrungsrichtlinien finden Sie unter [Overview of Retention Policies](retention-policies.md).
   
@@ -118,7 +118,7 @@ Nachdem Sie ermittelt haben, welche Art von Haltebereich für das inaktive Postf
   
 ### <a name="change-the-duration-for-a-litigation-hold"></a>Ändern der Dauer für ein Beweissicherungsverfahren
 
-Im Folgenden erfahren Sie, wie Sie die Exchange Online PowerShell zum Ändern der Aufbewahrungsdauer für ein Beweissicherungsverfahren verwenden, das auf einem inaktiven Postfach platziert wird. Sie können nicht die EAC verwenden. Führen Sie zum Ändern der Aufbewahrungsdauer den folgenden Befehl aus. In diesem Beispiel wird die Aufbewahrungsdauer auf unbegrenzt festgelegt.
+Here's how to use Exchange Online PowerShell to change the hold duration for a Litigation Hold that is placed on an inactive mailbox. You can't use the EAC. Run the following command to change the hold duration. In this example, the hold duration is changed to an unlimited period of time.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldDuration unlimited
@@ -127,7 +127,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bis der Haltebereich entfernt oder die Aufbewahrungsdauer in einen anderen Wert geändert wird.
   
 > [!TIP]
-> Die beste Methode zum Identifizieren eines inaktiven Postfachs ist die Verwendung des **Distinguished Name** oder des **Exchange GUID** -Werts. Durch Verwenden eines dieser Werte können Sie verhindern, versehentlich das falsche Postfach anzugeben. 
+> The best way to identify an inactive mailbox is by using its **Distinguished Name** or **Exchange GUID** value. Using one of these values helps prevent accidentally specifying the wrong mailbox. 
   
 ### <a name="change-the-duration-for-an-in-place-hold"></a>Ändern der Dauer für einen In-Situ-Speicher
 
@@ -143,9 +143,9 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Wählen Sie den in-situ-Speicher aus, den Sie ändern möchten **Edit** ![, und klicken](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Sie dann auf Bearbeiten-Symbol bearbeiten.
+3. Wählen Sie den in-situ-Speicher aus, den Sie ändern möchten, und klicken Sie dann auf Bearbeiten-Symbol **Bearbeiten** ![ ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
-4. Wählen Sie auf der Seite **in &amp; -situ-eDiscovery-Aufbewahrungs** Eigenschaften die Option **in-situ-** Speicher aus. 
+4. Wählen Sie auf der Seite **in-situ-eDiscovery- &amp; Aufbewahrungs** Eigenschaften die Option **in-situ-** Speicher aus. 
     
 5. Nehmen Sie auf Grundlage der aktuellen Aufbewahrungsdauer eine der folgenden Aktionen vor:
     
@@ -155,7 +155,7 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
     
     ![Screenshot: Ändern der Dauer für einen In-Situ-Speicher](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern**.
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Verwenden von Exchange Online PowerShell zum Ändern der Aufbewahrungsdauer
 
@@ -175,15 +175,15 @@ Dadurch werden die Elemente im inaktiven Postfach unbegrenzt beibehalten oder bi
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- **Wie wird die Aufbewahrungsdauer für ein Element in einem inaktiven Postfach berechnet?** Die Dauer wird anhand des ursprünglichen Datums berechnet, an dem ein Postfach empfangen oder erstellt wurde. 
+- **How is the hold duration calculated for an item in an inactive mailbox?** The duration is calculated from the original date a mailbox item was received or created. 
     
 - **Was geschieht, wenn die Aufbewahrungsdauer abläuft?** Wenn die Aufbewahrungsdauer für ein Postfachelement im Ordner „Wiederherstellbare Elemente" abläuft, wird das Element dauerhaft aus dem inaktiven Postfach gelöscht. Wenn für den Haltestatus für das inaktive Postfach keine Dauer angegeben ist, werden Elemente im Ordner "Wiederherstellbare Elemente" nie gelöscht (es sei denn, die Aufbewahrungsdauer für das inaktive Postfach wird geändert). 
     
-- **Wird eine Exchange-Aufbewahrungsrichtlinie für inaktive Postfächer weiterhin verarbeitet?** Wenn eine Exchange-Aufbewahrungsrichtlinie (Messaging-Datensatzverwaltung, MRM-Funktion inExchange Online) auf ein Postfach angewendet wurde, als es als inaktiv markiert wurde, werden die Löschrichtlinien (hierbei handelt es sich um Aufbewahrungstags mit der Aufbewahrungsaktion **Delete** ) weiterhin auf das inaktive Postfach angewendet. Mit einer Löschrichtlinie markierte Elemente werden demnach in den Ordner „Wiederherstellbare Elemente" verschoben, wenn die Aufbewahrungsrichtlinie abläuft. Diese Elemente werden dann aus dem inaktiven Postfach gelöscht, wenn die Aufbewahrungsdauer für ein Element abläuft. 
+- **Is an Exchange retention policy still processed on inactive mailboxes?** If an Exchange retention policy (the messaging records management, or MRM, feature in Exchange Online) was applied to a mailbox when it was made inactive, the deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy are moved to the Recoverable Items folder when the retention period expires. Those items are then purged from the inactive mailbox when the hold duration for an item expires. 
     
-    Umgekehrt werden einem inaktiven Postfach zugewiesene Archivrichtlinien (mit der Aufbewahrungsaktion **MoveToArchive** konfigurierte Aufbewahrungstags) ignoriert, die in der Aufbewahrungsrichtlinie enthalten sind. Elemente in einem inaktiven Postfach, die mit einer Archivrichtlinie markiert sind, verbleiben demnach im primären Postfach, wenn die Aufbewahrungsdauer abläuft. Sie werden nicht in das Archivpostfach oder in den Ordner „Wiederherstellbare Elemente" im Archivpostfach verschoben. Da sich ein Benutzer nicht an einem inaktiven Postfach anmelden kann, gibt es keinen Grund, Rechenzentrumsressourcen für das Verarbeiten von Archivrichtlinien zu verwenden. 
+    Conversely, any archive policies (which are retention tags configured with a **MoveToArchive** retention action) that are included in the retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. Because a user can't sign in to an inactive mailbox, there's no reason to consume datacenter resources to process archive policies. 
     
-- **Führen Sie einen der folgenden Befehle aus, um die neue Aufbewahrungsdauer zu überprüfen.** Der erste Befehl ist für das Beweissicherungsverfahren, der zweite für den In-Situ-Speicher. 
+- **To check the new hold duration, run one of the following commands.** The first command is for Litigation Hold; the second is for In-Place Hold. 
 
     ```powershell
     Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | FL LitigationHoldDuration

@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Zuweisen der erforderlichen Berechtigungen zum Ausführen von eDiscovery-bezogenen Aufgaben mithilfe des Security & Compliance Centers.
-ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411032"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818434"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center
 
@@ -45,7 +46,7 @@ Die primäre eDiscovery-bezogene Rollengruppe in Security & Compliance Center wi
 > [!NOTE]
 > Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (dem Verwalter der Daten) eine Office 365 E5-oder Microsoft 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder Office 365-oder Microsoft 365 E3-Lizenz eine Microsoft 365 E5-Compliance oder eine Microsoft 365 eDiscovery-und Überwachungs-Add-on-Lizenz zugewiesen werden. Administratoren, Compliance Officer oder juristische Personen, die den Fällen als Mitglieder zugewiesen sind, und Verwenden von Advanced eDiscovery zum erfassen, anzeigen und Analysieren von Daten benötigen keine E5-Lizenz. Weitere Informationen zur erweiterten eDiscovery-Lizenzierung finden Sie unter [Erste Schritte mit Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="confirm-your-roles"></a>Bestätigen ihrer Rollen
 
 - Sie müssen Mitglied der Rollengruppe "Organisationsverwaltung" sein oder der Rolle "Rollenverwaltung" zugewiesen sein, um eDiscovery-Berechtigungen im Security & Compliance Center zuzuweisen.
     

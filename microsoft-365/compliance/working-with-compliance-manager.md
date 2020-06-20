@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool. Verwenden Sie es zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten.
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie den Compliance-Manager zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten verwenden.
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790662"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817082"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -121,7 +123,7 @@ Führen Sie die folgenden Schritte aus, um eine Gruppe zu erstellen:
 2. Geben Sie im Bereich " **Bewertungs** Flyout" einen Titel für Ihre Bewertung ein, und wählen Sie im Dropdownmenü eine Vorlage aus.
 3. Wenn Sie **eine Gruppe auswählen oder eine neue Gruppe hinzufügen**möchten, wählen Sie **neue Gruppe hinzufügen** aus, und geben Sie Ihren Gruppennamen in das Feld unten ein.
 4. Wenn Sie Informationen aus einer vorhandenen Gruppe kopieren möchten, aktivieren Sie die Option **möchten Sie die Daten aus einer vorhandenen Gruppe kopieren?** **.** Wählen Sie im Dropdownmenü darunter die Gruppe aus, die Sie kopieren möchten, und aktivieren Sie die Kontrollkästchen aller Felder, die Sie in die neue Bewertung in ihrer neuen Gruppe übertragen möchten.
-5. Klicken Sie auf **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und ihre neue Gruppe wird auf dem Dashboard angezeigt.
+5. Wählen Sie **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und ihre neue Gruppe wird auf dem Dashboard angezeigt.
 
 Was Sie beim Arbeiten mit Gruppen wissen sollten:
   
@@ -185,7 +187,7 @@ Auf einen Blick können Sie den Titel, den Besitzer, die Kategorie, die Erzwingu
 
 1. Wählen Sie die Auslassungspunkte (...) für die Aktion aus, die Sie ändern möchten, und wählen Sie **Bearbeiten**aus.
 2. Wechseln Sie zur Option Secure Score Continuous Update auf ein oder aus, um die kontinuierliche Überwachung mithilfe von Secure Score zu aktivieren oder zu deaktivieren.
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern**.
 
 Wenn Organisationen zunächst Microsoft 365 oder Office 365 bereitstellen, dauert es ungefähr sieben Tage, bis Secure Score Daten vollständig erfasst und Sie in Ihrer Partitur berücksichtigt. Während dieser Zeit wird durch das Festlegen der Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf **aus** und das manuelle Festlegen einer Aktion auf **implementiert** festgesetzt, dass diese Aktion zur Partitur zählt. Nach den anfänglichen sieben Tagen wird durch das Drehen von Secure Score Continuous Update wieder eine kontinuierliche Überwachung von diesem Punkt aus aktiviert.
 

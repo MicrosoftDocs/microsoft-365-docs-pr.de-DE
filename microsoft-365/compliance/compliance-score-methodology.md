@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429190"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818074"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Berechnung der Microsoft-Kompatibilitätsbewertung (Vorschau)
 
 > [!IMPORTANT]
 > Empfehlungen der Compliancebewertung und vom Compliance-Manager sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste befinden sich derzeit in der Vorschau und unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="overview"></a>Übersicht
+## <a name="how-compliance-score-works"></a>Funktionsweise der Kompatibilitätsbewertung
 
 Das Kompatibilitäts Bewertungs Dashboard zeigt eine Bewertung an, die den Fortschritt beim Abschließen von Verbesserungs Aktionen innerhalb von Steuerelementen misst. Ihre Punkte werden nach Abschluss der Aktionen gesammelt.
 
@@ -78,7 +79,7 @@ Steuerelementen wird ein Bewertungs Wert zugewiesen, je nachdem, ob Sie obligato
   
 Jedes Steuerelement hat einen zugewiesenen Wert in Compliance Score basierend auf dem Risiko, das es darstellt:
 
-|**Type**|**Zugewiesene Punktzahl**|
+|**Typ**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
 | Vorbeugender Ermessensspielraum | 9  |

@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: Sie haben die Möglichkeit, eDiscovery-Suchergebnisse zu deduplizieren, die exportiert werden, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl möglicherweise mehrere Instanzen derselben Nachricht in unterschiedlichen Postfächern gefunden wurden.
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie doppelte eDiscovery-Suchergebnisse eliminieren, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird.
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166046"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817914"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
@@ -41,17 +43,17 @@ eDiscovery-Tools verwenden eine Kombination der folgenden e-Mail-Eigenschaften, 
 
 - **BodyTagInfo** -Dies ist eine interne Exchange-Informationsspeicher Eigenschaft. Der Wert dieser Eigenschaft wird durch Überprüfen verschiedener Attribute im Textkörper der Nachricht berechnet. Diese Eigenschaft wird verwendet, um Unterschiede im Nachrichtentext zu identifizieren. 
 
-Während des eDiscovery-Exportprozesses werden diese drei Eigenschaften für jede Nachricht verglichen, die mit den Suchkriterien übereinstimmt. Wenn diese Eigenschaften für zwei (oder mehr) Nachrichten identisch sind, werden diese Nachrichten als Duplikate festgelegt, und das Ergebnis ist, dass nur eine Kopie der Nachricht exportiert wird, wenn die Deduplizierung aktiviert ist. Die exportierte Nachricht wird als "Quellelement" bezeichnet. Informationen zu doppelten Nachrichten sind in den Berichten **results. CSV** und **Manifest. XML** enthalten, die in den exportierten Suchergebnissen enthalten sind. In der Datei **results. CSV** wird eine doppelte Nachricht durch einen Wert in der Spalte **Duplikat zu Element** identifiziert. Der Wert in dieser Spalte stimmt mit dem Wert in der **Element Identitäts** Spalte für die exportierte Nachricht überein. 
+Während des eDiscovery-Exportprozesses werden diese drei Eigenschaften für jede Nachricht verglichen, die mit den Suchkriterien übereinstimmt. Wenn diese Eigenschaften für zwei (oder mehr) Nachrichten identisch sind, werden diese Nachrichten als Duplikate festgelegt, und das Ergebnis ist, dass nur eine Kopie der Nachricht exportiert wird, wenn die Deduplizierung aktiviert ist. Die exportierte Nachricht wird als "Quellelement" bezeichnet. Informationen zu doppelten Nachrichten sind in den **Results.csv** -und **Manifest.xml** -Berichten enthalten, die in den exportierten Suchergebnissen enthalten sind. In der **Results.csv** Datei wird eine doppelte Nachricht durch einen Wert in der Spalte **Duplikat zu Element** identifiziert. Der Wert in dieser Spalte stimmt mit dem Wert in der **Element Identitäts** Spalte für die exportierte Nachricht überein. 
   
-Die folgenden Grafiken zeigen, wie doppelte Nachrichten in den Berichten **results. CSV** und **Manifest. XML** angezeigt werden, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen e-Mail-Eigenschaften, die im Algorithmus für die Deduplizierung verwendet werden. Stattdessen enthalten die Berichte die **Element Identitäts** Eigenschaft, die Elementen vom Exchange-Informationsspeicher zugewiesen ist. 
+Die folgenden Grafiken zeigen, wie doppelte Nachrichten im **Results.csv** angezeigt werden und **Manifest.xml** Berichte, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen e-Mail-Eigenschaften, die im Algorithmus für die Deduplizierung verwendet werden. Stattdessen enthalten die Berichte die **Element Identitäts** Eigenschaft, die Elementen vom Exchange-Informationsspeicher zugewiesen ist. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results. CSV-Bericht (in Excel angezeigt)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv Bericht (in Excel angezeigt)
   
-![Anzeigen von Informationen zu doppelten Elementen im Bericht "results. csv"](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Anzeigen von Informationen zu doppelten Elementen im Results.csv Bericht](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest. XML-Bericht (in Excel angezeigt)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml Bericht (in Excel angezeigt)
   
-![Anzeigen von Informationen zu doppelten Elementen im Bericht "Manifest. xml"](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Anzeigen von Informationen zu doppelten Elementen im Manifest.xml Bericht](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Darüber hinaus sind andere Eigenschaften aus doppelten Nachrichten in den Export Berichten enthalten. Dies umfasst das Postfach, in dem sich die doppelte Nachricht befindet, ob die Nachricht an eine Verteilergruppe gesendet wurde und ob die Nachricht CC 'd oder Bcc an einen anderen Benutzer gesendet wurde.
   

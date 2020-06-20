@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Advanced eDiscovery verwendet werden kann. '
-ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633410"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819125"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery ist die Ähnlichkeit mit Dokumenten die minimale Ähnlichkeits Stufe, die erforderlich ist, damit zwei Dokumente als nahe Duplikate betrachtet werden.
   
@@ -55,7 +56,7 @@ Es wird davon ausgegangen, dass ein anderes Dokument, x1, jetzt eingefügt wird.
   
 Nachdem Mengen zusammengeführt wurden, kann sich das Pivot-Dokument ändern, wenn einem Satz neue Dokumente hinzugefügt werden. 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

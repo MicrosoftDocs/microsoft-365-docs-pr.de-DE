@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie das integrierte Depot Verwaltungstool in Advanced eDiscovery verwenden, um Ihre Workflows zu koordinieren und relevante Datenquellen in einem Fall zu identifizieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034689"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818612"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
@@ -32,7 +32,7 @@ Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fä
 
 ![Registerkarte "Depotverwaltung"](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="make-sure-you-have-the-necessary-permissions"></a>Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen
 
 Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein. Auf diese Weise erhalten Sie die erforderlichen Berechtigungen zum Hinzufügen von Bewahrern zu einem Fall und zum Aufbewahren der Datenquellen für den Freiheitsentzug.
 

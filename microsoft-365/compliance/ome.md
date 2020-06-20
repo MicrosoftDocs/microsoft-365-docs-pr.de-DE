@@ -16,17 +16,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
-description: Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte E-Mail-Nachrichten von bzw. zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
-ms.openlocfilehash: f5ce3103a6fc8c9f025d657408814a954cf0a13e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen.
+ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717326"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818730"
 ---
 # <a name="message-encryption"></a>Nachrichtenverschlüsselung
 
-Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertrauliche Produktinformationen, Verkaufsberichte und -prognosen oder Patienten-, Kunden- und Mitarbeiterdaten per E-Mail ausgetauscht. Postfächer können daher zu Repositories großer Mengen potenziell vertraulicher Informationen werden, und Informationsverluste können eine ernstzunehmende Bedrohung für die Organisation darstellen.
+People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
 Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte E-Mail-Nachrichten von bzw. zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
 
@@ -86,9 +88,9 @@ Ausführliche Anleitungen zum Senden und Anzeigen von verschlüsselten Nachricht
 |:-----|:-----|
 |Lesen Sie diesen Artikel...|Wenn Sie...|
 |[Informationen zu geschützten Nachrichten in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|Endbenutzer, die mehr darüber erfahren möchten, wie verschlüsselte Nachrichten funktionieren und welche Optionen Ihnen zur Verfügung stehen.|
-|[Wie öffne ich eine geschützte Nachricht?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Ein Endbenutzer, der eine geschützte Nachricht lesen möchte, die Ihnen gesendet wurde. Dieser Artikel enthält Informationen zum Lesen von Nachrichten in mehreren Versionen von Outlook und aus unterschiedlichen e-Mail-Konten, einschließlich derer, die sich außerhalb von Microsoft 365 wie Gmail und Yahoo! befinden. Konten.|
-|[Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Ein Endbenutzer, der eine verschlüsselte Nachricht aus Outlook senden, anzeigen oder beantworten möchte. Selbst wenn Sie kein Mitglied einer Organisation sind, erhalten Sie weiterhin Benachrichtigungen über verschlüsselte Nachrichten, die Ihnen in Outlook gesendet werden. In diesem Artikel erhalten Sie Anleitungen zum Anzeigen und beantworten von verschlüsselten Nachrichten, die von Office 365 gesendet werden.|
-|[Senden einer digital signierten oder verschlüsselten Nachricht](https://support.microsoft.com/en-us/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|Ein Endbenutzer, der verschlüsselte Nachrichten mit Outlook für Mac senden, anzeigen oder beantworten möchte. In diesem Artikel wird auch die Verwendung von anderen Verschlüsselungsmethoden als OM wie S/MIME behandelt.|
+|[Wie öffne ich eine geschützte Nachricht?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Ein Endbenutzer, der eine geschützte Nachricht lesen möchte, die Ihnen gesendet wurde. Dieser Artikel enthält Informationen zum Lesen von Nachrichten in mehreren Versionen von Outlook und aus unterschiedlichen e-Mail-Konten, einschließlich dieser Konten außerhalb von Microsoft 365 wie Gmail und Yahoo!. Konten.|
+|[Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Ein Endbenutzer, der eine verschlüsselte Nachricht aus Outlook senden, anzeigen oder beantworten möchte. Selbst wenn Sie kein Mitglied einer Organisation sind, erhalten Sie weiterhin Benachrichtigungen über verschlüsselte Nachrichten, die Ihnen in Outlook gesendet werden. In diesem Artikel erhalten Sie Anleitungen zum Anzeigen und beantworten von verschlüsselten Nachrichten, die von Office 365 gesendet werden.|
+|[Senden einer digital signierten oder verschlüsselten Nachricht](https://support.microsoft.com/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|Ein Endbenutzer, der verschlüsselte Nachrichten mit Outlook für Mac senden, anzeigen oder beantworten möchte. In diesem Artikel wird auch die Verwendung von anderen Verschlüsselungsmethoden als OM wie S/MIME behandelt.|
 |[Anzeigen von verschlüsselten Nachrichten auf Ihrem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|Ein Endbenutzer, der eine mit Office 365 Nachrichtenverschlüsselung auf Ihrem Android-Gerät verschlüsselte Nachricht erhalten hat, können Sie die ﻿kostenlose OM Viewer-App verwenden, um die Nachricht anzuzeigen und eine verschlüsselte Antwort zu senden. In diesem Artikel wird erläutert, wie.|
-|[Verschlüsselte Nachrichten auf Ihrem iPhone oder iPad anzeigen](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|Ein Endbenutzer, der eine mit Office 365 Nachrichtenverschlüsselung auf Ihrem iPhone oder iPad verschlüsselte Nachricht erhalten hat, können Sie die ﻿kostenlose OM Viewer-App verwenden, um die Nachricht anzuzeigen und eine verschlüsselte Antwort zu senden. In diesem Artikel wird erläutert, wie.|
+|[Verschlüsselte Nachrichten auf Ihrem iPhone oder iPad anzeigen](https://support.microsoft.com/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|Ein Endbenutzer, der eine mit Office 365 Nachrichtenverschlüsselung auf Ihrem iPhone oder iPad verschlüsselte Nachricht erhalten hat, können Sie die ﻿kostenlose OM Viewer-App verwenden, um die Nachricht anzuzeigen und eine verschlüsselte Antwort zu senden. In diesem Artikel wird erläutert, wie.|
 ||

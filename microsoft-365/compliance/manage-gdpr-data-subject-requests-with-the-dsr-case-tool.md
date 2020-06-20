@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: Das dsgvo gibt EU-Bürgern (sogenannte Datensubjekte) bestimmte Rechte für Ihre personenbezogenen Daten. Diese Rechte umfassen das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen im elektronischen Format. Eine formelle Anforderung einer betroffenen Person, eine Aktion für Ihre personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
+description: Hier erfahren Sie, wie Sie Datensubjekt Anforderungen für die allgemeine Datenschutzverordnung (dsgvo) mit dem DSR Case-Tool verwalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035869"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815452"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security & Compliance Center
 
@@ -88,9 +88,9 @@ Eine Schritt-für-Schritt-Anleitung finden Sie unter [Zuweisen von eDiscovery-Be
 
 Der nächste Schritt besteht darin, einen DSR-Fall zu erstellen. Wenn Sie eine Anfrage erstellen, können Sie die integrierte Suche starten, oder Sie können den Fall erstellen, ohne die Suche zu starten. Mit dem folgenden Verfahren werden Sie aufgefordert, den Fall zu erstellen, ohne die Suche zu starten und anschließend anzuzeigen, wie der Anfrage Mitglieder hinzugefügt werden.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
+1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an. 
     
-2. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken ![Sie dann](../media/ITPro-EAC-AddIcon.gif) auf Symbol hinzufügen **neuer DSR-Fall**.
+2. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken Sie dann auf ![ Symbol hinzufügen ](../media/ITPro-EAC-AddIcon.gif) **neuer DSR-Fall**.
     
 3. Geben Sie auf der **neuen DSR-Fall** Flyout-Seite den Fall einen Namen ein, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **weiter**. Der Name des Falls muss in Ihrer Organisation eindeutig sein.
     
@@ -183,7 +183,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
   - Microsoft Edge
     
-    Oder:
+    Oder
     
   - Microsoft Internet Explorer 10 und höhere Versionen
     
@@ -196,7 +196,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
 2. Klicken Sie oben auf der Seite auf die Registerkarte **Suche** , und klicken Sie dann auf das Kontrollkästchen neben der integrierten Suche, die beim Erstellen des DSR-Falls erstellt wurde. Oder klicken Sie auf eine andere Suche, um Daten aus dieser Suche zu exportieren. 
     
-3. Klicken Sie ![auf der Seite Flyout-Suche auf Suchergebnisse](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren, und**wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
+3. Klicken Sie auf der Seite Flyout-Suche auf ![ Suchergebnisse exportieren ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, und wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
     
 4. Wählen Sie auf der Seite **Ergebnisse exportieren** die folgenden empfohlenen Optionen für DSR-Exportanforderungen aus. 
     
@@ -206,7 +206,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
     b. Wählen Sie unter **Exchange-Inhalt exportieren als**die dritte Option aus, **eine PST-Datei, die alle Nachrichten in einem einzelnen Ordner enthält**. Da einige der Ergebnisse möglicherweise für Elemente gelten, die im Postfach eines anderen Benutzers entstanden sind, wird mit dieser Option nur das Element in einem einzelnen Ordner aufgelistet, ohne das tatsächliche Postfach anzugeben, und es ist die beste Option, wenn Sie die Ergebnisse wie im nächsten Element empfohlen deduplizieren. Mit dieser Option können die Elemente des Datensubjekts auch in chronologischer Reihenfolge überprüft werden (Elemente werden nach dem gesendeten Datum sortiert), ohne dass Sie durch die ursprüngliche Postfachordnerstruktur für jedes Element navigieren müssen.
     
-    c. Wählen Sie die Option **Deduplizierung aktivieren** aus, um doppelte e-Mail-Nachrichten auszuschließen. Diese Option wird empfohlen, da die integrierte Suche alle Postfächer in Ihrer Organisation durchsucht. Wenn also mehrere Kopien derselben Nachricht in den durchsuchten Postfächern gefunden werden, bedeutet diese Option, dass nur eine Kopie einer Nachricht exportiert wird. Mit dieser Option werden Nachrichten zusammen in einer PST-Datei in einem einzigen Ordner exportiert, was zu einer optimalen Benutzererfahrung für DSR-Exportanforderungen führt. Der Bericht results. CSV Export listet alle Orte auf, an denen doppelte Nachrichten gefunden wurden.
+    c. Wählen Sie die Option **Deduplizierung aktivieren** aus, um doppelte e-Mail-Nachrichten auszuschließen. Diese Option wird empfohlen, da die integrierte Suche alle Postfächer in Ihrer Organisation durchsucht. Wenn also mehrere Kopien derselben Nachricht in den durchsuchten Postfächern gefunden werden, bedeutet diese Option, dass nur eine Kopie einer Nachricht exportiert wird. Mit dieser Option werden Nachrichten zusammen in einer PST-Datei in einem einzigen Ordner exportiert, was zu einer optimalen Benutzererfahrung für DSR-Exportanforderungen führt. Im Bericht Results.csv Export werden alle Speicherorte aufgelistet, an denen doppelte Nachrichten gefunden wurden.
     
     Optional können Sie die Option **Versionen für SharePoint-Dokumente einschließen** auswählen, um alle Versionen von SharePoint-und OneDrive-Dokumenten zu exportieren. Dies erfordert, dass die Versionsverwaltung für Dokumentbibliotheken aktiviert ist. Mit dieser Option können Sie sicherstellen, dass alle relevanten Daten exportiert werden.
     
@@ -220,7 +220,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
 8. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 11, um die Suchergebnisse herunterzuladen.
     
-9. Klicken ![Sie oben auf der](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
+9. Klicken Sie ![ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) oben auf der Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
     
 10. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
     
@@ -243,11 +243,11 @@ Nachdem Sie die integrierte Suche ausgeführt haben, können Sie Sie überarbeit
   
 Im folgenden finden Sie einige Beispiele für die Bedingungen, die Sie der integrierten Suchabfrage eines DSR-Falls hinzufügen können. Der Name der tatsächlichen Eigenschaft, die in einer Suchabfrage verwendet wird, wird in Klammern angezeigt.
   
-- **Dateityp ( `filetype`)** – gibt die Erweiterung eines Dokuments oder einer Datei an. Verwenden Sie diese Bedingung, um nach Dokumenten und Dateien zu suchen, die von bestimmten Office-Anwendungen wie Word, Excel und OneNote erstellt wurden. 
+- **Dateityp ( `filetype` )** – gibt die Erweiterung eines Dokuments oder einer Datei an. Verwenden Sie diese Bedingung, um nach Dokumenten und Dateien zu suchen, die von bestimmten Office-Anwendungen wie Word, Excel und OneNote erstellt wurden. 
     
-- **Message Type ( `kind`)** – gibt den Typ des zu suchenden e-Mail-Elements an. Beispielsweise können Sie die Syntax `kind:email OR kind:im` verwenden, um nur e-Mail-Nachrichten und Skype for Business-Unterhaltungen oder 1:1-Chats in Microsoft Teams zurückzugeben. 
+- **Message Type ( `kind` )** – gibt den Typ des zu suchenden e-Mail-Elements an. Beispielsweise können Sie die Syntax verwenden `kind:email OR kind:im` , um nur e-Mail-Nachrichten und Skype for Business-Unterhaltungen oder 1:1-Chats in Microsoft Teams zurückzugeben. 
     
-- **Compliance-Tag`compliancetag`()** – gibt eine Bezeichnung an, die einer e-Mail-Nachricht oder einem Dokument zugewiesen ist. Diese Bedingung gibt Elemente zurück, die mit einer bestimmten Bezeichnung klassifiziert sind. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Dies ist eine nützliche Bedingung für DSR-Untersuchungen, da Ihre Organisation möglicherweise Bezeichnungen verwendet, um Inhalte im Zusammenhang mit dem Datenschutz zu klassifizieren oder personenbezogene Daten oder vertrauliche Informationen enthält. Verwenden Sie für den Wert dieser Bedingung den vollständigen Bezeichnungsnamen oder den ersten Teil des Bezeichnungsnamens mit einem Platzhalter. Weitere Informationen finden Sie unter [Overview of Labels in Office 365](labels.md).
+- **Compliance-Tag ( `compliancetag` )** – gibt eine Bezeichnung an, die einer e-Mail-Nachricht oder einem Dokument zugewiesen ist. Diese Bedingung gibt Elemente zurück, die mit einer bestimmten Bezeichnung klassifiziert sind. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Dies ist eine nützliche Bedingung für DSR-Untersuchungen, da Ihre Organisation möglicherweise Bezeichnungen verwendet, um Inhalte im Zusammenhang mit dem Datenschutz zu klassifizieren oder personenbezogene Daten oder vertrauliche Informationen enthält. Verwenden Sie für den Wert dieser Bedingung den vollständigen Bezeichnungsnamen oder den ersten Teil des Bezeichnungsnamens mit einem Platzhalter. Weitere Informationen finden Sie unter [Overview of Labels in Office 365](labels.md).
     
 Eine Liste und eine Beschreibung aller im DSR-Case-Tool verfügbaren Bedingungen finden Sie unter [Suchbedingungen](keyword-queries-and-search-conditions.md#search-conditions) im Artikel "Stichwortabfragen und Suchbedingungen für die Inhaltssuche". 
   
@@ -305,7 +305,7 @@ Wenn Sie Daten aus dem Office-Roamingdienst exportieren, werden die Daten in ein
   
 1. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken Sie dann neben dem DSR-Fall für die betroffene Person, für die Sie Verwendungsdaten exportieren möchten, auf **Öffnen** . 
     
-2. Klicken Sie oben auf der Seite auf die Registerkarte **Suche** , und klicken ![Sie dann](../media/ITPro-EAC-AddIcon.gif) auf Symbol **gesteuerte Suche**hinzufügen.
+2. Klicken Sie oben auf der Seite auf die Registerkarte **Suche** , und klicken Sie dann auf ![ Symbol ](../media/ITPro-EAC-AddIcon.gif) **gesteuerte Suche**hinzufügen.
     
 3. Klicken Sie auf der Seite **Name Ihrer Suche** auf **Abbrechen** . 
     
@@ -327,9 +327,9 @@ Wenn Sie Daten aus dem Office-Roamingdienst exportieren, werden die Daten in ein
     
  **So exportieren Sie Office-Roaming-Dienst Daten:**
   
-1. Wenn die im vorherigen Schritt erstellte Suche abgeschlossen ist, klicken Sie oben auf der Seite auf die Registerkarte **Suche** , und klicken Sie dann auf das Kontrollkästchen neben der Suche. Möglicherweise müssen Sie ![auf](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Aktualisierung aktualisieren klicken, um die** Suche anzuzeigen. 
+1. Wenn die im vorherigen Schritt erstellte Suche abgeschlossen ist, klicken Sie oben auf der Seite auf die Registerkarte **Suche** , und klicken Sie dann auf das Kontrollkästchen neben der Suche. Möglicherweise müssen Sie auf Aktualisierung aktualisieren klicken ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Refresh** , um die Suche anzuzeigen. 
     
-2. Klicken Sie ![auf der Seite Flyout-Suche auf Suchergebnisse](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **exportieren, und**wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
+2. Klicken Sie auf der Seite Flyout-Suche auf ![ Suchergebnisse exportieren ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, und wählen Sie dann **Ergebnisse exportieren** aus der Dropdownliste aus. 
     
 3. Wählen Sie auf der Seite **Ergebnisse exportieren** die empfohlenen Optionen zum Exportieren von Verwendungsdaten aus. 
     
@@ -351,7 +351,7 @@ Wenn Sie Daten aus dem Office-Roamingdienst exportieren, werden die Daten in ein
     
 7. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 10, um die Suchergebnisse herunterzuladen.
     
-8. Klicken ![Sie oben auf der](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
+8. Klicken Sie ![ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) oben auf der Seite Flyout exportieren auf Suchergebnisse-Symbol **Download Ergebnisse** exportieren. 
     
 9. Klicken Sie im Popupfenster unten auf der Seite auf **Öffnen** , um das **eDiscovery-Export Tool**zu öffnen. Das **eDiscovery-Export Tool** wird installiert, wenn Sie die Suchergebnisse zum ersten Mal herunterladen. 
     

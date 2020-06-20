@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie das nicht Office 365 Inhalts Importfeature verwenden können, um nicht Office 365 Dokumente in einer Datenermittlung in Beweise hochzuladen.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034413"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815482"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Laden von nicht von Microsoft 365 Daten in Beweise
 
 Nicht alle Dokumente, die Sie möglicherweise in einer Datenuntersuchung analysieren müssen, befinden sich in Microsoft 365. Mit der nicht-Microsoft 365-Funktion zum Importieren von Inhalten können Sie Dokumente, die nicht in Microsoft 365 Leben, in Beweise hochladen, damit Sie in einer Datenuntersuchung analysiert werden können.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="requirements-to-upload-non-office-365-content"></a>Anforderungen zum Hochladen nicht Office 365der Inhalte
 
 Wenn Sie das Feature "nicht-Microsoft 365 hochladen" wie in diesem Verfahren beschrieben verwenden, benötigen Sie Folgendes:
 
@@ -42,7 +44,7 @@ Wenn Sie das Feature "nicht-Microsoft 365 hochladen" wie in diesem Verfahren bes
 
 - Ein Konto, bei dem es sich entweder um einen eDiscovery-Manager oder eDiscovery-Administrator handelt Microsoft Azure Speicher Tools, die auf einem Computer installiert sind, der Zugriff auf die Struktur eines nicht von Microsoft 365 Inhaltsordner hat.
 
-- Installieren Sie AzCopy, was Sie von hier aus tun können:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- Installieren Sie AzCopy, was Sie [unter Erste Schritte mit AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)tun können.
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>Hochladen von nicht-Microsoft 365-Inhalten in eine Datenuntersuchung
 

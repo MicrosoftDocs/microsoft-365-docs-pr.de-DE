@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: In diesem Artikel erfahren Sie, wie Sie die Windows-Registrierung so konfigurieren, dass der Datendurchsatz beim Herunterladen von Suchergebnissen und Such Daten aus dem Security & Compliance Center und Advanced eDiscovery erhöht wird.
-ms.openlocfilehash: a5e08f2fe7d8840cfe8f176080c90b8b40d16af6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, wie Sie die Windows-Registrierung so konfigurieren, dass der Datendurchsatz beim Herunterladen von Suchergebnissen und Daten erhöht wird.
+ms.openlocfilehash: a68a616d2dced4a3dd70580e1b258c95a0b5e39e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943354"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817674"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen
 
@@ -53,16 +55,16 @@ Führen Sie das folgende Verfahren auf dem Computer aus, den Sie zum Herunterlad
     
     Der Registrierungs-Editor zeigt eine Meldung an, die besagt, dass die Einstellung der Registrierung erfolgreich hinzugefügt wurde.
     
-6. Sie können die Schritte 2-5 wiederholen, um den Wert `DownloadConcurrency` für die Registrierungseinstellung zu ändern. 
+6. Sie können die Schritte 2-5 wiederholen, um den Wert für die `DownloadConcurrency` Registrierungseinstellung zu ändern. 
     
     > [!IMPORTANT]
-    > Nachdem Sie die `DownloadConcurrency` Registrierungseinstellung erstellt oder geändert haben, müssen Sie einen neuen Exportauftrag erstellen oder einen vorhandenen Exportauftrag für die Suchergebnisse oder Daten neu starten, die Sie herunterladen möchten. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
+    > Nachdem Sie die Registrierungseinstellung erstellt oder geändert `DownloadConcurrency` haben, müssen Sie einen neuen Exportauftrag erstellen oder einen vorhandenen Exportauftrag für die Suchergebnisse oder Daten neu starten, die Sie herunterladen möchten. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- Ein neuer Registrierungsschlüssel wird erstellt, wenn Sie die reg-Datei zum ersten Mal ausführen, die Sie in diesem Verfahren erstellt haben. Anschließend wird `DownloadConcurrency` die Registrierungseinstellung jedes Mal bearbeitet, wenn Sie die reg-Bearbeitungs Datei ändern und erneut ausführen. 
+- Ein neuer Registrierungsschlüssel wird erstellt, wenn Sie die reg-Datei zum ersten Mal ausführen, die Sie in diesem Verfahren erstellt haben. Anschließend `DownloadConcurrency` wird die Registrierungseinstellung jedes Mal bearbeitet, wenn Sie die reg-Bearbeitungs Datei ändern und erneut ausführen. 
     
-- Das eDiscovery-Export Tool verwendet das [Azure AzCopy-Dienstprogramm](https://go.microsoft.com/fwlink/?linkid=849949) zum Herunterladen von Such Daten aus dem Security & Compliance Center oder von Advanced eDiscovery. Das konfigurieren `DownloadConcurrency` der Registrierungseinstellung ähnelt dem Verwenden des **/NC** -Parameters bei der Ausführung des AzCopy-Dienstprogramms. Daher hätte die Registrierungseinstellung `"DownloadConcurrency=24"` von denselben Effekt wie die Verwendung des Parameters value `/NC:24` von mit dem AzCopy-Dienstprogramm. 
+- Das eDiscovery-Export Tool verwendet das [Azure AzCopy-Dienstprogramm](https://go.microsoft.com/fwlink/?linkid=849949) zum Herunterladen von Such Daten aus dem Security & Compliance Center oder von Advanced eDiscovery. Das Konfigurieren der `DownloadConcurrency` Registrierungseinstellung ähnelt dem Verwenden des **/NC** -Parameters bei der Ausführung des AzCopy-Dienstprogramms. Daher hätte die Registrierungseinstellung von `"DownloadConcurrency=24"` denselben Effekt wie die Verwendung des Parameters value von `/NC:24` mit dem AzCopy-Dienstprogramm. 
     
 - Wenn Sie einen Export Download beenden, der derzeit ausgeführt wird, und ihn dann neu starten (indem Sie versuchen, die Suchergebnisse erneut herunterzuladen), versucht das eDiscovery-Export Tool, den gleichen Download fortzusetzen. Wenn Sie also einen Download starten, ihn beenden und dann die `DownloadConcurrency` Registrierungseinstellung ändern, schlägt der Download möglicherweise fehl, wenn Sie ihn neu starten (indem Sie auf **exportierte Ergebnisse herunterladen**klicken). Dies liegt daran, dass das Export Tool versucht, den vorherigen Download mithilfe von Einstellungen fortzusetzen, die nicht gültig sind, da Sie die Registrierungseinstellung geändert haben.
     

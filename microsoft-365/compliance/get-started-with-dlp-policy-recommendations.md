@@ -12,15 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-search.appverid:
-- MET150
-description: Diese Erkenntnis gesteuerte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Microsoft 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in ihrer DLP-Richtlinien Abdeckung besteht. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten von vertraulichen Informationen enthalten, die jedoch nicht durch eine DLP-Richtlinie geschützt sind.
-ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie die empfohlene DLP-Richtlinie (Data Loss Prevention) für Ihre Organisation erstellen und bearbeiten.
+ms.openlocfilehash: 9588eabe5dbe2b1e60eaeb6a45eb95cc327383aa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943374"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817634"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
 
@@ -38,7 +38,7 @@ Zum Schutz der vertraulichen Informationen wird diese DLP-Richtlinie wie folgt u
   
 - Erkennt, wenn Inhalte in Exchange, SharePoint und OneDrive, die einen der ungeschützten Typen vertraulicher Informationen enthalten, für Personen außerhalb Ihrer Organisation freigegeben werden.
     
-- Generiert detaillierte Aktivitätsberichte, sodass Sie nachverfolgen können, wie wer die Inhalte für Personen außerhalb Ihrer Organisation freigegeben hat. Sie können die [DLP-Berichte](view-the-dlp-reports.md) und [Überwachungsprotokolldaten](search-the-audit-log-in-security-and-compliance.md) (Where **Activity** = **DLP**) verwenden, um diese Informationen anzuzeigen.
+- Generiert detaillierte Aktivitätsberichte, sodass Sie nachverfolgen können, wie wer die Inhalte für Personen außerhalb Ihrer Organisation freigegeben hat. Sie können die [DLP-Berichte](view-the-dlp-reports.md) und [Überwachungsprotokolldaten](search-the-audit-log-in-security-and-compliance.md) (Where **Activity**  =  **DLP**) verwenden, um diese Informationen anzuzeigen.
     
 Sie können auch die DLP-Richtlinie festlegen:
   

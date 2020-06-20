@@ -17,17 +17,19 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem u.s.-Krankenversicherungsgesetz (HIPAA), dem US Gramm-Leach-Bliley Act (GLBA) oder dem US-Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
-ms.openlocfilehash: 622a613fd0f43a7ad23c25ab52460181a8931e7f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, was die DLP-Richtlinienvorlagen (Data Loss Prevention) im Office 365 Security & Compliance Center beinhalten.
+ms.openlocfilehash: 80f1d4f93ecf7c3cb327633b1626ddb4ccbcbaa9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626271"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819265"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Inhalt der DLP-Richtlinienvorlagen
 
-Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem u.s.-Krankenversicherungsgesetz (HIPAA), dem US Gramm-Leach-Bliley Act (GLBA) oder dem US-Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center umfasst vorgefertigte Richtlinienvorlagen, die häufige Compliance-Anforderungen erfüllen, beispielsweise das Schützen vertraulicher Informationen, die dem u.s.-Krankenversicherungsgesetz (HIPAA), dem US Gramm-Leach-Bliley Act (GLBA) oder dem US-Patriot Act unterliegen. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, die Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. In diesem Thema werden nicht alle Details zur Konfiguration der einzelnen Richtlinienvorlagen berücksichtigt. Stattdessen stellt das Thema genügend Informationen bereit, damit Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen entsprechend Ihren spezifischen Anforderungen anpassen können.
   
 ## <a name="australia-financial-data"></a>Finanzdaten – Australien
 
@@ -218,47 +220,47 @@ Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security 
 |PII – Saudi-Arabien: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Saudi-Arabische Ausweisnummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
 |PII – Saudi-Arabien: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Saudi-Arabische Ausweisnummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-access-to-medical-reports-act"></a>Access to Medical Reports Act – Vereinigtes Königreich
+## <a name="uk-access-to-medical-reports-act"></a>U.K. Access to Medical Reports Act
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britannien National Health Service Number-min count 1, Max count 9  <br/>  Britannien Sozialversicherungsnummer (Nino) – min. Anzahl 1, max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britannien National Health Service Number-min count 10, Max count any  <br/>  Britannien National Insurance Number (Nino) – min count 10, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. AMRA: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britannien National Health Service Number-min count 1, Max count 9  <br/>  Britannien Sozialversicherungsnummer (Nino) – min. Anzahl 1, max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. AMRA: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britannien National Health Service Number-min count 10, Max count any  <br/>  Britannien National Insurance Number (Nino) – min count 10, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-data-protection-act"></a>Datenschutzgesetz – Vereinigtes Königreich
+## <a name="uk-data-protection-act"></a>U.K. Data Protection Act
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  USA/U.K. Passnummer – min. Count 1, max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  USA/U.K. Passnummer – min count 10, Max count any  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. DPA: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  USA/U.K. Passnummer – min. Count 1, max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. DPA: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  USA/U.K. Passnummer – min count 10, Max count any  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-financial-data"></a>Finanzdaten – Vereinigtes Königreich
+## <a name="uk-financial-data"></a>U.K. Financial Data
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|Finanzdaten – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Kreditkartennummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  EU Debit Card-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|Finanzdaten – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Kreditkartennummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  EU Debit Card-Nummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. Financial: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Kreditkartennummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  EU Debit Card-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. Financial: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Kreditkartennummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  EU Debit Card-Nummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-personal-information-online-code-of-practice-piocp"></a>Online-Verhaltenskodex für persönliche Informationen – U.K.
+## <a name="uk-personal-information-online-code-of-practice-piocp"></a>U.K. Personal Information Online Code of Practice (PIOCP)
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|PIOCP – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  Britische National Health Service-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|PIOCP – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Britische National Health Service-Nummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. PIOCP: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.K. National Health Service Number — Min count 1, Max count 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. PIOCP: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.K. National Health Service Number — Min count 10, Max count any  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-personally-identifiable-information-pii-data"></a>Vereinigtes Königreich: Personenbezogene Informationen (PII)
+## <a name="uk-personally-identifiable-information-pii-data"></a>U.K. Personally Identifiable Information (PII) Data
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|PII – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|PII – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. PII: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. PII: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
-## <a name="uk-privacy-and-electronic-communications-regulations"></a>Richtlinien für Datenschutz und elektronische Kommunikation – UK
+## <a name="uk-privacy-and-electronic-communications-regulations"></a>U.K. Privacy and Electronic Communications Regulations
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|PECR – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|PECR – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|U.K. PECR: Scan content shared outside - low count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|U.K. PECR: Scan content shared outside - high count  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
 ## <a name="us-federal-trade-commission-ftc-consumer-rules"></a>Verbraucherbestimmungen der Federal Trade Commission (FTC) – USA
 
@@ -298,8 +300,8 @@ Die Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Security 
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|USA – PII: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  US-Steueridentifikationsnummer (ITIN) – Min. Anzahl 1, Max. Anzahl 9  <br/>  US-Sozialversicherungsnummer (SSN) – Min. Anzahl 1, Max. Anzahl 9  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|USA – PII: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  US-Steueridentifikationsnummer (ITIN) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  US-Sozialversicherungsnummer (SSN) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|USA – PII: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  US-Steueridentifikationsnummer (ITIN) – Min. Anzahl 1, Max. Anzahl 9  <br/>  US-Sozialversicherungsnummer (SSN) – Min. Anzahl 1, Max. Anzahl 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|USA – PII: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  US-Steueridentifikationsnummer (ITIN) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  US-Sozialversicherungsnummer (SSN) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
 ## <a name="us-state-breach-notification-laws"></a>USA: State Breach Notification Laws
 

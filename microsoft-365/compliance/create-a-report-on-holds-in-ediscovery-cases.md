@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Compliance Center in Office 365 oder Microsoft 365 zugeordnet sind.
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: Hier erfahren Sie, wie Sie einen Bericht mit Informationen zu allen Haltebereichen generieren, die eDiscovery-Fällen zugeordnet sind.
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208377"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818034"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen
   
@@ -31,13 +33,13 @@ Mit dem Skript in diesem Artikel können eDiscovery-Administratoren und eDiscove
 
 Eine ausführliche Beschreibung der im Bericht enthaltenen Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) .
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="admin-requirements-and-script-information"></a>Administrator Anforderungen und Skript Informationen
 
 - Wenn Sie einen Bericht über alle eDiscovery-Fälle in Ihrer Organisation generieren möchten, müssen Sie ein eDiscovery-Administrator in Ihrer Organisation sein. Wenn Sie eDiscovery-Manager sind, enthält der Bericht nur Informationen zu den Fällen, auf die Sie zugreifen können. Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
 - Das Skript in diesem Artikel enthält eine minimale Fehlerbehandlung. Der Hauptzweck besteht darin, Schnellbericht über die Haltestatus zu erstellen, die den eDiscovery-Fällen in Ihrer Organisation zugeordnet sind.
     
-- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit der Security & Compliance Center PowerShell
 
@@ -49,7 +51,7 @@ Wenn Ihr Microsoft 365-Konto die mehrstufige Authentifizierung (MFA) oder Verbun
 
 Nachdem Sie sich mit Security & Compliance Center PowerShell verbunden haben, besteht der nächste Schritt darin, das Skript zu erstellen und auszuführen, das Informationen über die eDiscovery-Fälle in Ihrer Organisation sammelt. 
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: CaseHoldsReport. ps1. 
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: CaseHoldsReport.ps1. 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     Addtionly, erstellt das Skript auch einen Bericht mit einer Liste von Fällen, die keine Haltestatus haben. Der Datei Name für diesen Bericht lautet `CaseswithNoHolds<DateTimeStamp>.csv` .
     
-    Hier sehen Sie ein Beispiel für das Ausführen des CaseHoldsReport. ps1-Skripts. 
+    Hier sehen Sie ein Beispiel für das Ausführen des CaseHoldsReport.ps1 Skripts. 
     
-    ![Die Ausgabe nach dem Ausführen des CaseHoldsReport. ps1-Skripts](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![Die Ausgabe nach dem Ausführen des CaseHoldsReport.ps1 Skripts](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Weitere Informationen
 

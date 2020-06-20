@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Der Administrator kann erfahren, wie Sie die Freigabe Überwachung im Überwachungsprotokoll von Microsoft 365 verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626381"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819295"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Verwenden der Freigabeüberwachung im Überwachungsprotokoll
 
@@ -97,7 +98,7 @@ Der erste Schritt besteht darin, das Überwachungsprotokoll nach Freigabe Ereign
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Suchen**   > **Überwachungsprotokollsuche**.
     
@@ -111,11 +112,11 @@ Der erste Schritt besteht darin, das Überwachungsprotokoll nach Freigabe Ereign
     
 6. Klicken Sie auf **Suchen** , um die Suche auszuführen. 
     
-7. Wenn die Suche abgeschlossen ist und die Ergebnisse angezeigt werden, klicken Sie auf **Ergebnisse** \> exportieren **alle Ergebnisse herunterladen**.
+7. Wenn die Suche abgeschlossen ist und die Ergebnisse angezeigt werden, klicken Sie auf **Ergebnisse exportieren** \> **alle Ergebnisse herunterladen**.
     
     Nachdem Sie die Option Exportieren ausgewählt haben, werden Sie im unteren Bereich des Fensters aufgefordert, die CSV-Datei zu öffnen oder zu speichern.
     
-8. Klicken Sie auf Save **As** **Speichern** \> und speichern Sie die CSV-Datei in einem Ordner auf Ihrem lokalen Computer. 
+8. Klicken **Save** Sie auf Save \> **As** speichern und speichern Sie die CSV-Datei in einem Ordner auf Ihrem lokalen Computer. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Schritt 2: Formatieren des exportierten Überwachungsprotokolls mithilfe des PowerQuery-Editors
 
@@ -152,4 +153,4 @@ Nachdem Sie die Anweisungen im vorherigen Schritt zum Vorbereiten der CSV-Datei 
     In Excel werden nun die Zeilen für Freigabe Ereignisse und die Position des Zielbenutzers außerhalb Ihrer Organisation angezeigt, da externe Benutzer durch den Wert **TargetUserOrGroupType: Guest**identifiziert werden. 
   
 > [!TIP]
-> Für die angezeigten Überwachungsdatensätze identifiziert die **objectID** -Spalte die Ressource, die für den Zielbenutzer freigegeben wurde. zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+> Für die angezeigten Überwachungsdatensätze identifiziert die **objectID** -Spalte die Ressource, die für den Zielbenutzer freigegeben wurde. zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` .

@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Die Verarbeitung in Advanced eDiscovery umfasst die erneute Indizierung von Depotdaten, die Erweiterung eingebetteter Dokumente und Anlagen sowie OCR. Die Verarbeitung umfasst auch die Korrektur von Indizierungs Fehlern.
-ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Hier finden Sie eine Übersicht über die Verarbeitung verschiedener Datenarten im erweiterten eDiscovery-Tool in Office 365.
+ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632220"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818784"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeiten mit Verarbeitungsfehlern in Advanced eDiscovery
 

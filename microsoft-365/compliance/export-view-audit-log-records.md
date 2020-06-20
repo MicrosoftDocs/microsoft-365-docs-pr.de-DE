@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Nachdem Sie die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei exportiert und heruntergeladen haben, können Sie das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um die einzelnen Eigenschaften im JSON-Objekt in der Auditdata-Spalte in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen. Sie können auch PowerShell zum Durchsuchen und Exportieren von Überwachungsprotokolldaten Sätzen verwenden.
-ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom: seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-Überwachungsprotokolleinträge exportieren, konfigurieren und anzeigen können.
+ms.openlocfilehash: 833d42ee37722092bddf14d0ef3418fac1ab03bb
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352385"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817744"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 
@@ -116,7 +117,7 @@ Die Suchergebnisse werden in eine CSV-Datei mit dem Namen *PowerShellAuditlog* e
 
 Sie können auch den Namen oder den enum-Wert für den Record-Typ als Wert für den *RecordType* -Parameter verwenden. Eine Liste der Namen von Datensatztypen und der zugehörigen Enumerationswerte finden Sie in der *AuditLogRecordType* -Tabelle in [Office 365 API-Schema der Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-Sie können nur einen einzelnen Wert für den *RecordType* -Parameter einschließen. Um nach Überwachungsdatensätzen für andere Datensatztypen zu suchen, müssen Sie die beiden vorherigen Befehle erneut ausführen, um einen anderen Datensatztyp anzugeben und diese Ergebnisse an die ursprüngliche CSV-Datei anzufügen. Sie führen beispielsweise die folgenden beiden Befehle aus, um SharePoint-Dateiaktivitäten aus dem gleichen Datumsbereich zur PowerShellAuditlog. CSV-Datei hinzuzufügen.
+Sie können nur einen einzelnen Wert für den *RecordType* -Parameter einschließen. Um nach Überwachungsdatensätzen für andere Datensatztypen zu suchen, müssen Sie die beiden vorherigen Befehle erneut ausführen, um einen anderen Datensatztyp anzugeben und diese Ergebnisse an die ursprüngliche CSV-Datei anzufügen. Sie führen beispielsweise die folgenden beiden Befehle aus, um SharePoint-Dateiaktivitäten aus dem gleichen Datumsbereich zur PowerShellAuditlog.csv Datei hinzuzufügen.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation

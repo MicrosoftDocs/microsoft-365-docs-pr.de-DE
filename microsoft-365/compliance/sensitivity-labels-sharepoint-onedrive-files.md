@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724793"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780718"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -184,7 +184,7 @@ Im Vergleich dazu bieten Sensitivitäts Beschriftungen zusätzlich zur Verschlü
 
 Sie können jedoch beide Protection-Lösungen zusammen verwenden, und das Verhalten lautet wie folgt: 
 
-- Wenn Sie eine Datei mit einer Vertraulichkeits Bezeichnung hochladen, die die Verschlüsselung zutrifft, wird die Verschlüsselung für diese Dateien nicht entfernt, und die gemeinsame Dokumenterstellung, eDiscovery, DLP und die Suche werden nicht unterstützt.
+- Wenn Sie eine Datei mit einer Vertraulichkeits Bezeichnung hochladen, die die Verschlüsselung anwendet, kann SharePoint diese Datei nicht verarbeiten, sodass die gemeinsame Erstellung, eDiscovery, DLP und Suche für diese Datei nicht funktionieren.
 
 - Wenn Sie eine Datei mit Office im Internet bezeichnen, werden alle Verschlüsselungseinstellungen von der Bezeichnung erzwungen. Für diese Dateien werden die gemeinsame Dokumenterstellung, eDiscovery, DLP und die Suche unterstützt.
 

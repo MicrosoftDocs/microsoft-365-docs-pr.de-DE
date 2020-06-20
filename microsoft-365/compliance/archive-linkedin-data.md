@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Richten Sie einen Connector zum Importieren von LinkedIn-Daten nach Microsoft 365 ein, damit Sie Compliance-Tools wie rechtliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können.
-ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.custom: seo-marvel-apr2020
+description: Erfahren Sie, wie Administratoren Setup & einen systemeigenen Connector verwenden können, um Daten von einer LinkedIn Unternehmensseite nach Microsoft 365 zu importieren.
+ms.openlocfilehash: c7801dc7ab00f1193b05a50ae10ee67d78e11065
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043346"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818444"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Einrichten eines Connectors zum Archivieren von LinkedIn-Daten
 
@@ -29,7 +28,7 @@ Verwenden Sie einen Connector im Microsoft 365 Compliance Center, um Daten aus L
 
 Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert wurden, können Sie Microsoft 365-Kompatibilitätsfeatures wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf LinkedIn-Daten anwenden. Sie können beispielsweise mithilfe der Inhaltssuche nach diesen Elementen suchen oder das Speicher Postfach einer Depotbank in einem erweiterten eDiscovery-Fall zuordnen. Das Erstellen eines Connectors zum Importieren und Archivieren von LinkedIn Daten in Microsoft 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
-## <a name="before-you--begin"></a>Bevor Sie beginnen
+## <a name="give-consent-assign-roles-and-verify-credentials"></a>Erteilen der Zustimmung, Zuweisen von Rollen und Überprüfen der Anmeldeinformationen
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an.
 
@@ -39,7 +38,7 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
 ## <a name="create-a-linkedin-connector"></a>Erstellen eines LinkedIn Connectors
 
-1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie dann auf **Daten Konnektoren** > **LinkedIn Unternehmensseiten**.
+1. Wechseln Sie zu, <https://compliance.microsoft.com> und klicken Sie dann auf **Daten Konnektoren**  >  **LinkedIn Unternehmensseiten**.
 
 2. Klicken Sie auf der Produktseite des **LinkedIn Unternehmensseiten** auf **Connector hinzufügen**.
 

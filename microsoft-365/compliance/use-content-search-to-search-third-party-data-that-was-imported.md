@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Microsoft 365 von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen oder eine Abfrage zum Suchen nach bestimmten Drittanbieter-Datentypen zu erstellen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Drittanbieter-Datentypen zu durchsuchen, die Sie in Microsoft 365 importieren können.
-ms.openlocfilehash: c494f4bbb13919f9a980f227093d291c148e9afe
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die von einer Drittanbieter-Datenquelle in Postfächer in Microsoft 365 importiert wurden, indem Sie Abfragen erstellen.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 916a780bccc3f24d509991e8ac72f31b374757d4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566669"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819095"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die von einem benutzerdefinierten Partner Connector importiert wurden
 

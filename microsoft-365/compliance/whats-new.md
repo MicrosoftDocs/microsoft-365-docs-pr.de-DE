@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Wir fügen kontinuierlich neue Funktionen zum Microsoft 365 Compliance Center hinzu, beheben Probleme, von denen wir erfahren, und nehmen basierend auf Ihrem Feedback Änderungen vor. Finden Sie heraus, was wir diesen Monat vorhaben.
+description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418899"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817060"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -192,13 +192,13 @@ Wenn Sie die Verschlüsselung für eine Vertraulichkeitsbezeichnung konfiguriere
 - Wenn die Bezeichnung in **Outlook-E-Mail** angewandt wird, können die Benutzer Einschränkungen durchsetzen, die der Option „Nicht weiterleiten“ entsprechen. Empfänger können die Nachricht lesen, den Inhalt aber nicht weiterleiten, drucken oder kopieren.
 - Wenn die Bezeichnung auf **Word-, PowerPoint- und Excel-Dateien** angewendet wird, werden die Benutzer aufgefordert, bestimmten Benutzern und Gruppen Zugriffsberechtigungen zuzuweisen.
 
-[Weitere Informationen](encryption-sensitivity-labels.md#let-users-assign-permissions)
+Wechseln Sie zu [Einschränken des Zugriffs auf Inhalte mithilfe von Sensitivitäts Bezeichnungen zur Verschlüsselung anwenden](encryption-sensitivity-labels.md#let-users-assign-permissions) , um weitere Informationen zu erhalten.
 
 ## <a name="august-2019"></a>August 2019
 
 ### <a name="update-to-data-investigations"></a>Aktualisierung von Datenuntersuchungen
 
-Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. [Weitere Informationen](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Wenn Sie eine Datenuntersuchung durchführen, können Sie jetzt Elemente von den ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer ganzen Organisation löschen können. Da Sie die Elemente als Beweis gesammelt haben, wurden Kopien davon im Beweissatz aufbewahrt, die Sie weiter untersuchen oder einfach als Referenz behalten können. Wechseln Sie zu [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) , um weitere Informationen zu erhalten. 
 
 ## <a name="july-2019"></a>Juli 2019
 

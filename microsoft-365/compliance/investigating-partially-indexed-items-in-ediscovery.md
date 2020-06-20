@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: Teilweise indizierte Elemente (auch nicht indexierte Elemente aufrufen) sind Exchange-Postfachelemente und Dokumente auf SharePoint-und OneDrive-Websites, die aus irgendeinem Grund nicht vollständig für die Inhaltssuche indiziert wurden. In diesem Artikel erfahren Sie, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, Suchfehler für teilweise indizierte Elemente identifizieren und ein PowerShell-Skript verwenden, um die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Elementen zu ermitteln.
-ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie teilweise indizierte (oder nicht indexierte) Elemente in Exchange, SharePoint und OneDrive in Ihrer Organisation verwalten können.
+ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942128"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817524"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in eDiscovery
 
@@ -80,9 +82,9 @@ In Fällen, in denen Sie teilweise Elemente überprüfen müssen, um zu überpr�
   
 ![Auswählen der zweiten oder dritten Option zum Exportieren von teilweise indizierten Elementen](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-Wenn Sie Inhalts Suchergebnisse oder einen Inhalts Suchbericht mit einer dieser Optionen exportieren, enthält der Export einen Bericht mit dem Namen nicht indizierte Elemente. CSV. Dieser Bericht enthält die meisten der gleichen Informationen wie die ResultsLog. CSV-Datei; die Datei unindexierte Elemente. csv enthält jedoch auch zwei Felder im Zusammenhang mit teilweise indizierten Elementen: **Error-Tags** und **Error-Eigenschaften**. Diese Felder enthalten Informationen zum Indizierungsfehler für jedes teilweise indizierte Element. Mithilfe der Informationen in diesen beiden Feldern können Sie bestimmen, ob der Indizierungsfehler für einen bestimmten Einfluss auf ihre Untersuchung hat. Wenn dies der Fall ist, können Sie eine gezielte Inhaltssuche durchführen und bestimmte e-Mail-Nachrichten und SharePoint-oder OneDrive-Dokumente abrufen und exportieren, sodass Sie Sie überprüfen können, um festzustellen, ob Sie für Ihre Untersuchung relevant sind. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Vorbereiten einer CSV-Datei für eine gezielte Inhaltssuche in Office 365](csv-file-for-an-id-list-content-search.md).
+Wenn Sie Inhalts Suchergebnisse oder einen Bericht zur Inhaltssuche mithilfe einer dieser Optionen exportieren, enthält der Export einen Bericht mit dem Namen nicht indizierte Items.csv. Dieser Bericht enthält die meisten der gleichen Informationen wie die ResultsLog.csv Datei; die nicht indizierte Items.csv-Datei enthält jedoch auch zwei Felder im Zusammenhang mit teilweise indizierten Elementen: **Error-Tags** und **Error-Eigenschaften**. Diese Felder enthalten Informationen zum Indizierungsfehler für jedes teilweise indizierte Element. Mithilfe der Informationen in diesen beiden Feldern können Sie bestimmen, ob der Indizierungsfehler für einen bestimmten Einfluss auf ihre Untersuchung hat. Wenn dies der Fall ist, können Sie eine gezielte Inhaltssuche durchführen und bestimmte e-Mail-Nachrichten und SharePoint-oder OneDrive-Dokumente abrufen und exportieren, sodass Sie Sie überprüfen können, um festzustellen, ob Sie für Ihre Untersuchung relevant sind. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Vorbereiten einer CSV-Datei für eine gezielte Inhaltssuche in Office 365](csv-file-for-an-id-list-content-search.md).
   
- **Hinweis:** Die Datei "unindizierte Elemente. csv" enthält auch die Felder " **Error Type** " und " **Error Message**". Hierbei handelt es sich um Legacy Felder, die Informationen enthalten, die den Informationen in den Feldern **Error-Tags** und **Error-Eigenschaften** ähneln, jedoch mit kleineren detaillierten Informationen. Sie können diese Legacy Felder problemlos ignorieren. 
+ **Hinweis:** Die nicht indizierte Items.csv Datei enthält auch die Felder " **Error Type** " und " **Error Message**". Hierbei handelt es sich um Legacy Felder, die Informationen enthalten, die den Informationen in den Feldern **Error-Tags** und **Error-Eigenschaften** ähneln, jedoch mit kleineren detaillierten Informationen. Sie können diese Legacy Felder problemlos ignorieren. 
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Fehler im Zusammenhang mit teilweise indizierten Elementen
 
@@ -116,13 +118,13 @@ Im folgenden finden Sie eine Liste der Indizierungsfehler und eine Beschreibung 
 | `retrieverrms` <br/> |Fehler beim Decodieren einer RMS-geschützten Nachricht durch den Inhaltsabruf.  <br/> |
 | `wordbreakertruncated` <br/> |Während der Indizierung wurden im Dokument zu viele Wörter identifiziert. Verarbeitung der Eigenschaft beim Erreichen des Grenzwerts angehalten, und die Eigenschaft wird abgeschnitten.  <br/> |
    
-In den Fehler Feldern wird beschrieben, welche Felder vom Verarbeitungsfehler betroffen sind, der im Feld Fehler Tags aufgeführt ist. Wenn Sie eine Eigenschaft wie `subject` or `participants`durchsuchen, wirken sich Fehler im Textkörper der Nachricht nicht auf die Ergebnisse Ihrer Suche aus. Dies kann hilfreich sein, wenn Sie genau ermitteln, welche teilweise indizierten Elemente Sie möglicherweise noch genauer untersuchen müssen.
+In den Fehler Feldern wird beschrieben, welche Felder vom Verarbeitungsfehler betroffen sind, der im Feld Fehler Tags aufgeführt ist. Wenn Sie eine Eigenschaft wie or durchsuchen `subject` `participants` , wirken sich Fehler im Textkörper der Nachricht nicht auf die Ergebnisse Ihrer Suche aus. Dies kann hilfreich sein, wenn Sie genau ermitteln, welche teilweise indizierten Elemente Sie möglicherweise noch genauer untersuchen müssen.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Verwenden eines PowerShell-Skripts, um die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mail-Elementen zu ermitteln
 
 In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführen, das nach allen Elementen in allen Exchange-Postfächern sucht und dann einen Bericht über das Verhältnis ihrer Organisation mit teilweise indizierten e-Mail-Elementen (nach Anzahl und Größe) generiert und die Anzahl der Elemente (und deren Dateityp) für jeden auftretenden Indizierungsfehler anzeigt. Verwenden Sie die Fehler-Tag-Beschreibungen im vorherigen Abschnitt, um den Indizierungsfehler zu identifizieren.
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `PartiallyIndexedItems.ps1`.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `PartiallyIndexedItems.ps1` .
 
 ```powershell
   write-host "**************************************************"

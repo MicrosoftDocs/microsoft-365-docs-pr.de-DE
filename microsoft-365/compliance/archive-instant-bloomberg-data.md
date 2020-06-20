@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Richten Sie einen Connector ein, um Daten aus Instant Bloomberg in Microsoft 365 zu importieren, damit Sie verschiedene Compliance-Tools verwenden können.
-ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Erfahren Sie, wie Administratoren Setup & einen systemeigenen Connector verwenden können, um Daten aus dem Chat-Tool von Instant Bloomberg in Microsoft 365 zu importieren.
+ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035147"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818454"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
 
@@ -43,7 +42,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
     
 4. Der Connector importiert die Chatnachrichten Elemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen InstantBloomberg wird im Postfach des jeweiligen Benutzers erstellt, und die Elemente werden darin importiert. Der Connector führt dies mithilfe des Werts der *CorporateEmailAddress* -Eigenschaft aus. Jede Chatnachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Chatnachricht aufgefüllt wird. Zusätzlich zur automatischen Benutzerzuordnung mit dem Wert der *CorporateEmailAddress* -Eigenschaft können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei sollte eine Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes Chat Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365-Benutzer gefunden wird, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress* -Eigenschaft des Chat Elements. Wenn der Connector weder in der benutzerdefinierten Zuordnungsdatei noch in der *CorporateEmailAddress* -Eigenschaft des Chat Elements einen gültigen Microsoft 365-Benutzer findet, wird das Element nicht importiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Viele der Implementierungsschritte, die zum Archivieren von Bloomberg-Daten erforderlich sind, sind extern bei Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 
@@ -75,7 +74,7 @@ Viele der Implementierungsschritte, die zum Archivieren von Bloomberg-Daten erfo
 
 Der erste Schritt besteht darin, eine Kopie der öffentlichen Schlüssel für Secure Shell (SSH) und Pretty Good Privacy (PGP) zu erhalten. Sie verwenden diese Schlüssel in Schritt 2, um die Bloomberg-SFTP-Website so zu konfigurieren, dass der in Schritt 3 erstellte Connector eine Verbindung mit der SFTP-Website herstellen und die Instant Bloomberg-Chat Daten an Microsoft 365-Postfächerüber tragen kann. Außerdem erhalten Sie in diesem Schritt eine IP-Adresse, die Sie beim Konfigurieren der Bloomberg SFTP-Website verwenden.
 
-1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie dann auf **Data Connectors** > **Instant Bloomberg**.
+1. Wechseln Sie zu, <https://compliance.microsoft.com> und klicken Sie dann auf **Data Connectors**  >  **Instant Bloomberg**.
 
 2. Klicken Sie auf der Seite **Instant Bloomberg** -Produktbeschreibung auf **Connector hinzufügen** .
 
@@ -102,7 +101,7 @@ Der nächste Schritt besteht darin, die öffentlichen SSH-und PGP-Schlüssel sow
 
 Der letzte Schritt besteht darin, einen Instant Bloomberg-Connector im Microsoft 365 Compliance Center zu erstellen. Der Connector verwendet die von Ihnen bereitgestellten Informationen, um eine Verbindung mit der Bloomberg SFTP-Website herzustellen und Chatnachrichten an die entsprechenden Benutzerpostfach-Postfächer in Microsoft 365 zu übertragen. 
 
-1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie dann auf **Data Connectors** > **Instant Bloomberg**.
+1. Wechseln Sie zu, <https://compliance.microsoft.com> und klicken Sie dann auf **Data Connectors**  >  **Instant Bloomberg**.
 
 2. Klicken Sie auf der Seite **Instant Bloomberg** -Produktbeschreibung auf **Connector hinzufügen** .
 

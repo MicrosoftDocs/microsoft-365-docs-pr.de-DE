@@ -14,17 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem Security & Compliance Center in Office 365 exportieren. Durch das Deaktivieren dieser Berichte kann die Downloadzeit beschleunigt und Speicherplatz gespart werden.
-ms.openlocfilehash: 89ea5e073a2c33d5f04fe3eef74b5b26510eef2f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem Security & Compliance Center exportieren.
+ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943008"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817854"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deaktivieren von Berichten beim Exportieren von Inhaltssuchergebnissen
 
-Wenn Sie das eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security & Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Bei diesen Berichten handelt es sich um die Datei "results. csv" und die Datei "Manifest. xml" (ausführliche Beschreibungen dieser Berichte finden Sie im Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Sie können dies tun, indem Sie die Windows-Registrierung auf dem Computer ändern, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt einbeziehen möchten, können Sie die Registrierungseinstellung bearbeiten. 
+Wenn Sie das eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security & Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Bei diesen Berichten handelt es sich um die Results.csv Datei und die Manifest.xml Datei (ausführliche Beschreibungen dieser Berichte finden Sie im Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Sie können dies tun, indem Sie die Windows-Registrierung auf dem Computer ändern, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt einbeziehen möchten, können Sie die Registrierungseinstellung bearbeiten. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Erstellen von Registrierungseinstellungen zum Deaktivieren der Export Berichte
 
@@ -34,7 +36,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebni
     
 2. Führen Sie einen oder beide der folgenden Schritte aus, je nachdem, welchen Exportbericht Sie deaktivieren möchten.
     
-    - **Results. CSV**
+    - **Results.csv**
     
       Speichern Sie den folgenden Text in einer Windows-Registrierungsdatei unter Verwendung eines filename-Suffixes von. reg; Beispiel: DisableResultsCsv. reg.
     
@@ -43,7 +45,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebni
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **Manifest. XML**
+    - **Manifest.xml**
     
       Speichern Sie den folgenden Text in einer Windows-Registrierungsdatei unter Verwendung eines filename-Suffixes von. reg; Beispiel: DisableManifestXml. reg.
     
@@ -62,24 +64,24 @@ Führen Sie das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebni
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Bearbeiten von Registrierungseinstellungen zum erneuten Aktivieren der Export Berichte
 
-Wenn Sie die Berichte "results. csv" und "Manifest. xml" durch Erstellen der reg-Dateien im vorherigen Verfahren deaktiviert haben, können Sie diese Dateien bearbeiten, um einen Bericht erneut zu aktivieren, sodass er mit den Suchergebnissen exportiert wird. Führen Sie erneut das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebnisse mit einer Inhaltssuche exportieren.
+Wenn Sie die Results.csv-und Manifest.xml-Berichte deaktiviert haben, indem Sie die reg-Dateien im vorherigen Verfahren erstellt haben, können Sie diese Dateien bearbeiten, um einen Bericht erneut zu aktivieren, sodass er mit den Suchergebnissen exportiert wird. Führen Sie erneut das folgende Verfahren auf dem Computer aus, mit dem Sie die Ergebnisse mit einer Inhaltssuche exportieren.
   
 1. Schließen Sie das eDiscovery-Export Tool, wenn es geöffnet ist.
     
 2. Bearbeiten Sie eine oder beide der reg-Bearbeitungs Dateien, die Sie im vorherigen Verfahren erstellt haben.
     
-    - **Results. CSV**
+    - **Results.csv**
     
-        Öffnen Sie die Datei DisableResultsCsv. reg im Editor, ändern Sie `False` den `True`Wert in, und speichern Sie die Datei. Nachdem Sie die Datei beispielsweise bearbeitet haben, sieht Sie wie folgt aus:
+        Öffnen Sie die Datei DisableResultsCsv. reg im Editor, ändern Sie den Wert in `False` `True` , und speichern Sie die Datei. Nachdem Sie die Datei beispielsweise bearbeitet haben, sieht Sie wie folgt aus:
     
         ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **Manifest. XML**
+    - **Manifest.xml**
     
-        Öffnen Sie die Datei DisableManifestXml. reg im Editor, ändern Sie `False` den `True`Wert in, und speichern Sie die Datei. Nachdem Sie die Datei beispielsweise bearbeitet haben, sieht Sie wie folgt aus:
+        Öffnen Sie die Datei DisableManifestXml. reg im Editor, ändern Sie den Wert in `False` `True` , und speichern Sie die Datei. Nachdem Sie die Datei beispielsweise bearbeitet haben, sieht Sie wie folgt aus:
     
       ```text
       Windows Registry Editor Version 5.00
@@ -96,11 +98,11 @@ Wenn Sie die Berichte "results. csv" und "Manifest. xml" durch Erstellen der reg
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Häufig gestellte Fragen zum Deaktivieren von Export Berichten
 
- **Was sind die Berichte "results. csv" und "Manifest. xml"?**
+ **Was sind die Results.csv-und Manifest.xml Berichte?**
   
-Die Dateien results. CSV und Manifest. XML enthalten zusätzliche Informationen über den exportierten Inhalt.
+Die Results.csv-und Manifest.xml-Dateien enthalten zusätzliche Informationen zu dem exportierten Inhalt.
   
-- **Results. CSV** ein Excel-Dokument, das Informationen zu jedem Element enthält, das als Suchergebnis heruntergeladen wird. Bei e-Mails enthält das Ergebnisprotokoll Informationen zu den einzelnen Nachrichten, einschließlich: 
+- **Results.csv** Ein Excel-Dokument, das Informationen zu jedem Element enthält, das als Suchergebnis heruntergeladen wird. Bei e-Mails enthält das Ergebnisprotokoll Informationen zu den einzelnen Nachrichten, einschließlich: 
     
   - Der Speicherort der Nachricht im Quellpostfach (einschließlich der Angabe, ob die Nachricht sich im primären oder im Archivpostfach befindet).
     
@@ -122,7 +124,7 @@ Die Dateien results. CSV und Manifest. XML enthalten zusätzliche Informationen 
     
   - Der Name des Dokuments (der sich in der Spalte Betreff im Ergebnisprotokoll befindet).
     
-- **Manifest. XML** eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist. Die Informationen in diesem Bericht sind identisch mit dem Bericht "results. csv", jedoch in dem Format, das im Electronic Discovery Reference Model (EDRM) angegeben ist. Weitere Informationen zu EDRM finden Sie unter [https://www.edrm.net](https://www.edrm.net).
+- **Manifest.xml** Eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist. Die Informationen in diesem Bericht sind identisch mit dem Results.csv Bericht, jedoch in dem Format, das im Electronic Discovery Reference Model (EDRM) angegeben ist. Weitere Informationen zu EDRM finden Sie unter [https://www.edrm.net](https://www.edrm.net) .
     
  **Wann sollte ich den Export dieser Berichte deaktivieren?**
   

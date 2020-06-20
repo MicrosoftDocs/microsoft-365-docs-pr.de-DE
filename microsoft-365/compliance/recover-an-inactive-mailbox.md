@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: 'Wenn ein ehemaliger Mitarbeiter in Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie den Inhalt eines inaktiven Postfachs in Office 365 wiederherstellen, indem Sie es in ein neues Postfach konvertieren, das den Inhalt des inaktiven Postfachs enthält.
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678971"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818945"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Wiederherstellen eines inaktiven Postfachs
 
-Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet, um die E-Mails eines ehemaligen Mitarbeiters aufzubewahren, nachdem dieser die Organisation verlassen hat. Wenn ein anderer Mitarbeiter die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt oder dieser Mitarbeiter in Ihre Organisation zurückkehrt, gibt es zwei Möglichkeiten, den Inhalt des inaktiven Postfachs wieder verfügbar zu machen: 
+An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserve a former employee's email after he or she leaves your organization. If that employee returns to your organization or if another employee takes on the job responsibilities of the former employee, there are two ways that you can make the contents of the inactive mailbox available to a user: 
   
 - **Wiederherstellen eines inaktiven Postfachs.** Wenn der frühere Mitarbeiter in Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben des ehemaligen Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Bei dieser Methode wird das inaktive Postfach in ein neues, aktives Postfach mit dem Inhalt des inaktiven Postfachs umgewandelt. Nach der Wiederherstellung ist das inaktive Postfach nicht mehr vorhanden. In diesem Thema werden die Verfahren dieser Methode beschrieben. 
     
@@ -33,7 +34,7 @@ Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet
 
 Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Details zu den Unterschieden zwischen dem Rückspeichern und Wiederherstellen eines inaktiven Postfachs und eine Beschreibung, was passiert, wenn ein inaktives Postfach wiederhergestellt wird.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>Anforderungen zum Wiederherstellen eines inaktiven Postfachs
 
 - Zum Wiederherstellen eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
@@ -56,7 +57,7 @@ Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , u
     ```
 
     > [!IMPORTANT]
-    > Verwenden Sie im vorherigen Befehl den Wert der Eigenschaft **DistinguishedName** oder **ExchangeGUID** zum Identifizieren des inaktiven Postfachs. Diese Eigenschaften sind für jedes Postfach in Ihrer Organisation eindeutig, wobei ein aktives und ein inaktives Postfach die gleiche primäre SMTP-Adresse haben können. 
+    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. In diesem Beispiel werden die mit dem vorherigen Befehl abgerufenen Eigenschaften verwendet, und das inaktive Postfach wird in ein aktives Postfach für die Benutzerin Ann Beebe wiederhergestellt. Stellen Sie sicher, dass die für den Parameter " *Name* " und " *MicrosoftOnlineServicesID* " angegebenen Werte innerhalb Ihrer Organisation eindeutig sind. 
 
@@ -84,7 +85,7 @@ Nachdem Sie ein inaktives Postfach wiederhergestellt haben, wird auch ein neues 
   
      - **Microsoft 365-Aufbewahrungsrichtlinie ohne Aufbewahrungs Sperre.** Das inaktive Postfach wird aus einer entsperrten Microsoft 365-Aufbewahrungsrichtlinie entfernt, die auf ihn angewendet wurde. Das Beweissicherungsverfahren ist jedoch für das wiederhergestellte Postfach aktiviert, um das Löschen von Postfachinhalten basierend auf organisationsweiten Aufbewahrungsrichtlinien zu verhindern, die Inhalte löschen, die älter sind als ein bestimmtes Alter. Sie können das Beweissicherungsverfahren halten oder entfernen. Weitere Informationen finden Sie unter [Create a Litigation Hold](create-a-litigation-hold.md).
 
-  - Der Zeitraum für die Wiederherstellung einzelner Elemente (der von der Postfacheigenschaft **RetainDeletedItemsFor** bestimmt wird) wird auf 30 Tage festgelegt. Wenn in Exchange Online ein neues Postfach erstellt wird, ist dieser Aufbewahrungszeitraum auf 14 Tage festgelegt. Durch Festlegen dieser Eigenschaft auf den Höchstwert von 30 Tagen bleibt Ihnen mehr Zeit zum Wiederherstellen von Daten, die (endgültig) aus dem inaktiven Postfach gelöscht wurden. Sie können die Wiederherstellung einzelner Elemente auch deaktivieren oder den Wiederherstellungszeitraum für einzelne Elemente wieder auf den Standardwert von 14 Tagen zurücksetzen. Weitere Informationen finden Sie unter [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
+  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
   
   - Die Aufbewahrungszeit ist aktiviert, und die Aufbewahrungsdauer ist auf 30 Tage festgelegt. Dies bedeutet, dass die standardmäßige Exchange-Aufbewahrungsrichtlinie und alle organisationsweiten oder Exchange-weiten Microsoft 365-Aufbewahrungsrichtlinien, die dem neuen Postfach zugewiesen sind, 30 Tage lang nicht verarbeitet werden. Dadurch erhält der zurückgebende Mitarbeiter oder der neue Besitzer des wiederhergestellten inaktiven Postfachs Zeit, um die alten Nachrichten zu verwalten. Andernfalls löscht die Aufbewahrungsrichtlinie für Exchange oder Microsoft 365 möglicherweise alte Postfachelemente (oder verschiebt Elemente in das Archivpostfach, sofern Sie aktiviert ist), die basierend auf den für die Exchange-oder Microsoft 365-Aufbewahrungsrichtlinien konfigurierten Einstellungen abgelaufen sind. Nach 30 Tagen läuft die Aufbewahrungsdauer ab, die **RetentionHoldEnabled** -Postfacheigenschaft ist auf **false**festgelegt, und der Assistent für verwaltete Ordner beginnt mit der Verarbeitung der dem Postfach zugewiesenen Richtlinien. Wenn Sie diese zusätzliche Zeit nicht benötigen, können Sie den Aufbewahrungsspeicher einfach entfernen. Alternativ können Sie die Aufbewahrungsdauer mithilfe des Befehls " **Sets-Mailbox-EndDateForRetentionHold** " verlängern. Weitere Informationen finden Sie unter [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
 

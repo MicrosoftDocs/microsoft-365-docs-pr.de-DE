@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'In diesem Artikel erfahren Sie, wie Sie erweiterte Einstellungen, einschließlich nahe Duplikate, e-Mail-Threads und Designs, für den Analyseprozess in Advanced eDiscovery konfigurieren. '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631272"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819235"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Festlegen der erweiterten Analyse Einstellungen in Advanced eDiscovery
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodul Einstellungen. Im folgenden Verfahren werden die Einstellungen beschrieben, die angegeben werden können.
   
-1. Klicken Sie auf der Registerkarte **analyze \> \> -Setup vorbereiten** auf **Erweiterte Einstellungen** (unten auf der Seite). Der folgende Bereich wird angezeigt. 
+1. Klicken Sie auf der Registerkarte ** \> analyze- \> Setup vorbereiten** auf **Erweiterte Einstellungen** (unten auf der Seite). Der folgende Bereich wird angezeigt. 
     
     ![Erweiterte Einstellungen für ANALYZE festlegen](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -46,7 +47,7 @@ Advanced eDiscovery bietet standardmäßig erweiterte Parameter für Analysemodu
     
 4. Klicken Sie auf **Speichern**. 
     
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

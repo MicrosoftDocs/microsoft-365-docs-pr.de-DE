@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Hier finden Sie eine Antwort.
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717154"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818678"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -103,7 +104,7 @@ Microsoft 365-Benutzer können Outlook für Windows und Mac (2013 und 2016), Out
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten e-Mail-Nachrichten unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten e-Mails zugeordnet sind?
 
-Sie können einen beliebigen Dateityp an eine geschützte e-Mail-Nachricht anfügen, aber Schutzrichtlinien werden nur auf die [hier](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)erwähnten Dateiformate angewendet.
+Sie können einen beliebigen Dateityp an eine geschützte e-Mail-Nachricht anfügen, jedoch werden Schutzrichtlinien nur auf die Dateiformate angewendet, die in Dateitypen erwähnt werden, [die vom Azure Information Protection-Client unterstützt](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)werden.
   
 Wenn ein Dateiformat unterstützt wird, beispielsweise eine Word-, Excel-oder PowerPoint-Datei, ist die Datei immer geschützt, auch wenn die Anlage vom Empfänger heruntergeladen wurde. Wenn beispielsweise eine Anlage durch do not Forward geschützt ist und der ursprüngliche Empfänger die Anlage an einen neuen Empfänger herunterlädt und leitet, kann der neue Empfänger die geschützte Datei nicht öffnen.
   

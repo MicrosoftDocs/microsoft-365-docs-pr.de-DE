@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Fehlerbehebung Daten Probleme in Daten Untersuchungen (Preview) korrigieren können, die eine ordnungsgemäße Verarbeitung von Inhalten verhindern könnten.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035117"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817814"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Fehlerkorrektur beim Verarbeiten von Daten für eine Untersuchung
 
@@ -57,7 +59,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
     >Es wird empfohlen, einen lokalen Dateipfad anstelle eines Remotenetzwerk Pfads zu verwenden, um eine optimale Leistung zu erzielen.
 
     > [!NOTE]
-    > Wenn Sie AzCopy nicht installiert haben, können Sie es von hier aus installieren:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > Wenn Sie AzCopy nicht installiert haben, gehen Sie zu [Erste Schritte mit AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) , um es zu installieren.
 
 6. Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie dann die **Eingabe**Taste.  
 
@@ -71,7 +73,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 7. Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool korrigieren. Für kennwortgeschützte Dateien gibt es mehrere Kenn Wort Knack Tools, die Sie verwenden können. Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.
     
    > [!NOTE]
-    > Es ist wichtig, dass Sie die Verzeichnisstruktur und die Dateinamen der korrigierten Dateien beibehalten. Die Pfadnamen der heruntergeladenen Dateien und Ordner ermöglichen das Zuordnen der korrigierten Dateien zu den Originaldateien.  Wenn die Verzeichnisstruktur oder die Dateinamen geändert werden, erhalten Sie den folgenden Fehler: `Cannot apply Error Remediation to the current Evidenceset`.
+    > Es ist wichtig, dass Sie die Verzeichnisstruktur und die Dateinamen der korrigierten Dateien beibehalten. Die Pfadnamen der heruntergeladenen Dateien und Ordner ermöglichen das Zuordnen der korrigierten Dateien zu den Originaldateien.  Wenn die Verzeichnisstruktur oder die Dateinamen geändert werden, erhalten Sie den folgenden Fehler: `Cannot apply Error Remediation to the current Evidenceset` .
 
 8. Kehren Sie nun zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie die Dateien jetzt hochladen können.
 
@@ -81,7 +83,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderung ein, und drücken **Sie die EINGABETASTE** , um die Dateien hochzuladen.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Kehren Sie schließlich zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Process files**.
 

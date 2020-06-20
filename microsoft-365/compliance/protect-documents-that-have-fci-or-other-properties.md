@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies Ihre Organisation beschreibt, können Sie eine DLP-Richtlinie erstellen, die die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, sodass die DLP-Richtlinie in Office-Dokumenten mit bestimmten FCI-oder anderen Eigenschaftswerten erzwungen werden kann.
-ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie (Data Loss Prevention) zum Schutz von Dokumenten mit Eigenschaften aus einem Drittanbietersystem verwenden.
+ms.openlocfilehash: 4db6844c6f00856de5893631058c774210344454
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327101"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818720"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
@@ -32,7 +34,7 @@ In Microsoft 365 können Sie eine DLP-Richtlinie (Data Loss Prevention) verwende
   
 Ihre Organisation verwendet z. B. möglicherweise Windows Server FCI zum Identifizieren von Dokumenten mit personenbezogenen Informationen (PII) wie Sozialversicherungsnummern und zum anschließenden Klassifizieren des Dokuments durch Festlegen der Eigenschaft **Personenbezogene Informationen** auf **Hoch**, **Mittel**, **Niedrig**, **Öffentlich** oder **Keine personenbezogenen Informationen** basierend auf dem Typ und der Anzahl von Vorkommen von personenbezogenen Informationen, die im Dokument gefunden werden. In Microsoft 365 können Sie eine DLP-Richtlinie erstellen, die Dokumente identifiziert, für die diese Eigenschaft auf bestimmte Werte festgelegt ist, beispielsweise **hoch** und **Mittel**, und dann eine Aktion wie das Blockieren des Zugriffs auf diese Dateien ausführt. Die gleiche Richtlinie kann eine andere Regel enthalten, die eine andere Aktion ausführt, wenn die Eigenschaft auf **Niedrig** festgelegt ist und z. B. eine E-Mail-Benachrichtigung sendet. Auf diese Weise kann DLP in die Windows Server-FCI integriert werden und zum Schutz von Office-Dokumenten beitragen, die von Windows Server-basierten Dateiservern auf Microsoft 365 hochgeladen oder freigegeben wurden.
   
-Eine DLP-Richtlinie sucht einfach nach einem bestimmten Eigenschafts-Name-Wert-Paar. Eine beliebige Dokumenteigenschaft kann verwendet werden, solange die Eigenschaft über eine entsprechende verwaltete Eigenschaft für die SharePoint-Suche verfügt. Eine SharePoint-Websitesammlung verwendet z. B. möglicherweise einen Inhaltstyp namens **Reisebericht** mit einem erforderlichen Feld namens **Kunde**. Wenn eine Person einen Reisebericht erstellt, muss sie den Namen des Kunden eingeben. Dieses Eigenschafts-Name-Wert-Paar kann auch in einer DLP-Richtlinie verwendet werden – z. B. wenn Sie eine Regel möchten, die den Zugriff auf das Dokument für externe Benutzer sperrt, wenn das Feld **Kunde****Contoso** enthält.
+A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy — for example, if you want a rule that blocks access to the document for external users when the **Customer** field contains **Contoso**.
   
 Beachten Sie, dass Sie die hier beschriebenen Schritte nicht ausführen sollten, wenn Sie Ihre DLP-Richtlinie auf Inhalte mit bestimmten Microsoft 365-Bezeichnungen anwenden möchten. Erfahren Sie stattdessen, wie Sie [eine Aufbewahrungs Bezeichnung als Bedingung in einer DLP-Richtlinie verwenden](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
@@ -40,7 +42,7 @@ Beachten Sie, dass Sie die hier beschriebenen Schritte nicht ausführen sollten,
 
 Bevor Sie eine Windows Server FCI-Eigenschaft oder eine andere Eigenschaft in einer DLP-Richtlinie verwenden können, müssen Sie im SharePoint Admin Center eine verwaltete Eigenschaft erstellen. Hier ist der Grund.
   
-Beispiele
+In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
   
 Dies ist wichtig, da DLP mithilfe des suchcrawlers vertrauliche Informationen auf ihren Websites identifiziert und klassifiziert und diese vertraulichen Informationen dann in einem sicheren Teil des Suchindex speichert. Wenn Sie ein Dokument in Office 365 hochladen, erstellt SharePoint automatisch durchforstete Eigenschaften auf Grundlage der Dokumenteigenschaften. Um aber eine FCI- oder eine andere Eigenschaft in einer DLP-Richtlinie zu verwenden, muss die durchforstete Eigenschaft einer verwalteten Eigenschaft zugeordnet werden, damit Inhalt mit dieser Eigenschaft im Index gespeichert wird.
   
@@ -64,7 +66,7 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in de
     
     ![Seite "verwaltete Eigenschaften" mit hervorgehobener Schaltfläche "verwaltete Eigenschaft"](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
-5. Geben Sie einen Namen und eine Beschreibung für die Eigenschaft ein. Dieser Name wird in den DLP-Richtlinien angezeigt.
+5. Enter a name and description for the property. This name is what will appear in your DLP policies.
     
 6. Wählen Sie für **Typ****Text**. 
     
@@ -126,7 +128,7 @@ Eine Regel sperrt den Zugriff auf Inhalte, bei denen die Eigenschaft **Personenb
 
 Durch Ausführen der Schritte in den vorherigen Abschnitten wird eine DLP-Richtlinie erstellt, mit der Inhalte schnell mit dieser Eigenschaft erkannt werden, jedoch nur, wenn dieser Inhalt neu hochgeladen wird (damit der Inhalt indiziert ist) oder wenn dieser Inhalt alt, aber nur bearbeitet ist (damit der Inhalt erneut indiziert wird).
   
-Um überall Inhalte mit dieser Eigenschaft zu ermitteln, sollten Sie manuell anfordern, dass die Bibliothek, Website oder Websitesammlung neu indiziert werden, damit die DLP-Richtlinie alle Inhalte mit dieser Eigenschaft kennt. In SharePoint Online werden Inhalte basierend auf einem definierten Durchforstungszeitplan automatisch durchforstet. Der Crawler ruft Inhalte ab, die seit der letzten Durchforstung geändert wurden, und aktualisiert den Index. Wenn Ihre DLP-Richtlinie Inhalte vor der nächsten geplanten Durchforstung schützen soll, können Sie diese Schritte ausführen.
+To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
   
 > [!CAUTION]
 > Erneute Indizierung einer Website kann das Suchsystem massiv belasten. Indizieren Sie Ihre Website nicht neu, es sei denn, Ihr Szenario erfordert dies unbedingt. 
@@ -149,4 +151,4 @@ Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens un
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)

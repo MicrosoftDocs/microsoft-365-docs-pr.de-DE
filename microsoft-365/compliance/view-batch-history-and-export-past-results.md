@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Hier erfahren Sie, wie Sie detaillierte Informationen zu ausgewählten Export Batch Sitzungen anzeigen und wie Sie die letzte Export Sitzung in Advanced eDiscovery rückgängig machen.  '
-ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626351"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819055"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Im folgenden Abschnitt werden zusätzliche Optionen für die Batch Anzeige und den Export von Daten in Advanced eDiscovery beschrieben. 
   
@@ -34,7 +35,7 @@ Im folgenden Abschnitt werden zusätzliche Optionen für die Batch Anzeige und d
 
 Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählten Export Batch Sitzungen und bietet außerdem die Möglichkeit, die letzte Sitzung rückgängig zu machen.
   
-1. Wählen Sie unter **Setup exportieren \> **den Namen des Batches in der Dropdownliste **Export Batch** aus. 
+1. Wählen Sie unter ** \> Setup exportieren**den Namen des Batches in der Dropdownliste **Export Batch** aus. 
     
 2. Wählen Sie rechts neben dem Namen des Export Batches das Symbol für den **Batch Verlauf** aus: 
     
@@ -46,9 +47,9 @@ Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählt
   
 3. Wenn es erforderlich ist, eine vorherige Sitzung zurückzusetzen, klicken Sie auf **letzte Sitzung rückgängig machen**. Rollback kann mehrmals ausgeführt werden, wodurch die letzte Sitzung abgebrochen wird.
     
-4. Wenn Sie Daten jederzeit aus einer zuvor ausgeführten Export Batch Sitzung herunterladen möchten, klicken Sie](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) auf das **Symbol Download Symbol** !["Stapel Verlauf herunterladen" neben dem gewünschten Export Batch, der exportiert werden soll. 
+4. Wenn Sie Daten jederzeit aus einer zuvor ausgeführten Export Batch Sitzung herunterladen möchten, klicken Sie **auf das Symbol Download Symbol** "Stapel Verlauf herunterladen" ![ ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) neben dem gewünschten Export Batch, der exportiert werden soll. 
     
-5. Wenn das Dialogfeld für die **gemeinsame zugriffssignatur** angezeigt wird, klicken Sie auf **in Zwischenablage kopieren** , um die Daten der Export Sitzung auf den lokalen Computer zu kopieren, und klicken Sie dann auf **Schließen**. Das Dialog &amp; Feld **eDiscovery-Export Tool** für das Security Compliance Center wird angezeigt. 
+5. Wenn das Dialogfeld für die **gemeinsame zugriffssignatur** angezeigt wird, klicken Sie auf **in Zwischenablage kopieren** , um die Daten der Export Sitzung auf den lokalen Computer zu kopieren, und klicken Sie dann auf **Schließen**. Das &amp; Dialogfeld **eDiscovery-Export Tool** für das Security Compliance Center wird angezeigt. 
     
     ![EDiscovery-Dialog Exportieren](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -60,7 +61,7 @@ Das Dialogfeld Export Verlauf enthält detaillierte Informationen zu ausgewählt
     
 3. Klicken Sie auf **Start**. Die Exportdateien werden auf den lokalen Computer heruntergeladen. 
     
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

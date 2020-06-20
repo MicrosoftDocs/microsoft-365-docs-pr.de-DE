@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mithilfe des Tools für neue Daten Untersuchungen (Vorschau) im Security & Compliance Center Elemente aus ihren ursprünglichen Speicherorten löschen.
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630522"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817884"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Löschen von Elementen aus dem ursprünglichen Speicherort (Vorschau)
 
@@ -31,7 +32,7 @@ Das Feature zum Löschen von Elementen aus dem ursprünglichen Speicherort befin
 
 Mithilfe von Daten Untersuchungen können Sie Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer Organisation löschen können. Da Sie Elemente als Beweismaterial gesammelt haben, haben Sie Kopien der Elemente, die im Beweissatz aufbewahrt werden, zur weiteren Untersuchung oder als Referenz aufzubewahren.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-delete-items"></a>Vor dem Löschen von Elementen
 
 - Um Elemente zu löschen, müssen Sie die **Such-und Lösch** Rolle im Security & Compliance Center zugewiesen haben. Diese Rolle wird standardmäßig der integrierten Data Investigator-Rollengruppe zugewiesen.
 

@@ -18,19 +18,21 @@ search.appverid:
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
-description: Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln, der für eine bestimmte Art von Inhalten gilt. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen steuern und nachverfolgen, wie lange Inhalt beibehalten wird oder welche Aktionen die Benutzer für diesen Inhalt ausführen können. Informationsverwaltungsrichtlinien können Organisationen helfen, gesetzliche oder behördliche Bestimmungen einzuhalten oder einfach interne Geschäftsprozesse erzwingen.
-ms.openlocfilehash: 7f977090b147eca427fcd2e4b536821890493950
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie Informationsverwaltungsrichtlinien zum Steuern und Nachverfolgen von Elementen verwenden, wie lange Inhalte aufbewahrt werden oder welche Aktionen Benutzer mit diesen Inhalten ausführen können.
+ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072687"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815512"
 ---
 # <a name="introduction-to-information-management-policies"></a>Einführung in Informationsverwaltungsrichtlinien
 
 Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln, der für eine bestimmte Art von Inhalten gilt. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen steuern und nachverfolgen, wie lange Inhalt beibehalten wird oder welche Aktionen die Benutzer für diesen Inhalt ausführen können. Informationsverwaltungsrichtlinien können Organisationen helfen, gesetzliche oder behördliche Bestimmungen einzuhalten oder einfach interne Geschäftsprozesse erzwingen. 
   
-Beispielsweise kann eine Organisation, die die behördlichen Vorschriften befolgt, in denen die "angemessenen Steuerelemente" ihrer Abschlüsse vorgeführt werden müssen, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen in der Erstellung überwachen und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanz Anmeldungen.
+Beispielsweise kann eine Organisation, die die behördlichen Vorschriften befolgt, die die "angemessenen Kontrollen" ihrer Abschlüsse demonstrieren müssen, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen im Erstellungs-und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanz Anmeldungen überwachen.
   
 Informationen zu Vorgehensweise finden Sie unter [Erstellen und Anwenden von Informationsverwaltungsrichtlinien](create-info-mgmt-policies.md).
   
@@ -70,12 +72,12 @@ Hinweis um zu steuern, welche Richtlinien in einer Websitesammlung verwendet wer
   
 ![Link "Informationsverwaltungsrichtlinien" auf der Seite "Einstellungen" für Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-Hinweise 
+Anmerkungen 
   
 Sie können eine Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek nur dann erstellen, wenn diese Liste oder Bibliothek mehrere Inhaltstypen nicht unterstützt. Wenn eine Liste oder Bibliothek mehrere Inhaltstypen unterstützt, müssen Sie eine Informationsverwaltungsrichtlinie für jeden einzelnen Listeninhaltstyp definieren, der dieser Liste oder Bibliothek zugeordnet ist. (Instanzen eines Websiteinhaltstyps, die einer bestimmten Liste oder Bibliothek zugeordnet sind, werden als Listeninhaltstypen bezeichnet.)
   
 Um zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, können Websitesammlungsadministratoren die Möglichkeit deaktivieren, Richtlinienfeatures direkt für eine Liste oder Bibliothek festzulegen. Wenn diese Einschränkung wirksam ist, können Benutzer, die Listen oder Bibliotheken verwalten, nur Richtlinien aus der Liste der Websitesammlungsrichtlinien auswählen.
   
-[Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln für einen Inhaltstyp. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen Elemente steuern und nachverfolgen, beispielsweise wie lange Inhalte aufbewahrt werden oder welche Aktionen Benutzer mit diesen Inhalten durchführen können. Informationsverwaltungsrichtlinien können Organisationen dabei helfen, gesetzliche oder behördliche Bestimmungen einzuhalten oder einfach interne Geschäftsprozesse zu erzwingen. Beispielsweise kann eine Organisation, die die behördlichen Vorschriften befolgt, in denen die "angemessenen Steuerelemente" ihrer Abschlüsse vorgeführt werden müssen, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen in der Erstellung überwachen und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanz Anmeldungen. Informationen zu Vorgehensweise finden Sie unter Erstellen und Anwenden von Informationsverwaltungsrichtlinien.](intro-to-info-mgmt-policies.md#__top)
+[Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln für einen Inhaltstyp. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen Elemente steuern und nachverfolgen, beispielsweise wie lange Inhalte aufbewahrt werden oder welche Aktionen Benutzer mit diesen Inhalten durchführen können. Informationsverwaltungsrichtlinien können Organisationen dabei helfen, gesetzliche oder behördliche Bestimmungen einzuhalten oder einfach interne Geschäftsprozesse zu erzwingen. Beispielsweise kann eine Organisation, die die behördlichen Vorschriften befolgt, die die "angemessenen Kontrollen" ihrer Abschlüsse demonstrieren müssen, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen im Erstellungs-und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanz Anmeldungen überwachen. Informationen zu Vorgehensweise finden Sie unter Erstellen und Anwenden von Informationsverwaltungsrichtlinien.](intro-to-info-mgmt-policies.md#__top)
   
 

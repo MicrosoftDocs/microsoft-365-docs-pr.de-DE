@@ -16,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Advanced eDiscovery, einschließlich nahe gestellter Duplikate, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631262"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819225"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Festlegen von Analyseoptionen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Legen Sie in Advanced eDiscovery die Analyseoptionen vor der Ausführung von ANALYZE fest.
   
 ## <a name="set-analyze-options"></a>Festlegen von Analyseoptionen
 
-Öffnen **Sie \> Prepare analyze** \> **Setup**. Das folgende Fenster wird angezeigt.
+Öffnen Sie **Prepare \> analyze** \> **Setup**. Das folgende Fenster wird angezeigt.
   
 ![Festlegen von Analyseoptionen](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -55,7 +56,7 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor der Ausführung von ANA
   
 1. Wenn Sie vorgeschlagene Designs anzeigen, hinzufügen oder bearbeiten möchten, klicken Sie auf **ändern**.
     
-2. Klicken Sie im Bereich **vorgeschlagene Designs** **auf das** ![Symbol Add Icon](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen, um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagenes Design hinzufügen** die Wörter hinzu, getrennt durch Kommas. 
+2. Klicken Sie im Bereich **vorgeschlagene Designs** **auf das** Symbol Add Icon hinzufügen, ![ ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagenes Design hinzufügen** die Wörter hinzu, getrennt durch Kommas. 
     
 3. Wählen Sie unter **Anzahl der Designs**einen Wert aus, um die Anzahl der Designs zu ermitteln, die Advanced eDiscovery für diese Wörter zu generieren versucht (Standard ist 1 Design).
     
@@ -76,7 +77,7 @@ Sie können auch [Text ignorieren festlegen](set-ignore-text-in-advanced-ediscov
   
 Nachdem Sie diese Optionen festgelegt haben, klicken Sie auf **Analyse** ausführen. [Anzeigen von Analyseergebnissen](view-analyze-results-in-advanced-ediscovery.md) werden angezeigt. 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

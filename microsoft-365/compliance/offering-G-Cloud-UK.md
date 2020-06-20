@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254178"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773766"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -37,8 +37,6 @@ Jedes Jahr bereitet Microsoft die Dokumentation vor und übermittelt Beweise, um
 
 Die Benennung von Microsoft-Diensten für den digitalen Marktplatz bedeutet, dass britische Regierungsbehörden und Partner in-Scope-Dienste zum Speichern und Verarbeiten von amtlichen Regierungsdaten in Großbritannien, den meisten Regierungsdaten, verwenden können. Darüber hinaus sind jetzt mehr als 450 Microsoft-Partner in G-Cloud enthalten, die Wiederverkäufer von Microsoft Cloud Services sind. Sie können die Compliance von Dienstleistungen im Bereich direkt mit den 14 Prinzipien in ihren eigenen Anwendungen bestätigen. Kunden und Partner müssen jedoch ihre eigene Compliance für alle Komponenten erreichen, die nicht in der Zertifizierung und Bestimmung der Compliance für Microsoft Cloud Services enthalten sind.
 
-Erfahren Sie mehr über die Vorteile von Großbritannien g-Cloud V6 in der Microsoft-Cloud: [herunterladen des Großbritannien g-Cloud V6-Hintergrund Dokuments](https://aka.ms/uk-g-cloud_backgrounder)
-
 Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
@@ -47,7 +45,7 @@ Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Power Automation (ehemals Microsoft Flow)-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossenen Dienst
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - Office 365: Exchange Online, SharePoint Online und Skype for Business Online
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
 - Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten

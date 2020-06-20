@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232008"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817534"
 ---
 # <a name="information-barriers"></a>Informationsbarrieren
-
-## <a name="overview"></a>Übersicht
 
 Microsoft Cloud Services umfassen leistungsstarke Funktionen für Kommunikation und Zusammenarbeit. Angenommen, Sie möchten die Kommunikation zwischen zwei Gruppen einschränken, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt. Oder Sie möchten möglicherweise die Kommunikation zwischen bestimmten Personen innerhalb Ihrer Organisation einschränken, um interne Informationen zu schützen. Microsoft 365 ermöglicht die Kommunikation und Zusammenarbeit zwischen Gruppen und Organisationen, gibt es also eine Möglichkeit, die Kommunikation zwischen bestimmten Benutzergruppen einzuschränken, wenn dies erforderlich ist? Mit Informationsbarrieren, können Sie! 
 
@@ -43,18 +42,18 @@ Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informatio
 
 ## <a name="what-happens-with-information-barriers"></a>Was geschieht mit Informationsbarrieren?
 
-Wenn Richtlinien für Informationsbarrieren vorhanden sind, können Personen, die nicht mit anderen bestimmten Benutzern kommunizieren sollten, diese Benutzer nicht finden, auswählen, chatten oder anrufen. Mit Informationsbarrieren sind Überprüfungen vorhanden, um eine unbefugte Kommunikation zu verhindern.
+Wenn Richtlinien für Informationsbarrieren in Kraft sind, können Personen, die nicht mit bestimmten anderen Benutzern kommunizieren sollen, diese Benutzer nicht finden, auswählen, anrufen oder mit diesen chatten. Bei Informationsbarrieren werden Überprüfungen durchgeführt, um unbefugte Kommunikation zu verhindern.
 
-Anfänglich gelten Informationsbarrieren nur für Chats und Kanäle von Microsoft Teams. In Microsoft Teams bestimmen und verhindern Richtlinien für Informationsbarrieren die folgenden Arten von nicht autorisierter Kommunikation:
-- Suchen nach einem Benutzer
+Anfänglich gelten Informationsbarrieren nur für Chats und Kanäle von Microsoft Teams. Richtlinien für Informationsbarrieren ermitteln in Microsoft Teams die folgenden Arten von nicht autorisierter Kommunikation:
+- Nach einem Benutzer suchen
 - Hinzufügen eines Mitglieds zu einem Team
-- Starten einer Chatsitzung mit einer Person
-- Starten eines Gruppenchats
-- Einladen von Personen zum teilnehmen an einer Besprechung
+- Starten einer Chatsitzung mit einer anderen Person
+- Starten eines Gruppen-Chats
+- Einladen einer Person zur Teilnahme an einer Besprechung
 - Freigeben eines Bildschirms
-- Platzieren eines Anrufs 
+- Tätigen eines Anrufs 
 
-Wenn die beteiligten Personen in eine Informations Sperrrichtlinie einbezogen werden, um die Aktivität zu verhindern, können Sie nicht fortfahren. Darüber hinaus kann potenziell jeder, der in eine Richtlinie für Informationsbarrieren eingeschlossen ist, für die Kommunikation mit anderen Personen in Microsoft Teams gesperrt werden. Wenn Personen, die von Richtlinien für Informationsbarrieren betroffen sind, Teil desselben Teams oder Gruppenchats sind, werden Sie möglicherweise aus diesen Chatsitzungen entfernt, und die weitere Kommunikation mit der Gruppe ist möglicherweise nicht zulässig.
+Wenn für die beteiligten Personen eine Richtlinie für Informationsbarrieren gilt, die diese Aktivität untersagt, können sie damit nicht fortfahren. Potenziell kann außerdem jede Person, für die eine Richtlinie für Informationsbarrieren gilt, daran gehindert werden, mit anderen Personen in Microsoft Teams zu kommunizieren. Personen, die von Richtlinien für Informationsbarrieren betroffen sind und die Teilnehmer desselben Teams- oder Gruppenchats sind, werden möglicherweise aus diesen Chatsitzungen entfernt, und die weitere Kommunikation mit der Gruppe ist u. U. nicht zulässig.
 
 Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
@@ -71,8 +70,8 @@ Weitere Informationen finden Sie unter [Compliance Solutions](https://products.o
 
 Um [Richtlinien für Informationsbarrieren zu definieren oder zu bearbeiten](information-barriers-policies.md), muss Ihnen eine der folgenden Rollen zugewiesen sein:
 
-- Microsoft 365 globaler Administrator
-- Office 365 globaler Administrator
+- Globaler Microsoft 365-Administrator
+- Globaler Office 365-Administrator
 - Complianceadministrator
 - IB-Konformitätsverwaltung (Dies ist eine neue Rolle!)
 
@@ -88,4 +87,4 @@ Sie müssen mit PowerShell-Cmdlets vertraut sein, um Richtlinien für Informatio
 
 - [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
 
-- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md) 
+- [Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md) 

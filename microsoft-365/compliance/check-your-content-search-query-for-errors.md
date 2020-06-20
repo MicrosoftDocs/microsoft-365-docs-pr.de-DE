@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Ihre Stichwortabfrage für die Inhaltssuche nach Fehlern und Tippfehlern überprüfen, beispielsweise nicht unterstützte Zeichen und boolesche Kleinbuchstaben Operatoren.
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Erfahren Sie, wie Sie Fehler und Tippfehler in ihrer Stichwortabfrage für die Inhaltssuche erkennen, bevor Sie die Suche ausführen.
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035627"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818094"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
 
@@ -38,7 +37,7 @@ Im folgenden finden Sie eine Liste der nicht unterstützten Zeichen, die wir üb
     
 - **Links-nach-rechts-und rechts-nach-links-Markierungen** -diese Zeichen sind Steuerzeichen, die zum Anzeigen der Textrichtung für Links-nach-rechts-Sprachen (wie Englisch und Spanisch) und Sprachen mit Schreibrichtung von rechts nach Links verwendet werden (beispielsweise Arabisch und Hebräisch).
     
-- **Kleinbuchstaben-boolesche Operatoren** – Wenn Sie einen booleschen Operator wie **and**, **or**und **Not** in einer Suchabfrage verwenden, muss er in Großbuchstaben eingegeben werden. Wenn eine Abfrage auf Tippfehler überprüft wird, gibt die Abfragesyntax häufig an, dass ein boolescher Operator verwendet wird, obwohl klein-Operatoren verwendet werden können; andernfalls false. Beispiel: `(WordA or WordB) and (WordC or WordD)`.
+- **Kleinbuchstaben-boolesche Operatoren** – Wenn Sie einen booleschen Operator wie **and**, **or**und **Not** in einer Suchabfrage verwenden, muss er in Großbuchstaben eingegeben werden. Wenn eine Abfrage auf Tippfehler überprüft wird, gibt die Abfragesyntax häufig an, dass ein boolescher Operator verwendet wird, obwohl klein-Operatoren verwendet werden können; andernfalls false. Beispiel: `(WordA or WordB) and (WordC or WordD)` .
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>Was passiert, wenn eine Abfrage ein nicht unterstütztes Zeichen hat?
 

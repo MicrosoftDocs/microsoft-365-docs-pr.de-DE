@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie mehr über die Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten. Dies umfasst Fall Grenzen, Indizierungs Grenzwerte und Such Grenzwerte, wenn das Such Tool zum Sammeln von Falldaten verwendet wird.
-ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie mehr über die Fall Limits, Indizierungs Grenzwerte und Such Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten.
+ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520147"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817092"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 

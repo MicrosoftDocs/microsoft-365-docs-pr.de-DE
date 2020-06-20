@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Die Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine ordnungsgemäße Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Schlüsselwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
-ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie, was die Funktionen zur Verhinderung von Datenverlust Prevention (DLP) suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
+ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327747"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819275"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 
@@ -51,7 +53,7 @@ Beispiele:
     
 Akzeptierte Monatsnamen:
   
-- Englisch
+- English
     
   - Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember
     
@@ -79,7 +81,7 @@ Beispiele:
     
 Akzeptierte Monatsnamen:
   
-- Englisch
+- English
     
   - Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember
     
@@ -209,7 +211,7 @@ Die folgenden Formate unterstützen JJ oder yyyy:
     
 Akzeptierte Monatsnamen:
   
-- Englisch
+- English
     
   - Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember
     

@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-description: Verwenden Sie das Microsoft PST-Sammlungs Tool, um das Netzwerk Ihrer Organisation zu durchsuchen, um eine Bestandsaufnahme der PST-Dateien zu erhalten, die in Ihrer Organisation verstreut sind. Nachdem Sie PST-Dateien gefunden haben, können Sie das PST-Sammlungs Tool verwenden, um Sie an einem zentralen Speicherort zu kopieren, damit Sie Sie in Office 365 importieren können.
+description: Verwenden Sie das Microsoft PST-Sammlungs Tool, um das Netzwerk Ihrer Organisation zu durchsuchen, um eine Bestandsaufnahme der PST-Dateien zu erhalten, die in Ihrer Organisation verstreut sind.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d388eb9cfe0a894e5ae5eed89e5d4ed35a79a1fc
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 4f1ac7b0bfe30ec2d8a11b4882a29c064d22ef78
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224486"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817714"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Verwenden des PST-Sammlungs Tools zum Suchen, kopieren und Löschen von PST-Dateien in Ihrer Organisation
 
@@ -54,9 +54,9 @@ Hier finden Sie eine kurze Übersicht über den Prozess der Verwendung des PST-S
     
     1. [Laden Sie das PST-Sammlungs Tool herunter](https://aka.ms/pstcollectiontool).
     
-    2. Klicken Sie im Popup **Fenster auf Save** \> **As** speichern unter, um die Datei PSTCollectionTool. zip in einem Ordner auf Ihrem lokalen Computer zu speichern. 
+    2. Klicken **Sie im Popupfenster auf Save** \> **Speichern** unter, um die PSTCollectionTool.zip Datei in einem Ordner auf dem lokalen Computer zu speichern. 
     
-    3. Extrahieren Sie die Datei PSTCollectionTool. zip in einen Ordner auf Ihrem lokalen Computer; der Standardordnername lautet PSTCollectionTool.
+    3. Extrahieren Sie die PSTCollectionTool.zip Datei in einen Ordner auf Ihrem lokalen Computer. der Standardordnername lautet PSTCollectionTool.
     
 - Zum Ausführen des PST-Sammlungs Tools in einem beliebigen Modus (suchen, blockieren, kopieren oder löschen) müssen Sie Mitglied der Gruppe Domänenadministratoren in Ihrer Active Directory Domäne sein. 
 
@@ -77,7 +77,7 @@ Der erste Schritt besteht darin, das PST-Sammlungs Tool auszuführen, um PST-Dat
   
 1. Öffnen Sie auf dem lokalen Computer eine Eingabeaufforderung (als Administrator ausführen).
     
-2. Wechseln Sie zum Ordner PSTCollectionTool (oder dem Ordner, in den Sie die PSTCollectionTool. zip-Datei extrahiert haben).
+2. Wechseln Sie zum Ordner PSTCollectionTool (oder dem Ordner, in den Sie die PSTCollectionTool.zip Datei extrahiert haben).
     
 3. Wechseln Sie zum Verzeichnis DataCollectorMaster.
     
@@ -87,7 +87,7 @@ Der erste Schritt besteht darin, das PST-Sammlungs Tool auszuführen, um PST-Dat
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
-    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster. exe ausführen, um PST-Dateien zu finden. 
+    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster.exe zum Suchen von PST-Dateien ausführen. 
     
     |Parameter * * * *|****Beschreibung****|Beispiele * * * *|
     |:-----|:-----|:-----|
@@ -100,7 +100,7 @@ Der erste Schritt besteht darin, das PST-Sammlungs Tool auszuführen, um PST-Dat
     | `ExcludedLocations` <br/> |Dieser optionale Parameter gibt Speicherorte an, die während eines Suchvorgangs übersprungen werden sollen. Sie können bestimmte OUs, Computer und Netzwerkdateifreigaben ausschließen. Sie können beispielsweise Computer ausschließen, die als SQL Server konfiguriert sind (oder andere Arten von Anwendungsservern), auf die Benutzer keinen Zugriff haben. Wenn Sie mehrere auszuschließende Orte angeben, verwenden Sie ein Semikolon (;) zum Trennen einzelner Standorte. Stellen Sie sicher, dass Sie die einzelnen Werte dieses Parameters mit doppelten Anführungszeichen ("") umgeben.  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
     | `ForceRestart` <br/> |Mit diesem optionalen Switch können Sie das Tool im Find-Modus für einen vorhandenen PST-Sammlungsauftrag ausführen. Wenn Sie den `ForceRestart` Switch verwenden, werden die Ergebnisse aus dem vorherigen Suchvorgang für den Auftrag verworfen, und das Tool überprüft die angegebenen Speicherorte erneut und erstellt neue Protokoll-und Konfigurationsdateien.  <br/> | `-ForceRestart` <br/> |
    
-    Im folgenden finden Sie ein Beispiel für die Syntax für den DataCollectorMaster. exe-Befehl unter Verwendung der tatsächlichen Werte für jeden Parameter:
+    Im folgenden finden Sie ein Beispiel für die Syntax für den DataCollectorMaster.exe-Befehl unter Verwendung der tatsächlichen Werte für jeden Parameter:
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
@@ -108,18 +108,18 @@ Der erste Schritt besteht darin, das PST-Sammlungs Tool auszuführen, um PST-Dat
 
     Nachdem Sie den Befehl ausgeführt haben, werden detaillierte Statusmeldungen angezeigt, die den Fortschritt der Suche nach PST-Dateien an den angegebenen Speicherorten anzeigen. Nach einer Weile zeigt eine abschließende Statusmeldung die Gesamtzahl der gefundenen PST-Dateien an, ob der Auftrag abgeschlossen wurde und ob Fehler aufgetreten sind. Die gleichen Statusmeldungen werden in die Log-Datei kopiert.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster. exe im Find-Modus
+### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster.exe im Find-Modus
 
 Nachdem Sie das PST-Sammlungs Tool im Suchmodus erfolgreich ausgeführt haben, werden die folgenden Dateien erstellt und in den durch die `LogLocation` und-Parameter angegebenen Ordnern gespeichert `ConfigurationLocation` . 
   
-- ** \< Jobname \> _Find_ \< DateTimeStamp \> . log** -die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
+- ** \<JobName\> _Find_ \<DateTimeStamp\> . log** -die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
     
-- ** \< Jobname \> _Find_ \< DateTimeStamp \> . CSV** – die CSV-Datei enthält eine Zeile für jede gefundene PST-Datei. Die Informationen zu den einzelnen PST-Dateien umfassen den Computer, auf dem die PST-Datei gefunden wurde, den vollständigen Dateipfad der PST-Datei, den Besitzer der PST-Datei und die Größe (in Kilobyte, KBS) der PST-Datei. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
+- ** \<JobName\> _Find_ \<DateTimeStamp\> . CSV** – die CSV-Datei enthält eine Zeile für jede gefundene PST-Datei. Die Informationen zu den einzelnen PST-Dateien umfassen den Computer, auf dem die PST-Datei gefunden wurde, den vollständigen Dateipfad der PST-Datei, den Besitzer der PST-Datei und die Größe (in Kilobyte, KBS) der PST-Datei. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
     
     > [!TIP]
     > Verwenden Sie das AutoSum-Tool in Excel, um die Gesamtgröße (in KB) aller PST-Dateien zu berechnen, die in der CSV-Datei aufgeführt sind. Anschließend können Sie einen Konvertierungs Rechner verwenden, um die Gesamtgröße in Megabyte (MB) oder Gigabyte (GB) zu konvertieren. 
   
-- ** \< Jobname \> _Find_ \< DateTimeStamp \> . XML** -die XML-Datei enthält Informationen zu den Parameterwerten, die verwendet werden, wenn Sie das Tool im Suchmodus ausgeführt haben. Diese Datei enthält auch Informationen zu jeder PST-Datei, die gefunden wurde. Die Daten in dieser Datei werden verwendet, wenn Sie das Tool erneut ausführen, um denselben Auftrag zum blockieren, erfassen oder Löschen der gefundenen PST-Dateien auszuführen. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `ConfigurationLocation` . 
+- ** \<JobName\> _Find_ \<DateTimeStamp\> . XML** – die XML-Datei enthält Informationen zu den Parameterwerten, die verwendet werden, wenn Sie das Tool im Suchmodus ausgeführt haben. Diese Datei enthält auch Informationen zu jeder PST-Datei, die gefunden wurde. Die Daten in dieser Datei werden verwendet, wenn Sie das Tool erneut ausführen, um denselben Auftrag zum blockieren, erfassen oder Löschen der gefundenen PST-Dateien auszuführen. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `ConfigurationLocation` . 
     
     > [!IMPORTANT]
     > Diese Datei nicht umbenennen, ändern oder bewegen. Sie wird vom PST-Sammlungs Tool verwendet, wenn Sie das Tool im Block-, Kopier-oder Löschmodus für denselben Auftrag erneut ausführen. 
@@ -147,7 +147,7 @@ So blockieren Sie den Zugriff auf PST-Dateien:
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
-    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster. exe ausführen, um das Erstellen und Ändern von PST-Dateien zu blockieren. 
+    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster.exe ausführen, um das Erstellen und Ändern von PST-Dateien zu blockieren. 
     
     |Parameter * * * *|****Beschreibung****|Beispiele * * * *|
     |:-----|:-----|:-----|
@@ -159,7 +159,7 @@ So blockieren Sie den Zugriff auf PST-Dateien:
     | `BlockChangesToFiles` <br/> |Verwenden Sie diese Option, um zu verhindern, dass Benutzer eine PST-Datei ändern. Wenn Sie diese Option verwenden, wird der folgende Registrierungseintrag erstellt: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` und der Datenwert wird auf 1 festgelegt. Diese Registrierungseinstellung wird auf den Computern in Ihrer Organisation durch das GPO erstellt, das erstellt wird, wenn Sie das PST-Sammlungs Tool im Block Modus ausführen.  <br/> | `-BlockChangesToFiles` <br/> |
     | `BlockNewFiles` <br/> |Verwenden Sie diese Option, um zu verhindern, dass Benutzer neue PST-Dateien erstellen, PST-Dateien in Outlook öffnen und importieren und PST-Dateien aus Outlook exportieren. Wenn Sie diese Option verwenden, wird der folgende Registrierungseintrag erstellt: `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` und der Datenwert wird auf 1 festgelegt. Diese Registrierungseinstellung wird auf den Computern in Ihrer Organisation durch das GPO erstellt, das erstellt wird, wenn Sie das PST-Sammlungs Tool im Block Modus ausführen.  <br/> | `-BlockNewFiles` <br/> |
    
-    Im folgenden finden Sie ein Beispiel für die Syntax für den DataCollectorMaster. exe-Befehl unter Verwendung der tatsächlichen Werte für jeden Parameter:
+    Im folgenden finden Sie ein Beispiel für die Syntax für den DataCollectorMaster.exe-Befehl unter Verwendung der tatsächlichen Werte für jeden Parameter:
 
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
@@ -184,7 +184,7 @@ Der nächste Schritt besteht darin, die PST-Dateien zu kopieren, die beim Ausfü
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster. exe ausführen, um PST-Dateien zu kopieren. 
+    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster.exe zum Kopieren von PST-Dateien ausführen. 
     
     |Parameter * * * *|****Beschreibung****|Beispiele * * * *|
     |:-----|:-----|:-----|
@@ -197,7 +197,7 @@ Der nächste Schritt besteht darin, die PST-Dateien zu kopieren, die beim Ausfü
     | `LogLocation` <br/> |Gibt den Ordner an, in den die Protokolldatei für den Sammelmodus kopiert wird. Dieser Parameter ist optional. Wenn Sie es nicht einschließen, wird die Protokolldatei in den Ordner kopiert, in den Sie das PST-Sammlungs Tool heruntergeladen haben. Verwenden Sie den gleichen Protokollspeicherort, den Sie beim Ausführen des Tools im Suchmodus in Schritt 1 verwendet haben, sodass alle Protokolldateien im gleichen Ordner gespeichert werden.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |Mit diesem optionalen Switch können Sie das Tool im Sammlungsmodus für einen vorhandenen PST-Sammlungsauftrag erneut ausführen. Wenn Sie das Tool zuvor im Sammelmodus ausgeführt haben, das Tool dann jedoch erneut im Suchmodus mit dem Switch ausgeführt haben, `ForceRestart` um Speicherorte für PST-Dateien erneut zu überprüfen, können Sie diese Option verwenden, um das Tool im Sammlungsmodus erneut auszuführen und die PST-Dateien erneut zu kopieren, die beim erneuten Scannen der Speicherorte gefunden wurden. Bei Verwendung des `ForceRestart` Schalters im Sammlungsmodus ignoriert das Tool alle vorherigen Auflistungs Vorgänge und versucht, die PST-Dateien von Grund auf neu zu kopieren.  <br/> | `-ForceRestart` <br/> |
    
-    Im folgenden finden Sie ein Beispiel für die Syntax für das Tool DataCollectorMaster. exe unter Verwendung der tatsächlichen Werte für die einzelnen Parameter:
+    Im folgenden finden Sie ein Beispiel für die Syntax für das DataCollectorMaster.exe-Tool unter Verwendung der tatsächlichen Werte für die einzelnen Parameter:
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -205,18 +205,18 @@ Der nächste Schritt besteht darin, die PST-Dateien zu kopieren, die beim Ausfü
 
     Nachdem Sie den Befehl ausgeführt haben, werden detaillierte Statusmeldungen angezeigt, die den Fortschritt des Sammelns von PST-Dateien anzeigen, die in Schritt 1 gefunden wurden. Nach einer Weile zeigt eine abschließende Statusmeldung an, ob Fehler aufgetreten sind und der Speicherort, an den das Protokoll kopiert wird. Die gleichen Statusmeldungen werden in die Log-Datei kopiert.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster. exe im Sammelmodus
+### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster.exe im Sammelmodus
 
-Nachdem Sie DataCollectorMaster. exe erfolgreich im Sammelmodus ausgeführt haben, werden die folgenden Dateien erstellt und in den durch die `LogLocation` und-Parameter angegebenen Ordnern gespeichert `ConfigurationLocation` . 
+Nachdem Sie DataCollectorMaster.exe im Sammelmodus erfolgreich ausgeführt haben, werden die folgenden Dateien erstellt und in den durch die `LogLocation` und-Parameter angegebenen Ordnern gespeichert `ConfigurationLocation` . 
   
-- ** \< Jobname \> _sammeln_von \< DateTimeStamp \> . log** – die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
+- ** \<JobName\> _Collect_ \<DateTimeStamp\> . log** -die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
     
-- ** \< Jobname \> _Collect_ \< DateTimeStamp \> . XML** – die XML-Datei enthält nur Informationen zu den Parameterwerten, die verwendet wurden, wenn das Tool im Sammelmodus ausgeführt wurde. Die Daten in dieser Datei werden verwendet, wenn Sie das Tool DataCollectorMaster. exe erneut ausführen, um PST-Dateien zu löschen. siehe [Schritt 5](#step-5-delete-the-pst-files-found-on-your-network).
+- ** \<JobName\> _Collect_ \<DateTimeStamp\> . XML** – die XML-Datei enthält nur Informationen zu den Parameterwerten, die verwendet wurden, wenn das Tool im Sammelmodus ausgeführt wurde. Die Daten in dieser Datei werden verwendet, wenn Sie das DataCollectorMaster.exe-Tool erneut ausführen, um PST-Dateien zu löschen. siehe [Schritt 5](#step-5-delete-the-pst-files-found-on-your-network).
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>Schritt 4: Importieren der PST-Dateien in Office 365
 
-Nachdem Sie die in Schritt 1 gefundenen PST-Dateien gesammelt haben, besteht der nächste Schritt darin, Sie in Office 365 in Postfächer zu importieren. Im Rahmen des Importvorgangs müssen Sie eine CSV-Zuordnungsdatei erstellen, die eine Zeile jeder PST-Datei enthält, die Sie importieren möchten. Die Informationen in jeder Zeile geben den Namen der PST-Datei, die e-Mail-Adresse des Benutzers und die Angabe, ob die PST-Datei in das primäre oder Archivpostfach des Benutzers importiert werden soll. Verwenden Sie die Informationen in der **Jobname \> _Find_ \< DateTimeStamp. CSV** -Datei (erstellt in Schritt) 1, um Sie beim Erstellen der CSV-Zuordnungsdatei zu unterstützen. 
+Nachdem Sie die in Schritt 1 gefundenen PST-Dateien gesammelt haben, besteht der nächste Schritt darin, Sie in Office 365 in Postfächer zu importieren. Im Rahmen des Importvorgangs müssen Sie eine CSV-Zuordnungsdatei erstellen, die eine Zeile jeder PST-Datei enthält, die Sie importieren möchten. Die Informationen in jeder Zeile geben den Namen der PST-Datei, die e-Mail-Adresse des Benutzers und die Angabe, ob die PST-Datei in das primäre oder Archivpostfach des Benutzers importiert werden soll. Verwenden Sie die Informationen in der **Jobname \> _finden_ \<DateTimeStamp.csv** Datei (erstellt in Schritt) 1, die Sie beim Erstellen der CSV-Zuordnungsdatei unterstützt. 
   
 Eine Schritt-für-Schritt-Anleitung zum Importieren von PST-Dateien in Office 365 finden Sie in einem der folgenden Themen:
   
@@ -239,7 +239,7 @@ Nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Onl
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster. exe ausführen, um PST-Dateien zu löschen. 
+    In der folgenden Tabelle werden die Parameter und die erforderlichen Werte beschrieben, wenn Sie den Befehl DataCollectorMaster.exe zum Löschen von PST-Dateien ausführen. 
     
     |Parameter * * * *|****Beschreibung****|Beispiele * * * *|
     |:-----|:-----|:-----|
@@ -250,7 +250,7 @@ Nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Onl
     | `LogLocation` <br/> |Gibt den Ordner an, in den die Protokolldatei für den Löschmodus kopiert wird. Dieser Parameter ist optional. Wenn Sie es nicht einschließen, wird die Protokolldatei in den Ordner kopiert, in den Sie das PST-Sammlungs Tool heruntergeladen haben. Verwenden Sie den gleichen Protokollspeicherort, den Sie beim Ausführen des Tools in den Modi "suchen" und "sammeln" in Schritt 1 und Schritt 3 verwendet haben, damit alle Protokolldateien im gleichen Ordner gespeichert werden.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |Mit diesem optionalen Switch können Sie das Tool im Löschmodus für einen vorhandenen PST-Sammlungsauftrag erneut ausführen. Wenn Sie das Tool zuvor im Löschmodus ausgeführt haben, das Tool dann jedoch erneut im Suchmodus mit dem Switch ausgeführt haben, `ForceRestart` um Speicherorte für PST-Dateien erneut zu überprüfen, können Sie diese Option verwenden, um das Tool im Löschmodus erneut auszuführen und die PST-Dateien zu löschen, die beim erneuten Scannen der Speicherorte gefunden wurden. Bei Verwendung des `ForceRestart` Schalters im Löschmodus ignoriert das Tool alle vorherigen Löschvorgänge und versucht erneut, die PST-Dateien zu löschen.  <br/> | `-ForceRestart` <br/> 
 
-    Im folgenden finden Sie ein Beispiel für die Syntax für das Tool DataCollectorMaster. exe unter Verwendung der tatsächlichen Werte für die einzelnen Parameter:
+    Im folgenden finden Sie ein Beispiel für die Syntax für das DataCollectorMaster.exe-Tool unter Verwendung der tatsächlichen Werte für die einzelnen Parameter:
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -258,10 +258,10 @@ Nachdem die gefundenen und gesammelten PST-Dateien in Office 365 in Exchange Onl
 
     Nachdem Sie den Befehl ausgeführt haben, werden detaillierte Statusmeldungen angezeigt, die den Fortschritt des Löschens der PST-Dateien anzeigen, die in Schritt 1 gefunden und in Schritt 3 gesammelt wurden. Nach einer Weile zeigt eine abschließende Statusmeldung an, ob Fehler aufgetreten sind und der Speicherort, an den das Protokoll kopiert wird. Die gleichen Statusmeldungen werden in die Log-Datei kopiert.
     
-### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster. exe im Löschmodus
+### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>Ergebnisse der Ausführung von DataCollectorMaster.exe im Löschmodus
 
-Nachdem Sie DataCollectorMaster. exe erfolgreich im Löschmodus ausgeführt haben, werden die folgenden Dateien erstellt und in dem durch die `LogLocation` -und-Parameter angegebenen Ordner gespeichert `ConfigurationLocation` . 
+Nachdem Sie DataCollectorMaster.exe im Löschmodus erfolgreich ausgeführt haben, werden die folgenden Dateien erstellt und in dem durch die `LogLocation` -und-Parameter angegebenen Ordner gespeichert `ConfigurationLocation` . 
   
-- ** \< Jobname \> _Delete_ \< DateTimeStamp \> . log** – die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
+- ** \<JobName\> _Delete_ \<DateTimeStamp\> . log** -die Protokolldatei enthält die Statusmeldungen, die angezeigt wurden. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `LogLocation` . 
     
-- ** \< Jobname \> _Delete_ \< DateTimeStamp \> . XML** – die XML-Datei enthält nur Informationen zu den Parameterwerten, die verwendet wurden, wenn das Tool im Löschmodus ausgeführt wurde. Außerdem werden der Name und der Dateipfad jeder gelöschten PST-Datei aufgelistet. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `ConfigurationLocation` . 
+- ** \<JobName\> _Delete_ \<DateTimeStamp\> . XML** – die XML-Datei enthält nur Informationen zu den Parameterwerten, die verwendet wurden, wenn das Tool im Löschmodus ausgeführt wurde. Außerdem werden der Name und der Dateipfad jeder gelöschten PST-Datei aufgelistet. Diese Datei wird in dem durch den-Parameter angegebenen Ordner erstellt `ConfigurationLocation` . 

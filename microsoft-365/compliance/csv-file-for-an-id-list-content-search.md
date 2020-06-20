@@ -15,17 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
-description: Verwenden Sie die CSV-Datei "results. csv" oder "nicht indexierte Elemente" aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die eine bestimmte e-Mail-Nachricht zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
-ms.openlocfilehash: f3b815f2268121e9adc47de2c24a4e23b44adce5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Verwenden Sie CSV-Dateien aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die bestimmte e-Mail-Nachrichten zurückgibt.
+ms.openlocfilehash: 7b63a78d34306cf3afcef49276e584bc816c107f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942888"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817974"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Erstellen einer CSV-Datei für eine Inhaltssuche anhand der ID-Liste
 
-Sie können mithilfe einer Liste von Exchange-IDs nach bestimmten Post Fachnachrichten und anderen Postfachelementen suchen. Um eine ID-Listensuche (formell als gezielte Suche bezeichnet) zu erstellen, senden Sie eine CSV-Datei (Comma Separated Value), die die zu suchenden Postfachelemente identifiziert. Für diese CSV-Datei verwenden Sie die Datei **results. CSV** oder die Datei nicht **indizierte Elemente. CSV** , die beim Exportieren der Inhalts Suchergebnisse oder Exportieren eines Inhaltssuche-Berichts aus und der vorhandenen Inhaltssuche enthalten sind. Bearbeiten Sie dann eine dieser Dateien, um anzugeben, nach welchen Elementen gesucht werden soll, und erstellen Sie dann eine neue ID-Listensuche, und senden Sie die CSV-Datei.
+Sie können mithilfe einer Liste von Exchange-IDs nach bestimmten Post Fachnachrichten und anderen Postfachelementen suchen. Um eine ID-Listensuche (formell als gezielte Suche bezeichnet) zu erstellen, senden Sie eine CSV-Datei (Comma Separated Value), die die zu suchenden Postfachelemente identifiziert. Für diese CSV-Datei verwenden Sie die **Results.csv** Datei oder die nicht **Indexierte Items.csv** Datei, die beim Exportieren der Inhalts Suchergebnisse oder beim Exportieren eines Inhalts Suchberichts aus einer vorhandenen Inhaltssuche enthalten ist. Bearbeiten Sie dann eine dieser Dateien, um anzugeben, nach welchen Elementen gesucht werden soll, und erstellen Sie dann eine neue ID-Listensuche, und senden Sie die CSV-Datei.
 
 Im folgenden finden Sie eine kurze Übersicht über den Prozess zum Erstellen einer ID-Listensuche.
 
@@ -37,14 +39,14 @@ Im folgenden finden Sie eine kurze Übersicht über den Prozess zum Erstellen ei
 
     - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
 
-3. Bearbeiten Sie die Datei **results. CSV** oder die nicht **indizierten Elemente. CSV** , und identifizieren Sie die spezifischen Postfachelemente, die in die ID-Listensuche einbezogen werden sollen. Lesen Sie die [Anweisungen](#prepare-the-csv-file-for-an-id-list-search) zum Vorbereiten einer CSV-Datei für eine ID-Listensuche.
+3. Bearbeiten Sie die **Results.csv** Datei oder den nicht **indizierten Items.csv** , und identifizieren Sie die spezifischen Postfachelemente, die in die ID-Listensuche einbezogen werden sollen. Lesen Sie die [Anweisungen](#prepare-the-csv-file-for-an-id-list-search) zum Vorbereiten einer CSV-Datei für eine ID-Listensuche.
 
 4. Erstellen Sie eine neue ID-Listensuche (Lesen Sie die [Anweisungen](#create-an-id-list-search)), und übermitteln Sie die vorbereitete CSV-Datei. Die erstellte Suchabfrage sucht nur nach den Elementen, die in der CSV-Datei ausgewählt sind.
 
 > [!NOTE]
 > Die Suche von ID-Listen wird nur für Postfachelemente unterstützt. Sie können nicht nach SharePoint-und OneDrive-Dokumenten in einer ID-Listensuche suchen.
 
- **Gründe für die Erstellung einer ID-Listensuche** Wenn Sie nicht ermitteln können, ob ein Element auf eine eDiscovery-Anforderung basierend auf den Metadaten in den CSV-Dateien **results. CSV** oder **unindexierte Elemente** reagiert, können Sie eine ID-Listensuche verwenden, um das Element zu suchen, in der Vorschau anzuzeigen und dann zu exportieren, um festzustellen, ob es auf den Fall reagiert, den Sie untersuchen. ID-Listensuche wird in der Regel zum Suchen und Zurückgeben einer bestimmten Gruppe von nicht indizierten Elementen verwendet.
+ **Gründe für die Erstellung einer ID-Listensuche** Wenn Sie nicht ermitteln können, ob ein Element auf einer eDiscovery-Anforderung basierend auf den Metadaten in den **Results.csv** -oder nicht **indizierten Items.csv** -Dateien reagiert, können Sie eine ID-Listensuche verwenden, um das Element zu suchen, in der Vorschau anzuzeigen und dann zu exportieren, um zu ermitteln, ob es auf den Fall reagiert, den Sie untersuchen. ID-Listensuche wird in der Regel zum Suchen und Zurückgeben einer bestimmten Gruppe von nicht indizierten Elementen verwendet.
 
 ## <a name="prepare-the-csv-file-for-an-id-list-search"></a>Vorbereiten der CSV-Datei für eine ID-Listensuche
 
@@ -52,7 +54,7 @@ Nachdem Sie die Suchergebnisse oder den Bericht für eine Inhaltssuche exportier
 
 Beachten Sie, dass Sie eine CSV-Datei aus einer Suche verwenden können, die SharePoint-Websites und OneDrive-Konten enthielt, aber Sie können *nur* Postfachelemente für eine ID-Listensuche auswählen. Wenn Sie ein Dokument in SharePoint oder OneDrive auswählen, wird die Überprüfung der CSV-Datei beim Erstellen einer ID-Listensuche nicht ausgeführt.
 
-1. Öffnen Sie die CSV-Datei " **results. CSV** " oder " **unindexierte Elemente** " in Excel.
+1. Öffnen Sie die Items.csvDatei **Results.csv** oder nicht **indiziert** in Excel.
 
 2. Geben Sie in der **ausgewählten** Spalte **Ja** in die Zelle ein, die dem Element entspricht, nach dem Sie suchen möchten. Wiederholen Sie diesen Schritt für jedes Element, nach dem Sie suchen möchten.
 
@@ -80,7 +82,7 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 
 1. Wechseln Sie im Security & Compliance Center zu **Such** \> **Inhaltssuche**.
 
-2. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen, und klicken Sie dann auf **nach ID-Liste suchen**.
+2. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![ Symbol ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen, und klicken Sie dann auf **nach ID-Liste suchen**.
 
     ![Klicken Sie in der Dropdownliste neue Suche auf nach ID-Liste suchen.](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 

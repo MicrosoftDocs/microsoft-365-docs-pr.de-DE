@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: Die postfachüberwachungsprotokollierung ist standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371429"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817834"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -110,7 +111,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**Kopieren**|Eine Nachricht wurde in einen anderen Ordner kopiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Ein Element wurde im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt (beispielsweise wird eine neue Besprechungsanfrage erstellt). Beachten Sie, dass das Erstellen, Senden oder Empfangen einer Nachricht nicht überwacht wird. Auch das Erstellen eines Postfachordners wird nicht überwacht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Standard**||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Auf e-Mail-Daten wird über e-Mail-Protokolle und-Clients zugegriffen. Dieser Wert steht nur für Benutzer von E5-oder E5-Konformitäts Abonnements zur Verfügung. Ausführliche Informationen finden Sie unter [Access to wichtige Events for Investigations](advanced-audit.md#access-to-crucial-events-for-investigations).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|Der Benutzer hat sich bei seinem Postfach angemeldet. |||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -120,9 +121,9 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**RecordDelete**|Ein Element, das als Datensatz gekennzeichnet ist, wurde vorläufig gelöscht (in den Ordner "refundable Items" verschoben). Elemente, die als Datensätze bezeichnet werden, können nicht dauerhaft gelöscht werden (bereinigt aus dem Ordner "Wiederherstellbare Elemente").|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**RemoveFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
-|**SendAs**|Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|Eine Nachricht oder deren Eigenschaften wurden geändert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Eine Kalender Delegierung wurde einem Postfach zugewiesen. Der Stellvertretungszugriff gibt anderen Personen in der gleichen Organisation die Berechtigung zum Verwalten des Kalenders des Postfachbesitzers.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|Eine andere Aufbewahrungs Bezeichnung wird auf ein e-Mail-Element angewendet (einem Element kann nur eine Aufbewahrungs Bezeichnung zugewiesen werden).|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -147,20 +148,20 @@ Denken Sie daran, dass ein Administrator mit Vollzugriff-Berechtigung für ein M
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Eine Nachricht wurde unter Verwendung der SendAs-Berechtigung gesendet.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SendOnBehalf**|Eine Nachricht wurde unter Verwendung der SendOnBehalf-Berechtigung gesendet. |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|Eine Nachricht oder deren Eigenschaften wurden geändert.|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Überprüfen, ob standardmäßige Postfachaktionen für jeden Anmeldetyp protokolliert werden
 
 Durch Standardeinstellungen für die postfachüberwachung wird allen Postfächern eine neue *DefaultAuditSet* -Eigenschaft hinzugefügt. Der Wert dieser Eigenschaft gibt an, ob die standardmäßigen Postfachaktionen (verwaltet von Microsoft) für das Postfach überwacht werden.
 
-Um den Wert für Benutzerpostfächer oder freigegebene Postfächer anzuzeigen, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
+Um den Wert für Benutzerpostfächer oder freigegebene Postfächer anzuzeigen, ersetzen Sie \<MailboxIdentity\> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Wenn Sie den Wert in Microsoft 365-Gruppen Postfächern anzeigen möchten, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias oder die e-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
+Um den Wert in Microsoft 365-Gruppen Postfächern anzuzeigen, ersetzen Sie \<MailboxIdentity\> durch den Namen, den Alias oder die e-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Weitere Informationen finden Sie im Abschnitt [ändern oder Wiederherstellen von
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Anzeigen der Postfachaktionen, die für Postfächer angemeldet sind
 
-Wenn Sie die Postfachaktionen anzeigen möchten, die derzeit für Benutzerpostfächer oder freigegebene Postfächer angemeldet sind, ersetzen Sie \< Mailbox Identity \> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle in Exchange Online PowerShell aus.
+Wenn Sie die Postfachaktionen anzeigen möchten, die derzeit für Benutzerpostfächer oder freigegebene Postfächer angemeldet sind, ersetzen Sie \<MailboxIdentity\> durch den Namen, den Alias, die e-Mail-Adresse oder den Benutzerprinzipalnamen (username) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle in Exchange Online PowerShell aus.
 
 > [!NOTE]
 > Obwohl Sie den Switch den `-GroupMailbox` folgenden **Get-Mailbox-** Befehlen für Microsoft 365-Gruppen Postfächer hinzufügen können, glauben Sie nicht, welche Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Microsoft 365-Gruppen Postfächer überwacht werden, werden im Abschnitt [Postfachaktionen für Microsoft 365-Gruppen Postfächer](#mailbox-actions-for-microsoft-365-group-mailboxes) weiter oben in diesem Thema beschrieben.
@@ -316,7 +317,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Derzeit können Sie die postfachüberwachung für bestimmte Postfächer nicht deaktivieren, wenn die postfachüberwachung standardmäßig in Ihrer Organisation aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled* -Postfacheigenschaft auf **false** ignoriert.
 
-Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Zum Beispiel:
+Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in Exchange Online PowerShell verwenden, um zu verhindern *, dass alle Post Fach* Aktionen durch die angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Beispiel:
 
 - Postfachbesitzer Aktionen, die von den umgangenen Benutzern ausgeführt werden, werden nicht protokolliert.
 
@@ -324,7 +325,7 @@ Sie können jedoch weiterhin das Cmdlet " **MailboxAuditBypassAssociation** " in
 
 - Von den umgangenen Benutzern ausgeführte Administratoraktionen werden nicht protokolliert.
 
-Wenn Sie die postfachüberwachungsprotokollierung für einen bestimmten Benutzer umgehen möchten, ersetzen Sie \< Mailbox Identity \> durch den Namen, die e-Mail-Adresse, den Alias oder den Benutzerprinzipalnamen (username) des Benutzers, und führen Sie den folgenden Befehl aus:
+Um die postfachüberwachungsprotokollierung für einen bestimmten Benutzer zu umgehen, ersetzen Sie \<MailboxIdentity\> durch den Namen, die e-Mail-Adresse, den Alias oder den Benutzerprinzipalnamen (username) des Benutzers, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true

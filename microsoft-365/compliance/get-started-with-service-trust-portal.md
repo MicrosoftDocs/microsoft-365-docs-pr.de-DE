@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Für Microsoft 365, Azure und Dynamics 365 Online Regulatory Compliance Reports, um sich über Audits von Drittanbietern zu informieren, erfahren Sie, wie Microsoft Kundendaten sicher hält und wie Sie mit ISO, HIPAA, NIST, FINRA, dsgvo und FedRAMP kompatibel sein können, wenn Sie diese Online Dienste verwenden.
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Sie auf das Microsoft-Dienst Vertrauensstellungs Portal zugreifen und es verwenden, um Sicherheits-, Datenschutz-und Compliance-Verfahren zu unterstützen.
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632446"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817624"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust-Portal
 

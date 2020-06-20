@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
-description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Wir erstellen kontinuierlich neue Artikel, aktualisieren bestehende und nehmen daran Änderungen basierend auf Ihrem Feedback vor. Erfahren Sie, was in diesem Monat alles neu ist.
+description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401199"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818965"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 

@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Microsoft 365, mit der Elemente automatisch in das Archivpostfach eines Benutzers verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: In diesem Artikel erfahren Sie, wie Sie eine Archivierungs-und Löschrichtlinie in Microsoft 365 erstellen, mit der Elemente automatisch in das Archivpostfach eines Benutzers verschoben werden.
+ms.openlocfilehash: e5f35938241608a247c625e8411821572d75b18e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222526"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819215"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation
 
@@ -48,7 +48,7 @@ In den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrich
     
 Sie können einige oder alle Schritte in diesem Artikel befolgen, um eine Archivierungs-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess auf einigen Postfächern zu testen, bevor er für alle Postfächer in Ihrer Organisation implementiert wird.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>Bevor Sie eine Richtlinie zum Archivieren und löschen einrichten
 
 - Sie müssen ein globaler Administrator in Ihrer Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     

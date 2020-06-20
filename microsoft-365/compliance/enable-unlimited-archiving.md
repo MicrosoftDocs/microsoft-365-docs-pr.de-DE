@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: Informationen zum Aktivieren der automatisch wachsenden Archivierung, die Ihren Benutzern unbegrenzten Speicherplatz für Ihre Exchange Online Postfächer bietet. Sie können die automatisch expandierende Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d550e562e8226d586a9538f9f366e3283ad0437
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631710"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817824"
 ---
 # <a name="enable-unlimited-archiving--admin-help"></a>Unbegrenzte Archivierung aktivieren – Administratorhilfe
 
 Sie können die Exchange Online automatisch expandierende Archivierungsfunktion verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu aktivieren. Wenn die automatisch expandierende Archivierung aktiviert ist, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn er sich dem Speichergrenzwert nähert. Das Ergebnis ist eine unbegrenzte Speicherkapazität für Postfächer. Sie können die automatisch expandierende Archivierung für jeden in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie unter [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-enable-auto-expanding-archiving"></a>Vor dem Aktivieren der automatisch wachsenden Archivierung
 
 - Sie müssen ein globaler Administrator in Ihrer Organisation oder ein Mitglied der Rollengruppe Organisationsverwaltung in Ihrer Exchange Online Organisation sein, um die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle "e-Mail-Empfänger" zugewiesen ist, um die automatisch erweiterte Archivierung für bestimmte Benutzer zu aktivieren.
     
@@ -98,9 +99,9 @@ Ein Wert von `True` gibt an, dass die automatisch expandierende Archivierung fü
   
 Beachten Sie nach Aktivierung der automatisch expandierenden Archivierung Folgendes:
   
-- Wenn Sie den Befehl " **OrganizationConfig-AutoExpandingArchive** " ausführen, um die automatisch expandierende Archivierung für Ihre Organisation zu aktivieren, müssen Sie das **Enable-Mailbox-AutoExpandingArchive-** Steuergerät nicht für einzelne Postfächer ausführen. Wenn Sie das Cmdlet " **OrganizationConfig** " ausführen, um die automatisch expandierende Archivierung für Ihre Organisation zu aktivieren, ändert sich die *AutoExpandingArchiveEnabled* -Eigenschaft für Benutzerpostfächer nicht in `True`.
+- Wenn Sie den Befehl " **OrganizationConfig-AutoExpandingArchive** " ausführen, um die automatisch expandierende Archivierung für Ihre Organisation zu aktivieren, müssen Sie das **Enable-Mailbox-AutoExpandingArchive-** Steuergerät nicht für einzelne Postfächer ausführen. Wenn Sie das Cmdlet " **OrganizationConfig** " ausführen, um die automatisch expandierende Archivierung für Ihre Organisation zu aktivieren, ändert sich die *AutoExpandingArchiveEnabled* -Eigenschaft für Benutzerpostfächer nicht in `True` .
     
-- Dementsprechend werden die Werte für die Postfacheigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* nicht geändert, wenn Sie die automatisch expandierende Archivierung aktivieren. Wenn Sie die automatisch expandierende Archivierung für ein Benutzerpostfach aktivieren und die *AutoExpandingArchiveEnabled* -Eigenschaft auf `True`festgelegt ist, werden die Eigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* ignoriert. Im folgenden finden Sie ein Beispiel für diese Postfacheigenschaften, nachdem die automatisch erweiterte Archivierung für das Postfach eines Benutzers aktiviert wurde. 
+- Dementsprechend werden die Werte für die Postfacheigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* nicht geändert, wenn Sie die automatisch expandierende Archivierung aktivieren. Wenn Sie die automatisch expandierende Archivierung für ein Benutzerpostfach aktivieren und die *AutoExpandingArchiveEnabled* -Eigenschaft auf festgelegt ist `True` , werden die Eigenschaften *ArchiveQuota* und *para ArchiveWarningQuota* ignoriert. Im folgenden finden Sie ein Beispiel für diese Postfacheigenschaften, nachdem die automatisch erweiterte Archivierung für das Postfach eines Benutzers aktiviert wurde. 
     
     ![ArchiveQuota-und para ArchiveWarningQuota-Eigenschaften werden ignoriert, nachdem Sie die automatisch erweiterte Archivierung aktiviert haben.](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 

@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Hier erfahren Sie, wie Sie ein Postfach auf das Beweissicherungsverfahren setzen und während einer Untersuchung alle Postfachinhalte beibehalten.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351050"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818044"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
@@ -35,7 +37,7 @@ Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstelle
     
 - Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="assign-an-exchange-online-plan-2-license"></a>Zuweisen einer Lizenz für Exchange Online Plan 2
 
 - Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
     
@@ -84,7 +86,7 @@ Weitere Informationen finden Sie unter [Set-Mailbox](https://docs.microsoft.com/
 
 Beim normalen Löschworkflow wird ein dauerhaft gelöschtes (UMSCHALT+ENTF) oder aus dem Ordner „Gelöschte Elemente" gelöschtes Postfachelement in den Unterordner „Löschvorgänge" des Ordners „Wiederherstellbare Elemente" verschoben. Beim Anwenden einer Löschrichtlinie (hierbei handelt es sich um ein Aufbewahrungstag mit einer konfigurierten Aufbewahrungsaktion) werden Elemente auch nach Ablauf des Aufbewahrungszeitraums in den Unterordner „Löschvorgänge" verschoben. Beim dauerhaften Löschen eines Elements im Ordner „Wiederherstellbare Elemente" durch einen Benutzer oder nach Ablauf der Aufbewahrungsdauer wird das Element in den Unterordner „Endgültige Löschvorgänge" des Ordners „Wiederherstellbare Elemente" verschoben und zum endgültigen Löschen markiert. Das Element wird beim nächsten Verarbeiten des Postfachs vom Assistenten für verwalteten Ordner aus Exchange dauerhaft gelöscht.
 
-Ist für das Postfach das Beweissicherungsverfahren aktiviert, werden die Elemente im Unterordner „Endgültige Löschvorgänge" für die für das Beweissicherungsverfahren angegebene Aufbewahrungsdauer aufbewahrt. Die Aufbewahrungsdauer wird anhand des ursprünglichen Datums berechnet,an dem ein Element empfangen oder erstellt wurde und legt fest, wie lange die Elemente im Unterordner „Endgültige Löschvorgänge" aufbewahrt werden. Wenn die Aufbewahrungsdauer für ein Element im Unterordner „Endgültige Löschvorgänge" abläuft, wird das Element zum endgültigen Löschen vorgemerkt und beim nächsten Verarbeiten des Postfachs vom Assistenten für verwalteten Ordner dauerhaft aus Exchange gelöscht. Wenn die dauerhafte Aufbewahrung für ein Postfach aktiviert ist, werden die Elemente nicht aus dem Unterordner „Endgültige Löschvorgänge" gelöscht.
+When a mailbox is placed on Litigation Hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation Hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
 
 Die folgende Abbildung zeigt die Unterordner in den Ordnern „Wiederherstellbare Elemente" und den Aufbewahrungsworkflowprozess.
 

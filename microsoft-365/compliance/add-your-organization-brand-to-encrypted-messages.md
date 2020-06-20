@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Wenden Sie das Branding Ihrer Organisation auf die verschlüsselten e-Mail-Nachrichten Ihrer Organisation und auf den Inhalt des Verschlüsselungs Portals an.
-ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+- seo-marvel-jun2020
+description: Erfahren Sie, wie Office 365 globale Administratoren das Branding Ihrer Organisation auf verschlüsselte e-Mail-Nachrichten & Inhalt des Verschlüsselungs Portals anwenden können.
+ms.openlocfilehash: 6ec13a9d986019e6eb91d1b7a395f1c6199fe12a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679109"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818658"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten
 

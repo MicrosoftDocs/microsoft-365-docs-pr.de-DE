@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Erfahren Sie, wie Sie mithilfe &amp; des Security Compliance Centers auf Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Centers auf Advanced eDiscovery zugreifen und das Prozessmodul für einen Fall ausführen.  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626471"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818904"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls und Laden von Daten in "Advanced eDiscovery" (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In diesem Abschnitt wird die Funktionalität des Advanced eDiscovery Process-Moduls beschrieben. 
   
@@ -41,9 +42,9 @@ Advanced eDiscovery stellt Systemmetadaten-Werte bereit, beispielsweise nahe dop
   
 Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
   
-1. [Öffnen Sie das &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Öffnen Sie die Sicherheits &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
     
-2. Wechseln Sie **zu &amp; Search Investigation** \> **eDiscovery** , und klicken Sie dann auf **Gehe zu Advanced eDiscovery**.
+2. Wechseln Sie zu **Search &amp; Investigation** \> **eDiscovery** , und klicken Sie dann auf **Gehe zu Advanced eDiscovery**.
     
 3. Wählen Sie in Advanced eDiscovery den entsprechenden Fall auf der Seite angezeigte **Anfragen** aus, und klicken Sie auf **Gehe zu Groß-/Kleinschreibung**.
     
@@ -77,11 +78,11 @@ Führen Sie die folgenden Schritte aus, um den Prozess auszuführen.
     
 6. Klicken Sie zunächst auf **verarbeiten**. Nach Abschluss werden die Prozessergebnisse angezeigt.
     
-7. Optional Wenn Sie einer bestimmten Depotbank Datenquellen zuweisen müssen, können Sie Verwalter Namen in **Verwalter** \> **Verwalten** und \> Zuweisungen **in Verwalter zuweisen hinzu** fügen und **Bearbeiten.** 
+7. Optional Wenn Sie einer bestimmten Depotbank Datenquellen zuweisen müssen, können Sie Verwalter Namen in **Verwalter** \> **Verwalten** und Zuweisungen in **Verwalter zuweisen** hinzufügen und bearbeiten \> **Assign**. 
     
 Wenn Sie den Fall hinzufügen, können Sie den Vorgang erneut ausführen.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

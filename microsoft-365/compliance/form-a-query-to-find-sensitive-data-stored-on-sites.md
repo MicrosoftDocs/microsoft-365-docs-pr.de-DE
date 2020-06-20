@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Mit der Verhinderung von Datenverlust (Data Loss Prevention, DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: Verwenden Sie DLP (Data Loss Prevention) in SharePoint Online, um Dokumente zu ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten.
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327913"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817704"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -33,7 +33,7 @@ Benutzer speicher häufig vertrauliche Daten wie Kreditkarten- und Sozialversich
   
 ## <a name="forming-a-basic-dlp-query"></a>Erstellen einer einfachen DLP-Abfrage
 
-Eine einfache DLP-Abfrage besteht aus drei Teilen: SensitiveType (Typ vertraulicher Informationen), Anzahlbereich und Konfidenzbereich. Wie in der folgenden Grafik dargestellt, ist **sensitivtype: " \< Type \> "** erforderlich, und beide** | \< Zähl Bereichs \> ** -und** | \< Konfidenz \> Bereiche** sind optional. 
+Eine einfache DLP-Abfrage besteht aus drei Teilen: SensitiveType (Typ vertraulicher Informationen), Anzahlbereich und Konfidenzbereich. Wie in der folgenden Grafik dargestellt, ist **sensitivtype: " \<type\> "** erforderlich und beide **|\<count range\>** **|\<confidence range\>** sind optional. 
   
 ![Beispielabfrage unterteilt in Required und optional](../media/DLP-query-example-text.png)
   
@@ -88,7 +88,7 @@ Nicht alle Abfragen sind gleich. In der folgenden Tabelle sind Beispiele für Ab
    
 ## <a name="for-more-information"></a>Weitere Informationen
 
-- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Ausführen einer Inhaltssuche](content-search.md)
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
   

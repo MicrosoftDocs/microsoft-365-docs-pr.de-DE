@@ -19,13 +19,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security & Compliance Center durchsuchen können.  '
-ms.openlocfilehash: eb733d17b4d14d56bec3fc475735921d72e8ce27
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.custom:
+- seo-marvel-apr2020
+description: Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie im Office 365 Security & Compliance Center durchsuchen können.
+ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224496"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817514"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -52,20 +54,20 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|**Beispiele**|**Von den Beispielen zurückgegebene Suchergebnisse**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames: PPTX|Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der PPTX-Dateierweiterung zurückgegeben.|
+|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der PPTX-Dateierweiterung zurückgegeben.|
 |Bcc|Das Feld "Bcc" einer e-Mail-Nachricht. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|In allen Beispielen werden Nachrichten mit dem Namen "Pilar Pinilla" im Bcc-Feld zurückgegeben.|
 |Kategorie| Die Kategorien, nach denen gesucht wird. Kategorien können von Benutzern mithilfe von Outlook oder Outlook im Internet (früher bekannt als Outlook Web App) definiert werden. Die folgenden Werte sind möglich:  <br/><br/>  blau  <br/>  grün  <br/>  orange  <br/>  violett  <br/>  rot  <br/>  gelb|`category:"Red Category"`|Nachrichten, denen in den Quellpostfächern die rote Kategorie zugewiesen wurde.|
 |Cc|Das Feld "CC" einer e-Mail-Nachricht. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In beiden Beispielen werden Nachrichten mit Pilar Pinilla im Feld CC angegeben.|
 |Folderid|Die Ordner-ID (GUID) eines bestimmten Postfachordners. Wenn Sie diese Eigenschaft verwenden, müssen Sie das Postfach durchsuchen, in dem sich der angegebene Ordner befindet. Es wird nur der angegebene Ordner durchsucht. Alle Unterordner im Ordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Folder-Eigenschaft für den Unterordner verwenden, den Sie durchsuchen möchten.  <br/> Weitere Informationen zum Suchen nach der Folder ID-Eigenschaft und zum Abrufen der Ordner-IDs für ein bestimmtes Postfach mithilfe eines Skripts finden Sie unter [Verwenden der Inhaltssuche für gezielte Auflistungen](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Im ersten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben. Im zweiten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben, die von garthf@contoso.com gesendet oder empfangen wurden.|
 |Von|Der Absender einer E-Mail-Nachricht.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Nachrichten, die vom angegebenen Benutzer oder einer bestimmten Domäne gesendet wurden.|
 |HasAttachment|Gibt an, ob eine Nachricht eine Anlage enthält. Verwenden Sie die Werte **true** oder **false**.|`from:pilar@contoso.com AND hasattachment:true`|Nachrichten, die vom angegebenen Benutzer mit Anlagen gesendet werden.|
-|Wichtigkeit|Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Standardmäßig werden Nachrichten mit normaler Wichtigkeit gesendet, außer wenn der Absender die Wichtigkeit auf **Hoch** oder **Niedrig** setzt.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Nachrichten, deren Wichtigkeit auf "Hoch", "Mittel" bzw. "Niedrig" eingestellt ist.|
+|Wichtigkeit|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Nachrichten, deren Wichtigkeit auf "Hoch", "Mittel" bzw. "Niedrig" eingestellt ist.|
 |IsRead|Gibt an, ob Nachrichten gelesen wurden. Verwenden Sie die Werte **true** oder **false**.|`isread:true`  <br/> `isread:false`|Im ersten Beispiel werden Nachrichten zurückgegeben, wobei die isread-Eigenschaft auf **true**festgelegt ist. Im zweiten Beispiel werden Nachrichten zurückgegeben, wobei die isread-Eigenschaft auf **false**festgelegt ist.|
 |ItemClass|Verwenden Sie diese Eigenschaft, um bestimmte Datentypen von Drittanbietern zu durchsuchen, die Ihre Organisation in Office 365 importiert hat. Verwenden Sie die folgende Syntax für diese Eigenschaft:`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Im ersten Beispiel werden Facebook-Elemente zurückgegeben, die das Wort "Contoso" in der Subject-Eigenschaft enthalten. Im zweiten Beispiel werden Twitter-Elemente zurückgegeben, die von Ann Beebe veröffentlicht wurden und die den stichwortausdruck "Northwind Traders" enthalten.  <br/> Eine vollständige Liste der Werte, die für Drittanbieter-Datentypen für die ItemClass-Eigenschaft verwendet werden sollen, finden Sie unter [Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Art| Der Typ der zu suchenden e-Mail-Nachricht. Mögliche Werte:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  verläuft (gibt Elemente aus Chats, Besprechungen und anrufen in Microsoft Teams zurück)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Im ersten Beispiel werden e-Mail-Nachrichten zurückgegeben, die den Suchkriterien entsprechen. Im zweiten Beispiel werden e-Mail-Nachrichten, Chat Unterhaltungen (einschließlich Skype for Business Unterhaltungen und Chats in Microsoft Teams) und Sprachnachrichten, die den Suchkriterien entsprechen, zurückgegeben. Im dritten Beispiel werden Elemente zurückgegeben, die von Drittanbieter-Datenquellen, wie Twitter, Facebook und Cisco Jabber, in Postfächer in Microsoft 365 importiert wurden, die die Suchkriterien erfüllen. Weitere Informationen finden Sie unter [Archivieren von drittanbieterdaten in Office 365](https://www.microsoft.com/?ref=go).|
-|Participants|Alle Personen Felder in einer e-Mail-Nachricht. Diese Felder sind von, in, CC und Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Nachrichten, die von oder an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die von oder an einen Benutzer in der Domäne contoso.com gesendet wurden.|
+|Participants|Alle Personen Felder in einer e-Mail-Nachricht. Diese Felder sind von, in, CC und Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.|
 |Empfangen|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Nachrichten, die am 15. April 2016 empfangen wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die zwischen dem 1. Januar 2016 und dem 31. März 2016 empfangen wurden.|
-|Empfänger|Alle Empfängerfelder in einer e-Mail-Nachricht. Diese Felder sind to, CC und Bcc.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Nachrichten, die an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden Nachrichten zurückgegeben, die an einen Empfänger in der Domäne contoso.com gesendet wurden.|
+|Empfänger|Alle Empfängerfelder in einer e-Mail-Nachricht. Diese Felder sind to, CC und Bcc.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
 |Gesendet|Das Datum, an dem eine E-Mail vom Absender gesendet wurde.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Nachrichten, die am angegebenen Tag oder im angegebenen Datumsbereich gesendet wurden.|
 |Größe|Die Größe eines Elements in Byte.|`size>26214400`  <br/> `size:1..1048567`|Nachrichten größer als 25?? MB. Im zweiten Beispiel werden Nachrichten von 1 bis 1.048.567 Byte (1 MB) in Größe zurückgegeben.|
 |Betreff|Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"` , enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Nachrichten, die den Ausdruck "vierteljährliche Finanzdaten" an beliebiger Stelle im Text der Betreffzeile enthalten. Im zweiten Beispiel werden alle Nachrichten mit dem Wort "northwind" in der Betreffzeile zurückgegeben.|
@@ -122,7 +124,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |IMAddress|Die Eigenschaft "Chat Adresse", bei der es sich normalerweise um eine e-Mail-Adresse für Chatnachrichten handelt.|
 |MiddleName|Der Name in der **Middle** Name-Eigenschaft.|
 |MobilePhone|Die Telefonnummer in der Eigenschaft **Mobil** Telefonnummer.|
-|Nickname|Der Name in der **Nickname** -Eigenschaft.|
+|Spitzname|Der Name in der **Nickname** -Eigenschaft.|
 |OfficeLocation|Der Wert in der **Office** -oder **Office-Standort** Eigenschaft.|
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
@@ -147,21 +149,21 @@ Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Defi
 |**Operator**|**Verwendung**|**Beschreibung**|
 |:-----|:-----|:-----|
 |AND|Wort1 AND Wort2|Gibt Elemente zurück, die alle angegebenen Schlüsselwörter oder `property:value` Ausdrücke enthalten. Beispielsweise `from:"Ann Beebe" AND subject:northwind` würden alle von Ann Beebe gesendeten Nachrichten zurückgegeben, die das Wort Northwind in der Betreffzeile enthalten. <sup>2</sup>|
-|+|Suchbegriff1 + Wort2 + Wort3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage `keyword1 + keyword2` (mit einem Leerzeichen nach dem **+** Symbol) ist nicht identisch mit dem **and-** Operator. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
+|+|Suchbegriff1 + Wort2 + Wort3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage `keyword1 + keyword2` (mit einem Leerzeichen nach dem **+** Symbol) ist nicht identisch mit dem **and-** Operator. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
 |OR|Wort1 OR Wort2|Gibt Elemente zurück, die einen oder mehrere der angegebenen Schlüsselwörter oder `property:value` Ausdrücke enthalten. <sup>2</sup>|
 |NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> Nicht freundlich: Chat|Schließt Elemente an, die durch ein Schlüsselwort oder einen Ausdruck angegeben werden `property:value` . Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Das dritte Beispiel schließt alle Chat Unterhaltungen aus, beispielsweise Skype for Business Unterhaltungen, die im Postfachordner für den Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
 |-|Wort1 - Wort2|Identisch mit dem Operator **NOT**. Diese Abfrage gibt also Elemente zurück, die Elemente enthalten, `keyword1` die enthalten und diese ausschließen `keyword2` .|
 |NEAR|Wort1 NEAR(n) Wort2|Gibt Elemente mit Wörtern zurück, die sich nah sind, wobei "n" der Anzahl der Wörter entspricht, die den Abstand zwischen den gesuchten Wörtern darstellen. Gibt beispielsweise `best NEAR(5) worst` ein beliebiges Element zurück, bei dem das Wort "Worst" innerhalb von fünf Wörtern von "Best" ist. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup>|
 |:|Eigenschaftswert|Der Doppelpunkt (:) in der `property:value` Syntax gibt an, dass der Wert der Eigenschaft, nach der gesucht wird, den angegebenen Wert enthält. Gibt beispielsweise `recipients:garthf@contoso.com` alle an garthf@contoso.com gesendeten Nachrichten zurück.|
 |=|Eigenschaft = Wert|Identisch mit dem **:** -Operator.|
-|\<|Eigenschaft\<Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, kleiner ist als der angegebene Wert.<sup>1</sup>|
+|\<|Eigenschaft\<Wert|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
 |\>|Eigenschaft\>Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer ist als der angegebene Wert.<sup>1</sup>|
 |\<=|Eigenschaft\<=Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, kleiner gleich dem angegebenen Wert ist.<sup>1</sup>|
 |\>=|Eigenschaft\>=Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich dem angegebenen Wert ist.<sup>1</sup>|
 |..|Eigenschaft: value1.. Wert2|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich Wert1 und kleiner gleich Wert2 ist.<sup>1</sup>|
 |"  "|"fair Value"  <br/> Betreff:"Vierteljährliche Finanzdaten"|Verwenden Sie doppelte Anführungszeichen (""), um nach einem genauen Ausdruck oder Begriff in Schlüsselwort-und `property:value` Suchabfragen zu suchen.|
 |\*|cat\*  <br/> Betreff:set\*|Präfix-Platzhaltersuchen (wobei das Sternchen am Ende eines Wortes eingefügt wird) entsprechen NULL oder mehr Zeichen in Schlüsselwörtern oder `property:value` Abfragen. Beispielsweise werden `title:set*` Dokumente zurückgegeben, die das Wort Set, das Setup und die Einstellung (und andere Wörter, die mit "Set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfix-Platzhaltersuchen verwenden; beispielsweise **Cat \* ** oder **Sets \* **. Suffix-suchen (** \* Cat** ), Infix-suchen (**c \* t**) und Teil Zeichenfolgensuchen (** \* Cat \* **) werden nicht unterstützt.|
-|(  )| (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)|Mit Klammern werden Boolesche Ausdrücke,  `property:value`-Elemente und Schlüsselwörter gruppiert.  `(quarterly financials)` gibt z. B. Elemente zurück, die die Wörter "Vierteljährliche" und "Finanzdaten" enthalten.  |
+|(  )| (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)|Parentheses group together Boolean phrases,  `property:value` items, and keywords. For example,  `(quarterly financials)` returns items that contain the words quarterly and financials.|
 |||||
    
 > [!NOTE]
@@ -228,18 +230,18 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
   
 ### <a name="operators-used-with-conditions"></a>Mit Bedingungen verwendete Operatoren
 
-Beim Hinzufügen einer Bedingung können Sie einen Operator auswählen, der für den Typ der Eigenschaft für die Bedingung relevant ist. Die folgende Tabelle enthält die mit Bedingungen verwendeten Operatoren und die dazugehörigen Entsprechungen, die in der Suchabfrage verwendet werden.
+When you add a condition, you can select an operator that is relevant to type of property for the condition. The following table describes the operators that are used with conditions and lists the equivalent that is used in the search query.
   
 |**Operator**|**Entsprechung in der Abfrage**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Nach|`property>date`|Wird mit Datumsbedingungen verwendet. Gibt die Elemente zurück, die nach dem angegebenen Datum gesendet, empfangen oder geändert wurden. |
-|Vor|`property<date`|Wird mit Datumsbedingungen verwendet. Gibt die Elemente zurück, die vor dem angegebenen Datum gesendet, empfangen oder geändert wurden.|
+|Nach|`property>date`|Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
+|Vor|`property<date`|Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
 |Zwischen|`date..date`|Wird mit Datums- und Größenbedingungen verwendet. Bei Verwendung mit einer Datumsbedingung werden Elemente zurückgegeben, die innerhalb des angegebenen Datumsbereichs gesendet, empfangen oder geändert wurden. Bei Verwendung mit einer Größenbedingung werden Elemente zurückgegeben, deren Größe innerhalb des angegebenen Bereichs liegt.|
 |Contains any of|`(property:value) OR (property:value)`|Wird mit Bedingungen für Eigenschaften verwendet, die einen Zeichenfolgenwert angeben. Gibt Elemente zurück, die mindestens einen Teil der angegebenen Zeichenfolgenwerte enthalten.|
 |Doesn't contain any of|`-property:value`  <br/> `NOT property:value`|Wird mit Bedingungen für Eigenschaften verwendet, die einen Zeichenfolgenwert angeben. Gibt Elemente zurück, die keinen Teil des angegebenen Zeichenfolgenwerts enthalten.|
-|Doesn't equal any of|`-property=value`  <br/> `NOT property=value`|Wird mit Bedingungen für Eigenschaften verwendet, die einen Zeichenfolgenwert angeben. Gibt Elemente zurück, die die angegebene Zeichenfolge nicht enthalten.|
+|Doesn't equal any of|`-property=value`  <br/> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |Gleich|`size=value`|Gibt Elemente zurück, die der angegebenen Größe entsprechen. <sup>1</sup>|
-|Equals any of|`(property=value) OR (property=value)`|Wird mit Bedingungen für Eigenschaften verwendet, die einen Zeichenfolgenwert angeben. Gibt Elemente zurück, die genau den angegebenen Zeichenfolgenwerten entsprechen.|
+|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
 |Größer|`size>value`|Gibt Elemente zurück, bei denen die angegebene Eigenschaft größer als der angegebene Wert ist. <sup>1</sup>|
 |Greater or equal|`size>=value`|Gibt Elemente zurück, bei denen die angegebene Eigenschaft größer oder gleich dem angegebenen Wert ist. <sup>1</sup>|
 |Weniger|`size<value`|Gibt Elemente zurück, die größer oder gleich dem angegebenen Wert sind. <sup>1</sup>|
@@ -275,7 +277,7 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
     ![Mehrere Suchkriterien für die gleiche Eigenschaft](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
-> Wenn für eine Bedingung mehrere Werte zulässig sind, wird empfohlen, eine einzelne Bedingung mit mehreren Werten (durch Kommas oder Semikolons getrennt) zu verwenden. Auf diese Weise können Sie leichter sicherstellen, dass Sie die gewünschte Abfragelogik erhalten. 
+> If a condition accepts multiple values, we recommend that you use a single condition and specify multiple values (separated by commas or semi-colons). This helps ensure the query logic that's applied is what you intend. 
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Beispiele
 
@@ -414,7 +416,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 - Verwenden Sie eine Syntax, die mit dem Format übereinstimmt `property:value` . Bei Werten wird die Groß-/Kleinschreibung nicht beachtet, und nach dem Operator kann kein Leerzeichen vorhanden sein. Wenn ein Leerzeichen vorhanden ist, handelt es sich bei dem vorgesehenen Wert um eine Volltextsuche. Beispielsweise wird nach `to: pilarp` "pilarp" als Schlüsselwort gesucht, statt an Nachrichten, die an pilarp gesendet wurden. 
 
-- Wenn Sie nach einer Empfängereigenschaft wie An, Von, Cc oder Empfänger suchen, können Sie eine SMTP-Adresse, einen Alias oder einen Anzeigenamen verwenden, um einen Empfänger anzugeben. Sie können z. B. pilarp@contoso.com, pilarp oder "Pilar Pinilla" verwenden.
+- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
 - Sie können nur Präfix-Platzhaltersuchen verwenden; beispielsweise **Cat \* ** oder **Sets \* **. Suffix-suchen (** \* Cat**), Infix-suchen (**c \* t**) und Teil Zeichenfolgensuchen (** \* Cat \* **) werden nicht unterstützt.
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065850"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773746"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Commodity Futures Trading Commission (CFTC) Rule 1.31 (c-d) Vereinigte Staaten
 
@@ -41,11 +41,11 @@ Um die Azure-Konformität mit der CFTC-Regel 1.31 (c-d) zu bewerten, behielt Mic
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington & Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
+Um Office 365 Einhaltung der CFTC-Regel 1.31 (c-d) zu evaluieren, engagierte sich Microsoft für eine führende unabhängige Anwaltskanzlei, die sich auf regulatorische Probleme spezialisierte, Covington & Burling, LLP. In dem resultierenden Bericht, der [Archivierung in Microsoft Office 365, der Datenaufbewahrung und der Regel 17a-4-Konformität](https://go.microsoft.com/fwlink/?linkid=830440)bestätigte Covington, dass [Office 365 mit der Aufbewahrungs Sperre](retention-policies.md) Archivierungsfunktionen enthält, mit denen regulierte Kundendaten so speichern können, dass Sie die CFTC-Anforderungen für die Aufbewahrung von Datensätzen erfüllen.
 
 Die Archivierung in Office 365 hilft bei der Beibehaltung einer Vielzahl von Daten, einschließlich e-Mail, Voicemail, freigegebene Dokumente, Sofortnachrichten und Daten von Drittanbietern. Die Archivierung in Office 365 ermöglicht es Kunden insbesondere, globale oder granulare Messaging-Aufbewahrungsrichtlinien festzulegen, um Daten für einen bestimmten Zeitraum und darüber hinaus in einem nicht wiederbeschreibbaren, nicht löschbaren Format zu speichern.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -59,8 +59,8 @@ Die Archivierung in Office 365 hilft bei der Beibehaltung einer Vielzahl von Dat
 ## <a name="how-to-implement"></a>Implementierung
 
 - [Finanz dienstleistungsverordnung](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): Compliance-Karte der wichtigsten US-regulatorischen Grundsätze für Cloud Computing und Microsoft Online Services.
-- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft-Clouddiensten und die Benachrichtigung der Aufsichtsbehörden.
-- [Anwendungsfälle in der Finanzbranche](https://docs.microsoft.com/azure/industry/financial/): Verwenden Sie Fallübersichten, Lernprogramme und andere Ressourcen, um Azure-Lösungen für Finanzdienstleistungen zu entwickeln.
+- [Leitfaden für Risikobewertung und Compliance](https://aka.ms/RiskGovernanceGuide): Erstellen Sie ein Governance-Modell für die Risikobewertung von Microsoft Cloud Services und die Benachrichtigung der Aufsichtsbehörden.
+- [Finanzielle Anwendungsfälle](https://docs.microsoft.com/azure/industry/financial/): Verwenden Sie Fallübersichten, Lernprogramme und andere Ressourcen, um Azure-Lösungen für Finanzdienstleistungen zu entwickeln.
 
 ## <a name="resources"></a>Ressourcen
 

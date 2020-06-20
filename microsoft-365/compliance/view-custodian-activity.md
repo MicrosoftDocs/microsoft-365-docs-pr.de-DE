@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Verwenden Sie das erweiterte eDiscovery Depotbank-Verwaltungstool, um einfach auf die Aktivitäten für Verwalter in Ihrem Fall zuzugreifen und diese zu durchsuchen.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034297"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819045"
 ---
 # <a name="view-custodian-audit-activity"></a>Anzeigen der Depot Überwachungsaktivität
 
 Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Advanced eDiscovery ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security & Compliance Center integriert. Mithilfe dieser eingebetteten Oberfläche können Sie das erweiterte eDiscovery Depotbank-Verwaltungstool verwenden, um Ihre Untersuchung durch einfaches zugreifen auf und Durchsuchen der Aktivitäten für Verwalter in Ihrem Fall zu erleichtern.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="get-permissions"></a>Berechtigungen abrufen
 
 Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Um einem Benutzer die Möglichkeit zu geben, das erweiterte eDiscovery-Überwachungsprotokoll mit der minimalen Berechtigungsstufe zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die nur-Ansicht-Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle" hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
 

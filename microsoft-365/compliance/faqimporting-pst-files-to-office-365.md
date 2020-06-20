@@ -15,13 +15,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: 'Häufig gestellte Fragen an Administratoren zur Verwendung des Office 365-Import Diensts zum Importieren der PST-Dateien Ihrer Organisation in Microsoft 365-Postfächer. '
-ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.custom: seo-marvel-apr2020
+description: Dieser Artikel enthält Antworten auf einige häufig gestellte Fragen an Administratoren zum Importieren von PST-Dateien in Microsoft 365 mithilfe des Office 365-Import Diensts.
+ms.openlocfilehash: 0f490b7bae3f462bb07725bf14453a6b9a4d7b9e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579200"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817734"
 ---
 # <a name="faq-about-importing-pst-files"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien
 
@@ -93,7 +94,7 @@ Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht 
   
  **Gibt es eine Beschränkung der Anzahl der Ebenen in einer Ordnerhierarchie für eine PST-Datei, die ich in ein Postfach importieren möchten?**
   
-Ja. Sie können keine PST-Dateien mit 300 oder mehr Ebenen von geschachtelten Ordnern importieren.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Kann ich PST-Dateien über den Netzwerkupload in ein inaktives Postfach in Office 365 importieren?**
   
@@ -154,7 +155,7 @@ Sie können maximal 10 Festplatten für einen einzelnen Importauftrag versenden.
   
  **Wie lange dauert es nach dem Versand meiner Festplatten, bis sie im Microsoft-Rechenzentrum ankommen?**
   
-Dies hängt von ein paar Dingen ab, z. B. von der Entfernung zum Microsoft-Rechenzentrum und der Art der Zustellung, die Sie zum Versenden Ihrer Festplatte verwendet haben (z. B. Lieferung am nächsten Tag, Lieferung in zwei Tagen oder Zustellung auf dem Landweg). Bei den meisten Zustelldiensten können Sie Sendungsverfolgungsnummern verwenden, um den Status der Lieferung nachzuverfolgen.
+That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   
  **Wie lange dauert das Hochladen meiner PST-Dateien nach Azure, nachdem meine Festplatte im Microsoft Data Center eingetroffen ist?**
   
@@ -192,7 +193,7 @@ Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht 
   
  **Gibt es eine Beschränkung der Anzahl der Ebenen in einer Ordnerhierarchie für eine PST-Datei, die ich in ein Postfach importieren möchten?**
   
-Ja. Sie können keine PST-Dateien mit 300 oder mehr Ebenen von geschachtelten Ordnern importieren.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Kann ich PST-Dateien über den Laufwerksversand in ein inaktives Postfach in Microsoft 365 importieren?**
   
@@ -208,19 +209,19 @@ Nein, Sie können keine PST-Dateien in öffentliche Ordner importieren.
   
  **Kann Microsoft meine Festplatte zurücksetzen, bevor sie wieder an mich zurückgesendet wird?**
   
-Nein, Microsoft kann Festplatten vor der Rücksendung an den Kunden nicht zurücksetzen. Festplatten werden in demselben Zustand zurückgesendet, in dem sie bei Microsoft eingegangen sind.
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Kann Microsoft meine Festplatte vernichten, anstatt sie zurückzusenden?**
   
-Nein, Microsoft kann Ihre Festplatte nicht vernichten. Festplatten werden in demselben Zustand zurückgesendet, in dem sie bei Microsoft eingegangen sind.
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Welche Kurierdienste werden für die Rücksendung unterstützt?**
   
-Wenn Sie Kunde in den Vereinigten Staaten oder in Europa sind, verwendet Microsoft FedEx für die Rücksendung Ihrer Festplatte. Für alle Regionen verwendet Microsoft DHL.
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
   
  **Wie hoch sind die Kosten für die Rücksendung?**
   
-Die Kosten für die Rücksendung variieren je nach Entfernung zum Microsoft-Rechenzentrum, an das Sie Ihre Festplatte gesendet haben. Microsoft belastet Ihr FedEx- oder DHL-Konto für die Rücksendung Ihrer Festplatte. Sie tragen die Kosten für die Rücksendung.
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
   
  **Kann ich einen benutzerdefinierten Kurierdienst verwenden, z. B. FedEx Custom Shipping, um meine Festplatte an Microsoft zu senden?**
   
@@ -228,4 +229,4 @@ Ja.
   
  **Was muss ich beachten, wenn ich meine Festplatte in ein anderes Land versenden muss?**
   
-Die an Microsoft versendete Festplatte muss möglicherweise internationale Grenzen überqueren. In diesem Falls sind Sie dafür verantwortlich, dass die Festplatte und die darin enthaltenen Daten in Übereinstimmung mit den geltenden Gesetzen importiert und/oder exportiert wurden. Stellen Sie vor dem Versenden einer Festplatten mit Ihren Beratern sicher, dass Ihre Festplatte und die Daten gesetzmäßig an das angegebene Microsoft-Rechenzentrum gesendet werden können. Dies hilft sicherzustellen, dass die Festplatte Microsoft zeitgerecht erreicht.
+The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

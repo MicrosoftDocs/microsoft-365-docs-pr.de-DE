@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232052"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817544"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
-
-## <a name="overview"></a>Übersicht
 
 Mit Informationsbarrieren können Sie Richtlinien definieren, mit denen verhindert werden soll, dass bestimmte Segmente von Benutzern miteinander kommunizieren, oder dass bestimmte Segmente nur mit bestimmten anderen Segmenten kommunizieren dürfen. Richtlinien für Informationsbarrieren können Ihrem Unternehmen dabei helfen, die Einhaltung relevanter Branchenstandards und-Vorschriften beizubehalten und potenzielle Interessenkonflikte zu vermeiden. Weitere Informationen finden Sie unter [Information Barriers](information-barriers.md). 
 
@@ -32,19 +30,19 @@ In diesem Artikel wird beschrieben, wie Sie Richtlinien für Informationsbarrier
 > [!TIP]
 > Dieser Artikel enthält ein [Beispielszenario](#example-contosos-departments-segments-and-policies) und eine [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) , die Sie bei der Planung und Definition Ihrer Richtlinien für Informationsbarrieren unterstützt.
 
-## <a name="concepts-of-information-barrier-policies"></a>Konzepte von Richtlinien für Informationsbarrieren
+## <a name="concepts-of-information-barrier-policies"></a>Ansätze hinter Richtlinien für Informationsbarrieren
 
 Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Benutzerkonto Attributen, Segmenten, "blockieren" und/oder "zulassen"-Richtlinien und Richtlinienanwendung.
 
-- Benutzerkontoattribute werden in Azure Active Directory (oder Exchange Online) definiert. Diese Attribute können Abteilung, Position, Ort, Teamname und andere Auftragsprofil Details umfassen. 
+- Benutzerkontoattribute sind in Azure Active Directory (oder Exchange Online) definiert. Diese Attribute können Abteilung, Position, Standort, Teamname und andere Auftragsprofildetails umfassen. 
 
-- Segmente sind Benutzergruppen, die im Security & Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs**definiert sind. (Siehe [Liste der unterstützten Attribute](information-barriers-attributes.md).) 
+- Segmente sind Benutzergruppen, die im Security & Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs**definiert sind. (Siehe auch die [Liste der unterstützten Attribute](information-barriers-attributes.md).) 
 
-- Richtlinien für Informationsbarrieren bestimmen Kommunikations Grenzwerte oder-Einschränkungen. Wenn Sie Richtlinien für Informationsbarrieren definieren, wählen Sie aus zwei Arten von Richtlinien:
+- Mit Richtlinien für Kommunikationsbarrieren werden bestimmte Kommunikationsbeschränkungen festgelegt. Beim Definieren von Richtlinien für Informationsbarrieren können Sie aus zwei Arten von Richtlinien auswählen:
     - "Blockieren"-Richtlinien verhindern, dass ein Segment mit einem anderen Segment kommuniziert.
     - Mit den Richtlinien "zulassen" kann ein Segment nur mit bestimmten anderen Segmenten kommunizieren.
 
-- Die Richtlinienanwendung wird ausgeführt, nachdem alle Richtlinien für Informationsbarrieren definiert wurden und Sie Sie in Ihrer Organisation anwenden können.
+- Die Richtlinienanwendung erfolgt, nachdem alle Richtlinien für Kommunikationsbarrieren definiert wurden und Sie bereit sind, sie in Ihrer Organisation anzuwenden.
 
 ## <a name="the-work-flow-at-a-glance"></a>Der Workflow auf einen Blick
 
@@ -70,7 +68,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Überwachungsprotokollierung – um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
 
-- Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf adressbuchrichtlinien, die beiden Arten von Richtlinien sind jedoch nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und das hierarchische Adressbuch aktiviert ist, werden alle Benutzer, die nicht in einem Segment mit Informationsbarrieren ***enthalten sind*** , das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online sehen.
+- Keine adressbuchrichtlinien – stellen Sie vor dem definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) . Sobald Richtlinien für Informationsbarrieren aktiviert sind und das hierarchische Adressbuch aktiviert ist, werden alle Benutzer, die nicht in einem Segment mit Informationsbarrieren ***enthalten sind*** , das [hierarchische Adressbuch](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online sehen.
 
 - PowerShell – derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das Azure PowerShell-Modul.
     - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -177,7 +175,7 @@ Bestimmen Sie, ob Sie die Kommunikation zwischen bestimmten Segmenten verhindern
 Wählen Sie mit der Liste der Benutzersegmente und den Richtlinien für Informationsbarrieren, die Sie definieren möchten, ein Szenario aus, und führen Sie dann die Schritte aus. 
 
 - [Szenario 1: Blockieren der Kommunikation zwischen Segmenten](#scenario-1-block-communications-between-segments)
-- [Szenario 2: zulassen, dass ein Segment nur mit einem anderen Segment kommuniziert](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
+- [Szenario 2: Zulassen, dass ein Segment nur mit einem anderen Segment kommuniziert](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
 > **Stellen Sie sicher, dass Sie bei der Definition von Richtlinien keinem Segment mehr als eine Richtlinie zuweisen**. Wenn Sie beispielsweise eine Richtlinie für ein Segment mit dem Namen " *Sales*" definieren, definieren Sie keine zusätzliche Richtlinie für den *Vertrieb*.<p>Achten Sie beim Definieren von Richtlinien für Informationsbarrieren darauf, diese Richtlinien auf inaktiven Status festzulegen, bis Sie bereit sind, Sie anzuwenden. Das definieren (oder bearbeiten) von Richtlinien wirkt sich erst dann auf Benutzer aus, wenn diese Richtlinien auf aktiver Status festgelegt und dann angewendet wurden.
@@ -207,7 +205,7 @@ Nehmen Sie beispielsweise an, dass Sie die Kommunikation zwischen Segment a und 
    - (Falls erforderlich) [Definieren einer Richtlinie, mit der ein Segment nur mit einem anderen Segment kommunizieren kann](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
    - (Nachdem alle Ihre Richtlinien definiert wurden) [Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies)
 
-### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Szenario 2: zulassen, dass ein Segment nur mit einem anderen Segment kommuniziert
+### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Szenario 2: Zulassen, dass ein Segment nur mit einem anderen Segment kommuniziert
 
 1. Damit ein Segment nur mit einem anderen Segment kommunizieren kann, verwenden Sie das Cmdlet **New-InformationBarrierPolicy** mit dem Parameter **SegmentsAllowed** . 
 
@@ -278,50 +276,50 @@ Ressourcen stehen zur Verfügung, um Sie bei der Verwaltung ihrer Informations B
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Beispiel: Abteilungen, Segmente und Richtlinien von Contoso
 
-Um zu sehen, wie sich eine Organisation an das Definieren von Segmenten und Richtlinien wenden kann, betrachten Sie das folgende Beispiel.
+Wenn Sie sehen möchten, wie eine Organisation sich an der Definition von Segmenten und Richtlinien orientiert, sehen Sie sich das folgende Beispiel an.
 
-### <a name="contosos-departments-and-plan"></a>Abteilungen und Plan von Contoso
+### <a name="contosos-departments-and-plan"></a>Die Abteilungen und der Plan von Contoso
 
-Contoso verfügt über fünf Abteilungen: HR, Vertrieb, Marketing, Forschung und Fertigung. Um mit den Branchenrichtlinien konform zu bleiben, sollten Personen in einigen Abteilungen nicht mit anderen Abteilungen kommunizieren, wie in der folgenden Tabelle aufgeführt:
+Contoso verfügt über fünf Abteilungen: Personal, Vertrieb, Marketing, Forschung und Fertigung. Um mit den Branchenrichtlinien konform zu bleiben, sollten Personen in einigen Abteilungen nicht mit anderen Abteilungen kommunizieren, wie in der folgenden Tabelle aufgeführt:
 
-|Segment  |Sprechen kann  |Kann nicht mit  |
+|Segment  |Kann sprechen mit  |Kann nicht sprechen mit  |
 |---------|---------|---------|
-|HR     |Alle         |(keine Einschränkungen)         |
-|Sales     |HR, Marketing, Produktion         |Recherche         |
-|Marketing     |Alle         |(keine Einschränkungen)         |
-|Recherche     |HR, Marketing, Produktion        |Sales     |
+|Personal     |Alle         |(keine Beschränkungen)         |
+|Vertrieb     |HR, Marketing, Produktion         |Forschung         |
+|Marketing     |Alle         |(keine Beschränkungen)         |
+|Forschung     |HR, Marketing, Produktion        |Vertrieb     |
 |Fertigung |HR, Marketing |Andere Personen als HR oder Marketing |
 
-In diesem Hinblick umfasst der Plan von Contoso drei Richtlinien für Informationsbarrieren:
+Zu diesem Zweck umfasst der Plan von Contoso drei Richtlinien für Informationsbarrieren:
 
-1. Eine Richtlinie, die verhindert, dass Verkäufe mit der Forschung kommunizieren (und eine andere Richtlinie, um zu verhindern, dass die Forschung mit dem Vertrieb kommuniziert)
-2. Eine Richtlinie, mit der die Fertigung nur mit HR und Marketing kommunizieren kann 
+1. Eine Richtlinie, die verhindert, dass der Vertrieb mit der Forschung kommuniziert (und eine andere Richtlinie, um zu verhindern, dass die Forschung mit dem Vertrieb kommuniziert)
+2. Eine Richtlinie, anhand der die Fertigung nur mit Personal und Marketing kommunizieren kann 
 
 Es ist nicht erforderlich, Richtlinien für HR oder Marketing zu definieren.
 
-### <a name="contosos-defined-segments"></a>Definierte Segmente von Contoso
+### <a name="contosos-defined-segments"></a>Die von Contoso definierten Segmente 
 
 Contoso wird das Department-Attribut in Azure Active Directory verwenden, um Segmente wie folgt zu definieren:
 
 |Abteilung  |Segment Definition  |
 |---------|---------|
-|HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
-|Sales     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
+|Personal     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
+|Vertrieb     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
 |Marketing     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
-|Recherche     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
+|Forschung     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
 |Fertigung     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
 
-Nachdem die Segmente definiert wurden, werden von Contoso Richtlinien definiert. 
+Nachdem die Segmente definiert sind, fährt Contoso mit der Definition von Richtlinien fort. 
 
-### <a name="contosos-information-barrier-policies"></a>Richtlinien für Informationsbarrieren von Contoso
+### <a name="contosos-information-barrier-policies"></a>Contosos Richtlinien für Informationsbarrieren
 
-Contoso definiert drei Policen, wie in der folgenden Tabelle beschrieben:
+Contoso definiert drei Richtlinien, wie in der folgenden Tabelle beschrieben:
 
 |Richtlinie  |Richtliniendefinition  |
 |---------|---------|
-|Richtlinie 1: verhindern, dass Verkäufe mit Forschung kommunizieren     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In diesem Beispiel wird die Richtlinie "Informations Barriere" als " *Sales-Research*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, können Benutzer, die sich im Vertriebs Segment befinden, nicht mit Benutzern im Forschungs Segment kommunizieren. Dies ist eine unidirektionale Richtlinie. Damit wird nicht verhindert, dass die Forschung mit dem Vertrieb kommuniziert. Dafür ist Richtlinie 2 erforderlich.      |
-|Richtlinie 2: verhindern, dass die Forschung mit dem Vertrieb kommuniziert     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In diesem Beispiel wird die Richtlinie "Informations Barriere" als " *Research-Sales*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, können Benutzer, die sich im Forschungs Segment befinden, nicht mit Benutzern im Vertriebs Segment kommunizieren.       |
-|Richtlinie 3: zulassen, dass die Fertigung nur mit HR und Marketing kommuniziert     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>In diesem Fall wird die Richtlinie "Informations Barriere" als " *Manufacturing-HRMarketing*" bezeichnet. Wenn diese Richtlinie aktiv ist und angewendet wird, kann Manufacturing nur mit HR und Marketing kommunizieren. Beachten Sie, dass HR und Marketing nicht von der Kommunikation mit anderen Segmenten eingeschränkt werden. |
+|Richtlinie 1: Unterbindung der Kommunikation zwischen Vertrieb und Forschung     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Vertrieb-Forschung*. Wenn diese Richtlinie aktiv und angewendet ist, verhindert sie, dass Benutzer im Segment Vertrieb mit Benutzern im Segment Forschung kommunizieren können. Dies ist eine einseitige Richtlinie. Damit wird nicht verhindert, dass die Forschung mit dem Vertrieb kommuniziert. In diesem Fall ist Richtlinie 2 erforderlich.      |
+|Richtlinie 2: Unterbindung der Kommunikation zwischen Vertrieb und Forschung     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Forschung-Vertrieb*. Wenn diese Richtlinie aktiv und angewendet ist, kann sie dabei helfen, dass Benutzer im Segment Forschung mit Benutzern im Segment Vertrieb kommunizieren können.       |
+|Richtlinie 3: zulassen, dass die Fertigung nur mit HR und Marketing kommuniziert     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>In diesem Fall wird die Richtlinie zur Informationsbarriere als *Fertigung-PersonalMarketing* bezeichnet. Wenn diese Richtlinie aktiv und angewendet ist, kann die Fertigung nur mit Personal und Marketing kommunizieren. Beachten Sie, dass Personal und Marketing uneingeschränkt mit anderen Segmenten kommunizieren können. |
 
 Wenn Segmente und Richtlinien definiert sind, wendet Contoso die Richtlinien durch Ausführen des Cmdlets **Start-InformationBarrierPoliciesApplication** an. 
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066358"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800096"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Federal Financial Institutions Examination Council (FFIEC)
 
@@ -33,7 +33,7 @@ Das [FFIEC Audit IT Examination Handbook](https://ithandbook.ffiec.gov/it-bookle
 
 Microsoft Azure, Microsoft Power BI und Microsoft Office 365 wurden entwickelt, um den hohen Anforderungen der Bereitstellung von Cloud-Diensten für Finanz Dienstleistungs Institutionen gerecht zu werden. Im Rahmen unserer Unterstützung bieten wir Ihnen Hilfestellung bei der Einhaltung der FFIEC-Überwachungsanforderungen für die Informationstechnologie und der Möglichkeit, Azure SOC-Bescheinigungen bei der Verfolgung ihrer FFIEC-Compliance-Verpflichtungen zu verwenden.
 
-Beschleunigen Sie die Bereitstellung von Finanzdienstleistungen: [Laden Sie das Azure Security and Compliance FFIEC Financial Services Blueprint herunter](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint) .
+Beschleunigen Sie die Bereitstellung von Finanzdienstleistungen: [Laden Sie das Azure Security and Compliance FFIEC Financial Services Blueprint herunter](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint) .
 
 Damit Kunden von Finanzinstituten ihre FFIEC-Compliance-Anforderungen mit Azure erfüllen können, hat Microsoft Folgendes entwickelt:
 
@@ -42,12 +42,12 @@ Damit Kunden von Finanzinstituten ihre FFIEC-Compliance-Anforderungen mit Azure 
 
 Zur weiteren Unterstützung bei der Erfüllung der FFIEC-Anforderungen bieten Microsoft Cloud Services [SOC-Bestätigungs Berichte](offering-SOC.md) , die von einer unabhängigen CPA-Firma erstellt wurden. Die Zertifizierung für SOC 1 Typ 2 basiert beispielsweise auf dem AICPA SSAE 18-Standard (siehe Abschnitt "at-C" 105), der SAS 70 ersetzt hat und für die Berichterstellung über bestimmte Steuerelemente für die Finanzberichterstattung geeignet ist. Die SoC-Berichte enthalten die Stellungnahme des Auditors zur Effektivität von Microsoft-Steuerelementen bei der Erreichung der zugehörigen Kontrollziele während des angegebenen Überwachungszeitraums. Finanzinstitute können diese formelle Überwachung bei der Verfolgung von FFIEC-spezifischen Compliance-Verpflichtungen für in Azure, Power BI und Office 365 bereitgestellte Ressourcen verwenden.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft Cloud Services im Leistungsumfang
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365-Plan bzw. einer -Anwendungssuite enthalten
+- Power BI-Clouddienst entweder als eigenständiger Dienst oder als Bestandteil eines Office 365 Markenplans oder einer Office 365 Suite
 
 ## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
 

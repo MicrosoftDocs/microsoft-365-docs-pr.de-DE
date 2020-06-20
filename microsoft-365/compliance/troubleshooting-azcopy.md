@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Behandeln von Fehlern für Azure AzCopy beim Laden von nicht Office 365 Daten zur Fehlerbehebung in Advanced eDiscovery.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: afb89517f6c34495820bec424c72833324e00125
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034497"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819145"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Problembehandlung bei AzCopy in Advanced eDiscovery
 
@@ -38,13 +40,13 @@ Zu diesem Zeitpunkt müssen Sie AzCopy v 8.1 verwenden, um nicht von Microsoft 3
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy ist auf dem lokalen Computer nicht installiert oder wird nicht am Standardspeicherort installiert.
 
-Wenn AzCopy nicht installiert ist oder an einem anderen Speicherort als dem standardmäßigen Installationsspeicherort installiert ist ( `%ProgramFiles(x86)%`Dies ist), wird möglicherweise die folgende Fehlermeldung angezeigt, wenn Sie den AzCopy-Befehl ausführen:
+Wenn AzCopy nicht installiert ist oder an einem anderen Speicherort als dem standardmäßigen Installationsspeicherort installiert ist (Dies ist `%ProgramFiles(x86)%` ), wird möglicherweise die folgende Fehlermeldung angezeigt, wenn Sie den AzCopy-Befehl ausführen:
 
     The system cannot find the path specified.
 
-Wenn AzCopy nicht auf dem lokalen Computer installiert ist, können Sie [hier](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)installieren. Stellen Sie sicher, dass Sie Sie am Standardspeicherort installieren.
+Wenn AzCopy nicht auf dem lokalen Computer installiert ist, können Sie die Installationsinformationen in [Übertragungsdaten mit der AzCopy v 8.1 unter Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)finden. Stellen Sie sicher, dass Sie Sie am Standardspeicherort installieren.
 
-Wenn AzCopy installiert ist, aber an einem anderen Speicherort als dem Standardspeicherort installiert ist, können Sie den Befehl Kopieren, in eine Textdatei einfügen und dann den Pfad zu dem Speicherort ändern, an dem AzCopy installiert ist. Wenn sich beispielsweise Azcopy in `%ProgramFiles%`befindet, können Sie den ersten Teil des Befehls von `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` in in ändern. `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` Nachdem Sie diese Änderung vorgenommen haben, kopieren Sie Sie aus der Textdatei, und führen Sie dann eine Eingabeaufforderung aus.
+Wenn AzCopy installiert ist, aber an einem anderen Speicherort als dem Standardspeicherort installiert ist, können Sie den Befehl Kopieren, in eine Textdatei einfügen und dann den Pfad zu dem Speicherort ändern, an dem AzCopy installiert ist. Wenn sich beispielsweise Azcopy in befindet `%ProgramFiles%` , können Sie den ersten Teil des Befehls von in in ändern `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` . Nachdem Sie diese Änderung vorgenommen haben, kopieren Sie Sie aus der Textdatei, und führen Sie dann eine Eingabeaufforderung aus.
 
 > [!TIP]
 > Wenn AzCopy an einem anderen Speicherort als dem standardmäßigen Installationsspeicherort installiert ist, sollten Sie ihn deinstallieren und dann am Standardspeicherort erneut installieren. Dies wird dazu beitragen, dieses Problem in Zukunft zu vermeiden.

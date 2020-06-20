@@ -20,18 +20,19 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
-ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079900"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818474"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Anwenden der Verwaltung von Informationsrechten (Information Rights Management, IRM) auf eine Liste oder Bibliothek
 
 Sie können die Verwaltung von Informationsrechten (Information Rights Management, IRM) zum Steuern und schützen von Dateien verwenden, die aus Listen oder Bibliotheken heruntergeladen werden.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="administrator-preparations-before-applying-irm"></a>Administrator Vorbereitungen vor dem Anwenden von IRM
 
 - Der Azure Rights Management Service (Azure RMS) von Azure Information Protection und die lokale Entsprechung, Active Directory Rights Management Services (AD RMS), unterstützen die Verwaltung von Informationsrechten für Websites. Es sind keine separaten oder zusätzlichen Installationen erforderlich.
     

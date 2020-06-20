@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informationen zum Konfigurieren von Benutzerrollen, Erstellen von Fällen und Zuweisen von Benutzern zu Fällen in Advanced eDiscovery.  '
-ms.openlocfilehash: 386be1201b30e6b0e7a46c9de47dd6cf2fc4b53c
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412804"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819175"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Einrichten von Benutzern und Fällen in Advanced eDiscovery (klassisch)
 
@@ -29,7 +30,7 @@ In diesem Thema wird beschrieben, wie Sie Benutzer und Fälle für Advanced eDis
 > [!IMPORTANT]
 > Während wir weiterhin in neuere Versionen von Advanced eDiscovery investieren, kündigen wir jetzt die Deaktivierung von Advanced eDiscovery (auch bekannt als *Advanced eDiscovery (Classic)* oder *Advanced eDiscovery v1.0*) an. Wenn Sie noch mit Advanced eDiscovery v1.0 arbeiten, wechseln Sie so bald wie möglich zu [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (auch bekannt als *Advanced eDiscovery-Lösung in Microsoft 365*). Advanced eDiscovery 2.0 enthält ähnliche Funktionen wie Advanced eDiscovery v1.0, bietet aber auch viele neue Funktionen wie z. B. Verwahrerverwaltung, Kommunikationsverwaltung und Prüfungssätze. Um mehr über die Deaktivierung von Advanced eDiscovery v1.0 zu erfahren, siehe [Deaktivierung von veralteten eDiscovery-Tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="requirements-to-set-up-users-and-cases"></a>Anforderungen zum Einrichten von Benutzern und Fällen
 
 Vor dem Einrichten von Fällen und Benutzern in Advanced eDiscovery ist Folgendes erforderlich:
   

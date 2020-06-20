@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Erhalten Sie einen Überblick über die Bewertungsphase und ihre Rolle bei der Bestimmung des Umfangs der Probleme während des Relevanz-Trainings in Advanced eDiscovery.
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erhalten Sie einen Überblick über die Bewertungsphase und ihre Rolle bei der Bestimmung des Umfangs von Problemen bei der Relevanz-Schulung in Microsoft 365 Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636153"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818414"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Understanding Assessment in Relevanz in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery ermöglicht eine frühzeitige Bewertung, beispielsweise für die definierten Probleme und die für einen Fall importierten Daten. Mit Advanced eDiscovery kann der Experte Entscheidungen über einen angenommenen Ansatz treffen und diese Entscheidungen auf das Dokument Überprüfungs Projekt anwenden.
   
@@ -51,9 +52,9 @@ Jedes Problem hat seinen eigenen Reichtum, den aktuellen Fehlerbereich und als E
 Sie können die Relevanz-Empfehlungen akzeptieren oder den aktuellen Fehler Rand entsprechend Ihren Anforderungen anpassen. Der standardmäßige aktuelle Rand des Fehlers wird für den Rückruf auf gleich oder über 75% bestimmt.
   
 > [!NOTE]
-> Die Bewertungsphase kann auf der Registerkarte ** \> Relevanz Track** in der erweiterten Ansicht für ein Problem umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" gelöscht wird. Daraus ergibt sich jedoch keine Statistik für dieses Problem. > das Deaktivieren des Kontrollkästchens **Bewertung** kann nur ausgeführt werden, bevor eine Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist. 
+> Die Bewertungsphase kann auf der Registerkarte **Relevanz \> Track** in der erweiterten Ansicht für ein Problem umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" gelöscht wird. Daraus ergibt sich jedoch keine Statistik für dieses Problem. > das Deaktivieren des Kontrollkästchens **Bewertung** kann nur ausgeführt werden, bevor eine Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist. 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md)
   

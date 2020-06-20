@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Erfahren Sie, wie Sie Aufgaben zur Inhaltssuche automatisieren, beispielsweise das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security & Compliance Center in Office 365.
-ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 389cc9e15bc661e967f7af769ac48c4ae6e27228
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208139"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817984"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
  Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie sich mit den zugrunde liegenden Daten und dem Umfang und der Qualität Ihrer Suche vertraut machen möchten. Dazu bietet die Security & Compliance Center PowerShell eine Reihe von Cmdlets zum Automatisieren zeitaufwändiger Inhalts Suchaufgaben. Diese Skripts bieten eine schnelle und einfache Möglichkeit zum Erstellen einer Reihe von Suchvorgängen und führen dann Berichte der geschätzten Suchergebnisse aus, mit denen Sie die Menge der fraglichen Daten bestimmen können. Sie können die Skripts auch verwenden, um verschiedene Versionen von Suchvorgängen zu erstellen, um die Ergebnisse zu vergleichen, die von jedem erstellt werden. Diese Skripts können Ihnen dabei helfen, Ihre Daten schnell und effizient zu identifizieren und zu pflücken. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-create-a-content-search"></a>Vor dem Erstellen einer Inhaltssuche
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein, um die in diesem Thema beschriebenen Skripts auszuführen. 
     
@@ -39,7 +40,7 @@ ms.locfileid: "44208139"
     
 - Die Skripts enthalten eine minimale Fehlerbehandlung. Ihr Hauptzweck besteht darin, mehrere Inhalts suchen schnell zu erstellen, zu melden und zu löschen.
     
-- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Schritt 1: Erstellen Sie eine CSV-Datei, die Informationen zu den Suchvorgängen enthält, die Sie ausführen möchten.
 

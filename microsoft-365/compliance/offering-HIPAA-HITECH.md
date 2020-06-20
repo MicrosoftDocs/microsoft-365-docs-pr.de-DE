@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254208"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773716"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -59,7 +59,7 @@ Wenn Sie erfahren möchten, wie die Microsoft-Cloud Kunden dabei unterstützt, H
 - Microsoft Stream
 - Microsoft Professional Services: Premier und On-Premises für Azure, Dynamics 365, Intune und Medium Business- und Enterprise-Kunden von Microsoft 365 for Business
 - [Dynamics 365 und Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Power Automation (ehemals Microsoft Flow)-clouddienst entweder als eigenständiger Dienst oder als in einen Office 365-oder Dynamics 365-Branded-Plan oder eine-Suite eingeschlossenen Dienst
+- Power Automate-Clouddienst (ehemals Microsoft Flow) als eigenständiger Dienst oder in einem Office 365- oder Dynamics 365-Plan bzw. -Anwendungssuite enthalten
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps-Clouddienst als eigenständiger Dienst oder in einem firmenspezifischen Office 365- oder Dynamics 365-Plan oder einer -Anwendungssuite enthalten
@@ -113,5 +113,5 @@ Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitf
 - [Nutzungsbedingungen für Microsoft-Onlinedienste](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Grundlegendes zur HIPAA-Compliance mit Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19. Mai 2016)
-- [Azure HIPAA-Implementierungsleitfaden](https://aka.ms/azure-hipaa-guide)
+- [Azure HIPAA HITRUST Blueprint-Beispiel](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Compliance im Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

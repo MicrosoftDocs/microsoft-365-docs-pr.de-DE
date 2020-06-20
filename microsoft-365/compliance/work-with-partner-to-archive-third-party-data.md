@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Ihre Organisation kann mit einem Microsoft-Partner zusammenarbeiten, um einen benutzerdefinierten Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder jammern einzurichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen archivieren, sodass Sie die Microsoft 365-Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der Steuerung der drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder jammern einrichten.
+ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739065"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817040"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
 

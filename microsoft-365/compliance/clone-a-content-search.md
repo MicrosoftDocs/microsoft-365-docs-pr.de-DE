@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um schnell eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 zu klonen.
-ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 28f1264736f158fd686174813b9cefdd087c274c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035647"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818084"
 ---
 # <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
@@ -37,7 +37,7 @@ Gründe für das Klonen von Inhalts suchen
     
 - , Um die Größe der Suchergebnisse zu verringern. Wenn Sie beispielsweise eine Suche haben, die zu viele zu exportierende Ergebnisse zurückgibt, können Sie die Suche Klonen und dann eine Suchbedingung basierend auf einem Datumsbereich hinzufügen, um die Anzahl der Suchergebnisse zu reduzieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="script-information"></a>Skript Informationen
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center sein, um das in diesem Thema beschriebene Skript auszuführen.
     
@@ -61,7 +61,7 @@ Mit dem Skript in diesem Schritt wird eine neue Inhaltssuche erstellt, indem ein
     
 So Klonen Sie eine Suche:
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `CloneSearch.ps1`.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `CloneSearch.ps1` .
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

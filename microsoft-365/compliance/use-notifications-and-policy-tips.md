@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn jemand mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Bekanntheit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie eine gültige geschäftliche Anforderung haben oder wenn die Richtlinie ein falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom: seo-marvel-apr2020
+description: Informationen zum Hinzufügen eines Richtlinien Tipps zu einer DLP-Richtlinie (Data Loss Prevention), um einen Benutzer darüber zu informieren, dass er mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen.
+ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327263"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819305"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -287,4 +288,4 @@ Sie können den Text für Richtlinien Tipps separat von der e-Mail-Benachrichtig
     
 - [Bestandteile von DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
     
-- [Typ von Entitätsdefinitionen für vertrauliche Informationen](sensitive-information-type-entity-definitions.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)

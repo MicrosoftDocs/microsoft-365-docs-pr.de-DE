@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie den Kundenschlüssel für Microsoft 365 für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien einrichten.
-ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717262"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810991"
 ---
 # <a name="set-up-customer-key"></a>Einrichten des Kunden Schlüssels
 
@@ -448,7 +448,15 @@ Zuweisen der Datenverschlüsselungsrichtlinie (DEP) zu einem Postfach mithilfe d
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
+Dabei legt der *MailboxIdParameter* ein Postfach fest. Weitere Informationen zum Cmdlet „Set-Mailbox“ finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+
+Für [lokale Postfächer mit Outlook für IOS und Android mit moderner Hybrid Authentifizierung](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)können die lokalen Postfachdaten, die mit dem Exchange Online-Mandanten synchronisiert werden, der DEP mithilfe des Cmdlets "MailUser" zugewiesen werden. 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Dabei gibt *mailuseridparameter* einen e-Mail-Benutzer an (auch als e-Mail-aktivierter Benutzer bezeichnet). Weitere Informationen zum Cmdlet "MailUser" finden Sie unter [festlegen-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### <a name="validate-mailbox-encryption"></a>Überprüfen einer Postfachverschlüsselung
 

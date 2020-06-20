@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Hier erfahren Sie, wie Sie Dokumente aus einer Überprüfungsgruppe auswählen und mit diesen einzeln in einer anderen Gruppe in einem erweiterten eDiscovery-Fall arbeiten.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034679"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818602"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Hinzufügen von Daten zu einem Überprüfungs Satzes aus einer anderen Überprüfungsgruppe
 
@@ -30,9 +32,9 @@ In einigen Fällen kann es erforderlich sein, Dokumente aus einer Überprüfungs
 
 Führen Sie den Workflow in diesem Artikel aus, um Inhalte aus einem Überprüfungs Satz zu einem anderen zu hinzufügen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="create-a-review-set"></a>Erstellen eines Überprüfungs Satzes
 
-Bevor Sie beginnen, müssen Sie eine neue Überprüfungsgruppe erstellen, der die Daten hinzugefügt werden sollen.  Auf der Registerkarte **Überprüfungs Sätze** der Groß-/Kleinschreibung kann ein neuer Überprüfungs Satz hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen eines Überprüfungs Satzes](managing-review-sets.md#create-a-review-set).
+Bevor Sie beginnen, müssen Sie eine Überprüfungsgruppe erstellen, der die Daten hinzugefügt werden sollen.  Auf der Registerkarte **Überprüfungs Sätze** der Groß-/Kleinschreibung kann ein neuer Überprüfungs Satz hinzugefügt werden. Weitere Informationen finden Sie unter [Erstellen eines Überprüfungs Satzes](managing-review-sets.md#create-a-review-set).
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Schritt 1: Identifizieren von Inhalten, die zu einem anderen Überprüfungs Sätze hinzugefügt werden
 

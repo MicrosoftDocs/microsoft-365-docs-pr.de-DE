@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Eine Liste unterstützter Dateitypen in Microsoft 365 Advanced eDiscovery. Dies umfasst eine Liste der Bilddateitypen, die von der OCR-Funktion in Advanced eDiscovery unterstützt werden.
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Eine Liste unterstützter Dateitypen in Microsoft 365 Advanced eDiscovery, einschließlich Bilddateitypen, die von der OCR-Funktion in Advanced eDiscovery unterstützt werden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634633"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819155"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
@@ -56,7 +57,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | Application/x-Msaccess | Ja | Ja | Ja | Nein | Nein | MDB |
 ||||||||
 
-## <a name="email"></a>E-Mail
+## <a name="email"></a>E-Mails
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -113,7 +114,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 
 | MIME-Typ | Datei Identifikation | Extraktion von Metadaten | Text Extraktion | Nativer Viewer | Annotations-Viewer | Mögliche Erweiterungen |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| Anwendung/OneNote | Ja | Ja | Ja | Ja | Nein | . eine |
+| Anwendung/OneNote | Ja | Ja | Ja | Ja | Nein | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -154,7 +155,7 @@ Advanced eDiscovery unterstützt viele Dateitypen in vielen verschiedenen Ebenen
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/msword | Ja | Ja | Ja | Ja | Ja | . dat;. doc |
 | Application/RTF | Ja | Ja | Ja | Ja | Ja | . doc;. RTF |
-| application/vnd. MS-Word. Document. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | DOCM |
+| Application/vnd.ms-word.document. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | DOCM |
 | application/vnd. MS-Word. Template. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | . dotm |
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document | Ja | Ja | Ja | Ja | Ja | DOCX |
 | application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Ja | Ja | Ja | Ja | Ja | . dotx |

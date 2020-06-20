@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für den Desktop, Office-Apps für Mobilgeräte und Office-Apps für das Internet arbeiten. Finden Sie heraus, welche apps Vertraulichkeits Bezeichnungen unterstützen.
-ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
+description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d2d1486aaed7ee3be308a847d9fd3ae19585f52d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658345"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819255"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -125,7 +126,7 @@ Vertraulichkeits Bezeichnungen, die Sie für die Verschlüsselung konfigurieren,
 - Für ein Dokument: **Datei**  >  **Informationen**  >  **schützen**des  >  **Zugriffs auf Dokumente einschränken**
 - für eine e-Mail: auf der Registerkarte " **Optionen** " > **verschlüsseln** 
   
-Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Zum Beispiel:
+Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie Ihre Bezeichnungs Konfigurationseinstellungen immer mit ihren eigenen Verschlüsselungseinstellungen außer Kraft setzen. Beispiel:
 
 - Ein Benutzer wendet die **vertrauliche Bezeichnung alle Mitarbeiter** auf ein Dokument an, und diese Bezeichnung ist so konfiguriert, dass Verschlüsselungseinstellungen für alle Benutzer in der Organisation angewendet werden. Dieser Benutzer konfiguriert dann die IRM-Einstellungen manuell, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation einzuschränken. Das Endergebnis ist ein Dokument mit dem Namen " **vertraulich" alle Mitarbeiter** und verschlüsselt, aber Benutzer in Ihrer Organisation können Sie nicht wie erwartet öffnen.
 
@@ -135,7 +136,7 @@ Wenn Benutzer ein Dokument oder eine e-Mail anfänglich bezeichnen, können Sie 
 
 Wenn das Dokument oder die e-Mail-Adresse bereits beschriftet ist, kann ein Benutzer eine dieser Aktionen ausführen, wenn der Inhalt noch nicht verschlüsselt ist, oder wenn er den [Verwendungsrechten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder den Vollzugriff besitzt. 
 
-Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Zum Beispiel:
+Für eine einheitlichere Bezeichnungs Oberfläche mit aussagekräftiger Berichterstellung sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, die nur Beschriftungen zum Schutz von Dokumenten anwenden. Beispiel:
 
 - Für Ausnahmefälle, in denen Benutzer eigene Berechtigungen zuweisen müssen, geben Sie Bezeichnungen an, mit denen [Benutzer ihre eigenen Berechtigungen zuweisen können](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
