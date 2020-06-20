@@ -3,7 +3,7 @@ title: Microsoft 365-Compliance-Dokumentation
 summary: Wenn Ihr Unternehmen gesetzliche oder behördliche Standards einhalten muss, beginnen Sie hier, um mehr über die Compliance von Microsoft 365 zu erfahren.
 metadata:
   title: Microsoft 365-Compliance-Dokumentation
-  description: Dokumentation zu Microsoft 365 Compliance-Funktionen
+  description: Diese Seite enthält Links zu einigen wichtigen Themen im Zusammenhang mit den Microsoft 365-Kompatibilitätsfeatures. Beginnen Sie hier, um mehr über die Kompatibilität in Microsoft 365 zu erfahren.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
-  ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: HT
+  ms.openlocfilehash: 7346a0d1abf0f8b643716d138efaaa269f35a2c5
+  ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+  ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 02/27/2020
-  ms.locfileid: "42322531"
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "44817554"
 landingContent:
 - title: Informationsschutz verwalten
   linkLists:
