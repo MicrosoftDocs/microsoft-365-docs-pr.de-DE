@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399182"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754796"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft Produktivitätsbewertung (Vorschau)
 
@@ -135,6 +135,22 @@ Die primäre Einblicke für Mobilität ist die Anzahl der Personen, die auf Date
 
 Wir messen den Prozentsatz und die absolute Anzahl von Personen, die mindestens eine Microsoft 365-Produktivitäts-App auf zwei oder mehr Plattformen verwendet haben, einschließlich Desktop, Mobiltelefon und Internet. Die Produktivitäts-apps, die wir messen, sind Outlook, Microsoft Teams, Word, Excel, PowerPoint, OneNote, jammern und Skype. Für Personen müssen Microsoft 365-Apps für Enterprise-, Exchange-, Jammer-, Skype-oder Teams-Lizenzen zur Vermessung vorhanden sein. 
 
-## <a name="we-want-to-hear-from-you"></a>Wir möchten von Ihnen hören
+## <a name="business-continuity-special-report"></a>Business Continuity-Spezial Bericht
+
+Der Business Continuity-Bericht ist ein befristeter Arbeitsplatz-Intelligence-Bericht, der allen Microsoft 365-Kunden zur Verfügung steht, um Ihnen zu helfen, ihre Organisationen während dieser schwierigen Zeit zu leiten.  
+
+Dieser Bericht hilft Geschäftsführern, Folgendes zu verstehen: 
+
+- Auswirkungen der Verlagerung auf die Remote Arbeit auf die Zusammenarbeit und Kommunikation 
+
+- Die Auswirkungen auf die Arbeits-und Lebenszeit Balance, während sich die Benutzer an die Arbeit von zu Hause anpassen. 
+
+- Wenn Personen Besprechungen effektiv verwenden und wie Sie 
+
+[Weitere Informationen zum Business Continuity-Bericht](https://aka.ms/bcrps)
+
+[Weitere Informationen zu Microsoft Graph](https://docs.microsoft.com/graph/)
+
+## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
 Bitte teilen Sie Ihre Gedanken zur Produktivitäts Bewertung und ihre Vorstellungen darüber, wie Sie Sie verbessern können. Verwenden Sie die **Feedback** Abschnitte im Produkt und/oder erreichen Sie das Team für die Produktivitäts Bewertung unter ProductivityScorePreview@Service.Microsoft.com.

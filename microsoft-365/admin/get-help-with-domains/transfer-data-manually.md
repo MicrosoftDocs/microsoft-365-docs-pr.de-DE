@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Hier erfahren Sie, wie Sie Daten manuell zwischen zwei Microsoft 365-Konten übertragen, wenn Sie den Plan oder den Firmennamen geändert oder mehrere Abonnements in einem kombiniert haben.
-ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e64872ad7e145b63eb71d89ea2d69e5d8697eb6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399872"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780169"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Manuelles Übertragen von Daten zwischen zwei Konten
 
@@ -46,10 +46,10 @@ Bereiten Sie das Aufrollen der Ärmel vor und blockieren Sie einen Teil der Zeit
 
 |**Aufgaben**|**Schritte**|
 |:-----|:-----|
-|Abonnieren Sie den Plan, in den Sie wechseln möchten.  <br/> |Wenn Sie sich registrieren, geben Sie den zu verwendenden Firmennamen in den ursprünglichen Domänennamen ein:  *ihrefirma*  .onmicrosoft.com,  *ihrefirma*  -public.sharepoint.com und  *ihrefirma*  .sharepoint.com. Sie müssen einen anderen Namen für  *ihrefirma*  verwenden, als Sie für alle vorhandenen Abonnements verwendet haben.  <br/> > [!NOTE]>  Normalerweise dauert es mindestens mehrere Monate nach dem Kündigen eines Abonnements, bis die ursprünglichen Domänennamen von unseren Systemen freigeben werden, die  *ihrefirma*  verwenden. Selbst wenn Sie planen, alle Daten aus Ihrem alten Microsoft 365-Abonnement zu speichern und das Abonnement abzubrechen, ist der alte *yourcompany* -Wert nicht sofort für die Verwendung in einem neuen Abonnement verfügbar.           |
-|Entfernen Sie Ihre benutzerdefinierte Domäne aus Ihrem alten Microsoft 365-Abonnement.  <br/> | Befolgen Sie die [erforderlichen Schritte, bevor Sie eine Domäne entfernen](remove-a-domain.md), um den Namen der Domäne aus E-Mail-Adressen von Benutzern sowie DNS-Einträge für E-Mail-Adressen und Lync für die benutzerdefinierte Domäne zu entfernen. Wenn Sie Ihre öffentliche Website auf Microsoft 365 hosten, müssen Sie auch den CNAME-Eintrag entfernen, der auf ihn verweist.  <br/> > [!IMPORTANT]>  Nachdem Sie den MX-Eintrag entfernt haben, der die E-Mails an diese benutzerdefinierte Domäne weiterleitet, funktioniert die E-Mail-Funktion nicht mehr, bis Sie die Domäne zu Ihrem neuen Konto hinzugefügt, den neuen MX-Eintrag sowie Ihre Benutzer eingerichtet haben. Wenn Sie die DNS-Einträge für Lync entfernen, funktioniert Lync nicht mehr. Und nachdem Sie den CNAME-Eintrag entfernen, der auf Ihre öffentliche Website verweist, ist es nicht mehr verfügbar.           [Entfernen Sie die Domäne](remove-a-domain.md) .  <br/> |
+|Abonnieren Sie den Plan, in den Sie wechseln möchten.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  Normalerweise dauert es mindestens mehrere Monate nach dem Kündigen eines Abonnements, bis die ursprünglichen Domänennamen von unseren Systemen freigeben werden, die  *ihrefirma*  verwenden. Selbst wenn Sie planen, alle Daten aus Ihrem alten Microsoft 365-Abonnement zu speichern und das Abonnement abzubrechen, ist der alte *yourcompany* -Wert nicht sofort für die Verwendung in einem neuen Abonnement verfügbar.           |
+|Entfernen Sie Ihre benutzerdefinierte Domäne aus Ihrem alten Microsoft 365-Abonnement.  <br/> | Befolgen Sie die [erforderlichen Schritte, bevor Sie eine Domäne entfernen](remove-a-domain.md), um den Namen der Domäne aus E-Mail-Adressen von Benutzern sowie DNS-Einträge für E-Mail-Adressen und Lync für die benutzerdefinierte Domäne zu entfernen. Wenn Sie Ihre öffentliche Website auf Microsoft 365 hosten, müssen Sie auch den CNAME-Eintrag entfernen, der auf ihn verweist.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Richten Sie Ihre benutzerdefinierte Domäne für Ihr neues Abonnement sowie Ihre Benutzer ein.  <br/> | Richten Sie Ihr neues Abonnement ein, einschließlich der Erstellung der erforderlichen DNS-Einträge für Ihre benutzerdefinierte Domäne.  <br/>  Erstellen Sie Ihre Benutzer mit E-Mail-Adressen in Ihrer benutzerdefinierten Domäne.  <br/> |
-|Übertragen Sie Daten aus dem alten Abonnement in Ihr neues Abonnement.  <br/> | Melden Sie sich in separaten Browserfenstern bei beiden Konten an:  <br/>  Klicken Sie mit der rechten Maustaste auf das Internet Explorer-Symbols, und öffnen Sie zwei InPrivate-Browserfenster. Sie können in den beiden Fenstern unterschiedliche Anmeldeinformationen verwenden, um sich bei beiden Konten anzumelden.  <br/> [Übertragen von Verwaltungseinstellungen zwischen Abonnements](#email) <br/> [Übertragen von Teamwebsitestruktur und Daten](#transfer-team-site-structure-and-data) <br/> [Übertragen einer öffentlichen Websites zwischen Abonnements](#transfer-a-public-website-between-subscriptions) <br/> [Übertragen von Verwaltungseinstellungen zwischen Abonnements](#email) <br/> |
+|Übertragen Sie Daten aus dem alten Abonnement in Ihr neues Abonnement.  <br/> | Melden Sie sich in separaten Browserfenstern bei beiden Konten an:  <br/>  Right-click the Internet Explorer icon, and open two InPrivate browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Übertragen von Verwaltungseinstellungen zwischen Abonnements](#email) <br/> [Übertragen von Teamwebsitestruktur und Daten](#transfer-team-site-structure-and-data) <br/> [Übertragen einer öffentlichen Websites zwischen Abonnements](#transfer-a-public-website-between-subscriptions) <br/> [Übertragen von Verwaltungseinstellungen zwischen Abonnements](#email) <br/> |
 |Kündigen Sie das Abonnement für den Plan, mit dem Sie fertig sind, indem Sie den Microsoft-Support für Microsoft 365 anrufen.  <br/> | Stellen Sie sicher, dass Ihr neues Abonnement funktioniert und alle Daten übertragen wurden.  <br/>  [Wenden Sie sich an den Kundendienst](../contact-support-for-business-products.md) , um Ihr altes Abonnement zu kündigen.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Übertragen von Verwaltungseinstellungen zwischen Abonnements
@@ -78,7 +78,7 @@ Für Microsoft 365 Small Business
 Wenn Sie eine öffentliche Website auf Microsoft 365 gehostet haben, müssen Sie Sie speichern und neu in Ihrem neuen Abonnement erstellen.
   
 > [!NOTE]
-> Wenn Ihre öffentliche Website bei einem DNS-Hostinganbieter gehostet wird, sind keine Änderungen erforderlich. Sie ist von Ihrem Wechsel nicht betroffen.
+> If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
   
 Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten aus einer SharePoint Online-Umgebung auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](https://go.microsoft.com/fwlink/p/?LinkId=402910).
   
@@ -91,9 +91,9 @@ Es gibt mehrere Möglichkeiten zum Speichern oder Übertragen von Teamwebsitedat
   
 - Sie können die alte Website als Vorlage speichern und die Vorlage in die neue Website importieren.
 
-- Zum Übertragen von Dokumenten müssen Sie zunächst manuell Ihre Hierarchie auf der neuen Website neu erstellen. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Zum Übertragen von Dokumenten müssen Sie zunächst manuell Ihre Hierarchie auf der neuen Website neu erstellen. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Speichern Sie zum Übertragen von Listendaten eine [Listenvorlage](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), und verwenden Sie die gespeicherte Vorlage, um die Liste auf der neuen Website neu zu erstellen.
+- Speichern Sie zum Übertragen von Listendaten eine [Listenvorlage](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), und verwenden Sie die gespeicherte Vorlage, um die Liste auf der neuen Website neu zu erstellen.
 
 - Informationen zum Speichern einer Dokumentbibliothek oder zum Auflisten von Inhalten aus einer SharePoint Online Umgebung (OneDrive für Unternehmen oder Teamwebsites) in Dateifreigaben oder auf einem lokalen Computer finden Sie unter [Informationen zur manuellen Migration von SharePoint Online Inhalten](https://support.microsoft.com/kb/2783484).
 
@@ -101,8 +101,8 @@ Es gibt mehrere Möglichkeiten zum Speichern oder Übertragen von Teamwebsitedat
 
 ### <a name="email"></a>E-Mail:
 
-Bitten Sie die Benutzer, [Ihre E-Mails, Kontakte, Aufgaben und Kalenderdaten zu verschieben](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx), nachdem Sie Ihr neues Abonnement eingerichtet haben. Sie können auf ihre alten E-Mails zugreifen, indem sie ihren ursprünglichen Benutzernamen verwenden, z. B. susanne@contoso.onmicrosoft.com.
+Ask users to [move their email, contacts, tasks, and calendar information](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) after you set up your new subscription. They can get to their old email by using their initial user name, such as sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>OneDrive for Business-Daten:
 
-Bitten Sie die Benutzer, [OneDrive für Unternehmen Inhalte auf Ihren Computer](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)zu kopieren/zu synchronisieren, und fügen Sie Sie dann Ihrem neuen Abonnement wieder hinzu.
+Bitten Sie die Benutzer, [OneDrive für Unternehmen Inhalte auf Ihren Computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)zu kopieren/zu synchronisieren, und fügen Sie Sie dann Ihrem neuen Abonnement wieder hinzu.

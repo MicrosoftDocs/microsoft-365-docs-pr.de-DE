@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632839"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735514"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
@@ -53,8 +53,8 @@ Es gibt URLs aus mehreren Microsoft-Produkten, die in der Liste zugelassen sein 
 
 Microsoft-Dienst | Dokumentationsquelle – erforderliche URLs für die Zulassungsliste
 --- | ---
-Windows 10 Enterprise einschließlich Windows Update für Unternehmen | [Verwalten von Verbindungs Endpunkten für Windows 10, Version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-Zustellungsoptimierung | [Konfigurieren der Zustellungsoptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 Enterprise einschließlich Windows Update für Unternehmen | [Verwalten von Verbindungs Endpunkten für Windows 10, Version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Übermittlungsoptimierung | [Konfigurieren der Zustellungsoptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365-URL und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybride Identität erforderliche Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) sowie [Active Directory und Active Directory-Domänendienste Port Anforderungen](https://aka.ms/AA26ygm) 
 Microsoft Intune | [InTune-Netzwerk Konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Netzwerkendpunkte für Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)

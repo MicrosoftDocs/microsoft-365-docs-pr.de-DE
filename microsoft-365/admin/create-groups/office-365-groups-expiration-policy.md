@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400725"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780421"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -54,7 +54,7 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder löschen Sie die Microsoft 365 Groups-Ablaufrichtlinien Einstellungen.|
-|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
+|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
@@ -84,6 +84,6 @@ Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe er
 
 [Übersicht über Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+[Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [Konfigurieren des Ablaufs von Microsoft 365-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

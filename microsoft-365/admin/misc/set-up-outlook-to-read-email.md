@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informationen zum Einrichten eines e-Mail-Kontos in Outlook für Windows und Mac sowie zum Installieren von Office-Apps und zum Online Zugriff auf e-Mails.
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399278"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779989"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Einrichten von Outlook zum Lesen von E-Mails
 
@@ -39,7 +39,7 @@ The first time you open Outlook, an Auto Account Wizard opens. If not, choose **
     
 2. Geben Sie auf der Seite **Konto automatisch einrichten** Ihren Namen, Ihre E-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Weiter** \> **Fertig stellen** aus.
     
-[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[Den vollständigen Artikel lesen](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Wie installiere ich die Office-Apps, einschließlich Outlook?
 
@@ -59,7 +59,7 @@ Beim ersten Öffnen der Outlook-App wird der Assistent zum Einrichten des Postei
     
 3. Geben Sie auf der Seite **Ihre Exchange-Kontoinformationen eingeben** ihren Namen, Ihre e-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Konto hinzufügen**aus.
     
-[Den vollständigen Artikel lesen](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac) 
+[Den vollständigen Artikel lesen](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac) 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Wie greife ich online auf meine E-Mails zu?
 

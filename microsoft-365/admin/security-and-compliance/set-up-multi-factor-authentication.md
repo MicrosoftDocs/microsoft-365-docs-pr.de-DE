@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die mehrstufige Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515807"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779941"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
   
@@ -75,15 +75,15 @@ Wenn Sie Richtlinien für bedingten Zugriff oder MFA auf Benutzerbasis (nicht em
 
 Arbeiten Sie mit ihren Pilotbenutzern zusammen, um Fragen und Probleme zur Vorbereitung auf ein reibungsloses Rollout in Ihrer Organisation zu behandeln.
 
-## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>SCHRITT 3: Informieren Sie Ihre Organisation, dass MFA kommt
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Schritt 3: Informieren Sie Ihre Organisation, dass MFA kommt
 
 Verwenden Sie e-Mail-Benachrichtigungen, Flur Poster, Teambesprechungen oder formelle Schulungen, um sicherzustellen, dass Ihre Mitarbeiter Folgendes verstehen:
 
 - Warum MFA für Anmeldungen erforderlich ist
-- [Registrieren für die zusätzliche Überprüfungsmethode](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [Vorgehensweise anmelden nach der Registrierung](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [Vorgehensweise ändern ihrer zusätzlichen Überprüfungsmethode](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [Umgang mit Situationen wie ein neues Smartphone](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [Registrieren für die zusätzliche Überprüfungsmethode](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Vorgehensweise anmelden nach der Registrierung](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Vorgehensweise ändern ihrer zusätzlichen Überprüfungsmethode](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [Umgang mit Situationen wie ein neues Smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 Stellen Sie sicher, dass Ihre Mitarbeiter verstehen, ***wann die MFA-Anforderung auferlegt*** wird, damit Sie nicht überrascht.
 
@@ -120,6 +120,6 @@ Aktivieren Sie Benutzerkonten für den MFA, der Ihrem Rollout entspricht.
 
 Wenn sich Ihre Mitarbeiter registrieren und mit der Anmeldung bei MFA beginnen, stellen Sie sicher, dass Ihre IT-Spezialisten, die IT-Abteilung oder der Helpdesk Fragen beantworten und Probleme schnell beheben können.
 
-In diesem Artikel finden Sie [Informationen zur Problembehandlung bei MFA-Anmeldungen](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+In diesem Artikel finden Sie [Informationen zur Problembehandlung bei MFA-Anmeldungen](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
 
 

@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Hier finden Sie Antworten auf ihre häufigsten Fragen zur Abrechnung für das Microsoft 365 for Business-Abonnement. '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400761"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741687"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Wichtige Fragen zur Abrechnung für Microsoft 365 for Business
 
@@ -121,7 +121,7 @@ Ja, aber Sie müssen den [Support anrufen](../../admin/contact-support-for-busin
 
 Ja. Führen Sie die folgenden Schritte aus, um Ihre Abrechnungs Anweisung als e-Mail-Anlage zu erhalten:
   
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungs Benachrichtigungen</a> , oder wählen Sie **Fakturierungs** \> **Benachrichtigungen**aus.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing Notifications</a> .
 
 2. Setzen Sie unter **Möchten Sie die Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.
 
@@ -200,9 +200,10 @@ Sie können den [Status der Steuerbefreiung beantragen](tax-information.md#apply
 
 ::: moniker range="o365-worldwide"
 
-1. Wählen Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Zahlungen</a> einen Rechnungsdatums Bereich aus.
-  
-2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **Download Rechnung PDF**aus, und Drucken Sie die PDF-Datei.
+1. Wechseln Sie im Admin Center zur Seite **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
+2. Wählen Sie auf der Registerkarte **Rechnungen** einen Rechnungsdatums Bereich aus.
+3. Wählen Sie die Rechnung aus, die Sie anzeigen möchten.
+4. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **PDF herunterladen**aus, und Drucken Sie die PDF-Datei.
 
 Weitere Informationen finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md).
 

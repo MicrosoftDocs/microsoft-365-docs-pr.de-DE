@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 9a9b6c01d979f4a5bb055f907dc0292a33f40993
-ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
+ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44405179"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779953"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
 
@@ -64,7 +64,7 @@ Bevor Sie beginnen, überprüfen Sie Ihre [Microsoft 365 Secure Score](https://d
 Die Verwendung der mehrstufigen Authentifizierung ist eine der einfachsten und effektivsten Methoden, um die Sicherheit Ihrer Organisation zu verbessern. Einfacher als es klingt – Wenn Sie sich anmelden, bedeutet mehrstufige Authentifizierung, dass Sie einen Code von Ihrem Telefon eingeben, um Zugriff auf Microsoft 365 zu erhalten. Dadurch kann verhindert werden, dass Hacker die übernehmen, wenn Sie Ihr Kennwort kennen. Die mehrstufige Authentifizierung wird auch als Überprüfung in zwei Schritten bezeichnet. Einzelpersonen können die Überprüfung in zwei Schritten für die meisten Konten problemlos hinzufügen, beispielsweise für Ihr Google-oder Microsoft-Konto. Hier erfahren Sie, wie Sie [Ihrem persönlichen Microsoft-Konto eine Überprüfung mit zwei Schritten hinzufügen](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409).
   
 Fügen Sie für Unternehmen, die Microsoft 365 verwenden, eine Einstellung hinzu, mit der sich Ihre Benutzer mit mehrstufiger Authentifizierung anmelden müssen. Wenn Sie diese Änderung vornehmen, werden die Benutzer aufgefordert, Ihr Mobiltelefon für die zweistufige Authentifizierung einzurichten, wenn Sie sich das nächste Mal anmelden.
-Ein Schulungsvideo zur Einrichtung von MFA und zur Fertigstellung von Benutzern finden Sie unter [Einrichten von MFA](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787) und [Benutzer einrichten](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225).
+Ein Schulungsvideo zur Einrichtung von MFA und zur Fertigstellung von Benutzern finden Sie unter [Einrichten von MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) und [Benutzer einrichten](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
 So richten Sie die mehrstufige Authentifizierung ein:
 
@@ -79,7 +79,7 @@ So richten Sie die mehrstufige Authentifizierung ein:
 5. Wählen Sie im Popupfenster die **Option mehrstufige Authentifizierung aktivieren**aus.
 
 
-Nachdem Sie die mehrstufige Authentifizierung für Ihre Organisation eingerichtet haben, müssen die Benutzer auf ihren Geräten die Prüfung in zwei Schritten einrichten. Weitere Informationen finden Sie unter [Einrichten der Überprüfung in zwei Schritten für Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+Nachdem Sie die mehrstufige Authentifizierung für Ihre Organisation eingerichtet haben, müssen die Benutzer auf ihren Geräten die Prüfung in zwei Schritten einrichten. Weitere Informationen finden Sie unter [Einrichten der Überprüfung in zwei Schritten für Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
   
 Ausführliche Informationen und umfassende Empfehlungen finden Sie unter [Einrichten der mehrstufigen Authentifizierung für Benutzer](set-up-multi-factor-authentication.md).
   
@@ -88,7 +88,7 @@ Ausführliche Informationen und umfassende Empfehlungen finden Sie unter [Einric
 
 Das Harvard Kennedy School [Cyber Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) bietet eine hervorragende Anleitung zum Einrichten einer starken Kultur des Sicherheitsbewusstseins in Ihrer Organisation, einschließlich der Schulung von Benutzern zur Identifizierung von Phishing-Angriffen. 
   
-Zusätzlich zu diesen Anleitungen empfiehlt Microsoft, dass Ihre Benutzer die in diesem Artikel beschriebenen Aktionen ausführen: [schützen Sie Ihr Konto und Ihre Geräte vor Hackern und Schadsoftware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Diese setzen sich wie folgt zusammen:
+Zusätzlich zu diesen Anleitungen empfiehlt Microsoft, dass Ihre Benutzer die in diesem Artikel beschriebenen Aktionen ausführen: [schützen Sie Ihr Konto und Ihre Geräte vor Hackern und Schadsoftware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Diese setzen sich wie folgt zusammen:
   
 - Verwenden sicherer Kennwörter
     
@@ -98,7 +98,7 @@ Zusätzlich zu diesen Anleitungen empfiehlt Microsoft, dass Ihre Benutzer die in
     
 Microsoft empfiehlt auch, dass Benutzer Ihre persönlichen e-Mail-Konten schützen, indem Sie die in den folgenden Artikeln empfohlenen Aktionen ausführen:
   
-- [Schützen Ihres Outlook.com-e-Mail-Kontos](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Schützen Ihres Outlook.com-e-Mail-Kontos](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Schützen Ihres gmail-Kontos mit zweistufiger Überprüfung](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -116,7 +116,7 @@ Die Administratorkonten, die Sie zum Verwalten Ihrer Microsoft 365-Umgebung verw
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: erhöhen des Schutzniveaus gegen Schadsoftware in Mail
 <a name="malware"> </a>
 
-Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, aber Sie können diesen Schutz verbessern, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in e-Mails zu erhöhen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0)an, oder führen Sie die folgenden Schritte aus:
+Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware, aber Sie können diesen Schutz verbessern, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in e-Mails zu erhöhen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit den Anmeldeinformationen Ihres Administratorkontos an. 
     
@@ -143,7 +143,7 @@ Sie können Schutz vor Ransomware durch Erstellen einer oder mehrerer Nachrichte
     
 - Blockieren von Dateitypen, die Ransomware oder anderen bösartigen Code enthalten könnten. Wir beginnen mit einer allgemeinen Liste von ausführbaren Dateien (in der Tabelle unten aufgeführt). Wenn in Ihrer Organisation eine dieser ausführbaren Typen verwendet wird und Sie davon ausgehen, dass diese in einer e-Mail gesendet werden, fügen Sie diese der vorherigen Regel hinzu (warnen Sie Benutzer).
     
-Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvideo](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)an, oder führen Sie die folgenden Schritte aus:
+Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvideo](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
 
@@ -172,7 +172,7 @@ Weitere Informationen finden Sie unter:
   
 - [Umgang mit Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [Wiederherstellen der OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Wiederherstellen der OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
     
 ## <a name="6-stop-auto-forwarding-for-email"></a>6: Beenden der automatischen Weiterleitung für e-Mail
 <a name="forwarding"> </a>
@@ -231,7 +231,7 @@ Wenn der Empfänger über Outlook 2013 oder Outlook 2016 und ein Microsoft-e-Mai
   
 Wenn der Empfänger einen anderen e-Mail-Client oder ein e-Mail-Konto wie Gmail oder Yahoo verwendet, wird ein Link angezeigt, über den Sie sich entweder anmelden können, um die e-Mail-Nachricht zu lesen, oder um einen einmaligen Zugangscode zum Anzeigen der Nachricht in einem Webbrowser anzufordern. Wenn Benutzer die e-Mail nicht erhalten, überprüfen Sie deren Spam-oder Junk-Ordner. 
   
-Weitere Informationen finden Sie unter [senden, anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+Weitere Informationen finden Sie unter [senden, anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. Schützen Ihrer e-Mails vor Phishing-Angriffen
 <a name="phishing"> </a>
@@ -242,7 +242,7 @@ Es wird empfohlen, dass Sie mit diesem Schutz beginnen, indem Sie eine Richtlini
   
 ![Erstellen einer ATP-Richtlinie zum Schutz vor Phishing](../../media/security-and-compliance-center.png)
   
-Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)an, oder führen Sie die folgenden Schritte aus:
+Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
@@ -276,7 +276,7 @@ Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinie
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Office 365 Advanced Threat Protection umfasst den Schutz von ATP-Sicherheitsanlagen, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, dass Sie eine neue Regel erstellen, um mit diesem Schutz zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
   
-Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
+Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     
@@ -315,7 +315,7 @@ Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
     
 - Fügen Sie eine neue Richtlinie hinzu, die für alle Empfänger in Ihrer Domäne vorgesehen ist.
     
-Um auf ATP-sichere Links zu gelangen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
+Um auf ATP-sichere Links zu gelangen, sehen Sie sich ein [kurzes Schulungsvideo](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu, [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Administratorkonto an. 
     

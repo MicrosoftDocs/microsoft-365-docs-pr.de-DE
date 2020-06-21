@@ -28,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Hier erfahren Sie, wie Sie OneDrive und eine Teamwebsite für die Speicherung und Freigabe von Dateien verwenden.
-ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b92bbb96a2d5d2ccbb35eff430a810f92fd07892
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398834"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778937"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Einrichten der Speicherung und Freigabe von Dateien
 
@@ -43,13 +43,13 @@ Sehen Sie sich ein kurzes Video darüber an, wo Dateien in Microsoft 365 gespeic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="where-you-can-store-documents-in-microsoft-365"></a>Wo Sie Dokumente in Microsoft 365 speichern können
 
 - OneDrive ist für die individuelle Verwendung mit der gelegentlichen Freigabe von Dateien konzipiert. 
 
-- Eine Teamwebsite ist für die regelmäßige Freigabe und Zusammenarbeit an Dateien konzipiert. Eine Teamwebsite ist ideal zum Speichern von Dateien mit freigegebenem Besitz, bei denen mehrere Personen die Dateien besitzen und möglicherweise an Ihnen zusammenarbeiten. Erstellen Sie ein Microsoft-Team, um eine Teamwebsite hinzuzufügen. [Weitere Informationen finden Sie unter Create a Team in Teams](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b).
+- Eine Teamwebsite ist für die regelmäßige Freigabe und Zusammenarbeit an Dateien konzipiert. Eine Teamwebsite ist ideal zum Speichern von Dateien mit freigegebenem Besitz, bei denen mehrere Personen die Dateien besitzen und möglicherweise an Ihnen zusammenarbeiten. Erstellen Sie ein Microsoft-Team, um eine Teamwebsite hinzuzufügen. [Weitere Informationen finden Sie unter Create a Team in Teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b).
 
 Sowohl OneDrive-als auch Teamwebsites bieten beliebigen Zugriff für Sie und Ihre Mitarbeiter.
   
@@ -60,11 +60,11 @@ Hier sind Empfehlungen dafür, was an jedem Standort gespeichert werden soll, we
 ||||
 |:-----|:-----|:-----|
 |**Speicherort** <br/> |**Zweck** <br/> |**Zu speichernde Elemente** <br/> |
-|**OneDrive** <br/> |Das Speichern von Inhalten in OneDrive ist wie das Speichern von Dateien auf Ihrem Computer. kein anderer kann problemlos darauf zugreifen.  <br/> Weitere Informationen finden Sie unter [Was ist OneDrive für Unternehmen?](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |Geschäftsdateien, die andere Teammitglieder für die Zusammenarbeit nicht benötigen oder auf die sie nicht regelmäßig zugreifen müssen.  <br/> |
-|**SharePoint-Teamwebsites** <br/> |Zusammenarbeit. Wenn Sie eine Microsoft 365-Gruppe erstellen (beispielsweise im Microsoft 365 Admin Center, in Outlook oder beim Erstellen eines Teams in Microsoft Teams), wird eine SharePoint-Teamwebsite für diese Gruppe erstellt. Ebenso wird beim Erstellen einer neuen SharePoint-Teamwebsite von der SharePoint-Startseite oder aus dem neuen SharePoint Admin Center auch eine Microsoft 365-Gruppe erstellt. Weitere Informationen finden Sie unter [Was ist eine SharePoint-Teamwebsite?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) und [Erstellen einer Teamwebsite in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Dateien mit freigegebenem Besitz. Es wird empfohlen, separate Teamwebsites für jede Arbeitseinheit in Ihrer Organisation zu verwenden. Um beispielsweise Personal-und Finanzdokumente in einem kleinen Team privat zu halten, erstellen Sie eine separate Teamwebsite.  <br/> |
+|**OneDrive** <br/> |Das Speichern von Inhalten in OneDrive ist wie das Speichern von Dateien auf Ihrem Computer. kein anderer kann problemlos darauf zugreifen.  <br/> Weitere Informationen finden Sie unter [Was ist OneDrive für Unternehmen?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Geschäftsdateien, die andere Teammitglieder für die Zusammenarbeit nicht benötigen oder auf die sie nicht regelmäßig zugreifen müssen.  <br/> |
+|**SharePoint-Teamwebsites** <br/> |Zusammenarbeit. Wenn Sie eine Microsoft 365-Gruppe erstellen (beispielsweise im Microsoft 365 Admin Center, in Outlook oder beim Erstellen eines Teams in Microsoft Teams), wird eine SharePoint-Teamwebsite für diese Gruppe erstellt. Ebenso wird beim Erstellen einer neuen SharePoint-Teamwebsite von der SharePoint-Startseite oder aus dem neuen SharePoint Admin Center auch eine Microsoft 365-Gruppe erstellt. Weitere Informationen finden Sie unter [Was ist eine SharePoint-Teamwebsite?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) und [Erstellen einer Teamwebsite in SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Dateien mit freigegebenem Besitz. Es wird empfohlen, separate Teamwebsites für jede Arbeitseinheit in Ihrer Organisation zu verwenden. Um beispielsweise Personal-und Finanzdokumente in einem kleinen Team privat zu halten, erstellen Sie eine separate Teamwebsite.  <br/> |
 
 > [!NOTE]
-> SharePoint hat auch andere Arten von Websites, die Sie für Ihr Unternehmen verwenden können. Sie können [Kommunikationswebsites](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in Ihrem Intranet verwenden, um Informationen für eine breite Benutzergruppe zu veröffentlichen. Sie können auch [Hub-Standorte](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) verwenden, um Websites in Ihrem Intranet zu verbinden.
+> SharePoint hat auch andere Arten von Websites, die Sie für Ihr Unternehmen verwenden können. Sie können [Kommunikationswebsites](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in Ihrem Intranet verwenden, um Informationen für eine breite Benutzergruppe zu veröffentlichen. Sie können auch [Hub-Standorte](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) verwenden, um Websites in Ihrem Intranet zu verbinden.
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>Starten der Verwendung von OneDrive und ihrer Teamwebsite
 
@@ -116,7 +116,7 @@ Hier sind die Schritte zum Hinzufügen von Dateien:
   
 5. Sie können die Dateien von Ihrem Computer löschen. Im nächsten Schritt können Sie [Online Dateien mit Ihrem PC oder Mac synchronisieren](#sync-online-files-with-your-pc-or-mac), indem Sie einen neuen Speicherort für diese Dateien auf Ihrem Computer erstellen.
 
-    Wenn Sie viele Dateien oder große Dateien auf Ihre Teamwebsite hochladen müssen, lesen Sie die Tipps unter [Hochladen großer oder vieler Dateien in eine Bibliothek](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242).
+    Wenn Sie viele Dateien oder große Dateien auf Ihre Teamwebsite hochladen müssen, lesen Sie die Tipps unter [Hochladen großer oder vieler Dateien in eine Bibliothek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Wenn Sie mehr Speicherplatz benötigen, lesen Sie [Ändern von Speicherplatz für Ihr Abonnement](../../commerce/add-storage-space.md).
 
@@ -167,15 +167,15 @@ Hier finden Sie einige Tipps, wie Sie OneDrive oder Ihre SharePoint-Teamwebsite 
 
 Wenn Sie eine Datei in OneDrive speichern, kann Sie nur von Ihnen zugegriffen werden, es sei denn, Sie können Sie für andere freigeben. Wenn Sie Dateien freigeben, können Sie auswählen, ob Sie einen Link erstellen möchten, der weitergeleitet werden kann, oder nur für bestimmte Personen freigeben. Sie können auch in OneDrive separate Ordner für unterschiedliche Zwecke erstellen, beispielsweise öffentliche und persönliche Ordner oder Ordner für einzelne Projekte. Jeder Ordner kann für eine andere Person oder Gruppe oder aber auch für niemanden freigegeben werden.
   
-Weitere Informationen zur Freigabe finden Sie auch unter [Freigeben von Dateien und Ordnern mit Microsoft 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
+Weitere Informationen zur Freigabe finden Sie auch unter [Freigeben von Dateien und Ordnern mit Microsoft 365](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65).
   
 ### <a name="track-how-much-space-you-have-left"></a>Nachverfolgen des noch verfügbaren Speicherplatzes
 
-Um zu sehen, wie viel Speicherplatz Sie in OneDrive noch haben, lesen Sie [Verwalten des OneDrive für Unternehmen Speichers](https://support.office.com/article/31519161-059C-4764-B6F8-F5CD29F7FE68.aspx).
+Um zu sehen, wie viel Speicherplatz Sie in OneDrive noch haben, lesen Sie [Verwalten des OneDrive für Unternehmen Speichers](https://support.microsoft.com/office/31519161-059C-4764-B6F8-F5CD29F7FE68).
   
 ### <a name="what-files-can-be-stored-in-onedrive-and-a-team-site"></a>Welche Dateien können in OneDrive und einer Teamwebsite gespeichert werden?
 
-Während Sie fast alle Arten von Dateien hochladen können, sind einige Dateinamen und Zeichen in Dateinamen nicht zulässig. Weitere Informationen finden Sie unter [ungültige Datei Zeichen und Dateitypen in OneDrive für Unternehmen](https://support.office.com/article/64883A5D-228E-48F5-B3D2-EB39E07630FA.aspx).
+Während Sie fast alle Arten von Dateien hochladen können, sind einige Dateinamen und Zeichen in Dateinamen nicht zulässig. Weitere Informationen finden Sie unter [ungültige Datei Zeichen und Dateitypen in OneDrive für Unternehmen](https://support.microsoft.com/office/64883A5D-228E-48F5-B3D2-EB39E07630FA).
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Aktivieren oder Deaktivieren von Speicherdiensten von Drittanbietern
 
@@ -186,7 +186,7 @@ Sie können Speicher von Drittanbietern für Ihre Benutzer in Microsoft 365 akti
   
 1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>an.
 
-2. Wechseln Sie zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Organisations**</a> Einstellungen.
+2. Wechseln Sie zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Organisations**</a> Einstellungen.
 
 3. Wählen Sie auf der Registerkarte **Dienste** die Option **Office im Internet**aus.
 
@@ -194,12 +194,12 @@ Sie können Speicher von Drittanbietern für Ihre Benutzer in Microsoft 365 akti
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Passen Sie Ihre Teamwebsite für die Speicherung und Freigabe von Dateien an](customize-team-site.md). Dieses schrittweise Lernprogramm zeigt Ihnen, wie Sie weitere Features für Speicherung und Zusammenarbeit nutzen können. 
+- [Passen Sie Ihre Teamwebsite für die Speicherung und Freigabe von Dateien an](customize-team-site.md). Dieses schrittweise Lernprogramm zeigt Ihnen, wie Sie weitere Features für Speicherung und Zusammenarbeit nutzen können.
 
 - **Einrichten von Office-Apps auf Tablets und Smartphones**. Sie müssen dies tun, damit Sie Dateien **Bearbeiten** können, die in OneDrive und auf Teamwebsites von Ihrem Tablet oder Telefon gespeichert sind. Wenn Sie die Office-Apps für Ihr Tablet oder Telefon nicht installieren, können Sie die Dateien anzeigen, aber nicht bearbeiten.
 
-  - [Installieren und Einrichten von Office auf einem Android-Gerät mit Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installieren und Einrichten von Office auf einem Android-Gerät mit Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 
-  - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
-  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+  - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

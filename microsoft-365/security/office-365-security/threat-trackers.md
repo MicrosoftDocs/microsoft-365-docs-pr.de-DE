@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: 336cbe15d6eba7363e926a81fab498a7d6cff44a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631157"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755064"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -42,10 +42,10 @@ Die meisten Tracker-Seiten umfassen Trend Nummern, die regelmäßig aktualisiert
   
 Tracker sind nur einige der vielen tollen Funktionen, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
   
-Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum &amp; Security Compliance Center[https://protection.office.com](https://protection.office.com)() und wählen Sie Threat **Management** \> **Threat Tracker**aus.
+Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und wählen Sie Threat **Management** \> **Threat Tracker**aus.
   
 > [!NOTE]
-> Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ### <a name="noteworthy-trackers"></a>Bemerkenswerte Tracker
 
@@ -79,7 +79,7 @@ Sie können eine bemerkenswerte Tracker-Abfrage oder eine ihrer eigenen Explorer
 
 Unabhängig davon, ob Sie e-Mails, Inhalte oder Office-Aktivitäten (in Kürze) überprüfen, können Explorer und Tracker zusammenarbeiten, um Sicherheitsrisiken und-Bedrohungen zu untersuchen und nachzuverfolgen. Alle zusammen bieten Ihnen Tracker Informationen zum Schutz Ihrer Benutzer, indem Sie neue, bemerkenswerte und häufig gesuchte Probleme hervorheben, um sicherzustellen, dass Ihr Unternehmen besser geschützt ist, wenn es in die Cloud wechselt.
   
-Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheitsfeatures von Microsoft 365 geben können, indem Sie auf die Schaltfläche **Feedback** in der unteren rechten Ecke der [Übersicht &amp; des Security Compliance Centers](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
+Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheitsfeatures von Microsoft 365 geben können, indem Sie auf die Schaltfläche **Feedback** in der unteren rechten Ecke der [Übersicht über das Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
   
 ![Security &amp; Compliance-Center ](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
@@ -97,7 +97,7 @@ Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, d
 
 - Wenn Ihre Organisation noch nicht über diese Office 365-und-Antwortfunktionen verfügt, finden Sie weitere Informationen unter [wie werden Office 365 Bedrohungs Ermittlung und-Antwortfunktionen abgerufen?](office-365-ti.md).
     
-- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security &amp; Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security &amp; Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
     

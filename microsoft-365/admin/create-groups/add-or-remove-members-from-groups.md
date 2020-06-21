@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Hier erfahren Sie, wie Sie einer Gruppe ein Mitglied hinzufügen, Mitglied aus der Gruppe entfernen und den Status von Gruppenbesitzern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431593"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780481"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
 
@@ -37,10 +37,10 @@ ms.locfileid: "44431593"
 
 ::: moniker-end
 
-In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, fügen sich selbst zu Gruppen hinzu, denen Sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, einem Exchange-Administrator, einem Gruppenadministrator oder einem Benutzer Administrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Wenn Sie kein Administrator sind, können Sie [Mitglieder mit Outlook hinzufügen oder entfernen](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).
+> Wenn Sie kein Administrator sind, können Sie [Mitglieder mit Outlook hinzufügen oder entfernen](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Hinzufügen eines Mitglieds zu einer Gruppe im Admin Center
 
@@ -54,7 +54,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 ## <a name="manage-group-owner-status"></a>Verwalten des Status von Gruppenbesitzern
 
-Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitzer. Häufig hat eine Gruppe als Sicherungsunterstützung oder aus anderen Gründen mehrere Besitzer. Mitglieder können in den Status eines Besitzers hochgestuft und Besitzer können in den Status eines Mitglieds heruntergestuft werden.
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Heraufstufen eines Mitglieds in den Besitzer Status im Admin Center
 
@@ -243,7 +243,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie neben dem Namen des Besitzers das X aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -281,13 +281,13 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 - Um Hunderte oder Tausende von Benutzern zu Gruppen hinzuzufügen, verwenden [Sie das Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
 
-- [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>Artikel zum Verwalten von Gruppen
 
 - [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
 
-- [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](manage-guest-access-in-groups.md)
 

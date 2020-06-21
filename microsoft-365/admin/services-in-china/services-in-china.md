@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399014"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779917"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -57,10 +57,10 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 |:-----|:-----|
 |Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
 |Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../contact-support-for-business-products.md).  <br/> |
-|Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Ändern oder Zurücksetzen Ihres Kennworts in Office 365, betrieben von 21Vianet](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [ändern oder Zurücksetzen Ihres Kennworts in Microsoft 365, betrieben von 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicherheit, Datenschutz, Compliance und Details zu den Ebenen des Supports  <br/> |Bereitgestellt von 21Vianet.  <br/> |
-|Office-Desktopsetup  <br/> |Das Office-Desktopsetup ist für Office 2010 und Office 2007 nicht verfügbar. Administratoren können jedoch [aktuelle Office-Desktopanwendungen so konfigurieren, dass sie mit Office 365 funktionieren](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Unterstützung für Mobilgeräte und Geräte\*  <br/> | Demnächst stehen folgende mobile Funktionen zur Verfügung:  <br/>  Mobile Geräteverwaltung (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) sind nicht verfügbar, Sie können jedoch Exchange ActiveSync-Geräte oder ein Angebot von Research in Motion (RIM, drahtlose E-Mail-Lösung von Blackberry) verwenden, um Blackberry Enterprise Server (BES) auszuführen.  <br/>  Weitere Informationen zum mobilen Support finden Sie unter [Einrichten und Verwalten des mobilen Zugriffs von Benutzern](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Office-Desktopsetup  <br/> |Das Office-Desktopsetup ist für Office 2010 und Office 2007 nicht verfügbar. Administratoren können jedoch [aktuelle Office-Desktopanwendungen so konfigurieren, dass sie mit Office 365 funktionieren](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
+|Unterstützung für Mobilgeräte und Geräte\*  <br/> | Demnächst stehen folgende mobile Funktionen zur Verfügung:  <br/>  Mobile Geräteverwaltung (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) sind nicht verfügbar, Sie können jedoch Exchange ActiveSync-Geräte oder ein Angebot von Research in Motion (RIM, drahtlose E-Mail-Lösung von Blackberry) verwenden, um Blackberry Enterprise Server (BES) auszuführen.  <br/>  Weitere Informationen zum mobilen Support finden Sie unter [Einrichten und Verwalten des mobilen Zugriffs von Benutzern](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Nicht verfügbar.  <br/> |
 |Microsoft Planner  <br/> |In Kürze verfügbar.  <br/> |
 |Microsoft Teams  <br/> |Nicht verfügbar.  <br/> |
@@ -74,7 +74,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 
 |||
 |:-----|:-----|
-|Freigeben von Dokumenten, Bibliotheken oder Websites per E-Mail für Personen außerhalb Ihrer Organisation  <br/> |Dieses Feature steht zur Verfügung, ist aber standardmäßig deaktiviert, da durch dessen Verwendung u. U. auf freigegebene Dateien außerhalb Ihres Landes zugegriffen werden kann. Administratoren können diese Option aktivieren, es wird jedoch eine Warnmeldung angezeigt, die darauf hinweist, dass auf freigegebene Dateien dadurch möglicherweise außerhalb Ihres Landes zugegriffen werden kann. Benutzer, die versuchen, Dateien für Personen außerhalb der Organisation freizugeben, erhalten ebenfalls eine Warnmeldung. Weitere Informationen finden Sie unter [Freigeben von SharePoint-Dateien oder -Ordnern in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).  <br/> |
+|Freigeben von Dokumenten, Bibliotheken oder Websites per E-Mail für Personen außerhalb Ihrer Organisation  <br/> |Dieses Feature steht zur Verfügung, ist aber standardmäßig deaktiviert, da durch dessen Verwendung u. U. auf freigegebene Dateien außerhalb Ihres Landes zugegriffen werden kann. Administratoren können diese Option aktivieren, es wird jedoch eine Warnmeldung angezeigt, die darauf hinweist, dass auf freigegebene Dateien dadurch möglicherweise außerhalb Ihres Landes zugegriffen werden kann. Benutzer, die versuchen, Dateien für Personen außerhalb der Organisation freizugeben, erhalten ebenfalls eine Warnmeldung. Weitere Informationen finden Sie unter [Freigeben von SharePoint-Dateien oder -Ordnern in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
 |Access-Dienste  <br/> |Access 2013 wird unterstützt, aber das Hinzufügen von neuen Access-Apps ist möglicherweise nicht verfügbar, da dieses Feature in Office 365 und SharePoint Online eingestellt wird. Die Erstellung neuer Access-basierter Web-Apps und Access-Webdatenbanken in Office 365 und SharePoint Online wird ab Juni 2017 eingestellt. Verbleibende Web-Apps und Webdatenbanken werden innerhalb April 2018 deaktiviert. Außerdem wird die Access 2010-Funktionalität nicht unterstützt, und wenn Sie versuchen, eine Access 2010-Datenbank zu verwenden, wird dies zu Fehlern und u. U. Datenverlusten führen.  <br/> |
 |Microsoft PowerApps  <br/> |In Kürze verfügbar.  <br/> |
 |Verwaltung von Informationsrechten (Information Rights Management, IRM)  <br/> |Die Möglichkeit, IRM-Funktionen für SharePoint für Ihre Organisation festzulegen, wird in Kürze zur Verfügung stehen.  <br/> |
@@ -108,12 +108,12 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
  Mit dem kumulativen Exchange 2013-Update 5 (CU5) eingeführt, werden nun vollumfängliche Hybridbereitstellungen zwischen lokalen Exchange 2013-Organisationen und Office 365-Diensten unterstützt. Dank neuer Verbesserungen des Assistenten für die Hybridkonfiguration unterstützt Exchange 2013 CU5 die folgenden Hybrid-Features zwischen Ihren lokalen und Exchange Online-Organisationen:  
 
 - Sicheres E-Mail-Routing zwischen der lokalen und der Exchange Online-Organisation. 
-- E-Mail-Routing mit einem freigegebenen Domänennamespace. Beispielsweise verwenden sowohl lokale als auch Exchange Online-Organisationen die SMTP-Domäne "@contoso.com". 
+- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
 - Eine einheitliche globale Adressliste (GAL), auch als „freigegebenes Adressbuch" bezeichnet.  
 - Austausch von Frei/Gebucht- und Kalenderinformationen zwischen der lokalen und der Exchange Online-Organisation.  
-- Zentrale Steuerung des eingehenden und ausgehenden Nachrichtenflusses. Sie können alle eingehenden und ausgehenden Exchange Online-Nachrichten über die lokale Exchange-Organisation routen. 
+- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
 - Eine einzige Office Outlook Web-App-URL für die lokale und die Exchange Online-Organisation.  
-- Möglichkeit zum Verschieben vorhandener lokaler Postfächer in die Exchange Online-Organisation. Exchange Online-Postfächer können bei Bedarf auch in die lokale Organisation zurückverschoben werden.  
+- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
 - Zentrale Postfachverwaltung über die lokale Exchange-Verwaltungskonsole.  
 - MailTips, HD-Fotounterstützung für Outlook-Kontakte und die Suche in mehreren Postfächern zwischen lokalen und Exchange Online-Organisationen. 
 - Cloudbasierte Nachrichtenarchivierung für lokale Exchange-Postfächer. 
@@ -165,7 +165,7 @@ Weitere Informationen zum Konfigurieren einer Hybridbereitstellung mit Office 36
 - [Erstellen einer Hybridbereitstellung mit dem Assistenten für die Hybridkonfiguration](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  Der [Bereitstellungs-Assistent für Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) ist ein kostenloses webbasiertes Tool, mit dem Sie in Ihrer lokalen Organisation eine Hybridbereitstellung zwischen Ihrer lokalen Organisation und Office 365 konfigurieren oder eine vollständige Migration zu Office 365 vornehmen können. Der Assistent stellt Ihnen einige einfache Fragen und erstellt dann anhand Ihrer Antworten eine angepasste Checkliste mit Anweisungen zum Konfigurieren der Hybridbereitstellung. Es wird dringend empfohlen, den Bereitstellungs-Assistenten zum Konfigurieren einer Hybridbereitstellung zu verwenden. > Für Organisationen, die kein Upgrade auf Exchange 2013 CU5-Server durchführen bzw. keinen solchen hinzufügen möchten; Exchange 2013 SP1-Organisationen können den Austausch von Frei/Beschäftigt-Informationen zwischen ihren lokalen und Exchange Online-Organisationen konfigurieren. Wenn Sie dieses Feature für die Hybridbereitstellung konfigurieren möchten, lesen Sie [Konfigurieren von Features der Exchange-Hybridbereitstellung mit Office 365, betrieben von 21Vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d). 
+>  Der [Bereitstellungs-Assistent für Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) ist ein kostenloses webbasiertes Tool, mit dem Sie in Ihrer lokalen Organisation eine Hybridbereitstellung zwischen Ihrer lokalen Organisation und Office 365 konfigurieren oder eine vollständige Migration zu Office 365 vornehmen können. Der Assistent stellt Ihnen einige einfache Fragen und erstellt dann anhand Ihrer Antworten eine angepasste Checkliste mit Anweisungen zum Konfigurieren der Hybridbereitstellung. Es wird dringend empfohlen, den Bereitstellungs-Assistenten zum Konfigurieren einer Hybridbereitstellung zu verwenden. > Für Organisationen, die kein Upgrade auf Exchange 2013 CU5-Server durchführen bzw. keinen solchen hinzufügen möchten; Exchange 2013 SP1-Organisationen können den Austausch von Frei/Beschäftigt-Informationen zwischen ihren lokalen und Exchange Online-Organisationen konfigurieren. Wenn Sie dieses Feature für die Hybridbereitstellung konfigurieren möchten, lesen Sie [Konfigurieren von Features der Exchange-Hybridbereitstellung mit Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
 |||  
 |---|---|
@@ -187,7 +187,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
 
 |||
 |:-----|:-----|
-|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Verwalten Ihres Office 365 pro Plus-Kontos für Office 365, das von 21Vianet betrieben wird](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx).  <br/> |
+|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Manage Your Microsoft 365 apps for Enterprise Account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -213,7 +213,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
 |:-----|:-----|
 |Domain-Provider zur Unterstützung von Skype for Business  <br/> |Sie müssen Ihre Domäne bei einem chinesischen Domänenanbieter registrieren, der SRV-Einträge unterstützt. Weitere Informationen zum Registrieren von Domänen finden Sie unter [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
 |Einwahlkonferenzen (die Ermöglichung der telefonischen Teilnahme an Besprechungen für Benutzer, die keinen Zugang zu einem Computer haben)  <br/> |Möglicherweise werden Optionen für Einwahlkonferenzen und Anbieter in Skype for Business oder im Skype for Business Admin Center angezeigt, diese Features stehen aber noch nicht zur Verfügung. Sie werden jedoch in Kürze verfügbar sein.  <br/> |
-|Hilfe für Skype for Business-Desktops  <br/> |Hilfe für Skype for Business-Desktops finden Sie [hier](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx). Allerdings ist die Desktop-Hilfe nicht über das Produkt verfügbar, es sei denn, Sie verwenden Office Klick-und-Los.  <br/> |
+|Hilfe für Skype for Business-Desktops  <br/> |Hilfe für Skype for Business-Desktops finden Sie [hier](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). Allerdings ist die Desktop-Hilfe nicht über das Produkt verfügbar, es sei denn, Sie verwenden Office Klick-und-Los.  <br/> |
 |Lync 2010  <br/> |Nicht verfügbar.  <br/> |
 |Die Möglichkeit zur Teilnahme an einer Besprechung über Ihren Kalender, wenn Sie ein Samsung-Gerät mit Google Chrome verwenden  <br/> |In Kürze verfügbar. In der Zwischenzeit können Sie Skype for Business öffnen, zur Besprechungsübersicht wechseln und von dort an der Besprechung teilnehmen.  <br/> |
 |Telefonapparate wie Polycom, Ares und Tanjay  <br/> |Nicht verfügbar.  <br/> |

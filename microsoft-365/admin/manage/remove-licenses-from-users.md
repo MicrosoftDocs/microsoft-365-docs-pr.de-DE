@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Hier erfahren Sie, wie Sie Lizenzen aus Benutzerkonten entfernen.
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432231"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780073"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -145,7 +145,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 - Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
-- Sie können auch [Benutzerkonten löschen](../add-users/delete-a-user.md), denen eine Lizenz zugewiesen wurde, um diese Lizenz anderen Benutzern zuzuweisen. Wenn Sie ein Benutzerkonto löschen, wird dessen Lizenz sofort verfügbar und kann einer anderen Person zugewiesen werden.
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - Wenn eine Lizenz von einem Benutzer entfernt wird, werden Daten, die diesem Konto zugeordnet sind, 30 Tage lang aufbewahrt. Nach Ablauf der 30-tägigen Kulanzzeit werden die Daten gelöscht und können nicht wiederhergestellt werden.
 
@@ -157,7 +157,7 @@ Wenn Sie die Zuweisung von Lizenzen mithilfe der Seite **Lizenzen** aufheben, we
 
 - Informationen dazu, wie Sie den Zugriff eines Benutzers auf Microsoft 365-Daten nach dem Entfernen Ihrer Lizenz blockieren und wie Sie später auf die Daten zugreifen können, finden Sie unter [Entfernen eines ehemaligen Mitarbeiters](../add-users/remove-former-employee.md).
 
-- Wenn Sie die Lizenz eines Benutzers entfernen und Office weiterhin installiert ist, werden bei der Verwendung von Office nicht [lizenzierte Produktbenachrichtigungen](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) angezeigt.
+- Wenn Sie die Lizenz eines Benutzers entfernen und Office weiterhin installiert ist, werden bei der Verwendung von Office nicht [lizenzierte Produktbenachrichtigungen](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) angezeigt.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

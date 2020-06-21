@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über das Feature "ATP-sichere Anlagen" für Office 365 und wie Sie das Feature für Ihr Abonnement abrufen.
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616778"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754760"
 ---
 # <a name="atp-safe-attachments"></a>Sichere Anlagen in ATP
 
@@ -41,7 +41,7 @@ Stellen Sie als nächstes sicher, dass Ihre ATP-Richtlinien für sichere Anlagen
 
 - Richtlinien für ATP-sichere Anlagen werden eingerichtet. (Weitere Informationen finden Sie unter [Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md).)
 
-- Benutzer haben sich mit Ihrem Arbeits-oder Schulkonto angemeldet. (Weitere Informationen finden Sie unter [Anmelden bei Office oder Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Benutzer haben sich mit Ihrem Arbeits-oder Schulkonto angemeldet. (Weitere Informationen finden Sie unter [Anmelden bei Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
 Um ATP-Richtlinien zu definieren oder zu bearbeiten, muss Ihnen eine entsprechende Rolle zugewiesen sein. In der folgenden Tabelle werden einige Beispiele beschrieben:
 

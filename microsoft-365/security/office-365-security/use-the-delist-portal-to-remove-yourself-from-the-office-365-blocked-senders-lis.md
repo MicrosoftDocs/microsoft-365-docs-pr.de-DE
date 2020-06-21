@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie sich mithilfe des Listenentfernungsportals selbst aus der Microsoft 365-Liste der blockierten Absender entfernen können.
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208537"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739245"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen
 
@@ -43,7 +43,7 @@ wobei _IP address_ die IP-Adresse des Computers ist, auf dem der E-Mail-Server a
 
 1. Wechseln Sie in einem Webbrowser zu [https://sender.office.com](https://sender.office.com).
 
-2. Folgen Sie den Anweisungen auf dem Bildschirm. Verwenden Sie die E-Mail-Adresse, an die die Fehlermeldung gesendet wurde, und die IP-Adresse, die in der Fehlermeldung angegeben ist. Sie können nur eine E-Mail-Adresse und eine IP-Adresse pro Besuch eingeben.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Klicken Sie auf **Absenden**.
 
@@ -60,4 +60,4 @@ wobei _IP address_ die IP-Adresse des Computers ist, auf dem der E-Mail-Server a
     > [!NOTE]
     > Es kann bis zu 24 Stunden dauern oder die Ergebnisse können sehr unterschiedlich ausfallen, bevor die Beschränkungen aufgehoben werden.
 
-Weitere Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md) und [Outbound Spam Protection in EoP](outbound-spam-controls.md) , um zu verhindern, dass IP auf die schwarze Liste gesetzt wird.
+Weitere Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md) und [Outbound Spam Protection in EoP](outbound-spam-controls.md) , um zu verhindern, dass IP blockiert wird.

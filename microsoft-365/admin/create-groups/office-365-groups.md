@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Gruppen.
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419136"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780409"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -80,7 +80,7 @@ Die folgenden Grenzwertegelten für Microsoft 365-Gruppen:
 |Dateispeicher|1 TB plus 10 GB pro Abonnementbenutzer plus zusätzlich gekaufter Speicher. Sie können eine unbegrenzte Menge weiteren Speichers kaufen.|
 |Größe des Gruppenpostfachs|50 GB|
 
-Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organisation haben kann, ist 500.000, kann aber auf Anforderung erhöht werden. Weitere Informationen zu den Grenzwerten für Microsoft 365-Gruppen finden Sie unter [Microsoft 365 groups-admin Help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organisation haben kann, ist 500.000, kann aber auf Anforderung erhöht werden. Weitere Informationen zu den Grenzwerten für Microsoft 365-Gruppen finden Sie unter [Microsoft 365 groups-admin Help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Die Verwaltung Ihrer Microsoft 365-Gruppen ist effektiver, wenn Sie über Aktions fähige Informationen zur Verwendung von Gruppen verfügen. Das Microsoft 365 Admin Center verfügt über ein Berichtstool, mit dem Sie Dinge wie die Speichernutzung, die Anzahl der aktiven Gruppen und sogar die Verwendung der Gruppen durch Ihre Benutzer anzeigen können. Weitere Informationen finden Sie unter: [Microsoft 365 Reports im Admin Center](../activity-reports/office-365-groups.md) .
 
@@ -116,7 +116,7 @@ Microsoft 365 Gruppen arbeiten mit Azure Active Directory (AAD). Die von Ihnen e
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Informationen zu Microsoft 365-Gruppen](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 

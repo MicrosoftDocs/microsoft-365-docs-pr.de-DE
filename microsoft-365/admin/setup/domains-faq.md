@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre Fragen in FAQ finden.
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398906"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739155"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
@@ -102,7 +102,7 @@ Sie müssen die DNS-Einträge für Office 365-Dienste selbst einrichten (sofern 
 ## <a name="what-is-a-domain-name"></a>Was ist ein Domänenname?
 
 
-Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@** -Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem standardmäßigen Internetsuffix, z. B.  *ihrunternehmen.com*  oder  *musikhochschule.edu*  . 
+A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
   
 Die Verwendung einer benutzerdefinierten Domäne wie "**Rob \@ contoso.com**" mit Office 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke aufzubauen. 
   
@@ -154,7 +154,7 @@ Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalt
    
 1. Melden Sie sich bei der Domänenregistrierungsstelle für Ihre Domäne an.
     
-2. Suchen Sie den Bereich auf der Website der Registrierungsstelle, auf der Sie die Namenservereinträge aktualisieren, und aktualisieren Sie die Namenserver so, dass sie auf den DNS-Host Ihrer Domäne verweisen. (Der DNS-Host ist oft die Domänenregistrierungsstelle.)
+2. Find the area on the registrar's website where you update nameserver records, and update the nameservers to point to your domain's DNS host. (The DNS host is often the domain registrar.)
     
 3. Klicken Sie auf einen Link, um zum Setup-Assistenten für Domänen zu wechseln:
 
@@ -211,13 +211,13 @@ Führen Sie die nachstehenden Schritte aus, um den Code bei Office 365 zu erhalt
     
 4. Wenn Sie die Domäne noch nicht überprüft haben, führen Sie hierzu zuerst die folgenden Schritte aus.
     
-5. Auf der Seite **DNS-Einstellungen aktualisieren** werden die Namenserver für Office 365 aufgelistet. Wechseln Sie zur Domänenregistrierungsstelle für Ihre Domäne, und ändern Sie die Namenserver in die Office 365-Namenserver. 
+5. On the **Update DNS settings** page, we list the nameservers for Office 365. Go to the domain registrar for your domain, and update the nameservers to the Office 365 nameservers. 
     
 4. Nachdem Sie die Namenserver aktualisiert haben, **warten Sie mindestens eine Stunde**. Wählen Sie dann zurück im Assistenten in Office 365 die Option **überprüfen**aus.
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>Was geschieht, wenn mein DNS-Anbieter bestimmte Eintragstypen nicht unterstützt?
 
-Wenn Sie Ihre eigenen DNS-Einträge verwalten und Ihr DNS-Host nicht alle von Office 365 benötigten DNS-Einträge unterstützt, funktionieren einige der Office 365-Funktionen nicht. Wir empfehlen, in diesem Fall Ihre Domäne zu übertragen, und zwar zu einer Domänenregistrierungsstelle, die alle erforderlichen DNS-Einträge unterstützt.
+If you manage your own DNS records and your DNS host does not support all the DNS records that Office 365 needs, some Office 365 features won't work. We recommend that you transfer your domain to a registrar that supports all required DNS records.
   
 Anbieter, die alle erforderlichen DNS-Einträge unterstützen:
   
@@ -263,7 +263,7 @@ Anbieter, die alle erforderlichen DNS-Einträge unterstützen:
 
 - Microsoft Teams-Verbund mit Skype for Business, entweder lokal oder online. Weitere Informationen finden Sie unter [Vorbereiten des Netzwerks Ihrer Organisation für Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
- **Wenn SPF-/TXT-Einträge nicht unterstützt werden**, sind andere Personen möglicherweise in der Lage, über Ihre Domäne Spam oder andere schädliche E-Mails zu senden. Mithilfe von SPF-Einträgen werden die Server bestimmt, denen es gestattet ist, E-Mails über Ihre Domäne zu senden. 
+ **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Wie kann ich die Standarddomäne in Office 365 festlegen oder ändern?
 
@@ -335,7 +335,7 @@ Sie können beispielsweise die Domänen "contoso.com" und "contosomarketing.com"
   
 Wenn Sie eine Unterdomäne hinzufügen, wird Sie automatisch basierend auf der überprüften übergeordneten Domäne überprüft.
   
-Wenn Sie Office 365 mehrere Domänen hinzufügen, können Sie beliebige dieser Dienste (wie E-Mail) in jeder der von Ihnen hinzugefügten Domäne hosten.  *Wenn Sie Ihr E-Mail-System in Office 365 ändern, indem Sie den MX-Eintrag der Domäne ändern, werden von nun an ALLE an diese Domäne gesendeten E-Mails an Office 365 gesendet.* 
+When you add multiple domains to Office 365, you can host any of the services (like email) on any of the domains you've added.  *When you change your email to Office 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Office 365.* 
  
 ::: moniker range="o365-worldwide"
 
@@ -348,13 +348,13 @@ Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn Si
   
  **Wenn Sie möchten, dass Ihre e-Mails wie *Alan \@ contoso.com*aussehen:** [kaufen Sie die Domäne](../get-help-with-domains/buy-a-domain-name.md) , oder befolgen Sie die Schritte unter [Hinzufügen Ihrer Benutzer und Domäne zu Office 365,](add-domain.md) Wenn Sie bereits Besitzer sind. 
   
-- **Sie können die "onmicrosoft.com"-Domäne nach der Registrierung nicht umbenennen**. Wenn Sie beispielsweise "fourthcoffee.onmicrosoft.com" als ursprüngliche Domäne ausgewählt haben, können Sie sie nicht in "fabrikam.onmicrosoft.com" ändern. Um eine andere "onmicrosoft.com"-Domäne verwenden zu können, müssen Sie ein neues Abonnement bei Office 365 einrichten. 
+- **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365. 
     
 - **Die URL der Teamwebsite kann nicht umbenannt werden.** Ihre Teamwebsite-URL basiert auf Ihrem onmicrosoft.com-Domänennamen. Aufgrund der Funktionsweise SharePoint Online Architektur können Sie die Teamwebsite leider nicht umbenennen. 
     
-- **Sie können Ihre "onmicrosoft.com"-Domäne nicht entfernen.** Office 365 muss diese Domäne beibehalten, weil sie im Hintergrund für Ihr Abonnement verwendet wird. Sie müssen diese Domäne jedoch nicht verwenden, nachdem Sie eine benutzerdefinierte Domäne hinzugefügt haben. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
-Sie können die ursprüngliche Domäne "onmicrosoft.com" auch nach Hinzufügen Ihrer Domäne weiterverwenden. Sie funktioniert nämlich weiterhin für E-Mail und andere Dienste. Wählen Sie also selbst.
+You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
   
 ::: moniker-end
 
@@ -369,7 +369,7 @@ Office 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.de*, wenn Sie
     
 - **Die URL der Teamwebsite kann nicht umbenannt werden.** Ihre Teamwebsite-URL basiert auf Ihrem onmicrosoft.de-Domänennamen. Aufgrund der Funktionsweise SharePoint Online Architektur können Sie die Teamwebsite leider nicht umbenennen. 
     
-- **Sie können Ihre "onmicrosoft.com"-Domäne nicht entfernen.** Office 365 muss diese Domäne beibehalten, weil sie im Hintergrund für Ihr Abonnement verwendet wird. Sie müssen diese Domäne jedoch nicht verwenden, nachdem Sie eine benutzerdefinierte Domäne hinzugefügt haben. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
 Sie können die anfängliche onmicrosoft.de-Domäne auch dann weiterhin verwenden, wenn Sie Ihre Domäne hinzugefügt haben. Es funktioniert immer noch für e-Mail und andere Dienste, daher ist es Ihre Wahl.
   
@@ -439,7 +439,7 @@ Sie können, aber es gibt Einschränkungen:
     
 4. Optional: Aufheben der Blockierung des vorhandenen e-Mail-Servers
     
-    1. Office 365 verwendet Exchange Online Protection (EoP) zum Schutz vor Spam. Wenn EoP eine große Menge an Spam erkennt, die von Ihrem aktuellen e-Mail-Server weitergeleitet wird, kann dies dazu führen, dass die Weiterleitung möglicherweise nicht mehr funktioniert. Wenn Sie mit dem Spam Schutz vertraut sind, den Ihr anderer e-Mail-Anbieter verwendet, können Sie den Server in Office 365 Whitelisten. Auf diese Weise können jedoch auch alle Spam-Mails, die über den ursprünglichen Server eingehen, in die Office 365 Postfächer gelangen, und Sie können nicht auswerten, wie gut Office 365 Spam verhindert.
+    1. Office 365 verwendet Exchange Online Protection (EoP) zum Schutz vor Spam. Wenn EoP eine große Menge an Spam erkennt, die von Ihrem aktuellen e-Mail-Server weitergeleitet wird, kann dies dazu führen, dass die Weiterleitung möglicherweise nicht mehr funktioniert. Wenn Sie mit dem Spam Schutz vertraut sind, den Ihr anderer e-Mail-Anbieter verwendet, können Sie den Server zu einer Zulassungsliste in Office 365 hinzufügen. Auf diese Weise können jedoch auch alle Spam-Mails, die über den ursprünglichen Server eingehen, in die Office 365 Postfächer gelangen, und Sie können nicht auswerten, wie gut Office 365 Spam verhindert.
     
     2. Wechseln Sie zu Exchange Admin Center (EAC).
         

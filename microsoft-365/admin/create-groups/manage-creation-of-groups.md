@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern, welche Benutzer Microsoft 365-Gruppen erstellen können.
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387993"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761674"
 ---
 # <a name="manage-who-can-create-groups"></a>Verwalten von Personen, die Gruppen erstellen können
 
@@ -45,14 +45,12 @@ In diesem Artikel wird erklärt, wie Sie die Möglichkeit zum Erstellen von Grup
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- Roadmap
+- Projekt für das Internet und Roadmap
     
 Sie können die Erstellung von Microsoft 365-Gruppen auf die Mitglieder einer bestimmten Sicherheitsgruppe einschränken. Um dies zu konfigurieren, verwenden Sie Windows PowerShell. Dieser Artikel führt Sie durch die erforderlichen Schritte.
   
@@ -173,7 +171,7 @@ Wenn Sie später die verwendete Sicherheitsgruppe ändern möchten, können Sie 
 
 Wenn Sie die Einschränkung für die Gruppenerstellung deaktivieren und wieder allen Benutzern das Erstellen von Gruppen gestatten möchten, legen Sie $GroupName auf "" und $AllowGroupCreation auf "True" fest, und führen Sie das Skript erneut aus.
     
-## <a name="step-4-verify-that-it-works"></a>Schritt 4: Überprüfen, ob alles ordnungsgemäß funktioniert
+## <a name="step-3-verify-that-it-works"></a>Schritt 3: Überprüfen der ordnungsgemäßen Funktion
 
 Änderungen können dreißig Minuten oder mehr dauern, um wirksam zu werden. Sie können die neuen Einstellungen überprüfen, indem Sie die folgenden Schritte ausführen:
 

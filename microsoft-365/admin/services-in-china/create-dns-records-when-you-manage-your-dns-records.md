@@ -21,12 +21,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'Informationen zum Erstellen von DNS-Einträgen für Office 365, die von 21Vianet ausgeführt werden, wenn Ihre DNS-Einträge verwaltet werden. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 478f3d48a8d94d0a42d6501df8f0c32efc41e902
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c05dc1c84465ea06572021610744f0cbe5aa9fea
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399074"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779905"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen
 
@@ -37,7 +37,7 @@ Weitere Optionen und einige Dinge, die Sie beachten sollten:
       
 -  Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md). Beschreibungen der DNS-Einträge finden Sie unter [DNS Basics](../get-help-with-domains/dns-basics.md).
     
--  Einige DNS-Hostinganbieter können nicht alle erforderlichen Datensatztypen erstellen, wodurch Diensteinschränkungen verursacht werden, [Wenn Ihr Hostinganbieter keine Unterstützung für SRV, CNAME, txt oder Umleitung bietet](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). Wenn Ihr Anbieter keine SRV-, txt-oder CNAME-Einträge unterstützt, wird empfohlen, dass Sie Ihre Domäne an einen Anbieter [übertragen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) [, der alle erforderlichen Datensatztypen unterstützt](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+-  Einige DNS-Hostinganbieter können nicht alle erforderlichen Datensatztypen erstellen, wodurch Diensteinschränkungen verursacht werden, [Wenn Ihr Hostinganbieter keine Unterstützung für SRV, CNAME, txt oder Umleitung bietet](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). Wenn Ihr Anbieter keine SRV-, txt-oder CNAME-Einträge unterstützt, wird empfohlen, dass Sie Ihre Domäne an einen Anbieter [übertragen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) [, der alle erforderlichen Datensatztypen unterstützt](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
     
 - Um zu sehen, welche DNS-Einträge erforderlich sind, und die für jeden Datensatz zu verwendenden Werte finden, einschließlich des MX-Eintrags für e-Mail, finden Sie unter [Sammeln der erforderlichen Informationen zum Erstellen Office 365 DNS-Einträge](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records). Beschreibungen der DNS-Einträge finden Sie unter [DNS Basics](../get-help-with-domains/dns-basics.md).
     

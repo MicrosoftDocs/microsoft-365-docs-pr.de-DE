@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel wird beschrieben, wie Sie verhindern können, dass Phishing-Nachrichten Ihr Postfach, Outlook.com und Outlook im Internet erreichen.
-ms.openlocfilehash: b49cc27685f62f5fb5d123a8a7aa4e51e0065e64
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ed317f5673aa37b91e8c5092eb127b8df6be944e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588336"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754832"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 
@@ -88,6 +88,6 @@ Nicht unbedingt. Office 365 möglicherweise andere Eigenschaften in der Nachrich
 
 [Schützen Ihres Outlook.com-e-Mail-Kontos](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-[Umgang mit Phishing oder Spoofing in Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
+[Umgang mit Phishing in Outlook.com](https://support.microsoft.com/office/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
 [Filtern von Junk-e-Mails und Spam in Outlook im Internet](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616634"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755260"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -110,7 +110,7 @@ Die Sammlung von Listen sicherer Adressen für ein Postfach umfasst die Liste si
 
 <sup>\*</sup>**Hinweise**:
 
-- In Exchange Online werden **Domäneneinträge** in der Liste sicherer Absender oder _TrustedSendersAndDomains_ nicht erkannt, daher werden nur e-Mail-Adressen verwendet. In eigenständigen EoP mit Verzeichnissynchronisierung werden Domäneneinträge nicht standardmäßig synchronisiert, Sie können jedoch die Synchronisierung für Domänen aktivieren. Weitere Informationen finden Sie unter [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
+- In Exchange Online werden **Domäneneinträge** in der Liste sicherer Absender oder _TrustedSendersAndDomains_ nicht erkannt, daher werden nur e-Mail-Adressen verwendet. In eigenständigen EoP mit Verzeichnissynchronisierung werden Domäneneinträge nicht standardmäßig synchronisiert, Sie können jedoch die Synchronisierung für Domänen aktivieren. Weitere Informationen finden Sie unter [KB3019657](https://support.microsoft.com/help/3019657).
 
 - Sie können die Liste sicherer Empfänger nicht direkt mithilfe des Cmdlets " **MailboxJunkEmailConfiguration** " ändern (der Parameter " _TrustedRecipientsAndDomains_ " funktioniert nicht). Sie ändern die Liste sicherer Absender, und diese Änderungen werden mit der Liste sicherer Empfänger synchronisiert.
 
@@ -168,11 +168,11 @@ Verwenden Sie eine der folgenden Vorgehensweisen, um sicherzustellen, dass die S
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook
 
-Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Microsoft 365-Apps für Unternehmen, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) und [Bereitstellen von Junk-e-Mail-Einstellungen wie der Liste sicherer Absender mithilfe von Gruppenrichtlinien](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
+Verwenden Sie Gruppenrichtlinien zum Aktivieren, Deaktivieren und Konfigurieren der clientseitigen Junk-E-Mail-Filtereinstellungen, die in Outlook verfügbar sind. Weitere Informationen finden Sie unter [Administrative Vorlagendateien (ADMX/ADML) und Office-Anpassungs Tool für Microsoft 365-Apps für Unternehmen, Office 2019 und Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) und [Bereitstellen von Junk-e-Mail-Einstellungen wie der Liste sicherer Absender mithilfe von Gruppenrichtlinien](https://support.microsoft.com/help/2252421).
 
-Wenn der Outlook-Junk-e-Mail-Filter auf den Standardwert **No Automatic Filtering** in **Home** \> **Junk** \> **Junk e-Mail-Optionen** \> **Optionen**festgelegt ist, versucht Outlook nicht, Massagen als Spam zu klassifizieren, verwendet jedoch weiterhin die Sammlung von Listen sicherer Adressen (Liste sicherer Absender, Liste sicherer Empfänger und blockierte Absender), um Nachrichten nach der Zustellung in den Junk-e-Mail- Weitere Informationen zu diesen Einstellungen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Wenn der Outlook-Junk-e-Mail-Filter auf den Standardwert **No Automatic Filtering** in **Home** \> **Junk** \> **Junk e-Mail-Optionen** \> **Optionen**festgelegt ist, versucht Outlook nicht, Massagen als Spam zu klassifizieren, verwendet jedoch weiterhin die Sammlung von Listen sicherer Adressen (Liste sicherer Absender, Liste sicherer Empfänger und blockierte Absender), um Nachrichten nach der Zustellung in den Junk-e-Mail- Weitere Informationen zu diesen Einstellungen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
-Wenn der Outlook-Junk-E-Mail-Filter auf **Niedrig** oder **Hoch** gesetzt ist, verwendet der Outlook-Junk-E-Mail-Filter eine eigene SmartScreen-Filtertechnologie zum Identifizieren und Verschieben von Spam in den Junk-E-Mail-Ordner. Diese Spam Klassifizierung unterscheidet sich von der SCL-Bewertung (Spam Confidence Level), die von EoP bestimmt wird. In der Tat ignoriert Outlook die SCL-Bewertung von EoP (es sei denn, EoP markiert die Nachricht zum Überspringen der Spamfilterung) und verwendet eigene Kriterien, um zu ermitteln, ob es sich bei der Nachricht um Spam handelt. Natürlich ist es möglich, dass das Spam Urteil von EoP und Outlook identisch sein könnte. Weitere Informationen zu diesen Einstellungen finden Sie unter [Ändern der Schutzebene im Junk-e-Mail-Filter](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
+Wenn der Outlook-Junk-E-Mail-Filter auf **Niedrig** oder **Hoch** gesetzt ist, verwendet der Outlook-Junk-E-Mail-Filter eine eigene SmartScreen-Filtertechnologie zum Identifizieren und Verschieben von Spam in den Junk-E-Mail-Ordner. Diese Spam Klassifizierung unterscheidet sich von der SCL-Bewertung (Spam Confidence Level), die von EoP bestimmt wird. In der Tat ignoriert Outlook die SCL-Bewertung von EoP (es sei denn, EoP markiert die Nachricht zum Überspringen der Spamfilterung) und verwendet eigene Kriterien, um zu ermitteln, ob es sich bei der Nachricht um Spam handelt. Natürlich ist es möglich, dass das Spam Urteil von EoP und Outlook identisch sein könnte. Weitere Informationen zu diesen Einstellungen finden Sie unter [Ändern der Schutzebene im Junk-e-Mail-Filter](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
 > [!NOTE]
 > Im November 2016 hörte Microsoft auf, Spamdefinitionsupdates für die SmartScreen-Filter in Exchange und Outlook zu erstellen. Die vorhandenen SmartScreen-Spamdefinitionen wurden beibehalten, aber ihre Effektivität wird sich im Laufe der Zeit wahrscheinlich vermindern. Weitere Informationen finden Sie unter [Support für SmartScreen in Outlook und Exchange eingestellt](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
@@ -189,7 +189,7 @@ Die Sammlung von Listen sicherer Adressen (die Liste sicherer Absender, Liste si
 
   > Die Junk-e-Mail-Listen von Servern konnten nicht/nicht hinzugefügt werden. Sie haben die auf dem Server zulässige Größe überstiegen. Der Junk-e-Mail-Filter auf dem Server wird deaktiviert, bis Ihre Junk-e-Mail-Listen auf die vom Server zugelassene Größe reduziert wurden.
 
-  Weitere Informationen zu diesem Grenzwert und zum Ändern des Werts finden Sie unter [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+  Weitere Informationen zu diesem Grenzwert und zum Ändern des Werts finden Sie unter [KB2669081](https://support.microsoft.com/help/2669081).
 
 - Die synchronisierte Sammlung von Listen sicherer Adressen in EoP weist die folgenden Synchronisierungs Grenzwerte auf:
 

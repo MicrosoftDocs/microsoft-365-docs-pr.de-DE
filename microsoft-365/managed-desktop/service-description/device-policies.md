@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029828"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773787"
 ---
 # <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -33,7 +33,7 @@ In dieser Tabelle werden die Standardrichtlinien hervorgehoben, die während der
 
 Richtlinie | Beschreibung
 --- | ---
-Sicherheitsbasislinie | [Microsoft-Sicherheitsbasis](https://docs.microsoft.com/windows/device-security/windows-security-baselines) für MDM ist für alle von Microsoft verwalteten Desktop Geräte konfiguriert. Dieser Basisplan ist die Industriestandard Konfiguration. Es wird öffentlich veröffentlicht, gut getestet und von Microsoft-Sicherheitsexperten überprüft, um die Sicherheit von Microsoft-Desktop Geräten und-apps am modernen Arbeitsplatz zu gewährleisten. <br><br>Um Bedrohungen in der ständig wachsenden Sicherheits Bedrohungslandschaft zu verringern, wird die Microsoft-Sicherheitsbasislinie mit jeder Windows 10-Feature-Aktualisierung auf Microsoft Managed Desktop-Geräten aktualisiert und bereitgestellt.<br><br>Weitere Informationen finden Sie unter [Security Baseline for Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Sicherheitsbasislinie | [Microsoft-Sicherheitsbasis](https://docs.microsoft.com/windows/device-security/windows-security-baselines) für MDM ist für alle von Microsoft verwalteten Desktop Geräte konfiguriert. Dieser Basisplan ist die Industriestandard Konfiguration. Es wird öffentlich veröffentlicht, gut getestet und von Microsoft-Sicherheitsexperten überprüft, um die Sicherheit von Microsoft-Desktop Geräten und-apps am modernen Arbeitsplatz zu gewährleisten. <br><br>Um Bedrohungen in der ständig wachsenden Sicherheits Bedrohungslandschaft zu verringern, wird die Microsoft-Sicherheitsbasislinie mit jeder Windows 10-Feature-Aktualisierung auf Microsoft Managed Desktop-Geräten aktualisiert und bereitgestellt.<br><br>Weitere Informationen finden Sie unter [Windows-Sicherheitsbasislinien](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Empfohlene Sicherheitsvorlage für Microsoft Managed Desktop | Eine Reihe empfohlener Änderungen an der Sicherheitsbasislinie, die die Benutzerfreundlichkeit optimieren.  Diese Änderungen sind im [Sicherheits Nachtrag](#security-addendum)dokumentiert. Updates für den Richtlinien Nachtrag werden auf der Grundlage der erforderlichen Anforderungen ausgeführt.  
 Update Bereitstellung | Verwenden Sie Windows Update für Unternehmen, um die schrittweise Bereitstellung von Softwareupdates durchzuführen. IT-Administratoren können Einstellungen für die Bereitstellungsgruppen Richtlinien nicht ändern. Weitere Informationen zur gruppenbasierten Bereitstellung finden Sie unter [How Updates are handled in Microsoft Managed Desktop](updates.md).
 Gemessene Verbindungen | Standardmäßig sind Aktualisierungen über gemessene Verbindungen (wie LTE-Netzwerke) deaktiviert, obwohl jeder Benutzer dieses Feature in **Einstellungen > Updates > Erweiterte Optionen**unabhängig voneinander aktivieren kann. Wenn Sie zulassen möchten, dass alle Benutzer Aktualisierungen über gemessene Verbindungen aktivieren, [Senden Sie eine Änderungsanforderung](../working-with-managed-desktop/admin-support.md), die diese Einstellung für alle Geräte aktiviert.

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'In diesem Artikel erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und entsprechend Ihrem Firmen Logo oder ihrer eigenen Farbe anpassen. '
-ms.openlocfilehash: 034e5cff726ea97397d5eee1592265ae3452209b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678614"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779857"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassen des Microsoft 365-Designs für Ihre Organisation
 
@@ -67,7 +67,7 @@ Als Administrator Ihres Microsoft 365 for Business-Abonnements können Sie das S
     
 4. Wählen Sie **Änderungen speichern** aus.
     
-Sie können Ihr neues Design sofort im Admin Center sehen. Nach einer kurzen Verzögerung können Sie ihn in Microsoft 365, einschließlich auf Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284), anzeigen.
+Sie können Ihr neues Design sofort im Admin Center sehen. Nach einer kurzen Verzögerung können Sie ihn in Microsoft 365, einschließlich auf Seiten in Outlook, SharePoint, [SharePoint Mobile App für IOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)und [SharePoint Mobile App für Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284), anzeigen.
 
 Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Design Seite zurück, und wählen Sie **benutzerdefinierte Designs entfernen**aus.
   

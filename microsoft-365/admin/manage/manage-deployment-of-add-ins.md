@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678636"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780121"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Verwalten der Bereitstellung von Add-Ins im Microsoft 365 Admin Center
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678636"
 
 ::: moniker-end
 
-[] Office-Add-Ins helfen Ihnen beim Personalisieren Ihrer Dokumente und beim Optimieren der Art und Weise, wie Sie im Web auf Informationen zugreifen (lesen Sie [Erste Schritte mit Ihrem Office-Add-In](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Als Administrator können Sie Office-Add-Ins für die Benutzer in Ihrer Organisation bereitstellen. Verwenden Sie dazu das Feature für die zentralisierte Bereitstellung im Microsoft 365 Admin Center.
+[] Office-Add-Ins helfen Ihnen beim Personalisieren Ihrer Dokumente und beim Optimieren der Art und Weise, wie Sie im Web auf Informationen zugreifen (lesen Sie [Erste Schritte mit Ihrem Office-Add-In](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Als Administrator können Sie Office-Add-Ins für die Benutzer in Ihrer Organisation bereitstellen. Verwenden Sie dazu das Feature für die zentralisierte Bereitstellung im Microsoft 365 Admin Center.
   
 Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Administratoren, um Add-Ins für Benutzer und Gruppen innerhalb einer Organisation bereitzustellen. Weitere Informationen zum ermitteln, ob Ihre Organisation eine zentralisierte Bereitstellung unterstützenkann, finden Sie unter [bestimmen, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](centralized-deployment-of-add-ins.md).
   
@@ -44,20 +44,20 @@ Die zentrale Bereitstellung bietet die folgenden Vorteile:
   
 - Ein globaler Administrator kann ein Add-in einem Benutzer, mehreren Benutzern über eine Gruppe oder allen im Mandanten direkt zuweisen.
     
-- Wenn die entsprechende Office-Anwendung gestartet wird, wird das Add-In automatisch für den Benutzer heruntergeladen. Wenn das Add-In Add-In-Befehle unterstützt, wird das Add-In automatisch im Menüband der Office-Anwendung angezeigt.
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - Add-Ins werden nicht mehr für Benutzer angezeigt, wenn der Administrator das Add-in deaktiviert oder löscht oder wenn der Benutzer aus Azure Active Directory oder aus einer Gruppe entfernt wird, der das Add-in zugewiesen ist.
     
 > [!NOTE]
 >  Für Word verwenden Excel und PowerPoint einen [SharePoint-App-Katalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) zum Bereitstellen von Add-Ins für Benutzer in einer lokalen Umgebung ohne Verbindung mit Microsoft 365 und/oder Unterstützung für SharePoint-Add-Ins erforderlich. > für Outlook verwenden Sie die Exchange-Systemsteuerung für die Bereitstellung in einer lokalen Umgebung ohne Verbindung mit Microsoft 365. > 
   
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Empfohlene Vorgehensweise für die Bereitstellung von Office-Add-ins
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Empfohlene Vorgehensweise für die Bereitstellung von Office-Add-Ins
 
-Erwägen Sie, Add-Ins schrittweise bereitzustellen, um zu gewährleisten, dass die Bereitstellung der Add-Ins reibungslos verläuft. Hierbei wird folgender Plan empfohlen:
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. Stellen Sie das Add-In für eine kleine Gruppe von Projektbeteiligten und Mitgliedern der IT-Abteilung bereit. Überprüfen Sie, ob die Bereitstellung erfolgreich verlaufen ist, und fahren Sie in dem Fall mit Schritt 2 fort.
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. Stellen Sie das Add-In für eine größere Personengruppe im Unternehmen bereit, die das Add-In nutzen sollen. Überprüfen Sie die Ergebnisse erneut, und wenn alles erfolgreich verlaufen ist, fahren Sie mit dem nächsten Schritt der vollständigen Bereitstellung fest.
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. Stellen Sie das Add-In der gesamten Benutzerzielgruppe bereit.
     
@@ -70,9 +70,9 @@ Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** .
     
-2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus. Wählen Sie auf der Seite Übersicht die Option **weiter**aus.
+2. Wählen Sie **Add-In bereitstellen** oben auf der Seite aus. Wählen Sie auf der Übersichtseite ** und als nächstes** aus.
     
-3. Wählen Sie eine Option aus, und folgen Sie den Anweisungen.
+3. Wählen Sie eine Option aus und folgen Sie den Anweisungen. 
   
 4. Wenn Sie die Option zum Hinzufügen eines Add-Ins aus dem Office Store ausgewählt haben, können Sie nun die Add-in-Auswahl vornehmen. Beachten Sie, dass Sie die verfügbaren Add-Ins nach den Kategorien **Für Sie vorgeschlagen**, **Bewertung** oder **Name** anzeigen können. Aus dem Office Store können nur kostenlose Add-Ins hinzugefügt werden. Kostenpflichtige Add-Ins werden derzeit nicht unterstützt. Nachdem Sie Ihr Add-in ausgewählt haben, müssen Sie einigen zusätzlichen Bedingungen zustimmen, damit Sie fortfahren können. <br/><br/> Hinweis: mit der Office Store Option werden Updates und Verbesserungen des Add-Ins automatisch für Benutzer ohne ihre Eingriffe zur Verfügung gestellt.
 
@@ -80,34 +80,34 @@ Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add
   
 6. Wählen Sie **Bereitstellen**.
   
-7. Wenn das Add-in bereitgestellt wurde, wird ein grünes Häkchen angezeigt. Sie können den Anweisungen auf der Seite folgen, um zu testen, ob das Add-in erfolgreich bereitgestellt wurde.
+7. Wenn das Add-in bereitgestellt wurde, wird ein grünes Häkchen angezeigt. Folgen Sie den Anweisungen auf der Seite, um zu testen, ob das Add-In erfolgreich bereitgestellt wurde.
 
 > [!NOTE]
-> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 12 Stunden dauern, bis Sie auf den Benutzermenü Bändern angezeigt werden.
+> Benutzer müssen möglicherweise Office neu starten, damit das Add-in-Symbol im Menüband der App angezeigt wird. Outlook-Add-Ins können bis zu 24 Stunden in Anspruch nehmen, um auf den Benutzer-menübändern angezeigt zu werden.
     
 8. Wenn Sie fertig sind, wählen Sie **weiter**aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzer bereitzustellen.
 
 
 
-Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die angezeigten Anweisungen, um die Bereitstellung des Add-ins effektiv anzukündigen. <br/>Das Add-in wird nun zusammen mit anderen apps in Microsoft 365 angezeigt.
+Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die angezeigten Anweisungen, um die Bereitstellung des Add-ins effektiv anzukündigen. <br/>Sie sehen nun Ihr Add-In zusammen mit andere Apps in Microsoft 365.
   
 Es empfiehlt sich, die Benutzer und Gruppen zu informieren, für die Sie das Add-In bereitstellen, damit diese wissen, dass es verfügbar ist. Erwägen Sie, im Rahmen eine E-Mail zu senden, das beschreibt, wann und wie das Add-In verwendet werden sollten und die erläutert, wie das Add-In ihnen helfen kann, ihre Arbeit besser zu erledigen. Einschließen oder verknüpfen Sie relevante Hilfeinhalte oder FAQs, die hilfreich sein können, wenn Benutzer Probleme mit dem Add-in haben.
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Überlegungen beim Zuweisen eines Add-Ins zu Benutzern und Gruppen
 
-Administratoren können jedem oder bestimmten Benutzern und Gruppen ein Add-In zuweisen. Jede Option hat Auswirkungen:
+Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **Jeder**: Wie der Name schon sagt, wird mit dieser Option das Add-In jedem Benutzer des Mandanten zugewiesen. Verwenden Sie diese Option nur in Ausnahmefällen, da sie wirklich die gesamte Organisation betrifft. 
+- **Everyone**: As the name implies, this option assigns the add-in to every user in the tenant. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
-- **Benutzer**: Wenn Sie ein Add-In nur einem einzelnen (neuen) Benutzer zuweisen möchten, muss dieser Benutzer zunächst hinzugefügt werden. Das Gleiche gilt für das Entfernen von Benutzern. 
+- **Users**: If you assign an add-in to an individual user, then to deploy the add-in to a new user, you will need to first add that user. The same goes for removing users. 
     
-- **Gruppen**: Wenn Sie ein Add-In einer Gruppe zuweisen, wird dieses den Benutzern, die der Gruppe hinzugefügt werden, automatisch zugewiesen. Wenn dann ein Benutzer aus der Gruppe entfernt wird, verliert dieser den Zugriff auf das Add-In. In beiden Fällen ist von Ihrer Seite als Administrator keine weitere Aktion erforderlich. 
+- **Groups**: If you assign an add-in to a group, users who are added to the group will automatically be assigned the add-in. And, when a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from you as the admin. 
 
 - **Nur ich**: Wenn Sie ein Add-in nur für sich selbst zuweisen, wird das Add-in nur Ihrem Konto zugewiesen. Dies ist ideal, wenn Sie das Add-in zuerst testen möchten.
     
 Die Option, die für Ihre Organisation richtig ist, hängt von Ihrer Konfiguration ab. Wir empfehlen jedoch Zuweisungen mithilfe von Gruppen vorzunehmen. Als Administrator finden Sie es möglicherweise einfacher, Add-Ins mithilfe von Gruppen zu verwalten und die Mitgliedschaft in diesen Gruppen zu steuern, anstatt jedes Mal die zugewiesenen Benutzer ändern zu müssen. Andererseits kann es Fälle geben, in denen Sie den Zugriff auf eine sehr kleine Gruppe von Benutzern beschränken möchten und das Add-In entsprechend nur bestimmten Benutzern zuweisen. In diesem Fall müssen Sie die zugewiesenen Benutzer manuell verwalten.
   
-### <a name="add-in-states"></a>Add-In-Statusangaben
+### <a name="add-in-states"></a>Add-In-Status
 
 Ein Add-in kann **entweder im Status ein oder** **aus** sein.
   
@@ -121,7 +121,7 @@ Sie sollten ein Add-in in einem Fall löschen, wenn es von keinem mehr verwendet
   
 ### <a name="security-of-office-add-ins"></a>Sicherheit von Office-Add-Ins
 
-Office-Add-Ins sind eine Kombination aus einer XML-Manifestdatei, die einige Metadaten zum Add-In enthält, aber vor allem auf eine Webanwendung verweist, die den gesamten Code und die Logik enthält. Add-Ins können verschiedene Bereiche von Funktionen umfassen. So können Add-Ins beispielsweise Folgendes:
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - Daten anzeigen.
     
@@ -131,18 +131,18 @@ Office-Add-Ins sind eine Kombination aus einer XML-Manifestdatei, die einige Met
     
 Weitere Informationen zu den Typen und Funktionen von Office-Add-Ins finden Sie unter [Office-Add-Ins-Plattformübersicht](https://go.microsoft.com/fwlink/p/?linkid=846362), insbesondere im Abschnitt "Aufbau eines Office-Add-In".
   
-Zur Interaktion mit dem Dokument des Benutzers muss das Add-In die erforderlichen Berechtigungen im Manifest deklarieren. Ein 5-stufiges JavaScript-API-Zugriffsberechtigungsmodell bildet die Grundlage für Datenschutz und Sicherheit für Benutzer der Aufgabenbereich-Add-Ins. Der Großteil der Add-Ins im Office Store weist die Berechtigungsstufe "ReadWriteDocument" auf, und fast alle Add-Ins unterstützen mindestens die Stufe "ReadDocument". Weitere Informationen zu den Berechtigungsstufen finden Sie unter [Anfordern von Berechtigungen zur API-Verwendung in Inhalts- und Aufgabenbereich-Add-Ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-Beim Aktualisieren eines Manifests werden in der Regel Änderungen am Symbol und Text eines Add-Ins vorgenommen. Gelegentlich ändern sich auch Add-In-Befehle. Die Berechtigungen des Add-Ins ändern sich jedoch nicht. Die Webanwendung, in der der gesamte Code und die Logik für das Add-In ausgeführt werden, kann sich jederzeit ändern. Dies liegt in der Natur von Webanwendungen.
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
   
-- **Line-of-Business-Add-In:** In diesem Fall, in dem ein Administrator ein Manifest explizit hochgeladen hat, erfordert das Add-In, dass der Administrator eine neue Manifestdatei zur Unterstützung von Metadatenänderungen hochlädt. Beim nächsten Starten der jeweiligen Office-Anwendungen wird das Add-In aktualisiert. Die Webanwendung kann sich jederzeit ändern. 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
     > [!NOTE]
     > Administratoren müssen ein Lob-Add-in nicht für eine Aktualisierung entfernen.   Im Abschnitt Add-Ins kann der Administrator einfach auf das Lob-Add-in klicken und die **Schaltfläche Aktualisieren** in der unteren rechten Ecke auswählen. Das Update funktioniert nur, wenn die Version des neuen Add-ins größer ist als das des vorhandenen Add-Ins.   
     
-- **Office Store-Add-In:** Wenn ein Administrator ein Add-In aus dem Office Store ausgewählt hat und dieses Add-In im Office Store aktualisiert wird, wird das Add-In später in der zentralen Bereitstellung aktualisiert. Beim nächsten Starten der jeweiligen Office-Anwendungen wird das Add-In aktualisiert. Die Webanwendung kann sich jederzeit ändern. 
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 ### <a name="edit-add-in-access"></a>Bearbeiten des Add-in-Zugriffs
 
@@ -162,13 +162,13 @@ Nach der Bereitstellung können Administratoren auch den Benutzer Zugriff auf Ad
 
 Als Organisation möchten Sie möglicherweise verhindern, dass neue Office-Add-Ins aus dem Office Store heruntergeladen werden. Dies kann in Verbindung mit einer zentralisierten Bereitstellung verwendet werden, um sicherzustellen, dass nur von der Organisation genehmigte Add-Ins für Benutzer in Ihrer Organisation bereitgestellt werden.
   
-So deaktivieren Sie die Add-in-Akquisition:
+So deaktivieren Sie die Add-In-Übernahme:
   
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> [Dienste &amp; Add-Ins](https://go.microsoft.com/fwlink/p/?linkid=2053743).
     
-3. Wählen Sie **Benutzer eigene Apps und Dienste**aus.
+3. Wählen Sie **Benutzereigene Apps und Dienste aus**.
     
-4. Deaktivieren Sie die Option, Benutzern den Zugriff auf den Office Store zu ermöglichen.
+4. Deaktivieren Sie die Option, um Benutzern den Zugriff auf den Office Store zu erlauben.
 
 Dadurch wird verhindert, dass alle Benutzer die folgenden Add-Ins aus dem Speicher erwerben.
   
@@ -252,9 +252,9 @@ Word-, Excel-und PowerPoint 2013 für Windows unterstützen dieselben geringfüg
     
 ## <a name="end-user-experience-with-add-ins"></a>Benutzerfreundlichkeit bei Add-Ins
 
-Nachdem Sie das Add-In bereitgestellt haben, können die Endbenutzer es in ihren Office-Anwendungen verwenden (siehe [Erste Schritte mit dem Office-Add-In](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Das Add-In wird auf allen Plattformen angezeigt, die das Add-In unterstützt.
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
-Wenn das Add-In Add-In-Befehle unterstützt, werden diese im Office-Menüband angezeigt. Im folgenden Beispiel wird der Befehl **Zitat suchen** für das Add-In **Zitate** angezeigt. 
+If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
 ![Office-Menüband mit Such Zitaten](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
@@ -272,7 +272,7 @@ Wenn das bereitgestellte Add-in keine Add-in-Befehle unterstützt oder wenn Sie 
 
 1. Wählen Sie im Menüband **Start** die Option **Add-Ins abrufen**aus.<br/>![Schaltfläche "Speichern" in Outlook](../../media/getaddinsicon.png)
   
-2. Wählen Sie im linken Navigationsbereich die Option **Admin-Managed** aus.
+2. Wählen Sie im linken Navigationsbereich **vom Administrator verwaltete** aus.
 
 ## <a name="delete-the-add-in"></a>Löschen des Add-ins
 
@@ -282,8 +282,8 @@ Sie können auch ein Add-in löschen, das bereitgestellt wurde.
 
 2. Wählen Sie das bereitgestellte Add-in aus.
 
-3. Klicken Sie auf **Add-in löschen**. Entfernen Sie die Add-in-Schaltfläche in der unteren rechten Ecke.
-4. Überprüfen Sie Ihre Auswahl, und wählen Sie **Add-in entfernen**aus.
+3. Klicken Sie auf **Add-in löschen**. Entfernen Sie die Add-In-Schaltfläche in der unteren rechten Ecke.
+4. Überprüfen Sie Ihre Auswahl und wählen Sie **Add-In entfernen**aus.
   
 ## <a name="learn-more"></a>Weitere Informationen
 

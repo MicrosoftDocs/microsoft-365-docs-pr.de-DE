@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 110bbe6fe48932217c9bdc009d175161fe9226cd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f747737fc94241ca5f65ad9881715f517d5fbe3c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235194"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773839"
 ---
 # <a name="manage-access-to-microsoft-threat-protection"></a>Verwalten des Zugriffs auf Microsoft Threat Protection
 
 **Gilt für:**
 - Microsoft Threat Protection
-
-
 
 Konten, denen die folgenden Azure Active Directory (AD)-Rollen zugewiesen sind, können auf Microsoft Threat Protection-Funktionen und -Daten zugreifen:
 - Globaler Administrator

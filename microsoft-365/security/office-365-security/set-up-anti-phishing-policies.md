@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689278"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754664"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -95,7 +95,7 @@ Die folgenden spoofeinstellungen stehen unter Anti-Phishing-Richtlinien und ATP-
     - Für das Fragezeichen im Foto des Absenders sind SPF oder DKIM die wichtigsten.
     - Bestätigen Sie für das via-Tag die Domäne in der DKIM-Signatur oder die **e-Mail-** Adresse Übereinstimmungen (oder ist eine Unterdomäne von) der Domäne in der von-Adresse.
 
-  Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachrichten in Outlook.com und Outlook im Internet](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+  Weitere Informationen finden Sie unter [Identifizieren von verdächtigen Nachrichten in Outlook.com und Outlook im Internet](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusive Einstellungen in ATP-Richtlinien zum Schutz vor Phishing
 

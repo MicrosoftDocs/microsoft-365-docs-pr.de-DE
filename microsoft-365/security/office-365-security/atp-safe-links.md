@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Sie, wie Sie sichere Links zum Schutz Ihrer Organisation vor Phishing und anderen Angriffen verwenden.
-ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616766"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754748"
 ---
 # <a name="atp-safe-links"></a>ATP-sichere Links
 
@@ -47,7 +47,7 @@ Wenn [ATP neue Features hinzugefügt werden](office-365-atp.md#new-features-in-o
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>So erhalten Sie den ATP-Schutz für sichere Links
 
-**Stellen Sie zunächst sicher, dass Ihr Abonnement [Office 365 Advanced Threat Protection](office-365-atp.md) enthält.** Plan 1 oder Plan 2. Office 365 ATP ist in Abonnements enthalten, wie [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. Wenn Ihre Organisation über ein Microsoft 365-Abonnement verfügt, das nicht Office 365 ATP umfasst, können Sie ATP möglicherweise als Add-on erwerben. Weitere Informationen finden Sie in den folgenden Ressourcen:
+**Stellen Sie zunächst sicher, dass Ihr Abonnement [Office 365 Advanced Threat Protection](office-365-atp.md) enthält.** Plan 1 oder Plan 2. Office 365 ATP ist in Abonnements enthalten, wie [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. Wenn Ihre Organisation über ein Microsoft 365-Abonnement verfügt, das nicht Office 365 ATP umfasst, können Sie ATP möglicherweise als Add-on erwerben. Weitere Informationen finden Sie in den folgenden Ressourcen: 
 
 - [Office 365 Advanced Threat Protection-Pläne und-Preise](https://products.office.com/exchange/advance-threat-protection)
 
@@ -59,7 +59,7 @@ Wenn [ATP neue Features hinzugefügt werden](office-365-atp.md#new-features-in-o
 
 - Microsoft 365-Client-apps sind für die Verwendung der modernen Authentifizierung konfiguriert (Dies gilt für den Schutz von ATP-Links in Office-Dokumenten). (Weitere Informationen finden Sie unter [moderne Authentifizierung für Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
 
-- Benutzer haben sich mit Ihrem Arbeits-oder Schulkonto angemeldet. (Weitere Informationen finden Sie unter [Anmelden bei Office oder Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Benutzer haben sich mit Ihrem Arbeits-oder Schulkonto angemeldet. (Weitere Informationen finden Sie unter [Anmelden bei Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
 - Die e-Mail-Adresse Ihrer Organisation durchläuft Exchange Online Schutz.
 
@@ -81,7 +81,7 @@ Nachdem Richtlinien für ATP-sichere Links vorhanden sind, kann das Sicherheitst
 
 In der folgenden Tabelle werden einige Beispielszenarien beschrieben, in denen der Schutz für ATP-sichere Links möglicherweise nicht vorhanden ist. (In allen diesen Fällen wird davon ausgegangen, dass die Organisation Office 365 Enterprise E5 hat.)
 
-|**Beispielszenario**|**Gilt der ATP-Schutz für sichere Links in diesem Fall?**|
+|Beispielszenario|Gilt der ATP-Schutz für sichere Links in diesem Fall?|
 |:-----|:-----|
 |Jean ist Mitglied einer Gruppe, die Richtlinien für ATP-sichere Links enthält, die URLs in e-Mail-und Office-Dokumenten umfassen. Jean öffnet eine PowerPoint-Präsentation, die von einem Benutzer gesendet wurde, und klickt dann in der Präsentation auf eine URL.|Ja. Die definierten Richtlinien für ATP-sichere Links gelten für Jeans Gruppe, Jeans e-Mail und Word-, Excel-, PowerPoint-oder Visio-Dokumente, die Jean öffnet, solange Jean mit Microsoft 365 apps for Enterprise auf Windows-, IOS-oder Android-Geräten angemeldet ist.|
 |In der Organisation von Chris haben keine globalen oder Sicherheitsadministratoren noch keine Richtlinien für ATP-sichere Links definiert. Chris erhält eine e-Mail mit einer URL zu einer bösartigen Website. Chris ist nicht bewusst, dass die URL bösartig ist, und klickt auf den Link.|Nein. Die Standardrichtlinie, die URLs für alle Benutzer in der Organisation abdeckt, muss definiert werden, damit der Schutz in Kraft ist.|

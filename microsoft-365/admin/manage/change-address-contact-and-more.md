@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 117344b2fee9198c6c7de2b26f02fcb647c10ec6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7df4c95bde187dc4922bea3da908b9cd82c5f775
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399800"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780145"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
 
@@ -48,7 +48,7 @@ Informationen zum Ändern der Adresse, die Ihrer Rechnung oder Ihrem Abonnement 
 
 So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
   
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Organisations**</a> Einstellungen.
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Organisations**</a> Einstellungen.
 
 2. Wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Organisationsinformationen**aus.
 
@@ -60,12 +60,12 @@ So ändern Sie weitere Informationen auf der Profilseite Ihres Unternehmens:
 
 |**Field**  |**Beschreibung**  |
 |---------|---------|
-|Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Anmeldeseite: Wenn Ihre Benutzer andere Microsoft-Konten mit ihrer geschäftlichen E-Mail-Adresse bzw. der E-Mail-Adresse ihrer Schule eingerichtet haben, wird auf der Anmeldeseite möglicherweise der Organisationsname angezeigt. Auf diese Weise können sie zwischen ihrem Firmen- oder Schulkonto und ihren anderen Konten besser unterscheiden und identifizieren, welches Konto beim Anmelden zu verwenden ist.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/> MS Teams: Organisations Wechsler in Microsoft Teams zeigt den Namen der Organisation an. <br/>  |
+|Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Sign-in page: If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/> MS Teams: Organisations Wechsler in Microsoft Teams zeigt den Namen der Organisation an. <br/>  |
 |Straße, Ort, Bundesland/Kanton, Postleitzahl  <br/>     | Die hier eingegebene Adresse ist, was Sie auf Ihrer Rechnung sehen, unter verkauft an: die auf Ihrer Rechnung verkaufte Adresse ist identisch mit ihrer Organisationsadresse auf Ihrer Profilseite (siehe [verstehen Ihrer Rechnung oder Rechnung für Microsoft 365 for Business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
-|Land oder Region  <br/>    | Dies ist das Land oder die Region, in dem/der sich der Hauptsitz des Unternehmens befindet. Das ausgewählte Land bzw. die Region bestimmt, welche Dienste für Sie verfügbar sind, die Steuern und die Abrechnungswährung für Ihr Land bzw. Ihre Region sowie den Standort des Ihnen am nächsten gelegenen Rechenzentrums (siehe [Microsoft Office-Lizenzeinschränkungen](https://office.microsoft.com/redir/FX103037529)).  <br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../contact-support-for-business-products.md).        |
-|Telefon  <br/>     | Dies ist die primäre Nummer für Ihr Unternehmen. Normalerweise ist dies die Nummer Ihrer Unternehmenszentrale.  <br/>        |
+|Land oder Region  <br/>    | This is the country or region where the company is headquartered. The selected country or region determines which services are available to you, the taxes and billing currency for your country or region, and the location of the data center closest to you (see [Microsoft Office license restrictions](https://office.microsoft.com/redir/FX103037529)).<br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../contact-support-for-business-products.md).        |
+|Telefon  <br/>     | This is the primary number for your company. It's usually the number of your company headquarters.  <br/>        |
 |Technischer Kontakt  <br/> |Dies ist die e-Mail-Adresse der primären technischen Person, die Ihr Microsoft 365-Abonnement verwaltet. Dies ist die Person, die über den Microsoft 365-Dienststatus informiert wird.  <br/> |
-|Bevorzugte Sprache  <br/> |Die bevorzugte Sprache bestimmt die Sprache, in der alle Mitteilungen von Microsoft an Ihre Organisation gesendet werden. Bei der Registrierung bestimmt diese Einstellung die von SharePoint Online verwendete Sprache, die Ihren Benutzern auf Ihrer Teamwebsite angezeigt wird. Wenn Sie die Spracheinstellung nach Ihrer Registrierung ändern, werden alle zukünftigen Mitteilungen in der zuletzt ausgewählten Sprache gesendet.  <br/> BITTE BEACHTEN: Die von SharePoint Online verwendete Sprache kann nicht geändert werden.           |
+|Bevorzugte Sprache  <br/> |The preferred language determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, which your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.  <br/> BITTE BEACHTEN: Die von SharePoint Online verwendete Sprache kann nicht geändert werden.           |
 
 ## <a name="change-your-alternate-email-address"></a>Ändern der alternativen e-Mail-Adresse
 
@@ -81,8 +81,8 @@ Als Administrator können Sie Ihre alternative e-Mail-Adresse zum Zurücksetzen 
 
 5. Bearbeiten Sie die Adresse im Feld **Alternative e-Mail** , und wählen Sie dann **Speichern**aus.
 
-Informationen zum Ändern anderer Profilinformationen finden Sie unter [Ändern der Kontakteinstellungen](change-contact-preferences.md) oder [Ändern der Anzeigesprache](https://support.office.com/article/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
+Informationen zum Ändern anderer Profilinformationen finden Sie unter [Ändern der Kontakteinstellungen](change-contact-preferences.md) oder [Ändern der Anzeigesprache](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### <a name="email-signatures"></a>E-Mail-Signaturen
   
-Sie können Ihre E-Mail-Signatur in Outlook Web App ändern. Weitere Informationen finden Sie unter [E-Mail-Einstellungen](https://support.office.com/article/30c69a79-efc6-42d2-b740-4bf1c1f8a01c.aspx).
+Sie können Ihre E-Mail-Signatur in Outlook Web App ändern. Weitere Informationen finden Sie unter [E-Mail-Einstellungen](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).

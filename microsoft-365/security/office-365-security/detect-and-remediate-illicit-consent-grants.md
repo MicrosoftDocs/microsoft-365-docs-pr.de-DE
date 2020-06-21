@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Microsoft Office 365 erkennen und korrigieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587496"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726801"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587496"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Was ist der rechtswidrige Genehmigungs Zuschuss Angriff in Office 365?
 
-Bei einem Angriff mit unerlaubter Zustimmung erstellt der Angreifer eine Azure-registrierte Anwendung, die den Zugriff auf Daten wie Kontaktinformationen, e-Mail oder Dokumente anfordert. Der Angreifer täuscht dann einen Endbenutzer vor, dass er der Anwendung zustimmt, dass er über einen Phishing-Angriff auf seine Daten zugreift oder unerlaubten Code in eine vertrauenswürdige Website einfügt. Nachdem der illegalen Anwendung eine Zustimmung erteilt wurde, verfügt sie über einen Zugriff auf Kontoebene auf Daten, ohne dass ein organisationskonto erforderlich ist. Normale korrekturschritte wie das Zurücksetzen von Kennwörtern für Benutzerkonten, die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Konten erfordern, sind für diese Art von Angriff nicht wirksam, da es sich um Drittanbieteranwendungen handelt, die sich außerhalb der Organisation befinden. 
+Bei einem Angriff mit unerlaubter Zustimmung erstellt der Angreifer eine Azure-registrierte Anwendung, die den Zugriff auf Daten wie Kontaktinformationen, e-Mail oder Dokumente anfordert. Der Angreifer täuscht dann einen Endbenutzer vor, dass er der Anwendung zustimmt, dass er über einen Phishing-Angriff auf seine Daten zugreift oder unerlaubten Code in eine vertrauenswürdige Website einfügt. Nachdem der illegalen Anwendung eine Zustimmung erteilt wurde, verfügt sie über einen Zugriff auf Kontoebene auf Daten, ohne dass ein organisationskonto erforderlich ist. Normale korrekturschritte wie das Zurücksetzen von Kennwörtern für Benutzerkonten, die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Konten erfordern, sind für diese Art von Angriff nicht wirksam, da es sich um Drittanbieteranwendungen handelt, die sich außerhalb der Organisation befinden.
 
 Diese Angriffe nutzen ein Interaktionsmodell, das davon ausgeht, dass die Entität, die die Informationen anfordert, Automatisierung und kein Mensch ist.
 
@@ -43,18 +43,21 @@ Sie müssen das **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suche
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Auffinden von Anzeichen für diesen Angriff
 
-1. Öffnen Sie das **Security & Compliance Center** in Ihrem Mandanten.
+1. Öffnen Sie das **Security & Compliance Center** unter <https://protection.office.com> .
 
 2. Navigieren Sie zu **Suchen** , und wählen Sie **Überwachungsprotokoll Suche**aus.
 
-3. Suche (alle Aktivitäten und alle Benutzer), und geben Sie bei Bedarf das Startdatum und das Enddatum ein, und klicken Sie dann auf **Suchen**. 
+3. Suche (alle Aktivitäten und alle Benutzer), und geben Sie bei Bedarf das Startdatum und das Enddatum ein, und klicken Sie dann auf **Suchen**.
 
 4. Klicken Sie auf **Ergebnisse filtern** , und geben Sie im Feld **Aktivität** die Zustimmung zur Anwendung ein.
 
 5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
-> Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat. <br/><br/> Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat.
+> 
+> Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 > 
 > Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
 
@@ -94,7 +97,7 @@ Lassen Sie Ihre Benutzer https://myapps.microsoft.com dorthin wechseln und ihren
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Schritte dafür mit PowerShell
 
-Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimmung ist die Ausführung von [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), wodurch alle OAuth-Zustimmungs-und OAuth-Apps für alle Benutzer in Ihrem Mandanten in einer CSV-Datei abgeworfen werden.
+Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimmung besteht darin, [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)auszuführen, wodurch alle OAuth-Zustimmungs-und OAuth-Apps für alle Benutzer in Ihrem Mandanten in einer CSV-Datei gespeichert werden.
 
 #### <a name="pre-requisites"></a>Voraussetzungen
 
@@ -109,7 +112,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimm
 
 1. Melden Sie sich mit lokalen Administratorrechten bei dem Computer an, auf dem das Skript ausgeführt wird.
 
-2. Laden Sie das [Get-AzureADPSPermissions. ps1-](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) Skript aus GitHub in einen Ordner herunter, aus dem Sie das Skript ausführen möchten, oder kopieren Sie es. Dabei handelt es sich um denselben Ordner, in den die Ausgabedatei "Permissions. csv" geschrieben wird.
+2. Laden Sie das [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) Skript aus GitHub in einen Ordner herunter, aus dem Sie das Skript ausführen. Dabei handelt es sich um denselben Ordner, in den die Ausgabedatei "permissions.csv" geschrieben wird.
 
 3. Öffnen Sie eine PowerShell-Instanz als Administrator, und öffnen Sie den Ordner, in dem Sie das Skript gespeichert haben.
 
@@ -121,7 +124,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unerlaubte Zustimm
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Das Skript erstellt eine Datei namens "Permissions. csv". Führen Sie die folgenden Schritte aus, um nach illegalen Anwendungs Berechtigungs Zuschüssen zu suchen:
+Das Skript erstellt eine Datei namens Permissions.csv. Führen Sie die folgenden Schritte aus, um nach illegalen Anwendungs Berechtigungs Zuschüssen zu suchen:
 
 1. Suchen Sie in der Spalte "zusenttype" (Spalte G) nach dem Wert "allprinciples". Die allprincipals-Berechtigung ermöglicht der Clientanwendung den Zugriff auf alle Inhalte im Mandanten. Native Microsoft 365-Anwendungen benötigen diese Berechtigung, um ordnungsgemäß zu funktionieren. Jede nicht-Microsoft-Anwendung mit dieser Berechtigung sollte sorgfältig geprüft werden.
 

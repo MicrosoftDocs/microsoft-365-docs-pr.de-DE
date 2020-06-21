@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Rechnungen durch Abrechnungsprofile unterstützt werden.
 keywords: Abrechnungsprofil, Rechnungen, Gebühren, verwaltete Gebühren
-ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401774"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741711"
 ---
 # <a name="manage-billing-profiles"></a>Verwalten von Abrechnungsprofilen
 
@@ -61,7 +61,7 @@ Rollen in Abrechnungs Profilen besitzen Berechtigungen zum Steuern von Käufen s
 
 ## <a name="view-billing-profiles"></a>Anzeigen von Abrechnungs Profilen
 
-1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Rechnungen & Zahlungen</a>.
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
 
 2. Wählen Sie **Abrechnungsprofile**aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
 

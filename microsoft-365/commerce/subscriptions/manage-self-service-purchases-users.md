@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403258"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741661"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
@@ -105,9 +105,9 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ### <a name="update-an-existing-payment-method"></a>Aktualisieren einer vorhandenen Zahlungsmethode
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
 
-2. Um eine vorhandene Zahlungsmethode zu bearbeiten, wählen Sie Sie aus der Liste aus.
+2. Wählen Sie auf der Registerkarte **Zahlungsmethoden** eine vorhandene Zahlungsmethode aus der Liste aus.
 
 3. Klicken Sie im rechten Bereich auf **Bearbeiten**. Sie können den Sicherheitscode, das Ablaufdatum, den Namen auf der Karte und die Adresse ändern.
 
@@ -115,20 +115,20 @@ Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen m
 
 ### <a name="add-a-new-payment-method"></a>Neue Zahlungsmethode hinzufügen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
 
-2. Wählen Sie **Zahlungsmethode hinzufügen**aus.
+2. Wählen Sie auf der Registerkarte **Zahlungsmethoden** die Option **Zahlungsmethode hinzufügen**aus.
 
 3. Geben Sie im Bereich **Zahlungsmethode hinzufügen** die Informationen für die neue Zahlungsmethode ein, und wählen Sie dann **Hinzufügen**aus.
 
 ## <a name="view-your-invoices"></a>Anzeigen Ihrer Rechnungen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & Zahlungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
 
-2. Wählen Sie unter **Rechnungen** die Rechnung aus, die Sie anzeigen möchten.
+2. Wählen Sie auf der Registerkarte **Rechnungen** die Rechnung aus, die Sie anzeigen möchten. Wenn keine Rechnungen sichtbar sind, ändern Sie die **letzten 3 Monate** in die **letzten 6 Monate** , oder **Geben Sie einen Datumsbereich**an.
 
 ## <a name="need-help-contact-us"></a>Benötigen Sie Hilfe? Kontaktieren Sie uns.
 
 Häufige Fragen zum Self-Service-Einkauf finden Sie unter [Self-Service Purchases FAQ](self-service-purchase-faq.md).
 
-Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, [wenden Sie sich an den Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, [wenden Sie sich an den Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).

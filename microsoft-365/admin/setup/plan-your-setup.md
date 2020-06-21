@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Erfahren Sie, was Sie tun müssen, um Ihr Microsoft 365 for Business einzurichten.
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398846"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778949"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen des Setups von Microsoft 365 for Business
 
@@ -72,7 +72,7 @@ Es gibt eine Reihe von Szenarien, die entweder das Migrieren von Daten oder Benu
 
     1. [Fügen Sie Ihre Mitarbeiter zu Microsoft 365 hinzu,](../add-users/add-users.md) damit Sie die Office-apps herunterladen und installieren können.
 
-    2. [Laden Sie die Office-Apps herunter, und installieren Sie sie](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx), um Word, Excel und PowerPoint auf Ihrem Computer und Ihren Geräten zu verwenden.
+    2. [Laden Sie die Office-Apps herunter, und installieren Sie sie](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658), um Word, Excel und PowerPoint auf Ihrem Computer und Ihren Geräten zu verwenden.
 
     3. [Richten Sie Microsoft Teams](#plan-for-teams) ein, die für Ihre Besprechungen verwendet werden sollen.
 
@@ -111,9 +111,9 @@ Wenn Sie Microsoft 365 für Ihr e-Mail-Konto verwenden möchten, können Sie Ihr
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planen von Dateispeicherung und -migration
 
-Microsoft 365 bietet cloudspeicher für Einzelpersonen, kleine Organisationen und Unternehmen. Anleitungen zum Speichern von Where finden Sie unter [where you can Store Documents in Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 bietet cloudspeicher für Einzelpersonen, kleine Organisationen und Unternehmen. Anleitungen zum Speichern von Where finden Sie unter [where you can Store Documents in Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-- **Sie können Hunderte von Dateien** in [OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx) oder eine [SharePoint-Teamwebsite](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242)migrieren. Dabei können jeweils 100 Dateien zugleich hochgeladen werden. Laden Sie keine Dateien mit mehr als 2 GB hoch (dies ist standardmäßig die maximale Dateigröße).
+- **Sie können Hunderte von Dateien** in [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) oder eine [SharePoint-Teamwebsite](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)migrieren. Dabei können jeweils 100 Dateien zugleich hochgeladen werden. Laden Sie keine Dateien mit mehr als 2 GB hoch (dies ist standardmäßig die maximale Dateigröße).
   
 - **Wenn Sie mehrere tausend Dateien** in Microsoft 365 Storage migrieren möchten, überprüfen Sie die [SharePoint Online Grenzen](https://go.microsoft.com/fwlink/p/?LinkID=856113). Wir empfehlen die Verwendung eines Migrationstools oder die Verpflichtung eines [Partners](https://go.microsoft.com/fwlink/?linkid=391089) zu Ihrer Unterstützung bei der Migration. Informationen zum Migrieren einer noch größeren Anzahl von Dateien finden Sie unter [SharePoint Online und OneDrive-Migrationsbenutzerhandbuch](https://go.microsoft.com/fwlink/?LinkId=723574).
   

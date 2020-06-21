@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Erfahren Sie, wie Sie Administrator werden und ein Microsoft 365-Abonnement für Ihre Organisation erhalten. '
-ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ecfde457cc04e28ef544701fe623a53a8e610b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399458"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780037"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Administrator werden und Microsoft 365 für Ihre Organisation erwerben
 
 [] Microsoft gestaltet es für Personen in Ihrer Organisation ganz einfach, sich für Produktivitätstools und Dienste zu registrieren und diese zu verwenden, ohne auf eine formelle Bereitstellung durch Ihre IT-Abteilung warten zu müssen.
   
-Ihre Organisation kann es diesen Personen gestatten, diese Dienste "wie besehen" weiterhin zu verwenden. Wenn sich jedoch Personen für Skype-Besprechungen als einen dieser Dienste registriert haben, können Sie einen Administrator zuweisen, um ein Upgrade durchzuführen und eine vollständigere Besprechungslösung mit Skype for Business, Office-Anwendungen, Dateispeicherung und -freigabe usw. zu erhalten.
+Your organization can let people continue to use these services "as is." But if people signed up for Skype Meetings as one of those services, you can assign an admin to upgrade and get a more complete meeting solution with Skype for Business and Office applications, file storage and sharing, and more.
   
 ## <a name="why-become-the-admin-and-buy-microsoft-365-for-your-organization"></a>Warum werden Sie Administrator und kaufen Microsoft 365 für Ihre Organisation?
 
-Wenn sich ein Mitarbeiter mit seinem Firmenkonto für Skype-Besprechungen registriert, kann er den Dienst nicht verwalten. Zudem erhalten sie lediglich die grundlegenden Features: Sie können unbegrenzt viele Besprechungen ansetzen, jedoch nur mit maximal 10 Teilnehmern (nach 60 Tagen beträgt die maximale Teilnehmeranzahl nur noch drei Personen). 
+When an employee signs up for Skype Meetings with their work account, they can't manage the service. And they get only the most basic features: they can have unlimited meetings but only with 10 or fewer participants (after 60 days, the maximum participants is three people). 
   
 Wenn Sie einen Administrator für den Dienst einrichten und Microsoft 365 für Ihre Benutzer kaufen, erhalten diese erweiterte Funktionen. Und Sie erhalten die Möglichkeit zur Verwaltung der Dienste, damit Sie Richtlinien erzwingen und neue Benutzer hinzufügen können.
   
@@ -87,7 +87,7 @@ Nun, da Sie der Administrator sind, können Sie die folgenden Aktionen ausführe
 |:-----|:-----|
 |Lizenzen hinzufügen oder entfernen  <br/> |Sie können [Weitere Lizenzen für Benutzer hinzufügen](../../commerce/licenses/buy-licenses.md) , die noch nicht Microsoft 365 verwenden, oder [Lizenzen von Benutzern entfernen](../manage/remove-licenses-from-users.md) , die nicht mit dem Microsoft 365 for Business-Abonnement Ihres Unternehmens verwendet werden sollen.  <br/> |
 |Andere Benutzer kontaktieren, die sich bereits registriert haben  <br/> |Wenden Sie sich an die anderen Benutzer, und lassen Sie Sie wissen, dass Sie Ihr Microsoft 365-Abonnement verwalten und dass Sie aktualisiert wurden. [Führen Sie die folgenden Schritte](../add-users/add-users.md) aus, um eine Liste der **aktiven Benutzer** und ihrer e-Mail-Adressen anzuzeigen.  <br/> |
-|Starten der Verwendung von Microsoft 365  <br/> |Besuchen Sie das [Office 365-Schulungscenter](https://support.office.com/learn/office365-for-business), und erfahren Sie, wie Sie sich anmelden, E-Mails überprüfen, Dokumente freigeben und mehr. Sie und Ihre Benutzer können diese Website für die ersten Schritte mit Microsoft 365 verwenden.  <br/> |
+|Starten der Verwendung von Microsoft 365  <br/> |Besuchen Sie das [Office 365-Schulungscenter](https://support.microsoft.com/training), und erfahren Sie, wie Sie sich anmelden, E-Mails überprüfen, Dokumente freigeben und mehr. Sie und Ihre Benutzer können diese Website für die ersten Schritte mit Microsoft 365 verwenden.  <br/> |
 |Verwalten Ihres Microsoft 365-Abonnements  <br/> |Besuchen Sie das [Microsoft 365 admin-Hilfecenter](../admin-home.md) , und erfahren Sie mehr über häufige administrative Aufgaben wie das Hinzufügen und Entfernen von Benutzern, das Zurücksetzen von Kennwörtern und das Einrichten von mobilen Geräten.  <br/> |
 
 ## <a name="still-need-help"></a>Benötigen Sie weitere Hilfe?

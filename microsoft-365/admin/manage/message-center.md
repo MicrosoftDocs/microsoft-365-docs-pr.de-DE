@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Erhalten Sie einen Überblick über das Microsoft 365-Nachrichtencenter und seine Rolle im Change Management.
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694959"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780085"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -164,7 +164,7 @@ Wenn die Verwaltung in Ihrer Organisation verteilt ist, möchten oder müssen Si
 Wir verwenden maschinelle Übersetzungen, um Nachrichten automatisch in Ihrer bevorzugten Sprache anzuzeigen. Lesen Sie die [Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md) , um weitere Informationen zum Festlegen ihrer Sprache zu erhalten.
   
 > [!NOTE]
-> Der wöchentliche Digest und alle Beiträge, die per e-Mail gesendet werden, werden nur in Englisch versendet. Empfänger können [Übersetzer für Outlook](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx) verwenden, um die Nachricht in Ihrer bevorzugten Sprache zu lesen. 
+> Der wöchentliche Digest und alle Beiträge, die per e-Mail gesendet werden, werden nur in Englisch versendet. Empfänger können [Übersetzer für Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) verwenden, um die Nachricht in Ihrer bevorzugten Sprache zu lesen. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben
 

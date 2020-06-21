@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Entscheiden Sie, welche Features und welche neuen Inhalte den Endbenutzern in der Office-Seite What es New Management for Office Desktop Apps angezeigt oder verborgen sind.
-ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678602"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717175"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Ein- und Ausblenden neuer Funktionen mit What's New Management
 
@@ -60,7 +60,8 @@ Neue Features werden in Office What es New Management basierend auf diesem Zeitp
 |:-----|:-----|:-----|
 |**Kanal** <br/> |**In der Verwaltungs Vorschau** <br/> |**Aktion ausführen** <br/> |
 |**Current** <br/> |15. des Monats  <br/> |1-3 Wochen vor der monatlichen Veröffentlichung <br/> |
-|**Halbjährliches Unternehmen (Vorschau)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt
+|**Monatlicher Enterprise-Kanal** <br/> |1. des Monats  <br/> |2 Wochen vor der Hauptversion, die neue Features bringt |
+|**Halbjährliches Unternehmen (Vorschau)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt|
 |**Halbjährliches Unternehmen** <br/> |1. Januar und 1. Juli <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt<br/> |
 
 Weitere Informationen zu Kanal Aktualisierungs Plänen finden Sie unter [Update History for Microsoft 365 Apps (aufgelistet nach Datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).

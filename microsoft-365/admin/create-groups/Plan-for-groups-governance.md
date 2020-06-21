@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Hier erfahren Sie, wie Sie Microsoft 365 Groups Governance planen.
-ms.openlocfilehash: f61d07bbb4434b493ffede47df401da6304d0063
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 37d243b56de363985ecb9463dfe5eb182d9e40b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388185"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780493"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planen der Steuerung in Gruppen
 
@@ -51,16 +51,16 @@ Es gibt drei Haupt Kommunikationsmethoden, die von Microsoft 365-Gruppen unterst
 > Durch das Erstellen einer neuen Gruppe über andere Teamarbeits Anwendungen wie SharePoint, Planner oder Stream wird eine Gruppe mit einem Outlook-Posteingang erstellt und die Möglichkeit zum Herstellen einer Verbindung mit Microsoft Teams hergestellt.
 
 Je nachdem, wo eine Gruppe erstellt wird, werden bestimmte Ressourcen automatisch bereitgestellt, beispielsweise:
-- [Posteingang](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) -für e-Mail-Unterhaltungen zwischen Gruppenmitgliedern. Dieser Posteingang hat eine E-Mail-Adresse und kann für das Annehmen von Nachrichten von Personen außerhalb der Gruppe und sogar außerhalb Ihrer Organisation konfiguriert werden, ähnlich wie eine herkömmliche Verteilerliste.
- - [Kalender](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) – Für die Planung von Ereignissen im Zusammenhang mit der Gruppe
-- [SharePoint-Teamwebsite](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – ein zentrales Repository für Informationen, Links und Inhalte im Zusammenhang mit Ihrer Gruppe
-- [SharePoint-Dokumentbibliothek](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – ein zentraler Ort für die Gruppe zum Speichern und Freigeben von Dateien
-- [OneNote-Notizbuch](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – zum Sammeln von Ideen, Recherchen und Informationen
-- [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – Für das Zuweisen und Verwalten von Projektaufgaben für die Mitglieder Ihrer Gruppe
-- [Gruppe "jammern"](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – ein allgemeiner Ort für Unterhaltungen und Freigabe Informationen
+- [Posteingang](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) -für e-Mail-Unterhaltungen zwischen Gruppenmitgliedern. Dieser Posteingang hat eine E-Mail-Adresse und kann für das Annehmen von Nachrichten von Personen außerhalb der Gruppe und sogar außerhalb Ihrer Organisation konfiguriert werden, ähnlich wie eine herkömmliche Verteilerliste.
+ - [Kalender](https://support.microsoft.com/office/0cf1ad68-1034-4306-b367-d75e9818376a) – Für die Planung von Ereignissen im Zusammenhang mit der Gruppe
+- [SharePoint-Teamwebsite](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) – ein zentrales Repository für Informationen, Links und Inhalte im Zusammenhang mit Ihrer Gruppe
+- [SharePoint-Dokumentbibliothek](https://support.microsoft.com/office/749bc73b-90c9-4760-9b6f-9aa1cf01b403) – ein zentraler Ort für die Gruppe zum Speichern und Freigeben von Dateien
+- [OneNote-Notizbuch](https://support.microsoft.com/office/e768fafa-8f9b-4eac-8600-65aa10b2fe97) – zum Sammeln von Ideen, Recherchen und Informationen
+- [Planner](https://support.microsoft.com/office/4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – Für das Zuweisen und Verwalten von Projektaufgaben für die Mitglieder Ihrer Gruppe
+- [Gruppe "jammern"](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) – ein allgemeiner Ort für Unterhaltungen und Freigabe Informationen
 - Microsoft Teams – ein Chat basierter Arbeitsbereich in Microsoft 365
 
-Weitere Informationen darüber, welche Ressourcen für die einzelnen Gruppen erstellt werden, finden Sie unter [Informationen zu Microsoft 365-Gruppen](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Weitere Informationen darüber, welche Ressourcen für die einzelnen Gruppen erstellt werden, finden Sie unter [Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 > [!NOTE]
 > Wenn eine neue Microsoft 365-Gruppe über "jammern" oder "Teams" erstellt wird, ist die Gruppe in Outlook oder im Adressbuch nicht sichtbar, da die primäre Kommunikation zwischen diesen Benutzern in ihren jeweiligen Clients erfolgt. Jammern von Gruppen kann nicht mit Microsoft Teams verbunden werden.
@@ -82,7 +82,7 @@ Es gibt mehrere Orte für eine Unterhaltung in Microsoft 365. Das Verstehen, wo 
 
 - Outlook-Gruppen: moderne DL (e-Mail-basierte Zusammenarbeit)
   - Allgegenwärtig für gezielte Kommunikation
-  - Upgrade von Verteilerlisten auf Microsoft 365-Gruppen – [Warum sollten Sie ein Upgrade](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188) durchführen?
+  - Upgrade von Verteilerlisten auf Microsoft 365-Gruppen – [Warum sollten Sie ein Upgrade](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) durchführen?
 
 - SharePoint – zentrale Inhalte für die Zusammenarbeit für alle Microsoft 365-Gruppen
   - Jede Gruppe Ruft eine verbundene SharePoint-Teamwebsite ab.
@@ -135,7 +135,7 @@ Ihre Organisation könnte spezifische Anforderungen haben, um strenge Kontrollen
 #### <a name="resources"></a>*Ressourcen*
 - [Verwalten von Personen, die Microsoft 365-Gruppen erstellen können](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
 - [Dynamisches Auffüllen von Gruppen anhand von Objektattributen](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-with-advanced-rules)
-- [Vorgehensweise ändern der Standardeinstellung von Microsoft 365-Gruppen für Outlook in "öffentlich" oder "Privat"](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
+- [Vorgehensweise ändern der Standardeinstellung von Microsoft 365-Gruppen für Outlook in "öffentlich" oder "Privat"](https://support.microsoft.com/office/36236e39-26d3-420b-b0ac-8072d2d2bedc)
 - [Synchronisieren von Sicherheitsgruppen mit der Teammitgliedschaft ](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Syncing-Security-Groups-with-team-membership/ba-p/241959)
 
 ### <a name="group-soft-delete-and-restore"></a><a name="group-soft-delete-and-restore"></a>Vorläufiges Löschen und Wiederherstellen der Gruppe
@@ -152,7 +152,7 @@ Wenn Sie eine Microsoft 365-Gruppe gelöscht haben, wird Sie standardmäßig 30 
 |![Bildbeschreibung](../../media/next_steps.png)|Nächste Schritte|<ul><li>Kommunizieren und veröffentlichen Sie Ihre Lösch- und Wiederherstellungsrichtlinien, um Benutzer über das erwartete Verhalten zu informieren </li><li> Dokumentieren Sie die Anforderungen Ihrer Organisation an die Überwachung gelöschter Gruppen.</li><li>Planen Sie, diese Anforderungen als Teil Ihres Gruppen-Rollouts zu implementieren.</li></ul>|
 
 > [!Important]
->Wenn ein Benutzer während des Vorgangs "Vorläufiges Löschen" versucht, auf die Website zuzugreifen, wird eine "403 Verboten"-Meldung angezeigt. Wenn der Benutzer nach Ablauf dieses Zeitraums versucht, auf die Website zuzugreifen, wird eine "404 Nicht gefunden"-Meldung angezeigt.
+>During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
 
 #### <a name="resources"></a>*Ressourcen*
 - [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
@@ -208,7 +208,7 @@ Das Festlegen eines Ablaufs für eine Gruppe bewirkt Folgendes:
 >Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.
 
 #### <a name="resources"></a>*Ressourcen*
-- [Ablaufrichtlinie für Microsoft 365-Gruppen](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+- [Ablaufrichtlinie für Microsoft 365-Gruppen](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups-expiration-policy)
 - [Konfigurieren der Ablaufrichtlinie für Microsoft 365-Gruppen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a><a name="group-guest-access"></a>Gruppengastzugriff
@@ -227,7 +227,7 @@ Administratoren können steuern, ob Gastzugriff auf Microsoft 365-Gruppen für I
 #### <a name="resources"></a>*Ressourcen*
 - [Zusammenarbeit mit Personen außerhalb Ihrer Organisation](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 - [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
-- [Gastzugriff in Microsoft 365-Gruppen](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+- [Gastzugriff in Microsoft 365-Gruppen](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 - [Zugriffsüberprüfungen in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 - [Nutzungsbedingungsfeature für Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-tou)
 - [Verbund mit Google](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
@@ -328,7 +328,7 @@ Zusätzlich zu den obigen Empfehlungen sollten Sie Folgendes für mittelständis
 | Stufe 1 | Beschreibung |
 | --------------- | ------------------------------------------------------------ |
 | Richtlinien |<ul><li>Entscheiden Sie sich für ein offenes oder IT-gesteuertes Bereitstellungsmodell.</li><li> Erwägen Sie die Schaffung bestimmter Gruppen, die an [dynamische Mitgliedschaftsregeln](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) auf der Grundlage von Azure AD-Attributen wie Abteilung gebunden sind</li><li> Definieren Sie Klassifizierungen innerhalb Ihrer Organisation, z. B. „Hochvertraulich“, „Vertraulich (Standard)“, „Allgemein“.</li><li>  Definieren Sie die Richtlinien auf der Grundlage von Klassifizierungen wie Aufbewahrung und Vertraulichkeit.</li><li> SharePoint ist der inhaltsdienst für jede Microsoft 365-Gruppe. Erwägen Sie den Entwurf und die [Bereitstellung von SharePoint Online-Websites für drei Schutzebenen](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection) (Basisplan, vertraulich und hochvertraulich). Weitere Informationen zu diesen drei Schutzebenen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).</li><li> Öffentliche und private Gruppen werden standardmäßig in der globalen Adressliste (GAL) aufgelistet. Bestimmen Sie, welche Gruppen in der globalen Adressliste erscheinen sollen, insbesondere Gruppen, die außerhalb von Microsoft Teams erstellt wurden.  Verwenden Sie die Cmdlets "HiddenFromAddressListsEnabled" oder "HidefromExchangeClients" des Cmdlets "Group [-Unifiedgroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) ", um bestimmte Gruppen auszublenden.</li></ul> |
-| Nächste Schritte      |<ul><li>Bestimmen von [Nutzungsrichtlinien](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets), um die Benutzer über die bewährten Methoden zu informieren, die dazu beitragen, die Effektivität der Gruppe zu gewährleisten und interne Inhaltsrichtlinien zu kommunizieren. Beispiel: Grundlegendes zu Klassifizierungen, Richtlinien und Verfahren. </li><li>Bestimmen Sie den Zeitraum des Gruppenlebenszyklus, in dem Gruppen erneuert werden müssen oder gelöscht werden sollen – Ablaufrichtlinie.</li><li>Erwägen Sie die Erstellung der folgenden benutzerdefinierten Aufträge, um Richtlinien basierend auf Klassifizierungen zu implementieren.</li><li>Legen Sie den Datenschutz auf "Privat" fest.</li><li>Externe Mitgliedschaft/Freigabe deaktivieren. </li><li>E-Mail-Nachrichten zur Benachrichtigung von Gruppenmitgliedern für Gruppen [ohne Besitzer](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732).</li><li>Erzwingen der Besitzrichtlinie (mind. 2 Besitzer)</li><li> Definieren von Aufbewahrungsrichtlinien für Gruppen auf der Grundlage der Klassifizierung. </li><li>Übersicht über Aufbewahrungsrichtlinien.</li><li>Verwenden von PowerShell zum Identifizieren von Gruppen mit einer Klassifizierung und [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps).</li><li>Erwägen Sie die Verwendung von Website-Designs und Website-Skripts zum Definieren der Steuerelemente mithilfe der Aktionen, die in der [JSON-Schemareferenz](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema) definiert sind.</li><li>Erwägen Sie [ein einfaches Websiteverzeichnis mit einem Websitedesign](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial) und Microsoft Flow zu erstellen. Wenn Sie eine Website mit diesem Websitedesign erstellen, werden Details zu der Website erfasst und in eine Liste geschrieben. </li></ul>|
+| Nächste Schritte      |<ul><li>Bestimmen von [Nutzungsrichtlinien](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets), um die Benutzer über die bewährten Methoden zu informieren, die dazu beitragen, die Effektivität der Gruppe zu gewährleisten und interne Inhaltsrichtlinien zu kommunizieren. Beispiel: Grundlegendes zu Klassifizierungen, Richtlinien und Verfahren. </li><li>Bestimmen Sie den Zeitraum des Gruppenlebenszyklus, in dem Gruppen erneuert werden müssen oder gelöscht werden sollen – Ablaufrichtlinie.</li><li>Erwägen Sie die Erstellung der folgenden benutzerdefinierten Aufträge, um Richtlinien basierend auf Klassifizierungen zu implementieren.</li><li>Legen Sie den Datenschutz auf "Privat" fest.</li><li>Externe Mitgliedschaft/Freigabe deaktivieren. </li><li>E-Mail-Nachrichten zur Benachrichtigung von Gruppenmitgliedern für Gruppen [ohne Besitzer](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732).</li><li>Erzwingen der Besitzrichtlinie (mind. 2 Besitzer)</li><li> Definieren von Aufbewahrungsrichtlinien für Gruppen auf der Grundlage der Klassifizierung. </li><li>Übersicht über Aufbewahrungsrichtlinien.</li><li>Verwenden von PowerShell zum Identifizieren von Gruppen mit einer Klassifizierung und [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps).</li><li>Erwägen Sie die Verwendung von Website-Designs und Website-Skripts zum Definieren der Steuerelemente mithilfe der Aktionen, die in der [JSON-Schemareferenz](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema) definiert sind.</li><li>Erwägen Sie [ein einfaches Websiteverzeichnis mit einem Websitedesign](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial) und Microsoft Flow zu erstellen. Wenn Sie eine Website mit diesem Websitedesign erstellen, werden Details zu der Website erfasst und in eine Liste geschrieben. </li></ul>|
 
 ### <a name="regulated-or-enterprise"></a>Reguliert oder Unternehmen
 Zusätzlich zu den obigen Empfehlungen sollten Sie Folgendes für hochregulierte oder große Enter Prises wie Government, Financial Services oder Healthcare verwenden, die Office 365 mit mindestens einer Enterprise E3/E5 mit Azure Active Directory Premium P1/P2-Lizenzen bereitgestellt haben.

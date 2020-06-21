@@ -1,5 +1,5 @@
 ---
-title: Migrieren von e-Mails und Kontakten zu Microsoft 365
+title: Migrieren von E-Mail und Kontakten zu Office 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,14 +27,14 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Hier erfahren Sie, wie Sie Kontakte, Kalender, e-Mails von Gmail oder einem anderen e-Mail-Anbieter nach Microsoft 365 importieren. '
-ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4cc7a68929bdcc4cb79f3c7b78e07023a8952f81
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398870"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779009"
 ---
-# <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrieren von e-Mails und Kontakten zu Microsoft 365
+# <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrieren von E-Mail und Kontakten zu Office 365
 
 Importieren oder kopieren Sie e-Mails aus Gmail oder einem anderen e-Mail-Anbieter nach Microsoft 365.
   
@@ -46,11 +46,11 @@ Sie müssen eine Outlook-Version verwenden, die für diese Aufgabe auf Ihrem Des
 
 Führen Sie die folgenden Schritte aus, um e-Mails, Kontakte und Kalender aus gmail in Outlook mit Microsoft 365 zu importieren:
   
-- [Importieren von Gmail in Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [Importieren von Gmail in Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [Importieren von Kontakten in Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Importieren von Kontakten in Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-- [Importieren des Google-Kalenders](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330)
+- [Importieren des Google-Kalenders](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -58,15 +58,15 @@ Führen Sie die folgenden Schritte aus, um e-Mails, Kontakte und Kalender aus gm
 
 Führen Sie die folgenden Schritte aus, um e-Mails, Kontakte und Kalender aus Outlook in eine PST-Datei zu exportieren und diese Datei dann mit Microsoft 365 in Outlook zu importieren:
   
-1. [Exportieren von E-Mails, Kontakten und Kalendern](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
+1. [Exportieren von E-Mails, Kontakten und Kalendern](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
-2. [Importieren von E-Mails, Kontakten und Kalendern](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+2. [Importieren von E-Mails, Kontakten und Kalendern](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
     
 Wenn Sie nur Kontakte exportieren/importieren möchten, führen Sie die folgenden Schritte aus:
   
-1. [Exportieren von Kontakten aus Outlook](https://support.office.com/article/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [Exportieren von Kontakten aus Outlook](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [Importieren von Kontakten in Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [Importieren von Kontakten in Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
@@ -82,9 +82,9 @@ Sie können ein Konto (z. B. Ihr privates Gmail-Konto) zu Outlook hinzufügen.
   
 - Öffnen Sie Outlook, und wechseln Sie dann zu **Datei** \> **Konto hinzufügen**.
     
-Benötigen Sie detailliertere Schritte? Dann lesen Sie [Hinzufügen eines Kontos](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Mehrere Postfächer: Administratoren können Massenimport von e-Mails, Kontakten und Kalendern auf Microsoft 365
 

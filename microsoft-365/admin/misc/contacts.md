@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Hier erfahren Sie, wie Sie Kontakte im Admin Center erstellen und ihre globale Adressliste verwalten.
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399422"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780013"
 ---
 # <a name="quick-help-contacts"></a>Schnelle Hilfe: Kontakte
 
@@ -42,7 +42,7 @@ Wenn Sie freigegebene Kontakte benötigen, zu denen jeder in Ihrer Organisation 
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>Wie unterscheiden sich diese Kontakte von "Meine Kontakte"?
 
-Meine Kontakte sind Kontakte, die Sie für sich selbst erstellen und die Ihre Benutzer für sich selbst erstellen, andere jedoch nicht sehen können. Die Kontakte, die Sie im Admin Center erstellen, sind Kontakte für das Unternehmen, und jeder Benutzer kann sie zusätzlich zu seinen eigenen Kontakten anzeigen. Weitere Informationen finden Sie unter [Peoples Overview-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf).
+Meine Kontakte sind Kontakte, die Sie für sich selbst erstellen und die Ihre Benutzer für sich selbst erstellen, andere jedoch nicht sehen können. Die Kontakte, die Sie im Admin Center erstellen, sind Kontakte für das Unternehmen, und jeder Benutzer kann sie zusätzlich zu seinen eigenen Kontakten anzeigen. Weitere Informationen finden Sie unter [Peoples Overview-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Wie erhalten andere Benutzer die Kontakte, die ich im Admin Center erstellt habe?
 

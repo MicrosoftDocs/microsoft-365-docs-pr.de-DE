@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Senden Sie eine e-Mail an eine Gruppe von Personen, ohne den Namen jedes einzelnen Empfängers eingeben zu müssen, indem Sie die Verteilung (List) erstellen.
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398966"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779893"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen im Microsoft 365 Admin Center
   
@@ -69,7 +69,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 6. Informationen zum Hinzufügen von Benutzern zu einer Verteilergruppe finden Sie unter [Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe](../email/add-user-or-contact-to-distribution-list.md).
     
-Weitere Informationen finden Sie unter How to use Group in Outlook 2016 und Outlook im Internet im Thema [use Contact Groups (Formerly Distribution Lists) in Outlook](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) . 
+Weitere Informationen finden Sie unter How to use Group in Outlook 2016 und Outlook im Internet im Thema [use Contact Groups (Formerly Distribution Lists) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) . 
   
 Weitere Informationen zu Problemen mit Verteilergruppen finden Sie unter [Verteilergruppen Probleme](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) . 
   

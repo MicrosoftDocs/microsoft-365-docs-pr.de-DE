@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishing-Nachricht in Microsoft 365 durchgekommen ist, und was Sie tun müssen, um weitere Phishing-Nachrichten zukünftig zu verhindern.
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588440"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755052"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
@@ -51,17 +51,21 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
 - Führen Sie auf monatlicher Basis [Secure Score](../mtp/microsoft-secure-score.md) aus, um die Sicherheitseinstellungen Ihrer Organisation zu bewerten.
 
-- Überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md) regelmäßig, und [Konfigurieren Sie Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) , um verdächtige Nachrichten zu **isolieren** , anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu senden
+- Für Nachrichten, die versehentlich in die Quarantäne verschoben werden, oder für Nachrichten, die durchgelassen werden, wird empfohlen, dass Sie nach diesen Nachrichten im [Threat Explorer und in Echt Zeit Erkennungen](threat-explorer.md)suchen. Sie können nach Absender, Empfänger oder Nachrichten-ID suchen. Nachdem Sie die Nachricht gefunden haben, gehen Sie zu Details, indem Sie auf den Betreff klicken. Suchen Sie bei einer isolierten Nachricht, um zu sehen, was die "Erkennungstechnologie" war, sodass Sie die entsprechende Methode zum Überschreiben verwenden können. Überprüfen Sie bei einer zulässigen Nachricht, welche Richtlinie die Nachricht zugelassen hat. 
+
+- Gefälschte e-Mails werden als Phishing in ATP getaggt. Spoof ist manchmal gutartig, und manchmal möchten die Benutzer, dass Sie nicht unter Quarantäne gestellt werden. Um die Auswirkungen auf die Benutzer zu minimieren, überprüfen Sie den [Spoof Intelligence-Bericht](learn-about-spoof-intelligence.md)regelmäßig. Nachdem Sie die erforderlichen Überschreibungen überprüft und vorgenommen haben, können Sie sicher sein, [Spoof Intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten in **Quarantäne verschoben** werden, anstatt Sie an den Junk-e-Mail-Ordner des Benutzers zu übermitteln.
+
+- Sie können den obigen Schritt für den Identitätswechsel (Domäne oder Benutzer) wiederholen. Der Identitätswechsel Bericht finden Sie unter **Threat Management** \> **Dashboard** \> **Insights**.
 
 - Überprüfen Sie den [Threat Protection-Status Bericht](view-reports-for-atp.md#threat-protection-status-report)regelmäßig.
 
-- Einige Kunden lassen versehentlich Phishing-Nachrichten durch, indem Sie Ihre eigenen Domänen in die Liste Absender zulassen oder Domänen zulassen in den antispamregeln umsetzen. Wenn Sie sich dafür entscheiden, müssen Sie äußerste Vorsicht walten lassen. Obwohl durch diese Konfiguration einige legitime Nachrichten über zulässig sind, werden auch böswillige Nachrichten zugelassen, die normalerweise durch die Spam-und/oder Phishingfilter blockiert würden.
+- Einige Kunden lassen versehentlich Phishing-Nachrichten durch, indem Sie Ihre eigenen Domänen in die Liste Absender zulassen oder Domänen zulassen in den antispamregeln umsetzen. Obwohl durch diese Konfiguration einige legitime Nachrichten über zulässig sind, werden auch böswillige Nachrichten zugelassen, die normalerweise durch die Spam-und/oder Phishingfilter blockiert würden. Anstatt die Domäne zuzulassen, sollten Sie das zugrunde liegende Problem beheben.
 
   Die beste Möglichkeit zum Umgang mit legitimen Nachrichten, die von Microsoft 365 (falsch positive Ergebnisse) blockiert werden, die Absender in Ihrer Domäne umfassen, besteht darin, die SPF-, DKIM-und DMARC-Einträge in DNS für _alle_ e-Mail-Domänen vollständig und vollständig zu konfigurieren:
 
   - Stellen Sie sicher, dass Ihr SPF-Eintrag _alle_ e-Mail-Quellen für Absender in Ihrer Domäne identifiziert (Drittanbieterdienste nicht vergessen!).
 
-  - Verwenden Sie "harter Fehler \- " (), um sicherzustellen, dass nicht autorisierte Absender von e-Mail-Systemen abgelehnt werden, die dafür konfiguriert sind. Sie können [Spoof Intelligence](learn-about-spoof-intelligence.md) verwenden, um die Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in ihren SPF-Eintrag aufnehmen können.
+  - Verwenden Sie "harter Fehler \- " (alle), um sicherzustellen, dass nicht autorisierte Absender von e-Mail-Systemen abgelehnt werden, die dafür konfiguriert sind. Sie können [Spoof Intelligence](learn-about-spoof-intelligence.md) verwenden, um die Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in ihren SPF-Eintrag aufnehmen können.
 
   Konfigurationsanweisungen finden Sie unter:
   
@@ -72,6 +76,8 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
   - [Verwenden von DMARC zum Überprüfen von E-Mails](use-dmarc-to-validate-email.md)
 
 - Wann immer möglich, wird empfohlen, e-Mails für Ihre Domäne direkt an Microsoft 365 zu übertragen. Mit anderen Worten, richten Sie den MX-Eintrag Ihrer Microsoft 365-Domäne auf Microsoft 365. Exchange Online Protection (EoP) ist in der Lage, den besten Schutz für Ihre Cloud-Benutzer bereitzustellen, wenn Ihre e-Mails direkt an Microsoft 365 übermittelt werden. Wenn Sie ein e-Mail-Hygienesystem eines Drittanbieters vor EoP verwenden müssen, verwenden Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+- Benutzer sollten [Nachrichten](enable-the-report-message-add-in.md) an Microsoft melden, was unser System ausbilden kann. Administratoren sollten auch die Funktionen der [Administrator Übermittlung](admin-submission.md) nutzen.
 
 - Die mehrstufige Authentifizierung (MFA) ist ein guter Weg, um kompromittierte Konten zu verhindern. Sie sollten die Aktivierung von MFA für alle Ihre Benutzer unbedingt in Betracht gezogen. Für einen phasenweisen Ansatz beginnen Sie damit, dass Sie MFA für Ihre sensibelsten Benutzer (Administratoren, Führungskräfte usw.) aktivieren, bevor Sie MFA für alle aktivieren. Anweisungen finden Sie unter [Einrichten der mehr](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)stufigen Authentifizierung.
 
