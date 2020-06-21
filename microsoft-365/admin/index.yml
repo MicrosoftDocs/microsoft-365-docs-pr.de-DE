@@ -13,17 +13,23 @@ metadata:
   ms.date: 11/08/2019
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 56353a336c3f8383b93ab63898e4879276b0108d
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
+  ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44399848"
+  ms.lasthandoff: 06/18/2020
+  ms.locfileid: "44799959"
 highlightedContent:
   items:
   - title: Office 365 ist jetzt Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
+  - title: Neuerungen im Microsoft 365 Admin Center
+    itemType: whats-new
+    url: whats-new-in-preview.md
+  - title: Bleiben Sie im Vordergrund von Microsoft 365 Änderungen
+    itemType: how-to-guide
+    url: manage/stay-on-top-of-updates.md
 productDirectory:
   title: Erste Schritte
   summary: Richten Sie Ihr Abonnement und e-Mail ein, fügen Sie Benutzer hinzu, und installieren Sie apps.
@@ -43,7 +49,7 @@ productDirectory:
   - title: Schulen von Benutzern
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: Hilfe für Benutzer in Ihrer Organisation erfahren Sie, wie Sie Dateien speichern und freigeben und Office-Apps verwenden können.
-    url: https://support.office.com/office-training-center
+    url: https://support.microsoft.com/training
 additionalContent:
   sections:
   - title: Verwalten
