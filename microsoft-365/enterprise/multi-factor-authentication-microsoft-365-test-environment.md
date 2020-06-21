@@ -1,5 +1,5 @@
 ---
-title: Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
+title: Mehrstufige Authentifizierung in Microsoft 365 Enterprise-Testumgebung
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: Konfigurieren Sie die mehrstufige Authentifizierung mit Textnachrichten, die an ein Smartphone in Ihrer Microsoft 365 Enterprise-Testumgebung gesendet werden.
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213140"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819376"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Mehrstufige Authentifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
 
@@ -43,7 +44,7 @@ Es gibt zwei Phasen zum Einrichten der mehrstufigen Authentifizierung für ein K
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
+> Wechseln Sie zu [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) für eine visuelle Zuordnung zu allen Artikeln im Microsoft 365 Enterprise Test Lab Guide Stack.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
@@ -98,7 +99,7 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
     
 7. Klicken Sie auf der Seite **Schritt 3: beibehalten Ihrer vorhandenen Anwendungen** auf **Fertig**.
     
-8. Wenn dies das erste Mal ist, dass Sie sich mit dem Konto „Benutzer 2“ angemeldet haben, werden Sie aufgefordert, das Kennwort zu ändern. Geben Sie das ursprüngliche Kennwort und dann zwei Mal ein neues Kennwort ein, und klicken Sie dann auf **Kennwort ändern und anmelden**. Zeichnen Sie das neue Kennwort an einem sicheren Ort auf.
+8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     Das Office-Portal für Benutzer 2 sollte auf der Registerkarte **Microsoft Office Startseite** Ihres Browsers angezeigt werden.
 

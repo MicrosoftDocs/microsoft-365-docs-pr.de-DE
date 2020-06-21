@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Erfahren Sie mehr über das Verwalten von Microsoft 365-Gruppen, einschließlich Hinzufügen von Gruppenmitgliedern, Bearbeiten der e-Mail-Adresse, des Gruppennamens oder der Beschreibung und Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049203"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780649"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Verwalten einer Gruppe im Microsoft 365 Admin Center
 
@@ -122,31 +122,31 @@ Gruppenmitglieder können diesen e-Mail-Empfang nicht mehr erhalten, indem Sie d
 
 3. Wählen Sie auf der Registerkarte **Einstellungen** die Option **Kopien von Gruppenunterhaltungen und Ereignissen an Gruppenmitglieder senden** aus, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie dann die Gruppe aus, die Sie ändern möchten.
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen** , und wählen Sie dann die Gruppe aus, die Sie ändern möchten.
 
 2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen,** und wählen Sie dann die Gruppe aus, die Sie ändern möchten.
+1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> **Gruppen** , und wählen Sie dann die Gruppe aus, die Sie ändern möchten.
 
 2. Wählen Sie neben **Name**die Option **Bearbeiten**aus.
 
 3. **Senden Sie Kopien von Gruppenunterhaltungen und Ereignissen an die Posteingänge der Gruppenmitglieder** an, wenn Sie möchten, dass Mitglieder Kopien von Gruppen Nachrichten und Kalenderelementen in Ihrem eigenen Posteingang erhalten. **On**
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 3. Wählen Sie in der Liste Admin Center-Gruppen den Namen der Gruppe aus, die Sie ändern möchten, und wählen Sie dann auf der Registerkarte **Einstellungen** die Option **externe Absender können diese Gruppe per e-Mail zulassen**aus.
     
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
     
 3. Setzen Sie die Umschaltfläche **Personen von außerhalb der Organisation das Senden von E-Mail an die Gruppe gestatten** auf **Ein**.
     
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern**.
 
 ::: moniker-end
 
@@ -194,7 +194,7 @@ Diese Option eignet sich hervorragend, wenn Sie eine Firmen-e-Mail-Adresse wie I
 
 [Erstellen einer Microsoft 365-Gruppe](create-groups.md)
 
-[Verwalten des Gastzugriffs auf Microsoft 365-Gruppen](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Verwalten des Gastzugriffs auf Microsoft 365-Gruppen](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Wählen Sie die Domäne aus, die beim Erstellen von Microsoft 365-Gruppen verwendet werden soll.](choose-domain-to-create-groups.md)
 

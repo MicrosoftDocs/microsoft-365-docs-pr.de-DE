@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie mehr über die Setupschritte für Microsoft 365 Business Premium, vom abonnieren über das Hinzufügen einer Domäne und von Benutzern bis hin zum Einrichten von Sicherheitsrichtlinien.
-ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470523"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785810"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 
@@ -40,7 +40,7 @@ Sehen Sie sich ein kurzes Video über das Microsoft 365 Business Premium-Setup a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Die meisten Setupschritte können im Setup-Assistenten ausgeführt werden, aber auch die anderen Optionen werden aufgelistet.
 
@@ -95,4 +95,4 @@ Wenn Sie ein Windows 10-Gerät mit Azure AD verknüpfen, werden die Richtlinien,
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

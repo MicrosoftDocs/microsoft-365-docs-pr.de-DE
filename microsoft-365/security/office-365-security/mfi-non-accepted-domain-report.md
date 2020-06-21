@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635280"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819521"
 ---
 # <a name="non-accepted-domain-report"></a>Bericht zu nicht akzeptierten Domänen
 
@@ -34,6 +36,6 @@ Wenn Sie eine Zeile in der Tabelle auswählen, werden weitere Details in einem F
 
 ![Auswählen einer Zeile in der Tabelle "Details" im Bericht "nicht akzeptierte Domäne"](../../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

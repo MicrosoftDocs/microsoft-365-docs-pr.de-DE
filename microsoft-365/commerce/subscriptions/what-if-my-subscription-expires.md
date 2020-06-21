@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403162"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818623"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
@@ -63,7 +63,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
   
 - **Aktivieren Sie wiederkehrende Abrechnung für das Abonnement.**
 
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch in Rechnung gestellt, und je nach ihrer aktuellen Zahlungshäufigkeit werden Sie für ein weiteres Jahr oder einen weiteren Monat belastet. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
 
   - Wenn Sie Microsoft 365 apps for Business mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
 
@@ -87,7 +87,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
   
 - **Verwalten der wiederkehrenden Abrechnung für das Abonnement.**
 
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch in Rechnung gestellt, und je nach ihrer aktuellen Zahlungshäufigkeit werden Sie für ein weiteres Jahr oder einen weiteren Monat belastet. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
 
   - Wenn Sie Microsoft 365 apps for Business mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
 
@@ -109,7 +109,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
 
 ::: moniker range="o365-21vianet"
   
-- **Verlängern Sie das Abonnement.** Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch in Rechnung gestellt, und je nach ihrer aktuellen Zahlungshäufigkeit werden Sie für ein weiteres Jahr oder einen weiteren Monat belastet. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+- **Verlängern Sie das Abonnement.** Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
 
 - **Lassen Sie das Abonnement ablaufen.** Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
 
@@ -126,13 +126,13 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
   
 ::: moniker range="o365-worldwide"
 
- **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
@@ -150,13 +150,13 @@ Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge 
   
 ::: moniker range="o365-worldwide"
 
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge 
 
 ::: moniker range="o365-worldwide"
 
-In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können sich nicht anmelden oder auf Dienste wie e-Mail oder SharePoint Online zugreifen. Office-Anwendungen wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt. Sie können sich weiterhin anmelden und zum Admin Center gelangen, Benutzern jedoch keine Lizenzen zuweisen. Ihre Kundendaten, einschließlich aller Benutzerdaten, E-Mails und Dateien auf Teamwebsites, stehen nur Ihnen und anderen Administratoren zur Verfügung.
+In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können sich nicht anmelden oder auf Dienste wie e-Mail oder SharePoint Online zugreifen. Office-Anwendungen wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt. Sie können sich weiterhin anmelden und zum Admin Center gelangen, Benutzern jedoch keine Lizenzen zuweisen. Ihre Kundendaten, einschließlich aller Benutzerdaten, E-Mails und Dateien auf Teamwebsites, stehen nur Ihnen und anderen Administratoren zur Verfügung.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ Als globaler oder abrechnungsadministrator können Sie [das Abonnement reaktivie
   
  **Was Sie erwarten können:** Wenn Sie Ihr Abonnement nicht reaktivieren, während die Nachfrist läuft oder es deaktiviert ist, wird seine Bereitstellung aufgehoben.
   
-Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Sämtliche Kundendaten - von den Benutzerdaten bis hin zu Dokumenten und E-Mails - werden endgültig gelöscht und können nicht mehr wiederhergestellt werden.
+Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
   
 Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Allerdings können Sie als globaler oder abrechnungsadministrator weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten, oder um neue Abonnements zu erwerben, um Ihre geschäftlichen Anforderungen zu erfüllen.
   
@@ -204,7 +204,7 @@ Wenn Ihre Testversion beendet ist, können Sie Microsoft 365 nicht kostenlos wei
 
 ::: moniker-end
 
-- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit, um Microsoft 365 zu evaluieren? In bestimmten Fällen können Sie Ihre [Testversion möglicherweise verlängern](../extend-your-trial.md).
+- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Auswerten von Microsoft 365? In bestimmten Fällen können Sie Ihre [Testversion möglicherweise verlängern](../extend-your-trial.md).
 
 - **Kündigen Sie die Testversion, oder lassen Sie sie ablaufen.** Wenn Sie sich entschließen, Microsoft 365 zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [stornieren](cancel-your-subscription.md). Denken Sie unbedingt daran, alle Daten zu sichern, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
 
@@ -216,7 +216,7 @@ Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement k
   
 - **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
-- **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
+- **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
 Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
   

@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173392"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818567"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (frühere Iteration)
 
@@ -43,7 +46,7 @@ Organisationen erhalten Zugriff auf zuverlässige Visualisierungen von Metriken 
 
 Darüber hinaus können Sie über die [Microsoft Graph-API](https://www.microsoft.com/security/partnerships/graph-security-api)auf Ihre Empfehlungen und Bewertungen zugreifen. Erfahren Sie mehr über den [Ressourcentyp Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funktionsweise
+## <a name="how-your-secure-score-is-calculated"></a>Berechnung der sicheren Punktzahl
 
 Sie erhalten Punkte für die Konfiguration empfohlener Sicherheitsfunktionen, die Ausführung sicherheitsrelevanter Aufgaben (z. B. das Anzeigen von Berichten) oder die Behandlung von Verbesserungsmaßnahmen mit einer Drittanbieteranwendung oder -software. Einige Verbesserungsmaßnahmen geben nur Punkte, wenn sie vollständig abgeschlossen sind, und einige geben schon Punkte, auch wenn sie nur für einige Geräte oder Benutzer abgeschlossen sind.
 

@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können sich über die e-Mail-Loop-Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: d17c698cf66be56b6a08fa5efc2aaff78aaece07
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082814"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819316"
 ---
 # <a name="mail-loop-insight"></a>Einblick für E-Mail-Schleife
 
@@ -28,6 +30,6 @@ Sie können auf **Details anzeigen** klicken, um die Details in einem Flyout-Ber
 
 ![Flyout-Bereich nach dem Klicken auf Details anzeigen in einer mal-Loop-Einblicke im Nachrichtenfluss-Dashboard](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

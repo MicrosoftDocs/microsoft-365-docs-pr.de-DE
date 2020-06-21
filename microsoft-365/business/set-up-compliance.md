@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Compliance-Features ein, um Datenverlust zu verhindern und um sicherzustellen, dass die vertraulichen Informationen Ihrer Kunden geschützt sind.
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402692"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785830"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
@@ -61,7 +61,7 @@ So legen Sie ein Postfach für das Beweissicherungsverfahren im Admin Center ab:
 
 Die Sensitivitäts Bezeichnungen werden mit dem Azure Information Protection (AIP)-Plan 1 geliefert und helfen Ihnen, Ihre Dokumente und e-Mails zu klassifizieren und optional zu schützen, indem Sie Bezeichnungen anwenden. Bezeichnungen können automatisch von Administratoren angewendet werden, die Regeln und Bedingungen manuell von Benutzern definieren, oder indem Sie eine Kombination verwenden, in der Benutzern Empfehlungen gegeben werden.
 
-Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und Verwalten von Sensitivitäts Bezeichnungen](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
+Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und Verwalten von Sensitivitäts Bezeichnungen](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
 
 
 
@@ -69,7 +69,7 @@ Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und
 
 So installieren Sie den AIP-Client manuell:
 
-1. Laden Sie **AzinfoProtection_UL. exe** aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018)herunter.
+1. Laden Sie **AzinfoProtection_UL.exe** aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018)herunter.
  
 2. Sie können überprüfen, ob die Installation erfolgreich war, indem Sie ein Word-Dokument anzeigen und sicherstellen, dass die Option **Vertraulichkeit** auf der Registerkarte **Start** verfügbar ist.
 <br/>![Dropdown-Registerkarte Schutz in einem Word-Dokument.](../media/word-sensitivity.png)

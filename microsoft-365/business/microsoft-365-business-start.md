@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 for Business, wie Sie eingerichtet werden und wie Sie die Geräte und PCs Ihrer Benutzer vorbereiten können, um sicherzustellen, dass Sie von Microsoft 365 for Business geschützt sind.
-ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402004"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786152"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 for Business
 
@@ -65,7 +65,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht über das Setup von Microsoft
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Einrichten von Microsoft 365 for Business (Administrator)
@@ -113,4 +113,4 @@ Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen 
   
 [Verwalten von Microsoft 365 for Business](manage.md)[Migrieren zu Microsoft 365 for Business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu den Antispameinstellungen und-Filtern erhalten, mit denen Spam in Exchange Online Protection (EoP) verhindert wird.
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211416"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800107"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Anti-Spam-Schutz in EoP
 
 > [!NOTE]
-> Dieses Thema richtet sich an Administratoren. Informationen zu Endbenutzer Themen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) und weitere Informationen [zu Junk-e-Mails und Phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Dieses Thema richtet sich an Administratoren. Informationen zu Endbenutzer Themen finden Sie unter [Übersicht über den Junk-e-Mail-Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) und weitere Informationen [zu Junk-e-Mails und Phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer werden e-Mail-Nachrichten automatisch vor Spam (Junk-e-Mail) durch EoP geschützt.
 
@@ -83,7 +83,7 @@ Im folgenden finden Sie einige bewährte Methoden, die für beide Szenarien gelt
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Verhindern der Zustellung von Spam im Posteingang
 
-- **Überprüfen Sie Ihre Organisationseinstellungen**: Achten Sie auf Einstellungen, mit denen Nachrichten Spamfilterung überspringen können (beispielsweise, wenn Sie Ihre eigene Domäne der Liste zugelassene Domänen in den Antispam-Richtlinien hinzufügen). Unsere empfohlenen Einstellungen finden Sie unter [recommended settings for EoP and Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) und [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
+- **Überprüfen Sie Ihre Organisationseinstellungen**: Achten Sie auf Einstellungen, mit denen Nachrichten Spamfilterung überspringen können (beispielsweise, wenn Sie Ihre eigene Domäne der Liste zugelassene Domänen in den Antispam-Richtlinien hinzufügen). Unsere empfohlenen Einstellungen finden Sie unter [recommended settings for EoP and Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) und [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Überprüfen, ob die Junk-e-Mail-Regel im Postfach des Benutzers aktiviert ist**: Sie ist standardmäßig aktiviert, wenn Sie jedoch deaktiviert ist, können Nachrichten, die als Junk gekennzeichnet sind, nicht in den Junk-e-Mail-Ordner verschoben werden. Weitere Informationen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 

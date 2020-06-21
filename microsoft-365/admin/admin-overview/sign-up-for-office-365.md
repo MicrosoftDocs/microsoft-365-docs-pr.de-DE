@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Registrierungsprozess für Office 365 durchlaufen. '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579169"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780517"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Vorgehensweise beim Anmelden – Administratorhilfe
 
@@ -70,7 +70,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Microsoft 365 for Business-Pla
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Benötigen Sie Hilfe bei der Auswahl? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Klicken Sie einfach auf [Alle Produkte vergleichen](https://products.office.com/compare-all-microsoft-office-products?tab=2) , und wählen Sie eine der Kontakt Supportoptionen aus, die auf der linken Seite aufgeführt sind.
   
@@ -115,9 +115,9 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 - **Die Adresse und Kontaktinformationen für Ihr Abonnement:**
 
-  - Das **Land**, in dem die Dienste genutzt werden. Sie können diese Angabe zu einem späteren Zeitpunkt **nicht mehr ändern**, auch nicht während des Registrierungsvorgangs. Stattdessen müssen Sie den Assistenten für die Registrierung erneut starten.
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - Die **E-Mail-Adresse** und **Telefonnummer**, damit wir mit Ihnen bei Bedarf Kontakt zu Ihrem Abonnement aufnehmen können. Wenn Sie beispielsweise Ihr Kennwort vergessen haben, würden wir Ihnen anhand dieser Information ein temporäres Kennwort zusenden. Wir senden auch Ihre Abrechnungsinformationen an die von Ihnen angegebene E-Mail-Adresse.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > Die e-Mail-Adresse, die Sie hier eingeben, unterscheidet sich von Ihrer Microsoft 365-e-Mail-Adresse (Ihr Anmeldename unten). Weil wir auch Ihre Abrechnungsinformationen dorthin senden, empfehlen wir, dass Sie beispielsweise eine E-Mail-Adresse verwenden, die für den Empfang geschäftlicher E-Mails geeignet ist.
@@ -137,4 +137,4 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

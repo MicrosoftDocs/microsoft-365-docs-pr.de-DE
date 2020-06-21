@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: In diesem Artikel erfahren Sie, wie Sie Windows-Geräte mit Windows 10 pro für Microsoft 365 Business Premium-Benutzer einrichten, sodass zentralisierte Verwaltungs-und Sicherheitssteuerelemente aktiviert werden können.
-ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402956"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785850"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
 
@@ -49,7 +49,7 @@ Sehen Sie sich ein kurzes Video über die Verbindung von Windows mit Microsoft 3
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Verbinden von Windows 10-Geräten in Ihrer Organisation mit Azure AD
 
@@ -67,7 +67,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
     
 3. Beenden Sie die Windows 10-Geräteinstallation.
     
-   Sobald Sie fertig sind, wird der Benutzer in Ihrer Organisation mit Azure AD verbunden. Ziehen Sie zur Sicherheit [Sicherstellen, dass das Gerät mit Azure AD verbunden ist](#verify-the-device-is-connected-to-azure-ad) zurate. 
+   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Geräte, die bereits eingerichtet wurden und Windows 10 Pro ausführen
 
@@ -97,7 +97,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
 6. Überprüfen Sie auf der Seite **Stellen Sie sicher, dass es sich um Ihre Organisation handelt** , dass die Informationen richtig sind, und klicken Sie auf **beitreten**.
   
-   Klicken Sie auf der Seite **Sie sind fertig!** auf **Fertig**.
+   On the **You're all set!** page, click **Done**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -129,4 +129,4 @@ Informationen zum Einrichten von mobilen Geräten finden Sie unter [Einrichten v
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

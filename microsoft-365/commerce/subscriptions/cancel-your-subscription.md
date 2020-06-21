@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement kündigen.
-ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403294"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818519"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -101,7 +101,7 @@ Wenn Sie ein Abonnement vor Ablauf der Laufzeit kündigen, wird es direkt in den
   
 - **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
-- **Benutzerzugriff:** Ihre Benutzer können keine Dienste wie OneDrive for Business nutzen oder auf Kundendaten wie E-Mails oder Dokumente auf Teamwebsites zugreifen. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
+- **Benutzerzugriff:** Ihre Benutzer können keine Dienste wie OneDrive for Business nutzen oder auf Kundendaten wie E-Mails oder Dokumente auf Teamwebsites zugreifen. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
 Weitere Informationen finden Sie unter [Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann ich darauf noch zugreifen?](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ Weitere Informationen finden Sie unter [wie kann Microsoft 365 meine DNS-Einträ
 
 Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre Daten. Bevor Sie das Abonnement kündigen, fordern Sie die Benutzer auf, ihre OneDrive for Business- oder SharePoint Online-Dateien an einem anderen Speicherort zu speichern. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 30 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
 
-- Informationen zum Verschieben von E-Mails, Kontakten, Aufgaben und Kalenderinformationen in ein anderes Konto finden Sie unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalendern in einer Outlook PST-Datei](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
+- Informationen zum Verschieben von E-Mails, Kontakten, Aufgaben und Kalenderinformationen in ein anderes Konto finden Sie unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalendern in einer Outlook PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
 - Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten (z. B. Kontakten) aus einer SharePoint Online-Umgebung (OneDrive for Business oder Teamwebsites) auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](https://support.microsoft.com/kb/2783484).
 
 ### <a name="uninstall-office-optional"></a>Deinstallieren von Office (optional)
 
-Wenn Sie Ihr Abonnement storniert haben und Benutzer nicht in ein anderes Abonnement mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
+Wenn Sie Ihr Abonnement storniert haben und Benutzer nicht in ein anderes Abonnement mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

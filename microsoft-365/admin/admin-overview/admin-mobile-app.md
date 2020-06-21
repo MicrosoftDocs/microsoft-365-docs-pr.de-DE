@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Holen Sie sich die Microsoft 365 admin-APP, und erfahren Sie, wie Sie Ihre Online-Organisation von Ihrem Telefon oder Tablet aus verwalten.
-ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386949"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780541"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zum Microsoft 365-Administrator Mobile App
 
@@ -58,7 +58,7 @@ Sehen Sie sich ein kurzes Video über die Installation des Administrator Mobile 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
  
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
@@ -105,4 +105,4 @@ E-Mail [feedback365@Microsoft.com](mailto:feedback365@microsoft.com) , um ein Pr
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

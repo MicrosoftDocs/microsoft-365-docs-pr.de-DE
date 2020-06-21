@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352498"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819340"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
-## <a name="overview"></a>Übersicht
+## <a name="message-trace-features"></a>Nachrichtenablauf Verfolgungs Features
 
 Die Nachrichtenablaufverfolgung im Security & Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
@@ -230,7 +232,7 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **sender_address**: die e-Mail-Adresse des Absenders (*Alias* @ *Domäne*).
 
-- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress* \> ## \< *Status*angezeigt \> . Zum Beispiel:
+- **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: angezeigt \<*email address*\> ## \<*status*\> . Beispiel:
 
   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
@@ -268,13 +270,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **server_hostname**: der Hostname oder der vollqualifizierte Domänenname des Zielservers.
 
-- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
+- **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
+- **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Beispiel:
 
   - `AGENT`
 
@@ -292,7 +294,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **related_recipient_address**: wird mit-,-und-Ereignissen verwendet, `EXPAND` `REDIRECT` `RESOLVE` um andere Empfänger-e-Mail-Adressen anzuzeigen, die der Nachricht zugeordnet sind.
 
-- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
+- **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
 
   - **DSN**: enthält den Berichtslink, bei dem es sich um den **message_id** Wert der zugehörigen Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn nach diesem Ereignis ein DSN generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
@@ -310,7 +312,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen, dargestellt als `<>` .
 
-- **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
+- **message_info**: zusätzliche Informationen zur Nachricht. Beispiel:
 
   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format dargestellt: `yyyy-mm-ddThh:mm:ss.fffZ` , wobei `yyyy` = year, `mm` = Month, `dd` = Day, `T` den Anfang der Zeitkomponente angibt, `hh` = Hour, `mm` = Minute, `ss` = Second, `fff` = Brüche einer Sekunde, und `Z` `Zulu` eine andere Möglichkeit zum bezeichnen von UTC darstellt.
 
@@ -337,7 +339,7 @@ Ein **custom_data** Wert, der mit beginnt, `S:SFA` ist vom Spamfilter-Agent. Die
 |`SFV=BLK`|Die Filterung wurde übergangen, und die Nachricht wurde gesperrt, da sie von einem gesperrten Absender stammt.|
 |`SFV=SKS`|Die Nachricht wurde vor der Verarbeitung durch Anti-Spam-Filterung als Spam gekennzeichnet. Dies beinhaltet Nachrichten, bei denen die Nachricht einer Nachrichtenflussregel (auch als Transportregel bezeichnet) entsprach, die diese automatisch als Spam markiert und alle zusätzlichen Filterungen umgeht.|
 |`SCL=<number>`|Weitere Informationen zu den verschiedenen SCL-Werten und deren Bedeutung finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).|
-|`PCL=<number>`|Der PCL-Wert (Phishing Confidence Level) der Nachricht. Diese Werte können auf die gleiche Weise interpretiert werden wie die in [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md) dokumentierten SCL-Werte.  |
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|Der Absender der Nachricht wurde blockiert.|
 |`DI=SQ`|Die Nachricht wurde unter Quarantäne gestellt.|
 |`DI=SD`|Die Nachricht wurde gelöscht.|

@@ -25,19 +25,19 @@ description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard Product
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402166"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818579"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
 
 Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements. 
   
  **Benötigen Sie etwas anderes?**
- **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal**finden Sie unter [Verwenden von Product Keys mit Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal**finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel geben Sie den [von Microsoft Open erworbenen Product Key](purchases-from-microsoft-open.md)ein.
   
 ## <a name="activate-a-new-subscription"></a>Aktivieren eines neuen Abonnements

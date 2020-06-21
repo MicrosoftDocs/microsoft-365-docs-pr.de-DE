@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Helfen Sie Ihren Benutzern, Office-Apps auf Windows 10-Geräten zu installieren und Office auf Windows 10-PCs problemlos aus dem Microsoft 365 Admin Center zu installieren.
-ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400906"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786234"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Unterstützen der Benutzer bei der Installation von Office auf Windows 10-Geräten
 
@@ -46,7 +46,7 @@ Sehen Sie sich ein kurzes Video über die Installation von Office-Apps an.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="manage-office-deployments"></a>Verwalten von Office-Bereitstellungen
 
@@ -65,4 +65,4 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

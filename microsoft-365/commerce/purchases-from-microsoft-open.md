@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Informationen zum Aktivieren, verlängern oder Hinzufügen von Lizenzen zu einem Microsoft 365 for Business-Abonnement.
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404682"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818555"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Geben Sie den von Microsoft Open erworbenen Product Key ein.
 
@@ -38,7 +38,7 @@ Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](
   
  **Benötigen Sie etwas anderes?**
  
- **Hilfe zu Microsoft 365 Home oder persönliche**Informationen finden Sie unter [Verwenden von Product Keys mit Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Hilfe zu Microsoft 365 Home oder persönliche**Informationen finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
  **Hilfe zu Microsoft 365 Business Standard, der von einem Einzelhandelsgeschäft erworben**wurde, finden Sie unter [eingeben des von einem Einzelhandelsgeschäft erworbenen Product Keys](enter-your-product-key.md). 
   
@@ -64,7 +64,7 @@ Wenn Sie neu bei Microsoft 365 for Business sind, erfahren Sie, wie Sie [Microso
 
 Schauen Sie sich diese Liste der häufigsten Fehler und Lösungen an: [Probleme mit Ihrem Product Key?](product-key-errors-and-solutions.md)
   
-Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
+Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Volumenlizenzkunden finden weitere Informationen unter [Microsoft Volume Licensing Service Center - Schulungen und Ressourcen](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

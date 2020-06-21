@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installieren Sie Office auf einem iPhone oder Android-Telefon, und Ihre Arbeitsdateien in Office-Apps werden von Microsoft 365 for Business geschützt.
-ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e847a794d34731c22f7a0fca87d246151a6f80a5
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402996"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785870"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Einrichten von mobilen Geräten für Microsoft 365 for Business-Benutzer
 
@@ -46,7 +46,7 @@ Sehen Sie sich ein kurzes Video zum Einrichten von Office-Apps auf IOS-Geräten 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Wechseln Sie zum **App Store**, und geben Sie im Suchfeld Microsoft Outlook ein.
   
@@ -78,7 +78,7 @@ Sehen Sie sich ein Video über die Installation von Outlook und Office auf Andro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 Um mit dem Setup auf Ihrem Android-Telefon zu beginnen, wechseln Sie zum Play Store.
   
@@ -100,12 +100,12 @@ Installieren Sie im Wiedergabe-Store das InTune-Unternehmens Portal.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
-Öffnen Sie Outlook erneut. Geben Sie eine PIN ein, und bestätigen Sie sie. Ihre Outlook-App ist jetzt einsatzbereit.
+Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

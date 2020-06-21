@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können sich über das Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635172"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818831"
 ---
 # <a name="fix-sender-domain-insight"></a>Einblick in Absenderdomäne
 
@@ -28,7 +30,7 @@ Microsoft 365 erfordert Nachrichten, die von internen lokalen e-Mail-Umgebungen 
 
 - In Ihrer Konfiguration ist eine der folgenden Aussagen zutreffend:
 
-  - Die e-Mail-Domäne des Absenders ist in Ihrer Organisation registriert. Weitere Informationen finden Sie unter Hinzufügen von Domänen in Office 365.
+  - Die e-Mail-Domäne des Absenders ist in Ihrer Organisation registriert. Weitere Informationen finden Sie unter Domänen in Office 365 hinzufügen.
 
   - Der lokale e-Mail-Server ist für die Verwendung eines Zertifikats zum Senden von e-Mails an Microsoft 365 konfiguriert, das Zertifikat enthält einen Domänennamen, den Sie in Microsoft 365 registriert haben, oder stimmt genau überein und Sie haben einen zertifikatbasierten Connector in Microsoft 365 mit dieser Domäne erstellt. 
 
@@ -46,6 +48,6 @@ Sie sehen den eingehenden Connector, der für die Zustellung der Nachrichten an 
 
 ![Anzeigen von Beispiel Meldungs-IDs im Fix Sender Domain Insight](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

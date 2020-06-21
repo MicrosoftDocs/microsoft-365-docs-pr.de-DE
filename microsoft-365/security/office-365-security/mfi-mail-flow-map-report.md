@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635292"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818843"
 ---
 # <a name="mail-flow-map-report"></a>Nachrichtenfluss-Bericht
 
@@ -30,7 +32,7 @@ Standardmäßig zeigt die e-Mail-Fluss-Zuordnung das hochstufige Nachrichtenflus
 
 ![Pfeile Links und rechts im Nachrichtenfluss-Map-widget](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>Übersicht
+## <a name="mail-flow-map-basics"></a>Grundlagen der Nachrichtenfluss Übersicht
 
 Durch Klicken auf das Widget **"Nachrichtenfluss-Zuordnung** " gelangen Sie zum Bericht **"Nachrichtenfluss Karte** ". Hier sehen Sie eine genauere Berichtebene, Sie können auf Detailtabelle anzeigen klicken, um detaillierte Daten anzuzeigen. Sie können den detaillierten Bericht auch herunterladen, indem Sie auf Anforderungsbericht klicken.
 

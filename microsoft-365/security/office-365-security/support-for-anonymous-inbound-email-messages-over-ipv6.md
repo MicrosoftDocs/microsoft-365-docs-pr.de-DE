@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Der Administrator kann erfahren, wie die Unterstützung für anonyme eingehende e-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Schutz konfiguriert wird.
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631217"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818709"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Hinzufügen von Unterstützung für anonyme eingehende e-Mails über IPv6 in Microsoft 365
 
@@ -48,6 +50,6 @@ Nachdem die anonyme eingehende IPv6-Nachrichten Unterstützung in Ihrer Organisa
 
   > 550 5.2.1 Dienst nicht verfügbar; [contoso.com] akzeptiert keine e-Mails über IPv6.
 
-## <a name="for-more-information"></a>Weitere Informationen
+## <a name="related-topics"></a>Verwandte Themen
 
 [Unterstützung für die Validierung von mit DKIM signierten Nachrichten](support-for-validation-of-dkim-signed-messages.md)

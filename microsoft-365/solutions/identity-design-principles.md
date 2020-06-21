@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352546"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800131"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Zur Identität und darüber hinaus – ein Architektur Standpunkt
 
@@ -94,7 +94,7 @@ Sollte ich die Standard Synchronisierungsregeln anpassen ([Filterobjekte](https:
 Unterstützt XYZ-Saas die Just-in-time (JIT)-Vorgehensweise, warum müssen Sie mich synchronisieren? Siehe weiter oben. Viele Anwendungen benötigen "Profil"-Informationen für die Funktionalität. Sie können keine GAL haben, wenn alle e-Mail-aktivierten Objekte nicht verfügbar sind. Gleiches gilt für [Benutzer](https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning) Prothesen in Anwendungen, die in Azure AD integriert sind.
 
 
-### <a name="authentication"></a>Authentication
+### <a name="authentication"></a>Authentifizierung
 
 [Kennwort-Hash-Synchronisierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) (PHS) vs. [Pass-Through-Authentifizierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) vs. [Federation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
@@ -134,7 +134,7 @@ Wenn Sie mit dieser erweiterten Definition der Autorisierung einverstanden sind,
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/) (Azure ATP)
 - [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Microsoft 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Microsoft 365 ATP)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
 - [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/) (MCAS)
 - [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Die Azure-rollenbasierte Zugriffssteuerung (RBAC) ermöglicht eine abgestimmte Z
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="allgemeine Ansicht von Azure-Komponenten für die delegierte Verwaltung":::
 
-Wie Sie aus der obigen Abbildung sehen können, sollten viele andere Dienste als Teil des Entwurfs betrachtet werden (beispielsweise: [Azure-Richtlinien](https://docs.microsoft.com/azure/governance/policy/overview), [Asure-Blaupausen](https://docs.microsoft.com/azure/governance/blueprints/overview), [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/)usw.).
+Wie Sie aus der obigen Abbildung sehen können, sollten viele andere Dienste als Teil des Entwurfs betrachtet werden (beispielsweise: [Azure-Richtlinien](https://docs.microsoft.com/azure/governance/policy/overview), [Azure-Blaupausen](https://docs.microsoft.com/azure/governance/blueprints/overview), [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/)usw.).
 
 ## <a name="conclusion"></a>Schlussbemerkung
 Begonnen als kurze Zusammenfassung, endete länger als erwartet.  Ich hoffe, Sie sind jetzt in der Lage, ein detailliertes Beispiel für die Erstellung des Delegierungsmodells für Ihre Organisation zu finden.  Diese Unterhaltung ist bei Kunden sehr verbreitet. Es gibt kein einziges Modell, das für jeden geeignet ist. Warten auf einige geplante Verbesserungen von Microsoft Engineering vor dem dokumentieren allgemeiner Muster, die wir Across Kunden sehen. In der Zwischenzeit können Sie mit Ihrem Microsoft-Konto Team zusammenarbeiten, um einen Besuch im nächsten [Microsoft Technology Center](https://www.microsoft.com/mtc)zu arrangieren.  Wir sehen uns dort!

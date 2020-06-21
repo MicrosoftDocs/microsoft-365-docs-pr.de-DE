@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können Informationen zu den langsamen Nachrichtenfluss Regeln Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088354"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819364"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Einblick für langsame Nachrichtenflussregeln
 
@@ -37,6 +39,6 @@ Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in 
 
 ![Flyout-Bereich nach dem Klicken auf Details anzeigen in langsamen Nachrichtenfluss Regeln Einblicke in das Nachrichtenfluss-Dashboard](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

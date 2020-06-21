@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365 für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
-ms.openlocfilehash: 5d85b164133d235dce410cd6cbda778588fd093a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 4d5be2d560017978d08bf9f5b06c9e2011606c6d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160015"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819412"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -53,11 +53,11 @@ Nachdem Sie das Szenario, das Sie für die Freigabe für Personen außerhalb Ihr
 
 Wenn Sie an einem großen Projekt arbeiten, das viele Gäste aus einer anderen Organisation umfasst, oder wenn Sie eine ständige Lieferantenbeziehung haben, in der sich Gäste häufig ändern, können Sie die Verwaltung von Berechtigungen in Azure Active Directory verwenden, um die Verwaltung von Gast zu vereinfachen und das Partnerunternehmen in dieser Verantwortung zu teilen. Weitere Informationen finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) .
 
-## <a name="limit-sharing"></a>Grenzwert Freigabe
+## <a name="limit-sharing"></a>Freigabe einschränken
 
 Wenn einige der Freigabefeatures in Microsoft 365 mit ihren Steuerungsrichtlinien in Konflikt stehen, finden Sie unter [Limit Sharing in Microsoft 365](microsoft-365-limit-sharing.md) Informationen zu Optionen zum Einschränken der Freigabe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Einführung in die Zusammenarbeit in Dateien in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

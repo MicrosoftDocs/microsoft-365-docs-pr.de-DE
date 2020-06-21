@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432099"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780637"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -46,7 +46,7 @@ Sehen Sie sich ein kurzes Video über das Hinzufügen eines Administrators an.<b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
 ## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
 

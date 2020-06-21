@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Hier erfahren Sie, wie Sie die Dateien und e-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431713"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780613"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
 
@@ -141,7 +141,7 @@ Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte in de
 
 Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemaligen Mitarbeiters exportieren Sie die Informationen in eine Outlook-Datendatei (PST).
   
-1. [Fügen Sie die e-Mail-Adresse des ehemaligen Mitarbeiters](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) zu Ihrem Outlook hinzu (wenn Sie [das Kennwort des Benutzers zurücksetzen](reset-passwords.md), können Sie es nur auf einen bestimmten Wert festlegen.)
+1. [Fügen Sie die e-Mail-Adresse des ehemaligen Mitarbeiters](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) zu Ihrem Outlook hinzu (wenn Sie [das Kennwort des Benutzers zurücksetzen](reset-passwords.md), können Sie es nur auf einen bestimmten Wert festlegen.)
     
 2. Wählen Sie in Outlook **Datei**aus.
     
@@ -160,7 +160,7 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
 6. Wählen Sie das Konto aus, das Sie exportieren möchten, indem Sie den Namen oder die e-Mail-Adresse wie Postfach-Anne Weiler oder Anne@contoso.com auswählen. Wenn Sie den gesamten Inhalt des Kontos exportieren möchten, einschließlich aller E-Mails, Kalender, Kontakte, Aufgaben und Notizen, stellen Sie sicher, dass das Kontrollkästchen **Unterordner einbeziehen** aktiviert ist. 
     
     > [!NOTE]
-    > Sie können immer ein Konto gleichzeitig exportieren. Wenn Sie mehrere Konten exportieren möchten, wiederholen Sie nach dem Export des einen Kontos diese Schritte. 
+    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
   
     ![Dialogfeld 'Outlook-Datendatei exportieren' mit ausgewähltem Ordner der obersten Ebene und aktiviertem 'Unterordner einbeziehen'](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
@@ -181,7 +181,7 @@ Outlook beginnt den Exportvorgang sofort, es sei denn, es wird eine neue Outlook
     
   - Wenn Sie in eine vorhandene Outlook-Datendatei (PST) exportieren, die kennwortgeschützt ist, geben Sie im Dialogfeld **Kennwort für Outlook-Datendatei** das *Kennwort*ein, und wählen Sie dann **OK**aus.
     
-Weitere Informationen finden Sie unter [exportieren oder Sichern von e-Mails, Kontakten und Kalendern in eine Outlook. PST-Datei](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) in Outlook 2010. 
+Weitere Informationen finden Sie unter [exportieren oder Sichern von e-Mails, Kontakten und Kalendern in eine Outlook. PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010. 
   
   
   > [!NOTE]
@@ -231,5 +231,5 @@ Um den Zugriff auf e-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehema
 
 [Wiederherstellen eines gelöschten OneDrive](/onedrive/restore-deleted-onedrive)
   
-[OneDrive-Aufbewahrung und-Löschung](/onedrive/retention-and-deletion)
+[Aufbewahrung und Löschung in OneDrive](/onedrive/retention-and-deletion)
   

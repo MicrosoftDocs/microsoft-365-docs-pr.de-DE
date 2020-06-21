@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informationen zum Migrieren Ihres Unternehmens zu Microsoft 365 Business Premium von Office 365 E3.
-ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515899"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785928"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium 
 
@@ -45,7 +45,7 @@ In dieser Tabelle sind die Unterschiede zwischen Microsoft 365 Business Premium 
 | Office-Apps<sup>1</sup>    | Microsoft 365 Apps for Business    | Microsoft 365 Apps for Enterprise | 
 | **Apps für die Cloud-Produktivität**        | | | 
 | Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online Archivierung | 
-| Teams    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
+| Microsoft Teams    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB Speichergrenzwert pro Benutzer    | Unbegrenzt | 
 | Jammern, SharePoint Online, Planer, Stream    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
 | StaffHub    | ![Im Lieferumfang von Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![Im Lieferumfang von Office 365 E3 enthalten](../media/check-mark.png) | 
@@ -117,8 +117,8 @@ Sie können diese Schritte auch auf der Seite Geräte ausführen:
 
 ### <a name="threat-protection"></a>Bedrohungsschutz
 
-Nach der Migration zu Microsoft 365 Business Premium haben Sie Office 365 ATP. Eine Übersicht finden Sie unter [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Informationen zum Einrichten finden Sie unter [Einrichten von ATP-Safe-Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), einrichten [von ATP-Tresoranlagen](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)und [Einrichten von ATP-Anti-Phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+Nach der Migration zu Microsoft 365 Business Premium haben Sie Office 365 ATP. Eine Übersicht finden Sie unter [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Informationen zum Einrichten finden Sie unter [Einrichten von ATP-Safe-Links](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), einrichten [von ATP-Tresoranlagen](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)und [Einrichten von ATP-Anti-Phishing](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-Informationen zur Verwendung von Sensitivitäts Bezeichnungen finden Sie unter [Übersicht über Sensitivitäts Bezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) und [Erstellen und Verwalten von Sensitivitäts Beschriftungen](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) (Video).
+Informationen zur Verwendung von Sensitivitäts Bezeichnungen finden Sie unter [Übersicht über Sensitivitäts Bezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) und [Erstellen und Verwalten von Sensitivitäts Beschriftungen](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) (Video).

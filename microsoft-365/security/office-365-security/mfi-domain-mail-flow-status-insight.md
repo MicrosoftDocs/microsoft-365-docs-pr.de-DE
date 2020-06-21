@@ -1,5 +1,5 @@
 ---
-title: Übersicht über den Top-Domain-e-Mail-Datenstrom
+title: Einblick in den Top-Domain-Nachrichtenflussstatus
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können sich im Nachrichtenfluss-Dashboard im Security & Compliance Center über den Nachrichtenflussstatus "Top Domain" informieren.
-ms.openlocfilehash: 42ce0545dad2804829d15572ce6e1f5a0ca6b49f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082842"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818591"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Übersicht über den Top-Domain-e-Mail-Datenstrom
+# <a name="top-domain-mail-flow-status-insight"></a>Einblick in den Top-Domain-Nachrichtenflussstatus
 
 In der **oberen Domäne der Nachrichtenflussstatus** Insight erhalten Sie den aktuellen Status für die Domänen Ihrer Organisation im Hinblick auf den Nachrichtenfluss. Diese Einblicke helfen Ihnen bei der Identifizierung und Problembehandlung von Domänen, die sich auf Probleme mit dem ***e-Mail-Fluss auswirken*** (beispielsweise kann keine externe e-Mail empfangen werden), vor allem Domänen Ablauf oder Domänen mit falschen MX-Einträgen.
 
@@ -32,6 +34,6 @@ Ein rotes x für eine Domäne gibt an, dass der MX-Eintrag geändert wurde und d
 
 ![Das Detail-Flyout im oberen Bereich der Domänen-Flow-Status Einblicke](../../media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

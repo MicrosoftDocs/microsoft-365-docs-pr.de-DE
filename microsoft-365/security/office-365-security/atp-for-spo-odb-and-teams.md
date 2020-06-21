@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: Erfahren Sie mehr über Office 365 Advanced Threat Protection für Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams.
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031448"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815409"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -33,7 +34,7 @@ ms.locfileid: "44031448"
 
 Personen teilen regelmäßig Dateien und arbeiten mit SharePoint, OneDrive und Microsoft Teams zusammen. Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation auf sichere Weise zusammenarbeiten. ATP unterstützt das erkennen und Blockieren von Dateien, die als bösartig identifiziert werden, in Teamwebsites und Dokumentbibliotheken.
 
-## <a name="how-it-works"></a>Funktionsweise
+## <a name="how-office-365-atp-operates"></a>So funktioniert Office 365 ATP
 
 Wenn eine Datei in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams als bösartig identifiziert wurde, wird ATP direkt in die Dateispeicher integriert, um diese Datei zu sperren. In der folgenden Abbildung ist ein Beispiel für eine in einer Bibliothek erkannte schädliche Datei dargestellt.
 
@@ -65,7 +66,7 @@ Weitere Informationen finden Sie unter [Office 365 ATP für SharePoint, OneDrive
 
  Ab Ende Mai 2018 werden die [Quarantäne](quarantine-email-messages.md) Funktionen im Security &amp; Compliance Center auf ATP für SharePoint Online, OneDrive für Unternehmen und Microsoft Teams erweitert.
 
-Wenn eine Datei in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams als bösartig erkannt wird, wird die Datei zusätzlich zu ATP blockiert, wenn die Datei geöffnet oder freigegeben wird, und diese Datei wird in eine Liste mit isolierten Elementen eingeschlossen. (Klicken Sie im &amp; Security Compliance Center auf **Threat Management** \> **Review** \> **Quarantine** und Filter for **Files**.)
+Wenn eine Datei in SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams als bösartig erkannt wird, wird die Datei zusätzlich zu ATP blockiert, wenn die Datei geöffnet oder freigegeben wird, und diese Datei wird in eine Liste mit isolierten Elementen eingeschlossen. (Im Security &amp; Compliance Center finden Sie unter **Threat Management** \> **Review** \> **Quarantine** und Filter for **Files**.)
 
 Wenn Sie Teil des Microsoft 365 for Business-Sicherheitsteams in Ihrer Organisation sind und über die erforderlichen Berechtigungen verfügen, die [im Security &amp; Compliance Center zugewiesen](permissions-in-the-security-and-compliance-center.md)sind, können Sie Dateien herunterladen, freigeben, melden und löschen, die von ATP als schädlich erkannt werden, aus der Quarantäne heraus.
 

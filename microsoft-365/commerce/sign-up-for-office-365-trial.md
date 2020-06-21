@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Hier erfahren Sie, wie Sie sich für ein Microsoft 365 for Business-Testabonnement anmelden.
-ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b14cf3ede622d54a95eb5cec3b67eec230ea8793
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402834"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818543"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Registrieren für ein Testabonnement
 
@@ -53,4 +53,4 @@ Wenn Sie Ihre Testversion vor Ablauf des kostenlosen Testzeitraums abbrechen mö
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

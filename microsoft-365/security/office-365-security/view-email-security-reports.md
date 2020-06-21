@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von e-Mail-Sicherheitsberichten im Security & Compliance Center, kompromittierten Benutzern, Verschlüsselung, Bedrohungsschutz Status, Malwareerkennungen, Top-Schadsoftware, Spam Erkennung, gesendete und empfangene e-Mails, gemeldete Nachrichten, Lesen von Berichten, Erkennung, Sicherheitsdaten, Sicherheitsinformationen
+title: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
-ms.openlocfilehash: 6fc77696625fb11d4ebfc6f339939c751c7a45f2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dfee1fa2c6e515bfc10ed7a633584c54763fdec4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613456"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819461"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 

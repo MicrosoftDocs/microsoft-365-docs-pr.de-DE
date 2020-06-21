@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office-Produktivitäts-Apps und erweiterten Schutz für Ihr Unternehmen gegen Cyberbedrohungen umfasst.
-ms.openlocfilehash: 61f4c34ade180717486ce889162947afe9be7ba6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402252"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786172"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ Schauen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
 
 Microsoft 365 Business Premium ist für bis zu 300 Lizenzen vorgesehen. Wenn Sie weitere Lizenzen benötigen, lesen Sie die Dokumentation zu [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986), um weitere Informationen zu erhalten.
 
@@ -111,11 +111,11 @@ Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 3
 
 - Wenn Sie noch über keinen Partner verfügen und Microsoft 365 Business Premium erhalten möchten, [kaufen Sie es hier](https://www.microsoft.com/microsoft-365/business) und folgen Sie den Anweisungen unter [Registrieren](sign-up.md).
 
-- Sie können auch zu einem [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) gehen, um Microsoft 365 Business Premium zu kaufen und Hilfe für die Einrichtung zu erhalten.
+- Sie können auch zu einem [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) gehen, um Microsoft 365 Business Premium zu kaufen und Hilfe für die Einrichtung zu erhalten.
 
     > [!NOTE]
     > Dieser Link gilt nur für Stores in den USA.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Business Premium-Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

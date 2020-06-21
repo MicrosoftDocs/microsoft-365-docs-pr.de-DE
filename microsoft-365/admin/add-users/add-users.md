@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: In diesem Artikel erfahren Sie, wie Sie Benutzer gleichzeitig oder mehrere Benutzer gleichzeitig aus einer CSV-Datei zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: af160b78317171bec98dcfa3d5877b53560f75a2
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432123"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780661"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Benutzer einzeln oder in Massen hinzufügen
 
@@ -80,11 +80,11 @@ Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich 
     
 - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie den Abschnitt, um ein sicheres Kennwort für den Benutzer festzulegen.  
     
-    Er muss sein Kennwort nach 90 Tagen ändern.  Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
+    They'll need to change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
     
 - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll.  
     
-- **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen. 
+- **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses. 
 
 ::: moniker-end
 
@@ -105,11 +105,11 @@ Die Personen in Ihrem Team benötigen jeweils ein Benutzerkonto, bevor Sie sich 
     
 - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie den Abschnitt, um ein sicheres Kennwort für den Benutzer festzulegen.  
     
-    Er muss sein Kennwort nach 90 Tagen ändern.  Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
+    They'll need to change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
     
 - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll.  
     
-- **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen. 
+- **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses. 
 
 ::: moniker-end 
   
@@ -124,7 +124,7 @@ Nachdem Sie einen Benutzer hinzugefügt haben, erhalten Sie eine E-Mail-Benachri
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-Geben Sie das [Schnellstarthandbuch für Mitarbeiter](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx) für Ihre neuen Benutzer frei, um etwas einzurichten, z. B. [Office auf einem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) und [mobile Office-Apps](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx).
+Geben Sie das [Schnellstarthandbuch für Mitarbeiter](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) für Ihre neuen Benutzer frei, um etwas einzurichten, z. B. [Office auf einem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) und [mobile Office-Apps](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
   
 ## <a name="need-help"></a>Benötigen Sie Hilfe?
 
@@ -144,6 +144,8 @@ Wenn Sie mehrere Benutzer gleichzeitig hinzufügen möchten, führen Sie die fol
 - **Sie migrieren aus Exchange?** Informieren Sie sich über [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Wenn Sie mehrere Postfächer mithilfe von Cutover, Staged oder einer Exchange-Hybridmethode zu Microsoft 365 migrieren, werden Sie Benutzer automatisch als Teil der Migration hinzufügen. Bei der Migration werden nur die Benutzerkonten hinzugefügt. Sie müssen den Benutzern Lizenzen zuweisen, damit sie E-Mail und andere Office-Apps verwenden können.
 
 ## <a name="related-articles"></a>Verwandte Artikel
+
+[Zuweisen von Lizenzen für Benutzer](../manage/assign-licenses-to-users.md)
 
 [Hinzufügen eines neuen Mitarbeiters zu Microsoft 365](add-new-employee.md)
 

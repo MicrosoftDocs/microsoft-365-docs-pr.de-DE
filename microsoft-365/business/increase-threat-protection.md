@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400868"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786204"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -92,13 +92,13 @@ Weitere Informationen finden Sie unter:
   
 - [Umgang mit Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [Wiederherstellen der OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Wiederherstellen der OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>Beenden der automatischen Weiterleitung für e-Mail
 
 Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können e-Mails stehlen, indem Sie das Postfach so festlegen, dass e-Mails automatisch weitergeleitet werden. Dies kann auch ohne das Bewusstsein des Benutzers geschehen. Um dies zu verhindern, konfigurieren Sie eine e-Mail-Fluss Regel. 
   
-Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) an, oder führen Sie die folgenden Schritte aus:
+Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) an, oder führen Sie die folgenden Schritte aus:
   
 1. Wählen Sie im Microsoft 365 Admin Center die Option **Admin Center** \> **Exchange**aus.
     
@@ -127,7 +127,7 @@ Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365-oder
   
 Es wird empfohlen, dass Sie mit diesem Schutz beginnen, indem Sie eine Richtlinie zum Schutz ihrer wichtigsten Benutzer und Ihrer benutzerdefinierten Domäne erstellen. 
 
-Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)an, oder führen Sie die folgenden Schritte aus:
+Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com). 
     
@@ -157,7 +157,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
 
 Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder böswillig ist, indem nur eine e-Mail-Nachricht angezeigt wird. Office 365 Advanced Threat Protection umfasst den Schutz von ATP-Sicherheitsanlagen, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, dass Sie eine neue Regel erstellen, um mit diesem Schutz zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
   
-Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
+Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, schauen Sie sich [Dieses kurze Video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) , und melden Sie sich mit Ihrem Administratorkonto an. 
     
@@ -194,7 +194,7 @@ Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
     
 - Fügen Sie eine neue Richtlinie hinzu, die für alle Empfänger in Ihrer Domäne vorgesehen ist.
     
-Um ATP-sichere Links einzurichten, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
+Um ATP-sichere Links einzurichten, schauen Sie sich [Dieses kurze Schulungsvideo](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)an, oder führen Sie die folgenden Schritte aus:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) , und melden Sie sich mit Ihrem Administratorkonto an. 
     

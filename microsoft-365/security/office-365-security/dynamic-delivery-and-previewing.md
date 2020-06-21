@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Beim Einrichten Ihrer Richtlinien für das Feature "ATP-sichere Anlagen", wählen Sie die Option "Dynamische Zustellung" aus, um Nachrichtenverzögerungen zu vermeiden und Personen in die Lage zu versetzen, Anlagen in der Vorschau zu betrachten, die gescannt werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034792"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819352"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit ATP-sicheren Anlagen
 
-## <a name="overview"></a>Übersicht
+## <a name="basic-features-of-dynamic-delivery"></a>Grundlegende Features der dynamischen Zustellung
 
 "Dynamische Zustellung" ist eine Option, die für das Feature [ATP-sichere Anlagen](atp-safe-attachments.md) ausgewählt werden kann. Lesen Sie diesen Artikel, wenn Sie mehr über die Option "Dynamische Zustellung" und Funktionen für Anlagenvorschau erfahren möchten: [ATP-sichere Anlagen in Office 365](atp-safe-attachments.md).
 
@@ -80,7 +80,7 @@ Es gibt bestimmte Szenarien, in denen die dynamische Zustellung nicht unterstüt
 
 - Der Suchordner im Postfach eines Benutzers befindet sich im Status "Fehler"
 
-- Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. Um dieses Problem zu beheben, ziehen Sie [Nachrichten mit Anlagen werden nicht zugestellt, wenn die ATP-Option "Dynamische Zustellung" und Exclaimer verwendet werden](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery) zurate.
+- Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. Um dieses Problem zu beheben, ziehen Sie [Nachrichten mit Anlagen werden nicht zugestellt, wenn die ATP-Option "Dynamische Zustellung" und Exclaimer verwendet werden](https://support.microsoft.com/help/4014438) zurate.
 
 - Mit [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md) verschlüsselte Nachrichten
 
