@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 99441695ad069ffe15f5347991d9dd65976eb23e
-  ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+  ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
+  ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/02/2020
-  ms.locfileid: "44498269"
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "44780097"
 landingContent:
 - title: Überwachen des Status unseres Diensts
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
       url: update-phone-number-and-email-address.md
     - text: Einrichten von Freigabeoptionen
       url: release-options-in-office-365.md
-    - text: Anzeigen oder ausblenden neuer Features
+    - text: Ein- oder ausblenden neuer Funktionen
       url: show-hide-new-features.md
 - title: Blockieren des Benutzerzugriffs und Sichern von Daten
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Aktualisieren Sie Ihre Organisation auf die neuesten Anwendungen
+    - text: Aktualisieren Sie Benutzer auf die neuesten Apps
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: Anpassen des App-Startfelds
       url: customize-the-app-launcher.md
@@ -58,18 +58,18 @@ landingContent:
       url: centralized-deployment-of-add-ins.md
     - text: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
       url: manage-deployment-of-add-ins.md
-- title: Microsoft Teams
+- title: Microsoft Teams
   linkLists:
   - linkListType: overview
     links:
     - text: Microsoft Teams-Administratordokumentation
       url: https://docs.microsoft.com/en-us/microsoftteams/
     - text: Verwenden von Outlook und Microsoft Teams zusammen
-      url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+      url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
     - text: Schulungen zu Microsoft Teams
-      url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+      url: https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7
 - title: OneDrive und SharePoint
   linkLists:
   - linkListType: overview
