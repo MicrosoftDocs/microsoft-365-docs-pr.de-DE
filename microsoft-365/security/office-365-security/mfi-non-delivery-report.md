@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082679"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819509"
 ---
 # <a name="non-delivery-report"></a>Unzustellbarkeitsbericht
 
@@ -32,6 +34,6 @@ Wenn Sie eine Zeile in der Tabelle auswählen, um die Details des jeweiligen Unz
 
 ![Auswählen einer Zeile in der Tabelle "Details" im Unzustellbarkeitsbericht](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

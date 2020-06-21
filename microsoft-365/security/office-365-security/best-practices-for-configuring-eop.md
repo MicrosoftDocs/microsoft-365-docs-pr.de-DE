@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese Best Practice-Empfehlungen für den eigenständigen Exchange Online Schutz (EoP), um sich für den Erfolg einzusetzen und häufige Konfigurationsfehler zu vermeiden.
-ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616722"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739089"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden für die Konfiguration eigenständiger EoP
 
@@ -54,7 +54,7 @@ Diese Einstellungen umfassen eine Reihe von Features, die sich außerhalb von Si
 |Authentifizierte SMTP-Übermittlung|Deaktiviert|Deaktiviert|Authentifizierte Client-SMTP-Übermittlung (auch bekannt als Client-SMTP-Übermittlung oder SMTP-Authentifizierung) ist für POP3-und IMAP4-Clients zum Senden von e-Mails erforderlich.|
 |EWS-Konnektivität mit Postfach|Deaktiviert|Deaktiviert||
 |[PowerShell-Konnektivität](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Deaktiviert|Deaktiviert|Verfügbar für Postfachbenutzer oder e-Mail-Benutzer (Benutzerobjekte, die vom Cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) zurückgegeben werden).|
-|Verwenden von [Spoofing Intelligence](learn-about-spoof-intelligence.md) zum Whitelisting von Absendern, wann immer möglich|Ja|Ja||
+|Verwenden von [Spoof Intelligence](learn-about-spoof-intelligence.md) zum Hinzufügen von Absendern zu ihrer Zulassungsliste|Ja|Ja||
 |[Verzeichnisbasierte Edge-Blockierung (Blockierung)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiviert|Aktiviert|Domain-Typ = autorisierend|
 |[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiviert|Aktiviert||
 |
@@ -71,7 +71,7 @@ Um die Spamfilterung im Dienst für alle zu verbessern, sollten Sie falsch posit
 
 Erstellen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) oder benutzerdefinierte Filter, um Ihre geschäftlichen Anforderungen zu erfüllen.
 
-Wenn Sie eine neue Regel in die Produktion übernehmen, wählen Sie zunächst einen der Testmodi aus, um die Wirkung der Regeln zu überprüfen. Wenn Sie sicher sind, dass die Regel so funktioniert wie beabsichtigt, ändern Sie den Regelmodus in **Erzwingen**.
+When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
 
 Beim Bereitstellen neuer Regeln sollten Sie in Erwägung ziehen, als zusätzliche Aktion **Schadensbericht generieren** hinzuzufügen, um die betreffende Regel zu überwachen.
 

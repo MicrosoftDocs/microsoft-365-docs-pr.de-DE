@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die e-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungs Benachrichtigungen verwendet wird.
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401798"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817029"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
@@ -47,9 +47,9 @@ Ihre Rechnung oder Rechnung enthält drei Adressen:
 
 - **Rechnungsadresse** Dies ist die Adresse Ihrer zuständigen Rechnungsabteilung und meist mit der **Auftraggeberadresse** identisch.
 
-- **Dienstnutzungsadresse** Dies ist die Adresse, unter welcher der Dienst genutzt wird. Normalerweise ist diese Adresse mit der **Auftraggeberadresse** identisch. Wenn Ihre Organisation Remotebenutzer oder mehrere Niederlassungen hat, verwenden Sie die Adresse, an der sich die Mehrheit der Benutzer befindet.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie eine oder mehrere Adressen ändern. Sie können auch eine alternative E-Mail-Adresse zum Empfang von Rechnungsbenachrichtigungen angeben, und die alternative E-Mail-Adresse für andere Administratoren ändern.
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ Wenn Sie Office 365 betrieben von 21Vianet in China verwenden, finden Sie weiter
 
 Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an die Microsoft-e-Mail-Adresse und die Alternative e-Mail-Adresse jedes globalen und abrechnungsadministrators in Ihrer Organisation gesendet. Jeder Administrator kann seine eigene alternative E-Mail-Adresse durch Aktualisieren seiner Profilinformationen ändern.
   
-1. Melden Sie sich bei Microsoft 365 mit ihrem geschäftlichen oder Schulkonto als globaler Administrator an. [Hier erfahren Sie, wie Sie sich anmelden](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich bei Microsoft 365 mit ihrem geschäftlichen oder Schulkonto als globaler Administrator an. [Hier erfahren Sie, wie Sie sich anmelden](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Wählen Sie das **Benutzersymbol**aus, und wählen Sie dann **mein Konto**aus.
   

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617242"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702536"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
@@ -73,13 +73,15 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 - Alle URLs, die Sie in der Liste "nicht umschreiben" angeben, werden von der Überprüfung der ATP-sichere Links für die von Ihnen angegebenen Empfänger ausgeschlossen.
 
+- Sie sollten häufig verwendete interne URLs zur Liste "nicht umschreiben" hinzufügen, um die Benutzerfreundlichkeit zu verbessern. Wenn Sie beispielsweise lokale Dienste wie Skype for Business oder SharePoint haben, können Sie Ihre URLs zur Liste hinzufügen, um Sie von der Überprüfung auszuschließen.
+
 - Wenn Sie bereits über eine Liste von URLs in Ihrer Liste "nicht umschreiben" verfügen, stellen Sie sicher, dass Sie diese Liste überprüfen und je nach Bedarf Platzhalter hinzufügen. Wenn Ihre vorhandene Liste beispielsweise einen Eintrag wie enthält und Sie untergeordnete `https://contoso.com/a` Pfade wie `https://contoso.com/a/b` in Ihrer Richtlinie einschließen möchten, fügen Sie Ihrem Eintrag ein Platzhalterzeichen hinzu, damit es aussieht `https://contoso.com/a/*` .
 
-- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalter Sternchen ( \* ) einschließen. Platzhalterzeichen ( \* ) werden verwendet, um explizit Präfixe oder Unterdomänen einzuschließen. Der Eintrag `contoso.com` ist nicht identisch `*.contoso.com/*` mit, da `*.contoso.com/*` es den Völkern erlaubt, Unterdomänen und Pfade in der angegebenen Domäne zu besuchen.
+- Wenn Sie eine Liste "nicht umschreiben" für eine Richtlinie für ATP-sichere Links angeben, können Sie bis zu drei Platzhalterzeichen ( \* ) einschließen. Platzhalter enthalten explizit Präfixe oder Unterdomänen. Beispielsweise ist der Eintrag `contoso.com` nicht identisch `*.contoso.com/*` mit, da `*.contoso.com/*` es Benutzern ermöglicht, Unterdomänen und Pfade in der angegebenen Domäne zu besuchen.
 
 In der folgenden Tabelle sind Beispiele aufgeführt, was Sie eingeben können und welche Auswirkungen diese Einträge haben.
 
-|**Beispieleintrag**|**Funktionsweise**|
+|Beispieleintrag|Funktionsweise|
 |:-----|:-----|
 |`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website wie, `https://contoso.com` aber keine Unterdomänen oder Pfade.|
 |`*.contoso.com/*`|Ermöglicht Empfängern das Aufrufen einer Domäne, Unterdomänen und Pfaden, beispielsweise `https://www.contoso.com` ,,, `https://www.contoso.com` `https://maps.contoso.com` oder `https://www.contoso.com/a` . <br/><br/> Dieser Eintrag ist grundsätzlich besser als `*contoso.com*` , da er potenziell betrügerische Websites wie oder nicht enthält. `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
