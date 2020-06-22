@@ -33,7 +33,7 @@
         - name: Bereitstellen von Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: App-Schulung für alle
-          href: 'https://support.office.com/office-training-center'
+          href: 'https://support.microsoft.com/training'
         - name: Welches Abonnement habe ich?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassen der Anmeldeseite
@@ -93,6 +93,8 @@
               href: manage/assign-licenses-to-users.md
             - name: Zuweisen von Administratorrollen
               href: add-users/assign-admin-roles.md
+            - name: Gastbenutzer
+              href: add-users/about-guest-users.md
             - name: Hinzufügen von Gastbenutzern zu einer Microsoft 365-Gruppe
               href: create-groups/manage-guest-access-in-groups.md
             - name: Entfernen von Lizenzen von Benutzern
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: Erstellen eines freigegebenen Postfachs
               href: email/create-a-shared-mailbox.md
-            - name: Einrichten eines freigegebenen Postfachs
+            - name: Konfigurieren der Einstellungen für das freigegebene Postfach
               href: email/configure-a-shared-mailbox.md
             - name: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
           href: manage/set-password-expiration-policy.md
         - name: Anpassen des App-Startfelds
           href: manage/customize-the-app-launcher.md
+        - name: Aktualisieren Sie Benutzer auf die neuesten Apps
+          href: setup/upgrade-users-to-latest-office-client.md
         - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
           href: manage/centralized-deployment-of-add-ins.md
         - name: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
@@ -320,11 +324,11 @@
         - name: Kalender für Gastbenutzer freigeben
           href: manage/share-calendars-with-external-users.md
         - name: Erstellen Sie ein Team mit Gastbenutzern
-          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: Planen Sie eine Teams-Besprechung mit Gästen
-          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: Planen Sie eine Teams-Besprechung mit Gastbenutzern
+          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
         - name: Nehmen Sie an einer Teams-Besprechung mit Gästen teil
-          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: Troubleshooting
       href: 'https://docs.microsoft.com/office/troubleshoot/'
     - name: 'wenden Sie sich an den Support,'
