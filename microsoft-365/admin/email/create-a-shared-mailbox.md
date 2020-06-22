@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Erstellen Sie ein freigegebenes Postfach, damit mehrere Benutzer in Ihrem Unternehmen die Verantwortung für das Lesen und Beantworten von E-Mails teilen, die an eine Adresse gesendet wurden.
-ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432289"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780265"
 ---
 # <a name="create-a-shared-mailbox"></a>Erstellen eines freigegebenen Postfachs 
 
@@ -138,15 +138,15 @@ Die automatische Zuordnung wird für das Postfach des Benutzers und nicht für d
 
 Weitere Informationen zu in Outlook freigegebenen Postfächern finden Sie unter:
 
-- <a href="https://support.office.com/article/d94a8e9e-21f1-4240-808b-de9c9c088afd.aspx" target="_blank">Öffnen und Verwenden eines geteilten Postfachs in Outlook</a>
+- <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">Öffnen und Verwenden eines geteilten Postfachs in Outlook</a>
 
-- <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook im Web</a>
+- <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook im Web</a>
 
-- <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines geteilten Postfachs zu Outlook Mobile</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines geteilten Postfachs zu Outlook Mobile</a>
 
-- <a href="https://support.office.com/article/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2.aspx" target="_blank">Öffnen eines freigegebenen Ordners oder Postfachs in Outlook für Mac</a>
+- <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Öffnen eines freigegebenen Ordners oder Postfachs in Outlook für Mac</a>
 
-- <a href="https://support.office.com/article/b0963400-2a51-4c64-afc7-b816d737d164.aspx" target="_blank">Hinzufügen von Regeln zu einem freigegebenen Postfach</a>
+- <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Hinzufügen von Regeln zu einem freigegebenen Postfach</a>
 
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Verwenden eines geteilten Postfachs auf einem mobilen Gerät (Smartphone oder Tablet)
@@ -154,11 +154,11 @@ Weitere Informationen zu in Outlook freigegebenen Postfächern finden Sie unter:
 Sie können auf ein geteiltes Postfach auf einem mobilen Gerät auf zweierlei Arten zuzugreifen:
 - Fügen Sie das freigegebene Postfach in der <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook für iOS-App</a> oder der <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook for Android Mobile-App</a> hinzu. 
     
-    Die entsprechenden Anleitungen finden Sie unter <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile</a>.
+    Die entsprechenden Anleitungen finden Sie unter <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile</a>.
 
 - Öffnen Sie Ihren Browser, melden Sie sich an und wechseln Sie dann zu Outlook im Web. Von Outlook im Web aus können Sie auf das freigegebene Postfach zugreifen.
 
-    Die entsprechenden Anleitungen finden Sie unter <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook im Web</a>.
+    Die entsprechenden Anleitungen finden Sie unter <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Hinzufügen eines freigegebenen Postfachs zu Outlook im Web</a>.
 
 ## <a name="use-the-shared-calendar"></a>Verwenden des geteilten Kalenders
 

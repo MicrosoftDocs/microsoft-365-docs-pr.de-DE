@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a43011a1d81c014526b1dd9178d051162e96acd
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 16502ba54268e708d7c420a1329b1f2683726198
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065960"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773736"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Office of the Superintendent of Financial Institutions (OSFI) in Kanada
 
@@ -69,8 +69,7 @@ Ja, aber nur, wenn es sich bei der Outsourcing-Vereinbarung um ein wesentliches 
 
 ## <a name="resources"></a>Ressourcen
 
-- [Microsoft und kanadische Datenschutzgesetze](https://aka.ms/CanadianPrivacyLaws-Compliance)
-- [Microsoft Financial Services Compliance-Programm](https://aka.ms/FSCP-Print)
+- [Microsoft Compliance-Programm für Finanzdienstleiter](https://aka.ms/FSCP-Print)
 - [Microsoft Clouddienste für Unternehmen und Finanzdienstleistungen](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Finanzdienstleister-Compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risikobewertungstool](https://aka.ms/FFIEC-CSDT)

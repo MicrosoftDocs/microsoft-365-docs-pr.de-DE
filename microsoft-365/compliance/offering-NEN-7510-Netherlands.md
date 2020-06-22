@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 85c629c12ec1a9fccd8c8a3bd6b1e9e8b63ded39
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 572e41368c7046f0ad9fd8c68c7f26e4aaad93ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066052"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800050"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -29,7 +29,7 @@ Organisationen in den Niederlanden, die Gesundheitsdaten von Patienten verarbeit
 
 ## <a name="microsoft-and-nen-75102011"></a>Microsoft und NEN 7510:2011
 
-Microsoft hat seine aktuellen Zertifizierungen und Erklärungen analysiert und einen [NEN 7510-Abdeckungsbericht](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf) erstellt und auf der Service Trust Platform bereitgestellt. In diesem Bericht werden die Zertifizierungen und Erklärungen den NEN 7510-Kontrollen zugeordnet, für die Microsoft als Clouddienstanbieter verantwortlich ist. Anhand dieses Dokuments können Kunden ermitteln, welche zusätzlichen Kontrollen sie implementieren müssen, um sicherzustellen, dass ihre Verwendung von Microsoft-Clouddiensten für die Speicherung oder Verarbeitung von Patientendaten die Anforderungen von NEN 7510 erfüllt.
+Microsoft hat seine aktuellen Zertifizierungen und Erklärungen analysiert und einen [NEN 7510-Abdeckungsbericht](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=3285c45c-921c-49ad-b881-be43e0b70490&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides) erstellt und auf der Service Trust Platform bereitgestellt. In diesem Bericht werden die Zertifizierungen und Erklärungen den NEN 7510-Kontrollen zugeordnet, für die Microsoft als Clouddienstanbieter verantwortlich ist. Anhand dieses Dokuments können Kunden ermitteln, welche zusätzlichen Kontrollen sie implementieren müssen, um sicherzustellen, dass ihre Verwendung von Microsoft-Clouddiensten für die Speicherung oder Verarbeitung von Patientendaten die Anforderungen von NEN 7510 erfüllt.
 
 Erfahren Sie, wie Sie Ihre NEN 7510-Implementierung mithilfe der Azure Security and Compliance Blueprints beschleunigen können: [Benutzerleitfaden zur NEN 7510:2011-Standardabdeckung durch die Microsoft Cloud (Azure und Office 365) herunterladen](https://aka.ms/Azure-NEN7510-2011)
 

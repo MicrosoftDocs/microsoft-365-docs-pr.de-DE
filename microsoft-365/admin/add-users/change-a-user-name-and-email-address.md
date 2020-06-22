@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432087"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780625"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -38,7 +38,7 @@ Sehen Sie sich ein kurzes Video zum Ändern der E-Mail-Adresse eines Benutzers a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="change-a-users-email-address"></a>Ändern der E-Mail-Adresse eines Benutzers
 
@@ -93,7 +93,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -103,7 +103,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
  
   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Office 365 benötigt wird.
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
@@ -121,7 +121,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -131,7 +131,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
  
   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Office 365 benötigt wird.
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
@@ -149,7 +149,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -159,7 +159,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
  
   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Office 365 benötigt wird.
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
@@ -181,7 +181,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
     Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
-Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
     Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
-Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
     Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
-Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“
 
-Wenn die Fehlermeldung "**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den Support an. Er wird eine vollständige Synchronisierung für Sie durchführen.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>„Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal“
 
@@ -226,15 +226,15 @@ Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werd
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Was mit alten E-Mail-Adressen zu tun ist
 
-Die vorherige primäre E-Mail-Adresse einer Person wird als zusätzliche E-Mail-Adresse beibehalten. **Wir empfehlen dringend, dass Sie die alte E-Mail-Adresse nicht entfernen.**
+A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-Einige Personen werden wahrscheinlich weiterhin E-Mails an die alte E-Mail-Adresse der Person senden, und ein Löschen dieser Adresse kann zu NDR-Fehlern führen. Microsoft leitet die E-Mails automatisch an die neue Adresse weiter. Außerdem: Verwenden Sie keine alten SMTP-E-Mail-Adressen, und wenden Sie sie nicht auf neue Konten an. Dies kann ebenfalls zu NDR-Fehlern oder zur Zustellung an ein nicht vorgesehenes Postfach führen.
+Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Wie ist vorzugehen, wenn das Offline-Adressbuch des Benutzers nicht mit der globalen Adressliste synchronisiert wird?
 
-Wenn ein Benutzer Exchange Online verwendet oder sein Konto mit der lokalen Exchange-Umgebung Ihrer Organisation verknüpft ist, wird bei Ihrem Versuch, einen Benutzernamen und die zugehörige E-Mail-Adresse zu ändern, möglicherweise die folgende Fehlermeldung angezeigt: "Dieser Benutzer ist mit Ihrem lokalen Active Directory synchronisiert. Bestimmte Details können nur in Ihrem lokalen Active Directory bearbeitet werden."
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-Der Grund dafür ist die Microsoft Online Email Routing Address (MOERA). Die MOERA wird aus dem Attribut " _userPrincipalName_" der Person in Active Directory erstellt und dem Cloudkonto während der Erstsynchronisierung automatisch zugewiesen. Sobald eine MOERA erstellt wurde, kann sie in Office 365 nicht geändert oder entfernt werden. Sie können den Benutzernamen zwar anschließend in Active Directory ändern. Weil aber die MOERA unverändert bleibt, können Probleme auftreten, wenn Sie den gerade geänderten Namen in der globalen Adressliste anzeigen. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 Um dies zu beheben, melden Sie sich beim [Azure Active Directory-Modul für PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) mit Ihren Administratoranmeldeinformationen für Microsoft 365 an. Verwenden Sie die folgende Syntax: 
   

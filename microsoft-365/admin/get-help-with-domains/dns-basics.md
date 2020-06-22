@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: 9e86aed070023963635319cdd9fdb6a8ccca4c23
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a3a03c408d480b5d4678fde25c8830e063b1310
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399968"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780181"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -35,7 +35,7 @@ ms.locfileid: "44399968"
   
 ::: moniker range="o365-worldwide"
 
-Domänennamen wie „contoso.com“ werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen kann Ihnen helfen, Domänen zu verwalten.
+Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -43,7 +43,7 @@ Domänennamen wie „contoso.com“ werden über ein weltweites System aus Domä
 
 ::: moniker range="o365-germany"
 
-Domänennamen wie "contoso.com" werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen kann Ihnen helfen, Domänen in Office 365 zu verwalten.
+Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains in Office 365.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -57,7 +57,7 @@ Domänennamen wie "contoso.com" werden über ein weltweites System aus Domänenr
 
 ## <a name="what-are-domain-names"></a>Was sind Domänennamen?
 
-Domänennamen werden in URLs und E-Mail-Adressen verwendet und weisen unterschiedliche Ebenen auf. So ist mail.contoso.com beispielsweise ein Domänenname mit den folgenden drei Ebenen:
+Domain names are used in URLs and email addresses, and they have different levels. For example, mail.contoso.com is a domain name with the following three levels:
   
 - **.com** ist die Domäne auf oberster Ebene 
     
@@ -65,56 +65,56 @@ Domänennamen werden in URLs und E-Mail-Adressen verwendet und weisen unterschie
     
 - **mail** ist die Domäne auf dritter Ebene 
     
-Warum wird eine Domäne auf dritter Ebene verwendet? Möglicherweise möchten Sie für die Marketingabteilung oder einen Blog unterschiedliche Domänennamen verwenden, z. B. blog.contoso.com. Normalerweise fügen Sie eine Domäne auf zweiter Ebene, beispielsweise "contoso.com", für die Verwendung mit Office 365 hinzu, Sie können auf Wunsch aber auch Domänen auf dritter Ebene verwenden.
+Why use a third-level domain? You might want to have different domain names for marketing or a blog. For example, blog.contoso.com. You typically add a second-level domain, like contoso.com, to use with Office 365 but you can also use third-level domains if you like.
   
 Weitere Informationen zu den von Domänen gebotenen Möglichkeiten beim jeweiligen Angebotstyp finden Sie unter [Office 365-Dienstbeschreibung für Domänen](https://go.microsoft.com/fwlink/?LinkId=402693).
   
 ## <a name="understand-dns-record-types"></a>Grundlegendes zu DNS-Eintragstypen
 
-DNS-Einträge, die auf einem DNS-Host für Ihre Domäne gespeichert sind, werden zum Lenken des Datenverkehrs für Ihre Domäne verwendet. In der folgenden Tabelle sind häufig verwendete DNS-Einträge und deren Verwendung bei Office 365 beschrieben.
+DNS records stored at a DNS host for your domain are used to direct traffic for your domain. The following table describes frequently used DNS records and how they're used with Office 365.
   
 |**NS-Eintrag (Namenservereintrag)**|**Gibt die Namenserver an, die als "autoritative Namenserver" für eine Domäne verwendet werden. Wenn Sie die Namenserver für Ihre Domäne ändern, ändern Sie, wo Ihre DNS-Einträge verwaltet werden und wo das DNS-System nach Informationen zu Mailservern usw. sucht. Office 365 verfügt über eigene Namenserver. Sie können aber auch weiterhin die Namenserver verwenden, die bereits für Ihre Domäne eingerichtet sind.**|
 |:-----|:-----|
 |A-Eintrag (Adresseintrag)  <br/> |Ordnet einem Domänennamen eine IP-Adresse zu.  <br/> |
-|CNAME-Eintrag (Alias oder kanonischer Name)  <br/> |Leitet im DNS-System eine Domäne auf eine um. Wenn ein Namenserver nach einer Domäne sucht und einen CNAME-Eintrag findet, ersetzt er den ersten Domänennamen durch den CNAME und sucht dann nach einem neuen Namen.  <br/> |
-|MX-Eintrag (Mail-Exchanger)  <br/> |Verweist auf den Server, an den E-Mails geleitet werden sollen. Der Eintrag enthält auch ein Prioritätsfeld, sodass E-Mail-Nachrichten in der Reihenfolge der Priorität an unterschiedliche Server geleitet werden können.  <br/> |
+|CNAME-Eintrag (Alias oder kanonischer Name)  <br/> |Redirects one domain to another in the DNS system. When a name server looks up a domain and finds that it has a CNAME record, the server replaces the first domain name with the CNAME, and then looks up the new name.  <br/> |
+|MX-Eintrag (Mail-Exchanger)  <br/> |Points to where your email should be sent. It also has a priority field so that you can send mail to different servers in a priority order.  <br/> |
 |SPF-Eintrag (Sender Policy Framework)  <br/> |Ein TXT-Eintrag hilft, E-Mail-Spoofing und -Phishing zu verhindern.  <br/> |
-|SRV-Eintrag ("Service", Diensteintrag)  <br/> |Wird von Skype for Business Online und Exchange Online zum Koordinieren des Informationsflusses zwischen Office 365-Diensten verwendet So sind die SRV-Einträge beispielsweise erforderlich, um den Anwesenheitsstatus in Outlook Web App anzuzeigen und um mit Skype for Business Online, Skype oder anderen Chatnachrichtensystemen Nachrichten mit Personen in anderen Unternehmen auszutauschen.  <br/> |
+|SRV-Eintrag ("Service", Diensteintrag)  <br/> |Used by Skype for Business Online and Exchange Online to coordinate the flow of information between Office 365 services. For example, the SRV records are required to see presence in Outlook Web App, and to use Skype for Business Online, Skype, or other instant messaging tools with people in other companies.  <br/> |
 |TTL ("Time-to-live", Gültigkeitsdauer)  <br/> |Die Zeitdauer, für die ein Namenserver einen DNS-Eintrag beibehält, bevor der Server nach einer aktualisierten Version sucht.  <br/> |
    
 ## <a name="how-does-dns-work"></a>Wie funktioniert das DNS?
 
-Zur Einrichtung Ihrer Domäne bei einem Clouddienst wie Office 365 gehört das Ändern oder Hinzufügen von [DNS-Einträgen](dns-basics.md) für Ihre Domäne. Diese Änderungen sind aufgrund der Art und Weise erforderlich, wie das Internet das DNS, das Domain Name System, und Domänennamen verwendet, um festzustellen, wohin Elemente wie E-Mails gesendet werden sollen oder wo Elemente wie Websites gefunden werden können. 
+Part of setting up your domain with a cloud service like Office 365 includes changing or adding [DNS records](dns-basics.md) for the domain. These changes are required because of how the Internet works with the DNS, Domain Name System, and domain names, to know where to send or find things, like email and websites. 
   
-Das Internet ist für die Verwendung des DNS eingerichtet, was dafür sorgt, dass wir vertraute Namen wie "contoso.com" verwenden können, um bestimmte Internetspeicherorte zu finden, die hinter den Kulissen eigentlich mit schwer zu merkenden Zahlen, den so genannten IP-Adressen (Internet Protocol) bezeichnet werden. IP-Adressen sehen ähnlich wie 70.42.241.42 aus, und wie Sie sehen, ist es wesentlich einfacher, einen Domänennamen für die Identifikation von Speicherorten wie E-Mail-Hosts und Websites zu verwenden.
+The Internet is set up to use DNS, or Domain Name System, which lets us use familiar names, like contoso.com, to locate specific Internet locations that are actually, under the covers, labeled with hard-to-remember numbers called IP (Internet Protocol) addresses. IP addresses look something like 70.42.241.42, so you can see it's much easier to use a domain name to identify locations like email hosts and websites.
   
-Kurz gesagt: Das DNS teilt dem Internet mit, wohin eine E-Mail (wie "jonas@contoso.com") gesendet werden soll oder wo sich eine Website (wie "www.contoso.com") befindet, die Ihren Domänennamen verwendet. Wenn Sie die korrekten Informationen in die korrekten DNS-Einträge für Ihre Domäne eingeben, leitet das DNS alles ordnungsgemäß weiter, d. h. Ihre E-Mails kommen in Office 365 und nicht irgendwo anders an.
+So that's the short answer: DNS records tell the Internet where to send email (like joe@contoso.com) or find websites (like www.contoso.com) that use your domain name. When you put the right information into the right DNS records for your domain, the DNS system routes everything correctly so your email, for example, arrives in Office 365 instead of somewhere else.
   
-Die DNS-Einträge einer Domäne können aber auch in anderer Weise hilfreich sein. So prüft Exchange beispielsweise einen DNS-Eintrag, der dafür sorgt, dass Outlook automatisch eine Verbindung zum richtigen Exchange-Server herstellt.
+A domain's DNS records can be helpful in other ways, too. For example, Exchange checks a DNS record that lets Outlook automatically set up a connection to the right Exchange server.
   
 ### <a name="dns-records-help-the-internet-send-email-to-the-right-place"></a>DNS-Einträge sorgen dafür, dass E-Mails über das Internet an den richtigen Ort gelangen
 
-Wie vorstehend bereits erwähnt, leitet das DNS den Datenverkehr durch das Internet, indem aussagekräftige Domänennamen den schwer zu merkenden IP-Adressen zugeordnet werden. Ein DNS-Eintrag, der so genannte MX-Eintrag, dient speziell zum Senden von E-Mails an den richtigen Host. 
+As you read above, DNS essentially directs traffic around the Internet, mapping friendly domain names to those hard-to-remember IP addresses. One DNS record, called the MX record, is specifically for sending email to the right host.
   
-DNS-Einträge sind wie eine Datenbank mit Informationen über Ihre Domäne. Die Einträge und deren Werte werden in einer sogenannten Zonendatei gespeichert, die eine Liste mit allen Einträgen für Ihre Domäne und deren Werte enthält. Domänenregistrierungsstellen und andere DNS-Hostinganbieter stellen auf ihren Websites eine Benutzeroberfläche bereit, auf der Sie die Einträge in der Zonendatei Ihrer Domäne bearbeiten können. Dies ist auch die Datei, in der Sie den MX-Eintrag für Ihre Domäne aktualisieren, damit E-Mail-Nachrichten an Office 365 gesendet werden.
+DNS records are like a database of information about your domain. The records and their values are kept in something called a zone file, which includes a list of each record for your domain and what its value is. Domain registrars and other DNS hosting companies provide a UI on their websites so you can edit the records in your domain's zone file. And that's where you update the MX record for your domain, to send email messages to Office 365.
   
- *Wenn Sie Ihr E-Mail-System auf Office 365 ändern, indem Sie im nächsten Schritt den MX-Eintrag der Domäne ändern, werden von nun an alle an diese Domäne gesendeten E-Mails an Office 365 gesendet.*  Wenn andere Personen Ihre Domäne für E-Mails verwenden, müssen Sie Office 365-Postfächer für jede dieser Person einrichten. 
+ *When you change your email to Office 365, by updating your domain's MX record in the next step, ALL email sent to that domain will start coming to Office 365.*  If other people use your domain for email, you must set up Office 365 mailboxes for each of those people. 
   
-Klingt kompliziert? Nun ja, möglicherweise, aber keine Sorge, wir führen Sie durch jeden Schritt, der bei der Einrichtung Ihrer Domäne in Office 365 erforderlich ist.
+Sound complicated? Well, it can be, but we walk you through each step in the Office 365 domain setup.
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>Über das DNS erfährt das Internet auch, wo nach Websites gesucht werden soll
 
-Wenn Sie eine Websiteadresse wie "www.contoso.com" eingeben, prüft das Internet zuerst auf einem der DNS-Server, ob es einen NS-Eintrag (Namenserver) für (in diesem Fall) "contoso.com" gibt. Der NS-Eintrag teilt dem Internet mit, wo nach der Zonendatei gesucht werden soll, in der sich alle anderen Werte für die DNS-Einträge dieser Domäne befinden. Es gibt eine Menge DNS-Server, die alle miteinander verbunden sind. Die Server arbeiten zusammen, um alle registrierten Domänennamen (die eindeutig sein müssen) und die Position der Zonendateien der Domänen nachzuverfolgen.
+When you type in a website address, for example, www.contoso.com, the Internet first checks with one of the DNS servers for something called a name server (NS) record for (in this case) contoso.com. The NS record tells the Internet where it should look for the zone file that has all the other DNS record values for that domain. There are lots of DNS servers, all connected to each other. The servers work together to keep track of all registered domain names, which have to be unique, and where the domain's zone files are.
   
 ::: moniker range="o365-worldwide"
 
-Einmal angenommen, der Wert des NS-Eintrags für "contoso.com" würde "godaddy.com" lauten. Damit weiß das Internet, dass es bei "GoDaddy.com" nach der Zonendatei suchen muss, in der sich alle anderen DNS-Einträge für "contoso.com" befinden. Zu diesen DNS-Einträgen gehören auch der MX-Eintrag, der angibt, wohin E-Mails für "contoso.com" gesendet werden sollen, sowie weitere Einträge. Wenn der MX-Eintrag einen Wert aufweist, der (allerdings in technischen Begriffen) besagt: "E-Mails an Office 365 senden", dann werden alle E-Mail-Nachrichten, die an E-Mail-Adressen bei "contoso.com" gerichtet sind (wie "joe@contoso.com") dorthin gesendet. Anschließend wird die E-Mail an diesen Speicherort übermittelt, sofern es dort ein Postfach mit dem Namen "joe" gibt.
+Let's say that the NS record for contoso.com says "godaddy.com." Now the Internet knows that GoDaddy.com is where to look for the zone file listing all the other DNS records for contoso.com. Those DNS records include the MX record that says where to send emails for contoso.com and other records. If the MX record has a value that says (but in technical terms) "send email to Office 365," that's where all the email messages sent to a contoso.com email address (like joe@contoso.com) will be sent. Then, as long as there's a mailbox called "joe" at that location, the email will be delivered.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Einmal angenommen, der Wert des NS-Eintrags für "contoso.com" würde "godaddy.com" lauten. Damit weiß das Internet, dass es bei "GoDaddy.com" nach der Zonendatei suchen muss, in der sich alle anderen DNS-Einträge für "contoso.com" befinden. Zu diesen DNS-Einträgen gehören auch der MX-Eintrag, der angibt, wohin E-Mails für "contoso.com" gesendet werden sollen, sowie weitere Einträge. Wenn der MX-Eintrag einen Wert aufweist, der (allerdings in technischen Begriffen) besagt: "E-Mails an Office 365 senden", dann werden alle E-Mail-Nachrichten, die an E-Mail-Adressen bei "contoso.com" gerichtet sind (wie "joe@contoso.com") dorthin gesendet. Anschließend wird die E-Mail an diesen Speicherort übermittelt, sofern es dort ein Postfach mit dem Namen "joe" gibt.
+Let's say that the NS record for contoso.com says "godaddy.com." Now the Internet knows that GoDaddy.com is where to look for the zone file listing all the other DNS records for contoso.com. Those DNS records include the MX record that says where to send emails for contoso.com and other records. If the MX record has a value that says (but in technical terms) "send email to Office 365," that's where all the email messages sent to a contoso.com email address (like joe@contoso.com) will be sent. Then, as long as there's a mailbox called "joe" at that location, the email will be delivered.
 
 ::: moniker-end
 
@@ -124,17 +124,17 @@ Einmal angenommen, der Wert des NS-Eintrags für "contoso.com" würde "hichina.c
 
 ::: moniker-end
 
-Die eigentlichen Werte, die Sie eingeben müssen, damit all das mit Office 365 funktioniert, werden in den Schritten zum Einrichten der Domäne aufgeführt, wenn Sie Ihre Domäne einrichten. Wenn Sie das Setup manuell vornehmen, kopieren Sie die Werte und fügen sie bei Ihrem DNS-Hostinganbieter in die zugehörigen DNS-Einträge (MX-Eintrag, CNAME-Einträge usw.) ein. Der DNS-Hostinganbieter kann, muss aber nicht zwangsläufig, Ihre Domänenregistrierungsstelle sein.
+The actual values that you must enter for all of this to work with Office 365 are listed for you when you're setting up your domain, in the domain setup steps. If you're doing the set up manually, you copy and paste the values into the correct DNS records (MX record, CNAME records, and so on) at your DNS host, which might be your domain registrar but doesn't have to be.
   
 ::: moniker range="o365-worldwide"
 
-Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer anderen Stelle und nicht bei Ihrer Domänenregistrierungsstelle? Nun, Sie können Ihre Domäne bei einer Domänenregistrierungsstelle wie GoDaddy registrieren, die DNS-Einträge werden aber möglicherweise von einer anderen Stelle verwaltet, wie einem anderen DNS-Hostinganbieter oder einem Webhostingunternehmen. Diese Informationen sind in den NS-Einträgen für Ihre Domäne gespeichert, daher wissen alle DNS-Server, wo sie danach suchen müssen.
+Why might your domain's zone file be somewhere besides at your domain registrar? Well, you might register your domain name at a domain registrar like GoDaddy, but your DNS records might be managed somewhere else, at a separate DNS hosting company or a web hosting company. The NS records for your domain store that information so all the DNS servers know where to look.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer anderen Stelle und nicht bei Ihrer Domänenregistrierungsstelle? Nun, Sie können Ihre Domäne bei einer Domänenregistrierungsstelle wie GoDaddy registrieren, die DNS-Einträge werden aber möglicherweise von einer anderen Stelle verwaltet, wie einem anderen DNS-Hostinganbieter oder einem Webhostingunternehmen. Diese Informationen sind in den NS-Einträgen für Ihre Domäne gespeichert, daher wissen alle DNS-Server, wo sie danach suchen müssen.
+Why might your domain's zone file be somewhere besides at your domain registrar? Well, you might register your domain name at a domain registrar like GoDaddy, but your DNS records might be managed somewhere else, at a separate DNS hosting company or a web hosting company. The NS records for your domain store that information so all the DNS servers know where to look.
 
 ::: moniker-end
 
@@ -152,14 +152,14 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ## <a name="why-add-a-domain-in-office-365"></a>Warum muss ich in Office 365 eine Domäne hinzufügen?
 
 
-Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
+Adding a custom domain, like fourthcoffee.com, to Office 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Office 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Office 365 for email. 
   
 > [!NOTE]
-> Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
+- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Office 365) could be joe@contoso.com. 
     
 - **Website:** Wenn Sie über ein Microsoft 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
@@ -171,14 +171,14 @@ Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen W
 ## <a name="why-add-a-domain-in-office-365"></a>Warum muss ich in Office 365 eine Domäne hinzufügen?
 
 
-Indem Sie einen benutzerdefinierten Domänennamen, z. B. fourthcoffee.com zu Office 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Office 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Office 365 für E-Mail planen. 
+Adding a custom domain, like fourthcoffee.com, to Office 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Office 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Office 365 for email. 
   
 > [!NOTE]
-> Wenn Sie nur Office 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Wenn Sie nur Office 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Office 365 verwenden) "joe@contoso.com" lauten. 
+- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Office 365) could be joe@contoso.com. 
     
 - **Website:** Wenn Sie über ein Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
@@ -188,9 +188,9 @@ Sie können Ihren Domänennamen in Office 365 mit Ihrer E-Mail-, öffentlichen W
 
 ## <a name="the-dns-records-required-for-office-365"></a>Die für Office 365 erforderlichen DNS-Einträge
 
-In Office 365 werden mehrere DNS-Einträge benötigt, damit der Dienst mit Ihrer Domäne zusammenarbeitet. Neben dem MX-Eintrag für Ihre Domäne, der benötigt wird, damit E-Mail-Nachrichten an Office 365 gesendet werden, gibt es weitere Einträge, die dafür sorgen, dass Outlook automatisch die Verbindung zu dem richtigen Exchange-Server aufnimmt, dass Sofortnachrichten ordnungsgemäß eingerichtet werden und dass Spam-E-Mails abgewehrt werden.
+There are a number of DNS records required for Office 365 to work with your domain. In addition to setting up your domain's MX record so email will be sent to Office 365, there are records to help with tasks like making sure Outlook can automatically connect to the right Exchange server, setting up instant messaging, and helping to prevent spam email.
   
-Hier [finden Sie eine Liste mit Werten](information-for-dns-records.md) zum Einrichten Ihrer Domäne. Sie sind direkt im Microsoft 365 Admin Center enthalten. 
+You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
   
 Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Office 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
   

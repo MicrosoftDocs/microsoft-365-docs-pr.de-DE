@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c02e27ccf6b4c1a1c03849d1f599acef43385668
-ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
+ms.openlocfilehash: da379da565f853561141888c4f275852f0044103
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278458"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800000"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards
 
@@ -59,8 +59,9 @@ Weitere Informationen über die Vorteile von ISO/IEC-27001 für Microsoft Cloud:
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Microsoft Stream
 - Microsoft-Bedrohungsexperten
+- Microsoft Translator
 
-## <a name="audits-reports-and-certificates"></a>Prüfungen, Berichte und Zertifikate
+## <a name="audits-reports-and-certificates"></a>Audits, Berichte und Zertifikate
 
 Prüfzyklus: Microsoft Cloud Services werden mindestens einmal jährlich anhand des Standards ISO 27001:2013 überprüft.
 

@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Erfahren Sie, wie Sie den Posteingang mit Relevanz mit dem Posteingang für alle oder bestimmte Benutzer Ihrer Organisation konfigurieren. '
-ms.openlocfilehash: 3d719208caf233ebcc4825ef04647bf06c68d93e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f56e85e79fcf17cde89ec3d6094ca757ccf0cc68
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398978"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779929"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurieren des Posteingangs mit Relevanz für jeden Benutzer in Ihrer Organisation
 
-  Wenn Sie dafür zuständig sind, die Funktion der E-Mail für JEDEN in einem Unternehmen zu konfigurieren, dann ist das genau der Artikel für Sie! Es wird erläutert, wie Sie die E-Mail-Funktion für Ihr Unternehmen anpassen oder deaktivieren und beantwortet [Häufig gestellte Fragen](#faq-for-focused-inbox).  <br/> Wenn Sie den Posteingang mit Relevanz für sich selbst deaktivieren möchten, lesen Sie [Deaktivieren des Posteingangs mit Relevanz](https://support.office.com/article/f714d94d-9e63-4217-9ccb-6cb2986aa1b2.aspx).  
+  Wenn Sie dafür zuständig sind, die Funktion der E-Mail für JEDEN in einem Unternehmen zu konfigurieren, dann ist das genau der Artikel für Sie! Es wird erläutert, wie Sie die E-Mail-Funktion für Ihr Unternehmen anpassen oder deaktivieren und beantwortet [Häufig gestellte Fragen](#faq-for-focused-inbox).  <br/> Wenn Sie den Posteingang mit Relevanz für sich selbst deaktivieren möchten, lesen Sie [Deaktivieren des Posteingangs mit Relevanz](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
    
-Wenn Sie sicher sein möchten, dass Ihre Benutzer geschäftsspezifische E-Mail-Nachrichten wie E-Mails von der Personalabteilung oder der Buchhaltung erhalten, können Sie den Posteingang mit Relevanz so konfigurieren, dass diese Nachrichten in der Ansicht "Relevant" angezeigt werden. Sie können außerdem steuern, ob den Benutzern in Ihrer Organisation der Posteingang mit Relevanz angezeigt wird.
+If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Aktivieren oder Deaktivieren von "Posteingang mit Relevanz" in Ihrer Organisation
 
@@ -39,11 +39,11 @@ Sie verwenden PowerShell, um den Posteingang mit Relevanz für alle Benutzer in 
   
  **So deaktivieren Sie den Posteingang mit Relevanz:**
   
-In dem folgenden PowerShell-Beispiel wird der Posteingang mit Relevanz in Ihrer Organisation auf **Aus** festgelegt. Dadurch wird die Verfügbarkeit der Funktion für Ihre Benutzer jedoch nicht blockiert. Auf Wunsch können sie den Posteingang mit Relevanz trotzdem wieder auf jedem ihrer Clients aktivieren.  
+The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
   
 1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Ihnen müssen Berechtigungen zugewiesen werden, bevor Sie diese Verfahren ausführen können. Informationen zu den benötigten Berechtigungen finden Sie unter dem Eintrag "Transportregeln" in [Berechtigungen für Empfängerrichtlinien und Compliance](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
     
 3. Führen Sie das Cmdlet **Get-OrganizationConfig** aus. 
     
@@ -73,23 +73,23 @@ Get-OrganizationConfig
 
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Was wird Benutzern angezeigt, nachdem der Posteingang mit Relevanz aktiviert wurde? 
 
-Der Posteingang mit Relevanz wird Benutzern erst nach dem Schließen und erneuten Starten von Outlook angezeigt. Beim Neustart von Outlook wird ein Tipp in der Outlook-Benutzeroberfläche angezeigt, der auf die Möglichkeit verweist, den neuen Posteingang mit Relevanz zu nutzen.
+Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
   
 ![Die Abbildung zeigt, wie der Posteingang mit Relevanz aussieht, wenn ein Benutzer Outlook im Web zum ersten Mal öffnet.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-Wenn Sie von "Clutter" zum Posteingang mit Relevanz wechseln, können sie entscheiden, ob sie ihn aktivieren ("Testen") oder das Feature schließen möchten. Wenn ein Benutzer über mehrere (unterstützte) Clients verfügt, kann er den Posteingang mit Relevanz für jeden Client einzeln aktivieren bzw. deaktivieren. Der Tipp sieht so aus:
+If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
   
 ![So sieht der Posteingang mit Relevanz aus, wenn er für Ihre Benutzer bereitgestellt wurde und Outlook erneut geöffnet wird.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-Wenn sich ein Benutzer zur Nutzung des Posteingangs mit Relevanz entscheidet, wird die Funktion "Clutter" automatisch deaktiviert. Der Ordner "Clutter" wird in einen Standardordner umgewandelt, sodass der Benutzer ihn umbenennen oder löschen kann.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Aktivieren oder Deaktivieren des Posteingangs mit Relevanz für bestimmte Benutzer
 
-In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Organisation Contoso auf **Aus** festgelegt. Dadurch wird die Verfügbarkeit der Funktion für ihn jedoch nicht blockiert. Auf Wunsch kann er den Posteingang mit Relevanz trotzdem wieder auf jedem seiner Clients aktivieren. 
+This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organization. However, it doesn't block the availability of the feature to him. If his wants, he can still re-enable Focused Inbox again on each of his clients. 
   
 1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Ihnen müssen Berechtigungen zugewiesen werden, bevor Sie diese Verfahren ausführen können. Informationen zu den benötigten Berechtigungen finden Sie unter dem Thema "Transportregeln" in "Berechtigungen für Empfängerrichtlinien und Compliance".
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
     
 3. Führen Sie das cmdlet **Get-FocusedInbox** aus, z. B.: 
     
@@ -129,7 +129,7 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
 1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Ihnen müssen Berechtigungen zugewiesen werden, bevor Sie diese Verfahren ausführen können. Informationen zu den benötigten Berechtigungen finden Sie unter dem Eintrag "Transportregeln" in [Berechtigungen für Empfängerrichtlinien und Compliance](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
 
 3. Führen Sie den folgenden Befehl aus, um zuzulassen, dass alle Nachrichten beispielsweise von der Lohnbuchhaltung an den Posteingang mit Relevanz zugestellt werden.
     
@@ -147,7 +147,7 @@ Sie können die Kopfzeilen der E-Mail-Nachrichten überprüfen, um zu sehen, ob 
  
 ## <a name="turn-onoff-clutter"></a>Aktivieren/Deaktivieren von "Clutter"
  
-Wir haben Berichte erhalten, dass "Clutter" bei einigen Benutzern plötzlich nicht mehr funktionierte. Wenn das geschieht, können Sie "Clutter" für bestimmte Benutzer erneut aktivieren. Weitere Informationen finden Sie unter [Konfigurieren von "Clutter" für Ihre Organisation](../email/configure-clutter.md).
+We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
  
 ## <a name="faq-for-focused-inbox"></a>Häufig gestellte Fragen (FAQ) zum Posteingang mit Relevanz
 
@@ -155,7 +155,7 @@ Dies sind Antworten auf häufig gestellte Fragen zum Posteingang mit Relevanz.
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>Kann ich steuern, wie "Posteingang mit Relevanz" in meiner Organisation implementiert wird?
 
-Ja. Sie können den Posteingang mit Relevanz für die gesamte Organisation aktivieren oder deaktivieren, oder Sie können das Feature für bestimmte Benutzer aktivieren oder deaktivieren. Siehe weiter oben.
+Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>Steht die Funktion "Posteingang mit Relevanz" NUR auf Office 2016-Clients zur Verfügung?
 
@@ -167,17 +167,17 @@ Nachdem Sie den Posteingang mit Relevanz aktiviert oder deaktiviert haben, werde
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>Was geschieht mit "Clutter", nachdem ich den Posteingang mit Relevanz aktiviert habe?
 
-Nach dem Wechsel werden keine weniger handlungsrelevante E-Mails mehr im Ordner "Clutter" abgelegt. Stattdessen werden die E-Mails auf die Registerkarten "Relevant" und "Sonstige" im Posteingang aufgeteilt. Der gleiche Algorithmus, mit dem Elemente in den Ordner "Clutter" verschoben wurden, bildet nun die Grundlage für den Posteingang mit Relevanz. Das bedeutet, dass alle E-Mails, für die das Verschieben in "Clutter" festgelegt wurde, jetzt in "Sonstige" verschoben werden. Alle Nachrichten, die sich bereits im Ordner "Clutter" befinden, bleiben dort, bis sie gelöscht oder verschoben werden.
+After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
   
 Lesen Sie dazu diesen Beitrag von [Tony Redmond](https://www.petri.com/author/tony-redmond), Microsoft MVP: [How the Focused Inbox Replaces Clutter Inside Office 365](https://www.petri.com/focused-inbox-office-365) (So ersetzt der Posteingang mit Relevanz den Ordner "Clutter" in Office 365).
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>Kann "Clutter" für Benutzer aktiviert bleiben? Was empfiehlt Microsoft hinsichtlich der Verwendung von Clutter gegenüber dem Posteingang mit Relevanz?
 
-Ja, Sie können "Clutter" für Benutzer aktiviert lassen und den Posteingang mit Relevanz deaktivieren. Allerdings soll "Clutter" im Lauf der Zeit vollständig durch den Posteingang mit Relevanz ersetzt werden. Daher empfiehlt Microsoft, jetzt auf den Posteingang mit Relevanz umzustellen. Weitere Informationen zur Verwendung von "Clutter" mit Exchange Online finden Sie in diesem Blogbeitrag: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448) (Aktualisieren des Posteingangs mit Relevanz und unsere Pläne für "Clutter").
+Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>Sollte "Clutter" für Endbenutzer deaktiviert werden, wenn wir die Umstellung aller Benutzer auf den Posteingang mit Relevanz planen?
 
-Nein. "Clutter" kann für ein Postfach explizit durch Ausführen des Cmdlets "Set-Clutter" deaktiviert werden. Wenn dies erfolgt, werden dem Postfachbesitzer Nachrichten, die zuvor in den Ordner "Clutter" umgeleitet wurden, wieder im Posteingang angezeigt, sodass er diese Nachrichten verarbeiten muss, bis für seinen Client das Upgrade auf eine Version erfolgt, die den Posteingang mit Relevanz unterstützt. Es empfiehlt sich daher, den Ordner "Clutter" erst zu deaktivieren, wenn Clients mit Upgrade zur Verfügung stehen.
+No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>Warum gibt es zwei unterschiedliche Cmdlets für die Verwaltung von "Posteingang mit Relevanz"?
 
@@ -189,12 +189,12 @@ In Verbindung mit "Posteingang mit Relevanz" gibt es zwei Zustände.
     
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Wie kann Outlook entscheiden, ob die Benutzeroberfläche "Posteingang mit Relevanz" mit diesen beiden Zuständen angezeigt werden soll?
 
-Outlook entscheidet basierend auf dem Cmdlet mit dem neuesten Zeitstempel, welche Benutzeroberfläche angezeigt wird. Standardmäßig sind beide Zeitstempel "null", und in diesem Fall ist die Funktion aktiviert.
+Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>Warum gibt das Cmdlet Get-FocusedInbox "true" zurück, wenn ich "Posteingang mit Relevanz" in meiner Organisation deaktiviert habe?
 
-Es gibt zwei Cmdlets für die Steuerung von "Posteingang mit Relevanz". Wenn Sie Get-FocusedInbox für ein Postfach ausführen, wird der Zustand der Funktion auf Postfachebene zurückgegeben. Die Benutzeroberfläche in Outlook wird basierend darauf ausgewählt, welcher Zustand des jeweiligen Cmdlets zuletzt geändert wurde.
+There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Kann ich ein Skript ausführen, um zu sehen, wer den Posteingang mit Relevanz aktiviert hat?
 
-Nein, und dies ist beabsichtigt. Die Aktivierung des Posteingangs mit Relevanz ist eine clientseitige Einstellung. Deshalb kann Sie das Cmdlet lediglich informieren, wenn das Postfach des Benutzers für die Client-Oberfläche berechtigt ist. Es ist möglich, dass es in einigen Clients gleichzeitig aktiviert und in anderen deaktiviert ist, z. B. in der Outlook-App und Outlook Mobile aktiviert, doch in Outlook im Web deaktiviert.
+No, and this is by design. Focused Inbox enablement is a client side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
