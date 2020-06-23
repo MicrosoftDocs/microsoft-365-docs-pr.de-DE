@@ -30,26 +30,26 @@ Um [Microsoft-Sicherheitsbewertung](microsoft-secure-score-new.md) zu einem bess
 
 Wenn Sie mehr über die neuesten Änderungen wissen möchten, lesen Sie [Neuerungen in Microsoft-Sicherheitsbewertung](microsoft-secure-score-new.md#whats-new).
 
-## <a name="june-2020"></a>Juni 2020
+## <a name="june-2020"></a>Juni 2020
 
-### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Entfernen von Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection
+### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungsmaßnahme für Microsoft Defender Advanced Threat Protection entfernen
 
-* Aktivieren von Regeln für Angriffsflächen Reduzierung
+* Regeln zur Verringerung der Angriffsfläche aktivieren
 
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Hinzufügen von Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungsmaßnahmen für Microsoft Defender Advanced Threat Protection hinzufügen
 
-* Blockieren des Erstellens von untergeordneten Prozessen durch Adobe Reader
-* Verwenden von erweitertem Schutz gegen Ransomware
-* Verhindern, dass alle Office-Anwendungen untergeordnete Prozesse erstellen
-* Verhindern der Erstellung von ausführbaren Inhalten durch Office-Anwendungen
-* Blockieren von JavaScript oder VBScript beim Starten heruntergeladener ausführbarer Inhalte
-* Blockieren der Ausführung von potenziell verborgenen Skripts
-* Blockieren von ausführbaren Inhalten aus dem e-Mail-Client und Webmail
-* Blockieren der Office-Kommunikationsanwendung beim Erstellen von untergeordneten Prozessen
-* Blockieren von nicht vertrauenswürdigen und nicht signierten Prozessen, die von USB ausgeführt werden
-* Block Persistenz durch WMI-Ereignisabonnement
-* Verhindern, dass Office-Anwendungen Code in andere Prozesse einfügen
-* Verhindern der Ausführung von ausführbaren Dateien, es sei denn, Sie entsprechen einer Prävalenz, einem Alter oder einem vertrauenswürdigen Listen Kriterium
-* Blockieren von Prozess Kreationen, die von PSExec-und WMI-Befehlen stammen
-* Blockieren des Diebstahls von Anmeldeinformationen vom Windows Local Security Authority Subsystem (Lsass. exe)
-* Blockieren von Win32-API-Aufrufen aus Office-Makros
+* Adobe Reader am Erstellen von untergeordneten Prozessen hindern
+* Erweiterten Schutz vor Ransomware verwenden
+* Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern
+* Office-Anwendungen am Erstellen ausführbarer Inhalte hindern
+* JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern
+* Ausführung potenziell verborgener Skripts blockieren
+* Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
+* Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
+* Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren
+* Persistenz durch WMI-Ereignisabonnement blockieren
+* Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
+* Ausführbare Dateien an der Ausführung hindern, außer sie erfüllen ein Verbreitungs-, Alters- oder vertrauenswürdige Listen-Kriterium
+* Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren
+* Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren
+* Win32-API-Aufrufe von Office-Makros blockieren
