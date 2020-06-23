@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
-ms.openlocfilehash: dfc4c3c72748084ae5e9ebaadfd7616e8e081460
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401189"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818985"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
-
-## <a name="introduction"></a>Einführung
 
 Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Dann verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. Warum ein einheitliches Überwachungsprotokoll? Weil Sie so nach folgenden Arten von [Benutzer- und Administratoraktivitäten](#audited-activities) in Office 365 suchen können:
 
@@ -65,7 +64,7 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 
 - Benutzer- und Administratoraktivität für Vertraulichkeitsbezeichnungen für Websites, die SharePoint Online oder Microsoft Teams verwenden
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="requirements-to-search-the-audit-log"></a>Voraussetzungen für die Durchsuchung des Überwachungsprotokolls
 
 Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsprotokolls beginnen.
 
@@ -310,10 +309,10 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Benutzerverwaltungsaktivitäten](#user-administration-activities)|[Azure AD-Gruppenverwaltungsaktivitäten](#azure-ad-group-administration-activities)|[Anwendungsverwaltungsaktivitäten](#application-administration-activities)|
 |[Rollenverwaltungsaktivitäten](#role-administration-activities)|[Verzeichnisverwaltungsaktivitäten](#directory-administration-activities)|[eDiscovery-Aktivitäten](#ediscovery-activities)|
 |[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Yammer-Aktivitäten](#yammer-activities)|
-|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
-|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)
-|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|||
+|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Microsoft Teams Schichten-Aktivitäten](#microsoft-teams-shifts-activities)|
+|[Yammer-Aktivitäten](#yammer-activities)|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|
+|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|
+|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|
 ||||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
@@ -336,7 +335,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird.|
 |Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument auf eine Website hoch, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument weist eine Vertraulichkeitsbezeichnung mit höherer Priorität als die Vertraulichkeitsbezeichnung der Website auf. So wird beispielsweise ein Dokument, das als vertraulich bezeichnet wird, auf eine Website hochgeladen, die mit "Allgemein" bezeichnet ist. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf ein Dokument angewendete Vertraulichkeitsbezeichnung eine niedrigere Priorität hat als die auf die Website angewendete Vertraulichkeitsbezeichnung. So wird beispielsweise ein Dokument, das als Allgemein bezeichnet wird, auf eine Website hochgeladen, die mit Vertraulich bezeichnet ist. Weitere Informationen über die Priorität von Vertraulichkeitsbezeichnungen finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware in einer Datei erkannt|FileMalwareDetected|Der SharePoint-Virenschutz erkennt Schadsoftware in einer Datei.|
-|Auschecken einer Datei verworfen|FileCheckOutDiscarded|Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.|
+|Auschecken einer Datei verworfen|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Datei heruntergeladen|FileDownloaded|Der Benutzer lädt ein Dokument von einer Website herunter.|
 |Datei geändert|FileModified|Der Benutzer oder das Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments auf einer Website.|
 |(keine)|FileModifiedExtended|Dies bezieht sich auf die Aktivität "Datei geändert" (FileModified). Wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) eine Datei ständig ändert, wird ein FileModifiedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileModifiedExtended-Ereignissen dient dazu, die Anzahl von FileModified-Ereignissen zu verringern, die bei ständiger Änderung einer Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileModified-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileModified-Ereignis konzentrieren können.|
@@ -673,38 +672,11 @@ Inhaltssuche und mit eDiscovery zusammenhängende Aktivitäten, die im Security 
 Eine Liste und eine detaillierte Beschreibung der eDiscovery-Aktivitäten, die protokolliert werden, finden Sie unter [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Es dauert bis zu 30 Minuten, bis die Ereignisse, die aus den unter **eDiscovery-Aktivitäten** in der Dropdownliste **Aktivitäten** aufgeführten Aktivitäten resultieren, in den Suchergebnissen angezeigt werden. Im Gegensatz dazu dauert es bis zu 24 Stunden, bis die entsprechenden Ereignisse aus eDiscovery-Cmdlet-Aktivitäten in der Liste der Suchergebnisse angezeigt werden.
+> Es dauert bis zu 30 Minuten, bis die Ereignisse, die aus den unter **eDiscovery-Aktivitäten** und **Advanced eDiscovery-Aktivitäten** in der Dropdownliste **Aktivitäten** aufgeführten Aktivitäten resultieren, in den Suchergebnissen angezeigt werden. Im Gegensatz dazu dauert es bis zu 24 Stunden, bis die entsprechenden Ereignisse aus eDiscovery-Cmdlet-Aktivitäten in der Liste der Suchergebnisse angezeigt werden.
 
 ### <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery-Aktivitäten
 
-In der folgenden Tabelle sind Aktivitäten aufgeführt, die sich ergeben, wenn IT-Spezialisten und Juristen Aufgaben in Advanced eDiscovery in Microsoft 365 ausführen. Weitere Informationen finden Sie unter [Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365](overview-ediscovery-20.md).
-
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
-|:-----|:-----|:-----|
-|Daten zu einem anderen Prüfdateisatz hinzugefügt|AddWorkingSetQueryToWorkingSet|Der Benutzer hat Dokumente eines Prüfdateisatzes einem anderen hinzugefügt.|
-|Daten zu einem Prüfdateisatz hinzugefügt|AddQueryToWorkingSet|Der Benutzer hat die Suchergebnisse einer Inhaltssuche, die einem Advanced eDiscovery-Fall zugeordnet sind, einem Prüfdateisatz zugeordnet.|
-|Nicht von Microsoft 365 stammende Daten zu Prüfdateisatz hinzugefügt|AddNonOffice365DataToWorkingSet|Ein Benutzer hat nicht von Microsoft 365 stammende Daten zu einem Prüfdateisatz hinzugefügt.|
-|Wiederhergestellte Dokumente zu Prüfdateisatz hinzugefügt|AddRemediatedData|Der Benutzer lädt Dokumente hoch, bei denen Indizierungsfehler aufgetreten sind, die in einem Prüfdateisatz festgehalten worden sind.|
-|Daten im Prüfdateisatz analysiert|RunAlgo|Der Benutzer hat eine Analyse der Dokumente in einem Prüfdateisatz durchgeführt.|
-|Dokument im Prüfdateisatz kommentiert|AnnotateDocument|Ein Benutzer hat ein Dokument in einem Prüfdateisatz kommentiert. „Kommentieren“ umfasst auch das Bearbeiten/Redigieren des Dokuments.|
-|Ladesätze verglichen|LoadComparisonJob|Der Benutzer hat zwei verschiedene Ladesätze in einem Prüfdateisatz verglichen. Unter Ladesatz versteht man, dass Daten aus einer Inhaltssuche, die einem Fall zugeordnet sind, einem Prüfdateisatz hinzugefügt werden.|
-|Dokumente in PDF-Dateien konvertiert|BurnJob|Der Benutzer hat alle redigierten Dokumente in einem Prüfdateisatz in PDF-Dateien konvertiert.|
-|Prüfdateisatz erstellt|CreateWorkingSet|Der Benutzer hat einen Prüfdateisatz erstellt.|
-|Prüfdateisatzsuche erstellt|CreateWorkingSetSearch|Der Benutzer hat eine Suchabfrage erstellt, die die Dokumente in einem Prüfdateisatz durchsuchen.|
-|Tag erstellt|CreateTag|Ein Benutzer hat eine Tag-Gruppe in einem Prüfdateisatz erstellt. Eine Tag-Gruppe kann ein oder mehrere untergeordnete Tags enthalten. Diese Tags werden dann zum Taggen von Dokumenten im Prüfdateisatz verwendet.|
-|Prüfdateisatzsuche gelöscht|DeleteWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz gelöscht.|
-|Tag gelöscht|DeleteTag|Ein Benutzer hat ein Tag oder eine Tag-Gruppe in einem Prüfdateisatz gelöscht.|
-|Heruntergeladenes Dokument|DownloadDocument|Ein Benutzer hat ein Dokument aus einem Prüfdateisatz heruntergeladen.|
-|Tag bearbeitet|UpdateTag|Ein Benutzer hat ein Tag in einem Prüfdateisatz geändert.|
-|Dokumente aus einem Prüfdateisatz exportiert|ExportJob|Der Benutzer hat Dokumente aus einem Prüfdateisatz exportiert.|
-|Falleinstellungen geändert|UpdateCaseSettings|Der Benutzer hat die Einstellungen für einen Fall geändert. Die Falleinstellungen umfassen Fallinformationen, Zugriffsberechtigungen und Einstellungen, mit denen das Such- und Analyseverhalten gesteuert werden.|
-|Prüfdateisatzsuche geändert|UpdateWorkingSetSearch|Ein Benutzer hat eine Suchabfrage in einem Prüfdateisatz geändert.|
-|Vorschau einer Prüfdateisatzsuche angezeigt|PreviewWorkingSetSearch|Der Benutzer hat die Ergebnisse einer Suchabfrage in einem Prüfdateisatz in einer Vorschau angezeigt.|
-|Fehler in Dokumenten behoben|ErrorRemediationJob|Der Benutzer behebt Dateien mit Indizierungsfehlern.|
-|Dokument getaggt|TagFiles|Ein Benutzer hat ein Dokument in einem Prüfdateisatz mit Tags versehen.|
-|Ergebnisse einer Abfrage getaggt|TagJob|Ein Benutzer hat alle Dokumente getaggt, die den Kriterien einer Suchabfrage in einem Prüfdateisatz entsprechen.|
-|Dokument im Prüfdateisatz angezeigt|ViewDocument|Ein Benutzer hat ein Dokument in einem Prüfdateisatz angezeigt.|
-|||
+Sie können das Überwachungsprotokoll auch in Advanced eDiscovery nach Aktivitäten durchsuchen. Eine Beschreibung dieser Aktivitäten finden Sie unter „Advanced eDiscovery-Aktivitäten“ in [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### <a name="power-bi-activities"></a>Power BI-Aktivitäten
 
@@ -745,10 +717,10 @@ In der folgenden Tabelle sind die in Microsoft Teams von Benutzern und Administr
 |Connector hinzugefügt|ConnectorAdded|Ein Benutzer fügt einen Connector zu einem Kanal hinzu.|
 |Hinzugefügte Mitglieder|MemberAdded|Ein Teambesitzer fügt Mitglieder zu einem Team-, Kanal- oder Gruppenchat hinzu.|
 |Registerkarte hinzugefügt|TabAdded|Ein Benutzer fügt einem Kanal eine Registerkarte hinzu.|
-|Kanaleinstellung geändert|ChannelSettingChanged|Der Vorgang "ChannelSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>* Ändert den Namen eines Teamkanals (**Kanalname**). <br/><br/>* Ändert die Beschreibung eines Teamkanals (**Kanalbeschreibung**).|
-|Organisationseinstellung geändert|TeamsTenantSettingChanged|Der Vorgang "TeamsTenantSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator (über das Microsoft 365 Admin Center) ausgeführt werden. Beachten Sie, dass sich diese Aktivitäten auf die organisationsweiten Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administratoreinstellungen für Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>* Aktiviert bzw. deaktiviert Microsoft Teams für die Organisation (**Microsoft Teams**). <br/><br/>* Aktiviert bzw. deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation (**Skype for Business-Interoperabilität**). <br/><br/>" Aktiviert oder deaktiviert die Organigrammansicht in Microsoft Teams-Clients (Organigrammansicht**). <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen zu planen (**private Besprechung planen**) <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanalbesprechungen zu planen (Kanalbesprechungsplanung)**). <br/><br/>* Aktiviert oder deaktiviert Videoanrufe in Teambesprechungen (Video für Skype-Besprechungen**). <br/><br/>* Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-MeetUps für die Organisation (**Bildschirmfreigabe für Skype-Besprechungen**). <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (so genannte Giphys) zu Teamunterhaltungen hinzuzufügen (Animierte Bilder**). <br/><br/>* Ändert die Inhaltsbewertungseinstellung für die Organisation (**Inhaltsbewertung**). Die Inhaltsbewertung beschränkt, welche Arten animierter Bilder in Unterhaltungen angezeigt werden können. <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (so genannte benutzerdefinierte Memes) aus dem Internet zu Teamunterhaltungen hinzuzufügen (Anpassbare Bilder aus dem Internet**). <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (so genannte Sticker) zu Teamunterhaltungen hinzuzufügen (**Bearbeitbare Bilder**).<br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Bots in Microsoft Teams-Chats und -Kanälen zu verwenden (Organisationsweite Bots**). <br/><br/>* Aktiviert bestimmte Bots für Microsoft Teams. Davon ausgenommen ist der Teams-Hilfebot "T-Bot", der verfügbar ist, wenn Bots für die Organisation aktiviert sind (**Einzelne Bots**). <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten hinzuzufügen (**Erweiterungen oder Registerkarten**). <br/><br/>* Aktiviert oder deaktiviert das Querladen proprietärer Bots für Microsoft Teams (**Querladen von Bots**). <br/><br/>* Aktiviert oder deaktiviert die Möglichkeit für Benutzer, E-Mail-Nachrichten an einen Microsoft Teams-Kanal zu senden (**Kanal-E-Mail**).|
+|Kanaleinstellung geändert|ChannelSettingChanged|Der Vorgang "ChannelSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Ändert den Namen eines Teamkanals (**Kanalname**). <br/><br/>• Ändert die Beschreibung eines Teamkanals (**Kanalbeschreibung**).|
+|Organisationseinstellung geändert|TeamsTenantSettingChanged|Der Vorgang "TeamsTenantSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator (über das Microsoft 365 Admin Center) ausgeführt werden. Beachten Sie, dass sich diese Aktivitäten auf die organisationsweiten Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administratoreinstellungen für Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Aktiviert bzw. deaktiviert Microsoft Teams für die Organisation (**Microsoft Teams**). <br/><br/>• Aktiviert bzw. deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation (**Skype for Business Interoperability**). <br/><br/>• Aktiviert oder deaktiviert die Organigrammansicht in Microsoft Teams-Clients (Organigrammansicht **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen zu planen (** private Besprechung planen **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanalbesprechungen zu planen (Kanalbesprechungsplanung**).  <br/><br/>• Aktiviert oder deaktiviert Videoanrufe in Teambesprechungen (Video für Skype-Besprechungen **). <br/><br/>• Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-Meetups für die Organisation (** Bildschirmfreigabe für Skype-Besprechungen **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (so genannte Giphys) zu Teamunterhaltungen hinzuzufügen (animierte Bilder**). <br/><br/>• Ändert die Inhaltsbewertungseinstellung für die Organisation (**Inhaltsbewertung**). Die Inhaltsbewertung beschränkt, welche Arten animierter Bilder in Unterhaltungen angezeigt werden können. <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (sogenannte „benutzerdefinierte Memes“) aus dem Internet zu Teamunterhaltungen hinzuzufügen (anpassbare Bilder aus dem Internet **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (sogenannte "Sticker") zu Teamunterhaltungen hinzuzufügen (** bearbeitbare Bilder **).<br/><br/>• aktiviert bzw. deaktiviert die Fähigkeit, dass Teammitglieder Bots in Microsoft Teams-Chats und -Kanälen (organisationsweite Bots) verwenden können. <br/><br/>• aktiviert bestimmte Bots für Microsoft Teams. Dazu gehört nicht der "T-Bot", bei dem es sich um den Hilfe-Bot für Teams handelt, der verfügbar ist, wenn Bots für die Organisation aktiviert sind (** einzelne Bots **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten hinzuzufügen (** Erweiterungen oder Registerkarten **). <br/><br/>• aktiviert oder deaktiviert das Side-Loading für Microsoft Teams-eigene Bots (** Side-Loading von Bots **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Benutzer, E-Mail-Nachrichten an einen Microsoft Teams-Kanal zu senden (** Kanal-E-Mail**).|
 |Rolle von Mitgliedern im Team geändert|MemberRoleChanged|Ein Teambesitzer ändert die Rolle der Mitglieder in einem Team. Die folgenden Werte geben den Rollentyp an, der dem Benutzer zugewiesen wurde. <br/><br/> **1** - Gibt die Besitzerrolle an.<br/>**2** - Gibt die Mitgliedsrolle an. <br/>**3** - Gibt die Gastrolle an. <br/><br/> Die Eigenschaft „Mitglieder“ enthält auch den Namen Ihrer Organisation und die E-Mail-Adresse des Mitglieds.|
-|Teameinstellung geändert|TeamSettingChanged|Der Vorgang "TeamSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teambesitzer ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>* Ändert die Art des Zugriffs für ein Team. Teams können als „Privat“ oder „Öffentlich" festgelegt werden (**Art des Teamzugriffs**). Wenn ein Team privat ist (Standardeinstellung), haben Benutzer nur nach Einladung Zugriff auf das Team. Wenn ein Team öffentlich ist, kann es von allen Benutzern gefunden werden. <br/><br/>* Ändert die Informationsklassifizierung eines Teams (**Teamklassifizierung**). <br/> Teamdaten können beispielsweise als mit hohen, mittleren oder niedrigen geschäftlichen Auswirkungen klassifiziert werden.<br/><br/>* Ändert den Namen eines Teams (**Teamname**). <br/><br/>* Ändert die Beschreibung des Teams (Teambeschreibung**). <br/><br/>* Änderungen an Einstellungen für das Team. Ein Teambesitzer kann in einem Teams-Client auf diese Einstellungen zugreifen, indem er mit der rechten Maustaste auf ein Team klickt, anschließend auf **Team verwalten** klickt und dann die Registerkarte **Einstellungen** auswählt. Für solche Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** der Name der geänderten Einstellung angezeigt.|
+|Teameinstellung geändert|TeamSettingChanged|Der Vorgang "TeamSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teambesitzer ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Ändert die Art des Zugriffs für ein Team. Teams können als „Privat“ oder „Öffentlich" festgelegt werden (**Art des Teamzugriffs**). Wenn ein Team privat ist (Standardeinstellung), haben Benutzer nur nach Einladung Zugriff auf das Team. Wenn ein Team öffentlich ist, kann es von allen Benutzern gefunden werden. <br/><br/>• Ändert die Informationsklassifizierung eines Teams (**Teamklassifizierung**). <br/> Teamdaten können beispielsweise als mit hohen, mittleren oder niedrigen geschäftlichen Auswirkungen klassifiziert werden.<br/><br/>• Ändert den Namen eines Teams (**Teamname**). <br/><br/>• Ändert die Beschreibung eines Teams (Teambeschreibung). <br/><br/>• Änderungen an Einstellungen für das Team. Ein Teambesitzer kann in einem Teams-Client auf diese Einstellungen zugreifen, indem er mit der rechten Maustaste auf ein Team klickt, anschließend auf **Team verwalten** klickt und dann die Registerkarte **Einstellungen** auswählt. Für solche Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** der Name der geänderten Einstellung angezeigt.|
 |Team erstellt|TeamCreated|Ein Benutzer erstellt ein Team.|
 |Kanal gelöscht|ChannelDeleted|Ein Benutzer löscht einen Kanal aus einem Team.|
 |Team gelöscht|TeamDeleted|Ein Teambesitzer löscht ein Team.|
@@ -768,6 +740,12 @@ Wenn Ihre Organisation die [Patientenanwendung](https://docs.microsoft.com/Micro
 ![Microsoft Teams-Aktivitäten im Gesundheitswesen in der Auswahlliste "Aktivitäten"](../media/TeamsHealthcareAuditActivities.png)
 
 Eine Beschreibung der Patienten-App-Aktivitäten finden Sie unter [Überwachungsprotokolle für die Patienten-App](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
+
+### <a name="microsoft-teams-shifts-activities"></a>Microsoft Teams Schichten-Aktivitäten
+
+Wenn Ihre Organisation die App Schichten in Microsoft Teams verwendet, können Sie das Überwachungsprotokoll nach Aktivitäten im Zusammenhang mit der Schichten-App durchsuchen. Wenn Ihre Umgebung so konfiguriert ist, dass die Schichten-App unterstützt wird, steht in der Auswahlliste **Aktivitäten** eine weitere Aktivitätsgruppe für diese Aktivitäten zur Verfügung.
+
+Eine Beschreibung der-App-Aktivitäten für Schicht-Aktivitäten finden Sie unter [Durchsuchen des Überwachungsprotokolls nach Ereignissen in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### <a name="yammer-activities"></a>Yammer-Aktivitäten
 
@@ -937,7 +915,7 @@ Im Abschnitt [überwachte Aktivitäten](#audited-activities) in diesem Artikel f
 
 **Wie lange dauert es, bis ein Überwachungsdatensatz nach einem Ereignis verfügbar ist?**
 
-Die meisten Überwachungsdaten sind innerhalb von 30 Minuten verfügbar, aber es kann bis zu 24 Stunden nach einem Ereignis dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Sehen Sie sich die Tabelle im Abschnitt [Bevor Sie beginnen](#before-you-begin) dieses Artikels an, in der die Zeit angezeigt wird, die für die Verfügbarkeit von Ereignissen in den verschiedenen Diensten benötigt wird.
+Die meisten Überwachungsdaten sind innerhalb von 30 Minuten verfügbar, aber es kann bis zu 24 Stunden nach einem Ereignis dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Sehen Sie sich die Tabelle im Abschnitt [Voraussetzungen für die Durchsuchung des Überwachungsprotokolls](#requirements-to-search-the-audit-log) dieses Artikels an, in der die Zeit angezeigt wird, die für die Verfügbarkeit von Ereignissen in den verschiedenen Diensten benötigt wird.
 
 **Wie lange werden die Überwachungseinträge aufbewahrt?**
 
@@ -953,7 +931,7 @@ Nein. Dies sind die einzigen beiden Möglichkeiten zum Abrufen von Daten aus dem
 
 **Muss ich die Überwachung in jedem Dienst, für den ich Überwachungsprotokolle erfassen möchte, einzeln aktivieren?**
 
-In den meisten Diensten ist die Überwachung standardmäßig aktiviert, nachdem Sie die Überwachung für Ihre Organisation aktiviert haben (wie im Abschnitt [Bevor Sie beginnen](#before-you-begin) in diesem Artikel beschrieben wird).
+In den meisten Diensten ist die Überwachung standardmäßig aktiviert, nachdem Sie die Überwachung für Ihre Organisation aktiviert haben (wie im Abschnitt [Voraussetzungen für die Durchsuchung des Überwachungsprotokolls](#requirements-to-search-the-audit-log) in diesem Artikel beschrieben wird).
 
 **Unterstützt der Überwachungsdienst die Deduplizierung von Datensätzen?**
 
