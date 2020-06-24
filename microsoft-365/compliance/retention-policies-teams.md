@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 8634bf90ea082663bccd25f35823578842c092e0
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268275"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785545"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Informationen zu Aufbewahrungsrichtlinien für Microsoft Teams.
 
@@ -77,7 +77,7 @@ Wenn jedoch der Unterhaltungsverlauf für Skype for Business Online aktiviert is
 
 ## <a name="files-in-teams"></a>Dateien in Microsoft Teams
 
-In Microsoft Teams werden in einem Chat freigegebene Dateien im OneDrive-Konto des Benutzers gespeichert, der sie freigegeben hat. In Kanäle hochgeladene Dateien werden auf der SharePoint-Website für das Team gespeichert. Deshalb müssen Sie zum Aufbewahren oder Löschen von Dateien in Microsoft Teams zusätzlich zu den Aufbewahrungsrichtlinien, die Sie eventuell für Microsoft Teams konfiguriert haben, eine oder mehrere Aufbewahrungsrichtlinien einrichten, die für **OneDrive-Konten** und **SharePoint-Websites** gelten. Weitere Informationen zur Funktionsweise von Aufbewahrungsrichtlinien für diese Speicherorte finden Sie unter [Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive](retention-policies-sharepoint.md).
+In Microsoft Teams werden in einem Chat freigegebene Dateien im OneDrive-Konto des Benutzers gespeichert, der sie freigegeben hat. In Kanäle hochgeladene Dateien werden auf der SharePoint-Website für das Team gespeichert. Dies bedeutet, dass Sie zum Beibehalten oder Löschen von Dateien in Teams eine oder mehrere Aufbewahrungsrichtlinien konfigurieren müssen, die auf OneDrive und SharePoint angewendet werden, zusätzlich zu den Aufbewahrungsrichtlinien, die Sie für Teams konfigurieren. Weitere Informationen zur Funktionsweise von Aufbewahrungsrichtlinien für diese Speicherorte finden Sie unter [Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive](retention-policies-sharepoint.md).
 
 > [!NOTE]
 > Eine Aufbewahrungsrichtlinie, die Microsoft Teams-Kanalnachrichten oder -Chats einschließt, kann nur Microsoft Teams-Speicherorte umfassen. Um diese Dateien in Microsoft Teams aufbewahren oder löschen zu können, müssen Sie also eine separate Aufbewahrungsrichtlinie erstellen.
@@ -98,6 +98,12 @@ Wenn externe Benutzer in eine von Ihrer Organisation gehosteten Besprechung einb
 
 - Wenn ein externer Benutzer über ein Konto einer anderen Microsoft 365-Organisation beitritt, können Ihre Aufbewahrungsrichtlinien keine Nachrichten für diesen Benutzer löschen, weil sie im Postfach dieses Benutzers in einem anderen Mandanten gespeichert sind. Hinsichtlich der selben Besprechung können Ihre Aufbewahrungsrichtlinien jedoch Nachrichten für Ihre Benutzer löschen.
 
+
+## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
+
+Wenn ein Benutzer Ihre Organisation verlässt und das Office 365-Konto gelöscht wird, werden Ihre Chatnachrichten, die der Aufbewahrung unterliegen, in einem inaktiven Postfach gespeichert. Die Chatnachrichten unterliegenweiterhin der Aufbewahrungsrichtlinie, die dem Benutzer zugewiesen wurde, bevor sein Postfach inaktiv wurde, und die Inhalte sind für eine eDiscovery-Suche verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+Wenn der Benutzer Dateien in Teams gespeichert hat, lesen Sie den Abschnitt [Äquivalent](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) für SharePoint und OneDrive.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -122,7 +128,6 @@ Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in M
     - Wenn Sie für den Speicherort **Microsoft Teams-Kanalnachrichten** die Option **Teams auswählen** auswählen, werden möglicherweise Office 365-Gruppen angezeigt, die nicht auch Teams sind. Wählen Sie diese Gruppen nicht aus.
     
     - Wenn Sie **Benutzer auswählen** für den Speicherort ** Teams-Chats** auswählen, werden möglicherweise Gäste und Nicht Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
-
 
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Konfigurieren einer Aufbewahrungsrichtlinie für Microsoft Teams
 

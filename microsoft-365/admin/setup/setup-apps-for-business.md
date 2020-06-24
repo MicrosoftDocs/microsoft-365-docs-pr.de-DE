@@ -1,0 +1,119 @@
+---
+title: Microsoft 365 Apps for Business einrichten
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: sirkkuw
+manager: mnirkhe
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- Adm_O365_Setup
+- TRN_SMB
+ms.custom:
+- TRN_M365B
+- OKR_SMB_Videos
+- okr_smb
+- AdminSurgePortfolio
+search.appverid:
+- MET150
+- MOE150
+- BEA160
+description: Erfahren Sie, wie Sie Ihr Microsoft 365-Apps für Business-Abonnement einrichten.
+ms.openlocfilehash: 8e03da2f3547b9a11b9a6f27b86558b82c9e82c6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778889"
+---
+# <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for Business einrichten
+
+## <a name="add-users-and-assign-licenses"></a>Benutzer hinzufügen und Lizenzen zuweisen
+
+Sie können Benutzer entweder hier hinzufügen oder Sie können [Benutzer später im Admin Center hinzufügen](../add-users/add-users.md).
+
+ ::: moniker range="o365-worldwide"
+
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wenn Sie Office 365 Deutschland verwenden, verwenden Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wenn Sie Office 365, betrieben von 21Vianet verwenden, nutzen Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627).
+
+::: moniker-end 
+
+2. Wählen Sie **Zu Setup wechseln** aus, um den Assistenten zu starten.
+
+3. Auf der ersten Seite erhalten Sie die Option zum Installieren von Office-Apps auf Ihrem Computer. Sie können dies auch später tun.
+
+3. Auf der nächsten Seite können Sie Benutzer hinzufügen und diesen wird automatisch die Microsoft Apps for Business-Lizenz zugewiesen. Nachdem Sie die Benutzer hinzugefügrt haben, erhalten Sie außerdem die Möglichkeit, Anmeldeinformationen für die hinzugefügten neuen Benutzer freizugeben. Sie können auswählen, ob diese Informationen ausgedruckt, per E-Mail gesendet oder heruntergeladen werden sollen.
+
+ Wenn der Registrierungsvorgang abgeschlossen ist, werden Sie zum Admin Center weitergeleitet, wo Sie Benutzer hinzufügen und Lizenzen zuweisen können. 
+
+## <a name="install-office"></a>Office installieren
+
+Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+  
+::: moniker range="o365-worldwide"
+
+Wechseln Sie zu [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.com/OLS/MySoftware.aspx).
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+Wenn Sie Office 365 Deutschlandverwenden, wechseln Sie zu [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Wenn Sie Office 365, betrieben von 21Vianet verwenden, navigieren Sie zu [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
+
+::: moniker-end
+
+1. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+
+2. Wählen Sie **Installieren** aus.
+
+Benötigen Sie detailliertere Schritte, oder möchten Sie die 64-Bit-Version von Office installieren? Dann lesen Sie [Schrittweise Installationsanweisungen](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
+  
+## <a name="set-up-mobile"></a>Einrichten von mobilen Apps
+
+Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
+  
+Zeigen Sie die Schritte für Ihr Gerät an: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
+  
+## <a name="store-files-online"></a>Onlinespeichern von Dateien
+
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+  
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+  
+1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
+
+2. Sie können private Dateien anzeigen und hochladen oder aber Dokumente oder Ordner freigeben, indem Sie **Freigeben** auswählen und dann entweder andere einladen, die Dokumente anzuzeigen, oder ihnen einen Link senden. Weitere Informationen finden Sie unter [OneDrive-Dateien und -Ordner freigeben](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
+  
+Mehr dazu unter [Hochladen von Dateien in eine Bibliothek](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0).
+  
+## <a name="get-started-using-office"></a>Erste Schritte mit Office
+
+Wenn Sie eine Tour durch Microsoft 365 unternehmen und erfahren möchten, wie die mobilen Office-Apps verwendet werden, lesen Sie [Erste Schritte](../admin-overview/get-started-with-office-365.md).
+
+## <a name="add-a-custom-domain"></a>Hinzufügen einer benutzerdefinierten Domäne
+
+Während der Registrierung haben Sie eine ".onmicrosoft"-Domäne ausgewählt. Sie können auch eine benutzerdefinierte Domäne, z. B. *contoso.com* zu Ihrem Konto hinzufügen, um die E-Mails zu personalisieren. Weitere Informationen finden Sie unter [Hinzufügen einer Domäne](add-domain.md).

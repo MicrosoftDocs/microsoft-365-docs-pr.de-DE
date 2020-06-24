@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
+description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165966"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815596"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
@@ -48,16 +48,16 @@ Eine kurze Demo von Compliance-Manager finden Sie in diesem Video zu [Compliance
 
     
 > [!IMPORTANT]
-> Der Compliance-Manager ist ein Dashboard, das eine Zusammenfassung des Status von Datenschutz und Compliance sowie Empfehlungen zur Verbesserungen des Datenschutzes und der Compliance bereitstellt. Die im Compliance-Manager bereitgestellt Kundenaktionen sind Empfehlungen. Es liegt in der Verantwortung jeder Organisation, die Effektivität dieser Empfehlungen in ihrer jeweiligen Regulierungsumgebung vor der Implementierung zu bewerten. Im Compliance-Manager enthaltene Empfehlungen sollten nicht als Garantie für Compliance verstanden werden.
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>Was ist der Compliance-Manager?
 
-Compliance-Manager ist ein workflowbasiertes Tool zur Risikoabschätzung, mit dem Sie die Einhaltung von Richtlinien innerhalb des Modells für gemeinsame Verantwortung der Cloud verwalten können. Im Compliance-Manager erhalten Sie eine Dashboardansicht von Standards, Vorschriften und Bewertungen, die Implementierungsdetails für die Microsoft-Steuerelemente, Testergebnisse, Implementierungsleitfäden für Kundensteuerelemente und eine Nachverfolgung für Ihre Organisation enthält. Der Compliance-Manager stellt Steuerelementdefinitionen für die Zertifizierungsbewertung, Hilfestellung zur Implementierung und zum Testen von Steuerelementen, eine risikogewichtete Bewertung von Steuerelementen, eine rollenbasierte Zugriffsverwaltung sowie einen vorhandenen Zuweisungsworkflow für Steuerelementaktionen bereit, um die Implementierung von Steuerelementen, das Testen von Status sowie die Verwaltung von Nachweisen nachzuverfolgen. Der Compliance-Manager optimiert die Compliance-Arbeitslast, indem Kunden die Möglichkeit erhalten, Bewertungen logisch zu gruppieren und Bewertungstests auf identische oder verwandte Steuerungen anzuwenden, wodurch ein doppelter Aufwand verhindert wird, der andernfalls möglicherweise erforderlich ist, um die Anforderungen identischer Steuerelemente über unterschiedliche Zertifizierungen hinweg zu erfüllen.
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>Bewertungen im Compliance-Manager
 
-Die zentrale Komponente von Compliance-Manager ist eine *Bewertung*. Eine Bewertung ist eine Beurteilung eines Microsoft-Diensts im Hinblick auf einen Zertifizierungsstandard oder eine Datenschutzrichtlinie (z. B. ISO 27001:2013 und DSGVO). Anhand von Bewertungen können Sie den Status von Datenschutz und Compliance in Ihrer Organisation im Hinblick auf den für den jeweiligen Microsoft-Clouddienst ausgewählten Branchenstandard beurteilen. Bewertungen werden durch die Implementierung von Steuerelementen abgeschlossen, die eine Zuordnung zu dem bewerteten Zertifizierungsstandard herstellen. 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 Die Struktur einer Bewertung basiert auf der Verantwortung, die sich Microsoft und Ihre Organisation im Zusammenhang mit der Bewertung der Sicherheits- und Compliancerisiken in der Cloud und mit der Implementierung der von einem Compliancestandard angegebenen Sicherheitsmaßnahmen für Datenschutz, eines Datenschutzstandards, einer Vorschrift oder eines Gesetzes teilen.
   
@@ -65,13 +65,13 @@ Eine Bewertung besteht aus mehreren der folgenden Komponenten:
   
 - **Im Bereich enthaltene Dienste**: Jede Bewertung gilt für einen bestimmten Satz von Microsoft-Diensten, die im Abschnitt der im Bereich enthaltenen Dienste ausgeführt sind. 
     
-- **Von Microsoft verwaltete Steuerelemente** – Für jeden Clouddienst implementiert Microsoft einen Satz von *Steuerelementen* im Rahmen der Einhaltung verschiedener Standards und Vorschriften durch Microsoft. Diese Steuerelemente werden in *Steuerelementfamilien* organisiert, die der Struktur der entsprechenden Zertifizierung oder Vorschrift entsprechen, an denen die Bewertung ausgerichtet ist. Für jedes von Microsoft verwaltete Steuerelement liefert der Compliance-Manager Informationen darüber, wie Microsoft das Steuerelement implementiert hat und wie und wann die Implementierung von einem unabhängigen Drittprüfer getestet und überprüft wurde. 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     Nachfolgend finden Sie ein Beispiel von drei von Microsoft verwalteten Steuerelementen in der Steuerelementfamilie **Sicherheit** aus einer Bewertung von Office 365 und der DSGVO. 
 
     ![Details zu von Microsoft verwalteten Steuerelementen im Compliance-Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. Gibt die folgenden Informationen von der Zertifizierung oder Vorschrift an, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **Steuerelement-ID**: Die Abschnit-t oder Artikelnummer der Zertifizierung oder Vorschrift, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
     
@@ -81,15 +81,15 @@ Eine Bewertung besteht aus mehreren der folgenden Komponenten:
     
   - **Beschreibung** –Text des Standards oder der Vorschrift, der bzw. die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
 
-  b. Die Compliancebewertung für das Steuerelement, die das Risikoniveau (aufgrund von Nicht-Einhaltung oder aufgrund eines Steuerelementfehlers) im Zusammenhang mit jedem von Microsoft verwalteten Steuerelement angibt. Weitere Informationen finden Sie unter [Grundlegendes zur Compliancebewertung](#understanding-the-compliance-score). Beachten Sie, dass Compliance-Bewertungen von 1 bis 10 gehen und farbkodiert sind. Gelb steht für geringes Risiko, orange für mittleres Risiko und rot für hohes Risiko. 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. Informationen zum Implementierungsstatus eines Steuerelements, zum Datum, an dem das Steuerelement getestet wurde, zum Durchführer des Tests sowie zum Testergebnis.
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. Sie können für jedes Steuerelement auf **Weitere Informationen** klicken, um weitere Informationen anzuzeigen, einschließlich der Details zur Implementierung des Steuerelements durch Microsoft und Informationen dazu, wie das Steuerelement von einem unabhängigen Drittprüfer getestet und überprüft wurde. 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **Vom Kunden verwaltete Steuerelemente** – Dies ist die Sammlung der Steuerelemente, die von Ihrer Organisation verwaltet werden. Ihre Organisation ist für die Implementierung dieser Steuerelemente im Rahmen des Einhaltungsprozesses eines bestimmtes Standards oder einer Richtlinie verantwortlich. Vom Kunden verwaltete Steuerelemente werden ebenfalls in Steuerelementfamilien für die entsprechende Zertifizierung oder Vorschrift organisiert. Verwenden Sie die vom Kunden verwalteten Steuerelemente, um die von Microsoft im Rahmen Ihrer Complianceaktivitäten empfohlenen Aktionen zu implementieren. Ihre Organisation kann diesen reglementierenden Leitfaden und empfohlene Kundenaktionen in jedem vom Kunden verwalteten Steuerelement nutzen, um den Implementierungs- und Bewertungsprozess zu verwalten.
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    Vom Kunden verwaltete Steuerelemente in Bewertungen weisen auch eine integrierte Workflowverwaltungsfunktion auf, die Sie zum Verwalten und Nachverfolgen der Fortschritte Ihres Unternehmens im Hinblick auf den Abschluss der Bewertung verwenden können. Ein Compliance Officer in Ihrer Organisation kann beispielsweise einem IT-Administrator ein Aktionselement zuweisen, der über die Verantwortung und die erforderlichen Berechtigungen zum Durchführen der Aktionen verfügt, die für das Steuerelement empfohlen werden. Wenn diese Arbeit abgeschlossen ist, kann der IT-Administrator einen Nachweis für seine Implementierungsaufgaben hochladen (z. B. Screenshots der Konfiguration oder Richtlinieneinstellungen) und dann das Aktionselement wieder dem Compliance Officer zuweisen, damit dieser die gesammelten Nachweise prüfen, die Implementierung des Steuerelements testen und das Implementierungsdatum sowie die Testergebnisse im Compliance-Manager aufzeichnen kann. Weitere Informationen finden Sie im Abschnitt [Verwalten des Bewertungsprozesses](#managing-the-assessment-process) in diesem Artikel. 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>Berechtigungen und rollenbasierte Zugriffssteuerung
 
@@ -97,7 +97,7 @@ Compliance-Manager verwendet ein Berechtigungsmodell der rollenbasierten Zugriff
   
 Beachten Sie, dass es keine Standardrolle **Gastzugriff** mehr gibt. Jedem Benutzer muss eine Rolle zugewiesen werden, damit er auf Compliance-Manager zugreifen und darin arbeiten kann.
   
-In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen beschrieben und was der Benutzer damit tun kann. In der Tabelle wird außerdem die Rolle angegeben, der jede Berechtigung zugewiesen ist.
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen 
 |**Bearbeiten von Daten**: Benutzer können alle Felder, mit Ausnahme von „Testergebnis“ und „Testdatum“, bearbeiten.  <br/> ||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Bearbeiten der Testergebnisse**: Benutzer können die Felder „Testergebnis“ und „Testdatum“ bearbeiten.  <br/> ||<br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Verwalten von Bewertungen**: Benutzer können Bewertungen erstellen, archivieren und löschen.  <br/> |||<br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Verwalten von Benutzern**: Benutzer können andere Benutzer in der Organisation zu den Rollen „Reader“, „Contributor“, „Assessor“ und „Administrator“ hinzufügen. Nur die Benutzer mit der Rolle „Globaler Administrator“ in Ihrer Organisation können Benutzer zu der Rolle „Portal Admin“ hinzufügen oder daraus entfernen.<br/> ||||<br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Grundlegendes zur Compliancebewertung
 
@@ -125,17 +125,17 @@ Das unten dargestellte Bewertungssteuerelement für die Verwaltung des Benutzerz
   
 ![Compliance-Manager – Bewertungssteuerelement mit niedrigem Schweregrad (3)](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-Der Compliance-Manager weist einen standardmäßigen Schweregrad für jedes Steuerelement zu. Risikobewertungen werden basierend auf den folgenden Kriterien berechnet:
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - Ob ein Steuerelement das Auftreten von Vorfällen verhindert (die höchste Einstufung), Vorfälle, die geschehen sind, erkennt oder die Auswirkungen eines Vorfalls korrigiert (niedrigste Einstufung). Im Hinblick auf die Schweregradeinstufung wird einem obligatorischen Steuerelement, das eine Bedrohung verhindert, die höchste Punktzahl zugeordnet. Steuerelementen, die zur Erkennung oder Behebung dienen (unabhängig davon, ob sie obligatorisch sind oder nach eigenem Ermessen angewendet werden), wird die niedrigste Punktzahl zugeordnet.
     
 - Ob ein Steuerelement (nach seiner Implementierung) erforderlich ist und deshalb von den Benutzern nicht umgangen werden kann (Benutzer müssen beispielsweise ihr Kennwort zurücksetzen und Anforderungen im Hinblick auf Kennwortlänge und -zeichen erfüllen), oder ob es frei verfügbar ist und von Benutzern umgangen werden kann (zum Beispiel Geschäftsregeln, die erfordern, dass Benutzer ihre Bildschirme sperren, wenn sie sich nicht an ihren Computern befinden).
     
-- Steuerelemente im Zusammenhang mit Risiken für die Vertraulichkeit, Integrität und Verfügbarkeit von Daten, ob diese Risiken aus internen oder externen Bedrohungen stammen, und ob die Bedrohung bösartig oder unbeabsichtigt ist. Beispielsweise würden Steuerelementen, die verhindern, dass ein Angreifer in das Netzwerk eindringt und Zugriff auf personenbezogene Informationen erhält, mehr Punkte zugewiesen als einem Steuerelement, das verhindert, dass ein Benutzer eine Netzwerkroutereinstellung versehentlich falsch konfiguriert, was zu einem Netzwerkausfall führt).
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - Risiken im Zusammenhang mit rechtlichen und externen Faktoren, z. B. Verträge, Vorschriften und öffentliche Verpflichtungen, für jedes Steuerelement.
     
-Die angezeigten Werte für die Compliance-Bewertung für das Steuerelement werden basierend auf dem Kriterium „Bestanden/Nicht bestanden) *vollständig* auf das Gesamtergebnis angewendet – das Steuerelement wird implementiert und besteht den nachfolgenden Bewertungstest, oder es besteht den Test nicht. Nur wenn der **Implementierungsstatus** des Steuerelements auf **Implementiert** oder **Alternative Implementierung** und das **Testergebnis** auf **Bestanden** festgelegt ist, werden die zugewiesenen Punkte zum Gesamtwert addiert. 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 Die Compliancebewertung kann Ihnen insbesondere bei der Priorisierung von Steuerelementen helfen, auf die bei der Implementierung der Schwerpunkt gelegt werden muss, indem angegeben wird, welche Steuerelemente bei einem Fehler ein höheres mögliches Risiko aufweisen. Neben der risikobasierten Priorisierung ist Folgendes zu beachten: Wenn sich die Bewertungssteuerelemente auf andere Steuerelemente beziehen (entweder innerhalb derselben Bewertung oder in einer anderen Bewertung in derselben Bewertungsgruppe), kann der erfolgreiche Abschluss eines einzelnen Steuerelements zu einer erheblichen Verringerung des Aufwands basierend auf der Synchronisierung der Steuerelement-Testergebnisse führen.
   
@@ -145,7 +145,7 @@ In der Abbildung unten sehen wir beispielsweise, dass die Bewertung „Office 36
   
 In der Bewertung bezieht sich das DSGVO-Steuerelement 7.5.5 auf 5 andere Steuerelemente (7.4.1, 7.4.3, 7.4.4, 7.4.8 und 7.4.9), die jeweils einen mittleren bis hohen Risikobewertungswert von 6 oder 8 für den Schweregrad aufweisen). Mithilfe des Bewertungsfilters haben wir alle diese Steuerelemente ausgewählt, sodass sie in der Bewertungsansicht angezeigt werden. Sie können unten erkennen, dass keines von ihnen bewertet wurde. 
   
-![Compliance-Manager – Bewertungsansicht – Filtersteuerelemente, keines bewertet](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Da diese 6 Steuerelemente miteinander verknüpft sind, führt das Abschließen eines der Steuerelemente zu einer Synchronisierung dieser Testergebnisse über die verknüpften Steuerelemente in der Bewertung (genau wie bei allen verknüpften Steuerelementen in einer Bewertung, die sich in derselben Bewertungsgruppierung befindet). Bei Abschluss der Implementierung und des Tests des DSGVO-Steuerelements 7.5.5 wird der Detailbereich des Steuerelements so aktualisiert, dass angezeigt wird, dass alle 6 Steuerelemente bewertet wurden, und es ist ein entsprechender Anstieg der Anzahl bewerteter Steuerelemente auf 57 und 51 % bewertete Steuerelemente sowie eine Änderung des Gesamtwerts auf +40 zu beobachten. 
+![Compliance-Manager – Bewertungsansicht – Filtersteuerelemente, keines bewertet](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![Compliance-Manager – Bewertungsansicht – synchronisierte Steuerelementergebnisse](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ Dieses Dialogfeld zur Bestätigung der Aktualisierung wird angezeigt, wenn Sie i
 ![Compliance-Manager-Bewertung – Dialogfeld zur Bestätigung der Aktualisierung verknüpfter Steuerelemente](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> Derzeit umfassen nur Bewertungen für Office 365-Clouddienste eine Compliance-Bewertung. In Bewertungen für Azure und Dynamics wird ein Bewertungsstatus angezeigt. 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>Methodik der Compliance-Bewertung
 
 Die Compliance-Bewertung, wie der Microsoft Secure Store, ist anderen verhaltensbasierten Bewertungssystemen ähnlich. Die Compliance-Bewertung Ihrer Organisation kann erhöht werden, indem Aktivitäten im Zusammenhang mit Datenschutz und Sicherheit ausgeführt werden.
   
 > [!NOTE]
-> Die Compliance-Bewertung drückt kein absolutes Maß für die Einhaltung eines bestimmten Standards oder einer bestimmten Vorschrift in der Organisation aus. Sie drückt vielmehr den Umfang aus, in dem Sie Steuerelemente einsetzen, durch die die Risiken für persönliche Daten und den Datenschutz reduziert werden können. Kein Dienst kann garantieren, dass Sie einen Standard oder eine Vorschrift einhalten. Die Compliance-Bewertung sollte in keinster Weise als eine Garantie verstanden werden. 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-Bewertungen im Compliance-Manager basieren auf dem Modell für gemeinsame Verantwortung für Cloud Computing. Im Modell für gemeinsame Verantwortung teilen sich Microsoft und alle Kunden die Verantwortung für den Schutz der Kundendaten, wenn diese in unserer Cloud gespeichert werden.
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 Wie aus der folgenden Office 365 DSGVO-Bewertung hervorgeht, sind Microsoft und seine Kunden jeweils für die Durchführung einer Reihe von Maßnahmen verantwortlich, die den Anforderungen der zu beurteilenden Standards oder Vorschriften entsprechen. Um die erforderlichen Maßnahmen für eine Vielzahl von Standards und Vorschriften zu rationalisieren und zu verstehen, behandelt der Compliance-Manager alle Standards und Vorschriften so, als wären sie Kontrollframeworks. So beinhalten die von Microsoft und den Kunden für jede Bewertung durchgeführten Maßnahmen die Implementierung und Validierung verschiedener Steuerelemente.
   
@@ -171,7 +171,7 @@ Wie aus der folgenden Office 365 DSGVO-Bewertung hervorgeht, sind Microsoft und 
   
 Nachfolgend sehen Sie den grundlegenden Workflow für eine typische Aktion:
   
-1. Der Beauftrage für Compliance, Risiko und/oder Datenschutz in einer Organisation weist die Aufgabe einer Person in der Organisation zu, um ein Steuerelement zu implementieren. Bei dieser Person kann es sich um folgende Personen handeln:
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - Der Besitzer einer Unternehmensrichtlinie
     
@@ -179,7 +179,7 @@ Nachfolgend sehen Sie den grundlegenden Workflow für eine typische Aktion:
     
     - Eine andere Person in der Organisation, die für das Ausführen der Aufgabe verantwortlich ist
     
-2. Diese Person führt die erforderlichen Aufgaben zum Implementieren des Steuerelements durch, lädt den Nachweis der Implementierung in den Compliance-Manager hoch und markiert die an die Aktion gebundenen Steuerelemente als implementiert. Nachdem diese Aufgaben abgeschlossen wurden, wird die Aktion einem Prüfer zur Überprüfung zugewiesen. Prüfer können folgende Personen sein.
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - Interne Prüfer, die die Überprüfung von Steuerelementen in einer Organisation ausführen
     
@@ -189,13 +189,13 @@ Nachfolgend sehen Sie den grundlegenden Workflow für eine typische Aktion:
     
 Nachdem alle Steuerelemente, die einer Bewertung zugeordnet sind, bewertet wurden, wird die Bewertung als abgeschlossen betrachtet.
   
-Jede Bewertung im Compliance-Manager enthält vorab Informationen, die Details zu den Aktionen liefern, die von Microsoft ausgeführt werden, um die Anforderungen der Steuerelemente zu erfüllen, für die Microsoft verantwortlich ist. Diese Informationen umfassen Details dazu, wie Microsoft jedes Steuerelement implementiert hat und wie und wann die Implementierung von Microsoft von einem unabhängigen Prüfer bewertet und überprüft wurde. Aus diesem Grund werden die von Microsoft verwalteten Steuerelemente für jede Bewertung als „Bewertet“ markiert; dies spiegelt sich in der Compliance-Bewertung für die Bewertung wider.
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-Jede Bewertung umfasst eine Gesamtbewertung basierend auf dem Modell für gemeinsame Verantwortung. Die Implementierung, und die Tests von Steuerelementen für Office 365 durch Microsoft machen einen Teil der insgesamt möglichen Punkte im Zusammenhang mit einer DSGVO-Bewertung aus. Wenn der Kunde die einzelnen Kundenaktionen implementiert und testet, erhöht sich die Compliance-Bewertung für die Bewertung um den dem Steuerelement zugewiesenen Wert. 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>Methode der risikobasierten Bewertung
   
-Der Compliance-Manager verwendet eine risikobasierte Bewertungsmethode mit einer Skala von 1-10, bei der Steuerelementen, die ein höheres Risiko im Falle eines Fehlers oder der Nichteinhaltung darstellen, zugewiesen wird. Das von der Compliance-Bewertung verwendete Bewertungssystem basiert auf mehreren Schlüsselfaktoren, z. B.:
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - Die Grundidee des Steuerelements
     
@@ -211,17 +211,17 @@ Die Grundidee des Steuerelements basiert darauf, ob das Steuerelement erforderli
   
  ### <a name="mandatory-or-discretionary"></a>Erforderlich oder frei
   
- *Erforderliche Steuerelemente* sind Steuerelemente, die weder absichtlich oder versehentlich umgangen werden können. Ein Beispiel für ein allgemeines erforderliches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für Kennwortlänge, -komplexität und -ablauf festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können. 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- *Freie Steuerelemente* basieren darauf, dass Benutzer die Richtlinie verstehen und sich entsprechend verhalten. Bei einer Richtlinie, die Benutzer auffordert, ihre Computer zu sperren, wenn sie ihren Arbeitsplatz verlassen, handelt es sich beispielsweise um ein freies Steuerelement, da es auf dem Benutzer beruht. 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>Vorbeugende, erkennende oder korrigierende Steuerelemente
   
- *Vorbeugende Steuerelemente * sind Steuerelemente, die bestimmte Risiken verhindern. Das Schützen von gespeicherten Informationen ist beispielsweise eine vorbeugende Maßnahme gegen Angriffe, Verstöße usw. Die Aufgabentrennung ist eine vorbeugende Maßnahme, um Interessenkonflikte zu verwalten und Schutz vor Betrug zu schützen. 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- *Erkennende Steuerelemente* sind Steuerelemente, die aktiv Systeme überwachen, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die ein Risiko darstellen, oder die verwendet werden können, um Angriffe aufzudecken oder festzustellen, ob eine Verletzung aufgetreten ist. Die Überprüfung des Systemzugriffs und die Prüfung von Administratoraktionen sind Typen von überwachenden Steuerelementen. Überprüfungen der Einhaltung von Vorschriften sind ein Typ eines erkennenden Steuerelements, das zum Auffinden von Prozessproblemen verwendet wird. 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- *Korrigierende Steuerelemente* sind Steuerelemente, die versuchen, die negativen Auswirkungen eines Sicherheitszwischenfalls zu minimieren, Korrekturmaßnahmen zu ergreifen, um die unmittelbaren Auswirkungen zu reduzieren und den Schaden, wenn möglich, rückgängig zu machen. 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 Durch die Auswertung jedes Steuerelements anhand dieser Faktoren bestimmen wir die Grundidee des Steuerelements und weisen ihm einen Wert relativ zu dem Risiko zu, das es darstellt.
   
@@ -242,7 +242,7 @@ Bedrohung bezieht sich auf alles, was eine Gefahr für den grundlegenden, univer
     
 - Verfügbarkeit bedeutet, dass auf Informationen problemlos mit einem hohem Maß an Dienstqualität zugegriffen werden kann.
     
-Ein Fehler bei einem dieser Merkmale wird als Gefahr für das System als Ganzes betrachtet. Bedrohungen können sowohl aus internen als auch aus externen Quellen stammen, und die Absicht eines Handelnden kann unabsichtlich oder bösartig sein. Diese Faktoren werden in einer Bedrohungsmatrix geschätzt, die jeder Kombination von Szenarios die Bedrohungsstufen „Hoch“, „Mittel“ oder „Niedrig“ zuweist.
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**Intern**<br/>||**Extern**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ Durch Priorisieren von Bewertungssteuerelementen mit den höchsten Compliance-Be
   
 ### <a name="summary-of-scoring-methodology"></a>Zusammenfassung der Bewertungsmethode
   
-Die Compliance-Bewertung ist eine wichtige Komponente, mit deren Hilfe Compliance-Manager Organisationen dabei unterstützt, ihre Compliance zu verstehen und zu verwalten. Die Compliance-Bewertung für eine Bewertung ist ein Ausdruck für die Einhaltung eines bestimmten Standards oder einer bestimmten Vorschrift eines Unternehmens anhand einer Zahl, wobei eine höhere Bewertung (bis zur maximalen Anzahl von Punkten, die für die Bewertung zugeordnet sind) für einen besseren Status des Unternehmens im Zusammenhang mit der Compliance steht. Es ist wichtig, dass Organisationen die Methode der Compliance-Bewertung verstehen, bei der Bewertungssteuerelementen Werte für den Schweregrad zwischen 1 und 10 zugewiesen werden. Zur Priorisierung ihrer Aktionen müssen Unternehmen außerdem verstehen, wie abgeschlossene Bewertungssteuerelemente zur Gesamtbewertung addiert werden.
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>Gruppieren von Bewertungen
 
 Wenn Sie eine neue Bewertung erstellen, werden Sie aufgefordert, eine neue Gruppe zu erstellen, der die Bewertung zugewiesen werden soll, oder die Bewertung einer vorhandenen Gruppe zuzuweisen. Mithilfe von Gruppen können Sie Bewertungen logisch anordnen und allgemeine Informationen sowie Workflowaufgaben zwischen Bewertungen teilen, die die gleichen oder ähnliche vom Kunden verwaltete Steuerelemente aufweisen.
   
-Sie können Bewertungen beispielsweise nach Jahr oder Teams, Abteilungen oder Agenturen innerhalb Ihrer Organisation gruppieren. Nachfolgend finden Sie einige Beispiele von Gruppen und die darin enthaltenen Bewertungen.
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - DSGVO-Bewertungen – 2018
     
@@ -315,7 +315,7 @@ Die folgenden Anforderungen gelten für das Gruppieren von Bewertungen:
   
 - Gruppennamen (auch als *Gruppen-IDs bezeichnet) müssen in Ihrer Organisation eindeutig sein. 
     
-- Gruppen können Bewertungen für die gleiche Zertifizierung/Vorschrift enthalten, aber jede Gruppe kann nur eine Bewertung für eine Kombination eines bestimmten Clouddiensts/einer Zertifizierung enthalten. Eine Gruppe kann beispielsweise nicht zwei Bewertungen für Office 365 und DSGVO enthalten. In ähnlicher Weise kann eine Gruppe mehrere Bewertungen für denselben Clouddienst enthalten, vorausgesetzt, die entsprechende Zertifizierung/Vorschrift ist für jeden unterschiedlich.
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 Nachdem eine Bewertung einer Bewertungsgruppierung hinzugefügt wurde, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen. Dies ändert den Namen der Bewertungsgruppierung für alle Bewertungen, die dieser Gruppe zugeordnet sind. Sie können eine neue Bewertung und eine neue Bewertungsgruppe erstellen und Informationen aus einer vorhandenen Bewertung kopieren. Auf diese Weise wird effektiv ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt. Durch das Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Bewertungsgruppe unterbrochen. Alle weiteren Updates zu anderen verwandten Bewertungen werden in der archivierten Bewertung nicht mehr berücksichtigt.
   
@@ -346,11 +346,11 @@ Zurück im Dashboard können wir sehen, dass in jeder Bewertung eine Steuereleme
 Es gibt bestimmte Verwaltungsfunktionen, die nur für das Mandantenadministratorkonto verfügbar sind und nur bei der Anmeldung als globaler Administrator sichtbar sind.
   
 > [!NOTE]
-> Über die Berechtigung „Zugriff auf Dokumente mit Zugriffseinschränkung“ in der Dropdownliste können Administratoren Benutzern Zugriff auf Dokumente mit Zugriffseinschränkung geben, die Microsoft im Service Trust Portal freigibt. Das Feature für Dokumente mit Zugriffseinschränkung ist in Kürze verfügbar. 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Zuweisen von Compliance-Manager-Rollen zu Benutzern
 
-Jede Compliance-Manager-Rolle hat etwas andere Berechtigungen. Sie können die jeder Rolle zugewiesenen Berechtigungen anzeigen, sehen, welche Benutzer welche Rolle haben, und Benutzer zu dieser Rolle hinzufügen oder daraus entfernen, indem Sie im Service Trust Portal das Menüelement **Admin** auswählen und dann auf **Einstellungen** klicken. 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![Administratormenü im STP – Ausgewählte Einstellungen](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
     
 5. Benutzer, die den einzelnen Rollen hinzugefügt wurden, werden auf der Seite **Rolle auswählen** aufgeführt. 
     
-6. Um Benutzer zu dieser Rolle hinzuzufügen, klicken Sie auf **Hinzufügen**. Klicken Sie im Dialogfeld **Benutzer hinzufügen** auf das Benutzerfeld. Sie können durch die Liste verfügbarer Benutzer scrollen oder mit der Eingabe des Benutzernamens beginnen, um die Liste basierend auf Ihrem Suchbegriff zu filtern. Klicken Sie auf den Benutzer, um dieses Konto der Liste **Benutzer hinzufügen** hinzuzufügen, die dieser Rolle bereitgestellt werden soll. Wenn Sie mehrere Benutzer gleichzeitig hinzufügen möchten, beginnen Sie mit der Eingabe des Benutzernamens, um die Liste zu filtern, und klicken Sie dann auf den Benutzer, der der Liste hinzugefügt werden soll. Klicken Sie auf **Speichern**, um die ausgewählte Rolle für diese Benutzer bereitzustellen. 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![Compliance-Manager – Bereitstellungsrollen – Benutzer hinzufügen](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ Hinzufügen oder Entfernen von Benutzern aus Compliance-Manager-Rollen
  
 ## <a name="user-privacy-settings"></a>Datenschutzeinstellungen
 
-Bestimmte Vorschriften erfordern, dass eine Organisation in der Lage sein muss, die Verlaufsdaten von Benutzern zu löschen. Um dies zu aktivieren, wird in Compliance-Manager die Fuktion **Datenschutzeinstellungen** bereitgestellt, mit denen Administratoren Folgendes ausführen können: 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [Suchen eines Benutzers](#search-for-a-user)
 
@@ -397,7 +397,7 @@ So suchen Sie nach einem Benutzerkonto
     
 2. Wenn Sie den Benutzernamen korrekt eingegeben haben, klicken Sie auf **Suchen**. 
     
-3. Wenn das Benutzerkonto nicht gefunden wird, wird die Fehlermeldung „Benutzer nicht gefunden“ auf der Seite angezeigt. Überprüfen Sie die E-Mail-Adresse des Benutzers, nehmen Sie nach Bedarf Korrekturen vor, und klicken Sie auf **Suchen**, um es erneut zu versuchen. 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. Wenn ein Benutzerkonto gefunden wird, ändert sich der Text der Schaltfläche von **Suchen** in **Löschen**, was darauf hinweist, dass das zurückgegebene Benutzerkonto der Betriebskontext für die zusätzlichen Funktionen ist, die unten angezeigt werden, und dass das Ausführen dieser Funktionen für dieses Benutzerkonto gilt. 
     
@@ -416,11 +416,11 @@ Nachdem das Benutzerkonto identifiziert wurde, möchten Sie möglicherweise eine
 3. Öffnen Sie das Dokument, um die Daten des Berichts zu überprüfen.
     
 > [!NOTE]
-> Dies ist kein Verlaufsbericht, in dem Statusänderungen zum Zuweisungsverlauf von Aktionselementen gespeichert oder angezeigt werden. Der generierte Bericht ist eine Momentaufnahme der zugewiesenen Aktionselemente zu dem Zeitpunkt, zu dem der Bericht ausgeführt wird (Datums- und Uhrzeitstempel werden in den Bericht geschrieben). Alle nachfolgenden erneuten Zuweisungen von Aktionselementen führen beispielsweise zu anderen Berichtsdaten der Momentaufnahme, wenn dieser Bericht erneut für denselben Benutzer erstellt wird. 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>Erneutes Zuweisen von Aktionselementen
 
-Mithilfe dieser Funktion kann eine Organisation alle aktiven oder ausstehenden Abhängigkeiten für das Benutzerkonto entfernen, indem der Besitz aller Aktionselemente (sowohl aktive als auch abgeschlossene Aktionselemente) von dem zurückgegebenen Benutzerkonto einem neuen, unten ausgewählten Benutzer erneut zugewiesen wird. Durch diese Aktion wird der Uploadverlauf des Dokuments für das zurückgegebene Benutzerkonto nicht geändert. 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  So weisen Sie Aktionselemente einem anderen Benutzer erneut zu
   
@@ -433,9 +433,9 @@ Mithilfe dieser Funktion kann eine Organisation alle aktiven oder ausstehenden A
 4. Klicken Sie auf **OK**, um fortzufahren. Andernfalls klicken Sie auf **Abbrechen**. 
     
 > [!NOTE]
-> Alle Aktionselemente (aktiv und abgeschlossen) werden dem neu ausgewählten Benutzer zugewiesen. Diese Aktion hat jedoch keine Auswirkungen auf den Uploadverlauf des Dokuments; in allen vom zuvor zugewiesenen Benutzer hochgeladenen Dokumenten werden weiterhin das Datum/die Uhrzeit und der Name des zuvor zugewiesenen Benutzers angezeigt. 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-Das Ändern des Uploadverlaufs des Dokuments, um den zuvor zugewiesenen Benutzer zu entfernen, muss manuell ausgeführt werden. In diesem Fall muss der Administrator Folgendes ausführen:
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. Öffnen Sie den zuvor heruntergeladenen Exportbericht.
   
@@ -447,17 +447,17 @@ Das Ändern des Uploadverlaufs des Dokuments, um den zuvor zugewiesenen Benutzer
   
 5. Löschen Sie das Dokument im Nachweisspeicher.
   
-6. Laden Sie das Dokument erneut hoch. Das Dokument weist nun ein Datum und eine Uhrzeit des Uploads sowie den Benutzernamen „Hochgeladen von“ auf. 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>Löschen der Verlaufsdaten von Benutzern
 
-Dadurch werden die Aktionselemente für alle dem zurückgegebenen Benutzer zugewiesenen Aktionselemente auf „Nicht zugewiesen“ festgelegt. Dadurch wird auch für alle von dem zurückgegebenen Benutzer hochgeladenen Dokumente der Wert „Hochgeladen von“ auf „Benutzer entfernt“ festgelegt.
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  So löschen Sie das Aktionselement für das Benutzerkonto und den Uploadverlauf des Dokuments
   
 1. Klicken Sie auf **Löschen**. 
 
-    Es wird ein Bestätigungsdialogfeld mit der Meldung angezeigt, dass dadurch alle Aktionselementzuweisungen sowie der Uploadverlauf des Dokuments für den ausgewählten Benutzer entfernt werden. Diese Aktion kann nicht rückgängig gemacht werden. Sie werden gefragt, ob Sie wirklich fortfahren möchten.
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. Klicken Sie auf **OK**, um fortzufahren. Andernfalls klicken Sie auf **Abbrechen**. 
   
@@ -469,7 +469,7 @@ Im Compliance-Manager erhalten Sie Tools zum Zuweisen, Nachverfolgen und Aufzeic
 
 ## <a name="accessing-compliance-manager"></a>Zugreifen auf den Compliance-Manager
 
-Sie können über das Service Trust Portal auf den Compliance-Manager zugreifen. Alle Personen mit einem Microsoft-Konto oder mit einem Azure Active Directory-Organisationskonto können auf den Compliance-Manager zugreifen.
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![Compliance-Manager – Über das STP-Menü auf Compliance-Manager zugreifen](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -479,7 +479,7 @@ Sie können über das Service Trust Portal auf den Compliance-Manager zugreifen.
     
 3. Klicken Sie im Service Trust Portal auf **Compliance-Manager**. 
     
-4. Wenn der Geheimhaltungsvertrag angezeigt wird, lesen Sie diesen, und klicken Sie dann auf **Ich stimme zu**, um den Vorgang fortzusetzen. Dieser Vorgang ist nur einmal erforderlich; daraufhin wird das Compliance-Manager-Dashboard angezeigt. 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     Um Ihnen den Einstieg zu erleichtern, haben wir standardmäßig die folgenden Bewertungen hinzugefügt:
     
@@ -499,7 +499,7 @@ So zeigen Sie Ihre Aktionselemente an
     
 2. Klicken Sie auf den Link **Aktionselemente**. Die Seite wird so aktualisiert, dass die Ihnen zugewiesenen Aktionselemente angezeigt werden. 
     
-    Standardmäßig werden alle Aktionselemente angezeigt. Wenn Sie Aktionselemente in mehreren Zertifizierungen haben, werden die Namen der Zertifizierungen in den Registerkarten am oberen Rand des Bewertungssteuerelements aufgeführt. Um die Aktionselemente für eine bestimmte Zertifizierung anzuzeigen, klicken Sie auf diese Registerkarte.
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>Hinzufügen einer Bewertung
 
@@ -507,7 +507,7 @@ So fügen Sie eine Bewertung zu Compliance-Manager hinzu
   
 1. Klicken Sie im Compliance-Manager-Dashboard auf ![Symbol zum Hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Bewertung hinzufügen**. 
     
-2. Im Fenster **Bewertung hinzufügen** können Sie eine neue Gruppe zum Hinzufügen der Bewertung erstellen, oder Sie können die Bewertung zu einer vorhandenen Gruppe hinzufügen (die integrierte Gruppe trägt den Namen „Erste Gruppe“). Je nachdem, welche Option Sie auswählen, geben Sie entweder den Namen einer neuen Gruppe ein, oder wählen Sie eine vorhandene Gruppe aus der Dropdownliste aus. Weitere Informationen finden Sie unter [Gruppieren von Bewertungen](#grouping-assessments).
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     Wenn Sie eine neue Gruppe erstellen, können Sie auch Informationen aus einer vorhandenen Gruppe in die neue Bewertung kopieren. Das bedeutet, dass alle Informationen, die den Feldern für Implementierungsdetails, Testplan und Verwaltungsantwort für vom Kunden verwaltete Steuerelemente von Bewertungen in der Gruppe, aus der Sie kopieren, hinzugefügt wurden, in dieselben (oder zugehörigen) vom Kunden verwalteten Steuerelemente in der neuen Bewertung kopiert werden. Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen von Bewertungen in dieser Gruppe in die neue Bewertung kopiert. Weitere Informationen finden Sie unter [Kopieren von Informationen aus vorhandenen Bewertungen](#copying-information-from-existing-assessments).
     
@@ -533,7 +533,7 @@ Wie bereits erwähnt, haben Sie beim Erstellen einer neuen Bewertungsgruppe die 
   
 Sie können die folgenden Informationen von Kunden in eine neuen Bewertung kopieren:
   
-- Bewertungsbenutzer. Ein Bewertungsbenutzer ist ein Benutzer, dem das Steuerelement zugewiesen ist.
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - Status, Testdatum und Testergebnisse.
     
@@ -549,7 +549,7 @@ Ebenso werden Informationen von gemeinsam genutzten und vom Kunden verwalteten S
   
 1. In diesem Abschnitt wird die Bewertungszusammenfassung, einschließlich des Namens der Bewertungsgruppierung, des Produkts, des Bewertungsnamens und der Anzahl von Bewertungssteuerelementen, angezeigt.
     
-2. In diesem Abschnitt werden die Steuerelemente für den Bewertungsfilter angezeigt. Eine ausführlichere Erläuterung der Verwendung von Steuerelementen für den Bewertungsfilter finden Sie im Abschnitt [Verwalten des Bewertungsprozesses](#managing-the-assessment-process). 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. In diesem Abschnitt werden die einzelnen Clouddienste dargestellt, die sich im Bereich der Bewertung befinden.
     
@@ -585,19 +585,19 @@ Nachfolgend finden Sie eine Liste von Aufgaben, die Sie mithilfe der Workflowfea
     
     - **Testergebnis**: Gibt die Liste der Steuerelemente mit dem ausgewählten Testergebnis zurück. 
     
-    Wenn Sie Filterbedingungen anwenden, ändert sich die Ansicht zutreffender Steuerelemente entsprechend der Filterbedingungen. Erweitern Sie die Steuerelementfamilienbereiche, um die folgenden Steuerelementdetails anzuzeigen. 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![Compliance-Manager – Bewertungsansicht – Filtern von Artikelergebnissen](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. Wenn nach dem Auswählen der gewünschten Filter keine Ergebnisse angezeigt werden, bedeutet das, dass es keine Steuerelemente gibt, die den angegebenen Filterbedingungen entsprechen. Wenn Sie zum Beispiel einen bestimmten **zugewiesenen Benutzer** und dann einen **Steuerelement**namen auswählen, der dem diesem Benutzer zugewiesenen Steuerelement entspricht, werden auf der folgenden Seite keine Bewertungen angezeigt. 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **Zuweisen eines Aktionselements zu einem Benutzer**: Sie können ein Aktionselement einer Person zuweisen, um die Anforderungen einer Zertifizierung/Vorschrift zu implementieren oder die Implementierungsanforderungen Ihrer Organisation zu testen, zu überprüfen und zu dokumentieren. Wenn Sie ein Aktionselement zuweisen, können Sie eine E-Mail mit Details zu den empfohlenen Kundenaktionen und der Aktionselementpriorität an die Person senden. Sie können die Zuweisung eines Aktionselements auch aufheben oder ein Aktionselement einer anderen Person erneut zuweisen. 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **Dokumente verwalten** – Von Kunden verwaltete Steuerelemente verfügen auch über eine Position zum Verwalten von Dokumenten, die mit der Durchführung von Implementierungsaufgaben zusammenhängen und zum Durchführen von Test- und Validierungsaufgaben. Jede Person mit der Berechtigung zum Bearbeiten von Daten im Compliance-Manager kann Dokumente hochladen, indem sie auf **Dokumente verwalten** klickt. Nachdem ein Dokument hochgeladen wurde, können Sie auf **Dokumente verwalten** klicken, um Dateien anzuzeigen und herunterzuladen. 
     
 5. **Bereitstellen von Implementierungs- und Testdetails** – Jedes vom Kunden verwaltete Steuerelement weist ein bearbeitbares Feld auf, in das Benutzer Implementierungsdetails eingeben können, welche die Schritte dokumentieren, die von Ihrer Organisation zur Erfüllung der Anforderungen der Zertifizierung/Vorschrift unternommen werden und zur Prüfung und Dokumentation darüber, wie Ihre Organisation diese Anforderungen erfüllt.
     
-6. **Festlegen des Status**: Legen Sie den Status für jedes Element im Rahmen des Bewertungsprozesses fest. Die verfügbaren Statuswerte sind **Implementiert**, **Alternative Implementierung**, **Geplant** und **Nicht im Umfang**. 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **Testdatum und Testergebnis eingeben** – Die Person in der Rolle des Compliance-Manager-Sachverständigen kann überprüfen, dass der geeignete Test durchgeführt wurde, die Implementierungsdetails, den Testplan, die Testergebnisse und alle hochgeladenen Erkenntnisse prüfen und dann das Testdatum und das Testergebnis festlegen. Verfügbare Testergebniswerte sind **Erfolgreich **, **Fehlgeschlagen geringes Risiko**, **Fehlgeschlagen – mittleres Risiko** und **Fehlgeschlagen hohes Risiko**. 
 
@@ -605,7 +605,7 @@ Nachfolgend finden Sie eine Liste von Aufgaben, die Sie mithilfe der Workflowfea
 
 Die in den Bewertungsprozess involvierten Personen in Ihrer Organisation können Compliance-Manager verwenden, um die vom Kunden verwalteten Steuerelemente aller Bewertungen zu prüfen, deren Benutzer sie sind. Wenn ein Benutzer sich beim Compliance-Manager anmeldet und das **Aktionselemente**-Dashboard öffnet, wird eine Liste der ihm zugewiesenen Aktionselemente angezeigt. Je nach der Compliance-Manager-Rolle, die dem Benutzer zugewiesen wurde, kann er Implementierungs- oder Testdetails bereitstellen, den Status hochladen oder Aktionselemente zuweisen. 
   
-Da Zertifizierungssteuerelemente im Allgemeinen von einer Person implementiert und von einer anderen getestet werden, kann das Aktionselement zunächst einer Person für die Implementierung zugewiesen werden. Sobald diese abgeschlossen ist, kann die Person das Aktionselement der nächsten Person zum Testen und Hochladen von Nachweisen zuweisen. Diese Zuweisung/erneute Zuweisung von Steuerelementaktionen kann von allen Benutzern ausgeführt werden, die über eine Compliance-Manager-Rolle mit ausreichenden Berechtigungen verfügen, sodass je nach Bedarf eine zentrale Verwaltung von Steuerelementzuweisungen oder eine dezentralisierte Weiterleitung von Aktionselementen vom Implementierer an den Tester erfolgen kann.
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 So weisen Sie ein Aktionselement zu
   
@@ -617,7 +617,7 @@ So weisen Sie ein Aktionselement zu
     
 4. Klicken Sie in der Spalte **Zugewiesener Benutzer** auf **Zuweisen**. 
     
-5. Klicken Sie im Dialogfeld „Aktionselement zuweisen“ auf das Feld **Assign To**, um die Liste von Benutzern aufzufüllen, denen die Aktion zugewiesen werden kann. Sie können durch die Liste scrollen, um den gewünschten Benutzer zu finden, oder Sie beginnen mit der Eingabe im Feld, um nach dem Benutzernamen zu suchen. 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. Klicken Sie auf den Benutzer, um diesem das Aktionselement zuzuweisen.
     
@@ -627,7 +627,7 @@ So weisen Sie ein Aktionselement zu
  
     Der Benutzer erhält eine Benachrichtigung über die Zuweisung des Aktionselements sowie alle Hinweise, die Sie eingegeben haben.
     
-Die dem Aktionselement zugewiesenen Hinweise werden im Hinweisbereich gespeichert und stehen somit bei der nächsten Zuweisung des Aktionselement zur Verfügung. Diese Hinweise sind nicht schreibgeschützt und können von der Person, die das Aktionselement zuweist, bearbeitet, ersetzt oder entfernt werden.
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportieren von Informationen aus einer Bewertung
 
@@ -641,14 +641,14 @@ So exportieren Sie einen Bewertungsbericht
     
 - Wenn Sie die Seite mit den Bewertungsdetails anzeigen, klicken Sie auf die Schaltfläche **Nach Excel exportieren**, die sich in der oberen rechten Ecke der Seite über der Compliancebewertung der Bewertung befindet.
     
-Der Bewertungsbericht wird in der Browsersitzung heruntergeladen. Wenn kein Popupfenster angezeigt wird, in dem Sie darüber informiert werden, sollten Sie den Downloadordner Ihres Browsers überprüfen.
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>Archivieren einer Bewertung
 
-Wenn Sie eine Bewertung abgeschlossen haben und diese nicht mehr für Compliance-Zwecke benötigen, können Sie sie archivieren. Wenn eine Bewertung archiviert werden, wird sie aus dem Bewertungs-Dashboard entfernt.
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> Wenn eine Bewertung archiviert wird, kann die Archivierung nicht rückgängig gemacht oder die Bewertung in einem Schreib-Lesestatus wiederhergestellt werden. Beachten Sie, dass in archivierten Bewertungen nicht die Links zu hochgeladenen Nachweisdokumenten gespeichert werden, es wird daher dringend empfohlen, dass Sie die Datei vor dem Archivieren exportieren, da der exportierte Bewertungsbericht Links zu den Nachweisdokumenten enthält, sodass Sie weiterhin darauf zugreifen können. 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 So archivieren Sie eine Bewertung
   
@@ -674,9 +674,9 @@ Wenn Sie eine archivierte Bewertung anzeigen, ist keines der normalerweise bearb
 
 ![Service Trust-Portal – Sucheingabefeld](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Klicken Sie in der oberen rechten Ecke der Seite auf die Lupe, um das Sucheingabefeld zu erweitern, geben Sie Ihre Suchbegriffe ein, und drücken Sie die EINGABETASTE. Die Suchsteuerung wird mit dem Suchbegriff im Sucheingabefeld angezeigt; die Suchergebnisse werden darunter angezeigt.
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-Standardmäßig gibt die Suche Dokumentergebnisse zurück, und Sie können die Dropdownlisten „Filtern nach“ verwenden, um die Liste der angezeigten Dokumente zu optimieren oder um Suchergebnisse zu der Ansicht hinzuzufügen oder daraus zu entfernen. Sie können mehrere Filterattribute gleichzeitig verwenden, um die zurückgegebenen Dokumente auf bestimmte Clouddienste, Kategorien von Compliance- oder Sicherheitspraktiken, Regionen oder Branchen einzugrenzen. Klicken Sie auf den Link für den Dokumentnamen, um das Dokument herunterzuladen.
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![Service Trust Portal – Suchen in Dokumenten mit angewendetem Filter](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -689,7 +689,7 @@ Klicken Sie auf den Compliance-Manager-Link, um Suchergebnisse für Compliance-M
  
 ## <a name="localization-support"></a>Unterstützung der Lokalisierung
 
-Im Service Trust Portal können Sie Seiteninhalte in unterschiedlichen Sprachen anzeigen. Um die Seitensprache zu ändern, klicken Sie einfach auf das Weltkugelsymbol in der Ecke links unten, und wählen Sie die gewünschte Sprache aus. 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![Service Trust Portal – Optionen für lokalisierte Inhalte](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -698,9 +698,9 @@ Im Service Trust Portal können Sie Seiteninhalte in unterschiedlichen Sprachen 
 
 Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung stattfindet, um mit Änderungen in behördlichen Vorschriften sowie mit Änderungen in unseren Clouddiensten Schritt halten zu können. Diese Updates umfassen Änderungen an den vom Kunden verwalteten Steuerelementen. Ein Änderungsprotokoll wird bereitgestellt, um Ihnen das Verständnis über die Auswirkung dieser Änderungen zu erleichtern, einschließlich der Details der hinzugefügten oder geänderten Inhalte. Außerdem bietet es Anleitung dazu, welche Auswirkung die Änderungen auf vorhandene Bewertungen haben. Im Allgemeinen gibt es zwei Arten von Änderungen:
   
-- Eine **größere** Änderung ist eine wesentliche Änderung an einer Kundenaktion, z. B. das Hinzufügen oder Entfernen eines Steuerelements oder spezielle nummerierte Schritte, oder eine Änderung der Leitfäden im Zusammenhang mit Verantwortlichkeiten, Empfehlungen oder Nachweisen. Bei größeren Änderungen empfehlen wir, dass Sie Ihre Implementierung und/oder Bewertung des betroffenen Steuerelements erneut bewerten.
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- Eine **kleinere** Änderung ist eine geringfügige Änderung an Kundenaktionen, z. B. die Korrektur eines Tippfehlers oder eines Formatierungsproblems oder das Aktualisieren oder Korrigieren von Hyperlinks. Bei kleineren Änderungen muss dass Steuerelement in der Regel nicht erneut bewertet werden, wir empfehlen aber, dass Sie die aktualisierte Kundenaktion überprüfen.
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>Vom Kunden verwaltete Steuerelemente – Änderungsprotokoll für Juli 2018
 
@@ -742,7 +742,7 @@ Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung sta
 |7.5.1  <br/> ||||||Kleiner  <br/> |Bisher nummeriert als A.7.4.1.  <br/> Ein Tippfehler wurde korrigiert.  <br/> |Keine Aktion erforderlich.  <br/> |
 |||A.8.2.3  <br/> |||3.1.3  <br/> |Kleiner  <br/> |Ein zusätzlicher unnötiger Satz wurde entfernt.  <br/> |Keine Aktion erforderlich.  <br/> |
 ||45 C.F.R. § 164.308(a)(4)(i)  <br/> |A.6.1.2  <br/> ||AC-5(a)  <br/> |3.1.2          3.1.4  <br/> |Kleiner  <br/> |Aktualisierte Leitfäden mit zusätzliche Informationen und Aktionselementen.  <br/> |Überprüfen Sie die aktualisierten Empfehlungen in den Kundenaktionen.  <br/> |
-||45 C.F.R. § 164.308(a)(7)(ii)(C)  <br/> |||RA-2(a)  <br/> ||Kleiner  <br/> |Der Hilfethemenlink zum Importdienst wurde so aktualisiert, dass FWLink verwendet wird.  <br/> |Keine Aktion erforderlich.  <br/> |
+||45 C.F.R. § 164.308(a)(7)(ii)(E)  <br/> |||RA-2(a)  <br/> ||Kleiner  <br/> |Der Hilfethemenlink zum Importdienst wurde so aktualisiert, dass FWLink verwendet wird.  <br/> |Keine Aktion erforderlich.  <br/> |
 |
 
 ### <a name="gdpr-assessment-control-id-change-reference---change-log-for-february-2018"></a>Referenz zur Änderung der Steuerelement-ID für DSGVO Bewertung – Änderungsprotokoll für Februar 2018 

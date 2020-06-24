@@ -15,37 +15,41 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Mit Aufbewahrungsbezeichnungen können Sie einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
-ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-may2020
+- seo-marvel-jun2020
+description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
+ms.openlocfilehash: 1e716cc886e8378308054d4f2eedf961045f4486
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44385007"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817804"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Wenn Sie Inhalte aufbewahren, basiert der Aufbewahrungszeitraum häufig auf dem Alter des Inhalts. Sie bewahren Dokumente beispielsweise für sieben Jahre nach der Erstellung auf, und anschließend werden sie gelöscht. Mit Aufbewahrungsbezeichnungen in Microsoft 365 können Sie jedoch auch einen Aufbewahrungszeitraum festlegen, der auf dem Auftreten eines bestimmten Ereignistyps basiert. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diesen Ereignistyp zugewiesen wurde, werden die Aufbewahrungsaktionen angewendet.
+When you retain content, the retention period is often based on the age of the content - for example, you might retain documents for seven years after they're created and then delete them. But with retention labels in Microsoft 365, you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
 Sie können Bezeichnungen mit ereignisgesteuerter Aufbewahrung zum Beispiel in den folgenden Szenarien verwenden:
   
-- **Mitarbeiter verlässt das Unternehmen** – Angenommen, dass Mitarbeiterdatensätze für 10 Jahre ab dem Zeitpunkt aufbewahrt werden müssen, an dem ein Mitarbeiter das Unternehmen verlässt. Nach Ablauf von 10 Jahren müssen alle Dokumente im Zusammenhang mit der Einstellung, der Leistung und der Beendigung des Arbeitsverhältnisses für diesen Mitarbeiter vernichtet werden. Das Ereignis, das den Aufbewahrungszeitraum von 10 Jahren auslöst, ist der Zeitpunkt, zu dem der Mitarbeiter die Organisation verlässt. 
+- **Employees leaving the organization** Suppose that employee records must be retained for 10 years from the time an employee leaves the organization. After 10 years elapse, all documents related to the hiring, performance, and termination of that employee need to be disposed. The event that triggers the 10-year retention period is the employee leaving the organization. 
     
-- **Vertragsablauf** – Angenommen, alle Datensätze im Zusammenhang mit Verträgen müssen für fünf Jahre ab dem Zeitpunkt aufbewahrt werden, an dem der Vertrag abläuft. Das Ereignis, das den Aufbewahrungszeitraum von fünf Jahren auslöst, ist das Ablaufdatum des Vertrags. 
+- **Contract expiration** Suppose that all records related to contracts need to be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract. 
     
-- **Produktlebensdauer** – Ihre Organisation hat möglicherweise Aufbewahrungspflichten, die sich auf das letzte Fertigungsdatum von Produkten für Inhalte wie technische Daten beziehen. In diesem Fall ist das Datum der letzte Fertigung das Ereignis, das den Aufbewahrungszeitraum auslöst. 
+- **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
     
-Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet. Dies bedeutet:
+Event-driven retention is typically used as part of a records-management process. This means that:
   
-- Bezeichnungen, die auf Ereignissen basieren, klassifizieren den Inhalt in der Regel auch als einen Datensatz. Weitere Informationen finden Sie unter [Verwenden der Inhaltssuche zum Suchen des gesamten Inhalts, auf den eine bestimmte Aufbewahrungsbezeichnung angewendet wurde](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
+- Labels based on events also usually classify content as a record. For more information, see [Using Content Search to find all content with a specific retention label applied to it](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - Ein Dokument, das als Datensatz deklariert wurde, dessen Ereignisauslöser jedoch noch nicht ausgelöst wurde, wird auf unbegrenzte Zeit beibehalten (Datensätze können nicht dauerhaft gelöscht werden), bis ein Ereignis den Aufbewahrungszeitraum des Dokuments auslöst.
     
-- Aufbewahrungsbezeichnungen, die auf einem Ereignis basieren, lösen in der Regel am Ende des Aufbewahrungszeitraums eine Dispositionsprüfung aus, damit ein Datensatzverwalter den Inhalt manuell überprüfen und vernichten kann. Weitere Informationen finden Sie unter [Entfernung von Inhalten](disposition.md).
+- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
     
-Eine ereignisbasierte Aufbewahrungsbezeichnung hat die gleichen Funktionen wie jede andere Aufbewahrungsbezeichnung in Microsoft 365. Weitere Informationen hierzu finden Sie unter [Übersicht über Bezeichnungen](labels.md).
+Eine auf einem Ereignis basierende Bezeichnung weist die gleichen Funktionen wie jede Aufbewahrungs Bezeichnung in Microsoft 365 auf. Weitere Informationen finden Sie unter [Informationen zu Aufbewahrungskennzeichen](labels.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Grundlegendes zur Beziehung zwischen Ereignistypen, Bezeichnungen, Ereignissen und Asset-IDs
 
@@ -59,17 +63,17 @@ Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die
     
 2. Benutzer (in der Regel Datensatzverwalter) wenden diese Aufbewahrungsbezeichnungen auf Inhalte an, und geben (bei SharePoint- und OneDrive-Dokumenten) eine Objekt-ID für jedes Element ein. In diesem Beispiel ist die Objekt-ID ein von der Organisation verwendeter Produktname oder -code. Daher wird den Datensätzen jedes Produkts eine Aufbewahrungsbezeichnung zugewiesen, und jeder Datensatz verfügt über eine Eigenschaft, die eine Objekt-ID enthält. Das Diagramm stellt **alle Inhalte** für alle Produktdatensätze in einer Organisation dar, wobei jedes Element die Objekt-ID des Produkts trägt, um dessen Datensatz es sich handelt. 
     
-3. „Product Lifetime“ ist der Ereignistyp. Ein bestimmtes Produkt, das das Ende seines Lebenszyklus erreicht, ist ein Ereignis. Wenn ein Ereignis dieses Typs auftritt (in diesem Fall, wenn ein Produkt das Ende seiner Lebensdauer erreicht), erstellen Sie ein Ereignis, das Folgendes angibt:
+3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
     
   - Eine Asset-ID (für SharePoint- und OneDrive-Dokumente)
     
-  - Schlüsselwörter (für Exchange-Elemente). In diesem Beispiel verwendet das Unternehmen einen Produktcode in Nachrichten, die Produktdatensätze enthalten, sodass das Schlüsselwort für Exchange-Elemente der Objekt-ID für SharePoint- und OneDrive-Dokumente entspricht.
+  - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann das aktuelle, ein vergangenes oder ein zukünftiges Datum sein.
+  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
     
 4. Nach der Erstellung eines Ereignisses wird dieses Ereignisdatum mit allen Inhalten synchronisiert, die eine Aufbewahrungsbezeichnung dieses Ereignistyps aufweisen und die angegebene Objekt-ID bzw. das angegebene Schlüsselwort enthalten. Wie bei jeder Aufbewahrungsbezeichnung kann die Synchronisierung bis zu 7 Tage dauern. Im vorherigen Diagramm haben alle rot eingekreisten Elemente den Aufbewahrungszeitraum durch dieses Ereignis ausgelöst. Mit anderen Worten, wenn dieses Produkt das Ende seiner Lebensdauer erreicht, löst dieses Ereignis den Aufbewahrungszeitraum für die Produktdatensätze aus.
     
-Es ist wichtig zu verstehen, dass der Aufbewahrungszeitraum für **alle Inhalte** mit einer Bezeichnung dieses Ereignistyps durch das Ereignis ausgelöst wird, wenn Sie keine Objekt-ID oder Schlüsselwörter für ein Ereignis angeben. Dies bedeutet, dass im vorherigen Diagramm der Aufbewahrungszeitraum für alle Inhalte beginnen würde. Dies ist möglicherweise nicht, was Sie beabsichtigen. 
+Folgendes sollten Sie verstehen: Wenn Sie für ein Ereignis keine Objekt-ID und keine Schlüsselwörter angeben, wird der Aufbewahrungszeitraum für **alle Inhalte** mit einer Bezeichnung dieses Ereignistyps durch das Ereignis ausgelöst. Dies bedeutet, dass im vorherigen Diagramm der Aufbewahrungszeitraum für alle Inhalte beginnen würde. Dies ist möglicherweise nicht, was Sie beabsichtigen. 
   
 Denken Sie schließlich daran, dass es zu jeder Aufbewahrungsbezeichnung eigene Aufbewahrungseinstellungen gibt. In diesem Beispiel ist für alle ein Zeitraum von 10 Jahren angegeben, aber es ist möglich, dass ein Ereignis Aufbewahrungsbezeichnungen mit unterschiedlichen Aufbewahrungszeiträumen auslöst.
   
@@ -80,13 +84,13 @@ Allgemeiner Workflow für die ereignisgesteuerte Aufbewahrung:
 ![Diagramm des Arbeitsablaufs zum Einrichten der ereignisgesteuerten Aufbewahrung](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Unter [Verwalten des Lebenszyklus von SharePoint-Dokumenten mithilfe von Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md) finden Sie ein detailliertes Szenario zur Verwendung von verwalteten Eigenschaften in SharePoint, um Aufbewahrungsbezeichnungen automatisch anzuwenden und die ereignisgesteuerte Aufbewahrung zu implementieren.
+> Unter [Verwalten des Lebenszyklus von SharePoint-Dokumenten mithilfe von Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md)finden Sie ein detailliertes Szenario zur Verwendung von verwalteten Eigenschaften in SharePoint, um Aufbewahrungsbezeichnungen automatisch anzuwenden und die ereignisgesteuerte Aufbewahrung zu implementieren.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Schritt 1: Eine Bezeichnung erstellen, deren Aufbewahrungszeitraum auf einem Ereignis basiert
 
-Wählen Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Security &amp; Compliance Center in der linken Navigation **Klassifikation** > **Aufbewahrungsbezeichnungen** > **Bezeichnungen** (Registerkarte) > **Bezeichnung erstellen** aus.
+Wählen Sie im Microsoft 365 Compliance Center im linken Navigationsbereich **Information Governance** > **Kennzeichnungen** > **eine Kennzeichnung erstellen**. Wenn **Information Governance** im Navigationsbereich nicht angezeigt wird, scrollen Sie nach unten und wählen Sie **alle anzeigen** aus.
   
-Wenn Sie die Bezeichnung erstellen, aktivieren Sie die Aufbewahrung und wählen Sie die unten aufgeführte Option zum Beibehalten oder Löschen von Inhalt basierend auf einem Ereignis. Dies bedeutet, dass die Aufbewahrungseinstellungen erst in Schritt 5 wirksam werden, wenn Sie auf der Seite **Ereignisse** ein Ereignis erstellen. 
+When you create the label, turn on retention, and then choose the option shown below to retain or delete the content based on an event. This means that the retention settings won't go into effect until Step 5, when you create an event on the **Events** page. 
   
 Beachten Sie, dass die ereignisgesteuerte Aufbewahrung in der Regel für Inhalt verwendet wird, der als Datensatz klassifiziert ist. Aus diesem Grund sollten Sie, wenn Sie Aufbewahrungsbezeichnungen basierend auf einem Ereignis erstellen, in der Regel die Option **Bezeichnung verwenden, um Inhalte als "Datensatz" zu klassifizieren** auswählen.
   
@@ -100,7 +104,7 @@ Beachten Sie außerdem, dass für die ereignisgesteuerte Aufbewahrung Aufbewahru
   
 ### <a name="step-2-choose-an-event-type-for-that-label"></a>Schritt 2: Einen Ereignistyps für die Bezeichnung auswählen
 
-Nachdem Sie die Option ausgewählt haben, dass die Bezeichnung auf **einem Ereignis** basieren soll, wird in den Bezeichnungseinstellungen die Option zum **Auswählen eines Ereignistyps** angezeigt. Ein Ereignistyp ist einfach eine allgemeine Beschreibung eines Ereignisses, das Sie der Bezeichnung zuordnen möchten.
+Nachdem Sie in den Bezeichnungseinstellungen die Option ausgewählt haben, die Bezeichnung auf **einem Ereignis** zu basieren, wird die Option zum **Auswählen eines Ereignistyps** angezeigt. Ein Ereignistyp ist einfach eine allgemeine Beschreibung eines Ereignisses, das Sie einer Bezeichnung zuordnen möchten.
   
 Wenn Sie zum Beispiel einen Ereignistyp mit dem Namen „Product Lifetime“ haben, erstellen Sie ereignisbasierte Aufbewahrungsbezeichnungen mit Namen, die beschreiben, auf welchen Inhaltstyp die Bezeichnungen angewendet werden sollen, z. B. „Produktentwicklungsdateien“ oder „Produktgeschäft-Entscheidungsdatensätze“.
   
@@ -119,9 +123,12 @@ Wie jede Aufbewahrungsbezeichnung müssen Sie auch ereignisbasierte Bezeichnunge
 > - Registerkarte **Datensatzverwaltung** > **Bezeichnungsrichtlinien**
 > - Registerkarte **Datensteuerung** > **Bezeichnungen**  oder Registerkarte **Bezeichnungsrichtlinien**
 
+
+![Optionen zum Veröffentlichen oder automatischen Anwenden einer Aufbewahrungsbezeichnung](..\media\compliance-information-governance-publish-labels.png)
+
 ### <a name="step-4-enter-an-asset-id"></a>Schritt 4: Eine Asset-ID eingeben
 
-Nachdem eine ereignisgesteuerte Bezeichnung auf Inhalt angewendet wurde, können Sie für jedes Element eine Objekt-ID eingeben. Ihre Organisation kann beispielsweise folgende Elemente verwenden:
+After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
   
 - Produktcodes, um Inhalt nur für ein bestimmtes Produkt aufzubewahren.
     
@@ -135,7 +142,7 @@ Beachten Sie, dass die Objekt-ID nur eine weitere Dokumenteigenschaft in SharePo
   
 ### <a name="step-5-create-an-event"></a>Schritt 5: Erstellen eines Ereignisses
 
-Wenn eine bestimmte Instanz dieses Ereignistyps eintritt (ein Produkt erreicht z. B. das Ende seiner Lebensdauer), gehen Sie zur Seite **Datensatzverwaltung** > **Ereignisse** im Security &amp; Compliance Center, und erstellen Sie ein Ereignis. Sie müssen ein Ereignis manuell auslösen, indem Sie es erstellen.
+When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the **Records management** > **Events** page in the Microsoft 365 compliance center and create an event. You need to manually trigger an event by creating it.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Schritt 6: Auswählen des gleichen Ereignistyps, der von der Bezeichnung in Schritt 2 verwendet wird
 
@@ -145,13 +152,13 @@ Wenn Sie ein Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der v
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>Schritt 7: Stichwörter oder Asset-ID eingeben
 
-Jetzt können Sie den Umfang der Inhalte eingrenzen, indem Sie Asset-IDs für SharePoint- und OneDrive-Inhalte oder Stichwörter für Exchange-Inhalte angeben. Bei Asset IDs wird die Aufbewahrung nur für Inhalte mit dem angegebenen Eigenschaft-Wert-Paar erzwungen. Wenn keine Asset-ID eingegeben wird, wird der **gesamte Inhalt**, der Bezeichnungen dieses Ereignistyps aufweist, mit dem gleichen Aufbewahrungsdatum versehen. 
+Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all content** with labels of that event type get the same retention date applied to them. 
   
 Beachten Sie, dass die Objekt-ID nur eine weitere Dokumenteigenschaft in SharePoint und OneDrive for Business ist. Wenn Sie die Eigenschaft "Objekt-ID" verwenden, geben Sie "ComplianceAssetID:\<value\>" in das untenstehende Feld für Objekt-IDs ein.
   
-Ihre Organisation hat möglicherweise andere Eigenschaften und IDs auf die Dokumente angewendet, die sich auf diesen Ereignistyp beziehen. Wenn Sie zum Beispiel die Datensatz eines bestimmten Produkts ermitteln müssen, kann die ID eine Kombination aus Ihrer benutzerdefinierten ProductID-Eigenschaft und den Wert „XYZ“ sein. In diesem Fall würden Sie „ProductID:XYZ“ in das Feld für die Asset-IDs eingeben.
+Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter ProductID:XYZ in the box for asset IDs shown below.
   
-Für Exchange-Elemente können Sie Stichwörter verwenden. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie AND, OR und NOT verfeinern. Weitere Informationen zu Operatoren finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 Wählen Sie schließlich das Datum aus, an dem das Ereignis eingetreten ist. Dieses Datum wird als Anfang des Aufbewahrungszeitraums verwendet. Nach der Erstellung eines Ereignisses wird dieses Ereignisdatum mit allen Inhalten synchronisiert, die eine Aufbewahrungsbezeichnung dieses Ereignistyps, die Objekt-ID und die Schlüsselwörter aufweisen.  Wie bei jeder Aufbewahrungsbezeichnung kann die Synchronisierung bis zu 7 Tage dauern.
   
@@ -171,13 +178,13 @@ Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen f�
   
 ## <a name="permissions"></a>Berechtigungen
 
-Um Zugriff auf die Seite **Ereignisse** zu erhalten, müssen Prüfer Mitglied einer Rollengruppe sein, die die Rolle **Disposition Management** und die Rolle **View-Only Audit Logs** hat. Es wird empfohlen, eine neue Rollengruppe namens „Disposition Reviewers“ zu erstellen, diese beiden Rollen zu dieser Rollengruppe hinzuzufügen und anschließend Mitglieder zur Rollengruppe hinzuzufügen. 
+To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisieren von Ereignissen mit PowerShell
 
-Im Admin Center können Sie Ereignisse nur manuell erstellen. Es ist nicht möglich, ein Ereignis bei seinem Auftreten automatisch auszulösen. Sie können jedoch eine Rest-API verwenden, um automatisch Ereignisse auszulösen; weitere Informationen finden Sie unter [Automatisieren ereignisbasierter Aufbewahrung](automate-event-driven-retention.md).
+In the admin center, you can only create events manually; it's not possible to automatically trigger an event when it occurs. However, you can use a Rest API to trigger events automatically; for more information, see [Automate event-based retention](automate-event-driven-retention.md).
 
 Sie können auch ereignisbasierte Aufbewahrung aus Ihren Geschäftsanwendungen heraus mithilfe eines PowerShell-Skripts automatisieren. PowerShell-Cmdlets für die ereignisgesteuerte Aufbewahrung:
   

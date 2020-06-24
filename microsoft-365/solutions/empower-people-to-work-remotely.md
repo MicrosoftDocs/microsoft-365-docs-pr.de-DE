@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Dienstinfrastruktur, die es Ihren Arbeitnehmern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 94e90e0839815ca8045731f809e50d08622700f4
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560462"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724816"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
-Ihr Unternehmen muss möglicherweise Ihren Arbeitnehmern von zu Hause aus einen sicheren Zugang zu den Informationen, Tools und Ressourcen Ihres Unternehmens vor Ort und in der Cloud ermöglichen. Für viele Organisationen ist es wichtig, dass die Arbeitnehmer auch außerhalb des Büros nahtlos und sicher arbeiten können:
+Ihr Unternehmen muss möglicherweise Ihren Arbeitnehmern von zu Hause aus einen sicheren Zugang zu den Informationen, Tools und Ressourcen Ihres Unternehmens vor Ort und in der Cloud ermöglichen. Es ist für viele Organisationen wichtig, den Mitarbeitern das Arbeiten außerhalb des Büros zu ermöglichen:
 
 - Einsparen von Bürofläche.
 - Einstellung und Bindung von Arbeitnehmern, die nicht bereit sind, umzuziehen.
 - Verringern Sie das Pendeln von Arbeitnehmern, sodass ihnen mehr Zeit bleibt, produktiv zu sein und stressmindernde Tätigkeiten außerhalb der Arbeit zu verrichten.
 
-Remotearbeit, auch als "Telearbeit" oder "Heimarbeit" bezeichnet, kann ein breites Spektrum umfassen:
+Microsoft 365 bietet die Möglichkeit, Ihre Mitarbeiter zu befähigen, Remote zu arbeiten.
 
-- Arbeitnehmer, die sich gelegentlich für Konferenzen oder Kundenbesprechungen außerhalb des Büros befinden.
-- Einige Arbeitnehmer, die Telearbeit in Vollzeit ausüben.
-- Eine komplette Remoteorganisation, die kein eigenes Büro unterhält und deren Mitarbeiter alle remote arbeiten.
+![Fördern Ihrer Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-Remote-Mitarbeiter können von überall auf der Welt und jederzeit auf Folgendes zugreifen:
 
-- Organisationsressourcen, wie sie z. B. in lokalen Anwendungsrechenzentren verfügbar sind.
-- Cloudbasierte Dienste und Daten in Ihrem Microsoft 365-Abonnement, z. B. Microsoft Teams, Exchange Online, SharePoint und OneDrive.
+| | |
+|:-------|:-----|
+| Verbunden | Von überall auf der Welt und jederzeit können Remote-Mitarbeiter zugreifen: <ul><li>Cloud-basierte Dienste und Daten in Ihrem Microsoft 365-Abonnement. </li><li>Organisationsressourcen, wie sie z. B. in lokalen Anwendungsrechenzentren verfügbar sind.</li></ul> |
+| Sicher | Die Anmeldungen werden durch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) und die integrierten Sicherheitsfeatures von Microsoft 365 und Windows 10 geschützt und schützen vor Schadsoftware, bösartigen Angriffen und Datenverlust. |
+| Verwaltet | Die Geräte Ihrer aus der Ferne arbeitenden Mitarbeiter können mit Sicherheitseinstellungen, zulässigen Apps und zur Einhaltung der Systemintegrität aus der Cloud verwaltet werden. |
+| Kooperativ und produktiv | Ihre aus der Ferne arbeitenden Mitarbeiter können so produktiv wie die lokal arbeitenden sein – und das auf sehr kooperative Weise mit: <ul><li>Onlinebesprechungen und Chatsitzungen mit Teams. </li><li>Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit mit SharePoint und OneDrive. </li><li>Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen. </li></ul> |
+|||
 
-Für einen flüssigen Anmeldevorgang sollten Ihre AD DS-Benutzerkonten (Active Directory Domain Services) mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie in Intune registriert werden. Hier ist eine allgemeine Übersicht über die Infrastruktur.
+Für einen flüssigen Anmeldevorgang sollten Ihre lokalen AD DS-Benutzerkonten (Active Directory Domain Services) mit Azure Active Directory (Azure AD) synchronisiert werden. Um Ihre Windows 10-Geräte zu schützen, sollten sie in Intune registriert werden. Hier ist eine allgemeine Übersicht über die Infrastruktur.
 
 ![Grundlegende Infrastruktur für Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-Zur Unterstützung Ihrer Remotemitarbeiter, beispielsweise als Reaktion auf die COVID-19-Krise, bietet Microsoft 365 eine umfassende Kombination aus Features für die Zusammenarbeit, z. B.:
-
-- Onlinebesprechungen und Chatsitzungen.
-- Freigegebene Arbeitsbereiche für cloudbasierte Dateispeicherung mit globalem Zugriff und Zusammenarbeit in Echtzeit.
-- Gemeinsame Aufgaben und Workflows, um die Arbeit aufzuteilen und Dinge zu erledigen.
-
-Für eine starke Sicherheit bietet Microsoft 365 Folgendes:
-
-- Anforderungen für eine erzwungene Authentifizierung, Erkennen von und Reagieren auf Anmeldungen mit hohem Risiko und Blockieren ausgewählter Apps und nicht kompatibler Geräte.
-- Verschlüsselte Verbindungen und digitale Objekte in der Cloud.
-- Berechtigungen, mit denen definiert werden kann, wer mit Dateien wie umgehen kann.
-- Umfassende Sicherheitsfeatures zum Schutz von Windows 10-Geräten.
-
-Verwenden Sie zur Erfüllung dieser Voraussetzungen für Remotemitarbeiter die folgenden Microsoft 365-Funktionen und -Features.
+Verwenden Sie zur Erfüllung der Voraussetzungen für Remotemitarbeiter die folgenden Microsoft 365-Funktionen und -Features.
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|

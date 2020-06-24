@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
-ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407944"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44816997"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -49,13 +49,13 @@ Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angeführten Gebüh
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
   
 ## <a name="view-a-bill-or-invoice"></a>Anzeigen einer Rechnung
 
 ::: moniker range="o365-worldwide"
 
-1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Rechnungen & Zahlungen</a>.
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
 
 ::: moniker-end
 
@@ -71,21 +71,20 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 
 ::: moniker-end
 
-2. Wählen Sie einen Datumsbereich aus der Dropdown-Liste aus und wählen Sie dann die Reihenfolge aus, die Sie anzeigen möchten.
+2. Wählen Sie also auf der Registerkarte **Rechnungen** einen Datumsbereich aus der Dropdown-Liste aus und wählen Sie dann die Reihenfolge aus, die Sie anzeigen möchten.
 
 3. Auf der Übersichtsseite sehen Sie Folgendes:
 
-  - Der Gesamtsaldo, der aktuelle fällige Gesamtbetrag, das Fälligkeitsdatum der Zahlung, der Betrag der letzten Zahlung und das Empfangsdatum.
+    - Der Gesamtsaldo, der aktuelle fällige Gesamtbetrag, das Fälligkeitsdatum der Zahlung, der Betrag der letzten Zahlung und das Empfangsdatum.
 
-  - Zahlungsanweisungen.
+    - Zahlungsanweisungen.
 
-  - Eine Aufzeichnung der letzten Zahlungstermine und der bezahlten Beträge.
+    - Eine Aufzeichnung der letzten Zahlungstermine und der bezahlten Beträge.
 
-  - Das Erstellungsdatum der Bestellung und die Auftragsnummer.
+    - Das Erstellungsdatum der Bestellung und die Auftragsnummer.
 
 4. Um eine PDF-Kopie der Rechnung zu drucken oder zu speichern, wählen Sie **PDF herunterladen**.
 
-  
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Bezahlung per Rechnung, Kreditkarte oder Bankkonto](pay-for-your-subscription.md)

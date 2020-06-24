@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036208"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800020"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Zusammenfassung Datenschutz-Grundverordnung
 
@@ -293,8 +293,7 @@ Personenbezogene Daten sind alle Informationen, die eine identifizierte oder ide
 - Steuernummer
 - Geschäftliche Adresse
 - Kreditkartennummer/EC-Kartennummer
-- Beiträge in sozialen Netzwerken
-- Beiträge in sozialen Netzwerken
+- Beiträge für soziale Medien
 - IP-Adresse (EU-Raum)
 - Standort/GPS-Daten
 - Cookies

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Lernen Sie die verschiedenen Ressourcen kennen, die Sie verwenden können, um Microsoft 365 Enterprise in Ihrer Organisation bereitzustellen.
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268332"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819328"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Bereitstellen von Microsoft 365 Enterprise
 
@@ -59,7 +59,7 @@ Wenn Sie Microsoft 365 Enterprise selbst bereitstellen möchten, können Sie:
 
   **Wenn Sie eine kleinere oder neuere Organisation sind**, folgen Sie den Phasen, die erforderlich sind, um Ihre Infrastruktur methodisch aufzubauen.
 
-  Sie können jedoch Phasen oder Teile der Phasen dieser Infrastruktur in beliebiger Reihenfolge, [eine nach der anderen oder parallel](deployment-strategies-microsoft-365-enterprise.md) bereitstellen, um sie in Ihre aktuelle Infrastruktur zu integrieren, sie an Ihre IT-Pläne und -Ressourcen anzupassen und Ihre Geschäftsanforderungen zu erfüllen. Für eine vereinfachte Bereitstellung für Nicht-Unternehmen [klicken](deploy-foundation-infrastructure-non-enterprises.md) Sie hier.
+  Sie können jedoch Phasen oder Teile der Phasen dieser Infrastruktur in beliebiger Reihenfolge, [eine nach der anderen oder parallel](deployment-strategies-microsoft-365-enterprise.md) bereitstellen, um sie in Ihre aktuelle Infrastruktur zu integrieren, sie an Ihre IT-Pläne und -Ressourcen anzupassen und Ihre Geschäftsanforderungen zu erfüllen. Um eine vereinfachte Bereitstellung für Nicht-Unternehmen zu finden, wechseln Sie zu [Foundation-Infrastruktur für Nicht-Unternehmen](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Wenn Sie eine Unternehmensorganisation sind**, betrachten Sie die Phasen als Schichten der IT-Infrastruktur und nicht als einen definierten Pfad, und bestimmen Sie, wie Sie am besten auf die Einhaltung der Anforderungen für jede Schicht in Ihrer Organisation hinarbeiten können.
 
@@ -71,7 +71,7 @@ Die Beziehung zwischen der Foundation-Infrastruktur und den Workloads.
 
 Workloads werden zusätzlich zur Foundation-Infrastruktur ausgeführt. Sie müssen jedoch nicht alle Phasen der Foundation-Infrastruktur vollständig durchlaufen haben, um Arbeitslasten für Produktivität und Zusammenarbeit verwenden zu können.
 
-Beginnen Sie Ihre End-to-End-Bereitstellung [hier](deploy-foundation-infrastructure.md).
+Erhalten Sie einen selbstständigen Einstieg in Ihre End-to-End-Einrichtung unter [Microsoft 365 Enterprise Foundation-Infrastruktur](deploy-foundation-infrastructure.md).
 
 ## <a name="take-a-test-drive"></a>Testen
 

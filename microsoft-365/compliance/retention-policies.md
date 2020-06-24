@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Hier erfahren Sie, wie Sie mithilfe einer Aufbewahrungsrichtlinie Inhalte beibehalten oder löschen und wie Sie eine einzelne Richtlinie für die gesamte Organisation oder für bestimmte Speicherorte oder Benutzer anwenden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695138"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818925"
 ---
 # <a name="learn-about-retention-policies"></a>Informationen zu Aufbewahrungsrichtlinien
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglich zu – E-Mails, Dokumente, Chatnachrichten usw. Eine effektive Verwaltung bzw. Governance dieser Informationen ist wichtig, da Sie:
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **branchenspezifische Vorschriften und interne Richtlinien einhalten müssen**, nach denen Inhalte für eine bestimmte Mindestdauer aufzubewahren sind – z. B. müssen Sie gemäß dem Sarbanes-Oxley Act möglicherweise bestimmte Arten von Inhalten sieben Jahre lang aufbewahren. 
     
@@ -36,7 +37,7 @@ In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglic
     
 - **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
     
-Eine Aufbewahrungsrichtlinie kann Ihnen dabei helfen, alle diese Ziele zu erreichen. Das Verwalten von Inhalten macht häufig zwei Aktionen erforderlich:
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden 
     
@@ -50,7 +51,7 @@ Mit einer Aufbewahrungsrichtlinie können Sie:
     
 - eine Richtlinie auf alle Inhalte oder auf bestimmte Kriterien erfüllende Inhalte anwenden, z. B. auf Inhalte, die bestimmte Schlüsselwörter oder [Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md) enthalten.
     
-Wenn Inhalte einer Aufbewahrungsrichtlinie unterliegen, können Benutzer diese Inhalte weiterhin bearbeiten und verwenden, als hätte sich nichts geändert, da der Inhalt an seinem ursprünglichen Speicherort beibehalten wird. Falls Inhalte, die der Aufbewahrungsrichtlinie unterliegen, jedoch bearbeitet oder gelöscht werden, wird eine Kopie des Originalinhalts an einem sicheren Standort gespeichert, an dem sie beibehalten wird, solange die entsprechende Aufbewahrungsrichtlinie gilt. Weitere Informationen hierzu finden Sie im Abschnitt [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten](#how-a-retention-policy-works-with-content-in-place) auf dieser Seite.
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 Einige Organisationen müssen darüber hinaus Vorschriften wie die Richtlinie 17a-4 der Securities and Exchange Commission (SEC, US-Börsenaufsichtsbehörde) einhalten. Diese Verordnung gibt vor, dass eine Aufbewahrungsrichtlinie nach deren Aktivierung nicht deaktiviert oder weniger restriktiv eingestellt werden kann. Um diese Anforderung zu erfüllen, können Sie die **Erhaltungssperre** verwenden. Nachdem eine Aufbewahrungsrichtlinie gesperrt wurde, kann niemand – auch nicht ein Administrator – die Richtlinie deaktivieren oder weniger restriktiv einstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Verwenden der Erhaltungssperre zur Einhaltung gesetzlicher Vorschriften](#use-preservation-lock-to-comply-with-regulatory-requirements) auf dieser Seite.
 

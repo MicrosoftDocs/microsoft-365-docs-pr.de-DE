@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Konfigurationsempfehlungen für den Schutz von Dateien in Microsoft Teams.
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159431"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702512"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -50,7 +50,7 @@ Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfo
 
 Die folgende Tabelle enthält die Konfigurationen für jede Ebene. Verwenden Sie diese Konfigurationen als Ausgangsempfehlungen, und passen Sie die Websitekonfigurationen entsprechend den Bedürfnissen Ihrer Organisation an. Sie benötigen möglicherweise nicht jede Ebene.
 
-||**Basisplan (öffentlich)**|**Basisplan (privat)**|**Vertraulich**|**Streng vertraulich**|
+||Basisplan (öffentlich)|Basisplan (privat)|Vertraulich|Streng vertraulich|
 |:-----|:-----|:-----|:-----|:-----|
 |Privates oder öffentliches Team|Öffentlich|Private|Private|Private|
 |Wer hat Zugriff?|Alle Benutzer in der Organisation, einschließlich der B2B-Benutzer.|Nur Mitglieder des Teams. Andere Benutzer können den Zugriff auf die zugeordnete Website anfordern.|Nur Mitglieder des Teams.|Nur Mitglieder des Teams.|
