@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über das Aufbewahrungsverhalten, das speziell für Exchange-E-Mails und öffentliche Exchange-Ordner gilt.
-ms.openlocfilehash: db39ab0f1eca1cc03dd0bbb5ffb500658695247a
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292533"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800010"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
@@ -77,7 +77,7 @@ Wenn Sie die ausgewählten Typen für Exchange-Elemente in einer Aufbewahrungsri
 
 ### <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
-Wenn ein Benutzer Ihre Organisation verlässt und sein Postfach in einer Aufbewahrungsrichtlinie enthalten ist, wird das Postfach zu einem inaktiven Postfach, wenn das Office 365-Konto des Benutzers gelöscht wird. Die Inhalte eines inaktiven Postfachs unterliegen weiterhin jeglicher Aufbewahrungsrichtlinie, die dem Postfach zugewiesen wurde, bevor es inaktiv wurde, und die Inhalte sind für eDiscovery-Suchen verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
+Wenn ein Benutzer Ihre Organisation verlässt und sein Postfach in einer Aufbewahrungsrichtlinie enthalten ist, wird das Postfach zu einem inaktiven Postfach, wenn das Microsoft 365-Konto des Benutzers gelöscht wird. Die Inhalte eines inaktiven Postfachs unterliegen weiterhin jeglicher Aufbewahrungsrichtlinie, die dem Postfach zugewiesen wurde, bevor es inaktiv wurde, und die Inhalte sind für eDiscovery-Suchen verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Konfigurieren einer Aufbewahrungsrichtlinie für Exchange
 
@@ -87,5 +87,6 @@ Wählen Sie auf der Seite **Speicherorte auswählen** des Assistenten eine der f
 
 - **Richtlinie nur auf Inhalte in Exchange-E-Mails, öffentlichen Ordnern, Office 365-Gruppen, OneDrive und SharePoint-Dokumenten anwenden**
 
-- **Bestimmte Speicherorte auswählen** > **Exchange-E-Mail** und **Öffentliche Exchange-Ordner**
+- **Bestimmte Speicherorte auswählen** > **Exchange-E-Mail** und **Öffentliche Exchange-Ordner** und **Office 365-Gruppen**.
 
+Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Wenn Sie Inhalte in diesen Postfächern beibehalten möchten, wählen Sie den **Office 365-Gruppen**-Speicherort aus.
