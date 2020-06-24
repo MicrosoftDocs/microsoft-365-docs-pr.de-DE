@@ -24,18 +24,20 @@ description: 'Erfahren Sie mehr über Abonnements und Lizenzen in Microsoft 365 
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402402"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844680"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 
 In diesem Artikel wird die Beziehung zwischen Abonnements und Lizenzen erläutert, und Sie erhalten zusätzliche Informationen zu den [Personen, die Lizenzen zuweisen können](#find-out-who-can-assign-licenses) sowie Antworten auf die Fragen [Was passiert, wenn Sie einer Person eine Lizenz zuweisen?](#understand-what-happens-when-you-assign-a-license-to-someone) und[ Auf wie vielen Geräten kann Office installiert werden?](#how-many-devices-can-people-install-office-on). Der Artikel umfasst außerdem Links zu [Grundlegendes zu Lizenzen für nicht benutzergebundene Postfächer](#understand-licenses-for-non-user-mailboxes) und [Artikel zum Verwalten von Lizenzen](#articles-about-managing-licenses).
   
 Wenn Sie ein Abonnement für Microsoft 365 for Business erwerben, registrieren Sie sich für eine Reihe von Anwendungen und Diensten, die Sie entweder monatlich oder jährlich bezahlen. Die Anwendungen und Dienste, die Sie im Rahmen Ihres Abonnements erhalten, hängen davon ab, welches Produkt Sie erworben haben, beispielsweise Microsoft 365 apps for Business oder Microsoft 365 Business Standard. Sie können die Lieferumfang jedes Produkts auf der [Seite Microsoft 365 kaufen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)überprüfen. 
+
+Sie können verschiedene Lizenzierungsoptionen in [Microsoft 365 für kleine und mittelständische Unternehmen](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb) überprüfen.
 
 Wenn Sie ein Abonnement kaufen, geben Sie die Anzahl der Lizenzen an, die Sie benötigen, und zwar basierend auf der Anzahl der in Ihrer Organisation beschäftigten Mitarbeiter. Nach Abschluss des Kaufs erstellen Sie Konten für die Personen und weisen dann jeder Person eine Lizenz zu. Wenn sich die Anforderungen Ihrer Organisation ändern, können Sie zusätzliche Lizenzen für neue Benutzer erwerben, oder bestehende Lizenzen anderen Benutzern zuweisen, wenn jemand Ihre Organisation verlässt. 
 
@@ -44,7 +46,7 @@ Wenn Sie über mehr als ein Abonnement verfügen, können Sie unterschiedlichen 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Personen, die Lizenzen zuweisen können
 
-Verschiedene Typen von Administratoren können je nach den ihnen zugewiesenen Rollen auf unterschiedliche Weise mit Lizenzen arbeiten. In der folgenden Tabelle finden Sie eine Liste der häufigsten Optionen. Eine vollständige Liste der Administratorrollen und -berechtigungen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**Administratorrolle**|**Lizenz zuweisen**|**Lizenz entfernen**|**Weitere Lizenzen erwerben**|**Löschen eines Kontos**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -81,7 +83,7 @@ Wenn Ihr Abonnement ein beliebiges der folgenden Produkte umfasst, kann jede Per
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Grundlegendes zu Lizenzen für nicht benutzergebundene Postfächer
 
-Sie müssen keine Lizenzen für Ressourcenpostfächer, Raumpostfächer und freigegebene Postfächer zuweisen, es sei denn, das Speicherkontingent von 50 Gigabyte (GB) wird überschritten. Weitere Informationen zu nicht benutzergebundenen Postfächern finden Sie in den folgenden Artikeln:
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Erstellen eines freigegebenen Postfachs](../../admin/email/create-a-shared-mailbox.md)
     

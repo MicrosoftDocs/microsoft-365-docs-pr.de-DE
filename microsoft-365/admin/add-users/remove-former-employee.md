@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780577"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844858"
 ---
 # <a name="remove-a-former-employee"></a>Entfernen eines ehemaligen Mitarbeiters
 
@@ -51,7 +51,7 @@ Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
 
-So entfernen Sie einen Mitarbeiter:
+So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -161,7 +161,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
  
@@ -177,7 +177,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -193,7 +193,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Wählen Sie **Speichern**. 
+5. Klicken Sie auf **Speichern**. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -215,7 +215,7 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
 5. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie Daten Zurücksetzungs Gerät **wischen**aus ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , und wählen Sie dann **blockieren**aus. 
     
-6. Wählen Sie **Speichern**. 
+6. Klicken Sie auf **Speichern**. 
     
     **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
     

@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Ermitteln Sie die Datenschutzbestimmungen, die relevanten Szenarien, ihre Bereitschaft und die Typen vertraulicher Informationen in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: 532a6764cd1d21eb5eb0402c3451e320d306dc03
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695185"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854352"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente mit Microsoft 365
 
@@ -133,7 +133,7 @@ Bei der Bewertung ihres Risikoprofils sollten Sie auch die folgenden allgemeinen
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Erforderliche Mitarbeiterdaten zur Ausführung von alltäglichen Geschäftsfunktionen
 
-Organisationen von Natur aus müssen Daten über Mitarbeiter für elektronische Identitäts-und Personal Zwecke sammeln, vorbehaltlich dessen, was Sie in ihren Mitarbeiter Vereinbarungen vereinbaren. Solange eine Person für ein Unternehmen arbeitet, ist dies in der Regel kein Problem. Die Organisation möchte möglicherweise Mechanismen einsetzen, um zu verhindern, dass böswillige Akteure exfiltrating oder personenbezogene Mitarbeiterdaten undicht finden. 
+Organisationen von Natur aus müssen Daten über Mitarbeiter für elektronische Identitäts-und Personal Zwecke sammeln, vorbehaltlich dessen, was Sie in ihren Mitarbeiter Vereinbarungen vereinbaren. Solange eine Person für ein Unternehmen arbeitet, ist dies in der Regel kein Problem. Die Organisation möchte möglicherweise Mechanismen einsetzen, um zu verhindern, dass böswillige Akteure personenbezogene Daten von Mitarbeitern Ausschleusen oder undichten Stellen. 
 
 Wenn eine Person ein Unternehmen verlässt, verfügen Organisationen in der Regel über Prozesse, Verfahren und Aufbewahrungs-und Lösch Zeitpläne zum Entfernen von Benutzerkonten, Stilllegung von Postfächern und persönlichen Laufwerken sowie zum Ändern des Status von Mitarbeitern in Sachen wie Personalwesen Systeme. Für Fälle, in denen ein Rechtsstreit beteiligt ist, kann ein Mitarbeiter oder ein anderer Beteiligter einer juristischen Untersuchung berechtigte Gründe für das Abrufen von Informationen über die in den Systemen der Organisation gespeicherten personenbezogenen Daten haben. Bei einigen Gelegenheiten kann diese Partei verlangen, dass diese Daten entfernt oder anonymisiert werden. 
 
@@ -151,7 +151,7 @@ In der Regel haben Verträge mit externen Kunden, Partnern und den anderen Entit
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Daten der Organisation zu Verbrauchern, die Informationen für Onlinedienste bereitstellen, die die Organisation im B2C-Szenario verwaltet
 
-Bei diesen Kategorien handelt es sich um die meisten Personen, die aufgrund von vielen öffentlichen Instanzen von Kundendaten Verlusten nachdenken, um Datenschutz zu finden. Dies kann beabsichtigt sein, beispielsweise ein Drittanbieter unter Vertrag an den Anbieter oder unbeabsichtigte, wie extrahiert von einem böswilligen Akteur. Der Schutz von Daten für Verbraucher ist einer der Hauptgründe, warum die EU und andere diese Verordnungen umgesetzt haben. Die Datenschutzbestimmungen wie dsgvo und CCPA erfordern eine Planung für Folgendes:
+Bei diesen Kategorien handelt es sich um die meisten Personen, die aufgrund von vielen öffentlichen Instanzen von Kundendaten Verlusten nachdenken, um Datenschutz zu finden. Dies kann beabsichtigt sein, beispielsweise ein Drittanbieter unter Vertrag für den Anbieter oder unbeabsichtigte, wie etwa die durch einen böswilligen Akteur entstehende Ausscheidung. Der Schutz von Daten für Verbraucher ist einer der Hauptgründe, warum die EU und andere diese Verordnungen umgesetzt haben. Die Datenschutzbestimmungen wie dsgvo und CCPA erfordern eine Planung für Folgendes:
 
 - Prüflisten für [Aktionspläne](../compliance/gdpr-action-plan.md) und [Verantwortlichkeits Bereitschaft](../compliance/gdpr-arc-office365.md)
 - [Datenschutz-Folgenabschätzung](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -181,7 +181,7 @@ Die dsgvo-Bewertung umfasst die folgenden Abschnitte:
 | | |
 |:-------|:-----|
 | Governance | <ol><li>Wird in ihrer Datenschutzrichtlinie explizit angegeben, welche Daten Informationen verarbeitet werden? </li><li>Führen Sie regelmäßig datenschutzfolgenabschätzungen (PIAs) aus? </li><li> Verwenden Sie ein Tool zum Verwalten von persönlichen Informationen (PI)? </li><li> Haben Sie die Befugnis, Geschäfte mit Pi-Daten auf einem bestimmten Individuum durchzuführen? Verfolgen Sie die Einwilligung für Daten? </li><li> Verfolgen, implementieren und verwalten Sie Überwachungssteuerelemente? Überwachen Sie Datenlecks? </li></ol>|
-| Löschen & Benachrichtigung | <ol><li>Geben Sie explizit Anweisungen dazu, wie auf die Daten von Benutzern zugegriffen werden kann? </li><li> Haben Sie dokumentierte Prozesse zur Bearbeitung der Zustimmung zur Ablehnung? </li><li>   Haben Sie einen automatisierten Löschvorgang für Daten? </li><li>   Haben Sie einen Prozess zum Überprüfen der Identität, wenn Sie sich mit einem Kunden beschäftigen? </li></ol>|
+| Löschen und Benachrichtigung | <ol><li>Geben Sie explizit Anweisungen dazu, wie auf die Daten von Benutzern zugegriffen werden kann? </li><li> Haben Sie dokumentierte Prozesse zur Bearbeitung der Zustimmung zur Ablehnung? </li><li> Haben Sie einen automatisierten Löschvorgang für Daten? </li><li>   Haben Sie einen Prozess zum Überprüfen der Identität, wenn Sie sich mit einem Kunden beschäftigen? </li></ol>|
 | Risikominderung und Informationssicherheit | <ol><li>Verwenden Sie Tools zum Durchsuchen unstrukturierter Daten? </li><li>Sind alle Server auf dem neuesten Stand, und nutzen Sie Firewalls, um Sie zu schützen? </li><li>Führen Sie regelmäßige Sicherungen Ihrer Server aus? </li><li>Überwachen Sie aktiv Datenlecks? </li><li>Verschlüsseln Sie Ihre Daten im Ruhezustand und in der Übertragung? </li></ol>|
 | Richtlinienverwaltung | <ol><li>Wie verwalten Sie Ihre Bindungs Unternehmensregeln (BCR)? </li><li>Verfolgen Sie die Einwilligung für Daten? </li><li> Decken ihre Verträge auf einer Skala von 1 bis 5, 5 vollständig abgedeckt, die Datenklassifizierungen und-Anforderungen ab? </li><li>Haben Sie einen Vorfall Antwort Plan regelmäßig getestet? </li><li>Welche Richtlinie verwenden Sie zum Verwalten des Zugriffs? </li></ol>|
 |||
@@ -190,7 +190,7 @@ Die dsgvo-Bewertung umfasst die folgenden Abschnitte:
 
 In diesem Schritt werden bestimmte vertrauliche Informationstypen identifiziert, die bestimmten behördlichen Kontrollen unterliegen, sowie deren Auftreten in Ihrer Microsoft 365-Umgebung. 
 
-Die Suche nach Inhalten in Ihrer Umgebung, die persönliche Inhalte enthalten, kann eine gewaltige Aufgabe sein, die zuvor eine Kombination aus der Verwendung der Compliance-Suche, eDiscovery, Advanced eDiscovery DLP und Überwachung umfasste. 
+Die Suche nach Inhalten in Ihrer Umgebung mit persönlichem Inhalt kann eine gewaltige Aufgabe sein, die zuvor eine Kombination aus der Verwendung der Compliance-Suche, eDiscovery, Advanced eDiscovery, DLP und Überwachung umfasste. 
 
 Mit der neuen **Daten Klassifizierungs** Lösung im Microsoft Compliance Admin Center ist dies mit der Funktion [Content Explorer](../compliance/data-classification-content-explorer.md) viel einfacher geworden, die entweder mit integrierten oder benutzerdefinierten vertraulichen Informationstypen, einschließlich der personenbezogenen Daten, funktioniert.
  
@@ -212,7 +212,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 - [Benutzerdefinierte vertrauliche Informationstypen](../compliance/custom-sensitive-info-types.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
 - [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Inhalts-Explorer
 

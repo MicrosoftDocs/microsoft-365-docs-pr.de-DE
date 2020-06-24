@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Hier erfahren Sie, wie Sie Mitgliedern erlauben, e-Mails als Microsoft 365-Gruppe zu senden oder e-Mails im Namen einer Microsoft 365-Gruppe zu senden.
-ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 090a5e177ed843c035155cd735e0b7b9560e5631
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780469"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844668"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
 
@@ -76,6 +76,9 @@ In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails im
 5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern**aus.
     
     ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> Es kann bis zu zwei Stunden dauern, bis die Änderungen wirksam werden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

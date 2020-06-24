@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Entscheiden Sie, welche Features und welche neuen Inhalte den Endbenutzern in der Office-Seite What es New Management for Office Desktop Apps angezeigt oder verborgen sind.
-ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717175"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844728"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Ein- und Ausblenden neuer Funktionen mit What's New Management
 
@@ -42,13 +42,9 @@ Office What es New Management steht im Microsoft 365 Admin Center und über den 
 Administratoren können eine Vorschau der neuen Inhalte für einen Kanal anzeigen und die Veröffentlichung der Inhalte mithilfe von Office What es New Management verwalten.
 
 1. Wählen Sie im Microsoft 365 Admin Center unter **Einstellungen**die Option **org Settings**aus.
-
 2. Wählen Sie auf der Registerkarte **Dienste** die Option **Office What es New Management**aus.
-
 3. Wählen Sie ein oder mehrere Features aus, um den Featurenamen, eine kurze Beschreibung, die Anwendung und die Veröffentlichungsversion für jedes Feature im Flyout-Fenster anzuzeigen.
-
 4. Wählen Sie **aus Benutzer ausblenden** oder **Benutzern anzeigen**aus.  
-
     Der **standardmäßig angezeigte** Status gibt an, dass Featureinformationen standardmäßig für Benutzer angezeigt werden, bis der Administrator den Status für ein Feature auf " **ausgeblendet** " oder " **angezeigt**" festlegt.  
 
     > [!NOTE]
@@ -65,6 +61,13 @@ Neue Features werden in Office What es New Management basierend auf diesem Zeitp
 |**Halbjährliches Unternehmen** <br/> |1. Januar und 1. Juli <br/> | 2 Wochen vor der Hauptversion, die neue Features bringt<br/> |
 
 Weitere Informationen zu Kanal Aktualisierungs Plänen finden Sie unter [Update History for Microsoft 365 Apps (aufgelistet nach Datum)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Hinzufügen von Office What es New Management Card zur Admin Center-Startseite
+
+1. Wählen Sie auf der Seite Microsoft 365 admin die Option Karte hinzufügen oben auf der Seite aus.
+2. Suchen Sie in der Liste nach **Neuerungen in Office-Apps** , und wählen Sie ihn aus.
+3. Sobald sich die Karte auf unserer Startseite befindet, können Sie **Verwalten** auswählen, um [die Features für Ihre Organisation anzuzeigen oder auszublenden](#show-or-hide-new-features) . 
+
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

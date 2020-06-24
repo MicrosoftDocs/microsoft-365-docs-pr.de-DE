@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773851"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844906"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Voraussetzungen für Microsoft Threat Protection
 
@@ -43,7 +43,7 @@ Durch diese Lizenzen erhalten Sie ohne zusätzliche Kosten Zugriff auf Microsoft
 - Office 365 E5 oder A5
 - Microsoft Defender Advanced Threat Protection
 - Azure Advanced Threat Protection 
-- Microsoft Cloud App Security
+- Microsoft Cloud App-Sicherheit
 - Office 365 Advanced Threat Protection (Plan 2)
 
 > [!NOTE]
@@ -60,7 +60,7 @@ Wechseln Sie zu Microsoft 365 Admin Center ([Admin.Microsoft.com](https://admin.
 > Sie müssen entweder die Rolle **"abrechnungsadministrator"** oder " **globaler Leser** " [in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) zugewiesen sein, um Lizenzinformationen anzeigen zu können. Wenn Sie Probleme beim Zugriff haben, wenden Sie sich an einen globalen Administrator.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
-Eine Liste der erforderlichen Rollen und der regelmäßige Zugriff auf Daten finden Sie unter [Managing Access to Microsoft Threat Protection](mtp-permissions.md).
+Sie müssen ein **globaler Administrator** oder ein **Sicherheitsadministrator** in Azure Active Directory sein, um Microsoft Threat Protection zu aktivieren. Eine Liste der Rollen, die für die Verwendung von Microsoft Threat Protection erforderlich sind, sowie Informationen darüber, wie der Zugriff auf Daten reguliert wird, finden Sie unter [Managing Access to Microsoft Threat Protection](mtp-permissions.md).
 
 ## <a name="browser-requirements"></a>Browseranforderungen
 Greifen Sie auf Microsoft Threat Protection im Microsoft 365 Security Center mit Microsoft Edge, Internet Explorer 11 oder einem beliebigen HTML 5-konformen Webbrowser zu.

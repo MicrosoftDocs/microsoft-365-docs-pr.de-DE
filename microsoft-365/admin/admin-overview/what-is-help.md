@@ -3,11 +3,10 @@ title: So erhalten Sie Hilfe im Microsoft 365 Admin Center
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über die Möglichkeiten, wie Sie mithilfe des Microsoft 365 Admin Center Hilfe erhalten können.
-ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386769"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844716"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -35,66 +34,11 @@ ms.locfileid: "44386769"
 
 Wenn Sie ein Administrator sind, ist [Admin.Microsoft.com](https://admin.microsoft.com) Ihr "Go-to-Place" zum Verwalten und Nutzen Ihres Microsoft 365-Abonnements. Manchmal finden Sie möglicherweise nicht die richtige Aufgabe, benötigen mehr Kontext, bevor Sie einen Aufgabenfluss beginnen, oder Sie können sich einfach nicht sicher sein, welchen Umfang und welche Auswirkungen ihre Aktionen als Administrator haben. Um diese Situationen zu decken, bieten wir auf diese Weise moderne Hilfe und intelligente Unterstützung im gesamten Microsoft 365 Admin Center:
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Integrierte Hilfe</h3>
-                            <p>Hilfe im Admin Center</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Intelligente Unterstützung</h3>
-                            <p>Selbsthilfe powered by AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Leitfäden und Artikel</h3>
-                            <p>Umfassende Inhalte im Internet</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **Integrierte Hilfe** -Hilfe im Admin Center
+
+* **Intelligente Unterstützung** – Selbsthilfe powered by AI
+
+* **Leitfäden und Artikel** – umfassende Inhalte im Internet
 
 ## <a name="integrated-help"></a>Integrierte Hilfe
 

@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,20 +16,37 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Konfigurieren Sie die Sicherheits-und Dienstinfrastruktur, um Ihre Informationen zu schützen und Datenschutzbestimmungen einzuhalten.
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695108"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854331"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365
 
-Diese Lösung enthält Anleitungen für die Planung und den Schutz personenbezogener Daten, die in Microsoft 365-Diensten gespeichert sind und möglicherweise Datenschutzbestimmungen unterliegen, beispielsweise die allgemeine Datenschutzverordnung (dsgvo) der Europäischen Union. Diese Lösung konzentriert sich auf die anwendbaren Features von Microsoft Information Protection und Compliance, die Microsoft-Konformitätsbewertung und die Bewertungstools, die Ihnen dabei helfen, Ihre Daten zu kennen. 
- 
-Weitere Informationen finden Sie auch im Hinblick auf die Verwendung von Microsoft-Identitäts-, Geräte-und Bedrohungsschutz-Steuerelementen für Ihre Datenschutzanforderungen sowie Daten Ermittlungs-und-Antwort Tools. 
+Ihre Organisation unterliegt möglicherweise regionalen Datenschutzbestimmungen, die Sie zum Schutz, zur Verwaltung und zur Bereitstellung von Rechten und zur Steuerung persönlicher Informationen benötigen, die in Ihrer IT-Infrastruktur gespeichert sind, sowohl lokal als auch in der Cloud. Das beste Beispiel für eine Datenschutzverordnung ist die allgemeine Datenschutzverordnung (dsgvo) der Europäischen Union. Die Nichteinhaltung von Datenschutzbestimmungen kann zu erheblichen Geldbußen führen.
 
-## <a name="organization-of-this-guidance-material"></a>Organisation dieses Anleitungs Materials
+Beispiele für die Datentypen in Microsoft 365 sind Chatsitzungen in Microsoft Teams, e-Mails in Exchange und Dateien in SharePoint und OneDrive. Diese Lösung bietet Anleitungen zum identifizieren, Auffinden, schützen, Steuern und reagieren auf Datenschutz Vorfälle für personenbezogene Daten, die in Microsoft 365-Diensten gespeichert sind und Datenschutzbestimmungen unterliegen.
+
+![Bereitstellen des Informationsschutzes für Datenschutzbestimmungen](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+Weitere Informationen finden Sie auch unter Verwendung von Microsoft 365-Steuerelementen für Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzanforderungen. 
+
+Verwenden Sie die folgenden Microsoft 365-Funktionen und-Features, um die Kriterien zum Schutz von Informationen zur Einhaltung der Datenschutzbestimmungen zu erfüllen.
+
+| Funktion oder Feature | Beschreibung | Lizenzierung |
+|:-------|:-----|:-------|
+| Compliance-Manager | Verwalten von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services mit diesem workflowbasierten Risiko Bewertungstool im Microsoft Service Trust-Portal. | Microsoft 365 E3 und E5 |
+| Compliancebewertung (Vorschau) | Sehen Sie sich eine Gesamtpunktzahl Ihrer aktuellen Konformitäts Konfiguration sowie Empfehlungen zur Verbesserung des IT-Standards im Microsoft 365 Compliance Center an. | Microsoft 365 E3 und E5 |
+| Erweiterter Office-Bedrohungsschutz (ATP) | Schützen Sie Ihre Microsoft 365-apps und-Daten wie e-Mail-Nachrichten, Office-Dokumente und Tools für die Zusammenarbeit vor Angriffen. | Microsoft 365 E3 und E5 | 
+| Vertraulichkeitsbezeichnungen | Klassifizieren und schützen Sie die Daten Ihrer Organisation, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu beeinträchtigen, indem Sie Beschriftungen mit verschiedenen Schutzebenen in e-Mails, Dateien oder Websites platzieren. | Microsoft 365 E3 und E5 |
+| Datenverlust Schutz (DLP) | Erkennen, warnen und Blockieren von riskanten, unbeabsichtigten oder unangemessenen Freigaben, wie beispielsweise die Freigabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
+| Daten Aufbewahrungs Bezeichnungen und-Richtlinien | Implementieren von Steuerelementen für die Informationssteuerung, beispielsweise, wie lange Daten und Anforderungen für die Speicherung personenbezogener Daten auf Kunden gespeichert werden, um die Richtlinien oder Daten Vorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 und E5 |
+| E-Mail-Verschlüsselung | Senden und empfangen von verschlüsselten e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation, die regulierte Daten enthalten, beispielsweise personenbezogene Daten von Kunden. | Microsoft 365 E3 und E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation der Anleitungen in dieser Lösung
 
 Damit Sie sich mit den Microsoft 365-Tools vertraut machen können, die zum identifizieren, verwalten, Steuern und Überwachen von personenbezogenen Daten unter einer oder mehreren datenschutzbezogenen Bestimmungen verfügbar sind, sind diese Anleitungen in Abschnitten gegliedert.
  

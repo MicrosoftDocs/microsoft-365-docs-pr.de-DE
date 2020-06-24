@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Bereitstellen von Sicherheits-und Compliance-Features von Microsoft 365 und Schützen Ihrer persönlichen Informationen.
-ms.openlocfilehash: 5a6cc6645be6cad4d901922c0a257d2175c85341
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695149"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844692"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen unterliegen der Datenschutzverordnung
 
@@ -283,11 +283,8 @@ Nachdem diese Elemente bestimmt wurden, können Sie vertrauliche Informationstyp
 
 ![Beispiel für Sensitivitäts Bezeichnungen, die mit DLP arbeiten](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-<!--
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
-
--->
 Hier sind einige Datenschutzszenarien, in denen DLP und Sensitivitäts Bezeichnungen zusammen verwendet werden, wie in der Abbildung dargestellt.
 
 | Szenario | Prozess |
