@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 8634bf90ea082663bccd25f35823578842c092e0
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785545"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861162"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Informationen zu Aufbewahrungsrichtlinien für Microsoft Teams.
 
@@ -131,9 +131,7 @@ Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in M
 
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Konfigurieren einer Aufbewahrungsrichtlinie für Microsoft Teams
 
-Siehe [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
-
-Wählen Sie auf der Seite **Speicherorte auswählen** des Assistenten die folgenden Optionen aus:
+Folgen Sie den Anweisungen für das [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md), und wählen Sie im Assistenten auf der Seite **Speicherorte wählen** eine der folgenden Optionen aus:
 
 - **Bestimmte Speicherorte auswählen** > **Microsoft Teams-Nachrichten** und **Microsoft Teams-Chats**
 

@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: "Schritt\_2: Remotezugriff ermöglichen"
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'Schritt 3: Endpunktverwaltung bereitstellen'
+        - name: 'Schritt 3: Sicherheit und Compliance bereitstellen'
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: "Schritt\_4: Endpunktverwaltung bereitstellen"
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: "Schritt\_4: Produktivitätsanwendungen und -dienste bereitstellen"
+        - name: "Schritt\_5: Produktivitätsanwendungen und -dienste bereitstellen"
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: "Schritt\_5: Orte für die Kommunikation schaffen"
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: 'Schritt 6: Remotemitarbeiter schulen'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Sichere Zusammenarbeit mit Microsoft 365 einrichten
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: Isoliertes Team für ein streng geheimes Projekt
           href: contoso-team-for-top-secret-project.md
+        - name: Migration der Sprachfunktion von Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Leitfäden für Testumgebungen
       items:
         - name: Testumgebungsleitfäden für Lösungen und Szenarien
