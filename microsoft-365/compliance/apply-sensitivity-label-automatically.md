@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 42ea66eff6f8034d2744648b9115e894b8119839
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 615c6541ef7a89fe7c97f3812449821fc531e4ea
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800040"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854317"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -54,16 +54,19 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
-    - Höchstens 25 000 automatisch bezeichnete Dateien (Word, PowerPoint oder Excel) in Ihrem Mandanten pro Tag
+    - Office-Dateien für Word, PowerPoint und Excel werden unterstützt.
+    - Höchstens 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag
     - Höchstens 10 Websitesammlungen in allen Richtlinien
     - Höchstens 10 Richtlinien für den gesamten Mandanten
-    - Das Änderungsdatum wird nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
+    - Bestehende Werte für "Geändert", "Geändert von" und das Datum werden nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
+    - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die die Vertraulichkeitsbezeichnung erstellt hat.
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
-    - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
+    - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen (Word-, Excel- und PowerPoint-Dateien) ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
     - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für die automatische Bezeichnung vorliegt. Wenn die Bezeichnung für die Verschlüsselung konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
+    - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Vergleichen Sie das automatische Bezeichnen für Office-Anwendungen mit den Richtlinien für das automatische Bezeichnen
@@ -188,7 +191,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
 
 - Simulationsmodus:
     - Die Überwachung von Microsoft 365 muss aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
-    - Um die Dateiinhalte in der Quellansicht anzuzeigen (wird für E-Mails nicht unterstützt), müssen Sie über die Rolle **Inhalts-Explorer/Inhalts-Anzeiger** verfügen, wenn Sie kein globaler Administrator sind. Wenn Sie nicht über diese Berechtigung verfügen, wird der Bereich „Vorschau“ nicht angezeigt, wenn Sie ein Element aus der Registerkarte **Übereinstimmende Elemente** auswählen.
+    - Um die Dateiinhalte in der Quellansicht anzeigen zu können, müssen Sie über die Rolle **Inhalts-Explorer/Inhalts-Anzeiger** verfügen, sofern Sie kein globaler Administrator sind. Wenn Sie nicht über diese Berechtigung verfügen, wird der Bereich „Vorschau“ nicht angezeigt, wenn Sie ein Element aus der Registerkarte **Übereinstimmende Elemente** auswählen.
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -199,9 +202,9 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
     - Um neue benutzerdefinierte Typen sensibler Informationen zu testen, erstellen Sie diese, bevor Sie Ihre Richtlinie zum automatischen Bezeichnen erstellen, und erstellen Sie dann neue Dokumente mit Beispieldaten zum Testen.
 
 - Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:
-    - Es spielt keine Rolle, ob das automatische Bezeichnen in den Bezeichnungseinstellungen der Office-Anwendungen ein- oder ausgeschaltet ist, da diese Bezeichnungseinstellungen die Richtlinien für die automatische Bezeichnung ergänzen, wie in der Einführung erläutert. 
+    - Es spielt keine Rolle, ob das automatische Bezeichnen in den Bezeichnungseinstellungen der Office-Anwendungen ein- oder ausgeschaltet ist, da diese Bezeichnungseinstellungen die Richtlinien für die automatische Bezeichnung ergänzen, wie in der Einführung erläutert.
     - Wenn die Etiketten, die Sie für die automatische Bezeichung verwenden möchten, für die Verwendung visueller Markierungen (Kopf- und Fußzeilen, Wasserzeichen) konfiguriert sind, beachten Sie, dass diese nicht auf Dokumente angewendet werden.
-    - Wenn die Bezeichnungen Verschlüsselungen anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen zuweisen** konfiguriert sein.
+    - Wenn die Bezeichnungen [Verschlüsselungen](encryption-sensitivity-labels.md) anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen zuweisen** konfiguriert sein.
 
 ### <a name="learn-about-simulation-mode"></a>Informationen zum Simulationsmodus
 
@@ -294,6 +297,8 @@ Sie können Ihre Richtlinie direkt über diese Oberfläche ändern:
     ![Option "Richtlinie für die automatische Bezeichnung"](../media/auto-labeling-edit.png)
     
     Wenn Sie die Richtlinie ohne Simulation ausführen möchten, wählen Sie die Option **Richtlinie aktivieren** aus.
+
+Ihre Richtlinien werden fortlaufend ausgeführt, bis sie gelöscht werden. So beziehen die aktuellen Richtlinieneinstellungen beispielsweise neue und geänderte Dokumente ein.
 
 Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch anzeigen, indem Sie [Inhalts-Explorer](data-classification-content-explorer.md) verwenden, wenn Sie über die entsprechenden [Berechtigungen](data-classification-content-explorer.md#permissions) verfügen:
 - In der **Inhalts-Explorer-Listenanzeige** können Sie die Bezeichnung einer Datei anzeigen, aber nicht den Inhalt der Datei.

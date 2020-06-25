@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365.
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159479"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874894"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -40,7 +40,7 @@ Dieses Szenario umfasst:
 
 Einige der in diesem Artikel beschriebenen Optionen setzen voraus, dass Gäste über ein Konto in Azure Active Directory verfügen. Verwenden Sie die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview), um sicherzustellen, dass Gäste in das Verzeichnis einbezogen werden, wenn Sie Dateien und Ordner für sie freigeben.
 
-Bitte beachten Sie, dass in diesem Artikel die Aktivierung von Gastfreigabeeinstellungen nicht behandelt wird. Details zum Aktivieren der Gastfreigabe für unterschiedliche Szenarien finden Sie unter [Zusammenarbeit mit Personen außerhalb Ihrer Organisation](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization).
+Bitte beachten Sie, dass in diesem Artikel die Aktivierung von Gastfreigabeeinstellungen nicht behandelt wird. Details zum Aktivieren der Gastfreigabe für unterschiedliche Szenarien finden Sie unter [Zusammenarbeit mit Personen außerhalb Ihrer Organisation](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Einrichten der mehrstufigen Authentifizierung für Gäste
 

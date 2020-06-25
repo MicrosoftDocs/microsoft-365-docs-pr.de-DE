@@ -14,13 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Mit der Datensatzverwaltung in Microsoft 365 können Sie die spezifischen Aufbewahrungszeitpläne Ihrer Organisation in einen Aktenplan einbinden, um Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus zu verwalten.
-ms.openlocfilehash: b7c2febafdfe0b234bedf439236a6a7bd2aec549
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
+ms.openlocfilehash: 48705ac6d0c271ca2646de7c058a340ee3f736ae
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432346"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818955"
 ---
 # <a name="records-management-in-microsoft-365"></a>Datensatzverwaltung in Microsoft 365
 
