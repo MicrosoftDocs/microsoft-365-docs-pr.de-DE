@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über das Aufbewahrungsverhalten, das speziell für Exchange-E-Mails und öffentliche Exchange-Ordner gilt.
-ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 0357e647883fe681010425d7dd8599101ab559c7
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800010"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861172"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
@@ -72,8 +72,9 @@ Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Lösche
 
 Unter Verwendung von PowerShell können Sie bestimmte Exchange-Elementtypen aus einer Aufbewahrungsrichtlinie ausschließen. Sie können z. B. Voicemailnachrichten, Chatunterhaltungen und andere Skype for Business Online-Inhalte in Postfächern ausschließen. Sie können auch Kalender-, Notiz- und Aufgabenelemente ausschließen. Diese Funktion steht nur über PowerShell zur Verfügung. Sie ist nicht verfügbar, wenn Sie eine Aufbewahrungsrichtlinie mithilfe des Assistenten im Microsoft 365 Compliance Center erstellen.
   
-Wenn Sie die ausgewählten Typen für Exchange-Elemente in einer Aufbewahrungsrichtlinie ausschließen möchten, verwenden Sie den Parameter `ExcludedItemClasses` mit den Cmdlets `New-RetentionComplianceRule` und `Set-RetentionComplianceRule`.
+Wenn Sie die ausgewählten Typen für Exchange-Elemente in einer Aufbewahrungsrichtlinie ausschließen möchten, verwenden Sie den `ExcludedItemClasses` Parameter mit den [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)- und [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)-Cmdlets.
 
+Um die Cmdlets für Aufbewahrungsrichtlinien zu verwenden, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
@@ -81,9 +82,7 @@ Wenn ein Benutzer Ihre Organisation verlässt und sein Postfach in einer Aufbewa
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Konfigurieren einer Aufbewahrungsrichtlinie für Exchange
 
-Siehe [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
-
-Wählen Sie auf der Seite **Speicherorte auswählen** des Assistenten eine der folgenden Optionen aus:
+Folgen Sie den Anweisungen für [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md), und wählen Sie für die Seite **Speicherorte wählen** des Assistenten eine der folgenden Optionen aus:
 
 - **Richtlinie nur auf Inhalte in Exchange-E-Mails, öffentlichen Ordnern, Office 365-Gruppen, OneDrive und SharePoint-Dokumenten anwenden**
 
