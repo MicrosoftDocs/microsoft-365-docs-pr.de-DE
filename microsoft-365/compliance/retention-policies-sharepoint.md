@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien, die für SharePoint und OneDrive gelten
-ms.openlocfilehash: f8fe11d48996cc0365d5f3164883641715e6940b
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 59237e59b607baa2227140c957be5876c5910754
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800030"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861182"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive
 
@@ -96,7 +96,7 @@ Wenn ein Benutzer Ihre Organisation verlässt, bleiben alle Dateien, für die ei
 
 Siehe [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
 
-Wählen Sie auf der Seite **Speicherorte auswählen** des Assistenten eine der folgenden Optionen aus:
+Folgen Sie den Anweisungen für [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md), und wählen Sie für die Seite **Speicherorte wählen** des Assistenten eine der folgenden Optionen aus:
 
 - **Richtlinie nur auf Inhalte in Exchange-E-Mails, öffentlichen Ordnern, Office 365-Gruppen, OneDrive und SharePoint-Dokumenten anwenden**
 
