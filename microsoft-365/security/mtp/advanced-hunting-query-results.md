@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f9838908ca0dbfb498601c3509b920b064a2eb22
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929151"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899082"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeiten mit erweiterten Jagd Abfrageergebnissen
 
@@ -56,7 +56,7 @@ Standardmäßig zeigt Advanced Hunting Abfrageergebnisse als tabellarische Daten
 Beim Rendern von Diagrammen identifiziert die erweiterte Suche automatisch die relevanten Spalten und die zu aggregierenden numerischen Werte. Um aussagekräftige Diagramme zu erhalten, erstellen Sie Ihre Abfragen, um die spezifischen Werte zurückzugeben, die Sie visuell anzeigen möchten. Hier sind einige Beispielabfragen und die daraus resultierenden Diagramme.
 
 #### <a name="alerts-by-severity"></a>Warnungen nach Schweregrad
-Verwenden Sie `summarize` den-Operator, um eine numerische Anzahl der Werte zu erhalten, die Sie chartern möchten. In der folgenden Abfrage wird `summarize` der Operator verwendet, um die Anzahl der Warnungen nach Schweregrad abzurufen.
+Verwenden `summarize` Sie den-Operator, um eine numerische Anzahl der Werte zu erhalten, die Sie chartern möchten. In der folgenden Abfrage wird der `summarize` Operator verwendet, um die Anzahl der Warnungen nach Schweregrad abzurufen.
 
 ```kusto
 AlertInfo
@@ -64,13 +64,13 @@ AlertInfo
 ```
 Beim Rendern der Ergebnisse zeigt ein Säulendiagramm jeden Schweregrad als separate Spalte an:
 
-![Bild der erweiterten Jagd Abfrageergebnisse als Spalte Diagramm](../../media/advanced-hunting-column-chart.jpg)
--*Abfrageergebnisse für Warnungen nach Schweregrad angezeigt als Säulendiagramm*
+![Bild der erweiterten Jagd Abfrageergebnisse als Spalte Diagramm- ](../../media/advanced-hunting-column-chart.jpg)
+ *Abfrageergebnisse für Warnungen nach Schweregrad angezeigt als Säulendiagramm*
 
 #### <a name="alert-severity-by-operating-system"></a>Warnungsschweregrad nach Betriebssystem
 Sie können auch den `summarize` -Operator verwenden, um Ergebnisse für Diagrammwerte aus mehreren Feldern vorzubereiten. Beispielsweise sollten Sie verstehen, wie Warnungs severities über Betriebssysteme verteilt werden (OS). 
 
-In der folgenden Abfrage wird `join` ein Operator verwendet, um Betriebssysteminformationen `DeviceInfo` aus der Tabelle abzurufen, `summarize` und verwendet dann, um Werte `OSPlatform` in `Severity` den Spalten und zu zählen:
+In der folgenden Abfrage wird ein Operator verwendet, `join` um Betriebssysteminformationen aus der `DeviceInfo` Tabelle abzurufen, und verwendet dann `summarize` , um Werte in den `OSPlatform` Spalten und zu zählen `Severity` :
 
 ```kusto
 AlertInfo
@@ -80,11 +80,11 @@ AlertInfo
 ```
 Diese Ergebnisse werden am besten mit einem gestapelten Säulendiagramm visualisiert:
 
-![Bild der erweiterten Suchabfrageergebnisse als gestapelte Diagramm](../../media/advanced-hunting-stacked-chart.jpg)
-*Abfrageergebnisse für Warnungen nach Betriebssystem und Schweregrad angezeigt als gestapeltes Diagramm*
+![Bild der erweiterten Suchabfrageergebnisse als gestapelte Diagramm ](../../media/advanced-hunting-stacked-chart.jpg)
+ *Abfrageergebnisse für Warnungen nach Betriebssystem und Schweregrad angezeigt als gestapeltes Diagramm*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Phishing-e-Mails in den oberen zehn Absenderdomänen
-Wenn es sich um eine Liste von Werten handelt, die nicht endlich sind, können Sie `Top` den Operator verwenden, um nur die Werte mit den meisten Instanzen zu chartern. Um beispielsweise die oberen zehn Absenderdomänen mit den meisten Phishing-e-Mails zu erhalten, verwenden Sie die folgende Abfrage:
+Wenn es sich um eine Liste von Werten handelt, die nicht endlich sind, können Sie den `Top` Operator verwenden, um nur die Werte mit den meisten Instanzen zu chartern. Um beispielsweise die oberen zehn Absenderdomänen mit den meisten Phishing-e-Mails zu erhalten, verwenden Sie die folgende Abfrage:
 
 ```kusto
 EmailEvents
@@ -94,11 +94,11 @@ EmailEvents
 ```
 Verwenden Sie die Kreisdiagrammansicht, um die Verteilung in den oberen Domänen effektiv anzuzeigen:
 
-![Bild der erweiterten Hunting-Abfrageergebnisse als Kreis](../../media/advanced-hunting-pie-chart.jpg)
-Diagramm angezeigt, das eine*Verteilung von Phishing-e-Mails über die oberen Absenderdomänen hinweg zeigt*
+![Bild der erweiterten Hunting-Abfrageergebnisse als Kreisdiagramm angezeigt, das eine ](../../media/advanced-hunting-pie-chart.jpg)
+ *Verteilung von Phishing-e-Mails über die oberen Absenderdomänen hinweg zeigt*
 
 #### <a name="file-activities-over-time"></a>Dateiaktivitäten im Laufe der Zeit
-Mithilfe des `summarize` Operators mit `bin()` der-Funktion können Sie über einen bestimmten Zeitraum nach Ereignissen suchen, bei denen ein bestimmter Indikator angezeigt wird. In der folgenden Abfrage werden Ereignisse gezählt, `invoice.doc` bei denen die Datei in 30 Minuten Intervallen angezeigt wird, um Spikes in Aktivitäten im Zusammenhang mit dieser Datei anzuzeigen:
+Mithilfe des `summarize` Operators mit der `bin()` -Funktion können Sie über einen bestimmten Zeitraum nach Ereignissen suchen, bei denen ein bestimmter Indikator angezeigt wird. In der folgenden Abfrage werden Ereignisse gezählt, bei denen die Datei `invoice.doc` in 30 Minuten Intervallen angezeigt wird, um Spikes in Aktivitäten im Zusammenhang mit dieser Datei anzuzeigen:
 
 ```kusto
 AppFileEvents
@@ -106,10 +106,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Im folgenden Diagramm werden die Zeiträume mit mehr Aktivität deutlich hervor `invoice.doc`gehoben, darunter: 
+Im folgenden Diagramm werden die Zeiträume mit mehr Aktivität deutlich hervorgehoben `invoice.doc` , darunter: 
 
-![Bild der erweiterten Hunting-Abfrageergebnisse als](../../media/advanced-hunting-line-chart.jpg)
-*Diagramm Diagramm mit der Anzahl der Ereignisse angezeigt, die mit einer Datei im Laufe der Zeit* in Verbindung stehen
+![Bild der erweiterten Hunting-Abfrageergebnisse als ](../../media/advanced-hunting-line-chart.jpg)
+ *Diagramm Diagramm mit der Anzahl der Ereignisse angezeigt, die mit einer Datei im Laufe der Zeit* in Verbindung stehen
 
 
 ## <a name="export-tables-and-charts"></a>Exportieren von Tabellen und Diagrammen
@@ -119,7 +119,15 @@ Wählen Sie nach dem Ausführen einer Abfrage **Export** aus, um die Ergebnisse 
 - **Beliebiges Diagramm** – die Abfrageergebnisse werden als JPEG-Bild des gerenderten Diagramms exportiert.
 
 ## <a name="drill-down-from-query-results"></a>Drilldown von Abfrageergebnissen
-Wenn Sie weitere Informationen zu Entitäten, z. B. Computern, Dateien, Benutzern, IP-Adressen und URLs, anzeigen möchten, klicken Sie in den Abfrageergebnissen einfach auf den Entitätsbezeichner. Dadurch wird eine detaillierte Profilseite für die ausgewählte Entität im Microsoft Defender Security Center geöffnet.
+Wenn Sie einen Datensatz in Ihren Abfrageergebnissen schnell überprüfen möchten, wählen Sie die entsprechende Zeile aus, um die Registerkarte " **Daten Satz prüfen** " zu öffnen. Der Bereich enthält die folgenden Informationen basierend auf dem ausgewählten Datensatz:
+
+- **Objekte** – zusammengefasste Ansicht der Hauptobjekte (Postfächer, Geräte und Benutzer), die im Datensatz gefunden wurden, mit verfügbaren Informationen wie Risiko-und Expositions Stufen angereichert
+- **Prozessstruktur** – wird für Datensätze mit Prozessinformationen generiert und mithilfe von verfügbaren Kontextinformationen erweitert; im Allgemeinen können Abfragen, die mehr Spalten zurückgeben, zu umfangreicheren Prozessstrukturen führen.
+- **Alle Details** – alle Werte aus den Spalten im Datensatz  
+
+![Bild des ausgewählten Datensatzes mit dem Bereich für die Überprüfung des Datensatzes](../../media/mtp-ah/inspect-record.png)
+
+Wenn Sie weitere Informationen zu einer bestimmten Entität in Ihren Abfrageergebnissen anzeigen möchten, beispielsweise einen Computer, eine Datei, einen Benutzer, eine IP-Adresse oder eine URL, wählen Sie den Entitäts Bezeichner aus, um eine detaillierte Profilseite für diese Entität zu öffnen.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Optimieren von Abfragen aus den Ergebnissen
 Klicken Sie mit der rechten Maustaste auf einen Wert im Resultset, um die Abfrage schnell zu erweitern. Sie können die folgenden Optionen für Folgendes verwenden:
@@ -133,7 +141,7 @@ Klicken Sie mit der rechten Maustaste auf einen Wert im Resultset, um die Abfrag
 ## <a name="filter-the-query-results"></a>Filtern der Abfrageergebnisse
 Die rechts angezeigten Filter bieten eine Zusammenfassung des Resultsets. Jede Spalte verfügt über einen eigenen Abschnitt, in dem die für diese Spalte und die Anzahl der Instanzen eindeutigen Werte aufgelistet werden.
 
-Verfeinern Sie die Abfrage, indem `+` Sie `-` die Schaltflächen oder für die Werte auswählen, die Sie einschließen oder ausschließen möchten, und wählen Sie dann **Abfrage ausführen**aus.
+Verfeinern Sie die Abfrage, indem `+` `-` Sie die Schaltflächen oder für die Werte auswählen, die Sie einschließen oder ausschließen möchten, und wählen Sie dann **Abfrage ausführen**aus.
 
 ![Abbildung eines erweiterten Suchfilters](../../media/advanced-hunting-filter.png)
 
@@ -146,4 +154,4 @@ Sobald der Filter zum Ändern der Abfrage angewendet und die Abfrage ausgeführt
 - [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
-- [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)
+- [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
