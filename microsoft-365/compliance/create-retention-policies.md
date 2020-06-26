@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: 35c93ed6ee942f9553e196d3f15634e53c0bf25d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352232"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844751"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -34,7 +34,7 @@ Näheres zur Funktionsweise von Aufbewahrungsrichtlinien erfahren Sie unter [Inf
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, auf der Seite **Berechtigungen** im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) die Rollengruppe **Compliance-Administrator** zu bearbeiten und dieser Rollengruppe Mitglieder hinzuzufügen. 
+Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien erstellen und verwalten sollen, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe „**Compliance Administrator**“ hinzuzufügen. Anweisungen finden Sie unter [Benutzern den Zugriff auf das Security & Compliance Center gewähren](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Diese Berechtigungen sind nur erforderlich, um eine Aufbewahrungsrichtlinie zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinie konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 
@@ -78,7 +78,7 @@ Bei Auswahl von **Benutzer auswählen** können Sie schnell alle Benutzer hinzuf
   
 ![Seite „Skype-Benutzer auswählen“](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Beachten Sie, dass **Aufgezeichnete Unterhaltungen**, ein Ordner in Outlook, ein Feature ist, das nichts mit Skype-Archivierung zu tun hat. **Aufgezeichnete Unterhaltungen** kann vom Endbenutzer deaktiviert werden, Archivierung für Skype erfolgt jedoch durch das Speichern einer Kopie von Skype-Verbindungen in einem ausgeblendeten Ordner, auf den der Benutzer nicht zugreifen kann, der aber für eDiscovery verfügbar ist.
+Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Einstellungen für die Aufbewahrung und Löschung von Inhalten
@@ -113,7 +113,7 @@ Wenn Ihre Aufbewahrungsrichtlinie Inhalte löscht, ist es wichtig, zu wissen, da
   
 Nehmen Sie beispielsweise an, dass Sie eine Aufbewahrungsrichtlinie erstellen, mit der Inhalte nach drei Jahren gelöscht werden. Dann weisen Sie diese Richtlinie allen OneDrive-Konten zu, die viele Inhalte enthalten, die vor vier oder fünf Jahren erstellt wurden. In diesem Fall werden viele Inhalte unmittelbar nach dem ersten Zuweisen der Aufbewahrungsrichtlinie gelöscht. Deshalb ist es wichtig zu wissen, dass eine Aufbewahrungsrichtlinie, mit der Inhalte gelöscht werden, eine erhebliche Auswirkung auf Ihre Inhalte haben kann. 
   
-Daher sollten Sie vor dem erstmaligen Zuweisen einer Richtlinie zu einer Websitesammlung zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt bedenken. Sie können außerdem vor dem Zuweisen die Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben. Beachten Sie, dass folgende Warnung erscheint, wenn Sie die Einstellungen für Ihre Aufbewahrungsrichtlinie prüfen, bevor Sie sie erstellen.
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![Warnung zum Löschen von Inhalten](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -135,7 +135,7 @@ Die abfragebasierte Aufbewahrung verwendet den Suchindex, um Inhalte zu identifi
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>Ermitteln von Inhalten, die vertrauliche Informationen enthalten
 
-Sie können eine Aufbewahrungsrichtlinie auch nur auf Inhalte anwenden, die [bestimmte Arten von vertraulichen Informationen](what-the-sensitive-information-types-look-for.md) enthalten. Sie können z. B. eindeutige Aufbewahrungsanforderungen nur auf Inhalte, die personenbezogene Informationen (PII) wie Steuernummern, Sozialversicherungsnummern oder Reisepassnummern enthalten, anwenden.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Seite „Typen vertraulicher Informationen“](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
