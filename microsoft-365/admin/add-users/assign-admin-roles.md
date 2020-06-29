@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780637"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900776"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -110,9 +110,9 @@ Verwenden Sie die folgenden Anweisungen, um dutzenden Benutzern Rollen zuzuweise
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>Hat das nicht funktioniert?
+## <a name="check-your-permissions"></a>Überprüfen der Berechtigungen
 
-Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, sodass Sie keinen Zugriff haben, um anderen Benutzern Administratorrollen zuzuweisen. Bitten Sie einen anderen Administrator, die Rollen für Sie zuzuweisen.
+Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, um anderen Benutzern Administratorrollen zuzuweisen. Stellen Sie sicher, dass Sie die richtigen Berechtigungen haben, oder bitten Sie einen anderen Administrator, Ihnen Rollen zuzuweisen.
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, sodass S
 
 [Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
 
+[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md)
-
-[Hinzufügen einer alternativen e-Mail-Adresse mithilfe der Exchange-Verwaltungskonsole](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)

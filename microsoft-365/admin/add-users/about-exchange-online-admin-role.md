@@ -21,40 +21,40 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-Administratoren verwalten die e-Mails und Postfächer Ihrer Organisation. Beispielsweise werden gelöschte Elemente im Postfach eines Benutzers wiederhergestellt. '
-ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: d69ec803c8321c6417f587feafb2730de1d1e7b3
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432135"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909252"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
-Zur Unterstützung der Verwaltung von Microsoft 365 können Sie Benutzern Berechtigungen zum Verwalten der e-Mails und Postfächer Ihrer Organisation über das [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) [zuweisen](assign-admin-roles.md) . Weisen Sie sie dazu der Exchange-Administratorrolle zu. 
+Zur Unterstützung der Verwaltung von Microsoft 365 können Sie Benutzern Berechtigungen zum Verwalten der e-Mails und Postfächer Ihrer Organisation über das [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?LinkID=271807) [zuweisen](assign-admin-roles.md) . Weisen Sie sie dazu der Exchange-Administratorrolle zu.
   
- **Tipp**: Wenn Sie eine Person der Exchange-Administratorrolle zuweisen, weisen Sie Sie auch der Dienstadministrator Rolle zu. Auf diese Weise werden wichtige Informationen im Microsoft 365 Admin Center angezeigt, beispielsweise die Integrität des Exchange Online Diensts sowie Änderungs-und Freigabe Benachrichtigungen. 
+ **Tipp**: Wenn Sie eine Person der Exchange-Administratorrolle zuweisen, weisen Sie Sie auch der Dienstadministrator Rolle zu. Auf diese Weise werden wichtige Informationen im Microsoft 365 Admin Center angezeigt, beispielsweise die Integrität des Exchange Online Diensts sowie Änderungs-und Freigabe Benachrichtigungen.
   
-Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, wenn ihnen die Exchange-Administratorrolle zugewiesen wurde: 
+Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, wenn ihnen die Exchange-Administratorrolle zugewiesen wurde:
   
 - [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
 - [Richten Sie eine Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Organisation ein](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
-- Einrichten von Postfachfeatures wie die Postfachfreigaberichtlinie: Wie Benutzer Kalender- und Kontaktinformationen für andere Personen außerhalb Ihrer Organisation freigeben können. 
+- Einrichten von Postfachfeatures wie die Postfachfreigaberichtlinie: Wie Benutzer Kalender- und Kontaktinformationen für andere Personen außerhalb Ihrer Organisation freigeben können.
     
 - Einrichten der Delegaten "[Senden als](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" und "[Senden bei abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" für das Postfach eines anderen Benutzers. Beispielsweise möchte eine Führungskraft ihren Assistenten in die Lage versetzen, e-Mails in Ihrem Auftrag zu senden. 
-    
-- [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) , damit eine Gruppe von Personen e-Mails über eine gemeinsame e-Mail-Adresse überwachen und senden kann. 
-    
-- [E-Mail-Anti-Spam-Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) und Malware Filter für die Organisation. 
-    
+
+- [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) , damit eine Gruppe von Personen e-Mails über eine gemeinsame e-Mail-Adresse überwachen und senden kann.
+
+- [E-Mail-Anti-Spam-Schutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) und Malware Filter für die Organisation.
+
 - Verwalten von Microsoft 365-Gruppen
-    
+
 ## <a name="exchange-online-role-groups"></a>Exchange Online-Rollengruppen
 
-In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchange-Rollengruppen zuweisen. Wenn ein Administrator einen Benutzer einer Rollengruppe hinzugefügt wird, erhält der Benutzer Berechtigungen, um bestimmte Geschäftsfunktionen auszuführen, die nur Mitgliedern dieser Gruppe gestattet sind.
+If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
   
- Der Exchange-Administrator kann z. B. eine Person der Rollengruppe "Discoveryverwaltung" zuweisen, damit sie in Postfächern nach Daten suchen können, die bestimmte Kriterien erfüllen. Weitere Informationen hierzu finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
 ## <a name="learn-about-other-admin-role"></a>Informationen zur anderen Administratorrolle
 
@@ -63,3 +63,5 @@ In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchan
 - [Informationen zur SharePoint Online-Administratorrolle](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 - [Informationen zur Skype for Business-Administratorrolle](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
+
+- [Verwenden der Microsoft Teams-Administratorrolle](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 

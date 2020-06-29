@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: bc20119ab3bda4a277a9c1085b7b71b8320019c6
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
-  ms.translationtype: HT
+  ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
+  ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+  ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952607"
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "44909288"
 highlightedContent:
   items:
   - title: Schulung für Administratoren und IT-Experten
@@ -53,6 +53,9 @@ additionalContent:
     - title: Microsoft 365 Enterprise
       summary: Konzipiert für große Organisationen. Schützen Sie Ihr Unternehmen, und verändern Sie die Art und Weise, wie Sie mit Office-App, Windows 10 und Enterprise Mobility + Security arbeiten.
       url: ./enterprise/index.yml
+    - title: Microsoft 365-Center – Lösungen und Architekturen
+      summary: Hier erfahren Sie, wie Sie die richtige Lösung und Architektur für Ihre Organisation entwerfen.
+      url: ./solutions/index.yml
     - title: Microsoft 365 Education
       summary: Konzipiert für Lehrkräfte, um Kreativität und Zusammenarbeit zu fördern sowie eine einfache und sichere Umgebung in einer einzelnen, bezahlbaren Lösung für das Bildungswesen bereitzustellen.
       url: https://docs.microsoft.com/education/

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über das Aufbewahrungsverhalten, das speziell für Exchange-E-Mails und öffentliche Exchange-Ordner gilt.
-ms.openlocfilehash: 0357e647883fe681010425d7dd8599101ab559c7
-ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
+ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861172"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874883"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
@@ -34,9 +34,9 @@ Für die E-Mails, den Kalender und andere Elemente eines Benutzers wird eine Auf
 
 Für einen öffentlichen Ordner wird eine Aufbewahrungsrichtlinie auf Ordnerebene angewendet, nicht auf Postfachebene. 
 
-Sowohl Postfächer als auch öffentliche Ordner verwenden den Ordner "Wiederherstellbare Elemente" zum Aufbewahren von Elementen. Nur Personen, denen eDiscovery-Berechtigungen zugewiesen wurden, können Elemente im Ordner "Wiederherstellbare Elemente" eines anderen Benutzers anzeigen.
+Sowohl Postfächer als auch öffentliche Ordner verwenden den [Ordner „Wiederherstellbare Elemente“](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) zum Aufbewahren von Elementen. Nur Personen, denen eDiscovery-Berechtigungen zugewiesen wurden, können Elemente im Ordner "Wiederherstellbare Elemente" eines anderen Benutzers anzeigen.
   
-Standardmäßig wird eine Nachricht, die von einem Benutzer aus einem anderen Ordner als dem Ordner "Gelöschte Elemente" gelöscht wird, in den Ordner "Gelöschte Elemente" verschoben. Wenn ein Benutzer ein Element im Ordner "Gelöschte Elemente" löscht, wird es in den Ordner "Wiederherstellbare Elemente" verschoben. Ein Benutzer kann ein Element jedoch auch mittels UMSCHALT+ENTF aus einem Ordner löschen. Dadurch wird der Ordner "Gelöschte Elemente" umgangen und das Element direkt in den Ordner "Wiederherstellbare Elemente" verschoben.
+Standardmäßig wird eine Nachricht, die von einem Benutzer aus einem anderen Ordner als dem Ordner "Gelöschte Elemente" gelöscht wird, in den Ordner "Gelöschte Elemente" verschoben. Wenn ein Benutzer ein Element im Ordner "Gelöschte Elemente" löscht, wird es in den Ordner "Wiederherstellbare Elemente" verschoben. Ein Benutzer kann ein Element jedoch auch mittels UMSCHALT+ENTF aus einem Ordner löschen. Dadurch wird der Ordner „Gelöschte Elemente“ umgangen und das Element direkt in den Ordner „Wiederherstellbare Elemente“ verschoben.
   
 Wenn Sie eine Aufbewahrungsrichtlinie auf einen Exchange-Speicherort anwenden, wertet ein Zeitgeberauftrag regelmäßig die Elemente im Ordner "Wiederherstellbare Elemente" aus. Wenn ein Element nicht mindestens die Regeln einer Aufbewahrungsrichtlinie erfüllt, wird es dauerhaft (endgültig) aus dem Ordner "Wiederherstellbare Elemente" gelöscht.
 
