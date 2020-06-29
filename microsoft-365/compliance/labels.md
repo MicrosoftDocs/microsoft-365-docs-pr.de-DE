@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Erfahren Sie mehr über Aufbewahrungskennzeichen, die Ihre Daten verwalten, indem Sie die gewünschten Inhalte beibehalten, diejenigen löschen, die Sie nicht benötigen und Inhalte als Datensätze markieren.
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817440"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879303"
 ---
 # <a name="learn-about-retention-labels"></a>Informationen zu Aufbewahrungsbezeichnungen
 
@@ -347,9 +347,9 @@ Nachdem Sie Ihre Aufbewahrungsbezeichnungen veröffentlicht oder automatisch ang
 
 Nachdem die Aufbewahrungsbezeichnungen den Inhalten entweder von Benutzern oder automatisch zugewiesen wurden, können Sie mit der Inhaltssuche alle Inhalte finden, die mit einer bestimmten Aufbewahrungsbezeichnung klassifiziert sind.
   
-Wählen Sie beim Erstellen einer Inhaltssuche die Bedingung **Compliancetag** aus, und geben Sie den Namen der Aufbewahrungsbezeichnung vollständig oder teilweise (mit einem Platzhalter) ein. Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+Wählen Sie beim Erstellen einer Inhaltssuche die Bedingung **Compliancebezeichnung** aus, und geben Sie den Namen der Aufbewahrungsbezeichnung vollständig oder teilweise (mit einem Platzhalter) ein. Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
   
-![Compliancetag-Bedingung](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Bedingung "Compliancebezeichnung"](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>Verwenden von Aufbewahrungsbezeichnungen anstelle älterer Features
 
