@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Advanced eDiscovery.  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Advanced eDiscovery.
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636263"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936671"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Tagging und Relevanz Training in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In diesem Thema wird das Verfahren zum Arbeiten mit dem Modul "Advanced eDiscovery Relevanz Training" beschrieben. 
   
@@ -34,7 +34,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
   
 ## <a name="performing-relevance-training"></a>Durchführen von Relevanz-Schulungen
 
-1. Auf der Registerkarte **relevanztag \> ** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden jeweils einzeln für die Markierung angezeigt. 
+1. Auf der **Register \> Karte relevanztag** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden jeweils einzeln für die Markierung angezeigt. 
     
     ![Bereich "Relevanz-Tag"](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -54,7 +54,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
    
   - Wenn mehrere Probleme für eine Datei vorhanden sind, wird die Auswahl nach der Kennzeichnung eines Problems zum nächsten Problem (sofern vorhanden) verschoben. 
     
-  - Schlüsselwörter, die vom Administrator oder Fall-Manager beim Hervorheben von Stichwörtern definiert \> wurden (Relevanz-Setup markierte Schlüsselwörter), werden (in bestimmten Farben) angezeigt, um relevante Dateien beim Tagging zu identifizieren. Wenn ein Schlüsselwort doppelt unterstrichen ist, kann auf dieses geklickt werden, um einen QuickInfo mit der Beschreibung des Schlüsselwortes anzuzeigen. 
+  - Schlüsselwörter, die vom Administrator oder Fall-Manager beim Hervorheben von Stichwörtern definiert wurden (Relevanz \> -Setup markierte Schlüsselwörter), werden (in bestimmten Farben) angezeigt, um relevante Dateien beim Tagging zu identifizieren. Wenn ein Schlüsselwort doppelt unterstrichen ist, kann auf dieses geklickt werden, um einen QuickInfo mit der Beschreibung des Schlüsselwortes anzuzeigen. 
     
     Klicken Sie optional auf der Registerkarte **Tag** auf **Tag-Einstellungen** , um die folgenden Optionen festzulegen: 
     
@@ -76,9 +76,9 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Rel
     
 ## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Liste "Beispieldateien"
 
-In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien durchführen. Auf der Registerkarte " **Relevanz** \> - **Tag** " wird im linken Bereich " **Sample Files** " eine Liste der Beispieldateien zur Verarbeitung mit den Prozessen "Assessment", "Training", "Catch-up" und "Inkonsistenzen" angezeigt. 
+In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien durchführen. Auf der **Relevance** \> Registerkarte "Relevanz- **Tag** " wird im linken Bereich " **Sample Files** " eine Liste der Beispieldateien zur Verarbeitung mit den Prozessen "Assessment", "Training", "Catch-up" und "Inkonsistenzen" angezeigt. 
   
-1. Wählen Sie auf der Registerkarte **Relevanz \> -Tag** die Beispieldateien in der Dropdownliste Linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
+1. Wählen Sie auf der Registerkarte **Relevanz- \> Tag** die Beispieldateien in der Dropdownliste Linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
     
     ![Liste mit Relevanz-Tag-Beispieldateien](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   

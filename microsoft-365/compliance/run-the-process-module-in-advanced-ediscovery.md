@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Erfahren Sie mehr über die Richtlinien für die Vorbereitung von Fall Dateien von Daten für die Analyse mit Advanced eDiscovery.  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über die Richtlinien für die Vorbereitung von Fall Dateien von Daten für die Analyse mit Advanced eDiscovery.
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626461"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936198"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ausführen des Prozess Moduls in Advanced eDiscovery (klassisch)
 
-Fall Dateien werden während des **Vorbereitungs** \> **Prozesses**in die erweiterte eDiscovery geladen. 
+Fall Dateien werden während des **Vorbereitungs** Prozesses in die erweiterte eDiscovery geladen \> **Process**. 
   
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Richtlinien: Vorbereiten von Daten für erweiterte eDiscovery
 
@@ -42,7 +42,7 @@ Fall Dateien werden während des **Vorbereitungs** \> **Prozesses**in die erweit
     
 - **Dateityp und Name**:
     
-  - Advanced eDiscovery kann Dateien verschiedener Formate verarbeiten und geladene systemeigene Dateien in ein Standardformat extrahieren, \*beispielsweise. TXT, HTML oder. XML. Die Verarbeitung von Textdateien ist schneller als systemeigene Dateien. Extrahierte Textdateien werden im Fallordner gespeichert.
+  - Advanced eDiscovery kann Dateien verschiedener Formate verarbeiten und geladene systemeigene Dateien in ein Standardformat extrahieren, beispielsweise \* . TXT, HTML oder. XML. Die Verarbeitung von Textdateien ist schneller als systemeigene Dateien. Extrahierte Textdateien werden im Fallordner gespeichert.
     
   - Laden Sie keine Dateien, die nicht extrahiert werden können, wie Systemdateien oder Grafik Bilder. Diese Dateien können die Verarbeitung verzögern.
     

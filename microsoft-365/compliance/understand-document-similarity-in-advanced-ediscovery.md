@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Advanced eDiscovery verwendet werden kann. '
+description: Lesen Sie, wie der Ähnlichkeitswert von Dokumenten, die minimale Ähnlichkeit zweier Dateien, die als nahe Duplikate betrachtet werden müssen, in Advanced eDiscovery verwendet werden kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 939e9ad6cb193e2019fe84f1e0d3482eebac721c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819125"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936640"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Grundlegendes zur Ähnlichkeit von Dokumenten in Advanced eDiscovery (klassisch)
 

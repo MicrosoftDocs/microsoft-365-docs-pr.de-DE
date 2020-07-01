@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Lesen Sie die Schritte zum Durchführen von Assessment-Schulungen, einschließlich Tagging-Dateien und Überprüfen der Bewertungsergebnisse in Advanced eDiscovery. '
-ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Lesen Sie die Schritte zum Durchführen von Assessment-Schulungen, einschließlich Tagging-Dateien und Überprüfen der Bewertungsergebnisse in Advanced eDiscovery.
+ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630692"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936692"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging und Bewertung in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In diesem Abschnitt wird das Verfahren für das Modul "Advanced eDiscovery Relevancy Assessment" beschrieben. 
   
 ## <a name="performing-assessment-training-and-analysis"></a>Durchführen von Schulungs-und Analyse Tests
 
-1. Klicken Sie auf der Registerkarte ** \> Relevanz Track** auf **Bewertung** , um die Fall Bewertung zu starten. 
+1. Klicken Sie auf der Registerkarte **Relevanz \> Track** auf **Bewertung** , um die Fall Bewertung zu starten. 
     
     In diesem Verfahren wird beispielsweise ein Beispiel für einen assessmentsatz von 500-Dateien erstellt, und die Registerkarte " **Tag** " wird angezeigt, die den Markierungsbereich, den angezeigten Dateiinhalt und andere Kennzeichnungs Optionen enthält. 
     
@@ -121,7 +121,7 @@ Wenn die Reichweite sehr gering ist, ist die Anzahl der zusätzlichen assessment
 In Ermangelung einer statistisch basierten Stabilisierung werden Ergebnisse mit einer niedrigeren Genauigkeitsstufe und Zuverlässigkeitsstufe erzielt. Diese Ergebnisse können jedoch zum Auffinden relevanter Dateien verwendet werden, wenn Sie den Prozentsatz relevanter gefundener Dateien nicht kennen müssen. In ähnlicher Weise kann dieser Status verwendet werden, um Probleme mit niedrigem Umfang auszubilden, wobei Relevanz Scores den Zugriff auf Dateien beschleunigen kann, die für ein bestimmtes Problem relevant sind.
   
 > [!TIP]
-> Auf der **Register \> Karte relevanzstatus** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt**einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Bewertungsebene**den **Ziel Fehler Rand für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
+> Auf der Registerkarte **relevanzstatus \> ** , erweiterte Ausgabe Anzeige, stehen die folgenden Anzeigeoptionen zur Verfügung: > den empfohlenen nächsten Schritt wie den **nächsten Schritt: die Kennzeichnung** kann umgangen werden (pro Problem), indem Sie rechts auf die Schaltfläche **ändern** klicken und dann im **nächsten Schritt**einen anderen Schritt auswählen. Wenn der Statusindikator für die Bewertung nicht abgeschlossen ist, wird die nächste empfohlene Option verwendet, um weitere Bewertungsdateien zu markieren und die Genauigkeit der Statistik zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkung bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Bewertungsebene**den **Ziel Fehler Rand für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zur Bewertungsebene und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse werden Statistiken pro Problem angezeigt, wenn mindestens 500 getaggte Bewertungsdateien vorhanden sind und mindestens 18 Dateien als relevant für das Problem gekennzeichnet sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

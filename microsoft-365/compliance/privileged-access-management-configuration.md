@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie mehr über das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Office 365.
-ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036420"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936320"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Erste Schritte mit der Verwaltung des privilegierten Zugriffs
 
 Dieses Thema führt Sie durch das Aktivieren und Konfigurieren der privilegierten Zugriffsverwaltung in Ihrer Organisation. Sie können entweder das Microsoft 365 Admin Center oder die Exchange-Verwaltungskonsole verwenden, um privilegierten Zugriff zu verwalten und zu verwenden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie mit der privilegierten Zugriffsverwaltung beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung der privilegierten Zugriffsverwaltung muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -56,21 +56,21 @@ Führen Sie die folgenden Schritte zum Einrichten und Verwenden von privilegiert
 
 - [Schritt 1: Erstellen einer Gruppe einer genehmigenden Person](privileged-access-management-configuration.md#step1)
 
-    Bevor Sie mit dem Verwenden des Zugriffs auf Berechtigungen beginnen, müssen Sie ermitteln, wer Genehmigungsautorität für eingehende Anforderungen für den Zugriff auf Erweiterte und privilegierte Aufgaben benötigt. Jeder Benutzer, der Teil der Gruppe der genehmigenden Personen ist, kann Zugriffsanforderungen genehmigen. Diese Gruppe wird durch Erstellen einer e-Mail-aktivierten Sicherheitsgruppe in Office 365 aktiviert.
+    Bevor Sie mit dem Verwenden von privilegiertem Zugriff beginnen, bestimmen Sie, wer die Berechtigung zum Genehmigen eingehender Anforderungen für den Zugriff auf Aufgaben mit erhöhten und privilegierten Rechten benötigt. Jeder Benutzer, der zur Gruppe "Genehmiger" gehört, kann Zugriffsanforderungen genehmigen. Diese Gruppe wird durch Erstellen einer e-Mail-aktivierten Sicherheitsgruppe in Office 365 aktiviert.
 
 - [Schritt 2: Aktivieren des privilegierten Zugriffs](privileged-access-management-configuration.md#step2)
 
-    Der privilegierte Zugriff muss in Office 365 explizit mit der standardmäßigen genehmigenden Gruppe aktiviert sein, einschließlich einer Reihe von Systemkonten, die von der Zugriffssteuerung für privilegierte Zugriffsverwaltung ausgeschlossen werden sollen.
+    Privilegierter Zugriff muss in Office 365 explizit mit der Standardgenehmigungsgruppe aktiviert werden, einschließlich einer Reihe von Systemkonten, die Sie aus der Privileged Access Management-Zugriffssteuerung ausschließen möchten.
 
 - [Schritt 3: Erstellen einer Zugriffsrichtlinie](privileged-access-management-configuration.md#step3)
 
-    Durch das Erstellen einer Genehmigungsrichtlinie können Sie die spezifischen Genehmigungsanforderungen definieren, die auf einzelne Vorgänge beschränkt sind. Die Genehmigungs Typen Optionen sind **Auto** oder **manuell**.
+    Die Erstellung einer Genehmigungsrichtlinie ermöglicht es Ihnen, die spezifischen Genehmigungsanforderungen für einzelne Aufgaben zu definieren. Die Optionen für den Genehmigungstyp sind **Automatisch** oder **Manuell**.
 
 - [Schritt 4: senden/genehmigen von Berechtigungen für privilegierte Zugriffe](privileged-access-management-configuration.md#step4)
 
-    Nach Aktivierung erfordert der privilegierte Zugriff Genehmigungen für jede Aufgabe, für die eine zugeordnete Genehmigungsrichtlinie definiert ist. Für Aufgaben, die in einer Genehmigungsrichtlinie enthalten sind, müssen die Benutzer die Genehmigung für den Zugriff anfordern und erhalten, damit die erforderlichen Berechtigungen zum Ausführen der Aufgabe erteilt werden können.
+    Nach der Aktivierung erfordert der privilegierte Zugriff Genehmigungen für jede Aufgabe, für die eine entsprechende Genehmigungsrichtlinie definiert ist. Für Aufgaben, die in einer Genehmigungsrichtlinie enthalten sind, müssen Benutzer eine Zugriffsgenehmigung anfordern und erhalten, um über die zur Ausführung der Aufgabe erforderlichen Berechtigungen zu verfügen.
 
-Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgesehene Aufgabe ausführen, und der privilegierte Zugriff autorisiert und führt die Aufgabe im Namen des Benutzers aus. Die Genehmigung bleibt für die angeforderte Dauer gültig (die Standarddauer beträgt 4 Stunden), während der der Anforderer die beabsichtigte Aufgabe mehrmals ausführen kann. Alle derartigen Ausführungen werden protokolliert und zur Überwachung der Sicherheit und Compliance zur Verfügung gestellt. 
+Nachdem die Genehmigung erteilt wurde, kann der anfragende Benutzer die beabsichtigte Aufgabe ausführen, und der privilegierte Zugriff autorisiert und führt die Aufgabe im Namen des Benutzers aus. Die Genehmigung bleibt für die beantragte Dauer gültig (Standarddauer ist 4 Stunden), während der der Antragsteller die beabsichtigte Aufgabe mehrmals ausführen kann. Alle derartigen Ausführungen werden protokolliert und für Sicherheits- und Compliance-Audits zur Verfügung gestellt. 
 
 >[!NOTE]
 >Wenn Sie die Exchange-Verwaltungs-PowerShell zum Aktivieren und Konfigurieren des privilegierten Zugriffs verwenden möchten, führen Sie die Schritte unter [Verbinden mit Exchange Online PowerShell mithilfe der mehrstufigen Authentifizierung](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) aus, um eine Verbindung mit Exchange Online PowerShell mit Ihren Office 365 Anmeldeinformationen herzustellen. Sie müssen die mehrstufige Authentifizierung für Ihre Organisation nicht aktivieren, um die erforderlichen Schritte zum Aktivieren des privilegierten Zugriffs beim Herstellen einer Verbindung mit Exchange Online PowerShell durchführen zu können. Durch die Verbindung mit mehrstufiger Authentifizierung wird ein OAuth-Token erstellt, das von privilegiertem Zugriff zum Signieren Ihrer Anforderungen verwendet wird.
@@ -81,11 +81,11 @@ Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgese
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Gruppen** > **Hinzufügen einer Gruppe**.
+2. Wechseln Sie im Admin Center zu **Gruppen**  >  **Hinzufügen einer Gruppe**.
 
 3. Wählen Sie **e-Mail-aktivierte Sicherheitsgruppe** aus, und füllen Sie dann die Felder **Name**, **Gruppen-e-Mail-Adresse**und **Beschreibung** für die neue Gruppe aus.
 
-4. Speichern Sie die Gruppe. Es kann einige Minuten dauern, bis die Gruppe vollständig konfiguriert und im Microsoft 365 Admin Center angezeigt wird.
+4. Speichern Sie die Gruppe.  Es kann ein paar Minuten dauern, bis die Gruppe vollständig konfiguriert ist und im Microsoft 365 Admin Center angezeigt wird.
 
 5. Wählen Sie die Gruppe neue genehmigende Person aus, und wählen Sie **Bearbeiten** aus, um der Gruppe Benutzer hinzuzufügen.
 
@@ -99,7 +99,7 @@ Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgese
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen > Einstellungen > Security & Privacy** > **privileged Access**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Aktivieren Sie das Steuerelement **erforderliche Genehmigungen für privilegierte Aufgaben** .
 
@@ -134,7 +134,7 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Organisation e
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -144,13 +144,13 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Organisation e
     
     **Richtlinientyp**: Aufgabe, Rolle oder Rollengruppe
 
-    **Richtlinienbereich**: Exchange
+    **Geltungsbereich der Richtlinie**: Exchange
 
-    **Richtlinienname**: Wählen Sie aus den verfügbaren Richtlinien aus.
+    **Richtlinienname**: Aus den verfügbaren Richtlinien auswählen
 
-    **Genehmigungs**: manuell oder automatisch
+    **Genehmigungstyp**: Manuell oder automatisch
 
-    **Genehmigungsgruppe**: Wählen Sie die in Schritt 1 erstellte genehmigende Gruppe aus.
+    **Genehmigungsgruppe**: Wählen Sie die in Schritt 1 erstellte Gruppe der genehmigenden Personen aus.
 
 6. Klicken Sie auf **Erstellen** und dann auf **Schließen**. Es kann einige Minuten dauern, bis die Richtlinie vollständig konfiguriert und aktiviert ist.
 
@@ -172,15 +172,15 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ## <a name="step-4-submitapprove-privileged-access-requests"></a>Schritt 4: senden/genehmigen von Berechtigungen für privilegierte Zugriffe
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Anfordern von Höhen Autorisierung zum Ausführen privilegierter Aufgaben
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Anforderung einer Erhebungsberechtigung zur Ausführung privilegierter Aufgaben
 
-Anforderungen für privilegierten Zugriff sind bis zu 24 Stunden nach der Übermittlung der Anforderung gültig. Wenn diese nicht genehmigt oder verweigert werden, laufen die Anforderungen ab, und der Zugriff ist nicht genehmigt.
+Anforderungen für einen privilegierten Zugriff sind bis zu 24 Stunden nach Einreichung der Anforderung gültig. Wenn sie nicht genehmigt oder abgelehnt werden, verfallen die Anforderungen und der Zugriff wird nicht genehmigt.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Im Microsoft 365 Admin Center
 
 1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -188,11 +188,11 @@ Anforderungen für privilegierten Zugriff sind bis zu 24 Stunden nach der Überm
 
     **Anforderungstyp**: Aufgabe, Rolle oder Rollengruppe
 
-    **Anforderungsbereich**: Exchange
+    **Geltungsbereich der Anforderung**: Exchange
 
-    **Anforderung für**: Wählen Sie aus den verfügbaren Richtlinien aus.
+    **Anforderung für**: Aus den verfügbaren Richtlinien auswählen
 
-    **Dauer (Stunden)**: Anzahl der Stunden des angeforderten Zugriffs. Es gibt keinen Grenzwert für die Anzahl der Stunden, die angefordert werden können.
+    **Dauer (Stunden)**: Anzahl der Stunden, die für den angeforderten Zugriff erforderlich sind. Es gibt keinen Grenzwert für die Anzahl der Stunden, die angefordert werden können.
 
     **Kommentare**: Text Feld für Kommentare im Zusammenhang mit ihrer Zugriffsanfrage
 
@@ -212,7 +212,7 @@ Beispiel:
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
 
-### <a name="view-status-of-elevation-requests"></a>Anzeigen des Status von Ansichts Anforderungen
+### <a name="view-status-of-elevation-requests"></a>Anzeigen des Status von Anforderungen für erhöhte Rechte
 
 Nach dem Erstellen einer Genehmigungsanforderung kann der Status der Ansichts Anforderung im Admin Center oder in der Exchange-Verwaltungskonsole mithilfe der zugeordneten Anforderungs-ID überprüft werden.
 
@@ -220,7 +220,7 @@ Nach dem Erstellen einer Genehmigungsanforderung kann der Status der Ansichts An
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Ihren Anmeldeinformationen an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -242,13 +242,13 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 ### <a name="approving-an-elevation-authorization-request"></a>Genehmigen einer Ansichts Autorisierungsanforderung
 
-Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entsprechenden genehmigenden Gruppe eine e-Mail-Benachrichtigung und können die Anforderung genehmigen, die der Anforderungs-ID zugeordnet ist. Der Anforderer wird über die Anforderungsgenehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt.
+Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entsprechenden genehmigenden Gruppe eine e-Mail-Benachrichtigung und können die Anforderung genehmigen, die der Anforderungs-ID zugeordnet ist. Der Antragsteller wird über die Genehmigung oder Ablehnung der Anforderung per E-Mail benachrichtigt.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Im Microsoft 365 Admin Center
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Ihren Anmeldeinformationen an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -290,7 +290,7 @@ Wenn Sie in Ihrer Organisation nicht mehr benötigt wird, können Sie eine privi
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
@@ -316,7 +316,7 @@ Bei Bedarf können Sie die privilegierte Zugriffsverwaltung für Ihre Organisati
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie im Admin Center zu **Einstellungen** > **Sicherheit & Zugriff auf Datenschutz** > **privilegiert**.
+2. Wechseln Sie im Admin Center zu **Einstellungen**  >  **org Settings**  >  **Security & Privacy**  >  **privileged Access**.
 
 3. Aktivieren Sie die **Berechtigung Genehmigungen für privilegierte Zugriffssteuerung erfordern** .
 

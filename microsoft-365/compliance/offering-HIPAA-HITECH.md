@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773716"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936350"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
@@ -98,7 +98,7 @@ Das [Vertrauensstellungsportal](https://www.microsoft.com/trustcenter/STP/defaul
 
 Um Kunden bei dieser Aufgabe zu unterstützen, hat Microsoft die folgenden Leitfäden veröffentlicht:
 
-- *HIPAA/HITECH Act-Implementierungsleitfaden* für [Azure](https://aka.ms/azurehipaaguidance) und für [Dynamics 365 und Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Verfasst für Datenschutz-, Sicherheits- und Compliance-Beauftragte sowie andere, die für die HIPAA- und HITECH Act-Implementierung verantwortlich sind. Es werden konkrete Schritte beschrieben, die Ihr Unternehmen zur Einhaltung der Compliance ausführen kann.
+- *HIPAA/HITECH Act-Implementierungsleitfaden* für [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/) und für [Dynamics 365 und Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Verfasst für Datenschutz-, Sicherheits- und Compliance-Beauftragte sowie andere, die für die HIPAA- und HITECH Act-Implementierung verantwortlich sind. Es werden konkrete Schritte beschrieben, die Ihr Unternehmen zur Einhaltung der Compliance ausführen kann.
 - [Praktischer Leitfaden zum Entwerfen von sicheren Gesundheitslösungen mit Microsoft Azure](https://aka.ms/azureindustrysecurity) hilft Ihnen, besser zu verstehen, was für die erfolgreiche, sichere Einführung eines Clouddiensts nötig ist.
 - [Die Behandlung der HIPAA-Sicherheits- und Datenschutzanforderungen in der Microsoft-Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) bietet einen kurzen Überblick über die Vorschriften. Außerdem wird eine detaillierte Analyse der Funktionsweise von Cloud-Diensten von Microsoft mit Methoden erstellt, die diesen Anforderungen entsprechen, sowie Anleitungen zum Erstellen von Compliance-fähigen Lösungen.
 

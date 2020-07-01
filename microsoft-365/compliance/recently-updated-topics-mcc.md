@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818965"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936148"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -112,7 +112,7 @@ Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](custome
 [Verwenden von Sensitivitäts Bezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (öffentliche Vorschau)](sensitivity-labels-teams-groups-sites.md) (aktualisiert)<br>Dazu gehören:
 
 - Azure AD Anweisungen entfernt und stattdessen mit den [Azure AD autorisierenden Informationen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)verknüpft.
-- Die [Vorgehensweise zum Konfigurieren von Website-und Gruppeneinstellungen beim Erstellen oder Bearbeiten von Sensitivitäts Bezeichnungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) mit Informationen zum **Datenschutz von Office 365 Einstellung von Gruppen verbundenen Microsoft Teams-Websites** , die die neue Option **keine** enthält, wurden aktualisiert.
+- Aktualisieren des Abschnitts [Konfigurieren von Website-und Gruppeneinstellungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) mit Informationen zum **Datenschutz Office 365 Einstellung von Gruppen verbundenen Microsoft Teams-Websites** , die die neue Option **keine** enthält.
 - Hinweis hinzugefügt, in dem beschrieben wird, wie nur Beschriftungen mit Website-und Gruppeneinstellungen zur Auswahl stehen, wenn Benutzer Teams, Gruppen und Websites erstellen. Diese Funktionalität wird schrittweise in Organisationen eingeführt.
 
 [Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md) (aktualisiert)<br>[Neuer Abschnitt](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) mit Beispiel Verschlüsselungseinstellungen für einige der am häufigsten verwendeten Konfigurationen zum Schutz von Dokumenten und e-Mails.
@@ -133,7 +133,7 @@ Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](custome
 - [Neuer Abschnitt](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) , in dem erläutert wird, wie Sie die Gruppenrichtlinieneinstellung verwenden können, um die integrierte Kennzeichnung zu deaktivieren, wenn Sie derzeit andere Bezeichnungs Lösungen verwenden, die Sie für Ihre Windows-Computer weiterhin verwenden möchten. 
 - [Informationsrechteverwaltung (IRM)-Optionen und Sensitivitäts Bezeichnungen](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) wurden mit der Empfehlung aktualisiert, Bezeichnungen zu verwenden, die Verschlüsselung anstelle von IRM-Optionen anwenden, mit einer Erläuterung möglicher Konsequenzen, wenn die beiden Schutzlösungen gemischt werden.
 
-### <a name="trainable-classifiers"></a>Schulungs Klassifizierer
+### <a name="trainable-classifiers"></a>Trainierbare Klassifizierungsmerkmale
 
 [Erste Schritte mit Schulungs Klassifizierern (Vorschau)](classifier-getting-started-with.md) (aktualisiert)<br>Informationen dazu hinzugefügt, wie die anstößige Sprachvorlage veraltet ist. Außerdem wurde eine Tabelle mit den 25 wichtigsten Codesprachen hinzugefügt, die in der integrierten Klassifizierung des Quellcodes verwendet wurden.
 

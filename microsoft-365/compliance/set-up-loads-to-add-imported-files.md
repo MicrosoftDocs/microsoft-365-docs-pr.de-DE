@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie die Relevanz-Schulung in Advanced eDiscovery ausführen.  '
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Lesen Sie die Schritte zum Hinzufügen importierter Dateien zur letzten definierten Last oder einem Batch von Dateien, bevor Sie die Relevanz-Schulung in Advanced eDiscovery ausführen.
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636293"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936816"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Einrichten von Lasten zum Hinzufügen importierter Dateien in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Bei Advanced eDiscovery ist eine Last ein neuer Batch von Dateien, die einem Fall hinzugefügt wurden. Standardmäßig wird eine Last definiert, und alle importierten Dateien werden hinzugefügt. Vor dem Durchführen von Relevanz-Schulungen müssen importierte Dateien zur Last hinzugefügt werden. 
   
@@ -97,7 +97,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
 
 1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Lasten**aus.
     
-2. Klicken **Loads management**Sie unter Loads Management **+** auf das Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
+2. Klicken Sie unter Loads **Management**auf das **+** Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
     
 3. Klicken Sie auf **Ja**, um den Vorgang fortzusetzen. Das Dialogfeld **neue Last hinzufügen** wird angezeigt. 
     
@@ -116,7 +116,7 @@ Rollende Lasten und Catch-up-Funktionen unterscheiden sich wie folgt:
     
     Sie können dann Dateien markieren und einen Calculate-Vorgang ausführen. Die Kennzeichnung ermöglicht die Relevanz, um festzustellen, ob Lasten ähnlich oder unterschiedlich sind, und Sie können weiterhin an der neuen Gruppe von Dateien arbeiten.
     
-7. Nachdem Sie den auffangsatz überprüft haben, können Sie den **Track zur Relevanz \> ** für die Catch-up-Ergebnisse anzeigen. 
+7. Nachdem Sie den auffangsatz überprüft haben, können Sie den ** \> Track zur Relevanz** für die Catch-up-Ergebnisse anzeigen. 
     
 1. Wenn die neue Datei Last während des Relevanz-Trainings hinzugefügt wurde (was bedeutet, dass das Problem noch nicht durch die Batch Berechnung fortgesetzt wurde), ist die **Weiterbildung** der nächste Schritt, unabhängig von den Aufhol Ergebnissen. 
     

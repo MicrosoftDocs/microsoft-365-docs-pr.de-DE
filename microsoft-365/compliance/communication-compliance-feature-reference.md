@@ -18,21 +18,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689243"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936784"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
 ## <a name="policies"></a>Richtlinien
 
 >[!Important]
->Die Verwendung von PowerShell zum Erstellen und Verwalten von Kommunikations Konformitätsrichtlinien wird nicht unterstützt. Zum Erstellen und Verwalten dieser Richtlinien müssen Sie die Steuerelemente für die Richtlinienverwaltung in der [Microsoft 365 Communication Compliance-Lösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
+>Die Verwendung von PowerShell zum Erstellen und Verwalten von Richtlinien zur Kommunikationscompliance wird nicht unterstützt. Zum Erstellen und Verwalten dieser Richtlinien müssen Sie die Steuerelemente für die Richtlinienverwaltung in der [Microsoft 365 Communication Compliance-Lösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-Sie erstellen Kommunikationsrichtlinien für Microsoft 365-Organisationen im Microsoft 365 Compliance Center. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die in der Rollengruppe **aufsichtsüberprüfung-Administrator** enthalten sind, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite **Kommunikations Kompatibilität** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
+Im Microsoft 365 Compliance Center erstellen Sie Richtlinien zur Kommunikationscompliance für Microsoft 365-Organisationen. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die der Rollengruppe **Administrator für Aufsichtsüberprüfungen** angehören, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen wurde, kann auf die Seite **Kommunikationscompliance** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
@@ -49,18 +49,18 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
-Bevor Sie mit der Verwendung der Kommunikations Konformität beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten, Jammer Gemeinschaften und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Überprüfung mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen ausschließen.
+Bevor Sie mit der Kommunikationscompliance beginnen, müssen Sie feststellen, wer die Überprüfung der Kommunikation benötigt. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten, Jammer Gemeinschaften und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen vom Überprüfen ausschließen.
 
 >[!IMPORTANT]
 >Für Benutzer, die von Kommunikationsrichtlinien Richtlinien abgedeckt werden, muss entweder eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Kommunikations Kompatibilität testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Prüfer
 
-Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren Benutzer e-Mail-Adressen einzelne Personen oder Gruppen von Personen, um die beaufsichtigte Kommunikation zu überprüfen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und der **Fall Verwaltungs** -und **Überprüfungs** Rolle zugewiesen werden müssen. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
+Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Alle Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden, und ihnen müssen die Rollen **Fallmanagement** und **Prüfung** zugewiesen werden. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
-Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
+Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Zum Beispiel, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
 Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle e-Mails, die an diese Gruppe gesendet werden, und nicht die einzelnen e-Mails, die von den einzelnen Gruppenmitgliedern empfangen werden.
 
@@ -70,26 +70,32 @@ Das Hinzufügen von Gruppen und Verteilerlisten zu Kommunikations Konformitätsr
 
 Mit Richtlinien für die Kommunikations Konformität können Sie auswählen, ob Nachrichten in einer oder mehreren der folgenden Kommunikationsplattformen als Gruppe oder als eigenständige Quellen überprüft werden sollen. Auf diesen Plattformen erfasste Kommunikationen werden für jede Richtlinie standardmäßig sieben Jahre lang aufbewahrt, selbst wenn Benutzer Ihre Organisation verlassen und ihre Postfächer gelöscht werden.
 
-- **Microsoft Teams**: Chat Kommunikation und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelne Chats können gescannt werden. Microsoft Teams-Chats und-Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
+- **Microsoft Teams**: Chatnachrichten im öffentlichen und privaten Microsoft Teams-Kanal und einzelne Chats können gescannt werden. Wenn Benutzer einer Kommunikations Konformitätsrichtlinie mit Microsoft Teams-Abdeckung ausgewählt sind, wird die Chat Kommunikation für die Benutzer automatisch in allen Microsoft Teams überwacht, in denen die Benutzer Mitglied sind. Microsoft Teams Coverage wird automatisch für vordefinierte Richtlinienvorlagen einbezogen und in der benutzerdefinierten Richtlinienvorlage standardmäßig ausgewählt. Microsoft Teams-Chats, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und Kanal Kommunikationen in Microsoft Teams zu überwachen:
 
-    - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
-    - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Teams-Kanal oder einer Microsoft 365-Gruppe zu, die Sie überprüfen möchten, die einen bestimmten Benutzer für die Kommunikations Konformitätsrichtlinie enthält. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen der Kommunikations Konformitätsrichtlinie hinzufügen.
+    - **Für Chatnachrichten in Microsoft Teams:** Zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für Eins-zu-eins- oder Eins-zu-viele-Benutzer/Chat-Beziehungen.
+    - **Für Teams-Kanal Kommunikation:** Weisen Sie jedem Microsoft Teams-Kanal oder einer Microsoft 365-Gruppe zu, die Sie überprüfen möchten, die einen bestimmten Benutzer für die Kommunikations Konformitätsrichtlinie enthält. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, stellen Sie sicher, dass Sie diese neuen Kanäle und Gruppen in die Richtlinie zur Kommunikationscompliance aufnehmen.
+    - **Für Teams Chat Kommunikation mit Hybrid-e-Mail-Umgebungen**: Kommunikation Compliance kann Chatnachrichten für Benutzer für Organisationen mit einer lokalen Exchange-Bereitstellung oder einem externen e-Mail-Anbieter überwachen, die Microsoft Teams aktiviert haben. Sie müssen eine Verteilergruppe für die Benutzer mit lokalen oder externen Postfächern erstellen, die überwacht werden sollen. Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, weisen Sie diese Verteilergruppe im Richtlinien-Assistenten als über **wachte Benutzer und Gruppen** Auswahl zu.
 
-- **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Unterstützte Anlagentypen für die Kommunikations Kompatibilität sind identisch mit den [für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützten Dateitypen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+    >[!IMPORTANT]
+    >Sie müssen eine Anforderung mit dem Microsoft-Support einreichen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um nach teamchatdaten für lokale Benutzer zu suchen. Weitere Informationen finden Sie unter [searching Cloud-based Mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten zu suchen.
+
+- **Exchange-e-Mail**: Postfächer, die auf Exchange Online als Teil Ihres Microsoft 365-oder Office 365-Abonnements gehostet werden, sind alle für die Nachrichtenüberprüfung berechtigt. Exchange-e-Mail-Nachrichten und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Die für die Kommunikationscompliance unterstützten Anlagetypen sind die gleichen wie die [Dateitypen, die für die Inhaltsüberprüfung von Exchange-Mailflussregeln unterstützt werden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Jammern**: Private Nachrichten und öffentliche Unterhaltungen und zugehörige Anlagen in Jammer Gemeinschaften können gescannt werden. Wenn ein Benutzer zur Kommunikations Konformitätsrichtlinie hinzugefügt wird, die das Jammern als definierten Kanal umfasst, werden die Kommunikationen in allen Jammer Gemeinschaften, in denen der Benutzer Mitglied ist, in den Überprüfungsprozess einbezogen. Jammern von Chats und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden in Anspruch nehmen. Jammern muss im [einheitlichen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) für Kommunikationsrichtlinien zur Überwachung von jammern von Kommunikation und Anlagen sein. Im nativen Modus befinden sich alle Yammer-Benutzer in Azure Active Directory (AAD), alle Gruppen sind Office 365-Gruppen, und alle Dateien werden in SharePoint Online gespeichert.
 
-- **Skype for Business Online**: Chat Kommunikation und zugehörige Anlagen in Skype for Business Online können überwacht werden. Skype for Business Online Chats, die Richtlinienbedingungen für die Kommunikation erfüllen, können bis zu 24 Stunden verarbeiten. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
+- **Skype for Business Online**: Chatnachrichten und zugehörige Anlagen in Skype for Business Online können überwacht werden. Die Bearbeitung von Skype for Business Online-Chats, in denen die Bedingungen für die Richtlinien zur Kommunikationscompliance erfüllt werden, kann bis zu 24 Stunden dauern. Überwachte Chat Unterhaltungen werden aus [früheren Unterhaltungen, die in Skype for Business Online gespeichert](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)wurden, bezogen.  Verwenden Sie die folgende Gruppen Verwaltungskonfiguration, um die Benutzer Chat Kommunikation in Skype for Business Online zu überwachen:
 
-    - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für 1:1-oder 1: n-Benutzer-/-Chat-Beziehungen.
+    - **Für Skype for Business Online Chat Kommunikation**: zuweisen einzelner Benutzer oder Zuweisen einer [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zur Kommunikations Konformitätsrichtlinie. Diese Einstellung gilt für Eins-zu-eins- oder Eins-zu-viele-Benutzer/Chat-Beziehungen.
 
-- **Drittanbieterquellen**: Sie können die Kommunikation von Drittanbieterquellen für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Connectors unterstützen die folgenden Drittanbieterressourcen:
+- **Drittanbieterquellen**: Sie können Kommunikationen aus Drittanbieterquellen nach Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden. Connectors unterstützen die folgenden Drittanbieterressourcen:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
     - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Benutzerdefinierter Daten-Konnektor](archiving-third-party-data.md)
+    - [Benutzerdefinierter Datenconnector](archiving-third-party-data.md)
 
 Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt " **Drittanbieterquellen** " des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
 
@@ -97,9 +103,9 @@ Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation k
 
 Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Übergang zu Kommunikationsrichtlinien in Microsoft 365 planen, müssen diese wichtigen Punkte verstehen:
 
-- Beide Lösungen können nebeneinander in Ihrer Organisation verwendet werden, aber Richtlinien, die in jeder Lösung verwendet werden, müssen eindeutige Richtliniennamen aufweisen. Gruppen und benutzerdefinierte Schlüsselwörter Wörterbücher können während eines Übergangszeitraums Zwischenlösungen freigegeben werden.
+- Beide Lösungen können in Ihrer Organisation nebeneinander verwendet werden, aber die in jeder Lösung verwendeten Richtlinien müssen eindeutige Richtliniennamen haben. aufweisen. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
 - Nachrichten, die in Office 365 Richtlinien Übereinstimmungen gespeichert wurden, können nicht in der Kommunikations Kompatibilität in Microsoft 365 verschoben oder freigegeben werden.
-- Die Überwachungslösung in Office 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die die gleichen Einstellungen wie die vorhandenen Aufsichtsrichtlinien aufweisen, um die neuen Untersuchungen und Korrektur Verbesserungen zu verwenden. Beim Übergang zur Kommunikations Kompatibilität in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Beaufsichtigung in Office 365 zu exportieren, wenn Sie über interne Compliance-Aufbewahrungsrichtlinien Anforderungen verfügen.
+- Die Überwachungslösung in Office 365 wird vollständig durch die Kommunikations kompatibilitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien in der Kommunikations Kompatibilität zu erstellen, die die gleichen Einstellungen wie die vorhandenen Aufsichtsrichtlinien aufweisen, um die neuen Untersuchungen und Korrektur Verbesserungen zu verwenden. Beim Übergang zur Kommunikationscompliance in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Aufsicht in Office 365 zu exportieren, wenn Sie interne Richtlinien zur Aufbewahrung von Compliance-Anforderungen haben.
 
 Informationen zur Beaufsichtigung in Office 365 finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap) für Vorsorge Informationen.
 
@@ -107,7 +113,7 @@ Informationen zur Beaufsichtigung in Office 365 finden Sie im [Microsoft 365-Fah
 
 ### <a name="users"></a>Benutzer
 
-Sie haben die Möglichkeit, **alle Benutzer** auszuwählen oder bestimmte Benutzer in einer Kommunikations Konformitätsrichtlinie zu definieren. Wenn Sie **alle Benutzer** auswählen, wird die Richtlinie auf alle Benutzer und alle Gruppen angewendet, in denen ein beliebiger Benutzer als Mitglied enthalten ist. Durch das Definieren bestimmter Benutzer wird die Richtlinie auf die definierten Benutzer und alle Gruppen angewendet, in denen die definierten Benutzer als Mitglied enthalten sind.
+Sie haben die Möglichkeit, **alle Benutzer** auszuwählen oder bestimmte Benutzer in einer Kommunikations Konformitätsrichtlinie zu definieren. Durch Auswahl von **Alle Benutzer** wird die Richtlinie auf alle Benutzer und alle Gruppen angewendet, in denen ein Benutzer als Mitglied enthalten ist. Das Festlegen bestimmter Benutzer wendet die Richtlinie auf die festgelegten Benutzer und alle Gruppen an, in denen die festgelegten Benutzer als Mitglied enthalten sind.
 
 ### <a name="direction"></a>Direction
 
@@ -119,7 +125,7 @@ Standardmäßig wird die Bedingung " **Direction** " angezeigt und kann nicht en
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Kommunikations Konformitätsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Im Rahmen der [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)können mit der Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Konfidenz Stufen und sogar benutzerdefinierte Datentypen verwendet werden, um Inhalte zu identifizieren und zu kennzeichnen, die möglicherweise vertraulich sind. Die Standardtypen für vertrauliche Informationen sind:
+Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Kommunikations Konformitätsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die helfen, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Als Bestandteil von [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md), kann die Konfiguration vertraulicher Informationen Muster, Zeichennähe, Vertrauensniveaus und sogar benutzerdefinierte Datentypen verwenden, um möglicherweise vertrauliche Inhalte zu identifizieren und zu kennzeichnen. Die Standardtypen für vertrauliche Informationen sind:
 
 - Finanzwesen
 - Medizin und Gesundheit
@@ -134,9 +140,9 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 ### <a name="classifiers"></a>Klassifizierungen
 
-Integrierte Klassifizierungen überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation für unterschiedliche Arten von Kompatibilitätsproblemen. Für Klassifizierungen wird eine Kombination aus künstlicher Intelligenz und Stichwörtern verwendet, um die Sprache in Nachrichten zu identifizieren, die gegen Belästigungs Richtlinien verstoßen könnten. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
+Integrierte Klassifizierer überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation nach verschiedenen Arten von Konformitätsproblemen. Klassifizierer verwenden eine Kombination aus künstlicher Intelligenz und Schlüsselwörtern, um Sprache in Botschaften zu identifizieren, die wahrscheinlich gegen die Antibelästigungsrichtlinien verstoßen. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
 
-Kommunikation Compliance integrierte Klassifizierungen überprüfen die Kommunikation nach Ausdrücken und Gefühlen für die folgenden Sprachtypen:
+Integrierte Klassifizierer für die Kommunikationscompliance überprüfen die Kommunikation nach Begriffen und Empfindungen für die folgenden Sprachtypen:
 
 - **Bedrohung**: scannt nach Bedrohungen, um Gewalt oder körperlichen Schaden für eine Person oder Eigenschaft zu begehen.
 - **Belästigung**: Scans für anstößige Verhaltensweisen, die sich an Personen in Bezug auf Rasse, Farbe, Religion und nationale Herkunft ausrichten.
@@ -144,12 +150,12 @@ Kommunikation Compliance integrierte Klassifizierungen überprüfen die Kommunik
 
 Die integrierten Klassifizierungen bieten keine erschöpfende Liste von Begriffen in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung dieser Sprache für Ihre Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit dem Scannen und Blockieren von Sprache in diesen Bereichen verantwortlich.
 
-Informationen zu Klassifizierungen in Microsoft 365 finden Sie unter [Klassifizierer](classifier-getting-started-with.md).
+Informationen über Klassifizierer in Microsoft 365 finden Sie unter [Klassifizierer](classifier-getting-started-with.md).
 
 ### <a name="conditional-settings"></a>Bedingte Einstellungen
 <a name="ConditionalSettings"> </a>
 
-Die Bedingungen, die Sie für die Richtlinie wählen, gelten für die Kommunikation sowohl von e-Mails als auch von Drittanbieterquellen in Ihrer Organisation (wie Facebook oder Dropbox).
+Die von Ihnen ausgewählten Bedingungen für die Richtlinie gelten sowohl für E-Mail-Kommunikationen als auch für Kommunikationen in Drittanbieterquellen in Ihrer Organisation (etwa Facebook oder DropBox).
 
 In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
   
@@ -189,7 +195,7 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen 
 
 ### <a name="review-percentage"></a>Überprüfen des Prozentsatzes
 
-Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die durch eine Kommunikations Konformitätsrichtlinie geregelt wird. Aus dem Gesamtprozentsatz des Inhalts, der den ausgewählten Richtlinienbedingungen entspricht, wird ein Zufalls Beispiel für eine echt Zeitauswahl ausgewählt. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie **100%** in einer Kommunikations Konformitätsrichtlinie konfigurieren.
+Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die durch eine Kommunikations Konformitätsrichtlinie geregelt wird. Eine zufällige Stichprobe von Inhalten wird in Echtzeit aus dem Gesamtprozentsatz der Inhalte ausgewählt, die den gewählten Richtlinienbedingungen entsprechen. Wenn Sie möchten, dass Prüfer alle Elemente prüfen, können Sie in einer Richtlinie zur Kommunikationscompliance **100 %** konfigurieren.
 
 ## <a name="notices"></a>Hinweise
 

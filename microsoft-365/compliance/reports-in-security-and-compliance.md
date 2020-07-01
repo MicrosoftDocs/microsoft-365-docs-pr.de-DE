@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
-description: 'Verwenden Sie das Security & Compliance Center, um verschiedene Berichte für Ihre SharePoint Online und Exchange Online Organisation sowie Azure Active Directory-Berichte zu erhalten.  '
-ms.openlocfilehash: 4783c3171f5f49dd50d6da8f5f4835ba243f7ab3
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+description: Verwenden Sie das Security & Compliance Center, um verschiedene Berichte für Ihre SharePoint Online und Exchange Online Organisation sowie Azure Active Directory-Berichte zu erhalten.
+ms.openlocfilehash: 8762c1bbb23d2b9f3840076f0ffa465cf7ab264b
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214707"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936178"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Berichte im Security & Compliance Center
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717273"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936443"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -40,16 +40,12 @@ Sie können die spezifischen Anforderungen für Office und Exchange unten anzeig
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
   
-- Add-Ins, die Word, Excel oder PowerPoint in Office 2013 zum Ziel haben
-    
+- Add-Ins, die Word, Excel oder PowerPoint in Office 2013 zum Ziel haben 
 - Ein lokaler Verzeichnisdienst
-    
+- Add-in-Bereitstellung in einem Exchange-basierten Postfach
 - Add-In-Bereitstellung in SharePoint  
-
 - Microsoft Teams-apps
-   
 - Bereitstellung der Add-Ins Component Object Model (COM) oder Visual Studio Tools für Office (VSTO)
-    
 - Bereitstellungen von Microsoft 365, die Exchange wie Microsoft 365 apps for Business nicht enthalten
 
 ### <a name="office-requirements"></a>Office-Anforderungen

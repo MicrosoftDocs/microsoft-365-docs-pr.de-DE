@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613360"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936995"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -51,9 +51,9 @@ Filter und Aufschlüsselung der Informationen ermöglichen eine granularere Kate
 
 |||
 |---|---|
-|Nach Erkennungstyp|Welche Richtlinien haben dazu beigetragen, diese Bedrohungen zu erfassen?|
+|Nach Richtlinientyp|Welche Richtlinien haben dazu beigetragen, diese Bedrohungen zu erfassen?|
 |Nach Erkennungstechnologie|Welche zugrunde liegende Microsoft-Technologie hat die Bedrohung erfasst?|
-|Nach Zustellungsstatus|Was geschah mit den e-Mail-Nachrichten, die als Bedrohungen erkannt wurden?|
+|Nach Zustellungsstatus|Wie lautet der endgültige Zustellungsstatus von e-Mail-Nachrichten, die als Bedrohungen erkannt wurden?|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ Diese Ansichten bieten Ihnen die Möglichkeit, über einen Mausklick (in **e-Mai
 
 ![Diese Grafik zeigt den Export als Option im Menü für die Malware-Ansicht, rechts zwischen Create Schedule und Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Hinweis**: die maximale Anzahl von Einträgen, die für **Phishing** und **Schadsoftware** exportiert werden können, liegt bei knapp 10000. Wenn Sie eine Ansicht exportieren, werden nur die letzten 10000-Einträge exportiert.
+> [!NOTE]
+> Die maximale Anzahl von Einträgen, die für **Phishing** und **Schadsoftware** exportiert werden können, liegt bei knapp 10000. Wenn Sie eine Ansicht exportieren, werden nur die letzten 10000-Einträge exportiert. In den exportierten Daten stellt die Spalte _Nachrichtenanzahl_ die Anzahl der Nachrichten dar, die von der Erkennungstechnologie und dem Richtlinientyp erkannt wurden.    
 
 In den Ansichten Übersicht und e-Mails werden Informationen innerhalb von Stunden nach der Verarbeitung und nicht in 24 Stunden angezeigt (Demand Re. erhöhte Geschwindigkeiten hier war ein deutliches Signal)!
 
@@ -80,7 +81,7 @@ Wenn Sie einen detaillierten Status für einen Tag erhalten möchten, zeigen Sie
 
 ![Status Daten für den ATP-Bedrohungsschutz für einen Tag](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-Standardmäßig zeigt der Status Bericht zum Bedrohungsschutz Daten für die letzten sieben Tage an. Sie können jedoch **Filter** auswählen und den Datumsbereich ändern, um Daten für bis zu 90 Tage anzuzeigen. (Wenn Sie ein Testabonnement verwenden, sind die Daten möglicherweise auf 30 Tage eingeschränkt.)
+Standardmäßig zeigt der Status Bericht zum Bedrohungsschutz Daten für die letzten sieben Tage an. Sie können jedoch **Filter** auswählen und den Datumsbereich ändern, um Daten für die Gesamtansicht bis zu 90 Tage und für die Detailansicht 30 Tage anzuzeigen. (Wenn Sie ein Testabonnement verwenden, sind die Daten möglicherweise auf 30 Tage eingeschränkt.)
 
 ![Status Filter für den ATP-Bedrohungsschutz](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ Um diesen Bericht anzuzeigen, wechseln Sie im [Security &amp; Compliance Center]
 
 ![ATP-Dateitypenbericht](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti-Spam- &amp; Schutz vor Schadsoftware](anti-spam-and-anti-malware-protection.md)erkannt wurden.
+Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti-Spam- &amp; Schutz vor Schadsoftware](anti-spam-and-anti-malware-protection.md)erkannt wurden. Die aggregierte Ansicht des Berichts ermöglicht eine Filterung von 90 Tagen, während die Detailansicht nur zehn Tage nach der Filterung zulässt. 
   
 ![ATP-Dateitypen-Berichtsdaten für einen Tag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 

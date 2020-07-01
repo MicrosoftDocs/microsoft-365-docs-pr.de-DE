@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Erfahren Sie, wie Sie die Regel definieren, um bestimmten Text zu ignorieren, wenn Sie die Analyse-und Prozessmodule in Advanced eDiscovery verwenden.  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Sie die Regel definieren, um bestimmten Text zu ignorieren, wenn Sie die Analyse-und Prozessmodule in Advanced eDiscovery verwenden.
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631252"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936892"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Option Text ignorieren festlegen für Analyse in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Das Feature Text ignorieren kann auf alle oder alle der folgenden erweiterten eDiscovery-Module angewendet werden: analysieren (nahe Duplikate, e-Mail-Threads, Designs) und Relevanz. Der ignorierte Text wird nicht in den für Relevanz angezeigten Dateien angezeigt, und die Analyse/Berechnungen verwerfen den ignorierten Text.
   
@@ -62,7 +62,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Ignore-Text 
     
     **Dies ist der zweite Satz und die zweite Reihe "**
     
-    der reguläre Ausdruck zuerst (.\*) $ führt zu:
+    der reguläre Ausdruck zuerst (. \* ) $ führt zu:
     
     **"Dies ist**
     
@@ -76,7 +76,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Ignore-Text 
     
     Beispielsweise werden im folgenden regulären Ausdruck Haftungsausschlüsse und rechtliche Anweisungen entfernt, die sich im e-Mail-Thread zwischen den Zeichenfolgen BEGIN und End befanden:
     
-    **Diese Nachricht enthält vertrauliche Informationen (. | \s)\*wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version an.**
+    **Diese Nachricht enthält vertrauliche Informationen (. | \s) \* Wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version an.**
     
 - So entfernen Sie einen Haftungsausschluss (einschließlich Sonderzeichen): 
     
@@ -90,11 +90,11 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Ignore-Text 
     
     der reguläre Ausdruck zum Entfernen des obigen Haftungsausschlusses sollte wie folgt aussehen: 
     
-    **\/\\*\\Diese Nachricht enthält vertrauliche\.Informationen (. | \s)\* wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy\. -Version an.\/\\*\\**
+    **\/\\*\\Diese Nachricht enthält vertrauliche Informationen \. (. | \s) \* Wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version \. an.\/\\*\\**
     
 - Regeln für reguläre Ausdrücke:
     
-  - Alle Zeichen, die nicht Teil des Alphabets sind, mit Ausnahme von Leerzeichen, "_" und "-" muss vorangestellt werden\".
+  - Alle Zeichen, die nicht Teil des Alphabets sind, mit Ausnahme von Leerzeichen, "_" und "-" muss vorangestellt werden \" .
     
   - Das reguläre eExpression-Feld kann unbegrenzte Länge aufweisen.
     
@@ -103,7 +103,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Ignore-Text 
   
 ## <a name="define-ignore-text-rule"></a>Definieren von Ignore-Text Regel
 
-1. Klicken Sie auf der Registerkarte **analysiere \> \> Analyseoptionen verwalten** im Abschnitt **Text ignorieren** auf **+** das Symbol, um eine Regel hinzuzufügen. 
+1. Klicken Sie auf der Registerkarte ** \> analysiere Analyse \> Optionen verwalten** im Abschnitt **Text ignorieren** auf das **+** Symbol, um eine Regel hinzuzufügen. 
     
 2. Geben Sie im Dialogfeld **Text ignorieren hinzufügen** in das Feld **Name** einen Namen für die Regel Text ignorieren ein. 
     

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Hier erfahren Sie, wo Sie die Ergebnisse des Analyseprozesses in Advanced eDiscovery anzeigen können, einschließlich der Definitionen der angezeigten Aufgabenoptionen.  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier erfahren Sie, wo Sie die Ergebnisse des Analyseprozesses in Advanced eDiscovery anzeigen können, einschließlich der Definitionen der angezeigten Aufgabenoptionen.
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936948"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Anzeigen von Analyseergebnissen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery können Fortschritte und Ergebnisse für den Analyseprozess in einer Vielzahl von Displays angezeigt werden, wie unten beschrieben.
   

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Hier erfahren Sie, wie Sie den Status und die Ergebnisse von Relevanz-Schulungen für Fall Probleme in Advanced eDiscovery anzeigen und interpretieren.  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier erfahren Sie, wie Sie den Status und die Ergebnisse von Relevanz-Schulungen für Fall Probleme in Advanced eDiscovery anzeigen und interpretieren.
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636618"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936218"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Nachverfolgen der Relevanz-Analyse in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery wird auf der Registerkarte Relevanz Track die berechnete Gültigkeit der Relevanz-Schulung angezeigt, die auf der Registerkarte "Tag" ausgeführt wird, und es wird der nächste Schritt angegeben, der in Relevanz für den iterativen Schulungsprozess erfolgen soll. 
   
@@ -84,9 +84,9 @@ Wenn Sie neue Dateien nach der Batch Berechnung importieren möchten, kann der A
 Wenn es Inkonsistenzen bei der Dateikennzeichnung gibt, kann dies Auswirkungen auf die Analyse haben. Der erweiterte eDiscovery-Tagging-Konsistenz Prozess kann verwendet werden, wenn die Ergebnisse nicht optimal sind oder Konsistenz Zweifel aufkommen. Eine Liste der möglichen inkonsistente getaggten Dateien wird zurückgegeben, und Sie können nach Bedarf überprüft und neu markiert werden.
   
 > [!NOTE]
-> Nach sieben oder mehr Schulungs Runden nach der Bewertung kann die Markierungs Konsistenz in **Relevanz** \> **Track** \> **Problem** \> **detaillierte Ergebnisse** \> **Schulungs Fortschritt**angezeigt werden. Diese Überprüfung erfolgt gleichzeitig für ein Problem. 
+> Nach sieben oder mehr Schulungs Runden nach der Bewertung kann die Markierungs Konsistenz in **Relevanz** \> **Track** - \> **Problem** \> **detaillierte Ergebnisse** \> **Schulungs Fortschritt**angezeigt werden. Diese Überprüfung erfolgt gleichzeitig für ein Problem. 
   
-1. Erweitern Sie in **Relevanz \> nachverfolgen**die Zeile eines Problems.
+1. Erweitern Sie in **Relevanz nach \> verfolgen**die Zeile eines Problems.
     
 2. Klicken Sie rechts **neben nächster Schritt**auf **ändern**.
     
@@ -108,7 +108,7 @@ Erweitern Sie auf der Registerkarte **Relevanz \> Track** die Zeile eines Proble
   
 ![Übersicht über die Relevanz von Track-Tags](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 Ein Schlüsselwort ist eine eindeutige Zeichenfolge, ein Wort, eine Phrase oder eine Sequenz von Wörtern in einer Datei, die von Advanced eDiscovery als signifikanter Indikator dafür identifiziert wird, ob eine Datei relevant ist. Die Spalten "include" Listen Schlüsselwort und Gewichtungen in Dateien, die als relevant markiert sind, und in den Spalten "ausschließen" werden Stichwörter und Gewichtungen in Dateien aufgelistet, die als nicht relevant gekennzeichnet sind.
   

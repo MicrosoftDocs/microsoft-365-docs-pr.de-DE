@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In diesem Artikel erfahren Sie mehr über das Modul "Relevanz" in Advanced eDiscovery, einschließlich eines Workflows sowie Richtlinien und Schritte zur Schulung und Dateiüberprüfung.
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626391"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936608"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Verwenden des Moduls "Relevanz" in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery umfasst das Modul Relevanz das Relevanz-Training und die Überprüfung von Dateien im Zusammenhang mit einem Fall. Der Relevanz-Workflow wird wie folgt dargestellt und beschrieben:
   
@@ -90,7 +90,7 @@ Im folgenden finden Sie eine Übersicht über Richtlinien für die Relevanz-Schu
     
 ## <a name="steps-in-relevance-training"></a>Schritte zur Relevanz-Schulung
 
-Auf der Registerkarte **relevanzstatus \> ** enthält Advanced eDiscovery Empfehlungen zum Fortfahren in der Verarbeitung mit den folgenden nächsten Schritten. Die Auswirkungen werden im folgenden beschrieben, wenn jeder der folgenden Schritte im Relevanz-Schulungsprozess empfohlen wird. 
+Auf der **Register \> Karte relevanzstatus** enthält Advanced eDiscovery Empfehlungen zum Fortfahren in der Verarbeitung mit den folgenden nächsten Schritten. Die Auswirkungen werden im folgenden beschrieben, wenn jeder der folgenden Schritte im Relevanz-Schulungsprozess empfohlen wird. 
   
 - Tagging/Continue Tagging: Dateiüberprüfung und Relevanz-Tagging, die von einem Experten für jede Datei und jedes Problem in einem Beispiel ausgeführt werden.
     

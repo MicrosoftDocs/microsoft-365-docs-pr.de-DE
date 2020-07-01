@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'Hier erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zur Relevanz hinzufügen können, um relevante Dateien beim Tagging in Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.  '
-ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Hier erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zur Relevanz hinzufügen können, um relevante Dateien beim Tagging in Advanced eDiscovery zu identifizieren und Kosten Parameter anzugeben.
+ms.openlocfilehash: 61ec74109f13d8056047e0aaf14aaa87c846e17f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630552"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936454"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In Advanced eDiscovery ist es möglich, benutzerdefinierte Schlüsselwörter zur Relevanz hinzuzufügen, um Ihnen bei der Identifizierung relevanter Dateien beim Tagging behilflich zu sein. Schlüsselwörter werden im Tag angegebenen Farben in **Relevanz \> **angezeigt. 
+In Advanced eDiscovery ist es möglich, benutzerdefinierte Schlüsselwörter zur Relevanz hinzuzufügen, um Ihnen bei der Identifizierung relevanter Dateien beim Tagging behilflich zu sein. Schlüsselwörter werden im ** \> Tag**angegebenen Farben in Relevanz angezeigt. 
   
 Wie im folgenden beschrieben, können Keyword-Listen hinzugefügt werden, und Farben werden der Liste Stichwörter und den damit verbundenen Problemen zugewiesen. In einer QuickInfo wird die Beschreibung des Schlüsselworts angezeigt (sofern vorhanden), wie durch eine doppelte Unterstreichung angegeben.
   
@@ -36,9 +36,9 @@ Wie im folgenden beschrieben, können Keyword-Listen hinzugefügt werden, und Fa
   
 ## <a name="adding-highlighted-keywords"></a>Hinzufügen von hervorgehobenen Stichwörtern
 
-1. Wählen Sie auf der Registerkarte ** \> Relevanz Relevanz-Setup** die Option **hervorgehobene Schlüsselwörter**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **hervorgehobene Schlüsselwörter**aus.
     
-2. Klicken Sie **+** auf das Symbol, um Stichwörter hinzuzufügen. Das Dialogfeld **neue Schlüsselwörter hinzufügen** wird angezeigt. 
+2. Klicken Sie auf das **+** Symbol, um Stichwörter hinzuzufügen. Das Dialogfeld **neue Schlüsselwörter hinzufügen** wird angezeigt. 
     
 3. Geben Sie in **Stich**Wörter die Liste Stichwörter ein, und trennen Sie Stichwörter durch Kommas. 
     
@@ -54,7 +54,7 @@ Wie im folgenden beschrieben, können Keyword-Listen hinzugefügt werden, und Fa
     
     ![Liste der Schlüsselwörter für Relevanz-Setup](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-Die benutzerdefinierten Schlüsselwörter werden im Tag angegebenen Farben in Relevanz \> angezeigt. 
+Die benutzerdefinierten Schlüsselwörter werden im Tag angegebenen Farben in Relevanz angezeigt \> . 
   
 ## <a name="specifying-relevance-setup-advanced-settings"></a>Angeben von Relevanz-Setup Erweiterte Einstellungen
 

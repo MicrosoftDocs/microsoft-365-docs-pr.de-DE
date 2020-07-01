@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Center Daten für die Analyse mit Advanced eDiscovery vorbereiten. '
-ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: Erfahren Sie, wie Sie mithilfe des Security &amp; Compliance Center Daten für die Analyse mit Advanced eDiscovery vorbereiten.
+ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936330"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Vorbereiten von Daten für Advanced eDiscovery (klassisch)
 
@@ -51,7 +51,7 @@ Nachdem Sie die Suchergebnisse im Security &amp; Compliance Center für die Anal
     
 4. Klicken Sie neben dem Fall, in dem Sie Daten laden möchten in Advanced eDiscovery auf **Öffnen** . 
     
-5. Klicken Sie auf der **Start** Seite für den Fall auf **zu Advanced eDiscovery wechseln**. 
+5. Klicken Sie auf der Seite **Start** für den Fall auf **Zu Advanced eDiscovery**. 
     
     ![Klicken Sie auf zu Erweiterte eDiscovery wechseln, um die Anfrage in Advanced eDiscovery zu öffnen.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Erfahren Sie mehr über die Dienstprogramme in Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über die Dienstprogramme in Advanced eDiscovery, einschließlich Fallprotokoll, klare Daten, Prozessfehler, Änderung der Relevanz und Transparenz Analyse.
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633390"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936618"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von Advanced eDiscovery (Classic)-Hilfsprogrammen
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Die Dienstprogramme, die in Advanced eDiscovery angezeigt und verfügbar sind, hängen von Kontext und Benutzerrollen ab.
   
@@ -38,7 +38,7 @@ Die Protokolldatei kann auch auf den Clientcomputer heruntergeladen werden. Die 
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option ** \> Case Log Setup**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Case log \> Setup**aus.
     
 3. Wählen Sie die **Protokollebene** wie folgt aus: 
     
@@ -57,7 +57,7 @@ Wenn das Löschen oder erneute Initialisieren von Falldaten erforderlich ist, mu
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option ** \> Daten Einrichtung löschen**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Daten \> Einrichtung löschen**aus.
     
 3. Wählen Sie eine Option aus, damit die Informationen initialisiert werden:
     
@@ -99,7 +99,7 @@ In einem Szenario mit mehreren Problemfällen kann für jedes Problem ein Berich
   
 1. Klicken Sie in der Menüleiste auf das **Zahnrad** Symbol. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option ** \> Transparenz Analyse einrichten**aus.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> ** die Option **Transparenz Analyse \> Einrichten**aus.
     
 3. Geben Sie in * * Datei-ID * * die Datei-ID der zu verarbeitenden Datei ein.
     

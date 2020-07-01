@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.  '
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637199"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936208"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Test Relevanz Analysis in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Auf der Registerkarte Test in Advanced eDiscovery können Sie die Gesamtqualität der Verarbeitung testen, vergleichen und validieren. Diese Tests werden nach der Batch Berechnung ausgeführt. Durch das Markieren der Dateien in der Sammlung entscheidet ein Experte darüber, ob jede markierte Datei tatsächlich für den Fall relevant ist. 
   
@@ -42,7 +42,7 @@ Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs
     
 - Tabellarischer Vergleich der Populations Parameter des Überprüfungs Satzes und des Rests, beispielsweise die Anzahl der Dateien, die geschätzte Anzahl relevanter Dateien, die geschätzte Reichhaltigkeit und die durchschnittlichen Kosten für die Suche nach einer zusätzlichen relevanten Datei. Kosten Parametereinstellungen können vom Administrator festgelegt werden.
     
-1. Öffnen Sie die Registerkarte **Relevanz \> -Test** . 
+1. Öffnen Sie die Registerkarte **Relevanz- \> Test** . 
     
 2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld zum **Erstellen eines Tests** wird angezeigt, wie im folgenden Beispiel dargestellt. 
     
@@ -62,7 +62,7 @@ Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs
     
 9. Klicken Sie auf **Tagging starten**. Ein Test Beispiel wird generiert.
     
-10. Überprüfen und markieren Sie die Dateien auf der Registerkarte ** \> Relevanz-Tag** , und klicken Sie dann auf **berechnen**.
+10. Überprüfen und markieren Sie die Dateien auf der Registerkarte **Relevanz- \> Tag** , und klicken Sie dann auf **berechnen**.
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. In der folgenden Abbildung ist ein Beispiel dargestellt. 
     
@@ -86,7 +86,7 @@ Der Abschnitt " **Population Parameters** " der Tabelle enthält die Testergebni
 
 Der Test "Test the Slice" führt Tests aus, die dem Test "Test the Rest" ähneln, jedoch auf ein Segment des Dateisatzes, wie von Relevanz Read% angegeben.
   
-1. Öffnen Sie die Registerkarte **Relevanz \> -Test** . 
+1. Öffnen Sie die Registerkarte **Relevanz- \> Test** . 
     
 2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld **Test erstellen** wird angezeigt. 
     
@@ -106,7 +106,7 @@ Der Test "Test the Slice" führt Tests aus, die dem Test "Test the Rest" ähneln
     
 9. Klicken Sie auf **Tagging starten**. Ein Test Beispiel wird generiert.
     
-10. Überprüfen und markieren Sie die Dateien auf der Registerkarte ** \> Relevanz-Tag** , und klicken Sie dann auf **berechnen**. 
+10. Überprüfen und markieren Sie die Dateien auf der Registerkarte **Relevanz- \> Tag** , und klicken Sie dann auf **berechnen**. 
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. 
     
