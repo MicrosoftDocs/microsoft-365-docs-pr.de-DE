@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien, die für SharePoint und OneDrive gelten
-ms.openlocfilehash: 59237e59b607baa2227140c957be5876c5910754
-ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
+ms.openlocfilehash: cae0016f705757341934d1ad7e6eec331e81642c
+ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861182"
+ms.locfileid: "44869867"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive
 
@@ -93,8 +93,6 @@ Wenn ein Benutzer Ihre Organisation verlässt, sind Inhalte, die von ihm erstell
 Wenn ein Benutzer Ihre Organisation verlässt, bleiben alle Dateien, für die eine Aufbewahrungsrichtlinie gilt oder die Aufbewahrungsbezeichnungen aufweisen, für die Dauer der Richtlinie oder Bezeichnung erhalten. Während dieses Zeitraums bleibt der gesamte Freigabezugriff aufrecht. Nach Ablauf des Aufbewahrungszeitraums wird der Inhalt in den Papierkorb der Websitesammlung verschoben, wo er nur für den Administrator zugänglich sein wird. Wenn ein Dokument durch eine Aufbewahrungsrichtlinie als Eintrag gekennzeichnet ist, wird es erst gelöscht, wenn der Aufbewahrungszeitraum abgelaufen ist. Danach wird der Inhalt endgültig gelöscht. 
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>Konfigurieren einer Aufbewahrungsrichtlinie für SharePoint und OneDrive
-
-Siehe [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
 
 Folgen Sie den Anweisungen für [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md), und wählen Sie für die Seite **Speicherorte wählen** des Assistenten eine der folgenden Optionen aus:
 
