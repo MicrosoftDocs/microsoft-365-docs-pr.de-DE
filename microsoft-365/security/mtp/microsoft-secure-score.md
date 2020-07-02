@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936629"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023403"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -203,6 +203,31 @@ Im Laufe der Zeit werden die Identitätssicherheitsbewertung und die Graph-API d
 * Filtern, Taggen, Suchen und Gruppieren von Verbesserungsmaßnahmen
 * Verwalten Sie Ihre zukünftigen Ziele mithilfe von Score-Projektionen und geplanten Maßnahmen
 * Und mehr!
+
+### <a name="june-2020"></a>Juni 2020
+
+#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungs Aktion für Microsoft Defender Advanced Threat Protection entfernt
+
+* Regeln zur Verringerung der Angriffsfläche aktivieren
+
+#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Verbesserungs Aktionen für Microsoft Defender Advanced Threat Protection hinzugefügt
+
+* Adobe Reader am Erstellen von untergeordneten Prozessen hindern
+* Erweiterten Schutz vor Ransomware verwenden
+* Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern
+* Office-Anwendungen am Erstellen ausführbarer Inhalte hindern
+* JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern
+* Ausführung potenziell verborgener Skripts blockieren
+* Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
+* Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
+* Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren
+* Persistenz durch WMI-Ereignisabonnement blockieren
+* Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
+* Ausführbare Dateien an der Ausführung hindern, außer sie erfüllen ein Verbreitungs-, Alters- oder vertrauenswürdige Listen-Kriterium
+* Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren
+* Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren
+* Win32-API-Aufrufe von Office-Makros blockieren
+
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 

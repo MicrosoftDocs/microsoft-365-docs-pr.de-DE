@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Daten, die von cloudbasierten apps in Microsoft 365 erstellt wurden, werden mit dem Exchange Online Postfach eines Benutzers gespeichert oder diesem zugeordnet.
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626281"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016298"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>In Exchange Online Postfächern gespeicherte Inhalte
 
@@ -32,7 +32,7 @@ In der folgenden Tabelle sind die apps aufgeführt, mit denen Daten einem cloudb
 
 |Microsoft 365-App|Beschreibung|
 |:---------|:---------|
-|Forms|Formulare (als PDF-Datei gespeichert) und Antworten auf ein Formular (in einer CSV-Datei gespeichert) werden e-Mail-Nachrichten angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert, der das Formular erstellt hat. Wenn Sie Inhalte aus Formularen in einer PST-Datei exportieren, befinden sich diese Daten im Ordner **ApplicationDataRoot** in einem Unterordner namens mit der folgenden global eindeutigen Identifizierung (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Formulare|Formulare und Antworten auf ein Formular werden in Dateien gespeichert, die an e-Mail-Nachrichten angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert sind, der das Formular erstellt hat. Formulare, die vor dem 2020 April erstellt wurden, werden als PDF-Datei gespeichert. Formulare, die nach 2020 erstellt wurden, werden als JSON-Datei gespeichert.  Antworten auf ein Formular werden in einer CSV-Datei gespeichert. Wenn Sie Inhalte aus Formularen in einer PST-Datei exportieren, befinden sich diese Daten im Ordner **ApplicationDataRoot** in einem Unterordner namens mit der folgenden global eindeutigen Identifizierung (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Microsoft 365-Gruppen|E-Mail-Nachrichten, Kalenderelemente, Kontakte (Personen), Notizen und Aufgaben werden in dem Postfach gespeichert, das einer Microsoft 365-Gruppe zugeordnet ist.|
 |Outlook/Exchange Online|E-Mail-Nachrichten, Kalenderelemente, Kontakte (Personen), Notizen und Aufgaben werden im Postfach eines Benutzers gespeichert.|
 |Personen|Kontakte in der Personen-App (die dieselben Kontakte wie die in Outlook zugänglichen sind) werden im Postfach eines Benutzers gespeichert.|
@@ -40,7 +40,7 @@ In der folgenden Tabelle sind die apps aufgeführt, mit denen Daten einem cloudb
 |Skype for Business|Unterhaltungen in Skype for Business werden im Ordner "Unterhaltungsverlauf" im Postfach eines Benutzers gespeichert. Wenn das Postfach eines Teilnehmers einer Skype-Besprechung in das Beweissicherungsverfahren aufgenommen oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden Dateien, die einer Besprechung zugeordnet sind, im Postfach der Teilnehmer aufbewahrt.|
 |Sway|Sways werden als HTML-Datei gespeichert, die an eine e-Mail-Nachricht angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert ist, der die Sway erstellt hat. Wenn Sie Inhalte aus Sway in einer PST-Datei exportieren, befinden sich diese Daten im **ApplicationDataRoot** -Ordner in einem Unterordner mit der folgenden GUID) **905fcf26-4eb7-48A0-9ff0-8dcc7194b5ba**.|
 |Aufgaben|Aufgaben in der Aufgaben-app (bei denen es sich um dieselben Aufgaben handelt, die in Outlook verfügbar sind) werden im Postfach eines Benutzers gespeichert.|
-|Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Postfach "Teams" zugeordnet. Unterhaltungen, die Teil der Chat Liste in Microsoft Teams (auch *1 x N-Chats*genannt) sind, sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem werden zusammenfassende Informationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich in die Besprechung oder den Anruf eingewählt haben. Wenn Sie also nach Microsoft Teams-Inhalten suchen, suchen Sie im Teams-Postfach nach Inhalten in Kanal Unterhaltungen und Durchsuchen von Benutzerpostfächern nach Inhalten in 1 x N-Chats.| 
+|Microsoft Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Postfach "Teams" zugeordnet. Unterhaltungen, die Teil der Chat Liste in Microsoft Teams (auch *1 x N-Chats*genannt) sind, sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem werden zusammenfassende Informationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich in die Besprechung oder den Anruf eingewählt haben. Wenn Sie also nach Microsoft Teams-Inhalten suchen, suchen Sie im Teams-Postfach nach Inhalten in Kanal Unterhaltungen und Durchsuchen von Benutzerpostfächern nach Inhalten in 1 x N-Chats.| 
 |To-Do|Aufgaben (" *to-DOS*", die in "to-do"-Listen gespeichert sind) in der to-do-App werden im Postfach eines Benutzers gespeichert.|
 ||||
 

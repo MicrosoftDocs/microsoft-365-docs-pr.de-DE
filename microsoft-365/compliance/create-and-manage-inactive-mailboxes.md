@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie den Inhalt gelöschter Postfächer mithilfe der Funktion für inaktive Postfächer in Office 365 beibehalten können.
-ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818014"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023358"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Erstellen und Verwalten inaktiver Postfächer
 
@@ -38,7 +38,7 @@ Mit Microsoft 365 können Sie den Inhalt von gelöschten Postfächern beibehalte
 
 - Um ein Postfach inaktiv zu machen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen sein, damit ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online Plan 2-Lizenzen sind Teil eines Office 365 Enterprise E3-und E5-Abonnements. Wenn einem Postfach eine Exchange Online Plan 1 oder Exchange Online Kiosk Lizenz (die Teil eines Office 365 E1-und F1-Abonnements sind) zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, damit ein Aufbewahrungsspeicher auf das Postfach angewendet werden kann, bevor es gelöscht wird. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- Die dem gelöschten Exchange Online Postfach zugeordneten Lizenzen sind verfügbar, nachdem Sie das entsprechende Benutzerkonto gelöscht haben. Sie können [Diese Lizenzen dann einem anderen Benutzer zuweisen](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
+- Die dem gelöschten Exchange Online Postfach zugeordneten Lizenzen sind verfügbar, nachdem Sie das entsprechende Benutzerkonto gelöscht haben. Sie können [Diese Lizenzen dann einem anderen Benutzer zuweisen](../admin/manage/assign-licenses-to-users.md).
 
 - Wenn ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden) nicht auf ein Postfach angewendet wird, bevor es gelöscht wird, wird der Inhalt des Postfachs nicht beibehalten oder kann nicht erkannt werden. Das gelöschte Postfach kann jedoch innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden, aber das Postfach und dessen Inhalte werden nach 30 Tagen endgültig gelöscht, wenn es nicht wiederhergestellt wird.
 

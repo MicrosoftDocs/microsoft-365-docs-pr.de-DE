@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Hier finden Sie Informationen zum Verwalten von Message Center-Nachrichten, um die Änderungsverwaltung zu unterstützen.
-ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005822"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
-[] Beiträge im Nachrichtencenter sind wichtige Ankündigungen zu neuen und geänderten Features. Dieser Artikel enthält weitere Informationen zu den Aktionen, die Sie Nachrichten ausführen können, um das Change Management in Ihrer Organisation zu unterstützen.
+Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
   
 ## <a name="read-a-message"></a>Lesen einer Nachricht
 
@@ -157,19 +157,19 @@ Jede Nachricht im Nachrichtencenter, die ungelesen ist, wird fett formatiert ang
 
 ::: moniker-end
 
-## <a name="dismiss-and-restore"></a>Verwerfen und Wiederherstellen
+## <a name="archive-and-restore"></a>Archivieren und Wiederherstellen
 
-Wenn Sie eine Nachricht sehen, die nicht für Sie relevant ist, oder wenn Sie bereits darauf reagiert haben, können Sie die Nachricht schließen, um Sie aus der Ansicht Nachrichtencenter zu entfernen. Die Ansicht, die Sie im Nachrichtencenter sehen, ist spezifisch für Ihr Benutzerkonto, daher hat die Abmeldung aus ihrer Ansicht keine Auswirkungen auf andere Administratoren.
+Wenn Sie eine Nachricht sehen, die nicht für Sie relevant ist, oder wenn Sie bereits darauf reagiert haben, können Sie die Nachricht archivieren, um Sie aus der Nachrichtencenter Ansicht zu entfernen. Die Ansicht, die im Nachrichtencenter angezeigt wird, ist spezifisch für Ihr Benutzerkonto, daher wirkt sich die Archivierung aus ihrer Ansicht nicht auf andere Administratoren aus.
 
 ::: moniker range="o365-worldwide"
 
-- Wählen Sie auf der Hauptseite des Nachrichten Centers eine Nachricht aus, und wählen Sie dann über der Liste der Nachrichten **entlassen** aus.
+- Wählen Sie auf der Hauptseite des Nachrichten Centers eine Nachricht aus, und wählen Sie dann über der Liste der Nachrichten **archivieren** aus.
 
-- Öffnen Sie die Nachricht, und wählen Sie dann am Ende der Nachricht **entlassen** aus.
+- Öffnen Sie die Nachricht, und wählen Sie dann **archivieren** unten in der Nachricht aus.
 
-Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
+Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
   
-1. Wählen Sie die Registerkarte **abgewiesene Nachrichten** oben im Nachrichtencenter aus. Eine Liste der verworfenen Nachrichten wird angezeigt. 
+1. Wählen Sie die Registerkarte **Archivierte Nachrichten** oben im Nachrichtencenter aus. Eine Liste archivierter Nachrichten wird angezeigt. 
 
 2. Wählen Sie die Nachricht aus, wählen Sie **Wiederherstellen**aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
 
@@ -177,15 +177,15 @@ Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
 
 ::: moniker range="o365-germany"
 
-Es gibt zwei Möglichkeiten, eine Nachricht zu schließen.
+Es gibt zwei Möglichkeiten zum Archivieren einer Nachricht.
   
 - Wählen Sie das X aus, das rechts neben der Nachrichten-ID angezeigt wird. Die Nachricht wird aus Ihrer Liste entfernt. Oder:
 
-- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **entlassen** aus.
+- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **archivieren** aus.
 
 Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
   
-1. Wählen Sie den Filter **Geschlossene Nachrichten** aus dem Dropdownmenü **Ansichten** aus. Eine Liste der verworfenen Nachrichten wird angezeigt.
+1. Wählen Sie im Dropdownmenü **Ansichten** den Filter **Archivierte Nachrichten** aus. Eine Liste archivierter Nachrichten wird angezeigt.
 
 2. Wählen Sie rechts neben der Nachrichten-ID **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
 
@@ -193,15 +193,15 @@ Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
 
 ::: moniker range="o365-21vianet"
 
-Es gibt zwei Möglichkeiten, eine Nachricht zu schließen.
+Es gibt zwei Möglichkeiten zum Archivieren einer Nachricht.
   
 - Wählen Sie das X aus, das rechts neben der Nachrichten-ID angezeigt wird. Die Nachricht wird aus Ihrer Liste entfernt. Oder:
 
-- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **entlassen** aus.
+- Öffnen Sie die Nachricht, und wählen Sie dann oben in der Nachricht **archivieren** aus.
 
-Sie müssen eine verworfene Nachricht wiederherstellen? Kein Problem.
+Sie müssen eine archivierte Nachricht zurück erhalten? Kein Problem.
   
-1. Wählen Sie den Filter **Geschlossene Nachrichten** aus dem Dropdownmenü **Ansichten** aus. Eine Liste der verworfenen Nachrichten wird angezeigt.
+1. Wählen Sie im Dropdownmenü **Ansichten** den Filter **Archivierte Nachrichten** aus. Eine Liste archivierter Nachrichten wird angezeigt.
 
 2. Wählen Sie rechts neben der Nachrichten-ID **Wiederherstellen** aus, und die Nachricht wird in den aktiven Nachrichten wiederhergestellt.
 

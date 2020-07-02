@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844597"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016343"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivieren von Microsoft Threat Protection
 
@@ -61,10 +61,12 @@ Wählen Sie zum Aktivieren von Microsoft Threat Protection einfach **Microsoft T
 >Wenn im Navigationsbereich keine **Einstellungen** angezeigt werden oder Sie nicht auf die Seite zugreifen können, überprüfen Sie Ihre Berechtigungen und Lizenzen.
 
 ### <a name="data-center-location"></a>Rechenzentrumsstandort
-Microsoft Threat Protection speichert und verarbeitet Daten am [gleichen Speicherort, der von Microsoft Defender ATP verwendet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)wird. Wenn Sie nicht über Microsoft Defender ATP verfügen, wird automatisch ein neuer rechenzentrumsstandort basierend auf dem Speicherort der aktiven Microsoft 365-Sicherheitsdienste ausgewählt. Der ausgewählte Speicherort des Rechenzentrums wird auf dem Bildschirm angezeigt.
+Microsoft Threat Protection speichert und verarbeitet Daten am [gleichen Speicherort, der von Microsoft Defender ATP verwendet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)wird. Wenn Sie nicht über Microsoft Defender ATP verfügen, wird automatisch ein neuer rechenzentrumsstandort basierend auf dem Speicherort der aktiven Microsoft 365-Sicherheitsdienste ausgewählt. Der ausgewählte Speicherort des Rechenzentrums wird auf dem Bildschirm angezeigt. 
+
+Wählen Sie **need help aus?** im Microsoft 365 Security Center können Sie sich an den Microsoft-Support wenden, um Microsoft Threat Protection in einem anderen rechenzentrumsstandort zu überwachen. 
 
 >[!NOTE]
->Wählen Sie **need help?** im Microsoft 365 Security Center aus, um den Microsoft-Support zur Versorgung mit Microsoft Threat Protection an einem anderen rechenzentrumsstandort zu kontaktieren. 
+>Microsoft Defender ATP stellt in den Rechenzentren der Europäischen Union (EU) automatisch Rückstellungen bereit, wenn Sie über das Azure Security Center aktiviert werden. Microsoft Threat Protection wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die Microsoft Defender ATP auf diese Weise bereitgestellt haben. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Vergewissern Sie sich, dass der Dienst aktiviert ist
 Sobald der Dienst bereitgestellt ist, wird Folgendes hinzugefügt:

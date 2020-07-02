@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036499"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005846"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -66,7 +66,7 @@ Ein kurzer Kommentar zum Anfang der Abfrage wurde hinzugefügt, um zu beschreibe
 // Finds PowerShell execution events that could involve a download
 ```
 
-Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir mit dem Erstellen einer Vereinigung von zwei Tabellen `DeviceProcessEvents` und `DeviceNetworkEvents`fügen bei Bedarf weitergeleitete Elemente hinzu.
+Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir mit dem Erstellen einer Vereinigung von zwei Tabellen und fügen bei Bedarf weitergeleitete `DeviceProcessEvents` `DeviceNetworkEvents` Elemente hinzu.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -81,7 +81,7 @@ Das erste piped-Element ist ein Zeitfilter, der auf die vorherigen sieben Tage b
 ### <a name="check-specific-processes"></a>Überprüfen bestimmter Prozesse
 Auf den Zeitbereich folgt unmittelbar eine Suche nach Prozess Dateinamen, die die PowerShell-Anwendung darstellen.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```

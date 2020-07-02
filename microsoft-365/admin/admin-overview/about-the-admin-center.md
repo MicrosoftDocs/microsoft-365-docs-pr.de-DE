@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780553"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022181"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -89,7 +89,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
    
 ## <a name="common-tasks-in-the-admin-center"></a>Allgemeine Aufgaben im Admin Center
 
-- Verwalten von Benutzern: [Hinzufügen von einzelnen Benutzern](../add-users/add-users.md), [Löschen oder Wiederherstellen von Benutzern](../add-users/delete-a-user.md) oder [Zurücksetzen eines Benutzerkennworts](../add-users/reset-passwords.md).
+- Verwalten von Benutzern: [Hinzufügen von Benutzern und Zuweisen von Lizenzen zur gleichen Zeit](../add-users/add-users.md), [Löschen oder Wiederherstellen von Benutzern](../add-users/delete-a-user.md)oder [Zurücksetzen des Kennworts eines Benutzers](../add-users/reset-passwords.md).
 
 - Erhalten von Hilfe für die Abrechnung: [Abrechnung](../../commerce/index.yml)
 

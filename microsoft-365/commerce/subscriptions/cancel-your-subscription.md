@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Hier erfahren Sie, wie Sie Ihre Microsoft 365 for Business-Testversion oder ein kostenpflichtiges Abonnement kündigen.
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818519"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023369"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -144,10 +144,12 @@ Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre D
 
 ### <a name="uninstall-office-optional"></a>Deinstallieren von Office (optional)
 
-Wenn Sie Ihr Abonnement storniert haben und Benutzer nicht in ein anderes Abonnement mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
+Wenn Sie Ihr Abonnement storniert haben und [Benutzer nicht in ein anderes Abonnement](move-users-different-subscription.md) mit Microsoft 365 umgezogen haben, wird Microsoft 365 im Modus mit eingeschränkter Funktionalität ausgeführt. In diesem Fall können Benutzer nur Dokumente lesen und drucken, und Microsoft 365-Anwendungen zeigen nicht [lizenzierte Produktbenachrichtigungen](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)an. Um Verwirrung zu vermeiden, weisen Sie die Benutzer an, [Office von ihren Computern zu deinstallieren](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Verlängern Ihres Abonnements](renew-your-subscription.md)
 
 [Verlängern oder Reaktivieren Ihres Abonnements](reactivate-your-subscription.md)
+
+[Verschieben von Benutzern zu einem anderen Abonnement](move-users-different-subscription.md)

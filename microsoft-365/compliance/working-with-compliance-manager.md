@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie den Compliance-Manager zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft-Produkten verwenden.
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817082"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023392"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Arbeiten mit dem Microsoft Compliance-Manager (Vorschau)
 
@@ -41,7 +41,10 @@ Auf den Compliance-Manager kann über das Microsoft-Dienst Vertrauensstellungs P
 
 ## <a name="administration"></a>Verwaltung
 
-Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Der globale Administrator kann Benutzerberechtigungen zuweisen und automatische Bewertungen für sicheres Ergebnis aktivieren.
+Es gibt bestimmte administrative Funktionen, die nur für den globalen Administrator verfügbar sind und nur sichtbar sind, wenn Sie mit einem globalen Administratorkonto angemeldet sind. Der globale Administrator kann Folgendes:
+- [Zuweisen von Benutzerrollen](#assigning-compliance-manager-roles-to-users)
+- [Aktivieren und Deaktivieren automatischer Bewertungen für sicheres Ergebnis](#controlling-automatic-secure-score-updates)
+- [Konfigurieren von Datenschutzeinstellungen für Benutzer](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Zuweisen von Compliance-Manager-Rollen zu Benutzern
 
@@ -95,6 +98,93 @@ Wenn Sie die Option **pro Aktion festlegen auswählen,** führen Sie die folgend
 
 **Hinweis:** Nur der globale Administrator kann automatische Updates für alle Aktionen aktivieren oder deaktivieren. Der Compliance-Manager-Administrator kann automatische Updates für einzelne Aktionen aktivieren, jedoch nicht für alle Aktionen Global.
 
+### <a name="configuring-user-privacy-settings"></a>Konfigurieren von Datenschutzeinstellungen für Benutzer
+
+Bestimmte Vorschriften erfordern, dass eine Organisation Benutzer Verlaufsdaten löschen kann. Um dies zu ermöglichen, können Administratoren mit den Funktionen der **Datenschutzeinstellungen von Benutzern** folgende Aufgaben durchsetzen:
+  
+- [Suchen eines Benutzers](#search-for-a-user)
+
+- [Exportieren eines Berichts mit Kontoverlaufsdaten](#export-a-report-of-account-data-history)
+
+- [Erneutes Zuweisen von Aktionselementen](#reassign-action-items)
+
+
+- [Löschen der Verlaufsdaten von Benutzern](#delete-user-data-history)
+    
+![Compliance-Manager-Administrator – Funktionen für Datenschutzeinstellungen](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>Suchen eines Benutzers
+
+So suchen Sie nach einem Benutzerkonto
+  
+1. Geben Sie die E-Mail-Adresse des Benutzers ein, indem Sie den Alias (die Informationen auf der linken Seite des @-Symbols) eingeben und den Domänennamen durch Klicken auf das Domänensuffix in der Liste auf der rechten Seite auswählen. Wenn Ihre Organisation über mehrere registrierte Domänen verfügt, können Sie das Suffix für die e-Mail-Adress Domänennamen überprüfen, um sicherzustellen, dass es richtig ist.
+    
+2. Wenn Sie den Benutzernamen richtig eingegeben haben, wählen Sie **Suchen**aus.
+    
+3. Wenn das Benutzerkonto nicht gefunden wird, wird die Fehlermeldung "Benutzer nicht gefunden" auf der Seite angezeigt. Überprüfen Sie die e-Mail-Adressinformationen des Benutzers, nehmen Sie Korrekturen vor, und wählen Sie **Suchen** aus, um es erneut zu versuchen.
+    
+4. Wenn ein Benutzerkonto gefunden wird, ändert sich der Text der Schaltfläche von **Suchen** in **Löschen**, was darauf hinweist, dass das zurückgegebene Benutzerkonto der Betriebskontext für die zusätzlichen Funktionen ist, die unten angezeigt werden, und dass das Ausführen dieser Funktionen für dieses Benutzerkonto gilt.
+    
+5. Um Suchergebnisse zu löschen und nach einem anderen Benutzer zu suchen, wählen Sie **Löschen**aus.
+    
+#### <a name="export-a-report-of-account-data-history"></a>Exportieren eines Berichts mit Kontoverlaufsdaten
+
+Nachdem das Benutzerkonto identifiziert wurde, möchten Sie möglicherweise einen Bericht der Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Anhand dieser Informationen können Sie offene Aktionselemente neu zuweisen oder den Zugriff auf zuvor hochgeladene Nachweise sicherstellen.
+  
+ So generieren und exportieren Sie einen Bericht:
+  
+1. Wählen Sie **exportieren** aus, um einen Bericht der Compliance-Manager-Steuerelement Aktionselemente zu generieren und herunterzuladen, die dem zurückgegebenen Benutzerkonto derzeit zugewiesen sind, und die Liste der Dokumente, die von diesem Benutzer hochgeladen wurden. Wenn keine Aktionen oder hochgeladenen Dokumente zugeordnet sind, wird in einer Fehlermeldung "keine Daten für diesen Benutzer" angezeigt.
+
+2. Der Bericht lädt im Hintergrund des aktiven Browserfensters herunter. Wenn kein Download-Popup angezeigt wird, überprüfen Sie den Downloadverlauf Ihres Browsers.
+
+3. Öffnen Sie das Dokument, um die Daten des Berichts zu überprüfen.
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>Erneutes Zuweisen von Aktionselementen
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ So weisen Sie Aktionselemente einem anderen Benutzer erneut zu
+  
+1. Klicken Sie auf das Eingabefeld, um nach einem anderen Benutzer in der Organisation zu suchen und diesen auszuwählen. Diesem Benutzer sollen die zurückgegebenen Aktionselemente zugewiesen werden.
+    
+2. Wählen Sie **Ersetzen**, um alle Aktionselemente von dem zurückgegebenen Benutzer dem neu ausgewählten Benutzer zuzuweisen.
+    
+3. Daraufhin wird ein Bestätigungsdialogfeld mit dem Hinweis angezeigt, dass alle Steuerungs Aktionselemente des aktuellen Benutzers dem ausgewählten Benutzer neu zugewiesen werden. Diese Aktion kann nicht rückgängig gemacht werden. Möchten Sie den Vorgang fortsetzen?“
+    
+4. Um den Vorgang fortzusetzen, wählen Sie **OK**, andernfalls **Abbrechen**.
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. Öffnen Sie den zuvor heruntergeladenen Exportbericht.
+  
+2. Identifizieren Sie das gewünschte Steuerelementaktionselement, und navigieren Sie zu diesem.
+  
+3. Wählen Sie **Dokumente verwalten** aus, um zum Evidence Repository für dieses Steuerelement zu navigieren.
+  
+4. Laden Sie das Dokument herunter.
+  
+5. Löschen Sie das Dokument im Nachweisspeicher.
+  
+6. Laden Sie das Dokument erneut hoch. Das Dokument verfügt nun über ein neues Upload-Datum, eine neue Uhrzeit und einen "hochgeladenen"-Benutzernamen.
+  
+#### <a name="delete-user-data-history"></a>Löschen der Verlaufsdaten von Benutzern
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ So löschen Sie das Aktionselement für das Benutzerkonto und den Uploadverlauf des Dokuments
+  
+1. Wählen Sie **Löschen** aus.
+
+2. In einem Bestätigungsdialogfeld wird Folgendes angezeigt: "Hierdurch werden alle Aktionselement Zuweisungen des Steuerelements und der Verlauf des dokumentuploads für den ausgewählten Benutzer entfernt. Diese Aktion kann nicht rückgängig gemacht werden. Möchten Sie den Vorgang fortsetzen?“
+    
+3. Um den Vorgang fortzusetzen, wählen Sie **OK**, andernfalls **Abbrechen**.
+
 ## <a name="groups"></a>Gruppen
 
 Gruppen sind Container, die es Ihnen ermöglichen, Bewertungen zu organisieren und allgemeine Informations-und Workflowaufgaben Zwischenbewertungen mit denselben oder Verwandten, vom Kunden verwalteten Steuerelementen freizugeben.
@@ -123,7 +213,7 @@ Führen Sie die folgenden Schritte aus, um eine Gruppe zu erstellen:
 2. Geben Sie im Bereich " **Bewertungs** Flyout" einen Titel für Ihre Bewertung ein, und wählen Sie im Dropdownmenü eine Vorlage aus.
 3. Wenn Sie **eine Gruppe auswählen oder eine neue Gruppe hinzufügen**möchten, wählen Sie **neue Gruppe hinzufügen** aus, und geben Sie Ihren Gruppennamen in das Feld unten ein.
 4. Wenn Sie Informationen aus einer vorhandenen Gruppe kopieren möchten, aktivieren Sie die Option **möchten Sie die Daten aus einer vorhandenen Gruppe kopieren?** **.** Wählen Sie im Dropdownmenü darunter die Gruppe aus, die Sie kopieren möchten, und aktivieren Sie die Kontrollkästchen aller Felder, die Sie in die neue Bewertung in ihrer neuen Gruppe übertragen möchten.
-5. Wählen Sie **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und ihre neue Gruppe wird auf dem Dashboard angezeigt.
+5. Klicken Sie auf **Speichern**. Wenn dieser Vorgang abgeschlossen ist, wird der Flyout-Bereich geschlossen, und ihre neue Gruppe wird auf dem Dashboard angezeigt.
 
 Was Sie beim Arbeiten mit Gruppen wissen sollten:
   
@@ -187,7 +277,7 @@ Auf einen Blick können Sie den Titel, den Besitzer, die Kategorie, die Erzwingu
 
 1. Wählen Sie die Auslassungspunkte (...) für die Aktion aus, die Sie ändern möchten, und wählen Sie **Bearbeiten**aus.
 2. Wechseln Sie zur Option Secure Score Continuous Update auf ein oder aus, um die kontinuierliche Überwachung mithilfe von Secure Score zu aktivieren oder zu deaktivieren.
-3. Wählen Sie **Speichern**.
+3. Klicken Sie auf **Speichern**.
 
 Wenn Organisationen zunächst Microsoft 365 oder Office 365 bereitstellen, dauert es ungefähr sieben Tage, bis Secure Score Daten vollständig erfasst und Sie in Ihrer Partitur berücksichtigt. Während dieser Zeit wird durch das Festlegen der Option für die kontinuierliche Aktualisierung sicherer Bewertungen auf **aus** und das manuelle Festlegen einer Aktion auf **implementiert** festgesetzt, dass diese Aktion zur Partitur zählt. Nach den anfänglichen sieben Tagen wird durch das Drehen von Secure Score Continuous Update wieder eine kontinuierliche Überwachung von diesem Punkt aus aktiviert.
 
@@ -196,6 +286,9 @@ Alle Aktionen, die nicht von der Integration von Secure Score unterstützt werde
 ## <a name="assessments"></a>Bewertungen
 
 In diesem Abschnitt wird erläutert, wie Sie Ihre Bewertungen anzeigen und arbeiten, einschließlich der Vorgehensweise zum Hinzufügen neuer, exportieren, Kopieren von Informationen aus vorhandenen Bewertungen und aufrecht erhalten der Aktualisierung durch die Versionsverwaltung.
+
+> [!NOTE]
+> Sie können jetzt Assessments in Compliance Score erstellen. [Anzeigen von Anleitungen und Anweisungen](compliance-score-assessments.md).
 
 ### <a name="view-an-assessment-and-action-details"></a>Anzeigen von Bewertungs-und Aktionsdetails
   
@@ -408,13 +501,16 @@ Das Dashboard zeigt jede Vorlage zusammen mit der Zertifizierung und dem Produkt
 
 Es gibt drei Möglichkeiten zum Arbeiten mit Vorlagen zum Erstellen von Bewertungen:
 
-1. Verwenden Sie eine der vorkonfigurierten Vorlagen, die von Microsoft bereitgestellt werden.
-2. Passen Sie eine vorkonfigurierte Vorlage mit ihren eigenen Aktionen und Steuerelementen über den Erweiterungsprozess an.
+1. Verwenden Sie eine der bereitgestellten Vorlagen, die von Microsoft bereitgestellt werden.
+2. Passen Sie die Vorlage "Ready to use" mit ihren eigenen Aktionen und Steuerelementen über den Erweiterungsprozess an.
 3. Erstellen Sie Ihre eigene Vorlage, und importieren Sie Sie in Compliance-Manager.
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>Verwenden einer vorab konfigurierten Microsoft-Vorlage
+> [!NOTE]
+> Wenn Sie eine Vorlage in den Compliance-Manager hochladen, muss Sie von zwei Benutzern genehmigt werden, die eine Administratorrolle innehaben, bevor Sie veröffentlicht und für die Verwendung verfügbar ist.
 
-Die vorkonfigurierten Vorlagen sind in Ihrem **Vorlagen** Dashboard verfügbar. Zeigt die aktuelle [Liste der Vorlagen an](compliance-manager-overview.md#templates), die jedes Mal aktualisiert wird, wenn eine neue Vorlage verfügbar ist.
+#### <a name="use-a-ready-to-use-template"></a>Verwenden einer Vorlage "Ready to use"
+
+Vorlagen können in Ihrem **Vorlagen** -Dashboard verfügbar sein. Zeigt die aktuelle [Liste der Vorlagen an](compliance-score-templates.md), die jedes Mal aktualisiert wird, wenn eine neue Vorlage verfügbar ist.
 
 #### <a name="customize-a-template-through-the-extension-process"></a>Anpassen einer Vorlage über den Erweiterungsprozess
 
@@ -423,21 +519,23 @@ Die vorkonfigurierten Vorlagen sind in Ihrem **Vorlagen** Dashboard verfügbar. 
 3. Wählen Sie die zu erweiternde Vorlage im Dropdownmenü aus.
 4. Wenn Sie Ihre Vorlagendaten nicht bereits in Excel formatiert haben, wählen Sie den Link im Flyout-Bereich aus, um eine Excel-Datei herunterzuladen. Füllen Sie das Arbeitsblatt gemäß den folgenden Excel-Anweisungen in den [Vorlagendaten importieren](#import-template-data-with-excel) aus, und speichern Sie es auf Ihrem lokalen Laufwerk.
 5. Importieren Sie Ihre benutzerdefinierten Vorlagendaten, indem **Sie auf Durchsuchen** klicken, um Ihre Excel-Datei hochzuladen.
-6. Wählen Sie **zum Dashboard hinzufügen**aus. Daraufhin wird Ihre neue Vorlage Ihrem **Vorlagen** -Dashboard hinzugefügt.
+6. Wählen Sie **zum Dashboard hinzufügen**aus.
+7. Für die Änderungen an der Vorlage ist die Genehmigung von zwei Benutzern erforderlich, die über eine Administratorrolle verfügen. Diese Benutzer erhalten eine Benachrichtigung über die Vorlagen Aktualisierungen. Wenn die Änderungen von zwei Administratoren genehmigt wurden, wird Ihre aktualisierte Vorlage im Dashboard für **Vorlagen** angezeigt.
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Erstellen Sie Ihre eigene Vorlage, und importieren Sie Sie in Compliance-Manager.
 
 1. Öffnen Sie das Dashboard **Vorlagen** , und wählen Sie **+ Vorlage hinzufügen**aus.
 2. Wählen Sie im Fenster Vorlagen-Flyout die Option **neue Vorlage erstellen**aus.
 3. Importieren Sie Ihre Vorlagendaten, indem Sie auf **Durchsuchen** klicken, um Ihre Excel-Datei mit den Daten hochzuladen (siehe [Importieren von Vorlagendaten mit Excel](#import-template-data-with-excel) unten).
-4. Wählen Sie **zum Dashboard hinzufügen**aus. Daraufhin wird Ihre neue Vorlage Ihrem **Vorlagen** -Dashboard hinzugefügt.
+4. Wählen Sie **zum Dashboard hinzufügen**aus.
+5. Die neue Vorlage erfordert die Genehmigung von zwei Benutzern, die eine Administratorrolle innehaben. Diese Benutzer erhalten eine Benachrichtigung, dass eine neue Vorlage zur Genehmigung bereit ist. Wenn die Vorlage von zwei Administratoren genehmigt wurde, wird Ihre neue Vorlage im Dashboard für **Vorlagen** angezeigt.
 
 #### <a name="import-template-data-with-excel"></a>Importieren von Vorlagendaten mit Excel
 
 Um eine Vorlage zu ändern oder Ihre eigene Vorlage zu erstellen, verwenden Sie eine [Excel-Arbeitsmappe](https://go.microsoft.com/fwlink/?linkid=2124865) , um die erforderlichen Daten zu erfassen und in den Compliance-Manager hochzuladen. Diese Tabellen Kalkulations Vorlage hat ein bestimmtes Format und Schema, das verwendet werden muss, oder es wird nicht in den Compliance-Manager importiert.
 
 > [!IMPORTANT]
-> Wenn Sie zuvor oder angepasste Vorlagen im Compliance-Manager erstellt haben, **wurde dieser Prozess** im Rahmen der Version April 2020 von Compliance-Manager (Preview) aktualisiert. **Lesen Sie diesen Abschnitt sorgfältig durch.**
+> Wenn Sie zuvor oder angepasste Vorlagen im Compliance-Manager erstellt haben, **wurde dieser Prozess kürzlich aktualisiert. Lesen Sie diesen Abschnitt sorgfältig durch.**
 
 Das Arbeitsblatt enthält vier Registerkarten, von denen drei erforderlich sind:
 
@@ -496,7 +594,7 @@ Die Registerkarte **Aktionen** ist erforderlich.  Sie kennzeichnet Aktionen ihre
 
 - **actionDescription**: Geben Sie eine Beschreibung der Aktion an. Sie können Formatierungen wie fett formatierten Text und Hyperlinks anwenden. Dieses Feld ist erforderlich.
 
-- **Dimension-Aktion Zweck**: Dies ist ein optionales Feld. Wenn Sie diesen einschließen, muss die Kopfzeile das Präfix "Dimension-" enthalten. Alle Dimensionen, die Sie hier einschließen, werden als [Filter in der Kompatibilitätsbewertung](compliance-score-setup.md#filtering-your-dashboard-view) verwendet und auf der [Detailseite der Verbesserungs Aktionen im Kompatibilitäts Bewertungsergebnis](working-with-compliance-score.md#view-your-improvement-actions)angezeigt.
+- **Dimension-Aktion Zweck**: Dies ist ein optionales Feld. Wenn Sie diesen einschließen, muss die Kopfzeile das Präfix "Dimension-" enthalten. Alle Dimensionen, die Sie hier einschließen, werden als [Filter in der Kompatibilitätsbewertung](compliance-score-setup.md#filtering-your-dashboard-view) verwendet und auf der Detailseite der Verbesserungs Aktionen im Kompatibilitäts Bewertungsergebnis angezeigt.
 
 ##### <a name="dimensions-tab"></a>Registerkarte Dimensionen
 

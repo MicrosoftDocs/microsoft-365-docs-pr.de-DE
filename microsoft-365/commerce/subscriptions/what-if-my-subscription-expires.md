@@ -23,21 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 2852d2fc301d71131a0adb1c277974e2303dd395
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818623"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016077"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
 
 Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder nicht mehr *bereit*gestellt wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
+
+Lesen Sie diese wichtigen Informationen, bevor Sie sich an den [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)wenden.
   
-## <a name="microsoft-365-for-business-subscription-lifecycle"></a>Microsoft 365 for Business: Abonnement Lebenszyklus
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht mit Daten, wenn ein Abonnement abläuft? 
+
 - Wenn Ihr Abonnement abläuft, wird die folgende Phase durchlaufen: abgelaufen/deaktiviert/nicht verfügbar. Die abgelaufene Phase beginnt unmittelbar nach Erreichen des Enddatums des Abonnements.
 - Wenn Sie die wiederkehrende Abrechnung für Ihr Jahresabonnement deaktivieren, wird die gleiche Phase wie ein abgelaufenes Abonnement durchlaufen. Die erste Phase beginnt mit dem Jahrestag des jährlichen Abonnements, nicht ab dem Datum, an dem Sie die Einstellung für die wiederkehrende Abrechnung des Abonnements deaktiviert haben.
-- Wenn Sie Ihr monatliches Abonnement kündigen, wird es sofort (zum Zeitpunkt der Stornierung) deaktiviert. Dies bedeutet, dass Ihre Benutzer sofort den Zugriff auf die Microsoft 365-Objekte verlieren und nur Administratoren Zugriff auf die Daten für die nächsten 90 Tage haben werden.
+- Wenn Sie Ihr monatliches Abonnement kündigen, ist es sofort (zum Zeitpunkt der Stornierung) deaktiviert. Dies bedeutet, dass Ihre Benutzer sofort den Zugriff auf die Microsoft 365-Objekte verlieren und nur Administratoren Zugriff auf die Daten für die nächsten 90 Tage haben.
 
 In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement abläuft.
 
@@ -52,6 +55,21 @@ In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezah
   
 > [!NOTE]
 > **Was sind "Kundendaten"?** Kundendaten, wie in den [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649)definiert, bezieht sich auf alle Daten, einschließlich aller Text-, Sound-oder Bilddateien, die Microsoft von oder im Namen des Kunden über die Verwendung von Microsoft 365-Diensten durch den Kunden bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft-Dienst Vertrauensstellungs Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+
+## <a name="what-happens-if-i-cancel-a-subscription"></a>Was geschieht, wenn ich ein Abonnement kündige?
+
+Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abonnement den Status "abgelaufen" und wechselt direkt in den Status "deaktiviert" (90 Tage für die meisten Abonnements) in den meisten Ländern und Regionen. Es wird empfohlen, dass Sie [Ihre Daten](back-up-data-before-switching-plans.md) vor dem Abbruch sichern, aber als Administrator können Sie weiterhin auf Daten für Ihre Organisation zugreifen und diese sichern, solange Sie sich im Status "deaktiviert" befinden. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 90 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
+  
+Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
+  
+- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
+
+- **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
+
+Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
+  
+> [!IMPORTANT]
+> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie [Ihr Konto schließen](../close-your-account.md).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?
 
@@ -63,7 +81,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
   
 - **Aktivieren Sie wiederkehrende Abrechnung für das Abonnement.**
 
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch in Rechnung gestellt, und je nach ihrer aktuellen Zahlungshäufigkeit werden Sie für ein weiteres Jahr oder einen weiteren Monat belastet. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
 
   - Wenn Sie Microsoft 365 apps for Business mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
 
@@ -73,7 +91,7 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
 
 - **Lassen Sie das Abonnement ablaufen.**
 
-  - Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
+  - Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement endet mit dem Ablaufdatum, und Sie können alle zugehörigen e-Mail-Benachrichtigungen ignorieren.
 
   - Wenn Sie ein offener Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Aktion durch nehmen.
 
@@ -144,7 +162,7 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
 
 In diesem Zustand haben Benutzer normalen Zugriff auf das Microsoft 365-Portal, Office-Anwendungen und Dienste wie e-Mail und SharePoint Online.
   
-Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge – globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden. Wenn Sie es nicht reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
+Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge – globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden. Wenn Sie nicht reaktivieren, [Sichern Sie die Daten](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Status: deaktiviert
   
@@ -172,13 +190,13 @@ In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können si
 
 ::: moniker-end
 
-Als globaler oder abrechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten intakt sind. Wenn Sie beschließen, das Abonnement nicht zu reaktivieren, denken Sie unbedingt daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
+Als globaler oder abrechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten intakt sind. Wenn Sie sich für eine erneute Aktivierung entscheiden, [Sichern Sie die Daten](back-up-data-before-switching-plans.md).
 
 ### <a name="state-deprovisioned"></a>State: unprovisioned
   
  **Was Sie erwarten können:** Wenn Sie Ihr Abonnement nicht reaktivieren, während die Nachfrist läuft oder es deaktiviert ist, wird seine Bereitstellung aufgehoben.
   
-Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
+Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Alle Kundendaten – von Benutzerdaten zu Dokumenten und e-Mails – werden endgültig gelöscht und können nicht wiederhergestellt werden.
   
 Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Allerdings können Sie als globaler oder abrechnungsadministrator weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten, oder um neue Abonnements zu erwerben, um Ihre geschäftlichen Anforderungen zu erfüllen.
   
@@ -204,24 +222,17 @@ Wenn Ihre Testversion beendet ist, können Sie Microsoft 365 nicht kostenlos wei
 
 ::: moniker-end
 
-- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Auswerten von Microsoft 365? In bestimmten Fällen können Sie Ihre [Testversion möglicherweise verlängern](../extend-your-trial.md).
+- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Auswerten von Microsoft 365? In bestimmten Fällen können Sie [Ihre Testversion verlängern](../extend-your-trial.md).
 
-- **Kündigen Sie die Testversion, oder lassen Sie sie ablaufen.** Wenn Sie sich entschließen, Microsoft 365 zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [stornieren](cancel-your-subscription.md). Denken Sie unbedingt daran, alle Daten zu sichern, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
-
-## <a name="what-happens-if-i-cancel-a-subscription"></a>Was geschieht, wenn ich ein Abonnement kündige?
-
-Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abonnement den Status "abgelaufen" und wechselt direkt in den Status "deaktiviert" (90 Tage für die meisten Abonnements) in den meisten Ländern und Regionen. Es wird empfohlen, dass Sie [Ihre Daten](back-up-data-before-switching-plans.md) vor dem Abbruch sichern, aber als Administrator können Sie weiterhin auf Daten für Ihre Organisation zugreifen und diese sichern, solange Sie sich im Status "deaktiviert" befinden. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 90 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
-  
-Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
-  
-- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
-
-- **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
-
-Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
-  
-> [!IMPORTANT]
-> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie [Ihr Konto schließen](../close-your-account.md).
+- **Kündigen Sie die Testversion, oder lassen Sie sie ablaufen.** Wenn Sie sich entschließen, Microsoft 365 zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [stornieren](cancel-your-subscription.md). Sichern Sie alle Daten, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
 
 > [!NOTE]
 > Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um Änderungen zu überprüfen.
+
+## <a name="related-articles"></a>Verwandte Artikel 
+
+[Kündigen Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
+
+[Verlängern von Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription)
+
+[Verlängern oder Reaktivieren Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription)

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Erfahren Sie mehr über Typen von Benutzern im Admin Center. '
-ms.openlocfilehash: 4e28715674360dbbed7ef398207e39e45b1fec81
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0b0638ee9fb258cfd84bafdc1c09ab691a1d060
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399218"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022203"
 ---
 # <a name="quick-help-types-of-users"></a>Schnelle Hilfe: Typen von Benutzern
 
@@ -46,12 +46,12 @@ Auf der Seite " **aktive Benutzer** " im Microsoft 365 Admin Center können Sie 
 |Globale Administratoren  <br/> |Diese Benutzer haben Zugriff auf alle Verwaltungsfunktionen. Die Person, die sich für Microsoft 365 registriert, wird zu einem globalen Administrator, aber Sie können mehr als einen haben, wenn Sie möchten. Globale Administratoren sind die einzigen Administratoren, die anderen Personen Administratorrollen zuweisen können.  <br/> |
 |Kennwortadministratoren  <br/> |Diese Benutzer können Kennwörter zurücksetzen, Serviceanfragen verwalten und den Dienststatus in Ihrem Auftrag überwachen.  <br/> |
 |Dienstadministratoren  <br/> |Diese Benutzer können Serviceanfragen verwalten und den Dienststatus in Ihrem Auftrag überwachen.  <br/> |
-|Benutzerverwaltungsadministratoren  <br/> |Diese Benutzer können Kennwörter zurücksetzen, den Dienststatus überwachen sowie Benutzerkonten, Benutzergruppen und Serviceanfragen überwachen. Folgendes können sie nicht: einen globalen Administrator entfernen, andere Administratorrollen erstellen oder Kennwörter für Abrechnungs-, globale- und Dienstadministratoren zurücksetzen.  <br/> |
+|Benutzerverwaltungsadministratoren  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
 |Hinzufügen benutzerdefinierter Filter  <br/> |Mit dieser Option können Sie einen benutzerdefinierten Filter erstellen, um nur bestimmte Benutzertypen Ihrer Präferenz anzuzeigen, beispielsweise die Benutzer im Microsoft 365 apps for Business-Plan. [Schnelle Hilfe: Filtern von Benutzern](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Hinzufügen von Benutzern in Microsoft 365](../add-users/add-users.md)
+[Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen](../add-users/add-users.md)
     
 [Zuweisen von Lizenzen zu Benutzern in Microsoft 365 for Business](../manage/assign-licenses-to-users.md)
     

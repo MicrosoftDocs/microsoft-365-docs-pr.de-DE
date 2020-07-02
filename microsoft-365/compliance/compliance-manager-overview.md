@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über den Microsoft Compliance-Manager, ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust Portal.
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330745"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016128"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330745"
 
 **In diesem**Artikel erfahren Sie, was Compliance-Manager ist und welche Hauptkomponenten Sie kennen.
 
-**Erfahren Sie mehr über Updates**: Wir haben mehrere Updates im April 2020 Public Preview Release veröffentlicht. In den Versionshinweisen zu [Compliance-Manager](compliance-manager-release-notes.md) finden Sie Informationen zu neuen und bekannten Problemen.
+Informationen zu **Updates**finden Sie in den Versionshinweisen zu [Compliance-Managern](compliance-manager-release-notes.md) , um Neuigkeiten und bekannte Probleme anzuzeigen.
 
 ## <a name="what-is-compliance-manager"></a>Was ist Compliance-Manager?
 
@@ -53,7 +53,7 @@ Mit dem Compliance-Manager kann Ihre Organisation:
 
 [Microsoft Compliance Score (Preview)](compliance-score.md) ist ein Feature im Microsoft 365 Compliance Center, das eine Ansicht auf oberster Ebene in der Compliance-Position Ihrer Organisation bereitstellt. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen. Die Kenntnis ihrer allgemeinen Konformitätsbewertung hilft Ihrer Organisation, die Compliance zu verstehen und zu verwalten. Grundlegendes [zur Berechnung der Konformitätsbewertung](compliance-score-methodology.md)
 
-Compliance-Manager teilt dasselbe Back-End mit Kompatibilitätsbewertung. Während der öffentlichen Vorschauphase für beide Tools ist Compliance-Manager der Ort, an dem Sie Ihre Bewertungen und Implementierungen von benutzerdefinierten Steuerelementen verwalten. Erfahren Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+Compliance-Manager teilt dasselbe Back-End mit Kompatibilitätsbewertung. Während der öffentlichen Vorschauphase für beide Tools ist Compliance-Manager der Ort, an dem Sie Ihre benutzerdefinierten Steuerelement Implementierungen verwalten. Erfahren Sie mehr über die [Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
 
 ## <a name="compliance-manager-components"></a>Compliance-Manager-Komponenten
 
@@ -177,7 +177,7 @@ Compliance-Manager ist in [Microsoft Secure Score](../security/mtp/microsoft-sec
 
 Sie haben beispielsweise eine sicherheitsbezogene Anforderung zum Aktivieren der Azure-Rechteverwaltung in Ihrer Organisation, die auch für ein Compliance-bezogenes Aktionselement gilt. Wenn Azure Rights Management aktiviert und von Secure Score verarbeitet wird, erhält Compliance-Manager eine Benachrichtigung über das Update, und die Bewertung für das Aktionselement wird automatisch mit Abschluss Kredit aktualisiert.
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
+## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
 
 Beginnen Sie [mit der Zusammenarbeit mit Compliance-Manager](working-with-compliance-manager.md) , um behördliche Compliance-Aktivitäten für Ihre Organisation zu verwalten.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft-Konformitätsbewertung
+title: Microsoft-Compliancebewertung (Vorschau)
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,29 +13,27 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Score unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
-ms.openlocfilehash: 3c7a4bdfd5de7a9a6dcbede5146ebb517acdb4bb
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+description: Microsoft Compliance Score (Preview) unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt Empfohlene Aktionen zum Beheben von Risiken vor.
+ms.openlocfilehash: 0cb8bd0b5aa39be2a9a6e706afa21bb7dc53eadb
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330799"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016138"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft-Compliancebewertung (Vorschau)
 
-Das [Microsoft-Kompatibilitäts Ergebnis](https://compliance.microsoft.com/compliancescore) hilft Ihnen, die Verwaltung der Compliance zu vereinfachen und Compliance-Risiken durch eine benutzerfreundliche Erfahrung zu verringern. Das Kompatibilitäts Ergebnis steht für die öffentliche Vorschau im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)zur Verfügung.
+**In diesem Artikel:** Erfahren Sie, was die Konformitätsbewertung ist, wie Sie die Verwaltung der Compliance vereinfachen und wie Sie Sie für Ihre Organisation einrichten können.
 
-**In diesem Artikel:** Lesen Sie diesen Artikel, um zu verstehen, welche Kompatibilitätsbewertung vorliegt und wie Sie Sie für Ihre Organisation einrichten.
-
-Informationen **zu Updates:** In der Version April 2020 wurden mehrere Updates veröffentlicht. In den Versionshinweisen zur [Kompatibilitätsbewertung](compliance-score-release-notes.md) finden Sie Informationen zu neuen und bekannten Problemen mit der Vorschauversion des Kompatibilitäts Bewertungsergebnisses.
+Neuigkeiten **:** Die Version 2020 vom Juni enthält neue Funktionen zum Erstellen und Verwalten von Bewertungen sowie zum Anzeigen von Steuerelementen innerhalb der Konformitätsbewertung. Lesen Sie die [Versionshinweise zu Compliance Score](compliance-score-release-notes.md) , um zu sehen, was in der Public Preview of Compliance Score neu ist.
 
 ## <a name="what-is-compliance-score"></a>Was ist Konformitätsbewertung
 
-Microsoft Compliance Score ist eine Vorschaufunktion im Microsoft 365 Compliance Center, die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen.
+[Microsoft Compliance Score](https://compliance.microsoft.com/compliancescore) ist eine Vorschaufunktion im [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md) , die Ihnen hilft, die Compliance-Haltung ihrer Organisation zu verstehen. Sie berechnet eine auf Risiken basierende Bewertung, die Ihren Fortschritt bei der Durchführung von Maßnahmen misst, mit denen sich Risiken hinsichtlich des Datenschutzes und regulatorischer Standards verringern lassen.
 
 Sie können die Kompatibilitätsbewertung als Tool verwenden, um alle ihre Risikobewertungen nachzuverfolgen. Es bietet Workflowfunktionen, die Sie bei der effizienten Durchführung ihrer Risikobewertungen mithilfe eines allgemeinen Tools unterstützen.
 
-Wenn Sie den [Compliance-Manager](compliance-manager-overview.md)derzeit verwenden, werden Sie feststellen, dass das Kompatibilitäts Ergebnis nun ein eigenständiges Feature mit einem einfacheren, benutzerfreundlicheren Design ist, mit dem Sie die Compliance einfacher verwalten können. 
+[Compliance-Manager-](compliance-manager-overview.md) Benutzer werden feststellen, dass das Kompatibilitäts Ergebnis nun ein eigenständiges Feature mit einem einfacheren, benutzerfreundlicheren Design ist, um Organisationen die Compliance besser verwalten zu können.
 
 Die Hauptseite der Kompatibilitätsbewertung ist Ihr benutzerdefiniertes Dashboard. Es zeigt Ihre aktuelle Punktzahl, hilft Ihnen zu sehen, was Aufmerksamkeit benötigt, und führt Sie zu Aktionen zur Verbesserung ihrer Gäste. Das Dashboard für die Konformitätsbewertung sieht wie folgt aus:
 
@@ -54,89 +52,88 @@ Compliance-Score hilft bei der Vereinfachung der Compliance-Verwaltung durch fol
 
 ## <a name="relationship-to-compliance-manager"></a>Beziehung zum Compliance-Manager
 
-Denken Sie an die Konformitätsbewertung als vereinfachte Version von Compliance-Manager. Während die beiden als eindeutige, aber integrierte Tools vorhanden sind, erleichtert Compliance Score die Überwachung ihrer allgemeinen Compliance-Haltung und die Schritte zur Verbesserung dieser.
+Denken Sie an die Konformitätsbewertung als vereinfachte Erfahrung mit Compliance-Manager. Während die beiden als eindeutige, aber integrierte Tools vorhanden sind, erleichtert Compliance Score die Überwachung ihrer allgemeinen Compliance-Haltung und die Schritte zur Verbesserung dieser.
 
-Das Kompatibilitäts Ergebnis teilt dasselbe Back-End mit dem Compliance-Manager, sodass alle Daten, die Sie möglicherweise bereits im Compliance-Manager haben, in der Kompatibilitätsbewertung angezeigt werden.
+Das Kompatibilitäts Ergebnis teilt dasselbe Back-End mit dem Compliance-Manager. Alles, was Sie in einem Tool ausführen, wird im anderen Tool angezeigt.
 
-Einige Funktionen bleiben nur im Compliance-Manager während der öffentlichen Vorschau, wie das Verwalten von Bewertungen und das Erstellen von Vorlagen. Es wird empfohlen, alle Compliance-Verwaltungsaktivitäten im Kompatibilitäts Bewertungsergebnis zu beginnen. Wenn Sie mit den von Compliance Manager bearbeiteten Funktionen kommen, werden Sie zu diesem Tool geführt. Aus diesem Grund werden Sie in einigen dieser Dokumentationen zu Compliance-Manager-Themen geleitet.
+Einige Funktionen für die Bewertung und Vorlagenverwaltung bleiben während der öffentlichen Vorschau im Compliance-Manager. Es wird empfohlen, alle Compliance-Verwaltungsaktivitäten im Kompatibilitäts Bewertungsergebnis zu beginnen. Wenn Sie mit den von Compliance Manager bearbeiteten Funktionen kommen, werden wir Sie dort begleiten.
 
-Weitere Informationen zur Beziehung zwischen Compliance Score und Compliance-Manager finden Sie in den Versionshinweisen zur [Kompatibilitätsbewertung](compliance-score-release-notes.md).
+#### <a name="learn-more"></a>Weitere Informationen
+
+Grund [Legendes zur Beziehung zwischen Compliance Score und Compliance-Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
 
 ## <a name="understanding-your-score"></a>Grundlegendes zur Partitur
 
-Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Grundwert ist eine Reihe von Kontrollen, die übliche, branchenspezifische Vorschriften und Standards umfassen. Diese Bewertung ist zwar ein guter Ausgangspunkt für die Bewertung Ihrer Compliance-Position, aber die Konformitätsbewertung wird leistungsfähiger, wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevanter sind.
+Das Kompatibilitäts Ergebnis verleiht Ihnen Punkte für die Durchführung von Aktionen, die zur Einhaltung einer Richtlinie, eines Standards oder einer Richtlinie ergriffen wurden. Jede Aktion unterscheidet sich je nach den potenziellen Risiken durch eine andere Auswirkung auf Ihre Bewertung. Ihre Punktzahl kann helfen, Prioritäten zu setzen, auf die Sie sich konzentrieren müssen, um Ihre allgemeine Compliance-Haltung zu verbessern.
 
-Wenn Ihre Organisation beispielsweise zur Finanzdienstleistungsbranche gehört, möchten Sie möglicherweise die FFIEC-Bewertung hinzufügen. Wenn Ihre Organisation der Healthcare-Branche angehört, können Sie die HIPAA/HITECH-Bewertung hinzufügen. Hier erfahren Sie, wie [Sie Assessments im Compliance-Manager hinzufügen](working-with-compliance-manager.md#assessments).
+Mit der Kompatibilitätsbewertung erhalten Sie eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis.  Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
 
-Erfahren Sie mehr darüber [, wie Ihr Konformitäts Bewertungspunkt berechnet und kontinuierlich überwacht wird](compliance-score-methodology.md).
+Die Datenschutz-Basisbewertung wird verwendet, um die anfängliche Bewertung zu berechnen, bevor Sie andere Bewertungen konfigurieren. Bei Ihrem ersten Besuch sammelt Compliance Score bereits Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Verhältnis zu wichtigen Datenschutzstandards und-Vorschriften arbeitet, und wie Sie die vorgeschlagenen Verbesserungsmaßnahmen durchführen.
 
+Da jede Organisation spezifische Anforderungen hat, beruht Compliance Score darauf, dass Sie eigene Bewertungen einrichten und verwalten, um Risiken besser zu mindern. Wenn Ihre Organisation beispielsweise zur Finanzdienstleistungsbranche gehört, möchten Sie möglicherweise die FFIEC-Bewertung hinzufügen. Wenn Ihre Organisation der Healthcare-Branche angehört, können Sie die HIPAA/HITECH-Bewertung hinzufügen.
 
-## <a name="key-components-controls-assessments-templates-groups"></a>Wichtige Komponenten: Steuerelemente, Bewertungen, Vorlagen, Gruppen
+#### <a name="learn-more"></a>Weitere Informationen
 
-Compliance Score verwendet mehrere Komponenten, die Sie bei der Verwaltung Ihrer Compliance-Aktivitäten unterstützen. Wenn Sie die Konformitätsbewertung verwenden, um Compliance-Aktivitäten zuzuweisen, zu testen und zu überwachen, ist es hilfreich, ein grundlegendes Verständnis der wichtigsten Komponenten zu haben: Steuerelemente, Bewertungen, Vorlagen und Gruppen.
+[Erfahren Sie, wie Ihr Konformitäts Bewertungspunkt berechnet und kontinuierlich überwacht wird](compliance-score-methodology.md).
+
+[Erstellen und Verwalten von Assessments in Compliance Score](compliance-score-assessments.md).
+
+## <a name="key-components-controls-assessments-templates-improvement-actions"></a>Wichtige Komponenten: Steuerelemente, Bewertungen, Vorlagen, Verbesserungs Aktionen
+
+Compliance Score verwendet mehrere Komponenten, die Sie bei der Verwaltung Ihrer Compliance-Aktivitäten unterstützen. Wenn Sie die Konformitätsbewertung verwenden, um Compliance-Aktivitäten zuzuweisen, zu testen und zu überwachen, ist es hilfreich, ein grundlegendes Verständnis der wichtigsten Komponenten zu haben: Steuerelemente, Bewertungen, Vorlagen und Verbesserungs Aktionen.
 
 ### <a name="controls"></a>Steuerelemente
 
-Ein Steuerelement definiert die Bewertung und Verwaltung der Systemkonfiguration, des Organisationsprozesses und der Personen, die für die Erfüllung einer bestimmten Anforderung einer Richtlinie, eines Standards oder einer internen Richtlinie zuständig sind.
+Ein Steuerelement ist eine Anforderung einer Verordnung, eines Standards oder einer Richtlinie. Es definiert, wie Sie die Systemkonfiguration, den Organisationsprozess und die Personen, die für die Erfüllung einer bestimmten Anforderung einer Richtlinie, eines Standards oder einer Richtlinie zuständig sind, bewerten und verwalten.
 
 Das Kompatibilitäts Ergebnis verfolgt zwei Arten von Steuerelementen:
 
 1. Von **Microsoft verwaltete Steuer**Elemente: Steuerelemente für Microsoft Cloud-Dienste, die von Microsoft für die Implementierung zuständig sind
-2. Vom **Kunden verwaltete**Steuerelemente: von Ihrer Organisation verwaltete Steuerelemente, die Sie für die Implementierung zuständig sind
- 
+2. **Ihre Steuerelemente**: manchmal auch als Kunden Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
+
+#### <a name="learn-more"></a>Weitere Informationen
+
+[Überwachen Sie den Status Ihrer Steuerelemente](compliance-score-assessments.md#monitor-assessment-progress-and-controls).
+
 ### <a name="assessments"></a>Bewertungen
 
-Bei einer Bewertung handelt es sich um eine Bewertung einer Vorlage, die den Bewertungsprozess für Ihre Organisation initiiert. Assessments Group die Maßnahmen, die erforderlich sind, um die Anforderungen eines Standards, einer Verordnung oder eines Gesetzes zu erfüllen. Sie haben beispielsweise eine Einschätzung, dass, wenn Sie alle darin enthaltenen Aktionen durchführen, Ihre Office 365-Einstellungen entsprechend den Anforderungen von ISO 27001 angepasst werden.
-
-Compliance Score bietet Ihrer Organisation eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Diese Bewertung ist eine Empfehlung zur Verringerung ihrer Datenschutz-und Compliance-Risiken ([Weitere Informationen](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+Bei einem Assessment handelt es sich um eine Gruppierung von Steuerelementen aus einer bestimmten Verordnung, einem Standard oder einer Richtlinie. Durch das Abschließen der Aktionen innerhalb eines Assessments können Sie die Anforderungen eines Standards, einer Verordnung oder eines Gesetzes erfüllen. Sie können beispielsweise eine Einschätzung haben, dass, wenn Sie alle darin enthaltenen Aktionen durchführen, Ihre Microsoft 365-Einstellungen entsprechend den Anforderungen für ISO 27001 entsprechend angepasst werden.
 
 Assessments weisen mehrere Komponenten auf:
 
 - **Im Bereich Dienste**: die spezifische Gruppe von Microsoft-Diensten, die für die Bewertung gelten.
 - Von Microsoft **verwaltete Steuer**Elemente: von Microsoft implementierte und getestete Steuerelemente
-- Von **Kunden verwaltete Steuer**Elemente: Steuerelemente, die Sie verwalten
-- **Bewertungsergebnis**: der Prozentsatz der Punkte, die durch das Ausführen von Aktionen innerhalb dieser Bewertung erzielt wurden
+- **Ihre Steuer**Elemente: Steuerelemente, die Sie verwalten
+- **Bewertungsergebnis**: der Prozentsatz der Punkte, die durch Abschließen von Verbesserungs Aktionen innerhalb dieser Bewertung erzielt wurden
 
-> [!NOTE]
-> Das Kompatibilitäts Ergebnis zeigt Ihre Bewertungen an und wie Sie in Ihre Gesamtpunktzahl eingehen. Während der öffentlichen Vorschau werden Sie jedoch an den Compliance-Manager weitergeleitet, um Ihre Bewertungen zu verwalten.
+Beim Erstellen von Bewertungen weisen Sie diese einer **Gruppe**zu. Sie können Gruppen auf beliebige Weise konfigurieren, die für Ihre Organisation am logischsten ist. Sie können beispielsweise Bewertungen nach Jahr, Compliance-Standard, Dienst, Teams in Ihrer Organisation oder auf andere Weise gruppieren. Nachdem Sie Gruppen erstellt haben, können Sie das Dashboard für die [Konformitätsbewertung Filtern](compliance-score-setup.md#filtering-your-dashboard-view) , um die Bewertung von einer oder mehreren Gruppen anzuzeigen.
 
-Hier erhalten Sie detaillierte Anweisungen zum [Verwalten von Bewertungen im Compliance-Manager](working-with-compliance-manager.md#assessments).
+#### <a name="learn-more"></a>Weitere Informationen
+
+[Erstellen und Verwalten von Assessments in Compliance Score](compliance-score-assessments.md).
 
 ### <a name="templates"></a>Vorlagen
 
-Compliance Score stellt vorkonfigurierte Vorlagen für Bewertungen bereit. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eigene Steuerelemente und Aktionen zu einer vorkonfigurierten Vorlage hinzufügen. Sie können beispielsweise eine Vorlage für Ihr Geschäftsprozess-Steuerelement oder eine Vorlage für einen regionalen Datenschutz-oder Kompatibilitätsstandard erstellen, der nicht von einer der vorkonfigurierten Vorlagen abgedeckt wird. Indem Sie Ihre eigenen Vorlagen in die Konformitätsbewertung einbringen, können Sie nicht nur Microsoft-Cloud-Bewertungen, sondern auch alle anderen Risikobewertungen im Bereich Ihrer Organisation nachverfolgen.
+Das Kompatibilitäts Ergebnis enthält Vorlagen, die Sie für die schnelle Erstellung von Bewertungen bereitstellen. Sie können diese Vorlagen ändern, um eine für Ihre Anforderungen optimierte Bewertung zu erstellen. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine eigene Vorlage mit eigenen Steuerelementen und Aktionen entwickeln. Möglicherweise möchten Sie, dass eine Vorlage eine interne Geschäftsprozess Steuerung oder einen regionalen Datenschutzstandard abdeckt, der nicht von einer unserer Vorlagen abgedeckt wird.
 
-Die vorkonfigurierten Vorlagen für die Konformitätsbewertung lauten wie folgt:
+Wenn Sie eigene Vorlagen erstellen, können Sie nicht nur Microsoft-Cloud-Bewertungen, sondern auch alle anderen Risikobewertungen im Bereich Ihrer Organisation nachverfolgen.
 
-1. [Brasilien – allgemeine Datenschutz Gesetze (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
-2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Vorschau)
-3. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
-5. [Dsgvo der Europäischen Union](https://go.microsoft.com/fwlink/?linkid=2108870)
-6. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
-7. [FedRAMP moderat](https://go.microsoft.com/fwlink/?linkid=2108869)
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [Australische Regierung ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Vorschau)
-10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-13. [Microsoft 365-Datenschutz Basis](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-14. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-16. [NIST-Cyber-Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+#### <a name="learn-more"></a>Weitere Informationen
 
-Hier finden Sie [detaillierte Anweisungen zum Erstellen von Vorlagen](working-with-compliance-manager.md#templates), die im Compliance-Manager ausgeführt werden.
+[Anzeigen der Vorlagen, die in Compliance Score zur Erstellung von Bewertungen verfügbar sind](compliance-score-templates.md).
 
-### <a name="groups"></a>Gruppen
+[Hier erhalten Sie detaillierte Anweisungen zum Erstellen und Ändern von Vorlagen Compliance-Manager](working-with-compliance-manager.md#templates).
 
-Mit Gruppen können Sie Bewertungen so organisieren, dass Sie logisch sind. Sie können beispielsweise nach Jahr, Kompatibilitätsstandard, Dienst, Teams in Ihrer Organisation oder auf andere Weise Gruppenbewertungen auswählen.
+### <a name="improvement-actions"></a>Verbesserungs Aktionen
 
-Wenn zwei unterschiedliche Bewertungen in derselben Gruppe von Kunden verwaltete Aktionen gemeinsam nutzen, werden Aktualisierungen, die Sie an den Implementierungsdetails, Tests und dem Status für die Aktion in einem Assessment vornehmen, automatisch mit derselben Aktion in einer anderen Bewertung in der Gruppe synchronisiert. Durch die Synchronisierung von Aktionen auf diese Weise werden die zugewiesenen Verbesserungs Aktionen in der gesamten Gruppe vereinheitlicht und Arbeits Duplikate reduziert.
+Verbesserungs Aktionen zentralisieren Sie Ihre Compliance-Aktivitäten. Jede Verbesserungs Aktion enthält detaillierte Anweisungen zur Implementierung, die Sie bei der Anpassung an Datenschutzbestimmungen und-Standards unterstützen. Aktionen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs-und Testaufgaben auszuführen. Sie können auch Dokumentation, Notizen und Datensatzstatus Aktualisierungen in der Verbesserungs Aktion speichern.
 
-Informationen zum [Erstellen von Gruppen im Compliance-Manager](working-with-compliance-manager.md#groups). Nachdem Sie Gruppen erstellt haben, können Sie das Dashboard für die [Konformitätsbewertung Filtern](compliance-score-setup.md#filtering-your-dashboard-view) , um die Bewertung von einer oder mehreren Gruppen anzuzeigen.
+#### <a name="learn-more"></a>Weitere Informationen
 
-## <a name="next-step-begin-setup"></a>Nächster Schritt: Setup starten
+[Verwenden Sie Verbesserungs Aktionen, um den Compliance-Workflow zu verwalten](compliance-score-improvement-actions.md).
 
-Hier erfahren Sie, wie Sie sich anmelden, Berechtigungen einrichten und Updates und Dashboard-Ansichten im [Setup der Kompatibilitätsbewertung](compliance-score-setup.md)konfigurieren.
+## <a name="next-steps-set-up-and-customize"></a>Nächste Schritte: Einrichten und anpassen
+
+Hier erfahren Sie, wie Sie sich anmelden, Berechtigungen und Rollen festlegen, sichere Bewertungs Aktualisierungen konfigurieren und die Dashboardansicht mit dem [Setup der Kompatibilitätsbewertung](compliance-score-setup.md)personalisieren.
+
+Beginnen Sie dann mit der Anpassung der Konformitätsbewertung für Ihre Organisation, indem [Sie Assessments einrichten](compliance-score-assessments.md).

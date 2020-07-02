@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779953"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005630"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
 
@@ -44,15 +44,15 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben abzusch
 ||**Aufgabe**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
 |1   <br/> |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Schulen der Benutzer](secure-your-business-data.md#train) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3   <br/> |[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Erhöhen des Schutzniveaus gegen Schadsoftware in Mail](secure-your-business-data.md#malware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Schutz vor Ransomware](secure-your-business-data.md#ransomware) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Beenden der automatischen Weiterleitung für e-Mail](secure-your-business-data.md#forwarding) <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |7   <br/> |[Verwenden der Office-Nachrichtenverschlüsselung](secure-your-business-data.md#encryption) <br/> ||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[Schützen Ihrer e-Mails vor Phishing-Angriffen](secure-your-business-data.md#phishing) <br/> ||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[Schutz vor böswilligen Anlagen und Dateien mit sicheren ATP-Anlagen](secure-your-business-data.md#atp) <br/> ||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10    <br/> |[Schutz vor Phishing-Angriffen durch ATP-sichere Links](secure-your-business-data.md#phishingatp) <br/> ||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[Schutz vor Phishing-Angriffen durch ATP-sichere Links](secure-your-business-data.md#phishingatp) <br/> ||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Bevor Sie beginnen, überprüfen Sie Ihre [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentralisiertes Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten,-Daten,-apps,-Geräte und-Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Adressierung von Empfehlungen mit Anwendungen oder Software eines Drittanbieters. Dank zusätzlicher Einblicke und größerer Transparenz in einer breiteren Palette von Microsoft-Produkten und-Diensten können Sie sich sicher fühlen, dass Sie über die Sicherheitsintegrität in Ihrer Organisation berichten.
   
@@ -155,7 +155,7 @@ Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Wählen Sie **Speichern**.
+6. Klicken Sie auf **Speichern**.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|**Blockieren von Dateitypen, die Ransomware oder anderen bösartigen Code enthalten könnten**|
 |:-----|:-----|:-----|
@@ -191,7 +191,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Wählen Sie **Speichern**.
+6. Klicken Sie auf **Speichern**.
     
 |**Einstellung**|**Ablehnen automatischer Weiterleitung von e-Mails an externe Domänen**|
 |:-----|:-----|
@@ -325,25 +325,27 @@ Um auf ATP-sichere Links zu gelangen, sehen Sie sich ein [kurzes Schulungsvideo]
     
 So ändern Sie die Standardrichtlinie:
   
-1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die **Standard** Richtlinie aus. 
+1. Doppelklicken Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, auf die **Standard** Richtlinie. 
     
-2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail**die Option **Microsoft 365 apps for Enterprise, Office für IOS und Android**aus.
+2. Geben Sie unter **Einstellungen, die für Inhalte in Office 365 gelten**, eine URL ein, die blockiert werden soll, beispielsweise _example.com_, und wählen Sie aus **+** .
+
+3. Wählen Sie unter **Einstellungen für Inhalte mit Ausnahme von e-Mail**die Option **Office 365 Anwendungen**aus, **verfolgen Sie nicht nach, wann Benutzer auf sichere Links klicken**, und **lassen Sie keine Benutzer durch sichere Links zur ursprünglichen URL klicken**.
     
-3. Wählen Sie **Speichern**. 
+4. Klicken Sie auf **Speichern**. 
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
-1. Wählen Sie auf der Seite sichere Links unter **Richtlinien, die für die gesamte Organisation gelten**, die Option aus, **+** um eine neue Richtlinie zu erstellen. 
+1. Wählen Sie auf der Seite "sichere Links" unter **Richtlinien, die für bestimmte Empfänger gelten**, die Option aus, **+** um eine neue Richtlinie zu erstellen. 
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
-3. Wählen Sie **Speichern**. 
+3. Klicken Sie auf **Speichern**. 
     
 |**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
 |:-----|:-----|
 |Name  <br/> |Richtlinie für sichere Links für alle Empfänger in der Domäne  <br/> |
 |Auswählen der Aktion für unbekannte potenziell bösartige URLs in Nachrichten  <br/> |Select **on-URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt**.  <br/> |
-|Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte  <br/> |Aktivieren Sie dieses Kontrollkästchen.  <br/> |
+|Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen  <br/> |Aktivieren Sie dieses Kontrollkästchen.  <br/> |
 |Angewendet auf  <br/> |Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
 |
    

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Hier erfahren Sie, wie Sie zum Zeitpunkt des Kaufs von Microsoft 365 einen Subscription Advisor-Partner als Partner von Record hinzufügen, den Partner ändern oder einen Partner aus einem Abonnement löschen.
-ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 07e0d47d45f20e206fb8ca4c5ff5e81785bc74b9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432195"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005686"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -56,7 +56,7 @@ Der von Ihnen ausgewählte Partner hängt von den von Ihnen verwendeten Microsof
 
 ::: moniker range="o365-germany"
 
-Ihre Wahl des Partners ist von den von Ihnen verwendeten Office 365-Diensten sowie von dem Land oder der Region abhängig, in dem/der Sie die Dienste verwenden. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
+The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
     
 4. Wenn Sie bereits über einen Partner verfügen, wählen Sie im zweiten Schritt des Checkout-Assistenten im rechten Bereich unter Partner Informationen die Option **Hinzufügen**aus.
 
-5. Geben Sie die Microsoft Partner-ID des Partners ein, den Sie hinzufügen. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. Führen Sie die restlichen Schritte des Assistenten aus, um den Erwerb Ihrer Abonnements abzuschließen. 
     
@@ -98,7 +98,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
     
 4. Wenn Sie bereits über einen Partner verfügen, wählen Sie im zweiten Schritt des Checkout-Assistenten im rechten Bereich unter Partner Informationen die Option **Hinzufügen**aus.
 
-5. Geben Sie die Microsoft Partner-ID des Partners ein, den Sie hinzufügen. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. Führen Sie die restlichen Schritte des Assistenten aus, um den Erwerb Ihrer Abonnements abzuschließen. 
     
@@ -127,7 +127,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach oder mit einem Part
   
 3. Wählen Sie auf der rechten Seite unter dem Abonnementkosten **Weitere Aktionen** > **Partner von Datensatz hinzufügen aus**.
 
-4. Geben Sie die Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
+4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 5. Die Partner-ID wird auf der Seite **Abonnements** angezeigt.
     
@@ -159,7 +159,7 @@ So akzeptieren Sie dieses Angebot
     
 3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
   
-4. Geben Sie die neue Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ So akzeptieren Sie dieses Angebot
     
 3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
   
-4. Geben Sie die neue Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ So akzeptieren Sie dieses Angebot
     
 3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
   
-4. Geben Sie die neue Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -255,7 +255,7 @@ Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abge
 
 Händlerbeziehungen können Sie nicht selbst entfernen.
   
-Wenn Sie eine Reseller-Beziehung entfernen, ist die Option " **Löschen** " abgeblendet, und Sie müssen Ihren Partner Händler bitten, diese Anweisungen zu befolgen: [Entfernen einer Reseller-Beziehung mit dem Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+Sie müssen Ihren Partner Händler bitten, diese Anweisungen zu befolgen: [Entfernen einer Reseller-Beziehung mit dem Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
 ::: moniker-end
 

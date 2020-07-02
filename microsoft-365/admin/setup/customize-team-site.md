@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Teamwebsite für die Dateispeicherung und-Freigabe anpassen, organisieren und verwalten.
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779869"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022169"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen Ihrer Teamwebsite für die Speicherung und Freigabe von Dateien
 
@@ -104,7 +104,7 @@ Wenn Sie Ihre Teamwebsite verwalten, müssen Sie möglicherweise Benutzer hinzuf
   
 Zeigen Sie ein Video zu Gruppen mit [verstehen und Verwalten von Gruppen](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)an. 
   
-Informationen zum Hinzufügen von Benutzern zu einer Microsoft 365-Gruppe finden Sie unter [Hinzufügen von Benutzern einzeln oder in loser Schüttung zur Microsoft 365-Administratorhilfe](../add-users/add-users.md).
+Informationen zum Hinzufügen von Benutzern zu einer Microsoft 365-Gruppe finden Sie unter [Hinzufügen von Benutzern und Zuweisen von Lizenzen gleichzeitig](../add-users/add-users.md).
   
 Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten von Zugriffsanforderungen](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)behandeln.
   

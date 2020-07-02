@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780625"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936527"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -50,7 +50,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
     
 2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
     
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. 
+3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, wählen Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste aus. 
 
 4. Wählen Sie **Änderungen speichern** aus.
 
@@ -99,15 +99,15 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
   
 4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
     
-5. Teilen Sie der Person die folgenden Informationen mit:
+5. Übermitteln Sie der Person die folgenden Informationen:
  
-  - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
+  - Diese Änderung kann eine Weile dauern.
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - Their new username. They'll need it to sign in to Microsoft 365.
     
-  - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
+  - Wenn die Person Skype for Business Online verwendet, muss sie von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, ihre Kontaktinformationen zu aktualisieren.
 
-  - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
+  - Wenn die Person OneDrive verwendet, wurde die URL zu diesem Speicherort geändert. Wenn sich OneNote-Notizbücher auf ihrem OneDrive befinden, müssen sie möglicherweise geschlossen und in OneNote erneut geöffnet werden. Wenn über OneDrive Dateien geteilt wurden, funktionieren die Links zu den Dateien möglicherweise nicht, und die Person kann diese wieder freigeben.    
   
   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
   
@@ -181,7 +181,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
     Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>„Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal“
 
@@ -228,13 +228,13 @@ Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werd
 
 A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
+Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Wie ist vorzugehen, wenn das Offline-Adressbuch des Benutzers nicht mit der globalen Adressliste synchronisiert wird?
 
-If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 Um dies zu beheben, melden Sie sich beim [Azure Active Directory-Modul für PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) mit Ihren Administratoranmeldeinformationen für Microsoft 365 an. Verwenden Sie die folgende Syntax: 
   

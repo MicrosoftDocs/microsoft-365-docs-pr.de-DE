@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545946"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005858"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -126,7 +126,7 @@ Nehmen wir beispielsweise an, dass die Blue Yonder Airlines Margie es Travel ang
 
 - Die `5322.From` Adresse lautet blueyonder@News.blueyonderairlines.com, was Sie in Outlook sehen.
 
-Listen für sichere Absender und sichere Domänen in antispamregeln in EoP untersuchen sowohl die-als `5321.MailFrom` auch- `5322.From` Adressen. Outlook-sichere Absender verwenden nur die `5322.From` Adresse.
+Listen sicherer Absender und sicherer Domänen in Anti-Spam-Richtlinien in EoP untersuchen `5322.From` Sie nur die Adressen, Dies ähnelt Outlook-sicheren Absendern, die die `5322.From` Adresse verwendet.
 
 Um zu verhindern, dass diese Nachricht gefiltert wird, können Sie die folgenden Schritte ausführen:
 

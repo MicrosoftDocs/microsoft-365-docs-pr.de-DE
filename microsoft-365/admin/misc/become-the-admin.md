@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Erfahren Sie, wie Sie überprüfen, ob Ihr e-Mail-und Domänenbesitz einen nicht verwalteten Mandanten in Microsoft 365 übernimmt.
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399446"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022157"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Ausführen einer internen Übernahme durch den Administrator
 
@@ -64,7 +64,7 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
 4. Nachdem Sie den TXT-Eintrag zur Registrierungsstelle hinzugefügt haben, kehren Sie zum Assistenten zurück, und wählen Sie **OK, ich habe den Eintrag hinzugefügt**.
     
 > [!NOTE]
-> Die Übernahme des Shadow-Mandanten wirkt sich nicht auf vorhandene Informationen oder Dienste aus. Wenn sich jedoch Benutzer in der Domäne für Dienste angemeldet haben, für die eine Lizenz erforderlich ist, werden Sie aufgefordert, Lizenzen für Sie im Rahmen der Übernahme der Administratorrolle zu erwerben. Sie können Lizenzen hinzufügen oder entfernen, sobald der Administrator-Setup-Vorgang abgeschlossen ist. 
+> Die Übernahme des Shadow-Mandanten wirkt sich nicht auf vorhandene Informationen oder Dienste aus. Wenn sich jedoch Benutzer in der Domäne für Dienste angemeldet haben, für die eine Lizenz erforderlich ist, werden Sie aufgefordert, Lizenzen für Sie im Rahmen der Übernahme der Administratorrolle zu erwerben. Sie können Lizenzen kaufen oder entfernen, nachdem der Administrator Einrichtungsprozess abgeschlossen ist.
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

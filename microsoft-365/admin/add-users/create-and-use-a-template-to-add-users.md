@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können eine Vorlage erstellen und verwenden, um Zeit zu sparen und Einstellungen zu standardisieren, wenn Sie mehrere Benutzer hinzufügen.
-ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431809"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022145"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Erstellen und Verwenden einer Vorlage, um Benutzer hinzuzufügen
 
@@ -89,7 +89,7 @@ Vorlagen, die Sie nicht mehr benötigen, können Sie ganz einfach löschen und n
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Hinzufügen von Benutzern einzeln oder in Massen zu Microsoft 365](add-users.md)
+[Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen](add-users.md)
 
 [Entfernen eines ehemaligen Mitarbeiters aus Microsoft 365](remove-former-employee.md)
   

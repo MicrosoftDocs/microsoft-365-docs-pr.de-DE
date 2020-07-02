@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Hier erfahren Sie, wie Sie das Endergebnis und den Compliance-Manager verwenden, um Ihr Schutzniveau für personenbezogene Daten zu verbessern.
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695173"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016367"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Verwenden von Kompatibilitätsbewertung und Compliance-Manager zum Verwalten von Verbesserungs Aktionen
 
@@ -107,9 +107,9 @@ Sie können auch eine neue, für Ihre Organisation angepasste Vorlage basierend 
 >Wenn Sie sich mit einer großen Anzahl von Verordnungen oder überlappenden Verbesserungs Aktionen beschäftigen, sollten Sie die jeweiligen Vorlagen herunterladen und die Datensätze kombinieren, Verbesserungs Aktionen oder Steuerelementtypen entfernen, die für Ihre Organisation nicht gelten, und erneutes hochladen. Dies ist möglicherweise einfacher als das Navigieren in jedem Abschnitt mit Steuerelementinformationen und das Markieren der einzelnen Bereiche als außerhalb des Bereichs.
 >
 
-## <a name="compliance-score"></a>Compliancebewertung
+## <a name="compliance-score"></a>Compliance-Bewertung
 
-Nachdem die Bewertungen und Überprüfungs Spezifikationen im Compliance-Manager ausgeführt wurden, können Sie nun zum [Kompatibilitäts Bewertungs](../compliance/working-with-compliance-score.md) Tool wechseln und das Ergebnis und das Slice überprüfen und die Daten weiter würfeln, einschließlich nach Kontrollbereich.
+Nachdem die Bewertungen und Überprüfungs Spezifikationen im Compliance-Manager ausgeführt wurden, können Sie nun zum [Kompatibilitäts Bewertungs](../compliance/compliance-score.md) Tool wechseln und das Ergebnis und das Slice überprüfen und die Daten weiter würfeln, einschließlich nach Kontrollbereich.
 
 Das Kompatibilitäts Bewertungstool im Microsoft 365 Compliance Admin Center bietet verschiedene Ansätze zum Überprüfen und Filtern von Kompatibilitätsdaten, die vom Compliance-Manager und verschiedenen Microsoft 365-Diensten abgerufen wurden. Dieses Tool wird automatisch aktualisiert, wenn verschiedene Konfigurationseinstellungen implementiert werden, und teilt Signale mit der Microsoft Secure Score, sodass viele Verbesserungs Aktionen in beiden Partituren angezeigt werden. 
  
@@ -141,7 +141,7 @@ Hier sind einige wichtige Tipps für die Verwendung von Compliance-Score und Com
 
 - Jede Datenschutzverordnung verfügt über eine Kombination aus technischen Kontrollen, Dokumentations Spezifikationen sowie Betriebs-, Prozess-und Berichtsanforderungen. Alle diese werden in den Verbesserungs Aktionen angezeigt. 
 
-- Dieser Artikel konzentriert sich auf eine Teilmenge der technischen Steuerelemente, die für den Datenschutz im Compliance-Manager und das Kompatibilitäts Ergebnis angegeben sind. Weitere Informationen zu nicht technischen administrativen Steuerelementen finden Sie im Compliance-Manager-Tool und in der [Dokumentation](../compliance/working-with-compliance-score.md) .
+- Dieser Artikel konzentriert sich auf eine Teilmenge der technischen Steuerelemente, die für den Datenschutz im Compliance-Manager und das Kompatibilitäts Ergebnis angegeben sind. Weitere Informationen zu nicht technischen administrativen Steuerelementen finden Sie im Compliance-Manager-Tool und in der [Dokumentation](../compliance/compliance-score.md) .
 
 - Wenn Sie die Ansicht von Verbesserungs Aktionen auf Ihren Interessenbereich konzentrieren möchten, können Sie auf der Registerkarte **Lösungen** im Administrator der Kompatibilitätsbewertung nach Aktionstyp filtern.
 

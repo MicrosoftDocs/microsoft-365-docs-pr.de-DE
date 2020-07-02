@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Hinzufügen von neuen Mitarbeitern zu Microsoft 365 for Business für e-Mail-, Skype-und Office-Apps.
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780673"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022133"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Hinzufügen eines neuen Mitarbeiters zu Microsoft 365
 
@@ -50,7 +50,7 @@ Hier finden Sie eine kurze Übersicht:
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>Schritt 1: Erstellen eines Microsoft 365-Kontos für den Mitarbeiter
 
 
-Anweisungen finden Sie unter [Hinzufügen von Benutzern einzeln oder in Massen zur Microsoft 365-Administratorhilfe](add-users.md). Wenn Sie Ihren neuen Mitarbeiter einrichten, können Sie angeben, dass Anmeldedetails an das persönliche Konto des Mitarbeiters gesendet werden sollen. Auf diese Weise erhalten Sie eine e-Mail vom Microsoft Online Service-Team, in der Sie erfahren, wie Sie sich bei Microsoft 365 anmelden.
+Anweisungen finden Sie unter [Hinzufügen von Benutzern und Zuweisen von Lizenzen gleichzeitig](add-users.md). Wenn Sie Ihren neuen Mitarbeiter einrichten, können Sie angeben, dass Anmeldedetails an das persönliche Konto des Mitarbeiters gesendet werden sollen. Auf diese Weise erhalten Sie eine e-Mail vom Microsoft Online Service-Team, in der Sie erfahren, wie Sie sich bei Microsoft 365 anmelden.
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Schritt 2: Geben Sie dem Mitarbeiter die Benutzer-ID und das Kennwort
 
@@ -85,12 +85,8 @@ Hier finden Sie eine Kurzübersicht, die Ihnen bei der ersten Schritte hilft:
 |Schließen Sie die OneDrive für Unternehmen Schulung ab, um zu erfahren, wie Sie Ihre Dokumente, Präsentationen und Tabellenkalkulationen in der Cloud speichern und organisieren können.  <br/> |Halten Sie Ihre geschäftsbezogenen Dokumente in der Cloud mithilfe von OneDrive für Unternehmen. Sie können Ihre Inhalte jederzeit abrufen, selbst wenn Sie bei Microsoft 365 auf einem anderen Computer angemeldet sind. [Sehen Sie sich ein Video an, in dem Sie erfahren, wie Sie Ihre OneDrive für Unternehmen](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Schulung:** [OneDrive für Unternehmen Training](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Select OneDrive für Unternehmen).  <br/> |
 |Schließen Sie die SharePoint Online Schulung ab, damit Sie mit Kollegen zusammenarbeiten und Inhalte freigeben können.  <br/> |Der beste Ort zum Aufbewahren von Dokumenten, auf die Ihre Mitarbeiter auch zugreifen können, ist SharePoint Online.  <br/> <br/>**Schulung:** [Video: Zusammenarbeit mit Team Inhalten mit SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Finden Sie heraus:** Wie wird Ihre Organisation mit SharePoint Online und welche Art von Dokumenten dort gespeichert werden? Außerdem werden die Dokumente in OneDrive für Unternehmen gespeichert.  <br/> |
 
-   
 ## <a name="related-articles"></a>Verwandte Artikel
-
 
 [Entfernen eines ehemaligen Mitarbeiters aus Microsoft 365](remove-former-employee.md)
   
-[Hinzufügen von Benutzern einzeln oder in Massen zu Microsoft 365](add-users.md)
-  
-
+[Hinzufügen von Benutzern und Zuweisen von Lizenzen zur gleichen time65](add-users.md)

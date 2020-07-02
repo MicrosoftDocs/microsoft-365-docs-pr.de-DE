@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780707"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015993"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -94,11 +94,11 @@ In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com]
 - **Was ist neu in Microsoft 365 Video Series**: diesen Monat decken wir die neue Supporterfahrung in den Teams admin und Security and Compliance Center, Planner Integration in das Nachrichten Center und das neue 3X3-Video Layout in Microsoft Teams ab. [Neuerungen in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 - Die Seite [Microsoft 365 Admin Center Help](https://docs.microsoft.com/microsoft-365/admin/) Hub wurde aktualisiert, um Ihnen zu helfen, schneller zu finden, was Sie benötigen. Wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>InTune-Rollenverwaltung
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es geschafft! Wir haben den zweiten Schritt hin zu einer einheitlichen Rollen Erfahrung unternommen, und Sie können jetzt InTune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features wie die Suche nach Rollen und das Anzeigen von Rollen Berechtigungen nutzen. Dies bedeutet, dass Sie nicht zwei separate Tools zum Verwalten von Rollen für Microsoft 365 und InTune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, sehen Sie, dass auf der Seite "Rollen" zwei Pivots vorhanden sind: eine für Azure AD und eine für InTune.
 
@@ -349,7 +349,7 @@ Es wurden viele Änderungen für Rollen im Admin Center vorgenommen, seit wir im
 
 - **Favoriten** – Sie können Ihren bevorzugten oder am häufigsten verwendeten Rollen einen Stern hinzufügen, damit Sie diese leicht finden können, indem Sie die Spalte sortieren oder einen Filter erstellen.
 - **Aktive Benutzer**  >  **Rollen verwalten** – diese wurde so aktualisiert, dass Sie mit den Änderungen in den Rollen übereinstimmt. Wie bei der Rollenliste haben wir die Standardliste der Rollen auf den nützlichsten Bereich beschränkt, aber Sie können alle Rollen anzeigen, indem Sie **Alle anzeigen nach Kategorie**erweitern.
-- **Globale Leserrolle** -Sie haben ihn gefragt. Du hast es! Die [globale Leser](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) Rolle!
+- **Globale Leserrolle** -Sie haben ihn gefragt. Du hast es! Die [globale Leser](add-users/about-admin-roles.md) Rolle!
 
 ### <a name="report-an-issue"></a>Melden eines Problems
 

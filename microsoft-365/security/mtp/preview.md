@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689266"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005890"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -60,7 +60,5 @@ Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügba
 - **[Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)** – erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
 
 - **[Go Hunt](advanced-hunting-go-hunt.md)** – schnell von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter [Erweiterter Jagd](advanced-hunting-overview.md) Funktionen pivotieren.
-
-- **[EmailPostDeliveryEvents-Tabelle](advanced-hunting-emailpostdeliveryevents-table.md)** – verwenden Sie diese Tabelle, um [Erweiterte Jagd](advanced-hunting-overview.md) Abfragen zu erstellen, die nach der Zustellung an Empfängerpostfächer nach Aktionen suchen, die auf e-Mails durchgeführt wurden.
 
 - **[Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md)** – verwenden Sie in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um umfassende Dateiinformationen zu integrieren.
