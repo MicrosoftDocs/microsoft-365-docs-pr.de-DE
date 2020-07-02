@@ -465,6 +465,8 @@
             - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
             - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
+            - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
                 - name: Nachrichtenfluss-Bericht

@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md
     - name: Technische Details zur Verschlüsselung in Office 365
       href: technical-reference-details-about-encryption.md
+    - name: TLS 1.0- und 1.1-Einstellungen für Office 365
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: Kundenschlüssel
       items:
         - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
@@ -249,10 +251,14 @@
       items:
         - name: Übersicht über das Archivieren von Drittanbieterdaten
           href: archiving-third-party-data.md
+        - name: Archivieren von Bloomberg-Nachrichtendaten (Vorschau)
+          href: archive-bloomberg-message-data.md
         - name: Archivieren von Facebook-Daten (Vorschau)
           href: archive-facebook-data-with-sample-connector.md
         - name: Importieren von HR-Daten (Vorschau)
           href: import-hr-data.md
+        - name: Archivieren von ICE Chat-Daten (Vorschau)
+          href: archive-icechat-data.md
         - name: Archivieren von Instant Bloomberg-Daten
           href: archive-instant-bloomberg-data.md
         - name: Archivieren von LinkedIn-Daten
