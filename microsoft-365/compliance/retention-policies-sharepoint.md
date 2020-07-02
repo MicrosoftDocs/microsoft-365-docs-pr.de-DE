@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien, die für SharePoint und OneDrive gelten
-ms.openlocfilehash: cae0016f705757341934d1ad7e6eec331e81642c
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869867"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016246"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive
 
@@ -82,7 +82,7 @@ Eine Aufbewahrungsrichtlinie behält alle Versionen eines Dokuments in einer Sha
 > [!NOTE]
 > Aufbewahrte Versionen von SharePoint- und OneDrive-Dokumenten lassen sich nicht mithilfe von eDiscovery-Tools durchsuchen.
 
-### <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
+## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
 **SharePoint**:
 
