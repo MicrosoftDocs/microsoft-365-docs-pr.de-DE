@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Office 365.'
-ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717346"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024775"
 ---
 # <a name="service-encryption"></a>Dienst Verschlüsselung
 
 Zusätzlich zur Verschlüsselung auf Volumen Ebene verwenden Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen auch die Dienst Verschlüsselung zum Verschlüsseln von Kundendaten. Die Dienst Verschlüsselung ermöglicht zwei wichtige Verwaltungsoptionen:
 
-## <a name="microsoft-managed-keys"></a>Von Microsoft verwaltete Schlüssel: 
+## <a name="microsoft-managed-keys"></a>Verwaltete Schlüssel von Microsoft
 Microsoft verwaltet alle kryptografischen Schlüssel einschließlich der Stammschlüssel für die Dienst Verschlüsselung. Diese Option ist derzeit in SharePoint Online und OneDrive für Unternehmen verfügbar. Diese Option wird derzeit für Exchange Online eingeführt. Microsoft-verwaltete Schlüssel bieten standardmäßige Dienst Verschlüsselung, es sei denn, Sie möchten mit dem Kundenschlüssel an Bord wählen. Wenn Sie zu einem späteren Zeitpunkt beschließen, die Verwendung des Kunden Schlüssels zu beenden, ohne den Pfad der Datenbereinigung zu befolgen, bleiben Ihre Daten mit den verwalteten Microsoft-Schlüsseln verschlüsselt. Ihre Daten werden immer mindestens auf dieser Standardstufe verschlüsselt. 
 
-## <a name="customer-key"></a>Kundenschlüssel: 
+## <a name="customer-key"></a>Kundenschlüssel
 Sie geben die mit der Dienst Verschlüsselung verwendeten Stammschlüssel an und verwalten diese Schlüssel mithilfe von Azure Key Vault. Microsoft verwaltet alle anderen Schlüssel. Diese Option wird als Kundenschlüssel bezeichnet und steht derzeit für Exchange Online, SharePoint Online und OneDrive für Unternehmen zur Verfügung. (Zuvor als erweiterte Verschlüsselung mit BYOK bezeichnet. Weitere Informationen finden Sie unter [Enhancing transparency and Control for Office 365 Customers](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the Original Announcement.)
 
 Die Dienst Verschlüsselung bietet mehrere Vorteile. Beispiel: Kundenschlüssel:

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie SharePoint Online Viren in Dateien erkennt, die von Benutzern hochgeladen werden, und verhindert, dass Benutzer die Dateien herunterladen oder synchronisieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a47f52a30f90d7a19cc01dc9e14eb9b534ec244
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
+ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034950"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45029608"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Virenerkennung in SharePoint Online
 
@@ -62,4 +62,10 @@ Folgendes geschieht:
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Was geschieht, wenn der OneDrive-synchronisierungsclient versucht, eine infizierte Datei zu synchronisieren?
 
-Unabhängig davon, ob Benutzer Dateien mit dem neuen OneDrive-synchronisierungsclient (OneDrive. exe) oder dem vorherigen OneDrive für Unternehmen synchronisierungsclient (Groove. exe) synchronisieren, wenn eine Datei einen Virus enthält, wird Sie vom synchronisierungsclient nicht heruntergeladen. Auf dem synchronisierungsclient wird eine Benachrichtigung angezeigt, dass die Datei nicht synchronisiert werden kann.
+Unabhängig davon, ob Benutzer Dateien mit dem neuen OneDrive-synchronisierungsclient (OneDrive.exe) oder dem vorherigen OneDrive für Unternehmen-synchronisierungsclient (Groove.exe) synchronisieren, wenn eine Datei einen Virus enthält, wird Sie vom synchronisierungsclient nicht heruntergeladen. Auf dem synchronisierungsclient wird eine Benachrichtigung angezeigt, dass die Datei nicht synchronisiert werden kann.
+
+## <a name="more-information"></a>Weitere Informationen
+
+Weitere Informationen zum Konfigurieren von SharePoint Online Antivirus finden Sie unter [Protect Against Threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements) und [Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) .
+
+

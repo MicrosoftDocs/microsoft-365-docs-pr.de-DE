@@ -17,55 +17,54 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie das integrierte Depot Verwaltungstool in Advanced eDiscovery verwenden, um Ihre Workflows zu koordinieren und relevante Datenquellen in einem Fall zu identifizieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5b64bb288e94c345cc373b0d800bc0349895f7d3
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818612"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024707"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
 Verwenden Sie das integrierte Depot Verwaltungstool in Advanced eDiscovery, um Ihre Workflows rund um das Verwalten von Depotbanken zu koordinieren und relevante, Freiheits geschützte Datenquellen zu identifizieren, die einem Fall zugeordnet sind. Wenn Sie eine Depotbank hinzufügen, kann das System das Exchange-Postfach und das OneDrive für Unternehmen Konto automatisch identifizieren und aufbewahren. Während des Ermittlungsprozesses ihrer Untersuchung können Sie auch zusätzliche Datenquellen (wie Postfächer, Websites oder Teams) identifizieren, auf die eine Depotbank zugegriffen oder dazu beigetragen hat. In diesem Fall können Sie das Depot Verwaltungstool verwenden, um diese Datenquellen einer bestimmten Depotbank zuzuordnen. Nachdem Sie einem Fall Verwalter hinzugefügt und ihm eine andere Datenquelle zugeordnet haben, können Sie schnell Daten aufbewahren und die Freiheits Schutz-Daten durchsuchen.
 
-Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fällen hinzuzufügen und zu verwalten. 
+Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fällen hinzuzufügen und zu verwalten.
 
-![Registerkarte "Depotverwaltung"](../media/CustodianMgtPage.png)
+![Registerkarte "Quellen" im erweiterten eDiscovery-Fall](../media/AeD-Sources-Tab.png)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen
 
 Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein. Auf diese Weise erhalten Sie die erforderlichen Berechtigungen zum Hinzufügen von Bewahrern zu einem Fall und zum Aufbewahren der Datenquellen für den Freiheitsentzug.
-
 
 ## <a name="step-1-add-potential-custodians"></a>Schritt 1: Hinzufügen potenzieller depotverwalter
 
 Der erste Schritt besteht darin, die Verwalter für den Fall zu identifizieren und hinzuzufügen.
 
 1. Klicken Sie auf der Seite für die **Erweiterte eDiscovery** -Homepage auf den Fall, dem Sie Verwalter hinzufügen möchten. 
- 
-2. Klicken Sie auf die Registerkarte **depotverwalter** , und klicken Sie dann auf **depotverwalter hinzufügen**.
+
+2. Klicken Sie auf die Registerkarte **Quellen** , und klicken Sie dann auf **Verwalter hinzufügen**.
 
 3. Hier finden Sie die Verwalter, die dem Fall hinzugefügt werden sollen. Geben Sie den ersten Teil des Namens einer Person ein, um Benutzer aus der Azure-Active Directory Ihrer Organisation anzuzeigen. Wenn Sie die richtige Person gefunden haben, klicken Sie auf Ihren Namen, um Sie der Liste hinzuzufügen.
 
    ![Ermitteln potenzieller depotverwalter](../media/AddCustodianStep1.png)
- 
+
 4. Nachdem Sie alle relevanten Verwalter hinzugefügt haben, klicken Sie auf **weiter** , um die primären Datenquellen der Depotbank auszuwählen.
   
 ## <a name="step-2-select-custodian-data-sources"></a>Schritt 2: Auswählen von Depotdaten Quellen
 
 Nach dem Hinzufügen von Depotbanken hilft Ihnen das depotverwalter-Tool dabei, die primären Datenquellen zu identifizieren, die im Besitz jeder Depotbank sind. Diese Datenspeicherorte sind das Exchange-Postfach des Depotbank und das OneDrive-Konto. 
 
-So identifizieren Sie Depotbank-Datenquellen: 
+So identifizieren Sie Depotbank-Datenquellen:
 
 1. Wenn Sie das Exchange-Postfach für alle Verwalter auswählen möchten, aktivieren Sie das Kontrollkästchen **Exchange** oben in der Spalte. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, um ein Postfach als Speicherort für die Freiheitsentzug zu entfernen. Alternativ können Sie das Kontrollkästchen **Exchange** oben in der Spalte deaktivieren und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
- 
+
    ![Auswählen von Datenquellen für sorgeberechtigte](../media/AddCustodianStep2.png)
- 
+
 2. Wiederholen Sie die gleiche Sache für die OneDrive-Konten der Verwalter. 
 
     Nachdem Sie die Depotbank-Datenquellen ausgewählt haben, versucht das System automatisch, diese Datenquellen zu identifizieren und zu überprüfen, und fügt Sie dann dem Fall als Datenquellen hinzu, die den Depotbanken zugeordnet sind.
- 
-4. Klicken Sie auf **weiter** , um mit dem Zuordnen zusätzlicher Datenquellen zu den Depotstellen in dem Fall zu beginnen.
+
+3. Klicken Sie auf **weiter** , um mit dem Zuordnen zusätzlicher Datenquellen zu den Depotstellen in dem Fall zu beginnen.
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Schritt 3: Zuordnen zusätzlicher Datenquellen zu einer Depotstelle
 
@@ -101,8 +100,8 @@ Nachdem Sie die Verwalter und Datenquellen abgeschlossen haben, die dem Fall hin
 
 So platzieren Sie die Depotstellen und Datenquellen in der Warteschleife:
 
-1. Aktivieren Sie auf der Seite **Aufbewahrungsplatz auf der ausgewählten Depotstelle** das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter in den Haltebereich zu versetzen. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
- 
+1. Aktivieren Sie auf der Seite **Aufbewahrungsplatz auf der ausgewählten Depotstelle** das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter in den Haltebereich zu versetzen. Sie können dann das Kontrollkästchen für eine bestimmte Depotbank deaktivieren, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren.
+
    ![Platz hält](../media/AddCustodianStep5.PNG)
 
 2. Überprüfen Sie die Aufbewahrungsoptionen, und klicken Sie dann auf **Fertig**stellen.
@@ -114,4 +113,3 @@ Nachdem eine Depotbank in den Wartebereich versetzt wurde, wird automatisch eine
 1. Klicken Sie auf der **Start** Seite der Anfrage auf die Registerkarte halte **Status** , und klicken Sie dann auf **CustodianHold-GUID**,  
 
 2. Klicken Sie auf der Flyout-Seite auf **Speichern Bearbeiten** , um alle Depotdaten Quellen anzuzeigen, die in der Warteschleife gespeichert werden.
-

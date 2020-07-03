@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347854"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024725"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
@@ -113,8 +113,8 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, d
 
 5. Behalten Sie auf der Registerkarte **Speicherorte** die Standardeinstellung alle Speicherorte bei, oder wählen Sie die Option **bestimmte Speicherorte**auswählen aus, und klicken Sie dann auf **weiter**.<br/>Wenn Sie bestimmte Standorte ausgewählt haben, wählen Sie diese für ihre DLP-Richtlinie aus, und klicken Sie dann auf **weiter**.<br/>![DLP-Richtlinienspeicher Orte](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > Wenn Sie sicherstellen möchten, dass Dokumente, die vertrauliche Informationen enthalten, nicht ungeeignet freigegeben werden, stellen Sie sicher, dass **SharePoint-Websites** und **OneDrive-Konten** zusammen mit Microsoft **Teams-Chat und Kanal Nachrichten**aktiviert sind.
-    > Kanäle in Microsoft Teams hängen stark von Exchange Online Funktionalität ab. Stellen Sie sicher, dass der **Exchange-e-Mail-** Speicherort auch für die Richtlinien aktiviert ist, die auf den Inhalt der Kanäle angewendet werden sollen.  
+    > Wenn Sie sicherstellen möchten, dass Dokumente, die vertrauliche Informationen enthalten, in Microsoft Teams nicht ungeeignet freigegeben werden, stellen Sie sicher, dass **SharePoint-Websites** und **OneDrive-Konten** zusammen mit **teamchats und Kanal Nachrichten**aktiviert sind.
+
 <br/>
 
 6. Behalten Sie auf der Registerkarte **Richtlinieneinstellungen** unter **Anpassen des Inhaltstyps, den Sie schützen möchten**, die standardmäßigen einfachen Einstellungen bei, oder wählen Sie **Erweiterte Einstellungen verwenden**aus, und klicken Sie dann auf **weiter**. Wenn Sie erweiterte Einstellungen auswählen, können Sie Regeln für Ihre Richtlinie erstellen oder bearbeiten. (Informationen dazu finden Sie unter [einfache Einstellungen im Vergleich zu erweiterten Einstellungen](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)

@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817544"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024695"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -161,7 +161,7 @@ Zusätzlich zum Definieren von Segmenten mit "gleich" oder "ungleich" können Si
 |---------|---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>In diesem Beispiel haben wir ein Segment namens *LocalFTE* definiert, das Personen enthält, die lokal gespeichert sind und deren Positionen nicht als *temporär*aufgeführt werden.    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In diesem Beispiel haben wir ein Segment namens *Segment1* definiert, das Personen enthält, die Mitglied von group1@contoso.com und nicht Mitglieder von Group3@contoso.com sind.
-|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In diesem Beispiel haben wir ein Segment namens *Segment2* definiert, das Personen enthält, die Mitglied von group2@contoso.com und nicht Mitglieder von Group3@contoso.com sind.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In diesem Beispiel haben wir ein Segment namens *Segment2* definiert, das Personen enthält, die Mitglied von group2@contoso.com und nicht Mitglieder von Group3@contoso.com sind.
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In diesem Beispiel haben wir ein Segment namens *Segment1and2* definiert, das Personen Mitglieder von group1@contoso.com und group2@contoso.com und nicht Mitglieder von Group3@contoso.com enthält.
 
 
@@ -276,7 +276,7 @@ Ressourcen stehen zur Verfügung, um Sie bei der Verwaltung ihrer Informations B
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Beispiel: Abteilungen, Segmente und Richtlinien von Contoso
 
-Wenn Sie sehen möchten, wie eine Organisation sich an der Definition von Segmenten und Richtlinien orientiert, sehen Sie sich das folgende Beispiel an.
+Wenn Sie sehen möchten, wie eine Organisation bei der Definition von Segmenten und Richtlinien vorgehen könnte, sehen Sie sich das folgende Beispiel an.
 
 ### <a name="contosos-departments-and-plan"></a>Die Abteilungen und der Plan von Contoso
 
@@ -290,9 +290,9 @@ Contoso verfügt über fünf Abteilungen: Personal, Vertrieb, Marketing, Forschu
 |Forschung     |HR, Marketing, Produktion        |Vertrieb     |
 |Fertigung |HR, Marketing |Andere Personen als HR oder Marketing |
 
-Zu diesem Zweck umfasst der Plan von Contoso drei Richtlinien für Informationsbarrieren:
+Vor diesem Hintergrund umfasst der Plan von Contoso drei Richtlinien für Informationsbarrieren:
 
-1. Eine Richtlinie, die verhindert, dass der Vertrieb mit der Forschung kommuniziert (und eine andere Richtlinie, um zu verhindern, dass die Forschung mit dem Vertrieb kommuniziert)
+1. Eine Richtlinie, die verhindert, dass der Bereich Vertrieb Kommunikation an den Bereich Forschung richtet (und eine andere Richtlinie, die verhindert, dass der Bereich Forschung Kommunikation an den Bereich Vertrieb richtet)
 2. Eine Richtlinie, anhand der die Fertigung nur mit Personal und Marketing kommunizieren kann 
 
 Es ist nicht erforderlich, Richtlinien für HR oder Marketing zu definieren.
@@ -317,8 +317,8 @@ Contoso definiert drei Richtlinien, wie in der folgenden Tabelle beschrieben:
 
 |Richtlinie  |Richtliniendefinition  |
 |---------|---------|
-|Richtlinie 1: Unterbindung der Kommunikation zwischen Vertrieb und Forschung     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Vertrieb-Forschung*. Wenn diese Richtlinie aktiv und angewendet ist, verhindert sie, dass Benutzer im Segment Vertrieb mit Benutzern im Segment Forschung kommunizieren können. Dies ist eine einseitige Richtlinie. Damit wird nicht verhindert, dass die Forschung mit dem Vertrieb kommuniziert. In diesem Fall ist Richtlinie 2 erforderlich.      |
-|Richtlinie 2: Unterbindung der Kommunikation zwischen Vertrieb und Forschung     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Forschung-Vertrieb*. Wenn diese Richtlinie aktiv und angewendet ist, kann sie dabei helfen, dass Benutzer im Segment Forschung mit Benutzern im Segment Vertrieb kommunizieren können.       |
+|Richtlinie 1: Unterbindung der Kommunikation von der Abteilung Vertrieb zur Abteilung Forschung     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Vertrieb-Forschung*. Wenn diese Richtlinie aktiv und angewendet ist, verhindert sie, dass Benutzer im Segment Vertrieb Kommunikation an Benutzer im Segment Forschung richten können. Dies ist eine einseitige Richtlinie. Damit wird nicht verhindert, dass die Forschung Kommunikation an den Vertrieb richtet. Für diesen Fall ist Richtlinie 2 erforderlich.      |
+|Richtlinie 2: Unterbindung der Kommunikation von der Abteilung Forschung zur Abteilung Vertrieb     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In diesem Beispiel heißt die Richtlinie zur Informationsbarriere *Forschung-Vertrieb*. Wenn diese Richtlinie aktiv und angewendet ist, verhindert sie, dass Benutzer im Segment Forschung Kommunikation an Benutzer im Segment Vertrieb richten können.       |
 |Richtlinie 3: zulassen, dass die Fertigung nur mit HR und Marketing kommuniziert     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>In diesem Fall wird die Richtlinie zur Informationsbarriere als *Fertigung-PersonalMarketing* bezeichnet. Wenn diese Richtlinie aktiv und angewendet ist, kann die Fertigung nur mit Personal und Marketing kommunizieren. Beachten Sie, dass Personal und Marketing uneingeschränkt mit anderen Segmenten kommunizieren können. |
 
 Wenn Segmente und Richtlinien definiert sind, wendet Contoso die Richtlinien durch Ausführen des Cmdlets **Start-InformationBarrierPoliciesApplication** an. 

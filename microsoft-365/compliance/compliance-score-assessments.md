@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Design Customization Microsoft-Konformitätsbewertung durch Erstellen von Bewertungen, die Ihnen bei der Verwaltung der Compliance für Ihre Organisation helfen.
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023308"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035630"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>Anpassen der Konformitätsbewertung (Vorschau) mit Bewertungen
 
@@ -35,7 +35,7 @@ Alle Ihre Bewertungen werden auf der Seite "Bewertungen" aufgeführt. [Erfahren 
 
 ## <a name="data-protection-baseline-default-assessment"></a>Standardbewertung der Datenschutz Basis
 
-Um Ihnen den Einstieg zu erleichtern, bietet Microsoft eine **Standard** Bewertung in Compliance Score für Sie an, die die Microsoft 365-Datenschutz Basislinie enthält. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
+Um Ihnen den Einstieg zu erleichtern, bietet Microsoft eine **Standard** Bewertung in Compliance Score an, die die Microsoft 365-Datenschutz Basislinie enthält. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
 
 Diese Bewertung wird verwendet, um ihre anfängliche Bewertung zu berechnen, wenn Sie das erste Mal zur Kompatibilitätsbewertung kommen, bevor Sie andere Bewertungen konfigurieren. Das Kompatibilitäts Ergebnis sammelt erste Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Verhältnis zu wichtigen Datenschutzstandards und-Vorschriften arbeitet, und wie Sie die vorgeschlagenen Verbesserungsmaßnahmen durchführen.
 
@@ -46,7 +46,7 @@ Da jede Organisation spezifische Anforderungen hat, beruht Compliance Score dara
 Es gibt drei Möglichkeiten zum Einrichten von Bewertungen:
 
 1. Wählen Sie eine Ready to use-Bewertung aus.
-2. Ändern Sie die Vorlage einer Bewertung entsprechend ihren eigenen Anforderungen.
+2. Ändern Sie die [Vorlage einer Bewertung](compliance-score-templates.md) entsprechend ihren eigenen Anforderungen.
 3. Erstellen Sie Ihre eigene benutzerdefinierte Bewertung.
 
 Benutzer müssen eine Rolle des globalen Administrators, des Compliance-Administrators, des Compliance-Daten Administrators oder des Sicherheitsadministrators innehaben, um Bewertungen zu erstellen oder zu ändern. Erfahren Sie mehr über [Rollen und Berechtigungen](compliance-score-setup.md#set-user-permissions-and-assign-roles).

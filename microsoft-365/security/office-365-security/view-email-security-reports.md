@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937049"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035796"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -32,6 +32,9 @@ Im [Security & Compliance Center](https://protection.office.com) stehen eine Vie
 ![Berichts Dashboard im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>Bericht über kompromittierte Benutzer
+
+> [!NOTE]
+> Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Es ist nicht in eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügbar.
 
 Der Bericht " **kompromittierte Benutzer** " zeigt die Anzahl der Benutzerkonten an, die in den letzten 7 Tagen als **verdächtig** oder **eingeschränkt** gekennzeichnet wurden. Konten in einem dieser Zustände sind problematisch oder sogar gefährdet. Bei häufiger Verwendung können Sie mit dem Bericht Spitzen und sogar Trends in verdächtigen oder eingeschränkten Konten erkennen. Weitere Informationen zu kompromittierten Benutzern finden Sie unter [reagieren auf ein kompromittiertes e-Mail-Konto](responding-to-a-compromised-email-account.md).
 
@@ -176,7 +179,7 @@ Die aggregierte Ansicht ermöglicht eine Filterung von 90 Tagen, während die De
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Spam Erkennung**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=SpamDetections> .
 
-![Spam Erkennungs Widget im Dashboard "Berichte"](../../media/spam-detections-widget.png)
+![Spam Erkennungs Widget im Dashboard "Berichte"](../../media/spam-detections-report-widget.png)
 
 Weitere Informationen zum Antispamschutz finden Sie unter [Anti-Spam Protection in EoP](anti-spam-protection.md).
 
@@ -193,12 +196,14 @@ Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
   Wenn Sie auf einen Tag (Datenpunkt) im Diagramm zeigen, können Sie sehen, wie viele Elemente an diesem Tag blockiert wurden, und wie diese Elemente kategorisiert werden.
 
-  ![Aktionsansicht in der Berichtsansicht im Spam Erkennungs Bericht](../../media/spam-detections-report-action-view.png)
+  ![Aktionsansicht im Spam Erkennungs Bericht](../../media/spam-detections-report-action-view.png)
 
 - **Aufschlüsseln nach: Direction**: die folgenden Anweisungen werden angezeigt:
 
   - **Eingehende**
   - **Ausgehende**
+
+  ![Richtungs Ansicht in im Spam Erkennungs Bericht](../../media/spam-detections-report-direction-view.png)
 
 Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -266,7 +271,7 @@ Hierbei handelt es sich um einen intelligenten Bericht mit bösartigen e-Mails, 
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
 
-![Threat Protection-Statusbericht](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![Widget "Threat Protection Status" im Dashboard "Berichte"](../../media/threat-protection-status-report-widget.png)
 
 Standardmäßig zeigt das Diagrammdaten für die letzten 7 Tage an. Wenn Sie auf **Filter**klicken, können Sie einen Datumsbereich von 90 Tag auswählen (Testabonnements sind möglicherweise auf 30 Tage eingeschränkt). Die Tabellenansicht Details ermöglicht das Filtern für 30 Tage.
 
@@ -280,45 +285,55 @@ Die folgenden Ansichten sind verfügbar:
   - **Phishing per e-Mail**
   - **Inhalts-Schadsoftware**
 
-- **Anzeigen von Daten nach: Inhalt \> Schadsoftware**: die folgenden Informationen werden angezeigt:
+  ![Übersichtsansicht im Statusbericht über den Bedrohungsschutz](../../media/threat-protection-status-report-overview-view.png)
+
+- **Anzeigen von Daten nach: Inhalt \> Schadsoftware**<sup>1</sup>: die folgenden Informationen werden für Office 365 ATP-Organisationen angezeigt:
 
   - **Anti-Malware-Modul**
   - **Datei Explosion**
 
+  ![Ansicht "Inhalts-Malware" im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-content-malware-view.png)
+
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail \> Phishing**: die folgenden Informationen werden angezeigt:
 
-  - **Von ATP generierte URL-Reputation**<sup>\*</sup>
-  - **Erweiterter Phish-Filter**<sup>\*</sup>
+  - **ATP-generierte URL-Reputation**<sup>1</sup>
+  - **Erweiterter Phish-Filter**
   - **Fälschungsschutz: DMARC-Fehler**
   - **Anti-Spoofing: Intra-org**
   - **Anti-Spoofing: externe Domäne**
-  - **Marken Identitätswechsel**<sup>\*</sup>
-  - **Domänen Identitätswechsel**<sup>\*</sup>
+  - **Marken Identitätswechsel**
+  - **Domänen Identitätswechsel**<sup>1</sup>
   - **EoP-URL-Reputation**
   - **Allgemeiner Phish-Filter**
   - **Sonstige**
-  - **Phishing-zap**<sup>\*\*</sup>
-  - **URL-Detonation**<sup>\*\*</sup>
-  - **Benutzeridentitätswechsel**<sup>\*</sup>
+  - **Phishing-zap**<sup>2</sup>
+  - **URL Detonation**<sup>1</sup>
+  - **Benutzeridentitätswechsel**<sup>1</sup>
+
+  ![Erkennungstechnologie-Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Aufschlüsseln nach: Erkennungstechnologie** und **Anzeigen von Daten nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
-  - **Von der ATP generierte dateireputation**<sup>\*\*</sup>
-  - **Anti-Malware-Modul**
+  - **ATP-generierte dateireputation**<sup>1</sup>
+  - **Anti-Malware-Modul**<sup>1</sup>
   - **Anti-Malware-Richtlinien Dateityp-Block**
-  - **Datei Explosion**<sup>\*\*</sup>
+  - **Datei Detonation**<sup>1</sup>
   - **Böswillige dateireputation**
-  - * * Malware zap * * * *<sup>\*\*</sup>
+  - **Malware zap**<sup>2</sup>
   - **Sonstige**
+
+  ![Erkennungstechnologie-Ansicht für Malware im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 - **Aufschlüsseln nach: Richtlinientyp** und **Anzeigen von Daten nach: e-Mail- \> Phishing** oder **Anzeigen von Daten nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
-  - **Anti-Malware**<sup>\*\*</sup>
-  - **Sichere Anlage**<sup>\*\*</sup>
+  - **Anti-Malware**
+  - **Sichere Anlage**<sup>1</sup>
   - **Anti-Phishing**
   - **Antispam**
   - **Nachrichtenfluss Regel** (auch als Transportregel bezeichnet)
   - **Sonstige**
+
+  ![Richtlinientyp Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **Aufschlüsseln nach: Zustellungsstatus** und **Anzeigen von Daten nach: e-Mail \> Phishing** oder **Daten anzeigen nach: e-Mail- \> Schadsoftware**: die folgenden Informationen werden angezeigt:
 
@@ -332,9 +347,11 @@ Die folgenden Ansichten sind verfügbar:
   - **Lokaler Server: zugestellt**
   - **Quarantäne**
 
-<sup>\*</sup>Nur Office 365 ATP
+  ![Zustellungsstatus Ansicht für Phishing-e-Mails im Statusbericht "Threat Protection"](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>\*\*</sup>Die automatische Bereinigung ohne Stunden (zap) ist in eigenständigen EoP nicht verfügbar (Sie funktioniert nur in Exchange Online Postfächern).
+<sup>1</sup> Office 365 nur ATP
+
+<sup>2</sup> Zero-Hour Auto Purge (zap) ist nicht in eigenständigen EoP verfügbar (funktioniert nur in Exchange Online Postfächern).
 
 Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
@@ -348,10 +365,10 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
 
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
-- **Date**
-- **Ort**
-- **Regie**
-- **Name der Schadsoftware**
+  - **Date**
+  - **Ort**
+  - **Regie**
+  - **Name der Schadsoftware**
 
 - **Daten anzeigen nach: Übersicht**: keine **Detailtabellen** -Schaltfläche anzeigen verfügbar.
 
@@ -361,7 +378,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Betreff**
   - **Sender**
   - **Recipients**
-  - **Regie**
+  - **Erkannt von**
   - **Zustellungsstatus**
   - **Kompromiss Quelle**
 
@@ -373,33 +390,31 @@ Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filter
 
 ## <a name="top-malware-report"></a>Höchst schädlicher Bericht
 
-Der **oberste Schadsoftware** -Bericht zeigt die verschiedenen Arten von Schadsoftware, die von [EoP](eop-features.md)erkannt wurde.
+Der **oberste Schadsoftware** -Bericht zeigt die verschiedenen Arten von Schadsoftware, die durch den [Schutz vor Schadsoftware in EoP](anti-malware-protection.md)erkannt wurden.
 
-Um den Bericht anzuzeigen, öffnen Sie das [Security & Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> - **Dashboard** , und wählen Sie **oben Malware**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=TopMalwaret> .
+Um den Bericht anzuzeigen, öffnen Sie das [Security & Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> - **Dashboard** , und wählen Sie **oben Malware**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=TopMalware> .
 
-![SCC-EoP Top-Schadsoftware](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![Oberes Malware-Widget im Dashboard "Berichte"](../../media/top-malware-report-widget.png)
 
 Wenn Sie mit dem Mauszeiger auf einen Keil im Kreisdiagramm zeigen, sehen Sie den Namen einer Art von Schadsoftware und wie viele Nachrichten mit dieser Schadsoftware erkannt wurden.
 
-Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten können.
+![Obere Malware Berichtsansicht](../../media/top-malware-report-view.png)
 
-![Dieser Bericht zeigt die wichtigste für Ihre Organisation erkannte Malware](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details angezeigt:
 
-Unter dem Diagramm sehen Sie eine Liste der erkannten Schadsoftware und wie viele Nachrichten mit dieser Schadsoftware erkannt wurden. Beachten Sie, dass die Aggregatansicht nur eine Filterung von 90 Tagen zulässt.
+- **Top-Schadsoftware**
+- **Count**
+
+Wenn Sie in der Ansicht Berichtsansicht oder Detailtabelle auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
 
 ## <a name="url-threat-protection-report"></a>URL-Bedrohungsschutz Bericht
 
-Das Widget für diesen Bericht wird im Dashboard "Berichte" als **URL-Schutzbericht** bezeichnet und ist nur in Office 365 Advanced Threat Protection (ATP) verfügbar. Insbesondere gilt:
-
-- Ein Microsoft 365 E5-Abonnement.
-- Ein Advanced Threat Protection-Add-on (Plan 1 *oder* Plan 2) für jedes andere Abonnement, das Exchange Online Protection (EoP) enthält.
-
-Wenn Sie direkt zum **URL Threat Protection** -Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
-
 > [!NOTE]
-> In diesem Bericht werden keine klickdaten von Benutzern angezeigt, bei denen die Richtlinie für sichere Links angewendet die Option **Benutzerklicks nicht nachverfolgen** aktiviert hat.
+> Dieser Bericht steht nur in Office 365 Advanced Threat Protection (ATP) zur Verfügung. Beispielsweise ein Microsoft 365 E5-Abonnement oder ein ATP-Plan-1-oder ATP-Plan-2-Add-on.
 
-![Grafik des URL Threat Protection-Berichts in Aktion.](../../media/tp-URLThreatProRpt1.PNG)
+Der **Bericht über den URL-Bedrohungsschutz** bietet zusammenfassende und Trend Ansichten für erkannte Bedrohungen und Aktionen, die im Rahmen der [ATP-Sicherheits Links](atp-safe-links.md)für URL-Klicks ausgeführt werden. In diesem Bericht werden keine klickdaten von Benutzern angezeigt, bei denen die Richtlinie für sichere Links angewendet die Option **Benutzerklicks nicht nachverfolgen** aktiviert hat.
+
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zu \> **Dashboard** Berichte, und wählen Sie **URL Protection**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>Berichtsansicht für den URL-Bedrohungsschutz Bericht
 
@@ -417,6 +432,8 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 
   - **Start Datum** und **Enddatum**
   - Die verfügbaren Klick Schutzaktionen sowie den Wert, der zum Anzeigen von Informationen für alle URL-Klicks (nicht nur für blockierte Klicks) **zulässig** ist.
+
+  ![Aktionsansicht für URL-Klick Schutz im URL Threat Protection-Bericht](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 - **URL-Klick nach Anwendung**: zeigt die Anzahl der URL-Klicks von Anwendungen an, die Office 365 ATP-sichere Links unterstützen:
 

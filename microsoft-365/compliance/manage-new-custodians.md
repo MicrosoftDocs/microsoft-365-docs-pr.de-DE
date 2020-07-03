@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel erfahren Sie, wie Sie die Liste der depotverwalter in einem erweiterten eDiscovery-Fall anzeigen, bearbeiten und Massen bearbeiten können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034177"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024805"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Verwalten von Depotbanken in einem erweiterten eDiscovery-Fall
 
-Die Registerkarte depotverwalter in Advanced eDiscovery enthält eine Liste aller depotverwalter, die dem Fall hinzugefügt wurden. Nachdem Sie einem Fall Verwalter hinzugefügt haben, werden Details zu jeder Depotbank automatisch aus Azure Active Directory gesammelt und in Advanced eDiscovery angezeigt.
+Die Seite depotverwalter auf der Registerkarte **Quellen** in einem erweiterten eDiscovery-Fall enthält eine Liste aller depotverwalter, die dem Fall hinzugefügt wurden. Nachdem Sie einem Fall Verwalter hinzugefügt haben, werden Details zu jeder Depotbank automatisch aus Azure Active Directory gesammelt und in Advanced eDiscovery angezeigt.
 
 ![Verwalten von Depotbanken](../media/CustodianDetails.PNG)
 
@@ -79,9 +79,9 @@ So aktualisieren Sie die Datenquellen, die einer Depotbank zugeordnet sind:
 
 1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
   
-2. Klicken Sie auf die Registerkarte **depotverwalter** .
+2. Klicken Sie auf die Registerkarte **Quellen** .
   
-3. Wählen Sie in der Liste eine Depotbank aus, und klicken Sie auf der Flyout-Seite auf **Bearbeiten** .
+3. Wählen Sie auf der Seite **depotverwalter** eine Depotbank aus der Liste aus, und klicken Sie auf der Flyout-Seite auf **Bearbeiten** .
 
     ![Bearbeiten von Datenquellen](../media/EditCustodianDataSource.PNG)
   
@@ -103,9 +103,11 @@ So lösen Sie den erneuten Indizierungsprozess zum Adressieren von teilweise ind
 
 1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
-2. Klicken Sie auf die **Registerkarte depotverwalter**, und wählen Sie dann eine Depotbank aus, deren Daten neu indiziert werden müssen. 
+2. Klicken Sie auf die Registerkarte **Quellen** .
 
-3. Klicken Sie auf der Seite Flyout auf **Index aktualisieren**.
+3. Wählen Sie auf der Seite **depotverwalter** eine Depotbank aus, deren Daten neu indiziert werden müssen.
+
+4. Klicken Sie auf der Seite Flyout auf **Index aktualisieren**.
 
    Es wird ein Dialogfeld angezeigt, das besagt, dass der Index Auftrag erstellt wurde.
 
@@ -127,9 +129,9 @@ So veröffentlichen Sie eine Depotstelle:
 
 1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
 
-2.    Wechseln Sie zur Registerkarte **depotverwalter** .
+2. Klicken Sie auf die Registerkarte **Quellen** .
 
-3.    Klicken Sie auf die **Registerkarte depotverwalter**, und wählen Sie dann die Depotbank aus, die für den Fall freigegeben wird.
+3. Wählen Sie auf der Seite **depotverwalter** die Depotbank aus, die für den Fall freigegeben wird.
 
 4. Klicken Sie auf der Seite Flyout auf **Versionsverwalter**.
 

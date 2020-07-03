@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: Sie können einem erweiterten eDiscovery-Fall Datenquellen ohne Freiheitsentzug hinzufügen und die Datenquelle aufbewahren. Datenquellen ohne Freiheitsentzug werden erneut indiziert, sodass alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet werden, damit Sie vollständig und schnell durchsuchbar sind.
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Sie können einem erweiterten eDiscovery-Fall Datenquellen ohne Freiheitsentzug hinzufügen und die Datenquelle aufbewahren. Datenquellen ohne Freiheitsentzug werden neu indiziert, sodass alle Inhalte, die als teilweise indiziert betrachtet wurden, neu verarbeitet werden, damit Sie vollständig und schnell durchsuchbar sind.
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695500"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024745"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Hinzufügen von Datenquellen ohne Freiheitsentzug zu einem erweiterten eDiscovery-Fall
 
@@ -47,7 +46,7 @@ Führen Sie die folgenden Schritte aus, um Datenquellen ohne Freiheitsentzug in 
 
    Jede Datenquelle ohne Freiheits Schutz, die Sie hinzugefügt haben, wird auf der Seite **Datenquellen** aufgeführt.
 
-   Außerdem wird ein Auftrag mit dem Namen " *re-Indexing Non-Freiheitsentzug Data* " erstellt und auf der Registerkarte " **Aufträge** " der Groß-/Kleinschreibung angezeigt. Nachdem der Auftrag erstellt wurde, wird der erweiterte Indizierungsprozess in initiierten und den Datenquellen neu indiziert.
+   Außerdem wird ein Auftrag mit dem Namen " *Neuindizieren von Daten ohne Freiheitsentzug* " erstellt und auf der Registerkarte " **Aufträge** " der Groß-/Kleinschreibung angezeigt. Nachdem der Auftrag erstellt wurde, wird der erweiterte Indizierungsprozess in initiiert und die Datenquellen neu indiziert.
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>Verwalten der Aufbewahrungszeit für Datenquellen ohne Freiheitsentzug
 

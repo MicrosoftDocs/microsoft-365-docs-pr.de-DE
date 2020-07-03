@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Überprüfen Sie alle Vorlagen, die für das Einrichten von Assessments in Microsoft Compliance Score (Preview) verwendet werden können.
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016575"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035620"
 ---
 # <a name="compliance-score-preview-templates"></a>Vorlagen für Kompatibilitätsbewertung (Vorschau)
 
 ## <a name="templates-overview"></a>Vorlagen (Übersicht)
 
-Compliance Score stellt einen umfassenden **Vorlagensatz zum Erstellen von Bewertungen**bereit. Diese Vorlagen können Ihrer Organisation dabei helfen, die nationalen, regionalen und branchenspezifischen Anforderungen für die Erfassung und Verwendung von Daten zu erfüllen. Neue Vorlagen werden hinzugefügt, wenn Verordnungen erlassen und aktualisiert werden.
+[Compliance Score](compliance-score.md) stellt einen umfassenden **Vorlagensatz zum Erstellen von Bewertungen**bereit. Diese Vorlagen können Ihrer Organisation dabei helfen, die nationalen, regionalen und branchenspezifischen Anforderungen für die Erfassung und Verwendung von Daten zu erfüllen. Neue Vorlagen werden hinzugefügt, wenn Verordnungen erlassen und aktualisiert werden.
 
 Sie können jede der unten aufgeführten Vorlagen an die Anforderungen Ihrer Organisation anpassen. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine eigene Vorlage erstellen. 
 

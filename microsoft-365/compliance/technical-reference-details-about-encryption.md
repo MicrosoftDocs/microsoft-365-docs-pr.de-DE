@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Erfahren Sie mehr über die verschiedenen Zertifikate, Technologien und TLS-Verschlüsselungs Pakete, die für die Verschlüsselung in Office 365 verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 298d73551b5eb3d7ad7121075b086ee4630562f4
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739107"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024541"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Technische Referenzdetails zur Verschlüsselung
 
@@ -56,10 +56,9 @@ Seit dem 31. Oktober 2018 unterstützt Office 365 nicht mehr TLS 1,0 und 1,1. Di
 
 Dies bedeutet nicht, dass Office 365 die TLS 1,0-und 1,1-Verbindungen blockieren.
 
-TLS 1,0 und TLS 1,1 wurden an diesen Daten offiziell veraltet.
+Obwohl wir ursprünglich ein Datum vom 1. Juni festgelegt haben, ist dieses Datum nicht mehr gültig, 2020 für TLS 1,0 und TLS 1,1-veraltete Daten für die weltweiten und gcc-Umgebungen. Dies war auf COVID-19 zurückzuführen. Wenn ein neues Datum für diese veraltete Funktion vorliegt, werden wir es hier veröffentlichen. 
 
-- 1. Juni 2020 in den weltweiten und gcc-Umgebungen.
-- 15. Januar 2020 in den gcc-High-und DoD-Umgebungen.
+Für gcc-High-und DoD-Umgebungen ist am 15. Januar 2020 offiziell veraltet.
 
 Sie sollten sicherstellen, dass alle Client-Server-und Browser Serverkombinationen TLS 1,2 und moderne Verschlüsselungs Pakete verwenden, um eine sichere Verbindung mit Office 365-und Microsoft 365-Diensten aufrechtzuerhalten. Dies erfordert möglicherweise Updates für bestimmte Client-Server- bzw. Browser-Server-Kombinationen. Informationen dazu, wie sich dies auf Sie auswirkt, finden Sie unter [Vorbereiten der obligatorischen Verwendung von TLS 1,2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   

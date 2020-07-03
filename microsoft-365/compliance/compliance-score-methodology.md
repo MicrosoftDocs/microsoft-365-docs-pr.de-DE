@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Score eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung Ihrer Compliance-Haltung ergriffen werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023246"
+ms.locfileid: "45024675"
 ---
 # <a name="compliance-score-preview-calculation"></a>Berechnung der Kompatibilitätsbewertung (Vorschau)
 
@@ -74,7 +74,7 @@ Aktionen werden basierend darauf, ob Sie obligatorisch oder diskretionäre sind,
 
  - **Obligatorische Aktionen** können weder absichtlich noch versehentlich umgangen werden. Ein Beispiel ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Kennwortlänge,-Komplexität und-Ablaufzeit festlegt. Benutzer müssen diese Anforderungen für den Zugriff auf das System befolgen.
   
- - **Diskretionäre Aktionen** basieren darauf, dass Benutzer Richtlinien verstehen und entsprechend handeln. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, ein diskretionäres Steuerelement, da es vom Benutzer abhängig ist.
+ - **Diskretionäre Aktionen** basieren darauf, dass Benutzer Richtlinien verstehen und entsprechend handeln. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, eine Ermessens Maßnahme, da Sie vom Benutzer abhängig ist.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Vorbeugende, detektivische und korrigierende Aktionen
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Verwenden Sie das Tool Bulk-Add, um schnell mehrere Verwalter und die zugehörigen Datenquellen zu einem Fall in Advanced eDiscovery hinzuzufügen.
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741642"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024665"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Massenhafte Hinzufügen von Depot Betreuern zu einem erweiterten eDiscovery-Fall
 
@@ -37,7 +37,8 @@ Für erweiterte eDiscovery-Fälle, in denen viele depotverwalter involviert sind
 
 4. Fügen Sie die Informationen zum Freiheitsentzug der CSV-Datei hinzu, und speichern Sie Sie auf dem lokalen Computer. Im nächsten Abschnitt finden Sie Informationen zu den Eigenschaften in der CSV-Datei.
 
-5. Klicken Sie auf der Registerkarte **Quellen** erneut auf **Verwalter importieren** . 
+5. Klicken Sie auf der Registerkarte **Quellen** erneut auf **Verwalter importieren** .
+
 6. Klicken Sie auf der Seite Flyout auf **Durchsuchen** , und laden Sie die CSV-Datei hoch.
 
    Nachdem die CSV-Datei hochgeladen wurde, wird ein BulkAddCustodian-Auftrag erstellt und auf der Registerkarte **Aufträge** angezeigt. Der Auftrag überprüft die depotverwalter und die zugehörigen Datenquellen und fügt Sie dann der Registerkarte **Verwalter** auf der Seite **Quellen** der Anfrage hinzu.

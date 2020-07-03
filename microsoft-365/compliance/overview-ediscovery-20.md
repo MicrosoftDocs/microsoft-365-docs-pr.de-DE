@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 description: Dieser Artikel gibt eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool für interne und externe Ermittlungen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
-ms.translationtype: HT
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322040"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024787"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365
 
 Die Advanced eDiscovery-Lösung in Microsoft 365 basiert auf den vorhandenen eDiscovery- und Analysefunktionen in Office 365. Diese neue Lösung mit dem Namen *Advanced eDiscovery* bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem können Rechtsteams den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren. 
 
 > [!NOTE]
-> Für Advanced eDiscovery ist ein Abonnement für Office 365 oder Microsoft 365 E5 Enterprise erforderlich. Weitere Informationen zur Lizenzierung von Advanced eDiscovery finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
+> Für Advanced eDiscovery ist ein Abonnement für Office 365 oder Microsoft 365 E5 Enterprise erforderlich. Weitere Informationen zur erweiterten eDiscovery-Lizenzierung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
 
 ## <a name="alignment-with-edrm"></a>Angepasste EDRM
 
@@ -59,13 +59,13 @@ So unterstützt Advanced eDiscovery den EDRM-Workflow auf hohem Niveau:
 
 Die folgenden Abschnitte beschreiben jeden Schritt des integrierten Workflows in Advanced eDiscovery. Der folgende Screenshot zeigt die Registerkarte **Startseite** eines Falls mit dem Namen *Produkthaftung 2019002*. Beachten Sie, dass die Workflow-Registerkarten oben auf der Seite in einer Reihenfolge angeordnet sind, die dem EDRM-Prozess entspricht. 
 
-Weitere Informationen über den End-to-End-Workflow in Advanced eDiscovery finden Sie in diesem [Microsoft Mechanics-Video](https://go.microsoft.com/fwlink/?linkid=2066133). 
+Weitere Informationen über den End-to-End-Workflow in Advanced eDiscovery finden Sie in diesem [Microsoft Mechanics-Video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
 ![Die Registerkarten in Advanced eDiscovery folgen dem EDRM-Workflow](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Verwalten von Verwahrern
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>Verwalten von Depotbanken und Datenquellen ohne Freiheitsentzug
 
-Verwenden Sie die Registerkarte **Verwahrer**, um die Personen hinzuzufügen und zu verwalten, die Sie als Personen von Interesse für den Fall identifiziert haben. Wenn Sie Verwahrer hinzufügen, können Sie schnell verwahrerbezogene Aktionen durchführen, wie z. B. die rechtliche Verwahrung von Verwahrerdatenquellen, die Kommunikation mit Verwahrern und die Suche nach Verwahrerdatenquellen, um Inhalte zu sammeln, die für den Fall relevant sind. Wenn der Fall fortschreitet, ist es einfach, neue Verwahrer hinzuzufügen oder Verwahrer aus dem Fall zu entfernen. Weitere Informationen finden Sie unter [Arbeiten mit Verwahrern in Advanced eDiscovery](managing-custodians.md).
+Verwenden Sie die Registerkarte **Quellen** , um Personen hinzuzufügen und zu verwalten, die Sie im Fall als interessierte Personen identifiziert haben, und andere Datenquellen, die möglicherweise nicht einer Depotbank zugeordnet sind. Wenn Sie Verwalter oder Datenquellen ohne Freiheitsentzug hinzufügen, können Sie schnell Aktionen durchführen, wie das Aufbewahren einer Aufbewahrungspflicht für Depotbank-und nicht-Freiheitsentzug-Datenquellen, die Kommunikation mit den Verwaltern und das Durchsuchen von Depotbank-und nicht-Freiheitsentzug-Datenquellen, um relevante Inhalte für den Fall zu sammeln. Wenn der Fall fortschreitet, können Sie ganz einfach neue Depotstellen oder Datenquellen ohne Freiheitsentzug hinzufügen oder aus dem Fall freigeben. Weitere Informationen finden Sie unter [Arbeiten mit Verwahrern in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Verwaltung von Benachrichtigungen über Aufbewahrung für juristische Zwecke
 

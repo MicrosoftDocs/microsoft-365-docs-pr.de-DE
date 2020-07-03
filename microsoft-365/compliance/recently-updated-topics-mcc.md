@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936148"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035640"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -150,7 +150,7 @@ Informationen zum [Verfügbarkeits Schlüssel für den Kundenschlüssel](custome
 
 [Verwalten der Postfachüberwachung](enable-mailbox-auditing.md#logon-types-and-mailbox-actions) (aktualisiert)<br>Es wurden Informationen zur neuen MailItemsAccessed-Postfachaktion hinzugefügt, die mit der erweiterten Überwachung eingeführt wurde.
 
-[Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (aktualisiert)<br>Es wurden neue Beschreibungen für Vertraulichkeitsbezeichnungsaktivitäten sowie weitere Informationen zum Überwachen von [Zusammenarbeitsaktivitäten in Formularen](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders) hinzugefügt.
+[Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (aktualisiert)<br>Es wurden neue Beschreibungen für Vertraulichkeitsbezeichnungsaktivitäten sowie weitere Informationen zum Überwachen von [Zusammenarbeitsaktivitäten in Formularen](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders) hinzugefügt.
 
 ### <a name="compliance-offerings"></a>Compliance-Angebote
 

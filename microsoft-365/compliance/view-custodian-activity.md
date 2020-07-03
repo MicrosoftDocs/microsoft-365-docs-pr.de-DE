@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Verwenden Sie das erweiterte eDiscovery Depotbank-Verwaltungstool, um einfach auf die Aktivitäten für Verwalter in Ihrem Fall zuzugreifen und diese zu durchsuchen.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9e96d0b5dd3bf42dbba56a6e1be91014485ce98
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819045"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024765"
 ---
 # <a name="view-custodian-audit-activity"></a>Anzeigen der Depot Überwachungsaktivität
 
@@ -39,9 +39,9 @@ Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokoll
 
 1. Wechseln Sie zu **eDiscovery > Advanced eDiscovery** , und öffnen Sie die Anfrage.
   
-2. Klicken Sie auf die Registerkarte **depotverwalter** .
+2. Klicken Sie auf die Registerkarte **Quellen** .
   
-3. Wählen Sie in der Liste eine Depotbank aus, und klicken Sie dann auf der Flyout-Seite auf **Depot Aktivität anzeigen** .
+3. Wählen Sie auf der Seite **depotverwalter** eine Depotbank aus der Liste aus, und klicken Sie dann auf der Flyout-Seite auf **Depot Aktivität anzeigen** .
 
     Die Seite Depot Aktivitätssuche wird angezeigt. Hinweis die Depotbank, die Sie im vorherigen Schritt ausgewählt haben, wird im Dropdownfeld **Depot** angezeigt. Sie können im Dropdownfeld unterschiedliche depotverwalter auswählen, aber Sie können jeweils nur nach Aktivitäten für eine Depotbank suchen.
 
@@ -49,15 +49,15 @@ Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokoll
    
 4. Konfigurieren Sie die folgenden Suchkriterien: 
       
-   a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungseinträge für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle von der Depotbank ausgeführten Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
+   1. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungseinträge für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle von der Depotbank ausgeführten Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
 
       ![Liste der Aktivitäten](../media/CustodianActivityAudit.PNG)
       
-      b. **Start Datum und Enddatum** – wählen Sie einen Datums-und Zeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, ist ein Jahr.
+   1. **Start Datum und Enddatum** – wählen Sie einen Datums-und Zeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, ist ein Jahr.
       
-      c. **Depotverwalter** – klicken Sie in dieses Feld, und wählen Sie dann eine bestimmte Depotbank aus, für die Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern ausgeführt werden, die Sie in diesem Feld ausgewählt haben, werden in der Ergebnisliste angezeigt.
+   1. **Depotverwalter** – klicken Sie in dieses Feld, und wählen Sie dann eine bestimmte Depotbank aus, für die Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern ausgeführt werden, die Sie in diesem Feld ausgewählt haben, werden in der Ergebnisliste angezeigt.
       
-   5. Klicken Sie auf   ![Schaltfläche "suchen"](../media/SearchButton.PNG)  , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach einigen Momenten werden Sie unter Ergebnisse auf der Suchseite "Depotbank-Aktivitäten" angezeigt. 
+5. Klicken Sie auf ![Schaltfläche "suchen"](../media/SearchButton.PNG)  , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach einigen Momenten werden Sie unter Ergebnisse auf der Suchseite "Depotbank-Aktivitäten" angezeigt. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse des Überwachungsprotokolls
 
