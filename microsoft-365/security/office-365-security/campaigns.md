@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: fe443c43fa5cea8ec6e3e1c0bc5ee5307b5c28f6
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209595"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039453"
 ---
 # <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
 
@@ -42,78 +42,172 @@ Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organ
 
 Microsoft nutzt die großen Mengen an Anti-Phishing-, Antispam-und Antischadsoftware-Daten im gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand verschiedener Faktoren. Zum Beispiel:
 
-- **Angriffsquellen**: Quell-IP-Adressen und E-Mail-Domänen des Absenders.
+- **Angriffsquelle**: die Quell-IP-Adressen und Absender-e-Mail-Domänen.
 
-- **Eigenschaften der Angriffsnachricht**: Inhalt, Art und Grundstimmung der Angriffsnachrichten.
+- **Eigenschaften von Angriffs Nachrichten**: der Inhalt, die Formatvorlage und der Ton der Nachrichten.
 
 - **Angriffsempfänger**: Empfängerdomänen, Aufgaben des Empfängers (Administratoren, Führungskräfte usw.), Firmentypen (groß, klein, öffentlich, privat usw.) und Branchen.
 
-- **Angriffsnutzlast**: böswillige Links, Anlagen oder andere Nutzlasten in den Angriffs Nachrichten.
+- **Angriffsnutzlast**: böswillige Links, Anlagen oder andere Nutzlasten in den Nachrichten.
 
 Eine Kampagne kann von kurzer Dauer sein oder mehrere Tage, Wochen oder Monate mit aktiven und inaktiven Zeitspannen umfassen. Möglicherweise wird eine Kampagne für ihre jeweilige Organisation gestartet, oder Ihre Organisation kann Teil einer größeren Kampagne in mehreren Unternehmen sein.
 
 ## <a name="campaign-views-the-security--compliance-center"></a>Kampagnen Ansichten das Security & Compliance Center
 
-Kampagnen Ansichten stehen im [Security & Compliance Center](https://protection.office.com) unter **Threat Management** \> **Campaigns**zur Verfügung.
+Kampagnen Ansichten stehen im [Security & Compliance Center](https://protection.office.com) unter **Threat Management** \> **Campaigns**oder direkt unter zur Verfügung <https://protection.office.com/campaigns> .
 
 ![Kampagnenübersicht im Security & Compliance Center](../../media/campaigns-overview.png)
 
-Sie können auch die Ansicht Kampagnen Aufrufen von:
+Sie können auch Kampagnen Ansichten von abrufen:
 
 - **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Kampagnen**
 
-- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Alle e-Mails** \> **Kampagne**
+- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Alle e-Mails** \> Registerkarte **Kampagne**
+
+- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Phishing** \> Registerkarte **Kampagne**
+
+- **Threat Management** \> **Explorer** \> **Ansicht anzeigen** \> **Schadsoftware** \> Registerkarte **Kampagne**
+
+Um auf Kampagnen Ansichten zuzugreifen, müssen Sie Mitglied der Rollengruppen **Organisationsverwaltung**, **Sicherheits Administrator**oder **Sicherheits Leser** im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+## <a name="campaigns-overview"></a>Übersicht über Kampagnen
+
+Auf der Übersichtsseite werden Informationen zu allen Kampagnen angezeigt.
+
+Auf der Registerkarte Standard **Kampagne** zeigt der Bereich **Kampagnentyp** ein Balkendiagramm an, in dem die Anzahl der Empfänger pro Tag angezeigt wird. Standardmäßig zeigt das Diagramm sowohl **Phishing** -als auch **Schadsoftware** -Daten an.
 
 > [!TIP]
-> Wenn keine Kampagnendaten angezeigt werden, versuchen Sie, den Zeitraum zu ändern.
+> Wenn keine Kampagnendaten angezeigt werden, ändern Sie den Datumsbereich oder die [Filter](#filters-and-settings).
 
-Auf der Seite "Übersicht" werden die folgenden Informationen zur Kampagne angezeigt:
+Auf der Rest der Übersichtsseite werden auf der Registerkarte **Kampagne** die folgenden Informationen angezeigt:
 
 - **Name**
 
 - **Beispiel-Betreff**: Betreffzeile einer der Nachrichten in der Kampagne. Beachten Sie, dass alle Nachrichten in der Kampagne nicht unbedingt den gleichen Betreff haben.
 
-- **Typ**: derzeit ist dieser Wert immer **Phish**.
+- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Dieser Wert gibt an, in welchem Ausmaß die Kampagne speziell an Ihre Organisation (einen höheren Wert) oder an andere Organisationen im Dienst gerichtet ist (ein niedrigerer Wert).
 
-- **Untertyp**: Wenn verfügbar, die Marke, die von dieser Kampagne ausgespäht wird. Wenn die Erkennung von der ATP-Technologie gesteuert wird, wird das Präfix **ATP-** dem Untertyp Wert hinzugefügt.
+- **Typ**: dieser Wert ist entweder **Phish** oder **Schadsoftware**.
+
+- **Untertyp**: dieser Wert enthält weitere Details zur Kampagne. Zum Beispiel:
+
+  - **Phishing**: sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wird. Beispielsweise,,, `Microsoft` `365` `Unknown` , `Outlook` , oder `DocuSign` .
+
+  - **Schadsoftware**: beispielsweise `HTML/PHISH` oder `HTML/<MalwareFamilyName>` .
+
+Sofern verfügbar, die Marke, die von dieser Kampagne als Phishing bezeichnet wird. Wenn die Erkennung von der ATP-Technologie gesteuert wird, wird das Präfix **ATP-** dem Untertyp Wert hinzugefügt.
 
 - **Empfänger**: Die Anzahl der Benutzer, auf die diese Kampagne abzielt.
 
-- **Inboxed**: die Anzahl der Benutzer, die Nachrichten von dieser Kampagne in Ihrem Posteingang empfangen haben (nicht an Junk zugestellt).
+- **Inboxed**: die Anzahl der Benutzer, die Nachrichten von dieser Kampagne in Ihrem Posteingang empfangen haben (nicht an den Junk-e-Mail-Ordner zugestellt).
 
-- **Geklickt**von: die Anzahl der Benutzer, die auf die URL in der Phishing-Nachricht geklickt haben.
+- **Geklickt**: die Anzahl der Benutzer, die auf die URL geklickt oder die Anlage in der Phishing-Nachricht geöffnet haben.
 
 - **Klicken Sie auf Rate**: den Prozentsatz,**Clicked**der von "auf  /  **Posteingang**geklickt" berechnet wird. Dieser Wert ist ein Indikator für die Effektivität der Kampagne und gibt an, ob die Empfänger die Nachricht als Phishing identifizieren konnten, und vermeiden Sie das Klicken auf die Nutzlast-URL.
 
+  Beachten Sie, dass dieser Wert in Schadsoftware-Kampagnen nicht verwendet wird.
+
 - **Besucht**: Anzahl der Benutzer, die die Nutzlast-Website tatsächlich durchlaufen haben. Wenn auf Werte **geklickt** wird, aber sichere Links den Zugriff auf die Website blockiert haben, ist dieser Wert gleich NULL.
 
-Wenn Sie auf den Namen einer Kampagne klicken, werden die Kampagnendetails in einem Flyout angezeigt.
+Auf der Registerkarte **Kampagnen Ursprung** werden die Nachrichtenquellen auf einer Weltkarte angezeigt.
+
+### <a name="filters-and-settings"></a>Filter und Einstellungen
+
+Oben auf der Seite Kampagnen Ansichten stehen verschiedene Filter-und Abfrageeinstellungen zum Auffinden und Isolieren bestimmter Kampagnen zur Verfügung.
+
+![Kampagnenfilter](../../media/campaign-filters-and-settings.png)
+
+Die einfachste Filterung, die Sie ausführen können, sind Startdatum/-Uhrzeit und Enddatum/-Uhrzeit.
+
+Wenn Sie die Ansicht weiter filtern möchten, können Sie eine einzelne Eigenschaft mit mehreren Werten filtern, indem Sie auf die Schaltfläche **Kampagnentyp** klicken, Ihre Auswahl treffen und dann auf **Aktualisieren**klicken.
+
+Die verfügbaren Kampagneneigenschaften werden in der folgenden Liste beschrieben:
+
+- Basic
+
+  - **Kampagnentyp**: Wählen Sie **Schadsoftware** oder **Phishing**aus. Das Löschen der Auswahl hat das gleiche Ergebnis wie das auswählen beider Elemente.
+  - **Name der Kampagne**
+  - **Kampagnen Untertyp**
+  - **Sender**
+  - **Recipients**
+  - **Absenderdomäne**
+  - **Betreff**
+  - **Dateiname der Anlage**
+  - **Schadsoftware-Familie**
+  - **Zustellungs Aktion**
+  - **Erkennungstechnologie**
+  - **Tags**
+  - **System Überschreibungen**
+
+- Fortgeschritten
+
+  - **Internet Nachrichten-ID**: verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
+  
+  - **Netzwerknachrichten-ID**: ein GUID-Wert, der im Headerfeld **X-MS-Exchange-Organization-Network-Message-ID** im Nachrichtenkopf verfügbar ist.
+  
+  - **Sender-IP**
+  
+  - **Attachment SHA256**: um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  
+  - **Cluster-ID**
+  
+  - **Warnungsrichtlinien-ID**
+
+- URLs
+
+  - **URL-Domäne**
+  - **URL-Domäne und Pfad**
+  - **URL**
+  - **URL-Pfad**
+  - **Klicken Sie auf Urteil**
+
+Für eine erweiterte Filterung, einschließlich der Filterung durch mehrere Eigenschaften, können Sie auf die Schaltfläche **Erweiterter Filter** klicken, um eine Abfrage zu erstellen. Die gleichen Kampagneneigenschaften sind verfügbar, jedoch mit den folgenden Verbesserungen:
+
+- Sie können auf **Bedingung hinzufügen** klicken, um mehrere Bedingungen auszuwählen.
+- Sie können zwischen Bedingungen den **und-oder-** **Operator auswählen** .
+- Sie können das Element **Bedingungsgruppe** unten in der Liste Bedingungen auswählen, um komplexe zusammengesetzte Bedingungen zu bilden.
+
+Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **Abfrage** .
+
+Nachdem Sie einen einfachen oder erweiterten Filter erstellt haben, können Sie ihn speichern, indem Sie **Abfrage speichern** oder **Abfrage speichern**unter verwenden. Wenn Sie später zu Kampagnen Ansichten zurückkehren, können Sie einen gespeicherten Filter laden, indem Sie auf **gespeicherte Abfrageeinstellungen**klicken.
+
+Klicken Sie zum Exportieren des Diagramms oder der Kampagnenliste auf **exportieren** , und wählen Sie **Diagrammdaten exportieren** oder **Kampagnenliste**exportieren aus.
+
+Wenn Sie über ein Microsoft Defender ATP-Abonnement verfügen, können Sie auf **WDATP** klicken, um die Kampagneninformationen mit Microsoft Defender ATP zu verbinden oder zu trennen. Weitere Informationen finden Sie unter [integrieren Office 365 ATP mit Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
 ## <a name="campaign-details"></a>Kampagnendetails
 
-In der Ansicht "Kampagnendetails" stehen viele Informationen zu der Kampagne bereit:
+Wenn Sie auf den Namen einer Kampagne klicken, werden die kampagnendetails in einem Flyout angezeigt.
 
-- Kampagneninformationen:
+### <a name="campaign-information"></a>Kampagneninformationen
 
-  - **ID**: der eindeutige Kampagnen Bezeichner.
+Oben in der Ansicht kampagnendetails stehen die folgenden Kampagneninformationen zur Verfügung:
 
-  - **Begonnen** und **Beendet**: Der ausgewählte Datumsfilter.
+- **ID**: der eindeutige Kampagnen Bezeichner.
 
-  - **Symptom**: die folgenden Daten für den ausgewählten Datumsbereichsfilter:
+- **Anfang und Ende** **: Startdatum und**Enddatum der Kampagne. Beachten Sie, dass sich diese Datumsangaben möglicherweise weiter ausdehnen als die Filterdaten, die Sie auf der Übersichtsseite ausgewählt haben.
+
+- **Symptom**: Dieser Abschnitt enthält die folgenden Daten für den ausgewählten Datumsbereichsfilter (oder den Sie in der Zeitachse auswählen):
   
-    - Die Gesamtzahl der Empfänger.
+  - Die Gesamtzahl der Empfänger.
+  - Die Anzahl der Nachrichten, die "Posteingang" (also im Posteingang, nicht an den Junk-e-Mail-Ordner) gesendet wurden.
+  - Wie viele Benutzer auf die URL-Nutzlast in der Phishing-Nachricht geklickt haben.
+  - Howe viele Benutzer haben die URL besucht.
 
-    - Die Anzahl der Nachrichten, die "Posteingang" (also im Posteingang, nicht an Junk) gesendet wurden.
+- **Targeted**: der Prozentsatz, der von: (die Anzahl der Kampagnen Empfänger in Ihrer Organisation)/(die Gesamtzahl der Empfänger in der Kampagne für alle Organisationen im Dienst) berechnet wurde. Beachten Sie, dass dieser Wert über die gesamte Lebensdauer der Kampagne berechnet wird und nicht die Filterdaten ändert.
 
-    - Wie viele Benutzer auf die URL-Nutzlast in der Phishing-Nachricht geklickt haben.
+- Eine interaktive Zeitachse der Kampagnenaktivität: die Zeitachse zeigt die Aktivität während der gesamten Lebensdauer der Kampagne an. Standardmäßig enthält der schattierte Bereich den Datumsbereichsfilter, den Sie in der Übersicht ausgewählt haben. Sie können durch Klicken und ziehen einen bestimmten Startpunkt und Endpunkt auswählen, um <u>die Daten zu ändern, die im **IMPACT** -Bereich angezeigt werden, und auf den Rest der Seite, wie in den nächsten Abschnitten beschrieben</u>.
 
-    - Howe viele Benutzer haben die URL besucht.
+In der Titelleiste können Sie auf die Schaltfläche Download Campaign Write- **up** klicken, ![ ](../../media/download-campaign-write-up-button.png) um die kampagnendetails in ein Word-Dokument (standardmäßig mit dem Namen "CampaignReport.docx") herunterzuladen. Beachten Sie, dass dieses Dokumentdetails über die gesamte Lebensdauer der Kampagne enthält (nicht nur die Filterdaten, die Sie ausgewählt haben).
 
-  - Eine Zeitachse für Kampagnenaktivitäten: Wann die Kampagne begonnen und geendet hat, und die Anzahl der Nachrichten im Zeitverlauf.
+![Kampagneninformationen](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>Kampagnenfluss
 
-Wichtige Details zur Kampagne werden in einem horizontalen Flussdiagramm (auch als _Sankey_-Diagramm bezeichnet) im Abschnitt **Fluss** dargestellt. Diese Details helfen Ihnen, die Elemente der Kampagne und die potenziellen Auswirkungen in Ihrer Organisation zu verstehen.
+In der Mitte der Ansicht kampagnendetails werden wichtige Details zur Kampagne im Abschnitt **Flow** in einem horizontalen Flussdiagramm (als _Sankey_ -Diagramm bezeichnet) dargestellt. Diese Details helfen Ihnen, die Elemente der Kampagne und die potenziellen Auswirkungen in Ihrer Organisation zu verstehen.
+
+> [!TIP]
+> Die Informationen, die im **Fluss** Diagramm angezeigt werden, werden wie im vorherigen Abschnitt beschrieben durch den schattierten Datumsbereich in der Zeitachse gesteuert.
 
 ![Kampagnendetails, die keine Benutzer-URL-Klicks enthalten](../../media/campaign-details-no-recipient-actions.png)
 
@@ -125,11 +219,12 @@ Das Diagramm enthält die folgenden Informationen:
 
 - **Absenderdomänen**
 
-- **Filter Urteile**: die hier aufgeführten Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
+- **Filter Urteile**: diese Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
 
-  |Wert|Spam Filter Urteil|Beschreibung|
-  |:-----|:-----|:-----|
-  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
+  ||||
+  |---|---|---|
+  |**Wert**|**Spam Filter Urteil**|**Beschreibung**|
+  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
   |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde vor der Auswertung durch Spamfilterung (beispielsweisedurch eine Nachrichtenfluss Regel) als Spam markiert.|
   |**Erkannt**|`SFV:SPM`|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
@@ -139,6 +234,7 @@ Das Diagramm enthält die folgenden Informationen:
   |**Benutzer zulassen**<sup>\*</sup>|`SFV:SFE`|Die Nachricht hat die Spamfilterung übersprungen, da sich der Absender in Outlook in der Liste sicherer Absender eines Benutzers befand.|
   |**Benutzer Block**<sup>\*\*</sup>|`SFV:BLK`|Die Nachricht wurde durch die Spamfilterung blockiert, da sich der Absender in Outlook in der Liste Blockierte Absender eines Benutzers befand.|
   |**ZAP**|n/v|[Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md) hat in der zugestellten Nachricht entsprechend den Einstellungen Ihrer Antispampolitik (in den Junk-e-Mail-Ordner verschoben oder isoliert) Aktionen durchgeführt.|
+  |
 
   <sup>\*</sup>Überprüfen Sie Ihre Anti-Spam-Richtlinien, da die zulässige Nachricht wahrscheinlich vom Dienst blockiert wurde.
 
@@ -147,22 +243,16 @@ Das Diagramm enthält die folgenden Informationen:
 - **Übermittlungsorte**: Sie möchten wahrscheinlich Nachrichten überprüfen, die an Empfänger übermittelt wurden (entweder im Posteingang oder Junk-E-Mail-Ordner), auch wenn Benutzer nicht auf die Nutzlast-URL in der Nachricht geklickt haben. Sie können auch die isolierten Nachrichten aus der Quarantäne entfernen. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in EoP](quarantine-email-messages.md).
 
   - **Ordner gelöscht**
-
   - **Gelöscht**
-
-  - **Extern**: der Empfänger befindet sich in Ihrer lokalen e-Mail-Organisation.
-
+  - **Extern**: der Empfänger befindet sich in Ihrer lokalen e-Mail-Organisation in Hybrid Umgebungen.
   - **Fehlgeschlagen**
-
   - **Weitergeleitet**
-
   - **Posteingang**
-
   - **Junk-E-Mail-Ordner**
-
   - **Quarantäne**
-
   - **Unknown**
+
+- **URL-Klicks**: Diese werden im nächsten Abschnitt beschrieben.
 
 > [!NOTE]
 > In allen Ebenen, die mehr als 10 Elemente enthalten, werden die oberen 10 Elemente angezeigt, während der Rest in **anderen**zusammengefasst wird.
@@ -185,48 +275,45 @@ Wenn ein Benutzer in der Phishing-Nachricht auf die Nutzlast-URL geklickt hat, w
 
 ### <a name="tabs"></a>Registerkarten
 
-In der Ansicht „Kampagnendetails“ stehen mehrere Registerkarten zur Verfügung, mit denen Sie die Kampagne weiter untersuchen können.
+Auf den Registerkarten in der Ansicht kampagnendetails können Sie die Kampagne weiter untersuchen.
+
+> [!TIP]
+> Die Informationen, die auf den Registerkarten angezeigt werden, werden durch den schattierten Datumsbereich in der Zeitleiste gesteuert, wie im Abschnitt [Kampagneninformationen](#campaign-information) beschrieben.
 
 - **URL Klicks**: Wenn Benutzer nicht auf die Nutzlast-URL in der Phishing-Nachricht geklickt haben, ist dieser Abschnitt leer. Wenn ein Benutzer auf die URL klicken konnte, werden die folgenden Werte aufgefüllt:
 
   - **Benutzer**<sup>\*</sup>
-
   - **URL**<sup>\*</sup>
-
-  - **Zeit**
-
-  - **Aktion**
+  - **Klicken Sie auf Zeit**
+  - **Klicken Sie auf Urteil**
 
 - **Sender-IPs**
 
   - **Sender-IP**<sup>\*</sup>
-
   - **Gesamtanzahl**
-
-  - **Anzahl "Posteingang"**
-
-  - **Anzahl "Gesperrt"**
-
+  - **Posteingang**
+  - **Nicht Posteingang**
   - **Weitergegebene SPF**: der Absender wurde vom [SPF (Sender Policy Framework)](how-office-365-uses-spf-to-prevent-spoofing.md)authentifiziert. Ein Absender, der die SPF-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
 
 - **Absender**
 
   - **Absender**: Dies ist die tatsächliche Absenderadresse im SMTP-Mail von-Befehl, die nicht unbedingt die von:-e-Mail-Adresse ist, die Benutzern in Ihren e-Mail-Clients angezeigt wird.
-
   - **Gesamtanzahl**
-
   - **Posteingang**
-
   - **Nicht Posteingang**
-
   - **DKIM-Übergabe**: der Absender wurde durch Domänenschlüssel authentifiziert, die [Mail (DKIM) identifiziert](support-for-validation-of-dkim-signed-messages.md)haben. Ein Absender, der die DKIM-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
-
   - **DMARC wurde übergeben**: der Absender wurde durch [domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität authentifiziert (DMARC)](use-dmarc-to-validate-email.md). Ein Absender, der die DMARC-Überprüfung nicht übergibt, gibt an, dass der Absender nicht authentifiziert ist oder wenn die Nachricht einen legitimen Absender fälscht.
 
-- **Nutzlasten**
+- **Anlagen**
+
+  - **Filename**
+  - **SHA256**
+  - **Schadsoftware-Familie**
+  - **Gesamtanzahl**
+
+- **URL**
 
   - **URL**<sup>\*</sup>
-
   - **Gesamtanzahl**
 
 <sup>\*</sup> Wenn Sie auf diesen Wert klicken, wird ein neues Flyout geöffnet, das weitere Details zu dem angegebenen Element (Benutzer, URL usw.) oben in der Ansicht "Kampagnendetails" enthält. Wenn Sie zur Ansicht "Kampagnendetails" zurückkehren möchten, klicken Sie im neuen Flyout auf **Fertig**.
