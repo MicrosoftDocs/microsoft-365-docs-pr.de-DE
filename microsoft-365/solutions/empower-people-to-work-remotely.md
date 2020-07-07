@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Dienstinfrastruktur, die es Ihren Arbeitnehmern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 94e90e0839815ca8045731f809e50d08622700f4
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
-ms.translationtype: HT
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724816"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844870"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
@@ -73,9 +72,9 @@ Nutzen Sie diese Schritte, um den Zugriff auf die Server, Daten und Cloud-Dienst
 
 1. [Erhöhung der Anmeldesicherheit durch MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Bereitstellung des Remotezugriffs auf lokale Apps und Dienste](empower-people-to-work-remotely-remote-access.md)
-3. [Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Erstellen von Kommunikationsveranstaltungsorten](empower-people-to-work-remotely-communication-venues.md)
+3. [Sicherheit und Compliance bereitstellen](empower-people-to-work-remotely-security-compliance.md)
+4. [Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Schulung von Remotemitarbeitern und Ansprechen von Nutzungsrückmeldungen](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![Die Schritte zum Fördern von Remotemitarbeitern mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)

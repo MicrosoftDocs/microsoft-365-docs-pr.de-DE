@@ -17,12 +17,11 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626441"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352098"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
@@ -42,14 +41,16 @@ Mit der Inhaltssuche können Sie alle Postfächer Ihrer Organisation nach E-Mail
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe **eDiscovery-Manager** sein oder über die Verwaltungsrolle **Compliancesuche** verfügen. Um Nachrichten zu löschen, müssen Sie Mitglied der Rollengruppe **Organisationsverwaltung** sein, oder über die Verwaltungsrolle **Suchen und Löschen** verfügen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).
-    
+
 - Sie müssen Security & Compliance Center PowerShell verwenden, um Nachrichten zu löschen. Anweisungen zum Herstellen einer Verbindung finden Sie unter [Schritt 2](#step-2-connect-to-security--compliance-center-powershell).
-    
+
 - Aus jedem Postfach können maximal 10 Elemente gleichzeitig entfernt werden. Da die Funktion zum Suchen und Entfernen von Nachrichten ein Tool zur Reaktion auf Vorfälle sein soll, stellt dieser Höchstwert sicher, dass Nachrichten schnell aus Postfächern entfernt werden können. Das Feature ist nicht zum Bereinigen von Benutzerpostfächern vorgesehen.
-    
+
 - Die maximale Anzahl von Postfächern in einer Inhaltssuche, aus denen Sie Elemente löschen können, indem Sie eine "Suchen und löschen"-Aktion ausführen, beträgt 50.000. Wenn die Inhaltssuche (die Sie in [Schritt 1](#step-1-create-a-content-search-to-find-the-message-to-delete)erstellen) mehr als 50.000 Quellpostfächer umfasst, schlägt die Löschaktion (die Sie in Schritt 3 erstellen) fehl. Im Abschnitt [Weitere Informationen](#more-information) finden Sie einen Tipp zur Durchführung eines Such- und Löschvorgangs über mehr als 50.000 Postfächer. 
-    
+
 - Das in diesem Artikel beschriebene Verfahren kann nur zum Löschen von Elementen aus Exchange Online-Postfächern und öffentlichen Ordnern verwendet werden. Sie können es nicht verwenden, um Inhalte von SharePoint- oder OneDrive for Business-Websites zu löschen.
+
+- E-Mail-Elemente in einer Überprüfung in einem erweiterten eDiscovery-Fall können nicht mithilfe der in diesem Artikel beschriebenen Verfahren gelöscht werden. Der Grund dafür ist, dass Elemente in einer Überprüfungsgruppe in einem Azure-Speicherort und nicht im Live Dienst gespeichert sind. Dies bedeutet, dass Sie nicht von der Inhaltssuche zurückgegeben werden, die Sie in Schritt 1 erstellt haben. Wenn Sie Elemente in einem Überprüfungssatz löschen möchten, müssen Sie den erweiterten eDiscovery-Fall löschen, der den Überprüfungssatz enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Schritt 1: Erstellen Sie eine Inhaltssuche, um die zu löschende Nachricht zu suchen
 
@@ -59,16 +60,16 @@ Im ersten Schritt wird eine Inhaltssuche erstellt und ausgeführt, um die Nachri
     
 - [Stichwortabfragen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > Die Speicherorte für Inhalte, die im Rahmen der in diesem Schritt erstellten Inhaltssuche durchsucht werden, dürfen keine SharePoint- oder OneDrive for Business-Websites enthalten. Sie können nur Postfächer und öffentliche Ordner in eine Inhaltssuche einbeziehen, die zum Suchen von E-Mail-Nachrichten verwendet wird. Wenn die Inhaltssuche Websites umfasst, wird in Schritt 3 beim Ausführen des **New-ComplianceSearchAction**-Cmdlets eine Fehlermeldung angezeigt. 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>Tipps zum Suchen nach zu löschenden Nachrichten
 
-Das Ziel der Suchabfrage ist es, die Ergebnisse der Suche auf die Nachricht oder Nachrichten einzuschränken, die Sie entfernen möchten. Hier finden Sie einige Tipps:
+The goal of the search query is to narrow the results of the search to only the message or messages that you want to remove. Here are some tips:
   
 - Wenn Sie den genauen Text oder einen Ausdruck kennen, der in der Betreffzeile der Nachricht aufgeführt ist, verwenden Sie die **Betreff**-Eigenschaft in der Suchabfrage. 
     
@@ -127,7 +128,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 Wenn Sie den vorherigen Befehl ausführen, um Nachrichten vorläufig oder endgültig zu löschen, ist die durch den Parameter *SearchName* bestimmte Suche die Inhaltssuche, die Sie in Schritt 1 erstellt haben. 
   
-Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
+Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Weitere Informationen
 

@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter'
+title: 'Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,13 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
-ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560447"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005962"
 ---
-# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 4: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
+# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
 
 Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusammenarbeiten. Sie müssen sich treffen, per Sprach- und Textnachricht chatten, neue Inhalte erstellen und Informationen und Dateien gemeinsam nutzen, E-Mails austauschen und Kalender und Aufgaben verwalten. Microsoft 365 bietet Cloud-basierte Dienste für alle diese wichtigen Funktionen:
 
@@ -90,9 +89,9 @@ In [diesem Artikel](https://docs.microsoft.com/deployoffice/deployment-guide-mic
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>Benutzertrainingsressourcen für Produktivitäts-Apps und -Dienste
 
-- [Schulen Ihrer Benutzer in Office und Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [Schulen Sie Ihre Benutzer in Office und Microsoft 365](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Office für das Web verwenden](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Fahren Sie mit [Schritt 5](empower-people-to-work-remotely-communication-venues.md) fort, um zusätzliche Kommunikationsorte für Ihre Remotemitarbeitern zu schaffen.
+Fahren Sie mit [Schritt 6](empower-people-to-work-remotely-train-monitor-usage.md) fort für Hinweise, wie Sie Ihre Benutzer schulen und ihren Erfolg überwachen.
