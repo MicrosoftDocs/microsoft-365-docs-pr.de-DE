@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899363"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046045"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Grundlegendes zum Schema "Erweiterte Suche"
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899363"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Das Schema ["Erweiterte Suche"](advanced-hunting-overview.md) besteht aus mehreren Tabellen, die entweder Ereignisinformationen oder Informationen zu Computern und Entitäten bereitstellen. Wenn Sie effektive Abfragen erstellen möchten, die sich über mehrere Tabellen erstrecken, müssen Sie die Tabellen und Spalten im Schema "Erweiterte Suche" kennen.
+Das [Erweiterte Jagd](advanced-hunting-overview.md) Schema besteht aus mehreren Tabellen, die entweder Ereignisinformationen oder Informationen zu Geräten, Warnungen, Identitäten und anderen Entitätstypen bereitstellen. Wenn Sie effektive Abfragen erstellen möchten, die sich über mehrere Tabellen erstrecken, müssen Sie die Tabellen und Spalten im Schema "Erweiterte Suche" kennen.
+
+## <a name="get-schema-information-in-the-security-center"></a>Abrufen von Schemainformationen im Sicherheitscenter
+Verwenden Sie beim Erstellen von Abfragen die integrierte Schemareferenz, um schnell die folgenden Informationen zu jeder Tabelle im Schema abzurufen:
+
+- **Tabellenbeschreibung** – der Typ der in der Tabelle enthaltenen Daten und die Quelle dieser Daten.
+- **Spalten** – alle Spalten in der Tabelle.
+- **Aktionstypen** – mögliche Werte in der `ActionType` Spalte, die die von der Tabelle unterstützten Ereignistypen darstellen. Dies wird nur für Tabellen bereitgestellt, die Ereignisinformationen enthalten.
+- **Beispielabfrage** – Beispielabfragen, die die Verwendung der Tabelle kennzeichnen.
+
+### <a name="access-the-schema-reference"></a>Zugreifen auf die Schemareferenz
+Um schnell auf die Schemareferenz zuzugreifen, wählen Sie in der Schemadarstellung die Aktion **Verweis anzeigen** neben dem Tabellennamen aus. Sie können auch **Schema Referenz** auswählen, um nach einer Tabelle zu suchen.   
+
+![Abbildung mit dem Zugriff auf die in-Portal-Schemareferenz ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>Schematabellen
-
 Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verweist auf eine Seite, auf der die Spaltennamen für diese Tabelle beschrieben werden. Die Tabellen- und Spaltennamen werden außerdem im Sicherheitscenter als Bestandteil der Schemadarstellung in der Ansicht "Erweiterte Suche" aufgelistet.
 
 | Tabellenname | Beschreibung |
@@ -47,7 +58,7 @@ Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verwei
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Dateierstellung und -änderung sowie andere Dateisystemereignisse |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-Ladeereignisse |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Computer-Informationen einschließlich Infos zum Betriebssystem |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Anmeldungen und andere Authentifizierungsereignisse |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Anmeldungen und andere Authentifizierungsereignisse auf Geräten |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Netzwerkverbindung und zugehörige Ereignisse |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Netzwerkeigenschaften von Computern, einschließlich Adapter, IP- und Mac-Adressen sowie verbundene Netzwerke und Domänen |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Prozesserstellung und zugehörige Ereignisse |
@@ -61,7 +72,7 @@ Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verwei
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Sicherheitsereignisse, die nach der Zustellung auftreten, nachdem Microsoft 365 die e-Mails an das Empfängerpostfach übermittelt hat |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informationen zu URLs in e-Mails |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformationen aus verschiedenen Quellen, einschließlich Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Von Active Directory aufgezeichnete Authentifizierungsereignisse und andere Microsoft Online Services |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Authentifizierungsereignisse für Active Directory und Microsoft Online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Abfrageaktivitäten, die für Active Directory-Objekte wie Benutzer, Gruppen, Geräte und Domänen ausgeführt werden |
 
 ## <a name="related-topics"></a>Verwandte Themen

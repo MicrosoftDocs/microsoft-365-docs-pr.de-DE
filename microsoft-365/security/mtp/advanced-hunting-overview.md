@@ -18,12 +18,11 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
-ms.translationtype: MT
+ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347831"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049632"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -47,17 +46,13 @@ Es wird empfohlen, mehrere Schritte durchzugehen, um schnell mit der Verwendung 
 | **Gespür für die Sprache** | Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/), die dieselbe Syntax und dieselben Operatoren unterstützt. Beginnen Sie, die Abfragesprache zu erlernen, indem Sie die erste Abfrage ausführen. | [Übersicht über die Abfragesprache](advanced-hunting-query-language.md) |
 | **Informationen zur Verwendung der Abfrageergebnisse** | Hier finden Sie Informationen zu Diagrammen und verschiedenen Möglichkeiten zum Anzeigen oder Exportieren Ihrer Ergebnisse. Erfahren Sie, wie Sie Abfragen schnell optimieren und Drilldowns ausführen können, um umfassendere Informationen zu erhalten. | [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md) |
 | **Grundlegendes zum Schema** | Verschaffen Sie sich einen allgemeinen Überblick über die Tabellen im Schema und die zugehörigen Spalten. Auf diese Weise können Sie bestimmen, wo nach Daten gesucht wird und wie Sie Ihre Abfragen erstellen. | [Schemareferenz](advanced-hunting-schema-tables.md) |
-| **Nutzen von vordefinierten Abfragen** | Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md) |
+| **Nutzen von vordefinierten Abfragen** | Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)<br>- [Go Hunt](advanced-hunting-go-hunt.md) |
 | **Optimieren von Abfragen** | Erfahren Sie, wie Sie effiziente Abfragen und Abfragen erstellen, die Daten aus E-Mails und Geräten kombinieren. | - [Bewährte Methoden für Abfragen](advanced-hunting-shared-queries.md) <br>- [Jagd auf Geräte und e-Mails](advanced-hunting-best-practices.md) |
 | **Erstellen benutzerdefinierter Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Jagd Abfragen verwenden können, um Warnungen auszulösen und Reaktions Aktionen automatisch anzuwenden. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)<br>- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Zugriff abrufen
 Um Advanced Hunting oder andere [Microsoft Threat Protection](microsoft-threat-protection.md) -Funktionen verwenden zu können, müssen Sie in Azure AD eine entsprechende Rolle zugewiesen haben. Beachten Sie, dass Ihr Zugriff auf Endpunkt Daten durch rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender ATP beeinflusst wird. [Lesen Sie mehr über die Verwaltung des Zugriffs auf Microsoft Threat Protection.](mtp-permissions.md)
 
-## <a name="get-help-as-you-write-queries"></a>Hilfe beim Schreiben von Abfragen
-Nutzen Sie die folgenden Funktionen, um Abfragen schneller zu schreiben:
-- **AutoSuggest** – beim Schreiben von Abfragen stellt Advanced Hunting Vorschläge von IntelliSense zur Verfügung. 
-- **Schemareferenz** – Eine Schemareferenz, die die Liste der Tabellen und die zugehörigen Spalten enthält, wird neben dem Arbeitsbereich bereitgestellt. Wenn Sie weitere Informationen erhalten möchten, zeigen Sie mit dem Mauszeiger auf ein Element. Doppelklicken Sie auf ein Element, um es im Abfrage-Editor einzufügen.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)

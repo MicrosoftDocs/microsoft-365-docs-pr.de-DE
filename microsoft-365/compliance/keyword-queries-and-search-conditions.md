@@ -22,12 +22,11 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie im Office 365 Security & Compliance Center durchsuchen können.
-ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: MT
+ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817514"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049803"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -87,7 +86,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |:-----|:-----|:-----|:-----|
 |Ursprung|Das Feld Autor aus Office-Dokumenten, das bleibt, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die e-Mails an eine andere Person weitergeben, die es dann in SharePoint hoch lädt, behält das Dokument weiterhin den ursprünglichen Autor bei. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`author:"Garth Fort"`|Alle Dokumente, die von Garth fort erstellt wurden.|
 |ContentType|Der SharePoint-Inhaltstyp eines Elements wie Element, Dokument oder Video.|`contenttype:document`|Alle Dokumente werden zurückgegeben.|
-|Erstellt|Das Datum, an dem ein Element erstellt wird.|`created\>=06/01/2016`|Alle Elemente, die am oder nach dem 1. Juni 2016 erstellt wurden.|
+|Erstellt|Das Datum, an dem ein Element erstellt wird.|`created>=06/01/2016`|Alle Elemente, die am oder nach dem 1. Juni 2016 erstellt wurden.|
 |CreatedBy|Die Person, die ein Element erstellt oder hochgeladen hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`createdby:"Garth Fort"`|Alle Elemente, die von Garth fort erstellt oder hochgeladen wurden.|
 |DetectedLanguage|Die Sprache eines Elements.|`detectedlanguage:english`|Alle Elemente in Englisch.|
 |DocumentLink|Der Pfad (URL) eines bestimmten Ordners auf einer SharePoint-oder OneDrive für Unternehmen-Website. Wenn Sie diese Eigenschaft verwenden, müssen Sie die Website durchsuchen, in der sich der angegebene Ordner befindet.  <br/> Um Elemente zurückzugeben, die sich in Unterordnern des Ordners befinden, den Sie für die documentlink-Eigenschaft angeben, müssen Sie \* die URL des angegebenen Ordners hinzufügen.`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Weitere Informationen zum Suchen nach der documentlink-Eigenschaft und zum Abrufen der documentlink-URLs für Ordner auf einer bestimmten Website mithilfe eines Skripts finden Sie unter [Verwenden der Inhaltssuche für gezielte Auflistungen](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen OneDrive für Unternehmen-Ordner zurückgegeben. Im zweiten Beispiel werden Dokumente im angegebenen Websiteordner (und alle Unterordner) zurückgegeben, die das Wort "Confidential" im Dateinamen enthalten.|

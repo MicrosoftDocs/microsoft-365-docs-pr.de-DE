@@ -21,12 +21,11 @@ search.appverid:
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: Beginnen Sie mit der Verwendung ihrer eigenen Domäne für e-Mails, Websites und Konten in Office 365. Erfahren Sie mehr über Domänen, nehmen Sie Änderungen an Ihrer Domäne vor, integrieren Sie e-Mails und Websites, und erhalten Sie Tools und Tipps.
-ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399920"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049678"
 ---
 # <a name="get-help-with-office-365-domains"></a>Abrufen von Hilfe zu Office 365-Domänen
 
@@ -158,7 +157,6 @@ ms.locfileid: "44399920"
                             <p><a href="information-for-dns-records.md">Sammeln der erforderlichen Informationen zum Erstellen von DNS-Einträgen</a></p>
                             <p><a href="find-your-domain-registrar.md">Suchen der Registrierungsstelle Ihrer Domäne</a></p>
                             <p><a href="buy-a-domain-name.md">Erwerben eines Domänennamens</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">Einrichten eines Pilottests der benutzerdefinierten Domäne mit einigen Personen im Unternehmen</a></p>
                             <p><a href="domain-connect.md">Schnelles Hinzufügen einer GoDaddy-Domäne zu Office 365</a></p>
                             <p>Schrittweise Anleitungen zum <a href="create-dns-records-at-any-dns-hosting-provider.md">Hinzufügen der erforderlichen DNS-Einträge für Office 365-Dienste</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">Vorbereiten einer nicht routingfähigen Domäne (wie z. B. der Domäne ".local") für die Verzeichnissynchronisierung</a></p>
@@ -208,8 +206,7 @@ ms.locfileid: "44399920"
                         <h3>Änderungen vornehmen</h3>
                             <p><a href="find-and-fix-issues.md">Suchen und Beheben von Problemen nach dem Ändern des Domänennamens oder der DNS-Einträge</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen in Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">Hinzufügen von benutzerdefinierten Unterdomänen oder mehrere Domänen in Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">Ändern, wie Office 365 DNS-Einträge für Ihre Domäne verwaltet</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">Hinzufügen benutzerdefinierter Unterdomänen oder mehrerer Domänen in Microsoft 365</a></p>
                             <p><a href="remove-a-domain.md">Entfernen einer Domäne</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">Verwenden der eigenen Domäne für die Integration in lokale E-Mail, z. B. mit Verzeichnisdiensten</a></p>
                             <p><a href="../contact-support-for-business-products.md">Noch Fragen? Kontaktieren Sie den Support, oder erstellen Sie ein Supportticket</a></p>

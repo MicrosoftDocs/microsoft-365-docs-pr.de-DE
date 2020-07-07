@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854364"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049940"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurieren von Microsoft Threat Protection-Säulen für Ihre Testlaborumgebung
 
@@ -237,7 +236,7 @@ Klicken Sie auf **Weiter**.
 16. Scrollen Sie nach unten, und klicken Sie auf **Einstellungen speichern** , um die neuen Integrationen zu bestätigen.
 <br>![Schaltfläche "Bild of_Save Einstellungen", auf die Sie klicken müssen](../../media/mtp-eval-72.png) <br>
 
-## <a name="start-the-microsoft-threat-protection-service"></a>Starten des Microsoft Threat Protection-Diensts
+## <a name="start-the-microsoft-threat-protection-service"></a>Microsoft Thread Protection-Dienst starten
 >[!NOTE]
 >Ab dem 1. Juni 2020 Microsoft Threat Protection-Features für alle berechtigten Mandanten automatisch aktiviert. Weitere Informationen finden Sie [in diesem Artikel Microsoft Tech Community on License Berechtigung](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
 <br>
@@ -247,8 +246,9 @@ Wechseln Sie zu [Microsoft 365 Security Center](https://security.microsoft.com/h
 
 Eine umfassendere Anleitung finden Sie unter [Aktivieren von Microsoft Threat Protection](mtp-enable.md). 
 
-Herzlichen Glückwunsch! Sie haben soeben Ihre Microsoft Threat Protection Test Lab-Umgebung erstellt. Sie können nun einen Angriff simulieren und sehen, wie die produktübergreifenden Funktionen erkennen, Warnungen erstellen und automatisch auf einen Datei übergreifenden Angriff auf einen Endpunkt reagieren.
+Herzlichen Glückwunsch! Sie haben soeben Ihre Microsoft Threat Protection Test Lab-Umgebung erstellt. Jetzt können Sie sich mit der Microsoft Threat Protection-Benutzeroberfläche vertraut machen. In diesem Artikel erfahren Sie, wie Sie die einzelnen Dashboards für Ihre täglichen Aufgaben im Zusammenarbeit mit Sicherheitsfunktionen verwenden können: [Microsoft Threat Protection – interaktive Anleitung](https://aka.ms/MTP-Interactive-Guide).
 
+Als nächstes können Sie einen Angriff simulieren und sehen, wie die produktübergreifenden Funktionen erkennen, Warnungen erstellen und automatisch auf einen Datei übergreifenden Angriff auf einen Endpunkt reagieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Generieren Sie eine Testwarnung](generate-test-alert.md).
