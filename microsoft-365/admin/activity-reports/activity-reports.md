@@ -13,24 +13,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
-ms.translationtype: HT
+ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794017"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387801"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
-Sie können ganz einfach sehen, wie Personen in Ihrem Unternehmen die Microsoft 365-Dienste nutzen. So können Sie beispielsweise erkennen, wer einen Dienst häufig nutzt und die Kontingente ausschöpft, oder wer möglicherweise gar keine Microsoft 365-Lizenz benötigt.
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
   
-Berichte sind für die letzten 7 Tage, 30 Tage, 90 Tage und 180 Tage verfügbar.  Es stehen nicht sofort Daten für alle Berichtszeiträume zur Verfügung. Die Berichte sind erst nach 48 Stunden verfügbar.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
 Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie die Berichte verwenden können:
   
@@ -97,6 +97,8 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 - [Nutzung der E-Mail-Apps](email-apps-usage.md)
 
 - [Forms-Aktivitäten](forms-activity.md)
+
+- [Forms Pro-Aktivität](forms-pro-activity.md)
   
 - [Microsoft 365-Gruppen](office-365-groups.md)
   
@@ -156,7 +158,7 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Anzeigen von Verwendungsinformationen für einen bestimmten Benutzer
 
-Verwenden Sie die Dienstberichte, um zu untersuchen, wie häufig ein bestimmter Benutzer den Dienst nutzt. Wenn Sie beispielsweise herausfinden möchten, wie viel Postfachspeicher ein bestimmter Benutzer in Anspruch genommen hat, öffnen Sie den Bericht "Postfachspeichernutzung", und sortieren Sie die Benutzer nach Name. Wenn Sie mehrere tausend Benutzer verwalten müssen, exportieren Sie den Bericht nach Excel, damit Sie die Liste schnell filtern können.
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
   
 Sie können keinen Bericht generieren, indem Sie ein Benutzerkonto eingeben und dann eine Liste anzeigen, welche Dienste wie häufig genutzt werden.
   
@@ -174,7 +176,7 @@ Die Benutzerliste sieht wie folgt aus:
   
 ![Berichte – anonymisierte Benutzerliste](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Es dauert ein paar Minuten, bis diese Änderungen für die Berichte im Dashboard wirksam werden. Diese Einstellung gilt auch für die Berichte-API.
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Was geschieht mit Nutzungsdaten, wenn ein Benutzerkonto geschlossen wird?
 

@@ -13,12 +13,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Microsoft 365 Finanzdienstleistern bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
-ms.translationtype: HT
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214696"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432427"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -67,7 +66,7 @@ Teams können einen Raum für die Zusammenarbeit bereitstellen, um vertrauliche 
 
 Ein weiteres häufiges Szenario ist die Nutzung von Teams als „virtueller Datenraum“ zur sicheren Zusammenarbeit, inklusive der Speicherung und Verwaltung von Dokumenten. Teammitglieder und Syndikate im Investmentbanking, in der Vermögensverwaltung oder bei Private-Equity-Firmen können bei einem Geschäft oder einer Investition sicher zusammenarbeiten. Funktionsbereichsübergreifende Teams sind oft an der Planung und Erfüllung solcher Geschäfte beteiligt, und die Fähigkeit, Daten sicher auszutauschen und Unterhaltungen zu führen, ist eine Kernanforderung. Der sichere Austausch relevanter Dokumente mit externen Investoren ist ebenfalls eine wichtige Voraussetzung. Teams bietet einen sicheren und vollständig überprüfbaren Standort, von dem aus Investitionsdaten zentral gespeichert, geschützt und gemeinsam genutzt werden können.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Eine Gruppe von Büroangestellten diskutiert in einer Besprechung Bilder auf einem großen Bildschirm.":::
+:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Eine Gruppe von Büroangestellten diskutiert in ein Besprechung Bilder auf einem großen Bildschirm.":::
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: Verbessern Sie die Zusammenarbeit und reduzieren Sie das Risiko bei der Einhaltung von Vorschriften
 
@@ -99,7 +98,7 @@ Zu den von der FINRA empfohlenen effektiven Praktiken gehören die folgenden:
 * Klare Definition und Kontrolle der zulässigen digitalen Kanäle. Definieren von genehmigten und unzulässigen digitalen Kanälen. Sperren oder Beschränken der Nutzung unzulässiger digitaler Kanäle oder unzulässiger Funktionen innerhalb digitaler Kanäle, die die Fähigkeit der Organisation einschränken, die Anforderungen an das Archivmanagement und die Aufsicht zu erfüllen.
 * Bereitstellen von Schulungen für die digitale Kommunikation. Implementierung von obligatorischen Schulungsprogrammen, bevor registrierte Vertreter Zugang zu genehmigten digitalen Kanälen erhalten. Die Schulung trägt dazu bei, die Erwartungen einer Organisation an die geschäftliche und persönliche digitale Kommunikation zu klären, und sie führt die Mitarbeiter durch die konforme Nutzung der zulässigen Funktionen der einzelnen Kanäle.
 
-Die Feststellungen und Beobachtungen der FINRA für die digitale Kommunikation beziehen sich direkt auf die Fähigkeit einer Organisation, die [SEC-Regel 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) für die Aufbewahrung aller geschäftsbezogenen Kommunikationen, die FINRA-Regeln [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) und [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) für die Überwachung und Überprüfung der Kommunikation und die Regelreihe [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) für die Aufbewahrung von Aufzeichnungen einzuhalten. Die Commodity Futures Trading Commission (CFTC) verkündet ähnliche Anforderungen unter 17 CFR 131. Diese Bestimmungen werden weiter unten in diesem Artikel ausführlich besprochen.
+Die Feststellungen und Beobachtungen der FINRA für die digitale Kommunikation beziehen sich direkt auf die Fähigkeit einer Organisation, die [SEC-Regel 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) für die Aufbewahrung aller geschäftsbezogenen Kommunikationen, die FINRA-Regeln [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) und [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) für die Überwachung und Überprüfung der Kommunikation und die Regelreihe [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) für die Aufbewahrung von Aufzeichnungen einzuhalten. Die Commodity Futures Trading Commission (CFTC) verkündet ähnliche Anforderungen gemäß 17 CFR 131. Diese Bestimmungen werden weiter unten in diesem Artikel ausführlich besprochen.
 
 ***Teams bietet zusammen mit der umfassenden Suite von Microsoft 365 Sicherheits- und Compliance-Angeboten einen digitalen Unternehmenskommunikationskanal für Finanzdienstleistungsinstitute, der es ihnen ermöglicht, effektiv Geschäfte zu tätigen und Vorschriften einzuhalten.*** Im weiteren Verlauf dieses Artikels wird beschrieben, wie die in Microsoft 365 integrierten Funktionen für die Verwaltung von Unterlagen, den Schutz von Informationen, Informationsbarrieren und die Überwachungskontrolle den Teams ein robustes Instrumentarium an die Hand geben, mit dem sie diese gesetzlichen Verpflichtungen erfüllen können.
 

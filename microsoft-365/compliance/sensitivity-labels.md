@@ -20,12 +20,11 @@ description: Verwenden Sie Vertraulichkeitskennzeichnungen aus dem Microsoft Inf
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819245"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936794"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -79,9 +78,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>Wirkung von Vertraulichkeitsbezeichnungen
 
-> [!NOTE]
-> Zusätzlich zur Anwendung von Vertraulichkeitsbezeichnungen auf E-Mails und Dokumente, die aktuell in der Vorschau angezeigt werden, können Sie auch [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und Microsoft Office SharePoint Online-Websites](sensitivity-labels-teams-groups-sites.md) verwenden.
-
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
 - **Verschlüsseln** Sie nur E-Mails oder E-Mails und Dokumente. Sie können auswählen, welche Benutzer oder Gruppen über Berechtigungen zum Ausführen welcher Aktionen verfügen, und wie lange diese Berechtigungen gültig sind. Sie können z. B. festlegen, dass Benutzer in einer bestimmten Gruppe in einer anderen Organisation nach der Festlegung der Bezeichnung für den Inhalt nur sieben Tage lang berechtigt sind, den Inhalt zu überprüfen. Alternativ können Sie, statt Berechtigungen durch einen Administrator zu definieren, Ihren Benutzern das Zuweisen von Berechtigungen für den Inhalt erlauben, wenn sie die Bezeichnung anwenden. 
@@ -97,9 +93,9 @@ After a sensitivity label is applied to an email or document, any configured pro
     Zeichenfolgenlängen: Wasserzeichen sind auf 255 Zeichen beschränkt. Kopf-und Fußzeilen sind (mit Ausnahme von Excel) auf 1024 Zeichen beschränkt. Bei Excel liegt der Höchstwert bei 255 Zeichen für Kopf-und Fußzeilen, aber in dieser Beschränkung sind nicht sichtbare Zeichen, wie z. B. Formatierungscodes, enthalten. Wenn dieser Wert erreicht ist, wird die eingegebene Zeichenfolge in Excel nicht angezeigt.
 
 
-- **Schützen von Inhalten in Containern, z. B. Websites und Gruppen**, wenn Sie sich für die Vorschauversion anmelden, um [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (Public Preview) zu verwenden](sensitivity-labels-teams-groups-sites.md).
+- **Schützen von Inhalten in Containern, z. B. Websites und Gruppen**, wenn Sie die Funktion aktivieren um[Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites (Public Preview) zu verwenden](sensitivity-labels-teams-groups-sites.md).
     
-    Konfigurationsoptionen für **Website- und Gruppeneinstellungen** werden erst angezeigt, wenn Sie sich für die Vorschauversion anmelden. Beachten Sie, dass diese Bezeichnungskonfiguration nicht dazu führt, dass Dokumente automatisch mit Bezeichnungen versehen werden. Stattdessen werden die Inhalte geschützt, indem die Bezeichnungseinstellungen den Zugriff auf den Container, in dem Dokumente gespeichert sind, steuern. Diese Einstellungen legen die Datenschutzebene fest, bestimmen, ob ein Microsoft 365-Gruppenbesitzer Gäste zur Gruppe hinzufügen kann, und steuern die Zugriffsebene für ein nicht verwaltetes Gerät.
+    Konfigurationsoptionen für **Website- und Gruppeneinstellungen** werden erst angezeigt, wenn Sie diese Funktion aktivieren. Beachten Sie, dass diese Bezeichnungskonfiguration nicht dazu führt, dass Dokumente automatisch mit Bezeichnungen versehen werden. Stattdessen werden die Inhalte geschützt, indem die Bezeichnungseinstellungen den Zugriff auf den Container, in dem Dokumente gespeichert sind, steuern. Diese Einstellungen legen die Datenschutzebene fest, bestimmen, ob ein Microsoft 365-Gruppenbesitzer Gäste zur Gruppe hinzufügen kann, und steuern die Zugriffsebene für ein nicht verwaltetes Gerät.
 
 - **Automatisches Anwenden der Bezeichnung in Office-Apps oder Empfehlen einer Bezeichnung.** Sie können auswählen, welche Arten von vertraulichen Informationen mit Bezeichnungen versehen werden sollen, und die Bezeichnung entweder automatisch anwenden oder die Benutzer auffordern, die von Ihnen empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, zeigt die Eingabeaufforderung einen von Ihnen ausgewählten Text an. Zum Beispiel:
     

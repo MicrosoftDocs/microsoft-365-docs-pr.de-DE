@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Fordern Sie Ihre Remote-Mitarbeiter auf, sich mit der Mehrstufigen Authentifizierung (MFA) anzumelden.
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560411"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844954"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remote-Mitarbeiter mit MFA
 
@@ -95,6 +94,10 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 ## <a name="let-your-users-reset-their-own-passwords"></a>Gestatten Sie Ihren Benutzern das Zurücksetzen des eigenen Kennworts
 
 Die Self-Service-Kennwortzurücksetzung (SSPR) ermöglicht Benutzern, ihre eigenen Kennwörter zurückzusetzen, ohne sich an die IT-Mitarbeiter wenden zu müssen. Benutzer können ihre Kennwörter jederzeit und von jedem Ort aus schnell zurücksetzen. Schauen Sie sich [dieses Video](https://go.microsoft.com/fwlink/?linkid=2128524) zum Einrichten von SSPR an.
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Melden Sie sich mit Azure AD bei SaaS-Apps an
+
+Zusätzlich zur Bereitstellung von Cloud-Authentifizierung für Benutzer kann Azure AD auch Ihre zentrale Möglichkeit zum Sichern aller Ihrer Apps sein – ganz gleich, ob lokal, in der Microsoft-Cloud, oder in einer anderen Cloud. Durch die [Integration Ihrer Anwendungen in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration) können Sie es Remotemitarbeitern erleichtern, die benötigten Anwendungen zu finden, und sich sicher bei ihnen anzumelden.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Technische Administratorressourcen für MFA und Identität
 

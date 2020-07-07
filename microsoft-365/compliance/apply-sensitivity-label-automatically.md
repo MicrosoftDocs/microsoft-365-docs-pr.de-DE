@@ -16,12 +16,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 615c6541ef7a89fe7c97f3812449821fc531e4ea
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: HT
+ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854317"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874915"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -195,7 +194,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
-    - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein.
+    - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein. Eine Datei, die zur Bearbeitung ausgecheckt ist, fällt in diese Kategorie.
 
 - Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](custom-sensitive-info-types.md) zu verwenden: 
     - Benutzerdefinierte Vertraulichkeitsinformationstypen werden für Inhalte ausgewertet, die nach dem Speichern der benutzerdefinierten Vertraulichkeitsinformationstypen erstellt werden. 
