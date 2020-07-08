@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: In diesem Artikel erfahren Sie, wie Sie mit Domänen verbindungsfähigen Registrierungsstellen arbeiten und Ihre Domäne zu Microsoft 365 hinzufügen.
-ms.openlocfilehash: 70a30201d4b795c7458959b6b2eee14c9b3c7186
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399956"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079979"
 ---
 # <a name="using-domain-connect"></a>Verwenden von Domäne Connect
 
@@ -54,6 +54,6 @@ Im Assistenten bestätigen wir lediglich, dass Sie die Domäne besitzen und dann
 
 ## <a name="what-happens-to-my-email-and-website"></a>Was geschieht mit meiner e-Mail und Website?
 
-Nachdem Sie das Setup abgeschlossen haben, wird der MX-Eintrag für Ihre Domäne so aktualisiert, dass er auf Microsoft 365 verweist, und alle e-Mails für Ihre Domäne beginnen mit Microsoft 365. Stellen Sie sicher, dass Sie Benutzer hinzugefügt haben, und richten Sie in Office 365 Postfächer für jeden ein, der e-Mails in Ihrer Domäne erhält!
+Nachdem Sie das Setup abgeschlossen haben, wird der MX-Eintrag für Ihre Domäne so aktualisiert, dass er auf Microsoft 365 verweist, und alle e-Mails für Ihre Domäne beginnen mit Microsoft 365. Stellen Sie sicher, dass Sie Benutzer hinzugefügt haben, und richten Sie in Microsoft 365 Postfächer für jeden ein, der e-Mails in Ihrer Domäne erhält!
   
 Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, funktioniert sie weiterhin wie zuvor. Die Schritte zum Einrichten von Domänen Verbindungen wirken sich nicht auf Ihre Website aus.

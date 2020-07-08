@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Erfahren Sie, wie Sie mit Ihrem Microsoft 365 for Business-Konto mehr als eine e-Mail-Adresse namens "e-Mail-Alias" erhalten. '
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780289"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080015"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
 
@@ -73,12 +73,12 @@ Sie benötigen [Administratorberechtigungen](../add-users/about-admin-roles.md) 
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. Wenn Sie fertig sind, wählen Sie **Save Changes**aus.
     
-6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Office 365 verbreitet haben.
+6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 aufgefüllt wurden.
     
     Der Benutzer verfügt nun über eine primäre Adresse und einen Alias. Beispielsweise werden alle e-Mails, die an die primäre Adresse von Eliza Hoffman, Eliza@NodPublishers.com, und Ihr Alias Sales@NodPublishers.com gesendet werden, in den Posteingang von Eliza verschoben.
     
@@ -99,17 +99,17 @@ Sie benötigen [Administratorberechtigungen](../add-users/about-admin-roles.md) 
     > [!Important] 
     > Wenn die Fehlermeldung "**ein Parameter kann nicht gefunden werden, der dem Parameternamen**e-Mail-e-Mail-Nachrichten entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis Sie den Mandanten eingerichtet haben, oder Ihre benutzerdefinierte Domäne, wenn Sie kürzlich einen hinzugefügt haben. Der Installationsvorgang kann bis zu 4 Stunden in Anspruch nehmen. Warten Sie eine Weile, damit der Setup-Prozesszeit zum fertig stellen hat, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support, um eine vollständige Synchronisierung für Sie durchführen zu können.
 
-4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
+4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen e-Mail-Alias mithilfe der Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Wenn Sie fertig sind, wählen Sie **Speichern**aus.
+5. Wenn Sie fertig sind, wählen Sie **Speichern**“ aus.
 
-6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Office 365 verbreitet haben. 
+6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 aufgefüllt wurden. 
     
     Der Benutzer verfügt nun über eine primäre Adresse und einen Alias. Beispielsweise werden alle e-Mails, die an die primäre Adresse von Eliza Hoffman, Eliza@NodPublishers.com, und Ihr Alias Sales@NodPublishers.com gesendet werden, in den Posteingang von Eliza verschoben.
     
@@ -130,17 +130,17 @@ Sie benötigen [Administratorberechtigungen](../add-users/about-admin-roles.md) 
     > [!Important] 
     > Wenn die Fehlermeldung "**ein Parameter kann nicht gefunden werden, der dem Parameternamen**e-Mail-e-Mail-Nachrichten entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis Sie den Mandanten eingerichtet haben, oder Ihre benutzerdefinierte Domäne, wenn Sie kürzlich einen hinzugefügt haben. Der Installationsvorgang kann bis zu 4 Stunden in Anspruch nehmen. Warten Sie eine Weile, damit der Setup-Prozesszeit zum fertig stellen hat, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support, um eine vollständige Synchronisierung für Sie durchführen zu können.
 
-4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
+4. Geben Sie in das Textfeld unter **Alias**den ersten Teil des neuen e-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen e-Mail-Alias mithilfe der Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Wenn Sie fertig sind, wählen Sie **Speichern**aus.
+5. Wenn Sie fertig sind, wählen Sie **Speichern**“ aus.
 
-6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Office 365 verbreitet haben. 
+6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 aufgefüllt wurden. 
     
     Der Benutzer verfügt nun über eine primäre Adresse und einen Alias. Beispielsweise werden alle e-Mails, die an die primäre Adresse von Eliza Hoffman, Eliza@NodPublishers.com, und Ihr Alias Sales@NodPublishers.com gesendet werden, in den Posteingang von Eliza verschoben.
     

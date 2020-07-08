@@ -24,11 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Erfahren Sie mehr über Domänen, indem Sie Antworten auf Ihre häufig gestellten Fragen finden.
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049736"
+ms.locfileid: "45068103"
 ---
 # <a name="domains-faq"></a>FAQ zu Domänen
 
@@ -45,15 +46,15 @@ Wenn Sie keine Antwort auf Ihre Frage finden können, lassen Sie es uns wissen, 
 
 Inhalt dieses Artikels
 
-[Was ist die MX-Priorität?](#what-is-mx-priority) 
- [Wie kann ich SPF-Einträge für meine Domäne überprüfen?](#how-can-i-validate-spf-records-for-my-domain) 
- [Was ist ein Domänenname?](#what-is-a-domain-name) 
- [Was geschieht, wenn mein DNS-Anbieter bestimmte Datensatztypen nicht unterstützt?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
- [Wie kann ich die Standarddomäne in Microsoft 365 festlegen oder ändern?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
- [Kann ich Microsoft 365 benutzerdefinierte Unterdomänen oder mehrere Domänen hinzufügen?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
- [Warum habe ich eine "onmicrosoft.com"-Domäne?](#why-do-i-have-an-onmicrosoftcom-domain) 
- [Warum habe ich eine "onmicrosoft.de"-Domäne?](#why-do-i-have-an-onmicrosoftde-domain) 
- [Wie kann ich meinen gemeinnützigen oder Bildungsstatus überprüfen?](#how-do-i-verify-my-nonprofit-or-education-status)
+- [Was ist MX-Priorität?](#what-is-mx-priority)
+- [Wie kann ich SPF-Einträge für meine Domäne überprüfen?](#how-can-i-validate-spf-records-for-my-domain)
+- [Was ist ein Domänenname?](#what-is-a-domain-name)
+- [Was geschieht, wenn mein DNS-Anbieter bestimmte Eintragstypen nicht unterstützt?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [Wie kann ich die Standarddomäne in Microsoft 365 festlegen oder ändern?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [Kann ich Microsoft 365 benutzerdefinierte Unterdomänen oder mehrere Domänen hinzufügen?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Warum habe ich eine Domäne des Typs "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
+- [Warum habe ich eine "onmicrosoft.de"-Domäne?](#why-do-i-have-an-onmicrosoftde-domain)
+- [Wie kann ich meinen gemeinnützigen oder Bildungsstatus überprüfen?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>Was ist MX-Priorität?
 

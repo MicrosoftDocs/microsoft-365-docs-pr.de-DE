@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Hier erfahren Sie, wie Sie Ihre eigenen DNS-Einträge verwalten oder Ihre DNS-Einträge von Microsoft verwalten lassen.
-ms.openlocfilehash: 1b82fd40556b1bf828f9f367aa1175f21723cc8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ac026ce0dba4eefff2c837da71c18b08aca12ea6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399884"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079773"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Einrichten Ihrer Domäne (hostspezifische Anweisungen)
 
-Um eine benutzerdefinierte Domäne (contoso.com) mit Office 365 verwenden zu können, müssen Sie Ihre Domäne überprüfen und die DNS-Einträge Ihrer Domäne konfigurieren. 
+Um mit der Verwendung einer benutzerdefinierten Domäne (contoso.com) mit Microsoft 365 zu beginnen, müssen Sie Ihre Domäne überprüfen und die DNS-Einträge Ihrer Domäne konfigurieren. 
   
 Sie können DNS-Einträge mithilfe der Verwaltungstools auf Ihrem Domänenhost hinzufügen und verwalten oder Microsoft die Kontrolle über Ihre Domäneneinträge erteilen, und wir werden Sie für Sie einrichten.
   
 Wählen Sie Ihren Domänenhost unten aus, um die genauen Schritte auszuführen. Wenn Sie nicht sicher sind, wer Ihr Host ist, finden Sie weitere Informationen unter [Suchen ihrer Domänen Registrierungs](find-your-domain-registrar.md)Stelle.
   
 
-## <a name="let-office-365-manage-your-dns-records"></a>Lassen Sie Office 365 Ihre DNS-Einträge verwalten.
+## <a name="let-microsoft-365-manage-your-dns-records"></a>Lassen Sie Microsoft 365 Ihre DNS-Einträge verwalten
 
 ||
 |---|---|
@@ -52,7 +52,7 @@ Wählen Sie Ihren Domänenhost unten aus, um die genauen Schritte auszuführen. 
 |[NameCheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-Oder erfahren Sie, wie Sie Namen [Server ändern, um Office 365 bei einer beliebigen Domänenregistrierungsstelle einzurichten](change-nameservers-at-any-domain-registrar.md).
+Oder erfahren Sie, wie Sie Namen [Server ändern, um Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle einzurichten](change-nameservers-at-any-domain-registrar.md).
 
 ## <a name="manage-your-own-dns-records"></a>Verwalten Ihrer eigenen DNS-Einträge
 
@@ -68,7 +68,7 @@ Oder erfahren Sie, wie Sie Namen [Server ändern, um Office 365 bei einer belieb
 |[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [Netzwerklösungen](../dns/create-dns-records-at-network-solutions.md) |
 |[DreamHost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
-| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 für Office 365](../dns/create-dns-records-at-register365.md)  |
+| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 für Microsoft 365](../dns/create-dns-records-at-register365.md)  |
 | [Freenom](../dns/create-dns-records-at-freenom.md) | [web.com](../dns/create-dns-records-at-web-com.md)|
 |[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[Windows-basiertes DNS](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google Domains](../dns/create-dns-records-at-google-domains.md) |[WiX](../dns/create-dns-records-at-wix.md) |

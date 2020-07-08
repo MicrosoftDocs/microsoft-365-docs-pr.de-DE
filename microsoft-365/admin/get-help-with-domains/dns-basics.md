@@ -22,11 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049654"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079991"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -144,7 +145,7 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-## <a name="why-add-a-domain-in-office-365"></a>Warum muss ich in Office 365 eine Domäne hinzufügen?
+## <a name="why-add-a-domain-in-microsoft-365"></a>Warum muss ich in Microsoft 365 eine Domäne hinzufügen?
 
 
 Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 

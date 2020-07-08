@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779917"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079737"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -57,7 +57,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 |:-----|:-----|
 |Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
 |Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../contact-support-for-business-products.md).  <br/> |
-|Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [ändern oder Zurücksetzen Ihres Kennworts in Microsoft 365, betrieben von 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Ändern oder Zurücksetzen Ihres Kennworts in Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicherheit, Datenschutz, Compliance und Details zu den Ebenen des Supports  <br/> |Bereitgestellt von 21Vianet.  <br/> |
 |Office-Desktopsetup  <br/> |Das Office-Desktopsetup ist für Office 2010 und Office 2007 nicht verfügbar. Administratoren können jedoch [aktuelle Office-Desktopanwendungen so konfigurieren, dass sie mit Office 365 funktionieren](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Unterstützung für Mobilgeräte und Geräte\*  <br/> | Demnächst stehen folgende mobile Funktionen zur Verfügung:  <br/>  Mobile Geräteverwaltung (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) sind nicht verfügbar, Sie können jedoch Exchange ActiveSync-Geräte oder ein Angebot von Research in Motion (RIM, drahtlose E-Mail-Lösung von Blackberry) verwenden, um Blackberry Enterprise Server (BES) auszuführen.  <br/>  Weitere Informationen zum mobilen Support finden Sie unter [Einrichten und Verwalten des mobilen Zugriffs von Benutzern](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
