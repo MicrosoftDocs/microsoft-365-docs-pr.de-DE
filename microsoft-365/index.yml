@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
   ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/27/2020
   ms.locfileid: "44909288"
@@ -53,8 +53,8 @@ additionalContent:
     - title: Microsoft 365 Enterprise
       summary: Konzipiert für große Organisationen. Schützen Sie Ihr Unternehmen, und verändern Sie die Art und Weise, wie Sie mit Office-App, Windows 10 und Enterprise Mobility + Security arbeiten.
       url: ./enterprise/index.yml
-    - title: Microsoft 365-Center – Lösungen und Architekturen
-      summary: Hier erfahren Sie, wie Sie die richtige Lösung und Architektur für Ihre Organisation entwerfen.
+    - title: Microsoft 365 Lösungs- und Architektur-Center
+      summary: Grundlegendes zum Design der Lösung und Architektur, das für Ihre Organisation geeignet ist.
       url: ./solutions/index.yml
     - title: Microsoft 365 Education
       summary: Konzipiert für Lehrkräfte, um Kreativität und Zusammenarbeit zu fördern sowie eine einfache und sichere Umgebung in einer einzelnen, bezahlbaren Lösung für das Bildungswesen bereitzustellen.

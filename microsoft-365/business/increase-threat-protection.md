@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Office 365 Advanced Threat Protection ein, und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
-ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 0e6cb7ed13a0851ef249e1f599d17e03c052414a
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786204"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083600"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -78,7 +78,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für die Regel an. Verwenden Sie die Standardwerte für die restlichen Einstellungen, es sei denn, Sie möchten Sie ändern.
     
-6. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**||
 |:-----|:-----|:-----|
@@ -110,7 +110,7 @@ Um eine e-Mail-Transportregel zu erstellen, schauen Sie sich [Dieses kurze Video
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Verwenden Sie die Standardwerte für die restlichen Einstellungen, es sei denn, Sie möchten Sie ändern.
     
-6. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|
 |:-----|:-----|
@@ -137,7 +137,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, schauen Sie sich [Dieses kurz
     
 4. Wählen Sie auf der Seite **Anti-Phishing** die Option **+ Create**aus. Ein Assistent wird gestartet, der Sie schrittweise durch die Definition ihrer Anti-Phishing-Richtlinie führt.
     
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie an, wie in der folgenden Tabelle empfohlen. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie an, wie in der folgenden Tabelle empfohlen. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Erstellen Sie diese Richtlinie** oder **Speichern**, je nach Bedarf.
     
@@ -208,7 +208,7 @@ So ändern Sie die Standardrichtlinie:
     
 2. Wählen Sie unter **Einstellungen für Inhalt außer e-Mail**die Option **Microsoft 365 apps for Enterprise, Office für IOS und Android**aus.
     
-3. Wählen Sie **Speichern**. 
+3. Wählen Sie **Speichern** aus. 
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
@@ -216,7 +216,7 @@ So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
-3. Wählen Sie **Speichern**. 
+3. Wählen Sie **Speichern** aus. 
 
 |**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
 |:-----|:-----|

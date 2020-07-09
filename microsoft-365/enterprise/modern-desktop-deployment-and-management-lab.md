@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869856"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052725"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
 Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das Microsoft Endpoint Configuration Manager, Desktop Analytics, Office-Anpassungstool, OneDrive, Windows Autopilot und mehr umfasst.
 
-Diese Schulung wird dringend für Organisationen empfohlen, die sich auf das Ende der Lebensdauer von Windows 7 vorbereiten, und gilt auch, wenn Sie derzeit Windows 10 und Office 365 Plus oder Office 2019 verwenden. Darüber hinaus ist die Übung als isolierte Umgebung ideal geeignet, um Aktualisierungen von Bereitstellungstools zu untersuchen und die Automatisierung Ihrer Bereitstellung zu testen.
+Diese Schulung wird dringend für Organisationen empfohlen, die sich auf das Ende der Lebensdauer von Windows 7 vorbereiten, und gilt auch, wenn Sie derzeit Windows 10 und Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Darüber hinaus ist die Übung als isolierte Umgebung ideal geeignet, um Aktualisierungen von Bereitstellungstools zu untersuchen und die Automatisierung Ihrer Bereitstellung zu testen.
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -52,12 +52,13 @@ DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden
 
 ## <a name="step-by-step-labs"></a>Schritt-für-Schritt-Übungen
 
-Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarien. Die Übungen wurden für die neuesten Versionen von Intune und Configuration Manager (Version 1910) aktualisiert. 
+Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Verwaltungsszenarien. Die Übungen wurden für die neuesten Versionen von Intune und Configuration Manager aktualisiert. 
 
 ### <a name="device-and-app-readiness"></a>Geräte- und App-Bereitschaft
 
   - Desktop Analytics
   - NEU! Bereitstellen und Aktualisieren des neuen Microsoft Edge 
+  - NEU! Installieren und Konfigurieren des Cloud Management-Gateways (CMG) 
   - Internet Explorer-Modus 
   - Application Guard 
 
@@ -73,6 +74,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Unternehmensverwaltete Bereitstellung mit Configuration Manager und Microsoft Intune
   - Anwendungsbereitstellung und -verwaltung mit Microsoft Intune
   - App-Bereitstellung und Self-Service-Installation mit Microsoft Store für Unternehmen
+  - NEU! Installieren von Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>Migration von Benutzerdateien und -einstellungen
 
@@ -92,6 +94,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
+  - NEU! Endpunktsicherheit 
 
 ### <a name="os-deployment-and-feature-updates"></a>Bereitstellung des Betriebssystems und Featureupdates
 
@@ -105,7 +108,8 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Verwalten von Windows-Updates über Gruppenrichtlinien
   - Warten von Windows 10 mit Configuration Manager und Intune
   - Wartung von Microsoft 365 Apps for Enterprise mit Configuration Manager
-
+  - NEU! Office-Updates mit Configuration Manager und Intune
+  
 ### <a name="new-windows-virtual-desktop"></a>NEU! Windows Virtual Desktop
   - Windows Virtual Desktop: Vorbereiten, Bereitstellen, Optimieren 
 

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Diese Zielseite enthält Links und Planungsinformationen für Sicherheit und Compliance in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034895"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086656"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planen der Sicherheits &amp; Konformität
 
@@ -32,7 +32,7 @@ Das Verwalten von Sicherheit und Compliance ist eine partnerschaftliche Aufgabe.
 
 Verschaffen Sie sich einen Überblick über die Möglichkeiten zum Schutz von Informationen mithilfe des Posters „Informationsschutz für Office 365“. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Schritt 2: Überprüfen Sie Ihre Sicherheitsbewertung
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365.
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399146"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083586"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
@@ -75,7 +75,7 @@ Sicherheitsstandards stellen sicher, dass alle Organisationen über eine grundle
 
 Sie können Sicherheitsstandards im Bereich **Eigenschaften** für Azure AD im Azure-Portal aktivieren oder deaktivieren.
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![Die Seite Verzeichniseigenschaften.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 Sie können Sicherheitsstandards mit einem beliebigen Microsoft 365-Plan verwenden.
 
@@ -93,7 +93,7 @@ Sie können auch Richtlinien für bedingten Zugriff für erweiterte Funktionen v
 
 Sie konfigurieren Richtlinien für bedingten Zugriff aus dem **Sicherheits** Bereich für Azure AD im Azure-Portal.
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Bilder der Menüoption für bedingten Zugriff](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 Sie können Richtlinien für bedingten Zugriff mit folgenden Bedingungen verwenden:
 
@@ -140,7 +140,7 @@ Sie sollten entweder Sicherheitsstandards oder Richtlinien für bedingten Zugrif
 
 Sie aktivieren MFA für einzelne Benutzerkonten im Bereich **aktive Benutzer** des Microsoft 365 Admin Center.
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Option "Abbildung der mehrstufigen Authentifizierung" auf der Seite "aktive Benutzer"](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 Wenn sich der Benutzer das nächste Mal anmeldet, wird er aufgefordert, sich für MFA zu registrieren und die zusätzliche Überprüfungsmethode auszuwählen und zu testen.
 

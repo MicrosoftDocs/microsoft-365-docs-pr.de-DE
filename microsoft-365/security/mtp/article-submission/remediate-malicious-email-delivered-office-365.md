@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Behebung von Bedrohungen
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068184"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086691"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Beheben böswilliger e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -77,8 +77,6 @@ Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Du
 Jedes Behebungs Element kann geöffnet werden, um Details dazu anzuzeigen. Wenn ein Behebungs Element geöffnet wird, werden grundlegende Korrektur Details, der Behebungs Name, das Erstellungsdatum, die Beschreibung, der Schweregrad und der Status der Bedrohung angezeigt. Außerdem werden zwei Registerkarten angezeigt. 
 
 1. **Registerkarte "e-Mail-Übermittlung"**: Dies sind die Anzahl von e-Mails, die über den Threat Explorer oder automatisierte Untersuchungen übermittelt werden. Diese e-Mail-Nachrichten können sein:
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="Das Action Center mit Aktionen und nicht Aktionen-Bedrohungen.":::
 
 **Aktionable**: e-Mails in den folgenden Cloud-Postfachspeicher Orten können bearbeitet und verschoben werden, d. h., alle e-Mails innerhalb der behebbaren Kategorie können von einem Standort an einen anderen verschoben werden:
   - Posteingang 
