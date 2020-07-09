@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Erste Schritte
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei häufig auszuführenden Aufgaben zu unterstützen, oder finden Sie im Navigationsbereich auf der linken Seite eine umfassende Liste.
 metadata:
   title: Erste Schritte
-  description: Richten Sie Ihr Abonnement und Ihre e-Mail ein. Hinzufügen von Benutzern und Installieren von apps
+  description: Einrichten Ihres Abonnements und Ihrer E-Mail. hinzufügen von Benutzern und Installieren von Apps
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44779845"
@@ -22,21 +22,21 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Wählen Sie einen Plan aus, und registrieren Sie sich für Microsoft 365
+    - text: Einen Plan auswählen und Registrieren für Microsoft 365
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
     - text: Registrieren und Einrichten von Microsoft Business Basic
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: Registrieren für Microsoft Business Standard
+    - text: Registrieren und Einrichten von Microsoft Business Standard
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: Registrieren für Microsoft Business Premium
+    - text: Registrieren und Einrichten von Microsoft Business Premium
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-- title: Gesteuerte Einrichtung
+- title: Geführte Einrichtung
   linkLists:
   - linkListType: overview
     links:
-    - text: Planen der Einrichtung
+    - text: Planen Ihrer Einrichtung
       url: plan-your-setup.md
   - linkListType: how-to-guide
     links:
@@ -46,7 +46,7 @@ landingContent:
       url: setup-business-standard.md
     - text: Einrichten von Microsoft Business Premium
       url: ../../business/set-up.md
-    - text: Einrichten von Microsoft apps for Business
+    - text: Einrichten von Microsoft Apps for Business
       url: setup-apps-for-business.md
 - title: Abschließen der Einrichtung
   linkLists:
@@ -54,17 +54,17 @@ landingContent:
     links:
     - text: Migrieren von Daten
       url: migrate-email-and-contacts-admin.md
-    - text: Installieren von apps
+    - text: Installieren von Apps
       url: install-applications.md
     - text: Bereitstellen von Teams
       url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
   - linkListType: video
     links:
-    - text: Installieren von apps auf Android
+    - text: Apps auf einem Android-Gerät installieren
       url: https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236
-    - text: Installieren von apps unter IOS
+    - text: Apps auf einem iOS-Gerät installieren
       url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
-    - text: Schulen von Benutzern
+    - text: Benutzer trainieren
       url: https://support.microsoft.com/training
-    - text: Verbinden von PCs mit Microsoft 365 Business Premium
+    - text: Herstellen einer Verbindung von PCs zu Microsoft 365 Business Premium
       url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07
