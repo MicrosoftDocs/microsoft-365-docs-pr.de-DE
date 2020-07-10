@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d11fd8f29e3232472f9457ba1fc288a5084429e9
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936137"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094786"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
@@ -86,7 +86,7 @@ Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da Benutzer Warnunge
 
 **Standardwert:** Deaktiviert
 
-Es wird nicht empfohlen, Flash aufgrund der zugeordneten Sicherheitsrisiken zu verwenden. Wenn Sie weiterhin über Prozesse verfügen, die von Flash abhängen, legen Sie die **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** -Richtlinie so fest, dass Flash für Websites aktiviert wird, die diese benötigen. Wenn die Liste der Websites, für die Flash verwendet werden kann, nicht verwaltet werden kann, müssen Sie eine Änderungsanforderung zum Ändern des Werts in **"Click to Play"** ändern, mit dem Benutzer auswählen können, wann Flash ausgeführt werden soll.
+Es wird nicht empfohlen, Flash aufgrund der zugeordneten Sicherheitsrisiken zu verwenden. Wenn Sie weiterhin über Prozesse verfügen, die von Flash abhängen, legen Sie die **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** -Richtlinie so fest, dass Flash für Websites aktiviert wird, die diese benötigen. Wenn Sie eine zulässige Liste von Websites für die Verwendung von Flash nicht verwalten können, müssen Sie eine Änderungsanforderung zum Ändern des Werts in **"Click to Play"** ändern, mit dem Benutzer auswählen können, wann Flash ausgeführt werden soll.
 
 ### <a name="password-manager"></a>Kennwort-Manager
 

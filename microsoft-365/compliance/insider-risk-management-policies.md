@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 79f6273f747d518dd9c44f4a57fa0a48daed81d2
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900819"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091931"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -42,14 +42,14 @@ Vorlagen für Insider-Risiken sind vordefinierte Richtlinienbedingungen, mit den
 
 ### <a name="departing-employee-data-theft"></a>Datendiebstahl von ausscheidenden Mitarbeiter
 
-Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatoren, die typischerweise mit dem Datendiebstahl durch abfliegende Mitarbeiter verbunden sind. Diese Richtlinienvorlage priorisiert diese Indikatoren und konzentriert die Erkennung und Warnungen auf diesen Risikobereich. Datendiebstahl für abwesende Mitarbeiter kann das Herunterladen von Dateien aus SharePoint Online, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste in der Nähe ihrer Arbeits Rücktritts-und Endtermine umfassen. In dieser Vorlage werden die Risikoindikatoren für diese Aktivitäten sowie deren Korrelation mit dem Status der Mitarbeitereinstellung priorisiert.
+Wenn Mitarbeiter Ihre Organisation verlassen, gibt es bestimmte Risikoindikatoren, die typischerweise mit dem Datendiebstahl durch abfliegende Mitarbeiter verbunden sind. Diese Richtlinienvorlage priorisiert diese Indikatoren und konzentriert die Erkennung und Warnungen auf diesen Risikobereich. Datendiebstahl für abwesende Mitarbeiter kann das Herunterladen von Dateien aus SharePoint Online, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste in der Nähe ihrer Arbeits Rücktritts-und Endtermine umfassen. In dieser Vorlage werden die Risikoindikatoren für diese Aktivitäten sowie deren Korrelation mit dem Status der Mitarbeitereinstellung priorisiert.
 
 >[!IMPORTANT]
 >Bei Verwendung dieser Vorlage müssen Sie einen Microsoft 365-HR-Connector für die regelmäßige Einfuhr von Rücktritts-und Kündigungsdatum-Informationen für Mitarbeiter in Ihrer Organisation konfigurieren. Lesen Sie den Abschnitt [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
 
 ### <a name="data-leaks"></a>Datenlecks
 
-Das Schützen von Daten und das verhindern von Datenverlusten stellt für die meisten Organisationen eine ständige Herausforderung dar, insbesondere mit dem schnellen Wachstum neuer Daten, die von Mitarbeitern, Geräten und Diensten erstellt wurden. Mitarbeiter sind befugt, Informationen über Dienste und Geräte hinweg zu erstellen, zu speichern und gemeinsam zu nutzen, mit denen die Verwaltung von Datenverlusten immer komplexer und schwieriger wird. Datenlecks können eine versehentliche Übernutzung von Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. In Verbindung mit einer zugewiesenen DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) priorisiert diese Vorlage die Echtzeiterkennung verdächtiger SharePoint Online von Daten Downloads, die Datei-und Ordnerfreigabe, das Kopieren von Dateien auf tragbare Geräte wie USB-Laufwerke, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste.
+Das Schützen von Daten und das verhindern von Datenverlusten stellt für die meisten Organisationen eine ständige Herausforderung dar, insbesondere mit dem schnellen Wachstum neuer Daten, die von Mitarbeitern, Geräten und Diensten erstellt wurden. Mitarbeiter sind befugt, Informationen über Dienste und Geräte hinweg zu erstellen, zu speichern und gemeinsam zu nutzen, mit denen die Verwaltung von Datenverlusten immer komplexer und schwieriger wird. Datenlecks können eine versehentliche Übernutzung von Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. In Verbindung mit einer zugewiesenen DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) priorisiert diese Vorlage die Echtzeiterkennung verdächtiger SharePoint Online von Daten Downloads, die Datei-und Ordnerfreigabe, das Drucken von Dateien und das Kopieren von Daten in persönliche Cloud-Messaging-und-Speicherdienste.
 
 Bei Verwendung von **Datenlecks** -Vorlage müssen Sie eine DLP-Richtlinie zuweisen, um Indikatoren in der Insider Risiko Richtlinie für Warnungen mit hohem Schweregrad in Ihrer Organisation auszulösen. Wenn eine DLP-Richtlinienregel zum Office 365 Überwachungsprotokoll hinzugefügt wird, wird eine Warnung mit hohem Schweregrad generiert, und die mit dieser Vorlage erstellten Insider Risikorichtlinien untersuchen automatisch die DLP-Warnung mit hohem Schweregrad. Wenn die Warnung einen in-Scope-Benutzer enthält, der in der Insider Risiko Richtlinie definiert ist, wird die Warnung von der Insider Risiko Richtlinie als neue Warnung verarbeitet und einem Insider risikoschweregrad und Risikobewertung zugeordnet. Diese Warnung kann im Rahmen des Insider Risk Management-Workflows ausgewertet und bei Bedarf zu einem Insider Risikomanagement-Fall hinzugefügt werden.
 

@@ -1,11 +1,12 @@
 ---
-title: Suchen und untersuchen schädlicher e-Mails
+title: Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden, suchen und untersuchen schädlicher e-Mails
 keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, ATP PowerShell, e-Mail-Schadsoftware, kompromittierte Benutzer, e-Mail-Phishing, e-Mail-Schadsoftware, e-Mail-Header lesen, Kopfzeilen lesen, offene e-Mail
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +19,21 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039412"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091961"
 ---
-# <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen und beheben schädlicher e-Mails, die in Office 365 bereitgestellt wurden
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) ermöglicht es Ihnen, Aktivitäten zu untersuchen, die Personen in Ihrer Organisation gefährden, sowie Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, können Sie nach verdächtigen e-Mail-Nachrichten suchen und diese untersuchen, die übermittelt wurden. Sie können dies mithilfe von [Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md)durchführen.
+
+> [!NOTE]
+> Wechseln Sie [hier](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)zum Korrektur Artikel.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen...
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
@@ -177,6 +181,9 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
   
      **E-Mail-Zeitachse** ist ein Feld in Threat Explorer, das die Suche für Ihr Sicherheitsteam erleichtert. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. Einige Ereignisse, die nach der Zustellung an e-Mails geschehen, werden in der Spalte **spezielle Aktionen** erfasst. Durch das Kombinieren von Informationen aus der Zeitachse einer e-Mail-Nachricht mit speziellen Aktionen, die nach der Zustellung vorgenommen wurden, erhalten Administratoren Einblicke in Richtlinien und die Bedrohungsbehandlung (beispielsweise, wohin die e-Mail weitergeleitet wurde, und in einigen Fällen was die abschließende Bewertung war).
 
+> [!IMPORTANT]
+> Wechseln Sie [hier](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)zu einem Korrektur Thema.
+
 <!-- Reference material
 
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
@@ -254,6 +261,8 @@ To access your message header and email download options, follow these steps:
 -->
 
 ## <a name="related-topics"></a>Verwandte Themen
+
+[Beheben von in Office 365 zugestellten böswilligen e-Mails](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
   

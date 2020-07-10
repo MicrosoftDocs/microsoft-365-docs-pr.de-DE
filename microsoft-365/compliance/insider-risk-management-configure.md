@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515762"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091921"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -47,20 +47,20 @@ Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insid
 
 Es gibt vier Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Funktionen für das Insider Risikomanagement verwendet werden. Um diese Konfigurationsschritte fortzusetzen, müssen ihre mandantenadministratoren Sie zunächst der Administratorrollengruppe " **Insider Risk Management** **" oder "Insider Risk Management"** zuweisen. Für den Zugriff auf und die Verwaltung von Funktionen für das Insider-Risikomanagement nach der Erstkonfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für das Risikomanagement für Insider sein.
 
-Je nach Struktur Ihres Compliance-Verwaltungsteams haben Sie die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Gruppen von Insider Risikomanagement-Features zu verwalten. Wählen Sie unter diese Rollengruppen Optionen beim Konfigurieren des Insider Risikomanagements:
+Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Wählen Sie unter diese Rollengruppen Optionen beim Konfigurieren des Insider Risikomanagements:
 
 | **Rollengruppe** | **Rollenberechtigungen** |
 | :---- | :---------------- |
-| **Insider Risiko Management** | Verwenden Sie diese Rollengruppe, um das Insider Risikomanagement für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten und Ermittler können Sie die Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungen für das Insider Risk Management. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit dem Insider Risiko-Management zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert werden.|
-| **Insider Risk Management-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst das Insider Risikomanagement zu konfigurieren und später Insider Risiko Administratoren in eine definierte Gruppe zu unter trennen.  Benutzer in dieser Rollengruppe können Richtlinien für die Verwaltung von Insider Risiken, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. |
-| **Insider Risk Management Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Risikoanalysten für Insider Risiken fungieren sollen. Benutzer in dieser Rollengruppe können auf alle Alerts-, Cases-und Notices-Vorlagen für Insider-Risikomanagement zugreifen. Sie können nicht auf den Insider Risiko-Inhalts-Explorer zugreifen. |
-| **Insider Risk Management Investigators** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Insider Risiko-Daten Ermittler fungieren sollen. Benutzer in dieser Rollengruppe können in allen Fällen auf alle Alerts für Insider-Risikomanagement,-Fälle,-Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
+| **Insider Risiko Management** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Wenn Sie alle Benutzerkonten für designierte Administratoren, Analytiker und Prüfer hinzufügen, können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für Insider-Risikomanagement. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit dem Insider Risiko-Management zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert werden.|
+| **Insider Risk Management-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst das Insider Risikomanagement zu konfigurieren und später Insider Risiko Administratoren in eine definierte Gruppe zu unter trennen.  Benutzer in dieser Rollengruppe können Verwaltungsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen für Insiderrisiken erstellen, lesen, aktualisieren und löschen. |
+| **Insider Risk Management Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Alerts-, Cases-und Notices-Vorlagen für Insider-Risikomanagement zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
+| **Insider Risk Management Investigators** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können in allen Fällen auf alle Alerts für Insider-Risikomanagement,-Fälle,-Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Hinzufügen von Benutzern zu einer Rollengruppe "Insider Risk Management"
 
 Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insider Risk Management" hinzuzufügen:
 
-1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an. "" "" "" ""
+1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
 
@@ -70,15 +70,15 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 5. Wählen Sie **Hinzufügen** aus, und aktivieren Sie dann das Kontrollkästchen für alle Benutzer, die Sie der Rollengruppe hinzufügen möchten.
 
-6. Wählen Sie **Hinzufügen**und dann **Fertig**aus.
+6. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Fertig**.
 
 7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen. Wählen Sie **Schließen** aus, um die Schritte abzuschließen.
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Überwachungsprotokolls
 
-Das Insider Risikomanagement verwendet Überwachungsprotokolle für Benutzer Einblicke und in Richtlinien konfigurierte Aktivitäten. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer Richtlinie für Insider Risiken zugeordnet sind, oder wenn sich eine Richtlinie ändert.
+Das Insider-Risikomanagement verwendet Audit-Protokolle für Einblicke der Benutzer und Aktivitäten, die in Richtlinien konfiguriert sind. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer Richtlinie für Insider Risiken zugeordnet sind, oder wenn sich eine Richtlinie ändert.
 
-Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Nachdem Sie die Überwachung aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
+Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Daraufhin teilt Ihnen eine Meldung mit, dass das Überwachungsprotokoll vorbereitet wird und Sie in ein paar Stunden nach Abschluss der Vorbereitung eine Suche durchführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Schritt 3 (optional): Konfigurieren der Voraussetzungen für Vorlagen
 
@@ -86,7 +86,7 @@ Einige Vorlagen für Insider Risikomanagement haben Voraussetzungen, die für Ri
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Konfigurieren des Microsoft 365 HR-Connectors
 
-Das Insider Risk Management unterstützt das Importieren von Benutzer-und Protokolldaten, die von 3rd-Party-Risikomanagement-und Personalressourcen Plattformen importiert wurden. Mit dem Microsoft 365-Datenconnector für Humanressourcen (HR) können Sie Daten aus der CSV-Datei in der Personalabteilung einbinden, einschließlich Benutzer Beendigung und Datum der letzten Arbeit. Diese Daten helfen, Warnindikatoren in Richtlinien für das Insider Risikomanagement zu unterstützen, und sind ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation.
+Das Insider Risk Management unterstützt das Importieren von Benutzer-und Protokolldaten, die von 3rd-Party-Risikomanagement-und Personalressourcen Plattformen importiert wurden. Mit dem Microsoft 365-Datenconnector für Humanressourcen (HR) können Sie Daten aus der CSV-Datei in der Personalabteilung einbinden, einschließlich Benutzer Beendigung und Datum der letzten Arbeit. Diese Daten helfen bei der Entwicklung von Warnindikatoren für Insider-Risikomanagement-Richtlinien und sind ein wichtiger Bestandteil bei der Konfiguration einer vollständigen Risikomanagement-Abdeckung in Ihrer Organisation.
 
 Lesen Sie den Abschnitt [Einrichten eines Connectors zum Importieren von HR-Daten](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten. Wenn Sie den HF-Connector konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
 
@@ -109,7 +109,7 @@ Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Orga
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Schritt 4 (erforderlich): Konfigurieren von Einstellungen für Insider Risiken
 
-Die [Einstellungen für Insider Risiken](insider-risk-management-policies.md#policy-settings) gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Einstellungen werden mit dem Steuerelement " **Insider Risk Settings** " konfiguriert, das sich oben auf allen Registerkarten für das Insider Risikomanagement befindet. Mit diesen Einstellungen werden Datenschutz, Indikatoren, Überwachungsfenster und intelligente Erkennungen gesteuert.
+Die [Einstellungen für Insider Risiken](insider-risk-management-policies.md#policy-settings) gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Die Einstellungen werden über das Steuerelement **Insider-Risiko-Einstellungen** konfiguriert, das sich oben auf allen Registerkarten des Insider-Risikomanagements befindet. Diese Einstellungen steuern Privatsphäre, Indikatoren, Überwachungsfenster und intelligente Erkennungen.
 
 Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellungen für das Insider Risiko:
 
@@ -126,7 +126,7 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Schritt 5 (erforderlich): Erstellen einer Richtlinie für das Insider Risikomanagement
 
-Die Richtlinien für das Insider Risikomanagement umfassen zugewiesene Benutzer und definieren, welche Arten von Risikoindikatoren für Warnungen konfiguriert sind. Bevor Aktivitäten Warnungen auslösen können, muss eine Richtlinie konfiguriert werden.
+Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer und legen fest, welche Arten von Risikoindikatoren für Warnmeldungen konfiguriert werden. Bevor Aktivitäten Warnungen auslösen können, muss eine Richtlinie konfiguriert werden.
 
 1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Richtlinien** aus.
 2. Wählen Sie **Richtlinie erstellen** aus, um den richtlinienassistenten zu öffnen
