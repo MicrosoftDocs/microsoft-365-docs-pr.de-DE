@@ -17,22 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über das Aufbewahrungsverhalten, das speziell für Exchange-E-Mails und öffentliche Exchange-Ordner gilt.
-ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874883"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080092"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
 Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufbewahrungsrichtlinien](retention-policies.md) um spezifische Angaben für Exchange.
 
-## <a name="how-a-retention-policy-works-with-exchange-locations"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange-Speicherorten
+## <a name="how-a-retention-policy-works-with-exchange"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange
 
-Für die E-Mails, den Kalender und andere Elemente eines Benutzers wird eine Aufbewahrungsrichtlinie auf Postfachebene angewendet.
+Für die E-Mails, den Kalender und andere Postfachelemente eines Benutzers wird eine Aufbewahrungsrichtlinie auf Postfachebene angewendet.
 
-Für einen öffentlichen Ordner wird eine Aufbewahrungsrichtlinie auf Ordnerebene angewendet, nicht auf Postfachebene. 
+Für öffentliche Ordner wird eine Aufbewahrungsrichtlinie auf alle öffentlichen Ordner und nicht auf Ordner- oder Postfachebene angewendet.
+
+Wenn Sie eine Aufbewahrungsrichtlinie für diese Speicherorte konfigurieren, werden die folgenden E-Mail-Elemente einbezogen: E-Mail-Nachrichten (einschließlich Entwürfe) mit beliebigen Anlagen, Aufgaben und Kalendereinträge, wenn sie ein Enddatum haben, sowie Notizen. Kontakte und alle Aufgaben und Kalenderelemente, die kein Enddatum aufweisen, werden nicht einbezogen. Andere in einem Postfach gespeicherte Elemente, z. B. gespeicherte Skype- und Teams-Nachrichten, werden entsprechend der eigenen Aufbewahrungsrichtlinie einbezogen.
 
 Sowohl Postfächer als auch öffentliche Ordner verwenden den [Ordner „Wiederherstellbare Elemente“](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) zum Aufbewahren von Elementen. Nur Personen, denen eDiscovery-Berechtigungen zugewiesen wurden, können Elemente im Ordner "Wiederherstellbare Elemente" eines anderen Benutzers anzeigen.
   
@@ -51,7 +53,7 @@ Wenn die Aufbewahrungseinstellungen das Aufbewahren und Löschen vorgeben:
 ![Diagramm des Aufbewahrungsverlaufs bei E-Mails und öffentlichen Ordnern](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer geändert oder dauerhaft gelöscht wird** (entweder UMSCHALT+ENTF oder aus "Gelöschte Elemente" gelöscht), wird es in den Ordner "Wiederherstellbare Elemente" verschoben (oder im Fall der Bearbeitung kopiert). Dort wird in regelmäßigen Abständen ein Zeitgeberauftrag ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden innerhalb von vierzehn Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass 14 Tage die Standardeinstellung ist, die aber auf bis zu 30 Tage festgelegt werden kann.
-    
+
 2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**, wird derselbe Prozess in regelmäßigen Abständen für alle Ordner im Postfach ausgeführt, und es werden Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass 14 Tage die Standardeinstellung ist, die aber auf bis zu 30 Tage festgelegt werden kann. 
 
 Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Löschen vorgeben, stellen die Inhaltspfade Varianten von "Aufbewahren und Löschen" dar:
@@ -70,13 +72,13 @@ Wenn die Aufbewahrungseinstellungen das reine Aufbewahren oder das reine Lösche
 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Ausschließen von bestimmten Typen von Exchange-Elementen aus einer Aufbewahrungsrichtlinie
 
-Unter Verwendung von PowerShell können Sie bestimmte Exchange-Elementtypen aus einer Aufbewahrungsrichtlinie ausschließen. Sie können z. B. Voicemailnachrichten, Chatunterhaltungen und andere Skype for Business Online-Inhalte in Postfächern ausschließen. Sie können auch Kalender-, Notiz- und Aufgabenelemente ausschließen. Diese Funktion steht nur über PowerShell zur Verfügung. Sie ist nicht verfügbar, wenn Sie eine Aufbewahrungsrichtlinie mithilfe des Assistenten im Microsoft 365 Compliance Center erstellen.
+Unter Verwendung von PowerShell können Sie bestimmte Exchange-Elementtypen aus einer Aufbewahrungsrichtlinie ausschließen, wenn die Aufbewahrungseinstellungen für "Nur aufbewahren" gelten. Sie können z. B. Voicemailnachrichten, Chatunterhaltungen und andere Skype for Business Online-Inhalte in Postfächern ausschließen. Sie können auch Kalender-, Notiz- und Aufgabenelemente ausschließen. Diese Funktion steht nur über PowerShell zur Verfügung. Sie ist nicht verfügbar, wenn Sie eine Aufbewahrungsrichtlinie mithilfe des Assistenten im Microsoft 365 Compliance Center erstellen.
   
 Wenn Sie die ausgewählten Typen für Exchange-Elemente in einer Aufbewahrungsrichtlinie ausschließen möchten, verwenden Sie den `ExcludedItemClasses` Parameter mit den [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)- und [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)-Cmdlets.
 
 Um die Cmdlets für Aufbewahrungsrichtlinien zu verwenden, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
+## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
 Wenn ein Benutzer Ihre Organisation verlässt und sein Postfach in einer Aufbewahrungsrichtlinie enthalten ist, wird das Postfach zu einem inaktiven Postfach, wenn das Microsoft 365-Konto des Benutzers gelöscht wird. Die Inhalte eines inaktiven Postfachs unterliegen weiterhin jeglicher Aufbewahrungsrichtlinie, die dem Postfach zugewiesen wurde, bevor es inaktiv wurde, und die Inhalte sind für eDiscovery-Suchen verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
