@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Verwalten von Benutzern und Gruppen
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+summary: Sehen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu unterstützen. Die komplette Liste finden Sie im Navigationsbereich auf der linken Seite.
 metadata:
   title: Verwalten von Benutzern und Gruppen
-  description: Verwalten von Kennwörtern, hinzufügen und Entfernen von Benutzern, Einrichten von Gruppen und Verwalten von Lizenzen
+  description: Verwalten von Kennwörtern, Hinzufügen und Entfernen von Benutzern, Einrichten von Gruppen und Verwalten von Lizenzen
   ms.service: O365-administration
   ms.subservice: subservice
   ms.topic: landing-page
@@ -14,22 +14,22 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785472"
 landingContent:
-- title: Verwalten von Benutzern
+- title: Benutzer verwalten
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Hinzufügen eines Benutzers
       url: add-users.md
-    - text: Bearbeiten eines Benutzers
+    - text: Benutzer bearbeiten
       url: add-users.md
-    - text: Hinzufügen von Gästen zu einer Microsoft 365-Gruppe
+    - text: Hinzufügen von Gastbenutzern zu einer Microsoft 365-Gruppe
       url: ../create-groups/manage-guest-access-in-groups.md
-    - text: Hinzufügen einer weiteren e-Mail-Adresse
+    - text: Hinzufügen eines weiteren E-Mail-Kontos
       url: ../email/add-another-email-alias-for-a-user.md
     - text: Erstellen eines freigegebenen Postfachs
       url: ../email/create-a-shared-mailbox.md
@@ -39,9 +39,9 @@ landingContent:
       url: ../manage/remove-licenses-from-users.md
     - text: Gastbenutzer
       url: about-guest-users.md
-    - text: Verwenden Sie Ihre benutzerdefinierte Domäne
+    - text: Verwenden einer benutzerdefinierten Domäne
       url: ../email/change-email-address.md
-    - text: Aktualisieren Sie Benutzer auf die neuesten Apps
+    - text: Aktualisieren der Benutzer auf die neuesten Apps
       url: ../setup/upgrade-users-to-latest-office-client.md
 - title: Verwalten von Gruppen
   linkLists:
@@ -51,7 +51,7 @@ landingContent:
       url: ../create-groups/create-groups.md
     - text: Mitglieder hinzufügen
       url: ../create-groups/add-or-remove-members-from-groups.md
-    - text: Wiederherstellen oder Wiederherstellen einer gelöschten Gruppe
+    - text: Wiederherstellen einer gelöschten Gruppe
       url: ../create-groups/restore-deleted-group.md
     - text: Verwalten des Gastzugriffs in Gruppen
       url: ../create-groups/manage-guest-access-in-groups.md
@@ -67,7 +67,7 @@ landingContent:
       url: let-users-reset-passwords.md
     - text: Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
       url: ../manage/set-password-expiration-policy.md
-    - text: Administratorkennwort zurücksetzen
+    - text: Zurücksetzen des Administratorkennworts
       url: reset-passwords.md#reset-my-admin-password
 - title: Entfernen eines Mitarbeiters
   linkLists:
@@ -77,7 +77,7 @@ landingContent:
       url: delete-a-user.md
     - text: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
       url: get-access-to-and-back-up-a-former-user-s-data.md
-    - text: Weiterleiten von e-Mails an einen anderen Benutzer
+    - text: Weiterleiten von E-Mails an einen anderen Benutzer
       url: ../email/configure-email-forwarding.md
     - text: Entfernen der Lizenz
       url: ../manage/remove-licenses-from-users.md

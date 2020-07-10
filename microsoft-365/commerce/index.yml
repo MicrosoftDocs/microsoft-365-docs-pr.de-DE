@@ -15,7 +15,7 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 4f5634b720079f57a37f9b7079a8bece6cf150cd
   ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 05/27/2020
   ms.locfileid: "44402142"
@@ -28,7 +28,7 @@ landingContent:
       url: billing-and-payments/view-your-bill-or-invoice.md
     - text: Verwalten von Zahlungsmethoden
       url: billing-and-payments/manage-payment-methods.md
-    - text: Ihre Rechnung verstehen
+    - text: Erläuterungen zu Ihrer Rechnung
       url: billing-and-payments/understand-your-invoice.md
     - text: Verwalten von Abrechnungsprofilen
       url: billing-and-payments/manage-billing-profiles.md

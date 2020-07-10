@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
   ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 05/01/2020
   ms.locfileid: "43997526"
@@ -28,17 +28,17 @@ landingContent:
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 Security Center
       url: mtp/overview-security-center.md
-- title: Beginnen mit kostenlosen Testversionen
+- title: Mit kostenlosen Testversionen beginnen
   linkLists:
   - linkListType: overview
     links:
-    - text: Auswerten von Microsoft Threat Protection
+    - text: Microsoft Threat Protection evaluieren
       url: mtp/mtp-evaluation.md
-- title: Schützen Ihrer Remotemitarbeiter
+- title: Remotemitarbeiter absichern
   linkLists:
   - linkListType: get-started
     links:
-    - text: Schützen Ihrer Remotemitarbeiter
+    - text: Remotemitarbeiter absichern
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Azure ATP
   linkLists:
@@ -84,7 +84,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Secure Score
+    - text: Sicherheitsbewertung
       url: mtp/microsoft-secure-score.md
 - title: Azure Sentinel
   linkLists:

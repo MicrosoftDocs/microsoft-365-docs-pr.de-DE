@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Admin Center-Hilfe
-summary: Erkunden Sie Ressourcen für die Arbeit im Microsoft 365 Admin Center.
+summary: Entdecken Sie Ressourcen für die Arbeit im Microsoft 365 Admin Center.
 brand: m365
 metadata:
   title: Microsoft 365 Admin Center-Hilfe
@@ -15,7 +15,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
   ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44799959"
@@ -24,61 +24,61 @@ highlightedContent:
   - title: Office 365 ist jetzt Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
-  - title: Neuerungen im Microsoft 365 Admin Center
+  - title: Neuerungen im Microsoft 365 Admin Center!
     itemType: whats-new
     url: whats-new-in-preview.md
-  - title: Bleiben Sie im Vordergrund von Microsoft 365 Änderungen
+  - title: Behalten Sie den Überblick über Änderungen in Microsoft 365
     itemType: how-to-guide
     url: manage/stay-on-top-of-updates.md
 productDirectory:
   title: Erste Schritte
-  summary: Richten Sie Ihr Abonnement und e-Mail ein, fügen Sie Benutzer hinzu, und installieren Sie apps.
+  summary: Richten Sie Ihr Abonnement und Ihre E-Mail ein, fügen Sie Benutzer hinzu und installieren Sie Apps.
   items:
   - title: Erste Schritte
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Registrieren Sie sich, und richten Sie Microsoft 365 ein.
+    summary: Registrieren Sie sich und richten Sie Microsoft 365 ein.
     url: setup/index.yml
-  - title: Migrieren von Daten
+  - title: Datenmigration
     imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-    summary: Sie können Ihre Daten von einem anderen Dienst nach Microsoft 365 verlagern.
+    summary: Migrieren Sie Ihre Daten von einem anderen Service zu Microsoft 365.
     url: setup/migrate-email-and-contacts-admin.md
-  - title: Installieren von apps
+  - title: Installieren von Apps
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Installieren Sie Office und andere Microsoft-apps.
+    summary: Installieren Sie Office und andere Microsoft-Apps.
     url: setup/install-applications.md
-  - title: Schulen von Benutzern
+  - title: Schulung der Benutzer
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Hilfe für Benutzer in Ihrer Organisation erfahren Sie, wie Sie Dateien speichern und freigeben und Office-Apps verwenden können.
+    summary: Helfen Sie den Benutzern in Ihrer Organisation, zu lernen, wie sie Daten speichern und freigeben und Office-Apps verwenden können.
     url: https://support.microsoft.com/training
 additionalContent:
   sections:
-  - title: Verwalten
-    summary: Verwalten Sie Ihr Abonnement, ihre Dienste und Benutzer, sichern Sie Ihr Unternehmen, und erhalten Sie Hilfe bei der Problembehandlung.
+  - title: Verwaltung
+    summary: Verwalten Sie Ihr Abonnement, die Dienste und die Benutzer, sichern Sie Ihr Unternehmen ab und erhalten Sie Hilfe bei der Problembehandlung.
     items:
     - title: Übersicht über das Microsoft 365 Admin Center
-      summary: Erfahren Sie mehr über Administratorrollen, wie Sie sich über Änderungen informieren und Ihr Abonnement anpassen.
+      summary: Erfahren Sie mehr über Administratorrollen, wie Sie den Überblick über Änderungen behalten und wie Sie Ihr Abonnement anpassen können.
       url: admin-overview/about-the-admin-center.md
     - title: Benutzer und Gruppen
-      summary: Verwalten von Kennwörtern, hinzufügen und Entfernen von Benutzern, einrichten und Verwalten von Gruppen, Verwalten des Gastzugriffs und Zuweisen von Benutzerlizenzen.
+      summary: Verwalten Sie Kennwörter, fügen Sie Benutzer hinzu oder entfernen Sie diese, richten Sie Gruppen ein und verwalten Sie diese, verwalten Sie den Gastzugriff und weisen Sie Benutzerlizenzen zu.
       url: add-users/index.yml
     - title: E-Mail und Kalender
-      summary: Verwalten von e-Mail-Einstellungen, Verteilergruppen und Sicherheitseinstellungen sowie einrichten freigegebener Postfächer.
+      summary: Verwalten Sie E-Mail-Einstellungen, Verteilergruppen und Sicherheitseinstellungen und richten Sie freigegebene Postfächer ein.
       url: email/index.yml
     - title: Domänen
-      summary: Erfahren Sie mehr über Domänen, einrichten und Verwalten von Domänen und Aktualisieren von DNS-Einträgen.
+      summary: Erfahren Sie mehr über Domänen, das Einrichten und Verwalten von Domänen und das Aktualisieren von DNS-Einträgen.
       url: setup/add-domain.md
     - title: Ihre Daten und Dienste
-      summary: Überwachen Sie den Status Ihres Diensts, sichern Sie die Daten, installieren Sie Add-Ins, und aktualisieren Sie auf die neuesten apps.
+      summary: Überwachen Sie den Status Ihres Dienstes, sichern Sie Daten, installieren Sie Add-Ins und führen Sie ein Upgrade auf die neuesten Apps durch.
       url: manage/index.yml
     - title: Abonnements und Abrechnung
-      summary: Verwalten von Rechnungen, Abonnements und Produktlizenzen, Aktualisieren von Zahlungsmethoden und erwerben zusätzlicher Dienste und Speicher.
+      summary: Verwalten Sie Rechnungen, Abonnements und Produktlizenzen, aktualisieren Sie Zahlungsmethoden und erwerben Sie zusätzliche Dienste und Speicherplatz.
       url: ../commerce/index.yml
-    - title: Sichern Sie Ihre Organisation
-      summary: In diesem Artikel erfahren Sie, wie Sie Ihre Organisation am besten schützen, indem Sie die mehrstufige Authentifizierung (MFA) einrichten und sich auch über Microsoft Secure Score und dsgvo informieren.
+    - title: Absicherung Ihrer Organisation
+      summary: Erfahren Sie mehr über die besten Möglichkeiten zur Absicherung Ihrer Organisation, wie die Einrichtung einer Multi-Faktor-Authentifizierung (MFA) und erfahren Sie mehr über Microsoft Secure Score und die DSGVO.
       url: security-and-compliance/secure-your-business-data.md
     - title: Arbeiten mit Kunden
-      summary: Freigeben von Dokumenten und Verwenden von Teams für die Zusammenarbeit und Besprechung.
+      summary: Geben Sie Dokumente frei und verwenden Sie Teams zur Zusammenarbeit und für Besprechungen.
       url: work-with-customers/index.yml
-    - title: Troubleshooting
-      summary: Greifen Sie auf Ressourcen zu, damit Sie Probleme mit Ihren Office-Produkten oder-Diensten beheben können.
+    - title: Problembehandlung
+      summary: Greifen Sie auf Ressourcen zu, die Sie bei der Behandlung von Problemen mit Office-Produkten oder -Diensten unterstützen.
       url: https://docs.microsoft.com/office/troubleshoot/
