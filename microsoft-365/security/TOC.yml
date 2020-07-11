@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Lernen der Abfragesprache
                   href: mtp/advanced-hunting-query-language.md
+                - name: Anwenden bewährter Methoden für Abfragen
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Arbeiten mit Abfrageergebnissen
                   href: mtp/advanced-hunting-query-results.md
                 - name: Verwenden freigegebener Abfragen
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Anwenden bewährter Methoden für Abfragen
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Benutzerdefinierte Erkennungen
                   items:
                     - name: Benutzerdefinierte Erkennungen – Übersicht
@@ -215,9 +215,13 @@
               href: mtp/device-profile.md
             - name: Feedback geben
               href: mtp/feedback.md
-            - name: Verwalten von Tickets über ServiceNow
-              href: ./mtp/tickets.md
-    - name: Office 365 Advanced Threat Protection
+            - name: Erstellen von ServiceNow-Tickets und -Aufgaben
+              items:
+                - name: Übersicht über die ServiceNow-Integration
+                  href: ./mtp/tickets.md
+                - name: ServiceNow-Tickets im Sicherheitscenter
+                  href: ./mtp/tickets-security-center.md
+    - name: Sicherheit in Office 365
       items:
         - name: Erste Schritte
           items:
@@ -366,7 +370,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: Anzeigen von Informationen über schädliche Dateien
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
             - name: Neuerungen

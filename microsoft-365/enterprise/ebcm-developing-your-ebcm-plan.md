@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspekte, die bei der Entwicklung eines Cloud-bewussten Geschäftskontinuitätsplans berücksichtigt werden müssen.
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601092"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083518"
 ---
 # <a name="developing-your-continuity-plan"></a>Entwickeln Ihres Kontinuitätsplans
 
@@ -80,6 +80,8 @@ Hier ist ein Beispiel für eine Abhängigkeitsanalyse (Dependency Analysis, DA),
 
 Sobald Sie Ihre Geschäftsprozesse inventarisiert und Beziehungen mit anderen Prozessen und Technologien verknüpft haben, müssen Sie Überprüfungsszenarien für alle Prozesse erstellen. Ermitteln Sie, wie Sie Ihre Kontinuitätspläne für Geschäftsprozesse grundsätzlich überprüfen. Sie werden wahrscheinlich feststellen, dass einige wichtiger als andere sind und Sie diese priorisieren möchten.
 Vergessen Sie nicht, dass die regelmäßige Schulung von Mitarbeitern in der Reaktion auf Sicherheitsvorfälle und in Kontinuitätsmaßnahmen nach der Einführung des Plans wichtig ist. Vorfallnachprüfungen sollten dazu verwendet werden, Ihre Ausfallsicherheitsstrategien durch Einbeziehen der Erkenntnisse aus jeder Prüfung und jedem Test zu verbessern.
+
+![Funktionsüberprüfung Visio](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>Vorfallskoordinierung und -kommunikation
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie eine Aufbewahrungsrichtlinie, um proaktiv zu entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen. Wenden Sie eine einzelne Richtlinie auf die gesamte Organisation oder auf bestimmte Speicherorte oder Benutzer an sowie eine Richtlinie auf alle Inhalte oder auf bestimmte Bedingungen erfüllende Inhalte.
-ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844751"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083617"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -52,7 +52,7 @@ Diese Berechtigungen sind nur erforderlich, um eine Aufbewahrungsrichtlinie zu e
     
     Für Microsoft Teams: 
     - Sie müssen die Option zur Auswahl bestimmter Speicherorte auswählen, wenn Microsoft Teams-Kanalnachrichten oder -Chats gelöscht oder aufbewahrt werden sollen. Wenn Sie eine dieser Optionen als Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen, da eine Aufbewahrungsrichtlinie, die diese Microsoft Teams-Daten umfasst, keine anderen Speicherorte einschließen kann. 
-    - Beachten Sie, dass im Falle von **Microsoft Teams-Kanalnachrichten** Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](https://docs.microsoft.com/microsoftteams/private-channels) eingeschlossen sind. Nachrichten von privaten Kanälen werden für Benutzer als Gruppenchats eingeschlossen, wenn Sie den Ort **Microsoft Teams-Chats** auswählen.
+    - Beachten Sie, dass im Falle von **Microsoft Teams-Kanalnachrichten** Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](https://docs.microsoft.com/microsoftteams/private-channels) eingeschlossen sind. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt.
     
     Weitere Informationen zur Wahl zwischen einer Aufbewahrungsrichtlinie für die gesamte Organisation oder für bestimmte Speicherorte finden Sie unter [Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder bestimmte Speicherorte](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) auf dieser Seite.
     
@@ -206,7 +206,7 @@ Diese Aktualisierung erfolgt normalerweise ziemlich schnell, kann aber mehrere T
 
 So verwenden Sie die Cmdlets für Aufbewahrungsrichtlinien
   
-1. [Herstellen einer Verbindung mit Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
 2. Verwenden Sie die folgenden Office 365 Security & Compliance Center-Cmdlets:
     
@@ -238,9 +238,11 @@ Sie müssen PowerShell verwenden, wenn Sie eine [Aufbewahrungssperre](retention-
     ![Liste der Aufbewahrungsrichtlinien in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Um eine Aufbewahrungssperre zu einer Aufbewahrungsrichtlinie hinzuzufügen, führen Sie den Befehl `Set-RetentionCompliancePolicy` aus, und legen Sie dabei den `RestrictiveRetention`-Parameter auf „true“ fest. Zum Beispiel:
-    
-        Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-    
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
     ![RestrictiveRetention-Parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
     Nachdem Sie das Cmdlet ausgeführt haben, wählen Sie **Ja für alle** aus:
