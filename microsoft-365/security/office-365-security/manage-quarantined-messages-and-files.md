@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EoP) anzeigen und verwalten können. Administratoren in Organisationen mit Office 365 Advanced Threat Protection (Office 365 ATP) können auch unter Quarantäne gestellte Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwalten.
-ms.openlocfilehash: d3dadeb4035d55fa60785c7a752737cc83038730
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 5e7c594669cf910404badd85c35671c284d4d91e
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936971"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101681"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -218,6 +218,9 @@ Wenn Sie die Nachricht nicht freigeben oder entfernen, wird sie nach Ablauf der 
 Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), erscheint das Flyout-Fenster **Massenaktionen**, in dem Sie die folgenden Aktionen durchführen können:
 
 - **Nachrichten freigeben**: Die Optionen sind die gleichen wie bei der Freigabe einer einzelnen Nachricht, außer dass Sie nicht **Nachrichten an bestimmte Empfänger freigeben** auswählen können; Sie können nur **Nachricht an alle Empfänger freigeben** oder **Nachrichten an andere Personen freigeben** auswählen.
+
+  > [!NOTE]
+  > Nehmen Sie das folgende Szenario in Frage: John@gmail.com sendet eine Nachricht an Faith@contoso.com und John@Subsidiary.contoso.com. Gmail verzweigt diese Nachricht in zwei Kopien, die an die Quarantäne als Phishing in Microsoft weitergeleitet werden. Ein Administrator gibt beide Nachrichten an admin@contoso.com frei. Die erste freigegebene Nachricht, die das Administratorpostfach erreicht, wird übermittelt. Die zweite freigegebene Nachricht wird als doppelte Zustellung identifiziert und übersprungen. Nachricht werden als Duplikate identifiziert, wenn Sie dieselbe Nachrichten-ID und dieselbe Empfangszeit haben.
 
 - **Nachrichten löschen**: Nachdem Sie in der angezeigten Warnung auf **Ja** klicken, wird die Nachricht sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
 

@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 3c43c42ba2cb1feb339ad61b76d28fde4ed94298
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347819"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101659"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
-Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mithilfe von Microsoft Managed Desktop im Azure-Portal registrieren.
+Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte über das Verwaltungs Portal von Microsoft Managed Desktop registrieren.
 
 > [!NOTE]
 > Arbeiten mit einem Partner, um Geräte zu beziehen? Wenn dies der Fall ist, müssen Sie sich keine Gedanken über das erhalten der Hardware-Hashes machen. Das werden Sie für Sie erledigen. Stellen Sie sicher, dass Ihr Partner eine Beziehung mit Ihnen im [Partner Center](https://partner.microsoft.com/dashboard)herstellt. Ihr Partner kann weitere Informationen finden Sie unter [Hilfe zum Partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Nachdem diese Beziehung hergestellt wurde, registriert Ihr Partner einfach Geräte in Ihrem Namen – keine weiteren Schritte, die von Ihnen benötigt werden. Wenn Sie die Details anzeigen möchten oder Ihr Partner Fragen hat, finden Sie unter [Schritte für Partner zum Registrieren von Geräten](register-devices-partner.md). Nachdem die Geräte registriert wurden, können Sie mit der [Überprüfung des Images](#check-the-image) fortfahren und [die Geräte](#deliver-the-device) an Ihre Benutzer übermitteln.
@@ -86,9 +86,9 @@ Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Her
 >[!NOTE]
 >Wenn Sie vergessen, die Beispieldaten zu ändern, tritt bei der Registrierung ein Fehler auf.
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Registrieren von Geräten mithilfe des Azure-Portals
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Verwaltungsportals
 
-Wählen Sie im linken Navigationsbereich **Geräte** aus dem Microsoft Managed Desktop [Azure-Portal](https://aka.ms/mmdportal)aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
+Wählen Sie im [Verwaltungs Portal](https://aka.ms/mmdportal)von Microsoft Managed Desktop die Option **Geräte** im linken Navigationsbereich aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
 
 [![Einfliegen nach Auswahl von Register Geräten, Auflisten von Geräten mit Spalten für zugewiesene Benutzer, Seriennummer, Status, zuletzt gesehenes Datum und Alter](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralisierten Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083562"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102884"
 ---
 # <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
 
@@ -35,7 +35,7 @@ Die zentralisierte Bereitstellung ist die empfohlene Vorgehensweise für einen O
 Die zentrale Bereitstellung von Add-ins erfordert, dass Benutzer Microsoft 365-Apps für Unternehmen verwenden (und mit Ihren Anmeldeinformationen für die organisatorische Anmeldung bei Office angemeldet sind) und über Exchange Online Postfächer verfügen. Ihr Abonnement Verzeichnis muss sich entweder in oder im Verbund mit, Azure Active Directory befinden.  
  
 Die zentralisierte Bereitstellung wird nur für Online Postfächer unterstützt. Die Bereitstellung für lokale Exchange-Postfächer wird nicht unterstützt.
- 
+
 Sie können die [zentrale Bereitstellungs Kompatibilitätsprüfung](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)verwenden   , um zu ermitteln, ob Ihr Abonnement berechtigt ist. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Wie Zielen Sie auf Add-in-Benutzerzuweisungen mit zentralisierter Bereitstellung ab?  
@@ -54,7 +54,9 @@ Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer angezeigt wi
 
 Für eine einfache Bereitstellung von Add-Ins für Benutzer, Gruppen oder für Ihre gesamte Organisation wird empfohlen, dass Administratoren eine zentralisierte Bereitstellung verwenden.
 
-Weitere Informationen zum Verwalten des Benutzerzugriffs finden Sie unter </br>[Verhindern von Add-in-Downloads durch Deaktivieren der Office Store für alle Clients (außer Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) und </br>[Geben Sie die Administratoren und Benutzer an, die Add-Ins für Outlook installieren und verwalten können](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+Weitere Informationen zum Verwalten des Benutzerzugriffs finden Sie unter:
+ - [Verhindern von Add-in-Downloads durch Deaktivieren der Office Store für alle Clients (außer Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Festlegen der Administratoren und Benutzer, die Add-Ins für Outlook installieren und verwalten dürfen](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Bietet die zentralisierte Bereitstellung Administratoren die Flexibilität, die Bereitstellungsmethode für Outlook-Add-Ins auszuwählen?  
 
@@ -62,7 +64,7 @@ Ja. Die zentralisierte Bereitstellung bietet Administratoren die Möglichkeit, w
 
 **Fixed (Standard)**   Das Add-in wird automatisch für die zugewiesenen Benutzer bereitgestellt und kann nicht entfernt werden.  
  
-**Verfügbar** Benutzer können das Add-in in Outlook installieren, indem Sie "Home" auswählen > Weitere Add-Ins > admin-Managed hinzufügen.   
+**Verfügbar** Benutzer können das Add-in in Outlook installieren, indem Sie **"Home" auswählen > Weitere Add-Ins > admin-Managed hinzufügen**.
  
 **Optional** Das Add-in wird automatisch für die zugewiesenen Benutzer bereitgestellt, aber Sie können es auswählen, um es zu entfernen.  
     
@@ -70,19 +72,19 @@ Ja. Die zentralisierte Bereitstellung bietet Administratoren die Möglichkeit, w
 
 Ja. Administratoren können eine neue Manifestdatei hochladen, um Änderungen an Metadaten für vom Administrator bereitgestellte Lob-Add-Ins zu unterstützen. Das Add-in wird aktualisiert, wenn die Office-Anwendungen das nächste Mal gestartet werden. Die Webanwendung kann sich jederzeit ändern.  
  
-Weitere Informationen finden Sie unter Branchen [-Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+Weitere Informationen finden Sie unter Branchen [-Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Können Administratoren Add-Ins deaktivieren?  
 
 Ja. Administratoren können die Add-Ins, die Sie für alle Benutzer aus dem Microsoft Admin Center bereitstellen, aktivieren oder deaktivieren.
 
-Weitere Informationen finden Sie unter [Add-in-Status](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+Weitere Informationen finden Sie unter [Add-in-Status](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>Können Administratoren Add-ins löschen oder entfernen?
 
 Ja. Administratoren können Add-Ins, die Sie für alle Benutzer bereitgestellt haben, aus dem Microsoft Admin Center löschen.
 
-Weitere Informationen finden Sie unter [delete the Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+Weitere Informationen finden Sie unter [Delete a Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Können Administratoren kostenpflichtige Add-Ins aus dem Office Store mithilfe einer zentralisierten Bereitstellung bereitstellen? 
 

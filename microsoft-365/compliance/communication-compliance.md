@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936538"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101670"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
@@ -51,7 +51,7 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
     Organisationen sind für die gesamte Kommunikation verantwortlich, die über Ihre Infrastruktur und Unternehmensnetzwerk Systeme verteilt ist. Durch die Verwendung von Kommunikationsrichtlinien zur Unterstützung bei der Identifizierung und Verwaltung potenzieller rechtlicher Risiken und Risiken können Risiken minimiert werden, bevor Sie Unternehmensvorgänge beschädigen können. Beispielsweise können Sie Nachrichten in Ihrer Organisation für nicht autorisierte Kommunikationen über vertrauliche Projekte wie bevorstehende Akquisitionen, Fusionen, Gewinn Offenlegungen, Neuorganisationen oder Änderungen des Führungsteams überprüfen.
 
-- **Einhaltung von Vorschriften**
+- **Einhaltung gesetzlicher Bestimmungen**
 
     Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für die Anforderung an Unternehmen, über Aufsichtsverfahren zu verfügen, um die Kommunikation der Mitarbeiter und die Art der Unternehmen, in denen sie stattfindet, zu überprüfen. Ein weiteres Beispiel könnte die Notwendigkeit sein, die Kommunikation zwischen Vermittlern und Händlern in Ihrem Unternehmen zu überprüfen, um sich gegen potenzielle Geldwäsche, Insiderhandel, geheime Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen. Weitere Informationen zum Support für Finanzorganisationen finden Sie unter [wichtige Compliance-und Sicherheitsüberlegungen für US-Banken und Kapitalmärkte](../solutions/financial-services-secure-collaboration.md).
 
@@ -101,7 +101,7 @@ Compliance-Richtlinien für die Kommunikation überprüfen und Erfassen von Nach
 - **Exchange Online**: alle Postfächer, die auf [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die Richtlinienbedingungen für die Kommunikation erfüllen, sind sofort für die Überwachung und in Kompatibilitätsberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und wird in Kommunikationsrichtlinien nicht mehr benötigt.
 - **Yammer**: Private Nachrichten und öffentliche Unterhaltungen in [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sind in Richtlinien zur Kommunikationscompliance unterstützt. Yammer ist ein optionaler Kanal und muss sich im [nativen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) befinden, um die Überprüfung von Nachrichten und Anlagen zu unterstützen.
 - **Skype for Business Online**: communication Compliance Policies unterstützen die Scan Chat Kommunikation und zugehörige Anlagen in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
-- **Drittanbieterquellen**: Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Communication Compliance unterstützt Verbindungen zu verschiedenen gängigen Plattformen, einschließlich Instant Bloomberg, Facebook, Twitter und andere.
+- **Drittanbieterquellen**: Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) für Daten, die in Postfächer in Ihrer Microsoft 365-Organisation importiert werden, überprüfen. Communication Compliance unterstützt Verbindungen mit verschiedenen gängigen Plattformen, einschließlich Instant Bloomberg und anderen.
 
 Weitere Informationen zur Unterstützung von Messaging Kanälen in Kommunikations Konformitätsrichtlinien finden Sie unter [unterstützte Kommunikationstypen](communication-compliance-feature-reference.md#supported-communication-types).
 

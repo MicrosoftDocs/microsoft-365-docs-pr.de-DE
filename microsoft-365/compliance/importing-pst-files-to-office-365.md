@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie mit dem Importdienst im Security & Compliance Center E-Mail-Daten (PST-Dateien) in Benutzerpostfächer importieren.
-ms.openlocfilehash: 20d7b263a5a5d16d3818e6b0597435f5e7d38b07
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083527"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091941"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation
 
@@ -56,7 +56,7 @@ Es folgen eine Darstellung und Beschreibung des vollständigen PST-Importprozess
     
 2. **PST-Dateien hochladen oder kopieren**: Der nächste Schritt hängt davon ab, ob Sie die PST-Dateien über Netzwerkupload oder Laufwerkversand importieren. In beiden Fällen verwenden Sie das Tool und den sicheren Speicherschlüssel, die Sie im vorherigen Schritt erhalten haben.
     
-    - **Netzwerkupload**: Ihre PST-Dateien werden mithilfe des Tools "AzCopy.exe" (heruntergeladen in Schritt 1) in einen Azure-Speicherort in der Microsoft-Cloud hochgeladen. Der Azure-Speicherort, in den Sie Ihre PST-Dateien hochladen, befindet sich im selben regionalen Microsoft-Rechenzentrum wie Ihre Organisation.
+    - **Netzwerkupload**: Ihre PST-Dateien werden mithilfe des Tools "AzCopy.exe" (heruntergeladen in Schritt 1) in einen Azure-Speicherort in der Microsoft-Cloud hochgeladen. Der Azure Storage-Speicherort, in den Sie Ihre PST-Dateien hochladen, befindet sich im selben regionalen Microsoft-Rechenzentrum wie Ihre Organisation.
     
       Damit Sie die PST-Dateien, die Sie importieren möchten, hochladen können, müssen sich diese auf einer Dateifreigabe oder einem Dateiserver Ihrer Organisation befinden.
     
@@ -119,7 +119,6 @@ Sie können Dateien und Dokumente auch in SharePoint-Websites und OneDrive-Konte
 
 - [Migrieren von Dateifreigabe-Inhalten zu SharePoint Online mithilfe von Azure Data Box](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
-
 ## <a name="frequently-asked-questions-about-importing-pst-files"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien
   
 Hier folgen einige häufig gestellte Fragen zum Massenimportvorgang von PST-Dateien in Microsoft 365-Postfächer mithilfe des Office 365-Importdienstes. 
@@ -147,7 +146,7 @@ Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importauft
   
  **Wo ist der Netzwerkupload verfügbar?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, Germany, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
   
  **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
@@ -163,7 +162,7 @@ Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Of
   
  **Wie lange verbleiben meine PST-Dateien, nachdem ich sie in den Azure-Speicherbereich hochgeladen habe, in Azure, bevor sie gelöscht werden?**
   
-Wenn Sie PST-Dateien mit der Netzwerkupload-Methode importieren, werden die Dateien in einen Azure-BLOB-Container namens **ingestiondata** hochgeladen. Wenn auf der Seite **PST-Dateien importieren** im Security & Compliance Center keine Importaufträge in Bearbeitung sind, werden alle PST-Dateien im Container **ingestiondata** in Azure 30 Tage nach Erstellung des letzten Importauftrags im Security & Compliance Center gelöscht. Daraus folgt, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien nach Azure einen neuen Importauftrag im Security & Compliance Center erstellen müssen (wie in Schritt 5 in den Netzwerkupload-Anweisungen beschrieben).
+Wenn Sie PST-Dateien mit der Netzwerkupload-Methode importieren, werden die Dateien in einen Azure-BLOB-Container namens `ingestiondata` hochgeladen. Wenn auf der Seite **PST-Dateien importieren** im Security & Compliance Center keine Importaufträge in Bearbeitung sind, werden alle PST-Dateien im Container `ingestiondata` in Azure 30 Tage nach Erstellung des letzten Importauftrags im Security & Compliance Center gelöscht. Daraus folgt, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien nach Azure einen neuen Importauftrag im Security & Compliance Center erstellen müssen (wie in Schritt 5 in den Netzwerkupload-Anweisungen beschrieben).
   
 Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Security & Compliance Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar sein, dass auf der Seite **PST-Dateien importieren** im Security & Compliance Center ältere Importaufträge noch aufgeführt sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen.
   

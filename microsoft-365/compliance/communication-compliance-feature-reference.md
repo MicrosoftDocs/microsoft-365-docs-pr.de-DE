@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 017946c08bb1c44f31bbcb87b3ce46571ab8b480
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936784"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101606"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -45,7 +45,7 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 |:-----|:-----|:-----|
 | **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation für anstößige Sprache | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 100% <br> -Bedingungen: anstößige sprach Klassifizierung |
 | **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und Typen, Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
-| **Einhaltung von Vorschriften** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
+| **Einhaltung gesetzlicher Bestimmungen** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
@@ -92,10 +92,8 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
 - **Drittanbieterquellen**: Sie können Kommunikationen aus Drittanbieterquellen nach Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden. Connectors unterstützen die folgenden Drittanbieterressourcen:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Benutzerdefinierter Datenconnector](archiving-third-party-data.md)
+    - [Bloomberg-Nachricht](archive-bloomberg-message-data.md)
+    - [Ice-Chat](archive-icechat-data.md)
 
 Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt " **Drittanbieterquellen** " des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
 
@@ -155,7 +153,7 @@ Informationen über Klassifizierer in Microsoft 365 finden Sie unter [Klassifizi
 ### <a name="conditional-settings"></a>Bedingte Einstellungen
 <a name="ConditionalSettings"> </a>
 
-Die von Ihnen ausgewählten Bedingungen für die Richtlinie gelten sowohl für E-Mail-Kommunikationen als auch für Kommunikationen in Drittanbieterquellen in Ihrer Organisation (etwa Facebook oder DropBox).
+Die Bedingungen, die Sie für die Richtlinie wählen, gelten für die Kommunikation sowohl von e-Mails als auch von Drittanbieterquellen in Ihrer Organisation (wie von Instant Bloomberg oder Dropbox).
 
 In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
   
@@ -245,7 +243,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Größe** | Die Größe der Nachricht in KB. |
+| **Size** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |

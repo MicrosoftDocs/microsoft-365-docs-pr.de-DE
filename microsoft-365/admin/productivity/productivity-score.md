@@ -1,5 +1,5 @@
 ---
-title: Microsoft Produktivitätsbewertung
+title: Microsoft Productivity Score
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über die Microsoft Produktivitätsbewertung
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754796"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101647"
 ---
-# <a name="microsoft-productivity-score-preview"></a>Microsoft Produktivitätsbewertung (Vorschau)
+# <a name="microsoft-productivity-score-preview"></a>Microsoft Productivity Score (Vorschau)
 
 Die Produktivitäts Bewertung unterstützt Organisationen beim Transformieren der Arbeit mit Einblicken in die Verwendung von Microsoft 365 und den Technologie Erfahrungen, die diese Benutzer unterstützen. Die Bewertung spiegelt die Leistung Ihrer Organisation anhand von Maßnahmen zur Mitarbeiter-und Technologie Erfahrung wider und vergleicht Ihre Bewertung mit Organisationen wie Ihrem.
 
@@ -89,7 +89,7 @@ Sie können auf die Benutzeroberfläche von Microsoft 365 admin Home unter **Ber
 
 Auf der Startseite der Produktivitäts Bewertung werden die Gesamtpunktzahl und der Bewertungsverlauf sowie die primäre Einblicke für jede Kategorie angezeigt.
 
-![Startseite der Microsoft Produktivitätsbewertung](../../media/pslanding.png)
+![Produktivitäts Bewertung (Startseite)](../../media/pslanding.png)
 
 **Ihre Punktzahl** wird als Prozentwert sowie in Punkten angezeigt, sodass Sie Ihre Punkte (Zähler) und maximal mögliche Punkte (Nenner) sehen können.
 
@@ -145,7 +145,7 @@ Dieser Bericht hilft Geschäftsführern, Folgendes zu verstehen:
 
 - Die Auswirkungen auf die Arbeits-und Lebenszeit Balance, während sich die Benutzer an die Arbeit von zu Hause anpassen. 
 
-- Wenn Personen Besprechungen effektiv verwenden und wie Sie 
+- Wenn Remote Besprechungen eine effektive Entscheidungsfindung unterstützen.
 
 [Weitere Informationen zum Business Continuity-Bericht](https://aka.ms/bcrps)
 

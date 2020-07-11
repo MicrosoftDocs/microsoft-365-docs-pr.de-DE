@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250445"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101485"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -21,7 +21,7 @@ ms.locfileid: "42250445"
 
 Der Prozess für Partner ist in [Schritten für Partner zum Registrieren von Geräten](register-devices-partner.md)dokumentiert.
 
-Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte mithilfe von Microsoft Managed Desktop im Azure-Portal registrieren.
+Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können Geräte wieder verwenden, die Sie möglicherweise bereits haben (Dies erfordert ein erneutes Abbild). Sie können Geräte über das Verwaltungs Portal von Microsoft Managed Desktop registrieren.
 
 ## <a name="prepare-to-register-existing-devices"></a>Vorbereiten der Registrierung vorhandener Geräte
 
@@ -124,12 +124,12 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > Die Abfrage in Configuration Manager lässt keine Leerzeichen in exportierten Spaltennamen zu; Deshalb haben die Schritte Sie "Serial_Number" und "HardwareHash" eingegeben. Nachdem Sie nun die exportierte CSV-Datei haben, müssen Sie die Berichtskopfzeilen bearbeiten, um die *Seriennummer* und den *Hardware Hash* zu lesen, bevor Sie mit der Geräteregistrierung fortfahren.
 
-Nun können Sie [mithilfe des Azure-Portals mit dem Registrieren von Geräten](#register-devices-by-using-the-azure-portal)fortfahren.
+Jetzt können Sie mit [dem Verwaltungs Portal](#register-devices-by-using-the-admin-portal)fortfahren, um Geräte zu registrieren.
 
 
 #### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell-Skriptmethode
 
-In einer Active Directory Umgebung können Sie das `Get-MMDRegistrationInfo` PowerShell-Cmdlet verwenden, um die Informationen von Geräten in Active Directory Gruppen mithilfe von WinRM Remote zu erfassen. Sie können auch das `Get-AD Computer` Cmdlet verwenden und gefilterte Ergebnisse für bestimmte Hardwaremodell Namen abrufen, die im Katalog enthalten sind. Bestätigen Sie dazu zunächst diese Voraussetzungen, und fahren Sie mit den folgenden Schritten fort:
+In einer Active Directory Umgebung können Sie das PowerShell- `Get-MMDRegistrationInfo` Cmdlet verwenden, um die Informationen von Geräten in Active Directory Gruppen mithilfe von WinRM Remote zu erfassen. Sie können auch das `Get-AD Computer` Cmdlet verwenden und gefilterte Ergebnisse für bestimmte Hardwaremodell Namen abrufen, die im Katalog enthalten sind. Bestätigen Sie dazu zunächst diese Voraussetzungen, und fahren Sie mit den folgenden Schritten fort:
 
 - WinRM ist aktiviert.
 - Die zu registrierenden Geräte sind im Netzwerk aktiv (Sie sind nicht getrennt oder ausgeschaltet).
@@ -168,7 +168,7 @@ Jetzt können Sie mit dem [Registrieren von Geräten](#register-devices)fortfahr
 3. Ausführen`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Aktivieren Sie das Gerät, das Sie registrieren, aber *beginnen Sie nicht mit der Setup-Umgebung*. Wenn Sie das Setupprogramm versehentlich gestartet haben, müssen Sie das Gerät zurücksetzen oder neu abbilden.
 5. Legen Sie das USB-Laufwerk ein, und drücken Sie dann UMSCHALT + F10.
-6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, `cd <pathToUsb>`und führen Sie dann aus.
+6. Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten, und führen Sie dann aus `cd <pathToUsb>` .
 7. Ausführen`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Ausführen`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Entfernen Sie das USB-Laufwerk, und fahren Sie dann das Gerät herunter, indem Sie`shutdown -s -t 0`
@@ -206,9 +206,9 @@ Die Datei muss **exakt dieselben Spaltenüberschriften** wie das Beispiel 1 (Her
 >[!NOTE]
 >Wenn Sie vergessen, die Beispieldaten zu ändern, tritt bei der Registrierung ein Fehler auf.
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Registrieren von Geräten mithilfe des Azure-Portals
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Verwaltungsportals
 
-Wählen Sie im linken Navigationsbereich **Geräte** aus dem Microsoft Managed Desktop [Azure-Portal](https://aka.ms/mmdportal)aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
+Wählen Sie im [Verwaltungs Portal](https://aka.ms/mmdportal)von Microsoft Managed Desktop die Option **Geräte** im linken Navigationsbereich aus. Select **+ Register Devices**; das Einfliegen wird geöffnet:
 
 [![Einfliegen nach Auswahl von Register Geräten, Auflisten von Geräten mit Spalten für zugewiesene Benutzer, Seriennummer, Status, zuletzt gesehenes Datum und Alter](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 

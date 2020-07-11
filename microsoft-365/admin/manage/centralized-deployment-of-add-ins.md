@@ -20,17 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und die Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung für die Bereitstellung von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936443"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102872"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
-Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie Administrator sind, können Sie anhand dieser Anleitung ermitteln, ob Ihre Mandanten und Benutzer die Anforderungen erfüllen, damit Sie die zentralisierte Bereitstellung verwenden können.
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie Administrator sind, ermitteln Sie anhand dieser Anleitung, ob Ihre Organisation und die Benutzer die Anforderungen erfüllen, damit Sie die zentralisierte Bereitstellung verwenden können.
+
+Die zentrale Bereitstellung bietet die folgenden Vorteile:
+  
+- Ein globaler Administrator kann ein Add-in direkt einem Benutzer, mehreren Benutzern über eine Gruppe oder allen in der Organisation zuweisen.
+    
+- Wenn die entsprechende Office-Anwendung gestartet wird, lädt das Add-in automatisch herunter. Wenn das Add-in Add-in-Befehle unterstützt, wird das Add-in automatisch im Menüband in der Office-Anwendung angezeigt.
+    
+- Add-Ins werden nicht mehr für Benutzer angezeigt, wenn der Administrator das Add-in deaktiviert oder löscht oder wenn der Benutzer aus Azure Active Directory oder aus einer Gruppe entfernt wird, der das Add-in zugewiesen ist.
+
 Die zentralisierte Bereitstellung unterstützt drei Windows-, Mac-und Online Office-Apps für Desktopplattformen. Die zentralisierte Bereitstellung unterstützt auch IOS und Android (nur Outlook Mobile-Add-Ins).
+
 Es kann bis zu 24 Stunden dauern, bis ein Add-in für alle Benutzer für den Client angezeigt wird.
   
 ## <a name="requirements"></a>Anforderungen
@@ -96,19 +106,19 @@ Mithilfe der zentralen Bereitstellungs Kompatibilitätsprüfung können Sie übe
     
 2. Führen Sie den folgenden Befehl aus:
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Führen Sie den Befehl **Invoke-CompatabilityCheck** aus:
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   Sie werden aufgefordert, *_TenantDomain_* einzugeben (beispielsweise *TailspinToysIncorporated. onmicrosoft. </span> com*) und *_TenantAdmin_* -Anmeldeinformationen (verwenden Sie Ihre globalen Administratoranmeldeinformationen), und fordert dann die Zustimmung an.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   Mit diesem Befehl werden Sie zur Eingabe von *_TenantDomain_* aufgefordert (beispielsweise *TailspinToysIncorporated. onmicrosoft. </span> com*) und *_TenantAdmin_* -Anmeldeinformationen (verwenden Sie Ihre globalen Administratoranmeldeinformationen), und fordert dann die Zustimmung an.
     
-> [!NOTE]
-> Je nach Anzahl der Benutzer Ihres Mandanten kann die Prüfung nach Minuten oder Stunden abgeschlossen sein. 
+   > [!NOTE]
+   > Je nach Anzahl der Benutzer Ihres Mandanten kann die Prüfung nach Minuten oder Stunden abgeschlossen sein. 
   
 Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CSV-Format (durch Trennzeichen getrenntes Format) erzeugt. Die Datei wird standardmäßig in " **system32** " gespeichert. Die Ausgabedatei enthält die folgenden Informationen:
   

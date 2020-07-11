@@ -16,11 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874915"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094845"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -114,7 +115,7 @@ Wenn eine Vertraulichkeitsbezeichnung automatisch angewendet wird, wird dem Benu
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Konfigurieren von Typen vertraulicher Informationen für eine Bezeichnung
 
-Wenn Sie die Option **Typen vertraulicher Informationen** auswählen, wird dieselbe Liste von vertraulichen Informationen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. So können Sie z. B. auf alle Inhalte, die persönlich identifizierbare Informationen (PII) von Kunden enthalten, wie z. B. Kreditkartennummern oder Sozialversicherungsnummern, automatisch die Bezeichnung "Streng vertraulich" anwenden:
+Wenn Sie die Option **Typen vertraulicher Informationen** auswählen, wird dieselbe Liste von vertraulichen Informationen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. So können Sie z. B. auf alle Inhalte, die personenbezogene Informationen von Kunden enthalten, wie z. B. Kreditkartennummern, Sozialversicherungsnummern oder Personalausweisnummern, automatisch die Bezeichnung "Streng vertraulich" anwenden:
 
 ![Typen vertraulicher Informationen für die automatische Zuweisung von Bezeichnungen in Office-Apps](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -190,7 +191,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
 
 - Simulationsmodus:
     - Die Überwachung von Microsoft 365 muss aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
-    - Um die Dateiinhalte in der Quellansicht anzeigen zu können, müssen Sie über die Rolle **Inhalts-Explorer/Inhalts-Anzeiger** verfügen, sofern Sie kein globaler Administrator sind. Wenn Sie nicht über diese Berechtigung verfügen, wird der Bereich „Vorschau“ nicht angezeigt, wenn Sie ein Element aus der Registerkarte **Übereinstimmende Elemente** auswählen.
+    - Um die Dateiinhalte in der Quellansicht anzuzeigen, müssen Sie über die Rolle zur **Inhalts-Explorer-Inhaltsanzeige** verfügen. Globale Administratoren haben diese Rolle nicht standardmäßig. Wenn Sie nicht über diese Berechtigung verfügen, wird der Vorschaubereich nicht angezeigt, wenn Sie ein Element auf der Registerkarte **Übereinstimmende Elemente** auswählen.
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -240,7 +241,9 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     ![Registerkarte „Automatisches Bezeichnen“](../media/auto-labeling-tab.png)
     
 
-3. Wählen Sie **+ Richtlinie erstellen** aus.
+3. Wählen Sie **+ Richtlinie für die automatische Bezeichnung erstellen** aus. Dadurch wird der Assistent für neue Richtlinien gestartet:
+    
+    ![Assistent für neue Richtlinien für die automatische Bezeichnung ](../media/auto-labeling-wizard.png)
 
 4. Wählen Sie für die Seite **Informationen auswählen, auf die diese Bezeichnung angewendet werden soll**, eine der Vorlagen aus, z. B. **Finanzen** oder **Datenschutz**. Sie können die Suche verfeinern, indem Sie die Dropdownliste **Optionen anzeigen für** verwenden. Sie können aber auch **Benutzerdefinierte Richtlinie** auswählen, wenn die Vorlagen Ihren Anforderungen nicht entsprechen. Wählen Sie **Weiter** aus.
 
@@ -248,19 +251,21 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 
 6. Für die Seite **Wählen Sie Orte aus, an denen Sie die Bezeichnung anwenden möchten**: Wählen und geben Sie Orte für Exchange, Microsoft Office SharePoint Online-Websites und OneDrive an. Wählen Sie dann **Weiter** aus.
     
+    ![Seite "Standorte" auswählen, Assistent für automatischen Bezeichnung ](../media/locations-auto-labeling-wizard.png)
+    
     Für OneDrive müssen Sie einzelne Konten angeben. Die URL für den OneDrive eines Benutzers hat das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Beispielsweise bei einem Benutzer im Mandanten „Contoso“, der den Benutzernamen „rsimone“ hat: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifizieren von URLs für Benutzer finden Sie unter [Abrufen einer Liste aller Benutzer OneDrive-URLs in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-7. Für die **Richtlinieneinstellungen definieren** Seite: Behalten Sie die Standardeinstellung **Inhalte suchen, der enthält** bei, um Regeln zu definieren, mit denen zu bezeichnende Inhalte für alle ausgewählten Speicherorte identifiziert werden. Wenn Sie pro Speicherort unterschiedliche Regeln benötigen, wählen Sie **Erweiterte Einstellungen** aus. Wählen Sie dann **Weiter** aus.
+7. Für die Seite **Allgemeine oder erweiterte Regeln einrichten**: Behalten Sie die Standardeinstellung **Allgemeine Regeln** bei, um Regeln zu definieren, mit denen zu bezeichnende Inhalte für alle ausgewählten Speicherorte identifiziert werden. Wenn Sie pro Speicherort unterschiedliche Regeln benötigen, wählen Sie **Erweiterte Regeln** aus. Wählen Sie dann **Weiter** aus.
     
     Die Regeln verwenden Bedingungen, die sensible Informationstypen und Freigabeoptionen umfassen:
     - Sie können integrierte und benutzerdefinierte Typen für vertrauliche Informationen auswählen.
     - Bei den freigegebenen Optionen können Sie **nur für Personen in meiner Organisation** oder **mit Personen außerhalb meiner Organisation** auswählen.
     
-    Wenn Ihr einziger Speicherort **Exchange ** ist oder Sie **Erweiterte Einstellungen** auswählen, können Sie zusätzliche Bedingungen auswählen:
+    Wenn Ihr einziger Speicherort **Exchange** ist oder Sie **Erweiterte Regeln** auswählen, können Sie zusätzliche Bedingungen auswählen:
     - IP-Adresse des Absenders lautet
     - Empfängerdomäne lautet
     - Empfänger lautet
@@ -269,29 +274,29 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     - Der Inhalt einer E-Mail-Anlage konnte nicht vollständig gescannt werden
     - Der Inhalt einer E-Mail-Anlage wurde nicht vollständig gescannt
 
-8. Für die Seite **Regeln einrichten, um zu definieren, welche Inhalte bezeichnet werden**: Wählen Sie **+ Regel erstellen** und dann **Nächste** aus.
-
-9. Benennen und definieren Sie auf der Seite **Regel erstellen** die Regel unter Verwendung von sensibler Informationstypen oder der Freigabeoption, und wählen Sie dann **Speichern** aus.
+8. Je nachdem, welche Einstellungen Sie bisher ausgewählt haben, können Sie nun neue Regeln unter Verwendung von Bedingungen und Ausnahmen erstellen.
     
     Die Konfigurationsoptionen für Typen sensibler Informationen sind die gleichen wie die, die Sie für das automatische Bezeichnen von Office-Anwendungen auswählen. Wenn Sie weitere Informationen benötigen, lesen Sie [Konfigurieren sensibler Informationstypen für eine Bezeichnung](#configuring-sensitive-info-types-for-a-label).
-
-10. Zurück zur Seite **Regeln einrichten, um zu definieren, welche Inhalte bezeichnet werden**: Wählen Sie erneut **+ Regel erstellen** aus, wenn Sie eine weitere Regel benötigen, um den zu bezeichnenden Inhalt zu identifizieren, und wiederholen Sie den vorherigen Schritt. Wenn Sie alle erforderlichen Regeln definiert und bestätigt haben, dass der Status aktiviert ist, wählen Sie **nächsten**aus.
+    
+    Wenn Sie alle erforderlichen Regeln definiert und bestätigt haben, dass der Status "Aktiviert" lautet, wählen Sie **Weiter** aus, mit der Auswahl einer Bezeichnung fortzufahren, die automatisch angewendet werden soll.
 
 11. Für die Seite **Wählen Sie eine Bezeichnung zum automatischen Bezeichnen aus**: Wählen Sie **+ Wählen Sie eine Bezeichnung aus**, eine Bezeichnung aus dem Bereich **Wählen Sie ein Vertraulichkeitsbezeichnung** und dann **Weiter** aus.
 
-12. Für die Seite: **Entscheiden, ob Sie die Richtliniensimulation jetzt oder später ausführen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus. 
+12. Für die Seite **Entscheiden, ob Sie die Richtlinie jetzt oder später testen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus: 
+    
+    ![Testen des Assistenten für die Richtlinie: automatisches Bezeichnen](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. Auf der Seite **Zusammenfassung**: Überprüfen Sie die Konfiguration Ihrer Richtlinie für die automatische Bezeichnung, nehmen Sie die erforderlichen Änderungen vor, und schließen Sie den Assistenten ab.
     
     Im Gegensatz zur automatischen Bezeichnung für Office-Anwendungen gibt es keine separate Veröffentlichungsoption. Wie bei Veröffentlichungsbezeichnungen sollten Sie jedoch bis zu 24 Stunden Zeit einräumen, damit sich die Richtlinie für die automatische Bezeichnung in Ihrer gesamten Organisation replizieren kann.
 
-Auf der Seite **Informationsschutz** wird auf der Registerkarte **Automatisches Bezeichnen** für die Richtlinie zum automatischen Bezeichnen **Simulation** oder **Aus** angezeigt, je nachdem, ob Sie ausgewählt haben, dass die Richtlinie im Simulationsmodus ausgeführt wird oder nicht. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. **Richtliniensimulation wird noch ausgeführt**). Wählen Sie für Richtlinien im Simulationsmodus die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
+Unter **Informationsschutz** > **Automatisches Bezeichnen** wird jetzt Ihre Richtlinie zum automatischen Bezeichnen im Abschnitt **Simulation** oder **Aus** angezeigt, je nachdem, ob Sie ausgewählt haben, dass die Richtlinie im Simulationsmodus ausgeführt wird oder nicht. Wählen Sie Ihre Richtlinie aus, um die Details der Konfiguration und des Status zu sehen (z. B. **Richtliniensimulation wird noch ausgeführt**). Wählen Sie für Richtlinien im Simulationsmodus die Registerkarte **Übereinstimmende Elemente** aus, um zu sehen, welche E-Mails oder Dokumente den von Ihnen festgelegten Regeln entsprechen.
 
 Sie können Ihre Richtlinie direkt über diese Oberfläche ändern:
 
 - Wählen Sie für eine Richtlinie im Abschnitt **Aus** die Schaltfläche **Bearbeiten** aus.
 
-- Wählen Sie für eine Richtlinie im Abschnitt **Simulation** auf einer der beiden Registerkarten die Schaltfläche **Bearbeiten** oben auf der Seite aus:
+- Wählen Sie für eine Richtlinie im Abschnitt **Simulation** auf einer der beiden Registerkarten die Schaltfläche ** bearbeiten** oben auf der Seite aus:
     
     ![Option "Richtlinie für die automatische Bezeichnung"](../media/auto-labeling-edit.png)
     

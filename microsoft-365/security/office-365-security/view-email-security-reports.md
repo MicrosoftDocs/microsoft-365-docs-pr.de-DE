@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035796"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102915"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -38,6 +38,8 @@ Im [Security & Compliance Center](https://protection.office.com) stehen eine Vie
 
 Der Bericht " **kompromittierte Benutzer** " zeigt die Anzahl der Benutzerkonten an, die in den letzten 7 Tagen als **verdächtig** oder **eingeschränkt** gekennzeichnet wurden. Konten in einem dieser Zustände sind problematisch oder sogar gefährdet. Bei häufiger Verwendung können Sie mit dem Bericht Spitzen und sogar Trends in verdächtigen oder eingeschränkten Konten erkennen. Weitere Informationen zu kompromittierten Benutzern finden Sie unter [reagieren auf ein kompromittiertes e-Mail-Konto](responding-to-a-compromised-email-account.md).
 
+![Kompromittierte Benutzer-Widget im Dashboard Berichte](../../media/compromised-users-report-widget.png)
+
 In der Ansicht "aggregiert" werden Daten für die letzten 90 Tage angezeigt, und in der Detailansicht werden Daten für die letzten 30 Tage angezeigt.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **kompromittierte Benutzer**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=CompromisedUsers> .
@@ -50,7 +52,7 @@ Sie können die Tabelle Diagramm und Details filtern, indem Sie auf **Filter** k
 
 - **Eingeschränkt**: das Benutzerkonto wurde aufgrund strenger verdächtiger Muster vom Senden von e-Mails eingeschränkt.
 
-![Der Bericht "kompromittierte Benutzer" wird in Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Berichtsansicht im Bericht "kompromittierte Benutzer"](../../media/compromised-users-report-activity-view.png)
 
 Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details angezeigt:
 
@@ -366,7 +368,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**:
 
   - **Date**
-  - **Ort**
+  - **Standort**
   - **Regie**
   - **Name der Schadsoftware**
 
@@ -443,7 +445,7 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
   - **Excel**
   - **OneNote**
   - **Visio**
-  - **Microsoft Teams**
+  - **Teams**
   - **Other**
 
   Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
