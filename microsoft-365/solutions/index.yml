@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365-Lösungs-und Architektur Center
-summary: Hier erfahren Sie, wie Sie die richtige Lösung und Architektur für Ihre Organisation entwerfen.
+title: Microsoft 365 Lösungs- und Architektur-Center
+summary: Grundlegendes zum Design der Lösung und Architektur, das für Ihre Organisation geeignet ist.
 brand: m365
 metadata:
-  title: Microsoft 365-Lösungs-und Architektur Center
-  description: Grundlegendes zum Entwerfen der Lösung und der richtigen Architektur für Ihre Organisation
+  title: Microsoft 365 Lösungs- und Architektur-Center
+  description: Grundlegendes zum Design der Lösung und Architektur, das für Ihre Organisation geeignet ist
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -18,7 +18,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7f0da78b7d0c716532c2aca277059ff54478be5f
   ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 05/07/2020
   ms.locfileid: "44160147"
@@ -27,37 +27,37 @@ highlightedContent:
   - title: Fördern von Remotemitarbeitern mit Microsoft 365
     itemType: whats-new
     url: empower-people-to-work-remotely.md
-  - title: Einrichten einer sicheren Zusammenarbeit mit Microsoft 365
+  - title: Sichere Zusammenarbeit mit Microsoft 365 einrichten
     itemType: get-started
     url: setup-secure-collaboration-with-teams.md
-  - title: Bereitstellen von Bedrohungsschutz in Microsoft 365
+  - title: Bereitstellen des Bedrohungsschutzes in Microsoft 365
     itemType: get-started
     url: deploy-threat-protection.md
 productDirectory:
   items:
-  - title: Microsoft 365 Foundational-Lösungen
+  - title: Grundlegende Microsoft 365-Lösungen
     imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: Hier finden Sie umfassende Anleitungen für ein bestimmtes Geschäftsproblem oder Ihre Anforderungen, von der Planung bis zur Implementierung bis hin zur Einführung.
+    summary: Hier finden Sie umfassende Anleitungen für ein bestimmtes Geschäftsproblem oder eine Anforderung – von der Planung über die Implementierung bis hin zur Einführung.
     url: foundation-solutions-overview.md
-  - title: Arbeits Auslastungs Lösung und Szenario-Anleitung
+  - title: Anleitung für Lösungen zur Arbeitsauslastung und Szenario-Anleitungen
     imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: Fügen Sie diese Szenarien auf die grundlegenden Lösungen hinzu, um ihrer Umgebung Funktionen hinzuzufügen.
+    summary: Fügen Sie diese Szenarien zu den Basislösungen hinzu, um Ihre Umgebung um einige Funktionen zu ergänzen.
     url: workload-solutions-scenarios-overview.md
-  - title: Lösungs-und Architektur Illustrationen
+  - title: Darstellungen zu Lösungen und Architekturen
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: Zeigen Sie diese Illustrationen an, oder laden Sie diese herunter, um die Funktionen und die Architektur der Dienste von Microsoft 365 zu verstehen.
+    summary: Betrachten Sie diese Darstellungen oder laden Sie sie herunter, um die Funktionen und die Architektur der Dienste von Microsoft 365 nachvollziehen zu können.
     url: productivity-illustrations.md
   - title: Branchenspezifische Anleitungen
     imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: Hier finden Sie eine speziell für Ihre Branche erstellte Anleitung.
+    summary: Hier finden Sie Anleitungen speziell für Ihre Branche.
     url: industry-specific-guidance-overview.md
-  - title: Unternehmens Entwurfsprinzipien
+  - title: Entwurfsgrundsätze für Enterprise
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: Verstehen Sie die wichtigsten Grundsätze, die Sie zum Verständnis von Netzwerk-, Identitäts-, Sicherheits-und multinationalen Architekturen benötigen.
+    summary: Lernen Sie die wichtigsten Grundsätze kennen, die Sie brauchen, um Netzwerk-, Identitäts- und Sicherheitsarchitekturen sowie multinationale Architekturen zu verstehen.
     url: design-principles.md
   - title: Roadmap und Ressourcen für die Bereitstellung
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Ressourcen zum Einrichten der Zusammenarbeit zusammen mit Sicherheits-und Informationsschutz.
+    summary: Ressourcen für die Einrichtung der Zusammenarbeit sowie Sicherheits- und Informationsschutz.
     url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
 additionalContent:
   sections:
@@ -66,15 +66,15 @@ additionalContent:
     - title: Microsoft 365-Hilfecenter für Administratoren und IT-Experten
       summary: Weitere Ressourcen für IT-Experten finden Sie auf der Microsoft 365-Seite
       url: https://docs.microsoft.com/microsoft-365
-    - title: Schulung für Administratoren und IT-Experten
-      summary: Suchen von Schulungsressourcen für die Verwaltung von Microsoft 365
+    - title: Schulungen für Administratoren und IT-Experten
+      summary: Schulungsressourcen für die Verwaltung von Microsoft 365
       url: https://docs.microsoft.com/learn/m365/
-    - title: Schulung für Endbenutzer
-      summary: Unterstützen Sie Ihre Endbenutzer bei der Verwendung von Microsoft 365
+    - title: Schulungen für Endbenutzer
+      summary: Helfen Sie Ihren Endbenutzern bei der Verwendung von Microsoft 365
       url: https://support.office.com/modernworkplace
     - title: Microsoft 365 Tech Community
-      summary: Interaktion mit der Tech-Community
+      summary: Interaktion mit der Community
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
     - title: Ressourcen für Entwickler
-      summary: Informationen zur Entwicklung von Microsoft 365
+      summary: So entwickeln Sie für Microsoft 365
       url: https://developer.microsoft.com/microsoft-365

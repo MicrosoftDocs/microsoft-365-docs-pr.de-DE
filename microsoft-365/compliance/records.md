@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über Datensätze, um Sie beim Implementieren einer Datensatzverwaltungslösung in Microsoft 365 zu unterstützen.
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470580"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080102"
 ---
 # <a name="learn-about-records"></a>Informationen zu Datensätzen
 
@@ -62,7 +62,7 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
     Weitere Informationen zum Anwenden von Datensatzkennzeichnungen auf SharePoint- und OneDrive-Ordner finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **Datensätze können nicht gelöscht werden**. Wenn ein Benutzer versucht, einen Datensatz in Exchange zu löschen, wird das Element in den Ordner „Wiederherstellbare Elemente“ verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange-Speicherorten](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations) beschrieben.
+  - **Datensätze können nicht gelöscht werden**. Wenn ein Benutzer versucht, einen Datensatz in Exchange zu löschen, wird das Element in den Ordner „Wiederherstellbare Elemente“ verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange-Speicherorten](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange) beschrieben.
 
     Wenn ein Benutzer versucht, einen Datensatz in SharePoint zu löschen, wird eine Fehlermeldung angezeigt, dass das Element nicht gelöscht wurde und in der Bibliothek verbleibt.
 

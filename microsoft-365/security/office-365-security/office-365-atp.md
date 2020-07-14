@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818807"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039378"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -45,9 +45,8 @@ Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösa
 
 In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 
-|||
+| Office 365 ATP Plan 1 | Office 365 ATP Plan 2 |
 |---|---|
-|**Office 365 ATP Plan 1**|**Office 365 ATP Plan 2**|
 |Konfigurations-, Schutz- und Erkennungsfunktionen:<br/>• [Sichere Anlagen](atp-safe-attachments.md)<br/>• [Sichere Links](atp-safe-links.md)<br/>• [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP Antiphishingschutz](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Echtzeiterkennungen](threat-explorer.md)|Office 365 ATP Plan 1 – Funktionen<br/>--- plus ---<br/>Automatisierungs-, Untersuchungs-, Fehlerbehebungs- und Schulungsfunktionen:<br/>• [Sicherheitsrisiken-Nachverfolgung](threat-trackers.md)<br/>• [Sicherheitsrisiken-Explorer](threat-explorer.md)<br/>• [Automatische Untersuchung und Reaktion](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Angriffssimulator](attack-simulator.md)|
 |
 
@@ -56,6 +55,8 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 - Office 365 ATP Plan 1 ist in Microsoft 365 Business Premium enthalten.
 
 - Office 365 ATP Plan 1 und Office 365 ATP Plan 2 sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen hierzu finden Sie unter [Funktionsverfügbarkeit bei ATP-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+- Das Feature [Sichere Dokumente](safe-docs.md) ist nur für Benutzer mit den Lizenzen für Microsoft 365 E5 oder Microsoft 365 E5 Security verfügbar (nicht in Office 365 ATP-Plänen enthalten).
 
 - Wenn Ihr aktuelles Abonnement Office 365 ATP nicht enthält, [wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644) und zu testen, wie ATP für Ihre Organisation eingesetzt werden kann.
 
