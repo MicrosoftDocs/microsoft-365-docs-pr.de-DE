@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Verwalten von Daten und Dienst
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+title: Verwalten Ihrer Daten und Dienste
+summary: Sehen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu unterstützen. Die komplette Liste finden Sie im Navigationsbereich auf der linken Seite.
 metadata:
-  title: Verwalten von Daten und Dienst
-  description: Überwachen des Status Ihres Diensts, Sichern von Daten, Installieren von Add-Ins und Aktualisieren auf die neuesten apps
+  title: Verwalten Ihrer Daten und Dienste
+  description: Überwachen Sie den Status Ihres Dienstes, sichern Sie Daten, installieren Sie Add-Ins und führen Sie ein Upgrade auf die neuesten Apps durch
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780097"
@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: Überwachen der Benutzeraktivität mit Hilfe von Berichten
       url: ../activity-reports/activity-reports.md
-    - text: Überwachen der Verwendungsanalyse
+    - text: Überwachen der Nutzungsanalysen
       url: ../usage-analytics/usage-analytics.md
     - text: Aktivieren von Nutzungsanalysen
       url: ../usage-analytics/enable-usage-analytics.md
@@ -42,7 +42,7 @@ landingContent:
     links:
     - text: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: Einrichten der e-Mail-Aufbewahrung (Microsoft 365 Business Premium)
+    - text: Einrichten der E-Mail-Aufbewahrung (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
     - text: Entfernen von Unternehmensdaten von Geräten (Microsoft 365 Business Premium)
       url: ../../business/remove-company-data.md
@@ -50,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Aktualisieren Sie Benutzer auf die neuesten Apps
+    - text: Aktualisieren der Benutzer auf die neuesten Apps
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: Anpassen des App-Startfelds
       url: customize-the-app-launcher.md
@@ -64,11 +64,11 @@ landingContent:
     links:
     - text: Microsoft Teams-Administratordokumentation
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: Verwenden von Outlook und Microsoft Teams zusammen
+    - text: 'Gemeinsames Verwenden von Outlook und Teams '
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
-    - text: Schulungen zu Microsoft Teams
+    - text: Microsoft Teams-Schulung
       url: https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7
 - title: OneDrive und SharePoint
   linkLists:

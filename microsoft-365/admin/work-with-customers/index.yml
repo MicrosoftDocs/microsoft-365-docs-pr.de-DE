@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Arbeiten mit Kunden
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+summary: Sehen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu unterstützen. Die komplette Liste finden Sie im Navigationsbereich auf der linken Seite.
 metadata:
   title: Arbeiten mit Kunden
-  description: Freigeben von Dokumenten und Verwenden von Teams für die Zusammenarbeit und Besprechung
+  description: Geben Sie Dokumente frei und verwenden Sie Teams zur Zusammenarbeit und für Besprechungen
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785460"
@@ -30,11 +30,11 @@ landingContent:
     links:
     - text: Erstellen Sie ein Team mit Gastbenutzern
       url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-    - text: Als Gast an einem Team teilnehmen
+    - text: Treten Sie einem Team als Gast bei
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
-    - text: Chatten mit Mitarbeitern und Kunden
+    - text: Chatten Sie mit Mitarbeitern und Kunden
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: Planen einer Microsoft Teams-Besprechung mit Gastbenutzern
+    - text: Planen Sie eine Teams-Besprechung mit Gastbenutzern
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
     - text: Nehmen Sie an einer Teams-Besprechung mit Gästen teil
       url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
