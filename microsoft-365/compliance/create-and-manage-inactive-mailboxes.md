@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie den Inhalt gelöschter Postfächer mithilfe der Funktion für inaktive Postfächer in Office 365 beibehalten können.
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023358"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127542"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Erstellen und Verwalten inaktiver Postfächer
 
@@ -42,7 +42,7 @@ Mit Microsoft 365 können Sie den Inhalt von gelöschten Postfächern beibehalte
 
 - Wenn ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden) nicht auf ein Postfach angewendet wird, bevor es gelöscht wird, wird der Inhalt des Postfachs nicht beibehalten oder kann nicht erkannt werden. Das gelöschte Postfach kann jedoch innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden, aber das Postfach und dessen Inhalte werden nach 30 Tagen endgültig gelöscht, wenn es nicht wiederhergestellt wird.
 
-- Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Weitere Informationen zu Aufbewahrungsrichtlinien finden Sie unter [Übersicht über Aufbewahrungsrichtlinien in Microsoft 365](retention-policies.md).
+- Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Weitere Informationen zu Aufbewahrungsrichtlinien finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Erstellen eines inaktiven Postfachs
 
@@ -56,9 +56,9 @@ Wenn ein Haltestatus bereits in einem Postfach gespeichert ist oder wenn bereits
   
 Eine schrittweise Anleitung für das Platzieren eines Postfachs für das Beweissicherungsverfahren oder das Anwenden einer Aufbewahrungsrichtlinie finden Sie unter:
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Übersicht über Aufbewahrungsrichtlinien in Office 365](retention-policies.md)
+- [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen in Office 365](retention.md)
     
 > [!NOTE]
 > Für Beweissicherungsverfahren und Aufbewahrungsrichtlinien können Sie ein unbefristetes Archiv oder einen zeitbasierten Haltestatus erstellen. Bei einer dauerhaften Aufbewahrung werden die Inhalte des inaktiven Postfachs dauerhaft oder so lange beibehalten, bis die Aufbewahrung aufgehoben oder ihre Dauer geändert wird. Nachdem die Aufbewahrung beendet oder die Aufbewahrungsrichtlinie deaktiviert wurde (vorausgesetzt, das Postfach wurde vor mehr als 30 Tagen gelöscht), wird das inaktive Postfach für das endgültige Löschen markiert, und die Inhalte des Postfachs werden nicht aufbewahrt und können nicht gefunden werden. In einer zeitbasierten Speicherung oder Aufbewahrungsrichtlinie geben Sie die Dauer des Haltestatus an. Diese Dauer wird pro Element festgelegt und wird von dem Datum ab berechnet, an dem ein Postfachelement empfangen oder erstellt wurde. Nachdem die Archivierung für ein Postfachelement abgelaufen ist und sich dieses Element im Ordner „Wiederherstellbare Elemente" im inaktiven Postfach befindet, wird das Element dauerhaft aus dem inaktiven Postfach gelöscht, nachdem die Aufbewahrungsdauer für das gelöschte Element abgelaufen ist. 

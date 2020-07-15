@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 0729530537e1d01f2e58633bf67a968a6ae2717b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352292"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127312"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -74,7 +74,7 @@ Aufsichtsrichtlinien können die Überwachung der Kommunikation in Ihrer Organis
 
     Organisationen sind für die gesamte Kommunikation verantwortlich, die über Ihre Infrastruktur und Unternehmensnetzwerk Systeme verteilt ist. Durch die Verwendung von Aufsichtsrichtlinien zur Ermittlung und Verwaltung potenzieller rechtlicher Risiken und Risiken können Risiken minimiert werden, bevor Sie Unternehmensvorgänge beschädigen können. Beispielsweise können Sie Ihre Organisation auf unbefugte Kommunikation für vertrauliche Projekte wie bevorstehende Akquisitionen, Fusionen, Gewinn Offenlegungen, Neuorganisationen oder Änderungen des Führungsteams überwachen.
 
-- **Einhaltung von Vorschriften**
+- **Einhaltung gesetzlicher Bestimmungen**
 
     Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung an Organisationen, Aufsichtsverfahren für die Überwachung der Aktivitäten Ihrer Mitarbeiter und der Unternehmenstypen, in denen Sie tätig ist, zu überwachen. Ein weiteres Beispiel ist möglicherweise die Notwendigkeit, Broker Händler in Ihrer Organisation zu überwachen, um gegen potenzielle Geldwäsche, Insidergeschäfte, Absprachen oder Bestechungsaktivitäten zu schützen. Aufsichtsrichtlinien können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überwachung und den Bericht über die Unternehmenskommunikation bereitstellen.
 
@@ -86,14 +86,14 @@ Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien defin
 
 ### <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
-Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
+Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365 Groups, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
 
 >[!IMPORTANT]
 >Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität oder ein Office 365 Enterprise E5-Abonnement verfügen oder in einem Microsoft 365 E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Prüfer
 
-Wenn Sie eine Aufsichtsrichtlinie erstellen, müssen Sie festlegen, wer die Überprüfungen der Nachrichten der überwachten Benutzer durchführen soll. In der Richtlinie identifizieren Benutzer e-Mail-Adressen einzelne Personen oder Gruppen von Personen, um die beaufsichtigte Kommunikation zu überprüfen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden.
+Wenn Sie eine Aufsichtsrichtlinie erstellen, müssen Sie festlegen, wer die Überprüfungen der Nachrichten der überwachten Benutzer durchführen soll. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
@@ -177,7 +177,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 |:-----|:-----|
 | **Nachricht wird von einer dieser Domänen empfangen** <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überwachen, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie die Bedingung konfigurieren, dass eine **Nachricht nicht von einer dieser Domänen Bedingungen empfangen wird** , die die e-Mail-Adresse ausschließt (Beispiel "Newsletter@contoso.com"). |
 | **Nachricht wird an eine dieser Domänen gesendet.** <br><br> **Nachricht wird nicht an eine dieser Domänen gesendet** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in gesendete Nachrichten einzuschließen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle an eine bestimmte Domäne gesendeten e-Mails überwachen möchten, jedoch gesendete Nachrichten ausschließen möchten, die nicht überprüft werden müssen, müssen Sie zwei Bedingungen konfigurieren: <br> -Eine **Nachricht wird an eine dieser Domänen Bedingungen gesendet** , die die Domäne definiert ("contoso.com") und <br> -Eine **Nachricht wird nicht an eine dieser Domänen Bedingungen gesendet** , die die e-Mail-Adresse ("Subscriptions@contoso.com") ausschließen. |
-| **Nachricht wird mit einer dieser Bezeichnungen klassifiziert.** <br><br> **Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert** | So wenden Sie die Richtlinie an, wenn bestimmte Aufbewahrungs Bezeichnungen in einer Nachricht enthalten oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und die konfigurierten Beschriftungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Retention Labels](labels.md).|
+| **Nachricht wird mit einer dieser Bezeichnungen klassifiziert.** <br><br> **Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert** | So wenden Sie die Richtlinie an, wenn bestimmte Aufbewahrungs Bezeichnungen in einer Nachricht enthalten oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und die konfigurierten Beschriftungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).|
 | **Nachricht enthält eines dieser Wörter** <br><br> **Nachricht enthält keines dieser Wörter** | Um die Richtlinie anzuwenden, wenn bestimmte Wörter oder Ausdrücke in einer Nachricht enthalten oder ausgeschlossen werden, geben Sie jedes Wort oder jede Phrase ein, und trennen Sie Sie durch ein Komma. Jedes Wort, das Sie eingeben, wird separat angewendet (es muss nur ein Wort für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **Attachment enthält eines dieser Wörter** <br><br> **Attachment enthält keines dieser Wörter** | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in einer Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise in einem Word-Dokument), geben Sie jedes Wort oder jede Phrase ein, und trennen Sie Sie durch ein Komma. Jedes Wort, das Sie eingeben, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinie auf die Anlage angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **Attachment ist einer der folgenden Dateitypen** <br><br> **Attachment ist keiner dieser Dateitypen** | Geben Sie die Dateierweiterungen ein (beispielsweise. exe oder. pdf), um die Kommunikation zu überwachen, die bestimmte Anlagentypen einschließen oder ausschließen. Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Nur eine Anlagenerweiterung muss übereinstimmen, damit die Richtlinie angewendet wird.|
@@ -201,7 +201,7 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen 
 
 #### <a name="review-percentage"></a>Überprüfen des Prozentsatzes
 
-Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die einer Aufsichtsrichtlinie unterliegt. Aus dem Gesamtprozentsatz des Inhalts, der den ausgewählten Richtlinienbedingungen entspricht, wird ein Zufalls Beispiel für eine echt Zeitauswahl ausgewählt. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie in einer Aufsichtsrichtlinie **100%** eingeben.
+Wenn Sie den Umfang der zu überprüfenden Inhalte reduzieren möchten, können Sie einen Prozentsatz aller Kommunikationen angeben, die unter eine Überwachungsrichtlinie fallen. Eine zufällige Stichprobe von Inhalten wird in Echtzeit aus dem Gesamtprozentsatz der Inhalte ausgewählt, die den gewählten Richtlinienbedingungen entsprechen. Wenn Bearbeiter alle Elemente überprüfen möchten, können Sie in einer Aufsichtsrichtlinie **100%** eingeben.
 
 ## <a name="monitor--manage"></a>Überwachen der & verwalten
 
@@ -292,7 +292,7 @@ Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|
 | **Erstellen einer Richtlinie** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **Bearbeiten einer Richtlinie** | [Gruppe-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Gruppe-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
+| **Bearbeiten einer Richtlinie ** | [Gruppe-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Gruppe-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
 | **Löschen einer Richtlinie** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 Zeigen Sie Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) an.

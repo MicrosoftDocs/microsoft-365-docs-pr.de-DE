@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO- (Datenschutz-Grundverordnung) Schutzplans verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a7bea2abeaec7a858b3cfc693603c46c0f2a416a
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165258"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126816"
 ---
 # <a name="apply-labels-to-personal-data"></a>Anwenden von Bezeichnungen auf personenbezogene Daten
 
  Verwenden Sie dieses Thema, wenn Sie im Rahmen Ihres DSGVO-Schutzplans Klassifizierungsbezeichnungen verwenden. 
 
-Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Microsoft 365 verwenden, empfiehlt Microsoft, mit [Aufbewahrungsbezeichnungen](labels.md) zu beginnen. Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
+Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Microsoft 365 verwenden, empfiehlt Microsoft, mit [Aufbewahrungsbezeichnungen](retention.md#retention-labels) zu beginnen. Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
 - Verwenden Sie die Erweiterte Datenkontrolle, um Bezeichnungen automatisch auf vertrauliche Informationstypen oder andere Kriterien anzuwenden.
 - Verwenden Sie Aufbewahrungsbezeichnungen mit der Verhinderung von Datenverlust, um einen Schutz anzuwenden. 
 - Verwenden Sie Bezeichnungen mit eDiscovery und der Inhaltssuche. 
@@ -72,27 +72,27 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 <tbody>
 <tr class="odd">
 <td align="left">Aufbewahrungsbezeichnungen Beispiele: „Privat“, „Öffentlich“, „Kundendaten“, „Personaldaten“, „Vertraulich“, „Streng vertraulich“</td>
-<td align="left"><p>Diese Bezeichnung automatisch anwenden...</p>
+<td align="left"><p>Auto apply this label . . .</p>
 <p>Kundendaten</p>
-<p>... auf Dokumente, die folgenden vertraulichen Informationstypen entsprechen...</p>
+<p>. . . to documents that match these sensitive information types . . .</p>
 <p>&lt;Liste der Beispiele für vertrauliche Informationstypen&gt;</p></td>
-<td align="left"><p>Diesen Schutz anwenden...</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;Schutz definieren&gt;</p>
-<p>... auf Dokumente mit dieser Bezeichnung...</p>
+<p>. . . to documents with this label . . .</p>
 <p>Kundendaten</p></td>
-<td align="left"><p>Warnung, wenn Dateien mit diesen Attributen...</p>
+<td align="left"><p>Alert when files with these attributes . . .</p>
 <p>Wählen Sie ein oder mehrere Attribute aus: vordefiniertes PII-Attribut, Microsoft 365-Typ für vertrauliche Informationen, Vertraulichkeitsbezeichnung (AIP), benutzerdefinierter Ausdruck</p>
 <p>. . . in einer beliebigen genehmigten SaaS-App außerhalb der Organisation freigegeben werden</p><p>Hinweis: Aufbewahrungsbezeichnungen werden derzeit in Cloud App Security nicht unterstützt.</td>
 </tr>
 <tr class="even">
-<td align="left">Vertrauliche Informationstypen. Beispiele: Nationale belgische Nummer, Kreditkartennummer, Kroatische ID-Kartennummer, nationale finnische ID-Nummer</td>
-<td align="left"><p>Diese Bezeichnungen für Benutzer zum manuellen Anwenden veröffentlichen...</p>
+<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
+<td align="left"><p>Publish these labels for users to manually apply . . .</p>
 <p>&lt;Bezeichnungen wählen&gt;</p>
-<p>... für diese Speicherorte...</p>
+<p>. . . to these locations . . .</p>
 <p>&lt;alle Speicherorte oder bestimmte Speicherorte wählen&gt;</p></td>
-<td align="left"><p>Diesen Schutz anwenden...</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;Schutz definieren&gt;</p>
-<p>... auf Dokumente, die folgenden vertraulichen Informationstypen entsprechen&gt;</p></td>
+<p>. . . to documents that match these sensitive information types&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -100,9 +100,9 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 
 ## <a name="prioritize-auto-apply-label-policies"></a>Priorisieren automatisch angewendeter Bezeichnungsrichtlinien
 
-Für personenbezogene Daten, die der DSGVO unterliegen, wird empfohlen, Bezeichnungen automatisch anzuwenden, indem vertrauliche Informationstypen verwendet werden, die Sie für Ihre Umgebung bereitgestellt haben. Es ist wichtig, dass Richtlinien für das automatische Anwenden von Bezeichnungen gut konzipiert und getestet wurden, damit ein beabsichtigtes Verhalten auftritt.
+For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-Die Reihenfolge, in der automatisch anzuwendende Richtlinien erstellt werden, sowie, ob Benutzer diese Bezeichnungen auch anwenden, wirkt sich auf das Ergebnis aus. Es ist als wichtig, die Einführung sorgfältig zu planen. Folgendes müssen Sie dazu wissen.
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### <a name="one-label-at-a-time"></a>Jeweils nur eine Bezeichnung
 
@@ -110,11 +110,11 @@ Sie können einem Dokument jeweils nur eine Bezeichnung zuweisen.
 
 ### <a name="older-auto-apply-policies-win"></a>Ältere automatisch anzuwendende Richtlinien gelten zuerst
 
-Wenn es mehrere Regeln gibt, die eine automatisch anzuwendende Bezeichnung zuweisen, und der Inhalt die Bedingungen für mehrere Regeln erfüllt, wird die Bezeichnung für die älteste Regel zugewiesen. Aus diesem Grund ist es wichtig, die Richtlinien für Bezeichnungen sorgfältig zu planen, bevor Sie diese konfigurieren. Wenn für eine Organisation eine Änderung der Priorität der Richtlinien für Bezeichnungen erforderlich ist, müssen die Richtlinien gelöscht und erneut erstellt werden.
+If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Manuell von Benutzern angewendete Bezeichnungen sind wichtiger als automatisch angewendete Bezeichnungen
 
-Manuell von Benutzern angewendete Bezeichnungen sind wichtiger als automatisch angewendete Bezeichnungen. Richtlinien für automatisches Anwenden können keine Bezeichnung ersetzen, die bereits von einem Benutzer angewendet wurde. Benutzer können Bezeichnungen ersetzen, die automatisch angewendet wurden.
+Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>Automatisch zugewiesene Bezeichnungen können aktualisiert werden
 
@@ -124,7 +124,7 @@ Achten Sie darauf, dass Ihr Plan für die Implementierung von Bezeichnungen Folg
 
 - Priorisieren der Reihenfolge, in der automatisch angewendete Richtlinien erstellt werden.
 
-- Ausreichend Zeit für das automatische Anwenden von Bezeichnungen, bevor diese für das manuelle Anwenden für Benutzer bereitgestellt werden. Es kann bis zu sieben Tage dauern, bis die Bezeichnungen auf alle Inhalte angewendet werden, die die Bedingungen erfüllen.
+- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Beispiel für Priorität für das Erstellen von automatisch angewendeten Richtlinien
 

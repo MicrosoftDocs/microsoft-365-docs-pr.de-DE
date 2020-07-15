@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie drittanbieterdaten aus Social Media-Plattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen zu Microsoft 365-Postfächern importieren.
-ms.openlocfilehash: a8dc69e7e4c7061e048fe49d1e51fd8867654454
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101636"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126634"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -73,7 +73,7 @@ Die drei primären eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, zentrale
 
 ### <a name="retention-policies"></a>Aufbewahrungsrichtlinien
 
-Sie können eine [Aufbewahrungsrichtlinie](retention-policies.md) auf Benutzerpostfächer anwenden, um drittanbieterdaten (und andere Postfachinhalte) nach Ablauf des Aufbewahrungszeitraums beizubehalten und anschließend zu löschen. Sie können auch Aufbewahrungsrichtlinien verwenden, um drittanbieterdaten eines bestimmten Alters zu löschen oder eine Dispositions Überprüfung auszulösen, wenn der Aufbewahrungszeitraum abgelaufen ist.
+Sie können eine [Aufbewahrungsrichtlinie](retention.md) auf Benutzerpostfächer anwenden, um drittanbieterdaten (und andere Postfachinhalte) nach Ablauf des Aufbewahrungszeitraums beizubehalten und anschließend zu löschen. Sie können auch Aufbewahrungsrichtlinien verwenden, um drittanbieterdaten eines bestimmten Alters zu löschen oder eine Dispositions Überprüfung auszulösen, wenn der Aufbewahrungszeitraum abgelaufen ist.
 
 ### <a name="records-management"></a>Datensatzverwaltung
 

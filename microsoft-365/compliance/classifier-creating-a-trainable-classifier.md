@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Auszubildende Klassifizierungen, wenn eine der integrierten Klassifizierungen Ihren Anforderungen nicht entspricht. Eine Microsoft 365-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie sich Beispiele ansehen. In diesem Thema wird gezeigt, wie Sie eine benutzerdefinierte Klassifizierung erstellen.
-ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 05ec9992fb4ec072403e193df3d7dbbbb8b1a96b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173507"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126356"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Erstellen einer Schulungs Klassifizierer (Vorschau)
 
@@ -63,19 +63,19 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 > [!TIP]
 > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Seed-Daten erstellen, lassen Sie mindestens eine Stunde für diesen Standort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.
 
-3. Melden Sie sich bei Microsoft 365 Compliance Center mit dem Compliance-Administrator oder der Rolle "Sicherheitsadministrator" an, und öffnen Sie **Microsoft 365 Compliance Center** oder **Microsoft 365 Security Center** > -**Datenklassifizierung** .
+3. Melden Sie sich bei Microsoft 365 Compliance Center mit dem Compliance-Administrator oder der Rolle "Sicherheitsadministrator" an, und öffnen Sie **Microsoft 365 Compliance Center** oder **Microsoft 365 Security Center**-  >  **Datenklassifizierung** .
 
 4. Klicken Sie auf die Registerkarte **Schulungs Klassifizierung** .
 
 5. Wählen Sie **Create trainable Klassifizierer**aus.
 
-6. Geben Sie die entsprechenden Werte für `Name`die `Description` Felder der Kategorie der Elemente ein, die diese lernbaren Klassifizierung identifizieren sollen.
+6. Geben Sie die entsprechenden Werte für die `Name` Felder der Kategorie der Elemente ein, die diese lernbaren `Description` Klassifizierung identifizieren sollen.
 
-7. Geben Sie in Schritt 2 die exakte SharePoint Online Website, Bibliothek und Ordner-URL für die Seed-Inhaltswebsite ein. Wählen `Add`Sie aus.
+7. Geben Sie in Schritt 2 die exakte SharePoint Online Website, Bibliothek und Ordner-URL für die Seed-Inhaltswebsite ein. Wählen Sie aus `Add` .
 
-8. Überprüfen Sie die Einstellungen `Create trainable classifier`, und wählen Sie.
+8. Überprüfen Sie die Einstellungen, und wählen Sie `Create trainable classifier` .
 
-9. Innerhalb von 24 Stunden verarbeitet die Schulungs-und Klassifizierungs Stelle die seeddaten und erstellt ein Vorhersagemodell. Der Klassifizierungsstatus ist `In progress` , während er die seeddaten verarbeitet. Wenn die Klassifizierung die Verarbeitung der seeddaten abgeschlossen hat, wird der Status in `Need test items`geändert.
+9. Innerhalb von 24 Stunden verarbeitet die Schulungs-und Klassifizierungs Stelle die seeddaten und erstellt ein Vorhersagemodell. Der Klassifizierungsstatus ist `In progress` , während er die seeddaten verarbeitet. Wenn die Klassifizierung die Verarbeitung der seeddaten abgeschlossen hat, wird der Status in geändert `Need test items` .
 
 10. Sie können die Seite Details jetzt anzeigen, indem Sie die Klassifizierung auswählen.
 
@@ -92,19 +92,19 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 > [!TIP]
 > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Testdaten erstellen, lassen Sie mindestens eine Stunde für diesen Ort indiziert werden, bevor Sie die Schulungs Klassifizierung erstellen, die diese Startdaten verwendet.
 
-13. Wählen `Add items to test`Sie aus.
+13. Wählen Sie aus `Add items to test` .
 
-14. Geben Sie in Schritt 12 die exakte SharePoint Online Website, Bibliothek und Ordner-URL für die Testinhalts Website ein. Wählen `Add`Sie aus.
+14. Geben Sie in Schritt 12 die exakte SharePoint Online Website, Bibliothek und Ordner-URL für die Testinhalts Website ein. Wählen Sie aus `Add` .
 
-15. Beenden Sie den Assistenten, `Done`indem Sie auswählen. Ihre Schulungs-Klassifizierung dauert bis zu einer Stunde, um die Testdateien zu verarbeiten.
+15. Beenden Sie den Assistenten, indem Sie auswählen `Done` . Ihre Schulungs-Klassifizierung dauert bis zu einer Stunde, um die Testdateien zu verarbeiten.
 
-16. Wenn die ausbildende Klassifizierung die Verarbeitung Ihrer Testdateien abgeschlossen hat, wird der Status auf der Seite Details in `Ready to review`geändert. Wenn Sie die Größe des testsamples vergrößern möchten, `Add items to test` wählen Sie aus, und lassen Sie die Schulungs-Klassifizierung die zusätzlichen Elemente verarbeiten.
+16. Wenn die ausbildende Klassifizierung die Verarbeitung Ihrer Testdateien abgeschlossen hat, wird der Status auf der Seite Details in geändert `Ready to review` . Wenn Sie die Größe des testsamples vergrößern möchten, wählen Sie aus, `Add items to test` und lassen Sie die Schulungs-Klassifizierung die zusätzlichen Elemente verarbeiten.
 
 ![zur Überprüfung des Screenshot verfügbar](../media/classifier-trainable-ready-to-review-detail.png)
 
-17. Klicken `Tested items to review` Sie auf die Registerkarte, um Elemente zu überprüfen.
+17. Klicken Sie `Tested items to review` auf die Registerkarte, um Elemente zu überprüfen.
 
-18. Microsoft 365 wird 30 Elemente gleichzeitig darstellen. Überprüfen Sie diese, `We predict this item is "Relevant". Do you agree?` und wählen Sie `Yes` im `No` Feld `Not sure, skip to next item`entweder oder oder aus. Die Modellgenauigkeit wird nach jeweils 30 Elementen automatisch aktualisiert.
+18. Microsoft 365 wird 30 Elemente gleichzeitig darstellen. Überprüfen Sie diese, und `We predict this item is "Relevant". Do you agree?` Wählen Sie im Feld entweder `Yes` oder `No` oder aus `Not sure, skip to next item` . Die Modellgenauigkeit wird nach jeweils 30 Elementen automatisch aktualisiert.
 
 ![Feld "Elemente überprüfen"](../media/classifier-trainable-review-detail.png)
 
@@ -112,13 +112,13 @@ Nachdem die Schulungs fähigen Klassifizierung genügend positive Beispiele zum 
 
 <!-- insert Analyze steps here-->
 
-20. Überprüfen Sie weiter, bis die Genauigkeit mindestens 70% erreicht und `Publish the classifier` der Status `Ready to use`lautet.
+20. Überprüfen Sie weiter, bis die Genauigkeit mindestens 70% erreicht und der `Publish the classifier` Status lautet `Ready to use` .
 
 ![Genauigkeit und Veröffentlichungs bereit](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Veröffentlichen Sie die Klassifizierung.
 
-22. Nachdem Ihre Klassifizierung veröffentlicht wurde, ist Sie als Bedingung in [Office autolabeling mit Sensitivitäts Bezeichnungen](apply-sensitivity-label-automatically.md), [automatisch angewendete Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung](labels.md#applying-a-retention-label-automatically-based-on-conditions) und in der [Kommunikation Compliance](communication-compliance.md)verfügbar.
+22. Nachdem Ihre Klassifizierung veröffentlicht wurde, ist Sie als Bedingung in [Office autolabeling mit Sensitivitäts Bezeichnungen](apply-sensitivity-label-automatically.md), [automatisch angewendete Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) und in der [Kommunikation Compliance](communication-compliance.md)verfügbar.
 
 > [!CAUTION]
 > Sobald eine Klassifizierung veröffentlicht wurde, kann Sie keine zusätzliche Schulung durchlaufen, daher sollten Sie sicherstellen, dass Sie so viele Elemente wie möglich getestet und überprüft haben, um sicherzustellen, dass die Genauigkeit so hoch wie möglich ist.

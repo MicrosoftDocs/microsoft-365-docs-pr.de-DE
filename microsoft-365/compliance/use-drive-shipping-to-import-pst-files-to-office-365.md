@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie PST-Dateien in Microsoft 365-Postfächer Massenimportieren, indem Sie PST-Dateien auf eine Festplatte kopieren und dann an Microsoft versenden.
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819085"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127342"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Verwenden des Laufwerk Versands zum Importieren der PST-Dateien Ihrer Organisation
 
@@ -460,7 +460,7 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
     
   - Verwenden Sie Microsoft [eDiscovery-Tools](search-for-content.md) , um die Daten zu durchsuchen. 
     
-  - Wenden Sie [Microsoft 365-Aufbewahrungsrichtlinien](retention-policies.md) an, um zu steuern, wie lange die Daten aufbewahrt werden und welche Aktion nach Ablauf des Aufbewahrungszeitraums ausgeführt werden soll. 
+  - Wenden Sie [Microsoft 365-Aufbewahrungsrichtlinien](retention.md) an, um zu steuern, wie lange die Daten aufbewahrt werden und welche Aktion nach Ablauf des Aufbewahrungszeitraums ausgeführt werden soll. 
     
   - Durchsuchen Sie das [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) nach Ereignissen im Zusammenhang mit diesen Daten. 
     

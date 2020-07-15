@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder jammern einrichten.
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817040"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126654"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
 
@@ -501,7 +501,7 @@ Hier finden Sie die Schritte zum Erstellen und Konfigurieren eines Drittanbieter
     
       - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
+      - [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md)
     
     - Aktivieren der postfachüberwachungsprotokollierung für den Besitzer-, Stellvertreter-und Administratorzugriff auf das Daten Postfach eines Drittanbieters; siehe [Aktivieren der postfachüberwachung](enable-mailbox-auditing.md). Auf diese Weise können Sie alle von Benutzern ausgeführten Aktivitäten überwachen, die Zugriff auf das Daten Postfach eines Drittanbieters haben.
 
@@ -515,7 +515,7 @@ Als Nächstes müssen Sie die Benutzerpostfächer für die Unterstützung von Dr
     
     - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
+    - [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md)
     
     Wie bereits weiter oben erwähnt, können Sie beim Aktivieren des Beweissicherungsverfahrens für Postfächer festlegen, wie lange Elemente aus einer Drittanbieter-Datenquelle aufbewahrt werden sollen. Sie können auch festlegen, dass sie dauerhaft aufbewahrt werden sollen.
 

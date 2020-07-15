@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie die verschiedenen Aufbewahrungs Typen identifizieren können, die in einem Exchange Online Postfach in Microsoft 365 gespeichert werden können.
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817604"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126806"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -36,7 +36,7 @@ Microsoft 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation ve
 
 - ** [In-situ-](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)Speicher:** Gilt für Benutzerpostfächer, die mithilfe des in-situ-eDiscovery-&-halte Tools im Exchange Admin Center in Exchange Online angewendet werden.
 
-- ** [Microsoft 365-Aufbewahrungsrichtlinien](retention-policies.md):** Kann so konfiguriert werden, dass Inhalte in Benutzerpostfächern in Exchange Online und im entsprechenden Postfach für Microsoft 365-Gruppen und Microsoft Teams beibehalten (oder beibehalten und anschließend gelöscht werden). Sie können auch eine Aufbewahrungsrichtlinie erstellen, um Skype for Business Unterhaltungen beizubehalten, die in Benutzerpostfächern gespeichert sind.
+- ** [Microsoft 365-Aufbewahrungsrichtlinien](retention.md):** Kann so konfiguriert werden, dass Inhalte in Benutzerpostfächern in Exchange Online und im entsprechenden Postfach für Microsoft 365-Gruppen und Microsoft Teams beibehalten (oder beibehalten und anschließend gelöscht werden). Sie können auch eine Aufbewahrungsrichtlinie erstellen, um Skype for Business Unterhaltungen beizubehalten, die in Benutzerpostfächern gespeichert sind.
 
   Es gibt zwei Arten von Microsoft 365-Aufbewahrungsrichtlinien, die Postfächern zugewiesen werden können.
 
@@ -46,7 +46,7 @@ Microsoft 365 bietet verschiedene Möglichkeiten, mit denen Ihre Organisation ve
     
   Weitere Informationen finden Sie unter [Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder einen bestimmten Speicherort](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) Abschnitt.
 
-- **[Microsoft 365-Aufbewahrungs Bezeichnungen](labels.md):** wenn ein Benutzer eine Microsoft 365-Aufbewahrungs Bezeichnung anwendet (eine, die für das Aufbewahren von Inhalten oder das aufbewahren und Löschen von Inhalten konfiguriert ist *), wird* ein Aufbewahrungsplatz im Postfach abgelegt, als ob das Postfach in einem Beweissicherungsverfahren abgelegt oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner oder ein Element](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
+- **[Microsoft 365-Aufbewahrungs Bezeichnungen](retention.md):** wenn ein Benutzer eine Microsoft 365-Aufbewahrungs Bezeichnung anwendet (eine, die für das Aufbewahren von Inhalten oder das aufbewahren und Löschen von Inhalten konfiguriert ist *), wird* ein Aufbewahrungsplatz im Postfach abgelegt, als ob das Postfach in einem Beweissicherungsverfahren abgelegt oder einer Microsoft 365-Aufbewahrungsrichtlinie zugewiesen wurde. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner oder ein Element](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
 
 Zum Verwalten von Postfächern müssen Sie möglicherweise den Aufbewahrungs für ein Postfach identifizieren, sodass Sie Aufgaben wie das Ändern der Aufbewahrungsdauer, vorübergehendes oder dauerhaftes Entfernen des haltebereichs oder Ausschließen eines Postfachs aus einer Microsoft 365-Aufbewahrungsrichtlinie ausführen können. In diesen Fällen besteht der erste Schritt darin, den Typ des für das Postfach gelegten Haltestatus zu identifizieren. Da mehrere haltebereiche (und unterschiedliche Aufbewahrungs Typen) in einem einzelnen Postfach gespeichert werden können, müssen Sie alle in einem Postfach gelegenen Aufbewahrungsfristen identifizieren, wenn Sie das Archiv entfernen oder ändern möchten.
 
@@ -100,7 +100,7 @@ In der folgenden Tabelle werden die unterschiedlichen Typen von organisationswei
 |Microsoft 365-Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und Chats von Teams angewendet werden    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und 1xN-Chats in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `mbx` Präfix beginnen. Hinweis 1xN-Chats werden im Postfach der einzelnen Chat Teilnehmer gespeichert.      |
 |Microsoft 365-Aufbewahrungsrichtlinie, die auf Microsoft 365-Gruppen und Teams-Kanal Nachrichten angewendet wird     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organisationsweite Aufbewahrungsrichtlinien, die auf Microsoft 365-Gruppen und Kanal Nachrichten in Microsoft Teams angewendet werden, werden durch GUIDs identifiziert, die mit dem `grp` Präfix beginnen. Hinweis Kanal Nachrichten werden im Gruppenpostfach gespeichert, das einem Microsoft-Team zugeordnet ist.     |
 
-Weitere Informationen zu Aufbewahrungsrichtlinien, die auf Microsoft Teams angewendet werden, finden Sie im Abschnitt "Teams-Standort" unter [Übersicht über Aufbewahrungsrichtlinien](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Weitere Informationen zu den auf Microsoft Teams angewendeten Aufbewahrungsrichtlinien finden Sie unter Informationen [zu Aufbewahrungsrichtlinien für Microsoft Teams](retention-policies-teams.md).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Grundlegendes zum Format des InPlaceHolds-Werts für Aufbewahrungsrichtlinien
 
@@ -120,7 +120,7 @@ In der folgenden Tabelle werden die drei möglichen Aufbewahrungsaktionen defini
 |**2**    |    Gibt an, dass die Aufbewahrungsrichtlinie zum Speichern von Elementen konfiguriert ist. Die Richtlinie löscht keine Elemente nach Ablauf des Aufbewahrungszeitraums.     |
 |**3**     |   Gibt an, dass die Aufbewahrungsrichtlinie so konfiguriert ist, dass Sie Elemente aufbewahrt und anschließend nach Ablauf des Aufbewahrungszeitraums gelöscht wird.      |
 
-Weitere Informationen zu Aufbewahrungsaktionen finden Sie im Abschnitt "Aufbewahrung von Inhalten für einen bestimmten Zeitraum" in Übersicht über [Aufbewahrungsrichtlinien](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Weitere Informationen zu Aufbewahrungsaktionen finden Sie im Abschnitt [beibehalten von Inhalten für einen bestimmten Zeitraum](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) .
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Schritt 2: Verwenden der GUID zum Identifizieren des Haltestatus
 
@@ -179,7 +179,7 @@ Um den Wert der *ComplianceTagHoldApplied* -Eigenschaft anzuzeigen, führen Sie 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Microsoft 365 Retention Labels](labels.md).
+Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Retention Labels](retention.md#retention-labels).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Verwalten von Postfächern in Verzögerungs speichern
 

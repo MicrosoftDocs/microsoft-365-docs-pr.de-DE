@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Ähnlich wie bei den Features des Microsoft 365 Compliance Centers werden auch unsere Hilfeinhalte ständig weiterentwickelt. Erfahren Sie, was in diesem Monat alles neu ist.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035640"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127512"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Neueste Aktualisierungen für Microsoft 365 Compliance-Inhalte
 
@@ -202,7 +202,7 @@ Die folgenden Artikel wurden zur Unterstützung der offiziellen Veröffentlichun
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-[Übersicht über Aufbewahrungsbezeichnungen](labels.md) (aktualisiert)<br>Der Abschnitt zum Anwenden einer Aufbewahrungsbezeichnung auf der Grundlage von Bedingungen umfasst jetzt die Option zum Verwenden von trainierbaren Klassifizierungen.
+[Übersicht über Aufbewahrungsbezeichnungen](retention.md) (aktualisiert)<br>Der Abschnitt zum Anwenden einer Aufbewahrungsbezeichnung auf der Grundlage von Bedingungen umfasst jetzt die Option zum Verwenden von trainierbaren Klassifizierungen.
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 

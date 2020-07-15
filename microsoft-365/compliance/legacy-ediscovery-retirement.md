@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-situ-eDiscovery und in-situ-Speicher (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Cmdlet Search-Mailbox und Advanced eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761685"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126942"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
@@ -124,7 +124,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <p>Anwenden von Richtlinien auf bestimmte inhaltsspeicherorte wie Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams und Office 365 Gruppen</p></li>
 <li>
 <p>Anwenden von Richtlinien auf bestimmte Benutzer</p></li></ul>
-<p>Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">Übersicht über Aufbewahrungsrichtlinien</a>.</td>
+<p>Weitere Informationen finden Sie unter Informationen <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen</a>.</td>
 </tr>
 <tr class="odd">
 <td>Kopieren von e-Mail-Suchergebnissen in ein Ermittlungspostfach zur Überarbeitung</td><td>Überprüfungs Sätze in Advanced eDiscovery v 2.0</td>
@@ -222,7 +222,7 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </tr>
 <tr class="odd">
 <td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
-<td>Keine</td>
+<td>Keinen</td>
 <td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. Unter den folgenden häufig gestellten Fragen finden Sie alternative Lösungen.</td>
 </tr>
   <tr class=even>

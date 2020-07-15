@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: 'Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Office 365 zu erhöhen. '
-ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Microsoft 365 zu erhöhen.
+ms.openlocfilehash: 3c2ac29fe650d03db7e5d4d1282b870eaece447c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222708"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138267"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer
 
-Die standardmäßige Aufbewahrungsrichtlinie, die benannte Standard-MRM-Richtlinie, die automatisch auf neue Postfächer in Exchange Online angewendet wird, enthält ein Aufbewahrungs-Tag mit dem Namen "refundable Items 14 Tage" in Archiv verschieben. Mit diesem Aufbewahrungs werden Elemente aus dem Ordner "refundable Items" im primären Postfach des Benutzers in den Ordner "refundable Items" im Archivpostfach des Benutzers verschoben, nachdem der Aufbewahrungszeitraum von 14 Tagen für ein Element abgelaufen ist. Damit dies geschieht, muss das Archivpostfach des Benutzers aktiviert sein. Wenn das Archivpostfach nicht aktiviert ist, wird keine Aktion ausgeführt, was bedeutet, dass Elemente im Ordner "refundable Items" für ein aufbewahrtes Postfach nicht nach Ablauf der 14-tägigen Aufbewahrungsdauer in das Archivpostfach verschoben werden. Da nichts aus einem aufbewahrten Postfach gelöscht wird, kann es sein, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" möglicherweise überschritten wird, insbesondere, wenn das Archivpostfach des Benutzers nicht aktiviert ist. 
+Die standardmäßige Exchange-Aufbewahrungsrichtlinie – benannte *Standard-MRM-Richtlinie*–, die automatisch auf neue Postfächer in Exchange Online angewendet wird, enthält ein Aufbewahrungs-Tag mit dem Namen "refundable Items 14 Tage" in Archiv verschieben. Mit diesem Aufbewahrungs werden Elemente aus dem Ordner "refundable Items" im primären Postfach des Benutzers in den Ordner "refundable Items" im Archivpostfach des Benutzers verschoben, nachdem der Aufbewahrungszeitraum von 14 Tagen für ein Element abgelaufen ist. Damit dies geschieht, muss das Archivpostfach des Benutzers aktiviert sein. Wenn das Archivpostfach nicht aktiviert ist, wird keine Aktion ausgeführt, was bedeutet, dass Elemente im Ordner "refundable Items" für ein aufbewahrtes Postfach nicht nach Ablauf der 14-tägigen Aufbewahrungsdauer in das Archivpostfach verschoben werden. Da nichts aus einem aufbewahrten Postfach gelöscht wird, kann es sein, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" möglicherweise überschritten wird, insbesondere, wenn das Archivpostfach des Benutzers nicht aktiviert ist. 
   
 Um die Wahrscheinlichkeit zu verringern, diesen Grenzwert zu überschreiten, wird das Speicherkontingent für den Ordner "refundable Items" automatisch von 30 GB auf 100 GB erhöht, wenn ein Haltebereich in einem Postfach in Exchange Online abgelegt wird. Wenn das Archivpostfach aktiviert ist, wird das Speicherkontingent für den Ordner "refundable Items" im Archivpostfach ebenfalls von 30 GB auf 100 GB erhöht. Wenn das Feature für die automatische Erweiterung der Archivierung in Exchange Online aktiviert ist, ist das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" im Archiv des Benutzers unbeschränkt.
   
@@ -42,20 +42,20 @@ Um die Wahrscheinlichkeit zu verringern, diesen Grenzwert zu überschreiten, wir
   
 Wenn das Speicherkontingent für den Ordner "refundable Items" im primären Postfach eines aufbewahrten Postfachs nahe am Erreichen des Grenzwerts liegt, können Sie die folgenden Schritte ausführen:
   
-- **Aktivieren des Archivpostfachs und Aktivieren der automatisch wachsenden Archivierung** – Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" einfach aktivieren, indem Sie das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange Online aktivieren. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security & Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
+- **Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatisch expandierende Archivierung.** Sie können eine unbegrenzte Speicherkapazität für den Ordner "Wiederherstellbare Elemente" einfach aktivieren, indem Sie das Archivpostfach aktivieren und dann das Feature für die automatische Erweiterung der Archivierung in Exchange Online einschalten. Dies führt zu 110 GB für den Ordner "refundable Items" im primären Postfach und eine unbegrenzte Menge an Speicherkapazität für den Ordner "refundable Items" im Archiv des Benutzers. Weitere Informationen finden Sie unter Vorgehensweise: [Aktivieren von archivpostfächern im Security & Compliance Center](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Nachdem Sie das Archiv für ein Postfach aktiviert haben, das das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" überschreitet, müssen Sie möglicherweise den Assistenten für verwaltete Ordner ausführen, um den Assistenten manuell zum Verarbeiten des Postfachs auszulösen, sodass abgelaufene Elemente im Ordner "Wiederherstellbare Elemente" im Archivpostfach verschoben werden. Anweisungen finden Sie in [Schritt 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Beachten Sie, dass andere Elemente im Postfach des Benutzers möglicherweise in das neue Archivpostfach verschoben werden. Sie sollten dem Benutzer mitteilen, dass dies möglicherweise geschieht, nachdem Sie das Archivpostfach aktiviert haben. 
   
-- **Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinie für Postfächer in der Warteschleife** – zusätzlich zum Aktivieren des Archivpostfachs und der automatisch wachsenden Archivierung für Postfächer in einem Beweissicherungsverfahren oder in-situ-Speicher möchten Sie möglicherweise auch eine benutzerdefinierte Aufbewahrungsrichtlinie für Postfächer in der Warteschleife erstellen. In diesem Fall können Sie eine Aufbewahrungsrichtlinie auf Postfächer anwenden, die sich von der Standard-MRM-Richtlinie unterscheiden, die auf Postfächer angewendet wird, die nicht in der Warteschleife gespeichert sind. Auf diese Weise können Sie Aufbewahrungstags anwenden, die speziell für Postfächer in der Warteschleife entworfen wurden. Dies umfasst das Erstellen eines neuen Aufbewahrungstags für den Ordner "Wiederherstellbare Elemente". 
+- **Erstellen Sie eine benutzerdefinierte Exchange-Aufbewahrungsrichtlinie für Postfächer in der Warteschleife.** Zusätzlich zum Aktivieren des Archivpostfachs und der automatisch wachsenden Archivierung für Postfächer in einem Beweissicherungsverfahren oder in-situ-Speicher möchten Sie möglicherweise auch eine benutzerdefinierte Exchange-Aufbewahrungsrichtlinie für Postfächer erstellen, die in der Warteschleife gespeichert sind. Auf diese Weise können Sie eine Aufbewahrungsrichtlinie auf Postfächer anwenden, die sich von der standardmäßigen MRM-Richtlinie unterscheiden, die auf nicht gesperrte Postfächer angewendet wird, und Sie können Aufbewahrungstags anwenden, die für Postfächer in der Warteschleife ausgelegt sind. Dies umfasst das Erstellen eines neuen Aufbewahrungstags für den Ordner "Wiederherstellbare Elemente". 
     
-Im weiteren Verlauf dieses Themas werden die schrittweisen Verfahren zum Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinie für Postfächer in der Warteschleife beschrieben.
+Im weiteren Verlauf dieses Themas werden die schrittweisen Verfahren zum Erstellen einer benutzerdefinierten Exchange-Aufbewahrungsrichtlinie für Postfächer in der Warteschleife beschrieben.
   
 [Schritt 1: Erstellen eines benutzerdefinierten Aufbewahrungstags für den Ordner "Wiederherstellbare Elemente"](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[[Schritt 2: Erstellen einer neuen Aufbewahrungsrichtlinie für Postfächer in der Warteschleife](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+[Schritt 2: Erstellen einer neuen Exchange-Aufbewahrungsrichtlinie für Postfächer in der Warteschleife](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[Schritt 3: Anwenden der neuen Aufbewahrungsrichtlinie auf Postfächer in der Warteschleife](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
+[Schritt 3: Anwenden der neuen Exchange-Aufbewahrungsrichtlinie auf Postfächer in der Warteschleife](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [Optional Schritt 4: Ausführen des Assistenten für verwaltete Ordner zum Anwenden der neuen Aufbewahrungseinstellungen](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
@@ -80,7 +80,7 @@ Der erste Schritt besteht darin, für den Ordner "Wiederherstellbare Elemente" e
     > [!TIP]
     > Es wird empfohlen, dass der Aufbewahrungszeitraum (definiert durch den Parameter _AgeLimitForRetention_ ) für die wiederherstellbaren Elemente RPT mit dem Beibehaltungszeitraum für gelöschte Elemente für die Postfächer identisch ist, auf die die RPT angewendet wird. Dadurch kann ein Benutzer den gesamten Aufbewahrungszeitraum für gelöschte Elemente wiederherstellen, bevor er in das Archivpostfach verschoben wird. Im vorherigen Beispiel wurde der Aufbewahrungszeitraum auf 30 Tage festgelegt, basierend auf der Annahme, dass der Aufbewahrungszeitraum für gelöschte Elemente für Postfächer ebenfalls 30 Tage beträgt. Ein Exchange Online Postfach wird standardmäßig so konfiguriert, dass gelöschte Elemente für 14 Tage aufbewahrt werden. Sie können diese Einstellung jedoch auf maximal 30 Tage ändern. Weitere Informationen finden Sie unter [Ändern des Aufbewahrungszeitraums für gelöschte Elemente für ein Postfach in Exchange Online](https://www.microsoft.com/?ref=go). 
   
-## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>Schritt 2: Erstellen einer neuen Aufbewahrungsrichtlinie für Postfächer in der Warteschleife
+## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>Schritt 2: Erstellen einer neuen Exchange-Aufbewahrungsrichtlinie für Postfächer in der Warteschleife
 
 Im nächsten Schritt erstellen Sie eine neue Aufbewahrungsrichtlinie und fügen ihr Aufbewahrungstags hinzu, einschließlich der wiederherstellbaren Elemente rpt, die Sie in Schritt 1 erstellt haben. Diese neue Richtlinie wird im nächsten Schritt auf die zu speichernden Postfächer angewendet. 
   
@@ -131,13 +131,13 @@ Mit dem folgenden Befehl werden beispielsweise die Aufbewahrungsrichtlinie und v
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
 
-## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>Schritt 3: Anwenden der neuen Aufbewahrungsrichtlinie auf Postfächer in der Warteschleife
+## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>Schritt 3: Anwenden der neuen Exchange-Aufbewahrungsrichtlinie auf Postfächer in der Warteschleife
 
 Der letzte Schritt besteht darin, die neue Aufbewahrungsrichtlinie, die Sie in Schritt 2 erstellt haben, auf in Ihrer Organisation aufbewahrte Postfächer anzuwenden. Sie können die Exchange-Verwaltungskonsole oder Exchange Online PowerShell verwenden, um die Aufbewahrungsrichtlinie auf ein einzelnes Postfach oder auf mehrere Postfächer anzuwenden. 
   
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>Anwenden der neuen Aufbewahrungsrichtlinie mithilfe der Exchange-Verwaltungskonsole
   
-1. Navigieren Sie zu **Empfänger** \> **Postfächer**.
+1. Wechseln Sie zu **Empfänger**  >  **Postfächer**.
     
 2. Wählen Sie in der Listenansicht das Postfach aus, auf das die Aufbewahrungsrichtlinie angewendet werden soll, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
@@ -147,7 +147,7 @@ Der letzte Schritt besteht darin, die neue Aufbewahrungsrichtlinie, die Sie in S
     
 Sie können auch die Exchange-Verwaltungskonsole verwenden, um die Aufbewahrungsrichtlinie auf mehrere Postfächer anzuwenden.
   
-1. Navigieren Sie zu **Empfänger** \> **Postfächer**.
+1. Wechseln Sie zu **Empfänger**  >  **Postfächer**.
     
 2. Verwenden Sie in der Listenansicht die UMSCHALT- oder die STRG-TASTE, um mehrere Postfächer auszuwählen.
     
@@ -205,7 +205,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Optional Schritt 4: Ausführen des Assistenten für verwaltete Ordner zum Anwenden der neuen Aufbewahrungseinstellungen
 
-Nachdem Sie die neue Aufbewahrungsrichtlinie auf Postfächer angewendet haben, kann es bis zu sieben Tage dauern, bis Exchange Online vom Assistenten für verwaltete Ordner mithilfe der Einstellungen in der neuen Aufbewahrungsrichtlinie diese Postfächer verarbeitet. Anstatt auf die Ausführung des Assistenten für verwaltete Ordner zu warten, können Sie das Cmdlet **Start-ManagedFolderAssistant** verwenden, um den Assistenten manuell auszulösen, um die Postfächer zu verarbeiten, auf die Sie die neue Aufbewahrungsrichtlinie angewendet haben. 
+Nachdem Sie die neue Exchange-Aufbewahrungsrichtlinie auf aufbewahrte Postfächer angewendet haben, kann es bis zu sieben Tage dauern, bis Exchange Online vom Assistenten für verwaltete Ordner mit den Einstellungen in der neuen Aufbewahrungsrichtlinie diese Postfächer verarbeitet. Anstatt auf die Ausführung des Assistenten für verwaltete Ordner zu warten, können Sie das Cmdlet **Start-ManagedFolderAssistant** verwenden, um den Assistenten manuell auszulösen, um die Postfächer zu verarbeiten, auf die Sie die neue Aufbewahrungsrichtlinie angewendet haben. 
   
 Führen Sie den folgenden Befehl aus, um den Assistenten für verwaltete Ordner für das Postfach von Pilar Pinilla zu starten.
   

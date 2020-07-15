@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371407"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126314"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testen integrierter Klassifizierungen mithilfe von Aufbewahrungs Bezeichnungen (Vorschau)
 
@@ -40,7 +40,7 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
   |Name der Sprache|||||
   |---------|---------|---------|---------|---------|
-  |ActionScript|C        |C #       |C++     |Clojure  |
+  |ActionScript|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |OK       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |Perl     |PHP      |Python   |R        |Ruby     |
@@ -71,9 +71,9 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
 5. Wählen Sie aus `Choose a label to auto-apply` .
 
-6. Wählen Sie `Create new labels` und erstellen Sie eine Bezeichnung für die Verwendung nur mit diesem Test. Wenn Sie dies tun, lassen Sie `Retention` die Einstellung auf `off` . Sie möchten keine Aufbewahrung oder andere Aktionen aktivieren. In diesem Fall verwenden Sie die Aufbewahrungs Bezeichnung einfach als Textbeschriftung, ohne dass Aktionen erzwungen werden. Sie können beispielsweise eine Aufbewahrungs Bezeichnung mit dem Namen "Sourcecode-Klassifizierungs Test" ohne Aktionen erstellen und diese Aufbewahrungs Bezeichnung automatisch auf Inhalte anwenden, für die die Quell Code Klassifizierung als Bedingung verwendet wird. Weitere Informationen zum Erstellen von Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Retention Labels](labels.md).
+6. Wählen Sie `Create new labels` und erstellen Sie eine Bezeichnung für die Verwendung nur mit diesem Test. Wenn Sie dies tun, lassen Sie `Retention` die Einstellung auf `off` . Sie möchten keine Aufbewahrung oder andere Aktionen aktivieren. In diesem Fall verwenden Sie die Aufbewahrungs Bezeichnung einfach als Textbeschriftung, ohne dass Aktionen erzwungen werden. Sie können beispielsweise eine Aufbewahrungs Bezeichnung mit dem Namen "Sourcecode-Klassifizierungs Test" ohne Aktionen erstellen und diese Aufbewahrungs Bezeichnung automatisch auf Inhalte anwenden, für die die Quell Code Klassifizierung als Bedingung verwendet wird. Weitere Informationen zu Aufbewahrungs Bezeichnungen finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).
   
-7. Wählen Sie `Auto-apply a label` und dann aus `Choose a label to auto-apply` . Weitere Informationen zur Verwendung von Condition Based Auto-Apply a Label finden Sie unter [Automatisches Anwenden von Aufbewahrungs Bezeichnungsrichtlinien basierend auf einer Bedingung](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Wählen Sie `Auto-apply a label` und dann aus `Choose a label to auto-apply` . Weitere Informationen zur Verwendung von Condition Based Auto-Apply a Label finden Sie unter [Configuring Conditions for Auto-apply retention Labels](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels).
 
 8. Wählen Sie Ihre Test Bezeichnung in der Liste aus, und wählen Sie aus `Next` .
 
@@ -106,5 +106,5 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 Siehe auch:
 
 - [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)
-- [Übersicht über Aufbewahrungsbezeichnungen](labels.md)
-- [Automatisches Anwenden von Aufbewahrungs Bezeichnungsrichtlinien basierend auf einer Bedingung](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md)
+- [Automatisches Anwenden einer Aufbewahrungs Bezeichnung zum beibehalten oder Löschen von Inhalten](apply-retention-labels-automatically.md)

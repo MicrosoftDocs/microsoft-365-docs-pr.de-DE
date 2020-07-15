@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Fall Limits, Indizierungs Grenzwerte und Such Grenzwerte, die für die erweiterte eDiscovery-Lösung in Microsoft 365 gelten.
-ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8222abaea0e8920e48f2f7b506d9477e93bc84
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817092"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126868"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -33,10 +33,10 @@ In der folgenden Tabelle sind die Grenzwerte für Fälle und Überprüfungs Sät
 
 |**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
-|Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |1 Mio.  <br/> |
-|Gesamtdateigröße pro Lastsatz. Dies umfasst das Laden von nicht Office 365 in einen Überprüfungs Satz.  <br/> |100 GB  <br/> |
+|Gesamtzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Überprüfungs Sätze in einem Fall).  <br/> |3 Million <br/> |
+|Gesamtdateigröße pro Lastsatz. Dies umfasst das Laden von nicht Office 365 in einen Überprüfungs Satz.  <br/> |300 GB <br/> |
 |Die Gesamtmenge an Daten, die in alle Überprüfungs Sätze in der Organisation pro Tag geladen wurden.<br/> |2 TB <br/> |
-|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15 <br/> |
+|Maximale Anzahl von Lasten Sätzen pro Fall.  <br/> |15  <br/> |
 |Maximale Anzahl von Überprüfungs Sätzen pro Fall.  <br/> |20 <br/> |
 |||
 
@@ -60,9 +60,9 @@ Die in diesem Abschnitt beschriebenen Grenzwerte beziehen sich auf die Verwendun
 |:-----|:-----|
 |Maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können.  <br/> |Keine Begrenzung  <br/> |
 |Maximale Anzahl von Suchvorgängen, die gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> | 
-|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10    <br/> | 
+|Maximale Anzahl von Suchvorgängen, die ein einzelner Benutzer gleichzeitig starten kann.  <br/> |10   <br/> | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen).  <br/> |**Postfächer**: 10.000<br/>**Websites**: 4.000 beim Durchsuchen aller Websites oder 2.000 bei der Suche bis zu 20 Websites <sup>2</sup> <br/> |
-|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3  <br/> |  
+|Minimale Anzahl von Alphazeichen für Präfix Platzhalter; Beispiel ** \* eins** oder **festgelegt \* **. <br/> |3   <br/> |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn Präfix Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen oder wenn ein Präfix Platzhalter und der **near** -Boolesche Operator verwendet werden.  <br/> |10.000 <sup>3</sup> <br/> |
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchvorgänge angezeigt werden. Die neuesten Elemente werden angezeigt.   <br/> |100  <br/> |
 |Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchvorgänge angezeigt werden.  <br/> |1.000  <br/> |

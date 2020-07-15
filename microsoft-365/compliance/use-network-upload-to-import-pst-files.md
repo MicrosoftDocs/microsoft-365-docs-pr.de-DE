@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819065"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127332"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -336,7 +336,7 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Microsoft 
     
   - Verwenden von Microsoft [eDiscovery-Tools](search-for-content.md), um die importierten Daten zu durchsuchen. 
     
-  - Verwenden von [Microsoft 365-Aufbewahrungsrichtlinien](retention-policies.md), um zu steuern, wie lange die importierten Daten aufbewahrt und welche Maßnahmen nach Ablauf des Aufbewahrungszeitraums durchgeführt werden. 
+  - Verwenden von [Microsoft 365-Aufbewahrungsrichtlinien](retention.md), um zu steuern, wie lange die importierten Daten aufbewahrt und welche Maßnahmen nach Ablauf des Aufbewahrungszeitraums durchgeführt werden. 
     
   - Durchsuchen des [Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md) nach postfachbezogenen Ereignissen, die sich auf die importierten Daten auswirken. 
     

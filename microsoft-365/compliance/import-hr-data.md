@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 7578b0e6c53d85c0216dbb4b82a2ab4e0f5aac87
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210571"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138302"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
 
@@ -49,7 +49,7 @@ Eine Schritt-für-Schritt-Anleitung zum Erstellen einer APP in Aad finden Sie un
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Schritt 2: Vorbereiten einer CSV-Datei mit ihren HR-Daten
 
-Der nächste Schritt besteht darin, eine CSV-Datei zu erstellen, die Informationen zu Mitarbeitern enthält, die Ihre Organisation verlassen haben. Wie im Abschnitt bevor Sie beginnen beschrieben, müssen Sie bestimmen, wie diese CSV-Datei aus dem HR-System Ihrer Organisation generiert wird. Das folgende Beispiel zeigt eine abgeschlossene CSV-Datei (im Editor geöffnet), die die drei erforderlichen Parameter (Spalten) enthält. Es ist viel einfacher, die CSV-Datei in Microsoft Excel zu bearbeiten.
+Der nächste Schritt besteht darin, eine CSV-Datei zu erstellen, die Informationen zu Mitarbeitern enthält, die Ihre Organisation verlassen haben. Wie im Abschnitt bevor Sie beginnen beschrieben, müssen Sie bestimmen, wie diese CSV-Datei aus dem HR-System Ihrer Organisation generiert wird. Das folgende Beispiel zeigt eine abgeschlossene CSV-Datei (in Notizblock geöffnet), die die drei erforderlichen Parameter (Spalten) enthält. Es ist viel einfacher, die CSV-Datei in Microsoft Excel zu bearbeiten.
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -72,7 +72,7 @@ Nachdem Sie die CSV-Datei mit den erforderlichen HR-Daten erstellt haben, speich
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des HR-Connectors
 
-Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, wird der von Ihnen erstellte HR-Konnektor die HR-Daten aus der CSV-Datei in Ihre Microsoft 365-Organisation aufnehmen. In diesem Schritt müssen Sie unbedingt die JobID kopieren, die beim Erstellen des Connectors generiert wird. Sie verwenden das JobID, wenn Sie das Skript ausführen.
+Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, wird der von Ihnen erstellte HR-Konnektor die HR-Daten aus der CSV-Datei in Ihre Microsoft 365-Organisation aufnehmen. In diesem Schritt müssen Sie unbedingt die Auftrags-ID kopieren, die beim Erstellen des Connectors generiert wird. Sie verwenden die Auftrags-ID, wenn Sie das Skript ausführen.
 
 1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie dann im linken Navigationsbereich auf **Datenverbindungen** .
 
@@ -92,13 +92,19 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 6. Überprüfen Sie die Einstellungen auf der Seite **überprüfen** , und klicken Sie dann auf **Fertig stellen** , um den Connector zu erstellen.
 
-   Eine Statusseite wird angezeigt, die bestätigt, dass der Connector erstellt wurde. Diese Seite enthält auch die Auftrags-ID. Sie benötigen diese Auftrags-ID, um das Skript im nächsten Schritt auszuführen. Sie können es von dieser Seite oder von der Flyout-Seite für den Connector kopieren.
+   Eine Statusseite wird angezeigt, die bestätigt, dass der Connector erstellt wurde. Diese Seite enthält zwei wichtige Dinge, die Sie für den nächsten Schritt zum Ausführen des Beispielskripts zum Hochladen Ihrer HR-Daten benötigen.
+
+   ![Seite überprüfen mit Auftrags-ID und Link zu GitHub für Beispielskript](../media/HRConnector_Confirmation.png)
+
+   a. **Auftrags-ID.** Sie benötigen diese Auftrags-ID, um das Skript im nächsten Schritt auszuführen. Sie können es von dieser Seite oder von der Flyout-Seite des Konnektors kopieren.
+   
+   b. **Link zum Beispielskript.** Klicken Sie auf den Link **hier** , um zur GitHub-Website zu wechseln, um auf das Beispielskript zuzugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel mit einem Lesezeichen versehen oder die URL kopieren, damit Sie in Schritt 4 erneut darauf zugreifen können. Dieser Link steht auch auf der Seite "Connector-Flyout" zur Verfügung.
 
 7. Klicken Sie auf **Fertig**.
-   
+
    Der neue Connector wird in der Liste auf der Registerkarte **Connectors** angezeigt. 
 
-8. Klicken Sie auf den soeben erstellten HR-Konnektor, um die Flyout-Seite anzuzeigen, die Eigenschaften und andere Informationen zum Connector enthält. 
+8. Klicken Sie auf den soeben erstellten HR-Konnektor, um die Flyout-Seite anzuzeigen, die Eigenschaften und andere Informationen zum Connector enthält.
 
    ![Flyout-Seite für neuen HR-Connector](../media/HRConnectorWizard7.png)
 
@@ -110,7 +116,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
 Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispielskript auszuführen, mit dem die HR-Daten in der CSV-Datei (die Sie in Schritt 2 erstellt haben) in die Microsoft-Cloud hochgeladen werden. Das Skript lädt die Daten insbesondere in den HR-Konnektor hoch. Nachdem Sie das Skript ausgeführt haben, importiert der in Schritt 3 erstellte HR-Konnektor die HR-Daten in Ihre Microsoft 365-Organisation, in der der Zugriff über andere Compliance-Tools wie die Insider Risiko-Management Lösung möglich ist. Nachdem Sie das Skript ausgeführt haben, sollten Sie eine Aufgabe so planen, dass Sie täglich automatisch ausgeführt wird, damit die aktuellsten Mitarbeiter Terminierungsdaten in die Microsoft-Cloud hochgeladen werden. Siehe [Planen des automatischen Ausführens des Skripts](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Wechseln Sie zu [dieser GitHub-Website](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) , um auf das Beispielskript zuzugreifen.
+1. Wechseln Sie zu Fenster, das Sie im vorherigen Schritt geöffnet haben, um mit dem Beispielskript auf die GitHub-Website zuzugreifen. Alternativ können Sie die mit einer Lesezeichen versehene Website öffnen oder die URL verwenden, die Sie kopiert haben.
 
 2. Klicken Sie auf die Schaltfläche **RAW** , um das Skript in der Textansicht anzuzeigen.
 
@@ -132,7 +138,7 @@ Der letzte Schritt beim Einrichten eines HR-Konnektors besteht darin, ein Beispi
 
    |**Parameter**|**Beschreibung**
    |:-----|:-----|:-----|
-   |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die Mandanten-Nr für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
+   |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem Blatt " **Übersicht** " im Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
    |`appId` |Dies ist die Aad-Anwendungs-ID für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zuzugreifen. | 
    |`appSecret`|Dies ist der Aad-Anwendungsschlüssel für die APP, die Sie in Schritt 1 in Azure AD erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
    |`jobId`|Dies ist die Auftrags-ID für den HR-Konnektor, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die HR-Daten, die in die Microsoft-Cloud hochgeladen werden, mit dem HR-Connector zuzuordnen.|
@@ -161,7 +167,7 @@ Nachdem Sie den HR-Connector erstellt und das Skript zum Hochladen Ihrer HR-Date
 
    ![Protokolldatei des HR-Konnektors zeigt Nummern Zeilen aus der CSV-Datei an, die hochgeladen wurden](../media/HRConnectorLogFile.png)
 
-   Das Feld **RecordsSaved** gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise vier Zeilen enthält, lautet der Wert der **RecordsSaved** -Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
+   Das `RecordsSaved` Feld gibt die Anzahl der Zeilen in der CSV-Datei an, die hochgeladen wurden. Wenn die CSV-Datei beispielsweise vier Zeilen enthält, lautet der Wert der `RecordsSaved` Felder 4, wenn das Skript alle Zeilen in der CSV-Datei erfolgreich hochgeladen hat.
 
 Wenn Sie das Skript nicht in Schritt 4 ausgeführt haben, wird unter **Letzter Import**ein Link zum Herunterladen des Skripts angezeigt. Sie können das Skript herunterladen und dann die Schritte in Schritt 4 ausführen, um es auszuführen.
 

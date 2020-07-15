@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Hier erfahren Sie, wie Sie Datensubjekt Anforderungen für die allgemeine Datenschutzverordnung (dsgvo) mit dem DSR Case-Tool verwalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815452"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126776"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von dsgvo-Datensubjekt Anforderungen mit dem DSR Case-Tool im Security & Compliance Center
 
@@ -247,7 +247,7 @@ Im folgenden finden Sie einige Beispiele für die Bedingungen, die Sie der integ
     
 - **Message Type ( `kind` )** – gibt den Typ des zu suchenden e-Mail-Elements an. Beispielsweise können Sie die Syntax verwenden `kind:email OR kind:im` , um nur e-Mail-Nachrichten und Skype for Business-Unterhaltungen oder 1:1-Chats in Microsoft Teams zurückzugeben. 
     
-- **Compliance-Tag ( `compliancetag` )** – gibt eine Bezeichnung an, die einer e-Mail-Nachricht oder einem Dokument zugewiesen ist. Diese Bedingung gibt Elemente zurück, die mit einer bestimmten Bezeichnung klassifiziert sind. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Dies ist eine nützliche Bedingung für DSR-Untersuchungen, da Ihre Organisation möglicherweise Bezeichnungen verwendet, um Inhalte im Zusammenhang mit dem Datenschutz zu klassifizieren oder personenbezogene Daten oder vertrauliche Informationen enthält. Verwenden Sie für den Wert dieser Bedingung den vollständigen Bezeichnungsnamen oder den ersten Teil des Bezeichnungsnamens mit einem Platzhalter. Weitere Informationen finden Sie unter [Overview of Labels in Office 365](labels.md).
+- **Compliance-Tag ( `compliancetag` )** – gibt eine Bezeichnung an, die einer e-Mail-Nachricht oder einem Dokument zugewiesen ist. Diese Bedingung gibt Elemente zurück, die mit einer bestimmten Bezeichnung klassifiziert sind. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Dies ist eine nützliche Bedingung für DSR-Untersuchungen, da Ihre Organisation möglicherweise Bezeichnungen verwendet, um Inhalte im Zusammenhang mit dem Datenschutz zu klassifizieren oder personenbezogene Daten oder vertrauliche Informationen enthält. Verwenden Sie für den Wert dieser Bedingung den vollständigen Bezeichnungsnamen oder den ersten Teil des Bezeichnungsnamens mit einem Platzhalter. Weitere Informationen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen in Office 365](retention.md).
     
 Eine Liste und eine Beschreibung aller im DSR-Case-Tool verfügbaren Bedingungen finden Sie unter [Suchbedingungen](keyword-queries-and-search-conditions.md#search-conditions) im Artikel "Stichwortabfragen und Suchbedingungen für die Inhaltssuche". 
   

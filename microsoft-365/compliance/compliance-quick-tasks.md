@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732489"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126614"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für erste Schritte mit der Microsoft 365-Compliance
 
@@ -83,7 +83,7 @@ Eine Schritt-für-Schritt-Anleitung zum Konfigurieren und Verwenden von Sensitiv
 
 ## <a name="task-7-configure-a-retention-policy"></a>Aufgabe 7: Konfigurieren einer Aufbewahrungsrichtlinie
 
-Mit einer [Aufbewahrungsrichtlinie](retention-policies.md) können Sie proaktiv entscheiden, ob Sie Inhalte beibehalten, Inhalte löschen oder beides speichern möchten, und dann den Inhalt am Ende eines bestimmten Aufbewahrungszeitraums beibehalten und löschen. Diese Aktionen sind möglicherweise erforderlich, um Branchenvorschriften und interne Richtlinien einzuhalten und das Risiko im Fall eines Rechtsstreits oder einer Sicherheitsverletzung zu verringern.
+Mit einer [Aufbewahrungsrichtlinie](retention.md) können Sie proaktiv entscheiden, ob Sie Inhalte beibehalten, Inhalte löschen oder beides speichern möchten, und dann den Inhalt am Ende eines bestimmten Aufbewahrungszeitraums beibehalten und löschen. Diese Aktionen sind möglicherweise erforderlich, um Branchenvorschriften und interne Richtlinien einzuhalten und das Risiko im Fall eines Rechtsstreits oder einer Sicherheitsverletzung zu verringern.
 
 Wenn Inhalte einer Aufbewahrungsrichtlinie unterliegen, können Personen weiterhin mit dem Inhalt bearbeiten und arbeiten, als ob nichts geändert würde. Der Inhalt wird an seiner ursprünglichen Stelle aufbewahrt. Aber wenn jemand Inhalte bearbeitet oder löscht, die der Aufbewahrungsrichtlinie unterliegen, wird eine Kopie des ursprünglichen Inhalts an einem sicheren Ort gespeichert, an dem Sie aufbewahrt wird, während die Aufbewahrungsrichtlinie für diese Inhalte aktiv ist.
 
@@ -105,13 +105,17 @@ Eine Schritt-für-Schritt-Anleitung zum Planen und Konfigurieren der Kommunikati
 
 Nachdem Sie die Grundlagen für die Verwaltung der Richtlinientreue für Ihre Organisation konfiguriert haben, sollten Sie die folgenden Kompatibilitätslösungen in Microsoft 365 verwenden, um vertrauliche Informationen zu schützen und zusätzliche Insider Risiken zu erkennen und zu handeln.
 
-### <a name="configure-retention-labels"></a>Konfigurieren von Aufbewahrungs Bezeichnungen
+### <a name="configure-retention-labels"></a>Aufbewahrungsbezeichnungen konfigurieren
 
-Während Aufbewahrungsrichtlinien auf Containerebene auf Standorte wie SharePoint-Websites und Exchange-Postfächer angewendet werden, ermöglichen [Aufbewahrungs Bezeichnungen](labels.md) spezifischere Zielgruppenadressierung für Ihre Aufbewahrungs-und Löschungsrichtlinien. Beispielsweise auf der Ebene des Dokuments oder der e-Mail-Nachricht, die Endbenutzer zusätzlich zur automatischen Anwendung durch Administratoren manuell anwenden können. Sie können auch eine Aufbewahrungs Bezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe in SharePoint anwenden, sodass alle Dokumente, die an diesem Speicherort gespeichert sind, die standardmäßige Aufbewahrungs Bezeichnung erben.
+Während Aufbewahrungsrichtlinien auf Containerebene auf Standorte wie SharePoint-Websites und Exchange-Postfächer angewendet werden, ermöglichen [Aufbewahrungs Bezeichnungen](retention.md#retention-labels) spezifischere Zielgruppenadressierung für Ihre Aufbewahrungs-und Löschungsrichtlinien. Beispielsweise auf der Ebene des Dokuments oder der e-Mail-Nachricht, die Endbenutzer zusätzlich zur automatischen Anwendung durch Administratoren manuell anwenden können. Sie können auch eine Aufbewahrungs Bezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe in SharePoint anwenden, sodass alle Dokumente, die an diesem Speicherort gespeichert sind, die standardmäßige Aufbewahrungs Bezeichnung erben.
 
 Darüber hinaus unterstützen Aufbewahrungs Bezeichnungen die [Datensatzverwaltung](records-management.md) , um Inhalte als Datensatz zu kennzeichnen. Wenn dies geschieht, kann die Bezeichnung nicht geändert oder entfernt und die Inhalte können nicht bearbeitet oder gelöscht werden. Diese Einschränkungen sind möglicherweise erforderlich, um Ihre Organisation bei der Einhaltung behördlicher Anforderungen zu unterstützen.
 
-Eine Schritt-für-Schritt-Anleitung zum Erstellen und Veröffentlichen von Aufbewahrungs Bezeichnungen finden Sie unter [erstellen, veröffentlichen und Automatisches Anwenden von Aufbewahrungs Bezeichnungen](create-retention-labels.md). Informationen zur Lizenzierung von Datensatzverwaltung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Eine Schritt-für-Schritt-Anleitung zum Erstellen und Veröffentlichen von Aufbewahrungs Bezeichnungen finden Sie in den folgenden Anleitungen:
+- [Erstellen von Aufbewahrungs Bezeichnungen und anwenden in apps](create-apply-retention-labels.md)
+- [Automatisches Anwenden einer Aufbewahrungs Bezeichnung auf Inhalte](apply-retention-labels-automatically.md)
+
+Informationen zur Lizenzierung von Datensatzverwaltung finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identifizieren und Definieren von Typen für vertrauliche Informationen
 

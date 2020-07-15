@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie Postfachinhalte für frühere Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umwandeln.
-ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: baa2daebe65142743df95762a3dcd780d5069c7f
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817574"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126746"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Übersicht über inaktive Postfächer
 
@@ -50,7 +50,7 @@ Zusätzlich zum Beweissicherungsverfahren ist die Verwendung des neuen Microsoft
   
 - Sie kann abfragebasiert sein, sodass nur Elemente aufbewahrt werden, die einer Suchabfrage entsprechen.
 
-Weitere Informationen zum Konfigurieren von Aufbewahrungsrichtlinien finden Sie unter [Overview of Retention Policies](retention-policies.md).
+Weitere Informationen zu Aufbewahrungsrichtlinien finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).
   
 Wenn Sie eine Aufbewahrungsrichtlinie verwenden, um ein inaktives Postfach zu erstellen, wird von Microsoft 365 weiterhin die Aufbewahrungsrichtlinie für das inaktive Postfach verarbeitet. Dies bedeutet Folgendes: Wenn die Aufbewahrungsrichtlinie so konfiguriert ist, das Inhalte aufbewahrt und anschließend gelöscht werden, werden Elemente in den Ordner „Wiederherstellbare Elemente" verschoben, wenn die Aufbewahrungsdauer abläuft, und schließlich aus dem inaktiven Postfach gelöscht. Wenn die Aufbewahrungsrichtlinie nicht für gelöschte Elemente konfiguriert ist, werden Elemente, die nicht dauerhaft vom Benutzer gelöscht wurden (bevor das Postfach inaktiv gemacht wurde), nicht in den Ordner "Wiederherstellbare Elemente" verschoben und werden unbegrenzt aufbewahrt, nachdem das Postfach inaktiv geworden ist. 
   
@@ -75,9 +75,9 @@ Weitere Informationen zu eDiscovery-Fällen und-Haltestatus finden Sie unter [eD
 
 ## <a name="inactive-mailboxes-and-labels"></a>Inaktive Postfächer und Bezeichnungen
 
-Beschriftungen unterstützen Sie beim Klassifizieren von e-Mail-Daten in Ihrer Organisation für die Steuerung und durchsetzen von Aufbewahrungsregeln basierend auf dieser Klassifizierung. Eine Bezeichnung kann entweder manuell von Benutzern oder automatisch von Administratoren auf ein E-Mail-Element angewendet werden, und einem E-Mail-Element kann nur eine Bezeichnung zugewiesen werden. Wenn einem einzelnen e-Mail-Element im Postfach eines Benutzers eine Bezeichnung zugewiesen ist (und es so konfiguriert ist, dass das Element beibehalten oder beibehalten und dann gelöscht wird), und das Postfach oder das Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Ähnlich wie bei eDiscovery-Fallspeichern wird auch die Verwendung von Bezeichnungen nicht empfohlen, um ein Postfach als inaktiv festzulegen. Stattdessen wird empfohlen, ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie zu verwenden. Im Fall von Beschriftungen erkennen Sie möglicherweise nicht, dass eine Bezeichnung auf ein e-Mail-Element angewendet wurde und dann versehentlich ein inaktives Postfach erstellen, wenn Sie das Konto des Benutzers löschen. 
+Aufbewahrungs Bezeichnungen helfen Ihnen, e-Mail-Daten in Ihrer Organisation für die Steuerung zu klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung zu erzwingen. Eine Aufbewahrungs Bezeichnung kann entweder manuell von Benutzern oder automatisch von Administratoren auf ein e-Mail-Element angewendet werden, und einem e-Mail-Element kann nur eine einzelne Bezeichnung zugewiesen sein. Wenn einem einzelnen e-Mail-Element im Postfach eines Benutzers eine Bezeichnung zugewiesen ist (und es so konfiguriert ist, dass das Element beibehalten oder beibehalten und dann gelöscht wird), und das Postfach oder das Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Ähnlich wie bei eDiscovery Case Holds wird die Verwendung von Aufbewahrungs Bezeichnungen nicht empfohlen, um ein Postfach inaktiv zu machen. Stattdessen wird empfohlen, ein Beweissicherungsverfahren oder eine Aufbewahrungsrichtlinie zu verwenden. Im Fall von Aufbewahrungs Bezeichnungen erkennen Sie möglicherweise nicht, dass eine Aufbewahrungs Bezeichnung auf ein e-Mail-Element angewendet wurde, und dann versehentlich ein inaktives Postfach erstellen, wenn Sie das Konto des Benutzers löschen. 
   
-Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
+Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen in Office 365](retention.md).
   
 ## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Inaktive Postfächer und automatisch expandierende Archive
 

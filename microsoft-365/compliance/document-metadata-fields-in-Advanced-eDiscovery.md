@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungs Satz in einem Fall in Advanced eDiscovery in Microsoft 365 definiert.
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726449"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126952"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadaten-Felder in Advanced eDiscovery
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Ursprung|Ursprung|Doc_authors|Autor aus den Dokumentmetadaten.|
 |BCC|Bcc|Email_bcc|BCC-Feld für Nachrichtentypen. Format ist **Display \<SMTPAddress> Name **.|
 |CC|Cc|Email_cc|Feld CC für Nachrichtentypen. Format ist **Display \<SMTPAddress> Name **.|
-|Konformitäts Bezeichnungen|ComplianceLabels|Compliance_labels|[Aufbewahrungs Bezeichnungen](labels.md) , die auf Inhalte in Office 365 angewendet werden.|
+|Konformitäts Bezeichnungen|ComplianceLabels|Compliance_labels|[Aufbewahrungs Bezeichnungen](retention.md) , die auf Inhalte in Office 365 angewendet werden.|
 |Zusammengesetzter Pfad|CompoundPath|Compound_path|Mensch lesbarer Pfad, der die Quelle des Elements beschreibt.|
 |Inhalts|Inhalt||Extrahierter Text des Elements.|
 |Unterhaltungs Text|Unterhaltungs Text||Unterhaltungs Text des Elements.|
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einer Überp
 |Elementklasse|ItemClass|Item_class|Von Exchange Server bereitgestellte Item-Klasse; Beispiel: **IPM. Hinweis:**|
 |Datum der letzten Änderung|LastModifiedDate|Doc_date_modified|Datum der letzten Änderung aus Dokumentmetadaten.|
 |Laden-ID|Lade-Nr|Load_ID|Die ID des Lade Satzes, in dem das Element einem Überprüfungs Satzes hinzugefügt wurde.|
-|Standort|Standort|Standort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
+|Speicherort|Speicherort|Speicherort|Zeichenfolge, die den Typ des Speicherorts angibt, aus dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** -Exchange-Postfächer<br />**SharePoint** -SharePoint-Websites<br />**OneDrive** -OneDrive-Konten|
 |Speicherort Name|LocationName|Location_name|Zeichenfolge, die die Quelle des Elements angibt. Für Exchange ist dies die SMTP-Adresse des Postfachs. für SharePoint und OneDrive die URL für die Websitesammlung.|
 |Als repräsentativ gekennzeichnet|MarkAsRepresentative||Ein Dokument aus den einzelnen Sätzen exakter Duplikate wird als Repräsentanten markiert.|
 |Als Pre-Tagged-Case-Problem 1 * markiert||Marked_as_pre_tagged_Case_issue_1|Als vorab markiertes Fall Problem 1 von Relevanz gekennzeichnet.|

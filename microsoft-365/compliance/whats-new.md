@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 2a48a47c631b0fd3c7e785d98b7221a0c3550c79
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817060"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126908"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -171,12 +171,12 @@ Wenn Sie das Office 365 Security & Compliance Center für Ihre Compliancebedürn
 |Verhinderung von Datenverlust|Verhinderung von Datenverlust <br/> https://protection.office.com/datalossprevention |Verhinderung von Datenverlust <br/> https://compliance.microsoft.com/datalossprevention |[Übersicht über die Verhinderung von Datenverlust](data-loss-prevention-policies.md)|
 |Anträge betroffener Personen |Datenschutz > Anträge betroffener Personen <br/> https://protection.office.com/dsrcases |Anträge betroffener Personen <br/> https://compliance.microsoft.com/datasubjectrequest |[Verwalten von DSGVO-Anträgen betroffener Personen mit dem DSR-Falltool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Verwalten von eDiscovery-Fällen](ediscovery-cases.md) |
-|Ereignisse|Datensatzverwaltung > Ereignisse <br/> https://protection.office.com/events |Datensatzverwaltung > Registerkarte „Ereignisse“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)|
-|Dateiplan|Datensatzverwaltung > Dateiplan <br/> https://protection.office.com/fileplan |Datensatzverwaltung > Registerkarte „Dateiplan“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Verwenden des Dateiplans zum Verwalten von Aufbewahrungs Bezeichnungen](file-plan-manager.md)|
+|Ereignisse|Datensatzverwaltung > Ereignisse <br/> https://protection.office.com/events |Datensatzverwaltung > Registerkarte „Ereignisse“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Starten der Aufbewahrung beim Eintreten eines Ereignisses](event-driven-retention.md)|
+|Dateiplan|Datensatzverwaltung > Dateiplan <br/> https://protection.office.com/fileplan |Datensatzverwaltung > Registerkarte „Dateiplan“ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden](file-plan-manager.md)|
 |Importieren von PST-Dateien|Information Governance > PST-Dateien importieren <br/> https://protection.office.com/importV2 |Information Governance > Registerkarte „Importieren“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Übersicht über das Importieren von PST-Dateien Ihrer Organisation](importing-pst-files-to-office-365.md)|
 |Bezeichnungsaktivitäten-Explorer|Information Governance > Bezeichnungsaktivitäten-Explorer <br/> https://protection.office.com/labelexplorer |Datenklassifizierung > Registerkarte „Aktivitäten-Explorer“ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Anzeigen von Aktivitäten für Ihre Inhalte mit Bezeichnungen (Vorschau)](data-classification-activity-explorer.md)|
-|Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/retentionlabels |Information Governance > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](labels.md)|
-|Aufbewahrungsrichtlinien|Information Governance > Aufbewahrung <br/> https://protection.office.com/retention |Information Governance > Registerkarte „Aufbewahrung“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)|
+|Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien |Klassifizierung > Aufbewahrungsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/retentionlabels |Information Governance > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Übersicht über Aufbewahrungsbezeichnungen](retention.md)|
+|Aufbewahrungsrichtlinien|Information Governance > Aufbewahrung <br/> https://protection.office.com/retention |Information Governance > Registerkarte „Aufbewahrung“ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md)|
 |Typen vertraulicher Informationen|Klassifizierung > Typen vertraulicher Informationen <br/> https://protection.office.com/sensitivetypes |Datenklassifizierung > Registerkarte „Typen vertraulicher Informationen“ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)|
 |Vertraulichkeitsbezeichnungen und Bezeichnungsrichtlinien|Klassifizierung > Vertraulichkeitsbezeichnungen > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://protection.office.com/sensitivity |Information Protection > Registerkarte „Bezeichnungen“ und „Bezeichnungsrichtlinien“ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md) |
 |Dienstüberprüfung|Dienstüberprüfung <br/> https://protection.office.com/serviceassurance/dashboard |Zurzeit kann nur im Office 365 Security & Compliance Center auf Dienstüberprüfungsressourcen zugegriffen werden. |[Dienstüberprüfung im Security & Compliance Center](service-assurance.md)|

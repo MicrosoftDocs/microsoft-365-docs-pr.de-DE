@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371463"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126334"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Erste Schritte mit trainierbaren Klassifizierern (Vorschau)
 
@@ -38,16 +38,16 @@ Diese Kategorie von Klassifizierungsmechanismen umfasst das Auffinden von Inhalt
 - Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md).
 - Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Vertraulichkeits-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [DLP (Data Loss Prevention)](data-loss-prevention-policies.md) und [Aufbewahrungsrichtlinien](retention-policies.md)zur Verfügung zu stellen.
+Sensitivitäts-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [Datenverlust Verhinderung (DLP)](data-loss-prevention-policies.md) und [automatisch anwenden von Policen für Aufbewahrungs Bezeichnungen](apply-retention-labels-automatically.md)verfügbar zu machen.
 
-## <a name="trainable-classifiers"></a>Schulungs Klassifizierer
+## <a name="trainable-classifiers"></a>Trainierbare Klassifizierungsmerkmale
 
-Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es um die Schulung einer Klassifizierung, um ein Element basierend auf dem Element zu identifizieren, nicht durch Elemente, die sich im Element befinden (Mustervergleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die geschulte Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert.
+Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es eher darum, einen Klassifizierer so zu trainieren, dass er ein Element anhand dessen identifiziert, was das Element ist, und nicht anhand von Elementen, die sich im Element befinden (Musterabgleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die positiven, negativen, falsch positiven und falschen negative, um die Genauigkeit der Vorhersagen zu verbessern. Wenn Sie die geschulte Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert.
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>Wo Sie Schulungs Klassifizierer verwenden können
-Sowohl integrierte Klassifizierungen als auch schulungsable-Klassifizierungen stehen als Bedingung für die [automatische Anwendung der Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung und einer](labels.md#applying-a-retention-label-automatically-based-on-conditions) [Kommunikations Konformität](communication-compliance-configure.md)zur Verfügung. 
+Sowohl integrierte Klassifizierungen als auch schulungsable-Klassifizierungen stehen als Bedingung für die [automatische Anwendung der Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung und einer](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) [Kommunikations Konformität](communication-compliance-configure.md)zur Verfügung. 
 
-Für Sensitivitäts Bezeichnungen können integrierte und eigene Klassifizierungen als Bedingungen verwendet werden, siehe [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)und automatisches [bezeichnen von Office-Apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Für Sensitivitäts Bezeichnungen können integrierte und eigene Klassifizierungen als Bedingungen verwendet werden, siehe [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Schulungs fähige Klassifizierungen funktionieren nur mit Elementen, die nicht verschlüsselt sind und sich in Englisch befinden.
@@ -87,7 +87,7 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 
   |Name der Sprache|||||
   |---------|---------|---------|---------|---------|
-  |ActionScript|C        |C #       |C++     |Clojure  |
+  |ActionScript|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |OK       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |Perl     |PHP      |Python   |R        |Ruby     |
@@ -129,8 +129,7 @@ Das Erstellen und Veröffentlichen einer Schulungs Klassifizierer zur Verwendung
 ## <a name="see-also"></a>Siehe auch
 
 
-- [Aufbewahrungsbezeichnungen](labels.md)
-- [Aufbewahrungsrichtlinien](retention-policies.md)
+- [Aufbewahrungsbezeichnungen](retention.md)
 - [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)

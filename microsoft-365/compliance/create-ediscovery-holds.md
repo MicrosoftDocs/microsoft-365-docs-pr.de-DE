@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem zentralen eDiscovery-Fall zugeordnet ist, um Inhalte beizubehalten, die möglicherweise für eine Untersuchung relevant sind.
-ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498328"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127522"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -67,7 +67,7 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
 
 8. Wenn Sie das Hinzufügen von Inhaltsspeicherorten in der Warteschleife abgeschlossen haben, klicken Sie auf **weiter**.
 
-9. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter** , um den gesamten Inhalt der angegebenen inhaltsspeicherorte beizubehalten.
+9. Um eine abfragebasierte Aufbewahrung mit Bedingungen zu erstellen, führen Sie die folgenden Schritte aus. Klicken Sie andernfalls auf **weiter**, um alle Inhalte an den angegebenen Inhaltsspeicherorten beizubehalten.
 
     ![Erstellen eines abfragebasierten haltebereichs mit Bedingungen](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -80,6 +80,14 @@ So erstellen Sie eine eDiscovery-Aufbewahrungsstelle, die einem zentralen eDisco
 10. Klicken Sie nach dem Konfigurieren eines abfragebasierten Haltestatus auf **weiter**.
 
 11. Überprüfen Sie Ihre Einstellungen (und bearbeiten Sie Sie, falls erforderlich), und klicken Sie dann auf **diesen Haltebereich erstellen**.
+
+## <a name="query-based-holds-placed-on-site-documents"></a>Auf Website Dokumenten angeordnete abfragebasierte Aufbewahrungen
+
+Beachten Sie beim Platzieren eines abfragebasierten eDiscovery-Speichers für Dokumente, die sich in SharePoint-Websites befinden, folgende Punkte:
+
+- Ein abfragebasierter Haltebereich behält anfänglich alle Dokumente in einer Website für einen kurzen Zeitraum nach dem Löschen bei. Das heißt, wenn ein Dokument gelöscht wird, wird es in die Aufbewahrungs Archiv-Bibliothek verschoben, auch wenn es nicht den Kriterien des abfragebasierten haltebereichs entspricht. Gelöschte Dokumente, die nicht mit einem abfragebasierten Haltebereich übereinstimmen, werden jedoch von einem Zeitgeberauftrag entfernt, der die Aufbewahrungs Bibliothek verarbeitet. Der Zeitgeberauftrag wird regelmäßig ausgeführt und vergleicht alle Dokumente in der Aufbewahrungs Archiv-Bibliothek mit ihren abfragebasierten eDiscovery-Haltebereichen (und anderen Typen von halte-und Aufbewahrungsrichtlinien). Der Zeitgeberauftrag löscht die Dokumente, die nicht mit einem abfragebasierten Haltestatus übereinstimmen, und behält die Dokumente bei.
+
+- Abfragebasierte Aufbewahrungen sollten nicht zum Durchführen einer gezielten Aufbewahrung verwendet werden, beispielsweise zum Beibehalten von Dokumenten in einem bestimmten Ordner oder Standort oder mithilfe anderer standortbasierter Aufbewahrungs Kriterien. Dies kann zu unerwünschten Ergebnissen führen. Es wird empfohlen, nicht ortsbasierte Aufbewahrungs Kriterien wie Schlüsselwörter, Datumsbereiche oder andere Dokumenteigenschaften zum Beibehalten von Website Dokumenten zu verwenden.
 
 ## <a name="ediscovery-hold-statistics"></a>eDiscovery-Aufbewahrungs Statistiken
 
@@ -114,7 +122,7 @@ Im folgenden sind einige andere Punkte aufgeführt, die beim Suchen von Speicher
 - Wenn eine Suche für Suchspeicher Orte in der Warteschleife konfiguriert ist und Sie dann einen eDiscovery-Haltestatus in dem Fall ändern (durch Hinzufügen oder Entfernen eines Speicherorts oder Ändern einer halte Abfrage), wird die Suchkonfiguration mit diesen Änderungen aktualisiert. Sie müssen die Suche jedoch erneut ausführen, nachdem der Haltebereich geändert wurde, um die Suchergebnisse zu aktualisieren.
 
 - Wenn mehrere eDiscovery-Halterungen an einem einzigen Speicherort in einem eDiscovery-Fall gespeichert werden und Sie Speicherorte für die Suche in der Warteschleife auswählen, beträgt die maximale Anzahl von Stichwörtern für diese Suchabfrage 500. Das liegt daran, dass die Suche alle abfragebasierten haltebereiche mit dem **or** -Operator kombiniert. Wenn in den kombinierten halte Abfragen und der Suchabfrage mehr als 500 Schlüsselwörter vorhanden sind, wird der gesamte Inhalt im Postfach durchsucht, und nicht nur der Inhalt, der mit dem abfragebasierten Fall übereinstimmt.
-    
+
 - Wenn ein eDiscovery-Haltestatus aktiviert ist, können Sie die Speicherorte weiterhin durch **suchen, während**der Haltebereich aktiviert ist.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Beibehalten von Inhalten in Microsoft Teams
@@ -131,7 +139,7 @@ Weitere Informationen zum Beibehalten von Teams-Inhalten finden Sie unter [platz
 > In einer cloudbasierten Organisation müssen Benutzer, die an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind, über ein Exchange Onlinees Postfach verfügen, damit Chat Unterhaltungen beibehalten werden, wenn das Postfach in einem eDiscovery-Archiv gespeichert wird. Das liegt daran, dass Unterhaltungen, die Teil der Chat Liste sind, in den cloudbasierten Postfächern der Chat Teilnehmer gespeichert werden. Wenn ein Chat Teilnehmer kein Exchange Online Postfach hat, können Sie diese Chat Unterhaltungen nicht beibehalten. Beispielsweise können Benutzer mit einem lokalen Postfach in einer Exchange-hybridbereitstellung an Unterhaltungen teilnehmen, die Teil der Chat Liste in Microsoft Teams sind. In diesem Fall können Inhalte aus diesen Unterhaltungen jedoch nicht beibehalten werden, da diese Benutzer keine Cloud-basierten Postfächer haben, die in die Warteschleife gestellt werden können.
   
 Jeder Team-oder Team Kanal enthält auch ein wiki für Notizen und die Zusammenarbeit. Die Wiki-Inhalte werden automatisch in einer Datei im MHT-Format gespeichert. Diese Datei wird in der Dokumentbibliothek für Wiki-Daten auf der SharePoint-Website des Teams gespeichert. Sie können den Inhalt des Wikis beibehalten, indem Sie die SharePoint-Website des Teams einem eDiscovery-Speicher hinzufügen.
-    
+
 > [!NOTE]
 > Die Möglichkeit, den wiki-Inhalt für einen Team-oder Team Kanal beizubehalten (wenn Sie die SharePoint-Website des Teams in der Warteschleife platzieren) wurde am 22. Juni 2017 veröffentlicht. Wenn eine Teamwebsite gespeichert ist, wird der Inhalt des Wikis ab diesem Datum beibehalten. Wenn jedoch eine Teamwebsite gespeichert ist und der Inhalt des Wikis vor dem 22. Juni 2017 gelöscht wurde, wurde der Inhalt des Wikis nicht beibehalten.
 
@@ -159,8 +167,8 @@ Beachten Sie beim Platzieren von Teams und Office 365 Gruppen in einer eDiscover
   
 - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Teams oder Office 365 Gruppen, in denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Team-oder Office 365 Gruppe in eDiscovery Hold platzieren, werden nur das Gruppenpostfach und die Gruppen Website in den Haltebereich verschoben. Die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit dem eDiscovery-Haltestatus hinzufügen. Wenn Sie also ein Team oder eine Office 365 Gruppe aus einem rechtlichen Grund in die Warteschleife stellen müssen, können Sie die Postfächer und OneDrive-Konten von Team-oder Gruppenmitgliedern in demselben Haltebereich hinzufügen.
 
-- Wenn Sie eine Liste der Mitglieder eines Teams oder einer Office 365 Gruppe erhalten möchten, können Sie die Eigenschaften auf der Seite " **Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen: 
-    
+- Wenn Sie eine Liste der Mitglieder eines Teams oder einer Office 365 Gruppe erhalten möchten, können Sie die Eigenschaften auf der Seite " **Gruppen** " im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online-PowerShell ausführen:
+
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
@@ -179,7 +187,7 @@ Informationen zum Sammeln einer Liste der URLs für die OneDrive für Unternehme
 
 Nachdem ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto aus einer eDiscovery-Aufbewahrungsstelle entfernt wurde, wird eine *Verzögerungs Sperre* angewendet. Dies bedeutet, dass die tatsächliche Entfernung des Haltestatus für 30 Tage verzögert wird, um zu verhindern, dass Daten endgültig aus einem Inhaltsspeicherort gelöscht (bereinigt) werden. Dadurch erhalten Administratoren die Möglichkeit, Inhalte zu suchen oder wiederherzustellen, die nach dem Entfernen eines eDiscovery-Haltestatus gelöscht werden. Die Details der Funktionsweise des Verzögerungs Speichers für Postfächer und Websites sind unterschiedlich.
 
-- **Postfächer:** Das nächste Mal, wenn der Assistent für verwaltete Ordner das Postfach verarbeitet und festgestellt hat, dass ein eDiscovery-Speicher entfernt wurde, wird ein Verzögerungs Speicher für ein Postfach festgehalten. Insbesondere wird eine Verzögerungs Sperre auf ein Postfach angewendet, wenn der Assistent für verwaltete Ordner eine der folgenden Postfacheigenschaften auf **true**festlegt: 
+- **Postfächer:** Das nächste Mal, wenn der Assistent für verwaltete Ordner das Postfach verarbeitet und festgestellt hat, dass ein eDiscovery-Speicher entfernt wurde, wird ein Verzögerungs Speicher für ein Postfach festgehalten. Insbesondere wird eine Verzögerungs Sperre auf ein Postfach angewendet, wenn der Assistent für verwaltete Ordner eine der folgenden Postfacheigenschaften auf **true**festlegt:
 
    - **DelayHoldApplied:** Diese Eigenschaft bezieht sich auf e-Mail-bezogene Inhalte (die von Personen mit Outlook und Outlook im Internet generiert werden), die im Postfach eines Benutzers gespeichert sind.
 
@@ -191,14 +199,14 @@ Nachdem ein Postfach, eine SharePoint-Website oder ein OneDrive-Konto aus einer 
 
 - **SharePoint-und OneDrive-Websites:** Alle SharePoint-oder OneDrive-Inhalte, die in der Aufbewahrungs Archiv-Bibliothek aufbewahrt werden, werden während der 30-tägigen Verzögerungszeit nicht gelöscht, nachdem eine Website aus einer eDiscovery-Aufbewahrungsstelle entfernt wurde. Dies ähnelt dem, was geschieht, wenn eine Website von einer Aufbewahrungsrichtlinie freigegeben wird. Darüber hinaus können Sie diesen Inhalt in der Aufbewahrungs Archiv-Bibliothek während der 30-tägigen Verzögerungszeit nicht manuell löschen. 
 
-   Weitere Informationen finden Sie unter [Freigeben einer Aufbewahrungsrichtlinie](retention-policies.md#releasing-a-retention-policy).
+   Weitere Informationen finden Sie unter [Freigeben einer Aufbewahrungsrichtlinie](retention.md#releasing-a-retention-policy).
 
 Ein Verzögerungs Speicher wird auch auf Aufbewahrungsorte für Inhalte angewendet, wenn Sie einen zentralen eDiscovery-Fall schließen, da die Haltestatus deaktiviert sind, wenn ein Fall geschlossen wird. Weitere Informationen zum Schließen von Fällen finden Sie unter [Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>eDiscovery-Aufbewahrungs Grenzwerte
 
 In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case-Holds aufgeführt.
-    
+
   |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |

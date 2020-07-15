@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie den Inhalt eines inaktiven Postfachs in Office 365 wiederherstellen, indem Sie es in ein neues Postfach konvertieren, das den Inhalt des inaktiven Postfachs enthält.
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818945"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127462"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Wiederherstellen eines inaktiven Postfachs
 
@@ -81,7 +81,7 @@ Nachdem Sie ein inaktives Postfach wiederhergestellt haben, wird auch ein neues 
   
      - **In-situ-** Speicher In-Place-Speicher werden aus dem wiederhergestellten Postfach entfernt. Dies bedeutet, dass das wiederhergestellte Postfach als Quellpostfach aus einem in-situ-Speicher oder einer Compliance-eDiscovery-Suche entfernt wurde.
      
-     - **Microsoft 365-Aufbewahrungsrichtlinie mit Erhaltungs Sperre.** Wenn das inaktive Postfach einer Aufbewahrungsrichtlinie mit Erhaltungs Sperre zugewiesen wurde (als *Gesperrte Aufbewahrungsrichtlinie*bezeichnet), wird das wiederhergestellte Postfach derselben gesperrten Aufbewahrungsrichtlinie zugewiesen. Weitere Informationen zu gesperrten Aufbewahrungsrichtlinien finden Sie unter Informationen [zu Aufbewahrungsrichtlinien](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+     - **Microsoft 365-Aufbewahrungsrichtlinie mit Erhaltungs Sperre.** Wenn das inaktive Postfach einer Aufbewahrungsrichtlinie mit Erhaltungs Sperre zugewiesen wurde (als *Gesperrte Aufbewahrungsrichtlinie*bezeichnet), wird das wiederhergestellte Postfach derselben gesperrten Aufbewahrungsrichtlinie zugewiesen. Weitere Informationen zu gesperrten Aufbewahrungsrichtlinien finden Sie unter [use Preservation Lock to Compliance Requirements](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
   
      - **Microsoft 365-Aufbewahrungsrichtlinie ohne Aufbewahrungs Sperre.** Das inaktive Postfach wird aus einer entsperrten Microsoft 365-Aufbewahrungsrichtlinie entfernt, die auf ihn angewendet wurde. Das Beweissicherungsverfahren ist jedoch für das wiederhergestellte Postfach aktiviert, um das Löschen von Postfachinhalten basierend auf organisationsweiten Aufbewahrungsrichtlinien zu verhindern, die Inhalte löschen, die älter sind als ein bestimmtes Alter. Sie können das Beweissicherungsverfahren halten oder entfernen. Weitere Informationen finden Sie unter [Create a Litigation Hold](create-a-litigation-hold.md).
 

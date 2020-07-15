@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Hier erfahren Sie, wie Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online Postfach löschen, selbst wenn das Postfach legal aufbewahrt wird.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817874"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127022"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife – Administratorhilfe
 
@@ -52,7 +52,7 @@ Der Ordner "refundable Items" für ein Exchange Online Postfach ist vorhanden, u
 
 - Das in diesem Artikel beschriebene Verfahren wird nicht für inaktive Postfächer unterstützt. Das liegt daran, dass Sie nach dem Entfernen nicht erneut einen Haltestatus (oder keine Aufbewahrungsrichtlinie) auf ein inaktives Postfach anwenden können. Wenn Sie einen Haltebereich aus einem inaktiven Postfach entfernen, wird er in ein normales, vorläufig gelöschtes Postfach geändert und dauerhaft aus Ihrer Organisation gelöscht, nachdem es vom Assistenten für verwaltete Ordner verarbeitet wurde.
 
-- Sie können dieses Verfahren nicht für ein Postfach ausführen, das einer Aufbewahrungsrichtlinie zugewiesen wurde, die mit einer Aufbewahrungs Sperre gesperrt wurde. Das liegt daran, dass Sie durch eine Aufbewahrungs Sperre verhindert werden, dass Sie das Postfach aus der Aufbewahrungsrichtlinie entfernen oder ausschließen und den Assistenten für verwaltete Ordner für das Postfach deaktivieren. Weitere Informationen zum Sperren von Aufbewahrungsrichtlinien finden Sie unter [use Preservation Lock zur Einhaltung behördlicher Anforderungen](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+- Sie können dieses Verfahren nicht für ein Postfach ausführen, das einer Aufbewahrungsrichtlinie zugewiesen wurde, die mit einer Aufbewahrungs Sperre gesperrt wurde. Das liegt daran, dass Sie durch eine Aufbewahrungs Sperre verhindert werden, dass Sie das Postfach aus der Aufbewahrungsrichtlinie entfernen oder ausschließen und den Assistenten für verwaltete Ordner für das Postfach deaktivieren. Weitere Informationen zum Sperren von Aufbewahrungsrichtlinien finden Sie unter [use Preservation Lock zur Einhaltung behördlicher Anforderungen](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 - Wenn ein Postfach nicht in der Warteschleife abgelegt wird (oder wenn die Wiederherstellung einzelner Elemente nicht aktiviert ist), können Sie die Elemente aus dem Ordner "Wiederherstellbare Elemente" löschen. Weitere Informationen zur Vorgehensweise finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
@@ -224,7 +224,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 Nachdem Sie festgestellt haben, dass ein Postfach in der Warteschleife ist, da eine Aufbewahrungs Bezeichnung auf einen Ordner oder ein Element angewendet wird, können Sie das Inhalts Such Tool im Security and Compliance Center verwenden, um nach beschrifteten Elementen mithilfe der ComplianceTag-Suchbedingung zu suchen. Weitere Informationen finden Sie im Abschnitt "Suchbedingungen" unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
-Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
+Weitere Informationen zu Bezeichnungen finden Sie unter Informationen [zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md).
 
  ### <a name="ediscovery-holds"></a>eDiscovery-Aufbewahrung
   

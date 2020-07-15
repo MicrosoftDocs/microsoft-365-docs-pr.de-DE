@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie mit dem Importdienst im Security & Compliance Center E-Mail-Daten (PST-Dateien) in Benutzerpostfächer importieren.
-ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091941"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127160"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation
 
@@ -99,7 +99,7 @@ Es folgen eine Darstellung und Beschreibung des vollständigen PST-Importprozess
     
   - Verwenden von [eDiscovery-Fällen](ediscovery-cases.md) zur Verwaltung juristischer Prüfungen in Ihrer Organisation. 
     
-  - Verwenden von [Aufbewahrungsrichtlinien](retention-policies.md) im Security & Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden, und Löschen von Inhalten, nachdem der Aufbewahrungszeitraum abgelaufen ist. 
+  - Verwenden von [Aufbewahrungsrichtlinien](retention.md) im Security & Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden, und Löschen von Inhalten, nachdem der Aufbewahrungszeitraum abgelaufen ist. 
 
   - Verwenden von [Kommunikationscompliancerichtlinien](communication-compliance.md) zur Überprüfung von Nachrichten, um sicherzustellen, dass sie den Nachrichtenstandards entsprechen, und einen Klassifizierungstyp hinzuzufügen.
     
