@@ -222,8 +222,10 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Installieren und Verwalten von Add-Ins mit Hilfe von zentraler Bereitstellung
+        - name: Bereitstellen von Add-Ins im Admin Center
           href: manage/manage-deployment-of-add-ins.md
+        - name: Verwalten von Add-Ins im Admin Center
+          href: manage/manage-addins-in-the-admin-center.md
         - name: FAQ zur zentralen Bereitstellung
           href: manage/centralized-deployment-faq.md
         - name: Einen Partner oder Wiederverkäufer suchen
@@ -294,12 +296,12 @@
           href: ../business/device-states.md
         - name: "App-Schutzeinstellungen für Windows\_10-PCs"
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: App-Schutzeinstellungen für Android und iOS
+        - name: Festlegen von App-Schutzeinstellungen für Android und iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
             - name: Überprüfen der Einstellungen unter Android oder iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Geräteschutzeinstellungen für Windows 10-PCs
+        - name: Festlegen von Geräteschutzeinstellungen für Windows 10-PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Überprüfen der Einstellungen auf Windows 10-PCs
