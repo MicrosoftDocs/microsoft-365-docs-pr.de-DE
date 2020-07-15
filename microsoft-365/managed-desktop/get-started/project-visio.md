@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: c8690db17c71fd5ce604fd9165fee7e54a41c639
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022096"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126827"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten
 
@@ -28,26 +28,16 @@ Administratoren sollten überprüfen, ob Sie diese Voraussetzungen erfüllen:
 - **Unternehmensportal** : das Unternehmensportal muss in Ihrem Mandanten verfügbar sein, damit Ihre Benutzer diese Anwendungen installieren können. Wenn das Unternehmensportal nicht in Ihrem Mandanten bereitgestellt wird, finden Sie weitere Informationen unter [Unternehmensportal](company-portal.md).
 
 ## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Bereitstellen von Project und Visio für Microsoft Managed Desktop-Geräte
-Nachdem Sie Ihre Supportanfrage gesendet haben, erstellt Microsoft Managed Desktop drei Azure Ad Gruppen und drei Anwendungsbereitstellungen über Microsoft InTune, um die apps für Ihren Mandanten bereitzustellen.  
+Microsoft Managed Desktop wird Microsoft Project und Microsoft Visio als zwei Win32-Anwendungen in Microsoft InTune hinzufügen. Außerdem werden zwei Gruppen in Azure Active Directory erstellt, die der entsprechenden Anwendung mit der "available"-Absicht zugewiesen werden. 
 
-**So stellen Sie Project und Visio bereit**
-1. **Datei eine Supportanfrage** IT-Administratoren müssen eine Support-Anforderung einreichen, um diese Anwendungen Ihren Benutzern zur Verfügung zu stellen. Informationen zum Kontaktieren von Microsoft Managed Desktop finden Sie unter [Administrator Unterstützung für Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
-2. **Zuweisen von Benutzern zu neuen Azure Ad Gruppen** Microsoft Managed Desktop erstellt drei Azure Ad Gruppen in Ihrem Mandanten und 3 entsprechende Anwendungsbereitstellungen. IT-Administratoren müssen die Benutzer den entsprechenden Gruppen zuweisen.
-
->[!NOTE]
->Weisen Sie Benutzern nur eine dieser Azure Ad Gruppen zu. 
+**So stellen Sie Project und Visio bereit** Fügen Sie den Benutzer der entsprechenden Gruppe hinzu, und die Anwendung wird im Unternehmens Portal verfügbar sein. Es kann einige Minuten dauern, bis die Synchronisierung ausgeführt wird, aber dann können Ihre Benutzer die Apps aus dem Unternehmens Portal installieren. 
 
 Azure AD Gruppenname | Welche Benutzer sollen zugewiesen werden?   
  --- | ---
 Moderner Arbeitsplatz-Office-Project_Install | Benutzer, die Project benötigen
 Moderner Arbeitsplatz-Office-Visio_Install | Benutzer, die Visio benötigen
 
-Sobald diesen Gruppen zugewiesen ist, sind Anwendungen im Unternehmens Portal verfügbar. Es kann einige Minuten dauern, bis die Synchronisierung ausgeführt wird, aber dann können Ihre Benutzer die Apps aus dem Unternehmens Portal installieren. 
-
 ## <a name="communicate-changes"></a>Kommunizieren von Änderungen
 Es ist wichtig, dass IT-Administratoren ihren Benutzern mitteilen können, wie Sie Project und Visio installieren. Dies umfasst Folgendes: 
 - Benachrichtigen von Benutzern, wenn diese Anwendungen für Sie verfügbar sind. 
 - Anweisungen zum Installieren dieser Anwendungen aus dem Unternehmens Portal.
-
->[!NOTE]
->Benutzer müssen alle Office-Anwendungen schließen, bevor Sie Microsoft Project oder Microsoft Visio aus dem Unternehmens Portal installieren. 

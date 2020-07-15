@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Bereitstellen von Sicherheits-und Compliance-Features von Microsoft 365 und Schützen Ihrer persönlichen Informationen.
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844692"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126458"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen unterliegen der Datenschutzverordnung
 
@@ -33,6 +33,8 @@ Diese Steuerelemente befinden sich in den folgenden Lösungsbereichen:
 - Verhinderung von Datenverlusten (Data Loss Prevention, DLP)
 - Office-Nachrichtenverschlüsselung (OM)
 - Zugriffssteuerung für Teams und Standorte
+
+![Wichtige Dienste zum Schutz personenbezogener Informationen unterliegen der Datenschutzverordnung](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >In dieser Lösung werden Sicherheits-und Compliance-Features zum Schutz von Informationen unter Einhaltung der Datenschutzbestimmungen beschrieben. Eine vollständige Liste der Sicherheitsfeatures in Microsoft 365 finden Sie in der [Microsoft 365-Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security/). Eine vollständige Liste der Kompatibilitätsfeatures in Microsoft 365 finden Sie in der [Microsoft 365-Konformitäts Dokumentation](https://docs.microsoft.com/microsoft-365/compliance/).
@@ -64,7 +66,7 @@ Um Ihnen den Einstieg in ein Informationsschutz System in Microsoft 365 zu erlei
 
 Microsoft [Information Protection-Lösungen](../compliance/protect-information.md) umfassen eine Reihe integrierter Funktionen für Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen die Lösungen für den Informationsschutz Folgendes:
 
-- [Dienst Verschlüsselung mit Kundenschlüssel](../compliance/customer-key-overview.md)
+- [Dienstverschlüsselung mit dem Kundenschlüssel](../compliance/customer-key-overview.md)
 - [Vertrauliche Informationstypen](../compliance/what-the-sensitive-information-types-look-for.md) (beschrieben im [Artikel bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente](information-protection-deploy-assess.md))
 - [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) 
   - Dienst/Containerebene
@@ -94,7 +96,7 @@ Führen Sie diese Aktivitäten vor der Implementierung einer der unten hervorgeh
 
 1. Grundlegendes zu folgenden Themen:
    - **Geschäftsanforderungen.** Legen Sie die geschäftlichen Gründe für das Anwenden von Sensitivitäts Bezeichnungen in Ihrem Unternehmen fest. Zum Beispiel Ihre Datenschutzanforderungen für den Informationsschutz.
-   - **Empfindlichkeits Beschriftungsfunktionen.** Die Empfindlichkeits Kennzeichnung kann komplex werden, daher sollten Sie vor dem ersten Start unbedingt die Dokumentation zu den [Sensitivitäts Bezeichnungen](../compliance/sensitivity-labels.md) lesen.
+   - **Empfindlichkeits Beschriftungsfunktionen.** Die Sensitivitäts Kennzeichnung kann komplex werden, daher sollten Sie vor dem ersten Start unbedingt die Dokumentation zu den [Sensitivitäts Bezeichnungen](../compliance/sensitivity-labels.md) lesen.
    - **Wichtige Dinge, die Sie beachten sollten** Vertraulichkeits Bezeichnungen werden im Microsoft Compliance Admin Center verwaltet, die Ausrichtungs-und Anwendungsoptionen variieren jedoch erheblich.
       - Es gibt Vertraulichkeits Bezeichnungen für Websites, Gruppen und Teams auf Containerebene (die Einstellungen gelten nicht für Inhalte im Container). Diese werden für Benutzer und Gruppen veröffentlicht, die Sie anwenden, wenn eine Website, eine Gruppe oder ein Team zur Verfügung gestellt wird.
       - Es gibt Sensitivitäts Bezeichnungen für aktive Inhalte. Diese werden auch für Benutzer oder Gruppen veröffentlicht, die Sie entweder manuell anwenden, oder Sie werden automatisch angewendet, wenn:
@@ -106,10 +108,10 @@ Führen Sie diese Aktivitäten vor der Implementierung einer der unten hervorgeh
 
    - Azure Information Protection
 
-      Das aktuelle Sensitivitäts Kennzeichnungs Schema muss möglicherweise mit jeder vorhandenen [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) -Kenn Zeichnungs Implementierung abgeglichen werden.
+      Das aktuelle Sensitivitäts Kennzeichnungs Schema muss möglicherweise mit einer vorhandenen [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) -Bezeichnungs Implementierung abgeglichen werden.
    - OME
 
-      Wenn Sie die moderne Sensitivitäts Kennzeichnung für den e-Mail-Schutz verwenden möchten und vorhandene e-Mail-Verschlüsselungsmethoden wie OM vorhanden sind, können Sie nebeneinander existieren, aber Sie sollten die Szenarien verstehen, in denen entweder angewendet werden sollte. Weitere Informationen finden Sie unter [Office 365 Nachrichtenverschlüsselung – neue Funktionen (OM)](#office-365-message-encryption-ome-new-capabilities), die eine Tabelle mit modernem Vertraulichkeitsschutz für Etikettentypen mit OM-basiertem Schutz enthält.
+      Wenn Sie die moderne Sensitivitäts Kennzeichnung für e-Mail-Schutz verwenden möchten und vorhandene e-Mail-Verschlüsselungsmethoden wie OM vorhanden sind, können Sie nebeneinander existieren, aber Sie sollten die Szenarien verstehen, in denen entweder angewendet werden sollte. Weitere Informationen finden Sie unter [Office 365 Nachrichtenverschlüsselung – neue Funktionen (OM)](#office-365-message-encryption-ome-new-capabilities), die eine Tabelle mit modernem Vertraulichkeitsschutz für Etikettentypen mit OM-basiertem Schutz enthält.
 
 3. Planen der Integration in ein umfassenderes Informationsschutz Schema. Oben auf der Koexistenz mit OM können aktuelle Sensitivitäts Bezeichnungen neben Funktionen wie Microsoft 365 Data Loss Prevention (DLP) und Microsoft Cloud App Security verwendet werden. Weitere Informationen finden Sie unter [Sensitivitäts Bezeichnungen und Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) , um Ihre Datenschutzziele im Zusammenhang mit Datenschutz zu erreichen.
 
@@ -174,7 +176,7 @@ Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwend
 - Sie müssen sich nicht darauf verlassen, dass die Benutzer alle Inhalte richtig klassifizieren.
 - Benutzer müssen nicht mehr über Ihre Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
 
-Automatische Etikettierung unterstützt die Empfehlung einer Bezeichnung für Benutzer sowie die automatische Anwendung einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten.
+Die automatische Beschriftung unterstützt die Empfehlung einer Bezeichnung für Benutzer sowie die automatische Anwendung einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten.
 
 Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Funktion wird vom Azure Information Protection Unified Labeling-Client und [einigen Versionen von Office-Apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)unterstützt.
 
@@ -279,7 +281,7 @@ Vertraulichkeits Bezeichnungen können mit DLP zusammenarbeiten, um den Datensch
 3. Eine Gesamtstrategie zur Behebung von Anforderungen und zum Schutz und zur Steuerung der Datenschutz-Hotspots wird hergestellt.
 4. Ein Phasenbasierter Aktionsplan zur Behandlung der Datenschutz-Steuerungsstrategie wird eingeführt.
 
-Nachdem diese Elemente bestimmt wurden, können Sie vertrauliche Informationstypen, die Taxonomie für die Sensitivitäts Kennzeichnung und die DLP-Richtlinien zusammen verwenden. Diese Abbildung zeigt ein Beispiel.
+Nachdem diese Elemente bestimmt wurden, können Sie vertrauliche Informationstypen, ihre Sensitivitäts Bezeichnung für die Taxonomie und DLP-Richtlinien zusammen verwenden. Diese Abbildung zeigt ein Beispiel.
 
 ![Beispiel für Sensitivitäts Bezeichnungen, die mit DLP arbeiten](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
@@ -319,7 +321,7 @@ OM-und Sensitivitäts Bezeichnungen, die auf e-Mails mit Verschlüsselung angewe
 | Externe Parteien <br> Sicheres kommunizieren und zusammenarbeiten mit externen/Consumer-Benutzern | Yes – Empfänger in der Bezeichnung vordefinieren | Empfehlen – Just-in-Time-Schutz basierend auf Empfängern |
 | Interne + Partner, mit Ablauf/Widerruf <br> Steuern des Zugriffs auf e-Mails und Inhalte mit internen Benutzern und vertrauenswürdigen Partnern mit Ablauf und Sperrung | Empfehlen – vollständig angepasster Schutz mit Zugriffsdauer, Benutzer kann Dateien manuell nachverfolgen und widerrufen | Nein – kein Widerruf oder Ablauf für interne e-Mails |
 | Externe Parteien mit Ablauf/Widerruf <br> Steuern des Zugriffs von e-Mails und Inhalten mit externen Benutzern/Consumern mit Ablauf und Sperrung | Ja – Benutzer kann Dateien manuell nachverfolgen | Recommend (E5) – der Administrator kann e-Mails vom Security & Compliance Center widerrufen. |
-| Automatische Etikettierung <br> Organisation möchte automatisch e-Mail-Anlagen mit bestimmten vertraulichen Inhalten und/oder bestimmten Empfängern schützen. | Recommend (E5) – automatische Kennzeichnung in Exchange-und Outlook-Clients, erweiterte Nachrichtenfluss Regeln und DLP-Richtlinie | Ja-Nachrichtenfluss Regeln und DLP-Richtlinie mit nur verschlüsseln oder nicht Weiterleitungs Schutz |
+| Automatisches Bezeichnen <br> Organisation möchte automatisch e-Mail-Anlagen mit bestimmten vertraulichen Inhalten und/oder bestimmten Empfängern schützen. | Recommend (E5) – automatische Kennzeichnung in Exchange-und Outlook-Clients, erweiterte Nachrichtenfluss Regeln und DLP-Richtlinie | Ja-Nachrichtenfluss Regeln und DLP-Richtlinie mit nur verschlüsseln oder nicht Weiterleitungs Schutz |
 ||||
 
 Es gibt auch Unterschiede bei den Benutzer-und Administrator-Erfahrungen zwischen diesen beiden Methoden.

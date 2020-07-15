@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre geschäftlichen e-Mails und Daten vor Cyber-Bedrohungen, einschließlich Ransomware, Phishing und böswilligen Anlagen. '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005630"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138290"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 for Business-Plänen
 
@@ -155,7 +155,7 @@ Um eine e-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Save** aus.
     
 |**Einstellung**|**Benutzer vor dem Öffnen von Anlagen von Office-Dateien warnen**|**Blockieren von Dateitypen, die Ransomware oder anderen bösartigen Code enthalten könnten**|
 |:-----|:-----|:-----|
@@ -191,7 +191,7 @@ So erstellen Sie eine e-Mail-Transportregel:
     
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Lassen Sie die restlichen Einstellungen standardmäßig unverändert, es sei denn, Sie möchten diese ändern.
     
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Save** aus.
     
 |**Einstellung**|**Ablehnen automatischer Weiterleitung von e-Mails an externe Domänen**|
 |:-----|:-----|
@@ -252,7 +252,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Sc
     
 4. Wählen Sie auf der Seite Anti-Phishing die Option **+ Create**aus. Ein Assistent wird gestartet, der Sie schrittweise durch die Definition ihrer Anti-Phishing-Richtlinie führt.
     
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter [Learn about ATP Anti-Phishing Policy Options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
     
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **Diese Richtlinie erstellen** oder **Speichern**(je nach Bedarf) aus.
 
@@ -269,7 +269,7 @@ Um eine ATP-Anti-Phishing-Richtlinie zu erstellen, sehen Sie sich ein [kurzes Sc
 |Angewendet auf  <br/> |Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, beispielsweise contoso.com, in der Liste, und wählen Sie dann **Hinzufügen**aus. Wählen Sie **Fertig** aus.  <br/> |
 |
    
-Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: Schutz vor böswilligen Anlagen und Dateien mit sicheren ATP-Anlagen
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Um eine Richtlinie für eine ATP-sichere Anlage zu erstellen, sehen Sie sich ein
 |Angewendet auf  <br/> |Die Empfängerdomäne ist. . . Wählen Sie Ihre Domäne aus.  <br/> |
 |
    
-Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinien zum Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: Schutz vor Phishing-Angriffen mit ATP-Safe-Links
 <a name="phishingatp"> </a>
@@ -331,7 +331,7 @@ So ändern Sie die Standardrichtlinie:
 
 3. Wählen Sie unter **Einstellungen für Inhalte mit Ausnahme von e-Mail**die Option **Office 365 Anwendungen**aus, **verfolgen Sie nicht nach, wann Benutzer auf sichere Links klicken**, und **lassen Sie keine Benutzer durch sichere Links zur ursprünglichen URL klicken**.
     
-4. Klicken Sie auf **Speichern**. 
+4. Wählen Sie **Save** aus. 
     
 So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne vorgesehen ist:
   
@@ -339,7 +339,7 @@ So erstellen Sie eine neue Richtlinie, die für alle Empfänger in Ihrer Domäne
     
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
     
-3. Klicken Sie auf **Speichern**. 
+3. Wählen Sie **Save** aus. 
     
 |**Einstellung oder Option**|**Empfohlene Einstellung** <br/>|
 |:-----|:-----|

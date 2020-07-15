@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Ermitteln Sie die Datenschutzbestimmungen, die relevanten Szenarien, ihre Bereitschaft und die Typen vertraulicher Informationen in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854352"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126606"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente mit Microsoft 365
 
@@ -98,6 +98,8 @@ Daten werden auch im Laufe der Zeit verschoben, wenn Sie verarbeitet, verfeinert
 Um die Datenschutzbestimmungen zu erfüllen, können Sie sich nicht auf allgemeine Vorstellungen verlassen, in denen Sie denken, dass persönliche Daten jetzt oder in Zukunft vorhanden sein könnten. Die Datenschutzbestimmungen erfordern, dass Organisationen nachweisen, dass Sie wissen, wo sich personenbezogene Daten fortlaufend befinden. Auf diese Weise ist es wichtig, dass Sie einen Anfangssnapshot aller Datenquellen für die mögliche Speicherung persönlicher Informationen, einschließlich Ihrer Microsoft 365-Umgebung, und Mechanismen für die laufende Überwachung und Erkennung erstellen.
 
 Wenn Sie die allgemeine Bereitschaft und das Risiko, das mit den Datenschutzbestimmungen verbunden ist, noch nicht bewertet haben, verwenden Sie das folgende 3-Schritte-Framework für die ersten Schritte. 
+
+![Schritte zum Bewerten der allgemeinen Bereitschaft und des Risikos im Zusammenhang mit Datenschutzbestimmungen](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >Dieser Artikel und sein Inhalt sind nicht für juristische Beratungsdienste gedacht. Es bietet lediglich einige grundlegende Anleitungen und Links zu Tools, die in den frühen Phasen der Bewertung hilfreich sein können.
@@ -178,7 +180,7 @@ Organisationen, die anderen Datenschutzbestimmungen unterliegen, wie CCPA in den
 
 Die dsgvo-Bewertung umfasst die folgenden Abschnitte:
 
-| | |
+| Abschnitt | Beschreibung |
 |:-------|:-----|
 | Governance | <ol><li>Wird in ihrer Datenschutzrichtlinie explizit angegeben, welche Daten Informationen verarbeitet werden? </li><li>Führen Sie regelmäßig datenschutzfolgenabschätzungen (PIAs) aus? </li><li> Verwenden Sie ein Tool zum Verwalten von persönlichen Informationen (PI)? </li><li> Haben Sie die Befugnis, Geschäfte mit Pi-Daten auf einem bestimmten Individuum durchzuführen? Verfolgen Sie die Einwilligung für Daten? </li><li> Verfolgen, implementieren und verwalten Sie Überwachungssteuerelemente? Überwachen Sie Datenlecks? </li></ol>|
 | Löschen und Benachrichtigung | <ol><li>Geben Sie explizit Anweisungen dazu, wie auf die Daten von Benutzern zugegriffen werden kann? </li><li> Haben Sie dokumentierte Prozesse zur Bearbeitung der Zustimmung zur Ablehnung? </li><li> Haben Sie einen automatisierten Löschvorgang für Daten? </li><li>   Haben Sie einen Prozess zum Überprüfen der Identität, wenn Sie sich mit einem Kunden beschäftigen? </li></ol>|

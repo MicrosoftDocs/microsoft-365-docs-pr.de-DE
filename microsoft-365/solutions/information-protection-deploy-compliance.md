@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: Hier erfahren Sie, wie Sie das Endergebnis und den Compliance-Manager verwenden, um Ihr Schutzniveau für personenbezogene Daten zu verbessern.
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: In diesem Artikel erfahren Sie, wie Sie mit der Kompatibilitätsbewertung und dem Compliance-Manager ihr Schutzniveau für personenbezogene Daten verbessern.
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016367"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126551"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Verwenden von Kompatibilitätsbewertung und Compliance-Manager zum Verwalten von Verbesserungs Aktionen
 
 Microsoft Compliance Score and Compliance Manager kann zusammen verwendet werden, um Verbesserungen im Zusammenhang mit Datenschutzbestimmungen wie der [allgemeinen Datenschutzverordnung (dsgvo)](../compliance/gdpr.md), [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), dem HIPAA-HITECH (US Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD) zu verwalten. 
 
 Dieser Artikel enthält Anleitungen für die Verwendung dieser Tools für Datenschutzzwecke.
+
+![Kompatibilitätsbewertung und Compliance-Manager zum Verwalten von Verbesserungs Aktionen](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen. Es liegt an Ihnen, die Wirksamkeit dieser Empfehlungen in ihren regulatorischen Umgebungen vor der Implementierung zu bewerten. Compliance-Manager-Empfehlungen sollten nicht als Garantie für die Compliance interpretiert werden.
