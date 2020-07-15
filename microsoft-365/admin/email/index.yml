@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Verwalten von E-Mail und Kalendern
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu helfen, oder sehen Sie im Navigationsbereich auf der linken Seite eine vollständige Liste.
+title: Verwalten von E-Mails und Kalendern
+summary: Sehen Sie sich diese Ressourcen an, um Administratoren bei allgemeinen Aufgaben zu unterstützen. Die komplette Liste finden Sie im Navigationsbereich auf der linken Seite.
 metadata:
-  title: Verwalten von E-Mail und Kalendern
-  description: Verwalten von e-Mail-Einstellungen, Verteilergruppen, Sicherheitseinstellungen und Einrichten von freigegebenen Postfächern
+  title: Verwalten von E-Mails und Kalendern
+  description: Verwalten Sie E-Mail-Einstellungen, Verteilergruppen, Sicherheitseinstellungen und richten Sie freigegebene Postfächer ein.
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,24 +13,24 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780217"
 landingContent:
-- title: Verwalten von e-Mails
+- title: Verwalten von E-Mails
   linkLists:
   - linkListType: overview
     links:
-    - text: Verwalten von Benutzer-e-Mail-Einstellungen
+    - text: Verwalten von Benutzer-E-Mail-Einstellungen
       url: office-365-user-email-settings.md
     - text: Info zu E-Mail-Zusammenarbeit
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
-    - text: Hinzufügen eines weiteren e-Mail-Alias
+    - text: Hinzufügen eines weiteren E-Mail-Alias
       url: add-another-email-alias-for-a-user.md
-    - text: Verwenden Sie Ihre benutzerdefinierte Domäne
+    - text: Verwenden einer benutzerdefinierten Domäne
       url: change-email-address.md
     - text: Einrichten der E-Mail-Weiterleitung
       url: configure-email-forwarding.md
@@ -38,11 +38,11 @@ landingContent:
       url: create-edit-or-delete-a-security-group.md
     - text: Migrieren von E-Mail und Kontakten zu Office 365
       url: ../setup/migrate-email-and-contacts-admin.md
-- title: Verwalten freigegebener Postfächer
+- title: Verwalten von freigegebenen Postfächern
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Konfigurieren von Einstellungen für freigegebene Postfächer
+    - text: Konfigurieren der Einstellungen für das freigegebene Postfach
       url: configure-a-shared-mailbox.md
     - text: Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
       url: convert-user-mailbox-to-shared-mailbox.md
@@ -50,11 +50,11 @@ landingContent:
       url: remove-license-from-shared-mailbox.md
     - text: Beheben von Problemen mit freigegebenen Postfächern
       url: resolve-issues-with-shared-mailboxes.md
-- title: Kalender verwalten
+- title: Verwalten von Kalendern
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Verwalten von Kalendern und Kontakten in Outlook
+    - text: Verwalten Ihres Kalenders und Ihrer Kontakte in Outlook
       url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
   - linkListType: video
     links:
@@ -66,9 +66,9 @@ landingContent:
     links:
     - text: Suchen und Beheben von Problemen mit der E-Mail-Zustellung
       url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
-    - text: Beheben und finden von Problemen nach dem Hinzufügen Ihrer Domänen-oder DNS-Einträge
+    - text: Beheben und Suchen von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
       url: ../get-help-with-domains/find-and-fix-issues.md
-    - text: Wiederherstellen gelöschter e-Mails in einem Benutzerpostfach
+    - text: Wiederherstellen gelöschter E-Mails im Postfach eines Benutzers
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: Beheben von Outlook-Verbindungsproblemen in Microsoft 365 und Exchange Online
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

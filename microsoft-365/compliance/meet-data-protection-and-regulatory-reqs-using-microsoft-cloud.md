@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815596"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016256"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
 > [!NOTE]
-> Diese Dokumentation beschreibt eine frühere Version dieses Produkts. Benutzern wird dringend davon abgeraten, diese Version von Compliance Manager zu verwenden; stattdessen wird empfohlen, die neue [Microsoft Compliance-Bewertung](compliance-score.md) zu verwenden.
+> Diese Dokumentation beschreibt eine frühere Version dieses Produkts. Benutzern wird *dringend abgeraten, diese Version von Compliance Manager*zu verwenden. **Wenn Sie die aktuelle Vorschauversion von Compliance Manager verwenden, lesen Sie die [Dokumentation zum Compliance Manager (Vorschau)](working-with-compliance-manager.md).**
 
  *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
   
@@ -227,7 +227,7 @@ Durch die Auswertung jedes Steuerelements anhand dieser Faktoren bestimmen wir d
   
  **Bedrohung**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Erforderlich** <br/> |**Frei** <br/> |
 |**Präventiv** <br/> |Hohes Risiko  <br/> |Mittleres Risiko  <br/> |
@@ -244,7 +244,7 @@ Bedrohung bezieht sich auf alles, was eine Gefahr für den grundlegenden, univer
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Intern**<br/>||**Extern**<br/>||||
+|<br>|**Intern**<br/>|<br>|**Extern**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Bösartig*<br/>|*Unbeabsichtigt*<br/>|*Bösartig*<br/>|*Unbeabsichtigt*<br/>|||
 |**Vertraulichkeit**<br/>|(H, M oder N)  <br/> |(H, M oder N)  <br/> |(H, M oder N)  <br/> |(H, M oder N)|

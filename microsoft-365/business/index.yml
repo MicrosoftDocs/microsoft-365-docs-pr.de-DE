@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium-Ressourcen
-summary: Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Es integriert Ihre bevorzugten Office-Produktivitäts-apps und-Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
+summary: Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Er enthält Ihre bevorzugten Office-Produktivitäts-Apps und -Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium-Ressourcen
-  description: description
+  description: Beschreibung
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -14,24 +14,24 @@ metadata:
   ms.date: 10/01/2019
   ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44786190"
 productDirectory:
-  title: Sichere Remote Arbeit mit Microsoft 365 Business Premium
+  title: Sichere Remotearbeit mit Microsoft 365 Business Premium
   items:
-  - title: Read
+  - title: Lesen
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Beste Möglichkeiten zum Aktivieren sicherer Remote-Arbeit mit Microsoft 365 Business Premium.
+    summary: Bewährte Methoden zum Ermöglichen sicherer Remotearbeit mit Microsoft 365 Business Premium.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
-  - title: Kostenloses Partner Kit abrufen
+  - title: Erwerben des kostenlosen Partner-Kits
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Praktische Anleitungen und gehen Sie zu Markt Ressourcen für Partner für die Sicherung von Remote-Arbeit.
+    summary: Praktische Anleitungen und Markteinführungsressourcen für Partner zum Sichern der Remotearbeit.
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Was sind die Neuerungen?
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 kommt zu Microsoft 365 Business Premium!
+    summary: Azure AD Premium P1 kommt zu Microsoft 365 Business Premium hinzu!
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
@@ -42,7 +42,7 @@ conceptualContent:
       text: Übersicht
     - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 Business Premium-Schulung
+      text: Microsoft 365 Business Premium-Schulungen
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: Pläne im Vergleich
@@ -52,7 +52,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: Häufig gestellte Fragen
-  - title: Microsoft 365 Business Premium einrichten
+  - title: Einrichten von Microsoft 365 Business Premium
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -82,8 +82,8 @@ conceptualContent:
       text: Technische Grundlagen
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
       itemType: download
-      text: Prüfliste für die Sicherung von Remoteaufgaben
-  - title: Verwalten von Benutzern
+      text: Checkliste zum Sichern der Remotearbeit
+  - title: Benutzer verwalten
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
       itemType: how-to-guide
@@ -189,7 +189,7 @@ conceptualContent:
     links:
     - url: sign-up.md
       itemType: get-started
-      text: Registrieren für Microsoft 365 Business Premium
+      text: Anmelden bei Microsoft 365 Business Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
       text: Migrieren von Microsoft 365 Business Standard

@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto mit den in Microsoft 365 verfügbaren Tools erkennen und darauf reagieren.
-ms.openlocfilehash: 8a7bb98432529bfca70764314d251810d3cdb2a4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9d7b1dbcd9b54ca9b1bdca9e4a800be24286654
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819485"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094810"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
@@ -98,7 +98,7 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 - Wenn Ihre lokale Identität mit Microsoft 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
 
 > [!TIP]
-> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie unter „Einrichten der mehrstufigen Authentifizierung“https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie unter [Einrichten der mehrstufigen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2: Entfernen Sie verdächtige E-Mail-Weiterleitungsadressen.
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818985"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035660"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -335,7 +335,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird.|
 |Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument auf eine Website hoch, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument weist eine Vertraulichkeitsbezeichnung mit höherer Priorität als die Vertraulichkeitsbezeichnung der Website auf. So wird beispielsweise ein Dokument, das als vertraulich bezeichnet wird, auf eine Website hochgeladen, die mit "Allgemein" bezeichnet ist. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf ein Dokument angewendete Vertraulichkeitsbezeichnung eine niedrigere Priorität hat als die auf die Website angewendete Vertraulichkeitsbezeichnung. So wird beispielsweise ein Dokument, das als Allgemein bezeichnet wird, auf eine Website hochgeladen, die mit Vertraulich bezeichnet ist. Weitere Informationen über die Priorität von Vertraulichkeitsbezeichnungen finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware in einer Datei erkannt|FileMalwareDetected|Der SharePoint-Virenschutz erkennt Schadsoftware in einer Datei.|
-|Auschecken einer Datei verworfen|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|Auschecken einer Datei verworfen|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Datei heruntergeladen|FileDownloaded|Der Benutzer lädt ein Dokument von einer Website herunter.|
 |Datei geändert|FileModified|Der Benutzer oder das Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments auf einer Website.|
 |(keine)|FileModifiedExtended|Dies bezieht sich auf die Aktivität "Datei geändert" (FileModified). Wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) eine Datei ständig ändert, wird ein FileModifiedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileModifiedExtended-Ereignissen dient dazu, die Anzahl von FileModified-Ereignissen zu verringern, die bei ständiger Änderung einer Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileModified-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileModified-Ereignis konzentrieren können.|
@@ -368,7 +368,7 @@ Nachstehend sind einige weitere Szenarien aufgeführt, in denen "app@sharepoint"
 
 - Compliance-Features. Wenn ein Administrator Compliance-Features implementiert, z. B. Aufbewahrungsrichtlinien, eDiscovery-Aufbewahrungsvorgaben und automatisch angewendete Vertraulichkeitsbezeichnungen.
 
-In diesen und weiteren Szenarios werden Sie außerdem feststellen, dass mehrere Überwachungsdatensätze mit "app@sharepoint" als angegebenen Benutzer innerhalb eines sehr kurzen Zeitrahmens erstellt wurden, häufig sogar innerhalb weniger Sekunden. Dies bedeutet ebenfalls, dass sie wahrscheinlich von demselben vom benutzerinitiierten Vorgang ausgelöst wurden. Die Felder "ApplicationDisplayName" und "EventData" im Überwachungsdatensatz helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, durch das/den dieses Ereignis ausgelöst wurde.
+In diesen und weiteren Szenarios werden Sie außerdem feststellen, dass mehrere Überwachungsdatensätze mit "app@sharepoint" als angegebenen Benutzer innerhalb eines sehr kurzen Zeitrahmens erstellt wurden, häufig innerhalb weniger Sekunden. Dies bedeutet ebenfalls, dass sie wahrscheinlich von demselben vom benutzerinitiierten Vorgang ausgelöst wurden. Die Felder "ApplicationDisplayName" und "EventData" im Überwachungsdatensatz helfen Ihnen möglicherweise, das Szenario oder den Dienst zu ermitteln, durch das/den dieses Ereignis ausgelöst wurde.
 
 ### <a name="folder-activities"></a>Ordneraktivitäten
 
@@ -704,34 +704,7 @@ Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen inne
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams-Aktivitäten
 
-In der folgenden Tabelle sind die in Microsoft Teams von Benutzern und Administratoren ausgeführten Aktivitäten aufgelistet, die im Überwachungsprotokoll protokolliert werden. Microsoft Teams ist ein Arbeitsbereich in Office 365, der das Chatten ermöglicht. Hier werden die Unterhaltungen, Besprechungen, Dateien und Notizen eines Teams an einem Ort zusammengeführt. Weitere Informationen und Links zu Hilfethemen finden Sie unter:
-
-- [Häufig gestellte Fragen zu Microsoft Teams – Administratorhilfe](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Hilfe zu Microsoft Teams](https://support.office.com/teams)
-
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
-|:-----|:-----|:-----|
-|Bot zum Team hinzugefügt|BotAddedToTeam|Ein Benutzer fügt einem Team einen Bot hinzu.|
-|Kanal hinzugefügt|ChannelAdded|Ein Benutzer fügt einem Team einen Kanal hinzu.|
-|Connector hinzugefügt|ConnectorAdded|Ein Benutzer fügt einen Connector zu einem Kanal hinzu.|
-|Hinzugefügte Mitglieder|MemberAdded|Ein Teambesitzer fügt Mitglieder zu einem Team-, Kanal- oder Gruppenchat hinzu.|
-|Registerkarte hinzugefügt|TabAdded|Ein Benutzer fügt einem Kanal eine Registerkarte hinzu.|
-|Kanaleinstellung geändert|ChannelSettingChanged|Der Vorgang "ChannelSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Ändert den Namen eines Teamkanals (**Kanalname**). <br/><br/>• Ändert die Beschreibung eines Teamkanals (**Kanalbeschreibung**).|
-|Organisationseinstellung geändert|TeamsTenantSettingChanged|Der Vorgang "TeamsTenantSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator (über das Microsoft 365 Admin Center) ausgeführt werden. Beachten Sie, dass sich diese Aktivitäten auf die organisationsweiten Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administratoreinstellungen für Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Aktiviert bzw. deaktiviert Microsoft Teams für die Organisation (**Microsoft Teams**). <br/><br/>• Aktiviert bzw. deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation (**Skype for Business Interoperability**). <br/><br/>• Aktiviert oder deaktiviert die Organigrammansicht in Microsoft Teams-Clients (Organigrammansicht **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen zu planen (** private Besprechung planen **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanalbesprechungen zu planen (Kanalbesprechungsplanung**).  <br/><br/>• Aktiviert oder deaktiviert Videoanrufe in Teambesprechungen (Video für Skype-Besprechungen **). <br/><br/>• Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-Meetups für die Organisation (** Bildschirmfreigabe für Skype-Besprechungen **). <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (so genannte Giphys) zu Teamunterhaltungen hinzuzufügen (animierte Bilder**). <br/><br/>• Ändert die Inhaltsbewertungseinstellung für die Organisation (**Inhaltsbewertung**). Die Inhaltsbewertung beschränkt, welche Arten animierter Bilder in Unterhaltungen angezeigt werden können. <br/><br/>• Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (sogenannte „benutzerdefinierte Memes“) aus dem Internet zu Teamunterhaltungen hinzuzufügen (anpassbare Bilder aus dem Internet **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (sogenannte "Sticker") zu Teamunterhaltungen hinzuzufügen (** bearbeitbare Bilder **).<br/><br/>• aktiviert bzw. deaktiviert die Fähigkeit, dass Teammitglieder Bots in Microsoft Teams-Chats und -Kanälen (organisationsweite Bots) verwenden können. <br/><br/>• aktiviert bestimmte Bots für Microsoft Teams. Dazu gehört nicht der "T-Bot", bei dem es sich um den Hilfe-Bot für Teams handelt, der verfügbar ist, wenn Bots für die Organisation aktiviert sind (** einzelne Bots **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten hinzuzufügen (** Erweiterungen oder Registerkarten **). <br/><br/>• aktiviert oder deaktiviert das Side-Loading für Microsoft Teams-eigene Bots (** Side-Loading von Bots **). <br/><br/>• aktiviert oder deaktiviert die Möglichkeit für Benutzer, E-Mail-Nachrichten an einen Microsoft Teams-Kanal zu senden (** Kanal-E-Mail**).|
-|Rolle von Mitgliedern im Team geändert|MemberRoleChanged|Ein Teambesitzer ändert die Rolle der Mitglieder in einem Team. Die folgenden Werte geben den Rollentyp an, der dem Benutzer zugewiesen wurde. <br/><br/> **1** - Gibt die Besitzerrolle an.<br/>**2** - Gibt die Mitgliedsrolle an. <br/>**3** - Gibt die Gastrolle an. <br/><br/> Die Eigenschaft „Mitglieder“ enthält auch den Namen Ihrer Organisation und die E-Mail-Adresse des Mitglieds.|
-|Teameinstellung geändert|TeamSettingChanged|Der Vorgang "TeamSettingChanged" wird protokolliert, wenn die folgenden Aktivitäten von einem Teambesitzer ausgeführt werden. Für jede dieser Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** eine Beschreibung der geänderten Einstellung (nachstehend in Klammern gesetzt) angezeigt. <br/><br/>• Ändert die Art des Zugriffs für ein Team. Teams können als „Privat“ oder „Öffentlich" festgelegt werden (**Art des Teamzugriffs**). Wenn ein Team privat ist (Standardeinstellung), haben Benutzer nur nach Einladung Zugriff auf das Team. Wenn ein Team öffentlich ist, kann es von allen Benutzern gefunden werden. <br/><br/>• Ändert die Informationsklassifizierung eines Teams (**Teamklassifizierung**). <br/> Teamdaten können beispielsweise als mit hohen, mittleren oder niedrigen geschäftlichen Auswirkungen klassifiziert werden.<br/><br/>• Ändert den Namen eines Teams (**Teamname**). <br/><br/>• Ändert die Beschreibung eines Teams (Teambeschreibung). <br/><br/>• Änderungen an Einstellungen für das Team. Ein Teambesitzer kann in einem Teams-Client auf diese Einstellungen zugreifen, indem er mit der rechten Maustaste auf ein Team klickt, anschließend auf **Team verwalten** klickt und dann die Registerkarte **Einstellungen** auswählt. Für solche Aktivitäten wird in den Suchergebnissen für das Überwachungsprotokoll in der Spalte **Element** der Name der geänderten Einstellung angezeigt.|
-|Team erstellt|TeamCreated|Ein Benutzer erstellt ein Team.|
-|Kanal gelöscht|ChannelDeleted|Ein Benutzer löscht einen Kanal aus einem Team.|
-|Team gelöscht|TeamDeleted|Ein Teambesitzer löscht ein Team.|
-|Bot aus Team entfernt|BotRemovedFromTeam|Ein Benutzer entfernt einen Bot aus einem Team.|
-|Connector entfernt|ConnectorRemoved|Ein Benutzer entfernt einen Connector aus einem Kanal.|
-|Entfernte Mitglieder|MemberRemoved|Ein Teambesitzer entfernt Mitglieder aus einem Team-, Kanal- oder Gruppenchat.|
-|Registerkarte entfernt|TabRemoved|Ein Benutzer entfernt eine Registerkarte aus einem Kanal.|
-|Connector aktualisiert|ConnectorUpdated|Ein Benutzer hat in einem Kanal einen Connector geändert.|
-|Registerkarte aktualisiert|TabUpdated|Ein Benutzer hat in einem Kanal eine Registerkarte geändert.|
-|Benutzer bei Teams angemeldet|TeamsSessionStarted|Ein Benutzer meldet sich bei einem Microsoft Teams-Client an. Dieses Ereignis erfasst keine Tokenaktualisierungsaktivitäten.|
-||||
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Teams durchsuchen. Microsoft Teams ist ein Arbeitsbereich in Office 365, der das Chatten ermöglicht. Hier werden die Unterhaltungen, Besprechungen, Dateien und Notizen eines Teams an einem Ort zusammengeführt. Eine Beschreibung der-App-Aktivitäten für Schicht-Aktivitäten finden Sie unter [Durchsuchen des Überwachungsprotokolls nach Ereignissen in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams-Aktivitäten im Gesundheitswesen
 
@@ -813,7 +786,7 @@ In der folgenden Tabelle sind die in Microsoft Forms von Benutzern und Administr
 Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusätzliche Aktivitätsparameter.
 
 > [!NOTE]
-> Wenn eine Forms-Aktivität durch einen Mitautor oder anonymen Antwortenden ausgeführt wird, wird sie etwas anders protokolliert. Weitere Informationen hierzu finden Sie im Abschnitt [Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+> Wenn eine Forms-Aktivität durch einen Mitautor oder anonymen Antwortenden ausgeführt wird, wird sie etwas anders protokolliert. Weitere Informationen hierzu finden Sie im Abschnitt [Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -827,8 +800,8 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Exportiertes Formular|ExportForm|Der Formularbesitzer exportiert Ergebnisse nach Excel. <br><br>Eigenschaft ExportFormat: Zeichenfolge gibt an, ob die Excel-Datei heruntergeladen wurde oder online verfügbar ist.|
 |Freigabe von Formularkopie zulassen|AllowShareFormForCopy|Der Formularbesitzer erstellt einen Vorlagen-Link, um das Formular für andere Benutzer freizugeben. Dieses Ereignis wird protokolliert, wenn der Formularbesitzer klickt, um eine Vorlagen-URL zu generieren.|
 |Freigabe von Formularkopie nicht zulassen|DisallowShareFormForCopy|Der Formularbesitzer löscht den Vorlagen-Link.|
-|Formular-Mitautor hinzugefügt|AddFormCoauthor|Ein Benutzer verwendet einen Link für die Zusammenarbeit, um beim Entwerfen/Anzeigen von Antworten zu helfen. Dieses Ereignis wird protokolliert, wenn ein Benutzer eine URL für die Zusammenarbeit verwendet (nicht, wenn die URL für die Zusammenarbeit zum ersten Mal generiert wird).|
-|Formular-Mitautor entfernt|RemoveFormCoauthor|Der Formularbesitzer löscht einen Link für die Zusammenarbeit.|
+|Formular-Koautor hinzugefügt|AddFormCoauthor|Ein Benutzer verwendet einen Link für die Zusammenarbeit, um beim Entwerfen/Anzeigen von Antworten zu helfen. Dieses Ereignis wird protokolliert, wenn ein Benutzer eine URL für die Zusammenarbeit verwendet (nicht, wenn die URL für die Zusammenarbeit zum ersten Mal generiert wird).|
+|Formular-Koautor entfernt|RemoveFormCoauthor|Der Formularbesitzer löscht einen Link für die Zusammenarbeit.|
 |Angezeigte Antwortseite|ViewRuntimeForm|Der Benutzer hat eine Antwortseite für die Anzeige geöffnet. Dieses Ereignis wird protokolliert, und zwar unabhängig davon, ob der Benutzer eine Antwort absendet oder nicht.|
 |Erstellte Antwort|CreateResponse|Ähnlich wie beim Empfang einer neuen Antwort.  Ein Benutzer hat eine Antwort auf ein Formular gesendet. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
 |Aktualisierte Antwort|UpdateResponse|Der Formularbesitzer hat einen Kommentar oder eine Bewertung für ein Quiz aktualisiert. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
@@ -846,17 +819,17 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Gesendete Antwort|SubmitResponse|Ein Benutzer sendet eine Antwort auf ein Formular. <br><br>Eigenschaft IsInternalForm: Boolescher Wert gibt an, ob der Responder der gleichen Organisation angehört wie der Formularbesitzer.|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Formular-Aktivitäten, die von Koautoren und anonym Antwortenden durchgeführt werden
 
-Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und Analysieren von Antworten. Ein Mitwirkender an einem Formular wird als *Mitautor* bezeichnet. Mitautoren können alles erledigen, was der Besitzer eines Formulars tun kann, außer das Löschen oder Verschieben eines Formulars. Forms ermöglichen Ihnen außerdem, ein Formular zu erstellen, auf das anonym geantwortet werden kann. Dies bedeutet, dass der Antwortende nicht bei Ihrer Organisation angemeldet sein muss, um auf ein Formular zu antworten. 
+Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und Analysieren von Antworten. Ein Mitwirkender an einem Formular wird als *Koautor* bezeichnet. Koautoren können alles erledigen, was der Besitzer eines Formulars tun kann, außer das Löschen oder Verschieben eines Formulars. Forms ermöglichen Ihnen außerdem, ein Formular zu erstellen, auf das anonym geantwortet werden kann. Dies bedeutet, dass der Antwortende nicht bei Ihrer Organisation angemeldet sein muss, um auf ein Formular zu antworten. 
 
-In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informationen im Überwachungsdatensatz für Aktivitäten beschrieben, die von Mitautoren und anonymen Antwortenden ausgeführt wurden.
+In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informationen im Überwachungsdatensatz für Aktivitäten beschrieben, die von Koautoren und anonym Antwortenden ausgeführt wurden.
 
 |**Aktivitätstyp**|**Interner oder externer Benutzer**|**Protokollierte Benutzer-ID**|**Angemeldet bei Organisation**|**Forms-Benutzertyp**|
 |:-----|:-----|:-----|:-----|:-----|
-|Gemeinsame Dokumenterstellungsaktivitäten|Intern|UPN|Organisation des Formularbesitzers|Mitautor|
-|Gemeinsame Dokumenterstellungsaktivitäten|Extern|UPN<br>|Organisation des Mitautors<br>|Mitautor|
-|Gemeinsame Dokumenterstellungsaktivitäten|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Mitautor|
+|Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
+|Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
+|Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
 |Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
