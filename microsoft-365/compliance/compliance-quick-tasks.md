@@ -75,7 +75,7 @@ Eine Schritt-für-Schritt-Anleitung zum Konfigurieren der privilegierten Zugriff
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>Aufgabe 6: klassifizieren und schützen von vertraulichen Daten
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie können zwischen verschiedenen Geräten, Apps und Diensten hin- und herbewegt werden. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 
 Mit [Sensitivitäts Bezeichnungen](sensitivity-labels.md) können Sie die Daten Ihrer Organisation klassifizieren und schützen und gleichzeitig sicherstellen, dass die Produktivität der Benutzer und ihre Zusammenarbeit nicht behindert werden. Verwenden von Sensitivitäts Bezeichnungen zur Erzwingung von Verschlüsselungs-und Nutzungseinschränkungen wenden Sie visuelle Markierungen an, und schützen Sie Informationen über Plattformen und Geräte hinweg, lokal und in der Cloud.
 
