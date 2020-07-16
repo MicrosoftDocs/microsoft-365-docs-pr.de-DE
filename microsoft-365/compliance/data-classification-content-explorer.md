@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327851"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127042"
 ---
 # <a name="get-started-with-content-explorer"></a>Erste Schritte mit dem Inhalts-Explorer
 
@@ -92,7 +92,7 @@ Vertraulichkeitsbezeichnungen müssen für Dateien in SharePoint und OneDrive ak
 
 ### <a name="retention-labels"></a>Aufbewahrungsbezeichnungen
 
-Mithilfe einer [Aufbewahrungbezeichnung](labels.md) können Sie festlegen, wie lange ein entsprechend gekennzeichnetes Element aufbewahrt wird, und welche Schritte vor dem Löschen ausgeführt werden müssen. Aufbewahrungbezeichnungen können manuell oder automatisch über Richtlinien angewendet werden. Sie können Ihre Organisation dabei unterstützen, rechtliche und behördliche Vorschriften einzuhalten.
+Mithilfe einer [Aufbewahrungbezeichnung](retention.md) können Sie festlegen, wie lange ein entsprechend gekennzeichnetes Element aufbewahrt wird, und welche Schritte vor dem Löschen ausgeführt werden müssen. Aufbewahrungbezeichnungen können manuell oder automatisch über Richtlinien angewendet werden. Sie können Ihre Organisation dabei unterstützen, rechtliche und behördliche Vorschriften einzuhalten.
 
 ### <a name="how-to-use-content-explorer"></a>Verwendung des Inhalts-Explorers
 
@@ -139,8 +139,7 @@ Sie können nach folgendem suchen:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Aufbewahrungsbezeichnungen](labels.md)
+- [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationstypen.md](sensitive-information-type-entity-definitions.md)
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Übersicht über die Verhinderung von Datenverlust](data-loss-prevention-policies.md)

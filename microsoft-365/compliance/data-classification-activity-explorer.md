@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Aktivitäten-Explorer rundet die Funktionalität der Datenklassifizierungsfunktion ab, indem Sie die Aktionen, die Benutzer mit Ihren beschrifteten Inhalten durchführen, anzeigen und filtern können.
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327841"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126644"
 ---
 # <a name="get-started-with-activity-explorer"></a>Erste Schritte mit dem Aktivitäten-Explorer
 
@@ -75,7 +75,7 @@ Wenn Sie wissen, welche Aktionen mit Ihren vertraulichen beschrifteten Inhalten 
 > Der Aktivitäts-Explorer überwacht derzeit keine Aufbewahrungsaktivitäten für Exchange Online.
 
 ## <a name="see-also"></a>Siehe auch
-- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Aufbewahrungsbezeichnungen](labels.md)
-- [Entitätsdefinitionen für Typen vertraulicher Informationstypen](sensitive-information-type-entity-definitions.md)
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
+- [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
+- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
+
