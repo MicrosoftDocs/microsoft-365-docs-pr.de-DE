@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 bietet eine Reihe von verschiedenen eDiscovery-Tools, die Sie zum Suchen und Speichern von Inhalten verwenden können, die an unterschiedlichen Orten wie Exchange-Postfächern, SharePoint-und OneDrive für Unternehmen-Websites, Microsoft 365-Gruppen und Skype for Business Unterhaltungen gefunden wurden.
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943430"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148125"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery in Microsoft 365
 
@@ -85,6 +85,10 @@ Die erweiterte eDiscovery-Lösung in Microsoft 365 (auch *Advanced eDiscovery v 
 |[Arbeiten mit Verarbeitungsfehlern](processing-data-for-case.md)|Erfahren Sie mehr über die erweiterte Indizierung und wie Sie die Indizierungsfehler in Inhalten von Freiheits befindenden und nicht-Freiheits geschützten Inhaltsspeicherorten wie Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten beheben können. Sie können Fehler Massen beheben und anschließend korrigierte Dateien in einen Überprüfungs Satz hochladen oder einzelne Verarbeitungsfehler innerhalb eines Überprüfungs Satzes korrigieren.|
 |[Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md)|In diesem Artikel erfahren Sie, wie Sie Inhalte in Freiheits befindenden Inhaltsverzeichnissen suchen und dann relevante Falldaten zu einem Überprüfungs Satzes hinzufügen. Wenn Sie Inhalte in einen Überprüfungs Sätze kopieren, werden die Daten von den ursprünglichen Inhaltsspeicherorten an einen von Microsoft bereitgestellten Azure-Speicherort kopiert. Dadurch wird eine statische Gruppe von Dokumenten für den Überprüfungsprozess bereitgestellt.|
 |[Verwalten von Prüfdateisätzen](managing-review-sets.md)|Informationen zum Überprüfen von Falldaten in einem Überprüfungs Satzes. Dies umfasst das anzeigen, Abfragen, Filtern und Markieren von Dokumenten in einem Überprüfungs Satzes.
-|[Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md)|Hier erfahren Sie, wie Sie die Analyse für die Dokumente in einem Überprüfungs Satzes durchführen. Die Ergebnisse der ausgeführten Analyse umfassen die Erkennung von nahezu Duplizierung, das e-Mail-Threading und die Identifizierung von Designs.|
+|[Analysieren von Daten in einem Prüfdateisatz](analyzing-data-in-review-set.md)|Hier erfahren Sie, wie Sie die Analyse für die Dokumente in einem Überprüfungs Satzes durchführen. Die Ergebnisse der ausgeführten Analyse umfassen die Erkennung von nahezu Duplizierung, das e-Mail-Threading und die Identifizierung von Designs.|
 |[Exportieren von Falldaten](exporting-data-ediscover20.md)|Erfahren Sie mehr über das Exportieren von Daten aus einem Fall für externe Überprüfung.|
 |||
+
+## <a name="roadmap"></a>Roadmap
+
+Um zu sehen, welche eDiscovery-Funktionen gestartet wurden, oder in der Entwicklung sind, besuchen Sie die [Microsoft 365-Roadmap](https://aka.ms/eDiscoRoadMap).

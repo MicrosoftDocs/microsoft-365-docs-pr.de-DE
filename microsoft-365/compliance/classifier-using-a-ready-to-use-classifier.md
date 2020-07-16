@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 enthält eine Reihe integrierter Klassifizierungen, die Sie zum Identifizieren und Beschriften von Inhalten in Ihrer Organisation verwenden können. In diesem Thema wird gezeigt, wie Sie die Verwendung dieser Klassifizierungen vorbereiten.
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126314"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146219"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testen integrierter Klassifizierungen mithilfe von Aufbewahrungs Bezeichnungen (Vorschau)
 
@@ -38,9 +38,9 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 - **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
 - **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
 
-  |Name der Sprache|||||
+  |**Name der Sprache**|||||
   |---------|---------|---------|---------|---------|
-  |ActionScript|C        |C#       |C++     |Clojure  |
+  |ActionScript|C        |C #       |C++     |Clojure  |
   |CoffeeScript|CSS     |OK       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |Perl     |PHP      |Python   |R        |Ruby     |
@@ -106,5 +106,5 @@ Microsoft 365 verfügt über fünf Empfohlene integrierte Klassifizierungen:
 Siehe auch:
 
 - [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)
-- [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](retention.md)
+- [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Automatisches Anwenden einer Aufbewahrungs Bezeichnung zum beibehalten oder Löschen von Inhalten](apply-retention-labels-automatically.md)

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235084"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148114"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Verwalten von Vorfällen in Microsoft-Bedrohungsschutz
 
@@ -44,7 +44,16 @@ In Fällen, in denen Sie bei der Untersuchung bestimmte Alerts von einem Vorfall
 
 ## <a name="edit-incident-name"></a>Name des Vorfalls bearbeiten
 Standardmäßig wird einem Vorfall eine Zahl zugewiesen. Sie können den Namen des Vorfalls ändern, damit er besser mit Ihrer bevorzugten Benennungskonvention übereinstimmt.
- 
+
+> [!TIP]
+> Um einen Überblick zu erhalten, werden bei der automatischen Benennung von Anteilen, die sich derzeit in der öffentlichen Vorschau befinden, Vorfall Namen basierend auf Warnungs Attributen generiert, beispielsweise die Anzahl betroffener Endpunkte, betroffene Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
+>
+> Beispiel: *mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet werden.*
+>
+> Bei Vorfällen, die vor dem Rollout der automatischen Vorfall Benennung vorhanden waren, wird der Name nicht geändert.
+>
+> Erfahren Sie mehr über das [Aktivieren von Vorschaufunktionen](preview.md#turn-on-preview-features).
+
 ## <a name="assign-incidents"></a>Zuweisen von Vorfällen
 Falls ein Vorfall noch nicht zugewiesen wurde, können Sie **Mir zuweisen** auswählen, um sich den Vorfall selbst zuzuweisen. Dies setzt voraus, dass nicht nur der Vorfall, sondern auch alle ihm zugeordneten Alerts in Ihrem Besitz sind.
 
@@ -68,4 +77,3 @@ Hinzugefügte Kommentare werden sofort in diesem Bereich angezeigt.
 
 ## <a name="add-incident-tags"></a>Hinzufügen von Ereigniskategorien
 Sie können einem Vorfall benutzerdefinierte Kategorien hinzufügen, um beispielsweise eine Gruppe von Vorfällen mit einer gemeinsamen Charakteristik zu kennzeichnen. Sie können die Liste der Vorfälle später nach allen Einträgen filtern, die eine bestimmte Kategorie enthalten.
-
