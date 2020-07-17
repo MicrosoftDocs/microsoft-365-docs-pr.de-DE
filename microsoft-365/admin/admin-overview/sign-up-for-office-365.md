@@ -115,9 +115,9 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 - **Die Adresse und Kontaktinformationen für Ihr Abonnement:**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - Das **Land**, in dem die Dienste genutzt werden. Sie können diese Angabe zu einem späteren Zeitpunkt **nicht mehr ändern**, auch nicht während des Registrierungsvorgangs. Stattdessen müssen Sie den Assistenten für die Registrierung erneut starten.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - Die **E-Mail-Adresse** und **Telefonnummer**, damit wir mit Ihnen bei Bedarf Kontakt zu Ihrem Abonnement aufnehmen können. Wenn Sie beispielsweise Ihr Kennwort vergessen haben, würden wir Ihnen anhand dieser Information ein temporäres Kennwort zusenden. Wir senden auch Ihre Abrechnungsinformationen an die von Ihnen angegebene E-Mail-Adresse.
 
     > [!NOTE]
     > Die e-Mail-Adresse, die Sie hier eingeben, unterscheidet sich von Ihrer Microsoft 365-e-Mail-Adresse (Ihr Anmeldename unten). Weil wir auch Ihre Abrechnungsinformationen dorthin senden, empfehlen wir, dass Sie beispielsweise eine E-Mail-Adresse verwenden, die für den Empfang geschäftlicher E-Mails geeignet ist.

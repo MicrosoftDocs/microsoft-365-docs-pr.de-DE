@@ -108,12 +108,12 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
  Mit dem kumulativen Exchange 2013-Update 5 (CU5) eingeführt, werden nun vollumfängliche Hybridbereitstellungen zwischen lokalen Exchange 2013-Organisationen und Office 365-Diensten unterstützt. Dank neuer Verbesserungen des Assistenten für die Hybridkonfiguration unterstützt Exchange 2013 CU5 die folgenden Hybrid-Features zwischen Ihren lokalen und Exchange Online-Organisationen:  
 
 - Sicheres E-Mail-Routing zwischen der lokalen und der Exchange Online-Organisation. 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- E-Mail-Routing mit einem freigegebenen Domänennamespace. Beispielsweise verwenden sowohl lokale als auch Exchange Online-Organisationen die SMTP-Domäne "@contoso.com". 
 - Eine einheitliche globale Adressliste (GAL), auch als „freigegebenes Adressbuch" bezeichnet.  
 - Austausch von Frei/Gebucht- und Kalenderinformationen zwischen der lokalen und der Exchange Online-Organisation.  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- Zentrale Steuerung des eingehenden und ausgehenden Nachrichtenflusses. Sie können alle eingehenden und ausgehenden Exchange Online-Nachrichten über die lokale Exchange-Organisation routen. 
 - Eine einzige Office Outlook Web-App-URL für die lokale und die Exchange Online-Organisation.  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- Möglichkeit zum Verschieben vorhandener lokaler Postfächer in die Exchange Online-Organisation. Exchange Online-Postfächer können bei Bedarf auch in die lokale Organisation zurückverschoben werden.  
 - Zentrale Postfachverwaltung über die lokale Exchange-Verwaltungskonsole.  
 - MailTips, HD-Fotounterstützung für Outlook-Kontakte und die Suche in mehreren Postfächern zwischen lokalen und Exchange Online-Organisationen. 
 - Cloudbasierte Nachrichtenarchivierung für lokale Exchange-Postfächer. 

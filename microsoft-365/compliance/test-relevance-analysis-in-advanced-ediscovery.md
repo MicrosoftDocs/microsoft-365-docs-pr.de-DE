@@ -26,7 +26,7 @@ ms.locfileid: "44936208"
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Test Relevanz Analysis in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Auf der Registerkarte Test in Advanced eDiscovery können Sie die Gesamtqualität der Verarbeitung testen, vergleichen und validieren. Diese Tests werden nach der Batch Berechnung ausgeführt. Durch das Markieren der Dateien in der Sammlung entscheidet ein Experte darüber, ob jede markierte Datei tatsächlich für den Fall relevant ist. 
   

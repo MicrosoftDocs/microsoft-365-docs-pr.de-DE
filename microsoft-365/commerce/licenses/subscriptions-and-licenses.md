@@ -62,7 +62,7 @@ In der folgenden Tabelle wird aufgeführt, was automatisch passiert, wenn Sie ei
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Grundlegendes zu Lizenzen für nicht benutzergebundene Postfächer
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+Sie müssen keine Lizenzen für Ressourcenpostfächer, Raumpostfächer und freigegebene Postfächer zuweisen, es sei denn, das Speicherkontingent von 50 Gigabyte (GB) wird überschritten. Weitere Informationen zu nicht benutzergebundenen Postfächern finden Sie in den folgenden Artikeln:
   
 - [Erstellen eines freigegebenen Postfachs](../../admin/email/create-a-shared-mailbox.md)
 - [Entfernen einer Lizenz aus einem freigegebenen Postfach](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>Wer kann Lizenzen zuweisen?
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+Verschiedene Typen von Administratoren können je nach den ihnen zugewiesenen Rollen auf unterschiedliche Weise mit Lizenzen arbeiten. In der folgenden Tabelle finden Sie eine Liste der häufigsten Optionen. Eine vollständige Liste der Administratorrollen und -berechtigungen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   
 |**Administratorrolle**|**Lizenz zuweisen**|**Aufheben der Zuweisung einer Lizenz**|**Erwerben weiterer Lizenzen**|**Löschen eines Kontos**|
 |:-----|:-----|:-----|:-----|:-----|

@@ -179,7 +179,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel Ihre eigenen Gruppen, 
 
 ## <a name="manage-group-owner-status"></a>Verwalten des Status von Gruppenbesitzern
 
-By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
+Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitzer. Häufig hat eine Gruppe als Sicherungsunterstützung oder aus anderen Gründen mehrere Besitzer. Mitglieder können in den Status eines Besitzers hochgestuft und Besitzer können in den Status eines Mitglieds heruntergestuft werden.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Heraufstufen eines Mitglieds in den Besitzer Status im Admin Center
 

@@ -37,7 +37,7 @@ ms.locfileid: "44816997"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+Dieser Artikel ist für Personen bestimmt, die über ein Microsoft 365 Business-Abonnement verfügen. Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Schritte ausführen zu können.
   
 Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angeführten Gebühren benötigen, sehen Sie sich die ausführliche schrittweise Anleitung unter [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md) an.
   

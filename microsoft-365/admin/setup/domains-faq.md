@@ -82,7 +82,7 @@ Es ist wichtig, dass Sie **nur einen TXT-Eintrag für SPF**haben oder erstellen.
 
 ## <a name="what-is-a-domain-name"></a>Was ist ein Domänenname?
 
-A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
+Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@** -Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem standardmäßigen Internetsuffix, z. B.  *ihrunternehmen.com*  oder  *musikhochschule.edu*  . 
   
 Die Verwendung einer benutzerdefinierten Domäne wie "**Rob \@ contoso.com**" mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
   
@@ -207,7 +207,7 @@ Microsoft 365 erstellt eine Domäne für Sie wie *contoso.onmicrosoft.com*, wenn
     
 - **Sie können Ihre "onmicrosoft.com"-Domäne nicht entfernen.** Microsoft 365 muss ihn beibehalten, da es hinter den Kulissen für Ihr Abonnement verwendet wird. Sie müssen diese Domäne jedoch nicht verwenden, nachdem Sie eine benutzerdefinierte Domäne hinzugefügt haben. 
     
-You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
+Sie können die ursprüngliche Domäne "onmicrosoft.com" auch nach Hinzufügen Ihrer Domäne weiterverwenden. Sie funktioniert nämlich weiterhin für E-Mail und andere Dienste. Wählen Sie also selbst.
   
 ::: moniker-end
 

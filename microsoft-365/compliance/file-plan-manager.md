@@ -19,6 +19,7 @@ description: Der Dateiplan bietet erweiterte Verwaltungsfunktionen für Aufbewah
 ms.custom: seo-marvel-may2020
 ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
 ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/25/2020
 ms.locfileid: "44874905"

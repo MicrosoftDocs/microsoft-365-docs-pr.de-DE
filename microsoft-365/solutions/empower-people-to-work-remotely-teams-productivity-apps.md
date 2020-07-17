@@ -19,6 +19,7 @@ ms.custom: ''
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
 ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
 ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45005962"

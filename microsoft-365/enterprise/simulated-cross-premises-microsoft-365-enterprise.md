@@ -28,7 +28,7 @@ ms.locfileid: "44817071"
 
 *Diese Testumgebungsanleitung kann für Microsoft 365 Enterprise- und Office 365 Enterprise-Testumgebungen verwendet werden.*
 
-This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration. 
+Dieser Artikel führt Sie schrittweise durch das Erstellen einer simulierten Hybrid-Cloudumgebung mit Microsoft Azure unter Verwendung von zwei virtuellen Azure-Netzwerken. Nachfolgend sehen Sie die daraus resultierende Konfiguration. 
   
 ![Phase 3 des simulierten standortübergreifenden virtuellen Netzwerks in der Testumgebung mit dem virtuellen DC2-Computer im XPrem VNet](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
@@ -81,7 +81,7 @@ In dieser Phase erstellen und konfigurieren Sie das neue virtuelle XPrem-Netzwer
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
   
 > [!NOTE]
-> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Melden Sie sich bei Ihrem Azure-Konto mit diesem Befehl an.
   
@@ -95,7 +95,7 @@ Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct names.
+Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „\< and >“ durch den entsprechenden Namen.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -135,7 +135,7 @@ Dies ist Ihre aktuelle Konfiguration.
 
 In dieser Phase erstellen Sie den virtuellen Computer DC2 im virtuellen XPrem-Netzwerk und konfigurieren ihn dann als Replikatdomänencontroller.
   
-First, create a virtual machine for DC2. Run these commands at the Azure PowerShell command prompt on your local computer.
+Erstellen Sie zunächst einen virtuellen Computer für DC2. Führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer aus.
   
 ```powershell
 $rgName="<your resource group name>"
@@ -157,14 +157,14 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Stellen Sie dann über das [Azure-Portal](https://portal.azure.com) unter Verwendung des lokalen Administratorkontonamens und Kennworts eine Verbindung zu dem neuen virtuellen Compter DC2 her. 
   
-Next, configure a Windows Firewall rule to allow traffic for basic connectivity testing. From an administrator-level Windows PowerShell command prompt on DC2, run these commands. 
+Konfigurieren Sie als Nächstes eine Window-Firewallregel, um Verkehr für grundlegende Konnektivitätstests zuzulassen. Führen Sie diese Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene für DC2 aus. 
   
 ```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-The ping command should result in four successful replies from IP address 10.0.0.4. This is a test of traffic across the VNet peering relationship. 
+Der Ping-Befehl sollte zu vier erfolgreichen Antworten von IP-Adresse 10.0.0.4 führen. Dies ist ein Test für Datenverkehr über die VNet-Peeringbeziehung. 
   
 Im nächsten Schritt führen Sie diesen Befehl über die Windows PowerShell-Eingabeaufforderung auf DC2 aus, um das zusätzliche Datenlaufwerk als neues Volume mit dem Laufwerkbuchstaben „F:“ hinzuzufügen.
   
@@ -172,7 +172,7 @@ Im nächsten Schritt führen Sie diesen Befehl über die Windows PowerShell-Ein
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Next, configure DC2 as a replica domain controller for the corp.contoso.com domain. Run these commands from the Windows PowerShell command prompt on DC2.
+Konfigurieren Sie als Nächstes DC2 als Replikatdomänencontroller für die Domäne „corp.contoso.com“. Führen Sie diese Befehle an der Windows PowerShell-Eingabeaufforderung auf Administratorebene für DC2 aus.
   
 ```powershell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
@@ -181,7 +181,7 @@ Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName
 
 Beachten Sie, dass Sie aufgefordert werden, sowohl das Kennwort für CORP\\CORPUser1 als auch ein DSRM-Kennwort (Directory Services Restore Mode) anzugeben und DC2 neu zu starten.  
   
-Now that the XPrem virtual network has its own DNS server (DC2), you must configure the XPrem virtual network to use this DNS server. Run these commands from the Azure PowerShell command prompt on your local computer.
+Da das virtuelle XPrem-Netzwerk nun über seinen eigenen DNS-Server (DC2) verfügt, müssen Sie das virtuelle XPrem-Netzwerk so konfigurieren, dass dieser DNS-Server verwendet wird. Führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer aus.
   
 ```powershell
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -name "XPrem"
@@ -190,7 +190,7 @@ Set-AzVirtualNetwork -VirtualNetwork $vnet
 Restart-AzVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-From the Azure portal on your local computer, connect to DC1 with the CORP\\User1 credentials. To configure the CORP domain so that computers and users use their local domain controller for authentication, run these commands from an administrator-level Windows PowerShell command prompt on DC1.
+Stellen Sie über das Azure-Portal auf dem lokalen Computer eine Verbindung mit DC1 mit den Anmeldeinformationen für CORP\\CORPUser1 her. Um die Domäne CORP so zu konfigurieren, dass Computer und Benutzer ihre lokalen Domänencontroller für die Authentifizierung verwenden, führen Sie diese Befehle an einer Windows PowerShell-Befehlszeile auf Administratorebene für DC1 aus.
   
 ```powershell
 New-ADReplicationSite -Name "TestLab" 

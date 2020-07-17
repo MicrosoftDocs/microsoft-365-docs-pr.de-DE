@@ -29,7 +29,7 @@ ms.locfileid: "44818698"
 
  **Zusammenfassung:** Diese Lösung veranschaulicht, wie vertrauliche Daten, die in Office 365-Diensten gespeichert sind, geschützt werden können.
   
-This solution includes prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
+Diese bietet Empfehlungen zum Ermitteln, Klassifizieren, Schützen und Überwachen von personenbezogenen Daten. Dabei wird die Datenschutz-Grundverordnung (DSGVO) als Beispiel verwendet, Sie können das Verfahren jedoch auch für die Einhaltung vieler anderer Bestimmungen nutzen.
 
 [![Miniaturbild des Posters zu Office 365 Information Protection für die DSGVO](../media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 

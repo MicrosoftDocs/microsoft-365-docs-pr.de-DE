@@ -19,6 +19,7 @@ ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
 ms.openlocfilehash: 64f9aad04dd562e570d81c3c2993c2641354b95a
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844960"

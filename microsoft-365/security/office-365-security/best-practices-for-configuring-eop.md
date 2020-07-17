@@ -71,7 +71,7 @@ Um die Spamfilterung im Dienst für alle zu verbessern, sollten Sie falsch posit
 
 Erstellen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) oder benutzerdefinierte Filter, um Ihre geschäftlichen Anforderungen zu erfüllen.
 
-When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
+Wenn Sie eine neue Regel in die Produktion übernehmen, wählen Sie zunächst einen der Testmodi aus, um die Wirkung der Regeln zu überprüfen. Wenn Sie sicher sind, dass die Regel so funktioniert wie beabsichtigt, ändern Sie den Regelmodus in **Erzwingen**.
 
 Beim Bereitstellen neuer Regeln sollten Sie in Erwägung ziehen, als zusätzliche Aktion **Schadensbericht generieren** hinzuzufügen, um die betreffende Regel zu überwachen.
 

@@ -53,7 +53,7 @@ Als Administrator können Sie steuern, welche Version von Office-Mitarbeitern in
 
 ## <a name="upgrade-steps"></a>Upgrade-Schritte
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+Im Folgenden werden Sie schrittweise durch den Prozess der Aktualisierung Ihrer Benutzer auf den neuesten Office-Desktopclient geführt. Es wird empfohlen, diese Schritte vor dem Beginn des Upgradeprozesses durchzulesen.
   
 ## <a name="step-1---check-system-requirements"></a>Schritt 1 - Prüfen der Systemanforderungen
 
@@ -114,7 +114,7 @@ Wenn Sie Add-Ins von Drittanbietern verwenden, sollten Sie sich an den Herstelle
 
  **Nicht unterstützte Abonnements** Wenn Ihre Office-Kopie über nicht fort gegebene Abonnements wie Office 365 Small Business Premium oder Office 365 mittelständischen Unternehmen erworben wurde, können Sie keine ältere Version von Office installieren, es sei denn, Sie verfügen über den Product Key, der mit Ihrem Abonnement geliefert wurde.
 
-If you'd prefer to install your older version of Office side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version of Office and you're not yet sure they're compatible with the latest version.
+Wenn Sie die neueste Version von Office neben der älteren Version installieren möchten, können Sie unter [Installieren und Verwenden verschiedener Office-Versionen auf demselben PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) eine Liste der Versionen abrufen, bei denen dies unterstützt wird. Eine Installation, bei der zwei Versionen nebeneinander installiert sind, ist möglicherweise die richtige Wahl, wenn Sie z. B. Add-Ins von Drittanbietern installiert haben, die Sie mit der älteren Office-Version verwenden, und Sie nicht sicher sind, ob sie mit der neuesten Version kompatibel sind.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Schritt 4 - Zuweisen von Office-Lizenzen zu Benutzern
 

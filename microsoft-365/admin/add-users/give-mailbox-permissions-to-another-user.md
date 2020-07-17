@@ -37,11 +37,11 @@ Wenn Sie nach Informationen zum Erstellen und Verwalten von freigegebenen Postf�
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Suchen Sie Informationen zum Einrichten von Postfachberechtigungen?
 
-Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
+Postfachberechtigungen ermöglichen es Ihnen, einem anderen Benutzer Lese-/Schreibzugriff auf ein Postfach zu gewähren. Möglicherweise finden Sie in den nachstehenden Artikeln die benötigte Hilfe zum Einrichten und Verwenden dieser Funktion:
   
  **Einrichten der Berechtigungen:**
   
-The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
+Der erste Schritt zum Einrichten von Berechtigungen ist die Entscheidung, welche Aktionen Sie dem anderen Benutzer im angegebenen Postfach erlauben möchten. Sie können einem Benutzer erlauben, E-Mails aus dem Postfach zu lesen, E-Mails im Auftrag eines anderen Benutzers zu senden und E-Mails so aussehen zu lassen, als ob sie über dieses Postfach gesendet wurden. In folgenden Artikeln finden Sie Informationen, wie die einzelnen Arten von Berechtigungen eingerichtet werden:
   
 - [Lesen von E-Mails aus dem Postfach eines anderen Benutzers](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -55,7 +55,7 @@ Sobald Sie die Berechtigungen eingerichtet haben, kann es bis zu 60 Minuten daue
   
  **Verwenden des Postfachs, nachdem die Berechtigungen eingerichtet wurden:**
   
-There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+Es gibt einige Möglichkeiten, wie Sie auf ein Postfach zugreifen können, nachdem Ihnen der Zugriff darauf gewährt wurde. Hilfe zu diesem Vorgang finden Sie in diesem Artikel: [Zugreifen auf das Postfach einer anderen Person](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## <a name="send-email-from-another-users-mailbox"></a>Senden von E-Mails aus dem Postfach eines anderen Benutzers
 
@@ -200,7 +200,7 @@ There are a few different ways you can access a mailbox once you've been given a
 ## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>Senden und Lesen von Outlook und Outlook im Web Business
 
 
-Want to know how to send email from another user's mailbox? Check out the following topics:
+Möchten Sie wissen, wie Sie E-Mails aus dem Postfach eines anderen Benutzers senden können? Dann lesen Sie die folgenden Artikel:
   
 - [Verwalten der E-Mail- und Kalenderelemente einer anderen Person](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     

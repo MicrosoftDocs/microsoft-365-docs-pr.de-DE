@@ -51,7 +51,7 @@ Administratoren können alle Nachrichten, Notizen, Dateien, Themen, Benutzer und
 
 Wenn ein Benutzer von einem Abonnement umgeschaltet wird, das über SharePoint Online verfügt, wird die **SharePoint** -Kachel nicht mehr in Ihrem Microsoft 365-Menü angezeigt.
   
-However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
+Solange sich das neue Abonnement jedoch in derselben Organisation wie der befindet, in der der Umstieg erfolgt ist, sind die Benutzer weiterhin in der Lage, auf die SharePoint-Teamwebsite zuzugreifen. Sie können Notizbücher, Dokumente, Aufgabe und Kalender anzeigen und aktualisieren, indem sie die direkte URL der Teamwebsite aufrufen.
   
 > [!TIP]
 > Es wird empfohlen, dass Benutzer zur Teamwebsite wechseln, bevor der Wechsel des Abonnements erfolgt, um die URL in den Favoriten oder als Textmarke zu speichern.

@@ -28,7 +28,7 @@ ms.locfileid: "45015923"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
  
-As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
+Als Administrator einer Organisation sind Sie für das Einrichten der Kennwortrichtlinie für Benutzer in Ihrer Organisation verantwortlich. das Festlegen der Kennwortrichtlinie kann kompliziert und verwirrend sein, und dieser Artikel enthält Empfehlungen, wie Sie Ihre Organisation besser vor Kennwortangriffen schützen können.
   
 Um zu ermitteln, wie oft Microsoft 365-Kennwörter in Ihrer Organisation ablaufen, lesen Sie die Informationen unter [Festlegen der Kennwortablaufrichtlinie für Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -40,17 +40,17 @@ Empfohlene Kennwortpraktiken werden in einige allgemeine Kategorien unterteilt:
   
 - **Schutz vor häufig vorkommenden Angriffen** Legen Sie fest, wo Benutzer Kennwörter eingeben können (bekannte und vertrauenswürdige Geräte mit guter Erkennung von Malware, überprüften Websites) und welche Kennwörter verwendet werden dürfen (Länge und Eindeutigkeit).
 
-- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account.
+- **Eindämmung erfolgreicher Angriffe** Bei der Eindämmung erfolgreicher Hackerangriffe geht es darum, die Gefährdung auf einen bestimmten Dienst einzuschränken oder den Schaden komplett zu verhindern, wenn das Kennwort eines Benutzers gestohlen wird. So sollte beispielsweise sichergestellt werden, dass durch den Angriff auf Ihre Social Networking-Anmeldeinformationen Ihr Bankkonto nicht angreifbar wird oder dass ein schlecht bewachtes Konto keine Reset-Links für ein wichtiges Konto zulässt.
 
-- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords.
+- **Die menschliche Natur verstehen** Viele gültige Kennwortpraktiken scheitern an natürlichen menschlichen Verhaltensweisen. Das Verständnis der menschlichen Natur ist von äußerster Bedeutung, denn Untersuchungen zeigen, dass fast jede Regel, die Sie Ihren Benutzern auferlegen, zu einer Schwächung der Kennwortqualität führt. Anforderungen an Länge, Sonderzeichen und Kennwortänderungen führen zu einer Normalisierung der Kennwörter, was es Angreifern erleichtert, Kennwörter zu erraten oder zu knacken.
 
 ## <a name="password-guidelines-for-administrators"></a>Kennwortrichtlinien für Administratoren
 
-The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
+Das primäre Ziel eines sichereren Kennwortsystems ist die Vielfalt der Kennwörter. Sie möchten, dass Ihre Kennwortrichtlinie viele verschiedene und schwer zu erratende Kennwörter umfasst. Hier sind ein paar Empfehlungen, wie Sie Ihre Organisation am besten schützen können.
   
 - Halten Sie eine Mindestlänge von 8 Zeichen ein (länger ist nicht unbedingt besser).
 
-- Don't require character composition requirements. For example, \*&amp;(^%$
+- Legen Sie keine Anforderungen an die Zeichenzusammensetzung fest. Zum Beispiel \*&amp;(^%$
 
 - Fordern Sie kein obligatorisches periodisches Zurücksetzen der Kennwörter für Benutzerkonten.
 
@@ -64,7 +64,7 @@ The primary goal of a more secure password system is password diversity. You wan
 
 ### <a name="password-guidance-for-your-users"></a>Kennwortratgeber für Benutzer
 
-Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
+Hier finden Sie einige Kennwortanleitungen für Benutzer in Ihrer Organisation. Informieren Sie Ihre Benutzer über diese Empfehlungen und setzen Sie die empfohlenen Kennwortrichtlinien auf Organisationsebene durch.
   
 - Verwenden Sie kein Kennwort, das einem auf anderen Websites verwendeten Kennwort entspricht oder ähnlich ist.
 
@@ -78,15 +78,15 @@ Dies sind einige der am häufigsten verwendeten Kennwortverwaltungspraktiken, ab
   
 ### <a name="password-expiration-requirements-for-users"></a>Anforderungen für den Ablauf von Benutzerkennwörtern
 
-Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them.
+Anforderungen für den Ablauf von Kennwörtern schaden mehr als dass sie nützen, da diese Anforderungen die Benutzer dazu veranlassen, vorhersagbare Passwörter zu wählen, die aus aufeinanderfolgenden Wörtern und Zahlen bestehen, die eng miteinander verwandt sind. In diesen Fällen kann das nächste Kennwort anhand des vorherigen Kennwortes vorhergesagt werden. Anforderungen für den Ablauf von Kennwörtern bieten keine Vorteile hinsichtlich der Abwehr von Angriffen, da Cyberkriminelle Anmeldeinformationen, sobald sie diese herausgefunden haben, fast immer sofort verwenden.
   
 ### <a name="requiring-long-passwords"></a>Anforderung an die Länge von Kennwörtern
 
-Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement. 
+Anforderung an die Länge von Kennwörtern (mehr als ca. 10 Zeichen) können zu einem vorhersehbaren und nicht wünschenswerten Benutzerverhalten führen. Benutzer, die gezwungen werden, ein Kennwort mit 16 Zeichen zu verwenden, neigen beispielsweise dazu, sich wiederholende Muster wie **viervierviervier** oder **KennwortKennwort** auszuwählen, die die Anforderung an die Zeichenlänge erfüllen, aber nicht schwer zu erraten sind. Darüber hinaus erhöhen Längenanforderungen die Wahrscheinlichkeit, dass Benutzer andere unsichere Methoden verwenden, wie z. B., ihre Kennwörter aufzuschreiben, wiederzuverwenden oder unverschlüsselt in ihren Dokumenten zu speichern. Um Benutzer zu ermutigen, eindeutige Kennwörter zu erstellen, empfehlen wir eine angemessene Mindestlängenanforderung von 8 Zeichen. 
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Fordern der Verwendung von mehreren Zeichensätzen
 
-Password complexity requirements reduce key space and cause users to act in predictable ways, doing more harm than good. Most systems enforce some level of password complexity requirements. For example, passwords need characters from all three of the following categories:
+Anforderungen an die Kennwortkomplexität reduzieren den Schlüsselraum und veranlassen Benutzer dazu, auf vorhersehbare Weise zu handeln, wodurch sie mehr Schaden als Nutzen anrichten. Die meisten Systeme erzwingen ein bestimmtes Maß an Anforderungen an die Kennwortkomplexität. Beispielsweise müssen Kennwörter Zeichen aus allen drei der folgenden Kategorien enthalten:
   
 - Großbuchstaben
 
@@ -94,7 +94,7 @@ Password complexity requirements reduce key space and cause users to act in pred
 
 - Nicht alphanumerische Zeichen
 
-Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
+Die meisten Benutzer verwenden ähnliche Muster, z. B. einen Großbuchstabe an der ersten Position, ein Symbol an der letzten Position und eine Zahl an den letzten 2 Stellen. Cyberkriminelle wissen dies, daher führen sie ihre Wörterbuchangriffe unter Verwendung der am häufigsten verwendeten Austauschzeichen durch, "$" für "s", "@" für "a", "1" für "l". Wenn Sie Ihre Benutzer zwingen, eine Kombination aus Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen zu wählen, wirkt sich das negativ aus. Einige Komplexitätsanforderungen hindern Benutzer sogar daran, sichere und einprägsame Kennwörter zu verwenden, und zwingen sie dazu, weniger sichere und weniger einprägsame Kennwörter zu wählen.
   
 ## <a name="successful-patterns"></a>Erfolgreiche Muster
 
@@ -102,15 +102,15 @@ Im Gegensatz dazu finden Sie hier einige Empfehlungen zur Förderung der Kennwor
   
 ### <a name="ban-common-passwords"></a>Häufig verwendete Kennwörter sperren
 
-The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
+Die wichtigste Kennwortanforderung, die Sie Ihren Benutzern bei der Erstellung von Kennwörtern auferlegen sollten, besteht darin, die Verwendung häufig verwendeter Kennwörter zu verbieten, um die Anfälligkeit Ihres Unternehmens für Brute-Force-Kennwortangriffe zu verringern. Häufig verwendete Benutzerkennwörter sind beispielsweise **abcdefg**, **Kennwort**, **123456**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Weisen Sie die Benutzer an, keine Kennwörter der Organisation an anderer Stelle wiederzuverwenden
 
-One of the most important messages to get across to users in your organization is to not re-use their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cyber criminals will compromise these passwords.
+Eine der wichtigsten Botschaften, die Sie den Benutzern in Ihrer Organisation vermitteln müssen, ist, dass Sie ihr Organisationskennwort nirgendwo anders wiederverwenden dürfen. Die Verwendung von Organisationskennwörtern auf externen Websites erhöht die Wahrscheinlichkeit erheblich, dass Cyberkriminelle diese Kennwörter knacken.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Erzwingen Sie die Registrierung für die mehrstufige Authentifizierung
 
-Make sure your users update contact and security information, like an alternate email address, phone number, or a device registered for push notifications, so they can respond to security challenges and be notified of security events. Updated contact and security information helps users verify their identity if they ever forget their password, or if someone else tries to take over their account. It also provides an out of band notification channel in the case of security events such as login attempts or changed passwords. 
+Stellen Sie sicher, dass Ihre Benutzer Kontakt- und Sicherheitsinformationen aktualisieren (z. B. eine alternative E-Mail-Adresse, Telefonnummer oder ein Gerät, das für Pushbenachrichtigungen registriert ist), damit sie auf Sicherheitsherausforderungen reagieren und über Sicherheitsereignisse benachrichtigt werden können. Aktualisierte Kontakt- und Sicherheitsinformationen helfen Benutzern, ihre Identität zu verifizieren, wenn sie ihr Passwort vergessen haben oder wenn jemand anderes versucht, ihr Konto zu übernehmen. Zudem wird ein Out-of-Band-Benachrichtigungskanal für den Fall bereitgestellt, dass Sicherheitsereignisse wie Anmeldeversuche oder geänderte Kennwörter eintreten. 
   
 Weitere Informationen finden Sie unter [Einrichten der mehrstufigen Authentifizierung](../security-and-compliance/set-up-multi-factor-authentication.md).
   

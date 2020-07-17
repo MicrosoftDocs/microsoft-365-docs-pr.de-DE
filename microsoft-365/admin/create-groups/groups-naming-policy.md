@@ -39,9 +39,9 @@ Die Benennungsrichtlinie wird auf Gruppen angewendet, die für alle Gruppen Arbe
 
 Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
-- **Prefix-Suffix naming policy**: You can use prefixes or suffixes to define the naming convention of groups (for example: "US\_My Group\_Engineering"). The prefixes/suffixes can either be fixed strings or user attributes like [Department] that will get substituted based on the user who is creating the group.
+- **Präfix-Suffix-Benennungsrichtlinie**: Sie können Präfixe oder Suffixe verwenden, um die Benennungskonvention von Gruppen zu definieren (beispielsweise "US \_ My Group \_ Engineering"). Bei den Präfixen/Suffixen kann es sich entweder um feste Zeichenfolgen oder Benutzerattribute wie [Department] handeln, die basierend auf dem Benutzer ersetzt werden, der die Gruppe erstellt.
 
-- **Custom Blocked Words**: You can upload a set of blocked words specific to your organization that would be blocked in groups created by users. (For example: "CEO, Payroll, HR").
+- **Benutzerdefinierte blockierte Wörter**: Sie können eine Gruppe blockierter Wörter für Ihre Organisation hochladen, die in von Benutzern erstellten Gruppen blockiert werden. (Beispiel: "CEO, Abrechnung, HR").
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
@@ -69,7 +69,7 @@ Sie können Attribute verwenden, anhand derer Sie feststellen können, wer eine 
 
 Die unterstützten Azure Active Directory (Azure AD)-Attribute sind [Department], [Firma], [Office], [StateOrProvince], [CountryOrRegion] und [title].
 
-- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
+- Nicht unterstützte Benutzerattribute werden als feste Zeichenfolgen angesehen. Z. B. "[Postleitzahl]"
 
 - Erweiterungsattribute und benutzerdefinierte Attribute werden nicht unterstützt.
 
@@ -104,7 +104,7 @@ Es erfolgt keine Suche nach Teilzeichenfolgen, d. h. es muss eine genaue Überei
 
 ## <a name="admin-override"></a>Außerkraftsetzung durch Administratoren
 
-Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
+Ausgewählte Administratoren sind übergreifend über alle Workloads und Endpunkte von diesen Richtlinien ausgenommen, sodass sie Gruppen mit den blockierten Wörtern und Benennungskonventionen nach eigenen Wünschen erstellen können. Es folgt eine Liste der Administratorrollen, die von der Gruppenbenennungsrichtlinie ausgenommen sind.
 
 - Globaler Administrator
 

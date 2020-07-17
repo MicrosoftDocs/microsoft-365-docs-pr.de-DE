@@ -52,9 +52,9 @@ Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, we
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online-Rollengruppen
 
-If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
+In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchange-Rollengruppen zuweisen. Wenn ein Administrator einen Benutzer einer Rollengruppe hinzugefügt wird, erhält der Benutzer Berechtigungen, um bestimmte Geschäftsfunktionen auszuführen, die nur Mitgliedern dieser Gruppe gestattet sind.
   
- For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ Der Exchange-Administrator kann z. B. eine Person der Rollengruppe "Discoveryverwaltung" zuweisen, damit sie in Postfächern nach Daten suchen können, die bestimmte Kriterien erfüllen. Weitere Informationen hierzu finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
 ## <a name="learn-about-other-admin-role"></a>Informationen zur anderen Administratorrolle
 

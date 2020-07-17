@@ -19,6 +19,7 @@ ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
 ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049865"

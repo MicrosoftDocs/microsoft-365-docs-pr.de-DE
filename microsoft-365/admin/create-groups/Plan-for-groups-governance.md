@@ -152,7 +152,7 @@ Wenn Sie eine Microsoft 365-Gruppe gelöscht haben, wird Sie standardmäßig 30 
 |![Bildbeschreibung](../../media/next_steps.png)|Nächste Schritte|<ul><li>Kommunizieren und veröffentlichen Sie Ihre Lösch- und Wiederherstellungsrichtlinien, um Benutzer über das erwartete Verhalten zu informieren </li><li> Dokumentieren Sie die Anforderungen Ihrer Organisation an die Überwachung gelöschter Gruppen.</li><li>Planen Sie, diese Anforderungen als Teil Ihres Gruppen-Rollouts zu implementieren.</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>Wenn ein Benutzer während des Vorgangs "Vorläufiges Löschen" versucht, auf die Website zuzugreifen, wird eine "403 Verboten"-Meldung angezeigt. Wenn der Benutzer nach Ablauf dieses Zeitraums versucht, auf die Website zuzugreifen, wird eine "404 Nicht gefunden"-Meldung angezeigt.
 
 #### <a name="resources"></a>*Ressourcen*
 - [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

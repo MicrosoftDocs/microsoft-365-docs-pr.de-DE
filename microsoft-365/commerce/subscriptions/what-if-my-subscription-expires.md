@@ -144,13 +144,13 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
   
 ::: moniker range="o365-worldwide"
 
- **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
+ **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
+ **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
 
 ::: moniker-end
 
@@ -168,13 +168,13 @@ Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge 
   
 ::: moniker range="o365-worldwide"
 
- **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
+ **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
+ **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
 
 ::: moniker-end
 

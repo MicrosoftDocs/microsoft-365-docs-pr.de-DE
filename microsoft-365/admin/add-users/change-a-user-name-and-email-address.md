@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fedc1532bfec246392180d386a6960dbb08bd137
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936527"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079713"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -50,7 +50,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
     
 2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
     
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, wählen Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste aus. 
+3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, wählen Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste aus. 
 
 4. Wählen Sie **Änderungen speichern** aus.
 
@@ -63,9 +63,9 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
 
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
+3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ::: moniker-end
 
@@ -75,9 +75,9 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
 
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Office 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
+3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
 
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -121,7 +121,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -131,7 +131,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
  
   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Office 365 benötigt wird.
+  - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
     
   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
@@ -149,7 +149,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
     
-    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Office 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
+    **WICHTIG**: Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
     
     Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
   
@@ -159,7 +159,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
  
   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
   
-  - Den neuen Benutzernamen, der für die Anmeldung bei Office 365 benötigt wird.
+  - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
     
   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
 
@@ -234,7 +234,7 @@ Einige Personen senden möglicherweise weiterhin E-Mails an die alte E-Mail-Adre
 
 Wenn eine Person Exchange Online verwendet oder ihr Konto mit der lokalen Exchange-Umgebung Ihrer Organisation verknüpft ist, wird bei Ihrem Versuch, einen Benutzernamen und die zugehörige E-Mail-Adresse zu ändern, möglicherweise die folgende Fehlermeldung angezeigt: „Dieser Benutzer ist mit Ihrem lokalen Active Directory synchronisiert. Bestimmte Details können nur in Ihrem lokalen Active Directory bearbeitet werden.“
   
-Der Grund dafür ist die Microsoft Online Email Routing Address (MOERA). Die MOERA wird aus dem Attribut _userPrincipalName_ der Person in Active Directory erstellt und dem Cloudkonto während der Erstsynchronisierung automatisch zugewiesen. Sobald eine MOERA erstellt wurde, kann sie in Office 365 nicht geändert oder entfernt werden. Sie können den Benutzernamen zwar anschließend in Active Directory ändern. Weil aber die MOERA unverändert bleibt, können Probleme auftreten, wenn Sie den gerade geänderten Namen in der globalen Adressliste anzeigen. 
+Der Grund dafür ist die Microsoft Online Email Routing Address (MOERA). Die MOERA wird aus dem Attribut _userPrincipalName_ der Person in Active Directory erstellt und dem Cloudkonto während der Erstsynchronisierung automatisch zugewiesen. Sobald eine MOERA erstellt wurde, kann sie in Microsoft 365 nicht geändert oder entfernt werden. Sie können den Benutzernamen zwar anschließend in Active Directory ändern. Weil aber die MOERA unverändert bleibt, können Probleme auftreten, wenn Sie den gerade geänderten Namen in der globalen Adressliste anzeigen. 
   
 Um dies zu beheben, melden Sie sich beim [Azure Active Directory-Modul für PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) mit Ihren Administratoranmeldeinformationen für Microsoft 365 an. Verwenden Sie die folgende Syntax: 
   

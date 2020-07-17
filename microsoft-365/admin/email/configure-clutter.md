@@ -38,7 +38,7 @@ Informationen zur Verwendung von Exchange PowerShell finden Sie unter [Verwenden
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Aktivieren von "Clutter" mit Exchange PowerShell
 
-You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+Sie können "Clutter" manuell für ein Postfach aktivieren, indem Sie das Cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) ausführen. Sie können auch die Cluttereinstellungen für Postfächer in Ihrer Organisation anzeigen, indem Sie das Cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) ausführen. 
   
 Aktivieren von "Clutter" für einen einzigen Benutzer mit Namen Ada Simon
     
@@ -47,7 +47,7 @@ Aktivieren von "Clutter" für einen einzigen Benutzer mit Namen Ada Simon
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Deaktivieren von "Clutter" mit Exchange PowerShell
 
-You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+Sie können "Clutter" manuell für ein Postfach deaktivieren, indem Sie das Cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) ausführen. Sie können auch die Einstellungen für **Clutter** für Postfächer in Ihrer Organisation anzeigen, indem Sie das Cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) ausführen. 
   
 Deaktivieren von "Clutter" für einen einzigen Benutzer mit Namen Ada Simon
     

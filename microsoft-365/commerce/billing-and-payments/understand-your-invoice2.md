@@ -36,7 +36,7 @@ ms.locfileid: "44909264"
 
 Entweder monatlich oder jährlich (je nachdem, welche Option Sie beim Kauf Ihres Abonnements ausgewählt haben), erhalten Sie eine e-Mail, in der Ihnen mitgeteilt wird, dass Ihre neue Abrechnungs Anweisung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   
-Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
+Ihre Rechnung enthält zwei Seiten. Seite 1 ist die Zusammenfassung der Rechnung und enthält allgemeine Informationen über die Rechnung, den Auftrag, den fälligen Betrag sowie dazu, wie Sie eine Zahlung vornehmen und wie Sie Kontakt zum Support aufnehmen können.
   
 ![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
@@ -62,7 +62,7 @@ Haben Sie mehrere Aufträge, erhalten Sie für jeden Auftrag eine Rechnung.
   
 ## <a name="invoice-field-glossary"></a>Glossar der Rechnungsfelder
 
-The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
+In der folgenden Tabelle sind die Felder beschrieben, die möglicherweise auf Ihrer Rechnung zu sehen sind. Einige der hier aufgeführten Felder sind abhängig davon, ob Sie per Rechnung, Kreditkarte oder Bankeinzug bezahlen, möglicherweise nicht vorhanden.
   
 > [!NOTE]
 > Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.
@@ -70,30 +70,30 @@ The following table describes the fields you might see on your invoice. Some fie
 |**Name**|**Beschreibung**|
 |:-----|:-----|
 |Jährlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie die jährliche Abrechnung während des Abonnements erworben haben, wird der jährliche Lizenzpreis auf der Rechnung widergespiegelt. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut kaufen.|
-|Abrechnungszeitraum|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
+|Abrechnungszeitraum|Der Abrechnungszeitraum entspricht dem Zeitraum seit dem letzten Rechnungsdatum. Der Dienstzeitraum ist der Zeitraum, für den Ihnen die Nutzung des Diensts in Rechnung gestellt wird.|
 |Rechnungsempfänger|Dies ist die Adresse Ihrer zuständigen Abteilung und meist mit der Auftraggeberadresse identisch. Informationen zum Aktualisieren Ihrer Rechnungsadresse finden Sie unter [Ändern der Rechnungsadressen](change-your-billing-addresses.md).|
-|Gebühren|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
-|Scheck|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
-|Gutschriften|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
-|Auftragsnummer des Kunden|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **Hinweis:** Sie können keine Bestellnummer zu einer vorhandenen Rechnung hinzufügen.           |
-|Tage|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
-|Rabatte|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
-|Fällig am|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **Hinweis:** Die Zahlung per Bankkonto ist in einigen Ländern oder Regionen nicht möglich.           |
+|Gebühren|Auf der Seite 1 Ihrer Rechnung sind alle Gebühren für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Gebühren für jedes Abonnement aufgeführt.|
+|Scheck|Wenn Sie per Rechnung bezahlen und in Ihrem Land Scheckzahlung angeboten wird, finden Sie unten auf der Seite 1 Informationen darüber, wohin Sie Ihre Zahlung senden sollen. Geben Sie auf Ihrem Scheck bitte die Rechnungsnummer an.|
+|Gutschriften|Auf der Seite 1 Ihrer Rechnung sind alle Gutschriften für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Gutschriften für jedes Abonnement aufgeführt.|
+|Auftragsnummer des Kunden|Ihre Auftragsnummer. Wenn Sie die Auftragsnummer aktualisieren, wird sie auf zukünftigen Rechnungen enthalten sein. [Ändern Ihrer Auftragsnummer](#change-your-purchase-order-number).  <br/> **Hinweis:** Sie können keine Bestellnummer zu einer vorhandenen Rechnung hinzufügen.           |
+|Tage|Jede Abrechnungstransaktion ist einem Dienstzeitraum zugeordnet. Die Spalte "Tage" gibt die Anzahl von Tagen die in diesem Dienstzeitraum an.|
+|Rabatte|Auf der Seite 1 Ihrer Rechnung sind alle Rabatte für den Abrechnungszeitraum der Rechnung zusammengefasst. Auf der Seite 2 sind die detaillierten Rabatte für jedes Abonnement aufgeführt.|
+|Fällig am|Das Datum, zu dem die Zahlung der Rechnung fällig ist. Wird Ihr Abonnement per Kreditkarte oder Bankeinzug bezahlt, wird Ihre Kreditkarte oder Ihr Bankkonto am Tag nach dem Rechnungsdatum belastet.<br/> **Hinweis:** Die Zahlung per Bankkonto ist in einigen Ländern oder Regionen nicht möglich.           |
 |Elektronischer Zahlungsverkehr|Wenn Sie "Rechnung" als Zahlungsmethode für Abonnements ausgewählt haben, enthält Seite 1 die Microsoft Bankkontoinformationen für elektronische Zahlungen (Wire, Ach, SEPA, etc.). Üblicherweise stellt Ihre Bank ein Referenzfeld zur Verfügung, das Sie ausfüllen, wenn Sie eine Zahlung senden. Geben Sie bitte die Rechnungsnummer an, die in diesem Feld angezeigt wird.|
 |Gesamtergebnis|Diese Zeile enthält die Gesamtsummen für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuern" und "Summe" für alle Abonnements, die auf der Rechnung aufgeführt sind.|
-|Rechnungsdatum|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
-|Rechnungsnummer|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
+|Rechnungsdatum|Das Erstellungsdatum der Rechnung. Das Rechnungsdatum entspricht dem Tag nach dem Ende des Abrechnungszeitraums. Ist Ihr Abrechnungszeitraum beispielsweise 15. Januar bis 14. Februar, ist der 15. Februar das Rechnungsdatum.|
+|Rechnungsnummer|Die eindeutige Nummer auf Ihrer Rechnung. Geben Sie bei Ihrer Zahlung bitte die Rechnungsnummer an.|
 |Monatlicher Preis|Abonnements werden monatlich oder jährlich abgerechnet. Wenn Sie die monatliche Abrechnung während des Abonnements erworben haben, wird der monatliche Lizenzpreis auf der Rechnung wiedergegeben. Wenn Sie die Abrechnungshäufigkeit ändern möchten, müssen Sie Ihr Abonnement kündigen und es mit der neuen Abrechnungshäufigkeit erneut erwerben.|
-|Auftragsnummer|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
+|Auftragsnummer|Jedes Mal, wenn Sie ein neues Abonnement kaufen, wird ein Auftrag erstellt. Jeden Monat erhalten Sie eine Rechnung für jeden Auftrag.|
 |Zahlungsanweisungen|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
-|Zahlungsbedingungen|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
-|Produkt|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
+|Zahlungsbedingungen|Die Anzahl von Tagen ab dem Rechnungsdatum, in denen die Zahlung fällig ist. Der Standard ist 30 Tage.|
+|Produkt|Auf Seite 1 Ihrer Rechnung ist "Onlinedienste" der Oberbegriff, mit dem Ihre Abonnements beschrieben werden. Auf Seite 2 sehen Sie die Namen der einzelnen Abonnements.|
 |Menge|Die Anzahl von Lizenzen, die während des Dienstzeitraums erworben wurden.|
-|Dienstzeitraum|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
+|Dienstzeitraum|Der Dienstzeitraum ist der Zeitraum, für den Ihnen die Nutzung des Diensts in Rechnung gestellt wird. Ein Abrechnungszeitraum entspricht dem Zeitraum seit dem letzten Rechnungsdatum.|
 |Dienstnutzungsadresse|Die Adresse, an der der Dienst genutzt wird, in der Regel mit der Auftraggeberadresse identisch. Informationen zum Aktualisieren Ihrer Dienstnutzungsadresse finden Sie unter [Ändern der Rechnungsadressen](change-your-billing-addresses.md).|
-|Auftraggeber|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
+|Auftraggeber|Der Name und die Adresse Ihres Unternehmens. Wenn Sie diese Informationen ändern möchten, gehen sie so vor, wie unter [Ändern der Adresse Ihrer Organisation, der E-Mail-Adresse für den technischen Kontakt und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) beschrieben.  |
 |Teilsumme|Jedes Abonnement, das auf Ihrer Rechnung aufgeführt ist, hat eine eigene "Zwischensumme"-Zeile für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuer" und "Summe".|
-|Steuer|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/contact-support-for-business-products.md).|
+|Steuer|Auf Seite 1 Ihrer Rechnung ist der Gesamtbetrag für Steuern angegeben. Auf Seite 2 sind der zutreffende Steuersatz und der Gesamtsteuerbetrag für jeden Einzelposten angegeben. Enthält Ihre Rechnung Steuern, ist Ihr Unternehmen aber steuerbefreit, [wenden Sie sich bitte an den Support](../../admin/contact-support-for-business-products.md).  |
 |Summe|Der Betrag, der für den Abrechnungszeitraum der Rechnung fällig ist.|
 
 ## <a name="change-your-purchase-order-number"></a>Ändern Ihrer Auftragsnummer
@@ -101,7 +101,7 @@ The following table describes the fields you might see on your invoice. Some fie
 Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer hinzufügen oder diese ändern.
   
 > [!NOTE]
-> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
+> Einer vorhandenen Rechnung können Sie keine Auftragsnummer hinzuzufügen. Die Auftragsnummer wird in allen zukünftigen Rechnungen angezeigt.
 
 ::: moniker range="o365-worldwide"
 

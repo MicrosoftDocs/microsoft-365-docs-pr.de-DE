@@ -36,7 +36,7 @@ ms.locfileid: "44779965"
 > [!NOTE]
 > Die moderne Authentifizierung ist für Office 2016-Clients bereits aktiviert, daher müssen Sie für Office 2016 keine Registrierungsschlüssel festlegen. 
   
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Laptops und Tablets) zu aktivieren, auf denen Microsoft Office 2013 installiert ist, müssen Sie die nachstehenden Registrierungsschlüssel festlegen. Die Schlüssel müssen auf jedem Gerät festgelegt werden, das Sie für moderne Authentifizierung aktivieren möchten:
   
 |**Registrierungsschlüssel**|**Typ**|**Wert** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ To enable modern authentication for any devices running Windows (for example on 
    
 Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013 Geräte-Apps für die Verwendung von mehrstufiger [Authentifizierung (MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365 festlegen. 
   
-If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
+Wenn Sie aktuell bei einer der Client-Apps angemeldet sind, müssen Sie sich abmelden und wieder anmelden, damit die Änderung wirksam wird. Andernfalls werden die MRU- und Roamingeinstellungen erst wieder verfügbar, wenn die ADAL-Identität eingerichtet ist.
   
 ## <a name="disable-modern-authentication-on-devices"></a>Deaktivieren von moderner Authentifizierung auf Geräten
 

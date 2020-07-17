@@ -50,7 +50,7 @@ Wenn ein Benutzer einen Computer mit vielen persönlichen Dateien hat, sollten S
     
 3. Wählen Sie in der Menüleiste **Hochladen**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) aus, und navigieren Sie zu den Dateien, die Sie speichern möchten. 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+Um das Benutzerprofil und wichtige Dateien zu übertragen, können Sie ein Drittanbietertool verwenden, z. B. ForensiT. Sie sollten auch die resultierenden Dateien auf OneDrive for Business hochladen.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 for Business
 

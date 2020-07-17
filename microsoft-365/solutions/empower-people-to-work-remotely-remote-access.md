@@ -19,6 +19,7 @@ ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Remotemitarbeiter auf lokale Ressourcen zugreifen können, während Sie den Zugriff auf die Microsoft 365-Clouddienste optimieren.
 ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844978"

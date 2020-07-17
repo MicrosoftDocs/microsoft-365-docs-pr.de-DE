@@ -29,7 +29,7 @@ ms.locfileid: "45005822"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
-Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
+[] Beiträge im Nachrichtencenter sind wichtige Ankündigungen zu neuen und geänderten Features. Dieser Artikel enthält weitere Informationen zu den Aktionen, die Sie Nachrichten ausführen können, um das Change Management in Ihrer Organisation zu unterstützen.
   
 ## <a name="read-a-message"></a>Lesen einer Nachricht
 

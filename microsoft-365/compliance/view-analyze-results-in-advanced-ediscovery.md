@@ -26,7 +26,7 @@ ms.locfileid: "44936948"
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Anzeigen von Analyseergebnissen in Advanced eDiscovery (klassisch)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery können Fortschritte und Ergebnisse für den Analyseprozess in einer Vielzahl von Displays angezeigt werden, wie unten beschrieben.
   

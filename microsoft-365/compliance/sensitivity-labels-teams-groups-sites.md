@@ -19,6 +19,7 @@ search.appverid:
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
 ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
 ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/30/2020
 ms.locfileid: "44936926"

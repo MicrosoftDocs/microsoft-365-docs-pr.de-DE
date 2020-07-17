@@ -32,7 +32,7 @@ ms.locfileid: "44779881"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ [] Sie können den E-Mail-Nachrichten, die an Ihre Organisation oder von ihr gesendet werden, eine E-Mail-Signatur, einen Haftungsausschluss oder eine Offenlegungserklärung hinzufügen. Das können Sie so einrichten, dass diese Hinzufügung auf alle ein- und ausgehenden Nachrichten angewendet wird, wie unten gezeigt wird. Oder Sie können sie nur auf bestimmte Nachrichten anwenden, z. B. solche, die bestimmte Wörter oder Textmuster enthalten.
 
  Sehen Sie sich ein kurzes Video über die Erstellung einer unternehmensweiten e-Mail-Signatur an. <br><br>
   
@@ -89,7 +89,7 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 9. Wählen Sie **einen auswählen** aus, und wählen Sie **umbrechen** als Fallback Option aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. Lassen Sie **Diese Regel mit Schweregrad überwachen** aktiviert. Wählen Sie dann einen der Werte **Niedrig**, **Mittel** oder **Hoch** aus, der im Nachrichtenprotokoll verwendet werden soll. 
     
 11. Wählen Sie **Erzwingen** aus, um den Haftungsausschluss sofort zu aktivieren, wenn Sie ihn nicht zuerst testen möchten. 
     

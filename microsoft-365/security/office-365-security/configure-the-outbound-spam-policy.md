@@ -475,7 +475,7 @@ Verwenden Sie die folgende Syntax, um die Priorität einer ausgehenden Spamfilte
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
+In diesem Beispiel wird die Priorität der Regel namens „Marketing Department“ auf 2 festgelegt. Alle vorhandenen Regeln mit Priorität kleiner oder gleich 2 werden um 1 verringert (die Prioritätswerte werden um 1 erhöht).
 
 ```PowerShell
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2

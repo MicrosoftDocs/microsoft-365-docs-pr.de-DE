@@ -46,7 +46,7 @@ Die Schritte, die Sie zum Einrichten von S/MIME mit jedem dieser Endpunkte durch
 
 3. Synchronisieren Sie für Exchange Online Organisationen die Benutzerzertifikate von AD DS auf Azure Active Directory, indem Sie eine geeignete Version von Azure AD Connect verwenden. Diese Zertifikate werden dann von Azure Active Directory auf Exchange Online Verzeichnis synchronisiert und verwendet, wenn eine Nachricht an einen Empfänger verschlüsselt wird.
 
-4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
+4. Richten Sie eine virtuelle Zertifikatauflistung zum Validieren von S/MIME ein. Diese Informationen verwendet Outlook im Web beim Validieren der Signatur einer E-Mail und stellt sicher, dass sie von einem vertrauenswürdigen Zertifikat signiert wurde.
 
 5. Richten Sie den Outlook- oder EAS-Endpunkt für die Verwendung von S/MIME ein.
 

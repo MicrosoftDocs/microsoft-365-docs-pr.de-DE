@@ -339,7 +339,7 @@ Ein **custom_data** Wert, der mit beginnt, `S:SFA` ist vom Spamfilter-Agent. Die
 |`SFV=BLK`|Die Filterung wurde übergangen, und die Nachricht wurde gesperrt, da sie von einem gesperrten Absender stammt.|
 |`SFV=SKS`|Die Nachricht wurde vor der Verarbeitung durch Anti-Spam-Filterung als Spam gekennzeichnet. Dies beinhaltet Nachrichten, bei denen die Nachricht einer Nachrichtenflussregel (auch als Transportregel bezeichnet) entsprach, die diese automatisch als Spam markiert und alle zusätzlichen Filterungen umgeht.|
 |`SCL=<number>`|Weitere Informationen zu den verschiedenen SCL-Werten und deren Bedeutung finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|Der PCL-Wert (Phishing Confidence Level) der Nachricht. Diese Werte können auf die gleiche Weise interpretiert werden wie die in [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md) dokumentierten SCL-Werte.  |
 |`DI=SB`|Der Absender der Nachricht wurde blockiert.|
 |`DI=SQ`|Die Nachricht wurde unter Quarantäne gestellt.|
 |`DI=SD`|Die Nachricht wurde gelöscht.|

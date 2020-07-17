@@ -36,7 +36,7 @@ ms.locfileid: "44780061"
 Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie als Administrator für alle Benutzer im Mandanten aktivieren können. Nachdem die Freigabe aktiviert wurde, können Benutzer Outlook Web App verwenden, um ihre Kalender mit beliebigen Personen innerhalb oder außerhalb der Organisation zu teilen. Personen innerhalb der Organisation können freigegebene Kalender neben ihren eigenen anzeigen. An Personen außerhalb der Organisation wird eine URL gesendet, über die sie den Kalender anzeigen können. Die Benutzer entscheiden, wann sie teilen möchten, wie viel sie teilen möchten und wann sie ihre Kalender privat halten möchten.
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Wenn Sie Kalender für eine Organisation freigeben möchten, die Exchange Server 2013 (eine lokale Lösung) verwendet, muss der Exchange-Administrator eine Authentifizierungsbeziehung mit der Cloud einrichten. Dies wird als "Verbund" bezeichnet und muss die minimalen Softwareanforderungen erfüllen. Weitere Informationen finden Sie unter [Freigeben](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx). 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivieren der Kalenderfreigabe mit dem Microsoft 365 Admin Center
 
@@ -53,5 +53,5 @@ Die Kalenderfreigabe ist eine globale Einstellung, was bedeutet, dass Sie Sie al
     
 ## <a name="invite-people-to-access-calendars"></a>Personen zum Zugreifen auf Kalender einladen
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+Nachdem die Freigabe für den Mandanten aktiviert wurde, können die Besitzer von Kalendern Einladungen an bestimmte Benutzer senden. Anweisungen finden Sie unter [Freigabe Ihres Kalenders in Outlook-Webanwendung](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5). 
   

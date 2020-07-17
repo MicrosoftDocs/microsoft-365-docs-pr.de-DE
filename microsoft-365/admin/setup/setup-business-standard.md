@@ -138,7 +138,7 @@ Sie können das Exchange Admin Center verwenden, um die E-Mails aller Benutzer z
   
 ### <a name="use-a-public-website"></a>Verwenden einer öffentlichen Website
 
-Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
+Microsoft 365 enthält keine öffentliche Website für Ihr Unternehmen. Wenn Sie eine einrichten möchten, überlegen Sie, ob Sie einen Microsoft-Partner, z. B. GoDaddy oder WIX, einbeziehen sollten.
   
 1. Wechseln Sie aus dem Admin Center zu **Ressourcen** und wählen Sie **Öffentliche Website** aus.
 

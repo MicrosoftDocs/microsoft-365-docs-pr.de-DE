@@ -97,7 +97,7 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
 5. Klicken Sie im Detailbereich unter **Ergebnisse auf einem Computer exportieren** auf **Export starten**. 
     
     > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
+    > Wenn die Suchergebnisse älter als 7 Tage sind, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, klicken Sie im Detailbereich für die ausgewählte Suche auf **Suchergebnisse aktualisieren** und starten Sie dann den Export erneut, nachdem die Ergebnisse aktualisiert wurden.  
   
 6. Wählen Sie auf der Seite **Suchergebnisse exportieren** unter **Ausgabeoptionen**eine der folgenden Optionen aus:
     

@@ -46,7 +46,7 @@ Ihnen muss die Rolle "E-Mail-Empfänger" in Exchange Online zugewiesen sein, dam
     
 3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Information Governance** \> **Archiv**.
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
     
 4. Wählen Sie in der Liste der Postfächer den Benutzer aus, dessen Archivpostfach Sie aktivieren möchten.
     
@@ -61,7 +61,7 @@ Ihnen muss die Rolle "E-Mail-Empfänger" in Exchange Online zugewiesen sein, dam
     Das Erstellen des Archivpostfachs kann eine kurze Zeit dauern. Nachdem das Archivpostfach erstellt wurde, wird im Detailbereich für den ausgewählten Benutzer **Archivpostfach: Aktiviert** angezeigt. Sie müssen möglicherweise auf **Aktualisieren** ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) klicken, um die Informationen im Detailbereich zu aktualisieren. 
     
 > [!TIP]
-> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
+> Sie können auch mehrere Archivpostfächer gleichzeitig aktivieren, indem Sie mehrere Benutzer mit deaktivierten Postfächern auswählen. (Verwenden Sie dazu die UMSCHALT- oder die STRG-Taste.) Klicken Sie nach der Auswahl mehrerer Postfächer im Detailbereich auf **Aktivieren**. 
   
 ## <a name="disable-an-archive-mailbox"></a>Deaktivieren eines Archivpostfachs
   
@@ -77,7 +77,7 @@ So deaktivieren Sie ein Archivpostfach:
     
 3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Information Governance** \> **Archiv**.
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
     
 4. Wählen Sie in der Liste der Postfächer den Benutzer aus, dessen Archivpostfach Sie deaktivieren möchten.
     
@@ -90,7 +90,7 @@ So deaktivieren Sie ein Archivpostfach:
     Das Deaktivieren des Archivpostfachs kann eine kurze Zeit dauern. Nachdem das Archivpostfach deaktiviert wurde, wird im Detailbereich für den ausgewählten Benutzer **Archivpostfach: Deaktiviert** angezeigt. Sie müssen möglicherweise auf **Aktualisieren** ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) klicken, um die Informationen im Detailbereich zu aktualisieren. 
     
 > [!TIP]
-> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
+> Sie können auch mehrere Archivpostfächer gleichzeitig deaktivieren, indem Sie mehrere Benutzer mit aktivierten Postfächern auswählen. (Verwenden Sie dazu die UMSCHALT- oder die STRG-Taste.) Klicken Sie nach der Auswahl mehrerer Postfächer im Detailbereich auf **Deaktivieren**. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Verwenden von Exchange Online PowerShell zum Aktivieren oder Deaktivieren von Archivpostfächern
 

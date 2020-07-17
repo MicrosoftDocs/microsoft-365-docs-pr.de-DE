@@ -110,7 +110,7 @@ Hier erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten v
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>Andere Themen, die Sie interessieren könnten
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **Einrichten von Office-Apps auf Tablets und Smartphones**. Dieser Schritt ist erforderlich, damit Sie die auf Ihrer Teamwebsite gespeicherten Dateien über ein Tablet oder Smartphone bearbeiten können. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
     
   - [Installieren und Einrichten von Office auf einem Android-Gerät mit Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

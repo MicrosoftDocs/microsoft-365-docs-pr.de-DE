@@ -78,7 +78,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
     - **Kontaktinformationen** Erweitern Sie diesen Abschnitt, um eine Mobiltelefonnummer, Anschrift usw. einzugeben. 
     - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie, um ein sicheres Kennwort für den Benutzer anzugeben. Sie müssen Ihr Kennwort nach 90 Tagen ändern. Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
     - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll. 
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Zum Hinzufügen von Benutzern und Zuweisen von Lizenzen müssen Sie ein globaler
     - **Kontaktinformationen** Erweitern Sie diesen Abschnitt, um eine Mobiltelefonnummer, Anschrift usw. einzugeben. 
     - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie, um ein sicheres Kennwort für den Benutzer anzugeben. Sie müssen Ihr Kennwort nach 90 Tagen ändern. Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
     - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll. 
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen.
 
 ::: moniker-end
 

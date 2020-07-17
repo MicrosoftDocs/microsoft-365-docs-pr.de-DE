@@ -140,11 +140,11 @@ Nachdem das Benutzerkonto identifiziert wurde, möchten Sie möglicherweise eine
 3. Öffnen Sie das Dokument, um die Daten des Berichts zu überprüfen.
 
 > [!NOTE]
-> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+> Dies ist kein Verlaufsbericht, in dem Statusänderungen zum Zuweisungsverlauf von Aktionselementen gespeichert oder angezeigt werden. Der generierte Bericht ist eine Momentaufnahme der zugewiesenen Aktionselemente zu dem Zeitpunkt, zu dem der Bericht ausgeführt wird (Datums- und Uhrzeitstempel werden in den Bericht geschrieben). Alle nachfolgenden erneuten Zuweisungen von Aktionselementen führen beispielsweise zu anderen Berichtsdaten der Momentaufnahme, wenn dieser Bericht erneut für denselben Benutzer erstellt wird.
   
 #### <a name="reassign-action-items"></a>Erneutes Zuweisen von Aktionselementen
 
-This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+Mithilfe dieser Funktion kann eine Organisation alle aktiven oder ausstehenden Abhängigkeiten für das Benutzerkonto entfernen, indem der Besitz aller Aktionselemente (sowohl aktive als auch abgeschlossene Aktionselemente) von dem zurückgegebenen Benutzerkonto einem neuen, unten ausgewählten Benutzer erneut zugewiesen wird. Durch diese Aktion wird der Uploadverlauf des Dokuments für das zurückgegebene Benutzerkonto nicht geändert.
   
  So weisen Sie Aktionselemente einem anderen Benutzer erneut zu
   
@@ -157,9 +157,9 @@ This function enables an organization to remove any active or outstanding depend
 4. Um den Vorgang fortzusetzen, wählen Sie **OK**, andernfalls **Abbrechen**.
     
 > [!NOTE]
-> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+> Alle Aktionselemente (aktiv und abgeschlossen) werden dem neu ausgewählten Benutzer zugewiesen. Diese Aktion hat jedoch keine Auswirkungen auf den Uploadverlauf des Dokuments; in allen vom zuvor zugewiesenen Benutzer hochgeladenen Dokumenten werden weiterhin das Datum/die Uhrzeit und der Name des zuvor zugewiesenen Benutzers angezeigt. 
   
-Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+Das Ändern des Uploadverlaufs des Dokuments, um den zuvor zugewiesenen Benutzer zu entfernen, muss manuell ausgeführt werden. In diesem Fall muss der Administrator Folgendes ausführen:
   
 1. Öffnen Sie den zuvor heruntergeladenen Exportbericht.
   
@@ -175,7 +175,7 @@ Changing the document upload history to remove the previously assigned user will
   
 #### <a name="delete-user-data-history"></a>Löschen der Verlaufsdaten von Benutzern
 
-This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+Dadurch werden die Aktionselemente für alle dem zurückgegebenen Benutzer zugewiesenen Aktionselemente auf „Nicht zugewiesen“ festgelegt. Dadurch wird auch für alle von dem zurückgegebenen Benutzer hochgeladenen Dokumente der Wert „Hochgeladen von“ auf „Benutzer entfernt“ festgelegt.
   
  So löschen Sie das Aktionselement für das Benutzerkonto und den Uploadverlauf des Dokuments
   

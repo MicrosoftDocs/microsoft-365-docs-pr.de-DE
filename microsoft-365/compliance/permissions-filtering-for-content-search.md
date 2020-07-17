@@ -80,7 +80,7 @@ Woher wissen Sie, dass dieses Verfahren erfolgreich war? Nachdem Sie das Skript 
   
 Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
   
-- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
+- Ein häufig auftretendes Problem ist ein falsches Kennwort. Führen Sie die beiden Schritte erneut durch, und achten Sie besonders auf die korrekte Eingabe des Benutzernamens und Kennworts in Schritt 1.
     
 - Stellen Sie sicher, dass Ihr Konto über die Berechtigung zum Zugriff auf das Sicherheits & Compliance Center verfügt. Ausführliche Informationen finden Sie unter [Gewähren von Benutzern Zugriff auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -150,7 +150,7 @@ In diesem Beispiel können die "donh"-und "suzanf"-Benutzer nur die Postfächer 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
+In diesem Beispiel können Mitglieder der Rollengruppe „US Discovery Managers“ alle Inhaltssuchvorgänge nur für Postfächer in den USA durchführen. Dieser Filter enthält die dreistellige Landeskennzahl für die USA gemäß ISO 3166-1.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

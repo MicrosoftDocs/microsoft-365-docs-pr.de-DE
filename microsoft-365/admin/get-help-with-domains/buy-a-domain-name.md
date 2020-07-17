@@ -88,9 +88,9 @@ Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDadd
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Übertragen Ihrer Domäne auf eine andere Domänenregistrierungsstelle
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+Wenn Ihre Domäne von einem Anbieter verwaltet wird, der nicht alle erforderlichen DNS-Einträge unterstützt, können Sie sie auf eine andere Registrierungsstelle übertragen. Wenn Sie die Domäne übertragen, ändern Sie die Angabe für das Unternehmen, das die Rechnungen ausstellt, um Ihren Domänennamen zu erneuern und beizubehalten.
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+Fordern Sie die Übertragung bei der Registrierungsstelle an, auf die Sie Ihre Domäne verschieben möchten. Suchen Sie auf deren Website nach einer entsprechenden Option wie **DNS übertragen**. Und denken Sie daran: Nachdem die Änderungen vorgenommen wurden, kann die Aktualisierung im Internet ein paar Tage dauern.
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+Wenn Sie noch über keine eigene Domäne verfügen, können Sie bei einer Domänenregistrierungsstelle, einem Domänenwiederverkäufer oder sogar Ihrem aktuellen Internetanbieter problemlos online eine Domäne erwerben. Sie erhalten bei Ihrer Anmeldung bei Office 365, betrieben von 21Vianet einen Domänennamen wie contoso.partner.onmschina.cn. Vielleicht möchten Sie aber lieber einen benutzerdefinierten Domänennamen wie fourthcoffee.com verwenden.
   
 Zum Einrichten einer Domäne in Microsoft 365 müssen Sie eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
   

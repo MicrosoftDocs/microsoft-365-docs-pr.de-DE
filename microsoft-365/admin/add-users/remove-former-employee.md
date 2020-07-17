@@ -104,18 +104,18 @@ Eine Frage, die wir häufig erhalten, lautet: "Was muss ich tun, um Daten zu sch
 > [!NOTE]
 > Wenn Sie ein globaler Administrator sind, können Sie den Mitarbeiter löschen, seine e-Mail weiterleiten und auswählen, was mit dem OneDrive-Inhalt zu tun ist, indem Sie die neue geführte Benutzeroberfläche verwenden. Weitere Informationen finden Sie unter [globaler Administrator: Löschen eines Benutzers](remove-former-employee.md). Es wird jedoch empfohlen, alle hier aufgelisteten zusätzlichen Schritte abzuschließen, um sicherzustellen, dass der Mitarbeiter keinen Zugriff auf die Daten Ihres Unternehmens hat. 
   
-Here's a quick overview. Each step is explained in detail in this article.
+Hier folgt eine kurze Übersicht. Die einzelnen Schritte werden in diesem Artikel ausführlich erläutert.
   
 |||
 |:-----|:-----|
 |**Schritt** <br/> |**Zweck** <br/> |
 |1. [Speichern der Inhalte des Postfachs eines ehemaligen Mitarbeiters](#save-the-contents-of-a-former-employees-mailbox) <br/> |Dies ist für die Person, die die Arbeit des Mitarbeiters übernimmt, oder im Falle von Rechtsstreitigkeiten nützlich.  <br/> |
-|2. [Weiterleiten der E-Mails eines ehemaligen Mitarbeiters an einen anderen Mitarbeiter oder Konvertieren des Benutzerpostfachs in ein freigegebenes Postfach](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
+|2. [Weiterleiten der E-Mails eines ehemaligen Mitarbeiters an einen anderen Mitarbeiter oder Konvertieren des Benutzerpostfachs in ein freigegebenes Postfach](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Damit sorgen Sie dafür, dass die E-Mail-Adresse des ehemaligen Mitarbeiters aktiv bleibt. Wenn Kunden oder Partner E-Mails weiterhin an diese Adresse senden, werden sie hierdurch an die Person geleitet, die dessen Arbeit übernimmt.  <br/> |
 |3. [Zurücksetzen und Blockieren des mobilen Geräts eines ehemaligen Mitarbeiters](#wipe-and-block-a-former-employees-mobile-device) <br/> |Entfernt die Geschäftsdaten vom Smartphone oder Tablet.  <br/> |
 |4. [Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Microsoft 365-Daten](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Dadurch wird verhindert, dass die Person auf Ihr altes Microsoft 365-Postfach und Ihre Daten zugreift.  <br/><br/> **Tipp**: Wenn Sie den Zugriff eines Benutzers blockieren, bezahlen Sie weiterhin für Ihre Lizenz. Sie müssen die Lizenz in Ihrem Abonnement löschen, um die Bezahlung dafür zu beenden (Schritt 5).           |
-|5. [Verschieben des OneDrive-Inhalts eines Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Wenn Sie nur die Lizenz eines Benutzers entfernen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
-|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |Wenn er anstelle eines vom Unternehmen bereitgestellten Computers seinen privaten PC zum Herunterladen von Dateien aus OneDrive und SharePoint verwendet hat, haben Sie keine Möglichkeit, die dort gespeicherten Dateien zu bereinigen.  <br/><br/> Er hat weiterhin Zugriff auf alle Dateien, die mit seinem Computer synchronisiert wurden.  <br/> |
-|6. [Entfernen und löschen Sie die Microsoft 365-Lizenz von einem ehemaligen Mitarbeiter](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
+|5. [Verschieben des OneDrive-Inhalts eines Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Wenn Sie nur die Lizenz eines Benutzers entfernen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/><br/> Bevor Sie das Konto löschen, sollten Sie den seinen OneDrive-Inhalt an einen anderen Speicherort verschieben, auf den Sie einfach zugreifen können. Nachdem Sie das Konto eines Mitarbeiters gelöscht haben, wird der Inhalt auf seinem OneDrive **30** Tage lang beibehalten. Während dieser Zeit können Sie das Konto des Benutzers jedoch wiederherstellen und auf den OneDrive-Inhalte zugreifen. Wenn Sie das Konto des Benutzers wiederherstellen, können Sie auch nach diesen 30 Tagen auf den OneDrive-Inhalt zugreifen.  <br/> |
+|5a. Was passiert, wenn ein Benutzer mit seinem privaten PC auf OneDrive oder SharePoint zugegriffen hat?  <br/> |Wenn er anstelle eines vom Unternehmen bereitgestellten Computers seinen privaten PC zum Herunterladen von Dateien aus OneDrive und SharePoint verwendet hat, haben Sie keine Möglichkeit, die dort gespeicherten Dateien zu bereinigen.  <br/><br/> Er hat weiterhin Zugriff auf alle Dateien, die mit seinem Computer synchronisiert wurden.  <br/> |
+|6. [Entfernen und löschen Sie die Microsoft 365-Lizenz von einem ehemaligen Mitarbeiter](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Wenn Sie eine Lizenz entfernen, können Sie sie einem anderen Benutzer zuweisen. Sie können die Lizenz auch löschen, damit Sie erst dann wieder dafür bezahlen, wenn Sie eine andere Person einstellen.  <br/><br/> Wenn Sie eine Lizenz entfernen oder löschen, werden die alten E-Mails, Kontakte und Kalender des Benutzers für **30 Tage** gespeichert und anschließend dauerhaft gelöscht. Wenn Sie eine Lizenz entfernen oder löschen, aber das Konto nicht löschen, können Sie auch nach mehr als 30 Tagen auf den OneDrive-Inhalt des Benutzers zugreifen.  <br/> |
 |7. [Löschen des Benutzerkontos eines ehemaligen Mitarbeiters](#delete-a-former-employees-user-account)<br/> |Dadurch wird das Konto aus Ihrem Admin Center entfernt. So behalten Sie die Übersicht.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Speichern der Inhalte des Postfachs eines ehemaligen Mitarbeiters
@@ -123,11 +123,11 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 Es gibt zwei Möglichkeiten, wie Sie die Inhalte des Postfachs eines ehemaligen Mitarbeiters speichern können:
   
-1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+1. Sie fügen die E-Mail-Adresse des ehemaligen Mitarbeiters zu Ihrer Version von Outlook 2013 oder 2016 hinzu und exportieren dann die Daten in eine PST-Datei. Sie können die Daten bei Bedarf in ein anderes E-Mail-Konto importieren. Informationen dazu finden Sie unter [Zugreifen auf die und Sichern der Daten eines ehemaligen Mitarbeiters](get-access-to-and-back-up-a-former-user-s-data.md).
     
     ODER
     
-2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+2. Sie aktivieren vor dem Löschen des Benutzerkontos ein Beweissicherungsverfahren oder einen In-Situ-Speicher für das Postfach. Diese Option ist viel komplizierter als die erste, sie ist jedoch sinnvoll, wenn Ihr Enterprise-Plan die Archivierung und gesetzliche Aufbewahrungspflicht umfasst, die Möglichkeit besteht, in Rechtsstreitigkeiten zu geraten, und Sie über eine wirklich gute IT-Abteilung verfügen.
     
     Nachdem Sie das Postfach in ein "inaktives Postfach" umgewandelt haben, können Administratoren, Compliance Officer oder Datensatzmanager In-Situ-eDiscovery-Tools in Exchange Online verwenden, um auf die Inhalte zuzugreifen und sie zu durchsuchen.
     
@@ -140,9 +140,9 @@ Es gibt zwei Möglichkeiten, wie Sie die Inhalte des Postfachs eines ehemaligen 
 
 In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters einem anderen Mitarbeiter zu, oder Sie [konvertieren das Postfach des Benutzers in ein freigegebenes Postfach](../email/convert-user-mailbox-to-shared-mailbox.md), das Sie erstellt haben. 
   
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
+- Das Erstellen eines freigegebenen Postfachs ist die kostengünstigere Methode, weil Sie für keine Lizenz bezahlen müssen, **solange das Postfach kleiner als 50 GB ist**. Bei über 50 GB müssen Sie dem Postfach eine Lizenz zuweisen. 
     
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- Wenn Sie das Postfach in ein freigegebenes Postfach konvertieren, stehen auch alle alten E-Mails zur Verfügung. Dadurch kann eine Menge an Speicherplatz belegt werden.
     
 - Wenn Sie die E-Mail-Weiterleitung eingerichtet haben, werden nur  *neue*  an den ehemaligen Mitarbeiter gesendeten E-Mails jetzt an den aktuellen Mitarbeiter gesendet. 
     
@@ -159,7 +159,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 3. Wählen Sie unter **e-Mail-weiter**Leitung die Option **e-Mail Weiterleitung verwalten**aus.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
 5. Klicken Sie auf **Speichern**. 
     
@@ -175,7 +175,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 3. Wählen Sie neben **e-Mail-Weiterleitung**die Option **Bearbeiten**aus.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
 5. Klicken Sie auf **Speichern**. 
     
@@ -191,7 +191,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 3. Wählen Sie neben **e-Mail-Weiterleitung**die Option **Bearbeiten**aus.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
 5. Klicken Sie auf **Speichern**. 
     
@@ -217,7 +217,7 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
 6. Klicken Sie auf **Speichern**. 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+    **Tipp**: Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen Blackberry Enterprise-Dienst entfernen bzw. darin deaktivieren. Sie sollten auch alle Blackberry-Geräte für den Benutzer deaktivieren. Die einzelnen Schritte zum Deaktivieren eines Benutzers finden Sie im Administratorhandbuch für die BlackBerry Business Cloud Services. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Microsoft 365-Daten
 <a name="bkmk_block"> </a>
@@ -340,16 +340,16 @@ Weitere Informationen zum Verwalten von Benutzerlizenzen für Microsoft 365 for 
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Auswirkungen des gelöschten Mitarbeiterkontos auf Skype for Business
 <a name="bkmk_remove"> </a>
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+Wenn Sie die Lizenz eines Benutzers aus Office 365 entfernen, wird die dem Benutzer zugeordnete PSTN Calling-Nummer freigegeben. Sie können sie dann einem anderen Benutzer zuweisen.
   
-If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+Wenn der Benutzer einer Warteschlangengruppe angehört, ist er kein erreichbares Ziel der Anrufwarteschlangen-Agents mehr. Deshalb empfiehlt es sich, den Benutzer auch aus den Gruppen zu entfernen, die der Anrufwarteschlange zugeordnet sind. 
   
 ## <a name="delete-a-former-employees-user-account"></a>Löschen des Benutzerkontos eines ehemaligen Mitarbeiters
 <a name="bkmk_delete"> </a>
 
 Nachdem Sie auf alle Benutzerdaten des ehemaligen Mitarbeiters zugegriffen und diese gespeichert haben, können Sie das Konto des ehemaligen Mitarbeiters löschen.
   
-Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+Löschen Sie das Konto nicht, wenn Sie eine E-Mail-Weiterleitung eingerichtet oder das Konto in ein freigegebenes Postfach konvertiert haben. Für beide Funktionen wird das Konto benötigt, damit die Weiterleitung oder Postfachfreigabe funktioniert.
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker-end
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+Wenn Sie einen Benutzer löschen, wird das Konto ungefähr 30 Tage lang deaktiviert (inaktiv). Sie haben in dieser Zeit noch die Möglichkeit, das Konto wiederherzustellen, bevor es endgültig gelöscht wird.
   
 ### <a name="does-your-organization-use-active-directory"></a>Verwendet Ihre Organisation Active Directory?
 
@@ -400,8 +400,8 @@ Hier finden Sie Informationen dazu, wie Sie die E-Mail-Nutzung für einen Mitarb
 |:-----|:-----|
 |**Mögliche Aktionen** <br/> |**Wie geht das?** <br/> |
 |Sitzung beenden (z. B. Outlook im Web, Outlook, Exchange Active Sync usw.) und Öffnen einer neuen Sitzung erzwingen  <br/> |Kennwort zurücksetzen  <br/> |
-|Sitzung beenden und Zugriff auf zukünftige Sitzungen (für alle Protokolle) sperren  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Sitzung für ein bestimmtes Protokoll (z. B. ActiveSync) beenden  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Sitzung beenden und Zugriff auf zukünftige Sitzungen (für alle Protokolle) sperren  <br/> |Deaktivieren Sie das Konto. Beispielsweise (im Exchange Admin Center oder mithilfe von PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|Sitzung für ein bestimmtes Protokoll (z. B. ActiveSync) beenden  <br/> |Deaktivieren Sie das Protokoll. Beispielsweise (im Exchange Admin Center oder mithilfe von PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 Die oben aufgeführten Vorgänge können an drei Stellen erfolgen:
   
@@ -414,9 +414,9 @@ Die oben aufgeführten Vorgänge können an drei Stellen erfolgen:
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>So erhalten Sie eine schnelle Reaktion auf die Kündigung eines Kontos
 
- **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
+ **Schnellste Option**: Verwenden Sie das Exchange Admin Center (über PowerShell) oder das Azure Active Directory Admin Center. In einer lokalen Umgebung kann es mehrere Stunden dauern, bis die Änderung über das Azure Active Directory-Synchronisierungstool synchronisiert wurde. 
   
- **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
+ **Schnellste Option für einen Benutzer mit lokaler Präsenz und im Exchange-Rechenzentrum**: Beenden Sie die Sitzung über das Azure Active Directory Admin Center bzw. das Exchange Admin Center, UND führen Sie die Änderung auch in der lokalen Umgebung auch. Andernfalls wird die Änderung im Azure Active Directory Admin Center bzw. Exchange Admin Center durch DirSync überschrieben. 
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

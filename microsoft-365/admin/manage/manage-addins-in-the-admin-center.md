@@ -128,7 +128,7 @@ Wenn Sie verhindern möchten, dass sich ein Benutzer mit einem Microsoft-Konto a
 
 Nachdem Sie ein Add-in bereitgestellt haben, können Ihre Endbenutzer damit beginnen, es in Ihren Office-Anwendungen zu verwenden (siehe [Start mit der Office-Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Das Add-in wird auf allen Plattformen angezeigt, die das Add-in unterstützt.
   
-If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
+Wenn das Add-In Add-In-Befehle unterstützt, werden diese im Office-Menüband angezeigt. Im folgenden Beispiel wird der Befehl **Zitat suchen** für das Add-In **Zitate** angezeigt. 
 
 ![Office-Menüband mit Such Zitaten](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

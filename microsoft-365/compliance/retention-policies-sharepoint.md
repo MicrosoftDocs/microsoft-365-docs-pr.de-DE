@@ -19,6 +19,7 @@ search.appverid:
 description: Informationen zu Aufbewahrungsrichtlinien, die für SharePoint und OneDrive gelten
 ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049883"
@@ -74,9 +75,9 @@ Die Versionsverwaltung ist ein Feature aller Dokumentbibliotheken in SharePoint 
   
 Eine Aufbewahrungsrichtlinie behält alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto bei. Wenn ein Dokument, das einer Richtlinie für die reine Aufbewahrung untersteht, zum ersten Mal bearbeitet wird, wird eine Version des ursprünglichen Dokuments in das permanente Dokumentarchiv kopiert und dort aufbewahrt. Wenn ein Dokument, das einer Richtlinie für die reine Aufbewahrung untersteht, gelöscht wird, werden alle bestehenden Versionen in das permanente Dokumentarchiv kopiert. Vorrausetzung hierfür ist, dass die Versionsverwaltung aktiviert sein muss. Jede Version eines Dokuments im permanenten Dokumentarchiv bleibt in ihrem jeweiligen Aufbewahrungszeitraum als eigenständiges Element bestehen:
   
-- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- Wenn die Aufbewahrungsrichtlinie darauf basiert, wann der Inhalt erstellt wurde, verfügt jede Version über das gleiche Ablaufdatum wie das ursprüngliche Dokument. Das ursprüngliche Dokument und dessen Versionen laufen gleichzeitig ab.
 
-- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- Wenn die Aufbewahrungsrichtlinie darauf basiert, wann der Inhalt zuletzt geändert wurde, verfügt jede Version über ein eigenes Ablaufdatum basierend auf dem Zeitpunkt der Änderung des ursprünglichen Dokuments, aus der diese Version hervorgegangen ist. Die Originaldokumente und deren Versionen laufen unabhängig voneinander ab.
 
 > [!NOTE]
 > Aufbewahrte Versionen von SharePoint- und OneDrive-Dokumenten lassen sich nicht mithilfe von eDiscovery-Tools durchsuchen.

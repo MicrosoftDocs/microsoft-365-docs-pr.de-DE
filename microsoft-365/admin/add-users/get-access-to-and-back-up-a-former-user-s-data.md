@@ -160,7 +160,7 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
 6. Wählen Sie das Konto aus, das Sie exportieren möchten, indem Sie den Namen oder die e-Mail-Adresse wie Postfach-Anne Weiler oder Anne@contoso.com auswählen. Wenn Sie den gesamten Inhalt des Kontos exportieren möchten, einschließlich aller E-Mails, Kalender, Kontakte, Aufgaben und Notizen, stellen Sie sicher, dass das Kontrollkästchen **Unterordner einbeziehen** aktiviert ist. 
     
     > [!NOTE]
-    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
+    > Sie können immer ein Konto gleichzeitig exportieren. Wenn Sie mehrere Konten exportieren möchten, wiederholen Sie nach dem Export des einen Kontos diese Schritte. 
   
     ![Dialogfeld 'Outlook-Datendatei exportieren' mit ausgewähltem Ordner der obersten Ebene und aktiviertem 'Unterordner einbeziehen'](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   

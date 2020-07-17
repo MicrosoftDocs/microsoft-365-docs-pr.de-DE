@@ -26,7 +26,7 @@ ms.locfileid: "44936618"
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Verwenden von Advanced eDiscovery (Classic)-Hilfsprogrammen
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Die Dienstprogramme, die in Advanced eDiscovery angezeigt und verfügbar sind, hängen von Kontext und Benutzerrollen ab.
   

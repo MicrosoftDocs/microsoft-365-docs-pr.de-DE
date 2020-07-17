@@ -57,19 +57,19 @@ Wenn Sie einige Ihrer persönlichen Daten auf die neue Business-Identität versc
 4. Wählen Sie **hochladen** aus, um die Dateien von Ihrer Festplatte zu kopieren, auf der Sie die OneDrive-Dateien kopiert haben. 
   
     > [!NOTE]
-    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
+    >  Sie können einzelne Dateien und Dateigruppen (wie alle Dateien in einem bestimmten Ordner) gleichzeitig hochladen, Sie können jedoch keinen Ordner nach OneDrive for Business kopieren. Stattdessen müssen Sie in OneDrive for Business die gewünschte Ordnerstruktur erstellen. >  Wenn Sie Dateien in einen Ordner kopieren möchten, den Sie in Schritt 4 erstellt haben, öffnen Sie den Ordner, bevor Sie die Dateien hochladen. Andernfalls werden die Dateien in den Stammordner hochgeladen. Sie können die Dateien auch zwischen den Ordnern in OneDrive for Business verschieben, nachdem Sie sie hochgeladen haben. 
   
 ## <a name="outlookemail"></a>[Outlook/E-Mail](#tab/Outlook)
   
  **Exportieren von Outlook 2013-Daten in eine Outlook-Datendatei**
-1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+1. Bevor Sie eine Outlook-Datendatei (PST) erstellen können, muss das Konto, aus dem Sie Outlook-Daten exportieren möchten, bereits in der Desktopversion von Outlook hinzugefügt worden sein. Weitere Informationen zum Hinzufügen eines Kontos in Outlook 2013 oder höher finden Sie unter [Einrichten von E-Mail in Outlook (für Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Jeden Benutzer muss die Schritte unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalender in einer Outlook-PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) ausführen.
     
  **Einrichten Ihres neuen E-Mail-Kontos in Outlook**
 1. Jeder Benutzer muss sein neues e-Mail-Konto einrichten, das im Lieferumfang des Microsoft 365 for Business-Abonnements aufgeführt ist. Hierfür benötigt er die Adresse des neuen E-Mail-Kontos. Das e-Mail-Konto jedes Benutzers ist identisch mit dem Benutzernamen, mit dem er sich bei Microsoft 365 for Business anmeldet. Also beispielsweise: laura@onmicrosoft.com oder karl@contoso.com.
     
-2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+2. Bitten Sie jeden Benutzer, sein E-Mail-Konto in Outlook hinzuzufügen. Wenn Sie wissen möchten, wie das geht, lesen Sie [Einrichten von E-Mail in Outlook (für Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) oder [Einrichten von E-Mail in Outlook für Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importieren von -Daten aus einer Outlook-Datendatei**
 1. Dadurch werden die e-Mails, Kalender, Aufgaben und Kontakte, die in der PST-Datei gespeichert sind, in Ihr Microsoft 365 for Business-e-Mail-Konto zusammengeführt.

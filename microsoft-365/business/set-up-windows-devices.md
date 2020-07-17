@@ -67,7 +67,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
     
 3. Beenden Sie die Windows 10-Geräteinstallation.
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   Sobald Sie fertig sind, wird der Benutzer in Ihrer Organisation mit Azure AD verbunden. Ziehen Sie zur Sicherheit [Sicherstellen, dass das Gerät mit Azure AD verbunden ist](#verify-the-device-is-connected-to-azure-ad) zurate. 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Geräte, die bereits eingerichtet wurden und Windows 10 Pro ausführen
 
@@ -97,7 +97,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
   
 6. Überprüfen Sie auf der Seite **Stellen Sie sicher, dass es sich um Ihre Organisation handelt** , dass die Informationen richtig sind, und klicken Sie auf **beitreten**.
   
-   On the **You're all set!** page, click **Done**.
+   Klicken Sie auf der Seite **Sie sind fertig!** auf **Fertig**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

@@ -27,14 +27,14 @@ ms.locfileid: "44755224"
 
  **Zusammenfassung:** Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.
   
-This article is a step-by-step deployment guide for creating and configuring an isolated SharePoint Online team site in Microsoft Office 365. These steps assume the use of the three default SharePoint groups and corresponding permission levels, with a single Azure Active Directory (AD)-based access group for each level of access.
+Dieser Artikel ist eine schrittweises Bereitstellungshandbuch für das Erstellen und Konfigurieren einer isolierten SharePoint Online-Teamwebsite in Microsoft Office 365. Bei diesen Schritten wird die Verwendung der drei SharePoint-Standardgruppen und der entsprechenden Berechtigungsstufen vorausgesetzt, wobei für jede Zugriffsebene eine einzige Azure Active Directory (AD)-basierte Zugriffsgruppe vorhanden ist.
   
 ## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>Phase 1: Erstellen und Füllen der Zugriffsgruppen der Teamwebsite
 
 In dieser Phase erstellen Sie die drei Azure AD-basierten Zugriffsgruppen für die drei SharePoint-Standardgruppen und füllen sie mit den entsprechenden Benutzerkonten.
   
 > [!NOTE]
-> The following steps assume that all necessary user accounts already exist and are assigned the appropriate licenses. If not, please add them and assign licenses before proceeding to step 1. 
+> In den folgenden Schritte wird davon ausgegangen, dass alle erforderlichen Benutzerkonten bereits vorhanden und ihnen die entsprechenden Lizenzen zugewiesen sind. Wenn dies nicht der Fall ist, fügen Sie sie hinzu, und weisen Sie Lizenzen zu, bevor Sie mit Schritt 1 fortfahren. 
   
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Schritt 1: Auflisten der SharePoint Online-Administratoren für die Website
 
@@ -93,7 +93,7 @@ Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen.
   
 ![Die drei Zugriffsgruppen für die Bereitstellung einer isolierten SharePoint Online-Website.](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Step 5. Add the user accounts to the access groups
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Schritt 5: Hinzufügen der Benutzerkonten zu den Zugriffsgruppen
 
 Führen Sie in diesem Schritt die folgenden Aufgaben aus:
   

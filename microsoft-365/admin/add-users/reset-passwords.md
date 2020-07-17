@@ -44,7 +44,7 @@ Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Sc
   
 ## <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+Es wird dringend empfohlen, dass Sie die Self-Service-Kennwortzurücksetzung einrichten. Auf diese Weise müssen Sie die Kennwörter für die Benutzer nicht manuell zurücksetzen. Informationen zur Vorgehensweise finden Sie unter [Zulassen, dass Benutzer ihre eigenen Kennwörter in Office 365 zurücksetzen](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Zurücksetzen eines Geschäfts Kennworts für eine andere Person
 
@@ -118,7 +118,7 @@ Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausf
 ## <a name="reset-business-passwords-in-bulk"></a>Zurücksetzen von Geschäfts Kennwörtern in Massen
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Verwenden Sie PowerShell! Lesen Sie diesen Beitrag von Eyal Doron: [Verwalten von Kennwörtern mit PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Und hier ist ein verwandter Artikel: [Festlegen der Kennwörter für mehrere Benutzerkonten](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   

@@ -179,11 +179,11 @@ Ja, Sie können Nachrichten auf Android und IOS anzeigen, indem Sie die apps OM 
   
  **F. Sind Antworten und weitergeleitete Nachrichten verschlüsselt?**
   
-Yes. Responses continue to be encrypted throughout the duration of the thread.
+Ja. Antworten werden während des gesamten Nachrichtenverlaufs weiterhin verschlüsselt.
   
  **F. stellt Office 365 Nachrichtenverschlüsselung eine Lokalisierung bereit?**
   
-Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
+Eingehende E-Mails und HTML-Inhalte werden basierend auf den E-Maileinstellungen des Absenders lokalisiert. Das Anzeigeportal wird basierend auf den Browsereinstellungen des Empfängers lokalisiert. Allerdings wird der eigentliche Text (Inhalt) der verschlüsselten Nachricht nicht lokalisiert.
   
  **F. welche Verschlüsselungsmethode wird für Office 365 Nachrichtenverschlüsselung verwendet?**
   
@@ -191,13 +191,13 @@ Office 365 Nachrichtenverschlüsselung verwendet RMS (Rights Management Services
   
 - Wenn Sie Microsoft Azure RMS verwenden, um die Schlüssel zu erhalten, wird kryptografischer Modus 2 verwendet. Kryptografiemodus 2 ist eine aktualisierte und weiterentwickelte Kryptografieimplementierung für AD RMS. Er bietet Unterstützung für RSA 2048 für Signatur und Verschlüsselung sowie Unterstützung für SHA-256 für die Signatur.
 
-- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
+- Wenn Sie Active Directory (AD) RMS verwenden, um die Schlüssel abzurufen, wird entweder Kryptografiemodus 1 oder 2 verwendet. Die verwendete Methode hängt von Ihrer lokalen AD RMS-Bereitstellung ab. Kryptografiemodus 1 ist die ursprüngliche Kryptografieimplementierung für AD RMS. Er bietet Unterstützung für RSA 1024 für Signatur und Verschlüsselung sowie Unterstützung für SHA-1 für die Signatur. Dieser Modus wird durch alle aktuellen Versionen von RMS weiter unterstützt.
 
 Weitere Informationen finden Sie unter [AD RMS Cryptographic Modes](https://go.microsoft.com/fwlink/p/?LinkId=398616).
   
  **F. Warum sagen einige verschlüsselte Nachrichten, dass Sie aus Office365@Messaging.Microsoft.com stammen** ?
   
-When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
+Wenn eine verschlüsselte Antwort aus dem Verschlüsselungsportal oder über die OME Viewer-App gesendet wird, wird die Absender-E-Mail-Adresse auf Office365@messaging.microsoft.com festgelegt, da die verschlüsselte Nachricht über einen Microsoft-Endpunkt gesendet wird. Dadurch wird verhindert, dass verschlüsselte Nachrichten als Spam markiert werden. Der angezeigte Name in der E-Mail und die Adresse im Verschlüsselungsportal werden durch diese Bezeichnung nicht geändert. Außerdem gilt diese Bezeichnung nur für über das Portal gesendete Nachrichten und nicht für Nachrichten, die über einen anderen E-Mail-Client gesendet werden.
   
  **F. Ich bin ein Exchange Hosted Encryption (ehst)-Abonnent. Wo kann ich mehr über das Upgrade auf Office 365 Nachrichtenverschlüsselung erfahren?**
   

@@ -47,9 +47,9 @@ Ihre Rechnung oder Rechnung enthält drei Adressen:
 
 - **Rechnungsadresse** Dies ist die Adresse Ihrer zuständigen Rechnungsabteilung und meist mit der **Auftraggeberadresse** identisch.
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **Dienstnutzungsadresse** Dies ist die Adresse, unter welcher der Dienst genutzt wird. Normalerweise ist diese Adresse mit der **Auftraggeberadresse** identisch. Wenn Ihre Organisation Remotebenutzer oder mehrere Niederlassungen hat, verwenden Sie die Adresse, an der sich die Mehrheit der Benutzer befindet.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie eine oder mehrere Adressen ändern. Sie können auch eine alternative E-Mail-Adresse zum Empfang von Rechnungsbenachrichtigungen angeben, und die alternative E-Mail-Adresse für andere Administratoren ändern.
   
 ::: moniker range="o365-worldwide"
 

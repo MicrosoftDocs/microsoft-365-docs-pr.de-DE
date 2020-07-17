@@ -27,7 +27,7 @@ ms.locfileid: "44818894"
 In Advanced eDiscovery können Sie mit dem Such-und Markierungs Modul die Dokumente in Ihrem Fall durchsuchen, in der Vorschau anzeigen und organisieren. Derzeit befindet sich dieses Modul in der Betaphase. Eine kurze Demonstration der Suche und Kennzeichnung finden Sie unter [Verwalten von Daten mit erweiterten eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) -Videos.
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="search-the-documents-in-your-case"></a>Durchsuchen der Dokumente in Ihrem Fall
 
