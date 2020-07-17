@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, die Ihnen helfen, die Compliance in Microsoft 365 schnell zu beginnen.
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126614"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153688"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für erste Schritte mit der Microsoft 365-Compliance
 
@@ -101,6 +101,34 @@ Mit der vordefinierten Richtlinie für *vertrauliche Informationen* können Sie 
 
 Eine Schritt-für-Schritt-Anleitung zum Planen und Konfigurieren der Kommunikations Kompatibilität finden Sie unter [Planen der Kommunikation](communication-compliance-plan.md) Compliance und [Erste Schritte mit der Kommunikation Compliance](communication-compliance-configure.md). Informationen zur Lizenzierung von Kommunikationsrichtlinien finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Aufgabe 9: sehen Sie, was mit Ihren vertraulichen Elementen passiert
+
+Vertraulichkeits Bezeichnungen, vertrauliche Informationstypen, Aufbewahrungs Bezeichnungen und Richtlinien sowie Schulungs relevante Klassifizierungen können verwendet werden, um vertrauliche Elemente in Exchange, SharePoint und OneDrive zu klassifizieren und zu bezeichnen, wie Sie es in den vorherigen Aufgaben gesehen haben. Der letzte Schritt in ihrer schnellen Aufgabenstellung ist, zu sehen, welche Elemente beschriftet wurden und welche Aktionen Ihre Benutzer für diese vertraulichen Elemente durchführen. Diese Sichtbarkeit wird von [Inhalts-Explorer](data-classification-content-explorer.md) und [Aktivitäts-Explorer](data-classification-activity-explorer.md) bereitgestellt.
+
+### <a name="content-explorer"></a>Inhalts-Explorer
+ Mit dem Inhalts-Explorer können Sie alle Elemente, die als vertraulicher Informationstyp klassifiziert wurden oder zu einer bestimmten Klassifizierung gehören, in ihrem systemeigenen Format anzeigen, sowie alle Elemente, für die eine Sensitivitäts-oder Aufbewahrungs Bezeichnung gilt.
+
+Eine Schritt-für-Schritt-Anleitung zur Verwendung des Inhalts-Explorers finden Sie unter [kennen ihrer Daten Datenklassifizierung (Übersicht](data-classification-overview.md)) und [Erste Schritte mit dem Inhalts-Explorer](data-classification-content-explorer.md).
+
+### <a name="activity-explorer"></a>Aktivitäten-Explorer
+Mit dem Aktivitäts-Explorer können Sie überwachen, was mit den vertraulichen Elementen ihrer klassifizierten und beschrifteten Elemente geschieht:
+- SharePoint
+- Exchange
+- OneDrive
+
+Es stehen über 30 verschiedene Filter zur Verfügung, einschließlich:
+
+- Zeitraum:
+- Aktivitätstyp
+- Speicherort
+- Benutzer
+- Vertraulichkeitsbezeichnung
+- Aufbewahrungsbezeichnung
+- Dateipfad
+- DLP-Richtlinie
+
+Eine Schritt-für-Schritt-Anleitung zur Verwendung des Aktivitäts-Explorers finden Sie unter [Erste Schritte mit dem Aktivitäts-Explorer](data-classification-activity-explorer.md).
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie die Grundlagen für die Verwaltung der Richtlinientreue für Ihre Organisation konfiguriert haben, sollten Sie die folgenden Kompatibilitätslösungen in Microsoft 365 verwenden, um vertrauliche Informationen zu schützen und zusätzliche Insider Risiken zu erkennen und zu handeln.
@@ -125,7 +153,7 @@ Eine Schritt-für-Schritt-Anleitung zum Definieren von benutzerdefinierten Typen
 
 ### <a name="prevent-data-loss"></a>Verhindern von Datenverlust
 
-Mit den [Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md) können Sie vertrauliche Informationen in Ihrer Microsoft 365-Organisation identifizieren, überwachen und automatisch schützen. Verwenden Sie DLP-Richtlinien, um vertrauliche Informationen in Microsoft-Diensten zu identifizieren, die unbeabsichtigte Freigabe vertraulicher Informationen zu verhindern und Benutzern zu helfen, die Kompatibilität zu verbringen, ohne den Workflow zu unterbrechen.
+Mit den [Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md) können Sie vertrauliche Informationen in Ihrer Microsoft 365-Organisation identifizieren, überwachen und automatisch schützen. Verwenden Sie DLP-Richtlinien, um vertrauliche Elemente in Microsoft-Diensten zu identifizieren, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern und Benutzer dabei zu unterstützen, die Kompatibilität zu verbleiben, ohne den Workflow zu unterbrechen.
 
 Eine Schritt-für-Schritt-Anleitung zum Konfigurieren von DLP-Richtlinien finden Sie unter [Erste Schritte mit DLP-Richtlinien Empfehlungen](get-started-with-dlp-policy-recommendations.md) und [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md). Informationen zur Lizenzierung von Datenverlust Management finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
