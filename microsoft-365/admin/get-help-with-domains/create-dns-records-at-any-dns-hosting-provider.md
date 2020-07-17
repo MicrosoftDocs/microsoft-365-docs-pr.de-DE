@@ -20,12 +20,12 @@ description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge b
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049666"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138256"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne
 
@@ -37,7 +37,9 @@ Wenn Sie keine Domäne hinzufügen, verwenden Personen in Ihrer Organisation die
 
 [Lesen Sie in den die häufig gestellten Fragen (FAQ) zu Domänen nach](../setup/domains-faq.md), wenn Sie unten nicht finden, wonach Sie suchen.
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>Schritt 1: Hinzufügen eines TXT-Eintrags, um zu überprüfen, ob Sie die Domäne besitzen
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Schritt 1: Fügen Sie einen TXT- oder MX-Eintrag hinzu, um den Besitz der Domäne zu verifizieren
+
+### <a name="recommended-verify-with-a-txt-record"></a>Die Verifizierung anhand eines TXT-Eintrags wird empfohlen
 
 Zunächst müssen Sie nachweisen, dass Sie der Besitzer der Domäne sind, die Sie Microsoft 365 hinzufügen möchten.
 
@@ -56,6 +58,25 @@ Beispiel:
 
 Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
+### <a name="verify-with-an-mx-record"></a>Verifizierung anhand eines MX-Eintrags
+
+Wenn Ihre Registrierungsstelle das Hinzufügen von TXT-Einträgen nicht unterstützt, können Sie die Verifizierung anhand eines MX-Eintrags vornehmen.
+
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com/) an, und wählen Sie **Alle anzeigen** > **Einstellungen** > **Domänen** aus.
+2. Melden Sie sich auf einer neuen Browserregisterkarte oder in einem neuen Browserfenster bei Ihrem DNS-Hostinganbieter an, und suchen Sie dann die Stelle, an der Sie Ihre DNS-Einstellungen verwalten (z. B. Zonendateieinstellungen, Domänen verwalten, Domänen-Manager, DNS-Manager).
+3. Wechseln Sie zur Seite „DNS-Manager“ Ihres Anbieters und fügen Sie den im Admin Center angegebenen MX-Eintrag zu Ihrer Domäne hinzu.
+
+Die **Priorität** dieses MX-Eintrags muss die höchste für alle vorhandenen MX-Einträge der Domäne sein. Andernfalls kann dies Auswirkungen auf das Senden und Empfangen von E-Mails haben. Sie sollten diese Einträge löschen, sobald die Verifizierung der Domäne abgeschlossen ist.
+
+Stellen Sie sicher, dass die Felder auf die folgenden Werte festgelegt sind:
+
+- Eintragstyp: `MX`
+- Priorität: Legen Sie dies auf den höchsten verfügbaren Wert fest, in der Regel `0`.
+- Hostname: `@`
+- Verweist auf die Adresse: Kopieren Sie den Wert aus dem Admin Center, und fügen Sie ihn hier ein.
+- TTL: `3600‎` (oder die Standardeinstellung Ihres Anbieters)
+
+Wenn Microsoft den richtigen MX-Eintrag findet, ist die Domäne verifiziert.
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>Schritt 2: Hinzufügen von DNS-Einträgen zum Verbinden von Microsoft-Diensten
 

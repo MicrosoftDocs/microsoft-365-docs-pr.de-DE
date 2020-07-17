@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00ad2290a252ad014e9b364d9aa5ce59f94c6516
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f3f2f5525337ded683145a6d570562784910f236
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817644"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126736"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen für Office 365 im Rahmen der DSGVO und des CCPA
 
@@ -163,12 +163,11 @@ In der folgenden Tabelle werden einige Bedingungen aufgelistet, die Sie verwende
 
 ***Tabelle 2: Bereich der Suche durch Verwenden von Bedingungen eingrenzen***
 
-||||
+| Bedingung | Beschreibung | Beispiel für einen Bedingungswert |
 | :--- | :--- |:--- |
-|**Bedingung**|**Beschreibung** |**Beispiel für Bedingungswerte**|
 | Dateityp | Die Erweiterung eines Dokuments oder einer Datei. Verwenden Sie diese Bedingung zum Suchen nach Office-Dokumenten und -Dateien, die von Office 365-Anwendungen erstellt wurden. Verwenden Sie diese Bedingungen bei der Suche nach Dokumenten, die sich auf SharePoint Online-Websites und in OneDrive for Business-Konten befinden.<br/>Die entsprechende Dokumenteigenschaft ist der Dateityp. <br/>Eine vollständige Liste der Dateierweiterungen, nach denen Sie suchen können, finden Sie unter „Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint“](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv: Sucht nach durch Trennzeichen getrennten Dateien (CSV-Dateien); Excel-Dateien können im CSV-Format gespeichert werden, und CSV-Dateien können ganz einfach in Excel importiert werden.<br><br>&bull;&nbsp;&nbsp;docx: sucht nach Word-Dateien <br><br>&bull;&nbsp;&nbsp;mpp: sucht nach Projektdateien<br/><br>&bull;&nbsp;&nbsp;one: sucht nach OneNote-Dateien <br><br>&bull;&nbsp;&nbsp;pdf: Sucht nach Dateien, die in einem PDF-Format gespeichert sind. <br><br>&bull;&nbsp;&nbsp;pptx: sucht nach PowerPoint-Dateien <br><br>&bull;&nbsp;&nbsp;xlxs: sucht nach Excel-Dateien <br><br>&bull;&nbsp;&nbsp;vsd: sucht nach Visio-Dateien <br><br>&bull;&nbsp;&nbsp;wmv: sucht nach Windows Media Video-Dateien <br>|
 | Nachrichtentyp | Der E-Mail-Nachrichtentyp, nach dem gesucht wird. Verwenden Sie diese Bedingung, um Postfächer nach Kontakten (Personen), Besprechungsaufgaben (Kalender) oder Skype for Business-Unterhaltungen zu durchsuchen. Die entsprechende E-Mail-Eigenschaft ist *Art*.|&bull;&nbsp;&nbsp;*contacts: sucht in der Liste „Meine Kontakte (Personen)“ eines Postfachs <br><br>&bull;&nbsp;&nbsp;* email: sucht nach E-Mail-Nachrichten <br><br>&bull;&nbsp;&nbsp;*im: sucht nach Skype for Business-Unterhaltungen <br><br>&bull;&nbsp;&nbsp;* meetings: durchsucht Termine und Besprechungsanfragen (Kalender) <br><br>&bull;&nbsp;&nbsp;*tasks: Sucht in der Liste „Meine Aufgaben“ (Aufgaben); dieser Wert gibt auch Aufgaben zurück, die in Microsoft To-Do erstellt wurden.<br>|
-| Compliancetag |Die Beschriftung, die einer E-Mail-Nachricht oder einem Dokument zugewiesen wird. Beschriftungen werden verwendet, um E-Mails und Dokumente für die Datenkontrolle zu klassifizieren, die durch diese Beschriftung definiert wird, und um Aufbewahrungsregeln durchzusetzen. Verwenden Sie diese Bedingung, um nach Elementen suchen, denen automatisch oder manuell eine Beschriftung zugewiesen wurde.<br/>Dies ist eine nützliche Bedingung für Untersuchungen im Rahmen von Anträgen betroffener Personen, da Ihr Unternehmen möglicherweise Beschriftungen verwendet, um Inhalte zu klassifizieren, die im Zusammenhang mit Datenschutz stehen, bzw. Inhalte, die personenbezogene Daten oder vertrauliche Informationen enthalten. Weitere Informationen finden Sie im Abschnitt "Verwenden der Inhaltssuche zum Suchen aller Inhalte, denen eine bestimmte Beschriftung zugewiesen wurde in [Übersicht über Beschriftungen in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personenbezogene Daten"|
+| Compliancetag |Die Beschriftung, die einer E-Mail-Nachricht oder einem Dokument zugewiesen wird. Beschriftungen werden verwendet, um E-Mails und Dokumente für die Datenkontrolle zu klassifizieren, die durch diese Beschriftung definiert wird, und um Aufbewahrungsregeln durchzusetzen. Verwenden Sie diese Bedingung, um nach Elementen suchen, denen automatisch oder manuell eine Beschriftung zugewiesen wurde.<br/>Dies ist eine nützliche Bedingung für Untersuchungen im Rahmen von Anträgen betroffener Personen, da Ihr Unternehmen möglicherweise Bezeichnungen verwendet, um Inhalte zu klassifizieren, die im Zusammenhang mit Datenschutz stehen, bzw. Inhalte, die personenbezogene Daten oder vertrauliche Informationen enthalten. Weitere Informationen finden Sie im Abschnitt „Verwenden der Inhaltssuche zum Auffinden aller Inhalte, denen eine bestimmte Bezeichnung zugewiesen wurde“ unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personenbezogene Daten"|
 ||||
 
 Es gibt viele weitere E-Mail- und das Dokumenteigenschaften und Suchbedingungen, die Sie verwenden können, um komplexere Suchabfragen zu erstellen. Weitere Informationen finden Sie in den folgenden Abschnitten im Hilfethema [Schlüsselwortabfragen und Suchbedingungen für die Inhaltssuche](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
@@ -366,7 +365,7 @@ Hier finden Sie eine spezifische Anleitung für ein Kursnotizbuch.
 4. Bearbeiten Sie die Suche, die Sie in Schritt 1 erstellt haben, ersetzen Sie den Namen des Kurses in der Schlüsselwortabfrage durch den Ordnerpfad des Kursnotizbuchs, und fügen Sie vor den Ordnerpfad die Websiteeigenschaft **path** ein, z. B. **path: "<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Achten Sie darauf, dass Sie die Anführungszeichen und den Schrägstrich am Ende einfügen.
 5. Fügen Sie eine Suchbedingung hinzu, wählen Sie die Dateitypbedingung aus und verwenden Sie dabei „one“ für den Dateityp. Dadurch werden alle OneNote-Dateien in den Suchergebnissen zurückgegeben. Die sich daraus ergebende Schlüsselwortsyntax würde folgendermaßen aussehen:[](#building-search-queries-to-find-personal-data)
 
-    ```Query
+   ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
 
