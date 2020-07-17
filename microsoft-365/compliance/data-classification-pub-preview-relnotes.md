@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Veröffentlichungshinweise für die Datenklassifizierung.
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327606"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127140"
 ---
 # <a name="data-classification-release-notes"></a>Veröffentlichungshinweise zur Datenklassifizierung
 
@@ -48,6 +48,6 @@ Wir haben uns Ihr wertvolles Feedback zur OneDrive-Integration während unseres 
 - [Erste Schritte mit der Datenklassifizierung (Vorschau)](data-classification-overview.md)
 - [Beschriftungs-Aktivität anzeigen (Vorschau)](data-classification-activity-explorer.md)
 - [Anzeigen von beschriftetem Inhalt (Vorschau)](data-classification-content-explorer.md)
-- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Aufbewahrungsbezeichnungen](labels.md)
+- [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)

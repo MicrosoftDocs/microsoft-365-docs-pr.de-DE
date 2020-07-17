@@ -1,7 +1,7 @@
 ---
-title: Top-Scoring in Branchen Tests (AV-Test, AV Comparatives, SE Labs, Gehrungs ATT&ck)
+title: Top-Scoring in Branchen Tests – Microsoft Threat Protection
 ms.reviewer: ''
-description: Microsoft Defender ATP erzielt bei unabhängigen Tests stets hohe Punktzahl. Hier werden die neuesten Ergebnisse und Analysen angezeigt.
+description: Sehen Sie sich die neuesten Ergebnisse und Analysen von Microsoft Threat Protection an, die in unabhängigen Tests (AV-Test, AV Comparatives, SE Labs, Mitra ATT&ck) konsistent hohe Ergebnisse erzielen. Hier werden die neuesten Ergebnisse und Analysen angezeigt.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, AV Reviews, Antivirus Test, AV-Tests, aktuelle AV-Ergebnisse, Erkennungsergebnisse, Sicherheitsprodukt Tests, Sicherheitsbranchen Tests, Branchen-Antivirus-Tests, best Antivirus, AV-Test, AV-Comparatives, SE Labs, Gehrungs ATT&ck, Endpunktschutz Plattform, EPP, Endpunkterkennung und-Antwort, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, Sicherheit, Malware, AV, Antivirus, Scores, Scoring, Schutz der nächsten Generation
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909276"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158869"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Top-Scoring in Branchen Tests
 
