@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie den Microsoft Teams-Benutzer Aktivitätsbericht abrufen und Einblicke in die Teams-Aktivitäten in Ihrer Organisation erhalten.
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158845"
+ms.locfileid: "45167341"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität – Vorschau
 
@@ -51,9 +51,9 @@ Sie können die Benutzeraktivität im Bericht "Vorschau Teams" anzeigen, indem S
 |Besprechungen insgesamt   <br/> |Die Anzahl der Onlinebesprechungen, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
 |1:1 Anrufe   <br/> | Die Anzahl der 1:1 Anrufe, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
 |Datum der letzten Aktivität (UTC)  <br/> |Das letzte Datum, an dem der Benutzer an einer Microsoft Teams-Aktivität teilgenommen hat.<br/> |
-|Teilnahme an Adhoc-Besprechungen   <br/> | Die Anzahl der Adhoc-Besprechungen, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
-|Organisierte Meetings Adhoc <br/> |Die Anzahl der Adhoc-Besprechungen, die der Benutzer während des angegebenen Zeitraums organisiert hat. <br/>|
+|Teilnahme an Adhoc-Besprechungen   <br/> | Die Anzahl der Besprechungen, die im Kalender nicht geplant sind, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
+|Organisierte Meetings Adhoc <br/> |Die Anzahl der Besprechungen, die im Kalender nicht geplant sind, die der Benutzer während des angegebenen Zeitraums organisiert hat. <br/>|
 |Geplant organisierte Besprechungen  <br/> |Die Anzahl geplanter Besprechungen, die ein Benutzer während des angegebenen Zeitraums organisiert hat.  <br/> |
 |Lizenziert |Ausgewählt, wenn der Benutzer für die Verwendung von Microsoft Teams lizenziert ist.|
-|Andere Aktivität|Die Anzahl der anderen Teamaktivitäten des Benutzers. |
+|Andere Aktivität|Der Benutzer wird als aktiv betrachtet, hat aber einen Nullwert für die Chat Nachrichten, 1:1 Anrufe, Kanal Nachrichten, Gesamt Besprechungen und Besprechungen organisiert. Beispiele für Aktionen sind, wenn der Microsoft Teams-Client im Vordergrund aktiviert wird, Aktionen im Bereich zum Verfassen von Nachrichten ausgeführt wurden, Popups im Microsoft Teams-Client, Banner im Microsoft Teams-Client usw. angezeigt wurden. |
 |||

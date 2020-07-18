@@ -4,14 +4,18 @@ description: ''
 keywords: Browser, Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094786"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170671"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
@@ -38,7 +42,7 @@ Die Sicherheitsbasis für Microsoft Edge auf Microsoft Managed Desktop-Geräten 
 #### <a name="extension-installation-blocklist"></a>Erweiterungs Installations Blockliste
 **Standardwert:** Alle
 
-Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte risksassociated mit dem Chromium-Erweiterungsmodell, einschließlich Datenverlust Schutz, Datenschutz und anderen Risiken, die Geräte gefährden können. 
+Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte Risiko sassociated mit dem Chromium-Erweiterungsmodell, einschließlich Datenverlust Schutz, Datenschutz und anderen Risiken, die Geräte gefährden können. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Zulassen von systemeigenen Messaginghosts auf Benutzerebene (installiert ohne Administratorberechtigungen)
 
@@ -119,7 +123,7 @@ Wenn diese Richtlinie angewendet wird, überspringt die erste Ausführungsumgebu
 
 ## <a name="settings-you-manage"></a>Einstellungen, die Sie verwalten
 
-Sie können alle Microsft-edgeeinstellungen bereitstellen, die zuvor nicht mithilfe des Profils für administrative Vorlagen in Microsoft InTune beschrieben wurden. Ausführliche Informationen finden Sie unter [configure Microsoft Edge Policy Settings with Microsoft InTune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Wenn Sie eine Richtlinie auswerten möchten, die derzeit nicht in den Microsoft Edge Administrative Templates in InTune enthalten ist, können Sie benutzerdefinierte Einstellungen für Windows 10-Geräte in InTune verwenden.
+Sie können alle Microsoft Edge-Einstellungen bereitstellen, die zuvor nicht mithilfe des Profils für administrative Vorlagen in Microsoft InTune beschrieben wurden. Ausführliche Informationen finden Sie unter [configure Microsoft Edge Policy Settings with Microsoft InTune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Wenn Sie eine Richtlinie auswerten möchten, die derzeit nicht in den Microsoft Edge Administrative Templates in InTune enthalten ist, können Sie benutzerdefinierte Einstellungen für Windows 10-Geräte in InTune verwenden.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Aktivieren bestimmter Chrome-Erweiterungen
 
