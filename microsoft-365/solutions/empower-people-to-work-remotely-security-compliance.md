@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049865"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127077"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -54,6 +54,8 @@ Schützen Sie Ihre Apps und Daten mit diesen Sicherheitsfunktionen von Microsoft
 | Azure AD Identity Protection  | Automatisieren Sie die Erkennung und Behebung von identitätsbasierten Risiken. <br><br>Erstellen Sie risikobasierte bedingte Zugriffsrichtlinien, um die mehrstufige Authentifizierung (MFA) für riskante Anmeldungen zu erzwingen. | Microsoft 365 E5 oder E3 mit Azure AD Premium P2-Lizenzen |
 ||||
 
+Weitere Informationen finden Sie unter [Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance](../compliance/compliance-quick-tasks.md).
+
 ## <a name="compliance"></a>Compliance
 
 Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compliance-Funktionen von Microsoft 365.
@@ -64,10 +66,12 @@ Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compl
 | Schutz vor Datenverlust (DLP) | Sie können eine riskante, unbeabsichtigte oder unangebrachte Freigabe erkennen, warnen und blockieren. Beispielsweise die Weitergabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
 | App-Steuerung für bedingten Zugriff | Verhindern, dass vertrauliche Daten auf die privaten Geräte der Benutzer heruntergeladen werden. | Microsoft 365 E3 und E5 |
 | Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren Sie Kontrollmechanismen für die Informationsgovernance, z. B. wie lange Daten aufbewahrt werden und die Anforderungen für die Speicherung von persönlichen Daten von Kunden, um die Richtlinien oder Datenvorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 und E5 |
-| E-Mail-Verschlüsselung | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 und E5 |
+| Office-Nachrichtenverschlüsselung (Office Message Encryption, OME) | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 und E5 |
 | Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 und E5 |
 | Compliance-Bewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 und E5 |
 ||||
+
+Weitere Informationen finden Sie unter [Die wichtigsten 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="results-of-step-3"></a>Ergebnisse von Schritt 3
 

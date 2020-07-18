@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie vertrauliche Informationen Ihrer Organisation in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817944"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127532"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ Aus diesen Gründen lautet die Anleitung zum Erstellen von Regeln mit unterschie
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](labels.md) als Bedingung in einer DLP-Richtlinie verwenden, müssen Sie Folgendes beachten:
+Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](retention.md#retention-labels) als Bedingung in einer DLP-Richtlinie verwenden, müssen Sie Folgendes beachten:
 
-- Sie müssen die Aufbewahrungsbezeichnung erstellt, veröffentlicht und angewendet haben, bevor Sie sie als Bedingung in einer DLP-Richtlinie verwenden können.
-- Nach ihrer Erstellung und Veröffentlichung kann es bis zu einem Tag dauern, bis Aufbewahrungsbezeichnungen synchronisiert wurden, und bis zu sieben Tage, bis sie automatisch angewendet werden. Weiter Informationen hierzu finden Sie unter [Wie lange es dauert, bis Aufbewahrungsbezeichnungen wirksam werden](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
-- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie ***wird nur für Elemente in SharePoint Online und OneDrive for Business*** unterstützt.
+- Die Aufbewahrungsbezeichnung muss vor der Verwendung als Bedingung in einer DLP-Richtlinie erstellt und veröffentlicht werden.
+- Die Synchronisierung veröffentlichter Aufbewahrungsbezeichnungen kann ein bis sieben Tage dauern. Weitere Informationen zu Aufbewahrungsbezeichnungen, die in einer Aufbewahrungsrichtlinie veröffentlicht sind, finden Sie unter [Wann Aufbewahrungsbezeichnungen zur Verfügung stehen](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) und zu automatisch veröffentlichten Aufbewahrungsbezeichnungen unter [Wie lange dauert es, bis Aufbewahrungsbezeichnungen übernommen werden](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie **wird nur für Elemente in SharePoint und OneDrive** unterstützt.
 
   ![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ Derzeit können Sie nur eine Aufbewahrungsbezeichnung als Bedingung verwenden, j
 
 Auf Inhalte mit vertraulichen Informationen können verschiedene Features angewendet werden:
   
-- Eine [Aufbewahrungsbezeichnung](labels.md#applying-a-retention-label-automatically-based-on-conditions) und eine [Aufbewahrungsrichtlinie](retention-policies.md) können beide Aktionen zur **Aufbewahrung** dieser Inhalte erzwingen. 
+- Sowohl eine [Aufbewahrungsbezeichnung als auch eine Aufbewahrungsrichtlinie](retention.md) kann Aktionen zur **Aufbewahrung** für diese Inhalte erzwingen. 
     
 - Mit einer DLP-Richtlinie können Aktionen zum **Schutz** dieser Inhalte erzwungen werden. Und bevor diese Aktionen erzwungen werden, kann eine DLP-Richtlinie vorsehen, dass zusätzlich zum Inhalt mit einer Bezeichnung noch andere Bedingungen erfüllt werden müssen. 
     
