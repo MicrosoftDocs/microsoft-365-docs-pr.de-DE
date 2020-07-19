@@ -1,5 +1,5 @@
 ---
-title: Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
+title: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Lernen Sie, wie Sie Aufbewahrungsbezeichnungen in Office 365 mittels PowerShell verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren.
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Weitere Informationen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell über die Befehlszeile, unabhängig vom Microsoft 365 Compliance Center.
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035533"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126366"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="704d0-103">Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell</span><span class="sxs-lookup"><span data-stu-id="704d0-103">Bulk create and publish retention labels by using PowerShell</span></span>
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="672e8-103">Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell</span><span class="sxs-lookup"><span data-stu-id="672e8-103">Create and publish retention labels by using PowerShell</span></span>
 
-><span data-ttu-id="704d0-104">*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="704d0-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+><span data-ttu-id="672e8-104">*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="672e8-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
 
-<span data-ttu-id="704d0-p101">In Office 365 können Sie Aufbewahrungsbeschriftungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Aufbewahrungsbeschriftungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security &amp; Compliance Center verwenden, das einzelne Erstellen von Aufbewahrungsbeschriftungen ist aber sehr zeitaufwändig und ineffizient.</span><span class="sxs-lookup"><span data-stu-id="704d0-p101">In Office 365, you can use retention labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating retention labels one at a time is time-consuming and inefficient.</span></span>
+<span data-ttu-id="672e8-105">Nachdem Sie sich entschieden haben, [Aufbewahrungsbezeichnungen](retention.md) zu verwenden, um Dokumente und E-Mails in Microsoft 365 aufzubewahren oder zu löschen, ist Ihnen vielleicht klar geworden, dass Sie viele und möglicherweise Hunderte von Aufbewahrungsbezeichnungen erstellen und veröffentlichen müssen.</span><span class="sxs-lookup"><span data-stu-id="672e8-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="672e8-106">Die empfohlene Methode zur Erstellung von skalierbaren Aufbewahrungsbezeichnungen ist die Verwendung eines [Dateiplans](file-plan-manager.md) vom Microsoft 365 Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="672e8-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="672e8-107">Alternativ können Sie hierzu auch [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) verwenden.</span><span class="sxs-lookup"><span data-stu-id="672e8-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
   
-<span data-ttu-id="704d0-108">Mithilfe des unten bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang erstellen und veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="704d0-108">By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies.</span></span> <span data-ttu-id="704d0-109">Zuerst erstellen Sie eine Liste der Aufbewahrungsbezeichnungen und eine Liste der Aufbewahrungsbezeichnungsrichtlinien in Excel. Anschließend verwenden Sie PowerShell, um die Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien in diesen Listen per Massenvorgang zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="704d0-109">First you create a list of the retention labels and a list of the retention label policies in Excel, and then you use PowerShell to bulk create the retention labels and retention label policies in those lists.</span></span> <span data-ttu-id="704d0-110">Dies erleichtert es Ihnen, alle Aufbewahrungsbezeichnungen, die für Ihren Aufbewahrungszeitplan erforderlich sind, gleichzeitig zu erstellen und zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="704d0-110">This makes it easier to create and publish all of the retention labels that your retention schedule requires at one time.</span></span>
-  
-<span data-ttu-id="704d0-111">Weitere Informationen über Aufbewahrungsbeschriftungen finden Sie unter [Übersicht über Aufbewahrungsbeschriftungen ](labels.md).</span><span class="sxs-lookup"><span data-stu-id="704d0-111">For more information about retention labels, see [Overview of labels](labels.md).</span></span>
-  
-## <a name="disclaimer"></a><span data-ttu-id="704d0-112">Verzichtserklärung</span><span class="sxs-lookup"><span data-stu-id="704d0-112">Disclaimer</span></span>
+<span data-ttu-id="672e8-108">Verwenden Sie die Informationen, Vorlagendateien und Beispiele sowie das Skript in diesem Artikel, um Ihnen bei der Massenerstellung von Aufbewahrungsbezeichnungen zu helfen und diese in Richtlinien für Aufbewahrungsbezeichnungen zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="672e8-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="672e8-109">Anschließend können die Aufbewahrungsbezeichnungen von [Administratoren und Benutzern angebracht werden](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span><span class="sxs-lookup"><span data-stu-id="672e8-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
 
-<span data-ttu-id="704d0-p103">Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.</span><span class="sxs-lookup"><span data-stu-id="704d0-p103">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
-  
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a><span data-ttu-id="704d0-118">Schritt 1: Erstellen einer CSV-Datei zum Erstellen der Aufbewahrungsbeschriftungen</span><span class="sxs-lookup"><span data-stu-id="704d0-118">Step 1: Create a .csv file for creating the retention labels</span></span>
+<span data-ttu-id="672e8-110">Die bereitgestellten Anweisungen unterstützen keine Aufbewahrungsbezeichnungen, die automatisch auf Inhalte angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="672e8-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
 
-<span data-ttu-id="704d0-p104">Zunächst erstellen Sie eine CSV-Datei, die eine Liste Ihrer Aufbewahrungsbeschriftungen mit den jeweiligen Einstellungen enthält. Sie können das folgende Beispiel als Vorlage verwenden, indem Sie es in Excel kopieren (in Excel: Registerkarte \> **Daten** Registerkarte \> **Text in Spalten** \> **Getrennt** \> **Komma** \> **Allgemein**), und die Tabelle dann als CSV-Datei an einem leicht auffindbaren Speicherplatz speichern.</span><span class="sxs-lookup"><span data-stu-id="704d0-p104">First you create a .csv file that contains a list of your retention labels with their settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+<span data-ttu-id="672e8-111">Übersicht:</span><span class="sxs-lookup"><span data-stu-id="672e8-111">Overview:</span></span> 
+
+1. <span data-ttu-id="672e8-112">Erstellen Sie in Excel eine Liste Ihrer Aufbewahrungsbezeichnungen und eine Liste ihrer Aufbewahrungsbezeichnungsrichtlinien.</span><span class="sxs-lookup"><span data-stu-id="672e8-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
+
+2. <span data-ttu-id="672e8-113">Verwenden Sie PowerShell, um die Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien in diesen Listen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="672e8-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
   
-<span data-ttu-id="704d0-121">Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span><span class="sxs-lookup"><span data-stu-id="704d0-121">For more information about the parameter values for this cmdlet, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
+## <a name="disclaimer"></a><span data-ttu-id="672e8-114">Haftungsausschluss</span><span class="sxs-lookup"><span data-stu-id="672e8-114">Disclaimer</span></span>
+
+<span data-ttu-id="672e8-115">Die in diesem Artikel bereitgestellten Beispielskripts werden von keinem standardmäßigen Supportprogramm oder Dienst von Microsoft unterstützt.</span><span class="sxs-lookup"><span data-stu-id="672e8-115">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="672e8-116">Die Beispielskripts werden wie besehen ohne jegliche Garantie zur Verfügung gestellt.</span><span class="sxs-lookup"><span data-stu-id="672e8-116">The sample scripts are provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="672e8-117">Microsoft schließt ferner alle konkludenten Gewährleistungen, einschließlich, aber nicht beschränkt auf konkludente Gewährleistungen der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus.</span><span class="sxs-lookup"><span data-stu-id="672e8-117">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="672e8-118">Das gesamte Risiko, das mit der Verwendung oder Leistung der Beispielskripts und der Dokumentation einhergeht, liegt bei Ihnen.</span><span class="sxs-lookup"><span data-stu-id="672e8-118">The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.</span></span> <span data-ttu-id="672e8-119">In keinem Fall sind Microsoft, seine Autoren oder an der Erstellung, Produktion oder Übermittlung der Skripts beteiligte Personen für Schäden jeglicher Art (einschließlich und ohne Einschränkung Schäden durch Verlust entgangener Gewinne, Geschäftsunterbrechungen, Verlust von Geschäftsinformationen oder andere geldliche Verluste) haftbar, die aus der Nutzung bzw. Unfähigkeit zur Nutzung der Beispielskripts oder Dokumentation entstehen, auch wenn Microsoft auf die Möglichkeit solcher Schäden hingewiesen wurde.</span><span class="sxs-lookup"><span data-stu-id="672e8-119">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
   
-<span data-ttu-id="704d0-122">Hinweise:</span><span class="sxs-lookup"><span data-stu-id="704d0-122">Notes:</span></span>
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="672e8-120">Schritt 1: Erstellen einer CSV-Datei für die Aufbewahrungsbezeichnungen</span><span class="sxs-lookup"><span data-stu-id="672e8-120">Step 1: Create a .csv file for the retention labels</span></span>
+
+1. <span data-ttu-id="672e8-121">Kopieren Sie die folgende CSV-Beispieldatei für eine Vorlage und Beispieleinträge für vier verschiedene Aufbewahrungsbezeichnungen und fügen Sie sie in Excel ein.</span><span class="sxs-lookup"><span data-stu-id="672e8-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
+
+2. <span data-ttu-id="672e8-122">Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**</span><span class="sxs-lookup"><span data-stu-id="672e8-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+
+2. <span data-ttu-id="672e8-123">Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungen und Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="672e8-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="672e8-124">Weitere Informationen zu den Parameterwerten finden Sie unter [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span><span class="sxs-lookup"><span data-stu-id="672e8-124">For more information about the parameter values, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
+
+3. <span data-ttu-id="672e8-125">Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist.</span><span class="sxs-lookup"><span data-stu-id="672e8-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="672e8-126">Beispiel: C:\>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="672e8-126">For example: C:\>Scripts\Labels.csv</span></span>
+
   
-- <span data-ttu-id="704d0-123">Wenn Sie keine Quelldatei für das Erstellen von Aufbewahrungsbeschriftungen bereitstellen, fährt das Skript fort und fordert Sie auf, die Quelldatei zum Veröffentlichen von Aufbewahrungsbeschriftungen (siehe nächster Abschnitt) anzugeben. Das Skript veröffentlicht nur vorhandene Aufbewahrungsbeschriftungen.</span><span class="sxs-lookup"><span data-stu-id="704d0-123">If you don't provide a source file for creating retention labels, the script moves on and prompts you for the source file for publishing retention labels (see the next section), and the script will publish only existing retention labels.</span></span>
+<span data-ttu-id="672e8-127">Hinweise:</span><span class="sxs-lookup"><span data-stu-id="672e8-127">Notes:</span></span>
+
+- <span data-ttu-id="672e8-p106">Wenn die CSV-Datei eine Aufbewahrungsbeschriftung mit demselben Namen wie eine bereits vorhandene Aufbewahrungsbeschriftung enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftung. Es werden keine doppelten Aufbewahrungsbeschriftungen erstellt.</span><span class="sxs-lookup"><span data-stu-id="672e8-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
     
-- <span data-ttu-id="704d0-p105">Wenn die CSV-Datei eine Aufbewahrungsbeschriftung mit demselben Namen wie eine bereits vorhandene Aufbewahrungsbeschriftung enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftung. Es werden keine doppelten Aufbewahrungsbeschriftungen erstellt.</span><span class="sxs-lookup"><span data-stu-id="704d0-p105">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
+- <span data-ttu-id="672e8-130">Ändern oder benennen Sie die Spaltenüberschriften aus der mitgelieferten CSV-Beispieldatei nicht um, sonst schlägt das Skript fehl.</span><span class="sxs-lookup"><span data-stu-id="672e8-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-- <span data-ttu-id="704d0-p106">Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.</span><span class="sxs-lookup"><span data-stu-id="704d0-p106">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
-    
-### <a name="sample-csv-file"></a><span data-ttu-id="704d0-128">CSV-Beispieldatei</span><span class="sxs-lookup"><span data-stu-id="704d0-128">Sample .csv file</span></span>
+### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="672e8-131">CSV-Beispieldatei für Aufbewahrungsbezeichnungen</span><span class="sxs-lookup"><span data-stu-id="672e8-131">Sample .csv file for retention labels</span></span>
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a><span data-ttu-id="704d0-129">Schritt 2: Erstellen einer CSV-Datei zum Veröffentlichen der Bezeichnungen</span><span class="sxs-lookup"><span data-stu-id="704d0-129">Step 2: Create a .csv file for publishing the labels</span></span>
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="672e8-132">Schritt 2: Erstellen einer CSV-Datei für die Aufbewahrungsbezeichnungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="672e8-132">Step 2: Create a .csv file for the retention label policies</span></span>
 
-<span data-ttu-id="704d0-p107">Als Nächstes erstellen Sie eine CSV-Datei, die eine Liste von Aufbewahrungsbeschriftungsrichtlinien mit den jeweiligen Speicherorten sowie andere Einstellungen enthält. Sie können das folgende Beispiel als Vorlage verwenden, indem Sie es in Excel kopieren (in Excel: Registerkarte \> **Daten** Registerkarte \> **Text in Spalten** \> **Getrennt** \> **Komma** \> **Allgemein**), und die Tabelle dann als CSV-Datei an einem leicht auffindbaren Speicherplatz speichern.</span><span class="sxs-lookup"><span data-stu-id="704d0-p107">Next you create a .csv file that contains a list of retention label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+1. <span data-ttu-id="672e8-133">Kopieren Sie die folgende CSV-Beispieldatei für eine Vorlage und Beispieleinträge für vier verschiedene Aufbewahrungsbezeichnungsrichtlinien und fügen Sie sie in Excel ein.</span><span class="sxs-lookup"><span data-stu-id="672e8-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
+
+2. <span data-ttu-id="672e8-134">Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**</span><span class="sxs-lookup"><span data-stu-id="672e8-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+
+2. <span data-ttu-id="672e8-135">Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungsrichtlinien und deren Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="672e8-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="672e8-136">Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).</span><span class="sxs-lookup"><span data-stu-id="672e8-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
+
+3. <span data-ttu-id="672e8-137">Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist.</span><span class="sxs-lookup"><span data-stu-id="672e8-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="672e8-138">Beispiel: `<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="672e8-138">For example: `<path>Policies.csv`</span></span>
+
+
+<span data-ttu-id="672e8-139">Hinweise:</span><span class="sxs-lookup"><span data-stu-id="672e8-139">Notes:</span></span>
   
-<span data-ttu-id="704d0-132">Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span><span class="sxs-lookup"><span data-stu-id="704d0-132">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span></span>
-  
-<span data-ttu-id="704d0-133">Hinweise:</span><span class="sxs-lookup"><span data-stu-id="704d0-133">Notes:</span></span>
-  
-- <span data-ttu-id="704d0-134">Wenn Sie keine Quelldatei zum Veröffentlichen von Aufbewahrungsbeschriftungen angeben, erstellt das Skript Aufbewahrungsbeschriftungen (siehe vorheriger Abschnitt), veröffentlicht sie aber nicht.</span><span class="sxs-lookup"><span data-stu-id="704d0-134">If you don't provide a source file for publishing retention labels, the script creates retention labels (see the previous section) but doesn't publish them.</span></span>
+- <span data-ttu-id="672e8-p109">Wenn die CSV-Datei eine Aufbewahrungsbeschriftungsrichtlinie mit demselben Namen wie eine bereits vorhandene enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftungsrichtlinie. Es werden keine doppelten Aufbewahrungsbeschriftungsrichtlinien erstellt.</span><span class="sxs-lookup"><span data-stu-id="672e8-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
     
-- <span data-ttu-id="704d0-p108">Wenn die CSV-Datei eine Aufbewahrungsbeschriftungsrichtlinie mit demselben Namen wie eine bereits vorhandene enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftungsrichtlinie. Es werden keine doppelten Aufbewahrungsbeschriftungsrichtlinien erstellt.</span><span class="sxs-lookup"><span data-stu-id="704d0-p108">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
+- <span data-ttu-id="672e8-142">Ändern oder benennen Sie die Spaltenüberschriften aus der mitgelieferten CSV-Beispieldatei nicht um, sonst schlägt das Skript fehl.</span><span class="sxs-lookup"><span data-stu-id="672e8-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-- <span data-ttu-id="704d0-137">Das Skript veröffentlicht nur Aufbewahrungsbezeichnungen, die manuell auf Inhalte angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="704d0-137">The script publishes only retention labels that are applied manually to content.</span></span> <span data-ttu-id="704d0-138">Dieses Skript unterstützt keine Aufbewahrungsbezeichnungen, die automatisch auf Inhalte angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="704d0-138">This script doesn't support retention labels that are auto-applied to content.</span></span>
-    
-- <span data-ttu-id="704d0-p110">Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.</span><span class="sxs-lookup"><span data-stu-id="704d0-p110">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
-    
-### <a name="sample-csv-file"></a><span data-ttu-id="704d0-141">CSV-Beispieldatei</span><span class="sxs-lookup"><span data-stu-id="704d0-141">Sample .csv file</span></span>
+### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="672e8-143">CSV-Beispieldatei für Aufbewahrungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="672e8-143">Sample .csv file for retention policies</span></span>
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -88,22 +98,32 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="704d0-142">Schritt 3: Erstellen des Windows PowerShell-Skripts</span><span class="sxs-lookup"><span data-stu-id="704d0-142">Step 3: Create the PowerShell script</span></span>
+## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="672e8-144">Schritt 3: Erstellen des Windows PowerShell-Skripts</span><span class="sxs-lookup"><span data-stu-id="672e8-144">Step 3: Create the PowerShell script</span></span>
 
-<span data-ttu-id="704d0-p111">Kopieren Sie das PowerShell-Skript, und fügen Sie es in Editor ein. Speichern Sie die Datei an einem Ort, der leicht zu finden ist, mit dem Dateinamensuffix „.ps1“, z. B. \<Pfad\>CreateRetentionSchedule.ps1.</span><span class="sxs-lookup"><span data-stu-id="704d0-p111">Copy and paste the below PowerShell script into Notepad. Save the file by using a filename suffix of .ps1 in a location that's easy to find -- for example, \<path\>CreateRetentionSchedule.ps1.</span></span>
-  
-### <a name="powershell-script"></a><span data-ttu-id="704d0-145">PowerShell-Skript</span><span class="sxs-lookup"><span data-stu-id="704d0-145">PowerShell script</span></span>
+1. <span data-ttu-id="672e8-145">Kopieren Sie das folgende PowerShell-Skript, und fügen Sie es in Editor ein.</span><span class="sxs-lookup"><span data-stu-id="672e8-145">Copy and paste the following PowerShell script into Notepad.</span></span>
 
-```
+2. <span data-ttu-id="672e8-146">Speichern Sie die Datei unter Verwendung der Dateinamenerweiterung **.ps1** an einem leicht auffindbaren Speicherort.</span><span class="sxs-lookup"><span data-stu-id="672e8-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="672e8-147">Beispiel: `<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="672e8-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
+
+<span data-ttu-id="672e8-148">Hinweise:</span><span class="sxs-lookup"><span data-stu-id="672e8-148">Notes:</span></span>
+
+- <span data-ttu-id="672e8-149">Das Skript fordert Sie auf, die beiden Quelldateien anzugeben, die Sie in den beiden vorherigen Schritten erstellt haben:</span><span class="sxs-lookup"><span data-stu-id="672e8-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
+    - <span data-ttu-id="672e8-150">Wenn Sie die Quelldatei zur Erstellung der Aufbewahrungsbezeichnungen nicht angeben, fährt das Skript mit der Erstellung der Aufbewahrungsbezeichnungsrichtlinien fort.</span><span class="sxs-lookup"><span data-stu-id="672e8-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
+    - <span data-ttu-id="672e8-151">Wenn Sie die Quelldatei nicht angeben, um die Aufbewahrungsbezeichnungsrichtlinien zu erstellen, erstellt das Skript nur die Aufbewahrungsbezeichnungen.</span><span class="sxs-lookup"><span data-stu-id="672e8-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
+
+- <span data-ttu-id="672e8-152">Das Skript generiert eine Protokolldatei, in der jede Aktion, die ausgeführt wurde, aufgezeichnet wird und angegeben wird, ob die Aktion erfolgreich war oder nicht.</span><span class="sxs-lookup"><span data-stu-id="672e8-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="672e8-153">Im letzten Schritt finden Sie Anweisungen zum Auffinden dieser Protokolldatei.</span><span class="sxs-lookup"><span data-stu-id="672e8-153">See the final step for instructions how to locate this log file.</span></span>
+
+### <a name="powershell-script"></a><span data-ttu-id="672e8-154">PowerShell-Skript</span><span class="sxs-lookup"><span data-stu-id="672e8-154">PowerShell script</span></span>
+
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a><span data-ttu-id="704d0-146">Schritt 4: Herstellen einer Verbindung mit Security &amp; Compliance Center PowerShell</span><span class="sxs-lookup"><span data-stu-id="704d0-146">Step 4: Connect to Security &amp; Compliance Center PowerShell</span></span>
+## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="672e8-155">Schritt 4: Ausführen des PowerShell-Skripts</span><span class="sxs-lookup"><span data-stu-id="672e8-155">Step 4: Run the PowerShell script</span></span>
 
-<span data-ttu-id="704d0-147">Führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="704d0-147">Follow the steps here:</span></span>
+<span data-ttu-id="672e8-156">Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="672e8-156">First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).</span></span>
+
+<span data-ttu-id="672e8-157">Führen Sie dann das Skript aus, durch das die Aufbewahrungsbezeichnungen erstellt und veröffentlicht werden:</span><span class="sxs-lookup"><span data-stu-id="672e8-157">Then, run the script that creates and publishes the retention labels:</span></span>
   
-- <span data-ttu-id="704d0-148">[Stellen Sie eine Verbindung mit der Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771) her.</span><span class="sxs-lookup"><span data-stu-id="704d0-148">[Connect to Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)</span></span>
+1. <span data-ttu-id="672e8-158">Geben Sie in Ihrer Security & Compliance Center PowerShell-Sitzung den Pfad gefolgt von den Zeichen `.\` und dem Dateinamen des Skripts ein. Drücken Sie dann die EINGABETASTE, um das Skript auszuführen.</span><span class="sxs-lookup"><span data-stu-id="672e8-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="672e8-159">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="672e8-159">For example:</span></span>
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a><span data-ttu-id="704d0-149">Schritt 5: Ausführen des PowerShell Skripts zum Erstellen und Veröffentlichen der Aufbewahrungsbeschriftungen</span><span class="sxs-lookup"><span data-stu-id="704d0-149">Step 5: Run the PowerShell script to create and publish the retention labels</span></span>
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-<span data-ttu-id="704d0-150">Nachdem Sie eine Verbindung zu Security &amp; Compliance Center PowerShell hergestellt haben, führen Sie als Nächstes das Skript aus, das die Aufbewahrungsbeschriftungen erstellt und veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="704d0-150">After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the retention labels.</span></span>
-  
-1. <span data-ttu-id="704d0-151">Geben Sie in der Security &amp; Compliance Center PowerShell-Sitzung den Pfad gefolgt von den Zeichen .\ und dem Dateinamen des Skripts ein. Drücken Sie dann die EINGABETASTE, um das Skript auszuführen. Zum Beispiel:</span><span class="sxs-lookup"><span data-stu-id="704d0-151">In the Security &amp; Compliance PowerShell session, enter the path, followed by the characters .\ and file name of the script, and then press ENTER to run the script - for example:</span></span>
+2. <span data-ttu-id="672e8-160">Das Skript fordert Sie auf, die Speicherorte der CSV-Dateien anzugeben, die Sie in den vorherigen Schritten erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="672e8-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="672e8-161">Geben Sie den Pfad gefolgt von den Zeichen `.\` und dem Dateinamen der CSV-Datei ein. Drücken Sie dann die EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="672e8-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="672e8-162">Beispiel: Bei der ersten Eingabeaufforderung:</span><span class="sxs-lookup"><span data-stu-id="672e8-162">For example, for the first prompt:</span></span>
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    <span data-ttu-id="704d0-152">Sie werden aufgefordert, die Speicherorte der CSV-Dateien einzugeben, die Sie oben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="704d0-152">The script will prompt you for the locations of the .csv files that you created above.</span></span>
-    
-2. <span data-ttu-id="704d0-153">Geben Sie den Pfad gefolgt von den Zeichen .\ und dem Dateinamen der CSV-Datei ein. Drücken Sie dann die EINGABETASTE. Zum Beispiel:</span><span class="sxs-lookup"><span data-stu-id="704d0-153">Enter the path, followed by the characters .\ and file name of the .csv file, and then press ENTER - for example:</span></span>
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="672e8-163">Schritt 5: Anzeigen der Protokolldatei mit den Ergebnissen</span><span class="sxs-lookup"><span data-stu-id="672e8-163">Step 5: View the log file with the results</span></span>
 
-## <a name="step-6-view-the-log-file-with-the-results"></a><span data-ttu-id="704d0-154">Schritt 6: Anzeigen der Protokolldatei mit den Ergebnissen</span><span class="sxs-lookup"><span data-stu-id="704d0-154">Step 6: View the log file with the results</span></span>
+<span data-ttu-id="672e8-164">Verwenden Sie die Protokolldatei, die das Skript erstellt hat, um die Ergebnisse zu überprüfen und alle Fehler zu identifizieren, die behoben werden müssen.</span><span class="sxs-lookup"><span data-stu-id="672e8-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
 
-<span data-ttu-id="704d0-p112">Wenn Sie das Skript ausführen, wird eine Protokolldatei generiert, in der jede Aktion sowie deren erfolgreiches oder fehlerhaftes Ausführen aufgezeichnet wird. Die Protokolldatei enthält alle Metadaten dazu, welche Aufbewahrungsbeschriftungen erstellt wurden und welche Aufbewahrungsbeschriftungen veröffentlicht wurden. Die Protokolldatei befindet sich an folgendem Speicherort. Beachten Sie, dass die Ziffern in dem Dateinamen variieren können.</span><span class="sxs-lookup"><span data-stu-id="704d0-p112">When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about the retention labels created and the retention labels published. You can find the log file at this location -- note that the digits in the file name vary.</span></span>
+<span data-ttu-id="672e8-165">Sie finden die Protokolldatei an folgenden Speicherort, wobei die Ziffern im Beispieldateinamen variieren.</span><span class="sxs-lookup"><span data-stu-id="672e8-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
