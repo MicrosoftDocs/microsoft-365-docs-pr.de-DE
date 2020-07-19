@@ -1,5 +1,5 @@
 ---
-title: Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
+title: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Lernen Sie, wie Sie Aufbewahrungsbezeichnungen in Office 365 mittels PowerShell verwenden, um einen Aufbewahrungszeitplan für Ihr Unternehmen zu implementieren.
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Weitere Informationen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell über die Befehlszeile, unabhängig vom Microsoft 365 Compliance Center.
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035533"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126366"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-In Office 365 können Sie Aufbewahrungsbeschriftungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Aufbewahrungsbeschriftungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security &amp; Compliance Center verwenden, das einzelne Erstellen von Aufbewahrungsbeschriftungen ist aber sehr zeitaufwändig und ineffizient.
+Nachdem Sie sich entschieden haben, [Aufbewahrungsbezeichnungen](retention.md) zu verwenden, um Dokumente und E-Mails in Microsoft 365 aufzubewahren oder zu löschen, ist Ihnen vielleicht klar geworden, dass Sie viele und möglicherweise Hunderte von Aufbewahrungsbezeichnungen erstellen und veröffentlichen müssen. Die empfohlene Methode zur Erstellung von skalierbaren Aufbewahrungsbezeichnungen ist die Verwendung eines [Dateiplans](file-plan-manager.md) vom Microsoft 365 Compliance Center. Alternativ können Sie hierzu auch [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) verwenden.
   
-Mithilfe des unten bereitgestellten Skripts und der CSV-Dateien können Sie Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien per Massenvorgang erstellen und veröffentlichen. Zuerst erstellen Sie eine Liste der Aufbewahrungsbezeichnungen und eine Liste der Aufbewahrungsbezeichnungsrichtlinien in Excel. Anschließend verwenden Sie PowerShell, um die Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien in diesen Listen per Massenvorgang zu erstellen. Dies erleichtert es Ihnen, alle Aufbewahrungsbezeichnungen, die für Ihren Aufbewahrungszeitplan erforderlich sind, gleichzeitig zu erstellen und zu veröffentlichen.
-  
-Weitere Informationen über Aufbewahrungsbeschriftungen finden Sie unter [Übersicht über Aufbewahrungsbeschriftungen ](labels.md).
-  
-## <a name="disclaimer"></a>Verzichtserklärung
+Verwenden Sie die Informationen, Vorlagendateien und Beispiele sowie das Skript in diesem Artikel, um Ihnen bei der Massenerstellung von Aufbewahrungsbezeichnungen zu helfen und diese in Richtlinien für Aufbewahrungsbezeichnungen zu veröffentlichen. Anschließend können die Aufbewahrungsbezeichnungen von [Administratoren und Benutzern angebracht werden](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
-Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
-  
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>Schritt 1: Erstellen einer CSV-Datei zum Erstellen der Aufbewahrungsbeschriftungen
+Die bereitgestellten Anweisungen unterstützen keine Aufbewahrungsbezeichnungen, die automatisch auf Inhalte angewendet werden.
 
-Zunächst erstellen Sie eine CSV-Datei, die eine Liste Ihrer Aufbewahrungsbeschriftungen mit den jeweiligen Einstellungen enthält. Sie können das folgende Beispiel als Vorlage verwenden, indem Sie es in Excel kopieren (in Excel: Registerkarte \> **Daten** Registerkarte \> **Text in Spalten** \> **Getrennt** \> **Komma** \> **Allgemein**), und die Tabelle dann als CSV-Datei an einem leicht auffindbaren Speicherplatz speichern.
+Übersicht: 
+
+1. Erstellen Sie in Excel eine Liste Ihrer Aufbewahrungsbezeichnungen und eine Liste ihrer Aufbewahrungsbezeichnungsrichtlinien.
+
+2. Verwenden Sie PowerShell, um die Aufbewahrungsbezeichnungen und Aufbewahrungsbezeichnungsrichtlinien in diesen Listen zu erstellen.
   
-Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+## <a name="disclaimer"></a>Haftungsausschluss
+
+Die in diesem Artikel bereitgestellten Beispielskripts werden von keinem standardmäßigen Supportprogramm oder Dienst von Microsoft unterstützt. Die Beispielskripts werden wie besehen ohne jegliche Garantie zur Verfügung gestellt. Microsoft schließt ferner alle konkludenten Gewährleistungen, einschließlich, aber nicht beschränkt auf konkludente Gewährleistungen der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das mit der Verwendung oder Leistung der Beispielskripts und der Dokumentation einhergeht, liegt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder an der Erstellung, Produktion oder Übermittlung der Skripts beteiligte Personen für Schäden jeglicher Art (einschließlich und ohne Einschränkung Schäden durch Verlust entgangener Gewinne, Geschäftsunterbrechungen, Verlust von Geschäftsinformationen oder andere geldliche Verluste) haftbar, die aus der Nutzung bzw. Unfähigkeit zur Nutzung der Beispielskripts oder Dokumentation entstehen, auch wenn Microsoft auf die Möglichkeit solcher Schäden hingewiesen wurde.
+  
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Schritt 1: Erstellen einer CSV-Datei für die Aufbewahrungsbezeichnungen
+
+1. Kopieren Sie die folgende CSV-Beispieldatei für eine Vorlage und Beispieleinträge für vier verschiedene Aufbewahrungsbezeichnungen und fügen Sie sie in Excel ein. 
+
+2. Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**
+
+2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungen und Einstellungen. Weitere Informationen zu den Parameterwerten finden Sie unter [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+
+3. Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist. Beispiel: C:\>Scripts\Labels.csv
+
   
 Hinweise:
-  
-- Wenn Sie keine Quelldatei für das Erstellen von Aufbewahrungsbeschriftungen bereitstellen, fährt das Skript fort und fordert Sie auf, die Quelldatei zum Veröffentlichen von Aufbewahrungsbeschriftungen (siehe nächster Abschnitt) anzugeben. Das Skript veröffentlicht nur vorhandene Aufbewahrungsbeschriftungen.
-    
+
 - Wenn die CSV-Datei eine Aufbewahrungsbeschriftung mit demselben Namen wie eine bereits vorhandene Aufbewahrungsbeschriftung enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftung. Es werden keine doppelten Aufbewahrungsbeschriftungen erstellt.
     
-- Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.
+- Ändern oder benennen Sie die Spaltenüberschriften aus der mitgelieferten CSV-Beispieldatei nicht um, sonst schlägt das Skript fehl.
     
-### <a name="sample-csv-file"></a>CSV-Beispieldatei
+### <a name="sample-csv-file-for-retention-labels"></a>CSV-Beispieldatei für Aufbewahrungsbezeichnungen
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>Schritt 2: Erstellen einer CSV-Datei zum Veröffentlichen der Bezeichnungen
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Schritt 2: Erstellen einer CSV-Datei für die Aufbewahrungsbezeichnungsrichtlinien
 
-Als Nächstes erstellen Sie eine CSV-Datei, die eine Liste von Aufbewahrungsbeschriftungsrichtlinien mit den jeweiligen Speicherorten sowie andere Einstellungen enthält. Sie können das folgende Beispiel als Vorlage verwenden, indem Sie es in Excel kopieren (in Excel: Registerkarte \> **Daten** Registerkarte \> **Text in Spalten** \> **Getrennt** \> **Komma** \> **Allgemein**), und die Tabelle dann als CSV-Datei an einem leicht auffindbaren Speicherplatz speichern.
-  
-Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
-  
+1. Kopieren Sie die folgende CSV-Beispieldatei für eine Vorlage und Beispieleinträge für vier verschiedene Aufbewahrungsbezeichnungsrichtlinien und fügen Sie sie in Excel ein. 
+
+2. Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**
+
+2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungsrichtlinien und deren Einstellungen. Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+
+3. Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist. Beispiel: `<path>Policies.csv`
+
+
 Hinweise:
   
-- Wenn Sie keine Quelldatei zum Veröffentlichen von Aufbewahrungsbeschriftungen angeben, erstellt das Skript Aufbewahrungsbeschriftungen (siehe vorheriger Abschnitt), veröffentlicht sie aber nicht.
-    
 - Wenn die CSV-Datei eine Aufbewahrungsbeschriftungsrichtlinie mit demselben Namen wie eine bereits vorhandene enthält, überspringt das Skript die Erstellung der Aufbewahrungsbeschriftungsrichtlinie. Es werden keine doppelten Aufbewahrungsbeschriftungsrichtlinien erstellt.
     
-- Das Skript veröffentlicht nur Aufbewahrungsbezeichnungen, die manuell auf Inhalte angewendet werden. Dieses Skript unterstützt keine Aufbewahrungsbezeichnungen, die automatisch auf Inhalte angewendet werden.
+- Ändern oder benennen Sie die Spaltenüberschriften aus der mitgelieferten CSV-Beispieldatei nicht um, sonst schlägt das Skript fehl.
     
-- Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.
-    
-### <a name="sample-csv-file"></a>CSV-Beispieldatei
+### <a name="sample-csv-file-for-retention-policies"></a>CSV-Beispieldatei für Aufbewahrungsrichtlinien
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -90,20 +100,30 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>Schritt 3: Erstellen des Windows PowerShell-Skripts
 
-Kopieren Sie das PowerShell-Skript, und fügen Sie es in Editor ein. Speichern Sie die Datei an einem Ort, der leicht zu finden ist, mit dem Dateinamensuffix „.ps1“, z. B. \<Pfad\>CreateRetentionSchedule.ps1.
-  
+1. Kopieren Sie das folgende PowerShell-Skript, und fügen Sie es in Editor ein.
+
+2. Speichern Sie die Datei unter Verwendung der Dateinamenerweiterung **.ps1** an einem leicht auffindbaren Speicherort. Beispiel: `<path>CreateRetentionSchedule.ps1`
+
+Hinweise:
+
+- Das Skript fordert Sie auf, die beiden Quelldateien anzugeben, die Sie in den beiden vorherigen Schritten erstellt haben:
+    - Wenn Sie die Quelldatei zur Erstellung der Aufbewahrungsbezeichnungen nicht angeben, fährt das Skript mit der Erstellung der Aufbewahrungsbezeichnungsrichtlinien fort. 
+    - Wenn Sie die Quelldatei nicht angeben, um die Aufbewahrungsbezeichnungsrichtlinien zu erstellen, erstellt das Skript nur die Aufbewahrungsbezeichnungen.
+
+- Das Skript generiert eine Protokolldatei, in der jede Aktion, die ausgeführt wurde, aufgezeichnet wird und angegeben wird, ob die Aktion erfolgreich war oder nicht. Im letzten Schritt finden Sie Anweisungen zum Auffinden dieser Protokolldatei.
+
 ### <a name="powershell-script"></a>PowerShell-Skript
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>Schritt 4: Herstellen einer Verbindung mit Security &amp; Compliance Center PowerShell
+## <a name="step-4-run-the-powershell-script"></a>Schritt 4: Ausführen des PowerShell-Skripts
 
-Führen Sie die folgenden Schritte aus:
+Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+
+Führen Sie dann das Skript aus, durch das die Aufbewahrungsbezeichnungen erstellt und veröffentlicht werden:
   
-- [Stellen Sie eine Verbindung mit der Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771) her.
+1. Geben Sie in Ihrer Security & Compliance Center PowerShell-Sitzung den Pfad gefolgt von den Zeichen `.\` und dem Dateinamen des Skripts ein. Drücken Sie dann die EINGABETASTE, um das Skript auszuführen. Beispiel:
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Schritt 5: Ausführen des PowerShell Skripts zum Erstellen und Veröffentlichen der Aufbewahrungsbeschriftungen
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-Nachdem Sie eine Verbindung zu Security &amp; Compliance Center PowerShell hergestellt haben, führen Sie als Nächstes das Skript aus, das die Aufbewahrungsbeschriftungen erstellt und veröffentlicht.
-  
-1. Geben Sie in der Security &amp; Compliance Center PowerShell-Sitzung den Pfad gefolgt von den Zeichen .\ und dem Dateinamen des Skripts ein. Drücken Sie dann die EINGABETASTE, um das Skript auszuführen. Zum Beispiel:
+2. Das Skript fordert Sie auf, die Speicherorte der CSV-Dateien anzugeben, die Sie in den vorherigen Schritten erstellt haben. Geben Sie den Pfad gefolgt von den Zeichen `.\` und dem Dateinamen der CSV-Datei ein. Drücken Sie dann die EINGABETASTE. Beispiel: Bei der ersten Eingabeaufforderung:
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    Sie werden aufgefordert, die Speicherorte der CSV-Dateien einzugeben, die Sie oben erstellt haben.
-    
-2. Geben Sie den Pfad gefolgt von den Zeichen .\ und dem Dateinamen der CSV-Datei ein. Drücken Sie dann die EINGABETASTE. Zum Beispiel:
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>Schritt 5: Anzeigen der Protokolldatei mit den Ergebnissen
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>Schritt 6: Anzeigen der Protokolldatei mit den Ergebnissen
+Verwenden Sie die Protokolldatei, die das Skript erstellt hat, um die Ergebnisse zu überprüfen und alle Fehler zu identifizieren, die behoben werden müssen.
 
-Wenn Sie das Skript ausführen, wird eine Protokolldatei generiert, in der jede Aktion sowie deren erfolgreiches oder fehlerhaftes Ausführen aufgezeichnet wird. Die Protokolldatei enthält alle Metadaten dazu, welche Aufbewahrungsbeschriftungen erstellt wurden und welche Aufbewahrungsbeschriftungen veröffentlicht wurden. Die Protokolldatei befindet sich an folgendem Speicherort. Beachten Sie, dass die Ziffern in dem Dateinamen variieren können.
+Sie finden die Protokolldatei an folgenden Speicherort, wobei die Ziffern im Beispieldateinamen variieren.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
