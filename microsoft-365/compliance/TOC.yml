@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: TLS 1.0- und 1.1-Einstellungen für Office 365
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: TLS 1.0- und 1.1- Einstellungen in Office 365 GCC High and DoD
+      href: tls-1-2-in-office-365-gcc.md
+    - name: TLS 1.2 in Office 365
+      href: prepare-tls-1.2-in-office-365.md
     - name: Kundenschlüssel
       items:
         - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
@@ -279,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Aufbewahren von Daten
+    - name: Aufbewahren und löschen von Daten
       items:
-        - name: Informationen zu Aufbewahrungsrichtlinien
-          href: retention-policies.md
-        - name: Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
+        - name: Informationen zur Aufbewahrung
+          items:
+            - name: Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
+              href: retention.md
+            - name: Aufbewahrung für SharePoint und OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Aufbewahrung für Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Aufbewahrung für Exchange
+              href: retention-policies-exchange.md
+        - name: Erste Schritte mit der Aufbewahrung
+          href: get-started-with-retention.md
+        - name: Erstellen von Aufbewahrungsrichtlinien
           href: create-retention-policies.md
-        - name: Aufbewahrung für SharePoint und OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Aufbewahrung für Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Aufbewahrung für Exchange
-          href: retention-policies-exchange.md
-        - name: Dateiplan
+        - name: Dateiplan verwenden
           href: file-plan-manager.md
-        - name: Informationen zu Aufbewahrungsbezeichnungen
-          href: labels.md
-        - name: 'Erstellen, Veröffentlichen und automatisches Anwenden einer Aufbewahrungsbezeichnung'
-          href: create-retention-labels.md
-        - name: Einhaltung der SEC Rule 17a-4
+        - name: Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps
+          href: create-apply-retention-labels.md
+        - name: Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte
+          href: apply-retention-labels-automatically.md
+        - name: Einhaltung der SEC-Regel 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
+        - name: Erstellen von Aufbewahrungsbezeichnungen mit PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Ereignisbasierte Aufbewahrung
-          href: event-driven-retention.md
-        - name: Automatisieren der ereignisbasierten Aufbewahrung
-          href: automate-event-driven-retention.md
-        - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
-          href: auto-apply-retention-labels-scenario.md
+        - name: Ereignisbasierte Aufbewahrung verwenden
+          items:
+            - name: Beginn der Aufbewahrung bei Auftreten eines Ereignisses
+              href: event-driven-retention.md
+            - name: Automatisieren der ereignisbasierten Aufbewahrung
+              href: automate-event-driven-retention.md
+            - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
+              href: auto-apply-retention-labels-scenario.md
     - name: Daten entfernen
       href: disposition.md
     - name: Verwalten inaktiver Postfächer
@@ -341,34 +351,6 @@
           href: records-management.md
         - name: Datensätze
           href: records.md
-        - name: Dateiplan
-          items:
-            - name: Verwalten von Aufbewahrungsbezeichnungen
-              href: file-plan-manager.md
-            - name: Informationen zu Aufbewahrungsbezeichnungen
-              href: labels.md
-            - name: Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen
-              href: create-retention-labels.md
-            - name: Erstellen und Veröffentlichen von maßstabsgerechten Aufbewahrungsbezeichnungen mithilfe von PowerShell
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
-              href: label-analytics.md
-            - name: Anzeigen der Bezeichnungsaktivität für Dokumente
-              href: view-label-activity-for-documents.md
-            - name: Anzeigen der Datengovernance-Berichte
-              href: view-the-data-governance-reports.md
-        - name: Ereignisse
-          items:
-            - name: Ereignisbasierte Aufbewahrung
-              href: event-driven-retention.md
-            - name: Automatisieren der ereignisbasierten Aufbewahrung
-              href: automate-event-driven-retention.md
-        - name: Disposition
-          href: disposition.md
-        - name: Weitere Informationen zur Datensatzverwaltung
-          items:
-            - name: Videos zur Datensatzverwaltung ansehen
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Verwalten von eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
@@ -488,15 +470,19 @@
           href: overview-ediscovery-20.md
         - name: Erste Schritte mit Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Arbeiten mit Verwaltungsberechtigten
+        - name: Arbeiten mit Depotbank und nicht-verwahrten Datenquellen
           href: managing-custodians.md
           items:
             - name: Hinzufügen von Verwaltungsberechtigten zu einem Fall
               href: add-custodians-to-case.md
+            - name: Massenhinzufügung von Verwaltungsberechtigten zu einem Fall
+              href: bulk-add-custodians.md
             - name: Verwalten von Verwaltungsberechtigten
               href: manage-new-custodians.md
             - name: Anzeigen der Aktivitäten von Verwaltungsberechtigten
               href: view-custodian-activity.md
+            - name: Hinzufügen von nicht-verwahrten Datenquellen zu einem Fall
+              href: non-custodial-data-sources.md
         - name: Arbeiten mit Kommunikation
           href: managing-custodian-communications.md
           items:
@@ -809,19 +795,19 @@
   items:
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliancebewertung und Compliance-Manager
+    - name: Compliancebewertung und Compliance-Manager (Vorschau)
       items:
         - name: Compliancebewertung (Vorschau)
           href: compliance-score.md
-        - name: Einrichten der Compliancebewertung (Vorschau)
+        - name: Einrichten der Compliancebewertung
           href: compliance-score-setup.md
-        - name: Arbeiten mit der Compliancebewertung (Vorschau)
-          href: working-with-compliance-score.md
-        - name: Berechnung der Compliancebewertung (Vorschau)
+        - name: Anpassen der Compliancebewertung mit Bewertungen
+          href: compliance-score-assessments.md
+        - name: Zuweisen und Durchführen von Arbeiten mit Verbesserungsaktionen
+          href: compliance-score-improvement-actions.md
+        - name: So wird Ihre Bewertung berechnet
           href: compliance-score-methodology.md
-        - name: Versionshinweise zur Compliancebewertung (Vorschau)
-          href: compliance-score-release-notes.md
-        - name: Häufig gestellte Fragen zur Compliancebewertung (Vorschau)
+        - name: Häufig gestellte Fragen (FAQ)
           href: compliance-score-faq.md
         - name: Compliance-Manager (Vorschau)
           href: compliance-manager-overview.md
@@ -830,7 +816,7 @@
               href: compliance-manager-release-notes.md
             - name: Arbeiten mit Compliance-Manager (Vorschau)
               href: working-with-compliance-manager.md
-            - name: Compliance-Manager (Klassisch)
+            - name: Compliance-Manager (klassisch)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: 'DSGVO: Tool für Anträge betroffener Personen'
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md

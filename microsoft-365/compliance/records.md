@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über Datensätze, um Sie beim Implementieren einer Datensatzverwaltungslösung in Microsoft 365 zu unterstützen.
-ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080102"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127502"
 ---
 # <a name="learn-about-records"></a>Informationen zu Datensätzen
 
@@ -38,7 +38,7 @@ Wenn Inhalt als Datensatz gekennzeichnet ist, gilt Folgendes:
 
 - Sie verfügen über einen Dispositionsnachweis, wenn Datensätze am Ende ihrer Aufbewahrungsfrist gelöscht werden.
 
-Verwenden Sie [Aufbewahrungsbezeichnungen](labels.md), um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder veröffentlichen (sodass Benutzer und Administratoren diese manuell auf Inhalte anwenden können) oder automatisch auf Inhalte anwenden, die Sie als Datensatz kennzeichnen möchten. Eine Anleitung finden Sie unter [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen ](create-retention-labels.md).
+Verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), um Inhalte als Datensätze zu kennzeichnen. Nachdem Sie Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen erstellt haben, können Sie diese Bezeichnungen entweder veröffentlichen (sodass Benutzer und Administratoren diese manuell auf Inhalte anwenden können) oder automatisch auf Inhalte anwenden, die Sie als Datensatz kennzeichnen möchten.
 
 Mithilfe von Aufbewahrungsbezeichnungen zur Kennzeichnung von Datensätzen können Sie eine einheitliche Strategie für die Datensatzverwaltung in Ihrer Microsoft 365-Umgebung implementieren.
 
@@ -60,15 +60,15 @@ Beachten Sie im Hinblick auf Aufbewahrungsbezeichnungen die folgenden Punkte:
 
     Wenn Sie die Datensatzkennzeichnung eines Ordners (in SharePoint und OneDrive), in eine Aufbewahrungskennzeichnung abändern, die den Inhalt nicht als Datensatz deklariert, behalten die Elemente im Ordner ihre bestehende Datensatzkennzeichnung.
 
-    Weitere Informationen zum Anwenden von Datensatzkennzeichnungen auf SharePoint- und OneDrive-Ordner finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    Weitere Informationen zum Anwenden von Datensatzkennzeichnungen auf SharePoint- und OneDrive-Ordner finden Sie unter [Anwenden einer Aufbewahrungsbezeichnung auf alle Inhalte in einer Bibliothek, einem Ordner oder einer Dokumentenmappe in SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **Datensätze können nicht gelöscht werden**. Wenn ein Benutzer versucht, einen Datensatz in Exchange zu löschen, wird das Element in den Ordner „Wiederherstellbare Elemente“ verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange-Speicherorten](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange) beschrieben.
+  - **Datensätze können nicht gelöscht werden**. Wenn ein Benutzer versucht, einen Datensatz in Exchange zu löschen, wird das Element in den Ordner „Wiederherstellbare Elemente“ verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit Exchange-Speicherorten](retention-policies-exchange.md#how-retention-works-for-exchange) beschrieben.
 
     Wenn ein Benutzer versucht, einen Datensatz in SharePoint zu löschen, wird eine Fehlermeldung angezeigt, dass das Element nicht gelöscht wurde und in der Bibliothek verbleibt.
 
     ![Nachricht, dass das Element nicht aus SharePoint gelöscht wurde](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Wenn ein Benutzer versucht, einen Datensatz in OneDrive zu löschen, wird das Element in das permanente Dokumentarchiv verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit SharePoint und OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive) beschrieben.
+    Wenn ein Benutzer versucht, einen Datensatz in OneDrive zu löschen, wird das Element in das permanente Dokumentarchiv verschoben, wie unter [Funktionsweise einer Aufbewahrungsrichtlinie mit SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) beschrieben.
 
   - **Datensatzbezeichnungen können nicht entfernt werden.** Nachdem eine Datensatzbezeichnung auf ein Element angewendet wurde, kann nur der Administrator dieses Speicherorts (beispielsweise ein Websitesammlungsadministrator einer SharePoint-Website) diese Datensatzbezeichnung entfernen.
 
@@ -82,7 +82,11 @@ Wenn Sie eine Aufbewahrungsbezeichnung erstellen, können Sie die Aufbewahrungsb
     
    ![Aktivieren Sie das Kontrollkästchen „Bezeichnung zum Klassifizieren von Inhalt als „Datensatz“ verwenden“](../media/recordversioning6.png)
 
-3. [Veröffentlichen](labels.md#how-retention-labels-work-with-retention-label-policies) Sie oder [wenden Sie](labels.md#applying-a-retention-label-automatically-based-on-conditions) die Aufbewahrungsbezeichnung auf SharePoint-Websites und/ oder OneDrive-Konten automatisch an.
+3. Wenden Sie die Aufbewahrungsbezeichnung auf SharePoint-Websites und OneDrive-Konten automatisch an:
+    
+    - [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
+    
+    - [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
 
 
 ### <a name="applying-a-retention-label-to-content"></a>Anwenden einer Aufbewahrungsbezeichnung auf Inhalte
@@ -167,4 +171,6 @@ Weitere Informationen zum Durchsuchen dieser Ereignisse finden Sie im Abschnitt 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Anweisungen zum Erstellen und Veröffentlichen der Aufbewahrungsbezeichnungen, die die Einstellung enthalten, Inhalte als Datensatz zu kennzeichnen, finden Sie [Erstellen, Veröffentlichen und automatisches Anwenden von Aufbewahrungsbezeichnungen](create-retention-labels.md).
+Wenn Sie noch keine Aufbewahrungsbezeichnungen für die Datensatzverwaltung besitzen, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
+
+Um sich Videos im Zusammenhang mit dem Konfigurieren und Verwenden der Datensatzverwaltung anzusehen, siehe die [Data Governance-Auswahl auf YouTube](https://go.microsoft.com/fwlink/?linkid=867039).

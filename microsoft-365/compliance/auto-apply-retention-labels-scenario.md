@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von SharePoint Online-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419101"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126476"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
@@ -108,11 +108,11 @@ Hier ist der [Aktenplan](file-plan-manager.md) für die Aufbewahrungsbezeichnung
 
 - **Aufbewahrungsdauer:** Fünf Jahre (1825 Tage)
 
-- **Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung so, dass Inhalte als [Datensatz](labels.md#using-retention-labels-for-records-management) klassifiziert werden (Dokumente, die als Datensatz klassifiziert sind, können von Benutzern nicht geändert oder gelöscht werden).
+- **Datensatzbezeichnung**: Konfigurieren Sie die Aufbewahrungsbezeichnung so, dass Inhalte als [Datensatz](records.md) klassifiziert werden (Dokumente, die als Datensatz klassifiziert sind, können von Benutzern nicht geändert oder gelöscht werden).
 
 - **Dateiplandeskriptoren:** (Zur Vereinfachung des Szenarios werden keine Dateideskriptoren bereitgestellt)
 
-Der folgende Screenshot zeigt die Einstellungen, wenn Sie die [Aufbewahrungbezeichnung](labels.md) der Produktspezifikation im Sicherheits- und Compliance-Center erstellen. Sie können den Ereignistyp der **Einstellung des Produkts** erstellen, wenn Sie die Aufbewahrungsbezeichnung erstellen. Beachten Sie die folgenden Schritte.
+Der folgende Screenshot zeigt die Einstellungen, wenn Sie die [Aufbewahrungbezeichnung](retention.md#retention-labels) der Produktspezifikation im Sicherheits- und Compliance-Center erstellen. Sie können den Ereignistyp der **Einstellung des Produkts** erstellen, wenn Sie die Aufbewahrungsbezeichnung erstellen. Beachten Sie die folgenden Schritte.
 
 ![Aufbewahrungseinstellungen für die Bezeichnung „Produktspezifikation“](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ Nachdem die Aufbewahrungsbezeichnung erstellt wurde, wird die Aufbewahrungsbezei
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>Klassifizieren von Inhalten durch automatisches Anwenden von Aufbewahrungsbezeichnungen
 
-Wir werden die Aufbewahrungsbezeichnungen, die wir für dieses Szenario erstellt haben, mithilfe von KQL (Keyword Query Language) [automatisch anwenden](labels.md#applying-a-retention-label-automatically-based-on-conditions). KQL ist die Sprache, mit der Suchanfragen erstellt werden. In KQL können Sie mithilfe von Schlüsselwörtern oder verwalteten Eigenschaften suchen. Weitere Informationen zu KQL finden Sie hier <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+Wir werden die Aufbewahrungsbezeichnungen, die wir für dieses Szenario erstellt haben, mithilfe von KQL (Keyword Query Language) [automatisch anwenden](apply-retention-labels-automatically.md). KQL ist die Sprache, mit der Suchanfragen erstellt werden. In KQL können Sie mithilfe von Schlüsselwörtern oder verwalteten Eigenschaften suchen. Weitere Informationen zu KQL finden Sie hier <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
 Auf hoher Ebene möchten wir Microsoft 365 mitteilen, dass Sie die Aufbewahrungsbezeichnung der **Produktspezifikation** auf alle Dokumente anwenden möchten, die über den **Status** **Endgültig** verfügen und den **Dokumententypen** **Produktspezifikation** besitzen. Erinnern Sie sich daran, dass **Status** und **Dokumenttyp** die Sitespalten sind, die Sie zuvor für den Inhaltstyp "Produktdokumentation" im Abschnitt [Informationsarchitektur](#information-architecture) definiert haben. Um dies zu erreichen, müssen wir das Suchschema konfigurieren.
 
@@ -333,7 +333,7 @@ Dies bedeutet, dass der Aufbewahrungszeitraum für die Bezeichnung, die auf das 
 
 ### <a name="more-about-asset-ids"></a>Mehr über Objekt-IDs
 
-Wie in der [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md) erläutert, ist es wichtig, die Beziehung zwischen Ereignistypen, Bezeichnungen, Ereignissen und Objekt-IDs zu verstehen. Die Objekt-ID ist einfach eine weitere Dokumenteigenschaft in SharePoint und OneDrive. Auf diese Weise können Sie die Dokumente identifizieren, deren Aufbewahrungszeitraum durch das Ereignis ausgelöst wird. Standardmäßig verfügt SharePoint über eine Objekt-ID-Eigenschaft, die Sie für die ereignisgesteuerte Aufbewahrung verwenden können:
+Wie im Artikel [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md) erläutert, ist es wichtig, die Beziehung zwischen Ereignistypen, Aufbewahrungsbezeichnungen, Ereignissen und Objekt-IDs zu verstehen. Die Objekt-ID ist einfach eine weitere Dokumenteigenschaft in SharePoint und OneDrive. Auf diese Weise können Sie die Dokumente identifizieren, deren Aufbewahrungszeitraum durch das Ereignis ausgelöst wird. Standardmäßig verfügt SharePoint über eine Objekt-ID-Eigenschaft, die Sie für die ereignisgesteuerte Aufbewahrung verwenden können:
 
 ![Die Eigenschaft "Objekt-ID" wird auf der Detailseite der Dokumenteigenschaften angezeigt](../media/SPRetention26.png)
 
