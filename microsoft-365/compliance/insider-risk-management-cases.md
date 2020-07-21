@@ -12,30 +12,37 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d4c2ed423743bb0f7a9c4550421c5266cc5d08b0
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: 52b80c85fcd9ddb22330c1103e3df908a217e8f2
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091952"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199931"
 ---
 # <a name="insider-risk-management-cases"></a>Insider Risikomanagement-Fälle
 
-Fälle sind das Herzstück des Insider Risikomanagements und ermöglichen es Ihnen, Probleme, die durch in ihren Richtlinien definierte Risikoindikatoren generiert werden, eingehend zu untersuchen und Maßnahmen zu ergreifen. Fälle werden manuell aus Warnungen in den Situationen erstellt, in denen weitere Aktionen erforderlich sind, um ein Compliance-bezogenes Problem für einen Mitarbeiter zu beheben. Bei jedem Fall handelt es sich um einen einzelnen Mitarbeiter, und mehrere Benachrichtigungen für den Mitarbeiter können einem vorhandenen Fall oder einem neuen Fall hinzugefügt werden. Nach der Untersuchung der Einzelheiten eines Falls können Sie Maßnahmen ergreifen, indem Sie dem Mitarbeiter eine Mitteilung schicken, den Fall als gutartig lösen oder zu einer Daten- oder Mitarbeiteruntersuchung eskalieren.
+Fälle sind das Herzstück des Insider Risikomanagements und ermöglichen es Ihnen, Probleme, die durch in ihren Richtlinien definierte Risikoindikatoren generiert werden, eingehend zu untersuchen und zu bearbeiten. Fälle werden manuell aus Warnungen in Situationen erstellt, in denen weitere Aktionen erforderlich sind, um einen Compliance-bezogenen Fehler für einen Benutzer zu beheben. Bei jedem Fall handelt es sich um einen einzelnen Benutzer, und mehrere Benachrichtigungen für den Benutzer können einem vorhandenen Fall oder einem neuen Fall hinzugefügt werden. 
 
-## <a name="case-dashboard"></a>Fall-Dashboard
+Nachdem Sie die Details eines Falles untersucht haben, können Sie folgende Aktionen durchführen:
 
-Im Dashboard**Fälle** im Insider-Risikomanagement können Sie Fälle anzeigen und entsprechende Maßnahmen ergreifen. Jedes Berichts-Widget auf dem Dashboard zeigt Informationen für die letzten 30 Tage an.
+- Senden des Benutzers eine Benachrichtigung
+- Auflösen des Falls als gutartig
+- Freigeben des Falls für Ihre ServiceNow-Instanz oder mit einem e-Mail-Empfänger
+- eskalieren der Argumente für eine erweiterte eDiscovery-Untersuchung
+
+## <a name="cases-dashboard"></a>Cases-Dashboard
+
+Im Dashboard für Insider Risikomanagement- **Fälle** können Sie Fälle anzeigen und bearbeiten. Jedes Berichts-Widget auf dem Dashboard zeigt Informationen für die letzten 30 Tage an.
 
 - **Aktive Fälle**: die Gesamtzahl der untersuchten aktiven Fälle.
 - **Fälle in den letzten 30 Tagen**: die Gesamtzahl der erstellten Fälle, sortiert nach *aktivem* und *geschlossenem* Status.
 - **Statistik**: durchschnittliche Zeit der aktiven Fälle, aufgeführt in Stunden, Tagen oder Monaten.
 
-In der Fall-Warteschlange befinden sich alle aktiven und abgeschlossenen Fälle Ihres Unternehmens sowie der aktuelle Zustand der folgenden Fall-Attribute:
+In der Fall Warteschlange werden alle aktiven und geschlossenen Fälle für Ihre Organisation neben dem aktuellen Status der folgenden Fall Attribute aufgeführt:
 
 - **Case Name**: der Name des Falls, der definiert wird, wenn eine Warnung bestätigt wird und der Fall erstellt wird.  
 - **Status**: der Status des Falls, entweder *aktiv* oder *geschlossen*.
-- **User**: der Mitarbeiter für den Fall.
+- **User**: der Benutzer für den Fall. Wenn die Anonymisierung für Benutzernamen aktiviert ist, werden anonymisierte Informationen angezeigt.
 - **Geöffneter Zeitfall**: die Zeit, die seit dem Öffnen des Groß-/Kleinschreibung-Verfahrens vergangen ist.
 - **Total Policy Alerts**: die Anzahl der Richtlinien Übereinstimmungen, die in der Anfrage enthalten sind. Diese Zahl kann steigen, wenn neue Warnungen zu dem Fall hinzugefügt werden.
 - **Last updated**: die Zeit, die vergangen ist, seit es eine zusätzliche Groß-/Kleinschreibung oder Änderung im Fall Status gegeben hat.
@@ -49,15 +56,27 @@ Verwenden Sie das **Search** -Steuerelement, um nach bestimmten Text zu suchen, 
 - Öffnung des Falls, Startdatum und Enddatum
 - Letzte Aktualisierung, Startdatum und Enddatum
 
+## <a name="filter-cases"></a>Filter Fälle
+
+Je nach Anzahl und Typ der aktiven Insider Risiko-Verwaltungsrichtlinien in Ihrer Organisation kann die Überprüfung einer großen Warteschlange eine Herausforderung darstellen. Die Verwendung von Case-filtern kann Analysten und Ermittlern beim Sortieren von Fällen mit verschiedenen Attributen helfen. Um Warnungen im **Cases-Dashboard**zu filtern, wählen Sie das **Filter** -Steuerelement aus. Sie können Fälle nach einem oder mehreren Attributen filtern:
+
+- **Status**: Wählen Sie einen oder mehrere Statuswerte aus, um die Anfrageliste zu filtern. Die Optionen sind *aktiv* und *geschlossen*.
+- **Geöffneter Zeitfall**: Wählen Sie das Start-und Enddatum für den Zeitpunkt, an dem der Fall geöffnet wurde.
+- **Zuletzt aktualisiert**: Wählen Sie das Start-und Enddatum für den Zeitpunkt, an dem der Fall aktualisiert wurde.
+
 ## <a name="investigate-a-case"></a>Untersuchen eines Falls
 
-Eine eingehendere Untersuchung der Warnungen beim Insider Risikomanagement ist für die richtigen Korrekturmaßnahmen wichtig. Bei Insider Risk Management-Fällen handelt es sich um das zentrale Verwaltungstool, mit dem Sie tiefer in den Verlauf von Mitarbeiter Risiken und Warnungsdetails eintauchen und die Inhalte und Nachrichten untersuchen können, die Risiken ausgesetzt sind. Risikoanalysten und Ermittler verwenden auch Fälle, um Überprüfung Feedback und Notizen zu zentralisieren und die Fall Behebung zu verarbeiten. 
+Eine eingehendere Untersuchung der Warnungen beim Insider Risikomanagement ist für die richtigen Korrekturmaßnahmen wichtig. Bei Insider Risk Management-Fällen handelt es sich um das zentrale Verwaltungstool, mit dem Sie tiefer in den Verlauf von Benutzer Risiko Aktivitäten und Warnungsdetails eintauchen und die Inhalte und Nachrichten untersuchen können, die Risiken ausgesetzt sind. Risikoanalysten und Ermittler verwenden auch Fälle, um Überprüfung Feedback und Notizen zu zentralisieren und die Fall Behebung zu verarbeiten.
 
 Wenn Sie einen Fall auswählen, werden die Fall-Verwaltungstool geöffnet. Diese ermöglichen es Analysten und Ermittlern, sich den Fall bis ins kleinste Detail anzeigen zu lassen.
 
 ### <a name="case-overview"></a>Fallübersicht
 
-Die Registerkarte **Fallübersicht** fasst die Warnungsaktivitäten und den Verlauf der Risikostufe für jeden Fall zusammen. Das Widget **Warnungen** zeigt die Richtlinien Übereinstimmungen für den Fall an, einschließlich des Status der Warnung, des Schweregrads des Warnungs Risikos und der Feststellung der Warnung. Das Diagramm **Risikostufenverlauf** zeigt die Risikostufe des entsprechenden Benutzers in den letzten 30 Tagen. Das Liniendiagramm ermöglicht es Analysten und Ermittlern, die Entwicklung des allgemeinen Benutzerrisikos im Laufe der Zeit schnell auf einen Blick zu erfassen. Das Widget **Inhalt der Risikoaktivität** fasst die Daten- und Inhaltstypen zusammen, die in Fall-Warnungen enthalten sind. Dieses Widget bietet einen Gesamtüberblick über alle Daten und Inhalte, die in diesem Fall gefährdet sind.
+Die Registerkarte **Fallübersicht** fasst die Warnungsaktivitäten und den Verlauf der Risikostufe für jeden Fall zusammen. 
+
+- Das Widget **Warnungen** zeigt die Richtlinien Übereinstimmungen für den Fall an, einschließlich des Status der Warnung, des Schweregrads des Warnungs Risikos und der Feststellung der Warnung. 
+- Das Diagramm **Risikostufenverlauf** zeigt die Risikostufe des entsprechenden Benutzers in den letzten 30 Tagen. Das Liniendiagramm ermöglicht es Analysten und Ermittlern, die Entwicklung des allgemeinen Benutzerrisikos im Laufe der Zeit schnell auf einen Blick zu erfassen. 
+- Das Widget **Inhalt der Risikoaktivität** fasst die Daten- und Inhaltstypen zusammen, die in Fall-Warnungen enthalten sind. Dieses Widget bietet einen Gesamtüberblick über alle Daten und Inhalte, die in diesem Fall gefährdet sind.
 
 Der Bereich **Fall Details** ist auf allen Registerkarten für die Fallverwaltung verfügbar und fasst die Fall Details für Risikoanalysten und Ermittler zusammen. Sie umfasst die folgenden Bereiche:
 
@@ -65,7 +84,7 @@ Der Bereich **Fall Details** ist auf allen Registerkarten für die Fallverwaltun
 - **Case Status**: der aktuelle Status des Falls, entweder *aktiv* oder *geschlossen*.
 - **Risikobewertung des Benutzers**: das aktuelle berechnete Risikoniveau des Benutzers für den Fall. Dieser Wert wird alle 24 Stunden berechnet, und bezieht die Risikobewertungen aller aktiver Warnungen für den betreffenden Benutzer in die Berechnung mit ein.
 - **Benachrichtigungen bestätigt**: Liste der Benachrichtigungen für den Benutzer, die für den Fall bestätigt wurden.
-- **Inhalt in Gefahr**: Liste der Inhalte, sortiert nach Inhaltsquellen und Typen. Beispielsweise würden Sie für gefährdete Inhalte in SharePoint Online eine Liste mit Ordner- oder Dateinamen sehen, die der Risikoaktivität für Warnungen im entsprechenden Fall zugeordnet sind.
+- **Zugehöriger Inhalt**: Liste der Inhalte, sortiert nach Inhaltsquellen und Typen. Beispielsweise würden Sie für gefährdete Inhalte in SharePoint Online eine Liste mit Ordner- oder Dateinamen sehen, die der Risikoaktivität für Warnungen im entsprechenden Fall zugeordnet sind.
 
 ![Insider Risk Management-Fall Details](../media/insider-risk-case-details.png)
 
@@ -85,6 +104,13 @@ Verwenden Sie das Search-Steuerelement, um Warnungsnamen nach bestimmten Text zu
 - Schweregrad
 - Zeitpunkt der Erkennung, Startdatum und Enddatum
 
+Verwenden Sie das Filter-Steuerelement, um Warnungen nach verschiedenen Attributen zu filtern, einschließlich:
+
+- **Status**: Wählen Sie einen oder mehrere Statuswerte aus, um die Warnungsliste zu filtern. Die Optionen sind *Bestätigt*, *Abgelehnt*, *Überprüfung erforderlich* und *Behoben*.
+- **Schweregrad**: Wählen Sie einen oder mehrere Warnungs Risikoschwere Grade aus, um die Warnungsliste zu filtern. Die Optionen sind *Hoch*, *Moderat* und *Niedrig*.
+- **Erkannte Zeit**: Wählen Sie das Start-und Enddatum für die Erstellung der Warnung aus.
+- **Richtlinie**: Wählen Sie eine oder mehrere Richtlinien aus, um die Warnungen zu filtern, die von den ausgewählten Richtlinien generiert wurden.
+
 ### <a name="user-activity"></a>Benutzeraktivität
 
 Die Registerkarte**Benutzeraktivität** ist eines der leistungsstärksten Werkzeuge für die Analyse und Untersuchung interner Risiken bei Föllen in der Insider-Risikomanagement-Lösung. Diese Registerkarte ist so strukturiert, dass eine schnelle Überprüfung eines Falls möglich ist, einschließlich einer Verlaufs Zeitachse aller Warnungen, aller Warnungsdetails, des aktuellen Risiko Werts für den Benutzer in dem Fall und der Steuerelemente, mit denen wirksame Maßnahmen zur Eindämmung der Risiken in dem Fall ergriffen werden.
@@ -99,11 +125,11 @@ Die Registerkarte**Benutzeraktivität** ist eines der leistungsstärksten Werkze
     - Anzahl der Ereignisse, die mit der Warnung verknüpft sind. Links zu jeder Datei oder E-Mail, die mit der Risikoaktivität verknüpft sind, können ebenfalls abgerufen werden.
 3. **Legende zur Risiko Aktivität**: am unteren Rand des Benutzer Aktivitätsdiagramms können Sie mit einer farbcodierten Legende schnell die Risikokategorie für jede Warnung bestimmen.
 4. **Chronologie der Risiko Aktivität**: die vollständige Chronologie aller mit dem Fall verbundenen Risikowarnungen wird aufgeführt, einschließlich aller Details, die in der entsprechenden Warnungs Blase verfügbar sind.
-5. **Case-Aktionen**: Optionen zum Auflösen der Groß-/Kleinschreibung befinden sich auf der Symbolleiste für den Fall Vorgang. Sie können einen Fall auflösen, eine E-Mail-Benachrichtigung an den betreffenden Mitarbeiter senden, oder den Fall für eine Daten- oder Mitarbeiteruntersuchung eskalieren.
+5. **Case-Aktionen**: Optionen zum Auflösen der Groß-/Kleinschreibung befinden sich auf der Symbolleiste für den Fall Vorgang. Sie können einen Fall lösen, eine e-Mail-Benachrichtigung an den Benutzer senden oder den Fall für eine Daten-oder Benutzer Ermittlung eskalieren.
 
 ### <a name="content-explorer"></a>Inhalts-Explorer
 
-Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler Kopien aller einzelnen Dateien und e-Mail-Nachrichten überprüfen, die mit Risikowarnungen verbunden sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Mitarbeiter Hunderte von Dateien aus SharePoint Online herunterlädt und die Aktivität eine Richtlinien Warnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus den ursprünglichen Speicherquellen in den Fall Insider Risk Management kopiert.
+Auf der Registerkarte **Inhalts-Explorer** können Risikoanalysten und Ermittler Kopien aller einzelnen Dateien und e-Mail-Nachrichten überprüfen, die mit Risikowarnungen verbunden sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Benutzer Hunderte von Dateien aus SharePoint Online herunterlädt und die Aktivität eine Richtlinien Warnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus den ursprünglichen Speicherquellen in den Fall Insider Risk Management kopiert.
 
 Der Inhalts-Explorer ist ein leistungsfähiges Tool mit einfachen und erweiterten Such-und Filterfunktionen. Weitere Informationen zur Verwendung des Inhalts-Explorers finden Sie unter [Insider Risk Management Content Explorer](insider-risk-management-content-explorer.md).
 
@@ -145,38 +171,56 @@ So fügen Sie einem Fall einen Mitwirkenden hinzu:
 
 ## <a name="case-actions"></a>Fallmaßnahmen
 
-Risikoanalysten und Ermittler können abhängig vom Schweregrad des Falles, vom Risikoverlauf des betreffenden Benutzers, und von den Risikorichtlinien der Organisation Maßnahmen für einen Fall mithilfe einer von verschiedenen Methoden ergreifen. In einigen Fällen müssen Sie möglicherweise einen Fall eine Mitarbeiter- oder Datenermittlung eskalieren, um mit anderen Bereichen Ihrer Organisation zusammenzuarbeiten und sich tiefgreifender mit den Risikoaktivitäten zu befassen. Das Insider Risikomanagement ist eng mit anderen Microsoft 365-Kompatibilitätsfeatures integriert, die Ihnen bei der End-to-End-Lösung helfen.
+Risikoanalysten und Ermittler können in einer von mehreren Methoden Maßnahmen in Bezug auf einen Fall ergreifen, je nach Schweregrad des Falls, Risikoverlauf des Benutzers und Risikorichtlinien Ihrer Organisation. In einigen Situationen müssen Sie möglicherweise einen Fall an einen Benutzer oder eine Datenermittlung eskalieren, um mit anderen Bereichen Ihrer Organisation zusammenzuarbeiten und tiefer in Risiko Aktivitäten einzutauchen. Das Insider Risikomanagement ist eng mit anderen Microsoft 365-Kompatibilitätslösungen integriert, die Ihnen bei der End-to-End-Lösungsverwaltung helfen.
 
-### <a name="send-a-notice"></a>Senden einer Notiz
+### <a name="send-email-notice"></a>E-Mail-Benachrichtigung senden
 
-In den meisten Fällen sind Handlungen von Mitarbeitern, die Warnungen vor Richtlinienverstößen hervorrufen, unabsichtlich oder versehentlich. Das Senden einer Erinnerung an den Mitarbeiter per E-Mail ist eine effektive Methode zur Dokumentation der Fallüberprüfung und der Maßnahmen sowie eine Methode, um die Mitarbeiter an Unternehmensrichtlinien zu erinnern oder auf Auffrischungsschulungen hinzuweisen. Benachrichtigungen werden aus [Benachrichtigungsvorlagen generiert, die Sie](insider-risk-management-notices.md) für ihre Insider Risk Management-Infrastruktur erstellen.
+In den meisten Fällen sind Benutzeraktionen, die Warnungen zu Insider Risiken verursachen, versehentlich oder versehentlich. Das Senden einer Mahnungsbenachrichtigung per e-Mail an den Benutzer ist eine effektive Methode zum Dokumentieren der Fall Überprüfung und-Aktion sowie eine Methode, um Benutzer an Unternehmensrichtlinien zu erinnern oder Sie auf eine Auffrischungsschulung hinzuweisen. Benachrichtigungen werden aus [Benachrichtigungsvorlagen generiert, die Sie](insider-risk-management-notices.md) für ihre Insider Risk Management-Infrastruktur erstellen.
 
-Denken Sie daran, dass das Senden einer Erinnerung an einen Mitarbeiter ***den Fall nicht***als *abgeschlossen* markiert. In einigen Fällen möchten Sie möglicherweise einen Fall geöffnet lassen, auch nachdem Sie eine Benachrichtigung an den Mitarbeiter gesendet haben, um potentielle weitere Risikoaktivitäten nachvollziehen zu können, ohne einen neuen Fall zu öffnen. Wenn Sie einen Fall nach dem Senden einer Benachrichtigung auflösen möchten, müssen Sie **Fall lösen** als Folgeschritt nach dem Senden einer Benachrichtigung auswählen.
+Es ist wichtig zu beachten, dass das Senden einer e-Mail-Benachrichtigung an einen Benutzer den Fall ***nicht*** als *geschlossen*auflöst. In einigen Fällen möchten Sie möglicherweise eine Anfrage offen lassen, nachdem Sie eine Benachrichtigung an einen Benutzer gesendet haben, um nach weiteren Risiko Aktivitäten zu suchen, ohne einen neuen Fall zu öffnen. Wenn Sie einen Fall nach dem Senden einer Benachrichtigung auflösen möchten, müssen Sie **Fall lösen** als Folgeschritt nach dem Senden einer Benachrichtigung auswählen.
 
-So senden Sie eine Benachrichtigung an den einem Fall zugewiesenen Mitarbeiter:
+So senden Sie eine Benachrichtigung an den Benutzer, der einem Fall zugewiesen wurde:
 
 1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Fälle** aus.
-2. Wählen Sie einen Fall aus, und klicken Sie dann auf der Symbolleiste für den Fall Aktion auf die Schaltfläche **e-Mail-Nachricht senden**
+2. Wählen Sie einen Fall aus, und wählen Sie dann auf der Symbolleiste für den Fall Aktion die Schaltfläche **e-Mail-Nachricht senden** .
 3. Wählen Sie im Dialogfeld **e-Mail-Nachricht senden** das Dropdown-Steuerelement **Hinweis Vorlage** auswählen aus, um die Benachrichtigungsvorlage für den Hinweis auszuwählen. Mit dieser Auswahl werden die anderen Felder im Hinweis vorab ausgefüllt.
 4. Überprüfen Sie die Hinweis Felder, und aktualisieren Sie nach Bedarf. Durch die hier eingegebenen Werte werden die Werte der Vorlage außer Kraft gesetzt.
-5. Wählen Sie **senden** aus, um den Hinweis an den Mitarbeiter zu senden, oder wählen Sie **Abbrechen** , um das Dialogfeld zu schließen, ohne den Hinweis an den Mitarbeiter zu senden. Alle gesendeten Benachrichtigungen werden der Fall Notes-Warteschlange im **Case Notes** -Dashboard hinzugefügt.
+5. Wählen Sie **senden** aus, um den Hinweis an den Benutzer zu senden, oder wählen Sie **Abbrechen** , um das Dialogfeld zu schließen, ohne den Hinweis an den Benutzer zu senden. Alle gesendeten Benachrichtigungen werden der Fall Notes-Warteschlange im **Case Notes** -Dashboard hinzugefügt.
 
 ### <a name="escalate-for-investigation"></a>Eskalieren zur Überprüfung
 
-In Situationen, in denen eine zusätzliche rechtliche Überprüfung für die Risikoaktivitäten des Mitarbeiters erforderlich ist, eskalieren Sie den Fall an die Mitarbeiteruntersuchung. Diese Eskalation öffnet einen neuen Advanced eDiscovery-Fall in Ihrer Microsoft 365-Organisation. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen rechtlichen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem kann Ihr Rechtsteam den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren. Das Zuweisen eines Überprüfers als Verwahrer in einem Advanced eDiscovery-Fall, der aus einem Fall im Insider-Risikomanagement erstellt wurde, hilft Ihrem Rechtsteam dabei, angemessene Maßnahmen zu ergreifen, und die Erhaltung von Inhalten zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+Eskalieren Sie den Fall für die Benutzer Ermittlung in Situationen, in denen zusätzliche rechtliche Überprüfungen für die Risiko Aktivität des Benutzers erforderlich sind. Diese Eskalation öffnet einen neuen Advanced eDiscovery-Fall in Ihrer Microsoft 365-Organisation. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen rechtlichen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem kann Ihr Rechtsteam den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren. Das Zuweisen eines Überprüfers als Verwahrer in einem Advanced eDiscovery-Fall, der aus einem Fall im Insider-Risikomanagement erstellt wurde, hilft Ihrem Rechtsteam dabei, angemessene Maßnahmen zu ergreifen, und die Erhaltung von Inhalten zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
-So eskalieren Sie einen Fall an eine Untersuchung durch Mitarbeiter:
+So eskalieren Sie einen Fall an eine Benutzer Ermittlung:
 
 1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann auf der Symbolleiste für den Fall Vorgang die Schaltfläche **zur Untersuchung eskalieren aus** .
-3. Geben Sie im Dialogfeld **zur Untersuchung eskalieren** einen Namen für die neue Mitarbeiter Ermittlung ein. Geben Sie bei Bedarf Hinweise zu dem Fall ein, und wählen Sie **eskalieren**aus.
-5. Wählen Sie **bestätigen** aus, um den Ermittlungs Fall für Mitarbeiter zu erstellen, oder wählen Sie **Abbrechen** , um das Dialogfeld zu schließen, ohne einen neuen Ermittlungs Fall für Mitarbeiter zu erstellen.
+3. Geben Sie im Dialogfeld **zur Untersuchung eskalieren** einen Namen für die Untersuchung des neuen Benutzers ein. Geben Sie bei Bedarf Hinweise zu dem Fall ein, und wählen Sie **eskalieren**aus.
+5. Wählen Sie **bestätigen** aus, um den Benutzer Ermittlungs Fall zu erstellen, oder klicken Sie auf **Abbrechen** , um das Dialogfeld zu schließen, ohne einen neuen Ermittlungs Fall für Benutzer zu erstellen.
 
-Nachdem der Fall des Insider Risikomanagements an einen neuen Ermittlungs Fall für Mitarbeiter eskaliert wurde, können Sie den neuen Fall im **eDiscovery**  >  Microsoft 365 Compliance Center im eDiscovery**Advanced** -Bereich überprüfen.
+Nachdem der Fall des Insider Risikomanagements an einen neuen Benutzer Ermittlungs Fall eskaliert wurde, können Sie den neuen Fall im **eDiscovery**  >  Microsoft 365 Compliance Center im Bereich eDiscovery**Advanced** überprüfen.
+
+### <a name="share-a-case"></a>Freigeben einer Anfrage
+
+Wenn Sie einen Insider Risk Management-Fall freigeben, können Prüfer und Besprechungen problemlos mit anderen Compliance-Beteiligten in Ihrer Organisation zusammenarbeiten. Sie können einen Link zu einem Insider Risk Management-Fall schnell für externe Beteiligte aus dem Fallmanagement Bereich freigeben. Für den Zugriff auf den Fall Insider Risk Management aus dem Link müssen Beteiligte in einer der Rollengruppen für Insider Risikomanagement enthalten sein.
+
+Die folgenden Freigabeoptionen stehen zur Verfügung: 
+
+- **ServiceNow**: Nachdem Sie den Microsoft 365 ServiceNow-Connector für Ihre Microsoft 365-Organisation konfiguriert haben, können Sie problemlos einen Link für den Fall freigeben, einen Vorfall öffnen oder eine Änderung an ihrer ServiceNow-Organisation anfordern. Wenn Sie den Fall für ServiceNow freigeben möchten **Share**, wählen Sie  >  **ServiceNow** aus der Fall Aktion freigeben aus. Die ServiceNow-Integration mit Insider Risk Management-Unterstützung umfasst die folgenden Fall Informationen und Aktionen:
+    - **Vorgangsname**: der Name für den neuen ServiceNow-Vorgang.
+    - **Aufgabenbeschreibung**: die Beschreibung für den neuen ServiceNow-Vorgang. Dieses bearbeitbare Beschreibungsfeld enthält automatisch einen Link zum Fall "Insider Risk Management".
+    - **Vorgangstyp**: der Vorgangstyp für den neuen ServiceNow-Vorgang, entweder *Vorfall* oder *Änderungsanforderung*.
+    - **Priorität**: die Priorität für den neuen ServiceNow-Vorgang, entweder *Planung*, *niedrig*, *moderat*, *hoch*oder *kritisch*.
+    - **Fälligkeitsdatum**: das angeforderte Datum für den Abschluss der ServiceNow-Aufgabe.
+
+![Freigabe von Insider Risikomanagement mit ServiceNow](../media/insider-risk-share-servicenow.png)
+
+- **E-Mail**: teilt einen Link zum Insider Risk Management-Fall in einer e-Mail. Sie können einen beliebigen lokal konfigurierten e-Mail-Client mit dieser Freigabeoption auswählen. Wenn Sie den Fall Link für e-Mail freigeben möchten **Share**, wählen Sie  >  in der Symbolleiste für den Fall Vorgang die Option**e-Mail** freigeben aus.
+- **Link kopieren**: kopiert einen Link zum Insider Risikomanagement-Fall in Ihre Zwischenablage. Um den Fall Link in Ihre Zwischenablage zu kopieren **Share**, wählen Sie  >  **Link Kopie** freigeben in der Symbolleiste für den Fall Aktion aus.
 
 ### <a name="resolve-the-case"></a>Auflösen des Falls
 
-Wenn die Überprüfung und Untersuchung durch die Risikoanalysten und Ermittler abgeschlossen wurde, kann ein Fall aufgelöst werden, um Maßnahmen als Reaktion auf alle Warnungen zu ergreifen, die aktuell im Fall enthalten sind. Durch das Auflösen eines Falls wird eine Auflösungs Klassifizierung hinzugefügt, der Fall Status in " *geschlossen*" geändert, und die Auflösungs Aktions Gründe werden automatisch der Warteschlange "Case Notes" im Dashboard " **Case Notes** " hinzugefügt. Fälle können auf zwei Arten aufgelöst werden:
+Nachdem Risikoanalysten und Ermittler Ihre Überprüfung und Untersuchung abgeschlossen haben, kann ein Fall aufgelöst werden, um auf alle derzeit im Fall enthaltenen Benachrichtigungen zu reagieren. Durch das Auflösen eines Falls wird eine Auflösungs Klassifizierung hinzugefügt, der Fall Status in " *geschlossen*" geändert, und die Auflösungs Aktions Gründe werden automatisch der Warteschlange "Case Notes" im Dashboard " **Case Notes** " hinzugefügt. Fälle können auf zwei Arten aufgelöst werden:
 
 - **Gutartig**: die Klassifizierung für Fälle, in denen Richtlinien Übereinstimmungs Warnungen als niedriges Risiko, nicht schwerwiegend oder falsch positiv bewertet werden.
 - **Bestätigte Richtlinienverletzung**: die Klassifizierung für Fälle, in denen Richtlinien Übereinstimmungs Warnungen als riskant, schwerwiegend oder als Ergebnis böswilliger Absicht ausgewertet werden.

@@ -1,5 +1,5 @@
 ---
-title: Insider Risk Management-Benachrichtigungsvorlagen
+title: Vorlagen für Benachrichtigungen zum Insider-Risikomanagement
 description: Informationen zu Insider Risk Management-Benachrichtigungsvorlagen in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
@@ -12,22 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 0211eefe3c4a946bbaa4ad4c8c66e5df7b37091e
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179086"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199488"
 ---
-# <a name="insider-risk-management-notice-templates"></a>Insider Risk Management-Benachrichtigungsvorlagen
+# <a name="insider-risk-management-notice-templates"></a>Vorlagen für Benachrichtigungen zum Insider-Risikomanagement
 
-Insider Risk Management-Benachrichtigungsvorlagen ermöglichen das Senden von e-Mail-Nachrichten an Mitarbeiter, wenn ihre Aktivitäten eine Richtlinienübereinstimmung und-Warnung generieren. In den meisten Fällen sind Mitarbeiter Aktionen, die Warnungen generieren, das Ergebnis von Fehlern oder versehentlichen Aktivitäten ohne böswillige Absicht. Benachrichtigungen dienen als einfache Erinnerungen an Mitarbeiter, um vorsichtiger zu sein oder um Links oder Informationen für Auffrischungsschulungen oder Unternehmensrichtlinien Ressourcen bereitzustellen. Benachrichtigungen können ein wichtiger Bestandteilihres internen Compliance-Schulungsprogramms sein und können bei der Erstellung eines dokumentierten Überwachungspfads für Mitarbeiter mit wiederkehrenden Risiko Aktivitäten behilflich sein.
+Insider Risk Management-Benachrichtigungsvorlagen ermöglichen das Senden von e-Mail-Nachrichten an Benutzer, wenn ihre Aktivitäten eine Richtlinienübereinstimmung und-Warnung generieren. In den meisten Fällen sind Benutzeraktionen, die Warnungen generieren, das Ergebnis von Fehlern oder versehentlichen Aktivitäten ohne böswillige Absicht. Benachrichtigungen dienen als einfache Erinnerungen an Benutzer, um vorsichtiger zu sein, um Links zu Informationen für Auffrischungsschulungen oder zu Unternehmensrichtlinien Ressourcen bereitzustellen. Benachrichtigungen können ein wichtiger Bestandteilihres internen Compliance-Schulungsprogramms sein und können bei der Erstellung eines dokumentierten Überwachungspfads für Benutzer mit wiederkehrenden Risiko Aktivitäten behilflich sein.
 
-Erstellen von Benachrichtigungsvorlagen, wenn Sie Benutzern eine e-Mail-Erinnerungs Benachrichtigung für Richtlinien Übereinstimmungen als Teil des Problem Lösungsprozesses senden möchten. Benachrichtigungen können nur an die e-Mail-Adresse des Mitarbeiters gesendet werden, die mit der bestimmten Warnung verknüpft ist, die überprüft wird. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinienübereinstimmung angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
+Erstellen von Benachrichtigungsvorlagen, wenn Sie Benutzern eine e-Mail-Erinnerungs Benachrichtigung für Richtlinien Übereinstimmungen als Teil des Problem Lösungsprozesses senden möchten. Benachrichtigungen können nur an die e-Mail-Adresse des Benutzers gesendet werden, die mit der bestimmten Warnung verknüpft ist, die überprüft wird. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinienübereinstimmung angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
 
 ## <a name="notice-templates-dashboard"></a>Hinweis Vorlagen-Dashboard
 
-Das Benachrichtigungs **Vorlagen-Dashboard** zeigt eine Liste konfigurierter Benachrichtigungsvorlagen an und ermöglicht Ihnen das Erstellen neuer Benachrichtigungsvorlagen. Die Benachrichtigungsvorlagen werden in umgekehrter Datumsreihenfolge mit der zuletzt aufgelisteten Benachrichtigungsvorlage aufgeführt.
+Im **Benachrichtigungsvorlagen-Dashboard** wird eine Liste der konfigurierten Benachrichtigungsvorlagen angezeigt, und Sie können neue Benachrichtigungsvorlagen erstellen. Die Benachrichtigungsvorlagen werden in umgekehrter Datumsreihenfolge aufgelistet, wobei die aktuellste Benachrichtigungsvorlage zuerst aufgelistet wird.
 
 ![Hinweis Vorlagen-Dashboard für Insider Risk Management](../media/insider-risk-notices-dashboard.png)
 
@@ -39,9 +39,9 @@ Wenn Sie mehr als eine einfache textbasierte e-Mail-Nachricht für Benachrichtig
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+<h2>Action Required: Contoso User Code of Conduct Policy Training</h2>
+<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso User <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>You are required to attend the Contoso User Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
 <p>Thank you,</p>
 <p><em>Human Resources</em></p>
 </body>
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Hinweis Vorlage für Inside
 2. Wählen Sie **Notizvorlage erstellen** aus, um den Benachrichtigungs-Assistenten zu öffnen.
 3. Füllen Sie auf der Seite **neue Notizvorlage erstellen** die folgenden Felder aus:
     - **Vorlagenname**: Geben Sie einen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungs Dashboard und in der Liste mit den Bekanntmachungen angezeigt, wenn Sie Benachrichtigungen von einem Fall senden.
-    - **Senden von**: Geben Sie die Absender-e-Mail-Adresse für den Hinweis ein. Diese Adresse wird im Feld **von:** in allen an Mitarbeiter gesendeten Benachrichtigungen angezeigt, es sei denn, beim Senden einer Nachricht aus einem Fall wurde eine Änderung vorgenommen.
+    - **Senden von**: Geben Sie die Absender-e-Mail-Adresse für den Hinweis ein. Diese Adresse wird im Feld **von:** in allen Benachrichtigungen angezeigt, die an Benutzer gesendet werden, es sei denn, Sie haben eine Benachrichtigung von einem Fall gesendet.
     - Felder **CC und Bcc** : optionale Benutzer oder Gruppen, die über die Richtlinienübereinstimmung benachrichtigt werden sollen, ausgewählt aus dem Active Directory für Ihr Abonnement.
     - **Betreff**: Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen.
     - **Nachrichten**Text: im Nachrichtentext angezeigte Informationen unterstützen Text-oder HTML-Werte.
@@ -76,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Benachrichtigungsvorl
 3. Wählen Sie auf der Seite Notice Details die Option **Bearbeiten** aus.
 4. Auf der Seite **Bearbeiten** können Sie die folgenden Felder bearbeiten:
     - **Vorlagenname**: Geben Sie einen neuen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungs Dashboard und in der Liste mit den Bekanntmachungen angezeigt, wenn Sie Benachrichtigungen von einem Fall senden.
-    - **Senden von**: Aktualisieren Sie die Absender-e-Mail-Adresse für den Hinweis. Diese Adresse wird im Feld **von:** in allen an Mitarbeiter gesendeten Benachrichtigungen angezeigt, es sei denn, beim Senden einer Nachricht aus einem Fall wurde eine Änderung vorgenommen.
+    - **Senden von**: Aktualisieren Sie die Absender-e-Mail-Adresse für den Hinweis. Diese Adresse wird im Feld **von:** in allen Benachrichtigungen angezeigt, die an Benutzer gesendet werden, es sei denn, Sie haben eine Benachrichtigung von einem Fall gesendet.
     - Felder **CC und Bcc** : Aktualisieren Sie optionale Benutzer oder Gruppen, um über die Richtlinienübereinstimmung benachrichtigt zu werden, und wählen Sie aus dem Active Directory für Ihr Abonnement aus.
     - **Betreff**: Update Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen.
     - **Nachrichtentext**: Aktualisieren von Informationen, die im Nachrichtentext angezeigt werden, unterstützt Text-oder HTML-Werte.

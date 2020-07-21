@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091921"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199689"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
-Verwenden Sie Richtlinien für das Insider-Risikomanagement, um riskante Aktivitäten und Verwaltungstools zu identifizieren, um Maßnahmen bei Risikoalarmen in Ihrer Organisation zu ergreifen. Führen Sie die folgenden Schritte aus, um Voraussetzungen einzurichten und eine Richtlinie für Insider-Risikomanagement zu konfigurieren.
+Verwenden Sie Richtlinien für Insider Risk Management, um riskante Aktivitäten und Verwaltungstools zu identifizieren, die auf Risikowarnungen in Ihrer Organisation reagieren. Führen Sie die folgenden Schritte aus, um Voraussetzungen einzurichten und eine Richtlinie für Insider-Risikomanagement zu konfigurieren.
 
 >[!IMPORTANT]
 >Die Microsoft 365 Insider Risk Management-Lösung bietet eine Mandantenebene, mit der Kunden die interne Steuerung auf Benutzerebene vereinfachen können. Administratoren auf Mandantenebene können Berechtigungen einrichten, um Zugriff auf diese Lösung für Mitglieder Ihrer Organisation bereitzustellen und Daten-Konnektoren im Microsoft 365 Compliance Center einzurichten, um relevante Daten zu importieren, um die Identifizierung potenziell riskanter Aktivitäten auf Benutzerebene zu unterstützen. Kunden bestätigen Einblicke in Bezug auf das Verhalten, den Charakter oder die Leistung der einzelnen Benutzer, die wesentlich im Zusammenhang mit der Beschäftigung stehen, können vom Administrator berechnet und anderen Benutzern in der Organisation zur Verfügung gestellt werden.
@@ -43,7 +43,7 @@ Benutzern, die in Richtlinien für das Insider Risikomanagement enthalten sind, 
 
 Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für das Insider Risikomanagement
+## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Schritt 1: Aktivieren von Berechtigungen für das Insider Risikomanagement
 
 Es gibt vier Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Funktionen für das Insider Risikomanagement verwendet werden. Um diese Konfigurationsschritte fortzusetzen, müssen ihre mandantenadministratoren Sie zunächst der Administratorrollengruppe " **Insider Risk Management** **" oder "Insider Risk Management"** zuweisen. Für den Zugriff auf und die Verwaltung von Funktionen für das Insider-Risikomanagement nach der Erstkonfiguration müssen Benutzer Mitglied mindestens einer Rollengruppe für das Risikomanagement für Insider sein.
 
@@ -74,42 +74,63 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe "Insid
 
 7. Wählen Sie **Speichern** aus, um die Benutzer der Rollengruppe hinzuzufügen. Wählen Sie **Schließen** aus, um die Schritte abzuschließen.
 
-## <a name="step-2-required-enable-the-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Überwachungsprotokolls
+## <a name="step-2-enable-the-audit-log"></a>Schritt 2: Aktivieren des Überwachungsprotokolls
 
-Das Insider-Risikomanagement verwendet Audit-Protokolle für Einblicke der Benutzer und Aktivitäten, die in Richtlinien konfiguriert sind. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer Richtlinie für Insider Risiken zugeordnet sind, oder wenn sich eine Richtlinie ändert.
+Das Insider-Risikomanagement verwendet Audit-Protokolle für Einblicke der Benutzer und Aktivitäten, die in Richtlinien konfiguriert sind. Die Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten, die einer Richtlinie für Insider Risiken zugeordnet sind, oder wenn eine Richtlinie immer geändert wird.
 
 Eine Schritt-für-Schritt-Anleitung zum Aktivieren der Überwachung finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md). Daraufhin teilt Ihnen eine Meldung mit, dass das Überwachungsprotokoll vorbereitet wird und Sie in ein paar Stunden nach Abschluss der Vorbereitung eine Suche durchführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Schritt 3 (optional): Konfigurieren der Voraussetzungen für Vorlagen
+## <a name="step-3-configure-prerequisites-for-templates"></a>Schritt 3: Konfigurieren der Voraussetzungen für Vorlagen
 
-Einige Vorlagen für Insider Risikomanagement haben Voraussetzungen, die für Richtlinien Indikatoren konfiguriert werden müssen, um relevante Aktivitäts Warnungen zu generieren. Konfigurieren Sie die entsprechenden Voraussetzungen in Abhängigkeit von den Richtlinien, die Sie für Ihre Organisation konfigurieren möchten.
+Die meisten Vorlagen für Insider Risikomanagement haben Voraussetzungen, die für Richtlinien Indikatoren konfiguriert werden müssen, um relevante Aktivitäts Warnungen zu generieren. Konfigurieren Sie die entsprechenden Voraussetzungen in Abhängigkeit von den Richtlinien, die Sie für Ihre Organisation konfigurieren möchten.
+
+Wenn Sie eine Richtlinie mit der Vorlage *anstößige Sprache in e-Mail-* Richtlinie konfigurieren, können Sie diesen Schritt überspringen und direkt zu **Schritt 4**wechseln.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Konfigurieren des Microsoft 365 HR-Connectors
 
-Das Insider Risk Management unterstützt das Importieren von Benutzer-und Protokolldaten, die von 3rd-Party-Risikomanagement-und Personalressourcen Plattformen importiert wurden. Mit dem Microsoft 365-Datenconnector für Humanressourcen (HR) können Sie Daten aus der CSV-Datei in der Personalabteilung einbinden, einschließlich Benutzer Beendigung und Datum der letzten Arbeit. Diese Daten helfen bei der Entwicklung von Warnindikatoren für Insider-Risikomanagement-Richtlinien und sind ein wichtiger Bestandteil bei der Konfiguration einer vollständigen Risikomanagement-Abdeckung in Ihrer Organisation.
+Das Insider Risk Management unterstützt das Importieren von Benutzer-und Protokolldaten, die von 3rd-Party-Risikomanagement-und Personalressourcen Plattformen importiert wurden. Mit dem Microsoft 365-Datenconnector für Human Resources (HR) können Sie Daten aus der Datenverarbeitung aus CSV-Dateien abrufen, einschließlich Benutzer Terminierungsdaten, Datum der letzten Arbeit, Benachrichtigungen zur Leistungsverbesserungsplan, Leistungs Überprüfungsaktionen und Änderungsstatus auf Auftragsebene. Diese Daten helfen bei der Entwicklung von Warnindikatoren für Insider-Risikomanagement-Richtlinien und sind ein wichtiger Bestandteil bei der Konfiguration einer vollständigen Risikomanagement-Abdeckung in Ihrer Organisation. Wenn Sie mehr als einen HF-Connector für Ihre Organisation konfigurieren, ruft das Insider Risikomanagement automatisch Indikatoren von allen HR-Connectors ab.
+Der Microsoft 365 HR-Connector ist erforderlich, wenn die folgenden Richtlinienvorlagen verwendet werden:
 
-Lesen Sie den Abschnitt [Einrichten eines Connectors zum Importieren von HR-Daten](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten. Wenn Sie den HF-Connector konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
+- Abtrennen von Benutzerdaten Diebstahl
+- Sicherheitsrichtlinienverletzungen durch Benutzer, die abgemeldet werden
+- Sicherheitsrichtlinienverletzungen durch verärgerte Benutzer
+- Datenverluste durch verärgerte Benutzer
 
->[!IMPORTANT]
->Wenn Sie eine Richtlinie mithilfe der *Datendiebstahl* Vorlage für den abgehenden Mitarbeiter konfigurieren, müssen Sie den HR-Connector so konfigurieren, dass er die vollständigen Signal Erkennungsfunktionen der Richtlinienvorlage verwendet. Wenn Sie mehr als einen HF-Connector für Ihre Organisation konfigurieren, ruft das Insider Risikomanagement automatisch Indikatoren von allen HR-Connectors ab.
+Lesen Sie den Artikel [Einrichten eines Connectors zum Importieren von HR-Daten](import-hr-data.md) , um Schritt-für-Schritt-Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten. Wenn Sie den HF-Connector konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Konfigurieren von Richtlinien zur Verhinderung von Datenverlust (DLP)
 
-Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen für DLP-Warnungen mit hohem Schweregrad zu identifizieren. Wenn Sie eine Richtlinie für Insider-Risikomanagement mit der Vorlage **Datenlecks** konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen.
+Das Insider Risikomanagement unterstützt die Verwendung von DLP-Richtlinien, um die absichtliche oder versehentliche Exposition vertraulicher Informationen an unerwünschte Personen für DLP-Warnungen mit hohem Schweregrad zu identifizieren. Wenn Sie eine Richtlinie für das Insider Risikomanagement mit einer der **Datenlecks** -Vorlagen konfigurieren, müssen Sie der Richtlinie eine bestimmte DLP-Richtlinie zuweisen.
 
-Diese Richtlinie unterstützt das Risikomanagement von Insider-Indikatoren für DLP-Warnungen mit hohem Schweregrad für vertrauliche Informationen und ist ein wichtiger Bestandteil der Konfiguration der vollständigen Risikomanagement Abdeckung in Ihrer Organisation. Weitere Informationen zu Insider Risikomanagement und DLP-Richtlinien Integration und Planungsüberlegungen finden Sie unter [Insider Risk Management Policies](insider-risk-management-policies.md#data-leaks).
+DLP-Richtlinien helfen Benutzern, die Risikobewertung im Insider-Risikomanagement für DLP-Warnungen mit hohem Schweregrad für vertrauliche Informationen zu aktivieren, und stellen einen wichtigen Bestandteil der vollständigen Risikomanagement Abdeckung in Ihrer Organisation dar. Weitere Informationen zu Insider Risikomanagement und DLP-Richtlinien Integration und Planungsüberlegungen finden Sie unter [Insider Risk Management Policies](insider-risk-management-policies.md#general-data-leaks).
 
 >[!IMPORTANT]
 >Stellen Sie sicher, dass Sie Folgendes abgeschlossen haben:
 >
 >- Sie verstehen und konfigurieren die in-Scope-Benutzer sowohl in den DLP-als auch im Insider Risk Management-Richtlinien, um die von Ihnen erwartete Richtlinien Abdeckung zu erstellen.
->- Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit dieser Vorlage verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
+>- Stellen Sie sicher, dass die Einstellung **vorfallberichte** in der DLP-Richtlinie für das Insider Risikomanagement, die mit diesen Vorlagen verwendet wird, für Warnungen mit *hohem* Schweregrad konfiguriert ist. Warnungen beim Insider-Risikomanagement werden nicht aus DLP-Richtlinien generiert, wenn das Feld " **vorfallberichte** " auf *niedrig* oder *Mittel*festgelegt ist.
 
-Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Themas. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
+Eine DLP-Richtlinie ist erforderlich, wenn die folgenden Richtlinienvorlagen verwendet werden:
 
-## <a name="step-4-required-configure-insider-risk-settings"></a>Schritt 4 (erforderlich): Konfigurieren von Einstellungen für Insider Risiken
+- Allgemeine Datenlecks
+- Datenverluste nach Prioritäts Benutzern
 
-Die [Einstellungen für Insider Risiken](insider-risk-management-policies.md#policy-settings) gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Die Einstellungen werden über das Steuerelement **Insider-Risiko-Einstellungen** konfiguriert, das sich oben auf allen Registerkarten des Insider-Risikomanagements befindet. Diese Einstellungen steuern Privatsphäre, Indikatoren, Überwachungsfenster und intelligente Erkennungen.
+Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Artikels. Wenn Sie eine DLP-Richtlinie konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
+
+### <a name="configure-priority-user-groups"></a>Konfigurieren von Prioritäts Benutzergruppen
+
+Das Insider Risikomanagement umfasst die Unterstützung für die Zuweisung von Prioritäts Benutzergruppen zu Richtlinien, um die Identität eindeutiger Risiko Aktivitäten für Benutzer mit kritischen Positionen, hohen Datenmengen und Netzwerkzugriff oder einer vergangenen Geschichte des Risikoverhaltens zu unterstützen. Das Erstellen einer Priorität-Benutzergruppe und das Zuweisen von Benutzern zur Gruppe helfen Bereichs Richtlinien den von diesen Benutzern vorgestellten eindeutigen Umständen.
+
+Bei Verwendung der folgenden Richtlinienvorlagen ist eine Prioritäts Benutzergruppe erforderlich:
+
+- Sicherheitsrichtlinienverletzungen nach Prioritäts Benutzern 
+- Datenverluste nach Prioritäts Benutzern
+
+Eine schrittweise Anleitung zum Erstellen einer Prioritäts Benutzergruppe finden Sie im Artikel [Erste Schritte mit Insider Risk Management-Einstellungen](insider-risk-management-settings.md#priority-user-groups-preview) . Wenn Sie eine Prioritäts Benutzergruppe konfiguriert haben, kehren Sie zu diesen Konfigurationsschritten zurück.
+
+## <a name="step-4-configure-insider-risk-settings"></a>Schritt 4: Konfigurieren von Einstellungen für Insider Risiken
+
+Die [Einstellungen für Insider Risiken](insider-risk-management-settings.md) gelten unabhängig von der Vorlage, die Sie beim Erstellen einer Richtlinie ausgewählt haben, für alle Insider Risiko-Verwaltungsrichtlinien. Die Einstellungen werden über das Steuerelement **Insider-Risiko-Einstellungen** konfiguriert, das sich oben auf allen Registerkarten des Insider-Risikomanagements befindet. Diese Einstellungen steuern Privatsphäre, Indikatoren, Überwachungsfenster und intelligente Erkennungen.
 
 Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellungen für das Insider Risiko:
 
@@ -120,11 +141,18 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
     >[!IMPORTANT]
     >Um Warnungen für riskante Aktivitäten zu erhalten, die in ihren Richtlinien definiert sind, müssen Sie ein oder mehrere Indikatoren auswählen.
 
-4. Wählen Sie auf der Seite **Richtlinienzeit Rahmen** die [Richtlinien Zeiträume](insider-risk-management-policies.md#policy-timeframes) aus, die für einen Benutzer wirksam werden sollen, wenn eine Übereinstimmung mit einer Insider Risiko Richtlinie ausgelöst wird.
-5. Konfigurieren Sie auf der Seite **intelligente Erkennungen** die [Anomalie-Erkennung, die Erkennung anstößiger Sprachen und die Warnstufe für Warnmeldungen](insider-risk-management-policies.md#intelligent-detections) für Insider Risikorichtlinien.
-6. Wählen Sie **Speichern** aus, um diese Einstellungen für ihre Insider Risikorichtlinien zu aktivieren.
+4. Wählen Sie auf der Seite **Richtlinienzeit Rahmen** die [Richtlinien Zeiträume](insider-risk-management-settings.md#policy-timeframes) aus, die für einen Benutzer wirksam werden sollen, wenn eine Übereinstimmung mit einer Insider Risiko Richtlinie ausgelöst wird.
+5. Konfigurieren Sie auf der Seite **intelligente Erkennungen** die folgenden Einstellungen für Insider Risikorichtlinien:
+    - [Anomalie-Erkennungen](insider-risk-management-settings.md#anomaly-detections)
+    - [Erkennung anstößiger Sprache](insider-risk-management-settings.md#offensive-language-detections)
+    - [Warnstufe auf dem Alert-Volume](insider-risk-management-settings.md#alert-volume)
+    - [Microsoft 365 Defender Advanced Threat Protection-Warnungsstatus](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Domäneneinstellungen](insider-risk-management-settings.md#domains-preview)
+6. Aktivieren Sie auf der Seite **Warnungen exportieren** den Export von Warnungsinformationen für Insider Risiken mithilfe der Office 365-Verwaltungs-APIs, falls erforderlich.
+7. Erstellen Sie auf der Seite **Priority User** Groups eine Prioritäts Benutzergruppe, und fügen Sie Benutzer hinzu, wenn Sie nicht in **Schritt 3**erstellt wurden.
+8. Wählen Sie **Speichern** aus, um diese Einstellungen für ihre Insider Risikorichtlinien zu aktivieren.
 
-## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Schritt 5 (erforderlich): Erstellen einer Richtlinie für das Insider Risikomanagement
+## <a name="step-5-create-an-insider-risk-management-policy"></a>Schritt 5: Erstellen einer Richtlinie für das Insider Risikomanagement
 
 Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer und legen fest, welche Arten von Risikoindikatoren für Warnmeldungen konfiguriert werden. Bevor Aktivitäten Warnungen auslösen können, muss eine Richtlinie konfiguriert werden.
 
@@ -136,18 +164,27 @@ Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer
     - **Richtlinienvorlage auswählen (erforderlich)**: Wählen Sie eine der [Richtlinienvorlagen](insider-risk-management-policies.md#policy-templates) aus, um die Arten von Risikoindikatoren zu definieren, die von der Richtlinie überwacht werden.
 
     >[!IMPORTANT]
-    >Wenn Sie die *Datenlecks* -Vorlage auswählen, müssen Sie mindestens eine DLP-Richtlinie konfigurieren, die Sie später im Assistenten zuweisen. Wenn Sie die *Datendiebstahl Vorlage "departing Employee* " auswählen, müssen Sie den HR-Connector so konfigurieren, dass er die vollständigen Signal Erkennungsfunktionen der Richtlinienvorlage verwendet.
+    >Die meisten Richtlinienvorlagen verfügen über Voraussetzungen, die für die Richtlinie konfiguriert werden müssen, um relevante Warnungen zu generieren. Wenn Sie die entsprechenden Richtlinien Voraussetzungen nicht konfiguriert haben, finden Sie weitere Informationen unter **Schritt 3** .
 
 4. Wählen Sie **weiter** aus, um fortzufahren.
-5. Wählen Sie auf der Seite **Benutzer** die Option **Benutzer oder Gruppe hinzufügen** aus, um zu definieren, welche Benutzer in das Kontrollkästchen Richtlinie eingeschlossen sind, oder **alle Benutzer und e-Mail-aktivierten Gruppen** auswählen. Wählen Sie **weiter** aus, um fortzufahren.
-6. Auf der Seite geben Sie an, **welche Inhalte priorisiert werden sollen (optional)** , können Sie die Quellen zuweisen, um riskante Benutzeraktivitäten zu priorisieren:
+5. Wählen Sie auf der Seite **Benutzer** die Option **Benutzer oder Gruppe hinzufügen** oder Benutzer **Gruppen mit Priorität auswählen** aus, um festzulegen, welche Benutzer oder Prioritäts Benutzergruppen in der Richtlinie enthalten sind, je nachdem, welche Richtlinienvorlage Sie ausgewählt haben. Aktivieren Sie gegebenenfalls **alle Benutzer und e-Mail-aktivierten Gruppen** (sofern Sie keine benutzerbasierte Prioritäts Vorlage ausgewählt haben). Wählen Sie **weiter** aus, um fortzufahren.
+6. Auf der Seite geben Sie an, **welche Inhalte priorisiert werden sollen (optional)** , können Sie die Quellen zuweisen, um höhere Risikobewertungen zu priorisieren. Einige Aktivitäten generieren jedoch nur dann eine Warnung, wenn der zugehörige Inhalt integrierte oder benutzerdefinierte vertrauliche Informationstypen enthält oder als Priorität auf dieser Seite angegeben wurde:
     - **SharePoint-Websites**: Wählen Sie **SharePoint-Website hinzufügen** und die SharePoint-Organisationen aus, die Sie priorisieren möchten. Beispiel: *"group1@contoso.SharePoint.com/Sites/Group1"*.
     - **Typ vertraulicher Informationen**: Wählen Sie **vertraulichen Infotyp hinzufügen** aus, und wählen Sie die Vertraulichkeits Typen aus, die Sie priorisieren möchten. Beispiel: *"US Bank Account Number"* und *"Kreditkartennummer"*.
     - **Vertraulichkeits Bezeichnungen**: Wählen Sie **Vertraulichkeits Bezeichnung hinzufügen** aus, und wählen Sie die Beschriftungen aus, die Sie priorisieren möchten. Beispiel: *"vertraulich"* und *"geheim"*.
 7. Wählen Sie **weiter** aus, um fortzufahren.
-8. Auf der Seite mit den **Warnungsindikatoren** werden die Indikatoren angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen**definiert haben  >  **Indicators** . Wenn Sie die *Datenlecks* -Vorlage zu Beginn des Assistenten ausgewählt haben, müssen Sie in der Dropdownliste DLP- **Richtlinie** eine DLP-Richtlinie auswählen.
-9. Auf der Seite **Überwachungsfenster auswählen** werden die Bedingungen für das [Überwachungsfenster](insider-risk-management-policies.md#policy-timeframes) für die Richtlinie angezeigt, die auf der Seite mit den Richtlinien für die Richtlinienzeit für **Insider Risiken**angezeigt wird  >  **Policy timeframes** . Wenn Sie die Datendiebstahl Richtlinienvorlage für *departs-Mitarbeiter* ausgewählt haben, können Sie das Kontrollkästchen nach *Beendigung der Aktivität nach Abschluss überprüfen* aktivieren, um die Aktivität nach dem vom Microsoft 365 HR-Connector importierten Beendigungsdatum zu erkennen.
-10. Wählen Sie **weiter** aus, um fortzufahren.
-11. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **senden** aus, um die Richtlinie zu erstellen und zu aktivieren.
+8. Auf der Seite **Richtlinien Indikatoren auswählen** werden die [Indikatoren](insider-risk-management-settings.md#indicators) angezeigt, die Sie auf der Seite Indikatoren für **Insider Risiko Einstellungen**als verfügbar definiert haben  >  **Indicators** . Wenn Sie zu Beginn des Assistenten eine Vorlage *Datenverlust* ausgewählt haben, müssen Sie in der Dropdownliste **DLP-Richtlinie** eine DLP-Richtlinie auswählen, um auslösende Indikatoren für die Richtlinie zu aktivieren. Wählen Sie die Indikatoren aus, die Sie auf die Richtlinie anwenden möchten. Wenn Sie die Standardeinstellungen für den Richtlinien Schwellenwert für diese Indikatoren nicht verwenden möchten, deaktivieren Sie die **von Microsoft empfohlenen Standardschwellen** Werte und geben Sie die Schwellenwerte für jedes ausgewählte Kennzeichen ein. Wenn Sie mindestens ein *Office* -oder Gerätekennzeichen ausgewählt haben, wählen Sie je nach Bedarf das **Risiko Bewertungs** *Modul* aus. Risiko Bewertungs Verstärker gelten nur für ausgewählte Indikatoren.
 
-Nachdem Sie diese Schritte zum Erstellen Ihrer ersten Richtlinie für die Verwaltung von Insider Risiken abgeschlossen haben, erhalten Sie nach etwa 24 Stunden Warnungen von Aktivitätsindikatoren. Konfigurieren Sie zusätzliche Richtlinien nach Bedarf anhand der Anleitungen in Schritt 4 dieses Themas oder der Schritte unter [Create a New Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
+    >[!IMPORTANT]
+    >Wenn keine Indikatoren auf dieser Seite ausgewählt werden können, müssen Sie die Indikatoren auswählen, die für alle Richtlinien auf der Seite mit **Insider risk management**den  >  **Settings**  >  **Richtlinien Indikatoren** für Insider Risk Management-Einstellungen aktiviert werden sollen.
+
+9. Wählen Sie **weiter** aus, um fortzufahren.
+10. Auf der Seite " **Richtlinienzeit Rahmen** " werden die Bedingungen für das [Aktivierungsfenster](insider-risk-management-settings.md#policy-timeframes) für die Richtlinie angezeigt, die auf der Seite mit den Richtlinien für die Richtlinienzeit für **Insider Risiken**vorliegt  >  **Policy timeframes** .
+11. Wählen Sie **weiter** aus, um fortzufahren.
+12. Überprüfen Sie auf der Seite **überprüfen** die Einstellungen, die Sie für die Richtlinie ausgewählt haben. Wählen Sie **Bearbeiten** aus, um einen der Richtlinienwerte zu ändern, oder wählen Sie **senden** aus, um die Richtlinie zu erstellen und zu aktivieren.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem Sie diese Schritte zum Erstellen Ihrer ersten Richtlinie für die Verwaltung von Insider Risiken abgeschlossen haben, erhalten Sie nach etwa 24 Stunden Warnungen von Aktivitätsindikatoren. Konfigurieren Sie zusätzliche Richtlinien nach Bedarf mit den Anleitungen in Schritt 4 dieses Artikels oder den Schritten unter [Create a New Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
+
+Weitere Informationen zur Untersuchung von Insider Risikowarnungen und des **Alerts-Dashboards**finden Sie unter [Insider Risk Management Alerts](insider-risk-management-alerts.md).

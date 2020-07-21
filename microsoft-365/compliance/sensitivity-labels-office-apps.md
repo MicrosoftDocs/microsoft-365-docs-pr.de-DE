@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeits Bezeichnungen in Office-Apps für Desktop, Mobile und das Internet arbeiten und welche apps Sensitivitäts Bezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cd84539d667f94f877607063dd1c0e1c3ae1593
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: b9ed6e163915bd8cdf63e7f37bf92065943d71fb
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146253"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189466"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -63,7 +63,7 @@ Für IOS und Android: Wenn diese eine Mindestversion aufgeführt sind, wird die 
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Aktueller Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Anzeigen der Bezeichnungs Verwendung mit Label Analytics](label-analytics.md) und Senden von Daten für Administratoren                      | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
 |[Festlegen, dass Benutzer eine Bezeichnung auf Ihre e-Mails und Dokumente anwenden müssen](sensitivity-labels.md#what-label-policies-can-do)   | Unter Review            | Unter Review        | Unter Review   | Unter Review         | Unter Review                                                        |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Vorschau: [Beta Kanal und aktueller Kanal (Vorschau)](https://office.com/insider)                                  | Unter Review | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | Rollout in den [aktuellen Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                  | Unter Review | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Unterstützen des [automatischen Speicherns](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) und der gemeinsamen [Dokumenterstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für beschriftete und geschützte Dokumente | Unter Review | Unter Review | Unter Review | Unter Review | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -185,7 +185,7 @@ Wenn Sie also Dokumente für eine andere Organisation freigeben, die unterschied
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Freigeben von verschlüsselten Dokumenten mit externen Benutzern
 
-Zusätzlich zum Einschränken des Zugriffs auf Benutzer in ihrer eigenen Organisation können Sie den Zugriff auf alle anderen Benutzer mit einem Konto in Azure Active Directory erweitern. Alle Office-Apps und andere von [RMS aufgeklärte Anwendungen](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) können verschlüsselte Dokumente öffnen, nachdem der Benutzer erfolgreich authentifiziert wurde. 
+Zusätzlich zum Einschränken des Zugriffs auf Benutzer in ihrer eigenen Organisation können Sie den Zugriff auf alle anderen Benutzer mit einem Konto in Azure Active Directory erweitern. Alle Office-Apps und andere von [RMS aufgeklärte Anwendungen](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) können verschlüsselte Dokumente öffnen, nachdem der Benutzer erfolgreich authentifiziert wurde.
 
 Wenn externe Benutzer kein Konto in Azure Active Directory haben, können Sie ein Gastkonto für diese in Ihrem Mandanten erstellen. Für Ihre e-Mail-Adresse können Sie eine beliebige e-Mail-Adresse angeben, die Sie bereits verwenden. Zum Beispiel Ihre gmail-Adresse. Dieses Gastkonto kann auch für den Zugriff auf ein freigegebenes Dokument in SharePoint oder OneDrive verwendet werden, wenn Sie [Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md)haben.
 

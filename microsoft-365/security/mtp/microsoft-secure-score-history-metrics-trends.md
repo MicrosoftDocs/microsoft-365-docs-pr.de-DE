@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b99f927711ed1015b38d8020e287d76155ce706f
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095045"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200086"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele
 
@@ -76,5 +76,6 @@ Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
-- [Erhalten Sie Einblicke in Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
+- [Bewerten Ihrer Sicherheitsposition](microsoft-secure-score-improvement-actions.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
+- [Neuigkeiten](microsoft-secure-score-whats-new.md)

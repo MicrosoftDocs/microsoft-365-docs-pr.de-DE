@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können Informationen zu den Antispameinstellungen und-Filtern erhalten, mit denen Spam in Exchange Online Protection (EoP) verhindert wird.
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800107"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189561"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Anti-Spam-Schutz in EoP
 
@@ -36,6 +36,9 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenst
 Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. EoP Anti-Spam-und Anti-Phishing-Technologie wird auf unseren e-Mail-Plattformen angewendet, um Benutzern die neuesten Antispam-und Antiphishing-Tools und Innovationen im gesamten Netzwerk bereitzustellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
 
 Zusammen mit der E-Mail-Verwendung ist auch der E-Mail-Missbrauch gestiegen. Nicht überwachte Junk-E-Mails können Postfächer und Netzwerke verstopfen, sich auf die Benutzerzufriedenheit auswirken und die Effektivität der seriösen E-Mail-Kommunikation behindern. Deshalb investiert Microsoft weiter in Anti-Spam-Technologien. Einfach ausgedrückt beginnt alles mit dem Speichern und Filtern von Junk-E-Mails.
+
+> [!TIP]
+> Die folgenden Antispam-Technologien sind hilfreich, wenn Sie Nachrichten zulassen oder blockieren möchten, die auf dem Nachrichtenumschlag basieren (beispielsweise die Domäne des Absenders oder die Quell-IP-Adresse der Nachricht). Zum Zulassen oder Blockieren von Nachrichten basierend auf der Nutzlast (beispielsweise URLs in der Nachricht oder angefügten Dateien) sollten Sie das [Portal "Mandanten Allow/Block List](tenant-allow-block-list.md)" verwenden.
 
 ## <a name="anti-spam-technologies-in-eop"></a>Anti-Spam-Technologien in EoP
 

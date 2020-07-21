@@ -12,22 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e48b18ee905bc8589ad3fd6145630b436603ae15
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: dee4ed05f4210530dddeff8ac62ee3f39903abca
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327049"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199818"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider Risikomanagement-Inhalts-Explorer
 
-Das Insider Risk Management Content Explorer ermöglicht Benutzern, denen die Rolle " **Insider Risk Management Investigators** " zugewiesen ist, den Kontext und Details der in Warnungen erfassten Kommunikation zu untersuchen. Bei allen Warnungen werden Kopien von Daten und Nachrichtendateien als Momentaufnahme der Elemente archiviert, wobei die ursprünglichen Dateien und Nachrichten in den Speicherquellen beibehalten werden. Das Kopieren von Daten und Nachrichten ist für den der Warnung zugeordneten Mitarbeiter und den Besitzer des Inhalts transparent. Die Berechtigungseinstellungen und Zugriffsrechte für die Daten werden für den kopierten Inhalt und Nachrichten verwaltet, und Risikoanalysten und Ermittler benötigen diese Berechtigungen und Rechte, wenn Sie die Dateien öffnen und anzeigen müssen. Jeder Datei und jeder Nachricht wird im Fall des Insider Risikomanagements für Verwaltungszwecke automatisch eine eindeutige Datei-ID zugewiesen.
+Das Insider Risk Management Content Explorer ermöglicht Benutzern, denen die Rolle " **Insider Risk Management Investigators** " zugewiesen ist, den Kontext und Details der in Warnungen erfassten Kommunikation zu untersuchen. Bei allen Warnungen werden Kopien von Daten und Nachrichtendateien als Momentaufnahme der Elemente archiviert, wobei die ursprünglichen Dateien und Nachrichten in den Speicherquellen beibehalten werden. Das Kopieren von Daten und Nachrichten ist für den Benutzer, der der Warnung zugeordnet ist, und für den Besitzer des Inhalts transparent. Die Berechtigungseinstellungen und Zugriffsrechte für die Daten werden für den kopierten Inhalt und Nachrichten verwaltet, und Risikoanalysten und Ermittler benötigen diese Berechtigungen und Rechte, wenn Sie die Dateien öffnen und anzeigen müssen. Jeder Datei und jeder Nachricht wird im Fall des Insider Risikomanagements für Verwaltungszwecke automatisch eine eindeutige Datei-ID zugewiesen. Dokumente im Zusammenhang mit Geräte Indikator Aktivitäten sind im Inhalts-Explorer nicht enthalten.
+
+![Insider Risikomanagement-Inhalts-Explorer](../media/insider-risk-content-explorer.png)
 
 ## <a name="column-options"></a>Spaltenoptionen
 
 Um Risikoanalysten und Ermittlern das Überprüfen von erfassten Daten und Nachrichten und das Überprüfen des Kontexts auf den Fall zu erleichtern, sind mehrere Filter-und Sortier Tools im Inhalts-Explorer enthalten. Für die grundlegende Sortierung unterstützen die Spalten **Date** und **File Class** die Sortierung mithilfe der Spaltentitel im Inhalts Wartebereich. Andere Warteschlangen Spalten können zur Ansicht hinzugefügt werden, um unterschiedliche Pivots für die Dateien und Nachrichten bereitzustellen.
 
-Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die Inhalts Warteschlange das Steuerelement **Spalten bearbeiten** , und wählen Sie eine der folgenden Spaltenoptionen aus. Diese Spalten entsprechen den im Inhalts-Explorer unterstützten allgemeinen, e-Mail-und Dokumenteigenschaften Bedingungen und werden weiter unten in diesem Thema aufgeführt.
+Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die Inhalts Warteschlange das Steuerelement **Spalten bearbeiten** , und wählen Sie eine der folgenden Spaltenoptionen aus. Diese Spalten entsprechen den im Inhalts-Explorer unterstützten allgemeinen, e-Mail-und Dokumenteigenschaften Bedingungen und werden weiter unten in diesem Artikel aufgeführt.
 
 | **Column-Option** | **Beschreibung** |
 |:------------------|:----------------|
@@ -41,10 +43,10 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Date** | Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde. |
 | **Dominantes Design** | Dominantes Design, berechnet für Analyse. |
 | **E-Mail-ID festlegen** | Gruppen-ID für alle Nachrichten in derselben e-Mail-Gruppe. |
-| **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mail umfasst dies die Nachricht und alle Anlagen; für Dokumente umfasst dies das Dokument und alle eingebetteten Elemente. |
+| **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mails enthält diese Spalte die Nachricht und alle Anlagen; bei Dokumenten enthält diese Spalte das Dokument und alle eingebetteten Elemente. |
 | **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
 | **Datei-ID** | In der Anfrage eindeutige Dokument-ID. |
-| **Dateityp Symbol** | Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft. |
+| **Dateityp Symbol** | Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dieses Feld ist dieselbe Eigenschaft wie die FileExtension-Website Eigenschaft. |
 | **ID** | Der GUID-Bezeichner für die Datei. |
 | **Unveränderliche ID** | Unveränderliche ID wie in Office 365 gespeichert. |
 | **Inklusiv-Typ** | Integrativer Typ, berechnet für Analyse: **0** -nicht inklusive; **1** – inklusive; **2** – inklusive minus; **3** -inclusive-Kopie. |
@@ -53,13 +55,13 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 | **Nachrichten Art** | Der Typ der zu suchenden e-Mail-Nachricht. Mögliche Werte: Kontakte, Dokumente, e-Mail, externe Daten, Faxe, Sofortnachrichten, Journale, Besprechungen, Microsoft Teams (gibt Elemente aus Chats, Besprechungen und anrufen in Microsoft Teams zurück), Notizen, Beiträge, RSSfeeds, Aufgaben, Voicemail |
 | **Teilnehmer** | Liste aller Teilnehmer einer Nachricht; Beispiel: Sender, an, CC, BCC. |
 | **Pivot-ID** | Die ID eines Pivots. |
-| **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Empfangen“. |
+| **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dieses Feld ist dieselbe Eigenschaft wie die empfangene e-Mail-Eigenschaft. |
 | **Empfänger** | Alle Empfängerfelder in einer e-Mail-Nachricht. Diese Felder sind to, CC und Bcc. |
 | **Vertreter-ID** | Numerischer Bezeichner der einzelnen Sätze exakter Duplikate. |
 | **Sender** | Der Absender einer E-Mail-Nachricht. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
-| **Sent** | Das Datum, an dem eine E-Mail vom Absender gesendet wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Gesendet“. |
-| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Sent** | Das Datum, an dem eine E-Mail vom Absender gesendet wurde. Dieses Feld ist dieselbe Eigenschaft wie die Eigenschaft "gesendete e-Mail". |
+| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail. |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 | **Themenliste** | Für Analyse berechnete Themenliste. |
@@ -68,7 +70,7 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 
 ## <a name="advanced-search-conditions"></a>Erweiterte Suchbedingungen
 
-Sie können Suchbedingungen hinzufügen, um den Umfang einer Suche einzuschränken und eine verfeinerte Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zur Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (im Feld Schlüsselwort angegeben) durch einen logischen Operator (der als c:c dargestellt wird) verbunden, der in der Funktionalität des and-Operators ähnelt. Das bedeutet, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in den Suchergebnissen enthalten sein sollen. Auf diese Weise können die Suchergebnisse mithilfe von Bedingungen weiter eingegrenzt werden.
+Sie können Suchbedingungen hinzufügen, um den Umfang einer Suche einzuschränken und eine verfeinerte Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zur Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (im Feld Schlüsselwort angegeben) durch einen logischen Operator (der als c:c dargestellt wird) verbunden, der in der Funktionalität des and-Operators ähnelt. Das bedeutet, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in den Suchergebnissen enthalten sein sollen. Diese Funktion ist die Art und Weise, wie Bedingungen dazu beitragen, ihre Ergebnisse einzugrenzen.
 
 Erweitern Sie für erweiterte Filter-und Such Tools den Bereich **Filter** auf der linken Seite der Inhalts Warteschlange. Wählen Sie die Schaltfläche **Bedingung hinzufügen** aus, um die Liste Bedingung zu öffnen:
 
@@ -101,7 +103,7 @@ Erweitern Sie für erweiterte Filter-und Such Tools den Bereich **Filter** auf d
 |:---------------------|:----------------|
 | **Date** | Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde. |
 | **Absender/Autor** | Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Für Dokumente die im Feld Autor zitierte Person aus Office-Dokumenten. Sie können mehr als einen Namen eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden. |
-| **Größe** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
+| **Size** | Für e-Mail und Dokumente die Größe des Elements (in Byte). |
 | **Betreff/Titel** | Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Bei der Title-Eigenschaft in Documents handelt es sich um in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den or-Operator logisch miteinander verbunden. |
 
 ### <a name="email-property-conditions"></a>Bedingungen für die e-Mail-Eigenschaft
@@ -125,7 +127,7 @@ In der folgenden Tabelle sind die Eigenschaftenbedingungen für e-Mail-Nachricht
 | **Teilnehmer** | Alle Personen Felder in einer e-Mail-Nachricht. Diese Felder sind von, in, CC und Bcc. |
 | **Received** | Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. |
 | **Empfängerdomänen** | Liste aller Domänen der Empfänger einer Nachricht. |
-| **Sender** | Absenderfeld (von) für Nachrichtentypen.  Das Format ist **DisplayName \< SmtpAddress>**. |
+| **Sender** | Absenderfeld (von) für Nachrichtentypen.  Format ist **Display \<SmtpAddress> Name **. |
 | **Absenderdomäne** | Domäne des Absenders. |
 | **Betreff** | Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"` , enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018". |
 | **Ziel** | Das Feld „An“ einer E-Mail-Nachricht. |
@@ -145,7 +147,7 @@ In der folgenden Tabelle sind die Dokumenteigenschaften Bedingungen aufgelistet,
 | **Erstellungszeitpunkt** | Die Zeit, zu der die Datei oder e-Mail-Nachricht erstellt wurde. |
 | **Custodian** | Name der Depotbank, der das Element zugeordnet wurde. |
 | **Dominantes Design** | Dominantes Design, berechnet für Analyse. |
-| **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mail umfasst dies die Nachricht und alle Anlagen; für Dokumente umfasst dies das Dokument und alle eingebetteten Elemente. |
+| **Familien-ID** | Familien-ID-Gruppen alle Elemente zusammen; für e-Mails enthält dieses Feld die Nachricht und alle Anlagen; bei Dokumenten enthält dieses Feld das Dokument und alle eingebetteten Elemente. |
 | **File-Klasse** | Für Inhalte aus SharePoint und OneDrive: **Document**; für Inhalte aus Exchange: * * e-Mail oder **Anhang**. |
 | **Dateitypen** | Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. |
 | **Hat Anwalts Teilnehmer** | True, wenn mindestens einer der Teilnehmer in der anwaltsliste gefunden wird; Andernfalls ist der Wert false. |
@@ -154,7 +156,7 @@ In der folgenden Tabelle sind die Dokumenteigenschaften Bedingungen aufgelistet,
 | **Elementklasse** | Von Exchange Server bereitgestellte Item-Klasse; Beispiel: **IPM. Hinweis:** |
 | **Zuletzt geändert** | Das Datum, an dem ein Dokument zuletzt geändert wurde. |
 | **Laden-ID** | Laden-ID, in der das Element in einen Überprüfungs Satzes geladen wurde. |
-| **Speicherort Name** | Zeichenfolge, die die Quelle des Elements angibt.  Für Exchange ist dies die SMTP-Adresse des Postfachs. Für SharePoint und OneDrive die URL der Websitesammlung. |
+| **Speicherort Name** | Zeichenfolge, die die Quelle des Elements angibt.  Für Exchange wird dieses Feld als SMTP-Adresse des Postfachs verwendet. Für SharePoint und OneDrive die URL der Websitesammlung. |
 | **Als repräsentativ gekennzeichnet** | Ein Dokument aus den einzelnen Sätzen exakter Duplikate wird als Repräsentanten markiert. |
 | **Native Dateierweiterung** | Systemeigene Erweiterung des Elements. |
 | **Name der systemeigenen Datei** | Name des systemeigenen Datei namens des Elements. |

@@ -1,5 +1,5 @@
 ---
-title: Erhalten der Sichtbarkeit in ihrer Sicherheitsposition durch Microsoft Secure Score
+title: Bewerten Ihrer Sicherheitsposition über Microsoft Secure Score
 description: In diesem Artikel wird beschrieben, wie Sie Ihre Microsoft Secure Score-Aktion im Microsoft 365 Security Center verbessern können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitsbewertung, Security Center, Verbesserungsmaßnahmen
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095042"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200062"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>Erhalten der Sichtbarkeit in ihrer Sicherheitsposition durch Microsoft Secure Score
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Bewerten Ihrer Sicherheitsposition mit Microsoft Secure Score
 
 Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Sie finden sie unter https://security.microsoft.com/securescore im [Microsoft 365 Security Center ](overview-security-center.md).
 
@@ -40,7 +40,7 @@ Damit Sie die benötigten Informationen schneller finden können, sind die Micro
 * Infrastruktur (bisher keine Verbesserungsmaßnahmen)
 
 >[!NOTE]
->In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht, das zu einer vorübergehenden Inkompatibilität der Microsoft-Sicherheitsbewertung mit der Identitätssicherheitsbewertung und der Graph-API geführt hatte. [Details anzeigen](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht, das zu einer vorübergehenden Inkompatibilität der Microsoft-Sicherheitsbewertung mit der Identitätssicherheitsbewertung und der Graph-API geführt hatte. [Details anzeigen](microsoft-secure-score-whats-new.md)
 
 Auf der Übersicht der Microsoft-Sicherheitsbewertung können Sie sehen, wie die Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite können Sie auch einen Überblick über die Gesamtpunktzahl, den historischen Trend Ihres Sicherheitsbewertung mit Benchmark-Vergleichen sowie priorisierte Verbesserungsmaßnahmen zur Verbesserung ihrer Punktzahl erhalten.
 
@@ -121,3 +121,4 @@ Wenn Sie Probleme haben, informieren Sie uns mit einem Beitrag in der Community 
 - [Microsoft Secure Score (Übersicht)](microsoft-secure-score.md)
 - [Verfolgen des Microsoft Secure Score-Verlaufs und erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)
+- [Neuigkeiten](microsoft-secure-score-whats-new.md)

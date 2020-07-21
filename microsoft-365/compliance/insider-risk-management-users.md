@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2b1a229bad5bc82f61227bd5a273af1aefb3481
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 0997ecc83ad7f97d1fb7273bcac8b026f6432091
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900809"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199508"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Benutzerdashboard für das Insider Risikomanagement
 
 Das **benutzerdashboard** ist ein wichtiges Tool im Insider Risk Management-Workflow und hilft Ermittlern und Analysten, ein vollständigeres Verständnis der Risiko Aktivitäten zu haben. Dieses Dashboard bietet Ansichten und Verwaltungsfunktionen zur Erfüllung der administrativen Anforderungen zwischen dem Erstellen von Richtlinien für Insider Risiken und der Verwaltung von Insider Risiko-Management-Fällen.
 
-Nachdem Benutzer den Richtlinien für das Insider Risikomanagement hinzugefügt wurden, evaluieren Hintergrundprozesse automatisch Benutzeraktivitäten für [auslösende Indikatoren](insider-risk-management-policies.md#indicators). Nachdem Auslöse Indikatoren vorhanden sind, werden Benutzeraktivitäten Risikobewertungen zugeordnet. Einige dieser Aktivitäten führen möglicherweise zu einer Warnung bei Insider Risiken, aber einige Aktivitäten entsprechen möglicherweise nicht einer minimalen Risiko Bewertungsstufe, und es wird keine Insider Risiko Warnung erstellt. Das **benutzerdashboard** ermöglicht es Ihnen, Benutzer mit diesen Indikatoren und Risikobewertungen sowie Benutzern mit aktiven Insider Risikowarnungen anzuzeigen.
+Nachdem Benutzer den Richtlinien für das Insider Risikomanagement hinzugefügt wurden, evaluieren Hintergrundprozesse automatisch Benutzeraktivitäten für [auslösende Indikatoren](insider-risk-management-settings.md#indicators). Nachdem Auslöse Indikatoren vorhanden sind, werden Benutzeraktivitäten Risikobewertungen zugeordnet. Einige dieser Aktivitäten führen möglicherweise zu einer Warnung bei Insider Risiken, aber einige Aktivitäten entsprechen möglicherweise nicht einer minimalen Risiko Bewertungsstufe, und es wird keine Insider Risiko Warnung erstellt. Das **benutzerdashboard** ermöglicht es Ihnen, Benutzer mit diesen Indikatoren und Risikobewertungen sowie Benutzern mit aktiven Insider Risikowarnungen anzuzeigen.
 
 Darüber hinaus gibt es möglicherweise Szenarien, in denen Sie den Insider Risikorichtlinien vorübergehend Benutzer hinzufügen müssen, nachdem außerhalb des Insider Risikomanagement-Workflows ein ungewöhnliches Ereignis gemeldet wurde. Das **benutzerdashboard** ermöglicht Ihnen das manuelle Hinzufügen eines Benutzers zu einer Insider Risiko Richtlinie für einen bestimmten Zeitraum und die Umgehung der Anforderung, dass ein Benutzer über ein auslösendes Symbol verfügt. Diese Benutzer werden immer im Dashboard Benutzer angezeigt, wenn Sie einer Richtlinie aktiv zugewiesen sind.
 
@@ -39,7 +39,7 @@ Das **benutzerdashboard** zeigt automatisch alle Benutzer mit aktiven Insider Ri
 
 ## <a name="dashboard-users-with-triggering-indicators"></a>Dashboard-Benutzer mit auslösenden Indikatoren
 
-Das **benutzerdashboard** zeigt automatisch alle Benutzer mit auslösenden Indikatoren an, die jedoch keine Aktivitäts Risikobewertung aufweisen, die eine Insider Risiko Aktivität verursachen würde. Beispielsweise wird ein Benutzer mit einem gemeldeten Rücktrittsdatum angezeigt, da es sich bei diesem Ereignis um einen Auslöse Indikator handelt, es sich aber nicht um eine Aktivität mit einem Risikofaktor handelt. Aktivitäten für diese Benutzer werden angezeigt, indem der Benutzer im **Dashboard Benutzer** ausgewählt und zur Registerkarte **Benutzeraktivität** navigiert wird.
+Das **benutzerdashboard** zeigt automatisch alle Benutzer mit auslösenden Indikatoren an, die jedoch keine Aktivitäts Risikobewertung aufweisen, die eine Insider Risiko Warnung verursachen würde. Beispielsweise wird ein Benutzer mit einem gemeldeten Rücktrittsdatum angezeigt, da dieses Ereignis ein Auslöse Indikator ist, aber keine Aktivität mit einem Risikofaktor ist. Aktivitäten für diese Benutzer werden angezeigt, indem der Benutzer im **Dashboard Benutzer** ausgewählt und zur Registerkarte **Benutzeraktivität** navigiert wird.
 
 ## <a name="dashboard-users-added-temporarily-to-policies"></a>Dashboard-Benutzer wurden vorübergehend zu Richtlinien hinzugefügt
 

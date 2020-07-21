@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780718"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199525"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -164,17 +164,18 @@ Verwenden Sie zum Aktivieren der neuen Funktionen das Cmdlet " [SPOTenant](https
     ```
 3. Für Microsoft 365 Multi-Geo: Wiederholen Sie die Schritte 1 und 2 für jeden ihrer verbleibenden geografischen Standorte.
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planen des Roll-out nach dem Erstellen oder Ändern einer Sensitivitäts Bezeichnung
+## <a name="publishing-and-changing-sensitivity-labels"></a>Veröffentlichen und Ändern von Vertraulichkeits Bezeichnungen
 
-Nachdem Sie eine Sensitivitäts Bezeichnung im Microsoft 365 Compliance Center erstellt oder geändert haben, veröffentlichen Sie Sie in Phasen. Wenn Sie Bezeichnungen veröffentlichen, die nicht vollständig synchronisiert sind, können die Dateien nicht in den Webversionen der Office-Apps geöffnet werden, wenn die Benutzer die Bezeichnungen auf Dateien anwenden und in SharePoint hochladen. Such-und eDiscovery funktionieren auch nicht für die Dateien.
+Beachten Sie beim Verwenden von Sensitivitäts Bezeichnungen mit SharePoint und OneDrive, dass Sie die Replikationszeit bei der Veröffentlichung neuer Sensitivitäts Bezeichnungen oder beim Aktualisieren vorhandener Sensitivitäts Bezeichnungen berücksichtigen müssen. Dies ist besonders wichtig für neue Bezeichnungen, die die Verschlüsselung anwenden.
 
-Es wird empfohlen, dass Sie die folgenden Schritte ausführen:
+Beispiel: Sie erstellen und veröffentlichen eine neue Sensitivitäts Bezeichnung, die die Verschlüsselung anwendet, und Sie wird sehr schnell in der Desktop-App eines Benutzers angezeigt. Der Benutzer wendet diese Bezeichnung auf ein Dokument an und lädt diese dann in SharePoint oder OneDrive hoch. Wenn die Bezeichnungs Replikation für den Dienst nicht abgeschlossen wurde, werden die neuen Funktionen nicht auf das Dokument beim Hochladen angewendet. Das Dokument wird daher nicht in der Suche oder für eDiscovery zurückgegeben, und das Dokument kann nicht in Office für das Internet geöffnet werden.
 
-1. Veröffentlichen Sie die neue oder geänderte Vertraulichkeits Bezeichnung nur für eine oder zwei Personen.
+- Die folgenden Änderungen werden innerhalb einer Stunde repliziert: neue und gelöschte Vertraulichkeits Bezeichnungen und Richtlinieneinstellungen für Sensitivitäts Bezeichnungen, die angeben, welche Bezeichnungen in der Richtlinie enthalten sind.
 
-2. Warten Sie mindestens 24 Stunden nach der ersten Veröffentlichung. Stellen Sie sicher, dass die Bezeichnung vollständig synchronisiert wurde.
+- Die folgenden Änderungen werden innerhalb von 24 Stunden repliziert: Änderungen an Einstellungen für die Sensitivitäts Bezeichnung für vorhandene Bezeichnungen.
 
-3. Veröffentlichen Sie das Label breiter.
+Da die Replikationsverzögerung jetzt nur eine Stunde für neue Sensitivitäts Bezeichnungen ist, wird das Szenario in dem Beispiel wahrscheinlich nicht ausgeführt. Als Schutz wird jedoch empfohlen, neue Bezeichnungen zunächst nur für einige Testbenutzer zu veröffentlichen, eine Stunde zu warten und dann das Bezeichnungs Verhalten in SharePoint und OneDrive zu überprüfen. Als letzten Schritt stellen Sie die Bezeichnung für mehr Benutzer zur Verfügung, indem Sie entweder der vorhandenen Bezeichnungsrichtlinie mehr Benutzer hinzufügen oder die Bezeichnung einer vorhandenen Bezeichnungsrichtlinie für Ihre Standardbenutzer hinzufügen. Wenn die Standardbenutzer die Bezeichnung sehen, wurde Sie bereits mit SharePoint und OneDrive synchronisiert.
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint-Informationsrechteverwaltung (IRM) und Vertraulichkeits Bezeichnungen
 
