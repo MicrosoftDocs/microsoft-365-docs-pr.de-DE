@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678981"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153698"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -166,7 +166,7 @@ Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
     > [!NOTE]
     > Wenn Sie eine Domäne aus einer Organisation angeben, die Azure AD verwendet, können Sie den Zugriff auf diese bestimmte Domäne nicht einschränken. Stattdessen werden alle überprüften Domänen in Azure AD für den Mandanten mit dem von Ihnen angegebenen Domänennamen automatisch einbezogen.
 
-Wenn Sie alle Mandantenmitglieder auswählen oder das Verzeichnis durchsuchen, müssen die Benutzer oder Gruppe eine E-Mail-Adresse aufweisen.
+Wenn Sie alle Benutzer und Gruppen in Ihrer Organisation auswählen oder das Verzeichnis durchsuchen, müssen die Benutzer oder Gruppen eine E-Mail-Adresse aufweisen.
 
 Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwenden. Dadurch wird die Konfiguration einfacher.
 
@@ -216,9 +216,9 @@ Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweis
 
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen. 
     > [!NOTE]
-    > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Bei Apps, die integrierte Bezeichnungen verwenden, [wird die Unterstützung für Windows und Mac derzeit in der Vorschau bereitgestellt](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Für Apps, die die integrierte Bezeichnung verwenden. [Überprüfen Sie, welche Apps diese Funktion unterstützen](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > Ist diese Option ausgewählt, wird aber für die App eines Benutzers nicht unterstützt, wird die Bezeichnung entweder für den Benutzer nicht angezeigt oder die Bezeichnung wird zu Konsistenzzwecken angezeigt (Rollout erfolgt aktuell in der Vorschau für IOS und Android), kann jedoch nicht mit einer Erläuterung für Benutzer angewendet werden.
+    > Ist diese Option ausgewählt, jedoch für die App eines Benutzers nicht unterstützt, wird die Bezeichnung dem Benutzer entweder nicht angezeigt oder die Bezeichnung wird zu Konsistenzzwecken angezeigt, kann jedoch nicht mit einer entsprechenden Erläuterung für die Benutzer angewendet werden.
 
 Wenn die Optionen unterstützt werden, verwenden Sie die folgende Tabelle, um zu ermitteln, wann Benutzer die Vertraulichkeitsbezeichnung sehen:
 
@@ -297,13 +297,13 @@ Diese Bezeichnung eignet sich nicht für E-Mails.
 
 4. Wählen Sie **Berechtigungen zuweisen** aus.
 
-3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Diese E-Mail-Adresse oder Domänen hinzufügen** aus.
+3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Spezifische E-Mail-Adressen oder Domänen hinzufügen** aus.
 
 4. Geben Sie in das Textfeld den Namen einer Domäne der anderen Organisation ein, z. B. **fabrikam.com**. Wählen Sie dann **Hinzufügen** aus.
 
-5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+5. Klicken Sie auf **Berechtigungen auswählen**.
 
-6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld **Viewer** und dann **Speichern** aus.
+6. Wählen Sie im Bereich **Berechtigungen auswählen** im Dropdownfeld **Viewer** aus und klicken Sie anschließend auf **Speichern**.
 
 6. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
 
@@ -318,13 +318,13 @@ Die neuen Benutzer, die Sie hinzufügen, können Dokumente und E-Mails öffnen, 
 
 2. Wählen Sie **Berechtigungen zuweisen** aus.
 
-3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Diese E-Mail-Adresse oder Domänen hinzufügen** aus.
+3. Wählen Sie im Bereich **Berechtigungen zuweisen** die Option **Spezifische E-Mail-Adressen oder Domänen hinzufügen** aus.
 
 4. Geben Sie in das Textfeld die E-Mail-Adresse des ersten hinzuzufügenden Benutzers (oder der ersten Gruppe) ein, und wählen Sie dann **Hinzufügen** aus.
 
-5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+5. Klicken Sie auf **Berechtigungen auswählen**.
 
-6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** die Berechtigungen für diesen Benutzer (oder die Gruppe) und dann **Speichern** aus.
+6. Wählen Sie im Bereich **Berechtigungen auswählen** die Berechtigungen für diesen Benutzer (oder die Gruppe) aus und klicken Sie anschließend auf **Speichern**.
 
 7. Wiederholen Sie im Bereich **Berechtigungen zuweisen** die Schritte 3 bis 6 für jeden Benutzer (oder jede Gruppe), zu dem bzw. der Sie diese Bezeichnung hinzufügen möchten. Klicken Sie dann auf **Speichern**.
 
@@ -345,11 +345,11 @@ Verwenden Sie diese Konfiguration nur, wenn Sie nicht einschränken müssen, wer
 
 4. Wählen Sie im Bereich **Berechtigungen zuweisen**die Option **Alle authentifizierten Benutzer hinzufügen** aus. 
     
-    Für **Benutzer und Gruppen** wird **AuthenticatedUsers** automatisch hinzugefügt. Sie können diesen Wert nicht ändern, sondern nur löschen, wodurch die Auswahl **Alle authentifizierten Benutzer hinzufügen** aufgehoben wird.
+    **Benutzer und Gruppen** werden **Authentifizierte Benutzer** automatisch hinzugefügt. Sie können diesen Wert nicht ändern, sondern nur löschen, wodurch die Auswahl **Alle authentifizierten Benutzer hinzufügen** aufgehoben wird.
 
-5. Wählen Sie **Vordefinierte oder benutzerdefinierte Berechtigungen auswählen** aus.
+5. Klicken Sie auf **Berechtigungen auswählen**.
 
-6. Wählen Sie im Bereich **Vorhandene oder benutzerdefinierte Berechtigungen auswählen** im Dropdownfeld die gewünschten Berechtigungen und dann **Speichern** aus.
+6. Wählen Sie im Bereich **Berechtigungen auswählen** im Dropdownfeld die gewünschten Berechtigungen und klicken Sie anschließend auf **Speichern**.
 
 7. Zurück im Bereich **Berechtigungen zuweisen** wählen Sie **Speichern** aus.
 
