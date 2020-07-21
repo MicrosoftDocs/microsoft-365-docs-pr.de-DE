@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327871"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127220"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
-Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalte in Ihrer Organisation auswerten und diese dann markieren, um zu steuern, wohin diese sich bewegen, sie zu schützen, unabhängig davon, an welchem Ort sie sich befinden, und sicherstellen, dass sie gemäß den Anforderungen Ihrer Organisation beibehalten oder gelöscht werden. Dies erfolgt über die Anwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), [Aufbewahrungsbezeichnungen](labels.md) und der Klassifizierung von Typen vertraulicher Informationen. Es gibt verschiedene Möglichkeiten für die Ermittlung, die Auswertung und die Kennzeichnung, das Endergebnis ist aber immer, dass Sie möglicherweise eine sehr große Anzahl von Dokumenten und E-Mails haben, die mit einer oder beiden Bezeichnungen gekennzeichnet und klassifiziert werden. Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen angewendet haben, können Sie überprüfen, wie die Bezeichnungen mandantenübergreifend verwendet und wofür diese Elemente eingesetzt werden. Auf der Datenklassifizierungsseite erhalten Sie einen Einblick darin. Insbesondere wird Folgendes erläutert:
+Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalte in Ihrer Organisation auswerten und diese dann markieren, um zu steuern, wohin diese sich bewegen, sie zu schützen, unabhängig davon, an welchem Ort sie sich befinden, und sicherstellen, dass sie gemäß den Anforderungen Ihrer Organisation beibehalten oder gelöscht werden. Dies erfolgt über die Anwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), [Aufbewahrungsbezeichnungen](retention.md#retention-labels) und der Klassifizierung von Typen vertraulicher Informationen. Es gibt verschiedene Möglichkeiten für die Ermittlung, die Auswertung und die Kennzeichnung, das Endergebnis ist aber immer, dass Sie möglicherweise eine sehr große Anzahl von Dokumenten und E-Mails haben, die mit einer oder beiden Bezeichnungen gekennzeichnet und klassifiziert werden. Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen angewendet haben, können Sie überprüfen, wie die Bezeichnungen mandantenübergreifend verwendet und wofür diese Elemente eingesetzt werden. Auf der Datenklassifizierungsseite erhalten Sie einen Einblick darin. Insbesondere wird Folgendes erläutert:
 
 - Die Anzahl von Elementen, die als vertraulicher Informationstyp klassifiziert wurden und was diese Klassifizierungen sind.
 - Die am häufigsten angewendeten Vertraulichkeitsbezeichnungen in Microsoft 365 und Azure Information Protection.
@@ -79,8 +79,8 @@ Wenn Sie wissen möchten, wie viele Elemente in einer bestimmten Klassifizierung
 
 > [!NOTE]
 > Wenn auf der Karte die Meldung angezeigt wird, dass keine Daten mit vertraulichen Informationen gefunden wurden, bedeutet das, dass in Ihrer Organisation keine Elemente vorhanden sind, die als Typ vertraulicher Informationen klassifiziert wurden oder dass keine Elemente durchsucht wurden. Informationen zu den ersten Schritten mit Bezeichnungen finden Sie unter:
->- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
->- [Aufbewahrungsbezeichnungen](labels.md)
+>- [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md)
+>- [Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md)
 >- [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Die am häufigsten auf Inhalte angewendeten Vertraulichkeitsbezeichnungen
@@ -104,7 +104,7 @@ Auf der Karte mit der Vertraulichkeitsbezeichnung wird die Anzahl von Elementen 
 
 ## <a name="top-retention-labels-applied-to-content"></a>Die am häufigsten auf Inhalte angewendeten Aufbewahrungsbezeichnungen
 
-Aufbewahrungsbezeichnungen werden verwendet, um die Bereitstellung von Inhalten in Ihrer Organisation zu verwalten. Nach Anwendung können sie verwendet werden, um zu steuern, wie lange ein Dokument vor dem Löschen aufbewahrt wird, ob es vor dem Löschen überprüft werden sollte, wann der Aufbewahrungszeitraum abläuft oder ob es als Datensatz markiert werden sollte, der nie gelöscht werden kann. Weitere Informationen finden Sie unter [Übersicht zu Aufbewahrungsbezeichnungen](labels.md).
+Aufbewahrungsbezeichnungen werden verwendet, um die Bereitstellung von Inhalten in Ihrer Organisation zu verwalten. Nach Anwendung können sie verwendet werden, um zu steuern, wie lange ein Dokument vor dem Löschen aufbewahrt wird, ob es vor dem Löschen überprüft werden sollte, wann der Aufbewahrungszeitraum abläuft oder ob es als Datensatz markiert werden sollte, der nie gelöscht werden kann. Weitere Informationen finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
 
 Die Karte mit den am häufigsten angewendeten Aufbewahrungsbezeichnungen zeigt, wie viele Elemente eine bestimmte Aufbewahrungsbezeichnung aufweisen.
 
@@ -112,9 +112,9 @@ Die Karte mit den am häufigsten angewendeten Aufbewahrungsbezeichnungen zeigt, 
 
 > [!NOTE]
 > Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Aufbewahrungsbezeichnungen gefunden wurden, bedeutet dies, dass Sie keine Aufbewahrungsbezeichnungen erstellt oder veröffentlicht haben oder keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Informationen zu den ersten Schritten mit Aufbewahrungsbezeichnungen finden Sie unter:
->- [Übersicht über Aufbewahrungsbezeichnungen](labels.md)
+>- [Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md)
 
-## <a name="top-activities-detected"></a>Die am häufigsten entdeckten Aktivitäten
+## <a name="top-activities-detected"></a>Am häufigsten erkannte Aktivitäten
 
 Diese Karte bietet eine schnelle Übersicht über die am häufigsten verwendeten Aktionen, die Benutzer auf Elemente mit Vertraulichkeitsbezeichnungen anwenden. Sie können den [Aktivitäts-Explorer](data-classification-activity-explorer.md) verwenden, um acht verschiedene Aktivitäten anzuzeigen, die von Microsoft 365 im Zusammenhang mit beschrifteten Inhalten und Inhalten, die sich auf Windows 10-Endpunkten befinden, nachverfolgt werden.
 
@@ -134,8 +134,7 @@ Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Tr
 
 - [Beschriftungs-Aktivität anzeigen (Vorschau)](data-classification-activity-explorer.md)
 - [Anzeigen von beschriftetem Inhalt (Vorschau)](data-classification-content-explorer.md)
-- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Aufbewahrungsbezeichnungen](labels.md)
+- [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
 - [Erste Schritte mit trainierbaren Klassifizierern (Vorschau)](classifier-getting-started-with.md)
