@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Bereitstellen mit vorhandener Infrastruktur
           href: deploy-with-existing-infrastructure.md
+        - name: Bereitstellung und Aktualisierung der Beispielkonfigurationen des Kanals
+          href: deploy-update-channels-examples.md
+          items:
+            - name: Allgemeine Bereitstellung der neuesten Versionen
+              href: deploy-update-channels-examples-rapid-deploy.md
         - name: Bereitstellung für Nicht-Unternehmen
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: Bereitstellen von Arbeitslasten

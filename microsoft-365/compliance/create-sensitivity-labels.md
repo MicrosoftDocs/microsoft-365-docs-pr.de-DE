@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679079"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200027"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -53,17 +53,29 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
-2. Wählen Sie auf der Registerkarte **Bezeichnungen** die Option **+ Bezeichnung erstellen**, um den Assistenten **Neue Vertraulichkeitsbezeichnung** zu starten.
-
-3. Folgen Sie den Eingabeaufforderungen für die Bezeichnungseinstellungen.
+2. Wählen Sie auf der Seite **Bezeichnungen** die Option **+ Bezeichnung erstellen** aus, um den Assistenten für neue Vertraulichkeitsbezeichnungen zu starten. 
     
-    Weitere Informationen zu den Bezeichnungseinstellungen finden Sie unter [Wirkung von Vertraulichkeitsbezeichnungen](sensitivity-labels.md#what-sensitivity-labels-can-do) in den Übersichtsinformationen.
+    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
+    
+    ![Erstellen einer Vertraulichkeitsbezeichnung](../media/create-sensitivity-label-full.png)
+    
+    Hinweis: Standardmäßig verfügen Mandanten über keine Bezeichnungen, und Sie müssen sie erstellen. Die Bezeichnungen im Beispielbild zeigen Standardbezeichnungen, die [aus Azure Information Protection migriert wurden](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+
+3. Folgen Sie für die Bezeichnungseinstellungen den Eingabeaufforderungen im Assistenten.
+    
+    Weitere Informationen zu den Bezeichnungseinstellungen finden Sie unter [Wirkung von Vertraulichkeitsbezeichnungen](sensitivity-labels.md#what-sensitivity-labels-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
 
 4. Wiederholen Sie diese Schritte, um weitere Bezeichnungen zu erstellen. Wenn Sie jedoch eine Unterbezeichnung erstellen möchten, wählen Sie zuerst die übergeordnete Bezeichnung sowie **...** für **Weitere Aktionen** und dann **Unterbezeichnung hinzufügen** aus.
 
 5. Wenn Sie alle benötigten Bezeichnungen erstellt haben, bringen Sie sie bei Bedarf durch Verschieben nach oben oder unten in die gewünschte Reihenfolge. Wenn Sie die Reihenfolge der Bezeichnungen ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters) aus den Übersichtsinformationen.
 
-Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann **Bezeichnung bearbeiten** aus. Dadurch wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können. 
+Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie dann die Schaltfläche **Bezeichnung bearbeiten** aus:
+
+![Bearbeiten einer Vertraulichkeitsbezeichnung](../media/edit-sensitivity-label-full.png)
+
+Über diese Schaltfläche wird der Assistent **Vertraulichkeitsbezeichnung bearbeiten** gestartet, mit dem Sie alle Bezeichnungseinstellungen in Schritt 3 ändern können.
+
+Löschen Sie eine Bezeichnung nur dann, wenn Sie die Auswirkungen für die Benutzer verstehen. Weitere Informationen finden Sie im Abschnitt [Entfernen und Löschen von Bezeichnungen](#removing-and-deleting-labels). 
 
 > [!NOTE]
 > Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie brauchen sie beispielsweise keiner neuen Bezeichnungsrichtlinie hinzufügen, um die Änderungen für dieselben Benutzer verfügbar zu machen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für Benutzer und Dienste repliziert wurden.
@@ -125,20 +137,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
-2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** aus.
-
-3. Wählen Sie **Bezeichnungen veröffentlichen**, um den **Assistenten zum Erstellen von Richtlinien** zu starten.
-
-4. Wählen Sie **Zu veröffentlichende Vertraulichkeitsbezeichnungen auswählen** aus. Wählen Sie die Bezeichnungen, die Sie in Apps und Diensten zur Verfügung stellen möchten, und dann **Hinzufügen** aus.
+2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** und dann **Bezeichnungen veröffentlichen** aus, um den Assistenten zum Erstellen von Richtlinien zu starten:
     
-    > [!NOTE]
+    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
+        
+    ![Bezeichnungen veröffentlichen](../media/publish-sensitivity-labels-full.png)
+    
+    Hinweis: Standardmäßig verfügen Mandanten über keine Bezeichnungsrichtlinien, und Sie müssen sie erstellen. 
+
+3. Wählen Sie im Assistenten **Zu veröffentlichende Vertraulichkeitsbezeichnungen auswählen** aus. Wählen Sie die Bezeichnungen, die Sie in Apps und Diensten zur Verfügung stellen möchten, und dann **Hinzufügen** aus.
+    
+    > [!IMPORTANT]
     > Wenn Sie eine Unterbezeichnung auswählen, stellen Sie sicher, dass Sie auch deren übergeordnete Bezeichnung auswählen.
     
-5. Überprüfen Sie die ausgewählten Bezeichnungen, und wählen Sie **Bearbeiten** aus, wenn Sie Änderungen vornehmen möchten. Anderenfalls klicken Sie auf **Weiter**.
+4. Überprüfen Sie die ausgewählten Bezeichnungen, und wählen Sie **Bearbeiten** aus, wenn Sie Änderungen vornehmen möchten. Anderenfalls klicken Sie auf **Weiter**.
 
-6. Folgen Sie den Eingabeaufforderungen, um die Richtlinieneinstellungen zu konfigurieren.
+5. Folgen Sie den Eingabeaufforderungen, um die Richtlinieneinstellungen zu konfigurieren.
     
-    Weitere Informationen zu diesen Einstellungen finden Sie unter [Wirkung von Bezeichnungsrichtlinien](sensitivity-labels.md#what-label-policies-can-do) in den Übersichtsinformationen.
+    Weitere Informationen zu diesen Einstellungen finden Sie unter [Wirkung von Bezeichnungsrichtlinien](sensitivity-labels.md#what-label-policies-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
 
 7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Standorte unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen.
 
@@ -146,9 +162,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 Nach Abschluss des Assistenten wird die Bezeichnungsrichtlinie automatisch veröffentlicht. Um Änderungen an einer veröffentlichten Richtlinie vorzunehmen, bearbeiten Sie diese einfach. Es gibt keine spezielle Aktion zum Veröffentlichen oder Wiederveröffentlichen, die Sie auswählen können.
 
-Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und wählen Sie dann **Richtlinie bearbeiten** aus. Hierdurch wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
+Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und wählen Sie dann die Schaltfläche **Richtlinie bearbeiten** aus: 
 
-Normalerweise werden die Bezeichnungen innerhalb weniger Stunden in den entsprechenden Office-Apps angezeigt. Es kann jedoch bis zu 24 Stunden dauern, bis Ihre Bezeichnungsrichtlinien und daran vorgenommene Änderungen für alle Benutzer und Dienste repliziert wurden.
+![Bearbeiten einer Vertraulichkeitsbezeichnung](../media/edit-sensitivity-label-policy-full.png)
+
+Über diese Schaltfläche wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
+
+Benutzer sehen die neuen Bezeichnungen innerhalb einer Stunde in ihren Office-Apps. Es kann jedoch bis zu 24 Stunden dauern, bis Änderungen an bestehenden Bezeichnungen für alle Benutzer und Dienste repliziert wurden.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
@@ -174,7 +194,9 @@ Anders verhält es sich beim Löschen einer Bezeichnung:
 
 - Bei Desktop-Apps: Die Bezeichnungsinformationen in den Metadaten bleiben erhalten, aber da eine Bezeichnungs-ID- und -Namenszuordnung nicht mehr möglich ist, wird der angewendete Bezeichnungsname nicht angezeigt (z. B. in der Statusleiste), sodass Benutzer davon ausgehen werden, dass der Inhalt nicht gekennzeichnet ist. Wenn die Bezeichnung Verschlüsselung angewendet hat, bleibt die Verschlüsselung aufrecht, und beim Öffnen des Inhalts werden weiterhin der Name und die Beschreibung der nun archivierten Schutzvorlage angezeigt.
 
-- Für Office im Web: Der Bezeichnungsnamen wird nicht in der Statusleiste oder in der Spalte **Vertraulichkeit** angezeigt. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und Onedrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
+- Für Office im Web: Der Bezeichnungsnamen wird nicht in der Statusleiste oder in der Spalte **Vertraulichkeit** angezeigt. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
+
+Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu einer Stunde dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

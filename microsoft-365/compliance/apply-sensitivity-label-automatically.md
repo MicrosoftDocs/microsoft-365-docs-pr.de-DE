@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094845"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189510"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -47,7 +47,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
 
 - **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint oder OneDrive) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie. 
     
-    Diese Methode wird Autoklassifizierung mit Vertraulichkeitsbezeichnungen genannt. Möglicherweise wird sie auch als automatische Bezeichnung für ruhende Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten im Transit (E-Mails, die von Exchange gesendet oder empfangen werden). Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer). 
+    Möglicherweise wird sie auch automatische Bezeichnung für ruhende Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten im Transit (E-Mails, die von Exchange gesendet oder empfangen werden) genannt. Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer). 
     
     Da diese Bezeichnung eher von Diensten als von Anwendungen angewendet wird, müssen Sie sich keine Gedanken darüber machen, welche Apps-Benutzer über welche Version verfügen. Dies hat zur Folge, dass diese Funktion sofort in ihrer gesamten Organisation zur Verfügung steht, und sie eignet sich für Bezeichnungen jeder Größe. Richtlinien zum automatischen Bezeichnen unterstützen die empfohlene Bezeichnung nicht, da der Benutzer nicht mit dem Bezeichnungsprozess interagiert. Stattdessen führt der Administrator die Richtlinien im Simulationsmodus aus, um sicherzustellen, dass der Inhalt korrekt bezeichnet wird, bevor die Bezeichnung tatsächlich angewendet wird.
     
@@ -127,6 +127,8 @@ Darüber hinaus können Sie auswählen, ob eine Bedingung alle vertraulichen Inf
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 
+Diese Option befindet zurzeit in der Vorschau.
+
 Wenn Sie die Option **Trainierbare Klassifizierungen** auswählen, wählen Sie eine oder mehrere der integrierten trainierbaren Klassifizierungen von Microsoft aus. Wenn Sie eigene benutzerdefinierte trainierbare Klassifizierungen erstellt haben, können Sie diese auch auswählen:
 
 ![Optionen für trainierbare Klassifizierungen und Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ Wenn Sie die Option **Trainierbare Klassifizierungen** auswählen, wählen Sie e
 
 Weitere Informationen zu diesen Klassifizierungen finden Sie unter [Erste Schritte mit trainierbaren Klassifizierungen (Vorschau)](classifier-getting-started-with.md).
 
-Während des Vorschauzeitraums unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
+Während der Vorschauphase für diese Option unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
 
-- Microsoft 365 Apps for Enterprise ([vormals Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) für Windows aus dem [Betakanal](https://office.com/insider) ([vormals Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
+- Microsoft 365-Apps for Enterprise ([vormals Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) für Windows, die jetzt im [Aktuellen Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) in Version 2006 und höher bereitgestellt werden:
     - Word
     - Excel
     - PowerPoint
