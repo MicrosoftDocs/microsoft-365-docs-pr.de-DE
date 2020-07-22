@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899339"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204755"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -41,13 +41,23 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `PreviousFileName` | string | Ursprünglicher Name der Datei, die als Ergebnis der Aktion umbenannt wurde |
+| `PreviousFolderPath` | string | Ursprünglicher Ordner, der die Datei enthält, bevor die aufgezeichnete Aktion angewendet wurde |
+| `Protocol` | string | Verwendetes Netzwerkprotokoll |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
 | `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure AD |
 | `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
+| `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts |
+| `DeviceType` | string | Gerätetyp | 
+| `OSPlatform` | string | Plattform des auf dem Gerät ausgeführten Betriebssystems. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. |
 | `IPAddress` | string | Dem Endpunkt zugewiesene IP-Adresse und wird während der zugehörigen Netzwerkkommunikation verwendet |
+| `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationIPAddress` | string | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
 | `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
+| `Isp` | string | Internet Dienstanbieter (Internet Service Provider, ISP), der der IP-Endpunktadresse zugeordnet ist |
+| `ReportId` | long | Eindeutiger Bezeichner für das Ereignis |
+| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

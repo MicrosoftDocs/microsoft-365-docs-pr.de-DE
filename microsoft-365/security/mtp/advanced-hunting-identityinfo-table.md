@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898957"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204923"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -50,7 +50,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
 | `EmailAddress` | string | SMTP-Adresse des Kontos |
-| `SipProxyAddress` | string | SIP-Adresse (Voice of over IP (VoIP) Session Initiation Protocol) des Kontos |
+| `SipProxyAddress` | string | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
 | `City` | string | Ort, an dem sich der Benutzer des Kontos befindet |
 | `Country` | string | Land/Region, in dem sich der Benutzer des Kontos befindet |
 | `IsAccountEnabled` | boolean | Gibt an, ob das Konto aktiviert ist oder nicht. |

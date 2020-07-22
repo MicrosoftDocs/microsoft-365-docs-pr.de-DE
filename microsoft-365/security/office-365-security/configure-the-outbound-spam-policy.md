@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie ausgehende Spam Richtlinien in Exchange Online Protection (EoP) anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024582"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204851"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EoP
 
@@ -136,26 +136,10 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
    - **Benachrichtigen bestimmter Personen, wenn ein Absender aufgrund des Sendens von ausgehenden Spam blockiert wird**:
 
-     > [!NOTE]
-     > Die standardmäßige [Warnungs Richtlinie](../../compliance/alert-policies.md) mit dem Namen " **Benutzer vom Senden von e-Mails eingeschränkt** " sendet bereits e-Mail-Benachrichtigungen an Mitglieder der Gruppe **TenantAdmins** (**globale Administratoren**), wenn Benutzer aufgrund der Überschreitung der Grenzwerte im Abschnitt **Empfänger Grenzwerte** blockiert werden. Es wird empfohlen, dass Sie die Warnungs Richtlinie anstelle dieser Einstellung in der ausgehenden Spam Richtlinie verwenden, um Administratoren und andere Benutzer zu benachrichtigen. Anweisungen finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Diese Einstellung funktioniert nur in der standardmäßigen ausgehenden Spam Richtlinie. Es funktioniert nicht in benutzerdefinierten ausgehenden Spam Richtlinien, die Sie erstellen.
-
-     So aktivieren Sie diese Einstellung:
-
-     a. Aktivieren Sie das Kontrollkästchen, um die Einstellung zu aktivieren.
-
-     b. Klicken Sie auf **Personen hinzufügen**. Im Flyout **Empfänger hinzufügen oder entfernen** :
-
-     c. Geben Sie die E-Mail-Adresse des Absenders ein. Sie können mehrere e-Mail-Adressen durch Semikolons getrennt angeben (;) oder ein Empfänger pro Reihe.
-
-     d. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) zum Hinzufügen der Empfänger.
-
-        Wiederholen Sie diese Schritte so oft wie nötig.
-
-        Die Empfänger, die Sie hinzugefügt haben, werden im Flyout im Abschnitt **Empfängerliste** angezeigt. Klicken Sie auf die Schaltfläche entfernen, um einen Empfänger zu löschen ![ ](../../media/scc-remove-icon.png) .
-
-     e. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-     Deaktivieren Sie das Kontrollkästchen, um diese Einstellung zu deaktivieren.
+     > [!IMPORTANT]
+     > Diese Einstellung wird derzeit von ausgehenden Spam Richtlinien veraltet.
+     > 
+     > Die standardmäßige [Warnungs Richtlinie](../../compliance/alert-policies.md) mit dem Namen " **Benutzer vom Senden von e-Mails eingeschränkt** " sendet bereits e-Mail-Benachrichtigungen an Mitglieder der Gruppe **TenantAdmins** (**globale Administratoren**), wenn Benutzer aufgrund der Überschreitung der Grenzwerte im Abschnitt **Empfänger Grenzwerte** blockiert werden. **Es wird dringend empfohlen, dass Sie die Warnungs Richtlinie anstelle dieser Einstellung in der ausgehenden Spam Richtlinie verwenden, um Administratoren und andere Benutzer zu benachrichtigen**. Anweisungen finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. Optional Erweitern Sie den Abschnitt **Empfänger Grenzwerte** , um die Grenzwerte und Aktionen für verdächtige ausgehende e-Mail-Nachrichten zu konfigurieren:
 
@@ -189,11 +173,11 @@ Durch das Erstellen einer benutzerdefinierten ausgehenden Spam Richtlinie im Sec
 
    > [!NOTE]
    > Diese Einstellungen gelten nur für Cloud-basierte Postfächer.
-   
+
    - **Automatische Weiterleitung**
   
       Wählen Sie eine der Optionen aus, um zu steuern, wie die automatische Weiterleitung verarbeitet wird.
-    
+
       - **Automatic**: Standardeinstellung, mit der das System die automatische Weiterleitung standardmäßig mit deaktivierter automatischer Weiterleitung steuern kann.
       - **On**: externe Weiterleitung ist innerhalb der Richtlinie ohne Einschränkung aktiviert.
       - **Off**: externe Weiterleitung ist deaktiviert und wird blockiert

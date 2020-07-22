@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084155"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204935"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Neues in Microsoft Threat Protection
 
@@ -30,6 +30,10 @@ RSS-Feed: erhalten Sie benachrichtigt, wenn diese Seite aktualisiert wird, indem
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="july-2020"></a>Juli 2020
+- [Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md) <br> Verwenden Sie diese Funktion in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um Ergebnisse mit umfassenden Dateiinformationen zu bereichern.
+- [Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)<br> Erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
+
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-Feed <br> Holen Sie sich die neuesten Sicherheitsforschung, Threat Intelligence, Produktneuigkeiten und vieles mehr-direkt im Dashboard.
 - [EmailPostDeliveryEvents-Schematabelle](advanced-hunting-emailpostdeliveryevents-table.md) <br> Integrieren Sie Informationen zu Post Zustellungs Aktionen, die in e-Mail-Nachrichten in ihren erweiterten Jagd Abfragen ausgeführt werden.
@@ -43,7 +47,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Automatische Untersuchung und Reaktion](mtp-autoir.md) <br> Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern.
 - [Erweiterte Jagd Verbesserungen](advanced-hunting-overview.md) <br> Proaktive Suche nach Bedrohungen durch den modernen Arbeitsbereich mit Kusto-Abfragesprache und einem sicherheitsoptimierten Schema.
 
-## <a name="march-2019"></a>März 2019
+## <a name="march-2019"></a>März 2019
 - Erweiterte Suche <br> Zielseite mit verschiedenen Jagd Funktionen, mit denen Sie Bedrohungen proaktiv finden können, die sich auf e-Mails und Daten, Geräte und Identitäten auswirken.
 - [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) <br> Messung der Sicherheitslage einer Organisation mit einer höheren Zahl, die mehr Verbesserungs Aktionen anzeigt. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. 
 - [Berichte](monitoring-and-reporting.md) <br>  Verfügt über eine Reihe von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs verfolgen.

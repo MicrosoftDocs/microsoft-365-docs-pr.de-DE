@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Exchange Online Protection (EoP) zum Schutz Ihrer lokalen e-Mail-Organisation in eigenständigen und Hybriden Umgebungen beitragen kann.
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616986"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204803"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -61,7 +61,13 @@ EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhal
 
 - Im asiatisch-pazifischen Raum (APAC) befinden sich alle Exchange Online Postfächer in APAC-Rechenzentren, und Nachrichten werden derzeit über APAC-Rechenzentren für die EoP-Filterung weitergeleitet.
 
-- In Nord-und Südamerika befinden sich alle Exchange Online Postfächer in US-Rechenzentren, mit Ausnahme von Südamerika, in dem Rechenzentren in Brasilien und Chile verwendet werden, und in Kanada, in dem Rechenzentren in Kanada verwendet werden. Alle e-Mail-Nachrichten, einschließlich Nachrichten für Kunden in Südamerika und Kanada, werden über lokale Rechenzentren für die EoP-Filterung weitergeleitet. in Quarantäne befindliche e-Mails werden im Rechenzentrum gespeichert, in dem sich der Mandant befindet.
+- In Nord-und Südamerika werden die Dienste an den folgenden Orten verteilt:
+
+  - Südamerika: Exchange Online Postfächer befinden sich in den Rechenzentren in Brasilien und Chile. Alle Nachrichten werden über lokale Rechenzentren für die EoP-Filterung weitergeleitet. In Quarantäne befindliche Nachrichten werden im Rechenzentrum gespeichert, in dem sich der Mandant befindet.
+
+  - Kanada: Exchange Online Postfächer befinden sich in Rechenzentren in Kanada. Alle Nachrichten werden über lokale Rechenzentren für die EoP-Filterung weitergeleitet. In Quarantäne befindliche Nachrichten werden im Rechenzentrum gespeichert, in dem sich der Mandant befindet.
+
+  - Vereinigte Staaten: Exchange Online Postfächer befinden sich in US-Rechenzentren. Alle Nachrichten werden über lokale Rechenzentren für die EoP-Filterung weitergeleitet. In Quarantäne befindliche Nachrichten werden im Rechenzentrum gespeichert, in dem sich der Mandant befindet.
 
 - Alle Exchange Online-Postfächer für die Government Community Cloud (GCC) befinden sich in US-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über US-Rechenzentren geleitet.
 

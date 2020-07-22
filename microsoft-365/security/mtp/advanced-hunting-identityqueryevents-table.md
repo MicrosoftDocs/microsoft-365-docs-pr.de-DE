@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899113"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204875"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,8 +38,9 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. |
 | `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `Query` | string | Typ der Abfrage: querygroup, QueryUser oder EnumerateUsers |
-| `QueryObject` | string | Name des Benutzers, der Gruppe, des Geräts, der Domäne oder eines beliebigen anderen Entitätstyps, der abgefragt wird |
+| `QueryType` | string | Typ der Abfrage, wie Abfragegruppe, QueryUser oder EnumerateUsers |
+| `QueryTarget` | string | Name des Benutzers, der Gruppe, des Geräts, der Domäne oder eines beliebigen anderen Entitätstyps, der abgefragt wird |
+| `Query` | string | Zum Ausführen der Abfrage verwendete Zeichenfolge |
 | `Protocol` | string | Während der Kommunikation verwendete Protokolle |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
@@ -49,7 +50,14 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Endpunkts |
 | `IPAddress` | string | Dem Endpunkt zugewiesene IP-Adresse und wird während der zugehörigen Netzwerkkommunikation verwendet |
+| `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationIPAddress` | string | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `TargetDeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetAccountUpn` | string | Benutzerprinzipalname (User Principal Name, UPN) des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetAccountDisplayName` | string | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
 | `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
+| `ReportId` | long | Eindeutiger Bezeichner für das Ereignis |
+| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

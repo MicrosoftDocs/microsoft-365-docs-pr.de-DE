@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199525"
+ms.locfileid: "45201509"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -30,7 +30,7 @@ ms.locfileid: "45199525"
 
 Bevor Sie Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren, können Sie Ihre [Vertraulichkeits Bezeichnungen](sensitivity-labels.md) nicht in Office im Internet anwenden. Die Schaltfläche " **Empfindlichkeit** " auf dem Menüband oder der zugewiesene Beschriftungsname auf der Statusleiste wird nicht angezeigt. Wenn Sie außerdem Desktop-Apps zum Beschriften Ihrer Dateien verwenden und diese dann in SharePoint oder OneDrive speichern, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten, wenn die Bezeichnung die Verschlüsselung angewendet hat. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, die Suche und andere kollaborative Features funktionieren unter diesen Umständen nicht.
 
-Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren, werden alle diese Funktionen aktiviert. Zusätzlich zur Anzeige von Sensitivitäts Bezeichnungen für Benutzer, für neue und geänderte Dateien, für die eine Vertraulichkeits Bezeichnung angewendet wurde, die die Verschlüsselung mit einem cloudbasierten Schlüssel umfasst:
+Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktivieren, werden alle diese Funktionen aktiviert. Zusätzlich zur Anzeige von Sensitivitäts Bezeichnungen für Benutzer, für neue und geänderte Dateien, für die eine Vertraulichkeits Bezeichnung angewendet wurde, die die Verschlüsselung mit einem cloudbasierten Schlüssel enthält (und keine [Doppelschlüssel Verschlüsselung](double-key-encryption.md)verwendet):
 
 - Für Word-, Excel-und PowerPoint-Dateien erkennt SharePoint die Bezeichnung und kann nun den Inhalt der verschlüsselten Datei verarbeiten.
 
@@ -45,7 +45,7 @@ Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneD
 - Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien. Datenverlust Verhinderung (DLP)-Richtlinien unterstützen Inhalte in diesen Dateien.
 
 > [!NOTE]
-> Wenn die Verschlüsselung nicht mit einem cloudbasierten Schlüssel, sondern einem lokalen Schlüssel, einer Schlüssel Verwaltungstopologie, die häufig als "eigenen Schlüssel halten" (Hyok) verwendet wurde, wird das SharePoint-Verhalten bei der Verarbeitung des Dateiinhalts nicht geändert.
+> Wenn die Verschlüsselung mit lokalem Schlüssel, einer Schlüssel Verwaltungstopologie, die häufig als "eigenen Schlüssel" (Hyok) bezeichnet wird, oder mithilfe der [Doppelschlüssel Verschlüsselung](double-key-encryption.md)angewendet wurde, ändert sich das SharePoint-Verhalten bei der Verarbeitung des Dateiinhalts nicht.
 >
 > Das SharePoint-Verhalten ändert sich auch nicht für vorhandene beschriftete und verschlüsselte Dateien in SharePoint. Damit diese Dateien von den neuen Funktionen profitieren, müssen Sie entweder heruntergeladen und hochgeladen oder bearbeitet werden, nachdem Sie den Befehl ausgeführt haben, um Sensitivitäts Bezeichnungen für SharePoint und OneDrive zu aktivieren. SharePoint kann diese Dateien dann verarbeiten. Sie werden dann beispielsweise in Such-und eDiscovery-Ergebnissen zurückgegeben.
 
@@ -70,7 +70,7 @@ Verwenden Sie die OneDrive-Synchronisierungs-App-Version 19.002.0121.0008 oder h
 
 ## <a name="limitations"></a>Einschränkungen
 
-- SharePoint wendet keine Vertraulichkeits Bezeichnungen automatisch auf vorhandene Dateien an, die Sie bereits mithilfe von Azure Information Protection-Bezeichnungen verschlüsselt haben. Um die Funktionen zu erhalten, nachdem Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, müssen Sie diese Aufgaben stattdessen ausführen:
+- SharePoint wendet keine Vertraulichkeits Bezeichnungen automatisch auf vorhandene Dateien an, die Sie bereits mithilfe von Azure Information Protection-Bezeichnungen verschlüsselt haben. Führen Sie diese Aufgaben stattdessen aus, damit die Funktionen nach dem Aktivieren von Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive funktionieren:
     
     1. Stellen Sie sicher, dass Sie [die Azure Information Protection-Bezeichnungen](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) zu Sensitivitäts Bezeichnungen migriert und diese im Microsoft 365 Compliance Center oder in einer entsprechenden Bezeichnungs Verwaltungskonsole [veröffentlicht](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) haben.
     
@@ -79,8 +79,9 @@ Verwenden Sie die OneDrive-Synchronisierungs-App-Version 19.002.0121.0008 oder h
 - In SharePoint können keine verschlüsselten Dateien verarbeitet werden, wenn die Bezeichnung, auf die die Verschlüsselung angewendet wird, eine der folgenden [Konfigurationen für die Verschlüsselung](encryption-sensitivity-labels.md#configure-encryption-settings)aufweist:
     - **Zulassen, dass Benutzerberechtigungen zuweisen, wenn Sie die Bezeichnung anwenden** , und das Kontrollkästchen für **in Word, PowerPoint und Excel fordern Sie Benutzer zur Angabe von Berechtigungen aufgefordert** wird ausgewählt ist. Diese Einstellung wird manchmal auch als "benutzerdefinierte Berechtigungen" bezeichnet.
     - Der **Benutzer Zugriff auf Inhalts Ablauf** wird auf einen anderen Wert als **Never**festgelegt.
+    - Die **Verschlüsselung mit doppeltem Schlüssel** wird ausgewählt.
     
-    Bei Beschriftungen mit einer dieser Verschlüsselungs Konfigurationen werden die Beschriftungen nicht für Benutzer in Office im Internet angezeigt. Darüber hinaus können die neuen Funktionen nicht mit beschrifteten Dokumenten verwendet werden, die bereits über diese Verschlüsselungseinstellungen verfügen. Beispielsweise werden diese Dokumente nicht in den Suchergebnissen zurückgegeben, auch wenn Sie aktualisiert werden.
+    Bei Beschriftungen mit einer dieser Verschlüsselungs Konfigurationen werden die Bezeichnungen nicht für Benutzer in Office im Internet angezeigt. Darüber hinaus können die neuen Funktionen nicht mit beschrifteten Dokumenten verwendet werden, die bereits über diese Verschlüsselungseinstellungen verfügen. Beispielsweise werden diese Dokumente nicht in den Suchergebnissen zurückgegeben, auch wenn Sie aktualisiert werden.
 
 - Für ein verschlüsseltes Dokument, das Bearbeitungsberechtigungen für einen Benutzer gewährt, kann das Kopieren in den Webversionen der Office-Apps nicht blockiert werden.
 
@@ -96,6 +97,7 @@ Verwenden Sie die OneDrive-Synchronisierungs-App-Version 19.002.0121.0008 oder h
 
 - Dokumente, die auf folgende Weise verschlüsselt wurden, können nicht in Office im Internet geöffnet werden:
     - Verschlüsselung, die einen lokalen Schlüssel verwendet ("eigenen Schlüssel halten" oder Hyok)
+    - Verschlüsselung, die mithilfe der [Doppelschlüssel Verschlüsselung](double-key-encryption.md) angewendet wurde 
     - Verschlüsselung, die unabhängig von einer Bezeichnung angewendet wurde, beispielsweisedurch direkte Anwendung einer Vorlage zum Schutz von Rechteverwaltung.
 
 - Wenn Sie eine Bezeichnung löschen, die auf ein Dokument in SharePoint angewendet wurde, anstatt die Beschriftung aus der entsprechenden Bezeichnungsrichtlinie zu entfernen, wird das Dokument beim Herunterladen nicht mit einer Bezeichnung versehen oder verschlüsselt. Im Vergleich dazu bleibt das Dokument verschlüsselt, wenn das beschriftete Dokument außerhalb von SharePoint gespeichert wird, wenn die Bezeichnung gelöscht wird. Beachten Sie, dass Sie zwar während einer Testphase Beschriftungen löschen können, es aber sehr selten ist, eine Bezeichnung in einer Produktionsumgebung zu löschen.

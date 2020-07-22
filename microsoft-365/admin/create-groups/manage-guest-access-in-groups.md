@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informationen zum Hinzufügen von Gästen zu einer Microsoft 365-Gruppe, zum Anzeigen von Gastbenutzern und zum Steuern des Gastzugriffs mithilfe von PowerShell.
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854246"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204743"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Verwalten des Gastzugriffs in Microsoft 365-Gruppen
 
@@ -114,7 +114,7 @@ Weitere Informationen finden Sie unter [Zulassen oder Blockieren von Einladungen
 
 ## <a name="add-guests-to-the-global-address-list"></a>Hinzufügen von Gästen zur globalen Adressliste
 
-Standardmäßig sind Gastbenutzer in der globalen Adressliste von Exchange nicht sichtbar. Führen Sie die nachstehenden Schritte aus, um einen Gast in der globalen Adressliste anzuzeigen.
+Standardmäßig sind Gastbenutzer in der globalen Adressliste von Exchange nicht sichtbar. Führen Sie die nachstehenden Schritte aus, um einen Gast in der globalen Adressliste anzuzeigen. Stellen Sie sicher, dass der Gast im Exchange Online Admin Center angezeigt wird. Neue Gäste können eine kurze Zeit in Anspruch nehmen, um dort angezeigt zu werden, nachdem Sie hinzugefügt wurden.
 
 Suchen Sie die ObjectID des Gastbenutzers:
 

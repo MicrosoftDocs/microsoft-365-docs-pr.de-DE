@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200228"
+ms.locfileid: "45201421"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider Risikomanagement
 
@@ -74,7 +74,7 @@ Sie möchten beispielsweise SharePoint-Indikatoren in den Richtlinieneinstellung
 
 ![Einstellungen für benutzerdefinierte Kennzahlen für Insider Risk Management](../media/insider-risk-custom-indicators.png)
 
-- Für die erste tägliche Ereignisebene legen Sie den Schwellenwert bei *10 oder mehr Ereignissen pro Tag* fest, um eine geringere Auswirkung auf das Risikoergebnis für die Ereignisse, *20 oder mehr Ereignisse pro Tag* für eine mittlere Auswirkung auf das Risikoergebnis für die Ereignisse und *30 oder mehr Ereignisse pro Tag* einen höheren Einfluss auf die Risikobewertung für die Ereignisse*zu haben.* Diese Einstellungen bedeuten effektiv:
+Für die erste tägliche Ereignisebene legen Sie den Schwellenwert bei *10 oder mehr Ereignissen pro Tag* fest, um eine geringere Auswirkung auf das Risikoergebnis für die Ereignisse, *20 oder mehr Ereignisse pro Tag* für eine mittlere Auswirkung auf das Risikoergebnis für die Ereignisse und *30 oder mehr Ereignisse pro Tag* einen höheren Einfluss auf die Risikobewertung für die Ereignisse zu haben. Diese Einstellungen bedeuten effektiv:
 
 - Wenn es 1-9 SharePoint-Ereignisse gibt, die nach dem Auslösen des Ereignisses stattfinden, werden die Risikobewertungen minimal beeinträchtigt und würden tendenziell keine Warnung generieren.
 - Wenn es 10-19 SharePoint-Ereignisse gibt, die nach einem auslösendem Ereignis stattfinden, ist das Risikoergebnis inhärent niedriger, und die Warnungsschweregrade tendieren zu einer niedrigen Ebene.

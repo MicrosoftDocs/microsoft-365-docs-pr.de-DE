@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048267"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204827"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -50,7 +50,7 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 
 3. **Vorschau-Features**aktivieren aktivieren Sie die  >  **Vorschaufunktionen**. 
 
-3. Wählen Sie **Speichern** aus.
+3. Wählen Sie **Save** aus.
 
 Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschau-Features aktivieren** aktiviert ist. 
 
@@ -59,8 +59,4 @@ Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügba
 
 - **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu Schema Tabellen, die direkt im Sicherheitscenter verfügbar sind. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweisinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.  
 
-- **[Identitäts-und App-Tabellen](advanced-hunting-schema-tables.md)** – erhalten Sie Einblick in Authentifizierungsereignisse, Active Directory Abfragen und App-bezogene Aktivitäten mit den Tabellen [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)und [AppFileEvents](advanced-hunting-appfileevents-table.md) im erweiterten Jagd Schema.
-
 - **[Go Hunt](advanced-hunting-go-hunt.md)** – schnell von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter [Erweiterter Jagd](advanced-hunting-overview.md) Funktionen pivotieren.
-
-- **[Fileprofile ()-Funktion](advanced-hunting-fileprofile-function.md)** – verwenden Sie in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um umfassende Dateiinformationen zu integrieren.

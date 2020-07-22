@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2116d8f6f1006f5acf9d468006fa07a04e13087b
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 19437caf4f3b0dcb6eb6ccad81d1ed3917df7996
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046028"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204911"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "45046028"
 - Microsoft Threat Protection
 
 Die `IdentityLogonEvents` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Informationen zu Authentifizierungs Aktivitäten, die über Ihre lokalen Active Directory von Azure ATP erfasst wurden, und Authentifizierungs Aktivitäten im Zusammenhang mit Microsoft Online Services, die von Microsoft Cloud App Security erfasst werden. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+
+>[!NOTE]
+>In dieser Tabelle werden Azure Active Directory (AD)-Anmeldeaktivitäten behandelt, die von der Cloud-App-Sicherheit verfolgt werden, insbesondere interaktive Anmeldungen und Authentifizierungs Aktivitäten mithilfe von ActiveSync und anderen Legacy Protokollen. Nicht interaktive Anmeldungen, die in dieser Tabelle nicht verfügbar sind, können im Azure AD Überwachungsprotokoll angezeigt werden. [Weitere Informationen zum Verbinden von Cloud App Security mit Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -39,19 +42,26 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. |
 | `LogonType` | string | Typ der Anmeldesitzung, insbesondere:<br><br> - **Interaktiv** – der Benutzer interagiert physisch mit dem Computer mit der lokalen Tastatur und dem Bildschirm.<br><br> - **Remote Interactive (RDP)-Anmeldungen** -Benutzer interagiert mit dem Computer remote mithilfe von Remote Desktop, Terminal Dienste, Remoteunterstützung oder anderen RDP-Clients<br><br> - **Netzwerk** Sitzung, die beim Zugriff auf den Computer mit PsExec initiiert wurde oder bei dem auf freigegebene Ressourcen auf dem Computer (beispielsweise Drucker und freigegebene Ordner) zugegriffen wird<br><br> - Von geplanten Vorgängen initiierte **Batch** Sitzung<br><br> - Von Diensten initiierte **Dienst** Sitzung beim Start |
 | `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `Protocol` | string | Während der Kommunikation verwendete Protokolle |
+| `Protocol` | string | Verwendetes Netzwerkprotokoll |
+| `FailureReason` | string | Informationen dazu, warum die aufgezeichnete Aktion fehlgeschlagen ist |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
 | `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
 | `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure AD |
 | `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
-| `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
+| `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts |
 | `DeviceType` | string | Gerätetyp |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. |
 | `IPAddress` | string | Dem Endpunkt zugewiesene IP-Adresse und wird während der zugehörigen Netzwerkkommunikation verwendet |
+| `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationIPAddress` | string | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `TargetDeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetAccountDisplayName` | string | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
 | `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
 | `Isp` | string | Internet Dienstanbieter (Internet Service Provider, ISP), der der IP-Endpunktadresse zugeordnet ist |
+| `ReportId` | long | Eindeutiger Bezeichner für das Ereignis |
+| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

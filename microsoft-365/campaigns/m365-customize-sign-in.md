@@ -1,5 +1,7 @@
 ---
 title: Anpassen der Anmeldeseite mit Datenschutz-und Zustimmungs Hinweis
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,13 +20,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Passen Sie Ihre SIG-in-Seite mit dem Datenschutz-und Zustimmungs Hinweis für Microsoft 365 für Kampagnen an.
-ms.openlocfilehash: 94a18a4f1763a93d3ff1be5976df66b6fb112165
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+description: Passen Sie Ihre Anmeldeseite mit einem Datenschutz-und Zustimmungs Hinweis für Microsoft 365 für Kampagnen an.
+ms.openlocfilehash: 7ace4f1fe28bece1859cecb968a4352f015b8ca2
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995309"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204791"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Anpassen der Anmeldeseite mit Datenschutz-und Zustimmungs Hinweis
 
@@ -34,16 +36,15 @@ Sie können Ihre Anmeldeseite mit Ihrem Branding anpassen, und Sie können auch 
 
 ## <a name="customize-the-text-on-your-sign-in-page"></a>Anpassen des Texts auf der Anmeldeseite
 
-Um die anpassbaren Elemente für die Anmeldung zu aktualisieren, müssen Sie ein globaler Administrator sein. Spezifische Anweisungen finden Sie unter [Hinzufügen eines Unternehmensbranding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) -Artikels.
+Um die anpassbaren Elemente auf der Anmeldeseite zu aktualisieren, müssen Sie ein globaler Administrator sein. Spezifische Anweisungen finden Sie unter [Hinzufügen eines Unternehmensbranding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) -Artikels.
 
 Die Elemente, die Sie aktualisieren können, sind:
 
 - **Anmeldeseiten Text**
 
-    Dies ist ein einfacher Ort, um die Datenschutz-und Zustimmungserklärung hinzuzufügen.
-- Hintergrundbild für das einsingen von Seiten
+     Eine einfache Stelle zum Hinzufügen der Datenschutz-und Zustimmungserklärung.
+- Hintergrundbild der Anmeldeseite
 - Banner Logo
 - Username-Hinweis
 
 Beispiele für Datenschutz-und Zustimmungs Hinweise finden Sie unter [Suchen und Erfassen von Computern und Abrufen elektronischer Beweise in strafrechtlichen Ermittlungen](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf) PDF-Datei, insbesondere **Anhang A: Beispiel Netzwerk Banner Sprache**.
-
