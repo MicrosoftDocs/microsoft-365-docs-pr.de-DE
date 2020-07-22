@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von SharePoint Online-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126476"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199864"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
@@ -112,7 +112,7 @@ Hier ist der [Aktenplan](file-plan-manager.md) für die Aufbewahrungsbezeichnung
 
 - **Dateiplandeskriptoren:** (Zur Vereinfachung des Szenarios werden keine Dateideskriptoren bereitgestellt)
 
-Der folgende Screenshot zeigt die Einstellungen, wenn Sie die [Aufbewahrungbezeichnung](retention.md#retention-labels) der Produktspezifikation im Sicherheits- und Compliance-Center erstellen. Sie können den Ereignistyp der **Einstellung des Produkts** erstellen, wenn Sie die Aufbewahrungsbezeichnung erstellen. Beachten Sie die folgenden Schritte.
+Der folgende Screenshot zeigt die Einstellungen, wenn Sie die [Aufbewahrungsbezeichnung](retention.md#retention-labels) der Produktspezifikation im Microsoft 365 Compliance-Center erstellen. Sie können den Ereignistyp der **Einstellung des Produkts** erstellen, wenn Sie die Aufbewahrungsbezeichnung erstellen. Beachten Sie die folgenden Schritte.
 
 ![Aufbewahrungseinstellungen für die Bezeichnung „Produktspezifikation“](../media/SPRetention5.png)
 
@@ -181,7 +181,7 @@ Weitere Informationen zu gecrawlten und verwalteten Eigenschaften finden Sie unt
 
 KQL kann keine gecrawlten Eigenschaften in Suchabfragen verwenden. Es muss eine verwaltete Eigenschaft verwendet werden. In einem normalen Suchszenario erstellen wir eine verwaltete Eigenschaft und ordnen sie der gecrawlten Eigenschaft zu, die wir benötigen. Für das automatische Anwenden von Aufbewahrungsbezeichnungen können Sie jedoch nur in KQL vordefinierte verwaltete Eigenschaften und keine benutzerdefinierten verwalteten Eigenschaften angeben. Es gibt eine Reihe vordefinierter verwalteter Eigenschaften, die bereits im System erstellt wurden, damit die Zeichenfolge RefinableString00 bis RefinableString199 verwendet werden kann. Eine umfassende Liste finden Sie unter [Standardmäßig nicht verwendete verwaltete Eigenschaften](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). Diese standardmäßig verwalteten Eigenschaften werden normalerweise zum Definieren von Sucheinschränkungen verwendet.
 
-Damit die KQL-Abfrage funktioniert und die richtige Aufbewahrungsbezeichnung automatisch auf den Inhalt des Produktdokuments anwendet, ordnen wir die gecrawlten Eigenschaften **ows\_Doc\_x0020\_Typ** zu und **ows\_\_Status** zwei anpassbaren verwalteten Eigenschaften zu. In unserer Testumgebung für dieses Szenario werden **RefinableString00** und **RefinableString01** nicht verwendet. Wir haben dies festgelegt, indem wir **Verwaltete Eigenschaften** im **Suchschema Verwalten** im SharePont Admin Center angesehen haben.
+Damit die KQL-Abfrage funktioniert und die richtige Aufbewahrungsbezeichnung automatisch auf den Inhalt des Produktdokuments anwendet, ordnen wir die gecrawlten Eigenschaften **ows\_Doc\_x0020\_Typ** zu und **ows\_\_Status** zwei anpassbaren verwalteten Eigenschaften zu. In unserer Testumgebung für dieses Szenario werden **RefinableString00** und **RefinableString01** nicht verwendet. Wir haben dies festgelegt, indem wir im SharePoint Admin Center **Verwalteten Eigenschaften** im **Suchschema verwalten** anzeigen.
 
 ![Verwaltete Eigenschaften im Suchschema](../media/SPRetention12.png)
 
@@ -217,7 +217,7 @@ Geben Sie nun im Suchfeld **RefinableString00:"Product Specification" AND Refina
 
 Nachdem wir überprüft haben, dass die KQL-Abfrage ordnungsgemäß funktioniert, erstellen wir die Bezeichungsrichtlinie, die eine KQL-Abfrage verwendet, um die Produktspezifikations-Aufbewahrungsbezeichung automatisch auf die entsprechenden Dokumente anzuwenden.
 
-1. Wechseln Sie im [Security & Compliance Center](https://protection.office.com)zu **Klassifizierung** > **Aufbewahrungsbezeichnungen**, und klicken Sie dann auf **Beschriftung automatisch anwenden**. 
+1. Wechseln Sie im [Compliance Center](https://compliance.microsoft.com/homepage)zu **Datensatzverwaltung** > **Bezeichnungsrichtlinien**, und wählen Sie dann **Automatisch eine Bezeichnung anwenden **aus. 
 
    ![Auswählen der Option „Bezeichnung automatisch anwenden“ auf der Bezeichnungsseite](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ Nachdem wir überprüft haben, dass die KQL-Abfrage ordnungsgemäß funktioniert
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Überprüfen, dass die Aufbewahrungsbezeichnung automatisch angewendet wurde
 
-Verwenden Sie nach sieben Tagen den [Bezeichungsaktivitäts-Explorer](view-label-activity-for-documents.md) im Security & Compliance Center, um festzustellen, dass die von uns erstellte Bezeichnungsrichtlinie die Aufbewahrungsbezeichnungen in diesem Szenario automatisch auf die Produktdokumente angewendet hat. Im folgenden Screenshot wurden Aufbewahrungsbezeichnungen auch auf Produktverträge und Benutzerhandbücher angewendet, obwohl wir uns in diesem Artikel nicht mit dem Erstellen dieser Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien befasst haben.
-
-![Verwenden des Bezeichnungsaktivitäts-Explorers, um zu überprüfen, ob Bezeichnung automatisch angewendet wurde](../media/SPRetention20.png)
+Verwenden Sie nach sieben Tagen den[ Bezeichnungsaktivität-Explorer](view-label-activity-for-documents.md) im Compliance Center, um zu sehen, dass die von uns erstellte Bezeichnungsrichtlinie in diesem Szenario die Aufbewahrungszeichnungen automatisch auf die Produktdokumente angewendet hat. 
 
 Ein weiterer Überprüfungsschritt besteht darin, die Eigenschaften des Dokuments in der Dokumentbibliothek zu überprüfen. Im Informationsbereich können Sie sehen, dass die Aufbewahrungsbezeichnung auf ein ausgewähltes Dokument angewendet wird.
 
