@@ -38,6 +38,8 @@
           href: service-description/operations-and-monitoring.md
         - name: Anwendungsanforderungen
           href: service-description/mmd-app-requirements.md
+        - name: Anwendungssteuerung
+          href: service-description/app-control.md
         - name: Dienständerungen und Kommunikation
           href: service-description/servicechanges.md
         - name: Dienstplanausnahmen
@@ -65,6 +67,8 @@
     - name: Erste Schritte mit Microsoft Managed Desktop
       href: get-started/index.md
       items:
+        - name: Zugriff auf das Verwaltungsportal
+          href: get-started/access-admin-portal.md
         - name: Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
           href: get-started/add-admin-contacts.md
         - name: Bedingten Zugriff anpassen
@@ -87,6 +91,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
           href: get-started/get-started-devices.md
+        - name: Erste Schritte mit dem App-Steuerelement
+          href: get-started/get-started-app-control.md
         - name: Bereitstellen von Apps
           href: get-started/deploy-apps.md
           items:
@@ -112,8 +118,10 @@
           href: working-with-managed-desktop/admin-support.md
         - name: Endbenutzersupport
           href: working-with-managed-desktop/end-user-support.md
-        - name: Verwalten von Apps
+        - name: Apps verwalten
           href: working-with-managed-desktop/manage-apps.md
+        - name: Arbeiten mit dem App-Steuerelement
+          href: working-with-managed-desktop/work-with-app-control.md
         - name: Konfigurierbare Einstellungen
           href: working-with-managed-desktop/config-setting-overview.md
           items:
