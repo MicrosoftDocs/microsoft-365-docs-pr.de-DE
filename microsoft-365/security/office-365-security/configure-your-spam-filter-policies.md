@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726822"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204863"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -352,12 +352,12 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
 
    - **Spambenachrichtigungen für Endbenutzer senden alle (Tage)**: Wählen Sie aus, wie häufig Benachrichtigungen gesendet werden. Die Standardeinstellung beträgt 3 Tage. Sie können 1 bis 15 Tage eingeben.
 
-     Es gibt 3 Zyklen der Spambenachrichtigung für Endbenutzer innerhalb eines 24-Stunden-Zeitraums, die zu den folgenden Zeiten beginnen: 01:00 UTC, 08:00 UTC und 16:00 UTC. 
+     Es gibt 3 Zyklen der Spambenachrichtigung für Endbenutzer innerhalb eines 24-Stunden-Zeitraums, die zu den folgenden Zeiten beginnen: 01:00 UTC, 08:00 UTC und 16:00 UTC.
 
      > [!NOTE]
      > Wenn eine Benachrichtigung während eines vorherigen Zyklus ausgelassen wurde, wird die Benachrichtigung durch einen nachfolgenden Zyklus per Push gesendet. Dies kann dazu führen, dass mehrere Benachrichtigungen am selben Tag auftreten.
 
-   - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, was bedeutet, dass die Quarantänebenachrichtigungen für Endbenutzer die Standardsprache der EOP-Organisation verwenden.
+   - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, d. h. die Standardsprache der cloudbasierten Organisation.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 

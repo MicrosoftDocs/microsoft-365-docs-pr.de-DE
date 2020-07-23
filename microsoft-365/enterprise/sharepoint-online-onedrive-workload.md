@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Durchlaufen Sie den Prozess der Planung, Einführung und Wertschöpfung von SharePoint in Ihrem Unternehmen.
-ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 77beb26065a9ecfd37acf976e7415cc870ff8ea4
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268209"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201498"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Bereitstellen von SharePoint und OneDrive für Microsoft 365 Enterprise
 
@@ -85,12 +85,11 @@ Bevor Sie mit der Planung beginnen, legen Sie fest, ob Sie FastTrack verwenden m
 
 Wenn Sie Ihre eigene Planung (oder in Verbindung mit FastTrack) vornehmen, müssen Sie ermitteln, ob Ihr Netzwerk und Ihre Organisation für SharePoint bereit sind. Sie müssen unbedingt die [Beendigungskriterien für Netzwerke](networking-exit-criteria.md) in Ihrer Foundation-Infrastruktur erfüllen. Besonderes Augenmerk liegt dabei auf der Internetbandbreite, dem Durchsatz und Datenverkehrverzögerungen zur Maximierung der Leistung für den zusätzlichen Verkehr von SharePoint-basierten Dokumenten.
 
-Verwenden Sie [Migrieren zu SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online), um sich auf Ihr SharePoint-Rollout vorzubereiten: 
+Verwenden Sie [Migrieren zu SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online), um sich auf Ihr SharePoint-Rollout vorzubereiten.
 
 Sehen Sie sich für ein besseres Verständnis der Sicherheit in SharePoint die folgenden Ressourcen an:
-
--     [So schützen SharePoint und OneDrive Ihre Daten in der Cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--     [Datenverschlüsselung in OneDrive und SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+- [So schützen SharePoint und OneDrive Ihre Daten in der Cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+- [Datenverschlüsselung in OneDrive und SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Ergebnis
 
