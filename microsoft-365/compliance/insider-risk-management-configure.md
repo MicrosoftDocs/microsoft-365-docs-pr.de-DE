@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b968de12a2dee9d6b820558af05f99c7be29763c
+ms.sourcegitcommit: b3316b947059d3a2e31acbf0ab57d2e000b662ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199689"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45255340"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -28,7 +28,7 @@ Verwenden Sie Richtlinien für Insider Risk Management, um riskante Aktivitäten
 
 Weitere Informationen dazu, wie Sie mit Insider Risikorichtlinien Risiken in Ihrer Organisation verwalten können, finden Sie unter [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Bevor Sie mit dem Insider Risk Management beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-ons bestätigen. Für den Zugriff auf und die Verwendung des Insider Risikomanagements muss Ihre Organisation über eines der folgenden Abonnements oder Add-ons verfügen:
 
@@ -53,8 +53,8 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 | :---- | :---------------- |
 | **Insider Risiko Management** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Wenn Sie alle Benutzerkonten für designierte Administratoren, Analytiker und Prüfer hinzufügen, können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für Insider-Risikomanagement. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit dem Insider Risiko-Management zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert werden.|
 | **Insider Risk Management-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst das Insider Risikomanagement zu konfigurieren und später Insider Risiko Administratoren in eine definierte Gruppe zu unter trennen.  Benutzer in dieser Rollengruppe können Verwaltungsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen für Insiderrisiken erstellen, lesen, aktualisieren und löschen. |
-| **Insider Risk Management Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Alerts-, Cases-und Notices-Vorlagen für Insider-Risikomanagement zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
-| **Insider Risk Management Investigators** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können in allen Fällen auf alle Alerts für Insider-Risikomanagement,-Fälle,-Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
+| **Insider Risk Management Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungs-, Falll- und Benachrichtigungsvorlagen für Insiderrisiken zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
+| **Insider Risk Management Investigators** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungen im Insider-Risikomanagement, auf Fälle, Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Hinzufügen von Benutzern zu einer Rollengruppe "Insider Risk Management"
 
