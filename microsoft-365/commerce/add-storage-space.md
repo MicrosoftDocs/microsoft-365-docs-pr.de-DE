@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Hier erfahren Sie, wie Sie den Dateispeicher in Ihrem Microsoft 365-Abonnement hinzufügen und reduzieren. Bei zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive speichern.
-ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: d0580113449ae91e7be02a13993562d6b91a7d19
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899125"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387421"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -48,7 +48,7 @@ ms.locfileid: "44899125"
 Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Speicherplatz für Ihre SharePoint Online-Websitesammlungen verfügen, können Sie im Rahmen Ihres Abonnements zusätzlich weiteren Speicherplatz erwerben, wenn Sie gemäß Ihrem Plan dazu berechtigt sind.  Wenn in der Liste der verfügbaren Add-ons der **Office 365 zusätzliche Dateispeicherung** nicht angezeigt wird, bedeutet dies, dass Ihr Plan nicht berechtigt ist. Weitere Informationen finden Sie unter [ist mein Plan berechtigt?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Wenn Sie Ihr Abonnement über Volumenlizenzierung oder einen CSP erworben haben, können Sie **Office 365 zusätzlichen Dateispeicher** für Ihre Organisation nicht kaufen. Wenden Sie sich an Ihren Vertreter oder Partner, um Hilfe zu erhalten.
+> Wenn Sie Ihr Abonnement über Volumenlizenzierung oder einen CSP erworben haben, können Sie **Office 365 zusätzlichen Dateispeicher** für Ihre Organisation nicht direkt von Microsoft kaufen. Wenden Sie sich an Ihren Vertreter oder Partner, um Hilfe zu erhalten.
 
 ## <a name="view-available-storage"></a>Anzeigen des verfügbaren Speichers
 

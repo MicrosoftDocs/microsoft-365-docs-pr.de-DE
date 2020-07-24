@@ -14,16 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können erfahren, wie Sie URL-und Dateieinträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: db34abf28b5ead8106eb0b1447052d63072b2da3
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726816"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391566"
 ---
-# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Verwalten von URLs und Dateien in der Liste "Mandanten zulassen/blockieren"
+# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Verwalten von URLs und Dateien in der Zulassungs-/Sperrliste des Mandanten
 
 > [!NOTE]
 > Die in diesem Thema beschriebenen Funktionen befinden sich in der Vorschau, können sich ändern und sind nicht in allen Organisationen verfügbar.
@@ -58,17 +57,17 @@ In diesem Thema wird beschrieben, wie Sie Einträge in der Liste "Allow/Block" d
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Thema ausführen können:
+- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
 
   - Zum Hinzufügen und Entfernen von Werten aus der Liste Mandanten-Allow/Block müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung** oder **Hygiene Verwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Für den schreibgeschützten Zugriff auf die Liste der Mandanten zulassen/blockieren müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Sicherheits Leser** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung mit Ansichts** Schutz in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Verwenden Sie das Security & Compliance Center, um URL-Einträge in der Liste Mandanten-Allow/Block zu erstellen.
 

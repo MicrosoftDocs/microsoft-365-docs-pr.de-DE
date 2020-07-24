@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Rechnung oder Rechnung für Microsoft Business-Produkte lesen und verstehen.
 keywords: Abrechnungskonten, Organisationsinformationen, Rechnungen
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402642"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391518"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Ihre Rechnung verstehen
 
@@ -79,11 +79,11 @@ Auf den Gebührenseiten werden die Kosten nach Produkt aufgeschlüsselt angezeig
 
 Die Details der Einzelposten variieren je nach dem Typ des Produkts, für das Sie aufgeladen haben. Für Azure-Produkte wird beispielsweise die Menge an angewendeten Azure-Gutschriften angezeigt. Auf Sitz basierten Produkten wird ein VK-Preis und eine Menge angezeigt. Die Rechnungsdetails zeigen die gekauften Produkte, den Rabatt oder Guthaben, die angewendet wurden, den Steuersatz und den Betrag sowie die Gesamtsumme der Posten.
 
-    `Total = Charges - Azure Credit + Tax`
+> Total = Gebühren-Azure Credit + Tax
 
 Der Gesamtbetrag, der für jede Dienst Familie fällig ist, wird berechnet, indem Azure Credits von Guthaben/Gebühren subtrahiert werden und Mehrwertsteuer hinzugefügt wird:
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> Total = Zuschläge/Credits-Azure Credit + Tax
 
 Wenn auf Ihrer Rechnung Azure-Gebühren angezeigt werden, für die Sie weitere Informationen wünschen, lesen Sie [Überprüfen Ihrer Microsoft-Kundenvertrags Rechnung](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
