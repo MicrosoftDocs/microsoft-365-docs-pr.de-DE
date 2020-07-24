@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
-  ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+  ms.openlocfilehash: 86b644f7b35c6bcb2c02b6ee53ee468019caf75d
+  ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/18/2020
-  ms.locfileid: "44786190"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "45204779"
 productDirectory:
   title: Sichere Remotearbeit mit Microsoft 365 Business Premium
   items:
@@ -28,10 +28,10 @@ productDirectory:
   - title: Erwerben des kostenlosen Partner-Kits
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: Praktische Anleitungen und Markteinführungsressourcen für Partner zum Sichern der Remotearbeit.
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+    url: https://aka.ms/SMBSecurityKit
   - title: Was sind die Neuerungen?
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 kommt zu Microsoft 365 Business Premium hinzu!
+    summary: Azure AD Premium P1 ist jetzt in Microsoft 365 Business Premium enthalten!
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
@@ -83,6 +83,12 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
       itemType: download
       text: Checkliste zum Sichern der Remotearbeit
+    - url: https://cct.transform.microsoft.com/
+      itemType: deploy
+      text: Tool für Kundenberatung
+    - url: https://vc.transform.microsoft.com/
+      itemType: learn
+      text: Wertrechner
   - title: Benutzer verwalten
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
