@@ -1,5 +1,5 @@
 ---
-title: Anträge betroffener Personen zum Datenauftragsverarbeiterdienst für Windows im Rahmen der DSGVO und des CCPA
+title: Anträge betroffener Personen zum Datenauftragsverarbeiterdienst für Windows Enterprise im Rahmen der DSGVO und des CCPA
 description: Erlernen Sie die Verwendung von Microsoft-Produkten, -Diensten und -Verwaltungstools, um nach personenbezogenen Daten zu suchen und auf DSRs zu reagieren.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365-Dokumentation, DSGVO
 localization_priority: Priority
@@ -15,17 +15,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
+ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023597"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45374801"
 ---
-# <a name="data-processor-service-for-windows-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen zum Datenauftragsverarbeiterdienst für Windows im Rahmen der DSGVO und des CCPA 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge betroffener Personen zum Datenauftragsverarbeiterdienst für Windows Enterprise im Rahmen der DSGVO und des CCPA 
 
 >[!NOTE]
->Dieser Artikel richtet sich an Teilnehmer am Vorschauprogramm „Datenauftragsverarbeiterdienst für Windows“ und setzt die Zustimmung zu bestimmten Nutzungsbedingungen voraus. Wenn Sie mehr über das Programm erfahren und den Nutzungsbedingungen zustimmen möchten, wechseln Sie zu [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview).
+>Dieser Artikel richtet sich an Teilnehmer am Vorschauprogramm „Datenauftragsverarbeiterdienst für Windows Enterprise“ und setzt die Zustimmung zu bestimmten Nutzungsbedingungen voraus. Wenn Sie mehr über das Programm erfahren und den Nutzungsbedingungen zustimmen möchten, wechseln Sie zu [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Einführung in Anträge betroffener Personen 
 Die Datenschutz-Grundverordnung (DSGVO) der EU räumt natürlichen Personen (in der Verordnung als _betroffene Personen_ bezeichnet) das Recht ein, vom Arbeitgeber oder einer anderen Einrichtung oder Organisation (_Datenverantwortlicher_ oder _Verantwortlicher_) erhobene personenbezogene Daten zu verwalten. Personenbezogene Daten sind in der DSGVO ganz allgemein als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO gewährt betroffenen Personen bestimmte Rechte an ihren personenbezogenen Daten, z. B. das Recht auf Erhalt einer Kopie dieser personenbezogenen Daten, das Recht auf Korrektur der Daten, das Recht auf Einschränkung der Bearbeitung dieser Daten und das Recht auf Empfang dieser Daten in einem elektronischen Format, sodass sie an einen anderen Verantwortlichen übermittelt werden können. Ein von einer betroffenen Person formal gestellter Antrag an den Verantwortlichen, bestimmte Maßnahmen im Zusammenhang mit den personenbezogenen Daten der betroffenen Person zu ergreifen, wird als _Antrag einer betroffenen Person_ bezeichnet. 
@@ -57,11 +57,11 @@ Nachfolgend finden Sie Definitionen von Begriffen, die für diesen Leitfaden rel
 
 ## <a name="how-to-use-this-guide"></a>Verwenden dieses Leitfadens 
 
-Bei Verwendung von Geräten, die beim Datenauftragsverarbeiterdienst für Windows registriert sind, generiert Windows einige Informationen, die als Windows-Diagnosedaten bezeichnet werden, um den Dienst bereitzustellen.
+Bei Verwendung von Geräten, die beim Datenauftragsverarbeiterdienst für Windows Enterprise registriert sind, generiert Windows einige Informationen, die als „Windows-Diagnosedaten“ bezeichnet werden, um den Dienst bereitzustellen.
 
 ## <a name="windows-diagnostic-data"></a>Windows-Diagnosedaten 
 
-Microsoft bietet Ihnen die Möglichkeit, auf Windows-Diagnosedaten, die mit der Nutzung des Datenauftragsverarbeiterdiensts für Windows durch den Benutzer in Verbindung stehen, zuzugreifen, diese zu löschen und zu exportieren.
+Microsoft bietet Ihnen die Möglichkeit, auf Windows-Diagnosedaten, die mit der Nutzung des Datenauftragsverarbeiterdiensts für Windows Enterprise durch den Benutzer in Verbindung stehen, zuzugreifen, sie zu löschen und zu exportieren.
 
 >[!IMPORTANT]
 >Die Möglichkeit zur Berichtigung von Windows-Diagnosedaten wird nicht unterstützt. Windows-Diagnosedaten stellen tatsächliche Aktionen dar, die innerhalb von Windows durchgeführt wurden, und Änderungen an diesen Daten würden die historische Erfassung von Aktionen kompromittieren und das Sicherheitsrisiko erhöhen sowie die Zuverlässigkeit beschädigen. Alle in diesem Dokument behandelten Daten werden als Windows-Diagnosedaten betrachtet. 
@@ -72,7 +72,7 @@ Microsoft bietet die Möglichkeit, auf bestimmte Windows-Diagnosedaten über das
 
 ### <a name="step-1-access"></a>Schritt 1: Zugriff 
 
-Der Mandantenadministrator ist die einzige Person in Ihrer Organisation, die auf Windows-Diagnosedaten zugreifen kann, die sich auf die Verwendung eines beim Datenauftragsverarbeiterdienst für Windows registrierten Geräts durch einen bestimmten Benutzer beziehen. Die für einen Zugriffsantrag abgerufenen Daten werden mittels Export in einem maschinell lesbaren Format sowie in Dateien bereitgestellt, durch die der Benutzer erkennen kann, welchen Geräten und Diensten die Daten zugeordnet sind. Die abgerufenen Daten enthalten keine Daten, die die Sicherheit oder Stabilität des Windows-Geräts beeinträchtigen könnten. 
+Der Mandantenadministrator ist die einzige Person in Ihrer Organisation, die auf Windows-Diagnosedaten zugreifen kann, die sich auf die Verwendung eines beim Datenauftragsverarbeiterdienst für Windows Enterprise registrierten Geräts durch einen bestimmten Benutzer beziehen. Die für einen Zugriffsantrag abgerufenen Daten werden mittels Export in einem maschinell lesbaren Format sowie in Dateien bereitgestellt, durch die der Benutzer erkennen kann, welchen Geräten und Diensten die Daten zugeordnet sind. Die abgerufenen Daten enthalten keine Daten, die die Sicherheit oder Stabilität des Windows-Geräts beeinträchtigen könnten. 
 
 Microsoft stellt eine Portal-Erfahrung bereit, über die der Mandantenadministrator des Unternehmenskunden Zugriffsanträge betroffener Personen verwalten kann. [Azure-DSR, Teil 2, Schritt 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), beschreibt, wie ein DSR-Zugriffsantrag mittels Export über das Azure-Portal durchzuführen ist.
 
@@ -91,7 +91,7 @@ Microsoft bietet die Möglichkeit, Benutzer direkt über eine bereits vorhandene
 
 ### <a name="step-3-export"></a>Schritt 3: Export 
 
-Der Mandantenadministrator ist die einzige Person in Ihrer Organisation, die auf Windows-Diagnosedaten zugreifen kann, die sich auf die Verwendung eines beim Datenauftragsverarbeiterdienst für Windows registrierten Geräts durch einen bestimmten Benutzer beziehen. Die für einen Exportantrag abgerufenen Daten werden in einem maschinell lesbaren Format bereitgestellt und in Dateien bereitgestellt, durch die der Benutzer erkennen kann, welchen Geräten und Diensten die Daten zugeordnet sind. Die abgerufenen Daten enthalten keine Daten, die die Sicherheit oder Stabilität des Windows-Geräts beeinträchtigen könnten. [Azure-DSR, Teil 2, Schritt 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), beschreibt, wie ein DSR-Exportantrag über das Azure-Portal durchzuführen ist. 
+Der Mandantenadministrator ist die einzige Person in Ihrer Organisation, die auf Windows-Diagnosedaten zugreifen kann, die sich auf die Verwendung eines beim Datenauftragsverarbeiterdienst für Windows Enterprise registrierten Geräts durch einen bestimmten Benutzer beziehen. Die für einen Exportantrag abgerufenen Daten werden in einem maschinell lesbaren Format bereitgestellt und in Dateien bereitgestellt, durch die der Benutzer erkennen kann, welchen Geräten und Diensten die Daten zugeordnet sind. Die abgerufenen Daten enthalten keine Daten, die die Sicherheit oder Stabilität des Windows-Geräts beeinträchtigen könnten. [Azure-DSR, Teil 2, Schritt 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), beschreibt, wie ein DSR-Exportantrag über das Azure-Portal durchzuführen ist. 
 
 Microsoft bietet die Möglichkeit, Kundendaten direkt über eine bereits vorhandene Anwendungsprogrammierschnittstelle (API) zu exportieren. Details werden in der [Referenzdokumentation der API](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0) beschrieben.
 

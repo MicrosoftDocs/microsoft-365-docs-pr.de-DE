@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Lösungsszenario wird veranschaulicht, wie der Lebenszyklus von in SharePoint Online gespeicherten produktbezogenen Dokumenten mithilfe von SharePoint Online-Aufbewahrungsbezeichnungen verwaltet wird. Hierzu werden Dokumentmetadaten zum Klassifizieren von Inhalten verwendet, und zwar durch automatisches Anwenden von Aufbewahrungsbezeichnungen und Konfigurieren der ereignisbasierten Aufbewahrung.
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199864"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387452"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen
 
@@ -124,10 +124,10 @@ Der folgende Screenshot zeigt die Einstellungen, wenn Sie die [Aufbewahrungsbeze
 1. Wählen Sie in der Dropdownliste **Inhalte basierend auf aufbewahren oder löschen** wählen Sie**ein Ereignis**aus.
 
 2. Klicken Sie auf **Ereignistyp auswählen**.
+    
+    ![Erstellen Sie einen neuen Ereignistyp für die Bezeichnung „Produktspezifikation“](../media/SPRetention6.png)
 
-   ![Erstellen Sie einen neuen Ereignistyp für die Bezeichnung „Produktspezifikation“](../media/SPRetention6.png)
-
-3. Klicken Sie auf der Seite**Ereignistyp auswählen** auf **Sie können hier neue Ereignistypen erstellen**.
+3. Wählen Sie **Ereignistyp auswählen** aus. Wählen Sie dann auf der Seite**Ereignistyp auswählen** die Option **Sie können hier neue Ereignistypen erstellen** aus.
 
 4. Erstellen Sie einen Ereignistyp namens **Einstellung des Produkts**, geben Sie eine Beschreibung ein, und klicken Sie auf **Ende**, um es zu erstellen. 
 
@@ -252,7 +252,7 @@ Nachdem wir überprüft haben, dass die KQL-Abfrage ordnungsgemäß funktioniert
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Überprüfen, dass die Aufbewahrungsbezeichnung automatisch angewendet wurde
 
-Verwenden Sie nach sieben Tagen den[ Bezeichnungsaktivität-Explorer](view-label-activity-for-documents.md) im Compliance Center, um zu sehen, dass die von uns erstellte Bezeichnungsrichtlinie in diesem Szenario die Aufbewahrungszeichnungen automatisch auf die Produktdokumente angewendet hat. 
+Verwenden Sie nach sieben Tagen den[ Bezeichnungsaktivität-Explorer](data-classification-activity-explorer.md) im Compliance Center, um zu sehen, dass die von uns erstellte Bezeichnungsrichtlinie in diesem Szenario die Aufbewahrungsbezeichnungen automatisch auf die Produktdokumente angewendet hat. 
 
 Ein weiterer Überprüfungsschritt besteht darin, die Eigenschaften des Dokuments in der Dokumentbibliothek zu überprüfen. Im Informationsbereich können Sie sehen, dass die Aufbewahrungsbezeichnung auf ein ausgewähltes Dokument angewendet wird.
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 0179f208f10921293c164516b26440f5bd043517
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 08b028bbd28c06684245321e09f8ef3252098956
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127482"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372488"
 ---
 # <a name="records-management-in-microsoft-365"></a>Datensatzverwaltung in Microsoft 365
 
@@ -33,13 +33,13 @@ Organisationen aller Art benötigen eine Datensatzverwaltungslösung, um gesetzl
 
 Die Datensatzverwaltung in Microsoft 365 bietet die folgenden Funktionen:
 
-- **Bezeichnen von Inhalt als Datensatz** Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen, die Inhalte als [Datensätze](records.md) kennzeichnen, die von Endbenutzern oder [automatisch](apply-retention-labels-automatically.md) durch das identifizieren vertraulicher Informationen, Stichwörter oder Inhaltstypen angewendet werden können.
+- **Bezeichnen von Inhalt als Datensatz** Erstellen und Konfigurieren von Aufbewahrungsbezeichnungen zum Kennzeichen von Inhalten als [Datensatz](records.md), die von Benutzern oder [automatisch](apply-retention-labels-automatically.md) durch das Identifizieren vertraulicher Informationen, Stichwörter oder Inhaltstypen angewendet werden können.
 
 - **Migrieren und verwalten Sie Ihre Aufbewahrungsanforderungen mit dem Dateiplan**. Mithilfe eines [Dateiplans](file-plan-manager.md) können Sie einen vorhandenen Aufbewahrungsplan in Microsoft 365 integrieren oder einen neuen Plan für verbesserte Verwaltungsfunktionen erstellen.
 
 - **Konfigurieren Sie Einstellungen für Aufbewahrungs-und Löschvorgänge mit der Aufbewahrungsbezeichnung**. Definieren Sie Aufbewahrungszeiträume basierend auf zahlreichen Faktoren, z. B. dem Datum der letzten Änderung oder dem Erstellungsdatum.
 
-- **Lösen Sie ereignisbasierte Aufbewahrung** mit [ereignisbasierter Aufbewahrung](event-driven-retention.md) aus.
+- **Starten Sie verschiedene Aufbewahrungszeiträume beim Auftreten eines Ereignisses** mit [ereignisbasierter Aufbewahrung](event-driven-retention.md).
 
 - **Überprüfen und validieren Sie die Disposition** mit [Dispositionsüberprüfungen](disposition.md#disposition-reviews) und Nachweis der [Eintragslöschung](disposition.md#disposition-of-records).
 
@@ -47,7 +47,7 @@ Die Datensatzverwaltung in Microsoft 365 bietet die folgenden Funktionen:
 
 - **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest**, um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-Mit der Datensatzverwalterlösung in Microsoft 365 können Sie die Aufbewahrungspläne Ihrer Organisation in den Dateiplan integrieren, um Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus zu verwalten.
+Mit der Datensatzverwaltungslösung in Microsoft 365 können Sie die Aufbewahrungspläne Ihrer Organisation und die Anforderungen in einen Dateiplan integrieren, mit dem Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus verwaltet werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
