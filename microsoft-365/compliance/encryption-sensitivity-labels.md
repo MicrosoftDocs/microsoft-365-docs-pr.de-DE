@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153698"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229435"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung 
 
@@ -121,9 +121,9 @@ Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Be
 
 Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreifen kann, auf die eine bestimmte Bezeichnung angewendet wurde. Sie können:
 
-1. **Zulassen, dass der Zugriff auf gekennzeichnete Inhalte abläuft** – entweder zu einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Danach können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt es ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Caching-Mechanismen möglicherweise das Ablaufen nicht erzwingen können und deshalb E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
+- **Zulassen, dass der Zugriff auf gekennzeichnete Inhalte abläuft** – entweder zu einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Danach können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt es ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Caching-Mechanismen möglicherweise das Ablaufen nicht erzwingen können und deshalb E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
 
-2. **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
+- **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
 
 Einstellungen für die Zugriffssteuerung für verschlüsselte Inhalte:
 
@@ -207,6 +207,15 @@ Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument ode
 - Der Rights Management-Aussteller kann ein Dokument weiterhin öffnen, nachdem es gesperrt wurde.
 
 Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+### <a name="double-key-encryption"></a>Verschlüsselung mit Doppelschlüssel
+
+> [!NOTE]
+> Dieses Feature ist derzeit in der öffentlichen Vorschau bereitgestellt. Weitere Informationen finden Sie unter [Ankündigung der öffentlichen Vorschau der Double Key-Verschlüsselung für Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+
+Wählen Sie diese Option nur aus, nachdem Sie den Verschlüsselungsdienst für Doppelschlüssel konfiguriert haben, und Sie müssen diese Verschlüsselung mit Doppelschlüssel für die Dokumente und E-Mails verwenden, auf die diese Bezeichnung angewendet wird.
+
+Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie unter [Double Key Encryption (DKE)](double-key-encryption.md).
 
 ## <a name="let-users-assign-permissions"></a>Benutzern die Zuweisung von Berechtigungen überlassen
 
@@ -361,9 +370,9 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
 
 - Wenn Ihre Organisation[Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) nicht gewählt hat:
     
-    - werden Suche, eDiscovery und Delve bei verschlüsselten Dateien nicht funktionieren. 
+    - werden Suche, eDiscovery und Delve bei verschlüsselten Dateien nicht funktionieren.
     - funktionieren DLP-Richtlinien für die Metadaten dieser verschlüsselten Dateien (einschließlich Aufbewahrungsbezeichnungen), aber nicht für die Inhalte dieser Dateien (z. B. Kreditkartennummern innerhalb von Dateien).
-    - können Benutzer verschlüsselte Dateien mit Office im Web nicht öffnen. Wenn Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert sind, können Benutzer Office im Web verwenden, um verschlüsselte Dateien zu öffnen, mit einigen [Einschränkungen](sensitivity-labels-sharepoint-onedrive-files.md#limitations), darunter die Verschlüsselung, die mit einem firmeneigenen Schlüssel (bekannt als "Hold your own key" oder HYOK) angewendet wurde, und die Verschlüsselung, die unabhängig von einer Vertraulichkeitsbezeichnung angewendet wurde.
+    - können Benutzer verschlüsselte Dateien mit Office im Web nicht öffnen. Wenn Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert sind, können Benutzer Office im Web verwenden, um verschlüsselte Dateien zu öffnen, mit einigen [Einschränkungen](sensitivity-labels-sharepoint-onedrive-files.md#limitations), darunter die Verschlüsselung, die mit einem firmeneigenen Schlüssel (bekannt als „Hold your own key“ oder HYOK) angewendet wurde, [Verschlüsselung mit Doppelschlüssel](#double-key-encryption) und die Verschlüsselung, die unabhängig von einer Vertraulichkeitsbezeichnung angewendet wurde.
 
 - Damit mehrere Benutzer gleichzeitig eine verschlüsselte Datei bearbeiten können, müssen alle Office für Web verwenden. Wenn dies nicht der Fall ist und die Datei bereits geöffnet ist:
     

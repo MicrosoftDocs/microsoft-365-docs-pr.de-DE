@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
-ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204863"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372561"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -357,7 +357,7 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
      > [!NOTE]
      > Wenn eine Benachrichtigung während eines vorherigen Zyklus ausgelassen wurde, wird die Benachrichtigung durch einen nachfolgenden Zyklus per Push gesendet. Dies kann dazu führen, dass mehrere Benachrichtigungen am selben Tag auftreten.
 
-   - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, d. h. die Standardsprache der cloudbasierten Organisation.
+   - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, d. h. Englisch.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
