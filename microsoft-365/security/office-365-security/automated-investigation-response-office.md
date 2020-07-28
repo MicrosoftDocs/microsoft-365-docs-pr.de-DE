@@ -131,7 +131,7 @@ ms.locfileid: "44208911"
 
 <span data-ttu-id="c5f46-201">Über das Menü **Aktionen** können Sie **Untersuchung auslösen**auswählen.</span><span class="sxs-lookup"><span data-stu-id="c5f46-201">Using the **Actions** menu, you can select **Trigger investigation**.</span></span>
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menü \"Aktionen\" für ausgewählte Nachrichten":::
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menü Aktionen für ausgewählte Nachrichten":::
 
 <span data-ttu-id="c5f46-203">Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.</span><span class="sxs-lookup"><span data-stu-id="c5f46-203">Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.</span></span>
 
