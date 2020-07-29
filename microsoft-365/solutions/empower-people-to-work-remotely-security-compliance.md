@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/22/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 82c86ae2ab53c642a1fcdb64a9bbb75e04d5f6fc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127077"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429900"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -47,8 +47,8 @@ Schützen Sie Ihre Apps und Daten mit diesen Sicherheitsfunktionen von Microsoft
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection (ATP) | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. <br><br> Office ATP sammelt und analysiert Signale Ihrer Apps zur Erkennung, Untersuchung und Behebung von Sicherheitsrisiken und schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mails, Links (URLs) und Tools für die Zusammenarbeit. | Microsoft 365 E3 und E5 | 
-| Schutz vor Schadsoftware | Windows Defender Antivirus and Device Guard bietet Gerätebasierten Malware-Schutz. <br><br> SharePoint Online überprüft Dateiuploads automatisch auf bekannte Schadsoftware. ‎<br><br> Exchange Online Protection (EOP) sichert Cloud-Postfächer. | Microsoft 365 E3 und E5 |
+| Office 365 Advanced Threat Protection (ATP) | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. <br><br> Office ATP sammelt und analysiert Signale Ihrer Apps zur Erkennung, Untersuchung und Behebung von Sicherheitsrisiken und schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mails, Links (URLs) und Tools für die Zusammenarbeit. | Microsoft 365 E3 oder E5 | 
+| Schutz vor Schadsoftware | ‎Microsoft Defender Antivirus und Device Guard bieten gerätebasierten Schutz vor Schadsoftware. <br><br> SharePoint Online überprüft Dateiuploads automatisch auf bekannte Schadsoftware. ‎<br><br> Exchange Online Protection (EOP) sichert Cloud-Postfächer. | Microsoft 365 E3 oder E5 |
 | Microsoft Defender ATP | Schützen Sie die Geräte Ihrer Organisation vor Cyber-Bedrohungen und Datenschutzverletzungen, und erkennen, untersuchen und reagieren Sie fortgeschrittene Bedrohungen. | Microsoft 365 E5 |
 | Cloud-App-Sicherheit | Schützen Sie Ihre cloudbasierten Dienste – sowohl Microsoft 365 als auch andere SaaS-Apps – vor Angriffen. | Microsoft 365 E5 oder Individual Cloud App Security-Lizenzen |
 | Azure AD Identity Protection  | Automatisieren Sie die Erkennung und Behebung von identitätsbasierten Risiken. <br><br>Erstellen Sie risikobasierte bedingte Zugriffsrichtlinien, um die mehrstufige Authentifizierung (MFA) für riskante Anmeldungen zu erzwingen. | Microsoft 365 E5 oder E3 mit Azure AD Premium P2-Lizenzen |
@@ -62,13 +62,15 @@ Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compl
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|
-| Vertraulichkeitsbezeichnungen | Sie können die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu behindern, indem Sie Bezeichnungen mit unterschiedlichen Schutzgraden für E-Mails, Dateien oder Websites platzieren. | Microsoft 365 E3 und E5 |
-| Schutz vor Datenverlust (DLP) | Sie können eine riskante, unbeabsichtigte oder unangebrachte Freigabe erkennen, warnen und blockieren. Beispielsweise die Weitergabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
-| App-Steuerung für bedingten Zugriff | Verhindern, dass vertrauliche Daten auf die privaten Geräte der Benutzer heruntergeladen werden. | Microsoft 365 E3 und E5 |
-| Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren Sie Kontrollmechanismen für die Informationsgovernance, z. B. wie lange Daten aufbewahrt werden und die Anforderungen für die Speicherung von persönlichen Daten von Kunden, um die Richtlinien oder Datenvorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 und E5 |
-| Office-Nachrichtenverschlüsselung (Office Message Encryption, OME) | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 und E5 |
-| Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 und E5 |
-| Compliance-Bewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 und E5 |
+| Vertraulichkeitsbezeichnungen | Sie können die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu behindern, indem Sie Bezeichnungen mit unterschiedlichen Schutzgraden für E-Mails, Dateien oder Websites platzieren. | Microsoft 365 E3 oder E5 |
+| Schutz vor Datenverlust (DLP) | Sie können eine riskante, unbeabsichtigte oder unangebrachte Freigabe erkennen, warnen und blockieren. Beispielsweise die Weitergabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 oder E5 | 
+| App-Steuerung für bedingten Zugriff | Verhindern, dass vertrauliche Daten auf die privaten Geräte der Benutzer heruntergeladen werden. | Microsoft 365 E3 oder E5 |
+| Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren Sie Kontrollmechanismen für die Informationsgovernance, z. B. wie lange Daten aufbewahrt werden und die Anforderungen für die Speicherung von persönlichen Daten von Kunden, um die Richtlinien oder Datenvorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 oder E5 |
+| Office-Nachrichtenverschlüsselung (Office Message Encryption, OME) | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 oder E5 |
+| Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 oder E5 |
+| Compliancebewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 oder E5 |
+| Kommunikationscompliance  | Erkennen, Erfassen und Ergreifen von Abhilfemaßnahmen für unangebrachte Nachrichten in Ihrer Organisation. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
+| Insider-Risikomanagement |  Bösartige und unbeabsichtigte Aktivitäten in Ihrer Organisation erkennen, untersuchen und darauf reagieren. Microsoft 365 kann diese Arten von Aktivitäten erkennen, auch wenn ein Mitarbeiter ein nicht verwaltetes Gerät verwendet. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
 ||||
 
 Weitere Informationen finden Sie unter [Die wichtigsten 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md).

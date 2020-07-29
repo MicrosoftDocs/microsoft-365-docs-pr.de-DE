@@ -5,9 +5,8 @@ f1.keywords:
 ms.author: samanro
 author: samanro
 manager: scotv
-layout: LandingPage
 ms.audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 für Kampagnen
-ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: d936b05c7668b2fcdeb976e547cde8694b304c27
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "43632035"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429978"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 für Kampagnen
 ===========================
@@ -60,122 +59,25 @@ Weitere Informationen zum Funktionsumfang finden Sie unter [Microsoft 365 Busine
 <a name="get-started"></a>Erste Schritte
 --------------------------
 
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p><b>Gehen Sie folgendermaßen vor, um loszulegen:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Rufen Sie Microsoft 365 Kampagnen ab</a></p>
-                        <P><a href="m365-campaigns-users.md">Erfahren Sie, wie Ihre Benutzer mit Microsoft 365 arbeiten</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Richten Sie Microsoft 365 Kampagnen ein</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+![Roadmap](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Gehen Sie folgendermaßen vor, um loszulegen:**  
+
+- [Rufen Sie Microsoft 365 Kampagnen ab](get-microsoft-365-campaigns.md)
+- [Erfahren Sie, wie Ihre Benutzer mit Microsoft 365 arbeiten](m365-campaigns-users.md)
+- [Richten Sie Microsoft 365 Kampagnen ein](microsoft-365-campaigns-setup-overview.md)
+
+
 
 <a name="solutions-for-your-campaign-or-small-business"></a>Lösungen für Ihre Kampagne oder Ihr kleines Unternehmen
 --------------------------
 
 Nachdem Sie Ihre sichere Microsoft 365-Umgebung eingerichtet haben, können Sie mit den folgenden Lösungen zu arbeiten beginnen:
 
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Erstellen von Teams für die Zusammenarbeit</h3>
-                        <p>Schaffen Sie mit Microsoft Teams einen Raum für die Kommunikation und Zusammenarbeit mit spezifischen Teams für wichtige Mitarbeiter, alle Mitarbeiter, und Partner oder Lieferanten.</p>
-                        <p><a href="create-teams-for-collaboration.md">Erstellen Sie Ihr Team</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Einrichten von Online-Besprechungen</h3>
-                        <p>Planen Sie eine Besprechung mit Audio, Video, und dem Austausch von Dateien mit Microsoft Teams.</p>
-                        <p><a href="set-up-meetings.md">Einrichten einer Besprechung</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Verschlüsseln oder beschriften Sie Ihre vertraulichen E-Mails</h3>
-                        <p>Verwenden Sie eine Verschlüsselung oder Vertraulichkeitsbezeichnungen, um E-Mails mit vertraulichen oder sensiblen Informationen zu schützen.</p>
-                        <p><a href="send-encrypted-email.md">Senden verschlüsselter E-Mail-Nachrichten</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Erstellen einer Kommunikationswebsite</h3>
-                        <p>Erstellen Sie mit SharePoint eine Seite für die interne Kommunikation, und geben Sie Ereignisse, Nachrichten, Bilder und mehr für Ihr Team frei.</p>
-                        <p><a href="create-communications-site.md">Erstellen Ihrer Website</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Freigeben von Dateien und Videos</h3>
-                        <p>Speichern Sie Ihre Dateien und Videos in der Cloud, damit sie für alle passenden Benutzer verfügbar sind.</p>
-                        <p><a href="share-files-and-videos.md">Teilen beginnen</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![einer SharePoint-Kommunikationswebsite](../media/sm-m365-democracy-teams-collab.png) | ![einer Onlinebesprechung](../media/m365-democracy-teams-meetings.png) |
+| **Erstellen von Teams für die Zusammenarbeit**: Schaffen Sie mit Microsoft Teams einen Raum für die Kommunikation und Zusammenarbeit mit spezifischen Teams für wichtige Mitarbeiter, alle Mitarbeiter, und Partner oder Lieferanten. [Erstellen Ihres Teams](create-teams-for-collaboration.md) | **Einrichten von Onlinebesprechungen**: Planen Sie eine Besprechung mit Audio, Video, und dem Austausch von Dateien mit Microsoft Teams. [Einrichten einer Besprechung](set-up-meetings.md) |
+| ![Verschlüsselte und bezeichnete E-Mails](../media/sm-m365-campaign-email-encrypt.png) | ![eine SharePoint-Kommunikationswebsite](../media/sm-m365-democracy-comms-site.png) |
+| **Verschlüsseln oder Bezeichnen Ihrer vertraulichen E-Mails**: Verwenden Sie eine Verschlüsselung oder Vertraulichkeitsbezeichnungen, um E-Mails mit vertraulichen oder sensiblen Informationen zu schützen. [Senden verschlüsselter E-Mails](send-encrypted-email.md) | **Erstellen einer Kommunikationswebsite**: Erstellen Sie mit SharePoint eine Seite für die interne Kommunikation, und geben Sie Ereignisse, Nachrichten, Bilder und mehr für Ihr Team frei. [Erstellen Ihrer Website](create-communications-site.md) |
+| ![Teilen einer Datei in Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
+| **Teilen von Dateien und Videos**: Speichern Sie Ihre Dateien und Videos in der Cloud, damit sie für alle passenden Benutzer verfügbar sind. [Teilen beginnen](share-files-and-videos.md) | |
+

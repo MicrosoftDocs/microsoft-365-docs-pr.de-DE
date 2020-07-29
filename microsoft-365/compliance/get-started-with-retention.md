@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 415313ac31fe4ad56f9a476576f14b90d7dd97f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127578"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430233"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -60,12 +60,13 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 
 |Ich möchte...|Dokumentation|
 |----------------|---------------|
-|Aktionen effizient für Ihre Organisation oder nach Standort festlegen, aufbewahren und löschen: <br />– Exchange  <br />– SharePoint  <br />– OneDrive  <br />– Microsoft 365-Gruppen <br />– Skype for Business  <br />– Teams  |[Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md)|
+|Aktionen effizient für Ihre Organisation oder nach Microsoft 365-Dienst festlegen, aufbewahren und löschen: <br />– Exchange  <br />– SharePoint  <br />– OneDrive  <br />– Microsoft 365-Gruppen <br />– Skype for Business  <br />– Microsoft Teams  |[Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md)|
 |Aufbewahrungs- und Löschaktionen für Dokumente und E-Mails manuell von Administratoren und Benutzer anwenden lassen: <br />-  SharePoint <br />– OneDrive <br />– Outlook und Outlook im Web|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Zulassen, dass Seitenadministratoren eine Standardaufbewahrungsbezeichnung für alle Inhalte in einer SharePoint-Bibliothek, einem Ordner oder einer Dokumentenmappe festlegen können|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Zulassen, dass Benutzer mithilfe von Outlook-Regeln eine Aufbewahrungsbezeichnung automatisch auf E-Mails anwenden können|[Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)|
 |Aufbewahrungs- und Löschaktionen automatisch auf Dokumente und E-Mails anwenden |[Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)|
 |Starten Sie den Aufbewahrungszeitraum mit einem bestimmten Ereignis, wie:  <br />– Mitarbeiter verlässt das Unternehmen <br />– Vertrag läuft aus <br />– Ende der Produktlebensdauer| [Aufbewahrung mit Eintritt eines Ereignisses starten](event-driven-retention.md)|
+|Verwalten des Lebenszyklus verschiedener Dokumenttypen in SharePoint| [Verwalten des Lebenszyklus von SharePoint-Dokumenten mit Aufbewahrungsbezeichnungen](auto-apply-retention-labels-scenario.md)|
 |Verwenden einer einzelnen Datensatzverwaltungslösung für Dokumente und E-Mails |[Datensatzverwaltung in Microsoft 365](records-management.md) |
 |Einhaltung der SEC-Richtlinie 17a-4|[Verwenden von Exchange Online und des Security & Compliance Centers, zur Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
