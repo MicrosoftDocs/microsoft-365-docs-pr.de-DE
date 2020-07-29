@@ -19,183 +19,182 @@ ms.assetid: ''
 description: Erfahren Sie mehr über die grundlegenden Schritte zur Problembehandlung, die Sie zur Lösung häufig auftretender Probleme in Office 365 eDiscovery ausführen können.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035667"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434168"
 ---
-# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a><span data-ttu-id="c364d-103">Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme</span><span class="sxs-lookup"><span data-stu-id="c364d-103">Investigate, troubleshoot, and resolve common eDiscovery issues</span></span>
+# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a><span data-ttu-id="2abbb-103">Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme</span><span class="sxs-lookup"><span data-stu-id="2abbb-103">Investigate, troubleshoot, and resolve common eDiscovery issues</span></span>
 
-<span data-ttu-id="c364d-104">In diesem Thema werden grundlegende Schritte zur Problembehandlung beschrieben, die Sie zum Identifizieren und Beheben von Problemen durchführen können, die während einer eDiscovery-Suche oder an einer anderen Stelle im eDiscovery-Prozess auftreten können.</span><span class="sxs-lookup"><span data-stu-id="c364d-104">This topic covers basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process.</span></span> <span data-ttu-id="c364d-105">Das Auflösen einiger dieser Szenarien erfordert Unterstützung durch den Microsoft-Support.</span><span class="sxs-lookup"><span data-stu-id="c364d-105">Resolving some of these scenarios requires help from Microsoft Support.</span></span> <span data-ttu-id="c364d-106">Die Lösungsschritte enthalten Informationen zum Zeitpunkt der Kontaktaufnahme mit dem Microsoft-Support.</span><span class="sxs-lookup"><span data-stu-id="c364d-106">Information on when to contact Microsoft Support is included in the resolution steps.</span></span>
+<span data-ttu-id="2abbb-104">In diesem Thema werden grundlegende Schritte zur Problembehandlung beschrieben, die Sie zum Identifizieren und Beheben von Problemen durchführen können, die während einer eDiscovery-Suche oder an einer anderen Stelle im eDiscovery-Prozess auftreten können.</span><span class="sxs-lookup"><span data-stu-id="2abbb-104">This topic covers basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process.</span></span> <span data-ttu-id="2abbb-105">Das Auflösen einiger dieser Szenarien erfordert Unterstützung durch den Microsoft-Support.</span><span class="sxs-lookup"><span data-stu-id="2abbb-105">Resolving some of these scenarios requires help from Microsoft Support.</span></span> <span data-ttu-id="2abbb-106">Die Lösungsschritte enthalten Informationen zum Zeitpunkt der Kontaktaufnahme mit dem Microsoft-Support.</span><span class="sxs-lookup"><span data-stu-id="2abbb-106">Information on when to contact Microsoft Support is included in the resolution steps.</span></span>
 
-## <a name="errorissue-ambiguous-location"></a><span data-ttu-id="c364d-107">Fehler/Problem: nicht eindeutiger Speicherort</span><span class="sxs-lookup"><span data-stu-id="c364d-107">Error/issue: Ambiguous location</span></span>
+## <a name="errorissue-ambiguous-location"></a><span data-ttu-id="2abbb-107">Fehler/Problem: nicht eindeutiger Speicherort</span><span class="sxs-lookup"><span data-stu-id="2abbb-107">Error/issue: Ambiguous location</span></span>
 
-<span data-ttu-id="c364d-108">Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es sich um doppelte oder widersprüchliche Objekte mit derselben UserID im Verzeichnis Exchange Online Protection (EoP) handelt, wird `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`dieser Fehler angezeigt:.</span><span class="sxs-lookup"><span data-stu-id="c364d-108">If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`.</span></span> 
+<span data-ttu-id="2abbb-108">Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es sich um doppelte oder widersprüchliche Objekte mit derselben UserID im Verzeichnis Exchange Online Protection (EoP) handelt, wird dieser Fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .</span><span class="sxs-lookup"><span data-stu-id="2abbb-108">If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`.</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="c364d-109">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-109">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-109">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-109">Resolution</span></span>
 
-<span data-ttu-id="c364d-110">Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.</span><span class="sxs-lookup"><span data-stu-id="c364d-110">Check for duplicate users or distribution list with the same user ID.</span></span>
+<span data-ttu-id="2abbb-110">Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.</span><span class="sxs-lookup"><span data-stu-id="2abbb-110">Check for duplicate users or distribution list with the same user ID.</span></span>
 
-1. <span data-ttu-id="c364d-111">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)her.</span><span class="sxs-lookup"><span data-stu-id="c364d-111">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
+1. <span data-ttu-id="2abbb-111">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)her.</span><span class="sxs-lookup"><span data-stu-id="2abbb-111">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="c364d-112">Führen Sie den folgenden Befehl aus, um alle Instanzen des Benutzernamens abzurufen:</span><span class="sxs-lookup"><span data-stu-id="c364d-112">Run the following command to retrieve all instances of the username:</span></span>
+2. <span data-ttu-id="2abbb-112">Führen Sie den folgenden Befehl aus, um alle Instanzen des Benutzernamens abzurufen:</span><span class="sxs-lookup"><span data-stu-id="2abbb-112">Run the following command to retrieve all instances of the username:</span></span>
 
     ```powershell
     Get-Recipient <username>
     ```
 
-   <span data-ttu-id="c364d-113">Die Ausgabe für "useralias@contoso.com" würde etwa wie folgt aussehen:</span><span class="sxs-lookup"><span data-stu-id="c364d-113">The output for 'useralias@contoso.com' would be similar to the following:</span></span>
+   <span data-ttu-id="2abbb-113">Die Ausgabe für "useralias@contoso.com" würde etwa wie folgt aussehen:</span><span class="sxs-lookup"><span data-stu-id="2abbb-113">The output for 'useralias@contoso.com' would be similar to the following:</span></span>
 
    > 
-   > |<span data-ttu-id="c364d-114">Name</span><span class="sxs-lookup"><span data-stu-id="c364d-114">Name</span></span>  |<span data-ttu-id="c364d-115">RecipientType</span><span class="sxs-lookup"><span data-stu-id="c364d-115">RecipientType</span></span>  |
-   > |---------|---------|
-   > |<span data-ttu-id="c364d-116">Alias, Benutzer</span><span class="sxs-lookup"><span data-stu-id="c364d-116">Alias, User</span></span>     |<span data-ttu-id="c364d-117">MailUser</span><span class="sxs-lookup"><span data-stu-id="c364d-117">MailUser</span></span>         |
-   > |<span data-ttu-id="c364d-118">Alias, Benutzer</span><span class="sxs-lookup"><span data-stu-id="c364d-118">Alias, User</span></span>     |<span data-ttu-id="c364d-119">Benutzer</span><span class="sxs-lookup"><span data-stu-id="c364d-119">User</span></span>         |
+   > |<span data-ttu-id="2abbb-114">Name</span><span class="sxs-lookup"><span data-stu-id="2abbb-114">Name</span></span>|<span data-ttu-id="2abbb-115">RecipientType</span><span class="sxs-lookup"><span data-stu-id="2abbb-115">RecipientType</span></span>|
+   > |---|---|
+   > |<span data-ttu-id="2abbb-116">Alias, Benutzer</span><span class="sxs-lookup"><span data-stu-id="2abbb-116">Alias, User</span></span>|<span data-ttu-id="2abbb-117">MailUser</span><span class="sxs-lookup"><span data-stu-id="2abbb-117">MailUser</span></span>|
+   > |<span data-ttu-id="2abbb-118">Alias, Benutzer</span><span class="sxs-lookup"><span data-stu-id="2abbb-118">Alias, User</span></span>|<span data-ttu-id="2abbb-119">Benutzer</span><span class="sxs-lookup"><span data-stu-id="2abbb-119">User</span></span>|
 
-3. <span data-ttu-id="c364d-120">Wenn mehrere Benutzer zurückgegeben werden, suchen und beheben Sie das Konflikt verursachende Objekt.</span><span class="sxs-lookup"><span data-stu-id="c364d-120">If multiple users are returned, locate and fix the conflicting object.</span></span>
+3. <span data-ttu-id="2abbb-120">Wenn mehrere Benutzer zurückgegeben werden, suchen und beheben Sie das Konflikt verursachende Objekt.</span><span class="sxs-lookup"><span data-stu-id="2abbb-120">If multiple users are returned, locate and fix the conflicting object.</span></span>
 
-## <a name="errorissue-search-fails-on-specific-locations"></a><span data-ttu-id="c364d-121">Fehler/Problem: Suchfehler an bestimmten Speicherorten</span><span class="sxs-lookup"><span data-stu-id="c364d-121">Error/issue: Search fails on specific locations</span></span>
+## <a name="errorissue-search-fails-on-specific-locations"></a><span data-ttu-id="2abbb-121">Fehler/Problem: Suchfehler an bestimmten Speicherorten</span><span class="sxs-lookup"><span data-stu-id="2abbb-121">Error/issue: Search fails on specific locations</span></span>
 
-<span data-ttu-id="c364d-122">Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:</span><span class="sxs-lookup"><span data-stu-id="c364d-122">An eDiscovery or content search may yield the following error:</span></span>
-><span data-ttu-id="c364d-123">Diese Suche wurde mit (#) Fehlern abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="c364d-123">This search completed with (#) errors.</span></span>  <span data-ttu-id="c364d-124">Möchten Sie die Suche an den fehlgeschlagenen Speicherorten wiederholen?</span><span class="sxs-lookup"><span data-stu-id="c364d-124">Would you like to retry the search on the failed locations?</span></span>
+<span data-ttu-id="2abbb-122">Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:</span><span class="sxs-lookup"><span data-stu-id="2abbb-122">An eDiscovery or content search may yield the following error:</span></span>
+><span data-ttu-id="2abbb-123">Diese Suche wurde mit (#) Fehlern abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="2abbb-123">This search completed with (#) errors.</span></span>  <span data-ttu-id="2abbb-124">Möchten Sie die Suche an den fehlgeschlagenen Speicherorten wiederholen?</span><span class="sxs-lookup"><span data-stu-id="2abbb-124">Would you like to retry the search on the failed locations?</span></span>
 
 ![Screenshot der suchspezifischen Speicherort Fehler](../media/edisc-tshoot-specific-location-search-fails.png)
 
-### <a name="resolution"></a><span data-ttu-id="c364d-126">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-126">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-126">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-126">Resolution</span></span>
 
-<span data-ttu-id="c364d-127">Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und die Suche dann nur für die fehlerhaften Speicherorte erneut ausführen.</span><span class="sxs-lookup"><span data-stu-id="c364d-127">If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.</span></span>
+<span data-ttu-id="2abbb-127">Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und die Suche dann nur für die fehlerhaften Speicherorte erneut ausführen.</span><span class="sxs-lookup"><span data-stu-id="2abbb-127">If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.</span></span>
 
-1. <span data-ttu-id="c364d-128">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-128">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
+1. <span data-ttu-id="2abbb-128">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-128">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
 
-    ```powershell
-    Get-ComplianceSearch <searchname> | FL 
-    ```
+   ```powershell
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
-2. <span data-ttu-id="c364d-129">Zeigen Sie in der PowerShell-Ausgabe die fehlerhaften Speicherorte im Feld Fehler oder von den Statusdetails in dem Fehler aus der Suchausgabe an.</span><span class="sxs-lookup"><span data-stu-id="c364d-129">From the PowerShell output, view the failed locations in the errors field or from the status details in the error from the search output.</span></span>
+2. <span data-ttu-id="2abbb-129">Zeigen Sie in der PowerShell-Ausgabe die fehlerhaften Speicherorte im Feld Fehler oder von den Statusdetails in dem Fehler aus der Suchausgabe an.</span><span class="sxs-lookup"><span data-stu-id="2abbb-129">From the PowerShell output, view the failed locations in the errors field or from the status details in the error from the search output.</span></span>
 
-3. <span data-ttu-id="c364d-130">Wiederholen Sie die eDiscovery-Suche nur auf den fehlerhaften Speicherorten.</span><span class="sxs-lookup"><span data-stu-id="c364d-130">Retry the eDiscovery search on the failed locations only.</span></span>
+3. <span data-ttu-id="2abbb-130">Wiederholen Sie die eDiscovery-Suche nur auf den fehlerhaften Speicherorten.</span><span class="sxs-lookup"><span data-stu-id="2abbb-130">Retry the eDiscovery search on the failed locations only.</span></span>
 
-4. <span data-ttu-id="c364d-131">Wenn Sie diese Fehler weiterhin erhalten, finden Sie weitere Informationen zur Problembehandlung unter wieder [holen fehlgeschlagener Speicherorte](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) .</span><span class="sxs-lookup"><span data-stu-id="c364d-131">If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.</span></span>
+4. <span data-ttu-id="2abbb-131">Wenn Sie diese Fehler weiterhin erhalten, finden Sie weitere Informationen zur Problembehandlung unter wieder [holen fehlgeschlagener Speicherorte](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) .</span><span class="sxs-lookup"><span data-stu-id="2abbb-131">If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.</span></span>
 
-## <a name="errorissue-file-not-found"></a><span data-ttu-id="c364d-132">Fehler/Problem: Datei nicht gefunden</span><span class="sxs-lookup"><span data-stu-id="c364d-132">Error/issue: File not found</span></span>
+## <a name="errorissue-file-not-found"></a><span data-ttu-id="2abbb-132">Fehler/Problem: Datei nicht gefunden</span><span class="sxs-lookup"><span data-stu-id="2abbb-132">Error/issue: File not found</span></span>
 
-<span data-ttu-id="c364d-133">Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird `File Not Found` möglicherweise die Fehlermeldung angezeigt, obwohl sich die Datei auf der Website befindet.</span><span class="sxs-lookup"><span data-stu-id="c364d-133">When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.</span></span> <span data-ttu-id="c364d-134">Dieser Fehler tritt in den Export Warnungen und Errors. CSV oder Skip Items. CSV auf.</span><span class="sxs-lookup"><span data-stu-id="c364d-134">This error will be in the export warnings and errors.csv or skipped items.csv.</span></span> <span data-ttu-id="c364d-135">Dies kann vorkommen, wenn die Datei nicht auf der Website gefunden werden kann oder wenn der Index veraltet ist.</span><span class="sxs-lookup"><span data-stu-id="c364d-135">This may occur if the file can't be found on the site or if the index is out of date.</span></span> <span data-ttu-id="c364d-136">Hier ist der Text eines tatsächlichen Fehlers (mit Nachdruck hinzugefügt).</span><span class="sxs-lookup"><span data-stu-id="c364d-136">Here's the text of an actual error (with emphasis added).</span></span>
-  
-> <span data-ttu-id="c364d-137">28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten.</span><span class="sxs-lookup"><span data-stu-id="c364d-137">28.06.2019 10:02:19_FailedToExportItem_Failed to download content.</span></span> <span data-ttu-id="c364d-138">Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document.</span><span class="sxs-lookup"><span data-stu-id="c364d-138">Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document.</span></span> <span data-ttu-id="c364d-139">Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span><span class="sxs-lookup"><span data-stu-id="c364d-139">Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span></span> <span data-ttu-id="c364d-140">ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***.</span><span class="sxs-lookup"><span data-stu-id="c364d-140">ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***.</span></span> <span data-ttu-id="c364d-141">unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---</span><span class="sxs-lookup"><span data-stu-id="c364d-141">at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---</span></span>
+<span data-ttu-id="2abbb-133">Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird möglicherweise die Fehlermeldung angezeigt, `File Not Found` Obwohl sich die Datei auf der Website befindet.</span><span class="sxs-lookup"><span data-stu-id="2abbb-133">When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.</span></span> <span data-ttu-id="2abbb-134">Dieser Fehler tritt in den Export Warnungen und-errors.csv auf oder wird übersprungen items.csv.</span><span class="sxs-lookup"><span data-stu-id="2abbb-134">This error will be in the export warnings and errors.csv or skipped items.csv.</span></span> <span data-ttu-id="2abbb-135">Dies kann vorkommen, wenn die Datei nicht auf der Website gefunden werden kann oder wenn der Index veraltet ist.</span><span class="sxs-lookup"><span data-stu-id="2abbb-135">This may occur if the file can't be found on the site or if the index is out of date.</span></span> <span data-ttu-id="2abbb-136">Hier ist der Text eines tatsächlichen Fehlers (mit Nachdruck hinzugefügt).</span><span class="sxs-lookup"><span data-stu-id="2abbb-136">Here's the text of an actual error (with emphasis added).</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="c364d-142">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-142">Resolution</span></span>
+> <span data-ttu-id="2abbb-137">28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten.</span><span class="sxs-lookup"><span data-stu-id="2abbb-137">28.06.2019 10:02:19_FailedToExportItem_Failed to download content.</span></span> <span data-ttu-id="2abbb-138">Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document.</span><span class="sxs-lookup"><span data-stu-id="2abbb-138">Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document.</span></span> <span data-ttu-id="2abbb-139">Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span><span class="sxs-lookup"><span data-stu-id="2abbb-139">Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span></span> <span data-ttu-id="2abbb-140">ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***.</span><span class="sxs-lookup"><span data-stu-id="2abbb-140">ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***.</span></span> <span data-ttu-id="2abbb-141">unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---</span><span class="sxs-lookup"><span data-stu-id="2abbb-141">at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---</span></span>
 
-1. <span data-ttu-id="c364d-143">Überprüfen Sie die in der Suche identifizierte Position, um sicherzustellen, dass der Speicherort der Datei richtig ist und an den Suchpfaden hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="c364d-143">Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-142">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-142">Resolution</span></span>
 
-2. <span data-ttu-id="c364d-144">Verwenden Sie die Verfahren unter [Manuelles anfordern des Durchforstens und erneuten Indizierens einer Website, einer Bibliothek oder einer Liste](https://docs.microsoft.com/sharepoint/crawl-site-content) zum Neuindizieren der Website.</span><span class="sxs-lookup"><span data-stu-id="c364d-144">Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.</span></span>
+1. <span data-ttu-id="2abbb-143">Überprüfen Sie die in der Suche identifizierte Position, um sicherzustellen, dass der Speicherort der Datei richtig ist und an den Suchpfaden hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="2abbb-143">Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.</span></span>
 
-## <a name="errorissue-search-fails-because-recipient-is-not-found"></a><span data-ttu-id="c364d-145">Fehler/Problem: die Suche schlägt fehl, da der Empfänger nicht gefunden wurde.</span><span class="sxs-lookup"><span data-stu-id="c364d-145">Error/issue: Search fails because recipient is not found</span></span>
+2. <span data-ttu-id="2abbb-144">Verwenden Sie die Verfahren unter [Manuelles anfordern des Durchforstens und erneuten Indizierens einer Website, einer Bibliothek oder einer Liste](https://docs.microsoft.com/sharepoint/crawl-site-content) zum Neuindizieren der Website.</span><span class="sxs-lookup"><span data-stu-id="2abbb-144">Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.</span></span>
 
-<span data-ttu-id="c364d-146">Bei einer eDiscovery `recipient not found`-Suche tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="c364d-146">An eDiscovery search fails with error the `recipient not found`.</span></span> <span data-ttu-id="c364d-147">Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.</span><span class="sxs-lookup"><span data-stu-id="c364d-147">This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.</span></span>
+## <a name="errorissue-search-fails-because-recipient-is-not-found"></a><span data-ttu-id="2abbb-145">Fehler/Problem: die Suche schlägt fehl, da der Empfänger nicht gefunden wurde.</span><span class="sxs-lookup"><span data-stu-id="2abbb-145">Error/issue: Search fails because recipient is not found</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="c364d-148">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-148">Resolution</span></span>
+<span data-ttu-id="2abbb-146">Bei einer eDiscovery-Suche tritt ein Fehler auf `recipient not found` .</span><span class="sxs-lookup"><span data-stu-id="2abbb-146">An eDiscovery search fails with error the `recipient not found`.</span></span> <span data-ttu-id="2abbb-147">Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.</span><span class="sxs-lookup"><span data-stu-id="2abbb-147">This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.</span></span>
 
-1. <span data-ttu-id="c364d-149">Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) her.</span><span class="sxs-lookup"><span data-stu-id="c364d-149">Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-148">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-148">Resolution</span></span>
 
-2. <span data-ttu-id="c364d-150">Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Schutz synchronisiert ist:</span><span class="sxs-lookup"><span data-stu-id="c364d-150">Run the following command to check if the user is synced to Exchange Online Protection:</span></span>
+1. <span data-ttu-id="2abbb-149">Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) her.</span><span class="sxs-lookup"><span data-stu-id="2abbb-149">Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
 
-    ```powershell
-    Get-Recipient <userId> | FL
-    ```
+2. <span data-ttu-id="2abbb-150">Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Schutz synchronisiert ist:</span><span class="sxs-lookup"><span data-stu-id="2abbb-150">Run the following command to check if the user is synced to Exchange Online Protection:</span></span>
 
-3. <span data-ttu-id="c364d-151">Es sollte ein e-Mail-Benutzerobjekt für die Benutzerfrage geben.</span><span class="sxs-lookup"><span data-stu-id="c364d-151">There should be a mail user object for the user question.</span></span> <span data-ttu-id="c364d-152">Wenn Nothing zurückgegeben wird, überprüfen Sie das User-Objekt.</span><span class="sxs-lookup"><span data-stu-id="c364d-152">If nothing is returned, investigate the user object.</span></span> <span data-ttu-id="c364d-153">Wenden Sie sich an den Microsoft-Support, wenn das Objekt nicht synchronisiert werden kann.</span><span class="sxs-lookup"><span data-stu-id="c364d-153">Contact Microsoft Support if the object can't be synced.</span></span>
+   ```powershell
+   Get-Recipient <userId> | FL
+   ```
 
-## <a name="errorissue-exporting-search-results-is-slow"></a><span data-ttu-id="c364d-154">Fehler/Problem: das Exportieren von Suchergebnissen ist langsam</span><span class="sxs-lookup"><span data-stu-id="c364d-154">Error/issue: Exporting search results is slow</span></span>
+3. <span data-ttu-id="2abbb-151">Es sollte ein e-Mail-Benutzerobjekt für die Benutzerfrage geben.</span><span class="sxs-lookup"><span data-stu-id="2abbb-151">There should be a mail user object for the user question.</span></span> <span data-ttu-id="2abbb-152">Wenn Nothing zurückgegeben wird, überprüfen Sie das User-Objekt.</span><span class="sxs-lookup"><span data-stu-id="2abbb-152">If nothing is returned, investigate the user object.</span></span> <span data-ttu-id="2abbb-153">Wenden Sie sich an den Microsoft-Support, wenn das Objekt nicht synchronisiert werden kann.</span><span class="sxs-lookup"><span data-stu-id="2abbb-153">Contact Microsoft Support if the object can't be synced.</span></span>
 
-<span data-ttu-id="c364d-155">Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Security and Compliance Center dauert der Download länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="c364d-155">When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.</span></span>  <span data-ttu-id="c364d-156">Sie können überprüfen, ob die Datenmenge heruntergeladen und möglicherweise die Exportgeschwindigkeit erhöht werden soll.</span><span class="sxs-lookup"><span data-stu-id="c364d-156">You can check to see the amount of data to be download and possibly increase the export speed.</span></span>
+## <a name="errorissue-exporting-search-results-is-slow"></a><span data-ttu-id="2abbb-154">Fehler/Problem: das Exportieren von Suchergebnissen ist langsam</span><span class="sxs-lookup"><span data-stu-id="2abbb-154">Error/issue: Exporting search results is slow</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="c364d-157">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-157">Resolution</span></span>
+<span data-ttu-id="2abbb-155">Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Security and Compliance Center dauert der Download länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="2abbb-155">When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.</span></span>  <span data-ttu-id="2abbb-156">Sie können überprüfen, ob die Datenmenge heruntergeladen und möglicherweise die Exportgeschwindigkeit erhöht werden soll.</span><span class="sxs-lookup"><span data-stu-id="2abbb-156">You can check to see the amount of data to be download and possibly increase the export speed.</span></span>
 
-1.    <span data-ttu-id="c364d-158">Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).</span><span class="sxs-lookup"><span data-stu-id="c364d-158">Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-157">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-157">Resolution</span></span>
 
-2.    <span data-ttu-id="c364d-159">Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-159">If you still have issues, connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
+1. <span data-ttu-id="2abbb-158">Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).</span><span class="sxs-lookup"><span data-stu-id="2abbb-158">Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).</span></span>
 
-    ```powershell
-    Get-ComplianceSearch <searchname> | FL
-    ```
+2. <span data-ttu-id="2abbb-159">Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-159">If you still have issues, connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
 
-4. <span data-ttu-id="c364d-160">Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="c364d-160">Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.</span></span>
+   ```powershell
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
-5. <span data-ttu-id="c364d-161">Führen Sie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-161">Run the following command:</span></span>
+3. <span data-ttu-id="2abbb-160">Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="2abbb-160">Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.</span></span>
+
+4. <span data-ttu-id="2abbb-161">Führen Sie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-161">Run the following command:</span></span>
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-6. <span data-ttu-id="c364d-162">Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.</span><span class="sxs-lookup"><span data-stu-id="c364d-162">In the results field, find the data that has been exported and view any errors encountered.</span></span>
+5. <span data-ttu-id="2abbb-162">Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.</span><span class="sxs-lookup"><span data-stu-id="2abbb-162">In the results field, find the data that has been exported and view any errors encountered.</span></span>
 
-7. <span data-ttu-id="c364d-163">Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.</span><span class="sxs-lookup"><span data-stu-id="c364d-163">Check the trace.log file located in the directory that you exported the content to for any errors.</span></span>
+6. <span data-ttu-id="2abbb-163">Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.</span><span class="sxs-lookup"><span data-stu-id="2abbb-163">Check the trace.log file located in the directory that you exported the content to for any errors.</span></span>
 
-## <a name="errorissue-internal-server-error-500-occurred"></a><span data-ttu-id="c364d-164">Fehler/Problem: "Interner Serverfehler (500) aufgetreten"</span><span class="sxs-lookup"><span data-stu-id="c364d-164">Error/issue: "Internal server error (500) occurred"</span></span>
+## <a name="errorissue-internal-server-error-500-occurred"></a><span data-ttu-id="2abbb-164">Fehler/Problem: "Interner Serverfehler (500) aufgetreten"</span><span class="sxs-lookup"><span data-stu-id="2abbb-164">Error/issue: "Internal server error (500) occurred"</span></span>
 
-<span data-ttu-id="c364d-165">Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlschlägt und Fehler wie "Internal Server Error (500)" aufgetreten sind, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicher Orten erneut ausführen.</span><span class="sxs-lookup"><span data-stu-id="c364d-165">When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.</span></span>
+<span data-ttu-id="2abbb-165">Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlschlägt und Fehler wie "Internal Server Error (500)" aufgetreten sind, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicher Orten erneut ausführen.</span><span class="sxs-lookup"><span data-stu-id="2abbb-165">When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.</span></span>
 
 ![Interner Serverfehler 500 Screenshot](../media/edisc-tshoot-error-500.png)
 
-### <a name="resolution"></a><span data-ttu-id="c364d-167">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-167">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-167">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-167">Resolution</span></span>
 
-1. <span data-ttu-id="c364d-168">Unterbrechen Sie die Suche in kleinere suchen, und führen Sie die Suche erneut aus.</span><span class="sxs-lookup"><span data-stu-id="c364d-168">Break the search into smaller searches and run the search again.</span></span>  <span data-ttu-id="c364d-169">Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.</span><span class="sxs-lookup"><span data-stu-id="c364d-169">Try using a smaller date range or limit the number of locations being searched.</span></span>
+1. <span data-ttu-id="2abbb-168">Unterbrechen Sie die Suche in kleinere suchen, und führen Sie die Suche erneut aus.</span><span class="sxs-lookup"><span data-stu-id="2abbb-168">Break the search into smaller searches and run the search again.</span></span>  <span data-ttu-id="2abbb-169">Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.</span><span class="sxs-lookup"><span data-stu-id="2abbb-169">Try using a smaller date range or limit the number of locations being searched.</span></span>
 
-2. <span data-ttu-id="c364d-170">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-170">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
+2. <span data-ttu-id="2abbb-170">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-170">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:</span></span>
 
-    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
-    Get-ComplianceSearch <searchname> | FL
-    ```
+   ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
-3. <span data-ttu-id="c364d-171">Überprüfen Sie die Ausgabe auf Ergebnisse und Fehler.</span><span class="sxs-lookup"><span data-stu-id="c364d-171">Examine the output for results and errors.</span></span>
+3. <span data-ttu-id="2abbb-171">Überprüfen Sie die Ausgabe auf Ergebnisse und Fehler.</span><span class="sxs-lookup"><span data-stu-id="2abbb-171">Examine the output for results and errors.</span></span>
 
-4. <span data-ttu-id="c364d-172">Überprüfen Sie die Datei Trace. log.</span><span class="sxs-lookup"><span data-stu-id="c364d-172">Examine the trace.log file.</span></span> <span data-ttu-id="c364d-173">Sie befindet sich im gleichen Ordner, in den Sie die Suchergebnisse exportiert haben.</span><span class="sxs-lookup"><span data-stu-id="c364d-173">It's located  in the same folder that you exported the search results to.</span></span>
+4. <span data-ttu-id="2abbb-172">Überprüfen Sie die Datei Trace. log.</span><span class="sxs-lookup"><span data-stu-id="2abbb-172">Examine the trace.log file.</span></span> <span data-ttu-id="2abbb-173">Sie befindet sich im gleichen Ordner, in den Sie die Suchergebnisse exportiert haben.</span><span class="sxs-lookup"><span data-stu-id="2abbb-173">It's located  in the same folder that you exported the search results to.</span></span>
 
-5. <span data-ttu-id="c364d-174">Wenden Sie sich an den Support von Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c364d-174">Contact Microsoft Support.</span></span>
+5. <span data-ttu-id="2abbb-174">Wenden Sie sich an den Support von Microsoft.</span><span class="sxs-lookup"><span data-stu-id="2abbb-174">Contact Microsoft Support.</span></span>
 
-## <a name="errorissue-holds-dont-sync"></a><span data-ttu-id="c364d-175">Fehler/Problem: hält keine Synchronisierung</span><span class="sxs-lookup"><span data-stu-id="c364d-175">Error/issue: Holds don't sync</span></span>
+## <a name="errorissue-holds-dont-sync"></a><span data-ttu-id="2abbb-175">Fehler/Problem: hält keine Synchronisierung</span><span class="sxs-lookup"><span data-stu-id="2abbb-175">Error/issue: Holds don't sync</span></span>
 
-<span data-ttu-id="c364d-176">eDiscovery Case Hold Policy Sync-Verteilungsfehler.</span><span class="sxs-lookup"><span data-stu-id="c364d-176">eDiscovery Case Hold Policy Sync Distribution error.</span></span> <span data-ttu-id="c364d-177">Der Fehler lautet:</span><span class="sxs-lookup"><span data-stu-id="c364d-177">The error reads:</span></span>
+<span data-ttu-id="2abbb-176">eDiscovery Case Hold Policy Sync-Verteilungsfehler.</span><span class="sxs-lookup"><span data-stu-id="2abbb-176">eDiscovery Case Hold Policy Sync Distribution error.</span></span> <span data-ttu-id="2abbb-177">Der Fehler lautet:</span><span class="sxs-lookup"><span data-stu-id="2abbb-177">The error reads:</span></span>
 
-> <span data-ttu-id="c364d-178">"Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="c364d-178">"Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="c364d-179">Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "</span><span class="sxs-lookup"><span data-stu-id="c364d-179">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
+> <span data-ttu-id="2abbb-178">"Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="2abbb-178">"Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="2abbb-179">Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "</span><span class="sxs-lookup"><span data-stu-id="2abbb-179">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="c364d-180">Auflösung</span><span class="sxs-lookup"><span data-stu-id="c364d-180">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="2abbb-180">Lösung</span><span class="sxs-lookup"><span data-stu-id="2abbb-180">Resolution</span></span>
 
-1.    <span data-ttu-id="c364d-181">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-181">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:</span></span>
+1. <span data-ttu-id="2abbb-181">Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-181">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:</span></span>
 
-    ```powershell
-    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
-    ```
+   ```powershell
+   Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+   ```
 
-    <span data-ttu-id="c364d-182">Führen Sie für eine Aufbewahrungsrichtlinie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="c364d-182">For a retention policy, run the following command:</span></span>
+    <span data-ttu-id="2abbb-182">Führen Sie für eine Aufbewahrungsrichtlinie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="2abbb-182">For a retention policy, run the following command:</span></span>
 
-    ```powershell
-    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
-    ```
+   ```powershell
+   Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
+   ```
 
-2. <span data-ttu-id="c364d-183">Überprüfen Sie den Wert im Parameter DistributionDetail auf Fehler wie die folgenden:</span><span class="sxs-lookup"><span data-stu-id="c364d-183">Examine the value in the DistributionDetail parameter for errors like the following:</span></span>
- 
-   > <span data-ttu-id="c364d-184">Fehler: Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="c364d-184">Error: Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="c364d-185">Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "</span><span class="sxs-lookup"><span data-stu-id="c364d-185">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span> 
-   
-3. <span data-ttu-id="c364d-186">Versuchen Sie, den RetryDistribution-Parameter für die betreffende Richtlinie auszuführen:</span><span class="sxs-lookup"><span data-stu-id="c364d-186">Try running the RetryDistribution parameter on the policy in question:</span></span>
-   
-    
-    <span data-ttu-id="c364d-187">Für eDiscovery Case Holds:</span><span class="sxs-lookup"><span data-stu-id="c364d-187">For eDiscovery case holds:</span></span>
+2. <span data-ttu-id="2abbb-183">Überprüfen Sie den Wert im Parameter DistributionDetail auf Fehler wie die folgenden:</span><span class="sxs-lookup"><span data-stu-id="2abbb-183">Examine the value in the DistributionDetail parameter for errors like the following:</span></span>
 
-    ```powershell
-    Set-CaseHoldPolicy <policyname> -RetryDistribution
-    ```
+   > <span data-ttu-id="2abbb-184">Fehler: Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet.</span><span class="sxs-lookup"><span data-stu-id="2abbb-184">Error: Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="2abbb-185">Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "</span><span class="sxs-lookup"><span data-stu-id="2abbb-185">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
 
-    <span data-ttu-id="c364d-188">Für Aufbewahrungsrichtlinien:</span><span class="sxs-lookup"><span data-stu-id="c364d-188">For retention policies:</span></span>
+3. <span data-ttu-id="2abbb-186">Versuchen Sie, den RetryDistribution-Parameter für die betreffende Richtlinie auszuführen:</span><span class="sxs-lookup"><span data-stu-id="2abbb-186">Try running the RetryDistribution parameter on the policy in question:</span></span>
 
-    ```powershell
-    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
-    ``` 
+   <span data-ttu-id="2abbb-187">Für eDiscovery Case Holds:</span><span class="sxs-lookup"><span data-stu-id="2abbb-187">For eDiscovery case holds:</span></span>
 
-4. <span data-ttu-id="c364d-189">Wenden Sie sich an den Support von Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c364d-189">Contact Microsoft Support.</span></span>
+   ```powershell
+   Set-CaseHoldPolicy <policyname> -RetryDistribution
+   ```
 
-## <a name="see-also"></a><span data-ttu-id="c364d-190">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c364d-190">See Also</span></span>
+   <span data-ttu-id="2abbb-188">Für Aufbewahrungsrichtlinien:</span><span class="sxs-lookup"><span data-stu-id="2abbb-188">For retention policies:</span></span>
 
-- [<span data-ttu-id="c364d-191">Tipps zum Vermeiden von Inhaltsspeicherort Fehlern</span><span class="sxs-lookup"><span data-stu-id="c364d-191">Tips to avoid content location errors</span></span>](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+   ```powershell
+   Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+   ```
+
+4. <span data-ttu-id="2abbb-189">Wenden Sie sich an den Support von Microsoft.</span><span class="sxs-lookup"><span data-stu-id="2abbb-189">Contact Microsoft Support.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="2abbb-190">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2abbb-190">See Also</span></span>
+
+- [<span data-ttu-id="2abbb-191">Tipps zum Vermeiden von Inhaltsspeicherort Fehlern</span><span class="sxs-lookup"><span data-stu-id="2abbb-191">Tips to avoid content location errors</span></span>](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
