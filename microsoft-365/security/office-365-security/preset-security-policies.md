@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie Standard mäßige und strenge Richtlinieneinstellungen über die Schutzfunktionen von Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (ATP) anwenden können.
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389872"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430399"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Voreingestellte Sicherheitsrichtlinien in EoP und Office 365 ATP
 
@@ -88,9 +88,10 @@ Wenn mehrere Richtlinien auf einen Benutzer angewendet werden, wird die folgende
 
 1. **Strenge Schutz** voreingestellte Sicherheitsrichtlinie
 2. **Standard Schutz** vordefinierte Sicherheitsrichtlinie
-3. Andere verwandte Richtlinien.
+3. Benutzerdefinierte Sicherheitsrichtlinien
+4. Standardsicherheitsrichtlinien
 
-Mit anderen Worten: die Einstellungen der **strengen Schutz** Richtlinie setzen die Einstellungen der **Standard Schutz** Richtlinie außer Kraft, die die Einstellungen aus anderen verwandten Richtlinien außer Kraft setzt.
+Mit anderen Worten: mit den Einstellungen der **strengen Schutz** Richtlinie werden die Einstellungen der **Standardschutz** Richtlinie außer Kraft gesetzt, die die Einstellungen aus einer benutzerdefinierten Richtlinie außer Kraft setzt, die die Einstellungen aus der Standardrichtlinie außer Kraft setzt.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Zuweisen vordefinierter Sicherheitsrichtlinien zu Benutzern
 

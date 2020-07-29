@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Beim Einrichten Ihrer Richtlinien für das Feature "ATP-sichere Anlagen", wählen Sie die Option "Dynamische Zustellung" aus, um Nachrichtenverzögerungen zu vermeiden und Personen in die Lage zu versetzen, Anlagen in der Vorschau zu betrachten, die gescannt werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819352"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430351"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit ATP-sicheren Anlagen
 
@@ -68,20 +68,20 @@ Nehmen wir an, dass eine Organisation die Option "Dynamische Zustellung" für ih
 
 ## <a name="additional-considerations"></a>Zusätzliche Überlegungen
 
-Es gibt bestimmte Szenarien, in denen die dynamische Zustellung nicht unterstützt wird. Hierzu gehören:
+Es gibt bestimmte Szenarien, in denen sichere Anlagen (einschließlich dynamischer Zustellung wird nicht unterstützt). Zu diesen zählen:
 
-- E-Mail-Nachrichten befinden sich in öffentlichen Ordnern
+- E-Mail-Nachrichten in öffentlichen Ordnern.
 
-- E-Mail-Nachrichten werden über benutzerdefinierte Regeln auswärts und dann zurück in das Postfach geroutet
+- E-Mail-Nachrichten, die mithilfe benutzerdefinierter Regeln aus dem Postfach des Benutzers weitergeleitet werden und dann wieder zurück an dieses gesendet werden.
 
-- E-Mail-Nachrichten werden (automatisch oder manuell) aus dem gehosteten Postfach an andere Speicherorte einschließlich Archivordner verschoben
+- E-Mail-Nachrichten, die (automatisch oder manuell) aus dem gehosteten Postfach und an andere Speicherorte verschoben werden, einschließlich Archivordnern.
 
-- Gelöschte E-Mail-Nachrichten
+- E-Mail-Nachrichten, die gelöscht werden.
 
-- Der Suchordner im Postfach eines Benutzers befindet sich im Status "Fehler"
+- Der Post Fach Suchordner eines Benutzers, der einen Fehlerzustand aufweist.
 
-- Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. Um dieses Problem zu beheben, ziehen Sie [Nachrichten mit Anlagen werden nicht zugestellt, wenn die ATP-Option "Dynamische Zustellung" und Exclaimer verwendet werden](https://support.microsoft.com/help/4014438) zurate.
+- Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. Um dies zu beheben, finden Sie unter [Nachrichten mit Anlagen werden nicht zugestellt, wenn die dynamische Bereitstellung von ATP verwendet](https://support.microsoft.com/help/4014438)wird.
 
-- Mit [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md) verschlüsselte Nachrichten
+- Mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)verschlüsselte Nachrichten).
 
-- In Fällen, in denen die dynamische Zustellung nicht unterstützt wird, werden E-Mail-Nachrichten nicht durch das Feature "ATP-sichere Anlagen" gescannt. Allerdings wird die Zustellung von E-Mail-Nachrichten mit Anlagen, die URLs enthalten, abhängig von der Konfiguration Ihrer [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) überprüft. In diesen Fällen werden URLs in E-Mail-Nachrichten und Office-Dateien überprüft.
+- In Fällen, in denen die dynamische Zustellung nicht unterstützt wird, werden keine e-Mail-Nachrichten durch sichere Anlagen überprüft. Allerdings wird die Zustellung von E-Mail-Nachrichten mit Anlagen, die URLs enthalten, abhängig von der Konfiguration Ihrer [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) überprüft. In diesen Fällen werden URLs in E-Mail-Nachrichten und Office-Dateien überprüft.

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
-ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
+ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735514"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430495"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 
@@ -33,32 +33,33 @@ Um die Leistung auf von Microsoft verwalteten Desktop cloudbasierten Diensten zu
 
 Der Proxy oder die Firewall muss TLS 1,2 unterstützen. Andernfalls müssen Sie möglicherweise die Protokollerkennung deaktivieren.
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Zulässige Endpunkte für Microsoft Managed Desktop
+### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Zulässige Endpunkte, die für Microsoft Managed Desktop erforderlich sind
 
-Microsoft Managed Desktop verwendet das Azure-Portal, um die Webkonsole zu hosten. Die folgenden URLs in der Tabelle unten müssen in der Liste der zulässigen Proxy-und Firewall-Adressen aufgeführt sein, damit Microsoft Managed Desktop-Geräte mit Microsoft-Diensten kommunizieren können.  
+Microsoft Managed Desktop verwendet das Azure-Portal, um die Webkonsole zu hosten. Die folgenden URLs müssen in der Liste der zulässigen Proxy-und Firewall-Adressen aufgeführt sein, damit Microsoft Managed Desktop-Geräte mit Microsoft-Diensten kommunizieren können.  
 
-Beachten Sie, dass die unten aufgeführte Microsoft Managed Desktop-URL für alles verwendet wird, was unser Dienst auf der Kunden-API ausführt. Sie müssen sicherstellen, dass diese URL immer im Unternehmensnetzwerk verfügbar ist.
+Die Microsoft Managed Desktop-URL wird für alles verwendet, was unser Dienst auf der Kunden-API ausführt. Sie müssen sicherstellen, dass diese URL immer im Unternehmensnetzwerk verfügbar ist.
 
 Microsoft-Dienst  | Erforderliche URLs für Zulassungsliste 
---- | --- | ---
+--- | ---
 Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
 Hilfe erhalten | \*. Support.Services.Microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Schnelle Unterstützung | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
 Microsoft-Support-und Wiederherstellungsassistent | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>Zulässige Endpunkte – andere Microsoft-Produkte
+### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>Für andere Microsoft-Produkte zugelassene Endpunkte
 
 Es gibt URLs aus mehreren Microsoft-Produkten, die in der Liste zugelassen sein müssen, damit Microsoft Managed Desktop-Geräte mit diesen Microsoft-Diensten kommunizieren können. Verwenden Sie die Links, um die vollständige Liste für jedes Produkt anzuzeigen. 
 
-Microsoft-Dienst | Dokumentationsquelle – erforderliche URLs für die Zulassungsliste
+Microsoft-Dienst | Dokumentation
 --- | ---
-Windows 10 Enterprise einschließlich Windows Update für Unternehmen | [Verwalten von Verbindungs Endpunkten für Windows 10, Version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Windows 10 Enterprise einschließlich Windows Update für Unternehmen | [Verwalten von Verbindungs Endpunkten für Windows 10, Version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Verwalten von Verbindungs Endpunkten für Windows 10, Version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
 Übermittlungsoptimierung | [Konfigurieren der Zustellungsoptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365-URL und IP-Adressbereiche](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybride Identität erforderliche Ports und Protokolle](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) sowie [Active Directory und Active Directory-Domänendienste Port Anforderungen](https://aka.ms/AA26ygm) 
 Microsoft Intune | [InTune-Netzwerk Konfigurationsanforderungen](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Netzwerkendpunkte für Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP-Endpunkte](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Netzwerkanforderungen für Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

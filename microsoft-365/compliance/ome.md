@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen.
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818730"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429931"
 ---
 # <a name="message-encryption"></a>Nachrichtenverschlüsselung
 
@@ -60,7 +60,7 @@ Weitere Informationen zu Größenbeschränkungen für Nachrichten und Anlagen, d
 
 Office 365 erweiterte Nachrichtenverschlüsselung können Sie mehrere Branding-Vorlagen erstellen, damit Sie die Steuerung über Empfänger Nachrichten optimieren und benutzerdefinierte Branding-Erlebnisse zur Unterstützung einer vielfältigen Organisationsstruktur erstellen können.
 
-Die erweiterte Nachrichtenverschlüsselung in Microsoft 365 hilft Ihnen, Compliance-Verpflichtungen zu erfüllen, die eine flexiblere Kontrolle über den Zugriff durch externe Empfänger auf verschlüsselte e-Mails erfordern. Mit erweiterter Nachrichtenverschlüsselung in Office 365 können Sie als Administrator vertrauliche und außerhalb der Organisation freigegebene e-Mails mit automatischen Richtlinien steuern, die vertrauliche Informationstypen (beispielsweise PII, Finanz-oder Integritäts-IDs) oder Stichwörter zur Verbesserung des Schutzes durch Ablauf des Zugriffs über ein sicheres Webportal auf verschlüsselte e-Mails ermitteln. Darüber hinaus können Sie als Administrator verschlüsselte e-Mails, auf die extern über ein Microsoft 365-Webportal zugegriffen wird, weiter steuern, indem Sie den Zugriff auf eine e-Mail jederzeit widerrufen.
+Die erweiterte Nachrichtenverschlüsselung in Microsoft 365 hilft Ihnen, Compliance-Verpflichtungen zu erfüllen, die eine flexiblere Kontrolle über den Zugriff durch externe Empfänger auf verschlüsselte e-Mails erfordern. Mit erweiterter Nachrichtenverschlüsselung in Office 365 können Sie als Administrator vertrauliche und außerhalb der Organisation freigegebene e-Mail-Nachrichten mit automatischen Richtlinien steuern, die vertrauliche Informationstypen (beispielsweise PII, Finanz-oder Integritäts-IDs) oder Schlüsselwörter zur Verbesserung des Schutzes durch Ablauf des Zugriffs über ein sicheres Webportal auf verschlüsselte e-Mails ermitteln. Als Administrator können Sie verschlüsselte e-Mails, auf die über ein Microsoft 365-Webportal zugegriffen wird, weiter steuern, indem Sie jederzeit den Zugriff auf eine e-Mail widerrufen.
 
 Die Sperrung und der Ablauf von Nachrichten funktionieren nur für e-Mails, die Ihre Benutzer an Empfänger außerhalb Ihrer Organisation senden. Darüber hinaus müssen die Empfänger über das Webportal auf die e-Mail zugreifen. Um sicherzustellen, dass der Empfänger das Portal zum Empfangen von e-Mails verwendet, richten Sie eine benutzerdefinierte Branding-Vorlage ein, die den Wrapper anwendet. Anschließend wenden Sie die Branding-Vorlage in einer e-Mail-Fluss Regel an. Weitere Informationen zur erweiterten Nachrichtenverschlüsselung finden Sie unter [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 

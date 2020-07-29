@@ -6,14 +6,14 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327892"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430435"
 ---
-# <a name="getting-help-for-end-users"></a>Aufrufen von Hilfe für Endbenutzer
+# <a name="getting-help-for-end-users"></a>Hilfe für Endbenutzer
 
 Es gibt zwei Möglichkeiten, wie Benutzer in Ihrer Organisation Unterstützung für Ihre Microsoft Managed Desktop-Geräte erhalten können: **Abrufen der Hilfe** -APP oder Telefonsupport. Beide Supportoptionen stehen Benutzern 24 Stunden am Tag, 7 Tage die Woche zur Verfügung.
  
@@ -37,7 +37,7 @@ Damit Ihre Endbenutzerhilfe über die APP erhalten können, stellen Sie sicher, 
 - Das Gerät muss bei Microsoft Managed Desktop mit einer der Methoden unter [Einrichten von Microsoft Managed Desktop-Geräten](../get-started/set-up-devices.md)registriert werden, beispielsweise [Registrieren neuer Geräte selbst](../get-started/register-devices-self.md).
 - Die Anzeigesprache für das Gerät muss auf eine der folgenden englischsprachigen Gebietsschemas festgelegt sein: en-US, en-GB, en-au, en-NZ oder en-ca.
 - Die Get-Hilfe-app sollte auf dem neuesten Stand sein. Um dies zu bestätigen, suchen Sie im Microsoft Store nach APP-Updates.
-- Auf bestimmte [Endpunkte](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) muss vom Gerät aus zugegriffen werden können.
+- Auf bestimmte [Endpunkte](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) muss vom Gerät aus zugegriffen werden können.
 
 > [!NOTE]
 > Die Get-Hilfe-App kann bis zu einer Stunde dauern, nachdem ein Gerät bereitgestellt wurde, um voll funktionsfähig zu sein.

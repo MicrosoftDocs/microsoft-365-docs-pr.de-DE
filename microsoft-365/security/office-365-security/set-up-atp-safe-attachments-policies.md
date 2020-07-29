@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617230"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430423"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -92,8 +92,8 @@ Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter
 ||||
 |---|---|---|
 |**Option**|**Effect**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
-|**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren der Überprüfung bei Scannern, Faxnachrichten oder intelligenten Hosts, die nur bekannte, gute Anlagen senden werden  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Sicherheit von Anlagen für eine kleine Gruppe vertrauenswürdiger Absender zu deaktivieren.**|
-|**Monitor**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
+|**Deaktivieren**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger.  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Tresoranlagen für Empfänger zu deaktivieren, die nur e-Mails von vertrauenswürdigen Absendern erhalten.**|
+|**Überwachen**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
 |**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|
 |**Dynamische Zustellung**|Sendet sofort Nachrichten  <br/> Ersetzt Anlagen durch eine Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt dann die Anlagen erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen zur Vorschau der Anlage für die meisten PDFs und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> [Informationen zur dynamischen Zustellung und Vorschau mit ATP-sicheren Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schutz von Empfängern vor bösartigen Dateien  <br/> Aktivieren von Empfängern zum Anzeigen einer Vorschau von Anlagen im abgesicherten Modus, während der Scan stattfindet|

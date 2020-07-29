@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322017"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434289"
 ---
 # <a name="compliance"></a>Compliance
 
@@ -38,7 +38,7 @@ Microsoft Managed Desktop hat folgende Zertifizierungen erreicht:
 Relevante Informationen, einschließlich der Steuerungs-und technischen Anforderungen, finden Sie im [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), dem zentralen Repository für solche Informationen zu Microsoft Cloud Service-angeboten. Sie können Auditor-Berichte, Konformitätszertifikate und vieles mehr aus dem Abschnitt [Überwachungsberichte](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) der STP-Datei herunterladen.
 
 > [!NOTE]
-> Da Microsoft Managed Desktop unter Azure ausgeführt wird, weisen relevante Dokumente in der Regeldatei Namen wie "Microsoft Azure, Dynamics 365 und andere Online Dienste" auf. In diesen Dokumenten können Sie in der Regel Microsoft Managed Desktop unter der Kategorie "Überwachung + Verwaltung" finden.
+> Da Microsoft Managed Desktop unter Azure ausgeführt wird, weisen relevante Dokumente in der Regeldatei Namen wie "Microsoft Azure, Dynamics 365 und andere Online Dienste" auf. In diesen Dokumenten können Sie in der Regel Microsoft Managed Desktop unter der Kategorie "Microsoft Online Services" oder "Monitoring + Management" finden.
 
 ## <a name="shared-responsibility"></a>Gemeinsame Verantwortung
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102915"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434255"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -34,7 +34,7 @@ Im [Security & Compliance Center](https://protection.office.com) stehen eine Vie
 ## <a name="compromised-users-report"></a>Bericht über kompromittierte Benutzer
 
 > [!NOTE]
-> Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Es ist nicht in eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer verfügbar.
+> Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Es ist nicht in eigenständigen Exchange Online Schutzorganisationen (EoP) verfügbar.
 
 Der Bericht " **kompromittierte Benutzer** " zeigt die Anzahl der Benutzerkonten an, die in den letzten 7 Tagen als **verdächtig** oder **eingeschränkt** gekennzeichnet wurden. Konten in einem dieser Zustände sind problematisch oder sogar gefährdet. Bei häufiger Verwendung können Sie mit dem Bericht Spitzen und sogar Trends in verdächtigen oder eingeschränkten Konten erkennen. Weitere Informationen zu kompromittierten Benutzern finden Sie unter [reagieren auf ein kompromittiertes e-Mail-Konto](responding-to-a-compromised-email-account.md).
 
@@ -139,7 +139,7 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 Der e-Mail- **Fluss Statusbericht** enthält Informationen zu Schadsoftware, Spam, Phishing und blockierten Edge-Nachrichten. Weitere Informationen finden Sie unter [Nachrichtenfluss-Statusbericht](view-mail-flow-reports.md#mailflow-status-report).
 
-## <a name="malware-detection-in-email-report"></a>Erkennung von Schadsoftware im e-Mail-Bericht
+## <a name="malware-detections-in-email-report"></a>Malware Erkennungen im e-Mail-Bericht
 
 Der Bericht " **Malwareerkennungen in e-Mail** " zeigt Informationen zu Malwareerkennungen in eingehenden und ausgehenden e-Mail-Nachrichten (Schadsoftware, die durch Exchange Online Schutz oder EoP erkannt wurde). Weitere Informationen zum Schutz vor Schadsoftware in EoP finden Sie unter [Anti-Malware Protection in EoP](anti-malware-protection.md).
 
@@ -162,7 +162,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 - **Date**
 - **Absenderadresse**
 - **Empfängeradresse**
-- **Nachrichten-ID**
+- **Nachrichten-ID**: verfügbar im Kopfzeilenfeld nach **richten-ID** im Nachrichtenkopf und sollte eindeutig sein. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Beachten Sie die spitzen Klammern).
 - **Betreff**
 - **Filename**
 - **Name der Schadsoftware**
@@ -267,11 +267,14 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="threat-protection-status-report"></a>Statusbericht über den Bedrohungsschutz
 
-Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Office 365 ATP verfügbar; die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Weitere Informationen zu Office 365 ATP-Berichten finden Sie unter [Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md).
+Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Office 365 ATP verfügbar; die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden.
 
-Hierbei handelt es sich um einen intelligenten Bericht mit bösartigen e-Mails, die erkannt und blockiert wurden, und ermöglicht es Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen.
+Der Bericht enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten, wie Dateien oder Websiteadressen (URLs), die durch das Anti-Malware-Modul, die [Zero-Hour-automatische Bereinigung (AUTOPURGE)](zero-hour-auto-purge.md)und ATP-Features wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anlagen](atp-safe-attachments.md)und [ATP-Anti-Phishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien angepasst werden müssen.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zum \> **Dashboard** Berichte, und wählen Sie **Threat Protection Status**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie eine der folgenden URLs:
+
+- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+- EoP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Widget "Threat Protection Status" im Dashboard "Berichte"](../../media/threat-protection-status-report-widget.png)
 
@@ -411,61 +414,7 @@ Wenn Sie in der Ansicht Berichtsansicht oder Detailtabelle auf **Filter** klicke
 
 ## <a name="url-threat-protection-report"></a>URL-Bedrohungsschutz Bericht
 
-> [!NOTE]
-> Dieser Bericht steht nur in Office 365 Advanced Threat Protection (ATP) zur Verfügung. Beispielsweise ein Microsoft 365 E5-Abonnement oder ein ATP-Plan-1-oder ATP-Plan-2-Add-on.
-
-Der **Bericht über den URL-Bedrohungsschutz** bietet zusammenfassende und Trend Ansichten für erkannte Bedrohungen und Aktionen, die im Rahmen der [ATP-Sicherheits Links](atp-safe-links.md)für URL-Klicks ausgeführt werden. In diesem Bericht werden keine klickdaten von Benutzern angezeigt, bei denen die Richtlinie für sichere Links angewendet die Option **Benutzerklicks nicht nachverfolgen** aktiviert hat.
-
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center](https://protection.office.com), wechseln Sie **Reports** zu \> **Dashboard** Berichte, und wählen Sie **URL Protection**aus. Wenn Sie direkt zum Bericht wechseln möchten, öffnen Sie <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
-
-### <a name="report-view-for-the-url-threat-protection-report"></a>Berichtsansicht für den URL-Bedrohungsschutz Bericht
-
-Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die einmal alle vier Stunden aktualisiert werden, sodass Daten für die letzten 90 Tage angezeigt werden:
-
-- **Aktion zum Schutz vor URLs**: zeigt die Anzahl der URL-Klicks von Benutzern in der Organisation und die Ergebnisse des Klick Vorgangs an:
-
-  - **Gesperrt**
-  - **Blockiert und durchgeklickt**
-  - **Durch Klicken während der Überprüfung**
-
-  Ein Klick gibt an, dass der Benutzer auf die Seite blockieren zur böswilligen Website geklickt hat (Administratoren können durch Klicken auf Richtlinien für sichere Links deaktivieren).
-
-  Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
-
-  - **Start Datum** und **Enddatum**
-  - Die verfügbaren Klick Schutzaktionen sowie den Wert, der zum Anzeigen von Informationen für alle URL-Klicks (nicht nur für blockierte Klicks) **zulässig** ist.
-
-  ![Aktionsansicht für URL-Klick Schutz im URL Threat Protection-Bericht](../../media/url-threat-protection-report-url-click-protection-action-view.png)
-
-- **URL-Klick nach Anwendung**: zeigt die Anzahl der URL-Klicks von Anwendungen an, die Office 365 ATP-sichere Links unterstützen:
-
-  - **E-Mail-Client**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **Other**
-
-  Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
-
-  - **Start Datum** und **Enddatum**
-  - Die verfügbaren Anwendungen.
-
-### <a name="details-table-view-for-the-threat-protection-report"></a>Detailtabellen Ansicht für den Threat Protection-Bericht
-
-Wenn Sie auf **Details-Tabelle anzeigen**klicken, bietet der Bericht eine nahezu Echtzeitansicht aller Klicks, die innerhalb der Organisation für die letzten 7 Tage mit den folgenden Details geschehen:
-
-- **Klicken Sie auf Zeit**
-- **Benutzer**
-- **URL**
-- **Action**
-- **App**
-
-Wenn Sie in der Detailtabellen Ansicht auf **Filter** klicken, können Sie nach denselben Kriterien wie in der Berichtsansicht filtern, auch nach **Domänen** oder **Empfängern** , die durch Kommas getrennt sind.
-
-Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
+Der **URL Threat Protection-Bericht** steht in Office 365 Advanced Threat Protection (ATP) zur Verfügung. Weitere Informationen finden Sie unter [URL Threat Protection-Bericht](view-reports-for-atp.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Bericht über vom Benutzer gemeldete Nachrichten
 
@@ -511,3 +460,7 @@ Wenn Sie keine Daten in ihren Berichten sehen, überprüfen Sie, ob Ihre Richtli
 [Anti-Spam-und Antischadsoftware-Schutz in EoP](anti-spam-and-anti-malware-protection.md)
 
 [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
+[Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center](view-mail-flow-reports.md)
+
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)

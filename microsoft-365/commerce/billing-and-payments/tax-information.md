@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: 'Erfahren Sie, wie viel Steuern für Ihr Microsoft 365 for Business-Abonnement in verschiedenen Regionen erhoben werden. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401750"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434061"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
@@ -122,7 +119,7 @@ Entsprechend berechtigte Studierende und Lehrkräfte haben Anspruch auf Sonderpr
 
 3. Wählen Sie im Abschnitt **Einstellungen & Aktionen** die Option **Dienst Verwendungs Adresse bearbeiten**aus.
 
-4. Geben Sie auf der Seite **Dienstnutzungsadresse bearbeiten** Ihre MwSt.-ID in das Feld MwSt.- **Nummer** ein, und wählen Sie dann **Speichern**aus.
+4. Geben Sie auf der Seite **Dienst Verwendungs Adresse bearbeiten** im Feld **MwSt** .-Nummer Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein. Wählen Sie **Save** aus.
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ Entsprechend berechtigte Studierende und Lehrkräfte haben Anspruch auf Sonderpr
 
 2. Wählen Sie den Namen des Abonnements aus, und wählen Sie dann **Weitere Aktionen** \> **Bearbeiten MwSt**.-Nummer aus.
   
-3. Geben Sie auf der Seite **Dienstnutzungsadresse bearbeiten** Ihre MwSt.-ID in das Feld MwSt.- **Nummer** ein, und wählen Sie dann **Absenden**aus.
+3. Geben Sie auf der Seite **Dienst Verwendungs Adresse bearbeiten** im Feld **MwSt** .-Nummer Ihre Umsatzsteuer-ID, einschließlich des Präfixes, und ohne Leerzeichen ein. Wählen Sie **Save** aus.
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ Halten Sie die folgende Dokumentation für Sie parat:
 | Internationale Organisationen, die von der Mehrwertsteuer freigestellt werden können | Zertifizierung/Brief Bestätigung von lokalen Steuerbehörden |
 | Puerto Rico | Certificado de compras Exentas |
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
   
-[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md)
-  
-[Ihre Rechnung verstehen](understand-your-invoice.md)
+[Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md) (Artikel) \
+[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice.md) (Artikel)

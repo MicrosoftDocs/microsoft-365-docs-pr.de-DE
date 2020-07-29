@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center
+title: Nachrichtenfluss-Einblicke im Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie Nachrichtenfluss-Sicherheitsberichte für Ihre Organisation suchen und verwenden. Nachrichtenfluss Berichte sind im Security & Compliance Center verfügbar.
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937181"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434179"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Security & Compliance Center
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
 Zusätzlich zu den [Nachrichtenfluss Einblicken](mail-flow-insights-v2.md) , die im Security & Compliance Center zur Verfügung stehen, stehen Ihnen auch eine Vielzahl von Nachrichtenfluss Berichten zur Verfügung, die Ihnen bei der Überwachung Ihrer Microsoft 365-Organisation helfen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Security & Compliance Center unter <https://office.protection.com> mit dem Dashboard " **Berichte** " anzeigen \> **Dashboard**. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://office.protection.office.com/insightdashboard> .
 
@@ -133,7 +133,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 - **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
 
@@ -144,7 +144,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Richtung**
+  - **Direction**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -236,8 +236,8 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 
 Die Datentabelle enthält die folgenden Informationen:
 
-- **Richtung**
-- **Typ**
+- **Direction**
+- **Type**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
@@ -310,7 +310,7 @@ Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
   ![Richtungs Ansicht im Bericht "gesendete und empfangene e-Mails"](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Drilldown nach** \> **Schadsoftware (Anti-Malware)**: mit dieser Auswahl gelangen Sie zur [Malware Detection in e-Mail-Bericht](view-email-security-reports.md#malware-detection-in-email-report).
+- **Drilldown nach** \> **Schadsoftware (Anti-Malware)**: mit dieser Auswahl gelangen Sie zur [Malware Erkennung in e-Mail-Bericht](view-email-security-reports.md#malware-detections-in-email-report).
 
 - **Drilldown nach** \> **Spamerkennungen)**: mit dieser Auswahl gelangen Sie zum [Spam Erkennungs Bericht](view-email-security-reports.md#spam-detections-report).
 
@@ -327,8 +327,8 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: Richtung** oder **aufschlüsseln nach: Richtungs** Ansicht klicken, werden die folgenden Informationen angezeigt:
 
 - **Datum (UTC)**
-- **Typ**
-- **Richtung**
+- **Type**
+- **Direction**
 - **Nachrichtenanzahl**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:

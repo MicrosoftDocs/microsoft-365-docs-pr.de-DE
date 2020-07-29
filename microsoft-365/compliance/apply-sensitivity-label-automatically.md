@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189510"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503026"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -74,7 +74,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
 Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden sich ergänzenden, automatischen Bezeichnungsmethoden zu erkennen:
 
 |Feature oder Verhalten|Bezeichnungseinstellung: automatisches Bezeichnen für Office-Anwendungen |Richtlinie: automatisches Bezeichnen|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |App-Abhängigkeit|[Ja](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Nein |
 |Nach Speicherort einschränken|Nein |Ja |
 |Bedingungen: trainierbare Klassifizierungen|Ja |Nein |

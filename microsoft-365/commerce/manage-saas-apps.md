@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informationen zum Aktivieren und Verwalten von Drittanbieter-apps im Microsoft 365 Admin Center.
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402582"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429990"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
+
+Sie können Lizenzen und Abrechnung für Drittanbieter-apps im neuen Microsoft 365 Admin Center verwalten. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen sowie eine verbesserte Flexibilität bei der Verwaltung von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Commerce-Plattform von Microsoft. Dies gilt für Software-as-a-Service-apps, die Kunden direkt kaufen oder von einem Drittanbieter.
 
 ::: moniker range="o365-21vianet"
 
@@ -31,6 +33,7 @@ ms.locfileid: "44402582"
 ::: moniker-end
 
 Sie können Lizenzen und Abrechnung für Drittanbieter-apps im Microsoft 365 Admin Center mit aktiviertem Vorschaumodus verwalten. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen sowie eine verbesserte Flexibilität bei der Verwaltung von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Commerce-Plattform von Microsoft. Dies gilt für Software-as-a-Service-apps, die Kunden direkt kaufen oder von einem Drittanbieter.
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>So erhalten Sie Software-as-a-Service-apps
 
@@ -104,7 +107,7 @@ Administratoren können die Anzahl der Lizenzen ändern, die Ihrer Organisation 
 
 ## <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
-Software-as-a-Service-apps haben jeweils ein Abrechnungsprofil zugewiesen. Mit Abrechnungs Profilen können Sie anpassen, welche Produkte auf Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen. Hierzu zählen unter anderem folgende bewährte Methoden:
+Software-as-a-Service-apps haben jeweils ein Abrechnungsprofil zugewiesen. Mit Abrechnungs Profilen können Sie anpassen, welche Produkte auf Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen. Dazu gehören:
 
 - **Zahlungsmethoden** – Kreditkarten oder Schecks/Überweisungen
 - **Kontaktinformationen** – Rechnungsadresse und Kontakt Name

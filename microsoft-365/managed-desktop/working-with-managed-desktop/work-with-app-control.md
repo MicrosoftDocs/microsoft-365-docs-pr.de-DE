@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170720"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430447"
 ---
 # <a name="work-with-app-control"></a>Arbeiten mit dem App-Steuerelement
 
@@ -54,8 +54,8 @@ Durch Vorgänge werden schrittweise Richtlinien für Bereitstellungsgruppen bere
 |---------|---------|---------|
 |Testen     |  Überwachung       |  Tag 0       |
 |Erster     | Enforced        | Tag 1        |
-|Schnell     | Enforced        |  Tag 3       |
-|Allgemein     | Enforced        |  Tag 7       |
+|Schnell     | Enforced        |  Tag 2       |
+|Allgemein     | Enforced        |  Tag 3       |
 
 
 Sie können die Bereitstellung jederzeit während des Rollouts anhalten oder ein Rollback ausführen. Öffnen Sie dazu eine andere Dienstanforderung mit Vorgängen.

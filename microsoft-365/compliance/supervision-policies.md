@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127312"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502926"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -159,7 +159,7 @@ Das Modell bietet keine erschöpfende Liste der beleidigenden Sprache. Außerdem
 
 Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
 
-|**Typ**|**Beschreibung**|
+|**Type**|**Beschreibung**|
 |:-----|:-----|
 | **Weltlichkeiten** | Ausdrücke, die die meisten Menschen in Verlegenheit bringen. |
 | **Bögen** | Ausdrücke, die Vorurteile gegenüber bestimmten Gruppen (beispielsweise Rasse, ethnische Zugehörigkeit, sexuelle Orientierung, Behinderung) Ausdrücken. |
@@ -286,14 +286,6 @@ Im folgenden finden Sie eine Aufschlüsselung der Werte, die in der Spalte **Tag
 ## <a name="audit"></a>Überwachung
 
 In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Diese Informationen können eine Zusammenfassung aller Aufsichtsaktivitäten sein, die einer definierten Richtlinie zugeordnet sind, oder wenn sich eine Aufsichtsrichtlinie ändert. Aufsichtsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder durch ihre Aufsichtsrichtlinien überwachten Aktion bieten einen Nachweis über Aufsichtsverfahren.
-
-Die folgenden Überwachungsrichtlinien Aktivitäten werden überwacht und in den einheitlichen Überwachungsprotokollen zur Verfügung gestellt:
-
-|**Aktivität**|**Zugeordnete Befehle**|
-|:-----|:-----|
-| **Erstellen einer Richtlinie** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **Bearbeiten einer Richtlinie ** | [Gruppe-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Gruppe-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **Löschen einer Richtlinie** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 Zeigen Sie Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) an.
 

@@ -2,7 +2,7 @@
 title: Zusammenarbeit mit Gästen in einem Team
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Hier finden Sie Informationen zu den Microsoft 365-Konfigurationsschritten, die zum Einrichten eines Teams für die Zusammenarbeit mit Gästen in Teams erforderlich sind.
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371500"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430387"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -82,7 +82,7 @@ Microsoft Teams verwendet Microsoft 365-Gruppen für die Teammitgliedschaft. Die
 So legen Sie die Gast Einstellungen für Microsoft 365-Gruppen fest
 
 1. Erweitern Sie im Microsoft 365 Admin Center in der linken Navigationsleiste **Einstellungen**.
-2. Klicken Sie auf **Dienste &-Add-ins**.
+2. Klicken Sie auf **org-Einstellungen**.
 3. Klicken Sie in der Liste auf **Microsoft 365-Gruppen**.
 4. Stellen Sie sicher, dass die Gruppen **Mitglieder außerhalb Ihrer Organisation Zugriff auf Gruppeninhalte** haben und Gruppen **Besitzer Personen außerhalb Ihrer Organisation hinzufügen zulassen** Kontrollkästchen aktiviert sind.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Änderungen speichern**.

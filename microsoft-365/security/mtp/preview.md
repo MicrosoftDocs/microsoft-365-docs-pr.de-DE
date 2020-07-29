@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204827"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430363"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -57,6 +57,5 @@ Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, das
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu Schema Tabellen, die direkt im Sicherheitscenter verfügbar sind. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweisinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.  
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu Schema Tabellen, die direkt im Sicherheitscenter verfügbar sind. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweisinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.
 
-- **[Go Hunt](advanced-hunting-go-hunt.md)** – schnell von der Untersuchung eines Vorfalls zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen mithilfe abfragebasierter [Erweiterter Jagd](advanced-hunting-overview.md) Funktionen pivotieren.

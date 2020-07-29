@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: c65b1f7ed97fc0400d88eecadfa2081a940bac41
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199961"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430243"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Nutzung von Endpunkt-DLP (Vorschau)
 
@@ -108,15 +108,14 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 3. Wählen Sie für dieses Szenario **Datenschutz**, dann **USA – Daten mit personenbezogenen Informationen (PII)** und schließlich **Weiter** aus.
 4. Setzen Sie das Feld **Status** für alle Orte außer **Geräte** auf "Aus". Wählen Sie **Weiter** aus.
 5. Übernehmen Sie die Standardauswahl **Einstellungen in der Vorlage überprüfen und anpassen** Auswahl, und wählen Sie **Weiter** aus.
-6. Übernehmen Sie die Standardeinstellungen **Erkennen, wenn diese Inhalte freigegeben werden** und **Für Personen außerhalb meiner Organisation**, und wählen Sie **Weiter** aus.
-7. Übernehmen Sie die standardmäßigen Werte für **Schutzmaßnahmen**, und wählen Sie **Weiter** aus.
-8. Wählen Sie **Aktivitäten auf Windows-Geräten überwachen oder einschränken** aus, und lassen Sie die Aktionen auf **Nur Überwachung** festgelegt. Wählen Sie **Weiter** aus.
-9. Übernehmen Sie den standardmäßigen Wert **Ich möchte sie zuerst testen** und wählen Sie **Richtlinientipps im Testmodus anzeigen** aus. Wählen Sie **Weiter** aus.
-10. Überprüfen Sie Ihre Einstellungen, und wählen Sie dann **Senden** aus.
-11. Die neue DLP-Richtlinie wird nun in der Richtlinienliste angezeigt.
-12. Überprüfen Sie den Aktivitäten-Explorer auf Daten aus den überwachten Endpunkten. Legen Sie den Speicherortfilter für Geräte fest, fügen Sie die Richtlinie hinzu, und filtern Sie anschließend nach dem Richtliniennamen, um festzustellen, welche Auswirkungen diese Richtlinie hat. Lesen Sie bei Bedarf [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md).
-13. Versuchen Sie, für jemanden außerhalb Ihrer Organisation einen Test mit Inhalten freizugeben, durch die Bedingung "USA – Daten mit persönlich identifizierbaren Informationen (PII)" ausgelöst wird. Hierdurch müsste die Richtlinie ausgelöst werden.
-14. Überprüfen Sie den Aktivitäten-Explorer auf das Ereignis hin.
+6. Übernehmen Sie die standardmäßigen Werte für **Schutzmaßnahmen**, und wählen Sie **Weiter** aus.
+7. Wählen Sie **Aktivitäten auf Windows-Geräten überwachen oder einschränken** aus, und lassen Sie die Aktionen auf **Nur Überwachung** festgelegt. Wählen Sie **Weiter** aus.
+8. Übernehmen Sie den standardmäßigen Wert **Ich möchte sie zuerst testen** und wählen Sie **Richtlinientipps im Testmodus anzeigen** aus. Wählen Sie **Weiter** aus.
+9. Überprüfen Sie Ihre Einstellungen, und wählen Sie dann **Senden** aus.
+10. Die neue DLP-Richtlinie wird nun in der Richtlinienliste angezeigt.
+11. Überprüfen Sie den Aktivitäten-Explorer auf Daten aus den überwachten Endpunkten. Legen Sie den Speicherortfilter für Geräte fest, fügen Sie die Richtlinie hinzu, und filtern Sie anschließend nach dem Richtliniennamen, um festzustellen, welche Auswirkungen diese Richtlinie hat. Lesen Sie bei Bedarf [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md).
+12. Versuchen Sie, für jemanden außerhalb Ihrer Organisation einen Test mit Inhalten freizugeben, durch die Bedingung "USA – Daten mit persönlich identifizierbaren Informationen (PII)" ausgelöst wird. Hierdurch müsste die Richtlinie ausgelöst werden.
+13. Überprüfen Sie den Aktivitäten-Explorer auf das Ereignis hin.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Szenario 2: Ändern der bestehenden Richtlinie, Festlegen einer Warnung
 

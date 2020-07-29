@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Erfahren Sie mehr über die grundlegenden Schritte zur Problembehandlung, die Sie zur Lösung häufig auftretender Probleme in Office 365 eDiscovery ausführen können.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035667"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434168"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, beheben und Beheben allgemeiner eDiscovery-Probleme
 
@@ -32,9 +32,9 @@ In diesem Thema werden grundlegende Schritte zur Problembehandlung beschrieben, 
 
 ## <a name="errorissue-ambiguous-location"></a>Fehler/Problem: nicht eindeutiger Speicherort
 
-Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es sich um doppelte oder widersprüchliche Objekte mit derselben UserID im Verzeichnis Exchange Online Protection (EoP) handelt, wird `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`dieser Fehler angezeigt:. 
+Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es sich um doppelte oder widersprüchliche Objekte mit derselben UserID im Verzeichnis Exchange Online Protection (EoP) handelt, wird dieser Fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
 Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.
 
@@ -49,10 +49,10 @@ Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-
    Die Ausgabe für "useralias@contoso.com" würde etwa wie folgt aussehen:
 
    > 
-   > |Name  |RecipientType  |
-   > |---------|---------|
-   > |Alias, Benutzer     |MailUser         |
-   > |Alias, Benutzer     |Benutzer         |
+   > |Name|RecipientType|
+   > |---|---|
+   > |Alias, Benutzer|MailUser|
+   > |Alias, Benutzer|Benutzer|
 
 3. Wenn mehrere Benutzer zurückgegeben werden, suchen und beheben Sie das Konflikt verursachende Objekt.
 
@@ -63,15 +63,15 @@ Eine eDiscovery-oder Inhaltssuche kann den folgenden Fehler ergeben:
 
 ![Screenshot der suchspezifischen Speicherort Fehler](../media/edisc-tshoot-specific-location-search-fails.png)
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
 Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und die Suche dann nur für die fehlerhaften Speicherorte erneut ausführen.
 
 1. Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
-    ```powershell
-    Get-ComplianceSearch <searchname> | FL 
-    ```
+   ```powershell
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
 2. Zeigen Sie in der PowerShell-Ausgabe die fehlerhaften Speicherorte im Feld Fehler oder von den Statusdetails in dem Fehler aus der Suchausgabe an.
 
@@ -81,11 +81,11 @@ Wenn Sie diesen Fehler erhalten, wird empfohlen, dass Sie die Speicherorte über
 
 ## <a name="errorissue-file-not-found"></a>Fehler/Problem: Datei nicht gefunden
 
-Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird `File Not Found` möglicherweise die Fehlermeldung angezeigt, obwohl sich die Datei auf der Website befindet. Dieser Fehler tritt in den Export Warnungen und Errors. CSV oder Skip Items. CSV auf. Dies kann vorkommen, wenn die Datei nicht auf der Website gefunden werden kann oder wenn der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers (mit Nachdruck hinzugefügt).
-  
+Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufwerk für Geschäftsstandorte enthält, wird möglicherweise die Fehlermeldung angezeigt, `File Not Found` Obwohl sich die Datei auf der Website befindet. Dieser Fehler tritt in den Export Warnungen und-errors.csv auf oder wird übersprungen items.csv. Dies kann vorkommen, wenn die Datei nicht auf der Website gefunden werden kann oder wenn der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers (mit Nachdruck hinzugefügt).
+
 > 28.06.2019 10:02:19_FailedToExportItem_Failed zum Herunterladen von Inhalten. Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance. EDiscovery. ExportWorker. Exceptions. ContentDownloadTemporaryFailure: Fehler beim Herunterladen aus dem Inhalts 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode:-2147024894---> Microsoft. SharePoint. Client. ServerException: die ***Datei wurde nicht gefunden***. unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponseStream (Stream responseStream) unter Microsoft. SharePoint. Client. ClientRequest. ProcessResponse ()---Ende der internen Ausnahmestapelüberwachung---
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
 1. Überprüfen Sie die in der Suche identifizierte Position, um sicherzustellen, dass der Speicherort der Datei richtig ist und an den Suchpfaden hinzugefügt wurde.
 
@@ -93,17 +93,17 @@ Wenn Sie eine eDiscovery-Suche durchführen, die SharePoint Online und ein Laufw
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Fehler/Problem: die Suche schlägt fehl, da der Empfänger nicht gefunden wurde.
 
-Bei einer eDiscovery `recipient not found`-Suche tritt ein Fehler auf. Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.
+Bei einer eDiscovery-Suche tritt ein Fehler auf `recipient not found` . Dieser Fehler kann auftreten, wenn das Benutzerobjekt in Exchange Online Protection (EoP) nicht gefunden werden kann, da das Objekt nicht synchronisiert wurde.
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) her.
 
 2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Schutz synchronisiert ist:
 
-    ```powershell
-    Get-Recipient <userId> | FL
-    ```
+   ```powershell
+   Get-Recipient <userId> | FL
+   ```
 
 3. Es sollte ein e-Mail-Benutzerobjekt für die Benutzerfrage geben. Wenn Nothing zurückgegeben wird, überprüfen Sie das User-Objekt. Wenden Sie sich an den Microsoft-Support, wenn das Objekt nicht synchronisiert werden kann.
 
@@ -111,27 +111,27 @@ Bei einer eDiscovery `recipient not found`-Suche tritt ein Fehler auf. Dieser Fe
 
 Beim Exportieren von Suchergebnissen aus der eDiscovery-oder Inhaltssuche im Security and Compliance Center dauert der Download länger als erwartet.  Sie können überprüfen, ob die Datenmenge heruntergeladen und möglicherweise die Exportgeschwindigkeit erhöht werden soll.
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
-1.    Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1. Versuchen Sie es mit den Schritten im Artikel [increase Download speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.    Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
+2. Wenn Sie weiterhin Probleme haben, stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
-    ```powershell
-    Get-ComplianceSearch <searchname> | FL
-    ```
+   ```powershell
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
-4. Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.
+3. Ermitteln Sie die Menge der Daten, die in den searchresults-und SearchStatistics-Parametern heruntergeladen werden sollen.
 
-5. Führen Sie den folgenden Befehl aus:
+4. Führen Sie den folgenden Befehl aus:
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-6. Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.
+5. Suchen Sie im Feld Ergebnisse die Daten, die exportiert wurden, und zeigen Sie alle aufgetretenen Fehler an.
 
-7. Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.
+6. Überprüfen Sie die Datei Trace. log, die sich in dem Verzeichnis befindet, in das Sie den Inhalt exportiert haben, auf Fehler.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Fehler/Problem: "Interner Serverfehler (500) aufgetreten"
 
@@ -139,15 +139,15 @@ Wenn eine eDiscovery-Suche ausgeführt wird und die Suche kontinuierlich fehlsch
 
 ![Interner Serverfehler 500 Screenshot](../media/edisc-tshoot-error-500.png)
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
 1. Unterbrechen Sie die Suche in kleinere suchen, und führen Sie die Suche erneut aus.  Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.
 
 2. Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl aus:
 
-    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
-    Get-ComplianceSearch <searchname> | FL
-    ```
+   ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
+   Get-ComplianceSearch <searchname> | FL
+   ```
 
 3. Überprüfen Sie die Ausgabe auf Ergebnisse und Fehler.
 
@@ -161,38 +161,37 @@ eDiscovery Case Hold Policy Sync-Verteilungsfehler. Der Fehler lautet:
 
 > "Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet. Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "
 
-### <a name="resolution"></a>Auflösung
+### <a name="resolution"></a>Lösung
 
-1.    Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:
+1. Stellen Sie eine Verbindung mit [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) her, und führen Sie dann den folgenden Befehl für einen eDiscovery-Aufbewahrungs Fall aus:
 
-    ```powershell
-    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
-    ```
+   ```powershell
+   Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+   ```
 
     Führen Sie für eine Aufbewahrungsrichtlinie den folgenden Befehl aus:
 
-    ```powershell
-    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
-    ```
+   ```powershell
+   Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
+   ```
 
 2. Überprüfen Sie den Wert im Parameter DistributionDetail auf Fehler wie die folgenden:
- 
-   > Fehler: Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet. Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. " 
-   
+
+   > Fehler: Ressourcen: die Bereitstellung der Richtlinie dauert länger als erwartet. Es kann weitere 2 Stunden dauern, bis Sie den endgültigen Bereitstellungsstatus aktualisiert haben, also schauen Sie sich in ein paar Stunden zurück. "
+
 3. Versuchen Sie, den RetryDistribution-Parameter für die betreffende Richtlinie auszuführen:
-   
-    
-    Für eDiscovery Case Holds:
 
-    ```powershell
-    Set-CaseHoldPolicy <policyname> -RetryDistribution
-    ```
+   Für eDiscovery Case Holds:
 
-    Für Aufbewahrungsrichtlinien:
+   ```powershell
+   Set-CaseHoldPolicy <policyname> -RetryDistribution
+   ```
 
-    ```powershell
-    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
-    ``` 
+   Für Aufbewahrungsrichtlinien:
+
+   ```powershell
+   Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+   ```
 
 4. Wenden Sie sich an den Support von Microsoft.
 
