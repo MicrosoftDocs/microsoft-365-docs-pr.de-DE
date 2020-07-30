@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
-ms.openlocfilehash: 5a04e97b341c66a78010e7255554be72aa073593
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199729"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391507"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Beginn der Aufbewahrung bei Auftreten eines Ereignisses
 
@@ -66,16 +66,16 @@ Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die
     
 3. „Product Lifetime“ ist der Ereignistyp. Ein bestimmtes Produkt, das das Ende seines Lebenszyklus erreicht, ist ein Ereignis. Wenn ein Ereignis dieses Typs auftritt (in diesem Fall, wenn ein Produkt das Ende seiner Lebensdauer erreicht), erstellen Sie ein Ereignis, das Folgendes angibt:
     
-  - Eine Asset-ID (für SharePoint- und OneDrive-Dokumente)
+   - Eine Asset-ID (für SharePoint- und OneDrive-Dokumente)
     
-  - Schlüsselwörter (für Exchange-Elemente). In diesem Beispiel verwendet das Unternehmen einen Produktcode in Nachrichten, die Produktdatensätze enthalten, sodass das Schlüsselwort für Exchange-Elemente der Objekt-ID für SharePoint- und OneDrive-Dokumente entspricht.
+   - Schlüsselwörter (für Exchange-Elemente). In diesem Beispiel verwendet das Unternehmen einen Produktcode in Nachrichten, die Produktdatensätze enthalten, sodass das Schlüsselwort für Exchange-Elemente der Objekt-ID für SharePoint- und OneDrive-Dokumente entspricht.
     
-  - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann das aktuelle, ein vergangenes oder ein zukünftiges Datum sein.
-    
+   - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann das aktuelle, ein vergangenes oder ein zukünftiges Datum sein.
+
 4. Nach der Erstellung eines Ereignisses wird dieses Ereignisdatum mit allen Inhalten synchronisiert, die eine Aufbewahrungsbezeichnung dieses Ereignistyps aufweisen und die angegebene Objekt-ID bzw. das angegebene Schlüsselwort enthalten. Wie bei jeder Aufbewahrungsbezeichnung kann die Synchronisierung bis zu 7 Tage dauern. Bei allen rot eingekreisten Elementen im vorigen Diagramm wird der Aufbewahrungszeitraum durch dieses Ereignis ausgelöst. Mit anderen Worten, wenn dieses Produkt das Ende seiner Lebensdauer erreicht, löst dieses Ereignis den Aufbewahrungszeitraum für die Produktdatensätze aus.
-    
+
 Folgendes sollten Sie verstehen: Wenn Sie für ein Ereignis keine Objekt-ID und keine Schlüsselwörter angeben, wird der Aufbewahrungszeitraum für **alle Inhalte** mit einer Bezeichnung dieses Ereignistyps durch das Ereignis ausgelöst. Dies bedeutet, dass im vorherigen Diagramm der Aufbewahrungszeitraum für alle Inhalte beginnen würde. Dies ist möglicherweise nicht, was Sie beabsichtigen. 
-  
+
 Denken Sie schließlich daran, dass es zu jeder Aufbewahrungsbezeichnung eigene Aufbewahrungseinstellungen gibt. In diesem Beispiel ist für alle ein Zeitraum von 10 Jahren angegeben, aber es ist möglich, dass ein Ereignis Aufbewahrungsbezeichnungen mit unterschiedlichen Aufbewahrungszeiträumen auslöst.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>So richten Sie die ereignisgesteuerte Aufbewahrung ein
@@ -150,7 +150,7 @@ Wenn eine bestimmte Instanz dieses Ereignistyps auftritt – z. B. wenn ein Pro
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Schritt 6: Auswählen des gleichen Ereignistyps, der von der Bezeichnung in Schritt 2 verwendet wird
 
-Wenn Sie ein Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der von der Aufbewahrungsbezeichnung in Schritt 2 verwendet wird, z. B. „Product Lifetime“. Nur für Inhalte, denen Aufbewahrungsbezeichnungen des betreffenden Ereignistyps zugeordnet wurden, wird der Aufbewahrungszeitraum ausgelöst.
+Wenn Sie ein Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der von der Aufbewahrungsbezeichnung in Schritt 2 verwendet wird – z. B. „Product Lifetime“. Nur für Inhalte, denen Aufbewahrungsbezeichnungen des betreffenden Ereignistyps zugeordnet wurden, wird der Aufbewahrungszeitraum ausgelöst.
   
 ![Option in den Ereigniseinstellungen zum Auswählen eines Ereignistyps](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -190,9 +190,7 @@ Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das O
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisieren von Ereignissen mit PowerShell
 
-Das Microsoft 365 Compliance Center ermöglicht es Ihnen, Ereignisse manuell zu erstellen, und unterstützt nicht das automatische Auslösen eines Ereignisses, wenn es eintritt. Sie können jedoch eine Rest-API verwenden, damit Ereignisse automatisch ausgelöst werden. Weitere Informationen finden Sie unter [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md).
-
-Sie können die ereignisbasierte Aufbewahrung auch aus Ihren Geschäftsanwendungen heraus mithilfe eines PowerShell-Skripts automatisieren. PowerShell-Cmdlets für die ereignisbasierte Aufbewahrung:
+Sie können ereignisbasierte Aufbewahrung aus Ihren Geschäftsanwendungen heraus mithilfe eines PowerShell-Skripts automatisieren. PowerShell-Cmdlets für die ereignisbasierte Aufbewahrung:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -206,4 +204,257 @@ Sie können die ereignisbasierte Aufbewahrung auch aus Ihren Geschäftsanwendung
     
 - [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
     
+
+## <a name="automate-events-by-using-a-rest-api"></a>Automatisieren von Ereignissen mithilfe einer REST-API
+
+Sie können eine REST-API verwenden, um automatisch die Ereignisse zu erstellen, die den Beginn der Aufbewahrungszeit auslösen.
+
+Bei einer REST-API handelt es sich um einen Dienstendpunkt, der Gruppen von HTTP-Vorgängen (Methoden) unterstützt, die Zugriff zum Erstellen/Abrufen/Aktualisieren/Löschen der Dienstressourcen bieten. Weitere Informationen finden Sie unter [Komponenten einer REST-API-Anfrage/-Anfrage](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Mithilfe der Microsoft 365 REST-API können Ereignisse mit POST- und GET-Operationen erstellt und abgerufen werden.
+
+Es gibt zwei Optionen für die Verwendung der REST-API:
+
+- **Microsoft Power Automate oder eine ähnliche Anwendung** zum automatischen Auslösen des Ereignisses. Microsoft Power Automate ist ein Orchestrator zum Herstellen der Verbindung zu anderen Systemen, sodass Sie keine benutzerdefinierte Lösung erstellen müssen. Weitere Informationen finden Sie auf der [Power Automate-Website](https://flow.microsoft.com/de-DE/).
+
+- **PowerShell oder ein HTTP-Client zum Aufrufen der REST-API**, um Ereignisse mithilfe von PowerShell (Version 6 oder höher) zu erstellen, was Teil einer benutzerdefinierten Lösung ist.
+
+Bevor Sie die REST-API verwenden, überprüfen Sie als globaler Administrator die URL, die für den Aufruf des Aufbewahrungsereignisses verwendet werden soll. Führen Sie dazu ein GET-Aufbewahrungsereignisaufruf mithilfe der REST-API-URL aus:
+
+```console
+https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+```
+
+Überprüfen Sie den Antwortcode. Wenn es sich um 302 handelt, rufen Sie die umgeleitete URL aus der „Location“-Eigenschaft des Antwortheaders ab, und verwenden Sie diese URL statt `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in den nachfolgenden Anweisungen.
+
+Die automatisch erstellten Ereignisse können bestätigt werden, indem Sie sie im Microsoft 365 Compliance Center anzeigen > **Datensatzverwaltung** >  **Ereignisse**.
+
+### <a name="use-microsoft-power-automate-to-create-the-event"></a>Verwenden von Microsoft Power Automate zum Erstellen des Ereignisses
+
+Erstellen eines Ablaufs zum Erstellen eines Ereignisses mithilfe der Microsoft 365-REST-API:
+
+![Verwenden von Flow zum Erstellen eines Ereignisses](../media/automate-event-driven-retention-flow-1.png)
+
+![Verwenden des Ablaufs zum Aufrufen der REST-API](../media/automate-event-driven-retention-flow-2.png)
+
+#### <a name="create-an-event"></a>Erstellen eines Ereignisses
+
+Beispielcode zum Aufrufen der REST-API:
+
+- **Method**: POST
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**:
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+    
+- **Authentication**: Basic
+- **Username**: "Complianceuser"
+- **Password**: "Compliancepassword"
+
+
+##### <a name="available-parameters"></a>Verfügbare Parameter
+
+
+|Parameter|Beschreibung|Anmerkungen|
+|--- |--- |--- |
+|<d:Name></d:Name>|Geben Sie einen eindeutigen Namen für das Ereignis an.|Der Name darf nachfolgende Leerzeichen oder die folgenden Zeichen nicht enthalten: % * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|Geben Sie den Namen des Ereignistyps (oder GUID) ein.|Beispiel: "Mitarbeiterkündigung". Der Ereignistyp muss einer Aufbewahrungsbezeichnung zugeordnet sein.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Geben Sie "ComplianceAssetId:" + Mitarbeiter-ID ein|Beispiel: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Datum und Uhrzeit des Ereignisses|Format: jjjj-MM-ttTHH:mm:ssZ, Beispiel: 2018-12-01T00:00:00Z
+|
+
+###### <a name="response-codes"></a>Antwortcodes
+
+| Antwortcode | Beschreibung       |
+| ----------------- | --------------------- |
+| 302               | Umleiten              |
+| 201               | Erstellt               |
+| 403               | Autorisierung fehlgeschlagen  |
+| 401               | Authentifizierung fehlgeschlagen |
+
+##### <a name="get-events-based-on-a-time-range"></a>Abrufen von Ereignissen basierend auf einem Zeitraum
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>Antwortcodes
+
+| Antwortcode | Beschreibung                   |
+| ----------------- | --------------------------------- |
+| 200               | OK, eine Liste der Ereignisse in Atom + XML |
+| 404               | Nicht gefunden                         |
+| 302               | Umleiten                          |
+| 401               | Autorisierung fehlgeschlagen              |
+| 403               | Authentifizierung fehlgeschlagen             |
+
+##### <a name="get-an-event-by-id"></a>Abrufen eines Ereignisses nach ID
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+###### <a name="response-codes"></a>Antwortcodes
+
+| Antwortcode | Beschreibung                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, der Antworttext enthält das Ereignis in Atom + XML |
+| 404               | Nicht gefunden                                            |
+| 302               | Umleiten                                             |
+| 401               | Autorisierung fehlgeschlagen                                 |
+| 403               | Authentifizierung fehlgeschlagen                                |
+
+##### <a name="get-an-event-by-name"></a>Abrufen eines Ereignisses anhand des Namens
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>Antwortcodes
+
+| Antwortcode | Beschreibung                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, der Antworttext enthält das Ereignis in Atom + XML |
+| 404               | Nicht gefunden                                            |
+| 302               | Umleiten                                             |
+| 401               | Autorisierung fehlgeschlagen                                 |
+| 403               | Authentifizierung fehlgeschlagen                                |
+
+### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>Verwenden von PowerShell oder einem beliebigen HTTP-Client, um das Ereignis zu erstellen
+
+Bei PowerShell muss es sich um Version 6 oder höher handeln.
+
+Führen Sie in einer PowerShell-Sitzung das folgende Skript aus:
+
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
 
