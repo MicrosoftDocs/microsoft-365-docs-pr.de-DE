@@ -24,6 +24,8 @@
           href: insider-risk-management.md
         - name: Planen des Insider-Risikomanagements
           href: insider-risk-management-plan.md
+        - name: Erste Schritte mit Insider-Risikoeinstellungen
+          href: insider-risk-management-settings.md
         - name: Erste Schritte mit dem Insider-Risikomanagement
           href: insider-risk-management-configure.md
         - name: Erstellen und Verwalten von Insider-Risikorichtlinien
@@ -105,30 +107,32 @@
       items:
         - name: Verhinderung von Datenverlust (DLP) und Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Ansehen eines erweiterten Überblicks über DLP
-          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
-        - name: Einrichten von DLP
-          items:
-            - name: Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
-              href: get-started-with-dlp-policy-recommendations.md
-            - name: Erste Schritte mit der DLP-Standardrichtlinie
-              href: get-started-with-the-default-dlp-policy.md
-            - name: Erstellen einer DLP-Richtlinie aus einer Vorlage
-              href: create-a-dlp-policy-from-a-template.md
-            - name: 'Erstellen, Testen und Optimieren einer DLP-Richtlinie'
-              href: create-test-tune-dlp-policy.md
-            - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
-              href: use-notifications-and-policy-tips.md
-            - name: Inhalt der DLP-Richtlinienvorlagen
-              href: what-the-dlp-policy-templates-include.md
-            - name: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
-              href: protect-documents-that-have-fci-or-other-properties.md
-            - name: Anzeigen der DLP-Berichte
-              href: view-the-dlp-reports.md
-            - name: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
-              href: how-dlp-works-between-admin-centers.md
+        - name: Informationen zu Endpunkt-DLP (Vorschau)
+          href: endpoint-dlp-learn-about.md
+        - name: Endpunkt-DLP (Vorschau) – Erste Schritte
+          href: endpoint-dlp-getting-started.md
+        - name: Nutzung von Endpunkt-DLP (Vorschau)
+          href: endpoint-dlp-using.md
+        - name: Empfohlene erste Schritte mit DLP-Richtlinienvorlagen
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: Erste Schritte mit der DLP-Standardrichtlinie
+          href: get-started-with-the-default-dlp-policy.md
+        - name: Erstellen einer DLP-Richtlinie aus einer Vorlage
+          href: create-a-dlp-policy-from-a-template.md
+        - name: 'Erstellen, Testen und Optimieren einer DLP-Richtlinie'
+          href: create-test-tune-dlp-policy.md
+        - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
+          href: use-notifications-and-policy-tips.md
+        - name: Inhalt der DLP-Richtlinienvorlagen
+          href: what-the-dlp-policy-templates-include.md
+        - name: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: Anzeigen der DLP-Berichte
+          href: view-the-dlp-reports.md
+        - name: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
+          href: how-dlp-works-between-admin-centers.md
     - name: Typen vertraulicher Informationen
       items:
         - name: Entitätsdefinitionen für Typen vertraulicher Informationstypen
@@ -165,6 +169,8 @@
       href: tls-1-2-in-office-365-gcc.md
     - name: TLS 1.2 in Office 365
       href: prepare-tls-1.2-in-office-365.md
+    - name: "Verschlüsselung mit Doppelschlüssel für Microsoft\_365 (öffentliche Vorschau)"
+      href: double-key-encryption.md
     - name: Kundenschlüssel
       items:
         - name: Dienstverschlüsselung mit Kundenschlüssel in Office 365
@@ -309,16 +315,12 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Erstellen von Aufbewahrungsbezeichnungen mit PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Ereignisbasierte Aufbewahrung verwenden
-          items:
-            - name: Beginn der Aufbewahrung bei Auftreten eines Ereignisses
-              href: event-driven-retention.md
-            - name: Automatisieren der ereignisbasierten Aufbewahrung
-              href: automate-event-driven-retention.md
-            - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
-              href: auto-apply-retention-labels-scenario.md
-    - name: Daten entfernen
-      href: disposition.md
+        - name: Beginn der Aufbewahrung bei Auftreten eines Ereignisses
+          href: event-driven-retention.md
+        - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
+          href: auto-apply-retention-labels-scenario.md
+        - name: Verwalten der Disposition von Daten
+          href: disposition.md
     - name: Verwalten inaktiver Postfächer
       items:
         - name: Übersicht über inaktive Postfächer

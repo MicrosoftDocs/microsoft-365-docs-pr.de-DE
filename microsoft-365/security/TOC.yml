@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: Empfohlene SharePoint Online-Zugriffsrichtlinien
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft-Sicherheitsbewertung
+      items:
+        - name: Sicherheitsbewertung (Übersicht)
+          href: mtp/microsoft-secure-score.md
+        - name: Zugreifen auf Ihren Sicherheitsstatus
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Nachverfolgen Ihres Bewertungsverlaufs und Erfüllen von Zielen
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: Was in Kürze verfügbar ist
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: Neuerungen
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items:
         - name: Übersicht
@@ -187,16 +199,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Erstellen und Verwalten von Erkennungsregeln
                       href: mtp/custom-detection-rules.md
-            - name: Microsoft-Sicherheitsbewertung
-              items:
-                - name: Sicherheitsbewertung (Übersicht)
-                  href: mtp/microsoft-secure-score.md
-                - name: Erhalten Sie Einblicke in Ihren Sicherheitsstatus
-                  href: mtp/microsoft-secure-score-improvement-actions.md
-                - name: Nachverfolgen Ihres Bewertungsverlaufs und Erfüllen von Zielen
-                  href: mtp/microsoft-secure-score-history-metrics-trends.md
-                - name: Was in Kürze verfügbar ist
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Berichte
               items:
                 - name: Überwachen und Anzeigen von Berichten
@@ -309,6 +311,8 @@
                       href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Übermitteln von Schadsoftware und Nicht-Schadsoftware an Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Voreingestellte Sicherheitsrichtlinien
+                  href: ./office-365-security/preset-security-policies.md
                 - name: Antispam-Nachrichtenkopfzeilen
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Kombination von Richtlinien und Schutzmaßnahmen
@@ -419,7 +423,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Beseitigen bösartiger E-Mails
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: Anzeigen und Lesen Ihrer ATP-Berichte
+            - name: Anzeigen von ATP-Berichten im Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Verstehen der neuesten Angriffe mithilfe von Bedrohungsanalyse
               href: ./mtp/latest-attack-campaigns.md
