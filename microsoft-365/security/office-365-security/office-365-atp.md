@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039378"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434049"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -87,9 +87,9 @@ Berichte werden in Echtzeit aktualisiert, sodass Sie die neuesten Erkenntnisse e
 
 - [Threat Protection-Statusbericht](view-reports-for-atp.md#threat-protection-status-report)
 
-- [ATP-Dateitypenbericht](view-reports-for-atp.md#atp-file-types-report)
+- [Advanced Threat Protection-Bericht zu Dateitypen](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
 
-- [ATP-Bericht zum Nachrichtenstatus](view-reports-for-atp.md#atp-message-disposition-report)
+- [Advanced Threat Protection-Bericht zum Nachrichtenstatus](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
 
 - ... und vieles mehr.
 
