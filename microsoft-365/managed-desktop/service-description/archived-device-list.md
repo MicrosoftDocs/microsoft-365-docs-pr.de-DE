@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080081"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503067"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -43,6 +43,9 @@ Für die Registrierung in Microsoft Managed Desktop ein Gerät muss eines der fo
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**14. Mai 2023** |
 |HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | **23. Oktober 2023** |
 |HP ProBook X360 440 G1| 128 GB/Intel I3/8 GB RAM | SKU mit 5VS04AV, IR-Kamera oder Fingerabdruckleser erforderlich | **6. Juni 2023** |
+|HP EliteDesk 800 G4 DM | 128 GB/Intel I3/8 GB RAM | SKU mit 5VS04AV | **18. Juli 2023** |
+|HP EliteDesk 800 G4 SFF | 128 GB/Intel I3/8 GB RAM | SKU mit 5VS04AV | **18. Juli 2023** |
+|HP EliteOne 800 G4 23,8 in AIO |128 GB/Intel I3/8 GB RAM |SKU mit 5VS04AV| **18. Juli 2023** |
 |DGM-Buch 2| 256 GB/Intel i5/8 GB RAM | Keine | **16. November 2022** |
 |DGM-go| 128 GB/Intel 4415Y/8GB RAM | Keine | **2. August 2023** |
 |Surface-Laptop| 256 GB/Intel i5/8 GB RAM | Keine | **20. Mai 2022** |

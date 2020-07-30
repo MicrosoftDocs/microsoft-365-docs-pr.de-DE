@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127012"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506320"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -124,13 +124,13 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
 > [!NOTE]
-> Die Möglichkeit zum Anzeigen von Datensätzen, die automatisch ohne Dispositions Überprüfung gelöscht wurden, wird schrittweise für die Mandanten im April und Mai 2020, sodass diese Benutzeroberfläche möglicherweise nicht sofort angezeigt wird.
+> Die Möglichkeit zum Anzeigen von Datensätzen, die automatisch ohne Dispositions Überprüfung gelöscht wurden, erfolgt weiterhin für Mandanten, sodass Sie während dieses Rollout Zeitraums möglicherweise nicht alle freigestellten Elemente sehen.
 
 Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
 
 ![Elemente, die ohne eine Dispositions Überprüfung verworfen wurden](../media/records-disposed2.png)
 
-Elemente, die auf der Registerkarte " **verworfene Elemente** " für Daten Satzbezeichnungen angezeigt werden, werden bis zu 7 Jahre nach der Freigabe des Elements aufbewahrt, mit einem Grenzwert von 1 Million Elementen pro Datensatz für diesen Zeitraum. Wenn die **Zähl** Nummer, die diesem Grenzwert von 1 Million nähert, angezeigt wird und Sie einen Nachweis der Disposition für Ihre Datensätze benötigen, wenden Sie sich an den [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Elemente, die auf der Registerkarte " **verworfene Elemente** " für Daten Satzbezeichnungen angezeigt werden, werden bis zu sieben Jahre nach der Freigabe des Elements mit einem Grenzwert von 1 Million Elementen pro Datensatz für diesen Zeitraum aufbewahrt. Wenn die **Zähl** Nummer, die diesem Grenzwert von 1 Million nähert, angezeigt wird und Sie einen Nachweis der Disposition für Ihre Datensätze benötigen, wenden Sie sich an den [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Diese Funktion basiert auf Informationen aus dem [vereinheitlichten Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher die Überwachung, um [aktiviert und durchsuchbar](turn-audit-log-search-on-or-off.md) zu sein, damit die entsprechenden Ereignisse erfasst werden.

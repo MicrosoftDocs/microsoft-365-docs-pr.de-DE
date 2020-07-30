@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Eine kurze Beschreibung, was Exchange Online Administratoren tun müssen, um die S/MIME-Einstellungen in Outlook im Internet in Exchange Online anzuzeigen und zu konfigurieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616622"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517485"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Konfigurieren von S/MIME-Einstellungen in Exchange Online für Outlook im Internet
 
@@ -31,7 +31,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Smime
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>Überlegungen für neue Microsoft Edge (Chrom basiert)
 
-Um s/MIME in Outlook im Internet im neuen [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) -Webbrowser zu verwenden, müssen Sie (oder ein anderer Administrator) die Microsoft-Edge-Browser-Richtlinie " **ExtensionInstallForcelist** " festlegen und konfigurieren, um die Microsoft S/MIME-Erweiterung in New Microsoft Edge zu installieren. Der Richtlinienwert ist `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Beachten Sie, dass die Anwendung dieser Richtlinie Computer mit Domänenbeitritt erfordert, sodass die Verwendung von S/MIME im neuen Microsoft Edge-Browser effektiv Domänen verbundene Computer erfordert.
+Um s/MIME in Outlook im Internet im neuen [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) -Webbrowser zu verwenden, müssen Sie (oder ein anderer Administrator) die Microsoft-Edge-Browser-Richtlinie " **ExtensionInstallForcelist** " festlegen und konfigurieren, um die Microsoft S/MIME-Erweiterung im neuen Microsoft Edge zu installieren. Der Richtlinienwert ist `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Beachten Sie, dass die Anwendung dieser Richtlinie Domänenbeitritt oder Azure AD verbundene Geräte erfordert, sodass die Verwendung von S/MIME im neuen Microsoft Edge-Browser effektiv Domänen-oder Azure AD verbundene Geräte erfordert.
 
 Ausführliche Informationen zur **ExtensionInstallForcelist** -Richtlinie finden Sie unter [ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist).
 
