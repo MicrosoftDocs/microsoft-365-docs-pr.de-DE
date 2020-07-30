@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637852"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522025"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Managed Desktop-App-Anforderungen
 
@@ -20,44 +20,25 @@ ms.locfileid: "43637852"
 
 <!--Application addendum -->
  
-Um die Leistung, Zuverlässigkeit und Servicefähigkeit von Microsoft Managed Desktop-Geräten zu gewährleisten, dürfen die Branchen-apps eines Kunden keine ernsthaften Auswirkungen auf die Endbenutzererfahrung haben oder die Sicherheitseinstellung ändern. Daher müssen Branchenanwendungen, die Sie auf Microsoft Managed Desktop-Geräten bereitstellen möchten, die Anforderungen in diesem Thema erfüllen.
-
-## <a name="application-condition"></a>Anwendungs Bedingung
-
-Es ist wichtig, dass sich Anwendungen nicht nachteilig auf die von Microsoft verwaltete Desktop Umgebung auswirken. Im folgenden sind die Anforderungen aufgeführt, die eine Anwendung erfüllen muss, damit eine Anwendung bereitgestellt werden kann. Für jede Anwendung oder jeden Treiber verzichtet Microsoft möglicherweise auf die hierin entgegenstehenden Anforderungen. Microsoft kann beschließen, jede Anwendung oder jeden Treiber zu entfernen, die sich negativ auf die Leistung und Zuverlässigkeit von von Microsoft verwalteten Desktop Geräten auswirkt.
-
-## <a name="centrally-managed-apps"></a>Zentral verwaltete apps
-
-Alle auf Microsoft Managed Devices installierten Anwendungen und Treiber müssen über Microsoft InTune, den Microsoft Store oder den Microsoft Store for Business bereitgestellt werden. Wenn verfügbar, werden Treiber auch über den Windows Update-Dienst bereitgestellt. 
-
-## <a name="prohibited-app-classes"></a>Verbotene App-Klassen
-
-Bestimmte Anwendungstypen sind auf Microsoft Managed Desktop-Geräten nicht zulässig:
-- Virenschutz-, Sicherheits-oder Überwachungssoftware von Drittanbietern
-- Versionen von Microsoft Office vor Microsoft 365 apps for Enterprise
-- Anwendungen, die andere Drittanbietersoftware installieren oder bündeln
-
-## <a name="restricted-app-behaviors"></a>Eingeschränktes App-Verhalten
-
-Bestimmte App-Verhaltensweisen können sich negativ auf die Benutzerfreundlichkeit auswirken oder ein Sicherheitsrisiko für von Microsoft verwaltete Desktop Geräte darstellen. Apps mit den folgenden Verhaltensweisen dürfen nicht in der Microsoft Managed Desktop-Umgebung ohne einen bestimmten von Microsoft ausgeführt werden.
-
-Benutzererfahrung:
-- Installieren von Hintergrunddiensten
-- Selbst zum Start Pfad von Windows hinzufügen
-- Von Treibern abhängige Anwendungen
-- Drittanbieter-Webbrowser
-
-Sicherheit:
-- Erhöhen der Benutzerberechtigungen
-- Fungieren als App Store oder verfügen über einen integrierten Erweiterungs-Manager
-- Bekannte Sicherheitsrisiken
-- Verschlüsseln oder Einschränken des Zugriffs auf Endbenutzerdaten
-- Ist nicht signiert oder wird mit einem Zertifikat signiert, das nicht auf einen vertrauenswürdigen Stamm aufrollen kann.
+Microsoft Managed Desktop erfordert, dass wir Geräte mit einem bestimmten Ansatz verwalten, um die Leistung, Zuverlässigkeit und Servicefähigkeit von Geräten zu gewährleisten. Wenn Sie sicher sind, dass der von Microsoft Managed Desktop für die Bereiche unten getroffene Ansatz für Sie nicht möglich ist, können Sie eine [Ausnahme vom Dienstplan](customizing.md)anfordern.
 
 
-## <a name="driver-deployment"></a>Treiberbereitstellung
+|Verwaltungsbereich  |Microsoft Managed Desktop-Ansatz  |
+|---------|---------|
+|Gerätekonfiguration oder Richtlinienverwaltung     |  Microsoft Intune       |
+|Anwendungsverwaltung     | Microsoft InTune und Unternehmens Portal        |
+|Treiberbereitstellung     |  Im Gerät enthaltene Treiber, Windows Update oder InTune       |
+|Gerätesicherheit     | Siehe [Gerätesicherheit](security.md#device-security)      |
+|Identitäts- und Zugriffsverwaltung     | Siehe [Identitäts-und Zugriffsverwaltung](security.md#identity-and-access-management)        |
+|Netzwerksicherheit     | Siehe [Netzwerksicherheit](security.md#network-security)        |
+|Informationssicherheit     |  Siehe [Informationssicherheit](security.md#information-security)       |
+|Datenwiederherstellung     | OneDrive for Business        |
+|Kern Produktivität     | Microsoft 365 Apps for Enterprise    |
+|Browser     | Microsoft Edge        |
 
-Microsoft Managed Desktop unterstützt nur Gerätetreiber, die über Windows Update oder einen installierten Posteingang mit dem von Microsoft verwalteten Gerät zur Verfügung stehen. 
 
-Wenn eine Anwendung einen bestimmten Treiber benötigt, um Sie auszuführen, wird Sie als eingeschränkte Anwendung betrachtet und erfordert eine Ausnahme, bevor Sie in Microsoft Managed Desktop bereitgestellt wird. 
+
+
+Microsoft Managed Desktop überwacht möglicherweise andere auf verwalteten Geräten ausgeführten Software. Wenn sich dies negativ auf die Systemsicherheit, Leistung oder Zuverlässigkeit auswirkt, müssen Sie möglicherweise eine Ausnahme vom Dienstplan anfordern.
+
 
