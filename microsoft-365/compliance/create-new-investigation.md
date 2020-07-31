@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie eine neue Untersuchung in Data Investigations (Preview) im Microsoft 365 Compliance Center erstellen, konfigurieren und speichern.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1dae733a2e6dacfc2cc871cc9b589927d306599a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035777"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526911"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 
@@ -34,13 +34,13 @@ ms.locfileid: "44035777"
  
 4. Klicken Sie auf der Seite **Daten Ermittlungen (Vorschau)** auf **neue Untersuchung erstellen**.
     
-5. Geben Sie auf der Seite **neue Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich), und geben Sie dann eine optionale unter Suchnummer und eine Beschreibung ein. Beachten Sie, dass der unter Such Name in Ihrer Organisation eindeutig sein muss.
+5. Geben Sie auf der Seite **neue Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich), und geben Sie dann eine optionale unter Suchnummer und eine Beschreibung ein. Der unter Such Name muss in Ihrer Organisation eindeutig sein.
 
 6. Führen **Sie unter möchten Sie zusätzliche Einstellungen nach dem Erstellen dieser Untersuchung konfigurieren?** eine der folgenden Aktionen aus:
 
     - Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** in der neuen Untersuchung an. Auf diese Weise können Sie der Untersuchung Mitglieder hinzufügen.
     
-    - Klicken Sie auf **Nein** , um die Untersuchung nur zu erstellen und Sie in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können nach Erstellung der Untersuchung jederzeit Mitglieder hinzufügen oder Einstellungen ändern.
+    - Klicken Sie auf **Nein** , um die Untersuchung nur zu erstellen und Sie in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können Mitglieder hinzufügen oder Einstellungen jederzeit ändern, nachdem die Untersuchung erstellt wurde.
 
 7. Klicken Sie auf **Speichern** , um die Untersuchung zu erstellen.
 

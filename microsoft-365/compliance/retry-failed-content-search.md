@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: Während einer Untersuchung können Sie die Schaltfläche Wiederholen verwenden, um Inhalts Suchvorgänge mit Inhaltsspeicherort Fehlern aufzulösen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034629"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527633"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
 
-Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine große Anzahl von Postfächern zu durchsuchen, erhalten Sie möglicherweise ähnliche Suchfehler wie die folgenden:
+Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine große Anzahl von Postfächern zu durchsuchen, erhalten Sie möglicherweise Suchfehler, die dem Fehler ähneln:
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -41,7 +42,7 @@ Diese Fehler (mit Fehlercodes von CS001-002, CS003-002, CS008-009, CS012-002 und
 
 ## <a name="cause-of-content-location-errors"></a>Ursache für Fehler bei Inhaltsverzeichnissen
 
-Beim Durchsuchen einer großen Anzahl von Postfächern wird die Suche auf Tausende von Servern in einem Microsoft-Rechenzentrum verteilt. Zu einem bestimmten Zeitpunkt können bestimmte Server im Neustart Zustand sein oder bei einem Failover auf redundante Kopien. In beiden Fällen wird die Anforderung der Inhaltssuche zum Abrufen von Daten Timeout. Im vorherigen Beispiel waren die Fehler für die Postfächer, bei denen ein Fehler aufgetreten ist, das Ergebnis der Such Zeitüberschreitung.
+Beim Durchsuchen einer großen Anzahl von Postfächern wird die Suche auf Tausende von Servern in einem Microsoft-Rechenzentrum verteilt. Zu einem bestimmten Zeitpunkt können bestimmte Server im Neustart Zustand sein oder bei einem Failover auf redundante Kopien. In beiden Fällen wird bei der Anforderung der Inhaltssuche zum Abrufen von Daten ein Timeout auftritt. Im vorherigen Beispiel waren die Fehler für die Postfächer, bei denen ein Fehler aufgetreten ist, das Ergebnis der Such Zeitüberschreitung.
 
 ## <a name="resolving-content-location-errors"></a>Beheben von Inhaltsspeicherort Fehlern
 
@@ -53,7 +54,7 @@ Dies führt dazu, dass die Suche nur für die nicht erfolgreichen Postfächer er
 
 ## <a name="tips-to-avoid-content-location-errors"></a>Tipps zum Vermeiden von Inhaltsspeicherort Fehlern
 
-Im folgenden finden Sie einige Ursachen für Fehler bei der Inhalts Lokalisierung und einige Tipps, die Ihnen beim Durchsuchen einer großen Anzahl von Postfächern helfen sollen, dies zu vermeiden.
+Hier finden Sie einige zusätzliche Ursachen für Fehler bei der Inhalts Lokalisierung und einige Tipps, die Sie beim Durchsuchen einer großen Anzahl von Postfächern vermeiden können.
 
 - Das durchsuchte Postfach ist aufgrund von Benutzeraktivitäten möglicherweise ausgelastet. In diesem Fall kann sich der Suchdienst selbst Drosseln, um zu verhindern, dass das Postfach nicht mehr verfügbar ist. Um dies zu vermeiden, versuchen Sie, Suchvorgänge außerhalb der Geschäftszeiten auszuführen.
 
@@ -66,6 +67,6 @@ Im folgenden finden Sie einige Ursachen für Fehler bei der Inhalts Lokalisierun
 
 - Zu viele Suchvorgänge werden gleichzeitig für dasselbe Postfach ausgeführt. Versuchen Sie nach Möglichkeit, eine Suche auf einem Postfach gleichzeitig auszuführen.
 
-- Durchsuchen zu vieler Postfächer in einer einzigen Suche. Die Wahrscheinlichkeit von Inhaltsspeicherort Fehlern steigt beim Durchsuchen einer sehr großen Anzahl von Postfächern. Versuchen Sie nach Möglichkeit, mehrere Suchvorgänge auszuführen, damit jede Suche eine Teilmenge von Postfächern in Ihrer Organisation enthält.
+- Durchsuchen zu vieler Postfächer in einer einzigen Suche. Die Wahrscheinlichkeit von Inhaltsspeicherort Fehlern steigt beim Durchsuchen einer großen Anzahl von Postfächern. Versuchen Sie nach Möglichkeit, mehrere Suchvorgänge auszuführen, damit jede Suche eine Teilmenge von Postfächern in Ihrer Organisation enthält.
 
 - Die erforderliche Wartung wird für das Postfach ausgeführt. Obwohl diese Ursache wahrscheinlich selten auftritt, warten Sie eine Weile, nachdem Sie den Inhaltsspeicherort Fehler erhalten haben, und wiederholen Sie die Suche.

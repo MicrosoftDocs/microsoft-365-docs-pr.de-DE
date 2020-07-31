@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Rufen Sie Microsoft 365 für Kampagnen ab, damit Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation schützen können.
-ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635624"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527330"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Abrufen von Microsoft 365 für Kampagnen
 
@@ -55,7 +56,7 @@ Es gibt keine minimale Zeit Verpflichtung, wenn Sie sich bei Microsoft 365 für 
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Wie qualifiziere ich mich für spezielle Preise?
 
-1. Wechseln Sie https://m365forcampaigns.microsoft.com/ zu und geben Sie einige Details zu Ihrer Organisation an. Mit den von Ihnen bereitgestellten Details können Sie sicherstellen, dass Sie eine politische Kampagne auf nationaler Ebene in den Vereinigten Staaten darstellen. Es gibt keine Verpflichtung, wenn Sie dieses Formular ausfüllen. 
+1. Wechseln Sie zu https://m365forcampaigns.microsoft.com/ und geben Sie einige Details zu Ihrer Organisation an. Mit den von Ihnen bereitgestellten Details können Sie sicherstellen, dass Sie eine politische Kampagne auf nationaler Ebene in den Vereinigten Staaten darstellen. Es gibt keine Verpflichtung, wenn Sie dieses Formular ausfüllen. 
 2. Nachdem Sie das Formular abgeschlossen haben, benötigen wir einige Tage, um Ihre Informationen zu überprüfen. 
 3. Nachdem Sie überprüft haben, dass Sie eine politische Kampagne auf nationaler Ebene oder eine Partei darstellen, erhalten Sie eine e-Mail-Einladung von Microsoft. Ihre Einladung enthält einen für Ihre Organisation spezifischen Registrierungslink. 
 

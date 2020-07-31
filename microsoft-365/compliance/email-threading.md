@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Beim Verwalten einer Datenermittlung analysiert e-Mail-Threading eine e-Mail-Unterhaltung und trennt jede Nachricht in verschiedene Kategorien.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cc466bf89187f292acd454fd8ca6efb05958d2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 66238d87bd314f2b29e77886f33cb53f9a879aff
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035657"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527663"
 ---
 # <a name="email-threading"></a>E-Mail-Threading
 
@@ -30,18 +30,18 @@ Ziehen Sie eine e-Mail-Unterhaltung in Frage, die schon eine Weile vorgeht. In d
 
 ## <a name="what-does-email-threading-do"></a>Was bewirkt das e-Mail-Threading?
 
-E-Mail-Threading analysiert jede e-Mail und desconstructs Sie an einzelne Nachrichten; jede e-Mail ist eine Kette einzelner Nachrichten. Anschließend werden alle e-Mails im Arbeitspaket analysiert, um festzustellen, ob eine e-Mail über eindeutige Inhalte verfügt oder ob die Kette vollständig in einer anderen e-Mail enthalten ist. Am Ende werden e-Mails in vier Kategorien unterteilt:
+E-Mail-Threading analysiert jede e-Mail und dekonstruiert Sie in einzelne Nachrichten; jede e-Mail ist eine Kette einzelner Nachrichten. Anschließend werden alle e-Mails im Arbeitspaket analysiert, um festzustellen, ob eine e-Mail über eindeutige Inhalte verfügt oder ob die Kette vollständig in einer anderen e-Mail enthalten ist. Am Ende werden e-Mails in vier Kategorien unterteilt:
 
-- **Inclusive**: die letzte Nachricht in der e-Mail weist eindeutige Inhalte auf, und die e-Mail enthält alle Anlagen, die in anderen e-Mails enthalten waren, in denen der Inhalt vollständig in dieser e-Mail enthalten ist.
+- **Inklusiv**: Die letzte Nachricht der E-Mail hat einen eindeutigen Inhalt, und die E-Mail enthält alle Anhänge, die Teil anderer E-Mails waren, deren Inhalt vollständig in dieser E-Mail angezeigt wird.
 
 
-- **Inclusive minus**: die letzte Nachricht in der e-Mail hat eindeutige Inhalte, aber die e-Mail enthält nicht einige der Anlagen, die in anderen e-Mails enthalten waren, in denen der Inhalt vollständig in dieser e-Mail enthalten ist.
+- **Inklusiv – Minus**: Die letzte Nachricht in der E-Mail hat einen eindeutigen Inhalt, aber einige Anhänge, die Teil anderer E-Mails waren, deren Inhalt vollständig in dieser E-Mail angezeigt wird, sind nicht in dieser E-Mail enthalten.
 
-- **Inklusive Kopie**: eine exakte Kopie einer inclusive/inklusive minus-e-Mail
+- **Inklusiv – Kopie**: Eine genaue Kopie einer als „Inklusiv“ bzw. „Inklusiv – Minus“ gekennzeichneten E-Mail.
 
-- **None**: der Inhalt dieser e-Mail-Nachricht ist vollständig in mindestens einer e-Mail enthalten, die als inclusive/inclusive minus gekennzeichnet ist.
+- **Ohne**: Der Inhalt dieser E-Mail ist vollständig in mindestens einer als „Inklusiv“ bzw. „Inklusiv – Minus“ gekennzeichneten E-Mail enthalten.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>Wie unterscheidet er sich von den Unterhaltungen in Outlook?
 Dies klingt auf einen Blick ähnlich wie Konversations Gruppierungen in Outlook. Es gibt jedoch einige wichtige Unterschiede. Halten Sie sich an eine e-Mail-Unterhaltung, die in zwei Unterhaltungen verzweigt wurde. Beispielsweise hat jemand auf eine e-Mail geantwortet, die nicht die neueste in der Unterhaltung ist, sodass die letzten beiden e-Mails in der Unterhaltung über eindeutige Inhalte verfügen.
 
-Outlook würde die e-Mails weiterhin in einer einzigen Unterhaltung gruppieren. Wenn Sie nur die letzte e-Mail lesen, würde das Fehlen des Kontexts der vorletzte e-Mail bedeuten, die auch eindeutige Inhalte enthält. Da das e-Mail-Threading jede e-Mail in einzelne Komponenten analysiert und diese vergleicht, würde das e-Mail-Threading beide letzten e-Mails als inklusivzeichen markieren, um sicherzustellen, dass Sie keinen Kontext verpassen, solange Sie alle als inklusiv markierten e-Mails lesen.
+Outlook würde die e-Mails weiterhin in einer einzigen Unterhaltung gruppieren. Wenn Sie nur die letzte e-Mail lesen, würde das Fehlen des Kontexts der vorletzte e-Mail bedeuten, die auch eindeutige Inhalte enthält. Da e-Mail-Threading jede e-Mail in einzelne Komponenten analysiert und diese vergleicht, würde das e-Mail-Threading beide beiden letzten e-Mails als inklusiv kennzeichnen und sicherstellen, dass Sie keinen Kontext verpassen, solange Sie alle als inklusiv markierten e-Mails lesen.

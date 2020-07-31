@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren in der US Government Cloud können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personal System (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205025"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527643"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten in US Government (Vorschau)
 
@@ -87,7 +87,7 @@ Im nächsten Schritt erstellen Sie einen HR-Connector im Microsoft 365 Complianc
 
    b. Geben Sie einen Namen für den HR-Konnektor ein.
 
-5. Geben Sie auf der Seite **Dateizuordnung** die drei Spalten überschriftennamen ein (auch als *Parameter* aus der CSV-Datei, die Sie in Schritt 2 in jedem der entsprechenden Felder erstellt haben. Bei den Namen wird die Groß-/Kleinschreibung nicht beachtet. Wie bereits erläutert, müssen die Namen, die Sie in diese Felder eingeben, mit den Parameternamen in der CSV-Datei übereinstimmen. Im folgenden Screenshot sind beispielsweise die Parameternamen aus dem Beispiel in der CSV-Beispieldatei in Schritt 2 dargestellt.
+5. Geben Sie auf der Seite **Dateizuordnung** die Namen der drei Spaltenüberschriften (auch als *Parameter*bezeichnet) aus der CSV-Datei ein, die Sie in Schritt 2 in jedem der entsprechenden Felder erstellt haben. Bei den Namen wird die Groß-/Kleinschreibung nicht beachtet. Wie bereits erläutert, müssen die Namen, die Sie in diese Felder eingeben, mit den Parameternamen in der CSV-Datei übereinstimmen. Im folgenden Screenshot sind beispielsweise die Parameternamen aus dem Beispiel in der CSV-Beispieldatei in Schritt 2 dargestellt.
 
    ![Spaltenüberschrift Namen entsprechen denen in der CSV-Datei](../media/HRConnectorWizard3.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Testen von Übungsanleitungen für Lösungen und Szenarien
+title: Testumgebungsleitfäden für Lösungen und Szenarien
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,18 +14,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.custom:
 - Ent_Architecture
 description: Verwenden Sie Test Lab Guides, um Microsoft 365-Lösungen und-Szenarien in einer Entwicklungs-/Test Umgebung zu erstellen.
-ms.openlocfilehash: 38b06678df46189f49b40a5752803786a94784fe
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159443"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521301"
 ---
-# <a name="test-lab-guides-for-solutions-and-scenarios"></a>Testen von Übungsanleitungen für Lösungen und Szenarien
+# <a name="test-lab-guides-for-solutions-and-scenarios"></a>Testumgebungsleitfäden für Lösungen und Szenarien
 
 Mithilfe von Testumgebungsanleitungen können Sie schnell mehr zu Microsoft-Produkten erfahren. Sie enthalten Anweisungen zum Konfigurieren vereinfachter, aber repräsentativer Testumgebungen. Sie können diese Umgebungen für Demos, Anpassungen oder das Erstellen komplexer Machbarkeitsstudien für die Dauer eines Test- oder bezahlten Abonnements verwenden. 
 

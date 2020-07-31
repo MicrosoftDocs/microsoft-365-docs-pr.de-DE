@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c8b8416b276ce0e5335b0c0193c6cd79a81d7959
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 778693787c3d26806b02a2ffbde57e3347326d87
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44581586"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522265"
 ---
 # <a name="networking-up-to-the-cloud--one-architects-viewpoint"></a>Vernetzen (zur Cloud) – ein Architektur Standpunkt
 

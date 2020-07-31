@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.
-ms.openlocfilehash: 0618af5bcc18622ee8091782f55648f455230b6b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637897"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527555"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 
@@ -39,7 +39,7 @@ Weitere Informationen zur Verarbeitung von Unterstützung und teilweise indizier
 
 ## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungs Ergebnisse
 
-Nachdem der erweiterte Indizierungsprozess abgeschlossen ist, können Sie ein Verständnis der Effektivität der erneuten Verarbeitung erhalten.  In der Ansicht Erweiterte Indizierungs Ergebnisse auf der Registerkarte **Verarbeitung** für einen Fall wird im Diagramm die Anzahl der Elemente aufgeführt, die dem *Hybrid Index*hinzugefügt werden.  Der Hybrid Index ist der Ort, an dem Advanced eDiscovery den erneut verarbeiteten Inhalt speichert.
+Nachdem der erweiterte Indizierungsprozess abgeschlossen ist, können Sie ein Verständnis der Effektivität der erneuten Verarbeitung erhalten.  In der Ansicht Erweiterte Indizierungs Ergebnisse auf der Registerkarte **Verarbeitung** für einen Fall wird im Diagramm die Anzahl der Elemente aufgeführt, die dem *Hybrid Index*hinzugefügt werden.  Der Hybrid Index ist der Ort, an dem Advanced eDiscovery die wiederaufgearbeiteten Inhalte speichert.
 
 Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erfordern, und ein weiteres Diagramm mit Fehlern nach Dateityp. Weitere Informationen finden Sie unter:
 
@@ -49,7 +49,7 @@ Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erforder
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>Aktualisieren des erweiterten Index für depotverwalter
 
-Wenn eine Depotstelle einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle teilweise indizierten Elemente erneut verarbeitet. Im Laufe der Zeit werden dem Postfach eines Benutzers oder dem OneDrive-Konto jedoch möglicherweise mehr teilweise indizierte Elemente hinzugefügt.  Bei Bedarf können Sie den Index für eine bestimmte Depotbank aktualisieren. Weitere Informationen finden Sie unter [Manage depotbanks in a Advanced eDiscovery Case](manage-new-custodians.md#re-index-custodian-data). Sie können den Index für alle Verwalter in einem Fall auch aktualisieren, indem Sie auf der Registerkarte **Verarbeitung** auf den **Index aktualisieren** klicken.
+Wenn eine Depotstelle einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle teilweise indizierten Elemente neu verarbeitet. Im Laufe der Zeit werden dem Postfach eines Benutzers oder dem OneDrive-Konto jedoch möglicherweise mehr teilweise indizierte Elemente hinzugefügt.  Bei Bedarf können Sie den Index für eine bestimmte Depotbank aktualisieren. Weitere Informationen finden Sie unter [Manage depotbanks in a Advanced eDiscovery Case](manage-new-custodians.md#re-index-custodian-data). Sie können den Index für alle Verwalter in einem Fall auch aktualisieren, indem Sie auf der Registerkarte **Verarbeitung** auf den **Index aktualisieren** klicken.
 
 > [!NOTE]
 > Das Aktualisieren von Depot Indizes ist ein langwieriger Prozess. Es wird empfohlen, dass Sie Indizes nicht mehr als einmal pro Tag in einem Fall aktualisieren.

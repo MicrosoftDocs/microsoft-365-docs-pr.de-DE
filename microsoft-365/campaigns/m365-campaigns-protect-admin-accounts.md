@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633653"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527186"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
@@ -67,7 +68,7 @@ Sie sollten auch ein sicherungskonto erstellen, das nicht mit mehrstufiger Authe
 
 ## <a name="create-a-user-account-for-yourself"></a>Erstellen eines Benutzerkontos für sich selbst
 
-Verwenden Sie Ihr Benutzerkonto, um an der Zusammenarbeit mit Ihrer Organisation teilzunehmen, einschließlich der Überprüfung von e-Mails. Das heißt, Ihre Administratoranmeldeinformationen ähneln möglicherweise *Alice. Chavez<span></span>@contoso. org* , und Ihr reguläres Benutzerkonto ähnelt *Alice<span></span>@contoso. com*.
+Verwenden Sie Ihr Benutzerkonto, um an der Zusammenarbeit mit Ihrer Organisation teilzunehmen, einschließlich der Überprüfung von e-Mails. Das heißt, Ihre Administratoranmeldeinformationen ähneln möglicherweise *Alice. Chavez <span></span> @contoso. org* , und Ihr reguläres Benutzerkonto ähnelt *Alice <span></span> @contoso. com*.
 
 So erstellen Sie ein neues Benutzerkonto:
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Admin Center</a> , und wählen Sie dann **Benutzer** \> **aktive Benutzer** im linken Navigationsbereich aus.

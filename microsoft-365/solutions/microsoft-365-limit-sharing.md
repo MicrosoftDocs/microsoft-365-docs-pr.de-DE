@@ -9,7 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 search.appverid:
 - SPO160
 - MET150
@@ -17,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die Optionen zum Einschränken oder Deaktivieren der Freigabe in Microsoft 365.
-ms.openlocfilehash: a80a77580140d85ea0b2008eec2df9002cf5a3d7
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 69a71d84f32316278353f8de392202f1a92dc22d
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160111"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528182"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Einschränken der Freigabe in Microsoft 365
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Wenn Benutzer mit gültigen Geschäfts-oder Schul Konten angemeldet sind, können Sie Cloud-basierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die die Datenschutz-, Sicherheits-und Konformitäts Zusagen von Office 365 auf Unternehmensebene erfüllen.
-ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083550"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521277"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -33,7 +33,7 @@ Cortana, Ihr persönlicher Produktivitäts Assistent, bietet AI-basierte Erfahru
 
 Als persönlicher Produktivitäts Assistent wurde Cortana entwickelt, um Features bereitzustellen, die sicher und sicher verarbeiten und begründen Office 365 Daten wie e-Mails, Dateien, Chats usw., um Zeit zu sparen, die Effizienz zu erhöhen und die Produktivität Ihrer Benutzer zu verbessern.
 
-Wir konzentrieren uns Cortana auf die Unternehmensproduktivität. 
+Wir konzentrieren uns Cortana auf die Unternehmensproduktivität.
 
 - Im Einklang mit anderen Office 365 Diensten erfüllen Cortana Enterprise Services dieselben Datenschutz-, Sicherheits-und Compliance-Zusagen auf Unternehmensebene wie in den [Online Services-Nutzungsbedingungen (Ost)](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -159,7 +159,7 @@ Deaktivieren des Cortana-Zugriffs auf von Microsoft gehostete Daten Ihrer Organi
 
 1. Wählen Sie im Microsoft 365 Admin Center **Einstellungen**für  >  **Organisationseinstellungen** aus, und wählen Sie **Cortana**aus.
 
-2. Deaktivieren Sie das Kontrollkästchen für **diese Cortana optionalen verbundenen Erfahrungen zulassen, um die von Microsoft gehosteten Daten Ihrer Organisation zu verwenden** , um Cortana verbundene Benutzeroberflächen zu deaktivieren.
+2. Deaktivieren Sie das Kontrollkästchen für **Cortana in Windows 10 zulassen (Version 1909 und früher) und die Cortana-App auf IOS und Android, um im Auftrag von Personen in Ihrer Organisation auf von Microsoft gehostete Daten zuzugreifen** , um die mit Cortana verbundenen Benutzeroberflächen zu deaktivieren.
 
 3. Wählen Sie **Änderungen speichern** aus.
 

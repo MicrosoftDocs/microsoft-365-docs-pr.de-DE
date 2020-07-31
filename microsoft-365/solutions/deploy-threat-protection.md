@@ -10,15 +10,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- M365solutions
+- m365solution-overview
+- m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: e39e69fa7c65d7846cc91b3603c5b6ef96f56752
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: 47ebc8fa23511fbb653b87a31c8a39e1d99c504e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724842"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527720"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Bereitstellen von Threat Protection-Funktionen in Microsoft 365
 
@@ -54,7 +55,7 @@ In der folgenden Abbildung ist ein empfohlener Pfad für die bereitstellungdiese
 |Azure Advanced Threat Protection     |  Eine Cloud-basierte Sicherheitslösung, die ihre lokalen Active Directory Signale nutzt, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. Konzentrieren Sie sich auf das nächste, da es Ihre on-Prem-und Cloud-Infrastruktur schützt, keine Abhängigkeiten oder Voraussetzungen hat und unmittelbare Vorteile bieten kann.       | 
 |Office 365 Advanced Threat Protection     | Schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. Schutzmaßnahmen für Malware, Phishing, Spoofing und andere Angriffstypen. Dies wird als nächstes empfohlen, da das Bereitstellen von Änderungs Steuerelementen, Migrieren von Einstellungen aus dem etablierten System und anderen Überlegungen länger dauern kann. <br><br>Hinweis: Stellen Sie sicher, dass Sie auch die Threat Protection-Funktionen konfigurieren, die in allen Office 365 Abonnements (Exchange Online Protection) enthalten sind.       |
 |Microsoft Defender Advanced Threat Protection    | Eine Endpunktschutz Plattform, die zum verhindern, erkennen, untersuchen und reagieren auf Erweiterte Bedrohungen beiträgt. Diese Bereitstellung dauert länger, kann aber parallel zu den anderen Funktionen ausgeführt werden, wenn andere Administratoren dafür verantwortlich sind.   |
-|Microsoft Cloud App Security     |   Ein Cloud Access-Sicherheits Broker für Ermittlung, Untersuchung und Steuerung. Sie können diese frühzeitig aktivieren, um mit dem Sammeln von Daten und Einblicken zu beginnen. Die Implementierung von Informationen und anderer gezielter Schutz in ihren Saas-apps umfasst die Planung und kann mehr Zeit in Anspruch nehmen.       | 
+|Microsoft Cloud App-Sicherheit     |   Ein Cloud Access-Sicherheits Broker für Ermittlung, Untersuchung und Steuerung. Sie können diese frühzeitig aktivieren, um mit dem Sammeln von Daten und Einblicken zu beginnen. Die Implementierung von Informationen und anderer gezielter Schutz in ihren Saas-apps umfasst die Planung und kann mehr Zeit in Anspruch nehmen.       | 
 
 > [!TIP]
 > Organisationen mit mehreren Sicherheitsteams können diese Funktionen parallel implementieren.
@@ -70,7 +71,7 @@ Um sicherzustellen, dass Ihre Organisation den bestmöglichen Schutz bietet, ric
 5. [Konfigurieren von Microsoft Defender Advanced Threat Protection](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-advanced-threat-protection)
 6. [Konfigurieren der Microsoft Cloud-App-Sicherheit](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
 7. [Überwachen des Status und ergreifen von Aktionen](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [Schulen von Benutzern](deploy-threat-protection-configure.md#step-8-train-users)
+8. [Schulung der Benutzer](deploy-threat-protection-configure.md#step-8-train-users)
 
 Ihre Features zum Schutz vor Bedrohungen können parallel konfiguriert werden, wenn Sie also mehrere Sicherheitsteams für unterschiedliche Dienste zuständig sind, können Sie die Schutzfunktionen Ihrer Organisation gleichzeitig konfigurieren. Das folgende Diagramm veranschaulicht den allgemeinen Prozess für die Bereitstellung von Threat Protection-Funktionen. 
 

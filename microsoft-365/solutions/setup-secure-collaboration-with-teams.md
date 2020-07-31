@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: Informationen zum Einrichten von Teams zum Schutz Ihrer Daten basierend auf der Vertraulichkeit
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724805"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527708"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
 
@@ -82,7 +83,7 @@ Diese Ebenen – *Baseline*, *sensibel*und *hoch sensibel* – verbessern schrit
 |Dateifreigabe|Zulässig|Zulässig|Nur Teambesitzer können freigeben.|
 |Team Mitgliedschaft|Jeder kann an öffentlichen Teams teilnehmen.<br>Team Besitzer-Genehmigung für die Teilnahme an privaten Teams erforderlich.|Für den Beitritt erforderliche Team Besitzergenehmigung.|Für den Beitritt erforderliche Team Besitzergenehmigung.|
 |Dokumentverschlüsselung|||Verfügbar mit Sensitivitäts Bezeichnung|
-|Gastfreigabe|Allowed|Kann zugelassen oder blockiert werden|Kann zugelassen oder blockiert werden|
+|Gastfreigabe|Zulässig|Kann zugelassen oder blockiert werden|Kann zugelassen oder blockiert werden|
 |Nicht verwaltete Geräte|Keine Einschränkung|Webbasierter Zugriff|Gesperrt|
 
 Das Konfigurieren dieser Ebenen umfasst Folgendes:
@@ -124,7 +125,7 @@ Wenn Sie bereit sind, diese Lösung bereitzustellen, fahren Sie mit den folgende
 1. Konfigurieren Sie die [drei verschiedenen Schutzebenen für Microsoft Teams](configure-teams-three-tiers-protection.md).
 2. Konfigurieren Sie Einstellungen für [die Freigabe von Informationen mit Vertraulichkeit für Personen außerhalb Ihrer Organisation](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft 365 Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security)
 

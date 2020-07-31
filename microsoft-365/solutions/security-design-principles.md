@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160051"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522277"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Sicherheitshürden, die Sie überwinden können – ein Architektur Standpunkt
 
@@ -80,7 +79,7 @@ Um diese Hürden zu beseitigen, hat Microsoft mehrere Ressourcen kuratiert, die 
 
 |Ressource   |Weitere Informationen  |
 |---------|---------|
-|[Wichtige Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md)      | Wenn Sie sich plötzlich für eine hauptsächlich Work-at-Home-Belegschaft unterstützen, hilft Ihnen dieser Artikel, die Sicherheit schnell hochzufahren. Sie enthält die wichtigsten empfohlenen Aufgaben basierend auf Ihrem Lizenzierungs Plan.    |
+|[Die wichtigsten Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md)      | Wenn Sie sich plötzlich für eine hauptsächlich Work-at-Home-Belegschaft unterstützen, hilft Ihnen dieser Artikel, die Sicherheit schnell hochzufahren. Sie enthält die wichtigsten empfohlenen Aufgaben basierend auf Ihrem Lizenzierungs Plan.    |
 |[Microsoft 365 Sicherheit für geschäftliche Entscheidungsträger](../security/Microsoft-365-security-for-bdm.md)    | Wenn Sie Zeit für einen umfassenderen Plan haben, enthält dieser Artikel Empfehlungen, die sich über Microsoft 365, priorisiert nach Angriffsfläche, erstrecken. Es kommt sogar mit einer Tabelle, die Sie verwenden können, um Nachlizenzierung und Bereich zu sortieren (wie Identität, Bedrohungsschutz und Überwachung).  |
 |[Empfehlungen zur Microsoft-Sicherheitsarchitektur](https://docs.microsoft.com/security/compass/compass)    | Wenn Sie ein Sicherheitsarchitekt sind, sollten Sie die von der Disziplin organisierten Sicherheitsempfehlungen sehen, einschließlich Identitäts-, Netzwerk-und Sicherheitsmaßnahmen.   |
 |[Empfehlungen für Microsoft-Sicherheitsvorgänge](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Informationen zu Microsoft-Empfehlungen zum Einrichten und Ausführen eines Security Operations Centers (SoC) |

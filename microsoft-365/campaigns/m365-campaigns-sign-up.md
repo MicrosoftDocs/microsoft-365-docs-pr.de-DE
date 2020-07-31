@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632779"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527114"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -80,7 +81,7 @@ Wenn Sie bereits über ein vorhandenes Abonnement für Microsoft 365 for Busines
 2. Klicken oder tippen Sie auf der Seite **Willkommen, Let es Get to Know You** Page auf **möchten Sie dieses zu einem vorhandenen Abonnement hinzufügen? Melden Sie sich an**.
     
     ![Wählen Sie in der oberen rechten Ecke anmelden aus.](../media/addtoexisting.png)
-3. Geben Sie auf der Anmeldeseite den Administrator-Alias für Ihr vorhandenes Abonnement ein, Beispiels *Weise<span></span>Alice@VoteContoso. org*, wählen Sie **weiter**aus, geben Sie Ihr Kennwort ein, und klicken Sie dann auf **Anmelden**.
+3. Geben Sie auf der Anmeldeseite den Administrator-Alias für Ihr vorhandenes Abonnement ein, beispielsweise *Alice@VoteContoso <span></span> . org*, wählen Sie **weiter**aus, geben Sie Ihr Kennwort ein, und klicken Sie dann auf **Anmelden**.
 4. Auf der Seite **wie sieht das aus?** geben Sie die Anzahl der Benutzer ein, die Sie haben, und klicken Sie **dann auf weiter**. Sie müssen hier keinen Promo-Code eingeben, da er bereits in der Einladungs-URL enthalten ist.
 5. Geben Sie auf der Seite **wie soll ich bezahlen?** die Zahlungsmethode ein, und wählen Sie **Bestellung platzieren**aus.
 

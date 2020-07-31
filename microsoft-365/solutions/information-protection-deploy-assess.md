@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Ermitteln Sie die Datenschutzbestimmungen, die relevanten Szenarien, ihre Bereitschaft und die Typen vertraulicher Informationen in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126606"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521373"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente mit Microsoft 365
 
@@ -59,7 +59,7 @@ Für eine spätere Bezugnahme in den Artikeln dieser Gesamtlösung enthält dies
 
 | Verordnung | Artikel/Abschnitt | Auszug | Zutreffende Kategorien für technische Steuerelemente |
 |:-------|:-----|:-------|:-------|
-| DSGVO | Artikel 5 Absatz 1 Buchstabe f | Personenbezogene Daten werden in einer Weise verarbeitet, die eine angemessene Sicherheit der personenbezogenen Daten, einschließlich des Schutzes vor unbefugter oder unrechtmäßiger Verarbeitung und gegen versehentlichen Verlust, Zerstörung oder Beschädigung, durch geeignete technische oder organisatorische Maßnahmen ("Integrität und Vertraulichkeit") gewährleistet.  |  Alle <br> Identität <br> Gerät <br> Bedrohungsschutz <br> Schützen von Informationen <br> Informationen steuern <br> Entdecken und Reagieren |
+| DSGVO | Artikel 5 Absatz 1 Buchstabe f | Personenbezogene Daten werden in einer Weise verarbeitet, die eine angemessene Sicherheit der personenbezogenen Daten, einschließlich des Schutzes vor unbefugter oder unrechtmäßiger Verarbeitung und gegen versehentlichen Verlust, Zerstörung oder Beschädigung, durch geeignete technische oder organisatorische Maßnahmen ("Integrität und Vertraulichkeit") gewährleistet.  |  Alle <br> Identity <br> Gerät <br> Bedrohungsschutz <br> Schützen von Informationen <br> Informationen steuern <br> Entdecken und Reagieren |
 |  | Artikel (32) (1) (a) | Unter Berücksichtigung des Stands der Technik, der Kosten für die Durchführung und der Art, des Umfangs, des Kontexts und der Zwecke der Verarbeitung sowie des Risikos unterschiedlicher Wahrscheinlichkeit und schwere für die Rechte und Freiheiten natürlicher Personen müssen der Controller und der Verarbeiter geeignete technische und organisatorische Maßnahmen ergreifen, um ein dem Risiko entsprechendes Maß an Sicherheit zu gewährleisten. , einschließlich gegebenenfalls: (a) die Pseudonymisierung und Verschlüsselung personenbezogener Daten. | Schützen von Informationen |
 |  | Artikel (13) (2) (a) | "... der Steuerpflichtige muss zum Zeitpunkt der Erlangung personenbezogener Daten der betroffenen Person die folgenden weiteren Informationen zur Verfügung stellen, die erforderlich sind, um eine faire und transparente Verarbeitung sicherzustellen: (a) den Zeitraum, für den die personenbezogenen Daten gespeichert werden oder falls dies nicht möglich ist, die Kriterien, mit denen dieser Zeitraum ermittelt wird. | Informationen steuern |
 |  | Artikel (15) (1) (e) | Die betroffene Person hat das Recht, von der Controller-Bestätigung zu erfahren, ob personenbezogene Daten, die sich auf Sie beziehen, verarbeitet werden, und wenn dies der Fall ist, der Zugriff auf die personenbezogenen Daten und die folgenden Informationen: (e) das Recht, von der Steuerung eine Berichtigung oder Löschung personenbezogener Daten oder eine Einschränkung der Verarbeitung personenbezogener Daten in Bezug auf die betroffene Person anzufordern oder gegen diese Verarbeitung zu verstoßen | Entdecken und Reagieren |
@@ -214,7 +214,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 - [Benutzerdefinierte vertrauliche Informationstypen](../compliance/custom-sensitive-info-types.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](../compliance/create-a-custom-sensitive-information-type.md)
 - [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Daten Übereinstimmungs basierter Klassifizierung](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Inhalts-Explorer
 

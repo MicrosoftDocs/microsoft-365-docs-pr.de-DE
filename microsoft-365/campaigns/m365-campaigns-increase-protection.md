@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Erhalten Sie Hilfe bei der Erhöhung des Schutzniveaus in Microsoft 365
-ms.openlocfilehash: 0583bcb540991f20b3826549125800c80a3738db
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 1e98f2dea06c342858a8acf2c221ea8f955eb75e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079821"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527210"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
@@ -89,7 +90,7 @@ So erstellen Sie eine e-Mail-Transportregel:
 |Führen Sie die folgenden Schritte aus. . .  <br/> |Empfänger durch Nachricht benachrichtigen  <br/> |
 |Nachrichtentext bereitstellen  <br/> |Öffnen Sie diese Dateitypen nicht von Personen, die Sie nicht kennen, da Sie möglicherweise Makros mit bösartigem Code enthalten.  <br/> |
    
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie hier:
   
 - [Umgang mit Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     

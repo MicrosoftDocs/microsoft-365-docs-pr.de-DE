@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten der mehrstufigen Authentifizierung.
-ms.openlocfilehash: 35171688f9e224bdcb9ce8a592cc80124d253d2d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a0bf5167ae6b5268f7bfeabd4ae554ae5f279dbe
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633701"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527150"
 ---
 # <a name="set-up-multifactor-authentication"></a>Einrichten einer mehrstufigen Authentifizierung
 

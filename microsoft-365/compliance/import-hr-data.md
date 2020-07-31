@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratoren können einen Daten Konnektor einrichten, um Mitarbeiterdaten aus dem Personalwesen (HR) Ihrer Organisation nach Microsoft 365 zu importieren. Auf diese Weise können Sie Personaldaten in Richtlinien für das Insider Risikomanagement verwenden, um die Aktivität bestimmter Benutzer zu ermitteln, die eine interne Bedrohung für Ihre Organisation darstellen können.
-ms.openlocfilehash: 0cb06bb25e3ba6d4e745094a51fb49663bc7b7b7
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189500"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527587"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Einrichten eines Connectors zum Importieren von HR-Daten (Vorschau)
 
@@ -29,9 +29,9 @@ Einrichten eines Connectors für HR-Daten, die von Insider Risiko-Verwaltungsric
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen ermitteln, welche HR-Szenarien und Daten in Microsoft 365 importiert werden sollen. Auf diese Weise können Sie bestimmen, wie viele CSV-Dateien und HR-Konnektoren Sie erstellen und wie Sie die CSV-Dateien generieren und strukturieren müssen. Die von Ihnen importierten HR-Daten werden durch die Richtlinien für das Insider Risikomanagement bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
+- Bestimmen Sie, welche HR-Szenarien und Daten in Microsoft 365 importiert werden sollen. Auf diese Weise können Sie bestimmen, wie viele CSV-Dateien und HR-Konnektoren Sie erstellen und wie Sie die CSV-Dateien generieren und strukturieren müssen. Die von Ihnen importierten HR-Daten werden durch die Richtlinien für das Insider Risikomanagement bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
 
-- Sie müssen bestimmen, wie die Daten aus dem HR-System Ihrer Organisation (und regelmäßig) abgerufen oder exportiert und den CSV-Dateien hinzugefügt werden, die Sie in Schritt 1 erstellt haben. Mit dem in Schritt 4 ausgeführten Skript werden die HR-Daten in die CSV-Dateien in die Microsoft-Cloud hochgeladen.
+- Legen Sie fest, wie die Daten aus dem HR-System Ihrer Organisation (und regelmäßig) abgerufen oder exportiert und den CSV-Dateien hinzugefügt werden, die Sie in Schritt 1 erstellt haben. Mit dem in Schritt 4 ausgeführten Skript werden die HR-Daten in die CSV-Dateien in die Microsoft-Cloud hochgeladen.
 
 - Ihre Organisation muss einwilligen, dass der Office 365-Import Dienst auf Daten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines globalen Administrators von Microsoft 365 an, und nehmen Sie dann die Anforderung an. Sie müssen diesen Schritt ausführen, bevor Sie den HR-Connector in Schritt 3 erfolgreich erstellen können.
 
@@ -112,8 +112,8 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Änd
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem die Auftragsstufe des Benutzers offiziell geändert wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Bemerkungen**| Gibt die Hinweise an, die von Evaluator zur Änderung der Auftragsebene bereitgestellt wurden. Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 200 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
-| **OldLevel**| Gibt die Auftragsebene des Benutzers vor der Änderung an. Dies ist ein frei Text Parameter und kann eine hierarchische Taxonomie für Ihre Organisation enthalten. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
-| **Ebene**| Gibt die Auftragsebene des Benutzers an, nachdem er geändert wurde. Dies ist ein frei Text Parameter und kann eine hierarchische Taxonomie für Ihre Organisation enthalten. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
+| **OldLevel**| Gibt die Auftragsebene des Benutzers vor der Änderung an. Hierbei handelt es sich um einen frei Text Parameter, der eine hierarchische Taxonomie für Ihre Organisation enthalten kann. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
+| **Ebene**| Gibt die Auftragsebene des Benutzers an, nachdem er geändert wurde. Hierbei handelt es sich um einen frei Text Parameter, der eine hierarchische Taxonomie für Ihre Organisation enthalten kann. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 |||
 
 ### <a name="csv-file-for-performance-review-data"></a>CSV-Datei für Leistungs Überprüfungsdaten
@@ -133,7 +133,7 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Leis
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über das Ergebnis seiner Leistungsüberprüfung informiert wurde. Dies kann das Datum sein, an dem der Leistungsüberprüfungszyklus beendet wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Bemerkungen**| Gibt alle Hinweise an, die der Evaluator dem Benutzer für die Leistungsüberprüfung zur Verfügung gestellt hat. Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 200 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
-| **Rating**| Gibt die für die Leistungsüberprüfung angegebene Bewertung an. Dies ist ein Text-Parameter und kann beliebigen Freiformtext enthalten, den Ihre Organisation verwendet, um die Auswertung zu erkennen. Beispiel: "3 met Erwartungen" oder "2 unterdurchschnittlich". Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 25 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
+| **Rating**| Gibt die für die Leistungsüberprüfung angegebene Bewertung an. Dies ist ein Text Parameter und kann beliebigen Freiformtext enthalten, den Ihre Organisation verwendet, um die Auswertung zu erkennen. Beispiel: "3 met Erwartungen" oder "2 unterdurchschnittlich". Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 25 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>CSV-Datei für Daten zur Leistungs Verbesserungs Planung
@@ -153,7 +153,7 @@ In der folgenden Tabelle werden die einzelnen Spalten in der CSV-Datei für Leis
 | **EmailAddress**  | Gibt die e-Mail-Adresse des Benutzers (UPN) an.|
 | **EffectiveDate** | Gibt das Datum an, an dem der Benutzer offiziell über seinen Leistungsverbesserungsplan informiert wurde. Sie müssen das folgende Datumsformat verwenden: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , das ist das [ISO 8601-Format für Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Bemerkungen**| Gibt alle Hinweise an, die der Evaluator zum Leistungsverbesserungsplan bereitgestellt hat. Hierbei handelt es sich um einen Text Parameter mit einem Grenzwert von 200 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen. |
-| **Rating**| Gibt eine Bewertung oder andere Informationen im Zusammenhang mit der Leistungsüberprüfung an. Plan zur Leistungsverbesserung. Dies ist ein Text-Parameter und kann einen beliebigen Freiformtext enthalten, den Ihre Organisation verwendet, um die Auswertung zu erkennen. Beispiel: "3 met Erwartungen" oder "2 unterdurchschnittlich". Hierbei handelt es sich um einen Text Parameter mit einer Grenze von 25 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
+| **Rating**| Gibt eine Bewertung oder andere Informationen im Zusammenhang mit der Leistungsüberprüfung an. Plan zur Leistungsverbesserung. Dies ist ein Text Parameter und kann beliebigen Freiformtext enthalten, den Ihre Organisation verwendet, um die Auswertung zu erkennen. Beispiel: "3 met Erwartungen" oder "2 unterdurchschnittlich". Hierbei handelt es sich um einen Text Parameter mit einer Grenze von 25 Zeichen. Dieser Parameter ist optional. Sie müssen es nicht in die CSV-Datei einschließen.|
 |||
 
 ### <a name="determining-how-many-csv-files-to-use-for-hr-data"></a>Bestimmen, wie viele CSV-Dateien für HR-Daten verwendet werden sollen
@@ -164,7 +164,7 @@ In Schritt 3 können Sie auswählen, ob für jeden HR-Datentyp separate Connecto
 
 - Die Methode zum Generieren oder sammeln der HR-Daten kann die Anzahl der CSV-Dateien bestimmen. Wenn sich beispielsweise die verschiedenen Typen von HR-Daten, die zum Konfigurieren eines HR-Connectors verwendet werden, in einem einzelnen HR-System in Ihrer Organisation befinden, können Sie die Daten möglicherweise in eine einzelne CSV-Datei exportieren. Wenn Daten jedoch auf verschiedene HR-Systeme verteilt werden, ist es möglicherweise einfacher, Daten in unterschiedliche CSV-Dateien zu exportieren. Beispielsweise können sich Mitarbeiter Rücktritts Daten in einem anderen HR-System als Auftrags-oder Leistungs Überprüfungsdaten befinden. In diesem Fall ist es möglicherweise einfacher, separate CSV-Dateien zu haben, anstatt die Daten manuell in einer einzigen CSV-Datei kombinieren zu müssen. Wie Sie also Daten aus ihren HR-Systemen abrufen oder exportieren, hängt möglicherweise davon ab, wie viele CSV-Dateien Sie benötigen.
 
-- In der Regel wird die Anzahl der zu erstellenden HF-Konnektoren durch die Datentypen in einer CSV-Datei bestimmt. Wenn beispielsweise eine CSV-Datei alle Datentypen enthält, die zur Unterstützung der Implementierung von Insider Risk Management erforderlich sind, benötigen Sie nur einen HF-Connector. Wenn Sie jedoch über zwei separate CSV-Dateien verfügen, die jeweils einen einzelnen Datentyp enthalten, müssen Sie zwei HR-Connectors erstellen. Eine Ausnahme: Wenn Sie eine HRScenario * *-Spalte zu einer CSV-Datei hinzufügen (siehe nächster Abschnitt), können Sie einen einzelnen HF-Konnektor konfigurieren, der verschiedene CSV-Dateien verarbeiten kann.
+- In der Regel wird die Anzahl der zu erstellenden HF-Konnektoren durch die Datentypen in einer CSV-Datei bestimmt. Wenn beispielsweise eine CSV-Datei alle Datentypen enthält, die zur Unterstützung der Implementierung von Insider Risk Management erforderlich sind, benötigen Sie nur einen HF-Connector. Wenn Sie jedoch über zwei separate CSV-Dateien verfügen, die jeweils einen einzelnen Datentyp enthalten, müssen Sie zwei HR-Connectors erstellen. Eine Ausnahme: Wenn Sie einer CSV-Datei eine **HRScenario** -Spalte hinzufügen (siehe nächster Abschnitt), können Sie einen einzelnen HF-Konnektor konfigurieren, der verschiedene CSV-Dateien verarbeiten kann.
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>Konfigurieren einer einzelnen CSV-Datei für mehrere HR-Datentypen
 
@@ -176,7 +176,7 @@ Hier sind die Anforderungen für die Konfiguration einer CSV-Datei mit mehreren 
 
 - Um eine CSV-Datei mit mehreren Typen von HR-Daten zu verwenden, muss der HR-Connector wissen, welche Zeilen in der CSV-Datei welche Typen von HR-Daten enthalten. Dies wird erreicht, indem der CSV-Datei eine zusätzliche **HRScenario** -Spalte hinzugefügt wird. Die Werte in dieser Spalte kennzeichnen den Typ von HR-Daten in jeder Zeile. Werte, die den vier HR-Szenarien entsprechen, können beispielsweise der \` Rücktritt \` , die \` Änderung auf Auftragsebene \` , die \` Leistungsüberprüfung \` und der \` Leistungsverbesserungsplan sein \` .
 
-- Wenn Sie mehrere CSV-Dateien haben, die eine **HRScenario** -Spalte enthalten, müssen Sie sicherstellen, dass jede Datei denselben Spaltennamen und dieselben Werte verwendet, die die spezifischen HR-Szenarien identifizieren.
+- Wenn Sie mehrere CSV-Dateien haben, die eine HRScenario * *-Spalte enthalten, müssen Sie sicherstellen, dass jede Datei denselben Spaltennamen und dieselben Werte verwendet, die die spezifischen HR-Szenarien identifizieren.
 
 Das folgende Beispiel zeigt eine CSV-Datei, die die **HRScenario** -Spalte enthält. Die Werte in der Spalte HRScenario identifizieren den Typ der Daten in der entsprechenden Zeile.
 
@@ -380,6 +380,6 @@ Sie können die Task Planer-app in Windows so ausführen, dass das Skript jeden 
 
 ## <a name="existing-hr-connectors"></a>Vorhandene HR-Konnektoren
 
-Am 20. Juli 2020 haben wir zusätzliche Szenarien veröffentlicht, die von HR-Konnektoren unterstützt werden. Dies sind die HR-Szenarien, die zuvor in diesem Artikel beschrieben wurden. HR-Konnektoren, die vor diesem Datum erstellt wurden, unterstützen nur das Rücktritts Szenario für Mitarbeiter. Wenn Sie vor dem 20. Juli 2020 einen HR-Connector erstellt haben, haben wir ihn so migriert, dass er Ihre HR-Daten weiter in die Microsoft-Cloud migriert. Sie müssen nichts Unternehmen, um diese Funktionalität beizubehalten. Sie können den Connector ohne Unterbrechung weiter verwenden.
+Am 20. Juli 2020 haben wir zusätzliche Szenarien veröffentlicht, die von HR-Konnektoren unterstützt werden. Dies sind die HR-Szenarien, die zuvor in diesem Artikel beschrieben wurden. Jeder vor diesem Datum erstellte HR-Connector unterstützt nur das Szenario für die Resignierung von Mitarbeitern. Wenn Sie vor dem 20. Juli 2020 einen HR-Connector erstellt haben, haben wir ihn so migriert, dass er Ihre HR-Daten weiter in die Microsoft-Cloud migriert. Sie müssen nichts Unternehmen, um diese Funktionalität beizubehalten. Sie können den Connector ohne Unterbrechung weiter verwenden.
 
 Wenn Sie zusätzliche HR-Szenarien implementieren möchten, erstellen Sie einen neuen HR-Connector, und konfigurieren Sie ihn für die zusätzlichen HR-Szenarien, die veröffentlicht wurden. Sie müssen auch eine oder mehrere neue CSV-Dateien erstellen, die die Daten enthalten, um die zusätzlichen HR-Szenarien zu unterstützen. Nachdem Sie einen neuen HR-Connector erstellt haben, führen Sie das Skript mit der Auftrags-ID des neuen Connectors und der CSV-Datei (en) mit den Daten für Ihre zusätzlichen HR-Szenarien aus.

@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: In diesem Artikel finden Sie Versionshinweise, die Änderungen und neue Features für das Tool zur Datenermittlung (Preview) in Microsoft 365 enthalten.
-ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352282"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528025"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Anmerkungen zur Version für Daten Untersuchungen (Preview) in Microsoft 365
 
-Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 365 verwenden, um datenbezogene Vorfälle zu selektieren, zu untersuchen und zu beheben, beispielsweise einen Vorfall mit Datenüberlauf oder eine interne Untersuchung. Die öffentliche Vorschau der Daten Untersuchungen bietet Ihnen frühzeitigen Zugriff auf die bevorstehenden Funktionen und Updates. Wenn Sie frühzeitig Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Data Investigations (Preview) im Security & Compliance Center. Weitere Informationen finden Sie unter [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md).
+Sie können das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 verwenden, um datenbezogene Vorfälle zu selektieren, zu untersuchen und zu beheben, beispielsweise einen Vorfall mit Datenüberlauf oder eine interne Untersuchung. Die öffentliche Vorschau der Daten Untersuchungen bietet Ihnen frühzeitigen Zugriff auf die bevorstehenden Funktionen und Updates. Wenn Sie frühzeitig Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Data Investigations (Preview) im Security & Compliance Center. Weitere Informationen finden Sie unter [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Neuerungen 
 
@@ -36,7 +36,7 @@ Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 36
 
 - **Personen von Interesse** – Wenn Sie Benutzer zu Untersuchungen als interessante Personen hinzufügen, können Sie die Websites Ihres Postfachs, OneDrive für Unternehmen Kontos und Microsoft Teams anzeigen. Sie können Sie verwenden, um Ihre investigativen Inhalts suchen zu bereichern. Um eine Person von Interesse weiter zu untersuchen, können Sie auch Überwachungsdatensätze im Zusammenhang mit ihren Aktivitäten in Microsoft 365 und anderen Microsoft-Diensten anzeigen.
 
-- **Suchen – erstellen** Sie eine organisationsweite Suche mithilfe verschiedener Suchbedingungen. Wenn Sie Benutzer oder Websites kennen, die Sie durchsuchen möchten, können Sie dies tun, indem Sie diese Benutzer als interessante Personen hinzufügen oder Website Standorte im Assistenten zum Erstellen von Such Standorten angeben. 
+- **Suchen – erstellen** einer organisationsweiten Suche mithilfe verschiedener Suchbedingungen. Wenn Sie Benutzer oder Websites kennen, die Sie durchsuchen möchten, können Sie dies tun, indem Sie diese Benutzer als interessante Personen hinzufügen oder Website Standorte im Assistenten zum Erstellen von Such Standorten angeben. 
 
 - **Evidence** – Erstellen eines neuen Beweissatzes und Hinzufügen von Suchergebnissen, die Sie überprüfen möchten. Sie können einzelne Dokumente überprüfen, mit Anmerkungen versehen, um Ermittlungs Notizen zu hinterlassen, und Ergebnisse exportieren, um in eine andere Umgebung zu gelangen. 
 
@@ -44,7 +44,7 @@ Sie können das Tool für neue Daten Untersuchungen (Preview) in in Microsoft 36
 
 - **Redact, Tags und Anmerkungen** – Redact Text, wendet Tags an und macht bei der Überprüfung von Dokumenten Anmerkungen.
   
-- **Erweiterte Indizierung** – wenn es teilweise indizierte Elemente gibt, werden Sie bei Bedarf neu indiziert, sodass alle Daten für die Suche zur Verfügung stehen.
+- **Erweiterte Indizierung** – wenn es teilweise indizierte Elemente gibt, werden Sie neu indiziert bei Bedarf sodass alle Daten für die Suche zur Verfügung stehen.
 
 - **Fehler** Korrektur – beheben oder Herunterladen von Verarbeitungsfehlern. Dies umfasst eine Korrektur Unterstützung für große Dateitypen, kennwortgeschützte Dateien und andere Probleme im Zusammenhang mit Indizierungs Fehlern. 
 

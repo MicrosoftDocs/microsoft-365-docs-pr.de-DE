@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Onlinebesprechungen
+title: Einrichten von Online-Besprechungen
 f1.keywords:
 - NOCSH
 ms.author: stevhord
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Onlinebesprechungen mit Microsoft Teams.
-ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080437"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526864"
 ---
 # <a name="set-up-meetings"></a>Einrichten von Besprechungen
 
@@ -50,7 +51,7 @@ Befolgen Sie diese bewährten Methoden für Ihre Onlinebesprechungen:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP]
 
-## <a name="join-a-meeting"></a>Teilnehmen an einer Besprechung
+## <a name="join-a-meeting"></a>An einer Besprechung teilnehmen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 

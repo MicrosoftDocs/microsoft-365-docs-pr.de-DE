@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Hier finden Sie eine Übersicht über die Verarbeitung verschiedener Datenarten im erweiterten eDiscovery-Tool in Office 365.
-ms.openlocfilehash: f9940318ba7355303e8afed1c83bb314d98b86cf
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024755"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527405"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeiten mit Verarbeitungsfehlern in Advanced eDiscovery
 
@@ -31,7 +31,7 @@ ms.locfileid: "45024755"
 
 Wenn Sie einem Fall auf der Registerkarte **Quellen** Verwalter und nicht Depotbank-Datenquellen hinzufügen, werden alle teilweise indizierten Elemente von Microsoft 365 verarbeitet, damit Sie vollständig durchsuchbar sind. Ebenso wird dieser Inhalt auch verarbeitet, wenn einem Überprüfungs Text aus Microsoft 365-und nicht-Microsoft 365-Datenquellen Inhalt hinzugefügt wird.
 
-Die Registerkarte **Verarbeitung** in Advanced eDiscovery bietet Einblicke in den Status der erweiterten Indizierung für unterschiedliche Verarbeitungsszenarien.
+Die Registerkarte **Verarbeitung** in Advanced eDiscovery bietet einen Einblick in den Status der erweiterten Indizierung für unterschiedliche Verarbeitungsszenarien.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 

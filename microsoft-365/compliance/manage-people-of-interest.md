@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Hier erfahren Sie, wie Sie interessante Personen für den Bereich Ihrer Suche verwalten oder Informationen wie Kontakt, Standort und Aktivitätsprotokolle anzeigen können.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 85f6bdbe7a0602f8ce0038a4aca912896d5c2079
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036068"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528171"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Verwalten von Personen mit Interesse an Daten Ermittlungen (Vorschau)
 
-Daten Untersuchungen beziehen häufig Interessen Personen mit ein. Normalerweise handelt es sich um Personen, die die verfallenen, vertraulichen oder bösartigen Daten besitzen, die Sie untersuchen oder beheben möchten. In **Data Investigations (Preview)** können Sie diese hinzufügen, um die Datenquellen zu ermitteln, die Sie beim Festlegen Ihrer Suche oder beim Anzeigen zusätzlicher Informationen wie Kontakt-, Standort-und Aktivitätsprotokolle verwenden müssen. 
+Daten Untersuchungen beziehen häufig Interessen Personen mit ein. Normalerweise handelt es sich um Personen, die die verfallenen, vertraulichen oder bösartigen Daten besitzen, die Sie untersuchen oder zu beheben versuchen. In **Data Investigations (Preview)** können Sie diese hinzufügen, um die Datenquellen zu ermitteln, die Sie beim Festlegen Ihrer Suche oder beim Anzeigen zusätzlicher Informationen wie Kontakt-, Standort-und Aktivitätsprotokolle verwenden müssen. 
 
 
 ## <a name="add-people-of-interest"></a>Hinzufügen von interessanten Personen
@@ -51,12 +51,12 @@ So fügen Sie einer Untersuchung interessante Personen hinzu:
 
 8. Optional Im Flyout:
    
-    -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie zum Hinzufügen weiterer Postfächer das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch Postfächer hinzufügen, die zum Speichern einer Microsoft 365-Gruppe oder Microsoft Team-Informationen verwendet werden. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+    -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie zum Hinzufügen weiterer Postfächer das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch Postfächer hinzufügen, die zum Speichern einer Microsoft 365-Gruppe oder von Microsoft-Team Informationen verwendet werden. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
         > [!NOTE]
         > Wenn Sie auf Benutzer, Gruppen oder Teams auswählen, um Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, um Personen zu dieser Liste hinzuzufügen.
      
-     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann auf **Websites erneut auswählen** , um zusätzliche SharePoint-und OneDrive für Unternehmen-Websites anzugeben, die Sie einer Person hinzufügen wwant. Sie können auch die URL für die SharePoint-Website für eine Microsoft 365-Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann auf **Websites erneut auswählen** , um zusätzliche SharePoint-und OneDrive für Unternehmen-Websites anzugeben, die Sie einer Person hinzufügen möchten. Sie können auch die URL für die SharePoint-Website für eine Microsoft 365-Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
      - **Microsoft Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann auf **Teams erneut auswählen** , um eine Liste der Microsoft-Team Gruppen anzuzeigen, in denen die Person heute Mitglied ist. Wählen Sie die Teams aus, die Sie der Person hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
         
       > [!NOTE]
@@ -66,11 +66,11 @@ Nachdem Sie die Zuordnung von Datenquellen zu interessanten Personen abgeschloss
 
 ## <a name="view-additional-people-of-interest-information"></a>Anzeigen zusätzlicher Informationen zu interessanten Personen
 
-Klicken Sie auf der Registerkarte **interessante Personen** auf eine Person, die Sie adeed. In einem Flyout sehen Sie Folgendes:
+Klicken Sie auf der Registerkarte **interessante Personen** auf eine Person, die Sie hinzugefügt haben. In einem Flyout sehen Sie Folgendes:
 
 - Kontaktinformationen
 
-  - **Anzeigename**: der Name des Peron, der im Adressbuch angezeigt wird. Dies ist in der Regel die Kombination aus Vorname, mittlerem Anfangs-und Nachname.
+  - **Anzeigename**: der Name der Person, die im Adressbuch angezeigt wird. Dies ist normalerweise die Kombination aus Vorname, mittlerer Initiale und Nachname.
   - **Mail/SMTP**: die SMTP-Adresse der Person, beispielsweise Jeff@contoso.onmicrosoft.com.  
   - **Title**: Position Title.
   - **Department**: der Name der Abteilung, in der die Person arbeitet.

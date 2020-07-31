@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint.
-ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b3ca070152a19841ff2c934f04d0d147e3387db0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080416"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526900"
 ---
 # <a name="share-files-and-videos"></a>Freigeben von Dateien und Videos
 
@@ -52,7 +53,7 @@ Verwenden Sie diese Methoden, um Dateien und Videos sicher freizugeben:
 5. Verwenden Sie Microsoft Teams oder SharePoint zum Speichern von Videodateien, für die Ihr Team zusammenarbeiten oder freigeben muss.
 
  
-## <a name="set-up"></a>Einrichtung
+## <a name="set-up"></a>Einrichten
 
 Führen Sie die folgenden Schritte aus, um ein Team zu erstellen und Gäste wie Inserenten oder Finanzierungspartner hinzuzufügen.
 

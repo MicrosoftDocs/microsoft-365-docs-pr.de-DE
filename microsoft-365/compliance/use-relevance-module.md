@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie das Modul "Relevanz" Daten im Hinblick auf eine Beschreibung des Workflows für Relevanz und Schulungs Schritte in Daten Untersuchungen (Preview) analysiert.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034487"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528161"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Verwenden des Moduls "Relevanz" zum Analysieren von Daten in Evidence
 
@@ -31,14 +31,14 @@ In Data Investigations (Preview) enthält das Modul Relevanz die Relevanz Schulu
 ![Relevanz-Workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Zyklen der Bewertung und Nachverfolgung**:
-    
+
   - **Bewertung**: ermöglicht eine frühe Bewertung basierend auf einer zufälligen Stichprobe von Dateien und verwendet diese Bewertung, um Entscheidungen zu treffen, um die Leistung des vorhersagbaren Codierungsprozesses zu bestimmen. 
-    
+
   - **Track**: berechnen und Anzeigen von vorläufigen Ergebnissen der Bewertung bei gleichzeitiger Überwachung der statistischen Gültigkeit des Prozesses. 
-    
+
 - **Trainingszyklen und Nachverfolgung**
-    
-  - **Tag**: Data Investigations (Preview) erlernt Relevanz-Kriterien für jedes Problem, basierend auf der iterativen Überprüfung und Markierung der einzelnen Dateien durch den Experten.
+
+  - **Tag**: Daten Untersuchungen (Preview) erfährt die spezifischen relevanzs Kriterien für jedes Problem basierend auf der iterativen Überprüfung und Kennzeichnung einzelner Dateien durch den Experten.
     
   - **Track**: berechnen und Anzeigen von Zwischenergebnissen der Relevanz-Schulung bei gleichzeitiger Überwachung der statistischen Gültigkeit des Prozesses. 
     
@@ -68,7 +68,7 @@ Im folgenden finden Sie eine Übersicht über Richtlinien für die Relevanz-Schu
     
   - Verwenden Sie die Option " **Tagging überspringen** " nur, wenn dies erforderlich ist. Daten Untersuchungen (Vorschau) werden nicht basierend auf übersprungenen Dateien trainiert. Wenn es schwierig ist, festzustellen, ob eine Datei relevant ist, ist es besser, nach Möglichkeit als relevant (n) oder nicht relevant (Nr) zu markieren, anstatt **Skip**auszuwählen. Wenn Daten Untersuchungen (Preview) das Training auswerten, kann man dann sehen, wie gut diese Dateitypen verarbeitet wurden.
     
-  - Selbst Dateien mit einer sehr kleinen Menge extrahierten Texts sollten im Training als R/Nr und nicht als "Skip" markiert werden, wenn möglich. 
+  - Selbst Dateien mit einer kleinen Menge extrahierten Texts sollten im Training als R/Nr und nicht als "Skip" markiert werden, wenn möglich. 
     
   - Tagging kann sich auf die Klassifizierung auswirken, solange die Datei lesbar ist und als R/Nr gekennzeichnet werden kann.
     
@@ -84,11 +84,11 @@ Im folgenden finden Sie eine Übersicht über Richtlinien für die Relevanz-Schu
     
 - **Batch Berechnung**: Dateien, die vom Experten als R/Nr markiert wurden, erhalten eine Punktzahl von 0 oder 100. Dies gilt für Tagging, das vor der Batch Berechnung erstellt wurde. Wenn der Experte das Problem nach der Batch Berechnung in den Leerlauf umgeschaltet und das Problem fortgesetzt hat, werden die neu markierten Ergebnisse nicht 100/0, sondern die ursprüngliche Punktzahl sein.
     
-- **Probleme und Samplingmodus**: Probleme werden normalerweise deaktiviert, wenn die Arbeit an Ihnen abgeschlossen ist (Relevanz-Training wird stabilisiert und Batch Berechnung wurde durchgeführt), wenn die Probleme abgebrochen werden oder wenn ein anderer Benutzer an den Problemen arbeitet.
+- **Probleme und Samplingmodus**: Probleme werden deaktiviert, wenn die Arbeit an Ihnen abgeschlossen ist (Relevanz-Training wird stabilisiert und Batch Berechnung wurde durchgeführt), wenn die Probleme abgebrochen werden oder wenn ein anderer Benutzer an den Problemen arbeitet.
     
 ## <a name="steps-in-relevance-training"></a>Schritte zur Relevanz-Schulung
 
-Auf der Registerkarte **relevanzstatus \> ** werden mit den folgenden nächsten Schritten Empfehlungen zur Vorgehensweise bei der Verarbeitung von Daten Untersuchungen bereitgestellt. Die Auswirkungen werden im folgenden beschrieben, wenn jeder der folgenden Schritte im Relevanz-Schulungsprozess empfohlen wird. 
+Auf der **Register \> Karte relevanzstatus** werden mit den folgenden nächsten Schritten Empfehlungen zur Vorgehensweise bei der Verarbeitung von Daten Untersuchungen bereitgestellt. Die Auswirkungen werden im folgenden beschrieben, wenn jeder der folgenden Schritte im Relevanz-Schulungsprozess empfohlen wird. 
   
 - Tagging/Continue Tagging: Dateiüberprüfung und Relevanz-Tagging, die von einem Experten für jede Datei und jedes Problem in einem Beispiel ausgeführt werden.
     
@@ -102,7 +102,7 @@ Auf der Registerkarte **relevanzstatus \> ** werden mit den folgenden nächsten 
     
   - Implikation: das Problem erfordert mehr Schulung; Das nächste Beispiel sollte erstellt und markiert werden. 
     
-- Batch Berechnung: relevanzprozess, bei dem Daten Untersuchungen das erworbene Wissen während der Schulungsphase erwerben und auf die gesamte Datei Auffüllung anwenden. Alle Dateien in der entsprechenden Dateigruppe werden auf Relevanz ausgewertet und einem Relevanz-Score zugeordnet.
+- Batch Berechnung: relevanzprozess, bei dem Daten Untersuchungen das erworbene Wissen während der Schulungsphase nutzen und auf die gesamte Datei Auffüllung anwenden. Alle Dateien in der entsprechenden Dateigruppe werden auf Relevanz ausgewertet und einem Relevanz-Score zugeordnet.
     
   - Implikation: das Problem wurde stabilisiert, und die Batch Berechnung kann ausgeführt werden.
     

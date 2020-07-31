@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Freigabe von Inhalten, unabhängig davon, ob Sie eine Dispositions Überprüfung oder Inhalte verwenden, wird automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht.
-ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506320"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529600"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -79,7 +79,7 @@ Sie können eine Übersicht über alle ausstehenden Dispositionen auf der Regist
 
 ![Ausstehende Dispositionen in der Datensatzverwaltung (Übersicht)](../media/dispositions-overview.png)
 
-Wenn Sie die Option **alle ausstehenden Dispositionen anzeigen**auswählen, werden Sie zur Seite **Disposition** geleitet. Zum Beispiel:
+Wenn Sie die Option **alle ausstehenden Dispositionen anzeigen**auswählen, werden Sie zur Seite **Disposition** geleitet. Beispiel:
 
 ![Seite "Dispositions" im Microsoft 365 Compliance Center](../media/disposition-tab.png)
 
@@ -124,9 +124,11 @@ Inhalte, die auf eine Dispositions Überprüfung warten, werden erst gelöscht, 
 ## <a name="disposition-of-records"></a>Disposition von Datensätzen
 
 > [!NOTE]
-> Die Möglichkeit zum Anzeigen von Datensätzen, die automatisch ohne Dispositions Überprüfung gelöscht wurden, erfolgt weiterhin für Mandanten, sodass Sie während dieses Rollout Zeitraums möglicherweise nicht alle freigestellten Elemente sehen.
+>Der Rollout für den Nachweis der Verfügung für Datensätze in SharePoint und OneDrive ist abgeschlossen. Die Liste der Aufbewahrungs Bezeichnungen, die Inhalte als Datensätze für SharePoint und OneDrive markiert haben, wird im Abschnitt Disposition der Seite Datensatzverwaltung im Microsoft 365 Compliance Center angezeigt. Unter diesen Bezeichnungen können Sie die Liste der Elemente in SharePoint und OneDrive anzeigen, die automatisch oder nach einer Dispositions Überprüfung verworfen wurden.
 
-Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Zum Beispiel:
+Der Nachweis der Verfügung für Datensätze in Exchange ist noch nicht aktiv. Wenn dieser Rollout beginnt und wenn er abgeschlossen ist, werden wir diesen Hinweis aktualisieren.
+
+Verwenden Sie die Registerkarte **Disposition** auf der Seite **Datensatzverwaltung** , um Datensätze zu identifizieren, die automatisch gelöscht werden. Diese Elemente zeigen **Datensätze** an, die in der Spalte **Typ** angeordnet sind. Beispiel:
 
 ![Elemente, die ohne eine Dispositions Überprüfung verworfen wurden](../media/records-disposed2.png)
 

@@ -13,15 +13,14 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365-Lösungen bereitgestellt.
-ms.openlocfilehash: dc9fcf667b31af0ab3db9006f545b1f33e091639
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 8ee25baa9c412e51de7d70e35662d03d1c148369
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854282"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521637"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-Lösungen für die Contoso Corporation
 
