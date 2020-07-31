@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-collaboration
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 6deb695c696f7533786ba07ef7cbfcb18c817d7e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 0dc688891994d9c99fce07536b191c5e9714e6b9
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160075"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522217"
 ---
-# <a name="heading"></a><span data-ttu-id="04e85-103">Überschrift</span><span class="sxs-lookup"><span data-stu-id="04e85-103">Heading</span></span>
+# <a name="heading"></a><span data-ttu-id="20d75-103">Überschrift</span><span class="sxs-lookup"><span data-stu-id="20d75-103">Heading</span></span>
 
-<span data-ttu-id="04e85-104">Text</span><span class="sxs-lookup"><span data-stu-id="04e85-104">Text</span></span>
+<span data-ttu-id="20d75-104">Text</span><span class="sxs-lookup"><span data-stu-id="20d75-104">Text</span></span>
