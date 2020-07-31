@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lesen Sie die Empfehlungen zum Einrichten des Relevanztrainings in Advanced eDiscovery, um Dateien nach ihrer Relevanz zu beurteilen und Analyseergebnisse zu generieren.
-ms.openlocfilehash: fa7a8a4bd87f91d3417183a5713f5c3c06f01ebe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632970"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528141"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Verwalten der Einrichtung von Relevanz in Advanced eDiscovery (Classic)
 
@@ -36,39 +36,39 @@ ms.locfileid: "43632970"
  Wählen Sie in Advanced eDiscovery im Fenster **Fälle** einen Fall aus, und klicken Sie auf **Zum Fall wechseln**. Klicken Sie auf **Relevanz** \> **Einrichten von Relevanz**. Befolgen Sie die folgenden empfohlenen Richtlinien zum Einrichten von Relevanz. 
   
 - **Markieren**: Die Effektivität des iterativen Relevanztrainingsprozesses ist von der Fähigkeit des Experten abhängig, die Dateibeispiele präzise und konsistent zu markieren.
-    
-- **Fallprobleme**: 
-    
+
+- **Fallprobleme**:
+  
   - Verwenden Sie im gesamten Relevanztrainingsprozess für jedes Problem denselben Experten. Das gleichzeitige Markieren desselben Problems durch mehrere Experten ist nicht zulässig.
-    
-  - Ermitteln Sie, ob jede Gruppe von Dateien nur für ein bestimmtes Problem relevant ist. 
-    
-  - Wenn ein Problem zu allgemein definiert ist, werden in Advanced eDiscovery möglicherweise zu viele Dateien gefunden, die eigentlich nicht relevant sind. Wenn ein Problem zu eng definiert ist, dauert der Relevanztrainingsprozess möglicherweise länger. 
-    
+  
+  - Ermitteln Sie, ob jede Gruppe von Dateien nur für ein bestimmtes Problem relevant ist.
+
+  - Wenn ein Problem zu allgemein definiert ist, werden in Advanced eDiscovery möglicherweise zu viele Dateien gefunden, die nicht relevant sind. Wenn ein Problem zu eng definiert ist, dauert der Relevanztrainingsprozess möglicherweise länger. 
+
   - Bei jedem Zyklus des Relevanztrainings befasst sich Advanced eDiscovery mit einem einzigen aktiven Problem, und es werden Zwischenergebnisse angezeigt.
-    
+
   - In einem Szenario mit mehreren Problemen können mithilfe des Samplingmodus die Probleme ausgewählt werden, die in die Verarbeitung aufgenommen werden sollen. Probleme, die als „deaktiviert“ definiert sind, werden erst verarbeitet, wenn ihr Samplingmodus geändert wird. Ein Problem kann nur für einen Experten „im Leerlauf“ oder „aktiviert“ sein.
-    
-  -  Advanced eDiscovery kann zum Generieren von Kandidatberechtigungsdateien verwendet werden. Richten Sie ein separates Problem für Berechtigungen ein. Wenn möglich, trainieren und sortieren Sie erst im Hinblick auf Relevanz. Trainieren Sie dann im Hinblick auf die Berechtigung nur für den sortierten Satz (laden Sie den sortierten Satz als separaten Fall erneut). 
-    
+
+  - Advanced eDiscovery kann zum Generieren von Kandidatberechtigungsdateien verwendet werden. Richten Sie ein separates Problem für Berechtigungen ein. Wenn möglich, trainieren und sortieren Sie erst im Hinblick auf Relevanz. Trainieren Sie dann im Hinblick auf die Berechtigung nur für den sortierten Satz (laden Sie den sortierten Satz als separaten Fall erneut). 
+
   - Die Batchberechnung kann nur ausgeführt werden, wenn keine offenen Beispiele vorhanden sind (beim Klicken auf „Batchberechnung“ wird eine Liste von Benutzern mit offenen Beispielen angezeigt). Um Beispiele von anderen Benutzern zu schließen (dies sollte nur durchgeführt werden, wenn diese Benutzer diese Beispiele nicht markieren), kann ein Administrator das Dienstprogramm „Relevanz ändern“ mit der Option des Beispiels für alle Benutzer verwenden.
-    
-- **Metadaten**: Advanced eDiscovery konzentriert sich auf Inhalte. Es werden keine Metadaten als Teil der Relevanzkriterien berücksichtigt. 
-    
+
+- **Metadaten**: Advanced eDiscovery konzentriert sich auf Inhalte. Es werden keine Metadaten als Teil der Relevanzkriterien berücksichtigt.
+
 - **Relevanzgrad**: Wenn der Relevanzgrad für ein Problem nach der Bewertung unter 3 % liegt, sollte das Seeding des Relevanztrainings mit bekannten relevanten und nicht relevanten Dateien ausgeführt werden.
-    
+
 - **Dateigröße**: Große Dateien (über 5.242.880 Zeichen extrahierter Text) werden im Relevanztool ignoriert. Die Dateien sind nicht am Relevanztrainingsprozess beteiligt und erhalten nach der Batchberechnung keine Relevanzbewertung. Dateien über 5 MB können in dem Bewertungssatz aufgenommen werden.
-    
+
 ## <a name="setting-up-case-issues"></a>Einrichten von Fallproblemen
 
-Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unter **Relevanz** \> **Einrichten von Relevanz** verfügbar. 
+Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unter **Relevanz** \> **Einrichten von Relevanz** verfügbar.
   
 - Probleme müssen einem Benutzer zugewiesen werden, der die Dateien trainiert.
-    
+
 - Importierte Dateien müssen dann der verarbeiteten Last hinzugefügt werden.
-    
+
 - Definieren und organisieren Sie Probleme sorgfältig, da sich dies auf die Ergebnisse des Relevanztrainings auswirken kann.
-    
+
 Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Training der Dateien auf der Registerkarte **Relevanz** beginnen. 
   
 ## <a name="see-also"></a>Siehe auch

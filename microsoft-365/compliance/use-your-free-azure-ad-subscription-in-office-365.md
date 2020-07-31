@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informationen zum Zugriff auf Azure Active Directory, das in dem kostenpflichtigen Abonnement Ihrer Organisation enthalten ist.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819285"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528151"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Verwenden Ihres kostenlosen Azure Active Directory-Abonnements
 
@@ -30,7 +30,7 @@ Wenn Ihre Organisation über ein kostenpflichtiges Abonnement für Microsoft 365
 
 ## <a name="open-a-private-browsing-session"></a>Öffnen einer privaten Browsersitzung
 
-Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Azure-Portal (in Schritt 1 unten), da dadurch verhindert wird, dass die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, an Azure übermittelt werden. So öffnen Sie eine private Browsersitzung:
+Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Azure-Portal (in Schritt 1 unten). Dadurch wird verhindert, dass die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, an Azure übermittelt werden. So öffnen Sie eine private Browsersitzung:
 
 - Drücken Sie in Microsoft Edge (Legacy-Version), Internet Explorer oder Mozilla Firefox `CTRL+SHIFT+P`.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503026"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527825"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -56,8 +56,8 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
     - Office-Dateien für Word, PowerPoint und Excel werden unterstützt.
     - Höchstens 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag
-    - Höchstens 10 Websitesammlungen in allen Richtlinien
-    - Höchstens 10 Richtlinien für den gesamten Mandanten
+    - Maximale Anzahl von 10 Websitesammlungen für jede Richtlinie für automatische Bezeichnungen.
+    - Maximale Anzahl von 10 Richtlinien für automatische Bezeichnungen innerhalb des Mandanten.
     - Bestehende Werte für "Geändert", "Geändert von" und das Datum werden nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die die Vertraulichkeitsbezeichnung erstellt hat.
 
