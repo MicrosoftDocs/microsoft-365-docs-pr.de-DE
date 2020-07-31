@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365.
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167365"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502915"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -101,6 +101,9 @@ So erstellen Sie eine Richtlinie für bedingten Zugriff
 12. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
 Wenn Gastbenutzer nun das erste Mal versuchen, auf Inhalte, ein Team oder eine Website in Ihrer Organisation zuzugreifen, müssen sie zunächst den Nutzungsbedingungen zustimmen.
+
+> [!NOTE]
+> Die Verwendung des bedingten Zugriffs erfordert eine Azure AD Premium P1-Lizenz. Weitere Informationen finden Sie unter [Was bedeutet bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Weitere Informationen
 [Azure Active Directory Nutzungsbedingungen](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

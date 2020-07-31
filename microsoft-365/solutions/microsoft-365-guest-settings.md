@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679144"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514789"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -37,7 +37,7 @@ Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. D
 
 ### <a name="organizational-relationships-settings"></a>Einstellungen für Organisationsbeziehungen
 
-**Navigation:** [Azure Active Directory Admin Center](https://aad.portal.azure.com) > Azure Active Directory-> Organisationsbeziehungen >-Einstellungen
+**Navigation:** [Azure Active Directory Admin Center](https://aad.portal.azure.com) > Azure Active Directory-> externe Identitäten >-Einstellungen für die externe Zusammenarbeit
 
 ![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 ### <a name="sharing"></a>Freigabe
 
-**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Einstellungen > Sicherheit und Datenschutz > Freigabe
+**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Org Einstellungen > Sicherheit und Datenschutz > Freigabe
 
 ![Screenshot der Gastfreigabeeinstellung "Sicherheit und Datenschutz" im Microsoft 365 Admin Center](../media/sharepoint-security-privacy-sharing-setting.png)
 

@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Hier erfahren Sie, welche Arten von Gruppen Sie verwenden können.
-ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780457"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514767"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
@@ -55,6 +55,8 @@ Gruppenmitglieder können Nachrichten mit der "Senden als"- oder "Senden im Auft
 
 Verteilergruppen eignen sich am besten für Situationen, in denen Sie Informationen an eine Gruppe von Personen übermitteln müssen, z. B. "Personen in Gebäude A" oder "Jeder bei Contoso".
 
+Verteilergruppen können[auf Microsoft 365-Gruppen aktualisiert werden](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
+
 ## <a name="security-groups"></a>Sicherheitsgruppen
 
 [Sicherheitsgruppen](../email/create-edit-or-delete-a-security-group.md) werden verwendet, um den Zugriff auf Microsoft 365-Ressourcen wie z. B. SharePoint zu gewähren. Sicherheitsgruppen können die Verwaltung vereinfachen, weil Sie nur die Gruppe verwalten müssen, anstatt Benutzer zu jeder Ressource einzeln hinzuzufügen.
@@ -82,3 +84,5 @@ Aktuell ist es nicht möglich, ein freigegebenes Postfach zu einer Microsoft 365
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
