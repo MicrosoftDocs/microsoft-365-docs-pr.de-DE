@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Erfahren Sie, was Sie tun müssen, um Ihr Microsoft 365 for Business einzurichten.
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Erfahren Sie mehr über die Anforderungen und Überlegungen für die Umstellung auf Microsoft 365 for Business.
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778949"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529660"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen des Setups von Microsoft 365 for Business
 
 Dieser Artikel richtet sich an Personen, die einen Microsoft 365 for Business-Plan abonniert haben.
   
-Es gibt ein paar Dinge, die Sie entscheiden müssen, und Informationen, die Sie zur Hand haben müssen, bevor Sie Ihre Organisation auf Microsoft 365 verschieben.
+Vor dem Verschieben Ihrer Organisation auf Microsoft 365 gibt es Anforderungen, die Sie erfüllen müssen, Informationen, die Sie zur Hand haben müssen, und Entscheidungen, die Sie treffen müssen.
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Informationen zur Hand, bevor Sie den Setup-Assistenten ausführen
 

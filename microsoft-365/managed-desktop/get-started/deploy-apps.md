@@ -1,19 +1,22 @@
 ---
-title: Bereitstellen von apps auf Geräten
+title: Stellen Sie Anwendungen auf Geräten bereit
 description: Informationen zum Hinzufügen und Bereitstellen von apps auf Microsoft Managed Desktop-Geräten.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation, apps, Branchenanwendungen, Lob-apps
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046328"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529397"
 ---
-# <a name="deploy-apps-to-devices"></a>Bereitstellen von apps auf Geräten
+# <a name="deploy-apps-to-devices"></a>Stellen Sie Anwendungen auf Geräten bereit
 Ein Teil des onboardings für Microsoft Managed Desktop umfasst das Hinzufügen und Bereitstellen von apps auf den Geräten Ihrer Benutzer. Nachdem Sie das Microsoft Managed Desktop Portal verwendet haben, können Sie Ihre apps hinzufügen und bereitstellen. 
 
 Der Gesamtprozess sieht wie folgt aus:
@@ -85,7 +88,7 @@ Available |  Die APP wird über die APP oder Website des Unternehmensportals ver
 Erforderlich |  Die APP wird auf Geräten in den ausgewählten Gruppen installiert. | MMD – *App-Name* – erforderlich
 Uninstall |  Die APP wird von Geräten in den ausgewählten Gruppen deinstalliert. | MMD – *App-Name* – deinstallieren
 
-Fügen Sie Ihre Benutzer zu diesen Gruppen hinzu, um entweder die app verfügbar zu machen, die APP zu installieren oder die APP von Ihrem von Microsoft verwalteten Desktop Gerät zu entfernen. 
+Fügen Sie Ihre Benutzer zu diesen Gruppen hinzu, um entweder die APP zur Verfügung zu stellen, die APP zu installieren oder die APP von Ihrem von Microsoft verwalteten Desktop Gerät zu entfernen. 
 
 <span id="3" />
 

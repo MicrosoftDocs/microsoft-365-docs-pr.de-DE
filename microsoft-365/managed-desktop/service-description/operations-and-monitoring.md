@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e543219bd6a7667febadcdc8f3cff6ab705b8d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632013"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529445"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-Vorgänge und-Überwachung
 
@@ -79,7 +81,7 @@ Der Microsoft Managed Desktop-Dienst wird von Microsoft in Ihrer Microsoft Cloud
 
 Für lokale Produkte übernimmt Ihre Organisation die gesamte Verantwortung für die Verwaltung von Setup sowie für Konfigurations-und Betriebsaktivitäten.
 
-Categories |    Microsoft wird | Kunde wird
+Kategorien |    Microsoft wird | Kunde wird
 --- | --- | ---
 Netzwerk (Proxy, Paketüberprüfung, VPN)  | Beraten und planen Sie Kunden, um Risiken für Geschäftsbenutzer zu minimieren. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.
 Dienstkonten |-Implementieren, sicher speichern und Verwalten der Anmeldeinformationen.<br> – Kommunizieren Sie nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen für Ihr Sicherheits Betriebsteam. | -Erstellen Sie eine Supportanfrage, in der Informationen für eine geplante Konfigurationsänderung angefordert werden, einschließlich Konfigurationsdetails, Bereich, Zeitachse und anderer relevanter Details, die von Microsoft überprüft werden sollen.<br>-Wenden Sie nur eine Änderung an, wenn Microsoft Managed Desktop Operations bewertet und empfohlen wurde.<br>-Zuweisen von Richtlinien, mehrstufiger Authentifizierung, bedingtem Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop-Dienstkonten.<br>-Setzen Sie das Kennwort nicht zurück, oder verwenden Sie die Anmeldeinformationen.<br>-Öffnen Sie eine SEV C-Supportanfrage für Microsoft Managed Desktop Operations, wenn in InTune-oder Azure-Überwachungsprotokollen, die sich auf diese Dienstkonten beziehen, verdächtige Aktivitäten beobachtet werden.

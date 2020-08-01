@@ -5,14 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632983"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529361"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referenz zu konfigurierbaren Einstellungen – Microsoft Managed Desktop
 

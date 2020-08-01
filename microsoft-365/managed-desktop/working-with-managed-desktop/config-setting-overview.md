@@ -5,14 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation, Einst
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390722"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530235"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
@@ -26,7 +28,7 @@ Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf 
 
 Es gibt einige Male, um konfigurierbare Einstellungen zu verwenden. 
 
-Onboarding- **Prozess** – Microsoft Managed Desktop empfiehlt, konfigurierbare Einstellungen anzupassen, wenn Sie sich an den Microsoft Managed Desktop Service oder an eine große Anzahl von Geräten (20 oder mehr) an Bord anpassen. Einstellungskategorien werden im Verwaltungsportal von Microsoft Managed Desktop konfiguriert. Nachdem Sie onboarded haben und Zugriff auf das Verwaltungsportal haben, können Sie festlegen, welche Einstellungskategorien für Ihre Organisation angepasst werden sollen, die Änderungen vornehmen, eine Bereitstellung inszenieren und dann die Änderungen bereitstellen.
+**Onboarding-Prozess** – Microsoft Managed Desktop empfiehlt, konfigurierbare Einstellungen anzupassen, wenn Sie sich an den Microsoft Managed Desktop Service oder an eine große Anzahl von Geräten (20 oder mehr) an Bord anpassen. Einstellungskategorien werden im Verwaltungsportal von Microsoft Managed Desktop konfiguriert. Nachdem Sie onboarded haben und Zugriff auf das Verwaltungsportal haben, können Sie festlegen, welche Einstellungskategorien für Ihre Organisation angepasst werden sollen, die Änderungen vornehmen, eine Bereitstellung inszenieren und dann die Änderungen bereitstellen.
 
 **Einstellungen verwalten** – überprüfen Sie Ihre Einstellungen regelmäßig, und machen Sie die erforderlichen Updates. Möglicherweise müssen Sie Änderungen vornehmen, um eine Änderung in Ihrem Unternehmen zu unterstützen.   
 
@@ -72,5 +74,5 @@ Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht rückg
 Weitere Informationen finden Sie unter [Deploy and Track konfigurierbar Settings](config-setting-deploy.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Referenz zu konfigurierbaren Einstellungen](config-setting-ref.md) 
-- [Bereitstellen von konfigurierbaren Einstellungen](config-setting-deploy.md) 
+- [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 
+- [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md) 

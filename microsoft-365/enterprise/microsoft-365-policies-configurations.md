@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222327"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530271"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -33,7 +34,7 @@ Microsoft ist bewusst, dass einige Organisationen über eindeutige Umgebungsanfo
 
 ## <a name="intended-audience"></a>Zielgruppe
 
-Diese Empfehlungen sind für Enterprise-Architekten und IT-Experten gedacht, die mit [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) und [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems)vertraut sind, dazu gehören unter anderem Azure Active Directory (Identity), Microsoft InTune (Geräteverwaltung) und Azure Information Protection (Datenschutz).
+Diese Empfehlungen sind für Enterprise-Architekten und IT-Experten gedacht, die mit [Office 365](https://docs.microsoft.com/microsoft-365/admin) und [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems)vertraut sind, dazu gehören unter anderem Azure Active Directory (Identity), Microsoft InTune (Geräteverwaltung) und Azure Information Protection (Datenschutz).
 
 ### <a name="customer-environment"></a>Kundenumgebung
 
@@ -57,7 +58,7 @@ Jede Branche verfügt auch über ihren eigenen Satz von spezialisierten Vorschri
 
 - **Grund**legender Schutz: Es wird empfohlen, einen Mindeststandard zum Schutz von Daten sowie die Identitäten und Geräte festzulegen, die auf Ihre Daten zugreifen. Sie können diese grundlegenden Empfehlungen befolgen, um einen starken Standardschutz bereitzustellen, der die Anforderungen vieler Organisationen erfüllt.
 - **Vertraulicher Schutz**: einige Kunden verfügen über eine Teilmenge von Daten, die auf höheren Ebenen geschützt werden müssen, oder Sie erfordern möglicherweise, dass alle Daten auf einer höheren Ebene geschützt werden. Sie können einen erhöhten Schutz für alle oder bestimmte Datensätze in Ihrer Microsoft 365-Umgebung anwenden. Es wird empfohlen, Identitäten und Geräte mit Zugriff auf sensible Daten mit einem vergleichbaren Grad an Sicherheit auszustatten.  
-- **Stark reguliert**: einige Organisationen haben möglicherweise eine kleine Menge an Daten, die streng klassifiziert, consititutes-Geschäftsgeheimnisse oder regulierte Daten sind. Microsoft stellt Funktionen bereit, die es Organisationen ermöglichen, diese Anforderungen zu erfüllen, wie etwa den zusätzlichen Schutz von Identitäten und Geräten.
+- **Stark reguliert**: einige Organisationen haben möglicherweise eine kleine Menge an Daten, die streng klassifiziert sind, Geschäftsgeheimnisse darstellen oder regulierte Daten sind. Microsoft stellt Funktionen bereit, die es Organisationen ermöglichen, diese Anforderungen zu erfüllen, wie etwa den zusätzlichen Schutz von Identitäten und Geräten.
 
 ![Security Cone – alle Kunden > einige Kunden > bestimmte Kunden. Umfassende Anwendung für eine bestimmte Anwendung](../media/M365-idquality-threetiers.png)
 

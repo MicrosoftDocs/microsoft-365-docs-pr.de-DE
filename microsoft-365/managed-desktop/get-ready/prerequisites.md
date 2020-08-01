@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4751a5a38229039ae325c0efc9353d4582243349
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c958101e1f3268c706c27df6fc9e21e9914b3f46
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430483"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530283"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Voraussetzungen für Microsoft Managed Desktop
 

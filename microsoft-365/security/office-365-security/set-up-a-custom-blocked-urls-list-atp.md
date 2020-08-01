@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie eine Liste blockierter URLs für Ihre Organisation mit Office 365 Advanced Threat Protection einrichten.
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617264"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533811"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links
 
@@ -84,6 +84,10 @@ Achten Sie beim Hinzufügen von URLs zu Ihrer Liste darauf, Folgendes zu beachte
 |`https://contoso.com/a`|Blockiert eine Website, `https://contoso.com/a` jedoch keine weiteren untergeordneten Pfade wie`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Blockiert eine Website `https://contoso.com/a` und weitere untergeordnete Pfade wie`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Blockiert eine Unterdomäne ("Toys" in diesem Fall), aber Sie können Klicks auf andere Domänen-URLs (wie `https://contoso.com` oder `https://home.contoso.com` ) zulassen.|
+
+
+> [!NOTE]
+> Standardmäßig können Sie in der Liste gesperrter URLs nur 500-URLs in der Standardrichtlinie Office 365 ATP-Links hinzufügen.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Vorgehensweise definieren von Ausnahmen für bestimmte Benutzer in einer Organisation
 

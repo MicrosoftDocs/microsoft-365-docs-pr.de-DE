@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430495"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529481"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Netzwerkkonfiguration für Microsoft Managed Desktop
 

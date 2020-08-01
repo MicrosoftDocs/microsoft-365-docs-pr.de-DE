@@ -1,19 +1,22 @@
 ---
-title: Akku Einblicke
+title: Akku-Einblicke
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170595"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529839"
 ---
-# <a name="battery-insights"></a>Akku Einblicke
+# <a name="battery-insights"></a>Akku-Einblicke
 Diese Ansicht enthält Metriken für Energie, Akku und App-Nutzung für Ihre von Microsoft verwalteten Desktop Geräte. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
 
 Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Akku** aus.
@@ -38,7 +41,7 @@ Im Bereich der **oberen Energieverbraucher** finden Sie die apps in Ihrer Umgebu
  Für jede APP zeigen farbige Segmente die Verteilung der Energieverwendung der app in den folgenden Kategorien an:
 
 - CPU
-- Anzeige
+- Anzeigen
 - Netzwerk
 - Andere
 

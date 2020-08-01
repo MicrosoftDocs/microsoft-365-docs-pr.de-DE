@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten von Druckressourcen für Microsoft Managed Desktop
+title: Voraussetzungen von Druckressourcen für Microsoft Managed Desktop
 description: Wichtige Schritte, um sicherzustellen, dass der Druck reibungslos funktioniert
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -7,14 +7,16 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826437"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530247"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Vorbereiten von Druckressourcen für Microsoft Managed Desktop
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Voraussetzungen von Druckressourcen für Microsoft Managed Desktop
 
 Wenn Sie bereit sind, sich für die Registrierung in Microsoft Managed Desktop vorzubereiten, sollten Sie Ihre Druckanforderungen auswerten und den richtigen Ansatz für Ihre Umgebung bestimmen. Sie haben drei Optionen:
  

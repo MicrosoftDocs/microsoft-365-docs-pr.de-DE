@@ -1,19 +1,22 @@
 ---
-title: Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
+title: Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
 description: Teilen Sie uns mit, an wen Sie sich für jeden Bereich des Fokus wenden müssen.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085896"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529803"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
 
 Es gibt mehrere Möglichkeiten, wie Microsoft Managed Desktop Service mit Kunden kommuniziert. Um die Kommunikation zu rationalisieren und sicherzustellen, dass die richtigen Personen überprüft werden, müssen Sie eine Reihe von Administrator Kontakten bereitstellen. Microsoft Managed Desktop-IT-Vorgänge wenden sich an diese Personen, um Hilfe bei der Problembehandlung für Ihren Mandanten zu erhalten.
 
@@ -69,8 +72,8 @@ Administrator Kontakte sind erforderlich, wenn Sie [eine Support Anfrage übermi
 1. Hinzufügen und Überprüfen von Administrator Kontakten im Administratorportal (in diesem Thema)
 2. [Bedingten Zugriff anpassen](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
-4. [Installieren des InTune-Unternehmensportals auf auf Geräten](company-portal.md)
+4. [Installieren des Intune Company Portals auf Geräten](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Einrichten von Microsoft Managed Desktop-Geräten](set-up-devices.md)
+6. [Richten Sie Microsoft Managed Desktop-Geräte ein](set-up-devices.md)
 7. [Vorbereiten Ihrer Benutzer für die Verwendung von Geräten](get-started-devices.md)
-8. [Bereitstellen von apps auf Geräten](deploy-apps.md)
+8. [Stellen Sie Anwendungen auf Geräten bereit](deploy-apps.md)

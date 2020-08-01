@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636196"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530019"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -46,5 +49,5 @@ Microsoft Defender Advanced Threat Protection |  Microsoft Managed Desktop verwe
  |
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Sie können alle Funktionen von Enterprise Mobility + Security E3 und Azure Active Directory Premium P2 zum Verwalten von MDM-Geräten verwenden.
-Microsoft Cloud App Security |  Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.
+Microsoft Cloud App-Sicherheit |  Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.
 Azure Information Protection P2  | Sie können diese optionale Funktion mit Microsoft Managed Desktop verwenden.

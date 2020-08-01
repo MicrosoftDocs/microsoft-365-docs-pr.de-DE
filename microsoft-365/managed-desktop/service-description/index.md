@@ -5,12 +5,15 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1977009e6b0b1dbbf10a14b6a062207bbee04430
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "43637864"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529409"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Beschreibung des Microsoft Managed Desktop-Diensts
 

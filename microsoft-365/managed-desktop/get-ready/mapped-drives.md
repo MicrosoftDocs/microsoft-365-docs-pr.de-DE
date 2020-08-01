@@ -1,5 +1,5 @@
 ---
-title: Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop
+title: Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
 description: Wichtige Schritte, um sicherzustellen, dass
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -7,14 +7,16 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280173"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530175"
 ---
-#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
 
 Viele Unternehmensumgebungen weisen Legacy Anforderungen für zugeordnete Laufwerke auf, damit Ihre Benutzer oder Teams Dateien freigeben und speichern können, oder für lokale Anwendungen. Microsoft empfiehlt nicht die Verwendung von zugeordneten Laufwerken mit dem Microsoft Managed Desktop. Stattdessen wird empfohlen, die Dateizugriffs Lösungen wie folgt zu modernisieren:
   
@@ -34,7 +36,7 @@ Für eine solche Anforderung müssen Sie die folgenden Details in der Supportanf
 - Benutzergruppen, die Zugriff auf diese Dateifreigabe Speicherorte benötigen 
 - Ein bestimmter Laufwerksbuchstabe, der zugewiesen werden muss (falls erforderlich)
 
-Beispiel:
+Zum Beispiel:
 
 | Laufwerkbuchstabe | UNC-Pfad | Benutzergruppe |
 |--------------|----------|------------|

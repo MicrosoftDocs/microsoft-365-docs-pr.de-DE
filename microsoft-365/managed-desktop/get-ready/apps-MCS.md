@@ -6,22 +6,25 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085939"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530163"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Arbeiten mit Microsoft Consulting Services
 
 Sie können sich mit Microsoft Consulting Services (MCS) beschäftigen, um Ihre apps für die Verwendung mit Microsoft Managed Desktop zu verpacken. Um genaue Details zu erhalten, wenden Sie sich an Ihren Konto Vertreter, um Kontakt mit MCS aufzunehmen und Ihr spezielles App-Paket Projekt zu besprechen.
 
-## <a name="roles-and-responsibilities"></a>Rollen und Verantwortlichkeiten
+## <a name="roles-and-responsibilities"></a>Rollen und Zuständigkeiten
 
 Um mit MCS App Packaging arbeiten zu können, **müssen Sie diese Elemente bereitstellen**:
 
-- Die Quellinstallationsdateien (beispielsweise Setup. exe oder. msi).
+- Die Quellinstallationsdateien (beispielsweise setup.exe oder MSI).
 - Die Installationsanweisungen, in denen Details zum Aussehen der endgültigen Installation angegeben werden. Soll beispielsweise eine Desktopverknüpfung mit der app vorhanden sein? Was sollte die APP-Sichtbarkeit sein? Sollte sich die APP mit einem Server verbinden und wenn ja, welche? Ausführliche Informationen finden Sie in der [Vorlage "Application Packaging Request](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)".
 - Sie müssen ihre eigenen Akzeptanztests durchführen, um sicherzustellen, dass die APP so funktioniert, wie Sie Sie in Ihrer Umgebung benötigen.
 

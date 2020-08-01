@@ -1,19 +1,22 @@
 ---
-title: Administrator Unterstützung für Microsoft Managed Desktop
+title: Administratorunterstützung für Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266091"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529899"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Administrator Unterstützung für Microsoft Managed Desktop
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Administratorunterstützung für Microsoft Managed Desktop
 
 Sie können Support Tickets oder Feedback Anforderungen über das Microsoft Managed Desktop administrative Portal an Microsoft übermitteln. Support Anforderungen werden immer über Feedback Übermittlungen priorisiert. Support Anforderungen werden je nach Schweregrad behandelt, wie in der [Definitionstabelle für den Schweregrad](#sev)beschrieben. Feedback wird überprüft, und bei Bedarf wird eine Antwort angegeben. 
 
@@ -51,7 +54,7 @@ Weitere Details:
 - **Anwendungskompatibilität** – für ein Problem mit der Anwendungskompatibilität muss ein reproduzierbarer Fehler derselben Version der Anwendung zwischen der vorherigen und der aktuellen Version von Windows oder Office vorliegen. Um Probleme mit der Anwendungskompatibilität zu beheben, benötigt Microsoft eine Kontaktstelle für Kunden, mit der Sie arbeiten können. Die einzelnen müssen direkt mit unserem Fast-Track-Team zusammenarbeiten, um das Problem zu untersuchen und zu beheben.
 - **Kundenantwort Zeit** Wenn ein Kunde die erwarteten Antwort Anforderungen nicht erfüllen kann, wird die Anforderung von Microsoft um einen Schweregrad auf ein Minimum von Schweregrad C herabgestuft. Wenn ein Kunde nicht auf Aktionsanforderungen reagiert, wird Microsoft die Supportanfrage innerhalb von 48 Stunden nach der letzten Anforderung entschärfen und schließen.
 
-## <a name="provide-feedback"></a>Übermitteln von Feedback
+## <a name="provide-feedback"></a>Feedback geben
 
 Wir freuen uns über Ihr Feedback und verwenden es, um die Administrator Unterstützung zu verbessern.
 
