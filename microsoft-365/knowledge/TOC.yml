@@ -1,0 +1,16 @@
+- name: Erste Schritte mit Knowledge Management
+  items:
+    - name: Wissensmanagement (Übersicht)
+      href: knowledge-management-overview.md
+    - name: Themen Center (Übersicht)
+      href: topic-center-overview.md
+    - name: Arbeiten mit Themen im Themen Center
+      href: work-with-topics.md
+    - name: Erteilen von Benutzerberechtigungen für das Themen Center
+      href: give-user-permissions-to-the-topic-center.md
+- name: Erste Schritte mit Setup
+  items:
+    - name: Einrichten der Wissensverwaltung
+      href: set-up-knowledge-network.md
+    - name: Verwalten Ihres Wissens Verwaltungsnetzwerks
+      href: manage-knowledge-network.md

@@ -1,0 +1,22 @@
+- name: Erste Schritte mit dem Inhalts Verständnis
+  items:
+    - name: Dokument Verständnis Übersicht
+      href: document-understanding-overview.md
+    - name: Übersicht über die Formularverarbeitung
+      href: form-processing-overview.md
+    - name: Unterschied zwischen einem Dokument verstehen und Formular Verarbeitungs Modellen
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: Erstellen eines inhaltscenters
+      href: create-a-content-center.md
+    - name: Erstellen einer Klassifizierung
+      href: create-a-classifier.md
+    - name: Erstellen eines Extraktions Moduls
+      href: create-an-extractor.md
+    - name: Anwenden eines Modells
+      href: apply-a-model.md
+    - name: Erstellen eines Formular Verarbeitungsmodells
+      href: create-a-form-processing-model.md
+- name: Erste Schritte mit Setup
+  items:
+    - name: Einrichten des Inhalts Verständnisses
+      href: set-up-content-understanding.md
