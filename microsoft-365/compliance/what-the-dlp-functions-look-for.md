@@ -1,5 +1,5 @@
 ---
-title: Wonach die DLP-Funktionen suchen
+title: Was die Funktionen zur Verhinderung von Datenverlust (DLP) suchen
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, was die Funktionen zur Verhinderung von Datenverlust Prevention (DLP) suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Erfahren Sie, worauf die Funktionen zur Verhinderung von Datenverlust (DLP) achten.
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819275"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536310"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 
 Die Verhinderung von Datenverlust (DLP) umfasst vertrauliche Informationstypen wie Kreditkartennummer und EU-Debitkarten-Nummer, die Sie in ihren DLP-Richtlinien verwenden können. Diese Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine ordnungsgemäße Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Schlüsselwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. Der vertrauliche Informationstyp Kreditkartennummer verwendet beispielsweise eine Funktion, um nach Datumsangaben zu suchen, die wie ein Ablaufdatum formatiert sind, um zu bestätigen, dass eine Zahl eine Kreditkartennummer ist.
   
-In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) .
+In diesem Artikel wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) .
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ Akzeptierte Monatsnamen:
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Diese Funktion sucht nach einem Datum in dem Format, das in der EU häufig verwendet wird. (und die meisten Orte außerhalb der USA). Dies umfasst die Formate "Tag/Monat/Jahr", "Tag-Monat-Jahr" und "Tag Monat Jahr". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
+Diese Funktion sucht nach einem Datum in dem Format, das in der EU häufig verwendet wird. (und die meisten Orte außerhalb der USA), wie "Tag/Monat/Jahr", "Tag-Monat-Jahr" und "Tag Monat Jahr". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
   
 Beispiele:
   
@@ -183,7 +183,7 @@ Akzeptierte Monatsnamen:
     
   - Januari, februari, maart, April, Mei, Juni, Juli, Augustus, September, ocktober, Oktober, November, Dezember
     
-  - Jan Feb maart Apr Mei Jun Jul Aug Sep Sept Oct Okt Nov Dez
+  - Jan Feb maart Apr Mei Jun Jul Aug Sep Sept. Okt Nov Dez
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ Beispiele:
     
 Die folgenden Formate unterstützen JJ oder yyyy:
   
-- Monat-yyyy--zum Beispiel. Jan-2010 oder Januar-2010 oder Jan-10 oder Januar-10
+- Monat-yyyy--zum Beispiel Jan-2010 oder Januar-2010 oder Jan-10 oder Januar-10
     
 - Monat yyyy--zum Beispiel "Januar 2010" oder "Jan 2010" oder "Januar 10" oder "Jan 10"
     
@@ -219,7 +219,7 @@ Akzeptierte Monatsnamen:
     
 ## <a name="func_us_address"></a>Func_us_address
 
-Diese Funktion sucht nach einem US-Bundesland Namen oder einer postalischen Abkürzung, gefolgt von einer gültigen Postleitzahl, genauso wie Sie in Postadressen verwendet werden. Die Postleitzahl muss einer der korrekten Postleitzahlen sein, die dem US-Bundesland Namen oder der Abkürzung zugeordnet sind. Der US-Bundesland Name und die Postleitzahl können nicht durch Interpunktion oder Buchstaben getrennt werden.
+Diese Funktion sucht nach einem US-Bundesland Namen oder einer postalischen Abkürzung, gefolgt von einer gültigen Postleitzahl, so wie Sie in Postadressen verwendet werden. Die Postleitzahl muss einer der korrekten Postleitzahlen sein, die dem US-Bundesland Namen oder der Abkürzung zugeordnet sind. Der US-Bundesland Name und die Postleitzahl können nicht durch Interpunktion oder Buchstaben getrennt werden.
   
 Beispiele:
   

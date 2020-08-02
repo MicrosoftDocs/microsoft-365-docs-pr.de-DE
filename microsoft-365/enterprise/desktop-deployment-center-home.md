@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 08/14/19
+ms.date: 08/14/2019
 ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
@@ -16,80 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Übersicht über das Bereitstellungscenter für den Desktop.
-ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3559a32db71d2cceaf3ab4dc67701d5f5f00e7fe
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638140"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528108"
 ---
 # <a name="desktop-deployment-center"></a>Bereitstellungscenter für modernen Desktop
 
 <strong>Upgrade von Windows 7 zu Windows 10 </strong>
 <p>Der erweiterte Support für Windows 7 endete am 14. Januar 2020. Ein direktes Upgrade von Windows 7 zu Windows 10 ist die schnellste Methode der Bereitstellung. Sie können <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mit Microsoft Endpoint Configuration Manager ein Upgrade auf einem einzelnen PC</a> oder <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Tausenden von PCs durchführen</a>. Sie müssen sich bei direkten Upgrades nicht auf die App-Bereitstellung, Dateimigration, benutzerdefinierte Imageerstellung oder Aktivierung von Cloud-basierten Diensten konzentrieren. Sie können Tools verwenden, die Sie bereits für das Upgraden vorhandener PCs besitzen, und sich auf die folgenden Bereitstellungsschritte für Upgrades konzentrieren: </p>
 
-<p>
-</p>
-
-<ul class="panelContent cardsM">
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Upgrade von ConfigMgr zu Current Branch</h3>
-            <p>Teil der Verzeichnis- und Netzwerkbereitschaft für Organisationen, die Configuration Manager verwenden</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Validieren der Geräte- und App-Bereitschaft</h3>
-            <p>Teil der Geräte- und App-Bereitschaft; Hilfe ist über Desktop App Assure verfügbar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Upgrade von PCs mit Windows 7 zu Windows 10</h3>
-            <p>Teil der BS-Bereitstellung und Funktionsupdates für vom Benutzer gesicherte PCs</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" width="36" height="36" alt="Upgrade ConfigMgr" /> | **[Upgrade von ConfigMgr zu Current Branch](https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness)** <p>Teil der Verzeichnis- und Netzwerkbereitschaft für Organisationen, die Configuration Manager verwenden</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" width="36" height="36" alt="Device and App Readiness" /> | **[Validieren der Geräte- und App-Bereitschaft](/microsoft-365/enterprise/step-1-device-and-app-readiness)** <p>Teil der Geräte- und App-Bereitschaft; Hilfe ist über Desktop App Assure verfügbar</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" width="36" height="36" alt="Upgrade Windows 7 PCs" /> | **[Upgrade von PCs mit Windows 7 zu Windows 10](/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated)** <p>Teil der Geräte- und App-Bereitschaft; Hilfe ist über Desktop App Assure verfügbar</p> |
 
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
