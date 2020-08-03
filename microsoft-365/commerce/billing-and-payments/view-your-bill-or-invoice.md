@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816997"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533613"
 ---
-# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="f0045-104">Anzeigen Ihrer Rechnung</span><span class="sxs-lookup"><span data-stu-id="f0045-104">View your bill or invoice</span></span>
+# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="80c96-104">Anzeigen Ihrer Rechnung</span><span class="sxs-lookup"><span data-stu-id="80c96-104">View your bill or invoice</span></span>
 
-<span data-ttu-id="f0045-p102">Dieser Artikel ist für Personen bestimmt, die über ein Microsoft 365 Business-Abonnement verfügen. Sie müssen ein globaler Administrator oder ein Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Schritte ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="f0045-p102">This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.</span></span>
+<span data-ttu-id="80c96-105">Dieser Artikel richtet sich an Personen, die über ein Microsoft 365 for Business-Abonnement verfügen.</span><span class="sxs-lookup"><span data-stu-id="80c96-105">This article is for people who have a Microsoft 365 for business subscription.</span></span>
   
-<span data-ttu-id="f0045-107">Wenn Sie Hilfe bei der Interpretation der auf Ihrer Rechnung angeführten Gebühren benötigen, sehen Sie sich die ausführliche schrittweise Anleitung unter [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md) an.</span><span class="sxs-lookup"><span data-stu-id="f0045-107">If you need help interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
+<span data-ttu-id="80c96-106">Wenn Sie Hilfe beim Verständnis der auf Ihrer Rechnung ausgewiesenen Gebühren benötigen, finden Sie unter [Rechnung verstehen](understand-your-invoice2.md) eine detaillierte Erklärung.</span><span class="sxs-lookup"><span data-stu-id="80c96-106">If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
   
- <span data-ttu-id="f0045-108">**Sie sind kein Administrator?**</span><span class="sxs-lookup"><span data-stu-id="f0045-108">**Not an admin?**</span></span> <span data-ttu-id="f0045-109">Wenden Sie sich an Ihren Administrator, um Hilfe zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="f0045-109">Contact your IT administrator for help.</span></span> 
+<span data-ttu-id="80c96-107">**Haben Sie ein Problem mit Ihrer Rechnung?**</span><span class="sxs-lookup"><span data-stu-id="80c96-107">**Have a problem with your bill?**</span></span> <span data-ttu-id="80c96-108">[Wenden Sie sich an den Support für Business-Produkte](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="80c96-108">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="80c96-109">Bevor Sie loslegen</span><span class="sxs-lookup"><span data-stu-id="80c96-109">Before you begin</span></span>
+
+<span data-ttu-id="80c96-110">Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artikel beschriebenen Schritte durchführen zu können.</span><span class="sxs-lookup"><span data-stu-id="80c96-110">You must be a Global or Billing admin to do the steps described in this article.</span></span>
   
- <span data-ttu-id="f0045-110">**Haben Sie ein Problem mit Ihrer Rechnung?**</span><span class="sxs-lookup"><span data-stu-id="f0045-110">**Have a problem with your bill?**</span></span> <span data-ttu-id="f0045-111">[Wenden Sie sich an den Support für Business-Produkte](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="f0045-111">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
+## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="80c96-111">Anzeigen einer Rechnung</span><span class="sxs-lookup"><span data-stu-id="80c96-111">View a bill or invoice</span></span>
 
- <span data-ttu-id="f0045-112">Sehen Sie sich ein kurzes Video zum Anzeigen Ihrer Rechnung an (beachten Sie, dass Ihre Rechnung möglicherweise anders aussieht als die im Video).</span><span class="sxs-lookup"><span data-stu-id="f0045-112">Watch a short video about viewing your bill or invoice (note that your invoice may appear different from the one in the video).</span></span> <br><br>
+1. <span data-ttu-id="80c96-112">Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.</span><span class="sxs-lookup"><span data-stu-id="80c96-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
+    - <span data-ttu-id="80c96-113">Wenn Sie Office 365 Deutschland verwenden, rufen Sie diese Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen und Zahlungen</a> auf.</span><span class="sxs-lookup"><span data-stu-id="80c96-113">If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
+    - <span data-ttu-id="80c96-114">Wenn Sie Office 365 verwenden, das von 21Vianet betrieben wird, gehen Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Rechnungen und Zahlungen</a>.</span><span class="sxs-lookup"><span data-stu-id="80c96-114">If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
+2. <span data-ttu-id="80c96-115">Wählen Sie auf der Registerkarte **Rechnungen** einen Datumsbereich aus der Dropdown-Liste aus und dann die Reihenfolge, die Sie anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="80c96-115">On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.</span></span>
+3. <span data-ttu-id="80c96-116">Auf der Zusammenfassungsseite können Sie die Artikel, die Menge, den Preis, den Rabatt und den Gesamtbetrag für alle Artikel in der Rechnung sehen.</span><span class="sxs-lookup"><span data-stu-id="80c96-116">On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.</span></span>
+4. <span data-ttu-id="80c96-117">Um eine PDF-Kopie der Rechnung zu drucken oder zu speichern, wählen Sie **PDF herunterladen** aus.</span><span class="sxs-lookup"><span data-stu-id="80c96-117">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a><span data-ttu-id="80c96-118">Erhalten einer Kopie Ihrer Rechnung per E-Mail</span><span class="sxs-lookup"><span data-stu-id="80c96-118">Receive a copy of your billing statement in email</span></span>
 
-<span data-ttu-id="f0045-113">Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.</span><span class="sxs-lookup"><span data-stu-id="f0045-113">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
-  
-## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="f0045-114">Anzeigen einer Rechnung</span><span class="sxs-lookup"><span data-stu-id="f0045-114">View a bill or invoice</span></span>
+<span data-ttu-id="80c96-p103">Sie können auf Wunsch eine Kopie Ihrer Rechnung als E-Mail-Anlage erhalten. In diesem Fall sollten Sie Folgendes beachten:</span><span class="sxs-lookup"><span data-stu-id="80c96-p103">You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:</span></span>
 
-::: moniker range="o365-worldwide"
+- <span data-ttu-id="80c96-121">Eine E-Mail wird sowohl an die primäre als auch die alternative E-Mail-Adresse jeder Person gesendet, die als Benachrichtigungsempfänger aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="80c96-121">An email is sent to both the primary and alternate email address for every person listed as a notification recipient.</span></span>
+- <span data-ttu-id="80c96-122">Sie erhalten zwei separate E-Mails: eine Mitteilung, dass Ihre Rechnung fertig ist, mit der Anweisung, sich im Verwaltungszentrum anzumelden, um sie anzuzeigen. Die zweite E-Mail enthält den Rechnungsauszug als Anhang.</span><span class="sxs-lookup"><span data-stu-id="80c96-122">You receive two separate emails: one that lets you know that your bill is ready, with instructions to sign in to the admin center to view it, and a second email that contains the billing statement as an attachment.</span></span>
 
-1. <span data-ttu-id="f0045-115">Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.</span><span class="sxs-lookup"><span data-stu-id="f0045-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
+### <a name="to-receive-your-billing-statement-in-email"></a><span data-ttu-id="80c96-123">So erhalten Sie die Rechnung per E-Mail</span><span class="sxs-lookup"><span data-stu-id="80c96-123">To receive your billing statement in email</span></span>
 
-::: moniker-end
+1. <span data-ttu-id="80c96-124">Gehen Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.</span><span class="sxs-lookup"><span data-stu-id="80c96-124">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
+    - <span data-ttu-id="80c96-125">Wenn Sie Office 365 Deutschland verwenden, gehen Sie zu <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.</span><span class="sxs-lookup"><span data-stu-id="80c96-125">If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
+    - <span data-ttu-id="80c96-126">Wenn Sie Office 365, betrieben von 21Vianet verwenden, gehen Sie zu <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Abrechnungsbenachrichtigungen</a>.</span><span class="sxs-lookup"><span data-stu-id="80c96-126">If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
+1. <span data-ttu-id="80c96-127">Setzen Sie unter **Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.</span><span class="sxs-lookup"><span data-stu-id="80c96-127">Under **Receive billing statement as email attachment?** switch the toggle to **On**.</span></span>
 
-::: moniker range="o365-germany"
+    <span data-ttu-id="80c96-128">Sie können den Empfang von Rechnungs-E-Mails jederzeit beenden, indem Sie die Umschaltfläche auf **Aus** setzen.</span><span class="sxs-lookup"><span data-stu-id="80c96-128">You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.</span></span>
 
-1. <span data-ttu-id="f0045-116">Gehen Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen & Zahlungen</a>.</span><span class="sxs-lookup"><span data-stu-id="f0045-116">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="80c96-129">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="80c96-129">Next steps</span></span>
 
-::: moniker-end
+<span data-ttu-id="80c96-130">Wenn Sie über ein Guthaben verfügen, können Sie online bezahlen.</span><span class="sxs-lookup"><span data-stu-id="80c96-130">If you have a balance and would like to pay it, you can do that online.</span></span> <span data-ttu-id="80c96-131">Wie das geht, erfahren Sie unter [Abonnement bezahlen](pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="80c96-131">To learn how, see [Pay for your subscription](pay-for-your-subscription.md).</span></span>
 
-::: moniker range="o365-21vianet"
+## <a name="related-content"></a><span data-ttu-id="80c96-132">Verwandte Inhalte</span><span class="sxs-lookup"><span data-stu-id="80c96-132">Related content</span></span>
 
-1. <span data-ttu-id="f0045-117">Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Rechnungen & Zahlungen</a>.</span><span class="sxs-lookup"><span data-stu-id="f0045-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
-
-::: moniker-end
-
-2. <span data-ttu-id="f0045-118">Wählen Sie also auf der Registerkarte **Rechnungen** einen Datumsbereich aus der Dropdown-Liste aus und wählen Sie dann die Reihenfolge aus, die Sie anzeigen möchten.</span><span class="sxs-lookup"><span data-stu-id="f0045-118">On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.</span></span>
-
-3. <span data-ttu-id="f0045-119">Auf der Übersichtsseite sehen Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="f0045-119">On the summary page, you can see the following:</span></span>
-
-    - <span data-ttu-id="f0045-120">Der Gesamtsaldo, der aktuelle fällige Gesamtbetrag, das Fälligkeitsdatum der Zahlung, der Betrag der letzten Zahlung und das Empfangsdatum.</span><span class="sxs-lookup"><span data-stu-id="f0045-120">The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.</span></span>
-
-    - <span data-ttu-id="f0045-121">Zahlungsanweisungen.</span><span class="sxs-lookup"><span data-stu-id="f0045-121">Payment instructions.</span></span>
-
-    - <span data-ttu-id="f0045-122">Eine Aufzeichnung der letzten Zahlungstermine und der bezahlten Beträge.</span><span class="sxs-lookup"><span data-stu-id="f0045-122">A record of past payment dates, and the amounts paid.</span></span>
-
-    - <span data-ttu-id="f0045-123">Das Erstellungsdatum der Bestellung und die Auftragsnummer.</span><span class="sxs-lookup"><span data-stu-id="f0045-123">The order creation date, and the order number.</span></span>
-
-4. <span data-ttu-id="f0045-124">Um eine PDF-Kopie der Rechnung zu drucken oder zu speichern, wählen Sie **PDF herunterladen**.</span><span class="sxs-lookup"><span data-stu-id="f0045-124">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
-
-## <a name="related-articles"></a><span data-ttu-id="f0045-125">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="f0045-125">Related articles</span></span>
-
-[<span data-ttu-id="f0045-126">Bezahlung per Rechnung, Kreditkarte oder Bankkonto</span><span class="sxs-lookup"><span data-stu-id="f0045-126">Pay by invoice, credit card, or bank account</span></span>](pay-for-your-subscription.md)
-  
-[<span data-ttu-id="f0045-127">Zahlungsmethoden verwalten</span><span class="sxs-lookup"><span data-stu-id="f0045-127">Manage payment methods</span></span>](manage-payment-methods.md)
-
-[<span data-ttu-id="f0045-128">Minecraft Education Edition - Zahlungsoptionen</span><span class="sxs-lookup"><span data-stu-id="f0045-128">Minecraft: Education Edition payment options</span></span>](https://go.microsoft.com/fwlink/p/?linkid=838761)
+<span data-ttu-id="80c96-133">[Zahlung per Rechnung, Kreditkarte oder Bankkonto](pay-for-your-subscription.md) (Artikel) </span><span class="sxs-lookup"><span data-stu-id="80c96-133">[Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) </span></span>\
+<span data-ttu-id="80c96-134">[Zahlungsmethoden verwalten](manage-payment-methods.md) (Artikel) </span><span class="sxs-lookup"><span data-stu-id="80c96-134">[Manage payment methods](manage-payment-methods.md) (article) </span></span>\
+<span data-ttu-id="80c96-135">[Minecraft: Education Edition – Zahlungsoptionen](https://go.microsoft.com/fwlink/p/?linkid=838761) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="80c96-135">[Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761) (article)</span></span>

@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Voreingestellte Sicherheitsrichtlinien
                   href: ./office-365-security/preset-security-policies.md
+                - name: Konfigurationsanalyse für voreingestellte Sicherheitsrichtlinien
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Antispam-Nachrichtenkopfzeilen
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Kombination von Richtlinien und Schutzmaßnahmen
