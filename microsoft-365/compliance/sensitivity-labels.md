@@ -20,12 +20,12 @@ description: Verwenden Sie Vertraulichkeitskennzeichnungen aus dem Microsoft Inf
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199555"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552697"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -40,9 +40,6 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 ![Vertraulichkeitsbezeichnung auf dem Excel-Menüband und in der Statusleiste](../media/Sensitivity-label-in-Excel.png)
 
 Vertraulichkeitsbezeichnungen werden ausschließlich für Mandanten in der globalen (öffentlichen) Cloud unterstützt. Vertraulichkeitsbezeichnungen werden derzeit nicht für Mandanten in anderen Clouds (z. B. [nationalen Clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)) unterstützt.
-
-> [!NOTE]
-> Vertraulichkeitsbezeichnungen sind in US Government Community (GCC)-Organisationen noch nicht verfügbar.
 
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Geschäfts-, Schul- oder Unikonto bei Office angemeldet sein.
 

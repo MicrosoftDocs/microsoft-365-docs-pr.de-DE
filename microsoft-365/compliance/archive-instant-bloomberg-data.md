@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Administratoren einen Data Connector zum Importieren und Archivieren von Daten aus dem Chat-Tool von Instant Bloomberg in Microsoft 365 einrichten und verwenden können.
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936558"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552505"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten
 
@@ -42,7 +42,7 @@ In der folgenden Übersicht wird erläutert, wie Sie einen Connector zum Archivi
 
 4. Der Connector importiert die Chatnachrichten Elemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen InstantBloomberg wird im Postfach des jeweiligen Benutzers erstellt, und die Elemente werden darin importiert. Der Connector führt dies mithilfe des Werts der *CorporateEmailAddress* -Eigenschaft aus. Jede Chatnachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers der Chatnachricht aufgefüllt wird. Zusätzlich zur automatischen Benutzerzuordnung mit dem Wert der *CorporateEmailAddress* -Eigenschaft können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei sollte eine Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes Chat Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365-Benutzer gefunden wird, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress* -Eigenschaft des Chat Elements. Wenn der Connector weder in der benutzerdefinierten Zuordnungsdatei noch in der *CorporateEmailAddress* -Eigenschaft des Chat Elements einen gültigen Microsoft 365-Benutzer findet, wird das Element nicht importiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie loslegen
 
 Viele der Implementierungsschritte, die zum Archivieren von Bloomberg-Daten erforderlich sind, sind extern bei Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
 
@@ -120,7 +120,7 @@ Der letzte Schritt besteht darin, einen Instant Bloomberg-Connector im Microsoft
 5. Aktivieren Sie auf der Seite **Benutzerzuordnung** die automatische Benutzerzuordnung, und geben Sie nach Bedarf Benutzerzuordnung an.
 
    > [!NOTE]
-   > Der Connector importiert die Chatnachrichten Elemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen **InstantBloomberg** wird im Postfach des jeweiligen Benutzers erstellt, und die Elemente werden darin importiert. Der Connector verwendet den Wert der *CorporateEmailAddress* -Eigenschaft. Jede Chatnachricht enthält diese Eigenschaft, und die Eigenschaft wird mit der e-Mail-Adresse jedes Teilnehmers der Chatnachricht aufgefüllt. Zusätzlich zur automatischen Benutzerzuordnung mit dem Wert der *CorporateEmailAddress* -Eigenschaft können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Die Zuordnungsdatei sollte die Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnungs Zuordnung bereitstellen, wird der Connector für jedes Chat Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365-Benutzer gefunden wird, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress* -Eigenschaft des Chat Elements. Wenn der Connector weder in der benutzerdefinierten Zuordnungsdatei noch in der *CorporateEmailAddress* -Eigenschaft des Chat Elements einen gültigen Microsoft 365-Benutzer findet, wird das Element nicht importiert.
+   > Der Connector importiert die Chatnachrichten Elemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen **InstantBloomberg** wird im Postfach des jeweiligen Benutzers erstellt, und die Elemente werden darin importiert. Der Connector verwendet den Wert der *CorporateEmailAddress* -Eigenschaft. Jede Chatnachricht enthält diese Eigenschaft, und die Eigenschaft wird mit der e-Mail-Adresse jedes Teilnehmers der Chatnachricht aufgefüllt. Zusätzlich zur automatischen Benutzerzuordnung mit dem Wert der *CorporateEmailAddress* -Eigenschaft können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Die Zuordnungsdatei sollte die Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes Chat Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365-Benutzer gefunden wird, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress* -Eigenschaft des Chat Elements. Wenn der Connector weder in der benutzerdefinierten Zuordnungsdatei noch in der *CorporateEmailAddress* -Eigenschaft des Chat Elements einen gültigen Microsoft 365-Benutzer findet, wird das Element nicht importiert.
 
 6. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **vorbereiten** , um den Connector zu erstellen.
 
