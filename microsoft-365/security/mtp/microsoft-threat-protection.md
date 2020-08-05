@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049928"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560895"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -50,11 +50,13 @@ Mit der integrierten Microsoft Threat Protection-Lösung können Sicherheitsexpe
 >Lesen Sie diesen [interaktiven Leitfaden für Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 
-Microsoft Threat Protection Suite schützt: 
+Microsoft Threat Protection-Suite schützt Folgendes: 
 - **Endpunkte mit Microsoft Defender ATP** – Microsoft Defender ATP ist eine einheitliche Endpunkt Plattform für vorbeugenden Schutz, Erkennung nach einem Verstoß, automatische Untersuchung und Antwort. 
 - **E-Mail und Zusammenarbeit mit Office 365 ATP** -Office 365 ATP schützt Ihre Organisation vor böswilligen Bedrohungen durch e-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
 - **Identitäten mit Azure ATP und Azure AD Identity Protection** – Azure ATP verwendet Active Directory Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insider Aktionen, die an Ihre Organisation gerichtet sind, zu identifizieren, zu erkennen und zu untersuchen. 
 - **Anwendungen mit Microsoft Cloud App Security** -Microsoft Cloud App Security ist eine umfassende Cross-SaaS-Lösung, die eine Tiefe Sichtbarkeit, starke Datensteuerelemente und einen verbesserten Bedrohungsschutz für Ihre Cloud-apps bringt. 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 Die einzigartige produktübergreifende Schicht von Microsoft Threat Protection erweitert die einzelnen Suite-Komponenten um:
 - Schützen von Angriffen und koordinieren von Abwehrreaktionen in der gesamten Suite durch Signal Freigabe und automatisierte Aktionen

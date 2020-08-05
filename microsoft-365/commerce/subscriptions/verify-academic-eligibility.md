@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Berechtigung ihrer Schule für Microsoft 365 Education Academic Pricing überprüfen können.
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205002"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560703"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Überprüfen der akademischen Eignung für Microsoft 365 Education-Abonnements
 
@@ -44,7 +45,7 @@ Wenn Sie nicht sicher sind, ob Sie ein Microsoft 365 Education-Testabonnement ha
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Überprüfen der akademischen Eignung ihrer Schule
 
-In den meisten Fällen, wenn Sie sich für eine ﻿kostenlose Testversion registrieren und den Berechtigungs Überprüfungs-Assistenten abschließen, um die Domäne Ihrer Schule bereitzustellen, erhalten Sie eine sofortige Genehmigung oder Ablehnung der Berechtigung ihrer Schule. In einigen Fällen benötigen wir weitere Informationen, um eine manuelle Berechtigungsprüfung abzuschließen. Diese Überprüfung kann bis zu 10 Werktage dauern. Nachdem wir die Eignungs Informationen ihrer Schule überprüft haben, senden wir Ihnen eine e-Mail, in der Sie über den Status Ihrer Schule benachrichtigt werden.
+In den meisten Fällen, wenn Sie sich für eine ﻿kostenlose Testversion registrieren und den Berechtigungs Überprüfungs-Assistenten abschließen, um die Domäne Ihrer Schule bereitzustellen, erhalten Sie eine sofortige Genehmigung oder Ablehnung der Berechtigung ihrer Schule. In einigen Fällen benötigen wir weitere Informationen, um eine manuelle Berechtigungsprüfung abzuschließen, und Sie erhalten einen Fragebogen, um den abzuschließen. Diese Überprüfung kann bis zu 10 Werktage dauern. Nachdem wir die Eignungs Informationen ihrer Schule überprüft haben, senden wir Ihnen eine e-Mail, in der Sie über den Status Ihrer Schule benachrichtigt werden.
 
 Sie können den Assistenten für akademische Überprüfungen schließen, bevor Sie eine Domäne eingeben, und sofort mit der Verwendung des Testabonnements beginnen. Sie haben jedoch erst dann Anspruch auf akademische Preise, wenn Sie den Überprüfungsprozess abgeschlossen haben. Sie müssen den Prozess vor dem Ende Ihrer kostenlosen Testversion abschließen, um in ein kostenpflichtiges Abonnement umzuwandeln und es weiterhin zu verwenden. Dies gilt auch für die Konvertierung in das ﻿kostenlose a1-Abonnement.
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Erfahren Sie, wie Sie Probleme einkreisen können, die beim Einrichten einer benutzerdefinierten Domäne auftreten. Stellen Sie zunächst sicher, dass die DNS-Einträge ordnungsgemäß eingerichtet sind.
-ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399944"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560251"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
 
@@ -88,7 +88,7 @@ Lesen Sie den Leitfaden unter [verify your Microsoft 365 Domain to prove Ownersh
 Wir können Sie beim Diagnostizieren von Problemen mit der DNS-Einrichtung Ihrer Domäne unterstützen. In der Domänen-Problembehandlung in Microsoft 365 werden alle Datensätze angezeigt, die repariert werden müssen, und genau das, worauf die Datensätze festgelegt werden müssen. 
 
 > [!TIP]
-> Haben Sie Ihren DNS richtig eingerichtet, aber e-Mails funktionieren nicht in Outlook auf Ihrem Desktop? Sehen Sie sich die [unterschiedlichen Nachrichtenfluss Szenarien an, die Sie mit Microsoft 365 haben können](https://www.microsoft.com/?ref=go) , um sicherzustellen, dass Sie die Dinge ordnungsgemäß für Ihr Unternehmen eingerichtet haben. Weitere Informationen zur Problembehandlung mit e-Mails finden Sie hier: [Beheben von Outlook-Problemen](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Haben Sie Ihren DNS richtig eingerichtet, aber e-Mails funktionieren nicht in Outlook auf Ihrem Desktop? Sehen Sie sich die [unterschiedlichen Nachrichtenfluss Szenarien an, die Sie mit Microsoft 365 haben können](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) , um sicherzustellen, dass Sie die Dinge ordnungsgemäß für Ihr Unternehmen eingerichtet haben. Weitere Informationen zur Problembehandlung mit e-Mails finden Sie hier: [Beheben von Outlook-Problemen](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Sie können nicht auf Ihre Website zugreifen?
 <a name="BKMK_Website"> </a>

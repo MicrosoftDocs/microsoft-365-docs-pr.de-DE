@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 in wenigen Schritten zum Schutz von lokalen Active Directory-verbundenen Windows 10-Geräten aktivieren.
-ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533783"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560841"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business Premium verwaltet werden
 
@@ -50,8 +50,7 @@ Die Schritte finden Sie unter [Synchronisieren von Domänenbenutzern mit Microso
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Überprüfen der MDM-Autorität in InTune
 
-Wechseln Sie zu Portal.Azure.com, und klicken Sie oben auf der Seite auf die Suche nach InTune.
-Wählen Sie auf der Seite Microsoft InTune die Option **Geräteregistrierung** aus, und stellen Sie auf der Seite **Übersicht** sicher, dass die **MDM-Autorität** **InTune**ist.
+Wechseln Sie zu [Endpunkt-Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) , und wählen Sie auf der Seite Microsoft InTune die Option **Geräteregistrierung**aus, und stellen Sie dann auf der Seite **Übersicht** sicher, dass die **MDM-Autorität** **InTune**ist.
 
 - Wenn **MDM Authority** **keine**ist, klicken Sie auf die **MDM-Autorität** , um Sie auf **InTune**festzulegen.
 - Wenn **MDM Authority** **Microsoft Office 365**ist, wechseln Sie zu **Geräte**  >  **Registrieren von Geräten** , und verwenden Sie das Dialogfeld MDM- **Autorität hinzufügen** auf der rechten Seite zum Hinzufügen von **InTune-MDM** -Autorität (das Dialogfeld MDM- **Autorität hinzufügen** ist nur verfügbar, wenn die MDM- **Autorität** auf Microsoft Office 365 festgelegt ist).

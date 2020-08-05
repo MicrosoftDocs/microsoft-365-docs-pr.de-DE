@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Erfahren Sie, wie die Verwendungsanalyse eine Verbindung mit einer API herstellt und eine monatliche Nutzungs Tendenz verschiedener Microsoft 365-Dienste bereitstellt.  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695091"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560859"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 Datenmodell von Nutzungsanalysen
 
@@ -151,6 +151,9 @@ Diese Tabelle enthält Daten zu jedem Benutzer, der im vorherigen Monat in einem
 |SFB_P2PSummary  <br/> |Die Anzahl von Peer-zu-Peer-Sitzungen, an denen dieser Benutzer teilgenommen hat.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Die Anzahl von Konferenzsitzungen, die dieser Benutzer organisiert hat.  <br/> |
 |SFB_ConfPartSummary  <br/> |Die Anzahl von Konferenzsitzungen, an denen dieser Benutzer teilgenommen hat.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction bedeutet, dass der Benutzer als aktiv eingestuft wird, aber einen Nullwert für die Chat Nachrichten, 1:1 Anrufe, Kanal Nachrichten, Gesamt Besprechungen und Besprechungen organisiert hat.
    
 ### <a name="data-table---tenant-product-usage"></a>Datentabelle – Tenant Product Usage
 
@@ -158,13 +161,13 @@ Diese Tabelle enthält Daten zur Monats übergreifenden Einführung in Bezug auf
   
 |**Spaltenname**|**Spaltenbeschreibung**|
 |:-----|:-----|
-|Produkt  <br/> |Name der Produkte, für die die Nutzungsinformationen zusammengefasst werden. Microsoft 365-Wert in der Spalte Product stellt Aktivitäten für alle Produkte dar.  <br/> |
+|Produkt  <br/> |Name der Produkte, für die die Informationen zur Nutzung zusammengefasst werden. Microsoft 365-Wert in der Spalte Product stellt Aktivitäten für alle Produkte dar.  <br/> |
 |Timeframe  <br/> |Monatswert. Es gibt eine Zeile pro Produkt pro Monat für die letzten 12 Monate einschließlich des aktuellen Teilmonats.  <br/> |
 |EnabledUsers  <br/> |Die Anzahl der Benutzer, die zur Verwendung des Produkts für den Zeitrahmenwert aktiviert sind. Wenn ein Benutzer für einen Teil des Monats aktiviert wurde, wird er dennoch gezählt.  <br/> |
 |ActiveUsers  <br/> |Die Anzahl der Benutzer, die eine beabsichtigte Aktivität im Produkt für den Zeitrahmenwert ausgeführt haben.  <br/> Ein Benutzer wird für ein Produkt für einen bestimmten Monat als aktiviert gezählt, wenn er eine der Hauptaktivitäten im Produkt ausgeführt hat. Die Hauptaktivitäten sind in der Tabelle **Tenant Product Activity** verfügbar.  <br/> |
 |CumulativeActiveUsers  <br/> |Die Anzahl der Benutzer, die zur Verwendung eines Produkts aktiviert sind und das Produkt bis zum Zeitrahmenmonat mindestens einmal seit Beginn der Datensammlung im neuen Verwendungssystem genutzt haben.  <br/> |
 |MoMReturningUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmenmonat aktiv sind und auch im vorherigen Monat aktiv waren.  <br/> |
-|FirstTimeUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmen zum ersten Mal seit Beginn der Datensammlung im neuen Verwendungssystem aktiv wurden.  <br/> Ein Benutzer wird in einem bestimmten Monat als Erstbenutzer gezählt, wenn er seine Aktivität erstmalig seit Beginn der Datenerfassung in diesem neuen Berichtssystem erkennt. Einmal als Erstbenutzer gezählt, selbst wenn dieser Benutzer eine große Lücke in Ihrer Aktivität hat, werden Sie nie wieder als Erstbenutzer gezählt.  <br/> |
+|FirstTimeUsers  <br/> |Die Anzahl der Benutzer, die im Zeitrahmen zum ersten Mal seit Beginn der Datensammlung im neuen Verwendungssystem aktiv wurden.  <br/> Ein Benutzer wird in einem bestimmten Monat als erstmaliger Benutzer gezählt, wenn seine Aktivität seit Beginn der Datensammlung in diesem neuen Berichtssystem zum ersten Mal erkannt wurde. Einmal als Erstbenutzer gezählt, selbst wenn dieser Benutzer eine große Lücke in Ihrer Aktivität hat, werden Sie nie wieder als Erstbenutzer gezählt.  <br/> |
 |Content Date  <br/> |Wenn der Zeitrahmen den aktuellen Monat angibt, stellt dieser Wert das neueste Datum des aktuellen Monats dar, für das Daten verfügbar sind.  <br/> Wenn der Zeitrahmen den vorherigen Monat angibt, stellt dieser Wert das letzte Datum des Zeitrahmenmonats dar.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Datentabelle – Tenant Product Activity 
@@ -202,7 +205,7 @@ Diese Tabelle besteht aus Zusammenfassungsdaten für alle lizenzierten Exchange 
    
 ### <a name="data-table---tenant-client-usage"></a>Datentabelle – Tenant Client Usage 
 
-Diese Tabelle enthält zusammenfassende Zusammenfassungsdaten von Monaten über die Clients, die die Benutzer zum Herstellen einer Verbindung mit Exchange Online, Skype for Business und jammern verwenden. In dieser Tabelle sind noch keine Client Nutzungsdaten für SharePoint Online und OneDrive für Unternehmen vorhanden.
+Diese Tabelle enthält zusammenfassende Zusammenfassungsdaten von Monaten über die Clients, die die Benutzer zum Herstellen einer Verbindung mit Exchange Online, Skype for Business und jammern verwenden. In dieser Tabelle sind noch keine Daten zur Clientnutzung für SharePoint Online und OneDrive for Business enthalten.
   
 |**Spaltenname**|**Spaltenbeschreibung**|
 |:-----|:-----|
@@ -216,7 +219,7 @@ Diese Tabelle enthält zusammenfassende Zusammenfassungsdaten von Monaten über 
 
 Diese Tabelle enthält monatliche Zusammenfassungsdaten zur Nutzung oder Aktivität von SharePoint Online-Websites. Dies umfasst nur Teamwebsites und Gruppenwebsites. Der Monatsendzustand von SharePoint Online-Websites wird in dieser Spalte dargestellt. Wenn z. B. ein Benutzer fünf Dokumente erstellt und 10 MB Gesamtspeicherplatz verwendet, und dann einige Dateien gelöscht sowie weitere Dateien hinzugefügt hat, sodass der Monatsendzustand eine Gesamtzahl von sieben Dateien ergibt, die 5 MB Speicherplatz verwenden. Der in dieser Tabelle dargestellte Wert ist dann der Monatsendzustand. Diese Tabelle wird ausgeblendet, um zu vermeiden, dass Aggregationen doppelt gezählt werden. Die Tabelle wird als Quelle zum Erstellen von zwei Referenztabellen verwendet.
   
-|**Spaltenname**|**Spaltenbeschreibung**|
+|**Name der Spalte**|**Spaltenbeschreibung**|
 |:-----|:-----|
 |SiteType  <br/> |Websitetypwert (any/team/group) ("any" stellt einen dieser beiden Websitetypen dar).  <br/> |
 |TotalSites  <br/> |Die Anzahl der Websites, die am Ende des Zeitrahmens vorhanden waren.  <br/> |

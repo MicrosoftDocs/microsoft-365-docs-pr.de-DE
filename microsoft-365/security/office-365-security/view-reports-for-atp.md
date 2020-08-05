@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434095"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560297"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -31,7 +31,7 @@ Office 365 Advanced Threat Protection (ATP)-Organisationen (beispielsweise Micro
 
 ![Das Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>Bericht "Advanced Threat Protection-Dateitypen"
+## <a name="advanced-threat-protection-file-types-report"></a>Advanced Threat Protection-Bericht zu Dateitypen
 
 Der Bericht über **Erweiterte Bedrohungsschutz-Dateitypen** zeigt Ihnen den Typ der Dateien an, die von [ATP-sicheren Anlagen](atp-safe-attachments.md)als bösartig erkannt wurden.
 
@@ -115,7 +115,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, bietet der Bericht eine nahezu E
 
 Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
 
-## <a name="advanced-threat-protection-message-disposition-report"></a>Nachrichten Disposition (Advanced Threat Protection)-Bericht
+## <a name="advanced-threat-protection-message-disposition-report"></a>Advanced Threat Protection-Bericht zum Nachrichtenstatus
 
 Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für e-Mail-Nachrichten durchgeführt wurden, die als schädliche Inhalte erkannt wurden.
 
@@ -197,7 +197,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, bietet der Bericht eine nahezu E
 
 Klicken Sie auf **Bericht anzeigen**, um wieder zur Berichtsansicht zu gelangen.
 
-## <a name="threat-protection-status-report"></a>Statusbericht über den Bedrohungsschutz
+## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
 Der **Statusbericht "Threat Protection** " ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und böswilligen e-Mails zusammengefasst werden, die durch [Exchange Online Schutz](exchange-online-protection-overview.md) (EoP) und Office 365 ATP erkannt und blockiert wurden. Weitere Informationen finden Sie unter [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report).
 
@@ -218,7 +218,7 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
 
 - **Aktion zum Schutz vor URLs**: zeigt die Anzahl der URL-Klicks von Benutzern in der Organisation und die Ergebnisse des Klick Vorgangs an:
 
-  - **Gesperrt**
+  - **Blockiert** (der Benutzer wurde für die Navigation zur URL gesperrt)
   - **Blockiert und durchgeklickt**
   - **Durch Klicken während der Überprüfung**
 
@@ -227,7 +227,7 @@ Der **URL Threat Protection** -Bericht enthält zwei aggregierte Ansichten, die 
   Wenn Sie auf **Filter**klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
   - **Start Datum** und **Enddatum**
-  - Die verfügbaren Klick Schutzaktionen sowie den Wert, der zum Anzeigen von Informationen für alle URL-Klicks (nicht nur für blockierte Klicks) **zulässig** ist.
+  - Die verfügbaren Klick Schutzaktionen sowie den **zulässigen** Wert (der Benutzer durfte zur URL navigieren).
 
   ![Aktionsansicht für URL-Klick Schutz im URL Threat Protection-Bericht](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -254,7 +254,7 @@ Wenn Sie auf **Details-Tabelle anzeigen**klicken, bietet der Bericht eine nahezu
 - **Klicken Sie auf Zeit**
 - **Benutzer**
 - **URL**
-- **Action**
+- **Aktion**
 - **App**
 
 Wenn Sie in der Detailtabellen Ansicht auf **Filter** klicken, können Sie nach denselben Kriterien wie in der Berichtsansicht filtern, auch nach **Domänen** oder **Empfängern** , die durch Kommas getrennt sind.

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780421"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560363"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -54,7 +54,7 @@ Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Admin
 |Rolle|Was Sie tun können|
 |---------|---------|
 |Globaler Administrator (in Azure, der Unternehmensadministrator), Benutzer Administrator|Erstellen, lesen, aktualisieren oder löschen Sie die Microsoft 365 Groups-Ablaufrichtlinien Einstellungen.|
-|Benutzer|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
+|User|Erneuern oder [Wiederherstellen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) einer eigenen Microsoft 365-Gruppe|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Vorgehensweise Festlegen der Ablaufrichtlinie
 
@@ -78,7 +78,7 @@ Gruppenbesitzer werden nur per e-Mail benachrichtigt. Wenn die Gruppe über Plan
 
 30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die e-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine e-Mail-Nachricht, mit der Sie die Gruppe problemlos erneuern können. Wenn Sie es nicht erneuern, erhalten Sie eine weitere Verlängerungs-e-Mail 15 Tage vor Ablauf. Wenn Sie es noch nicht erneuert haben, erhalten Sie eine weitere e-Mail-Benachrichtigung am Tag vor Ablauf.
 
-Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, kann der Administrator die Gruppe noch bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, und keine automatische Verlängerung auftritt, weil die Gruppe die Anforderungen nicht erfüllt, die automatisch erneuert werden sollen, kann der Administrator die Gruppe bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
@@ -86,4 +86,6 @@ Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe er
 
 [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Konfigurieren des Ablaufs von Microsoft 365-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Konfigurieren des Ablaufs von Microsoft 365-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+
+[Aktivitätsbasierte automatische Verlängerung](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)

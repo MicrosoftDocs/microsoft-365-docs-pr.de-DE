@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199465"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560262"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -32,6 +32,98 @@ Wir fügen kontinuierlich neue Funktionen zum [Microsoft 365 Compliance Center](
 > [!TIP]
 > Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="june-2020"></a>Juni 2020
+
+### <a name="spotlight-new-data-connectors-hit-preview"></a>Spotlight: neue Daten Konnektor-Treffer Vorschau
+
+Auf der Grundlage unserer Zusage, Ihnen beim Importieren von Daten aus weiteren Drittanbieterquellen in Microsoft 365 zu helfen, freuen wir uns, die Preview-Version von zwei weiteren Data Connectors anzukündigen:
+
+- [Bloomberg-Nachricht](archive-bloomberg-message-data.md). Importieren und archivieren Sie e-Mail-Daten von Finanzdienstleistungen aus dem Bloomberg-Nachrichten Zusammenarbeits Tool. Nachdem die Daten in Postfächern gespeichert wurden, können Sie auf die Daten in Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Kommunikations Konformität und Aufbewahrungsrichtlinien zugreifen und diese verwenden.
+- [Ice-Chat](archive-icechat-data.md). Importieren und Archivieren von Finanz Dienstleistungs-Chatdaten aus dem ICE Chat-Zusammenarbeits Tool. Nachdem die Daten in Postfächern gespeichert wurden, können Sie auf die Daten in Compliance-Features wie Beweissicherungsverfahren, eDiscovery, Archivierung, Überwachung, Kommunikations Konformität und Aufbewahrungsrichtlinien zugreifen und diese verwenden.
+
+### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>Kompatibilitätsbewertung & Compliance-Manager: die Treffer kommen immer wieder
+
+Juni-Updates enthalten eine neue Bewertungs Drilldown-Ansicht in [Compliance Score](compliance-score.md). Überwachen Sie den Status der Steuerung, fügen Sie Bewertungen direkt aus dem Kompatibilitäts Bewertungsergebnis hinzu, und löschen Sie Sie.
+
+Möchten Sie über die neuesten Updates für Compliance-Score und Compliance-Manager informiert werden? Bookmarken Sie die [Versionshinweise für das Konformitäts Bewertungs](compliance-score-release-notes.md) System, und schauen Sie häufig zurück.
+
+## <a name="may-2020"></a>Mai 2020
+
+### <a name="spotlight-data-classification-is-officially-released"></a>Spotlight: die Datenklassifizierung wurde offiziell veröffentlicht.
+
+Die Datenklassifizierung, aka "[Wissen Ihrer Daten](data-classification-overview.md)", Funktionen (Analyse, Inhalts-Explorer und Aktivitäts-Explorer) haben die Vorschauphase abgeschlossen und stehen allen Organisationen zur Verfügung. Leistungsstarke Einblicke und Tools helfen Ihnen dabei, zu ermitteln und zu bewerten, wie vertrauliche Informationen und Beschriftungen (Aufbewahrung und Vertraulichkeit) in Ihrem gesamten Unternehmen verwendet werden. Überprüfen Sie Inhalte, die vertrauliche Informationen enthalten oder Bezeichnungen angewendet haben, untersuchen Sie die Beschriftungs Aktivität in Microsoft 365-Speicherorten, erstellen Sie benutzerdefinierte vertrauliche Informationstypen und vieles mehr.
+
+Video Tour durchführen...
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+### <a name="trainable-classifiers-a-fix-and-a-feature"></a>Schulungsable Klassifizierer: eine Korrektur und ein Feature
+
+Bietet möglicherweise weitere Verbesserungen für Schulungs Klassifizierer:
+
+- Eine Korrektur basierend auf Ihrem Feedback: Wenn Sie eine benutzerdefinierte Klassifizierung Aussaaten und trainieren, müssen Sie die SharePoint-Website-URLs und Ordnerpfade nicht mehr manuell eingeben. Sie können nun eine Liste mit Websites und Ordnern aus einer vorab Auffüllung auswählen.
+- Neues Feature: Wenn Sie eine Vertraulichkeits Bezeichnung erstellen und Einstellungen für die automatische Kennzeichnung für Office-Apps konfigurieren, können Sie nun automatisch die Bezeichnung auf Inhalte anwenden (oder diesen Benutzern empfehlen, diese anzuwenden), die mit Schulungs Klassifizierern übereinstimmen. [Weitere Informationen](apply-sensitivity-label-automatically.md#configuring-trainable-classifiers-for-a-label)
+
+### <a name="communication-compliance-yammer-support-is-here"></a>Kommunikation Compliance: jammern Unterstützung ist hier
+
+Private Nachrichten und öffentliche Community-Unterhaltungen in jammern werden in Kommunikationsrichtlinien unterstützt. Yammer ist ein optionaler Kanal und muss sich im [nativen Modus](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) befinden, um die Überprüfung von Nachrichten und Anlagen zu unterstützen.
+
+### <a name="data-loss-prevention-new-sharing-restriction"></a>Verhinderung von Datenverlust: neue Freigabe Einschränkung
+
+Beim Einrichten einer DLP-Richtlinie zum Schutz von Inhalten in SharePoint oder OneDrive können Sie nun die Aktion "Zugriff auf Inhalte einschränken" so konfigurieren, dass Personen, die Zugriff auf die Inhalte erhalten haben, über die Option "[jeder, der den Link](https://support.microsoft.com/office/share-files-outside-your-organization-with-anyone-links-53e91027-fb8e-4a6e-a3e4-5df4be32e38a)aktiviert hat" blockiert werden.
+
+### <a name="insider-risk-management-tailor-your-alert-volume"></a>Insider Risikomanagement: Anpassen des Warnungs Volumens
+
+Benutzeraktivitäten, die von Insider Risikorichtlinien erkannt werden, werden mit einem bestimmten Risikoergebnis versehen, das wiederum den Warnungsschweregrad (niedrig, Mittel, hoch) bestimmt. Standardmäßig generiert Microsoft 365 eine bestimmte Anzahl von Warnungen mit niedrigem, mittlerem und hohem Schweregrad, aber mit der neuen Einstellung für das [Benachrichtigungs Volume](insider-risk-management-settings.md#alert-volume)können Sie die Lautstärke entsprechend Ihren Anforderungen erweitern oder verringern.
+
+### <a name="pst-import-new-region-supported"></a>PST-Import: neue Region unterstützt
+
+Netzwerk Upload ist jetzt in den Vereinigten Arabischen Emiraten verfügbar.
+
+### <a name="sensitivity-labels-new-privacy-option"></a>Vertraulichkeits Bezeichnungen: neue Datenschutzoption
+
+Wenn Sie [Standort-und Gruppeneinstellungen](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) für eine Bezeichnung konfigurieren, können Sie nun die Option Datenschutz auf **None festlegen – Benutzer auswählen, wer auf die Website zugreifen kann**. Dies ist hilfreich, wenn Sie Inhalte im Container mithilfe einer Vertraulichkeits Bezeichnung schützen möchten, aber Benutzer weiterhin die Datenschutzeinstellung selbst konfigurieren können.
+
+## <a name="april-2020"></a>April 2020
+
+### <a name="records-management-overhauland-a-new-addition"></a>Datensatzverwaltung: Überholung... und eine neue Ergänzung
+
+April enthält ein paar wichtige Updates für unsere Datensatzverwaltungslösung:
+
+- Der Abschnitt "Datensatzverwaltung" ist jetzt vollständig im Compliance Center verfügbar. Nutzen Sie aktualisierte Benutzeroberflächen und Funktionen für Dateiplan, Aufbewahrungs Bezeichnungen und Bezeichnungsrichtlinien, Ereignisse und Disposition.
+- Apropos Disposition: Wir haben auch einen [Nachweis über die Disposition](disposition.md#disposition-of-records) für Datensätze in SharePoint und OneDrive ausgeführt. Sie können jetzt eine Liste der Elemente an diesen Orten sehen, die automatisch oder nach einer Dispositions Überprüfung verworfen wurden.
+
+:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Abschnitt "Datensatzverwaltung" im Microsoft 365 Compliance Center":::
+
+### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Vertraulichkeits Bezeichnungen: Vorschau Richtlinien für die automatische Kennzeichnung
+
+Mit automatisch bezeichnenden Richtlinien können Sie jetzt automatisch Vertraulichkeits Bezeichnungen auf SharePoint-und OneDrive-Dokumente anwenden, die bereits gespeichert sind (aka "Daten im Ruhezustand") und e-Mails, die bereits gesendet oder empfangen werden (aka "e-Mail bei der Übertragung"). Da diese Kennzeichnung von Diensten anstelle von apps angewendet wird, müssen Sie sich keine Gedanken darüber machen, was apps-Benutzer haben und welche Version.
+
+Diese Funktion erweitert die vorhandene clientseitige Beschriftung, die bereits in den Einstellungen für die automatische Beschriftung für Office-Apps enthalten ist, wenn Sie eine Vertraulichkeits Bezeichnung erstellen. Wenn Sie die Unterschiede und Vorteile beider Optionen für die automatische Bezeichnungs Funktion beschleunigen möchten, lesen Sie den [aktualisierten Artikel](apply-sensitivity-label-automatically.md).
+
+## <a name="march-2020"></a>März 2020
+
+### <a name="introducing-advanced-audit"></a>Einführung in die erweiterte Überwachung
+
+Mit der [erweiterten Überwachung in Microsoft 365](advanced-audit.md) werden neue Überwachungsfunktionen eingeführt, die Ihrer Organisation bei forensischen und Compliance-Untersuchungen helfen können. Zu den Highlights gehören die langfristige Aufbewahrung von Überwachungsprotokollen, benutzerdefinierte Überwachungsprotokoll-Aufbewahrungsrichtlinien, neue *MailItemsAccessed* -Post Fach Überwachungsaktionen und die Einführung eines neuen Einschränkungs Grenzwerts auf Mandantenebene, der Ihrer Organisation ein eigenes Kontingent für die Bandbreite für den Zugriff auf Ihre Überwachungsdaten bietet.
+
+### <a name="compliance-score--compliance-manager-preview-the-latest-enhancements"></a>Kompatibilitätsbewertung & Compliance-Manager: Vorschau der neuesten Verbesserungen
+
+Zu den wichtigsten Updates für diese Preview-Version gehören:
+
+- Vereinfachter Prozess zum Erstellen und Ändern von Vorlagen
+- Versions Verwaltungs Hinweis und-Steuerung für Vorlagen und Aktionen
+- Synchronisieren allgemeiner Aktionen über Gruppen hinweg
+- Sprachunterstützung jetzt erweitert auf Chinesisch (vereinfacht), Chinesisch (traditionell), Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch (Brasilien), Russisch und Spanisch
+
+Weitere Informationen zur [Kompatibilitätsbewertung](compliance-score.md) und zum [Compliance-Manager](compliance-manager-overview.md)
+
+### <a name="sensitivity-labels-support-for-labeling-office-files-in-sharepoint-and-onedrive-preview"></a>Vertraulichkeits Bezeichnungen: Unterstützung für das bezeichnen von Office-Dateien in SharePoint und OneDrive (Vorschau)
+
+Das Aktivieren der Vorschau ermöglicht Benutzern das Anwenden von Sensitivitäts Bezeichnungen in Office im Internet. Sie können die Schaltfläche " **Empfindlichkeit** " im Menüband und den angewendeten Beschriftungsnamen in der Statusleiste sehen. Wenn Sie Desktop-Apps verwenden, um Ihre Dateien auf SharePoint oder OneDrive zu beschriften und dann zu speichern, kann Microsoft 365 nun auch den Inhalt dieser Dateien verarbeiten, wenn auf der Bezeichnung Verschlüsselungseinstellungen angewendet wurden. Die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, die Suche und andere kollaborative Features werden in diesen Fällen ebenfalls unterstützt.
+
+[Informationen zum Aktivieren der Vorschau](sensitivity-labels-sharepoint-onedrive-files.md)
 
 ## <a name="february-2020"></a>Februar 2020
 

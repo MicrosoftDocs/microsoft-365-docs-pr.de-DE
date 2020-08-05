@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Führen Sie diese Prüfliste aus, um einen Mitarbeiter aus Microsoft 365 zu entfernen und Daten zu sichern. '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844858"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560387"
 ---
-# <a name="remove-a-former-employee"></a>Entfernen eines ehemaligen Mitarbeiters
+# <a name="remove-or-delete-a-former-employee"></a>Entfernen oder Löschen eines ehemaligen Mitarbeiters
 
 ::: moniker range="o365-21vianet"
 
@@ -49,7 +49,7 @@ Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
@@ -59,7 +59,7 @@ So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
 3. Geben Sie ein neues Kennwort ein, und wählen Sie dann **Zurücksetzen**aus. (Senden Sie es nicht an Sie.)
     
-4. Wählen Sie den Namen des Benutzers aus, um den Eigenschaftenbereich zu öffnen, und wählen Sie auf der Registerkarte **OneDrive** die Option **Abmelden initiieren**aus.
+4. Wählen Sie den Namen des Benutzers aus, um den Eigenschaftenbereich zu öffnen, und wählen Sie auf der Registerkarte **Konto** die Option **Abmelden initiieren**aus.
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
 3. Geben Sie ein neues Kennwort ein, und wählen Sie dann **Zurücksetzen**aus. (Senden Sie es nicht an Sie.)
 
-4. Wählen Sie den Benutzer erneut aus, erweitern Sie **OneDrive Einstellungen**, und wählen Sie dann **initiieren** neben **Abmelden aus**.
+4. Wählen Sie den Namen des Benutzers aus, um den Eigenschaftenbereich zu öffnen, und wählen Sie auf der Registerkarte **Konto** die Option **Abmelden initiieren**aus.
 
 ::: moniker-end
 
@@ -83,9 +83,12 @@ So verhindern Sie, dass ein Mitarbeiter sich anmeldet:
 
 3. Geben Sie ein neues Kennwort ein, und wählen Sie dann **Zurücksetzen**aus. (Senden Sie es nicht an Sie.)
 
-4. Wählen Sie den Benutzer erneut aus, erweitern Sie **OneDrive Einstellungen**, und wählen Sie dann **initiieren** neben **Abmelden aus**.
+4. Wählen Sie den Namen des Benutzers aus, um den Eigenschaftenbereich zu öffnen, und wählen Sie auf der Registerkarte **Konto** die Option **Abmelden initiieren**aus.
 
 ::: moniker-end
+
+> [!NOTE]
+> Sie müssen ein globaler Administrator sein, um die Abmeldung zu initiieren.
 
     
 Innerhalb einer Stunde-oder nachdem Sie die aktuelle Seite von Microsoft 365 verlassen haben-werden Sie aufgefordert, sich erneut anzumelden. (Ein Zugriffstoken ist gut für eine Stunde, sodass die Zeitachse davon abhängt, wie viel Zeit auf dem Token bleibt und ob Sie aus Ihrer aktuellen Webseite navigieren.)
@@ -161,7 +164,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Klicken Sie auf **Speichern**. 
+5. Wählen Sie **Speichern** aus. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
  
@@ -177,7 +180,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Klicken Sie auf **Speichern**. 
+5. Wählen Sie **Speichern** aus. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -193,7 +196,7 @@ In diesem Schritt weisen Sie die E-Mail-Adresse des ehemaligen Mitarbeiters eine
 
 4. Aktivieren Sie **Alle an dieses Postfach gesendeten E-Mails weiterleiten**. Geben Sie im Feld **Weiterleitungsadresse** die E-Mail-Adresse des aktuellen Mitarbeiters (oder des freigegebenen Postfachs) ein, an den (oder das) die E-Mails weitergeleitet werden sollen. 
   
-5. Klicken Sie auf **Speichern**. 
+5. Wählen Sie **Speichern** aus. 
     
 6. Denken Sie daran, dass das Konto des ehemaligen Mitarbeiters nicht gelöscht werden sollte.
 
@@ -215,9 +218,10 @@ Wenn der ehemalige Mitarbeiter ein Firmenhandy genutzt hat, können Sie dieses G
     
 5. Wählen Sie auf der Seite **Details für mobile Geräte** unter **Mobile Geräte**das Mobile Gerät aus, wählen Sie Daten Zurücksetzungs Gerät **wischen**aus ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , und wählen Sie dann **blockieren**aus. 
     
-6. Klicken Sie auf **Speichern**. 
+6. Wählen Sie **Speichern** aus. 
     
-    **Tipp**: Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen Blackberry Enterprise-Dienst entfernen bzw. darin deaktivieren. Sie sollten auch alle Blackberry-Geräte für den Benutzer deaktivieren. Die einzelnen Schritte zum Deaktivieren eines Benutzers finden Sie im Administratorhandbuch für die BlackBerry Business Cloud Services. 
+   > [!TIP]
+   > Stellen Sie sicher, dass Sie den Benutzer aus Ihrem lokalen BlackBerry Enterprise-Dienst entfernen oder deaktivieren. Sie sollten auch alle BlackBerry-Geräte für den Benutzer deaktivieren. Lesen Sie den Abschnitt BlackBerry Business Cloud Services Administration Guide, wenn Sie bestimmte Schritte zum Deaktivieren des Benutzers benötigen. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockieren des Zugriffs eines ehemaligen Mitarbeiters auf Microsoft 365-Daten
 <a name="bkmk_block"> </a>
@@ -343,6 +347,10 @@ Weitere Informationen zum Verwalten von Benutzerlizenzen für Microsoft 365 for 
 Wenn Sie die Lizenz eines Benutzers aus Office 365 entfernen, wird die dem Benutzer zugeordnete PSTN Calling-Nummer freigegeben. Sie können sie dann einem anderen Benutzer zuweisen.
   
 Wenn der Benutzer einer Warteschlangengruppe angehört, ist er kein erreichbares Ziel der Anrufwarteschlangen-Agents mehr. Deshalb empfiehlt es sich, den Benutzer auch aus den Gruppen zu entfernen, die der Anrufwarteschlange zugeordnet sind. 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Einrichten der Anrufweiterleitung für Personen in Ihrer Organisation
+
+Wenn Sie die Anrufweiterleitung für die Telefonnummer des terminierten Mitarbeiters einrichten müssen, kann die Einstellung für die Anrufweiterleitung unter Anruf Richtlinien eine Weiterleitung einrichten, in der eingehende Anrufe an andere Benutzer weitergeleitet werden können, oder die eine andere Person gleichzeitig anrufen können. Weitere Informationen finden Sie unter [Calling Policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
   
 ## <a name="delete-a-former-employees-user-account"></a>Löschen des Benutzerkontos eines ehemaligen Mitarbeiters
 <a name="bkmk_delete"> </a>

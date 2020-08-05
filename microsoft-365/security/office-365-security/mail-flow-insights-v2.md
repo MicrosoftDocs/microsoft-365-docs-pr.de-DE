@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren, einschließlich Einblicke, Berichte und Widgets.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588016"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552674"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
@@ -57,7 +57,7 @@ Das Nachrichtenfluss-Dashboard steht für Folgendes zur Verfügung:
 
 - Mitglieder der **Rolle "Nachrichtenfluss-Administrator** " im Security & Compliance Center. Wenn diese Rolle explizit einem Benutzer zugewiesen ist, der kein Mitglied der globalen Administrator-oder Exchange-Administratorrolle ist:
 
-  - Der Benutzer muss sich direkt bei dem Security & Compliance Center anmelden [https://protection.office.com](https://protection.office.com) .
+  - Der Benutzer muss sich direkt bei dem Security & Compliance Center anmelden <https://protection.office.com> .
 
   - Der Benutzer verfügt nur über eine schreibgeschützte Berechtigung für das Nachrichtenfluss-Dashboard.
 

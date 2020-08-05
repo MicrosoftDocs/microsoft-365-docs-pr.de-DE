@@ -20,12 +20,13 @@ ms.custom: ''
 search.appverid: ''
 description: Hier erfahren Sie, wie Sie kostenlos ein Upgrade von Microsoft Teams auf ein neues Microsoft 365 for Business-Abonnement durchführen.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.date: 07/08/2020
+ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087926"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552458"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Kostenloses Upgrade von Microsoft Teams auf Microsoft 365 for Business
 

@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536860"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552446"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
@@ -64,12 +65,9 @@ Administratoren müssen Ihre Kontodetails bereithalten, wenn sie anrufen.
 
 - **Wählen Sie im Vereinigten Königreich: 0800 032 6417.**
 
-### <a name="phone-numbers-for-other-countries"></a>Telefonnummern für andere Länder
-
 Wenn Ihre Support-Telefonnummer oben nicht aufgeführt ist, verwenden Sie das Dropdownmenü unten, um die Nummer für Ihr Land oder Ihre Region zu finden.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

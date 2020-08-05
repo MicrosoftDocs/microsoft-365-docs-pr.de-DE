@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Erstellen Sie schnell Links zu Ihren e-Mails, Dokumenten, apps, SharePoint-Websites, externen Websites und anderen Ressourcen durch Hinzufügen von benutzerdefinierten Kacheln zum App-Startfeld. '
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780133"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552494"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Hinzufügen von benutzerdefinierten Kacheln zum App-Startfeld
 
@@ -45,7 +45,7 @@ Sie können dem App-Startfeld auch eigene benutzerdefinierte Kacheln hinzufügen
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Hinzufügen einer benutzerdefinierten Kachel zum App-Startfeld
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen**  >  **org** -Einstellungen, und wählen Sie Registerkarte **Organisationsprofil** aus.
+1. Melden Sie sich beim Admin Center als globaler Administrator an, wechseln Sie zu **Einstellungen**  >  der**org**-Einstellungen, und wählen Sie die Registerkarte **Organisationsprofil** aus.
     
 2. Klicken Sie auf der Registerkarte **Organisationsprofil** auf **benutzerdefinierte Kacheln für App-Startfelder**.
   
@@ -91,4 +91,3 @@ Wenn Sie eine benutzerdefinierte Kachel aus dem Fenster **benutzerdefinierte** K
 
 Zusätzlich zum Hinzufügen von Kacheln zum App-Startfeld können Sie der Navigationsleiste App-Start Kacheln hinzufügen ([Weitere Informationen](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Informationen zum Anpassen des Erscheinungsbild von Microsoft 365 an die Marke Ihrer Organisation finden Sie unter [Anpassen des Microsoft 365-Designs](../setup/customize-your-organization-theme.md).
   
-

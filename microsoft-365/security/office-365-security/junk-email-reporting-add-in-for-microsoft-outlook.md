@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie das Add-in "Microsoft Junk-e-Mail-Berichterstellung" installieren und verwenden, um Spam, nicht-Spam und Phishing-Nachrichten an Microsoft zu melden.
-ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208827"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560521"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Add-Ins für die Junk-e-Mail-Berichterstellung für Microsoft Outlook
 
@@ -63,7 +63,12 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 
    ![Dialogfeld "als Phishing melden"](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
+3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und:
+
+   - In den Junk-e-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
+   - Gelöscht, wenn es als Phishing gemeldet wurde.
+   
+   Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Verwenden des Add-Ins "Junk-e-Mail-Berichterstellung" zum Melden von nicht-Spam-und Phishing-Nachrichten aus dem Junk-e-Mail
 
@@ -87,7 +92,12 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 
    ![Dialogfeld "als Phishing melden"](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und in den Ordner "Junk-E-Mail" verschoben. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
+3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet und:
+
+   - In den Junk-e-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
+   - Gelöscht, wenn es als Phishing gemeldet wurde.
+
+   Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>Installieren des Add-Ins für Junk-e-Mail-Berichte
 
@@ -96,7 +106,6 @@ In diesem Thema wird erläutert, wie Sie das Add-in "Junk-e-Mail-Berichterstellu
 - Wechseln Sie zu, <https://www.microsoft.com/download/details.aspx?id=18275> und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort, der leicht zu finden ist:
 
   - **32-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64-Bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Für Outlook 2013 oder höher ist die einzige Voraussetzung die Microsoft .NET Framework 2.0. In Windows 10 installieren Sie das .NET Framework 2,0 nicht aus einem Download.
@@ -209,7 +218,7 @@ Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahr
 
   Wählen Sie im daraufhin angezeigten Dialogfeld **Microsoft Junk-e-Mail-Berichts-Add-in für Outlook entfernen** aus, und klicken Sie dann auf **weiter**.
 
-- **Automatischer Modus**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen Sie in einem Eingabeaufforderungsfenster \< PathToFile \> durch den Speicherort der MSI-Datei, und führen Sie einen der folgenden Befehle aus:
+- **Automatischer Modus**: Suchen oder Herunterladen der entsprechenden MSI-Datei. Ersetzen Sie in einem Eingabeaufforderungsfenster \<PathToFile\> durch den Speicherort der MSI-Datei, und führen Sie einen der folgenden Befehle aus:
 
   - **32-Bit**:
 

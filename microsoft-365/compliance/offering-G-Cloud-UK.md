@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773766"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560772"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Vereinigtes Königreich Government-Cloud (G-Cloud)
 
@@ -37,7 +37,7 @@ Jedes Jahr bereitet Microsoft die Dokumentation vor und übermittelt Beweise, um
 
 Die Benennung von Microsoft-Diensten für den digitalen Marktplatz bedeutet, dass britische Regierungsbehörden und Partner in-Scope-Dienste zum Speichern und Verarbeiten von amtlichen Regierungsdaten in Großbritannien, den meisten Regierungsdaten, verwenden können. Darüber hinaus sind jetzt mehr als 450 Microsoft-Partner in G-Cloud enthalten, die Wiederverkäufer von Microsoft Cloud Services sind. Sie können die Compliance von Dienstleistungen im Bereich direkt mit den 14 Prinzipien in ihren eigenen Anwendungen bestätigen. Kunden und Partner müssen jedoch ihre eigene Compliance für alle Komponenten erreichen, die nicht in der Zertifizierung und Bestimmung der Compliance für Microsoft Cloud Services enthalten sind.
 
-Erfahren Sie, wie Sie Ihre Großbritannien g-Cloud V6-Bereitstellung mit unserem Azure Security and Compliance Blueprint beschleunigen: [herunterladen des Azure Blueprint UK g-Cloud-Prinzips – Implementierungsanleitung](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 Cloud-Sicherheitssteuerelemente für die britische Cloud mithilfe von Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) bietet Kunden Strategien, um ihre Dienste in Azure zu verlagern und ihren Verpflichtungen im Vereinigten Königreich nachzukommen, die von der CESG/NSCS-Aufgabe erfüllt sind. Das Whitepaper bietet eine Übersicht darüber, wie Azure verwendet werden kann, um die 14 in den Cloud-Sicherheitsprinzipalen beschriebenen Steuerelemente zu beheben, und erläutert, wie sich Kunden schneller umstellen und mehr erreichen können, während Sie Microsoft Azure Dienste einführen.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft-Clouddienste im Leistungsumfang
 

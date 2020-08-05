@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, KMU, FAQ, häufig gestellte Fragen, Antworten, Business
 ms.date: 07/21/2020
-ms.openlocfilehash: 520009d26d0133a2c53c6149fe4938bea9db5a32
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502997"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560797"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Häufig gestellte Fragen für Microsoft 365 Business Premium
 
@@ -154,7 +154,7 @@ Windows AutoPilot ist ein Dienst, der die Bereitstellung der neuen Windows 10-PC
 Alle Add-Ons, die Microsoft 365 Business Standard hinzugefügt werden können, können Microsoft 365 Business Premium hinzugefügt werden. Dies bedeutet, dass Sie Office 365 Cloud-App-Sicherheit, Advanced Compliance, Threat Intelligence, myAnalytics, Power BI pro und Audiokonferenzen erwerben können. 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>Kann ich Microsoft 365 Business Premium Phone System und Sprachanrufpläne hinzufügen? 
-Zu diesem Zeitpunkt sind Phone System und Sprachanrufpläne für Kunden reserviert, die erweiterte Anforderungen haben. Kunden, die diese Funktionen erfordern, sollten Angebote von Microsoft 365 Enterprise in Betracht ziehen. 
+Ja, Sie können ein Business-VoIP-Abonnement erwerben. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) ist eine Telefonielösung für kleine und mittelständische Unternehmen mit bis zu 300 Benutzern, die Telefon System, Audiokonferenzen, einen Anrufplan im Inland und vieles mehr bündelt. Zu den Telefon System Funktionen, die Sie erhalten, gehören Voicemail, Anrufer-ID, Parken von anrufen, Anrufweiterleitung, automatische Telefonzentralen und Anrufwarteschlangen. <br> Informationen dazu, ob Business Voice in Ihrem Land oder Ihrer Region verfügbar ist, finden Sie unter [Land-und Regions Verfügbarkeit für Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). Preisinformationen finden Sie unter [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Kann Microsoft 365 Business Premium-Kunden Microsoft Defender Advanced Threat Protection verwenden? 
 Ja, Microsoft Defender Advanced Threat Protection steht als Add-on für Microsoft 365 Business Premium-Kunden zur Verfügung.

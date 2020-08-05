@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430363"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552662"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Vorschaufunktionen für Microsoft Threat Protection
 
@@ -50,12 +50,14 @@ Aktivieren Sie die Einstellung Vorschau der Benutzeroberfläche, um zu den erste
 
 3. **Vorschau-Features**aktivieren aktivieren Sie die  >  **Vorschaufunktionen**. 
 
-3. Wählen Sie **Save** aus.
+3. Wählen Sie **Speichern** aus.
 
 Sie wissen, dass Sie die Vorschaufunktionen aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschau-Features aktivieren** aktiviert ist. 
 
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu Schema Tabellen, die direkt im Sicherheitscenter verfügbar sind. Neben Tabellen-und Spaltenbeschreibungen enthält dieser Verweisinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.
+- **[Aktionen in der erweiterten Suche durchführen](advanced-hunting-take-action.md)** – enthalten schnell Bedrohungen oder adressieren gefährdete Objekte, die Sie in [Advanced Hunting](advanced-hunting-overview.md)finden.
+
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu erweiterten Jagd Schema Tabellen erhalten Sie direkt im Sicherheitscenter. Neben Tabellen-und Spaltenbeschreibungen bietet diese praktische Referenzinformationen zu unterstützten Ereignistypen ( `ActionType` Werten) und Beispielabfragen.
 

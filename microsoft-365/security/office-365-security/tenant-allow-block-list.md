@@ -1,5 +1,5 @@
 ---
-title: Verwalten Ihrer zulässigen und blockierten URLs und Dateien in der Liste "Mandanten zulassen/blockieren"
+title: Verwalten Ihrer zulässigen und blockierten URLs in der Liste "Mandanten zulassen/blockieren"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie URL-und Dateieinträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
-ms.openlocfilehash: db34abf28b5ead8106eb0b1447052d63072b2da3
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+description: Administratoren können erfahren, wie Sie URL-Einträge in der Liste Mandanten-Allow/Block im Security & Compliance Center konfigurieren.
+ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391566"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552550"
 ---
-# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Verwalten von URLs und Dateien in der Zulassungs-/Sperrliste des Mandanten
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Verwalten von URLs in der Liste "Mandanten zulassen/blockieren"
 
 > [!NOTE]
 > Die in diesem Thema beschriebenen Funktionen befinden sich in der Vorschau, können sich ändern und sind nicht in allen Organisationen verfügbar.
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer können Sie mit dem EoP-Filter Urteil nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als "schlecht" markiert werden (ein falsch positives Ergebnis), oder es ist möglicherweise eine ungültige Meldung zulässig (ein falsches negativ).
 
-In der Liste Mandanten-Allow/Block im Security & Compliance Center haben Sie die Möglichkeit, die Microsoft 365-Filter Urteile manuell außer Kraft zu setzen. Die Mandanten-Zulassungs-und Sperrliste wird während des e-Mail-Flusses und zum Zeitpunkt der Benutzerklicks verwendet. In der Liste Mandanten-Allow/Block können Sie URLs und Dateien angeben, die zugelassen oder blockiert werden sollen.
+In der Liste Mandanten-Allow/Block im Security & Compliance Center haben Sie die Möglichkeit, die Microsoft 365-Filter Urteile manuell außer Kraft zu setzen. Die Mandanten-Zulassungs-und Sperrliste wird während des e-Mail-Flusses und zum Zeitpunkt der Benutzerklicks verwendet. In der Liste Mandanten-Allow/Block können Sie URLs angeben, die zugelassen oder blockiert werden sollen.
 
 In diesem Thema wird beschrieben, wie Sie Einträge in der Liste "Allow/Block" des Mandanten im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EoP PowerShell für Organisationen ohne Exchange Online Postfächer) konfigurieren.
 
@@ -37,17 +37,9 @@ In diesem Thema wird beschrieben, wie Sie Einträge in der Liste "Allow/Block" d
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Mandanten-Zulassungs-und Sperrliste** wechseln möchten, verwenden Sie <https://protection.office.com/tenantAllowBlockList> .
 
-- Sie geben Dateien mithilfe des SHA256-Hash Werts der Datei an. Um den SHA256-Hashwert einer Datei in Windows zu suchen, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus:
-
-  ```dos
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
-  ```
-
-  Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . PHash-Werte (wahrnehmbarer Hash) sind nicht zulässig.
-
 - Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt Mandanten-Zulassungs-und Sperrliste](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Thema beschrieben.
 
-- Die Liste Mandanten Allow/Block erlaubt maximal 500 Einträge für URLs und 500 Einträge für Datei Hashs.
+- Die Liste Mandanten Allow/Block erlaubt maximal 500 Einträge für URLs.
 
 - Ein Eintrag sollte innerhalb von 15 Minuten aktiv sein.
 
@@ -95,39 +87,15 @@ Ausführliche Informationen zur Syntax für URL-Einträge finden Sie weiter unte
 
 4. Wenn Sie fertig sind, klicken Sie auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von Dateieinträgen in der Liste "Mandanten zulassen/blockieren"
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden Sie das Security & Compliance Center, um Einträge in der Liste Mandanten-Allow/Block anzuzeigen.
 
 1. Wechseln Sie im Security & Compliance Center zu **Bedrohungs Verwaltungs** \> **Richtlinie** \> **Mandanten-Zulassungs-/Sperrlisten**.
 
-2. Wählen Sie auf der Seite **Mandanten Allow/Block List** die Registerkarte **Dateien** aus, und klicken Sie dann auf **Hinzufügen**.
-
-3. Konfigurieren Sie im angezeigten Flyout **neue Dateien hinzufügen** die folgenden Einstellungen:
-
-   - **Datei Hashes hinzufügen**: Geben Sie einen SHA256-Hashwert pro Reihe ein, bis zu einem Maximum von 20.
-
-   - **Block/Allow**: Wählen Sie aus, ob die angegebenen Dateien **zugelassen** oder **blockiert** werden sollen.
-
-   - **Nie ablaufen**: führen Sie einen der folgenden Schritte aus:
-
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist (deaktivieren ![ ](../../media/scc-toggle-off.png) ), und verwenden Sie das Feld **expires on** , um das Ablaufdatum für die Einträge anzugeben.
-
-     oder
-
-     - Bewegen Sie die Umschaltfläche nach rechts, um die Einträge so zu konfigurieren, dass Sie nie ablaufen: ![Umschaltfläche ein](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
-
-   - **Optional Hinweis**: Geben Sie einen beschreibenden Text für die Einträge ein.
-
-4. Wenn Sie fertig sind, klicken Sie auf **Hinzufügen**.
-
-## <a name="use-the-security--compliance-center-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>Verwenden Sie das Security & Compliance Center, um URL-und Dateieinträge in der Liste Mandanten-Allow/Block anzuzeigen.
-
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungs Verwaltungs** \> **Richtlinie** \> **Mandanten-Zulassungs-/Sperrlisten**.
-
-2. Wählen Sie die Registerkarte **URLs** oder die Registerkarte **Dateien** aus.
+2. Wählen Sie die Registerkarte **URLs** aus.
 
 Klicken Sie auf die folgenden Spaltenüberschriften, um Sie in aufsteigender oder absteigender Reihenfolge zu sortieren:
 
-- **Wert**: die URL oder der Datei Hash.
+- **Wert**
 - **Aktion**: **blockieren** oder **zulassen**.
 - **Datum der letzten Aktualisierung**
 - **Ablaufdatum**
@@ -135,7 +103,7 @@ Klicken Sie auf die folgenden Spaltenüberschriften, um Sie in aufsteigender ode
 
 Klicken Sie auf **Gruppieren** , um die Einträge nach **Aktion** (**blockieren** oder **zulassen**) oder **ohne**zu gruppieren.
 
-Klicken Sie auf **Suchen**, geben Sie eine URL oder einen Datei Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu suchen. Wenn Sie fertig sind, klicken Sie auf **Such** ![ Symbol Löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
+Klicken Sie auf **Suchen**, geben Sie einen Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu suchen. Wenn Sie fertig sind, klicken Sie auf **Such** ![ Symbol Löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
 
 Klicken Sie auf **Filter**. Konfigurieren Sie im angezeigten **Filter** Flyout die folgenden Einstellungen:
 
@@ -151,13 +119,13 @@ Wenn Sie fertig sind, klicken Sie auf über **nehmen**.
 
 Wenn Sie vorhandene Filter löschen möchten, klicken Sie auf **Filter**, und klicken Sie im daraufhin angezeigten **Filter** Flyout auf Filter **Löschen**.
 
-## <a name="use-the-security--compliance-center-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Ändern von URL-und Dateieinträgen in der Liste Mandanten-Allow/Block
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Ändern von Einträgen in der Liste "Mandanten zulassen/blockieren"
 
-Sie können den URL-Wert oder den Dateiwert selbst nicht ändern. Stattdessen müssen Sie den Eintrag löschen und neu erstellen.
+Sie können den URL-Wert selbst nicht ändern. Stattdessen müssen Sie den Eintrag löschen und neu erstellen.
 
 1. Wechseln Sie im Security & Compliance Center zu **Bedrohungs Verwaltungs** \> **Richtlinie** \> **Mandanten-Zulassungs-/Sperrlisten**.
 
-2. Wählen Sie die Registerkarte **URLs** oder die Registerkarte **Dateien** aus.
+2. Wählen Sie die Registerkarte **URLs** aus.
 
 3. Wählen Sie den Eintrag aus, den Sie ändern möchten, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) .
 
@@ -177,11 +145,11 @@ Sie können den URL-Wert oder den Dateiwert selbst nicht ändern. Stattdessen m�
 
 5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-## <a name="use-the-security--compliance-center-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Entfernen von URL-und Dateieinträgen aus der Liste Mandanten-Allow/Block
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Entfernen von Einträgen aus der Liste "Mandanten zulassen/blockieren"
 
 1. Wechseln Sie im Security & Compliance Center zu **Bedrohungs Verwaltungs** \> **Richtlinie** \> **Mandanten-Zulassungs-/Sperrlisten**.
 
-2. Wählen Sie die Registerkarte **URLs** oder die Registerkarte **Dateien** aus.
+2. Wählen Sie die Registerkarte **URLs** aus.
 
 3. Wählen Sie den Eintrag aus, den Sie entfernen möchten, und klicken Sie **dann auf Delete** ![ Delete Icon ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
 
@@ -189,12 +157,12 @@ Sie können den URL-Wert oder den Dateiwert selbst nicht ändern. Stattdessen m�
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden Exchange Online PowerShell oder eigenständiger EoP PowerShell zum Konfigurieren der Liste "Mandanten zulassen/blockieren"
 
-### <a name="use-powershell-to-add-url-and-file-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von URL-und Dateieinträgen in der Liste "Mandanten zulassen/blockieren"
+### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Einträgen in der Liste "Mandanten zulassen/blockieren"
 
-Verwenden Sie die folgende Syntax, um URL-und Dateieinträge in der Liste Mandanten Allow/Block hinzuzufügen:
+Verwenden Sie die folgende Syntax, um Einträge in der Liste Mandanten Allow/Block hinzuzufügen:
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 In diesem Beispiel wird ein URL-Sperreintrag für contoso.com und alle Unterdomänen hinzugefügt (beispielsweise contoso.com, www.contoso.com und XYZ.ABC.contoso.com). Da die Parameter ExpirationDate oder NOEXPIRE nicht verwendet wurden, läuft der Eintrag nach 30 Tagen ab.
@@ -203,20 +171,14 @@ In diesem Beispiel wird ein URL-Sperreintrag für contoso.com und alle Unterdom�
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-In diesem Beispiel wird der Eintrag "Datei zulassen" für die angegebenen Dateien hinzugefügt, die nie ablaufen.
-
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von URL-und Dateieinträgen in der Liste "Mandanten zulassen/blockieren"
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Einträgen in der Liste "Mandanten zulassen/blockieren"
 
-Verwenden Sie die folgende Syntax, um URL-und Dateieinträge in der Liste Mandanten Allow/Block anzuzeigen:
+Verwenden Sie die folgende Syntax, um Einträge in der Liste Mandanten Allow/Block anzuzeigen:
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 In diesem Beispiel werden alle blockierten URLs zurückgegeben.
@@ -225,22 +187,16 @@ In diesem Beispiel werden alle blockierten URLs zurückgegeben.
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-In diesem Beispiel werden Informationen für den angegebenen Datei Hash Wert zurückgegeben.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
-```
-
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von URL-und Dateieinträgen in der Liste "Mandanten zulassen/blockieren"
+### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von Einträgen in der Liste "Mandanten zulassen/blockieren"
 
-Sie können den URL-Wert oder den Dateiwert selbst nicht ändern. Stattdessen müssen Sie den Eintrag löschen und neu erstellen.
+Sie können den URL-Wert selbst nicht ändern. Stattdessen müssen Sie den Eintrag löschen und neu erstellen.
 
-Verwenden Sie die folgende Syntax, um URL-und Dateieinträge in der Liste Mandanten Allow/Block zu ändern:
+Verwenden Sie die folgende Syntax, um Einträge in der Liste Mandanten Allow/Block zu ändern:
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 In diesem Beispiel wird das Ablaufdatum des angegebenen Eintrags geändert.
@@ -251,12 +207,12 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von URL-und Dateieinträgen aus der Liste "Mandanten zulassen/blockieren"
+### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von Einträgen aus der Liste "Mandanten zulassen/blockieren"
 
-Verwenden Sie die folgende Syntax, um URL-und Dateieinträge aus der Liste Mandanten Allow/Block zu entfernen:
+Verwenden Sie die folgende Syntax, um Einträge aus der Liste Mandanten Allow/Block zu entfernen:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 ```
 
 In diesem Beispiel wird der angegebene URL-Eintrag aus der Liste Mandanten-Allow/Block entfernt.

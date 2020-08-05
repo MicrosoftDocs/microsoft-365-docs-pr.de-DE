@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011923"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552686"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3: Windows 10 Enterprise
 
@@ -56,7 +56,7 @@ Weitere Informationen zu Windows 10 finden Sie in den folgenden Artikeln:
 ## <a name="additional-services-and-features"></a>Zusätzliche Dienste und Features
 Im Rahmen der Bereitstellung von Windows 10 Enterprise können Sie diese zusätzlichen Dienste und Features hinzufügen.
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>Desktop Analytics
 
 Windows verwendet Diagnosedaten, um umfangreiche, umsetzbare Informationen bereitzustellen, mit denen Sie Tiefe Einblicke in die betriebliche Effizienz und die Integrität von Windows 10-Geräten in Ihrer Umgebung erhalten.
 
@@ -64,7 +64,7 @@ Windows verwendet Diagnosedaten, um umfangreiche, umsetzbare Informationen berei
 * Update Compliance – Update Compliance richtet sich an den IT-Administrator, der eine ganzheitliche Ansicht aller Windows 10-Geräte ohne zusätzliche Infrastrukturanforderungen erhalten möchte.
 * Geräte Integrität: Sie können die Geräte Integrität verwenden, um Auswirkungen auf Endbenutzer Probleme proaktiv zu erkennen und zu beheben.
 
-Weitere Informationen finden Sie unter [Übersicht über Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) .
+Weitere Informationen finden Sie unter [Übersicht über Desktop Analysen](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) .
 
 ### <a name="windows-security"></a>Windows-Sicherheit
 
