@@ -489,28 +489,30 @@
             - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: Nachrichtenfluss-Bericht
+                - name: Einblick in automatisch weitergeleitete Nachrichten
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Beheben eines möglichen Einblicks in den E-Mail-Loop
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Beheben des Einblicks in langsame Nachrichtenflussregeln
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Zuordnung der Nachrichtenübermittlung
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Einblick in den Top-Domain-Nachrichtenflussstatus
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP-Auth-Clientbericht
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Einblick in Absenderdomäne
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Unzustellbarkeitsbericht
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 'Einblick in E-Mails von neue Domänen, die weitergeleitet werden'
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: Einblick in E-Mail-Weiterleitung von neuen Benutzern
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Bericht zu nicht akzeptierten Domänen
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Fluss eingehender und ausgehender E-Mails
+                - name: Unzustellbarkeitsbericht
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Einblick in den Fluss eingehender und ausgehender E-Mails
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Warteschlangenwarnungen und Warteschlangen
+                - name: Einblick in die Warteschlange
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Bericht über automatisch weitergeleitete Nachrichten
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Einblick für E-Mail-Schleife
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Einblick für langsame Nachrichtenflussregeln
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Einblick und Berichte zu SMTP-AUTH-Clients
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Einblick in den Top-Domänen-Nachrichtenflussstatus
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Sicherheitslösungen
           items:
             - name: 'Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen'
