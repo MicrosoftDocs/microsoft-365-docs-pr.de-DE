@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Dokumentation und Ressourcen zu Microsoft Managed Desktop
+### YamlMime:Landing
+title: Dokumentation zu Microsoft Managed Desktop
+summary: Microsoft Managed Desktop bringt Microsoft 365 Enterprise, die cloudbasierte Geräteverwaltung von Microsoft und die Sicherheitsüberwachung zusammen und ermöglicht, dass sich Ihre IT-Teams auf die wichtigsten Geschäftsanforderungen konzentrieren können.
 metadata:
   title: Dokumentation zu Microsoft Managed Desktop
-  description: null
-  keywords: 'Geräte, App, Verwaltung'
+  description: Microsoft Managed Desktop bringt Microsoft 365 Enterprise, die cloudbasierte Geräteverwaltung von Microsoft und die Sicherheitsüberwachung zusammen und ermöglicht, dass sich Ihre IT-Teams auf die wichtigsten Geschäftsanforderungen konzentrieren können.
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: 'Microsoft Managed Desktop bringt Microsoft 365 Enterprise, die cloudbasierte Geräteverwaltung von Microsoft und die Sicherheitsüberwachung zusammen und ermöglicht, dass sich Ihre IT-Teams auf die wichtigsten Geschäftsanforderungen konzentrieren können.'
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: '<p>Einführung in Microsoft Managed Desktop für Entscheidungsträger: um was es sich dabei handelt, wie es funktioniert und wie Sie es einsetzen können.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: Was ist Microsoft Managed Desktop?
-          - href: service-description/index.md
-            html: <p>Detaillierte Beschreibung aller Elemente von Microsoft Managed Desktop</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: Dienstbeschreibung
-          - href: get-ready/index.md
-            html: <p>Alle Schritte zur Vorbereitung Ihrer Umgebung und Organisation für die Arbeit mit dem Dienst</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: Vorbereitungen
-          - href: get-started/index.md
-            html: '<p>Machen Sie Ihre Organisation mit Microsoft Managed Desktop startklar, einschließlich der Einrichtung von Geräten und der Bereitstellung von Apps.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: Erste Schritte
-          - href: working-with-managed-desktop/index.md
-            html: <p>Alles über die täglichen Abläufe mit dem Dienst</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: Arbeiten mit Microsoft Managed Desktop
-  - title: Neue Artikel und Blogbeiträge
-    items:
-      - type: paragraph
-        text: 'Lesen Sie die neuesten und hilfreichsten Informationen, die Sie benötigen.'
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[Roadmap] Eine umfassende Roadmap für Microsoft Managed Desktop'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[Whitepaper] Studie: steigende Nachfrage nach Managed Desktop-Diensten'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[E-Book] Sorgen Sie in Ihrem Unternehmen mit einem modernen Arbeitsplatz für Begeisterung'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: Videos
-    items:
-      - type: paragraph
-        text: Erfahren Sie mehr über die Vorteile von Microsoft Managed Desktop vom Vice President of Technology der Indiana Pacers.
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: Der General Manager von Microsoft Managed Desktop stellte alle Highlights des Dienstes im Rahmen der jährlichen Ignite-Konferenze vor.
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564143"
+landingContent:
+- title: Informationen zu Microsoft Managed Desktop
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft Managed Desktop?
+      url: /microsoft-365/managed-desktop/intro/
+    - text: Dienstbeschreibung
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: Vorbereitungen
+      url: get-ready/index.md
+    - text: Erste Schritte
+      url: get-started/index.md
+    - text: Arbeiten mit Microsoft Managed Desktop
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: Neue Artikel und Blogbeiträge
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[Roadmap] Eine umfassende Roadmap für Microsoft Managed Desktop'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[Whitepaper] Studie: steigende Nachfrage nach Managed Desktop-Diensten'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[E-Book] Sorgen Sie in Ihrem Unternehmen mit einem modernen Arbeitsplatz für Begeisterung'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: Videos
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Erfahren Sie vom Director of Engineering der Lloyds Banking Group mehr über die Vorteile von Microsoft Managed Desktop.
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: Highlights von Microsoft Managed Desktop auf der jährlichen Ignite-Konferenz
+      url: /microsoft-365/managed-desktop/service-description
