@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127382"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577973"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -105,6 +105,8 @@ Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in M
 
 - **Wenn Sie eine Aufbewahrungsrichtlinie für Microsoft Teams-Kanalnachrichten konfigurieren, werden Microsoft Teams-Nachrichten in privaten Kanälen nicht einbezogen**. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt. 
 
+- **Für Teams Chat- und Kanalnachrichten werden „gefällt mir“-Angaben und andere Reaktionen nicht gespeichert**. Reaktionen von anderen in Form von Emoticons werden durch Aufbewahrungsrichtlinien nicht unterstützt.
+
 - **Es kann bis zu sieben Tage dauern, bis abgelaufene Nachrichten in Microsoft Teams gelöscht sind**. Eine auf Microsoft Teams angewendete Aufbewahrungsrichtlinie löscht Chat- und Kanalnachrichten, wenn der entsprechende Aufbewahrungszeitraum abgelaufen ist. Es kann jedoch zwischen drei und sieben Tage dauern, bis diese Nachrichten bereinigt und dauerhaft gelöscht sind. Außerdem können Chat- und Kanalnachrichten mit eDiscovery-Tools nach Ablauf des Aufbewahrungszeitraums und nach deren dauerhafter Löschung durchsucht werden.
     
     > [!NOTE]
@@ -119,4 +121,4 @@ Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in M
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
-Wenn Sie die Aufbewahrung in Microsoft 365 konfigurieren möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezecihnungen](get-started-with-retention.md).
+Wenn Sie die Aufbewahrung in Microsoft 365 konfigurieren möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).

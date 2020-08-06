@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Beginn der Aufbewahrung bei Auftreten eines Ereignisses
           href: event-driven-retention.md
-        - name: Verwalten des Lebenszyklus von SharePoint-Dokumenten
+        - name: Verwenden von Aufbewahrungsbezeichnungen zum Verwalten von Dokumentlebenszyklen
           href: auto-apply-retention-labels-scenario.md
         - name: Verwalten der Disposition von Daten
           href: disposition.md

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Verwenden Sie die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter.
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521505"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560463"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Schritt 3: Bereitstellen von Sicherheit und Compliance für Remotemitarbeiter
 
@@ -70,7 +70,7 @@ Einhaltung interner Richtlinien oder behördlicher Vorschriften mit diesen Compl
 | Compliance-Manager | Verwalten gesetzlicher Compliance-Aktivitäten im Zusammenhang mit Microsoft-Cloud-Diensten mit diesem workflowbasierten Tool für die Risikobewertung im Microsoft Service Trust Portal. | Microsoft 365 E3 oder E5 |
 | Compliancebewertung (Vorschau) | Sehen Sie sich eine Gesamtbewertung Ihrer aktuellen Compliance-Konfiguration sowie Empfehlungen zur Verbesserung im Microsoft 365 Compliance Center an. | Microsoft 365 E3 oder E5 |
 | Kommunikationscompliance  | Erkennen, Erfassen und Ergreifen von Abhilfemaßnahmen für unangebrachte Nachrichten in Ihrer Organisation. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
-| Insider-Risikomanagement |  Bösartige und unbeabsichtigte Aktivitäten in Ihrer Organisation erkennen, untersuchen und darauf reagieren. Microsoft 365 kann diese Arten von Aktivitäten erkennen, auch wenn ein Mitarbeiter ein nicht verwaltetes Gerät verwendet. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
+| Insider-Risikomanagement |  Erkennen und untersuchen Sie bösartige und unbeabsichtigte Risiken in Ihrer Organisation, und reagieren Sie darauf. Microsoft 365 kann diese Arten von Risiken sogar dann erkennen, wenn ein Mitarbeiter ein nicht verwaltetes Gerät verwendet. | Microsoft 365 E5 oder Microsoft 365 E3 mit den Compliance- oder Insider-Risikomanagement-Add-Ons |
 ||||
 
 Weitere Informationen finden Sie unter [Die wichtigsten 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md).
