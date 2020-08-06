@@ -1,5 +1,5 @@
 ---
-title: Einblick für E-Mail-Schleife
+title: Beheben möglicher e-Mail-Schleifen Einblicke
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die e-Mail-Loop-Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratoren können erfahren, wie Sie den Fix possible Mail Loop Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um e-Mail-Schleifen in Ihrer Organisation zu identifizieren und zu beheben.
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819316"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577627"
 ---
-# <a name="mail-loop-insight"></a><span data-ttu-id="3e3a1-103">Einblick für E-Mail-Schleife</span><span class="sxs-lookup"><span data-stu-id="3e3a1-103">Mail loop insight</span></span>
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a><span data-ttu-id="7414b-103">Beheben möglicher Einblicke in die e-Mail-Schleife im Security & Compliance Center</span><span class="sxs-lookup"><span data-stu-id="7414b-103">Fix possible mail loop insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="3e3a1-104">Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das Kontingent für das e-Mail-Volumen Ihres Unternehmens verwendet und verwirrende Unzustellbarkeitsberichte (auch bekannt als NDR oder Unzustellbarkeitsnachrichten) an die ursprünglichen Absender sendet.</span><span class="sxs-lookup"><span data-stu-id="3e3a1-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span> <span data-ttu-id="3e3a1-105">In dieser Insight wird angezeigt, wann in Ihrer Organisation eine e-Mail-Schleife gefunden wird, welche e-Mail-Domänen an der Schleife beteiligt sind und wie viele Nachrichten sich am Vortag in der Schleife befanden.</span><span class="sxs-lookup"><span data-stu-id="3e3a1-105">This insight reports when a mail loop is found in your organization, the email domains that are involved in the loop, and the number of messages from the previous day that were in the loop.</span></span>
+<span data-ttu-id="7414b-104">Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das Kontingent für das e-Mail-Volumen Ihres Unternehmens verwendet und verwirrende Unzustellbarkeitsberichte (auch bekannt als NDR oder Unzustellbarkeitsnachrichten) an die ursprünglichen Absender sendet.</span><span class="sxs-lookup"><span data-stu-id="7414b-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span>
 
-![Einblicke in die e-Mail-Schleife im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+<span data-ttu-id="7414b-105">Mit dem **Fix possible Mail Loop** Insight im Bereich **Recommended for you** des [Nachrichtenfluss-Dashboards](mail-flow-insights-v2.md) im Security & Compliance Center werden Sie benachrichtigt, wenn eine e-Mail-Schleife in Ihrer Organisation erkannt wird.</span><span class="sxs-lookup"><span data-stu-id="7414b-105">The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail loop is detected in your organization.</span></span> <span data-ttu-id="7414b-106">Diese Einblicke wird erst nach dem Erkennen der Bedingung angezeigt (wenn Sie keine e-Mail-Schleifen haben, wird die Einblicke nicht angezeigt).</span><span class="sxs-lookup"><span data-stu-id="7414b-106">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
 
-<span data-ttu-id="3e3a1-107">Sie können auf **Details anzeigen** klicken, um die Details in einem Flyout-Bereich anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3e3a1-107">You can click **View details** to see the details in a flyout pane.</span></span> <span data-ttu-id="3e3a1-108">Wir identifizieren auch die gängigsten Schleifen Szenarien und stellen die empfohlenen Aktionen bereit (sofern verfügbar), um die Schleife zu fixieren.</span><span class="sxs-lookup"><span data-stu-id="3e3a1-108">We also identify the most common loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
+![Beheben langsamer Nachrichtenfluss Regeln Einblicke in den Bereich "empfohlen für Sie" des Nachrichtenfluss-Dashboards](../../media/mfi-fix-possible-mail-loop.png)
 
-![Flyout-Bereich nach dem Klicken auf Details anzeigen in einer mal-Loop-Einblicke im Nachrichtenfluss-Dashboard](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+<span data-ttu-id="7414b-108">Wenn Sie auf das Widget **Details anzeigen** klicken, wird ein Flyout mit weiteren Informationen angezeigt:</span><span class="sxs-lookup"><span data-stu-id="7414b-108">When you click **View details** on the widget, a flyout appears with more information:</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="3e3a1-110">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="3e3a1-110">Related topics</span></span>
+- <span data-ttu-id="7414b-109">**Domäne**</span><span class="sxs-lookup"><span data-stu-id="7414b-109">**Domain**</span></span>
+- <span data-ttu-id="7414b-110">**Anzahl von Nachrichten**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Schleife betroffen waren.</span><span class="sxs-lookup"><span data-stu-id="7414b-110">**Number of messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the loop.</span></span>
+- <span data-ttu-id="7414b-111">**Domain-Typ**"beispielsweise autorisierend oder nicht autorisierend.</span><span class="sxs-lookup"><span data-stu-id="7414b-111">**Domain type**" For example, Authoritative or Non-authoritative.</span></span>
+- <span data-ttu-id="7414b-112">**MX-Eintrag**: der Host (**e-Mail-Server**) und die **Prioritäts** Werte des MX-Eintrags für die Domäne.</span><span class="sxs-lookup"><span data-stu-id="7414b-112">**MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.</span></span>
+- <span data-ttu-id="7414b-113">**Schleifen Grund** und **How to Fix**: Wir werden versuchen, die gängigsten e-Mail-Schleifen Szenarien zu identifizieren und die empfohlenen Aktionen bereitzustellen (falls verfügbar), um die Schleife zu reparieren.</span><span class="sxs-lookup"><span data-stu-id="7414b-113">**Loop reason** and **How to fix**: We'll try to identify the most common mail loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
 
-<span data-ttu-id="3e3a1-111">Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="3e3a1-111">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+![Details-Flyout, das angezeigt wird, nachdem Sie auf Details anzeigen in der Fix possible Mail Loop Insight](../../media/mfi-fix-possible-mail-loop-details.png)
+
+## <a name="related-topics"></a><span data-ttu-id="7414b-115">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="7414b-115">Related topics</span></span>
+
+<span data-ttu-id="7414b-116">Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="7414b-116">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
