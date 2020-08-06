@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039522"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577527"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
 Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echt Zeit Erkennungen** (früher *Echtzeitberichte* – [Siehe What es New](#new-features-in-threat-explorer-and-real-time-detections)!). Wechseln Sie im Security & Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** _oder_ **Real-Time Detections**aus.
 
-| Mit ATP-Plan 2 sehen Sie Folgendes: | Mit ATP-Plan 1 sehen Sie Folgendes: |
+|Mit ATP-Plan 2 sehen Sie Folgendes:|Mit ATP-Plan 1 sehen Sie Folgendes:|
 |---|---|
 |![Bedrohungs-Explorer](../../media/threatmgmt-explorer.png)|![Echtzeiterkennungen](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -46,37 +46,37 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Verbesserungen an Threat Explorer und Echt Zeit Erkennungen
 
-Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Updates für den Threat Explorer und Echt Zeit Erkennungen vorgenommen. Dabei handelt es sich um Verbesserungen der Erfahrung, wobei der Schwerpunkt darauf liegt, die Jagd Erfahrung konsistenter zu machen. Diese Änderungen werden im folgenden beschrieben: 
+Im Rahmen der Verbesserung des Jagd Prozesses haben wir einige Updates für den Threat Explorer und Echt Zeit Erkennungen vorgenommen. Dabei handelt es sich um Verbesserungen der Erfahrung, wobei der Schwerpunkt darauf liegt, die Jagd Erfahrung konsistenter zu machen. Diese Änderungen werden im folgenden beschrieben:
 
 - [Verbesserungen der Zeitzone](#timezone-improvements)
 - [Aktualisieren im Aktualisierungsprozess](#update-in-the-refresh-process)
 - [Zu filtern Hinzuzufügender Diagramm Drilldown](#chart-drilldown-to-add-to-filters)
 - [In Produkt Informations Updates](#in-product-information-updates)
 
-### <a name="timezone-improvements"></a>Verbesserungen der Zeitzone 
+### <a name="timezone-improvements"></a>Verbesserungen der Zeitzone
 
-Wir zeigen die Zeitzone für die e-Mail-Einträge innerhalb des Portals sowie für exportierte Daten an. Die Zeitzone wird in verschiedenen Bereichen wie dem e-Mail-Raster, dem Detail Flyout, der e-Mail-Zeitachse und ähnlichen e-Mails angezeigt, sodass die Zeitzone für das Resultset für den Benutzer eindeutig ist. 
+Wir zeigen die Zeitzone für die e-Mail-Einträge innerhalb des Portals sowie für exportierte Daten an. Die Zeitzone wird in verschiedenen Bereichen wie dem e-Mail-Raster, dem Detail Flyout, der e-Mail-Zeitachse und ähnlichen e-Mails angezeigt, sodass die Zeitzone für das Resultset für den Benutzer eindeutig ist.
 
-![Zeitzone im Explorer anzeigen](../media/TimezoneImprovements.png)
+![Zeitzone im Explorer anzeigen](../../media/TimezoneImprovements.png)
 
-### <a name="update-in-the-refresh-process"></a>Aktualisieren im Aktualisierungsprozess 
+### <a name="update-in-the-refresh-process"></a>Aktualisieren im Aktualisierungsprozess
 
 Wir haben Feedback rund um Verwirrung mit automatischer Aktualisierung gehört (beispielsweise für Datum, sobald Sie das Datum ändern, die Seite aktualisiert wird) und die manuelle Aktualisierung (für andere Filter). Auf ähnliche Weise führt das Entfernen von Filtern zu automatischer Aktualisierung, was dazu führt, dass beim Ändern der verschiedenen Filter beim Ändern der Abfrage inkonsistente Sucherfahrungen auftreten können. Um dies zu beheben, bewegen wir uns zu einem manuellen Filtermechanismus.
-Aus Erfahrungsgründen kann der Benutzer den unterschiedlichen Filterbereich (aus Filtersatz und Datum) anwenden und entfernen und die Schaltfläche aktualisieren drücken, um die Ergebnisse zu filtern, sobald Sie mit der Definition der Abfrage fertig sind. Die Schaltfläche Aktualisieren wurde auch aktualisiert, um Sie deutlich auf dem Bildschirm aufzurufen. Wir haben auch Tooltips und Produktdokumentationen zu dieser Änderung aktualisiert. 
+Aus Erfahrungsgründen kann der Benutzer den unterschiedlichen Filterbereich (aus Filtersatz und Datum) anwenden und entfernen und die Schaltfläche aktualisieren drücken, um die Ergebnisse zu filtern, sobald Sie mit der Definition der Abfrage fertig sind. Die Schaltfläche Aktualisieren wurde auch aktualisiert, um Sie deutlich auf dem Bildschirm aufzurufen. Wir haben auch Tooltips und Produktdokumentationen zu dieser Änderung aktualisiert.
 
-![Klicken Sie auf aktualisieren, um die Ergebnisse zu filtern](../media/ManualRefresh.png)
+![Klicken Sie auf aktualisieren, um die Ergebnisse zu filtern](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Zu filtern Hinzuzufügender Diagramm Drilldown
 
 Nun können Sie auf die Werte der Diagrammlegende klicken, um diesen Wert als Filter hinzuzufügen. Beachten Sie, dass Sie weiterhin auf die Schaltfläche Aktualisieren klicken müssen, um die Ergebnisse als Teil der oben beschriebenen Änderung zu filtern.
 
-![Drilldown durch Diagramme zum Filtern](../media/ChartDrilldown.png)
+![Drilldown durch Diagramme zum Filtern](../../media/ChartDrilldown.png)
 
-### <a name="in-product-information-updates"></a>In Produkt Informations Updates 
+### <a name="in-product-information-updates"></a>In Produkt Informations Updates
 
-Außerdem sollten weitere Details im Produkt angezeigt werden. Beispielsweise die Gesamtzahl der Suchergebnisse im Raster (siehe unten) sowie Verbesserungen bei Beschriftungen, Fehlermeldungen und QuickInfos, um weitere Informationen zu filtern, Suchfunktionen und Resultsets zu erhalten. 
+Außerdem sollten weitere Details im Produkt angezeigt werden. Beispielsweise die Gesamtzahl der Suchergebnisse im Raster (siehe unten) sowie Verbesserungen bei Beschriftungen, Fehlermeldungen und QuickInfos, um weitere Informationen zu filtern, Suchfunktionen und Resultsets zu erhalten.
 
-![In-Produktinformationen anzeigen](../media/ProductInfo.png)
+![In-Produktinformationen anzeigen](../../media/ProductInfo.png)
 
 
 ## <a name="new-features-in-real-time-detections"></a>Neue Features in Echt Zeit Erkennungen
@@ -104,19 +104,18 @@ Wie wird das gemacht? Der Zustellungs Status wird nun in zwei Spalten aufgeteilt
 
 Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
 
-|Geliefert  |Ausrangierten  |Gesperrt  |Ersetzt  |
-|---------|---------|---------|---------|
-|E-Mail wurde im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.    | E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in diesen Ordnern.       | Alle e-Mails, die unter Quarantäne gestellt wurden, die nicht erfolgreich waren oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!     | Jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage aufweisen, war bösartig.     |
-    
-
-| Geliefert | Ausrangierten | Gesperrt | Ersetzt |
+|Geliefert|Ausrangierten|Gesperrt|Ersetzt|
 |---|---|---|---|
-|E-Mail wurde an den Posteingang des Benutzers oder einen anderen Ordner zugestellt, und der Benutzer kann direkt darauf zugreifen.| E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in diesen Ordnern.| Alle e-Mail-Nachrichten, die isoliert, fehlerhaft oder gelöscht wurden und auf die der Benutzer nicht zugreifen kann.| Alle e-Mail-Nachrichten, bei denen böswillige Anlagen durch txt-Dateien ersetzt wurden, in denen die Anlagen als schädlich eintraten.|
+|E-Mail wurde im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.|E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in diesen Ordnern.|Alle e-Mails, die unter Quarantäne gestellt wurden, die nicht erfolgreich waren oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!|Jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage aufweisen, war bösartig.|
+
+|Geliefert|Ausrangierten|Gesperrt|Ersetzt|
+|---|---|---|---|
+|E-Mail wurde an den Posteingang des Benutzers oder einen anderen Ordner zugestellt, und der Benutzer kann direkt darauf zugreifen.|E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in diesen Ordnern.|Alle e-Mail-Nachrichten, die isoliert, fehlerhaft oder gelöscht wurden und auf die der Benutzer nicht zugreifen kann.|Alle e-Mail-Nachrichten, bei denen böswillige Anlagen durch txt-Dateien ersetzt wurden, in denen die Anlagen als schädlich eintraten.|
 |
 
 Und hier ist, was der Benutzer sehen kann und was er nicht kann:
 
-| Für Endbenutzer zugänglich | Für Endbenutzer unzugänglich |
+|Für Endbenutzer zugänglich|Für Endbenutzer unzugänglich|
 |---|---|
 |Geliefert|Gesperrt|
 |Ausrangierten|Ersetzt|
@@ -205,7 +204,7 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
    ![Blockierte Explorer-URLs](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen.
-   
+
    > [!NOTE]
    > Im Dialogfeld URL-Flyout wird die Filterung für e-Mail-Nachrichten entfernt, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach e-Mail-Nachrichten im Explorer nach bestimmten URLs suchen, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung (über das Dialogfeld URL-Details) erweitern, ohne der Explorer-Ansicht selbst URL-Filter hinzufügen zu müssen.
 
@@ -266,7 +265,7 @@ Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie �
   - Organisationsverwaltung
   - Organisationsverwaltung mit Leserechten
   - Rolle „Empfänger mit Leserechten“
-  - Verwaltung der Richtlinientreue
+  - Complianceverwaltung
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 

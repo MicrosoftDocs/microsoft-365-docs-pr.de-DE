@@ -1,5 +1,5 @@
 ---
-title: Bericht zu nicht akzeptierten Domänen
+title: Bericht "nicht akzeptierte Domäne" im Nachrichtenfluss-Dashboard
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,30 +12,58 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratoren können erfahren, wie Sie den Bericht nicht akzeptierte Domäne im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Nachrichten von Ihrer lokalen Organisation zu überwachen, in denen die Domäne des Absenders in Microsoft 365 nicht konfiguriert ist.
+ms.openlocfilehash: 649163729bbb73140f9cfb7e75c9fd06f3908cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819521"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577465"
 ---
-# <a name="non-accepted-domain-report"></a>Bericht zu nicht akzeptierten Domänen
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Bericht über nicht akzeptierte Domänen im Security & Compliance Center
 
-Ähnlich wie bei der **Absenderdomänen** Einsicht identifiziert die **nicht akzeptierte Domäne** Insight Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte Domäne in Ihrer Organisation konfiguriert.
+Der Bericht **nicht akzeptierte Domäne** im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center zeigt Informationen zu Nachrichten von Ihrer lokalen e-Mail-Organisation an, in der die Domäne des Absenders nicht als akzeptierte Domäne in Ihrer Microsoft 365-Organisation konfiguriert ist.
 
 Microsoft 365 kann diese Nachrichten Drosseln, wenn wir Daten haben, um zu beweisen, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was passiert, und das Problem zu beheben.
 
-![Der Bericht nicht akzeptierte Domäne im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
+![Widget "nicht akzeptierte Domäne" im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mfi-non-accepted-domain-report-widget.png)
 
-Wenn Sie auf das Widget klicken, werden Sie zum vollständigen Bericht geleitet. Im vollständigen Bericht, in dem Sie auf **Details anzeigen** klicken können, um die Informationen in einer Tabelle anzuzeigen, wie im folgenden Diagramm dargestellt:
+## <a name="report-view-for-the-non-accepted-domain-report"></a>Berichtsansicht für den Bericht "nicht akzeptierte Domäne"
 
-![Tabelle "Details anzeigen" im Bericht "nicht akzeptierte Domäne"](../../media/non-accepted-domain-report-view-details.png)
+Durch Klicken auf das Diagramm im Widget " **nicht akzeptierte Domäne** " gelangen Sie zum Bericht " **nicht akzeptierte Domäne** ".
 
-Wenn Sie eine Zeile in der Tabelle auswählen, werden weitere Details in einem Flyout angezeigt. Sie können auf **Beispiel Meldungen anzeigen** klicken, um einige der identifizierten Nachrichten anzuzeigen.
+Standardmäßig wird die Aktivität für alle betroffenen Konnektoren angezeigt. Wenn Sie auf **Daten anzeigen für**klicken, können Sie einen bestimmten Konnektor aus der Dropdownliste auswählen.
 
-![Auswählen einer Zeile in der Tabelle "Details" im Bericht "nicht akzeptierte Domäne"](../../media/non-accepted-domain-report-select-row-in-table.png)
+Wenn Sie mit dem Mauszeiger auf einen Datenpunkt (Tag) im Diagramm zeigen, wird die Gesamtzahl der Nachrichten für den Connector angezeigt.
+
+![Berichtsansicht im Bericht "nicht akzeptierte Domäne"](../../media/mfi-non-accepted-domain-report-overview-view.png)
+
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Detailtabellen Ansicht für den Bericht "nicht akzeptierte Domäne"
+
+Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden die folgenden Informationen angezeigt:
+
+- **Date**
+- **Name des eingehenden Connectors**
+- **Absenderdomäne**
+- **Nachrichtenanzahl**
+- **Beispiel Meldungen**: die Nachrichten-IDs einer Stichprobe betroffener Nachrichten.
+
+Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+
+Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
+
+Wenn Sie eine Zeile in der Tabelle auswählen, wird ein Flyout mit den folgenden Informationen angezeigt:
+
+- **Date**
+- **Name des eingehenden Connectors**
+- **Absenderdomäne**
+- **Nachrichtenanzahl**
+- **Beispiel Meldungen**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der betroffenen Nachrichten anzuzeigen.
+
+![Detail Flyout nach dem Auswählen einer Zeile in der Detailtabellen Ansicht im Bericht "nicht akzeptierte Domäne"](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+
+Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

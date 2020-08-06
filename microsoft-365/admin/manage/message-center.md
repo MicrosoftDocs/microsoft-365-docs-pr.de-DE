@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Erhalten Sie einen Überblick über das Microsoft 365-Nachrichtencenter und seine Rolle im Change Management.
-ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780085"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564025"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -175,6 +175,12 @@ Wir verwenden maschinelle Übersetzungen, um Nachrichten automatisch in Ihrer be
 - Verzeichnis Leser
 - Verzeichnis Synchronisierungs Konten
 - Verzeichnisautoren
-- InTune-Dienstadministrator
+- Intune-Dienstadministrator
 - Administrator für privilegierte Rollen
 - Berichtleseberechtigter
+
+## <a name="unsubscribe-from-message-center-emails"></a>Kündigen des Abonnements von Nachrichtencenter-e-Mails
+
+1. Digest-e-Mails sind standardmäßig aktiviert und werden an Ihre primäre e-Mail-Adresse gesendet. Ändern Sie die Einstellung wöchentliche **Übersicht über meine Nachrichten senden** auf **aus**, um den Erhalt der wöchentlichen Zusammenfassung zu beenden. <br/><br/>Die e-Mail-Benachrichtigung für wichtige Updates ist ein separates Steuerelement. Wenn Sie keine e-Mail-Benachrichtigungen zu wichtigen Updates erhalten möchten, stellen Sie sicher, dass **e-Mails für wichtige Updates senden** nicht **mehr angezeigt werden.**  <br/><br/>Um das Empfangen von e-Mail-Benachrichtigungen zu Datenschutz Nachrichten zu beenden, vergewissern Sie sich, dass **e-Mails für Datenschutz Nachrichten senden** **deaktiviert**sind.  (Datenschutz Nachrichten sind nicht im wöchentlichen Digest enthalten.)<br/><br/>
+
+2. Klicken Sie auf **Speichern** , um Ihre Änderungen beizubehalten.<br/>

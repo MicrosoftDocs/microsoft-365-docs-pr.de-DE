@@ -1,11 +1,11 @@
 ---
-title: Einblick für langsame Nachrichtenflussregeln
+title: Einblicke in langsame Nachrichtenfluss Regeln beheben
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/3/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +13,39 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können Informationen zu den langsamen Nachrichtenfluss Regeln Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratoren können erfahren, wie Sie in Ihrer Organisation die Informationen zum Fix Slow Mail Flow Rules Insight im Security & Compliance Center verwenden, um ineffiziente oder fehlerhafte Nachrichtenfluss Regeln (auch bekannt als Transportregeln) zu identifizieren und zu beheben.
+ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819364"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577168"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>Einblick für langsame Nachrichtenflussregeln
+# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Beheben langsamer Nachrichtenfluss Regeln Einblicke im Security & Compliance Center
 
 Ineffiziente Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) können zu Verzögerungen bei der Nachrichtenübermittlung für Ihre Organisation führen. Diese Einblicke meldet Nachrichtenfluss Regeln, die sich auf den e-Mail-Fluss Ihrer Organisation auswirken. Beispiele für diese Regeltypen sind:
 
 - Die Bedingungen, die verwendet **werden, sind Mitglied von** für große Gruppen.
-
 - Bedingungen, die einen komplexen Regular Expression (Regex)-Mustervergleich verwenden.
-
 - Bedingungen, die die Inhaltsüberprüfung in Anlagen verwenden.
 
-Die Einblicke helfen Ihnen bei der Ermittlung und Optimierung von Nachrichtenfluss Regeln, um Verzögerungen bei der Nachrichtenübermittlung zu verringern.
+Die **Fix langsamen Nachrichtenfluss Regeln** Einblicke in den Bereich **Recommended for you** des [Nachrichtenfluss-Dashboards](mail-flow-insights-v2.md) im Security & Compliance Center benachrichtigt Sie, wenn eine e-Mail-Fluss Regel zu lange dauert, bis Sie abgeschlossen ist. Diese Einblicke wird erst nach dem Erkennen der Bedingung angezeigt (wenn Sie keine e-Mail-Schleifen haben, wird die Einblicke nicht angezeigt).
 
-![Einblicke in langsame Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+Sie können diese Benachrichtigung verwenden, um e-Mail-Flussregeln zu identifizieren und zu optimieren, um Verzögerungen bei der Nachrichtenübermittlung zu verringern.
 
-Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in dem Sie die Regel überprüfen können. Im Flyoutbereich können Sie auch auf **Beispiel Meldungen anzeigen** klicken, um zu sehen, welche Art von Nachrichten von der Regel betroffen sind.
+![Beheben langsamer Nachrichtenfluss Regeln Einblicke in den Bereich "empfohlen für Sie" des Nachrichtenfluss-Dashboards](../../media/mfi-fix-slow-mail-flow-rules.png)
 
-![Flyout-Bereich nach dem Klicken auf Details anzeigen in langsamen Nachrichtenfluss Regeln Einblicke in das Nachrichtenfluss-Dashboard](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+Wenn Sie auf das Widget **Details anzeigen** klicken, wird ein Flyout mit weiteren Informationen angezeigt:
+
+- **Regel**: Sie können mit dem Mauszeiger auf die Zusammenfassung zeigen, um alle Bedingungen, Ausnahmen und Aktionen der Regel anzuzeigen. Sie können auf die Zusammenfassung klicken, um die Regel im Exchange Admin Center (EAC) zu bearbeiten.
+- **Anzahl ausgewerteter Nachrichten**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Regel betroffen waren.
+- **Durchschnittliche Zeitaufwand für jede Nachricht**
+- **Für eine Nachricht aufgewendete mittlere Zeit**: der mittlere Wert, der die obere Hälfte von der unteren Hälfte der Zeit Daten trennt.
+
+![Details-Flyout, das nach dem Klicken auf Details anzeigen im Fix Slow Mail Flow Rules Insight angezeigt wird](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+
+Weitere Informationen zu Bedingungen und Ausnahmen in Nachrichtenfluss Regeln in Exchange Online finden Sie unter [Mail Flow rule conditions and Exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

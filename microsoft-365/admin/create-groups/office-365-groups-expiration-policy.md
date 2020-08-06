@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560363"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572139"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppen Ablaufrichtlinie
 
@@ -68,17 +68,25 @@ Sie können die Richtlinie für alle Gruppen oder nur für ausgewählte Gruppen 
 
 ![Screenshot von Gruppen Ablaufeinstellungen in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>Funktionsweise des Ablaufs mit der Aufbewahrungsrichtlinie
+## <a name="how-expiration-and-renewal-work"></a>Funktionsweise von Ablauf und Erneuerung
 
-Wenn Sie im Security and Compliance Center für Gruppen eine Setup Aufbewahrungsrichtlinie haben, funktioniert die Ablaufrichtlinie nahtlos mit der Aufbewahrungsrichtlinie. Wenn eine Gruppe abläuft, werden die Unterhaltungen der Gruppe in e-Mail-Postfach und Dateien auf der Gruppen Website im Aufbewahrungscontainer für die bestimmte Anzahl von Tagen aufbewahrt, die in der Aufbewahrungsrichtlinie definiert sind. Benutzer sehen die Gruppe oder deren Inhalt nach Ablauf allerdings nicht.
+Die Ablaufrichtlinie funktioniert wie folgt: 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Wie und wann ein Gruppenbesitzer lernt, ob seine Gruppen ablaufen
+- Etwa einen Monat vor Ablauf prüft das System, ob seit der Erstellung der Gruppe oder seit Beginn des aktuellen Erneuerungszyklus eine Gruppenaktivität vorhanden ist.
 
-Gruppenbesitzer werden nur per e-Mail benachrichtigt. Wenn die Gruppe über Planner, SharePoint oder eine andere App erstellt wurde, werden die Ablaufbenachrichtigungen immer per e-Mail gesendet. Wenn die Gruppe über Teams erstellt wurde, erhält der Gruppenbesitzer eine Benachrichtigung, die über den Abschnitt "Aktivität" erneuert wird. Es wird nicht empfohlen, den Ablauf für eine Gruppe zu aktivieren, wenn der Gruppenbesitzer keine gültige e-Mail-Adresse hat.
+- Wenn vorherige Aktivitäten erkannt werden, wird das Ablaufdatum zu diesem Zeitpunkt um die in der Ablaufrichtlinie angegebene Anzahl von Tagen erweitert.
 
-30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die e-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine e-Mail-Nachricht, mit der Sie die Gruppe problemlos erneuern können. Wenn Sie es nicht erneuern, erhalten Sie eine weitere Verlängerungs-e-Mail 15 Tage vor Ablauf. Wenn Sie es noch nicht erneuert haben, erhalten Sie eine weitere e-Mail-Benachrichtigung am Tag vor Ablauf.
+- Wenn frühere Aktivitäten nicht erkannt werden, überwacht das System weiterhin die Aktivität bis zum Ablaufdatum. Wenn Aktivität erkannt wird, wird das Ablaufdatum zu diesem Zeitpunkt um den angegebenen Betrag weitergegeben.
+
+30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die e-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine e-Mail-Nachricht, mit der Sie die Gruppe problemlos erneuern können. Wenn Sie es nicht erneuern, erhalten Sie eine weitere Verlängerungs-e-Mail 15 Tage vor Ablauf. Wenn Sie es noch nicht erneuert haben, erhalten Sie eine weitere e-Mail-Benachrichtigung am Tag vor Ablauf. (Nachdem die Gruppe erneuert wurde, werden bis 30 Tage vor dem neuen Ablaufdatum keine weiteren e-Mail-Erinnerungen gesendet.)
+
+Gruppenbesitzer werden per e-Mail benachrichtigt. Wenn die Gruppe über Planner, SharePoint oder eine andere App erstellt wurde, werden die Ablaufbenachrichtigungen immer per e-Mail gesendet. Wenn die Gruppe über Teams erstellt wurde, erhält der Gruppenbesitzer eine Benachrichtigung, die über den Abschnitt "Aktivität" erneuert wird. Es wird nicht empfohlen, den Ablauf für eine Gruppe zu aktivieren, wenn der Gruppenbesitzer keine gültige e-Mail-Adresse hat.
 
 Wenn aus irgendeinem Grund keine der Besitzer oder Administratoren die Gruppe erneuern, bevor Sie abläuft, und keine automatische Verlängerung auftritt, weil die Gruppe die Anforderungen nicht erfüllt, die automatisch erneuert werden sollen, kann der Administrator die Gruppe bis zu 30 Tage nach Ablauf wiederherstellen. Ausführliche Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365-Gruppe](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+
+## <a name="how-expiry-works-with-retention-policies"></a>Funktionsweise des Ablaufs mit Aufbewahrungsrichtlinien
+
+Wenn Sie im Security and Compliance Center für Gruppen eine Setup Aufbewahrungsrichtlinie haben, funktioniert die Ablaufrichtlinie nahtlos mit der Aufbewahrungsrichtlinie. Wenn eine Gruppe abläuft, werden die Unterhaltungen der Gruppe in e-Mail-Postfach und Dateien auf der Gruppen Website im Aufbewahrungscontainer für die bestimmte Anzahl von Tagen aufbewahrt, die in der Aufbewahrungsrichtlinie definiert sind. Benutzer sehen die Gruppe oder deren Inhalt nach Ablauf allerdings nicht.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

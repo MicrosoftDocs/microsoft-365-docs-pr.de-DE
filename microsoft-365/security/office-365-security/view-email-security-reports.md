@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434255"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578030"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -58,13 +58,13 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 
 - **Erstellungszeit**
 - **Benutzer-ID**
-- **Action**
+- **Aktion**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
+Der **Verschlüsselungs Bericht** steht in EoP (Abonnements mit Postfächern in Exchange Online oder eigenständigen EoP ohne Exchange Online Postfächer) zur Verfügung. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Beispiel:
 
 - Wenn eine große Anzahl von von Benutzern verschlüsselten e-Mail-Nachrichten angezeigt wird, möchten Sie möglicherweise eine Verschlüsselungsrichtlinie zum Automatisieren der Verschlüsselung für bestimmte Anwendungsfälle hinzufügen. Weitere Informationen finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
@@ -221,7 +221,7 @@ Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden
 - **Absenderadresse**
 - **Empfängeradresse**
 - **Ereignistyp**
-- **Action**
+- **Aktion**
 - **Betreff**
 
 Wenn Sie in einer Detailtabelle auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -260,12 +260,12 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, werden die folgenden Details ang
 - **Gefälschter Absender**
 - **Echter Absender**
 - **Sender-IP**
-- **Action**
+- **Aktion**
 - **Nachrichtenanzahl**
 
 Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 
-## <a name="threat-protection-status-report"></a>Statusbericht über den Bedrohungsschutz
+## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
 Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EoP als auch in Office 365 ATP verfügbar; die Berichte enthalten jedoch unterschiedliche Daten. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden.
 

@@ -18,12 +18,12 @@ description: Konfigurieren Sie Exchange Online & Compliance Center, um den behö
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127302"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577115"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Verwenden Sie Exchange Online und das Security & Compliance Center, um die SEC-Richtlinie 17a-4 einzuhalten
 
@@ -70,12 +70,3 @@ Eine Erhaltungssperre kann Sie bei der Einhaltung der gesetzlichen Bestimmungen 
 
 Sie können eine Aufbewahrungsrichtlinie nur mithilfe von PowerShell sperren. Weitere Informationen hierzu finden Sie unter [Verwenden der Erhaltungssperre zur Einhaltung gesetzlicher Vorschriften](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
-
-Derzeit gibt es einige Einschränkungen für Exchange Online:
-
-- Unterhaltungsfäden stehen nicht für Chats und Kanal Nachrichten in Teams zur Verfügung.
-- Für Teams Chat- und Kanalnachrichten werden „gefällt mir“-Angaben nicht gespeichert.
-
-> [!NOTE]
-> Überwachung auf Elementebene für Microsoft 365-Gruppenpostfächer steht jetzt zur Verfügung. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](enable-mailbox-auditing.md).

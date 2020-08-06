@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security & Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 407fee494b0fbb93b76e669c150e20136064454b
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434311"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577186"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 
@@ -41,7 +41,7 @@ Neben der Hervorhebung von Problembereichen enthalten Smart Reports und Einblick
 
 Im Security & Compliance Center steht eine Vielzahl von Berichten zur Verfügung. (Wechseln Sie zu **Berichte** \> **Dashboard** , um eine Gesamtansicht zu erhalten.) In der folgenden Tabelle sind die verfügbaren Berichte mit Links aufgeführt, um weitere Informationen zu erhalten:
   
-|**Art der Information**|**Navigation**|**Weitere Informationen finden Sie unter**|
+|Art der Information|Navigation|Weitere Informationen finden Sie unter|
 |---|---|---|
 |**Security & Compliance Center-Berichte** (alle nach oben)  <br/> Wichtige Einblicke und Empfehlungen sowie Links zu Sicherheits &-Konformitätsberichten, einschließlich Berichten zur Verhinderung von Datenverlusten, Bezeichnungen, e-Mail-Sicherheitsberichten, Advanced Threat Protection-Berichten und mehr|Wechseln Sie im Security & Compliance Center zu **Berichte** - \> **Dashboard**|[Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center](../mtp/monitoring-and-reporting.md)|
 |**Verhinderung von Datenverlust** <br/> Übereinstimmungen der DLP-Richtlinie, falsch positive Ergebnisse und Überschreibungen sowie Links zum Erstellen oder Bearbeiten von Richtlinien|Wechseln Sie im Security & Compliance Center zur Richtlinie zur **Verhinderung von Datenverlust** \> **Policy**|[Anzeigen der Berichte zur Verhinderung von Datenverlust](../../compliance/view-the-dlp-reports.md)|

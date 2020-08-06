@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenfluss-Einblicke im Security & Compliance Center
+title: Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Hier erfahren Sie, wie Sie Nachrichtenfluss-Sicherheitsberichte für Ihre Organisation suchen und verwenden. Nachrichtenfluss Berichte sind im Security & Compliance Center verfügbar.
+description: Administratoren können Informationen zu den Nachrichtenfluss Berichten erhalten, die im Dashboard Berichte im Security & Compliance Center verfügbar sind.
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434179"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578018"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenfluss Berichten im Dashboard "Berichte" im Security & Compliance Center
 
-Zusätzlich zu den [Nachrichtenfluss Einblicken](mail-flow-insights-v2.md) , die im Security & Compliance Center zur Verfügung stehen, stehen Ihnen auch eine Vielzahl von Nachrichtenfluss Berichten zur Verfügung, die Ihnen bei der Überwachung Ihrer Microsoft 365-Organisation helfen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Security & Compliance Center unter <https://office.protection.com> mit dem Dashboard " **Berichte** " anzeigen \> **Dashboard**. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://office.protection.office.com/insightdashboard> .
+Zusätzlich zu den Nachrichtenfluss Berichten, die im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center zur Verfügung stehen, stehen im Dashboard Berichte eine Vielzahl zusätzlicher Nachrichtenübermittlungs Berichte zur Verfügung, mit denen Sie Ihre Microsoft 365-Organisation überwachen können.
+
+Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im [Security & Compliance Center](https://office.protection.com) anzeigen, indem Sie zum **Reports** \> **Dashboard**Berichte wechseln. Wenn Sie direkt zum Dashboard Berichte wechseln möchten, öffnen Sie <https://office.protection.office.com/insightdashboard> .
 
 ![Berichts Dashboard im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -133,7 +135,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Direction**
+  - **Richtung**
 
 - **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
 
@@ -144,7 +146,7 @@ Wenn Sie auf **Detailtabelle anzeigen**klicken, hängt die Anzeige der angezeigt
   - **Absenderadresse**
   - **Empfängeradresse**
   - **Schweregrad**
-  - **Direction**
+  - **Richtung**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
@@ -236,8 +238,8 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 
 Die Datentabelle enthält die folgenden Informationen:
 
-- **Direction**
-- **Type**
+- **Richtung**
+- **Typ**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
@@ -327,8 +329,8 @@ Klicken Sie auf **Bericht anzeigen**, um zur Berichtsansicht zurückzukehren.
 Wenn Sie auf **Tabelle Details anzeigen** in der Ansicht **aufschlüsseln nach: Richtung** oder **aufschlüsseln nach: Richtungs** Ansicht klicken, werden die folgenden Informationen angezeigt:
 
 - **Datum (UTC)**
-- **Type**
-- **Direction**
+- **Typ**
+- **Richtung**
 - **Nachrichtenanzahl**
 
 Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -404,21 +406,13 @@ Zum Anzeigen und Verwenden der Berichte müssen Sie Mitglied der angegebenen Rol
 
 - Im Security & Compliance Center müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  -Organisationsverwaltung
-
-  -Sicherheits Administrator (Sie können dies auch im [Azure Active Directory Admin Center](https://aad.portal.azure.com) -Sicherheits Leser
+  -Organisationsverwaltung-Sicherheits Administrator (Dies können Sie auch im [Azure Active Directory Admin Center](https://aad.portal.azure.com) – Sicherheits Leser
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 - In Exchange Online müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  -Organisationsverwaltung
-
-  -Nur Ansichts Organisationsverwaltung
-
-  -Nur anzeigende Empfänger
-
-  -Compliance-Management
+  -Organisationsverwaltung-nur Ansichts Organisationsverwaltung-nur Empfänger – Compliance-Management
 
 Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) und [Verwalten von Rollengruppen in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
@@ -426,4 +420,8 @@ Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https
 
 [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
 
+[Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md)
+
 [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)
+
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)

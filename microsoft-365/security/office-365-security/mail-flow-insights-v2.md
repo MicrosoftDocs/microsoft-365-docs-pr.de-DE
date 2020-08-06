@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenfluss-Einblicke im Security & Compliance Center
+title: Einblicke in den Nachrichtenfluss im Nachrichtenfluss-Dashboard
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,67 +10,69 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Administratoren können sich über das Nachrichtenfluss-Dashboard im Security & Compliance Center informieren, einschließlich Einblicke, Berichte und Widgets.
+description: Administratoren können sich über die Einblicke und Berichte informieren, die im Nachrichtenfluss-Dashboard im Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552674"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577789"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
 Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu ermitteln und Aktionen zum Beheben von Problemen im Zusammenhang mit dem Nachrichtenfluss in Ihrer Organisation durchführen.
 
-Die im e-Mail-Fluss-Dashboard verfügbaren Einblicke, Berichte und Widgets sind:
+![Das Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
 
-- [Nachrichtenfluss-Bericht](mfi-mail-flow-map-report.md)
+Die verfügbaren Einblicke sind:
 
-- [Einblick in den Domänen Nachrichtenflussstatus](mfi-domain-mail-flow-status-insight.md)
+- [Einblicke automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
 
-- [SMTP-Auth-Clientbericht](mfi-smtp-auth-clients-report.md)
+- [Fix possible Mail Loop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [Absenderdomänen Einblicke](mfi-sender-domain-insight.md)
+- [Fix Slow Mail Flow Rules Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Unzustellbarkeitsbericht](mfi-non-delivery-report.md)
+- [Nachrichtenfluss Zuordnung](mfi-mail-flow-map-report.md)
+
+- [Neue Domänen werden weitergeleitet e-Mail Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+
+- [Neue Benutzer, die e-Mail Insight 2 weiterleiten](mfi-new-users-forwarding-email.md)<sup>2</sup>
 
 - [Bericht "nicht akzeptierte Domäne"](mfi-non-accepted-domain-report.md)
 
-- [Fluss eingehenden und ausgehender E-Mails](mfi-outbound-and-inbound-mail-flow.md)
+- [Unzustellbarkeitsbericht](mfi-non-delivery-report.md)
 
-- [Warteschlangenwarnungen und Warteschlangen](mfi-queue-alerts-and-queues.md)
+- [Einblicke in ausgehenden und eingehenden Nachrichtenfluss](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Bericht über automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
+- [Warteschlangen Einblicke](mfi-queue-alerts-and-queues.md)
 
-- [Einblick für E-Mail-Schleife](mfi-mail-loop-insight.md)
+- [Einblicke und Berichte von SMTP-Authentifizierungsclients](mfi-smtp-auth-clients-report.md)
 
-- [Einblick für langsame Nachrichtenflussregeln](mfi-slow-mail-flow-rules-insight.md)
+- [Übersicht über den Top-Domain-e-Mail-Datenstrom](mfi-domain-mail-flow-status-insight.md)
+
+<sup>1</sup> diese Einblicke wird nur dann im Bereich " **empfohlen für Sie** " des Nachrichtenfluss-Dashboards angezeigt, nachdem das Problem erkannt wurde. Andernfalls wird es nicht angezeigt.
+
+<sup>2</sup> diese Einsicht wird nicht im Nachrichtenfluss-Dashboard angezeigt, aber auf der Seite [Weiterleiten des Berichts](view-mail-flow-reports.md#forwarding-report) , nachdem das Problem erkannt wurde. Andernfalls wird es nicht angezeigt.
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Erforderliche Berechtigungen zum Anzeigen des Nachrichtenfluss-Dashboards
 
-Das Nachrichtenfluss-Dashboard steht für Folgendes zur Verfügung:
+Das Nachrichtenfluss-Dashboard steht Mitgliedern der folgenden routengruppen zur Verfügung:
 
-- Mitglieder der **globalen Administrator** Rolle.
+- **Organisationsverwaltung** im Security & Compliance Center (globale Administratoren).
 
-- Mitglieder der **Exchange-Administrator** Rolle.
+- **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.
 
-- Mitglieder der **Rolle "Nachrichtenfluss-Administrator** " im Security & Compliance Center. Wenn diese Rolle explizit einem Benutzer zugewiesen ist, der kein Mitglied der globalen Administrator-oder Exchange-Administratorrolle ist:
+- **Nachrichtenfluss-Administrator** im Security & Compliance Center: Wenn ein Mitglied dieser Rollengruppe nicht auch Mitglied der Rollengruppen globaler Administrator oder Exchange-Administrator ist, beachten Sie die folgenden Probleme und Anforderungen:
 
   - Der Benutzer muss sich direkt bei dem Security & Compliance Center anmelden <https://protection.office.com> .
-
   - Der Benutzer verfügt nur über eine schreibgeschützte Berechtigung für das Nachrichtenfluss-Dashboard.
-
   - Der Benutzer hat keinen Zugriff auf das Microsoft 365 Admin Center.
 
-Weitere Informationen zur Rolle "globaler Administrator" finden Sie unter [Informationen zu Microsoft 365 Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-
-Informationen zum Zuweisen von Sicherheits & Compliance Center-Rollen für Benutzer finden Sie unter [Gewähren von Benutzern Zugriff auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen zu Berechtigungen im Security & Compliance Center finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und [erteilen Benutzern den Zugriff auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>So finden Sie das Nachrichtenfluss-Dashboard
 
-1. Wechseln Sie zum Security & Compliance Center unter [https://protection.office.com](https://protection.office.com) .
+Öffnen Sie das Security & Compliance Center unter <https://protection.office.com> , erweitern Sie **Nachrichtenfluss**, und wählen Sie dann **Dashboard**aus.
 
-2. Erweitern Sie **Nachrichtenfluss** , und wählen Sie dann **Dashboard**aus.
-
-   ![Das Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+Wenn Sie direkt zum Nachrichtenfluss-Dashboard wechseln möchten, öffnen Sie <https://protection.office.com/mailflow/dashboard> .

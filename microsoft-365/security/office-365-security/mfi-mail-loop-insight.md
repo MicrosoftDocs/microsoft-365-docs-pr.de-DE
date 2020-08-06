@@ -1,5 +1,5 @@
 ---
-title: Einblick für E-Mail-Schleife
+title: Beheben möglicher e-Mail-Schleifen Einblicke
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die e-Mail-Loop-Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratoren können erfahren, wie Sie den Fix possible Mail Loop Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um e-Mail-Schleifen in Ihrer Organisation zu identifizieren und zu beheben.
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819316"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577627"
 ---
-# <a name="mail-loop-insight"></a>Einblick für E-Mail-Schleife
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Beheben möglicher Einblicke in die e-Mail-Schleife im Security & Compliance Center
 
-Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das Kontingent für das e-Mail-Volumen Ihres Unternehmens verwendet und verwirrende Unzustellbarkeitsberichte (auch bekannt als NDR oder Unzustellbarkeitsnachrichten) an die ursprünglichen Absender sendet. In dieser Insight wird angezeigt, wann in Ihrer Organisation eine e-Mail-Schleife gefunden wird, welche e-Mail-Domänen an der Schleife beteiligt sind und wie viele Nachrichten sich am Vortag in der Schleife befanden.
+Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das Kontingent für das e-Mail-Volumen Ihres Unternehmens verwendet und verwirrende Unzustellbarkeitsberichte (auch bekannt als NDR oder Unzustellbarkeitsnachrichten) an die ursprünglichen Absender sendet.
 
-![Einblicke in die e-Mail-Schleife im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+Mit dem **Fix possible Mail Loop** Insight im Bereich **Recommended for you** des [Nachrichtenfluss-Dashboards](mail-flow-insights-v2.md) im Security & Compliance Center werden Sie benachrichtigt, wenn eine e-Mail-Schleife in Ihrer Organisation erkannt wird. Diese Einblicke wird erst nach dem Erkennen der Bedingung angezeigt (wenn Sie keine e-Mail-Schleifen haben, wird die Einblicke nicht angezeigt).
 
-Sie können auf **Details anzeigen** klicken, um die Details in einem Flyout-Bereich anzuzeigen. Wir identifizieren auch die gängigsten Schleifen Szenarien und stellen die empfohlenen Aktionen bereit (sofern verfügbar), um die Schleife zu fixieren.
+![Beheben langsamer Nachrichtenfluss Regeln Einblicke in den Bereich "empfohlen für Sie" des Nachrichtenfluss-Dashboards](../../media/mfi-fix-possible-mail-loop.png)
 
-![Flyout-Bereich nach dem Klicken auf Details anzeigen in einer mal-Loop-Einblicke im Nachrichtenfluss-Dashboard](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+Wenn Sie auf das Widget **Details anzeigen** klicken, wird ein Flyout mit weiteren Informationen angezeigt:
+
+- **Domäne**
+- **Anzahl von Nachrichten**: Sie können auf **Beispiel Meldungen anzeigen** klicken, um die Ergebnisse der [Nachrichtenablaufverfolgung](message-trace-scc.md) für ein Beispiel der Nachrichten anzuzeigen, die von der Schleife betroffen waren.
+- **Domain-Typ**"beispielsweise autorisierend oder nicht autorisierend.
+- **MX-Eintrag**: der Host (**e-Mail-Server**) und die **Prioritäts** Werte des MX-Eintrags für die Domäne.
+- **Schleifen Grund** und **How to Fix**: Wir werden versuchen, die gängigsten e-Mail-Schleifen Szenarien zu identifizieren und die empfohlenen Aktionen bereitzustellen (falls verfügbar), um die Schleife zu reparieren.
+
+![Details-Flyout, das angezeigt wird, nachdem Sie auf Details anzeigen in der Fix possible Mail Loop Insight](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

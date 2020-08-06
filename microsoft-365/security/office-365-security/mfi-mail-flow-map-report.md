@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenfluss-Bericht
+title: Nachrichtenfluss Zuordnung
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratoren können erfahren, wie Sie die e-Mail-Fluss Zuordnung im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um zu visualisieren und nachzuverfolgen, wie e-Mail-Nachrichten zu und von Ihrer Organisation über Connectors und ohne Connectors verwendet werden.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818843"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577696"
 ---
-# <a name="mail-flow-map-report"></a>Nachrichtenfluss-Bericht
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>Nachrichtenfluss Zuordnung im Security & Compliance Center
 
-Dieser Bericht gibt Einblicke in die Art und Weise, wie e-Mails in Ihrer Organisation fließen. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn diese auftreten.
+Die **e-Mail-Fluss Übersicht** im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center gibt Einblicke in die Art und Weise, wie e-Mail-Nachrichten durch Ihre Organisation fließt. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn Sie auftreten.
 
-![Der Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mail-flow-map-selected.png)
+![Nachrichtenfluss-Zuordnungs Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a>Nachrichtenfluss-Map-widget
+Standardmäßig zeigt das Widget das Nachrichtenfluss Muster aus dem vorherigen Tag in einem Diagramm an, das als *Sankey* -Diagramm bezeichnet wird. Sie können den nach-links-Pfeil nach links ![ ](../../media/scc-left-arrow.png) und nach-rechts-Pfeil verwenden ![ ](../../media/scc-right-arrow.png) , um Informationen aus unterschiedlichen Tagen anzuzeigen. Jede andere Farbe stellt die Nachrichtenübermittlung über einen anderen eingehenden oder ausgehenden Connector (oder ohne Verwendung von Connectors) dar. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe zeigen, wird die Anzahl der Nachrichten für diese Art von Connector angezeigt.
 
-Standardmäßig zeigt die e-Mail-Fluss-Zuordnung das hochstufige Nachrichtenfluss Muster des vorherigen Tags an. Sie können den linken und rechten Pfeil für unterschiedliche Tage verwenden. Wenn Sie den Mauszeiger über die einzelnen Bereiche im Bericht bewegen, wird das Volumen der e-Mails an und von Ihrer Organisation angezeigt, wie im folgenden Diagramm dargestellt:
+## <a name="report-view-for-the-mail-flow-map"></a>Berichtsansicht für die Nachrichtenfluss Zuordnung
 
-![Pfeile Links und rechts im Nachrichtenfluss-Map-widget](../../media/mail-flow-map-widget.png)
+Durch Klicken auf das Widget **"Nachrichtenfluss-Zuordnung** " gelangen Sie zum Bericht **"Nachrichtenfluss Karte** ".
 
-## <a name="mail-flow-map-basics"></a>Grundlagen der Nachrichtenfluss Übersicht
+Die folgenden Diagramme stehen in der Berichtsansicht zur Verfügung:
 
-Durch Klicken auf das Widget **"Nachrichtenfluss-Zuordnung** " gelangen Sie zum Bericht **"Nachrichtenfluss Karte** ". Hier sehen Sie eine genauere Berichtebene, Sie können auf Detailtabelle anzeigen klicken, um detaillierte Daten anzuzeigen. Sie können den detaillierten Bericht auch herunterladen, indem Sie auf Anforderungsbericht klicken.
+- **Daten anzeigen für: Overview**: Dies ist im Wesentlichen eine größere Ansicht des Widgets. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe zeigen, wird die Anzahl der Nachrichten für diese Art von Connector angezeigt.
 
-![Übersichtsansicht im Bericht "Nachrichtenfluss Übersicht"](../../media/mail-flow-map-overview.png)
+  ![Übersichtsansicht im Bericht "Nachrichtenfluss Übersicht"](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a>Details
+- **Daten anzeigen für: Detail: in**dieser Ansicht werden Details zu den Connectors und Zieldomänen angezeigt. Die obersten Absender-und Empfängerdomänen werden aufgelistet, und die restlichen werden in **andere**eingefügt. Wenn Sie mit dem Mauszeiger auf eine bestimmte Farbe und einen bestimmten Abschnitt zeigen, wird die Anzahl der Nachrichten angezeigt.
 
-Standardmäßig ist die Option **Daten für anzeigen** auf den Wert **Overview**festgelegt. Wenn Sie auf die Dropdownliste klicken und **Detail**auswählen, wechselt die Ansicht zu den Details der Domänenebene.
+  ![Detail Ansicht im Nachrichtenfluss-Zuordnungsbericht](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Wählen Sie Detail in Show Data for in Overview View im Nachrichtenfluss-Zuordnungsbericht aus.](../../media/mail-flow-map-select-detail.png)
+Wenn Sie in einer Berichtsansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
 
-Die obersten Absender-und Empfängerdomänen werden aufgelistet, und der Rest wird in **andere** eingefügt, wie in den folgenden Diagrammen dargestellt:
+Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
 
-![Detailansicht im Nachrichtenfluss-Zuordnungsbericht](../../media/mail-flow-map-detail.png)
+Zugehörige Einblicke werden unterhalb der Nachrichtenfluss Zuordnung angezeigt, wenn Sie verfügbar sind (beispielsweise die [Fix possible Mail Loop Insight](mfi-mail-loop-insight.md)).
 
-## <a name="related-insights"></a>Verwandte Einblicke
+## <a name="details-table-view-for-the-mail-flow-map"></a>Tabellenansicht "Details" für die Nachrichtenfluss Zuordnung
 
-Zugehörige Einblicke werden unterhalb der Nachrichtenfluss Zuordnung angezeigt, sofern Sie verfügbar sind (beispielsweise die Einblicke in die Sender Domain oder die Einblicke in die Mail-Schleife).
+Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden die folgenden Informationen angezeigt:
+
+- **Date**
+- **Kategorie**
+- **Connector/Drittanbieter-Dienstanbieter**
+- **Absender/Empfängerdomäne**
+- **Nachrichtenanzahl**
+
+Wenn Sie in einer Detailtabellen Ansicht auf **Filter** klicken, können Sie einen Datumsbereich mit **anfangs** -und **Enddatum**angeben.
+
+Wenn Sie eine Zeile auswählen, werden ähnliche Details in einem Flyout angezeigt:
+
+![Details-Flyout aus der Detailtabelle der Nachrichtenfluss Zuordnung](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+Klicken Sie auf **Anforderungs Download**, um den Bericht für einen bestimmten Datumsbereich an einen oder mehrere Empfänger zu senden.
+
+Klicken Sie auf **Bericht anzeigen**, um zur Ansicht Berichte zurückzukehren.
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -1,5 +1,5 @@
 ---
-title: Bericht über automatisch weitergeleitete Nachrichten
+title: Einblicke automatisch weitergeleitete Nachrichten
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren können sich über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635304"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577819"
 ---
-# <a name="auto-forwarded-messages-report"></a>Bericht über automatisch weitergeleitete Nachrichten
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Einblicke automatisch weitergeleiteter Nachrichten im Security & Compliance Center
 
-Der Bericht " **automatisch weitergeleitete Nachrichten** " im Nachrichtenfluss-Dashboard zeigt Informationen zu Nachrichten an, die von Ihrer Organisation automatisch an Empfänger in externen domänenweiter geleitet werden.
+Die automatisch **weitergeleiteten Nachrichten** Insight im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im Security & Compliance Center zeigt Informationen zu Nachrichten an, die von Ihrer Organisation automatisch an Empfänger in externen domänenweiter geleitet werden.
 
-![Die automatisch weitergeleiteten Nachrichten Einblicke im Security & Compliance Center](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![Der Bericht "automatisch weitergeleitete Nachrichten" im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget "automatisch weitergeleitete Nachrichten" im Security & Compliance Center](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Details zu automatisch weitergeleiteten Nachrichten
 
-Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Bereich angezeigt, der den automatisch weitergeleiteten Nachrichtenstatus anzeigt. Sie können die Details anzeigen, indem Sie auf den Link **Weiterleiten des Berichts** klicken.
+Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Bereich angezeigt, der weitere Informationen zu den automatisch weitergeleiteten Nachrichten zeigt:
 
-![Das Detail-Flyout für den Bericht "automatisch weitergeleitete Nachrichten" im Security & Compliance Center](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- **Nachrichten werden nach Weiterleitungs Methoden automatisch weitergeleitet**:
+
+  - **Nachrichtenfluss Regeln**
+  - **Nach Posteingangsregeln**
+  - **Durch SMTP-Weiterleitung**
+  - Einen Link zum [Weiterleitungs Bericht](view-mail-flow-reports.md#forwarding-report) für weitere Details.
+
+- **Automatisch weitergeleitete Nachrichten nach Domänen und Benutzern**:
+
+  - **Top 5-domänenweiter geleitet an**
+  - **Neue Domänen (letzte Woche)**
+  - **Die ersten 5 Weiterleitungs Benutzer**
+  - **Neue Benutzer (letzte Woche)**
+  - Einen Link zum [Weiterleitungs Änderungsbericht](mfi-new-users-forwarding-email.md#forwarding-modifications-report) für weitere Details.
+
+![Details-Flyout für den Bericht "automatisch weitergeleitete Nachrichten" im Security & Compliance Center](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Insights
 
-Basierend auf den Berichtsdaten werden zwei Erkenntnisse generiert: **neue Weiterleitungs Benutzer** und **neue Weiterleitungs Domänen**. Jede Insight enthält eine Zusammenfassung der Anzahl von neuen Weiterleitungen oder Domänen mit einem Link zum **neuen Weiterleitungs Bericht** , der ausführlichere Informationen zu den beiden Datentypen bereitstellt. Der **neue Weiterleitungs Bericht** zeigt auch eine Zeitachsenansicht der neuen Aktivität an, und die Details-Tabelle identifiziert, wer die Weiterleitung gestartet hat und zu welchen Domänen.
+Basierend auf den Berichtsdaten werden zwei Erkenntnisse generiert:
+
+- [Neue Benutzer, die e-Mails weiterleiten](mfi-new-users-forwarding-email.md)
+- [Neue Domänen, die e-Mail weitergeleitet werden](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
