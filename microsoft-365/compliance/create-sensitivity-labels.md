@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200027"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560510"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -89,13 +89,19 @@ Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in A
 
 Zusätzliche Bezeichnungseinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
-Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und QuickInfo in der jeweiligen lokalen Sprache sehen. Eine Beispielkonfiguration finden Sie im folgenden Abschnitt. 
+Beispiel:
 
-Mit diesem Cmdlet können Sie auch [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) für den Azure Information Protection-Client für einheitliche Bezeichnungen festlegen. Diese erweiterten Einstellungen umfassen das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft bei Auswahl einer Bezeichnung. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+- Verwenden Sie den Parameter *LocaleSettings* für multinationale Bereitstellungen, damit Benutzer den Bezeichnungsnamen und die QuickInfo in der jeweiligen lokalen Sprache sehen. Der [folgende Abschnitt](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) enthält eine Beispielkonfiguration, bei der der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch festgelegt sind.
+
+- Verwenden Sie den Parameter *ApplyContentMarkingFooterFontName*, um die Schriftart für die angegebene Fußzeile auszuwählen. Calibri ist die Standardschriftart für Kopfzeilen-, Fußzeilen- und Wasserzeichentext. Wenn der Name Ihrer alternativen Schriftart für den Dienst oder das Gerät, der bzw. das die Bezeichnung anzeigt, nicht verfügbar ist, wird die Schriftart Calibri verwendet.
+
+- Verwenden Sie den Parameter *ApplyContentMarkingHeaderFontColor*, um die benutzerdefinierte Farbauswahl für die angegebene Kopfzeile festzulegen. Verwenden Sie dazu einen hexadezimalen Triplettcode für die Rot/Grün/Blau-Komponenten (RGB). "#40e0d0" ist zum Beispiel der hexadezimale RGB-Wert für Türkis. Sie finden diese Codes in vielen Anwendungen, mit denen Sie Bilder bearbeiten können. Mit Microsoft Paint können Sie beispielsweise eine benutzerdefinierte Farbe aus einer Palette auswählen, und die RGB-Werte werden automatisch angezeigt, die Sie dann kopieren können.
+
+Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie auch [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer Bezeichnungsfarbe und das Anwenden einer benutzerdefinierten Eigenschaft beim Anwenden einer Bezeichnung umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) im Administratorhandbuch für diesen Client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Beispielkonfiguration zur Konfiguration einer Vertraulichkeitsbezeichnung für verschiedene Sprachen
 
-Das folgende Beispiel zeigt die PowerShell-Konfiguration für eine Bezeichnung mit dem Namen "Öffentlich" mit Platzhaltertext für die QuickInfo. In diesem Beispiel ist der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch konfiguriert.
+Das folgende Beispiel zeigt die PowerShell-Konfiguration für eine Bezeichnung mit dem Namen "Öffentlich" mit Platzhaltertext für die QuickInfo. In diesem Beispiel sind der Bezeichnungsname und der QuickInfo-Text für Französisch, Italienisch und Deutsch konfiguriert.
 
 Als Ergebnis dieser Konfiguration sehen Benutzer, die Office-Apps mit einer dieser Anzeigesprachen verwenden, ihre Bezeichnungsnamen und QuickInfos in derselben Sprache. Entsprechend gilt: Wenn Sie den Azure Information Protection-Client für einheitliche Bezeichnungen installiert haben, um Dateien über den Datei-Explorer Bezeichnungen zuzuweisen, werden Bezeichnungsnamen und QuickInfos für Benutzer mit diesen Sprachversionen von Windows bei Verwendung der Rechtsklick-Aktionen zum Zuweisen von Bezeichnungen in deren lokaler Sprache angezeigt.
 
@@ -172,11 +178,22 @@ Benutzer sehen die neuen Bezeichnungen innerhalb einer Stunde in ihren Office-Ap
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
-Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
+Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) von [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verfügbar.
 
-Mit diesem Cmdlet können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) für den Azure Information Protection-Client für einheitliche Bezeichnungen festlegen. Diese erweiterten Einstellungen umfassen das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
+Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie [erweiterte Einstellungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) im Administratorhandbuch für diesen Client.
 
-Sie können dieses Cmdlet auch zum Hinzufügen von Bezeichnungen zu und Entfernen von Bezeichnungen aus einer Bezeichnungsrichtlinie verwenden.
+## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Verwenden von PowerShell für Vertraulichkeitsbezeichnungen und deren Richtlinien
+
+Sie können jetzt [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) verwenden, um alle Einstellungen zu erstellen und zu konfigurieren, die in Ihrem Admin Center für Bezeichnungen angezeigt werden. Das bedeutet, dass Sie PowerShell nicht nur für Einstellungen verwenden können, die in den Admin Centers für Bezeichnungen nicht verfügbar sind, sondern dass Sie jetzt auch die Erstellung und Verwaltung von Vertraulichkeitsbezeichnungen und Richtlinien für Vertraulichkeitsbezeichnungen vollständig per Skript durchführen können. 
+
+In der folgenden Dokumentation finden Sie die unterstützten Parameter und Werte:
+
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+
+Sie können auch [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) und [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) verwenden, wenn Sie das Löschen von Vertraulichkeitsbezeichnungen oder Richtlinien für Vertraulichkeitsbezeichnungen per Skript durchführen müssen. Bevor Sie jedoch Vertraulichkeitsbezeichnungen löschen, sollten Sie den folgenden Abschnitt lesen.
 
 ## <a name="removing-and-deleting-labels"></a>Entfernen und Löschen von Bezeichnungen
 
