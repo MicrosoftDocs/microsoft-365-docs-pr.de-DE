@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560231"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577962"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -28,7 +28,7 @@ In diesem Artikel finden Sie Empfehlungen und Schritte zum Konfigurieren eines p
 
 Neben dem privaten Zugriff wird in diesem Artikel beschrieben, wie die zugehörige SharePoint-Website, auf die Sie über den Abschnitt **Dateien** eines Teamkanals zugreifen können, für die zusätzliche Sicherheit konfiguriert wird, die für die Speicherung von streng regulierten Daten erforderlich ist.
 
-Die Elemente der Konfiguration für ein Team für streng regulierte Daten sind:
+Die Elemente der Konfiguration für ein Team mit Sicherheitsisolierung sind:
 
 - Ein privates Team
 - Zusätzliche Sicherheit auf der zugehörigen SharePoint-Website für das Team, die verhindert,
@@ -42,9 +42,9 @@ Die Elemente der Konfiguration für ein Team für streng regulierte Daten sind:
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie die [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) aktiviert haben, bevor Sie mit den Schritten in diesem Artikel fortfahren.
 
-<a name="poster"></a> Eine zweiseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft-Team mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
+<a name="poster"></a> Eine zweiseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft Teams mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
 
-[![Poster „Microsoft-Team mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- oder [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
@@ -226,7 +226,7 @@ Microsoft 365 bietet zusätzliche Methoden zum Schützen Ihrer Inhalte. Prüfen 
 
 Wenn das Team aktiv ist, ist es an der Zeit, die Benutzerakzeptanz dieses Teams und dessen zusätzlicher Sicherheit für Teammitglieder zu fördern.
 
-## <a name="train-your-users"></a>Schulen Ihrer Benutzer
+### <a name="train-your-users"></a>Schulen Ihrer Benutzer
 
 Mitglieder des Teams können auf das Team und alle zugehörigen Ressourcen zugreifen, b. B. Chats, Besprechungen und andere Apps. Wenn Sie mit Dateien aus dem Abschnitt **Dateien** eines Kanals arbeiten, müssen die Mitglieder des Teams den von ihnen erstellten Dateien eine Vertraulichkeitsbezeichnung zuweisen.
 
