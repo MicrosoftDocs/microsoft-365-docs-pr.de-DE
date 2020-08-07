@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035660"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577995"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -112,7 +112,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 - Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
 
-  |**Microsoft 365-Dienst oder -Feature**|**30 Minuten**|**24 Stunden**|
+  |Microsoft 365-Dienst oder -Feature|30 Minuten|24 Stunden|
   |:-----|:-----:|:-----:|
   |Advanced Threat Protection und Threat Intelligence|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -172,26 +172,26 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
 4. Konfigurieren Sie die folgenden Suchkriterien: 
 
-    a. **Aktivitäten**: Klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Benutzer- und Verwaltungsaktivitäten sind in Gruppen verwandter Aktivitäten organisiert. Sie können bestimmte Aktivitäten auswählen oder auf den Namen der Aktivitätsgruppe klicken, um alle Aktivitäten in der Gruppe auszuwählen. Sie können auch auf eine ausgewählte Aktivität klicken, um die Auswahl aufzuheben. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten angezeigt. Durch Auswahl von **Ergebnisse für alle Aktivitäten anzeigen** werden Ergebnisse für alle Aktivitäten angezeigt, die von dem ausgewählten Benutzer oder der ausgewählten Benutzergruppe ausgeführt wurden.
+   1. **Aktivitäten**: Klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Benutzer- und Verwaltungsaktivitäten sind in Gruppen verwandter Aktivitäten organisiert. Sie können bestimmte Aktivitäten auswählen oder auf den Namen der Aktivitätsgruppe klicken, um alle Aktivitäten in der Gruppe auszuwählen. Sie können auch auf eine ausgewählte Aktivität klicken, um die Auswahl aufzuheben. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten angezeigt. Durch Auswahl von **Ergebnisse für alle Aktivitäten anzeigen** werden Ergebnisse für alle Aktivitäten angezeigt, die von dem ausgewählten Benutzer oder der ausgewählten Benutzergruppe ausgeführt wurden.
 
-    Es werden mehr als 100 Benutzer- und Administratoraktivitäten im Überwachungsprotokoll erfasst. Klicken Sie beim Thema dieses Artikels auf die Registerkarte **Überwachte Aktivitäten**, um die Beschreibungen der einzelnen Aktivitäten in den verschiedenen Diensten anzuzeigen.
+      Es werden mehr als 100 Benutzer- und Administratoraktivitäten im Überwachungsprotokoll erfasst. Klicken Sie beim Thema dieses Artikels auf die Registerkarte **Überwachte Aktivitäten**, um die Beschreibungen der einzelnen Aktivitäten in den verschiedenen Diensten anzuzeigen.
 
-    b. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
+   1. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
 
-    > [!TIP]
-    > Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie den aktuellen Zeitpunkt für das **Startdatum** aus. Andernfalls wird eine Fehlermeldung angezeigt, in der mitgeteilt wird, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der maximale Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
+      > [!TIP]
+      > Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie den aktuellen Zeitpunkt für das **Startdatum** aus. Andernfalls wird eine Fehlermeldung angezeigt, in der mitgeteilt wird, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der maximale Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
 
-    c. **Benutzer**: Klicken Sie in dieses Feld, und wählen Sie dann einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. In der Liste der Ergebnisse werden die Überwachungsprotokolleinträge für die ausgewählte Aktivität angezeigt, die von den Benutzern ausgeführt wurde, die Sie in diesem Feld ausgewählt haben. Lassen Sie dieses Feld leer, um die Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben.
+   1. **Benutzer**: Klicken Sie in dieses Feld, und wählen Sie dann einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. In der Liste der Ergebnisse werden die Überwachungsprotokolleinträge für die ausgewählte Aktivität angezeigt, die von den Benutzern ausgeführt wurde, die Sie in diesem Feld ausgewählt haben. Lassen Sie dieses Feld leer, um die Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben.
 
-    d. **Datei, Ordner oder Website**: Geben Sie einen Datei- oder Ordnernamen ganz oder teilweise ein, um nach Aktivitäten für die Datei oder den Ordner zu suchen, die bzw. der das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden wollen, geben Sie unbedingt den vollständigen URL-Pfad ein. Falls Sie nur einen Teil der URL eingeben, verwenden Sie bitte keine Sonder- oder Leerzeichen.
+   1. **Datei, Ordner oder Website**: Geben Sie einen Datei- oder Ordnernamen ganz oder teilweise ein, um nach Aktivitäten für die Datei oder den Ordner zu suchen, die bzw. der das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden wollen, geben Sie unbedingt den vollständigen URL-Pfad ein. Falls Sie nur einen Teil der URL eingeben, verwenden Sie bitte keine Sonder- oder Leerzeichen.
 
-    Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben.
+      Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben.
 
-   **TIPPS**
-
-   - Wenn Sie nach allen Aktivitäten im Zusammenhang mit einer **Website** suchen, fügen Sie das Platzhaltersymbol (\*) hinter die URL ein, um alle Einträge für diese Website zurückzugeben, z. b. **„https://contoso-my.sharepoint.com/personal/*“**.
-
-   - Wenn Sie nach allen Aktivitäten im Zusammenhang mit einer **Datei** suchen, fügen Sie das Platzhaltersymbol (\*) vor dem Dateinamen ein, um alle Einträge für diese Datei zurückzugeben, z. b. **„*Customer_Profitability_Sample.csv“**.
+      > [!TIP]
+      >
+      > - Wenn Sie nach allen Aktivitäten im Zusammenhang mit einer **Website** suchen, fügen Sie das Platzhaltersymbol (\*) hinter die URL ein, um alle Einträge für diese Website zurückzugeben, z. b. **„https://contoso-my.sharepoint.com/personal/*“**.
+      >
+      > - Wenn Sie nach allen Aktivitäten im Zusammenhang mit einer **Datei** suchen, fügen Sie das Platzhaltersymbol (\*) vor dem Dateinamen ein, um alle Einträge für diese Datei zurückzugeben, z. b. **„*Customer_Profitability_Sample.csv“**.
 
 5. Klicken Sie auf **Suchen**, um die Suche anhand der Suchkriterien auszuführen. 
 
@@ -313,17 +313,17 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |[Yammer-Aktivitäten](#yammer-activities)|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|
 |[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|
 |[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|
-||||
+|[Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](#retention-policy-and-retention-label-activities)|||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
 
 In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint Online und OneDrive for Business beschrieben.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Dateizugriff|FileAccessed|Der Benutzer oder das Systemkonto greift auf eine Datei zu.|
 |(kein)|FileAccessedExtended|Dies bezieht sich auf die Aktivität "Dateizugriff" (FileAccessed). Wenn dieselbe Person während eines längeren Zeitraums (bis zu drei Stunden) ständig auf eine Datei zugreift, wird ein FileAccessedExtended-Ereignis protokolliert. <br/><br/> Die Protokollierung von FileAccessedExtended-Ereignissen dient dazu, die Anzahl von FileAccessed-Ereignissen zu verringern, die beim ständigen Zugriff auf eine Datei protokolliert werden. Auf diese Weise lässt sich der Stördatenverkehr von mehreren FileAccessed-Einträgen besser reduzieren, bei denen die Benutzeraktivität im Wesentlichen identisch ist, sodass Sie sich auf das ursprüngliche (und wichtigere) FileAccessed-Ereignis konzentrieren können.|
-|Konformitätsrichtlinienbezeichnung geändert|ComplianceSettingChanged|Eine Aufbewahrungsbezeichnung wurde auf ein Dokument angewendet oder daraus entfernt. Dieses Ereignis wird ausgelöst, wenn eine Aufbewahrungsbezeichnung manuell oder automatisch auf eine Nachricht angewendet wird.|
+|Geänderte Aufbewahrungsbezeichnung für eine Datei|ComplianceSettingChanged|Eine Aufbewahrungsbezeichnung wurde auf ein Dokument angewendet oder daraus entfernt. Dieses Ereignis wird ausgelöst, wenn eine Aufbewahrungsbezeichnung manuell oder automatisch auf eine Nachricht angewendet wird.|
 |Datensatzstatus in "gesperrt" geändert|LockRecord|Der Datensatzstatus einer Aufbewahrungsbezeichnung, die ein Dokument als Datensatz klassifiziert, wurde gesperrt. Dies bedeutet, dass das Dokument nicht geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung „Mitwirkender“ für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.|
 |Datensatzstatus in "nicht gesperrt" geändert|UnlockRecord|Der Datensatzstatus einer Aufbewahrungsbezeichnung, die ein Dokument als Datensatz klassifiziert, wurde entsperrt. Dies bedeutet, dass das Dokument geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung „Mitwirkender“ für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.|
 |Datei eingecheckt|FileCheckedIn|Der Benutzer checkt ein Dokument ein, das er aus einer Dokumentbibliothek ausgecheckt hat.|
@@ -332,7 +332,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Datei gelöscht|FileDeleted|Der Benutzer löscht ein Dokument von einer Website.|
 |Datei aus Papierkorb gelöscht|FileDeletedFirstStageRecycleBin|Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.|
 |Datei aus endgültigem Papierkorb gelöscht|FileDeletedSecondStageRecycleBin|Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.|
-|Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird.|
+|Konformitätsrichtlinienbezeichnung gelöscht|ComplianceRecordDelete|Ein als Datensatz gekennzeichnetes Dokument wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz kennzeichnet, auf das Dokument angewendet wird.|
 |Konflikt in Bezug auf die Vertraulichkeitskennzeichnung eines Dokuments|DocumentSensitivityMismatchDetected|Der Benutzer lädt ein Dokument auf eine Website hoch, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument weist eine Vertraulichkeitsbezeichnung mit höherer Priorität als die Vertraulichkeitsbezeichnung der Website auf. So wird beispielsweise ein Dokument, das als vertraulich bezeichnet wird, auf eine Website hochgeladen, die mit "Allgemein" bezeichnet ist. <br/><br/> Dieses Ereignis wird nicht ausgelöst, wenn die auf ein Dokument angewendete Vertraulichkeitsbezeichnung eine niedrigere Priorität hat als die auf die Website angewendete Vertraulichkeitsbezeichnung. So wird beispielsweise ein Dokument, das als Allgemein bezeichnet wird, auf eine Website hochgeladen, die mit Vertraulich bezeichnet ist. Weitere Informationen über die Priorität von Vertraulichkeitsbezeichnungen finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware in einer Datei erkannt|FileMalwareDetected|Der SharePoint-Virenschutz erkennt Schadsoftware in einer Datei.|
 |Auschecken einer Datei verworfen|FileCheckOutDiscarded|Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.|
@@ -374,7 +374,7 @@ In diesen und weiteren Szenarios werden Sie außerdem feststellen, dass mehrere 
 
 In der folgenden Tabelle sind die Ordneraktivitäten in SharePoint Online und OneDrive for Business beschrieben. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Ordner kopiert|FolderCopied|Ein Benutzer in SharePoint oder OneDrive for Business kopiert einen Ordner von einer Website zu einer anderen.|
 |Ordner erstellt|FolderCreated|Der Benutzer erstellt einen Ordner auf einer Website.|
@@ -391,7 +391,7 @@ In der folgenden Tabelle sind die Ordneraktivitäten in SharePoint Online und On
 
 In der folgenden Tabelle sind die Aktivitäten im Zusammenhang mit der Interaktion zwischen Benutzern und Listenelementen in SharePoint Online beschrieben. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Liste erstellt|ListCreated|Ein Benutzer hat eine SharePoint-Liste erstellt.|
 |Listenspalte erstellt|ListColumnCreated|Ein Benutzer hat eine Listenspalte in einer SharePoint-Liste erstellt. Eine Listenspalte ist eine Spalte, die mit einer oder mehreren SharePoint-Listen verbunden ist.|
@@ -423,7 +423,7 @@ In der folgenden Tabelle sind die Freigabe- und Zugriffsanforderungsaktivitäten
 > [!NOTE]
 > Benutzer können je nach der Eigenschaft „UserType“ des Benutzerobjekts entweder *Mitglieder* oder *Gäste* sein. Ein Mitglied ist normalerweise ein Mitarbeiter, ein Gast ist ein Kooperationspartner außerhalb der Organisation. Wenn ein Benutzer eine Freigabeeinladung akzeptiert (und nicht bereits Mitglied Ihrer Organisation ist), wird im Verzeichnis Ihrer Organisation ein Gastkonto für diesen Benutzer erstellt. Nachdem der Gastbenutzer über ein Konto in Ihrem Verzeichnis verfügt, können Ressourcen unmittelbar mit ihm geteilt werden (ohne vorherige Einladung).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Berechtigungsstufe zu Websitesammlung hinzugefügt|PermissionLevelAdded|Eine Berechtigungsstufe wurde zu einer Websitesammlung hinzugefügt.|
 |Zugriffsanforderung akzeptiert|AccessRequestAccepted|Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde akzeptiert, und dem anfordernden Benutzer wurde der Zugriff gewährt.|
@@ -455,7 +455,7 @@ In der folgenden Tabelle sind die Freigabe- und Zugriffsanforderungsaktivitäten
 
 In der folgenden Tabelle sind die Dateisychronisierungsaktivitäten in SharePoint Online und OneDrive for Business beschrieben.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Computer zum Synchronisieren von Dateien zugelassen|ManagedSyncClientAllowed|Der Benutzer richtet erfolgreich eine Synchronisierungsbeziehung mit einer Website ein. Die Synchronisierungsbeziehung ist erfolgreich, da der Computer des Benutzers Mitglied einer Domäne ist, die zur Liste der Domänen, die in Ihrer Organisation auf Dokumentbibliotheken zugreifen können (auch *Liste der sicheren Empfänger* genannt), hinzugefügt wurde. <br/><br/> Weitere Informationen zu dieser Funktion finden Sie unter [Verwenden von Windows PowerShell-Cmdlets zum Aktivieren der OneDrive-Synchronisierung für Domänen, die in der Liste der sicheren Empfänger enthalten sind](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
 |Computer für Synchronisieren von Dateien blockiert|UnmanagedSyncClientBlocked|Der Benutzer versucht, eine Synchronisierungsbeziehung mit einer Website von einem Computer aus einzurichten, der kein Mitglied der Domäne Ihrer Organisation ist oder ein Mitglied einer Domäne ist, die nicht zur Liste der Domänen (auch *Liste der sicheren Empfänger* genannt), die auf Dokumentbibliotheken in Ihrer Organisation zugreifen können, hinzugefügt wurde. Die Synchronisierungsbeziehung ist nicht zulässig, und der Computer des Benutzers ist für das Synchronisieren, Herunterladen oder Hochladen von Dateien der Dokumentbibliothek gesperrt. <br/><br/> Informationen zu dieser Funktion finden Sie unter [Verwenden von Windows PowerShell-Cmdlets zum Aktivieren der OneDrive-Synchronisierung für Domänen, die in der Liste der sicheren Empfänger enthalten sind](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
@@ -469,7 +469,7 @@ In der folgenden Tabelle sind die Dateisychronisierungsaktivitäten in SharePoin
 
 In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen von Berechtigungen in SharePoint und der Verwendung von Gruppen zum Gewähren (und Widerrufen) des Zugriffs auf Websites aufgelistet. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Websitesammlungsadministrator hinzugefügt|SiteCollectionAdminAdded|Der Websitesammlungsadministrator oder -besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird ebenfalls protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center oder [mithilfe des Microsoft 365 Admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Benutzer oder Gruppe zu SharePoint-Gruppe hinzugefügt|AddedToGroup|Ein Benutzer hat ein Mitglied oder einen Gast zu einer SharePoint-Gruppe hinzugefügt. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität wie eines Freigabeereignisses gewesen sein.|
@@ -493,7 +493,7 @@ In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen vo
 
 Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben in SharePoint Online resultieren. Wie zuvor erläutert, wird in den Überwachungsdatensätzen für einige SharePoint-Aktivitäten angegeben, dass der "app@sharepoint"-Benutzer die Aktion im Auftrag des Benutzers oder Administrators ausgeführt hat, der die Aktion initiiert hat. Weitere Informationen finden Sie unter [Der "app\@sharepoint"-Benutzer in Überwachungsdatensätzen](#the-appsharepoint-user-in-audit-records).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Zulässigen Datenspeicherort festgelegt|AllowedDataLocationAdded|Ein SharePoint- oder globaler Administrator hat einen zulässigen Datenspeicherort in einer Multi-Geo-Umgebung hinzugefügt.|
 |Ausgenommener Benutzer-Agent hinzugefügt|ExemptUserAgentSet|Ein SharePoint- oder globaler Administrator hat einen Benutzer-Agent zu der Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center hinzugefügt.|
@@ -533,7 +533,7 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 
  Sie können auch mithilfe des Cmdlets [Search-MailboxAuditLog in Exchange Online PowerShell](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) nach Postfachaktivitäten suchen.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Zugegriffene Postfachelemente|MailItemsAccessed|Nachrichten wurden gelesen oder es wurde im Postfach darauf zugegriffen. Überwachungsdatensätze für diese Aktivität werden auf eine von zwei Arten ausgelöst: Wenn ein E-Mail-Client (wie z.Bb. Outlook) einen Bindungsvorgang für Nachrichten ausführt oder wenn E-Mail-Protokolle (wie Exchange ActiveSync oder IMAP) Elemente in einem E-Mail-Ordner synchronisieren. Diese Aktivität wird nur für Benutzer mit einer Office 365- oder Microsoft 365 E5-Lizenz protokolliert. Die Analyse von Überwachungsdatensätzen für diese Aktivität ist hilfreich bei der Untersuchung eines kompromittierten E-Mail-Kontos. Weitere Informationen finden Sie im Abschnitt "Zugriff auf wichtige Ereignisse für Untersuchungen" in [Erweiterte Überwachung](advanced-audit.md#access-to-crucial-events-for-investigations). |
 |Postfachberechtigungen für Stellvertretung hinzugefügt|AddMailboxPermissionsAddMailboxPermissions|Ein Administrator hat einem Benutzer die Postfachberechtigung „FullAccess“ für das Postfach einer anderen Person zugewiesen (auch „Stellvertretung“ genannt). Die Berechtigung "FullAccess" erlaubt der Stellvertretung, das Postfach der anderen Person zu öffnen sowie den Inhalt des Postfachs zu lesen und zu verwalten.|
@@ -556,13 +556,14 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 |Posteingangsregeln des Outlook-Clients aktualisiert|UpdateInboxRules|Ein Postfachbesitzer oder ein anderer Benutzer mit Zugriff auf das Postfach hat im Outlook-Client eine Posteingangsregel geändert.|
 |Nachricht aktualisiert|Update|Eine Nachricht oder ihre Eigenschaften wurden geändert.|
 |Benutzer am Postfach angemeldet|MailboxLogin|Der Benutzer hat sich bei seinem Postfach angemeldet.|
+|Nachricht als Datensatz bezeichnen||Ein Benutzer hat eine Aufbewahrungsbezeichnung auf eine E-Mail-Nachricht angewendet, und diese Bezeichnung ist so konfiguriert, dass das Element als Datensatz gekennzeichnet wird. |
 ||||
 
 ### <a name="sway-activities"></a>Sway-Aktivitäten
 
 In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway aufgelistet. Sway ist eine Microsoft 365-App, die Benutzer beim Sammeln, Formatieren und Teilen von Ideen, Geschichten und Präsentationen in einem interaktiven, webbasierten Zeichenbereich unterstützt. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Sway – Hilfe für Administratoren](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Sway-Freigabestufe geändert|SwayChangeShareLevel|Ein Benutzer ändert die Freigabestufe eines Sways. Mit diesem Ereignis wird ein Benutzer erfasst, der den Umfang einer mit einem Sway verknüpften Freigabe geändert hat, beispielsweise von „Öffentlich“ zu „Innerhalb der Organisation“.|
 |Sway erstellt|SwayCreate|Der Benutzer erstellt ein Sway.|
@@ -584,7 +585,7 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway
 
 In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator ein Benutzerkonto über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal hinzufügt oder ändert.
 
-|**Aktivität**|**Vorgang**|**Beschreibung**|
+|Aktivität|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Benutzer hinzugefügt|Benutzer hinzufügen|Ein Benutzerkonto wurde erstellt.|
 |Benutzerlizenz geändert|Benutzerlizenz ändern|Die einem Benutzer zugewiesene Lizenz wurde geändert. Wenn Sie feststellen möchten, welche Lizenzen geändert wurden, sehen Sie sich die entsprechende Aktivität **Benutzer aktualisiert** an.|
@@ -600,7 +601,7 @@ In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die p
 
 In der nachstehenden Tabelle werden die Gruppenverwaltungsaktivitäten aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Microsoft 365-Gruppe erstellt oder ändert, oder aber wenn ein Administrator eine Sicherheitsgruppe über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [Anzeigen, Erstellen und Löschen von Gruppen im Office 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Gruppe hinzugefügt|Gruppe hinzufügen|Eine Gruppe wurde erstellt.|
 |Mitglied zur Gruppe hinzugefügt|Mitglied zu Gruppe hinzufügen|Ein Mitglied wurde zu einer Gruppe hinzugefügt.|
@@ -613,7 +614,7 @@ In der nachstehenden Tabelle werden die Gruppenverwaltungsaktivitäten aufgefüh
 
 In der folgenden Tabelle sind Anwendungsverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator eine in Azure AD registrierte Anwendung hinzufügt oder ändert. Jede Anwendung, die Azure AD zur Authentifizierung verwendet, muss im Verzeichnis registriert sein.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Delegierungseintrag hinzugefügt|Delegierungseintrag hinzufügen|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde erstellt/gewährt.|
 |Dienstprinzipal hinzugefügt|Dienstprinzipal hinzufügen|Eine Anwendung wurde in Azure AD registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.|
@@ -628,7 +629,7 @@ In der folgenden Tabelle sind Anwendungsverwaltungsaktivitäten aufgelistet, die
 
 In der folgenden Tabelle sind Azure AD-Rollenverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator Administratorrollen im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Mitglied zu Rolle hinzugefügt|Rollenmitglied zu Rolle hinzufügen|Ein Benutzer wurde einer Administratorrolle in Microsoft 365 hinzugefügt.|
 |Benutzer aus einer Directory-Rolle entfernt|Rollenmitglied aus Rolle entfernen|Ein Benutzer wurde aus einer Administratorrolle in Microsoft 365 entfernt.|
@@ -639,7 +640,7 @@ In der folgenden Tabelle sind Azure AD-Rollenverwaltungsaktivitäten aufgelistet
 
 In der folgenden Tabelle sind Aktivitäten in Bezug auf Verzeichnisse und Domänen in Azure AD aufgelistet, die protokolliert werden, wenn ein Administrator seine Organisation im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Domäne zu Unternehmen hinzugefügt|Domäne zu Unternehmen hinzufügen|Es wurde eine Domäne zu Ihrer Organisation hinzugefügt.|
 |Partner zum Verzeichnis hinzugefügt|Partner zu Unternehmen hinzufügen|Es wurde ein Partner (delegierter Administrator) zu Ihrer Organisation hinzugefügt.|
@@ -688,7 +689,7 @@ Die Überwachungsprotokollierung für Power BI ist standardmäßig nicht aktivie
 
 Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen innerhalb Ihrer Organisation. In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von Benutzern ausgeführt wurden, denen die Administrator- oder Analystenrolle in Workplace Analytics zugeordnet ist. Benutzern, denen die Rolle des Analysten zugewiesen ist, haben Vollzugriff auf alle Dienstfunktionen und können das Produkt für Analysen verwenden. Benutzer, denen die Administratorrolle zugewiesen wurde, können Datenschutzeinstellungen und Systemstandardwerte konfigurieren sowie Organisationsdaten in Workplace Analytics vorbereiten, hochladen und überprüfen. Weitere Informationen finden Sie unter [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Auf OData-Link zugegriffen|AccessedOdataLink|Analyst hat auf für eine Abfrage auf den OData-Link zugegriffen.|
 |Abfrage abgebrochen|CanceledQuery|Ein Analyst hat eine laufende Abfrage abgebrochen.|
@@ -724,7 +725,7 @@ Eine Beschreibung der-App-Aktivitäten für Schicht-Aktivitäten finden Sie unte
 
 In der folgenden Tabelle sind die in Yammer von Benutzern und Administratoren ausgeführten Aktivitäten aufgelistet, die im Überwachungsprotokoll protokolliert werden. Zur Rückgabe von Yammer-Aktivitäten aus dem Überwachungsprotokoll müssen Sie in der Liste **Aktivitäten** den Eintrag **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Datumsbereichsfelder und die Liste **Benutzer**, um die Suchergebnisse einzuschränken.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Datenaufbewahrungsrichtlinie geändert|SoftDeleteSettingsUpdated|Ein bestätigter Administrator ändert die Einstellung der Aufbewahrungsrichtlinie für Netzwerkdaten in "Endgültig Löschen" oder "Vorläufig Löschen". Dieser Vorgang kann nur von bestätigten Administratoren ausgeführt werden.|
 |Netzwerkkonfiguration geändert|NetworkConfigurationUpdated|Ein Netzwerk- oder bestätigter Administrator ändert die Konfiguration des Yammer-Netzwerks. Dies schließt das Festlegen des Intervalls zum Exportieren von Daten und das Aktivieren von Chats ein.|
@@ -761,7 +762,7 @@ Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Stream dur
 
 Die folgende Tabelle enthält die Aktivitäten im Inhaltsexplorer, die im Überwachungsprotokoll protokolliert werden. Inhaltsexplorer, auf den über das Tool für Datenklassifizierungen im Microsoft 365 Compliance Center zugegriffen wird. Weitere Informationen finden Sie unter [Verwenden des Daten Inhaltsexplorers zur Datenklassifizierung](data-classification-content-explorer.md).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Element, auf das zugegriffen wird|LabelContentExplorerAccessedItem|Ein Administrator (oder ein Benutzer, der Mitglied der Rollengruppe "Inhaltsexplorer-Content Viewer" ist) verwendet den Inhaltsexplorer, um eine E-Mail-Nachricht oder ein SharePoint/OneDrive-Dokument anzuzeigen.|
 ||||
@@ -770,7 +771,7 @@ Die folgende Tabelle enthält die Aktivitäten im Inhaltsexplorer, die im Überw
 
 In der nachstehenden Tabelle sind die Quarantäneaktivitäten aufgeführt, nach denen Sie im Überwachungsprotokoll suchen können. Weitere Informationen zur Quarantäne finden Sie unter [In Quarantäne stellen von E-Mail-Nachrichten in Office 365](../security/office-365-security/quarantine-email-messages.md).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Gelöschte Quarantänenachricht|QuarantineDelete|Ein Benutzer hat eine E-Mail-Nachricht gelöscht, die als schädlich eingestuft wurde.|
 |Exportierte Quarantänenachricht|QuarantineExport|Ein Benutzer hat eine E-Mail-Nachricht exportiert, die als schädlich eingestuft wurde.|
@@ -788,7 +789,7 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 > [!NOTE]
 > Wenn eine Forms-Aktivität durch einen Mitautor oder anonymen Antwortenden ausgeführt wird, wird sie etwas anders protokolliert. Weitere Informationen hierzu finden Sie im Abschnitt [Forms-Aktivitäten, die von Mitautoren und anonymen Antwortenden durchgeführt werden](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Ersteller Kommentar|CreateComment|Der Formularbesitzer fügt Kommentare oder Bewertungen zu einem Quiz hinzu.|
 |Erstelltes Formular|CreateForm|Der Besitzer erstellt ein neues Formular.|
@@ -825,12 +826,12 @@ Forms unterstützt die Zusammenarbeit beim Entwerfen von Formularen und Analysie
 
 In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informationen im Überwachungsdatensatz für Aktivitäten beschrieben, die von Koautoren und anonym Antwortenden ausgeführt wurden.
 
-|**Aktivitätstyp**|**Interner oder externer Benutzer**|**Protokollierte Benutzer-ID**|**Angemeldet bei Organisation**|**Forms-Benutzertyp**|
+|Aktivitätstyp|Interner oder externer Benutzer|Protokollierte Benutzer-ID|Angemeldet bei Organisation|Forms-Benutzertyp|
 |:-----|:-----|:-----|:-----|:-----|
 |Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
-|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Responder|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 ||||
@@ -839,7 +840,7 @@ In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informatione
 
 In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsaktivitäten für SharePoint Online- und Teams-Websites ergeben.
 
-|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Vertraulichkeitsbezeichnung wurde auf Website angewendet|SensitivityLabelApplied|Auf eine SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung angewendet.|
 |Vertraulichkeitsbezeichnung wurde von Website entfernt|SensitivityLabelRemoved|Von einer SharePoint- oder Teams-Website wurde eine Vertraulichkeitsbezeichnung entfernt.|
@@ -847,6 +848,21 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 |Auf Datei angewendete Vertraulichkeitsbezeichnung wurde geändert|FileSensitivityLabelChanged|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine abweichende Vertraulichkeitsbezeichnung auf ein Dokument angewendet.|
 |Vertraulichkeitsbezeichnung wurde von Datei entfernt|FileSensitivityLabelRemoved|Unter Verwendung von Office im Web oder einer Richtlinie zur automatischen Kennzeichnung wurde eine Vertraulichkeitsbezeichnung eines Dokuments entfernt.|
 ||||
+
+### <a name="retention-policy-and-retention-label-activities"></a>Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten
+
+|Anzeigename|Vorgang|Beschreibung|
+|:-----|:-----|:-----|
+| Einstellungen für eine Aufbewahrungsrichtlinie konfiguriert |NewRetentionComplianceRule |Der Administrator hat die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie konfiguriert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Aufbewahrungsbezeichnung erstellt |NewComplianceTag |Der Administrator hat eine neue Aufbewahrungsbezeichnung erstellt.|
+| Aufbewahrungsrichtlinie erstellt |NewRetentionCompliancePolicy|Der Administrator hat eine neue Aufbewahrungsrichtlinie erstellt.|
+| Einstellungen für eine Aufbewahrungsrichtlinie gelöscht| RemoveRetentionComplianceRule<br/>| Der Administrator hat die Konfigurationseinstellungen einer Aufbewahrungsrichtlinie gelöscht. Höchstwahrscheinlich wird diese Aktivität protokolliert, wenn ein Administrator eine Aufbewahrungsrichtlinie löscht oder das Cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) ausführt.|
+| Aufbewahrungsbezeichnung gelöscht |RemoveComplianceTag | Der Administrator hat eine Aufbewahrungsbezeichnung gelöscht.|
+| Aufbewahrungsrichtlinie gelöscht |RemoveRetentionCompliancePolicy<br/> |Der Administrator hat eine Aufbewahrungsrichtlinie gelöscht. |
+| Option "Regulatorischer Datensatz" für Aufbewahrungsbezeichnungen aktiviert<br/> |SetRestrictiveRetentionUI |Der Administrator hat das Cmdlet [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) ausgeführt, sodass ein Administrator die Option für die Benutzeroberflächenkonfiguration für eine Aufbewahrungsbezeichnung auswählen kann, um Inhalte als regulatorischen Datensatz zu kennzeichnen.|
+| Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Aufbewahrungsbezeichnung aktualisiert |SetComplianceTag  | Der Administrator hat eine vorhandene Aufbewahrungsbezeichnung aktualisiert.|
+| Aufbewahrungsrichtlinie aktualisiert |SetRetentionCompliancePolicy |Der Administrator hat eine vorhandene Aufbewahrungsrichtlinie aktualisiert. Updates, die dieses Ereignis auslösen, sind beispielsweise das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet ist.|
 
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll
 
@@ -874,7 +890,6 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    Bitte denken Sie daran, dass dieselben Exchange-Administratoraktivitäten sowohl im Exchange-Administratorüberwachungsprotokoll als auch im Überwachungsprotokoll protokolliert werden.
-
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
