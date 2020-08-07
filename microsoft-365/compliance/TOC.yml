@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Löschen eines inaktiven Postfachs
           href: delete-an-inactive-mailbox.md
-    - name: Überwachen der Datengovernance
-      items:
-        - name: Anzeigen der Bezeichnungsaktivität für Dokumente
-          href: view-label-activity-for-documents.md
-        - name: Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
-          href: label-analytics.md
-        - name: Anzeigen der Data Governance-Berichte
-          href: view-the-data-governance-reports.md
     - name: Weitere Informationen zur Datengovernance
       items:
         - name: Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an
