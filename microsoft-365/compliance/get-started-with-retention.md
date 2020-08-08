@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560762"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588173"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -71,6 +71,7 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 |Einhaltung der SEC-Richtlinie 17a-4|[Verwenden von Exchange Online und des Security & Compliance Centers, zur Einhaltung der SEC-Richtlinie 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vergewissern Sie sich, dass das Löschen von Inhalten am Ende deren Aufbewahrungszeitraums von jemandem überprüft und genehmigt wird|[Dispositionsüberprüfungen](disposition.md#disposition-reviews) |
 |Vergewissern Sie sich, dass Sie für Inhalte, die am Ende deren Aufbewahrungszeitraums gelöscht werden, einen Dispositionsnachweis haben|[Disposition von Datensätzen](disposition.md#disposition-of-records) |
+| Überwachen Sie, wie und wo die Aufbewahrungsbezeichnungen angewendet werden | [Überwachen von Aufbewahrungsbezeichnungen](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Dokumentation zu Aufbewahrungsbezeichnungen für Endbenutzer
 
