@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,14 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: Erfahren Sie, wie Sie ein Upgrade auf ein neues Abonnement durchführen.
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Hier erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403174"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597619"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
@@ -78,6 +74,10 @@ Wenn Sie die Registerkarte **Upgrade** verwenden, werden die Pläne, auf die Sie
 
 Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie [Pläne manuell ändern](change-plans-manually.md)oder [Unterstützung](../../admin/contact-support-for-business-products.md) für Hilfe aufrufen.
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Ich möchte nur einige meiner Benutzer aktualisieren. Wie mache ich das?
+
+Wenn Sie nur einige Benutzer auf einen anderen Plan aktualisieren möchten, das neue Abonnement jedoch zuerst kaufen müssen, lesen Sie die Informationen unter [Änderungs Pläne manuell](change-plans-manually.md). Wenn Sie bereits über das Abonnement verfügen, auf das Sie Benutzer aktualisieren möchten, lesen Sie die Informationen unter " [Benutzer in ein anderes Abonnement migrieren](move-users-different-subscription.md)".
+
 ## <a name="why-some-changes-take-longer"></a>Warum einige Änderungen länger dauern
 
 **Anzahl der zugewiesenen Benutzer:** Wenn Sie eine große Anzahl von zugewiesenen Benutzern haben, dauert es länger, das Upgrade durchführen, um Sie in den neuen Plan zu versetzen.
@@ -88,7 +88,7 @@ Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie [Plä
 
 Wenn auf der Registerkarte **Upgrade** keine Pläne angezeigt werden, bedeutet dies, dass Ihr Plan nicht automatisch aktualisiert werden kann. In einigen Fällen können Sie das Problem möglicherweise beheben, um Pläne anzuzeigen, die für ein Upgrade verfügbar sind, oder Sie können stattdessen möglicherweise Pläne manuell aktualisieren oder ändern.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Warum werden keine Pläne für ein Upgrade aufgeführt?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Warum werden keine Pläne für ein Upgrade aufgeführt?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können Abonnements jetzt nicht upgraden, da Sie mehr Benutzer als Lizenzen haben.
 

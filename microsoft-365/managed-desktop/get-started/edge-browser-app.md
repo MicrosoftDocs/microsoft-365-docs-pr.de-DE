@@ -1,5 +1,5 @@
 ---
-title: Neuer Microsoft Edge
+title: Das neue Microsoft Edge
 description: ''
 keywords: Browser, Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170671"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597497"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
@@ -25,11 +25,18 @@ Der neue [Microsoft Edge-Browser](https://www.microsoft.com/edge) bietet erstkla
 
 Um Ihre verwalteten Desktop Geräte von Microsoft auf den neuen Microsoft Edge-Browser zu migrieren, müssen Sie ein IT-Support Ticket über das Microsoft Managed Desktop Portal einreichen. Wenn Sie das Ticket archivieren, stellen wir den Edge stable-Kanal für die Test Gruppe bereit und stellen ihn dann alle 24 Stunden in jeder nachfolgenden Bereitstellungsgruppe bereit. Um die Bereitstellung anzuhalten, müssen Sie ein weiteres Ticket anfordern, in dem Vorgänge angehalten werden.
 
+[Beta Kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) ist auch auf Anfrage zur repräsentativen Validierung in Ihrer Organisation verfügbar. Microsoft Managed Desktop stellt die Anwendung nach Bedarf für den Test und die ersten Gruppen bereit, sodass alle diese Benutzer den Beta Kanal zusätzlich zum stabilen Kanal haben. Für alle weiteren Benutzer, die Zugriff auf den Beta Kanal benötigen, fügen Sie diese bitte der modernen Gruppe " **Workplace-Edge Beta users** " hinzu und lassen Sie Sie über das Unternehmens Portal installieren.
+
 ## <a name="updates-to-microsoft-edge"></a>Updates für Microsoft Edge
 
-Microsoft Managed Desktop stellt den [stabilen Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) von Microsoft Edge bereit, der etwa alle sechs Wochen automatisch aktualisiert wird. Updates auf dem stabilen Kanal werden [schrittweise](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) von der Microsoft Edge-Produktgruppe ausgeführt, um die beste Benutzerfreundlichkeit sicherzustellen. Der Microsoft Edge Beta-Kanal ist derzeit nicht verfügbar.
+Microsoft Managed Desktop stellt den [stabilen Kanal](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) von Microsoft Edge bereit, der etwa alle sechs Wochen automatisch aktualisiert wird. Updates auf dem stabilen Kanal werden [schrittweise](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) von der Microsoft Edge-Produktgruppe ausgeführt, um die beste Benutzerfreundlichkeit sicherzustellen. 
+
+[Beta Kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) wird auf Geräten sowohl im Test als auch in den ersten Gruppen zur repräsentativen Validierung innerhalb der Organisation bereitgestellt. Dieser Kanal wird vollständig unterstützt und wird mit neuen Features etwa alle sechs Wochen automatisch aktualisiert.
 
 Um sicherzustellen, dass Microsoft Edge ordnungsgemäß aktualisiert wird, sollten Sie die Microsoft-Edge- [Update-Richtlinien](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)nicht ändern.
+
+### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge-Beta Kanal
+
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Von Microsoft Managed Desktop verwaltete Einstellungen
 
@@ -66,19 +73,19 @@ Es wird nicht empfohlen, diese Einstellung zu aktivieren, da Benutzer Websites m
 
 ### <a name="microsoft-defender-smart-screen"></a>Smart Screen von Microsoft Defender
 
-#### <a name="configure-microsoft-defender-smartscreen"></a>Konfigurieren von Microsoft Defender SmartScreen
+#### <a name="configure-windows-defender-smartscreen"></a>Konfigurieren von Windows Defender SmartScreen
 
 **Standardwert:** Aktiviert
 
 Standardmäßig aktiviert, um den Schutz von Endbenutzern zu erleichtern.
 
-#### <a name="microsoft-defender-smartscreen-prompts-for-sites"></a>Microsoft Defender-SmartScreen-Eingabeaufforderungen für Websites
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender-SmartScreen-Eingabeaufforderungen für Websites
 
 **Standardwert:** Aktiviert
 
 Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da Benutzer Warnungen ignorieren und weiterhin potenziell schädliche Websites verwenden können.
 
-#### <a name="prevent-bypassing-of-microsoft-defender-smartscreen-warnings-about-downloads"></a>Verhindern der Umgehung von Microsoft Defender-SmartScreen-Warnungen bei Downloads
+#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>Verhindern der Umgehung von Windows Defender-SmartScreen-Warnungen bei Downloads
 
 **Standardwert:** Aktiviert
 
@@ -99,6 +106,19 @@ Es wird nicht empfohlen, Flash aufgrund der zugeordneten Sicherheitsrisiken zu v
 **Standardwert:** Deaktiviert
 
 Es wird nicht empfohlen, dass Benutzer Kennwörter auf Ihrem Gerät speichern können.
+
+### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer-Modus in Microsoft Edge
+Der IE-Modus auf Microsoft Edge erleichtert die Verwendung aller Websites, die Ihre Organisation benötigt, in einem einzigen Browser. Es verwendet das integrierte Chrom-Modul für Websites, die mit der Chrom Rendering-Engine kompatibel sind, und verwendet das Trident-MSHTML-Modul von Internet Explorer 11 (IE11) für Websites, die keine Abhängigkeiten zur IE-Funktionalität aufweisen. [Weitere Informationen] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+
+Microsoft Managed Desktop aktiviert standardmäßig Internet Explorer Modus für Ihre Geräte 
+
+#### <a name="internet-explorer-mode-integration"></a>Integration von Internet Explorer-Modus
+**Standardwert:** Internet Explorer Modus
+
+Standardmäßig sind Geräte auf Internet Explorer Modus festgelegt, Sie können diese jedoch so festlegen, dass Sie stattdessen Websites in einem eigenständigen Internet Explorer 11 Fenster öffnen. Um dies zu ändern, müssen Sie eine Supportanfrage einreichen.
+
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Hinzufügen von Websites zur Website Liste "Unternehmens Modus"
+Für Websites, die im Internet Explorer Modus geöffnet werden sollen, müssen Sie Sie in die [Liste Enterprise-Website](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)einschließen. Die Verwaltung und Bereitstellung der Enterprise-Website Liste liegt in ihrer Verantwortung. Ausführliche Informationen finden Sie unter [configure using the configure Enterprise Mode Site List Policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Weitere Einstellungen
 
@@ -132,6 +152,9 @@ Die administrative Vorlage bietet eine Einstellung zum Bereitstellen bestimmter 
 ### <a name="install-extensions-silently"></a>Automatische Installation von Erweiterungen
 
 Sie können auch die administrative Vorlage verwenden, um Microsoft Edge so festzulegen, dass Erweiterungen installiert werden, ohne dass der Benutzer benachrichtigt wird. Sie finden Sie unter **Computer Konfiguration > Microsoft Edge > Extensions > steuern, welche Erweiterungen automatisch installiert werden**.
+
+### <a name="microsoft-edge-update-policies"></a>Microsoft-Edge-Update-Richtlinien
+Um sicherzustellen, dass Microsoft Edge ordnungsgemäß aktualisiert wird, sollten Sie die Microsoft-Edge- [Update-Richtlinien](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)nicht ändern.
 
 ### <a name="other-common-enterprise-policies"></a>Andere allgemeine Unternehmensrichtlinien
 
