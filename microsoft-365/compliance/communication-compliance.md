@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: cd796a6bd5faebc87b2f7c9cab36fe17be41fe2e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101670"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597466"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikations Kompatibilität in Microsoft 365
 
-Communication Compliance ist Teil der neuen Lösung für Insider Risiken in Microsoft 365, die das Minimieren von Kommunikationsrisiken unterstützt, indem Sie Ihnen hilft, Korrekturaktionen für ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu entgegennehmen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Bearbeiter können gescannte e-Mails, Microsoft Teams, jammern oder Kommunikation von Drittanbietern in Ihrer Organisation untersuchen und geeignete Korrekturaktionen durchführen, um sicherzustellen, dass diese mit den Nachrichtenstandards Ihrer Organisation konform sind.
+Communication Compliance ist eine Insider Risiko Lösung in Microsoft 365, mit der Sie Kommunikationsrisiken minimieren können, indem Sie Ihnen helfen, ungeeignete Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu bearbeiten. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie interne und externe Kommunikationen nach Richtlinien Übereinstimmungen durchsuchen, damit Sie von bestimmten Prüfern geprüft werden können. Bearbeiter können gescannte e-Mails, Microsoft Teams, jammern oder Kommunikation von Drittanbietern in Ihrer Organisation untersuchen und geeignete Maßnahmen ergreifen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation konform sind.
 
 Compliance-Richtlinien für Kommunikation in Microsoft 365 helfen Ihnen, viele moderne Herausforderungen im Zusammenhang mit Compliance sowie interner und externer Kommunikation zu bewältigen, einschließlich:
 
@@ -35,7 +35,7 @@ Compliance-Richtlinien für Kommunikation in Microsoft 365 helfen Ihnen, viele m
 - Die zunehmende Menge an Nachrichtendaten
 - Regulatorische Durchsetzung und das Risiko von Geldbußen
 
-In einigen Organisationen besteht möglicherweise eine Trennung der Aufgaben zwischen der IT-Unterstützung und der Compliance-Verwaltungsgruppe. Microsoft 365 unterstützt die Trennung zwischen der Konfiguration der Kommunikations Kompatibilität und der Konfiguration von Richtlinien für die Überprüfung der Kommunikation. Beispielsweise kann die IT-Gruppe für eine Organisation für die Einrichtung von Rollen Berechtigungen und-Gruppen zuständig sein, um Kommunikationsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
+Darüber hinaus besteht möglicherweise eine Trennung der Aufgaben zwischen Ihren IT-Administratoren und Ihrem Compliance-Verwaltungsteam. Communication Compliance unterstützt die Trennung zwischen der Konfiguration von Richtlinien und der Untersuchung und Überprüfung von Nachrichten. Beispielsweise kann die IT-Gruppe für Ihre Organisation für die Einrichtung von Berechtigungen für die Kommunikations Konformitäts Rolle zuständig sein, für Gruppen und Richtlinien sowie für Ermittler und Prüfer, die für die Nachrichtenauswahl, die Überprüfung und die Minderungsaktionen verantwortlich sind.
 
 Eine kurze Übersicht über die Kommunikations Kompatibilität finden Sie unter [Belästigung von Arbeitsplätzen erkennen und mit Kommunikations Konformität in Microsoft 365](https://youtu.be/z33ji7a7Zho) Video im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries)Antworten.
 
@@ -45,7 +45,7 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
 - **Unternehmensrichtlinien**
 
-    Mitarbeiter müssen in ihrer geschäftsbezogenen Kommunikation angemessene Verwendung, ethische Standards und andere Unternehmensrichtlinien einhalten. Kommunikations Konformitätsrichtlinien können Richtlinien Übereinstimmungen erkennen und Sie bei der Durchsetzung von Korrekturmaßnahmen unterstützen, um diese Art von Vorfällen zu verringern. Beispielsweise können Sie die Mitarbeiterkommunikation in Ihrer Organisation auf mögliche Probleme der Personalabteilung wie Belästigung oder die Verwendung ungeeigneter oder anstößiger Sprache überprüfen.
+    Benutzer müssen in ihrer geschäftsbezogenen Kommunikation angemessene Verwendung, ethische Standards und andere Unternehmensrichtlinien einhalten. Kommunikations Konformitätsrichtlinien können Richtlinien Übereinstimmungen erkennen und Sie bei der Durchsetzung von Korrekturmaßnahmen unterstützen, um diese Art von Vorfällen zu verringern. Beispielsweise können Sie die Benutzerkommunikation in Ihrer Organisation auf mögliche Probleme in Bezug auf die Humanressourcen wie Belästigung oder die Verwendung ungeeigneter oder anstößiger Sprache überprüfen.
 
 - **Risikomanagement**
 
@@ -53,11 +53,11 @@ Kommunikations Konformitätsrichtlinien können beim Überprüfen von Nachrichte
 
 - **Einhaltung gesetzlicher Bestimmungen**
 
-    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für die Anforderung an Unternehmen, über Aufsichtsverfahren zu verfügen, um die Kommunikation der Mitarbeiter und die Art der Unternehmen, in denen sie stattfindet, zu überprüfen. Ein weiteres Beispiel könnte die Notwendigkeit sein, die Kommunikation zwischen Vermittlern und Händlern in Ihrem Unternehmen zu überprüfen, um sich gegen potenzielle Geldwäsche, Insiderhandel, geheime Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen. Weitere Informationen zum Support für Finanzorganisationen finden Sie unter [wichtige Compliance-und Sicherheitsüberlegungen für US-Banken und Kapitalmärkte](../solutions/financial-services-secure-collaboration.md).
+    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren einige Arten von Standards für die Einhaltung gesetzlicher Vorschriften einhalten. In diesen Vorschriften wird häufig gefordert, dass Organisationen einen Aufsichts-oder Überwachungsprozess für Messaging implementieren, der für Ihre Branche geeignet ist. Die Regel 3110 der Financial Industry Regulatory Authority (FINRA) ist ein gutes Beispiel für eine Anforderung an Organisationen, Aufsichtsverfahren für die Überprüfung der Benutzerkommunikation und der Unternehmenstypen zu haben, in denen Sie tätig ist. Ein weiteres Beispiel könnte die Notwendigkeit sein, die Kommunikation zwischen Vermittlern und Händlern in Ihrem Unternehmen zu überprüfen, um sich gegen potenzielle Geldwäsche, Insiderhandel, geheime Absprachen oder Bestechungsaktivitäten zu schützen. Compliance-Richtlinien für die Kommunikation können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess für die Überprüfung und den Bericht über die Unternehmenskommunikation bereitstellen. Weitere Informationen zum Support für Finanzorganisationen finden Sie unter [wichtige Compliance-und Sicherheitsüberlegungen für US-Banken und Kapitalmärkte](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="new-enhancements"></a>Neue Verbesserungen
 
-Communication Compliance in Microsoft 365 baut auf den Features von [Aufsichtsrichtlinien in Office 365](supervision-policies.md) mit mehreren neuen Verbesserungen auf:
+Communication Compliance in Microsoft 365 bietet verschiedene wichtige Features, die zur Erfüllung von Compliance-Problemen auf ihren Messaging Plattformen beitragen:
 
 - Intelligente anpassbare Vorlagen
 - Flexible Korrektur Workflows
@@ -70,7 +70,7 @@ Communication Compliance in Microsoft 365 baut auf den Features von [Aufsichtsri
 Durch intelligente anpassbare Vorlagen in der Kommunikations Konformität können Sie Maschinelles Lernen anwenden, um Kommunikations Verletzungen in Ihrer Organisation intelligent zu erkennen.
 
 - **Anpassbare vorkonfigurierte Vorlagen**: neue Richtlinienvorlagen helfen bei der Lösung der häufigsten Kommunikationsrisiken. Die anfängliche Richtlinienerstellung und die nachfolgende Aktualisierung sind jetzt schneller mit vordefinierter antibelästigungs-und anstößiger Sprache, vertraulichen Informationen und Vorlagen für behördliche Konformität.
-- **Neue Unterstützung für das maschinelle Lernen**: eingebaute Bedrohungs-, Belästigungs-und Profanität- [Klassifizierungen](classifier-getting-started-with.md) helfen, falsch positive Ergebnisse in gescannten Nachrichten zu reduzieren, wodurch die Zeit der Bearbeiter während der Untersuchung und des Korrekturprozesses gespart wird.
+- **Neue Unterstützung für das maschinelle Lernen**: eingebaute Bedrohung, Belästigung, Profanität und Bild [Klassifizierungen](classifier-getting-started-with.md) helfen, falsch positive Ergebnisse in überprüften Nachrichten zu reduzieren, wodurch die Zeit der Bearbeiter während der Untersuchung und des Korrekturprozesses gespart wird.
 - **Verbesserter Condition Builder**: das Konfigurieren von Richtlinienbedingungen wird nun zu einer einzigen integrierten Erfahrung im Richtlinien-Assistenten vereinfacht, wodurch die Verwirrung bei der Anwendung von Bedingungen auf Richtlinien verringert wird.
 
 ### <a name="flexible-remediation-workflows"></a>Flexible Korrektur Workflows
@@ -84,6 +84,7 @@ Mithilfe integrierter Korrektur Workflows können Sie Nachrichten mit Richtlinie
 - **Neue Filter**: untersuchen und beheben Sie Richtlinienwarnungen schneller mit Nachrichten filtern für mehrere Felder, einschließlich Absender, Empfänger, Datum, Domänen und vieles mehr.
 - **Verbesserte Nachrichten Ansichten**: Untersuchungen und Korrekturaktionen sind jetzt schneller mit neuen Nachrichtenquellen-, Text-und Anmerkungsansichten. Nachrichtenanlagen können jetzt angezeigt werden, um bei Korrekturaktionen einen vollständigen Kontext bereitzustellen.
 - **Ansicht der Benutzerhistorie**: Die historische Ansicht aller Aktivitäten im Rahmen der Korrekturmaßnahmen für Benutzernachrichten, wie z. B. frühere Benachrichtigungen und Eskalationen bei Richtlinienübereinstimmungen, bietet Prüfern jetzt mehr Kontext während des Korrektur-Workflow-Prozesses. Zum ersten Mal oder wiederholen Instanzen von Richtlinien Übereinstimmungen für Benutzer werden jetzt archiviert und können leicht angezeigt werden.
+- **Benachrichtigung über Mustererkennung (Preview)**: viele belästigende und Mobbing-Aktionen erfolgen im Laufe der Zeit und beinhalten wiederkehrende Instanzen desselben Verhaltens durch einen Benutzer. Die in Warnungsdetails angezeigte Benachrichtigung "neues Muster erkannt" trägt zur Aufmerksamkeit auf diese Warnungen und diese Art von Verhalten bei.
 
 ### <a name="actionable-insights"></a>Ergebnisorientierte Einblicke
 
@@ -122,7 +123,7 @@ In diesem Workflow Schritt ermitteln Sie die Compliance-Anforderungen und konfig
 
 Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorlagen wählen:
 
-- **Anstößige Sprache und Belästigung**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die die integrierte Klassifizierung verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
+- **Anstößige oder bedrohliche Sprache**: Verwenden Sie diese Vorlage, um schnell eine Richtlinie zu erstellen, die integrierte Klassifizierungen verwendet, um Inhalte, die als missbräuchlich oder beleidigend eingestuft werden können, automatisch zu erkennen.
 - **Vertrauliche Informationen**: Verwenden Sie diese Vorlage, um eine Richtlinie zum Überprüfen von Kommunikationen zu erstellen, die festgelegte vertrauliche Informationstypen oder Schlüsselwörter enthalten, um sicherzustellen, dass wichtige Daten nicht an Personen weitergegeben werden, die keinen Zugriff haben sollten.
 - **Einhaltung gesetzlicher Bestimmungen**: Verwenden Sie diese Vorlage, um eine Richtlinie zu erstellen, mit der Kommunikationen nach Verweisen auf finanzielle Standardbegriffe im Zusammenhang mit regulatorischen Standards überprüft werden können.
 - **Benutzerdefinierte Richtlinie**: Verwenden Sie diese Vorlage, um bestimmte Kommunikationskanäle, individuelle Erkennungs Bedingungen und den Umfang der zu überwachenden und zu überprüfenden Inhalte in Ihrer Organisation zu konfigurieren.
@@ -132,7 +133,7 @@ Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorl
 In diesem Schritt befassen Sie sich eingehender mit den Problemen, die im Zusammenhang mit Ihren Kommunikationscompliancerichtlinien festgestellt wurden. Dieser Schritt umfasst die folgenden Aktionen, die im Microsoft 365 Compliance Center verfügbar sind:
 
 - **Warnungen**: Wenn eine Nachricht mit einer Richtlinienbedingung übereinstimmt, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines erweiterten eDiscovery-Falles anzeigen. Neue Warnungen werden auf der Startseite der Kommunikations Kompatibilität und auf der Seite **Benachrichtigungen** angezeigt und in der Reihenfolgeihres Schweregrads aufgeführt.
-- **Problemverwaltung**: für jede Warnung können Sie Ermittlungsaktionen durchführen, um das in der Nachricht erkannte Problem zu beheben.
+- **Problemverwaltung**: Sie können für jede Warnung Untersuchungsmaßnahmen ergreifen, um Korrekturmaßnahmen für die Probleme in der Nachricht zu ergreifen.
 - **Dokumentüberprüfung**: während der Untersuchung eines Problems können Sie mehrere Ansichten der Nachricht verwenden, um das erkannte Problem ordnungsgemäß auszuwerten. Die Ansichten umfassen eine Zusammenfassung der Unterhaltung, nur Text, Anmerkungs- und Detailansichten der Kommunikationsunterhaltung.
 - Über **prüfen des Benutzer aktivitätsverlaufs**: Anzeigen des Verlaufs von Benutzer Nachrichten Aktivitäten und Korrekturaktionen wie vergangene Benachrichtigungen und Eskalationen für Richtlinien Übereinstimmungen.
 - **Filter**: Verwenden Sie Filter wie Absender, Empfänger, Datum und Betreff, um schnell die Nachrichten Warnungen einzuschränken, die Sie überprüfen möchten.
@@ -141,18 +142,19 @@ In diesem Schritt befassen Sie sich eingehender mit den Problemen, die im Zusamm
 
 Der nächste Schritt besteht darin, mit den folgenden Optionen Kompatibilitätsprobleme bei der Kommunikation, die Sie untersucht haben, zu beheben:
 
-- **Beheben**: Nachdem Sie ein Problem überprüft haben, können Sie es beheben, indem Sie die Warnung auflösen. Wenn Sie eine Warnung auflösen, wird Sie aus der Warteschlange ausstehender Warnungen entfernt und die Aktion wird als Eintrag in der Warteschlange Aufgelöst für die entsprechende Richtlinie beibehalten. Warnungen werden automatisch aufgelöst, nachdem die Warnung als falsches positives Ergebnis gekennzeichnet, eine Benachrichtigung an einen Mitarbeiter über die Warnung gesendet oder ein neuer Fall für die Warnung geöffnet wurde.
+- **Beheben**: Nachdem Sie ein Problem überprüft haben, können Sie es beheben, indem Sie die Warnung auflösen. Wenn Sie eine Warnung auflösen, wird Sie aus der Warteschlange ausstehender Warnungen entfernt und die Aktion wird als Eintrag in der Warteschlange Aufgelöst für die entsprechende Richtlinie beibehalten. Warnungen werden automatisch aufgelöst, nachdem die Warnung als falsch positiv markiert wurde, eine Benachrichtigung an einen Benutzer über die Warnung gesendet oder ein neuer Fall für die Warnung geöffnet wurde.
 - **Eine Nachricht kennzeichnen**: Als Teil der Lösung eines Problems können Sie die erkannte Nachricht als konform, nicht konform oder fragwürdig in Bezug auf die Richtlinien und Standards für Ihre Organisation kennzeichnen. Das Kennzeichnen kann Ihnen helfen, Richtlinienwarnungen für die Eskalation oder als Teil anderer interner Überprüfungsprozesse differenzierter zu filtern.
 - **Benutzer benachrichtigen**: häufig verletzen Benutzer versehentlich oder versehentlich eine Kommunikations Konformitätsrichtlinie. Sie können das Benachrichtigungsfeature verwenden, um dem Benutzer eine Warnmeldung zu senden und das Problem zu beheben.
 - **Eskalieren an einen anderen Prüfer**: Manchmal benötigt der Erstprüfer eines Problems Input von anderen Prüfern, um den Vorfall zu beheben. Sie können Nachrichtenprobleme als Teil des Lösungsprozesses leicht an Prüfer in anderen Bereichen Ihrer Organisation eskalieren.
 - **Als falsches positives Ergebnis kennzeichnen**: Nachrichten, die fälschlicherweise als Übereinstimmungen von Compliancerichtlinien erkannt wurden, werden gelegentlich in den Überprüfungsvorgang übertragen. Sie können diese Warnungstypen als falsch positive Signale markieren und das Problem automatisch beheben.
+- **Nachricht in Microsoft Teams entfernen (Vorschau)**: unangemessene Nachrichten werden möglicherweise aus der Anzeige in Microsoft Teams-Kanälen oder aus persönlichen und Gruppenchatnachrichten entfernt. Unerwünschte Nachrichten, die entfernt wurden, werden durch eine Benachrichtigung ersetzt, dass die Nachricht für eine Richtlinienverletzung entfernt wurde.
 - **Eskalieren zur Untersuchung**: in den schwerwiegendsten Situationen müssen Sie möglicherweise Kommunikations Kompatibilitätsinformationen für andere Bearbeiter in Ihrer Organisation freigeben. Die Kommunikationscompliance ist eng mit anderen Compliance-Funktionen von Microsoft 365 integriert, um Sie bei der End-to-End-Risikobehebung zu unterstützen. Wenn Sie einen Fall für eine Untersuchung eskalieren, können Sie Daten und die Verwaltung der Anfrage in Microsoft 365 auf Advanced eDiscovery übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Überwachen
 
 Das Nachverfolgen und Verwalten von Compliance-Problemen, die durch Kommunikations Konformitätsrichtlinien identifiziert werden, umfasst den gesamten Workflowprozess. Wenn Warnungen generiert und Ermittlungs-und Korrekturaktionen ausgeführt werden, müssen vorhandene Richtlinien möglicherweise überprüft und aktualisiert werden, und es müssen möglicherweise neue Richtlinien erstellt werden.
 
-- **Überwachen und Berichten**: Verwenden Sie die Kommunikationsrichtlinien-Dashboards, Berichte, Export Protokolle und Ereignisse, die in den einheitlichen Überwachungsprotokollen aufgezeichnet wurden, um Ihre Compliance-Haltung kontinuierlich auszuwerten und zu verbessern.
+- **Überwachen und Berichten**: Verwenden Sie Dashboard-Widgets für die Kommunikation, Export Protokolle und Ereignisse, die in den einheitlichen Überwachungsprotokollen aufgezeichnet wurden, um Ihre Compliance-Haltung kontinuierlich auszuwerten und zu verbessern.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
 

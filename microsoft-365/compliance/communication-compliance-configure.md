@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit der Kommunikationscompliance
-description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Mitarbeiterkommunikation für die Überprüfung.
+description: Einrichten von Richtlinien für die Kommunikations Konformität zum Konfigurieren der Benutzerkommunikation für die Überprüfung.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936850"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597576"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
-Verwenden Sie Kommunikationsrichtlinien zur Erfassung von Mitarbeiter Kommunikationen zur Untersuchung durch interne oder externe Bearbeiter. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Wenn Sie überprüfen möchten, wie Contoso eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams, Exchange Online und jammern von Kommunikation schnell konfiguriert hat, lesen Sie diese [Fallstudie](communication-compliance-case-study.md).
+Verwenden Sie Richtlinien für die Kommunikations Konformität, um die Benutzerkommunikation für die Prüfung durch interne oder externe Bearbeiter zu identifizieren. Weitere Informationen zur Überwachung der Kommunikation in Ihrer Organisation mithilfe von Kommunikationsrichtlinien finden Sie unter [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Wenn Sie überprüfen möchten, wie Contoso eine Kommunikations Konformitätsrichtlinie für die Überwachung anstößiger Sprachen in Microsoft Teams, Exchange Online und jammern von Kommunikation schnell konfiguriert hat, lesen Sie diese [Fallstudie](communication-compliance-case-study.md).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -57,9 +57,21 @@ Wenn Sie keinen Office 365 Enterprise E5-Plan haben und das Insider Risk Managem
 >[!Important]
 >Standardmäßig haben globale Administratoren keinen Zugriff auf Features für die Kommunikations Kompatibilität. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikations Kompatibilitätsfeatures zugegriffen werden kann.
 
-Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle " **Aufsichts Überprüfungs Administrator** " zugewiesen sein. Sie müssen eine neue Rollengruppe für Bearbeiter mit dem **Aufsichts Überprüfungs Administrator**, **der Fallverwaltung**, dem **Kompatibilitäts Administrator**und den **Überprüfungs** Rollen erstellen, um Nachrichten mit Richtlinien Übereinstimmungen zu untersuchen und zu beheben.
+Es gibt fünf Rollen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und diese Konfigurationsschritte fortzusetzen, müssen Sie der *Administratorrolle "Communications Compliance"* zugewiesen sein.
 
-### <a name="create-a-new-role-group"></a>Erstellen einer neuen Rollengruppe
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie eine oder mehrere neue Rollengruppen für Administratoren, Prüfer und Ermittler erstellen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Bereiche der Kommunikations Kompatibilitätsfeatures zu verwalten. Sie können auch eine Rollengruppe erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuweisen. Erstellen Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, die Ihren Anforderungen an die Compliance-Verwaltung am besten entsprechen.
+
+Wählen Sie unter diesen Rollenoptionen beim Konfigurieren der Rollengruppen für die Kommunikations Konformität aus:
+
+|**Rolle**|**Rollenberechtigungen**|
+|:-----|:-----|
+| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
+| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
+| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+
+### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Option 1: Erstellen einer neuen Rollengruppe mit allen Kommunikations Konformitäts Rollen
 
 1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
@@ -69,13 +81,45 @@ Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance 
 
 4. Geben Sie der neuen Rollengruppe im Feld **Name** einen Anzeigenamen. Wählen Sie **Weiter** aus.
 
-5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für **Aufsichts Überprüfungs Administrator**, **Fallverwaltung**, **Kompatibilitäts Administrator**und **Überprüfung**, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie die Kontrollkästchen für die folgenden Rollen:
 
-    ![Kommunikation Compliance erforderlich Rollengruppen](../media/communication-compliance-role-groups-1.png)
+    - Communication Compliance-Administrator
+    - Kompatibilitätsanalyse für Kommunikation
+    - Untersuchung der Kommunikations Konformität
+    - Communication Compliance Viewer
+    - Kommunikation Compliance Case Management
 
-6. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+    ![Kommunikation Compliance Roles](../media/communication-compliance-case-roles.png)
 
-7. Wählen Sie **Rollengruppe erstellen** aus, um abzuschließen.
+6. Wählen Sie **Hinzufügen** und **Fertig**aus, und wählen Sie dann **weiter** aus, um fortzufahren.
+
+7. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+
+8. Wählen Sie **Rollengruppe erstellen** aus, um abzuschließen.
+
+### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Option 2: Erstellen neuer Rollengruppen mit unterschiedlichen Kommunikations Konformitäts Rollen
+
+Erstellen Sie mehrere Rollengruppen, um den Zugriff auf Kommunikation und die Zuständigkeiten zwischen verschiedenen Benutzern in Ihrer Organisation zu segmentieren. Für jede neue Rollengruppe weisen Sie unterschiedliche Kommunikations Konformitäts Rollen zu.
+
+1. Melden [https://protection.office.com/permissions](https://protection.office.com/permissions) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
+
+2. &amp;Wechseln Sie im Security Compliance Center zu **Berechtigungen**. Wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Office 365 aus.
+
+3. Wählen Sie **Erstellen** aus.
+
+4. Geben Sie der neuen Rollengruppe im Feld **Name** einen Anzeigenamen. Wählen Sie **Weiter** aus.
+
+5. Wählen Sie **Rollen auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für die Kommunikations Konformitäts Rollen, die Sie dieser Gruppe zuweisen möchten. Wenn sich diese Rollengruppe beispielsweise für Compliance-Analysten in Ihrer Organisation eignet, wählen Sie die Rolle Compliance *Analysis* and *Communication Compliance Case Management* aus. Wenn diese Rollengruppe für Compliance-Ermittler gilt, wählen Sie die Rollen für die *Kommunikation Compliance Investigation* and *Communications Compliance Case Management* aus.
+
+    ![Kommunikation Compliance Roles](../media/communication-compliance-analysts-role-group.png)
+
+6. Wählen Sie **Hinzufügen** und **Fertig**aus, und wählen Sie dann **weiter** aus, um fortzufahren.
+
+7. Wählen Sie **Mitglieder auswählen** aus, und klicken Sie dann auf **Hinzufügen**. Aktivieren Sie das Kontrollkästchen für alle Benutzer und Gruppen, für die Sie Richtlinien erstellen und Nachrichten mit Richtlinien Übereinstimmungen verwalten möchten, und wählen Sie dann **Hinzufügen** und **Fertig**aus. Wählen Sie **Weiter** aus.
+
+8. Wählen Sie **Rollengruppe erstellen** aus, um abzuschließen.
+
+9. Erstellen Sie nach Bedarf zusätzliche Rollengruppen für die Kommunikations Konformität.
 
 Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen im Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -146,10 +190,10 @@ Weitere Informationen zum Konfigurieren von jammern im einheitlichen Modus finde
     - Wählen Sie die zu überwachende Kommunikationsrichtung, einschließlich eingehende, ausgehende oder interne Kommunikation.
     - Definieren Sie die [Bedingungen](communication-compliance-feature-reference.md#ConditionalSettings)für die Kommunikation-Konformitätsrichtlinie. Sie können zwischen Nachrichtenadresse, Stichwort, Dateitypen und Größen Übereinstimmungsbedingungen wählen.
     - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. In diesem Schritt können Sie Standard-und benutzerdefinierte vertrauliche Informationstypen auswählen. Wählen Sie unter vorhandene benutzerdefinierte vertrauliche Informationstypen oder benutzerdefinierte Schlüsselwörter Wörterbücher im Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten ausführen, falls erforderlich. Sie können auch neue vertrauliche Informationstypen aus dem Assistenten für Kommunikations Konformitätsrichtlinien erstellen.
-    - Wählen Sie aus, ob Sie Klassifizierungen aktivieren möchten. Klassifizierer können eine ungeeignete Sprache erkennen, die im Textkörper von e-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen wurde.
+    - Wählen Sie aus, ob Sie Klassifizierungen aktivieren möchten. Klassifizierer können ungeeignete Sprache und Bilder erkennen, die im Textkörper von e-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen wurden. Sie können die folgenden integrierten Klassifizierungen auswählen: *Bedrohung*, *Profanität*, *gezielte Belästigung*, *Erwachsene Bilder*, *rassige Bilder*und *blutige Bilder*.
 
     >[!CAUTION]
-    >Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+    >Die integrierte Klassifizierung **Anstößige Sprache** wird eingestellt, da sie eine große Anzahl falsch positiver Ergebnisse erzeugt hat. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die integrierten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **gezielte Belästigung** " zu verwenden.
 
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
     - Überprüfen Sie Ihre Richtlinienauswahl und erstellen Sie die Richtlinie.
@@ -158,25 +202,33 @@ Weitere Informationen zum Konfigurieren von jammern im einheitlichen Modus finde
 
 6. Die Seite **Ihre Richtlinie wurde erstellt** wird mit Richtlinien angezeigt, wenn die Richtlinie aktiviert wird und welche Kommunikation aufgezeichnet wird.
 
-## <a name="step-6-optional-create-employee-notice-templates"></a>Schritt 6 (optional): Erstellen von Notiz Vorlagen für Mitarbeiter
+## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Schritt 6 (optional): Erstellen von Benachrichtigungsvorlagen und Konfigurieren der Benutzer Anonymisierung
 
-Wenn Sie die Möglichkeit haben möchten, auf eine Richtlinien Warnung zu reagieren, indem Sie eine Erinnerungs Benachrichtigung an den zugeordneten Mitarbeiter senden, müssen Sie in Ihrer Organisation mindestens eine Notice-Vorlage erstellen. Die Notiz Vorlagenfelder können bearbeitet werden, bevor Sie als Teil des Warnungs Korrekturprozesses gesendet werden, und es wird empfohlen, eine benutzerdefinierte Benachrichtigungsvorlage für jede Kommunikations Konformitätsrichtlinie zu erstellen.
+Wenn Sie die Möglichkeit haben möchten, auf eine Richtlinien Warnung zu reagieren, indem Sie eine Erinnerungs Benachrichtigung an den zugeordneten Benutzer senden, müssen Sie mindestens eine Notice-Vorlage in Ihrer Organisation erstellen. Die Notiz Vorlagenfelder können bearbeitet werden, bevor Sie als Teil des Warnungs Korrekturprozesses gesendet werden, und es wird empfohlen, eine benutzerdefinierte Benachrichtigungsvorlage für jede Kommunikations Konformitätsrichtlinie zu erstellen.
+
+Sie können auch festlegen, dass für angezeigte Benutzernamen Anonymisierung aktiviert wird, wenn Sie Richtlinien Übereinstimmungen untersuchen und Aktionen für Nachrichten ausführen.
 
 1. Melden [https://compliance.microsoft.com](https://compliance.microsoft.com) Sie sich mit Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wechseln Sie im Microsoft 365 Compliance Center zu **Communication Compliance**.
 
-3. Wählen Sie die Registerkarte **Notiz Vorlagen** und dann **Notizvorlage erstellen**aus.
+3. Um die Anonymisierung für Benutzernamen zu konfigurieren, wählen Sie die Registerkarte **Datenschutz** aus.
 
-4. Füllen Sie auf der Seite **Notizvorlage ändern** die folgenden Felder aus:
+4. Um die Anonymisierung zu aktivieren, wählen Sie **Anonyme Versionen von Benutzernamen anzeigen**aus.
 
-    - Hinweis Vorlagenname (erforderlich)
+5. Wählen Sie **Speichern** aus.
+
+6. Navigieren Sie zur Registerkarte **Notiz Vorlagen** , und wählen Sie dann **Notizvorlage erstellen**aus.
+
+7. Füllen Sie auf der Seite **Notizvorlage ändern** die folgenden Felder aus:
+
+    - Vorlagenname (erforderlich)
     - Senden von (erforderlich)
     - CC und BCC (optional)
     - Betreff (erforderlich)
     - Nachrichtentext (erforderlich)
 
-5. Wählen Sie **Speichern** aus, um die Benachrichtigungsvorlage zu erstellen und zu speichern.
+8. Wählen Sie **Speichern** aus, um die Benachrichtigungsvorlage zu erstellen und zu speichern.
 
 ## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Schritt 7 (optional): Testen der Konformitätsrichtlinie für die Kommunikation
 
@@ -193,3 +245,9 @@ Führen Sie die folgenden Schritte aus, um die Konformitätsrichtlinie für Komm
 3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikations Konformitätsrichtlinie festgelegt ist. Navigieren Sie zu **Kommunikation Compliance**  >  **Alerts** , um die Warnungen für Ihre Richtlinien anzuzeigen.
 
 4. Beheben Sie die Warnung mithilfe der Korrektur Steuerelemente, und stellen Sie sicher, dass die Warnung ordnungsgemäß aufgelöst wurde.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem Sie diese Schritte zum Erstellen Ihrer ersten Kommunikations Konformitätsrichtlinie abgeschlossen haben, erhalten Sie nach etwa 24 Stunden Warnungen von Aktivitätsindikatoren. Konfigurieren Sie zusätzliche Richtlinien nach Bedarf mithilfe der Anleitungen in Schritt 5 dieses Artikels.
+
+Weitere Informationen zum Untersuchen von Benachrichtigungen über die Kommunikations Konformität finden Sie unter über [prüfen und Beheben von Benachrichtigungen zur Kommunikations Konformität](communication-compliance-investigate-remediate.md).

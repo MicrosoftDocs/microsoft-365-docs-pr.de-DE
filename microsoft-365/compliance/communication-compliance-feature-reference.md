@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1331722b5ee3149a93ab3158a48d7d1e8e2472c4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127250"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597554"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -32,7 +32,7 @@ ms.locfileid: "45127250"
 >[!Important]
 >Die Verwendung von PowerShell zum Erstellen und Verwalten von Richtlinien zur Kommunikationscompliance wird nicht unterstützt. Zum Erstellen und Verwalten dieser Richtlinien müssen Sie die Steuerelemente für die Richtlinienverwaltung in der [Microsoft 365 Communication Compliance-Lösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-Im Microsoft 365 Compliance Center erstellen Sie Richtlinien zur Kommunikationscompliance für Microsoft 365-Organisationen. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, die der Rollengruppe **Administrator für Aufsichtsüberprüfungen** angehören, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen wurde, kann auf die Seite **Kommunikationscompliance** im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
+Im Microsoft 365 Compliance Center erstellen Sie Richtlinien zur Kommunikationscompliance für Microsoft 365-Organisationen. Compliance-Richtlinien für Kommunikation definieren, welche Kommunikation und welche Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und angeben, wer Überprüfungen durchführen soll. Benutzer, denen die *Administratorrolle "Communications Compliance"* zugewiesen ist, können Richtlinien einrichten, und jeder, dem diese Rolle zugewiesen ist, kann auf die Seite " **Kommunikations Kompatibilität** " und globale Einstellungen im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Verlauf von Änderungen an einer Richtlinie in eine CSV-Datei exportieren, die auch den Status der ausstehenden Warnungen, eskalierter Elemente und aufgelöster Elemente enthält. Richtlinien können nicht umbenannt werden und können gelöscht werden, wenn Sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365-Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien für die Kommunikationsrichtlinien Erstellung erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
@@ -47,6 +47,22 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 | **Vertrauliche Informationen** | Überwachen der Kommunikation für vertrauliche Informationen | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, ausgehende, intern <br> -Review-Prozentsatz: 10% <br> -Bedingungen: vertrauliche Informationen, vordefinierte Inhalts Muster und Typen, Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 | **Einhaltung gesetzlicher Bestimmungen** | Überwachen der Kommunikation für Informationen im Zusammenhang mit der finanzbehördlichen Compliance | -Locations: Exchange Online, Microsoft Teams, jammern, Skype for Business <br> -Direction: eingehend, Outbound <br> -Review-Prozentsatz: 10% <br> -Bedingungen: Benutzerwörterbuch-Option, Anlagen größer als 1 MB |
 
+## <a name="permissions-preview"></a>Berechtigungen (Vorschau)
+
+Es gibt fünf Rollen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikations Kompatibilitätsfeatures verwendet werden. Um die **Kommunikation Compliance** als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen, müssen Sie der Administratorrolle " *Communications Compliance"* zugewiesen sein.
+
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie eine oder mehrere neue Rollengruppen für Administratoren, Prüfer und Ermittler erstellen. Sie haben die Möglichkeit, Benutzer bestimmten Rollengruppen zuzuweisen, um verschiedene Sätze von Kompatibilitätsfeatures für die Kommunikation zu verwalten. Sie können auch eine Rollengruppe erstellen und der Gruppe alle Kommunikations Konformitäts Rollen zuweisen. Erstellen Sie eine einzelne Rollengruppe oder mehrere Gruppen, die Ihren Anforderungen an die Compliance-Verwaltung am besten entsprechen.
+
+Wählen Sie unter diesen Rollenoptionen beim Konfigurieren der Rollengruppen für die Kommunikations Konformität aus:
+
+|**Rolle**|**Rollenberechtigungen**|
+|:-----|:-----|
+| **Communication Compliance-Administrator** | Benutzer, denen diese Rolle zugewiesen ist, können Kommunikationsrichtlinien, globale Einstellungen und Rollengruppen Zuordnungen erstellen, lesen, aktualisieren und löschen. Benutzern, denen diese Rolle zugewiesen ist, können keine Nachrichten Benachrichtigungen angezeigt werden. |
+| **Kompatibilitätsanalyse für Kommunikation** | Benutzer, denen diese Rolle zugewiesen ist, können Richtlinien anzeigen, in denen Sie als Bearbeiter zugewiesen werden, Nachrichten Metadaten anzeigen (keine Nachrichteninhalte), an zusätzliche Bearbeiter eskalieren oder Benachrichtigungen an Benutzer senden. Ausstehende Warnungen können von Analysten nicht aufgelöst werden. |
+| **Untersuchung der Kommunikations Konformität** | Benutzer, denen diese Rolle zugewiesen ist, können Nachrichten Metadaten und-Inhalte anzeigen, an zusätzliche Bearbeiter eskalieren, zu einem erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung lösen. |
+| **Communication Compliance Viewer** | Benutzer, denen diese Rolle zugewiesen ist, können auf der Homepage der Communication Compliance auf alle Berichts-Widgets zugreifen und alle Kommunikations Konformitätsberichte anzeigen. |
+| **Kommunikation Compliance Case Management** | Benutzer, denen diese Rolle zugewiesen ist, können Fälle verwalten und Benachrichtigungen bearbeiten. Diese Rolle ist für das Erstellen benutzerdefinierter Rollengruppen für Administratoren, Analysten und Ermittler erforderlich. Benutzerdefinierte Gruppen für Viewer benötigen diese Rolle nicht zugewiesen. |
+
 ## <a name="supervised-users"></a>Beaufsichtigte Benutzer
 
 Bevor Sie mit der Kommunikationscompliance beginnen, müssen Sie feststellen, wer die Überprüfung der Kommunikation benötigt. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Microsoft 365-Gruppen, Exchange-basierte Verteilerlisten, Jammer Gemeinschaften und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen mit einer bestimmten Ausschlussgruppe oder einer Liste von Gruppen vom Überprüfen ausschließen.
@@ -56,7 +72,7 @@ Bevor Sie mit der Kommunikationscompliance beginnen, müssen Sie feststellen, we
 
 ## <a name="reviewers"></a>Prüfer
 
-Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Alle Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden, und ihnen müssen die Rollen **Fallmanagement** und **Prüfung** zugewiesen werden. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
+Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Aalle-Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und entweder der *Kommunikations Kompatibilitätsanalyse* oder den unter Suchrollen für die *Kommunikations Konformitätsprüfung* zugewiesen sein müssen. Bearbeiter (entweder Analysten oder Ermittler) müssen auch die *Verwaltungsrolle "Communication Compliance Case* " zugewiesen haben. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
@@ -138,17 +154,22 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 ### <a name="classifiers"></a>Klassifizierungen
 
-Integrierte Klassifizierer überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation nach verschiedenen Arten von Konformitätsproblemen. Klassifizierer verwenden eine Kombination aus künstlicher Intelligenz und Schlüsselwörtern, um Sprache in Botschaften zu identifizieren, die wahrscheinlich gegen die Antibelästigungsrichtlinien verstoßen. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
+Integrierte Schulungs-und globale Klassifizierungen überprüfen gesendete oder empfangene Nachrichten über alle Kommunikationskanäle in Ihrer Organisation für unterschiedliche Arten von Kompatibilitätsproblemen. Klassifizierer verwenden eine Kombination aus künstlicher Intelligenz und Schlüsselwörtern, um Sprache in Botschaften zu identifizieren, die wahrscheinlich gegen die Antibelästigungsrichtlinien verstoßen. Integrierte Klassifizierungen unterstützen derzeit nur englische Stichwörter in Nachrichten.
 
-Integrierte Klassifizierer für die Kommunikationscompliance überprüfen die Kommunikation nach Begriffen und Empfindungen für die folgenden Sprachtypen:
+Kommunikation Compliance integrierte Schulungs-und globale Klassifizierungen überprüfen die Kommunikation auf Begriffe, Bilder und Meinungen für die folgenden Sprach-und Inhaltstypen:
 
 - **Bedrohung**: scannt nach Bedrohungen, um Gewalt oder körperlichen Schaden für eine Person oder Eigenschaft zu begehen.
-- **Belästigung**: Scans für anstößige Verhaltensweisen, die sich an Personen in Bezug auf Rasse, Farbe, Religion und nationale Herkunft ausrichten.
+- **Gezielte Belästigung**: Scans für anstößige Verhaltensweisen, die Menschen hinsichtlich Rasse, Farbe, Religion und nationalem Ursprung anvisieren.
 - **Profanität**: scannt nach profanen Ausdrücken, die die meisten Menschen in Verlegenheit bringen.
+- **Bilder für Erwachsene**: scannt nach Bildern, die in der Natur sexuell explizit sind.
+- **Rassige Bilder**: scannt nach Bildern, die in der Natur sexuell suggestive sind, jedoch weniger explizite Inhalte enthalten als Erwachsene Bilder.
+- **Blutige Bilder**: scannt nach Bildern, die Gewalt und Gore darstellen.
 
-Die integrierten Klassifizierungen bieten keine erschöpfende Liste von Begriffen in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung dieser Sprache für Ihre Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit dem Scannen und Blockieren von Sprache in diesen Bereichen verantwortlich.
+Die *adulten*, *rassigen*und *blutigen* Bild Klassifizierungen überprüfen Dateien in. JPEG,. PNG,. GIF und. BMP-Formate. Die Größe von Bilddateien muss kleiner als 4 MB sein, und die Abmessungen der Bilder müssen größer als 50x50 Pixel und größer als 50 Kilobyte (KB) sein, damit das Bild für die Auswertung qualifiziert wird. Die Bild Identifikation wird für Exchange Online e-Mail-Nachrichten und Microsoft Teams-Kanäle und-Chats unterstützt.
 
-Informationen über Klassifizierer in Microsoft 365 finden Sie unter [Klassifizierer](classifier-getting-started-with.md).
+Die integrierten Schulungs-und globalen Klassifizierungen bieten keine erschöpfende Liste von Begriffen oder Bildern in diesen Bereichen. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, die Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während Klassifizierungen Ihre Organisation bei der Überwachung dieser Bereiche unterstützen können, sind Klassifizierungen nicht dazu gedacht, die einzige Möglichkeit zur Überwachung oder Adressierung solcher Sprachen oder Bilder in Ihrer Organisation bereitzustellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit dem Scannen und Blockieren von Sprache und Bildern in diesen Bereichen verantwortlich.
+
+Informationen zu Schulungs Klassifizierern in Microsoft 365 finden Sie unter [Erste Schritte mit Schulungs Klassifizierern](classifier-getting-started-with.md).
 
 ### <a name="conditional-settings"></a>Bedingte Einstellungen
 <a name="ConditionalSettings"> </a>
@@ -195,16 +216,25 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen 
 
 Wenn Sie die zu überprüfende Menge an Inhalten reduzieren möchten, können Sie einen Prozentsatz der gesamten Kommunikation angeben, die durch eine Kommunikations Konformitätsrichtlinie geregelt wird. Eine zufällige Stichprobe von Inhalten wird in Echtzeit aus dem Gesamtprozentsatz der Inhalte ausgewählt, die den gewählten Richtlinienbedingungen entsprechen. Wenn Sie möchten, dass Prüfer alle Elemente prüfen, können Sie in einer Richtlinie zur Kommunikationscompliance **100 %** konfigurieren.
 
-## <a name="notices"></a>Hinweise
+## <a name="privacy-preview"></a>Datenschutz (Vorschau)
 
-Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-Erinnerungs Benachrichtigung für Richtlinien Übereinstimmungen als Teil des Problem Lösungsprozesses senden möchten. Benachrichtigungen können nur an die e-Mail-Adresse des Mitarbeiters gesendet werden, die der Richtlinienübereinstimmung zugeordnet ist, die die spezifische Warnung zur Korrektur generiert hat. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinienverletzung als Teil des Korrektur Workflows angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
+Der Schutz der Privatsphäre von Benutzern mit Richtlinien Übereinstimmungen ist wichtig und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Benachrichtigungen zur Kommunikations Konformität beitragen. Diese Einstellung gilt nur für Benutzernamen, die die Lösung für die Kommunikations Kompatibilität angezeigt haben. Es wirkt sich nicht auf die Anzeige von Namen in anderen Compliance-Lösungen oder Admin Center aus.
 
-Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder definieren können:
+Für Benutzer mit einer Übereinstimmung mit Kommunikations Kompatibilität können Sie in den Einstellungen für die **Kommunikations Kompatibilität**eine der folgenden Einstellungen auswählen:
 
-|**Feld**|**Required**| **Details** |
+- **Anonyme Versionen von**Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Administratoren, Analysten, Daten Ermittler und Bearbeiter sehen, wem die Richtlinienwarnungen zugeordnet sind. Beispielsweise würde ein Benutzer "Grace Taylor" mit einem randomisierten Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikations Konformitäts Erfahrung angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikations Konformität sind nicht verfügbar, wenn diese Option ausgewählt wird. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die aktuelle oder vergangene Richtlinien Übereinstimmungen aufweisen.
+- **Anonyme Versionen von Benutzernamen nicht anzeigen**: Benutzernamen werden für alle aktuellen und letzten Richtlinien Übereinstimmungen für Benachrichtigungen zur Kommunikations Konformität angezeigt. Benutzerprofilinformationen (Name, Titel, Alias und Organisation oder Abteilung) werden für den Benutzer für alle Warnungen und Fälle im Insider Risikomanagement angezeigt.
+
+## <a name="notice-templates"></a>Benachrichtigungsvorlagen
+
+Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern eine e-Mail-Erinnerungs Benachrichtigung für Richtlinien Übereinstimmungen als Teil des Problem Lösungsprozesses senden möchten. Benachrichtigungen können nur an die e-Mail-Adresse des Benutzers gesendet werden, die der Richtlinienübereinstimmung zugeordnet ist, die die spezifische Warnung zur Behebung generiert hat. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinienverletzung als Teil des Korrektur Workflows angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
+
+Notices-Vorlagen sind benutzerdefinierte e-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder im Bereich **Kommunikations Kompatibilitätseinstellungen** definieren können:
+
+|**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Anzeigename für die Notizvorlage, die Sie im Benachrichtigungs Workflow während der Wiederherstellung auswählen, unterstützt Textzeichen. |
-| **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht an den Mitarbeiter mit einer Richtlinienübereinstimmung senden, die aus dem Active Directory für Ihr Abonnement ausgewählt wird. |
+| **Absenderadresse** | Ja | Die Adresse von einem oder mehreren Benutzern oder Gruppen, die die Nachricht mit einer Richtlinienübereinstimmung an den Benutzer senden, ausgewählt aus dem Active Directory für Ihr Abonnement. |
 | **CC-und Bcc-Adressen** | Nein | Optionale Benutzer oder Gruppen, die über die Richtlinienübereinstimmung benachrichtigt werden sollen, ausgewählt aus dem Active Directory für Ihr Abonnement. |
 | **Betreff** | Ja | Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen. |
 | **Nachrichtentext** | Ja | Informationen, die im Nachrichtentext angezeigt werden, unterstützen Text-oder HTML-Werte. |
@@ -243,7 +273,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
 | **Absenderdomäne** | Die Domäne, die die Nachricht gesendet hat. |
-| **Size** | Die Größe der Nachricht in KB. |
+| **Größe** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Nachrichtenbetreff oder der Chat Titel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *fragwürdig*, *kompatibel*oder *nicht kompatibel*. |
 | **Eskaliert an** | Der Benutzername der Person, die im Rahmen einer Nachrichten Eskalations Aktion enthalten ist. |
@@ -284,21 +314,41 @@ Wenn Sie den in einer Warnungs Richtlinie für eine bestimmte Kommunikations Kon
 
 7. Wählen Sie **Schließen** aus, um die Seite Warnungsrichtlinien Details zu beenden.
 
+## <a name="reports-preview"></a>Berichte (Vorschau)
+
+Das Dashboard für neue **Berichte** ist der zentrale Ort zum Anzeigen aller Kompatibilitätsberichte für die Kommunikation. Berichts-Widgets bieten eine schnelle Übersicht über die am häufigsten benötigten Einblicke für eine allgemeine Bewertung des Status von Kommunikations Compliance-Aktivitäten. In den Berichts-Widgets enthaltene Informationen sind nicht exportierbar.
+
+Das Dashboard **Berichte** enthält die folgenden Berichts-Widgets:
+
+- **Aktuelle Richtlinien Übereinstimmungen**: zeigt die Anzahl der Übereinstimmungen mit aktiver Richtlinie im Zeitverlauf an.
+- **Aufgelöste Elemente nach Richtlinie**: zeigt die Anzahl der Richtlinien Übereinstimmungs Benachrichtigungen an, die über einen Zeitraum nach Richtlinie aufgelöst werden.
+- **Benutzer mit den meisten Richtlinien Übereinstimmungen**: zeigt die Benutzer (oder anonymisierten Benutzernamen) und die Anzahl der Richtlinien Übereinstimmungen für einen bestimmten Zeitraum an.
+- **Richtlinie mit den meisten Übereinstimmungen**: zeigt die Richtlinien und die Anzahl der Übereinstimmungen für einen bestimmten Zeitraum an, der für Übereinstimmungen am höchsten und am niedrigsten ist.
+
 ## <a name="audit"></a>Überwachung
 
-In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Aktivitäten und der Kommunikation von Mitarbeitern nachzuweisen. Bei diesen Informationen kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
+In einigen Fällen müssen Sie Aufsichtsbehörden oder Compliance-Prüfern Informationen bereitstellen, um die Überwachung der Benutzeraktivitäten und der Kommunikation zu überprüfen. Bei diesen Informationen kann es sich um eine Zusammenfassung aller Aktivitäten handeln, die mit einer definierten Organisationsrichtlinie verknüpft sind, oder wenn sich eine Kommunikations Konformitätsrichtlinie ändert. Kommunikations Konformitätsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitstellung interner oder externer Überprüfungen. Detaillierte Überwachungs Verläufe jeder Aktion zum Erstellen, bearbeiten und löschen werden von ihren Kommunikationsrichtlinien erfasst, um einen Nachweis der Aufsichtsverfahren zu ermöglichen.
 
 >[!Important]
 >Die Überwachung muss für Ihre Organisation aktiviert werden, bevor Kommunikations kompatibilitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie unter [Aktivieren des Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
-Um Kommunikationsrichtlinien Aktivitäten anzuzeigen, wählen Sie das Steuerelement zum **Überprüfen von Aktivitäten** auf der Hauptseite für eine beliebige Richtlinie exportieren aus. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
+Wählen Sie zum Anzeigen von Updateaktivitäten für die Kommunikationsrichtlinien Aktualisierung auf der Hauptseite für eine Richtlinie das Steuerelement **Export Richtlinienupdates** aus. Sie müssen den *globalen* Administrator-oder *Kommunikationsrichtlinien-Administrator* Rollen zugewiesen sein, um Aktualisierungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
-| **CreationDate** | Das Datum, an dem die Aktivität in einer Richtlinie ausgeführt wurde. |
-| **UserIds** | Der Benutzer, der die Aktivität in einer Richtlinie ausgeführt hat. |
-| **Operations** | Die für die Richtlinie ausgeführten Vorgänge. |
-| **Auditdata** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinien Aktivitäten. Alle Aktivitäten werden durch Kommata-Trennzeichen aufgezeichnet und getrennt. |
+| **CreationDate** | Das Datum, an dem die Update Aktivität in einer Richtlinie ausgeführt wurde. |
+| **UserIds** | Der Benutzer, der die Aktualisierungsaktivität in einer Richtlinie ausgeführt hat. |
+| **Operations** | Die für die Richtlinie ausgeführten Aktualisierungsvorgänge. |
+| **Auditdata** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinien Aktualisierungsaktivitäten. Alle Updateaktivitäten werden aufgezeichnet und durch Kommatrennzeichen getrennt. |
+
+Zum **Anzeigen der Aktivitäten** zur Kommunikation-Konformitätsüberprüfung für eine Richtlinie wählen Sie auf der Übersichtsseite für eine bestimmte Richtlinie das Steuerelement zum **Überprüfen von Aktivitäten exportieren** aus. Sie müssen über die Administratorrollen für den *globalen Administrator* oder die *Kommunikations Konformität* verfügen, um Prüfungsaktivitäten zu exportieren. Mit dieser Aktion wird eine Überwachungsdatei im CSV-Format generiert, die die folgenden Informationen enthält:
+
+|**Field**|**Details**|
+|:-----|:-----|
+| **CreationDate** | Das Datum, an dem die Überprüfungsaktivität in einer Richtlinie ausgeführt wurde. |
+| **UserIds** | Der Benutzer, der die Überprüfungsaktivität in einer Richtlinie ausgeführt hat. |
+| **Operations** | Die für die Richtlinie ausgeführten Überprüfungsvorgänge. |
+| **Auditdata** | Dieses Feld ist die Hauptdatenquelle für alle Aktivitäten zur Richtlinienüberprüfung. Alle Prüfaktivitäten werden aufgezeichnet und durch Kommatrennzeichen getrennt. |
 
 Sie können auch Überwachungsaktivitäten im einheitlichen Überwachungsprotokoll oder mit dem PowerShell [-Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) anzeigen.
 
