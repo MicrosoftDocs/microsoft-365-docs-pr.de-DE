@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Microsoft 365 Finanzdienstleistern bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521207"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597521"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -66,7 +66,7 @@ Teams können einen Raum für die Zusammenarbeit bereitstellen, um vertrauliche 
 
 Ein weiteres häufiges Szenario ist die Nutzung von Teams als „virtueller Datenraum“ zur sicheren Zusammenarbeit, inklusive der Speicherung und Verwaltung von Dokumenten. Teammitglieder und Syndikate im Investmentbanking, in der Vermögensverwaltung oder bei Private-Equity-Firmen können bei einem Geschäft oder einer Investition sicher zusammenarbeiten. Funktionsbereichsübergreifende Teams sind oft an der Planung und Erfüllung solcher Geschäfte beteiligt, und die Fähigkeit, Daten sicher auszutauschen und Unterhaltungen zu führen, ist eine Kernanforderung. Der sichere Austausch relevanter Dokumente mit externen Investoren ist ebenfalls eine wichtige Voraussetzung. Teams bietet einen sicheren und vollständig überprüfbaren Standort, von dem aus Investitionsdaten zentral gespeichert, geschützt und gemeinsam genutzt werden können.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Eine Gruppe von Büroangestellten diskutiert in ein Besprechung Bilder auf einem großen Bildschirm.":::
+![Eine Gruppe von Büroangestellten diskutiert in ein Besprechung Bilder auf einem großen Bildschirm](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: Verbessern Sie die Zusammenarbeit und reduzieren Sie das Risiko bei der Einhaltung von Vorschriften
 
@@ -156,7 +156,7 @@ Identitätsschutz nutzt das Wissen, das Microsoft aus seiner Position in Organis
 
 Identitätsschutz hilft Unternehmen, sich automatisch vor Identitätskompromittierungen zu schützen, indem sie die Vorteile der Cloud-Intelligenz nutzen, die durch erweiterte Erkennung auf der Grundlage von Heuristik, Benutzer- und Entitätsverhaltensanalysen (User and Entity Behavior Analytics, UEBA) und Machine Learning (ML) im gesamten Microsoft-Ökosystem ermöglicht wird.
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="Fünf Informationsmitarbeiter sehen zu, während ein anderer eine Präsentation hält.":::
+![Fünf Informationsmitarbeiter sehen zu, während ein anderer eine Präsentation gibt](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Identifizierung vertraulicher Daten und Verhinderung von Datenverlusten
 Microsoft 365 ermöglicht allen Organisationen die Identifizierung vertraulicher Daten innerhalb der Organisation durch eine Kombination leistungsstarker Funktionen, einschließlich:
@@ -178,7 +178,7 @@ Die Signale, die vom Identitätsschutz erzeugt und in diesen eingespeist werden,
 
 Identitätsschutz hilft Unternehmen, sich automatisch vor Identitätskompromittierungen zu schützen, indem sie die Vorteile der Cloud-Intelligenz nutzen, die durch erweiterte Erkennung auf der Grundlage von Heuristik, Benutzer- und Entitätsverhaltensanalysen (UEBA) und Machine Learning im gesamten Microsoft-Ökosystem ermöglicht wird.
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="Ein Informationsmitarbeiter wird vor einer großen Anzahl von Monitoren abgebildet.":::
+![Ein Informationsmitarbeiter wird vor einer großen Anzahl von Monitoren abgebildet](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>Die Burg verteidigen
 
@@ -199,7 +199,7 @@ Die Sicherheitsdienste von Microsoft 365 werden durch Intelligent Security Graph
 * Identifizieren und untersuchen Sie verdächtige Benutzeraktivitäten und fortgeschrittene Angriffe in der gesamten Abwehrkette.
 * Bereitstellen klarer Vorfallinformationen auf einer einfachen Zeitachse für eine schnelle Sichtung.
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="Die Büroangestellten treffen sich in einem kleinen Konferenzraum. Einer hält eine Präsentation.":::
+![Die Büroangestellten treffen sich in einem kleinen Konferenzraum. Einer hält eine Präsentation.](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>Verwalten von Daten und Datensätzen
 
@@ -285,7 +285,7 @@ Finanzinstitutionen sind in der Regel verpflichtet, eine Aufsichtsfunktion inner
  
 * [FINRA-Regel 3120 (Aufsichtskontrollsystem)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) schreibt vor, dass Firmen über ein System von Richtlinien und Verfahren der Aufsichtskontrolle (Supervisory Control Policies, SCP) verfügen müssen, das ihre schriftlichen Aufsichtsverfahren gemäß der Definition in Regel 3110 validiert. Die Unternehmen müssen nicht nur über WSPs verfügen, sondern auch über Richtlinien, die diese Verfahren jährlich testen, um ihre Fähigkeit zur Gewährleistung der Einhaltung der geltenden. Wertpapiergesetze und -vorschriften zu validieren. Zur Definition des Testumfangs können risikobasierte Methoden und Stichproben verwendet werden. Neben anderen Anforderungen verlangt diese Regel, dass Unternehmen der Geschäftsleitung einen Jahresbericht vorlegen, der eine Zusammenfassung der Testergebnisse und alle wesentlichen Ausnahmen oder geänderten Verfahren als Reaktion auf die Testergebnisse enthält.
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="Ein Büroangestellter sieht ein Diagramm und Tabellen auf einem Bildschirm, während andere sich im Hintergrund treffen.":::
+![Ein Büroangestellter sieht ein Diagramm und Tabellen auf einem Bildschirm, während andere sich im Hintergrund treffen.](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>Kommunikationscompliance
 
@@ -296,7 +296,7 @@ Die Kommunikationscompliance stellt Berichte zur Verfügung, die es ermöglichen
 
 Zusätzlich zur Einhaltung der FINRA-Regeln ermöglicht die Kommunikationscompliance Organisationen, die Kommunikation auf die Einhaltung anderer gesetzlicher Bestimmungen, Unternehmensrichtlinien und ethischer Standards zu überwachen. Die Kommunikationscompliance bietet integrierte Klassifizierer für Bedrohungen, Belästigungen und Schimpfwörter, die dazu beitragen, falsch-positive Ergebnisse bei der Überprüfung der Kommunikation zu reduzieren, wodurch die Prüfer während des Untersuchungs- und Abhilfeverfahrens Zeit sparen. Sie ermöglicht es Organisationen auch, Risiken zu reduzieren, indem sie die Kommunikation bei sensiblen Veränderungen, wie Fusionen und Übernahmen oder Führungswechsel, überwachen.
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="Ein Informationsmitarbeiter konzentriert sich auf einen Bildschirm.":::
+![Ein Informationsmitarbeiter konzentriert sich auf einen Bildschirm.](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>Schutz vor Datenexfiltration und Insider-Risiken
 
@@ -312,14 +312,14 @@ Beispielsweise kann das Insider-Risikomanagement in Microsoft 365 Signale vom Wi
 
 Das Insider-Risikomanagement in Microsoft 365 erhöht die Möglichkeiten von Organisationen zur Überwachung und Untersuchung von Insider-Risiken erheblich, während Organisationen gleichzeitig die Möglichkeit haben, die Datenschutzbestimmungen einzuhalten und etablierten Eskalationspfaden zu folgen, wenn Fälle ein Handeln auf höherer Ebene erfordern.
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="Ein Callcenter-Mitarbeiter, der in einer Kabine arbeitet, tippt, während er einen Bildschirm betrachtet.":::
+![Ein Callcenter-Mitarbeiter, der in einer Kabine arbeitet, tippt, während er einen Bildschirm betrachtet.](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>Einschränkungen für Mandanten
 Organisationen, die mit vertraulichen Daten umgehen und einen strikten Schwerpunkt auf Sicherheit legen, wollen in der Regel die Online-Ressourcen kontrollieren, auf die Benutzer zugreifen können. Gleichzeitig wollen sie eine sichere Zusammenarbeit durch Online-Dienste wie Office 365 ermöglichen. Folglich wird die Kontrolle der Office 365-Umgebungen, auf die Benutzer zugreifen können, zu einer Herausforderung, da nicht unternehmensinterne Office 365-Umgebungen dazu verwendet werden können, Daten von Unternehmensgeräten entweder böswillig oder versehentlich zu exfiltrieren. In der Regel schränken Organisationen die Domänen oder IP-Adressen ein, auf die Benutzer von Unternehmensgeräten aus zugreifen können. Aber das funktioniert nicht in einer Cloud-First-World, in der die Nutzer legitimerweise auf die Dienste von Office 365 zugreifen müssen.
 
 Microsoft 365 bietet dem Mandanten [Einschränkungen](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) die Möglichkeit, diese Herausforderung zu bewältigen. Einschränkungen der Mandanten können so konfiguriert werden, dass der Zugang von Mitarbeitern zu externen Office 365 Enterprise-Mandanten unter Verwendung von Rogue-Identitäten (Identitäten, die nicht Teil Ihres Unternehmensverzeichnisses sind) eingeschränkt wird. Heute gelten mandantenübergreifende Einschränkungen, die nur denjenigen Mandanten den Zugriff ermöglichen, die auf der von Ihnen konfigurierten Liste erscheinen. Microsoft arbeitet weiter an der Entwicklung dieser Lösung, um die Genauigkeit der Kontrolle zu erhöhen und den Schutz, den sie bietet, zu verbessern.
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="GRAFIK":::
+![GRAFIK](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>Schlussbemerkung
 

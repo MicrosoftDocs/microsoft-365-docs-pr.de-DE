@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Erfahren Sie, wie Microsoft 365 Unternehmen der Energiebranche bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit unterstützt und gleichzeitig Daten und Systeme sicher und gesetzeskonform hält
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521017"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597455"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Energiebranche
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Abbildung Metapher für eine globale Darstellung verschiedener Branchen, welche die Cloud nutzen":::
+![Illstrationsmetapher für eine globale Darstellung verschiedener Branchen, welche die Cloud nutzen](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>Einführung
 Die Energiewirtschaft versorgt die Gesellschaft mit Treibstoff und kritischer Infrastruktur, auf die sich die Menschen täglich verlassen. Zur Sicherstellung der Zuverlässigkeit von Infrastruktur im Zusammenhang mit Hochleistungs-Energiesystemen erlegen Behörden den Organisationen der Energiebranche strenge Normen auf. Diese regulatorischen Standards beziehen sich nicht nur auf die Erzeugung und Übertragung von Energie, sondern auch auf die Daten und die Kommunikation, die für den täglichen Betrieb von Energieunternehmen unverzichtbar sind. 
 
