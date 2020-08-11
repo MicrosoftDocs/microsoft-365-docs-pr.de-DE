@@ -21,12 +21,12 @@ description: Microsoft 365 Admin Center – erfahren Sie mehr über die Features
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015993"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602009"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuerungen im Microsoft 365 Admin Center
 
@@ -79,7 +79,7 @@ Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Admini
 
 Wir haben viele Administratoren gehört, dass Sie Informationen über Gruppen und deren Nutzung für Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können die Gruppenliste nun zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen**, und wählen Sie dann in der Befehlsleiste **Gruppen exportieren** aus.
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Center – Lösungen und Architekturen
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Lösungs- und Architektur-Center
 
 In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com](https://docs.microsoft.com) Namen " [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)" veröffentlicht, in der die technischen Anleitungen zum Verständnis, zur Planung und zur Implementierung integrierter Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zusammengefasst werden. In diesem Center finden Sie:
 
@@ -102,7 +102,7 @@ In diesem Monat haben wir eine neue Website mit dem [https://docs.microsoft.com]
 
 Nun, wir haben es geschafft! Wir haben den zweiten Schritt hin zu einer einheitlichen Rollen Erfahrung unternommen, und Sie können jetzt InTune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features wie die Suche nach Rollen und das Anzeigen von Rollen Berechtigungen nutzen. Dies bedeutet, dass Sie nicht zwei separate Tools zum Verwalten von Rollen für Microsoft 365 und InTune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, sehen Sie, dass auf der Seite "Rollen" zwei Pivots vorhanden sind: eine für Azure AD und eine für InTune.
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Rollen Seite mit ausgewähltem InTune-Pivot":::
+![Rollen Seite mit ausgewähltem InTune-Pivot](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>Nachrichten Center-Beiträge für Planer synchronisieren
 
@@ -162,7 +162,7 @@ Wir haben zwei Updates für Gruppen in diesem Monat:
 
 #### <a name="for-admins-and-business-owners"></a>Für Administratoren und Unternehmer
 
-- [Empower Your Small Business mit Remote-Arbeit](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Remotearbeit kann auch Ihrem Kleinunternehmen weiterhelfen](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Führen eines Remote-Kleinunternehmens](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Registrieren für Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Einrichten der zweistufigen Anmeldung](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -173,19 +173,19 @@ Wir haben zwei Updates für Gruppen in diesem Monat:
 
 Wir haben viel Feedback von Administratoren erhalten, wie schwer es ist, beim Hinzufügen von Benutzern Lizenzen zuzuweisen. Wir haben das erste Update für diesen Fix durchgeführt, und wir haben zu einem zuverlässigeren Behind-the-Scenes-Dienst migriert, um diese Anforderungen zu verarbeiten. Wenn etwas schief geht, erhalten Sie nun eine Fehlermeldung, mit der Sie es erneut versuchen können.
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Benutzer Bestätigungsseite mit dem Fehler hinzufügen.":::
+![Benutzer Bestätigungsseite mit dem Fehler hinzufügen.](../media/MAC-WN-ImprovedLicensing.png)
 
 ### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams-Startseite-Karte
 
 Mit dem Uptick in Teams-Nutzung erhalten einige Organisationen eine angeheftete dashboardkarte, die das Umwandeln von Teams auf mehr auffindbar macht. Die Karte enthält auch Links zu Schulungen und Dokumenten, die ihren org-Übergang zu Remote-Arbeit erleichtern. Wechseln Sie einfach zur **Start** Seite, um die neue Karte anzuzeigen.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams-Startseite-Karte":::
+![Microsoft Teams-Startseite-Karte](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassen des SharePoint Mobile App Designs in Ihrer Organisation
 
 Mit dem Microsoft 365 Admin Center können Sie nun das Design Ihrer Organisation in SharePoint Mobile App für IOS und SharePoint Mobile App für Android anpassen. Dieses Feature bietet bequem eine Mobile Intranet-APP, die mit Ihrem SharePoint Online für Mitarbeiter unterwegs übereinstimmen kann. Die Design Anpassung umfasst das Logobild, die Farbe der Navigationsleiste, Text-und Symbol Farben sowie Akzentfarben, wodurch die Erkennung vereinfacht wird.
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramm, das die Admin Center-Einstellungen dem Mobile App zuordnet.":::
+![Diagramm, das die Admin Center-Einstellungen dem Mobile App zuordnet.](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Verbesserungen am Assistenten zum Hinzufügen einer Gruppe
 
@@ -295,7 +295,7 @@ Wir beginnen mit dem Rollout der Möglichkeit, Ihre Zahlungsmethode von Kreditka
 
 Möchten Sie mehr darüber erfahren? [Ändern der Zahlungsmethode von per Kreditkarte zu per Bankkonto oder auf Rechnung](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>Globaler Leser
+### <a name="global-reader"></a>Globale Leseberechtigung
 
 Wir haben die Rolle des globalen Lesers in der [Oktober 2019-Ignite-Edition](#october-2019---ignite-edition)erwähnt, aber da Sie im allgemeinen weiter kommt, lassen Sie uns einige Details besprechen:
 

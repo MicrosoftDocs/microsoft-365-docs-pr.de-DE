@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c977aa3f57c981cdc29037ca6f9f7803b7accd03
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208911"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601897"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Eine Übersicht über die automatische Untersuchung und Reaktion (Air) in Microsoft 365
 
@@ -127,11 +127,11 @@ Zusätzlich zu den automatischen Untersuchungen, die durch eine Warnung ausgelö
 
 Nehmen wir beispielsweise an, dass Sie die **Malware** Ansicht im Threat Explorer verwenden. Mithilfe der Registerkarten unter dem Diagramm Wählen Sie die Registerkarte **e-Mail** aus. Wenn Sie ein oder mehrere Elemente in der Liste auswählen, wird die Schaltfläche **+ Aktionen** aktiviert. 
 
-:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorer mit ausgewählten Nachrichten":::
+![Explorer mit ausgewählten Nachrichten](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Über das Menü **Aktionen** können Sie **Untersuchung auslösen**auswählen.
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menü "Aktionen" für ausgewählte Nachrichten":::
+![Menü "Aktionen" für ausgewählte Nachrichten](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.
 

@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 3519b8a1ddcaae09779ae8761ac368e3bd84294f
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+localization_priority: None
+ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539876"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612490"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Arbeiten mit Themen im Themen Center (Vorschau)
 

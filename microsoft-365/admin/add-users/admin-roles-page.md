@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432111"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602093"
 ---
 # <a name="get-started-with-the-roles-page"></a>Erste Schritte mit der Seite "Rollen"
 
 Auf der Seite "Rollen" können Sie Benutzern Berechtigungen für Aufgaben in den Admin Centern erteilen. Auf diese Weise kann Ihre Organisation Aufgaben auf die entsprechenden Personen verteilen und Ihre Daten schützen.
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="Eine Abbildung, in der Administratorrollen angezeigt werden":::
+![Eine Abbildung, in der Administratorrollen angezeigt werden](../../media/roles-main-page.png)
 
 > [!TIP]
 > Sind Sie an detaillierten Rollenbeschreibungen interessiert? Überprüfen Sie die [Administrator Rollen Berechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) und [über Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
@@ -39,7 +39,7 @@ Auf der Seite "Rollen" können Sie Benutzern Berechtigungen für Aufgaben in den
 
 Sie können die Administratorliste sowie die Suche und den Filter nach Rolle exportieren.
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtern oder Importieren von Administratorrollen":::
+![Filtern oder Importieren von Administratorrollen](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -62,7 +62,7 @@ Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die e-Mail-Postfäc
 
 Zuweisen der globalen Administratorrolle zu Benutzern, die globalen Zugriff auf die meisten Verwaltungsfeatures und-Daten in Microsoft Online Services benötigen. Wenn Sie zu vielen Benutzern globalen Zugriff gewähren, besteht ein Sicherheitsrisiko, deshalb empfiehlt es sich, nur zwei bis vier globale Administratoren vorzusehen. Nur globale Administratoren können Kennwörter für alle Benutzer zurücksetzen und Domänen hinzufügen und verwalten. Sie können auch Dienstanforderungen für den Microsoft-Support öffnen und verwalten. Die Person, die sich für Microsoft Online Services angemeldet hat, wird automatisch zu einem globalen Administrator. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>Globaler Leser
+### <a name="global-reader"></a>Globale Leseberechtigung
 
 Weisen Sie die Rolle "globaler Leser Administrator" den Benutzern zu, die Administrator Features und-Einstellungen in allen admin Centern anzeigen müssen, die der globale Administrator anzeigen kann. Die globale Leser-Administratorrolle kann keine Einstellungen bearbeiten. [Weitere Informationen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -96,7 +96,7 @@ Im Admin Center:
 
 - Wählen Sie bis zu 3 Rollen aus, und wählen Sie **Rollen vergleichen** aus, um die Berechtigungen für jede Rolle anzuzeigen.
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="Eine Abbildung, die einen Vergleich der Administratorrollen zeigt":::
+![Eine Abbildung, die einen Vergleich der Administratorrollen zeigt](../../media/compare-roles-list.png)
 
 ::: moniker-end
 

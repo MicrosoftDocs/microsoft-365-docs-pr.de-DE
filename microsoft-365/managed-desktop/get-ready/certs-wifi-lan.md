@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c7c57861986d275165484ae726140720a75da88e
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7a0af5db4e18bc46436ace6f9fefefc18f0ccd68
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530031"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608275"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop  
  

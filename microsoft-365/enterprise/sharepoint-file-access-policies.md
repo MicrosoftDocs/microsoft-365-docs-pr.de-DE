@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222685"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617186"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen für das Sichern von SharePoint-Websites und-Dateien
 
@@ -29,13 +29,13 @@ In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Ger�
 
 Diese Empfehlungen basieren auf drei verschiedenen Ebenen von Sicherheit und Schutz für SharePoint-Dateien, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: **Baseline**, **sensibel**und **streng reguliert**. Weitere Informationen zu diesen Sicherheitsebenen und zu den empfohlenen Clientbetriebssystemen, auf die diese Empfehlungen verweisen, finden Sie in [der Übersicht](microsoft-365-policies-configurations.md).
 
-Zusätzlich zur Implementierung dieser Anleitung müssen Sie sicherstellen, dass Sie SharePoint-Websites mit der richtigen Schutz Menge konfigurieren, einschließlich der Festlegung geeigneter Berechtigungen für vertrauliche und stark regulierte Inhalte. Weitere Informationen zum Erstellen von Websites für den grundlegenden, vertraulichen und hoch regulierten Schutz finden Sie unter [Secure SharePoint Online Sites and Files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).
+Zusätzlich zur Implementierung dieser Anleitung müssen Sie sicherstellen, dass Sie SharePoint-Websites mit der richtigen Schutz Menge konfigurieren, einschließlich der Festlegung geeigneter Berechtigungen für vertrauliche und stark regulierte Inhalte.
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aktualisieren allgemeiner Richtlinien, um SharePoint und OneDrive für Unternehmen einzubeziehen
 
 Das folgende Diagramm veranschaulicht die empfohlenen Richtlinien für den Schutz von Dateien in SharePoint Online und OneDrive für Unternehmen. Es gibt an, welche Richtlinien aktualisiert oder neu erstellt werden sollen, um den Schutz für SharePoint Online und OneDrive für Unternehmen hinzuzufügen.
 
-![Zusammenfassung der Richtlinien für SharePoint Online und OneDrive](../media/identity-access-ruleset-sharepoint.png)
+[![Zusammenfassung der Richtlinien für SharePoint Online und OneDrive ](../media/identity-access-ruleset-sharepoint.png)](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
 Wenn Sie SharePoint Online beim Erstellen der allgemeinen Richtlinien einbezogen haben, müssen Sie nur die neuen Richtlinien erstellen. Beim Konfigurieren von Regeln für bedingten Zugriff enthält SharePoint Online OneDrive für Unternehmen.
 
@@ -77,7 +77,7 @@ Es ist wichtig zu wissen, dass die Berechtigungen für SharePoint-Websites in de
 
 Die folgende Abbildung enthält ein Beispiel dafür, wie SharePoint-Gerätezugriffs Richtlinien den Zugriff auf Websites schützen.
 
-![Schützen von Websites durch SharePoint-Gerätezugriffs Richtlinien](../media/SharePoint-rules-scenario.png)
+[![Schützen von Websites ](../media/SharePoint-rules-scenario.png) durch SharePoint-Gerätezugriffs Richtlinien](../media/SharePoint-rules-scenario.png#lightbox)
 
 In der Abbildung sehen Sie Folgendes:
 
@@ -86,6 +86,4 @@ In der Abbildung sehen Sie Folgendes:
 - Wenn James auf eine vertrauliche Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, das für Basisbenutzer zulässig ist, erhält er aufgrund der für diese Website konfigurierten Gerätezugriffs Richtlinie nur Browser Zugriff auf die vertrauliche Website.
 - Wenn James auf eine stark regulierte Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, wird er aufgrund der für diese Website konfigurierten Zugriffsrichtlinie blockiert. Er kann nur über seinen verwalteten und kompatiblen PC auf diese Website zugreifen.
 
-## <a name="next-steps"></a>Nächste Schritte
 
-[Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552434"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608333"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die 
 
 Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verschiedenen Ereignissen und Systemzuständen zu suchen, darunter mutmaßliche Sicherheitsvorfälle und falsch konfigurierte Computer, und auf diese zu reagieren.
 
-Im Microsoft 365 Security Center unterstützt Advanced Hunting Abfragen, die Daten aus verschiedenen Arbeitsbereichen durchsuchen, einschließlich Daten zu Geräten, e-Mails, Apps und Identitäten von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
+Das Feature ähnelt der [erweiterten Suche in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), mit der Ausnahme, dass Advanced Hunting im Microsoft 365 Security Center Abfragen unterstützt, die Daten aus verschiedenen Arbeitsbereichen betrachten, einschließlich Daten zu Geräten, e-Mails, Apps und Identitäten von Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security und Azure ATP. Um die erweiterte Suche verwenden zu können, [aktivieren Sie Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 
@@ -66,7 +66,7 @@ Erweiterte Jagd Daten können in zwei verschiedene Typen kategorisiert werden, d
 ## <a name="related-topics"></a>Verwandte Themen
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
-- [Ausführen von Aktionen für Abfrageergebnisse](advanced-hunting-take-action.md)
+- [Ausführen von Aktionen in Abfrageergebnissen](advanced-hunting-take-action.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
 - [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

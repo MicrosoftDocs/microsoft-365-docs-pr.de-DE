@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Übersicht über das Wissensmanagement in Project Cortex.
-ms.openlocfilehash: 99b0d0ece9ef8271666b1978db7947f3e3f2a4e8
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540073"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612596"
 ---
 # <a name="knowledge-management-0verview-preview"></a>Knowledge Management 0verview (Vorschau)
 
