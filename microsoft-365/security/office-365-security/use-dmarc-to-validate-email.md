@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: adc213ec5c47184f997a812425e53a61d7ac2da3
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016321"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601873"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 
@@ -227,7 +227,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 Alle bzw. die meisten E-Mail-Nachrichten werden zuerst an „mail.contoso.com“ weitergeleitet, da dies der primäre MX-Eintrag ist. Anschließend werden die E-Mail-Nachrichten an EOP weitergeleitet. In einigen Fällen führen Sie EOP möglicherweise gar nicht als MX-Eintrag auf, sondern verbinden einfach Connectors zum Weiterleiten von E-Mail-Nachrichten. EOP muss nicht der erste Eintrag sein, damit die DMARC-Validierung durchgeführt werden kann. Es stellt lediglich die Validierung sicher, da wir nicht sicher sein können, dass alle lokalen bzw. Nicht-O365-Server alle DMARC-Prüfungen durchführen.  DMARC kann beim Einrichten des DMARC-TXT-Eintrags für die Domäne eines Kunden (nicht den Server) erzwungen werden, aber der empfangende Server muss die Erzwingung tatsächlich ausführen.  Wenn Sie EOP als Empfangsserver einrichten, führt EOP die DMARC-Erzwingung durch.
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Eine Grafik zur Problembehebung für DMARC, bereitgestellt von Daniel Mande":::
+![Eine Grafik zur Problembehebung für DMARC, bereitgestellt von Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

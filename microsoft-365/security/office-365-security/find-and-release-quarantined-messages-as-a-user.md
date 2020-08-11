@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
-ms.openlocfilehash: 37392034f6aef3b40dd70ceb10ec41c20abfacbf
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: afcbcfed4b17b2751759850e339568f5b9a46b6f
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527458"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608311"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -38,9 +38,9 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
 
 - Administratoren können konfigurieren, wie lange Nachrichten isoliert werden, bevor sie endgültig gelöscht werden (Anti-Spam-Richtlinien). Nachrichten, die aus der Quarantäne abgelaufen sind, können nicht wiederhergestellt werden. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
-- Administratoren können auch [Spam-Benachrichtigungen für Endbenutzer](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in Anti-Spam-Richtlinien aktivieren. Benutzer können in Quarantäne gestellte Spamnachrichten, aber nicht in Quarantäne gestellte Phishingnachrichten, direkt aus diesen Benachrichtigungen heraus freigeben. Weitere Informationen finden Sie unter [Spam-Benachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Administratoren können auch [Spam-Benachrichtigungen für Endbenutzer](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in Anti-Spam-Richtlinien aktivieren. Benutzende können in Quarantäne befindliche Spamnachrichten direkt über diese Benachrichtigungen freigeben. Benutzende können die in Quarantäne befindlichen Phishing-Nachrichten (keine Phishing-Nachrichten mit hohem Sicherheitsrisiko) direkt aus diesen Benachrichtigungen überprüfen. Weitere Informationen finden Sie unter [Spam-Benachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Nachrichten, die wegen hoher Phishingwahrscheinlichkeit, Schadsoftware oder durch Nachrichtenflussregeln (auch als Transportregeln bekannt) unter Quarantäne gestellt wurden, sind nur für Administratoren verfügbar. Phishing-Nachrichten können von Benutzern überprüft, aber nur von Administratoren freigegeben werden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP](manage-quarantined-messages-and-files.md).
+- Nachrichten, die wegen Phishing mit hohem Sicherheitsrisiko, Malware oder durch Mail-Flow-Regeln (auch als Transportregeln bekannt) unter Quarantäne gestellt wurden, sind nur für Admins verfügbar und für Benutzende nicht sichtbar. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP](manage-quarantined-messages-and-files.md).
 
 - Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden.
 
