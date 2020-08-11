@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503036"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601998"
 ---
 # <a name="double-key-encryption-dke"></a>Doppelschlüssel Verschlüsselung (DKE)
 
@@ -136,13 +136,13 @@ Die folgenden Anweisungen sind für Benutzer mit unerfahrenem git oder Visual St
 
 1. Klicken Sie auf der rechten Seite des Bildschirms auf **Code**. Ihre Version der Benutzeroberfläche zeigt möglicherweise eine Schaltfläche " **Klonen" oder "herunterladen** ". Wählen Sie dann in der Dropdownliste, die angezeigt wird, das Symbol Kopieren aus, um die URL in Ihre Zwischenablage zu kopieren.
 
-    Zum Beispiel:
+    Beispiel:
 
-    :::image type="content" source="../media/dke-clone.png" alt-text="Klonen des Double Key-Verschlüsselungsdienst-Repositorys von GitHub":::
+   ![Klonen des Double Key-Verschlüsselungsdienst-Repositorys von GitHub](../media/dke-clone.png)
 
-3. Wählen Sie in Visual Studio Code **View** die Option \> **Befehls Palette** anzeigen aus, und wählen Sie **git: Clone**aus. Um zur Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, `git: clone` um die Einträge zu filtern, und wählen Sie Sie dann im Dropdown aus. Zum Beispiel:
+3. Wählen Sie in Visual Studio Code **View** die Option \> **Befehls Palette** anzeigen aus, und wählen Sie **git: Clone**aus. Um zur Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, `git: clone` um die Einträge zu filtern, und wählen Sie Sie dann im Dropdown aus. Beispiel:
 
-    :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code git: Clone Option":::
+   ![Visual Studio Code git: Clone Option](../media/dke-vscode-clone.png)
 
 4. Fügen Sie in das Textfeld die URL ein, die Sie aus git kopiert haben, und wählen Sie **aus GitHub Klonen aus**.
 
@@ -150,9 +150,9 @@ Die folgenden Anweisungen sind für Benutzer mit unerfahrenem git oder Visual St
 
     Das Repository wird in Visual Studio Code geöffnet und zeigt den aktuellen git-Zweig unten links an. Die Verzweigung sollte " **Master**" sein.
 
-    Zum Beispiel:
+    Beispiel:
 
-    :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code Master Verzweigung":::
+   ![Visual Studio Code Master Verzweigung](../media/dke-vscode-master.png)
 
 6. Wählen Sie das Wort **Master aus,** und wählen Sie dann in der Liste der Verzweigungen **public_preview** aus.
 
@@ -170,7 +170,7 @@ Um den DKE-Dienst bereitzustellen, müssen Sie die folgenden Arten von Anwendung
 
 Sie ändern Anwendungseinstellungen in der Datei appsettings.js. Diese Datei befindet sich im DoubleKeyEncryptionService Repo, das Sie lokal unter DoubleKeyEncryptionService\src\customer-Key-Store. geklont haben. Beispielsweise können Sie in Visual Studio Code die Datei wie in der folgenden Abbildung gezeigt durchsuchen.
 
-:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="Suchen der appsettings.jsDatei für DKE.":::
+![Suchen der appsettings.jsDatei für DKE.](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>Wichtige Zugriffseinstellungen
 
@@ -184,7 +184,7 @@ Wählen Sie aus, ob e-Mail-oder Rollenautorisierung verwendet werden soll. DKE u
 
 1. Öffnen Sie die Datei **appsettings.jsauf** , und suchen Sie die `AuthorizedEmailAddress` Einstellung.
 
-2. Fügen Sie die e-Mail-Adressen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere e-Mail-Adressen mit doppelten Anführungszeichen und Kommas. Zum Beispiel:
+2. Fügen Sie die e-Mail-Adressen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere e-Mail-Adressen mit doppelten Anführungszeichen und Kommas. Beispiel:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -200,19 +200,19 @@ Wählen Sie aus, ob e-Mail-oder Rollenautorisierung verwendet werden soll. DKE u
 
 Dieses Bild zeigt die **appsettings.jsauf** Datei, die für die e-Mail-Autorisierung ordnungsgemäß formatiert ist.
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="Die appsettings.jsder Datei mit e-Mail-Autorisierungsmethode":::
+   ![Die appsettings.jsder Datei mit e-Mail-Autorisierungsmethode](../media/dke-email-accesssetting.png)
 
 **So legen Sie wichtige Zugriffseinstellungen für DKE mithilfe der Rollenautorisierung fest**
 
 1. Öffnen Sie die Datei **appsettings.jsauf** , und suchen Sie die `AuthorizedRoles` Einstellung.
 
-2. Fügen Sie die Active Directory Gruppennamen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere Gruppennamen mit doppelten Anführungszeichen und Kommas. Zum Beispiel:
+2. Fügen Sie die Active Directory Gruppennamen hinzu, die Sie autorisieren möchten. Trennen Sie mehrere Gruppennamen mit doppelten Anführungszeichen und Kommas. Beispiel:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Suchen `LDAPPath` Sie die Einstellung, und fügen Sie die Active Directory Domäne hinzu. Zum Beispiel:
+3. Suchen `LDAPPath` Sie die Einstellung, und fügen Sie die Active Directory Domäne hinzu. Beispiel:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -222,7 +222,7 @@ Dieses Bild zeigt die **appsettings.jsauf** Datei, die für die e-Mail-Autorisie
 
 Dieses Bild zeigt die **appsettings.jsauf** Datei, die für die Rollenautorisierung ordnungsgemäß formatiert ist.
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.jsfür die Datei mit der Rollen Autorisierungsmethode":::
+   ![appsettings.jsfür die Datei mit der Rollen Autorisierungsmethode](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>Mandanten-und Schlüsseleinstellungen
 
@@ -232,7 +232,7 @@ DKE-Mandanten-und Key-Einstellungen befinden sich in der Datei **appsettings.js*
 
 1. Öffnen Sie die Datei **appsettings.js** .
 
-2. Suchen `ValidIssuers` Sie die Einstellung, und ersetzen `<tenantid>` Sie Sie durch ihre Mandanten-ID. Sie können die Mandanten-ID ermitteln, indem Sie zum Azure-Portal wechseln und die [Mandanten Eigenschaften](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)anzeigen. Zum Beispiel:
+2. Suchen `ValidIssuers` Sie die Einstellung, und ersetzen `<tenantid>` Sie Sie durch ihre Mandanten-ID. Sie können die Mandanten-ID ermitteln, indem Sie zum Azure-Portal wechseln und die [Mandanten Eigenschaften](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)anzeigen. Beispiel:
 
    ```json
    "ValidIssuers": [
@@ -240,7 +240,7 @@ DKE-Mandanten-und Key-Einstellungen befinden sich in der Datei **appsettings.js*
    ]
    ```
 
-Suchen Sie nach der `JwtAudience` . Ersetzen Sie `<yourhostname>` durch den Hostnamen des Computers, auf dem der DKE-Dienst ausgeführt wird. Zum Beispiel:
+Suchen Sie nach der `JwtAudience` . Ersetzen Sie `<yourhostname>` durch den Hostnamen des Computers, auf dem der DKE-Dienst ausgeführt wird. Beispiel:
 
 
 
@@ -252,7 +252,7 @@ Suchen Sie nach der `JwtAudience` . Ersetzen Sie `<yourhostname>` durch den Host
 
 Dieses Bild zeigt das richtige Format für Mandanten-und Tasteneinstellungen in **appsettings.jsauf**. `LDAPPath`ist für die Rollenautorisierung konfiguriert.
 
-:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Zeigt die richtigen Mandanten-und Schlüsseleinstellungen für DKE in der Datei appsettings.js.":::
+![Zeigt die richtigen Mandanten-und Schlüsseleinstellungen für DKE in der Datei appsettings.js.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>Generieren von Test Schlüsseln
 
@@ -311,7 +311,7 @@ So generieren Sie Schlüssel:
 
    Die Endergebnisse sollten etwa wie folgt aussehen.
 
-   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="Startup.cs-Datei für die öffentliche Vorschau":::
+   ![Startup.cs-Datei für die öffentliche Vorschau](../media/dke-startupcs-usetestkeys.png)
 
 Jetzt sind Sie fertig, um [Ihr DKE-Projekt zu erstellen](#build-the-project).
 
@@ -325,15 +325,15 @@ Verwenden Sie die folgenden Anweisungen, um das DKE-Projekt lokal zu erstellen:
 
    Wenn keine Build-Tasks gefunden werden, wählen Sie Create **Task konfigurieren** aus, und erstellen Sie wie folgt einen für .net Core.
 
-   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text="Konfigurieren fehlender Build-Aufgabe für .net":::
+   ![Konfigurieren fehlender Build-Aufgabe für .net](../media/dke-configurebuildtask.png)
 
    1. Wählen Sie **tasks.jsaus Vorlage erstellen aus**.
 
-   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="Erstellen tasks.jsDatei aus der Vorlage für DKE":::
+   ![Erstellen tasks.jsDatei aus der Vorlage für DKE](../media/dke-createtasksjsonfromtemplate.png)
 
    2. Wählen Sie in der Liste der Vorlagentypen **.net Core**aus.
 
-   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="Erstellen tasks.jsDatei aus der Vorlage für DKE":::
+   ![Erstellen tasks.jsDatei aus der Vorlage für DKE](../media/dke-tasksjsontemplate.png)
 
    3. Suchen Sie im Abschnitt erstellen nach dem Pfad zur Datei **customerkeystore. csproj** . Wenn er nicht vorhanden ist, fügen Sie die folgende Reihe hinzu:
 
@@ -349,7 +349,7 @@ Verwenden Sie die folgenden Anweisungen, um das DKE-Projekt lokal zu erstellen:
 
 2. Wählen **Run** Sie \> **Start Debuggen** ausführen aus, um den Prozess zu debuggen. Wenn Sie zur Auswahl einer Umgebung aufgefordert werden, wählen Sie **.net Core**aus.
 
-Der .net Core-Debugger wird normalerweise in "'" gestartet https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 und ein Schrägstrich (/) und der Name des Schlüssels angefügt. Zum Beispiel:
+Der .net Core-Debugger wird normalerweise in "'" gestartet https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 und ein Schrägstrich (/) und der Name des Schlüssels angefügt. Beispiel:
 
 ```https
 https://localhost:5001/TestKey1
@@ -373,9 +373,9 @@ Zum Veröffentlichen des Schlüsselspeichers erstellen Sie eine Azure-App-Dienst
 
     - Wählen Sie für **veröffentlichen**den **Code**aus, und wählen Sie für **Laufzeitstapel** **.net Core 3,1**aus.
 
-    Zum Beispiel:
+    Beispiel:
 
-    :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="Hinzufügen des App-Diensts":::
+   ![Hinzufügen des App-Diensts](../media/dke-azure-add-app-service.png)
 
 1. Wählen Sie unten auf der Seite **überprüfen + erstellen**aus, und wählen Sie dann **Hinzufügen**aus.
 
@@ -420,9 +420,9 @@ DKE wird bereitgestellt, und Sie können zu den Test Schlüsseln navigieren, die
 
 1. Kopieren Sie die angezeigten Verbindungszeichenfolgen in eine lokale Datei. Sie verwenden diese Zeichenfolgen, um eine Verbindung zum Webdienst des Webanwendungs herzustellen und Dateien über FTP hochzuladen.
 
-    Zum Beispiel:
+    Beispiel:
 
-    :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="Kopieren von Verbindungszeichenfolgen aus dem FTP-Dashboard":::
+   ![Kopieren von Verbindungszeichenfolgen aus dem FTP-Dashboard](../media/dke-ftp-dashboard.png)
 
 1. Wechseln Sie in der CodeBase für den Schlüsselspeicher zum **Verzeichnis Customer-Key-store\src\customer-Key-Store**.
 
@@ -444,11 +444,11 @@ DKE wird bereitgestellt, und Sie können zu den Test Schlüsseln navigieren, die
 
 Nachdem Sie DKE mit einer der oben beschriebenen Methoden bereitgestellt haben, überprüfen Sie die Bereitstellung und die Schlüsselspeicher Einstellungen.
 
-Ausführen
+Führen Sie  aus.
 
 src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/MyKey
 
-Zum Beispiel:
+Beispiel:
 
 key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
@@ -468,9 +468,9 @@ So registrieren Sie Ihren Schlüsselspeicher:
 
     Wenn Sie Microsoft Azure mit einer nicht benutzerdefinierten Domäne wie **onmicrosoft.com**verwenden, wählen Sie **Konten nur in diesem Organisations Verzeichnis aus (nur Microsoft – einzelner Mandant).**
 
-    Zum Beispiel:
+    Beispiel:
 
-    :::image type="content" source="../media/dke-app-registration.png" alt-text="Neue APP-Registrierung":::
+   ![Neue APP-Registrierung](../media/dke-app-registration.png)
 
 4. Wählen Sie unten auf der Seite **registrieren** aus, um die neue APP-Registrierung zu erstellen.
 
@@ -526,9 +526,9 @@ Ihr DKE-Schlüsselspeicher ist jetzt registriert. Fahren Sie mit dem [Erstellen 
 
 Erstellen Sie im Microsoft 365 Compliance Center eine neue Sensitivitäts Bezeichnung, und wenden Sie die Verschlüsselung wie sonst an. Wählen Sie **Doppelschlüssel Verschlüsselung verwenden** aus, und geben Sie die Endpunkt-URL für Ihren Schlüssel ein.
 
-Zum Beispiel:
+Beispiel:
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="Wählen Sie Doppelschlüssel Verschlüsselung im Microsoft 365 Compliance Center verwenden aus.":::
+![Wählen Sie Doppelschlüssel Verschlüsselung im Microsoft 365 Compliance Center verwenden aus.](../media/dke-use-dke.png)
 
 Alle DKE-Bezeichnungen, die Sie hinzufügen, werden für Benutzer in den neuesten Versionen von Microsoft 365 apps for Enterprise angezeigt.
 
