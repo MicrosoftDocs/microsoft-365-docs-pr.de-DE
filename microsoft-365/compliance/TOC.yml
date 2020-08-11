@@ -261,20 +261,22 @@
       items:
         - name: Übersicht über das Archivieren von Drittanbieterdaten
           href: archiving-third-party-data.md
-        - name: Archivieren von Bloomberg-Nachrichtendaten (Vorschau)
-          href: archive-bloomberg-message-data.md
-        - name: Archivieren von Facebook-Daten (Vorschau)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: Importieren von HR-Daten (Vorschau)
-          href: import-hr-data.md
-        - name: Archivieren von ICE Chat-Daten (Vorschau)
-          href: archive-icechat-data.md
-        - name: Archivieren von Instant Bloomberg-Daten
-          href: archive-instant-bloomberg-data.md
-        - name: Archivieren von LinkedIn-Daten
-          href: archive-linkedin-data.md
-        - name: Archivieren von Twitter-Daten (Vorschau)
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft-Datenkonnektoren
+          items:
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md
+            - name: Facebook Business
+              href: archive-facebook-data-with-sample-connector.md
+            - name: Personaldaten
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
         - name: Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
           href: work-with-partner-to-archive-third-party-data.md
         - name: Nach Drittanbieterdaten suchen
