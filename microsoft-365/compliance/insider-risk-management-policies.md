@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199538"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632174"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für Insider-Risikomanagement
 
@@ -75,7 +75,7 @@ Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Orga
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Datenlecks nach Prioritäts Benutzern (Vorschau)
 
-Das Schützen von Daten und das verhindern von Datenverlusten für Benutzer in Ihrer Organisation hängt möglicherweise von ihrer Position, dem Grad des Zugriffs auf vertrauliche Informationen oder der Risiko Historie ab. Datenlecks können eine versehentliche Übernutzung hoch vertraulicher Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. In Verbindung mit einer zugewiesenen DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) beginnt diese Vorlage mit der Bewertung von Echt Zeit Erkennungen verdächtiger Aktivitäten und einer erhöhten Wahrscheinlichkeit von Warnungen und Warnungen bei Insider Risiken mit einem höheren Schweregrad. Prioritäts Benutzer sind im Bereich Einstellungen für Insider Risikoverwaltung in Prioritäts Benutzergruppen definiert. Link hinzufügen
+Das Schützen von Daten und das verhindern von Datenverlusten für Benutzer in Ihrer Organisation hängt möglicherweise von ihrer Position, dem Grad des Zugriffs auf vertrauliche Informationen oder der Risiko Historie ab. Datenlecks können eine versehentliche Übernutzung hoch vertraulicher Informationen außerhalb Ihrer Organisation oder Datendiebstahl mit böswilliger Absicht umfassen. In Verbindung mit einer zugewiesenen DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) beginnt diese Vorlage mit der Bewertung von Echt Zeit Erkennungen verdächtiger Aktivitäten und einer erhöhten Wahrscheinlichkeit von Warnungen und Warnungen bei Insider Risiken mit einem höheren Schweregrad. Prioritäts Benutzer sind im Bereich Einstellungen für Insider Risikoverwaltung in [Prioritäts Benutzergruppen](insider-risk-management-settings.md#priority-user-groups-preview) definiert.
 
 Wie bei der **Vorlage "allgemeine Datenlecks**" müssen Sie eine DLP-Richtlinie zum Auslösen von Indikatoren in der Insider Risiko Richtlinie für Warnungen mit hohem Schweregrad in Ihrer Organisation zuweisen. Beachten Sie beim Erstellen einer Richtlinie mit dieser Vorlage die Richtlinien Richtlinien für Datenlecks. Darüber hinaus müssen Sie die Prioritäts Benutzergruppen, die in den Einstellungen für die Priorität " **Insider Risk Management**" erstellt wurden,  >  **Settings**  >  **Priority user groups** der Richtlinie zuweisen.
 

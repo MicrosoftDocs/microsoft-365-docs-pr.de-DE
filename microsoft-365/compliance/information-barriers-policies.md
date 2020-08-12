@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: be86816c559d0ac1873618cd51baa2ac24fb2db8
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024695"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632096"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -79,7 +79,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
    1. Führen Sie die folgenden PowerShell-Cmdlets aus:
 
       ```powershell
-      Login-AzAccount 
+      Connect-AzureAD 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -285,7 +285,7 @@ Contoso verfügt über fünf Abteilungen: Personal, Vertrieb, Marketing, Forschu
 |Segment  |Kann sprechen mit  |Kann nicht sprechen mit  |
 |---------|---------|---------|
 |Personal     |Alle         |(keine Beschränkungen)         |
-|Vertrieb     |HR, Marketing, Produktion         |Forschung         |
+|Vertrieb     |HR, Marketing, Produktion         |Recherche         |
 |Marketing     |Alle         |(keine Beschränkungen)         |
 |Forschung     |HR, Marketing, Produktion        |Vertrieb     |
 |Fertigung |HR, Marketing |Andere Personen als HR oder Marketing |

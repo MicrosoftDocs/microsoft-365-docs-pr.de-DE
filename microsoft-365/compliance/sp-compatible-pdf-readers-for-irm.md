@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: In diesem Artikel erfahren Sie, wie Sie PDF-Dokumente, die in IRM-geschützte Bibliotheken hochgeladen und in Microsoft SharePoint 2013 heruntergeladen wurden, in die Verwaltung von Informationsrechten schützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d39b59788425eec267adba057f9361599a2b06cc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8f8f9e567482a2e5a6238aaefab7329d7693ae17
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819165"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635011"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint-kompatible PDF-Leser, die Microsoft Information Rights Management-Dienste unterstützen
 
@@ -32,14 +32,13 @@ Um PDF-Dateien in Bibliotheken zu verwenden, die der Besitzer mit IRM geschützt
   
 |**Betriebssystem**|**Kompatible Leser**|**Link zum Download**|
 |:-----|:-----|:-----|
-|Windows Vista  <br/> |Foxit-Leser  <br/> NitroPDF  <br/> |[Foxit Reader herunterladen](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
-|Windows 7  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
-|Windows 8 (klassischer Modus)  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
-|Windows 8.1  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
-|Windows 10  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
+|Windows Vista  <br/> |Foxit-Leser  <br/> NitroPDF  <br/> |[Foxit Reader herunterladen](https://www.foxitsoftware.com/downloads/#Foxit-PhantomPDF-Business/) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
+|Windows 7  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://www.foxitsoftware.com/downloads/#Foxit-PhantomPDF-Business/) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
+|Windows 8 (klassischer Modus)  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://www.foxitsoftware.com/downloads/#Foxit-PhantomPDF-Business/) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
+|Windows 8.1  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://www.foxitsoftware.com/downloads/#Foxit-PhantomPDF-Business/) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
+|Windows 10  <br/> |Azure Information Protection-App  <br/> Foxit-Leser  <br/> NitroPDF  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [Foxit Reader herunterladen](https://www.foxitsoftware.com/downloads/#Foxit-PhantomPDF-Business/) <br/> [NitroPDF herunterladen](https://www.gonitro.com/pdf-reader) <br/> |
 |Android  <br/> |Azure Information Protection-App  <br/> Foxit-MobilePDF mit RMS  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [Foxit MobilePDF kaufen](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
 |Windows Phone  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |
 |MacOS  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |
 |IOS  <br/> |Azure Information Protection-App  <br/> Foxit-MobilePDF mit RMS  <br/> |[Download Azure Information Protection-App](https://go.microsoft.com/fwlink/?linkid=836828) <br/> [Foxit MobilePDF kaufen](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
    
-

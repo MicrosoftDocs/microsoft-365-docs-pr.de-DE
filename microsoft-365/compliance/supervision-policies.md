@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502926"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632106"
 ---
 # <a name="supervision-policies"></a>Aufsichtsrichtlinien
 
@@ -159,7 +159,7 @@ Das Modell bietet keine erschöpfende Liste der beleidigenden Sprache. Außerdem
 
 Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
 
-|**Type**|**Beschreibung**|
+|**Typ**|**Beschreibung**|
 |:-----|:-----|
 | **Weltlichkeiten** | Ausdrücke, die die meisten Menschen in Verlegenheit bringen. |
 | **Bögen** | Ausdrücke, die Vorurteile gegenüber bestimmten Gruppen (beispielsweise Rasse, ethnische Zugehörigkeit, sexuelle Orientierung, Behinderung) Ausdrücken. |
@@ -193,7 +193,7 @@ Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu üb
 
 Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall wären also die folgenden drei Bedingungen erfüllt:
   
-- **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade"
+- **Nachricht enthält eines dieser Wörter**mit dem Stichwort "Trade"
 
 - Die **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
 

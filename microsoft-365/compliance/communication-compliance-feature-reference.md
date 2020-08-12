@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597554"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632128"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zur Kommunikation Compliance-Feature
 
@@ -72,7 +72,7 @@ Bevor Sie mit der Kommunikationscompliance beginnen, müssen Sie feststellen, we
 
 ## <a name="reviewers"></a>Prüfer
 
-Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Aalle-Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und entweder der *Kommunikations Kompatibilitätsanalyse* oder den unter Suchrollen für die *Kommunikations Konformitätsprüfung* zugewiesen sein müssen. Bearbeiter (entweder Analysten oder Ermittler) müssen auch die *Verwaltungsrolle "Communication Compliance Case* " zugewiesen haben. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
+Wenn Sie eine Kommunikations Konformitätsrichtlinie erstellen, müssen Sie ermitteln, wer die Nachrichten der überwachten Benutzer überprüft. In der Richtlinie identifizieren die E-Mail-Adressen der Benutzer Einzelpersonen oder Personengruppen, welche die überwachte Kommunikation überprüfen sollen. Alle Bearbeiter müssen über Postfächer verfügen, die auf Exchange Online gehostet werden und entweder der *Kommunikations Konformitätsanalyse* oder der *Compliance-Ermittlungs* Rolle "Kommunikation" zugewiesen sein müssen. Bearbeiter (entweder Analysten oder Ermittler) müssen auch die *Verwaltungsrolle "Communication Compliance Case* " zugewiesen haben. Wenn Bearbeiter einer Richtlinie hinzugefügt werden, erhalten Sie automatisch eine e-Mail-Nachricht, die Sie über die Zuweisung zur Richtlinie benachrichtigt und Links zu Informationen über den Überprüfungsprozess enthält.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
@@ -108,8 +108,8 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
 - **Drittanbieterquellen**: Sie können Kommunikationen aus Drittanbieterquellen nach Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden. Connectors unterstützen die folgenden Drittanbieterressourcen:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg-Nachricht](archive-bloomberg-message-data.md)
-    - [Ice-Chat](archive-icechat-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 Sie müssen einen Drittanbieter-Connector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikations Konformitätsrichtlinie zuweisen können. Im Abschnitt " **Drittanbieterquellen** " des Assistenten für die Kommunikation mit Kompatibilitätsrichtlinien werden derzeit konfigurierte Connectors von Drittanbietern angezeigt.
 
@@ -197,7 +197,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**, wobei die Schlüsselwörter "Banker", "vertraulich" und "Insiderhandel" durch ein Komma getrennt sind (Banker, Confidential, "Insiderhandel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
 
 >[!IMPORTANT]
->Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Zum Beispiel: <br><br>
+>Wenn Sie eine benutzerdefinierte Wörterbuchdatei importieren, muss jedes Wort oder jeder Ausdruck mit einem Wagenrücklauf und in einer separaten Zeilen getrennt werden. <br> Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -208,7 +208,7 @@ Zum Überprüfen von e-Mail-Nachrichten und Anlagen für dieselben Stichwörter 
 
 Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Kommunikations Konformitätsrichtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet werden kann, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "Trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "von Contoso Financial genehmigt" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Beispiel wären die drei Bedingungen wie folgt definiert:
   
-- **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade"
+- **Nachricht enthält eines dieser Wörter**mit dem Stichwort "Trade"
 - Die **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
 - **Nachricht enthält keines dieser Wörter**, mit den Schlüsselwörtern "genehmigt von Contoso Financial Team"
 
@@ -246,13 +246,13 @@ Wenn Sie mehr als eine einfache textbasierte e-Mail-Nachricht für Benachrichtig
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,7 +268,7 @@ Mit den Kommunikations Kompatibilitäts filtern können Sie Warnmeldungen für s
 | **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. |
 | **File-Klasse** | Die Klasse der Nachricht auf der Grundlage des Nachrichtentyps, entweder *Nachricht* oder *Anlage*. |
 | **Weist eine Anlage auf** | Das Attachment-vorhanden sein in der Nachricht. |
-| **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloonmberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, e-Mail, Microsoft Team Chat, Bloomberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Diese Domäne ist normalerweise Ihre Microsoft 365-Abonnement Domäne standardmäßig. |
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
 | **Sender** | Die Person, die die Nachricht gesendet hat. |
@@ -321,7 +321,7 @@ Das Dashboard für neue **Berichte** ist der zentrale Ort zum Anzeigen aller Kom
 Das Dashboard **Berichte** enthält die folgenden Berichts-Widgets:
 
 - **Aktuelle Richtlinien Übereinstimmungen**: zeigt die Anzahl der Übereinstimmungen mit aktiver Richtlinie im Zeitverlauf an.
-- **Aufgelöste Elemente nach Richtlinie**: zeigt die Anzahl der Richtlinien Übereinstimmungs Benachrichtigungen an, die über einen Zeitraum nach Richtlinie aufgelöst werden.
+- **Aufgelöste Elemente nach Richtlinie**: zeigt die Anzahl von Richtlinien Übereinstimmungs Benachrichtigungen an, die über einen Zeitraum nach Richtlinien aufgelöst werden.
 - **Benutzer mit den meisten Richtlinien Übereinstimmungen**: zeigt die Benutzer (oder anonymisierten Benutzernamen) und die Anzahl der Richtlinien Übereinstimmungen für einen bestimmten Zeitraum an.
 - **Richtlinie mit den meisten Übereinstimmungen**: zeigt die Richtlinien und die Anzahl der Übereinstimmungen für einen bestimmten Zeitraum an, der für Übereinstimmungen am höchsten und am niedrigsten ist.
 

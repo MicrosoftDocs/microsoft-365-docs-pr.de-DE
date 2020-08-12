@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie mehr über die Verwendung von Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center, um Bedrohungen effektiv und effizient zu untersuchen und auf diese zu reagieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577527"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641641"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -207,6 +207,20 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
    > [!NOTE]
    > Im Dialogfeld URL-Flyout wird die Filterung für e-Mail-Nachrichten entfernt, um Ihnen die vollständige Ansicht der URL-Exposition in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach e-Mail-Nachrichten im Explorer nach bestimmten URLs suchen, die potenzielle Bedrohungen darstellen, und dann Ihr Verständnis der URL-Exposition in Ihrer Umgebung (über das Dialogfeld URL-Details) erweitern, ohne der Explorer-Ansicht selbst URL-Filter hinzufügen zu müssen.
+
+
+**Interpretation verschiedener Klick Urteile**
+
+Innerhalb der e-Mail-oder URL-Flyouts, der wichtigsten Klicks sowie in unseren Filter-Erlebnissen werden Ihnen unterschiedliche Klick-Werte als Teil Ihres Jagd Erlebnisses angezeigt. Im folgenden sind die möglichen Werte von Klick Urteilen und deren Interpretation aufgeführt:
+
+- **None**: das Urteil für die URL konnte nicht erfasst werden. Der Benutzer hat möglicherweise auf die URL geklickt.
+- **Zulässig**: der Benutzer durfte zur URL navigieren.
+- **Blockiert**: der Benutzer wurde für die Navigation zur URL gesperrt.
+- **Ausstehender Urteilsspruch**: der Benutzer wurde mit der ausstehenden detonations Seite angezeigt.
+- **Blockiert außer Kraft gesetzt**: der Benutzer wurde für die Navigation zur URL gesperrt. der Benutzer hat den Block jedoch übersteuert, um zur URL zu navigieren.
+- **Ausstehender Urteilsspruch umgangen**: der Benutzer wurde mit der detonations Seite angezeigt; der Benutzer hat die Seite jedoch übersteuert, um zur URL zu navigieren.
+- **Fehler**: der Benutzer wurde mit der Fehlerseite angezeigt. Dies kann auch bedeuten, dass beim Erfassen des Urteils ein Fehler aufgetreten ist.
+- **Fehler**: beim Erfassen des Urteils ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise auf die URL geklickt. 
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 

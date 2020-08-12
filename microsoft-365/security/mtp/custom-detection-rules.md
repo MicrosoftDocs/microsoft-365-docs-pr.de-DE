@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005710"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632151"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -51,6 +51,10 @@ Um die erforderlichen Berechtigungen zu verwalten, kann ein **globaler Administr
 ### <a name="1-prepare-the-query"></a>1. bereiten Sie die Abfrage vor.
 
 Wechseln Sie im Microsoft 365 Security Center zu **Advanced Hunting** , und wählen Sie eine vorhandene Abfrage aus, oder erstellen Sie eine neue Abfrage. Wenn Sie eine neue Abfrage verwenden, führen Sie die Abfrage aus, um Fehler zu identifizieren und mögliche Ergebnisse zu verstehen.
+
+>[!IMPORTANT]
+>Um zu verhindern, dass der Dienst zu viele Warnungen zurückgibt, ist jede Regel darauf beschränkt, bei der Ausführung nur 100 Warnungen zu generieren. Vor dem Erstellen einer Regel sollten Sie die Abfrage optimieren, um Warnungen für normale tägliche Aktivitäten zu vermeiden.
+
 
 #### <a name="required-columns-in-the-query-results"></a>Erforderliche Spalten in den Abfrageergebnissen
 Um eine benutzerdefinierte Erkennungsregel zu erstellen, muss die Abfrage die folgenden Spalten zurückgeben:
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Erstellen Sie eine neue Regel, und geben Sie Warnungsdetails an.
 
 Wählen Sie mit der Abfrage im Abfrage-Editor **Erkennungsregel erstellen** aus, und geben Sie die folgenden Warnungsdetails an:
