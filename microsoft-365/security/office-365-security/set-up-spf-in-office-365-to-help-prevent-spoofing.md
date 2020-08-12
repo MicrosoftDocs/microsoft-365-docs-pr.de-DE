@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936937"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632139"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
@@ -61,8 +61,8 @@ Sammeln Sie folgende Informationen:
 
 1. Machen Sie sich mit der SPF-Syntax in der folgenden Tabelle vertraut.
 
-   ||**Wenn Sie Folgendes verwenden ...**|**Für Kunden üblich?**|**Fügen Sie Folgendes hinzu ...**|
-   |:-----|:-----|:-----|:-----|
+   ||Wenn Sie Folgendes verwenden...|Für Kunden üblich?|Fügen Sie Folgendes hinzu ...|
+   |---|---|---|---|
    |1|Beliebiges E-Mail-System (erforderlich)|Standard. Alle SPF TXT-Einträge beginnen mit dem folgenden Wert|v=spf1|
    |2|Exchange Online|Standard|include:spf.protection.outlook.com|
    |3|Nur dediziert für Exchange Online|Kein Standard|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ Sammeln Sie folgende Informationen:
 3. Nachdem Sie Ihren SPF TXT-Eintrag erstellt haben, müssen Sie den Eintrag in DNS aktualisieren. Sie dürfen nur einen SPF TXT-Eintrag für eine Domäne haben. Wenn ein SPF TXT-Eintrag vorhanden ist, müssen Sie den vorhandenen Eintrag aktualisieren, statt einen neuen Eintrag hinzuzufügen. Wechseln Sie zu [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), und klicken Sie dann auf den Link für Ihren DNS-Hostinganbieter.
 
 4. Testen Sie Ihren SPF TXT-Eintrag.
+
+## <a name="how-to-handle-subdomains"></a>Wie kann ich Subdomänen behandeln?
+
+Es ist wichtig zu beachten, dass Sie für jede Subdomäne einen separaten Eintrag erstellen müssen, da Subdomänen nicht den SPF-Eintrag der Domäne der obersten Ebene erben.
+
+Ein zusätzlicher Wildcard-SPF-Eintrag (`*.`) ist für jede Domäne und Subdomäne erforderlich, um Angreifer daran zu hindern, E-Mails zu versenden, die vorgeben, von nicht existierenden Subdomänen zu stammen. Zum Beispiel:
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>Weitere Informationen zu SPF
 

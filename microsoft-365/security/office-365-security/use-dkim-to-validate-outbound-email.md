@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
-ms.openlocfilehash: 4ec5f7c8779e9d6b6709c8fc3311ec9c0e99b680
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754844"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632163"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -331,6 +331,16 @@ In diesem Beispiel sind zu diesem Zweck die folgenden Schritte erforderlich:
    > sender@**contoso.com**
 
    > d=**contoso.com**
+   
+## <a name="identify-domains-that-do-not-send-email"></a>Domänen identifizieren, die keine E-Mails senden
+
+Organisationen sollten explizit angeben, ob eine Domäne keine E-Mails sendet, indem sie `v=DKIM1; p=` im DKIM-Eintrag für diese Domänen angeben. Dies weist empfangende E-Mail-Server darauf hin, dass es keine gültigen öffentlichen Schlüssel für die Domäne gibt. Jede E-Mail, die vorgibt, von dieser Domäne zu stammen, sollte abgelehnt werden. Sie sollten dies für jede Domäne und Subdomäne mit einem Wildcard-DKIM tun.
+
+Der DKIM-Eintrag sieht beispielsweise wie folgt aus:
+
+```console
+*._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
+```
 
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>Nächste Schritte: Nach dem Einrichten von DKIM für Microsoft 365
 <a name="DKIMNextSteps"> </a>

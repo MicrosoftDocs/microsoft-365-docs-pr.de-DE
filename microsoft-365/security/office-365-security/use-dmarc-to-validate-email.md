@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) konfigurieren, um von Ihrer Organisation gesendete Nachrichten zu validieren.
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601873"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632117"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Verwenden von DMARC zum Überprüfen von E-Mails
 
@@ -39,7 +39,7 @@ ms.locfileid: "46601873"
 
 SPF verwendet einen DNS-TXT-Eintrag, um eine Liste der autorisierten sendenden IP-Adressen für eine bestimmte Domäne bereitzustellen. In der Regel werden SPF-Prüfungen nur für die „5321.MailFrom"-Adresse durchgeführt. Dies bedeutet, dass die „5322.From"-Adresse nicht authentifiziert wird, wenn Sie nur SPF verwenden. Aufgrund dessen kann es dazu kommen, dass ein Benutzer eine Nachricht erhält, die die SPF-Prüfung besteht, jedoch eine Spoof-5322.From-Absenderadresse aufweist. Betrachten Sie beispielsweise das folgende SMTP-Transkript:
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ Wie die DNS-Einträge für SPF ist der Eintrag für DMARC ein DNS-Texteintrag (T
 
 Der DMARC-TXT-Eintrag von Microsoft sieht in etwa wie folgt aus:
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Sie haben nun eine Liste aller gültigen Absender erstellt und können die Schri
 
 Beispiel: Angenommen, „contoso.com" sendet E-Mail-Nachrichten von Exchange Online, einem lokalen Exchange-Server mit der IP-Adresse 192.168.0.1 und einer Webanwendung mit der IP-Adresse 192.168.100.100, dann sieht der SPF-TXT-Eintrag wie folgt aus:
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ Anleitungen zum Einrichten von DKIM für Ihre Domäne, einschließlich der Einri
 
 Obwohl es auch andere Syntaxoptionen gibt, die hier nicht genannt werden, sind dies die am häufigsten für Microsoft 365 verwendeten. Erstellen Sie den DMARC-TXT-Eintrag für Ihre Domäne im folgenden Format:
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ Beispiele:
 
 - Richtlinie auf „none“ festgelegt
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Richtlinien auf „quarantine“ festgelegt
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Richtlinie auf „reject“ festgelegt
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ Sie können DMARC allmählich implementieren, ohne den übrigen E-Mail-Nachricht
 3. Anfordern, dass externe E-Mail-Systeme keine Nachrichten akzeptieren, die die DMARC-Prüfung nicht bestehen
 
     Der letzte Schritt ist das Implementieren einer Ablehnungsrichtlinie. Eine Ablehnungsrichtlinie ist ein DMARC-TXT-Eintrag, dessen Richtlinie auf „reject" festgelegt ist (p=reject). Wenn Sie dies festlegen, fordern Sie DMARC-Empfänger auf, keine Nachrichten zu akzeptieren, die die DMARC-Prüfungen nicht bestehen.
+    
+4. Wie richte ich DMARC für Subdomain ein?
+
+DMARC wird durch die Veröffentlichung einer Richtlinie als TXT-Eintrag im DNS implementiert und ist hierarchisch aufgebaut (z. B. gilt eine für contoso.com veröffentlichte Richtlinie für sub.domain.contonos.com, sofern nicht ausdrücklich eine andere Richtlinie für die Subdomain definiert wird). Dies ist nützlich, da Organisationen eine kleinere Anzahl von DMARC-Einträgen auf hoher Ebene für eine breitere Abdeckung angeben können. Achten Sie darauf, explizite DMARC-Einträge für Subdomänen zu konfigurieren, wenn Sie nicht möchten, dass die Subdomänen den DMARC-Eintrag der Top-Level-Domäne erben.
+
+Sie können auch eine Wildcard-Typ-Richtlinie für DMARC hinzufügen, wenn Subdomains keine E-Mails senden sollten, indem Sie den Wert `sp=reject` hinzufügen. Zum Beispiel:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>So behandelt Microsoft 365 ausgehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen
 
@@ -220,7 +230,7 @@ Wenn Sie die MX-Einträge Ihrer Domäne so konfiguriert haben, dass EOP nicht de
 
 Wenn Sie Kunde sind und der primäre MX-Eintrag Ihrer Domäne nicht auf EOP verweist, können Sie die Vorteile von DMARC nicht nutzen. DMARC funktioniert beispielsweise nicht, wenn Sie den MX-Eintrag auf Ihren lokalen E-Mail-Server verweisen und anschließend E-Mail-Nachrichten mithilfe eines Connectors an EOP weiterleiten. In diesem Szenario ist die Empfängerdomäne eine der akzeptierten Domänen, EOP ist jedoch nicht der primäre MX-Eintrag. Nehmen Sie zum Beispiel einmal an, dass „contoso.com“ seinen MX auf sich selbst verweist und EOP als sekundären MX-Eintrag verwendet. Der MX-Eintrag von „contoso.com“ sieht dann wie folgt aus:
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```

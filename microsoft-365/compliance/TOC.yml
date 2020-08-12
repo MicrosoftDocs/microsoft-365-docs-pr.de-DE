@@ -243,7 +243,7 @@
   items:
     - name: Verwalten der Informationsgovernance
       href: manage-information-governance.md
-    - name: Importieren von Daten
+    - name: Postfachdaten importieren
       items:
         - name: Übersicht über das Importieren von PST-Dateien
           href: importing-pst-files-to-office-365.md
@@ -251,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: Verwenden des Laufwerkversands zum Importieren von PST-Dateien
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: 'Verwenden des PST-Sammlungstools zum Suchen, Kopieren und Löschen von PST-Dateien'
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filtern von Daten beim Importieren von PST-Dateien
           href: filter-data-when-importing-pst-files.md
         - name: Häufig gestellte Fragen zum Importieren von PST-Dateien
