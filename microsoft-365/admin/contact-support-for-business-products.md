@@ -21,12 +21,12 @@ search.appverid:
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552446"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641585"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
@@ -56,6 +56,9 @@ Sparen Sie Zeit, indem Sie Ihre Serviceanfrage online starten. Wir helfen Ihnen,
 Abrechnungssupport wird in englischer Sprache montags bis freitags von 9 bis 17 Uhr (9 bis 18 Uhr in Australien) bereitgestellt.\
 Technischer Support wird in englischer Sprache 24 Stunden am Tag an 7 Tagen in der Woche bereitgestellt.\
 Administratoren müssen Ihre Kontodetails bereithalten, wenn sie anrufen.
+
+> [!NOTE]
+> Um Ihre Organisation besser zu schützen, haben wir eine PIN-basierte Überprüfung zu unserem bestehenden telefonbasierten Überprüfungsvorgang hinzugefügt. Wenn Sie uns über eine Nummer kontaktieren, die nicht in Ihrem Organisationsprofil registriert ist, sendet der Microsoft-Supportmitarbeiter einen Bestätigungscode an die registrierte E-Mail-Adresse oder Telefonnummer in Ihrem Microsoft 365 Admin Center-Profil. Sie müssen diesen Code dem Supportmitarbeiter mitteilen, damit er Zugriff auf das Konto Ihrer Organisation bekommt.
 
 - **In den USA wählen Sie 1 800 865 9408.**
 

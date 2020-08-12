@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127332"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641630"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -117,16 +117,16 @@ Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schri
     
     ![Kopieren der SAS-URL und Herunterladen des AzCopy-Tools auf der Seite "Daten importieren"](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a. Klicken Sie in Schritt 2 auf **SAS-URL für Netzwerkupload anzeigen**. Nachdem die SAS-URL angezeigt wird, klicken Sie auf **In die Zwischenablage kopieren**, fügen Sie die URL in eine Datei ein, und speichern Sie diese, damit Sie später darauf zugreifen können.
+    1. Klicken Sie in Schritt 2 auf **SAS-URL für Netzwerkupload anzeigen**. Nachdem die SAS-URL angezeigt wird, klicken Sie auf **In die Zwischenablage kopieren**, fügen Sie die URL in eine Datei ein, und speichern Sie diese, damit Sie später darauf zugreifen können.
     
-    b. Klicken Sie in Schritt 3 auf **Azure AzCopy herunterladen**, um das AzCopy-Tool herunterzuladen. Klicken Sie im Popupfenster auf **Ausführen**, um AzCopy zu installieren. 
+    1. Klicken Sie in Schritt 3 auf **Azure AzCopy herunterladen**, um das AzCopy-Tool herunterzuladen. Klicken Sie im Popupfenster auf **Ausführen**, um AzCopy zu installieren. 
     
-> [!NOTE]
-> Sie können die Seite **Daten importieren** geöffnet lassen (für den Fall, dass Sie die SAS-URL erneut kopieren müssen), oder Sie können auf **Abbrechen** klicken, um sie zu schließen. 
+   > [!NOTE]
+   > Sie können die Seite **Daten importieren** geöffnet lassen (für den Fall, dass Sie die SAS-URL erneut kopieren müssen), oder Sie können auf **Abbrechen** klicken, um sie zu schließen. 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>Schritt 2: Hochladen Ihrer PST-Dateien in Office 365
 
-Jetzt können Sie Tool "AzCopy.exe" verwenden, um PST-Dateien in Office 365 hochzuladen. Dieses Tool lädt die Dateien an einen Azure Storage-Speicherort in der Microsoft-Cloud hoch und speichert sie dort. Wie zuvor erläutert, befindet sich der Azure Storage-Speicherort, in den Sie Ihre PST-Dateien hochladen, im selben regionalen Microsoft-Rechenzentrum wie Ihre Organisation. Damit Sie diesen Schritt ausführen können, müssen sich die PST-Dateien in einer Dateifreigabe oder auf einem Dateiserver in Ihrer Organisation befinden. In diesem Verfahren wird dies als das Quellverzeichnis bezeichnet. Bei jeder Ausführung des Tools AzCopy können Sie ein anderes Quellverzeichnis angeben. 
+Jetzt können Sie Tool "AzCopy.exe" verwenden, um PST-Dateien in Office 365 hochzuladen. Dieses Tool lädt die Dateien an einen Azure Storage-Speicherort in der Microsoft-Cloud hoch und speichert sie dort. Wie zuvor erläutert, befindet sich der Azure Storage-Speicherort, in den Sie Ihre PST-Dateien hochladen, in demselben regionalen Microsoft-Rechenzentrum wie Ihre Organisation. Damit Sie diesen Schritt ausführen können, müssen sich die PST-Dateien in einer Dateifreigabe oder auf einem Dateiserver in Ihrer Organisation befinden. In diesem Verfahren wird dies als das Quellverzeichnis bezeichnet. Bei jeder Ausführung des Tools AzCopy können Sie ein anderes Quellverzeichnis angeben. 
 
 > [!NOTE]
 > Wie bereits erwähnt, sollte jede PST-Datei, die Sie in den Azure-Speicherort hochladen, nicht größer als 20 GB sein. PST-Dateien mit mehr als 20 GB können sich auf die Leistung des PST-Importprozesses auswirken, die Sie in Schritt 6 starten.
@@ -146,7 +146,7 @@ Jetzt können Sie Tool "AzCopy.exe" verwenden, um PST-Dateien in Office 365 hoch
  
     In der folgenden Tabelle werden die AzCopy.exe-Parameter und deren erforderliche Werte beschrieben. Die Informationen aus dem vorherigen Schritt werden in den Werten für diese Parameter verwendet.
     
-    |**Parameter**|**Beschreibung**|**Beispiel**|
+    | Parameter | Beschreibung | Beispiel |
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Gibt das Quellverzeichnis in Ihrer Organisation an, das die PST-Dateien enthält, die in Office 365 hochgeladen werden.  <br/> Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |Gibt den SAS-Schlüssel an, den Sie in Schritt 1 abgerufen haben.  <br/> Achten Sie darauf, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.<br/><br/>**Bitte beachten:** Wenn Sie die SAS-URL in einem Skript oder in einer Batchdatei verwenden, müssen Sie auf bestimmte Zeichen achten, die Sie vermeiden sollten. Sie müssen beispielsweise `%` in `%%` ändern und `&` in `^&`ändern.<br/><br/>**Tipp:** (Optional) Sie können einen Unterordner am Azure Storage-Speicherort anlegen, in den Sie die PST-Dateien hochladen können. Hierzu fügen Sie den Speicherort des Unterordners (nach "ingestiondata") in die SAS-URL ein. Im ersten Beispiel wird kein Unterordner angegeben. Dies bedeutet, dass die PSTs in den Stammordner (mit Namen *ingestiondata*) des Azure Storage-Speicherorts hochgeladen werden. Im zweiten Beispiel werden die PST-Dateien in einen Unterordner (mit Namen *PSTFiles*) im Stammordner des Azure Storage-Speicherorts hochgeladen.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Oder  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -208,7 +208,7 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organis
 
 2. Öffnen oder speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Das folgende Beispiel zeigt eine abgeschlossene PST-Importzuordnungsdatei (in Editor geöffnet). Es ist wesentlich einfacher, Microsoft Excel zum Bearbeiten der CSV-Datei zu verwenden.
 
-    ```text
+    ```console
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -229,7 +229,7 @@ Nachdem die PST-Datei Dateien an den Azure Storage-Speicherort für Ihre Organis
 
  3. Verwenden Sie die Informationen in der folgenden Tabelle, um die CSV-Datei mit den erforderlichen Informationen zu füllen.
 
-    |**Parameter**|**Beschreibung**|**Beispiel**|
+    | Parameter | Beschreibung | Beispiel |
     |:-----|:-----|:-----|
     | `Workload` <br/> |Gibt den Dienst an, in den Daten importiert werden. Verwenden Sie `Exchange`, um PST-Dateien in Benutzerpostfächer zu importieren.  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |Gibt den Speicherort des Ordners am Azure Storage-Speicherort an, an den Sie die PST-Dateien in Schritt 2 hochgeladen haben.  <br/> Wenn Sie in Schritt 2 keinen optionalen Namen für den Unterordner in die SAS-URL im Parameter `/Dest:` eingeschlossen haben, lassen Sie diesen Parameter in der CSV-Datei leer. Wenn Sie aber einen Unterordnernamen eingeschlossen haben, geben Sie ihn in diesem Parameter an (siehe zweites Beispiel). Beim Wert für diesen Parameter muss die Groß-/Kleinschreibung beachtet werden.  <br/> In beiden Fällen schließen Sie "ingestiondata" *nicht* in den Wert für den Parameter `FilePath` ein.  <br/><br/> **Wichtig:** Die Groß-/Kleinschreibung für den Dateipfadnamen muss mit derjenigen identisch sein, die Sie verwendet haben, als Sie in Schritt 2 einen optionalen Unterordnernamen in die SAS-URL im Parameter `/Dest:` eingeschlossen haben. Wenn Sie in Schritt 2 beispielsweise für den Unterordnernamen `PSTFiles` verwendet haben und dann `pstfiles` im Parameter `FilePath` in der CSV-Datei verwenden, schlägt der Import für die PST-Datei fehl. Denken Sie deshalb daran, in beiden Fällen dieselbe Groß-/Kleinschreibung zu verwenden.  <br/> |(leer lassen)  <br/> Oder  <br/>  `PSTFiles` <br/> |
@@ -306,17 +306,17 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Microsoft 
   
 3. Führen Sie einen der folgenden Schritte aus:
     
-    a. Um die Daten, die Sie importieren, zu trimmen, klicken Sie auf **Ja, ich möchte meine Daten vor dem Import filtern**.
+   1. Um die Daten, die Sie importieren, zu trimmen, klicken Sie auf **Ja, ich möchte meine Daten vor dem Import filtern**.
     
-    Detaillierte schrittweise Anweisungen zum Filtern der Daten in den PST-Dateien und anschließenden Starten des Importvorgangs finden Sie unter [Filtern von Daten beim Importieren von PST-Dateien in Office 365](filter-data-when-importing-pst-files.md).
+      Detaillierte schrittweise Anweisungen zum Filtern der Daten in den PST-Dateien und anschließenden Starten des Importvorgangs finden Sie unter [Filtern von Daten beim Importieren von PST-Dateien in Office 365](filter-data-when-importing-pst-files.md).
     
-    Oder
+      Oder
     
-    b. Um alle Daten zu importieren, die sich in den PST-Dateien befinden, klicken Sie auf **Nein, ich möchte alles importieren**, und klicken Sie auf **Weiter**.
+   1. Um alle Daten zu importieren, die sich in den PST-Dateien befinden, klicken Sie auf **Nein, ich möchte alles importieren**, und klicken Sie auf **Weiter**.
     
 4. Wenn Sie sich entschieden haben, alle Daten zu importieren, klicken Sie auf **Daten importieren**, um den Importvorgang zu starten. 
     
-    Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. 
+   Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. 
 
 
   
@@ -346,7 +346,7 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Microsoft 
   
 - Hier finden Sie ein Beispiel für die SAS-URL (Shared Access Signature), den Sie in Schritt 1 abgerufen haben. Dieses Beispiel enthält auch die Syntax für den Befehl, den Sie im Tool „AzCopy.exe“ zum Hochladen von PST-Dateien ausführen. Schützen Sie diese SAS-URL unbedingt genauso wie Kennwörter und andere sicherheitsbezogene Informationen.
 
-    ```text
+    ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
