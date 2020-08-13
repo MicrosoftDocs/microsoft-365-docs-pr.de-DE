@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632139"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656611"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
@@ -61,7 +61,9 @@ Sammeln Sie folgende Informationen:
 
 1. Machen Sie sich mit der SPF-Syntax in der folgenden Tabelle vertraut.
 
-   ||Wenn Sie Folgendes verwenden...|Für Kunden üblich?|Fügen Sie Folgendes hinzu ...|
+   ****
+
+   |<!-- -->|Wenn Sie Folgendes verwenden...|Für Kunden üblich?|Fügen Sie Folgendes hinzu ...|
    |---|---|---|---|
    |1|Beliebiges E-Mail-System (erforderlich)|Standard. Alle SPF TXT-Einträge beginnen mit dem folgenden Wert|v=spf1|
    |2|Exchange Online|Standard|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ Sammeln Sie folgende Informationen:
    |5|Drittanbieter-E-Mail-System|Kein Standard|enthalten:\<domain name\>  <br/> Wobei „Domänenname“ dem Domänennamen des Drittanbieter-E-Mail-Systems entspricht.|
    |6|Lokales E-Mail-System Zum Beispiel Exchange Online Protection und ein anderes E-Mail-System|Kein Standard| Verwenden Sie einen der folgenden Einträge für jedes zusätzliche E-Mail-System: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  enthalten:\<_domain name_\>  <br/>  Dabei steht der Wert von \<_IP address_\> für die IP-Adresse des anderen E-Mail-Systems und \<_domain name_\> für den Domänennamen des anderen E-Mail-Systems, das E-Mails im Auftrag Ihrer Domäne sendet.|
    |7|Beliebiges E-Mail-System (erforderlich)|Standard. Alle SPF TXT-Einträge enden mit diesem Wert|\<_enforcement rule_\>  <br/> Kann einer von mehreren Werten sein. Es wird empfohlen, **-all** zu verwenden.|
+   |
 
 2. Erstellen Sie Ihren SPF TXT-Eintrag, falls noch nicht geschehen, indem Sie die Syntax aus der Tabelle verwenden:
 

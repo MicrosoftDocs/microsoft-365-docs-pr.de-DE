@@ -14,14 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über die Information Governance in Microsoft 365.
-ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 526f91eb70ec2e249d2f8b83c4238f0f43584db1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641608"
+ms.locfileid: "46649142"
 ---
 # <a name="manage-information-governance"></a>Verwalten der Informationsgovernance
+
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 Verwenden Sie die Microsoft Information Governance-Funktionen, um Ihre Daten für Compliance-oder behördliche Anforderungen zu bestimmen.
 
@@ -42,5 +44,5 @@ Verwenden Sie die Datensatzverwaltung, um hochwertige Inhalte für rechtliche, g
 
 |Funktion|Welche Probleme werden behoben?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|
-|[Datensatzverwaltung](records-management.md)| Eine einzige Lösung für e-Mails und Dokumente, die aufbewahrungszeitpläne und-Anforderungen in einen Dateiplan integriert, der Aufbewahrung, Datensatzdeklaration und Disposition verwaltet, um den vollständigen Lebenszyklus Ihrer Inhalte zu unterstützen <br /><br />Beispielszenario: [Disposition von Datensätzen](disposition.md#disposition-of-records)|[Informationen zu Datensätzen](records.md) |
+|[Datensatzverwaltung](records-management.md)| Eine einzige Lösung für e-Mails und Dokumente, die aufbewahrungszeitpläne und-Anforderungen in einen Dateiplan integriert, der Aufbewahrung, Datensatzdeklaration und Disposition verwaltet, um den vollständigen Lebenszyklus Ihrer Inhalte zu unterstützen <br /><br />Beispielszenario: [Disposition von Datensätzen](disposition.md#disposition-of-records)|[ Informationen zu Datensätzen](records.md) |
 

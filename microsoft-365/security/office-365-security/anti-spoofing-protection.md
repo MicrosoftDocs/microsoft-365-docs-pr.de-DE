@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577848"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653413"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -129,8 +129,7 @@ Mailinglisten (auch bekannt als Diskussionslisten) haben bekanntermaßen Problem
 
 Beispielsweise interessiert sich Gabriela Laureano (glaureano@contoso.com) für Vogelbeobachtung, schließt sich der Diskussionsliste birdwatchers@fabrikam.com an und schickt folgende Nachricht an die Liste:
 
-> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> 
-**Betreff:** Großartiger Blick auf Blauhäher auf dem Mount Rainier diese Woche <br/><br/>Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
+> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <br/><br/>Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
 
 Der Diskussionslisten-Server empfängt die Nachricht, ändert deren Inhalt und sendet sie an die Mitglieder der Liste. Die an die Mitglieder ausgesendete Nachricht hat zwar die gleiche „Von“-Adresse (glaureano@contoso.com), jedoch wurde der Betreffzeile ein Tag und eine der Nachricht eine Fußzeile hinzugefügt. Diese Art von Änderung ist in Diskussionslisten üblich und kann zu falsch-positiven Ergebnissen der Spoofing-Prüfung führen.
 

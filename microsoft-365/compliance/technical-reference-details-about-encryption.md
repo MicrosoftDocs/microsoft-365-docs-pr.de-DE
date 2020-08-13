@@ -1,5 +1,5 @@
 ---
-title: Technische Referenzdetails zur Verschlüsselung
+title: Technische Details zur Verschlüsselung
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Erfahren Sie mehr über die verschiedenen Zertifikate, Technologien und TLS-Verschlüsselungs Pakete, die für die Verschlüsselung in Office 365 verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: c9bc61a7c7a35d84d5e4ff338927ead98a932d9d
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024541"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649096"
 ---
-# <a name="technical-reference-details-about-encryption"></a>Technische Referenzdetails zur Verschlüsselung
+# <a name="technical-reference-details-about-encryption"></a>Technische Details zur Verschlüsselung
 
 In diesem Artikel erhalten Sie Informationen zu Zertifikaten, Technologien und TLS-Verschlüsselungs Paketen, die für die [Verschlüsselung in Office 365](encryption.md)verwendet werden. Dieser Artikel enthält auch Details zu geplanten veralteten Abschreibungen.
   
@@ -52,13 +52,7 @@ TLS-Version 1,3 (TLS 1,3) wird derzeit nicht unterstützt.
   
 ## <a name="support-for-tls-10-and-11-deprecation-and-what-this-means-for-you"></a>Unterstützung für TLS 1,0 und 1,1 veraltet und was dies für Sie bedeutet
 
-Seit dem 31. Oktober 2018 unterstützt Office 365 nicht mehr TLS 1,0 und 1,1. Dies bedeutet, dass Microsoft keine neuen Probleme beheben wird, die in Clients, Geräten oder Diensten auftreten, die sich mit Office 365 über TLS 1.0 und 1.1 verbinden.
-
-Dies bedeutet nicht, dass Office 365 die TLS 1,0-und 1,1-Verbindungen blockieren.
-
-Obwohl wir ursprünglich ein Datum vom 1. Juni festgelegt haben, ist dieses Datum nicht mehr gültig, 2020 für TLS 1,0 und TLS 1,1-veraltete Daten für die weltweiten und gcc-Umgebungen. Dies war auf COVID-19 zurückzuführen. Wenn ein neues Datum für diese veraltete Funktion vorliegt, werden wir es hier veröffentlichen. 
-
-Für gcc-High-und DoD-Umgebungen ist am 15. Januar 2020 offiziell veraltet.
+Seit dem 31. Oktober 2018 unterstützt Office 365 nicht mehr TLS 1,0 und 1,1. Dies bedeutet, dass Microsoft keine neuen Probleme beheben wird, die in Clients, Geräten oder Diensten auftreten, die sich mit Office 365 über TLS 1.0 und 1.1 verbinden. Die offizielle veraltete Leistung für gcc High-und DoD-Umgebungen begann am 15. Januar 2020. Die veralteten TLS 1,0 und 1,1 für die weltweiten und gcc-Umgebungen beginnen mit dem 15. Oktober 2020. 
 
 Sie sollten sicherstellen, dass alle Client-Server-und Browser Serverkombinationen TLS 1,2 und moderne Verschlüsselungs Pakete verwenden, um eine sichere Verbindung mit Office 365-und Microsoft 365-Diensten aufrechtzuerhalten. Dies erfordert möglicherweise Updates für bestimmte Client-Server- bzw. Browser-Server-Kombinationen. Informationen dazu, wie sich dies auf Sie auswirkt, finden Sie unter [Vorbereiten der obligatorischen Verwendung von TLS 1,2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
@@ -76,19 +70,30 @@ Bei einer Cipher Suite handelt es sich um eine Sammlung von Verschlüsselungsalg
 
 > [!IMPORTANT]
 > Beachten Sie, dass TLS-Versionen veraltet sind und dass veraltete Versionen *nicht verwendet werden sollten* , wenn neuere Versionen verfügbar sind. TLS 1,3 wird derzeit nicht unterstützt. Wenn Ihre Vorgänger Dienste keine TLS 1,0 oder 1,1 benötigen, sollten Sie diese deaktivieren.
-  
-|**Protokolle**|**Name der Verschlüsselungssammlung**|**Schlüsselaustauschalgorithmus/Stärke**|**Unterstützung für das perfekte Forward-Geheimnis**|**Authentifizierungsalgorithmus/Stärke**|**Chiffre/Stärke**|
+
+| Cipher Suite | Schlüsselaustauschalgorithmus/Stärke | Perfektes Forward-Geheimnis | Chiffre/Stärke | Authentifizierungsalgorithmus |
+|:-----|:-----|:-----|:-----|:-----|
+|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Ja <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Ja <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|Ja <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|Ja <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|Ja <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Ja <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |Nein <br/> |AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |Nein <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |Nein <br/> |AES/128 <br/>|RSA/112 <br/> |
+
+Dies sind die folgenden Verschlüsselungs Pakete, die weiterhin TLS 1,0-und 1,1-Protokolle bis zu Ihrem veralteten Datum unterstützen. Für gcc-High-und DoD-Umgebungen, in denen das Datum der veralteten Daten vom 15. Januar 2020 und für die weltweiten und gcc-Umgebungen am 15. Oktober 2020.
+
+| Protokolle | Name der Verschlüsselungssammlung | Schlüsselaustauschalgorithmus/Stärke | Unterstützung für das perfekte Forward-Geheimnis | Authentifizierungsalgorithmus/Stärke | Chiffre/Stärke |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Ja  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Ja  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Ja  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Nein  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Ja  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Ja  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |Nein  <br/>  |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |Nein  <br/>  |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>Verwandte Themen
 [TLS-Verschlüsselungs Pakete in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
@@ -101,5 +106,4 @@ Bei einer Cipher Suite handelt es sich um eine Sammlung von Verschlüsselungsalg
   
 [TLS/SSL-kryptografische Verbesserungen (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
- [Vorbereiten von TLS 1.2 in Office 365 und Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
-
+[Vorbereiten von TLS 1.2 in Office 365 und Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

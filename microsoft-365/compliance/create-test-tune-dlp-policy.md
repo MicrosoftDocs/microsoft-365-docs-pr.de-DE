@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend den Anforderungen Ihrer Organisation erstellen, testen und optimieren.
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092005"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648782"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -37,6 +37,24 @@ DLP verwendet ein Inhaltsanalysemodul, um den Inhalt von E-Mail-Nachrichten und 
 - Aktives Blockieren der E-Mail-Nachricht oder der Dateifreigabe
 
 Manchmal wird DLP von Kunden nicht verwendet, weil sie der Ansicht sind, nicht über Dateitypen zu verfügen, die geschützt werden müssen. Es wird davon ausgegangen, dass vertrauliche Daten (z. B. Patientenakten oder Finanzinformationen) nur für Branchen wie das Gesundheitswesen oder für Unternehmen existieren, die Online Shops betreiben. In jedem Unternehmen können aber vertrauliche Informationen in regelmäßigen Abständen verarbeitet werden, ohne dass man sich dessen immer bewusst ist. Eine Tabelle mit den Namen und Geburtstagen von Mitarbeitern ist genauso vertraulich wie eine Tabelle mit Kundennamen und Kreditkartendetails. Informationen dieser Art zirkulieren oft mehr, als Sie vielleicht erwarten, da Mitarbeiter ihre täglichen Aufgaben ausführen, ohne es etwa als problematisch anzusehen, eine CSV-Datei aus einem System zu exportieren und per E-Mail an eine andere Person zu senden. Möglicherweise wird es Sie auch überraschen, wie oft Mitarbeiter E-Mails mit Kreditkarten- oder Bankdaten versenden, ohne die Konsequenzen zu bedenken.
+
+## <a name="permissions"></a>Berechtigungen
+
+Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Security &amp; Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diesen Ort und kann den Compliance Officers und anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zuzuweisen. Hierfür empfehlen wir, folgendermaßen vorzugehen:
+  
+1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
+    
+2. Erstellen Sie eine Rollengruppe auf der Seite **Berechtigungen** des Security &amp; Compliance Center. 
+
+3. Verwenden Sie beim Erstellen der Rollengruppe im Abschnitt **Rollen auswählen** , um der Rollengruppe die folgende Rolle hinzuzufügen: **DLP Compliance Management**.
+    
+4. Verwenden Sie den Abschnitt **Mitglieder auswählen**, um die zuvor erstellte Microsoft 365-Gruppe der Rollengruppe hinzuzufügen.
+
+Sie können auch eine Rollengruppe mit Nur-Lese-Rechten für die DLP-Richtlinien und DLP-Berichte erstellen, indem Sie die Rolle **DLP-Complianceverwaltung mit Leserechten**.
+
+Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden. Für die Richtlinienerzwingung ist kein Zugriff auf den Inhalt erforderlich.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Wie vertrauliche Informationen durch DLP erkannt werden
 
