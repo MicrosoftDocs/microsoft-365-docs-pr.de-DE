@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: 193b637236957bd0543be847be97169600367ddf
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091961"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656921"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -32,28 +32,31 @@ ms.locfileid: "45091961"
 
 > [!NOTE]
 > Wechseln Sie [hier](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)zum Korrektur Artikel.
-  
+
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
-  
-- Ihre Organisation verfügt über [Office 365 erweiterte Bedrohungsschutz](office-365-atp.md) und [Lizenzen werden Benutzern zugewiesen](../../admin/manage/assign-licenses-to-users.md).
-    
-- die [Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
-    
-- Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Anti-Phishing-Maßnahmen und so weiter definiert sind. Weitere Informationen finden Sie unter [Protect Against Threats in Office 365](protect-against-threats.md).
-    
-- Sie sind globaler Administrator oder haben im Security Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen &amp; . Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein. 
 
-#### <a name="preview-role-permissions"></a>Vorschau der Rollen Berechtigungen
+- Ihre Organisation verfügt über [Office 365 erweiterte Bedrohungsschutz](office-365-atp.md) und [Lizenzen werden Benutzern zugewiesen](../../admin/manage/assign-licenses-to-users.md).
+
+- die [Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert.
+
+- Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Anti-Phishing-Maßnahmen und so weiter definiert sind. Weitere Informationen finden Sie unter [Protect Against Threats in Office 365](protect-against-threats.md).
+
+- Sie sind globaler Administrator oder haben im Security Compliance Center entweder den Sicherheitsadministrator oder die Such-und Säuberungs Rolle zugewiesen &amp; . Weitere Informationen finden Sie unter [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschau Rolle zugewiesen sein.
+
+### <a name="preview-role-permissions"></a>Vorschau der Rollen Berechtigungen
 
 Um bestimmte Aktionen auszuführen, beispielsweise das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von e-Mail-Nachrichteninhalten, müssen Sie eine neue Rolle namens " *Preview* " zu einer anderen entsprechenden Rollengruppe hinzufügen. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
 
-|Aktivität  |Rollengruppe |Vorschau-Rolle erforderlich?  |
-|---------|---------|---------|
-|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |Globaler Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter     | Nein   |
-|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.    |Globaler Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter   |       Nein  |
-|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails     |Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau   |   Ja      |
+****
+
+|Aktivität|Rollengruppe|Vorschau-Rolle erforderlich?|
+|---|---|---|
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen |Globaler Administrator <br> Sicherheitsadministrator <br> Sicherheitsleseberechtigter|Nein|
+|Verwenden Sie Threat Explorer (und Echtzeiterkennung), um Kopfzeilen für e-Mail-Nachrichten anzuzeigen sowie e-Mail-Nachrichten, die in Quarantäne verschoben wurden, anzuzeigen und herunterzuladen.|Globaler Administrator <br> Sicherheitsadministrator <br>Sicherheitsleseberechtigter|Nein|
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von an Postfächern zugestellten e-Mails|Globaler Administrator <br>Sicherheitsadministrator <br> Sicherheitsleseberechtigter <br> Vorschau|Ja|
+|
 
 > [!NOTE]
 > *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschau Rolle muss einer vorhandenen Rollengruppe für Office 365 hinzugefügt werden. Der globalen Administrator Rolle wird das Microsoft 365 Admin Center ( [https://admin.microsoft.com](https://admin.microsoft.com) ) zugewiesen, und die Rollen Sicherheitsadministrator und Sicherheits Leser werden im Security & Compliance Center zugewiesen ( [https://protection.office.com](https://protection.office.com) ). Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -84,6 +87,7 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
     Ansicht " *Einsendungen* " zeigt alle e-Mails an, die von Administrator oder Benutzer übermittelt wurden, die an Microsoft gemeldet wurden.
 
 4. **Suchen und Filtern in Threat Explorer**: Filter werden oben auf der Seite in der Suchleiste angezeigt, um Administratoren bei ihren Untersuchungen zu unterstützen. Beachten Sie, dass mehrere Filter gleichzeitig angewendet werden können, und mehrere durch trennzeichengetrennte Werte zu einem Filter hinzugefügt werden, um die Suche einzuschränken. Denken Sie daran:
+
     - Filter führen bei den meisten Filterbedingungen eine exakte Übereinstimmung aus.
     - Der Antragsteller Filter verwendet eine Contains-Abfrage.
     - URL-Filter funktionieren mit oder ohne Protokolle (z. b. HTTPS).
@@ -98,17 +102,19 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
    Das *Filtern nach Stunden* hilft dem Sicherheitsteam Ihres Unternehmens schnell. Die kürzeste zulässige Dauer beträgt 30 Minuten. Wenn Sie die verdächtige Aktion mit einem Zeitrahmen eingrenzen können (beispielsweise vor 3 Std.), wird dadurch der Kontext eingeschränkt und das Problem gezielt identifiziert.
 
-  ![Die Option nach Stunden filtern, um die Anzahl der zu verarbeitenden Daten Sicherheitsteams einzuschränken und deren kürzeste Dauer 30 Minuten beträgt.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   ![Die Option nach Stunden filtern, um die Anzahl der zu verarbeitenden Daten Sicherheitsteams einzuschränken und deren kürzeste Dauer 30 Minuten beträgt.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **Fields in Threat Explorer**: Threat Explorer macht viel mehr sicherheitsbezogene e-Mail-Informationen wie *Zustellungs Aktionen*, *Zustellungsorte*, *spezielle Aktionen*, *Richtungs*-, *Außerkraftsetzungen*und *URL-Bedrohungen*verfügbar. Außerdem kann das Sicherheitsteam Ihrer Organisation mit höherer Sicherheit untersucht werden. 
+6. **Fields in Threat Explorer**: Threat Explorer macht viel mehr sicherheitsbezogene e-Mail-Informationen wie *Zustellungs Aktionen*, *Zustellungsorte*, *spezielle Aktionen*, *Richtungs*-, *Außerkraftsetzungen*und *URL-Bedrohungen*verfügbar. Außerdem kann das Sicherheitsteam Ihrer Organisation mit höherer Sicherheit untersucht werden.
 
     *Zustellungs Aktion* ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
+
     - **Zugestellt** – e-Mails wurden im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.
     - **Junked** (zugestellt an Junk) – e-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in seinem Junk-oder Deleted-Ordner.
     - **Blockiert** – alle e-Mail-Nachrichten, die unter Quarantäne gestellt, fehlerhaft oder gelöscht wurden. (Für den Benutzer ist vollständig kein Zugriff möglich.)
     - **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage böswillig aufweisen
 
     **Zustellungsort**: der Filter "Übermittlungsort" steht zur Verfügung, damit Administratoren verstehen, wo verdächtige böswillige e-Mails beendet wurden und welche Aktionen dazu unternommen wurden. Die daraus resultierenden Daten können in das Arbeitsblatt exportiert werden. Mögliche Zustellungsorte sind:
+
     - **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem bestimmten Ordner, entsprechend Ihren e-Mail-Regeln.
     - **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
     - **Junk-Ordner** – die e-Mail befindet sich im Junk-e-Mail-Ordner eines Benutzers.
@@ -121,15 +127,18 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
     **Außerkraftsetzungen**: dieser Filter enthält Informationen, die auf der Registerkarte Details der e-Mail angezeigt werden, und verwendet diese, um anzuzeigen, wo Organisations-oder Benutzerrichtlinien zum zulassen und Blockieren von e-Mails *außer Kraft gesetzt*wurden. Das wichtigste an diesem Filter ist, dass es dem Sicherheitsteam Ihres Unternehmens hilft zu sehen, wie viele verdächtige e-Mails aufgrund der Konfiguration übermittelt wurden. Dadurch erhalten Sie die Möglichkeit, nach Bedarf die zulässigen und blockierten zu ändern. Dieses Resultset dieses Filters kann in das Arbeitsblatt exportiert werden.
 
-|Überschreibungen von Threat Explorer  | Bedeutung  |
-|---------|---------|
-|Zulässig durch org-Richtlinie     |   E-Mail-Nachrichten wurden im Postfach gemäß der Organisationsrichtlinie zugelassen.       |
-|Durch org-Richtlinie blockiert      |  E-Mail-Nachrichten wurden gemäß der Organisationsrichtlinie von der Zustellung an das Postfach blockiert.    |
-|Durch die org-Richtlinie blockierte Dateierweiterung     | Die Datei wurde gemäß der Organisationsrichtlinie von der Zustellung an das Postfach blockiert.        |
-|Nach Benutzerrichtlinie zulässig     | E-Mail-Nachrichten wurden gemäß der Benutzerrichtlinie in das Postfach zugelassen.        |
-|Durch Benutzerrichtlinie blockiert     | E-Mail-Nachrichten wurden gemäß der Benutzerrichtlinie von der Zustellung an das Postfach blockiert.        |
+    ****
 
-**URL Threat**: das Feld URL-Bedrohung wurde auf der Registerkarte *Details* einer e-Mail angezeigt, um die von einer URL dargestellte Bedrohung anzugeben. Bedrohungen, die von einer URL dargestellt werden, können *Schadsoftware*, *Phishing*oder *Spam*sein, und eine URL *ohne Bedrohung* wird im Abschnitt "Bedrohungen" *keine Aussage geben* .
+    |Überschreibungen von Threat Explorer|Bedeutung|
+    |---|---|
+    |Zulässig durch org-Richtlinie|E-Mail-Nachrichten wurden im Postfach gemäß der Organisationsrichtlinie zugelassen.|
+    |Durch org-Richtlinie blockiert|E-Mail-Nachrichten wurden gemäß der Organisationsrichtlinie von der Zustellung an das Postfach blockiert.|
+    |Durch die org-Richtlinie blockierte Dateierweiterung|Die Datei wurde gemäß der Organisationsrichtlinie von der Zustellung an das Postfach blockiert.|
+    |Nach Benutzerrichtlinie zulässig|E-Mail-Nachrichten wurden gemäß der Benutzerrichtlinie in das Postfach zugelassen.|
+    |Durch Benutzerrichtlinie blockiert|E-Mail-Nachrichten wurden gemäß der Benutzerrichtlinie von der Zustellung an das Postfach blockiert.|
+    |
+
+    **URL Threat**: das Feld URL-Bedrohung wurde auf der Registerkarte *Details* einer e-Mail angezeigt, um die von einer URL dargestellte Bedrohung anzugeben. Bedrohungen, die von einer URL dargestellt werden, können *Schadsoftware*, *Phishing*oder *Spam*sein, und eine URL *ohne Bedrohung* wird im Abschnitt "Bedrohungen" *keine Aussage geben* .
 
 7. **E-Mail-Zeitachsenansicht**: Ihr Sicherheits Betriebsteam muss möglicherweise tief in die e-Mail-Details eintauchen, um weiter zu untersuchen. Die e-Mail-Zeitachse ermöglicht Administratoren das Anzeigen von Aktionen, die in einer e-Mail von der Zustellung bis zur nach Zustellung vorgenommen wurden. Klicken Sie zum Anzeigen einer e-Mail-Zeitachse auf den Betreff einer e-Mail-Nachricht, und klicken Sie dann auf e-Mail-Zeitplan. (Es wird unter anderen Überschriften wie Zusammenfassung oder Details auf dem Panel angezeigt.) Diese Ergebnisse können in das Arbeitsblatt exportiert werden.
 
@@ -141,52 +150,52 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
     - [Zeigen Sie die Zeitachse Ihrer e-Mail an](#view-the-timeline-of-your-email).
 
-    ##### <a name="check-the-delivery-action-and-location"></a>Überprüfen der Übermittlungsaktion und des Speicherorts
+### <a name="check-the-delivery-action-and-location"></a>Überprüfen der Übermittlungsaktion und des Speicherorts
 
-    In [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md)haben Sie nun die Spalten **Zustellungs Aktion** und **Zustellungs Speicherort** anstelle der früheren Spalte **Zustellungs Status** . Dadurch wird ein vollständigeres Bild davon erzielt, wo Ihre e-Mail-Nachrichten landen. Ein Teil des Ziels dieser Änderung besteht darin, Untersuchungen für Sicherheits Betriebsteams zu vereinfachen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mail-Nachrichten auf einen Blick zu erkennen ist.
+In [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md)haben Sie nun die Spalten **Zustellungs Aktion** und **Zustellungs Speicherort** anstelle der früheren Spalte **Zustellungs Status** . Dadurch wird ein vollständigeres Bild davon erzielt, wo Ihre e-Mail-Nachrichten landen. Ein Teil des Ziels dieser Änderung besteht darin, Untersuchungen für Sicherheits Betriebsteams zu vereinfachen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mail-Nachrichten auf einen Blick zu erkennen ist.
 
-    Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
+Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
-    - **Zustellungs Aktion** – wie lautet der Status dieser e-Mail?
+- **Zustellungs Aktion** – wie lautet der Status dieser e-Mail?
 
-    - **Zustellungs Speicherort** – wohin wurde diese e-Mail weitergeleitet?
+- **Zustellungs Speicherort** – wohin wurde diese e-Mail weitergeleitet?
 
-    Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
+Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
 
-    - **Zugestellt** – e-Mails wurden im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.
+- **Zugestellt** – e-Mails wurden im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.
 
-    - **Junked** – e-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in seinem Junk-oder Deleted-Ordner.
+- **Junked** – e-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mail-Nachrichten in seinem Junk-oder Deleted-Ordner.
 
-    - **Blockiert** – alle e-Mail-Nachrichten, die unter Quarantäne gestellt, fehlerhaft oder gelöscht wurden. (Für den Benutzer ist vollständig kein Zugriff möglich.)
+- **Blockiert** – alle e-Mail-Nachrichten, die unter Quarantäne gestellt, fehlerhaft oder gelöscht wurden. (Für den Benutzer ist vollständig kein Zugriff möglich.)
 
-    - **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, in denen der Anhang als böswillig bezeichnet wird.
- 
-    Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
+- **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, in denen der Anhang als böswillig bezeichnet wird.
 
-    - **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
+Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
 
-    - **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
+- **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
 
-    - **Junk-Ordner** – die e-Mail befindet sich im Junk-Ordner eines Benutzers.
+- **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
 
-    - **Ordner "Gelöschte Elemente"** – die e-Mail befindet sich im Ordner "Gelöschte Elemente" eines Benutzers.
+- **Junk-Ordner** – die e-Mail befindet sich im Junk-Ordner eines Benutzers.
 
-    - **Quarantine** – die e-Mail-Nachricht in Quarantäne und nicht im Postfach eines Benutzers.
+- **Ordner "Gelöschte Elemente"** – die e-Mail befindet sich im Ordner "Gelöschte Elemente" eines Benutzers.
 
-    - **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
+- **Quarantine** – die e-Mail-Nachricht in Quarantäne und nicht im Postfach eines Benutzers.
 
-    - **Fallen gelassen** – die e-Mail wird irgendwo im Nachrichtenfluss verloren.
+- **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
 
-     ##### <a name="view-the-timeline-of-your-email"></a>Anzeigen der Zeitachse Ihrer e-Mail
-  
-     **E-Mail-Zeitachse** ist ein Feld in Threat Explorer, das die Suche für Ihr Sicherheitsteam erleichtert. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. Einige Ereignisse, die nach der Zustellung an e-Mails geschehen, werden in der Spalte **spezielle Aktionen** erfasst. Durch das Kombinieren von Informationen aus der Zeitachse einer e-Mail-Nachricht mit speziellen Aktionen, die nach der Zustellung vorgenommen wurden, erhalten Administratoren Einblicke in Richtlinien und die Bedrohungsbehandlung (beispielsweise, wohin die e-Mail weitergeleitet wurde, und in einigen Fällen was die abschließende Bewertung war).
+- **Fallen gelassen** – die e-Mail wird irgendwo im Nachrichtenfluss verloren.
+
+### <a name="view-the-timeline-of-your-email"></a>Anzeigen der Zeitachse Ihrer e-Mail
+
+**E-Mail-Zeitachse** ist ein Feld in Threat Explorer, das die Suche für Ihr Sicherheitsteam erleichtert. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. Einige Ereignisse, die nach der Zustellung an e-Mails geschehen, werden in der Spalte **spezielle Aktionen** erfasst. Durch das Kombinieren von Informationen aus der Zeitachse einer e-Mail-Nachricht mit speziellen Aktionen, die nach der Zustellung vorgenommen wurden, erhalten Administratoren Einblicke in Richtlinien und die Bedrohungsbehandlung (beispielsweise, wohin die e-Mail weitergeleitet wurde, und in einigen Fällen was die abschließende Bewertung war).
 
 > [!IMPORTANT]
 > Wechseln Sie [hier](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)zu einem Korrektur Thema.
 
 <!-- Reference material
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
 
 2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
@@ -194,34 +203,34 @@ Threat Explorer ist ein leistungsfähiger Bericht, der mehrere Zwecke wie das Su
 
     Once you've opened the email timeline, you should see a table that tells you the post-delivery events for that mail. In the case of no further events for the email, you should see a single event for the original delivery that states a result like **Blocked** with a verdict like **Phish**. The tab also has the option to export the entire email timeline, and this exports all the details on the tab and details on the email (things like Subject, Sender, Recipient, Network, and Message ID).
 
-    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view. 
-    
-    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was. 
+    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
+
+    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was.
 
 4. In the **View** menu, choose **All email**.
 
     ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
-  
+
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
     ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
-    
+
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
-    
+
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
     ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
-  
+
 6. Below the chart, review the **Email** list below the chart.
 
     ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
-  
+
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
     ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
-  
+
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
-    
+
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
     ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
@@ -234,7 +243,7 @@ Malicious attackers might be sending mail to people in your organization in an a
 
 Threat Explorer provides your security operations team with the details they need to investigate suspicious email. Your security operations team can:
 
-- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body) 
+- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body)
 
 - [Check the delivery action and location](#check-the-delivery-action-and-location)
 
@@ -244,13 +253,13 @@ Threat Explorer provides your security operations team with the details they nee
 
 The ability to preview email headers and download the body of an email body are powerful capabilities in Threat Explorer. Appropriate [permissions](permissions-in-the-security-and-compliance-center.md) must be assigned. See [Preview role permissions](#preview-role-permissions).
 
-To access your message header and email download options, follow these steps: 
+To access your message header and email download options, follow these steps:
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
-    
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
+
 2. In the left navigation, choose **Threat management** \> **Explorer**.
 
-3. Click on a subject in the Threat Explorer table. 
+3. Click on a subject in the Threat Explorer table.
 
     This opens the flyout, where both header preview and email download links are positioned.
 
@@ -265,7 +274,7 @@ To access your message header and email download options, follow these steps:
 [Beheben von in Office 365 zugestellten böswilligen e-Mails](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
-  
+
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
-  
+
 [Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)

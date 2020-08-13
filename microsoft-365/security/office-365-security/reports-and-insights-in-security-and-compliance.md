@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, die im Security & Compliance Center zur Verfügung stehen, und wie Sie diese zum Anzeigen und Durchsuchen von Daten und zum Ausführen von schnell Aktionen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577186"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652777"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 
@@ -40,7 +40,9 @@ Neben der Hervorhebung von Problembereichen enthalten Smart Reports und Einblick
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>Berichtstypen im Security & Compliance Center
 
 Im Security & Compliance Center steht eine Vielzahl von Berichten zur Verfügung. (Wechseln Sie zu **Berichte** \> **Dashboard** , um eine Gesamtansicht zu erhalten.) In der folgenden Tabelle sind die verfügbaren Berichte mit Links aufgeführt, um weitere Informationen zu erhalten:
-  
+
+****
+
 |Art der Information|Navigation|Weitere Informationen finden Sie unter|
 |---|---|---|
 |**Security & Compliance Center-Berichte** (alle nach oben)  <br/> Wichtige Einblicke und Empfehlungen sowie Links zu Sicherheits &-Konformitätsberichten, einschließlich Berichten zur Verhinderung von Datenverlusten, Bezeichnungen, e-Mail-Sicherheitsberichten, Advanced Threat Protection-Berichten und mehr|Wechseln Sie im Security & Compliance Center zu **Berichte** - \> **Dashboard**|[Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center](../mtp/monitoring-and-reporting.md)|
@@ -53,6 +55,7 @@ Im Security & Compliance Center steht eine Vielzahl von Berichten zur Verfügung
 |**Einhaltung der DSGVO** <br/> Informationen zur dsgvo-Compliance, einschließlich Links zu Datensubjekten, Bezeichnungs Trends und aktiven & geschlossenen Fällen|Wechseln Sie im Security & Compliance Center zum **Data Privacy** \> **dsgvo Dashboard** .|[Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**Überwachungsprotokoll** <br/> Informationen über Microsoft 365-Aktivitäten, Benutzer, Dateien oder Ordner und mehr|Wechseln Sie im Security & Compliance Center zu **Search & Investigation** \> **Audit Log Search** .|[Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Kompatibilitätsberichte** <br/> FedRAMP-Berichte, Governance, Risiko- und Complianceberichte, Berichte über die ISO-Informationssicherheitsverwaltung und SOC-Überwachungs- und Beurteilungsberichte (Service Organization Controls)|Wechseln Sie im Security & Compliance Center zu **Dienst Assurance** - \> **Konformitätsberichten** .|[Planen der Sicherheit & Compliance in Office 365](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## <a name="related-topics"></a>Verwandte Themen
 

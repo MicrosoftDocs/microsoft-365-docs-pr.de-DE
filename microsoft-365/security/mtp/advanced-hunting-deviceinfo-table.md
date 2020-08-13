@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 342e5747f2c59022ffef76f30e4845f26550c88a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899279"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649085"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -45,7 +45,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `OSArchitecture` | string | Die Architektur des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Dies weist auf bestimmte Betriebssysteme hin, einschließlich Variationen innerhalb der gleichen Familie wie Windows 10 und Windows 7 |
 | `OSBuild` | string | Buildversion des Betriebssystems, das auf dem Computer läuft |
-| `IsAzureADJoined` | boolean | Boolescher Indikator dafür, ob der Computer mit dem Azure-Active Directory verbunden ist |
+| `IsAzureADJoined` | Boolescher Wert | Boolescher Indikator dafür, ob der Computer mit dem Azure-Active Directory verbunden ist |
 | `LoggedOnUsers` | string | Liste aller Benutzer, die zum Zeitpunkt des Ereignisses im JSON-Array Format auf dem Computer angemeldet sind |
 | `RegistryDeviceTag` | string | Durch die Registrierung hinzugefügtes Machine-Tag |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte zusammen mit den Gerätename-und timestamp-Spalten verwendet werden. |
@@ -56,6 +56,6 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

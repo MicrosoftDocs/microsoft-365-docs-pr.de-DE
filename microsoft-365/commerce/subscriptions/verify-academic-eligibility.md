@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Berechtigung ihrer Schule für Microsoft 365 Education Academic Pricing überprüfen können.
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560703"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653725"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Überprüfen der akademischen Eignung für Microsoft 365 Education-Abonnements
 
@@ -59,7 +59,7 @@ Wenn Ihre akademische Berechtigung verweigert wird, siehe [meine Schule ist nich
 Nachdem Sie eine Microsoft 365 Education-Testversion haben, können Sie den Status der akademischen Berechtigung ihrer Schule jederzeit überprüfen.
 
 1. Wechseln Sie zum [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-2. Scrollen Sie auf der Startseite nach unten, und suchen Sie nach der **Abrechnungs** Karte. \
+2. Suchen Sie auf der Startseite die **Abrechnungs** Karte. \
     Die **Abrechnungs** Karte gibt den Status des Überprüfungsvorgangs an. Die Karte zeigt einen der folgenden Status: genehmigt, Ausstehend, abgelehnt oder Ihre Domäne hinzufügen.
 
     > [!NOTE]

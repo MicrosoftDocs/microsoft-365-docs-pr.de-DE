@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Erhalten Sie einen Überblick über die Integration von Security Information and Event Management (SIEM) Server mit Ihren Microsoft 365 Cloud-Diensten und-Anwendungen.
-ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035260"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653572"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integration von Security Information and Event Management (SIEM) Server in Microsoft 365-Dienste und-Anwendungen
 
@@ -45,9 +45,10 @@ Ob Sie einen Siem-Server benötigen, hängt von vielen Faktoren ab, beispielswei
 
 Ein Siem-Server kann Daten aus einer Vielzahl von Microsoft 365-Diensten und-Anwendungen empfangen. In der folgenden Tabelle sind mehrere Microsoft 365-Dienste und-Anwendungen zusammen mit Siem Server-Eingaben und Ressourcen aufgeführt, um weitere Informationen zu erhalten.
 
-||||
+****
+
+|Microsoft 365-Dienst oder-Anwendung|Siem-Server-Eingänge/-Methoden|Ressourcen mit mehr Informationen|
 |---|---|---|
-|**Microsoft 365-Dienst oder-Anwendung**|**Siem-Server-Eingänge/-Methoden**|**Ressourcen mit mehr Informationen**|
 |[Office 365 Advanced Threat Protection](office-365-atp.md)|Überwachungsprotokolle|[Siem-Integration mit Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)|In Azure gehosteter HTTPS-Endpunkt <br/>REST-API|[Abrufen von Benachrichtigungen an Ihre Siem-Tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Protokoll Integration|[Siem-Integration in Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/siem)|

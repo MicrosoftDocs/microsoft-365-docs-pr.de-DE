@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die Junk-e-Mail-Einstellungen in Exchange Online Postfächern konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Internet zur Verfügung.
-ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755260"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653041"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -80,9 +80,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie den vorherigen Befehl ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SlientlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
-> 
+>
 > - Selbst wenn Sie die Junk-e-Mail-Regel deaktivieren, kann der Outlook-Junk-e-Mail-Filter (je nach Konfiguration) auch bestimmen, ob es sich bei einer Nachricht um Spam handelt, und Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner basierend auf dem eigenen Spam Urteil und der Sammlung "Listen sicherer Adressen" im Postfach verschieben können. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
@@ -99,9 +99,10 @@ Befolgen Sie einen der folgenden Schritte, um zu überprüfen, ob die Junk-E-Mai
 
 Die Sammlung von Listen sicherer Adressen für ein Postfach umfasst die Liste sicherer Absender, die Liste sicherer Empfänger und die Liste blockierter Absender. Standardmäßig können Benutzer die Sammlung von Listen sicherer Adressen in Ihrem eigenen Postfach in Outlook oder Outlook im Internet konfigurieren. Administratoren können die entsprechenden Parameter im **Set-MailboxJunkEmailConfiguration** -Cmdlet zum Konfigurieren der Sammlung von Listen sicherer Adressen für ein Benutzerpostfach verwenden. Diese Parameter werden in der folgenden Tabelle beschrieben.
 
-|||
+****
+
+|Parameter für die Gruppe "MailboxJunkEmailConfiguration"|Einstellung für Outlook im Internet|
 |---|---|
-|**Parameter für die Gruppe "MailboxJunkEmailConfiguration"**|**Einstellung für Outlook im Internet**|
 |_BlockedSendersAndDomains_|**E-Mails von diesen Absendern und Domänen in Junk-E-Mail-Ordner verschieben.**|
 |_ContactsTrusted_|**Meine Kontakte sind vertrauenswürdige Absender**|
 |_TrustedListsOnly_|**Nur vertrauenswürdige e-Mails von Adressen in der Liste "sichere Absender und Domänen" und sichere Mailinglisten**|
@@ -143,11 +144,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Wenn der Benutzer sein Postfach nie geöffnet hat, wird möglicherweise eine Fehlermeldung angezeigt, wenn Sie die vorherigen Befehle ausführen. Um diesen Fehler für Massenvorgänge zu unterdrücken, fügen Sie `-ErrorAction SlientlyContinue` den Befehl " **MailboxJunkEmailConfiguration** " hinzu.
-> 
+>
 > - Selbst wenn die Junk-e-Mail-Regel für das Postfach deaktiviert ist, können Sie die Sammlung von Listen sicherer Adressen weiterhin konfigurieren, und der Outlook-Junk-e-Mail-Filter kann Nachrichten in den Posteingang oder den Junk-e-Mail-Ordner verschieben. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zu Junk-E-Mail-Einstellungen in Outlook](#about-junk-email-settings-in-outlook) in diesem Thema.
-> 
+>
 > - Der Outlook-Junk-e-Mail-Filter verfügt über zusätzliche Einstellungen für die Sammlung von Listen sicherer Adressen (beispielsweise **automatisch Personen I-e-Mails zur Liste sicherer Absender hinzufügen**). Weitere Informationen finden Sie unter [Verwenden von Junk-e-Mail-Filter, um zu steuern, welche Nachrichten angezeigt](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)werden.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?

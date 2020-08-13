@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Hier erfahren Sie, wie Sie ATP für SharePoint, OneDrive und Microsoft Teams aktivieren, einschließlich der Vorgehensweise zum Festlegen von Benachrichtigungen für erkannte Dateien.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811074"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656551"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -35,17 +35,20 @@ ms.locfileid: "44811074"
 
 Um ATP-Richtlinien zu definieren oder zu bearbeiten, muss Ihnen eine entsprechende Rolle zugewiesen sein. In der folgenden Tabelle werden einige Beispiele beschrieben:
 
+****
+
 |Rolle|Wo/wie zugewiesen|
-|---------|---------|
+|---|---|
 |globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Sicherheitsadministrator|Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams
 
 **Bevor Sie mit diesem Verfahren beginnen, müssen Sie sicherstellen, dass die Überwachungsprotokollierung für Ihre Microsoft 365-Umgebung bereits aktiviert ist**. Dies erfolgt in der Regel durch eine Person, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) , und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+1. Wechseln Sie zu <https://protection.office.com> , und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
 
 2. Wählen Sie im Sicherheits & Compliance Center im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinien** für \> **sichere Anlagen**aus.
 

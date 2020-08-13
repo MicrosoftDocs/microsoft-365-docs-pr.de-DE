@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Thema werden Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen geleitet, die sich auf die Sicherheit Ihrer Microsoft 365-Umgebung auswirken.
-ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588052"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653557"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurieren Ihres Microsoft 365-Mandanten für mehr Sicherheit
 
@@ -38,9 +38,10 @@ Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend a
 
 Das Microsoft 365 Security Center umfasst Funktionen, die Ihre Umgebung schützen. Es enthält auch Berichte und Dashboards, die Sie zum Überwachen und ergreifen von Aktionen verwenden können. Einige Bereiche verfügen über Standardrichtlinien Konfigurationen. Einige Bereiche enthalten keine Standardrichtlinien oder-Regeln. Besuchen Sie diese Richtlinien unter Threat Management, um Einstellungen für die Bedrohungs Verwaltung für eine sicherere Umgebung zu optimieren.
 
-||||
+****
+
+|Bereich|Enthält eine Standardrichtlinie|Empfehlung|
 |---|---|---|
-|**Bereich**|**Enthält eine Standardrichtlinie**|**Empfehlung**|
 |**Anti-Phishing**|Ja|Wenn Sie über eine benutzerdefinierte Domäne verfügen, konfigurieren Sie die standardmäßige Anti-Phishing-Richtlinie, um die e-Mail-Konten Ihrer wertvollsten Benutzer wie Ihr CEO zu schützen und Ihre Domäne zu schützen. Überprüfen Sie die [Anti-Phishing-Richtlinien in Office 365](set-up-anti-phishing-policies.md) und lesen Sie [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md) oder [configure ATP Anti-Phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware-Modul**|Ja| Bearbeiten der Standardrichtlinie: <br/> &ensp;&ensp;* Filter für allgemeine Anlagentypen – auswählen auf <br/><br/> Sie können auch benutzerdefinierte Filterrichtlinien für Schadsoftware erstellen und diese auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anwenden. <br/><br/> Weitere Informationen: <br/> &ensp;&ensp;* [Anti-Malware-Schutz](anti-malware-protection.md) <br/> &ensp;&ensp;* [Konfigurieren von Anti-Malware-Richtlinien](configure-anti-malware-policies.md)|
 |**Sichere Anlagen in ATP**|Nein| Schützen Sie auf der Hauptseite für sichere Anlagen die Dateien in SharePoint, OneDrive und Microsoft Teams, indem Sie dieses Kontrollkästchen aktivieren: <br/> &ensp;&ensp;* Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams <br/><br/> Fügen Sie mit den folgenden Einstellungen eine neue Richtlinie für sichere Anlagen hinzu: <br/> &ensp;&ensp;* Block – blockiert die aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware (Wählen Sie diese Option) <br/> &ensp;&ensp;* Redirect aktivieren – (aktivieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse wie ein Administrator-oder Quarantäne Konto ein) <br/> &ensp;&ensp;* Apply die obige Auswahl, wenn Malware-Scans für Anlagen Timeout oder Fehler auftritt (aktivieren Sie dieses Kontrollkästchen) <br/> &ensp;&ensp;* Angewendet auf – die Empfängerdomäne lautet (Wählen Sie Ihre Domäne aus) <br/><br/>Weitere Informationen: [Einrichten Office 365 Richtlinien für ATP-sichere Anlagen](set-up-atp-safe-attachments-policies.md)|
@@ -56,9 +57,10 @@ Das Microsoft 365 Security Center umfasst Funktionen, die Ihre Umgebung schütze
 
 Besuchen Sie diese Berichte und Dashboards, um mehr über die Integrität Ihrer Umgebung zu erfahren. Die Daten in diesen Berichten werden reicher, wenn Ihre Organisation Office 365 Dienste verwendet. Machen Sie sich jetzt mit dem vertraut, was Sie überwachen und Aktionen ausführen können. Weitere Informationen finden Sie unter: [Reports in den Microsoft 365 Security and Compliance Centers](../../compliance/reports-in-security-and-compliance.md).
 
-|||
+****
+
+|Dashboard|Beschreibung|
 |---|---|
-|**Dashboard**|**Beschreibung**|
 |[Threat Management-Dashboard](security-dashboard.md)|Verwenden Sie im Abschnitt " **Threat Management** " des Sicherheitscenters dieses Dashboard, um Bedrohungen zu sehen, die bereits behandelt wurden, und als ein handliches Tool für die Berichterstellung an Entscheidungsträger in Unternehmen darüber, welche Bedrohungen Untersuchung und Antwortfunktionen bereits zur Sicherung Ihres Unternehmens ausgeführt haben.|
 |[Sicherheitsrisiken-Explorer (oder Echtzeit-Erkennung)](threat-explorer.md)|Dies befindet sich auch im Abschnitt " **Threat Management** " des Sicherheitscenters. Wenn Sie einen Angriff auf ihren Mandanten untersuchen oder auftreten, verwenden Sie Explorer (oder Echtzeiterkennung), um Bedrohungen zu analysieren. Explorer (und der Bericht über Echt Zeit Erkennungen) zeigt die Anzahl der Angriffe im Laufe der Zeit an, und Sie können diese Daten nach Bedrohungs Familien, Angreifer-Infrastruktur und vielem mehr analysieren. Sie können auch verdächtige e-Mails für die Liste der Vorfälle markieren.|
 |Berichte – Dashboard|Zeigen Sie im Sicherheitscenter im Abschnitt **Berichte** die Überwachungsberichte für Ihre SharePoint Online und Exchange Online Organisationen an. Sie können auf der Seite **Berichte anzeigen** auch auf Azure Active Directory (Azure AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD Überwachungsprotokoll zugreifen.|
@@ -70,9 +72,10 @@ Besuchen Sie diese Berichte und Dashboards, um mehr über die Integrität Ihrer 
 
 Viele der Steuerelemente für Sicherheit und Schutz im Exchange Admin Center sind ebenfalls im Sicherheitscenter enthalten. Sie müssen diese nicht an beiden Stellen konfigurieren. Hier sind einige zusätzliche Einstellungen, die empfohlen werden.
 
-||||
+****
+
+|Bereich|Enthält eine Standardrichtlinie|Empfehlung|
 |---|---|---|
-|**Bereich**|**Enthält eine Standardrichtlinie**|**Empfehlung**|
 |**Nachrichtenfluss** (e-Mail-Flussregeln, auch als Transportregeln bezeichnet)|Nein|Hinzufügen einer e-Mail-Fluss Regel zum Schutz vor Ransomware durch das Blockieren von ausführbaren Dateitypen und Office-Dateitypen, die Makros enthalten. Weitere Informationen finden Sie unter [use Mail Flow Rules to Inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Weitere Informationen finden Sie in den folgenden Themen: <br/>* [Schutz vor Ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Schutz vor Schadsoftware und Ransomware in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Wiederherstellen nach einem Ransomware-Angriff in Office 365](recover-from-ransomware.md) <br/><br/> Erstellen Sie eine e-Mail-Fluss Regel, um die automatische Weiterleitung von e-Mails an externe Domänen zu verhindern. Weitere Informationen finden Sie unter [mildernde Client-externe Weiterleitungsregeln mit Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Weitere Informationen: [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Aktivieren der modernen Authentifizierung**|Nein|Die moderne Authentifizierung ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (MFA). MFA wird empfohlen, um den Zugriff auf Cloud-Ressourcen einschließlich e-Mail zu sichern. <br/><br/> Weitere Informationen finden Sie in den folgenden Themen: <br/>* [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for Business Online: Aktivieren des Mandanten für die moderne Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Die moderne Authentifizierung ist für Office 2016 Clients, SharePoint Online und OneDrive für Unternehmen standardmäßig aktiviert. <br/><br/> Weitere Informationen: [Funktionsweise der modernen Authentifizierung für Office 2013-und Office 2016-Client-apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
@@ -85,9 +88,10 @@ SharePoint-Teamwebsites, die auf Basis der Grundstufe konfiguriert sind, ermögl
 
 Um die Ziele für den Basisschutz zu unterstützen, konfigurieren Sie die Mandantenweite Freigaberichtlinien wie hier empfohlen. Die Freigabeeinstellungen für einzelne Websites können restriktiver sein als diese Mandantenweite Richtlinie, jedoch nicht restriktiver.
 
-||||
+****
+
+|Bereich|Enthält eine Standardrichtlinie|Empfehlung|
 |---|---|---|
-|**Bereich**|**Enthält eine Standardrichtlinie**|**Empfehlung**|
 |**Freigabe** (SharePoint Online und OneDrive für Unternehmen)|Ja|Die externe Freigabe ist standardmäßig aktiviert. Diese Einstellungen werden empfohlen: <br/>* Freigabe für authentifizierte externe Benutzer zulassen und anonyme Zugriffs Links verwenden (Standardeinstellung) <br/> * Anonyme Zugriffs links laufen in diesen vielen Tagen ab. Geben Sie bei Bedarf eine Nummer ein, beispielsweise 30 Tage. <br/>* Standardverknüpfungstyp – wählen Sie intern aus (nur Personen in der Organisation). Benutzer, die über anonyme Links freigeben möchten, müssen diese Option im Menü "Freigabe" auswählen. <br/><br/> Weitere Informationen: [Übersicht über externe Freigaben](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 

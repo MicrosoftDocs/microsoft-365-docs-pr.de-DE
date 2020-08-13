@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren in eigenständigen Exchange Online Schutzorganisationen können Informationen zum Erstellen, ändern und Entfernen von Verteilergruppen und e-Mail-aktivierten Sicherheitsgruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenständigen Exchange Online Protection (EoP) PowerShell EoP.
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616502"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653653"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -30,7 +30,10 @@ In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange
 - **E-Mail-aktivierte Sicherheitsgruppen**: eine Sammlung von e-Mail-Benutzern und anderen Sicherheitsgruppen, die Zugriffsberechtigungen für Administratorrollen benötigen. Beispielsweise können Sie bestimmten Gruppen von Benutzern Administratorberechtigungen erteilen, damit diese Einstellungen für Antispam-und Antischadsoftware konfigurieren können.
 
     > [!NOTE]
-    > <ul><li>Standardmäßig lehnen neue e-Mail-aktivierte Sicherheitsgruppen Nachrichten von externen (nicht authentifizierten) Absendern ab.</li><li>Fügen Sie keine Verteilergruppen zu e-Mail-aktivierten Sicherheitsgruppen hinzu.</li></ul>.
+    >
+    > - Standardmäßig lehnen neue e-Mail-aktivierte Sicherheitsgruppen Nachrichten von externen (nicht authentifizierten) Absendern ab.
+    >
+    > - Fügen Sie keine Verteilergruppen zu e-Mail-aktivierten Sicherheitsgruppen hinzu.
 
 Sie können Gruppen in der Exchange-Verwaltungskonsole (EAC) und in der eigenständigen EoP PowerShell verwalten.
 
@@ -157,7 +160,7 @@ Verwenden Sie die folgende Syntax, um Verteilergruppen oder e-Mail-aktivierte Si
 New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">) [-Alias <text>] [-DisplayName "<Descriptive Name>"] [-Members @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">)] [-Notes "<Optional Text>"] [-PrimarySmtpAddress <SmtpAddress>] [-Type <Distribution | Security>]
 ```
 
-**Hinweise**:
+**Anmerkungen**:
 
 - Der _Name_ -Parameter ist erforderlich, hat eine maximale Länge von 64 Zeichen und muss eindeutig sein. Wenn Sie den _DisplayName_-Parameter nicht verwenden, wird der Wert des _Name_-Parameters für den Anzeigenamen verwendet.
 

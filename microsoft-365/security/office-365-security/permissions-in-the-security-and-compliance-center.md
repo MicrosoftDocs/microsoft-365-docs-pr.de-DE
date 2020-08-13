@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Administratoren können sich über die Berechtigungen informieren, die im Microsoft 365 Security & Compliance Center zur Verfügung stehen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e236278fbfaf2ff3c696e294e429cdaf895bbb3a
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: 6cf0913b4aebad5199b1da4a1794542c9c2d5362
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820572"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653617"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Berechtigungen im Security & Compliance Center
 
@@ -51,9 +51,10 @@ Durch die Verwaltung von Berechtigungen im Sicherheits & Compliance Center könn
 
 Informationen zum Erteilen des Zugriffs auf das Compliance Center für Sicherheit & finden Sie unter Gewähren von [Benutzern Zugriff auf das Microsoft 365 Compliance Admin Center](grant-access-to-the-security-and-compliance-center.md).
 
-||||
+****
+
+|Rollengruppe|Beschreibung|Zugewiesene Standardrollen|
 |---|---|---|
-|**Rollengruppe**|**Beschreibung**|**Zugewiesene Standardrollen**|
 |**Kompatibilitäts Administrator**<sup>1</sup>|Mitglieder können Einstellungen für die Geräteverwaltung, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten.|Fallverwaltung <br/><br/> Communication Compliance-Administrator <br/><br/> Kompatibilitätsanalyse für Kommunikation <br/><br/> Kommunikation Compliance Case Management <br/><br/> Untersuchung der Kommunikations Konformität <br/><br/> Communication Compliance Viewer <br/><br/> Feedback Anbieter für Datenklassifikation <br/><br/> Feedback Prüfer für die Datenklassifizierung <br/><br/> Daten Ermittlungsverwaltung <br/><br/> Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Hold <br/><br/> IB-Compliance-Management <br/><br/> Benachrichtigungen verwalten <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> Geräteverwaltung mit Ansichts Schutz <br/><br/> DLP-Konformitätsverwaltung mit Ansichts Schutz <br/><br/> Compliance-Management für die Anzeige von IB <br/><br/> Benachrichtigungen nur anzeigen verwalten <br/><br/> Schreibgeschützte Empfänger <br/><br/> Datensatzverwaltung mit Ansichts Schutz <br/><br/> Aufbewahrungsverwaltung mit Ansichts Schutz <br/><br/> |
 |**Kompatibilitätsdaten Administrator**|Mitglieder können Einstellungen für die Geräteverwaltung, Datenschutz, Verhinderung von Datenverlust, Berichte und Aufbewahrung verwalten.|Complianceadministrator <br/><br/> Compliance-Suche <br/><br/> DLP-Konformitätsverwaltung <br/><br/> Geräteverwaltung <br/><br/> Dispositionsverwaltung <br/><br/> IB-Compliance-Management <br/><br/> Benachrichtigungen verwalten <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement <br/><br/> Aufbewahrungsverwaltung <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> DLP-Konformitätsverwaltung mit Ansichts Schutz <br/><br/> Geräteverwaltung mit Ansichts Schutz <br/><br/> Compliance-Management für die Anzeige von IB <br/><br/> Benachrichtigungen nur anzeigen verwalten <br/><br/> Schreibgeschützte Empfänger <br/><br/> Datensatzverwaltung mit Ansichts Schutz <br/><br/> Aufbewahrungsverwaltung mit Ansichts Schutz|
 |**Inhalts-Explorer-Inhaltsanzeige**|Zeigen Sie die Inhaltsdateien im Inhalts-Explorer an.|Daten Klassifizierungs-Inhaltsanzeige|
@@ -79,7 +80,7 @@ Informationen zum Erteilen des Zugriffs auf das Compliance Center für Sicherhei
 |
 
 > [!NOTE]
-> <sup>1</sup> Diese Rollengruppe weist Mitgliedern keine Berechtigungen zu, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, oder um Berichte zu verwenden, die möglicherweise Exchange-Daten enthalten, wie etwa DLP-oder ATP-Berichte. Um das Überwachungsprotokoll durchsuchen oder alle Berichte anzeigen zu können, muss einem Benutzer in Exchange Online Berechtigungen zugewiesen werden. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt. Globale Administratoren können das Überwachungsprotokoll durchsuchen und alle Berichte anzeigen, da diese automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt werden. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+> <sup>1</sup> diese Rollengruppe weist Mitgliedern keine Berechtigungen zu, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, oder um Berichte zu verwenden, die möglicherweise Exchange-Daten enthalten, wie etwa DLP-oder ATP-Berichte. Um das Überwachungsprotokoll durchsuchen oder alle Berichte anzeigen zu können, muss einem Benutzer in Exchange Online Berechtigungen zugewiesen werden. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt. Globale Administratoren können das Überwachungsprotokoll durchsuchen und alle Berichte anzeigen, da diese automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt werden. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 ## <a name="roles-in-the-security--compliance-center"></a>Rollen im Security & Compliance Center
 
@@ -110,9 +111,10 @@ Beachten Sie, dass die folgenden Rollen standardmäßig nicht der Rollengruppe "
 - RMS-Entschlüsselung
 - Aufsichts Überprüfungs Administrator
 
-||||
+****
+
+|Rolle|Beschreibung|Standardrollengruppen Zuweisungen|
 |---|---|---|
-|**Rolle**|**Beschreibung**|**Standardrollengruppen Zuweisungen**|
 |**Überwachungsprotokolle**|Aktivieren und konfigurieren Sie die Überwachung für die Organisation, zeigen Sie die Überwachungsberichte der Organisation an, und exportieren Sie diese Berichte anschließend in eine Datei.|Organisationsverwaltung <br/><br/> Sicherheitsadministrator|
 |**Fallverwaltung**|Erstellen, bearbeiten, löschen und Steuern des Zugriffs auf eDiscovery-Fälle.|Complianceadministrator <br/><br/> eDiscovery-Manager <br/><br/> Insider-Risikomanagement <br/><br/> Insider Risk Management-Administratoren <br/><br/> Insider Risk Management Analysten <br/><br/> Insider Risk Management Investigators <br/><br/> Organisationsverwaltung|
 |**Kommunikation**|Verwalten Sie die gesamte Kommunikation mit den in einem erweiterten eDiscovery-Fall identifizierten Depotbanken.  Erstellen von Aufbewahrungs Benachrichtigungen, Speichern von Erinnerungen und Eskalationen an die Verwaltung. Verfolgen Sie die depotbestätigung von Aufbewahrungs Benachrichtigungen, und verwalten Sie den Zugriff auf das depotverwalter Portal, das von jeder Depotbank in einem Fall verwendet wird, um die Kommunikation für die Fälle nachzuverfolgen, in denen Sie als Depotbank identifiziert wurden.|eDiscovery-Manager|

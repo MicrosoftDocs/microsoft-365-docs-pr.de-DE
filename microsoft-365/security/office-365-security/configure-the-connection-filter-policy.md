@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EoP) konfigurieren, um e-Mails von e-Mail-Servern zuzulassen oder zu blockieren.
-ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 675247ba1764cb928bec967c581083c6365f635a
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755248"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656791"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um gute oder ungültige Quell-e-Mail-Server anhand ihrer IP-Adressen zu identifizieren. Die Hauptkomponenten der standardmäßigen Verbindungsfilter Richtlinie sind:
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder einem eigenständigen Exchange Online Schutz-Kunden (EoP) ohne Exchange Online Postfächer sind, verwenden Sie die Verbindungsfilterung in EoP (insbesondere die standardmäßige Verbindungsfilter Richtlinie), um gute oder ungültige Quell-e-Mail-Server anhand ihrer IP-Adressen zu identifizieren. Die Hauptkomponenten der Standardverbindungsfilter-Richtlinie sind:
 
 - **IP-Zulassungsliste**: Überspringen der Spamfilterung für alle eingehenden Nachrichten von den Quell-e-Mail-Servern, die Sie über die IP-Adresse oder den IP-Adressbereich angeben. In Szenarien, in denen die Spamfilterung bei Nachrichten aus diesen Quellen möglicherweise weiterhin auftritt, lesen Sie die Szenarien, in [denen Nachrichten von Quellen in der Liste der zugelassenen IP-Adressen](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) weiter unten in diesem Thema gefiltert werden. Weitere Informationen dazu, wie die IP-Zulassungsliste in Ihre allgemeine Strategie für sichere Absender passt, finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md).
 
@@ -46,17 +46,17 @@ In diesem Thema wird beschrieben, wie Sie die standardmäßige Verbindungsfilter
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Sie müssen Berechtigungen zugewiesen haben, bevor Sie die Verfahren in diesem Thema ausführen können:
+- Bevor Sie die in diesem Artikel besprochenen Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
 
   - Um die standardmäßige Verbindungsfilter Richtlinie zu ändern, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Organisationsverwaltung** oder **Sicherheits Administrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung** oder **Hygiene Verwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationsverwaltung** oder **Nachrichtenschutz** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Für den schreibgeschützten Zugriff auf die standardmäßige Verbindungsfilter Richtlinie müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-    - **Sicherheits Leser** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationsverwaltung mit Ansichts** Schutz in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Security Reader** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Schreibgeschützte Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Um die Quell-IP-Adressen der e-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Kopfzeilenfeld Connecting IP (**CIP**) im Nachrichtenkopf überprüfen. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen e-Mail-Clients finden Sie unter [View Internet Message Headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -108,7 +108,7 @@ Verwenden Sie die folgende Syntax:
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
 ```
 
-**Hinweise**:
+**Anmerkungen**:
 
 - Gültige IP-Adress-oder Adressbereichs Werte sind:
 
@@ -200,6 +200,7 @@ Wenn beide Szenarien auftreten, können Sie eine e-Mail-Fluss Regel mit den folg
 
 ## <a name="new-to-microsoft-365"></a>Neu bei Microsoft 365?
 
-||
-|:-----|
+|<!-- a -->|
+|---|
 |![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie ﻿kostenlose Video Kurse für **Administratoren und IT-Experten**, die Ihnen von LinkedIn Learning angeboten werden.|
+|

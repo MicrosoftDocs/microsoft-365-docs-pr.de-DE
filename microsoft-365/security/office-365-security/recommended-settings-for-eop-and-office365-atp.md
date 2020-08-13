@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Was sind bewährte Methoden für Exchange Online Protection (EoP) und ATP-Sicherheitseinstellungen (Advanced Threat Protection)? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Advanced Threat Protection (ATP) verwenden?
-ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: ea1c04c503fa6ecac66a6378ec466c7ea6cc4133
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430375"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653577"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Empfohlene Einstellungen für EoP und Office 365 ATP-Sicherheit
 
@@ -46,6 +46,8 @@ Antispam-, Antischadsoftware-und Anti-Phishing-Funktionen sind Features von EoP,
 ### <a name="eop-anti-spam-policy-settings"></a>EoP-Anti-Spam-Richtlinieneinstellungen
 
 Informationen zum Erstellen und Konfigurieren von Anti-Spam-Richtlinien finden Sie unter [configure Anti-Spam Policies in Office 365](configure-your-spam-filter-policies.md).
+
+****
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
@@ -72,6 +74,8 @@ Es gibt verschiedene andere Einstellungen für den erweiterten Spam Filter (ASF)
 
 Es wird empfohlen, dass Sie diese ASF-Einstellungen für **Standard** -und **Strict** -Stufen **Deaktivieren** . Weitere Informationen zu ASF-Einstellungen finden Sie unter [Advanced Spam Filter (ASF) Settings in Office 365](advanced-spam-filtering-asf-options.md).
 
+****
+
 |Name des Sicherheitsfeatures|Kommentar|
 |---|---|
 |**Bild Links zu Remotestandorten** (_IncreaseScoreWithImageLinks_)||
@@ -97,6 +101,8 @@ Informationen zum Erstellen und Konfigurieren von ausgehenden Spam Richtlinien f
 
 Weitere Informationen zu den standardmäßigen Sende Grenzwerten im Dienst finden Sie unter [Senden von Grenz](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1) Werten
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |**Maximale Anzahl von Empfängern pro Benutzer: externer stündlicher Grenzwert** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
@@ -109,9 +115,11 @@ Weitere Informationen zu den standardmäßigen Sende Grenzwerten im Dienst finde
 
 Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finden Sie unter [configure Anti-Malware Policies in Office 365](configure-anti-malware-policies.md).
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Action_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
+|**Möchten Sie Empfänger Benachrichtigen, wenn Ihre Nachrichten unter Quarantäne gestellt werden?** <br/><br/> _Aktion_|Nein <br/><br/> _DeleteMessage_|Nein <br/><br/> _DeleteMessage_|Wenn Schadsoftware in einer e-Mail-Anlage erkannt wird, wird die Nachricht isoliert und kann nur von einem Administrator freigegeben werden.|
 |**Filter "allgemeine Anlagentypen"** <br/><br/> _EnableFileFilter_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Diese Einstellung isoliert Nachrichten, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlage Inhalt.|
 |**Malware Zero-Hour Auto Purge** <br/><br/> _ZapEnabled_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |**Interne Absender** der nicht zugestellten Nachricht Benachrichtigen <br/><br/> _EnableInternalSenderNotifications_|Deaktiviert <br/><br/> `$false`|Deaktiviert <br/><br/> `$false`||
@@ -121,6 +129,8 @@ Informationen zum Erstellen und Konfigurieren von Anti-Malware-Richtlinien finde
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EoP Standardeinstellungen für Anti-Phishing-Richtlinien
 
 Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoof Settings](set-up-anti-phishing-policies.md#spoof-settings). Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [configure Anti-Phishing Policies in EoP](configure-anti-phishing-policies-eop.md).
+
+****
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
@@ -148,6 +158,8 @@ EoP-Kunden erhalten grundlegende Anti-Phishing-Funktionen, wie zuvor beschrieben
 
 Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechseleinstellungen in ATP-Richtlinien zum Schutz vor Phishing](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [configure ATP Anti-Phishing Policies](configure-atp-anti-phishing-policies.md).
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |Geschützte Benutzer: **zu schützende Benutzer hinzufügen** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Ein <br/><br/> `$true` <br/><br/> \<list of users\>|Ein <br/><br/> `$true` <br/><br/> \<list of users\>|Hängt von Ihrer Organisation ab, es wird jedoch empfohlen, Benutzer in Schlüsselrollen hinzuzufügen. Intern sind dies möglicherweise Ihr CEO, CFO und andere Führungskräfte. Diese können extern auch Ratsmitglieder oder ihren Verwaltungsrat umfassen.|
@@ -169,6 +181,8 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechs
 
 Beachten Sie, dass es sich dabei um dieselben Einstellungen handelt, die in den [Antispameinstellungen in EoP](#eop-anti-spam-policy-settings)zur Verfügung stehen.
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |**Aktivieren des Schutzes gegen Spoofing** <br/><br/> _EnableAntispoofEnforcement_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
@@ -179,6 +193,8 @@ Beachten Sie, dass es sich dabei um dieselben Einstellungen handelt, die in den 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Erweiterte Einstellungen in ATP-Richtlinien für Anti-Phishing
 
 Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced Phishing Thresholds in ATP Anti-Phishing Policies](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). Informationen zum Konfigurieren dieser Einstellung finden Sie unter [configure ATP Anti-Phishing Policies](configure-atp-anti-phishing-policies.md).
+
+****
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
@@ -192,6 +208,8 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 
 **Hinweis**: in PowerShell verwenden Sie das Cmdlet " [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) " für diese Einstellungen.
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |**Verwenden von sicheren Links in: Office 365-Anwendungen** <br/><br/> _EnableSafeLinksForO365Clients_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`|Verwenden Sie ATP-sichere Links in Office 365-Desktop-und Mobile-Clients (IOS und Android).|
@@ -203,6 +221,8 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Richtlinieneinstellungen für sichere Links in benutzerdefinierten Richtlinien für bestimmte Benutzer
 
 **Hinweis**: in PowerShell verwenden Sie die Cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) und [Sets-SafeLinksPolicy] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] für diese Einstellungen.
+
+****
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
@@ -223,6 +243,8 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 
 **Hinweis**: in PowerShell verwenden Sie das Cmdlet " [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) " für diese Einstellungen.
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
 |**Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
@@ -234,9 +256,11 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Einrichte
 
 **Hinweis**: in PowerShell verwenden Sie die Cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) und [Sets-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) für diese Einstellungen.
 
+****
+
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
 |---|---|---|---|
-|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Action_|Block <br/><br/> `Block`|Block <br/><br/> `Block`||
+|**Sichere Anlagen unbekannte Malware Antwort** <br/><br/> _Aktion_|Block <br/><br/> `Block`|Block <br/><br/> `Block`||
 |**Umleitungs Anlage bei Erkennung** : **Umleitung aktivieren** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Ein, und geben Sie eine e-Mail-Adresse an. <br/><br/> `$true` <br/><br/> eine e-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überarbeitung.|
 |**Wenden Sie die obige Auswahl an, wenn bei der Malwareüberprüfung nach Anlagen ein Timeout oder ein Fehler auftritt.** <br/><br/> _ActionOnError_|Ein <br/><br/> `$true`|Ein <br/><br/> `$true`||
 |

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: f66b17fbdaaa58cf12bd0373d0fece59349c3a48
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929504"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649499"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -99,5 +99,5 @@ DeviceProcessEvents
 - [Die Abfragesprache erlernen](advanced-hunting-query-language.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

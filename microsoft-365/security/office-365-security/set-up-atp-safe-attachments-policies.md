@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor bösartigen Dateien in e-Mails definieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430423"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656628"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Anlagen
 
@@ -46,8 +46,10 @@ Personen senden, empfangen und teilen regelmäßig Anlagen wie Dokumente, Präse
 
 - Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), müssen Sie entweder eine Exchange Online Organisations Verwaltungsrolle (globaler Administrator ist dieser Rolle standardmäßig zugewiesen) oder beide Rollen Exchange Online Verwaltung von Hygiene-und Sicherheitsadministratoren zugewiesen sein. Weitere Informationen finden Sie in der folgenden Tabelle:
 
+  ****
+
   |Rolle|Wo/wie zugewiesen|
-  |---------|---------|
+  |---|---|
   |globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
   |Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
   |Exchange Online Organisationsverwaltung, Exchange Online Hygiene Management |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
@@ -89,10 +91,11 @@ Sie sollten mehrere ATP-Richtlinien für sichere Anlagen für Ihre Organisation 
 
 Bei der Einrichtung Ihrer Richtlinien für ATP-sichere Anlagen wählen Sie unter vielen Optionen aus, darunter Monitor, blockieren, ersetzen, dynamische Zustellung usw. Wenn Sie sich Fragen, was diese Optionen angeht, fasst die folgende Tabelle die einzelnen Effekte zusammen.
 
-||||
+****
+
+|Option|Effekt|Verwenden Sie Folgendes, wenn Sie möchten:|
 |---|---|---|
-|**Option**|**Effect**|**Verwenden Sie Folgendes, wenn Sie möchten:**|
-|**Deaktivieren**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger.  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Tresoranlagen für Empfänger zu deaktivieren, die nur e-Mails von vertrauenswürdigen Absendern erhalten.**|
+|**Off**|Scannt keine Anlagen für Schadsoftware  <br/> Verzögert die Nachrichtenzustellung nicht|Deaktivieren Sie die Überprüfung für ausgewählte Empfänger.  <br/> Vermeiden Sie unnötige Verzögerungen beim Weiterleiten interner e-Mails.  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Sie sollten diese Option nur verwenden, um die Überprüfung der ATP-Tresoranlagen für Empfänger zu deaktivieren, die nur e-Mails von vertrauenswürdigen Absendern erhalten.**|
 |**Überwachen**|Sendet Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht.|Ermitteln, wo erkannte Schadsoftware in Ihrer Organisation eingeht|
 |**Block**|Verhindert, dass Nachrichten mit erkannten Schadsoftware-Anlagen fortgesetzt werden  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen|Schützen Ihrer Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen|
 |**Replace**|Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365, in](manage-quarantined-messages-and-files.md) denen ein Sicherheitsadministrator oder Analyst diese Nachrichten überprüfen und freigeben (oder löschen) kann.|Erhöhen der Sichtbarkeit für Empfänger, die Anlagen aufgrund erkannter Schadsoftware entfernt haben|

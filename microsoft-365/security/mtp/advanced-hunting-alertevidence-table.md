@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 8fc713db33b0e40adcd0975d26c10daece636ab1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899351"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649511"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -56,6 +56,6 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

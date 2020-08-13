@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anti-Phishing-Richtlinien informieren, die in Exchange Online Protection (EoP) und Office 365 Advanced Threat Protection (Office 365 ATP) zur Verfügung stehen.
-ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754664"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652717"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-Phishing-Richtlinien in Microsoft 365
 
 Richtlinien zum Konfigurieren von Einstellungen zum Schutz vor Phishing stehen in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächern und Office 365 Advanced Threat Protection (Office 365 ATP)-Organisationen zur Verfügung.
 
-ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Beispiel:
+ATP-Anti-Phishing-Richtlinien sind nur in Organisationen verfügbar, die Office 365 ATP haben. Zum Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -38,9 +38,10 @@ Alle anderen Organisationen verfügen über Anti-Phishing-Richtlinien.
 
 In der folgenden Tabelle werden die allgemeinen Unterschiede zwischen Anti-Phishing-Richtlinien und ATP-AntiPhishing-Richtlinien beschrieben:
 
-||||
+****
+
+|Feature|Antiphishing-Richtlinien|Richtlinien für ATP-Anti-Phishing|
 |---|:---:|:---:|
-|**Feature**|**Antiphishing-Richtlinien**|**Richtlinien für ATP-Anti-Phishing**|
 |Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Erstellen benutzerdefinierter Richtlinien|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Richtlinieneinstellungen<sup>\*</sup>|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -132,9 +133,9 @@ Bei einem Identitätswechsel sieht der Absender oder die e-Mail-Domäne des Abse
 
 - Ein Beispiel für einen Identitätswechsel der Domäne contoso.com ist ćóntoso.com.
 
-- Ein Beispiel für den Identitätswechsel des Benutzers Michelle@contoso.com ist Michele@contoso.com.
+- Ein Beispiel für einen Identitätswechsel der Benutzerin michelle@contoso.com ist michele@contoso.com.
 
-Eine imitierte Domäne wird andernfalls möglicherweise als rechtmäßig (registrierte Domäne, konfigurierte e-Mail-Authentifizierungs Einträge usw.) betrachtet, mit dem Unterschied, dass die Empfänger betrogen werden sollen.
+Eine imitierte Domäne kann ansonsten als seriös gelten (registrierte Domäne, konfigurierte E-Mail-Authentifizierungseinträge usw.). Der Unterschied besteht darin, dass damit Empfänger getäuscht werden sollen.
 
 Die folgenden Identitätswechseleinstellungen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar:
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie den Angriff auf unerlaubte Zustimmung in Microsoft Office 365 erkennen und korrigieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726801"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652957"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Beheben von Zuschüssen für unberechtigte Zustimmung
 
@@ -54,11 +54,11 @@ Sie müssen das **Überwachungsprotokoll** durchsuchen, um nach Zeichen zu suche
 5. Klicken Sie auf das Ergebnis, um die Details der Aktivität anzuzeigen. Klicken Sie auf **Weitere Informationen** , um Details zur Aktivität abzurufen. Überprüfen Sie, ob IsAdminContent auf true festgelegt ist.
 
 > [!NOTE]
-> 
+>
 > Es kann 30 Minuten bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird, nachdem ein Ereignis eintrat.
-> 
+>
 > Wie lange ein Überwachungsdatensatz im Überwachungsprotokoll aufbewahrt und durchsuchbar ist, hängt von Ihrem Microsoft 365-Abonnement und dem Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist. Weitere Informationen finden Sie unter [Überwachungsprotokoll](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-> 
+>
 > Wenn dieser Wert auf true festgelegt ist, weist dies darauf hin, dass ein Benutzer mit globalem Administrator Zugriff möglicherweise umfassenden Zugriff auf Daten erhalten hat. Wenn dies unerwartet ist, nehmen Sie die erforderlichen Schritte zum [bestätigen eines Angriffs](#how-to-confirm-an-attack)vor.
 
 ## <a name="how-to-confirm-an-attack"></a>Vorgehensweise zum Bestätigen eines Angriffs

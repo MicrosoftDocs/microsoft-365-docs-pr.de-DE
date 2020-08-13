@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781517"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649187"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Verwenden von freigegebenen Abfragen bei der erweiterten Suche
 
@@ -59,6 +59,9 @@ Sie können eine neue oder vorhandene Abfrage so speichern, dass Sie nur für Si
 
 2. Wählen Sie **Löschen** aus, und bestätigen Sie Löschung. Oder wählen Sie **Umbenennen** aus und geben Sie einen neuen Namen für die Abfrage ein.
 
+## <a name="create-a-direct-link-to-a-query"></a>Erstellen eines direkten Links zu einer Abfrage
+Um einen Link zu generieren, der Ihre Abfrage direkt im erweiterten Suchabfrage-Editor öffnet, schließen Sie Ihre Abfrage ab und wählen Sie **Link freigeben**aus.
+
 ## <a name="access-queries-in-the-github-repository"></a>Access-Abfragen im GitHub-Repository  
 Microsoft-Sicherheitsexperten Teilen regelmäßig Abfragen zur erweiterten Suche in einem [dazu vorgesehenen öffentlichen Repository auf GitHub](https://aka.ms/hunting-queries). Dieses Repository ist für Beiträge geöffnet. Um dazu beizutragen, [treten Sie GitHub kostenlos bei](https://github.com/).
 
@@ -69,6 +72,6 @@ Microsoft-Sicherheitsexperten Teilen regelmäßig Abfragen zur erweiterten Suche
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

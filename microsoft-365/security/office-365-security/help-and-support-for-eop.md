@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 959f842e05939e4a6cfc54d1b860de96bd8546e6
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755188"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656933"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -69,16 +69,19 @@ Weitere Informationen darüber, wie Ihnen der Premier-Support bei Ihrer Organisa
 
 Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsupport weltweit. Viele dieser Supportcenter bieten während der Geschäftszeiten in Ihrer Landessprache oder rund um die Uhr an 365 Tagen im Jahr auf Englisch Unterstützung. Wenn Ihr Standort unten nicht aufgeführt ist, verwenden Sie den virtuellen Agent wie oben beschrieben, um Ihre lokale Support-Telefonnummer zu finden.
 
-|**Land oder Region**|**Fragen vor dem Kauf und zur Abrechnung**|**Fragen an den technischen Support**|
-|:-----|:-----|:-----|
-|Brasilien|Gebührenfreie Telefonkosten: 08007621146 <br/> Lokal: 1147001999|Gleich|
-|Frankreich|Gebührenfreie Telefonkosten: 0805 540 594 <br/> Lokal: 01 57 32 42 97|Gleich|
-|Deutschland|Gebührenfreie Telefonkosten: 0800 589 2332 <br/>  Lokal: 069 380 789 508|Gleich|
+****
+
+|Land oder Region|Fragen vor dem Kauf und zur Abrechnung|Fragen an den technischen Support|
+|---|---|---|
+|Brasilien|Gebührenfreie Telefonkosten: 08007621146 <br/> Lokal: 1147001999|Wie vorherige|
+|Frankreich|Gebührenfreie Telefonkosten: 0805 540 594 <br/> Lokal: 01 57 32 42 97|Wie vorherige|
+|Deutschland|Gebührenfreie Telefonkosten: 0800 589 2332 <br/>  Lokal: 069 380 789 508|Wie vorherige|
 |Japan|Gebührenfreie Telefonkosten: 0120-628860 <br/> Lokal: 343326257|Gebührenfreie Telefonkosten: 0120-996680 <br/> Lokal: 357679793|
-|Korea|Gebührenfreie Telefonkosten: 080-495-0880 <br/> Lokal: 234831937|Gleich|
-|Spanien|Gebührenfreie Telefonkosten: 900 814 197 <br/> Lokal: 912 718 160|Gleich|
+|Korea|Gebührenfreie Telefonkosten: 080-495-0880 <br/> Lokal: 234831937|Wie vorherige|
+|Spanien|Gebührenfreie Telefonkosten: 900 814 197 <br/> Lokal: 912 718 160|Wie vorherige|
 |Vereinigtes Königreich|Gebührenfreie Telefonkosten: 0800 032 6417 <br/> Lokal: 0203 450 6455|Wie vorherige|
 |Vereinigte Staaten|Gebührenfreie Rufnummer: 1-877-913-2707|Gebührenfreie Rufnummer: 1-800-865-9408|
+|
 
 ## <a name="for-more-information-about-eop-documentation"></a>Weitere Informationen zur EOP-Dokumentation
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EoP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien festlegt, welche Richtlinie angewendet wird.
-ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209439"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653678"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Priorität des e-Mail-Schutzes
 
@@ -33,20 +33,21 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
 
 - **Die Priorität des e-Mail-Schutztyps**: Diese Reihenfolge kann nicht konfiguriert werden und wird in der folgenden Tabelle beschrieben:
 
-  |||||
+  ****
+
+  |Priorität|E-Mail-Schutz|Kategorie|Verwalten von|
   |---|---|---|---|
-  |**Priority**|**E-Mail-Schutz**|**Category**|**Verwalten von**|
   |1|Schadsoftware|Kat: MALW|[Konfigurieren von Anti-Malware-Richtlinien in EoP](configure-anti-malware-policies.md)|
-  |2|Phishing-E-Mail|Kat: PHSH|[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)|
-  |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)|
+  |2|Phishing-E-Mail|Kat: PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |3|Spam mit hoher Vertrauenswürdigkeit|Kat: HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|Kat: Spoof|[Konfigurieren von Spoof Intelligence in EoP](learn-about-spoof-intelligence.md)|
-  |5 |Spam|Kat: SPM|[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)|
-  |6 |Massensendung|Kat: Bulk|[Konfigurieren von Anti-Spam-Richtlinien in EoP](configure-your-spam-filter-policies.md)|
+  |5 |Spam|Kat: SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
+  |6 |Massensendung|Kat: Bulk|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |7<sup>\*</sup>|Domänen Identitätswechsel (geschützte Benutzer)|DIMP|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
   |8<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Domänen)|Uimp|[Konfigurieren der ATP Antiphishing-Richtlinien](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>Diese Funktionen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar.
+  <sup>\*</sup> Diese Funktionen sind nur in Richtlinien für ATP-Anti-Phishing verfügbar.
 
 - **Die Priorität der Richtlinie**: für jeden Schutztyp (Antispam, Antischadsoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, aber Sie können benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie verfügt über einen Prioritätswert, der die Reihenfolge festlegt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
@@ -54,9 +55,10 @@ Es gibt zwei Hauptfaktoren, die bestimmen, welche Richtlinie auf eine Nachricht 
 
 Nehmen Sie sich beispielsweise die folgenden ATP-Richtlinien für die antiphishingfunktion **vor, die für dieselben Benutzer gelten**, und eine Nachricht, die sowohl als Benutzeridentitätswechsel als auch als Spoofing identifiziert wird:
 
-  |||||
+  ****
+
+  |ATP-Anti-Phishing-Richtlinie|Priorität|Benutzeridentitätswechsel|Anti-Spoofing|
   |---|---|---|---|
-  |**ATP-Anti-Phishing-Richtlinie**|**Priority**|**Benutzeridentitätswechsel **|**Anti-Spoofing**|
   |Richtlinie A|1|Ein|Off|
   |Richtlinie B|2|Off|Ein|
   |

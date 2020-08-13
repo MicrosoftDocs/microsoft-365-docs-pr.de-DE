@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die ASF-Einstellungen (Advanced Spam Filter) informieren, die in Anti-Spam-Richtlinien in Exchange Online Protection (EoP) zur Verfügung stehen.
-ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352476"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653341"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Einstellungen für erweiterte Spam Filter (ASF) in EoP
 
@@ -33,7 +33,12 @@ ms.locfileid: "44352476"
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer ermöglichen die Einstellungen für den erweiterten Spamfilter (ASF) in Anti-Spam-Richtlinien (auch bekannt als Spamfilter-oder Inhaltsfilter Richtlinien) Administratoren das Markieren von Nachrichten als Spam basierend auf bestimmten Nachrichteneigenschaften. ASF zielt speziell auf diese Eigenschaften ab, da Sie häufig in Spam enthalten sind. Je nach Eigenschaft Kennzeichnen ASF-Erkennungen die Nachricht entweder als **Spam** oder als Spam mit **hoher Vertrauens**Würdigkeit.
 
 > [!NOTE]
-> Das Aktivieren einer oder mehrerer der ASF-Einstellungen ist ein aggressiver Ansatz für die Spamfilterung. Sie können Nachrichten, die von ASF gefiltert werden, nicht als falsch positive Ergebnisse melden. Nachrichten, die von ASF gefiltert wurden, können Sie nach folgenden Kriterien identifizieren: <ul><li>Regelmäßige Spamquarantäne Benachrichtigungen für Endbenutzer.</li><li>Das vorhanden sein gefilterter Nachrichten in Quarantäne.</li><li>Die spezifischen `X-CustomSpam:` X-Headerfelder, die Nachrichten hinzugefügt werden, wie in diesem Thema beschrieben.</li></ul>
+> Das Aktivieren einer oder mehrerer der ASF-Einstellungen ist ein aggressiver Ansatz für die Spamfilterung. Sie können Nachrichten, die von ASF gefiltert werden, nicht als falsch positive Ergebnisse melden. Nachrichten, die von ASF gefiltert wurden, können Sie nach folgenden Kriterien identifizieren:
+> - Regelmäßige Spamquarantäne Benachrichtigungen für Endbenutzer.
+>
+> - Das vorhanden sein gefilterter Nachrichten in Quarantäne.
+>
+> - Die spezifischen `X-CustomSpam:` X-Headerfelder, die Nachrichten hinzugefügt werden, wie in diesem Thema beschrieben.
 
 In den folgenden Abschnitten werden die ASF-Einstellungen und-Optionen beschrieben, die in den Anti-Spam-Richtlinien im Security & Compliance Center und in Exchange Online PowerShell oder eigenständigen EoP PowerShell ([New-hostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) und [sethostedcontentfilterpolicy dient zum](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) zur Verfügung stehen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
@@ -53,14 +58,12 @@ Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlin
 
   - **BCC-Nachricht senden (*BccMessage*)**: die angegebenen e-Mail-Adressen (der Wert des *den testmodebcctorecipients* -Parameters in PowerShell) werden dem Feld Bcc der Nachricht hinzugefügt, und die Nachricht wird an die Bcc-Empfänger übermittelt. Im Security & Compliance Center trennen Sie mehrere e-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere e-Mail-Adressen durch Kommas.
 
-  **Hinweise**:
+  **Anmerkungen**:
 
   - Der Testmodus ist für die folgenden ASF-Einstellungen nicht verfügbar:
 
     - **Bedingte Sender ID-Filterung: schwerer Fehler** (*MarkAsSpamFromAddressAuthFail*)
-
     - **NDR**-Rückläufer (*MarkAsSpamNdrBackscatter*)
-
     - **SPF-Eintrag: Hard Fail** (*MarkAsSpamSpfRecordHardFail*)
 
   - Die gleiche Testmodus-Aktion wird auf *alle* ASF-Einstellungen angewendet, die auf " **Test**" festgelegt sind. Sie können keine unterschiedlichen Testmodus-Aktionen für unterschiedliche ASF-Einstellungen konfigurieren.
@@ -69,9 +72,10 @@ Für jede ASF-Einstellung stehen die folgenden Optionen unter Anti-Spam-Richtlin
 
 Die folgenden ASF-Einstellungen legen die SCL-Bewertung (Spam Confidence Level) der erkannten Nachrichten auf 5 oder 6 fest, was dem **Spam** Filter Urteil und der entsprechenden Aktion in den Antispam-Richtlinien entspricht.
 
-||||
+****
+
+|Anti-Spam-Richtlinieneinstellung|Beschreibung|X-Header hinzugefügt|
 |---|---|---|
-|**Anti-Spam-Richtlinieneinstellung**|**Beschreibung**|**X-Header hinzugefügt**|
 |**Bildlinks zu Remotestandorten** <br/><br/> *IncreaseScoreWithImageLinks*|Nachrichten, die `<Img>` HTML-Tag-Links zu Remotestandorten enthalten (beispielsweise mit http), werden als Spam gekennzeichnet.|`X-CustomSpam: Image links to remote sites`|
 |**URL-Umleitung zu anderem Port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Nachricht mit Hyperlinks, die andere TCP-Ports als 80 (http), 8080 (alternatives http) oder 443 (HTTPS) umleiten, werden als Spam gekennzeichnet.|`X-CustomSpam: URL redirect to other port`|
 |**Numerische IP-Adresse in URL** <br/><br/> *IncreaseScoreWithNumericIps*|Nachrichten mit numerischen URLs (in der Regel IP-Adressen) werden als Spam gekennzeichnet.|`X-CustomSpam: Numeric IP in URL`|
@@ -82,9 +86,10 @@ Die folgenden ASF-Einstellungen legen die SCL-Bewertung (Spam Confidence Level) 
 
 Mit den folgenden ASF-Einstellungen wird die SCL-Bewertung der erkannten Nachrichten auf 9 festgelegt, was dem Spamfilter-Urteil für **hohe Zuverlässigkeit** und der entsprechenden Aktion in den Antispam-Richtlinien entspricht.
 
-||||
+****
+
+|Anti-Spam-Richtlinieneinstellung|Beschreibung|X-Header hinzugefügt|
 |---|---|---|
-|**Anti-Spam-Richtlinieneinstellung**|**Beschreibung**|**X-Header hinzugefügt**|
 |**Leere Nachrichten** <br/><br/> *MarkAsSpamEmptyMessages*|Nachrichten ohne Betreff, ohne Inhalt im Nachrichtentext und ohne Anlagen werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet.|`X-CustomSpam: Empty Message`|
 |**JavaScript oder VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Nachrichten, die JavaScript oder Visual Basic Script Edition in HTML verwenden, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Diese Skriptsprachen werden in e-Mail-Nachrichten verwendet, um zu verursachen, dass bestimmte Aktionen automatisch ausgeführt werden.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Frame- oder IFrame-Tags in HTML** <br><br/> *MarkAsSpamFramesInHtml*|Nachrichten, die `<frame>` oder `<iframe>` HTML-Tags enthalten, werden als Spam mit hoher Vertrauenswürdigkeit gekennzeichnet. <br/><br/> Diese Tags werden in e-Mail-Nachrichten verwendet, um die Seite zum Anzeigen von Text oder Grafiken zu formatieren.|`X-CustomSpam: IFRAME or FRAME in HTML`|

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über Antiphishingfunktionen, die Teil Office 365 Advanced Threat Protection sind, um den Schutz von Rohstoffen & Speer-Phishing-Angriffen bereitzustellen.
-ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44875417"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653364"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>ATP-Antiphishingfunktionen in Office 365
 
@@ -54,12 +54,15 @@ Darüber hinaus stehen Berichte zur Verfügung, um zu zeigen, wie der Dienst fü
 Damit die Lernmodelle für ATP-antiphishingmaschinen für einen bestimmten Benutzer aktiv sein müssen, muss dieser Benutzer Teil eines definierten [ATP-Safe-Attachments](atp-safe-attachments.md), [ATP-Sicherheits Links](atp-safe-links.md)oder einer ATP-Anti-Phishing-Richtlinie sein. 
 
 In der folgenden Tabelle werden einige Beispielszenarien beschrieben. In jedem dieser Beispiele verwendet die Organisation Office 365 Enterprise E5, wozu auch Advanced Threat Protection gehört.
-  
-|**Beispielszenario**|**Gilt in diesem Fall das ATP-Anti-Phishing?**|
-|:-----|:-----|
+
+****
+
+|Beispielszenario|Gilt in diesem Fall das ATP-Anti-Phishing?|
+|---|---|
 |Pat es Organisation hat Office 365 Enterprise E5, aber es wurden keine Richtlinien für ATP-sichere Anlagen, ATP-sichere Links oder ATP Advanced Phishing definiert.|Nein. Obwohl das Feature verfügbar ist, muss mindestens eine ATP-Richtlinie definiert sein, damit die Lernmodelle für ATP-Computer funktionieren. Für den Identitätswechsel muss auch eine ATP-Anti-Phishing-Richtlinie vorhanden sein.|
 |Lee ist ein Mitarbeiter in der Vertriebsabteilung bei Contoso. Die Organisation von Lee hat eine ATP-Richtlinie zum Schutz vor Phishing, die nur für Mitarbeiter von Finanzmitteln gilt.|Nein. In diesem Fall würde ATP-AntiPhishing (Computermodelle und Identitätswechsel Schutz) für die Finanzierung von Mitarbeitern gelten, aber andere Mitarbeiter, einschließlich der Vertriebsabteilung, würden dies nicht tun.|
 |Gestern richtete ein Office 365 Administrator bei Jeans Organisation eine ATP-Anti-Phishing-Richtlinie ein, die für alle Mitarbeiter gilt. Anfang heute hat Jean eine e-Mail-Nachricht erhalten, die einen Identitätswechsel enthält, der von der Richtlinie abgedeckt wird.|Ja. In diesem Beispiel hat Jean eine Lizenz für Advanced Threat Protection und eine ATP-Anti-Phishing-Richtlinie, die Jean enthält, wurde definiert. In der Regel dauert es etwa 30 Minuten, bis eine neue Richtlinie in den Rechenzentren wirksam wird. Da ein Tag in diesem Fall vergangen ist, sollte die Richtlinie wirksam sein.|
+|
 
 ## <a name="related-topics"></a>Verwandte Themen
 

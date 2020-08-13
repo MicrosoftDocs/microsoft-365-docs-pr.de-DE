@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c958101e1f3268c706c27df6fc9e21e9914b3f46
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 041e7dc89ddd42326ce0a5040364306e26fd2413
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530283"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653389"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Voraussetzungen für Microsoft Managed Desktop
 
@@ -48,7 +48,7 @@ Microsoft Managed Desktop erfordert bestimmte Lizenzoptionen, um zu funktioniere
 
 |Lizenzoption |In *jedem* dieser Lizenzprodukte verfügbar |Verwendung von Microsoft Managed Desktop|
 |-------------|-------------|-------------|
-|Azure Active Directory Premium P1     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* -Sicherheits-Add-on<br>-Enterprise Mobility + Sicherheit E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P1|  Ermöglicht den Zugriff auf Microsoft-Cloud-Dienste; ermöglicht Autopilot das Registrieren von Geräten      |
+|Azure Active Directory Premium P2     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* -Sicherheits-Add-on<br>-Enterprise Mobility + Sicherheit E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P2|  Ermöglicht den Zugriff auf Microsoft-Cloud-Dienste; ermöglicht Autopilot das Registrieren von Geräten      |
 |Microsoft Intune | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* -Sicherheits-Add-on<br>-Enterprise Mobility + Sicherheit E5<br>-Enterprise Mobility + Security E3<br>-Microsoft InTune  |  Erforderlich zum Registrieren von Geräten, Bereitstellen von Updates und Verwalten von Geräten       |
 |Windows 10 Enterprise  |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* -Sicherheits-Add-on<br>-Windows 10 Enterprise E3<br>-Windows 10 Enterprise E5 | Bereitstellen von Enterprise-Features von Windows 10       |
 |Microsoft Defender Advanced Threat Protection | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* -Sicherheits-Add-on<br>-Windows 10 Enterprise E5<br>-Microsoft Defender Advanced Threat Protection   |  Bereitstellen von Erkennung, Überwachung, Warnungen und Reaktion auf Bedrohungen  |

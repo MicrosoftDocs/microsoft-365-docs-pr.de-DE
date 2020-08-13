@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Erfahren Sie, wie Sie den Prozess der Erkennung und Adressierung kompromittierter Benutzerkonten mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection Plan 2 beschleunigen können.
-ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635772"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656909"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adressieren von kompromittierten Benutzerkonten mit automatisierter Untersuchung und Antwort
 
@@ -31,7 +31,7 @@ Das kompromittierte User Security-Manuskript ermöglicht dem Sicherheitsteam Ihr
 
 - Schnellere Erkennung kompromittierter Benutzerkonten;
 
-- Einschränken des Gültigkeitsbereichs einer Verletzung, wenn ein Konto kompromittiert wird; und 
+- Einschränken des Gültigkeitsbereichs einer Verletzung, wenn ein Konto kompromittiert wird; und
 
 - Effektivere und effizientere Reaktion auf kompromittierte Benutzer.
 
@@ -60,27 +60,29 @@ Wenn ein Benutzerkonto kompromittiert wird, werden Warnungen ausgelöst. In eini
 
 ### <a name="view-and-investigate-restricted-users"></a>Anzeigen und untersuchen eingeschränkter Benutzer
 
-Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Security & Compliance Center können Sie beispielsweise zu **Threat Management** > **Review** > **restricted users**wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
+Sie haben einige Optionen, um zu einer Liste eingeschränkter Benutzer zu navigieren. Im Security & Compliance Center können Sie beispielsweise zu **Threat Management**  >  **Review**  >  **restricted users**wechseln. Im folgenden Verfahren wird die Navigation mithilfe des **Alerts** -Dashboards beschrieben, eine gute Möglichkeit, um verschiedene Arten von Warnungen anzuzeigen, die möglicherweise ausgelöst wurden.
 
 1. Gehen Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich an.
 
-2. Wählen Sie im Navigationsbereich **Warnungs** > **Dashboard**aus.
+2. Wählen Sie im Navigationsbereich **Warnungs**  >  **Dashboard**aus.
 
-3. Wählen Sie im Widget **andere Benachrichtigungen** die Option **eingeschränkte Benutzer**aus.<br/>
-   ![Widget "andere Warnungen"](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
-   Dadurch wird die Liste der eingeschränkten Benutzer geöffnet.<br/>![Eingeschränkte Benutzer in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
+3. Wählen Sie im Widget **andere Benachrichtigungen** die Option **eingeschränkte Benutzer**aus.
 
-4. Wählen Sie ein Benutzerkonto in der Liste aus, um Details anzuzeigen und Aktionen durchführen zu können, beispielsweise [das Freigeben des eingeschränkten Benutzers](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
+   ![Widget "andere Warnungen"](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+
+   Dadurch wird die Liste der eingeschränkten Benutzer geöffnet.<br/>![Eingeschränkte Benutzer in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. Wählen Sie ein Benutzerkonto in der Liste aus, um Details anzuzeigen und Aktionen durchführen zu können, beispielsweise [das Freigeben des eingeschränkten Benutzers](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### <a name="view-details-about-automated-investigations"></a>Anzeigen von Details zu automatisierten Untersuchungen
 
-Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management** > **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
+Wenn eine automatisierte Untersuchung begonnen hat, können Sie Details und Ergebnisse im Security & Compliance Center anzeigen. Wechseln Sie zu **Threat Management**  >  **Investigations**, und wählen Sie dann eine Untersuchung aus, um die Details anzuzeigen.
 
 Weitere Informationen finden Sie unter [View Details of a Investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
 ## <a name="keep-the-following-points-in-mind"></a>Beachten Sie die folgenden Punkte:
 
-- **Behalten Sie Ihre Benachrichtigungen im Vorder**Grund. Wie Sie wissen, gilt: je länger ein Kompromiss unentdeckt bleibt, desto größer ist das Potenzial für weit verbreitete Auswirkungen und Kosten für Ihre Organisation, Kunden und Partner. Frühzeitige Erkennung und zeitnahe Reaktion sind wichtig, um Bedrohungen zu minimieren, insbesondere dann, wenn das Konto eines Benutzers kompromittiert wird. 
+- **Behalten Sie Ihre Benachrichtigungen im Vorder**Grund. Wie Sie wissen, gilt: je länger ein Kompromiss unentdeckt bleibt, desto größer ist das Potenzial für weit verbreitete Auswirkungen und Kosten für Ihre Organisation, Kunden und Partner. Frühzeitige Erkennung und zeitnahe Reaktion sind wichtig, um Bedrohungen zu minimieren, insbesondere dann, wenn das Konto eines Benutzers kompromittiert wird.
 
 - **Automatisierung unterstützt, ersetzt aber Ihr Sicherheits Betriebsteam**. Automatisierte Ermittlungs-und Antwortfunktionen können einen gefährdeten Benutzer frühzeitig erkennen, aber Ihr Sicherheits Betriebsteam muss wahrscheinlich einige Untersuchungen und Korrekturen durchführen. Benötigen Sie Hilfe? Weitere Informationen finden Sie unter [überprüfen und Genehmigen von Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
 

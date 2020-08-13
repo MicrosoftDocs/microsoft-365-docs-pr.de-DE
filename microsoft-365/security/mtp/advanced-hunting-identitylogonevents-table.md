@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 19437caf4f3b0dcb6eb6ccad81d1ed3917df7996
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204911"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648827"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -67,6 +67,6 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

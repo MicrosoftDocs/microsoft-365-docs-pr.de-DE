@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu handeln, die Ihre Organisation durchlaufen.
-ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209691"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653688"
 ---
-# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Nachrichtenfluss Regeln (Transportregeln) in eigenständigen EoP
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
 
 In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange Online Postfächer können Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Organisation durchlaufen werden.
 
@@ -69,21 +69,26 @@ Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in eigenstä
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Mehrere Bedingungen, Ausnahmen und Aktionen
 
-Die folgende Tabelle zeigt, wie mehrere Bedingungen, Bedingungswerte, Ausnahmen und Aktionen in einer Regel verarbeitet werden.
+Use a transport rule so messages can bypass Clutter
 
-|**Komponente**|**Logik**|**Kommentare**|
-|:-----|:-----|:-----|
+****
+
+|Komponente|Logik|Comments|
+|---|---|---|
 |Kommentare|UND|Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine von zwei Bedingungen erfüllt werden muss, verwenden Sie für die Bedingungen separate Regeln. Wenn Sie z. B. Nachrichten mit Anlagen und Nachrichten, die einen bestimmten Text enthalten, die gleiche Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. In der Exchange-Verwaltungskonsole können Sie eine Regel ganz einfach kopieren.|
 |Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.|ODER|Bei einigen Bedingungen können Sie mehr als einen Wert angeben. Die Nachricht muss einem der angegebenen Werte (nicht allen) entsprechen. Beispiel: Wenn eine E-Mail den Betreff Informationen zum Börsenkurs hat und die Bedingung **Betreff enthält eines der folgenden Wörter** für die Übereinstimmung mit den Wörtern Contoso oder Börsenkurs konfiguriert ist, gilt die Bedingung als erfüllt, da der Betreff mindestens einen der angegebenen Werte enthält.  |
 |Bei einigen Bedingungen können Sie mehr als einen Wert angeben. Wenn eine Bedingung die Eingabe mehrerer Werte zulässt, muss die Nachricht einem der Werte entsprechen, der für diese Bedingung angegeben wurde. Beispiel: Wenn eine E-Mail den Betreff Informationen zum Börsenkurs hat und die Bedingung Betreff enthält eines der folgenden Wörter für die Übereinstimmung mit den Wörtern Contoso oder Börsenkurs konfiguriert ist, gilt die Bedingung als erfüllt, da der Betreff mindestens einen der Bedingungswerte enthält.|ODER|Wenn eine Nachricht einer der Ausnahmen entspricht, werden die Aktionen nicht angewendet. Die Nachricht muss nicht allen Ausnahmen entsprechen.|
 |Wenn eine Nachricht einer der Ausnahmen entspricht, werden die Aktionen nicht durchgeführt. Die Nachricht muss nicht allen Ausnahmen entsprechen.|UND|Für Nachrichten, die die Bedingungen einer Regel erfüllen, werden alle in der Regel angegebenen Aktionen ausgeführt. Wenn beispielsweise die Aktionen **Dem Betreff der Nachricht Folgendes voranstellen** und **Empfänger zum Feld "Bcc" hinzufügen** ausgewählt wurden, werden beide Aktionen auf die Nachricht angewendet.  <br/><br/> Bei Nachrichten, die den Bedingungen einer Regel entsprechen, werden alle in der Regel angegebenen Aktionen durchgeführt. Wenn beispielsweise die Aktionen "Dem Betreff der Nachricht Folgendes voranstellen" und "Empfänger zum Feld "Bcc" hinzufügen" ausgewählt wurden, werden beide Aktionen auf die Nachricht angewendet. In der Nachricht wird die angegebene Zeichenfolge dem Nachrichtenbetreff vorangestellt, und die angegebenen Empfänger werden als Bcc-Empfänger hinzugefügt.<br/><br/> Sie können für eine Regel auch eine Aktion festlegen, sodass bei Anwendung dieser Regel nachfolgende Regeln nicht auf die Nachricht angewendet werden.|
+|
 
 ### <a name="mail-flow-rule-properties"></a>Eigenschaften von Nachrichtenflussregeln
 
 Die folgende Tabelle beschreibt die Regeleigenschaften, die in Nachrichtenflussregeln zur Verfügung stehen.
 
-|**Eigenschaftenname in der Exchange-Verwaltungskonsole**|**Parametername in PowerShell**|**Beschreibung**|
-|:-----|:-----|:-----|
+****
+
+|Eigenschaftenname in der Exchange-Verwaltungskonsole|Parametername in PowerShell|Beschreibung|
+|---|---|---|
 |**Priority**|_Priority_|Gibt die Reihenfolge an, in der die Regeln auf Nachrichten angewendet werden. Die Standardpriorität basiert auf dem Erstellungsdatum der Regel (ältere Regeln haben eine höhere Priorität als neuere Regeln, und Regeln mit höherer Priorität werden vor Regeln mit niedrigerer Priorität verarbeitet).   <br/><br/> Sie ändern die Regelpriorität in der Exchange-Verwaltungskonsole, indem Sie die Regel in der Liste der Regeln nach oben oder unten verschieben. In PowerShell legen Sie die Prioritätsnummer fest (0 ist die höchste Priorität). <br/><br/> Wenn Sie z. B. eine Regel verwenden, um Nachrichten abzulehnen, die eine Kreditkartennummer enthalten, und eine andere Regel, die eine Genehmigung erfordert, sollte die Ablehnungsregel zuerst angewendet werden, und es sollten keine anderen Regeln mehr angewendet werden.      |
 |**Mode**|_Mode_|Sie können angeben, ob die Regel sofort mit der Verarbeitung von Nachrichten beginnen soll oder ob Sie Regeln ohne Auswirkungen auf die Übermittlung der Nachricht (mit oder ohne Verhinderung von Datenverlust oder DLP-Richtlinientipps) testen möchten. <br/><br/> Richtlinientipps zeigen dem Ersteller einer Nachricht in Outlook oder Outlook im Web einen Hinweis mit Informationen über mögliche Richtlinienverletzungen an. Weitere Informationen finden Sie unter **Policy Tips**.  <br/><br/> Weitere Informationen zu den Modi finden Sie unter **Test a mail flow rule**.|
 |**Diese Regel an folgendem Datum aktivieren** <br/><br/> **Diese Regel an folgendem Datum deaktivieren**|_ActivationDate_ <br/> _Ablaufdatum_|Gibt den Datumsbereich an, in dem die Regel aktiv ist.|
@@ -92,6 +97,7 @@ Die folgende Tabelle beschreibt die Regeleigenschaften, die in Nachrichtenflussr
 |**Absenderadresse in Nachricht vergleichen**|_SenderAddressLocation_|Wenn die Regel Bedingungen oder Ausnahmen verwendet, die die E-Mail-Adresse des Absenders überprüfen, finden Sie den Wert in der Nachrichtenkopfzeile und/oder im Nachrichtenumschlag.|
 |**Verarbeiten weiterer Regeln beenden**|_SenderAddressLocation_|Dies ist eine Aktion für die Regel, aber sie sieht in der Exchange-Verwaltungskonsole wie eine Eigenschaft aus. Sie können auswählen, dass keine weiteren Regeln auf eine Nachricht angewendet werden, nachdem eine Nachricht durch eine Regel verarbeitet wurde.|
 |**Comments**|_Comments_|Sie können beschreibende Kommentare zur Regel eingeben.|
+|
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Wie Nachrichtenflussregeln auf Nachrichten angewendet werden
 
@@ -103,8 +109,10 @@ Jede Regel bietet außerdem die Möglichkeit, die Verarbeitung weiterer Regeln a
 
 Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die folgende Tabelle zeigt, welche Nachrichtentypen von Nachrichtenflussregeln verarbeitet werden können.
 
-|**Nachrichtentyp**|**Kann eine Regel angewendet werden?**|
-|:-----|:-----|
+****
+
+|Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die folgende Tabelle zeigt, welche Nachrichtentypen von Transportregeln verarbeitet werden können.|Nachrichtentyp|
+|---|---|
 |**Reguläre Nachrichten**: Nachrichten, die ein einzelnes Rich-Text-Format (RTF), HTML oder nur-Text-Nachrichtentext oder eine mehrteilige oder alternative Gruppe von Nachrichtentexten enthalten.|Ja|
 |**Office 365 Nachrichtenverschlüsselung**: Nachrichten, die von Office 365 Nachrichtenverschlüsselung in Office 365 verschlüsselt wurden. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von e-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME-Verschlüsselte Nachrichten**|Regeln können nur auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <br/><br/> Regeln mit Bedingungen, die eine Untersuchung des Nachrichteninhalts erfordern, oder Aktionen, die den Inhalt der Nachricht ändern, können nicht verarbeitet werden.|
@@ -113,6 +121,7 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 |**Um-Nachrichten**: Nachrichten, die vom Unified Messaging-Dienst erstellt oder verarbeitet werden, wie Voicemail, Fax, Benachrichtigungen über verpasste Anrufe und Nachrichten, die mit Microsoft Outlook Voice Access erstellt oder weitergeleitet wurden.|Ja|
 |**Anonyme nach**richten: von anonymen Absendern gesendete Nachrichten.|Ja|
 |**Lesen von Berichten**: Berichte, die als Reaktion auf Lese Bestätigungsanforderungen von Absendern generiert werden. Lese Berichte haben eine Nachrichtenklasse von `IPM.Note*.MdnRead` oder `IPM.Note*.MdnNotRead` .|Ja|
+|
 
 ## <a name="what-else-should-i-know"></a>Was muss ich sonst noch wissen?
 

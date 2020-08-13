@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren und Endbenutzer können erfahren, wie Sie e-Mail-Nachrichten (gute e-Mails, die als "schlecht" oder "schlecht" gekennzeichnet sind) zur Analyse an Microsoft senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811038"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653593"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles übermitteln von Nachrichten an Microsoft zur Analyse
 
@@ -52,7 +52,12 @@ Wenn Sie eine Nachricht erhalten, die durch die Spamfilterung geleitet wurde, di
 2. Ziehen Sie die Junk-oder Phishing-Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die Junk-oder Phishing-Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
    > [!NOTE]
-   > <ul><li>Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Scam-Nachrichten oder Junk-e-Mail-Nachrichten.</li><li>Lassen Sie den Nachrichtentext leer.</li><li>Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.</li></ul>
+   >
+   > - Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Nachrichten oder Junk-e-Mail-Nachrichten.
+   >
+   > - Lassen Sie den Nachrichtentext leer.
+   >
+   > - Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.
 
 3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 
@@ -71,7 +76,12 @@ Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie
 2. Ziehen Sie die nicht identifizierte Nachricht per Drag & Drop in die neue Nachricht. Dadurch wird die nicht identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren und Einfügen des Inhalts der Nachricht oder Weiterleiten der Nachricht (die ursprüngliche Nachricht ist erforderlich, damit die Nachrichtenkopfzeilen überprüft werden können).
 
    > [!NOTE]
-   > <ul><li>Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Nachrichten oder Junk-e-Mail-Nachrichten.</li><li>Lassen Sie den Nachrichtentext leer.</li><li>Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.</li></ul>
+   >
+   > - Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten vom gleichen Typ sind: entweder Phishing-Nachrichten oder Junk-e-Mail-Nachrichten.
+   >
+   > - Lassen Sie den Nachrichtentext leer.
+   >
+   > - Verwenden Sie entweder msg (Outlook-Standardformat) oder eml (standardmäßige Outlook im Internetformat) für die angefügten Nachrichten.
 
 3. Wenn Sie fertig sind, klicken Sie auf **senden**.
 

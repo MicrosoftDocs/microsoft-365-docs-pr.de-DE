@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Webverwaltungsoberfläche in eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616998"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652909"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in EOP als eigenständige Lösung
 
@@ -80,9 +80,10 @@ Die Registerkarten sind Ihre zweite Ebene der Navigation. Alle Featurebereiche e
 
 Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie auf sie geklickt haben. Die Symbolleiste enthält Symbole, die jeweils eine bestimmte Aktion auslösen. Die folgende Tabelle beschreibt die Symbole und deren Aktionen.
 
-||||
+****
+
+|Symbol|Name|Aktion|
 |---|---|---|
-|**Symbol**|**Name**|**Action**|
 |![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif)|Hinzufügen, Neu|Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.|
 |![Bearbeitungssymbol](../../media/ITPro-EAC-EditIcon.gif)|Bearbeiten|Über dieses Symbol können Sie ein Objekt bearbeiten.|
 |![Löschen (Symbol)](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
@@ -124,125 +125,63 @@ Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Offic
 Die folgenden Sprachen werden für die Exchange-Verwaltungskonsole in eigenständigen EoP unterstützt und zur Verfügung gestellt.
 
 - Amharisch
-
 - Arabisch
-
 - Baskisch (Baskisch)
-
 - Bengali (Indien)
-
 - Bulgarisch
-
 - Katalanisch
-
 - Chinesisch (vereinfacht)
-
 - Chinesisch (traditionell)
-
 - Kroatisch
-
 - Tschechisch
-
 - Dänisch
-
 - Niederländisch
-
-- Niederländisch
-
 - Englisch
-
 - Estnisch
-
 - Filipino (Philippinen)
-
 - Finnisch
-
 - Französisch
-
 - Galizisch
-
 - Deutsch
-
 - Griechisch
-
 - Gujarati
-
 - Hebräisch
-
 - Hindi
-
 - Ungarisch
-
 - Isländisch
-
 - Indonesisch
-
 - Italienisch
-
 - Japanisch
-
 - Kannada
-
 - Kasachisch
-
 - Kisuaheli
-
 - Koreanisch
-
 - Lettisch
-
 - Litauisch
-
 - Malaiisch (Brunei Darussalam)
-
 - Malaiisch (Malaysia)
-
 - Malayalam
-
 - Marathi
-
 - Norwegisch (Bokmål)
-
 - Norwegisch (Nynorsk)
-
 - Odia
-
 - Persisch
-
 - Polnisch
-
 - Portugiesisch (Brasilien)
-
 - Portugiesisch (Portugal)
-
 - Rumänisch
-
 - Russisch
-
 - Serbisch (Kyrillisch, Serbien)
-
 - Serbisch (Lateinisch)
-
 - Slowakisch
-
 - Slowenisch
-
 - Spanisch
-
 - Schwedisch
-
 - Tamil
-
 - Telugu
-
 - Thailändisch
-
 - Türkisch
-
 - Ukrainisch
-
 - Urdu
-
 - Vietnamesisch
-
 - Walisisch

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie als externer Absender die Möglichkeit zur Zustellung von e-Mails an Benutzer in Microsoft 365 verbessern können. Erfahren Sie auch, wie Junk-e-Mails & Phishing-versuchen als externer Benutzer gemeldet werden.
-ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 76fc376d32904b5cb61080e88a38a1dda815836f
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209823"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652765"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Senden von e-Mails an Microsoft 365
 
@@ -31,9 +31,12 @@ Diese Artikel helfen externen Absendern, ihre Reputation zu verbessern und die M
 
 Wenn Sie kein Kunde sind, aber versuchen, e-Mails an eine Person in der Person zu senden, sind Sie an der richtigen Stelle. Wenn Sie Administrator sind und Hilfe bei der Bekämpfung von Spam benötigen, ist dies nicht der richtige Abschnitt für Sie. Wechseln Sie stattdessen zu [Anti-Spam and Anti-Malware Protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
-|**Inhalt**|**Sieh...**|
-|:-----|:-----|
+****
+
+|Inhalt|Sieh...|
+|---|---|
 |Dienste, die wir Administratoren von e-Mail-Systemen zur Verfügung stellen, die einzelne und Massen-e-Mails an Kunden senden.|[Dienste für Nicht-Kunden, die E-Mails an Office 365 senden](services-for-non-customers.md)|
 |Beheben von Problemen beim erreichen von Kunden in Microsoft 365 per e-Mail. Bewährte Methoden für das Senden von Massen-e-Mails an Microsoft 365-Empfänger.|[Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden](troubleshooting-mail-sent-to-office-365.md)|
 |Wie Microsoft 365 verhindert, dass Junk-e-Mails, einschließlich Phishing-und Spoofing-e-Mails, an unsere Kunden gesendet werden.|[Anti-Spam-Schutz in Microsoft 365](anti-spam-protection.md)|
 |Wie Sie, ein Administrator, der e-Mails an Microsoft 365-Kunden sendet, verhindern, dass e-Mails durch Einhaltung unserer Anti-Spam-Richtlinien blockiert werden. Hierbei handelt es sich um die rechtliche Aspekte, die Sie kennen müssen.|[Referenz: Richtlinien, Methoden und Anleitungen](reference-policies-practices-and-guidelines.md)|
+|

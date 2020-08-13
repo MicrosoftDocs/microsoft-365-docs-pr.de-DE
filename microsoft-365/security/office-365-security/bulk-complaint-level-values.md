@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Administratoren können Informationen zu den Werten für die Massen Konformitätsstufe (BCL) erhalten, die in Exchange Online Protection (EoP) verwendet werden.
-ms.openlocfilehash: 87ef0787aad12022d9034800c4ddc72e54445f5d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 19fa7172bd242852d03822c588e163b7a13f9201
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209607"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653209"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Massen Reklamations Ebene (BCL) in EoP
 
@@ -33,9 +33,10 @@ Massenversender unterscheiden sich in ihren Sende Mustern, der Inhaltserstellung
 
 Die BCL-Schwellenwerte werden in der folgenden Tabelle beschrieben.
 
-|||
+****
+
+|BCL|Beschreibung|
 |:---:|---|
-|**BCL**|**Beschreibung**|
 |0|Die Nachricht stammt nicht von einem Massen-E-Mail-Absender.|
 |1, 2, 3|Die Nachricht stammt von einem Massen-E-Mail-Absender, aber führt zu wenigen Beschwerden.|
 |4, 5, 6, 7|Die Nachricht stammt von einem Massen-E-Mail-Absender und führt zu einer gemischten Anzahl von Beschwerden.|

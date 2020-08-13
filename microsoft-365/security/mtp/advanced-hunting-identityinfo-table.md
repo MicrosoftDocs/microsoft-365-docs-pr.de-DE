@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204923"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649307"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -53,12 +53,12 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SipProxyAddress` | string | SIP-Adresse (Voice over IP, VoIP) des Sitzungs Initiierungs Protokolls des Kontos |
 | `City` | string | Ort, an dem sich der Benutzer des Kontos befindet |
 | `Country` | string | Land/Region, in dem sich der Benutzer des Kontos befindet |
-| `IsAccountEnabled` | boolean | Gibt an, ob das Konto aktiviert ist oder nicht. |
+| `IsAccountEnabled` | Boolescher Wert | Gibt an, ob das Konto aktiviert ist oder nicht. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

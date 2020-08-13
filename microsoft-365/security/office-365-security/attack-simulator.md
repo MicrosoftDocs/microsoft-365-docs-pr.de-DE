@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie mithilfe des Angriffs Simulators simulierte Phishing-und Kennwortangriffe in Ihrer Microsoft 365 E5-oder ATP-Plan 2-Organisation ausführen.
-ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587568"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653221"
 ---
 # <a name="attack-simulator-in-atp"></a>Angriffs Simulator in ATP
 
@@ -114,7 +114,10 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Alle URLs sind absichtlich HTTP und nicht HTTPS.</li><li>Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.</li></ul>
+     >
+     > - Alle URLs sind absichtlich HTTP und nicht HTTPS.
+     >
+     > - Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.
 
    - **Benutzerdefinierte Startseiten-URL**: Geben Sie eine optionale Startseite ein, auf der Benutzer angezeigt werden, wenn Sie auf den Link Phishing klicken und die Anmeldeinformationen eingeben. Dieser Link ersetzt die standardmäßige Ziel Seite. Wenn Sie beispielsweise ein internes Bewusstseinstraining haben, können Sie diese URL hier angeben.
 
@@ -188,7 +191,12 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die e-Mail-Nachricht dire
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Alle URLs sind absichtlich HTTP und nicht HTTPS.</li><li>Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.</li><li>Sie müssen eine URL auswählen. Bei Kampagnen mit <b>Spear-Phishing (Attachment)</b> können Sie den Link aus dem Textkörper der Nachricht im nächsten Schritt entfernen (andernfalls enthält die Nachricht sowohl einen Link als <b>auch</b> eine Anlage).</li></ul>
+     >
+     > - Alle URLs sind absichtlich HTTP und nicht HTTPS.
+     >
+     > - Ein URL-Reputations Dienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishing-Kampagne verwenden.
+     >
+     > - Sie müssen eine URL auswählen. Bei Kampagnen mit **Spear-Phishing (Attachment)** können Sie den Link aus dem Textkörper der Nachricht im nächsten Schritt entfernen (andernfalls enthält die Nachricht sowohl einen Link als **auch** eine Anlage).
 
    - **Anlagentyp**: Diese Einstellung ist nur in Kampagnen für **Spear-Phishing (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie aus **. DOCX** oder **. PDF** aus der Liste.
 

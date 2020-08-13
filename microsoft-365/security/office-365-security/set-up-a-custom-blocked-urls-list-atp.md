@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie eine Liste blockierter URLs für Ihre Organisation mit Office 365 Advanced Threat Protection einrichten.
-ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533811"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656647"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-Sicherheits Links
 
@@ -45,11 +45,14 @@ In diesem Artikel erfahren Sie, wie Sie die Liste der benutzerdefinierten blocki
 
 Um ATP-Richtlinien zu bearbeiten oder zu definieren, müssen Sie einer der in der folgenden Tabelle beschriebenen Rollen zugewiesen sein:
 
+****
+
 |Rolle|Wo/wie zugewiesen|
-|---------|---------|
+|---|---|
 |globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Sicherheitsadministrator|Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -78,13 +81,15 @@ Achten Sie beim Hinzufügen von URLs zu Ihrer Liste darauf, Folgendes zu beachte
 
 - Sie können bis zu drei Platzhalter Sternchen ( \* ) pro URL hinzufügen. In der folgenden Tabelle sind einige Beispiele aufgeführt, die Sie eingeben können und welche Auswirkungen diese Einträge haben.
 
+****
+
 |Beispieleintrag|Funktionsweise|
-|:-----|:-----|
+|---|---|
 |`contoso.com` oder `*contoso.com*`|Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com` , `https://sub.contoso.com` und`https://contoso.com/abc`|
 |`https://contoso.com/a`|Blockiert eine Website, `https://contoso.com/a` jedoch keine weiteren untergeordneten Pfade wie`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Blockiert eine Website `https://contoso.com/a` und weitere untergeordnete Pfade wie`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Blockiert eine Unterdomäne ("Toys" in diesem Fall), aber Sie können Klicks auf andere Domänen-URLs (wie `https://contoso.com` oder `https://home.contoso.com` ) zulassen.|
-
+|
 
 > [!NOTE]
 > Standardmäßig können Sie in der Liste gesperrter URLs nur 500-URLs in der Standardrichtlinie Office 365 ATP-Links hinzufügen.

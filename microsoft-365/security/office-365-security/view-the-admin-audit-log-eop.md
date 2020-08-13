@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratoren können erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständiger Exchange Online Schutz (EoP) anzeigen und durchsuchen.
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613324"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653497"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
 
@@ -26,7 +26,12 @@ In Organisationen mit eigenständigen Exchange Online Schutz (EoP) ohne Exchange
 Das administratorüberwachungsprotokoll zeichnet bestimmte Aktionen auf der Grundlage von eigenständigen EoP PowerShell-Cmdlets auf, die von Administratoren und Benutzern ausgeführt wurden, denen Administratorrechte zugewiesen wurden. Mit Einträgen im Administrator-Überwachungsprotokoll erhalten Sie Informationen dazu, welches Cmdlet ausgeführt wurde, welche Parameter verwendet wurden, wer das Cmdlet ausgeführt hat und welche Objekte betroffen sind.
 
 > [!NOTE]
-> <ul><li>Die Administrator Überwachungsprotokollierung ist standardmäßig aktiviert und kann nicht deaktiviert werden.</li><li>Das administratorüberwachungsprotokoll zeichnet keine Aktionen basierend auf Cmdlets auf, die mit dem Verb **Get**, der **Suche**oder dem **Test**beginnen.</li><li>Die Überwachungsprotokolleinträge werden 90 Tage lang aufbewahrt. Wenn ein Eintrag älter als 90 Tage ist, wird er gelöscht.</li></ul>
+>
+> - Die Administrator Überwachungsprotokollierung ist standardmäßig aktiviert und kann nicht deaktiviert werden.
+>
+> - Das administratorüberwachungsprotokoll zeichnet keine Aktionen basierend auf Cmdlets auf, die mit dem Verb **Get**, der **Suche**oder dem **Test**beginnen.
+>
+> - Die Überwachungsprotokolleinträge werden 90 Tage lang aufbewahrt. Wenn ein Eintrag älter als 90 Tage ist, wird er gelöscht.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -69,7 +74,7 @@ Sie können eigenständige EoP PowerShell verwenden, um nach Überwachungsprotok
 Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Parameter1,Parameter2,...ParameterN>] [-StartDate <UTCDateTime>] [-EndDate <UTCDateTime>] [-UserIds <"User1","User2",..."UserN">] [-ObjectIds <"Object1","Object2",..."ObjectN">] [-IsSuccess <$true | $false>]
 ```
 
-**Hinweise**:
+**Anmerkungen**:
 
 - Sie können den Parameter _para_ meters nur zusammen mit dem _Cmdlets_ -Parameter verwenden.
 
@@ -133,9 +138,10 @@ Führen Sie die folgenden Schritte aus, um die Inhalte der Felder **CmdletParame
 
 Jeder Überwachungsprotokolleintrag enthält die Informationen, die in der folgenden Tabelle beschrieben sind. Das Überwachungsprotokoll enthält mindestens einen Überwachungsprotokolleintrag.
 
-|||
+****
+
+|Feld|Beschreibung|
 |---|---|
-|**Field**|**Beschreibung**|
 |`RunspaceId`|Dieses Feld wird intern von EoP verwendet.|
 |`ObjectModified`|Dieses Feld enthält das Objekt, das von dem im Feld angegebenen Cmdlet geändert wurde `CmdletName` .|
 |`CmdletName`|Dieses Feld enthält den Namen des Cmdlets, das vom Benutzer im Feld ausgeführt wurde `Caller` .|

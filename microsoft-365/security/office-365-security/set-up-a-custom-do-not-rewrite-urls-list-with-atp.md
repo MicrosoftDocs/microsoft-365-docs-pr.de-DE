@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie benutzerdefinierte blockierte URLs für Benutzer einrichten und eine Liste mit URLs für eine Gruppe von Benutzern in Office 365 Richtlinien für ATP-sichere Links erstellen.
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517473"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656969"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe von ATP-Safe-Links
 
@@ -41,11 +41,12 @@ Der Schutz für ATP-Verknüpfungen verwendet mehrere Listen, einschließlich der
 
 Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprechende Rolle zugewiesen sein. Die folgende Tabelle enthält einige Beispiele. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-|Rolle  |Wo/wie zugewiesen  |
-|---------|---------|
-|globaler Administrator |Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
-|Sicherheitsadministrator |Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Exchange Online-Organisationsverwaltung |Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Rolle|Wo/wie zugewiesen|
+|---|---|
+|globaler Administrator|Die Person, die sich zum Kauf von Microsoft 365 anmeldet, ist standardmäßig ein globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Sicherheitsadministrator|Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Exchange Online-Organisationsverwaltung|Exchange Admin Center ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -83,9 +84,12 @@ Um ATP-Richtlinien zu bearbeiten (oder zu definieren), muss Ihnen eine entsprech
 
 In der folgenden Tabelle sind Beispiele aufgeführt, was Sie eingeben können und welche Auswirkungen diese Einträge haben.
 
+****
+
 |Beispieleintrag|Funktionsweise|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|Ermöglicht Empfängern das Aufrufen einer Website wie, `https://contoso.com` aber keine Unterdomänen oder Pfade.|
 |`*.contoso.com/*`|Ermöglicht Empfängern das Aufrufen einer Domäne, Unterdomänen und Pfaden, beispielsweise `https://www.contoso.com` ,,, `https://www.contoso.com` `https://maps.contoso.com` oder `https://www.contoso.com/a` . <br/><br/> Dieser Eintrag ist grundsätzlich besser als `*contoso.com*` , da er potenziell betrügerische Websites wie oder nicht enthält. `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie `https://contoso.com/a` , aber keine untergeordneten Pfade wie`https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Ermöglicht bestimmten Empfängern das Besuchen einer Website wie und untergeordnete `https://contoso.com/a` Pfade wie`https://contoso.com/a/b`|
+|

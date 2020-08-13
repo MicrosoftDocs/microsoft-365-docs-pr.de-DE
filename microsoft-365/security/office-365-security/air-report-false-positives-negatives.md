@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 826d8561ba0c9618f21458493416b7dbd75af9e1
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520158"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656861"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Vorgehensweise Melden von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen
 
@@ -61,11 +61,13 @@ In den meisten Fällen, wenn eine Korrekturaktion für eine e-Mail-Nachricht, ei
 
 Mit Threat Explorer kann Ihr Sicherheits Betriebsteam eine von einer Aktion betroffene e-Mail-Nachricht finden und die Aktion möglicherweise rückgängig machen.
 
-|Szenario  |Rückgängig-Optionen  |Weitere Informationen |
-|---------|---------|---------|
-|Eine e-Mail-Nachricht wurde an den Junk-e-Mail-Ordner eines Benutzers weitergeleitet.     |-Verschiebt die Nachricht in den Ordner "Gelöschte Elemente" des Benutzers.<br/>-Verschieben der Nachricht in den Posteingang des Benutzers <br/>-Nachricht löschen          |[Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|Eine e-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt     |-Freigeben der e-Mail oder Datei <br/>-Löschen der e-Mail oder Datei         |[Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|Szenario|Rückgängig-Optionen|Weitere Informationen|
+|---|---|---|
+|Eine e-Mail-Nachricht wurde an den Junk-e-Mail-Ordner eines Benutzers weitergeleitet.|-Verschiebt die Nachricht in den Ordner "Gelöschte Elemente" des Benutzers.<br/>-Verschieben der Nachricht in den Posteingang des Benutzers <br/>-Nachricht löschen|[Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|Eine e-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt|-Freigeben der e-Mail oder Datei <br/>-Löschen der e-Mail oder Datei|[Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>Rückgängigmachen einer Aktion mithilfe der Registerkarte "Aktionen" für eine Untersuchung
 

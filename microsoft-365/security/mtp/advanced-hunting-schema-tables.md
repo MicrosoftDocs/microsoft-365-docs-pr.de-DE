@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046045"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649295"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Grundlegendes zum Schema "Erweiterte Suche"
 
@@ -81,5 +81,5 @@ Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verwei
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

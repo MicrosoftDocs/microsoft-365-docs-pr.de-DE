@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie den Siem-Server Ihrer Organisation mit Office 365 Advanced Threat Protection und den zugehörigen Threat-Ereignissen in die API für die Office 365-Aktivitätsverwaltung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0527a998e7049960df840c7756ef5deaafaf5ade
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b3ed2efd2b59397853623ffcec93e8011793ab43
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035272"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656599"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Siem-Integration mit erweitertem Bedrohungsschutz
 
-Wenn Ihre Organisation einen Siem-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection mit Ihrem Siem-Server integrieren. Mit der Siem-Integration können Sie in ihren Siem-Server Berichten Informationen wie Malware oder Phishing anzeigen, die von Office 365 Advanced Protection erkannt wurden. Um Siem-Integration einzurichten, verwenden Sie die [Office 365-Aktivitäts Verwaltungs-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Wenn Ihre Organisation einen Siem-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection mit Ihrem Siem-Server integrieren. Mit der Siem-Integration können Sie in ihren Siem-Server Berichten Informationen wie Malware oder Phishing anzeigen, die von Office 365 Advanced Protection erkannt wurden. Um Siem-Integration einzurichten, verwenden Sie die [Office 365-Aktivitäts Verwaltungs-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-Die API für die Office 365 Aktivitätsverwaltung Ruft Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und Ereignissen aus den Microsoft 365 for Business-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Das [Office 365 Advanced Threat Protection-Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) funktioniert mit Advanced Threat Protection, wenn Ihre Organisation also über die Office 365 Advanced Threat Protection Plan 1 oder Plan 2 oder Office 365 E5 verfügt, können Sie die gleiche API für Ihre Siem-Server Integration weiterhin verwenden. 
+Die API für die Office 365 Aktivitätsverwaltung Ruft Informationen zu Benutzer-, Verwaltungs-, System-und Richtlinienaktionen und Ereignissen aus den Microsoft 365 for Business-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Das [Office 365 Advanced Threat Protection-Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) funktioniert mit Advanced Threat Protection, wenn Ihre Organisation also über die Office 365 Advanced Threat Protection Plan 1 oder Plan 2 oder Office 365 E5 verfügt, können Sie die gleiche API für Ihre Siem-Server Integration weiterhin verwenden.
 
-Im Rahmen unserer jüngsten Updates haben wir auch Ereignisse aus automatisierten Ermittlungs-und Antwortfunktionen in Office 365 ATP-Plan 2 in der API für die Office 365-Verwaltungsaktivität hinzugefügt. Zusätzlich zum Einschließen von Daten zu Kern Ermittlungs Details wie ID, Name und Status enthält es auch allgemeine Informationen zu Ermittlungsaktionen und Entitäten.   
+Im Rahmen unserer jüngsten Updates haben wir auch Ereignisse aus automatisierten Ermittlungs-und Antwortfunktionen in Office 365 ATP-Plan 2 in der API für die Office 365-Verwaltungsaktivität hinzugefügt. Zusätzlich zum Einschließen von Daten zu Kern Ermittlungs Details wie ID, Name und Status enthält es auch allgemeine Informationen zu Ermittlungsaktionen und Entitäten.
 
 Der Siem-Server oder ein ähnliches System sollten die **Audit. allgemeine** Arbeitsauslastung für den Zugriff auf Erkennungsereignisse Abfragen. Weitere Informationen finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). Darüber hinaus sind die folgenden Werte von **AuditLogRecordType** für Office 365 ATP-Ereignisse relevant:
 
@@ -39,13 +39,15 @@ Der Siem-Server oder ein ähnliches System sollten die **Audit. allgemeine** Arb
 
 #### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
+****
+
 |Wert|Elementname|Beschreibung|
-|:-----|:-----|:-----|
+|---|---|---|
 |28|ThreatIntelligence|Phishing- und Schadsoftwareereignisse aus Exchange Online Protection und Office 365 Advanced Threat Protection.|
 |41|ThreatIntelligenceUrl|ATP-sichere Links Time-of-Block-und Block Außerkraftsetzungs Ereignisse von Office 365 Advanced Threat Protection.|
 |47|ThreatIntelligenceAtpContent|Phishing-und Schadsoftware-Ereignisse für Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft Teams aus Office 365 Advanced Threat Protection.|
 |64|AirInvestigation|Automatisierte Ermittlungs-und Antwortereignisse wie Ermittlungs Details und relevante Artefakte aus Office 365 Advanced Threat Protection-Plan 2.|
-
+|
 
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator sein oder der Sicherheitsadministrator Rolle für das Security & Compliance Center zugewiesen sein, um Siem-Integration mit Office 365 Advanced Threat Protection einzurichten.<br/>Die Überwachungsprotokollierung muss für Ihre Microsoft 365-Umgebung aktiviert sein. Informationen dazu finden Sie unter [Aktivieren oder Deaktivieren der Überwachungsprotokoll Suche](../../compliance/turn-audit-log-search-on-or-off.md).
@@ -58,7 +60,6 @@ Der Siem-Server oder ein ähnliches System sollten die **Audit. allgemeine** Arb
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
 
-[Intelligente Berichte und Einblicke im &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
-  
+[Intelligente Berichte und Einblicke im Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
 [Berechtigungen im Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  

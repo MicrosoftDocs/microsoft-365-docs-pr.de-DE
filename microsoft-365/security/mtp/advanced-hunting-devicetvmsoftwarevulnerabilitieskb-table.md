@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 378ffee34a24af225b1b6deebd7cc514c62e1926
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d4969cdfa2851acc6f94e5e1a903a9b59f73489e
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327970"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648921"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
@@ -41,7 +41,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `CvssScore` | string | Schweregrad des Sicherheitsrisikos nach CVSS (Common Vulnerability Scoring System) |
 | `IsExploitAvailable` | Boolescher Wert | Gibt an, ob Exploitcode für das Sicherheitsrisiko öffentlich verfügbar ist |
 | `VulnerabilitySeverityLevel` | string | Schweregrad des Sicherheitsrisikos, basierend auf CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden |
-| `LastModifiedTime` | Datum/Uhrzeit | Datum und Uhrzeit der letzten Änderung des Elements oder der zugehörigen Metadaten |
+| `LastModifiedTime` | datetime | Datum und Uhrzeit der letzten Änderung des Elements oder der zugehörigen Metadaten |
 | `PublishedDate` | datetime | Datum der Veröffentlichung des Sicherheitsrisikos für die Allgemeinheit |
 | `VulnerabilityDescription` | string | Beschreibung des Sicherheitsrisikos und der damit verbundenen Risiken |
 | `AffectedSoftware` | string | Liste aller von dem Sicherheitsrisiko betroffenen Softwareprodukte |
@@ -51,7 +51,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 - [Vorbeugende Suche nach Bedrohungen](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
 - [Übersicht über die Bedrohungs- und Sicherheitsrisikoverwaltung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

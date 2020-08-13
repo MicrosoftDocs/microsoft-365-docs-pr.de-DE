@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie das AllowSelfServicePurchase PowerShell-Cmdlet verwenden, um Self-Service-Käufe ein-oder auszuschalten.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391542"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653713"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MSCommerce-PowerShell-Modul
 
@@ -92,6 +92,10 @@ In der folgenden Tabelle sind die verfügbaren Produkte und deren **ProductID**a
 | Power-apps pro Benutzer | CFQ7TTC0KP0P |
 | Power-Automatisierung pro Benutzer | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| Projekt Plan 1 | CFQ7TTC0KXND |
+| Projekt Plan 3 | CFQ7TTC0KXNC |
+| Visio-Plan 1 | CFQ7TTC0KXN9 |
+| Visio-Plan 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Anzeigen oder Festlegen des Status für AllowSelfServicePurchase
 
@@ -128,7 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-**Problem**
+### <a name="problem"></a>Problem
 
 Die folgende Fehlermeldung wird angezeigt:
 
@@ -136,9 +140,9 @@ Die folgende Fehlermeldung wird angezeigt:
 
 Dies kann an einer älteren Version von Transport Layer Security (TLS) liegen. Um diesen Dienst zu verbinden, müssen Sie TLS 1,2 oder höher verwenden.
 
-**Lösung**
+### <a name="solution"></a>Lösung
 
-Upgrade auf TLS 1,2:[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade auf TLS 1,2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

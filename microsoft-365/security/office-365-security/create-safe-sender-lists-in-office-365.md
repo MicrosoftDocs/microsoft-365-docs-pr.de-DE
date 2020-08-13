@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zuzulassen.
-ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005858"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652981"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen sicherer Absenderlisten in EoP
 
@@ -37,7 +37,14 @@ Die verfügbaren Listen für sichere Absender werden in der folgenden Liste besc
 Nachrichtenfluss Regeln ermöglichen die größtmögliche Flexibilität, um sicherzustellen, dass nur die richtigen Nachrichten zulässig sind. Zugelassene Absender und zugelassene Domänenlisten in Anti-Spam-Richtlinien sind nicht so sicher wie die IP-Zulassungsliste, da die e-Mail-Domäne des Absenders leicht gefälscht ist. Die IP-Zulassungsliste stellt jedoch auch ein Risiko dar, da e-Mails von _jeder_ Domäne, die von dieser IP-Adresse gesendet wird, die Spamfilterung umgehen.
 
 > [!IMPORTANT]
-> • Achten Sie darauf, *alle* Ausnahmen sorgfältig zu überwachen, die Sie zur Spamfilterung mithilfe sicherer Absenderlisten verwenden. <br/><br/> • Sie können zwar sichere Absenderlisten verwenden, um falsch positive Ergebnisse zu unterstützen (gute e-Mail-Nachrichten, die als Spam gekennzeichnet sind), aber Sie sollten die Verwendung sicherer Absenderlisten als eine vorübergehende Lösung in Betracht nehmen, die möglichst vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen bei der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie die Verwendung von Listen sicherer Absender zur Verwaltung von falsch positiven Ergebnissen beharren, müssen Sie wachsam sein und das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben. <br/><br/> • Wenn Sie zulassen möchten, dass eine Domäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) hinzufügen. <br/><br/> • EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.
+>
+> - Achten Sie darauf, *alle* Ausnahmen sorgfältig zu überwachen, die Sie zur Spamfilterung mithilfe sicherer Absenderlisten verwenden.
+>
+> - Sie können zwar sichere Absenderlisten verwenden, um bei falsch positiven Ergebnissen zu helfen (gute e-Mail-Nachrichten, die als Spam gekennzeichnet sind), aber Sie sollten die Verwendung von Listen sicherer Absender als eine vorübergehende Lösung in Betracht nehmen, die möglichst vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen bei der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie die Verwendung von Listen sicherer Absender zur Verwaltung von falsch positiven Ergebnissen beharren, müssen Sie wachsam sein und das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben.
+>
+> - Wenn Sie zulassen möchten, dass eine Domäne nicht authentifizierte e-Mails sendet (Schutz vor Spoofing schützt), aber keine Anti-Spam-und Anti-Malware-Überprüfungen umgeht, können Sie Sie der [Liste sicherer Absender von AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) hinzufügen.
+>
+> - EoP und Outlook prüfen unterschiedliche Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt [Überlegungen für Massen-e-Mails](#considerations-for-bulk-email) weiter unten in diesem Thema.
 
 Im Gegensatz dazu stehen Ihnen mehrere Optionen zur Verhinderung von e-Mails aus bestimmten Quellen mit _blockierten Absenderlisten_zur Ver, Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -60,7 +67,12 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie e-Mails von contoso.com b
      Verwenden Sie diese Einstellung, wenn die sendende Domäne keine Authentifizierung aufweist. So restriktiv wie möglich sein, wenn es um die Quell-IP-Adressen in der IP-Zulassungsliste geht. Wir empfehlen einen IP-Adressbereich von/24 oder kleiner (kleiner ist besser). Verwenden Sie keine IP-Adressbereiche, die zu Verbraucher Diensten (beispielsweise Outlook.com) oder gemeinsam genutzten Infrastrukturen gehören.
 
    > [!IMPORTANT]
-   > <ul><li>Konfigurieren Sie nie configure-Nachrichtenfluss Regeln *nur* mit der Absenderdomäne als Bedingung zum Überspringen der Spamfilterung. Dadurch wird die Wahrscheinlichkeit *erheblich* erhöht, dass Angreifer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die gesamte Spamfilterung überspringen und Absender Authentifizierungsprüfungen überspringen, damit die Nachricht im Posteingang des Empfängers eingeht.</li><li>Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) als Bedingungen in Nachrichtenfluss Regeln. Dies wird als hohes Risiko betrachtet, da dadurch Möglichkeiten für Angreifer zum Senden von e-Mails geschaffen werden, die ansonsten gefiltert würden.</li><li>Wenn Sie eine IP-Adresse zulassen, die hinter einem NAT-Gateway (Network Address Translation, Netzwerkadressübersetzung) liegt, müssen Sie die Server kennen, die am NAT-Pool beteiligt sind, um den Bereich Ihrer IP-Zulassungsliste zu kennen. IP-Adressen und NAT-Teilnehmer können sich ändern. Sie müssen die Einträge in der IP-Zulassungsliste regelmäßig als Teil Ihrer standardmäßigen Wartungsverfahren überprüfen.</li></ul>
+   >
+   > - Konfigurieren Sie nie configure-Nachrichtenfluss Regeln *nur* mit der Absenderdomäne als Bedingung zum Überspringen der Spamfilterung. Dadurch wird die Wahrscheinlichkeit *erheblich* erhöht, dass Angreifer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse imitieren), die gesamte Spamfilterung überspringen und Absender Authentifizierungsprüfungen überspringen, damit die Nachricht im Posteingang des Empfängers eingeht.
+   >
+   > - Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) als Bedingungen in Nachrichtenfluss Regeln. Dies wird als hohes Risiko betrachtet, da dadurch Möglichkeiten für Angreifer zum Senden von e-Mails geschaffen werden, die ansonsten gefiltert würden.
+   >
+   > - Wenn Sie eine IP-Adresse zulassen, die hinter einem NAT-Gateway (Network Address Translation, Netzwerkadressübersetzung) liegt, müssen Sie die Server kennen, die am NAT-Pool beteiligt sind, um den Bereich Ihrer IP-Zulassungsliste zu kennen. IP-Adressen und NAT-Teilnehmer können sich ändern. Sie müssen die Einträge in der IP-Zulassungsliste regelmäßig als Teil Ihrer standardmäßigen Wartungsverfahren überprüfen.
 
 3. **Optionale Bedingungen**:
 
@@ -90,7 +102,7 @@ Wenn Nachrichten Spamfilterung aufgrund der Liste sicherer Absender eines Benutz
 
 Wenn Sie Nachrichtenfluss Regeln nicht wie zuvor beschrieben verwenden können, ist die nächste beste Option das Hinzufügen des Quell-e-Mail-Servers oder der Server zur IP-Zulassungsliste in der Verbindungsfilter Richtlinie. Ausführliche Informationen finden Sie unter [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
 
-**Hinweise**:
+**Anmerkungen**:
 
 - Es ist wichtig, dass Sie die Anzahl der zulässigen IP-Adressen auf ein Minimum beschränken, daher sollten Sie möglichst keine ganzen IP-Adressbereiche verwenden.
 
@@ -108,7 +120,10 @@ Die am wenigsten wünschenswerte Option besteht darin, die Liste Zugelassene Abs
 Die Höchstgrenze für diese Listen beträgt ungefähr 1000 Einträge; Sie können jedoch nur 30 Einträge in das Portal eingeben. Sie müssen PowerShell verwenden, um mehr als 30 Einträge hinzuzufügen.
 
 > [!CAUTION]
-> <ul><li>Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden.</li><li>Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) in zugelassenen Domänenlisten.</li></ul>
+>
+> - Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich e-Mails an den Posteingang übermitteln, die andernfalls gefiltert würden.
+>
+> - Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (beispielsweise Microsoft.com) in zugelassenen Domänenlisten.
 
 ## <a name="considerations-for-bulk-email"></a>Überlegungen zu Massen-e-Mails
 

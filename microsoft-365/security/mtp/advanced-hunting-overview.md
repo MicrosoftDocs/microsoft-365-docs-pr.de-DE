@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608333"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649403"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktive Suche nach Bedrohungen mit der erweiterten Suche in Microsoft Threat Protection
 
@@ -68,7 +68,7 @@ Erweiterte Jagd Daten können in zwei verschiedene Typen kategorisiert werden, d
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Ausführen von Aktionen in Abfrageergebnissen](advanced-hunting-take-action.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)

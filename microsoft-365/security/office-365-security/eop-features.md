@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
-ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617042"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652873"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 
@@ -26,9 +26,10 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 > [!TIP]
 > Die [Microsoft 365 for Business-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) ist eine gute Ressource für die Suche nach Informationen über kommende neue Features. Einen umfassenderen Überblick über die Funktionen in den verschiedenen EOP-Abonnementplänen finden Sie unter [Exchange Online Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Feature|Beschreibung|
 |---|---|
-|**Feature**|**Beschreibung**|
 |**Antispamschutz**||
 |Eingehende Spamerkennung|Weitere Informationen finden Sie unter [Anti-Spam Protection in Microsoft 365](anti-spam-protection.md). <br/><br/> In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren von eigenständigen EoP zur Zustellung von Spam an den Junk-e-Mail-Ordner in Hybrid Umgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md) .|
 |Ausgehende Spamerkennung|Der ausgehende Antispam-Schutz ist immer aktiviert, wenn Sie den Dienst zum Senden ausgehender e-Mails verwenden. Weitere Informationen finden Sie unter [Outbound Spam Protection](outbound-spam-controls.md).|
@@ -84,8 +85,8 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Webbasierte Berichte|Die e-Mail-Schutz Berichte im Security & Compliance Center stellen Messagingdaten bereit. Beispielsweise können Sie überwachen, wie viel Spam und Schadsoftware erkannt wird oder wie oft ihre Nachrichtenfluss Regeln abgeglichen werden. Mithilfe dieser interaktiven Berichte erhalten Sie schnell einen visuellen Überblick über die zusammengefassten Daten und können Details zu einzelnen Nachrichten der letzten 90 Tage überprüfen. Weitere Informationen finden Sie unter [Verwenden von e-Mail-Schutz Berichten zum Anzeigen von Daten über Schadsoftware, Spam und Regel Erkennungen](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
 |Überwachungsprotokollierung|Der Administrator-Rollengruppenbericht und das Administrator-Überwachungsprotokoll stehen EOP-Administratoren zur Verfügung. Weitere Informationen finden Sie unter [Überwachungsberichte in EOP](auditing-reports-in-eop.md).  |
 |**Vereinbarungen zum Servicelevel (SLA) und Support**||
-|SLA zur Effektivität der Antispamfunktion|\>99%|
-|SLA zum Anteil fälschlicherweise gefilterter Nachrichten|\<1:250000|
+|SLA zur Effektivität der Antispamfunktion|\> 99%|
+|SLA zum Anteil fälschlicherweise gefilterter Nachrichten|\< 1:250000|
 |SLA zu Virenerkennung und Virenschutz|100 % der bekannten Viren|
 |SLA zu monatlicher Betriebszeit|99,999 %|
 |Technischer Telefon- und Onlinesupport rund um die Uhr|Weitere Informationen zu Hilfe und Support für EOP finden Sie unter [Hilfe und Support für EOP](help-and-support-for-eop.md).|
@@ -93,3 +94,4 @@ Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mai
 |Georedundantes globales Servernetzwerk|EOP wird in einem weltweiten Rechenzentrennetzwerk ausgeführt, das für eine optimale Verfügbarkeit entworfen wurde. Weitere Informationen finden Sie im Abschnitt "EOP-Rechenzentrum" unter [Exchange Online Protection im Überblick](exchange-online-protection-overview.md).  |
 |Nachrichtenwarteschlangen, wenn lokaler Server keine E-Mails akzeptieren kann|Nachrichten in Stundung verbleiben einen Tag lang in unseren Warteschlangen. Wiederholungsversuche hängen davon ab, welcher Fehler vom E-Mail-System des Empfängers zurückgegeben wird. Das Wiederholungsintervall für die Übertragung von Nachrichten beträgt im Durchschnitt 5 Minuten. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Office 365-Nachrichtenverschlüsselung als Add-On-Dienst erhältlich|Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](../../compliance/encryption.md).|
+|

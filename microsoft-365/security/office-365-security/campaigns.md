@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Kampagnenansichten in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: fe443c43fa5cea8ec6e3e1c0bc5ee5307b5c28f6
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039453"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653233"
 ---
 # <a name="campaign-views-in-atp"></a>Kampagnen Ansichten in ATP
 
@@ -123,7 +123,7 @@ Wenn Sie die Ansicht weiter filtern möchten, können Sie eine einzelne Eigensch
 
 Die verfügbaren Kampagneneigenschaften werden in der folgenden Liste beschrieben:
 
-- Basic
+- Standard
 
   - **Kampagnentyp**: Wählen Sie **Schadsoftware** oder **Phishing**aus. Das Löschen der Auswahl hat das gleiche Ergebnis wie das auswählen beider Elemente.
   - **Name der Kampagne**
@@ -221,10 +221,11 @@ Das Diagramm enthält die folgenden Informationen:
 
 - **Filter Urteile**: diese Werte beziehen sich auf die verfügbaren Phishing-und Spamfilter Urteile, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
 
-  ||||
+  ****
+
+  |Wert|Spam Filter Urteil|Beschreibung|
   |---|---|---|
-  |**Wert**|**Spam Filter Urteil**|**Beschreibung**|
-  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
+  |**Zulässig**|`SFV:SKN` <br/><br/> `SFV:SKI`|Die Nachricht wurde durch Spamfilterung (beispielsweisedurch eine e-Mail-Fluss Regel, die auch als Transportregel bezeichnet wird) als nicht-Spam und/oder übersprungene Filterung markiert.<br/><br/>Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen (beispielsweise scheinen sich der Absender und der Empfänger in derselben Organisation zu befinden).|
   |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde vor der Auswertung durch Spamfilterung (beispielsweisedurch eine Nachrichtenfluss Regel) als Spam markiert.|
   |**Erkannt**|`SFV:SPM`|Die Nachricht wurde von der Spamfilterung als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde durch Spamfilterung als nicht Spam gekennzeichnet.|
@@ -263,7 +264,7 @@ Wenn eine Phishing-Nachricht an einen Empfänger (in den Posteingang oder den Ju
 
 Wenn ein Benutzer in der Phishing-Nachricht auf die Nutzlast-URL geklickt hat, werden die Aktionen im Bereich **URL Klicks** des Diagramms in der Ansicht kampagnendetails angezeigt.
 
-- **Allowed**
+- **Zulässig**
 
 - **BlockPage**: der Empfänger hat auf die Nutzlast-URL geklickt, aber der Zugriff auf die bösartige Website wurde durch die Richtlinien für [ATP-sichere Links](atp-safe-links.md) in Ihrer Organisation blockiert.
 

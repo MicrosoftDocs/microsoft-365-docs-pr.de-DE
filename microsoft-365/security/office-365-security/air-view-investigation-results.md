@@ -15,48 +15,51 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Während und nach einer automatischen Untersuchung in Microsoft 365 können Sie die Ergebnisse und die wichtigsten Ergebnisse anzeigen.
-ms.openlocfilehash: b109c3e8a8dc92f2aaf91e40e620da8f1574af6f
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 057dcf5e6f33c789ecfb47c7e3dfb49f0e2548fc
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804872"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656837"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
-Wenn in [Office 365 Advanced Threat Protection](office-365-atp.md)eine [automatisierte Untersuchung](office-365-air.md) erfolgt, sind Details zu dieser Untersuchung während und nach dem automatisierten Ermittlungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen. 
+Wenn in [Office 365 Advanced Threat Protection](office-365-atp.md)eine [automatisierte Untersuchung](office-365-air.md) erfolgt, sind Details zu dieser Untersuchung während und nach dem automatisierten Ermittlungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen.
 
 ## <a name="investigation-status"></a>Ermittlungsstatus
 
-Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden. 
+Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden.
 
-|Status  |Bedeutung  |
-|---------|---------|
-|Wird gestartet | Die Untersuchung wurde ausgelöst und wartet darauf, mit der Ausführung zu beginnen.  |
-|Wird ausgeführt | Der Ermittlungsprozess wurde gestartet und ist im Gange. Dieser Status tritt auch ein, wenn [Ausstehende Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) genehmigt werden. |
-|Keine Bedrohungen gefunden | Die Untersuchung ist abgeschlossen, und es wurden keine Bedrohungen (Benutzerkonto, e-Mail-Nachricht, URL oder Datei) identifiziert. <br/><br/>**Tipp**: Wenn Sie vermuten, dass etwas verpasst wurde (beispielsweise ein falsches negativ), können Sie mit [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)Aktionen ausführen. |
-|Bedrohungen gefunden |Die automatische Untersuchung hat Probleme festgestellt, aber es gibt keine spezifischen Korrekturaktionen zur Lösung dieser Probleme.<br/><br/> Der Status "Bedrohungen gefunden" kann auftreten, wenn ein bestimmter Typ von Benutzeraktivität identifiziert wurde, aber keine Bereinigungsaktionen verfügbar sind. Beispiele hierfür sind die folgenden Benutzeraktivitäten: <br/>-DLP-Ereignis ( [Data Loss Prevention, Verhinderung von Datenverlust](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) ) <br/>-Eine e-Mail-Sende Anomalie <br/>-Gesendete Schadsoftware <br/>-Phishing gesendet<br/>Die Untersuchung hat festgestellt, dass keine böswilligen URLs, Dateien oder e-Mail-Nachrichten behoben werden konnten, und keine zu reparierende Post Fach Aktivität wie das Deaktivieren von Weiterleitungsregeln oder Delegierung. <br/><br/>**Tipp**: Wenn Sie vermuten, dass etwas verpasst wurde (beispielsweise ein falsches negativ), können Sie mit dem [Threat-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)untersuchen und Aktionen ausführen. |
-|Beendet von System | Die Untersuchung wurde angehalten. Eine Untersuchung kann aus mehreren Gründen beendet werden:<br/>– Die ausstehenden Aktionen der Untersuchung sind abgelaufen. Timeout für ausstehende Aktionen nach dem warten auf die Genehmigung für eine Woche. <br/>-Es gibt zu viele Aktionen. Wenn beispielsweise zu viele Benutzer auf böswillige URLs klicken, kann die Untersuchung die Möglichkeit überschreiten, alle Analyzer auszuführen, sodass die Untersuchung angehalten wird. <br/><br/>**Tipp**: Wenn eine Untersuchung angehalten wird, bevor Aktionen durchgeführt wurden, versuchen Sie, Bedrohungen mithilfe von [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) zu finden und zu adressieren.  |
-|Ausstehende Aktion | Bei der Untersuchung wurde eine Bedrohung festgestellt, beispielsweise eine böswillige e-Mail, eine bösartige URL oder eine riskante Postfacheinstellung, und eine Aktion zum Beheben dieser Bedrohung wartet auf die [Genehmigung](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Der Status ausstehende Aktion wird ausgelöst, wenn eine Bedrohung mit einer entsprechenden Aktion gefunden wird. Die Liste der ausstehenden Aktionen kann sich jedoch bei einer Untersuchung vergrössern. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) , um festzustellen, ob andere Elemente noch ausstehen. |
-|Bereinigt | Die Untersuchung wurde abgeschlossen, und alle Aktionen wurden genehmigt (vollständig behoben).<br/><br/>**Hinweis**: genehmigte Korrekturaktionen können Fehler aufweisen, die verhindern, dass die Aktionen ausgeführt werden. Unabhängig davon, ob Korrekturaktionen erfolgreich abgeschlossen wurden, ändert sich der Ermittlungsstatus nicht. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse. |
-|Teilweise behoben | Die Untersuchung führte zu Korrekturaktionen, einige wurden genehmigt und abgeschlossen. Andere Aktionen sind noch [Ausstehend](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Fehlgeschlagen | Mindestens ein Ermittlungs Analyse-Analyzer hat ein Problem aufgetreten, bei dem es nicht ordnungsgemäß abgeschlossen werden konnte. <br/><br/>**Hinweis**: Wenn eine Untersuchung fehlschlägt, nachdem Korrekturaktionen genehmigt wurden, sind die Korrekturaktionen möglicherweise weiterhin erfolgreich. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse. |
-|Durch Drosselung in der Warteschlange | In einer Warteschlange wird eine Untersuchung durchgeführt. Wenn andere Untersuchungen abgeschlossen sind, beginnen Warteschlangen Untersuchungen. Die Drosselung hilft bei der Vermeidung schlechter Dienstleistung. <br/><br/>**Tipp**: Ausstehende Aktionen können einschränken, wie viele neue Untersuchungen ausgeführt werden können. Stellen Sie sicher, dass [Ausstehende Aktionen genehmigt (oder abgelehnt)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)werden. |
-|Durch Drosselung beendet | Wenn eine Untersuchung zu lange in der Warteschleife stattfindet, wird Sie angehalten. <br/><br/>**Tipp**: Sie können [eine Untersuchung von Threat Explorer starten](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+****
+
+|Status|Bedeutung|
+|---|---|
+|Wird gestartet| Die Untersuchung wurde ausgelöst und wartet darauf, mit der Ausführung zu beginnen.|
+|Wird ausgeführt| Der Ermittlungsprozess wurde gestartet und ist im Gange. Dieser Status tritt auch ein, wenn [Ausstehende Aktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) genehmigt werden.|
+|Keine Bedrohungen gefunden| Die Untersuchung ist abgeschlossen, und es wurden keine Bedrohungen (Benutzerkonto, e-Mail-Nachricht, URL oder Datei) identifiziert. <br/><br/>**Tipp**: Wenn Sie vermuten, dass etwas verpasst wurde (beispielsweise ein falsches negativ), können Sie mit [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)Aktionen ausführen.|
+|Bedrohungen gefunden|Die automatische Untersuchung hat Probleme festgestellt, aber es gibt keine spezifischen Korrekturaktionen zur Lösung dieser Probleme.<br/><br/> Der Status "Bedrohungen gefunden" kann auftreten, wenn ein bestimmter Typ von Benutzeraktivität identifiziert wurde, aber keine Bereinigungsaktionen verfügbar sind. Beispiele hierfür sind die folgenden Benutzeraktivitäten: <br/>-DLP-Ereignis ( [Data Loss Prevention, Verhinderung von Datenverlust](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) ) <br/>-Eine e-Mail-Sende Anomalie <br/>-Gesendete Schadsoftware <br/>-Phishing gesendet<br/>Die Untersuchung hat festgestellt, dass keine böswilligen URLs, Dateien oder e-Mail-Nachrichten behoben werden konnten, und keine zu reparierende Post Fach Aktivität wie das Deaktivieren von Weiterleitungsregeln oder Delegierung. <br/><br/>**Tipp**: Wenn Sie vermuten, dass etwas verpasst wurde (beispielsweise ein falsches negativ), können Sie mit dem [Threat-Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)untersuchen und Aktionen ausführen.|
+|Beendet von System| Die Untersuchung wurde angehalten. Eine Untersuchung kann aus mehreren Gründen beendet werden:<br/>– Die ausstehenden Aktionen der Untersuchung sind abgelaufen. Timeout für ausstehende Aktionen nach dem warten auf die Genehmigung für eine Woche. <br/>-Es gibt zu viele Aktionen. Wenn beispielsweise zu viele Benutzer auf böswillige URLs klicken, kann die Untersuchung die Möglichkeit überschreiten, alle Analyzer auszuführen, sodass die Untersuchung angehalten wird. <br/><br/>**Tipp**: Wenn eine Untersuchung angehalten wird, bevor Aktionen durchgeführt wurden, versuchen Sie, Bedrohungen mithilfe von [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) zu finden und zu adressieren.|
+|Ausstehende Aktion| Bei der Untersuchung wurde eine Bedrohung festgestellt, beispielsweise eine böswillige e-Mail, eine bösartige URL oder eine riskante Postfacheinstellung, und eine Aktion zum Beheben dieser Bedrohung wartet auf die [Genehmigung](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Der Status ausstehende Aktion wird ausgelöst, wenn eine Bedrohung mit einer entsprechenden Aktion gefunden wird. Die Liste der ausstehenden Aktionen kann sich jedoch bei einer Untersuchung vergrössern. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) , um festzustellen, ob andere Elemente noch ausstehen.|
+|Bereinigt| Die Untersuchung wurde abgeschlossen, und alle Aktionen wurden genehmigt (vollständig behoben).<br/><br/>**Hinweis**: genehmigte Korrekturaktionen können Fehler aufweisen, die verhindern, dass die Aktionen ausgeführt werden. Unabhängig davon, ob Korrekturaktionen erfolgreich abgeschlossen wurden, ändert sich der Ermittlungsstatus nicht. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse.|
+|Teilweise behoben| Die Untersuchung führte zu Korrekturaktionen, einige wurden genehmigt und abgeschlossen. Andere Aktionen sind noch [Ausstehend](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
+|Fehlgeschlagen| Mindestens ein Ermittlungs Analyse-Analyzer hat ein Problem aufgetreten, bei dem es nicht ordnungsgemäß abgeschlossen werden konnte. <br/><br/>**Hinweis**: Wenn eine Untersuchung fehlschlägt, nachdem Korrekturaktionen genehmigt wurden, sind die Korrekturaktionen möglicherweise weiterhin erfolgreich. Überprüfen Sie das [Ermittlungsprotokoll](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) auf detaillierte Ergebnisse.|
+|Durch Drosselung in der Warteschlange| In einer Warteschlange wird eine Untersuchung durchgeführt. Wenn andere Untersuchungen abgeschlossen sind, beginnen Warteschlangen Untersuchungen. Die Drosselung hilft bei der Vermeidung schlechter Dienstleistung. <br/><br/>**Tipp**: Ausstehende Aktionen können einschränken, wie viele neue Untersuchungen ausgeführt werden können. Stellen Sie sicher, dass [Ausstehende Aktionen genehmigt (oder abgelehnt)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)werden.|
+|Durch Drosselung beendet| Wenn eine Untersuchung zu lange in der Warteschleife stattfindet, wird Sie angehalten. <br/><br/>**Tipp**: Sie können [eine Untersuchung von Threat Explorer starten](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|
 
 ## <a name="view-details-of-an-investigation"></a>Anzeigen von Details einer Untersuchung
 
-1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an.
+1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
-    - Wechseln Sie zu **Threat Management** > **Dashboard**. Dadurch gelangen Sie zum [Sicherheits Dashboard](security-dashboard.md). Die Air-Widgets werden am oberen Rand des [Sicherheits Dashboards](security-dashboard.md)angezeigt. Wählen Sie ein Widget aus, beispielsweise **Zusammenfassung der Untersuchungen**.
+    - Wechseln Sie zu **Threat Management**  >  **Dashboard**. Dadurch gelangen Sie zum [Sicherheits Dashboard](security-dashboard.md). Die Air-Widgets werden am oberen Rand des [Sicherheits Dashboards](security-dashboard.md)angezeigt. Wählen Sie ein Widget aus, beispielsweise **Zusammenfassung der Untersuchungen**.
 
-    - Wechseln Sie zu **Threat Management** > **Investigations**. 
+    - Wechseln Sie zu **Threat Management**  >  **Investigations**.
 
     Mit beiden Methoden gelangen Sie zu einer Liste von Untersuchungen.
 
-    ![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png) 
+    ![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png)
 
 3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus. Dadurch wird die Seite Ermittlungs Details geöffnet, beginnend mit dem unter Such Diagramm in der Ansicht.
 
@@ -68,23 +71,23 @@ Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Währ
 
 Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Microsoft 365 aus. Weitere Informationen finden Sie unter [Alerts](automated-investigation-response-office.md#alerts). Verwenden Sie das folgende Verfahren, um Details zu einer Warnung anzuzeigen, die einer automatisierten Untersuchung zugeordnet ist.
 
-1. Wechseln Sie zum Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), und melden Sie sich an. 
+1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ), und melden Sie sich an.
 
-2. Wechseln Sie zu **Threat Management** > **Investigations**.
+2. Wechseln Sie zu **Threat Management**  >  **Investigations**.
 
-3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus. 
+3. Wählen Sie in der Liste der Untersuchungen ein Element in der Spalte **ID** aus.
 
 4. Wenn Details zu einer Untersuchung geöffnet sind, wählen Sie die Registerkarte **Benachrichtigungen** aus. Alle Warnungen, die die Untersuchung ausgelöst haben, werden hier aufgelistet.
 
 5. W?hlen Sie ein Element in der Liste aus. Ein Flyout mit Details zur Warnung und Links zu zusätzlichen Informationen und Aktionen wird geöffnet.
 
-6. Überprüfen Sie die Informationen im Flyout, und nehmen Sie abhängig von der jeweiligen Warnung eine Aktion vor, beispielsweise zum **Auflösen**, unter **drücken**oder **Benachrichtigen von Benutzern**. 
+6. Überprüfen Sie die Informationen im Flyout, und nehmen Sie abhängig von der jeweiligen Warnung eine Aktion vor, beispielsweise zum **Auflösen**, unter **drücken**oder **Benachrichtigen von Benutzern**.
 
     - **Resolve** entspricht dem Schließen einer Warnung.
-    
+
     - Unter **drücken** bewirkt, dass eine Richtlinie Warnungen für einen bestimmten Zeitraum nicht auslöst
-    
-    - **Benutzer benachrichtigen** startet eine e-Mail mit bereits eingegebenen e-Mail-Adressen der Benutzer und ermöglicht es dem Team für Sicherheitsvorgänge, diesen Benutzern eine Nachricht zu geben. (Dies ähnelt dem Senden einer Nachricht an Empfänger mithilfe von [Threat Explorer](threat-explorer.md).)  
+
+    - **Benutzer benachrichtigen** startet eine e-Mail mit bereits eingegebenen e-Mail-Adressen der Benutzer und ermöglicht es dem Team für Sicherheitsvorgänge, diesen Benutzern eine Nachricht zu geben. (Dies ähnelt dem Senden einer Nachricht an Empfänger mithilfe von [Threat Explorer](threat-explorer.md).)
 
 ## <a name="how-to-use-the-various-tabs"></a>Verwenden der verschiedenen Registerkarten
 
@@ -94,13 +97,13 @@ Die folgenden Abschnitte führen Sie durch die verschiedenen Registerkarten auf 
 
 Die Seite Automatische Untersuchungen zeigt die Ermittlungen Ihrer Organisation und ihre aktuellen Status.
 
-![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png) 
-  
+![Haupt Untersuchungs Seite für Air](../../media/air-maininvestigationpage.png)
+
 Sie können:
+
 - Navigieren Sie direkt zu einer Untersuchung (Wählen Sie eine **Ermittlungs-ID**aus).
 - Anwenden von Filtern. Wählen Sie zwischen **Ermittlungstyp**, **Zeitbereich**, **Status**oder einer Kombination aus diesen aus.
 - Exportieren Sie die Daten in eine CSV-Datei.
-
 
 ### <a name="investigation-graph"></a>Untersuchungsdiagramm
 
@@ -109,6 +112,7 @@ Wenn Sie eine bestimmte Untersuchung öffnen, wird die Seite "Ermittlungs Diagra
 ![Seite "Luft Untersuchungs Diagramm"](../../media/air-investigationgraphpage.png)
 
 Sie können:
+
 - Erhalten Sie eine visuelle Übersicht über die aktuelle Untersuchung.
 - Hier wird eine Zusammenfassung der Untersuchungsdauer angezeigt.
 - Wählen Sie einen Knoten in der Visualisierung aus, um Details zu diesem Knoten anzuzeigen.
@@ -121,21 +125,24 @@ Auf der Registerkarte **Benachrichtigungen** für eine Untersuchung können Sie 
 ![Seite "Luft Warnungen"](../../media/air-investigationalertspage.png)
 
 Sie können:
+
 - Erhalten Sie eine visuelle Übersicht über die aktuelle Auslöse Warnung und alle zugeordneten Warnungen.
 - Wählen Sie eine Warnung in der Liste aus, um eine Ausklappseite zu öffnen, auf der vollständige Warnungsdetails angezeigt werden.
 
 ### <a name="email-investigation"></a>E-Mail-Untersuchung
 
-Auf der Registerkarte **e-Mail** für eine Untersuchung können Sie die ursprünglichen e-Mails und die Cluster ähnlicher e-Mails sehen, die im Rahmen der Untersuchung identifiziert wurden. 
+Auf der Registerkarte **e-Mail** für eine Untersuchung können Sie die ursprünglichen e-Mails und die Cluster ähnlicher e-Mails sehen, die im Rahmen der Untersuchung identifiziert wurden.
 
-Angesichts der schieren Menge an e-Mails, die Benutzer in einer Organisation senden und empfangen, sowie der mehr Benutzer Natur von e-Mail-Kommunikation und Angriffen, wird der Prozess der 
-- Gruppieren von e-Mail-Nachrichten basierend auf ähnlichen Attributen aus einer Nachrichtenkopfzeile, einem Textkörper, einer URL und Anlagen; 
-- Trennen von böswilligen e-Mails von der guten e-Mail-Nachricht und 
-- Ausführen von Aktionen in böswilligen e-Mail-Nachrichten 
+Angesichts der schieren Menge an e-Mails, die Benutzer in einer Organisation senden und empfangen, sowie der mehr Benutzer Natur von e-Mail-Kommunikation und Angriffen, wird der Prozess der
 
-kann erhebliche Zeit in Anspruch nehmen. Dieses Verfahren wird von Air jetzt automatisiert, sodass Zeit und Aufwand für das Sicherheitsteam Ihres Unternehmens gespart werden. 
+- Gruppieren von e-Mail-Nachrichten basierend auf ähnlichen Attributen aus einer Nachrichtenkopfzeile, einem Textkörper, einer URL und Anlagen;
+- Trennen von böswilligen e-Mails von der guten e-Mail-Nachricht und
+- Ausführen von Aktionen in böswilligen e-Mail-Nachrichten
 
-Während des e-Mail-Analyse Schritts können zwei verschiedene Arten von e-Mail-Clustern identifiziert werden: Ähnlichkeits Cluster und Indikator Cluster. 
+kann erhebliche Zeit in Anspruch nehmen. Dieses Verfahren wird von Air jetzt automatisiert, sodass Zeit und Aufwand für das Sicherheitsteam Ihres Unternehmens gespart werden.
+
+Während des e-Mail-Analyse Schritts können zwei verschiedene Arten von e-Mail-Clustern identifiziert werden: Ähnlichkeits Cluster und Indikator Cluster.
+
 - Ähnlichkeits Cluster sind e-Mail-Nachrichten, die durch die Suche nach e-Mails mit ähnlichen Absender-und Inhaltsattributen identifiziert werden. Diese Cluster werden basierend auf den ursprünglichen Entdeckungs Ergebnissen auf schädliche Inhalte ausgewertet. E-Mail-Cluster mit ausreichenden bösartigen e-Mail-Erkennungen werden als böswillig betrachtet.
 - Indikator Cluster sind e-Mail-Nachrichten, die durch die Suche nach der gleichen Indikator Entität (Datei Hash oder URL) aus der ursprünglichen e-Mail identifiziert werden. Wenn die ursprüngliche Datei/URL-Entität als bösartig identifiziert wird, wendet Air das Indikator Urteil auf den gesamten Cluster von e-Mail-Nachrichten an, die diese Entität enthalten. Eine als Schadsoftware bezeichnete Datei bedeutet, dass der Cluster von e-Mail-Nachrichten mit dieser Datei als Schadsoftware-e-Mail-Nachrichten behandelt wird.
 
@@ -143,13 +150,13 @@ Das Ziel des Clusterings besteht darin, andere verwandte e-Mail-Nachrichten zu s
 
 Auf der Registerkarte **e** -Mail werden auch e-Mail-Elemente im Zusammenhang mit der Untersuchung angezeigt, beispielsweise die e-Mail-Details des Benutzers, die gemeldeten e-Mails, die e-Mail-Nachricht (en), die aufgrund von Malware/Phishing zapped wurden
 
-Die auf der Registerkarte e-Mail angegebene e-Mail-Anzahl stellt derzeit die Gesamtsumme aller e-Mail-Nachrichten dar, die auf der Registerkarte **e-Mail** angezeigt werden. Da e-Mail-Nachrichten in mehreren Clustern vorhanden sind, ist die tatsächliche Gesamtanzahl der identifizierten e-Mail-Nachrichten (und von Korrekturaktionen betroffen) die Anzahl der eindeutigen e-Mail-Nachrichten, die in allen Clustern und e-Mail-Nachrichten der ursprünglichen Empfänger vorhanden sind. 
+Die auf der Registerkarte e-Mail angegebene e-Mail-Anzahl stellt derzeit die Gesamtsumme aller e-Mail-Nachrichten dar, die auf der Registerkarte **e-Mail** angezeigt werden. Da e-Mail-Nachrichten in mehreren Clustern vorhanden sind, ist die tatsächliche Gesamtanzahl der identifizierten e-Mail-Nachrichten (und von Korrekturaktionen betroffen) die Anzahl der eindeutigen e-Mail-Nachrichten, die in allen Clustern und e-Mail-Nachrichten der ursprünglichen Empfänger vorhanden sind.
 
-Sowohl Explorer als auch Air count-e-Mails pro Empfänger, da sich die Sicherheits Urteile, Aktionen und Zustellungsorte pro Empfänger unterscheiden. Eine ursprüngliche e-Mail-Nachricht, die an drei Benutzer gesendet wird, zählt also insgesamt drei e-Mail-Nachrichten statt einer e-Mail. Hinweis Es kann Fälle geben, in denen eine e-Mail zwei oder mehr Mal gezählt wird, da die e-Mail möglicherweise mehrere Aktionen enthält und mehrere Kopien der e-Mail vorhanden sein können, sobald alle Aktionen ausgeführt werden. Beispielsweise kann eine Malware-e-Mail, die bei der Zustellung erkannt wird, sowohl eine blockierte (isolierte) e-Mail-Nachricht als auch eine ersetzte e-Mail verursachen (Bedrohungs Datei wurde durch eine Warnungsdatei ersetzt und dann an das Postfach des Benutzers zugestellt). Da es buchstäblich zwei Kopien der e-Mail im System gibt, werden beide möglicherweise in Cluster Zählungen gezählt. 
+Sowohl Explorer als auch Air count-e-Mails pro Empfänger, da sich die Sicherheits Urteile, Aktionen und Zustellungsorte pro Empfänger unterscheiden. Eine ursprüngliche e-Mail-Nachricht, die an drei Benutzer gesendet wird, zählt also insgesamt drei e-Mail-Nachrichten statt einer e-Mail. Hinweis Es kann Fälle geben, in denen eine e-Mail zwei oder mehr Mal gezählt wird, da die e-Mail möglicherweise mehrere Aktionen enthält und mehrere Kopien der e-Mail vorhanden sein können, sobald alle Aktionen ausgeführt werden. Beispielsweise kann eine Malware-e-Mail, die bei der Zustellung erkannt wird, sowohl eine blockierte (isolierte) e-Mail-Nachricht als auch eine ersetzte e-Mail verursachen (Bedrohungs Datei wurde durch eine Warnungsdatei ersetzt und dann an das Postfach des Benutzers zugestellt). Da es buchstäblich zwei Kopien der e-Mail im System gibt, werden beide möglicherweise in Cluster Zählungen gezählt.
 
 E-Mail-Anzahlen werden zum Zeitpunkt der Untersuchung berechnet, und einige Zählungen werden neu berechnet, wenn Sie Ermittlungs Flyouts (basierend auf einer zugrunde liegenden Abfrage) öffnen. Die e-Mail-Anzahl, die für die e-Mail-Cluster auf der Registerkarte e-Mail angezeigt wird, und der Wert für die e-Mail-Menge im Cluster Flyout werden zum Zeitpunkt der Untersuchung berechnet und nicht geändert. Die e-Mail-Anzahl, die am unteren Rand der Registerkarte e-Mail-Nachrichten im e-Mail-Cluster-Flyout und der Anzahl der im Explorer angezeigten e-Mail-Nachrichten angezeigt wird So würde ein e-Mail-Cluster, der eine ursprüngliche Menge von 10 e-Mail-Nachrichten anzeigt, eine e-Mail-Listen Summe von 15 anzeigen, wenn fünf weitere e-Mail-Nachrichten zwischen der Ermittlungs Analysephase und dem Zeitpunkt, zu dem der Administrator  Ebenso können alte Untersuchungen mit größerer Anzahl beginnen, als Forscher Abfragen anzeigen, da ATP P2 Daten nach 7 Tagen für Versuche und 30 Tage für bezahlte Lizenzen abläuft.  Das Anzeigen der Anzahl der historischen und aktuellen Zählungen in unterschiedlichen Ansichten wird durchgeführt, um die e-Mail-Auswirkungen zum Zeitpunkt der Untersuchung und die aktuellen Auswirkungen bis zur Ausführung der Wiederherstellung anzugeben.
 
-Als Beispiel wird das folgende Szenario betrachtet. Der erste Cluster von drei e-Mail-Nachrichten wurde als Phishing betrachtet. Ein weiterer Cluster ähnlicher Nachrichten mit derselben IP und demselben Betreff wurde gefunden und als bösartig eingestuft, da einige von Ihnen während der anfänglichen Erkennung als Phishing identifiziert wurden. 
+Als Beispiel wird das folgende Szenario betrachtet. Der erste Cluster von drei e-Mail-Nachrichten wurde als Phishing betrachtet. Ein weiterer Cluster ähnlicher Nachrichten mit derselben IP und demselben Betreff wurde gefunden und als bösartig eingestuft, da einige von Ihnen während der anfänglichen Erkennung als Phishing identifiziert wurden.
 
 ![Seite für die Untersuchung von Air e-Mail](../../media/air-investigationemailpage.png)
 
@@ -177,22 +184,23 @@ Sie können:
 
 ### <a name="machine-investigation"></a>Maschinelle Untersuchung
 
-Auf der Registerkarte " **Computer** " werden alle Computer angezeigt, die als Teil der Untersuchung identifiziert wurden. 
+Auf der Registerkarte " **Computer** " werden alle Computer angezeigt, die als Teil der Untersuchung identifiziert wurden.
 
 ![Seite "Air Investigation Machine"](../../media/air-investigationmachinepage.png)
 
 Im Rahmen einiger Textbuch-Elemente korreliert Air e-Mail-Bedrohungen mit Geräten (z. b. gezappte Schadsoftware). Beispielsweise übergibt eine Untersuchung einen bösartigen Datei Hash an [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-) , um zu untersuchen. Dies ermöglicht eine automatisierte Untersuchung relevanter Computer für Ihre Benutzer, um sicherzustellen, dass Bedrohungen sowohl in der Cloud als auch in ihren Endpunkten behandelt werden. 
+) , um zu untersuchen. Dies ermöglicht eine automatisierte Untersuchung relevanter Computer für Ihre Benutzer, um sicherzustellen, dass Bedrohungen sowohl in der Cloud als auch in ihren Endpunkten behandelt werden.
 
 Sie können:
+
 - Erhalten Sie eine visuelle Übersicht über die gefundenen aktuellen Computer und Bedrohungen.
 - Wählen Sie einen Computer aus, um eine Ansicht zu öffnen, die in den entsprechenden [Microsoft Defender-ATP-Untersuchungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) im Sicherheits Center von Microsoft Defender angezeigt wird.
 
 ### <a name="entity-investigation"></a>Untersuchung von Entitäten
 
-Auf der Registerkarte **Entitäten** werden die Entitäten, die im Rahmen der Untersuchung identifiziert und analysiert wurden, angezeigt. 
+Auf der Registerkarte **Entitäten** werden die Entitäten, die im Rahmen der Untersuchung identifiziert und analysiert wurden, angezeigt.
 
-Hier sehen Sie die untersuchten Entitäten und Details der Entitätstypen wie e-Mail-Nachrichten, Cluster, IP-Adressen, Benutzer und vieles mehr. Sie können auch sehen, wie viele Entitäten analysiert wurden, und die Bedrohungen, die jedem zugeordnet wurden. 
+Hier sehen Sie die untersuchten Entitäten und Details der Entitätstypen wie e-Mail-Nachrichten, Cluster, IP-Adressen, Benutzer und vieles mehr. Sie können auch sehen, wie viele Entitäten analysiert wurden, und die Bedrohungen, die jedem zugeordnet wurden.
 
 ![Seite "Air Investigation Entities"](../../media/air-investigationentitiespage.png)
 
@@ -204,44 +212,49 @@ Sie können:
 
 ### <a name="playbook-log"></a>Manuskript Protokoll
 
-Auf der Registerkarte **Protokoll** werden alle Schritte im Textbuch angezeigt, die während der Untersuchung aufgetreten sind. Das Protokoll erfasst einen vollständigen bestand aller Analysatoren und Aktionen, die von Office 365 automatischen Ermittlungsfunktionen als Teil von Air abgeschlossen wurden. Es bietet eine klare Sicht auf alle Schritte, einschließlich der Aktion selbst, eine Beschreibung und die Dauer des tatsächlichen von Anfang bis Ende. 
+Auf der Registerkarte **Protokoll** werden alle Schritte im Textbuch angezeigt, die während der Untersuchung aufgetreten sind. Das Protokoll erfasst einen vollständigen bestand aller Analysatoren und Aktionen, die von Office 365 automatischen Ermittlungsfunktionen als Teil von Air abgeschlossen wurden. Es bietet eine klare Sicht auf alle Schritte, einschließlich der Aktion selbst, eine Beschreibung und die Dauer des tatsächlichen von Anfang bis Ende.
 
 ![Seite "Air Investigation log"](../../media/air-investigationlogpage.png)
 
 Sie können:
+
 - Erhalten Sie eine visuelle Übersicht über die ausgeführten Schritte im Textbuch.
 - Exportieren Sie die Ergebnisse in eine CSV-Datei.
 - Filtern Sie die Ansicht.
 
-|Analyzer | Beschreibung |
-|-----|-----|
-|Untersuchung der DLP-Verstöße |Untersuchen von Verletzungen, die durch [Datenverlust Verhinderung](../../compliance/data-loss-prevention-policies.md) (DLP) erkannt wurden |
-|Extraktion von e-Mail-Indikatoren |Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt einer e-Mail-Nachricht zur Untersuchung |
-|Datei Hash Zuverlässigkeit |Erkennen von Anomalien basierend auf Datei Hashes für Benutzer und Computer in Ihrer Organisation |
-|E-Mail-Cluster Identifikation |E-Mail-Clusteranalyse basierend auf Kopf, Text, Inhalt und URLs |
-|Volume-Analyse des e-Mail-Clusters |E-Mail-Clusteranalyse basierend auf ausgehenden Nachrichtenfluss Volumen Mustern |
-|Untersuchung der e-Mail-Delegation |Untersuchen des Zugriffs auf Postfächer für Benutzerpostfächer im Zusammenhang mit dieser Untersuchung |
-|Untersuchung von Nachrichten Weiterleitungsregeln |Untersuchen aller e-Mail-Weiterleitungsregeln für Benutzerpostfächer in Bezug auf diese Untersuchung |
-|Verpasste Schadsoftware erkannt |Erkennen verpasster Schadsoftware, die dem Postfach des Benutzers in Ihrer Organisation zugestellt wurde |
-|Detonation bei Bedarf |Auf-Anforderung-Detonation ausgelöst für e-Mail-Nachrichten, Anlagen und URLs |
-|Untersuchung der ausgehenden e-Mail-Anomalie |Erkennen von Anomalien basierend auf Verlaufs Nachrichten Übermittlungs Mustern für Benutzer in Ihrer Organisation |
-|Untersuchung der ausgehenden Malware-und Spam Anomalien |Erkennen von Intra-org-und ausgehenden Schadsoftware, Phishing oder Spam, die von Benutzern in Ihrer Organisation stammen |
-|Untersuchung der Absenderdomäne |On-Demand-Überprüfung der Domänen Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen |
-|Untersuchung von Absender-IP | On-Demand-Überprüfung der IP-Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen |
-|Untersuchung von URL-Klicks | Untersuchen von Klicks von Benutzern, die durch [Office 365 sichere ATP-Links](atp-safe-links.md) in Ihrer Organisation geschützt sind |
-|Untersuchung der URL-Reputation |On-Demand-Überprüfung der URL-Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen |
-|Untersuchung von Benutzeraktivitäten |Analysieren von Anomalien von Benutzeraktivitäten in der [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
-|Extraktion von von Benutzern gemeldeten e-Mail-Indikatoren |Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt der von [Benutzern gemeldeten e-Mails](enable-the-report-message-add-in.md) zur Untersuchung |
+****
+
+|Analyzer| Beschreibung|
+|---|---|
+|Untersuchung der DLP-Verstöße|Untersuchen von Verletzungen, die durch [Datenverlust Verhinderung](../../compliance/data-loss-prevention-policies.md) (DLP) erkannt wurden|
+|Extraktion von e-Mail-Indikatoren|Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt einer e-Mail-Nachricht zur Untersuchung|
+|Datei Hash Zuverlässigkeit|Erkennen von Anomalien basierend auf Datei Hashes für Benutzer und Computer in Ihrer Organisation|
+|E-Mail-Cluster Identifikation|E-Mail-Clusteranalyse basierend auf Kopf, Text, Inhalt und URLs|
+|Volume-Analyse des e-Mail-Clusters|E-Mail-Clusteranalyse basierend auf ausgehenden Nachrichtenfluss Volumen Mustern|
+|Untersuchung der e-Mail-Delegation|Untersuchen des Zugriffs auf Postfächer für Benutzerpostfächer im Zusammenhang mit dieser Untersuchung|
+|Untersuchung von Nachrichten Weiterleitungsregeln|Untersuchen aller e-Mail-Weiterleitungsregeln für Benutzerpostfächer in Bezug auf diese Untersuchung|
+|Verpasste Schadsoftware erkannt|Erkennen verpasster Schadsoftware, die dem Postfach des Benutzers in Ihrer Organisation zugestellt wurde|
+|Detonation bei Bedarf|Auf-Anforderung-Detonation ausgelöst für e-Mail-Nachrichten, Anlagen und URLs|
+|Untersuchung der ausgehenden e-Mail-Anomalie|Erkennen von Anomalien basierend auf Verlaufs Nachrichten Übermittlungs Mustern für Benutzer in Ihrer Organisation|
+|Untersuchung der ausgehenden Malware-und Spam Anomalien|Erkennen von Intra-org-und ausgehenden Schadsoftware, Phishing oder Spam, die von Benutzern in Ihrer Organisation stammen|
+|Untersuchung der Absenderdomäne|On-Demand-Überprüfung der Domänen Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen|
+|Untersuchung von Absender-IP| On-Demand-Überprüfung der IP-Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen|
+|Untersuchung von URL-Klicks| Untersuchen von Klicks von Benutzern, die durch [Office 365 sichere ATP-Links](atp-safe-links.md) in Ihrer Organisation geschützt sind|
+|Untersuchung der URL-Reputation|On-Demand-Überprüfung der URL-Reputation aus dem [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) und externen Threat Intelligence-Quellen|
+|Untersuchung von Benutzeraktivitäten|Analysieren von Anomalien von Benutzeraktivitäten in der [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
+|Extraktion von von Benutzern gemeldeten e-Mail-Indikatoren|Extrahieren von Indikatoren aus der Kopfzeile, dem Textkörper und dem Inhalt der von [Benutzern gemeldeten e-Mails](enable-the-report-message-add-in.md) zur Untersuchung|
+|
 
 ### <a name="recommended-actions"></a>Empfohlene Aktionen
 
-Auf der Registerkarte **Aktionen** werden alle Textbuch-Aktionen angezeigt, die nach Abschluss der Untersuchung zur Korrektur empfohlen werden. 
+Auf der Registerkarte **Aktionen** werden alle Textbuch-Aktionen angezeigt, die nach Abschluss der Untersuchung zur Korrektur empfohlen werden.
 
 Durch Aktionen werden die Schritte erfasst, die Microsoft am Ende einer Untersuchung empfiehlt. Sie können hier Korrekturaktionen durch Auswählen einer oder mehrerer Aktionen durchführen. Durch Klicken auf **genehmigen** kann die Wiederherstellung beginnen. (Entsprechende Berechtigungen sind erforderlich – die Funktion "suchen und löschen" ist erforderlich, um Aktionen aus Explorer und Air auszuführen). Beispielsweise kann ein Sicherheits Leser Aktionen anzeigen, aber nicht genehmigen. Hinweis: Sie müssen nicht jede Aktion genehmigen. Wenn Sie mit der empfohlenen Aktion nicht einverstanden sind oder Ihre Organisation keine bestimmten Arten von Aktionen ausgewählt hat, können Sie die Aktionen **ablehnen** oder einfach ignorieren und keine Aktionen ausführen. Durch das genehmigen und/oder ablehnen aller Aktionen kann die Untersuchung vollständig abgeschlossen werden (der Status wird korrigiert), während einige Aktionen unvollständig sind und der unter Suchstatus in einen teilweise korrigierten Zustand wechselt.
 
 ![Seite "Luft Ermittlungsaktionen"](../../media/air-investigationactionspage.png)
 
 Sie können:
+
 - Erhalten Sie eine visuelle Übersicht über die empfohlenen Aktionen im Textbuch.
 - Wählen Sie eine einzelne Aktion oder mehrere Aktionen aus.
 - Genehmigen oder ablehnen von empfohlenen Aktionen mit Kommentaren.

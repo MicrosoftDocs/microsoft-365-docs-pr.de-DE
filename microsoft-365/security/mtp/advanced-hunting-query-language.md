@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049695"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649391"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -66,7 +66,7 @@ Ein kurzer Kommentar zum Anfang der Abfrage wurde hinzugefügt, um zu beschreibe
 // Finds PowerShell execution events that could involve a download
 ```
 
-Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir mit dem Erstellen einer Vereinigung von zwei Tabellen und fügen bei Bedarf weitergeleitete `DeviceProcessEvents` `DeviceNetworkEvents` Elemente hinzu.
+Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von einer Reihe von Elementen, die mit einer Pipe (`|`) beginnen. In diesem Beispiel beginnen wir mit dem Erstellen einer Vereinigung von zwei Tabellen und fügen bei Bedarf weitergeleitete  `DeviceProcessEvents` `DeviceNetworkEvents` Elemente hinzu.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ Anschließend sucht die Abfrage nach Zeichenfolgen in Befehlszeilen, die in der 
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Anpassen von Ergebnisspalten und-Länge 
-Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project`gibt bestimmte Spalten zurück und `top` schränkt die Anzahl der Ergebnisse ein. Diese Operatoren tragen dazu bei, dass die Ergebnisse gut formatiert und relativ umfangreich und einfach zu verarbeiten sind.
+Da die Abfrage nun die zu suchenden Daten eindeutig identifiziert, können Sie Elemente hinzufügen, die definieren, wie die Ergebnisse aussehen. `project` gibt bestimmte Spalten zurück und `top` schränkt die Anzahl der Ergebnisse ein. Diese Operatoren tragen dazu bei, dass die Ergebnisse gut formatiert und relativ umfangreich und einfach zu verarbeiten sind.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -179,6 +179,6 @@ Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suche nach Bedrohungen auf Geräten und in E-Mails](advanced-hunting-query-emails-devices.md)
+- [Jagd auf Geräte, e-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
