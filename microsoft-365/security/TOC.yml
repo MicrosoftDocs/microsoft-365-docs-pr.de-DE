@@ -135,7 +135,7 @@
                   href: mtp/advanced-hunting-take-action.md
                 - name: Verwenden freigegebener Abfragen
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: Suchen auf Geräten und in E-Mails
+                - name: 'Suchen auf Geräten, in E-Mails, Apps und Identitäten'
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Suche starten
                   href: mtp/advanced-hunting-go-hunt.md
