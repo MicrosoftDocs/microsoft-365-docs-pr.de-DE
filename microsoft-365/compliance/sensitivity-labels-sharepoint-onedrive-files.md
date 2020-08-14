@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung für die Sensitivitäts Bezeichnung für Word-, Excel-und PowerPoint-Dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201509"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662243"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -42,12 +42,12 @@ Wenn Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneD
 
 - Externe Benutzer können mithilfe von Gastkonten auf Dokumente zugreifen, die mit Verschlüsselung versehen sind. Weitere Informationen finden Sie unter [Support für externe Benutzer und beschriftete Inhalte](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien. Datenverlust Verhinderung (DLP)-Richtlinien unterstützen Inhalte in diesen Dateien.
+- Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien und DLP-Richtlinien (Data Loss Prevention) unterstützen Inhalte in diesen Dateien.
 
 > [!NOTE]
-> Wenn die Verschlüsselung mit lokalem Schlüssel, einer Schlüssel Verwaltungstopologie, die häufig als "eigenen Schlüssel" (Hyok) bezeichnet wird, oder mithilfe der [Doppelschlüssel Verschlüsselung](double-key-encryption.md)angewendet wurde, ändert sich das SharePoint-Verhalten bei der Verarbeitung des Dateiinhalts nicht.
+> Wenn die Verschlüsselung mit einem lokalen Schlüssel (eine wichtige Verwaltungstopologie, die häufig als "eigenen Schlüssel halten" oder "Hyok" bezeichnet wird) oder mithilfe der [Doppelschlüssel Verschlüsselung](double-key-encryption.md)angewendet wurde, ändert sich das SharePoint-Verhalten bei der Verarbeitung des Dateiinhalts nicht.
 >
-> Das SharePoint-Verhalten ändert sich auch nicht für vorhandene beschriftete und verschlüsselte Dateien in SharePoint. Damit diese Dateien von den neuen Funktionen profitieren, müssen Sie entweder heruntergeladen und hochgeladen oder bearbeitet werden, nachdem Sie den Befehl ausgeführt haben, um Sensitivitäts Bezeichnungen für SharePoint und OneDrive zu aktivieren. SharePoint kann diese Dateien dann verarbeiten. Sie werden dann beispielsweise in Such-und eDiscovery-Ergebnissen zurückgegeben.
+> Das SharePoint-Verhalten ändert sich auch nicht für vorhandene Dateien in SharePoint, die mit einer Verschlüsselung mit einem einzelnen Azure-basierten Schlüssel gekennzeichnet sind. Damit diese Dateien von den neuen Funktionen profitieren, nachdem Sie Vertraulichkeits Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, müssen die Dateien entweder heruntergeladen und erneut hochgeladen oder bearbeitet werden. Sie werden dann beispielsweise in Such-und eDiscovery-Ergebnissen zurückgegeben.
 
 Nachdem Sie Sensitivitäts Bezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert haben, stehen drei neue [Überwachungsereignisse](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) für die Überwachung von Sensitivitäts Bezeichnungen zur Verfügung, die auf Dokumente in SharePoint und OneDrive angewendet werden:
 - **Vertraulichkeitsbezeichnung wurde auf Datei angewendet**
@@ -201,7 +201,7 @@ Mit diesem Verhalten können Sie sicher sein, dass alle Office-und PDF-Dateien v
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Suchen nach Dokumenten nach Sensitivitäts Bezeichnung
 
-Verwenden Sie die verwaltete Eigenschaft **InformationProtectionLabelId** , um nach allen Dokumenten in SharePoint oder OneDrive zu suchen, die eine bestimmte Vertraulichkeits Bezeichnung aufweisen. Verwenden Sie die folgende Syntax:`InformationProtectionLabelId:<GUID>`
+Verwenden Sie die verwaltete Eigenschaft **InformationProtectionLabelId** , um nach allen Dokumenten in SharePoint oder OneDrive zu suchen, die eine bestimmte Vertraulichkeits Bezeichnung aufweisen. Verwenden Sie die folgende Syntax: `InformationProtectionLabelId:<GUID>`
 
 Um beispielsweise nach allen Dokumenten zu suchen, die als "vertraulich" bezeichnet wurden und diese Bezeichnung eine GUID von "8faca7b8-8d20-48a3-8ea2-0f96310a848e" aufweist, geben Sie Folgendes im Suchfeld ein:
 

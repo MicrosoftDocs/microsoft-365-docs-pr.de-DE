@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten anzuzeigen, die es in Ihrer Organisation gegeben hat. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577995"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674625"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -39,8 +39,6 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 - Administratoraktivitäten in Azure Active Directory (dem Verzeichnisdienst für Office 365)
 
 - Administratoraktivitäten in Exchange Online (Exchange-Administratorüberwachungsprotokollierung)
-
-- Aktivitäten von Benutzern und Administratoren in Sway
 
 - eDiscovery-Aktivitäten im Security und Compliance Center
 
@@ -130,7 +128,6 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Security & Compliance Center|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Vertraulichkeitsbezeichnungen||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online und OneDrive for Business|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![Häkchen](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -305,15 +302,15 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
 |:-----|:-----|:-----|
 |[Datei- und Seitenaktivitäten](#file-and-page-activities)|[Ordneraktivitäten](#folder-activities)|[SharePoint-Listen Aktivitäten](#sharepoint-list-activities)|
 |[Freigabe- und Zugriffsanforderungsaktivitäten](#sharing-and-access-request-activities)|[Synchronisierungsaktivitäten](#synchronization-activities)|[Websiteberechtigungsaktivitäten](#site-permissions-activities)|
-|[Websiteverwaltungsaktivitäten](#site-administration-activities)|[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)|[Sway-Aktivitäten](#sway-activities)|
-|[Benutzerverwaltungsaktivitäten](#user-administration-activities)|[Azure AD-Gruppenverwaltungsaktivitäten](#azure-ad-group-administration-activities)|[Anwendungsverwaltungsaktivitäten](#application-administration-activities)|
-|[Rollenverwaltungsaktivitäten](#role-administration-activities)|[Verzeichnisverwaltungsaktivitäten](#directory-administration-activities)|[eDiscovery-Aktivitäten](#ediscovery-activities)|
-|[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Microsoft Teams Schichten-Aktivitäten](#microsoft-teams-shifts-activities)|
-|[Yammer-Aktivitäten](#yammer-activities)|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|
-|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|
-|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)|
-|[Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](#retention-policy-and-retention-label-activities)|||
+|[Websiteverwaltungsaktivitäten](#site-administration-activities)|[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)|[Benutzerverwaltungsaktivitäten](#user-administration-activities)|
+|[Azure AD-Gruppenverwaltungsaktivitäten](#azure-ad-group-administration-activities)|[Anwendungsverwaltungsaktivitäten](#application-administration-activities)|[Rollenverwaltungsaktivitäten](#role-administration-activities)|
+|[Verzeichnisverwaltungsaktivitäten](#directory-administration-activities)|[eDiscovery-Aktivitäten](#ediscovery-activities)|[Advanced eDiscovery-Aktivitäten](#advanced-ediscovery-activities)|
+|[Power BI-Aktivitäten](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities)|
+|[Microsoft Teams-Aktivitäten im Gesundheitswesen](#microsoft-teams-healthcare-activities)|[Microsoft Teams Schichten-Aktivitäten](#microsoft-teams-shifts-activities)|[Yammer-Aktivitäten](#yammer-activities)|
+|[Microsoft Power Automate-Aktivitäten](#microsoft-power-automate-activities)|[Microsoft Power Apps-Aktivitäten](#microsoft-power-apps-activities)|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities)|
+|[Inhaltsexplorer-Aktivitäten](#content-explorer-activities)|[Quarantäneaktivitäten](#quarantine-activities)|[Microsoft Forms-Aktivitäten](#microsoft-forms-activities)|
+|[Vertraulichkeitsbezeichnungsaktivitäten](#sensitivity-label-activities)|[Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](#retention-policy-and-retention-label-activities)|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)
+|||
 
 ### <a name="file-and-page-activities"></a>Datei- und Seitenaktivitäten
 
@@ -557,28 +554,6 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 |Nachricht aktualisiert|Update|Eine Nachricht oder ihre Eigenschaften wurden geändert.|
 |Benutzer am Postfach angemeldet|MailboxLogin|Der Benutzer hat sich bei seinem Postfach angemeldet.|
 |Nachricht als Datensatz bezeichnen||Ein Benutzer hat eine Aufbewahrungsbezeichnung auf eine E-Mail-Nachricht angewendet, und diese Bezeichnung ist so konfiguriert, dass das Element als Datensatz gekennzeichnet wird. |
-||||
-
-### <a name="sway-activities"></a>Sway-Aktivitäten
-
-In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway aufgelistet. Sway ist eine Microsoft 365-App, die Benutzer beim Sammeln, Formatieren und Teilen von Ideen, Geschichten und Präsentationen in einem interaktiven, webbasierten Zeichenbereich unterstützt. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Sway – Hilfe für Administratoren](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
-
-|Anzeigename|Vorgang|Beschreibung|
-|:-----|:-----|:-----|
-|Sway-Freigabestufe geändert|SwayChangeShareLevel|Ein Benutzer ändert die Freigabestufe eines Sways. Mit diesem Ereignis wird ein Benutzer erfasst, der den Umfang einer mit einem Sway verknüpften Freigabe geändert hat, beispielsweise von „Öffentlich“ zu „Innerhalb der Organisation“.|
-|Sway erstellt|SwayCreate|Der Benutzer erstellt ein Sway.|
-|Sway gelöscht|SwayDelete|Der Benutzer löscht ein Sway.|
-|Sway-Duplizierung deaktiviert|SwayDisableDuplication|Ein Benutzer hat die Duplizierung eines Sways deaktiviert.|
-|Sway dupliziert|SwayDuplicate|Der Benutzer dupliziert ein Sway.|
-|Sway bearbeitet |SwayEdit|Der Benutzer bearbeitet ein Sway.|
-|Sway-Duplizierung aktiviert|EnableDuplication|Ein Benutzer hat die Duplizierung eines Sways aktiviert. Die Fähigkeit eines Benutzers zum Aktivieren der Duplizierung eines Sways ist standardmäßig aktiviert.|
-|Sway-Freigabe widerrufen|SwayRevokeShare|Der Benutzer stoppt die Freigabe eines Sways, indem er den Zugriff widerruft. Wenn der Zugriff widerrufen wird, ändern sich die dem Sway zugeordneten Verknüpfungen.|
-|Sway freigegeben|SwayShare|Ein Benutzer plant, ein Sway freizugeben. Mit diesem Ereignis wird die Benutzeraktion des Klickens auf ein bestimmtes Freigabeziel im Freigabemenü des Sways erfasst. Das Ereignis gibt nicht an, ob der Benutzer die Freigabeaktion abgeschlossen hat.|
-|Externen Freigabe von Sway deaktiviert|SwayExternalSharingOff|Ein Administrator deaktiviert die externe Sway-Freigabe für die gesamte Organisation im Microsoft 365 Admin Center.|
-|Externe Freigabe von Sway aktiviert|SwayExternalSharingOn|Ein Administrator aktiviert die externe Sway-Freigabe für die gesamte Organisation im Microsoft 365 Admin Center.|
-|Sway-Dienst deaktiviert|SwayServiceOff|Ein Administrator deaktiviert Sway für die gesamte Organisation im Microsoft 365 Admin Center.|
-|Sway-Dienst aktiviert|SwayServiceOn|Ein Administrator aktiviert Sway für die gesamte Organisation im Microsoft 365 Admin Center (der Sway-Dienst ist standardmäßig aktiviert).|
-|Angezeigtes Sway|SwayView|Der Benutzer zeigt ein Sway an.|
 ||||
 
 ### <a name="user-administration-activities"></a>Benutzerverwaltungsaktivitäten

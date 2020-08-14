@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratoren können mehr über die Nachrichtenkopfzeilen erfahren, die Nachrichten von Exchange Online Protection (EOP) hinzugefügt werden. Diese Kopfzeilenfelder enthalten Informationen zu der Nachricht und deren Verarbeitung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755356"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653425"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Antispam-Nachrichtenkopfzeilen in Microsoft 365
 
@@ -43,9 +43,10 @@ Die einzelnen Felder und Werte werden in der folgenden Tabelle beschrieben.
 > [!NOTE]
 > Der Header **X-Forefront-Antispam-Report** enthält viele verschiedene Kopfzeilenfelder und Werte. Andere Felder in diesem Header, die nicht in der Tabelle beschrieben werden, werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
 
-|||
+****
+
+|Kopfzeilenfeld|Beschreibung|
 |---|---|
-|**Kopfzeilenfeld**|**Beschreibung**|
 |ARC|Das ARC-Protokoll weist die folgenden Header auf: <ul><li>AAR: Zeichnet den Inhalt des Authentifizierungsergebnis-Headers aus DMARC auf.</li><li>AMS: Dieser Header enthält kryptographische Signaturen der Nachricht.</li><li>AS: Enthält kryptographische Signaturen der Nachrichtenkopfzeilen. Dieser Header enthält einen Tag einer Kettenüberprüfung mit der Bezeichnung "cv=", das das Ergebnis der Kettenüberprüfung als **none**, **pass** oder **fail** enthält.</li></ul>|
 |CAT:|Die Kategorie der Schutzrichtlinie, die auf die Nachricht angewendet wurde: <ul><li>BULK: Massenaktion</li><li>DIMP: Domänenidentitätswechsel</li><li>GIMP: Mailbox Intelligence-basierter Identitätswechsel</li><li>HPHSH oder HPHISH : Hohe Phishing-Wahrscheinlichkeit</li><li>HSPM: Spam mit hoher Vertrauenswürdigkeit</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: Benutzeridentitätswechsel</li><li>AMP: Antischadsoftware</li><li>SAP: Sichere Anlagen</li><li>OSPM: Ausgehende Spamnachrichten</li></ul><br/>Eine eingehende Nachricht kann durch mehrere Schutzformen und mehrere Erkennungsscans gekennzeichnet werden. Richtlinien haben unterschiedliche Prioritäten, und die Richtlinie mit der höchsten Priorität wird zuerst angewendet. Weitere Informationen finden Sie unter [Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungsscans für Ihre E-Mails ausgeführt werden?](how-policies-and-protections-are-combined.md)|
 |CIP: \[IP-Adresse\]|Die IP-Verbindungsadresse. Sie können diese IP-Adresse in der Liste der zugelassenen IP-Adressen oder in der IP-Sperrliste verwenden. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).|
@@ -75,9 +76,10 @@ Die einzelnen Felder und Werte werden in der folgenden Tabelle beschrieben.
 
 In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile **X-Microsoft-Antispam** beschrieben: Andere Felder in dieser Kopfzeile werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
 
-|||
+****
+
+|Kopfzeilenfeld|Beschreibung|
 |---|---|
-|**Kopfzeilenfeld**|**Beschreibung**|
 |BCL|Die BCL-Wert (Bulk Complaint Level) der Nachricht. Ein höherer BCL zeigt an, dass eine Massen-E-Mail-Nachricht (auch als _Gray Mail_ bezeichnet) mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level)](bulk-complaint-level-values.md).|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 In dieser Tabelle werden die Felder und die möglichen Werte für jede E-Mail-Authentifizierungsprüfung beschrieben.
 
-|||
+****
+
+|Kopfzeilenfeld|Beschreibung|
 |---|---|
-|**Kopfzeilenfeld**|**Beschreibung**|
 |Aktion|Gibt die Aktion an, die vom Spamfilter basierend auf den Ergebnissen der DMARC-Prüfung ausgeführt wird. Beispiel: <ul><li>**oreject** oder **o.reject**: Dies bedeutet "override reject". Microsoft 365 wendet diese Aktion an, wenn es Nachrichten empfängt, die die DMARC-Prüfung nicht bestehen und die von Domänen stammen, für deren DMARC-TXT-Eintrag die Richtlinie „p=reject“ festgelegt ist. Anstatt die Nachricht abzulehnen oder zu löschen, kennzeichnet Microsoft 365 die Nachricht als Spam. Weitere Informationen darüber, warum Microsoft 365 auf diese Weise konfiguriert ist, finden Sie unter [So behandelt Microsoft 365 eingehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Quarantäne" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**pct.reject**: Gibt an, dass ein Prozentsatz von weniger als 100 % der Nachrichten, welche die DMARC-Prüfung nicht bestehen, trotzdem übermittelt wird. Das bedeutet, dass die Nachricht die DMARC-Prüfung nicht bestanden hat und die Richtlinie auf "Ablehnen" festgelegt wurde. Das PCT-Feld wurde jedoch nicht auf 100 % festgelegt, und das System hat gemäß der Richtlinie der angegebenen Domäne zufällig bestimmt, dass die DMARC-Aktion nicht angewendet werden soll.</li><li>**permerror**: Bei der DMARC-Prüfung ist ein dauerhafter Fehler aufgetreten, wie z. B. ein falsch formatierter DMARC-TXT-Eintrag in DNS. Der Versuch, die Nachricht erneut zu senden, wird höchstwahrscheinlich kein anderes Ergebnis liefern. Stattdessen müssen Sie sich möglicherweise an den Domänenbesitzer wenden, um das Problem zu beheben.</li><li>**temperror**: Bei der DMARC-Prüfung ist ein temporärer Fehler aufgetreten. Sie können den Absender der Nachricht möglicherweise bitten, die Nachricht kurze Zeit später erneut zu senden, damit sie dann ordnungsgemäß verarbeitet werden kann.</li></ul>|
 |compauth|Ergebnis der zusammengesetzten Authentifizierung. Wird von Microsoft 365 verwendet, um mehrere Authentifizierungstypen zu kombinieren, z. B. SPF, DKIM, DMARC oder einen beliebigen anderen Teil der Nachricht, um festzustellen, ob die Nachricht authentifiziert ist oder nicht. Verwendet die "From:"-Domäne als Grundlage für die Prüfung.|
 |dkim|Beschreibt die Ergebnisse der DKIM-Prüfung für die Nachricht. Mögliche Werte sind: <ul><li>**pass**: Gibt an, dass die Nachricht die DKIM-Prüfung bestanden hat.</li><li>**fail (Ursache)**: Gibt an, dass die Nachricht die DKIM-Prüfung nicht bestanden hat und warum. Wenn die Nachricht beispielsweise nicht signiert war oder die Signatur nicht überprüft werden konnte.</li><li>**none**: Gibt an, dass die Nachricht nicht signiert war. Dies kann darauf hinweisen, dass die Domäne über einen DKIM-Eintrag verfügt oder dass der DKIM-Eintrag nicht zu einem Ergebnis ausgewertet wird. Dieser Wert gibt nur an, dass die Nachricht nicht signiert war.</li></ul>|
