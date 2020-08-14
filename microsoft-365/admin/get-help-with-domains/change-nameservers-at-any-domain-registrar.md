@@ -1,7 +1,7 @@
 ---
 title: Ändern von Namenservern zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: In diesem Artikel erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit ihre Dienste wie e-Mail und Skype for Business Online ihren eigenen Domänennamen verwenden.
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560341"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662232"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern von Namenservern zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle
 
@@ -38,7 +38,7 @@ ms.locfileid: "46560341"
   
 Aktivieren Sie zuerst die Informationen zum [Einrichten Ihrer Domäne (hostspezifische Anweisungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) , um zu sehen, ob wir Anweisungen für Ihre Registrierungsstelle haben. 
   
-Befolgen Sie diese Anweisungen, um Ihre Domäne in Microsoft 365 hinzuzufügen und einzurichten, damit ihre Dienste wie e-Mail und Skype for Business Online ihren eigenen Domänennamen verwenden werden. Um dies zu tun, überprüfen Sie Ihre Domäne und ändern dann die Namenserver Ihrer Domäne auf Microsoft 365, damit die richtigen DNS-Einträge für Sie eingerichtet werden können. Führen Sie die folgenden Schritte aus, wenn die folgende Anweisung Ihre Situation beschreibt:
+Befolgen Sie diese Anweisungen, um Ihre Domäne in Microsoft 365 hinzuzufügen und einzurichten, damit ihre Dienste wie e-Mail und Teams ihren eigenen Domänennamen verwenden können. Um dies zu tun, überprüfen Sie Ihre Domäne und ändern dann die Namenserver Ihrer Domäne auf Microsoft 365, damit die richtigen DNS-Einträge für Sie eingerichtet werden können. Führen Sie die folgenden Schritte aus, wenn die folgende Anweisung Ihre Situation beschreibt:
   
 - Sie verfügen über eine eigene Domäne und möchten diese für die Zusammenarbeit mit Microsoft 365 einrichten.
     
@@ -71,7 +71,7 @@ Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, f
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Record Type ** <br/> |**Alias** oder **Hostname** <br/> |**Wert** <br/> |**TTL** <br/> |
+|**Record Type ** <br/> |**Alias** oder **Hostname** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> > [!NOTE]> Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich.           
 |MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  <br/> |
    
@@ -114,17 +114,19 @@ Wenn Sie zum letzten Schritt des Setup-Assistenten für Domänen in Microsoft 36
   
 Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierungsstelle selbst ändern möchten, führen Sie diese Schritte aus:
   
-1. Suchen Sie den Bereich auf der Website der Domänenregistrierungsstelle, in dem Sie die Namenserver für Ihre Domäne bearbeiten können.
+1. Suchen Sie den Bereich auf der Website der Domänenregistrierungsstelle, auf dem Sie die Namenserver für Ihre Domäne oder einen Bereich ändern können, in dem Sie benutzerdefinierte Namenserver verwenden können.
     
-2. Erstellen Sie zwei Namenservereinträge, oder bearbeiten Sie die vorhandenen Namenservereinträge so, dass sie den folgenden Werten entsprechen:
+2. Erstellen Sie Namenservereinträge, oder bearbeiten Sie die vorhandenen Namenservereinträge so, dass Sie mit den folgenden Werten übereinstimmen:
     
 |||
 |:-----|:-----|
 |Erster Namenserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Zweiter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Dritter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Vierter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > Sie sollten mindestens zwei Nameserver-Einträge verwenden. Wenn andere Namenserver aufgelistet sind, können Sie Sie entweder löschen oder in **NS3.BDM.microsoftonline.com** und **NS4.BDM.microsoftonline.com**ändern. 
+   > Es empfiehlt sich, alle vier Datensätze hinzuzufügen, aber wenn Ihre Registrierungsstelle nur zwei unterstützt, fügen Sie **ns1.BDM.microsoftonline.com** und **ns2.BDM.microsoftonline.com**hinzu. 
   
 3. Speichern Sie Ihre Änderungen.
     

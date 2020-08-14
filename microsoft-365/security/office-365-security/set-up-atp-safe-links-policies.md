@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652645"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662254"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -82,13 +82,13 @@ Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, verfü
 5. Wählen Sie im Abschnitt **Einstellungen für Inhalt außer e-Mail** die Optionen aus, die Sie verwenden möchten. (Es wird empfohlen, alle Optionen auszuwählen.)
 
 6. Wählen Sie **Speichern** aus.
+    
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Schritt 3: hinzufügen (oder bearbeiten) von Richtlinien für ATP-sichere Links, die für alle oder bestimmte e-Mail-Empfänger gelten
 
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Schritt 3: hinzufügen (oder bearbeiten) von Richtlinien für ATP-sichere Links, die für bestimmte e-Mail-Empfänger gelten
-
-Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bearbeitet) haben, die für alle gilt, müssen Sie im nächsten Schritt zusätzliche Richtlinien definieren, die für bestimmte Empfänger gelten. Sie können beispielsweise Ausnahmen für die Standardrichtlinie angeben, indem Sie eine zusätzliche Richtlinie definieren.
-
-1. Melden Sie sich unter <https://protection.office.com> mit Ihrem Geschäfts-, Schul- oder Unikonto an.
-
+Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bearbeitet) haben, die für alle gilt, müssen Sie im nächsten Schritt zusätzliche Richtlinien definieren, die für alle oder bestimmte e-Mail-Empfänger gelten. Sie können beispielsweise Ausnahmen für Ihre Standardrichtlinie angeben, indem Sie eine zusätzliche Richtlinie definieren oder detailliertere Einschränkungen für alle Mitarbeiter erstellen.
+  
+1. Melden Sie sich unter <https://protection.office.com> mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
+    
 2. Wählen Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie**aus.
 
 3. Wählen Sie **sichere Links**aus.
@@ -120,7 +120,7 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
 6. Wählen Sie **Speichern** aus.
 
 > [!NOTE]
-> Richtlinien für ATP-sichere Links mit höherer Priorität werden Vorrang haben. Wenn ein Benutzer zwei oder mehr Policen unterliegt, wird nur die Richtlinie mit höherer Priorität wirksam.
+> Richtlinien für ATP-sichere Links mit höherer Priorität werden Vorrang haben. Wenn ein Benutzer zwei oder mehr Richtlinien unterliegt, wird nur die Richtlinie mit höherer Priorität wirksam. Wenn die Kundenrichtlinie Vorrang haben soll, müssen Sie die Priorität der Richtlinie heraufsetzen.
 
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Schritt 4: Informationen zu Richtlinienoptionen für ATP-sichere Links
 
