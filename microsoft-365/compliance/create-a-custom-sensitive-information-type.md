@@ -17,21 +17,38 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818064"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686659"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
 
-Lesen Sie diesen Artikel, zum[Erstellen eines benutzerdefinierten vertraulichen Informationstyps](custom-sensitive-info-types.md) im Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Die benutzerdefinierte Typen vertraulicher Informationen, die Sie mit dieser Methode erstellen, werden zum Regelpaket namens `Microsoft.SCCManaged.CustomRulePack`hinzugefügt.
+Lesen Sie diesen Artikel, zumErstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Die benutzerdefinierte Typen vertraulicher Informationen, die Sie mit dieser Methode erstellen, werden zum Regelpaket namens `Microsoft.SCCManaged.CustomRulePack`hinzugefügt.
 
 Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von PowerShell und genauer Datenübereinstimmung erstellen. Weitere Informationen zu diesen Methoden finden Sie unter:
 - [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps für DLP mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+> [!NOTE]
+> Microsoft 365 Information Protection unterstützt jetzt in der Vorschau Sprachen mit Doublebyte-Zeichensätzen für:
+> - Chinesisch (vereinfacht)
+> - Chinesisch (traditionell)
+> - Koreanisch
+> - Japanisch
+> 
+>Diese Vorschau ist nur in der kommerziellen Cloud verfügbar, und die Einführung ist beschränkt auf:
+> - Japan
+> - Korea
+> - China
+> - Hongkong
+> - Macau
+> - Taiwan
+>
+>Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Weitere Informationen hierzu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
