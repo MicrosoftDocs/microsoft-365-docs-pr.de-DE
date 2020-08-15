@@ -12,13 +12,13 @@ metadata:
   ms.collection: M365-subscription-management
   author: robmazz
   ms.author: robmazz
-  ms.date: 11/29/2019
-  ms.openlocfilehash: 31685a610f6560296dc72b7624f81a5927d56ec2
-  ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+  ms.date: 07/28/2020
+  ms.openlocfilehash: 0fb4b195ebe6175afcc32291325b70848cc53901
+  ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/16/2020
-  ms.locfileid: "44268257"
+  ms.lasthandoff: 08/14/2020
+  ms.locfileid: "46686670"
 highlightedContent:
   items:
   - title: Informationen zu Microsoft 365 Enterprise
@@ -34,23 +34,9 @@ conceptualContent:
   title: Hilfe zu Microsoft 365 Enterprise und weitere Ressourcen
   summary: Erfahren Sie mehr über die Bereitstellung und die Funkionen und Dienste von Microsoft 365 Enterprise.
   items:
-  - title: Folgen Sie der Roadmap für die Bereitstellung
-    links:
-    - url: deploy-microsoft-365-enterprise.md
-      itemType: deploy
-      text: Übersicht über die Bereitstellung
-    - url: deploy-foundation-infrastructure.md
-      itemType: how-to-guide
-      text: Grundlegende Infrastruktur
-    - url: deploy-workloads.md
-      itemType: how-to-guide
-      text: Arbeitslasten
-    - url: desktop-deployment-center-home.md
-      itemType: get-started
-      text: Desktop-Bereitstellungscenter
   - title: Bereitstellen der wichtigsten Elemente
     links:
-    - url: identity-infrastructure.md
+    - url: identity-roadmap-microsoft-365.md
       itemType: how-to-guide
       text: Identitätsinfrastruktur
     - url: https://docs.microsoft.com/windows/deployment/

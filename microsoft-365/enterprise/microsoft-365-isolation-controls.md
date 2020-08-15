@@ -1,0 +1,43 @@
+---
+title: Microsoft 365-Isolations Steuerelemente
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+f1.keywords:
+- NOCSH
+description: Erfahren Sie, wie Isolierungs Steuerelemente in Microsoft 365 funktionieren, sodass Dienste bei Bedarf zusammenarbeiten oder autonom bleiben können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 15805c2fb57cbcaa33c5ba24dcbcaa378feea4bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46690619"
+---
+# <a name="microsoft-365-isolation-controls"></a><span data-ttu-id="6db77-103">Microsoft 365-Isolations Steuerelemente</span><span class="sxs-lookup"><span data-stu-id="6db77-103">Microsoft 365 isolation controls</span></span> 
+
+<span data-ttu-id="6db77-104">Microsoft arbeitet kontinuierlich daran, sicherzustellen, dass die mehrmandantenfähige Architektur von Microsoft 365 auf Unternehmensebene Sicherheit, Vertraulichkeit, Datenschutz, Integrität, lokale, internationale und Verfügbarkeits [Standards](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6db77-104">Microsoft continuously works to ensure that the multi-tenant architecture of Microsoft 365 supports enterprise-level security, confidentiality, privacy, integrity, local, international, and availability [standards](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons).</span></span> <span data-ttu-id="6db77-105">Die Skalierung und der Umfang der von Microsoft bereitgestellten Dienste machen es schwierig und nicht wirtschaftlich, Microsoft 365 mit erheblicher menschlicher Interaktion zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="6db77-105">The scale and the scope of services provided by Microsoft make it difficult and non-economical to manage Microsoft 365 with significant human interaction.</span></span> <span data-ttu-id="6db77-106">Microsoft 365-Dienste werden über mehrere global verteilte Rechenzentren bereitgestellt, die jeweils hoch automatisiert sind und nur wenige Vorgänge erfordern, die einen menschlichen Touch oder Zugriff auf Kunden Inhalte benötigen.</span><span class="sxs-lookup"><span data-stu-id="6db77-106">Microsoft 365 services are provided through multiple globally distributed data centers, each highly automated with few operations requiring a human touch or any access to customer content.</span></span> <span data-ttu-id="6db77-107">Unsere Mitarbeiter unterstützen diese Dienste und Rechenzentren mithilfe von automatisierten Tools und hochgradig sicherem Remotezugriff.</span><span class="sxs-lookup"><span data-stu-id="6db77-107">Our staff supports these services and data centers using automated tools and highly secure remote access.</span></span> 
+
+<span data-ttu-id="6db77-108">Microsoft 365 besteht aus mehreren Diensten, die wichtige Geschäftsfunktionen bereitstellen und zur gesamten Microsoft 365-Erfahrung beitragen.</span><span class="sxs-lookup"><span data-stu-id="6db77-108">Microsoft 365 is composed of multiple services that provide important business functionality and contribute to the entire Microsoft 365 experience.</span></span> <span data-ttu-id="6db77-109">Jeder dieser Dienste ist in sich geschlossen und für die Integration in einen anderen Dienst konzipiert.</span><span class="sxs-lookup"><span data-stu-id="6db77-109">Each of these services is self-contained and designed to integrate with one another.</span></span>
+
+<span data-ttu-id="6db77-110">Microsoft 365 ist mit den folgenden Grundsätzen konzipiert:</span><span class="sxs-lookup"><span data-stu-id="6db77-110">Microsoft 365 is designed with the following principles:</span></span>
+
+ - <span data-ttu-id="6db77-111">\*\* [Dienstorientierte Architektur](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10)):\*\* entwerfen und entwickeln von Software in Form von interoperablen Diensten, die eine klar definierte Geschäftsfunktionalität bieten.</span><span class="sxs-lookup"><span data-stu-id="6db77-111">**[Service-Oriented Architecture](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10)):** designing and developing software in the form of interoperable services providing well-defined business functionality.</span></span>
+ - <span data-ttu-id="6db77-112">**[Operational Security Assurance](https://www.microsoft.com/download/details.aspx?id=40872):** ein Framework, in dem das Wissen über die verschiedenen Funktionen von Microsoft integriert wird, einschließlich des Microsoft- [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/sdl/default.aspx), des [Microsoft Security Response Centers](https://technet.microsoft.com/library/dn440717.aspx)und des tiefen Bewusstseins für die Cyber-Bedrohungslandschaft.</span><span class="sxs-lookup"><span data-stu-id="6db77-112">**[Operational Security Assurance](https://www.microsoft.com/download/details.aspx?id=40872):** a framework that incorporates the knowledge gained through various capabilities that are unique to Microsoft, including the Microsoft [Security Development Lifecycle](https://www.microsoft.com/sdl/default.aspx), the [Microsoft Security Response Center](https://technet.microsoft.com/library/dn440717.aspx), and deep awareness of the cybersecurity threat landscape.</span></span>
+
+<span data-ttu-id="6db77-113">Microsoft 365-Dienste arbeiten miteinander zusammen, werden jedoch so konzipiert und implementiert, dass Sie unabhängig voneinander als autonome Dienste bereitgestellt und betrieben werden können.</span><span class="sxs-lookup"><span data-stu-id="6db77-113">Microsoft 365 services inter-operate with each other, but are designed and implemented so they can be deployed and operated as autonomous services, independent of each other.</span></span> <span data-ttu-id="6db77-114">Microsoft trennt Aufgaben und Bereiche der Verantwortung für Microsoft 365, um Möglichkeiten für unbefugte oder unbeabsichtigte Änderungen oder den Missbrauch von Ressourcen der Organisation zu verringern.</span><span class="sxs-lookup"><span data-stu-id="6db77-114">Microsoft segregates duties and areas of responsibility for Microsoft 365 to reduce opportunities for unauthorized or unintentional modification or misuse of the organization's assets.</span></span> <span data-ttu-id="6db77-115">Microsoft 365 Teams haben Rollen als Teil eines umfassenden rollenbasierten Zugriffssteuerungsmechanismus definiert.</span><span class="sxs-lookup"><span data-stu-id="6db77-115">Microsoft 365 teams have defined roles as part of a comprehensive role-based access control mechanism.</span></span>
+
+## <a name="customer-content-isolation"></a><span data-ttu-id="6db77-116">Isolierung von Kundeninhalten</span><span class="sxs-lookup"><span data-stu-id="6db77-116">Customer content isolation</span></span>
+
+<span data-ttu-id="6db77-117">Alle Kunden Inhalte in einem Mandanten sind von anderen Mandanten und von Betriebs-und Systemdaten isoliert, die in der Verwaltung von Microsoft 365 verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="6db77-117">All customer content in a tenant is isolated from other tenants and from operations and systems data used in the management of Microsoft 365.</span></span> <span data-ttu-id="6db77-118">In Microsoft 365 werden mehrere Schutzformen implementiert, die das Risiko einer Gefährdung eines Microsoft 365-Diensts oder einer zugehörigen Anwendung minimieren.</span><span class="sxs-lookup"><span data-stu-id="6db77-118">Multiple forms of protection are implemented throughout Microsoft 365 to minimize the risk of compromise of any Microsoft 365 service or application.</span></span> <span data-ttu-id="6db77-119">Mehrere Schutzformen verhindern auch den unbefugten Zugriff auf die Informationen von Mandanten oder das Microsoft 365-System selbst.</span><span class="sxs-lookup"><span data-stu-id="6db77-119">Multiple forms of protection also prevent unauthorized access to the information of tenants or the Microsoft 365 system itself.</span></span>
+
+<span data-ttu-id="6db77-120">Informationen dazu, wie Microsoft die logische Isolierung von Mandantendaten in Microsoft 365 implementiert, finden Sie unter [Mandanten Isolierung in Microsoft 365](microsoft-365-tenant-isolation-overview.md).</span><span class="sxs-lookup"><span data-stu-id="6db77-120">For information about how Microsoft implements logical isolation of tenant data within Microsoft 365, see [Tenant Isolation in Microsoft 365](microsoft-365-tenant-isolation-overview.md).</span></span>
