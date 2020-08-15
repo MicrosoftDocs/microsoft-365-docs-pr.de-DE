@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto mit den in Microsoft 365 verfügbaren Tools erkennen und darauf reagieren.
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527780"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674614"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
@@ -68,11 +68,8 @@ Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere 
 - **Azure AD-Anmeldeprotokolle und andere Risikoberichte im Azure AD-Portal**: Überprüfen Sie die Werte in den folgenden Spalten:
 
   - IP-Adresse überprüfen
-
   - Anmeldeorte
-
   - Anmeldezeiten
-
   - Anmeldeerfolge oder -fehler
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Sichern und Wiederherstellen der E-Mail-Funktion für ein vermutlich angegriffenes Microsoft 365-Konto und -Postfach
@@ -85,31 +82,31 @@ Sie müssen so früh wie möglich die folgenden Schritte durchführen, um wieder
 
 ### <a name="step-1-reset-the-users-password"></a>Schritt 1: Setzen Sie das Benutzerkennwort zurück.
 
-> [!WARNING]
-> Senden Sie das neue Kennwort nicht per E-Mail an den vorgesehenen Benutzer, da der Angreifer weiterhin Zugriff auf das Postfach hat.
+Folgen Sie den Verfahren unter [Zurücksetzen eines Geschäftskennworts für eine andere Person](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
-1. Befolgen Sie die Anweisungen zu „Zurücksetzen eines Microsoft 365 Apps for Business-Kennworts für eine andere Person“ unter [Zurücksetzen von Microsoft 365 Apps for Business-Kennwörtern](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-**Hinweise**:
-
-- Stellen Sie sicher, dass das Kennwort sicher ist und dass es Groß- und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält.
-
-- Verwenden Sie nicht eines Ihrer letzten fünf Kennwörter wieder. Obwohl die Kennwortverlaufsanforderung die Verwendung eines aktuelleren Kennworts zulässt, sollten Sie eines auswählen, das der Angreifer nicht erraten kann.
-
-- Wenn Ihre lokale Identität mit Microsoft 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
-
-> [!TIP]
-> Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten.  Weitere Informationen zu MFA finden Sie unter [Einrichten der mehrstufigen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> [!IMPORTANT]
+>
+> - Senden Sie das neue Kennwort nicht per E-Mail an den vorgesehenen Benutzer, da der Angreifer weiterhin Zugriff auf das Postfach hat.
+>
+> - Stellen Sie sicher, dass das Kennwort sicher ist und dass es Groß- und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält.
+>
+> - Verwenden Sie nicht eines Ihrer letzten fünf Kennwörter wieder. Obwohl die Kennwortverlaufsanforderung die Verwendung eines aktuelleren Kennworts zulässt, sollten Sie eines auswählen, das der Angreifer nicht erraten kann.
+>
+> - Wenn Ihre lokale Identität mit Microsoft 365 verbunden ist, müssen Sie das Kennwort lokal ändern und dann Ihren Administrator über den Angriff benachrichtigen.
+>
+> - Sorgen Sie dafür, dass App-Kennwörter aktualisiert werden. App-Kennwörter werden nicht automatisch widerrufen, wenn ein Benutzerkontokennwort zurückgesetzt wird. Der Benutzer sollte vorhandene App-Kennwörter löschen und neue erstellen. Anweisungen hierzu finden Sie unter [Erstellen und Löschen von App-Kennwörtern über die Seite "Zusätzliche Sicherheitsüberprüfung"](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+>
+> - Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten. Weitere Informationen zu MFA finden Sie unter [Einrichten der mehrstufigen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2: Entfernen Sie verdächtige E-Mail-Weiterleitungsadressen.
 
-1. Öffnen Sie **Microsoft 365 Admin Center > Aktive Benutzer**.
+1. Öffnen Sie das Microsoft 365 Admin Center unter <https://admin.microsoft.com>.
 
-2. Suchen Sie das betroffene Benutzerkonto und erweitern Sie **E-Mail-Einstellungen**.
+2. Wechseln Sie zu **Benutzer** \> **Aktive Benutzer**. Suchen Sie das fragliche Benutzerkonto, und wählen Sie den Benutzer (Zeile) aus, ohne das Kontrollkästchen zu aktivieren.
 
-3. Klicken Sie für **E-Mail-Weiterleitung** auf **Bearbeiten**.
+3. Wählen Sie auf der daraufhin angezeigten Detail-Flyoutseite die Registerkarte **E-Mail** aus.
 
-4. Entfernen Sie verdächtige Weiterleitungsadressen.
+4. Wenn der Wert im Abschnitt **E-Mail-Weiterleitung** **Angewendet** lautet, klicken Sie auf **E-Mail-Weiterleitung verwalten**. Deaktivieren Sie auf der angezeigten **E-Mail-Weiterleitung**-Flyoutseite **Alle an dieses Postfach gesendeten E-Mails weiterleiten**, und klicken Sie dann auf **Änderungen speichern**.
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Schritt 3: Entfernen Sie verdächtige Posteingangsregeln.
 
@@ -132,50 +129,50 @@ Um die Sperre aufzuheben, führen Sie die Schritte unter [Entfernen von Benutzer
 > [!IMPORTANT]
 > Sie können die Anmeldung bei dem vermutlich angegriffenen Konto sperren, bis Sie glauben, dass es sicher ist, den Zugriff wieder zu erlauben.
 
-1. Gehen Sie zum Microsoft 365 Admin Center.
+1. Öffnen Sie das Microsoft 365 Admin Center, und gehen Sie zu **Benutzer** \> **Aktive Benutzer**.
 
-2. Wählen Sie im Microsoft 365 Admin Center, **Benutzer** aus.
+2. Suchen Sie das Benutzerkonto, wählen Sie es aus, klicken Sie auf ![Mehr-Symbol](../../media/ITPro-EAC-MoreOptionsIcon.png), und wählen Sie dann **Anmeldestatus bearbeiten** aus.
 
-3. Wählen Sie zuerst den Mitarbeiter aus, den Sie blockieren möchten, und wählen Sie dann im Benutzerbereich neben **Anmeldestatus** die Option **Bearbeiten** aus.
+3. Wählen Sie im daraufhin angezeigten Bereich **Anmeldung blockieren** die Option **Anmeldung für diesen Benutzer blockieren** aus, und klicken Sie dann auf **Änderungen speichern**.
 
-4. Wählen Sie im Bereich **Anmeldestatus** die Option **Anmeldung blockiert** und dann **Speichern** aus.
+4. Öffnen Sie das Exchange Admin Center (EAC) unter <admin.protection.outlook.com/ecp/>, und wechseln Sie zu **Empfänger > Postfächer**.
 
-5. Erweitern Sie im Admin Center unten links im Navigationsbereich die Struktur von **Admin Center**, und wählen Sie **Exchange** aus.
+5. Suchen Sie den Benutzer und wählen Sie ihn aus. Führen Sie im Detailbereich die folgenden Schritte aus:
 
-6. Navigieren Sie im Exchange Admin Center zu **Empfänger > Postfächer**.
+   - Führen Sie im Abschnitt **Telefon- und Sprachfunktionen** die folgenden Schritte aus:
 
-7. Wählen Sie den Benutzer aus, klicken Sie auf der Seite der Benutzereigenschaften unter **Mobile Geräte** auf **Exchange ActivcSync deaktivieren** und **OWA für Geräte deaktivieren**, und wählen Sie dann für beide Optionen **Ja** aus.
+     - Wählen Sie **Exchange ActiveSync deaktivieren** aus, und klicken Sie dann in der angezeigten Warnung auf **Ja**.
+     - Wählen Sie **OWA für Geräte deaktivieren** aus, und klicken Sie dann in der angezeigten Warnung auf **Ja**.
 
-8. Klicken Sie unter **E-Mail-Konnektivität** auf **Deaktivieren**, und wählen Sie **Ja** aus.
+   - Klicken Sie im Abschnitt **E-Mail-Konnektivität** für Outlook im Web auf **Deaktivieren**, und klicken Sie dann in der angezeigten Warnung auf **Ja**.
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Schritt 6 (optional): Entfernen Sie das vermutlich angegriffen Konto aus allen Administratorrollengruppen.
 
 > [!NOTE]
 > Die Mitgliedschaft bei der Administratorrollengruppe kann wiederhergestellt werden, nachdem das Konto gesichert wurde.
 
-1. Melden Sie sich mit einem globalen Administratorkonto beim Microsoft 365 Admin Center an, und öffnen Sie **Aktive Benutzer**.
+1. Melden Sie sich mit einem globalen Administratorkonto an:
 
-2. Suchen Sie nach dem vermutlich angegriffenen Konto und überprüfen Sie manuell, ob dem Konto Administratorrollen zugewiesen sind.
+2. Führen Sie im Microsoft 365 Admin Center die folgenden Schritte aus:
 
-3. Öffnen Sie das **Security & Compliance Center**.
+   1. Wechseln Sie zu **Benutzer** \> **Aktive Benutzer**.
+   2. Suchen Sie das Benutzerkonto, wählen Sie es aus, klicken Sie auf ![Mehr-Symbol](../../media/ITPro-EAC-MoreOptionsIcon.png), und wählen Sie dann **Rollen verwalten** aus.
+   3. Entfernen Sie alle Administratorrollen, die dem Konto zugewiesen sind. Klicken Sie nach Abschluss des Vorgangs auf **Änderungen speichern**.
 
-4. Klicken Sie auf **Berechtigungen**.
+3. Führen Sie im Security & Compliance Center unter <https://protection.office.com> die folgenden Schritte aus:
 
-5. Überprüfen Sie manuell die Rollengruppen, um festzustellen, ob das vermutlich angegriffene Konto einer dieser Gruppen angehört.  Wenn er auf:
+   Wählen Sie **Berechtigungen** aus, wählen Sie die einzelnen Rollengruppen in der Liste aus, und suchen Sie auf der daraufhin angezeigten Detail-Flyoutseite im Abschnitt **Mitglieder** nach dem Benutzerkonto. Führen Sie die folgenden Schritte aus, wenn die Rollengruppe das Benutzerkonto enthält:
 
-   a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.
+   a. Klicken Sie neben **Mitglieder** auf **Bearbeiten**.
+   b. Klicken Sie auf der daraufhin angezeigten Flyoutseite **Mitglieder auswählen bearbeiten** auf **Bearbeiten**.
+   c. Wählen Sie auf der nun angezeigten Flyoutseite **Mitglieder auswählen** das Benutzerkonto aus, und klicken Sie dann auf **Entfernen**. Klicken Sie abschließend auf **Fertig**, **Speichern** und dann**Schließen**.
 
-   b. Klicken Sie auf **Mitglieder auswählen** und **Bearbeiten** zum Entfernen des Benutzers aus der Rollengruppe.
+4. Führen Sie im EAC unter <admin.protection.outlook.com/ecp/> die folgenden Schritte aus:
 
-6. Öffnen Sie das **Exchange Admin Center**.
+   Wählen Sie **Berechtigungen**aus, wählen Sie die einzelnen Rollengruppen manuell aus, und überprüfen Sie im Detailbereich im Abschnitt **Mitglieder** die Benutzerkonten.  Führen Sie die folgenden Schritte aus, wenn die Rollengruppe das Benutzerkonto enthält:
 
-7. Klicken Sie auf **Berechtigungen**.
-
-8. Überprüfen Sie manuell die Rollengruppen, um festzustellen, ob das vermutlich angegriffene Konto einer dieser Gruppen angehört. Wenn er auf:
-
-   a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.
-
-   b. Verwenden Sie den Abschnitt **Mitglieder** zum Entfernen des Benutzers aus der Rollengruppe.
+   a. Wählen Sie die Rollengruppe aus, und klicken Sie auf **Bearbeiten** ![Symbol „Bearbeiten“](../../media/ITPro-EAC-EditIcon.png).
+   b. Wählen Sie im Abschnitt **Mitglieder** das Benutzerkonto aus, und klicken Sie dann auf **Entfernen** ![Symbol „Entfernen“](../../media/ITPro-EAC-RemoveIcon.gif). Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Schritt 7 (optional): Zusätzliche Vorsichtsmaßnahmen
 

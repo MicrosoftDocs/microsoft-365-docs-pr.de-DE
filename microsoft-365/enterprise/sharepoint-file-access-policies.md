@@ -1,5 +1,5 @@
 ---
-title: Empfohlene Richtlinien zum Schutz von Dokumenten – Microsoft 365 Enterprise | Microsoft-Dokumentation
+title: Empfohlene Richtlinien für sichere Dokumente – Microsoft 365 für Unternehmen | Microsoft-Dokumente
 description: Beschreibt die Richtlinien für Microsoft-Empfehlungen zum Schutz des Zugriffs auf SharePoint-Dateien.
 author: BrendaCarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617186"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695038"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen für das Sichern von SharePoint-Websites und-Dateien
 
@@ -85,5 +85,4 @@ In der Abbildung sehen Sie Folgendes:
 - Wenn James auf eine vertrauliche oder stark regulierte Website zugreift, die er bei der Verwendung seines PCs verwendet, wird sein Zugriff gewährt, solange sein PC konform ist.
 - Wenn James auf eine vertrauliche Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, das für Basisbenutzer zulässig ist, erhält er aufgrund der für diese Website konfigurierten Gerätezugriffs Richtlinie nur Browser Zugriff auf die vertrauliche Website.
 - Wenn James auf eine stark regulierte Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, wird er aufgrund der für diese Website konfigurierten Zugriffsrichtlinie blockiert. Er kann nur über seinen verwalteten und kompatiblen PC auf diese Website zugreifen.
-
 

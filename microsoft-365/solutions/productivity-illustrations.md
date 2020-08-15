@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d8601538b440b5133731d67743379bdc7980d1d5
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522241"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695218"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -56,22 +56,12 @@ Je nach Ihrer Umgebung eignen sich einige Tools für bestimmte Architekturen bes
 |[![Miniaturbild zur Microsoft Defender ATP-Bereitstellungsstrategie](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aktualisiert: Februar 2020| Das Architekturmaterial hilft Ihnen bei der Planung der Bereitstellung für die folgenden Architekturen: <ul><li> Cloudspezifisch </li><li> Co-Management </li><li> Lokal</li><li>Auswertung und lokales Onboarding</li>
 
 
-<a name="m365foundationinfra"></a>
-### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise-Foundation-Infrastruktur
-
-Sie erhalten einen Überblick über die [grundlegende Infrastruktur](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) für Microsoft 365 Enterprise, um mit der Bereitstellung zu beginnen.
-  
-|**Item**|**Beschreibung**|
-|:-----|:-----|
-|[![Thumbnail-Bild des Microsoft 365 Enterprise-Foundation-Infrastruktur-Posters](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Online anzeigen](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Aktualisiert: Dezember 2019| Dieses Poster fasst alle Phasen der Basisinfrastruktur hinsichtlich der Ziele, Features und Werkzeuge, Design-Entscheidungen, Konfigurationsergebnisse, Onboarding sowie laufende Überwachung und Updates zusammen. <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Identität- und Geräteschutz für Office 365
 
 Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 365, andere SaaS-Dienste und lokale Anwendungen zugreifen, die mit dem Azure AD-Anwendungsproxy veröffentlicht werden.
 
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Modellposter: Identität- und Geräteschutz für Office 365 und andere SaaS-Programme](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Aktualisiert: November 2018|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. In diesem Dokument wird gezeigt, welche Funktionen mit weiteren Informationen über die Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
    

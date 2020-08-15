@@ -9,125 +9,122 @@ ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Enthält eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 für Unternehmen.
-ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
-ms.translationtype: MT
+description: Bietet eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
+ms.openlocfilehash: 55c7ca87d307fc9891d9967029f15e25414d7c18
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002291"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686320"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
-Microsoft 365 for Enterprise ist eine vollständige, intelligente Lösung, die es allen ermöglicht, kreativ zu sein und sicher zusammenzuarbeiten. 
+Mit dieser intelligenten Microsoft 365 Enterprise-Komplettlösung kann jeder kreativ und sicher im Team arbeiten. 
 
-Obwohl für große Organisationen entwickelt, kann Microsoft 365 for Enterprise auch für mittelständische und kleine Unternehmen verwendet werden, die die fortschrittlichsten Sicherheits-und Produktivitätsfunktionen benötigen. 
+Microsoft 365 Enterprise eignet sich für große Unternehmen, kann aber auch für mittelständische und kleine Unternehmen verwendet werden, die die fortschrittlichsten Sicherheits- und Produktivitätsfunktionen benötigen. 
 
 ## <a name="components"></a>Komponenten
 
-Microsoft 365 for Enterprise besteht aus folgenden Elementen:
+Microsoft 365 Enterprise besteht aus:
 
-|||
+| Dienste | Beschreibung |
 |:-------|:-----|
-| Lokale und Cloud-basierte apps und Produktivitätsdienste | Umfasst sowohl Microsoft 365-Apps für Unternehmen, die neuesten Office-Apps für Ihren PC und Mac (wie Word, Excel, PowerPoint, Outlook und andere) sowie eine vollständige Sammlung von Onlinediensten für e-Mail, Dateispeicherung und Zusammenarbeit, Besprechungen und vieles mehr. |
-| Windows 10 Enterprise | Erfüllt die Anforderungen von Groß-und mittelständischen Organisationen und stellt Benutzern die produktivste und sichere Version von Windows-und IT-Experten mit umfassender Bereitstellung, Geräte-und App-Verwaltung zur Verfügung. |
-| Geräteverwaltung und erweiterte Sicherheitsdienste | Umfasst Microsoft InTune, ein Cloud-basierter Dienst für die Enterprise Mobility-Verwaltung (EMM), mit dem Ihre Mitarbeiter produktiv arbeiten und Ihre Unternehmensdaten geschützt werden können. |
+| Lokale und Cloud-basierte Apps und Produktivitätsdienste | Umfasst Microsoft 365 Apps for Enterprise, die neuesten Office-Apps für Ihren PC und Mac (z. B. Word, Excel, PowerPoint und Outlook) und den vollen Umfang von Onlinediensten für E-Mail, Dateispeicher und Zusammenarbeit, Besprechungen und vieles mehr. |
+| Windows 10 Enterprise | Bezieht sich auf die Anforderungen von großen und mittelständischen Unternehmen, sodass die Benutzer die produktivste und sicherste Version von Windows und IT-Experten eine umfassende Bereitstellungs-, Geräte-und App-Verwaltung erhalten können. |
+| Geräteverwaltung und erweiterte Sicherheitsdienste | Enthält Microsoft Intune der ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM) ist, der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. |
 |||
 
 ## <a name="plans"></a>Pläne
 
-Microsoft 365 for Enterprise ist in drei Plänen verfügbar.
+Microsoft 365 Enterprise steht in drei Plänen zur Verfügung.
 
-|||
+| Planname | Funktionen |
 |:-------|:-----|
-| E3 | Greifen Sie auf Kernprodukte und-Features in Microsoft 365 zu, um die Produktivität am Arbeitsplatz zu verbessern und Innovationen sicher zu fördern. |
-| E5 | Greifen Sie auf die neuesten Produkte und Features in Microsoft 365, einschließlich Advanced Threat Protection, Security and Collaboration Tools, zu.. Umfasst alle E3's-Funktionen sowie erweiterte Sicherheits-, sprach-und Datenanalysetools. |
-| F3 | Stellen Sie eine Verbindung mit ihren First-Workern über speziell entwickelte Tools und Ressourcen her, mit denen Sie Ihre besten Aufgaben erledigen können. |
+| E3 | Greifen Sie sicher auf Kernprodukte und -funktionen innerhalb von Microsoft 365 zu, um die Produktivität am Arbeitsplatz zu steigern und Innovationen voranzutreiben. |
+| E5 | Nutzen Sie die neuesten Produkte und Funktionen in Microsoft 365 plus Tools für Advanced Threat Protection, Sicherheit und Zusammenarbeit. Enthält alle E3's-Funktionen plus erweiterte Sicherheits-, Sprach- und Datenanalysetools. |
+| F3 | Mit bedarfsgerechten Tools und Ressourcen binden Sie Mitarbeiter in Service und Produktion ein, damit jeder sein Bestes geben kann. |
 |||
 
-Wenn Sie Microsoft 365 E3 haben, können Sie auch diese [Angebote](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)erhalten:
+Wenn Sie Microsoft 365 E3 besitzen, können Sie auch diese Add-Ons abrufen:
 
-- Identitäts & Bedrohungsschutz
-- Informationsschutz & Compliance
+- Identitäts- und Bedrohungsschutz
+- Schutz von Informationen und Compliance
+- [Microsoft 365 E5 Compliance](https://www.microsoft.com/microsoft-365/business/e5-compliance)
+- Microsoft 365 E5 Insider-Risiko
 
-Diese Angebote enthalten zusätzliche Funktionen, die in Microsoft 365 E5 enthalten sind.
+Diese Angebote enthalten zusätzliche Funktionen, die im Lieferumfang von Microsoft 365 E5 enthalten sind.
 
-Weitere Informationen finden Sie unter [Features und Funktionen für jeden Plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Weitere Informationen finden Sie unter [Funktionen und Features für jeden Plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
-## <a name="get-the-big-picture"></a>Holen Sie sich das große Bild
+## <a name="get-the-big-picture"></a>Grundlegende Informationen
 
-Das [Poster Microsoft 365 for Enterprise](../media/m365-poster/Microsoft365Enterprise.pdf) ist ein zentraler Ort, an dem Sie Folgendes anzeigen können:
+Das [Poster "Microsoft 365 Enterprise"](../downloads/Microsoft365Enterprise.pdf) bietet eine gute Übersicht:
 
-- Die Vorteile von Microsoft 365 für Unternehmen und wie apps und Dienste ihren Wert stützen zuordnen
-- Microsoft 365 für Enterprise-Pläne und die darin enthaltenen Komponenten 
-- Die wichtigsten Komponenten des modernen Arbeitsplatzes, die von Microsoft 365 für Unternehmen aktiviert werden
-- Die [Microsoft 365-Produktivitäts Bibliothek](https://www.microsoft.com/microsoft-365/success/) und repräsentative Szenarien für einige allgemeine Organisationsabteilungen
-- Die Einführungs-Roadmap, die das Microsoft 365 for Enterprise [-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) hervorhebt
+- Die Vorteile von Microsoft 365 Enterprise und die Art und Weise, wie Apps und Dienste den jeweiligen Wert Pfeilern zugeordnet werden
+- Microsoft 365 Enterprise-Pläne und welche Komponenten enthalten sind 
+- Die wichtigsten Bestandteile von "Modern Workplace", die von Microsoft 365 Enterprise aktiviert werden können
+- Die [Microsoft 365-Produktivitätsbibliothek](https://www.microsoft.com/microsoft-365/success/) und repräsentative Szenarien für einige gemeinsame Organisationsabteilungen
 
-[![Abbildung des Posters "Microsoft 365 Enterprise"](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+[![Abbildung des Posters "Microsoft 365 Enterprise"](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
-Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
+Zum Herunterladen einer Kopie des Posters klicken Sie [hier](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Umstellung Ihrer gesamten Organisation
 
-Wenn Sie ein besseres Bild davon erhalten möchten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste in Microsoft 365 for Enterprise umstellen, lesen Sie den Artikel [Transition Poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Um einen besseren Überblick zu erhalten, wie Sie Ihre gesamte Organisation auf die Produkte und Dienste von Microsoft 365 Enterprise umstellen können, sehen Sie sich das [Poster zur Umstellung](../downloads/transition-org-to-m365.pdf) an.
 
-[![Bild des Posters zur Umstellung auf Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Bild des Posters zur Umstellung auf Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
 Dieses zweiseitige Poster ist eine schnelle Methode, um eine Übersicht Ihrer vorhandenen Infrastruktur zu erstellen, und bietet Anweisungen für den Wechsel zum entsprechenden Produkt oder Dienst in Microsoft 365 Enterprise. Es enthält Windows- und Office-Produkte sowie weitere Infrastruktur- und Sicherheitselemente wie Geräteverwaltung, sowie Identitäts-, Daten- und Bedrohungsschutz.
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
-## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Vermeiden des Endes der Unterstützung für Windows 7-und Office 2010-Clients und-Server
+## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Ende des Supports für Clients und Server von Windows 7 und Office 2010
 
-[Windows 7](https://aka.ms/win7upgrade) am Ende der Unterstützung am **14. Januar 2020**erreicht.
+[Windows 7](https://aka.ms/win7upgrade) erreichte am **14. Januar 2020** das Ende des Supports.
 
-Die folgenden Produkte werden am Ende der Unterstützung am **13. Oktober 2020**erreichen:
+Der Support für diese Produkte endet am **13. Oktober 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) wird am **13. April 2021**am Ende der Unterstützung erreichen.
+Das Ende des Supports für [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) wird am **13. April 2021** erreicht. 
 
-Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wechsel in die Cloud für diese Produkte finden Sie auf dem [Poster zum Ende des Supports](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und den Wechsel in die Cloud für diese Produkte finden Sie auf dem [Poster zum Ende des Supports](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Windows 7 und Office 2010 Client-und Serverprodukte das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Unterstützung in Microsoft 365 for Enterprise hervorgehoben sind.
+Dieses einseitige Poster veranschaulicht auf einfache Weise, welche verschiedenen Pfade Sie wählen können, um zu verhindern, dass Client- und Serverprodukte von Windows 7 und Office 2010 das Ende des Supports erreichen, wobei bevorzugte Pfade und Support in Microsoft 365 Enterprise hervorgehoben werden.
 
-Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+Sie können [dieses Poster herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
 
-## <a name="deploy"></a>Bereitstellen
+## <a name="plan-for-and-deploy"></a>Planen und Bereitstellen von
 
-Es gibt drei Möglichkeiten, die Produkte, Features und Komponenten von Microsoft 365 für Unternehmen bereitzustellen:
+Es gibt drei Möglichkeiten, um die Bereitstellung von Produkten, Features und Komponenten von Microsoft 365 Enterprise zu planen:
 
-1. In Partnerschaft mit dem Kurzarbeits-
+1. Zusammenarbeit mit FastTrack
   
-   Mit dem Kurztext helfen Ihnen Microsoft-Ingenieure, in Ihrem eigenen Tempo in die Cloud zu gelangen. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Mit FastTrack helfen Ihnen die Microsoft-Techniker, in Ihrem eigenen Tempo in die Cloud zu wechseln. Siehe [FastTrack für Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Mithilfe von Microsoft Consulting Services oder eines Microsoft- [Partners](https://partner.microsoft.com/).
+2. Mithilfe von Microsoft Consulting Services oder eines [Microsoft-Partners](https://partner.microsoft.com/).
 
-   Berater können Ihre aktuelle Infrastruktur analysieren und Ihnen bei der Entwicklung eines Plans zur Integration aller Software und Dienste von Microsoft 365 für Unternehmen helfen.
+   Berater können Ihre aktuelle Infrastruktur analysieren und Ihnen helfen, einen Plan zu entwickeln, der die gesamte Software und alle Dienste von Microsoft 365 Enterprise umfasst.
 
-3. Selbst ausführen
+3. Selbstständig ausführen
 
-   Das [Microsoft 365 for Enterprise-Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md) führt Sie Schritt für Schritt durch die Entwicklung der Infrastruktur-und Produktivitäts Arbeitslasten. 
+   Beginnen Sie mit [Networking-Roadmap](networking-roadmap-microsoft-365.md), um Ihre vorhandenen Infrastruktur- und Produktivitätslasten auszubauen oder zu überprüfen. 
 
-Weitere Informationen zur Bereitstellung finden Sie unter How:
+Erfahren Sie, wie die [Contoso Corporation](contoso-overview.md), ein fiktives, aber repräsentatives multinationales Unternehmen Microsoft 365 Enterprise bereitgestellt hat.
 
-- [Kunden](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise) verwenden Microsoft 365 für Unternehmen.
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise) verwendet Microsoft 365 für Enterprise.
-- [Die Contoso Corporation](contoso-overview.md), eine fiktive, aber repräsentative multinationale Organisation, hat Microsoft 365 für Unternehmen bereitgestellt.
-
-## <a name="additional-microsoft-365-solutions"></a>Weitere Microsoft 365-Lösungen
+## <a name="additional-microsoft-365-products"></a>Weitere Microsoft 365-Produkte
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
-  Kombinieren Sie die Funktionen von Office 365 in puncto Produktivität und Zusammenarbeit mit Geräte und Lösungen zum Schutz von Geschäftsdaten für kleine und mittlere Unternehmen (SMB).
+  Kombinieren Sie die Funktionen in puncto Produktivität und Zusammenarbeit mit Geräte und Lösungen zum Schutz von Geschäftsdaten für kleine und mittlere Unternehmen (SMB).
 
 - [Microsoft 365 Education](https://docs.microsoft.com/education)
  
@@ -135,20 +132,15 @@ Weitere Informationen zur Bereitstellung finden Sie unter How:
 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
  
-  Bevollmächtigen Sie die Mitarbeiter des öffentlichen Sektors für die Zusammenarbeit, sicher.
+  Ermöglichen Sie den Mitarbeitern des öffentlichen Sektors der Vereinigten Staaten eine sichere Zusammenarbeit.
 
 ## <a name="microsoft-365-training"></a>Microsoft 365-Schulung
 
-|||
-|:-------|:-----|
-![Microsoft 365-Grundlagentraining](../media/m365-poster/m365-fundamentals.svg)| Lassen Sie sich selbst geschult und auf eine Microsoft 365-Zertifizierung hinarbeiten. <BR> Beginnen Sie mit [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
-|||
+![Grundlagen zu Microsoft 365-Schulung](../media/microsoft-365-overview/m365-fundamentals.svg)
 
+Lassen Sie sich schulen und arbeiten Sie auf eine Microsoft 365-Zertifizierung hin. Beginnen Sie mit [Grundlagen zu Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
-## <a name="next-step"></a>Nächster Schritt
-
-Wenn Sie die Bereitstellung selbst ausführen, starten Sie die [Bereitstellungs Reise von Microsoft 365 für Enterprise](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 für Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)
+[Microsoft 365 Enterprise-Produktseite](https://www.microsoft.com/microsoft-365/enterprise)

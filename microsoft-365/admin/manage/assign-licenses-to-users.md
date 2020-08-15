@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benutzern Lizenzen zuweisen.
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015947"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757557"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
@@ -160,6 +160,25 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 5. Wählen Sie unten im Bereich **Produktlizenzen** nacheinander **Speichern** \> **Schließen** \> **Schließen** aus.
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>Zuweisen einer Lizenz an einen Gastbenutzer
+
+Sie können Gastbenutzer einladen, mit Ihrer Organisation im Azure Active Directory Admin Center zusammenzuarbeiten. Informationen über Gastbenutzer finden Sie unter [Was ist Gastbenutzerzugriff in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Wenn Sie keine Gastbenutzer haben, siehe [Schnellstart: Hinzufügen von Gastbenutzern zu Ihrem Verzeichnis im Azure-Portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> Sie müssen ein globaler Administrator sein, um diese Schritte ausführen zu können.
+
+1. Wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory Admin Center</a>
+2. Wählen Sie im Navigationsbereich **Benutzer** aus.
+3. Auf der Seite **Benutzer | Alle Benutzer (Vorschau)**, wählen Sie **Filter hinzufügen** aus.
+4. Wählen Sie im Menü **Feld auswählen** die Option **Benutzertyp**, und wählen Sie dann **Anwenden** aus.
+5. Wählen Sie im nächsten Menü **Gast** aus.
+6. Wählen Sie in der Liste der Ergebnisse den Benutzer aus, der eine Lizenz benötigt.
+7. Wählen Sie unter **Verwalten** **Lizenzen** aus.
+8. Wählen Sie **Zuweisungen** aus.
+9. Wählen Sie auf der Seite **Lizenzzuweisungen aktualisieren** das Produkt aus, für das Sie eine Lizenz zuweisen möchten.
+10. Deaktivieren Sie auf der rechten Seite die Kontrollkästchen für alle Dienste, auf die der Gastbenutzer nicht zugreifen kann.
+11. Wählen Sie **Speichern** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
