@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649152"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662309"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -115,7 +115,7 @@ Die Erhaltungssperre stellt sicher, dass Ihre Organisation solchen gesetzlichen 
   
 Das Sperren einer Aufbewahrungsrichtlinie bewirkt Folgendes:
 
-- Niemand kann sie deaktivieren
+- Keiner kann sie ausschalten
 - Speicherorte können hinzugefügt, aber nicht entfernt werden
 - Inhalte, die der Richtlinie unterliegen, können während des Aufbewahrungszeitraums weder geändert noch gelöscht werden.
 - Sie können den Aufbewahrungszeitraum verlängern, ihn jedoch nicht verringern.

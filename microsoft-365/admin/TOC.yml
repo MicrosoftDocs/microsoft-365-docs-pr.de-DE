@@ -133,21 +133,9 @@
               href: create-groups/add-or-remove-members-from-groups.md
             - name: Wiederherstellen einer gelöschten Gruppe
               href: create-groups/restore-deleted-group.md
-            - name: Planen der Governance in Teams
-              href: create-groups/plan-for-groups-governance.md
-            - name: Verwalten der Erstellung von Gruppen
-              href: create-groups/manage-creation-of-groups.md
-            - name: Domäne für Gruppen auswählen
-              href: create-groups/choose-domain-to-create-groups.md
-            - name: Übersicht über Richtlinien zur Benennung von Gruppen
-              href: create-groups/groups-naming-policy.md
-            - name: 'Zulassen, dass Mitglieder E-Mails an und von Gruppen zu senden'
-              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
             - name: Verwalten des Gastzugriffs auf Gruppen
               href: create-groups/manage-guest-access-in-groups.md
-            - name: Verwenden von Vertraulichkeitsbezeichnungen bei Gruppen
-              href: ../compliance/sensitivity-labels-teams-groups-sites.md
-    - name: Verwalten von E-Mail und Kalendern
+    - name: Verwalten von E-Mails und Kalendern
       href: email/index.yml
       items:
         - name: Info zu Benutzer-E-Mail-Einstellungen

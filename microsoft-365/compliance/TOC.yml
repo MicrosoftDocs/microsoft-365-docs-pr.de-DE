@@ -343,8 +343,12 @@
       items:
         - name: Datensatzverwaltung
           href: records-management.md
-        - name: Datensätze
+        - name: Informationen zu Datensätzen
           href: records.md
+        - name: Datensätze deklarieren
+          href: declare-records.md
+        - name: Datensatzversionsverwaltung
+          href: record-versioning.md
 - name: Verwalten von eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
