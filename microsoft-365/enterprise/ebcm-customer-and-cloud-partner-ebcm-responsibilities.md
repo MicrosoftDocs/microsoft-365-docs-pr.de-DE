@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr darüber, was Microsoft bei Auftreten eines Dienstvorfalls unternimmt, um Ihre Pläne zur Sicherung der Geschäftskontinuität besser gestalten zu können.
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067670"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686118"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Verantwortlichkeiten von Kunden und Cloud-Partnern im Rahmen der Steuerung der Geschäftskontinuität 
 
@@ -65,7 +65,7 @@ Ziehen Sie Ereignisse, die Auswirkungen auf Ihre Belegschaft haben können, wie 
 
 ### <a name="location"></a>Ort
 Viele Unternehmen fordern von Ihren Mitarbeitern deren Anwesenheit an bestimmten physischen Orten oder Netzwerkstandorten, um sich mit Systemen des Unternehmens und Cloud-Diensten zu verbinden.  
-Microsoft veröffentlicht [Grundsätze zur Netzwerkkonnektivität](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles), die Unternehmen anhand von bewährten Methoden beim Einrichten der Netzwerkkonnektivität für Cloud-Ressourcen anleiten. Optimierungsbeispiele umfassen die Implementierung von gesplitteten Tunnel-VPN, um Verbindungen direkt vom Netzwerk eines Benutzers statt über einen VPN-Tunnel zu ermöglichen.  Obwohl diese Grundsätze zur Konnektivität für das Aufrechterhalten von Verbindungen mit geringer Latenz wichtig sind, erfordert die Sicherstellung der Dienstverfügbarkeit alternative Methoden der Anbindung von Unternehmensressourcen, die der allgemeinen Zusammenarbeit dienen.
+Microsoft veröffentlicht [Grundsätze zur Netzwerkkonnektivität](microsoft-365-network-connectivity-principles.md), die Unternehmen anhand von bewährten Methoden beim Einrichten der Netzwerkkonnektivität für Cloud-Ressourcen anleiten. Optimierungsbeispiele umfassen die Implementierung von gesplitteten Tunnel-VPN, um Verbindungen direkt vom Netzwerk eines Benutzers statt über einen VPN-Tunnel zu ermöglichen.  Obwohl diese Grundsätze zur Konnektivität für das Aufrechterhalten von Verbindungen mit geringer Latenz wichtig sind, erfordert die Sicherstellung der Dienstverfügbarkeit alternative Methoden der Anbindung von Unternehmensressourcen, die der allgemeinen Zusammenarbeit dienen.
 
 ### <a name="systems"></a>Systeme
 Zahlreiche Lösungen zur Zusammenarbeit sind systemabhängig, wie z. B.von einem unternehmensweiten Netzwerk (WAN). Wie würde Ihre Organisation reagieren, wenn diese Systeme nicht verfügbar sind?

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise für die Contoso Corporation
+title: Microsoft 365 für Unternehmen für die Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,26 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365 Enterprise implementiert.
-ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: HT
+description: Wie ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365 für Unternehmen eingeführt hat.
+ms.openlocfilehash: fe9003531ada50374c0447c9b05a99798f883e47
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854258"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685986"
 ---
-# <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise für die Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 für Unternehmen für die Contoso Corporation
 
-Microsoft 365 Enterprise ist das erstklassige Cloudangebot von Microsoft, das lokale und cloudbasierte Produktivitäts-Apps und -Dienste mit Windows 10 Enterprise und erweiterten Sicherheitsfeatures in einer umfassenden, intelligenten Lösung kombiniert, mit der alle Mitarbeiter kreativ und sicher zusammenarbeiten können. 
+Microsoft 365 for Enterprise ist das erste Cloud-Angebot von Microsoft, das lokale und Cloud-basierte Produktivitäts-apps und-Dienste mit Windows 10 Enterprise und erweiterten Sicherheitsfeatures in einer vollständigen, intelligenten Lösung kombiniert, die es allen ermöglicht, sicher kreativ zu sein und zusammenzuarbeiten. 
 
-Die Contoso Corporation ist ein fiktiver, aber repräsentativer globaler Mischkonzern im Bereich Fertigung mit Hauptsitz in Paris, Frankreich. Contoso hat Microsoft 365 Enterprise bereitgestellt und dabei wichtige Designentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Microsoft 365 Apps for Enterprise, Verwaltung mobiler Geräte, Datenschutz und Sicherheit berücksichtigt. 
+Die Contoso Corporation ist ein fiktives, aber repräsentatives globales Produktions Konglomerat mit Hauptsitz in Paris, Frankreich. Contoso hat Microsoft 365 für Unternehmen bereitgestellt und wichtige Entwurfsentscheidungen und Implementierungsdetails für Netzwerke, Identität, Windows 10 Enterprise, Microsoft 365-Apps für Unternehmen, Verwaltung mobiler Geräte, Informationsschutz und Sicherheit behandelt. 
 
-Das Gesamtziel von Contoso für Microsoft 365 Enterprise ist die Beschleunigung der digitalen Transformation unter Verwendung von Clouddiensten, um Mitarbeiter, Partner, Daten und Prozess näher zusammen zu bringen, damit ein Mehrwert für den Kunden entsteht und das Unternehmen seinen Wettbewerbsvorteil in der digital bestimmten Welt behaupten kann.
+Das Gesamtziel von Contoso für Microsoft 365 für Unternehmen besteht darin, die digitale Transformation zu beschleunigen, indem es Cloud-Dienste verwendet, um seine Mitarbeiter, Partner, Daten und Prozesse zusammenzubringen, um Kunden Wert zu schaffen und seinen Wettbewerbsvorteil in einer digitalen ersten Welt zu erhalten.
 
 In den folgenden Artikeln finden Sie weitere Informationen:
 
@@ -62,11 +62,11 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
 - [Schutz von Daten](contoso-info-protect.md)
 
-  Um sicherzustellen, dass sowohl allgemeine als auch hochwertige Daten identifiziert und gekennzeichnet werden und mehreren Sicherheitsebenen unterliegen, erzwingt Contoso seine Datensicherheitsrichtlinien mit dem Microsoft 365 Enterprise-Informationsschutz.
+  Um sicherzustellen, dass sowohl allgemeine als auch hochwertige Daten identifiziert, gekennzeichnet und Sicherheitsebenen unterliegen, erzwingt Contoso seine Datensicherheitsrichtlinien mit Microsoft 365 für Enterprise Information Protection.
 
-- [Zusammenfassung der Microsoft 365 Enterprise-Sicherheit](contoso-security-summary.md)
+- [Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit](contoso-security-summary.md)
 
-  Contoso verwendet das volle Spektrum der Microsoft 365 Enterprise-Sicherheitsfeatures für Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung.
+  Contoso verwendet das gesamte Spektrum von Microsoft 365 für Enterprise-Sicherheitsfeatures für Identitäts-und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung.
 
 - [Team für ein streng geheimes Projekt](../solutions/contoso-team-for-top-secret-project.md)
 
@@ -78,12 +78,12 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-overview.md) über die Contoso Corporation, die weltweiten Büros sowie die Entwurfsaspekte, die bei der Bereitstellung von Microsoft 365 Enterprise berücksichtigt wurden.
+[Erfahren Sie mehr](contoso-overview.md) über die Contoso Corporation, Ihre weltweiten Niederlassungen und die Entwurfsüberlegungen, die bei der Bereitstellung von Microsoft 365 für Unternehmen behoben wurden.
 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)
 

@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informationen zur Contoso-Netzwerkinfrastruktur und dazu, wie die SD-WAN-Technologie für eine optimale Netzwerkleistung für cloudbasierte Microsoft 365 Enterprise-Dienste verwendet wird.
-ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+description: Grundlegendes zur Contoso-Netzwerkinfrastruktur und zur Verwendung der SD-WAN-Technologie für eine optimale Netzwerkleistung für Microsoft 365 für Enterprise-Cloud-Dienste.
+ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625278"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685818"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Netzwerkfunktionen für die Contoso Corporation
 
@@ -50,7 +50,7 @@ Abbildung 1 zeigt die Contoso-Netzwerkinfrastruktur und die dazugehörigen Verbi
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Verwenden des SD-WAN für eine optimale Netzwerkkonnektivität mit Microsoft
 
-Contoso folgte den folgenden [Prinzipien von Microsoft 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) bei folgende Aufgaben:
+Contoso folgte den folgenden [Prinzipien von Microsoft 365-Netzwerkverbindungen](microsoft-365-network-connectivity-principles.md) bei folgende Aufgaben:
 
 1. Identifizieren und Unterscheiden von Microsoft 365-Netzwerkdatenverkehr
 2. Lokaler Ausgang von Netzwerkverbindungen
@@ -84,17 +84,17 @@ Abbildung 2 zeigt den Prozentsatz des Netzwerkdatenverkehrs beim Zugriff auf Ser
 Für Benutzer in Zweigstellen- oder Regionalbüros können 60 % der von ihnen benötigten Ressourcen von den Zweigstellen- oder Regionalbüroservern bereitgestellt werden.
  Die weiteren 40 % der Ressourcenanforderungen werden über die WAN-Verbindung mit dem Pariser Campus abgedeckt.
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-enterprise"></a>Netzwerkanalyse und Vorbereitung des Netzwerks auf Microsoft 365 Enterprise bei Contoso
+## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Contosos Netzwerkanalyse und Vorbereitung Ihres Netzwerks für Microsoft 365 for Enterprise
 
-Eine erfolgreiche Einführung von Microsoft 365 Enterprise-Diensten bei den Benutzern von Contoso ist von einer hochverfügbaren und leistungsstarken Verbindung zum Internet oder von einer Verbindung direkt mit Microsoft-Clouddiensten abhängig. Contoso hat diese Schritte bei der Planung und Implementierung einer optimierten Verbindung mit Microsoft 365 Enterprise-Clouddiensten berücksichtigt:
+Die erfolgreiche Einführung von Microsoft 365 für Enterprise-Dienste durch die Benutzer von Contoso hängt von der hochgradig verfügbaren und leistungsfähigen Konnektivität mit dem Internet oder direkt mit Microsoft Cloud Services ab. Contoso hat die folgenden Schritte ausgeführt, um eine optimierte Konnektivität mit Microsoft 365 für Enterprise-Cloud-Dienste zu planen und zu implementieren:
 
 1. Es wurde ein WAN-Netzwerkdiagramm für das Unternehmen zur Unterstützung der Planung erstellt.
 
    Contoso startete die Netzwerkplanung durch Erstellung eines Diagramms, in dem die Standorte, die vorhandene Netzwerkverbindung, die vorhandenen Netzwerkumkreisgeräte sowie die Dienstklassen dargestellt wurden, die im Netzwerk verwaltet werden. Dieses Diagramm wurde für alle nachfolgenden Schritte bei der Planung und Implementierung der Netzwerkkonnektivität verwendet.
 
-2. Es wurde ein Plan für die Microsoft 365 Enterprise-Netzwerkkonnektivität erstellt.
+2. Plan für Microsoft 365 für Enterprise-Netzwerkkonnektivität erstellt
 
-   Contoso verwendete die [Prinzipien von Microsoft 365-Netzwerkverbindungen](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) und stellte Referenznetzwerkarchitekturen bereit, um SD-WAN als bevorzugte Topologie für Microsoft 365-Konnektivität zu bestimmen.
+   Contoso verwendete die [Prinzipien von Microsoft 365-Netzwerkverbindungen](microsoft-365-network-connectivity-principles.md) und stellte Referenznetzwerkarchitekturen bereit, um SD-WAN als bevorzugte Topologie für Microsoft 365-Konnektivität zu bestimmen.
 
 3. In jeder Niederlassung wurde die Auslastung der Internetverbindung und die MPLS-WAN-Bandbreite analysiert und bei Bedarf erhöht.
 
@@ -110,7 +110,7 @@ Eine erfolgreiche Einführung von Microsoft 365 Enterprise-Diensten bei den Benu
 
 6. Netzwerkendpunkt und Portkonnektivität wurden überprüft.
 
-   Contoso führte Testtools für die Netzwerkkonnektivität aus, die von Microsoft zur Überprüfung der Konnektivität für Microsoft 365 Enterprise-Clouddienste bereitgestellt wurden.
+   Contoso hat die von Microsoft bereitgestellten Tools zur Netzwerkkonnektivität getestet, um die Konnektivität für Microsoft 365 for Enterprise Cloud Services zu überprüfen.
 
 7. Die Netzwerkverbindungen der Computer der Mitarbeiter wurden optimiert.
 
@@ -122,8 +122,8 @@ Eine erfolgreiche Einführung von Microsoft 365 Enterprise-Diensten bei den Benu
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Enterprise](networking-infrastructure.md)
+[Roadmap für Netzwerke für Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)

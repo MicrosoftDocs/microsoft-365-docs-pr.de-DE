@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Verwenden Sie die folgenden Testumgebungsanleitungen, um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Microsoft 365 Enterprise einzurichten.
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818741"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686766"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testumgebungsanleitungen für Microsoft 365 Enterprise
 
@@ -43,7 +43,7 @@ Wechseln Sie zum [Test Labor Leitfaden](../media/m365-enterprise-test-lab-guides
 
 ## <a name="base-configuration"></a>Standardkonfiguration
 
-Zuerst erstellen Sie eine Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/), die Office 365 E5, Enterprise Mobility + Security (EMS) E5 und Windows 10 Enterprise umfasst. Es stehen zwei unterschiedliche Typen von Standardkonfiguration zur Auswahl:
+Zunächst erstellen Sie eine Testumgebung für [Microsoft 365 für Unternehmen](https://docs.microsoft.com/microsoft-365-enterprise/). Sie können zwei verschiedene Typen von Basiskonfigurationen erstellen:
 
 - Verwenden Sie die [einfache Standardkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md), wenn Sie die Features und Funktionen von Microsoft 365 Enterprise in einer reinen Cloudumgebung konfigurieren und demonstrieren möchten, die keine lokalen Komponenten umfasst.
 
@@ -63,7 +63,7 @@ Wie Sie identitätsbezogene Features und Funktionen demonstrieren können, erfah
   
    Aktivieren und testen Sie die Pass-Through-Authentifizierung an einen AD DS-Domänencontroller.
 
-- [Verbundauthentifizierung](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Verbundauthentifizierung](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    Aktivieren und testen Sie die Verbundauthentifizierung an einen AD DS-Domänencontroller.
 

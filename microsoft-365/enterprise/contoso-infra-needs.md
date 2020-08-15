@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informationen zur grundlegenden Struktur der lokalen IT-Infrastruktur von Contoso und wie die Unternehmensanforderungen mithilfe von Microsoft 365 Enterprise erfüllt wurden.
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Hier erfahren Sie, wie die grundlegende Struktur der lokalen IT-Infrastruktur von Contoso und wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt wurden.
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011197"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685830"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>IT-Infrastruktur und geschäftliche Anforderungen von Contoso
 
@@ -112,20 +112,20 @@ Verwaltung:
 
   Automatisieren Sie die Installation von Updates für das Windows-Betriebssystem und Microsoft 365 Apps for Enterprise in der gesamten Organisation.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Zuordnen der Geschäftsanforderungen von Contoso zu Microsoft 365 Enterprise
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Zuordnen der geschäftlichen Anforderungen von Contoso zu Microsoft 365 für Unternehmen
 
 Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuordnung von Geschäftsanforderungen zu den Features von Microsoft 365 E5 vorgenommen:
 
-||||
+
+| Kategorie | Geschäftsanforderung | Microsoft 365 für Enterprise-Produkte oder-Features |
 |:-------|:-----|:-----|
-| **Kategorie** | **Geschäftsanforderung** | **Produkte oder Features von Microsoft 365 Enterprise** |
 | Produktivität |  |  |
 |  | Vereinfachen der Zusammenarbeit | Microsoft Teams, SharePoint, OneDrive |
 |  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
 |  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung von und Antwort auf Bedrohungen in Office 365 <BR> |
+|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
 |  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Security Center  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
@@ -133,7 +133,7 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 |  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Bessere Konnektivität und weniger Aufwand für B2B-Transaktionen | Verbundauthentifizierung und cloudbasierte Ressourcen |
 | Compliance |  |  |
-|  | Einhalten von regionalen gesetzlichen Vorschriften | DSGVO-Features in Office 365 |
+|  | Einhalten von regionalen gesetzlichen Vorschriften | Dsgvo-Features in Microsoft 365 |
 | Verwaltung |  |  |
 |  | Reduzieren des IT-Aufwands für die Installation von Clientupdates | Bereitstellungsringe <BR> Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
 ||||
@@ -144,6 +144,6 @@ Von der IT-Abteilung von Contoso wurde vor der Bereitstellung die folgende Zuord
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)

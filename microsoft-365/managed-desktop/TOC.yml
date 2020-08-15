@@ -106,8 +106,6 @@
         - name: Mit Berichten arbeiten
           href: working-with-managed-desktop/reports.md
           items:
-            - name: Bericht zur Geräte-Compliance
-              href: working-with-managed-desktop/device-compliance-report.md
             - name: Gerätebestandsbericht
               href: working-with-managed-desktop/device-inventory-report.md
         - name: Arbeiten mit Einblicken

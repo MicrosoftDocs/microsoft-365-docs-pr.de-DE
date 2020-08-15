@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen der Contoso Corporation als Unternehmen und Informationen zu der mehrstufigen Struktur ihrer weltweiten Büros.
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068296"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686452"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
@@ -60,9 +60,9 @@ Für Contosos Niederlassungen (Büros) auf der Welt gibt es eine dreistufige Hie
 25 % der Belegschaft von Contoso sind Mobilmitarbeiter, wobei der Prozentsatz der Mobilmitarbeiter in Regional- und Zweigstellen höher ist.
 Das Bereitstellen von besserer Unterstützung für Mobilmitarbeiter ist ein wichtiges Geschäftsziel für Contoso.
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Entwurfsaspekte für Microsoft 365 Enterprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Entwurfsüberlegungen für Microsoft 365 für Unternehmen
 
-Die IT-Architekten von Contoso haben die folgenden Entwurfsanforderungen und -aspekte bei der Bereitstellung von Microsoft 365 Enterprise identifiziert: 
+Die IT-Architekten von Contoso haben die folgenden Entwurfsanforderungen und-Überlegungen bei der Bereitstellung von Microsoft 365 für Unternehmen ermittelt: 
 
 - Mehrere geografische Standorte mit lokalen Vorschriften und Compliance-Anforderungen
 - Ein zentrales Intranetrechenzentrum in der Unternehmenszentrale und regionale Anwendungsserver, auf der interne Branchenanwendungen gehostet werden.
@@ -76,11 +76,11 @@ Die IT-Architekten von Contoso haben die folgenden Entwurfsanforderungen und -as
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Erfahren Sie mehr](contoso-infra-needs.md) über die lokale IT-Infrastruktur der Contoso Corporation und wie ihre Unternehmensanforderungen mit Microsoft 365 Enterprise erfüllt wurden.
+[Erfahren Sie mehr](contoso-infra-needs.md) über die lokale IT-Infrastruktur von Contoso Corporation und darüber, wie Ihre geschäftlichen Anforderungen mit Microsoft 365 for Enterprise behandelt wurden.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)
 

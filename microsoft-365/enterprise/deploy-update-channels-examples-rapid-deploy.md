@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Die Art und Weise, in der eine Organisation, die die neueste Version bereitstellt, Kanäle für Windows 10- und Microsoft 365-Apps verwendet.
-ms.openlocfilehash: 46f36a7bd26ef190aca2a63fdaa993e420988b30
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200130"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686166"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Beispiel für eine allgemeine Bereitstellung der neuesten Versionen
 
@@ -109,6 +109,6 @@ Nachfolgend sehen die Produkte, deren Kanäle und die in dieser Beispielorganisa
 
 [Bereitstellung und Aktualisierung der Beispielkonfigurationen des Kanals](deploy-update-channels-examples.md)
 
-[Bereitstellungshandbuch](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Testumgebungsanleitungen](m365-enterprise-test-lab-guides.md)

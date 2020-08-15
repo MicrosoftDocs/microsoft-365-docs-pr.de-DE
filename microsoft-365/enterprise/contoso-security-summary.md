@@ -1,5 +1,5 @@
 ---
-title: Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
+title: Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Wie Contoso die Sicherheitsfunktionen für Microsoft 365 Enterprise verwendet
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Wie Contoso die Sicherheitsfeatures in Microsoft 365 für Unternehmen verwendet.
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268398"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686440"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung der Microsoft 365 Enterprise-Sicherheit für die Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
 
-Um die Abnahme der Bereitstellung von Microsoft 365 Enterprise durch die IT-Sicherheitsabteilung zu erhalten, wurde eine gründliche Überprüfung der Sicherheit durchgeführt wurde. Nachfolgend sind die Sicherheitsanforderungen von Contoso für die Cloud aufgeführt:
+Um die Registrierung der Bereitstellung von Microsoft 365 for Enterprise durch die IT-Sicherheitsabteilung zu erhalten, wurde eine gründliche Sicherheitsüberprüfung durchgeführt. Hier finden Sie die Sicherheitsanforderungen von Contoso für die Cloud:
 
 - Verwenden der strengsten Authentifizierungsmethoden für den Mitarbeiterzugriff auf Cloudressourcen
 - Sicherstellen, dass PCs und mobile Geräte auf sichere Weise eine Verbindung zu Anwendungen herstellen und auf sie zugreifen
@@ -36,7 +36,7 @@ Um die Abnahme der Bereitstellung von Microsoft 365 Enterprise durch die IT-Sich
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contosos Weg zur Sicherheit mit Microsoft 365
 
-Contoso verwendete die folgenden Schritte, um die Sicherheit für die Bereitstellung von Microsoft 365 Enterprise vorzubereiten:
+Contoso hat die folgenden Schritte verwendet, um die Sicherheit für die Bereitstellung von Microsoft 365 für Unternehmen vorzubereiten:
 
 1. Beschränkte Administratorkonten für die Cloud
 
@@ -44,13 +44,13 @@ Contoso verwendete die folgenden Schritte, um die Sicherheit für die Bereitstel
 
 2. Ausführen der Analyse für Datenklassifizierung in drei Stufen
 
-   Contoso hat eine sorgfältige Überprüfung vorgenommen und die drei Stufen bestimmt, anhand denen die Microsoft 365 Enterprise-Features für Cloudangebote festgelegt wurden, mit denen Contosos wertvollste Daten zu schützen sind.
+   Contoso hat eine sorgfältige Überprüfung durchgeführt und die drei Ebenen ermittelt, mit denen die Microsoft 365 for Enterprise-Features zum Schutz der wertvollsten Daten von Contoso bestimmt wurden.
 
 3. Festlegen des Zugriffs, der Aufbewahrung und der Informationsschutzrichtlinien für Datenstufen
 
    Auf Basis der Datenstufen hat Contoso ausführliche Anforderungen festgelegt, die dazu verwendet werden, zukünftige IT-Arbeitslasten zu qualifizieren, die in die Cloud verschoben werden.
 
-In Übereinstimmung mit bewährten Methoden für Sicherheit und Anforderungen an die Bereitstellung von Microsoft 365 Enterprise haben die Contoso Sicherheitsadministratoren und die IT-Abteilung viele Sicherheitsfunktionen bereitgestellt, wie in den folgenden Abschnitten beschrieben.
+In Übereinstimmung mit den bewährten Sicherheitsmethoden und den Bereitstellungsanforderungen von Microsoft 365 für Unternehmen haben die Sicherheitsadministratoren und die IT-Abteilung von Contoso viele Sicherheitsfeatures und-Funktionen bereitgestellt, wie in den folgenden Abschnitten beschrieben.
 
 ## <a name="identity--access-management"></a>Identitäts- und Zugriffsverwaltung 
 

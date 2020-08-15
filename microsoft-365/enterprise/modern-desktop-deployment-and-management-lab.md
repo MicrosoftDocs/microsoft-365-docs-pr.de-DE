@@ -2,31 +2,31 @@
 title: Deployment Lab Kit für Windows und Office
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052725"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685498"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
-Diese Übungen unterstützen Sie beim Planen, Testen und Validieren von Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Übungen behandeln die Schritte und Tools des Portfolios für die Desktop-Bereitstellung, das Microsoft Endpoint Configuration Manager, Desktop Analytics, Office-Anpassungstool, OneDrive, Windows Autopilot und mehr umfasst.
+Diese Übungseinheiten sollen Ihnen helfen, die Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365-Apps für Unternehmen zu planen, zu testen und zu validieren. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analyse, Office-Anpassungs Tool, OneDrive, Windows Autopilot und vieles mehr.
 
-Diese Schulung wird dringend für Organisationen empfohlen, die sich auf das Ende der Lebensdauer von Windows 7 vorbereiten, und gilt auch, wenn Sie derzeit Windows 10 und Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Darüber hinaus ist die Übung als isolierte Umgebung ideal geeignet, um Aktualisierungen von Bereitstellungstools zu untersuchen und die Automatisierung Ihrer Bereitstellung zu testen.
+Dieses Kit wird dringend für Unternehmen empfohlen, die sich auf Windows 8 Upgrades vorbereiten, und gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 apps for Enterprise (ehemals Office 365 ProPlus) oder Office 2019 verwenden. Darüber hinaus ist die Übung als isolierte Umgebung ideal geeignet, um Aktualisierungen von Bereitstellungstools zu untersuchen und die Automatisierung Ihrer Bereitstellung zu testen.
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -46,9 +46,8 @@ Die Übung umfasst eine automatisch bereitgestellte virtuelle Umgebung, einschli
 
 DARÜBERHINAUS kann die Übung mit Tests für folgende Produkte verbunden werden: 
 
-  - Microsoft 365 E5 oder
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 Enterprise E5 mit Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Schritt-für-Schritt-Übungen
 
@@ -57,14 +56,14 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="device-and-app-readiness"></a>Geräte- und App-Bereitschaft
 
   - Desktop Analytics
-  - NEU! Bereitstellen und Aktualisieren des neuen Microsoft Edge 
-  - NEU! Installieren und Konfigurieren des Cloud Management-Gateways (CMG) 
+  - Bereitstellen und Aktualisieren des neuen Microsoft Edge 
+  - Installieren und Konfigurieren des Cloud Management-Gateways (CMG) 
   - Internet Explorer-Modus 
   - Application Guard 
 
 ### <a name="directory-and-network-readiness"></a>Verzeichnis- und Netzwerkbereitschaft
 
-  - NEU! Optimieren der Auslieferung des Windows 10-Updates 
+  - Optimieren der Auslieferung des Windows 10-Updates 
   - Configuration Manager und Microsoft Intune Co-Management
   - Remotezugriff (VPN)
 
@@ -110,7 +109,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
   - Wartung von Microsoft 365 Apps for Enterprise mit Configuration Manager
   - NEU! Office-Updates mit Configuration Manager und Intune
   
-### <a name="new-windows-virtual-desktop"></a>NEU! Windows Virtual Desktop
+### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
   - Windows Virtual Desktop: Vorbereiten, Bereitstellen, Optimieren 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Herunterladen des Deployment Lab Kit für Windows und Office
@@ -120,8 +119,6 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 *Verwenden Sie eine große Bandbreite, um diesen Inhalt zur Optimierung Ihrer Download-Erfahrung herunterzuladen. Die automatische Bereitstellung dauert 30 bis 45 Minuten. Die Übungsumgebung erfordert ein Minimum von 16 GB verfügbarem Arbeitsspeicher und 150 GB freien Festplattenspeicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Speicher empfohlen. Die Übung läuft am 12. September 2020 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.*
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
-
-  - [Bereitstellungscenter für Desktop](https://www.aka.ms/howtoshift)
 
   - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 

@@ -1,5 +1,5 @@
 ---
-title: Datenklassifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
+title: Datenklassifizierung für Ihre Microsoft 365 für Enterprise-Testumgebung
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,26 +13,26 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Verwenden Sie diese Test Umgebungs Anleitung zum Erstellen und Verwenden von Aufbewahrungs Bezeichnungen für Dokumente in Ihrer Microsoft 365 Enterprise-Testumgebung.
-ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Verwenden Sie diese Test Umgebungs Anleitung, um Aufbewahrungs Bezeichnungen für Dokumente in Ihrer Microsoft 365 for Enterprise-Testumgebung zu erstellen und zu verwenden.
+ms.openlocfilehash: 171fcb74b09a1f2e5c80f23e010640dce55660bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636092"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686406"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Datenklassifizierung für Ihre Microsoft 365 Enterprise-Testumgebung
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Datenklassifizierung für Ihre Microsoft 365 für Enterprise-Testumgebung
 
-*Diese Testumgebungsanleitung kann für Microsoft 365 Enterprise- und Office 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Test Umgebungs Anleitung kann sowohl für Microsoft 365 für Unternehmen als auch für Office 365 Enterprise Testumgebungen verwendet werden.*
 
-Mit den Anweisungen in diesem Artikel Konfigurieren Sie die Datenklassifizierung mithilfe von Aufbewahrungs Bezeichnungen in Ihrer Microsoft 365 Enterprise-Testumgebung.
+Mit den Anweisungen in diesem Artikel Konfigurieren Sie die Datenklassifizierung mithilfe von Aufbewahrungs Bezeichnungen in Ihrer Microsoft 365 for Enterprise-Testumgebung.
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Klicken Sie [hier](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Microsoft 365 Enterprise zu erhalten.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1: Erstellen der Testumgebung für Microsoft 365 für Unternehmen
 
 Wenn Sie Aufbewahrungs Bezeichnungen nur auf einfache Weise mit den Mindestanforderungen konfigurieren möchten, befolgen Sie die Anweisungen unter [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -73,7 +73,7 @@ In dieser Phase erstellen Sie die Aufbewahrungs Bezeichnungen für die unterschi
     
 11. Klicken Sie im Bereich **Beschriftungen auswählen** auf **Hinzufügen** , und wählen Sie alle vier Bezeichnungen aus.
     
-12. Klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **Fertig**.
+12. Klicken Sie auf **Hinzufügen** und dann auf **Fertig**.
     
 13. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
     
@@ -91,7 +91,7 @@ In dieser Phase ermitteln Sie das Standardverhalten für die Aufbewahrungs Bezei
 
 Erstellen Sie zunächst eine SharePoint Online Teamwebsite auf sensibler Ebene:
   
-1. Melden Sie sich mit einer privaten Instanz Ihres Browsers beim [Office 365 Portal](https://portal.office.com) mit ihrem globalen Administratorkonto an.
+1. Melden Sie sich mit einer privaten Instanz Ihres Browsers beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mit ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
     
@@ -125,15 +125,13 @@ Erstellen Sie als nächstes ein neues Dokument auf der SensitiveFiles-Website, u
     
 3. Klicken Sie in der Menüleiste auf **freigegebene Dokumente**.
     
-4. Klicken Sie auf die vertikalen Auslassungspunkte neben dem Dateinamen **Document. docx** , und klicken Sie dann auf **Details**.
+4. Klicken Sie auf die vertikalen Auslassungspunkte neben dem Namen der **Document.docx** Datei, und klicken Sie dann auf **Details**.
     
 5. Beachten Sie im rechten Bereich im Abschnitt **Eigenschaften** unter **Aufbewahrungs Bezeichnung anwenden**, dass für das Dokument die Bezeichnung für die **vertrauliche** Aufbewahrung automatisch angewendet wurde.
     
-6. Klicken Sie auf **alle bearbeiten**.
+6. Klicken Sie auf **Alle bearbeiten**.
     
-7. Wählen Sie im Bereich **Document. docx** unter **Aufbewahrungs Bezeichnung anwenden**die Bezeichnung **streng vertraulich** aus, und klicken Sie dann auf **Speichern**.
-
-Informationen und Links zum Bereitstellen von Aufbewahrungs Bezeichnungen in der Produktionsumgebung finden Sie im Schritt [Konfigurieren der Klassifizierung für Ihre Umgebung](infoprotect-configure-classification.md) in der **Information Protection** -Phase.
+7. Wählen Sie im Bereich **Document.docx** unter **Aufbewahrungs Bezeichnung anwenden**die Bezeichnung **streng vertraulich** aus, und klicken Sie dann auf **Speichern**.
 
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -143,8 +141,8 @@ Untersuchen Sie zusätzliche Features und Funktionen für den [Informationsschut
 
 [Testumgebungsanleitungen für Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 
-[Bereitstellen von Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Dokumentation zu Microsoft 365 für Unternehmen](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  
