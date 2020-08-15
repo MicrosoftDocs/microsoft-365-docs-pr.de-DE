@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588207"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649152"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -124,6 +124,8 @@ Zusammenfassend kann man sagen, dass eine gesperrte Richtlinie erweitert oder ve
   
 > [!IMPORTANT]
 > Bevor Sie eine Aufbewahrungsrichtlinie sperren, ist es wichtig, dass Sie die Auswirkungen kennen und überlegen, ob dies zur Erfüllung der regulatorischen Anforderungen durch Ihre Organisation erforderlich ist. Administratoren können eine Aufbewahrungsrichtlinie nicht mehr deaktivieren oder löschen, nachdem die Erhaltungssperre angewendet wurde.
+
+Sie wenden die Erhaltungssperre an, nachdem die Aufbewahrungsrichtlinie mithilfe von PowerShell erstellt wurde. Anweisungen dazu finden Sie unter [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
 
 #### <a name="releasing-a-retention-policy"></a>Aufheben einer Aufbewahrungsrichtlinie
 

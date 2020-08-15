@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560626"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656826"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -54,16 +54,15 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
-    - Office-Dateien für Word, PowerPoint und Excel werden unterstützt.
-    - Höchstens 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag
-    - Maximale Anzahl von 10 Websitesammlungen für jede Richtlinie für automatische Bezeichnungen.
-    - Maximale Anzahl von 10 Richtlinien für automatische Bezeichnungen innerhalb des Mandanten.
+    - Office-Dateien für Word, PowerPoint und Excel werden unterstützt. Das Open XML-Format wird unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
+    - Maximal 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag.
+    - Maximal 10 Richtlinien zum automatischen Bezeichnen pro Mandant, die für jeweils bis zu 10 Websites (SharePoint oder OneDrive) vorgesehen sind.
     - Bestehende Werte für "Geändert", "Geändert von" und das Datum werden nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die die Vertraulichkeitsbezeichnung erstellt hat.
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
     - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen (Word-, Excel- und PowerPoint-Dateien) ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
-        - Für die Office-Dateien wird das Open XML-Format unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97-2003-Format (z. B. DOC und XLS).
+        - Bei diesen Office-Dateien wird das Open XML-Format unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
     - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für die automatische Bezeichnung vorliegt. Wenn die Bezeichnung für die Verschlüsselung konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
@@ -215,15 +214,15 @@ Der Simulationsmodus ist einzigartig für Richtlinien zum automatischen Bezeichn
 
 Workflow für die Richtlinie zum automatischen Bezeichnen:
 
-1. Erstellen und Konfigurieren einer Richtlinie zum automatischen Bezeichnen
+1. Erstellen und konfigurieren Sie eine Richtlinie zum automatischen Bezeichnen.
 
-2. Führen Sie die Richtlinie im Simulationsmodus aus und warten Sie mindestens 24 Stunden.
+2. Führen Sie die Richtlinie im Simulationsmodus aus, und warten Sie 24 Stunden, bis die Simulation abgeschlossen ist.
 
-3. Überprüfen Sie die Ergebnisse, und verfeinern Sie, falls erforderlich, Ihre Richtlinie, führen Sie den Simulationsmodus erneut durch, und warten Sie mindestens 24 Stunden.
+3. Überprüfen Sie die Ergebnisse, und verfeinern Sie Ihre Richtlinie bei Bedarf. Führen Sie die Richtlinie im Simulationsmodus erneut aus, und warten Sie wieder 24 Stunden, bis die Simulation abgeschlossen ist.
 
-4. Wiederholen Sie Schritt 3 nach Bedarf.
+4. Wiederholen Sie Schritt 3 nach Bedarf.
 
-5. Bereitstellen in der Produktion
+5. Stellen Sie die Richtlinie in der Produktion bereit.
 
 Die simulierte Bereitstellung wird wie der WhatIf-Parameter für PowerShell ausgeführt. Die Ergebnisse werden so gemeldet, als ob die Richtlinie zum automatischen Bezeichnen Ihre ausgewählte Bezeichnung unter Verwendung der von Ihnen definierten Regeln angewendet hätte. Sie können dann bei Bedarf Ihre Genauigkeitsregeln verfeinern und die Simulation erneut ausführen. Da die automatische Bezeichnung für Exchange für E-Mails gilt, die gesendet und empfangen werden, und nicht für E-Mails, die in Postfächern gespeichert sind, erwarten Sie jedoch nicht, dass die Ergebnisse für E-Mails in einer Simulation konsistent sind, es sei denn, Sie sind in der Lage, genau die gleichen E-Mail-Nachrichten zu senden und zu empfangen.
 
