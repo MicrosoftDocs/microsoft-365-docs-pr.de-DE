@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662309"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757568"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -58,7 +58,7 @@ Wenn einem Inhalt Aufbewahrungseinstellungen zugewiesen sind, bleibt dieser Inha
 
 - Für Exchange-Postfächer: Die Kopie wird im Ordner **Wiederherstellbare Elemente** aufbewahrt. 
 
-- Für Teams-Kanal- und -Chatnachrichten: Die Kopie wird in einem verborgenen Ordner innerhalb des Exchange-Ordners **Wiederherstellbare Elemente** aufbewahrt.
+- Für Teams Kanal- und Chatnachrichten: Die Kopie wird in einem verborgenen Ordner namens **SubstrateHolds** als Unterordner im Exchange-Ordner **Wiederherstellbare Objekte** aufbewahrt.
 
 > [!NOTE]
 > Das permanente Dokumentarchiv verbraucht Speicherplatz, der nicht vom Speicherkontingent für die Website ausgenommen ist. Möglicherweise müssen Sie den Speicherplatz erhöhen, wenn Sie Aufbewahrungseinstellungen für SharePoint und Microsoft 365-Gruppen verwenden.
