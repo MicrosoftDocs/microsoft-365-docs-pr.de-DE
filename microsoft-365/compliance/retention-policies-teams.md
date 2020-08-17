@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577973"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685807"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -66,7 +66,7 @@ Wenn die Aufbewahrungsrichtlinie dem reinen Aufbewahren oder dem reinen Löschen
 
 1. **Wenn die Nachricht während des Aufbewahrungszeitraums nicht gelöscht wird**: Die Nachricht wird am Ende des Aufbewahrungszeitraums in den Ordner "SubstrateHolds" verschoben. 
 
-2. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer gelöscht wird**, wird das Element sofort in den Ordner "SubstrateHolds" verschoben. Wenn ein Benutzer die Nachricht dort löscht oder den Ordner "SubstrateHolds" leert, wird sie endgültig gelöscht. Andernfalls wird die Nachricht einen Tag, nachdem sie sich im Ordner "SubstrateHolds" befindet, dauerhaft gelöscht.
+2. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer gelöscht wird**, wird das Element sofort in den Ordner "SubstrateHolds" verschoben. Die Nachricht wird nach einem Tag im Ordner SubstrateHolds dauerhaft gelöscht.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interop-Chats in Skype for Business und Microsoft Teams
